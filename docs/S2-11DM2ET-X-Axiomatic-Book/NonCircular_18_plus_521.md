@@ -159,9 +159,10 @@ L_{\mathrm{pack}}'
 
 | Is | Is not |
 |----|--------|
-| Non-circular **integer identity** for the length 539 | Proof free \(T^\sharp\) has 539 basins (still **2**) |
+| Non-circular **integer identity** for the length 539 under (S) | Proof free \(T^\sharp\) has 539 basins (still **2**) |
+| Supply of the two integers used as the **hard round schedule** in production HQH-539 | A dynamical termination condition of free or charge-preserving \(T^\sharp\) |
 | Motivation for HQH/holographic **18 / 521** split | Automatic lift of No-Go on \(\lambda=\ln 3/539\) without packaging principles |
-| Better than bare ansatz | Substitute for a 539-**object** classification (Bott still paused) |
+| The content of the **resonant layer** once packaging is adopted as budget (`Resonant_Layer_Resolved.md`) | Substitute for a 539-**object** classification (Bott still paused; **Option 3** default) |
 
 ---
 
@@ -200,7 +201,8 @@ Without (S): residual subtraction is **ansatz**; only \(\{B_Q-f_{\min},B_Q-f_{\m
 ## Bottom line
 
 > **18** stands alone (Category A).  
-> **521** is **structurally forced under principle (S)** as \(B_Q-f_{\max}\) (charge-sector budget minus one maximal democratic tower seed). Charge + tower alone leave \(\{521,522\}\) open — without (S) the residual subtraction is still an ansatz.  
-> **\(18+521=539\)** is a **non-circular length packaging conditional on (S)** (and equals \(\lfloor(N_{\mathrm{flux}}-f_{\max})/9\rfloor\) at model flux).  
-> A **539-object** set and Bott classification remain open; default Option 3 for that stronger claim.  
-> No-Go still blocks deriving \(\sigma=539\) from democracy *alone*; (S) is the extra packaging structure.
+> **521** is **structurally forced under principle (S)** as \(B_Q-f_{\max}\). Charge + tower alone leave \(\{521,522\}\) open — without (S) the residual subtraction is still an ansatz.  
+> **\(18+521=539\)** is a **non-circular length packaging conditional on (S)** (equals \(\lfloor(N_{\mathrm{flux}}-f_{\max})/9\rfloor\) at model flux).  
+> **Resonant layer** = adoption of that packaging as a **hard iteration budget** (production HQH-539 already: fixed rounds, no dynamical stop). Free short basins stay Category A and are overridden by design — `Resonant_Layer_Resolved.md`.  
+> A **539-object** set under free dynamics and Bott classification remain open; **Option 3** default for that stronger claim.  
+> No-Go still blocks deriving \(\sigma=539\) from democracy *alone*; (S) + hard-budget adoption is the extra packaging structure.

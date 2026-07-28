@@ -335,18 +335,32 @@ Default in this programme for **body length**: **(S)** (matches HQH 18+521 split
 
 ---
 
-## 6. What is gained / what is not
+## 6. Resonant layer (lock-in)
+
+Once \(L_{\mathrm{pref}}\) and \(L_{\mathrm{body}}\) are on the ledger, the **resonant layer** of the cryptographic (and optional physical HQCC) construction is **not** a further dynamical mechanism. It is the decision to use
+
+\[
+\sigma := L_{\mathrm{pack}} = L_{\mathrm{pref}} + L_{\mathrm{body}} = 18 + 521
+\]
+
+as a **hard iteration budget**. Production HQH-539 already implements fixed 539 rounds with no dynamical stop. Free / charge-preserving \(T^\sharp\) short basins (\(N_{\mathrm{basins}}=2\), depth \(O(10)\)) remain Category A and are **overridden by design**. Option 3 stays default for free-dynamics **539 objects**.
+
+**Full statement:** `Resonant_Layer_Resolved.md`.
+
+---
+
+## 7. What is gained / what is not
 
 | Gained under (S) | Not gained |
 |------------------|------------|
 | Unique \(L_{\mathrm{body}}=521\) in seed-quantum class | Force (S) from Res+Tower+Dem alone |
 | Non-circular **length** packaging \(L_{\mathrm{pack}}=539\) | Automatic **539 basins/paths** under free \(T^\sharp\) (still 2) |
 | Closed form \(B_Q-f_{\max}\) with no bare “21” or “539” | Lift of No-Go on \(\lambda=\ln 3/539\) from democracy *without* packaging principles |
-| Upgrade from reverse-engineered \(539-18\) | Bott embedding (needs 539 **objects**, not only length) |
+| Demystified resonant layer (hard budget = packaging) | Bott embedding (needs 539 **objects**, not only length) |
 
 ---
 
-## 7. Verification (executable)
+## 8. Verification (executable)
 
 ```python
 import math
@@ -393,7 +407,7 @@ python S2-11DM2ET-X-Axiomatic-Book/scripts/verify_L_body_structural.py
 
 ---
 
-## 8. Status revision (honest)
+## 9. Status revision (honest)
 
 | Item | Status |
 |------|--------|
@@ -409,7 +423,7 @@ python S2-11DM2ET-X-Axiomatic-Book/scripts/verify_L_body_structural.py
 
 ---
 
-## 9. Bottom line
+## 10. Bottom line
 
 > **Can a unique structural reason be written?**  
 > **Yes, under principle (S):**  

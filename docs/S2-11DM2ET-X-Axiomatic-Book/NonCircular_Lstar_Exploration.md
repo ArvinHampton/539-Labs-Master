@@ -1,7 +1,7 @@
 # Non-circular derivation of \(L_\star\) / 539 — exploration
 
 **Stance:** Option 1 from `H0_539_Honest_Options.md` — derive a length (or object count) without inserting 539, then count.  
-**Outcome of this exploration:** several **legitimate non-circular lengths** exist; **none** cleanly produces **539** as a path/basin count. Option 1 remains **blocked for the numeral 539**; Option 3 remains the evidence-matched default.
+**Outcome of this exploration:** several **legitimate non-circular lengths** exist; **none** cleanly produces **539** as a free path/basin **count**. Option 1 **succeeds for length packaging** under principle (S) (\(18+521=539\)); it remains **blocked as an object count**. Option 3 remains the evidence-matched default for free-dynamics **539 objects**. Resonant fixed rounds = packaging as hard budget (`Resonant_Layer_Resolved.md`).
 
 ---
 
@@ -202,15 +202,15 @@ Script hook: extend `scripts/phase0_seed_basins.py` / new `scripts/noncircular_L
 
 ---
 
-## 9. Strongest composite (update)
+## 9. Strongest composite (update — residual now under (S))
 
 \[
-\lfloor e^3/\ln 3\rfloor + (N_{\mathrm{flux}}//9 - 21) = 18 + 521 = 539.
+\lfloor e^3/\ln 3\rfloor + (N_{\mathrm{flux}}//9 - f_{\max}) = 18 + 521 = 539.
 \]
 
 - **18** is **Category A** non-circular and stands alone (`NonCircular_18_plus_521.md`).  
-- **521** uses only allowed atoms; \(-21\) still needs motivation.  
-- Matches the framework’s older **18 / 521** split language (better than \(18+1+520\)).
+- **521** is unique under principle (S): \(B_Q-f_{\max}\) (`L_body_Structural_Derivation.md`).  
+- Matches production HQH **18 / 521** fixed-round split; resonant layer = that packaging as hard budget (`Resonant_Layer_Resolved.md`).
 
 Path/endpoint/basin counts under free \(T^\sharp\) still **≠ 539 objects**.
 
@@ -219,5 +219,6 @@ Path/endpoint/basin counts under free \(T^\sharp\) still **≠ 539 objects**.
 ## 10. Bottom line
 
 > **Non-circular lengths exist** (14, 542, 20, 21, 8, and especially \(18=\lfloor e^3/\ln 3\rfloor\)).  
-> **Best length packaging of 539:** \(18+521\) with clean 18; 521 semi-clean.  
-> **Default Option 3** for a 539-**object** set; short contraction Category A; No-Go stands; Bott waits.
+> **Best length packaging of 539:** \(18+521\) under (S); equivalently \(\lfloor(N_{\mathrm{flux}}-f_{\max})/9\rfloor\).  
+> **Resonant layer demystified:** hard iteration budget from packaging; free short basins stay Category A.  
+> **Default Option 3** for a 539-**object** set; No-Go stands for democracy alone; Bott waits.

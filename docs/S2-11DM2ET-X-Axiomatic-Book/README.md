@@ -25,9 +25,10 @@ Clean LaTeX source for the full axiomatic foundation.
 - **Bottâ€“HQCC link research** (`Bott_HQCC_Link_Research.md`, `scripts/bott_hqcc_probe.py`): architectures Aâ€“D; arithmetic \(539=8\cdot67+3\)
 - **Phase 0 executed** (`Phase0_Space_C_Definition.md`, `Phase0_Execution_Report.md`, `scripts/phase0_C2_components.py`): C2 â†’ 2 components â‰  539
 - **Seed-orbit \(\mathcal{C}\) executed** (`Phase0_SeedOrbit_Package.md`, `Phase0_SeedOrbit_Execution_Report.md`, `scripts/phase0_seed_basins.py`): \(N_{\mathrm{basins}}=2\neq 539\)
-- **H0 honest options** (`H0_539_Honest_Options.md`): (1) \(L_\star\) blocked for 539; (2) force 539 circular; (3) **default** Cat.\ B
-- **Non-circular \(L_\star\)** (`NonCircular_Lstar_Exploration.md`, `NonCircular_18_plus_521.md`, `scripts/noncircular_Lstar_probe.py`): \(\lfloor e^3/\ln 3\rfloor=18\) clean; \(18+(4880//9-21)=539\) strongest composite (521 ansatz); endpoints â‰  539 objects
-- **Architecture A draft** â€” paused until non-circular 539-**object** set exists
+- **H0 honest options** (`H0_539_Honest_Options.md`): length packaging under (S) available; hard budget demystified; **Option 3 default** for free-dynamics 539 **objects**
+- **Non-circular length** (`NonCircular_Lstar_Exploration.md`, `NonCircular_18_plus_521.md`, `L_body_Structural_Derivation.md`, `scripts/verify_L_body_structural.py`): \(\lfloor e^3/\ln 3\rfloor=18\) Cat.\ A; \(L_{\mathrm{body}}=B_Q-f_{\max}=521\) under (S); \(18+521=539\) non-circular **length** packaging; free endpoints/basins \(\neq 539\) objects
+- **Resonant layer resolved** (`Resonant_Layer_Resolved.md`): resonant layer = packaging as hard iteration budget; production HQH-539 already fixed-round; short basins Cat.\ A overridden by design; Option 3 for objects
+- **Architecture A draft** — paused until non-circular 539-**object** set exists
 - 9 Maths:
   1. Temporal Torsion Cohomology (TTC)
   2. Negative-Signature Functional Analysis (NSFA)
@@ -54,7 +55,7 @@ Clean LaTeX source for the full axiomatic foundation.
 | \(N_{\mathrm{tow}}\) | \(243=3^5\) | Towers |
 | \(N_{\mathrm{flux}}\) | \(4880=\lfloor e^3\cdot 3^5\rfloor\) | Tower construction |
 | \(N_\star\) | **14** | ACE + flux bridge; free of 539 |
-| \(\sigma=N_{\mathrm{HQCC}}\) | \(539\pm 1\) | Model HQCC depth; **not** from ACE |
+| \(\sigma=N_{\mathrm{HQCC}}\) | \(539\pm 1\) | Crypto: hard budget \(:=L_{\mathrm{pack}}\) under (S); free objects still open (Option 3); **not** from ACE |
 | \(\|P\|\) | 61 | Model punctures |
 | \(G_4\) | \(539.9\) s | Empirical / model period hypothesis |
 | \(w_j\) | \(539+61j\) | **Conditional** on \(\sigma\) and \(\|P\|\) |

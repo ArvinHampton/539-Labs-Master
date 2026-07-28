@@ -66,14 +66,16 @@ Equivalently, programme claims (a′)–(c′) — that democracy breaks that ci
 
 ## What remains licit
 
-| Licit | Illicit (until a bridge that yields 539 without circularity) |
+| Licit | Illicit (until a free-dynamics bridge that yields 539 objects without circularity) |
 |-------|------------------------------|
-| Conditional: “If \(\sigma=539\), then \(\lambda=\ln 3/539<1\)” | “Democracy ⇒ \(\sigma=539\)” |
+| Conditional: “If \(\sigma=539\), then \(\lambda=\ln 3/539<1\)” | “Democracy ⇒ \(\sigma=539\)” as free dynamics |
 | Non-circular ACE: \(\mathbb{E}_\pi[\chi]\approx -0.6365\), \(N_\star=14\) | Using \(N_\star=14\) as if it were \(539\) |
 | Computational stopping-time histograms | Using the histogram mode as Banach input for \(\lambda=\ln 3/539\) without independent justification |
 | Residue cocycles \(c_j = 1_{n\equiv j \bmod 3}\) | Unique full dictionary \(w_j=539+61j\) from democracy alone |
 | Shells \(\{7,11,13\}\) from \(1001\) (independent of \(\sigma\)) | Flux democracy selects unique \(\sigma\)-anchored labels |
 | **Empirical** Resonant Attractor (below) | Inserting \(T:=539.9\) into the attractor *definition* |
+| Packaging length \(L_{\mathrm{pack}}=18+521\) under principle (S); \(\sigma:=L_{\mathrm{pack}}\) as **hard round count** | Claiming free / charge-preserving \(T^\sharp\) produces 539 basins or objects |
+| Naming the resonant layer as that hard budget (`Resonant_Layer_Resolved.md`) | Treating extra filters (phase-lock accumulator, closure projections, tower checksums) as forced by residual arithmetic alone |
 
 ---
 
@@ -96,13 +98,14 @@ with \(\Psi\) an explicit integer functional that does **not** assume \(N_\star\
 \]
 This is a valid non-circular bridge to **depth 14**, not to **539**.
 
-**What is still missing to lift the no-go for 539:** a separate, non-circular bridge \(\Psi_{539}\) (or additional structure outside democracy alone) that returns \(539\) without presupposing it. Until that exists:
+**What is still missing to lift the no-go for free-dynamics 539:** a separate, non-circular bridge that returns **539 objects** (basins/paths/classes) without presupposing \(\sigma\). Until that exists:
 
 - non-circular contraction rewrite is available **at depth 14**;  
-- generational windings \(w_j=539+61j\) remain **unforced**;  
-- \(\lambda=\ln 3/539\) remains an **extra assumption**.
+- generational windings \(w_j=539+61j\) remain **unforced** by democracy alone;  
+- \(\lambda=\ln 3/539\) remains **conditional** on adopting \(\sigma=539\).
 
-The decomposition \(18+1+520=539\) is a candidate only if each summand is forced without fitting to total \(539\).
+**What does *not* lift free-dynamics No-Go but is now licit as design:**  
+length packaging \(L_{\mathrm{pack}}=\lfloor e^3/\ln 3\rfloor + (B_Q-f_{\max})=18+521\) under principle (S), and defining crypto (or engineered) depth \(\sigma:=L_{\mathrm{pack}}\). That is the **resonant layer as hard budget** (`Resonant_Layer_Resolved.md`); it overrides free short basins by construction and does not claim they produce 539 objects. The older reverse-engineered \(18+1+520\) remains inferior to the (S)-based packaging.
 
 ---
 

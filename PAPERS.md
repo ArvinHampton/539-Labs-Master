@@ -26,6 +26,7 @@ Path: `docs/S2-11DM2ET-X-Axiomatic-Book/`
 
 - Structural derivation of residual body length \(L_{\mathrm{body}}=N_{\mathrm{flux}}//9-f_{\max}\) under principle (S) (`L_body_Structural_Derivation.md`)
 - Non-circular length packaging \(18+521=539\) (`NonCircular_18_plus_521.md`)
+- Resonant layer resolved: packaging as hard iteration budget (`Resonant_Layer_Resolved.md`); Option 3 default for free 539 objects (`H0_539_Honest_Options.md`)
 - Closed constants, provenance table, depth macros (`CLOSED_CONSTANTS.md`, `PROVENANCE_TABLE.md`)
 - ACE resolution / No-Go theorem canonical statements
 - Phase-0 seed-orbit probes, holographic window, empirical phase-lock protocols

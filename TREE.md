@@ -13,6 +13,8 @@
 │   └── S2-11DM2ET-X-Axiomatic-Book/   # Living axiomatic book (md/tex/scripts; no bulk data)
 │       ├── L_body_Structural_Derivation.md
 │       ├── NonCircular_18_plus_521.md
+│       ├── Resonant_Layer_Resolved.md   # packaging = hard budget; Option 3 for objects
+│       ├── H0_539_Honest_Options.md
 │       ├── CLOSED_CONSTANTS.md
 │       ├── PROVENANCE_TABLE.md
 │       ├── NoGo_*.md / ACE_*.md

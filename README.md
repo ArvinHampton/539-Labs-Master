@@ -43,15 +43,16 @@ Never use absolute language such as “unbreakable” or “provably secure.” 
 - PROPRIETARY.md, SECURITY.md — Legal and claim-labeling protocol
 - TREE.md — Directory overview
 
-### Length packaging (status snapshot)
+### Length packaging and resonant layer (status snapshot)
 
 - \(L_{\mathrm{pref}}=\lfloor e^{3}/\ln 3\rfloor=18\) — Category A integer  
 - \(L_{\mathrm{body}}=\lfloor N_{\mathrm{flux}}/9\rfloor-\lceil N_{\mathrm{flux}}/N_{\mathrm{tow}}\rceil=521\) — derived under minimal-action max-tower seed clear (principle S); ansatz without (S)  
 - \(L_{\mathrm{pack}}=18+521=539=\lfloor(N_{\mathrm{flux}}-f_{\max})/9\rfloor\) — non-circular **length** packaging conditional on (S)  
-- ACE depth \(N_\star=14\) remains distinct from HQCC model depth \(\sigma=539\) (never identify them)  
-- Free \(T^\sharp\) object/basin count still does **not** equal 539 (Option 3 for object classes)
+- **Resonant layer** = adopt that packaging as a **hard iteration budget** (production HQH-539: fixed 18+521 rounds, no dynamical stop). Free / charge-preserving \(T^\sharp\) short basins remain Category A and are overridden by design — not mysterious further constraints  
+- ACE depth \(N_\star=14\) remains distinct from model/crypto depth \(\sigma:=L_{\mathrm{pack}}\) (never identify them)  
+- Free \(T^\sharp\) object/basin count still does **not** equal 539 (**Option 3** default for objects; Bott paused)
 
-See `docs/S2-11DM2ET-X-Axiomatic-Book/L_body_Structural_Derivation.md` and `NonCircular_18_plus_521.md`.
+See `docs/S2-11DM2ET-X-Axiomatic-Book/Resonant_Layer_Resolved.md`, `L_body_Structural_Derivation.md`, `NonCircular_18_plus_521.md`, `H0_539_Honest_Options.md`.
 
 ## Related Repositories
 
