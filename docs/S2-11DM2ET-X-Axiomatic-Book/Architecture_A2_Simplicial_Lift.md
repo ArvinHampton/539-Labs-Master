@@ -2,7 +2,7 @@
 
 **Programme phase:** A2 (endorsed).  
 **Depends on:** A1 normal form \(f_\sharp\).  
-**Status:** Discrete simplicial lift **defined and verified** (nerve of finite discrete groups + constant simplicial carrier). Continuous geometric realization toward \(BO\)/\(B\mathrm{Spin}\) is **A3+**.
+**Status:** Discrete simplicial lift **defined and verified** (nerve of finite discrete groups + constant simplicial carrier). Continuous geometric realization: **A3 delivered** — see `Architecture_A3_Geometric_BO_BSpin.md`.
 
 ---
 

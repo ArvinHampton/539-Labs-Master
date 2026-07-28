@@ -112,12 +112,12 @@ f(x)=\bigl(q(x),\,\tau(x),\,\beta(x)\bigr).
 ## 6. Exit criteria
 
 - [x] Carrier \(\mathcal{O}_{\mathrm{res}}\) fixed with 539-free count  
-- [x] Discrete \(X\) and \(f\) defined  
-- [x] Bott grading computed; O2 residual exhibited  
-- [ ] Simplicial/continuous lift to \(BO\) / \(B\mathrm{Spin}\)  
-- [ ] Spin (or pin) structure verified on a geometric model  
-- [ ] True \(KO\) / \(\Omega^{\mathrm{Spin}}\) invariant computation  
-- [ ] Seed-representative naturality theorem  
+- [x] Discrete \(X\) and \(f_\sharp\) defined  
+- [x] Bott grading \(\beta_\sharp\) seed-independent; O2 residual exhibited  
+- [x] Simplicial lift (A2) + continuous \(\Phi\to\mathrm{Gr}_1(V)\hookrightarrow BO\) (A3)  
+- [x] Oriented rank-2 spin-aimed model (A3)  
+- [ ] Spin lift theorem / \(w_2\) (A4)  
+- [ ] True \(KO\) / \(\Omega^{\mathrm{Spin}}\) invariant computation (A5)
 
 ---
 

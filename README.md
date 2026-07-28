@@ -78,3 +78,8 @@ Discrete classifying map and Bott-clock grading on residual-flux carrier: `docs/
 
 Seed-independent Bott clock `beta_sharp` and discrete simplicial lift: `docs/S2-11DM2ET-X-Axiomatic-Book/Architecture_A1_Seed_Equivariance.md`, `Architecture_A2_Simplicial_Lift.md`. Next: A3–A5 geometric BO/BSpin and KO.
 
+
+### Architecture A3
+
+Continuous map |E(O_res)| -> Gr_1(V) -> BO (spin-aimed rank-2 companion): `docs/S2-11DM2ET-X-Axiomatic-Book/Architecture_A3_Geometric_BO_BSpin.md`. Residual-flux provenance only; A4-A5 open.
+

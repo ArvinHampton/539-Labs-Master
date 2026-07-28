@@ -216,8 +216,10 @@ whose restriction to discrete points recovers \(f\), then push
 - [x] Discrete classifying map \(f_\sharp\) defined and injective on cores  
 - [x] Bott grading \(\beta_\sharp\) seed-independent; O2 residual structure exhibited (A1)  
 - [x] Discrete simplicial lift \(\tilde f_\sharp\) (A2 constant systems)  
-- [ ] Geometric lift to \(B\mathrm{Spin}\) or \(BO\) (A3+)  
-- [ ] Actual \(KO\) or \(\Omega^{\mathrm{Spin}}\) computation (not only labels) (A5)
+- [x] Continuous geometric lift to \(\mathrm{Gr}_1(V)\hookrightarrow BO\) (A3)  
+- [x] Oriented rank-2 model aimed at \(B\mathrm{Spin}\) (A3; lift theorem A4)  
+- [ ] \(w_1,w_2\) vanishing / \(B\mathrm{Spin}\) lift theorem (A4)  
+- [ ] Actual \(KO\) or \(\Omega^{\mathrm{Spin}}\) computation (A5)
 
 ---
 
@@ -254,9 +256,9 @@ Architecture B **on the carrier** may use only functions of \(x,\tau(x),\beta(x)
 |-------|-------------|--------|
 | **A0** | Provenance + carrier + discrete \(f\) | **Done** |
 | **A1** | Seed equivariance; \(\beta_\sharp\) normal form; fiber theorem | **Done** — `Architecture_A1_Seed_Equivariance.md` |
-| **A2** | Constant simplicial lift \(E(\mathcal{O}_{\mathrm{res}})\to E(X_{\mathrm{disc}})\); nerve of \(\mathbb{Z}/8\) faces | **Done** (discrete) — `Architecture_A2_Simplicial_Lift.md` |
-| **A3** | Maps \(B(\mathbb{Z}/8)\to BO\); geometric models | **Next** |
-| **A4** | Spin structure / \(B\mathrm{Spin}\) lift | Open |
+| **A2** | Constant simplicial lift \(E(\mathcal{O}_{\mathrm{res}})\to E(X_{\mathrm{disc}})\); nerve of \(\mathbb{Z}/8\) faces | **Done** — `Architecture_A2_Simplicial_Lift.md` |
+| **A3** | Continuous \(\Phi\colon\lvert E(\mathcal{O}_{\mathrm{res}})\rvert\to\mathrm{Gr}_1(V)\hookrightarrow BO\); spin-aimed \(\Phi^{\mathrm{Spin}}\) | **Done** (first model) — `Architecture_A3_Geometric_BO_BSpin.md` |
+| **A4** | \(w_1,w_2\) / \(B\mathrm{Spin}\) lift | **Next** |
 | **A5** | Actual \(KO\) / \(\Omega^{\mathrm{Spin}}\) computation | Open |
 
 Secondary (lower priority, parallel): E1–E2 free-map word probes; 1001 provenance; R-FFT; individuality falsifiability — **must not** be mixed into carrier provenance.
@@ -266,7 +268,7 @@ Secondary (lower priority, parallel): E1–E2 free-map word probes; 1001 provena
 ## 9. Bottom line
 
 > Architecture A / Bott / classifying-map work **proceeds** with \(\mathcal{O}_{\mathrm{res}}\) as the **only** 539-carrier.  
-> **A0–A2 complete:** carrier, \(\beta_\sharp\) normal form (seed-independent fibers), discrete simplicial lift \(\tilde f_\sharp\).  
-> **A3–A5 open:** geometric \(BO\)/\(B\mathrm{Spin}\) and actual \(KO\)/bordism.  
+> **A0–A3 complete:** carrier, \(\beta_\sharp\), discrete simplicial lift, continuous \(\Phi\to\mathrm{Gr}_1(V)\hookrightarrow BO\) (and spin-aimed \(\Phi^{\mathrm{Spin}}\)).  
+> **A4–A5 open:** \(B\mathrm{Spin}\) obstruction theory and actual \(KO\)/bordism.  
 > Honest provenance is mandatory: residual flux quanta under (S) + democratic charge partition — **not** free \(T^\sharp\), **not** a No-Go lift.  
 > Free-dynamics 539-classes remain **Option 3**.
