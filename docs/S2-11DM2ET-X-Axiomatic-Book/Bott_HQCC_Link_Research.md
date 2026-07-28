@@ -1,12 +1,18 @@
 # Deep research: linking Bott periodicity to the HQCC cobordism count
 
-**Status:** Category B research programme — **paused** on classifying maps / Bott filtration.  
+**Status:** Category B research programme — **split gate** (2026-07).  
 **Does not claim a completed link.**  
 **Does not lift the No-Go** on deriving \(\lambda=\ln 3/539\) from residue democracy alone.
 
-**Gate (2026-07):** Seed-orbit and C2 probes give \(N_{\mathrm{basins}}=2\neq 539\).  
-No further \(B\mathrm{Spin}/BO\) or Bott work until a **non-circular** construction actually yields 539 distinct objects  
-(see `H0_539_Honest_Options.md` — default **Option 3**).
+**Gate (revised):**
+
+| Target | Status |
+|--------|--------|
+| Combinatorial carrier \(\mathcal{O}_{\mathrm{res}}\), \(\lvert\mathcal{O}_{\mathrm{res}}\rvert=\lfloor(N_{\mathrm{flux}}-f_{\max})/9\rfloor=539\) | **Open for use** — verified, 539-free RHS (`Object539_NonCircular_Construction.md`) |
+| Free / charge-preserving \(T^\sharp\) trajectory classes | **Still closed** — \(N_{\mathrm{basins}}=2\); Option 3 (`H0_539_Honest_Options.md`) |
+| E1–E2 residue-word counts at Bott length 8 | **Executed** — none equal 539 (`e1e2_bott_word_results.json`) |
+
+Bott / \(B\mathrm{Spin}/BO\) work may proceed **only** with explicit target = carrier \(\mathcal{O}_{\mathrm{res}}\) (or another verified 539-set), **not** with a claim that free dynamics produce the 539 classes.
 
 Companions: `Bott_Periodicity_vs_HQCC.md`, `NoGo_Theorem_Canonical.md`, `ACE_Status_of_Record.md`.
 

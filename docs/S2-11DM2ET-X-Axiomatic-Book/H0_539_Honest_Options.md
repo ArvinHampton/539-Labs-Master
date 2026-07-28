@@ -76,17 +76,38 @@ Options 1–2 settle the **length / round-count** story without inventing free 5
 
 ---
 
-## Bott / classifying-map gate
+## Bott / classifying-map gate (revised)
 
-**No further classifying-map work or Bott filtration is warranted** until a **non-circular combinatorial construction that actually yields 539 distinct objects** is written and verified.
+### Combinatorial object gate — **opened**
 
-That includes:
+A verified non-circular combinatorial 539-set exists:
 
-- Architecture A (\(B\mathrm{Spin}/BO\)),
-- Clifford / index architectures,
-- Bott orbit decompositions aimed at a 539-set.
+\[
+\mathcal{O}_{\mathrm{res}}
+=\text{guaranteed residual charge-sector flux core under (S)},
+\qquad
+\lvert\mathcal{O}_{\mathrm{res}}\rvert
+=
+\Bigl\lfloor\frac{N_{\mathrm{flux}}-f_{\max}}{9}\Bigr\rfloor
+=
+539
+\]
 
-Arithmetic length packaging and hard-budget adoption do **not** open this gate.
+with **no 539 on the RHS**. Full writeup + script: `Object539_NonCircular_Construction.md`, `scripts/verify_object539_construction.py`.
+
+Programmes that only need a Cat.\ A **carrier** of cardinality 539 may use \(\mathcal{O}_{\mathrm{res}}\).
+
+### Trajectory / free-dynamics gate — **still closed (Option 3)**
+
+Free / charge-preserving \(T^\sharp\) still yields **2** basins. Arithmetic packaging and \(\mathcal{O}_{\mathrm{res}}\) do **not** produce 539 free path/basin classes.
+
+**Still paused** until a 539-set of **trajectory/homotopy** objects exists:
+
+- Architecture A (\(B\mathrm{Spin}/BO\)) aimed at free path \(\pi_0\),
+- Clifford / index architectures claiming free resonant trajectories,
+- Bott orbit decompositions that assert free \(T^\sharp\) origin of 539 classes.
+
+E1–E2 residue-word probes did **not** hit 539 (`e1e2_bott_word_results.json`).
 
 ---
 
@@ -99,11 +120,13 @@ Arithmetic length packaging and hard-budget adoption do **not** open this gate.
 | Free / charge-preserving basins \(=2\), depth \(O(10)\) | A | Executed; **intact** |
 | No-Go (a)(b)(c) on \(\lambda=\ln 3/539\) and \(w_j=539+61j\) from democracy alone | A | Stands |
 | Seed-orbit / C2 basin counts = 539 | — | **Refuted** for executed packages |
-| \(L_{\mathrm{pref}}=18\), \(L_{\mathrm{body}}=521\) under (S), \(L_{\mathrm{pack}}=539\) | A + (S) | Length packaging only |
+| \(L_{\mathrm{pref}}=18\), \(L_{\mathrm{body}}=521\) under (S), \(L_{\mathrm{pack}}=539\) | A + (S) | Length packaging |
+| \(\lvert\mathcal{O}_{\mathrm{res}}\rvert=539\) residual flux cores | A + (S) | **Verified combinatorial objects** (`Object539_NonCircular_Construction.md`) |
 | Resonant layer = packaging as hard budget | Design / interpretive | **Resolved** (`Resonant_Layer_Resolved.md`) |
-| Integer 539 as free HQCC **object** count | **B** | Origin **open** — Option 3 default |
+| Integer 539 as free HQCC **trajectory/basin** count | **B** | Origin **open** — Option 3 default |
 | Extra filters (phase-lock accumulator, closure projections, tower checksums) | **B** if present | Not forced by residual arithmetic |
-| Bott embedding into 539 classes | B | **Paused** until non-circular 539-set exists |
+| Bott on carrier \(\mathcal{O}_{\mathrm{res}}\) | B research | **Permitted** (must not claim free \(T^\sharp\) origin) |
+| Bott on free trajectory \(\pi_0\) | B | **Paused** until trajectory 539-set exists |
 | Empirical ~539.9 spectral test | Protocol | Permitted as hypothesis only |
 
 ---
@@ -112,4 +135,5 @@ Arithmetic length packaging and hard-budget adoption do **not** open this gate.
 
 > **Resonant layer:** arithmetic packaging used as a hard iteration budget — not a mystery, not free dynamics.  
 > **Short basins:** Category A, overridden by fixed-round design.  
-> **Option 3 is the default for 539 objects:** free dynamics do not produce them; Bott waits on a verified non-circular 539-object construction.
+> **Combinatorial 539-set:** \(\mathcal{O}_{\mathrm{res}}\) verified under (S); opens the **carrier** object gate.  
+> **Option 3 remains default for free-dynamics 539 trajectory objects;** Bott-on-trajectories still paused; Bott-on-\(\mathcal{O}_{\mathrm{res}}\) permitted with honest provenance.
