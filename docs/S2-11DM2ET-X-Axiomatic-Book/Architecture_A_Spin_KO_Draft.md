@@ -1,7 +1,18 @@
 # Architecture A draft — Spin bordism \(\to KO\) \(\to\) Bott
 
-**Status:** Category B draft. Depends on Phase 0 space \(\mathcal{C}\).  
-**Does not claim a completed classifying map.**
+**Status:** Category B. **Retargeted (2026-07)** to carrier \(\mathcal{O}_{\mathrm{res}}\).  
+**Active programme:** `Architecture_A_Ores_Programme.md`.  
+**Does not claim a completed continuous classifying map into \(B\mathrm{Spin}\).**
+
+---
+
+## Mandatory provenance
+
+> Objects with cardinality 539 in this architecture are **residual flux quanta** in \(\mathcal{O}_{\mathrm{res}}\) (Principle (S) + democratic charge-sector partition).  
+> **Not** free \(T^\sharp\) basins or trajectory homotopy classes.  
+> **No** No-Go lift. Full block: `Architecture_A_Ores_Programme.md` §0.
+
+Legacy trajectory-space sketches below are retained only as historical notes; **do not** use them as the 539-count source.
 
 ---
 
@@ -12,92 +23,77 @@ M\mathrm{Spin} \xrightarrow{\mathrm{ABS}} \mathrm{KO}
 \]
 
 Spin bordism classes map to real \(K\)-theory; Bott periodicity acts on \(\mathrm{KO}\).  
-If the HQCC physical data define a spin bordism class (or a map into a space \(X\) with spin structure), Bott can act on the image.
+On the discrete carrier we first use a **Bott clock** \(\mathbb{Z}/8\) and a discrete product space; continuous \(B\mathrm{Spin}\) is Phase A4+.
 
 ---
 
-## 2. Background space \(X\) (candidates)
-
-Need a space built only from model data \(\{3,243,4880,9,61,18\}\):
-
-### Candidate X1 — Charge classifying space
+## 2. Carrier and discrete background
 
 \[
-X_1 := B(\mathbb{Z}/9\mathbb{Z})
+\lvert\mathcal{O}_{\mathrm{res}}\rvert
+=
+\Bigl\lfloor\frac{N_{\mathrm{flux}}-f_{\max}}{9}\Bigr\rfloor
+=
+539.
 \]
-
-Paths/trajectories with charge \(Q=n\bmod 9\) define maps to \(X_1\) (holonomy = charge).  
-**Pros:** Matches \(Q\bmod 9\) directly.  
-**Cons:** \(\pi_1(X_1)=\mathbb{Z}/9\); bordism of \(B(\mathbb{Z}/9)\) is classical but may not produce count 539.
-
-### Candidate X2 — Puncture configuration
 
 \[
-X_2 := \mathrm{Conf}_{61}(M_7)\quad\text{or}\quad (M_7)^{61}/S_{61}
+X_{\mathrm{disc}}
+=
+\mathbb{Z}/9
+\times
+\mathbb{Z}/N_{\mathrm{tow}}
+\times
+\mathbb{Z}/8.
 \]
 
-where \(M_7\) is a \(G_2\)-holonomy 7-manifold (model’s puncture carrier).  
-**Pros:** Uses \(P=61\).  
-**Cons:** \(M_7\) not constructed explicitly in code; highly geometric.
-
-### Candidate X3 — Tower torus
-
+Continuous aspirational lift:
 \[
-X_3 := (S^1)^{243}\quad\text{or}\quad B(\mathbb{Z}^{243})
+X_4
+=
+B(\mathbb{Z}/9)
+\times
+B(\mathbb{Z}/N_{\mathrm{tow}})
+\times
+BO
+\quad(B\mathrm{Spin}\text{ preferred when spin data exist}).
 \]
 
-Flux partition over 243 towers as a character / winding in \(X_3\).  
-**Pros:** Uses 243 directly; \(N_{\mathrm{flux}}=4880\) as total winding.  
-**Cons:** Continuous torus vs discrete seeds 20/21 — need lattice points.
+| Factor | Role on residual flux quantum \(x\) |
+|--------|--------------------------------------|
+| \(\mathbb{Z}/9\) | Charge sector of the core / \(x\bmod 9\) (cores monochrome) |
+| \(\mathbb{Z}/N_{\mathrm{tow}}\) | Democratic tower block \(\tau(x)\) |
+| \(\mathbb{Z}/8\) | Bott degree \(\beta(x)=x\bmod 8\) |
 
-### Candidate X4 — Product (recommended working draft)
-
-\[
-X_4 := B(\mathbb{Z}/9\mathbb{Z})\ \times\ B(\mathbb{Z}/243\mathbb{Z})\ \times\ K(\mathbb{Z},4)
-\]
-
-- \(\mathbb{Z}/9\): charge \(Q\)  
-- \(\mathbb{Z}/243\): tower label  
-- \(K(\mathbb{Z},4)\): placeholder for \(G_4\) flux class in \(H^4\) (M-theory style bookkeeping; **not** identifying \(G_4=539.9\,\mathrm{s}\))
-
-**Working draft for Architecture A:** use \(X_4\) until geometry of \(M_7\) is fixed.
+**Deprecated as 539-source:** path packages \(\mathcal{C}_1,\mathcal{C}_2\) with free \(T^\sharp\) (basins \(=2\)).
 
 ---
 
-## 3. Classifying map sketch \(f\colon \mathcal{C}\to X_4\)
+## 3. Classifying map (discrete layer — executed)
 
-Assume Phase 0 package \(\mathcal{C}_1\) or \(\mathcal{C}_2\).
+\[
+f(x)=\bigl(q(x),\,\tau(x),\,\beta(x)\bigr).
+\]
 
-For a path \(\gamma=(n_0,\ldots,n_L)\in\mathcal{C}\):
+**Verified** (`scripts/architecture_A_ores_probe.py`):
 
-| Factor | Map |
-|--------|-----|
-| \(B(\mathbb{Z}/9)\) | \(n_0 \bmod 9\) as \(\pi_1\) holonomy (constant on path if charge fixed) |
-| \(B(\mathbb{Z}/243)\) | tower index \(\tau(n_0)\in\mathbb{Z}/243\) from democratic seed partition |
-| \(K(\mathbb{Z},4)\) | degree / flux quantum \(\lfloor N_{\mathrm{flux}}/243\rfloor\) or seed type (20 vs 21) as a 4-class label (placeholder) |
-
-**Continuous realization:** realize \(\mathcal{C}\) as a simplicial set (one 0-simplex per path class; 1-simplices for elementary homotopies of paths — e.g. same endpoints and same residue word). Then \(f\) is a simplicial map to a simplicial model of \(X_4\).
-
-**Spin structure:** pull back the spin cover of the stable normal bundle of a geometric realization, **or** work with \(B\mathrm{Spin}\times X_4\) and a map lifting through spin if Stiefel–Whitney data vanish — **open check**.
+- \(f\) injective on canonical \(\mathcal{O}_{\mathrm{res}}\) via \((\tau,\beta)\) (539 distinct pairs).
+- \(f\) injective on nine-core union (4851 distinct triples).
+- Bott fibers \(\lvert F_k\rvert\in\{67,68\}\) with \(B'=8\cdot 67+3\).
 
 ---
 
-## 4. Bott action on the image
+## 4. Bott action / grading on the image
 
-Once \(f_*[\mathcal{C}]\in KO_*(X_4)\) (or \(\Omega_*^{\mathrm{Spin}}(X_4)\)):
-
-1. Apply Bott periodicity isomorphisms  
+1. Grade \(\mathcal{O}_{\mathrm{res}}\) by \(\beta(x)\in\mathbb{Z}/8\).  
+2. Record fiber cardinalities (discrete \(KO\)-proxy labels from the real Bott table — **labels only**).  
+3. Arithmetic consistency:
    \[
-   KO_{n+8}(X_4)\cong KO_n(X_4).
+   B' = 8\cdot\lfloor B'/8\rfloor + (B'\bmod 8) = 8\cdot 67 + 3.
    \]
-2. Filter the set of path classes by the \(KO\)-degree of their image.  
-3. Test arithmetic:
-   \[
-   539 \stackrel{?}{=} 8\cdot 67 + 3
-   \]
-   as rank/orbit decomposition in that filtration.
+4. **No free \(\mathbb{Z}/8\) action** on the set (\(8\nmid 539\)) — residual structure required.
 
-**Forbidden:** defining the filtration by already knowing 539 classes and grouping them into 67 groups of 8.
+**Forbidden:** defining the filtration by presupposing 539 trajectory classes and grouping them into 67 groups of 8 by hand.
 
 ---
 
@@ -105,29 +101,28 @@ Once \(f_*[\mathcal{C}]\in KO_*(X_4)\) (or \(\Omega_*^{\mathrm{Spin}}(X_4)\)):
 
 | Statement | Architecture A stance |
 |-----------|------------------------|
-| \(N_\star=14\) short contraction | Unrelated type (Lipschitz/mean log) vs bordism count |
-| \(\lambda=\ln 3/539\) | Still not derived from democracy; Bott does not create that Lipschitz constant |
-| \(G_4=539.9\,\mathrm{s}\) | Not identified with \(K(\mathbb{Z},4)\) degree without a Clock-III dictionary |
+| \(N_\star=14\) short contraction | Intact; different type from \(\lvert\mathcal{O}_{\mathrm{res}}\rvert\) |
+| \(\lambda=\ln 3/539\) | Still not derived from democracy; Bott on carrier does not create that Lipschitz constant |
+| Free basins \(=2\) | Intact Category A |
+| \(G_4=539.9\,\mathrm{s}\) | Not identified with \(K(\mathbb{Z},4)\) / \(BO\) degree without Clock-III dictionary |
 | Empirical 539.9 spectral test | Still hypothesis protocol |
 
 ---
 
-## 6. Exit criteria for Architecture A
+## 6. Exit criteria
 
-- [ ] \(\mathcal{C}\) fixed (Phase 0)  
-- [ ] \(X\) fixed (recommend \(X_4\) draft)  
-- [ ] Simplicial/continuous \(f\colon \mathcal{C}\to X\) defined  
-- [ ] Spin (or pin) structure verified or replaced by orientable proxy  
-- [ ] Computation or spectral sequence yielding a numerical invariant \(=539\) **without 539 on RHS**  
-- [ ] Bott orbit decomposition consistent with \(539\equiv 3\pmod 8\)  
+- [x] Carrier \(\mathcal{O}_{\mathrm{res}}\) fixed with 539-free count  
+- [x] Discrete \(X\) and \(f\) defined  
+- [x] Bott grading computed; O2 residual exhibited  
+- [ ] Simplicial/continuous lift to \(BO\) / \(B\mathrm{Spin}\)  
+- [ ] Spin (or pin) structure verified on a geometric model  
+- [ ] True \(KO\) / \(\Omega^{\mathrm{Spin}}\) invariant computation  
+- [ ] Seed-representative naturality theorem  
 
 ---
 
 ## 7. Bottom line
 
-Architecture A is the **standard** mathematical bridge (spin bordism → \(KO\) → Bott).  
-The draft background space is
-\[
-X_4 = B(\mathbb{Z}/9)\times B(\mathbb{Z}/243)\times K(\mathbb{Z},4).
-\]
-The missing pieces are Phase 0’s unique \(\mathcal{C}\) and a non-circular computation of 539 from \(f_*[\mathcal{C}]\).
+Architecture A is the standard bridge (spin bordism → \(KO\) → Bott), now **aimed at residual-flux carrier \(\mathcal{O}_{\mathrm{res}}\)** with honest provenance.  
+Discrete classifying map and Bott-clock grading are in hand; continuous \(KO\) theorems remain open.  
+See `Architecture_A_Ores_Programme.md` for the full active programme.

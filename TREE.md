@@ -25,3 +25,4 @@
 â”‚   â””â”€â”€ python/               # hqh539_core.py (Canonical T3, SCA-hardened), demos
 â””â”€â”€ (future: hardware notes linking to 539-Labs-repo RTL)
 
+

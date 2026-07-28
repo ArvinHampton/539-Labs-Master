@@ -8,11 +8,13 @@
 
 | Target | Status |
 |--------|--------|
-| Combinatorial carrier \(\mathcal{O}_{\mathrm{res}}\), \(\lvert\mathcal{O}_{\mathrm{res}}\rvert=\lfloor(N_{\mathrm{flux}}-f_{\max})/9\rfloor=539\) | **Open for use** — verified, 539-free RHS (`Object539_NonCircular_Construction.md`) |
+| Combinatorial carrier \(\mathcal{O}_{\mathrm{res}}\), \(\lvert\mathcal{O}_{\mathrm{res}}\rvert=\lfloor(N_{\mathrm{flux}}-f_{\max})/9\rfloor=539\) | **Active Architecture A** — verified carrier (`Object539_NonCircular_Construction.md`) |
+| Discrete classifying map + Bott grading on \(\mathcal{O}_{\mathrm{res}}\) | **Executed** — `Architecture_A_Ores_Programme.md`, `architecture_A_ores_results.json` |
 | Free / charge-preserving \(T^\sharp\) trajectory classes | **Still closed** — \(N_{\mathrm{basins}}=2\); Option 3 (`H0_539_Honest_Options.md`) |
 | E1–E2 residue-word counts at Bott length 8 | **Executed** — none equal 539 (`e1e2_bott_word_results.json`) |
+| Continuous \(KO\) / \(B\mathrm{Spin}\) theorem | **Open** (roadmap A2–A5) |
 
-Bott / \(B\mathrm{Spin}/BO\) work may proceed **only** with explicit target = carrier \(\mathcal{O}_{\mathrm{res}}\) (or another verified 539-set), **not** with a claim that free dynamics produce the 539 classes.
+Bott / \(B\mathrm{Spin}/BO\) work proceeds with target = carrier \(\mathcal{O}_{\mathrm{res}}\) only, under mandatory provenance (residual flux quanta, Principle (S), democratic charge partition). **Forbidden:** free-\(T^\sharp\) origin claims; No-Go lift.
 
 Companions: `Bott_Periodicity_vs_HQCC.md`, `NoGo_Theorem_Canonical.md`, `ACE_Status_of_Record.md`.
 

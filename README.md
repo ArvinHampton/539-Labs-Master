@@ -68,3 +68,8 @@ See `docs/S2-11DM2ET-X-Axiomatic-Book/Object539_NonCircular_Construction.md`, `F
 Arvin B. Hampton (String Weaver)
 539 Labs, LLC
 Self-taught mathematician and physicist sharing the work for peer review.
+
+### Architecture A on O_res
+
+Discrete classifying map and Bott-clock grading on residual-flux carrier: `docs/S2-11DM2ET-X-Axiomatic-Book/Architecture_A_Ores_Programme.md`. Provenance: residual flux quanta under Principle (S); not free T-sharp; no No-Go lift.
+

@@ -125,7 +125,7 @@ E1–E2 residue-word probes did **not** hit 539 (`e1e2_bott_word_results.json`).
 | Resonant layer = packaging as hard budget | Design / interpretive | **Resolved** (`Resonant_Layer_Resolved.md`) |
 | Integer 539 as free HQCC **trajectory/basin** count | **B** | Origin **open** — Option 3 default |
 | Extra filters (phase-lock accumulator, closure projections, tower checksums) | **B** if present | Not forced by residual arithmetic |
-| Bott on carrier \(\mathcal{O}_{\mathrm{res}}\) | B research | **Permitted** (must not claim free \(T^\sharp\) origin) |
+| Bott on carrier \(\mathcal{O}_{\mathrm{res}}\) | B research | **Active** — discrete \(f\) + Bott grading executed (`Architecture_A_Ores_Programme.md`) |
 | Bott on free trajectory \(\pi_0\) | B | **Paused** until trajectory 539-set exists |
 | Empirical ~539.9 spectral test | Protocol | Permitted as hypothesis only |
 

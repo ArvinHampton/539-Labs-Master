@@ -1,0 +1,114 @@
+{
+  "provenance": {
+    "objects": "residual flux quanta",
+    "principle_S": true,
+    "democratic_charge_partition": true,
+    "not_free_Tsharp_basins": true,
+    "no_go_lift_claimed": false,
+    "count_formula_RHS": "floor((N_flux - f_max)/9)"
+  },
+  "atoms": {
+    "N_flux": 4880,
+    "N_tow": 243,
+    "Q": 9,
+    "f_max": 21,
+    "B_prime": 539
+  },
+  "canonical_core_q0": {
+    "cardinality": 539,
+    "monochrome_mod9": [
+      3
+    ],
+    "bott_fibers": {
+      "0": 67,
+      "1": 67,
+      "2": 67,
+      "3": 67,
+      "4": 67,
+      "5": 68,
+      "6": 68,
+      "7": 68
+    },
+    "fiber_sum": 539,
+    "floor_B_prime_over_8": 67,
+    "B_prime_mod_8": 3,
+    "identity_8floor_plus_excess": true,
+    "unique_tower_bott_pairs": 539,
+    "classifying_map_injective": true,
+    "unique_towers_touched": 242
+  },
+  "nine_cores": {
+    "cardinality_union": 4851,
+    "each_size": [
+      539,
+      539,
+      539,
+      539,
+      539,
+      539,
+      539,
+      539,
+      539
+    ],
+    "each_mod9": [
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "unique_q_tower_bott_triples": 4851,
+    "classifying_map_injective": true
+  },
+  "obstruction_O2": {
+    "free_Z8_action_possible": false,
+    "reason": "8 does not divide B_prime"
+  },
+  "seed_equivariance_sample_50": {
+    "min_fiber_values_seen": [
+      62,
+      63,
+      64,
+      65,
+      66
+    ],
+    "injective_tower_bott_count": 50
+  },
+  "classical_bott_table_labels_only": {
+    "0": "Z/2",
+    "1": "Z/2",
+    "2": "0",
+    "3": "Z",
+    "4": "0",
+    "5": "0",
+    "6": "0",
+    "7": "Z"
+  },
+  "forbidden_claims": [
+    "free T^sharp origin of 539 objects",
+    "No-Go lift for lambda=ln3/539 from democracy alone",
+    "pi_k(O) produces resonant trajectories"
+  ]
+}
