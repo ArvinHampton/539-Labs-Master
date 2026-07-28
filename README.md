@@ -73,3 +73,8 @@ Self-taught mathematician and physicist sharing the work for peer review.
 
 Discrete classifying map and Bott-clock grading on residual-flux carrier: `docs/S2-11DM2ET-X-Axiomatic-Book/Architecture_A_Ores_Programme.md`. Provenance: residual flux quanta under Principle (S); not free T-sharp; no No-Go lift.
 
+
+### Architecture A1–A2
+
+Seed-independent Bott clock `beta_sharp` and discrete simplicial lift: `docs/S2-11DM2ET-X-Axiomatic-Book/Architecture_A1_Seed_Equivariance.md`, `Architecture_A2_Simplicial_Lift.md`. Next: A3–A5 geometric BO/BSpin and KO.
+

@@ -1,0 +1,71 @@
+{
+  "provenance": {
+    "objects": "residual flux quanta",
+    "principle_S": true,
+    "democratic_charge_partition": true,
+    "not_free_Tsharp_basins": true,
+    "no_go_lift_claimed": false
+  },
+  "A1": {
+    "B_prime": 539,
+    "expected_index_fibers": [
+      68,
+      68,
+      68,
+      67,
+      67,
+      67,
+      67,
+      67
+    ],
+    "identity_8_67_plus_3": true,
+    "trials": 100,
+    "index_fiber_tables_unique": 1,
+    "index_matches_expected_all_trials": true,
+    "ambient_min_fiber_range": [
+      61,
+      67
+    ],
+    "injective_tower_beta_sharp": 100,
+    "injective_tower_beta_ambient": 100,
+    "canonical_ambient_fibers": [
+      67,
+      67,
+      67,
+      67,
+      67,
+      68,
+      68,
+      68
+    ],
+    "canonical_sharp_fibers": [
+      68,
+      68,
+      68,
+      67,
+      67,
+      67,
+      67,
+      67
+    ],
+    "affine_ambient_match_index_table_hits": 0,
+    "affine_trials": 30,
+    "normal_form": "beta_sharp(x_i) = i mod 8"
+  },
+  "A2": {
+    "model": "constant simplicial sets E(O_res) -> E(X_disc)",
+    "f_sharp_injective_on_0_simplices": true,
+    "nerve_Z8_face_identities_sample": true,
+    "optional_1_skeleton_canonical": {
+      "index_adjacent_edges": 538,
+      "same_beta_sharp_edges": 17889,
+      "same_tower_edges": 353
+    },
+    "continuous_BO_BSpin": "deferred to A3-A5"
+  },
+  "forbidden_claims": [
+    "free T^sharp origin",
+    "No-Go lift",
+    "ambient x mod 8 fibers seed-invariant"
+  ]
+}

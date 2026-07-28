@@ -108,11 +108,13 @@ R=N_{\mathrm{flux}}-20\cdot N_{\mathrm{tow}}=20.
 \]
 For \(x\in\Omega\), let \(\tau(x)\in\mathbb{Z}/N_{\mathrm{tow}}\) be the unique block containing \(x\).
 
-### 3.2 Bott degree
+### 3.2 Bott degree — **use A1 normal form**
 
 \[
-\beta(x) := x \bmod 8 \in \mathbb{Z}/8.
+\beta_\sharp(x_i) := i \bmod 8 \in \mathbb{Z}/8
+\quad\text{(core index \(i\) in sorted \(\mathcal{O}_{\mathrm{res}}\))}.
 \]
+Ambient \(x\bmod 8\) is diagnostic only (`Architecture_A1_Seed_Equivariance.md`).
 
 ### 3.3 Charge sector of the core
 
@@ -122,81 +124,62 @@ x \equiv r_q \pmod 9
 \]
 (verified: cores are monochromatic mod 9). For \(q=0\), \(r_0=3\).
 
-### 3.4 Definition of \(f\)
+### 3.4 Definition of \(f_\sharp\) (post-A1)
 
 \[
-f(x)
+f_\sharp(x_i)
 :=
-\bigl(q(x),\;\tau(x),\;\beta(x)\bigr)
+\bigl(q,\;\tau(x_i),\;\beta_\sharp(x_i)\bigr)
+=
+\bigl(q,\;\tau(x_i),\;i\bmod 8\bigr)
 \in
 X_{\mathrm{disc}}.
 \]
-
-For a single core \(\mathcal{O}_{\mathrm{res}}=\mathrm{core}(C_0)\), \(q\equiv 0\) (construction index) or use ambient \(x\bmod 9\).
 
 ### 3.5 Executed facts (probe)
 
 | Fact | Status |
 |------|--------|
 | \(\lvert\mathcal{O}_{\mathrm{res}}\rvert=539\) | Verified |
-| \(f\big|_{\mathcal{O}_{\mathrm{res}}}\) injective into \(\{0\}\times\mathbb{Z}/243\times\mathbb{Z}/8\) via \((\tau,\beta)\) | **Verified** (539 distinct pairs) |
-| \(f\) on \(\mathcal{O}_{\mathrm{res}}^{(9)}\) injective into \(X_{\mathrm{disc}}\) | **Verified** (4851 distinct triples) |
-| Each core monochromatic in \(x\bmod 9\) | Verified |
+| \(\beta_\sharp\) fibers seed-independent \((68^3,67^5)\) | **A1 theorem** (100/100 seeds) |
+| \(f_\sharp\) injective via \((\tau,i\bmod 8)\) | **Verified** (100/100 + canonical) |
+| Simplicial lift \(\tilde f_\sharp\colon E(\mathcal{O}_{\mathrm{res}})\to E(X_{\mathrm{disc}})\) | **A2** (`Architecture_A2_Simplicial_Lift.md`) |
 | Free \(\mathbb{Z}/8\)-action on a 539-set | **Impossible** (\(8\nmid 539\)) |
 
 ---
 
-## 4. Bott filtration on the carrier
+## 4. Bott filtration on the carrier (A1 normal form)
 
-### 4.1 Degree fibers
+### 4.1 Normal Bott degree \(\beta_\sharp\) (**A1 complete**)
 
+Sort the core \(\mathcal{O}_{\mathrm{res}}(\mathrm{Seed})=\{x_0<\cdots<x_{B'-1}\}\) and set
 \[
-F_k
-:=
-\{x\in\mathcal{O}_{\mathrm{res}}:\beta(x)=k\},
-\qquad
-k\in\mathbb{Z}/8.
+\beta_\sharp(x_i):=i\bmod 8.
 \]
+**Theorem (seed-independent fibers):** for every seed of size \(f_{\max}\),
+\[
+\bigl(\lvert F_0^\sharp\rvert,\ldots,\lvert F_7^\sharp\rvert\bigr)
+=
+(68,68,68,67,67,67,67,67).
+\]
+Verified on 100 random seeds. Full writeup: `Architecture_A1_Seed_Equivariance.md`.
 
-**Canonical core \(q=0\), canonical seed \(\{0,\ldots,f_{\max}-1\}\) (executed):**
-
-| \(k\bmod 8\) | \(\lvert F_k\rvert\) | Classical \(\pi_k(O)\) type (label only) |
-|-------------:|---------------------:|----------------------------------------|
-| 0 | 67 | \(\mathbb{Z}/2\) |
-| 1 | 67 | \(\mathbb{Z}/2\) |
-| 2 | 67 | \(0\) |
-| 3 | 67 | \(\mathbb{Z}\) |
-| 4 | 67 | \(0\) |
-| 5 | 68 | \(0\) |
-| 6 | 68 | \(0\) |
-| 7 | 68 | \(\mathbb{Z}\) |
-
-Check: \(5\cdot 67 + 3\cdot 68 = 335+204 = 539\).
+Ambient \(\beta(x)=x\bmod 8\) remains seed-dependent (min fiber sample range 61–67) and is **deprecated** for fiber claims.
 
 ### 4.2 Relation to \(B'=8\cdot 67+3\)
 
-Always (seed-independent cardinality):
 \[
-B' = 8\cdot\lfloor B'/8\rfloor + (B'\bmod 8) = 8\cdot 67 + 3.
+B' = 8\cdot 67 + 3
 \]
-On the **canonical** core, **67** is also the **minimum** Bott-fiber size under \(\beta\), with excess \(+1\) on degrees \(\{5,6,7\}\).
-
-**Seed dependence (probe, 50 random seeds):** fiber minima vary (sample saw 62–66); **injectivity** of \((\tau,\beta)\) on the \(q=0\) core held in **50/50** trials. So:
-- the identity \(B'=8\cdot 67+3\) is **seed-independent** (pure arithmetic of \(B'\));
-- the tidy fiber table above is a **canonical-seed** phenomenon, not yet a theorem for all seeds;
-- Phase **A1** tracks equivariance / normalization of \(\beta\) under seed change.
-
-**Interpretation (Category B, provisional):**  
-the carrier admits a Bott-clock grading; cardinality forces residual \(B'\equiv 3\pmod 8\). Canonical seed realizes bulk fiber size 67 with excess 3. This is **compatible** with obstruction O2 (no free \(\mathbb{Z}/8\) action) and **does not** use free \(T^\sharp\).
+is realized by \(\beta_\sharp\) as three excess slots on degrees \(\{0,1,2\}\) (sizes 68 vs 67), for **all** seeds.
 
 **Forbidden reading:** “\(\pi_3(O)=\mathbb{Z}\) produces 539 trajectories.”  
-**Allowed reading:** “On the residual-flux carrier of size \(B'\), the Bott clock is a grading; \(B'\equiv 3\pmod 8\) is forced by packaging+(S).”
+**Allowed reading:** “On the residual-flux carrier, the **index** Bott clock grades a set of size \(B'\); fibers are seed-invariant.”
 
 ### 4.3 No free \(\mathbb{Z}/8\) action (O2 cleared on carrier)
 
-Because \(8\nmid 539\), no free period-8 permutation of \(\mathcal{O}_{\mathrm{res}}\) exists.  
-Any Bott **action** must be non-free (fixed points / residual orbits).  
-The fiber description above is a **grading**, not a free group action — consistent with obstruction O2 in `Bott_HQCC_Link_Research.md`.
+Because \(8\nmid B'\), no free period-8 permutation of \(\mathcal{O}_{\mathrm{res}}\) exists.  
+\(\beta_\sharp\) is a **grading**, not a free group action.
 
 ---
 
@@ -230,11 +213,11 @@ whose restriction to discrete points recovers \(f\), then push
 **Exit criteria for a theorem (not yet met):**
 
 - [x] Carrier fixed with 539-free count  
-- [x] Discrete classifying map \(f\) defined and injective on cores  
-- [x] Bott grading \(\beta\) computed; O2 residual structure exhibited  
-- [ ] Geometric / simplicial lift to \(B\mathrm{Spin}\) or \(BO\)  
-- [ ] Actual \(KO\) or \(\Omega^{\mathrm{Spin}}\) computation (not only labels)  
-- [ ] Naturality under change of seed representative (equivariance)
+- [x] Discrete classifying map \(f_\sharp\) defined and injective on cores  
+- [x] Bott grading \(\beta_\sharp\) seed-independent; O2 residual structure exhibited (A1)  
+- [x] Discrete simplicial lift \(\tilde f_\sharp\) (A2 constant systems)  
+- [ ] Geometric lift to \(B\mathrm{Spin}\) or \(BO\) (A3+)  
+- [ ] Actual \(KO\) or \(\Omega^{\mathrm{Spin}}\) computation (not only labels) (A5)
 
 ---
 
@@ -267,14 +250,14 @@ Architecture B **on the carrier** may use only functions of \(x,\tau(x),\beta(x)
 
 ## 8. Developmental roadmap
 
-| Phase | Deliverable | Priority |
-|-------|-------------|----------|
-| **A0** | Provenance + carrier + discrete \(f\) + \(\beta\)-filtration | **Done** (this doc + probe) |
-| **A1** | Seed-equivariance: \(f\) and fiber sizes under random \(\mathrm{Seed}\) of size \(f_{\max}\) | Next |
-| **A2** | Simplicial nerve of \(X_{\mathrm{disc}}\); \(f\) as simplicial map | Next |
-| **A3** | Compare fiber statistics to Bott table (heuristic only) | Ongoing |
-| **A4** | Spin structure check on a geometric model of tower×charge | Later |
-| **A5** | Spectral sequence / board game \(KO\) computation | Later |
+| Phase | Deliverable | Status |
+|-------|-------------|--------|
+| **A0** | Provenance + carrier + discrete \(f\) | **Done** |
+| **A1** | Seed equivariance; \(\beta_\sharp\) normal form; fiber theorem | **Done** — `Architecture_A1_Seed_Equivariance.md` |
+| **A2** | Constant simplicial lift \(E(\mathcal{O}_{\mathrm{res}})\to E(X_{\mathrm{disc}})\); nerve of \(\mathbb{Z}/8\) faces | **Done** (discrete) — `Architecture_A2_Simplicial_Lift.md` |
+| **A3** | Maps \(B(\mathbb{Z}/8)\to BO\); geometric models | **Next** |
+| **A4** | Spin structure / \(B\mathrm{Spin}\) lift | Open |
+| **A5** | Actual \(KO\) / \(\Omega^{\mathrm{Spin}}\) computation | Open |
 
 Secondary (lower priority, parallel): E1–E2 free-map word probes; 1001 provenance; R-FFT; individuality falsifiability — **must not** be mixed into carrier provenance.
 
@@ -283,6 +266,7 @@ Secondary (lower priority, parallel): E1–E2 free-map word probes; 1001 provena
 ## 9. Bottom line
 
 > Architecture A / Bott / classifying-map work **proceeds** with \(\mathcal{O}_{\mathrm{res}}\) as the **only** 539-carrier.  
-> Discrete classifying map and Bott-clock grading are **executed and verified**.  
-> Continuous \(KO\)/spin theorems remain open.  
-> Honest provenance is mandatory: residual flux quanta under (S) + democratic charge partition — **not** free \(T^\sharp\), **not** a No-Go lift.
+> **A0–A2 complete:** carrier, \(\beta_\sharp\) normal form (seed-independent fibers), discrete simplicial lift \(\tilde f_\sharp\).  
+> **A3–A5 open:** geometric \(BO\)/\(B\mathrm{Spin}\) and actual \(KO\)/bordism.  
+> Honest provenance is mandatory: residual flux quanta under (S) + democratic charge partition — **not** free \(T^\sharp\), **not** a No-Go lift.  
+> Free-dynamics 539-classes remain **Option 3**.
