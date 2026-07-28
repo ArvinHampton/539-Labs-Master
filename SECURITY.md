@@ -20,3 +20,13 @@ Preferred framing:
 ## Current Map Baseline
 The repository uses the Canonical T3 map.
 Earlier evaluation of the T4121 variant showed cleaner fixed-point behaviour but reduced observed cryptographic hardness (avalanche and pre-image resistance). The original T3 coefficients were therefore retained.
+
+## HQH-539 security reductions (status)
+
+**No completed, externally verified security reduction is claimed.**
+
+Exploration ledger (intended goals, packaging/\(\mathcal{O}_{\mathrm{res}}\) ingredients, candidate hard problems, explicit non-claims):
+
+`docs/S2-11DM2ET-X-Axiomatic-Book/HQH539_Security_Reductions_Exploration.md`
+
+Round count may be cited from non-circular packaging under Principle (S) (\(18+521\) or \(\lfloor(N_{\mathrm{flux}}-f_{\max})/9\rfloor\)). That supplies an **engineered fixed-round budget**, not a proof of preimage/collision hardness. Residual carrier \(\mathcal{O}_{\mathrm{res}}\) may appear only under residual-flux provenance (not free \(T^\sharp\)).
