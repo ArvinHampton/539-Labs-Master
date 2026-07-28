@@ -1,0 +1,103 @@
+{
+  "model_holographic_window": {
+    "W_coherent": 18,
+    "P_screen": 61,
+    "3**18": 387420489,
+    "log3(1e18)": 37.72625893720892,
+    "HQCC_spec_note": "Natural T3 stopping times ~374\u2013506 (mean~436); 539 is forced iteration / engineering choice; 18-step holographic split is theoretical (no special op at step 17\u219218)",
+    "composition_if_forced": "18 (window) + 1 (master) + 520 (towers) = 539 \u2014 inserts fixed counts"
+  },
+  "map": "sharp",
+  "N": 4096,
+  "n_seeds": 47,
+  "natural_stopping_time": {
+    "median": 52.0,
+    "mean": 916.2127659574468,
+    "q05": 28.6,
+    "q95": 2000.0,
+    "fraction_ge_539": 0.44680851063829785,
+    "fraction_le_14": 0.0425531914893617
+  },
+  "spectral_primary": {
+    "holo_window_W18": {
+      "T_hat_median": 3.0007326007326007,
+      "T_hat_mean": 1831.7876393110434,
+      "ensemble_median_CI95": [
+        3.0007326007326007,
+        4096.0
+      ],
+      "quantiles": {
+        "q05": 3.0007326007326007,
+        "q50": 3.0007326007326007,
+        "q95": 4096.0
+      },
+      "post_hoc_cover_fraction": {
+        "18": 1.0,
+        "61": 0.6595744680851063,
+        "539.9": 0.0
+      },
+      "compat_median": {
+        "abs_err_18": 14.9992673992674,
+        "abs_err_61": 57.999267399267396,
+        "abs_err_539.9": 536.8992673992674,
+        "claimed_18_in_ens_CI": true,
+        "claimed_61_in_ens_CI": true,
+        "claimed_539.9_in_ens_CI": true
+      }
+    },
+    "holo_screen_P61": {
+      "T_hat_median": 4096.0,
+      "T_hat_mean": 4096.0,
+      "ensemble_median_CI95": [
+        4096.0,
+        4096.0
+      ],
+      "quantiles": {
+        "q05": 4096.0,
+        "q50": 4096.0,
+        "q95": 4096.0
+      },
+      "post_hoc_cover_fraction": {
+        "18": 0.5319148936170213,
+        "61": 0.5319148936170213,
+        "539.9": 0.5106382978723404
+      },
+      "compat_median": {
+        "abs_err_18": 4078.0,
+        "abs_err_61": 4035.0,
+        "abs_err_539.9": 3556.1,
+        "claimed_18_in_ens_CI": false,
+        "claimed_61_in_ens_CI": false,
+        "claimed_539.9_in_ens_CI": false
+      }
+    },
+    "holo_window_plus_screen": {
+      "T_hat_median": 3.0007326007326007,
+      "T_hat_mean": 1831.7876393110434,
+      "ensemble_median_CI95": [
+        3.0007326007326007,
+        4096.0
+      ],
+      "quantiles": {
+        "q05": 3.0007326007326007,
+        "q50": 3.0007326007326007,
+        "q95": 4096.0
+      },
+      "post_hoc_cover_fraction": {
+        "18": 1.0,
+        "61": 0.6808510638297872,
+        "539.9": 0.0
+      },
+      "compat_median": {
+        "abs_err_18": 14.9992673992674,
+        "abs_err_61": 57.999267399267396,
+        "abs_err_539.9": 536.8992673992674,
+        "claimed_18_in_ens_CI": true,
+        "claimed_61_in_ens_CI": true,
+        "claimed_539.9_in_ens_CI": true
+      }
+    }
+  },
+  "protocol": "539.9 not in estimator; 18 and 61 used only as pre-declared holographic constructions / post-hoc tests",
+  "no_go_reminder": "Holographic window is an extra model constraint outside pure ACE contraction"
+}

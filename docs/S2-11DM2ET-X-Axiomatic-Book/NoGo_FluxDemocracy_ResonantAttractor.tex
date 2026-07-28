@@ -1,0 +1,511 @@
+% =====================================================================
+% No-Go: Charge-correcting exponent, flux democracy, contraction circularity
+% Empirical pathway for the Resonant Attractor (non-circular)
+% =====================================================================
+
+\chapter{No-Go on Flux Democracy and Empirical Resonant Attractor}
+\label{ch:nogo-attractor}
+
+\section{Motivation}
+
+A non-circular treatment of HQCC termination at depth \(\sigma=539\) and of
+generation individuality would require an \emph{a priori} estimate of the mean
+size of the charge-correcting exponent that uses only
+\begin{enumerate}[label=(\roman*)]
+  \item the residue-class structure of the ternary Syracuse map \(T_3\), and
+  \item the topology of the \(243=3^5\) towers,
+\end{enumerate}
+\emph{without} prior knowledge of the global step count \(\sigma=539\pm 1\),
+together with a bridge that returns \(539\) rather than a short e-fold count.
+
+\paragraph{ACE status (strengthening, not escape).}
+An ACE for the completed map \(T^\sharp\) is now available: under \(3\)-adic
+equidistribution consistent with the \(243\)-tower average,
+\[
+\mathbb{E}_\pi[\chi]
+=\frac23\ln\frac13+\frac13\ln\frac43
+=\ln\Bigl(\frac{4^{1/3}}{3}\Bigr)
+\approx -0.6365
+<0,
+\qquad
+\lambda_{\mathrm{mean}}=\frac{4^{1/3}}{3}\approx 0.529,
+\]
+and the crude flux bridge yields the non-circular depth
+\[
+N_\star
+=\Bigl\lceil\frac{\ln 4880}{\bigl|\mathbb{E}_\pi[\chi]\bigr|}\Bigr\rceil
+=14.
+\]
+None of these quantities equals \(539\). Closing the ACE therefore
+\emph{strengthens} the no-go for \(\sigma=539\): the only depth the listed data
+determine is of order \(14\), not \(539\). In particular:
+\begin{itemize}
+  \item flux democracy cannot be invoked to break the circularity of the
+        contraction-factor argument that sets \(\lambda=\ln 3/539\);
+  \item flux democracy cannot select a unique discrete dictionary of
+        generational labels anchored at \(539\).
+\end{itemize}
+
+This chapter records that obstruction as a \textbf{no-go theorem}, and then
+states what \emph{can} be established empirically for the Resonant Attractor
+without smuggling \(\sigma\) into the premises. The canonical statement with
+full derivation is Chapter~\ref{ch:nogo-canonical}; the ACE resolution is
+recorded in the completed-map notes.
+
+% ---------------------------------------------------------------------
+\section{Objects}
+\label{sec:nogo-objects}
+
+\begin{definition}[Ternary Syracuse map]
+\label{def:T3-nogo}
+\[
+T_3(n)=
+\begin{cases}
+n/3 & n\equiv 0\pmod{3},\\
+\lfloor(4n+2)/3\rfloor & n\equiv 1\pmod{3},\\
+\lfloor(2n+1)/3\rfloor & n\equiv 2\pmod{3}.
+\end{cases}
+\]
+Residue classes \(\mathcal{R}=\{0,1,2\}\) carry the only local branching data.
+\end{definition}
+
+\begin{definition}[Tower lattice]
+\label{def:towers}
+The flux lattice consists of
+\[
+N_{\mathrm{tow}}=3^5=243
+\]
+parallel towers (zero-mode channels). Topology of the lattice means the
+incidence / grouping structure among towers (including any master-tower
+collapse map), but \emph{not} a global orbit length.
+\end{definition}
+
+\begin{definition}[Charge-correcting exponent]
+\label{def:chi}
+A \emph{charge-correcting exponent} is a real (or integer-valued) functional
+\[
+\chi\colon \mathcal{R}^{\mathbb{N}}\times\{\text{tower data}\}
+\to\mathbb{R}
+\]
+used to correct residual ternary / flux charge along an orbit---equivalently,
+any exponent entering a mean contraction estimate of the schematic form
+\begin{equation}
+\label{eq:mean-contr}
+\overline{\Lambda}
+\;=\;
+\exp\bigl(\mathbb{E}[\chi]\bigr)
+\quad\text{or}\quad
+\lambda
+\;=\;
+\frac{\ln 3}{N_\star},
+\end{equation}
+where \(N_\star\) is promoted to a global step count. In particular, both
+\begin{itemize}
+  \item the Banach rate \(\lambda=\ln 3/539\) of the Global Lemma Core, and
+  \item any generation cocycle weight whose normalisation uses \(539\) or
+        \(61\) as an \emph{input},
+\end{itemize}
+are instances of charge-correcting data in the sense of this chapter.
+\end{definition}
+
+\begin{definition}[Flux democracy]
+\label{def:flux-dem}
+\emph{Flux democracy} is the principle that all \(243\) towers are exchangeable
+a priori: mean observables are tower-symmetric averages
+\[
+\langle F\rangle_{243}
+\;=\;
+\frac{1}{243}\sum_{\tau=1}^{243} F(\tau),
+\]
+with no distinguished tower until residual data break the symmetry.
+\end{definition}
+
+\begin{definition}[Contraction-factor argument (circular form)]
+\label{def:circ-arg}
+The \emph{circular contraction-factor argument} is any proof schema of the form:
+\begin{enumerate}[label=(\arabic*)]
+  \item Assume or insert the model HQCC depth \(\sigma=539\) (or \(539\pm 1\)).
+        \textbf{Do not} write this as \(N_\star=539\): the symbol \(N_\star\) is
+        reserved for the ACE e-fold depth \(N_\star=14\).
+  \item Define a contraction rate \(\lambda=\ln 3/\sigma<1\) (or an equivalent
+        mean factor built from \(\sigma\)).
+  \item Invoke a Banach fixed-point / contraction-mapping theorem to conclude
+        termination in \(\sigma\) steps (or existence of a unique attractor at
+        that depth).
+\end{enumerate}
+The conclusion reuses the numerical content of the hypothesis: the argument is
+circular as a \emph{derivation} of \(\sigma\).
+\end{definition}
+
+\begin{definition}[Discrete generational dictionary]
+\label{def:gen-dict}
+A \emph{discrete generational dictionary} is an injective map
+\[
+\iota\colon\{0,1,2\}\to\mathcal{L}
+\]
+into a discrete label set \(\mathcal{L}\) (e.g.\ windings, shells, cocycles).
+A dictionary is \emph{\(\sigma\)-dependent} if its construction uses the global
+step count \(\sigma=539\) (or \(G_4\), or \(|P|=61\) derived only through a
+circular route) as an input rather than as a derived output.
+\end{definition}
+
+\begin{example}[Known \(\sigma\)-dependent dictionary]
+The composite labels
+\[
+w_j=539+61j,\qquad
+k_j\in\{7,11,13\},\qquad
+c_j=\mathbf{1}_{n\equiv j\pmod{3}}
+\]
+are \(\sigma\)-dependent in the \(w_j\) coordinate: uniqueness of
+\((w_0,w_1,w_2)\) as an arithmetic progression anchored at \(539\) presupposes
+\(\sigma\).
+\end{example}
+
+% ---------------------------------------------------------------------
+\section{Circularity diagnosed}
+\label{sec:circ}
+
+\begin{lemma}[Dependence of the Banach rate on \(\sigma\)]
+\label{lem:banach-dep}
+The quantity \(\lambda(\sigma)=\ln 3/\sigma\) is a strictly monotone function
+of the model depth \(\sigma\). Any theorem that both
+\begin{enumerate}[label=(\alph*)]
+  \item takes \(\sigma=539\) as given, and
+  \item concludes termination in \(539\) steps from \(\lambda(539)<1\),
+\end{enumerate}
+does not derive \(\sigma\) from residue-class and tower data alone.
+(The ACE depth is the distinct symbol \(N_\star=14\).)
+\end{lemma}
+
+\begin{lemma}[Naive branch-mean is non-circular but non-selective]
+\label{lem:branch-mean}
+The residue-class branch factors
+\[
+\bigl(\tfrac13,\,\tfrac43,\,\tfrac23\bigr)
+\]
+have arithmetic mean \(2/3\) and geometric structure independent of \(539\).
+The estimate \(\gamma=2/3<1\) is therefore \emph{a priori} in the residue-class
+sector, but it yields only a qualitative contraction tendency, not a unique
+integer depth \(N_\star\) and not a unique generational dictionary.
+\end{lemma}
+
+\begin{lemma}[Flux democracy alone does not fix \(\sigma=539\)]
+\label{lem:dem-insuff}
+Let \(F\) be any tower-symmetric observable built only from the incidence
+topology of the \(243\) towers and from residue-class statistics of \(T_3\),
+without a global orbit length. Then \(\langle F\rangle_{243}\) is invariant
+under simultaneous relabeling of towers and does not determine a unique
+positive integer equal to the model depth \(\sigma=539\).
+(The ACE depth \(N_\star=14\) is a separate, short object when ACE is available.)
+\end{lemma}
+
+\begin{proof}[Proof sketch]
+Tower democracy supplies a unique \emph{average} if \(F\) is given, but does
+not invent an integer orbit length. The set of tower-symmetric functions of
+the finite lattice \(\{1,\ldots,243\}\) is finite-dimensional in the discrete
+sense; none of its canonical invariants (counts of edges, components, or
+seed multiplicities such as \(21\) and \(20\) in published tower tallies)
+equals \(539\) without an additional global composition rule that already
+encodes a step budget (e.g.\ \(18+1+520=539\)). That composition rule is an
+extra axiom, not a consequence of democracy.
+\end{proof}
+
+% ---------------------------------------------------------------------
+\section{No-Go Theorem}
+\label{sec:nogo}
+
+\begin{theorem}[No-Go: Flux democracy cannot break contraction circularity]
+\label{thm:nogo-main}
+\textbf{(Data free of \(539\) do not yield \(\lambda=\ln 3/539\) or \(\sigma=539\).)}
+\newline
+Suppose a framework provides:
+\begin{enumerate}[label=(\roman*)]
+  \item the residue-class structure of \(T_3\) (Definition~\ref{def:T3-nogo});
+  \item the topology of the \(243\) towers (Definition~\ref{def:towers});
+  \item flux democracy (Definition~\ref{def:flux-dem});
+\end{enumerate}
+and may also provide the min-defect completion \(T^\sharp\) with stationary mean
+free of \(539\). Assume \textbf{no} numerical bound that already contains
+\(539\), \(|P|=61\), or period \(539.9\).
+
+Then the following hold:
+\begin{enumerate}[label=(\alph*)]
+  \item Flux democracy cannot be invoked to break the circularity of the
+        contraction-factor argument that sets \(\lambda=\ln 3/539\)
+        (Definition~\ref{def:circ-arg}).
+  \item The identity \(\lambda=\ln 3/539\) cannot be derived as a Banach rate
+        from (i)--(iii) (or from those data plus \(T^\sharp\)) alone.
+  \item No unique discrete generational dictionary
+        (Definition~\ref{def:gen-dict}) can be selected from those data alone
+        if dictionary uniqueness is predicated on an input value of
+        \(\sigma=539\).
+\end{enumerate}
+Equivalently, the programme claims that democracy breaks that circularity,
+that \(\lambda=\ln 3/539\) follows, or that \(w_j=539+61j\) is forced, are
+\textbf{blocked}.
+\end{theorem}
+
+\begin{proof}
+(a) By Lemma~\ref{lem:dem-insuff}, tower-symmetric averages do not determine
+\(\sigma=539\). By Lemma~\ref{lem:banach-dep}, any Banach rate of the form
+\(\ln 3/\sigma\) with \(\sigma=539\) imports \(539\). Therefore democracy
+cannot replace the missing non-circular supply of \(539\) inside
+Definition~\ref{def:circ-arg}. The circular schema remains circular.
+
+(b) Immediate from (a): setting \(\sigma=539\) is an additional stipulation.
+Moreover, when an ACE for \(T^\sharp\) is available, the data-derived rate is
+\(\lambda_{\mathrm{mean}}\approx 0.529\) with e-fold depth \(N_\star=14\), not
+\(\ln 3/\sigma=\ln 3/539\).
+
+(c) A dictionary that uses \(w_j=\sigma+ |P|\,j\) (or any anchor at \(\sigma\))
+requires \(\sigma\) as input. By (a)--(b), \(\sigma=539\) is not available from
+(i)--(iii) (plus ACE) alone. Residue-class cocycles \(c_j=\mathbf{1}_{n\equiv j\pmod{3}}\)
+are available a priori (Lemma~\ref{lem:branch-mean} sector), but they do not
+by themselves injectively label generations with a \emph{unique} total
+dictionary once windings/shells are required to match a \(\sigma\)-dependent
+arithmetic progression. Uniqueness of the full composite dictionary therefore
+fails under the stated hypotheses.
+\end{proof}
+
+\begin{corollary}[ACE strengthens the no-go for \(\sigma=539\)]
+\label{cor:published}
+The completed-map ACE supplies
+\(\mathbb{E}_\pi[\chi]\approx -0.6365\) and the crude bridge \(N_\star=14\), with
+\textbf{no} use of \(539\). That closes the existence of an a priori
+charge-correcting estimate for \(T^\sharp\), but the derived depth is \(14\),
+not \(539\). Consequently Theorem~\ref{thm:nogo-main} still applies---indeed
+more sharply: flux democracy is not a licensed escape to
+\(\lambda=\ln 3/539\), and \(\sigma\)-anchored generational dictionaries are
+not uniquely selected by democracy (or by the short ACE depth).
+See also Theorem~\ref{thm:nogo-canonical}.
+\end{corollary}
+
+\begin{corollary}[What remains licit]
+\label{cor:licit}
+The following remain licit under the no-go:
+\begin{enumerate}[label=(\roman*)]
+  \item \textbf{Conditional theorems:} ``If \(\sigma=539\), then \(\lambda=\ln 3/539<1\)
+        and the stated Banach estimate holds.''
+  \item \textbf{Computational reports:} observed stopping times on finite samples.
+  \item \textbf{Residue-class structure theorems:} exact divisibility, branch
+        factors, cocycle balance \(\sum_j c_j=1\) on \(\mathbb{Z}/3\mathbb{Z}\).
+  \item \textbf{Tower combinatorics:} counts such as \(3^5=243\) forced by
+        \(N_{\mathrm{flux}}\) constructions that do not claim to derive \(539\)
+        from democracy.
+  \item \textbf{Empirical attractor criteria} of Section~\ref{sec:empirical}
+        (no use of \(N_\star\) in the definition).
+\end{enumerate}
+\end{corollary}
+
+% ---------------------------------------------------------------------
+\section{What would lift the no-go}
+\label{sec:lift}
+
+\begin{definition}[A priori charge-correcting estimate (ACE)]
+\label{def:ACE}
+An \emph{ACE} is a proof of a bound
+\[
+\mathbb{E}_{\mu_{\mathcal{R}},\,\mathrm{dem}}[\chi]
+\;\le\;
+-\chi_{\min}
+\;<\;0
+\quad\text{(or a two-sided estimate of mean size)}
+\]
+where:
+\begin{enumerate}[label=(\roman*)]
+  \item \(\mu_{\mathcal{R}}\) is a probability measure on residue sequences
+        constructed only from \(T_3\)'s residue-class rules (e.g.\ Markov
+        measure of the branch graph);
+  \item \(\mathrm{dem}\) denotes flux-democratic average over the \(243\) towers;
+  \item the definition of \(\chi\) and of \(\mu_{\mathcal{R}}\) nowhere
+        mentions \(539\), \(G_4\), or \(|P|=61\) as inputs.
+\end{enumerate}
+\end{definition}
+
+\begin{theorem}[Conditional escape (to a derived depth)]
+\label{thm:escape}
+If an ACE (Definition~\ref{def:ACE}) is proved, and if a separate, non-circular
+bridge
+\begin{equation}
+\label{eq:bridge}
+N_\star
+\;=\;
+\Psi\bigl(\mathbb{E}[\chi],\,243,\,\text{seed multiplicities / flux integer}\bigr)
+\end{equation}
+is given by an explicit integer functional \(\Psi\) independent of assuming
+\(N_\star\) in advance, then:
+\begin{enumerate}[label=(\alph*)]
+  \item the contraction-factor argument may be rewritten non-circularly
+        \emph{at the derived depth} \(N_\star=\Psi(\ldots)\);
+  \item flux democracy may enter as the averaging principle inside the ACE;
+  \item a discrete generational dictionary may use that derived \(N_\star\) as
+        an anchor.
+\end{enumerate}
+\end{theorem}
+
+\begin{remark}[Crude bridge: ACE closed, depth \(14\) not \(539\)]
+\label{rem:crude-bridge}
+For \(T^\sharp\), an ACE is available and the crude flux bridge
+\[
+\Psi_{\mathrm{crude}}
+=\Bigl\lceil\frac{\ln 4880}{\bigl|\mathbb{E}_\pi[\chi]\bigr|}\Bigr\rceil
+=14
+\]
+is non-circular. Theorem~\ref{thm:escape} therefore licenses a non-circular
+rewrite \emph{at depth \(14\)}. It does \textbf{not} lift the no-go for
+\(\sigma=539\): that would require a further bridge \(\Psi_{539}\) returning
+\(539\) without presupposing it. Until such a bridge exists,
+Theorem~\ref{thm:nogo-main} stands for \(\lambda=\ln 3/539\) and
+\(w_j=539+61j\).
+\end{remark}
+
+\begin{remark}[Published \(18+1+520=539\) composition]
+The decomposition ``visible digits + leakage + pull through \(243\) towers''
+is a candidate bridge \(\Psi_{539}\), but only if each summand is forced by
+residue/tower data without presupposing \(539\). If any summand is fitted to
+make the total \(539\), the bridge is circular and does not lift the no-go.
+\end{remark}
+
+% ---------------------------------------------------------------------
+\section{Empirical establishment of the Resonant Attractor}
+\label{sec:empirical}
+
+The no-go blocks a non-circular \emph{derivation of \(539\)} from democracy.
+It does \emph{not} block an empirical definition of the Resonant Attractor
+that avoids \(N_\star\) in its criteria.
+
+\begin{definition}[Resonant Attractor --- empirical, non-circular]
+\label{def:RA-emp}
+Let \(\Phi_t\) be a phase / state observable constructed from trajectories of
+any declared completion of the map (e.g.\ \(T^\sharp\) or unrestricted \(T_3\)).
+The system exhibits a \emph{Resonant Attractor empirically} on a sample
+\(\mathcal{S}\) of seeds if there exist constants
+\(A_c,A_s,T>0\) \emph{estimated from data} (not inserted from \(\sigma\) or
+\(G_4\)) such that
+\begin{equation}
+\label{eq:RA}
+\Phi_t
+\;=\;
+\Phi_0
++A_c\cos\Bigl(\frac{2\pi t}{T}\Bigr)
++A_s\sin\Bigl(\frac{2\pi t}{T}\Bigr)
++\eta_t,
+\end{equation}
+with
+\begin{enumerate}[label=(\roman*)]
+  \item residual \(\eta_t\) small in a stated norm on \(\mathcal{S}\)
+        (e.g.\ mean-square);
+  \item \(T\) obtained by periodogram / FFT / autocorrelation on \(\mathcal{S}\)
+        with horizon and search band \textbf{independent of} \(539.9\);
+  \item stability under held-out seeds (replication).
+\end{enumerate}
+\textbf{Only afterward} may one test compatibility of \(\hat T\) and the
+phase-error distribution with the model's claimed value \(539.9\). That test
+does \textbf{not} insert \(539.9\) into the definition of the dynamics; it
+treats \(539.9\) as a \emph{hypothesis to be checked}.
+(Operational checklist: \texttt{Empirical\_PhaseLocking\_Protocol.md}.)
+\end{definition}
+
+\begin{theorem}[Empirical attractor is outside the no-go]
+\label{thm:emp-outside}
+Definition~\ref{def:RA-emp} does not use a global step count as a premise.
+Therefore Theorem~\ref{thm:nogo-main} does not obstruct empirical establishment
+of a Resonant Attractor on finite samples. What the no-go obstructs is the
+claim that flux democracy \emph{derives} \(\sigma=539\) or uniquely selects a
+\(\sigma\)-anchored generational dictionary.
+\end{theorem}
+
+\begin{definition}[Empirical test protocol]
+\label{def:protocol}
+\begin{enumerate}[label=P\arabic*.]
+  \item Draw i.i.d.\ seeds from a declared ensemble (message/salt or integer
+        band).
+  \item Iterate the implemented map for a horizon \(H\) chosen by a stopping
+        rule independent of \(539\) (e.g.\ first hit of a declared basin, or
+        fixed \(H=10^4\)).
+  \item Estimate \(T\), \(A_c\), \(A_s\) by least squares or FFT on each orbit;
+        pool across seeds.
+  \item Report confidence intervals; pre-register whether \(T\in[539.9\pm\delta]\)
+        is a \emph{test}, not a constraint.
+  \item Separately, histogram stopping times; do not use the mode of that
+        histogram as an input to the contraction rate in the same paper without
+        an ACE.
+\end{enumerate}
+\end{definition}
+
+\begin{corollary}[Clean claim language]
+\label{cor:language}
+\begin{itemize}
+  \item \textbf{Allowed:} ``On sample \(\mathcal{S}\), the implemented dynamics
+        admit an empirical resonant attractor with estimated period
+        \(\hat T=\cdots\).''
+  \item \textbf{Allowed:} ``Conditional on \(\sigma=539\), Banach rate
+        \(\lambda=\ln 3/539<1\).''
+  \item \textbf{Allowed:} ``ACE for \(T^\sharp\) yields
+        \(\mathbb{E}_\pi[\chi]\approx -0.6365\) and \(N_\star=14\).''
+  \item \textbf{Forbidden until a non-circular bridge to \(539\):}
+        ``Flux democracy implies \(\sigma=539\) and therefore unique
+        generational windings \(w_j=539+61j$.''
+\end{itemize}
+\end{corollary}
+
+% ---------------------------------------------------------------------
+\section{Consequences for generational individuality}
+\label{sec:indiv-nogo}
+
+\begin{theorem}[Dictionary split under the no-go]
+\label{thm:dict-split}
+Under Theorem~\ref{thm:nogo-main}:
+\begin{enumerate}[label=(\roman*)]
+  \item The residue cocycles \(c_j=\mathbf{1}_{n\equiv j\pmod{3}}\) remain
+        a priori and uniquely fixed by residue-class structure alone.
+  \item The shell labels \(k_j\in\{7,11,13\}\) remain a priori from
+        \(1001=7\times 11\times 13\) if \(1001\) is independently present; they
+        do not require \(\sigma\).
+  \item The windings \(w_j=539+61j\) are \emph{not} uniquely selected without
+        a non-circular supply of \(539\) (and of \(61\) if \(61\) is only tied
+        to \(\sigma\)).
+\end{enumerate}
+Thus the composite dictionary of the Individuality chapter splits into an
+a priori part \((c_j,k_j)\) and a conditional part \((w_j\mid\sigma)\).
+\end{theorem}
+
+\begin{corollary}[Licensed individuality claim]
+One may assert uniqueness of generational \emph{cocycle and shell} labels from
+residue classes and the \(1001\)-factorisation without lifting the no-go.
+One may assert uniqueness of the full composite \((w_j,k_j,c_j)\) only
+conditionally on a non-circular \(\sigma\), or empirically if windings are
+redefined without \(\sigma\).
+\end{corollary}
+
+% ---------------------------------------------------------------------
+\section{Summary}
+\label{sec:nogo-summary}
+
+\begin{center}
+\begin{tabular}{@{}p{0.46\textwidth}p{0.46\textwidth}@{}}
+\toprule
+Blocked for \(\sigma=539\) (no-go) & Open (ACE / empirical / conditional) \\
+\midrule
+Flux democracy \(\Rightarrow\) break circularity of \(\lambda=\ln 3/539\) &
+ACE: \(\mathbb{E}_\pi[\chi]\approx -0.6365\), \(N_\star=14\) \\
+Flux democracy \(\Rightarrow\) unique \(\sigma=539\) generation dictionary &
+Empirical Resonant Attractor (Def.~\ref{def:RA-emp}) \\
+\(\lambda=\ln 3/539\) as derived Banach rate from democracy alone &
+Conditional theorems given \(\sigma=539\); residue cocycles; shells from \(1001\) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent
+\textbf{Bottom line.}
+An ACE from residue classes, \(243\)-tower topology, and \(T^\sharp\)
+\emph{exists} and yields \(\lambda_{\mathrm{mean}}\approx 0.529\) with
+\(N_\star=14\). That strengthens the no-go for \(\sigma=539\): flux democracy
+cannot break the circularity of \(\lambda=\ln 3/539\), cannot derive that
+Banach rate, and cannot select a unique \(\sigma=539\)-dependent generational
+dictionary. The Resonant Attractor may still be established \emph{empirically}
+by a protocol that estimates period and amplitudes from data without inserting
+\(539\) into the definition.
+
+% end

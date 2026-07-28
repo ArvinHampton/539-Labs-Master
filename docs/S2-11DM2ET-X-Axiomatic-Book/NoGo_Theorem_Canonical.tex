@@ -1,0 +1,144 @@
+% =====================================================================
+% No-Go Theorem (canonical statement)
+% =====================================================================
+
+\chapter{No-Go Theorem (Canonical)}
+\label{ch:nogo-canonical}
+
+\section{Definition}
+
+\begin{theorem}[No-Go]
+\label{thm:nogo-canonical}
+Assume \textbf{only} the following data:
+\begin{enumerate}[label=(\roman*)]
+  \item the residue-class structure of the ternary map \(T_3\) (including the
+        published charge-preserving correction that restores
+        \(Q=n\bmod 9\));
+  \item the topology of the \(243\) Kaluza--Klein towers;
+  \item the democratic partition of the flux integer \(4880\) that produces
+        the initial seeds \(20\) and \(21\);
+  \item any completion of the map on the previously impossible residue classes
+        that is fixed solely by minimality of the charge defect among
+        \(k\in\{0,1,2\}\) (the completed map \(T^\sharp\)).
+\end{enumerate}
+Do \textbf{not} assume any numerical bound that already contains the integer
+\(539\), the puncture count \(61\), or the period \(539.9\).
+
+Then the following hold:
+\begin{enumerate}[label=(\alph*)]
+  \item Flux democracy cannot break the circularity of the contraction-factor
+        argument that sets \(\lambda=\ln 3/539\).
+  \item The specific Banach rate \(\lambda=\ln 3/539\) cannot be derived from
+        the data above.
+  \item No unique generational dictionary that inserts the number \(539\)
+        (in particular the windings \(w_j=539+61j\)) is forced by those data.
+\end{enumerate}
+Equivalently, the following programme claims are \textbf{blocked} (ruled out as
+consequences of the assumed data alone):
+\begin{enumerate}[label=(\alph*$'$)]
+  \item Flux democracy breaks the circularity of \(\lambda=\ln 3/539\).
+  \item \(\lambda=\ln 3/539\) follows from the assumed data.
+  \item The dictionary \(w_j=539+61j\) is forced by the assumed data.
+\end{enumerate}
+\end{theorem}
+
+\section{Derivation and equations}
+
+The local logarithmic expansion factors of the ordinary map are
+\[
+\chi_0=\ln\frac13,\qquad
+\chi_1=\ln\frac43,\qquad
+\chi_2=\ln\frac23.
+\]
+Their uniform average is the a priori negative number
+\begin{equation}
+\frac13(\chi_0+\chi_1+\chi_2)
+=\frac13\ln\frac{8}{27}
+\approx -0.405.
+\label{eq:unres-avg}
+\end{equation}
+After the charge-preserving completion \(T^\sharp\) the leading ratio on every
+branch-2 step tends to \(1/3\). Under the natural \(3\)-adic equidistribution
+consistent with the \(243\)-tower average the stationary expectation becomes
+\begin{equation}
+\mathbb{E}_\pi[\chi]
+=\frac23\ln\frac13+\frac13\ln\frac43
+=\ln\Bigl(\frac{4^{1/3}}{3}\Bigr)
+\approx -0.6365
+<0.
+\label{eq:Epi-nogo}
+\end{equation}
+The associated mean contraction rate is
+\begin{equation}
+\lambda_{\mathrm{mean}}
+=\frac{4^{1/3}}{3}
+\approx 0.529
+<1.
+\label{eq:lmean}
+\end{equation}
+The non-circular e-fold bound that follows from this rate and the flux integer is
+\begin{equation}
+N_\star
+=\Bigl\lceil
+\frac{\ln 4880}{\bigl|\mathbb{E}_\pi[\chi]\bigr|}
+\Bigr\rceil
+=14.
+\label{eq:Nstar-nogo}
+\end{equation}
+None of these quantities equals \(539\), and none of the steps that produce them
+inserts the number \(539\).
+
+\section{Proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:nogo-canonical}]
+(1)~The democratic partition fixes only the initial seeds. It supplies no
+information about the mean size of the charge-correcting exponent along later
+iterates that would determine a Lipschitz constant already containing \(539\).
+Therefore democracy cannot break the circularity of the argument that sets
+\(\lambda=\ln 3/539\). This is~(a).
+
+(2)~The residue Markov structure together with the completed map \(T^\sharp\)
+yields a strictly negative stationary mean \(\mathbb{E}_\pi[\chi]\approx -0.6365\)
+as in \eqref{eq:Epi-nogo}. The derivation uses only residue probabilities and
+the asymptotic ratio \(1/3\); it does not use the integer \(539\). The resulting
+e-fold depth is \(N_\star=14\) as in \eqref{eq:Nstar-nogo}, not \(539\). The rate
+actually obtained is \(\lambda_{\mathrm{mean}}\) in \eqref{eq:lmean}, not
+\(\ln 3/539\). This is~(b).
+
+(3)~Suppose, for contradiction, that the same data forced the identification
+\(\lambda=\ln 3/539\). Then the Banach fixed-point estimate would recover a step
+count of order \(539\). But the only Lipschitz-scale constant that the data
+actually determine is \(\lambda_{\mathrm{mean}}\approx 0.529\), whose Banach /
+e-fold bound is of order \(14\). The identification \(\lambda=\ln 3/539\) is
+therefore an additional assumption, not a consequence. Any generational
+dictionary that embeds the number \(539\) (in particular \(w_j=539+61j\))
+inherits the same extra assumption and is likewise unforced. This is~(c).
+
+(4)~The long resonant trajectory of length \(539\) is maintained only by
+constraints that lie outside the listed data: a fixed iteration count, a
+holographic window, and phase-locking to a pre-chosen period. Those constraints
+are not implied by residue structure, tower topology, or flux democracy.
+
+Hence claims (a)--(c) hold. The no-go stands.
+\end{proof}
+
+\section{Corollary}
+
+\begin{corollary}[Empirical search remains permissible]
+\label{cor:emp-nogo}
+The empirical search for a resonant period near \(539.9\) remains permissible
+precisely because it does not claim to derive that period from the data covered
+by Theorem~\ref{thm:nogo-canonical}. The period is treated as a hypothesis to be
+tested after a non-circular spectral estimate has been obtained
+(periodogram / multitaper / Lomb--Scargle; bootstrap free of \(539.9\);
+compatibility only afterward).
+\end{corollary}
+
+\begin{remark}[Depth macro split]
+\label{rem:depth-split-nogo}
+Throughout this book the ACE e-fold depth is \(N_\star=14\) and the model HQCC
+depth is \(\sigma=539\) (equivalently \(N_{\mathrm{HQCC}}\)). These symbols are
+never identified. See Chapter~\ref{ch:provenance}.
+\end{remark}
+
+% end

@@ -1,0 +1,26 @@
+{
+  "package": "C2",
+  "N_cut": 539,
+  "N_cut_formula": "manual",
+  "c": null,
+  "n_vertices": 539,
+  "n_edges": 539,
+  "n_weak_components": 2,
+  "component_size_max": 315,
+  "component_size_top10": [
+    315,
+    224
+  ],
+  "n_vertices_reaching_1": 315,
+  "fraction_reaching_1": 0.5844155844155844,
+  "post_hoc": {
+    "claimed_539": 539,
+    "n_components_equals_539": false,
+    "abs_diff_components_vs_539": 537
+  },
+  "phase0_note": "If n_weak_components != 539, H0 for this C2 realization fails; refine N_cut or package",
+  "gaps": {
+    "G0.1_Psi_tow": "520 not derived from (20,21,243) alone in this script",
+    "G0.2_Sigma_seed": "seed multiset not used in C2 graph (all n<=N_cut)"
+  }
+}

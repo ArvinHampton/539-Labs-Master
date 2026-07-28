@@ -37,15 +37,28 @@ Never use absolute language such as “unbreakable” or “provably secure.” 
 - docs/hqcc/ — T3 map definition, HQCC theorem statement, Raw-vs-Resonant clarification
 - docs/model/ — Framework overview and master equations summary
 - docs/papers/ — Index and pointers to core unification, cosmology, particle-physics, and mathematical-resolution documents
+- **docs/S2-11DM2ET-X-Axiomatic-Book/** — Living axiomatic book: closed constants, ACE/No-Go status, non-circular length packaging \(18+521=539\) under principle (S), provenance table, probes/scripts
 - hqh539/python/ — Canonical reference implementation (constant-time T3 step) and demos
 - PAPERS.md — Expanded catalog of unique papers and Drive counterparts
 - PROPRIETARY.md, SECURITY.md — Legal and claim-labeling protocol
 - TREE.md — Directory overview
 
+### Length packaging (status snapshot)
+
+- \(L_{\mathrm{pref}}=\lfloor e^{3}/\ln 3\rfloor=18\) — Category A integer  
+- \(L_{\mathrm{body}}=\lfloor N_{\mathrm{flux}}/9\rfloor-\lceil N_{\mathrm{flux}}/N_{\mathrm{tow}}\rceil=521\) — derived under minimal-action max-tower seed clear (principle S); ansatz without (S)  
+- \(L_{\mathrm{pack}}=18+521=539=\lfloor(N_{\mathrm{flux}}-f_{\max})/9\rfloor\) — non-circular **length** packaging conditional on (S)  
+- ACE depth \(N_\star=14\) remains distinct from HQCC model depth \(\sigma=539\) (never identify them)  
+- Free \(T^\sharp\) object/basin count still does **not** equal 539 (Option 3 for object classes)
+
+See `docs/S2-11DM2ET-X-Axiomatic-Book/L_body_Structural_Derivation.md` and `NonCircular_18_plus_521.md`.
+
 ## Related Repositories
 
 - 539-Labs-repo (private) — Full FPGA/RTL, Vivado, demo, deploy, TDP, and milestone directives for the HQH-539 hardware pipeline
 - hqh539-engine, HQH-539-512 (public) — Streamlit and high-volume encryption generators
+- HQH-539-RTL (public) — SystemVerilog cores and testbenches
+- resonant-galois (public) — Experimental A5/A6 constructive generation
 - Google Drive workspace — Living source of truth for the latest full papers and Codex versions
 
 ## Author

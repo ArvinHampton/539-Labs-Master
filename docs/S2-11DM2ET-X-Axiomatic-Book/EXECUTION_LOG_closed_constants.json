@@ -1,0 +1,21 @@
+{
+  "when": "2026-07-26T22:57:18.973598+00:00",
+  "constants": {
+    "kappa_dark": "243/539",
+    "kappa_dark_f": 0.45083487940630795,
+    "f_snap": "243/4880",
+    "f_snap_f": 0.04979508196721311,
+    "beta_pbh": "11/61",
+    "beta_pbh_f": 0.18032786885245902,
+    "two_beta": 0.36065573770491804
+  },
+  "changes": [
+    {
+      "path": "C:\\Users\\bradl\\S2-11DM2ET-X-Axiomatic-Book\\CLOSED_CONSTANTS.md",
+      "note": "text closed-constants patch"
+    }
+  ],
+  "docx_scanned": 73,
+  "docx_changed": 0,
+  "text_changed": 1
+}

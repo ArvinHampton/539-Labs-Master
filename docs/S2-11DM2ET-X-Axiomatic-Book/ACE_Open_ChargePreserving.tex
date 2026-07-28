@@ -1,0 +1,502 @@
+% =====================================================================
+% ACE: proved unrestricted residue mean; open charge-preserving estimate
+% Lifts No-Go only when charge-preserving ACE + bridge are both supplied
+% =====================================================================
+
+\chapter{A Priori Charge-Correcting Estimate: Status and Open Problem}
+\label{ch:ACE}
+
+\section{Role relative to the No-Go}
+
+The a priori charge-correcting estimate (ACE) is the missing ingredient that
+would lift the No-Go of Chapter~\ref{ch:nogo-attractor}. Its required form is
+a strict upper bound
+\begin{equation}
+\label{eq:ACE-req}
+\mathbb{E}[\chi]
+\;\le\;
+-\chi_{\min}
+\;<\;0
+\end{equation}
+on the expected logarithmic expansion factor per step, obtained \textbf{solely}
+from
+\begin{enumerate}[label=(\roman*)]
+  \item the residue-class structure of the map, and
+  \item the topology of the \(243\) towers,
+\end{enumerate}
+without any reference to the numbers \(539\), \(61\), or \(G_4\).
+
+This chapter:
+\begin{itemize}
+  \item proves the unrestricted residue average (crude ACE, non-circular);
+  \item defines the charge-preserving correction \(2\cdot 3^k\);
+  \item records why that correction reopens the expectation;
+  \item states the ACE as an \textbf{open requirement}, not an established lemma;
+  \item notes that a bridge \(\Psi\) is still needed after any ACE.
+\end{itemize}
+
+% ---------------------------------------------------------------------
+\section{Unrestricted residue averages (proved)}
+\label{sec:unrestricted}
+
+\begin{definition}[Leading ratios of ordinary \(T_3\)]
+\label{def:ratios}
+For the ordinary (unrestricted) ternary Syracuse map, the magnitude ratios
+associated to the three residue classes are taken at leading order as
+\begin{equation}
+\label{eq:ratios}
+\rho_0=\frac13,
+\qquad
+\rho_1=\frac43,
+\qquad
+\rho_2=\frac23,
+\end{equation}
+corresponding to the branches \(n/3\), \((4n+2)/3\), and \((2n+1)/3\) in the
+large-\(n\) continuum approximation (exact integer branches as in the Global
+Lemma Core / HQH-539 specification).
+\end{definition}
+
+\begin{definition}[Logarithmic expansion factor (unrestricted)]
+\label{def:chi-unres}
+Under the uniform residue measure \(\mathbb{P}(r)=1/3\) for \(r\in\{0,1,2\}\),
+\begin{equation}
+\label{eq:chi-unres}
+\chi_{\mathrm{unres}}(r)
+\;:=\;
+\ln\rho_r,
+\qquad
+\mathbb{E}_{\mathrm{unres}}[\chi]
+\;:=\;
+\frac13\sum_{r=0}^{2}\ln\rho_r.
+\end{equation}
+\end{definition}
+
+\begin{theorem}[Unrestricted a priori log-mean]
+\label{thm:unres-ACE}
+\begin{equation}
+\boxed{
+\mathbb{E}_{\mathrm{unres}}[\chi]
+\;=\;
+\frac13\Bigl(
+\ln\frac13+\ln\frac43+\ln\frac23
+\Bigr)
+\;=\;
+\frac13\ln\frac{8}{27}
+\;=\;
+\ln\Bigl(\bigl(\tfrac{8}{27}\bigr)^{1/3}\Bigr)
+\;\approx\;
+-0.4054651081
+\;<\;0.
+}
+\label{eq:unres}
+\end{equation}
+Equivalently,
+\[
+\exp\bigl(\mathbb{E}_{\mathrm{unres}}[\chi]\bigr)
+\;=\;
+\bigl(\tfrac{8}{27}\bigr)^{1/3}
+\;=\;
+\frac23.
+\]
+This number is strictly negative and independent of every global scale in the
+model (\(539\), \(61\), \(G_4\), \(N_{\mathrm{flux}}\), seed size).
+\end{theorem}
+
+\begin{proof}
+\[
+\ln\frac13+\ln\frac43+\ln\frac23
+=
+\ln\Bigl(\frac13\cdot\frac43\cdot\frac23\Bigr)
+=
+\ln\frac{8}{27}.
+\]
+Divide by \(3\). Since \(8/27<1\), the log-mean is negative. No global integer
+enters the calculation.
+\end{proof}
+
+\begin{corollary}[Crude a priori contraction]
+\label{cor:crude}
+Theorem~\ref{thm:unres-ACE} already supplies a crude, a priori contraction rate
+in the logarithmic metric: the uniform residue average of leading ratios is
+strictly contractive on average. This observation is non-circular and survives
+the No-Go as a qualitative lemma.
+\end{corollary}
+
+\begin{corollary}[Weakness of the crude bound]
+\label{cor:weak}
+The unrestricted mean does \textbf{not}:
+\begin{enumerate}[label=(\roman*)]
+  \item force the specific integer \(539\);
+  \item select a unique set of generational windings \(w_j=539+61j\);
+  \item control the charge-preserving dynamics of Section~\ref{sec:charge}.
+\end{enumerate}
+It is too weak for Banach depth selection or for a unique generational
+dictionary.
+\end{corollary}
+
+% ---------------------------------------------------------------------
+\section{Charge-preserving map and correcting exponent}
+\label{sec:charge}
+
+\begin{definition}[Charge-preservation condition]
+\label{def:charge-pres}
+A trajectory is \emph{charge-preserving} if a declared ternary / flux charge
+(e.g.\ residual class modulo \(3\) or modulo \(9\), as fixed by the model’s
+charge ledger) is restored after each step, so that the orbit remains inside a
+specified charge-preserving subspace \(\mathcal{C}\subset\mathbb{N}\).
+\end{definition}
+
+\begin{definition}[Minimal correcting exponent]
+\label{def:k-min}
+In the charge-preserving version of the map, the ordinary branch that would
+send \(n\equiv 2\pmod{3}\) to \((2n+1)/3\) is replaced by a corrected step that
+adds a term \(2\cdot 3^k\), where
+\begin{equation}
+\label{eq:k-min}
+k=k(n)
+\;:=\;
+\min\bigl\{
+\kappa\in\mathbb{Z}_{\ge 0}
+:
+\text{the corrected image restores the required residue modulo \(9\)}
+\bigr\}.
+\end{equation}
+Thus \(k\) is a \emph{local} function of \(n\). Write the corrected step
+schematically as
+\begin{equation}
+\label{eq:T3-corr}
+T_3^{\mathrm{cp}}(n)
+\;=\;
+\frac{2n+1+2\cdot 3^{k(n)}}{3}
+\quad\text{(when the \(\equiv 2\) branch is charge-corrected)},
+\end{equation}
+with the other residue branches unmodified or similarly constrained as
+required by the ledger (the essential point is the presence of a
+state-dependent \(3^{k(n)}\) correction).
+\end{definition}
+
+\begin{definition}[Logarithmic expansion factor (charge-preserving)]
+\label{def:chi-cp}
+Along a charge-preserving step with the published rule
+\(T(n,k)=(n+1)/3+2\cdot 3^{k}\),
+\begin{equation}
+\label{eq:chi-cp}
+\chi_{\mathrm{cp}}(n)
+\;:=\;
+\ln\Bigl(\frac{T(n,k(n))}{n}\Bigr)
+\quad(n\ge 1,\ k(n)\ \text{exists}).
+\end{equation}
+\end{definition}
+
+\begin{theorem}[Distribution of \(k(n)\) under \(Q=n\bmod 9\)]
+\label{thm:k-dist}
+For the published correction family \(T(n,k)=(n+1)/3+2\cdot 3^{k}\) and
+preservation \(T\equiv n\pmod{9}\):
+\begin{enumerate}[label=(\roman*)]
+  \item \(2\cdot 3^{k}\bmod 9\in\{2,6,0\}\) according as \(k=0\), \(k=1\), or
+        \(k\ge 2\). Hence \(k\ge 3\) never improves on \(k=2\), and any existing
+        minimal exponent satisfies \(k(n)\in\{0,1,2\}\).
+  \item Existence and value of \(k(n)\) depend only on \(n\bmod 27\). Exactly
+        three of the nine classes with \(n\equiv 2\pmod{3}\) are feasible:
+        \[
+        n\equiv 17\pmod{27}\Rightarrow k=0,\quad
+        n\equiv 23\pmod{27}\Rightarrow k=1,\quad
+        n\equiv 14\pmod{27}\Rightarrow k=2.
+        \]
+        The other six classes admit \textbf{no} preserving \(k\).
+  \item Uniformly over branch-2 integers:
+        \(P(\mathrm{feasible})=1/3\), \(P(\mathrm{impossible})=2/3\), and
+        conditional on feasibility, \(k\) is uniform on \(\{0,1,2\}\) with
+        \(\mathbb{E}[k\mid\mathrm{feas}]=1\).
+  \item On every feasible ray, \(T/n\to 1/3\) and
+        \(\chi_{\mathrm{cp}}\to\ln(1/3)<0\); there is no runaway from large \(k\).
+\end{enumerate}
+(Full tables and Monte Carlo: \texttt{k\_n\_Distribution\_Analysis.md},
+\texttt{scripts/analyze\_k\_distribution.py}.)
+\end{theorem}
+
+\begin{lemma}[Expectation is not the unrestricted residue mean]
+\label{lem:not-residue}
+Under charge preservation, \(\mathbb{E}[\chi_{\mathrm{cp}}]\) is \textbf{not}
+equal to \(\frac13\ln(8/27)\). On the feasible set the leading ratio is
+\(1/3\) (not the unrestricted branch-2 factor \(2/3\)). Moreover the map is
+undefined on a density-\(2/3\) subset of branch-2 integers unless a secondary
+rule is supplied. Trajectory averages therefore require the completed dynamics
+and its invariant measure, not residue probabilities alone.
+\end{lemma}
+
+\begin{remark}[Correction to the informal ACE difficulty]
+The difficulty is \textbf{not} that \(k(n)\) becomes arbitrarily large (it does
+not, under the published family). The difficulty is: (i)~impossible classes of
+density \(2/3\); (ii)~the invariant measure of the completed map; (iii)~the
+bridge from \(\mathbb{E}[\chi]\) to the model depth \(\sigma=539\)
+(not to the ACE symbol \(N_\star\), which is reserved for the short e-fold depth).
+\end{remark}
+
+% ---------------------------------------------------------------------
+\section{Available ingredients (insufficient as yet)}
+\label{sec:ingredients}
+
+\begin{definition}[Residue Markov chain modulo \(9\)]
+\label{def:markov9}
+Let \(M_9\) be the Markov chain on \(\mathbb{Z}/9\mathbb{Z}\) induced by the
+charge-preserving map \(T_3^{\mathrm{cp}}\). Transition probabilities
+\(P_{ij}\) are, in principle, functions of the residue rules and the
+charge-restoration condition only---independent of \(539\), \(61\), and \(G_4\).
+\end{definition}
+
+\begin{definition}[Democratic tower average]
+\label{def:dem-avg}
+The flux-democratic average over the \(243=3^5\) identical towers, with
+canonical seed multiplicities \(20\) and \(21\) as in the published tower
+tallies, is
+\begin{equation}
+\label{eq:dem}
+\langle F\rangle_{243}
+\;=\;
+\frac{1}{243}\sum_{\tau=1}^{243} F(\tau),
+\end{equation}
+again without reference to a global orbit length.
+\end{definition}
+
+\begin{lemma}[Markov data and \(k\)]
+\label{lem:markov-insufficient}
+Under Theorem~\ref{thm:k-dist}, \(k\) is already bounded and is a function of
+\(n\bmod 27\). The remaining Markov task is not to bound \(k\), but to obtain
+the \emph{stationary distribution} of the completed charge-preserving map
+(including a rule on the density-\(2/3\) impossible classes) so that
+\(\mathbb{E}_\pi[\chi]\) is well-defined.
+\end{lemma}
+
+\begin{lemma}[Democracy does not supply the stationary average]
+\label{lem:dem-insufficient}
+The democratic tower average fixes the ensemble of initial seeds (including
+multiplicities \(20\) and \(21\)). It does not by itself define the dynamics on
+the impossible classes, nor compute \(\mathbb{E}_\pi[\chi]\) for a stationary
+measure \(\pi\) of a completed map.
+\end{lemma}
+
+\begin{theorem}[ACE sharpened, not solved]
+\label{thm:no-ACE-yet}
+The \(k(n)\) analysis (Theorem~\ref{thm:k-dist}) \textbf{eliminates runaway
+expansion} but does \textbf{not} supply:
+\begin{enumerate}[label=(\alph*)]
+  \item a completion of the dynamics on the density-\(2/3\) impossible set;
+  \item a stationary expectation \(\mathbb{E}_\pi[\chi]\) for the resulting map;
+  \item a non-circular bridge from that mean to the integer \(539\).
+\end{enumerate}
+Until (a)--(b) are exhibited from residue Markov structure and the
+\(243\)-tower average alone (no \(539\), \(61\), \(G_4\)), the ACE remains an
+\textbf{open requirement} and the No-Go of Chapter~\ref{ch:nogo-attractor}
+\textbf{stands}. Item (c) becomes relevant only after a strictly negative
+stationary mean is established.
+\end{theorem}
+
+\begin{proof}
+Theorem~\ref{thm:k-dist} settles boundedness of \(k\) and the feasible/impossible
+partition. Lemmas~\ref{lem:not-residue}--\ref{lem:dem-insufficient} show that
+the stationary mean is not yet defined. No published derivation produces
+\(\mathbb{E}_\pi[\chi]\le -\chi_{\min}<0\) free of global orbit length. Hence the
+No-Go is not lifted.
+\end{proof}
+
+% ---------------------------------------------------------------------
+\section{Sharpened open problem (completed map \(\to\) stationary mean \(\to\) bridge)}
+\label{sec:open}
+
+\begin{definition}[Impossible set]
+\label{def:imp-set}
+\[
+\mathcal{I}
+\;:=\;
+\bigl\{
+n\equiv 2\pmod{3}
+:
+n\bmod 27\in\{2,5,8,11,20,26\}
+\bigr\}.
+\]
+Density of \(\mathcal{I}\) among branch-2 integers is \(2/3\).
+\end{definition}
+
+\begin{definition}[Candidate completion rules (not yet selected)]
+\label{def:completion}
+A \emph{completion} of the charge-preserving dynamics is any rule defining
+\(T^\sharp(n)\) for \(n\in\mathcal{I}\), for example:
+\begin{enumerate}[label=(\roman*)]
+  \item \textbf{Projection:} map \(n\) to the nearest feasible class
+        (e.g.\ reduce modulo a forced lattice) then apply feasible \(k\);
+  \item \textbf{Rejection:} refuse the branch-2 step; fall back to an ordinary
+        unrestricted \(T_3\) step (charge ledger updated by a declared defect);
+  \item \textbf{Alternative charge-preserving branch:} a different additive
+        family (not \(2\cdot 3^{k}\)) that restores \(Q\) on \(\mathcal{I}\).
+\end{enumerate}
+The ACE requires that \emph{some} completion be fixed from residue/tower data
+alone and then used consistently---not that all three be developed.
+\end{definition}
+
+\begin{openproblem}[Completed map]
+\label{op:complete}
+Exhibit an explicit completion \(T^\sharp\) on \(\mathcal{I}\)
+(Definition~\ref{def:completion}) such that:
+\begin{enumerate}[label=(\roman*)]
+  \item \(T^\sharp\) is defined for all \(n\in\mathbb{N}\) of interest;
+  \item its restriction to feasible branch-2 classes agrees with
+        \(T(n,k(n))\) of Theorem~\ref{thm:k-dist};
+  \item the rule is stated using only residue-class and \(243\)-tower data
+        (no \(539\), \(61\), \(G_4\)).
+\end{enumerate}
+\end{openproblem}
+
+\begin{openproblem}[Stationary ACE]
+\label{op:ACE}
+Given a completion \(T^\sharp\) (Open Problem~\ref{op:complete}), let \(\pi\) be
+a stationary probability measure for the induced residue Markov structure
+(e.g.\ on \(\mathbb{Z}/27\mathbb{Z}\) or the minimal abelian state space),
+averaged democratically over the \(243\) towers with seeds of types \(20\) and
+\(21\). Prove
+\begin{equation}
+\label{eq:open-ACE}
+\mathbb{E}_\pi[\chi]
+\;:=\;
+\int \ln\Bigl(\frac{T^\sharp(n)}{n}\Bigr)\,d\pi
+\;\le\;
+-\chi_{\min}
+\;<\;0
+\end{equation}
+with \(\chi_{\min}>0\) independent of any pre-selected global orbit length.
+The expectation must be obtained from the residue Markov structure and the
+\(243\)-tower average alone.
+\end{openproblem}
+
+\begin{openproblem}[Bridge after ACE]
+\label{op:bridge}
+\textbf{Only after} Open Problem~\ref{op:ACE} yields a strictly negative
+stationary mean does the following become relevant: supply a separate bridge
+\begin{equation}
+\label{eq:bridge-ACE}
+N_\star
+\;=\;
+\Psi\bigl(\chi_{\min},\,243,\,\text{seed multiplicities }20,21\bigr)
+\end{equation}
+to a candidate integer orbit length, still without inserting \(539\) into
+\(\Psi\). The bridge is not a substitute for the stationary ACE.
+\end{openproblem}
+
+\begin{theorem}[Order of operations]
+\label{thm:order}
+The logical order is strict:
+\begin{equation}
+\boxed{
+\begin{aligned}
+&\text{(1) complete dynamics on }\mathcal{I}
+\\
+&\text{(2) stationary mean }\mathbb{E}_\pi[\chi]\le -\chi_{\min}<0
+\\
+&\text{(3) bridge }\Psi\to N_\star
+\\
+&\text{(4) only then: democracy}\Rightarrow\text{Banach depth / unique }w_j.
+\end{aligned}
+}
+\end{equation}
+Skipping (1)--(2) and invoking (3)--(4) re-enters the circular
+contraction-factor schema forbidden by the No-Go.
+\end{theorem}
+
+% ---------------------------------------------------------------------
+\section{Status table}
+\label{sec:status}
+
+\begin{center}
+\begin{tabular}{@{}p{0.40\textwidth}p{0.24\textwidth}p{0.28\textwidth}@{}}
+\toprule
+Statement & Status & Depends on \(539\)? \\
+\midrule
+\(\mathbb{E}_{\mathrm{unres}}[\chi]=\frac13\ln(8/27)<0\) &
+\textbf{Proved} &
+No \\
+\(k\in\{0,1,2\}\) or impossible; no runaway &
+\textbf{Proved} (Thm.~\ref{thm:k-dist}) &
+No \\
+Completion of dynamics on \(\mathcal{I}\) (density \(2/3\)) &
+\textbf{Open} (Op.~\ref{op:complete}) &
+Must not \\
+Stationary ACE \(\mathbb{E}_\pi[\chi]\le -\chi_{\min}<0\) &
+\textbf{Open} (Op.~\ref{op:ACE}) &
+Must not \\
+Bridge \(\Psi\to N_\star\) &
+\textbf{Open; deferred} until ACE &
+Must not \\
+Flux democracy lifts No-Go &
+\textbf{Blocked}; No-Go stands &
+--- \\
+Empirical Resonant Attractor protocol &
+\textbf{Allowed} (No-Go ch.) &
+Do not insert \(539\) into definition \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+% ---------------------------------------------------------------------
+\section{Consequences for the No-Go and the Banach rate}
+\label{sec:conseq}
+
+\begin{theorem}[Only qualitative contraction survives rigorously]
+\label{thm:only-qual}
+In the absence of the charge-preserving ACE
+(Open Problem~\ref{op:ACE}), the only rigorous contraction statement that
+survives as an a priori, non-circular lemma is
+Corollary~\ref{cor:crude}: the uniform average over the three ordinary residue
+classes is already negative,
+\[
+\frac13\ln\frac{8}{27}<0.
+\]
+That observation is too weak to force the specific integer \(539\) or to select
+a unique set of generational windings.
+\end{theorem}
+
+\begin{corollary}[Banach rate \(\ln 3/539\) remains conditional]
+\label{cor:banach-cond}
+The Global Lemma Core identity \(\lambda=\ln 3/539<1\) remains a
+\textbf{conditional} statement given \(\sigma=539\), not a consequence of
+flux democracy or of Theorem~\ref{thm:unres-ACE} alone.
+\end{corollary}
+
+\begin{corollary}[No-Go unchanged]
+\label{cor:nogo-stands}
+Chapter~\ref{ch:nogo-attractor} stands: until Open Problems~\ref{op:ACE} and
+\ref{op:bridge} are solved, flux democracy cannot be invoked to break
+contraction circularity or to select a unique \(\sigma\)-dependent generational
+dictionary.
+\end{corollary}
+
+% ---------------------------------------------------------------------
+\section{Summary chain}
+\label{sec:ace-summary}
+
+\begin{equation}
+\boxed{
+\begin{aligned}
+&\text{Unrestricted: }
+\tfrac13\ln\tfrac{8}{27}<0
+\quad\text{\textbf{proved}}
+\\
+&\text{\(k\)-law: bounded, period \(27\); no runaway}
+\quad\text{\textbf{proved}}
+\\
+&\text{Complete map on density-\(2/3\) }\mathcal{I}
+\quad\text{\textbf{open}}
+\\
+&\text{Stationary }
+\mathbb{E}_\pi[\chi]\le -\chi_{\min}<0
+\quad\text{\textbf{open (ACE)}}
+\\
+&\text{Bridge }
+\Psi\to N_\star
+\quad\text{\textbf{open; only after ACE}}
+\\
+&\text{No-Go stands until completed map + stationary mean.}
+\end{aligned}
+}
+\end{equation}
+
+% end

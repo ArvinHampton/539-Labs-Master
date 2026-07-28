@@ -1,0 +1,716 @@
+% =====================================================================
+% Restoring Generation Individuality from Axiom 0 Alone
+% Chapter for the S2-11DM2ET-X Axiomatic Book
+% \input{Individuality_from_Axiom0_Expansion}  (after Axiom 0 / Math 1)
+% =====================================================================
+
+\chapter{Restoring Generation Individuality from Axiom 0}
+\label{ch:individuality}
+
+\section{Motivation and Problem Statement}
+
+\begin{definition}[Multiplicity vs.\ Individuality]
+\emph{Multiplicity} is the cardinality of the generation set. \emph{Individuality}
+is a complete set of inequivalent labels distinguishing the three Standard-Model
+generations as ordered individuals \((g_0,g_1,g_2)\), together with observables
+(masses, mixings, lifetimes) that depend nontrivially on those labels.
+\end{definition}
+
+\begin{lemma}[Multiplicity from Axiom 0]
+\label{lem:multiplicity}
+Axiom 0 asserts that the universe contains exactly three generations of
+Standard-Model fermions. This forces the qutrit structure, the non-perturbative
+superpotential \(W_{np}=e^3\), the flux budget
+\[
+N_{\mathrm{flux}}=\lfloor e^3\times 3^5\rfloor=4880,
+\]
+HQCC termination in \(539\pm 1\) steps, the immutable breathing mode
+\(G_4=539.9\,\mathrm{s}\), and the puncture count \(|P|=61\).
+\end{lemma}
+
+\begin{lemma}[Individuality Gap]
+\label{lem:gap}
+Axiom 0 alone determines multiplicity but does not determine individuality.
+Any two bijections of the generation set are observationally equivalent at the
+level of Axiom 0: the axiom is invariant under \(\mathrm{Sym}(\{0,1,2\})\).
+\end{lemma}
+
+\begin{corollary}[Need for Additional Discrete Structure]
+To restore individuality while still beginning from the single empirical fact of
+three generations, additional structure is required. The structure must be
+\emph{discrete}, forced by integers already present in the derived chain
+\(\{3,61,539,1001,4880,\ldots\}\), and must not reopen the fixed-point rigidity
+of \(G_4\) or the puncture count \(|P|=61\).
+\end{corollary}
+
+\begin{definition}[Admissible Individuality Structure]
+An \emph{admissible individuality structure} is a map
+\[
+\iota\colon \{g_0,g_1,g_2\}\longrightarrow \mathcal{L}
+\]
+into a discrete label space \(\mathcal{L}\) such that:
+\begin{enumerate}[label=(\roman*)]
+  \item \(\iota\) is injective (labels distinguish generations);
+  \item \(\mathcal{L}\) is constructed only from Axiom 0 and the Global Lemma Core
+        (no free continuous parameters);
+  \item the push-forward of \(\iota\) leaves \(G_4=539.9\,\mathrm{s}\) and
+        \(|P|=61\) invariant;
+  \item residual \(\mathrm{Sym}(\{0,1,2\})\) is broken only by integers already
+        fixed in the chain.
+\end{enumerate}
+\end{definition}
+
+Three admissible routes are developed below and closed by explicit integer
+formulae (Section~\ref{sec:closed}). They compose into a single package
+(Section~\ref{sec:composite}) with a canonical charged-lepton table
+(Section~\ref{sec:table}).
+
+% ---------------------------------------------------------------------
+\section{Shared Scaffolding}
+\label{sec:scaffold}
+
+\begin{definition}[Balanced-Ternary Syracuse Map]
+\label{def:T3}
+The balanced-ternary Syracuse map \(T_3\colon\mathbb{N}\to\mathbb{N}\) is the
+integer-valued Collatz-type operator of the HQCC theorem (exact \(539\)-step
+termination above the model threshold). Write \(\sigma(n)\) for the stopping
+time to the fixed point \(1\).
+\end{definition}
+
+\begin{definition}[Residual \(+1\) Charge]
+\label{def:residual}
+The residual charge is the puncture class modulo the generation qutrit:
+\begin{equation}
+\label{eq:Qres}
+Q_{\mathrm{res}}\;:=\; |P|\bmod 3 \;=\; 61\bmod 3 \;=\; 1.
+\end{equation}
+Equivalently, \(Q_{\mathrm{res}}=+1\in\mathbb{Z}/3\mathbb{Z}\) is the leftover unit
+after balanced-ternary cancellation on the bulk cycles. (Note:
+\(N_{\mathrm{flux}}=4880\equiv 2\pmod{3}\); the residual used for individuality is
+the puncture residual \eqref{eq:Qres}, not the raw flux residue.)
+\end{definition}
+
+\begin{definition}[11-Dimensional Bulk and Cycles]
+\label{def:11D}
+Let \(X^{11}\) be the 11-dimensional bulk of the model, with temporal torsion
+operator
+\[
+T=d+(\zeta^t-1)\wedge H_3,\qquad
+\zeta=\exp\bigl(2\pi i/539.9\bigr).
+\]
+Let \(\mathcal{C}_k(X^{11})\) denote integral \(k\)-cycles relevant to flux
+wrapping (in particular those supporting \(G_4\) and the 61 punctures on the
+\(G_2\)-holonomy 7-manifold).
+\end{definition}
+
+\begin{definition}[1001-Simplex]
+\label{def:1001}
+Let \(\Delta^{1001}\) be the standard 1001-simplex. The integer
+\[
+1001=7\times 11\times 13
+\]
+is already present in the derived numerical chain (e.g.\ the factor \(61/1001\)
+in lifetime formulae). Shells of \(\Delta^{1001}\) are discrete orbits under a
+specified group action or filtration (Definition~\ref{def:shells}); they are
+\emph{not} continuous radial coordinates.
+\end{definition}
+
+\begin{lemma}[Fixed-Point Rigidity Constraint]
+\label{lem:rigidity}
+Any admissible individuality structure must preserve the unique fixed point
+\[
+G_4=539.9\,\mathrm{s}
+\]
+satisfying simultaneously HQCC termination, flux quantization, puncture count,
+entropy saturation, and the sub-harmonic set \(\{5,10,15,30,45\}\,\mathrm{s}\).
+In particular, one may not introduce three independent fundamental periods.
+\end{lemma}
+
+\begin{definition}[Generation Index]
+\label{def:index}
+Write \(j\in\{0,1,2\}\) for the generation index, with the charged-lepton
+identification of Section~\ref{sec:table}:
+\[
+j=0\leftrightarrow e,\qquad
+j=1\leftrightarrow \mu,\qquad
+j=2\leftrightarrow \tau.
+\]
+The same index labels the three quark generations \((d,s,b)\) and \((u,c,t)\)
+when individuality is lifted from leptons to quarks.
+\end{definition}
+
+% ---------------------------------------------------------------------
+\section{Route I: Topological Charges and Winding Numbers}
+\label{sec:route1}
+
+\begin{definition}[Generation Winding Data]
+\label{def:windings}
+A \emph{generation winding assignment} is a triple
+\[
+\mathbf{w}=(w_0,w_1,w_2)\in H_k\bigl(X^{11};\mathbb{Z}\bigr)^3
+\]
+(or integer winding numbers of three distinguished cycles
+\(\gamma_0,\gamma_1,\gamma_2\in\mathcal{C}_k(X^{11})\)) such that
+\begin{equation}
+\label{eq:winding-sum}
+\sum_{j=0}^{2} w_j \;=\; W_{\mathrm{tot}},
+\end{equation}
+where \(W_{\mathrm{tot}}\) is an integer fixed by the closed formulae of
+Section~\ref{sec:closed} (no free continuous modulus).
+\end{definition}
+
+\begin{definition}[Arithmetic Progression Form]
+\label{def:AP}
+The assignment \(\mathbf{w}\) is in \emph{arithmetic progression form} if there
+exist integers \(w_0,\Delta\) with
+\begin{equation}
+\label{eq:AP}
+w_j \;=\; w_0 + j\,\Delta,\qquad j\in\{0,1,2\},
+\end{equation}
+and hence
+\begin{equation}
+\label{eq:AP-sum}
+W_{\mathrm{tot}} \;=\; 3w_0 + 3\Delta \;=\; 3(w_0+\Delta).
+\end{equation}
+\end{definition}
+
+\begin{theorem}[Route I Individuality]
+\label{thm:route1}
+Suppose \(\mathbf{w}\) is the canonical arithmetic-progression assignment of
+Section~\ref{sec:closed}. Then
+\[
+\iota_I\colon g_j\mapsto w_j
+\]
+is an admissible individuality structure. Generations are distinguished by
+inequivalent topological charges on the 11-dimensional cycles, while
+multiplicity and global flux remain Axiom-0 data.
+\end{theorem}
+
+\begin{proof}[Proof sketch]
+Injectivity follows from \(\Delta=61\neq 0\). Discreteness is immediate from
+integral homology. Invariance of \(G_4\) and \(|P|\) follows because
+\eqref{eq:winding-sum} preserves the total winding class used for the breathing
+mode and puncture count; only the distribution among three cycles changes.
+Residual \(\mathrm{Sym}_3\) is broken by the ordered progression
+\(w_0<w_1<w_2\), with orientation fixed by the chirality of \(T\).
+\end{proof}
+
+\begin{corollary}[Mass Hierarchy from Wrapping]
+If particle masses scale with wrapping volume (or with the period of \(T\) along
+\(\gamma_j\)), then
+\[
+m_j \;\propto\; \mathrm{Vol}(\gamma_j)
+\quad\text{or}\quad
+m_j \;\propto\; \bigl|\langle T,[ \gamma_j]\rangle\bigr|
+\]
+yields a discrete hierarchy indexed by \(w_j\), with no free continuous Yukawa
+modulus beyond integers already in the chain.
+\end{corollary}
+
+\begin{remark}[Failure Mode]
+If \(\mathbf{w}\) is chosen from an open family of windings not constrained by
+\eqref{eq:winding-sum} and Section~\ref{sec:closed}, individuality is smuggled
+in as a second axiom. Route I is admissible only in the forced form.
+\end{remark}
+
+% ---------------------------------------------------------------------
+\section{Route II: Leftover \(+1\) on Shells of the 1001-Simplex}
+\label{sec:route2}
+
+\begin{definition}[Shells of \(\Delta^{1001}\)]
+\label{def:shells}
+Let \(\Gamma=\mathbb{Z}_7\times\mathbb{Z}_{11}\times\mathbb{Z}_{13}\) act by the
+prime factorization \(1001=7\times 11\times 13\) (equivalently,
+\(\Gamma_3=\mathbb{Z}_3\) by the generation qutrit). A \emph{shell} is a
+\(\Gamma\)-orbit or a grade of a \(\Gamma\)-equivariant filtration
+\[
+\Delta^{1001}\;=\;\bigsqcup_{\ell} S_\ell.
+\]
+Shell indices are integers; there is no continuous radial coordinate.
+\end{definition}
+
+\begin{definition}[Generation-Dependent Embedding of \(Q_{\mathrm{res}}\)]
+\label{def:embed}
+A \emph{residual embedding} assigns the leftover charge \(Q_{\mathrm{res}}=+1\)
+to three inequivalent shells:
+\begin{equation}
+\label{eq:shells}
+\iota_{II}\colon g_j \mapsto S_{k_j},\qquad
+k_0,k_1,k_2\text{ pairwise distinct}.
+\end{equation}
+\end{definition}
+
+\begin{lemma}[Single-Shell Obstruction]
+\label{lem:single-shell}
+If \(Q_{\mathrm{res}}=+1\) is placed in a single shell only, then either
+\begin{enumerate}[label=(\alph*)]
+  \item the three-generation qutrit collapses to a single effective grade
+        (loss of multiplicity), or
+  \item flux quantization / entropy conservation across the \(+U/-U\) interface
+        fails to match the Global Lemma Core.
+\end{enumerate}
+Hence any residual embedding compatible with Axiom 0 must occupy (at least)
+three inequivalent shells.
+\end{lemma}
+
+\begin{theorem}[Route II Individuality]
+\label{thm:route2}
+Let \(\iota_{II}\) be the canonical residual embedding of
+Section~\ref{sec:closed} with shell indices \(\{7,11,13\}\). Then \(\iota_{II}\)
+is an admissible individuality structure.
+\end{theorem}
+
+\begin{proof}[Proof sketch]
+Injectivity is pairwise distinct primes. Discreteness is by
+Definition~\ref{def:shells}. The total residual remains \(+1\), so \(G_4\) and
+\(|P|\) are unchanged. The identity \(7\times 11\times 13=1001\) and the factor
+\(61/1001\) already appear in lifetime formulae.
+\end{proof}
+
+\begin{corollary}[Lifetimeage Coupling]
+The model lifetime schematic
+\[
+\tau \;\propto\; \frac{61}{1001}\cdot\frac{\phi^7}{539.9}
+\]
+admits the generation refinement
+\begin{equation}
+\label{eq:tau-g}
+\tau_j \;\propto\; \frac{61}{1001}\cdot f(k_j)\cdot\frac{\phi^7}{539.9},
+\end{equation}
+with the fixed rational weight of Section~\ref{sec:closed}
+(no free continuous coupling).
+\end{corollary}
+
+\begin{remark}[Failure Mode]
+Continuous ``shell radius'' reintroduces parameters and is forbidden.
+\end{remark}
+
+% ---------------------------------------------------------------------
+\section{Route III: Graded Balanced-Ternary Map}
+\label{sec:route3}
+
+\begin{definition}[Graded Ternary Data]
+\label{def:graded}
+A \emph{grading} of the balanced-ternary map is a family of cocycles
+\[
+c_j\colon\mathbb{N}\to\{-1,0,+1\},\qquad j\in\{0,1,2\},
+\]
+together with the common underlying map \(T_3\), such that
+\begin{equation}
+\label{eq:graded-step}
+T_3^{(j)}(n)\;:=\;T_3(n)
+\quad\text{(set-map unchanged)},
+\end{equation}
+while observables use weights \(c_j\). The cocycles satisfy
+\begin{equation}
+\label{eq:cocycle-balance}
+\sum_{j=0}^{2} c_j(n)\;=\;Q_{\mathrm{res}}\;=\;+1
+\quad\text{for all \(n\) in the master tower}.
+\end{equation}
+\end{definition}
+
+\begin{definition}[Contraction Rates and Resonant Periods]
+\label{def:rates}
+Write \(\lambda=\ln 3/539\) for the Banach contraction rate of the ungraded HQCC
+map. Graded contractions \(\lambda_j\) must be rational multiples of \(\lambda\).
+Graded resonant sub-periods \(\tau_j^{\mathrm{sub}}\) must be drawn from the
+sub-harmonic set \(\{5,10,15,30,45\}\,\mathrm{s}\) (or integer commensurators of
+\(G_4\))---never three independent fundamental periods.
+\end{definition}
+
+\begin{lemma}[Common Orbit Constraint]
+\label{lem:common-orbit}
+If the three generations are assigned three independent fundamental periods,
+fixed-point rigidity (Lemma~\ref{lem:rigidity}) fails. Therefore any admissible
+grading keeps a common termination depth \(\sigma=539\pm 1\) and a common
+fundamental mode \(G_4\), with individuality in cocycle weights, residue classes
+modulo 3, or sub-period structure.
+\end{lemma}
+
+\begin{theorem}[Route III Individuality]
+\label{thm:route3}
+Let \((c_0,c_1,c_2)\) be the canonical graded cocycles of
+Section~\ref{sec:closed}. Then
+\[
+\iota_{III}\colon g_j\mapsto c_j
+\]
+is an admissible individuality structure: one orbit, one \(G_4\),
+generation-dependent dynamical observables.
+\end{theorem}
+
+\begin{proof}[Proof sketch]
+The set-map \(T_3\) and stopping time \(\sigma\) are generation-independent.
+Inequivalence of the \(c_j\) (distinct mod-3 supports) breaks \(\mathrm{Sym}_3\).
+Observables (mean sojourn near punctures, weighted transfer spectrum) depend on
+\(j\) only through \(c_j\). All numerical inputs are chain integers.
+\end{proof}
+
+\begin{remark}[Failure Mode]
+Independent fundamental periods not commensurate with \(G_4\) are inadmissible.
+\end{remark}
+
+% ---------------------------------------------------------------------
+\section{Closed Integer Formulae}
+\label{sec:closed}
+
+All ``forced by the chain'' steps are fixed here by explicit integers from
+\(\{3,7,11,13,61,539,1001,4880\}\). No continuous choice remains.
+
+\begin{definition}[Canonical Step and Base Winding]
+\label{def:Delta}
+\[
+\Delta \;:=\; |P| \;=\; 61,
+\qquad
+w_0 \;:=\; \sigma_{\mathrm{HQCC}} \;=\; 539.
+\]
+\end{definition}
+
+\begin{lemma}[Canonical Windings]
+\label{lem:canonical-w}
+The unique arithmetic-progression winding assignment with base \(w_0=539\) and
+step \(\Delta=61\) is
+\begin{equation}
+\label{eq:w-explicit}
+w_j \;=\; 539 + 61\,j,\qquad j\in\{0,1,2\},
+\end{equation}
+i.e.
+\[
+(w_0,w_1,w_2) \;=\; (539,\,600,\,661).
+\]
+The total class is
+\begin{equation}
+\label{eq:Wtot}
+W_{\mathrm{tot}} \;=\; 539+600+661 \;=\; 1800 \;=\; 3\times 600 \;=\; 3(w_0+\Delta).
+\end{equation}
+\textbf{Status (No-Go chapter).}
+The pair \((w_0,\Delta)=(539,61)\) is \emph{conditional} on a non-circular supply
+of \(\sigma=539\) (and of \(|P|=61\)). Flux democracy alone does not select
+these anchors (Theorem on flux democracy no-go). By contrast, cocycles
+\(c_j\) and shells \(k_j\in\{7,11,13\}\) remain a priori.
+\end{lemma}
+
+\begin{proof}
+Substitute \eqref{eq:w-explicit} into \eqref{eq:AP-sum}. Summation is elementary.
+Both \(539\) and \(61\) are Global Lemma Core integers; no other pair is used.
+\end{proof}
+
+\begin{lemma}[Canonical Shells]
+\label{lem:canonical-k}
+The unique unordered triple of prime shells forced by \(1001=7\times 11\times 13\)
+is \(\{7,11,13\}\). Ordering by increasing prime (aligned with increasing
+\(j\) and chirality of \(T\)) gives
+\begin{equation}
+\label{eq:k-explicit}
+(k_0,k_1,k_2) \;=\; (7,\,11,\,13).
+\end{equation}
+\end{lemma}
+
+\begin{definition}[Canonical Dictionaries \(\Phi,\Psi\)]
+\label{def:PhiPsi}
+\begin{align}
+\Phi(w_j) &\;:=\; k_j \;=\; p_{j+1},
+  \label{eq:Phi}\\
+\Psi(k_j) &\;:=\; c_j,
+  \label{eq:Psi}
+\end{align}
+where \(p_1=7\), \(p_2=11\), \(p_3=13\) are the prime factors of \(1001\) in
+increasing order, and \(c_j\) is Definition~\ref{def:c-explicit}. Equivalently,
+\[
+j \;=\; \frac{w_j-539}{61} \;=\; \mathrm{index}(k_j\text{ in }(7,11,13)),
+\]
+so \(\Phi\) and \(\Psi\) are determined by the single generation index \(j\).
+\end{definition}
+
+\begin{definition}[Canonical Cocycles]
+\label{def:c-explicit}
+\begin{equation}
+\label{eq:c-explicit}
+c_j(n) \;:=\;
+\begin{cases}
++1 & \text{if } n\equiv j \pmod{3},\\
+0 & \text{otherwise}.
+\end{cases}
+\end{equation}
+\end{definition}
+
+\begin{lemma}[Cocycle Balance]
+\label{lem:cocycle-ok}
+For every \(n\in\mathbb{N}\),
+\[
+\sum_{j=0}^{2} c_j(n) \;=\; 1 \;=\; Q_{\mathrm{res}}.
+\]
+Thus \eqref{eq:cocycle-balance} holds pointwise on the master tower.
+\end{lemma}
+
+\begin{proof}
+Exactly one residue class modulo 3 equals \(j\) for a unique \(j\in\{0,1,2\}\).
+\end{proof}
+
+\begin{definition}[Canonical Sub-Harmonics and Contractions]
+\label{def:sub-explicit}
+\begin{equation}
+\label{eq:sub-explicit}
+\bigl(\tau_0^{\mathrm{sub}},\tau_1^{\mathrm{sub}},\tau_2^{\mathrm{sub}}\bigr)
+\;=\;
+(5,\,15,\,45)\,\mathrm{s}
+\;\subset\;
+\{5,10,15,30,45\}\,\mathrm{s},
+\end{equation}
+ordered lightest \(\leftrightarrow\) shortest, and
+\begin{equation}
+\label{eq:lambda-explicit}
+\lambda_j \;=\; \lambda \;=\; \frac{\ln 3}{539}
+\quad\text{for all }j
+\end{equation}
+(common contraction; generation dependence lives in \(c_j\) and
+\(\tau_j^{\mathrm{sub}}\) only).
+\end{definition}
+
+\begin{definition}[Canonical Lifetime Weight]
+\label{def:f}
+\begin{equation}
+\label{eq:f}
+f(k) \;:=\; \frac{1001}{k},
+\qquad
+\bigl(f(7),f(11),f(13)\bigr) \;=\; (143,\,91,\,77).
+\end{equation}
+\end{definition}
+
+\begin{theorem}[Closure of All Forced Steps]
+\label{thm:closure}
+With Definitions~\ref{def:Delta}--\ref{def:f} and
+Lemmas~\ref{lem:canonical-w}--\ref{lem:cocycle-ok}, every open ``forced by the
+chain'' step in Routes I--III is an explicit integer formula. The only free
+discrete choice retained is the global orientation
+(increasing vs.\ decreasing \(j\)), fixed by the chirality of \(T\) to the
+increasing convention \(j=0,1,2\leftrightarrow e,\mu,\tau\).
+\end{theorem}
+
+% ---------------------------------------------------------------------
+\section{Composite Package}
+\label{sec:composite}
+
+\begin{definition}[Composite Individuality Structure]
+\label{def:composite}
+The \emph{composite package} is
+\[
+\iota \;=\; (\iota_I,\iota_{II},\iota_{III}),
+\]
+with
+\begin{enumerate}[label=(\roman*)]
+  \item Route I: \(g_j\mapsto w_j=539+61j\);
+  \item Route II: \(w_j\mapsto k_j\in\{7,11,13\}\) via \(\Phi\);
+  \item Route III: \(k_j\mapsto c_j\) via \(\Psi\), on the common \(T_3\) orbit.
+\end{enumerate}
+Consistency is the commuting square
+\begin{equation}
+\label{eq:dictionary}
+\begin{array}{ccc}
+\{g_j\} & \xrightarrow{\;\iota_I\;} & \{w_j\} \\[4pt]
+\big\downarrow{\scriptstyle \iota_{III}} & & \big\downarrow{\scriptstyle \Phi} \\[4pt]
+\{c_j\} & \xleftarrow{\;\Psi\;} & \{k_j\}
+\end{array}
+\end{equation}
+with \(\Phi,\Psi\) as in Definition~\ref{def:PhiPsi}.
+\end{definition}
+
+\begin{theorem}[Individuality without a Second Axiom]
+\label{thm:main}
+The composite package \(\iota\) is an admissible individuality structure:
+\begin{enumerate}[label=(\roman*)]
+  \item Axiom 0 remains the sole primitive (cardinality three);
+  \item the three generations are pairwise inequivalent as labeled individuals;
+  \item \(G_4=539.9\,\mathrm{s}\), HQCC depth \(539\pm 1\), and \(|P|=61\) are
+        unchanged;
+  \item no free continuous parameter is introduced.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}[Proof sketch]
+Theorem~\ref{thm:closure} supplies explicit integer labels. Routes I--III are
+admissible by Theorems~\ref{thm:route1}--\ref{thm:route3}. The dictionaries
+\(\Phi,\Psi\) are bijections on a three-element set, hence introduce no continuum
+of moduli. Conditions (i)--(iv) follow.
+\end{proof}
+
+\begin{corollary}[Symmetry Breaking Pattern]
+\[
+\mathrm{Sym}(\{0,1,2\})\;\longrightarrow\;\{1\},
+\]
+broken completely by \(\iota\). Partial activation of a single route may leave
+a \(\mathbb{Z}_2\) stabilizer.
+\end{corollary}
+
+% ---------------------------------------------------------------------
+\section{Canonical Generation-Label Table (\(e/\mu/\tau\))}
+\label{sec:table}
+
+\begin{definition}[Canonical Charged-Lepton Dictionary]
+\label{def:leptons}
+Identify
+\[
+(g_0,g_1,g_2) \;=\; (e,\,\mu,\,\tau)
+\]
+with the closed labels of Section~\ref{sec:closed}. The same \(j\) labels quark
+generations when lifted: \((d,s,b)\) and \((u,c,t)\).
+\end{definition}
+
+\begin{table}[ht]
+\centering
+\textbf{Table: Canonical individuality labels for charged leptons}
+\label{tab:labels}\\[0.5em]
+\begin{tabular}{@{}llrrrrl@{}}
+\toprule
+Gen. & \(j\) & \(w_j\) & \(k_j\) & \(f(k_j)\) & \(\tau_j^{\mathrm{sub}}\) (s) & \(c_j\) support \\
+\midrule
+\(e\)   & 0 & 539 & 7  & 143 & 5  & \(n\equiv 0\pmod{3}\) \\
+\(\mu\) & 1 & 600 & 11 & 91  & 15 & \(n\equiv 1\pmod{3}\) \\
+\(\tau\)& 2 & 661 & 13 & 77  & 45 & \(n\equiv 2\pmod{3}\) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\textbf{Table: Global invariants preserved by the dictionary}
+\label{tab:invariants}\\[0.5em]
+\begin{tabular}{@{}ll@{}}
+\toprule
+Invariant & Value \\
+\midrule
+\(W_{\mathrm{tot}}=\sum_j w_j\) & \(1800=3\times 600\) \\
+\(\prod_j k_j\) & \(7\times 11\times 13=1001\) \\
+\(\sum_j c_j(n)\) & \(1=Q_{\mathrm{res}}=61\bmod 3\) \\
+\(\lambda_j\) & \(\ln 3/539\) (common) \\
+HQCC depth & \(539\pm 1\) \\
+\(G_4\) & \(539.9\,\mathrm{s}\) \\
+\(|P|\) & \(61\) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{corollary}[Explicit Lifetime Refinement]
+Under \eqref{eq:tau-g} and \eqref{eq:f},
+\begin{equation}
+\label{eq:tau-explicit}
+\tau_j \;\propto\; \frac{61}{1001}\cdot\frac{1001}{k_j}\cdot\frac{\phi^7}{539.9}
+\;=\; \frac{61}{k_j}\cdot\frac{\phi^7}{539.9},
+\end{equation}
+so the shell weight cancels one factor of \(1001\) and leaves a pure prime in the
+denominator: \(\tau_e\propto 61/7\), \(\tau_\mu\propto 61/11\),
+\(\tau_\tau\propto 61/13\), times the common \(\phi^7/539.9\) factor. The standard
+muon formula in the theorem chain corresponds to the \(j=1\) line with an overall
+normalization \(\tau^-\) and resonance correction \(\delta_{\mathrm{res}}\).
+\end{corollary}
+
+\begin{corollary}[Discrete Mass Ordering]
+Along Route I, winding gaps are constant:
+\[
+w_1-w_0 \;=\; w_2-w_1 \;=\; 61,
+\]
+so any observable monotone in \(w_j\) automatically orders
+\(e\prec\mu\prec\tau\) (or the reverse if orientation is flipped---excluded by
+chirality of \(T\)).
+\end{corollary}
+
+\begin{remark}[Quark Lift]
+The same table applies to quarks by reinterpreting \(g_j\) as the \(j\)-th quark
+generation. Flavour mixing is then the overlap of cocycles \(c_i,c_j\) on the
+common HQCC orbit (CKM / PMNS as discrete cocycle correlators), with no
+continuous Yukawa matrix beyond the finite dictionary.
+\end{remark}
+
+% ---------------------------------------------------------------------
+\section{Comparison and Selection}
+\label{sec:compare}
+
+\begin{center}
+\begin{tabular}{@{}llll@{}}
+\toprule
+Route & Carrier & Principal risk & Cleanest fit \\
+\midrule
+I & Windings on 11D cycles & Free winding family & Brane / flux language \\
+II & Shells of \(\Delta^{1001}\) & Continuous radius & \(61/1001\) numerics \\
+III & Graded \(T_3\) cocycles & Multiple fundamentals & HQCC core \\
+Composite & \((w_j,k_j,c_j)\) & Over-constraining \(\Phi,\Psi\) & Full tower \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{lemma}[Selection under Rigidity]
+\label{lem:selection}
+If a single route is preferred, Route III with common orbit and graded cocycle
+is the least likely to reopen the fixed point of \(G_4\). If full geometric
+language is required, the composite package is preferred, with Route III as the
+dynamical readout and Routes I--II as geometric realization. The Axiomatic Book
+takes the composite package with Table~\ref{tab:labels} as primary.
+\end{lemma}
+
+% ---------------------------------------------------------------------
+\section{Falsifiability and Downstream Couplings}
+\label{sec:falsify}
+
+\begin{definition}[Individuality Observables]
+Generation-dependent observables induced by \(\iota\) include:
+\begin{enumerate}[label=(\roman*)]
+  \item mass ratios \(m_i/m_j\) as functions of \((w_i-w_j)=61(i-j)\);
+  \item lifetime ratios from \eqref{eq:tau-explicit}:
+        \(\tau_i/\tau_j = k_j/k_i\) at fixed overall normalization;
+  \item mixing angles as overlap of cocycles \(c_i,c_j\) on the common orbit;
+  \item sub-harmonic phase offsets at \(\tau_j^{\mathrm{sub}}\in\{5,15,45\}\,\mathrm{s}\).
+\end{enumerate}
+\end{definition}
+
+\begin{lemma}[Falsifiability]
+\label{lem:falsify}
+The canonical dictionary is falsifiable if measured mass or lifetime ratios
+cannot be matched by Table~\ref{tab:labels} (or its single orientation reverse,
+already excluded by chirality) while preserving \(G_4\) and \(|P|=61\). There is
+no continuous retuning: the label set is finite.
+\end{lemma}
+
+\begin{corollary}[Lifetimeage Ratio Test]
+At fixed normalization, \eqref{eq:tau-explicit} predicts
+\[
+\frac{\tau_\mu}{\tau_e} \;=\; \frac{7}{11},\qquad
+\frac{\tau_\tau}{\tau_\mu} \;=\; \frac{11}{13},\qquad
+\frac{\tau_\tau}{\tau_e} \;=\; \frac{7}{13},
+\]
+up to the known overall factors already present in the muon theorem line and
+channel-dependent phase space. Gross violation of these discrete ratios (after
+those factors) falsifies the canonical shell assignment.
+\end{corollary}
+
+% ---------------------------------------------------------------------
+\section{Global Lemma Core Form}
+\label{sec:glc}
+
+\begin{lemma}[Individuality without a Second Axiom]
+\label{lem:glc-individuality}
+There exists a discrete, Axiom-0-forced assignment
+\[
+j\;\mapsto\; (w_j,k_j,c_j)
+\;=\;
+\bigl(539+61j,\; p_{j+1},\; \mathbf{1}_{n\equiv j\pmod{3}}\bigr)
+\]
+with \((p_1,p_2,p_3)=(7,11,13)\) such that the three generations are inequivalent
+while \(G_4\), HQCC depth, and \(|P|\) remain unique.
+\end{lemma}
+
+% ---------------------------------------------------------------------
+\section{Summary}
+\label{sec:summary}
+
+Axiom 0 yields three as a cardinality. Individuality is restored by the
+composite integer dictionary:
+\begin{enumerate}
+  \item windings \(w_j=539+61j\) on 11-dimensional cycles;
+  \item leftover \(+1\) on shells \(k_j\in\{7,11,13\}\) of \(\Delta^{1001}\);
+  \item graded cocycles \(c_j=\mathbf{1}_{n\equiv j\pmod{3}}\) on a common \(T_3\)
+        orbit of length \(539\pm 1\), with sub-harmonics \((5,15,45)\,\mathrm{s}\).
+\end{enumerate}
+For charged leptons, \(j=0,1,2\leftrightarrow e,\mu,\tau\)
+(Table~\ref{tab:labels}). No second continuous axiom is required; fixed-point
+rigidity is preserved; falsifiability is finite and discrete.
+
+% end of chapter

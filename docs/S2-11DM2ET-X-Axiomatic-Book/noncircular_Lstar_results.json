@@ -1,0 +1,80 @@
+{
+  "lengths": {
+    "L_ACE": 14,
+    "L_flux_div_9": 542,
+    "L_f20": 20,
+    "L_f21": 21,
+    "L_tow": 243,
+    "L_base3_digits_flux": 8,
+    "L_Bott_period": 8,
+    "L_win_model": 18
+  },
+  "endpoint_counts": {
+    "L_ACE": {
+      "L": 14,
+      "n_seeds_used": 4880,
+      "distinct_endpoints": 94,
+      "post_hoc_equals_539": false,
+      "post_hoc_L_equals_539": false
+    },
+    "L_flux_div_9": {
+      "L": 542,
+      "n_seeds_used": 976,
+      "distinct_endpoints": 5,
+      "post_hoc_equals_539": false,
+      "post_hoc_L_equals_539": false
+    },
+    "L_f20": {
+      "L": 20,
+      "n_seeds_used": 4880,
+      "distinct_endpoints": 25,
+      "post_hoc_equals_539": false,
+      "post_hoc_L_equals_539": false
+    },
+    "L_f21": {
+      "L": 21,
+      "n_seeds_used": 4880,
+      "distinct_endpoints": 19,
+      "post_hoc_equals_539": false,
+      "post_hoc_L_equals_539": false
+    },
+    "L_tow": {
+      "L": 243,
+      "n_seeds_used": 976,
+      "distinct_endpoints": 5,
+      "post_hoc_equals_539": false,
+      "post_hoc_L_equals_539": false
+    },
+    "L_base3_digits_flux": {
+      "L": 8,
+      "n_seeds_used": 4880,
+      "distinct_endpoints": 451,
+      "post_hoc_equals_539": false,
+      "post_hoc_L_equals_539": false
+    },
+    "L_Bott_period": {
+      "L": 8,
+      "n_seeds_used": 4880,
+      "distinct_endpoints": 451,
+      "post_hoc_equals_539": false,
+      "post_hoc_L_equals_539": false
+    },
+    "L_win_model": {
+      "L": 18,
+      "n_seeds_used": 4880,
+      "distinct_endpoints": 33,
+      "post_hoc_equals_539": false,
+      "post_hoc_L_equals_539": false
+    }
+  },
+  "audit": {
+    "9*61-10": 539,
+    "circular_risk_61": "61 often defined from 539-step orbit \u2014 do not use to derive 539",
+    "18+1+520": 539,
+    "circular_risk_520": "520 = 539-19 unless independent Psi_tow exists",
+    "243*2+53": 539,
+    "N_flux//9": 542,
+    "N_flux//9 - 3": 539
+  },
+  "verdict": "Option1_blocked_for_539"
+}

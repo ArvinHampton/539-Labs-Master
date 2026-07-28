@@ -1,0 +1,189 @@
+% =====================================================================
+% Provenance table + depth macro split
+% Input this file once from the main book (after \newtheorem, before body
+% content that needs the macros --- preferably in the preamble).
+%
+% RULE: \Nstar is ALWAYS the ACE e-fold depth (value 14).
+%       \sigmaHQCC / \sigmaval is ALWAYS the model HQCC depth (value 539).
+%       Never write N_{\star}=539 or identify \Nstar with \sigmaHQCC.
+% =====================================================================
+
+% ---------------------------------------------------------------------
+% Depth macros (symbol + value)
+% ---------------------------------------------------------------------
+
+% ACE / crude flux-bridge e-fold depth (NEVER 539)
+\newcommand{\Nstar}{N_{\star}}
+\newcommand{\Nstarval}{14}
+\newcommand{\Nstareq}{N_{\star}=14}
+
+% HQCC / resonant combinatorial model depth (NEVER call this N_star)
+\newcommand{\sigmaHQCC}{\sigma}
+\newcommand{\sigmaval}{539}
+\newcommand{\sigmaeq}{\sigma=539}
+\newcommand{\NHQCC}{N_{\mathrm{HQCC}}}
+\newcommand{\NHQCCeq}{N_{\mathrm{HQCC}}=539}
+
+% Periods / rates
+\newcommand{\Gfour}{G_{4}}
+\newcommand{\Gfourval}{539.9}
+\newcommand{\lambdaMean}{\lambda_{\mathrm{mean}}}
+\newcommand{\lambdaMeanval}{4^{1/3}/3}
+% Conditional Banach rate: uses sigma, not N_star
+\newcommand{\lambdaSigma}{\frac{\ln 3}{\sigma}}
+\newcommand{\lambdaSigmaval}{\frac{\ln 3}{539}}
+
+% Flux / towers / punctures
+\newcommand{\Nflux}{N_{\mathrm{flux}}}
+\newcommand{\Nfluxval}{4880}
+\newcommand{\Ntow}{243}
+\newcommand{\Pcard}{|P|}
+\newcommand{\Pval}{61}
+
+% Convenience: assert the split in prose
+\newcommand{\DepthSplitReminder}{%
+  The ACE depth is \(\Nstareq\); the model HQCC depth is \(\sigmaeq\).
+  These are \textbf{distinct}; never identify \(\Nstar\) with \(\sigmaHQCC\).%
+}
+
+% =====================================================================
+% Optional chapter body: input AFTER \begin{document} if desired via
+%   \input{Provenance_and_DepthMacros_Chapter}
+% This file defines macros only when used as preamble input.
+% The chapter is provided below, gated by a flag, or as a separate
+% input path. For a single-file drop-in, define the chapter command.
+% =====================================================================
+
+\newcommand{\PrintProvenanceChapter}{%
+\chapter{Integer Provenance and Depth Split}
+\label{ch:provenance}
+
+\section{Mandatory depth split}
+
+\DepthSplitReminder
+
+\begin{center}
+\begin{tabular}{@{}llll@{}}
+\toprule
+Symbol & Value & Meaning & May equal the other? \\
+\midrule
+\(\Nstar\) & \(\Nstarval\) & ACE / crude flux-bridge e-fold depth & \textbf{No} \\
+\(\sigmaHQCC=\NHQCC\) & \(\sigmaval\) & Model HQCC / resonant depth & \textbf{No} \\
+\(\Gfour\) & \(\Gfourval\,\mathrm{s}\) & Claimed gravitational breathing period & (not an integer depth) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{definition}[ACE depth \(\Nstar\)]
+\label{def:Nstar-macro}
+\[
+\Nstar
+\;:=\;
+\Bigl\lceil
+\frac{\ln \Nfluxval}{\bigl|\mathbb{E}_\pi[\chi]\bigr|}
+\Bigr\rceil
+\;=\;
+\Nstarval,
+\]
+using only the completed-map stationary mean and the flux integer
+\(\Nflux=\Nfluxval\). The numbers \(\sigmaval\), \(\Pval\), and \(\Gfourval\)
+are \textbf{not} inputs.
+\end{definition}
+
+\begin{definition}[HQCC model depth \(\sigmaHQCC\)]
+\label{def:sigma-macro}
+The symbol \(\sigmaHQCC\) (equivalently \(\NHQCC\)) denotes the model's
+combinatorial HQCC / resonant orbit depth, with standard numerical value
+\(\sigmaval\). It is \textbf{not} an output of Definition~\ref{def:Nstar-macro}.
+Any theorem that assumes \(\sigmaeq\) must say so explicitly.
+\end{definition}
+
+\begin{corollary}[Banach rates are distinct]
+\label{cor:rates-split}
+\[
+\lambdaMean
+\;=\;
+\lambdaMeanval
+\;\approx\; 0.529
+\qquad\text{(ACE; free of \(\sigmaval\))}
+\]
+versus
+\[
+\lambdaSigma
+\;=\;
+\lambdaSigmaval
+\qquad\text{(conditional on \(\sigmaeq\) only).}
+\]
+These must not be identified.
+\end{corollary}
+
+\section{Provenance codes}
+
+\begin{center}
+\begin{tabular}{@{}lp{0.72\textwidth}@{}}
+\toprule
+Code & Meaning \\
+\midrule
+\textbf{A0} & Forced by Axiom 0 (three generations / multiplicity three) \\
+\textbf{Res} & Residue-class / ternary map structure (\(T_3\), \(Q=n\bmod 9\)) \\
+\textbf{Tower} & Tower lattice / flux construction (\(3^5\), \(W_{np}=e^3\)) \\
+\textbf{Dem} & Flux democracy (tower-symmetric partition of seeds) \\
+\textbf{ACE} & Completed map \(T^\sharp\) + stationary mean (no \(\sigmaval\) in inputs) \\
+\textbf{Mod} & Model / extra structure not forced by Res+Tower+Dem+ACE \\
+\textbf{Cond} & Conditional on assuming \(\sigmaeq\) (or \(\Pcard\) only via that route) \\
+\textbf{Emp} & Empirical hypothesis to be tested (not a derivation) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Provenance table}
+\label{sec:provenance-table}
+
+\begin{center}
+\small
+\begin{tabular}{@{}rlllp{0.32\textwidth}@{}}
+\toprule
+Integer & Symbol(s) & Provenance & Under No-Go \\
+\midrule
+\(3\) & generations; branch modulus & \textbf{A0} & A priori \\
+\(9\) & \(Q=n\bmod 9\) & \textbf{Res} (\(3^2\)) & Free of \(\sigmaval\) \\
+\(20\) & seed multiplicity & \textbf{Dem}+\textbf{Tower} & Free of \(\sigmaval\) \\
+\(21\) & seed multiplicity & \textbf{Dem}+\textbf{Tower} & Free of \(\sigmaval\) \\
+\(61\) & \(\Pcard\) punctures & \textbf{Mod} & Not forced by ACE data \\
+\(80\) & \(\Nfluxval/\Pval\) & \textbf{Mod} (via 61) & Inherits 61 \\
+\(243\) & \(\Ntow=3^5\) & \textbf{A0}+\textbf{Tower} & Free of \(\sigmaval\) \\
+\(539\) & \(\sigmaHQCC=\NHQCC\) & \textbf{Mod}/\textbf{Cond} & \textbf{Not} derived from Res+Tower+Dem+ACE \\
+\(4880\) & \(\Nflux=\lfloor e^3\cdot 3^5\rfloor\) & \textbf{Tower} & Free of \(\sigmaval\); enters \(\Nstar\) \\
+\(539.9\) & \(\Gfour\) (seconds) & \textbf{Emp}/\textbf{Mod} & Hypothesis; post-estimate test only \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Forbidden identifications}
+
+\begin{center}
+\begin{tabular}{@{}lp{0.55\textwidth}@{}}
+\toprule
+Forbidden & Reason \\
+\midrule
+\(\Nstar=\sigmaval\) or \(\Nstar=\sigmaHQCC\) & Conflates ACE depth with HQCC depth \\
+\(\lambdaMean=\lambdaSigma\) & Distinct rates; left free of 539 \\
+``Democracy \(\Rightarrow\sigmaeq\)'' & Blocked by No-Go Theorem \\
+``ACE \(\Rightarrow w_j=\sigmaval+\Pval\, j\)'' & Unforced \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Allowed short phrases}
+
+\begin{itemize}
+  \item ``\(\Nstareq\) from ACE + flux bridge.''
+  \item ``Conditional on \(\sigmaeq\), \(\lambdaSigma<1\).''
+  \item ``Empirical \(\hat T\); test compatibility with \(\Gfour=\Gfourval\) afterward.''
+  \item ``\(f_{\mathrm{snap}}=\Ntow/\Nfluxval\) from towers and flux only.''
+\end{itemize}
+
+\noindent
+Canonical No-Go: Chapter~\ref{ch:nogo-canonical}.
+ACE resolution and \(\Nstareq\): completed-map notes.
+}% end \PrintProvenanceChapter

@@ -1,0 +1,78 @@
+{
+  "map": "T_sharp",
+  "max_steps": 5000,
+  "flux_split": {
+    "towers_21": 20,
+    "towers_20": 223,
+    "check_sum": 4880
+  },
+  "definition": "C_seed = basins of physical seeds under T^sharp; 539 not an input",
+  "S243": {
+    "seed_formula": "s_tau = f_tau*243 + tau",
+    "n_seeds_expected": 243,
+    "n_seeds_actual": 243,
+    "seed_min": 4880,
+    "seed_max": 5122,
+    "basins": {
+      "n_seeds": 243,
+      "n_basins": 2,
+      "n_hit_one_attractor": 118,
+      "fraction_hit_one": 0.48559670781893005,
+      "steps_to_cycle": {
+        "median": 11,
+        "mean": 10.91358024691358,
+        "max": 19,
+        "min": 5
+      },
+      "cycle_length_histogram": {
+        "1": 118,
+        "2": 125
+      },
+      "attractor_keys_sample": [
+        "min=14|size=2|sum=37",
+        "min=1|size=1|sum=1"
+      ],
+      "post_hoc": {
+        "claimed_539": 539,
+        "n_basins_equals_539": false,
+        "abs_diff": 537,
+        "n_basins_le_n_seeds": true,
+        "S243_cardinality_bound_blocks_539": true
+      }
+    }
+  },
+  "S5083": {
+    "seed_formula": "s_(tau,j) = (f_tau*243+tau)*64 + j + 1",
+    "n_seeds_expected": 5083,
+    "n_seeds_actual": 4880,
+    "seed_min": 312321,
+    "seed_max": 327829,
+    "basins": {
+      "n_seeds": 4880,
+      "n_basins": 2,
+      "n_hit_one_attractor": 1771,
+      "fraction_hit_one": 0.36290983606557375,
+      "steps_to_cycle": {
+        "median": 17,
+        "mean": 15.864549180327868,
+        "max": 32,
+        "min": 9
+      },
+      "cycle_length_histogram": {
+        "1": 1771,
+        "2": 3109
+      },
+      "attractor_keys_sample": [
+        "min=1|size=1|sum=1",
+        "min=14|size=2|sum=37"
+      ],
+      "post_hoc": {
+        "claimed_539": 539,
+        "n_basins_equals_539": false,
+        "abs_diff": 537,
+        "n_basins_le_n_seeds": true,
+        "S243_cardinality_bound_blocks_539": false
+      }
+    }
+  }
+}

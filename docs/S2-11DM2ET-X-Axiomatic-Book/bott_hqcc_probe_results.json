@@ -1,0 +1,226 @@
+{
+  "arithmetic_bott_hints": {
+    "539_mod_8": 3,
+    "539_eq_8*67+3": 539,
+    "520_eq_8*65": 520,
+    "4880_eq_8*610": 4880,
+    "243_mod_8": 3,
+    "243_eq_8*30+3": 243,
+    "61_mod_8": 5,
+    "18_eq_8*2+2": 18,
+    "pi_k_O_mod8": {
+      "0": "Z2",
+      "1": "Z2",
+      "2": "0",
+      "3": "Z",
+      "4": "0",
+      "5": "0",
+      "6": "0",
+      "7": "Z"
+    },
+    "note": "539\u22613 (mod 8) aligns with pi_3(O)=Z line; free Z/8 action on 539 classes impossible"
+  },
+  "E1_residue_words": {
+    "max_len": 16,
+    "charge0_counts_by_L": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      6,
+      51,
+      267,
+      1017,
+      3141,
+      8406,
+      20736,
+      51327,
+      140427,
+      438453,
+      1469016,
+      4893129
+    ],
+    "charge0_by_L_mod8": {
+      "0": [
+        1,
+        1017,
+        4893129
+      ],
+      "1": [
+        1,
+        3141
+      ],
+      "2": [
+        1,
+        8406
+      ],
+      "3": [
+        1,
+        20736
+      ],
+      "4": [
+        1,
+        51327
+      ],
+      "5": [
+        6,
+        140427
+      ],
+      "6": [
+        51,
+        438453
+      ],
+      "7": [
+        267,
+        1469016
+      ]
+    },
+    "note": "Toy charge: sum of residues mod 9; not full HQCC Q along T^sharp"
+  },
+  "E2_Tsharp_mod27": {
+    "n_paths": 3004,
+    "path_len": 64,
+    "residue3_histogram": {
+      "0": 57332,
+      "1": 41951,
+      "2": 92973
+    },
+    "residue3_fractions": {
+      "0": 0.2982065579227696,
+      "1": 0.218203853195739,
+      "2": 0.48358958888149134
+    },
+    "gaps_between_res0_mod8": {
+      "0": 0.00872478280076572,
+      "1": 0.36912825798851423,
+      "2": 0.16838462671182447,
+      "3": 0.32855985863643056,
+      "4": 0.057152849359446325,
+      "5": 0.03565380650861434,
+      "6": 0.02081799440435871,
+      "7": 0.011577823590045649
+    },
+    "n_transitions_mod27": 81,
+    "top_transitions_mod27": [
+      {
+        "from": 14,
+        "to": 23,
+        "count": 24781
+      },
+      {
+        "from": 23,
+        "to": 14,
+        "count": 24266
+      },
+      {
+        "from": 3,
+        "to": 1,
+        "count": 15769
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "count": 14816
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "count": 14589
+      },
+      {
+        "from": 9,
+        "to": 3,
+        "count": 3134
+      },
+      {
+        "from": 0,
+        "to": 9,
+        "count": 2761
+      },
+      {
+        "from": 18,
+        "to": 6,
+        "count": 2301
+      },
+      {
+        "from": 14,
+        "to": 5,
+        "count": 2178
+      },
+      {
+        "from": 5,
+        "to": 22,
+        "count": 2174
+      },
+      {
+        "from": 0,
+        "to": 18,
+        "count": 2054
+      },
+      {
+        "from": 18,
+        "to": 15,
+        "count": 2052
+      },
+      {
+        "from": 5,
+        "to": 4,
+        "count": 2034
+      },
+      {
+        "from": 23,
+        "to": 23,
+        "count": 1969
+      },
+      {
+        "from": 10,
+        "to": 14,
+        "count": 1968
+      }
+    ],
+    "note": "If Bott time-periodicity dominated returns, gaps mod 8 would be peaked; flat \u2248 mixing without period-8 preference"
+  },
+  "E4_walk_mass": {
+    "walk_mass_by_L": [
+      27.0,
+      27.0,
+      27.0,
+      27.0,
+      27.0,
+      27.0,
+      27.0,
+      27.0,
+      27.0,
+      27.0,
+      27.0,
+      27.0,
+      27.0,
+      27.0,
+      27.0,
+      27.000000000000004,
+      27.0,
+      27.0,
+      27.0,
+      27.0,
+      27.0,
+      27.0,
+      27.0,
+      27.0,
+      27.0
+    ],
+    "mean_walk_mass_by_L_mod8": {
+      "0": 27.0,
+      "1": 27.0,
+      "2": 27.0,
+      "3": 27.0,
+      "4": 27.0,
+      "5": 27.0,
+      "6": 27.0,
+      "7": 27.0
+    },
+    "note": "Empirical walk mass on Z/27; period-8 modulation would show in means by L mod 8"
+  },
+  "programme": "See Bott_HQCC_Link_Research.md Phases 0\u20134; this is probe only",
+  "no_claim": "Does not establish Bott embedding or derive 539 from Bott"
+}

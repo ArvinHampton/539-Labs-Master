@@ -1,0 +1,489 @@
+% =====================================================================
+% Resolution: Three Clocks, Closed Constants, BH/negPBH, GW250114
+% Resolves all open issues from the individuality / Kerr / beta review
+% \input after Individuality chapter (or after Math 1 / TTC)
+% =====================================================================
+
+\chapter{Resolution: Three Clocks, Closed Constants, Horizons, and GW250114}
+\label{ch:resolution}
+
+\section{Purpose}
+
+This chapter resolves, in closed form, every open defect identified in the
+black-hole / negPBH / GW250114 discussion:
+\begin{enumerate}[label=(\roman*)]
+  \item timescale conflation among ringdown, HQCC depth, and \(G_4\);
+  \item overclaim that GW250114 confirms 11D leakage rather than Kerr exterior;
+  \item free-looking parameters \(\kappa_{\mathrm{dark}} = 243/539\),
+        \(\rho_{\mathrm{snap}}/\rho_{\mathrm{DM}}=0.05\), \(\beta_{\mathrm{PBH}} = 11/61\);
+  \item broken raw-\(\beta\) arithmetic \(61\times 243/4880\approx 0.0304\);
+  \item misuse of sub-harmonics \(\{5,10,15,30,45\}\,\mathrm{s}\) as merger phases;
+  \item status of negPBH relative to the GW250114 remnant;
+  \item claim ladder (definition / consistency / prediction).
+\end{enumerate}
+
+% ---------------------------------------------------------------------
+\section{Three Clocks (Category Separation)}
+\label{sec:three-clocks}
+
+\begin{definition}[Clock I --- Local Geometric Time]
+\label{def:clock-I}
+For a black-hole remnant of mass \(M\) and dimensionless spin \(\chi\),
+\[
+t_{\mathrm{geo}} \;\sim\; \frac{GM}{c^3}.
+\]
+Quasinormal frequencies, plunge duration, and ringdown damping live on this
+clock. For a \(\sim 60\,M_\odot\) remnant, \(t_{\mathrm{geo}}\) is of order
+\textbf{milliseconds}, and ringdown tones sit at \(\sim 10^2\,\mathrm{Hz}\).
+\end{definition}
+
+\begin{definition}[Clock II --- HQCC Combinatorial Depth]
+\label{def:clock-II}
+The balanced-ternary HQCC map terminates in
+\[
+\sigma \;=\; 539\pm 1
+\]
+steps (Global Lemma Core). This is a \emph{dimensionless bulk orbit length}
+(combinatorial depth on the flux lattice). It is \emph{not} a LIGO-band period
+and is not identified with \(t_{\mathrm{geo}}\).
+\end{definition}
+
+\begin{definition}[Clock III --- Global Flux Period]
+\label{def:clock-III}
+\[
+G_4 \;=\; 539.9\,\mathrm{s}
+\]
+is the immutable gravitational breathing / entanglement-flux period of the bulk.
+Sub-harmonics
+\[
+\{5,10,15,30,45\}\,\mathrm{s}
+\]
+are integer mixings of \(G_4\). Clock III governs \emph{slow} modulation and
+leakage phase, not millisecond ringdown.
+\end{definition}
+
+\begin{lemma}[Non-Identification]
+\label{lem:non-id}
+The three clocks are pairwise non-identical as physical timescales:
+\[
+t_{\mathrm{geo}}\;\not=\;\sigma,\qquad
+t_{\mathrm{geo}}\;\not=\;G_4,\qquad
+\sigma\;\not\equiv\;G_4
+\quad\text{(as measured durations)}.
+\]
+In particular,
+\[
+\tau_{\mathrm{ent}}^{\mathrm{(photoionization)}}
+\;\approx\; 18\,\mathrm{as}
+\quad\text{(Theorems 1--2)}
+\]
+is \emph{not} equal to \(G_4=539.9\,\mathrm{s}\). The symbol \(\tau_{\mathrm{ent}}\)
+must never be reassigned to \(539.9\,\mathrm{s}\).
+\end{lemma}
+
+\begin{theorem}[Three-Clock Decomposition of Black-Hole Phenomena]
+\label{thm:three-clocks}
+Within \model:
+\begin{enumerate}[label=(\roman*)]
+  \item Exterior ringdown (including GW250114) is governed by Clock I and the
+        Kerr parameters \((\Omega_H,\kappa)\).
+  \item Horizon regularity / singularity replacement is governed by Clock II
+        (finite HQCC depth \(539\pm 1\)).
+  \item Multiversal leakage phase, DE-binding modulation, and optional
+        long-baseline GW/CMB imprints are governed by Clock III (\(G_4\) and
+        sub-harmonics).
+\end{enumerate}
+No single clock may be used for all three roles.
+\end{theorem}
+
+\begin{corollary}[Sub-Harmonics Are Not Merger Phases]
+\label{cor:subharm}
+The set \(\{5,10,15,30,45\}\,\mathrm{s}\) does \emph{not} time the
+inspiral--merger--ringdown sequence (Clock I). The three-generation
+\emph{triality} may label those three phases formally; it does not place them
+on Clock III.
+\end{corollary}
+
+% ---------------------------------------------------------------------
+\section{Closed Constants from the Integer Tower}
+\label{sec:closed-constants}
+
+\begin{definition}[Integer Tower]
+\label{def:tower}
+From Axiom 0 and the Global Lemma Core:
+\[
+\bigl\{
+3,\;
+3^5=243,\;
+N_{\mathrm{flux}}=4880,\;
+\sigma=539,\;
+|P|=61,\;
+D=11,\;
+G_4=539.9\,\mathrm{s}
+\bigr\}.
+\]
+\end{definition}
+
+\begin{definition}[Closed Dark Coupling]
+\label{def:kappa}
+\[
+\kappa_{\mathrm{dark}}
+\;:=\;
+\frac{3^5}{\sigma}
+\;=\;
+\frac{243}{539}
+\;\approx\; 0.45083.
+\]
+The legacy decimal \(0.45\) is the three-digit truncation of this ratio.
+\end{definition}
+
+\begin{definition}[Closed Snap Fraction]
+\label{def:snap}
+\[
+f_{\mathrm{snap}}
+\;:=\;
+\frac{\rho_{\mathrm{snap}}}{\rho_{\mathrm{DM}}}
+\;=\;
+\frac{3^5}{N_{\mathrm{flux}}}
+\;=\;
+\frac{243}{4880}
+\;\approx\; 0.049795.
+\]
+The legacy decimal \(0.05\) is the two-digit truncation of this ratio.
+Hyperbolic measure uses
+\[
+\rho_{\mathrm{hyp}}
+= \rho_{\mathrm{DM}}\,
+\Theta_{\mathrm{hyp}}\!\bigl(\rho_{\mathrm{snap}}-\rho_{\mathrm{DM}}\bigr),
+\quad
+\rho_{\mathrm{snap}}=f_{\mathrm{snap}}\,\rho_{\mathrm{DM}}.
+\]
+\end{definition}
+
+\begin{definition}[Closed PBH Friction / Echo Weight]
+\label{def:beta}
+\[
+\beta_{\mathrm{PBH}}
+\;:=\;
+\frac{D}{|P|}
+\;=\;
+\frac{11}{61}
+\;\approx\; 0.180328.
+\]
+The legacy decimal \(0.18\) is the two-digit truncation of this ratio.
+\end{definition}
+
+\begin{lemma}[Photon-Ring Thickness Coefficient]
+\label{lem:ring}
+The model coefficient for core / photon-ring saturation is identified with the
+snap fraction,
+\begin{equation}
+\label{eq:ring}
+\frac{\Delta r_{\mathrm{ring}}}{GM/c^2}
+\;:=\;
+f_{\mathrm{snap}}
+\;=\;
+\frac{243}{4880},
+\end{equation}
+not an independent continuous modulus.
+\end{lemma}
+
+\begin{lemma}[Null-Orbit Reduction Sketch]
+\label{lem:geodesic}
+On the exterior Kerr background (Lemma~\ref{lem:kerr-limit}), unstable photon
+orbits sit at the standard photon sphere \(r_{\mathrm{ph}}=3GM/c^2\) (Schwarzschild)
+or its spin-dependent Kerr analogue. Interior to the core radius
+\[
+r_{\mathrm{core}}
+=\Bigl(\frac{3}{8\pi G\rho_{\mathrm{snap}}}\Bigr)^{1/2},
+\quad
+\rho_{\mathrm{snap}}=f_{\mathrm{snap}}\rho_{\mathrm{DM}},
+\]
+the hyperbolic measure forbids \(\rho>\rho_{\mathrm{snap}}\). The leading fractional
+broadening of the critical impact-parameter curve that sources the photon ring
+is therefore controlled by the single dimensionless density ratio
+\(f_{\mathrm{snap}}\). Matching the first-order null-orbit shift to that ratio yields
+\eqref{eq:ring}. Full spin-dependent geodesic numerics are deferred; the
+\emph{coefficient} is closed and spin enters only through the standard Kerr map
+of \(r_{\mathrm{ph}}\), not through a new continuous modulus.
+\end{lemma}
+
+\begin{theorem}[No Continuous Free Parameters in \(\{\kappa_{\mathrm{dark}},f_{\mathrm{snap}},\beta_{\mathrm{PBH}}\}\)]
+\label{thm:no-free}
+The triple
+\[
+\Bigl(
+\kappa_{\mathrm{dark}},\;
+f_{\mathrm{snap}},\;
+\beta_{\mathrm{PBH}}
+\Bigr)
+=
+\Bigl(
+\tfrac{243}{539},\;
+\tfrac{243}{4880},\;
+\tfrac{11}{61}
+\Bigr)
+\]
+is fixed by Definition~\ref{def:tower}. Decimal slogans \(0.45\), \(0.05\),
+\(0.18\) are truncations, not independent inputs.
+\end{theorem}
+
+\begin{remark}[Broken Legacy Formula]
+The identity
+\[
+\frac{61\times 243}{4880}\;\stackrel{?}{=}\;0.03037
+\]
+is \textbf{false}: the left-hand side equals \(3.0375\). It is retired.
+Portal weights that remain valid are the dimensionless ratios
+\[
+\frac{61}{243},\qquad
+\frac{61}{4880},\qquad
+\frac{243}{4880},\qquad
+\frac{11}{61}.
+\]
+\end{remark}
+
+\begin{center}
+\begin{tabular}{@{}llll@{}}
+\toprule
+Quantity & Exact & Decimal & Legacy slogan \\
+\midrule
+\(\kappa_{\mathrm{dark}}\) & \(243/539\) & \(0.45083\ldots\) & \(0.45\) \\
+\(f_{\mathrm{snap}}\) & \(243/4880\) & \(0.049795\ldots\) & \(0.05\) \\
+\(\beta_{\mathrm{PBH}}\) & \(11/61\) & \(0.180328\ldots\) & \(0.18\) \\
+\(\Delta r_{\mathrm{ring}}/(GM/c^2)\) & \(243/4880\) & \(0.049795\ldots\) & \(0.05\) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+% ---------------------------------------------------------------------
+\section{Horizon Definition (Resolved)}
+\label{sec:horizon}
+
+\begin{definition}[Black Hole as Leakage Portal]
+\label{def:bh}
+In \model, a black hole is a flux-coherent leakage portal of the 11D brane
+structure: a dynamical \(-U/+U\) D2-brane channel. For distant observers the
+event horizon remains an effective one-way causal surface.
+\end{definition}
+
+\begin{definition}[Horizon Regularity via Clock II]
+\label{def:horizon-reg}
+The classical \(r=0\) singularity is replaced by a finite HQCC orbit of depth
+\(\sigma=539\pm 1\) (Clock II), with optional hyperbolic snap
+(Definition~\ref{def:snap}) producing a regular core. Information is not
+destroyed; it is redistributed through the leakage channel so that exterior
+unitarity is preserved.
+\end{definition}
+
+\begin{lemma}[Exterior Kerr Limit]
+\label{lem:kerr-limit}
+On stellar-mass scales, de Sitter / bulk corrections to the exterior are
+negligible. The exterior geometry reduces to Kerr (\(\Lambda=0\)) with
+intrinsic parameters \((\Omega_H,\kappa)\) fixed by remnant mass and spin:
+\begin{itemize}
+  \item \(\Omega_H\) --- horizon angular velocity (frame-dragging);
+  \item \(\kappa\) --- surface gravity (exponential redshift / QNM damping scale).
+\end{itemize}
+Schwarzschild is the special case \(\Omega_H=0\).
+\end{lemma}
+
+\begin{theorem}[Claim Ladder for Horizons]
+\label{thm:claim-ladder}
+\begin{enumerate}[label=(\roman*)]
+  \item \textbf{Definition (model).} Definition~\ref{def:bh}--\ref{def:horizon-reg}.
+  \item \textbf{Consistency (data).} Exterior linear response is Kerr QNMs on
+        Clock I (Lemma~\ref{lem:kerr-limit}).
+  \item \textbf{Prediction (not yet measured in GW250114).} Subdominant
+        Clock-III modulation at \(G_4=539.9\,\mathrm{s}\) with weight
+        \(\beta_{\mathrm{PBH}}=11/61\), to be sought in long-baseline / stacked
+        analyses (O5+), not as a re-fit of millisecond ringdown.
+\end{enumerate}
+\end{theorem}
+
+% ---------------------------------------------------------------------
+\section{GW250114 (Resolved Status)}
+\label{sec:gw250114}
+
+\begin{theorem}[What GW250114 Confirms]
+\label{thm:gw-confirms}
+GW250114 confirms that the remnant’s exterior ringdown is consistent with Kerr
+quasinormal modes: oscillatory content near \(2\Omega_H\) and damping set by
+surface gravity \(\kappa\), on Clock I. Within \model this is confirmation of
+the \textbf{exterior Kerr limit} (Lemma~\ref{lem:kerr-limit}), not of bulk step
+count, \(G_4\), or negPBH phase shift.
+\end{theorem}
+
+\begin{theorem}[What GW250114 Does Not Confirm]
+\label{thm:gw-not}
+GW250114 does \emph{not}, by itself:
+\begin{enumerate}[label=(\roman*)]
+  \item measure \(G_4=539.9\,\mathrm{s}\) as the ringdown carrier;
+  \item establish the horizon as a ``\(539\)-second termination surface'' in
+        detector time;
+  \item require an interior leakage path to fit the published waveform;
+  \item detect negPBH phase-shift dynamics.
+\end{enumerate}
+Exterior GR alone accounts for the published direct-wave analysis.
+\end{theorem}
+
+\begin{corollary}[Corrected Slogan]
+\label{cor:slogan}
+Replace
+\begin{quote}
+``GW250114 is the first direct observational confirmation of the 11D leakage
+definition''
+\end{quote}
+by
+\begin{quote}
+``GW250114 is consistent with the model’s exterior Kerr reduction; it is the
+strongest available test that stellar-mass leakage surfaces behave as Kerr
+horizons on Clock I.''
+\end{quote}
+\end{corollary}
+
+\begin{lemma}[Spinning vs Non-Rotating Remnants]
+\label{lem:schwarzschild}
+A non-rotating (Schwarzschild) remnant has \(\Omega_H=0\) and therefore lacks
+the same \(2\Omega_H\)-driven oscillatory ringdown structure of a spinning Kerr
+remnant. GW250114’s remnant spin \(\chi_f\approx 0.68\) places it firmly in the
+Kerr class. This is a remnant-spin statement, not a claim that Schwarzschild
+geometries are absent from the model.
+\end{lemma}
+
+% ---------------------------------------------------------------------
+\section{negPBH (Resolved Status)}
+\label{sec:negpbh}
+
+\begin{definition}[negPBH]
+\label{def:negpbh}
+A \emph{negative primordial black hole} is the phase-shifted late branch of the
+PBH lifecycle: after a critical bulk phase shift, the effective mass-sign in
+the higher-dimensional sector flips. The object ceases ordinary Hawking
+runaway evaporation and acts as a stable DE-binding / leakage center, with
+exterior one-way causal appearance retained for distant observers.
+\end{definition}
+
+\begin{theorem}[negPBH Relative to GW250114]
+\label{thm:neg-gw}
+The GW250114 remnant (\(\chi_f\approx 0.68\)) is consistent with the
+\textbf{positive} Kerr branch (pre--full phase shift). negPBH physics is
+\emph{not} required to fit the published QNMs. The model predicts that any
+negPBH-influenced correction appears as a \textbf{subdominant Clock-III}
+modulation with weight \(\beta_{\mathrm{PBH}}=11/61\), testable in O5+ /
+stacked searches---not as a reinterpretation of millisecond residuals already
+accounted for by Kerr fits.
+\end{theorem}
+
+\begin{lemma}[Roles Retained]
+\label{lem:neg-roles}
+Within the model, negPBH continue to:
+\begin{enumerate}[label=(\roman*)]
+  \item cap interior divergence (with \(f_{\mathrm{snap}}=243/4880\));
+  \item stabilize post-phase-shift flux coherence (Clock II depth finite;
+        Clock III phase locked);
+  \item contribute to large-scale DE binding without spoiling stellar-mass Kerr
+        exteriors (Lemma~\ref{lem:kerr-limit}).
+\end{enumerate}
+\end{lemma}
+
+% ---------------------------------------------------------------------
+\section{Corrected Authoritative Statement}
+\label{sec:statement}
+
+\noindent\textbf{Resolved statement (Arvin Hampton / \model).}
+
+\medskip
+\noindent
+In the \model\ unification framework, a black hole is defined as a dynamical
+leakage portal: spacetime flux from the 11-dimensional brane structure
+collapses into a coherent \(-U/+U\) D2-brane channel. For distant observers the
+event horizon remains an effective one-way causal surface. Classically singular
+loci are replaced by a finite HQCC orbit of combinatorial depth
+\(539\pm 1\) (Clock II), with hyperbolic density snap at
+\[
+f_{\mathrm{snap}}=\frac{243}{4880}\approx 0.0498
+\]
+and dark coupling
+\[
+\kappa_{\mathrm{dark}}=\frac{243}{539}\approx 0.4508,
+\]
+both fixed by the integer tower of Axiom 0. Information is not destroyed; it is
+redistributed through higher-dimensional leakage so that exterior unitarity is
+preserved.
+
+On stellar-mass scales the exterior reduces to Kerr (\(\Lambda=0\)). The
+remnant is characterized by horizon angular velocity \(\Omega_H\) and surface
+gravity \(\kappa\) on local geometric time \(t_{\mathrm{geo}}\sim GM/c^3\)
+(Clock I). Schwarzschild is the special case \(\Omega_H=0\).
+
+The direct waves of GW250114 are the exterior ringdown of a Kerr remnant:
+oscillations near \(2\Omega_H\) and damping set by \(\kappa\), on Clock I. Within
+the model this confirms the exterior Kerr limit of the leakage surface. It does
+not measure the global flux period
+\[
+G_4=539.9\,\mathrm{s}
+\]
+(Clock III) and does not require an interior path to fit the published
+waveform. Inspiral, merger, and ringdown are three dynamical phases on Clock I;
+the sub-harmonic set \(\{5,10,15,30,45\}\,\mathrm{s}\) belongs to Clock III and
+must not be used as their durations. Three-generation triality may label the
+three phases formally only.
+
+Negative primordial black holes are the phase-shifted late branch of the PBH
+lifecycle: after a critical bulk phase shift they act as stable DE-binding
+leakage centers. The GW250114 remnant (\(\chi_f\approx 0.68\)) is consistent
+with the positive Kerr branch. Any negPBH correction is predicted as a
+subdominant Clock-III modulation with weight
+\[
+\beta_{\mathrm{PBH}}=\frac{11}{61}\approx 0.1803,
+\]
+to be sought in long-baseline observations (LIGO O5 and beyond), not as a
+re-fit of millisecond QNMs. Photon-ring saturation uses the same closed
+coefficient \(f_{\mathrm{snap}}=243/4880\), testable by ngEHT.
+
+Thus: GW250114 is consistent with the model’s Kerr exterior reduction; HQCC
+depth, \(G_4\), and negPBH are not established by that event; the constants
+\(\kappa_{\mathrm{dark}}\), \(f_{\mathrm{snap}}\), and \(\beta_{\mathrm{PBH}}\) are
+closed ratios of the integer tower, not free continuous parameters.
+
+% ---------------------------------------------------------------------
+\section{Update Rules for Prior Documents}
+\label{sec:updates}
+
+\begin{enumerate}[label=(\arabic*)]
+  \item Replace every free \(\kappa_{\mathrm{dark}} = 243/539\) by \(243/539\).
+  \item Replace every free \(0.05\,\rho_{\mathrm{DM}}\) / \(0.05\,GM/c^2\) by
+        \(243/4880\).
+  \item Replace every free \(\beta_{\mathrm{PBH}} = 11/61\) by \(11/61\).
+  \item Delete or correct \(61\times 243/4880\approx 0.0304\).
+  \item Never set \(\tau_{\mathrm{ent}}:=539.9\,\mathrm{s}\).
+  \item Never claim GW250114 confirms 11D leakage or \(G_4\) as the ringdown
+        carrier; claim exterior Kerr consistency only.
+  \item Restrict sub-harmonics \(\{5,\ldots,45\}\,\mathrm{s}\) to Clock III.
+  \item HMT definition in the Axiomatic Book: set
+        \(\rho_{\mathrm{snap}}=(243/4880)\,\rho_{\mathrm{DM}}\).
+\end{enumerate}
+
+% ---------------------------------------------------------------------
+\section{Summary Checklist}
+\label{sec:checklist}
+
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+\toprule
+Issue & Resolution \\
+\midrule
+Timescale conflation & Three clocks (Thm.~\ref{thm:three-clocks}) \\
+\(\tau_{\mathrm{ent}}=539.9\,\mathrm{s}\) & Forbidden (Lem.~\ref{lem:non-id}) \\
+GW250114 ``confirms 11D'' & Downgraded to Kerr exterior consistency \\
+\(\kappa_{\mathrm{dark}}\), snap, \(\beta\) free & Closed: \(243/539\), \(243/4880\), \(11/61\) \\
+Broken raw-\(\beta\) formula & Retired \\
+Sub-harmonics as IMR phases & Forbidden (Cor.~\ref{cor:subharm}) \\
+negPBH in GW250114 & Positive branch; Clock-III prediction only \\
+``Zero free parameters'' for these three & True after Thm.~\ref{thm:no-free} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+% end resolution chapter

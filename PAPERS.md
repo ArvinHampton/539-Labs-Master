@@ -20,6 +20,20 @@ See also docs/papers/INDEX.md for the folder-organized view.
 - Analysis of T3 versus T4121 variants (hardness evaluation that led to retention of Canonical T3)
 - Formal Specification of the T4121 Variant (historical)
 
+## Axiomatic book (in-repo living draft)
+
+Path: `docs/S2-11DM2ET-X-Axiomatic-Book/`
+
+- Structural derivation of residual body length \(L_{\mathrm{body}}=N_{\mathrm{flux}}//9-f_{\max}\) under principle (S) (`L_body_Structural_Derivation.md`)
+- Non-circular length packaging \(18+521=539\) (`NonCircular_18_plus_521.md`)
+- Closed constants, provenance table, depth macros (`CLOSED_CONSTANTS.md`, `PROVENANCE_TABLE.md`)
+- ACE resolution / No-Go theorem canonical statements
+- Phase-0 seed-orbit probes, holographic window, empirical phase-lock protocols
+- Photon-ring critical-curve derivation; Wilson-loop surrogate status
+- Verification: `scripts/verify_L_body_structural.py`
+
+Bulk RFFT observatory datasets are **not** versioned here (see `data/README.md`).
+
 The local dynamical rule (Canonical T3) is the integer map:
 
 if n ≡ 0 (mod 3) → n // 3

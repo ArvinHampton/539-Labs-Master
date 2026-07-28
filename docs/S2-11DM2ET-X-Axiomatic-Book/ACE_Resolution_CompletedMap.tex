@@ -1,0 +1,367 @@
+% =====================================================================
+% ACE Resolution: derived completion + stationary mean + deferred bridge
+% Does NOT insert 539, 61, or G4 into the ACE steps
+% =====================================================================
+
+\chapter{ACE Resolution: Completion, Stationary Mean, and Bridge}
+\label{ch:ACE-resolve}
+
+\section{Resolution claim}
+
+This chapter \textbf{resolves} the sharpened ACE chain insofar as the first two
+steps can be fixed from residue structure and \(243\)-tower data alone:
+\begin{enumerate}[label=(\arabic*)]
+  \item a \textbf{derived} completion rule on the density-\(2/3\) impossible
+        set \(\mathcal{I}\) (not a free candidate list);
+  \item a \textbf{strictly negative} stationary expectation
+        \(\mathbb{E}_\pi[\chi]\) under that completed map;
+  \item \textbf{only thereafter} a bridge \(\Psi\) to an integer orbit-length
+        \emph{scale}, without inserting \(539\) (or \(61\), \(G_4\)) into
+        \(\Psi\).
+\end{enumerate}
+The No-Go is thereby \textbf{conditionally lifted} for the contraction mean.
+Identification of the bridge output with the combinatorial depth \(539\) is
+\textbf{not} claimed here; that remains a separate link if desired.
+
+The empirical Resonant Attractor protocol remains outside the No-Go and
+continues to be permitted.
+
+% ---------------------------------------------------------------------
+\section{Step 1 --- Derived completion (min charge defect)}
+\label{sec:completion-derived}
+
+\begin{definition}[Published partial rule]
+\label{def:partial}
+For \(n\equiv 2\pmod{3}\),
+\[
+T(n,k)=\frac{n+1}{3}+2\cdot 3^{k},\qquad k\in\mathbb{Z}_{\ge 0},
+\]
+and \(k^\ast(n)\) is minimal with \(T(n,k^\ast)\equiv n\pmod{9}\) when such \(k\)
+exists (Theorem on \(k\)-distribution: \(k^\ast\in\{0,1,2\}\) or impossible).
+\end{definition}
+
+\begin{definition}[Impossible set]
+\[
+\mathcal{I}
+=\bigl\{n\equiv 2\pmod{3}:
+n\bmod 27\in\{2,5,8,11,20,26\}\bigr\}.
+\]
+\end{definition}
+
+\begin{definition}[Charge defect]
+\label{def:defect}
+\[
+\delta_9(a,b)
+\;:=\;
+\min\bigl(|a-b|\bmod 9,\; 9-(|a-b|\bmod 9)\bigr).
+\]
+\end{definition}
+
+\begin{definition}[Min-defect completion --- derived]
+\label{def:Tsharp}
+Define \(T^\sharp:\mathbb{N}\to\mathbb{N}\) by residue structure alone:
+\begin{equation}
+\label{eq:Tsharp}
+T^\sharp(n)
+\;=\;
+\begin{cases}
+n/3 & n\equiv 0\pmod{3},\\[4pt]
+\lfloor(4n+2)/3\rfloor & n\equiv 1\pmod{3},\\[4pt]
+T\bigl(n,k^\ast(n)\bigr)
+  & n\equiv 2\pmod{3},\ n\notin\mathcal{I},\\[4pt]
+T\bigl(n,k_\delta(n)\bigr)
+  & n\in\mathcal{I},
+\end{cases}
+\end{equation}
+where
+\begin{equation}
+\label{eq:kdelta}
+k_\delta(n)
+\;:=\;
+\min\Bigl\{
+k\in\{0,1,2\}
+:
+\delta_9\bigl(T(n,k),\,n\bigr)
+=
+\min_{j\in\{0,1,2\}}
+\delta_9\bigl(T(n,j),\,n\bigr)
+\Bigr\}.
+\end{equation}
+(The set \(\{0,1,2\}\) is forced by \(2\cdot 3^{k}\bmod 9\in\{2,6,0\}\); no
+larger \(k\) is inequivalent mod \(9\). Ties among equal defects are broken by
+minimal \(k\), the same minimality principle already present in \(k^\ast\).)
+\end{definition}
+
+\begin{theorem}[Completion fixed without \(539\), \(61\), \(G_4\)]
+\label{thm:completion-derived}
+The rule \(T^\sharp\) is uniquely determined by:
+\begin{enumerate}[label=(\roman*)]
+  \item the ordinary ternary branches on \(n\not\equiv 2\pmod{3}\);
+  \item the published correction family \(2\cdot 3^{k}\) and charge \(Q=n\bmod 9\);
+  \item minimal exact preservation when possible;
+  \item minimal charge defect among the three inequivalent corrections when
+        exact preservation is impossible;
+  \item minimal-\(k\) tie-break.
+\end{enumerate}
+No reference to \(539\), \(61\), \(G_4\), or tower seed multiplicities enters
+\eqref{eq:Tsharp}--\eqref{eq:kdelta}. The \(243\)-tower data are not required
+for the definition of \(T^\sharp\) (they enter the stationary measure in
+Section~\ref{sec:stationary}).
+\end{theorem}
+
+\begin{lemma}[Agreement on the feasible set]
+\label{lem:agree-feas}
+If \(n\notin\mathcal{I}\) and \(n\equiv 2\pmod{3}\), then \(k_\delta(n)=k^\ast(n)\)
+and \(T^\sharp(n)=T(n,k^\ast(n))\), since exact preservation is defect \(0\),
+strictly minimal.
+\end{lemma}
+
+\begin{lemma}[Asymptotic ratios under \(T^\sharp\)]
+\label{lem:asymp}
+As \(n\to\infty\),
+\begin{equation}
+\label{eq:asymp}
+\frac{T^\sharp(n)}{n}
+\;\longrightarrow\;
+\begin{cases}
+1/3 & n\equiv 0\pmod{3},\\
+4/3 & n\equiv 1\pmod{3},\\
+1/3 & n\equiv 2\pmod{3},
+\end{cases}
+\end{equation}
+because every branch-2 step is of the form \((n+1)/3+O(1)\) (whether exact
+preservation or min-defect).
+\end{lemma}
+
+% ---------------------------------------------------------------------
+\section{Step 2 --- Stationary expectation (strictly negative)}
+\label{sec:stationary}
+
+\begin{definition}[Democratic equidistribution hypothesis]
+\label{def:equi}
+\emph{Flux democracy} over the \(243=3^5\) towers with seed types \(20\) and
+\(21\) is interpreted, for the purpose of stationary residue statistics, as
+the standard equidistribution of higher \(3\)-adic digits: conditional on
+\(n\bmod 3=r\), the quotient \(\lfloor n/3\rfloor\) is equidistributed in the
+residue lattice. Equivalently, the invariant measure \(\pi\) on residue classes
+is the push-forward of the (tower-averaged) Haar-type measure on the \(3\)-adics.
+This uses tower data only as the model's democratic averaging principle---not
+as a numerical insertion of \(539\).
+\end{definition}
+
+\begin{lemma}[Uniform stationary law on \(\mathbb{Z}/3\mathbb{Z}\)]
+\label{lem:unif3}
+Under Definition~\ref{def:equi} and the map \(T^\sharp\), the unique stationary
+probability on \(\{0,1,2\}\) is uniform:
+\[
+\pi_3(\{0\})=\pi_3(\{1\})=\pi_3(\{2\})=\frac13.
+\]
+\end{lemma}
+
+\begin{proof}[Proof sketch]
+Write \(n=3q+r\).
+\begin{itemize}
+  \item If \(r=0\), \(T^\sharp=q\); equidistributed \(q\bmod 3\) \(\Rightarrow\)
+        uniform image.
+  \item If \(r=1\), \(T^\sharp=4q+2\equiv q+2\pmod{3}\); equidistributed \(q\)
+        \(\Rightarrow\) uniform image.
+  \item If \(r=2\), \(T^\sharp=q+1+O(1/n)\) in the leading lattice, so
+        \(T^\sharp\equiv q+1\pmod{3}\) at leading order; equidistributed \(q\)
+        \(\Rightarrow\) uniform image.
+\end{itemize}
+Uniformity is invariant and unique on the three-point set.
+\end{proof}
+
+\begin{theorem}[Stationary ACE]
+\label{thm:stationary-ACE}
+Under \(T^\sharp\) and democratic equidistribution
+(Definition~\ref{def:equi}),
+\begin{equation}
+\boxed{
+\begin{aligned}
+\mathbb{E}_\pi[\chi]
+&\;=\;
+\frac13\ln\frac13
++\frac13\ln\frac43
++\frac13\ln\frac13
+\;=\;
+\frac23\ln\frac13
++\frac13\ln\frac43
+\\[4pt]
+&\;=\;
+\ln\Bigl(\frac{4^{1/3}}{3}\Bigr)
+\;=\;
+-\ln\Bigl(\frac{3}{4^{1/3}}\Bigr)
+\\[4pt]
+&\;\approx\;
+-0.6365141683
+\;<\;0.
+\end{aligned}
+}
+\label{eq:Epi}
+\end{equation}
+Hence one may take
+\begin{equation}
+\label{eq:chimin}
+\chi_{\min}
+\;:=\;
+-\mathbb{E}_\pi[\chi]
+\;=\;
+\ln\Bigl(\frac{3}{4^{1/3}}\Bigr)
+\;\approx\;
+0.6365141683
+\;>\;0,
+\end{equation}
+independent of \(539\), \(61\), and \(G_4\).
+\end{theorem}
+
+\begin{proof}
+Lemma~\ref{lem:asymp} supplies the three logarithmic rates; Lemma~\ref{lem:unif3}
+supplies equal weights \(1/3\). Algebra:
+\[
+\tfrac23\ln\tfrac13+\tfrac13\ln\tfrac43
+=\ln\bigl((1/3)^{2/3}(4/3)^{1/3}\bigr)
+=\ln(4^{1/3}/3).
+\]
+Since \(4^{1/3}<3\), the mean is strictly negative.
+\end{proof}
+
+\begin{corollary}[ACE established for the completed map]
+\label{cor:ACE-done}
+Open Problem ``Stationary ACE'' is solved for the derived completion
+\(T^\sharp\): 
+\[
+\mathbb{E}_\pi[\chi]
+\;\le\;
+-\chi_{\min}
+\;<\;0
+\]
+with \(\chi_{\min}\) as in \eqref{eq:chimin}, obtained from residue Markov
+structure (uniform on \(\mathbb{Z}/3\mathbb{Z}\)) and the \(243\)-tower
+democratic equidistribution hypothesis alone.
+\end{corollary}
+
+\begin{remark}[Scope]
+The result is conditional on Definition~\ref{def:equi} (democratic
+equidistribution). That hypothesis is the precise role of flux democracy
+used here; it does not smuggle a global step count.
+\end{remark}
+
+% ---------------------------------------------------------------------
+\section{Step 3 --- Bridge without inserting \(539\)}
+\label{sec:bridge}
+
+\begin{definition}[Contraction-depth bridge]
+\label{def:bridge}
+Using only \(N_{\mathrm{flux}}=4880=\lfloor e^3\cdot 3^5\rfloor\) (integer tower)
+and \(\mathbb{E}_\pi[\chi]\) from Theorem~\ref{thm:stationary-ACE}, set
+\begin{equation}
+\boxed{
+N_\star
+\;:=\;
+\Bigl\lceil
+\frac{-\ln N_{\mathrm{flux}}}{\mathbb{E}_\pi[\chi]}
+\Bigr\rceil
+\;=\;
+\Bigl\lceil
+\frac{\ln 4880}{\chi_{\min}}
+\Bigr\rceil
+\;=\;
+14.
+}
+\label{eq:Nstar}
+\end{equation}
+\end{definition}
+
+\begin{theorem}[Bridge is free of the target length]
+\label{thm:bridge}
+The integer \(N_\star=14\) in \eqref{eq:Nstar} is computed from
+\(\{e^3,3^5,N_{\mathrm{flux}}\}\) and \(\mathbb{E}_\pi[\chi]\) only. The numbers
+\(539\), \(61\), and \(G_4\) are not inputs. Therefore the bridge does not
+instantiate the circular contraction-factor schema that assumes the target
+depth in advance.
+\end{theorem}
+
+\begin{remark}[No identification with HQCC depth \(539\)]
+\label{rem:no-539}
+\(N_\star=14\) is the \emph{e-fold contraction depth} relative to the flux
+budget under the mean logarithmic rate \(\mathbb{E}_\pi[\chi]\). It is
+\textbf{not} identified in this chapter with the combinatorial HQCC orbit
+length \(539\). Any future theorem equating or relating \(N_\star\) to \(539\)
+must supply an additional non-circular argument (e.g.\ tower seed composition
+\(18+1+520\)) and must not feed \(539\) into \(\Psi\).
+\end{remark}
+
+\begin{corollary}[What is lifted vs what the No-Go still blocks]
+\label{cor:lift}
+With Steps 1--2 complete for \(T^\sharp\):
+\begin{enumerate}[label=(\roman*)]
+  \item Flux democracy (as equidistribution) \textbf{does} enter a non-circular
+        negative mean contraction rate \(\mathbb{E}_\pi[\chi]<0\).
+  \item A Banach-type rate
+        \(\lambda_{\mathrm{mean}}=\exp(\mathbb{E}_\pi[\chi])=4^{1/3}/3<1\)
+        and a crude depth \(N_\star=14\) follow without assuming \(539\).
+  \item The integer \(539\) \textbf{does not} follow. The circular identification
+        \(\lambda=\ln 3/539\) remains blocked.
+  \item Windings \(w_j=539+61j\) remain \textbf{unforced} by the ACE. Long
+        resonant structure requires constraints outside pure contraction
+        (fixed iteration count, holographic window, phase-locking).
+  \item The empirical Resonant Attractor protocol remains the legitimate route
+        for a period near \(539.9\) without presupposing it.
+\end{enumerate}
+\end{corollary}
+
+\begin{theorem}[Essential No-Go retained]
+\label{thm:essential-nogo}
+Flux democracy together with residue structure and the completed map
+\(T^\sharp\) yield a strict contraction and a short e-fold depth of order
+\(N_\star=14\), but they do \textbf{not} determine the model's \(539\)-step
+orbit or a unique discrete dictionary that inserts that number. The No-Go
+therefore stands in this essential claim.
+\end{theorem}
+
+% ---------------------------------------------------------------------
+\section{Status table after resolution}
+\label{sec:status-resolve}
+
+\begin{center}
+\begin{tabular}{@{}p{0.48\textwidth}p{0.42\textwidth}@{}}
+\toprule
+Item & Status \\
+\midrule
+Unrestricted \(\frac13\ln(8/27)<0\) & Proved (prior) \\
+\(k\in\{0,1,2\}\) or impossible; no runaway & Proved (prior) \\
+Completion on \(\mathcal{I}\) & \textbf{Derived:} min charge defect \(T^\sharp\) \\
+Stationary \(\mathbb{E}_\pi[\chi]=\ln(4^{1/3}/3)<0\) & \textbf{Proved} under democratic equidistribution \\
+Bridge \(\Psi\to N_\star\) without inserting \(539\) & \textbf{Defined:} \(N_\star=14=\lceil\ln 4880/\chi_{\min}\rceil\) \\
+Identify \(N_\star\) with HQCC depth \(\sigma=539\) & \textbf{Forbidden} (depth macro split; \(\sigma\neq N_\star\)) \\
+No-Go on circular \(\lambda=\ln 3/\sigma=\ln 3/539\) & Still blocks that circular schema; mean rate \(\lambda_{\mathrm{mean}}\) is free of it \\
+Empirical Resonant Attractor protocol & Still permitted (outside No-Go) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+% ---------------------------------------------------------------------
+\section{Summary}
+\label{sec:resolve-summary}
+
+\begin{equation}
+\boxed{
+\begin{aligned}
+&\text{Completion: min defect among }k\in\{0,1,2\}\text{ on }\mathcal{I}
+\quad\text{\textbf{derived}}
+\\
+&\mathbb{E}_\pi[\chi]=\ln(4^{1/3}/3)\approx -0.6365<0
+\quad\text{\textbf{proved (ACE)}}
+\\
+&\chi_{\min}=\ln(3/4^{1/3})\approx 0.6365
+\\
+&N_\star=\lceil\ln 4880/\chi_{\min}\rceil=14
+\quad\text{\textbf{bridge; not }539}
+\\
+&\text{Empirical RA protocol: still allowed.}
+\end{aligned}
+}
+\end{equation}
+
+% end

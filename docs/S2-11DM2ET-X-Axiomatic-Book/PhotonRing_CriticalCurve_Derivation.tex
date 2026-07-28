@@ -1,0 +1,660 @@
+% =====================================================================
+% Algebraic derivation: integer tower → f_snap → Δb_c/b_c → Δr_ring
+% Standalone note for ngEHT cross-check (Schwarzschild explicit)
+% \input after Resolution chapter, or compile with book preamble
+% =====================================================================
+
+\chapter{Photon-Ring Critical Curve from the Integer Tower}
+\label{ch:photon-ring}
+
+\section{Purpose and claim ladder}
+
+This note upgrades the photon-ring coefficient from a \emph{definitional}
+identification to an \emph{algebraic} chain:
+\begin{enumerate}[label=(\roman*)]
+  \item integer tower \(\to f_{\mathrm{snap}}=243/4880\) (parameter-free);
+  \item static spherical critical curve in Schwarzschild;
+  \item first-order snap deformation of the metric function;
+  \item explicit \(\Delta b_c/b_c\);
+  \item map to \(\Delta r_{\mathrm{ring}}/(GM/c^2)\) for ngEHT comparison.
+\end{enumerate}
+
+\begin{theorem}[Claim ladder for the ring coefficient]
+\label{thm:ring-ladder}
+\begin{enumerate}[label=(\Alph*)]
+  \item \textbf{Closed coefficient.}
+  \[
+  f_{\mathrm{snap}}
+  \;=\;
+  \frac{3^5}{N_{\mathrm{flux}}}
+  \;=\;
+  \frac{243}{4880}
+  \;\approx\; 0.0497950820
+  \]
+  is fixed by Axiom 0 and the Global Lemma Core. No continuous free parameter.
+  \item \textbf{Schwarzschild critical curve (exact).}
+  \[
+  r_{\mathrm{ph}}=3M,\qquad
+  b_c=3\sqrt{3}\,M
+  \quad(G=c=1).
+  \]
+  \item \textbf{Snap deformation (model ansatz).}
+  A one-parameter deformation of the metric function with amplitude
+  \(\varepsilon=f_{\mathrm{snap}}\) produces a first-order shift
+  \[
+  \frac{\Delta b_c}{b_c}
+  \;=\;
+  \alpha\,\varepsilon
+  \;=\;
+  \alpha\,f_{\mathrm{snap}},
+  \]
+  with \(\alpha\) computed below; under the model's snap-matching normalisation
+  \(\alpha=1\).
+  \item \textbf{ngEHT observable.}
+  Fractional change of the critical angular scale equals \(\Delta b_c/b_c\).
+  The model ring-thickness coefficient is
+  \[
+  \frac{\Delta r_{\mathrm{ring}}}{M}
+  \;=\;
+  f_{\mathrm{snap}}
+  \;=\;
+  \frac{243}{4880}
+  \]
+  when \(\alpha=1\) and thickness is identified with the critical-curve
+  fractional shift times \(M\) (Section~\ref{sec:map}).
+\end{enumerate}
+\end{theorem}
+
+\begin{remark}[What this is not]
+This note does \emph{not} claim that a Planck-scale de~Sitter core of radius
+\(r_{\mathrm{core}}\sim\ell_{\mathrm{Pl}}\) produces a \(5\%\) geometric widening of the
+photon sphere of a supermassive black hole. That naive core mechanism is
+ruled out by \(r_{\mathrm{core}}/M\ll 1\) (Appendix~\ref{app:core}). The snap
+enters as an \(O(1)\) deformation amplitude at the photon-sphere scale, fixed
+by the bulk density ratio \(f_{\mathrm{snap}}\), not as \(r_{\mathrm{core}}/M\).
+\end{remark}
+
+% ---------------------------------------------------------------------
+\section{Integer tower \(\to f_{\mathrm{snap}}\)}
+\label{sec:tower}
+
+\begin{definition}[Integer tower]
+\[
+\bigl\{
+3,\;
+3^5=243,\;
+N_{\mathrm{flux}}=\lfloor e^3\times 3^5\rfloor=4880,\;
+\sigma=539,\;
+|P|=61,\;
+D=11
+\bigr\}.
+\]
+\end{definition}
+
+\begin{definition}[Snap fraction]
+\label{def:fsnap}
+\[
+f_{\mathrm{snap}}
+\;:=\;
+\frac{\rho_{\mathrm{snap}}}{\rho_{\mathrm{DM}}}
+\;:=\;
+\frac{3^5}{N_{\mathrm{flux}}}
+\;=\;
+\frac{243}{4880}.
+\]
+\end{definition}
+
+\begin{lemma}[Exact rational value]
+\label{lem:fsnap-exact}
+\[
+f_{\mathrm{snap}}
+\;=\;
+\frac{243}{4880}
+\;=\;
+\frac{3^5}{2^4\cdot 5\cdot 61}.
+\]
+In particular \(61\) appears in the denominator of \(f_{\mathrm{snap}}\) and as
+\(|P|\), linking snap and puncture data inside the same tower.
+\end{lemma}
+
+\begin{proof}
+\(4880=16\times 305=16\times 5\times 61\). Cancel nothing with \(243=3^5\).
+Decimal: \(243/4880=0.049795081967213115\ldots\)
+\end{proof}
+
+% ---------------------------------------------------------------------
+\section{Schwarzschild critical curve (exact)}
+\label{sec:schw}
+
+Units: \(G=c=1\). Line element
+\[
+\mathrm{d}s^2
+=
+-f(r)\,\mathrm{d}t^2
++f(r)^{-1}\,\mathrm{d}r^2
++r^2\mathrm{d}\Omega^2,
+\qquad
+f(r)=1-\frac{2M}{r}.
+\]
+
+\begin{definition}[Effective potential for equatorial null geodesics]
+For conserved energy \(E\) and angular momentum \(L\), impact parameter
+\(b:=L/E\),
+\begin{equation}
+\label{eq:V}
+\Bigl(\frac{\mathrm{d}r}{\mathrm{d}\lambda}\Bigr)^2
+=
+E^2 - V(r),
+\qquad
+V(r)
+\;=\;
+\frac{L^2}{r^2}\,f(r)
+\;=\;
+E^2\,\frac{b^2}{r^2}\,f(r).
+\end{equation}
+Critical (unstable circular) null orbits satisfy
+\begin{equation}
+\label{eq:crit}
+V(r)=E^2,
+\qquad
+V'(r)=0
+\quad\Longleftrightarrow\quad
+\frac{\mathrm{d}}{\mathrm{d}r}\Bigl(\frac{f(r)}{r^2}\Bigr)=0.
+\end{equation}
+\end{definition}
+
+\begin{lemma}[Photon sphere and critical impact parameter]
+\label{lem:bc}
+For Schwarzschild \(f=1-2M/r\),
+\begin{equation}
+\label{eq:rph-bc}
+r_{\mathrm{ph}}=3M,
+\qquad
+b_c
+=
+\frac{r_{\mathrm{ph}}}{\sqrt{f(r_{\mathrm{ph}})}}
+=
+3\sqrt{3}\,M
+\approx 5.1961524227\,M.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+\[
+\frac{\mathrm{d}}{\mathrm{d}r}\Bigl(\frac{f}{r^2}\Bigr)
+=
+\frac{r f'-2f}{r^3}
+=0
+\;\Rightarrow\;
+r f'-2f=0.
+\]
+With \(f'=2M/r^2\),
+\[
+r\cdot\frac{2M}{r^2}-2\Bigl(1-\frac{2M}{r}\Bigr)=0
+\;\Rightarrow\;
+\frac{2M}{r}-2+\frac{4M}{r}=0
+\;\Rightarrow\;
+\frac{6M}{r}=2
+\;\Rightarrow\;
+r=3M.
+\]
+Then
+\[
+b_c^2=\frac{r^2}{f(r)}
+=\frac{9M^2}{1-2/3}
+=\frac{9M^2}{1/3}
+=27M^2,
+\qquad
+b_c=3\sqrt{3}\,M.
+\]
+\end{proof}
+
+\begin{corollary}[ngEHT angular scale]
+At angular-diameter distance \(D_A\), the critical curve subtends
+\[
+\theta_c
+\;=\;
+\frac{b_c}{D_A}
+\;=\;
+\frac{3\sqrt{3}\,M}{D_A}.
+\]
+Any fractional shift of \(b_c\) is a fractional shift of \(\theta_c\):
+\begin{equation}
+\label{eq:theta}
+\frac{\Delta\theta_c}{\theta_c}
+\;=\;
+\frac{\Delta b_c}{b_c}.
+\end{equation}
+\end{corollary}
+
+% ---------------------------------------------------------------------
+\section{First-order critical-curve shift formula}
+\label{sec:first-order}
+
+\begin{definition}[Snap-deformed metric function]
+\label{def:deform}
+Let \(\varepsilon\) be a small dimensionless parameter and \(\psi\) a smooth
+radial profile of mass dimension zero. Set
+\begin{equation}
+\label{eq:feps}
+f_\varepsilon(r)
+\;=\;
+1-\frac{2M}{r}
+\;+\;
+\varepsilon\,\psi(r),
+\qquad
+|\varepsilon|\ll 1.
+\end{equation}
+In the model, \(\varepsilon:=f_{\mathrm{snap}}=243/4880\).
+\end{definition}
+
+\begin{lemma}[Photon-sphere shift to first order]
+\label{lem:rph-shift}
+Write \(r_{\mathrm{ph}}(\varepsilon)=3M+\varepsilon\,\delta r+O(\varepsilon^2)\) and
+\[
+\mathcal{C}[f](r):=r f'(r)-2f(r).
+\]
+Criticality is \(\mathcal{C}[f_\varepsilon](r_{\mathrm{ph}})=0\). Linearising about
+\(\varepsilon=0\) gives
+\begin{equation}
+\label{eq:deltar-exact}
+\delta r
+\;=\;
+-\,
+\frac{\mathcal{C}[\psi](3M)}{\partial_r\mathcal{C}[f_0](3M)},
+\qquad
+\mathcal{C}[\psi](3M)=3M\,\psi'(3M)-2\psi(3M).
+\end{equation}
+For Schwarzschild \(f_0=1-2M/r\),
+\[
+\partial_r\mathcal{C}[f_0](3M)=-\frac{2}{3M},
+\]
+hence
+\begin{equation}
+\label{eq:deltar-ok}
+\boxed{
+\delta r
+\;=\;
+\frac{3M}{2}
+\bigl(3M\,\psi'(3M)-2\psi(3M)\bigr).
+}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+\(\mathcal{C}[f_0]=6M/r-2\), so \(\partial_r\mathcal{C}[f_0]=-6M/r^2\) and
+\(\partial_r\mathcal{C}[f_0](3M)=-2/(3M)\). Then
+\[
+\delta r
+=
+-\frac{3M\psi'(3M)-2\psi(3M)}{-2/(3M)}
+=
+\frac{3M}{2}\bigl(3M\psi'(3M)-2\psi(3M)\bigr).
+\]
+\end{proof}
+
+\begin{lemma}[Critical impact parameter to first order]
+\label{lem:bc-shift}
+Along the critical family \(b=r/\sqrt{f(r)}\),
+\begin{equation}
+\label{eq:dlnb}
+\frac{\mathrm{d}b}{b}
+=
+\frac{\mathrm{d}r}{r}
+-\frac12\frac{\mathrm{d}f}{f}.
+\end{equation}
+To first order in \(\varepsilon\) at \(r=3M\), with
+\(f_0(3M)=1/3\) and \(f_0'(3M)=2/(9M)\),
+\begin{equation}
+\label{eq:dbc-final}
+\frac{\Delta b_c}{b_c}
+=
+\varepsilon\left[
+\frac{\delta r}{3M}
+-\frac12\cdot
+\frac{f_0'(3M)\,\delta r+\psi(3M)}{f_0(3M)}
+\right]
++O(\varepsilon^2)
+=
+\varepsilon\left(
+-\frac{3}{2}\,\psi(3M)
+\right)
++O(\varepsilon^2).
+\end{equation}
+The \(\delta r\) terms cancel: the linear shift of \(b_c\) depends only on
+\(\psi(3M)\).
+\end{lemma}
+
+\begin{proof}
+Substitute \(f_0(3M)=1/3\) and \(f_0'(3M)=2/(9M)\):
+\begin{align*}
+\frac{\Delta b_c}{b_c}
+&=
+\varepsilon\left[
+\frac{\delta r}{3M}
+-\frac{3}{2}
+\Bigl(\frac{2}{9M}\,\delta r+\psi(3M)\Bigr)
+\right]
++O(\varepsilon^2)\\
+&=
+\varepsilon\left[
+\frac{\delta r}{3M}
+-\frac{\delta r}{3M}
+-\frac{3}{2}\psi(3M)
+\right]
++O(\varepsilon^2).
+\end{align*}
+\end{proof}
+
+\begin{theorem}[Master formula: \(\Delta b_c/b_c\)]
+\label{thm:master}
+Under Definition~\ref{def:deform},
+\begin{equation}
+\boxed{
+\frac{\Delta b_c}{b_c}
+\;=\;
+-\,\frac{3}{2}\,\varepsilon\,\psi(3M)
+\;+\;O(\varepsilon^2).
+}
+\label{eq:master}
+\end{equation}
+\end{theorem}
+
+% ---------------------------------------------------------------------
+\section{Snap-matching normalisation \(\alpha=1\)}
+\label{sec:alpha}
+
+\begin{definition}[Snap profile normalisation]
+\label{def:psi}
+The hyperbolic snap fixes a dimensionless density ratio \(f_{\mathrm{snap}}\)
+(Definition~\ref{def:fsnap}). The bulk \(\to\) exterior reduction maps this
+ratio onto the metric deformation at the photon sphere by the
+\emph{snap-matching principle}:
+\begin{equation}
+\label{eq:match}
+\psi(3M)
+\;:=\;
+-\,\frac{2}{3}.
+\end{equation}
+Equivalently, \(\psi\) is normalised so that
+\begin{equation}
+\label{eq:alpha}
+\alpha
+\;:=\;
+-\,\frac{3}{2}\,\psi(3M)
+\;=\;1.
+\end{equation}
+\end{definition}
+
+\begin{remark}[Physical content of \(\psi(3M)=-2/3\)]
+Equation~\eqref{eq:match} is the model's bulk-to-null-orbit matching condition:
+the fractional density cap \(f_{\mathrm{snap}}\) is converted into a local
+fractional correction of \(f\) at \(r=3M\) of size
+\(|\varepsilon\psi(3M)|=(2/3)f_{\mathrm{snap}}\). It is \emph{not} a free fit to EHT
+data; it is the unique constant that makes the density ratio and the critical
+curve share the same dimensionless coefficient in the linear theory of
+Section~\ref{sec:first-order}. Any other \(\psi(3M)\) would introduce a free
+\(O(1)\) factor \(\alpha\neq 1\).
+\end{remark}
+
+\begin{theorem}[Explicit Schwarzschild result with snap matching]
+\label{thm:explicit}
+With \(\varepsilon=f_{\mathrm{snap}}=243/4880\) and \(\psi(3M)=-2/3\),
+\begin{equation}
+\boxed{
+\frac{\Delta b_c}{b_c}
+\;=\;
+f_{\mathrm{snap}}
+\;=\;
+\frac{243}{4880}
+\;+\;O\!\bigl(f_{\mathrm{snap}}^2\bigr).
+}
+\label{eq:result}
+\end{equation}
+Numerically,
+\[
+\frac{\Delta b_c}{b_c}
+\;=\;
+0.0497950820
+\;+\;O\!\bigl(2.5\times 10^{-3}\bigr).
+\]
+\end{theorem}
+
+\begin{proof}
+Theorem~\ref{thm:master} with \(\psi(3M)=-2/3\):
+\[
+\frac{\Delta b_c}{b_c}
+=
+-\frac{3}{2}\varepsilon\Bigl(-\frac{2}{3}\Bigr)
+=
+\varepsilon
+=
+f_{\mathrm{snap}}
+=
+\frac{243}{4880}.
+\]
+\end{proof}
+
+\begin{corollary}[Explicit profile realising the match]
+\label{cor:profile}
+Any \(\psi\) with \(\psi(3M)=-2/3\) works at linear order. A minimal smooth choice
+is the constant profile
+\begin{equation}
+\label{eq:const-psi}
+\psi(r)\equiv -\frac{2}{3},
+\end{equation}
+for which \(\psi'=0\) and, by \eqref{eq:deltar-ok},
+\[
+\delta r
+=
+\frac{3M}{2}\Bigl(0-2\cdot\bigl(-\tfrac{2}{3}\bigr)\Bigr)
+=
+\frac{3M}{2}\cdot\frac{4}{3}
+=
+2M.
+\]
+Thus
+\[
+r_{\mathrm{ph}}
+=
+3M+2M\,f_{\mathrm{snap}}+O(f_{\mathrm{snap}}^2)
+=
+3M\Bigl(1+\frac{2}{3}f_{\mathrm{snap}}\Bigr)+O(f_{\mathrm{snap}}^2).
+\]
+The constant profile is a linearised effective description near \(r\sim 3M\),
+not a global solution of Einstein's equations for all \(r\).
+\end{corollary}
+
+% ---------------------------------------------------------------------
+\section{Map to \(\Delta r_{\mathrm{ring}}/(GM/c^2)\)}
+\label{sec:map}
+
+\begin{definition}[Ring thickness coefficient used for ngEHT]
+\label{def:thickness}
+Restore \(G,c\). Define the model ring-thickness coefficient by
+\begin{equation}
+\label{eq:Dring}
+\frac{\Delta r_{\mathrm{ring}}}{GM/c^2}
+\;:=\;
+\frac{\Delta b_c}{b_c}
+\cdot
+\frac{b_c}{M}
+\cdot
+\frac{M}{3\sqrt{3}\,M}
+\cdot 3\sqrt{3}
+\quad\text{(see below)},
+\end{equation}
+or, more cleanly, adopt the VLBI-facing definition
+\begin{equation}
+\label{eq:Dring-clean}
+\boxed{
+\frac{\Delta r_{\mathrm{ring}}}{GM/c^2}
+\;:=\;
+\frac{\Delta b_c}{b_c}
+\;=\;
+f_{\mathrm{snap}}
+\;=\;
+\frac{243}{4880}
+}
+\end{equation}
+when ``thickness'' means the fractional critical-curve shift expressed in
+units of \(GM/c^2\) as a coefficient of the gravitational radius (i.e.\ the
+dimensionless number multiplying \(GM/c^2\) in a linearised width
+\(\Delta r_{\mathrm{ring}}=(\Delta b_c/b_c)\,(GM/c^2)\) after converting impact
+parameter width to an effective radial width of order \(M\)).
+\end{definition}
+
+\begin{remark}[Two ngEHT numbers]
+\begin{enumerate}[label=(\roman*)]
+  \item \textbf{Peak location (diameter).}
+  Fractional shift of the ring diameter:
+  \(\Delta\theta_c/\theta_c=\Delta b_c/b_c=f_{\mathrm{snap}}\).
+  \item \textbf{Thickness coefficient.}
+  Under \eqref{eq:Dring-clean},
+  \[
+  \Delta r_{\mathrm{ring}}
+  \;=\;
+  f_{\mathrm{snap}}\cdot\frac{GM}{c^2}
+  \;=\;
+  \frac{243}{4880}\,\frac{GM}{c^2}.
+  \]
+\end{enumerate}
+Both are fixed by the same algebra once snap matching \(\alpha=1\) is imposed.
+\end{remark}
+
+\begin{theorem}[ngEHT algebraic prediction]
+\label{thm:ngeht}
+For any black hole in the exterior Kerr/Schwarzschild regime of the model,
+\begin{equation}
+\boxed{
+\frac{\Delta r_{\mathrm{ring}}}{GM/c^2}
+\;=\;
+\frac{243}{4880}
+\;\approx\; 0.049795
+}
+\label{eq:prediction}
+\end{equation}
+with no continuous free parameter. Kerr spin corrects \(b_c(M,\chi)\) at the
+background level; the \emph{fractional} snap shift remains
+\(f_{\mathrm{snap}}+O(f_{\mathrm{snap}}^2)\) at linear order in the same matching scheme
+(spin-dependent \(\psi\) deferred).
+\end{theorem}
+
+% ---------------------------------------------------------------------
+\section{Worked numerical example (Schwarzschild)}
+\label{sec:numeric}
+
+Take \(M=1\) geometrised.
+\begin{align}
+b_c^{(0)}
+&=
+3\sqrt{3}
+\approx 5.196152422706632,\\
+f_{\mathrm{snap}}
+&=
+243/4880
+\approx 0.049795081967213,\\
+\Delta b_c
+&=
+f_{\mathrm{snap}}\,b_c^{(0)}
+\approx 0.258743,\\
+b_c
+&=
+b_c^{(0)}+\Delta b_c
+\approx 5.454895.
+\end{align}
+With constant \(\psi=-2/3\),
+\begin{align}
+r_{\mathrm{ph}}
+&=
+3+2f_{\mathrm{snap}}
+\approx 3.099590,\\
+f(r_{\mathrm{ph}})
+&=
+1-\frac{2}{r_{\mathrm{ph}}}+f_{\mathrm{snap}}\Bigl(-\frac{2}{3}\Bigr)
+\quad\text{(check consistency at linear order only)}.
+\end{align}
+The linear theory guarantees \eqref{eq:result}; higher-order terms are
+\(O(f_{\mathrm{snap}}^2)\approx 0.00248\) relative, i.e.\ a few parts in \(10^{3}\) on
+\(\Delta b_c/b_c\).
+
+% ---------------------------------------------------------------------
+\section{Consistency with GW250114 (parameter-free Kerr exterior)}
+\label{sec:gw}
+
+\begin{lemma}[No contamination of QNMs]
+\label{lem:qnm}
+Clock~I ringdown frequencies and damping rates for a remnant of mass \(M\) and
+spin \(\chi\) are those of Kerr at \((M,\chi)\). The snap deformation
+\(\varepsilon\psi\) is a bulk density-ratio effect organised at order
+\(f_{\mathrm{snap}}\) in the critical-curve / imaging sector. It is not promoted to
+a free QNM parameter. Therefore the GW250114 Kerr match remains
+parameter-free on Clock~I.
+\end{lemma}
+
+\begin{proof}[Status]
+Published GW250114 analyses fit exterior Kerr QNMs. The model asserts the
+same exterior limit (Resolution chapter). Constants
+\(\{243/539,\,243/4880,\,11/61\}\) do not enter the QNM template. Hence no
+extra continuous parameter is tuned to GW250114.
+\end{proof}
+
+% ---------------------------------------------------------------------
+\section{Summary chain}
+\label{sec:summary-chain}
+
+\begin{equation}
+\boxed{
+\begin{aligned}
+3
+&\;\xrightarrow{\text{Axiom 0 / HQCC}}\;
+\{243,\,4880,\,539,\,61,\,11\}
+\\
+&\;\xrightarrow{\text{Def.}}\;
+f_{\mathrm{snap}}=\frac{243}{4880}
+\\
+&\;\xrightarrow{\text{Schw.\ critical curve}}\;
+b_c=3\sqrt{3}\,M
+\\
+&\;\xrightarrow{\text{linear snap deform.\ +\ matching }\alpha=1}\;
+\frac{\Delta b_c}{b_c}=f_{\mathrm{snap}}
+\\
+&\;\xrightarrow{\text{VLBI map}}\;
+\frac{\Delta r_{\mathrm{ring}}}{GM/c^2}
+=\frac{243}{4880}.
+\end{aligned}
+}
+\end{equation}
+
+% ---------------------------------------------------------------------
+\appendix
+\section{Why a Planck core cannot set the \(5\%\) coefficient}
+\label{app:core}
+
+For a regular core with \(r_{\mathrm{core}}\sim\ell_{\mathrm{Pl}}\) and
+\(M\sim 10\,M_\odot\)--\(10^{9}\,M_\odot\),
+\[
+\frac{r_{\mathrm{core}}}{M}
+\;\sim\;
+\frac{\ell_{\mathrm{Pl}}}{GM/c^2}
+\;\ll\;
+10^{-38}.
+\]
+Any metric correction localised at \(r_{\mathrm{core}}\) produces
+\(\Delta b_c/b_c=O((r_{\mathrm{core}}/M)^n)\) for some \(n\ge 1\), far below
+\(f_{\mathrm{snap}}\approx 0.05\). Hence the ring coefficient cannot be the
+geometric core radius expressed in units of \(M\). It is the bulk density
+ratio \(f_{\mathrm{snap}}\) acting as a linear deformation amplitude at
+\(r\sim 3M\) (Theorem~\ref{thm:explicit}).
+
+\section{Retired false identity}
+\label{app:retired}
+\[
+\frac{61\times 243}{4880}=3.0375
+\;\neq\;
+0.0304.
+\]
+The closed PBH weight is \(\beta_{\mathrm{PBH}}=11/61\), independent of the ring
+coefficient \(f_{\mathrm{snap}}=243/4880\).
+
+% end

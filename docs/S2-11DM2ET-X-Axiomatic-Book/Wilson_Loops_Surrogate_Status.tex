@@ -1,0 +1,125 @@
+% =====================================================================
+% Wilson loops vs modular-projection surrogates; No-Go unchanged
+% =====================================================================
+
+\chapter{Wilson Loops, Surrogate Projections, and the No-Go}
+\label{ch:wilson-surrogate}
+
+\section{Wilson loops and the genuine area law}
+
+Wilson loops are the fundamental gauge-invariant observables of lattice gauge
+theory. On a discrete lattice one assigns a group element (the parallel
+transporter) \(U_\ell\in G\) to every directed link \(\ell\). For a closed path
+\(C\) the Wilson loop is
+\begin{equation}
+W(C)
+=\operatorname{Tr}\,
+\mathcal{P}
+\prod_{\ell\in C} U_\ell.
+\end{equation}
+The \emph{area law} is the statement that the expectation value falls
+exponentially with the area of the surface enclosed by \(C\):
+\begin{equation}
+\langle W(C)\rangle \sim e^{-\sigma\,\mathrm{Area}(C)}.
+\end{equation}
+The coefficient \(\sigma\) is the \emph{string tension}: a non-zero value means
+the energy of a pair of static sources grows linearly with separation, with
+\(\sigma\) the energy per unit length stored in the confining flux tube. A
+\emph{perimeter law} \(\langle W\rangle\sim e^{-\mu\,\mathrm{Perimeter}(C)}\)
+signals deconfinement or screening.
+
+No genuine Wilson loop exists inside the resonant dynamics of the present model,
+so a genuine area law and a genuine string tension are likewise absent: no gauge
+flux tubes are defined.
+
+\section{Absence of genuine Wilson loops in the resonant model}
+
+In the resonant dynamics of the present model no continuum or discrete gauge
+field is defined, and therefore no genuine Wilson loop exists. The modular
+projections act on the integer state of the ternary map; they restore a residue
+condition (\(Q=n\bmod 9\)) or a phase tolerance, but they do not assign
+group-valued transporters to the edges of any lattice. Consequently the
+sequences of projections cannot be assembled into a Wilson loop in the ordinary
+sense.
+
+\begin{theorem}[No Wilson loop from modular projections]
+\label{thm:no-wilson}
+Let \(\{n_t\}\) be a trajectory of \(T_3\) or \(T^\sharp\), and let projections
+denote charge-preserving or min-defect corrections restoring \(Q=n\bmod 9\).
+There does not exist a lattice gauge theory \((G,\{U_\ell\})\) constructed
+solely from these data such that the ordered product of projections around a
+closed residue sequence equals a Wilson loop \(W(C)\) in the sense of lattice
+gauge theory.
+\end{theorem}
+
+\begin{proof}[Proof sketch]
+A Wilson loop requires link variables in a group \(G\) on a spatial lattice.
+The model supplies only integer states and residue/correction events on a
+one-dimensional discrete-time orbit. No assignment \(\ell\mapsto U_\ell\in G\)
+is given, so the trace of a path-ordered product of group elements is undefined.
+\end{proof}
+
+\section{Surrogate closed sequences}
+
+\begin{definition}[Surrogate loop weight]
+Regard each modular projection as a discrete correction event. A
+\emph{surrogate closed sequence} is a closed walk in the residue graph
+(e.g.\ on \(\mathbb{Z}/3\mathbb{Z}\) or \(\mathbb{Z}/27\mathbb{Z}\)) or a closed
+pattern of projection-occurrence types along a trajectory. Let \(w(L,A)\) be a
+statistical weight of such sequences classified by a perimeter proxy \(L\) and
+an enclosed-step / area proxy \(A\).
+\end{definition}
+
+\begin{remark}[Area vs perimeter analogues; surrogate string tension]
+If frequencies of closed sequences decay exponentially with the enclosed
+step-count \(A\) (discrete ``area''), an area-law \emph{analogue} is present:
+large closed patterns of projections or residue changes are statistically
+suppressed. The decay constant \(\sigma_{\mathrm{surr}}\) of that exponential
+may be called a \emph{surrogate string tension}; it measures only the strength
+of that statistical suppression along constrained trajectories. If frequencies
+decay only with the boundary length \(L\) (discrete ``perimeter''), a
+perimeter-law analogue is present. Neither signal constitutes confinement of a
+gauge charge or a genuine string tension, nor generates the integer \(539\) or
+the period \(539.9\).
+\end{remark}
+
+\section{Downstream consequence, not source}
+
+\begin{theorem}[Surrogate loops do not lift the No-Go]
+\label{thm:surrogate-nogo}
+Long trajectories on which surrogate loops are measured are produced only after
+a fixed iteration count and a phase-locking period have already been imposed.
+Any area-law or perimeter-law behaviour extracted from them is therefore a
+consequence of those external constraints, not an independent dynamical origin
+of the constraints. In particular it cannot serve as an independent source of
+the integer \(539\) or of the period \(539.9\).
+
+The a priori charge-correcting estimate for the completed map \(T^\sharp\)
+continues to yield a short mean contraction depth of order \(N_\star=14\). The
+No-Go Theorem continues to place the long resonant structure outside the reach
+of residue structure, tower topology and flux democracy---whether or not
+surrogate-loop weights are tallied along forced trajectories.
+
+An area-law analogue (and any surrogate string tension extracted from it) is a
+possible statistical signature of the constrained system and may be looked for
+under the locked protocol. It remains a \emph{downstream consequence} (an
+\emph{effect}) of the resonant apparatus, not a \emph{source} (a \emph{cause})
+of that apparatus.
+\end{theorem}
+
+\begin{proof}
+Immediate from Theorem~\ref{thm:nogo-canonical} (canonical No-Go) together with
+the observation that surrogate weights are functionals of trajectories already
+conditioned on external length / phase constraints when those are imposed.
+\end{proof}
+
+\section{Empirical permission}
+
+\begin{corollary}[Empirical surrogate-loop study]
+An empirical tally of surrogate-loop weights may characterise how modular
+projections organise themselves along forced trajectories. It cannot lift the
+No-Go or convert the resonant period into a quantity derived from the local map
+alone.
+\end{corollary}
+
+% end
