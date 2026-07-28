@@ -52,7 +52,7 @@ Never use absolute language such as “unbreakable” or “provably secure.” 
 - ACE depth \(N_\star=14\) remains distinct from model/crypto depth \(\sigma:=L_{\mathrm{pack}}\) (never identify them)  
 - Free \(T^\sharp\) object/basin count still does **not** equal 539 (**Option 3** default for objects; Bott paused)
 
-See `docs/S2-11DM2ET-X-Axiomatic-Book/Resonant_Layer_Resolved.md`, `L_body_Structural_Derivation.md`, `NonCircular_18_plus_521.md`, `H0_539_Honest_Options.md`.
+See `docs/S2-11DM2ET-X-Axiomatic-Book/Foundational_Arithmetic_Packaging.md` (canonical Steps 1–8 proof), `Resonant_Layer_Resolved.md`, `L_body_Structural_Derivation.md`, `NonCircular_18_plus_521.md`, `H0_539_Honest_Options.md`.
 
 ## Related Repositories
 

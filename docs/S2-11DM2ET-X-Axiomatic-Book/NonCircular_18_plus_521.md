@@ -6,6 +6,8 @@
 
 ## The composite
 
+**Canonical derivation and proof:** `Foundational_Arithmetic_Packaging.md` / `.tex` (Axiom 0 → Steps 1–8).
+
 \[
 \underbrace{\bigl\lfloor e^{3}/\ln 3\bigr\rfloor}_{L_{\mathrm{pref}}}
 +

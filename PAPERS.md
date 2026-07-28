@@ -24,6 +24,7 @@ See also docs/papers/INDEX.md for the folder-organized view.
 
 Path: `docs/S2-11DM2ET-X-Axiomatic-Book/`
 
+- **Canonical proof:** Derivation of foundational arithmetic packaging, Steps 1–8 (`Foundational_Arithmetic_Packaging.md` / `.tex`)
 - Structural derivation of residual body length \(L_{\mathrm{body}}=N_{\mathrm{flux}}//9-f_{\max}\) under principle (S) (`L_body_Structural_Derivation.md`)
 - Non-circular length packaging \(18+521=539\) (`NonCircular_18_plus_521.md`)
 - Resonant layer resolved: packaging as hard iteration budget (`Resonant_Layer_Resolved.md`); Option 3 default for free 539 objects (`H0_539_Honest_Options.md`)
@@ -31,7 +32,7 @@ Path: `docs/S2-11DM2ET-X-Axiomatic-Book/`
 - ACE resolution / No-Go theorem canonical statements
 - Phase-0 seed-orbit probes, holographic window, empirical phase-lock protocols
 - Photon-ring critical-curve derivation; Wilson-loop surrogate status
-- Verification: `scripts/verify_L_body_structural.py`
+- Verification: `scripts/verify_foundational_packaging.py`, `scripts/verify_L_body_structural.py`
 
 Bulk RFFT observatory datasets are **not** versioned here (see `data/README.md`).
 

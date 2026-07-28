@@ -1,7 +1,7 @@
 # Resonant layer resolved — packaging as hard iteration budget
 
 **Status:** Locked interpretive resolution of the “resonant layer” relative to free \(T^\sharp\) dynamics and the HQH-539 primitive.  
-**Depends on:** `L_body_Structural_Derivation.md`, `NonCircular_18_plus_521.md`, `H0_539_Honest_Options.md`, `NoGo_Theorem_Canonical.md`, `ACE_Status_of_Record.md`.  
+**Depends on:** `Foundational_Arithmetic_Packaging.md` (canonical proof), `L_body_Structural_Derivation.md`, `NonCircular_18_plus_521.md`, `H0_539_Honest_Options.md`, `NoGo_Theorem_Canonical.md`, `ACE_Status_of_Record.md`.  
 **Does not use 539 as an input** when defining the packaging integers; 539 appears only as the arithmetic value of that packaging.
 
 ---

@@ -12,6 +12,8 @@ N_{\mathrm{flux}}//9 - f_{21}
 \]
 admits a **unique structural reason** from charge conservation, tower partition, and/or minimal-action principles, **without aiming at 539**.
 
+**Canonical full chain (Axiom 0 → packaging):** `Foundational_Arithmetic_Packaging.md` / `.tex` (Steps 1–8 + theorem).
+
 **Fixed inputs only** (no 539 on any RHS):
 \[
 N_{\mathrm{flux}}=\lfloor e^{3}\cdot 3^{5}\rfloor=4880,\quad

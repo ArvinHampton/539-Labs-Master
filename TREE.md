@@ -11,6 +11,7 @@
 │   ├── model/                # Core S²-11DM²ET-X statements and master equations
 │   ├── papers/               # Category indexes and pointers
 │   └── S2-11DM2ET-X-Axiomatic-Book/   # Living axiomatic book (md/tex/scripts; no bulk data)
+│       ├── Foundational_Arithmetic_Packaging.md/.tex  # canonical Steps 1–8 proof
 │       ├── L_body_Structural_Derivation.md
 │       ├── NonCircular_18_plus_521.md
 │       ├── Resonant_Layer_Resolved.md   # packaging = hard budget; Option 3 for objects
@@ -18,7 +19,7 @@
 │       ├── CLOSED_CONSTANTS.md
 │       ├── PROVENANCE_TABLE.md
 │       ├── NoGo_*.md / ACE_*.md
-│       ├── scripts/          # probes + verify_L_body_structural.py
+│       ├── scripts/          # verify_foundational_packaging.py + probes
 │       └── data/README.md    # bulk RFFT datasets kept offline
 ├── hqh539/
 │   └── python/               # hqh539_core.py (Canonical T3, SCA-hardened), demos
