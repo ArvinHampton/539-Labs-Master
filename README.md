@@ -50,9 +50,10 @@ Never use absolute language such as “unbreakable” or “provably secure.” 
 - \(L_{\mathrm{pack}}=18+521=539=\lfloor(N_{\mathrm{flux}}-f_{\max})/9\rfloor\) — non-circular **length** packaging conditional on (S)  
 - **Resonant layer** = adopt that packaging as a **hard iteration budget** (production HQH-539: fixed 18+521 rounds, no dynamical stop). Free / charge-preserving \(T^\sharp\) short basins remain Category A and are overridden by design — not mysterious further constraints  
 - ACE depth \(N_\star=14\) remains distinct from model/crypto depth \(\sigma:=L_{\mathrm{pack}}\) (never identify them)  
-- Free \(T^\sharp\) object/basin count still does **not** equal 539 (**Option 3** default for objects; Bott paused)
+- Combinatorial carrier \(\mathcal{O}_{\mathrm{res}}\): \(\lvert\mathcal{O}_{\mathrm{res}}\rvert=\lfloor(N_{\mathrm{flux}}-f_{\max})/9\rfloor=539\) verified under (S) — residual democratic charge-sector flux cores  
+- Free \(T^\sharp\) basin count still **2** (**Option 3** for free-dynamics trajectory objects); Bott-on-carrier permitted; Bott-on-free-trajectories still paused  
 
-See `docs/S2-11DM2ET-X-Axiomatic-Book/Foundational_Arithmetic_Packaging.md` (canonical Steps 1–8 proof), `Resonant_Layer_Resolved.md`, `L_body_Structural_Derivation.md`, `NonCircular_18_plus_521.md`, `H0_539_Honest_Options.md`.
+See `docs/S2-11DM2ET-X-Axiomatic-Book/Object539_NonCircular_Construction.md`, `Foundational_Arithmetic_Packaging.md`, `Resonant_Layer_Resolved.md`, `H0_539_Honest_Options.md`.
 
 ## Related Repositories
 
