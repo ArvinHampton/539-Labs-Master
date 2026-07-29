@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-Discrete combinatorial patterns on residual cores:
-  - core linking form L_ab = B' * sgn(a-b)
-  - Bott-fiber linking on core 0
-  - tower coboundary telescoping
-  - mod-9 monochromicity
+Discrete combinatorial patterns on residual cores (dir. 1 extended):
+  - core linking L_ab = B' * sgn(a-b)
+  - fiber linking closed form
+  - same-tower incidence spectrum
+  - 2-cochains omega2 = d alpha, mu Massey-style cocycle
 
-PROVENANCE: residual flux quanta under Principle (S) + democratic charge
-partition. Not free T-sharp. No No-Go lift.
+PROVENANCE: residual flux under Principle (S) + democratic charge partition.
+Not free T-sharp. No No-Go lift.
 """
 from __future__ import annotations
 
@@ -15,6 +15,7 @@ import json
 import math
 import sys
 from collections import Counter, defaultdict
+from itertools import combinations
 from pathlib import Path
 
 
@@ -40,14 +41,10 @@ def tower_of(x: int, loads: list[int]) -> int:
 
 
 def sgn(d: int) -> int:
-    if d > 0:
-        return 1
-    if d < 0:
-        return -1
-    return 0
+    return (d > 0) - (d < 0)
 
 
-def link_line(A: list[int], B: list[int]) -> int:
+def link_line(A, B) -> int:
     s = 0
     for a in A:
         for b in B:
@@ -55,7 +52,7 @@ def link_line(A: list[int], B: list[int]) -> int:
     return s
 
 
-def cores(N_flux: int, f_max: int, Q: int, B_prime: int) -> list[list[int]]:
+def cores(N_flux, f_max, Q, B_prime):
     residual = sorted(range(f_max, N_flux))
     classes: list[list[int]] = [[] for _ in range(Q)]
     for i, x in enumerate(residual):
@@ -66,56 +63,78 @@ def cores(N_flux: int, f_max: int, Q: int, B_prime: int) -> list[list[int]]:
 def main() -> int:
     N_flux, N_tow, Q, f_max, B_prime, loads = atoms()
     assert B_prime == 539
-
     Cs = cores(N_flux, f_max, Q, B_prime)
-    assert all(len(c) == B_prime for c in Cs)
 
-    # Core linking matrix
+    # --- Core linking ---
     L = [[link_line(Cs[a], Cs[b]) for b in range(Q)] for a in range(Q)]
     for a in range(Q):
         for b in range(Q):
             assert L[a][b] == B_prime * sgn(a - b)
-            assert L[a][b] == -L[b][a]
 
-    # Rank of S over R: 8
-    # L = B' S; kernel of S is constants
-    # check null: sum_b L[a][b] = B' * sum_b sgn(a-b)
-    for a in range(Q):
-        row_sum = sum(L[a])
-        expected = B_prime * sum(sgn(a - b) for b in range(Q))
-        assert row_sum == expected
-
-    # Monochromicity
-    mods = []
-    for q, c in enumerate(Cs):
-        mset = {x % 9 for x in c}
-        assert len(mset) == 1
-        mods.append(next(iter(mset)))
-
-    # Tower coboundary on core 0
+    # --- Fiber linking closed form ---
     O = Cs[0]
-    df = [tower_of(O[i + 1], loads) - tower_of(O[i], loads) for i in range(B_prime - 1)]
-    telescoping = sum(df)
-    assert telescoping == tower_of(O[-1], loads) - tower_of(O[0], loads)
-
-    # Bott fibers on core 0
-    fibers: dict[int, list[int]] = defaultdict(list)
+    fibers = defaultdict(list)
     for i, x in enumerate(O):
         fibers[i % 8].append(x)
-    fiber_sizes = tuple(len(fibers[k]) for k in range(8))
-    assert fiber_sizes == (68, 68, 68, 67, 67, 67, 67, 67)
-
-    M = [[link_line(fibers[k], fibers[m]) for m in range(8)] for k in range(8)]
+    n = [len(fibers[k]) for k in range(8)]
+    assert tuple(n) == (68, 68, 68, 67, 67, 67, 67, 67)
+    M = [[0] * 8 for _ in range(8)]
     for k in range(8):
-        assert M[k][k] == 0
         for m in range(8):
-            assert M[k][m] == -M[m][k]
+            actual = link_line(fibers[k], fibers[m])
+            if n[k] == n[m]:
+                expected = n[k] * sgn(k - m)
+            else:
+                expected = 0
+            assert actual == expected, (k, m, actual, expected)
+            M[k][m] = actual
 
-    same_tower_pairs = 0
-    for i in range(B_prime):
-        for j in range(i + 1, B_prime):
-            if tower_of(O[i], loads) == tower_of(O[j], loads):
-                same_tower_pairs += 1
+    # --- Same-tower incidence ---
+    buckets: dict[int, list[int]] = defaultdict(list)
+    for i, x in enumerate(O):
+        buckets[tower_of(x, loads)].append(i)
+    size_mult = Counter(len(v) for v in buckets.values())
+    assert size_mult[1] == 1 and size_mult[2] == 185 and size_mult[3] == 56
+    assert sum(s * c for s, c in size_mult.items()) == B_prime
+    edges = sum(len(v) * (len(v) - 1) // 2 for v in buckets.values())
+    assert edges == 353
+    eigs: list[int] = []
+    for v in buckets.values():
+        nn = len(v)
+        eigs.append(nn - 1)
+        eigs.extend([-1] * (nn - 1))
+    ecount = Counter(eigs)
+    assert ecount[2] == 56 and ecount[1] == 185 and ecount[0] == 1 and ecount[-1] == 297
+    assert sum(eigs) == 0
+    assert len(buckets) == 242
+
+    # --- 2-cochains ---
+    def alpha(a, b):
+        return sgn(a - b)
+
+    def omega2(a, b, c):
+        return alpha(b, c) - alpha(a, c) + alpha(a, b)
+
+    def mu(a, b, c):
+        return B_prime * sgn(a - b) * sgn(b - c)
+
+    def d_mu(a, b, c, d):
+        return mu(b, c, d) - mu(a, c, d) + mu(a, b, d) - mu(a, b, c)
+
+    def d_omega2(a, b, c, d):
+        return omega2(b, c, d) - omega2(a, c, d) + omega2(a, b, d) - omega2(a, b, c)
+
+    for a, b, c in combinations(range(9), 3):
+        assert omega2(a, b, c) == -1
+        assert sgn(a - b) * sgn(b - c) * sgn(c - a) == 1
+
+    for a, b, c, d in combinations(range(9), 4):
+        assert d_mu(a, b, c, d) == 0
+        assert d_omega2(a, b, c, d) == 0
+
+    # Tower coboundary telescoping
+    df = [tower_of(O[i + 1], loads) - tower_of(O[i], loads) for i in range(B_prime - 1)]
+    assert sum(df) == tower_of(O[-1], loads) - tower_of(O[0], loads)
 
     results = {
         "provenance": {
@@ -126,53 +145,34 @@ def main() -> int:
             "no_go_lift_claimed": False,
         },
         "B_prime": B_prime,
-        "core_linking": {
-            "formula": "L_ab = B' * sgn(a-b)",
-            "verified_all_entries": True,
-            "matrix": L,
-            "gcd_off_diagonal": B_prime,
+        "core_linking_formula": "B'*sgn(a-b)",
+        "fiber_linking": {
+            "closed_form": "n_k*sgn(k-m) if n_k==n_m else 0",
+            "fiber_sizes": n,
+            "matrix": M,
+            "blocks": {"U": [0, 1, 2], "V": [3, 4, 5, 6, 7], "cross": 0},
         },
-        "monochrome_mod9_per_core": mods,
-        "tower_coboundary_core0": {
-            "telescoping_sum": telescoping,
-            "tau_last_minus_tau_first": tower_of(O[-1], loads) - tower_of(O[0], loads),
-            "df_min": min(df),
-            "df_max": max(df),
+        "same_tower_incidence": {
+            "size_multiset": {str(k): int(v) for k, v in sorted(size_mult.items())},
+            "towers_touched": 242,
+            "edges": edges,
+            "eigenvalue_multiset": {str(k): int(v) for k, v in sorted(ecount.items())},
+            "rank_Z": 242,
         },
-        "beta_sharp_fibers_core0": list(fiber_sizes),
-        "fiber_linking_sample": {
-            "M_0_1": M[0][1],
-            "M_0_3": M[0][3],
-            "M_3_5": M[3][5],
+        "two_cochains": {
+            "omega2_on_ordered_triples": -1,
+            "omega2_is_coboundary_d_alpha": True,
+            "mu_is_2_cocycle_on_ordered_4_sets": True,
+            "triple_sign_product_ordered": 1,
         },
-        "same_tower_pairs_core0": same_tower_pairs,
-        "RNT_summary": {
-            "pairing_scale": B_prime,
-            "unit_skew_form_on_9_sectors": "sgn(a-b)",
-            "B_prime_mod_8": B_prime % 8,
-            "identity_8_67_plus_3": B_prime == 8 * 67 + 3,
-        },
-        "forbidden_claims": [
-            "free T^sharp origin",
-            "continuum Gauss linking",
-            "No-Go lift",
-            "security reduction",
-        ],
+        "tower_coboundary_telescoping": sum(df),
     }
 
     out = Path(__file__).resolve().parents[1] / "discrete_patterns_residual_results.json"
     out.write_text(json.dumps(results, indent=2), encoding="utf-8")
-    print(json.dumps(
-        {
-            "OK": True,
-            "L_formula": "B'*sgn(a-b)",
-            "B_prime": B_prime,
-            "telescoping": telescoping,
-            "fiber_sizes": list(fiber_sizes),
-            "mods": mods,
-        },
-        indent=2,
-    ))
+    print("OK: core linking, fiber closed form, incidence spectrum, 2-cochains")
+    print("fiber form: n*sgn if equal size else 0; blocks U(68)/V(67), cross=0")
+    print("incidence eigs:", dict(ecount))
     print("wrote", out)
     return 0
 

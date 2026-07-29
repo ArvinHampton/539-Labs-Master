@@ -7,155 +7,138 @@
     "no_go_lift_claimed": false
   },
   "B_prime": 539,
-  "core_linking": {
-    "formula": "L_ab = B' * sgn(a-b)",
-    "verified_all_entries": true,
+  "core_linking_formula": "B'*sgn(a-b)",
+  "fiber_linking": {
+    "closed_form": "n_k*sgn(k-m) if n_k==n_m else 0",
+    "fiber_sizes": [
+      68,
+      68,
+      68,
+      67,
+      67,
+      67,
+      67,
+      67
+    ],
     "matrix": [
       [
         0,
-        -539,
-        -539,
-        -539,
-        -539,
-        -539,
-        -539,
-        -539,
-        -539
-      ],
-      [
-        539,
+        -68,
+        -68,
         0,
-        -539,
-        -539,
-        -539,
-        -539,
-        -539,
-        -539,
-        -539
-      ],
-      [
-        539,
-        539,
         0,
-        -539,
-        -539,
-        -539,
-        -539,
-        -539,
-        -539
-      ],
-      [
-        539,
-        539,
-        539,
         0,
-        -539,
-        -539,
-        -539,
-        -539,
-        -539
-      ],
-      [
-        539,
-        539,
-        539,
-        539,
         0,
-        -539,
-        -539,
-        -539,
-        -539
+        0
       ],
       [
-        539,
-        539,
-        539,
-        539,
-        539,
+        68,
         0,
-        -539,
-        -539,
-        -539
-      ],
-      [
-        539,
-        539,
-        539,
-        539,
-        539,
-        539,
+        -68,
         0,
-        -539,
-        -539
-      ],
-      [
-        539,
-        539,
-        539,
-        539,
-        539,
-        539,
-        539,
         0,
-        -539
+        0,
+        0,
+        0
       ],
       [
-        539,
-        539,
-        539,
-        539,
-        539,
-        539,
-        539,
-        539,
+        68,
+        68,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        -67,
+        -67,
+        -67,
+        -67
+      ],
+      [
+        0,
+        0,
+        0,
+        67,
+        0,
+        -67,
+        -67,
+        -67
+      ],
+      [
+        0,
+        0,
+        0,
+        67,
+        67,
+        0,
+        -67,
+        -67
+      ],
+      [
+        0,
+        0,
+        0,
+        67,
+        67,
+        67,
+        0,
+        -67
+      ],
+      [
+        0,
+        0,
+        0,
+        67,
+        67,
+        67,
+        67,
         0
       ]
     ],
-    "gcd_off_diagonal": 539
+    "blocks": {
+      "U": [
+        0,
+        1,
+        2
+      ],
+      "V": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "cross": 0
+    }
   },
-  "monochrome_mod9_per_core": [
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    0,
-    1,
-    2
-  ],
-  "tower_coboundary_core0": {
-    "telescoping_sum": 241,
-    "tau_last_minus_tau_first": 241,
-    "df_min": 0,
-    "df_max": 1
+  "same_tower_incidence": {
+    "size_multiset": {
+      "1": 1,
+      "2": 185,
+      "3": 56
+    },
+    "towers_touched": 242,
+    "edges": 353,
+    "eigenvalue_multiset": {
+      "-1": 297,
+      "0": 1,
+      "1": 185,
+      "2": 56
+    },
+    "rank_Z": 242
   },
-  "beta_sharp_fibers_core0": [
-    68,
-    68,
-    68,
-    67,
-    67,
-    67,
-    67,
-    67
-  ],
-  "fiber_linking_sample": {
-    "M_0_1": -68,
-    "M_0_3": 0,
-    "M_3_5": -67
+  "two_cochains": {
+    "omega2_on_ordered_triples": -1,
+    "omega2_is_coboundary_d_alpha": true,
+    "mu_is_2_cocycle_on_ordered_4_sets": true,
+    "triple_sign_product_ordered": 1
   },
-  "same_tower_pairs_core0": 353,
-  "RNT_summary": {
-    "pairing_scale": 539,
-    "unit_skew_form_on_9_sectors": "sgn(a-b)",
-    "B_prime_mod_8": 3,
-    "identity_8_67_plus_3": true
-  },
-  "forbidden_claims": [
-    "free T^sharp origin",
-    "continuum Gauss linking",
-    "No-Go lift",
-    "security reduction"
-  ]
+  "tower_coboundary_telescoping": 241
 }

@@ -117,7 +117,7 @@ Continuum hopfion, torsion, or measure constructions remain **Category B design 
 
 | Rank | Direction | Status |
 |------|-----------|--------|
-| **1** | Discrete combinatorial patterns on residual carrier (linking, discrete torsion-style cochains, RNT pairings) | **Started / first theorems** — `Discrete_Patterns_Residual_Carrier.md` (core linking \(L_{ab}=B'\mathrm{sgn}(a-b)\)) |
+| **1** | Discrete combinatorial patterns on residual carrier | **Extended theorems** — core linking \(L=B'S\); fiber linking closed form; same-tower incidence spectrum; 2-cochains \(\omega_2,\mu\) — `Discrete_Patterns_Residual_Carrier.md` §§2,10–12 |
 | **2** | Controlled Cat.\ B enrichment of TTC/RTTC | Open design space (use discrete cochains as substrate only) |
 | **3** | Measure patterns BMMT/HMT | Open secondary Cat.\ B |
 | **4** | Architecture A4–A5 | Open |
