@@ -1,35 +1,28 @@
 {
   "provenance": {
-    "objects": "residual flux quanta",
     "principle_S": true,
-    "not_free_Tsharp_basins": true,
-    "no_go_lift_claimed": false,
-    "continuum_Cartan_not_claimed": true
+    "not_free_Tsharp": true,
+    "continuum_Cartan_not_claimed": true,
+    "no_go_lift_claimed": false
   },
   "B_prime": 539,
-  "layer_G_graph": {
-    "V": 4851,
-    "E": 24246,
-    "beta_0": 1,
-    "beta_1": 19396,
-    "formula_beta1": "36*B' - 8"
+  "identity_mu_minus_B_omega2_ordered": true,
+  "level_graph": {
+    "product_V": 4851,
+    "product_E": 24246,
+    "b0": 1,
+    "b1": 19396
   },
-  "layer_F_form": {
+  "level_form_complex": {
+    "eta_exact_full_tensor": true,
+    "sum_mu": 45276,
+    "B_prime_mod_8": 3,
+    "path_edges_mod_8": 2
+  },
+  "level_full_simplex": {
     "H0": 1,
-    "H1": 0,
-    "H2": 1,
-    "H2_generator": "[alpha \u2297 delta_f] = [s_ad]",
-    "eta_exact": true,
-    "mu_exact_on_ordered": true,
-    "mu_relation": "mu = -B' * omega2 on ordered triples"
+    "H_positive": 0,
+    "note": "contractible x contractible"
   },
-  "layer_S_full_simplex_product": {
-    "reduced_cohomology": "vanishes (contractible)",
-    "note": "use layer G or F for residual invariants"
-  },
-  "arithmetic": {
-    "B_mod_8": 3,
-    "U_card": 3,
-    "beta1_mod_8": 4
-  }
+  "lock_statement": "Geometric H^{n>0}=0; residual combinatorial H locked: graph b1=19396, sum_mu=45276, B'%8=3, mu=-B' omega2 ordered, eta=-D(alpha\u2297f)."
 }
