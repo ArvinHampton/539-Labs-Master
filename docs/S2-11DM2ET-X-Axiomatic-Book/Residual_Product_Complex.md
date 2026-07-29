@@ -202,6 +202,7 @@ The tensor identity \(D\eta=0\) still holds on the charge\(\otimes\)path summand
 | No coupling between \(K_9\) and residual path | **Closed** by \(X_{\times}\) and \(\eta\) |
 | \(D^2=0\) / \(D\eta=0\) on residual data | **Verified** |
 | Recovers \(\mu\), \(\omega_2\), \(\alpha\,\delta f\) by restriction | **Yes** |
+| **Cohomology \(H^\bullet(X_\times)\)** | **Advanced** — `Residual_Product_Cohomology.md` (graph \(\beta_1=36B'-8\); form \(H^2\cong\mathbb{Q}\cdot[\alpha\otimes\delta f]\)) |
 | Continuum Cartan / hopfion / free \(T^\sharp\) | **Still out of scope** |
 | Architecture A4 \(B\mathrm{Spin}\) | Independent stream |
 

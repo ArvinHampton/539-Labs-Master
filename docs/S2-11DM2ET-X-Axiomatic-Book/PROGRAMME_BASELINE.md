@@ -118,7 +118,7 @@ Continuum hopfion, torsion, or measure constructions remain **Category B design 
 | Rank | Direction | Status |
 |------|-----------|--------|
 | **1** | Discrete combinatorial patterns on residual carrier | **Extended theorems** — `Discrete_Patterns_Residual_Carrier.md` |
-| **2** | Discrete TTC/RTTC enrichment + product coupling | **Package \(\mathfrak{T}_{\mathrm{res}}\)** — `Discrete_Torsion_Complex_Residual.md`; **product \(K_9\times P_{B'}\)** with mixed \(\eta\) — `Residual_Product_Complex.md` |
+| **2** | Discrete TTC/RTTC + product + \(H^\bullet(X_\times)\) | \(\mathfrak{T}_{\mathrm{res}}\); product \(K_9\times P_{B'}\); **cohomology** graph \(\beta_1=36B'-8\), form \(H^2\cong\mathbb{Q}[\alpha\otimes\delta f]\) — `Residual_Product_Cohomology.md` |
 | **3** | Measure patterns BMMT/HMT | Open secondary Cat.\ B |
 | **4** | Architecture A4–A5 | Open |
 | **5** | 1001 / R-FFT / individuality falsifiability | Open lower priority |
