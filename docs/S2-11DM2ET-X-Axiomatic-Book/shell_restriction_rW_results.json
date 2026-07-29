@@ -1,0 +1,123 @@
+{
+  "provenance": {
+    "residual_S_only": true,
+    "not_free_Tsharp": true,
+    "not_MT_peak_claim": true,
+    "kit_order_unchanged": "pair \u2192 window \u2192 RFC",
+    "P_plus_not_auto_locked": true
+  },
+  "r_W": {
+    "W": 18,
+    "definition": "r_W != 0 <=> M(I_win) > 0",
+    "M_all": 8676,
+    "M_win": 252,
+    "M_tow": 8424,
+    "frac_win": 0.029045643153526972,
+    "target_18_over_539": 0.03339517625231911,
+    "rW_nonzero": true,
+    "tower_mass": true,
+    "status": "SURJECTIVE_BOTH_SHELL_AND_TOWER",
+    "diagnostic": "Shell sees the coupling; tower dominates its mass."
+  },
+  "multi_W_curve": [
+    {
+      "W": 5,
+      "edges": 4,
+      "M_win": 36,
+      "frac": 0.004149377593360996,
+      "target_W_over_B": 0.00927643784786642,
+      "rW_nonzero": true
+    },
+    {
+      "W": 10,
+      "edges": 9,
+      "M_win": 108,
+      "frac": 0.012448132780082987,
+      "target_W_over_B": 0.01855287569573284,
+      "rW_nonzero": true
+    },
+    {
+      "W": 15,
+      "edges": 14,
+      "M_win": 216,
+      "frac": 0.024896265560165973,
+      "target_W_over_B": 0.027829313543599257,
+      "rW_nonzero": true
+    },
+    {
+      "W": 18,
+      "edges": 17,
+      "M_win": 252,
+      "frac": 0.029045643153526972,
+      "target_W_over_B": 0.03339517625231911,
+      "rW_nonzero": true
+    },
+    {
+      "W": 30,
+      "edges": 29,
+      "M_win": 432,
+      "frac": 0.04979253112033195,
+      "target_W_over_B": 0.055658627087198514,
+      "rW_nonzero": true
+    },
+    {
+      "W": 45,
+      "edges": 44,
+      "M_win": 648,
+      "frac": 0.07468879668049792,
+      "target_W_over_B": 0.08348794063079777,
+      "rW_nonzero": true
+    },
+    {
+      "W": 90,
+      "edges": 89,
+      "M_win": 1404,
+      "frac": 0.16182572614107885,
+      "target_W_over_B": 0.16697588126159554,
+      "rW_nonzero": true
+    },
+    {
+      "W": 180,
+      "edges": 179,
+      "M_win": 2844,
+      "frac": 0.3278008298755187,
+      "target_W_over_B": 0.3339517625231911,
+      "rW_nonzero": true
+    },
+    {
+      "W": 270,
+      "edges": 269,
+      "M_win": 4320,
+      "frac": 0.4979253112033195,
+      "target_W_over_B": 0.5009276437847866,
+      "rW_nonzero": true
+    },
+    {
+      "W": 539,
+      "edges": 538,
+      "M_win": 8676,
+      "frac": 1.0,
+      "target_W_over_B": 1.0,
+      "rW_nonzero": true
+    }
+  ],
+  "P_plus": {
+    "status": "counted_not_locked",
+    "towers_ge3": 56,
+    "same_tower_unordered_triples": 56,
+    "size_multiset": {
+      "1": 1,
+      "2": 185,
+      "3": 56
+    },
+    "triples_fully_in_window_i_lt_W": 3,
+    "formula_D_alpha_delta_f": "omega2\u2297delta_f - alpha\u2297omega_P(delta_f)",
+    "omega_P_on_minimal_P": 0,
+    "next": "define omega_P Stokes; recompute dim H2(F+)"
+  },
+  "locks_intact": {
+    "option3": true,
+    "thin_F_H2": "Q[alpha\u2297delta_f]",
+    "near_term_kit_order": true
+  }
+}

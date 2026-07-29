@@ -199,3 +199,7 @@ Continuum hopfion, torsion, or measure constructions remain **Category B design 
 > The combinatorial residual foundation is **locked**.  
 > Discrete Architecture A (**A0–A2**) is **locked**; continuous **A3** first \(BO\)-valued model is **locked as a first lift**; **A4–A5** remain **open**.  
 > Free dynamics stay **Option 3**. Security stays **Category B exploration**. Continuum hopfion/torsion/measure contacts stay **Category B** relative to the residual foundation.
+
+## Shell restriction r_W
+
+Executed: r_18 != 0 (SURJECTIVE_BOTH_SHELL_AND_TOWER). Multi-W curve all nonzero. P+ 56 triples counted, not auto-locked. See Shell_Restriction_rW_P_plus.md.

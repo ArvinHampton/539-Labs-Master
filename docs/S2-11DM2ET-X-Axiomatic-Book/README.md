@@ -55,3 +55,4 @@ The universe counts in threes.
 - **Multi-angle unification review** (Multi_Angle_Unification_Review.md): missed patterns; G–F pairing + window filtration probes; sector↔band RFC
 - **Near-term unification kit** (Near_Term_Unification_Kit.md, scripts/gf_pairing_window_probe.py): pair [alpha⊗delta_f] with mixed cells; window-18 filtration; sector↔band RFC — Option 3 and thin F locked
 - **Full report: findings / missed patterns / implications** (Full_Report_Findings_Missed_Patterns_Implications.md) — 2026-07-29 synthesis; near-term kit frozen
+- **Shell restriction r_W + optional P+** (Shell_Restriction_rW_P_plus.md, scripts/shell_restriction_rW_probe.py): r_18!=0 SURJECTIVE_BOTH_SHELL_AND_TOWER; 56 same-tower triples counted not locked
