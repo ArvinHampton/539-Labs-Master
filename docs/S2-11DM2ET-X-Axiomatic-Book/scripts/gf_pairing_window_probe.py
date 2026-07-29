@@ -139,6 +139,13 @@ def main() -> int:
             "interpretation": "absolute pairing mass is order-insensitive; window split uses residual order prefix",
         },
         "unification_reading": "preserve mixed class and pairings under refinement — not one PDE",
+        "locks_respected": {
+            "thin_complex_H2": "Q[alpha⊗delta_f]",
+            "option3_free_Tsharp": True,
+            "emp_18_521_peaks_not_claimed": True,
+            "dictionary_is_cat_B_RFC": True,
+        },
+        "kit_doc": "Near_Term_Unification_Kit.md",
     }
 
     out = Path(__file__).resolve().parents[1] / "gf_pairing_window_results.json"

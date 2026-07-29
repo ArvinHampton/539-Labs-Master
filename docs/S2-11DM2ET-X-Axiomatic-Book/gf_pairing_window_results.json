@@ -32,5 +32,12 @@
     "df_reverse_preserves_Sigma_abs": true,
     "interpretation": "absolute pairing mass is order-insensitive; window split uses residual order prefix"
   },
-  "unification_reading": "preserve mixed class and pairings under refinement \u2014 not one PDE"
+  "unification_reading": "preserve mixed class and pairings under refinement \u2014 not one PDE",
+  "locks_respected": {
+    "thin_complex_H2": "Q[alpha\u2297delta_f]",
+    "option3_free_Tsharp": true,
+    "emp_18_521_peaks_not_claimed": true,
+    "dictionary_is_cat_B_RFC": true
+  },
+  "kit_doc": "Near_Term_Unification_Kit.md"
 }
