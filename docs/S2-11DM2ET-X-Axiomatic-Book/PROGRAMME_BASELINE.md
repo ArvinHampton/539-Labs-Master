@@ -119,6 +119,7 @@ Continuum hopfion, torsion, or measure constructions remain **Category B design 
 |------|-----------|--------|
 | **1** | Discrete combinatorial patterns on residual carrier | **Extended theorems** — `Discrete_Patterns_Residual_Carrier.md` |
 | **2** | Discrete TTC/RTTC + product + \(H^\bullet\) + form SS + \(D\) | Same + **SS differentials** \(d_0=d_P\), \(d_1=d_Q\); **\(D(\alpha\otimes f)=-\eta\)** explicit; CE = algebra only — `Residual_Form_SS_Differentials.md` |
+| **2c** | Multi-angle openings | G–F pairing + window filtration probes; sector↔band RFC — `Multi_Angle_Unification_Review.md` |
 | **3** | Measure patterns BMMT/HMT | Open secondary Cat.\ B |
 | **4** | Architecture A4–A5 | Open |
 | **5** | 1001 / R-FFT / individuality falsifiability | Open lower priority |
