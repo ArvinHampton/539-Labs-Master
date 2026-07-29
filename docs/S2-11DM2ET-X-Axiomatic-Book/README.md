@@ -1,6 +1,8 @@
 ﻿> **GitHub (canonical):** [ArvinHampton/539-Labs-Master](https://github.com/ArvinHampton/539-Labs-Master/tree/main/docs/S2-11DM2ET-X-Axiomatic-Book)  
-> Local folder mirrors the living draft; push updates via the Master clone at `Documents/GitHub/539-Labs-Master`.
-# SÂ²-11DMÂ²ET-X Axiomatic Book (Foundation Layer)
+> Local folder mirrors the living draft; push updates via the Master clone at `Documents/GitHub/539-Labs-Master`.  
+> **Programme baseline (resolved vs open):** [`PROGRAMME_BASELINE.md`](PROGRAMME_BASELINE.md)
+
+# S²-11DM²ET-X Axiomatic Book (Foundation Layer)
 
 Clean LaTeX source for the full axiomatic foundation.
 
@@ -8,6 +10,7 @@ Clean LaTeX source for the full axiomatic foundation.
 
 ## Contents
 
+- **Programme baseline** (`PROGRAMME_BASELINE.md`): locked resolved vs open (packaging, \(\mathcal{O}_{\mathrm{res}}\), Arch.\ A0–A3/A4–A5, Option 3, security, 9 Maths patterns, secondary tracks)
 - Axiom 0 (Three-Generation Axiom)
 - **Generation Individuality** (`Individuality_from_Axiom0_Expansion.tex`, `\input` after Math 1 / TTC): restores \(e/\mu/\tau\) labels from Axiom 0 alone via composite dictionary \((w_j,k_j,c_j)\) â€” no second continuous axiom
 - **Resolution: Three Clocks / Closed Constants / GW250114** (`Resolution_GW250114_ThreeClocks_ClosedConstants.tex`): separates geometric / HQCC / \(G_4\) clocks; closes \(\kappa_{\mathrm{dark}}=243/539\), \(f_{\mathrm{snap}}=243/4880\), \(\beta_{\mathrm{PBH}}=11/61\); Kerr-exterior status of GW250114; negPBH as Clock-III prediction only

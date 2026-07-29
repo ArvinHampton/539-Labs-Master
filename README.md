@@ -74,12 +74,19 @@ Self-taught mathematician and physicist sharing the work for peer review.
 Discrete classifying map and Bott-clock grading on residual-flux carrier: `docs/S2-11DM2ET-X-Axiomatic-Book/Architecture_A_Ores_Programme.md`. Provenance: residual flux quanta under Principle (S); not free T-sharp; no No-Go lift.
 
 
-### Architecture A1–A2
+### Architecture A1ï¿½A2
 
-Seed-independent Bott clock `beta_sharp` and discrete simplicial lift: `docs/S2-11DM2ET-X-Axiomatic-Book/Architecture_A1_Seed_Equivariance.md`, `Architecture_A2_Simplicial_Lift.md`. Next: A3–A5 geometric BO/BSpin and KO.
+Seed-independent Bott clock `beta_sharp` and discrete simplicial lift: `docs/S2-11DM2ET-X-Axiomatic-Book/Architecture_A1_Seed_Equivariance.md`, `Architecture_A2_Simplicial_Lift.md`. Next: A3ï¿½A5 geometric BO/BSpin and KO.
 
 
 ### Architecture A3
 
 Continuous map |E(O_res)| -> Gr_1(V) -> BO (spin-aimed rank-2 companion): `docs/S2-11DM2ET-X-Axiomatic-Book/Architecture_A3_Geometric_BO_BSpin.md`. Residual-flux provenance only; A4-A5 open.
+
+### Programme baseline
+
+**Single status ledger (resolved vs open):**  
+`docs/S2-11DM2ET-X-Axiomatic-Book/PROGRAMME_BASELINE.md`
+
+Combinatorial residual foundation + Arch.\ A0â€“A2 locked; A3 first continuous BO model locked as first lift; A4â€“A5, free-trajectory 539-classes (Option 3), and security reductions remain open / paused / exploration-only under stated constraints.
 
