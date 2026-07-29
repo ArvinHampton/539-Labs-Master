@@ -11,7 +11,8 @@ H^2(F)\cong\mathbb{Q}\cdot[\alpha\otimes\delta f].
 \]
 **Provenance:** residual **(S)** only. Continuum TTC / free \(T^\sharp\) = **Category B**.  
 **Companions:** `Residual_Product_Complex.md`, `Residual_Product_Cohomology.md`.  
-**Probes:** `scripts/residual_product_cohomology_probe.py`, `scripts/form_ss_probe.py`.
+**Probes:** `scripts/residual_product_cohomology_probe.py`, `scripts/form_ss_probe.py`, `scripts/form_ss_differentials_probe.py`.  
+**Differentials / CE hygiene / \(D(\alpha\otimes f)\):** `Residual_Form_SS_Differentials.md`.
 
 ---
 
