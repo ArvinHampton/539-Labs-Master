@@ -1,35 +1,36 @@
 {
   "provenance": {
-    "objects": "residual flux quanta",
     "principle_S": true,
-    "not_free_Tsharp_basins": true,
-    "no_go_lift_claimed": false,
-    "continuum_Cartan_not_claimed": true
+    "not_free_Tsharp": true,
+    "continuum_TTC_category_B": true,
+    "no_go_lift_claimed": false
   },
   "B_prime": 539,
   "layer_G_graph": {
     "V": 4851,
     "E": 24246,
-    "beta_0": 1,
-    "beta_1": 19396,
-    "formula_beta1": "36*B' - 8"
+    "beta0": 1,
+    "beta1": 19396
   },
   "layer_F_form": {
-    "H0": 1,
+    "H0": "Q \u00b7 [1]",
     "H1": 0,
-    "H2": 1,
-    "H2_generator": "[alpha \u2297 delta_f] = [s_ad]",
+    "H2": "Q \u00b7 [alpha \u2297 delta_f]",
     "eta_exact": true,
-    "mu_exact_on_ordered": true,
-    "mu_relation": "mu = -B' * omega2 on ordered triples"
+    "mu_tilde_exact_ordered": true,
+    "alpha_delta_f_generator": true
   },
-  "layer_S_full_simplex_product": {
-    "reduced_cohomology": "vanishes (contractible)",
-    "note": "use layer G or F for residual invariants"
+  "layer_S_full": {
+    "contractible": true,
+    "reduced_H_positive": 0
   },
-  "arithmetic": {
-    "B_mod_8": 3,
-    "U_card": 3,
-    "beta1_mod_8": 4
-  }
+  "residual3_contact": {
+    "B_prime_packaging": 539,
+    "B_prime_mod_8": 3,
+    "U_r": 3,
+    "legacy_block_38_contact": 38,
+    "note": "38 is residual-3 discrete package contact; packaging B'=539 for graph formula",
+    "sum_mu": 45276
+  },
+  "lock_statement": "H^\u2022_graph: \u03b20=1, \u03b21=36B'-8=19396; H^\u2022_form: H0\u2245Q, H1=0, H2\u2245Q\u00b7[\u03b1\u2297\u03b4f]; filled product acyclic; essential 2-class = charge\u2013tower coupling."
 }
