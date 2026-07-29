@@ -37,6 +37,7 @@ Clean LaTeX source for the full axiomatic foundation.
 - **Discrete patterns on residual carrier** (`Discrete_Patterns_Residual_Carrier.md`): core linking; fiber linking; incidence; \(\omega_2,\mu\)
 - **Discrete TTC/RTTC package \(\mathfrak{T}_{\mathrm{res}}\)** (`Discrete_Torsion_Complex_Residual.md`): residual-only torsion-style complex; \(\beta_\sharp\)-homogeneous path; \(B'\equiv 3\pmod 8\leftrightarrow\lvert U\rvert=3\)
 - **Residual product complex** (`Residual_Product_Complex.md`, `scripts/residual_product_complex_probe.py`): \(K_9\times P_{B'}\); mixed closed \(\eta=\alpha\otimes\delta f-\omega_2\otimes f\); \(\tilde\mu=\mu\otimes 1\); continuum Cartan not claimed
+- **Biological 18/521 signature report** (`Biological_18_521_Signature_Report.md`): MT/DDG extraction status — structurally compatible, **numerically unconfirmed**; Orch-OR\(^{11\mathrm{D}}\) Cat.\ B; packaging 18+521 locked under (S)
 - **Non-circular length** (`NonCircular_Lstar_Exploration.md`, `NonCircular_18_plus_521.md`, `L_body_Structural_Derivation.md`, `scripts/verify_L_body_structural.py`): \(\lfloor e^3/\ln 3\rfloor=18\) Cat.\ A; \(L_{\mathrm{body}}=B_Q-f_{\max}=521\) under (S); \(18+521=539\) non-circular **length** packaging; free endpoints/basins \(\neq 539\) objects
 - **Resonant layer resolved** (`Resonant_Layer_Resolved.md`): resonant layer = packaging as hard iteration budget; production HQH-539 already fixed-round; short basins Cat.\ A overridden by design; Option 3 for objects
 - 9 Maths (pillars; pattern contacts in `Nine_Maths_Pattern_Exploration.md`):

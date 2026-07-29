@@ -135,8 +135,10 @@ Continuum hopfion, torsion, or measure constructions remain **Category B design 
 | R-FFT multi-\(k\) residual analysis and public loaders | Open |
 | Individuality lifetime-ratio / sub-harmonic falsifiability | Open |
 | E1–E2 free-map residue-word probes | Executed samples ≠ 539; low priority |
+| **Biological 18/521 signature (MT / DDG)** | **Structurally compatible, numerically unconfirmed** — `Biological_18_521_Signature_Report.md` |
 
-**Rule:** Secondary tracks **must not** be mixed into residual-carrier provenance statements.
+**Rule:** Secondary tracks **must not** be mixed into residual-carrier provenance statements.  
+**Biological rule:** Orch-OR\(^{11\mathrm{D}}\) / MT claims are Category B; packaging integers keep foundation provenance (\(L_{\mathrm{pref}}\), \(L_{\mathrm{body}}\) under (S)).
 
 ---
 
