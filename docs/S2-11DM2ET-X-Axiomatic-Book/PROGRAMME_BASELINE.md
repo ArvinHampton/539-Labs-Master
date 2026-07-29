@@ -173,6 +173,10 @@ Continuum hopfion, torsion, or measure constructions remain **Category B design 
 
 ---
 
+## 8b. Full findings report (2026-07-29)
+
+**Canonical synthesis:** Full_Report_Findings_Missed_Patterns_Implications.md
+
 ## 9. Quick pointer table
 
 | Topic | File |
