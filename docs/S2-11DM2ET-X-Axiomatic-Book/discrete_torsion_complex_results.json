@@ -1,0 +1,55 @@
+{
+  "provenance": {
+    "objects": "residual flux quanta",
+    "principle_S": true,
+    "democratic_charge_partition": true,
+    "not_free_Tsharp_basins": true,
+    "no_go_lift_claimed": false,
+    "continuum_Cartan_not_claimed": true
+  },
+  "package": "Tor_res = (rho, alpha, L, omega2, mu, f, delta_f)",
+  "rho": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    0,
+    1,
+    2
+  ],
+  "B_prime": 539,
+  "charge_complex": {
+    "omega2_ordered_triples": -1,
+    "mu_ordered_triples": 539,
+    "sum_mu": 45276,
+    "sum_omega2": -84,
+    "d_mu_zero": true,
+    "d_omega2_zero": true
+  },
+  "path_complex": {
+    "edges": 538,
+    "all_edges_delta_beta_sharp_plus_1": true,
+    "delta_f_telescoping": 241,
+    "tower_triangles": 56,
+    "omega2_idx_on_triangles": -1
+  },
+  "arithmetic_identities": {
+    "I1_B_mod_8": 3,
+    "I2_U_card": 3,
+    "I2_matches_B_mod_8": true,
+    "I3_U_plus_V": 8,
+    "I4_3_68_plus_5_67": 539,
+    "I5_sum_mu": 45276,
+    "I6_sum_omega2": -84,
+    "I7_path_edges_mod_8": 2,
+    "I8_cross_UV_linking_zero": true
+  },
+  "forbidden_claims": [
+    "continuum Cartan field equation",
+    "free T^sharp origin",
+    "No-Go lift",
+    "hopfions produce 539 free basins"
+  ]
+}

@@ -225,7 +225,8 @@ Continuum hopfion / Faddeev–Niemi / SYK claims below **do not** override this 
 |--------|--------|
 | Discrete linking pairing on cores | **Done** — \(\mathrm{Lk}(\mathcal{O}_{\mathrm{res}}^{(a)},\mathcal{O}_{\mathrm{res}}^{(b)})=B'\mathrm{sgn}(a-b)\) (`Discrete_Patterns_Residual_Carrier.md`) |
 | Tower coboundary / flat mod-9 cochains | **Done** (combinatorial substrate) |
-| Combinatorial torsion **operator** sourcing TTC continuum \(T\) | Open Category B enrichment |
+| Discrete torsion-style package \(\mathfrak{T}_{\mathrm{res}}\) on residual cores | **Done** — `Discrete_Torsion_Complex_Residual.md` |
+| Combinatorial torsion **operator** identified with continuum book \(T\) | Open Category B enrichment |
 | Hopf→Cartan torsion field equation in the book’s \(T\)-complex | Open Category B |
 | Soliton-lattice measure → holographic screen measure | Open Category B |
 
