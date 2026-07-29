@@ -78,3 +78,6 @@ Raw iteration of this map reaches small values in roughly 90–120 steps for lar
 ## Status
 
 All Category B claims remain labeled as proprietary framework claims pending independent peer review. The Canonical T3 map is the retained baseline after the T4121 hardness evaluation.
+
+- Nine Maths pattern exploration (Hopf/torsion/residual carrier): docs/S2-11DM2ET-X-Axiomatic-Book/Nine_Maths_Pattern_Exploration.md
+
