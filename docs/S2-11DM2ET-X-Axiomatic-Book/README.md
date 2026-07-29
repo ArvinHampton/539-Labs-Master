@@ -25,7 +25,7 @@ Clean LaTeX source for the full axiomatic foundation.
 - **Bandyopadhyay resonance theory** (`Bandyopadhyay_Resonance_Theory.md`) — scaffold; bracket SOMU
 - **Coboundary operators on product complexes** (`Coboundary_Operators_Product_Complexes.md`)
 - Non-circular length packaging; Resonant layer resolved; 9 Maths pillars; Cross-Dependency Graph; Tests T1–T6
-- **Residual product cohomology** (Residual_Product_Cohomology.md) — H^•(X_×) graph/form layers
+- **Residual product cohomology** (Residual_Product_Cohomology.md; **form SS** (Residual_Form_Spectral_Sequences.md) — H^•(X_×) graph/form layers
 
 
 ## Key Constants (see provenance before quoting)

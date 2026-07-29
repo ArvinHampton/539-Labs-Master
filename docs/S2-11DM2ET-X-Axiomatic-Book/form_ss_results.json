@@ -1,0 +1,36 @@
+{
+  "provenance": {
+    "objects": "residual flux quanta",
+    "principle_S": true,
+    "not_free_Tsharp": true,
+    "no_go_lift": false,
+    "continuum_TTC_not_claimed": true
+  },
+  "B_prime": 539,
+  "form_SS": {
+    "H0": 1,
+    "H1": 0,
+    "H2": 1,
+    "permanent_cycle": "[alpha \u2297 delta_f]",
+    "eta_exact": true,
+    "mu_exact_ordered": true,
+    "collapse": "E2 (thin residual F)",
+    "E_infty": {
+      "E_infty_0_0": "[1]",
+      "E_infty_1_0": "0",
+      "E_infty_0_1": "0",
+      "E_infty_2_0": "0 (mu, omega2 exact ordered)",
+      "E_infty_1_1": "[alpha \u2297 delta_f]",
+      "E_infty_0_2": "0 (no path 2-cells)"
+    }
+  },
+  "checks": {
+    "D_af_plus_eta_zero": true,
+    "s_ad_not_boundary": true,
+    "ordered_mu_plus_B_omega2_zero": true,
+    "F2_rank": 3,
+    "im_rank": 2
+  },
+  "layer_G_beta1": 19396,
+  "layer_S": "filled Tot acyclic (comparison only)"
+}

@@ -5,7 +5,8 @@
 **Provenance:** residual flux under Principle **(S)** — not free \(T^\sharp\); no continuum Cartan identification claimed; No-Go / Option 3 unchanged.
 
 **Depends on:** `Residual_Product_Complex.md`, `Discrete_Torsion_Complex_Residual.md`.  
-**Probe:** `scripts/residual_product_cohomology_probe.py`.
+**Probes:** `scripts/residual_product_cohomology_probe.py`, `scripts/form_ss_probe.py`.  
+**Spectral sequences:** `Residual_Form_Spectral_Sequences.md`.
 
 ---
 
@@ -235,9 +236,20 @@ At \(B'=539\): \(\beta_1=36\cdot 539-8=19404-8=19396\).
 
 ---
 
+## 5b. Spectral sequences (pointer)
+
+Charge and path filtrations of \(\mathrm{Tot}(C^{\bullet,\bullet})\) collapse to \(H^{>0}=0\) for **filled** factors (Layer S).  
+The **thin residual form bicomplex** \(F^{p,q}\) keeps
+\[
+E_\infty^{1,1}\cong\mathbb{Q}\cdot[\alpha\otimes\delta f]
+\]
+with \(\eta\) and ordered \(\tilde\mu\) as boundaries. Full writeup: `Residual_Form_Spectral_Sequences.md`.
+
+---
+
 ## 6. Verification
 
-`scripts/residual_product_cohomology_probe.py` asserts:
+`scripts/residual_product_cohomology_probe.py` and `scripts/form_ss_probe.py` assert:
 
 1. Graph \(V,E,\beta_1\) integers and closed formula \(36B'-8\).  
 2. Form complex: \(D\) tables on generators; \(H^0,H^1,H^2\) dimensions \(1,0,1\).  
