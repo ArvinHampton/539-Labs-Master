@@ -127,6 +127,16 @@ Continuum hopfion, torsion, or measure constructions remain **Category B design 
 
 ---
 
+
+## 6c. Multi-angle unification openings — **Started**
+
+| Rank | Path | Status |
+|------|------|--------|
+| 1 | G–F pairing \(\langle\alpha\otimes\delta f,S\rangle\) | **Probe** — \gf_pairing_window_results.json\ |
+| 2 | Window filtration \(W=L_{\mathrm{pref}}=18\) | **Probe** — same |
+| 3 | Sector↔band dictionary | **RFC** — \Sector_Band_Dictionary_RFC.md\ (Cat B) |
+| Review | Missed patterns A/S/B/O | \Multi_Angle_Unification_Review.md\ |
+
 ## 7. Secondary tracks — **Open / lower priority**
 
 | Track | Status |

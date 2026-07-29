@@ -52,4 +52,4 @@ Foundation layer for resonant attractor mathematics underlying HQH-539. Security
 *Per aspera ad astra.*
 
 The universe counts in threes.
-- **Form SS differentials** (Residual_Form_SS_Differentials.md)
+- **Multi-angle unification review** (Multi_Angle_Unification_Review.md): missed patterns; G–F pairing + window filtration probes; sector↔band RFC

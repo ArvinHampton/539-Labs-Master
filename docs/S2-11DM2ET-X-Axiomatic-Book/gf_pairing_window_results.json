@@ -1,0 +1,36 @@
+{
+  "provenance": {
+    "residual_S_only": true,
+    "not_free_Tsharp": true,
+    "not_empirical_biology": true,
+    "not_security_reduction": true
+  },
+  "G_F_pairing": {
+    "definition": "<alpha\u2297delta_f, S(a,b;i)> = alpha(a,b)*delta_f(i)",
+    "n_squares_a_lt_b": 19368,
+    "n_nonzero_pairings": 8676,
+    "Sigma_abs_mass": 8676,
+    "formula_Sigma": "C(9,2) * sum|df|",
+    "n_mixed_square_cycles": 19368,
+    "graph_beta1": 19396
+  },
+  "window_filtration": {
+    "W_L_pref": 18,
+    "n_window_edges": 17,
+    "n_tower_edges": 521,
+    "Sigma_win": 252,
+    "Sigma_tow": 8424,
+    "ratio_Sigma_win_over_Sigma": 0.029045643153526972,
+    "target_L_pref_over_B_prime": 0.03339517625231911,
+    "sum_df_win": 7,
+    "sum_df_tow": 234,
+    "sum_abs_df_win": 7,
+    "sum_abs_df_tow": 234,
+    "note": "homological shell diagnostic under (S), not MT peak recovery"
+  },
+  "surrogate_note": {
+    "df_reverse_preserves_Sigma_abs": true,
+    "interpretation": "absolute pairing mass is order-insensitive; window split uses residual order prefix"
+  },
+  "unification_reading": "preserve mixed class and pairings under refinement \u2014 not one PDE"
+}
