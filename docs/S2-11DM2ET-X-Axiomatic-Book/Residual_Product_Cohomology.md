@@ -7,11 +7,6 @@
 **Results:** `residual_product_cohomology_results.json`  
 **Provenance:** residual flux under Principle **(S)** only. Not free \(T^\sharp\). Continuum TTC identification = **Category B**.
 
-<<<<<<< HEAD
-**Depends on:** `Residual_Product_Complex.md`, `Discrete_Torsion_Complex_Residual.md`.  
-**Probes:** `scripts/residual_product_cohomology_probe.py`, `scripts/form_ss_probe.py`.  
-**Spectral sequences:** `Residual_Form_Spectral_Sequences.md`.
-=======
 Three layers are separated so the interesting residual content is **not** lost in an acyclic filling.
 
 \[
@@ -19,7 +14,9 @@ X_\times = K_9 \times P_{B'},\qquad
 B'=\Big\lfloor\frac{N_{\mathrm{flux}}-f_{\max}}{9}\Big\rfloor=539
 \quad\text{(packaging residual cardinality)}.
 \]
->>>>>>> 0dcd279ed1601aedb85ebf92c8bd4d3b21e53558
+**Probes:** `scripts/residual_product_cohomology_probe.py`, `scripts/form_ss_probe.py`.
+**Spectral sequences:** `Residual_Form_Spectral_Sequences.md`.
+
 
 ---
 
@@ -129,7 +126,6 @@ H^\bullet_{\mathrm{form}}:\ H^0\cong\mathbb{Q},\ H^1=0,\ H^2\cong\mathbb{Q}\cdot
 
 The residual product’s **essential 2-class** is the charge–tower coupling \([\alpha\otimes\delta f]\); continuum TTC identification remains **Category B** design space.
 
-<<<<<<< HEAD
 **Verification:** exact integer arithmetic in the probe (no floating point).
 
 ---
@@ -324,6 +320,3 @@ with \(\eta\) and ordered \(\tilde\mu\) as boundaries. Full writeup: `Residual_F
 > H^2\cong\mathbb{Q}\cdot[\alpha\otimes\delta f].
 > \]
 > Full filled product is acyclic. Residual pattern cohomology is the **mixed charge–tower class** in \(H^2(F)\) and the large **graph cycle space** in \(H^1(G_\times)\). Continuum TTC identification remains Category B design space.
-=======
-*Per aspera ad astra.*
->>>>>>> 0dcd279ed1601aedb85ebf92c8bd4d3b21e53558
