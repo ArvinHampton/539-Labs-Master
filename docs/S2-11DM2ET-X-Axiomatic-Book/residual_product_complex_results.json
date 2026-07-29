@@ -1,0 +1,38 @@
+{
+  "provenance": {
+    "objects": "residual flux quanta",
+    "principle_S": true,
+    "democratic_charge_partition": true,
+    "not_free_Tsharp_basins": true,
+    "no_go_lift_claimed": false,
+    "continuum_Cartan_not_claimed": true
+  },
+  "product": "K_9 x P_{B'}",
+  "B_prime": 539,
+  "differential": "D(phi\u2297psi)=d_Q phi\u2297psi + (-1)^|phi| phi\u2297d_P psi",
+  "mixed_cochains": {
+    "mu_tilde": "mu \u2297 1 (recovers mu on triangles)",
+    "eta": "alpha\u2297delta_f - omega2\u2297f",
+    "eta_on_square": "alpha(a,b)*delta_f(i)",
+    "eta_on_triangle": "-omega2(a,b,c)*f(i)",
+    "D_eta_zero_prisms": true,
+    "D_mu_tilde_zero": true,
+    "nontrivial_square_values": true,
+    "nontrivial_triangle_values": true,
+    "sum_eta_on_all_squares": 0
+  },
+  "arithmetic": {
+    "I1_B_mod_8": 3,
+    "I2_U_card": 3,
+    "P1_sum_mu": 45276,
+    "P3_path_edges_mod_8": 2
+  },
+  "path": {
+    "edges": 538,
+    "delta_f_telescoping": 241,
+    "f_range": [
+      1,
+      242
+    ]
+  }
+}

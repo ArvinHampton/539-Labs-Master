@@ -190,7 +190,7 @@ The 2-cocycle \(\mu\) is **homogeneous of weight 1 in \(B'\)**: summing over cha
 
 | Item | Notes |
 |------|--------|
-| Total complex \(K_9\times P_{B'}\) with product differential | Couple \(\mu\) to path chains |
+| Total complex \(K_9\times P_{B'}\) with product differential | **Done** — `Residual_Product_Complex.md` (\(\eta=\alpha\otimes\delta f-\omega_2\otimes f\), \(\tilde\mu=\mu\otimes 1\)) |
 | Coefficients in \(\mathbb{Z}/B'\) or \(\mathbb{Z}/8\) | Reduce \(L\) and \(\mu\) mod Bott residual |
 | Cohomology dimensions \(H^*(K_9;\mathbb{Z})\) with \(\alpha,\mu\) as products | Pure algebraic topology on \(K_9\) |
 | Direction 1 Massey higher products | \(d^{-1}\) products of \(\mu\) with \(\alpha\) |
