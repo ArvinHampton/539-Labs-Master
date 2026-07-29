@@ -113,6 +113,20 @@ Continuum hopfion, torsion, or measure constructions remain **Category B design 
 
 ---
 
+## 6b. Pattern-research directions (ranked) — **Primary started**
+
+| Rank | Direction | Status |
+|------|-----------|--------|
+| **1** | Discrete combinatorial patterns on residual carrier (linking, discrete torsion-style cochains, RNT pairings) | **Started / first theorems** — `Discrete_Patterns_Residual_Carrier.md` (core linking \(L_{ab}=B'\mathrm{sgn}(a-b)\)) |
+| **2** | Controlled Cat.\ B enrichment of TTC/RTTC | Open design space (use discrete cochains as substrate only) |
+| **3** | Measure patterns BMMT/HMT | Open secondary Cat.\ B |
+| **4** | Architecture A4–A5 | Open |
+| **5** | 1001 / R-FFT / individuality falsifiability | Open lower priority |
+
+**Primary recommendation in force:** discrete patterns on cores first.
+
+---
+
 ## 7. Secondary tracks — **Open / lower priority**
 
 | Track | Status |

@@ -219,14 +219,15 @@ Continuum hopfion / Faddeev–Niemi / SYK claims below **do not** override this 
 
 ---
 
-## What would count as progress (not done here)
+## What would count as progress
 
-| Target | Would require |
-|--------|----------------|
-| Combinatorial torsion cocycle on \(\mathcal{O}_{\mathrm{res}}\) | Explicit cochain / coboundary from residual labels |
-| Hopf→Cartan torsion field equation in the book’s \(T\)-complex | Matching dimensions, units, and cohomology class |
-| Discrete linking pairing on cores | Number-theoretic definition + invariance proof |
-| Soliton-lattice measure → holographic screen measure | Limit theorem (Cat.\ B) |
+| Target | Status |
+|--------|--------|
+| Discrete linking pairing on cores | **Done** — \(\mathrm{Lk}(\mathcal{O}_{\mathrm{res}}^{(a)},\mathcal{O}_{\mathrm{res}}^{(b)})=B'\mathrm{sgn}(a-b)\) (`Discrete_Patterns_Residual_Carrier.md`) |
+| Tower coboundary / flat mod-9 cochains | **Done** (combinatorial substrate) |
+| Combinatorial torsion **operator** sourcing TTC continuum \(T\) | Open Category B enrichment |
+| Hopf→Cartan torsion field equation in the book’s \(T\)-complex | Open Category B |
+| Soliton-lattice measure → holographic screen measure | Open Category B |
 
 ---
 
