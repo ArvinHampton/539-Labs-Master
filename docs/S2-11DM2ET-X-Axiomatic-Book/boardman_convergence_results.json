@@ -1,0 +1,124 @@
+{
+  "provenance": {
+    "residual_S_only": true,
+    "kit_untouched": true,
+    "option3_untouched": true,
+    "thin_form_SS_untouched": true,
+    "not_continuum_as_residual": true
+  },
+  "thin_F_filtration": {
+    "charge_filtration_max_steps_per_degree": 3,
+    "support_degrees": [
+      0,
+      1,
+      2
+    ],
+    "finite_filtration_per_degree": true,
+    "exhaustive": true,
+    "separated": true,
+    "complete": true,
+    "lim1_filtration_tower": 0,
+    "strong_convergence": true,
+    "boardman_conditional_needed": false
+  },
+  "form_SS": {
+    "E2_equals_E_infty": true,
+    "dr_ge2_idle": true,
+    "dim_H2": 1,
+    "E_infty_1_1": "[alpha\u2297delta_f]",
+    "H2_reconstructed_from_E_infty": true,
+    "extension_problem_rank1_H2": false
+  },
+  "shell_inverse_system": {
+    "multi_W": [
+      {
+        "W": 5,
+        "M_win": 36,
+        "dim_H2_proxy": 1
+      },
+      {
+        "W": 10,
+        "M_win": 108,
+        "dim_H2_proxy": 1
+      },
+      {
+        "W": 15,
+        "M_win": 216,
+        "dim_H2_proxy": 1
+      },
+      {
+        "W": 18,
+        "M_win": 252,
+        "dim_H2_proxy": 1
+      },
+      {
+        "W": 30,
+        "M_win": 432,
+        "dim_H2_proxy": 1
+      },
+      {
+        "W": 45,
+        "M_win": 648,
+        "dim_H2_proxy": 1
+      },
+      {
+        "W": 90,
+        "M_win": 1404,
+        "dim_H2_proxy": 1
+      },
+      {
+        "W": 180,
+        "M_win": 2844,
+        "dim_H2_proxy": 1
+      },
+      {
+        "W": 270,
+        "M_win": 4320,
+        "dim_H2_proxy": 1
+      },
+      {
+        "W": 539,
+        "M_win": 8676,
+        "dim_H2_proxy": 1
+      }
+    ],
+    "all_rW_nonzero_from_W_ge_5": true,
+    "H2_stabilizes_rank1": true,
+    "Mittag_Leffler": true,
+    "lim1_H2_shell": 0,
+    "shell_tower_boardman_quiet": true,
+    "holim_H2_equals_lim_H2": true,
+    "note": "under default residual r_W iso for tested W"
+  },
+  "notions_comparison": {
+    "collapse_E2_E_infty": true,
+    "strong_convergence": true,
+    "conditional_convergence_only": false,
+    "formality_F_simeq_H": true,
+    "boardman_idle_thin_F": true
+  },
+  "checklist_thin_F": {
+    "filtration_finite_per_degree": true,
+    "stop_strong_convergence": true,
+    "boardman_further_checks_needed": false
+  },
+  "boardman_risk_sites": {
+    "infinite_product_paths": "S",
+    "unbounded_charge_filtration": "S",
+    "continuum_de_Rham_mesh_limit": "B",
+    "thin_F": "O_false_risk"
+  },
+  "slogans": {
+    "avoid": "SS converges (unspecified type)",
+    "use": "strongly converges (finite filtration)",
+    "E_infty_zero_implies_H_zero": "only if strong/separated",
+    "boardman_blocks_residual_H2": false
+  },
+  "category": {
+    "boardman_needed_thin_F": "O_false",
+    "strong_convergence_thin": "A",
+    "shell_lim1_zero_under_rW_iso": "A/S",
+    "continuum_may_be_conditional": "S/B"
+  },
+  "status": "BOARDMAN_IDLE_THIN_F_STRONG_CONVERGENCE_A"
+}

@@ -1,0 +1,97 @@
+{
+  "provenance": {
+    "residual_S_only": true,
+    "does_not_reopen_locks": true,
+    "option3_intact": true,
+    "thin_F_intact": true,
+    "kit_frozen": true,
+    "P_plus_not_locked": true,
+    "bio_not_in_this_probe": true,
+    "review_doc": "Multi_Angle_Review_Post_Kit_Pplus_S1S3.md"
+  },
+  "closed_channels_G_F_M": {
+    "beta1_G": 19396,
+    "H2_F": "Q[alpha\u2297delta_f] rank 1",
+    "jump_mass_M": 8676,
+    "orthogonal_note": "three numerical channels; \u03a8 bridges G squares to F/M"
+  },
+  "rank3_N2_closed_form": {
+    "formula": "N2 = #{ t : n_AP(f_max, Q, B', I_t) = 3 }",
+    "n_AP": "k in [0,B') with f_max+kQ in I_t; count = k_max-k_min+1",
+    "I_t_from": "loads from Q0\u2013Q1 partition of N_flux",
+    "bound": "n_t <= floor((L_t-1)/Q)+1 <= 3 for L_t<=21, Q=9",
+    "hence": "N2 = sum_t C(n_t,3) = #{t: n_t=3} when max n_t=3",
+    "value": 56,
+    "elevated_from_happened": true,
+    "occupancy_multiset": {
+      "0": 1,
+      "1": 1,
+      "2": 185,
+      "3": 56
+    },
+    "max_hits_per_tower": 3,
+    "verified_n_closed_equals_brute": true,
+    "status": "N2_IDENTITY_UNDER_Q0_Q3_EXECUTED"
+  },
+  "rank2_transfer_Psi": {
+    "definition": "\u03a8(\u03b3_S) = <\u03b1\u2297\u03b4f, S> for mixed square cycle \u03b3_S = \u2202S",
+    "domain": "mixed 4-cycles in K9 \u25a1 P (fundamental squares)",
+    "codomain": "R (here Z)",
+    "abs_sum_all_squares": 8676,
+    "signed_sum_all_squares": -8676,
+    "support": "jump edges only (stay squares contribute 0)",
+    "equals_jump_mass_M": true,
+    "status": "TRANSFER_PSI_EXECUTED_ON_FUNDAMENTAL_SQUARES",
+    "note": "full H1 basis (all cycle types) remains open; squares already bridge G\u2013F\u2013M"
+  },
+  "jump_stay_split": {
+    "n_jump": 241,
+    "n_stay": 297,
+    "mass_density_M_over_n_jump": 36.0,
+    "identity_M_equals_36_n_jump": true,
+    "signed_mass_spectrum": {
+      "36": 241
+    },
+    "jump_perp_stay_triple_edges": true,
+    "n_stay_edges_in_triples": 112,
+    "gap_multiset_between_n3_blocks": {
+      "5": 6,
+      "7": 25,
+      "9": 24
+    }
+  },
+  "graph_cycle_type_census": {
+    "V": 4851,
+    "E_horizontal_path": 4842,
+    "E_vertical_charge": 19404,
+    "E_total": 24246,
+    "beta1": 19396,
+    "n_mixed_squares": 19368,
+    "formula_beta1": "36*B'-8",
+    "pairing_carrying_cycles": "mixed squares on jump edges (\u03a8 nonzero)"
+  },
+  "shell": {
+    "W": 18,
+    "M_win": 252,
+    "M_tow": 8424,
+    "frac_win": 0.029045643153526972,
+    "rW_nonzero": true
+  },
+  "frontier_not_executed_here": {
+    "1_multi_cohort_S1S3": "Cat B data ladder",
+    "4_jump_Hodge": "optional metric S",
+    "5_mapping_cone_rW": "algebra S",
+    "6_stay_secondary_classes": "F+ research S",
+    "7_multi_channel_mass_covariance": "Cat B same EDF",
+    "8_anesthesia": "after replication B",
+    "9_denser_P_plus": "only if stay Stokes needed S",
+    "10_crypto_canary": "eng B"
+  },
+  "hazard_watch": {
+    "status_inflation": "RESEARCH_STABLE is not locked",
+    "jump_stay_fusion": "forbidden by geometry",
+    "S1S3_to_H2": "O",
+    "56_as_packaging": "O"
+  },
+  "status": "FRONTIER_PROBE_N2_PSI_JUMP_EXECUTED"
+}

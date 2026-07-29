@@ -113,6 +113,8 @@ Default residual data:
 **Diagnostic one-liner:**  
 **Shell sees the coupling; tower dominates its mass.**
 
+**Mapping cone:** \(r_{18}\) iso on rank-1 \(H^2\) \(\Rightarrow\) \(H^2(\mathrm{Cone}\,\rho_W)=0\) in the thin model — tower mass is **support**, not a second class. See `Mapping_Cone_rW.md`.
+
 ## 1.4 Multi-\(W\) boolean curve (probe widths)
 
 | \(W\) | Edges | \(M_{\mathrm{win}}\) | frac | target \(W/B'\) | \(r_W\neq0\) |
@@ -244,13 +246,17 @@ Charge filtration on enriched residual forms \(F^+\):
 | Inflates “56” into packaging integer | 56 is **data-dependent tower geometry**, not \(L_{\mathrm{pack}}\) |
 | Breaks near-term kit order | \(P^+\) is **optional residual R&D**, after kit freeze |
 
-## 2.7 Minimal \(P^+\) research programme
+## 2.7 Minimal \(P^+\) research programme — **executed**
 
-1. Define oriented 2-cells for 56 same-tower triples.  
-2. Set \(\omega_P(\delta f)\) by discrete Stokes on those triangles.  
-3. Recompute \(D(\alpha\otimes\delta f)\) and matrix rank of residual form \(D\) on finite generators.  
-4. Report: \(\dim H^2(F^+)\) and whether \([\alpha\otimes\delta f]\) survives.  
-5. Only if stable → optional `Residual_P_plus_MultiScale.md` lock candidate.
+1. Define oriented 2-cells for 56 same-tower triples. **Done** (all consecutive).  
+2. Set \(\omega_P(\delta f)\) by discrete Stokes on those triangles. **Done** — \(\omega_P(\delta f)=0\) (path-integrated and chord-zero).  
+3. Recompute \(D(\alpha\otimes\delta f)\) and matrix rank of residual form \(D\) on finite generators. **Done** — vertical piece zero.  
+4. Report: \(\dim H^2(F^+)\) proxy **1**; \([\alpha\otimes\delta f]\) **survives**.  
+5. Optional note: `Residual_P_plus_MultiScale.md` — **research status**, **not** theorem lock.  
+
+**Probe:** `scripts/residual_p_plus_multiscale_probe.py` → `residual_p_plus_multiscale_results.json`.  
+**Status code:** `RESEARCH_STABLE_PERMANENT_CLASS_NOT_LOCKED`.  
+**Topology refinement:** M1 simplicial set (path + 56 chords + 56 faces), contractible, \(d_P\delta f=0\) — see `P_plus_2Complex_Topology_Flux_Quantization.md`.
 
 ---
 
@@ -273,7 +279,9 @@ Optional P+ (OPEN residual R&D)
 | \(r_W\neq 0\) at \(W=18\) | **Executed TRUE** |
 | Status `SURJECTIVE_BOTH_SHELL_AND_TOWER` | **Executed** |
 | Multi-\(W\) curve | **Executed** (all \(r_W\neq0\)) |
-| \(P^+\) 56 triples | **Counted**; construction **not** locked |
+| \(P^+\) 56 triples | **Counted**; Stokes / \(H^2\) research **executed** |
+| \(\omega_P(\delta f)\) | **0**; permanent class **survives** |
+| \(P^+\) theorem lock | **NO** (`RESEARCH_STABLE_PERMANENT_CLASS_NOT_LOCKED`) |
 | Continuum EC/TTC from \(P^+\) | **Category B / O** as proof |
 | Option 3 / thin \(F\) kit | **Intact** |
 

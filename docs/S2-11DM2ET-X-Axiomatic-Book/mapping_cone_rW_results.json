@@ -1,0 +1,91 @@
+{
+  "provenance": {
+    "residual_S_only": true,
+    "kit_unchanged": true,
+    "thin_F_unchanged": true,
+    "option3_unchanged": true,
+    "tower_mass_not_second_class": true,
+    "continuum_cone_B_only": true
+  },
+  "restriction": {
+    "W": 18,
+    "I_win": [
+      0,
+      16
+    ],
+    "I_tow": [
+      17,
+      537
+    ],
+    "cut_edge": 17,
+    "M_all": 8676.0,
+    "M_win": 252.0,
+    "M_tow": 8424.0,
+    "rW_nonzero": true,
+    "rW_iso_thin_rank1": true,
+    "status_code": "SURJECTIVE_BOTH_SHELL_AND_TOWER"
+  },
+  "cochain_split": {
+    "beta": "alpha\u2297delta_f on squares",
+    "beta_win_L1": 252.0,
+    "beta_tow_L1": 8424.0,
+    "rho_beta_equals_beta_win": true,
+    "rho_beta_tow_on_shell_zero": true,
+    "norm_rho_beta": 15.874507866387544,
+    "norm_rho_beta_tow_shell": 0.0
+  },
+  "thin_H2": {
+    "dim_H2_F": 1,
+    "dim_H2_F_proxy_rank": 1,
+    "dim_H2_F_le_W": 1,
+    "shell_s_ad_residual_from_im": 1.762424413785662e-14,
+    "shell_rank_F2": 2,
+    "shell_rank_im": 2,
+    "shell_dim_proxy": 0,
+    "generator": "[alpha\u2297delta_f]"
+  },
+  "mapping_cone": {
+    "definition": "Cone(rho)= F_<=W^n \u2295 F^{n+1}, d(x,y)=(d x + rho y, -d y)",
+    "triangle": "F --rho--> F_<=W --> Cone --> F[1]",
+    "LES_degree_2": "H2(F)--rW-->H2(F_<=W)-->H2(Cone)-->H3(F)",
+    "H3_F_thin": 0,
+    "dim_H2_Cone": 0,
+    "ker_rW": 0,
+    "coker_rW": 0,
+    "vector_space_cone_cohomology_trivial": true,
+    "reason": "r_W iso Q->Q and H3(F)=0 in thin model",
+    "cohomologically_quiet_degree_2": true
+  },
+  "support_vs_class": {
+    "M_tow_positive": true,
+    "same_class_tower_support": true,
+    "second_H2_summand_from_tower_mass": false,
+    "slogan_avoid": "tower mass => nontrivial mapping cone class",
+    "accurate": "tower mass => relative cochain support; H2(Cone)=0 if r_W iso"
+  },
+  "interface_cut": {
+    "edge": 17,
+    "delta_f": 0,
+    "M_local": 0,
+    "note": "geometry only; not a new cohomology class"
+  },
+  "counterfactual_pure_tower": {
+    "rW": false,
+    "ker_rW_would_be": 1,
+    "cone_would_carry_permanent_class": true
+  },
+  "exact_triangle_residual": {
+    "H2_F": "Q",
+    "rW": "iso",
+    "H2_F_le_W": "Q",
+    "H2_Cone": "0",
+    "H3_F": "0"
+  },
+  "category": {
+    "definitions_A": true,
+    "default_H2_Cone_zero_S_A": true,
+    "tower_mass_as_second_class_O": true,
+    "continuum_B": true
+  },
+  "status": "MAPPING_CONE_rW_EXECUTED_H2_CONE_ZERO_THIN"
+}

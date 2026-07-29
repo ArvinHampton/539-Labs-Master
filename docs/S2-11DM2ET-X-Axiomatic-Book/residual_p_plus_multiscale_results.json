@@ -1,0 +1,106 @@
+{
+  "provenance": {
+    "residual_S_only": true,
+    "not_free_Tsharp": true,
+    "no_continuum_Cartan": true,
+    "P_plus_auto_locked": false,
+    "option3_intact": true,
+    "thin_F_kit_intact": true,
+    "programme": "Shell_Restriction \u00a72.7 minimal P+ research"
+  },
+  "construction": {
+    "same_tower_unordered_triples": 56,
+    "towers_ge3": 56,
+    "size_multiset": {
+      "1": 1,
+      "2": 185,
+      "3": 56
+    },
+    "consecutive_index_triples": 56,
+    "triples_fully_in_window_k_lt_W": 3,
+    "triples_fully_in_tower_i_ge_W_minus_1": 53,
+    "triples_straddling_shell": 0,
+    "W": 18,
+    "sample_triples": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        7,
+        8,
+        9
+      ],
+      [
+        14,
+        15,
+        16
+      ],
+      [
+        21,
+        22,
+        23
+      ],
+      [
+        28,
+        29,
+        30
+      ]
+    ]
+  },
+  "omega_P_delta_f": {
+    "convention_path_integrated_Stokes": {
+      "definition": "g-hat(a,b)=f(b)-f(a); dg=gij+gjk-gik",
+      "all_zero": true,
+      "L2_norm": 0.0
+    },
+    "convention_chord_zero_Stokes": {
+      "definition": "only consecutive 1-skeleton edges; chords 0",
+      "all_zero": true,
+      "L2_norm": 0.0,
+      "reason": "all 56 triples are same-tower; consecutive df=0 on their edges"
+    },
+    "nonexact_test_g_i_equals_1_plus_i_mod_3": {
+      "path_integrated_all_zero": true,
+      "chord_zero_n_nonzero_triples": 56,
+      "chord_zero_L2": 30.298514815086232,
+      "note": "path-integral Stokes of any path 1-cochain vanishes (exact); chord-zero can act"
+    }
+  },
+  "D_alpha_tensor_delta_f": {
+    "formula": "omega2\u2297delta_f - alpha\u2297omega_P(delta_f)",
+    "vertical_alpha_omega_P_path_integrated": "zero_vector",
+    "vertical_alpha_omega_P_chord_zero": "zero_vector",
+    "closedness_spoiled_by_P_plus": false,
+    "minimal_P_omega_P": 0
+  },
+  "H2_F_plus": {
+    "thin_F2_rank": 3,
+    "thin_im_D1_rank": 2,
+    "dim_H2_thin_proxy": 1,
+    "permanent_class_survives": true,
+    "s_ad_residual_from_im": 29.39030417915772,
+    "path_H2_proxy_path_integrated": {
+      "dim": 56,
+      "meaning": "formal free path 2-cocycles if d_P from path-integrated C1 is 0"
+    },
+    "path_H2_proxy_chord_zero": {
+      "rank_im_dP": 56,
+      "dim_coker_proxy": 0
+    },
+    "design_target_1_preserve_mixed_class": true,
+    "design_target_2_secondary_path_2_room": true,
+    "status": "RESEARCH_STABLE_PERMANENT_CLASS_NOT_LOCKED"
+  },
+  "r_W_interaction": {
+    "rW_nonzero_unchanged": true,
+    "M_win": 252,
+    "heuristic": "P+ is tower multi-scale; shell 1-skeleton pairings unchanged"
+  },
+  "lock_decision": {
+    "auto_lock": false,
+    "reason": "Permanent class survives and omega_P(delta_f)=0 under residual geometry; path-2 secondary classes are convention-dependent proxies only. Keep as optional residual R&D; do not promote 56 to packaging integer.",
+    "optional_lock_candidate": "Residual_P_plus_MultiScale.md (research, not theorem lock)"
+  }
+}

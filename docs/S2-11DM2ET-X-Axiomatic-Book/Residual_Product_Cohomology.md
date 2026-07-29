@@ -213,6 +213,8 @@ and
 \]
 in \(H^2(F)\).
 
+**Formality:** \(F\simeq\mathbb{Q}[0]\oplus\mathbb{Q}[-2]\) in \(D(\mathbb{Q})\) — see `Thin_Complex_Formality.md`.
+
 *Proof sketch.*  
 \(H^0\): \(\ker D=\mathrm{span}\{\mathbf{1}\}\) since \(Df=v_{\delta}\neq 0\).  
 \(H^1\): \(\ker D=\mathrm{span}\{v_{\delta}\}=\mathrm{im}(D:\ F^0\to F^1)\).  

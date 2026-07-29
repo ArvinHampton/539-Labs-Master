@@ -1,9 +1,10 @@
 # RFC: Residual charge sectors \(\leftrightarrow\) DDG / MT band dictionary
 
-**Status:** **Category B** proposal + pre-registration stub — **not locked**.  
+**Status:** **Category B** — dictionary version **D2.0**; pre-registered D2 executed on CHB-MIT `chb01_01`; S1–S3 **PASS** on this dataset → **working Cat B dictionary** (not residual lock; **not** multi-cohort validated).  
 **Purpose:** Make the only bridge that can falsify bio-scale contact with residual \(Q=9\) **explicit**.  
 **Provenance:** residual form side stays **(S)**; band side is empirical.  
-**Does not** claim \(9=12\), peak counts 18/521, or free \(T^\sharp\) 539.
+**Does not** claim \(9=12\), peak counts 18/521, or free \(T^\sharp\) 539.  
+**Probe:** `scripts/sector_band_S1S3_probe.py` → `sector_band_S1S3_results.json`.
 
 ---
 
@@ -66,6 +67,31 @@ Let \(C_{q r}\) be a cross-band coupling matrix (e.g. PLV, coherence) after dict
 
 ---
 
-## 6. One-line
+## 6. Executed first public test (D2 · CHB-MIT)
 
-**Until a pre-registered sector↔band map is tested, biological unification across residual form and DDG/MT is metaphor; this RFC is the minimal falsifiable bridge.**
+**Pre-registration (frozen in probe):**  
+9 log-bins on \([0.5,40]\) Hz; \(q=0\ldots8\) low→high; \(n_{\mathrm{perm}}=200\); seed 5399; shell = top 2 bins; deep = bottom 4 bins; \(\alpha=0.05\); 120 s × 8 bipolar channels; mean PLV coupling matrix \(C_{qr}\).
+
+**Dataset:** PhysioNet CHB-MIT `chb01_01.edf` (real scalp EEG).
+
+| Statistic | Observed | Null / comparison | Result |
+|-----------|----------|-------------------|--------|
+| **S1** mean adjacent PLV | \(\approx 0.0646\) | label-shuffle mean lower; \(p=0\) (one-sided, 200 perm) | **PASS** |
+| **S2** high-shell within vs deep cross | within \(\approx 0.0779\) > cross \(\approx 0.0018\) | reverse would fail | **PASS** |
+| **S3** path-order drop vs noise drop | scramble drop \(\approx 0.0083\) > noise drop \(\approx -0.0083\) | mixed diagnostic falls under phase scramble | **PASS** |
+
+**Decision code:** `PROMOTE_WORKING_CAT_B_DICTIONARY`
+
+### Caveats (mandatory)
+
+- **Single recording / single subject** — not a multi-cohort claim.  
+- **Filter adjacency leakage** can inflate S1 adjacent coupling; pass is necessary, not sufficient, for “sector physics.”  
+- **Not** residual \(H^2\) identification; **not** 18/521 peaks; **not** Orch-OR; **not** security.  
+- Residual form locks and Option 3 are **unchanged**.  
+- Next: replicate on independent DDG/MT sets; anesthesia / relative SS design remains open.
+
+---
+
+## 7. One-line
+
+**D2 sector↔band map is a working Category B dictionary on CHB-MIT `chb01_01` (S1–S3 pass); residual math stays locked and independent — further cohorts required before any stronger bio claim.**

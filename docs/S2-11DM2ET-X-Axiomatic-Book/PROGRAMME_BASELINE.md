@@ -202,4 +202,32 @@ Continuum hopfion, torsion, or measure constructions remain **Category B design 
 
 ## Shell restriction r_W
 
-Executed: r_18 != 0 (SURJECTIVE_BOTH_SHELL_AND_TOWER). Multi-W curve all nonzero. P+ 56 triples counted, not auto-locked. See Shell_Restriction_rW_P_plus.md.
+Executed: r_18 != 0 (SURJECTIVE_BOTH_SHELL_AND_TOWER). Multi-W curve all nonzero. See Shell_Restriction_rW_P_plus.md.
+
+## Mapping cone of r_W
+
+Executed thin model: r_18 iso on rank-1 H2 => dim H2(Cone)=0; tower mass is support of same class not second summand. Status MAPPING_CONE_rW_EXECUTED_H2_CONE_ZERO_THIN. See Mapping_Cone_rW.md, scripts/mapping_cone_rW_probe.py.
+
+## Thin complex formality
+
+Theorem (A): thin F ≃ Q[0] ⊕ Q[-2] in D(Q); iota(e2)=alpha⊗delta_f; eta/mu in acyclic summand. Status THIN_FORMALITY_THEOREM_EXECUTED_A. See Thin_Complex_Formality.md, scripts/thin_formality_probe.py.
+
+## Boardman conditional convergence
+
+Thin F: finite filtration => strong convergence; Boardman idle. Shell tower ML quiet under r_W iso. Status BOARDMAN_IDLE_THIN_F_STRONG_CONVERGENCE_A. See Boardman_Conditional_Convergence.md, scripts/boardman_convergence_probe.py.
+
+## P+ multi-scale residual research
+
+Executed §2.7: omega_P(delta_f)=0; dim H2 proxy=1; permanent class survives; **not** auto-locked. See Residual_P_plus_MultiScale.md, scripts/residual_p_plus_multiscale_probe.py.
+
+## P+ M1 topology · residual flux quantization Q0–Q8
+
+Executed: M1 (path+56 chords+56 faces), chi=1, H>0=0 proxy, d_P(delta_f)=0, shell 3 / tower 53 faces, jump ⊥ stay orthogonality; integer pipeline Q0–Q8. Status P_PLUS_M1_TOPOLOGY_EXECUTED_QUANTIZATION_PIPELINE_A. **Not** theorem-locked. See P_plus_2Complex_Topology_Flux_Quantization.md, scripts/p_plus_2complex_topology_probe.py.
+
+## Sector↔band dictionary (Cat B)
+
+D2.0 on CHB-MIT chb01_01: S1–S3 PASS → working Cat B dictionary (single dataset; residual locks unchanged). Multi-cohort ladder still open. See Sector_Band_Dictionary_RFC.md, scripts/sector_band_S1S3_probe.py.
+
+## Post-kit multi-angle missed patterns
+
+Review: Multi_Angle_Review_Post_Kit_Pplus_S1S3.md. Frontier residual probe executed: N2 identity under Q0–Q3; transfer Ψ on mixed squares (=jump mass M); M=36*n_jump; jump⊥stay. Status FRONTIER_PROBE_N2_PSI_JUMP_EXECUTED. Does not reopen locks.

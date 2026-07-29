@@ -14,7 +14,8 @@
 
 **Provenance:** residual **(S)** only for (1)–(2). Dictionary (3) is **Category B** + data.  
 **Probes:** `scripts/gf_pairing_window_probe.py` → `gf_pairing_window_results.json`.  
-**RFC:** `Sector_Band_Dictionary_RFC.md`.  
+**RFC:** `Sector_Band_Dictionary_RFC.md` — D2 executed on CHB-MIT `chb01_01` (S1–S3 PASS → working Cat B; residual locks unchanged).  
+**P+ research:** `Residual_P_plus_MultiScale.md` (stable permanent class; not theorem-locked).  
 **Review:** `Multi_Angle_Unification_Review.md`.
 
 ---

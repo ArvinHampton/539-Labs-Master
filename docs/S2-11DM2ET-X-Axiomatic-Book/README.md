@@ -56,3 +56,10 @@ The universe counts in threes.
 - **Near-term unification kit** (Near_Term_Unification_Kit.md, scripts/gf_pairing_window_probe.py): pair [alpha⊗delta_f] with mixed cells; window-18 filtration; sector↔band RFC — Option 3 and thin F locked
 - **Full report: findings / missed patterns / implications** (Full_Report_Findings_Missed_Patterns_Implications.md) — 2026-07-29 synthesis; near-term kit frozen
 - **Shell restriction r_W + optional P+** (Shell_Restriction_rW_P_plus.md, scripts/shell_restriction_rW_probe.py): r_18!=0 SURJECTIVE_BOTH_SHELL_AND_TOWER; 56 same-tower triples counted not locked
+- **Mapping cone of r_W** (Mapping_Cone_rW.md, scripts/mapping_cone_rW_probe.py): thin H2(Cone)=0; tower mass = support not second class
+- **Thin complex formality** (Thin_Complex_Formality.md, scripts/thin_formality_probe.py): F ≃ Q[0]⊕Q[-2] in D(Q); THIN_FORMALITY_THEOREM_EXECUTED_A
+- **Boardman conditional convergence** (Boardman_Conditional_Convergence.md, scripts/boardman_convergence_probe.py): thin F strong convergence; Boardman idle
+- **P+ multi-scale research** (Residual_P_plus_MultiScale.md, scripts/residual_p_plus_multiscale_probe.py): omega_P(delta_f)=0; permanent class survives; RESEARCH_STABLE not theorem-locked
+- **P+ M1 topology · flux quantization Q0–Q8** (P_plus_2Complex_Topology_Flux_Quantization.md, scripts/p_plus_2complex_topology_probe.py): contractible 56 disks; d_P(delta_f)=0; jump ⊥ stay; integer pipeline A
+- **Sector↔band S1–S3** (Sector_Band_Dictionary_RFC.md, scripts/sector_band_S1S3_probe.py): D2.0 on CHB-MIT chb01_01 — S1–S3 PASS → working Cat B dictionary (not residual lock)
+- **Post-kit multi-angle missed patterns** (Multi_Angle_Review_Post_Kit_Pplus_S1S3.md, scripts/missed_patterns_frontier_probe.py): N2 identity; Ψ on squares; jump mass density 36; frontier ranks 1–10

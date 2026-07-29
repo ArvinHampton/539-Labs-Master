@@ -1,0 +1,159 @@
+{
+  "provenance": {
+    "residual_S_only": true,
+    "principle_S": true,
+    "not_free_Tsharp": true,
+    "P_plus_theorem_locked": false,
+    "canonical_model": "M1_simplicial_with_chords",
+    "kit_thin_F_unchanged": true,
+    "continuum_category_B": true
+  },
+  "topology_P_plus": {
+    "B_prime": 539,
+    "n_vertices": 539,
+    "n_path_edges": 538,
+    "n_chords_M1": 56,
+    "n_1_total_M1": 594,
+    "n_2_faces": 56,
+    "oriented_2_if_both_chiralities": 112,
+    "euler_chi_path": 1,
+    "euler_chi_P_plus_M1": 1,
+    "H0_path": 1,
+    "H_pos_path": 0,
+    "H0_P_plus": 1,
+    "H_pos_P_plus": 0,
+    "contractible_M1": true,
+    "pairwise_disjoint_blocks": true,
+    "block_gaps": {
+      "n_gaps": 55,
+      "min": 5,
+      "max": 9,
+      "multiset": {
+        "5": 6,
+        "7": 25,
+        "9": 24
+      },
+      "note": "index gaps between consecutive blocks (tower-jump bridges)"
+    },
+    "all_consecutive_span_2": true,
+    "shell_faces": 3,
+    "tower_faces": 53,
+    "straddle_faces": 0,
+    "W": 18,
+    "sample_triples": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        7,
+        8,
+        9
+      ],
+      [
+        14,
+        15,
+        16
+      ],
+      [
+        21,
+        22,
+        23
+      ],
+      [
+        28,
+        29,
+        30
+      ]
+    ]
+  },
+  "d_P_delta_f": {
+    "stay_edges_df_zero": true,
+    "chord_df_zero": true,
+    "Stokes_all_zero": true,
+    "D_alpha_delta_f_vertical_unchanged": true,
+    "formula": "D = omega2\u2297delta_f - alpha\u2297d_P(delta_f) with d_P(delta_f)=0",
+    "nonheight_g_chord_zero_n_nonzero": 56,
+    "note": "multi-scale content in non-height g, not tower-height delta_f"
+  },
+  "quantization_Q0_Q8": {
+    "Q0": {
+      "N_tow": 243,
+      "N_flux": 4880,
+      "tag": "A"
+    },
+    "Q1": {
+      "f_min": 20,
+      "R_exc": 20,
+      "loads_21": 20,
+      "loads_20": 223,
+      "tag": "A"
+    },
+    "Q2": {
+      "f_max": 21,
+      "R_card": 4859,
+      "tag": "A"
+    },
+    "Q3": {
+      "Q": 9,
+      "B_prime": 539,
+      "tag": "A"
+    },
+    "Q4": {
+      "df_values": [
+        0,
+        1
+      ],
+      "n_jumps": 241,
+      "n_stay": 297,
+      "tag": "A"
+    },
+    "Q5": {
+      "M": 8676,
+      "M_win": 252,
+      "M_tow": 8424,
+      "tag": "A/S"
+    },
+    "Q6": {
+      "H2_thin": "Q[alpha\u2297delta_f]",
+      "rank": 1,
+      "tag": "A"
+    },
+    "Q7": {
+      "N2": 56,
+      "formula": "sum binom(n_t,3)",
+      "tag": "A_count_S_complex"
+    },
+    "Q8": {
+      "W": 18,
+      "e_win": 17,
+      "e_tow": 521,
+      "tag": "A/S"
+    }
+  },
+  "orthogonality": {
+    "jump_mass_support_disjoint_from_stay_triple_edges": true,
+    "n_stay_edges_in_triples": 112,
+    "n_jump_edges": 241,
+    "channels": {
+      "mixed_class_mass": "delta_f != 0 edges (Q5)",
+      "P_plus_2_cells": "delta_f = 0 triples (Q7)",
+      "shell_restriction": "first 17 edges + 3 faces (Q8 + r_W)"
+    }
+  },
+  "product_X_times_plus": {
+    "factors_contractible": true,
+    "filled_Tot_acyclic_expectation": true,
+    "mixed_class_bidegree": "(1,1)",
+    "new_generators_optional": "1\u2297omega_P path-2 symbols"
+  },
+  "locks": {
+    "option3": true,
+    "thin_F": true,
+    "near_term_kit_order": "pair \u2192 window \u2192 RFC",
+    "P_plus_auto_locked": false,
+    "56_is_not_packaging": true
+  },
+  "status": "P_PLUS_M1_TOPOLOGY_EXECUTED_QUANTIZATION_PIPELINE_A"
+}

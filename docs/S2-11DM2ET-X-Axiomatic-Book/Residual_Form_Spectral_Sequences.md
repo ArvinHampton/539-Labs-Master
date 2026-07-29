@@ -209,6 +209,8 @@ H^2(F)\cong\mathbb{Q}\cdot[\alpha\otimes\delta f].
 
 No claim of infinite pages or continuum spectral sequences.
 
+**Convergence type:** finite charge filtration ⇒ **strong** convergence (\(E_\infty=\mathrm{gr}\,H\)); Boardman conditional convergence is **idle** for thin \(F\) — see `Boardman_Conditional_Convergence.md`.
+
 ---
 
 ## 5. Künneth spectral sequence (comparison)
