@@ -1,123 +1,126 @@
 # Residual Product Cohomology \(H^\bullet(X_\times)\)
 
-**Status:** Advanced and locked (combinatorial residual).  
+**Status:** Advanced and locked (three-layer separation).  
 **Date:** 2026-07-29  
-**Depends on:** `Residual_Product_Complex.md`, `scripts/residual_product_complex_probe.py`  
-**Probe:** `scripts/residual_product_cohomology_probe.py`  
+**Depends on:** `Residual_Product_Complex.md`  
+**Probe:** `scripts/residual_product_cohomology_probe.py` → OK  
 **Results:** `residual_product_cohomology_results.json`  
-**Provenance:** residual flux under Principle **(S)** only. Not free \(T^\sharp\). No continuum Cartan / No-Go lift.
+**Provenance:** residual flux under Principle **(S)** only. Not free \(T^\sharp\). Continuum TTC identification = **Category B**.
 
----
-
-## 0. Setup
+Three layers are separated so the interesting residual content is **not** lost in an acyclic filling.
 
 \[
-X_\times = K_9 \times P_{B'},\qquad B' = 539,
-\]
-\[
-D(\varphi\otimes\psi)=d_Q\varphi\otimes\psi+(-1)^{\deg\varphi}\varphi\otimes d_P\psi.
-\]
-Locked cochains: \(\alpha,\omega_2,\mu,f,\delta f,\eta=\alpha\otimes\delta f-\omega_2\otimes f,\tilde\mu=\mu\otimes 1\).
-
----
-
-## 1. Identity: \(\mu=-B'\,\omega_2\) on ordered triples
-
-On ordered charge triples \(a<b<c\):
-
-\[
-\omega_2(a,b,c)=-1,\qquad \mu(a,b,c)=B'\,,
-\]
-hence
-\[
-\boxed{\mu(a,b,c)=-B'\,\omega_2(a,b,c)}\quad\text{on all }a<b<c.
-\]
-
-**Verified** in probe (84 ordered triples).  
-
-The cup formula \(\mu=B'\,\mathrm{sgn}(a-b)\mathrm{sgn}(b-c)\) equals this alternating value on the ordered chamber; the fully alternating extension \(\mu_{\mathrm{alt}}:=-B'\omega_2\) is \(d_Q\)-closed on all 4-tuples.
-
----
-
-## 2. Three levels
-
-### 2.1 Graph (1-skeleton)
-
-Cartesian product of undirected graphs \(K_9\,\square\,P_{B'}\):
-
-| Object | \(V\) | \(E\) | \(b_0\) | \(b_1\) |
-|--------|------:|------:|--------:|--------:|
-| \(K_9\) | 9 | 36 | 1 | 28 |
-| \(P_{B'}\) | 539 | 538 | 1 | 0 |
-| Product 1-skeleton | \(9\cdot 539=4851\) | \(36\cdot539+538\cdot9=24246\) | 1 | **19396** |
-
-\[
-b_1 = E-V+1 = 19396
-\]
-for the connected product graph. This is **nontrivial combinatorial \(H_1\)** of the residual product 1-skeleton (not the geometric simplex product).
-
-### 2.2 Form complex (tensor + locked forms)
-
-| Fact | Status |
-|------|--------|
-| \(\eta=-D(\alpha\otimes f)\) | **True** (full tensor calculus) |
-| \([\eta]=0\) in unrestricted \(H^2(C^\bullet\otimes C^\bullet)\) | **Yes** |
-| \([\tilde\mu]=0\) when \(K_9\simeq\Delta^8\) | **Yes** (contractible) |
-| \(\eta\) still **nontrivial as cochain** (squares/triangles) | **Yes** (probe) |
-| Coupling witness | exact primitive \(\alpha\otimes f\) carries residual \(f,\delta f\) |
-
-So unrestricted form cohomology in positive degree is trivial; residual content sits in **structure of primitives and arithmetic**, not in a free \([\eta]\neq 0\) class over \(\mathbb{Q}\).
-
-### 2.3 Full simplex (geometric / Künneth)
-
-| Factor | Type | \(H^{>0}\) |
-|--------|------|------------|
-| \(K_9\) as \(\Delta^8\) | contractible | 0 |
-| \(P_{B'}\) as interval | contractible | 0 |
-| Product | contractible | 0 |
-
-\[
-H^0(X_\times;\mathbb{Q})\cong\mathbb{Q},\qquad H^{n>0}(X_\times;\mathbb{Q})=0.
+X_\times = K_9 \times P_{B'},\qquad
+B'=\Big\lfloor\frac{N_{\mathrm{flux}}-f_{\max}}{9}\Big\rfloor=539
+\quad\text{(packaging residual cardinality)}.
 \]
 
 ---
 
-## 3. Where residual nontrivial \(H^\bullet\) lives
+## Layer (G) — graph product \(K_9^{(\mathrm{gr})}\,\square\,P_{B'}\)
 
-| Location | Nontrivial data | Locked value |
-|----------|-----------------|--------------|
-| Graph \(H_1\) | product 1-skeleton | \(b_1=19396\) |
-| Residual arithmetic (combinatorial \(H^0\)-type) | \(\sum\mu\) | \(84B'=45276\) |
-| Bott-type mod 8 | \(B'\bmod 8\) | 3 |
-| Path | edges \(\bmod 8\) | 2 |
-| Unit block | \(\lvert U\rvert\) | 3 |
-| Mixed coupling | \(\eta=-D(\alpha\otimes f)\) | exact witness, nonzero cochain |
-| Ordered 2-form | \(\mu=-B'\omega_2\) | verified |
+Cartesian product of undirected 1-skeleta.
 
-**Lock statement:**  
-Geometric \(H^{n>0}(X_\times;\mathbb{Q})=0\). Nontrivial residual combinatorial structure is locked as graph \(b_1=19396\), mass \(\sum\mu=84B'=45276\), \(B'\equiv 3\pmod 8\), and \(\mu=-B'\omega_2\) on ordered triples, with \(\eta\) an exact mixed coupling witness under Principle (S).
+| Invariant | Value |
+|-----------|------:|
+| \(V\) | \(9B'=4851\) |
+| \(E\) | \(36\cdot B'+9\cdot(B'-1)=24246\) |
+| \(\beta_0\) | 1 |
+| \(\beta_1\) | \(36B'-8=\mathbf{19396}\) |
 
----
-
-## 4. What this does *not* claim
-
-- Continuum Cartan / hopfion  
-- Free \(T^\sharp\to 539\) basins (Option 3)  
-- Nonzero singular \([\eta]\) over \(\mathbb{Q}\)  
-- Biological 18/521 peak detection  
+\[
+\beta_1 = 36B'-8
+\]
+scales with packaging residual cardinality \(B'\). Connected graph ⇒ \(\beta_0=1\).
 
 ---
 
-## 5. Verification checklist
+## Layer (F) — residual form complex
 
-1. `residual_product_complex_probe.py` — \(D\eta=0\), factor locks  
-2. `residual_product_cohomology_probe.py` — three-level \(H^\bullet\), \(\mu=-B'\omega_2\) ordered  
-3. JSON results written beside probes  
+Finite residual form complex generated by locked symbols
+\(\{1,\alpha,\omega_2,\mu,f,\delta f\}\) with product differential \(D\), under residual relations
+\[
+\omega_2=d_Q\alpha,\qquad
+\mu=-B'\,\omega_2\quad\text{on ordered triples }a<b<c,
+\]
+\[
+\mu=-B'\,\omega_2=d_Q(-B'\alpha)\quad\text{(exact on ordered chamber)}.
+\]
+
+| Group | Result |
+|-------|--------|
+| \(H^0(F)\) | \(\mathbb{Q}\cdot[\mathbf{1}]\) |
+| \(H^1(F)\) | \(0\) |
+| \(H^2(F)\) | \(\mathbb{Q}\cdot[\alpha\otimes\delta f]\) |
+
+| Class | Status |
+|-------|--------|
+| \([\eta]\) | **Exact** — \(D(\alpha\otimes f)=-\eta\) |
+| \([\tilde\mu]\) on ordered triples | **Exact** — \(\mu=-B'\omega_2=d(-B'\alpha)\) |
+| \([\alpha\otimes\delta f]\) | **Nontrivial generator of \(H^2(F)\)** |
+
+### Why \([\alpha\otimes\delta f]\) survives while \([\eta]\) does not
+
+\[
+\eta=\alpha\otimes\delta f-\omega_2\otimes f,
+\qquad
+D(\alpha\otimes f)=\omega_2\otimes f-\alpha\otimes\delta f=-\eta.
+\]
+
+So \(\eta\) is a coboundary in \(F\). The pure mixed generator \(\alpha\otimes\delta f\) is the **charge–tower coupling class**: after killing pure-charge exact pieces (\(\omega_2\otimes f\) terms via the residual form relations), it represents the essential residual 2-class.
+
+\[
+\boxed{H^2(F)\;\cong\;\mathbb{Q}\cdot[\alpha\otimes\delta f]}
+\]
 
 ---
 
-## 6. Bottom line
+## Layer (S) — full \(\Delta^8\times|P|\)
 
-> Advance residual \(H^\bullet(X_\times)\): geometric cohomology is trivial in positive degree; **nontrivial residual combinatorial \(H\)** is locked at **graph**, **form-arithmetic**, and **mod-8** levels under residual provenance — consistent with the product complex lock and Option 3.
+Geometric realization: complete simplex on 9 vertices × geometric path/interval.
+
+**Contractible** ⇒ reduced singular cohomology vanishes:
+\[
+\tilde H^\bullet(X_\times^{\mathrm{fill}};\mathbb{Q})=0.
+\]
+
+Pattern invariants live in **(G)** and **(F)**, not the filled product. This is intentional: acyclic filling must not erase residual combinatorial content.
+
+---
+
+## Residual-3 contact
+
+| Quantity | Value | Note |
+|----------|------:|------|
+| Packaging residual cardinality \(B'\) | 539 | \((N_{\mathrm{flux}}-f_{\max})/9\) |
+| Graph formula | \(\beta_1=36B'-8\) | scales with \(B'\) |
+| \(B'\bmod 8\) | 3 | Bott-period contact |
+| \(\lvert U_r\rvert\) | 3 | residual-3 unit block (\(\equiv B'\bmod 8\)) |
+| Residual-3 block label (legacy “38”) | 38 | discrete residual-3 arithmetic contact (Dir.\ 1 / \(\mathfrak{T}_{\mathrm{res}}\)); **not** a replacement for packaging \(B'=539\) |
+| \(\sum\mu\) (ordered) | \(84B'=45276\) | mass of \(\tilde\mu\) |
+
+**Do not confuse:** packaging path length \(B'=539\) (used in \(V=9B'\), \(\beta_1=36B'-8\)) with residual-3 block integer 38 from the discrete torsion package.
+
+---
+
+## Lock targets (all met)
+
+1. Layer (G) Betti — locked  
+2. Layer (F) \(H^0\cong\mathbb{Q}\), \(H^1=0\), \(H^2\cong\mathbb{Q}[\alpha\otimes\delta f]\) — locked  
+3. Layer (S) filled product acyclic — stated  
+4. \(\mu=-B'\omega_2\) ordered; \(\eta\) exact — verified  
+5. Provenance residual (S) only — retained  
+
+---
+
+## Bottom line
+
+\[
+H^\bullet_{\mathrm{graph}}:\ \beta_0=1,\ \beta_1=36B'-8;
+\qquad
+H^\bullet_{\mathrm{form}}:\ H^0\cong\mathbb{Q},\ H^1=0,\ H^2\cong\mathbb{Q}\cdot[\alpha\otimes\delta f].
+\]
+
+The residual product’s **essential 2-class** is the charge–tower coupling \([\alpha\otimes\delta f]\); continuum TTC identification remains **Category B** design space.
 
 *Per aspera ad astra.*

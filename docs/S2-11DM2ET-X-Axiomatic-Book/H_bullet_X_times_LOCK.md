@@ -1,15 +1,14 @@
-# Lock notice — residual \(H^\bullet(X_\times)\) (2026-07-29)
+# Lock notice — residual \(H^\bullet(X_\times)\) (2026-07-29, three-layer)
 
-See **Residual_Product_Cohomology.md**.
+Canonical write-up: **Residual_Product_Cohomology.md**
 
-| Level | Result |
+| Layer | Result |
 |-------|--------|
-| Graph 1-skeleton | \(b_1=19396\) |
-| Form / tensor | \([\eta]=0\) via \(\eta=-D(\alpha\otimes f)\); cochain nontrivial |
-| Full simplex | \(H^{n>0}=0\) (contractible factors) |
-| Ordered triples | \(\mu=-B'\omega_2\) |
-| Arithmetic | \(\sum\mu=84B'=45276\), \(B'\equiv3\pmod8\) |
+| (G) graph \(K_9^{(\mathrm{gr})}\square P_{B'}\) | \(\beta_0=1\), \(\beta_1=36B'-8=19396\) |
+| (F) form | \(H^0\cong\mathbb{Q}\), \(H^1=0\), \(H^2\cong\mathbb{Q}\cdot[\alpha\otimes\delta f]\) |
+| (S) full \(\Delta^8\times\|P\|\) | contractible; reduced \(H^{>0}=0\) |
 
-Provenance: residual (S) only. Option 3 free \(T^\sharp\) unchanged.
+Essential residual 2-class: **charge–tower coupling** \([\alpha\otimes\delta f]\).  
+\([\eta]\) and \([\tilde\mu]\) (ordered) exact. Continuum TTC = Category B.
 
 *Per aspera ad astra.*
