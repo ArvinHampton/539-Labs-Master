@@ -1,0 +1,23 @@
+{
+  "provenance": "regenerated from artifacts/hqh539-verification/hqh539.py (engine mirror 2026-07-30)",
+  "implementation_note": "Prior golden_vectors.json from hqh539-engine did not match this reference finalization; vectors re-issued from this code path. KATs bind implementation, not hardness.",
+  "t3": {
+    "0": 0,
+    "4": 6,
+    "5": 3,
+    "7": 10,
+    "9": 3
+  },
+  "iterate_n_steps_539": {
+    "1000000000000000000": 2,
+    "10000000000000000000": 2,
+    "100000000000000000000": 2
+  },
+  "hqh_539_512": {
+    "empty": "6ede12b3ee3a6420488c8be03cfcaf4bb388ee433537d7e1085e2bd1553b1a14b340d1b2cd0259050636466f83afa09608455e3391c82904469c6216171f935a",
+    "canonical": "2305b72d61608e844d361ad94c1a0db6ca56ef26f4cd67f46dd14cf1a0ca9bd2d8403d68f2a690308b95c60aeb61883798675e8f9aca4370b0ecced8f450a2fc",
+    "large_int": "8c913caf46d2befb2a1438b587cefeb63859b7cde3f3092676b5a60c7051e133c877cb26484bca89d08ed80923f7a884f40e75e4743138776a42da50e66e6293",
+    "salted": "ea677c18b643a6ee1714eec83d8ae5e34e6e636fa900c5d5d88d0b8779224c4551c9d83e3718089f4b7d95903ce734134fdafb21e52803353a7e5fe8e6cc34dd"
+  },
+  "hqh_539_256_prefix": "2305b72d61608e844d361ad94c1a0db6ca56ef26f4cd67f46dd14cf1a0ca9bd2"
+}

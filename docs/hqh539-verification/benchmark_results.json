@@ -1,0 +1,11 @@
+{
+  "message_bytes": 1024,
+  "iterations": 200,
+  "hqh539_512_seconds": 0.03896246700000461,
+  "sha3_512_seconds": 0.0010885890000054133,
+  "hqh_per_call_ms": 0.19481233500002304,
+  "sha3_per_call_ms": 0.005442945000027066,
+  "ratio_hqh_over_sha3": 35.79171477923335,
+  "note": "Not a security metric. Pending peer review of any hardness claims.",
+  "category": "engineering"
+}

@@ -1,0 +1,22 @@
+{
+  "hqh539": {
+    "algorithm": "HQH-539-512",
+    "n_trials": 256,
+    "msg_len_bytes": 32,
+    "mean_bit_flip_fraction": 0.5001296997070312,
+    "min": 0.439453125,
+    "max": 0.560546875,
+    "target_nominal": 0.5,
+    "category": "B_engineering_evidence_only",
+    "not_a_security_proof": true
+  },
+  "sha3_512": {
+    "algorithm": "SHA3-512",
+    "n_trials": 256,
+    "mean_bit_flip_fraction": 0.4981231689453125,
+    "min": 0.4296875,
+    "max": 0.5546875,
+    "category": "A_standard_primitive"
+  },
+  "framing": "Avalanche is internal engineering evidence only. Not a security reduction. Hardness claims remain: computationally infeasible with known classical/quantum methods, pending peer review."
+}

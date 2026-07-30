@@ -1,33 +1,27 @@
-# Next Directions (2026-07-30) — O5 closed Cat B; O7 live
+# Next Directions (2026-07-30) — residual frozen; HQH-539 verification active
 
-## Stack status
+## Residual / continuum
 
-Architecture A residual: **closed through A5⁺**.
+Architecture A residual: **closed through A5⁺** (Master `4775ed3`+).
 
-Cat-B continuum / CB4:
-- O4 π₁ / collapsible: **PROVED Cat B**
-- O5 spine of 3-ball: **PROVED Cat B** (`O5_BALL_SPINE_PROVED_CAT_B`)
-- O6 smooth ball: **SATISFIED Cat B**
-- **O7 spin extension: OPEN Cat B (live)**
+Cat-B continuum: O4/O5/O6 settled Cat B; **O7 spin extension** remains open Cat B (parked).
 
-Firewall PASS. No residual promotion.
+## Active track: HQH-539 crypto / verification
 
-## Live Cat-B work
+Package: `docs/hqh539-verification/`
 
-**O7** — Extend unique A4⁺ BSpin data on K⁺ to the regular neighborhood ball N(K⁺) ≅ B³.
+| Item | Status |
+|------|--------|
+| KATs (`run_kats.py`) | PASS on regenerated goldens |
+| Avalanche vs SHA3-512 | ~0.50 mean bit flips (engineering only) |
+| Benchmark vs SHA3-512 | Runnable |
+| KDF+AE wrapper | `crypto_hqh.py` present |
+| Formal security reduction | **Pending** (Cat B framing only) |
 
-## Other tracks
-
-1. HQH-539 crypto engineering  
-3. Verification / co-sim  
-4. Pause
+Hardness language: computationally infeasible with known classical/quantum methods, pending peer review of the full reduction.
 
 ## Avoid
 
-Reopen residual locks · free T^♯ · G₄=B³ as foundation · closed special spine overclaim
-
-## One-line next step
-
-**O5 done (Cat B ball spine). Attack O7 spin extension, or switch to crypto/verification.**
+Reopen residual locks · free T^♯ · G4 as crypto assumption · “provably secure”
 
 *Per aspera ad astra.*
