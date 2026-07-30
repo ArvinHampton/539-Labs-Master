@@ -2,7 +2,7 @@
 
 **Status:** Category B exploration ledger — **no completed security reduction**.  
 **Audience:** internal foundation layer / selective peer review.  
-**Companions:** `Foundational_Arithmetic_Packaging.md`, `Object539_NonCircular_Construction.md`, `Resonant_Layer_Resolved.md`, Master `SECURITY.md`.
+**Companions:** `Foundational_Arithmetic_Packaging.md`, `Object539_NonCircular_Construction.md`, `Resonant_Layer_Resolved.md`, `Discrete_Patterns_Residual_Carrier.md`, `Residual_Product_Complex.md`, Master `SECURITY.md`.
 
 ---
 
@@ -166,7 +166,7 @@ Claims that rely on the physical **\(G_4=539.9\,\mathrm{s}\)** brane-leakage clo
 | Packaging length under (S) | Supplies **round count** only |
 | \(\mathcal{O}_{\mathrm{res}}\) | Optional combinatorial material; not free dynamics |
 | ACE \(N_\star=14\), free basins \(=2\) | **Must not** be sold as “539-step natural hardness from \(T^\sharp\)” |
-| No-Go on \(\lambda=\ln 3/539\) from democracy | Intact; does not yield a Banach-rate reduction |
+| No-Go on \(\lambda=\ln 3/539\) from residue democracy | Intact; does not yield a Banach-rate reduction |
 | Architecture A on \(\mathcal{O}_{\mathrm{res}}\) | Combinatorial/topological programme; **not** a crypto proof |
 | Bott / \(KO\) discrete layer | Not a security reduction |
 
@@ -183,7 +183,46 @@ Further exploration of concrete reduction arguments, unpublished parameters, or 
 
 ---
 
-## 7. Preferred citation snippets
+## 7. Residual discrete stack — optional design ingredients (2026-07-30)
+
+The residual discrete constructions locked under residual-flux provenance enlarge the set of combinatorial objects available for future HQH-539 design or reduction arguments. They remain **ingredients only**. They do not constitute a security reduction and do not alter Option 3 or the No-Go.
+
+### 7.1 New residual-only objects
+
+| Object | Source | Optional crypto role |
+|--------|--------|----------------------|
+| Residual carrier \(\mathcal{O}_{\mathrm{res}}\), \(\lvert\mathcal{O}_{\mathrm{res}}\rvert=B'=539\) | `Object539_NonCircular_Construction.md` | Index set for rounds / key material |
+| Nine parallel residual cores of size \(B'\) | same | Parallel lanes / domain separation |
+| Bott-fiber blocks (3×68 + 5×67); residual 3 ≡ \(\lvert U\rvert\) | `Discrete_Patterns_Residual_Carrier.md` | Structured schedule segments / constant-time masks |
+| Core linking \(L=B'S\), exact 2-cochain \(\omega_2\), 2-cocycle \(\mu\) | same | Deterministic sign / orientation schedules |
+| Permanent class \([\alpha\otimes\delta f]\) and mixed cochain \(\eta\) | `Residual_Product_Complex.md`, `Residual_Product_Cohomology.md` | Residual mixing of charge orientation with path transport |
+| Packaging window split 18 + 521 | `Foundational_Arithmetic_Packaging.md`, `Near_Term_Unification_Kit.md` | Explicit two-phase schedule (window + body) |
+
+**Provenance for every use:** residual flux quanta under Principle (S) + democratic charge-sector partition — **not** free \(T^\sharp\) origin.
+
+### 7.2 Open residual-only exploration tracks
+
+| Track | Description |
+|-------|-------------|
+| **C1 Residual-carrier schedule** | Index the 539 rounds by \(\mathcal{O}_{\mathrm{res}}\) or by one residual core; diffusion may follow residual order, Bott fibers, or charge-sector linking. |
+| **C2 Mixed-class diffusion** | Use the permanent class \([\alpha\otimes\delta f]\) and evaluations of the mixed cochain \(\eta\) on product cells as a combinatorial diffusion primitive inside the fixed 539 budget. |
+| **C3 Windowed two-phase construction** | Expose the packaging split 18 + 521 as an explicit public schedule (short window phase + long body phase). |
+| **C4 Nine-core parallel lanes** | Treat the nine residual cores of size 539 as parallel diffusion lanes or domain-separation channels; combine across cores by checksum, XOR, or sponge absorption. |
+
+All four tracks remain residual-only under residual-flux provenance. Continuum Cartan / hopfion language and physical \(G_4\)-clock claims stay out of the cryptographic hardness statement.
+
+### 7.3 Hardness status (unchanged)
+
+**No completed security reduction is claimed.**  
+All hardness statements remain under the locked Category B language:
+
+> Computationally infeasible to break with known classical and quantum methods, pending independent peer review of the full S²-11DM²ET-X security reduction.
+
+Option 3 (exactly two free \(T^\sharp\) basins) and the No-Go on \(\lambda=\ln 3/539\) from residue democracy alone remain in force.
+
+---
+
+## 8. Preferred citation snippets
 
 **Category B hardness (only allowed form):**
 > Proprietary framework claim (S²-11DM²ET-X) — not independently verified, pending external cryptanalysis. Computationally infeasible to break with known classical and quantum methods, pending independent peer review of the full S²-11DM²ET-X security reduction.
