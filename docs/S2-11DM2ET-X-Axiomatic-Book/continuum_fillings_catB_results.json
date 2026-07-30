@@ -1,0 +1,111 @@
+{
+  "provenance": {
+    "category": "B",
+    "status_code": "CAT_B_CONTINUUM_FILLINGS_OPEN_NOT_LOCKED",
+    "residual_stack_reopened": false,
+    "architecture_A_through_A5plus_closed": true,
+    "domain_residual_foundation": "unchanged"
+  },
+  "K_plus": {
+    "definition": "P+ M1 residual 2-complex: path + 56 chords + 56 faces",
+    "V": 539,
+    "E": 594,
+    "F": 56,
+    "euler": 1,
+    "H0": "Z",
+    "H1": 0,
+    "H2": 0,
+    "torsion": false,
+    "homology": "pointlike (\u2245 pt)"
+  },
+  "firewall": {
+    "Kplus_homology_pt": true,
+    "Kplus_census_V_E_F": [
+      539,
+      594,
+      56
+    ],
+    "Kplus_euler": 1,
+    "A5plus_coefficients_only_on_Kplus": true,
+    "A5plus_status": "A5PLUS_COEFFICIENTS_ONLY_ON_KPLUS",
+    "option3_intact": true,
+    "no_go_intact": true,
+    "no_free_Tsharp": true,
+    "no_G4_equals_KO": true,
+    "no_continuum_into_residual_foundation": true,
+    "PASS": true
+  },
+  "catalogue_CB1_CB7": {
+    "CB1_cone": {
+      "role": "PL contractible 3-complex C(K+)",
+      "euler": 1,
+      "cells": {
+        "V": 540,
+        "E": 1133,
+        "F2": 650,
+        "F3": 56
+      },
+      "status": "executed_proxy_Cat_B",
+      "manifold_as_proof": false
+    },
+    "CB2_suspension": {
+      "role": "Homology-pointlike PL proxy \u03a3K+",
+      "euler": 1,
+      "cells": {
+        "V": 541,
+        "E": 1672,
+        "F2": 1244,
+        "F3": 112
+      },
+      "status": "executed_proxy_Cat_B",
+      "manifold_as_proof": false
+    },
+    "CB3_prism": {
+      "role": "Thickening / cobordism scaffold K+\u00d7I",
+      "euler": 1,
+      "cells": {
+        "V": 1078,
+        "E": 1727,
+        "F2": 706,
+        "F3": 56
+      },
+      "status": "executed_proxy_Cat_B",
+      "manifold_as_proof": false
+    },
+    "CB4_smooth_spin_fill": {
+      "role": "Existence of smooth spin fill compatible with unique BSpin on K+",
+      "status": "open_Cat_B_question",
+      "manifold_as_proof": false
+    },
+    "CB5_ambient_Omega_KO_tables": {
+      "role": "Library \u03a9/KO tables n=0..15",
+      "status": "library_only",
+      "residual_quanta_for_n_gt_0": false,
+      "note": "no residual quanta for n>0"
+    },
+    "CB6_Cartan_hopfion": {
+      "role": "Cartan/hopfion continuum metaphor",
+      "status": "metaphor_only",
+      "promotion_to_residual_foundation": "FORBIDDEN"
+    },
+    "CB7_sphere_stabilizations": {
+      "role": "Sphere stabilizations scaffolding",
+      "status": "scaffolding_only",
+      "manifold_as_proof": false
+    }
+  },
+  "not_claimed": [
+    "continuum manifolds as residual proof",
+    "free T# origin",
+    "G4=KO",
+    "Omega_n>0 residual quanta",
+    "promotion of CB1-CB7 into packaging locks",
+    "reopen A4-A5 0-stem"
+  ],
+  "next_ranked_Cat_B": [
+    "CB4 existence/non-existence smooth spin fill",
+    "spin-structure extension K+ -> CB1/CB4",
+    "or switch tracks: HQH-539 crypto / verification"
+  ],
+  "status": "CAT_B_CONTINUUM_FILLINGS_OPEN_NOT_LOCKED"
+}

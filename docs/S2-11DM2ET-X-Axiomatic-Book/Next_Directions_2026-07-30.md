@@ -1,31 +1,22 @@
-# Next Directions (2026-07-30) — post A4⁺
+# Next directions (2026-07-30)
 
-## 1. Residual math (primary)
+## Residual foundation — **do not reopen**
 
-1. **A5⁺** — actual \(KO\) / \(\Omega^{\mathrm{Spin}}\) on enriched \(K^+\) (not only 0-stem \(B'\))
-2. Theorem-lock P⁺ multi-scale + M1 flux quantization
-3. Keep Option 3; do not reopen free \(T^\sharp\)
+A0–A5 0-stem · A5⁺ on \(K^+\) · thin \(F\) · kit · Option 3 · No-Go.
 
-## 2. Closed this session
+## Category B continuum (open)
 
-- A4⁺ continuous \(B\mathrm{Spin}\) lift on primary \(K^+\) (`A2_enrich`) — unique
-- CuNc T₂ ≈ 70 fs data lock; 2.3 fs retracted
-- Mirror-halo Cat B freeze
+| Rank | Direction | Tag |
+|------|-----------|-----|
+| **1** | **CB4** smooth spin fill existence compatible with unique \(B\mathrm{Spin}\) on \(K^+\) | **B** |
+| **2** | Spin-structure extension \(K^+\to\) CB1/CB4 | **B** |
+| **3** | Switch tracks: HQH-539 crypto / verification | eng / **B** |
 
-## 3. Empirical hygiene
+CB1–CB3 already executed as PL proxies (Euler 1). CB5–CB7 library/metaphor/scaffolding only.
 
-1. Cite CuNc only with T₂ ≈ 70 fs / period ∼ 2.5 fs
-2. Multi-band DDG/MT pre-registered pipeline
+## Residual optional (not continuum)
 
-## Avoid
-
-- Free ternary 539 objects
-- Continuum Cartan as residual proof
-- Equating CuNc T₂ with G₄
-- Claiming constant A2 \|E\| was already positive-dimensional without enrichment
-
-## One-line next step
-
-**Primary: A5⁺ KO/spin bordism on K⁺. Do not reopen A4⁺ primary domain.**
-
-*Per aspera ad astra.*
+| Rank | Direction |
+|------|-----------|
+| A4⁺ | Continuous \(w_1,w_2\) on full \(\lvert E(\mathcal{O}_{\mathrm{res}})\rvert\) |
+| \(P^+\) theorem-lock | Multi-scale M1 flux quantization |

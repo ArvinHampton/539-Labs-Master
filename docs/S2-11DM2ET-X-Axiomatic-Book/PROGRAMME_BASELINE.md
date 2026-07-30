@@ -68,19 +68,6 @@
 
 ---
 
-## 3b. Architecture A4⁺ on enriched K⁺ — **Resolved**
-
-| Item | Lock |
-|------|------|
-| Domain | Path + same-tower edges + triangle fill |
-| Topology (primary) | beta0=1, beta1=0, beta2=0 over F2; V=539,E=594,F=56 |
-| w1(L)=0; spin w1=w2=0 | Locked |
-| BSpin lift | Unique on primary K⁺ |
-| Code | `A4PLUS_BSPIN_LIFT_CLOSED_ON_KPLUS` |
-| A5⁺ | Open |
-
-Canonical: `Architecture_A4plus_Continuous_BSpin.md`, `scripts/architecture_A4plus_probe.py`.
-
 ## 4. Free-dynamics trajectory objects — **Resolved as Option 3 (paused)**
 
 | Item | Lock |
@@ -218,6 +205,10 @@ Continuum hopfion, torsion, or measure constructions remain **Category B design 
 > The combinatorial residual foundation is **locked**.  
 > Discrete Architecture A (**A0–A2**) is **locked**; continuous **A3** locked; **A4–A5** locked as **0-stem residual closure** on \(\mathcal{O}_{\mathrm{res}}^{\mathrm{disc}}\) only (`A4_BSPIN_LIFT_CLOSED_ON_O_RES_DISC`, `A5_KO_OMEGA0_SPIN_CLOSED_ON_O_RES`); **A4⁺** (full \(|E|\)) remains **open**.  
 > Free dynamics stay **Option 3**. Security stays **Category B exploration**. Continuum hopfion/torsion/measure contacts stay **Category B** relative to the residual foundation.
+
+## Cat-B continuum fillings (open, not locked)
+
+Status `CAT_B_CONTINUUM_FILLINGS_OPEN_NOT_LOCKED`. Firewall: \(K^+\) homology ≅ pt (V,E,F=539,594,56); A5⁺ coefficients only on \(K^+\); Option 3/No-Go intact. CB1–CB3 PL proxies Euler 1; CB4–CB7 catalogue open/library/metaphor. Residual stack **not** reopened. See `Architecture_Continuum_Fillings_CatB.md`, `scripts/continuum_fillings_catB_probe.py`.
 
 ## Shell restriction r_W
 
