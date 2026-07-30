@@ -210,9 +210,9 @@ Continuum hopfion, torsion, or measure constructions remain **Category B design 
 
 Status `CAT_B_CONTINUUM_FILLINGS_OPEN_NOT_LOCKED`. Firewall: \(K^+\) homology ≅ pt (V,E,F=539,594,56); A5⁺ coefficients only on \(K^+\); Option 3/No-Go intact. CB1–CB3 PL proxies Euler 1; CB4–CB7 catalogue open/library/metaphor. Residual stack **not** reopened. See `Architecture_Continuum_Fillings_CatB.md`, `scripts/continuum_fillings_catB_probe.py`.
 
-## Riemann Hypothesis / debt argument — **OPEN, not a proof**
+## Riemann Hypothesis — **ACTIVE resolution track (not frozen)**
 
-Status `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. Phase-debit / \(E_{\mathrm{leak}}\) / \(\mu=1.55\) / \(G_4=539.9\) are **Category B** motivation only; \(D(\rho)\) as written does not depend on \(\rho\); growth of \(\arg P_N\) off-line unproved. Resonant Algebra stays quarantined Category A (unrelated to RH). See `RH_Debt_Argument_Status.md`.
+Status `RH_ACTIVE_RESOLUTION_TRACK`. Working to resolve RH via pure control of smoothed partial-Euler phase \(A_N\) (Conjectures A/B, lemmas L1–L4). Model debit / \(E_{\mathrm{leak}}\) / \(\mu\) / \(G_4\) stay **motivation/numerics** outside the theorem environment until replaced by \(A_N\). Finished proof **not** claimed; programme **not** frozen. Resonant Algebra remains a separate Cat A line. See `RH_Debt_Argument_Status.md`.
 
 ## Shell restriction r_W
 

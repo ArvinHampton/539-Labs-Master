@@ -21,16 +21,17 @@ CB1–CB3 already executed as PL proxies (Euler 1). CB5–CB7 library/metaphor/s
 | A4⁺ | Continuous \(w_1,w_2\) on full \(\lvert E(\mathcal{O}_{\mathrm{res}})\rvert\) |
 | \(P^+\) theorem-lock | Multi-scale M1 flux quantization |
 
-## RH / debt (if pursued — pure Category A only)
+## RH — **active resolution** (do not freeze)
 
-RH remains **open**. Debt argument is **not** a proof (`RH_Debt_Argument_Status.md`).
+Status `RH_ACTIVE_RESOLUTION_TRACK`. See `RH_Debt_Argument_Status.md`.
 
 | Rank | Direction |
 |------|-----------|
-| L1 | Define smoothed \(A_N(\sigma,t)\) rigorously |
-| L2 | Bounds on the critical line |
-| L3 | Lower bound off-line at zeros from explicit formula only |
-| L4 | Remove circular Lyapunov / mean-phase assumptions |
+| **L1** | Define smoothed \(A_N(\sigma,t)\) rigorously |
+| **L2** | Bounds on the critical line |
+| **L3** | Lower bound off-line at zeros (explicit formula / Hadamard) |
+| **L4** | Non-circular mean-phase / growth estimates |
+| L5 | Numerics (diagnostic) |
 
-**Keep outside theorems:** \(G_4\), \(\mu\), \(E_{\mathrm{leak}}\), 539.9 s, phonon language.  
-**Quarantine:** Resonant Algebra ≠ RH.
+**Scaffolding only (outside theorem env until absorbed into \(A_N\)):** \(G_4\), \(\mu\), \(E_{\mathrm{leak}}\), 539.9 s.  
+**Parallel:** Resonant Algebra stays its own Cat A programme.
