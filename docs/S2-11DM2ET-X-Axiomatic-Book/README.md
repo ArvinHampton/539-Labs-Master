@@ -16,6 +16,7 @@ Clean LaTeX source for the full axiomatic foundation.
 - **Next directions** (`Next_Directions_2026-07-30.md`)
 - Axiom 0; Generation Individuality; Three Clocks / Closed Constants; Photon-ring; No-Go; ACE; Provenance
 - Empirical phase-locking; Holographic window; Wilson surrogates; QCD note; Bott vs HQCC; Phase 0; H0 Option 3
+- **A4⁺ continuous BSpin** (`Architecture_A4plus_Continuous_BSpin.md`) — CLOSED unique lift on K⁺
 - **Foundational arithmetic packaging**; **Object539**; Architecture A / O_res (A0–A3 locked; A4–A5 0-stem closed on O_res^disc only — A4_BSPIN_LIFT_CLOSED_ON_O_RES_DISC, A5_KO_OMEGA0_SPIN_CLOSED_ON_O_RES; A4⁺ full |E| open)
 - HQH-539 security (exploration / Cat B only); 9 Maths patterns
 - Discrete patterns residual carrier; Discrete TTC/RTTC package T_res

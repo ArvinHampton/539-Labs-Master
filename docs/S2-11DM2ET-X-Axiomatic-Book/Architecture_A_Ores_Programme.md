@@ -260,7 +260,7 @@ Architecture B **on the carrier** may use only functions of \(x,\tau(x),\beta(x)
 | **A3** | Continuous \(\Phi\colon\lvert E(\mathcal{O}_{\mathrm{res}})\rvert\to\mathrm{Gr}_1(V)\hookrightarrow BO\); spin-aimed \(\Phi^{\mathrm{Spin}}\) | **Done** — `Architecture_A3_Geometric_BO_BSpin.md` |
 | **A4** | \(w_1,w_2\) / \(B\mathrm{Spin}\) lift on \(\mathcal{O}_{\mathrm{res}}^{\mathrm{disc}}\) (0-stem only) | **Done** — `Architecture_A4_BSpin_Lift.md` · `A4_BSPIN_LIFT_CLOSED_ON_O_RES_DISC` |
 | **A5** | \(KO_0\) / \(\Omega_0^{\mathrm{Spin}}\) class \(B'\) (0-stem only) | **Done** — `Architecture_A5_KO_Spin_Bordism.md` · `A5_KO_OMEGA0_SPIN_CLOSED_ON_O_RES` |
-| **A4⁺** | Continuous \(w_1,w_2\) / \(B\mathrm{Spin}\) of \(\Phi\) on **full** \(\lvert E(\mathcal{O}_{\mathrm{res}})\rvert\) | **Open** (next) |
+| **A4⁺** | Continuous BSpin on enriched K⁺ (A2 1-skeleton + 2-fill) | **Done** — `Architecture_A4plus_Continuous_BSpin.md` |
 
 **Domain freeze:** A4–A5 claims apply only to \(\mathcal{O}_{\mathrm{res}}^{\mathrm{disc}}\) / 0-stem. Do **not** reopen A4–A5 on that domain. Do **not** promote 0-stem \(\Omega_0=B'\) to continuum \(\Omega_{n>0}\).
 
@@ -273,6 +273,6 @@ Secondary residual (non-Architecture): theorem-lock \(P^+\) M1 / multi-scale flu
 
 > Architecture A / Bott / classifying-map work uses \(\mathcal{O}_{\mathrm{res}}\) as the **only** 539-carrier.  
 > **A0–A3 complete.** **A4–A5 closed as 0-stem residual closure** on \(\mathcal{O}_{\mathrm{res}}^{\mathrm{disc}}\) only (vanishing SW + bordism/\(KO_0=B'\)).  
-> **A4⁺ open:** continuous obstruction theory on full \(\lvert E(\mathcal{O}_{\mathrm{res}})\rvert\).  
+> **A4⁺ closed** on enriched K⁺ (`A4PLUS_BSPIN_LIFT_CLOSED_ON_KPLUS`). **A5⁺ open.**
 > Honest provenance: residual flux quanta under (S) + democratic charge partition — **not** free \(T^\sharp\), **not** a No-Go lift.  
 > Free-dynamics 539-classes remain **Option 3**.

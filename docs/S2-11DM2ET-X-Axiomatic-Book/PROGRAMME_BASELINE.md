@@ -68,6 +68,19 @@
 
 ---
 
+## 3b. Architecture A4⁺ on enriched K⁺ — **Resolved**
+
+| Item | Lock |
+|------|------|
+| Domain | Path + same-tower edges + triangle fill |
+| Topology (primary) | beta0=1, beta1=0, beta2=0 over F2; V=539,E=594,F=56 |
+| w1(L)=0; spin w1=w2=0 | Locked |
+| BSpin lift | Unique on primary K⁺ |
+| Code | `A4PLUS_BSPIN_LIFT_CLOSED_ON_KPLUS` |
+| A5⁺ | Open |
+
+Canonical: `Architecture_A4plus_Continuous_BSpin.md`, `scripts/architecture_A4plus_probe.py`.
+
 ## 4. Free-dynamics trajectory objects — **Resolved as Option 3 (paused)**
 
 | Item | Lock |
