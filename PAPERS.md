@@ -54,6 +54,12 @@ Raw iteration of this map reaches small values in roughly 90–120 steps for lar
 
 - QGP-HEP Integration
 - Muon g-2 modulation documents
+- **Muon g−2 oscillatory resolution (2026-07-30)** — Path A primary (long-window average of δa_μ^(55) nulls at exp precision); Path B residual ε·A; Resonant Δσ_ππ ↔ ε=61/4880
+  - `docs/S2-11DM2ET-X-Axiomatic-Book/Muon_g2_Oscillatory_Resolution_2026-07-30.md`
+  - `docs/S2-11DM2ET-X-Axiomatic-Book/Resonant_Delta_sigma_pipi_Note.md`
+  - `docs/S2-11DM2ET-X-Axiomatic-Book/scripts/muon_g2_prefactor_average.py`
+  - `docs/S2-11DM2ET-X-Axiomatic-Book/muon_g2_resolution_results.json`
+  - Claim freeze: `CLAIM_TABLE_Master.md` | Exec: `Executive_Summary_2026-07-30.md` | Log: `PUSH_LOG_2026-07-30.md`
 - Quark Flavor Vibration
 - Periodic Table / one-electron resonant derivation materials
 
