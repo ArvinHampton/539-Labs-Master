@@ -1,0 +1,29 @@
+{
+  "profile": "CANONICAL_OPTION_A",
+  "t3core": {
+    "pass": 100,
+    "fail": 0,
+    "n": 100
+  },
+  "pipeline_ref": {
+    "pass": 100,
+    "fail": 0,
+    "n": 100
+  },
+  "pipeline_p32": {
+    "pass": 100,
+    "fail": 0,
+    "n": 100
+  },
+  "seeds": {
+    "pass": 100,
+    "fail": 0
+  },
+  "phase3_p32": {
+    "pass": 20,
+    "fail": 0,
+    "n": 20
+  },
+  "overall": "PASS",
+  "rfc": "RFC_Profile_Freeze_Option_A.md"
+}

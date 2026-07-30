@@ -1,24 +1,24 @@
 # HQH-539 verification status (2026-07-30)
 
+## Profile freeze
+
+**Option A ACCEPTED** — Canonical T3 REF is the sole primary primitive.  
+RFC: `RFC_Profile_Freeze_Option_A.md`  
+Plan: `PLAN_Canonical_RTL_Revector.md`
+
+| Path | Role |
+|------|------|
+| `golden_vectors.json` / engine | REF product KATs |
+| `rtl_vectors_canonical/` | New Canonical RTL KATs (100% cross-check PASS) |
+| `rtl_vectors/` | Historical T4121 only |
+
 ## Suites
 
 | Suite | Result |
 |-------|--------|
-| REF goldens + profiles | PASS |
-| Expanded KATs | PASS |
-| AE roundtrip (KDF + ChaCha20-Poly1305 + package) | PASS (44 tests total with prior) |
-| RTL vector cross-check | **PASS** |
+| REF + expanded KATs + AE | PASS |
+| Historical T4121 cross-check | PASS (labeled historical) |
+| Canonical RTL cross-check | **PASS** |
+| Primitive comparison | Canonical preferred |
 
-## RTL finding
-
-`539-Labs-repo` vectors under `rtl_vectors/` match **PRODUCT_T4121**:
-
-- Map: T4121 `(4n+1)//3` on residue 1  
-- Finalize: 32-byte BE state ‖ `SALT_STD` ‖ `b":HQH-539-RESONANT:"`  
-- **Not** engine REF (Canonical T3, empty domain, min-length finalize)
-
-Canonical T3 deliberately mismatches those files (expected). See `DUAL_PROFILES.md`.
-
-## Security framing
-
-Implementation checks only. Hardness remains computationally infeasible with known methods, pending peer review of the full reduction.
+Hardness: computationally infeasible with known methods, pending peer review.

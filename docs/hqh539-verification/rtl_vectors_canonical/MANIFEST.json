@@ -1,0 +1,21 @@
+{
+  "profile": "CANONICAL_PRODUCT_OPTION_A",
+  "map": "Canonical_T3",
+  "steps": 539,
+  "domain_sep_ref": "",
+  "salt_std_for_seed": "539-LABS-2026-RESONANT-SALT",
+  "n_t3core": 100,
+  "n_phase3": 20,
+  "max_state_bits_observed": 237,
+  "files": {
+    "stimulus_t3core.dat": "512-bit seeds",
+    "expected_t3core.dat": "Canonical T3^539 \u2192 1024-bit pad",
+    "stimulus_pipeline.dat": "same seeds",
+    "expected_pipeline_ref.dat": "engine REF hqh_539_512(msg, SALT_STD)",
+    "expected_pipeline_p32.dat": "Canonical P32 finalize empty domain",
+    "stimulus_phase3_p32.dat": "32-byte state after Canonical^539",
+    "expected_phase3_p32.dat": "SHA3-512(state32||SALT_STD||DOMAIN_SEP)"
+  },
+  "historical_t4121_path": "rtl_vectors/",
+  "rfc": "RFC_Profile_Freeze_Option_A.md"
+}

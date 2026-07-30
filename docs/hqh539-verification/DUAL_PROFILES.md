@@ -100,3 +100,15 @@ Comparative study (`compare_ternary_primitives.py`, `Architecture_Ternary_Primit
 **Canonical T3 is the superior crypto primitive** on engineering grounds (exact residue-1 division, cleaner fixed points, tighter contraction variance, avalanche MAD, composite score). T4121 remains historical/RTL experimental.
 
 Product freeze lean: **option A** — REF/Canonical is law; regenerate future product RTL vectors under Canonical.
+
+
+---
+
+## Freeze (Option A) — ACCEPTED 2026-07-30
+
+See **[RFC_Profile_Freeze_Option_A.md](RFC_Profile_Freeze_Option_A.md)**.
+
+- Primary: **Canonical REF**
+- Historical T4121: `rtl_vectors/`
+- New Canonical KATs: `rtl_vectors_canonical/`
+- Re-vector plan: **[PLAN_Canonical_RTL_Revector.md](PLAN_Canonical_RTL_Revector.md)**
