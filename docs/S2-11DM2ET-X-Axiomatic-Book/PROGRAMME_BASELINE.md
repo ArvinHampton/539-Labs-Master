@@ -46,19 +46,25 @@
 
 ---
 
-## 3. Architecture A continuous / \(KO\) layers — **A3 first model resolved; A4–A5 open**
+## 3. Architecture A continuous / \(KO\) layers — **A3 done; A4–A5 0-stem closed; A4⁺ open**
 
 | Phase | Status | Content |
 |-------|--------|---------|
-| **A3** | **Resolved (first continuous model)** | \(\Phi\colon\lvert E(\mathcal{O}_{\mathrm{res}})\rvert\to\mathrm{Gr}_1(V)\hookrightarrow BO\) factoring through \(f_\sharp\); injective; oriented rank-2 \(\Phi^{\mathrm{Spin}}\) aimed at \(BSO\)/\(B\mathrm{Spin}\) (lift **theorem** not claimed) |
-| **A4** | **Open** | \(w_1,w_2\) / full \(B\mathrm{Spin}\to BO\) lift |
-| **A5** | **Open** | Actual \(KO\) / spin-bordism computations (not discrete labels only) |
+| **A3** | **Resolved** | \(\Phi\to\mathrm{Gr}_1(V)\hookrightarrow BO\); oriented rank-2 \(\Phi^{\mathrm{Spin}}\) |
+| **A4** | **Resolved (0-stem only)** | \(w_1=w_2=0\) on \(\mathcal{O}_{\mathrm{res}}^{\mathrm{disc}}\); \(B\mathrm{Spin}\) lift — `A4_BSPIN_LIFT_CLOSED_ON_O_RES_DISC` |
+| **A5** | **Resolved (0-stem only)** | \([\mathcal{O}_{\mathrm{res}}]=B'\) in \(\Omega_0^{\mathrm{Spin}}/KO_0\); fibers \(8\cdot67+3\) — `A5_KO_OMEGA0_SPIN_CLOSED_ON_O_RES` |
+| **A4⁺** | **Open** | Continuous \(w_1,w_2\) / \(B\mathrm{Spin}\) of A3 \(\Phi\) on **full** \(\lvert E(\mathcal{O}_{\mathrm{res}})\rvert\) (A2 cells beyond points) |
+
+**Domain freeze (mandatory on every A4/A5 claim):** \(\mathcal{O}_{\mathrm{res}}^{\mathrm{disc}}\) / **0-stem only** — not continuum bordism, not positive-dimensional cells of \(|E|\).
 
 **Canonical files:**  
 `Architecture_A3_Geometric_BO_BSpin.md`,  
-`scripts/architecture_A3_geometric_probe.py`.
+`Architecture_A4_BSpin_Lift.md`,  
+`Architecture_A5_KO_Spin_Bordism.md`,  
+`scripts/architecture_A3_geometric_probe.py`,  
+`scripts/architecture_A4_A5_probe.py`.
 
-**Note.** Discrete foundation is A0–A2. Continuous work has a **first** Grassmannian/\(BO\) model (A3); deeper spin/\(KO\) remain open. No free-\(T^\sharp\) origin; No-Go and Option 3 unchanged.
+**Note.** A0–A2 discrete foundation locked. A4–A5 are **0-stem residual closure** (accepted). Do **not** reopen A4–A5 on the same 0-dim domain. Higher continuum \(\Omega_{n>0}\) remains Category B. No free-\(T^\sharp\) origin; No-Go and Option 3 unchanged.
 
 ---
 
@@ -197,7 +203,7 @@ Continuum hopfion, torsion, or measure constructions remain **Category B design 
 ## Bottom line
 
 > The combinatorial residual foundation is **locked**.  
-> Discrete Architecture A (**A0–A2**) is **locked**; continuous **A3** first \(BO\)-valued model is **locked as a first lift**; **A4–A5** remain **open**.  
+> Discrete Architecture A (**A0–A2**) is **locked**; continuous **A3** locked; **A4–A5** locked as **0-stem residual closure** on \(\mathcal{O}_{\mathrm{res}}^{\mathrm{disc}}\) only (`A4_BSPIN_LIFT_CLOSED_ON_O_RES_DISC`, `A5_KO_OMEGA0_SPIN_CLOSED_ON_O_RES`); **A4⁺** (full \(|E|\)) remains **open**.  
 > Free dynamics stay **Option 3**. Security stays **Category B exploration**. Continuum hopfion/torsion/measure contacts stay **Category B** relative to the residual foundation.
 
 ## Shell restriction r_W

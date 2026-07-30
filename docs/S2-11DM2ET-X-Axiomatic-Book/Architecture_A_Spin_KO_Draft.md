@@ -116,13 +116,13 @@ f(x)=\bigl(q(x),\,\tau(x),\,\beta(x)\bigr).
 - [x] Bott grading \(\beta_\sharp\) seed-independent; O2 residual exhibited  
 - [x] Simplicial lift (A2) + continuous \(\Phi\to\mathrm{Gr}_1(V)\hookrightarrow BO\) (A3)  
 - [x] Oriented rank-2 spin-aimed model (A3)  
-- [ ] Spin lift theorem / \(w_2\) (A4)  
-- [ ] True \(KO\) / \(\Omega^{\mathrm{Spin}}\) invariant computation (A5)
+- [x] Spin lift / \(w_1,w_2=0\) on \(\mathcal{O}_{\mathrm{res}}^{\mathrm{disc}}\) (A4)  
+- [x] \(KO_0\) / \(\Omega_0^{\mathrm{Spin}}\) residual class \(B'\) (A5)
 
 ---
 
 ## 7. Bottom line
 
 Architecture A is the standard bridge (spin bordism → \(KO\) → Bott), now **aimed at residual-flux carrier \(\mathcal{O}_{\mathrm{res}}\)** with honest provenance.  
-Discrete classifying map and Bott-clock grading are in hand; continuous \(KO\) theorems remain open.  
-See `Architecture_A_Ores_Programme.md` for the full active programme.
+Discrete classifying map, Bott-clock grading, \(B\mathrm{Spin}\) lift (A4), and 0-stem \(KO/\Omega^{\mathrm{Spin}}\) (A5) are closed on residual carrier.  
+See `Architecture_A_Ores_Programme.md`, `Architecture_A4_BSpin_Lift.md`, `Architecture_A5_KO_Spin_Bordism.md`.

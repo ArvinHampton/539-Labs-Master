@@ -217,9 +217,9 @@ whose restriction to discrete points recovers \(f\), then push
 - [x] Bott grading \(\beta_\sharp\) seed-independent; O2 residual structure exhibited (A1)  
 - [x] Discrete simplicial lift \(\tilde f_\sharp\) (A2 constant systems)  
 - [x] Continuous geometric lift to \(\mathrm{Gr}_1(V)\hookrightarrow BO\) (A3)  
-- [x] Oriented rank-2 model aimed at \(B\mathrm{Spin}\) (A3; lift theorem A4)  
-- [ ] \(w_1,w_2\) vanishing / \(B\mathrm{Spin}\) lift theorem (A4)  
-- [ ] Actual \(KO\) or \(\Omega^{\mathrm{Spin}}\) computation (A5)
+- [x] Oriented rank-2 model aimed at \(B\mathrm{Spin}\) (A3)  
+- [x] \(w_1,w_2\) vanishing / \(B\mathrm{Spin}\) lift on \(\mathcal{O}_{\mathrm{res}}^{\mathrm{disc}}\) (A4)  
+- [x] \(KO_0\) / \(\Omega_0^{\mathrm{Spin}}\) residual 0-class \(=B'\) (A5)
 
 ---
 
@@ -257,18 +257,22 @@ Architecture B **on the carrier** may use only functions of \(x,\tau(x),\beta(x)
 | **A0** | Provenance + carrier + discrete \(f\) | **Done** |
 | **A1** | Seed equivariance; \(\beta_\sharp\) normal form; fiber theorem | **Done** — `Architecture_A1_Seed_Equivariance.md` |
 | **A2** | Constant simplicial lift \(E(\mathcal{O}_{\mathrm{res}})\to E(X_{\mathrm{disc}})\); nerve of \(\mathbb{Z}/8\) faces | **Done** — `Architecture_A2_Simplicial_Lift.md` |
-| **A3** | Continuous \(\Phi\colon\lvert E(\mathcal{O}_{\mathrm{res}})\rvert\to\mathrm{Gr}_1(V)\hookrightarrow BO\); spin-aimed \(\Phi^{\mathrm{Spin}}\) | **Done** (first model) — `Architecture_A3_Geometric_BO_BSpin.md` |
-| **A4** | \(w_1,w_2\) / \(B\mathrm{Spin}\) lift | **Next** |
-| **A5** | Actual \(KO\) / \(\Omega^{\mathrm{Spin}}\) computation | Open |
+| **A3** | Continuous \(\Phi\colon\lvert E(\mathcal{O}_{\mathrm{res}})\rvert\to\mathrm{Gr}_1(V)\hookrightarrow BO\); spin-aimed \(\Phi^{\mathrm{Spin}}\) | **Done** — `Architecture_A3_Geometric_BO_BSpin.md` |
+| **A4** | \(w_1,w_2\) / \(B\mathrm{Spin}\) lift on \(\mathcal{O}_{\mathrm{res}}^{\mathrm{disc}}\) (0-stem only) | **Done** — `Architecture_A4_BSpin_Lift.md` · `A4_BSPIN_LIFT_CLOSED_ON_O_RES_DISC` |
+| **A5** | \(KO_0\) / \(\Omega_0^{\mathrm{Spin}}\) class \(B'\) (0-stem only) | **Done** — `Architecture_A5_KO_Spin_Bordism.md` · `A5_KO_OMEGA0_SPIN_CLOSED_ON_O_RES` |
+| **A4⁺** | Continuous \(w_1,w_2\) / \(B\mathrm{Spin}\) of \(\Phi\) on **full** \(\lvert E(\mathcal{O}_{\mathrm{res}})\rvert\) | **Open** (next) |
 
-Secondary (lower priority, parallel): E1–E2 free-map word probes; 1001 provenance; R-FFT; individuality falsifiability — **must not** be mixed into carrier provenance.
+**Domain freeze:** A4–A5 claims apply only to \(\mathcal{O}_{\mathrm{res}}^{\mathrm{disc}}\) / 0-stem. Do **not** reopen A4–A5 on that domain. Do **not** promote 0-stem \(\Omega_0=B'\) to continuum \(\Omega_{n>0}\).
+
+Secondary (lower priority, parallel): E1–E2 free-map word probes; 1001 provenance; R-FFT; individuality falsifiability — **must not** be mixed into carrier provenance.  
+Secondary residual (non-Architecture): theorem-lock \(P^+\) M1 / multi-scale flux quantization.
 
 ---
 
 ## 9. Bottom line
 
-> Architecture A / Bott / classifying-map work **proceeds** with \(\mathcal{O}_{\mathrm{res}}\) as the **only** 539-carrier.  
-> **A0–A3 complete:** carrier, \(\beta_\sharp\), discrete simplicial lift, continuous \(\Phi\to\mathrm{Gr}_1(V)\hookrightarrow BO\) (and spin-aimed \(\Phi^{\mathrm{Spin}}\)).  
-> **A4–A5 open:** \(B\mathrm{Spin}\) obstruction theory and actual \(KO\)/bordism.  
-> Honest provenance is mandatory: residual flux quanta under (S) + democratic charge partition — **not** free \(T^\sharp\), **not** a No-Go lift.  
+> Architecture A / Bott / classifying-map work uses \(\mathcal{O}_{\mathrm{res}}\) as the **only** 539-carrier.  
+> **A0–A3 complete.** **A4–A5 closed as 0-stem residual closure** on \(\mathcal{O}_{\mathrm{res}}^{\mathrm{disc}}\) only (vanishing SW + bordism/\(KO_0=B'\)).  
+> **A4⁺ open:** continuous obstruction theory on full \(\lvert E(\mathcal{O}_{\mathrm{res}})\rvert\).  
+> Honest provenance: residual flux quanta under (S) + democratic charge partition — **not** free \(T^\sharp\), **not** a No-Go lift.  
 > Free-dynamics 539-classes remain **Option 3**.

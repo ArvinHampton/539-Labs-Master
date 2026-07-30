@@ -1,0 +1,107 @@
+{
+  "provenance": {
+    "objects": "residual flux quanta",
+    "principle_S": true,
+    "democratic_charge_partition": true,
+    "not_free_Tsharp_basins": true,
+    "no_go_lift_claimed": false,
+    "option3_free_dynamics_unchanged": true,
+    "B_prime_derived_not_input": true,
+    "formula_B_prime": "floor((N_flux - f_max)/9)"
+  },
+  "A4": {
+    "domain": "O_res^disc only \u2014 0-dimensional CW, B' points (0-stem residual closure)",
+    "not_full_realization_E": true,
+    "A4_plus_open": "continuous w1/w2/BSpin on full |E(O_res)|",
+    "H_i_gt_0_Z2": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    "Phi_model": "Gr_1(V) hookrightarrow BO",
+    "Phi_Spin_model": "oriented Gr_2(W) toward BSO subset BO",
+    "w1_Phi": 0,
+    "w2_Phi": 0,
+    "w1_Phi_Spin": 0,
+    "w2_Phi_Spin": 0,
+    "reason": "H^{>0}(O_res^disc; Z/2)=0 => primary SW obstructions vanish; line bundle w2=0; oriented plane w1=0",
+    "BSO_lift": true,
+    "BSpin_lift": true,
+    "BSpin_lift_unique_up_to_homotopy": true,
+    "pointwise_spin_structures": 539,
+    "dim_V": 1944,
+    "Phi_injective": true,
+    "Phi_Spin_injective": true,
+    "status": "A4_BSPIN_LIFT_CLOSED_ON_O_RES_DISC",
+    "scope": "0-stem residual closure; not continuum A4 exit on |E|"
+  },
+  "A5": {
+    "domain": "O_res^disc / 0-stem only",
+    "Omega0_Spin": "Z",
+    "class_O_res": 539,
+    "ABS": "Omega0_Spin -> KO_0(pt) iso",
+    "KO0_pt": "Z",
+    "ABS_image": 539,
+    "KO0_value": 539,
+    "KO_star_pt_table_mod_8": {
+      "0": "Z",
+      "1": "Z/2",
+      "2": "Z/2",
+      "3": "0",
+      "4": "Z",
+      "5": "0",
+      "6": "0",
+      "7": "0"
+    },
+    "Bott_fiber_proxy_multiset": {
+      "0": 68,
+      "1": 68,
+      "2": 68,
+      "3": 67,
+      "4": 67,
+      "5": 67,
+      "6": 67,
+      "7": 67
+    },
+    "identity_B_prime_8_67_3": true,
+    "rank_Phi": 1,
+    "rank_Phi_Spin": 2,
+    "pushforward_interpretation": "sum_x [pt_x] = B' in Omega0 and KO0",
+    "higher_Omega_Spin_continuum_fillings": "not claimed (Cat B)",
+    "promote_0stem_to_continuum_Omega_n": false,
+    "status": "A5_KO_OMEGA0_SPIN_CLOSED_ON_O_RES",
+    "scope": "0-stem residual closure only"
+  },
+  "arithmetic": {
+    "N_flux": 4880,
+    "f_max": 21,
+    "B_prime": 539,
+    "fiber_table": [
+      68,
+      68,
+      68,
+      67,
+      67,
+      67,
+      67,
+      67
+    ],
+    "B_mod_8": 3
+  },
+  "not_claimed": [
+    "free T^sharp origin of 539",
+    "higher-dimensional Omega^Spin of continuum fillings",
+    "security reduction",
+    "G4=539.9 in KO",
+    "No-Go lift",
+    "formality over continuum de Rham"
+  ],
+  "locks_intact": {
+    "option3": true,
+    "no_go": true,
+    "A0_A1_A2_A3": true,
+    "near_term_kit": true
+  },
+  "status": "A4_A5_CLOSED_ON_O_RES"
+}

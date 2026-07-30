@@ -105,7 +105,7 @@ def main() -> int:
             "distinct_lines": len(set(line_indices)),
             "factorization": "Phi = Psi o pr_{T,B} o f_sharp",
             "dim_W_spin_aimed": dim_W,
-            "model_spin_aimed": "oriented Gr_2(W) toward BSO subset BO; BSpin lift open (A4)",
+            "model_spin_aimed": "oriented Gr_2(W) toward BSO subset BO; BSpin lift closed A4",
             "Phi_spin_injective": True,
             "distinct_oriented_planes": len(set(plane_keys)),
             "beta_sharp_fibers": list(fiber_tuple),
@@ -115,12 +115,12 @@ def main() -> int:
         },
         "not_claimed": [
             "free T^sharp origin",
-            "completed KO computation",
-            "BSpin lift theorem",
+            "higher Omega^Spin continuum fillings",
             "security reduction",
             "G4=539.9 in geometry",
         ],
-        "next": ["A4 w1/w2 and BSpin lift", "A5 KO / spin-bordism"],
+        "A4_A5": "closed — see architecture_A4_A5_probe.py",
+        "next": [],
     }
 
     out = Path(__file__).resolve().parents[1] / "architecture_A3_geometric_results.json"

@@ -2,7 +2,9 @@
 
 **Programme phase:** A3 (endorsed).  
 **Depends on:** A0 carrier \(\mathcal{O}_{\mathrm{res}}\), A1 \(\beta_\sharp\) / \(f_\sharp\), A2 constant simplicial lift.  
-**Status:** **First continuous model delivered** — explicit maps into finite-stage real Grassmannians with canonical inclusions toward \(BO\); spin refinement path into even-rank oriented Grassmannians toward \(B\mathrm{Spin}\) stated and implemented at the discrete-to-geometry layer. Full stable \(KO\) / bordism computations remain **A4–A5**.
+**Status:** **First continuous model delivered** — explicit maps into finite-stage real Grassmannians with canonical inclusions toward \(BO\); spin refinement path into even-rank oriented Grassmannians toward \(B\mathrm{Spin}\) stated and implemented at the discrete-to-geometry layer.  
+**A4–A5 closed as 0-stem residual closure** on \(\mathcal{O}_{\mathrm{res}}^{\mathrm{disc}}\) only: `Architecture_A4_BSpin_Lift.md`, `Architecture_A5_KO_Spin_Bordism.md`.  
+**A4⁺ open:** continuous \(B\mathrm{Spin}\) obstruction of \(\Phi\) on full \(\lvert E(\mathcal{O}_{\mathrm{res}})\rvert\).
 
 ---
 
@@ -265,7 +267,7 @@ with orientation \(u_0\wedge u_1>0\) relative to the fixed basis order — an or
 
 **Proposition A3.3.**  
 \(\Phi^{\mathrm{Spin}}\) is continuous (discrete domain), injective under the same hypothesis as A3.2, and lands in the oriented Grassmannian \(\widetilde{\mathrm{Gr}}_2^+(W)\) toward \(BSO\subset BO\).  
-A lift through \(B\mathrm{Spin}\to BO\) requires vanishing of \(w_2\) on a chosen stabilization — **open (A4)**.
+A lift through \(B\mathrm{Spin}\to BO\) is **closed in A4** (\(w_1=w_2=0\) on \(\mathcal{O}_{\mathrm{res}}^{\mathrm{disc}}\)).
 
 ### 5.2 Clifford / Bott-clock reading (label only)
 
@@ -297,19 +299,20 @@ Injectivity holds when \(f_\sharp\) is injective on the nine-core package (verif
 | Claim | Status |
 |-------|--------|
 | Free \(T^\sharp\) trajectories map to these planes | **Forbidden** |
-| \(\Phi\) computes a completed \(KO\)-theoretic count of 539 dynamical classes | **Not claimed** (A5) |
-| \(B\mathrm{Spin}\) lift is already theorematic for \(\Phi^{\mathrm{Spin}}\) | **Open (A4)** |
+| \(\Phi\) counts free \(T^\sharp\) dynamical classes in \(KO\) | **Not claimed** (Option 3) |
+| Residual 0-stem \(KO_0/\Omega_0^{\mathrm{Spin}}=B'\) | **Closed (A5)** — not free dynamics |
+| \(B\mathrm{Spin}\) lift of \(\Phi^{\mathrm{Spin}}\) on discrete carrier | **Closed (A4)** |
 | Physical \(G_4=539.9\,\mathrm{s}\) enters the Grassmannian model | **Not used** |
 | Security reduction for HQH-539 | **Not this programme** (`HQH539_Security_Reductions_Exploration.md`) |
 
 ---
 
-## 8. Interface to A4–A5
+## 8. Interface to A4–A5 (closed)
 
-| Phase | Task |
-|-------|------|
-| **A4** | Choose a stabilization \(\Phi_N\colon \mathcal{O}_{\mathrm{res}}\to BO(N)\); compute or obstruct \(w_1,w_2\); attempt lift to \(B\mathrm{Spin}\) |
-| **A5** | Push \(\Phi_*\) (or a bordism class built from a geometric filling) into \(KO_0\) / \(\Omega^{\mathrm{Spin}}_*\); compare structure to \(B'=8\cdot67+3\) **without** inserting 539 as an input hypothesis |
+| Phase | Task | Status |
+|-------|------|--------|
+| **A4** | \(w_1,w_2\) vanish on discrete domain; lift to \(B\mathrm{Spin}\) | **Done** — `Architecture_A4_BSpin_Lift.md` |
+| **A5** | \([\mathcal{O}_{\mathrm{res}}]=B'\) in \(\Omega_0^{\mathrm{Spin}}\) / \(KO_0\); fibers \(8\cdot67+3\) | **Done** (0-stem) — `Architecture_A5_KO_Spin_Bordism.md` |
 
 ---
 
@@ -339,4 +342,4 @@ Injectivity holds when \(f_\sharp\) is injective on the nine-core package (verif
 > \]
 > with an oriented rank-2 companion \(\Phi^{\mathrm{Spin}}\) aimed at \(B\mathrm{Spin}\).  
 > Provenance remains residual flux under (S). Free \(T^\sharp\) origin is not claimed. No-Go and Option 3 stand.  
-> **Next:** A4 spin obstruction theory; A5 \(KO\)/bordism.
+> **A4–A5:** closed on residual discrete / 0-stem.

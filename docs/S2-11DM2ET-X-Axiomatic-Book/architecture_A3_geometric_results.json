@@ -15,7 +15,7 @@
     "distinct_lines": 539,
     "factorization": "Phi = Psi o pr_{T,B} o f_sharp",
     "dim_W_spin_aimed": 3888,
-    "model_spin_aimed": "oriented Gr_2(W) toward BSO subset BO; BSpin lift open (A4)",
+    "model_spin_aimed": "oriented Gr_2(W) toward BSO subset BO; BSpin lift closed A4",
     "Phi_spin_injective": true,
     "distinct_oriented_planes": 539,
     "beta_sharp_fibers": [
@@ -44,13 +44,10 @@
   },
   "not_claimed": [
     "free T^sharp origin",
-    "completed KO computation",
-    "BSpin lift theorem",
+    "higher Omega^Spin continuum fillings",
     "security reduction",
     "G4=539.9 in geometry"
   ],
-  "next": [
-    "A4 w1/w2 and BSpin lift",
-    "A5 KO / spin-bordism"
-  ]
+  "A4_A5": "closed \u2014 see architecture_A4_A5_probe.py",
+  "next": []
 }

@@ -143,8 +143,8 @@ These graphs are **combinatorial annotations** on residual quanta — not free \
 |------|---------|-------|
 | Discrete \(Y=E(X_{\mathrm{disc}})\) | Done | **A2** |
 | \(B G_B=B(\mathbb{Z}/8)\to BO\) via standard maps on \(\pi_*\) / virtual reps | Open | A3 |
-| Spin lift through \(B\mathrm{Spin}\to BO\) | Open | A4 |
-| \(KO\) / \(\Omega^{\mathrm{Spin}}\) of a geometric model built from tower×charge | Open | A5 |
+| Spin lift through \(B\mathrm{Spin}\to BO\) | **Closed** on disc carrier | A4 |
+| \(KO_0\) / \(\Omega_0^{\mathrm{Spin}}\) residual class \(B'\) | **Closed** (0-stem) | A5 |
 
 **A2 does not claim** that \(\tilde f_\sharp\) already computes a \(KO\)-class. It only supplies a rigorous simplicial map of discrete constant systems realizing \(f_\sharp\).
 
