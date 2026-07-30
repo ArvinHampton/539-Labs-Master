@@ -1,0 +1,39 @@
+{
+  "status": "CUNC_2026_FS_AUDIT_CORRECTED",
+  "date_utc": "2026-07-30",
+  "source": {
+    "authors": "Yang Luo et al.",
+    "title": "Orbital-resolved imaging of coherent femtosecond exciton dynamics in coupled molecules",
+    "journal": "Nature Communications",
+    "year": 2026,
+    "doi": "10.1038/s41467-026-73191-0",
+    "url": "https://www.nature.com/articles/s41467-026-73191-0"
+  },
+  "measured": {
+    "T2_monomer_fs": 70,
+    "T2_thinner_NaCl_fs": 50,
+    "T2_dimer_bright_E1_fs": 60,
+    "T2_dimer_dark_E4_fs": 50,
+    "interferogram_period_fs": 2.5,
+    "pulse_FWHM_fs": 10,
+    "cross_correlation_NaCl_fs": 15,
+    "fit_formula": "I(tau) ∝ cos(DeltaE/hbar * tau) * exp(-tau/T2)"
+  },
+  "retracted": {
+    "T2_draft_fs": 2.3,
+    "amplitude_draft": 0.031,
+    "cos_period_draft": 5.0,
+    "expression": "0.031*exp(-t/2.3e-15)*cos(2*pi*t/5.0)",
+    "code": "CUNC_2P3FS_RETRACTED"
+  },
+  "replacement_code": "CUNC_T2_70FS_MONOMER_LOCKED_AS_DATA",
+  "category": {
+    "numbers": "external_empirical",
+    "pmU_map": "Category_B",
+    "G4_phase_lock": "not_in_dataset"
+  },
+  "notes": [
+    "2.3 fs was almost certainly the ~2.5 fs optical interferogram period misread as T2",
+    "G4 = 539.90 s remains orthogonal to CuNc femtosecond kernel"
+  ]
+}
