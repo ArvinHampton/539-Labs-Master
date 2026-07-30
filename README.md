@@ -3,6 +3,10 @@
 Organized master corpus of the S²-11DM²ET-X unification framework, the Hampton Qutrit Collatz Convergence (HQCC) theorem, the Canonical T3 map, HQH-539 cryptographic materials, and supporting papers.
 
 Prepared for development, archival, and selective peer review.
+## Repository visibility (2026-07-30)
+
+Core 539 Labs science/crypto repositories are **public**, including this master corpus and [539-Labs-Corpus](https://github.com/ArvinHampton/539-Labs-Corpus). Unauthenticated clone and raw.githubusercontent.com access work. Category B / proprietary claim labeling in SECURITY.md still applies to content claims; visibility ≠ peer review.
+
 Copyright 539 Labs LLC / Arvin B. Hampton (String Weaver).
 
 ## Canonical T3 Map (Local Dynamical Rule)
@@ -37,7 +41,7 @@ Never use absolute language such as “unbreakable” or “provably secure.” 
 - docs/hqcc/ — T3 map definition, HQCC theorem statement, Raw-vs-Resonant clarification
 - docs/model/ — Framework overview and master equations summary
 - docs/papers/ — Index and pointers to core unification, cosmology, particle-physics, and mathematical-resolution documents
-- **docs/S2-11DM2ET-X-Axiomatic-Book/** — Living axiomatic book: closed constants, ACE/No-Go status, non-circular length packaging \(18+521=539\) under principle (S), provenance table, probes/scripts
+- **docs/S2-11DM2ET-X-Axiomatic-Book/** — Living axiomatic book (**public**): closed constants, ACE/No-Go status, non-circular length packaging \(18+521=539\) under principle (S), provenance table, probes/scripts
 - hqh539/python/ — Canonical reference implementation (constant-time T3 step) and demos
 - PAPERS.md — Expanded catalog of unique papers and Drive counterparts
 - PROPRIETARY.md, SECURITY.md — Legal and claim-labeling protocol
@@ -57,7 +61,7 @@ See `docs/S2-11DM2ET-X-Axiomatic-Book/Object539_NonCircular_Construction.md`, `F
 
 ## Related Repositories
 
-- 539-Labs-repo (private) — Full FPGA/RTL, Vivado, demo, deploy, TDP, and milestone directives for the HQH-539 hardware pipeline
+- 539-Labs-repo (public) — Full FPGA/RTL, Vivado, demo, deploy, TDP, and milestone directives for the HQH-539 hardware pipeline
 - hqh539-engine, HQH-539-512 (public) — Streamlit and high-volume encryption generators
 - HQH-539-RTL (public) — SystemVerilog cores and testbenches
 - resonant-galois (public) — Experimental A5/A6 constructive generation

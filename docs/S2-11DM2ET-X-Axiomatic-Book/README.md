@@ -1,4 +1,5 @@
-> **GitHub (canonical):** [ArvinHampton/539-Labs-Master](https://github.com/ArvinHampton/539-Labs-Master/tree/main/docs/S2-11DM2ET-X-Axiomatic-Book)
+> **GitHub (canonical, public):** [ArvinHampton/539-Labs-Master](https://github.com/ArvinHampton/539-Labs-Master/tree/main/docs/S2-11DM2ET-X-Axiomatic-Book)
+> **Visibility:** public as of 2026-07-30 — raw + unauthenticated clone OK
 > **Programme baseline:** [`PROGRAMME_BASELINE.md`](PROGRAMME_BASELINE.md)
 > **Session claim freeze:** [`CLAIM_TABLE_Master.md`](CLAIM_TABLE_Master.md) | [`PUSH_LOG_2026-07-30.md`](PUSH_LOG_2026-07-30.md)
 
