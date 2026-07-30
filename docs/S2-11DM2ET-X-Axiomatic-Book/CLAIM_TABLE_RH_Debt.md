@@ -1,14 +1,16 @@
-# Claim table — RH active resolution track
+# Claim table — RH pure Cat A track
+
+**Status label:** `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF` (active workstream; not frozen)
 
 | Claim | Tag | Status |
 |-------|-----|--------|
-| RH under active resolution in this programme | **S** / programme | **ACTIVE** (`RH_ACTIVE_RESOLUTION_TRACK`) |
-| RH fully proved (finished theorem) | — | **Not yet** |
-| RH frozen / abandoned | — | **No** |
-| Conjectures A/B on \(A_N\) | **S** pure analysis | **Working targets** |
-| L1–L4 | **S** | **Open work list** |
-| L5 numerics | diagnostic | **Allowed** |
-| Model \(D\), \(E_{\mathrm{leak}}\), \(\mu\), \(G_4\) inside final \(\zeta\) theorem | **B** only | Motivation / numerics — strip from theorem env |
-| Resonant Algebra = RH | **O** | Different subject; keep parallel |
+| RH proved | — | **No** |
+| RH workstream active | programme | **Yes** |
+| L1: \(A_X\) defined without model constants | **A** | **Formalized** |
+| Conjectures A, B | **S** | Stated |
+| Target lemma (\(\ge c\,m\log\log X\) at maximal abscissa zero) | **S** | **Open — primary** |
+| Conrad/Goldfeld/Akatsuka usable as input literature | classical | Mapped |
+| Model debit / \(E_{\mathrm{leak}}\) / \(\mu\) / 539.9 as zeta theorem | **O** in theorem env | Motivation only |
+| Resonant Algebra \(\Rightarrow\) RH | **O** | Unrelated |
 
-**Do not freeze RH.** Work continues on L1→L4 and Conjectures A/B.
+Primary note: `RH_L1_Phase_Functional_CatA.md`
