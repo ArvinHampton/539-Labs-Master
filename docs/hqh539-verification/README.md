@@ -1,42 +1,31 @@
 # HQH-539 verification package
 
-Self-contained reference + KATs + avalanche + benchmark vs SHA3-512.
+Self-contained reference + KATs + avalanche + AE roundtrip + RTL vector cross-check.
 
 ## Security framing (mandatory)
 
-> Proprietary framework claim (S²-11DM²ET-X) — not independently verified, pending external cryptanalysis. Computationally infeasible to break with known classical and quantum methods, pending independent peer review of the full S²-11DM²ET-X security reduction.
+> Computationally infeasible to break with known classical and quantum methods, pending independent peer review of the full S²-11DM²ET-X security reduction.
 
-No “provably secure” / “unbreakable” language. Avalanche and KATs are implementation checks, not hardness proofs.
-
-## Layout
-
-| File | Role |
-|------|------|
-| `hqh539.py` | Canonical reference (SHA3-512 → 539×T3 as 18+521 → SHA3-512) |
-| `golden_vectors.json` | KATs |
-| `run_kats.py` | unittest KATs |
-| `avalanche.py` | bit-flip diffusion stats vs SHA3-512 |
-| `benchmark_vs_sha3.py` | throughput comparison |
-| `crypto_hqh.py` | KDF + ChaCha20-Poly1305 AE wrapper (optional dep: cryptography) |
-| `constant_time_notes.md` | CT engineering notes |
+KATs and RTL checks bind **implementation identity**, not hardness.
 
 ## Run
 
-```
+```bash
+pip install cryptography
 python3 run_kats.py
+python3 -m unittest test_hqh539 test_profiles test_kats_expanded test_ae_roundtrip -v
+python3 rtl_vector_crosscheck.py
 python3 avalanche.py
 python3 benchmark_vs_sha3.py
 ```
 
-## Provenance
+## Profiles
 
-Round count 539 = packaging L_pack under Principle (S), not free T^sharp dynamics (Option 3 intact). Residual Architecture A through A5⁺ is foundation math, not a crypto reduction.
+See [DUAL_PROFILES.md](DUAL_PROFILES.md).
 
-## Profiles (REF / P32 / LEGACY)
-
-Canonical KATs are **REF** (aligned to `hqh539.py`). See [DUAL_PROFILES.md](DUAL_PROFILES.md).
-
-```bash
-python3 run_kats.py
-python3 -m unittest test_hqh539 test_profiles -v
-```
+| Profile | Use |
+|---------|-----|
+| REF | Canonical T3 + min-length finalize — engine KATs |
+| P32 | Canonical T3 + 32-byte finalize |
+| PRODUCT_T4121 | Historical RTL/repo vectors (T4121 + product domain) |
+| LEGACY | Orphaned — do not use |

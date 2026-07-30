@@ -64,3 +64,28 @@ No dual-profile claim is a security reduction.
 1. Consumers of old engine goldens must re-hash under REF (or explicitly opt into P32).
 2. Cross-impl tests must load REF goldens only for REF modules.
 3. Master verification package (`docs/hqh539-verification`) uses REF and matches this alignment.
+
+
+---
+
+## Product / RTL vector profile (2026-07-30 cross-check)
+
+Historical vectors under `rtl_vectors/` (from `539-Labs-repo/test_vectors`) match:
+
+| Piece | Value |
+|-------|--------|
+| Map | **T4121** (residue 1: `(4n+1)//3`) — not Canonical T3 |
+| Steps | 539 |
+| Finalize | `SHA3-512(state.to_bytes(32, BE) ‖ SALT_STD ‖ DOMAIN)` |
+| SALT_STD | `b"539-LABS-2026-RESONANT-SALT"` |
+| DOMAIN | `b":HQH-539-RESONANT:"` |
+
+| ID | Notes |
+|----|--------|
+| **PRODUCT_T4121** | Matches t3core + pipeline KATs in repo vectors |
+| **REF** | Production crypto primitive intent per engine README / Canonical T3 |
+| **P32** | Canonical T3 + 32-byte finalize, empty domain (engine helper) |
+
+**Do not mix** PRODUCT_T4121 digests with REF digests. RTL public timing work used T4121; engine REF remains Canonical unless explicitly re-pointed.
+
+Run: `python3 rtl_vector_crosscheck.py`

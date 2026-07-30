@@ -1,29 +1,24 @@
 # HQH-539 verification status (2026-07-30)
 
-**Track:** crypto engineering / verification  
-**Engine align commit:** see hqh539-engine main after dual-profile alignment  
+## Suites
 
-## Profiles
+| Suite | Result |
+|-------|--------|
+| REF goldens + profiles | PASS |
+| Expanded KATs | PASS |
+| AE roundtrip (KDF + ChaCha20-Poly1305 + package) | PASS (44 tests total with prior) |
+| RTL vector cross-check | **PASS** |
 
-| Profile | File | Status |
-|---------|------|--------|
-| **REF** | `golden_vectors.json` + `hqh539.py` | **Active KATs** |
-| **P32** | `golden_vectors_p32.json` + `profiles.py` | Documented dual |
-| **LEGACY** | `golden_vectors_legacy_orphaned.json` | Archived only |
+## RTL finding
 
-See `DUAL_PROFILES.md`.
+`539-Labs-repo` vectors under `rtl_vectors/` match **PRODUCT_T4121**:
 
-## Executed
+- Map: T4121 `(4n+1)//3` on residue 1  
+- Finalize: 32-byte BE state ‖ `SALT_STD` ‖ `b":HQH-539-RESONANT:"`  
+- **Not** engine REF (Canonical T3, empty domain, min-length finalize)
 
-| Item | Status |
-|------|--------|
-| REF goldens aligned to live code | PASS |
-| Legacy goldens archived (orphaned oracle) | Done |
-| P32 dual profile documented + KATs | PASS |
-| `unittest test_hqh539 test_profiles` | PASS |
-| Avalanche / benchmark | Engineering only |
-| Formal security reduction | Pending |
+Canonical T3 deliberately mismatches those files (expected). See `DUAL_PROFILES.md`.
 
-## Hardness language
+## Security framing
 
-Computationally infeasible with known classical/quantum methods, pending peer review of the full reduction.
+Implementation checks only. Hardness remains computationally infeasible with known methods, pending peer review of the full reduction.

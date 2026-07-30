@@ -1,0 +1,88 @@
+{
+  "status": "RTL_VECTOR_CROSSCHECK",
+  "vector_source": "539-Labs-repo/test_vectors (mirrored under rtl_vectors/)",
+  "sha3": {
+    "layer": "SHA3-512_standalone",
+    "n": 10,
+    "pass": 10,
+    "fail": 0,
+    "category": "A"
+  },
+  "t3core_T4121": {
+    "layer": "T3core_T4121",
+    "n": 100,
+    "pass": 100,
+    "fail": 0,
+    "max_state_bits": 236,
+    "samples_fail": [],
+    "category": "A_map_plus_fixed_steps"
+  },
+  "t3core_Canonical_expect_mismatch": {
+    "layer": "T3core_Canonical",
+    "n": 100,
+    "pass": 1,
+    "fail": 99,
+    "max_state_bits": 237,
+    "samples_fail": [
+      {
+        "i": 0,
+        "bits": 215,
+        "got_tail": "92ae9cad14517f268b68ff90205c4b5e",
+        "exp_tail": "b71ca4aba72b45145fc9a2da3fe40817"
+      },
+      {
+        "i": 1,
+        "bits": 227,
+        "got_tail": "5964a630d434509aaa0648b2ed87d30e",
+        "exp_tail": "e3b50092dfa502222cb253186a1a284d"
+      },
+      {
+        "i": 2,
+        "bits": 221,
+        "got_tail": "48abfa17f0a8feacadd4515d28451ea2",
+        "exp_tail": "fe0e448abfa17f0a8feacadd4515d281"
+      }
+    ],
+    "category": "A_map_plus_fixed_steps"
+  },
+  "phase3": {
+    "layer": "Phase3_product_domain",
+    "n": 20,
+    "pass": 20,
+    "fail": 0,
+    "salt": "539-LABS-2026-RESONANT-SALT",
+    "domain_sep": ":HQH-539-RESONANT:",
+    "finalize": "SHA3-512(state_32be || SALT_STD || DOMAIN_PRODUCT)",
+    "category": "A_wrapper"
+  },
+  "pipeline": {
+    "layer": "Pipeline_e2e",
+    "n": 100,
+    "seed_match": {
+      "pass": 100,
+      "fail": 0
+    },
+    "digest_matches": {
+      "T4121_p32_product": 100,
+      "canon_p32_product": 1,
+      "canon_ref_empty_domain": 0
+    },
+    "inferred_profile": "PRODUCT_T4121_P32_DOMAIN",
+    "note": "Repo pipeline vectors match T4121 + 32-byte finalize + SALT_STD + DOMAIN b':HQH-539-RESONANT:'. They do NOT match engine REF (Canonical T3, empty DOMAIN_SEP, min-length finalize).",
+    "category": "engineering_crosscheck"
+  },
+  "profile_map": {
+    "REF_engine": "Canonical T3 + min-length finalize + DOMAIN_SEP=b''",
+    "P32_engine": "Canonical T3 + 32-byte finalize + DOMAIN_SEP=b''",
+    "PRODUCT_RTL_vectors": "T4121 + 32-byte finalize + DOMAIN b':HQH-539-RESONANT:' + SALT_STD"
+  },
+  "security_framing": "Implementation/RTL consistency only. Not a security reduction. Hardness: computationally infeasible with known methods, pending peer review.",
+  "gates": {
+    "sha3_pass": true,
+    "t3core_T4121_pass": true,
+    "phase3_pass": true,
+    "pipeline_T4121_product_pass": true,
+    "canonical_differs_from_vector_files": true
+  },
+  "overall": "PASS"
+}
