@@ -9,7 +9,7 @@
     "A4_0stem_intact": true,
     "A5_0stem_intact": true,
     "A4plus_intact": true,
-    "domain": "primary K⁺ A2_enrich only"
+    "domain": "primary K\u207a A2_enrich only"
   },
   "Kplus": {
     "mode": "A2_enrich",
@@ -34,8 +34,18 @@
     "euler_homology_free": 1,
     "connected": true,
     "acyclic_positive": true,
-    "SNF_d1_diag_summary": {"all_ones": true, "count": 538, "min": 1, "max": 1},
-    "SNF_d2_diag_summary": {"all_ones": true, "count": 56, "min": 1, "max": 1}
+    "SNF_d1_diag_summary": {
+      "all_ones": true,
+      "count": 538,
+      "min": 1,
+      "max": 1
+    },
+    "SNF_d2_diag_summary": {
+      "all_ones": true,
+      "count": 56,
+      "min": 1,
+      "max": 1
+    }
   },
   "F2_betti_check": {
     "beta0_F2": 1,
@@ -44,26 +54,124 @@
   },
   "AHSS": {
     "pointlike_integral_homology": true,
+    "E2_spin_skeleton": {
+      "q=0": {
+        "p=0": "H0 \u2297 \u03a9_0 \u2245 Z",
+        "p=1": "0",
+        "p=2": "0"
+      },
+      "q=1": {
+        "p=0": "H0 \u2297 \u03a9_1 \u2245 Z/2",
+        "p=1": "0",
+        "p=2": "0"
+      },
+      "q=2": {
+        "p=0": "H0 \u2297 \u03a9_2 \u2245 Z/2",
+        "p=1": "0",
+        "p=2": "0"
+      },
+      "q=3": {
+        "p=0": "H0 \u2297 \u03a9_3 \u2245 0",
+        "p=1": "0",
+        "p=2": "0"
+      },
+      "q=4": {
+        "p=0": "H0 \u2297 \u03a9_4 \u2245 Z",
+        "p=1": "0",
+        "p=2": "0"
+      },
+      "q=5": {
+        "p=0": "H0 \u2297 \u03a9_5 \u2245 0",
+        "p=1": "0",
+        "p=2": "0"
+      },
+      "q=6": {
+        "p=0": "H0 \u2297 \u03a9_6 \u2245 0",
+        "p=1": "0",
+        "p=2": "0"
+      },
+      "q=7": {
+        "p=0": "H0 \u2297 \u03a9_7 \u2245 0",
+        "p=1": "0",
+        "p=2": "0"
+      }
+    },
+    "E2_ko_skeleton": {
+      "q=0": {
+        "p=0": "H0 \u2297 KO_0 \u2245 Z",
+        "p=1": "0",
+        "p=2": "0"
+      },
+      "q=1": {
+        "p=0": "H0 \u2297 KO_1 \u2245 Z/2",
+        "p=1": "0",
+        "p=2": "0"
+      },
+      "q=2": {
+        "p=0": "H0 \u2297 KO_2 \u2245 Z/2",
+        "p=1": "0",
+        "p=2": "0"
+      },
+      "q=3": {
+        "p=0": "H0 \u2297 KO_3 \u2245 0",
+        "p=1": "0",
+        "p=2": "0"
+      },
+      "q=4": {
+        "p=0": "H0 \u2297 KO_4 \u2245 Z",
+        "p=1": "0",
+        "p=2": "0"
+      },
+      "q=5": {
+        "p=0": "H0 \u2297 KO_5 \u2245 0",
+        "p=1": "0",
+        "p=2": "0"
+      },
+      "q=6": {
+        "p=0": "H0 \u2297 KO_6 \u2245 0",
+        "p=1": "0",
+        "p=2": "0"
+      },
+      "q=7": {
+        "p=0": "H0 \u2297 KO_7 \u2245 0",
+        "p=1": "0",
+        "p=2": "0"
+      }
+    },
     "predicted_Omega_Spin_Kplus_through_7": {
-      "0": "Z", "1": "Z/2", "2": "Z/2", "3": "0", "4": "Z", "5": "0", "6": "0", "7": "0"
+      "0": "Z",
+      "1": "Z/2",
+      "2": "Z/2",
+      "3": "0",
+      "4": "Z",
+      "5": "0",
+      "6": "0",
+      "7": "0"
     },
     "predicted_KO_Kplus_through_7": {
-      "0": "Z", "1": "Z/2", "2": "Z/2", "3": "0", "4": "Z", "5": "0", "6": "0", "7": "0"
+      "0": "Z",
+      "1": "Z/2",
+      "2": "Z/2",
+      "3": "0",
+      "4": "Z",
+      "5": "0",
+      "6": "0",
+      "7": "0"
     },
     "residual_0_class": {
       "Omega_0_Spin_Kplus": "Z with residual class = B' = 539",
       "KO_0_Kplus": "Z with ABS image = B' = 539",
       "higher_through_7": "isomorphic to coefficients of a point (no extra classes from topology)"
     },
-    "AHSS_collapse_argument": "E2 concentrated on p=0 column; no room for d2 differentials into/out of nonzero positive-p groups; AHSS collapses to Ω_n^Spin(pt) and KO_n(pt) through degree 7 (ABS range).",
-    "ABS_range": "degrees 0..7 (MSpin → ko is 7-connected)",
+    "AHSS_collapse_argument": "E2 concentrated on p=0 column; no room for d_r differentials into/out of nonzero positive-p groups; AHSS collapses to \u03a9_n^Spin(pt) and KO_n(pt) through degree 7 (ABS range).",
+    "ABS_range": "degrees 0..7 (MSpin \u2192 ko is 7-connected)",
     "status_code": "A5PLUS_COEFFICIENTS_ONLY_ON_KPLUS"
   },
   "theorems_candidate": [
-    "A5⁺.1: integral H_*(K⁺) ≅ H_*(pt) (H0=Z, H>0=0) on primary A2_enrich.",
-    "A5⁺.2: AHSS for Ω_*^Spin(K⁺) and KO_*(K⁺) collapses to coefficient groups through degree 7.",
-    "A5⁺.3: residual 0-class remains B′ in Ω_0^Spin(K⁺) ≅ Z and KO_0(K⁺) ≅ Z.",
-    "A5⁺.4: no extra residual bordism/KO classes from primary K⁺ topology in ABS range."
+    "A5\u207a.1: integral H_*(K\u207a) \u2245 H_*(pt) (H0=Z, H>0=0) on primary A2_enrich.",
+    "A5\u207a.2: AHSS for \u03a9_*^Spin(K\u207a) and KO_*(K\u207a) collapses to coefficient groups through degree 7.",
+    "A5\u207a.3: residual 0-class remains B\u2032 in \u03a9_0^Spin(K\u207a) \u2245 Z and KO_0(K\u207a) \u2245 Z.",
+    "A5\u207a.4: no extra residual bordism/KO classes from primary K\u207a topology in ABS range."
   ],
   "not_claimed": [
     "free T^sharp origin",
@@ -71,7 +179,7 @@
     "continuum manifold fillings of residual geometry",
     "G4=539.9 identified with KO period",
     "security reduction",
-    "Ω_n for n>7 beyond coefficient table",
+    "\u03a9_n for n>7 beyond coefficient table",
     "bott_graph secondary mode as primary domain"
   ],
   "status_code": "A5PLUS_COEFFICIENTS_ONLY_ON_KPLUS"

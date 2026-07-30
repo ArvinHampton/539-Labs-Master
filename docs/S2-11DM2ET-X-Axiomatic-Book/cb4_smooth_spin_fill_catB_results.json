@@ -1,0 +1,167 @@
+{
+  "category": "B",
+  "status_code": "CB4_SMOOTH_SPIN_FILL_OPEN_CAT_B",
+  "parent_track": "CAT_B_CONTINUUM_FILLINGS_OPEN_NOT_LOCKED",
+  "hard_firewall": {
+    "locked_stack_untouched": true,
+    "Option3_intact": true,
+    "No_Go_intact": true,
+    "free_Tsharp_forbidden": true,
+    "G4_not_KO": true,
+    "no_promotion_continuum_to_residual": true,
+    "checks": {
+      "H0_is_1": true,
+      "H1_is_0": true,
+      "H2_is_0": true,
+      "V_is_539": true,
+      "B_prime_is_539": true,
+      "does_not_feed_locked_stack": true,
+      "a5plus_still_coefficients_only": true,
+      "E_is_594": true,
+      "F_is_56": true,
+      "all_pass": true
+    }
+  },
+  "Kplus_input_snapshot": {
+    "mode": "A2_enrich",
+    "V": 539,
+    "E": 594,
+    "F": 56,
+    "homology": {
+      "H0": 1,
+      "H1": 0,
+      "H2": 0,
+      "torsion": []
+    },
+    "fiber_size_histogram": {
+      "1": 1,
+      "2": 185,
+      "3": 56
+    },
+    "A4plus_unique_BSpin": true,
+    "A5plus_code": "A5PLUS_COEFFICIENTS_ONLY_ON_KPLUS"
+  },
+  "pi1_diagnostic": {
+    "H1_zero": true,
+    "implies_pi1_perfect": true,
+    "implies_pi1_trivial": false,
+    "status": "OPEN_CAT_B \u2014 simply-connectedness of K\u207a not proved",
+    "presentation_shape": {
+      "tree_complement_generators": 56,
+      "face_relations": 56,
+      "note": "Equal gen/rel counts with H1=0 is consistent with \u03c01=1 or a perfect group; no decision algorithm run here."
+    }
+  },
+  "face_support": {
+    "edge_face_incidence_histogram": {
+      "0": 426,
+      "1": 168
+    },
+    "edges_used_in_some_face": 168,
+    "edges_never_in_a_face": 426,
+    "faces": 56,
+    "path_edges_appearing_in_faces": 112,
+    "nonpath_edges_appearing_in_faces": 56
+  },
+  "classical_spin_bordism": {
+    "Omega_3_Spin_pt": "0",
+    "Omega_4_Spin_pt": "Z",
+    "meaning_for_CB4": "Closed spin 3-manifolds are null-bordant. A spin 3-ball is a null-cobordism of empty boundary. Classical groups neither prove nor forbid a K\u207a-compatible fill.",
+    "category": "B_library"
+  },
+  "obstruction_checklist": [
+    {
+      "id": "O1_homology_point",
+      "statement": "H_*(K\u207a;Z) \u2245 H_*(pt)",
+      "status": "SATISFIED (locked A5\u207a / rechecked)",
+      "category": "B_input_from_lock",
+      "blocks_smooth_ball": false
+    },
+    {
+      "id": "O2_unique_BSpin",
+      "statement": "Unique BSpin lift of \u03a6^Spin on primary K\u207a (A4\u207a.4)",
+      "status": "SATISFIED (locked A4\u207a; \u03b21_F2=0 \u21d2 one spin structure)",
+      "category": "B_input_from_lock",
+      "blocks_smooth_ball": false
+    },
+    {
+      "id": "O3_PL_fill_exists",
+      "statement": "PL contractible fill exists (unreduced cone C(K\u207a) = CB1)",
+      "status": "SATISFIED (combinatorial; Euler 1)",
+      "category": "B",
+      "blocks_smooth_ball": false,
+      "note": "PL existence \u2260 smooth existence"
+    },
+    {
+      "id": "O4_pi1_trivial",
+      "statement": "\u03c01(K\u207a) = 1 (needed for K\u207a \u2243 spine of a ball / contractible 3-manifold)",
+      "status": "OPEN_CAT_B",
+      "category": "B",
+      "blocks_smooth_ball": "unknown \u2014 if nontrivial perfect \u03c01, contractible fill still exists as cone but K\u207a is not itself a ball spine in the strong sense",
+      "known": "H1=0 \u21d2 \u03c01 perfect only"
+    },
+    {
+      "id": "O5_spine_of_3_manifold",
+      "statement": "K\u207a is a spine (or 2-skeleton) of some compact 3-manifold with boundary (e.g. ball)",
+      "status": "OPEN_CAT_B",
+      "category": "B",
+      "blocks_smooth_ball": "unknown",
+      "combinatorial_hint": {
+        "fiber_size_histogram": {
+          "1": 1,
+          "2": 185,
+          "3": 56
+        },
+        "faces_equal_tripletons": true,
+        "edges_never_in_a_face": 426
+      }
+    },
+    {
+      "id": "O6_smooth_structure",
+      "statement": "The 3-manifold (if any) admits a smooth structure extending PL data",
+      "status": "OPEN_CAT_B (vacuous until O5)",
+      "category": "B",
+      "note": "In dim 3, PL \u21d4 smooth for manifolds (classical); bottleneck is manifold realization, not smoothing of a manifold"
+    },
+    {
+      "id": "O7_spin_extension",
+      "statement": "Unique spin structure on K\u207a extends to the smooth fill M",
+      "status": "OPEN_CAT_B (depends on O5\u2013O6; A4\u207a gives boundary/skeleton data)",
+      "category": "B",
+      "note": "Natural rank-2 follow-on after CB4 framed"
+    },
+    {
+      "id": "O8_residual_non_promotion",
+      "statement": "Even a positive CB4 answer does not promote continuum \u03a9_n to residual Category A",
+      "status": "HARD RULE",
+      "category": "B",
+      "blocks_smooth_ball": false
+    }
+  ],
+  "summary": {
+    "satisfied_inputs": [
+      "O1_homology_point",
+      "O2_unique_BSpin",
+      "O3_PL_fill_exists"
+    ],
+    "open_obstructions": [
+      "O4_pi1_trivial",
+      "O5_spine_of_3_manifold",
+      "O6_smooth_structure",
+      "O7_spin_extension"
+    ],
+    "PL_fill_CB1": "EXISTS (cone)",
+    "smooth_fill_CB4": "OPEN existence question",
+    "spin_extension_rank2": "OPEN follow-on after CB4"
+  },
+  "existence_question_Q_CB4": "Does there exist a smooth compact spin 3-manifold M (or a spin 3-ball) admitting a triangulation/CW structure such that primary K\u207a embeds as a 2-skeleton or deformation-retract spine, and the unique A4\u207a BSpin structure on K\u207a extends to a spin structure on M?",
+  "explicit_non_claims": [
+    "CB4 not residual Category A",
+    "No \u03a9_n residual geometry for n>0",
+    "No free T^sharp",
+    "No G4=KO",
+    "No No-Go lift",
+    "\u03c01 triviality not claimed",
+    "Smooth fill existence not claimed"
+  ]
+}

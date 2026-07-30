@@ -4,7 +4,7 @@
 **Author:** Arvin B. Hampton (String Weaver) / 539 Labs LLC  
 **Rule:** Category A vs B mandatory. Packaging under Principle (S) only.  
 **Prior freezes:** 2026-07-29 (packaging + residual product + bio); 2026-07-30 morning (muon Path A/B + ππ ε).  
-**This freeze adds:** A4⁺ continuous BSpin on K⁺ (after CuNc/mirror hygiene earlier same day).
+**This freeze adds:** A4⁺ continuous BSpin on K⁺; **A5⁺ coefficients-only KO/Ω^Spin on K⁺** (after CuNc/mirror hygiene earlier same day).
 
 ## Foundation (Category A / packaging lock)
 
@@ -32,7 +32,7 @@
 | A4 BSpin lift on O_res^disc (0-dim) | **Closed 0-stem** | A4_BSPIN_LIFT_CLOSED_ON_O_RES_DISC |
 | A5 KO_0 / Ω_0^Spin = B' | **Closed 0-stem** | A5_KO_OMEGA0_SPIN_CLOSED_ON_O_RES |
 | A4⁺ full \|E(O_res)\| continuous lift | **Open** | Next residual math |
-| Higher Ω_{n>0} continuum fillings | **Not claimed (Cat B)** | Architecture_A5 |
+| Higher Ω_{n>0} continuum fillings | **Cat B open (not locked)** | Architecture_Continuum_Fillings_CatB.md |
 
 ## Muon g−2 / Resonant Algebra (2026-07-30)
 
@@ -89,7 +89,7 @@
 | w₁=w₂=0 for Φ^Spin; BSpin lift exists | **Locked** | A4⁺.3 |
 | Unique spin structure on primary K⁺ | **Locked** | A4⁺.4 |
 | Code A4PLUS_BSPIN_LIFT_CLOSED_ON_KPLUS | **Frozen** | probe |
-| A5⁺ KO/bordism on K⁺ beyond 0-stem | **Open** | Next |
+| A5⁺ KO/bordism on K⁺ (coefficients-only through deg 7) | **Closed** | A5PLUS_COEFFICIENTS_ONLY_ON_KPLUS |
 | Free T^♯ / No-Go lift from A4⁺ | **Forbidden** | provenance |
 
 ## Empirical biology (honest; unchanged)
@@ -116,6 +116,64 @@
 
 ## One-line executive verdict
 
-**Packaging and residual product locked; muon Path A primary; CuNc T₂ ≈ 70 fs (2.3 fs retracted); −Periodic Table Cat B; A4⁺ BSpin lift closed on enriched K⁺ (unique); A5⁺ open.**
+**Packaging and residual product locked; muon Path A primary; CuNc T₂ ≈ 70 fs (2.3 fs retracted); −Periodic Table Cat B; A4⁺ BSpin lift closed on enriched K⁺ (unique); A5⁺ coefficients-only closed; continuum fillings Cat B open under firewall.**
 
 *Per aspera ad astra.*
+
+
+## Architecture A5⁺ KO / Spin Bordism on K⁺ (this freeze)
+
+| Claim | Status | Provenance |
+|-------|--------|------------|
+| Integral H_*(K⁺; Z) ≅ H_*(pt) | **Executed / locked** | architecture_A5plus_results.json |
+| SNF ∂1 all 1s (rank 538); SNF ∂2 all 1s (rank 56) | **Executed** | same |
+| AHSS collapse Ω_n^Spin(K⁺) ≅ Ω_n^Spin(pt) through deg 7 | **Locked** (skeleton) | Architecture_A5plus_KO_Spin_Bordism.md |
+| AHSS collapse KO_n(K⁺) ≅ KO_n(pt) through deg 7 | **Locked** (skeleton) | same |
+| Residual 0-class B′ in Ω_0 and KO_0 | **Locked** | same |
+| Code A5PLUS_COEFFICIENTS_ONLY_ON_KPLUS | **Frozen** | probe |
+| Continuum manifold fillings / n>7 residual geometry | **Cat B / open** | §8 non-claims |
+| Free T^♯ / No-Go lift from A5⁺ | **Forbidden** | provenance |
+
+
+## Continuum fillings (Category B only — 2026-07-30)
+
+| Claim | Status | Provenance |
+|-------|--------|------------|
+| Continuum manifold as residual foundation | **Forbidden** | Firewall |
+| CB1 PL cone C(K⁺) cell counts | **Executed Cat B** | continuum_fillings_catB_results.json |
+| CB2 PL suspension ΣK⁺ | **Executed Cat B** | same |
+| CB3 prism K⁺×I | **Executed Cat B** | same |
+| CB4 smooth spin fill existence | **Open Cat B** | Architecture_Continuum_Fillings_CatB.md |
+| CB5 ambient Ω/KO n=8..15 library | **Library Cat B** | same |
+| CB6 Cartan/hopfion continuum | **Open Cat B metaphor** | promotion forbidden |
+| CB7 sphere stabilization toys | **Scaffolding Cat B** | same |
+| Firewall: A5⁺ still coefficients-only | **PASS** | probe checks |
+| Status code | **CAT_B_CONTINUUM_FILLINGS_OPEN_NOT_LOCKED** | probe |
+| Free T^♯ / No-Go lift / G4=KO from continuum | **Forbidden** | provenance |
+
+
+## O4 π₁ triviality (Category B — 2026-07-30)
+
+| Claim | Status | Provenance |
+|-------|--------|------------|
+| π₁(K⁺)=1 | **PROVED Cat B** | Architecture_O4_Pi1_Triviality_CatB.md |
+| K⁺ collapsible to a point | **PROVED Cat B** | 56 two-collapses + 538 one-collapses |
+| Spanning-tree Tietze kills all 56 gens | **PROVED Cat B** | o4_pi1_triviality_catB_results.json |
+| Status code | **PI1_TRIVIAL_PROVED_CAT_B** | probe |
+| Poincaré ⇒ residual lock | **Forbidden** | firewall |
+| O5 spine / CB4 existence | **Still OPEN Cat B** | CB4 note |
+
+
+## O5 spine criteria (Category B — 2026-07-30)
+
+| Claim | Status | Provenance |
+|-------|--------|------------|
+| All vertex links planar | **PASS** | o5_spine_criteria_catB_results.json |
+| Edge–face mult ≥2 | **0 (absent)** | same |
+| 56 faces vertex-disjoint tripleton triangles | **PASS** | same |
+| PL straight-line embedding in R³ | **PROVED Cat B** | S6 checks 0 improper intersections |
+| K⁺ spine of PL 3-ball | **PROVED Cat B** | embed + O4 collapsible |
+| Status code | **O5_BALL_SPINE_PROVED_CAT_B** | probe |
+| Closed special spine | **NO** | no triple lines |
+| Residual Category A promotion | **Forbidden** | firewall |
+| O7 spin extension to ball | **OPEN Cat B** | next |

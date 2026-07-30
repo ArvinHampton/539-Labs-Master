@@ -1,22 +1,33 @@
-# Next directions (2026-07-30)
+# Next Directions (2026-07-30) — O5 closed Cat B; O7 live
 
-## Residual foundation — **do not reopen**
+## Stack status
 
-A0–A5 0-stem · A5⁺ on \(K^+\) · thin \(F\) · kit · Option 3 · No-Go.
+Architecture A residual: **closed through A5⁺**.
 
-## Category B continuum (open)
+Cat-B continuum / CB4:
+- O4 π₁ / collapsible: **PROVED Cat B**
+- O5 spine of 3-ball: **PROVED Cat B** (`O5_BALL_SPINE_PROVED_CAT_B`)
+- O6 smooth ball: **SATISFIED Cat B**
+- **O7 spin extension: OPEN Cat B (live)**
 
-| Rank | Direction | Tag |
-|------|-----------|-----|
-| **1** | **CB4** smooth spin fill existence compatible with unique \(B\mathrm{Spin}\) on \(K^+\) | **B** |
-| **2** | Spin-structure extension \(K^+\to\) CB1/CB4 | **B** |
-| **3** | Switch tracks: HQH-539 crypto / verification | eng / **B** |
+Firewall PASS. No residual promotion.
 
-CB1–CB3 already executed as PL proxies (Euler 1). CB5–CB7 library/metaphor/scaffolding only.
+## Live Cat-B work
 
-## Residual optional (not continuum)
+**O7** — Extend unique A4⁺ BSpin data on K⁺ to the regular neighborhood ball N(K⁺) ≅ B³.
 
-| Rank | Direction |
-|------|-----------|
-| A4⁺ | Continuous \(w_1,w_2\) on full \(\lvert E(\mathcal{O}_{\mathrm{res}})\rvert\) |
-| \(P^+\) theorem-lock | Multi-scale M1 flux quantization |
+## Other tracks
+
+1. HQH-539 crypto engineering  
+3. Verification / co-sim  
+4. Pause
+
+## Avoid
+
+Reopen residual locks · free T^♯ · G₄=B³ as foundation · closed special spine overclaim
+
+## One-line next step
+
+**O5 done (Cat B ball spine). Attack O7 spin extension, or switch to crypto/verification.**
+
+*Per aspera ad astra.*

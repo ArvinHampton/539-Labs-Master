@@ -39,15 +39,3 @@ Option 3 · No-Go · residual product · muon Path A · A4/A5 0-stem disc · con
 CuNc dataset is real and useful at **tens of fs** dephasing; prior 2.3 fs leakage term was a period/coherence confusion and is removed. Mirror-halo remains Category B.
 
 *Per aspera ad astra.*
-
-## Commits (final)
-
-| Repo | SHA |
-|------|-----|
-| 539-Labs-Master | `80f2627` |
-| 539-Labs-Corpus | `8fcb030` |
-
-## Notion
-
-https://app.notion.com/p/3ada7a55aa2381c99c36cca0a6bd49a6
-

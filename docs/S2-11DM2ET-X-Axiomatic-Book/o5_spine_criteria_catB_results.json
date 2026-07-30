@@ -1,0 +1,161 @@
+{
+  "category": "B",
+  "status_code": "O5_BALL_SPINE_PROVED_CAT_B",
+  "parent": "CB4_SMOOTH_SPIN_FILL_OPEN_CAT_B",
+  "hard_firewall": {
+    "checks": {
+      "V_539": true,
+      "E_594": true,
+      "F_56": true,
+      "a5plus_intact": true,
+      "does_not_feed_locked_stack": true,
+      "all_pass": true
+    },
+    "Option3_intact": true,
+    "No_Go_intact": true,
+    "no_residual_promotion": true
+  },
+  "Kplus": {
+    "V": 539,
+    "E": 594,
+    "F": 56
+  },
+  "S1_singularity_census": {
+    "edge_face_multiplicity_histogram": {
+      "0": 426,
+      "1": 168
+    },
+    "edges_with_0_faces": 426,
+    "edges_with_1_face": 168,
+    "edges_with_ge2_faces": 0,
+    "max_edge_face_multiplicity": 1,
+    "vertex_1skeleton_degree_histogram": {
+      "1": 1,
+      "2": 427,
+      "3": 111
+    },
+    "vertex_face_degree_histogram": {
+      "0": 371,
+      "1": 168
+    },
+    "max_vertex_degree": 3,
+    "max_vertex_face_degree": 1
+  },
+  "S2_vertex_links_planarity": {
+    "all_vertex_links_planar": true,
+    "nonplanar_count": 0,
+    "nonplanar_samples": [],
+    "link_edge_count_histogram": {
+      "0": 371,
+      "1": 168
+    },
+    "link_1skel_degree_histogram": {
+      "1": 1,
+      "2": 427,
+      "3": 111
+    },
+    "necessary_for_3manifold_spine": "vertex links planar (necessary, not sufficient)",
+    "category": "B"
+  },
+  "S3_matveev_checklist": [
+    {
+      "id": "MS1_face_interiors",
+      "status": "SATISFIED",
+      "category": "B"
+    },
+    {
+      "id": "MS2_free_edges_mult0",
+      "status": "PRESENT",
+      "count": 426,
+      "note": "Allowed for ball spines / manifold with boundary",
+      "category": "B"
+    },
+    {
+      "id": "MS3_edges_mult1",
+      "status": "PRESENT",
+      "count": 168,
+      "category": "B"
+    },
+    {
+      "id": "MS4_true_singular_edges",
+      "status": "ABSENT",
+      "count": 0,
+      "note": "Not a closed special spine (no triple lines)",
+      "category": "B"
+    },
+    {
+      "id": "MS5_vertex_links_planar",
+      "status": "SATISFIED",
+      "category": "B"
+    },
+    {
+      "id": "MS6_closed_special_spine",
+      "status": "NO",
+      "reason": "no triple lines; free edges present",
+      "category": "B"
+    },
+    {
+      "id": "MS7_ball_spine_candidate",
+      "status": "CANDIDATE_YES_CAT_B",
+      "category": "B"
+    }
+  ],
+  "S4_classical_spine_theorems": {
+    "category": "B_library",
+    "T2_embed_plus_collapsible": "If collapsible 2-polyhedron P is PL-embedded in S\u00b3, regular neighborhood N(P) is a 3-ball and P is a spine of N(P).",
+    "reduction": "O5_embed: PL-embed K\u207a in S\u00b3/R\u00b3. If yes + O4 collapsible \u21d2 spine of 3-ball."
+  },
+  "S5_structure": {
+    "fiber_sizes": {
+      "1": 1,
+      "2": 185,
+      "3": 56
+    },
+    "extra_edges_nonpath": 56,
+    "faces_total": 56,
+    "faces_pure_tower": 56,
+    "faces_tripleton_tower": 56,
+    "faces_mixed_towers": 0,
+    "face_vertex_sets_overlapping_pairs": 0,
+    "face_vertex_sets_disjoint_pairs": 1540,
+    "all_faces_vertex_disjoint": true,
+    "category": "B"
+  },
+  "S6_constructive_embedding": {
+    "method": "S6_constructive_PL_embedding_R3",
+    "category": "B",
+    "scheme": "Path parameter on x-axis; each tripleton face lifted to unique z-slice with (y,z) offsets so triangle is non-degenerate; edges as straight segments.",
+    "faces_vertex_disjoint": true,
+    "nondegenerate_faces": true,
+    "degenerate_faces": [],
+    "improper_triangle_intersections": 0,
+    "improper_triangle_samples": [],
+    "improper_edge_triangle_piercings": 0,
+    "improper_edge_triangle_samples": [],
+    "straight_line_embedding_valid": true,
+    "note": "If straight-line embedding_valid=True, this is a Cat-B PL embedding certificate for |K\u207a| \u2282 R\u00b3. Combined with collapsibility \u21d2 regular neighborhood is a 3-ball."
+  },
+  "o5_clarification": {
+    "status_code": "O5_BALL_SPINE_PROVED_CAT_B",
+    "detail": "PL straight-line embedding in R\u00b3 validated (no improper face/edge intersections); O4 collapsible \u21d2 regular neighborhood is a 3-ball; K\u207a is a spine of a 3-ball (Cat B only).",
+    "necessary_local_criteria_pass": true,
+    "pl_embedding_in_R3_certified": true,
+    "is_closed_special_spine": false,
+    "is_ball_spine": true,
+    "o5_existence_decision": "YES_CAT_B",
+    "category": "B"
+  },
+  "O4_input": "PI1_TRIVIAL_PROVED_CAT_B (collapsible)",
+  "explicit_non_claims": [
+    "No residual Category A promotion",
+    "Not a closed special spine",
+    "No G4 = B\u00b3 identification as foundation",
+    "No free T^sharp",
+    "Spin extension O7 not claimed here"
+  ],
+  "next_catB": [
+    "If embedding certified: O7 spin extension from unique A4\u207a BSpin to ball",
+    "If embedding failed: alternate embedding (curved edges / ambient isotopy)",
+    "Or switch to crypto/verification tracks"
+  ]
+}

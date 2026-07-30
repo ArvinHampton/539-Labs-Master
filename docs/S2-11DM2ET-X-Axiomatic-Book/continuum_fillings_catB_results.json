@@ -1,111 +1,205 @@
 {
-  "provenance": {
-    "category": "B",
-    "status_code": "CAT_B_CONTINUUM_FILLINGS_OPEN_NOT_LOCKED",
-    "residual_stack_reopened": false,
-    "architecture_A_through_A5plus_closed": true,
-    "domain_residual_foundation": "unchanged"
+  "category": "B",
+  "status_code": "CAT_B_CONTINUUM_FILLINGS_OPEN_NOT_LOCKED",
+  "hard_firewall": {
+    "locked_stack_untouched": true,
+    "A5PLUS_code_not_modified": true,
+    "Option3_intact": true,
+    "No_Go_intact": true,
+    "free_Tsharp_forbidden": true,
+    "G4_not_identified_with_KO": true,
+    "residual_0_class_stays_B_prime_in_degree_0_only": true,
+    "checks": {
+      "H0_is_1": true,
+      "H1_is_0": true,
+      "H2_is_0": true,
+      "no_torsion_d1": true,
+      "no_torsion_d2": true,
+      "V_is_539": true,
+      "E_is_594": true,
+      "F_is_56": true,
+      "B_prime_is_539": true,
+      "does_not_write_A5plus_code": true,
+      "does_not_feed_locked_stack": true,
+      "a5plus_status_still_coefficients_only": true,
+      "a5plus_json_H_match": true,
+      "all_pass": true
+    }
   },
-  "K_plus": {
-    "definition": "P+ M1 residual 2-complex: path + 56 chords + 56 faces",
-    "V": 539,
-    "E": 594,
-    "F": 56,
-    "euler": 1,
-    "H0": "Z",
-    "H1": 0,
-    "H2": 0,
-    "torsion": false,
-    "homology": "pointlike (\u2245 pt)"
+  "Kplus_read_only_snapshot": {
+    "mode": "A2_enrich",
+    "homology": {
+      "H0_free": 1,
+      "H1_free": 0,
+      "H2_free": 0,
+      "torsion_d1": [],
+      "torsion_d2": [],
+      "rank_d1": 538,
+      "rank_d2": 56,
+      "n_verts": 539,
+      "n_edges": 594,
+      "n_faces": 56,
+      "euler": 1
+    },
+    "B_prime": 539,
+    "note": "read-only rebuild for firewall; does not reopen A5\u207a"
   },
-  "firewall": {
-    "Kplus_homology_pt": true,
-    "Kplus_census_V_E_F": [
-      539,
-      594,
-      56
-    ],
-    "Kplus_euler": 1,
-    "A5plus_coefficients_only_on_Kplus": true,
-    "A5plus_status": "A5PLUS_COEFFICIENTS_ONLY_ON_KPLUS",
-    "option3_intact": true,
-    "no_go_intact": true,
-    "no_free_Tsharp": true,
-    "no_G4_equals_KO": true,
-    "no_continuum_into_residual_foundation": true,
-    "PASS": true
-  },
-  "catalogue_CB1_CB7": {
-    "CB1_cone": {
-      "role": "PL contractible 3-complex C(K+)",
-      "euler": 1,
+  "combinatorial_continuum_proxies": {
+    "cone": {
+      "model": "unreduced_cone_C_Kplus",
+      "category": "B",
       "cells": {
         "V": 540,
         "E": 1133,
         "F2": 650,
         "F3": 56
       },
-      "status": "executed_proxy_Cat_B",
-      "manifold_as_proof": false
-    },
-    "CB2_suspension": {
-      "role": "Homology-pointlike PL proxy \u03a3K+",
       "euler": 1,
+      "homology_claim": "contractible (H_* \u2245 H_*(pt)); combinatorial cone of acyclic complex",
+      "manifold_claim": "NOT a smooth manifold claim \u2014 PL ball model only",
+      "feeds_locked_stack": false
+    },
+    "suspension": {
+      "model": "unreduced_suspension_Sigma_Kplus",
+      "category": "B",
       "cells": {
         "V": 541,
         "E": 1672,
         "F2": 1244,
         "F3": 112
       },
-      "status": "executed_proxy_Cat_B",
-      "manifold_as_proof": false
-    },
-    "CB3_prism": {
-      "role": "Thickening / cobordism scaffold K+\u00d7I",
       "euler": 1,
+      "homology_claim": "homology-pointlike if base is (suspension of acyclic)",
+      "manifold_claim": "NOT a smooth S^3 claim \u2014 PL suspension only",
+      "feeds_locked_stack": false
+    },
+    "prism": {
+      "model": "prism_Kplus_x_I",
+      "category": "B",
       "cells": {
         "V": 1078,
         "E": 1727,
         "F2": 706,
         "F3": 56
       },
-      "status": "executed_proxy_Cat_B",
-      "manifold_as_proof": false
-    },
-    "CB4_smooth_spin_fill": {
-      "role": "Existence of smooth spin fill compatible with unique BSpin on K+",
-      "status": "open_Cat_B_question",
-      "manifold_as_proof": false
-    },
-    "CB5_ambient_Omega_KO_tables": {
-      "role": "Library \u03a9/KO tables n=0..15",
-      "status": "library_only",
-      "residual_quanta_for_n_gt_0": false,
-      "note": "no residual quanta for n>0"
-    },
-    "CB6_Cartan_hopfion": {
-      "role": "Cartan/hopfion continuum metaphor",
-      "status": "metaphor_only",
-      "promotion_to_residual_foundation": "FORBIDDEN"
-    },
-    "CB7_sphere_stabilizations": {
-      "role": "Sphere stabilizations scaffolding",
-      "status": "scaffolding_only",
-      "manifold_as_proof": false
+      "euler": 1,
+      "homology_claim": "homotopy equivalent to K\u207a (retract); still H_* \u2245 pt",
+      "manifold_claim": "NOT a 3-manifold with boundary claim without triangulation check",
+      "feeds_locked_stack": false
     }
   },
-  "not_claimed": [
-    "continuum manifolds as residual proof",
-    "free T# origin",
-    "G4=KO",
-    "Omega_n>0 residual quanta",
-    "promotion of CB1-CB7 into packaging locks",
-    "reopen A4-A5 0-stem"
+  "ambient_coefficient_library_n0_to_15": {
+    "category": "B",
+    "Omega_Spin_pt": {
+      "0": "Z",
+      "1": "Z/2",
+      "2": "Z/2",
+      "3": "0",
+      "4": "Z",
+      "5": "0",
+      "6": "0",
+      "7": "0",
+      "8": "Z \u2295 Z",
+      "9": "Z/2 \u2295 Z/2",
+      "10": "Z/2 \u2295 Z/2",
+      "11": "0",
+      "12": "Z \u2295 Z",
+      "13": "0",
+      "14": "0",
+      "15": "0"
+    },
+    "KO_pt": {
+      "0": "Z",
+      "1": "Z/2",
+      "2": "Z/2",
+      "3": "0",
+      "4": "Z",
+      "5": "0",
+      "6": "0",
+      "7": "0",
+      "8": "Z",
+      "9": "Z/2",
+      "10": "Z/2",
+      "11": "0",
+      "12": "Z",
+      "13": "0",
+      "14": "0",
+      "15": "0"
+    },
+    "note": "Classical point coefficients only. No residual quanta assigned for n>0. Degrees 0..7 already used in locked A5\u207a as coefficients-only."
+  },
+  "candidate_catalogue": [
+    {
+      "id": "CB1_PL_ball_cone",
+      "category": "B",
+      "description": "Unreduced cone C(K\u207a) as PL contractible 3-complex; model of filling residual 2-skeleton to a ball.",
+      "bordism_role": "null-bordism of empty boundary in combinatorial sense only",
+      "residual_class_claim": "FORBIDDEN \u2014 does not redefine B\u2032",
+      "status": "open Cat B model"
+    },
+    {
+      "id": "CB2_PL_suspension",
+      "category": "B",
+      "description": "Unreduced suspension \u03a3K\u207a as PL homology sphere candidate proxy (homology of a point after reduced suspension of acyclic base).",
+      "bordism_role": "higher-dimensional PL proxy only",
+      "residual_class_claim": "FORBIDDEN",
+      "status": "open Cat B model"
+    },
+    {
+      "id": "CB3_prism_thickening",
+      "category": "B",
+      "description": "Prism K\u207a\u00d7I as Cat B thickening / cobordism scaffolding.",
+      "bordism_role": "product with interval; not a residual clock",
+      "residual_class_claim": "FORBIDDEN",
+      "status": "open Cat B model"
+    },
+    {
+      "id": "CB4_smooth_manifold_fill",
+      "category": "B",
+      "description": "Hypothetical smooth compact spin 3-manifold (or ball) admitting a triangulation whose 2-skeleton deformation-retracts onto K\u207a or contains K\u207a as a subcomplex.",
+      "bordism_role": "would live in \u03a9_3^Spin \u2245 0 if closed; open existence question",
+      "residual_class_claim": "FORBIDDEN \u2014 existence not proved; not B\u2032 in \u03a9_3",
+      "status": "open Cat B existence question"
+    },
+    {
+      "id": "CB5_higher_spin_class_ambient",
+      "category": "B",
+      "description": "Ambient library of \u03a9_n^Spin(pt) and KO_n(pt) for n=8..15. No residual quanta assigned. B\u2032=539 stays in degree 0 only (locked A5/A5\u207a).",
+      "bordism_role": "coefficient table bookkeeping only",
+      "residual_class_claim": "FORBIDDEN for n>0 residual geometry",
+      "status": "library Cat B"
+    },
+    {
+      "id": "CB6_Cartan_hopfion_continuum",
+      "category": "B",
+      "description": "Continuum Cartan / hopfion geometric picture of residual flux as linked field configurations. Speculative continuum physics map.",
+      "bordism_role": "physics-side continuum metaphor, not a bordism proof",
+      "residual_class_claim": "FORBIDDEN as residual carrier proof",
+      "status": "open Cat B continuum metaphor (mirror note already forbids promotion)"
+    },
+    {
+      "id": "CB7_product_sphere_stabilization",
+      "category": "B",
+      "description": "Formal products K\u207a \u00d7 S^k or cone \u00d7 S^k as stabilization toys for higher AHSS pages. Not residual geometry.",
+      "bordism_role": "stabilization scaffolding only",
+      "residual_class_claim": "FORBIDDEN",
+      "status": "open Cat B scaffolding"
+    }
   ],
-  "next_ranked_Cat_B": [
-    "CB4 existence/non-existence smooth spin fill",
-    "spin-structure extension K+ -> CB1/CB4",
-    "or switch tracks: HQH-539 crypto / verification"
+  "explicit_non_claims": [
+    "No continuum manifold is residual foundation",
+    "No \u03a9_n for n>0 residual geometry lock",
+    "No Cartan/hopfion as residual proof",
+    "No G4 = 539.90 s as KO period",
+    "No free T^sharp",
+    "No No-Go lift",
+    "No change to B\u2032 count or A5\u207a AHSS collapse",
+    "No security reduction for HQH-539"
   ],
-  "status": "CAT_B_CONTINUUM_FILLINGS_OPEN_NOT_LOCKED"
+  "next_catB_only": [
+    "Existence of smooth triangulation realizing CB4",
+    "Spin structure extension from unique BSpin on K\u207a to CB1/CB4",
+    "Whether any Cat B continuum model couples to mirror-halo without reopening residual stack",
+    "Keep all results off CLAIM_TABLE Category A rows"
+  ]
 }

@@ -18,6 +18,6 @@ A4/A5 0-stem · A4⁺ unique BSpin · Option 3 · No-Go · residual product · m
 
 ## Bottom line
 
-Enrichment does not create extra residual bordism or KO classes in the ABS range. Continuum fillings stay Cat B.
+Enrichment does not create extra residual bordism or KO classes in the ABS range. Continuum fillings stay Cat B. Architecture A residual stack closed through A5⁺.
 
 *Per aspera ad astra.*
