@@ -1,0 +1,78 @@
+{
+  "provenance": {
+    "objects": "residual flux quanta",
+    "principle_S": true,
+    "democratic_charge_partition": true,
+    "not_free_Tsharp_basins": true,
+    "no_go_lift_claimed": false,
+    "option3_free_dynamics_unchanged": true,
+    "A4_0stem_intact": true,
+    "A5_0stem_intact": true,
+    "A4plus_intact": true,
+    "domain": "primary K⁺ A2_enrich only"
+  },
+  "Kplus": {
+    "mode": "A2_enrich",
+    "n_verts": 539,
+    "n_edges": 594,
+    "n_faces": 56,
+    "B_prime": 539
+  },
+  "integral_homology": {
+    "n_verts": 539,
+    "n_edges": 594,
+    "n_faces": 56,
+    "rank_d1": 538,
+    "rank_d2": 56,
+    "torsion_from_d1": [],
+    "torsion_from_d2": [],
+    "H0_free": 1,
+    "H1_free": 0,
+    "H2_free": 0,
+    "H0_expected": "Z if connected (rank 1)",
+    "euler_cells": 1,
+    "euler_homology_free": 1,
+    "connected": true,
+    "acyclic_positive": true,
+    "SNF_d1_diag_summary": {"all_ones": true, "count": 538, "min": 1, "max": 1},
+    "SNF_d2_diag_summary": {"all_ones": true, "count": 56, "min": 1, "max": 1}
+  },
+  "F2_betti_check": {
+    "beta0_F2": 1,
+    "beta1_F2": 0,
+    "beta2_F2": 0
+  },
+  "AHSS": {
+    "pointlike_integral_homology": true,
+    "predicted_Omega_Spin_Kplus_through_7": {
+      "0": "Z", "1": "Z/2", "2": "Z/2", "3": "0", "4": "Z", "5": "0", "6": "0", "7": "0"
+    },
+    "predicted_KO_Kplus_through_7": {
+      "0": "Z", "1": "Z/2", "2": "Z/2", "3": "0", "4": "Z", "5": "0", "6": "0", "7": "0"
+    },
+    "residual_0_class": {
+      "Omega_0_Spin_Kplus": "Z with residual class = B' = 539",
+      "KO_0_Kplus": "Z with ABS image = B' = 539",
+      "higher_through_7": "isomorphic to coefficients of a point (no extra classes from topology)"
+    },
+    "AHSS_collapse_argument": "E2 concentrated on p=0 column; no room for d2 differentials into/out of nonzero positive-p groups; AHSS collapses to Ω_n^Spin(pt) and KO_n(pt) through degree 7 (ABS range).",
+    "ABS_range": "degrees 0..7 (MSpin → ko is 7-connected)",
+    "status_code": "A5PLUS_COEFFICIENTS_ONLY_ON_KPLUS"
+  },
+  "theorems_candidate": [
+    "A5⁺.1: integral H_*(K⁺) ≅ H_*(pt) (H0=Z, H>0=0) on primary A2_enrich.",
+    "A5⁺.2: AHSS for Ω_*^Spin(K⁺) and KO_*(K⁺) collapses to coefficient groups through degree 7.",
+    "A5⁺.3: residual 0-class remains B′ in Ω_0^Spin(K⁺) ≅ Z and KO_0(K⁺) ≅ Z.",
+    "A5⁺.4: no extra residual bordism/KO classes from primary K⁺ topology in ABS range."
+  ],
+  "not_claimed": [
+    "free T^sharp origin",
+    "No-Go lift",
+    "continuum manifold fillings of residual geometry",
+    "G4=539.9 identified with KO period",
+    "security reduction",
+    "Ω_n for n>7 beyond coefficient table",
+    "bott_graph secondary mode as primary domain"
+  ],
+  "status_code": "A5PLUS_COEFFICIENTS_ONLY_ON_KPLUS"
+}
