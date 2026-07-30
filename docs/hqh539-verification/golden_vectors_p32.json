@@ -1,0 +1,25 @@
+{
+  "profile": "P32",
+  "profile_name": "product_deploy_fixed_32byte_finalize",
+  "provenance": "generated 2026-07-30 from profiles.hqh_539_512_p32",
+  "note": "Not interchangeable with REF digests. See DUAL_PROFILES.md.",
+  "t3": {
+    "0": 0,
+    "4": 6,
+    "5": 3,
+    "7": 10,
+    "9": 3
+  },
+  "iterate_n_steps_539": {
+    "1000000000000000000": 2,
+    "10000000000000000000": 2,
+    "100000000000000000000": 2
+  },
+  "hqh_539_512": {
+    "empty": "67c84cbb53496abd6beecbb5ea73c717ca26b3702c3fd7dd82fc6a5b30953548107be0d935215f5e142c4cfd1538f78d02704fcdf016a4a80b93fda006acafde",
+    "canonical": "72bd8896f97ce6269fe1f89c4ecbb5cb198c760038798866c85cdf1b1121b2c8e8680969a83c1b38632109ab29f4d2f89b0f3b14bda98bced1af1944202ed01b",
+    "large_int": "be69d580a84af3822309020a00224eb25d99dc56221a0d8a1a05e779bc31f469b522b02de7c4f44f452967d860e21f9bc5e04c20e865467510fedf14c9711171",
+    "salted": "c6d416b1ede15cad0e5fb1571933f1076ae8ef0d67628f2cf1de8efd8966aff3d8422f5c5209c1905eac842c1aee5afffa674fa23f686d8c40e19f01e5bb1a7b"
+  },
+  "hqh_539_256_prefix": "72bd8896f97ce6269fe1f89c4ecbb5cb198c760038798866c85cdf1b1121b2c8"
+}

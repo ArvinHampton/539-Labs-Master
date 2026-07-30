@@ -1,26 +1,29 @@
 # HQH-539 verification status (2026-07-30)
 
-**Track:** crypto engineering / verification (post residual freeze through A5⁺).  
-**Master push residual session:** `4775ed3`  
-**Security reduction:** **not completed** (see Master `HQH539_Security_Reductions_Exploration.md`).
+**Track:** crypto engineering / verification  
+**Engine align commit:** see hqh539-engine main after dual-profile alignment  
 
-## Executed this switch
+## Profiles
+
+| Profile | File | Status |
+|---------|------|--------|
+| **REF** | `golden_vectors.json` + `hqh539.py` | **Active KATs** |
+| **P32** | `golden_vectors_p32.json` + `profiles.py` | Documented dual |
+| **LEGACY** | `golden_vectors_legacy_orphaned.json` | Archived only |
+
+See `DUAL_PROFILES.md`.
+
+## Executed
 
 | Item | Status |
 |------|--------|
-| Reference `hqh539.py` mirrored | Yes |
-| Golden KATs (`run_kats.py`) | Runnable |
-| Avalanche vs SHA3-512 | Runnable engineering evidence |
-| Benchmark vs SHA3-512 | Runnable engineering |
-| KDF+AE wrapper present | `crypto_hqh.py` (needs `cryptography`) |
-| Constant-time notes | Draft checklist |
-| Formal reduction | Pending / Cat B |
-| Independent cryptanalysis | Pending |
+| REF goldens aligned to live code | PASS |
+| Legacy goldens archived (orphaned oracle) | Done |
+| P32 dual profile documented + KATs | PASS |
+| `unittest test_hqh539 test_profiles` | PASS |
+| Avalanche / benchmark | Engineering only |
+| Formal security reduction | Pending |
 
-## Allowed hardness language only
+## Hardness language
 
 Computationally infeasible with known classical/quantum methods, pending peer review of the full reduction.
-
-## Not claimed
-
-Provable security · information-theoretic hardness · G4 as crypto assumption · free T^sharp 539 basins · residual KO/bordism as reduction

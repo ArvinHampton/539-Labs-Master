@@ -1,6 +1,8 @@
 {
-  "provenance": "regenerated from artifacts/hqh539-verification/hqh539.py (engine mirror 2026-07-30)",
-  "implementation_note": "Prior golden_vectors.json from hqh539-engine did not match this reference finalization; vectors re-issued from this code path. KATs bind implementation, not hardness.",
+  "profile": "REF",
+  "profile_name": "canonical_reference_min_bytes_finalize",
+  "provenance": "regenerated 2026-07-30 from hqh539.py in this repo (live UUT)",
+  "implementation_note": "Aligned to checked-in hqh539.py: SHA3-512(message||salt) seed \u2192 539\u00d7T3 (18+521) \u2192 SHA3-512(fingerprint.to_bytes(min_len, big)||salt||DOMAIN_SEP). Prior golden_vectors.json (hqh539_independent_oracle.py) did not match any oracle still in tree; archived as golden_vectors_legacy_orphaned.json.",
   "t3": {
     "0": 0,
     "4": 6,

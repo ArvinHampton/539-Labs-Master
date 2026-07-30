@@ -31,3 +31,12 @@ python3 benchmark_vs_sha3.py
 ## Provenance
 
 Round count 539 = packaging L_pack under Principle (S), not free T^sharp dynamics (Option 3 intact). Residual Architecture A through A5⁺ is foundation math, not a crypto reduction.
+
+## Profiles (REF / P32 / LEGACY)
+
+Canonical KATs are **REF** (aligned to `hqh539.py`). See [DUAL_PROFILES.md](DUAL_PROFILES.md).
+
+```bash
+python3 run_kats.py
+python3 -m unittest test_hqh539 test_profiles -v
+```
