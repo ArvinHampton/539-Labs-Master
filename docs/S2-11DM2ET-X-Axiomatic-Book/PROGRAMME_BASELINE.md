@@ -210,6 +210,10 @@ Continuum hopfion, torsion, or measure constructions remain **Category B design 
 
 Status `CAT_B_CONTINUUM_FILLINGS_OPEN_NOT_LOCKED`. Firewall: \(K^+\) homology ≅ pt (V,E,F=539,594,56); A5⁺ coefficients only on \(K^+\); Option 3/No-Go intact. CB1–CB3 PL proxies Euler 1; CB4–CB7 catalogue open/library/metaphor. Residual stack **not** reopened. See `Architecture_Continuum_Fillings_CatB.md`, `scripts/continuum_fillings_catB_probe.py`.
 
+## Riemann Hypothesis / debt argument — **OPEN, not a proof**
+
+Status `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. Phase-debit / \(E_{\mathrm{leak}}\) / \(\mu=1.55\) / \(G_4=539.9\) are **Category B** motivation only; \(D(\rho)\) as written does not depend on \(\rho\); growth of \(\arg P_N\) off-line unproved. Resonant Algebra stays quarantined Category A (unrelated to RH). See `RH_Debt_Argument_Status.md`.
+
 ## Shell restriction r_W
 
 Executed: r_18 != 0 (SURJECTIVE_BOTH_SHELL_AND_TOWER). Multi-W curve all nonzero. See Shell_Restriction_rW_P_plus.md.

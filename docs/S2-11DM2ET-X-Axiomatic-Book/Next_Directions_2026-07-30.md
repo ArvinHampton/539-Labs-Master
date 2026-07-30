@@ -1,27 +1,36 @@
-# Next Directions (2026-07-30) — residual frozen; HQH-539 verification active
+# Next directions (2026-07-30)
 
-## Residual / continuum
+## Residual foundation — **do not reopen**
 
-Architecture A residual: **closed through A5⁺** (Master `4775ed3`+).
+A0–A5 0-stem · A5⁺ on \(K^+\) · thin \(F\) · kit · Option 3 · No-Go.
 
-Cat-B continuum: O4/O5/O6 settled Cat B; **O7 spin extension** remains open Cat B (parked).
+## Category B continuum (open)
 
-## Active track: HQH-539 crypto / verification
+| Rank | Direction | Tag |
+|------|-----------|-----|
+| **1** | **CB4** smooth spin fill existence compatible with unique \(B\mathrm{Spin}\) on \(K^+\) | **B** |
+| **2** | Spin-structure extension \(K^+\to\) CB1/CB4 | **B** |
+| **3** | Switch tracks: HQH-539 crypto / verification | eng / **B** |
 
-Package: `docs/hqh539-verification/`
+CB1–CB3 already executed as PL proxies (Euler 1). CB5–CB7 library/metaphor/scaffolding only.
 
-| Item | Status |
-|------|--------|
-| KATs (`run_kats.py`) | PASS on regenerated goldens |
-| Avalanche vs SHA3-512 | ~0.50 mean bit flips (engineering only) |
-| Benchmark vs SHA3-512 | Runnable |
-| KDF+AE wrapper | `crypto_hqh.py` present |
-| Formal security reduction | **Pending** (Cat B framing only) |
+## Residual optional (not continuum)
 
-Hardness language: computationally infeasible with known classical/quantum methods, pending peer review of the full reduction.
+| Rank | Direction |
+|------|-----------|
+| A4⁺ | Continuous \(w_1,w_2\) on full \(\lvert E(\mathcal{O}_{\mathrm{res}})\rvert\) |
+| \(P^+\) theorem-lock | Multi-scale M1 flux quantization |
 
-## Avoid
+## RH / debt (if pursued — pure Category A only)
 
-Reopen residual locks · free T^♯ · G4 as crypto assumption · “provably secure”
+RH remains **open**. Debt argument is **not** a proof (`RH_Debt_Argument_Status.md`).
 
-*Per aspera ad astra.*
+| Rank | Direction |
+|------|-----------|
+| L1 | Define smoothed \(A_N(\sigma,t)\) rigorously |
+| L2 | Bounds on the critical line |
+| L3 | Lower bound off-line at zeros from explicit formula only |
+| L4 | Remove circular Lyapunov / mean-phase assumptions |
+
+**Keep outside theorems:** \(G_4\), \(\mu\), \(E_{\mathrm{leak}}\), 539.9 s, phonon language.  
+**Quarantine:** Resonant Algebra ≠ RH.
