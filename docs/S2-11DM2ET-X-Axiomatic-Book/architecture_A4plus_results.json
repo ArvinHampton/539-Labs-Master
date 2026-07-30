@@ -1,0 +1,162 @@
+{
+  "provenance": {
+    "objects": "residual flux quanta",
+    "principle_S": true,
+    "democratic_charge_partition": true,
+    "not_free_Tsharp_basins": true,
+    "no_go_lift_claimed": false,
+    "option3_free_dynamics_unchanged": true,
+    "A4_0stem_intact": true,
+    "A5_0stem_intact": true
+  },
+  "A4plus": {
+    "code": "A4PLUS_BSPIN_LIFT_CLOSED_ON_KPLUS",
+    "B_prime": 539,
+    "dim_V": 1944,
+    "continuous_extension": {
+      "constant_A2_realization": "|E(O_res)| \u2245 discrete O_res (0-dim)",
+      "A4plus_domain": "K\u207a = geometric realization of A2 optional 1-skeleton + 2-clique fill",
+      "primary_mode": "A2_enrich",
+      "Phi_extension": "Vertices: A3 \u03a6(x_i)=span{e_{\u03c4,\u03b2}}. Edges: RP geodesic cos t e_a + sin t e_b. 2-simplices: affine fill in Gr_1(V) using span of the three lines (well-defined in high-dimensional Grassmannian).",
+      "Phi_Spin_extension": "Vertices: A3 oriented 2-planes. Edges/faces: continuous paths/homotopies in oriented Gr_2(W)."
+    },
+    "modes": {
+      "path_fill": {
+        "topology": {
+          "n_verts": 539,
+          "n_edges": 1075,
+          "n_faces": 537,
+          "rank_delta0": 538,
+          "rank_delta1": 537,
+          "beta0_F2": 1,
+          "beta1_F2": 0,
+          "beta2_F2": 0,
+          "euler_V_E_F": 1
+        },
+        "w1_of_Phi_star_gamma1": {
+          "Phi_line_injective": true,
+          "edge_transitions_all_plus": true,
+          "w1_cochain_zero": true,
+          "w1_closed": true,
+          "w1_exact": true,
+          "w1_class_zero": true,
+          "argument": "Global positive lifts +e_j of coordinate axes; geodesic edge paths cos t e_a + sin t e_b end at +e_b; monodromy trivial \u21d2 w1(L)=0."
+        },
+        "Phi_Spin_obstructions": {
+          "bundle": "Phi_Spin^* tautological_2 \u2245 L \u2295 L (oriented)",
+          "w1_spin_vanishes": true,
+          "w2_equals_w1_L_squared": true,
+          "w1_L_zero": true,
+          "w2_spin_vanishes": true,
+          "BSpin_lift_exists": true,
+          "lift_unique_up_to_homotopy_of_lifts": true,
+          "spin_structure_log2_count_if_lift": 0,
+          "spin_structure_count_if_lift": 1
+        },
+        "status": "A4PLUS_BSPIN_LIFT_OK"
+      },
+      "A2_enrich": {
+        "topology": {
+          "n_verts": 539,
+          "n_edges": 594,
+          "n_faces": 56,
+          "rank_delta0": 538,
+          "rank_delta1": 56,
+          "beta0_F2": 1,
+          "beta1_F2": 0,
+          "beta2_F2": 0,
+          "euler_V_E_F": 1
+        },
+        "w1_of_Phi_star_gamma1": {
+          "Phi_line_injective": true,
+          "edge_transitions_all_plus": true,
+          "w1_cochain_zero": true,
+          "w1_closed": true,
+          "w1_exact": true,
+          "w1_class_zero": true,
+          "argument": "Global positive lifts +e_j of coordinate axes; geodesic edge paths cos t e_a + sin t e_b end at +e_b; monodromy trivial \u21d2 w1(L)=0."
+        },
+        "Phi_Spin_obstructions": {
+          "bundle": "Phi_Spin^* tautological_2 \u2245 L \u2295 L (oriented)",
+          "w1_spin_vanishes": true,
+          "w2_equals_w1_L_squared": true,
+          "w1_L_zero": true,
+          "w2_spin_vanishes": true,
+          "BSpin_lift_exists": true,
+          "lift_unique_up_to_homotopy_of_lifts": true,
+          "spin_structure_log2_count_if_lift": 0,
+          "spin_structure_count_if_lift": 1
+        },
+        "status": "A4PLUS_BSPIN_LIFT_OK"
+      },
+      "bott_graph": {
+        "topology": {
+          "n_verts": 539,
+          "n_edges": 18427,
+          "n_faces": 0,
+          "rank_delta0": 538,
+          "rank_delta1": 0,
+          "beta0_F2": 1,
+          "beta1_F2": 17889,
+          "beta2_F2": 0,
+          "euler_V_E_F": -17888
+        },
+        "w1_of_Phi_star_gamma1": {
+          "Phi_line_injective": true,
+          "edge_transitions_all_plus": true,
+          "w1_cochain_zero": true,
+          "w1_closed": true,
+          "w1_exact": true,
+          "w1_class_zero": true,
+          "argument": "Global positive lifts +e_j of coordinate axes; geodesic edge paths cos t e_a + sin t e_b end at +e_b; monodromy trivial \u21d2 w1(L)=0."
+        },
+        "Phi_Spin_obstructions": {
+          "bundle": "Phi_Spin^* tautological_2 \u2245 L \u2295 L (oriented)",
+          "w1_spin_vanishes": true,
+          "w2_equals_w1_L_squared": true,
+          "w1_L_zero": true,
+          "w2_spin_vanishes": true,
+          "BSpin_lift_exists": true,
+          "lift_unique_up_to_homotopy_of_lifts": false,
+          "spin_structure_log2_count_if_lift": 17889,
+          "spin_structure_count_if_lift": "2^17889"
+        },
+        "status": "A4PLUS_BSPIN_LIFT_OK"
+      }
+    },
+    "primary": {
+      "mode": "A2_enrich",
+      "w1_L_zero": true,
+      "w1_spin_zero": true,
+      "w2_spin_zero": true,
+      "BSpin_lift": true,
+      "spin_structures": 1,
+      "spin_structures_log2": 0,
+      "topology": {
+        "n_verts": 539,
+        "n_edges": 594,
+        "n_faces": 56,
+        "rank_delta0": 538,
+        "rank_delta1": 56,
+        "beta0_F2": 1,
+        "beta1_F2": 0,
+        "beta2_F2": 0,
+        "euler_V_E_F": 1
+      }
+    },
+    "theorems": [
+      "A4\u207a.1: \u03a6 extends continuously over K\u207a (discrete verts + geodesics + face fills).",
+      "A4\u207a.2: w1(\u03a6^*\u03b3\u2081)=0 on K\u207a under global positive axis gauge.",
+      "A4\u207a.3: \u03a6^Spin is oriented \u21d2 w1=0; w2=w1(L)^2=0 \u21d2 BSpin lift exists.",
+      "A4\u207a.4: spin structures form torsor under H\u00b9(K\u207a;Z/2)."
+    ],
+    "not_claimed": [
+      "free T^sharp origin",
+      "No-Go lift",
+      "higher Omega_{n>0} continuum fillings",
+      "G4=539.9 in geometry",
+      "security reduction",
+      "constant A2 |E| already had positive-dimensional cells"
+    ]
+  }
+}

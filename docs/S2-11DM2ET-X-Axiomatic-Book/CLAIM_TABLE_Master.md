@@ -4,7 +4,7 @@
 **Author:** Arvin B. Hampton (String Weaver) / 539 Labs LLC  
 **Rule:** Category A vs B mandatory. Packaging under Principle (S) only.  
 **Prior freezes:** 2026-07-29 (packaging + residual product + bio); 2026-07-30 morning (muon Path A/B + ππ ε).  
-**This freeze adds:** CuNc 2026 fs audit (retract 2.3 fs); −Periodic Table / mirror-halo Cat B extension; \(E_{\mathrm{leak}}\) CuNc numerical patch.
+**This freeze adds:** A4⁺ continuous BSpin on K⁺ (after CuNc/mirror hygiene earlier same day).
 
 ## Foundation (Category A / packaging lock)
 
@@ -76,6 +76,22 @@
 | M2/M5 tension terms in leakage sector | **Cat B** | same |
 | Residual foundation / Option 3 / No-Go altered by mirror table | **No** | intact |
 
+
+## Architecture A4⁺ continuous on K⁺ (this freeze)
+
+| Claim | Status | Provenance |
+|-------|--------|------------|
+| Domain upgrade: K⁺ = path + same-tower + triangle fill | **Locked** | Architecture_A4plus_Continuous_BSpin.md |
+| \|K⁺\| cells V=539 E=594 F=56 | **Executed** | architecture_A4plus_results.json |
+| β₀=1, β₁=0, β₂=0 over F₂ (primary) | **Executed** | same |
+| Continuous extension of A3 Φ, Φ^Spin over K⁺ | **Locked** | A4⁺.1 / A4⁺.1′ |
+| w₁(Φ*γ₁)=0 (global positive axis gauge) | **Locked** | A4⁺.2 |
+| w₁=w₂=0 for Φ^Spin; BSpin lift exists | **Locked** | A4⁺.3 |
+| Unique spin structure on primary K⁺ | **Locked** | A4⁺.4 |
+| Code A4PLUS_BSPIN_LIFT_CLOSED_ON_KPLUS | **Frozen** | probe |
+| A5⁺ KO/bordism on K⁺ beyond 0-stem | **Open** | Next |
+| Free T^♯ / No-Go lift from A4⁺ | **Forbidden** | provenance |
+
 ## Empirical biology (honest; unchanged)
 
 | Claim | Status |
@@ -100,6 +116,6 @@
 
 ## One-line executive verdict
 
-**Packaging and residual product locked; muon Path A primary; CuNc T₂ ≈ 70 fs (2.3 fs retracted); −Periodic Table + mirror halo are Cat B extensions only; residual A4⁺ on full |E| still open.**
+**Packaging and residual product locked; muon Path A primary; CuNc T₂ ≈ 70 fs (2.3 fs retracted); −Periodic Table Cat B; A4⁺ BSpin lift closed on enriched K⁺ (unique); A5⁺ open.**
 
 *Per aspera ad astra.*

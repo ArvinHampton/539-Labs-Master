@@ -4,7 +4,7 @@
 **Depends on:** A0 carrier \(\mathcal{O}_{\mathrm{res}}\), A1 \(\beta_\sharp\) / \(f_\sharp\), A2 constant simplicial lift.  
 **Status:** **First continuous model delivered** — explicit maps into finite-stage real Grassmannians with canonical inclusions toward \(BO\); spin refinement path into even-rank oriented Grassmannians toward \(B\mathrm{Spin}\) stated and implemented at the discrete-to-geometry layer.  
 **A4–A5 closed as 0-stem residual closure** on \(\mathcal{O}_{\mathrm{res}}^{\mathrm{disc}}\) only: `Architecture_A4_BSpin_Lift.md`, `Architecture_A5_KO_Spin_Bordism.md`.  
-**A4⁺ open:** continuous \(B\mathrm{Spin}\) obstruction of \(\Phi\) on full \(\lvert E(\mathcal{O}_{\mathrm{res}})\rvert\).
+**A4⁺ closed:** continuous \(B\mathrm{Spin}\) lift on enriched \(K^+\) — `Architecture_A4plus_Continuous_BSpin.md` (`A4PLUS_BSPIN_LIFT_CLOSED_ON_KPLUS`).
 
 ---
 
@@ -312,7 +312,9 @@ Injectivity holds when \(f_\sharp\) is injective on the nine-core package (verif
 | Phase | Task | Status |
 |-------|------|--------|
 | **A4** | \(w_1,w_2\) vanish on discrete domain; lift to \(B\mathrm{Spin}\) | **Done** — `Architecture_A4_BSpin_Lift.md` |
+| **A4⁺** | continuous lift on enriched \(K^+\) | **Done** — `Architecture_A4plus_Continuous_BSpin.md` |
 | **A5** | \([\mathcal{O}_{\mathrm{res}}]=B'\) in \(\Omega_0^{\mathrm{Spin}}\) / \(KO_0\); fibers \(8\cdot67+3\) | **Done** (0-stem) — `Architecture_A5_KO_Spin_Bordism.md` |
+| **A5⁺** | \(KO\)/bordism on \(K^+\) | **Open** |
 
 ---
 
