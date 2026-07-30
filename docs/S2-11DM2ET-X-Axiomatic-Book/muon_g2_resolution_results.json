@@ -1,0 +1,70 @@
+{
+  "formula": "delta_a_mu_55 = A * sin(2*pi*t/T + phi0)",
+  "A_amp": 2.51e-09,
+  "A_amp_e11": 250.99999999999997,
+  "T_flux_s": 539.9,
+  "eps": 0.0125,
+  "eps_pct": 1.25,
+  "path_A": {
+    "statement": "long-window average nulls oscillatory term",
+    "windows": [
+      {
+        "T_days": 1,
+        "bound": 2.496280809907857e-12,
+        "bound_e11": 0.2496280809907857,
+        "mean_phi0": 4.3150051874749696e-14,
+        "mean_phi0_e11": 0.00431500518747497,
+        "max_abs_mean": 4.641416718599998e-13,
+        "max_abs_mean_e11": 0.04641416718599998,
+        "max_phi": 1.4748032179352084,
+        "bound_over_exp_err": 0.017215729723502465
+      },
+      {
+        "T_days": 7,
+        "bound": 3.56611544272551e-13,
+        "bound_e11": 0.0356611544272551,
+        "mean_phi0": 2.6239428494099905e-13,
+        "mean_phi0_e11": 0.026239428494099905,
+        "max_abs_mean": 4.326016729622512e-13,
+        "max_abs_mean_e11": 0.04326016729622512,
+        "max_phi": 4.057890510886816,
+        "bound_over_exp_err": 0.002459389960500352
+      },
+      {
+        "T_days": 30,
+        "bound": 8.32093603302619e-14,
+        "bound_e11": 0.00832093603302619,
+        "mean_phi0": 1.9411997237198616e-14,
+        "mean_phi0_e11": 0.0019411997237198616,
+        "max_abs_mean": 5.683765372920069e-14,
+        "max_abs_mean_e11": 0.0056837653729200684,
+        "max_phi": 5.061454830783555,
+        "bound_over_exp_err": 0.0005738576574500821
+      },
+      {
+        "T_days": 365,
+        "bound": 6.839125506596869e-15,
+        "bound_e11": 0.0006839125506596869,
+        "mean_phi0": 4.05146578732228e-15,
+        "mean_phi0_e11": 0.000405146578732228,
+        "max_abs_mean": 7.444256409810531e-15,
+        "max_abs_mean_e11": 0.0007444256409810531,
+        "max_phi": 5.288347633542818,
+        "bound_over_exp_err": 4.7166382804116336e-05
+      }
+    ]
+  },
+  "path_B": {
+    "statement": "residual ~ eps * A if topological absorption incomplete",
+    "residual": 3.1375e-11,
+    "residual_e11": 3.1375,
+    "over_exp_err": 0.2163793103448276,
+    "over_lat_err": 0.049801587301587305
+  },
+  "external": {
+    "a_exp_err_e11": 14.499999999999998,
+    "delta_lat_e11": 38.0,
+    "delta_lat_err_e11": 63.0
+  },
+  "verdict": "Path A primary; Path B sub-dominant residual; eps matches O(1%) pipi"
+}

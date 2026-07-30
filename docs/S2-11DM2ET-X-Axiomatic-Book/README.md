@@ -1,6 +1,6 @@
 > **GitHub (canonical):** [ArvinHampton/539-Labs-Master](https://github.com/ArvinHampton/539-Labs-Master/tree/main/docs/S2-11DM2ET-X-Axiomatic-Book)
 > **Programme baseline:** [`PROGRAMME_BASELINE.md`](PROGRAMME_BASELINE.md)
-> **Session claim freeze:** [`CLAIM_TABLE_Master.md`](CLAIM_TABLE_Master.md) | [`PUSH_LOG_2026-07-29.md`](PUSH_LOG_2026-07-29.md)
+> **Session claim freeze:** [`CLAIM_TABLE_Master.md`](CLAIM_TABLE_Master.md) | [`PUSH_LOG_2026-07-30.md`](PUSH_LOG_2026-07-30.md)
 
 # S²-11DM²ET-X Axiomatic Book (Foundation Layer)
 
@@ -11,8 +11,11 @@ Clean LaTeX source for the full axiomatic foundation.
 ## Contents
 
 - **Programme baseline** (`PROGRAMME_BASELINE.md`)
-- **Master claim table** (`CLAIM_TABLE_Master.md`) — 2026-07-29 freeze
-- **Executive summary** (`Executive_Summary_2026-07-29.md`)
+- **Master claim table** (`CLAIM_TABLE_Master.md`) — 2026-07-30 freeze (muon Path A/B + prior locks)
+- **Executive summary** (`Executive_Summary_2026-07-30.md`) — muon g−2 Path A primary
+- **Muon g−2 oscillatory resolution** (`Muon_g2_Oscillatory_Resolution_2026-07-30.md`) — Path A average / Path B residual
+- **Resonant Δσ_ππ note** (`Resonant_Delta_sigma_pipi_Note.md`) — CMD-3 O(1%) ↔ ε=61/4880
+- **Muon numerics** (`muon_g2_resolution_results.json`, `scripts/muon_g2_prefactor_average.py`)
 - **Next directions** (`Next_Directions_2026-07-29.md`)
 - Axiom 0; Generation Individuality; Three Clocks / Closed Constants; Photon-ring; No-Go; ACE; Provenance
 - Empirical phase-locking; Holographic window; Wilson surrogates; QCD note; Bott vs HQCC; Phase 0; H0 Option 3
@@ -26,32 +29,6 @@ Clean LaTeX source for the full axiomatic foundation.
 - **Coboundary operators on product complexes** (`Coboundary_Operators_Product_Complexes.md`)
 - Non-circular length packaging; Resonant layer resolved; 9 Maths pillars; Cross-Dependency Graph; Tests T1–T6
 - **Residual product cohomology** (Residual_Product_Cohomology.md) — H^•(X_×) graph/form layers
-
-
-## Key Constants (see provenance before quoting)
-
-**Authoritative provenance:** `PROVENANCE_TABLE.md`
-**Depth split:** N_star=14 (ACE) **≠** sigma=539 (HQCC model). Never identify them.
-
-| Object | Value | Status |
-|--------|-------|--------|
-| W_np | e^3 | From Axiom 0 |
-| N_flux | 4880 | Tower construction |
-| N_star | 14 | ACE; free of 539 |
-| L_pack / sigma | 539 | Hard budget under (S); Option 3 free objects |
-| 18 | floor(e^3/ln 3) | Packaging |
-| 521 | B_Q - f_max under (S) | Packaging |
-| G_4 | 539.9 s | Emp/Mod hypothesis |
-
-## Relation to HQH-539
-
-Foundation layer for resonant attractor mathematics underlying HQH-539. Security claims pending peer review.
-
----
-
-*Per aspera ad astra.*
-
-The universe counts in threes.
 - **Multi-angle unification review** (Multi_Angle_Unification_Review.md): missed patterns; G–F pairing + window filtration probes; sector↔band RFC
 - **Near-term unification kit** (Near_Term_Unification_Kit.md, scripts/gf_pairing_window_probe.py): pair [alpha⊗delta_f] with mixed cells; window-18 filtration; sector↔band RFC — Option 3 and thin F locked
 - **Full report: findings / missed patterns / implications** (Full_Report_Findings_Missed_Patterns_Implications.md) — 2026-07-29 synthesis; near-term kit frozen
@@ -63,3 +40,30 @@ The universe counts in threes.
 - **P+ M1 topology · flux quantization Q0–Q8** (P_plus_2Complex_Topology_Flux_Quantization.md, scripts/p_plus_2complex_topology_probe.py): contractible 56 disks; d_P(delta_f)=0; jump ⊥ stay; integer pipeline A
 - **Sector↔band S1–S3** (Sector_Band_Dictionary_RFC.md, scripts/sector_band_S1S3_probe.py): D2.0 on CHB-MIT chb01_01 — S1–S3 PASS → working Cat B dictionary (not residual lock)
 - **Post-kit multi-angle missed patterns** (Multi_Angle_Review_Post_Kit_Pplus_S1S3.md, scripts/missed_patterns_frontier_probe.py): N2 identity; Ψ on squares; jump mass density 36; frontier ranks 1–10
+
+## Key Constants (see provenance before quoting)
+
+**Authoritative provenance:** `PROVENANCE_TABLE.md`  
+**Depth split:** N_star=14 (ACE) **≠** sigma=539 (HQCC model). Never identify them.
+
+| Object | Value | Status |
+|--------|-------|--------|
+| W_np | e^3 | From Axiom 0 |
+| N_flux | 4880 | Tower construction |
+| N_star | 14 | ACE; free of 539 |
+| L_pack / sigma | 539 | Hard budget under (S); Option 3 free objects |
+| 18 | floor(e^3/ln 3) | Packaging |
+| 521 | B_Q - f_max under (S) | Packaging |
+| ε | 61/4880 = 1.25% | Puncture / flux ratio |
+| G_4 | 539.9 s | Emp/Mod hypothesis |
+| A (δa_μ^(55)) | 2.51×10⁻⁹ | HQCC oscillatory prefactor |
+
+## Relation to HQH-539
+
+Foundation layer for resonant attractor mathematics underlying HQH-539. Security claims pending peer review.
+
+---
+
+*Per aspera ad astra.*
+
+The universe counts in threes.
