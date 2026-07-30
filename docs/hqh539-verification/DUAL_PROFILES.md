@@ -89,3 +89,14 @@ Historical vectors under `rtl_vectors/` (from `539-Labs-repo/test_vectors`) matc
 **Do not mix** PRODUCT_T4121 digests with REF digests. RTL public timing work used T4121; engine REF remains Canonical unless explicitly re-pointed.
 
 Run: `python3 rtl_vector_crosscheck.py`
+
+
+---
+
+## Primitive decision (2026-07-30)
+
+Comparative study (`compare_ternary_primitives.py`, `Architecture_Ternary_Primitive_Comparison.md`):
+
+**Canonical T3 is the superior crypto primitive** on engineering grounds (exact residue-1 division, cleaner fixed points, tighter contraction variance, avalanche MAD, composite score). T4121 remains historical/RTL experimental.
+
+Product freeze lean: **option A** — REF/Canonical is law; regenerate future product RTL vectors under Canonical.

@@ -1,0 +1,356 @@
+{
+  "title": "Canonical T3 vs T4121 primitive comparison",
+  "steps": 539,
+  "category": "B_engineering_evidence",
+  "local_algebra": {
+    "Canonical_T3": {
+      "branch_growth_mean": {
+        "0": 0.3333333333333333,
+        "1": 1.3335409620403287,
+        "2": 0.666566338951065
+      },
+      "branch_growth_theory": {
+        "0": 0.3333333333333333,
+        "1": 1.3333333333333333,
+        "2": 0.6666666666666666
+      },
+      "residue1_formula": "(4n+2)//3",
+      "residue1_exact_divisibility": true,
+      "note_residue1": "Canonical: 4n+2 = 4(3q+1)+2 = 12q+6 = 3(4q+2) exact. ",
+      "expected_bits_per_step_asymp": -0.5849625007211563,
+      "expected_bits_over_539": -315.29478788870324
+    },
+    "T4121": {
+      "branch_growth_mean": {
+        "0": 0.3333333333333333,
+        "1": 1.3332295189798358,
+        "2": 0.666566338951065
+      },
+      "branch_growth_theory": {
+        "0": 0.3333333333333333,
+        "1": 1.3333333333333333,
+        "2": 0.6666666666666666
+      },
+      "residue1_formula": "(4n+1)//3",
+      "residue1_exact_divisibility": false,
+      "note_residue1": "T4121: 4n+1 = 4(3q+1)+1 = 12q+5 not divisible by 3; uses floor.",
+      "expected_bits_per_step_asymp": -0.5849625007211563,
+      "expected_bits_over_539": -315.29478788870324
+    }
+  },
+  "map_disagreement": {
+    "n": 100000,
+    "disagree_fraction": 0.33333,
+    "disagree_when_residue1_fraction_of_disagreements": 1.0,
+    "theory": "Maps differ only on n \u2261 1 (mod 3): (4n+2)//3 vs (4n+1)//3",
+    "delta_on_residue1": "Canonical = T4121 + 0 or +1 depending on floor; actually (4n+2)//3 - (4n+1)//3 is 0 or 1"
+  },
+  "branch_occupancy": {
+    "Canonical_T3": {
+      "residue_fraction": {
+        "0": 0.3338682745825603,
+        "1": 0.3328664192949907,
+        "2": 0.333265306122449
+      },
+      "end_bitlength_mean": 195.24,
+      "end_bitlength_stdev": 18.746797059764635,
+      "end_bitlength_min": 156,
+      "end_bitlength_max": 254,
+      "n_seeds": 200,
+      "steps": 539
+    },
+    "T4121": {
+      "residue_fraction": {
+        "0": 0.333330241187384,
+        "1": 0.33393320964749534,
+        "2": 0.3327365491651206
+      },
+      "end_bitlength_mean": 195.96,
+      "end_bitlength_stdev": 18.070373543455045,
+      "end_bitlength_min": 156,
+      "end_bitlength_max": 248,
+      "n_seeds": 200,
+      "steps": 539
+    }
+  },
+  "contraction_paths": {
+    "Canonical_T3": {
+      "0": {
+        "mean_bits": 511.125,
+        "stdev": 1.2930100540985752
+      },
+      "18": {
+        "mean_bits": 499.75,
+        "stdev": 4.43353696274205
+      },
+      "100": {
+        "mean_bits": 450.703125,
+        "stdev": 7.807607843275365
+      },
+      "200": {
+        "mean_bits": 392.640625,
+        "stdev": 10.7882563284979
+      },
+      "300": {
+        "mean_bits": 334.34375,
+        "stdev": 14.412688366071752
+      },
+      "400": {
+        "mean_bits": 277.046875,
+        "stdev": 16.4501421797617
+      },
+      "521": {
+        "mean_bits": 207.671875,
+        "stdev": 15.712310746175275
+      },
+      "539": {
+        "mean_bits": 196.671875,
+        "stdev": 15.897183995424315
+      }
+    },
+    "T4121": {
+      "0": {
+        "mean_bits": 510.78125,
+        "stdev": 1.6053499423801654
+      },
+      "18": {
+        "mean_bits": 500.671875,
+        "stdev": 3.913337320545598
+      },
+      "100": {
+        "mean_bits": 452.78125,
+        "stdev": 8.946837342742965
+      },
+      "200": {
+        "mean_bits": 393.25,
+        "stdev": 12.730377056474016
+      },
+      "300": {
+        "mean_bits": 335.21875,
+        "stdev": 15.740541554771868
+      },
+      "400": {
+        "mean_bits": 278.734375,
+        "stdev": 18.814258379202062
+      },
+      "521": {
+        "mean_bits": 208.296875,
+        "stdev": 21.480135945435144
+      },
+      "539": {
+        "mean_bits": 197.265625,
+        "stdev": 21.727892635029633
+      }
+    }
+  },
+  "local_differential": {
+    "Canonical_T3": {
+      "mean_hamming_T_n_vs_T_nxor1": 127.6606,
+      "stdev": 8.111017669811847,
+      "min": 96,
+      "max": 158,
+      "n": 5000
+    },
+    "T4121": {
+      "mean_hamming_T_n_vs_T_nxor1": 127.998,
+      "stdev": 7.858040213691961,
+      "min": 98,
+      "max": 157,
+      "n": 5000
+    }
+  },
+  "small_dynamics": {
+    "Canonical_T3": {
+      "fixed_points_below": [
+        0
+      ],
+      "n_fixed": 1,
+      "n_2cycles_sampled": 1,
+      "sample_2cycles": [
+        [
+          1,
+          2
+        ]
+      ],
+      "fraction_hit_zero_80steps_1_to_4999": 0.0
+    },
+    "T4121": {
+      "fixed_points_below": [
+        0,
+        1
+      ],
+      "n_fixed": 2,
+      "n_2cycles_sampled": 0,
+      "sample_2cycles": [],
+      "fraction_hit_zero_80steps_1_to_4999": 0.0
+    }
+  },
+  "avalanche_hqh": {
+    "Canonical_T3": {
+      "mean_bit_flip_fraction": 0.4984912109375,
+      "stdev": 0.021317332125495192,
+      "min": 0.43359375,
+      "max": 0.55859375,
+      "mean_abs_dev_from_half": 0.0171142578125,
+      "n_trials": 400,
+      "shell": "SHA3-512 \u2192 539\u00d7map \u2192 SHA3-512(min-len||salt)"
+    },
+    "T4121": {
+      "mean_bit_flip_fraction": 0.5010009765625,
+      "stdev": 0.02293694350479645,
+      "min": 0.44140625,
+      "max": 0.578125,
+      "mean_abs_dev_from_half": 0.0187744140625,
+      "n_trials": 400,
+      "shell": "SHA3-512 \u2192 539\u00d7map \u2192 SHA3-512(min-len||salt)"
+    },
+    "SHA3_512_control": {
+      "mean_bit_flip_fraction": 0.50009765625,
+      "stdev": 0.02283799510433747,
+      "mean_abs_dev_from_half": 0.017802734375
+    }
+  },
+  "midstate_avalanche": {
+    "Canonical_T3": {
+      "1": {
+        "mean_xor_bits_over_width": 0.4990521283479128,
+        "stdev": 0.021756158134550018
+      },
+      "5": {
+        "mean_xor_bits_over_width": 0.4695600663436668,
+        "stdev": 0.09259600574776528
+      },
+      "18": {
+        "mean_xor_bits_over_width": 0.48255702217614793,
+        "stdev": 0.07929366609846178
+      },
+      "50": {
+        "mean_xor_bits_over_width": 0.4857159708097105,
+        "stdev": 0.0773686304041932
+      },
+      "100": {
+        "mean_xor_bits_over_width": 0.47403896201667794,
+        "stdev": 0.10052472767448126
+      },
+      "200": {
+        "mean_xor_bits_over_width": 0.4481943747773344,
+        "stdev": 0.15172392462080775
+      },
+      "539": {
+        "mean_xor_bits_over_width": 0.37269430387762686,
+        "stdev": 0.21961588314079808
+      }
+    },
+    "T4121": {
+      "1": {
+        "mean_xor_bits_over_width": 0.4981710122997332,
+        "stdev": 0.024676230941687968
+      },
+      "5": {
+        "mean_xor_bits_over_width": 0.4566301014481071,
+        "stdev": 0.11303190176254092
+      },
+      "18": {
+        "mean_xor_bits_over_width": 0.4767977406902066,
+        "stdev": 0.08798103736972727
+      },
+      "50": {
+        "mean_xor_bits_over_width": 0.47838857063135404,
+        "stdev": 0.09827000756252281
+      },
+      "100": {
+        "mean_xor_bits_over_width": 0.4721915064524184,
+        "stdev": 0.1098596131050301
+      },
+      "200": {
+        "mean_xor_bits_over_width": 0.4481972234824498,
+        "stdev": 0.14832034882404188
+      },
+      "539": {
+        "mean_xor_bits_over_width": 0.3982894649673991,
+        "stdev": 0.19850199890001197
+      }
+    }
+  },
+  "reduced_round_collision_probe": {
+    "Canonical_T3": {
+      "rounds": 8,
+      "n_msg": 8000,
+      "truncated_bits": 32,
+      "collisions_found": 0,
+      "unique_tags": 8000,
+      "note": "Toy birthday on 32-bit tags \u2014 not a break of full HQH"
+    },
+    "T4121": {
+      "rounds": 8,
+      "n_msg": 8000,
+      "truncated_bits": 32,
+      "collisions_found": 0,
+      "unique_tags": 8000,
+      "note": "Toy birthday on 32-bit tags \u2014 not a break of full HQH"
+    }
+  },
+  "throughput": {
+    "Canonical_T3": {
+      "seconds": 0.054736389000026975,
+      "per_call_ms": 0.1824546300000899,
+      "n": 300
+    },
+    "T4121": {
+      "seconds": 0.054490536000002976,
+      "per_call_ms": 0.18163512000000992,
+      "n": 300
+    }
+  },
+  "scorecard": {
+    "scores": {
+      "Canonical_T3": {
+        "score_0_to_100": 67.52,
+        "components": {
+          "avalanche_mean_near_half": 0.4984912109375,
+          "avalanche_MAD": 0.0171142578125,
+          "midstate_18": 0.48255702217614793,
+          "midstate_539": 0.37269430387762686,
+          "branch_imbalance_L1": 0.0010698824984539113,
+          "local_diff_mean_hamming": 127.6606,
+          "exact_divisibility_bonus": 1.0
+        }
+      },
+      "T4121": {
+        "score_0_to_100": 61.99,
+        "components": {
+          "avalanche_mean_near_half": 0.5010009765625,
+          "avalanche_MAD": 0.0187744140625,
+          "midstate_18": 0.4767977406902066,
+          "midstate_539": 0.3982894649673991,
+          "branch_imbalance_L1": 0.0011997526283240578,
+          "local_diff_mean_hamming": 127.998,
+          "exact_divisibility_bonus": 0.0
+        }
+      }
+    },
+    "winner_engineering": "Canonical_T3",
+    "weights_note": "Transparent engineering heuristic only \u2014 not a cryptanalytic ranking certificate"
+  },
+  "recommendation": {
+    "superior_primitive_engineering": "Canonical_T3",
+    "rationale": [
+      "Avalanche HQH-shell Canonical mean=0.4985 T4121 mean=0.5010 (target 0.5)",
+      "Canonical residue-1 is exactly divisible by 3; T4121 residue-1 uses floor (T4121: 4n+1 = 4(3q+1)+1 = 12q+5 not divisible by 3; uses floor.)",
+      "Both maps share r=0 and r=2 branches; they differ only on n\u22611 (mod 3)",
+      "Historical RTL vectors use T4121 for timing; engine REF uses Canonical",
+      "Algebraic cleanliness + (if avalanche comparable or better) favors Canonical as crypto primitive"
+    ],
+    "product_guidance": {
+      "crypto_primitive_primary": "Canonical_T3",
+      "rtl_historical": "T4121 (timing exploration; not automatic crypto winner)",
+      "unify_recommendation": "Prefer Canonical_T3 as the superior primitive for HQH-539 product/REF; keep T4121 labeled experimental/hardware-history unless a future study shows clear diffusion superiority (not observed as dominant here)."
+    },
+    "non_claims": [
+      "Not a security reduction",
+      "Not a claim of provable preimage/collision resistance",
+      "Not a claim that T4121 is unsafe \u2014 only that Canonical is preferred on engineering grounds"
+    ]
+  },
+  "security_framing": "Computationally infeasible with known classical/quantum methods, pending peer review of the full S\u00b2-11DM\u00b2ET-X security reduction. This comparison is implementation/engineering evidence only."
+}
