@@ -40,7 +40,12 @@
 | ND1: (RM)+(Iso_H) ⇒ OP1 / B_θ | **A** | **Proved** (conditional) — **acceptance locked** |
 | Classical constraints on Iso_H (finite-height trivial; FE conjugate only; density/mult. insufficient) | **A** | **Recorded** (`RH_Iso_H_Classical_Constraints.md`) |
 | (Iso_H) unconditional | **S** | **Open** |
-| Mass-with-A under (RM) only | **S** | **Open** — preferred next |
+| GHK/Gonek finite products role (prime side; not Lip \(A\)) | classical | **Recorded** |
+| Ivić multiplicity → single-term size in \(A\) | classical / **A** | **Recorded**; ordinate count still **open** |
+| Mass-with-A Criteria A–D ⇒ divergence | **A** | **Proved implications** (`RH_Finite_Product_Ivic_MassA.md`) |
+| (RM)+(Mass-with-A) ⇒ B_θ | **A** | **Proved implication** |
+| Polylog / avg-polylog \(A\) on \(K_\star\) | **S** | **Open** — preferred next |
+| Mass-with-A under (RM) as theorem | **S** | **Open** |
 | StripDens | **S** | **Open** |
 | Unconditional B_θ | **S** | **Open** |
 | Model debit / \(E_{\mathrm{leak}}\) / \(\mu\) / 539.9 as zeta theorem | **O** in theorem env | Motivation only |

@@ -165,29 +165,32 @@ None of the five boxes is checked. **O-PC is first-class and open**, upstream of
 
 ## Solid directions (current)
 
-See `RH_Existing_Theorems_Solid_Directions.md` §6 · ND1: `RH_ND1_Stability_Resolve.md` · Iso_H: `RH_Iso_H_Classical_Constraints.md`.
+See `RH_Finite_Product_Ivic_MassA.md` · `RH_Iso_H_Classical_Constraints.md` · ND1.
 
 | Rank | Direction | Status |
 |------|-----------|--------|
-| **1** | **Mass-with-A under (RM) only** | **Open** — preferred next |
-| **2** | **StripDens** | **Open** |
-| **3** | Resonance **off the line** | **Open** |
-| **4** | **Effective density constants** for M1.2 | Architecture accepted; \((A,B,C)\) **open** |
-| **5** | Finite-product approximation **off the line** | **Open** |
-| **6** | **Path continuation** from on-line Omega | **Open** (independent of Iso_H) |
+| **1** | **Polylog / avg-polylog \(A\) on \(K_\star\)** | **Open** — sharpest pure next step |
+| **2** | **Mass-with-A under (RM)** | **Open** as theorem; **⇒ B_θ proved** as implication |
+| **3** | **StripDens** | **Open** |
+| **4** | Resonance off the line | **Open** |
+| **5** | Effective density constants | Architecture accepted |
+| **6** | Path continuation from on-line Ω | **Open** |
 
-### ND1 (stability bridge) — **locked**
+### Scoreboard (this pass)
 
-| Item | Status |
-|------|--------|
-| Conjugate lock (optimal phase) | **Proved** |
-| (RM) + L2 → positive-density good \(u_k\) | **Proved** (S11) |
-| (RM)+(Iso_H) ⇒ OP1 / B_θ | **Proved** (S13, S16) |
-| Classical constraints on Iso_H | **Recorded** — no unconditional Iso_H theorem |
-| Unconditional (Iso_H) / B_θ | **Open** |
+| Item | Standing |
+|------|----------|
+| GHK / Gonek finite products | Classical — prime side; **not** Lip \(A\) |
+| Ivić multiplicity | Classical — single-term size in \(A\); **not** ordinate count |
+| Criteria A–D ⇒ Mass-with-A | **Proved implications** |
+| Polylog \(A\) on positive-density subset of \(K_\star\) | **Open** |
+| (RM)+(Iso_H) ⇒ B_θ | **Proved** (ND1) |
+| Unconditional B_θ / RH | **Open** |
 
-On-line strong Omega (fixed \(X\)) is **accepted**, not re-listed.  
-**O-TL / unconditional B_θ remain open** (primary). RH remains open.
+### ND1 — **locked**
+
+Conjugate lock · S11 · (RM)+(Iso_H)⇒B_θ proved.  
+**O-TL / unconditional B_θ remain open** (primary).
 
 ## Explicit non-claims
 

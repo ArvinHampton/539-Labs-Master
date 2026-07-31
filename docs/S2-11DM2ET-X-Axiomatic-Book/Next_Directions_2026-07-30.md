@@ -68,20 +68,20 @@ Solid toolkit + ranked directions: **`RH_Existing_Theorems_Solid_Directions.md`*
 1. On-line Kronecker / model-\(\operatorname{Im} D_X\) + hybrid discrepancy Omega (fixed \(X\)); continuous-arg caveat.  
 2. Conditional M1.2 architecture (dyadic far zeros + classical density shape).
 
-### Solid directions (current — after Iso_H classical pass)
+### Solid directions (current — after finite-product / Ivić / Mass-A pass)
 
 | Rank | Direction |
 |------|-----------|
-| **1** | **Mass-with-A under (RM) only** — preferred pure next step |
-| **2** | **StripDens** from classical density tables |
-| **3** | Resonance off the line |
-| **4** | Effective density constants \((A,B,C)\) |
-| **5** | Finite-product approximation off the line |
-| **6** | Path continuation from on-line Ω (independent of Iso_H) |
+| **1** | **Polylog / average-polylog \(A\) on good locks \(K_\star\)** — open core of Mass-with-A (`RH_Finite_Product_Ivic_MassA.md`) |
+| **2** | **Mass-with-A under (RM)** (follows from 1 via Criterion A/D) |
+| **3** | **StripDens** from classical density tables |
+| **4** | Resonance off the line |
+| **5** | Effective density constants \((A,B,C)\) |
+| **6** | Path continuation from on-line Ω |
 
-**ND1 locked:** `RH_ND1_Stability_Resolve.md` — (RM)+(Iso_H)⇒B_θ **proved**.  
-**Iso_H classical constraints:** `RH_Iso_H_Classical_Constraints.md` — no unconditional Iso_H theorem.  
-**Still open:** unconditional Iso_H; Mass-with-A; unconditional B_θ / O-TL (**primary not closed**); RH.
+**Recorded this pass:** GHK/Gonek finite products (prime side; not Lip \(A\)); Ivić multiplicity (single-term size in \(A\); not ordinate count); Criteria A–D for Mass-with-A divergence.
+
+**ND1 locked.** **Still open:** polylog \(A\); Mass-with-A; Iso_H; unconditional B_θ / O-TL; RH.
 
 **Outside theorem env:** \(G_4\), \(\mu\), \(E_{\mathrm{leak}}\), 539.9 s.  
 **Literature:** `RH_Target_Lemma_Sketch_Literature_L5.md`; **Akatsuka–GHK:** `RH_Akatsuka_GHK_Survey.md`.  

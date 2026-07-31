@@ -105,18 +105,20 @@ The remaining solid directions are those that move **off the line**, make M1.2 *
 
 | Rank | Direction | Obligation | Status |
 |------|-----------|------------|--------|
-| **1** | **Mass-with-A under (RM) only** — on good \(u_k\) from S11, does \(\sum\delta_k/u_k\) with \(\delta_k\sim 1/\max(A(u_k),1)\) diverge? | unconditional B_θ without full Iso_H | **Open** — preferred |
-| **2** | **StripDens** — density in a thin strip about \(\beta_\star\) controlling Lip \(A\) | weakens ND1 residual | **Open** |
-| **3** | **Resonance off the line** | O-PC / O-TL | **Open** |
-| **4** | **Effective density constants** \((A,B,C)\) into M1.2 | O-M1.2 | Architecture accepted; constants **open** |
-| **5** | **Finite-product approximation off the line** (Gonek) | O-PC / O-M1.3bis | **Open** |
-| **6** | **Path continuation from on-line Omega** | O-M1.3bis / O-TL | **Open** (independent of Iso_H) |
+| **1** | **Polylog / average-polylog \(A\) on good locks \(K_\star\)** | Mass-with-A Criteria A/D | **Open** — preferred |
+| **2** | **Mass-with-A under (RM)** (\(\sum\delta_k/u_k=\infty\)) | unconditional B_θ without full Iso_H | **Open** as thm; **⇒B_θ proved** |
+| **3** | **StripDens** | weakens Lip \(A\) | **Open** |
+| **4** | **Resonance off the line** | O-PC / O-TL | **Open** |
+| **5** | **Effective density constants** \((A,B,C)\) | O-M1.2 | Architecture accepted |
+| **6** | **Path continuation from on-line Omega** | O-M1.3bis / O-TL | **Open** |
 
-Secondary: full unconditional **(Iso_H)**; phase-oriented mollifier (O-Moll).
+**Recorded:** finite products (prime side only); Ivić (multiplicity / single-term \(A\)); Criteria A–D (`RH_Finite_Product_Ivic_MassA.md`).
+
+Secondary: full unconditional **(Iso_H)**; phase-oriented mollifier.
 
 ### ND1 bridge (locked)
 
-**(RM)+(Iso_H) ⇒ B_θ** proved. Classical constraints: `RH_Iso_H_Classical_Constraints.md`. Barrier: unconditional **(Iso_H)** or successful **Mass-with-A**.
+**(RM)+(Iso_H) ⇒ B_θ** proved. Barrier: unconditional **(Iso_H)** or **polylog \(A\)** ⇒ Mass-with-A.
 
 **None of 1–4 is known to succeed.** All stay inside **ZLA**.  
 **Do not** weaken O-TL to on-line limsup alone.
