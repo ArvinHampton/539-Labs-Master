@@ -105,23 +105,18 @@ The remaining solid directions are those that move **off the line**, make M1.2 *
 
 | Rank | Direction | Obligation | Status |
 |------|-----------|------------|--------|
-| **1** | **Polylog / average-polylog \(A\) on good locks \(K_\star\)** | Mass-with-A Criteria A/D | **Open** — preferred |
-| **2** | **Mass-with-A under (RM)** (\(\sum\delta_k/u_k=\infty\)) | unconditional B_θ without full Iso_H | **Open** as thm; **⇒B_θ proved** |
-| **3** | **StripDens** | weakens Lip \(A\) | **Open** |
-| **4** | **Resonance off the line** | O-PC / O-TL | **Open** |
-| **5** | **Effective density constants** \((A,B,C)\) | O-M1.2 | Architecture accepted |
-| **6** | **Path continuation from on-line Omega** | O-M1.3bis / O-TL | **Open** |
+| **1** | **Mass-with-A under (RM) only** (polylog \(A\) on \(K_\star\)) | unconditional B_θ without full Iso_H | **Open** — preferred |
+| **2** | **StripDens** | weakens Lip \(A\) | **Open** |
+| **3** | **Resonance off the line** | O-PC / O-TL | **Open** |
+| **4** | **Effective density constants** \((A,B,C)\) | O-M1.2 | Architecture accepted |
 
-**Recorded:** finite products (prime side only); Ivić (multiplicity / single-term \(A\)); Criteria A–D (`RH_Finite_Product_Ivic_MassA.md`).
-
-Secondary: full unconditional **(Iso_H)**; phase-oriented mollifier.
+**Recorded:** finite products; Ivić; Criteria A–D. Secondary: Iso_H; path continuation.
 
 ### ND1 bridge (locked)
 
-**(RM)+(Iso_H) ⇒ B_θ** proved. Barrier: unconditional **(Iso_H)** or **polylog \(A\)** ⇒ Mass-with-A.
+**(RM)+(Iso_H) ⇒ B_θ** proved. Barrier: unconditional **(Iso_H)** or **Mass-with-A**.
 
-**None of 1–4 is known to succeed.** All stay inside **ZLA**.  
-**Do not** weaken O-TL to on-line limsup alone.
+**None of 1–4 is known to succeed.** All stay inside **ZLA**.
 
 ### Already executed (not re-listed as open solid work)
 
