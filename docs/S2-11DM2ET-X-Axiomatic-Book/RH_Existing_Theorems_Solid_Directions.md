@@ -8,7 +8,8 @@
 `RH_Remaining_Analytic_Obligations.md`,  
 `RH_OPC_Omega_Discrepancy.md`,  
 `RH_OPC_Partial_Resolution.md`,  
-`RH_Akatsuka_GHK_Survey.md`.
+`RH_Akatsuka_GHK_Survey.md`,  
+`RH_Deep_Pursuit_2026-07-31.md`.
 
 ---
 
@@ -106,7 +107,7 @@ The remaining solid directions are those that move **off the line**, make M1.2 *
 | Rank | Direction | Obligation | Status |
 |------|-----------|------------|--------|
 | **1** | **Resonance off the line** — large values of \(\theta_X\) / \(\Delta_X\) at \(\sigma\ge Y-\varepsilon\) or at points of large \(1/\lvert\zeta\rvert\); Soundararajan-type resonators in short \(t\)-intervals with \(\sigma>1/2\) | O-PC off-line / O-TL | **Open** |
-| **2** | **Effective density constants** — insert published numerical \((A,B,C)\) into `RH_M1_2_Effective_Density.md` and compute an explicit height threshold \(\gamma_1\) | O-M1.2 | Architecture **accepted**; constants **open** |
+| **2** | **Effective density constants** — insert published numerical \((A,B,C)\) into `RH_M1_2_Effective_Density.md` and compute an explicit height threshold \(\gamma_1\) | O-M1.2 | Architecture **accepted**; **concrete constants recorded** (Chourasiya–Simonič etc.) in `RH_Deep_Pursuit_2026-07-31.md`; numerical \(\gamma_1\) arithmetic **open** |
 | **3** | **Finite-product approximation off the line (Gonek style)** — region where short \(P_X\approx\zeta\); argument of the ratio at off-line minima / near maximal abscissa | O-PC / O-M1.3bis | **Open** |
 | **4** | **Path continuation from known on-line Omega** — use limsup / known large \(\operatorname{Im} D_X\) or \(\Delta_X\) on the line as a base and continue a path (or vary \(X\)) toward a zero of maximal real part so that continuous phase accumulates at O-TL scale (M1.3-bis) | O-M1.3bis / O-TL | **Open** |
 
@@ -115,10 +116,24 @@ Secondary (unchanged utility): phase-oriented mollifier (O-Moll).
 **None of 1–4 is known to succeed.** All stay inside **ZLA**.  
 **Do not** weaken O-TL to on-line limsup alone.
 
+
+### Deep pursuit freeze (2026-07-31)
+
+Full write-up: **`RH_Deep_Pursuit_2026-07-31.md`**.
+
+| Direction | After deep pursuit |
+|-----------|-------------------|
+| **2** Effective density | Concrete published constants **recorded** (Chourasiya–Simonič \(B_1=8.604\) on \(\sigma\in[0.5,0.625]\), \(T\ge 3\cdot 10^{12}\); alternatives Ramaré / Kadiri–Lumley–Ng; Bellotti near \(\sigma=1\)); insertion procedure ready; numerical \(\gamma_1\) still open |
+| **1** Resonance off the line | Precise **open lemma** + obstacle list (GHK off-line, nearby zeros, branch, correlation) |
+| **3** Gonek-style off the line | Precise **open argument lemma** (modulus known; argument at maximal abscissa open) |
+| **4** Path continuation | Precise **open differential bound** \(\Phi\) |
+
+**Still does not close O-TL or RH.**
+
 ### Already executed (not re-listed as open solid work)
 
 1. On-line resonance/Diophantine Omega — **accepted** (`RH_Resonance_Discrepancy_Attack.md`).  
-2. Conditional M1.2 **architecture** — **accepted** (`RH_M1_2_Effective_Density.md`); only numerical \((A,B,C)\) remain.
+2. Conditional M1.2 **architecture** — **accepted** (`RH_M1_2_Effective_Density.md`); concrete density constants **recorded** (`RH_Deep_Pursuit_2026-07-31.md`); only numerical \(\gamma_1\) arithmetic remains.
 
 ---
 
@@ -148,6 +163,6 @@ The solid directions are now: **resonance off the line**, **effective density co
 
 ## One-liner
 
-**With on-line strong Omega accepted, solid pure-Cat-A work is off-line resonance, numerical density constants for M1.2, Gonek-style off-line finite products, and path continuation from on-line Omega — none yet closes O-TL or RH.**
+**With on-line strong Omega accepted and Direction 2 constants recorded (deep pursuit 2026-07-31), solid pure-Cat-A work is off-line resonance (open lemma), numerical \(\gamma_1\) for M1.2, Gonek-style argument form (open lemma), and path continuation \(\Phi\) (open lemma) — none yet closes O-TL or RH.**
 
 *Per aspera ad astra.*

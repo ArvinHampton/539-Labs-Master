@@ -6,9 +6,9 @@
 **Does:** insert a classical zero-density bound into the GHK / regularised-remainder majorant tree and state a **fully effective conditional** form of M1.2 on a concrete height range.
 
 **Accepted programme status (2026-07-31).**  
-The architecture (dyadic annuli + classical \(N(\sigma,T)\le C\,T^{A(1-\sigma)^{3/2}}(\log T)^B\) → effective supremum on \(\operatorname{Im} R_{\mathrm{reg}}\) along an M1.3 path) is **admissible**. It becomes **fully numerical** once published constants \((A,B,C)\) are inserted. That insertion remains open.
+The architecture (dyadic annuli + classical \(N(\sigma,T)\le C\,T^{A(1-\sigma)^{3/2}}(\log T)^B\) → effective supremum on \(\operatorname{Im} R_{\mathrm{reg}}\) along an M1.3 path) is **admissible**. **Concrete published constants are now recorded** in `RH_Deep_Pursuit_2026-07-31.md` §Direction 2 (Chourasiya–Simonič arXiv:2507.15184 and alternatives). The remaining step is finite arithmetic for a specific numerical threshold \(\gamma_1\) under one fixed triple and fixed \((c_r,A_X,\varepsilon_0)\).
 
-**Companions:** `RH_M1_2_Explicit_Hybrid_Constants.md`, `RH_M1_2_Optimized_ci_Bounds.md`, `RH_M1_2_Remainder_Bound_Strategy.md`, `RH_Existing_Theorems_Solid_Directions.md`.
+**Companions:** `RH_M1_2_Explicit_Hybrid_Constants.md`, `RH_M1_2_Optimized_ci_Bounds.md`, `RH_M1_2_Remainder_Bound_Strategy.md`, `RH_Existing_Theorems_Solid_Directions.md`, `RH_Deep_Pursuit_2026-07-31.md`.
 
 ---
 
@@ -215,17 +215,36 @@ Combine (M12-R), (M12-sum), and the GHK bound \(\lvert\mathcal{E}\rvert\le\varep
 
 ---
 
+
+---
+
+## 4b. Concrete density constants (deep pursuit 2026-07-31)
+
+Source freeze: **`RH_Deep_Pursuit_2026-07-31.md`** Direction 2.
+
+**Primary working plug-in (Chourasiya–Simonič, arXiv:2507.15184),** \(T\ge H_{\mathrm{RH}}=3\cdot 10^{12}\):
+
+- \(\sigma\in[0.500,0.625]\): \(N(\sigma,T)\le 8.604\,T^{3(1-\sigma)/(2-\sigma)}\log^3 T + 9.461\log^2 T + 167.8\log T\).
+- \(\sigma\in[0.625,0.875]\): leading coefficient \(22.44\) with secondary \(8.290,147.0\).
+
+**Alternatives:** Ramaré / Kadiri–Lumley–Ng (exponent \(\frac83(1-\sigma)\)); Bellotti-type near \(\sigma=1\).
+
+**Insertion:** fix one triple → dyadic annuli about \(\gamma\ge 3\cdot 10^{12}\) → majorize \(\#\mathcal{A}_j\) → sum \(U\)-contributions as in Lemmas M12-Ubound / M12-Far / M12-Count → numerical upper bound on far-zero \(\operatorname{Im} R_{\mathrm{reg}}\).
+
+**Status:** constants **available**; specific decimal \(\gamma_1\) **not yet computed**. Does **not** cover heights below \(3\cdot 10^{12}\) without additional density bounds on lower ranges. Does **not** produce phase or close O-TL.
+
 ## 5. Relation to the open obligation O-M1.2
 
 | Layer | Status |
 |-------|--------|
 | Symbolic majorants \(c_1,c_2\) | Done (programme) |
 | Density \(\to\) far-zero sum majorant | **Done** (this note, under HD-I) |
-| Fully numerical \((A,B,C)\) plugged into \(\gamma_1\) | **Open as arithmetic** — insert a published explicit density theorem’s constants |
+| Fully numerical density constants recorded | **Done** — Chourasiya–Simonič (and alternatives) in `RH_Deep_Pursuit_2026-07-31.md` |
+| Specific decimal \(\gamma_1\) for one fixed triple | **Open as arithmetic** — finite computation |
 | Remainder domination \(\Rightarrow\) \(\lvert\theta_X\rvert\gg\log\log X\) at maximal abscissa | **Open** (needs O-PC strong off-line / O-M1.3bis / O-TL) |
 
 **O-M1.2 status update:**  
-The **architecture** of a fully effective conditional M1.2 is complete. Closing the obligation as a numerical theorem requires only citation of a specific explicit density estimate with concrete \(A,B,C\) and a finite check of \(\gamma_1\). The **analytic** content (how density controls \(\operatorname{Im} R_{\mathrm{reg}}\)) is recorded here.
+The **architecture** of a fully effective conditional M1.2 is complete. **Concrete density constants are recorded** (deep pursuit 2026-07-31). Closing the obligation as a fully numerical theorem requires only a finite check of \(\gamma_1\) under one fixed triple. The **analytic** content (how density controls \(\operatorname{Im} R_{\mathrm{reg}}\)) is recorded here.
 
 ---
 
@@ -234,12 +253,12 @@ The **architecture** of a fully effective conditional M1.2 is complete. Closing 
 - Prove RH or zero-free regions stronger than (HD-I).  
 - Prove O-TL.  
 - Replace the need for strong Omega / path accumulation at special points.  
-- Claim a specific decimal for \(\gamma_1\) without fixing a published \((A,B,C)\).
+- Claim a specific decimal for \(\gamma_1\) without completing the finite arithmetic under a fixed published triple (constants themselves are now recorded).
 
 ---
 
 ## 7. One-liner
 
-**Under a classical Ingham–Huxley zero-density hypothesis with tracked constants, the far-zero contribution to the GHK regularised remainder on the M1.3 path is an effective \(O((\log\gamma)^2/\log X)+O(\gamma^{\alpha}(\log\gamma)^{B}/(r\log X))\), giving a fully structured conditional M1.2; plugging explicit numerical density constants is the remaining arithmetic step, not a new analytic idea.**
+**Under a classical Ingham–Huxley zero-density hypothesis with tracked constants, the far-zero contribution to the GHK regularised remainder on the M1.3 path is an effective \(O((\log\gamma)^2/\log X)+O(\gamma^{\alpha}(\log\gamma)^{B}/(r\log X))\), giving a fully structured conditional M1.2; concrete density constants are now recorded (Chourasiya–Simonič et al.); computing a specific numerical \(\gamma_1\) is the remaining arithmetic step, not a new analytic idea.**
 
 *Per aspera ad astra.*

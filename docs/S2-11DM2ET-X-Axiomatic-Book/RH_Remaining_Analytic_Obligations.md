@@ -7,7 +7,7 @@
 
 These five obligations are the **open analytic core** of the phase programme. Infrastructure (L1–M1.4 notes, GHK, \(c_i\), HD-low diagnostics, ZLA, L4) does **not** discharge them. Their status is **unchanged**: open.
 
-**Companions:** `RH_L1_Phase_Functional_CatA.md`, `RH_M1_2_Remainder_Bound_Strategy.md`, `RH_M1_3_Path_Design.md`, `RH_M1_3_HD_Low_Path_Report.md`, `RH_Target_Lemma_Sketch_Literature_L5.md`.
+**Companions:** `RH_L1_Phase_Functional_CatA.md`, `RH_M1_2_Remainder_Bound_Strategy.md`, `RH_M1_3_Path_Design.md`, `RH_M1_3_HD_Low_Path_Report.md`, `RH_Target_Lemma_Sketch_Literature_L5.md`, `RH_Deep_Pursuit_2026-07-31.md`.
 
 ---
 
@@ -15,7 +15,7 @@ These five obligations are the **open analytic core** of the phase programme. In
 
 | ID | Obligation | Status |
 |----|------------|--------|
-| **O-M1.2** | Uniform M1.2 under classical zero-density alone | **Architecture accepted** (`RH_M1_2_Effective_Density.md`); numerical \((A,B,C)\) **open** |
+| **O-M1.2** | Uniform M1.2 under classical zero-density alone | **Architecture accepted** (`RH_M1_2_Effective_Density.md`); **concrete density constants recorded** (`RH_Deep_Pursuit_2026-07-31.md`); numerical \(\gamma_1\) **open** |
 | **O-M1.3bis** | Path design that accumulates argument to size \(\gg\log\log X\) | **Open** |
 | **O-PC** | Phase / discrepancy | **On-line strong Omega accepted** (model \(\operatorname{Im} D_X\) + hybrid discrepancy; fixed \(X\); continuous-arg caveat) — `RH_Resonance_Discrepancy_Attack.md`; **O-TL locations open** |
 | **O-Moll** | Construction of a genuinely phase-oriented mollifier | **Open** |
@@ -47,7 +47,7 @@ and **not** RH-strength zero-free regions or finite Odlyzko tables as the sole s
 - Admissible \(c_1\le 291\), \(c_2\le 8\) for \(f_\star\).  
 - HD-low **diagnostics** and finite-height empirical \(\lvert\mathcal{E}\rvert\), \(\lvert R_{\mathrm{reg}}\rvert\).
 
-**What is missing:** a **uniform** proof that distant-zero / archimedean / tail contributions stay below the local main term for all large \(\lvert\gamma\rvert\).
+**What is missing:** a **uniform** proof that distant-zero / archimedean / tail contributions stay below the local main term for all large \(\lvert\gamma\rvert\). Architecture + concrete density constants are recorded; a specific numerical \(\gamma_1\) under one fixed published triple remains open as finite arithmetic (does not close O-TL).
 
 ---
 
@@ -169,12 +169,13 @@ See `RH_Existing_Theorems_Solid_Directions.md` §6.
 
 | Rank | Direction | Status |
 |------|-----------|--------|
-| **1** | Resonance **off the line** | **Open** |
-| **2** | **Effective density constants** for conditional M1.2 | Architecture accepted; \((A,B,C)\) **open** |
-| **3** | Finite-product approximation **off the line** | **Open** |
-| **4** | **Path continuation** from known on-line Omega | **Open** |
+| **1** | Resonance **off the line** | **Open** — precise lemma in `RH_Deep_Pursuit_2026-07-31.md` |
+| **2** | **Effective density constants** for conditional M1.2 | Architecture accepted; **constants recorded**; \(\gamma_1\) arithmetic **open** |
+| **3** | Finite-product approximation **off the line** | **Open** — argument lemma in deep-pursuit note |
+| **4** | **Path continuation** from known on-line Omega | **Open** — differential \(\Phi\) in deep-pursuit note |
 
 On-line strong Omega (fixed \(X\)) is **accepted**, not re-listed.  
+Deep pursuit freeze: `RH_Deep_Pursuit_2026-07-31.md`.  
 **O-TL remains open** (primary). RH remains open.
 
 ## Explicit non-claims

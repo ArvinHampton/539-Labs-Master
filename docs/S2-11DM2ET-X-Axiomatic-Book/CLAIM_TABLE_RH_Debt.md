@@ -28,7 +28,7 @@
 | M1.4 \(A_X\) definition + R3 probe | **A** / diagnostic | **Defined + executed** |
 | L4 non-circular checklist | **A** | **Written** |
 | Target lemma / RH | — | **Open** |
-| O-M1.2 under classical density (architecture) | **A** | **Written** (`RH_M1_2_Effective_Density.md`); numerical density constants open |
+| O-M1.2 under classical density (architecture) | **A** | **Written** (`RH_M1_2_Effective_Density.md`); **concrete density constants recorded** (`RH_Deep_Pursuit_2026-07-31.md` Dir 2); numerical \(\gamma_1\) arithmetic still open |
 | O-M1.3bis path \(\gg\log\log X\) at special points | **S** | **Open** |
 | O-PC typical Omega \(\gg\sqrt{\log\log X}\) on the line | **A** | **Proved** (`RH_OPC_Omega_Discrepancy.md`) |
 | O-PC strong on-line Omega (model \(\operatorname{Im} D_X\) + hybrid disc.; fixed \(X\)) | **A** | **Accepted** (`RH_Resonance_Discrepancy_Attack.md`); continuous-arg caveat frozen |
@@ -36,7 +36,11 @@
 | O-TL target lemma | **S** | **Open — primary not closed** |
 | O-Moll phase-oriented mollifier | **S** | **Open** |
 | Solid directions (current): off-line resonance; density constants; off-line finite products; path continuation | programme | **Frozen** (`RH_Existing_Theorems_Solid_Directions.md` §6) |
+| Deep pursuit (2026-07-31): Dir 2 constants + open lemmas Dirs 1/3/4 | programme | **Frozen** (`RH_Deep_Pursuit_2026-07-31.md`); O-TL/RH still **open** |
+| Open lemma: off-line resonance | **S** | **Stated** (`RH_Deep_Pursuit_2026-07-31.md` Dir 1) |
+| Open lemma: Gonek argument form | **S** | **Stated** (`RH_Deep_Pursuit_2026-07-31.md` Dir 3) |
+| Open lemma: path-continuation \(\Phi\) | **S** | **Stated** (`RH_Deep_Pursuit_2026-07-31.md` Dir 4) |
 | Model debit / \(E_{\mathrm{leak}}\) / \(\mu\) / 539.9 as zeta theorem | **O** in theorem env | Motivation only |
 | Resonant Algebra \(\Rightarrow\) RH | **O** | Unrelated |
 
-Primary: `RH_L1_Phase_Functional_CatA.md` · Obligations: `RH_Remaining_Analytic_Obligations.md` · ZLA: `RH_Zeta_Language_Admissibility.md`
+Primary: `RH_L1_Phase_Functional_CatA.md` · Obligations: `RH_Remaining_Analytic_Obligations.md` · ZLA: `RH_Zeta_Language_Admissibility.md` · Deep pursuit: `RH_Deep_Pursuit_2026-07-31.md`
