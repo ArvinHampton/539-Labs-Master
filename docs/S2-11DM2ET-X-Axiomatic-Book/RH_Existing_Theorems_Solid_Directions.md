@@ -145,7 +145,7 @@ The strongest existing technology for the open obligations lies in:
 - and the almost-all consequences of pair correlation.
 
 **The primary obligation O-TL remains open.**  
-**Solid directions (updated):** (1) Mass-with-A under (RM) — polylog/average \(A\) on \(K_\star\); (2) StripDens; (3) resonance off the line; (4) effective density constants; (5) finite-product approx off the line (prime side); (6) path continuation from on-line Ω.
+**Solid directions (updated):** (1) effective density at moderate \(\sigma\); (2) Iso_H technology; (3) path continuation from on-line Ω; (4) resonance off the line; (5) Mass-with-A under (RM).
 
 **RH remains open.**
 
@@ -153,6 +153,6 @@ The strongest existing technology for the open obligations lies in:
 
 ## One-liner
 
-**Solid pure-Cat-A directions are Mass-with-A, StripDens, off-line resonance, density constants, finite products off the line, and path continuation from on-line Ω — none yet closes O-TL or RH.**
+**Density counts bulk zeros; isolation arranges them — solid work is effective density at moderate \(\sigma\), Iso_H technology, path from on-line Ω, off-line resonance, and Mass-with-A; Maynard–Pratt and Levinson isolation are not Iso_H; O-TL and RH remain open.**
 
 *Per aspera ad astra.*
