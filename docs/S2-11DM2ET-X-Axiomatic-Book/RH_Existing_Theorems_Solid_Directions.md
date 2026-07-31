@@ -105,20 +105,19 @@ The remaining solid directions are those that move **off the line**, make M1.2 *
 
 | Rank | Direction | Obligation | Status |
 |------|-----------|------------|--------|
-| **1** | **Mass-with-A under (RM)** — polylog / average \(A\) on \(K_\star\) | unconditional B_θ without full Iso_H | **Open** — preferred |
-| **2** | **StripDens** | weakens Lip \(A\) | **Open** |
-| **3** | **Resonance off the line** | O-PC / O-TL | **Open** |
-| **4** | **Effective density constants** \((A,B,C)\) | O-M1.2 | Architecture accepted |
-| **5** | **Finite-product approximation off the line** (role: prime side) | residual shape; not Lip \(A\) | Role **recorded** |
-| **6** | **Path continuation from on-line Ω** | O-M1.3bis / O-TL | **Open** |
+| **1** | **Effective density at moderate \(\sigma\)** | polylog \(M\) near \(\beta_\star\); M1.2 | **Open** |
+| **2** | **(Iso_H) technology** | \(A=O(1)\) path to B_θ | **Open** |
+| **3** | **Path continuation from on-line Ω** | O-M1.3bis / O-TL | **Open** |
+| **4** | **Resonance off the line** | O-PC / O-TL | **Open** |
+| **5** | **Mass-with-A under (RM)** | unconditional B_θ without full Iso_H | **Open** (⇒B_θ proved) |
 
-**Recorded:** GHK/Gonek (prime side); Ivić; Criteria A–D. Secondary: full unconditional **(Iso_H)**.
+**Density vs isolation:** `RH_Density_vs_Isolation.md`. Maynard–Pratt half-isolation / Hypothesis F ⇒ better density (**converse** of Iso_H). Levinson–Ivić = horizontal isolation near \(\sigma=1\), **not** Iso_H.
 
 ### ND1 bridge (locked)
 
-**(RM)+(Iso_H) ⇒ B_θ** proved. Barrier: unconditional **(Iso_H)** or **Mass-with-A**.
+**(RM)+(Iso_H) ⇒ B_θ** proved. Barrier: unconditional **(Iso_H)** or density-type polylog \(A\) / Mass-with-A.
 
-**None of 1–4 is known to succeed.** All stay inside **ZLA**.
+**None of 1–5 is known to succeed.** All stay inside **ZLA**.
 
 ### Already executed (not re-listed as open solid work)
 
