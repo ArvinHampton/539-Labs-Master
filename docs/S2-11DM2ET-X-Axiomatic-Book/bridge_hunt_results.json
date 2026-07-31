@@ -1,0 +1,603 @@
+{
+  "top": [
+    {
+      "name": "F4x: flux^-4 * (243/539 tower/packaging)",
+      "G_pred": 7.53980703518475e-11,
+      "ratio": 1.1296775744549616,
+      "abs_log10": 0.05295450754001958,
+      "rel_err": 0.12967757445496164,
+      "reason": "Flux4 democracy times single locked rational (243/539 tower/packaging).",
+      "family": "flux4_refined",
+      "unique_claim": false
+    },
+    {
+      "name": "F4x: flux^-4 * (Gamma_beta*G4 rate per tick)",
+      "G_pred": 5.536698483427588e-11,
+      "ratio": 0.8295549321168645,
+      "abs_log10": 0.08115485023596195,
+      "rel_err": 0.17044506788313551,
+      "reason": "Flux4 democracy times single locked rational (Gamma_beta*G4 rate per tick).",
+      "family": "flux4_refined",
+      "unique_claim": false
+    },
+    {
+      "name": "F4x: flux^-4 * (521/539 body)",
+      "G_pred": 3.516647043281946e-11,
+      "ratio": 0.5268937631335041,
+      "abs_log10": 0.27827694216119275,
+      "rel_err": 0.4731062368664959,
+      "reason": "Flux4 democracy times single locked rational (521/539 body).",
+      "family": "flux4_refined",
+      "unique_claim": false
+    },
+    {
+      "name": "F4: \u03c9^2/(4pi \u03c1_nuc / N_flux^4)",
+      "G_pred": 3.399207995454349e-11,
+      "ratio": 0.509298053047413,
+      "abs_log10": 0.293027984048407,
+      "rel_err": 0.49070194695258695,
+      "reason": "4D Poisson + flux democracy: dilution N_flux^{-4} with exponent = spacetime dim 4.",
+      "family": "flux4_democracy",
+      "unique_claim": true
+    },
+    {
+      "name": "F4x: flux^-4 * (plain)",
+      "G_pred": 3.399207995454349e-11,
+      "ratio": 0.509298053047413,
+      "abs_log10": 0.293027984048407,
+      "rel_err": 0.49070194695258695,
+      "reason": "Flux4 democracy times single locked rational (plain).",
+      "family": "flux4_refined",
+      "unique_claim": true
+    },
+    {
+      "name": "F4x: flux^-4 * (1/(Gamma_beta*G4))",
+      "G_pred": 2.086914256022064e-11,
+      "ratio": 0.31267912080998217,
+      "abs_log10": 0.5049011178608519,
+      "rel_err": 0.6873208791900178,
+      "reason": "Flux4 democracy times single locked rational (1/(Gamma_beta*G4)).",
+      "family": "flux4_refined",
+      "unique_claim": false
+    },
+    {
+      "name": "F4: \u03c9^2/(8pi \u03c1_nuc / N_flux^4)",
+      "G_pred": 1.6996039977271744e-11,
+      "ratio": 0.2546490265237065,
+      "abs_log10": 0.5940579797123882,
+      "rel_err": 0.7453509734762935,
+      "reason": "4D Poisson + flux democracy: dilution N_flux^{-4} with exponent = spacetime dim 4.",
+      "family": "flux4_democracy",
+      "unique_claim": false
+    },
+    {
+      "name": "HYB: [\u03bb_p^3/(m_p G4^2)] * flux^4",
+      "G_pred": 1.0820015101481053e-11,
+      "ratio": 0.16211460529914828,
+      "abs_log10": 0.7901778567425407,
+      "rel_err": 0.8378853947008518,
+      "reason": "Dimensional (\u03bb_p,m_p,G4) times integer power of locked flux.",
+      "family": "hybrid_dim_power",
+      "unique_claim": false
+    },
+    {
+      "name": "HYB: [\u03bb_p^3/(m_p G4^2)] * tow^6",
+      "G_pred": 3.9281333314679115e-12,
+      "ratio": 0.058854611441917684,
+      "abs_log10": 1.23021950316351,
+      "rel_err": 0.9411453885580823,
+      "reason": "Dimensional (\u03bb_p,m_p,G4) times integer power of locked tow.",
+      "family": "hybrid_dim_power",
+      "unique_claim": false
+    },
+    {
+      "name": "HYB: [\u03bb_p^3/(m_p G4^2)] * punct^8",
+      "G_pred": 3.657524626775037e-12,
+      "ratio": 0.054800123260492294,
+      "abs_log10": 1.2612184646672469,
+      "rel_err": 0.9451998767395077,
+      "reason": "Dimensional (\u03bb_p,m_p,G4) times integer power of locked punct.",
+      "family": "hybrid_dim_power",
+      "unique_claim": false
+    },
+    {
+      "name": "HYB: [\u03bb_p^3/(m_p G4^2)] * sigma^5",
+      "G_pred": 8.679453980907908e-13,
+      "ratio": 0.013004291058100338,
+      "abs_log10": 1.8859133188196897,
+      "rel_err": 0.9869957089418997,
+      "reason": "Dimensional (\u03bb_p,m_p,G4) times integer power of locked sigma.",
+      "family": "hybrid_dim_power",
+      "unique_claim": false
+    },
+    {
+      "name": "SPLIT: 1/(flux^2 sigma^2)",
+      "G_pred": 4.1468242157996546e-13,
+      "ratio": 0.006213122298667508,
+      "abs_log10": 2.206690097680351,
+      "rel_err": 0.9937868777013324,
+      "reason": "2 flux democratic \u00d7 2 packaging \u2014 less natural than pure flux^4.",
+      "family": "split",
+      "unique_claim": false
+    },
+    {
+      "name": "HYB: [\u03bb_p^3/(m_p G4^2)] * punct^7",
+      "G_pred": 5.995942011106618e-14,
+      "ratio": 0.0008983626764015131,
+      "abs_log10": 3.046548299678014,
+      "rel_err": 0.9991016373235985,
+      "reason": "Dimensional (\u03bb_p,m_p,G4) times integer power of locked punct.",
+      "family": "hybrid_dim_power",
+      "unique_claim": false
+    },
+    {
+      "name": "HYB: [\u03bb_p^3/(m_p G4^2)] * tow^5",
+      "G_pred": 1.61651577426663e-14,
+      "ratio": 0.00024220004708608094,
+      "abs_log10": 3.6158257767618225,
+      "rel_err": 0.9997577999529139,
+      "reason": "Dimensional (\u03bb_p,m_p,G4) times integer power of locked tow.",
+      "family": "hybrid_dim_power",
+      "unique_claim": false
+    },
+    {
+      "name": "CTRL: N_flux^-3 (space)",
+      "G_pred": 6.965590154619567e-15,
+      "ratio": 0.0001043643551326666,
+      "abs_log10": 3.9814478060511176,
+      "rel_err": 0.9998956356448674,
+      "reason": "Control: exponent 3 \u2260 4. Not the spacetime-democratic bridge.",
+      "family": "control_exponent",
+      "unique_claim": false
+    },
+    {
+      "name": "SIG4: N_sigma^-4",
+      "G_pred": 5.058869919033574e-15,
+      "ratio": 7.579626206543869e-05,
+      "abs_log10": 4.120352211312294,
+      "rel_err": 0.9999242037379346,
+      "reason": "Same 4D democracy but packaging 539 as base count (alt. skeleton).",
+      "family": "sigma4",
+      "unique_claim": true
+    },
+    {
+      "name": "HYB: [\u03bb_p^3/(m_p G4^2)] * flux^3",
+      "G_pred": 2.217216209319888e-15,
+      "ratio": 3.322020600392383e-05,
+      "abs_log10": 4.478597678745251,
+      "rel_err": 0.9999667797939961,
+      "reason": "Dimensional (\u03bb_p,m_p,G4) times integer power of locked flux.",
+      "family": "hybrid_dim_power",
+      "unique_claim": false
+    },
+    {
+      "name": "HYB: [\u03bb_p^3/(m_p G4^2)] * sigma^4",
+      "G_pred": 1.6102883081461795e-15,
+      "ratio": 2.4126699551206563e-05,
+      "abs_log10": 4.6175020840064285,
+      "rel_err": 0.9999758733004488,
+      "reason": "Dimensional (\u03bb_p,m_p,G4) times integer power of locked sigma.",
+      "family": "hybrid_dim_power",
+      "unique_claim": false
+    },
+    {
+      "name": "HYB: [\u03bb_p^3/(m_p G4^2)] * punct^6",
+      "G_pred": 9.82941313296167e-16,
+      "ratio": 1.472725699018874e-05,
+      "abs_log10": 4.831878134688781,
+      "rel_err": 0.9999852727430099,
+      "reason": "Dimensional (\u03bb_p,m_p,G4) times integer power of locked punct.",
+      "family": "hybrid_dim_power",
+      "unique_claim": false
+    },
+    {
+      "name": "HYB: [\u03bb_p^3/(m_p G4^2)] * tow^4",
+      "G_pred": 6.652328289163087e-17,
+      "ratio": 9.967080126999217e-07,
+      "abs_log10": 6.001432050360134,
+      "rel_err": 0.9999990032919873,
+      "reason": "Dimensional (\u03bb_p,m_p,G4) times integer power of locked tow.",
+      "family": "hybrid_dim_power",
+      "unique_claim": false
+    },
+    {
+      "name": "HYB: [\u03bb_p^3/(m_p G4^2)] * punct^5",
+      "G_pred": 1.611379202124864e-17,
+      "ratio": 2.414304424621105e-07,
+      "abs_log10": 6.617207969699548,
+      "rel_err": 0.9999997585695576,
+      "reason": "Dimensional (\u03bb_p,m_p,G4) times integer power of locked punct.",
+      "family": "hybrid_dim_power",
+      "unique_claim": false
+    },
+    {
+      "name": "HYB: [\u03bb_p^3/(m_p G4^2)] * sigma^3",
+      "G_pred": 2.9875478815328006e-18,
+      "ratio": 4.476196577218286e-08,
+      "abs_log10": 7.349090849193167,
+      "rel_err": 0.9999999552380342,
+      "reason": "Dimensional (\u03bb_p,m_p,G4) times integer power of locked sigma.",
+      "family": "hybrid_dim_power",
+      "unique_claim": false
+    },
+    {
+      "name": "CTRL: N_flux^-2 (worldsheet)",
+      "G_pred": 1.4273750316843374e-18,
+      "ratio": 2.138613834685791e-08,
+      "abs_log10": 7.6698676280538285,
+      "rel_err": 0.9999999786138617,
+      "reason": "Control: exponent 2 \u2260 4. Not the spacetime-democratic bridge.",
+      "family": "control_exponent",
+      "unique_claim": false
+    },
+    {
+      "name": "HYB: [\u03bb_p^3/(m_p G4^2)] * flux^2",
+      "G_pred": 4.5434758387702625e-19,
+      "ratio": 6.807419263099146e-09,
+      "abs_log10": 8.167017500747962,
+      "rel_err": 0.9999999931925807,
+      "reason": "Dimensional (\u03bb_p,m_p,G4) times integer power of locked flux.",
+      "family": "hybrid_dim_power",
+      "unique_claim": false
+    },
+    {
+      "name": "HYB: [\u03bb_p^3/(m_p G4^2)] * tow^3",
+      "G_pred": 2.7375836580918053e-19,
+      "ratio": 4.101679064608731e-09,
+      "abs_log10": 8.387038323958446,
+      "rel_err": 0.9999999958983209,
+      "reason": "Dimensional (\u03bb_p,m_p,G4) times integer power of locked tow.",
+      "family": "hybrid_dim_power",
+      "unique_claim": false
+    },
+    {
+      "name": "HYB: [\u03bb_p^3/(m_p G4^2)] * punct^4",
+      "G_pred": 2.6416052493850226e-19,
+      "ratio": 3.957876105936237e-09,
+      "abs_log10": 8.402537804710315,
+      "rel_err": 0.9999999960421239,
+      "reason": "Dimensional (\u03bb_p,m_p,G4) times integer power of locked punct.",
+      "family": "hybrid_dim_power",
+      "unique_claim": false
+    },
+    {
+      "name": "HYB: [\u03bb_p^3/(m_p G4^2)] * sigma^2",
+      "G_pred": 5.542760448112803e-21,
+      "ratio": 8.304631868679566e-11,
+      "abs_log10": 10.080679614379905,
+      "rel_err": 0.9999999999169537,
+      "reason": "Dimensional (\u03bb_p,m_p,G4) times integer power of locked sigma.",
+      "family": "hybrid_dim_power",
+      "unique_claim": false
+    },
+    {
+      "name": "HYB: [\u03bb_p^3/(m_p G4^2)] * punct^3",
+      "G_pred": 4.330500408827906e-21,
+      "ratio": 6.488321485141373e-11,
+      "abs_log10": 10.187867639721082,
+      "rel_err": 0.9999999999351168,
+      "reason": "Dimensional (\u03bb_p,m_p,G4) times integer power of locked punct.",
+      "family": "hybrid_dim_power",
+      "unique_claim": false
+    },
+    {
+      "name": "HYB: [\u03bb_p^3/(m_p G4^2)] * tow^2",
+      "G_pred": 1.126577637074817e-21,
+      "ratio": 1.6879337714439222e-11,
+      "abs_log10": 10.77264459755676,
+      "rel_err": 0.9999999999831206,
+      "reason": "Dimensional (\u03bb_p,m_p,G4) times integer power of locked tow.",
+      "family": "hybrid_dim_power",
+      "unique_claim": false
+    },
+    {
+      "name": "HYB: [\u03bb_p^3/(m_p G4^2)] * punct^2",
+      "G_pred": 7.099180998078534e-23,
+      "ratio": 1.0636592598592414e-12,
+      "abs_log10": 11.97319747473185,
+      "rel_err": 0.9999999999989363,
+      "reason": "Dimensional (\u03bb_p,m_p,G4) times integer power of locked punct.",
+      "family": "hybrid_dim_power",
+      "unique_claim": false
+    },
+    {
+      "name": "DIM1: \u03c9^2/(\u03ba \u03c1_nuc) \u03ba=1",
+      "G_pred": 7.531965388096301e-25,
+      "ratio": 1.128502672654256e-14,
+      "abs_log10": 13.947497408037153,
+      "rel_err": 0.9999999999999887,
+      "reason": "Newtonian Poisson \u03c9^2=\u03ba G \u03c1 with full nuclear density (no dilution).",
+      "family": "4D_poisson_undiluted",
+      "unique_claim": false
+    },
+    {
+      "name": "DIM1: \u03c9^2/(\u03ba \u03c1_nuc) \u03ba=4pi",
+      "G_pred": 5.99374761356296e-26,
+      "ratio": 8.980338932266995e-16,
+      "abs_log10": 15.04670727205925,
+      "rel_err": 0.9999999999999991,
+      "reason": "Newtonian Poisson \u03c9^2=\u03ba G \u03c1 with full nuclear density (no dilution).",
+      "family": "4D_poisson_undiluted",
+      "unique_claim": true
+    },
+    {
+      "name": "DIM1: \u03c9^2/(\u03ba \u03c1_nuc) \u03ba=8pi",
+      "G_pred": 2.99687380678148e-26,
+      "ratio": 4.490169466133497e-16,
+      "abs_log10": 15.34773726772323,
+      "rel_err": 0.9999999999999996,
+      "reason": "Newtonian Poisson \u03c9^2=\u03ba G \u03c1 with full nuclear density (no dilution).",
+      "family": "4D_poisson_undiluted",
+      "unique_claim": false
+    },
+    {
+      "name": "DIM0: \u03bb_p^3/(m_p G4^2)",
+      "G_pred": 1.9078691206875933e-26,
+      "ratio": 2.858530663421772e-16,
+      "abs_log10": 15.543857144753384,
+      "rel_err": 0.9999999999999997,
+      "reason": "Only combination of (\u03bb_p,m_p,G4) with units of G. Unique dimensional monomial.",
+      "family": "dimensional",
+      "unique_claim": true
+    },
+    {
+      "name": "HYB: [\u03bb_p^3/(m_p G4^2)] / sigma^1",
+      "G_pred": 3.5396458639844034e-29,
+      "ratio": 5.303396407090487e-19,
+      "abs_log10": 18.27544590994012,
+      "rel_err": 1.0,
+      "reason": "Dimensional base over sigma^1.",
+      "family": "hybrid_dim_power",
+      "unique_claim": false
+    },
+    {
+      "name": "HYB: [\u03bb_p^3/(m_p G4^2)] / flux^1",
+      "G_pred": 3.909567870261462e-30,
+      "ratio": 5.857644802093796e-20,
+      "abs_log10": 19.232276966756093,
+      "rel_err": 1.0,
+      "reason": "Dimensional base over flux^1.",
+      "family": "hybrid_dim_power",
+      "unique_claim": false
+    },
+    {
+      "name": "HYB: [\u03bb_p^3/(m_p G4^2)] / sigma^2",
+      "G_pred": 6.56706097214175e-32,
+      "ratio": 9.839325430594595e-22,
+      "abs_log10": 21.00703467512686,
+      "rel_err": 1.0,
+      "reason": "Dimensional base over sigma^2.",
+      "family": "hybrid_dim_power",
+      "unique_claim": false
+    },
+    {
+      "name": "HYB: [\u03bb_p^3/(m_p G4^2)] / flux^2",
+      "G_pred": 8.011409570207913e-34,
+      "ratio": 1.2003370496093844e-23,
+      "abs_log10": 22.920696788758804,
+      "rel_err": 1.0,
+      "reason": "Dimensional base over flux^2.",
+      "family": "hybrid_dim_power",
+      "unique_claim": false
+    },
+    {
+      "name": "HYB: [\u03bb_p^3/(m_p G4^2)] / sigma^3",
+      "G_pred": 1.2183786590244433e-34,
+      "ratio": 1.825477816436845e-24,
+      "abs_log10": 23.7386234403136,
+      "rel_err": 1.0,
+      "reason": "Dimensional base over sigma^3.",
+      "family": "hybrid_dim_power",
+      "unique_claim": false
+    },
+    {
+      "name": "HYB: [\u03bb_p^3/(m_p G4^2)] / sigma^4",
+      "G_pred": 2.260442781121416e-37,
+      "ratio": 3.386786301367059e-27,
+      "abs_log10": 26.47021220550034,
+      "rel_err": 1.0,
+      "reason": "Dimensional base over sigma^4.",
+      "family": "hybrid_dim_power",
+      "unique_claim": false
+    }
+  ],
+  "primary_top": [
+    {
+      "name": "F4x: flux^-4 * (243/539 tower/packaging)",
+      "G_pred": 7.53980703518475e-11,
+      "ratio": 1.1296775744549616,
+      "abs_log10": 0.05295450754001958,
+      "rel_err": 0.12967757445496164,
+      "reason": "Flux4 democracy times single locked rational (243/539 tower/packaging).",
+      "family": "flux4_refined",
+      "unique_claim": false
+    },
+    {
+      "name": "F4x: flux^-4 * (Gamma_beta*G4 rate per tick)",
+      "G_pred": 5.536698483427588e-11,
+      "ratio": 0.8295549321168645,
+      "abs_log10": 0.08115485023596195,
+      "rel_err": 0.17044506788313551,
+      "reason": "Flux4 democracy times single locked rational (Gamma_beta*G4 rate per tick).",
+      "family": "flux4_refined",
+      "unique_claim": false
+    },
+    {
+      "name": "F4x: flux^-4 * (521/539 body)",
+      "G_pred": 3.516647043281946e-11,
+      "ratio": 0.5268937631335041,
+      "abs_log10": 0.27827694216119275,
+      "rel_err": 0.4731062368664959,
+      "reason": "Flux4 democracy times single locked rational (521/539 body).",
+      "family": "flux4_refined",
+      "unique_claim": false
+    },
+    {
+      "name": "F4: \u03c9^2/(4pi \u03c1_nuc / N_flux^4)",
+      "G_pred": 3.399207995454349e-11,
+      "ratio": 0.509298053047413,
+      "abs_log10": 0.293027984048407,
+      "rel_err": 0.49070194695258695,
+      "reason": "4D Poisson + flux democracy: dilution N_flux^{-4} with exponent = spacetime dim 4.",
+      "family": "flux4_democracy",
+      "unique_claim": true
+    },
+    {
+      "name": "F4x: flux^-4 * (plain)",
+      "G_pred": 3.399207995454349e-11,
+      "ratio": 0.509298053047413,
+      "abs_log10": 0.293027984048407,
+      "rel_err": 0.49070194695258695,
+      "reason": "Flux4 democracy times single locked rational (plain).",
+      "family": "flux4_refined",
+      "unique_claim": true
+    },
+    {
+      "name": "F4x: flux^-4 * (1/(Gamma_beta*G4))",
+      "G_pred": 2.086914256022064e-11,
+      "ratio": 0.31267912080998217,
+      "abs_log10": 0.5049011178608519,
+      "rel_err": 0.6873208791900178,
+      "reason": "Flux4 democracy times single locked rational (1/(Gamma_beta*G4)).",
+      "family": "flux4_refined",
+      "unique_claim": false
+    },
+    {
+      "name": "F4: \u03c9^2/(8pi \u03c1_nuc / N_flux^4)",
+      "G_pred": 1.6996039977271744e-11,
+      "ratio": 0.2546490265237065,
+      "abs_log10": 0.5940579797123882,
+      "rel_err": 0.7453509734762935,
+      "reason": "4D Poisson + flux democracy: dilution N_flux^{-4} with exponent = spacetime dim 4.",
+      "family": "flux4_democracy",
+      "unique_claim": false
+    },
+    {
+      "name": "SIG4: N_sigma^-4",
+      "G_pred": 5.058869919033574e-15,
+      "ratio": 7.579626206543869e-05,
+      "abs_log10": 4.120352211312294,
+      "rel_err": 0.9999242037379346,
+      "reason": "Same 4D democracy but packaging 539 as base count (alt. skeleton).",
+      "family": "sigma4",
+      "unique_claim": true
+    },
+    {
+      "name": "DIM1: \u03c9^2/(\u03ba \u03c1_nuc) \u03ba=1",
+      "G_pred": 7.531965388096301e-25,
+      "ratio": 1.128502672654256e-14,
+      "abs_log10": 13.947497408037153,
+      "rel_err": 0.9999999999999887,
+      "reason": "Newtonian Poisson \u03c9^2=\u03ba G \u03c1 with full nuclear density (no dilution).",
+      "family": "4D_poisson_undiluted",
+      "unique_claim": false
+    },
+    {
+      "name": "DIM1: \u03c9^2/(\u03ba \u03c1_nuc) \u03ba=4pi",
+      "G_pred": 5.99374761356296e-26,
+      "ratio": 8.980338932266995e-16,
+      "abs_log10": 15.04670727205925,
+      "rel_err": 0.9999999999999991,
+      "reason": "Newtonian Poisson \u03c9^2=\u03ba G \u03c1 with full nuclear density (no dilution).",
+      "family": "4D_poisson_undiluted",
+      "unique_claim": true
+    },
+    {
+      "name": "DIM1: \u03c9^2/(\u03ba \u03c1_nuc) \u03ba=8pi",
+      "G_pred": 2.99687380678148e-26,
+      "ratio": 4.490169466133497e-16,
+      "abs_log10": 15.34773726772323,
+      "rel_err": 0.9999999999999996,
+      "reason": "Newtonian Poisson \u03c9^2=\u03ba G \u03c1 with full nuclear density (no dilution).",
+      "family": "4D_poisson_undiluted",
+      "unique_claim": false
+    },
+    {
+      "name": "DIM0: \u03bb_p^3/(m_p G4^2)",
+      "G_pred": 1.9078691206875933e-26,
+      "ratio": 2.858530663421772e-16,
+      "abs_log10": 15.543857144753384,
+      "rel_err": 0.9999999999999997,
+      "reason": "Only combination of (\u03bb_p,m_p,G4) with units of G. Unique dimensional monomial.",
+      "family": "dimensional",
+      "unique_claim": true
+    },
+    {
+      "name": "F4x: flux^-4 * (118/539 nuclear/packaging)",
+      "G_pred": 1.5526890758897404e-10,
+      "ratio": 2.326369920275895,
+      "abs_log10": 0.3666787738322063,
+      "rel_err": 1.3263699202758952,
+      "reason": "Flux4 democracy times single locked rational (118/539 nuclear/packaging).",
+      "family": "flux4_refined",
+      "unique_claim": false
+    },
+    {
+      "name": "F4x: flux^-4 * (11/61 portal)",
+      "G_pred": 1.885015342933775e-10,
+      "ratio": 2.8242892032629268,
+      "abs_log10": 0.450909165804135,
+      "rel_err": 1.8242892032629268,
+      "reason": "Flux4 democracy times single locked rational (11/61 portal).",
+      "family": "flux4_refined",
+      "unique_claim": false
+    },
+    {
+      "name": "F4x: flux^-4 * (81/539 = 3^4/539)",
+      "G_pred": 2.2619421105554247e-10,
+      "ratio": 3.3890327233648847,
+      "abs_log10": 0.530075762259682,
+      "rel_err": 2.3890327233648847,
+      "reason": "Flux4 democracy times single locked rational (81/539 = 3^4/539).",
+      "family": "flux4_refined",
+      "unique_claim": false
+    },
+    {
+      "name": "F4x: flux^-4 * (18/539 window)",
+      "G_pred": 1.017873949749941e-09,
+      "ratio": 15.250647255141978,
+      "abs_log10": 1.1832882760350256,
+      "rel_err": 14.250647255141978,
+      "reason": "Flux4 democracy times single locked rational (18/539 window).",
+      "family": "flux4_refined",
+      "unique_claim": false
+    },
+    {
+      "name": "F4x: flux^-4 * (61/4880 puncture/flux)",
+      "G_pred": 2.719366396363479e-09,
+      "ratio": 40.74384424379305,
+      "abs_log10": 1.6100620029435366,
+      "rel_err": 39.74384424379305,
+      "reason": "Flux4 democracy times single locked rational (61/4880 puncture/flux).",
+      "family": "flux4_refined",
+      "unique_claim": false
+    },
+    {
+      "name": "F4x: flux^-4 * (3/539)",
+      "G_pred": 6.107243698499647e-09,
+      "ratio": 91.5038835308519,
+      "abs_log10": 1.9614395264186693,
+      "rel_err": 90.5038835308519,
+      "reason": "Flux4 democracy times single locked rational (3/539).",
+      "family": "flux4_refined",
+      "unique_claim": false
+    },
+    {
+      "name": "QP0: \u0127c/m_p^2",
+      "G_pred": 1.1300594563879386e+28,
+      "ratio": 1.6931505272282317e+38,
+      "abs_log10": 38.22869557018132,
+      "rel_err": 1.6931505272282317e+38,
+      "reason": "Unique quantum-particle monomial with units of G from (\u0127,c,m_p).",
+      "family": "quantum_particle",
+      "unique_claim": true
+    }
+  ],
+  "freeze_candidate": {
+    "formula": "G = \u03c0 N_flux^4 \u0127^3 / (G4^2 m_p^4 c^3)",
+    "G_pred": 3.399207995454349e-11,
+    "ratio": 0.509298053047413,
+    "rel_err": 0.49070194695258695,
+    "N_flux_req_exact": 5776.6601493231765
+  }
+}

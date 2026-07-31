@@ -1,0 +1,36 @@
+{
+  "bridge_id": "BRIDGE_G_FLUX4_DUAL_U_2026-07-31",
+  "status": "FROZEN_CANDIDATE_CATEGORY_B",
+  "formula_symbolic": "G = 2\u03c0 N_flux^4 \u210f^3 / (G_4^2 m_p^4 c^3)",
+  "formula_operational": "G = \u03c9^2 / (4\u03c0 \u03c1_eff), \u03c1_eff = (m_p/\u03bb_p^3) / (2 N_flux^4), \u03c9=2\u03c0/G_4, \u03bb_p=\u210f/(m_p c)",
+  "ingredients": {
+    "N_flux": 4880,
+    "G4_s": 539.9,
+    "m_p": 1.67262192369e-27,
+    "hbar": 1.054571817e-34,
+    "c": 299792458.0,
+    "no_ell_Pl": true,
+    "no_G_on_RHS": true
+  },
+  "geometry": [
+    "Jeans: \u03c9^2 = 4\u03c0 G \u03c1_eff (standard gravitational dynamical frequency)",
+    "4D flux democracy: \u03c1 diluted by N_flux^{-4}, exponent = spacetime dimension 4",
+    "\u00b1U equipartition: factor 1/2 from dual-universe structure (S\u00b2 / \u00b1U) \u2014 only one sector normalized against total nuclear scale"
+  ],
+  "G_pred": 6.798415990908697e-11,
+  "G_CODATA": 6.6743e-11,
+  "ratio": 1.018596106094826,
+  "rel_err": 0.018596106094826093,
+  "rel_err_percent": 1.8596106094826093,
+  "pure_without_dual_U_ratio": 0.509298053047413,
+  "controls_exponent_4_is_nearest": true,
+  "category": "B",
+  "residual_firewall": "intact \u2014 residual supplies N_flux only; continuum bridge carries dimensions",
+  "honesty": {
+    "not_1_percent": true,
+    "approx_2_percent": true,
+    "dual_U_factor_required": true,
+    "G4_still_empirical_input": true,
+    "m_p_still_external_particle_input": true
+  }
+}
