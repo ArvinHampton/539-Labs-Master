@@ -148,7 +148,7 @@ The strongest existing technology for the open obligations lies in:
 - and the almost-all consequences of pair correlation.
 
 **The primary obligation O-TL remains open.**  
-The solid directions are now: **resonance off the line**, **effective density constants**, **finite-product approximation off the line**, and **path continuation from the known on-line Omega**.
+**Solid directions (updated):** (1) Mass-with-A under (RM) only; (2) StripDens; (3) resonance off the line; (4) effective density constants.
 
 **RH remains open.**
 
@@ -156,6 +156,6 @@ The solid directions are now: **resonance off the line**, **effective density co
 
 ## One-liner
 
-**With on-line strong Omega accepted, solid pure-Cat-A work is off-line resonance, numerical density constants for M1.2, Gonek-style off-line finite products, and path continuation from on-line Omega — none yet closes O-TL or RH.**
+**Solid pure-Cat-A directions are Mass-with-A under (RM), StripDens, off-line resonance, and effective density constants — none yet closes O-TL or RH.**
 
 *Per aspera ad astra.*

@@ -68,20 +68,18 @@ Solid toolkit + ranked directions: **`RH_Existing_Theorems_Solid_Directions.md`*
 1. On-line Kronecker / model-\(\operatorname{Im} D_X\) + hybrid discrepancy Omega (fixed \(X\)); continuous-arg caveat.  
 2. Conditional M1.2 architecture (dyadic far zeros + classical density shape).
 
-### Solid directions (current — after finite-product / Ivić / Mass-A pass)
+### Solid directions (current)
 
 | Rank | Direction |
 |------|-----------|
-| **1** | **Polylog / average-polylog \(A\) on good locks \(K_\star\)** — open core of Mass-with-A (`RH_Finite_Product_Ivic_MassA.md`) |
-| **2** | **Mass-with-A under (RM)** (follows from 1 via Criterion A/D) |
-| **3** | **StripDens** from classical density tables |
-| **4** | Resonance off the line |
-| **5** | Effective density constants \((A,B,C)\) |
-| **6** | Path continuation from on-line Ω |
+| **1** | **Mass-with-A under (RM) only** (open core: polylog / avg-polylog \(A\) on \(K_\star\)) |
+| **2** | **StripDens** |
+| **3** | **Resonance off the line** |
+| **4** | **Effective density constants** |
 
-**Recorded this pass:** GHK/Gonek finite products (prime side; not Lip \(A\)); Ivić multiplicity (single-term size in \(A\); not ordinate count); Criteria A–D for Mass-with-A divergence.
+Full notes: `RH_Finite_Product_Ivic_MassA.md`, `RH_Iso_H_Classical_Constraints.md`, `RH_Existing_Theorems_Solid_Directions.md`.
 
-**ND1 locked.** **Still open:** polylog \(A\); Mass-with-A; Iso_H; unconditional B_θ / O-TL; RH.
+**ND1 locked.** **Still open:** Mass-with-A; Iso_H; unconditional B_θ / O-TL; RH.
 
 **Outside theorem env:** \(G_4\), \(\mu\), \(E_{\mathrm{leak}}\), 539.9 s.  
 **Literature:** `RH_Target_Lemma_Sketch_Literature_L5.md`; **Akatsuka–GHK:** `RH_Akatsuka_GHK_Survey.md`.  

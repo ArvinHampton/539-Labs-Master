@@ -212,7 +212,7 @@ Status `CAT_B_CONTINUUM_FILLINGS_OPEN_NOT_LOCKED`. Firewall: \(K^+\) homology �
 
 ## Riemann Hypothesis — **open, active pure Cat A path (not frozen)**
 
-Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. **Axiom ZLA frozen**. **ND1 locked.** Finite products / Ivić / Mass-with-A criteria recorded (`RH_Finite_Product_Ivic_MassA.md`): (RM)+Mass-with-A⇒B_θ and Criteria A–D **proved as implications**; open core = **polylog \(A\)** on good locks. **Preferred next:** upgrade L2 phase control → average/pointwise polylog \(A\). **Unconditional B_θ / O-TL / RH open.**
+Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. **Axiom ZLA frozen**. **ND1 locked.** **Solid directions:** (1) Mass-with-A under (RM) only; (2) StripDens; (3) resonance off the line; (4) effective density constants. Open core of (1): polylog \(A\) on \(K_\star\). **Unconditional B_θ / O-TL / RH open.**
 
 ## Shell restriction r_W
 

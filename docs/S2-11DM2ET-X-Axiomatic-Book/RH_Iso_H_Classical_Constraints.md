@@ -109,16 +109,14 @@ If **yes**, OP1 mass (and thus B_θ) would follow **without full (Iso_H)**.
 
 ---
 
-## 5. Solid next directions (updated after this pass)
+## 5. Solid next directions (updated)
 
 | Rank | Direction |
 |------|-----------|
-| **1** | **Mass-with-A under (RM) only** — preferred pure next step |
-| **2** | **StripDens** from classical density tables |
-| **3** | Resonance off the line |
-| **4** | Effective density constants |
-| **5** | Finite-product approximation off the line |
-| **6** | Path continuation from on-line Ω (independent of Iso_H) |
+| **1** | **Mass-with-A under (RM) only** |
+| **2** | **StripDens** |
+| **3** | **Resonance off the line** |
+| **4** | **Effective density constants** |
 
 **No claim** that (Iso_H) or B_θ is closed.
 

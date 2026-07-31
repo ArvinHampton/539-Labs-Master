@@ -74,10 +74,10 @@ Full note: **`RH_Iso_H_Classical_Constraints.md`**.
 
 ## Next (updated)
 
-1. **Mass-with-A under (RM) only** — preferred pure next step.  
-2. **StripDens** from classical density tables.  
-3. Resonance off the line; effective density constants; finite-product off the line; path continuation from on-line Ω (independent of Iso_H).  
-4. Technology for zeros on \(\operatorname{Re}=\beta_\star>1/2\) (full Iso_H) if Mass-with-A fails.
+1. **Mass-with-A under (RM) only**  
+2. **StripDens**  
+3. **Resonance off the line**  
+4. **Effective density constants**
 
 ---
 

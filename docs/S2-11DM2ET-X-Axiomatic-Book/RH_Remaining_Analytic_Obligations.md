@@ -165,16 +165,12 @@ None of the five boxes is checked. **O-PC is first-class and open**, upstream of
 
 ## Solid directions (current)
 
-See `RH_Finite_Product_Ivic_MassA.md` · `RH_Iso_H_Classical_Constraints.md` · ND1.
-
 | Rank | Direction | Status |
 |------|-----------|--------|
-| **1** | **Polylog / avg-polylog \(A\) on \(K_\star\)** | **Open** — sharpest pure next step |
-| **2** | **Mass-with-A under (RM)** | **Open** as theorem; **⇒ B_θ proved** as implication |
-| **3** | **StripDens** | **Open** |
-| **4** | Resonance off the line | **Open** |
-| **5** | Effective density constants | Architecture accepted |
-| **6** | Path continuation from on-line Ω | **Open** |
+| **1** | **Mass-with-A under (RM) only** | **Open** (core: polylog \(A\) on \(K_\star\); ⇒B_θ proved) |
+| **2** | **StripDens** | **Open** |
+| **3** | **Resonance off the line** | **Open** |
+| **4** | **Effective density constants** | Architecture accepted; numerical \((A,B,C)\) open |
 
 ### Scoreboard (this pass)
 
