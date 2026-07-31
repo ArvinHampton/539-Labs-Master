@@ -58,7 +58,7 @@ Full ledger: **`RH_Remaining_Analytic_Obligations.md`**.
 |----|------------|--------|
 | **O-M1.2** | Uniform M1.2 under classical zero-density alone | **Open** |
 | **O-M1.3bis** | Path with \(\lvert\Delta\theta\rvert\gg\log\log X\) | **Open** |
-| **O-PC** | Pair correlation \(\Rightarrow\) phase lower bounds (rigorous) | **Open** |
+| **O-PC** | Pair correlation \(\Rightarrow\) phase lower bounds (rigorous) | **Open** — practical status: `RH_Pair_Correlation_Practical_Status.md` (ZLA-OK; almost-all under PCC classical; phase gap remains; upstream/parallel to O-M1.2) |
 | **O-Moll** | Genuinely phase-oriented mollifier | **Open** |
 | **O-TL** | Target lemma itself | **Open — primary** |
 

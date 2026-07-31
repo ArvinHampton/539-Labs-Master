@@ -26,7 +26,7 @@ See `RH_Zeta_Language_Admissibility.md`. L4 is about *which hypotheses*; ZLA is 
 | ID | Hypothesis | Risk | Notes |
 |----|------------|------|-------|
 | C1 | **HD** at unbounded height (isolation + spacing) | If HD uses RH-scale zero free regions, circular | Use classical density or finite HD-low |
-| C2 | Pair correlation / GUE spacing | Heuristic; RMT | Not used in theorems |
+| C2 | Pair correlation / PCC | Conjectural about zeros of \(\zeta\); **ZLA-admissible** as a hypothesis | Classical almost-all simplicity/criticality under PCC; **O-PC open** for phase bounds (`RH_Pair_Correlation_Practical_Status.md`) |
 | C3 | Moment conjectures \(k\ge 3\) | Open | Not used for M1.2 |
 | C4 | DRH-scale prime error \(c(x)=x+o(x^{1/2}\log x)\) | Equivalent to strong RH forms on the line | Akatsuka on-line only |
 | C5 | \(Y=\sup\operatorname{Re}\rho=1/2\) | **Is RH** | Target lemma is contrappositive/open |

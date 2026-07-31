@@ -75,19 +75,28 @@ and **not** RH-strength zero-free regions or finite Odlyzko tables as the sole s
 
 ## 3. O-PC — Pair correlation \(\to\) phase lower bounds
 
+**Practical status (frozen):** see `RH_Pair_Correlation_Practical_Status.md`.
+
+- Pair correlation is **classical and ZLA-admissible** as a constraint on zeros of \(\zeta\).  
+- Under **PCC** (Montgomery pair correlation conjecture) one already has **strong almost-all** statements on simplicity and criticality (classical literature; not re-proved here).  
+- That spectral almost-all package has **not** been converted into the **phase** lower bound needed for the target lemma.  
+- **O-PC remains open.**  
+- **Ledger position:** O-PC sits **upstream of, or parallel to, O-M1.2** (not a substitute for O-M1.2; not mere optional commentary).
+
 **Goal.** Take a **precisely stated** pair-correlation (or \(n\)-level correlation) hypothesis on the zeros of \(\zeta\) — classical Montgomery-type or a labelled weakening — and **derive** a lower bound for continuous \(\theta_X\) or \(A_X\) with fully tracked error terms.
 
 **What is already done (does not close O-PC):**
 
+- Classical PCC and partial pair-correlation theorems as **zero-side** infrastructure (almost-all simplicity / criticality under PCC).  
 - GHK / RMT commentary as **heuristic** for moments (Keating–Snaith).  
-- L4: pair correlation listed as **C2** — heuristic; not used in theorems.  
+- L4: full PCC as a **hypothesis** for unbounded theorems remains conditional (**C2**); almost-all corollaries under PCC are classical.  
 - Function-field monodromy theorems as **analogies**, not transfers to \(\zeta\).
 
 **What is missing:** a theorem of the shape  
 “Hypothesis PC(\(\dots\)) \(\Rightarrow\) \(\lvert A_X(\sigma,t)\rvert\ge \cdots\)”  
-with PC ZLA-admissible as a statement **about zeros of \(\zeta\)**, and with the implication proved (not motivational).
+(or a usable intermediate bound on \(\theta_X=\arg P_X\)) with PC ZLA-admissible as a statement **about zeros of \(\zeta\)**, and with the implication **proved** (not motivational).
 
-**Circularity warning (L4):** any form of PC that is known only under RH, or that encodes RH-scale repulsion stronger than classical density, must be labelled and not silently treated as free.
+**Circularity warning (L4):** any form of PC that is known only under RH, or that encodes RH-scale repulsion stronger than classical density, must be labelled and not silently treated as free. PCC itself is a conjecture about zeros; using it as a hypothesis is ZLA-clean but **conditional**.
 
 ---
 
@@ -132,14 +141,19 @@ with \(A_X\) as in L1 / M1.4, **ZLA-clean**, no model constants.
 ## Dependency sketch
 
 ```
-O-Moll (optional) ──┐
-O-PC   (optional) ──┼──► O-M1.2 ──► O-M1.3bis ──► M1.4 ──► O-TL
-classical density ──┘         ▲
+                    ┌──► O-M1.2 (classical zero-density alone)
+O-PC (open) ────────┤        ▲
+  upstream/parallel └──► (spacing / almost-all input)
                               │
+O-Moll (optional) ────────────┤
+classical density ────────────┤
+                              ▼
+                         O-M1.3bis ──► M1.4 ──► O-TL
+                              ▲
                     regularised remainder (GHK/IvM)
 ```
 
-None of the five boxes is checked. Optional paths (O-PC, O-Moll) may shorten O-M1.3bis but are not substitutes for O-TL.
+None of the five boxes is checked. **O-PC is first-class and open**, upstream of or parallel to O-M1.2. O-Moll remains optional. Neither substitutes for O-TL.
 
 ---
 
