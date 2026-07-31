@@ -212,7 +212,7 @@ Status `CAT_B_CONTINUUM_FILLINGS_OPEN_NOT_LOCKED`. Firewall: \(K^+\) homology â‰
 
 ## Riemann Hypothesis â€” **open, active pure Cat A path (not frozen)**
 
-Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. Model debit set aside. L1 formalized: smoothed continuous argument \(A_X\) of partial Euler product (no model constants). Primary objective: target lemma lower-bounding \(\lvert A_X\rvert\) at a zero of maximal real part \(Y>1/2\). See `RH_L1_Phase_Functional_CatA.md`, `RH_Debt_Argument_Status.md`.
+Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. Model debit set aside. L1 formalized (\(A_X\)). Target-lemma sketch: Akatsuka \(m\log\log x\) lifts to \(\arg\)/\(A_X\) only via explicit-formula mechanism (not automatic from real main term). See `RH_L1_Phase_Functional_CatA.md`, `RH_Target_Lemma_Sketch_Literature_L5.md`.
 
 ## Shell restriction r_W
 

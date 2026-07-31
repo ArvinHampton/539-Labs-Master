@@ -35,4 +35,4 @@ Status `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. Primary: `RH_L1_Phase_Functional_Cat
 | L5 | Diagnostic numerics only |
 
 **Outside theorem env:** \(G_4\), \(\mu\), \(E_{\mathrm{leak}}\), 539.9 s.  
-**Literature inputs:** Conrad, Goldfeld, Akatsuka; LeClair heuristic only.
+**Literature + sketch:** `RH_Target_Lemma_Sketch_Literature_L5.md` (M1 lift, Conrad/Goldfeld/Akatsuka citations, L5 plan).
