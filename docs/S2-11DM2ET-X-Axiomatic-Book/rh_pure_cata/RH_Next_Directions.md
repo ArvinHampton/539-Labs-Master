@@ -1,17 +1,17 @@
 # Next Directions — Pure Cat A
 
-## Closed
-- OP4 phase lock + finite competitors
-- Gap_δ ⇒ B_θ; (Res)+(Hit) ⇒ B_θ
+## Closed (ND1)
+- Conjugate lock obstruction resolved (optimal phase)
+- (RM)+(Iso_H) ⇒ OP1 ⇒ B_θ (Thm S13–S16)
 
-## Next (only the premises)
+## Next premises only
 
 | # | Task |
 |---|------|
-| 1 | Bound \(\mathcal M_T(u_k)\) on phase-locked progression under KLN + classical \(N(t)\) — even partial \(o(1)\) savings |
-| 2 | Short-interval density near \(\beta_\star\) ⇒ average OP1; upgrade average → progression via discrepancy of \(\gamma_\star\log x\) |
-| 3 | Metric form of (Hit): show resonance set is not concentrated on a zero-free set of ordinates (without RH) |
-| 4 | Diagnostic only: finite zero truncations of \(\Phi^{\star}(u)\) along locked \(u_k\) |
+| 1 | **Iso_H technology:** bound number of zeros on a vertical line \(\operatorname{Re}=\beta_\star>1/2\) (classical: finite? multiplicity? Speiser-type / Levinson methods off-line) |
+| 2 | If infinitely many on the rightmost line: metric stability with large \(A\) via shorter \(\delta_k\sim 1/A\) still giving \(\sum\delta_k/u_k=\infty\) when \(\#K_\star\) density compensates |
+| 3 | Discrete residual without Iso_H: use only good points + EF on microscopic windows (likely fails for mass) |
+| 4 | Density ND3 for right tail \(\sigma\le 5/8\) (optional widen of (RM) context) |
 
 ## Not next
-Claiming Gap_δ; smuggling RH into (Hit); model debit.
+Claim RH; invent Iso_H; model debit.

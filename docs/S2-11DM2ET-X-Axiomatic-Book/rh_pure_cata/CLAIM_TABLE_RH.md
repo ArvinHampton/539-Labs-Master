@@ -7,13 +7,12 @@
 | C0 | RH | **OPEN** |
 | C17 | Residual formula (19) | **Proved** |
 | C16 | Self loglog cancels | **Proved** |
-| C26 | OP4: phase lock of \(D_\star\) on \(u_k\) | **Proved** |
-| C27 | OP4: finite-competitor \(\Phi^{\star}\) bound | **Proved** |
-| C28 | OP4: full tail small on \(u_k\) | **Open** |
-| C29 | Gap\(_\delta\) ⇒ OP1 ⇒ B_θ | **Proved implication** |
-| C30 | Unconditional OP1 | **Open** |
-| C31 | (Res)+(Hit) ⇒ B_θ | **Proved implication** |
-| C32 | (Hit) non-avoidance | **Open** (L4-labelled) |
-| C10d | B_θ unconditional | **Open** |
+| C26 | OP4 phase lock | **Proved** |
+| C33 | Optimal conjugate lock → net \((m+1)/\lvert\rho_\star\rvert\) | **Proved** (S8) |
+| C34 | (RM) → positive-density good \(u_k\) (S11) | **Proved** |
+| C35 | (RM)+(Iso_H) → OP1 (S13) | **Proved implication** |
+| C36 | (RM)+(Iso_H) → B_θ (S16) | **Proved implication** |
+| C37 | Unconditional Iso_H | **Open** |
+| C10d | Unconditional B_θ | **Open** |
 
-**Barrier B\*:** Gap\(_\delta\) or (Hit) (or equivalent tail control on locked progression).
+**Barrier B\*:** (Iso_H) for a rightmost off-line zero (or equivalent).

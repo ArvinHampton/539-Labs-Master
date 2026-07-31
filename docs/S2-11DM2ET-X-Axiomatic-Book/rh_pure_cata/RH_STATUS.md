@@ -5,10 +5,9 @@
 | Item | Standing |
 |------|----------|
 | Residual (19); loglog cancels | **Proved** |
-| OP4 phase lock | **Proved** |
-| Gap_δ ⇒ OP1 ⇒ B_θ | **Proved implication** |
-| (Res)+(Hit) ⇒ B_θ | **Proved implication** |
-| Gap_δ, (Hit), full tail | **Open** |
-| B_θ / RH | **Open** |
+| Conjugate optimal lock (S8) | **Proved** |
+| (RM) → good \(u_k\) (S11) | **Proved** |
+| (RM)+(Iso_H) → B_θ (S16) | **Proved implication** |
+| Iso_H / unconditional B_θ / RH | **Open** |
 
-Note: `RH_OP1_OP2_OP4.md`
+Note: `RH_ND1_Stability_Resolve.md`
