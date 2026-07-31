@@ -1,35 +1,47 @@
-﻿# 539-Labs-Master Repository Tree
+# 539-Labs-Master — directory overview
 
+Updated 2026-07-31. For cross-repo layout see [REPOS.md](REPOS.md).
+
+```text
 539-Labs-Master/
-â”œâ”€â”€ README.md                 # Canonical T3, raw-vs-resonant distinction, Category A/B labeling
-â”œâ”€â”€ PROPRIETARY.md
-â”œâ”€â”€ SECURITY.md
-â”œâ”€â”€ PAPERS.md                 # Expanded index of unique papers and documents
-â”œâ”€â”€ TREE.md                   # This file
-â”œâ”€â”€ docs/
-â”‚   â”œâ”€â”€ hqcc/                 # HQCC theorem, T3 map, clarifications
-â”‚   â”œâ”€â”€ model/                # Core SÂ²-11DMÂ²ET-X statements and master equations
-â”‚   â”œâ”€â”€ papers/               # Category indexes and pointers
-â”‚   â””â”€â”€ S2-11DM2ET-X-Axiomatic-Book/   # Living axiomatic book
-│       ├── PROGRAMME_BASELINE.md      # resolved vs open (locked ledger)
-│       ├── Discrete_Patterns_Residual_Carrier.md  # core linking L=B'*sgn (md/tex/scripts; no bulk data)
-â”‚       â”œâ”€â”€ Foundational_Arithmetic_Packaging.md/.tex  # canonical Steps 1â€“8 proof
-â”‚       â”œâ”€â”€ L_body_Structural_Derivation.md
-â”‚       â”œâ”€â”€ NonCircular_18_plus_521.md
-â”‚       â”œâ”€â”€ Resonant_Layer_Resolved.md   # packaging = hard budget; Option 3 for objects
-â”‚       â”œâ”€â”€ H0_539_Honest_Options.md
-â”‚       â”œâ”€â”€ CLOSED_CONSTANTS.md
-â”‚       â”œâ”€â”€ PROVENANCE_TABLE.md
-â”‚       â”œâ”€â”€ NoGo_*.md / ACE_*.md
-â”‚       â”œâ”€â”€ scripts/          # verify_foundational_packaging.py + probes
-â”‚       â””â”€â”€ data/README.md    # bulk RFFT datasets kept offline
-â”œâ”€â”€ hqh539/
-â”‚   â””â”€â”€ python/               # hqh539_core.py (Canonical T3, SCA-hardened), demos
-â””â”€â”€ (future: hardware notes linking to 539-Labs-repo RTL)
+├── README.md                 # Entry point: T3, raw vs resonant, Category A/B
+├── REPOS.md                  # Full GitHub map (roles of every repo)
+├── SECURITY.md               # Claim-labeling protocol
+├── PROPRIETARY.md
+├── PAPERS.md                 # Paper / Drive index
+├── TREE.md                   # This file
+└── docs/
+    ├── Quantum-Comp-Recommended-Skills.md
+    ├── hqh539-verification/  # KAT / avalanche / goldens / profile freeze
+    │   ├── hqh539.py
+    │   ├── crypto_hqh.py
+    │   ├── golden_vectors*.json
+    │   ├── avalanche*.py / benchmark*.py
+    │   └── rtl_vectors*/     # stimulus / expected .dat
+    └── S2-11DM2ET-X-Axiomatic-Book/   # Living axiomatic book (main body)
+        ├── README.md         # Topic index (start here)
+        ├── PROGRAMME_BASELINE.md
+        ├── CLAIM_TABLE_Master.md
+        ├── PROVENANCE_TABLE.md
+        ├── CLOSED_CONSTANTS.md
+        ├── Foundational_Arithmetic_Packaging.md
+        ├── Object539_NonCircular_Construction.md
+        ├── Resonant_Layer_Resolved.md
+        ├── H0_539_Honest_Options.md
+        ├── NoGo_Theorem_Canonical.md
+        ├── Architecture_A_*  # A0–A5⁺ residual stack
+        ├── Residual_*        # product complex, form SS, P+
+        ├── HQH539_Security_Reductions_Exploration.md
+        ├── HQH539_Formal_Games_and_Hard_Problem_Pi.md
+        ├── RH_*              # pure Cat A RH research track
+        ├── rh_pure_cata/     # RH pure-Cat-A extract pack
+        ├── Executive_Summary_*.md
+        ├── PUSH_LOG_*.md
+        ├── scripts/          # probes and verifiers
+        └── data/README.md    # bulk datasets offline
+```
 
+**Not present in this repo (despite older notes):** top-level `hqh539/python/`, `docs/hqcc/`, `docs/model/`, `docs/papers/`. Those roles are covered by `docs/hqh539-verification/`, the axiomatic book, and [PAPERS.md](PAPERS.md).
 
-
-
-
-
-
+**Hardware / RTL** live in [539-Labs-repo](https://github.com/ArvinHampton/539-Labs-repo).  
+**Live product** lives in [hqh539-engine](https://github.com/ArvinHampton/hqh539-engine).

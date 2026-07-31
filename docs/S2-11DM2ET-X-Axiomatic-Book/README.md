@@ -1,67 +1,112 @@
-> **GitHub (canonical):** [ArvinHampton/539-Labs-Master](https://github.com/ArvinHampton/539-Labs-Master/tree/main/docs/S2-11DM2ET-X-Axiomatic-Book)
-> **Programme baseline:** [`PROGRAMME_BASELINE.md`](PROGRAMME_BASELINE.md)
-> **Session claim freeze:** [`CLAIM_TABLE_Master.md`](CLAIM_TABLE_Master.md) | [`PUSH_LOG_2026-07-29.md`](PUSH_LOG_2026-07-29.md)
-
 # S²-11DM²ET-X Axiomatic Book (Foundation Layer)
 
-Clean LaTeX source for the full axiomatic foundation.
+> **Canonical GitHub path:** [ArvinHampton/539-Labs-Master/docs/S2-11DM2ET-X-Axiomatic-Book](https://github.com/ArvinHampton/539-Labs-Master/tree/main/docs/S2-11DM2ET-X-Axiomatic-Book)  
+> **Programme baseline:** [PROGRAMME_BASELINE.md](PROGRAMME_BASELINE.md)  
+> **Master claim table:** [CLAIM_TABLE_Master.md](CLAIM_TABLE_Master.md)  
+> **Cross-repo map:** [../../REPOS.md](../../REPOS.md)
 
-**File**: `S2-11DM2ET-X_Axiomatic_Book.tex`
+This folder is the **living foundation layer**: packaging, residual discrete algebra, Architecture A, security exploration, RH pure-Cat-A track, and session logs. LaTeX entry: `S2-11DM2ET-X_Axiomatic_Book.tex`.
 
-## Contents
-
-- **Programme baseline** (`PROGRAMME_BASELINE.md`)
-- **Master claim table** (`CLAIM_TABLE_Master.md`) — 2026-07-29 freeze
-- **Executive summary** (`Executive_Summary_2026-07-29.md`)
-- **Next directions** (`Next_Directions_2026-07-29.md`)
-- Axiom 0; Generation Individuality; Three Clocks / Closed Constants; Photon-ring; No-Go; ACE; Provenance
-- Empirical phase-locking; Holographic window; Wilson surrogates; QCD note; Bott vs HQCC; Phase 0; H0 Option 3
-- **Foundational arithmetic packaging**; **Object539**; Architecture A / O_res (A0–A3 locked; A4–A5 0-stem closed on O_res^disc only — A4_BSPIN_LIFT_CLOSED_ON_O_RES_DISC, A5_KO_OMEGA0_SPIN_CLOSED_ON_O_RES; A4⁺ full |E| open)
-- **Cat-B continuum fillings** (Architecture_Continuum_Fillings_CatB.md, scripts/continuum_fillings_catB_probe.py): CAT_B_CONTINUUM_FILLINGS_OPEN_NOT_LOCKED; K+ firewall; CB1–CB3 proxies; CB4 open
-- **RH pure Cat A track** (ZLA; density vs isolation locked; solid directions 1–5; B_θ/RH open): `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF` — `RH_Density_vs_Isolation.md`, `RH_Status_Scoreboard_Freeze.md`
-- HQH-539 security (exploration / Cat B only); 9 Maths patterns
-- Discrete patterns residual carrier; Discrete TTC/RTTC package T_res
-- **Residual product complex** (`Residual_Product_Complex.md`) — LOCKED
-- **Biological 18/521 signature report** (`Biological_18_521_Signature_Report.md`) — structurally compatible, numerically unconfirmed
-- **DDG hierarchy** (`DDG_Hierarchy_Structure.md`); **DDG network topology** (`DDG_Network_Topology.md`)
-- **Bandyopadhyay resonance theory** (`Bandyopadhyay_Resonance_Theory.md`) — scaffold; bracket SOMU
-- **Coboundary operators on product complexes** (`Coboundary_Operators_Product_Complexes.md`)
-- Non-circular length packaging; Resonant layer resolved; 9 Maths pillars; Cross-Dependency Graph; Tests T1–T6
-- **Residual product cohomology** (Residual_Product_Cohomology.md) — H^•(X_×) graph/form layers
-
-
-## Key Constants (see provenance before quoting)
-
-**Authoritative provenance:** `PROVENANCE_TABLE.md`
-**Depth split:** N_star=14 (ACE) **≠** sigma=539 (HQCC model). Never identify them.
-
-| Object | Value | Status |
-|--------|-------|--------|
-| W_np | e^3 | From Axiom 0 |
-| N_flux | 4880 | Tower construction |
-| N_star | 14 | ACE; free of 539 |
-| L_pack / sigma | 539 | Hard budget under (S); Option 3 free objects |
-| 18 | floor(e^3/ln 3) | Packaging |
-| 521 | B_Q - f_max under (S) | Packaging |
-| G_4 | 539.9 s | Emp/Mod hypothesis |
-
-## Relation to HQH-539
-
-Foundation layer for resonant attractor mathematics underlying HQH-539. Security claims pending peer review.
+**Mandatory on every claim:** Category A/B separation; residual-flux provenance for residual objects; no free T♯ origin for O_res; Option 3 free dynamics intact.
 
 ---
 
-*Per aspera ad astra.*
+## 1. Locked foundation (start here)
 
+| Document | Role |
+|----------|------|
+| [PROGRAMME_BASELINE.md](PROGRAMME_BASELINE.md) | Resolved vs open ledger |
+| [PROVENANCE_TABLE.md](PROVENANCE_TABLE.md) | Integer provenance before quoting constants |
+| [CLOSED_CONSTANTS.md](CLOSED_CONSTANTS.md) | Closed constant list |
+| [Foundational_Arithmetic_Packaging.md](Foundational_Arithmetic_Packaging.md) | Non-circular packaging under (S) |
+| [Object539_NonCircular_Construction.md](Object539_NonCircular_Construction.md) | O_res construction, B′ = 539 |
+| [Resonant_Layer_Resolved.md](Resonant_Layer_Resolved.md) | Packaging = hard iteration budget |
+| [H0_539_Honest_Options.md](H0_539_Honest_Options.md) | Free dynamics Option 3 |
+| [NoGo_Theorem_Canonical.md](NoGo_Theorem_Canonical.md) | No-Go on λ = ln 3 / 539 from democracy alone |
+| [ACE_Status_of_Record.md](ACE_Status_of_Record.md) | ACE N_⋆ = 14 status |
+| [L_body_Structural_Derivation.md](L_body_Structural_Derivation.md) | Body length derivation |
+| [NonCircular_18_plus_521.md](NonCircular_18_plus_521.md) | 18 + 521 packaging note |
+
+---
+
+## 2. Residual discrete stack (Architecture A)
+
+| Document | Role |
+|----------|------|
+| [Architecture_A_Ores_Programme.md](Architecture_A_Ores_Programme.md) | Programme A0–A5 overview |
+| [Architecture_A1_Seed_Equivariance.md](Architecture_A1_Seed_Equivariance.md) | Bott-fiber table 68/67 |
+| [Architecture_A2_Simplicial_Lift.md](Architecture_A2_Simplicial_Lift.md) | Simplicial lift |
+| [Architecture_A3_Geometric_BO_BSpin.md](Architecture_A3_Geometric_BO_BSpin.md) | First BO / Spin model |
+| [Architecture_A4plus_Continuous_BSpin.md](Architecture_A4plus_Continuous_BSpin.md) | A4⁺ continuous BSpin on K⁺ |
+| [Architecture_A5plus_KO_Spin_Bordism.md](Architecture_A5plus_KO_Spin_Bordism.md) | A5⁺ KO / Spin coefficients |
+| [Discrete_Patterns_Residual_Carrier.md](Discrete_Patterns_Residual_Carrier.md) | Discrete patterns on carrier |
+| [Residual_Product_Complex.md](Residual_Product_Complex.md) | Product complex (locked) |
+| [Residual_Product_Cohomology.md](Residual_Product_Cohomology.md) | Product cohomology |
+| [Residual_Form_Spectral_Sequences.md](Residual_Form_Spectral_Sequences.md) | Form SS |
+| [Residual_Form_SS_Differentials.md](Residual_Form_SS_Differentials.md) | SS differentials |
+
+Continuum fillings remain Category B: [Architecture_Continuum_Fillings_CatB.md](Architecture_Continuum_Fillings_CatB.md).
+
+---
+
+## 3. HQH-539 security (Category B exploration)
+
+| Document | Role |
+|----------|------|
+| [HQH539_Security_Reductions_Exploration.md](HQH539_Security_Reductions_Exploration.md) | Ledger: goals, ingredients, tracks C1–C4 |
+| [HQH539_Formal_Games_and_Hard_Problem_Pi.md](HQH539_Formal_Games_and_Hard_Problem_Pi.md) | Games + Π (criteria 1–2); 3–4 unmet |
+| [Executive_Summary_2026-07-31_Formal_Games_Pi.md](Executive_Summary_2026-07-31_Formal_Games_Pi.md) | Session lock |
+
+**No completed security reduction.** Hardness language only:
+
+> Computationally infeasible to break with known classical and quantum methods, pending independent peer review of the full S²-11DM²ET-X security reduction.
+
+Verification code and KATs: [../hqh539-verification/](../hqh539-verification/).
+
+---
+
+## 4. Riemann Hypothesis track (pure Cat A research)
+
+Open. Status label: `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`.  
+Primary entry: [RH_STATUS.md](RH_STATUS.md), [RH_Status_Scoreboard_Freeze.md](RH_Status_Scoreboard_Freeze.md), [RH_Density_vs_Isolation.md](RH_Density_vs_Isolation.md).  
+Pure-Cat-A extract pack: [rh_pure_cata/](rh_pure_cata/).
+
+---
+
+## 5. Physics-adjacent notes (mostly Category B)
+
+Muon g−2 Path A, CuNc audit, mirror halo, photon ring, biological 18/521, sector↔band dictionary — use [CLAIM_TABLE_Master.md](CLAIM_TABLE_Master.md) before quoting. Continuum / physical clocks never enter Category A hardness.
+
+---
+
+## 6. Key constants (read provenance first)
+
+Authoritative: [PROVENANCE_TABLE.md](PROVENANCE_TABLE.md).  
+**Depth split:** N_⋆ = 14 (ACE) ≠ σ = 539 (packaging budget). Never identify them.
+
+| Object | Value | Status |
+|--------|-------|--------|
+| W_np | e³ | From Axiom 0 |
+| N_flux | 4880 | Tower construction |
+| N_⋆ | 14 | ACE; free of 539 |
+| L_pack / σ | 539 | Hard budget under (S) |
+| 18 | floor(e³ / ln 3) | Packaging |
+| 521 | body under (S) | Packaging |
+| G₄ | 539.9 s | Empirical/model hypothesis (Cat B) |
+
+---
+
+## 7. Scripts and results
+
+Probes and verifiers live under [scripts/](scripts/). JSON result files sit next to their parent notes. Bulk RFFT datasets stay offline ([data/README.md](data/README.md)).
+
+---
+
+## 8. Session logs
+
+`Executive_Summary_*.md` and `PUSH_LOG_*.md` are dated freezes. Prefer the latest PROGRAMME_BASELINE + CLAIM_TABLE_Master for current status over older summaries.
+
+---
+
+*Per aspera ad astra.*  
 The universe counts in threes.
-- **Multi-angle unification review** (Multi_Angle_Unification_Review.md): missed patterns; G–F pairing + window filtration probes; sector↔band RFC
-- **Near-term unification kit** (Near_Term_Unification_Kit.md, scripts/gf_pairing_window_probe.py): pair [alpha⊗delta_f] with mixed cells; window-18 filtration; sector↔band RFC — Option 3 and thin F locked
-- **Full report: findings / missed patterns / implications** (Full_Report_Findings_Missed_Patterns_Implications.md) — 2026-07-29 synthesis; near-term kit frozen
-- **Shell restriction r_W + optional P+** (Shell_Restriction_rW_P_plus.md, scripts/shell_restriction_rW_probe.py): r_18!=0 SURJECTIVE_BOTH_SHELL_AND_TOWER; 56 same-tower triples counted not locked
-- **Mapping cone of r_W** (Mapping_Cone_rW.md, scripts/mapping_cone_rW_probe.py): thin H2(Cone)=0; tower mass = support not second class
-- **Thin complex formality** (Thin_Complex_Formality.md, scripts/thin_formality_probe.py): F ≃ Q[0]⊕Q[-2] in D(Q); THIN_FORMALITY_THEOREM_EXECUTED_A
-- **Boardman conditional convergence** (Boardman_Conditional_Convergence.md, scripts/boardman_convergence_probe.py): thin F strong convergence; Boardman idle
-- **P+ multi-scale research** (Residual_P_plus_MultiScale.md, scripts/residual_p_plus_multiscale_probe.py): omega_P(delta_f)=0; permanent class survives; RESEARCH_STABLE not theorem-locked
-- **P+ M1 topology · flux quantization Q0–Q8** (P_plus_2Complex_Topology_Flux_Quantization.md, scripts/p_plus_2complex_topology_probe.py): contractible 56 disks; d_P(delta_f)=0; jump ⊥ stay; integer pipeline A
-- **Sector↔band S1–S3** (Sector_Band_Dictionary_RFC.md, scripts/sector_band_S1S3_probe.py): D2.0 on CHB-MIT chb01_01 — S1–S3 PASS → working Cat B dictionary (not residual lock)
-- **Post-kit multi-angle missed patterns** (Multi_Angle_Review_Post_Kit_Pplus_S1S3.md, scripts/missed_patterns_frontier_probe.py): N2 identity; Ψ on squares; jump mass density 36; frontier ranks 1–10

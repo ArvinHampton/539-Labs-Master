@@ -1,96 +1,112 @@
 # 539-Labs-Master
 
-Organized master corpus of the S²-11DM²ET-X unification framework, the Hampton Qutrit Collatz Convergence (HQCC) theorem, the Canonical T3 map, HQH-539 cryptographic materials, and supporting papers.
+Canonical public corpus for the **S²-11DM²ET-X** framework, the **HQCC** statement, the **Canonical T3** map, residual discrete mathematics, and **HQH-539** security exploration.
 
-Prepared for development, archival, and selective peer review.
-## Repository visibility (2026-07-30)
-
-Core 539 Labs science/crypto repositories are **public**, including this master corpus and [539-Labs-Corpus](https://github.com/ArvinHampton/539-Labs-Corpus). Unauthenticated clone and raw.githubusercontent.com access work. Category B / proprietary claim labeling in SECURITY.md still applies to content claims; visibility ≠ peer review.
-
+Prepared for development, archival, and selective peer review.  
 Copyright 539 Labs LLC / Arvin B. Hampton (String Weaver).
 
-## Canonical T3 Map (Local Dynamical Rule)
+**Cross-repo map:** [REPOS.md](REPOS.md)  
+**Claim protocol:** [SECURITY.md](SECURITY.md)  
+**Directory overview:** [TREE.md](TREE.md)
+
+---
+
+## Start here
+
+| Goal | Open |
+|------|------|
+| Resolved vs open programme status | [docs/S2-11DM2ET-X-Axiomatic-Book/PROGRAMME_BASELINE.md](docs/S2-11DM2ET-X-Axiomatic-Book/PROGRAMME_BASELINE.md) |
+| Axiomatic book topic index | [docs/S2-11DM2ET-X-Axiomatic-Book/README.md](docs/S2-11DM2ET-X-Axiomatic-Book/README.md) |
+| Master claim freeze | [docs/S2-11DM2ET-X-Axiomatic-Book/CLAIM_TABLE_Master.md](docs/S2-11DM2ET-X-Axiomatic-Book/CLAIM_TABLE_Master.md) |
+| Security games + hard problem Π | [docs/S2-11DM2ET-X-Axiomatic-Book/HQH539_Formal_Games_and_Hard_Problem_Pi.md](docs/S2-11DM2ET-X-Axiomatic-Book/HQH539_Formal_Games_and_Hard_Problem_Pi.md) |
+| Security reductions ledger | [docs/S2-11DM2ET-X-Axiomatic-Book/HQH539_Security_Reductions_Exploration.md](docs/S2-11DM2ET-X-Axiomatic-Book/HQH539_Security_Reductions_Exploration.md) |
+| HQH verification / KATs | [docs/hqh539-verification/](docs/hqh539-verification/) |
+| Papers index | [PAPERS.md](PAPERS.md) |
+
+---
+
+## Canonical T3 map (local dynamical rule)
 
 ```
 T3(n) = n // 3          if n ≡ 0 (mod 3)
 T3(n) = (4n + 2) // 3   if n ≡ 1 (mod 3)
 T3(n) = (2n + 1) // 3   if n ≡ 2 (mod 3)
 ```
-with T3(0) = 0. Integer (floor) division is used in all computational implementations so that the map stays on the non-negative integers.
 
-This is the retained baseline after evaluation of the earlier T4121 variant (which showed reduced cryptographic hardness).
+with T3(0) = 0. Integer (floor) division keeps the map on non-negative integers. This is the retained production baseline after evaluation of the T4121 variant (weaker observed avalanche / preimage behaviour).
 
-## Critical Distinction: Raw Map vs Resonant HQCC Dynamics
+---
 
-The raw T3 map is a simple piecewise arithmetic function. Direct unrestricted iteration of large seeds (approximately 10^18) reaches values near 1 in roughly 90–120 steps. There is no natural emergence of exactly 539 steps from the plain map alone.
+## Critical distinction: raw map vs resonant / fixed-round dynamics
 
-The 539-step termination claimed by the HQCC theorem is a structural feature of the constrained resonant dynamics inside the S²-11DM²ET-X model: a fixed total of exactly 539 iterations, combined with phase-locking, algebraic-closure projections, tower checksums, and the holographic-window interpretation of the first approximately 18 steps. The local T3 rule supplies the mixing; the constraints and the immutable 539.9 s brane-leakage clock supply the global structure that the framework derives from the single axiom of exactly three fermion generations.
+The raw T3 map is a piecewise arithmetic function. Unrestricted iteration of large seeds (~10¹⁸) typically reaches small values in roughly 90–120 steps. There is **no** natural emergence of exactly 539 steps from the plain map alone.
 
-All claims that go beyond the arithmetic definition of T3 are Category B (proprietary framework claims).
+The 539-step length used in HQH-539 is an **engineered hard iteration budget** supplied by non-circular packaging under Principle (S): 18 + 521 = 539 (equivalently floor((N_flux − f_max)/9)). Free / charge-preserving T♯ dynamics remain short (Option 3: two basins). Do not market free-map stopping time as 539-step hardness.
 
-## Security Claim Labeling
+Framework embeddings (holographic window, KK towers, brane-leakage clock G4, full HQCC global claim) are **Category B**.
 
-- **Category A** — Claims reducible to standard, externally verifiable cryptographic assumptions (for example SHA3-512 properties).
-- **Category B** — Proprietary S²-11DM²ET-X / HQCC claims. These must be labeled:
-  “Proprietary framework claim (S²-11DM²ET-X) — not independently verified, pending external cryptanalysis.”
+---
 
-Never use absolute language such as “unbreakable” or “provably secure.” Preferred framing: computationally infeasible with known classical and quantum methods, pending independent peer review of the full security reduction.
+## Category A / Category B
 
-## Repository Layout
+- **Category A** — Externally checkable: map definition, packaging integers under (S), residual-carrier cardinality construction, SHA3-512 interface properties, measured hardware metrics, pure residual topology computations.
+- **Category B** — Proprietary framework / hardness / continuum / G4 claims. Required label:
 
-- docs/hqcc/ — T3 map definition, HQCC theorem statement, Raw-vs-Resonant clarification
-- docs/model/ — Framework overview and master equations summary
-- docs/papers/ — Index and pointers to core unification, cosmology, particle-physics, and mathematical-resolution documents
-- **docs/S2-11DM2ET-X-Axiomatic-Book/** — Living axiomatic book (**public**): closed constants, ACE/No-Go status, non-circular length packaging \(18+521=539\) under principle (S), provenance table, probes/scripts
-- hqh539/python/ — Canonical reference implementation (constant-time T3 step) and demos
-- PAPERS.md — Expanded catalog of unique papers and Drive counterparts
-- PROPRIETARY.md, SECURITY.md — Legal and claim-labeling protocol
-- TREE.md — Directory overview
+> Proprietary framework claim (S²-11DM²ET-X) — not independently verified, pending external cryptanalysis.
 
-### Length packaging and resonant layer (status snapshot)
+Preferred hardness phrasing only:
 
-- \(L_{\mathrm{pref}}=\lfloor e^{3}/\ln 3\rfloor=18\) — Category A integer  
-- \(L_{\mathrm{body}}=\lfloor N_{\mathrm{flux}}/9\rfloor-\lceil N_{\mathrm{flux}}/N_{\mathrm{tow}}\rceil=521\) — derived under minimal-action max-tower seed clear (principle S); ansatz without (S)  
-- \(L_{\mathrm{pack}}=18+521=539=\lfloor(N_{\mathrm{flux}}-f_{\max})/9\rfloor\) — non-circular **length** packaging conditional on (S)  
-- **Resonant layer** = adopt that packaging as a **hard iteration budget** (production HQH-539: fixed 18+521 rounds, no dynamical stop). Free / charge-preserving \(T^\sharp\) short basins remain Category A and are overridden by design — not mysterious further constraints  
-- ACE depth \(N_\star=14\) remains distinct from model/crypto depth \(\sigma:=L_{\mathrm{pack}}\) (never identify them)  
-- Combinatorial carrier \(\mathcal{O}_{\mathrm{res}}\): \(\lvert\mathcal{O}_{\mathrm{res}}\rvert=\lfloor(N_{\mathrm{flux}}-f_{\max})/9\rfloor=539\) verified under (S) — residual democratic charge-sector flux cores  
-- Free \(T^\sharp\) basin count still **2** (**Option 3** for free-dynamics trajectory objects); Bott-on-carrier permitted; Bott-on-free-trajectories still paused  
+> Computationally infeasible to break with known classical and quantum methods, pending independent peer review of the full S²-11DM²ET-X security reduction.
 
-See `docs/S2-11DM2ET-X-Axiomatic-Book/Object539_NonCircular_Construction.md`, `Foundational_Arithmetic_Packaging.md`, `Resonant_Layer_Resolved.md`, `H0_539_Honest_Options.md`.
+Never use “unbreakable”, “provably secure”, or “information-theoretic” for HQH-539 hardness.  
+**No completed security reduction is claimed.** Criteria 1–2 (games + Π statement) are written; criteria 3–4 (PPT reduction, independent review) remain unmet.
 
-## Related Repositories
+Residual objects require **residual-flux provenance** (not free T♯ origin).
 
-- 539-Labs-repo (public) — Full FPGA/RTL, Vivado, demo, deploy, TDP, and milestone directives for the HQH-539 hardware pipeline
-- hqh539-engine, HQH-539-512 (public) — Streamlit and high-volume encryption generators
-- HQH-539-RTL (public) — SystemVerilog cores and testbenches
-- resonant-galois (public) — Experimental A5/A6 constructive generation
-- Google Drive workspace — Living source of truth for the latest full papers and Codex versions
+---
+
+## Repository layout (actual)
+
+```text
+docs/
+  S2-11DM2ET-X-Axiomatic-Book/   living axiomatic book + residual stack + RH track
+  hqh539-verification/           KATs, avalanche, goldens, profile freeze notes
+SECURITY.md  REPOS.md  TREE.md  PAPERS.md  PROPRIETARY.md
+```
+
+See [TREE.md](TREE.md) for detail. Hardware RTL is not stored here — use [539-Labs-repo](https://github.com/ArvinHampton/539-Labs-repo). Live product UI — [hqh539-engine](https://github.com/ArvinHampton/hqh539-engine).
+
+---
+
+## Length packaging snapshot
+
+| Object | Value | Notes |
+|--------|-------|-------|
+| L_pref | floor(e³ / ln 3) = 18 | Category A integer |
+| L_body | 521 | under Principle (S) |
+| L_pack / σ | 18 + 521 = 539 | engineered hard budget |
+| \|O_res\| = B′ | 539 | residual flux quanta under (S) |
+| ACE N_⋆ | 14 | free of 539; never identify with σ |
+| Free T♯ basins | 2 | Option 3; no free 539-classes |
+
+---
+
+## Related repositories (short list)
+
+| Repo | Role |
+|------|------|
+| [539-Labs-Corpus](https://github.com/ArvinHampton/539-Labs-Corpus) | Satellite freezes (not a second master) |
+| [hqh539-engine](https://github.com/ArvinHampton/hqh539-engine) | Live Streamlit + Stripe engine |
+| [539-Labs-repo](https://github.com/ArvinHampton/539-Labs-repo) | FPGA / RTL / Vivado / deploy |
+| [resonant-galois](https://github.com/ArvinHampton/resonant-galois) | Experimental Inverse Galois templates |
+| [HQH-539-RTL](https://github.com/ArvinHampton/HQH-539-RTL) | Public RTL target (stub until populated) |
+
+Full map: [REPOS.md](REPOS.md).
+
+---
 
 ## Author
 
-Arvin B. Hampton (String Weaver)
-539 Labs, LLC
+Arvin B. Hampton (String Weaver)  
+539 Labs, LLC  
 Self-taught mathematician and physicist sharing the work for peer review.
-
-### Architecture A on O_res
-
-Discrete classifying map and Bott-clock grading on residual-flux carrier: `docs/S2-11DM2ET-X-Axiomatic-Book/Architecture_A_Ores_Programme.md`. Provenance: residual flux quanta under Principle (S); not free T-sharp; no No-Go lift.
-
-
-### Architecture A1�A2
-
-Seed-independent Bott clock `beta_sharp` and discrete simplicial lift: `docs/S2-11DM2ET-X-Axiomatic-Book/Architecture_A1_Seed_Equivariance.md`, `Architecture_A2_Simplicial_Lift.md`. Next: A3�A5 geometric BO/BSpin and KO.
-
-
-### Architecture A3
-
-Continuous map |E(O_res)| -> Gr_1(V) -> BO (spin-aimed rank-2 companion): `docs/S2-11DM2ET-X-Axiomatic-Book/Architecture_A3_Geometric_BO_BSpin.md`. Residual-flux provenance only; A4-A5 open.
-
-### Programme baseline
-
-**Single status ledger (resolved vs open):**  
-`docs/S2-11DM2ET-X-Axiomatic-Book/PROGRAMME_BASELINE.md`
-
-Combinatorial residual foundation + Arch.\ A0–A2 locked; A3 first continuous BO model locked as first lift; A4–A5, free-trajectory 539-classes (Option 3), and security reductions remain open / paused / exploration-only under stated constraints.
-
