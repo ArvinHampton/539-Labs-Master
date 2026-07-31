@@ -212,7 +212,7 @@ Status `CAT_B_CONTINUUM_FILLINGS_OPEN_NOT_LOCKED`. Firewall: \(K^+\) homology �
 
 ## Riemann Hypothesis — **open, active pure Cat A path (not frozen)**
 
-Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. **Axiom ZLA frozen**. On-line strong Omega **accepted** (fixed \(X\), line only). **Solid directions:** (1) resonance off the line; (2) effective density constants; (3) finite-product approx off the line; (4) path continuation from on-line Omega — `RH_Existing_Theorems_Solid_Directions.md`. **Deep pursuit 2026-07-31:** Direction 2 has concrete published density constants (Chourasiya–Simonič arXiv:2507.15184 and alternatives) ready for M1.2 insertion; Directions 1, 3, 4 stated as precise open lemmas — `RH_Deep_Pursuit_2026-07-31.md`. Numerical \(\gamma_1\) still open as finite arithmetic. **O-TL primary not closed.** RH open.
+Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. **Axiom ZLA frozen**. On-line strong Omega **accepted**. **ND1 stability bridge:** (RM)+(Iso_H)⇒B_θ **proved**; conjugate lock closed; **(Iso_H) unconditional open** — `RH_ND1_Stability_Resolve.md`, `RH_ND1_Status_Acceptance.md`. **Solid directions:** off-line resonance; density constants; off-line finite products; path continuation; **vertical-line isolation**. **Unconditional B_θ / O-TL / RH open.**
 
 ## Shell restriction r_W
 

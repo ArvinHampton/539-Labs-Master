@@ -57,7 +57,7 @@ Solid toolkit + ranked directions: **`RH_Existing_Theorems_Solid_Directions.md`*
 
 | ID | Obligation | Status |
 |----|------------|--------|
-| **O-M1.2** | Conditional effective M1.2 via density | **Architecture done** (`RH_M1_2_Effective_Density.md`); **concrete constants recorded** (`RH_Deep_Pursuit_2026-07-31.md`); numerical \(\gamma_1\) next |
+| **O-M1.2** | Conditional effective M1.2 via density | **Architecture done** (`RH_M1_2_Effective_Density.md`); numerical density constants next |
 | **O-M1.3bis** | Path with \(\lvert\Delta\theta\rvert\gg\log\log X\) at special points | **Open** |
 | **O-PC** | Phase / discrepancy | **On-line strong Omega proved** (`RH_Resonance_Discrepancy_Attack.md`); O-TL locations **open** |
 | **O-Moll** | Phase-oriented mollifier | **Open** |
@@ -70,17 +70,18 @@ Solid toolkit + ranked directions: **`RH_Existing_Theorems_Solid_Directions.md`*
 
 ### Solid directions (current)
 
-| Rank | Direction | Deep pursuit 2026-07-31 |
-|------|-----------|------------------------|
-| **1** | **Resonance off the line** | Open lemma stated |
-| **2** | **Effective density constants** into M1.2 | Constants recorded; \(\gamma_1\) arithmetic open |
-| **3** | **Finite-product approximation off the line** (Gonek style) | Open argument lemma stated |
-| **4** | **Path continuation from known on-line Omega** (M1.3-bis toward O-TL) | Open differential \(\Phi\) stated |
+| Rank | Direction |
+|------|-----------|
+| **1** | **Resonance off the line** |
+| **2** | **Effective density constants** \((A,B,C)\) into M1.2 |
+| **3** | **Finite-product approximation off the line** (Gonek style) |
+| **4** | **Path continuation from known on-line Omega** (M1.3-bis toward O-TL) |
+| **5** | **(Iso_H)** — isolation on rightmost vertical line \(\operatorname{Re}=\beta_\star>1/2\) (ND1 barrier) |
 
 Full write-up: `RH_Existing_Theorems_Solid_Directions.md` §6.  
-Deep pursuit freeze: **`RH_Deep_Pursuit_2026-07-31.md`**.
+**ND1:** `RH_ND1_Stability_Resolve.md` — **(RM)+(Iso_H)⇒B_θ proved**; unconditional B_θ **open**.
 
-**Still open:** O-TL (**primary not closed**); off-line Omega; RH.
+**Still open:** O-TL / unconditional B_θ (**primary not closed**); (Iso_H); off-line Omega; RH.
 
 **Outside theorem env:** \(G_4\), \(\mu\), \(E_{\mathrm{leak}}\), 539.9 s.  
 **Literature:** `RH_Target_Lemma_Sketch_Literature_L5.md`; **Akatsuka–GHK:** `RH_Akatsuka_GHK_Survey.md`.  
