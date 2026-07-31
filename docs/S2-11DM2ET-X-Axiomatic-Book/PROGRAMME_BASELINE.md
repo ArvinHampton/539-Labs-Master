@@ -212,7 +212,7 @@ Status `CAT_B_CONTINUUM_FILLINGS_OPEN_NOT_LOCKED`. Firewall: \(K^+\) homology �
 
 ## Riemann Hypothesis — **open, active pure Cat A path (not frozen)**
 
-Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. **Axiom ZLA frozen**. On-line strong Omega **accepted**. **ND1 stability bridge:** (RM)+(Iso_H)⇒B_θ **proved**; conjugate lock closed; **(Iso_H) unconditional open** — `RH_ND1_Stability_Resolve.md`, `RH_ND1_Status_Acceptance.md`. **Solid directions:** off-line resonance; density constants; off-line finite products; path continuation; **vertical-line isolation**. **Unconditional B_θ / O-TL / RH open.**
+Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. **Axiom ZLA frozen**. **ND1 locked:** (RM)+(Iso_H)⇒B_θ proved; conjugate closed. **Iso_H classical constraints recorded** — no unconditional Iso_H theorem (`RH_Iso_H_Classical_Constraints.md`). **Preferred next:** Mass-with-A under (RM) only. Also: StripDens; resonance off-line; density constants; finite products off-line; path from on-line Ω. **Unconditional B_θ / O-TL / RH open.**
 
 ## Shell restriction r_W
 

@@ -37,8 +37,11 @@
 | O-Moll phase-oriented mollifier | **S** | **Open** |
 | Solid directions (current): off-line resonance; density constants; off-line finite products; path continuation; (Iso_H) | programme | **Frozen** (`RH_Existing_Theorems_Solid_Directions.md` §6) |
 | ND1: conjugate lock; (RM)+L2 good points | **A** | **Proved** (`RH_ND1_Stability_Resolve.md`) |
-| ND1: (RM)+(Iso_H) ⇒ OP1 / B_θ | **A** | **Proved** (conditional) |
-| (Iso_H) unconditional | **S** | **Open** — barrier to unconditional B_θ |
+| ND1: (RM)+(Iso_H) ⇒ OP1 / B_θ | **A** | **Proved** (conditional) — **acceptance locked** |
+| Classical constraints on Iso_H (finite-height trivial; FE conjugate only; density/mult. insufficient) | **A** | **Recorded** (`RH_Iso_H_Classical_Constraints.md`) |
+| (Iso_H) unconditional | **S** | **Open** |
+| Mass-with-A under (RM) only | **S** | **Open** — preferred next |
+| StripDens | **S** | **Open** |
 | Unconditional B_θ | **S** | **Open** |
 | Model debit / \(E_{\mathrm{leak}}\) / \(\mu\) / 539.9 as zeta theorem | **O** in theorem env | Motivation only |
 | Resonant Algebra \(\Rightarrow\) RH | **O** | Unrelated |

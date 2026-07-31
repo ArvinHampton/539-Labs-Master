@@ -165,23 +165,25 @@ None of the five boxes is checked. **O-PC is first-class and open**, upstream of
 
 ## Solid directions (current)
 
-See `RH_Existing_Theorems_Solid_Directions.md` §6 · ND1: `RH_ND1_Stability_Resolve.md`.
+See `RH_Existing_Theorems_Solid_Directions.md` §6 · ND1: `RH_ND1_Stability_Resolve.md` · Iso_H: `RH_Iso_H_Classical_Constraints.md`.
 
 | Rank | Direction | Status |
 |------|-----------|--------|
-| **1** | Resonance **off the line** | **Open** |
-| **2** | **Effective density constants** for conditional M1.2 | Architecture accepted; \((A,B,C)\) **open** |
-| **3** | Finite-product approximation **off the line** | **Open** |
-| **4** | **Path continuation** from known on-line Omega | **Open** |
-| **5** | **(Iso_H)** abscissa isolation on rightmost line | **Open** — blocks unconditional B_θ after ND1 |
+| **1** | **Mass-with-A under (RM) only** | **Open** — preferred next |
+| **2** | **StripDens** | **Open** |
+| **3** | Resonance **off the line** | **Open** |
+| **4** | **Effective density constants** for M1.2 | Architecture accepted; \((A,B,C)\) **open** |
+| **5** | Finite-product approximation **off the line** | **Open** |
+| **6** | **Path continuation** from on-line Omega | **Open** (independent of Iso_H) |
 
-### ND1 (stability bridge) — accepted
+### ND1 (stability bridge) — **locked**
 
 | Item | Status |
 |------|--------|
 | Conjugate lock (optimal phase) | **Proved** |
 | (RM) + L2 → positive-density good \(u_k\) | **Proved** (S11) |
 | (RM)+(Iso_H) ⇒ OP1 / B_θ | **Proved** (S13, S16) |
+| Classical constraints on Iso_H | **Recorded** — no unconditional Iso_H theorem |
 | Unconditional (Iso_H) / B_θ | **Open** |
 
 On-line strong Omega (fixed \(X\)) is **accepted**, not re-listed.  

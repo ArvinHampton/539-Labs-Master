@@ -105,17 +105,18 @@ The remaining solid directions are those that move **off the line**, make M1.2 *
 
 | Rank | Direction | Obligation | Status |
 |------|-----------|------------|--------|
-| **1** | **Resonance off the line** — large values of \(\theta_X\) / \(\Delta_X\) at \(\sigma\ge Y-\varepsilon\) or at points of large \(1/\lvert\zeta\rvert\); Soundararajan-type resonators in short \(t\)-intervals with \(\sigma>1/2\) | O-PC off-line / O-TL | **Open** |
-| **2** | **Effective density constants** — insert published numerical \((A,B,C)\) into `RH_M1_2_Effective_Density.md` and compute an explicit height threshold \(\gamma_1\) | O-M1.2 | Architecture **accepted**; constants **open** |
-| **3** | **Finite-product approximation off the line (Gonek style)** — region where short \(P_X\approx\zeta\); argument of the ratio at off-line minima / near maximal abscissa | O-PC / O-M1.3bis | **Open** |
-| **4** | **Path continuation from known on-line Omega** — use limsup / known large \(\operatorname{Im} D_X\) or \(\Delta_X\) on the line as a base and continue a path (or vary \(X\)) toward a zero of maximal real part so that continuous phase accumulates at O-TL scale (M1.3-bis) | O-M1.3bis / O-TL | **Open** |
-| **5** | **Vertical-line isolation (Iso_H)** — finiteness / isolation of zeros on \(\operatorname{Re}=\beta_\star>1/2\) for a rightmost zero; or divergent mass with many same-abscissa zeros | unconditional B_θ after ND1 | **Open** — `RH_ND1_Stability_Resolve.md` |
+| **1** | **Mass-with-A under (RM) only** — on good \(u_k\) from S11, does \(\sum\delta_k/u_k\) with \(\delta_k\sim 1/\max(A(u_k),1)\) diverge? | unconditional B_θ without full Iso_H | **Open** — preferred |
+| **2** | **StripDens** — density in a thin strip about \(\beta_\star\) controlling Lip \(A\) | weakens ND1 residual | **Open** |
+| **3** | **Resonance off the line** | O-PC / O-TL | **Open** |
+| **4** | **Effective density constants** \((A,B,C)\) into M1.2 | O-M1.2 | Architecture accepted; constants **open** |
+| **5** | **Finite-product approximation off the line** (Gonek) | O-PC / O-M1.3bis | **Open** |
+| **6** | **Path continuation from on-line Omega** | O-M1.3bis / O-TL | **Open** (independent of Iso_H) |
 
-Secondary (unchanged utility): phase-oriented mollifier (O-Moll).
+Secondary: full unconditional **(Iso_H)**; phase-oriented mollifier (O-Moll).
 
-### ND1 bridge (accepted conditional theorem)
+### ND1 bridge (locked)
 
-**(RM)+(Iso_H) ⇒ B_θ** proved. Barrier is no longer loglog / E1 / conjugate phase; it is **(Iso_H)**. See `RH_ND1_Status_Acceptance.md`.
+**(RM)+(Iso_H) ⇒ B_θ** proved. Classical constraints: `RH_Iso_H_Classical_Constraints.md`. Barrier: unconditional **(Iso_H)** or successful **Mass-with-A**.
 
 **None of 1–4 is known to succeed.** All stay inside **ZLA**.  
 **Do not** weaken O-TL to on-line limsup alone.

@@ -59,24 +59,38 @@ B_θ is no longer blocked by loglog, E1, or conjugate phase. It is blocked by **
 
 ---
 
-## Next (only)
+## Classical constraints on (Iso_H)
 
-1. Technology for zeros on a vertical line \(\operatorname{Re}=\beta_\star>1/2\) (finiteness / isolation).  
-2. Or: many same-abscissa zeros with \(\delta_k\sim 1/A\) still giving divergent mass.
+Full note: **`RH_Iso_H_Classical_Constraints.md`**.
+
+- Finite-height Iso_H is trivial (zeros isolated on compact segments).  
+- FE forces only conjugate as same-abscissa partner for rightmost \(\rho_\star\).  
+- Multiplicity and \(N(\sigma,T)\) do **not** prove “at most two zeros on the line”.  
+- **No** classical theorem of unconditional (Iso_H).
+
+**Weakenings (open):** StripDens; **Mass-with-A under (RM) only** (preferred next).
+
+---
+
+## Next (updated)
+
+1. **Mass-with-A under (RM) only** — preferred pure next step.  
+2. **StripDens** from classical density tables.  
+3. Resonance off the line; effective density constants; finite-product off the line; path continuation from on-line Ω (independent of Iso_H).  
+4. Technology for zeros on \(\operatorname{Re}=\beta_\star>1/2\) (full Iso_H) if Mass-with-A fails.
 
 ---
 
 ## Relation to prior solid directions / O-TL track
 
-| Prior solid direction | Relation to ND1 |
-|----------------------|-----------------|
-| Resonance off the line | Still open; complementary arithmetic side |
-| Effective density constants | Still open for M1.2 remainder package |
-| Finite-product approx off the line | Still open |
-| Path continuation from on-line Omega | Still open |
-| **ND1 (new barrier)** | **(Iso_H)** / vertical-line isolation at rightmost abscissa |
+| Direction | Relation to ND1 |
+|-----------|-----------------|
+| Mass-with-A under (RM) | **Preferred bypass** of full Iso_H |
+| StripDens | Weakens Lip \(A\) without Iso_H |
+| Resonance / finite products / path from on-line Ω | Parallel arithmetic tracks |
+| **Barrier** | Unconditional **(Iso_H)** (or successful Mass-with-A) |
 
-O-TL (phase at maximal abscissa) and B_θ (if used as a target-lemma intermediate) both sit behind **rightmost + isolation** geometry after ND1.
+O-TL and unconditional B_θ remain behind rightmost + isolation **or** a successful Mass-with-A.
 
 ---
 
