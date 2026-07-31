@@ -57,18 +57,18 @@ Solid toolkit + ranked directions: **`RH_Existing_Theorems_Solid_Directions.md`*
 
 | ID | Obligation | Status |
 |----|------------|--------|
-| **O-M1.2** | Uniform M1.2 under classical zero-density alone | **Open** — next: explicit density \(\to\) effective \(c_3\) |
-| **O-M1.3bis** | Path with \(\lvert\Delta\theta\rvert\gg\log\log X\) | **Open** |
-| **O-PC** | Phase / discrepancy lower bounds | Typical Omega **proved**; **strong** \(\gg\log\log X\) **open** — next: resonance |
-| **O-Moll** | Genuinely phase-oriented mollifier | **Open** |
-| **O-TL** | Target lemma \(\gg m\log\log X\) | **Open — primary** |
+| **O-M1.2** | Conditional effective M1.2 via density | **Architecture done** (`RH_M1_2_Effective_Density.md`); numerical density constants next |
+| **O-M1.3bis** | Path with \(\lvert\Delta\theta\rvert\gg\log\log X\) at special points | **Open** |
+| **O-PC** | Phase / discrepancy | **On-line strong Omega proved** (`RH_Resonance_Discrepancy_Attack.md`); O-TL locations **open** |
+| **O-Moll** | Phase-oriented mollifier | **Open** |
+| **O-TL** | Target lemma \(\gg m\log\log X\) at maximal abscissa | **Open — primary** |
 
-### Most concrete next analytic steps
+### Concrete steps (executed this increment)
 
-1. **Resonance / large-value attack** on the hybrid discrepancy \(\arg\zeta-\arg Z_X\) or \(\theta_X\).  
-2. **Fully effective conditional M1.2** from classical (explicit Ingham–Huxley) density theorems.
+1. **Resonance/Diophantine attack** — on-line \(\limsup\lvert\theta_X\rvert,\lvert\Delta_X\rvert\gg\sqrt{X}/\log X\) — **proved**.  
+2. **Conditional M1.2 from density** — majorant tree + HD-I — **written**; plug explicit \((A,B,C)\) remains.
 
-Infrastructure does **not** discharge O-TL. **Do not** weaken O-TL to \(\sqrt{\log\log X}\) without an explicit target change.
+**O-TL still open** (phase near zeros of maximal real part, not only limsup on the line).
 
 **Outside theorem env:** \(G_4\), \(\mu\), \(E_{\mathrm{leak}}\), 539.9 s.  
 **Literature:** `RH_Target_Lemma_Sketch_Literature_L5.md`; **Akatsuka–GHK:** `RH_Akatsuka_GHK_Survey.md`.  

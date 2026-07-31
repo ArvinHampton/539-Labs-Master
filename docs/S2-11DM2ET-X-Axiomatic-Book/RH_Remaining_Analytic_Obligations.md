@@ -15,9 +15,9 @@ These five obligations are the **open analytic core** of the phase programme. In
 
 | ID | Obligation | Status |
 |----|------------|--------|
-| **O-M1.2** | Uniform M1.2 under classical zero-density alone | **Open** |
+| **O-M1.2** | Uniform M1.2 under classical zero-density alone | **Architecture closed** under HD-I (`RH_M1_2_Effective_Density.md`); numerical \((A,B,C)\) plug-in open |
 | **O-M1.3bis** | Path design that accumulates argument to size \(\gg\log\log X\) | **Open** |
-| **O-PC** | Pair correlation / discrepancy \(\to\) phase lower bounds | **Partially resolved** — Omega \(\gg\sqrt{\log\log X}\) on the line proved (`RH_OPC_Omega_Discrepancy.md`); **strong** \(\gg\log\log X\) still **open** |
+| **O-PC** | Phase / discrepancy lower bounds | **On-line strong Omega** \(\limsup\lvert\theta_X\rvert,\lvert\Delta_X\rvert\gg\sqrt{X}/\log X\gg\log\log X\) **proved** (`RH_Resonance_Discrepancy_Attack.md`); off-line / O-TL points still **open** |
 | **O-Moll** | Construction of a genuinely phase-oriented mollifier | **Open** |
 | **O-TL** | The target lemma itself | **Open — primary** |
 
@@ -163,16 +163,16 @@ None of the five boxes is checked. **O-PC is first-class and open**, upstream of
 
 ---
 
-## Most concrete next steps (from solid-directions survey)
+## Concrete steps — execution status
 
-See `RH_Existing_Theorems_Solid_Directions.md` for the full toolkit (\(S(t)\) Omega, resonance, Gonek/GHK/Akatsuka, density, PCC).
+See `RH_Existing_Theorems_Solid_Directions.md`.
 
-| Priority | Step | Obligation |
-|----------|------|------------|
-| **1** | Resonance / large-value method for \(\Delta_X\) or \(\theta_X\) beyond \(\sqrt{\log\log X}\) | O-PC strong |
-| **2** | Fully effective conditional M1.2 via explicit Ingham–Huxley density | O-M1.2 |
+| Priority | Step | Status |
+|----------|------|--------|
+| **1** | Resonance / Diophantine attack on hybrid discrepancy | **Executed** — on-line strong Omega proved (`RH_Resonance_Discrepancy_Attack.md`) |
+| **2** | Fully effective conditional M1.2 via classical density | **Architecture executed** (`RH_M1_2_Effective_Density.md`); plug in published numerical density constants next |
 
-**O-TL remains open.** RH remains open.
+**O-TL remains open** (needs phase at maximal-abscissa zeros, not only limsup on the line). RH remains open.
 
 ## Explicit non-claims
 

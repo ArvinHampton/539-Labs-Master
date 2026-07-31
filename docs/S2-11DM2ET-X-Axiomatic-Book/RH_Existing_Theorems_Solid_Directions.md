@@ -110,10 +110,10 @@ Convert almost-all isolation into an almost-all lower bound on the hybrid discre
 
 **None of these is known to succeed.** All stay inside **ZLA**.
 
-### Most concrete next analytic steps (programme decision)
+### Most concrete next analytic steps (programme decision) — **executed**
 
-1. A **resonance attack** on the hybrid discrepancy.  
-2. A **fully effective conditional M1.2** from classical density theorems.
+1. A **resonance / Diophantine attack** on the hybrid discrepancy — **`RH_Resonance_Discrepancy_Attack.md`** (on-line strong Omega **proved**).  
+2. A **fully effective conditional M1.2** from classical density — **`RH_M1_2_Effective_Density.md`** (architecture **written**).
 
 ---
 
