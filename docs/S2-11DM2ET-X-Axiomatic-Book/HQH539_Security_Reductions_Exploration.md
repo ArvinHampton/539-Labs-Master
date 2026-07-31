@@ -2,7 +2,7 @@
 
 **Status:** Category B exploration ledger — **no completed security reduction**.  
 **Audience:** internal foundation layer / selective peer review.  
-**Companions:** `Foundational_Arithmetic_Packaging.md`, `Object539_NonCircular_Construction.md`, `Resonant_Layer_Resolved.md`, `Discrete_Patterns_Residual_Carrier.md`, `Residual_Product_Complex.md`, Master `SECURITY.md`.
+**Companions:** `Foundational_Arithmetic_Packaging.md`, `Object539_NonCircular_Construction.md`, `Resonant_Layer_Resolved.md`, `Discrete_Patterns_Residual_Carrier.md`, `Residual_Product_Complex.md`, `HQH539_Formal_Games_and_Hard_Problem_Pi.md`, Master `SECURITY.md`.
 
 ---
 
@@ -121,25 +121,29 @@ May be used for combinatorial key material or diffusion schedules in **future** 
 
 A rigorous reduction would map the hardness of finding a **preimage**, **second preimage**, or **collision** for HQH-539 to a **well-defined hard problem**.
 
-### 3.1 Candidate hard problems (discussed; not established)
+### 3.1 Candidate hard problems (discussed; not established as hard)
 
 1. **Fixed-round inversion.** Invert the 539-step ternary iteration under the hard budget (and any projections / checksums present in the full primitive).  
 2. **Combinatorial preimage.** Recover a preimage across residual cores, charge/tower labels, or \(\mathcal{O}_{\mathrm{res}}\)-indexed schedules.  
 3. **Diffusion breakage.** Break diffusion properties induced by ternary branching under the fixed schedule (differential / linear distinguishers with non-negligible advantage).
 
+Formal combinatorial statement of (1)–(2) as hard problem **Π** (Resonant Path Problem): see `HQH539_Formal_Games_and_Hard_Problem_Pi.md`. Statement of Π is **not** a proof that Π is hard.
+
 ### 3.2 Explicitly *not* a standard reduction target (without extra hypotheses)
 
 Claims that rely on the physical **\(G_4=539.9\,\mathrm{s}\)** brane-leakage clock remain internal to S²-11DM²ET-X and are **not** reducible to standard number-theoretic assumptions without additional **physical** hypotheses. They must not be marketed as cryptographic hardness assumptions in the Category A sense.
 
-### 3.3 Completion criteria (none met)
+### 3.3 Completion criteria (2026-07-31 status)
 
 | Criterion | Status |
 |-----------|--------|
-| Precise game-based definitions (preimage / SPR / CR) for the published HQH-539 API | Pending full public reduction write-up |
-| Hard problem \(\Pi\) with accepted status or clear physical/combinatorial statement | Pending |
+| Precise game-based definitions (preimage / SPR / CR) for the published HQH-539 API | **Supplied** — `HQH539_Formal_Games_and_Hard_Problem_Pi.md` |
+| Hard problem \(\Pi\) with clear combinatorial statement | **Supplied** (Resonant Path Problem) — same note; **not** established as a standard hard problem |
 | PPT reduction \(R\) with advantage relation | **Not completed** |
 | Peer review / independent cryptanalysis | **Pending** |
 | Published reduction paper | **Not claimed** |
+
+Meeting criteria 1–2 does **not** complete a security reduction. Criteria 3–4 remain unmet.
 
 ---
 
@@ -153,7 +157,9 @@ Claims that rely on the physical **\(G_4=539.9\,\mathrm{s}\)** brane-leakage clo
 | Canonical T3 retained vs T4121 | Engineering choice from internal hardness observations |
 | SHA3-512 domain separation | Standard Category A front-end |
 | Statistical avalanche / KATs / constant-time \(T_3\) | Internal examination only |
-| **Formal security reduction** | **Pending** |
+| Game-based definitions (Pre / SPR / Col) | **Supplied** (2026-07-31) |
+| Hard problem Π statement | **Supplied** (2026-07-31); difficulty not proven |
+| **Formal security reduction** | **Pending** (no PPT reduction R) |
 | **Full cryptanalysis** | **Pending** |
 | **Independent verification** | **Pending** |
 
@@ -169,6 +175,7 @@ Claims that rely on the physical **\(G_4=539.9\,\mathrm{s}\)** brane-leakage clo
 | No-Go on \(\lambda=\ln 3/539\) from residue democracy | Intact; does not yield a Banach-rate reduction |
 | Architecture A on \(\mathcal{O}_{\mathrm{res}}\) | Combinatorial/topological programme; **not** a crypto proof |
 | Bott / \(KO\) discrete layer | Not a security reduction |
+| Pure residual algebra (Cat A) | Defines path space for Π; does **not** prove hardness of Π |
 
 ---
 
@@ -176,7 +183,8 @@ Claims that rely on the physical **\(G_4=539.9\,\mathrm{s}\)** brane-leakage clo
 
 HQH-539 is a **fixed-round ternary construction** whose length is supplied by the **non-circular packaging** under Principle (S). The residual carrier \(\mathcal{O}_{\mathrm{res}}\) enlarges the set of rigorously defined combinatorial objects that may be used for key material or diffusion, always under **residual-flux provenance**.
 
-**No completed security reduction is claimed.**  
+As of 2026-07-31, precise game definitions and a clear combinatorial statement of hard problem Π (Resonant Path Problem) are written down. **No PPT reduction and no independent peer review exist.** Therefore **no completed security reduction is claimed.**
+
 All statements of hardness remain under the locked language of **computational infeasibility with known methods**, pending **independent peer review of the full reduction**.
 
 Further exploration of concrete reduction arguments, unpublished parameters, or proprietary attack surfaces is **company confidential** and is **not** expanded here.
@@ -232,3 +240,6 @@ Option 3 (exactly two free \(T^\sharp\) basins) and the No-Go on \(\lambda=\ln 3
 
 **Carrier (if used):**
 > Optional combinatorial material may reference \(\mathcal{O}_{\mathrm{res}}\), the residual democratic charge-sector flux core of cardinality \(\lfloor(N_{\mathrm{flux}}-f_{\max})/9\rfloor\), not free \(T^\sharp\) basins.
+
+**Games and Π (definitions only):**
+> Game-based definitions (Preimage, Second-Preimage, Collision) and hard problem Π (Resonant Path Problem) are stated in `HQH539_Formal_Games_and_Hard_Problem_Pi.md`. They do not complete a security reduction.

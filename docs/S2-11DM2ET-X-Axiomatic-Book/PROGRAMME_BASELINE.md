@@ -99,7 +99,15 @@ Phase-0 / seed-orbit reports.
 
 **Canonical files:**  
 `HQH539_Security_Reductions_Exploration.md`,  
+`HQH539_Formal_Games_and_Hard_Problem_Pi.md` (criteria 1–2 supplied 2026-07-31; 3–4 unmet),  
 Master `SECURITY.md`.
+
+| Criteria (2026-07-31) | Status |
+|-----------------------|--------|
+| 1. Game definitions (Pre / SPR / Col) | **Supplied** |
+| 2. Hard problem Π (Resonant Path) | **Supplied** as statement; not proven hard |
+| 3. PPT reduction R | **Unmet** |
+| 4. Independent peer review | **Unmet** |
 
 ---
 
@@ -195,6 +203,7 @@ Continuum hopfion, torsion, or measure constructions remain **Category B design 
 | A3 geometry | `Architecture_A3_Geometric_BO_BSpin.md` |
 | H0 / Option 3 | `H0_539_Honest_Options.md` |
 | Security exploration | `HQH539_Security_Reductions_Exploration.md` |
+| Formal games + Π | `HQH539_Formal_Games_and_Hard_Problem_Pi.md` |
 | 9 Maths patterns | `Nine_Maths_Pattern_Exploration.md` |
 | Provenance integers | `PROVENANCE_TABLE.md` |
 
@@ -204,7 +213,7 @@ Continuum hopfion, torsion, or measure constructions remain **Category B design 
 
 > The combinatorial residual foundation is **locked**.  
 > Discrete Architecture A (**A0–A2**) is **locked**; continuous **A3** locked; **A4–A5** locked as **0-stem residual closure** on \(\mathcal{O}_{\mathrm{res}}^{\mathrm{disc}}\) only (`A4_BSPIN_LIFT_CLOSED_ON_O_RES_DISC`, `A5_KO_OMEGA0_SPIN_CLOSED_ON_O_RES`); **A4⁺** (full \(|E|\)) remains **open**.  
-> Free dynamics stay **Option 3**. Security stays **Category B exploration**. Continuum hopfion/torsion/measure contacts stay **Category B** relative to the residual foundation.
+> Free dynamics stay **Option 3**. Security stays **Category B exploration** (games + Π stated 2026-07-31; no PPT reduction). Continuum hopfion/torsion/measure contacts stay **Category B** relative to the residual foundation.
 
 ## Cat-B continuum fillings (open, not locked)
 
