@@ -303,6 +303,8 @@ O\bigl(\lvert\mathcal{E}_{\mathrm{GHK}}\rvert\bigr).
 
 **Status:** sketch with **explicit GHK-err**; full proof open under HD.
 
+**Implied constants.** Writing \(\lvert\mathcal{E}_{\mathrm{GHK}}\rvert\le c_1 X^{K+2}/(\lvert t\rvert\log X)^K+c_2 X^{-\sigma}\log X+c_3\) is legitimate with **finite effective** \(c_i\); their **numerical** values are **not tabulated** in GHK or the subsequent literature. Leave symbolic. See `RH_Moments_FunctionField_Constants_Survey.md` §3 (also: \(k=2\) moment polynomial proved; function-field analogs).
+
 ---
 
 ## 5. Numerical hybrid probe

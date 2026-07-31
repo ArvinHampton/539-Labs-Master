@@ -11,7 +11,8 @@
 `RH_M1_Explicit_Formula_Remainder.md` (M1: IvM remainder \(R_{\mathrm{IvM}}\), \(\mathcal{R}_x^{\mathrm{EP}}\)),  
 `RH_O1_Akatsuka_M1_Package.md` (O1: exact Akatsuka expansion + M1 remainder package),  
 `RH_M1_2_Remainder_Bound_Strategy.md` (M1.2 remainder bound),  
-`RH_Akatsuka_GHK_Survey.md` (Akatsuka expansions + GHK hybrid; M1.2-GHK).
+`RH_Akatsuka_GHK_Survey.md` (Akatsuka expansions + GHK hybrid; M1.2-GHK),  
+`RH_Moments_FunctionField_Constants_Survey.md` (\(k=2\) moments; function fields; \(c_1,c_2,c_3\) symbolic).
 
 ---
 
@@ -167,6 +168,7 @@ for an absolute constant \(c>0\) (depending only on \(\phi\)).
 | **L4** | Non-circular hypotheses (no presupposed Lyapunov / mean) | Open |
 | **L5** | Numerics: \(\theta_x\) or \(A_X\) at first on-line zeros vs artificial off-line points | **Executed** — `scripts/rh_L5_phase_diagnostic.py` (no RH claim) |
 | **GHK probe** | Hybrid \(P_X Z_X\) at zeros / off-line minima | **Executed** — `scripts/rh_GHK_hybrid_diagnostic.py` (no RH claim) |
+| **Moments / FF / \(c_i\)** | \(k=2\) polynomial; function-field RMT; M1.2 constants | **Surveyed** — \(c_i\) effective, **untabulated** (`RH_Moments_FunctionField_Constants_Survey.md`) |
 
 ---
 

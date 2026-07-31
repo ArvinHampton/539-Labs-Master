@@ -154,6 +154,18 @@ for fixed \(K\), away from poles/zeros already accounted for. Useful for \(A_X\)
 
 **Full hybrid form of M1.2** (peel local \(m\,U((s-\rho)\log X)\), bound distant \(U\) and \(\mathcal{E}_{\mathrm{GHK}}\)): see **Lemma M1.2-GHK** in `RH_Akatsuka_GHK_Survey.md` §4. Parallel to \(\operatorname{Im}\mathcal{R}_x^{\mathrm{EP}}\) here; GHK supplies the global identity \(\zeta=P_X Z_X(1+\mathrm{err})\) with those explicit errors.
 
+**Implied constants \(c_1,c_2,c_3\).** The shape
+\[
+\bigl\lvert\operatorname{Im}\mathcal{R}_X^{(\mathrm{EP})}(s)\bigr\rvert
+\le
+c_1\frac{X^{4}}{(\lvert t\rvert\log X)^2}
++
+c_2 X^{-\sigma}\log X
++
+c_3
+\]
+(\(K=2\) case; general \(K\) analogous) is **effective** once \(f\), \(K\), and a density theorem are fixed, but **no published numerical table** for \(c_1,c_2,c_3\) exists. Leave them **symbolic**; do not invent decimals. Survey: `RH_Moments_FunctionField_Constants_Survey.md` §3.
+
 ### 3.5 Akatsuka specialisation (O1)
 
 On the critical line, [Aka17] gives the **renormalized** limit package (O1-A)/(O1-A-log): factor \((\log x)^{-m}\) after pole renormalizer \(R_{\mathrm{pole}}\). That mass is essentially **real** (modulus). Argument growth off the line is **not** given by Akatsuka; it must come from \(\operatorname{Im}\mathcal{R}_x^{\mathrm{EP}}\) control + path design (this note).
@@ -373,6 +385,7 @@ Explicit formula / Hadamard
 | \(P_{\mathrm{arch}}\) | pole / archimedean integrated term |
 | \(E_x^{\mathrm{pow}}\) | prime-power discrepancy \(\log P_x-L_x^{\Lambda}\) |
 | \(R_{\mathrm{pole}}\) | Akatsuka pole renormalizer (critical line, O1) |
+| \(c_1,c_2,c_3\) | Effective implied constants in schematic hybrid remainder (M1.2-const); **untabulated** — see `RH_Moments_FunctionField_Constants_Survey.md` |
 | **HD** | height/density hypothesis package |
 | **TR** | truncation package |
 
@@ -385,6 +398,7 @@ Explicit formula / Hadamard
 | Strategy + decomposition (M1.2-dec) | **Written** |
 | Conditional lemma sketch | **Written** (not proved) |
 | M1.2-GHK (hybrid form + GHK-err) | **Stated** in `RH_Akatsuka_GHK_Survey.md` (not proved) |
+| Numeric \(c_1,c_2,c_3\) | **Symbolic** (effective, untabulated) — `RH_Moments_FunctionField_Constants_Survey.md` |
 | Numeric diagnostic (IvM/EP) | **Implemented** |
 | GHK hybrid diagnostic | **Executed** (no proof claim) |
 | Full proof of (M1.2) | **Open** |

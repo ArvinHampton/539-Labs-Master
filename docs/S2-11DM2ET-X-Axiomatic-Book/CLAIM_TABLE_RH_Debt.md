@@ -13,7 +13,10 @@
 | GHK hybrid \(\zeta=P_X Z_X(1+\mathrm{err})\) as M1.2 input | classical | Surveyed (`RH_Akatsuka_GHK_Survey.md`) |
 | M1.2-GHK conditional lemma (with GHK-err) | **S** | **Stated**; proof open |
 | GHK hybrid numeric probe | diagnostic | **Executed** (no RH claim) |
+| Fourth moment \(k=2\): full polynomial \(P_2\) | classical | **Proved** (Ingham / Heath-Brown / CFKRS form) |
+| Function-field RMT / CFKRS analogs | classical | **Theorems** in many cases; do not prove RH for \(\zeta\) |
+| Numerical values of M1.2 constants \(c_1,c_2,c_3\) | **A** honesty | **Effective, untabulated** — left **symbolic** |
 | Model debit / \(E_{\mathrm{leak}}\) / \(\mu\) / 539.9 as zeta theorem | **O** in theorem env | Motivation only |
 | Resonant Algebra \(\Rightarrow\) RH | **O** | Unrelated |
 
-Primary note: `RH_L1_Phase_Functional_CatA.md` · Survey: `RH_Akatsuka_GHK_Survey.md`
+Primary note: `RH_L1_Phase_Functional_CatA.md` · Surveys: `RH_Akatsuka_GHK_Survey.md`, `RH_Moments_FunctionField_Constants_Survey.md`
