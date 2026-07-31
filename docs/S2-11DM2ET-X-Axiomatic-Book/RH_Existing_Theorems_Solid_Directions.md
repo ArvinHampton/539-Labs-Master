@@ -105,12 +105,14 @@ The remaining solid directions are those that move **off the line**, make M1.2 *
 
 | Rank | Direction | Obligation | Status |
 |------|-----------|------------|--------|
-| **1** | **Mass-with-A under (RM) only** (polylog \(A\) on \(K_\star\)) | unconditional B_θ without full Iso_H | **Open** — preferred |
+| **1** | **Mass-with-A under (RM)** — polylog / average \(A\) on \(K_\star\) | unconditional B_θ without full Iso_H | **Open** — preferred |
 | **2** | **StripDens** | weakens Lip \(A\) | **Open** |
 | **3** | **Resonance off the line** | O-PC / O-TL | **Open** |
 | **4** | **Effective density constants** \((A,B,C)\) | O-M1.2 | Architecture accepted |
+| **5** | **Finite-product approximation off the line** (role: prime side) | residual shape; not Lip \(A\) | Role **recorded** |
+| **6** | **Path continuation from on-line Ω** | O-M1.3bis / O-TL | **Open** |
 
-**Recorded:** finite products; Ivić; Criteria A–D. Secondary: Iso_H; path continuation.
+**Recorded:** GHK/Gonek (prime side); Ivić; Criteria A–D. Secondary: full unconditional **(Iso_H)**.
 
 ### ND1 bridge (locked)
 
@@ -143,7 +145,7 @@ The strongest existing technology for the open obligations lies in:
 - and the almost-all consequences of pair correlation.
 
 **The primary obligation O-TL remains open.**  
-**Solid directions (updated):** (1) Mass-with-A under (RM) only; (2) StripDens; (3) resonance off the line; (4) effective density constants.
+**Solid directions (updated):** (1) Mass-with-A under (RM) — polylog/average \(A\) on \(K_\star\); (2) StripDens; (3) resonance off the line; (4) effective density constants; (5) finite-product approx off the line (prime side); (6) path continuation from on-line Ω.
 
 **RH remains open.**
 
@@ -151,6 +153,6 @@ The strongest existing technology for the open obligations lies in:
 
 ## One-liner
 
-**Solid pure-Cat-A directions are Mass-with-A under (RM), StripDens, off-line resonance, and effective density constants — none yet closes O-TL or RH.**
+**Solid pure-Cat-A directions are Mass-with-A, StripDens, off-line resonance, density constants, finite products off the line, and path continuation from on-line Ω — none yet closes O-TL or RH.**
 
 *Per aspera ad astra.*

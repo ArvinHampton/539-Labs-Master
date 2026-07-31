@@ -113,10 +113,12 @@ If **yes**, OP1 mass (and thus B_θ) would follow **without full (Iso_H)**.
 
 | Rank | Direction |
 |------|-----------|
-| **1** | **Mass-with-A under (RM) only** |
+| **1** | **Mass-with-A under (RM)** — polylog / average \(A\) on \(K_\star\) |
 | **2** | **StripDens** |
 | **3** | **Resonance off the line** |
 | **4** | **Effective density constants** |
+| **5** | **Finite-product approximation off the line** (role: prime side) |
+| **6** | **Path continuation from on-line Ω** |
 
 **No claim** that (Iso_H) or B_θ is closed.
 

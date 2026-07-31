@@ -167,10 +167,12 @@ None of the five boxes is checked. **O-PC is first-class and open**, upstream of
 
 | Rank | Direction | Status |
 |------|-----------|--------|
-| **1** | **Mass-with-A under (RM) only** | **Open** (core: polylog \(A\) on \(K_\star\); ⇒B_θ proved) |
+| **1** | **Mass-with-A under (RM)** — polylog / average \(A\) on \(K_\star\) | **Open** (⇒B_θ proved as implication) |
 | **2** | **StripDens** | **Open** |
 | **3** | **Resonance off the line** | **Open** |
 | **4** | **Effective density constants** | Architecture accepted; numerical \((A,B,C)\) open |
+| **5** | **Finite-product approx off the line** (prime side; not Lip \(A\)) | Role **recorded** |
+| **6** | **Path continuation from on-line Ω** | **Open** |
 
 ### Scoreboard (this pass)
 

@@ -35,7 +35,7 @@
 | O-PC / phase at maximal-abscissa zeros | **S** | **Open** |
 | O-TL target lemma | **S** | **Open — primary not closed** |
 | O-Moll phase-oriented mollifier | **S** | **Open** |
-| Solid directions: Mass-with-A; StripDens; resonance off-line; density constants | programme | **Frozen** |
+| Solid directions: Mass-with-A; StripDens; resonance off-line; density constants; finite products off-line; path from on-line Ω | programme | **Frozen** |
 | ND1: conjugate lock; (RM)+L2 good points | **A** | **Proved** (`RH_ND1_Stability_Resolve.md`) |
 | ND1: (RM)+(Iso_H) ⇒ OP1 / B_θ | **A** | **Proved** (conditional) — **acceptance locked** |
 | Classical constraints on Iso_H (finite-height trivial; FE conjugate only; density/mult. insufficient) | **A** | **Recorded** (`RH_Iso_H_Classical_Constraints.md`) |
