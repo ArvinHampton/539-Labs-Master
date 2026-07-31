@@ -68,20 +68,28 @@ Solid toolkit + ranked directions: **`RH_Existing_Theorems_Solid_Directions.md`*
 1. On-line Kronecker / model-\(\operatorname{Im} D_X\) + hybrid discrepancy Omega (fixed \(X\)); continuous-arg caveat.  
 2. Conditional M1.2 architecture (dyadic far zeros + classical density shape).
 
+### Density vs isolation — **locked**
+
+| | Density | Isolation |
+|---|---------|-----------|
+| Object | Bulk \(N(\sigma,T)\) | Local geometry |
+| Feeds \(A\) | Yes: \(M\Rightarrow A\ll M\log T\) | Only if strong (e.g. Iso_H) |
+
+Maynard–Pratt half-isolation / Hypothesis F ⇒ better density (**not** Iso_H). Levinson–Ivić horizontal near \(\sigma=1\) (**not** Iso_H). Note: `RH_Density_vs_Isolation.md`.
+
 ### Solid directions (frozen)
 
 | Rank | Direction |
 |------|-----------|
-| **1** | **Mass-with-A under (RM)** — polylog / average \(A\) on \(K_\star\) |
-| **2** | **StripDens** |
-| **3** | **Resonance off the line** |
-| **4** | **Effective density constants** |
-| **5** | **Finite-product approximation off the line** (role: prime side) |
-| **6** | **Path continuation from on-line Ω** |
+| **1** | **Effective density at moderate \(\sigma\)** |
+| **2** | **(Iso_H) technology** |
+| **3** | **Path continuation from on-line Ω** |
+| **4** | **Resonance off the line** |
+| **5** | **Mass-with-A under (RM)** |
 
-Scoreboard: `RH_Status_Scoreboard_Freeze.md`. Density vs isolation: `RH_Density_vs_Isolation.md`.
+Scoreboard: `RH_Status_Scoreboard_Freeze.md`.
 
-**ND1 locked.** **Still open:** Iso_H; polylog StripDens; unconditional Mass-with-A / B_θ / O-TL; RH.
+**ND1 locked.** **No claim** of Iso_H, Hypothesis F, or B_θ. **Still open:** Iso_H; polylog StripDens; unconditional Mass-with-A / B_θ / O-TL; RH.
 
 **Outside theorem env:** \(G_4\), \(\mu\), \(E_{\mathrm{leak}}\), 539.9 s.  
 **Literature:** `RH_Target_Lemma_Sketch_Literature_L5.md`; **Akatsuka–GHK:** `RH_Akatsuka_GHK_Survey.md`.  

@@ -61,19 +61,19 @@ B_θ is blocked by **abscissa isolation** (or **strong strip density**) on the r
 
 ---
 
-## Solid directions (frozen)
+## Solid directions (frozen — density vs isolation pass)
 
-Aligned with Master solid-direction freeze (`153c903` lineage; current programme list):
+Aligned with Master `f3c9e91` / `a26b1ce` pure package; density vs isolation **locked**.
 
 | Rank | Direction |
 |------|-----------|
-| **1** | **Mass-with-A under (RM)** — polylog / average \(A\) on \(K_\star\) |
-| **2** | **StripDens** |
-| **3** | **Resonance off the line** |
-| **4** | **Effective density constants** |
-| **5** | **Finite-product approximation off the line** (role: prime side) |
-| **6** | **Path continuation from on-line Ω** |
+| **1** | **Effective density at moderate \(\sigma\)** |
+| **2** | **(Iso_H) technology** |
+| **3** | **Path continuation from on-line Ω** |
+| **4** | **Resonance off the line** |
+| **5** | **Mass-with-A under (RM)** |
 
+**No claim** of Iso_H, Hypothesis F, or B_θ.  
 None of these is known to close B_θ or RH.
 
 ---

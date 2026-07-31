@@ -39,7 +39,7 @@
 | (RM)+(polylog StripDens) ⇒ Mass-with-A | **A** | **Proved implication** |
 | Absolute average of \(A\) as free saving | — | **Non-route** (closed) |
 | Left abscissa contribution to \(A\) under (RM) | **A** | **Dies exponentially** |
-| Solid directions 1–6 (Mass-with-A; StripDens; resonance; density constants; finite products; path from Ω) | programme | **Frozen** (`RH_Status_Scoreboard_Freeze.md`) |
+| Solid directions 1–5 (density at moderate σ; Iso_H tech; path from on-line Ω; resonance off-line; Mass-with-A) | programme | **Frozen** (`RH_Status_Scoreboard_Freeze.md`, `RH_Density_vs_Isolation.md`) |
 | ND1: conjugate lock; (RM)+L2 good points | **A** | **Proved** (`RH_ND1_Stability_Resolve.md`) |
 | ND1: (RM)+(Iso_H) ⇒ OP1 / B_θ | **A** | **Proved** (conditional) — **acceptance locked** |
 | Classical constraints on Iso_H (finite-height trivial; FE conjugate only; density/mult. insufficient) | **A** | **Recorded** (`RH_Iso_H_Classical_Constraints.md`) |

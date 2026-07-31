@@ -165,17 +165,17 @@ None of the five boxes is checked. **O-PC is first-class and open**, upstream of
 
 ## Solid directions (frozen)
 
-Scoreboard: `RH_Status_Scoreboard_Freeze.md`.
+Scoreboard: `RH_Status_Scoreboard_Freeze.md` · Density vs isolation: `RH_Density_vs_Isolation.md` (**locked**).
 
 | Rank | Direction | Status |
 |------|-----------|--------|
-| **1** | **Mass-with-A under (RM)** — polylog / average \(A\) on \(K_\star\) | **Open** (⇒B_θ proved as implication) |
-| **2** | **StripDens** (polylog for arbitrary \(\beta_\star>1/2\)) | **Open** |
-| **3** | **Resonance off the line** | **Open** |
-| **4** | **Effective density constants** | Architecture accepted |
-| **5** | **Finite-product approx off the line** (prime side) | Role recorded |
-| **6** | **Path continuation from on-line Ω** | **Open** |
+| **1** | **Effective density at moderate \(\sigma\)** | **Open** |
+| **2** | **(Iso_H) technology** | **Open** |
+| **3** | **Path continuation from on-line Ω** | **Open** |
+| **4** | **Resonance off the line** | **Open** |
+| **5** | **Mass-with-A under (RM)** | **Open** (⇒B_θ proved as implication) |
 
+**No claim** of Iso_H, Hypothesis F, or B_θ.  
 **Barrier:** Iso_H or polylog StripDens open; absolute average of \(A\) = **non-route** (closed).
 
 ### Scoreboard (this pass)

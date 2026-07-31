@@ -119,7 +119,7 @@ Half-isolation and Levinson isolation are **different geometric objects**; neith
 
 ---
 
-## 5. Solid directions (updated)
+## 5. Solid directions (frozen)
 
 | Rank | Direction |
 |------|-----------|
@@ -129,6 +129,7 @@ Half-isolation and Levinson isolation are **different geometric objects**; neith
 | **4** | **Resonance off the line** |
 | **5** | **Mass-with-A under (RM)** |
 
+Density vs isolation distinction in §3 is **locked**.  
 **No claim** that (Iso_H), Hypothesis F, or B_θ is proved.
 
 ---
