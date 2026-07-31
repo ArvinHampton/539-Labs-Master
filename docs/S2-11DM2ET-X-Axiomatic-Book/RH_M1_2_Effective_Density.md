@@ -5,6 +5,9 @@
 **Does not prove RH or O-TL.**  
 **Does:** insert a classical zero-density bound into the GHK / regularised-remainder majorant tree and state a **fully effective conditional** form of M1.2 on a concrete height range.
 
+**Accepted programme status (2026-07-31).**  
+The architecture (dyadic annuli + classical \(N(\sigma,T)\le C\,T^{A(1-\sigma)^{3/2}}(\log T)^B\) → effective supremum on \(\operatorname{Im} R_{\mathrm{reg}}\) along an M1.3 path) is **admissible**. It becomes **fully numerical** once published constants \((A,B,C)\) are inserted. That insertion remains open.
+
 **Companions:** `RH_M1_2_Explicit_Hybrid_Constants.md`, `RH_M1_2_Optimized_ci_Bounds.md`, `RH_M1_2_Remainder_Bound_Strategy.md`, `RH_Existing_Theorems_Solid_Directions.md`.
 
 ---

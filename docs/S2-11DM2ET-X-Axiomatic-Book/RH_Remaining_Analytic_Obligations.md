@@ -15,9 +15,9 @@ These five obligations are the **open analytic core** of the phase programme. In
 
 | ID | Obligation | Status |
 |----|------------|--------|
-| **O-M1.2** | Uniform M1.2 under classical zero-density alone | **Architecture closed** under HD-I (`RH_M1_2_Effective_Density.md`); numerical \((A,B,C)\) plug-in open |
+| **O-M1.2** | Uniform M1.2 under classical zero-density alone | **Architecture accepted** (`RH_M1_2_Effective_Density.md`); numerical \((A,B,C)\) **open** |
 | **O-M1.3bis** | Path design that accumulates argument to size \(\gg\log\log X\) | **Open** |
-| **O-PC** | Phase / discrepancy lower bounds | **On-line strong Omega** \(\limsup\lvert\theta_X\rvert,\lvert\Delta_X\rvert\gg\sqrt{X}/\log X\gg\log\log X\) **proved** (`RH_Resonance_Discrepancy_Attack.md`); off-line / O-TL points still **open** |
+| **O-PC** | Phase / discrepancy | **On-line strong Omega accepted** (model \(\operatorname{Im} D_X\) + hybrid discrepancy; fixed \(X\); continuous-arg caveat) — `RH_Resonance_Discrepancy_Attack.md`; **O-TL locations open** |
 | **O-Moll** | Construction of a genuinely phase-oriented mollifier | **Open** |
 | **O-TL** | The target lemma itself | **Open — primary** |
 

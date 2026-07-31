@@ -31,9 +31,9 @@
 | O-M1.2 under classical density (architecture) | **A** | **Written** (`RH_M1_2_Effective_Density.md`); numerical density constants open |
 | O-M1.3bis path \(\gg\log\log X\) at special points | **S** | **Open** |
 | O-PC typical Omega \(\gg\sqrt{\log\log X}\) on the line | **A** | **Proved** (`RH_OPC_Omega_Discrepancy.md`) |
-| O-PC strong on-line Omega \(\gg\sqrt{X}/\log X\gg\log\log X\) | **A** | **Proved** (`RH_Resonance_Discrepancy_Attack.md`) |
+| O-PC strong on-line Omega (model \(\operatorname{Im} D_X\) + hybrid disc.; fixed \(X\)) | **A** | **Accepted** (`RH_Resonance_Discrepancy_Attack.md`); continuous-arg caveat frozen |
 | O-PC / phase at maximal-abscissa zeros | **S** | **Open** |
-| O-TL target lemma | **S** | **Open — primary** |
+| O-TL target lemma | **S** | **Open — primary not closed** |
 | O-Moll phase-oriented mollifier | **S** | **Open** |
 | Solid directions + resonance + density M1.2 | **A** | **Executed as notes** |
 | Model debit / \(E_{\mathrm{leak}}\) / \(\mu\) / 539.9 as zeta theorem | **O** in theorem env | Motivation only |

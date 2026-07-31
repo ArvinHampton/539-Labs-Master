@@ -212,7 +212,7 @@ Status `CAT_B_CONTINUUM_FILLINGS_OPEN_NOT_LOCKED`. Firewall: \(K^+\) homology �
 
 ## Riemann Hypothesis — **open, active pure Cat A path (not frozen)**
 
-Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. **Axiom ZLA frozen**. **On-line strong Omega** for \(\theta_X,\Delta_X\): \(\limsup\gg\sqrt{X}/\log X\gg\log\log X\) (`RH_Resonance_Discrepancy_Attack.md`). **Conditional M1.2 architecture** under classical density (`RH_M1_2_Effective_Density.md`). **O-TL** (phase at maximal-abscissa zeros) and **RH** remain **open**.
+Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. **Axiom ZLA frozen**. **On-line strong Omega accepted** (Kronecker / \(\operatorname{Im} D_X\) + hybrid discrepancy; fixed \(X\); continuous-arg caveat) — `RH_Resonance_Discrepancy_Attack.md`. **Conditional M1.2 architecture accepted**; numerical density constants open — `RH_M1_2_Effective_Density.md`. **Primary O-TL not closed.** Off-line Omega, density constants, **RH** open.
 
 ## Shell restriction r_W
 

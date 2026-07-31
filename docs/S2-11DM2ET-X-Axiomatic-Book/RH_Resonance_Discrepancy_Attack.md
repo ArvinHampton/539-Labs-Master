@@ -3,7 +3,10 @@
 **Status label:** `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`  
 **Category:** pure **A**. Axiom **ZLA**. No model constants.  
 **Does not prove RH or O-TL.**  
-**Does:** upgrade the on-line Omega for \(\theta_X\) and \(\Delta_X=\arg\zeta-\arg Z_X\) from the mean-square scale \(\sqrt{\log\log X}\) to the **coefficient-sum scale** \(\gg\sqrt{X}/\log X\) (hence \(\gg\log\log X\)) via Kronecker density on the prime-angle torus; record the resonance programme for further gains off the line.
+**Does:** upgrade the on-line Omega for the **model / principal** imaginary part of \(\log P_X\) and for the hybrid discrepancy from the mean-square scale \(\sqrt{\log\log X}\) to \(\gg\sqrt{X}/\log X\) (hence \(\gg\log\log X\)) via Kronecker density on the prime-angle torus.
+
+**Accepted programme status (2026-07-31).**  
+On-line strengthening **accepted** at the level of the hybrid discrepancy and the model phase of the partial product, for **fixed** truncation \(X\), on the **critical line** only. Continuous lifting of the argument is subject to the caveat in §5a. **O-TL is not closed.**
 
 **Companions:** `RH_OPC_Omega_Discrepancy.md`, `RH_OPC_Partial_Resolution.md`, `RH_Existing_Theorems_Solid_Directions.md`.
 
@@ -240,17 +243,29 @@ The argument is **Diophantine / Kronecker** rather than Soundararajan’s weight
 
 | Claim | Status |
 |-------|--------|
-| On-line \(\limsup_t\lvert\theta_X\rvert\gg\sqrt{X}/\log X\) (fixed \(X\)) | **Proved** |
-| On-line \(\limsup_t\lvert\Delta_X\rvert\gg\log\log X\) (fixed large \(X\)) | **Proved** |
-| Strong O-PC on the **critical line** (liminf of max phase / discrepancy at scale \(\log\log X\)) | **Discharged** in the limsup-\(t\) sense of Theorem R-Δ |
-| \(\lvert A_X\rvert\gg\log\log X\) at zeros of **maximal real part** (O-TL) | **Open** |
-| Off-line Omega at \(\sigma\ge Y-\varepsilon\) | **Open** |
-| Uniform M1.2 | **Open** (see companion density note) |
+| On-line limsup of \(\lvert\operatorname{Im} D_X\rvert\gg\sqrt{X}/\log X\) (fixed \(X\)) | **Proved** (model / principal imaginary part) |
+| On-line limsup of hybrid discrepancy \(\lvert\Delta_X\rvert\gg\log\log X\) (fixed large \(X\)) | **Accepted** (GHK error absorbed as \(t\to\infty\)) |
+| Continuous argument \(\theta_X\) by path integration from a fixed base point | **Caveat** — see §5a; not automatically identical to principal \(\operatorname{Im} D_X\) at the torus max |
+| Strong on-line Omega for discrepancy / model phase (scale \(\gg\log\log X\)) | **Accepted** as a genuine strengthening of mean-square \(\sqrt{\log\log X}\); **line + fixed \(X\) only** |
+| \(\lvert A_X\rvert\gg\log\log X\) at zeros of **maximal real part** (O-TL) | **Open — primary not closed** |
+| Off-line Omega at maximal abscissa | **Open** |
+| Insertion of numerical density constants for M1.2 | **Open** (architecture elsewhere) |
 | RH | **Open** |
 
 **Interpretation.**  
-The obstacle “typical size is only \(\sqrt{\log\log X}\)” is **not** an obstruction to **Omega** on the line: almost-periodic alignment yields \(\gg\sqrt{X}/\log X\).  
-O-TL still requires large phase **at special points** (near a zero of maximal abscissa), not merely somewhere on the critical line.
+Mean-square scale \(\sqrt{\log\log X}\) is **not** the ceiling for Omega on the line: Kronecker alignment yields \(\gg\sqrt{X}/\log X\).  
+O-TL still requires large phase **near zeros of maximal real part**, not merely a limsup on the critical line.
+
+### 5a. Continuous-argument caveat (frozen)
+
+For fixed \(X\), \(P_X(\tfrac12+it)=\exp(D_X(t))\) with \(D_X\) entire in the exponent as a finite sum — so \(D_X(t)\) itself is a **single-valued** continuous almost-periodic function, and \(\operatorname{Im} D_X(t)\) is unambiguous.
+
+The programme’s continuous argument \(\theta_X\) is sometimes defined by **integrating the phase derivative along a path** from a fixed base point. That lifting can differ from the principal value \(\operatorname{Im} D_X\) by jumps of \(2\pi\) if an artificial branch is chosen inconsistently.
+
+**Standing rule.**  
+- The Omega claim is **clean** for \(\operatorname{Im} D_X\) (model / principal imaginary part of \(\log P_X\)) and for the hybrid discrepancy after GHK.  
+- Any claim about a path-integrated continuous argument requires the usual **branch-management** argument (track \(\operatorname{Im} D_X\) itself, which already is continuous in \(t\)).  
+- The on-line strengthening is **accepted** at hybrid-discrepancy and model-phase level; it is **not** rebranded as a completed continuous-\(A_X\) form of O-TL.
 
 ---
 

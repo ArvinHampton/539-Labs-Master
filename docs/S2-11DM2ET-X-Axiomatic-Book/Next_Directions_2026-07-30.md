@@ -63,12 +63,13 @@ Solid toolkit + ranked directions: **`RH_Existing_Theorems_Solid_Directions.md`*
 | **O-Moll** | Phase-oriented mollifier | **Open** |
 | **O-TL** | Target lemma \(\gg m\log\log X\) at maximal abscissa | **Open — primary** |
 
-### Concrete steps (executed this increment)
+### Concrete steps (accepted status)
 
-1. **Resonance/Diophantine attack** — on-line \(\limsup\lvert\theta_X\rvert,\lvert\Delta_X\rvert\gg\sqrt{X}/\log X\) — **proved**.  
-2. **Conditional M1.2 from density** — majorant tree + HD-I — **written**; plug explicit \((A,B,C)\) remains.
+1. **Resonance/Diophantine on-line strengthening** — **accepted** for hybrid discrepancy and model \(\operatorname{Im} D_X\) (fixed \(X\), critical line); continuous-arg caveat recorded (`RH_Resonance_Discrepancy_Attack.md` §5a).  
+2. **Conditional M1.2 architecture** — **accepted**; insert published \((A,B,C)\) for full numerics (`RH_M1_2_Effective_Density.md`).
 
-**O-TL still open** (phase near zeros of maximal real part, not only limsup on the line).
+**Still open (unchanged):** O-TL (primary); off-line Omega at maximal abscissa; numerical density constants; RH.  
+**Primary obligation not closed.**
 
 **Outside theorem env:** \(G_4\), \(\mu\), \(E_{\mathrm{leak}}\), 539.9 s.  
 **Literature:** `RH_Target_Lemma_Sketch_Literature_L5.md`; **Akatsuka–GHK:** `RH_Akatsuka_GHK_Survey.md`.  
