@@ -6,7 +6,8 @@
 **Forbidden in theorems:** \(G_4\), \(\mu\), \(E_{\mathrm{leak}}\), \(539.9\,\mathrm{s}\), phonon / brane language, residual packaging integers as zeta lemmas.
 
 **Companions:** `RH_Debt_Argument_Status.md` (programme stance), `CLAIM_TABLE_RH_Debt.md`,  
-`RH_Target_Lemma_Sketch_Literature_L5.md` (Akatsuka→arg lift sketch, literature, L5 plan).
+`RH_Target_Lemma_Sketch_Literature_L5.md` (lift sketch, literature, L5 plan),  
+`RH_Akatsuka_Theorem_Extract.md` (exact [Aka17] statements vs (★)).
 
 ---
 

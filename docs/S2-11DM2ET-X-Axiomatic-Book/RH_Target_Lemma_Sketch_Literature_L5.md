@@ -51,31 +51,34 @@ A_X(\sigma,t)
 \frac{du}{\log X}.
 \]
 
-### I.2 What Akatsuka-type expansions supply (structure)
+### I.2 What Akatsuka actually supplies (corrected)
 
-Akatsuka [Aka17] studies **pointwise** asymptotics of the partial Euler product of \(\zeta\) on the **right half** of the critical strip. The structural mechanism relevant here (as used in our target-lemma programme) is:
+**Full line-by-line extract:** `RH_Akatsuka_Theorem_Extract.md`.
 
-> If \(Y\le\sigma_0<1\) and \(s_0=\sigma_0+it_0\) is a zero of multiplicity \(m\), then the asymptotic expansion of \(\log P_x(s_0)\) (or of a closely related partial sum for \(\log\zeta\)) contains a term of the shape
-> \[
-> m\log\log x
-> \]
-> (plus lower-order / oscillatory contributions controlled by primes and other zeros).
+Akatsuka [Aka17] does **not** state the off-line schematic (★) as a theorem. The main quoted theorem is a **critical-line** DRH-type equivalence:
 
-More schematically, at \(s_0=\beta+i\gamma\) with \(\beta=Y\),
+- \(\psi(x)=x+o(\sqrt{x}\log x)\)  
+  \(\Leftrightarrow\)  
+- renormalized limit of \((\log x)^m\zeta_x(\tfrac12+i\tau)\) exists and is nonzero  
+  ( \(m=\) order of \(\zeta\) at that point),  
+with RH as a consequence of the DRH-scale condition, and an explicit limit involving \(\sqrt{2}\) when \(\tau=0\).
+
+If that limit is a nonzero constant \(C\), then on the line
 \begin{equation}
-\label{eq:akatsuka-shape}
-\log P_x(\beta+i\gamma)
+\log\zeta_x\bigl(\tfrac12+i\tau\bigr)
 =
-m\log\log x
+-m\log\log x
 +
-C_0
+R_{\mathrm{pole}}(x)
 +
-E(x;\beta,\gamma),
-\tag{★}
+\log C
++
+o(1)
+\tag{★\(_\mathrm{line}\)}
 \end{equation}
-where \(C_0\) is slowly varying or constant in the main-term scale, and \(E\) is an error that is \(o(\log\log x)\) along a suitable sequence \(x\to\infty\), or at least does not cancel the main term along a subsequence (this cancellation control is part of what must be proved rigorously from [Aka17] + explicit formulae — **open work**).
+— so the \(m\log\log\) mechanism is a factor \((\log x)^{-m}\) in the **renormalized product on \(\mathrm{Re}=\tfrac12\)**, not an automatic off-line argument bound.
 
-**Caveat (honest):** (★) is the **shape** of the expansion that the target lemma needs. Exact hypotheses, ranges of \(\sigma\), and error terms must be read from [Aka17] and checked against L1’s continuous branch. This note is a **proof sketch of the lift**, not a citation of a theorem already stated for \(A_X\).
+**Off-line** zero \(\Rightarrow\) product pathology is closer to [Aka17, Thm 2] (product asymptotics \(\Leftrightarrow\) zero-free half-plane, per abstract page) and to [Aka24, Prop. 7.1] (\(\Omega_+\) for real weighted prime sums when \(\Theta>\kappa\)). The **target lemma for \(A_X\) at \(Y>1/2\)** remains **open** and is not a direct quote of [Aka17].
 
 ### I.3 Real and imaginary parts
 
