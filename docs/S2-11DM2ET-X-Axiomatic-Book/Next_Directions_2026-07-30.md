@@ -50,20 +50,25 @@ Status `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. Primary: `RH_L1_Phase_Functional_Cat
 | L3 / Conjecture B | Off-line diagnostics in batch R4 — **open as theorem** |
 | L5 | **Executed** — `scripts/rh_L5_phase_diagnostic.py` |
 
-### Remaining analytic obligations (**unchanged** — open core)
+### Remaining analytic obligations (open core)
 
-Full ledger: **`RH_Remaining_Analytic_Obligations.md`**.
+Full ledger: **`RH_Remaining_Analytic_Obligations.md`**.  
+Solid toolkit + ranked directions: **`RH_Existing_Theorems_Solid_Directions.md`**.
 
 | ID | Obligation | Status |
 |----|------------|--------|
-| **O-M1.2** | Uniform M1.2 under classical zero-density alone | **Open** |
+| **O-M1.2** | Uniform M1.2 under classical zero-density alone | **Open** — next: explicit density \(\to\) effective \(c_3\) |
 | **O-M1.3bis** | Path with \(\lvert\Delta\theta\rvert\gg\log\log X\) | **Open** |
-| **O-PC** | Phase / discrepancy lower bounds | **Typical Omega proved** \(\gg\sqrt{\log\log X}\) on the line (`RH_OPC_Omega_Discrepancy.md`); **strong** \(\gg\log\log X\) **open** |
-| **O-TL** | Target lemma \(\gg m\log\log X\) | **Open** — requires strong Omega or revised target |
+| **O-PC** | Phase / discrepancy lower bounds | Typical Omega **proved**; **strong** \(\gg\log\log X\) **open** — next: resonance |
 | **O-Moll** | Genuinely phase-oriented mollifier | **Open** |
-| **O-TL** | Target lemma itself | **Open — primary** |
+| **O-TL** | Target lemma \(\gg m\log\log X\) | **Open — primary** |
 
-Infrastructure (GHK, \(c_i\), HD-low diagnostics, ZLA, L4, batch R1–R5) does **not** discharge these.
+### Most concrete next analytic steps
+
+1. **Resonance / large-value attack** on the hybrid discrepancy \(\arg\zeta-\arg Z_X\) or \(\theta_X\).  
+2. **Fully effective conditional M1.2** from classical (explicit Ingham–Huxley) density theorems.
+
+Infrastructure does **not** discharge O-TL. **Do not** weaken O-TL to \(\sqrt{\log\log X}\) without an explicit target change.
 
 **Outside theorem env:** \(G_4\), \(\mu\), \(E_{\mathrm{leak}}\), 539.9 s.  
 **Literature:** `RH_Target_Lemma_Sketch_Literature_L5.md`; **Akatsuka–GHK:** `RH_Akatsuka_GHK_Survey.md`.  

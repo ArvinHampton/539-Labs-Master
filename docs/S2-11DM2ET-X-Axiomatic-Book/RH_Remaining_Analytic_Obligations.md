@@ -163,14 +163,26 @@ None of the five boxes is checked. **O-PC is first-class and open**, upstream of
 
 ---
 
+## Most concrete next steps (from solid-directions survey)
+
+See `RH_Existing_Theorems_Solid_Directions.md` for the full toolkit (\(S(t)\) Omega, resonance, Gonek/GHK/Akatsuka, density, PCC).
+
+| Priority | Step | Obligation |
+|----------|------|------------|
+| **1** | Resonance / large-value method for \(\Delta_X\) or \(\theta_X\) beyond \(\sqrt{\log\log X}\) | O-PC strong |
+| **2** | Fully effective conditional M1.2 via explicit Ingham–Huxley density | O-M1.2 |
+
+**O-TL remains open.** RH remains open.
+
 ## Explicit non-claims
 
 | Claim | Status |
 |-------|--------|
-| Any of O-M1.2 … O-TL proved | **No** |
+| O-TL / strong O-PC / RH proved | **No** |
+| Typical Omega \(\gg\sqrt{\log\log X}\) for \(\theta_X,\Delta_X\) on the line | **Yes** (programme theorem) |
 | Diagnostics imply O-TL | **No** |
 | ZLA / L4 / \(c_i\) / GHK survey close RH | **No** |
-| RH | **Open** |
+| Silent weakening of O-TL to \(\sqrt{\log\log X}\) | **Not adopted** |
 
 ---
 
