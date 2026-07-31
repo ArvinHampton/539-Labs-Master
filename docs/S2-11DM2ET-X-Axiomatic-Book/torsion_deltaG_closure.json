@@ -1,0 +1,36 @@
+{
+  "eta_geom_locked": 0.150278293135436,
+  "alpha_proj_star": 1.2319600392929988e-49,
+  "alpha_proj_formula": "\u03b5 \u00d7 \u03ba_dark \u00d7 (l_Pl/\u03bb_G4) \u00d7 (118/539)",
+  "lambda_G4_m": 161857948074.19998,
+  "l_Pl_m": 1.61625502392855e-35,
+  "frac_DM_accel_1AU": 1.1692739729022752e-17,
+  "branch_DM_only_Mirror_consistent": {
+    "deltaG_G_Cavendish": 0.0,
+    "deltaG_G_AI_metric": 0.0,
+    "deltaG_G_AI_spin": 4.849029436188689e-65,
+    "deltaG_G_ephemeris_amplitude": 1.7571649685544396e-18,
+    "passes_all_bounds": true
+  },
+  "branch_universal_G_shift": {
+    "deltaG_G_all_experiments_f1": 1.8513685191601652e-50,
+    "deltaG_G_Cavendish_dipole": 5.719115252565321e-63,
+    "passes_cav_homogeneous": true,
+    "passes_eph_homogeneous": true,
+    "passes_cav_dipole": true
+  },
+  "bounds": {
+    "Cavendish": 2.2e-05,
+    "AI": 0.00015,
+    "ephemeris_periodic": 1e-10
+  },
+  "locked_integers": {
+    "N_flux": 4880,
+    "N_sigma": 539,
+    "N_punct": 61,
+    "N_tow": 243,
+    "N_elem": 118,
+    "L_pref": 18,
+    "L_body": 521
+  }
+}
