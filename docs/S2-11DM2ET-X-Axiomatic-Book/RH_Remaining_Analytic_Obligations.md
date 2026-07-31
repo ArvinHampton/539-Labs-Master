@@ -163,19 +163,20 @@ None of the five boxes is checked. **O-PC is first-class and open**, upstream of
 
 ---
 
-## Solid directions (current)
+## Solid directions (frozen)
 
-See `RH_Density_vs_Isolation.md`.
+Scoreboard: `RH_Status_Scoreboard_Freeze.md`.
 
 | Rank | Direction | Status |
 |------|-----------|--------|
-| **1** | **Effective density at moderate \(\sigma\)** | **Open** |
-| **2** | **(Iso_H) technology** | **Open** |
-| **3** | **Path continuation from on-line Ω** | **Open** |
-| **4** | **Resonance off the line** | **Open** |
-| **5** | **Mass-with-A under (RM)** | **Open** (⇒B_θ proved as implication) |
+| **1** | **Mass-with-A under (RM)** — polylog / average \(A\) on \(K_\star\) | **Open** (⇒B_θ proved as implication) |
+| **2** | **StripDens** (polylog for arbitrary \(\beta_\star>1/2\)) | **Open** |
+| **3** | **Resonance off the line** | **Open** |
+| **4** | **Effective density constants** | Architecture accepted |
+| **5** | **Finite-product approx off the line** (prime side) | Role recorded |
+| **6** | **Path continuation from on-line Ω** | **Open** |
 
-**Density vs isolation:** bulk \(N(\sigma,T)\) feeds \(A\ll M\log T\); isolation feeds \(A\) only if strong enough (Iso_H). Maynard–Pratt half-isolation and Levinson horizontal isolation ≠ Iso_H.
+**Barrier:** Iso_H or polylog StripDens open; absolute average of \(A\) = **non-route** (closed).
 
 ### Scoreboard (this pass)
 

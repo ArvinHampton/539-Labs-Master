@@ -212,7 +212,7 @@ Status `CAT_B_CONTINUUM_FILLINGS_OPEN_NOT_LOCKED`. Firewall: \(K^+\) homology �
 
 ## Riemann Hypothesis — **open, active pure Cat A path (not frozen)**
 
-Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. **Axiom ZLA frozen**. **ND1 locked.** Density vs isolation clarified (`RH_Density_vs_Isolation.md`): Maynard–Pratt half-isolation and Levinson–Ivić horizontal isolation ≠ Iso_H. **Solid directions:** (1) effective density at moderate \(\sigma\); (2) Iso_H technology; (3) path from on-line Ω; (4) resonance off the line; (5) Mass-with-A under (RM). **Primary not closed; RH open.**
+Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. **Axiom ZLA frozen**. **Scoreboard freeze:** `RH_Status_Scoreboard_Freeze.md` — ND1 implications proved; absolute avg \(A\) non-route; barrier = Iso_H or polylog StripDens. **Solid directions:** (1) Mass-with-A under (RM); (2) StripDens; (3) resonance off the line; (4) effective density constants; (5) finite-product off the line; (6) path from on-line Ω. **Primary not closed; RH open.**
 
 ## Shell restriction r_W
 

@@ -105,19 +105,20 @@ The remaining solid directions are those that move **off the line**, make M1.2 *
 
 | Rank | Direction | Obligation | Status |
 |------|-----------|------------|--------|
-| **1** | **Effective density at moderate \(\sigma\)** | polylog \(M\) near \(\beta_\star\); M1.2 | **Open** |
-| **2** | **(Iso_H) technology** | \(A=O(1)\) path to B_θ | **Open** |
-| **3** | **Path continuation from on-line Ω** | O-M1.3bis / O-TL | **Open** |
-| **4** | **Resonance off the line** | O-PC / O-TL | **Open** |
-| **5** | **Mass-with-A under (RM)** | unconditional B_θ without full Iso_H | **Open** (⇒B_θ proved) |
+| **1** | **Mass-with-A under (RM)** — polylog / average \(A\) on \(K_\star\) | unconditional B_θ without full Iso_H | **Open** (⇒B_θ proved) |
+| **2** | **StripDens** | polylog strip density for \(\beta_\star>1/2\) | **Open** |
+| **3** | **Resonance off the line** | O-PC / O-TL | **Open** |
+| **4** | **Effective density constants** | O-M1.2 | Architecture accepted |
+| **5** | **Finite-product approximation off the line** (prime side) | residual shape | Role recorded |
+| **6** | **Path continuation from on-line Ω** | O-M1.3bis / O-TL | **Open** |
 
-**Density vs isolation:** `RH_Density_vs_Isolation.md`. Maynard–Pratt half-isolation / Hypothesis F ⇒ better density (**converse** of Iso_H). Levinson–Ivić = horizontal isolation near \(\sigma=1\), **not** Iso_H.
+**Scoreboard:** `RH_Status_Scoreboard_Freeze.md`. Density vs isolation: `RH_Density_vs_Isolation.md`. Absolute average of \(A\) = **non-route**.
 
 ### ND1 bridge (locked)
 
-**(RM)+(Iso_H) ⇒ B_θ** proved. Barrier: unconditional **(Iso_H)** or density-type polylog \(A\) / Mass-with-A.
+**(RM)+(Iso_H) ⇒ B_θ** and **(RM)+(polylog StripDens) ⇒ Mass-with-A** proved as implications. Barrier: unconditional Iso_H or polylog StripDens.
 
-**None of 1–5 is known to succeed.** All stay inside **ZLA**.
+**None of 1–6 is known to close B_θ/RH.** All stay inside **ZLA**.
 
 ### Already executed (not re-listed as open solid work)
 
@@ -144,7 +145,7 @@ The strongest existing technology for the open obligations lies in:
 - and the almost-all consequences of pair correlation.
 
 **The primary obligation O-TL remains open.**  
-**Solid directions (updated):** (1) effective density at moderate \(\sigma\); (2) Iso_H technology; (3) path continuation from on-line Ω; (4) resonance off the line; (5) Mass-with-A under (RM).
+**Solid directions (frozen):** (1) Mass-with-A under (RM); (2) StripDens; (3) resonance off the line; (4) effective density constants; (5) finite-product approx off the line; (6) path continuation from on-line Ω.
 
 **RH remains open.**
 
@@ -152,6 +153,6 @@ The strongest existing technology for the open obligations lies in:
 
 ## One-liner
 
-**Density counts bulk zeros; isolation arranges them — solid work is effective density at moderate \(\sigma\), Iso_H technology, path from on-line Ω, off-line resonance, and Mass-with-A; Maynard–Pratt and Levinson isolation are not Iso_H; O-TL and RH remain open.**
+**Scoreboard locked: ND1 implications proved; B_θ needs Iso_H or polylog StripDens; solid directions are Mass-with-A, StripDens, off-line resonance, density constants, finite products, and path from on-line Ω — O-TL and RH open.**
 
 *Per aspera ad astra.*
