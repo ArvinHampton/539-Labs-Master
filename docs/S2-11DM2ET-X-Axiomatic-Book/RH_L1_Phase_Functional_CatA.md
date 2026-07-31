@@ -182,6 +182,7 @@ for an absolute constant \(c>0\) (depending only on \(\phi\)).
 | **M1.4** | Smooth \(\theta\to A_X\) | **Defined + R3 diagnostic** (`RH_M1_4_Smoothing_A_X.md`) |
 | **L4** | Non-circular checklist | **Written** |
 | **Batch R1–R5** | Reg. rem., multi-\(X\), \(A_X\), L2/L3, \(A_2\) | **Executed** (`RH_Research_Paths_Execution_Report.md`) |
+| **O-M1.2 … O-TL** | Five remaining analytic obligations | **Open — unchanged** (`RH_Remaining_Analytic_Obligations.md`) |
 
 ---
 
@@ -207,6 +208,6 @@ for an absolute constant \(c>0\) (depending only on \(\phi\)).
 
 ## One-liner
 
-**RH remains open; the active pure-math task is a lower bound on the smoothed continuous argument \(A_X\) of the partial Euler product at an off-line zero of maximal real part, built from the explicit formula or Akatsuka-type expansions, with no model constants.**
+**RH remains open; the active pure-math task is a lower bound on the smoothed continuous argument \(A_X\) of the partial Euler product at an off-line zero of maximal real part, built from the explicit formula or Akatsuka-type expansions, with no model constants — subject to the five open obligations in `RH_Remaining_Analytic_Obligations.md` (uniform M1.2, M1.3-bis, PC→phase, phase mollifier, target lemma).**
 
 *Per aspera ad astra.*

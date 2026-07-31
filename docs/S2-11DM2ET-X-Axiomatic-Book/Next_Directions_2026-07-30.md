@@ -50,6 +50,20 @@ Status `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. Primary: `RH_L1_Phase_Functional_Cat
 | L3 / Conjecture B | Off-line diagnostics in batch R4 — **open as theorem** |
 | L5 | **Executed** — `scripts/rh_L5_phase_diagnostic.py` |
 
+### Remaining analytic obligations (**unchanged** — open core)
+
+Full ledger: **`RH_Remaining_Analytic_Obligations.md`**.
+
+| ID | Obligation | Status |
+|----|------------|--------|
+| **O-M1.2** | Uniform M1.2 under classical zero-density alone | **Open** |
+| **O-M1.3bis** | Path with \(\lvert\Delta\theta\rvert\gg\log\log X\) | **Open** |
+| **O-PC** | Pair correlation \(\Rightarrow\) phase lower bounds (rigorous) | **Open** |
+| **O-Moll** | Genuinely phase-oriented mollifier | **Open** |
+| **O-TL** | Target lemma itself | **Open — primary** |
+
+Infrastructure (GHK, \(c_i\), HD-low diagnostics, ZLA, L4, batch R1–R5) does **not** discharge these.
+
 **Outside theorem env:** \(G_4\), \(\mu\), \(E_{\mathrm{leak}}\), 539.9 s.  
 **Literature:** `RH_Target_Lemma_Sketch_Literature_L5.md`; **Akatsuka–GHK:** `RH_Akatsuka_GHK_Survey.md`.  
 **Execution omnibus:** `RH_Research_Paths_Execution_Report.md`.

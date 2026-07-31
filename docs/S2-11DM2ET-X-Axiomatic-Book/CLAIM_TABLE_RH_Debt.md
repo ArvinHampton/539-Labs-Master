@@ -28,7 +28,12 @@
 | M1.4 \(A_X\) definition + R3 probe | **A** / diagnostic | **Defined + executed** |
 | L4 non-circular checklist | **A** | **Written** |
 | Target lemma / RH | — | **Open** |
+| O-M1.2 uniform under classical density | **S** | **Open** (unchanged) |
+| O-M1.3bis path \(\gg\log\log X\) | **S** | **Open** (unchanged) |
+| O-PC pair correlation \(\to\) phase | **S** | **Open** (unchanged) |
+| O-Moll phase-oriented mollifier | **S** | **Open** (unchanged) |
+| O-TL target lemma | **S** | **Open — primary** (unchanged) |
 | Model debit / \(E_{\mathrm{leak}}\) / \(\mu\) / 539.9 as zeta theorem | **O** in theorem env | Motivation only |
 | Resonant Algebra \(\Rightarrow\) RH | **O** | Unrelated |
 
-Primary note: `RH_L1_Phase_Functional_CatA.md` · **ZLA:** `RH_Zeta_Language_Admissibility.md` · Surveys: `RH_Akatsuka_GHK_Survey.md`, `RH_Moments_FunctionField_Constants_Survey.md`
+Primary: `RH_L1_Phase_Functional_CatA.md` · Obligations: `RH_Remaining_Analytic_Obligations.md` · ZLA: `RH_Zeta_Language_Admissibility.md`

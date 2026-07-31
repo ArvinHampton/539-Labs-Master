@@ -212,7 +212,7 @@ Status `CAT_B_CONTINUUM_FILLINGS_OPEN_NOT_LOCKED`. Firewall: \(K^+\) homology �
 
 ## Riemann Hypothesis — **open, active pure Cat A path (not frozen)**
 
-Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. **Axiom ZLA frozen:** zero-location theorems may use only \(\zeta\), its Euler product, its zeros, or classical number-theoretic auxiliaries (`RH_Zeta_Language_Admissibility.md`). Full pure-Cat-A stack as far as diagnostics allow: L1–M1.4; optimized \(c_1\le 291\); M1.3 HD-low; batch R1–R5; L4. **Target lemma / RH still open.**
+Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. **Axiom ZLA frozen** (`RH_Zeta_Language_Admissibility.md`). Infrastructure: L1–M1.4, \(c_1\le 291\), GHK, HD-low diagnostics, L4, batch R1–R5. **Remaining analytic obligations unchanged** (`RH_Remaining_Analytic_Obligations.md`): uniform M1.2 under classical density; M1.3-bis \(\gg\log\log X\) path; PC\(\to\)phase; phase mollifier; **target lemma**. **RH open.**
 
 ## Shell restriction r_W
 
