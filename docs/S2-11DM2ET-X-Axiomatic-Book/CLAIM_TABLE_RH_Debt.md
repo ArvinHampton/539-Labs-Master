@@ -15,7 +15,9 @@
 | GHK hybrid numeric probe | diagnostic | **Executed** (no RH claim) |
 | Fourth moment \(k=2\): full polynomial \(P_2\) | classical | **Proved** (Ingham / Heath-Brown / CFKRS form) |
 | Function-field RMT / CFKRS analogs | classical | **Theorems** in many cases; do not prove RH for \(\zeta\) |
-| Numerical values of M1.2 constants \(c_1,c_2,c_3\) | **A** honesty | **Effective, untabulated** — left **symbolic** |
+| Numerical values of M1.2 constants \(c_1,c_2,c_3\) | **A** honesty | **Effective**; majorant tree written; optimized decimals open — leave symbolic |
+| Explicit hybrid \(c_i\) tracking (fixed \(f,K\)) | **A** | **Written** (`RH_M1_2_Explicit_Hybrid_Constants.md`) |
+| Hybrid probe with full \(U=E_1\) | diagnostic | **Executed** (no RH claim) |
 | Model debit / \(E_{\mathrm{leak}}\) / \(\mu\) / 539.9 as zeta theorem | **O** in theorem env | Motivation only |
 | Resonant Algebra \(\Rightarrow\) RH | **O** | Unrelated |
 

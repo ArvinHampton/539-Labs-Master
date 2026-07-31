@@ -164,7 +164,7 @@ c_2 X^{-\sigma}\log X
 +
 c_3
 \]
-(\(K=2\) case; general \(K\) analogous) is **effective** once \(f\), \(K\), and a density theorem are fixed, but **no published numerical table** for \(c_1,c_2,c_3\) exists. Leave them **symbolic**; do not invent decimals. Survey: `RH_Moments_FunctionField_Constants_Survey.md` §3.
+(\(K=2\) case; general \(K\) analogous) is **effective** once \(f\), \(K\), and a density theorem are fixed. **Symbolic majorant tree** (from GHK §2): \(c_1=2C_{\mathrm{mul}}D_K A_K M_K\), \(c_2=2C_{\mathrm{mul}}C_{\mathrm{tail}}\), \(c_3\) under HD — see `RH_M1_2_Explicit_Hybrid_Constants.md`. **No optimized published decimals**; do not invent floats. Survey: `RH_Moments_FunctionField_Constants_Survey.md` §3.
 
 ### 3.5 Akatsuka specialisation (O1)
 
@@ -398,9 +398,9 @@ Explicit formula / Hadamard
 | Strategy + decomposition (M1.2-dec) | **Written** |
 | Conditional lemma sketch | **Written** (not proved) |
 | M1.2-GHK (hybrid form + GHK-err) | **Stated** in `RH_Akatsuka_GHK_Survey.md` (not proved) |
-| Numeric \(c_1,c_2,c_3\) | **Symbolic** (effective, untabulated) — `RH_Moments_FunctionField_Constants_Survey.md` |
+| Numeric \(c_1,c_2,c_3\) | **Symbolic majorants** — `RH_M1_2_Explicit_Hybrid_Constants.md` (optimized decimals open) |
 | Numeric diagnostic (IvM/EP) | **Implemented** |
-| GHK hybrid diagnostic | **Executed** (no proof claim) |
+| GHK hybrid diagnostic | **Executed** with \(U=E_1\) / full smoothed \(U\) (no proof claim) |
 | Full proof of (M1.2) | **Open** |
 | Target lemma / RH | **Open** |
 

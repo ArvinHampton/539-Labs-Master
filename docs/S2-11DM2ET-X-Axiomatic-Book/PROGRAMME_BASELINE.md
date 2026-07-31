@@ -212,7 +212,7 @@ Status `CAT_B_CONTINUUM_FILLINGS_OPEN_NOT_LOCKED`. Firewall: \(K^+\) homology �
 
 ## Riemann Hypothesis — **open, active pure Cat A path (not frozen)**
 
-Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. L1; M1 (\(R_{\mathrm{IvM}}\), \(\mathcal{R}_x^{\mathrm{EP}}\)); O1 Akatsuka package; **M1.2 remainder bound strategy** (conditional lemma + error ledger + diagnostic); **Akatsuka–GHK survey** with M1.2-GHK (explicit hybrid errors); GHK hybrid numeric probe executed; **moments \(k=2\) / function-field analogs / \(c_1,c_2,c_3\) symbolic** (`RH_Moments_FunctionField_Constants_Survey.md`). L5 large-\(x\) + \(\lvert\zeta\rvert\) minima. Target lemma / full M1.2 proof open. See `RH_M1_2_Remainder_Bound_Strategy.md`, `RH_Akatsuka_GHK_Survey.md`, `scripts/rh_M1_2_remainder_diagnostic.py`, `scripts/rh_GHK_hybrid_diagnostic.py`.
+Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. L1; M1; O1; M1.2 strategy + M1.2-GHK; **explicit hybrid \(c_i\) majorant tree** (`RH_M1_2_Explicit_Hybrid_Constants.md`); moments \(k=2\) / function fields (`RH_Moments_FunctionField_Constants_Survey.md`); GHK probe with **full \(U=E_1\)** executed. Target lemma / full M1.2 proof open. See also `RH_Akatsuka_GHK_Survey.md`, `scripts/rh_GHK_hybrid_diagnostic.py`.
 
 ## Shell restriction r_W
 

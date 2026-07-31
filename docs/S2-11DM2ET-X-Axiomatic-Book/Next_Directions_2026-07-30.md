@@ -33,7 +33,9 @@ Status `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. Primary: `RH_L1_Phase_Functional_Cat
 | **M1.2** | Remainder bound strategy + diagnostic — **`RH_M1_2_Remainder_Bound_Strategy.md`**, `scripts/rh_M1_2_remainder_diagnostic.py` |
 | **Akatsuka–GHK survey** | Pure Cat A expansions + hybrid — **`RH_Akatsuka_GHK_Survey.md`** (M1.2-GHK with explicit errors) |
 | **GHK hybrid probe** | Numeric \(P_X Z_X\) at L5 minima / first zeros — **`scripts/rh_GHK_hybrid_diagnostic.py`** → `rh_GHK_hybrid_diagnostic_results.json` (**executed**, no proof claim) |
-| **Moments / FF / \(c_i\)** | \(k=2\) explicit; function-field analogs; \(c_1,c_2,c_3\) effective but symbolic — **`RH_Moments_FunctionField_Constants_Survey.md`** |
+| **Moments / FF / \(c_i\)** | \(k=2\) explicit; function-field analogs; \(c_i\) survey — **`RH_Moments_FunctionField_Constants_Survey.md`** |
+| **Explicit hybrid \(c_i\)** | Symbolic majorant tree for fixed \(f,K\) — **`RH_M1_2_Explicit_Hybrid_Constants.md`** (optimized decimals open) |
+| **GHK \(U=E_1\) / full** | Strengthened hybrid probe — **`scripts/rh_GHK_hybrid_diagnostic.py --U-mode e1|full|all`** |
 | **L5** | Larger \(x_{\max}\), high-prec \(t\), \(\lvert\zeta\rvert\) minima — **executed** |
 | **M1.3–M1.4** | Path design + smoothing — **next analytic** |
 | **Target lemma** | \(\lvert A_{X_n}(Y,\gamma)\rvert\ge c\,m\log\log X_n\) — **primary open** |

@@ -107,17 +107,18 @@ Consequently it is **not possible** to quote rigorous numerical values such as �
 | Statement | Status |
 |-----------|--------|
 | \(c_1,c_2,c_3\) are finite and absolute once \(f\), \(K\), and a density theorem are fixed | **True** |
-| They can be bounded by a (possibly large) explicit number by careful elementary estimation; the bound is effective | **True in principle**; **not yet written** in this programme |
-| At low height the same remainder can be evaluated numerically to arbitrary precision; those values are rigorous for the finite range examined | **True** — diagnostics (`rh_GHK_hybrid_diagnostic.py`, `rh_M1_2_remainder_diagnostic.py`) |
+| They can be bounded by a (possibly large) explicit number by careful elementary estimation; the bound is effective | **True** — majorant tree written in `RH_M1_2_Explicit_Hybrid_Constants.md` (symbolic \(c_1,c_2\); \(c_3\) under HD) |
+| At low height the same remainder can be evaluated numerically to arbitrary precision; those values are rigorous for the finite range examined | **True** — diagnostics (`rh_GHK_hybrid_diagnostic.py` with full \(U=E_1\), `rh_M1_2_remainder_diagnostic.py`) |
 | Published decimal table for \(c_1,c_2,c_3\) | **Does not exist** |
+| Optimized decimals for a named \(f\) | **Open** (majorants only; no invented sharp floats) |
 
 ### Correct standing statement
 
-> The constants \(c_1,c_2,c_3\) exist, are effective, and depend only on the fixed data of the hybrid formula and on a chosen zero-density theorem; their numerical values have not been tabulated and are therefore left **symbolic**.
+> The constants \(c_1,c_2,c_3\) exist, are effective, and depend only on the fixed data of the hybrid formula and on a chosen zero-density theorem; their **optimized numerical** values have not been tabulated and are therefore left **symbolic**, with an explicit majorant tree in `RH_M1_2_Explicit_Hybrid_Constants.md`.
 
 ### Relation to M1.2-GHK
 
-Lemma M1.2-GHK in `RH_Akatsuka_GHK_Survey.md` already uses the **shape** of \(\mathcal{E}_{\mathrm{GHK}}\) with \(O(\cdots)\) rather than named decimals. That is the correct stance until an explicit-constants note is written. The present survey freezes that honesty: **no invented decimals**.
+Lemma M1.2-GHK in `RH_Akatsuka_GHK_Survey.md` uses the **shape** of \(\mathcal{E}_{\mathrm{GHK}}\) with \(O(\cdots)\). The constants note tracks \(c_1=2C_{\mathrm{mul}}D_K A_K M_K\), \(c_2=2C_{\mathrm{mul}}C_{\mathrm{tail}}\), and \(c_3\) under HD. **No invented decimals.**
 
 ---
 
@@ -127,13 +128,12 @@ Lemma M1.2-GHK in `RH_Akatsuka_GHK_Survey.md` already uses the **shape** of \(\m
 |------|--------|
 | Moment polynomial for \(k=2\) (\(\lvert\zeta\rvert^4\)) | **Completely explicit and proved** |
 | Function-field RMT / CFKRS analogs | **Theorems** in many cases; do not prove RH for \(\zeta\) |
-| Numerical \(c_1,c_2,c_3\) for M1.2 | **Effective but untabulated** — left symbolic |
+| Symbolic majorants for \(c_1,c_2\) (fixed \(f,K\)) | **Written** (`RH_M1_2_Explicit_Hybrid_Constants.md`) |
+| Numerical \(c_1,c_2,c_3\) optimized | **Open** — left symbolic / crude majorants only |
+| Hybrid numeric with full \(U=E_1\) | **Executed** (diagnostic) |
 | RH / target lemma / full M1.2 | **Open** |
 
-**Next increments (still pure Cat A):**
-
-1. Fully explicit (symbolic or numerical) tracking of the hybrid constants \(c_1,c_2,c_3\) for a fixed weight and \(K\), **or**  
-2. Further numerical evaluation of the hybrid remainder at existing L5 off-line minima (already partially executed; can be strengthened with full \(U=E_1\)).
+**Next increments (still pure Cat A):** optimize \(M_K,A_K,D_K\) for a named \(f\); produce \(c_3\) under a concrete HD; M1.3 path design.
 
 ---
 

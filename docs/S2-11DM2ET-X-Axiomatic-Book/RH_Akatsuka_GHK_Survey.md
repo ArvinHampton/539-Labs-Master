@@ -324,20 +324,36 @@ Evaluate at L5-style off-line minima and near first zeros:
 **Results:** `rh_GHK_hybrid_diagnostic_results.json`  
 **Status:** diagnostic only; does not prove M1.2.
 
-### 5.1 Executed run (no proof claim)
+### 5.1 Executed runs (no proof claim)
 
-Parameters: \(X=200\), primes to \(x_{\max}=15000\), \(U(z)\sim-\log z-\gamma\) (local GHK leading term), \(Z_X\) truncated to zeros with \(\lvert t-\gamma\rvert\le 3\pi/\log X\).
+**Script:** `scripts/rh_GHK_hybrid_diagnostic.py`  
+**Modes:** `local` (\(U=-\log-\gamma\)), `e1` (\(U=E_1\)), `full` (GHK \(\int u\,E_1\)).  
+**Constants tracking:** `RH_M1_2_Explicit_Hybrid_Constants.md`.
 
-| Regime | mean \(\lvert\arg\zeta-(\arg P_X+\arg Z^{\mathrm{trunc}})\rvert\) | mean \(\lvert\operatorname{Im}(\log\zeta-\log P_X)\rvert\) | mean \(\lvert\operatorname{Im}\log Z^{\mathrm{trunc}}\rvert\) |
-|--------|------------------------------------------------------------------:|-------------------------------------------------------------:|---------------------------------------------------------------:|
-| Near critical zeros (6 ordinates, \(\Delta t=0.02\)) | \(\approx 0.19\) | \(\approx 1.38\) | \(\approx\pi/2\) (local factor dominant) |
-| Off-line \(\lvert\zeta\rvert\) minima (\(\sigma\ge 0.60\)) | \(\approx 0.059\) | \(\approx 0.064\) | \(\approx 0.048\) |
+#### A. Local \(U\) only (earlier run, \(X=200\))
+
+| Regime | mean \(\lvert\arg\zeta-(\arg P+\arg Z)\rvert\) | mean \(\lvert\mathcal{E}\rvert\) proxy |
+|--------|---:|---:|
+| Near first zeros | \(\approx 0.19\) | larger |
+| Off-line minima \(\sigma\ge 0.60\) | \(\approx 0.059\) | \(\approx 0.4\) (local \(U\) only) |
+
+#### B. Strengthened: \(U=E_1\) and full smoothed \(U\) (\(X=200\), 6 zeros, primes to \(15\,000\))
+
+| \(U\) mode | mean \(\lvert\arg\mathrm{err}\rvert\) on / off | mean \(\lvert\mathcal{E}\rvert\) on / off |
+|------------|-----------------------------------------------:|------------------------------------------:|
+| `local` | \(0.628\) / \(0.059\) | \(1.29\) / \(0.474\) |
+| `e1` | \(0.085\) / \(0.055\) | \(0.116\) / \(0.088\) |
+| `full` | \(0.085\) / \(0.055\) | \(0.116\) / \(0.088\) |
+
+(Quick \(X=80\), 3 zeros: same pattern — offline \(\lvert\mathcal{E}\rvert\) drops \(\approx 0.41\to 0.07\) from `local` to `e1`/`full`.)
 
 **Reading (diagnostic only):**
-- Hybrid check \(\arg\zeta\approx\arg P_X+\arg Z^{\mathrm{trunc}}\) holds at the \(O(10^{-1})\) level near the first zeros and tighter off-line at \(\sigma=0.60\) (where no true zero sits).
-- On-line, \(\operatorname{Im}\log Z^{\mathrm{trunc}}\approx\pi/2\) tracks the local \(\arg(s-\rho)\) after a small imaginary offset; \(\operatorname{Im}(\log\zeta-\log P_X)\) is large because the remainder absorbs the zero — consistent with M1.2 bookkeeping.
-- Off-line minima at \(\sigma=0.60\) are **not** zeros: both \(\operatorname{Im} R\) and \(\operatorname{Im}\log Z\) stay small; the hybrid error is modest. This is a **control**, not an off-line zero experiment.
-- Full \(U\) (smoothed \(E_1\) with compact \(u\)) and denser zero lists would tighten the on-line error; the present \(U\sim-\log-\gamma\) is the singular leading term only.
+- Full \(E_1\) and smoothed \(U\) **sharply reduce** hybrid residual vs local log, especially on-line mean \(\lvert\arg\mathrm{err}\rvert\) (\(\approx 0.63\to 0.085\)) and \(\lvert\mathcal{E}\rvert\) (\(\approx 1.3\to 0.12\)).
+- Local mode is brittle when the zero window + singular log miss phase; \(E_1\) regularizes.
+- On-line, \(\operatorname{Im}\log Z\sim 1.4\text{–}1.5\) with \(E_1\) after a small offset; \(\operatorname{Im}(\log\zeta-\log P)\) still large near zeros — M1.2 bookkeeping.
+- Off-line minima at \(\sigma=0.60\) are **controls**, not zeros.
+- `e1` \(\approx\) `full` at these \(X\): support of \(u\) is narrow, so \(U\sim E_1\) is already a good probe.
+- Shape ratios in the JSON are **diagnostic lower bounds** on size, not rigorous global \(c_i\).
 
 ---
 
