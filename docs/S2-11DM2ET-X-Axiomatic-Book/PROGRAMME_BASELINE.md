@@ -212,7 +212,7 @@ Status `CAT_B_CONTINUUM_FILLINGS_OPEN_NOT_LOCKED`. Firewall: \(K^+\) homology �
 
 ## Riemann Hypothesis — **open, active pure Cat A path (not frozen)**
 
-Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. L1; M1 (\(R_{\mathrm{IvM}}\), \(\mathcal{R}_x^{\mathrm{EP}}\)); O1 Akatsuka package; **M1.2 remainder bound strategy** (conditional lemma + error ledger + diagnostic). L5 large-\(x\) + \(\lvert\zeta\rvert\) minima. Target lemma / full M1.2 proof open. See `RH_M1_2_Remainder_Bound_Strategy.md`, `scripts/rh_M1_2_remainder_diagnostic.py`.
+Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. L1; M1 (\(R_{\mathrm{IvM}}\), \(\mathcal{R}_x^{\mathrm{EP}}\)); O1 Akatsuka package; **M1.2 remainder bound strategy** (conditional lemma + error ledger + diagnostic); **Akatsuka–GHK survey** with M1.2-GHK (explicit hybrid errors); GHK hybrid numeric probe executed. L5 large-\(x\) + \(\lvert\zeta\rvert\) minima. Target lemma / full M1.2 proof open. See `RH_M1_2_Remainder_Bound_Strategy.md`, `RH_Akatsuka_GHK_Survey.md`, `scripts/rh_M1_2_remainder_diagnostic.py`, `scripts/rh_GHK_hybrid_diagnostic.py`.
 
 ## Shell restriction r_W
 

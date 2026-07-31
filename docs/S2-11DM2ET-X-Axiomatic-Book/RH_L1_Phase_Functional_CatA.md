@@ -9,7 +9,9 @@
 `RH_Target_Lemma_Sketch_Literature_L5.md` (lift sketch, literature, L5 plan),  
 `RH_Akatsuka_Theorem_Extract.md` (exact [Aka17] statements vs (★)),  
 `RH_M1_Explicit_Formula_Remainder.md` (M1: IvM remainder \(R_{\mathrm{IvM}}\), \(\mathcal{R}_x^{\mathrm{EP}}\)),  
-`RH_O1_Akatsuka_M1_Package.md` (O1: exact Akatsuka expansion + M1 remainder package).
+`RH_O1_Akatsuka_M1_Package.md` (O1: exact Akatsuka expansion + M1 remainder package),  
+`RH_M1_2_Remainder_Bound_Strategy.md` (M1.2 remainder bound),  
+`RH_Akatsuka_GHK_Survey.md` (Akatsuka expansions + GHK hybrid; M1.2-GHK).
 
 ---
 
@@ -142,6 +144,7 @@ for an absolute constant \(c>0\) (depending only on \(\phi\)).
 | **Conrad (2005)** | Controlled asymptotics of partial Euler products on the critical line of the form \(C/(\log x)^r\) imply RH for a wide class of \(L\)-functions; such product asymptotics are, in a precise sense, **stronger than RH** | Motivates Conjecture A–type control; shows product asymptotics are a hard but powerful route |
 | **Goldfeld** (related product / RH implications) | Same circle: product asymptotics \(\Rightarrow\) RH for broad \(L\)-function classes | Aligns “bounded / controlled product on the line” with RH |
 | **Akatsuka (2017)** | Pointwise asymptotics of the partial Euler product of \(\zeta\) on the right half of the critical strip; if \(Y=\sup\operatorname{Re}\rho\) and \(Y\le\sigma_0<1\), a zero of multiplicity \(m\) at \(s_0=\sigma_0+it_0\) produces an explicit \(m\log\log x\) term in the expansion of \(\log\) of the partial product (or associated Dirichlet series for \(\log\zeta\)) | **Primary classical mechanism** for off-line zero \(\Rightarrow\) extra \(\log\log\) growth — input for the target lemma |
+| **Gonek–Hughes–Keating (2007)** | Hybrid \(\zeta=P_X Z_X(1+\mathrm{err})\) with explicit errors; \(Z_X\) local zero product | **M1.2-GHK** form; see `RH_Akatsuka_GHK_Survey.md` |
 | **LeClair et al.** (random-walk / prime trigonometric sums) | Heuristic \(\sqrt N\)-type growth for certain series; suggests Euler product meaningful for \(\sigma>1/2\) and, with FE, zeros on the line — under an **unproved** random-walk conjecture | Heuristic only until converted into estimates for \(\theta_x\) or \(A_X\) |
 | Classical \(S(t)=\frac1\pi\arg\zeta(1/2+it)\) | Average behaviour known; pointwise off-line at a zero is hard | Related continuous-argument tradition; \(A_X\) is partial-product based |
 
@@ -156,11 +159,14 @@ for an absolute constant \(c>0\) (depending only on \(\phi\)).
 | **L1** | Definition of \(\theta_x\), \(A_X\) | **Formalized** (this note) |
 | **M1** | \(\log\zeta=\log P_x+\mathcal{R}_x^{\mathrm{EP}}\) via \(R_{\mathrm{IvM}}\) | **Identity formalized** |
 | **M1.2** | Bound \(\operatorname{Im}\mathcal{R}_x^{\mathrm{EP}}\) near zeros | **Strategy + conditional lemma written**; proof open; numeric diagnostic run |
+| **M1.2-GHK** | Same bound via GHK hybrid errors | **Stated** (`RH_Akatsuka_GHK_Survey.md`); proof open; hybrid probe executed |
+| **O1** | Exact Akatsuka critical-line package + M1 | **Written** |
 | **Target lemma** | \(\lvert A_{X_n}(Y,\gamma)\rvert\ge c\,m\log\log X_n\) | **Open — primary** |
 | **L2** | Bounds for \(A_X(1/2,t)\) (Conjecture A range) | Open |
 | **L3** | General off-line lower bound (Conjecture B) | Open; target lemma is the sharp intermediate |
 | **L4** | Non-circular hypotheses (no presupposed Lyapunov / mean) | Open |
 | **L5** | Numerics: \(\theta_x\) or \(A_X\) at first on-line zeros vs artificial off-line points | **Executed** — `scripts/rh_L5_phase_diagnostic.py` (no RH claim) |
+| **GHK probe** | Hybrid \(P_X Z_X\) at zeros / off-line minima | **Executed** — `scripts/rh_GHK_hybrid_diagnostic.py` (no RH claim) |
 
 ---
 

@@ -8,8 +8,10 @@
 **Companions:**  
 `RH_M1_Explicit_Formula_Remainder.md` (named \(R_{\mathrm{IvM}}\), \(\mathcal{R}_x^{\mathrm{EP}}\)),  
 `RH_O1_Akatsuka_M1_Package.md`,  
-`RH_L1_Phase_Functional_CatA.md`.  
-**Probe:** `scripts/rh_M1_2_remainder_diagnostic.py` → `rh_M1_2_remainder_diagnostic_results.json`.
+`RH_L1_Phase_Functional_CatA.md`,  
+`RH_Akatsuka_GHK_Survey.md` (**M1.2-GHK** form with explicit GHK error terms).  
+**Probes:** `scripts/rh_M1_2_remainder_diagnostic.py` → `rh_M1_2_remainder_diagnostic_results.json`;  
+`scripts/rh_GHK_hybrid_diagnostic.py` → `rh_GHK_hybrid_diagnostic_results.json`.
 
 ---
 
@@ -149,6 +151,8 @@ O\Biggl(\frac{X^{K+2}}{(\lvert s\rvert\log X)^{K}}\Biggr)
 O\bigl(X^{-\sigma}\log X\bigr)
 \]
 for fixed \(K\), away from poles/zeros already accounted for. Useful for \(A_X\) (width \(\asymp 1/\log X\)).
+
+**Full hybrid form of M1.2** (peel local \(m\,U((s-\rho)\log X)\), bound distant \(U\) and \(\mathcal{E}_{\mathrm{GHK}}\)): see **Lemma M1.2-GHK** in `RH_Akatsuka_GHK_Survey.md` §4. Parallel to \(\operatorname{Im}\mathcal{R}_x^{\mathrm{EP}}\) here; GHK supplies the global identity \(\zeta=P_X Z_X(1+\mathrm{err})\) with those explicit errors.
 
 ### 3.5 Akatsuka specialisation (O1)
 
@@ -380,7 +384,9 @@ Explicit formula / Hadamard
 |------|--------|
 | Strategy + decomposition (M1.2-dec) | **Written** |
 | Conditional lemma sketch | **Written** (not proved) |
-| Numeric diagnostic | **Implemented** |
+| M1.2-GHK (hybrid form + GHK-err) | **Stated** in `RH_Akatsuka_GHK_Survey.md` (not proved) |
+| Numeric diagnostic (IvM/EP) | **Implemented** |
+| GHK hybrid diagnostic | **Executed** (no proof claim) |
 | Full proof of (M1.2) | **Open** |
 | Target lemma / RH | **Open** |
 

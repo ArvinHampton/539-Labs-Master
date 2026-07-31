@@ -10,7 +10,10 @@
 | Conjectures A, B | **S** | Stated |
 | Target lemma (\(\ge c\,m\log\log X\) at maximal abscissa zero) | **S** | **Open — primary** |
 | Conrad/Goldfeld/Akatsuka usable as input literature | classical | Mapped |
+| GHK hybrid \(\zeta=P_X Z_X(1+\mathrm{err})\) as M1.2 input | classical | Surveyed (`RH_Akatsuka_GHK_Survey.md`) |
+| M1.2-GHK conditional lemma (with GHK-err) | **S** | **Stated**; proof open |
+| GHK hybrid numeric probe | diagnostic | **Executed** (no RH claim) |
 | Model debit / \(E_{\mathrm{leak}}\) / \(\mu\) / 539.9 as zeta theorem | **O** in theorem env | Motivation only |
 | Resonant Algebra \(\Rightarrow\) RH | **O** | Unrelated |
 
-Primary note: `RH_L1_Phase_Functional_CatA.md`
+Primary note: `RH_L1_Phase_Functional_CatA.md` · Survey: `RH_Akatsuka_GHK_Survey.md`
