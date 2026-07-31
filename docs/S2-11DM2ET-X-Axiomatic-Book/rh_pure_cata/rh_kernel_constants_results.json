@@ -1,0 +1,28 @@
+{
+  "u_family": "GHK: u(x)=X f(X log(x/e)+1)/x, f=normalized flat bump on [0,1]",
+  "C_u1_rigorous": 2.718281828459045,
+  "C_u1_status": "RIGOROUS: |Im U + Arg z| <= e|z| for |z|<=1, |log x|<=1 on support",
+  "C_u0_right_halfplane": {
+    "region": "Re z >= 0, |z| >= 1 (in fact all w\u22600 in closed right half-plane for |w E1|)",
+    "bound": 1.0,
+    "C_u0": 1.1111111111111112,
+    "status": "RIGOROUS \u2014 Theorem E1 in RH_E1_Off_Nearline.md",
+    "proof": "E1(w)=e^{-w}\u222b e^{-s}/(w+s) ds; |w+s|\u2265|w| for s\u22650, Re w\u22650 \u21d2 |w E1(w)| \u2264 e^{-Re w} \u2264 1"
+  },
+  "C_u0_left_halfplane_sector": {
+    "region": "Re z < 0, |Arg z| <= pi - delta",
+    "status": "GROWS as Arg approaches cut; use GHK power decay (U-power) instead of 1/|z| for far-right zeros",
+    "recommendation": "In M1.2, route beta > sigma zeros to far/power estimate or density, not C_u0 min(1,1/|z|)"
+  },
+  "M1_2_package_freeze": {
+    "C_u1": 2.718281828459045,
+    "C_u0_medium_Re_z_ge_0": 1.1111111111111112,
+    "C_u0_note": "Use only when Re((s-rho)log X)>=0; else use U-power/GHK far",
+    "A0_literature_placeholder": 0.34,
+    "C_Sigma_log": 1.36,
+    "C_N_prime_envelope": 0.9983098861928887,
+    "C_u0_status": "RIGOROUS"
+  },
+  "NO_RH_CLAIM": true,
+  "E1_right_halfplane_num_max_abs_E1_times_abs_w": 0.9994024824613579
+}

@@ -1,0 +1,29 @@
+{
+  "status": "M1_2_SKETCH_NO_RH_CLAIM",
+  "sigma": 0.6,
+  "t": 1000.0,
+  "X": 47.75847645331652,
+  "K": 4,
+  "H": 14.947166612305256,
+  "R_bound_classical": 30.612510815105455,
+  "term_med_classical": 29.8523429627696,
+  "Sigma_med_classical": 26.65387764533,
+  "term_med_known_zeros_only": 0.0,
+  "Sigma_med_known_zeros_only": 0.0,
+  "term_far_power": 5.311106770703844e-05,
+  "term_arith": 0.7601147412681467,
+  "n_local_excluded": 0,
+  "n_medium": 0,
+  "n_medium_beta_gt_sigma": 0,
+  "n_far": 15,
+  "r_loc": 0.2586548118983653,
+  "ghk_power_error_useful": true,
+  "P1_half_turn_margin_classical": -58.08342897662112,
+  "P1_fires_classical": false,
+  "constants": {
+    "C_u0": 1.12,
+    "A0": 0.34,
+    "C_Sigma_log": 1.36
+  },
+  "note": "Classical Sigma_med uses N-window majorant; known-zero sum is incomplete. NO_RH_CLAIM."
+}
