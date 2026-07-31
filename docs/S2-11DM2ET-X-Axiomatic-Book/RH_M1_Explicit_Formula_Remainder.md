@@ -502,7 +502,7 @@ Target-lemma quality bounds need \(\lvert\mathcal{R}_X^{A}\rvert=o(m\log\log X)\
 | ID | Lemma |
 |----|--------|
 | **M1.1** | Fix edition: state (IvM) + (IvM-bd) with explicit constants from Davenport or Titchmarsh |
-| **M1.2** | Bound \(\lvert\operatorname{Im}\mathcal{R}_x^{\mathrm{EP}}(s)\rvert\) for \(s=\beta+i\gamma+\delta\), \(\lvert\delta\rvert\le 1/\log\log x\), under zero-density hypotheses |
+| **M1.2** | Bound \(\lvert\operatorname{Im}\mathcal{R}_x^{\mathrm{EP}}\rvert\) — strategy + conditional lemma + diagnostic: `RH_M1_2_Remainder_Bound_Strategy.md`, `scripts/rh_M1_2_remainder_diagnostic.py` |
 | **M1.3** | Construct path \(s_x\to\rho_0\) with \(\lvert m\arg(s_x-\rho_0)\rvert\gg m\log\log x\) while keeping M1.2 |
 | **M1.4** | Transfer to \(\theta_x(\rho_0)\) and to \(A_X\) (smoothing) |
 

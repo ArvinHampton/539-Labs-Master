@@ -154,7 +154,8 @@ for an absolute constant \(c>0\) (depending only on \(\phi\)).
 | ID | Task | Status |
 |----|------|--------|
 | **L1** | Definition of \(\theta_x\), \(A_X\) | **Formalized** (this note) |
-| **M1** | \(\log\zeta=\log P_x+\mathcal{R}_x^{\mathrm{EP}}\) via \(R_{\mathrm{IvM}}\) | **Identity formalized**; bounds open |
+| **M1** | \(\log\zeta=\log P_x+\mathcal{R}_x^{\mathrm{EP}}\) via \(R_{\mathrm{IvM}}\) | **Identity formalized** |
+| **M1.2** | Bound \(\operatorname{Im}\mathcal{R}_x^{\mathrm{EP}}\) near zeros | **Strategy + conditional lemma written**; proof open; numeric diagnostic run |
 | **Target lemma** | \(\lvert A_{X_n}(Y,\gamma)\rvert\ge c\,m\log\log X_n\) | **Open — primary** |
 | **L2** | Bounds for \(A_X(1/2,t)\) (Conjecture A range) | Open |
 | **L3** | General off-line lower bound (Conjecture B) | Open; target lemma is the sharp intermediate |
