@@ -1,0 +1,21 @@
+{
+  "wp": "WP6",
+  "core": "hqh539_t3core.sv Canonical",
+  "vectors": "/tmp/539-Labs-repo/test_vectors_canonical",
+  "t3core_vectors": {
+    "pass": 100,
+    "fail": 0,
+    "n": 100
+  },
+  "rtl_map_vs_python_T3_0_9999_fails": 0,
+  "seed_map_disagreements": 0,
+  "cycle_budget": {
+    "steps": 539,
+    "cycles_per_step_documented": 17,
+    "total_cycles_estimate": 9163,
+    "note": "Cycle count from RTL docs; not a Vivado WNS re-measure"
+  },
+  "vivado_lab_status": "PENDING_LAB \u2014 place-and-route / xsim on Canonical core not run in this environment",
+  "overall": "PASS",
+  "security_framing": "Implementation re-sim only. Not a security reduction."
+}
