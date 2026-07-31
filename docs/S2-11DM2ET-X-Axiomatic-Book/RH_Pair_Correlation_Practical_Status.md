@@ -17,15 +17,8 @@
    Classical consequences in the literature (almost all zeros simple; almost all on the critical line, in the sense of density-one sets of ordinates under the stated hypotheses) are **not re-proved here**; they are recorded as **known infrastructure** feeding the zero-side of the phase programme. They constrain the **spectral** side (zeros), not yet the **phase of the partial Euler product**.
 
 3. **Pair correlation has not yet been converted into the phase lower bound required by the target lemma.**  
-   There is no theorem in this programme of the form  
-   \[
-   \mathrm{PCC}\ \text{(or a labelled weakening)}
-   \quad\Longrightarrow\quad
-   \bigl\lvert A_X(\sigma,t)\bigr\rvert
-   \ge
-   c\,m\log\log X
-   \]
-   (or a usable intermediate lower bound on continuous \(\theta_X\) / \(\arg P_X\)). Diagnostics and RMT/GHK commentary do not close this gap.
+   The conversion has **not** been carried out. Full specification of the required implication, the four missing steps (local isolation → hybrid \(\arg Z_X\) → remainder domination → transfer to \(P_X/A_X\)), and why PCC / \(S(t)\) / diagnostics do not close the gap:  
+   **`RH_OPC_Conversion_Gap.md`**.
 
 4. **O-PC therefore remains open.**  
    Goal of O-PC: rigorous translation of pair-correlation type hypotheses into **phase** lower bounds for \(P_X\) / \(A_X\), with tracked errors, ZLA-clean.

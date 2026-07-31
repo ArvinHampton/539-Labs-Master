@@ -92,9 +92,14 @@ and **not** RH-strength zero-free regions or finite Odlyzko tables as the sole s
 - L4: full PCC as a **hypothesis** for unbounded theorems remains conditional (**C2**); almost-all corollaries under PCC are classical.  
 - Function-field monodromy theorems as **analogies**, not transfers to \(\zeta\).
 
-**What is missing:** a theorem of the shape  
-“Hypothesis PC(\(\dots\)) \(\Rightarrow\) \(\lvert A_X(\sigma,t)\rvert\ge \cdots\)”  
-(or a usable intermediate bound on \(\theta_X=\arg P_X\)) with PC ZLA-admissible as a statement **about zeros of \(\zeta\)**, and with the implication **proved** (not motivational).
+**What is missing:** the full conversion chain — see **`RH_OPC_Conversion_Gap.md`**:
+
+1. Local isolation from PC / \(n\)-level density at the evaluation points.  
+2. Hybrid translation \(\to\) lower bound on \(\arg Z_X\) (or \(\Delta\arg Z_X\)).  
+3. Remainder domination (uniform M1.2 at those points).  
+4. Transfer to \(\arg P_X\) or \(A_X\) of size \(\gg\log\log x\) (or \(\gg 1\) feeding O-TL).
+
+**None of steps 1–4 is currently a theorem** (published or internal to this programme).
 
 **Circularity warning (L4):** any form of PC that is known only under RH, or that encodes RH-scale repulsion stronger than classical density, must be labelled and not silently treated as free. PCC itself is a conjecture about zeros; using it as a hypothesis is ZLA-clean but **conditional**.
 

@@ -30,7 +30,7 @@
 | Target lemma / RH | — | **Open** |
 | O-M1.2 uniform under classical density | **S** | **Open** (unchanged) |
 | O-M1.3bis path \(\gg\log\log X\) | **S** | **Open** (unchanged) |
-| O-PC pair correlation \(\to\) phase | **S** | **Open** — PC is ZLA-admissible; almost-all under PCC classical; **phase conversion missing** (`RH_Pair_Correlation_Practical_Status.md`) |
+| O-PC pair correlation \(\to\) phase | **S** | **Open** — conversion not carried out; four steps missing (`RH_OPC_Conversion_Gap.md`) |
 | O-Moll phase-oriented mollifier | **S** | **Open** (unchanged) |
 | O-TL target lemma | **S** | **Open — primary** (unchanged) |
 | Model debit / \(E_{\mathrm{leak}}\) / \(\mu\) / 539.9 as zeta theorem | **O** in theorem env | Motivation only |

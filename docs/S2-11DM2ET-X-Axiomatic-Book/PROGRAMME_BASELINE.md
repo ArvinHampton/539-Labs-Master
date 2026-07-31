@@ -212,7 +212,7 @@ Status `CAT_B_CONTINUUM_FILLINGS_OPEN_NOT_LOCKED`. Firewall: \(K^+\) homology �
 
 ## Riemann Hypothesis — **open, active pure Cat A path (not frozen)**
 
-Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. **Axiom ZLA frozen**. Infrastructure: L1–M1.4, \(c_1\le 291\), GHK, HD-low, L4, batch R1–R5. **Remaining obligations open** (`RH_Remaining_Analytic_Obligations.md`). **Pair correlation practical status:** ZLA-admissible; almost-all simplicity/criticality under PCC classical; **not** yet a phase lower bound for \(A_X\); O-PC open, upstream/parallel to O-M1.2 (`RH_Pair_Correlation_Practical_Status.md`). **RH open.**
+Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. **Axiom ZLA frozen**. Infrastructure: L1–M1.4, \(c_1\le 291\), GHK, HD-low, L4, batch R1–R5. **Remaining obligations open.** **O-PC:** conversion not carried out — needs local isolation → hybrid \(\arg Z_X\) → remainder domination → transfer to \(P_X/A_X\) (`RH_OPC_Conversion_Gap.md`); PCC/\(S(t)\)/diagnostics do not close. O-TL and RH open.
 
 ## Shell restriction r_W
 
