@@ -173,9 +173,9 @@ for an absolute constant \(c>0\) (depending only on \(\phi\)).
 | **GHK probe** | Hybrid \(P_X Z_X\) at zeros / off-line minima | **Executed** — `scripts/rh_GHK_hybrid_diagnostic.py` (no RH claim) |
 | **Moments / FF / \(c_i\)** | \(k=2\) polynomial; function-field RMT; M1.2 constants | **Surveyed** (`RH_Moments_FunctionField_Constants_Survey.md`) |
 | **Explicit \(c_i\)** | Majorant tree for fixed \(f,K\) | **Written** (`RH_M1_2_Explicit_Hybrid_Constants.md`) |
-| **Named \(f_\star\) bounds** | \(c_2\le 8\), \(c_1\le 1.36\cdot 10^5\) (crude) | **Executed** (`RH_M1_2_Named_f_ci_Bounds.md`) |
+| **Named \(f_\star\) bounds** | Crude then optimized \(c_i\) | **Optimized** \(c_1\le 291\), \(c_2\le 8\) (`RH_M1_2_Optimized_ci_Bounds.md`) |
 | **GHK \(U=E_1\)** | Hybrid probe with full exponential integral | **Executed** (diagnostic; no RH claim) |
-| **M1.3** | Path design (semicircle) | **Written** (conditional); numeric path probe pending |
+| **M1.3 HD-low** | Isolation + path; monodromy correction | **Executed** (`RH_M1_3_HD_Low_Path_Report.md`); large \(\theta_X\) open |
 
 ---
 

@@ -17,9 +17,12 @@
 | Function-field RMT / CFKRS analogs | classical | **Theorems** in many cases; do not prove RH for \(\zeta\) |
 | Numerical values of M1.2 constants \(c_1,c_2,c_3\) | **A** honesty | **Effective**; majorant tree written; optimized decimals open — leave symbolic |
 | Explicit hybrid \(c_i\) tracking (fixed \(f,K\)) | **A** | **Written** (`RH_M1_2_Explicit_Hybrid_Constants.md`) |
-| Named \(f_\star\): \(c_2\le 8\), \(c_1\le 1.36\cdot 10^5\) | **A** | **Admissible majorants** (not sharp); probe executed |
+| Named \(f_\star\): crude \(c_1\le 1.36\cdot 10^5\) | **A** | Superseded by optimized bounds |
+| Optimized \(c_1\le 291\), \(c_2\le 8\) for \(f_\star\) | **A** | **Admissible** (numeric \(A_2\)+safety; not interval-certified) |
 | Hybrid probe with full \(U=E_1\) | diagnostic | **Executed** (no RH claim) |
-| M1.3 path design (semicircle recipe) | **S** | **Written**; proof + numeric path open |
+| M1.3 HD-low isolation (first zeros) | diagnostic | **Pass** (6/6) |
+| Semicircle \(\Delta\arg P\ge m\pi/2\) | **S** | **Withdrawn** (\(P\) zero-free; diagnostic \(\Delta\sim 0\)) |
+| M1.3 approach-path phase lower bound | **S** | **Open** |
 | Model debit / \(E_{\mathrm{leak}}\) / \(\mu\) / 539.9 as zeta theorem | **O** in theorem env | Motivation only |
 | Resonant Algebra \(\Rightarrow\) RH | **O** | Unrelated |
 

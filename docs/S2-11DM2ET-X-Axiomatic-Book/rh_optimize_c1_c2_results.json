@@ -1,0 +1,92 @@
+{
+  "provenance": {
+    "status_label": "RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF",
+    "proves_RH": false,
+    "proves_M1_2": false,
+    "model_constants": false,
+    "named_f": "f_star(t)=exp(-1/(t(1-t)))/mass",
+    "note": "Optimized majorants; still admissible upper bounds, not sharp GHK constants."
+  },
+  "mass": 0.007029858406609657,
+  "M_j_upper": {
+    "M_0": 2.6575146445463345,
+    "M_1": 11.25627644812213,
+    "M_2": 85.71616032090529
+  },
+  "A_2": {
+    "A_K_raw_max": 0.15360879006917316,
+    "A_K_with_safety": 0.16896966907609048,
+    "at": {
+      "X": 2.0,
+      "x": 1.7990914644615754,
+      "tau": 0.1745635910224439,
+      "uK": 105.33404541015625,
+      "ratio": 0.15360879006917316
+    },
+    "trace": [
+      {
+        "X": 2.0,
+        "running_max_A": 0.15360879006917316
+      },
+      {
+        "X": 3.0,
+        "running_max_A": 0.15360879006917316
+      },
+      {
+        "X": 5.0,
+        "running_max_A": 0.15360879006917316
+      },
+      {
+        "X": 10.0,
+        "running_max_A": 0.15360879006917316
+      },
+      {
+        "X": 20.0,
+        "running_max_A": 0.15360879006917316
+      },
+      {
+        "X": 50.0,
+        "running_max_A": 0.15360879006917316
+      },
+      {
+        "X": 100.0,
+        "running_max_A": 0.15360879006917316
+      },
+      {
+        "X": 200.0,
+        "running_max_A": 0.15360879006917316
+      },
+      {
+        "X": 500.0,
+        "running_max_A": 0.15360879006917316
+      }
+    ]
+  },
+  "D_2": {
+    "K": 2,
+    "pole_factor": 4.5,
+    "triv_factor_X2": 0.5222700105000001,
+    "D_K": 5.0222700105,
+    "note": "D_K multiplies A_K M_K X^{K+2}/(|s| log X)^K for |R_arch|. Pole uses |t|>=(2/3)|s| on \u03c3\u2208[0,1],|t|>=2. Trivial zeros at X>=2."
+  },
+  "package": {
+    "K": 2,
+    "A_2": 0.16896966907609048,
+    "D_2": 5.0222700105,
+    "C_tail": 2.0,
+    "C_mul": 2.0,
+    "M_2": 85.71616032090529
+  },
+  "bounds_optimized": {
+    "c1_upper": 290.9588095414401,
+    "c2_upper": 8.0
+  },
+  "bounds_crude_prior": {
+    "A_2": 24,
+    "D_2": 16,
+    "c1": 131660.02225291054,
+    "c2": 8
+  },
+  "improvement_c1_factor": 452.5039900335403,
+  "status": "OPTIMIZED_C1_C2_EXECUTED_NO_PROOF_CLAIM"
+}

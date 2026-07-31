@@ -145,16 +145,12 @@ c_2 X^{-\sigma}\log X
 \end{align}
 with \(c_1,c_2\) from the named-\(f\) bounds, \(K=2\), \(\varepsilon_0\le\tfrac14 m\pi\), and \(c_0\le\tfrac12\).
 
-**Corollary (conditional).**  
-If (M1.3-M12)–(M1.3-E) hold and \(\Delta\arg(s-\rho)=\pi\), then
-\begin{equation}
-\Delta_{\gamma_{\mathrm{path}}}\theta_X
-\ge
-\tfrac12 m\pi.
-\tag{M1.3-cor}
-\end{equation}
+**Corollary (conditional) — revised.**  
+Bare monodromy of \(\arg P_X\) on a semicircle about a zero of \(\zeta\) is **not** order \(m\pi\): \(P_X\) is zero-free. The executed HD-low diagnostic finds \(\Delta_{\mathrm{semi}}\arg P_X\approx 0\) and \(\max\lvert\operatorname{Im}(\log P_X-m\log(s-\rho))\rvert\approx\pi\) (naive peel fails \(c_0<1\)).
 
-**Status:** (M1.3-cor) is **conditional** on M1.2-GHK + HD (no other zeros in the disk; distant \(U\) controlled). Not proved.
+**Correct conditional goal:** on an **approach path** from \(\operatorname{Re}s\gg 1\) toward \(\rho\), with remainder **regularised via \(Z_X\)** (GHK), control \(\operatorname{Im}\widetilde{\mathcal{R}}\) so that continuous \(\theta_X\) accumulates a usable lower bound. The order-\(m\pi\) jump lives in \(\arg Z_X\) / \(\arg\zeta\), not in \(\arg P_X\).
+
+**Status:** geometry + HD-low isolation **written and diagnostically checked**; proof of a large \(\theta_X\) lower bound **open**. See `RH_M1_3_HD_Low_Path_Report.md`.
 
 ---
 
@@ -202,7 +198,8 @@ Target lemma scale \(\log\log X\) \(\Rightarrow\) still open (needs more than a 
 4. Compute continuous \(\arg P_X(s)\), \(\arg Z_X^{\mathrm{trunc}}(s)\), \(\arg\zeta(s)\) with \(U=E_1\).  
 5. Report \(\Delta\arg P_X\) vs \(m\pi\) and max \(\lvert\operatorname{Im}\mathcal{E}\rvert\).
 
-Script target: `scripts/rh_M1_3_path_diagnostic.py` (to be implemented).
+**Script:** `scripts/rh_M1_3_path_diagnostic.py` → `rh_M1_3_path_diagnostic_results.json` (**executed**).  
+**Report:** `RH_M1_3_HD_Low_Path_Report.md`.
 
 ---
 
@@ -210,17 +207,18 @@ Script target: `scripts/rh_M1_3_path_diagnostic.py` (to be implemented).
 
 | Item | Status |
 |------|--------|
-| Path geometry (semicircle + radius recipe) | **Written** |
-| Conditional corollary (M1.3-cor) | **Stated** |
+| Path geometry (semicircle + approach) | **Written** |
+| HD-low isolation (first zeros) | **Pass** (diagnostic) |
+| Semicircle \(\Delta\arg P\sim m\pi\) | **Withdrawn** (\(P\) zero-free; diagnostic \(\Delta\sim 0\)) |
+| Approach-path phase growth | **Geometry correct**; low-height \(\Delta\) small |
 | Proof under HD | **Open** |
-| Numeric path diagnostic | **Pending** (`rh_M1_3_path_diagnostic.py`) |
-| Full \(\log\log X\) target scale from path alone | **Open** (needs M1.3-bis / M1.4) |
+| Full \(\log\log X\) target scale | **Open** (M1.3-bis / M1.4) |
 | RH | **Open** |
 
 ---
 
 ## One-liner
 
-**M1.3 freezes a semicircular path of radius \(\asymp 1/\log\gamma\) about a zero so that \(m\arg(s-\rho)\) contributes order \(m\pi\) while M1.2-GHK and admissible \(c_1,c_2\) control the remainder; the conditional jump \(\Delta\theta\ge\tfrac12 m\pi\) is stated, the \(\log\log X\) target scale and the proof remain open.**
+**M1.3 freezes HD-low isolation and path geometry; semicircle monodromy of zero-free \(P_X\) is not the source of an \(m\pi\) jump — approach paths plus regularised (GHK) remainders are; \(\log\log X\) scale and proofs remain open.**
 
 *Per aspera ad astra.*

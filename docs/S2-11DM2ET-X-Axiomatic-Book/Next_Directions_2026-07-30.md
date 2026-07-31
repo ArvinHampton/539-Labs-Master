@@ -35,10 +35,11 @@ Status `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. Primary: `RH_L1_Phase_Functional_Cat
 | **GHK hybrid probe** | Numeric \(P_X Z_X\) at L5 minima / first zeros — **`scripts/rh_GHK_hybrid_diagnostic.py`** → `rh_GHK_hybrid_diagnostic_results.json` (**executed**, no proof claim) |
 | **Moments / FF / \(c_i\)** | \(k=2\) explicit; function-field analogs; \(c_i\) survey — **`RH_Moments_FunctionField_Constants_Survey.md`** |
 | **Explicit hybrid \(c_i\)** | Symbolic majorant tree — **`RH_M1_2_Explicit_Hybrid_Constants.md`** |
-| **Named \(f_\star\), \(c_1,c_2\) bounds** | \(c_2\le 8\), \(c_1\le 1.36\cdot 10^5\) (crude) — **`RH_M1_2_Named_f_ci_Bounds.md`**, `scripts/rh_named_f_M_K_probe.py` |
-| **GHK \(U=E_1\) / full** | Strengthened hybrid probe — **`scripts/rh_GHK_hybrid_diagnostic.py --U-mode e1|full|all`** |
+| **Named \(f_\star\), crude \(c_i\)** | Prior crude bounds — **`RH_M1_2_Named_f_ci_Bounds.md`** |
+| **Optimized \(c_1,c_2\)** | \(c_1\le 291\), \(c_2\le 8\) — **`RH_M1_2_Optimized_ci_Bounds.md`**, `scripts/rh_optimize_c1_c2.py` |
+| **GHK \(U=E_1\) / full** | Strengthened hybrid probe — **`scripts/rh_GHK_hybrid_diagnostic.py`** |
 | **L5** | Larger \(x_{\max}\), high-prec \(t\), \(\lvert\zeta\rvert\) minima — **executed** |
-| **M1.3** | Path design (semicircle recipe) — **`RH_M1_3_Path_Design.md`** (conditional; numeric path probe pending) |
+| **M1.3 + HD-low** | Isolation pass; monodromy correction; approach path — **`RH_M1_3_HD_Low_Path_Report.md`**, `scripts/rh_M1_3_path_diagnostic.py` |
 | **M1.4** | Smoothing to \(A_X\) — **open** |
 | **Target lemma** | \(\lvert A_{X_n}(Y,\gamma)\rvert\ge c\,m\log\log X_n\) — **primary open** |
 | L2 / Conjecture A | Bounds on the critical line |
