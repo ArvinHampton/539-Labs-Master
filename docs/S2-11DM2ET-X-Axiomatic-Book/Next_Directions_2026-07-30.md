@@ -28,6 +28,7 @@ Status `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. Primary: `RH_L1_Phase_Functional_Cat
 | Rank | Direction |
 |------|-----------|
 | **L1** | \(A_X\) definition — **formalized** |
+| **M1** | IvM remainder \(\mathcal{R}_x^{\mathrm{EP}}\) — **identity formalized**; M1.2–M1.4 bounds open |
 | **Target lemma** | \(\lvert A_{X_n}(Y,\gamma)\rvert\ge c\,m\log\log X_n\) — **primary open** |
 | L2 / Conjecture A | Bounds on the critical line |
 | L3 / Conjecture B | Off-line growth (target lemma is intermediate) |

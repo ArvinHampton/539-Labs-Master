@@ -128,47 +128,57 @@ Conjecture B and the target lemma are about \(\lvert A_X\rvert\) (argument), not
 
 ### I.4 Three lift mechanisms (from modulus growth to argument)
 
-#### Mechanism M1 — Complex phase of the Hadamard factor
+#### Mechanism M1 — Explicit-formula remainder (named)
 
-Near a zero \(\rho\), the Hadamard product contributes a local factor \((s-\rho)^m\). Evaluated at \(s=\rho\) the product vanishes, but the **partial** Euler product is related to \(\zeta\) by
-\[
-\zeta(s)
-=
-P_x(s)
-\cdot
-R_x(s),
-\]
-where \(R_x\) is the reciprocal of the tail (or an approximate formula linking primes \(>x\) and zeros). Standard approximate formulae give, schematically,
+**Full write-up:** `RH_M1_Explicit_Formula_Remainder.md`.
+
+**Identity:**
 \[
 \log\zeta(s)
 =
 \log P_x(s)
 +
-\sum_{\rho}
-E_\rho(s,x)
-+
-\cdots
+\mathcal{R}_x^{\mathrm{EP}}(s),
 \]
-with zero contributions involving incomplete integrals of \(x^{s-\rho}/(s-\rho)\).
+where \(\mathcal{R}_x^{\mathrm{EP}}\) is the **Euler–explicit remainder**: path integral of the **Ingham–von Mangoldt remainder** \(R_{\mathrm{IvM}}(s;x,T)\) from the truncated formula
+\[
+\frac{\zeta'}{\zeta}(s)
+=
+-
+\sum_{n<x}\frac{\Lambda(n)}{n^{s}}
++
+\frac{x^{1-s}}{1-s}
+-
+\sum_{\lvert\Im\rho\rvert\le T}
+\frac{x^{\rho-s}}{\rho-s}
++
+R_{\mathrm{IvM}}(s;x,T),
+\]
+minus the elementary prime-power discrepancy \(E_x^{\mathrm{pow}}\) between \(\log P_x\) and \(\sum_{n\le x}\Lambda(n)/(n^{s}\log n)\).
 
-At \(s=\beta+i\gamma=\rho\) the full \(\zeta\) vanishes, so \(\log\zeta\) has a **logarithmic singularity** of type \(m\log(s-\rho)\). The partial product remains finite and non-zero; the singularity is carried by the remainder. Differentiating in a small imaginary or real shift \(\delta\) and then taking \(\delta\to 0\) along a path that keeps \(\operatorname{Re}s=\beta\) produces a continuous argument whose **total variation** grows like \(m\log\log x\) when the explicit formula’s zero-sum is truncated at height \(\asymp x\) (Weil explicit formula / Riemann–von Mangoldt bookkeeping).
+Near a zero \(\rho_0\) of order \(m\),
+\[
+\log P_x(s)
+=
+m\log(s-\rho_0)
++
+H_{\rho_0}(s)
+-
+\mathcal{R}_x^{\mathrm{EP}}(s),
+\]
+hence
+\[
+\theta_x(s)
+=
+m\arg(s-\rho_0)
++
+\operatorname{Im} H_{\rho_0}(s)
+-
+\operatorname{Im}\mathcal{R}_x^{\mathrm{EP}}(s).
+\]
 
-**Sketch step:**
-
-1. Work at \(s_x=\beta+i\gamma+i\delta_x\) or \(s_x=\beta-\varepsilon_x+i\gamma\) with \(\varepsilon_x,\delta_x\to 0\) slowly.  
-2. Use \(\zeta(s_x)\sim c(s_x-\rho)^m\).  
-3. Write \(\log P_x(s_x)=\log\zeta(s_x)-\log R_x(s_x)\).  
-4. Choose \(x\) so that \(\log R_x\) is controlled (prime number theorem + zero-density in a box).  
-5. Then \(\arg P_x(s_x)\) tracks \(\arg(s_x-\rho)^m=m\arg(s_x-\rho)\) plus controlled error.  
-6. Sending \(s_x\to\rho\) after \(x\to\infty\) along a discrete sequence yields
-   \[
-   \lvert\theta_{x_n}(\beta,\gamma)\rvert
-   \ge
-   c\,m\log\log x_n
-   \]
-   **if** the path of approach makes \(\arg(s_x-\rho)\) wind or accumulate like \(\log\log x\) — which must be justified by the zero’s contribution in the explicit formula, not by fiat.
-
-This is the standard “zero forces argument growth in truncated objects” idea; making it precise for **exactly** \(A_X(\beta,\gamma)\) is the open core of the target lemma.
+**Target-lemma reduction:** design a path \(s_x\to\rho_0\) with \(\lvert m\arg(s_x-\rho_0)\rvert\gg m\log\log x\) while \(\lvert\operatorname{Im}\mathcal{R}_x^{\mathrm{EP}}(s_x)\rvert=o(m\log\log x)\); then smooth to \(A_X\).  
+**Status:** identity and naming **done**; path + remainder bound **open**.
 
 #### Mechanism M2 — Use \(\lvert P_x\rvert\) growth + harmonic conjugate / Hilbert transform
 

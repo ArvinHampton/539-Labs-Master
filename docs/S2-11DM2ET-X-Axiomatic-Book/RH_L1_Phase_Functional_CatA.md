@@ -7,7 +7,8 @@
 
 **Companions:** `RH_Debt_Argument_Status.md` (programme stance), `CLAIM_TABLE_RH_Debt.md`,  
 `RH_Target_Lemma_Sketch_Literature_L5.md` (lift sketch, literature, L5 plan),  
-`RH_Akatsuka_Theorem_Extract.md` (exact [Aka17] statements vs (★)).
+`RH_Akatsuka_Theorem_Extract.md` (exact [Aka17] statements vs (★)),  
+`RH_M1_Explicit_Formula_Remainder.md` (M1: IvM remainder \(R_{\mathrm{IvM}}\), \(\mathcal{R}_x^{\mathrm{EP}}\)).
 
 ---
 
@@ -152,6 +153,7 @@ for an absolute constant \(c>0\) (depending only on \(\phi\)).
 | ID | Task | Status |
 |----|------|--------|
 | **L1** | Definition of \(\theta_x\), \(A_X\) | **Formalized** (this note) |
+| **M1** | \(\log\zeta=\log P_x+\mathcal{R}_x^{\mathrm{EP}}\) via \(R_{\mathrm{IvM}}\) | **Identity formalized**; bounds open |
 | **Target lemma** | \(\lvert A_{X_n}(Y,\gamma)\rvert\ge c\,m\log\log X_n\) | **Open — primary** |
 | **L2** | Bounds for \(A_X(1/2,t)\) (Conjecture A range) | Open |
 | **L3** | General off-line lower bound (Conjecture B) | Open; target lemma is the sharp intermediate |
