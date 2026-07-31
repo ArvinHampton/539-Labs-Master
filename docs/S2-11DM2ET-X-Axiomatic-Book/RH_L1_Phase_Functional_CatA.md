@@ -176,6 +176,9 @@ for an absolute constant \(c>0\) (depending only on \(\phi\)).
 | **Named \(f_\star\) bounds** | Crude then optimized \(c_i\) | **Optimized** \(c_1\le 291\), \(c_2\le 8\) (`RH_M1_2_Optimized_ci_Bounds.md`) |
 | **GHK \(U=E_1\)** | Hybrid probe with full exponential integral | **Executed** (diagnostic; no RH claim) |
 | **M1.3 HD-low** | Isolation + path; monodromy correction | **Executed** (`RH_M1_3_HD_Low_Path_Report.md`); large \(\theta_X\) open |
+| **M1.4** | Smooth \(\theta\to A_X\) | **Defined + R3 diagnostic** (`RH_M1_4_Smoothing_A_X.md`) |
+| **L4** | Non-circular checklist | **Written** |
+| **Batch R1–R5** | Reg. rem., multi-\(X\), \(A_X\), L2/L3, \(A_2\) | **Executed** (`RH_Research_Paths_Execution_Report.md`) |
 
 ---
 

@@ -23,6 +23,10 @@
 | M1.3 HD-low isolation (first zeros) | diagnostic | **Pass** (6/6) |
 | Semicircle \(\Delta\arg P\ge m\pi/2\) | **S** | **Withdrawn** (\(P\) zero-free; diagnostic \(\Delta\sim 0\)) |
 | M1.3 approach-path phase lower bound | **S** | **Open** |
+| Research batch R1–R5 executed | diagnostic | **Yes** (`rh_research_batch_results.json`) |
+| M1.4 \(A_X\) definition + R3 probe | **A** / diagnostic | **Defined + executed** |
+| L4 non-circular checklist | **A** | **Written** |
+| Target lemma / RH | — | **Open** |
 | Model debit / \(E_{\mathrm{leak}}\) / \(\mu\) / 539.9 as zeta theorem | **O** in theorem env | Motivation only |
 | Resonant Algebra \(\Rightarrow\) RH | **O** | Unrelated |
 

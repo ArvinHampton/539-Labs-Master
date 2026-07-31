@@ -39,13 +39,15 @@ Status `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. Primary: `RH_L1_Phase_Functional_Cat
 | **Optimized \(c_1,c_2\)** | \(c_1\le 291\), \(c_2\le 8\) — **`RH_M1_2_Optimized_ci_Bounds.md`**, `scripts/rh_optimize_c1_c2.py` |
 | **GHK \(U=E_1\) / full** | Strengthened hybrid probe — **`scripts/rh_GHK_hybrid_diagnostic.py`** |
 | **L5** | Larger \(x_{\max}\), high-prec \(t\), \(\lvert\zeta\rvert\) minima — **executed** |
-| **M1.3 + HD-low** | Isolation pass; monodromy correction; approach path — **`RH_M1_3_HD_Low_Path_Report.md`**, `scripts/rh_M1_3_path_diagnostic.py` |
-| **M1.4** | Smoothing to \(A_X\) — **open** |
+| **M1.3 + HD-low** | Isolation pass; monodromy correction — **`RH_M1_3_HD_Low_Path_Report.md`** |
+| **M1.4** | \(A_X\) smoothing defined + R3 diagnostic — **`RH_M1_4_Smoothing_A_X.md`** |
+| **Research batch R1–R5** | Reg. remainder, multi-\(X\), \(A_X\), L2/L3, \(A_2\) — **`scripts/rh_research_batch.py`**, `RH_Research_Paths_Execution_Report.md` |
+| **L4** | Non-circular checklist — **`RH_L4_NonCircular_Checklist.md`** |
 | **Target lemma** | \(\lvert A_{X_n}(Y,\gamma)\rvert\ge c\,m\log\log X_n\) — **primary open** |
-| L2 / Conjecture A | Bounds on the critical line |
-| L3 / Conjecture B | Off-line growth (target lemma is intermediate) |
-| L4 | Non-circular hypotheses |
-| L5 | **Executed** — `scripts/rh_L5_phase_diagnostic.py` → `rh_L5_phase_diagnostic_results.json` (no RH claim) |
+| L2 / Conjecture A | On-line diagnostics in batch R4 — **open as theorem** |
+| L3 / Conjecture B | Off-line diagnostics in batch R4 — **open as theorem** |
+| L5 | **Executed** — `scripts/rh_L5_phase_diagnostic.py` |
 
 **Outside theorem env:** \(G_4\), \(\mu\), \(E_{\mathrm{leak}}\), 539.9 s.  
-**Literature + sketch:** `RH_Target_Lemma_Sketch_Literature_L5.md` (M1 lift, Conrad/Goldfeld/Akatsuka citations, L5 plan); **Akatsuka–GHK:** `RH_Akatsuka_GHK_Survey.md`.
+**Literature:** `RH_Target_Lemma_Sketch_Literature_L5.md`; **Akatsuka–GHK:** `RH_Akatsuka_GHK_Survey.md`.  
+**Execution omnibus:** `RH_Research_Paths_Execution_Report.md`.
