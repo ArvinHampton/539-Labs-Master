@@ -8,7 +8,8 @@
 **Companions:** `RH_Debt_Argument_Status.md` (programme stance), `CLAIM_TABLE_RH_Debt.md`,  
 `RH_Target_Lemma_Sketch_Literature_L5.md` (lift sketch, literature, L5 plan),  
 `RH_Akatsuka_Theorem_Extract.md` (exact [Aka17] statements vs (★)),  
-`RH_M1_Explicit_Formula_Remainder.md` (M1: IvM remainder \(R_{\mathrm{IvM}}\), \(\mathcal{R}_x^{\mathrm{EP}}\)).
+`RH_M1_Explicit_Formula_Remainder.md` (M1: IvM remainder \(R_{\mathrm{IvM}}\), \(\mathcal{R}_x^{\mathrm{EP}}\)),  
+`RH_O1_Akatsuka_M1_Package.md` (O1: exact Akatsuka expansion + M1 remainder package).
 
 ---
 

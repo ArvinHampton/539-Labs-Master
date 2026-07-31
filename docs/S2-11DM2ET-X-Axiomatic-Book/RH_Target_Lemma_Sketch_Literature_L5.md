@@ -415,7 +415,13 @@ If RH is true, no off-line zero exists. Numerics cannot exhibit the target lemma
 [x] never claim RH — status L5_DIAGNOSTIC_EXECUTED_NO_RH_CLAIM
 ```
 
-**Run:** `python scripts/rh_L5_phase_diagnostic.py`
+**Run:**
+```bash
+python scripts/rh_L5_phase_diagnostic.py --x-max 30000 --n-zeros 10 --max-minima 14
+# faster smoke:  python scripts/rh_L5_phase_diagnostic.py --quick
+```
+
+**Upgrades (executed):** larger \(x_{\max}\); mpmath dps scaled with \(\lvert t\rvert\); off-line points = grid + refined local minima of \(\lvert\zeta\rvert\) with \(\sigma\ge 0.60\) (not fixed \(\delta\) at zero heights).
 
 ### III.6 Pass/fail for the diagnostic (not for RH)
 

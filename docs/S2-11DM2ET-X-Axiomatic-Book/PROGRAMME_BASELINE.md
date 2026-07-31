@@ -212,7 +212,7 @@ Status `CAT_B_CONTINUUM_FILLINGS_OPEN_NOT_LOCKED`. Firewall: \(K^+\) homology â‰
 
 ## Riemann Hypothesis â€” **open, active pure Cat A path (not frozen)**
 
-Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. Model debit set aside. L1 formalized (\(A_X\)). Target-lemma sketch: Akatsuka \(m\log\log x\) lifts to \(\arg\)/\(A_X\) only via explicit-formula mechanism (not automatic from real main term). See `RH_L1_Phase_Functional_CatA.md`, `RH_Target_Lemma_Sketch_Literature_L5.md`.
+Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. L1 formalized; M1 with named \(R_{\mathrm{IvM}}\)/\(\mathcal{R}_x^{\mathrm{EP}}\); O1 package (exact Akatsuka (O1-A)+(O1-A-log) + M1 dictionary). L5 diagnostic: large \(x_{\max}\), high-prec \(t\), off-line \(\lvert\zeta\rvert\) minima (\(\sigma\ge 0.6\)). Target lemma open. See `RH_O1_Akatsuka_M1_Package.md`, `scripts/rh_L5_phase_diagnostic.py`.
 
 ## Shell restriction r_W
 

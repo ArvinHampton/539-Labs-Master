@@ -29,6 +29,8 @@ Status `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. Primary: `RH_L1_Phase_Functional_Cat
 |------|-----------|
 | **L1** | \(A_X\) definition — **formalized** |
 | **M1** | IvM remainder \(\mathcal{R}_x^{\mathrm{EP}}\) — **identity formalized**; M1.2–M1.4 bounds open |
+| **O1** | Exact Akatsuka (O1-A) + M1 package — **`RH_O1_Akatsuka_M1_Package.md`** |
+| **L5** | Larger \(x_{\max}\), high-prec \(t\), \(\lvert\zeta\rvert\) minima scan — **executed** |
 | **Target lemma** | \(\lvert A_{X_n}(Y,\gamma)\rvert\ge c\,m\log\log X_n\) — **primary open** |
 | L2 / Conjecture A | Bounds on the critical line |
 | L3 / Conjecture B | Off-line growth (target lemma is intermediate) |
