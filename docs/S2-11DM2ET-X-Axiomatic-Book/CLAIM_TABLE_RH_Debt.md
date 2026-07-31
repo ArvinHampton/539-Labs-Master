@@ -35,7 +35,7 @@
 | O-PC / phase at maximal-abscissa zeros | **S** | **Open** |
 | O-TL target lemma | **S** | **Open — primary not closed** |
 | O-Moll phase-oriented mollifier | **S** | **Open** |
-| Solid directions + resonance + density M1.2 | **A** | **Executed as notes** |
+| Solid directions (current): off-line resonance; density constants; off-line finite products; path continuation | programme | **Frozen** (`RH_Existing_Theorems_Solid_Directions.md` §6) |
 | Model debit / \(E_{\mathrm{leak}}\) / \(\mu\) / 539.9 as zeta theorem | **O** in theorem env | Motivation only |
 | Resonant Algebra \(\Rightarrow\) RH | **O** | Unrelated |
 

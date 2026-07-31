@@ -163,16 +163,19 @@ None of the five boxes is checked. **O-PC is first-class and open**, upstream of
 
 ---
 
-## Concrete steps — execution status
+## Solid directions (current)
 
-See `RH_Existing_Theorems_Solid_Directions.md`.
+See `RH_Existing_Theorems_Solid_Directions.md` §6.
 
-| Priority | Step | Status |
-|----------|------|--------|
-| **1** | Resonance / Diophantine attack on hybrid discrepancy | **Executed** — on-line strong Omega proved (`RH_Resonance_Discrepancy_Attack.md`) |
-| **2** | Fully effective conditional M1.2 via classical density | **Architecture executed** (`RH_M1_2_Effective_Density.md`); plug in published numerical density constants next |
+| Rank | Direction | Status |
+|------|-----------|--------|
+| **1** | Resonance **off the line** | **Open** |
+| **2** | **Effective density constants** for conditional M1.2 | Architecture accepted; \((A,B,C)\) **open** |
+| **3** | Finite-product approximation **off the line** | **Open** |
+| **4** | **Path continuation** from known on-line Omega | **Open** |
 
-**O-TL remains open** (needs phase at maximal-abscissa zeros, not only limsup on the line). RH remains open.
+On-line strong Omega (fixed \(X\)) is **accepted**, not re-listed.  
+**O-TL remains open** (primary). RH remains open.
 
 ## Explicit non-claims
 

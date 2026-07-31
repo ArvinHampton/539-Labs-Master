@@ -98,22 +98,27 @@ Convert almost-all isolation into an almost-all lower bound on the hybrid discre
 
 ---
 
-## 6. Most solid near-term directions (ranked by proximity to existing technology)
+## 6. Most solid near-term directions (current ranking)
 
-| Rank | Direction | Obligation touched |
-|------|-----------|--------------------|
-| **1** | **Resonance / large-value method for the hybrid discrepancy** — adapt Soundararajan resonance or Dirichlet-polynomial large-value estimates to \(\operatorname{Im}(\log\zeta-\log Z_X)\) or \(\operatorname{Im}\log P_X\); seek Omega **stronger than** \(\sqrt{\log\log X}\) | O-PC strong |
-| **2** | **Conditional uniform M1.2 via explicit zero-density** — insert an explicit Ingham–Huxley bound into the existing majorant tree; fully effective remainder on a concrete height range | O-M1.2 |
-| **3** | **Off-line finite-Euler-product approximation (Gonek style)** — extend the region where short products approximate \(\zeta\); measure argument of the ratio at numerical minima of \(\lvert\zeta\rvert\) | O-PC / O-M1.3bis |
-| **4** | **Path accumulation (M1.3-bis)** — once a local angular increment \(\gg\sqrt{\log\log X}\) (or larger) is available, design a path or sequence of truncations that accumulates to \(\gg\log\log X\) | O-M1.3bis |
-| **5** | **Phase-oriented mollifier** — optimise a Dirichlet polynomial for **argument** rather than modulus; use as a detector of large discrepancy | O-Moll |
+**On-line Kronecker / model-\(\operatorname{Im} D_X\) Omega is accepted** (`RH_Resonance_Discrepancy_Attack.md`).  
+The remaining solid directions are those that move **off the line**, make M1.2 **numerical**, or **continue** from the known on-line Omega toward O-TL.
 
-**None of these is known to succeed.** All stay inside **ZLA**.
+| Rank | Direction | Obligation | Status |
+|------|-----------|------------|--------|
+| **1** | **Resonance off the line** — large values of \(\theta_X\) / \(\Delta_X\) at \(\sigma\ge Y-\varepsilon\) or at points of large \(1/\lvert\zeta\rvert\); Soundararajan-type resonators in short \(t\)-intervals with \(\sigma>1/2\) | O-PC off-line / O-TL | **Open** |
+| **2** | **Effective density constants** — insert published numerical \((A,B,C)\) into `RH_M1_2_Effective_Density.md` and compute an explicit height threshold \(\gamma_1\) | O-M1.2 | Architecture **accepted**; constants **open** |
+| **3** | **Finite-product approximation off the line (Gonek style)** — region where short \(P_X\approx\zeta\); argument of the ratio at off-line minima / near maximal abscissa | O-PC / O-M1.3bis | **Open** |
+| **4** | **Path continuation from known on-line Omega** — use limsup / known large \(\operatorname{Im} D_X\) or \(\Delta_X\) on the line as a base and continue a path (or vary \(X\)) toward a zero of maximal real part so that continuous phase accumulates at O-TL scale (M1.3-bis) | O-M1.3bis / O-TL | **Open** |
 
-### Most concrete next analytic steps (programme decision) — **executed**
+Secondary (unchanged utility): phase-oriented mollifier (O-Moll).
 
-1. A **resonance / Diophantine attack** on the hybrid discrepancy — **`RH_Resonance_Discrepancy_Attack.md`** (on-line strong Omega **proved**).  
-2. A **fully effective conditional M1.2** from classical density — **`RH_M1_2_Effective_Density.md`** (architecture **written**).
+**None of 1–4 is known to succeed.** All stay inside **ZLA**.  
+**Do not** weaken O-TL to on-line limsup alone.
+
+### Already executed (not re-listed as open solid work)
+
+1. On-line resonance/Diophantine Omega — **accepted** (`RH_Resonance_Discrepancy_Attack.md`).  
+2. Conditional M1.2 **architecture** — **accepted** (`RH_M1_2_Effective_Density.md`); only numerical \((A,B,C)\) remain.
 
 ---
 
@@ -135,7 +140,7 @@ The strongest existing technology for the open obligations lies in:
 - and the almost-all consequences of pair correlation.
 
 **The primary obligation O-TL remains open.**  
-The most concrete next analytic steps are a **resonance attack on the hybrid discrepancy** and a **fully effective conditional M1.2** from classical density theorems.
+The solid directions are now: **resonance off the line**, **effective density constants**, **finite-product approximation off the line**, and **path continuation from the known on-line Omega**.
 
 **RH remains open.**
 
@@ -143,6 +148,6 @@ The most concrete next analytic steps are a **resonance attack on the hybrid dis
 
 ## One-liner
 
-**Solid near-term pure-Cat-A work is resonance/large values for the discrepancy and effective density-based M1.2; classical \(S(t)\) Omega, GHK/Gonek/Akatsuka, and PCC almost-all results are the toolkit — none of them yet closes O-TL or RH.**
+**With on-line strong Omega accepted, solid pure-Cat-A work is off-line resonance, numerical density constants for M1.2, Gonek-style off-line finite products, and path continuation from on-line Omega — none yet closes O-TL or RH.**
 
 *Per aspera ad astra.*

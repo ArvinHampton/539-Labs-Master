@@ -63,13 +63,23 @@ Solid toolkit + ranked directions: **`RH_Existing_Theorems_Solid_Directions.md`*
 | **O-Moll** | Phase-oriented mollifier | **Open** |
 | **O-TL** | Target lemma \(\gg m\log\log X\) at maximal abscissa | **Open — primary** |
 
-### Concrete steps (accepted status)
+### Accepted (not reopened)
 
-1. **Resonance/Diophantine on-line strengthening** — **accepted** for hybrid discrepancy and model \(\operatorname{Im} D_X\) (fixed \(X\), critical line); continuous-arg caveat recorded (`RH_Resonance_Discrepancy_Attack.md` §5a).  
-2. **Conditional M1.2 architecture** — **accepted**; insert published \((A,B,C)\) for full numerics (`RH_M1_2_Effective_Density.md`).
+1. On-line Kronecker / model-\(\operatorname{Im} D_X\) + hybrid discrepancy Omega (fixed \(X\)); continuous-arg caveat.  
+2. Conditional M1.2 architecture (dyadic far zeros + classical density shape).
 
-**Still open (unchanged):** O-TL (primary); off-line Omega at maximal abscissa; numerical density constants; RH.  
-**Primary obligation not closed.**
+### Solid directions (current)
+
+| Rank | Direction |
+|------|-----------|
+| **1** | **Resonance off the line** |
+| **2** | **Effective density constants** \((A,B,C)\) into M1.2 |
+| **3** | **Finite-product approximation off the line** (Gonek style) |
+| **4** | **Path continuation from known on-line Omega** (M1.3-bis toward O-TL) |
+
+Full write-up: `RH_Existing_Theorems_Solid_Directions.md` §6.
+
+**Still open:** O-TL (**primary not closed**); off-line Omega; RH.
 
 **Outside theorem env:** \(G_4\), \(\mu\), \(E_{\mathrm{leak}}\), 539.9 s.  
 **Literature:** `RH_Target_Lemma_Sketch_Literature_L5.md`; **Akatsuka–GHK:** `RH_Akatsuka_GHK_Survey.md`.  
