@@ -28,14 +28,14 @@
 | M1.4 \(A_X\) definition + R3 probe | **A** / diagnostic | **Defined + executed** |
 | L4 non-circular checklist | **A** | **Written** |
 | Target lemma / RH | — | **Open** |
-| O-M1.2 uniform under classical density | **S** | **Open** (unchanged) |
-| O-M1.3bis path \(\gg\log\log X\) | **S** | **Open** (unchanged) |
-| O-PC typical Omega \(\lvert\Delta_X\rvert,\lvert\theta_X\rvert\gg\sqrt{\log\log X}\) on the line | **A** | **Proved** (`RH_OPC_Omega_Discrepancy.md`) |
-| O-PC strong Omega \(\gg\log\log X\) / off-line | **S** | **Open** |
-| O-TL target lemma | **S** | **Open — primary** (needs strong Omega or revised target) |
-| O-Moll phase-oriented mollifier | **S** | **Open** (unchanged) |
-| Solid directions survey (resonance, density M1.2, …) | **A** | **Written** (`RH_Existing_Theorems_Solid_Directions.md`) |
-| Next concrete steps: resonance + effective density M1.2 | programme | **Named** — not yet executed as proofs |
+| O-M1.2 under classical density (architecture) | **A** | **Written** (`RH_M1_2_Effective_Density.md`); numerical density constants open |
+| O-M1.3bis path \(\gg\log\log X\) at special points | **S** | **Open** |
+| O-PC typical Omega \(\gg\sqrt{\log\log X}\) on the line | **A** | **Proved** (`RH_OPC_Omega_Discrepancy.md`) |
+| O-PC strong on-line Omega \(\gg\sqrt{X}/\log X\gg\log\log X\) | **A** | **Proved** (`RH_Resonance_Discrepancy_Attack.md`) |
+| O-PC / phase at maximal-abscissa zeros | **S** | **Open** |
+| O-TL target lemma | **S** | **Open — primary** |
+| O-Moll phase-oriented mollifier | **S** | **Open** |
+| Solid directions + resonance + density M1.2 | **A** | **Executed as notes** |
 | Model debit / \(E_{\mathrm{leak}}\) / \(\mu\) / 539.9 as zeta theorem | **O** in theorem env | Motivation only |
 | Resonant Algebra \(\Rightarrow\) RH | **O** | Unrelated |
 
