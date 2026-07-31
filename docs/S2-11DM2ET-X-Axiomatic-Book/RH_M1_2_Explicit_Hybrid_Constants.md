@@ -49,7 +49,8 @@ M_j
 \quad(j=0,\ldots,K).
 \tag{C-data}
 \end{equation}
-These are **finite, absolute numbers** once \(f\) is fixed. No claim is made that a particular decimal table for a named \(f\) has been computed here unless a separate numerical appendix is attached.
+These are **finite, absolute numbers** once \(f\) is fixed.  
+**Named bump \(f_\star\) and numerical \(M_j\), \(c_1,c_2\) upper bounds:** `RH_M1_2_Named_f_ci_Bounds.md`, `scripts/rh_named_f_M_K_probe.py`.
 
 ---
 
@@ -300,7 +301,7 @@ c_1\le 2\cdot 2\cdot 16\cdot 24\cdot M_2=1536\,M_2,
 \qquad
 c_2\le 2\cdot 2\cdot 2=8.
 \]
-If one takes a concrete \(f\) with \(M_2\le 10^6\) (typical for poorly scaled bumps), \(c_1\) can be as large as \(O(10^9)\); a well-scaled \(f\) can make \(M_2\) moderate. **These are not claimed as GHK’s implied constants** — only as a worked majorant tree.
+**Named \(f_\star\):** \(M_2^\sharp\le 88.237\) (5% grid safety) \(\Rightarrow\) \(c_1\le 1.36\cdot 10^5\), \(c_2\le 8\). See `RH_M1_2_Named_f_ci_Bounds.md`. **Not claimed as GHK’s sharp implied constants** — only as a worked majorant tree.
 
 ### 4.2 The constant \(c_3\) (local zero peeled)
 

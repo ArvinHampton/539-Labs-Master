@@ -34,10 +34,12 @@ Status `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. Primary: `RH_L1_Phase_Functional_Cat
 | **Akatsuka–GHK survey** | Pure Cat A expansions + hybrid — **`RH_Akatsuka_GHK_Survey.md`** (M1.2-GHK with explicit errors) |
 | **GHK hybrid probe** | Numeric \(P_X Z_X\) at L5 minima / first zeros — **`scripts/rh_GHK_hybrid_diagnostic.py`** → `rh_GHK_hybrid_diagnostic_results.json` (**executed**, no proof claim) |
 | **Moments / FF / \(c_i\)** | \(k=2\) explicit; function-field analogs; \(c_i\) survey — **`RH_Moments_FunctionField_Constants_Survey.md`** |
-| **Explicit hybrid \(c_i\)** | Symbolic majorant tree for fixed \(f,K\) — **`RH_M1_2_Explicit_Hybrid_Constants.md`** (optimized decimals open) |
+| **Explicit hybrid \(c_i\)** | Symbolic majorant tree — **`RH_M1_2_Explicit_Hybrid_Constants.md`** |
+| **Named \(f_\star\), \(c_1,c_2\) bounds** | \(c_2\le 8\), \(c_1\le 1.36\cdot 10^5\) (crude) — **`RH_M1_2_Named_f_ci_Bounds.md`**, `scripts/rh_named_f_M_K_probe.py` |
 | **GHK \(U=E_1\) / full** | Strengthened hybrid probe — **`scripts/rh_GHK_hybrid_diagnostic.py --U-mode e1|full|all`** |
 | **L5** | Larger \(x_{\max}\), high-prec \(t\), \(\lvert\zeta\rvert\) minima — **executed** |
-| **M1.3–M1.4** | Path design + smoothing — **next analytic** |
+| **M1.3** | Path design (semicircle recipe) — **`RH_M1_3_Path_Design.md`** (conditional; numeric path probe pending) |
+| **M1.4** | Smoothing to \(A_X\) — **open** |
 | **Target lemma** | \(\lvert A_{X_n}(Y,\gamma)\rvert\ge c\,m\log\log X_n\) — **primary open** |
 | L2 / Conjecture A | Bounds on the critical line |
 | L3 / Conjecture B | Off-line growth (target lemma is intermediate) |

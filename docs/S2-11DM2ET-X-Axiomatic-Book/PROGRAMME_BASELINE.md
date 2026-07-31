@@ -212,7 +212,7 @@ Status `CAT_B_CONTINUUM_FILLINGS_OPEN_NOT_LOCKED`. Firewall: \(K^+\) homology �
 
 ## Riemann Hypothesis — **open, active pure Cat A path (not frozen)**
 
-Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. L1; M1; O1; M1.2 strategy + M1.2-GHK; **explicit hybrid \(c_i\) majorant tree** (`RH_M1_2_Explicit_Hybrid_Constants.md`); moments \(k=2\) / function fields (`RH_Moments_FunctionField_Constants_Survey.md`); GHK probe with **full \(U=E_1\)** executed. Target lemma / full M1.2 proof open. See also `RH_Akatsuka_GHK_Survey.md`, `scripts/rh_GHK_hybrid_diagnostic.py`.
+Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. L1; M1; O1; M1.2 + M1.2-GHK; **named \(f_\star\)** with admissible \(c_2\le 8\), \(c_1\le 1.36\cdot 10^5\) (`RH_M1_2_Named_f_ci_Bounds.md`); **M1.3 path design** written (`RH_M1_3_Path_Design.md`); moments \(k=2\) / FF / symbolic honesty (`RH_Moments_FunctionField_Constants_Survey.md`); GHK \(U=E_1\) probe executed. Target lemma / full M1.2–M1.3 proof open.
 
 ## Shell restriction r_W
 

@@ -1,0 +1,36 @@
+{
+  "provenance": {
+    "status_label": "RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF",
+    "proves_RH": false,
+    "proves_M1_2": false,
+    "model_constants": false,
+    "note": "Admissible majorants only; not sharp GHK implied constants. See RH_M1_2_Explicit_Hybrid_Constants.md and RH_M1_2_Named_f_ci_Bounds.md"
+  },
+  "named_f": {
+    "formula": "f(t) = exp(-1/(t(1-t))) / mass on (0,1), 0 at endpoints",
+    "mass_raw_trapezoid": 0.0070298584066096565,
+    "class": "C^infty compactly supported in (0,1) after extension by 0"
+  },
+  "M_j_upper": {
+    "M_0": 2.7356741073034976,
+    "M_1": 11.587343375690068,
+    "M_2": 88.23697081624115,
+    "M_3": 1249.5006551313495,
+    "M_4": 30104.004767294955
+  },
+  "majorant_package": {
+    "K": 2,
+    "A_2": 24,
+    "D_2": 16,
+    "C_tail": 2,
+    "C_mul": 2,
+    "formula_c1": "2*C_mul*D_2*A_2*M_2",
+    "formula_c2": "2*C_mul*C_tail"
+  },
+  "bounds": {
+    "c1_upper": 135531.9871737464,
+    "c2_upper": 8,
+    "c3": "symbolic under HD \u2014 not numerical here"
+  },
+  "status": "NAMED_F_M_K_BOUNDS_EXECUTED_NO_PROOF_CLAIM"
+}

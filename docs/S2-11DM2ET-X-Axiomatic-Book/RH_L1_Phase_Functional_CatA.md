@@ -13,7 +13,9 @@
 `RH_M1_2_Remainder_Bound_Strategy.md` (M1.2 remainder bound),  
 `RH_Akatsuka_GHK_Survey.md` (Akatsuka expansions + GHK hybrid; M1.2-GHK),  
 `RH_Moments_FunctionField_Constants_Survey.md` (\(k=2\) moments; function fields; \(c_i\) status),  
-`RH_M1_2_Explicit_Hybrid_Constants.md` (symbolic majorants for hybrid \(c_1,c_2,c_3\)).
+`RH_M1_2_Explicit_Hybrid_Constants.md` (symbolic majorants for hybrid \(c_1,c_2,c_3\)),  
+`RH_M1_2_Named_f_ci_Bounds.md` (named \(f_\star\); admissible \(c_1,c_2\)),  
+`RH_M1_3_Path_Design.md` (path geometry for argument jump).
 
 ---
 
@@ -170,8 +172,10 @@ for an absolute constant \(c>0\) (depending only on \(\phi\)).
 | **L5** | Numerics: \(\theta_x\) or \(A_X\) at first on-line zeros vs artificial off-line points | **Executed** — `scripts/rh_L5_phase_diagnostic.py` (no RH claim) |
 | **GHK probe** | Hybrid \(P_X Z_X\) at zeros / off-line minima | **Executed** — `scripts/rh_GHK_hybrid_diagnostic.py` (no RH claim) |
 | **Moments / FF / \(c_i\)** | \(k=2\) polynomial; function-field RMT; M1.2 constants | **Surveyed** (`RH_Moments_FunctionField_Constants_Survey.md`) |
-| **Explicit \(c_i\)** | Majorant tree for fixed \(f,K\) | **Written** (`RH_M1_2_Explicit_Hybrid_Constants.md`); optimized decimals open |
+| **Explicit \(c_i\)** | Majorant tree for fixed \(f,K\) | **Written** (`RH_M1_2_Explicit_Hybrid_Constants.md`) |
+| **Named \(f_\star\) bounds** | \(c_2\le 8\), \(c_1\le 1.36\cdot 10^5\) (crude) | **Executed** (`RH_M1_2_Named_f_ci_Bounds.md`) |
 | **GHK \(U=E_1\)** | Hybrid probe with full exponential integral | **Executed** (diagnostic; no RH claim) |
+| **M1.3** | Path design (semicircle) | **Written** (conditional); numeric path probe pending |
 
 ---
 
