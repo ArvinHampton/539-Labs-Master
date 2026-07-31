@@ -33,7 +33,7 @@ Status `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. Primary: `RH_L1_Phase_Functional_Cat
 | L2 / Conjecture A | Bounds on the critical line |
 | L3 / Conjecture B | Off-line growth (target lemma is intermediate) |
 | L4 | Non-circular hypotheses |
-| L5 | Diagnostic numerics only |
+| L5 | **Executed** — `scripts/rh_L5_phase_diagnostic.py` → `rh_L5_phase_diagnostic_results.json` (no RH claim) |
 
 **Outside theorem env:** \(G_4\), \(\mu\), \(E_{\mathrm{leak}}\), 539.9 s.  
 **Literature + sketch:** `RH_Target_Lemma_Sketch_Literature_L5.md` (M1 lift, Conrad/Goldfeld/Akatsuka citations, L5 plan).

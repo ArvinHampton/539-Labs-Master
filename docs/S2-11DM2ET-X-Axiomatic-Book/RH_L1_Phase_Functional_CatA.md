@@ -158,7 +158,7 @@ for an absolute constant \(c>0\) (depending only on \(\phi\)).
 | **L2** | Bounds for \(A_X(1/2,t)\) (Conjecture A range) | Open |
 | **L3** | General off-line lower bound (Conjecture B) | Open; target lemma is the sharp intermediate |
 | **L4** | Non-circular hypotheses (no presupposed Lyapunov / mean) | Open |
-| **L5** | Numerics: \(\theta_x\) or \(A_X\) at first on-line zeros vs artificial off-line points | Diagnostic only |
+| **L5** | Numerics: \(\theta_x\) or \(A_X\) at first on-line zeros vs artificial off-line points | **Executed** — `scripts/rh_L5_phase_diagnostic.py` (no RH claim) |
 
 ---
 

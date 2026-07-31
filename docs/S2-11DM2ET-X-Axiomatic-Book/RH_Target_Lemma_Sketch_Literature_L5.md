@@ -406,14 +406,16 @@ If RH is true, no off-line zero exists. Numerics cannot exhibit the target lemma
 ### III.5 Implementation checklist
 
 ```text
-[ ] primes up to x_max (segmented sieve)
-[ ] complex log increment: Im Log(1/(1-p^{-s})) with continuous branch
-[ ] store θ at log-grid for smoothing
-[ ] φ bump; integrate A_X
-[ ] mpmath/arb high precision for large t
-[ ] output JSON: {sigma,t,X,theta,A,U,zeta_abs}
-[ ] never claim RH from plots
+[x] primes up to x_max (sieve) — scripts/rh_L5_phase_diagnostic.py
+[x] complex log increment: Im Log(1/(1-p^{-s})) continuous along primes
+[x] cumulative θ,U; evaluate on X-grid
+[x] φ bump on (1,2); A_X = int theta_{X^v} phi(v) dv
+[x] |zeta| via mpmath at test points
+[x] output rh_L5_phase_diagnostic_results.json
+[x] never claim RH — status L5_DIAGNOSTIC_EXECUTED_NO_RH_CLAIM
 ```
+
+**Run:** `python scripts/rh_L5_phase_diagnostic.py`
 
 ### III.6 Pass/fail for the diagnostic (not for RH)
 
