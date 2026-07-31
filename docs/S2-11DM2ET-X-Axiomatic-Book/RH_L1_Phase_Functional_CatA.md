@@ -3,7 +3,8 @@
 **Status:** RH **open**; workstream **active** (not frozen).  
 **Status label:** `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`  
 **Category:** **A only** in this note — no model constants.  
-**Forbidden in theorems:** \(G_4\), \(\mu\), \(E_{\mathrm{leak}}\), \(539.9\,\mathrm{s}\), phonon / brane language, residual packaging integers as zeta lemmas.
+**Axiom ZLA:** a theorem about the location of the zeros of \(\zeta\) may use only objects that are functions of \(\zeta\), its Euler product, its zeros, or classical number-theoretic auxiliaries (`RH_Zeta_Language_Admissibility.md`).  
+**Forbidden in theorems:** \(G_4\), \(\mu\), \(E_{\mathrm{leak}}\), \(539.9\,\mathrm{s}\), phonon / brane language, residual packaging integers as zeta lemmas — all ZLA-inadmissible.
 
 **Companions:** `RH_Debt_Argument_Status.md` (programme stance), `CLAIM_TABLE_RH_Debt.md`,  
 `RH_Target_Lemma_Sketch_Literature_L5.md` (lift sketch, literature, L5 plan),  
@@ -23,6 +24,8 @@
 
 RH is **not proved**. The model debit bound is **set aside**.  
 The only path that can close RH here is a **pure growth theorem** for a rigorously defined phase of the partial Euler product. That is this workstream.
+
+**Language:** every such theorem must obey **Axiom ZLA** (only \(\zeta\), Euler product, zeros, classical auxiliaries).
 
 ---
 

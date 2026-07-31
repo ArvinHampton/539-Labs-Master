@@ -23,10 +23,12 @@ CB1–CB3 already executed as PL proxies (Euler 1). CB5–CB7 library/metaphor/s
 
 ## RH — open, active pure Cat A (not frozen)
 
-Status `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. Primary: `RH_L1_Phase_Functional_CatA.md`.
+Status `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. Primary: `RH_L1_Phase_Functional_CatA.md`.  
+**Axiom ZLA:** zero-location theorems — only \(\zeta\), Euler product, zeros, classical auxiliaries (`RH_Zeta_Language_Admissibility.md`).
 
 | Rank | Direction |
 |------|-----------|
+| **ZLA** | Zeta language admissibility — **frozen** |
 | **L1** | \(A_X\) definition — **formalized** |
 | **M1** | IvM remainder \(\mathcal{R}_x^{\mathrm{EP}}\) — **identity formalized**; M1.2–M1.4 bounds open |
 | **O1** | Exact Akatsuka (O1-A) + M1 package — **`RH_O1_Akatsuka_M1_Package.md`** |

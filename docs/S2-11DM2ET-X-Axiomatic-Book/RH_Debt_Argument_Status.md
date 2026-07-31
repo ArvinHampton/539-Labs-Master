@@ -37,4 +37,6 @@ The only path that can close RH is a pure growth theorem for a rigorously define
 
 **RH remains open. The active task is a pure-analytic lower bound on the smoothed argument of the partial Euler product at an off-line zero of maximal real part, built from the explicit formula or Akatsuka-type expansions, with no model constants.**
 
+**Axiom ZLA (frozen):** a theorem about the location of the zeros of \(\zeta\) may use only objects that are functions of \(\zeta\), its Euler product, its zeros, or classical number-theoretic auxiliaries. See `RH_Zeta_Language_Admissibility.md`.
+
 *Per aspera ad astra.*

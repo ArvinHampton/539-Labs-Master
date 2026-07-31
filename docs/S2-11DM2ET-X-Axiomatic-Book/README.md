@@ -18,7 +18,7 @@ Clean LaTeX source for the full axiomatic foundation.
 - Empirical phase-locking; Holographic window; Wilson surrogates; QCD note; Bott vs HQCC; Phase 0; H0 Option 3
 - **Foundational arithmetic packaging**; **Object539**; Architecture A / O_res (A0–A3 locked; A4–A5 0-stem closed on O_res^disc only — A4_BSPIN_LIFT_CLOSED_ON_O_RES_DISC, A5_KO_OMEGA0_SPIN_CLOSED_ON_O_RES; A4⁺ full |E| open)
 - **Cat-B continuum fillings** (Architecture_Continuum_Fillings_CatB.md, scripts/continuum_fillings_catB_probe.py): CAT_B_CONTINUUM_FILLINGS_OPEN_NOT_LOCKED; K+ firewall; CB1–CB3 proxies; CB4 open
-- **RH pure Cat A track** (`RH_Research_Paths_Execution_Report.md`, `scripts/rh_research_batch.py`, M1.4, L4, optimized \(c_i\), GHK/M1.3): `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF` — all executable research paths run; **RH / target lemma open**
+- **RH pure Cat A track** (`RH_Zeta_Language_Admissibility.md` **ZLA**, `RH_Research_Paths_Execution_Report.md`, M1.4, L4, optimized \(c_i\), GHK/M1.3): `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF` — language purity frozen; diagnostics run; **RH / target lemma open**
 - HQH-539 security (exploration / Cat B only); 9 Maths patterns
 - Discrete patterns residual carrier; Discrete TTC/RTTC package T_res
 - **Residual product complex** (`Residual_Product_Complex.md`) — LOCKED

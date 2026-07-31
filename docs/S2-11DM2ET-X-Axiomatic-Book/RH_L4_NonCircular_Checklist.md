@@ -5,6 +5,9 @@
 
 **Purpose:** list every hypothesis that may enter M1.2–M1.4 / target lemma work, and mark circularity risk relative to RH.
 
+**Language purity (prior):** **Axiom ZLA** — a theorem about the location of the zeros of \(\zeta\) may use only objects that are functions of \(\zeta\), its Euler product, its zeros, or classical number-theoretic auxiliaries.  
+See `RH_Zeta_Language_Admissibility.md`. L4 is about *which hypotheses*; ZLA is about *which symbols*.
+
 ---
 
 ## Allowed (classical / unconditional / finite-height)
@@ -39,10 +42,15 @@
 
 ## Standing rule
 
-Any completed proof of the target lemma or of M1.2 must cite only **H0–H5** plus **explicitly labelled** C-hypotheses that are **not equivalent to RH**. Finite-height diagnostics may use H2 freely without claiming unbounded RH.
+Any completed proof of the target lemma or of M1.2 must:
+
+1. satisfy **Axiom ZLA** (language: only \(\zeta\), Euler product, zeros, classical auxiliaries);  
+2. cite only **H0–H5** plus **explicitly labelled** C-hypotheses that are **not equivalent to RH**.
+
+Finite-height diagnostics may use H2 freely without claiming unbounded RH.
 
 ---
 
 ## One-liner
 
-**L4 freezes the non-circularity ledger: classical GHK and effective \(c_i\) are allowed; RH-strength zero-free regions and invented constants are not.**
+**L4 freezes the non-circularity ledger under ZLA: classical GHK and effective \(c_i\) are allowed; RH-strength zero-free regions, invented constants, and non-zeta language are not.**
