@@ -13,11 +13,16 @@
 
 ---
 
-## 0. Standing fact
+## 0. Standing fact (updated by partial resolution)
 
-**The conversion has not been carried out. O-PC remains open.**
+**Strong O-PC conclusion** (\(\lvert\theta_X\rvert\) or \(\lvert A_X\rvert\gg\log\log X\) from PC) has **not** been proved — O-PC remains **open** at target-lemma scale.
 
-No published theorem supplies the implication below. No derivation internal to the present pure Category A programme supplies it either.
+**Partial resolution** (see `RH_OPC_Partial_Resolution.md`): hybrid phase identity, almost-all isolation under RH+PC, local \(\Delta\arg Z=\pi\), and monodromy obstruction for \(P_X\) are **closed**; O-PC is **reduced** to residual core
+\[
+\bigl\lvert\arg\zeta-\arg Z_X\bigr\rvert\gg\log\log X
+\quad\text{(OPC-Core),}
+\]
+which is still missing.
 
 ---
 

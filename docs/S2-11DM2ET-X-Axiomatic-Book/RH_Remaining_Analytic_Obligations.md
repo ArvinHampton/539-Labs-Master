@@ -17,7 +17,7 @@ These five obligations are the **open analytic core** of the phase programme. In
 |----|------------|--------|
 | **O-M1.2** | Uniform M1.2 under classical zero-density alone | **Open** |
 | **O-M1.3bis** | Path design that accumulates argument to size \(\gg\log\log X\) | **Open** |
-| **O-PC** | Rigorous translation of pair-correlation type hypotheses into phase lower bounds | **Open** |
+| **O-PC** | Rigorous translation of pair-correlation type hypotheses into phase lower bounds | **Open** (reduced to OPC-Core; see `RH_OPC_Partial_Resolution.md`) |
 | **O-Moll** | Construction of a genuinely phase-oriented mollifier | **Open** |
 | **O-TL** | The target lemma itself | **Open — primary** |
 
@@ -75,13 +75,13 @@ and **not** RH-strength zero-free regions or finite Odlyzko tables as the sole s
 
 ## 3. O-PC — Pair correlation \(\to\) phase lower bounds
 
-**Practical status (frozen):** see `RH_Pair_Correlation_Practical_Status.md`.
+**Practical status:** `RH_Pair_Correlation_Practical_Status.md` · **Partial resolution:** `RH_OPC_Partial_Resolution.md` · **Gap spec:** `RH_OPC_Conversion_Gap.md`.
 
-- Pair correlation is **classical and ZLA-admissible** as a constraint on zeros of \(\zeta\).  
-- Under **PCC** (Montgomery pair correlation conjecture) one already has **strong almost-all** statements on simplicity and criticality (classical literature; not re-proved here).  
-- That spectral almost-all package has **not** been converted into the **phase** lower bound needed for the target lemma.  
-- **O-PC remains open.**  
-- **Ledger position:** O-PC sits **upstream of, or parallel to, O-M1.2** (not a substitute for O-M1.2; not mere optional commentary).
+- Pair correlation is **classical and ZLA-admissible**.  
+- Under RH+PC\(_{\mathrm{avg}}\): almost-all isolation + local \(\Delta\arg Z=\pi\) **available**; hybrid identity \(\theta_X=\arg\zeta-\arg Z_X-\operatorname{Im}\mathcal{E}\) **proved**.  
+- **Residual core (open):** \(\lvert\arg\zeta-\arg Z_X\rvert\gg\log\log X\) (OPC-Core) — not implied by almost-all simplicity/criticality.  
+- **Strong O-PC** (target-lemma scale for \(\theta_X\)/\(A_X\)) **remains open.**  
+- **Ledger position:** upstream of or parallel to O-M1.2.
 
 **Goal.** Take a **precisely stated** pair-correlation (or \(n\)-level correlation) hypothesis on the zeros of \(\zeta\) — classical Montgomery-type or a labelled weakening — and **derive** a lower bound for continuous \(\theta_X\) or \(A_X\) with fully tracked error terms.
 

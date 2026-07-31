@@ -58,7 +58,7 @@ Full ledger: **`RH_Remaining_Analytic_Obligations.md`**.
 |----|------------|--------|
 | **O-M1.2** | Uniform M1.2 under classical zero-density alone | **Open** |
 | **O-M1.3bis** | Path with \(\lvert\Delta\theta\rvert\gg\log\log X\) | **Open** |
-| **O-PC** | Pair correlation \(\Rightarrow\) phase lower bounds | **Open** — conversion gap: `RH_OPC_Conversion_Gap.md` (four missing steps; PCC/\(S(t)\)/diagnostics do not close) |
+| **O-PC** | Pair correlation \(\Rightarrow\) phase lower bounds | **Open** — partial resolution `RH_OPC_Partial_Resolution.md`; residual **OPC-Core** open; diagnostic `scripts/rh_OPC_discrepancy_diagnostic.py` |
 | **O-Moll** | Genuinely phase-oriented mollifier | **Open** |
 | **O-TL** | Target lemma itself | **Open — primary** |
 
