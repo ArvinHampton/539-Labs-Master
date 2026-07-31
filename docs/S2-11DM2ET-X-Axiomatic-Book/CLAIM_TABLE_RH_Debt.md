@@ -34,7 +34,6 @@
 | O-PC strong Omega \(\gg\log\log X\) / off-line | **S** | **Open** |
 | O-TL target lemma | **S** | **Open — primary** (needs strong Omega or revised target) |
 | O-Moll phase-oriented mollifier | **S** | **Open** (unchanged) |
-| O-TL target lemma | **S** | **Open — primary** (unchanged) |
 | Model debit / \(E_{\mathrm{leak}}\) / \(\mu\) / 539.9 as zeta theorem | **O** in theorem env | Motivation only |
 | Resonant Algebra \(\Rightarrow\) RH | **O** | Unrelated |
 
