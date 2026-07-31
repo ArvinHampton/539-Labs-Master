@@ -17,7 +17,7 @@ These five obligations are the **open analytic core** of the phase programme. In
 |----|------------|--------|
 | **O-M1.2** | Uniform M1.2 under classical zero-density alone | **Open** |
 | **O-M1.3bis** | Path design that accumulates argument to size \(\gg\log\log X\) | **Open** |
-| **O-PC** | Rigorous translation of pair-correlation type hypotheses into phase lower bounds | **Open** (reduced to OPC-Core; see `RH_OPC_Partial_Resolution.md`) |
+| **O-PC** | Pair correlation / discrepancy \(\to\) phase lower bounds | **Partially resolved** — Omega \(\gg\sqrt{\log\log X}\) on the line proved (`RH_OPC_Omega_Discrepancy.md`); **strong** \(\gg\log\log X\) still **open** |
 | **O-Moll** | Construction of a genuinely phase-oriented mollifier | **Open** |
 | **O-TL** | The target lemma itself | **Open — primary** |
 
@@ -78,9 +78,10 @@ and **not** RH-strength zero-free regions or finite Odlyzko tables as the sole s
 **Practical status:** `RH_Pair_Correlation_Practical_Status.md` · **Partial resolution:** `RH_OPC_Partial_Resolution.md` · **Gap spec:** `RH_OPC_Conversion_Gap.md`.
 
 - Pair correlation is **classical and ZLA-admissible**.  
-- Under RH+PC\(_{\mathrm{avg}}\): almost-all isolation + local \(\Delta\arg Z=\pi\) **available**; hybrid identity \(\theta_X=\arg\zeta-\arg Z_X-\operatorname{Im}\mathcal{E}\) **proved**.  
-- **Residual core (open):** \(\lvert\arg\zeta-\arg Z_X\rvert\gg\log\log X\) (OPC-Core) — not implied by almost-all simplicity/criticality.  
-- **Strong O-PC** (target-lemma scale for \(\theta_X\)/\(A_X\)) **remains open.**  
+- Hybrid identity \(\theta_X=\arg\zeta-\arg Z_X-\operatorname{Im}\mathcal{E}\) **proved**.  
+- **Omega at typical scale (proved):** \(\limsup_t\lvert\theta_X(\tfrac12+it)\rvert\gg\sqrt{\log\log X}\) and same for \(\lvert\Delta_X\rvert\) (`RH_OPC_Omega_Discrepancy.md`).  
+- **Strong core (open):** \(\lvert\Delta_X\rvert\) or \(\lvert A_X\rvert\gg\log\log X\) (O-TL scale); off-line Omega open.  
+- Typical vs Omega distinction is **explicit**: O-TL needs strong Omega, not only typical/\(L^2\) size.  
 - **Ledger position:** upstream of or parallel to O-M1.2.
 
 **Goal.** Take a **precisely stated** pair-correlation (or \(n\)-level correlation) hypothesis on the zeros of \(\zeta\) — classical Montgomery-type or a labelled weakening — and **derive** a lower bound for continuous \(\theta_X\) or \(A_X\) with fully tracked error terms.

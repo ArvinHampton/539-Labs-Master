@@ -212,7 +212,7 @@ Status `CAT_B_CONTINUUM_FILLINGS_OPEN_NOT_LOCKED`. Firewall: \(K^+\) homology �
 
 ## Riemann Hypothesis — **open, active pure Cat A path (not frozen)**
 
-Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. **Axiom ZLA frozen**. Infrastructure: L1–M1.4, \(c_1\le 291\), GHK, HD-low, L4, batch R1–R5. **O-PC partial resolution:** \(\theta_X=\arg\zeta-\arg Z_X-\operatorname{Im}\mathcal{E}\) (proved); isolation+local \(\arg Z\) under RH+PC a.e. (classical+local lemma); residual **OPC-Core** \(\lvert\arg\zeta-\arg Z_X\rvert\gg\log\log X\) **open** (`RH_OPC_Partial_Resolution.md`). Strong O-PC / O-TL / RH open.
+Status label `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. **Axiom ZLA frozen**. **O-PC Omega (typical scale) proved:** \(\limsup\lvert\theta_X\rvert,\lvert\Delta_X\rvert\gg\sqrt{\log\log X}\) on the critical line (`RH_OPC_Omega_Discrepancy.md`). **Strong** scale \(\log\log X\) (O-TL), off-line Omega, and RH **open**. Typical vs Omega distinction explicit in the ledger.
 
 ## Shell restriction r_W
 

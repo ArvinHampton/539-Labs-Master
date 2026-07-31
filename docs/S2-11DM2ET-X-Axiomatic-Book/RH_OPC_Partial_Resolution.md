@@ -18,12 +18,13 @@
 | Local \(\Delta\arg Z_X\) on an isolating semicircle (simple zero) | **Proved** under isolation + GHK local \(U\sim E_1\) — §3 |
 | Structural failure of monodromy transfer to \(P_X\) | **Proved** (\(P_X\) zero-free) — §4 |
 | Reduction of O-PC to spectral–arithmetic phase discrepancy | **Proved** (equivalence under small GHK error) — §5 |
-| Lower bound \(\lvert\theta_X\rvert\) or \(\lvert A_X\rvert\gg\log\log X\) from PC alone | **Not proved** — residual core **open** — §6 |
-| Full O-PC as originally stated (OPC-concl) | **Still open** |
+| Lower bound \(\lvert\theta_X\rvert\) or \(\lvert A_X\rvert\gg\log\log X\) from PC alone | **Not proved** — strong core **open** — §6 |
+| Omega \(\lvert\Delta_X\rvert,\lvert\theta_X\rvert\gg\sqrt{\log\log X}\) on the line | **Proved** — `RH_OPC_Omega_Discrepancy.md` |
+| Full O-PC as originally stated (OPC-concl at \(\log\log X\)) | **Still open** |
 | O-TL / RH | **Open** |
 
 **Honest one-line resolution:**  
-The translation is **no longer a four-step black box** — three structural steps are closed and O-PC is reduced to producing points where \(\lvert\arg\zeta-\arg Z_X\rvert\) is large while \(\lvert\mathcal{E}_{\mathrm{GHK}}\rvert\) is small. That residual lower bound is **not** supplied by PCC’s almost-all simplicity/criticality theorems, so **O-PC remains open** for the target-lemma scale.
+Structural conversion is closed; **typical-scale Omega** \(\gg\sqrt{\log\log X}\) for \(\theta_X\) and \(\Delta_X\) on the critical line is **proved** (mean square); **strong** Omega \(\gg\log\log X\) for O-TL remains open.
 
 ---
 

@@ -30,7 +30,9 @@
 | Target lemma / RH | — | **Open** |
 | O-M1.2 uniform under classical density | **S** | **Open** (unchanged) |
 | O-M1.3bis path \(\gg\log\log X\) | **S** | **Open** (unchanged) |
-| O-PC pair correlation \(\to\) phase | **S** | **Open** — reduced to OPC-Core \(\lvert\arg\zeta-\arg Z_X\rvert\gg\log\log X\) (`RH_OPC_Partial_Resolution.md`); strong conclusion not proved |
+| O-PC typical Omega \(\lvert\Delta_X\rvert,\lvert\theta_X\rvert\gg\sqrt{\log\log X}\) on the line | **A** | **Proved** (`RH_OPC_Omega_Discrepancy.md`) |
+| O-PC strong Omega \(\gg\log\log X\) / off-line | **S** | **Open** |
+| O-TL target lemma | **S** | **Open — primary** (needs strong Omega or revised target) |
 | O-Moll phase-oriented mollifier | **S** | **Open** (unchanged) |
 | O-TL target lemma | **S** | **Open — primary** (unchanged) |
 | Model debit / \(E_{\mathrm{leak}}\) / \(\mu\) / 539.9 as zeta theorem | **O** in theorem env | Motivation only |
