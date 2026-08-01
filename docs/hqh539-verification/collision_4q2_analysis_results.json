@@ -1,0 +1,346 @@
+{
+  "title": "Collision analysis: 4q+2 / Canonical T",
+  "security_framing": "Engineering structure only. Not a proof of collision resistance of HQH-539. Hardness: computationally infeasible with known methods, pending peer review.",
+  "single_step_census": {
+    "domain": "[0,100000)",
+    "outputs_hit": 75000,
+    "outputs_with_multi_preimage": 25000,
+    "collision_pair_types_by_residue": {
+      "(0, 1)": 8333,
+      "(0, 2)": 16667
+    },
+    "r1_r1_collision_pairs": 0,
+    "note_r1_branch": "q|->4q+2 is injective: no two residue-1 inputs collide under single T",
+    "examples": [
+      {
+        "x1": 1,
+        "x2": 6,
+        "T": 2,
+        "r": [
+          1,
+          0
+        ]
+      },
+      {
+        "x1": 2,
+        "x2": 3,
+        "T": 1,
+        "r": [
+          2,
+          0
+        ]
+      },
+      {
+        "x1": 4,
+        "x2": 18,
+        "T": 6,
+        "r": [
+          1,
+          0
+        ]
+      },
+      {
+        "x1": 5,
+        "x2": 9,
+        "T": 3,
+        "r": [
+          2,
+          0
+        ]
+      },
+      {
+        "x1": 7,
+        "x2": 30,
+        "T": 10,
+        "r": [
+          1,
+          0
+        ]
+      },
+      {
+        "x1": 8,
+        "x2": 15,
+        "T": 5,
+        "r": [
+          2,
+          0
+        ]
+      },
+      {
+        "x1": 10,
+        "x2": 42,
+        "T": 14,
+        "r": [
+          1,
+          0
+        ]
+      },
+      {
+        "x1": 11,
+        "x2": 21,
+        "T": 7,
+        "r": [
+          2,
+          0
+        ]
+      }
+    ],
+    "mean_preimages": 1.3333333333333333,
+    "max_preimages": 2
+  },
+  "constructive_families": {
+    "r0_r1_family": {
+      "formula": "T(3(4q+2)) = T(3q+1) = 4q+2",
+      "count_checked": 50,
+      "samples": [
+        [
+          6,
+          1,
+          2
+        ],
+        [
+          18,
+          4,
+          6
+        ],
+        [
+          30,
+          7,
+          10
+        ],
+        [
+          42,
+          10,
+          14
+        ],
+        [
+          54,
+          13,
+          18
+        ]
+      ]
+    },
+    "r0_r2_family": {
+      "formula": "T(3(2q+1)) = T(3q+2) = 2q+1",
+      "count_checked": 50,
+      "samples": [
+        [
+          3,
+          2,
+          1
+        ],
+        [
+          9,
+          5,
+          3
+        ],
+        [
+          15,
+          8,
+          5
+        ],
+        [
+          21,
+          11,
+          7
+        ],
+        [
+          27,
+          14,
+          9
+        ]
+      ]
+    },
+    "r1_r2_family": {
+      "formula": "4q+2 = 2q'+1 impossible (even=odd)",
+      "exists": false
+    },
+    "r1_r1_family": {
+      "exists": false,
+      "reason": "4q+2 injective in q"
+    }
+  },
+  "branching_preimage_tree": {
+    "1": {
+      "mean_nodes_at_depth": 1.735,
+      "median": 2.0,
+      "max": 2,
+      "zero_frac": 0.0
+    },
+    "2": {
+      "mean_nodes_at_depth": 3.095,
+      "median": 4.0,
+      "max": 4,
+      "zero_frac": 0.0
+    },
+    "3": {
+      "mean_nodes_at_depth": 5.42,
+      "median": 7.0,
+      "max": 8,
+      "zero_frac": 0.0
+    },
+    "4": {
+      "mean_nodes_at_depth": 9.435,
+      "median": 12.0,
+      "max": 16,
+      "zero_frac": 0.0
+    },
+    "5": {
+      "mean_nodes_at_depth": 14.615,
+      "median": 16.0,
+      "max": 32,
+      "zero_frac": 0.0
+    }
+  },
+  "compare_T4121_density": {
+    "Canonical": {
+      "outputs": 37500,
+      "multi_outputs": 12500,
+      "unordered_pairs": 12500
+    },
+    "T4121": {
+      "outputs": 33334,
+      "multi_outputs": 12499,
+      "unordered_pairs": 20833
+    },
+    "domain": "[0,50000)"
+  },
+  "collision_lift": {
+    "seed_pair": [
+      90,
+      22
+    ],
+    "T_a_equals_T_b": true,
+    "forward_path": [
+      {
+        "k": 0,
+        "Ta": 90,
+        "Tb": 22,
+        "equal": false
+      },
+      {
+        "k": 1,
+        "Ta": 30,
+        "Tb": 30,
+        "equal": true
+      },
+      {
+        "k": 2,
+        "Ta": 10,
+        "Tb": 10,
+        "equal": true
+      },
+      {
+        "k": 3,
+        "Ta": 14,
+        "Tb": 14,
+        "equal": true
+      },
+      {
+        "k": 4,
+        "Ta": 9,
+        "Tb": 9,
+        "equal": true
+      },
+      {
+        "k": 5,
+        "Ta": 3,
+        "Tb": 3,
+        "equal": true
+      },
+      {
+        "k": 6,
+        "Ta": 1,
+        "Tb": 1,
+        "equal": true
+      },
+      {
+        "k": 7,
+        "Ta": 2,
+        "Tb": 2,
+        "equal": true
+      }
+    ],
+    "note": "Any 1-step collision lifts to collision under all further iterates"
+  },
+  "birthday_kstep": {
+    "k1_tag24": {
+      "k": 1,
+      "n_samples": 8000,
+      "tag_bits": 24,
+      "unique_tags": 7997,
+      "collision_events": 3,
+      "birthday_expected_approx": 1.9071102142333984,
+      "first_example": {
+        "x1": 173582057680,
+        "x2": 930041561296,
+        "tag": 1048854
+      }
+    },
+    "k8_tag24": {
+      "k": 8,
+      "n_samples": 8000,
+      "tag_bits": 24,
+      "unique_tags": 7997,
+      "collision_events": 3,
+      "birthday_expected_approx": 1.9071102142333984,
+      "first_example": {
+        "x1": 986883750089,
+        "x2": 189963353644,
+        "tag": 13321899
+      }
+    },
+    "k18_tag32": {
+      "k": 18,
+      "n_samples": 5000,
+      "tag_bits": 32,
+      "unique_tags": 5000,
+      "collision_events": 0,
+      "birthday_expected_approx": 0.0029098009690642357,
+      "first_example": null
+    },
+    "k539_tag32": {
+      "k": 539,
+      "n_samples": 4000,
+      "tag_bits": 32,
+      "unique_tags": 4,
+      "collision_events": 3996,
+      "birthday_expected_approx": 0.0018621794879436493,
+      "first_example": {
+        "x1": 110256740236911783804818152405227593089265768694227250262085788134092261147870,
+        "x2": 33312585081716256316706048537185587079713847146136908970400574077138898169597,
+        "tag": 1
+      }
+    }
+  },
+  "hqh_shell_truncated_birthday": {
+    "n": 3000,
+    "tag_bits": 32,
+    "collisions": 0,
+    "unique": 3000,
+    "expected_approx": 0.0010473886504769325,
+    "note": "Truncated digest birthday \u2014 not a break of full 512-bit HQH"
+  },
+  "heuristic_bounds": {
+    "bare_T_single_step": "NOT collision-resistant \u2014 infinite constructive families (r0-r1, r0-r2)",
+    "bare_4q2_on_q": "Collision-resistant as injective map on q (trivial, wrong hardness notion)",
+    "T_k_state_birthday_heuristic_bits": {
+      "after_539_from_512_seed_mean_bits": 196,
+      "naive_birthday_on_state": 98.0,
+      "caveat": "Seeds are SHA3-512 outputs; random oracle seed model blocks free choice of state"
+    },
+    "full_hqh_512": {
+      "output_bits": 512,
+      "naive_birthday": 256,
+      "best_known_attack_claimed_here": "none \u2014 only truncated toy sampling",
+      "structural_risk": "If SHA3 seed collides, HQH collides. If two seeds map under T^539 to same fingerprint and same finalize width encoding, HQH collides. Constructive T-collisions require chosen seeds, not chosen messages through SHA3."
+    },
+    "4q2_specific_delta_vs_T4121": "r1-r1 still impossible for both; r1-r2 still parity-impossible for Canonical; collision families are driven by r0 mixed with r1/r2, not by 4q+2 injectivity failure"
+  },
+  "conclusions": {
+    "four_q_plus_2_alone": "The map q\u21924q+2 is injective: it contributes ZERO same-branch collisions. It is not a collision-resistant compression function by itself (wrong interface).",
+    "full_T": "Canonical T is NOT collision-resistant: explicit infinite families T(3(4q+2))=T(3q+1) and T(3(2q+1))=T(3q+2). Any such pair collides under all T^k.",
+    "hqh_implication": "HQH-539 collision resistance cannot rest on injectivity of T or of 4q+2. It requires the SHA3 seed (message commitment) plus finalize. Bare T collisions do not freely yield message collisions without inverting SHA3.",
+    "vs_T4121": "Collision pair counts on a finite initial segment are the same order; 4q+2 does not create r1-r1 collisions; structural CR failure mode is shared with T4121 (r0 joined to other branches)."
+  }
+}
