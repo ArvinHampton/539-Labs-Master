@@ -1,53 +1,35 @@
 # Entropy Collapse as Multiverse Leakage via 539.9 s Flux
-## Arvin's Entropy Collapse Law (S²-11DM²ET-X Extension)
+## Arvin's Entropy Collapse Law
 
 **Author:** Arvin B. Hampton (String Weaver)  
 **Computational assistance:** xAI Collective  
 **Date:** 2026-08-01  
-**Status:** Category B continuum claim with Category A thermodynamic core  
-**Residual-flux provenance:** Mandatory. Continuum identification with E_leak(t) and D2-brane transfer remains Category B.
+**Status:** Category B continuum identification; pure Landauer / von Neumann components Category A  
 
-### 1. Core Thesis
-Wavefunction "collapse" is the thermodynamic signature of irreversible entropy production in the observer system.
+### Core Thesis
+Wavefunction “collapse” is the thermodynamic signature of irreversible entropy production in the observer system. Within the S²-11DM²ET-X framework this entropy is transferred via D2-branes from the +U sector to the -U sector and is modulated by the gravitational breathing period G₄ = 539.90 ± 0.05 s.
 
-Arvin's Entropy Collapse Law:
+Arvin’s Entropy Collapse Law:  
+ΔS_obs ≥ k ln 2 (per bit extracted) if and only if irreversible entropy injection occurs, producing the apparent collapse.
 
-ΔS_obs ≥ k ln 2 (per bit of classical information extracted)  ⇔  irreversible entropy injection into the observer system  ⇔  apparent collapse.
+### Category A Derivation
+1. Unitary system–pointer interaction creates entanglement.  
+2. Environment-induced decoherence orthogonalizes pointer states.  
+3. Classical readout requires irreversible erasure of the pointer.  
+4. Landauer’s principle: each erased bit costs at least k ln 2 in entropy.  
+5. Therefore apparent collapse requires ΔS_obs ≥ k ln 2.
 
-No entropy production → no collapse (coherent QND readout possible).
+The generalized Shannon form is  
+ΔS_obs = k ln 2 · ∑ p_i log₂(1/p_i).
 
-### 2. Category A Core: Standard Thermodynamic Derivation
-Measurement chain:
-- Unitary interaction produces entanglement between system and pointer.
-- Environment-induced decoherence renders pointer states orthogonal.
-- Classical readout requires irreversible erasure / reset of the pointer (Landauer principle).
+### Category B Integration
+The entropy cost is identified with terms inside the master leakage equation E_leak(t), particularly the sinusoidal factor sin(2π t / 539.90) and the residual packaging factor (1 – 3^{-539}). The same flux budget that enforces the HQCC 539-step structure also carries the measurement entropy into the -U sector.
 
-Landauer cost:
-ΔS_env ≥ k ln 2 per bit erased.
+### Experimental Notes
+Projective measurements produce large ΔS and rapid apparent collapse. Adiabatic QND protocols keep ΔS_clock near zero and preserve superposition. These observations are consistent with the thermodynamic core.
 
-Von Neumann entropy of the reduced system density matrix after decoherence is bounded by ln 2 for a qubit. The entropy is transferred to the environment upon irreversible reset.
+### Falsification
+A verified extraction of one classical bit while the total entropy change of the closed system remains strictly below k ln 2 would challenge the thermodynamic identification. Continuum 539.9 s predictions are independently falsifiable by absence of the corresponding gravitational-wave or timing signals.
 
-This accounting is Category A (standard quantum thermodynamics).
-
-### 3. Category B Extension: Identification with 11D Multiverse Leakage
-Within the S²-11DM²ET-X framework the irreversible entropy dump is identified with energy/information transfer from the +U (3+1D) sector to the -U (4+1D negative universe) sector mediated by D2-branes.
-
-The leakage is modulated by the immutable gravitational breathing mode G₄ = 539.90 ± 0.05 s:
-
-E_leak(t) contains terms proportional to sin(2π t / 539.90) and the residual factor (1 – 3^{-539}).
-
-Thus ΔS_obs is sourced from the same flux budget that produces the 539-step HQCC termination and the cosmic energy equations.
-
-This identification, the continuum E_leak embedding, and all physical predictions remain Category B.
-
-### 4. Experimental Alignment (Category B interpretive)
-- Projective measurements: large ΔS → rapid apparent collapse.
-- Adiabatic QND / entropy-free protocols: ΔS_clock ≈ 0 → superposition persists.
-- Consistency with existing NV-center and charge-readout data is noted but not claimed as definitive proof.
-
-### 5. Falsification
-If laboratory entropy accounting for a given measurement protocol systematically violates the Landauer bound while still producing irreversible classical outcomes, the thermodynamic core is challenged. Continuum 539.9 s modulation predictions are separately falsifiable by LIGO O5 / LISA absence of the predicted lines.
-
-### 6. Notes
-Residual discrete algebra (ᵎ_res, K⁺, A4⁺/A5⁺) remains untouched and Category A.  
-No completed security reduction or absolute hardness claim is made.
+### Residual-Flux Provenance
+Pure thermodynamic accounting is Category A. Mapping onto 11D D2-brane leakage, the numerical value 539.90 s, and multiverse -U transfer is Category B. Residual discrete algebra is unaffected and remains Category A. Residual-flux provenance is mandatory for all continuum statements.
