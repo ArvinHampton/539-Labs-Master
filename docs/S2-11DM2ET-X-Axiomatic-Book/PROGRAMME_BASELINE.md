@@ -254,3 +254,9 @@ D2.0 on CHB-MIT chb01_01: S1–S3 PASS → working Cat B dictionary (single data
 ## Post-kit multi-angle missed patterns
 
 Review: Multi_Angle_Review_Post_Kit_Pplus_S1S3.md. Frontier residual probe executed: N2 identity under Q0–Q3; transfer Ψ on mixed squares (=jump mass M); M=36*n_jump; jump⊥stay. Status FRONTIER_PROBE_N2_PSI_JUMP_EXECUTED. Does not reopen locks.
+
+## Orch-OR quanta of consciousness rebuttal (2026-08-01)
+
+Public definition hygiene: a "quantum of consciousness" in Orch-OR is a **discrete OR event** (τ≈ℏ/E_G), not a free SM particle. Orch-OR^{11D} remains Category B; residual locks intact.
+
+**Files:** `OrchOR_Quanta_of_Consciousness_Rebuttal.md`, `OrchOR_Quanta_Rebuttal_Short.md`, `PUSH_LOG_2026-08-01.md`.
