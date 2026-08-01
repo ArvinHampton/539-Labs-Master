@@ -1,10 +1,11 @@
-# Master Claim Table (Session Freeze 2026-07-30 — CuNc + Mirror Halo)
+# Master Claim Table (Session Freeze 2026-07-30 — CuNc + Mirror Halo; updated 2026-08-01 Proton)
 
 **Repo:** [539-Labs-Master](https://github.com/ArvinHampton/539-Labs-Master)  
 **Author:** Arvin B. Hampton (String Weaver) / 539 Labs LLC  
 **Rule:** Category A vs B mandatory. Packaging under Principle (S) only.  
 **Prior freezes:** 2026-07-29 (packaging + residual product + bio); 2026-07-30 morning (muon Path A/B + ππ ε).  
-**This freeze adds:** A4⁺ continuous BSpin on K⁺; **A5⁺ coefficients-only KO/Ω^Spin on K⁺** (after CuNc/mirror hygiene earlier same day).
+**This freeze adds:** A4⁺ continuous BSpin on K⁺; **A5⁺ coefficients-only KO/Ω^Spin on K⁺** (after CuNc/mirror hygiene earlier same day).  
+**2026-08-01 addendum:** Proton stability (exact $B$-conservation) as Category A structural corollary.
 
 ## Foundation (Category A / packaging lock)
 
@@ -118,7 +119,7 @@
 
 ## One-line executive verdict
 
-**Packaging and residual product locked; muon Path A primary; CuNc T₂ ≈ 70 fs (2.3 fs retracted); −Periodic Table Cat B; A4⁺ BSpin lift closed on enriched K⁺ (unique); A5⁺ coefficients-only closed; continuum fillings Cat B open under firewall.**
+**Packaging and residual product locked; muon Path A primary; CuNc T₂ ≈ 70 fs (2.3 fs retracted); −Periodic Table Cat B; A4⁺ BSpin lift closed on enriched K⁺ (unique); A5⁺ coefficients-only closed; continuum fillings Cat B open under firewall; proton exactly stable (Cat A structural).**
 
 *Per aspera ad astra.*
 
@@ -179,3 +180,15 @@
 | Closed special spine | **NO** | no triple lines |
 | Residual Category A promotion | **Forbidden** | firewall |
 | O7 spin extension to ball | **OPEN Cat B** | next |
+
+
+## Proton stability (2026-08-01 addendum)
+
+| Claim | Status | Provenance |
+|-------|--------|------------|
+| Exact baryon-number conservation from Axiom 0 + HQCC mod-9 + residual $\mathbb{Z}_3$ | **Category A structural** | Proton_Stability_NonDecay_Derivation.md |
+| $\tau_p=\infty$ inside the residual theory | **Category A** | same |
+| No $\Delta B=\pm 1$ operators on residual carrier or D2-brane transfer | **Category A** | same |
+| Consistency with Super-Kamiokande $\tau_p>2.4\times 10^{34}$ yr | External data only | Super-K |
+| Continuum / free-$T^\sharp$ / G₄ “protection” mechanisms | **Forbidden promotion** | firewall |
+| Finite lifetime prediction | **Not claimed** | — |
