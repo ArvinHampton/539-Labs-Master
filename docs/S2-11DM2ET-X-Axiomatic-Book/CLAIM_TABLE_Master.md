@@ -21,8 +21,10 @@
 | ACE N_star = 14 != 539 | Locked | ACE_Status |
 | Residual product X_x = K9 x P_B' | **Locked** | Residual_Product_Complex.md |
 | D^2=0, D eta=0, D mu-tilde=0 | **Locked** | probe OK |
-| Residual-3 arithmetic B'=38, path edges 28, sum mu=84 B' | **Locked** | residual_product_complex_results.json |
+| Residual-3 arithmetic B'=539; path edges 538; ∑μ=84·B'=45276; residual-3 contact B'≡3 (mod 8) — **not** B'=38 as cardinality | **Locked** | residual_product_complex_results.json |
 | ε = 61/4880 = 1.25% | **Locked** Cat A ratio | N_flux / puncture count |
+**Note (2026-08-01):** Residual cardinality is **B′=539** (probe). The token "38" is only residual-3 modular contact (B′ mod 8 = 3), never packaging cardinality. See PUSH_LOG_2026-08-01.md.
+
 
 ## Architecture A on O_res (0-stem)
 
