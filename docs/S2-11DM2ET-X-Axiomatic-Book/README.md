@@ -77,9 +77,9 @@ Pure-Cat-A extract pack: [rh_pure_cata/](rh_pure_cata/).
 
 Muon g−2 Path A, CuNc audit, mirror halo, photon ring, biological 18/521, sector↔band dictionary — use [CLAIM_TABLE_Master.md](CLAIM_TABLE_Master.md) before quoting. Continuum / physical clocks never enter Category A hardness.
 
----
-
-
+| Document | Role |
+|----------|------|
+| [Proton_Stability_NonDecay_Derivation.md](Proton_Stability_NonDecay_Derivation.md) | **Category A structural**: exact $B$-conservation / $\tau_p=\infty$ from Axiom 0 + HQCC + residual $\mathbb{Z}_3$ |
 
 ---
 

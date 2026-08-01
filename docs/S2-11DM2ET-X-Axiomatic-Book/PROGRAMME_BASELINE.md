@@ -2,7 +2,7 @@
 
 **Status:** Single source of truth for what is **resolved** vs **open**.  
 **Rule:** Everything listed as resolved is locked; everything listed as open remains open under the stated constraints.  
-**Date lock:** 2026-07 (living book).
+**Date lock:** 2026-07 (living book); proton stability addendum 2026-08-01.
 
 **Category A / Category B separation and residual-flux provenance are mandatory on every claim.**
 
@@ -161,6 +161,7 @@ Continuum hopfion, torsion, or measure constructions remain **Category B design 
 | Individuality lifetime-ratio / sub-harmonic falsifiability | Open |
 | E1–E2 free-map residue-word probes | Executed samples ≠ 539; low priority |
 | **Biological 18/521 signature (MT / DDG)** | **Structurally compatible, numerically unconfirmed** — `Biological_18_521_Signature_Report.md` |
+| **Proton stability (exact $B$-conservation)** | **Category A structural corollary** — `Proton_Stability_NonDecay_Derivation.md` (2026-08-01) |
 
 **Rule:** Secondary tracks **must not** be mixed into residual-carrier provenance statements.  
 **Biological rule:** Orch-OR\(^{11\mathrm{D}}\) / MT claims are Category B; packaging integers keep foundation provenance (\(L_{\mathrm{pref}}\), \(L_{\mathrm{body}}\) under (S)).
@@ -206,6 +207,7 @@ Continuum hopfion, torsion, or measure constructions remain **Category B design 
 | Formal games + Π | `HQH539_Formal_Games_and_Hard_Problem_Pi.md` |
 | 9 Maths patterns | `Nine_Maths_Pattern_Exploration.md` |
 | Provenance integers | `PROVENANCE_TABLE.md` |
+| Proton stability | `Proton_Stability_NonDecay_Derivation.md` |
 
 ---
 
@@ -213,7 +215,8 @@ Continuum hopfion, torsion, or measure constructions remain **Category B design 
 
 > The combinatorial residual foundation is **locked**.  
 > Discrete Architecture A (**A0–A2**) is **locked**; continuous **A3** locked; **A4–A5** locked as **0-stem residual closure** on \(\mathcal{O}_{\mathrm{res}}^{\mathrm{disc}}\) only (`A4_BSPIN_LIFT_CLOSED_ON_O_RES_DISC`, `A5_KO_OMEGA0_SPIN_CLOSED_ON_O_RES`); **A4⁺** (full \(|E|\)) remains **open**.  
-> Free dynamics stay **Option 3**. Security stays **Category B exploration** (games + Π stated 2026-07-31; no PPT reduction). Continuum hopfion/torsion/measure contacts stay **Category B** relative to the residual foundation.
+> Free dynamics stay **Option 3**. Security stays **Category B exploration** (games + Π stated 2026-07-31; no PPT reduction). Continuum hopfion/torsion/measure contacts stay **Category B** relative to the residual foundation.  
+> Proton is exactly stable (Category A structural corollary of Axiom 0 + residual packaging).
 
 ## Cat-B continuum fillings (open, not locked)
 
@@ -260,3 +263,9 @@ Review: Multi_Angle_Review_Post_Kit_Pplus_S1S3.md. Frontier residual probe execu
 Public definition hygiene: a "quantum of consciousness" in Orch-OR is a **discrete OR event** (τ≈ℏ/E_G), not a free SM particle. Orch-OR^{11D} remains Category B; residual locks intact.
 
 **Files:** `OrchOR_Quanta_of_Consciousness_Rebuttal.md`, `OrchOR_Quanta_Rebuttal_Short.md`, `PUSH_LOG_2026-08-01.md`.
+
+## Proton stability (2026-08-01)
+
+Exact baryon-number conservation and $\tau_p=\infty$ derived as Category A structural consequence of Axiom 0 (three generations) + HQCC mod-9 invariant + residual product $\mathbb{Z}_3$. No $\Delta B=1$ operators admitted. Experimental Super-Kamiokande bound treated as external consistency only.
+
+**File:** `Proton_Stability_NonDecay_Derivation.md`, `PUSH_LOG_2026-08-01_Proton_Stability.md`.
