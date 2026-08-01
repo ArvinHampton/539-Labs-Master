@@ -2,16 +2,12 @@
 
 **Status: Category B continuum / exploratory only**  
 **Date: 2026-08-01**  
-**Residual-flux provenance mandatory.**  
-
-This directory organizes the dual-universe interpretive mappings for the six remaining Clay Millennium Prize Problems.  
+**Residual-flux provenance mandatory.**
 
 No completed formal proof of any Clay Millennium Problem is claimed or supplied.  
-The residual discrete algebraic core (O_res, fiber blocks, permanent class, product complex, K+ through A4+/A5+, BSpin lift, packaging 18+521=539, short free T3 basins, HQCC Theorem) remains Category A (pure math, closed) and is untouched.  
-All continuum statements require residual-flux provenance.
+The residual discrete algebraic core (𝓞_res, fiber blocks 68/67, permanent class [α⊗δf], product complex X_×, form SS, K⁺ through A4⁺/A5⁺, BSpin lift, KO/Spin coefficients), packaging 18+521=539, T₃ short free basins, and the HQCC Theorem remain Category A (pure math, closed, empirically verified by computation). All continuum claims and dual-universe physical interpretations are locked Category B. Hardness language for HQH-539 remains locked Category B.
 
 ## Contents
-
 - 01_P_versus_NP_CatB.md
 - 02_BSD_CatB.md
 - 03_Hodge_CatB.md
@@ -19,6 +15,6 @@ All continuum statements require residual-flux provenance.
 - 05_Yang_Mills_CatB.md
 - 06_Navier_Stokes_CatB.md
 
-See also the parent unified note: Clay_Millennium_Problems_Dual_Universe_Mappings_CatB.md
+See also the parent note Clay_Millennium_Problems_Dual_Universe_Mappings_CatB.md.
 
-The residual discrete algebra, packaging under Principle (S), Option 3 / No-Go, and HQH-539 formal games remain exactly as previously locked.
+Historical December 2025 continuum sketches that used stronger theorem language are superseded and remain Category B exploratory only.
