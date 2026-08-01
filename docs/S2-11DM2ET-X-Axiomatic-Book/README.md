@@ -79,6 +79,21 @@ Muon g−2 Path A, CuNc audit, mirror halo, photon ring, biological 18/521, sect
 
 ---
 
+
+
+---
+
+## 5b. Orch-OR / consciousness definition (Category B framing)
+
+| Document | Role |
+|----------|------|
+| [OrchOR_Quanta_of_Consciousness_Rebuttal.md](OrchOR_Quanta_of_Consciousness_Rebuttal.md) | Full: discrete OR unit, three layers, falsifiers, ^{11D} hygiene |
+| [OrchOR_Quanta_Rebuttal_Short.md](OrchOR_Quanta_Rebuttal_Short.md) | Post-ready short form |
+| [Biological_18_521_Signature_Report.md](Biological_18_521_Signature_Report.md) | Emp 18/521 not detected |
+| [Sector_Band_Dictionary_RFC.md](Sector_Band_Dictionary_RFC.md) | D2.0 working Cat B only |
+
+**Do not** promote residual \(H^2\) or packaging integers to laboratory proof of neural OR.
+
 ## 6. Key constants (read provenance first)
 
 Authoritative: [PROVENANCE_TABLE.md](PROVENANCE_TABLE.md).  
