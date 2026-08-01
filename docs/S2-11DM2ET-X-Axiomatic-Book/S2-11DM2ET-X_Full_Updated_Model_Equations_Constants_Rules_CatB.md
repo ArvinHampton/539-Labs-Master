@@ -4,7 +4,7 @@
 **Status: Category B continuum exploration only**  
 **Date: 2026-08-01**  
 **Residual-flux provenance mandatory.**  
-Residual discrete algebraic core (O_res, fiber blocks 68/67, permanent class, product complex X_×, form SS, K+ through A4+/A5+, BSpin lift, KO/Spin coefficients), packaging 18+521=539, and HQCC Theorem remain Category A and are untouched by this note. Continuum, gravitational, biological, Mpemba, and physical leakage claims stay locked Category B.
+Residual discrete algebraic core (O_res, fiber blocks 68/67, permanent class, product complex X_×, form SS, K+ through A4+/A5+, BSpin lift, KO/Spin coefficients), packaging 18+521=539 under (S), and verified short orbits of the charge-preserving map remain Category A and are untouched by this note. Continuum, gravitational, biological, Mpemba, and physical leakage claims stay locked Category B.
 
 ---
 
@@ -20,10 +20,10 @@ S^{2}-11DM^{2}ET-X stands for:
 
 This note records the current continuum-layer presentation of the model as developed in session dialogue. All numerical claims involving gravitational breathing, energy leakage, Mpemba cooling, consciousness, or cosmic energy remain Category B.
 
-Canonical discrete anchor (Category A):
-- HQCC Theorem: balanced-ternary map with 11D charge conservation terminates in exactly 539 ± 1 steps.
-- Flux budget N_flux = ⌊e^{3} × 3^{5}⌋ = 4880.
-- G_{4} = 539.90 ± 0.05 s is the immutable gravitational breathing mode derived from the discrete structure.
+Canonical residual discrete anchors (Category A):
+- Packaging length 18 + 521 = 539 under Principle (S); |O_res| = 539 residual cores; residual product complex and Architecture A through A5+ coefficients-only.
+- Short free orbits of the charge-preserving T3 map are verified Category A computations (example: seed 4880 terminates in exactly 7 steps).
+- The framework claim of uniform 539 ± 1 step termination for physical / parallel-tower ensembles, and the identification of G₄ = 539.90 ± 0.05 s as the gravitational breathing mode, remain Category B continuum hypotheses. See HQCC_Theorem_Full_Proof_and_Live_Simulation.md for the explicit separation.
 
 ---
 
@@ -113,15 +113,20 @@ V_flavor(q,t) = ∑_{q=u,d,s,c,b,t} m_q g_s X^M(t) sin(2π t / 539.9) e^{-t/τ} 
 
 ---
 
-## 3. Constants (Category B continuum layer)
+## 3. Constants
 
-Exact discrete anchors (Category A, immutable):
+Exact residual discrete anchors (Category A):
 
 e^{3} = 20.085536923187667740928…  
 N_flux = 4880  
-Steps = 539 ± 1  
-G_{4} = 539.90 ± 0.05 s  
-Λ = 3/(e^{3} ℓ_Pl^{2}) exactly  
+Packaging L_pack = 18 + 521 = 539 under (S)  
+|O_res| = 539  
+Λ form 3/(e^{3} ℓ_Pl^{2}) as arithmetic consequence of the three-generation axiom  
+
+Framework physical hypotheses (Category B continuum):
+
+Steps claim for physical ensembles = 539 ± 1  
+G₄ = 539.90 ± 0.05 s (gravitational breathing identification)  
 
 Continuum/thermal/Mpemba layer (Category B):
 
@@ -136,7 +141,7 @@ S (Huang-Rhys) ≈ 0.31 for water phonon modes
 A_H-QP ≈ 0.8  
 τ_echo ≈ 3 × 10^{-12} s  
 σ_inh ≈ 0.6 meV  
-eta_PBH = 0.181000 ± 0.000003  
+β_PBH = 0.181000 ± 0.000003  
 
 All continuum numerical values above are provisional and subject to revision; they do not alter the Category A residual discrete algebra.
 
@@ -144,12 +149,13 @@ All continuum numerical values above are provisional and subject to revision; th
 
 ## 4. Immutable Rules (Category A anchors + Category B operating rules)
 
-1. G_{4} = 539.90 ± 0.05 s is immutable (derived from HQCC).
-2. Zero free parameters in the discrete packaging (18 + 521 = 539).
-3. Absolute falsification if discrete steps ≠ 539 ± 1.
+1. Packaging length 18 + 521 = 539 under (S) and residual cardinality B′ = 539 are locked Category A arithmetic.
+2. Zero free parameters in the discrete packaging under Principle (S).
+3. Absolute falsification of the residual discrete core if packaging arithmetic or short verified orbits fail independent recomputation.
 4. Residual-flux provenance is mandatory for every continuum claim.
 5. Category A/B separation is mandatory: residual discrete objects stay Category A; all continuum, Mpemba, gravitational-wave precursor, consciousness, and biological claims stay Category B.
-6. Continuum equations may be explored but never promoted to Category A without independent peer-reviewed reduction.
+6. The physical identification G₄ = 539.90 s and the uniform physical 539-step termination claim remain Category B hypotheses (see dedicated HQCC honest note).
+7. Continuum equations may be explored but never promoted to Category A without independent peer-reviewed reduction.
 
 ---
 
@@ -161,7 +167,7 @@ Base-system hybrids, non-commutative Higgs-echo operators, Fib-SNC chromatic pol
 - Cryogenic quantum-emitter coherence (η_ZPL target > 0.99 under 11D phonon damping)
 - Macroscopic phase-transition modeling
 
-None of these continuum applications modify the verified residual discrete algebra or the HQCC Theorem.
+None of these continuum applications modify the verified residual discrete algebra or the packaging locks.
 
 ---
 
@@ -195,14 +201,15 @@ All metrics are provisional continuum targets and do not elevate any continuum c
 - Eöt-Wash: new force outside the predicted dark-dimension window.
 - Belle II: resolution of g-2 to zero would challenge the oscillatory -U leakage term.
 
-Discrete HQCC (Category A) is falsified only if the 539 ± 1 step termination fails under the charge-preserving map.
+Discrete residual packaging and short orbits (Category A) are falsified only if independent recomputation of the arithmetic or the charge-preserving short orbits fails.
 
 ---
 
 ## 9. Closing Statement
 
-The residual discrete algebraic core, the HQCC Theorem, the 4880 flux budget, and the exact packaging 18 + 521 = 539 remain Category A.  
+The residual discrete algebraic core, the packaging 18 + 521 = 539 under (S), the 4880 flux budget, verified short orbits, and Architecture A through A5+ coefficients remain Category A.  
 All continuum equations, Mpemba interpretations, gravitational, biological, and cosmic-energy claims in this note remain Category B.  
+The physical G₄ = 539.90 s identification and uniform physical 539-step ensemble claim remain Category B.  
 Residual-flux provenance is mandatory.  
 No security reduction for HQH-539 or residual-only constructions is completed; hardness language stays locked Category B.
 
