@@ -1,0 +1,86 @@
+[
+  {
+    "name": "pure_noise",
+    "domain": "synthetic",
+    "description": "Gaussian white noise, mean=0, std=1",
+    "fs": 1.0,
+    "duration_s": 21596.0,
+    "N": 21596,
+    "npy": "synthetic/pure_noise.npz",
+    "csv_sample": "synthetic/pure_noise.csv",
+    "free_first": true,
+    "discovery_gate_required": true
+  },
+  {
+    "name": "pure_G4",
+    "domain": "synthetic",
+    "description": "Pure sinusoid amplitude 0.5 at exactly G4=539.9 s",
+    "fs": 1.0,
+    "duration_s": 21596.0,
+    "N": 21596,
+    "npy": "synthetic/pure_G4.npz",
+    "csv_sample": "synthetic/pure_G4.csv",
+    "free_first": true,
+    "discovery_gate_required": true
+  },
+  {
+    "name": "G4_plus_noise",
+    "domain": "synthetic",
+    "description": "G4 tone amp 0.5 + 0.8*noise",
+    "fs": 1.0,
+    "duration_s": 21596.0,
+    "N": 21596,
+    "npy": "synthetic/G4_plus_noise.npz",
+    "csv_sample": "synthetic/G4_plus_noise.csv",
+    "free_first": true,
+    "discovery_gate_required": true
+  },
+  {
+    "name": "off_target_600",
+    "domain": "synthetic",
+    "description": "Sinusoid at 600 s + noise (control)",
+    "fs": 1.0,
+    "duration_s": 21596.0,
+    "N": 21596,
+    "npy": "synthetic/off_target_600.npz",
+    "csv_sample": "synthetic/off_target_600.csv",
+    "free_first": true,
+    "discovery_gate_required": true
+  },
+  {
+    "name": "AM_G4",
+    "domain": "synthetic",
+    "description": "Amplitude-modulated G4 with beta=0.18 + light noise",
+    "fs": 1.0,
+    "duration_s": 21596.0,
+    "N": 21596,
+    "npy": "synthetic/AM_G4.npz",
+    "csv_sample": "synthetic/AM_G4.csv",
+    "free_first": true,
+    "discovery_gate_required": true
+  },
+  {
+    "name": "coloured_noise",
+    "domain": "synthetic",
+    "description": "Coloured noise approx 1/f^1.5",
+    "fs": 1.0,
+    "duration_s": 21596.0,
+    "N": 21596,
+    "npy": "synthetic/coloured_noise.npz",
+    "csv_sample": "synthetic/coloured_noise.csv",
+    "free_first": true,
+    "discovery_gate_required": true
+  },
+  {
+    "name": "multi_harmonic",
+    "domain": "synthetic",
+    "description": "G4 + 45s + 15s harmonics + noise",
+    "fs": 1.0,
+    "duration_s": 21596.0,
+    "N": 21596,
+    "npy": "synthetic/multi_harmonic.npz",
+    "csv_sample": "synthetic/multi_harmonic.csv",
+    "free_first": true,
+    "discovery_gate_required": true
+  }
+]

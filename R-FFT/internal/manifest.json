@@ -1,0 +1,14 @@
+[
+  {
+    "name": "multi_k_residual_placeholder",
+    "domain": "internal_quantum",
+    "description": "Placeholder evenly-sampled residual vector derived from multi-k style dynamics (for quantum-domain free-first test). Not a real experimental residual.",
+    "fs": 0.5,
+    "duration_s": 5399.0,
+    "N": 2700,
+    "npy": "internal/multi_k_residual_placeholder.npz",
+    "csv_sample": "internal/multi_k_residual_placeholder.csv",
+    "free_first": true,
+    "note": "Replace with real T3/multi-k trajectory residual once extracted from resonant-galois or HQH code."
+  }
+]

@@ -1,0 +1,212 @@
+{
+  "version": "2026-08-01-observatories",
+  "engine": "R-FFT-539.9 free-first",
+  "binding_rule": "Every series MUST be run with free estimator + phase-scramble/scrambled-G4 nulls first. discovery_claim_allowed only when free and not scrambled. Preconditioned lock is secondary labeled compatibility only.",
+  "change_log": "2026-07-27 initial expanded observatories; 2026-08-01 added INTEGRAL/SPI 511 keV and PhysioNet EEG formal entries; results/ convention noted.",
+  "observatories": [
+    {
+      "name": "LIGO",
+      "sites": ["H1 (Hanford)", "L1 (Livingston)"],
+      "access": "GWOSC + GWpy / NDS2 (nds.gwosc.org)",
+      "preferred_products": "O3 second-trend auxiliary channels (1 Hz RMS)",
+      "example_channels": [
+        "H1:ISI-GND_STS_ITMY_Z_BLRMS_30M_100M.rms",
+        "L1:ISI-GND_STS_HAM5_X_BLRMS_100M_300M.rms",
+        "H1:ISI-GND_BRS_ETMY_RX_BLRMS_30M_100M.rms"
+      ],
+      "sampling_notes": "Second-trend data already 1 Hz; ideal for ~540 s searches. Full set ~61 GB; fetch individual channels.",
+      "free_first": true
+    },
+    {
+      "name": "Virgo",
+      "sites": ["V1"],
+      "access": "GWOSC open data",
+      "preferred_products": "Strain segments (downsample) and available auxiliary/DQ channels",
+      "example_channels": ["V1:Hrec_hoft_16384Hz (downsample required)"],
+      "sampling_notes": "High-rate strain needs downsampling to ≤1 Hz for long continuous segments.",
+      "free_first": true
+    },
+    {
+      "name": "KAGRA",
+      "sites": ["K1"],
+      "access": "GWOSC (joint-run releases)",
+      "preferred_products": "Available strain / auxiliary where released",
+      "sampling_notes": "Similar handling to Virgo/LIGO.",
+      "free_first": true
+    },
+    {
+      "name": "GEO 600",
+      "sites": ["G1"],
+      "access": "Limited open segments via GWOSC",
+      "preferred_products": "Short comparison segments",
+      "sampling_notes": "Not primary long-baseline target.",
+      "free_first": true
+    },
+    {
+      "name": "NANOGrav",
+      "sites": ["PTA (Arecibo, GBT, VLA)"],
+      "access": "nanograv.org/science/data + Zenodo (15-yr DOI 10.5281/zenodo.16051178)",
+      "preferred_products": "Post-fit residuals (ASCII, full and epoch-averaged, whitened/un-whitened)",
+      "sampling_notes": "Irregular cadence (days). Convert to evenly sampled residual vector before R-FFT. Native band is nanohertz; 539.9 s is a control/super-harmonic check.",
+      "free_first": true
+    },
+    {
+      "name": "EHT / M87*",
+      "sites": ["Event Horizon Telescope array"],
+      "access": "CyVerse Data Commons polarised visibility releases + papers (2017/2018/2021)",
+      "preferred_products": "Proxy light curves or multi-year polarity/EVPA monitoring",
+      "sampling_notes": "Sparse VLBI campaigns. Continuous 1 Hz series do not exist. Multi-year polarity flips relevant to 539.9-day claims only after explicit proxy construction.",
+      "free_first": true
+    },
+    {
+      "name": "PhysioNet EEG",
+      "sites": ["CHB-MIT and related continuous EEG"],
+      "access": "PhysioNet (CHB-MIT Scalp EEG Database)",
+      "preferred_products": "Long continuous multi-hour recordings (decimate from 256 Hz)",
+      "sampling_notes": "Typical 256 Hz; one-hour segments contain only ~6–7 cycles of 539.9 s. Free peaks commonly land in EEG band. Secondary G4 metrics stay compatibility only.",
+      "status": "converter and one live CHB-MIT run performed (free peak ~32 Hz; secondary non-significant)",
+      "free_first": true
+    },
+    {
+      "name": "INTEGRAL/SPI 511 keV",
+      "sites": ["INTEGRAL SPI"],
+      "access": "A&A papers (Yoneda et al. 2025, Siegert & Yoneda 2026) + INTEGRAL archive",
+      "preferred_products": "Time-binned flux light curves (if constructed); spatial maps alone are not spectral claims",
+      "sampling_notes": "Primarily spatial. High-latitude hotspots and possible 2–3× higher rate reported. Free-first required only if evenly sampled time series available.",
+      "model_link": "Category B (possible outflow / leakage interpretation)",
+      "free_first": true
+    }
+  ],
+  "datasets": [
+    {
+      "id": "syn_pure_noise",
+      "domain": "synthetic",
+      "path": "synthetic/pure_noise.npz",
+      "fs": 1.0,
+      "duration_s": 21596.0,
+      "status": "staged",
+      "free_first": true
+    },
+    {
+      "id": "syn_pure_G4",
+      "domain": "synthetic",
+      "path": "synthetic/pure_G4.npz",
+      "fs": 1.0,
+      "duration_s": 21596.0,
+      "status": "staged",
+      "free_first": true
+    },
+    {
+      "id": "syn_G4_plus_noise",
+      "domain": "synthetic",
+      "path": "synthetic/G4_plus_noise.npz",
+      "fs": 1.0,
+      "duration_s": 21596.0,
+      "status": "staged",
+      "free_first": true
+    },
+    {
+      "id": "syn_off_target_600",
+      "domain": "synthetic",
+      "path": "synthetic/off_target_600.npz",
+      "fs": 1.0,
+      "duration_s": 21596.0,
+      "status": "staged",
+      "free_first": true
+    },
+    {
+      "id": "syn_AM_G4",
+      "domain": "synthetic",
+      "path": "synthetic/AM_G4.npz",
+      "fs": 1.0,
+      "duration_s": 21596.0,
+      "status": "staged",
+      "free_first": true
+    },
+    {
+      "id": "syn_coloured_noise",
+      "domain": "synthetic",
+      "path": "synthetic/coloured_noise.npz",
+      "fs": 1.0,
+      "duration_s": 21596.0,
+      "status": "staged",
+      "free_first": true
+    },
+    {
+      "id": "syn_multi_harmonic",
+      "domain": "synthetic",
+      "path": "synthetic/multi_harmonic.npz",
+      "fs": 1.0,
+      "duration_s": 21596.0,
+      "status": "staged",
+      "free_first": true
+    },
+    {
+      "id": "internal_multi_k_placeholder",
+      "domain": "internal_quantum",
+      "path": "internal/multi_k_residual_placeholder.npz",
+      "fs": 0.5,
+      "duration_s": 5399.0,
+      "status": "staged_placeholder",
+      "free_first": true,
+      "note": "Replace with real trajectory residual when available"
+    },
+    {
+      "id": "ligo_o3_aux",
+      "domain": "GR_LIGO",
+      "path": "NOT_STAGED_FULL",
+      "status": "loader_only",
+      "access": "GWpy/NDS2 nds.gwosc.org",
+      "free_first": true
+    },
+    {
+      "id": "virgo_strain_aux",
+      "domain": "GR_Virgo",
+      "path": "NOT_STAGED_FULL",
+      "status": "loader_only",
+      "access": "GWOSC",
+      "free_first": true
+    },
+    {
+      "id": "kagra_strain_aux",
+      "domain": "GR_KAGRA",
+      "path": "NOT_STAGED_FULL",
+      "status": "loader_only",
+      "access": "GWOSC",
+      "free_first": true
+    },
+    {
+      "id": "nanograv_residuals",
+      "domain": "PTA_NANOGrav",
+      "path": "NOT_STAGED_FULL",
+      "status": "loader_only",
+      "access": "Zenodo / nanograv.org",
+      "free_first": true
+    },
+    {
+      "id": "eht_m87_proxy",
+      "domain": "EHT",
+      "path": "NOT_STAGED_FULL",
+      "status": "loader_only",
+      "access": "CyVerse + literature proxy construction",
+      "free_first": true
+    },
+    {
+      "id": "physionet_chbmit",
+      "domain": "EEG_PhysioNet",
+      "path": "NOT_STAGED_FULL",
+      "status": "loader_only + one live run completed",
+      "access": "PhysioNet CHB-MIT",
+      "free_first": true
+    },
+    {
+      "id": "integral_spi_511keV",
+      "domain": "INTEGRAL_SPI",
+      "path": "NOT_STAGED_FULL",
+      "status": "loader_only (time series if constructed)",
+      "access": "A&A + INTEGRAL archive",
+      "free_first": true
+    }
+  ],
+  "results_convention": "All free-first run outputs (JSON preferred) under RFFT_datasets/results/ (local) and mirrored to Drive / GitHub R-FFT/results/"
+}
