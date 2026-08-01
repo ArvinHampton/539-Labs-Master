@@ -1,0 +1,16 @@
+{
+  "n_messages": 5000,
+  "unique_seeds": 5000,
+  "unique_fingerprints": 5000,
+  "fingerprint_multicollisions": 0,
+  "unique_encodings": 5000,
+  "encode_len": {
+    "mean": 24.888,
+    "min": 16,
+    "max": 33
+  },
+  "unique_digests": 5000,
+  "salt_separates": true,
+  "adversarial_salt_concat_ambiguities_sampled": 0,
+  "zero_fingerprint_encode": "to_bytes(0) TypeError/ValueError in Python"
+}
