@@ -1,7 +1,7 @@
 # 539 Labs — GitHub repository map
 
 **Account:** [ArvinHampton](https://github.com/ArvinHampton)  
-**Updated:** 2026-07-31  
+**Updated:** 2026-08-04  
 **Canonical science corpus:** this repository (`539-Labs-Master`)
 
 This map tells you which repo to open for which job. Prefer the **role** column over historical names.
@@ -45,6 +45,7 @@ Do **not** duplicate large bulk datasets (RFFT archives) into either corpus. Kee
 
 | Repository | Visibility | Role |
 |------------|------------|------|
+| [Clay-P-vs-NP-CatB-Exploratory-Mapping](https://github.com/ArvinHampton/Clay-P-vs-NP-CatB-Exploratory-Mapping) | Private | **P vs NP Category B dual-universe exploratory mapping only** — no Clay proof claimed; residual core untouched; residual-flux provenance mandatory. Living multi-problem Clay suite stays in Master `Clay-Mappings-CatB/` |
 | [re-free-magnet-corpus](https://github.com/ArvinHampton/re-free-magnet-corpus) | Private | RE-free permanent magnet investigation |
 | [jaxtins-garage](https://github.com/ArvinHampton/jaxtins-garage) | Private | Family auto-mechanics game |
 | [jaxtins-racing](https://github.com/ArvinHampton/jaxtins-racing) | Private | Racing companion |
@@ -71,6 +72,7 @@ Do **not** duplicate large bulk datasets (RFFT archives) into either corpus. Kee
 | Live product UI / Stripe / deploy | `hqh539-engine` |
 | SystemVerilog / Vivado / TDP | `539-Labs-repo` |
 | Session freeze that must stay small | Optional extract into `539-Labs-Corpus` with pointer to Master |
+| Private P vs NP Cat B exploratory share-slice | `Clay-P-vs-NP-CatB-Exploratory-Mapping` (full Clay suite stays in Master) |
 | Galois experiments | `resonant-galois` |
 
 ---

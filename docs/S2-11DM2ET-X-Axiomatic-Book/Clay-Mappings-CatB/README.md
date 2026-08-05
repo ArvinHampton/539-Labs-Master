@@ -17,4 +17,10 @@ The residual discrete algebraic core (𝓞_res, fiber blocks 68/67, permanent cl
 
 See also the parent note Clay_Millennium_Problems_Dual_Universe_Mappings_CatB.md.
 
+## Private P vs NP satellite (2026-08-04)
+
+A **P versus NP only** private share-slice is maintained at  
+[Clay-P-vs-NP-CatB-Exploratory-Mapping](https://github.com/ArvinHampton/Clay-P-vs-NP-CatB-Exploratory-Mapping)  
+(private). It does **not** replace this suite. Living multi-problem Clay mappings stay here. The satellite carries the same Category B / no-proof / residual-untouched locks.
+
 Historical December 2025 continuum sketches that used stronger theorem language are superseded and remain Category B exploratory only.
