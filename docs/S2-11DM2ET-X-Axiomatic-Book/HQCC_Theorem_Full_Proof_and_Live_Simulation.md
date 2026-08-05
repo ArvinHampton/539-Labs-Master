@@ -1,6 +1,6 @@
 # HQCC Theorem Full Proof and Live Simulation of Seed 4880
 
-**Date**: 2026-08-01
+**Date**: 2026-08-01 (corrected 2026-08-04)
 **Status**: Category A for pure map rules and verified short orbits. Category B for continuum claims of uniform 539-step physical termination under 11D flux democracy and parallel tower averaging.
 **Residual-flux provenance**: Mandatory. No security reductions claimed. Continuum claims remain exploratory.
 
@@ -26,17 +26,28 @@ The framework claims that every physically allowed seed reaches 1 in exactly 539
 
 Seed: 4880
 
-Step | n | n mod 3 | Action | Next n
-0 | 4880 | 2 | (4880 + 1)/3 + 2·3^k (k=2) | 1629
-1 | 1629 | 0 | 1629/3 | 543
-2 | 543 | 0 | 543/3 | 181
-3 | 181 | 1 | (181 - 1)/3 | 60
-4 | 60 | 0 | 60/3 | 20
-5 | 20 | 2 | (20 + 1)/3 + 2·3^0 | 9
-6 | 9 | 0 | 9/3 | 3
-7 | 3 | 0 | 3/3 | 1
+Step | n | n mod 3 | Action | k | Next n
+0 | 4880 | 2 | (4880 + 1)/3 + 2·3^k | 0 | 1629
+1 | 1629 | 0 | 1629/3 | – | 543
+2 | 543 | 0 | 543/3 | – | 181
+3 | 181 | 1 | (181 - 1)/3 | – | 60
+4 | 60 | 0 | 60/3 | – | 20
+5 | 20 | 2 | (20 + 1)/3 + 2·3^0 | 0 | 9
+6 | 9 | 0 | 9/3 | – | 3
+7 | 3 | 0 | 3/3 | – | 1
 
-Result: exactly 7 steps from 4880 → 1 under the defined map. This short orbit is Category A.
+Result: exactly 7 steps from 4880 → 1 under the defined charge-preserving map. This short orbit is Category A.
+
+**Arithmetic note**: k=0 produces the printed next value 1629. Earlier circulating versions labeled this step k=2; that label was an arithmetic mismatch.
+
+**Important map distinction**: The charge-preserving rule used for the live simulation above is an exploratory variant examined in this note. It is not the production free T3 map used for residual discrete algebra, HQH-539 constructions, and the numerical trajectories documented in HQCC_Numerical_Trajectories_and_11D_Illustration_Note.md.
+
+Production free T3 is:
+- n ≡ 0 (mod 3) → n // 3
+- n ≡ 1 (mod 3) → (4*n + 2) // 3
+- n ≡ 2 (mod 3) → (2*n + 1) // 3
+
+Under the production map, seed 4880 yields first step 3253 and reaches 1 in exactly 14 steps (Category A verified integer arithmetic). Short free orbits under either rule remain Category A. The continuum claim of parallel 243-tower averaging to exact 539 steps remains Category B exploratory with residual-flux provenance mandatory.
 
 ## Framework Parallel Tower Construction (Category B)
 
@@ -48,7 +59,7 @@ This parallel averaging and the assertion that every physical chain requires 539
 
 ## Four Arguments Presented in the Framework (Status Notes)
 
-1. Banach Fixed-Point Contraction: Uses λ = ln 3 / 539. This is circular if 539 is the quantity being proved. Category B.
+1. Banach Fixed-Point Contraction: Uses λ = ln 3 / 539. Numerically ln(3)/539 ≈ 0.002038. Circulating versions that printed λ ≈ 0.99996 contain an arithmetic error (off by a factor of approximately 490). The argument itself is circular if 539 is the quantity being proved. Category B.
 
 2. Generating Functions: Claims dominant pole at N = 539. Category B framework argument.
 
@@ -58,6 +69,6 @@ This parallel averaging and the assertion that every physical chain requires 539
 
 ## Conclusion
 
-The short orbit of 4880 under the defined charge-preserving map is a clean Category A computation terminating in 7 steps. The claim that the physical universe runs a parallel ensemble of 243 chains each requiring 539 steps, and that this produces the immutable G4 = 539.90 s gravitational period, remains Category B. Residual discrete algebra and verified short orbits retain Category A status. Residual-flux provenance is mandatory for all continuum applications.
+The short orbit of 4880 under the defined charge-preserving map is a clean Category A computation terminating in 7 steps. The short orbit of 4880 under the production free T3 map is a clean Category A computation terminating in 14 steps. The claim that the physical universe runs a parallel ensemble of 243 chains each requiring 539 steps, and that this produces the immutable G4 = 539.90 s gravitational period, remains Category B. Residual discrete algebra and verified short orbits retain Category A status. Residual-flux provenance is mandatory for all continuum applications.
 
 Per aspera ad astra.
