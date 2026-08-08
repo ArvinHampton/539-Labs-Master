@@ -1,0 +1,561 @@
+{
+  "status": "RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF",
+  "date": "2026-08-08",
+  "score_alphabet": {
+    "-1": "blocks / false friend / dual opposition",
+    "0": "neutral / no feed",
+    "1": "feeds gap tip or infrastructure"
+  },
+  "techniques": {
+    "mult_resonance": [
+      {
+        "id": "MR1_Soundararajan_resonator",
+        "name": "Soundararajan resonance (Dirichlet polynomial R(t) maximizing |I2|^2/I1)",
+        "object": "large |zeta(1/2+it)| or large |Dirichlet poly| on positive measure in t",
+        "mechanism": "short multiplicative resonator r(n); quadratic forms; Kronecker/torus optional variant",
+        "scores": {
+          "PAO": 0,
+          "kappa": 0,
+          "Iso_H": 0,
+          "DH": 0,
+          "GO": 0,
+          "SOC_online_strong": 1,
+          "SOC_offline": 0,
+          "O_Moll": 0,
+          "O_TL": 0
+        },
+        "why": {
+          "PAO": "Resonance optimizes t-variable large values of zeta; PAO needs x-variable phase lock of psi-x at fixed gamma*. Different free variable.",
+          "SOC_online_strong": "Closest classical engine for strong on-line large values; programme already used Kronecker form for Im D_X at fixed X.",
+          "O_Moll": "Resonator is not a mollifier for A_X at maximal abscissa."
+        },
+        "feeds_programme": "H5 partial / Dir 4 on-line; already leveraged in RH_Resonance_Discrepancy_Attack"
+      },
+      {
+        "id": "MR2_Kronecker_prime_torus",
+        "name": "Kronecker density on prime-angle torus (log p independent)",
+        "object": "sup_t Im D_X(t) ~ sum 1/(k p^{k/2}) by aligning t log p",
+        "mechanism": "linear independence of log p over Q; dense winding; choose phases for max Im",
+        "scores": {
+          "PAO": 0,
+          "kappa": -1,
+          "Iso_H": 0,
+          "DH": 0,
+          "GO": 0,
+          "SOC_online_strong": 1,
+          "SOC_offline": 0,
+          "O_Moll": 0,
+          "O_TL": 0
+        },
+        "why": {
+          "PAO": "Aligns prime angles in t; PAO needs alignment of psi-x oscillations in x at frequency gamma*. Dual variable.",
+          "kappa": "Alignment maximises |signed sum| \u2014 opposite of cancellation needed for kappa upper bound (-1 dual).",
+          "SOC_online_strong": "Direct engine of accepted on-line strong Im D_X Omega for fixed X."
+        },
+        "feeds_programme": "Accepted on-line strong model Omega; continuous-arg caveat remains"
+      },
+      {
+        "id": "MR3_Littlewood_Omega_zero_alignment",
+        "name": "Littlewood Omega via zero-phase alignment at chosen x",
+        "object": "psi(x)-x = Omega(x^beta) from a zero at beta+igamma",
+        "mechanism": "choose x so that many x^rho/rho terms align; Dirichlet approximation on ordinates",
+        "scores": {
+          "PAO": 1,
+          "kappa": 0,
+          "Iso_H": 0,
+          "DH": 0,
+          "GO": 0,
+          "SOC_online_strong": 0,
+          "SOC_offline": 0,
+          "O_Moll": 0,
+          "O_TL": 0
+        },
+        "why": {
+          "PAO": "Supplies amplitude Omega of psi-x; first half of PAO. Missing: lock that alignment frequency to the single ordinate gamma* of the residual weight on positive log-measure.",
+          "kappa": "Neutral for far U-sum cancellation."
+        },
+        "feeds_programme": "H1 amplitude half; see RH_Resonance_Littlewood_Omega.md",
+        "remaining_gap": "Multi-zero alignment at x produces large psi-x; PAO needs the large values to correlate with phase e^{i gamma* log x} for ONE fixed star zero \u2014 may conflict if other zeros dominate the alignment choice."
+      },
+      {
+        "id": "MR4_Bondarenko_Seip_extreme",
+        "name": "Bondarenko\u2013Seip / long resonator extreme values",
+        "object": "extreme |zeta| larger than Soundararajan short resonator",
+        "mechanism": "longer / optimized resonators; GCD sums",
+        "scores": {
+          "PAO": 0,
+          "kappa": 0,
+          "Iso_H": 0,
+          "DH": 0,
+          "GO": 0,
+          "SOC_online_strong": 1,
+          "SOC_offline": 0,
+          "O_Moll": 0,
+          "O_TL": 0
+        },
+        "why": {
+          "SOC_online_strong": "Stronger on-line |zeta| Omega; still not hybrid Delta_X off-line at max abscissa."
+        },
+        "feeds_programme": "Dir 4 literature strength; not O-TL"
+      },
+      {
+        "id": "MR5_multiplicative_random_model",
+        "name": "Random multiplicative functions / Euler product models",
+        "object": "distribution of L(1,X), large values heuristics",
+        "mechanism": "independent X(p) in {-1,0,+1} or unit circle; Steinhaus/Rademacher",
+        "scores": {
+          "PAO": 0,
+          "kappa": 0,
+          "Iso_H": 0,
+          "DH": 0,
+          "GO": 0,
+          "SOC_online_strong": 0,
+          "SOC_offline": 0,
+          "O_Moll": 0,
+          "O_TL": 0
+        },
+        "why": {
+          "PAO": "Heuristic only for prime chaos; does not prove phase lock of psi-x at gamma*.",
+          "kappa": "Random model predicts RW kappa ~ J^{-1/2}, which is PROVED INSUFFICIENT numerically for M1.2 joint window."
+        },
+        "feeds_programme": "Heuristic ceiling: random multiplicative suggests kappa_rw fails (matches N1 arithmetic)",
+        "score_note": "The {-1,0,+1} character values are the model alphabet \u2014 not a theorem for zeta zeros."
+      },
+      {
+        "id": "MR6_EF_resonance_at_gamma_star",
+        "name": "Explicit-formula resonance targeting fixed gamma*",
+        "object": "force Re(e^{-i gamma* log x}(psi-x) x^{-beta*}) large",
+        "mechanism": "choose x so x^{i(gamma_j - gamma*)} align for zeros near beta*; star term dominates",
+        "scores": {
+          "PAO": 1,
+          "kappa": -1,
+          "Iso_H": 0,
+          "DH": 0,
+          "GO": 0,
+          "SOC_online_strong": 0,
+          "SOC_offline": 0,
+          "O_Moll": 0,
+          "O_TL": 0
+        },
+        "why": {
+          "PAO": "Direct formal attack on PAO; classical literature gives Omega amplitude, not the measure-theoretic PAO(c,delta).",
+          "kappa": "Same alignment technology works against cancellation (dual -1)."
+        },
+        "feeds_programme": "Named as PAO; unproved as theorem",
+        "status": "OPEN \u2014 this IS the H1 gap, not a tool that closes it"
+      }
+    ],
+    "selberg_symmetry": [
+      {
+        "id": "SS1_xi_functional_symmetry",
+        "name": "xi(s)=xi(1-s) functional equation symmetry",
+        "object": "zeros symmetric under rho -> 1-rho; Gamma factors",
+        "mechanism": "completed xi; reflection about Re=1/2",
+        "scores": {
+          "PAO": 0,
+          "kappa": 0,
+          "Iso_H": 0,
+          "DH": 0,
+          "GO": 0,
+          "SOC_online_strong": 0,
+          "SOC_offline": 0,
+          "O_Moll": 0,
+          "O_TL": 0
+        },
+        "why": {
+          "Iso_H": "FE forces conjugate and 1-rho partners; only forced SAME-abscissa partner of rightmost beta*>1/2 is conjugate \u2014 already locked in ND1. Does not give Iso_H.",
+          "PAO": "Symmetry relates left and right half-planes; residual Form B is off-line right half \u2014 FE does not align psi-x phases."
+        },
+        "feeds_programme": "ND1 conjugate lock; quartet structure recorded"
+      },
+      {
+        "id": "SS2_approximate_FE",
+        "name": "Approximate functional equation / Riemann-Siegel",
+        "object": "zeta(s) ~ sum n^{-s} + chi(s) sum n^{s-1} + remainder",
+        "mechanism": "split dual Dirichlet polynomials; asymmetric or symmetric lengths",
+        "scores": {
+          "PAO": 0,
+          "kappa": 0,
+          "Iso_H": 0,
+          "DH": 0,
+          "GO": 0,
+          "SOC_online_strong": 0,
+          "SOC_offline": 0,
+          "O_Moll": 1,
+          "O_TL": 0
+        },
+        "why": {
+          "O_Moll": "AFE is the natural home of mollified moments and dual sums \u2014 infrastructure for designing phase-sensitive weights, not a finished O-Moll.",
+          "SOC_offline": "AFE controls on-line zeta; transfer to max abscissa still open."
+        },
+        "feeds_programme": "Possible future O-Moll design surface; empty today"
+      },
+      {
+        "id": "SS3_Selberg_mollifier_symmetry",
+        "name": "Selberg / Levinson-Conrey mollifiers with mu * polynomial",
+        "object": "proportion of zeros on the critical line",
+        "mechanism": "mollify zeta on Re=1/2+a/log T; second moment; asymptotic large sieve",
+        "scores": {
+          "PAO": 0,
+          "kappa": 0,
+          "Iso_H": 0,
+          "DH": 0,
+          "GO": 0,
+          "SOC_online_strong": 0,
+          "SOC_offline": 0,
+          "O_Moll": -1,
+          "O_TL": 0
+        },
+        "why": {
+          "O_Moll": "SCORE -1 as false friend: classical 'mollifier' optimizes zero-detection on the line, not A_X/theta_X at maximal abscissa. Using it as O-Moll is a category error (N3 survey)."
+        },
+        "feeds_programme": "Dead non-route if misidentified as O-Moll"
+      },
+      {
+        "id": "SS4_Selberg_zero_density",
+        "name": "Selberg-type zero density N(sigma,T) << T^{1-c(sigma-1/2)} log T",
+        "object": "bulk zero counts",
+        "mechanism": "mean values of zeta; large sieve",
+        "scores": {
+          "PAO": 0,
+          "kappa": 0,
+          "Iso_H": 0,
+          "DH": 0,
+          "GO": 0,
+          "SOC_online_strong": 0,
+          "SOC_offline": 0,
+          "O_Moll": 0,
+          "O_TL": 0
+        },
+        "why": {
+          "DH": "Improves exponents near 1/2 but remains T-power; does not reach polylog at moderate beta*.",
+          "Iso_H": "Density \u2260 isolation (dead edge)."
+        },
+        "feeds_programme": "D1 density infrastructure; Step B still positive powers"
+      },
+      {
+        "id": "SS5_Selberg_class_axioms",
+        "name": "Selberg class (Ramanujan, Euler product, FE, analytic continuation)",
+        "object": "axiomatic L-functions",
+        "mechanism": "structural axioms; prime number theorems in the class",
+        "scores": {
+          "PAO": 0,
+          "kappa": 0,
+          "Iso_H": 0,
+          "DH": 0,
+          "GO": 0,
+          "SOC_online_strong": 0,
+          "SOC_offline": 0,
+          "O_Moll": 0,
+          "O_TL": 0
+        },
+        "why": {
+          "PAO": "Axioms organize analogies; do not prove phase-aligned Omega for zeta residual."
+        },
+        "feeds_programme": "Language only; ZLA already restricts to zeta-language"
+      },
+      {
+        "id": "SS6_xi_symmetry_path_design",
+        "name": "Path design using s <-> 1-s symmetry for arg",
+        "object": "relate arg zeta(s) and arg zeta(1-s) via chi",
+        "mechanism": "continuous arg along paths linked by FE",
+        "scores": {
+          "PAO": 0,
+          "kappa": 0,
+          "Iso_H": 0,
+          "DH": 0,
+          "GO": 0,
+          "SOC_online_strong": 0,
+          "SOC_offline": 1,
+          "O_Moll": 0,
+          "O_TL": 0
+        },
+        "why": {
+          "SOC_offline": "Only +1 weak: FE relates left of critical line to right; a path from 1/2 to beta* has a dual path from 1/2 to 1-beta*. Does not create loglog phase at maximal abscissa by itself; may transfer bounds if one side controlled."
+        },
+        "feeds_programme": "Possible bookkeeping for path continuation; not a substitute for GO/SOC"
+      },
+      {
+        "id": "SS7_symmetric_hybrid_GHK",
+        "name": "Hybrid Euler-Hadamard product + FE (Akatsuka/GHK)",
+        "object": "zeta = P_X Z_X (1+E)",
+        "mechanism": "partial Euler * partial Hadamard; FE in Z_X archimedean factors",
+        "scores": {
+          "PAO": 0,
+          "kappa": 1,
+          "Iso_H": 0,
+          "DH": 0,
+          "GO": 0,
+          "SOC_online_strong": 0,
+          "SOC_offline": 0,
+          "O_Moll": 0,
+          "O_TL": 0
+        },
+        "why": {
+          "kappa": "U ~ E1 structure and E1 theorem live here; C_U=1 from Re z>=0. Far-sum kappa still open but this is the correct identity surface for proving kappa.",
+          "SOC_offline": "Identity peels OPC-Core; does not lower-bound it."
+        },
+        "feeds_programme": "M1.2 architecture + E1; R4.1 strip"
+      }
+    ]
+  },
+  "score_matrix_rows": [
+    {
+      "family": "mult_resonance",
+      "id": "MR1_Soundararajan_resonator",
+      "name": "Soundararajan resonance (Dirichlet polynomial R(t) maximizing |I2|^2/I1)",
+      "PAO": 0,
+      "kappa": 0,
+      "Iso_H": 0,
+      "DH": 0,
+      "GO": 0,
+      "SOC_online_strong": 1,
+      "SOC_offline": 0,
+      "O_Moll": 0,
+      "O_TL": 0
+    },
+    {
+      "family": "mult_resonance",
+      "id": "MR2_Kronecker_prime_torus",
+      "name": "Kronecker density on prime-angle torus (log p independent)",
+      "PAO": 0,
+      "kappa": -1,
+      "Iso_H": 0,
+      "DH": 0,
+      "GO": 0,
+      "SOC_online_strong": 1,
+      "SOC_offline": 0,
+      "O_Moll": 0,
+      "O_TL": 0
+    },
+    {
+      "family": "mult_resonance",
+      "id": "MR3_Littlewood_Omega_zero_alignment",
+      "name": "Littlewood Omega via zero-phase alignment at chosen x",
+      "PAO": 1,
+      "kappa": 0,
+      "Iso_H": 0,
+      "DH": 0,
+      "GO": 0,
+      "SOC_online_strong": 0,
+      "SOC_offline": 0,
+      "O_Moll": 0,
+      "O_TL": 0
+    },
+    {
+      "family": "mult_resonance",
+      "id": "MR4_Bondarenko_Seip_extreme",
+      "name": "Bondarenko\u2013Seip / long resonator extreme values",
+      "PAO": 0,
+      "kappa": 0,
+      "Iso_H": 0,
+      "DH": 0,
+      "GO": 0,
+      "SOC_online_strong": 1,
+      "SOC_offline": 0,
+      "O_Moll": 0,
+      "O_TL": 0
+    },
+    {
+      "family": "mult_resonance",
+      "id": "MR5_multiplicative_random_model",
+      "name": "Random multiplicative functions / Euler product models",
+      "PAO": 0,
+      "kappa": 0,
+      "Iso_H": 0,
+      "DH": 0,
+      "GO": 0,
+      "SOC_online_strong": 0,
+      "SOC_offline": 0,
+      "O_Moll": 0,
+      "O_TL": 0
+    },
+    {
+      "family": "mult_resonance",
+      "id": "MR6_EF_resonance_at_gamma_star",
+      "name": "Explicit-formula resonance targeting fixed gamma*",
+      "PAO": 1,
+      "kappa": -1,
+      "Iso_H": 0,
+      "DH": 0,
+      "GO": 0,
+      "SOC_online_strong": 0,
+      "SOC_offline": 0,
+      "O_Moll": 0,
+      "O_TL": 0
+    },
+    {
+      "family": "selberg_symmetry",
+      "id": "SS1_xi_functional_symmetry",
+      "name": "xi(s)=xi(1-s) functional equation symmetry",
+      "PAO": 0,
+      "kappa": 0,
+      "Iso_H": 0,
+      "DH": 0,
+      "GO": 0,
+      "SOC_online_strong": 0,
+      "SOC_offline": 0,
+      "O_Moll": 0,
+      "O_TL": 0
+    },
+    {
+      "family": "selberg_symmetry",
+      "id": "SS2_approximate_FE",
+      "name": "Approximate functional equation / Riemann-Siegel",
+      "PAO": 0,
+      "kappa": 0,
+      "Iso_H": 0,
+      "DH": 0,
+      "GO": 0,
+      "SOC_online_strong": 0,
+      "SOC_offline": 0,
+      "O_Moll": 1,
+      "O_TL": 0
+    },
+    {
+      "family": "selberg_symmetry",
+      "id": "SS3_Selberg_mollifier_symmetry",
+      "name": "Selberg / Levinson-Conrey mollifiers with mu * polynomial",
+      "PAO": 0,
+      "kappa": 0,
+      "Iso_H": 0,
+      "DH": 0,
+      "GO": 0,
+      "SOC_online_strong": 0,
+      "SOC_offline": 0,
+      "O_Moll": -1,
+      "O_TL": 0
+    },
+    {
+      "family": "selberg_symmetry",
+      "id": "SS4_Selberg_zero_density",
+      "name": "Selberg-type zero density N(sigma,T) << T^{1-c(sigma-1/2)} log T",
+      "PAO": 0,
+      "kappa": 0,
+      "Iso_H": 0,
+      "DH": 0,
+      "GO": 0,
+      "SOC_online_strong": 0,
+      "SOC_offline": 0,
+      "O_Moll": 0,
+      "O_TL": 0
+    },
+    {
+      "family": "selberg_symmetry",
+      "id": "SS5_Selberg_class_axioms",
+      "name": "Selberg class (Ramanujan, Euler product, FE, analytic continuation)",
+      "PAO": 0,
+      "kappa": 0,
+      "Iso_H": 0,
+      "DH": 0,
+      "GO": 0,
+      "SOC_online_strong": 0,
+      "SOC_offline": 0,
+      "O_Moll": 0,
+      "O_TL": 0
+    },
+    {
+      "family": "selberg_symmetry",
+      "id": "SS6_xi_symmetry_path_design",
+      "name": "Path design using s <-> 1-s symmetry for arg",
+      "PAO": 0,
+      "kappa": 0,
+      "Iso_H": 0,
+      "DH": 0,
+      "GO": 0,
+      "SOC_online_strong": 0,
+      "SOC_offline": 1,
+      "O_Moll": 0,
+      "O_TL": 0
+    },
+    {
+      "family": "selberg_symmetry",
+      "id": "SS7_symmetric_hybrid_GHK",
+      "name": "Hybrid Euler-Hadamard product + FE (Akatsuka/GHK)",
+      "PAO": 0,
+      "kappa": 1,
+      "Iso_H": 0,
+      "DH": 0,
+      "GO": 0,
+      "SOC_online_strong": 0,
+      "SOC_offline": 0,
+      "O_Moll": 0,
+      "O_TL": 0
+    }
+  ],
+  "best_per_gap": {
+    "PAO": {
+      "mult_resonance": 1,
+      "selberg_symmetry": 0,
+      "best_tech": null,
+      "best_id": "MR3_Littlewood_Omega_zero_alignment",
+      "best_score": 1
+    },
+    "kappa": {
+      "mult_resonance": 0,
+      "selberg_symmetry": 1,
+      "best_tech": null,
+      "best_id": "SS7_symmetric_hybrid_GHK",
+      "best_score": 1
+    },
+    "Iso_H": {
+      "mult_resonance": 0,
+      "selberg_symmetry": 0,
+      "best_tech": null,
+      "best_id": "MR1_Soundararajan_resonator",
+      "best_score": 0
+    },
+    "DH": {
+      "mult_resonance": 0,
+      "selberg_symmetry": 0,
+      "best_tech": null,
+      "best_id": "MR1_Soundararajan_resonator",
+      "best_score": 0
+    },
+    "GO": {
+      "mult_resonance": 0,
+      "selberg_symmetry": 0,
+      "best_tech": null,
+      "best_id": "MR1_Soundararajan_resonator",
+      "best_score": 0
+    },
+    "SOC_online_strong": {
+      "mult_resonance": 1,
+      "selberg_symmetry": 0,
+      "best_tech": null,
+      "best_id": "MR1_Soundararajan_resonator",
+      "best_score": 1
+    },
+    "SOC_offline": {
+      "mult_resonance": 0,
+      "selberg_symmetry": 1,
+      "best_tech": null,
+      "best_id": "SS6_xi_symmetry_path_design",
+      "best_score": 1
+    },
+    "O_Moll": {
+      "mult_resonance": 0,
+      "selberg_symmetry": 1,
+      "best_tech": null,
+      "best_id": "SS2_approximate_FE",
+      "best_score": 1
+    },
+    "O_TL": {
+      "mult_resonance": 0,
+      "selberg_symmetry": 0,
+      "best_tech": null,
+      "best_id": "MR1_Soundararajan_resonator",
+      "best_score": 0
+    }
+  },
+  "dual": {
+    "observation": "Multiplicative resonance techniques that score +1 on PAO (alignment) systematically score 0 or -1 on kappa (cancellation). Selberg FE symmetry scores 0 on both. GHK hybrid scores +1 only as the surface for a future kappa proof, not as a proof.",
+    "random_multiplicative_ceiling": "{-1,0,+1}/Steinhaus models predict random-walk cancellation kappa ~ J^{-1/2}, which N1 arithmetic shows is insufficient for the M1.2 joint window. So the 'natural' multiplicative randomness is on the wrong side of the kappa bar."
+  },
+  "conclusions": {
+    "resonance": "Multiplicative resonance is the correct classical family for on-line strong Omega (SOC on-line) and supplies amplitude Omega for PAO, but does not prove PAO(c,delta) measure lock at fixed gamma*. Kronecker torus alignment is dual-hostile to kappa.",
+    "selberg": "Selberg FE symmetry locks conjugate structure (already used) but does not open Iso_H/DH/PAO. Classical Selberg/Levinson mollifiers are false friends for O-Moll (score -1). AFE is the design surface for a future true O-Moll (+1 infrastructure only). GHK hybrid is the correct surface for a kappa theorem (+1 infrastructure).",
+    "unconditional_resolutions": 0,
+    "one_liner": "Resonance feeds on-line strong Omega and PAO amplitude half; Selberg symmetry is mostly neutral with mollifier false friends; dual PAO/kappa tension is reinforced; no gap tip closed."
+  }
+}
