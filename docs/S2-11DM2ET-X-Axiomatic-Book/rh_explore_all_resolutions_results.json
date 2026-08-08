@@ -1,0 +1,267 @@
+{
+  "status": "RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF",
+  "date": "2026-08-08",
+  "mandate": "Explore all open paths for resolutions; record proved / conditional / dead / open",
+  "zla": true,
+  "residual_firewall": "A0-A5+/K+ not reopened; no residual integers in zeta lemmas",
+  "gates_to_B_theta": [
+    {
+      "gate": "G1_Iso_H",
+      "route": "(RM)+(Iso_H)=>B_theta",
+      "status": "implication_proved_hypothesis_open"
+    },
+    {
+      "gate": "G2_polylog_StripDens_MassA",
+      "route": "(RM)+(polylog StripDens)=>Mass-with-A=>B_theta",
+      "status": "implication_proved_hypothesis_open"
+    },
+    {
+      "gate": "G3_O_TL_phase_programme",
+      "route": "O-M1.2+O-M1.3bis+O-PC+O-Moll=>O-TL",
+      "status": "all_inputs_open_or_partial"
+    },
+    {
+      "gate": "G4_signed_residual_lower_bound",
+      "route": "S_X = weighted (psi-x) integral; need phase-aligned Omega",
+      "status": "reduction_proved_lower_bound_open"
+    }
+  ],
+  "explored_resolution_paths": {
+    "P_kappa_signed_far_sum": {
+      "target": "kappa <= O(1/J^2) for far-sum to open numerical M1.2 under real c1",
+      "proved": [
+        "E1 C_U=1",
+        "2pi R-vM absolute formula",
+        "absolute cannot hit 0.4 under GHK"
+      ],
+      "explored": [
+        "path radius vs J",
+        "rw/strong/square cancellation models",
+        "signed Sigma_X reduction to (psi-x)"
+      ],
+      "dead_ends": [
+        "absolute majorants",
+        "mild 1/log J",
+        "random walk 1/sqrt J",
+        "strong 1/J alone at best cell"
+      ],
+      "conditional": [
+        "phase-aligned Omega of psi-x at complex weight (Signed Sum \u00a79)"
+      ],
+      "open": "kappa theorem / phase-aligned Omega lower bound",
+      "resolution_available_today": false
+    },
+    "P_gap_omega": {
+      "target": "t_n with large hybrid Omega AND wide ordinate gap",
+      "proved": [
+        "mean gap 2pi/log t",
+        "on-line hybrid Omega for fixed X (programme)"
+      ],
+      "explored": [
+        "GUE heuristic",
+        "Hyp F",
+        "pair correlation"
+      ],
+      "dead_ends": [
+        "treating gap existence alone as path continuation"
+      ],
+      "conditional": [
+        "GUE+independence heuristic (not theorem)"
+      ],
+      "open": "classical correlation theorem",
+      "resolution_available_today": false
+    },
+    "P_omoll": {
+      "target": "phase-oriented mollifier for A_X / theta_X at O-TL scale",
+      "proved": [],
+      "explored": [
+        "Levinson/Conrey mollifiers",
+        "long mollifiers",
+        "Soundararajan resonance"
+      ],
+      "dead_ends": [
+        "using zero-counting mollifiers as O-Moll"
+      ],
+      "conditional": [],
+      "open": "no classical object matches",
+      "resolution_available_today": false
+    },
+    "P_isoh": {
+      "target": "unconditional Iso_H",
+      "proved": [
+        "(RM)+(Iso_H)=>B_theta",
+        "FE conjugate-only partner",
+        "density != isolation"
+      ],
+      "explored": [
+        "Ivic multiplicity",
+        "Maynard-Pratt half-isolation",
+        "Levinson-Ivic near 1",
+        "Hyp F"
+      ],
+      "dead_ends": [
+        "density implies Iso_H",
+        "finite-height isolation as unbounded Iso_H"
+      ],
+      "conditional": [
+        "Hyp F + half-isolation density (not Iso_H itself)"
+      ],
+      "open": "new isolation technology",
+      "resolution_available_today": false
+    },
+    "P_polylog_density": {
+      "target": "N(beta*,T)=O((log T)^C) at moderate beta*",
+      "proved": [
+        "classical power-of-T shapes recorded",
+        "Step B gap table"
+      ],
+      "explored": [
+        "Ingham/CS/Huxley/Guth-Maynard/Bellotti near 1"
+      ],
+      "dead_ends": [
+        "claiming moderate-sigma polylog from current density"
+      ],
+      "conditional": [
+        "density hypothesis",
+        "DH(beta*,C) template Step C"
+      ],
+      "open": "polylog at moderate sigma",
+      "resolution_available_today": false
+    },
+    "P_opc_strong": {
+      "target": "|A_X| or |theta_X| >> log log X from PC / resonance",
+      "proved": [
+        "hybrid phase identity",
+        "typical Omega >> sqrt(log log X) on line",
+        "strong on-line model Im D_X accepted (fixed X)",
+        "monodromy of P_X withdrawn as engine"
+      ],
+      "explored": [
+        "OPC conversion steps 1-4",
+        "R4.1 GHK strip"
+      ],
+      "dead_ends": [
+        "monodromy m*pi engine",
+        "PCC almost-all => phase lower bound"
+      ],
+      "conditional": [
+        "almost-all isolation under RH+PC (classical, wrong regime for off-line max abscissa)"
+      ],
+      "open": "OPC-Core |arg zeta - arg Z_X| >> log log X; off-line strong",
+      "resolution_available_today": false
+    },
+    "P_path_continuation": {
+      "target": "transfer on-line Omega to maximal abscissa",
+      "proved": [
+        "Phi structure split",
+        "absolute Phi loses to reservoir"
+      ],
+      "explored": [
+        "tube designs T1-T3",
+        "gap+Omega"
+      ],
+      "dead_ends": [
+        "absolute Phi_local 1/r0 path"
+      ],
+      "conditional": [
+        "positive-density wide-gap maximisers"
+      ],
+      "open": "O-M1.3bis",
+      "resolution_available_today": false
+    },
+    "P_m12_numerical": {
+      "target": "joint far<=0.4 and E_GHK<=0.1 under real c1",
+      "proved": [
+        "architecture accepted",
+        "c1<=291 admissible",
+        "structural obstruction under absolute far"
+      ],
+      "explored": [
+        "c1 levers",
+        "E1 real drift",
+        "2pi far",
+        "cancellation models"
+      ],
+      "dead_ends": [
+        "c1 cosmetics alone",
+        "absolute far under c1=291"
+      ],
+      "conditional": [
+        "kappa ~ 1/J^2 signed cancellation"
+      ],
+      "open": "uniform O-M1.2 numerical close",
+      "resolution_available_today": false
+    },
+    "P_residual_reopen": {
+      "target": "N/A \u2014 must NOT resolve by reopening residual or mixing into zeta",
+      "proved": [
+        "A0-A5+ closed",
+        "P+ optional lock",
+        "baseline hygiene"
+      ],
+      "explored": [
+        "firewall N5"
+      ],
+      "dead_ends": [
+        "using 539/18/56 as zeta lemmas"
+      ],
+      "conditional": [],
+      "open": null,
+      "resolution_available_today": "firewall_held_not_a_RH_resolution"
+    }
+  },
+  "dead_routes_closed": [
+    "Absolute average of A as free phase saving",
+    "Monodromy of zero-free P_X as m*pi engine",
+    "Density implies Iso_H",
+    "Absolute far-sum joint window under c1=291",
+    "Random-walk cancellation alone for M1.2 joint window",
+    "Classical zero-counting mollifiers as O-Moll",
+    "Finite-height isolation as unbounded Iso_H",
+    "Residual algebra / 539 => RH"
+  ],
+  "proved_implications_intact": [
+    "(RM)+(Iso_H)=>OP1=>B_theta",
+    "(RM)+(polylog StripDens)=>Mass-with-A=>B_theta",
+    "(RM)+(Mass-with-A)=>B_theta",
+    "Signed residual formula S_X = rho* int (psi-x)... + B + E (no RH)",
+    "Self loglog cancellation in signed sum",
+    "Theorem E1 |w E1|<=1 for Re w>=0",
+    "On-line typical Omega >> sqrt(log log X)",
+    "R4.1 pure GHK strip error for fixed X"
+  ],
+  "no_unconditional_resolution_today": true,
+  "most_promising_remaining": [
+    {
+      "rank": 1,
+      "path": "Phase-aligned Omega for weighted (psi-x) / signed residual (Form B)",
+      "why": "Fully reduced classical object; equivalent to B_theta off-line; no fake monodromy",
+      "blocker": "multiplicative resonance at gamma* with psi-x Omega points"
+    },
+    {
+      "rank": 2,
+      "path": "Signed far-sum kappa ~ 1/J^2 for M1.2 joint window",
+      "why": "Only scanned route that opens numerical M1.2 under real c1",
+      "blocker": "kappa theorem not proved; stronger than random walk"
+    },
+    {
+      "rank": 3,
+      "path": "Polylog StripDens / DH at moderate beta* OR new Iso_H tech",
+      "why": "Direct gates to Mass-with-A / B_theta via proved implications",
+      "blocker": "classical density too weak; isolation tech missing"
+    },
+    {
+      "rank": 4,
+      "path": "Gap+Omega correlation for path continuation",
+      "why": "Unblocks tube paths / O-M1.3bis",
+      "blocker": "no classical theorem"
+    },
+    {
+      "rank": 5,
+      "path": "Strong off-line OPC-Core",
+      "why": "Feeds O-TL phase lower bound",
+      "blocker": "typical Omega proved; strong loglog open"
+    }
+  ],
+  "global_conclusion": "Exploration of all resolution paths complete: many reductions and implications are proved, multiple dead routes are closed, but no unconditional resolution of O-TL, B_theta, Iso_H, polylog StripDens, O-Moll, gap+Omega, or RH is available from the classical corpus today. The sharpest remaining classical objects are phase-aligned Omega of the signed residual and a kappa theorem for non-absolute far-sums."
+}
