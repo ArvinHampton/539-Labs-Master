@@ -1,0 +1,264 @@
+{
+  "status": "RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF",
+  "date": "2026-08-08",
+  "pass": "explore_all",
+  "mandate": "Explore all for resolutions \u2014 full consolidation",
+  "zla": true,
+  "unconditional_resolutions_found": [],
+  "closed_backbone": [
+    "signed_residual_Thm_4_1",
+    "self_loglog_cancel",
+    "Form_B_iff_Form_C",
+    "Theorem_E1_CU1",
+    "RM_IsoH_implies_B_theta",
+    "RM_DH_implies_MassA_B_theta",
+    "typical_online_Omega",
+    "hybrid_phase_identity",
+    "R41_GHK_strip",
+    "MA8_farU_zeta_prime_dual",
+    "online_strong_Im_DX_accepted",
+    "FFML_barrier_locked",
+    "ZEFB_barrier_locked",
+    "monodromy_PX_dead",
+    "density_implies_IsoH_dead",
+    "Levinson_as_OMoll_dead",
+    "A4plus_A5plus_Kplus_residual_closed"
+  ],
+  "closed_count": 17,
+  "open_gates": [
+    {
+      "id": "Form_C",
+      "feeds": "B_theta",
+      "blockers": [
+        "FFML",
+        "ZEFB"
+      ],
+      "partial": "zero-aware sketch; EO(Iso_H)"
+    },
+    {
+      "id": "Iso_H",
+      "feeds": "B_theta",
+      "blockers": [
+        "no isolation tech"
+      ],
+      "partial": "proved imp under hyp"
+    },
+    {
+      "id": "DH",
+      "feeds": "B_theta",
+      "blockers": [
+        "T-powers moderate sigma"
+      ],
+      "partial": "proved imp under hyp"
+    },
+    {
+      "id": "kappa",
+      "feeds": "O_TL",
+      "blockers": [
+        "approach arcs need GO"
+      ],
+      "partial": "MA8 dual; Kappa_away"
+    },
+    {
+      "id": "GO",
+      "feeds": "O_TL",
+      "blockers": [
+        "joint Omega+gap missing"
+      ],
+      "partial": "structurally required for kappa"
+    },
+    {
+      "id": "SOC_strong_offline",
+      "feeds": "O_TL",
+      "blockers": [
+        "strong scale; path transfer"
+      ],
+      "partial": "typical CLOSED"
+    },
+    {
+      "id": "AFE_Moll",
+      "feeds": "O_TL",
+      "blockers": [
+        "empty coefficients"
+      ],
+      "partial": "Euler-phase objective"
+    },
+    {
+      "id": "B_theta",
+      "feeds": "RH_related",
+      "blockers": [
+        "OR inputs open"
+      ],
+      "partial": null
+    },
+    {
+      "id": "O_TL",
+      "feeds": "RH",
+      "blockers": [
+        "AND arms open"
+      ],
+      "partial": null
+    },
+    {
+      "id": "RH",
+      "feeds": null,
+      "blockers": [
+        "O_TL open"
+      ],
+      "partial": null
+    }
+  ],
+  "open_count": 10,
+  "routes": [
+    {
+      "id": "R_all_01",
+      "path": "Form_C -> B_theta",
+      "ok": false
+    },
+    {
+      "id": "R_all_02",
+      "path": "Iso_H+(RM) -> B_theta",
+      "ok": false
+    },
+    {
+      "id": "R_all_03",
+      "path": "DH+(RM) -> MassA -> B_theta",
+      "ok": false
+    },
+    {
+      "id": "R_all_04",
+      "path": "zero-aware EF -> Form_C",
+      "ok": false
+    },
+    {
+      "id": "R_all_05",
+      "path": "Kappa_away+GO -> kappa -> M1.2",
+      "ok": false
+    },
+    {
+      "id": "R_all_06",
+      "path": "GO -> O-M1.3bis tubes",
+      "ok": false
+    },
+    {
+      "id": "R_all_07",
+      "path": "SOC_strong+FE+path -> offline",
+      "ok": false
+    },
+    {
+      "id": "R_all_08",
+      "path": "AFE_Moll -> O-Moll arm",
+      "ok": false
+    },
+    {
+      "id": "R_all_09",
+      "path": "AND stack -> O_TL -> RH",
+      "ok": false
+    },
+    {
+      "id": "R_all_10",
+      "path": "B_theta alone -> RH",
+      "ok": false,
+      "note": "not proved implication"
+    },
+    {
+      "id": "R_all_11",
+      "path": "Weil smooth Form_C lower bound",
+      "ok": false
+    },
+    {
+      "id": "R_all_12",
+      "path": "VK/ZF -> Form_C lower",
+      "ok": false,
+      "note": "upper only"
+    },
+    {
+      "id": "R_all_13",
+      "path": "GRH/RH hyp -> unconditional RH",
+      "ok": false,
+      "note": "assumes conclusion class"
+    },
+    {
+      "id": "R_all_14",
+      "path": "free-t resonance -> Form_C",
+      "ok": false,
+      "note": "FFML dead"
+    },
+    {
+      "id": "R_all_15",
+      "path": "generic Diophantine gamma -> Form_C",
+      "ok": false,
+      "note": "ZEFB dead"
+    },
+    {
+      "id": "R_all_16",
+      "path": "density -> Iso_H",
+      "ok": false,
+      "note": "dead edge"
+    },
+    {
+      "id": "R_all_17",
+      "path": "Levinson -> O-Moll",
+      "ok": false,
+      "note": "false friend"
+    },
+    {
+      "id": "R_all_18",
+      "path": "residual A0-A5+ -> RH",
+      "ok": false,
+      "note": "ZLA dead"
+    },
+    {
+      "id": "R_all_19",
+      "path": "RW kappa alone -> M1.2 joint",
+      "ok": false,
+      "note": "p=1/2 below bar"
+    },
+    {
+      "id": "R_all_20",
+      "path": "absolute far + c1 cosmetics -> M1.2",
+      "ok": false,
+      "note": "dead cosmetics"
+    }
+  ],
+  "routes_available": 0,
+  "routes_total": 20,
+  "barriers": {
+    "FFML": "free-t/pretentious/mean-in-t as Form C",
+    "ZEFB": "generic Diophantine at zero ordinates as Form C",
+    "dual_FormC_kappa": "lower vs upper phase demands",
+    "vacuous_if_RH": "off-line engines idle under RH",
+    "OR_vs_AND": "B_theta any-one; O_TL all-four"
+  },
+  "patterns": [
+    "upper_vs_lower_asymmetry",
+    "free_vs_frozen_parameter",
+    "identity_rich_estimate_poor",
+    "false_friend_classical_tools"
+  ],
+  "shortest_conditional": {
+    "B_theta": [
+      [
+        "Form_C"
+      ],
+      [
+        "Iso_H",
+        "RM"
+      ],
+      [
+        "DH",
+        "RM"
+      ]
+    ],
+    "O_TL": [
+      [
+        "kappa",
+        "GO",
+        "SOC_strong_offline",
+        "AFE_Moll"
+      ]
+    ],
+    "RH_unconditional": []
+  },
+  "global_verdict": "Explore-all consolidation: 17 closed backbone assets/locks; 10 open resolution gates; 20 routes surveyed; 0 routes available unconditionally; 0 unconditional resolutions. B_theta OR-cut and O_TL AND-cut open at every tip. RH open. ZLA residual firewall held."
+}
