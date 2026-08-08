@@ -1,0 +1,213 @@
+{
+  "status": "RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF",
+  "date": "2026-08-08",
+  "pass": 3,
+  "mandate": "Explore for resolutions post P1-P4 (Form C recast, kappa attempt, AFE-Moll, FE bookkeeping)",
+  "zla": true,
+  "unconditional_resolutions_found": [],
+  "newly_clarified": [
+    {
+      "item": "PAO star-phase is not the engine",
+      "from": "P1",
+      "consequence": "B_theta gap = Form C at fixed rho* (Dirichlet poly), not free-t resonance"
+    },
+    {
+      "item": "epsilon_other is Iso_H-adjacent",
+      "from": "P1",
+      "consequence": "OR-cut gates PAO and Iso_H are analytically coupled for amplitude Omega, still separate for Form C prime side"
+    },
+    {
+      "item": "no unconditional kappa p>1",
+      "from": "P2",
+      "consequence": "M1.2 numeric joint window remains blocked under absolute far-sum"
+    },
+    {
+      "item": "L2/random-phase insufficient",
+      "from": "P2",
+      "consequence": "even heuristic kappa fails the p>=1.12 bar at RW; need stronger-than-random structure"
+    },
+    {
+      "item": "O-Moll design surface only AFE",
+      "from": "P3",
+      "consequence": "Levinson/Conrey permanently excluded as false friends"
+    },
+    {
+      "item": "FE path is hygiene not engine",
+      "from": "P4",
+      "consequence": "no new phase lower bound from xi symmetry alone"
+    }
+  ],
+  "resolution_graph_updates": {
+    "B_theta_OR_cut": {
+      "gates": [
+        "Form_C",
+        "Iso_H",
+        "DH"
+      ],
+      "note": "PAO renamed/recast to Form_C after P1; Iso_H and DH unchanged",
+      "Form_C": "limsup |sum_{n<=X} Lambda(n)/(n^{rho*} log n)| = infinity",
+      "any_one_unlocks_B_theta": true
+    },
+    "O_TL_AND_cut": {
+      "gates": [
+        "kappa_J_p",
+        "GO",
+        "SOC",
+        "O-Moll_AFE"
+      ],
+      "note": "O-Moll restricted to AFE surface; tips still all open"
+    },
+    "RH_primary": "O-TL",
+    "dual": {
+      "lower": "Form_C (need large signed prime sum at fixed rho*)",
+      "upper": "kappa (need small signed far U-sum on paths)",
+      "edge_between": false
+    }
+  },
+  "explored_resolution_routes": [
+    {
+      "id": "R1_Form_C_large_values",
+      "route": "Prove Form C by n-aspect multiplicative methods at fixed complex frequency",
+      "classical_nearby": [
+        "Dirichlet poly large values",
+        "Halasz",
+        "pretentious approach",
+        "resonance in n"
+      ],
+      "why_open": "Standard large-value tech is free-t or real s>1; off-line complex rho* with beta*>1/2 is the RH-hard regime",
+      "resolves_if": "Form C",
+      "gets": "B_theta",
+      "gets_RH": false,
+      "available_today": false
+    },
+    {
+      "id": "R2_Iso_H_then_B_theta",
+      "route": "New isolation technology => Iso_H => B_theta via proved imp",
+      "classical_nearby": [
+        "Maynard-Pratt",
+        "Hyp F",
+        "Ivic"
+      ],
+      "why_open": "no unbounded line isolation",
+      "available_today": false
+    },
+    {
+      "id": "R3_DH_then_MassA",
+      "route": "Polylog density at moderate beta* => Mass-with-A => B_theta",
+      "classical_nearby": [
+        "Ingham/Huxley/GM/KLN/Bellotti"
+      ],
+      "why_open": "positive T-powers at moderate sigma",
+      "available_today": false
+    },
+    {
+      "id": "R4_kappa_then_M12",
+      "route": "Prove kappa <= J^{-p}, p>1 on GHK/U => numeric O-M1.2",
+      "classical_nearby": [
+        "E1",
+        "mean-value Dirichlet poly",
+        "large sieve"
+      ],
+      "why_open": "only absolute kappa=1 proved; L2 not uniform; RW too weak",
+      "available_today": false
+    },
+    {
+      "id": "R5_GO_then_path",
+      "route": "Gap+Omega => tube path => O-M1.3bis attempt",
+      "classical_nearby": [
+        "GUE gaps",
+        "resonance large values"
+      ],
+      "why_open": "no joint theorem",
+      "available_today": false
+    },
+    {
+      "id": "R6_SOC_strong_offline",
+      "route": "Strong loglog Delta_X + FE transfer + path",
+      "classical_nearby": [
+        "typical Omega proved",
+        "FE bookkeeping P4"
+      ],
+      "why_open": "strong scale and off-line transfer open",
+      "available_today": false
+    },
+    {
+      "id": "R7_AFE_Moll",
+      "route": "Construct phase mollifier on AFE dual sums",
+      "classical_nearby": [
+        "AFE",
+        "Riemann-Siegel"
+      ],
+      "why_open": "no coefficients maximizing Im log P_X",
+      "available_today": false
+    },
+    {
+      "id": "R8_full_phase_stack",
+      "route": "kappa + GO + SOC + AFE-Moll => O-TL attempt",
+      "why_open": "all four tips open; even then not automatic RH",
+      "available_today": false
+    },
+    {
+      "id": "R9_residual_algebra",
+      "route": "539 / A0-A5+ => RH",
+      "why_open": "ZLA forbidden; residual closed stack is not a zeta lemma source",
+      "available_today": false,
+      "status": "dead_nonroute"
+    },
+    {
+      "id": "R10_weaken_OTL_to_typical",
+      "route": "Redefine target at sqrt(log log) scale",
+      "why_open": "still need off-line transfer + M1.2 + max abscissa; does not prove RH",
+      "available_today": false
+    }
+  ],
+  "shortest_conditional_paths": {
+    "to_B_theta": [
+      [
+        "Form_C"
+      ],
+      [
+        "Iso_H",
+        "RM"
+      ],
+      [
+        "DH",
+        "RM"
+      ]
+    ],
+    "toward_O_TL": [
+      [
+        "kappa_J_p",
+        "GO",
+        "SOC",
+        "O-Moll_AFE"
+      ]
+    ],
+    "to_RH_unconditional": []
+  },
+  "dead_routes_confirmed": [
+    "absolute far-sum joint window under c1=291",
+    "random-walk kappa alone",
+    "free-t Soundararajan as PAO/Form C proof",
+    "star-phased psi-x as PAO engine",
+    "Levinson mollifier as O-Moll",
+    "density => Iso_H",
+    "FE symmetry alone as phase engine",
+    "monodromy of P_X",
+    "residual 539 => RH",
+    "c1 cosmetics alone"
+  ],
+  "proved_assets_intact": [
+    "signed residual formula (19)",
+    "self loglog cancel",
+    "Form B <-> Form C equivalence",
+    "E1 C_U=1",
+    "(RM)+(Iso_H)=>B_theta",
+    "(RM)+(polylog)=>Mass-with-A=>B_theta",
+    "typical on-line Omega",
+    "hybrid phase identity",
+    "R4.1 GHK strip",
+    "A4+/A5+ on K+ closed (residual, separate)"
+  ],
+  "global_verdict": "Pass-3 explore for resolutions (post P1-P4): Form C is the sharpest B_theta object; ten routes checked; zero unconditional resolutions; OR-cut {Form_C, Iso_H, DH} and AND-cut {kappa, GO, SOC, AFE-Moll} unchanged in openness; dual Form_C/kappa intact; RH/O-TL open; ZLA residual firewall held."
+}
