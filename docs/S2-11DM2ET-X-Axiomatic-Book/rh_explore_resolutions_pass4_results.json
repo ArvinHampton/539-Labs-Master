@@ -1,0 +1,151 @@
+{
+  "status": "RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF",
+  "date": "2026-08-08",
+  "pass": 4,
+  "mandate": "Explore for resolutions after pursue-open, ZEFB, MA8, Kappa_away",
+  "zla": true,
+  "unconditional_resolutions_found": [],
+  "resolution_surface": {
+    "B_theta_OR": {
+      "gates": [
+        "Form_C",
+        "Iso_H",
+        "DH"
+      ],
+      "all_open": true,
+      "blockers": {
+        "Form_C": [
+          "FFML",
+          "ZEFB"
+        ],
+        "Iso_H": [
+          "no unbounded isolation tech"
+        ],
+        "DH": [
+          "positive T-powers at moderate sigma"
+        ]
+      },
+      "partials": {
+        "Form_C": "zero-aware sketch; EO(Iso_H) conditional",
+        "Iso_H": "implications to B_theta proved under hyp",
+        "DH": "implications to Mass-with-A/B_theta proved under hyp"
+      }
+    },
+    "O_TL_AND": {
+      "gates": [
+        "kappa",
+        "GO",
+        "SOC_strong_offline",
+        "AFE_Moll"
+      ],
+      "all_open": true,
+      "partials": {
+        "kappa": "MA8 dual; Kappa_away template; approach=GO",
+        "GO": "structurally required for full-path kappa",
+        "SOC": "typical CLOSED; strong+offline OPEN",
+        "AFE_Moll": "Euler-phase objective; empty construction"
+      }
+    },
+    "RH": {
+      "primary": "O_TL",
+      "B_theta_related_not_imp": true,
+      "open": true
+    }
+  },
+  "barriers_locked": [
+    "FFML",
+    "ZEFB",
+    "density_neq_Iso_H",
+    "Levinson_neq_O_Moll",
+    "residual_neq_RH"
+  ],
+  "closed_backbone_count": 17,
+  "routes_explored_this_pass": [
+    {
+      "id": "E4_R1",
+      "route": "Kappa_away + GO => full-path kappa => O-M1.2",
+      "available": false,
+      "missing": "GO joint theorem"
+    },
+    {
+      "id": "E4_R2",
+      "route": "Iso_H => EO => zero-aware Form C => B_theta",
+      "available": false,
+      "missing": "Iso_H"
+    },
+    {
+      "id": "E4_R3",
+      "route": "DH => Mass-with-A => B_theta",
+      "available": false,
+      "missing": "polylog DH moderate beta*"
+    },
+    {
+      "id": "E4_R4",
+      "route": "Non-circular EF feedback => Form C without Iso_H",
+      "available": false,
+      "missing": "zero-aware technology beyond sketch"
+    },
+    {
+      "id": "E4_R5",
+      "route": "AFE Euler-phase mollifier => O-Moll => O-TL arm",
+      "available": false,
+      "missing": "coefficients"
+    },
+    {
+      "id": "E4_R6",
+      "route": "SOC strong + FE path + M1.2 package => off-line",
+      "available": false,
+      "missing": "strong scale + path package"
+    },
+    {
+      "id": "E4_R7",
+      "route": "Full AND stack => O-TL => RH programme close",
+      "available": false,
+      "missing": "all four arms"
+    },
+    {
+      "id": "E4_R8",
+      "route": "Residual A0-A5+ => RH",
+      "available": false,
+      "status": "dead_ZLA"
+    }
+  ],
+  "new_angles_vs_pass3": [
+    "Kappa_away as partial only (not full kappa)",
+    "ZEFB + FFML double fence on Form C explicit",
+    "kappa-GO structural link via MA8 approach arcs",
+    "AFE-Moll targets Euler phase not |zeta|",
+    "zero-aware Form C sketch as only remaining Form C research shape"
+  ],
+  "shortest_conditional_paths": {
+    "to_B_theta": [
+      [
+        "Form_C"
+      ],
+      [
+        "Iso_H",
+        "RM"
+      ],
+      [
+        "DH",
+        "RM"
+      ]
+    ],
+    "toward_O_TL": [
+      [
+        "kappa",
+        "GO",
+        "SOC_strong_offline",
+        "AFE_Moll"
+      ]
+    ],
+    "to_RH_unconditional": []
+  },
+  "rational_next_if_continuing": [
+    "Prove any instance of GO(theta,X) classically or conditionally with explicit transfer to Kappa_away upgrade",
+    "Zero-aware Form C under Iso_H as a clean conditional theorem (not RH)",
+    "AFE-Moll coefficient search with objective Im log P_X only",
+    "Do not reopen closed backbone or dead routes"
+  ],
+  "global_verdict": "Pass-4 explore for resolutions: surface fully named with double fence FFML+ZEFB on Form C, Kappa_away partial, MA8 dual, GO-kappa link. Eight routes checked; zero unconditional resolutions. B_theta OR-cut and O_TL AND-cut entirely open at tips. RH open."
+}
