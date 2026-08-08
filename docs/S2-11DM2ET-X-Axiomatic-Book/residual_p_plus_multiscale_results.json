@@ -80,7 +80,7 @@
     "thin_im_D1_rank": 2,
     "dim_H2_thin_proxy": 1,
     "permanent_class_survives": true,
-    "s_ad_residual_from_im": 29.39030417915772,
+    "s_ad_residual_from_im": 29.390304179157738,
     "path_H2_proxy_path_integrated": {
       "dim": 56,
       "meaning": "formal free path 2-cocycles if d_P from path-integrated C1 is 0"

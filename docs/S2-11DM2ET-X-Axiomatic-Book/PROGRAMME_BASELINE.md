@@ -2,7 +2,7 @@
 
 **Status:** Single source of truth for what is **resolved** vs **open**.  
 **Rule:** Everything listed as resolved is locked; everything listed as open remains open under the stated constraints.  
-**Date lock:** 2026-07 (living book); proton stability addendum 2026-08-01.
+**Date lock:** 2026-07 (living book); proton stability addendum 2026-08-01; A4⁺/A5⁺ K⁺ baseline hygiene + P⁺ optional lock 2026-08-08.
 
 **Category A / Category B separation and residual-flux provenance are mandatory on every claim.**
 
@@ -46,25 +46,30 @@
 
 ---
 
-## 3. Architecture A continuous / \(KO\) layers — **A3 done; A4–A5 0-stem closed; A4⁺ open**
+## 3. Architecture A continuous / \(KO\) layers — **A3 done; A4–A5 0-stem closed; A4⁺ / A5⁺ closed on K⁺**
 
 | Phase | Status | Content |
 |-------|--------|---------|
 | **A3** | **Resolved** | \(\Phi\to\mathrm{Gr}_1(V)\hookrightarrow BO\); oriented rank-2 \(\Phi^{\mathrm{Spin}}\) |
 | **A4** | **Resolved (0-stem only)** | \(w_1=w_2=0\) on \(\mathcal{O}_{\mathrm{res}}^{\mathrm{disc}}\); \(B\mathrm{Spin}\) lift — `A4_BSPIN_LIFT_CLOSED_ON_O_RES_DISC` |
 | **A5** | **Resolved (0-stem only)** | \([\mathcal{O}_{\mathrm{res}}]=B'\) in \(\Omega_0^{\mathrm{Spin}}/KO_0\); fibers \(8\cdot67+3\) — `A5_KO_OMEGA0_SPIN_CLOSED_ON_O_RES` |
-| **A4⁺** | **Open** | Continuous \(w_1,w_2\) / \(B\mathrm{Spin}\) of A3 \(\Phi\) on **full** \(\lvert E(\mathcal{O}_{\mathrm{res}})\rvert\) (A2 cells beyond points) |
+| **A4⁺** | **Closed on primary K⁺** | Path + same-tower cliques + triangle 2-fill: V=539, E=594, F=56; \(\beta_0=1\), \(\beta_1=\beta_2=0\) over \(\mathbb{F}_2\); continuous \(\Phi/\Phi^{\mathrm{Spin}}\); \(w_1=w_2=0\); unique \(B\mathrm{Spin}\) lift — `A4PLUS_BSPIN_LIFT_CLOSED_ON_KPLUS` (2026-07-30) |
+| **A5⁺** | **Closed coefficients-only on K⁺** | Integral \(H_*(K^+;\mathbb{Z})\cong H_*(\mathrm{pt})\) (no torsion); AHSS collapses to \(\Omega_n^{\mathrm{Spin}}(\mathrm{pt})\cong KO_n(\mathrm{pt})\) through degree 7; residual 0-class \(B'=539\) — `A5PLUS_COEFFICIENTS_ONLY_ON_KPLUS` |
 
-**Domain freeze (mandatory on every A4/A5 claim):** \(\mathcal{O}_{\mathrm{res}}^{\mathrm{disc}}\) / **0-stem only** — not continuum bordism, not positive-dimensional cells of \(|E|\).
+**Domain freeze (mandatory):** A4/A5 0-stem claims stay on \(\mathcal{O}_{\mathrm{res}}^{\mathrm{disc}}\). A4⁺/A5⁺ claims stay on the executed primary enrichment \(K^+\) (residual-flux under (S)). Constant-A2 geometric realisation remains 0-dimensional. Higher continuum manifold fillings / \(\Omega_{n>0}\) beyond coefficient tables stay Category B / open.
 
 **Canonical files:**  
 `Architecture_A3_Geometric_BO_BSpin.md`,  
 `Architecture_A4_BSpin_Lift.md`,  
 `Architecture_A5_KO_Spin_Bordism.md`,  
+`Architecture_A4plus_Continuous_BSpin.md`,  
+`Architecture_A5plus_KO_Spin_Bordism.md`,  
 `scripts/architecture_A3_geometric_probe.py`,  
-`scripts/architecture_A4_A5_probe.py`.
+`scripts/architecture_A4_A5_probe.py`,  
+`scripts/architecture_A4plus_probe.py`,  
+`scripts/architecture_A5plus_probe.py`.
 
-**Note.** A0–A2 discrete foundation locked. A4–A5 are **0-stem residual closure** (accepted). Do **not** reopen A4–A5 on the same 0-dim domain. Higher continuum \(\Omega_{n>0}\) remains Category B. No free-\(T^\sharp\) origin; No-Go and Option 3 unchanged.
+**Note.** A0–A2 discrete foundation locked. A4–A5 are **0-stem residual closure** (accepted). A4⁺/A5⁺ closed on primary \(K^+\) enrichment only. Do **not** reopen A4–A5 on the same 0-dim domain. Higher continuum \(\Omega_{n>0}\) remains Category B. No free-\(T^\sharp\) origin; No-Go and Option 3 unchanged. Hygiene lock 2026-08-08.
 
 ---
 
@@ -135,7 +140,7 @@ Continuum hopfion, torsion, or measure constructions remain **Category B design 
 | **2** | Discrete TTC/RTTC + product + \(H^\bullet\) + form SS + \(D\) | Same + **SS differentials** \(d_0=d_P\), \(d_1=d_Q\); **\(D(\alpha\otimes f)=-\eta\)** explicit; CE = algebra only — `Residual_Form_SS_Differentials.md` |
 | **2c** | Near-term unification kit | Pair \([\alpha\otimes\delta f]\) with mixed cells; window-18 filtration; sector↔band RFC — `Near_Term_Unification_Kit.md` |
 | **3** | Measure patterns BMMT/HMT | Open secondary Cat.\ B |
-| **4** | Architecture A4–A5 | Open |
+| **4** | Architecture A4–A5 / A4⁺–A5⁺ on K⁺ | **Closed** (0-stem + K⁺; continuum fills Cat B) |
 | **5** | 1001 / R-FFT / individuality falsifiability | Open lower priority |
 
 **Primary recommendation in force:** discrete patterns on cores first.
@@ -174,7 +179,7 @@ Continuum hopfion, torsion, or measure constructions remain **Category B design 
 |-------|---------|
 | Combinatorial residual foundation (packaging + \(\mathcal{O}_{\mathrm{res}}\) + Architecture A **A0–A2**) | **Locked and non-circular** |
 | Architecture A **A3** first continuous \(\mathrm{Gr}/BO\) model | **Locked as first model**; not a completed \(KO\) theory |
-| Architecture A **A4–A5** | **Open** |
+| Architecture A **A4–A5** 0-stem + **A4⁺/A5⁺** on K⁺ | **Closed** |
 | Continuum geometric, dynamical, hopfion, torsion enrichments | **Category B proposals** (or schematic) |
 | Free-trajectory 539-classes | **Option 3 — paused** |
 | Security reductions | **Exploration only** — no completed reduction |
@@ -214,9 +219,10 @@ Continuum hopfion, torsion, or measure constructions remain **Category B design 
 ## Bottom line
 
 > The combinatorial residual foundation is **locked**.  
-> Discrete Architecture A (**A0–A2**) is **locked**; continuous **A3** locked; **A4–A5** locked as **0-stem residual closure** on \(\mathcal{O}_{\mathrm{res}}^{\mathrm{disc}}\) only (`A4_BSPIN_LIFT_CLOSED_ON_O_RES_DISC`, `A5_KO_OMEGA0_SPIN_CLOSED_ON_O_RES`); **A4⁺** (full \(|E|\)) remains **open**.  
+> Discrete Architecture A (**A0–A2**) is **locked**; continuous **A3** locked; **A4–A5** locked as **0-stem residual closure** on \(\mathcal{O}_{\mathrm{res}}^{\mathrm{disc}}\) only (`A4_BSPIN_LIFT_CLOSED_ON_O_RES_DISC`, `A5_KO_OMEGA0_SPIN_CLOSED_ON_O_RES`); **A4⁺** and **A5⁺** closed on primary enrichment \(K^+\) (`A4PLUS_BSPIN_LIFT_CLOSED_ON_KPLUS`, `A5PLUS_COEFFICIENTS_ONLY_ON_KPLUS`). Constant-A2 realisation remains 0-dim; continuum manifold fills stay Category B.  
 > Free dynamics stay **Option 3**. Security stays **Category B exploration** (games + Π stated 2026-07-31; no PPT reduction). Continuum hopfion/torsion/measure contacts stay **Category B** relative to the residual foundation.  
-> Proton is exactly stable (Category A structural corollary of Axiom 0 + residual packaging).
+> Proton is exactly stable (Category A structural corollary of Axiom 0 + residual packaging).  
+> P⁺ permanent-class survival under residual height is optional combinatorial lock (`P_PLUS_PERMANENT_CLASS_SURVIVAL_OPTIONAL_LOCK_2026-08-08`). Hygiene patch 2026-08-08.
 
 ## Cat-B continuum fillings (open, not locked)
 
@@ -244,7 +250,7 @@ Thin F: finite filtration => strong convergence; Boardman idle. Shell tower ML q
 
 ## P+ multi-scale residual research
 
-Executed §2.7: omega_P(delta_f)=0; dim H2 proxy=1; permanent class survives; **not** auto-locked. See Residual_P_plus_MultiScale.md, scripts/residual_p_plus_multiscale_probe.py.
+Executed §2.7: omega_P(delta_f)=0; dim H2 proxy=1; permanent class survives. Optional combinatorial lock of preservation under residual height: `P_plus_Permanent_Class_Survival_Optional_Lock_2026-08-08.md` (secondary multi-scale room remains open research). Probe re-verified 2026-08-08. See Residual_P_plus_MultiScale.md, scripts/residual_p_plus_multiscale_probe.py.
 
 ## P+ M1 topology · residual flux quantization Q0–Q8
 
