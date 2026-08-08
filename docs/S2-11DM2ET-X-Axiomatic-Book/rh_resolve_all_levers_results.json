@@ -1,0 +1,1121 @@
+{
+  "status": "RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF",
+  "date": "2026-08-08",
+  "mandate": "Resolve for all \u2014 three levers + five obligations + five directions",
+  "zla": true,
+  "no_model_constants": true,
+  "does_not_prove": [
+    "RH",
+    "O-TL",
+    "Iso_H",
+    "Mass-with-A",
+    "uniform O-M1.2",
+    "O-M1.3bis"
+  ],
+  "L1_E1_real_drift": {
+    "theorem_E1": "|w E1(w)| <= 1 for Re w >= 0 (proved; RH_E1_Off_Nearline)",
+    "implication_for_C_U": "On paths with Re(s-rho') >= 0 for all far zeros in the sum, |U| <= 1 / (|s-rho'| log X) with C_U = 1 exactly from Theorem E1 (no free constant >1 required for pure E1 model).",
+    "bulk_critical_line_issue": "For bulk zeros at beta'=1/2 and path at sigma=1/2, Re z = 0 (boundary). E1 gives |E1| <= 1/|z|. Real-drift gain appears only for sigma > beta' (path to the right of the zero). Moving right of the critical line helps far zeros ON the line, but a rightmost off-line zero at beta*>sigma puts Re z < 0 and kills the decay \u2014 the RH-hard case.",
+    "grid": [
+      {
+        "sigma": 0.5,
+        "logX": 10,
+        "far_sum": 24.386470237651174,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.5,
+        "logX": 12,
+        "far_sum": 20.322058531375976,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.5,
+        "logX": 14,
+        "far_sum": 17.418907312607974,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.5,
+        "logX": 16,
+        "far_sum": 15.241543898531999,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.5,
+        "logX": 18,
+        "far_sum": 13.548039020917317,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.5,
+        "logX": 20,
+        "far_sum": 12.193235118825587,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.5087018165696469,
+        "logX": 10,
+        "far_sum": 22.22139462494387,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.5087018165696469,
+        "logX": 12,
+        "far_sum": 18.198339555519777,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.5087018165696469,
+        "logX": 14,
+        "far_sum": 15.32945350838302,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.5087018165696469,
+        "logX": 16,
+        "far_sum": 13.181851773812923,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.5087018165696469,
+        "logX": 18,
+        "far_sum": 11.515043940274289,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.5087018165696469,
+        "logX": 20,
+        "far_sum": 10.18473672833937,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.55,
+        "logX": 10,
+        "far_sum": 14.16348944721689,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.55,
+        "logX": 12,
+        "far_sum": 10.679712684832733,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.55,
+        "logX": 14,
+        "far_sum": 8.28291741523709,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.55,
+        "logX": 16,
+        "far_sum": 6.557856906832187,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.55,
+        "logX": 18,
+        "far_sum": 5.274483832379839,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.55,
+        "logX": 20,
+        "far_sum": 4.295295299126686,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.6,
+        "logX": 10,
+        "far_sum": 8.395337246309866,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.6,
+        "logX": 12,
+        "far_sum": 5.727933988345763,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.6,
+        "logX": 14,
+        "far_sum": 4.01968774959368,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.6,
+        "logX": 16,
+        "far_sum": 2.879661731067772,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.6,
+        "logX": 18,
+        "far_sum": 2.0957045490550787,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.6,
+        "logX": 20,
+        "far_sum": 1.5442359873091362,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.7,
+        "logX": 10,
+        "far_sum": 3.011336616638587,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.7,
+        "logX": 12,
+        "far_sum": 1.6821327495783198,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.7,
+        "logX": 14,
+        "far_sum": 0.9664862589731966,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.7,
+        "logX": 16,
+        "far_sum": 0.56687322440676,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.7,
+        "logX": 18,
+        "far_sum": 0.33776576522729856,
+        "r": 0.00870181656964689
+      },
+      {
+        "sigma": 0.7,
+        "logX": 20,
+        "far_sum": 0.20377004696678294,
+        "r": 0.00870181656964689
+      }
+    ],
+    "min_far_on_line": {
+      "sigma": 0.5,
+      "logX": 20,
+      "far_sum": 12.193235118825587,
+      "r": 0.00870181656964689
+    },
+    "min_far_sigma_0.6": {
+      "sigma": 0.6,
+      "logX": 20,
+      "far_sum": 1.5442359873091362,
+      "r": 0.00870181656964689
+    },
+    "status": "L1_E1_REAL_DRIFT_EXECUTED"
+  },
+  "L2_average_rvM_2pi": {
+    "formula": "far ~ C_U (J+1) log(gamma) / (pi log X) with dens = log(gamma)/(2pi)",
+    "C_U_from_E1": 1.0,
+    "comparison_old_vs_new": [
+      {
+        "logX": 10,
+        "old_CU2_no_2pi": 288.9774044055243,
+        "new_CU1_with_2pi_annulus": 45.99218235300484,
+        "new_CU1_integral": 31.245473534945294,
+        "new_CU2_with_2pi": 91.98436470600969,
+        "improvement_factor_old_vs_newCU1": 6.283185307179586
+      },
+      {
+        "logX": 12,
+        "old_CU2_no_2pi": 240.81450367127024,
+        "new_CU1_with_2pi_annulus": 38.32681862750404,
+        "new_CU1_integral": 26.037894612454412,
+        "new_CU2_with_2pi": 76.65363725500808,
+        "improvement_factor_old_vs_newCU1": 6.283185307179586
+      },
+      {
+        "logX": 14,
+        "old_CU2_no_2pi": 206.41243171823163,
+        "new_CU1_with_2pi_annulus": 32.85155882357489,
+        "new_CU1_integral": 22.31819538210378,
+        "new_CU2_with_2pi": 65.70311764714978,
+        "improvement_factor_old_vs_newCU1": 6.283185307179585
+      },
+      {
+        "logX": 16,
+        "old_CU2_no_2pi": 180.61087775345268,
+        "new_CU1_with_2pi_annulus": 28.74511397062803,
+        "new_CU1_integral": 19.52842095934081,
+        "new_CU2_with_2pi": 57.49022794125606,
+        "improvement_factor_old_vs_newCU1": 6.283185307179586
+      },
+      {
+        "logX": 18,
+        "old_CU2_no_2pi": 160.5430024475135,
+        "new_CU1_with_2pi_annulus": 25.55121241833603,
+        "new_CU1_integral": 17.358596408302944,
+        "new_CU2_with_2pi": 51.10242483667206,
+        "improvement_factor_old_vs_newCU1": 6.283185307179585
+      },
+      {
+        "logX": 20,
+        "old_CU2_no_2pi": 144.48870220276214,
+        "new_CU1_with_2pi_annulus": 22.99609117650242,
+        "new_CU1_integral": 15.622736767472647,
+        "new_CU2_with_2pi": 45.99218235300484,
+        "improvement_factor_old_vs_newCU1": 6.283185307179586
+      },
+      {
+        "logX": 24,
+        "old_CU2_no_2pi": 120.40725183563512,
+        "new_CU1_with_2pi_annulus": 19.16340931375202,
+        "new_CU1_integral": 13.018947306227206,
+        "new_CU2_with_2pi": 38.32681862750404,
+        "improvement_factor_old_vs_newCU1": 6.283185307179586
+      },
+      {
+        "logX": 30,
+        "old_CU2_no_2pi": 96.3258014685081,
+        "new_CU1_with_2pi_annulus": 15.330727451001616,
+        "new_CU1_integral": 10.415157844981765,
+        "new_CU2_with_2pi": 30.661454902003232,
+        "improvement_factor_old_vs_newCU1": 6.283185307179586
+      }
+    ],
+    "joint_windows": [
+      {
+        "c1": 291,
+        "eps": 0.1,
+        "best": null
+      },
+      {
+        "c1": 291,
+        "eps": 0.5,
+        "best": {
+          "logX": 14.0,
+          "far": 32.85155882357489,
+          "E": 0.4471834521034326,
+          "X": 1202604.2841647768
+        }
+      },
+      {
+        "c1": 291,
+        "eps": 1.0,
+        "best": {
+          "logX": 14.25,
+          "far": 32.27521568631919,
+          "E": 0.9970681195273815,
+          "X": 1544174.4670851405
+        }
+      },
+      {
+        "c1": 148,
+        "eps": 0.1,
+        "best": null
+      },
+      {
+        "c1": 148,
+        "eps": 0.5,
+        "best": {
+          "logX": 14.200000000000001,
+          "far": 32.38886081197524,
+          "E": 0.4733694057238226,
+          "X": 1468864.1896540965
+        }
+      },
+      {
+        "c1": 148,
+        "eps": 1.0,
+        "best": {
+          "logX": 14.4,
+          "far": 31.93901552292003,
+          "E": 0.907599021090814,
+          "X": 1794074.772606215
+        }
+      },
+      {
+        "c1": 50,
+        "eps": 0.1,
+        "best": null
+      },
+      {
+        "c1": 50,
+        "eps": 0.5,
+        "best": {
+          "logX": 14.5,
+          "far": 31.718746450348167,
+          "E": 0.490766788912871,
+          "X": 1982759.2635375687
+        }
+      },
+      {
+        "c1": 50,
+        "eps": 1.0,
+        "best": {
+          "logX": 14.700000000000001,
+          "far": 31.287198879595127,
+          "E": 0.9598866503938095,
+          "X": 2421747.6332524163
+        }
+      },
+      {
+        "c1": 10,
+        "eps": 0.1,
+        "best": null
+      },
+      {
+        "c1": 10,
+        "eps": 0.5,
+        "best": {
+          "logX": 14.9,
+          "far": 30.867236478526742,
+          "E": 0.4524289438846843,
+          "X": 2957929.2388223624
+        }
+      },
+      {
+        "c1": 10,
+        "eps": 1.0,
+        "best": {
+          "logX": 15.100000000000001,
+          "far": 30.45839890927473,
+          "E": 0.8937685817731769,
+          "X": 3612822.930740249
+        }
+      },
+      {
+        "c1": 1,
+        "eps": 0.1,
+        "best": {
+          "logX": 14.8,
+          "far": 31.075798887165437,
+          "E": 0.09840192057288781,
+          "X": 2676445.0551890987
+        }
+      },
+      {
+        "c1": 1,
+        "eps": 0.5,
+        "best": {
+          "logX": 15.5,
+          "far": 29.67237571161603,
+          "E": 0.44367021672367113,
+          "X": 5389698.476283012
+        }
+      },
+      {
+        "c1": 1,
+        "eps": 1.0,
+        "best": {
+          "logX": 15.700000000000001,
+          "far": 29.294383664334298,
+          "E": 0.8955009666089397,
+          "X": 6582992.5845837435
+        }
+      },
+      {
+        "c1": 0.1,
+        "eps": 0.1,
+        "best": {
+          "logX": 15.55,
+          "far": 29.57696614341148,
+          "E": 0.09962156378900339,
+          "X": 5666034.226298233
+        }
+      },
+      {
+        "c1": 0.1,
+        "eps": 0.5,
+        "best": {
+          "logX": 16.1,
+          "far": 28.56657289006512,
+          "E": 0.439822487350076,
+          "X": 9820670.922071371
+        }
+      },
+      {
+        "c1": 0.1,
+        "eps": 1.0,
+        "best": {
+          "logX": 16.3,
+          "far": 28.21606279325451,
+          "E": 0.9033811597304576,
+          "X": 11994994.551201342
+        }
+      }
+    ],
+    "target_scan": [
+      {
+        "C_U": 1.0,
+        "logX": 12,
+        "far": 38.32681862750404,
+        "E_at_c1_1": 0.23796075037477846,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 1.0,
+        "logX": 14,
+        "far": 32.85155882357489,
+        "E_at_c1_1": 0.10331652815571862,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 1.0,
+        "logX": 16,
+        "far": 28.74511397062803,
+        "E_at_c1_1": 2.7491671160293407,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 1.0,
+        "logX": 18,
+        "far": 25.55121241833603,
+        "E_at_c1_1": 6374.063536732391,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 1.0,
+        "logX": 20,
+        "far": 22.99609117650242,
+        "E_at_c1_1": 15390617.741690416,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 1.0,
+        "logX": 24,
+        "far": 19.16340931375202,
+        "E_at_c1_1": 94974118171528.92,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 1.0,
+        "logX": 30,
+        "far": 15.330727451001616,
+        "E_at_c1_1": 1.610099849868685e+24,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 1.0,
+        "logX": 40,
+        "far": 11.49804558825121,
+        "E_at_c1_1": 2.131840028225177e+41,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 1.0,
+        "logX": 60,
+        "far": 7.665363725500808,
+        "E_at_c1_1": 5.249653591257973e+75,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 1.0,
+        "logX": 100,
+        "far": 4.5992182353004845,
+        "E_at_c1_1": 5.801632988626757e+144,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.5,
+        "logX": 12,
+        "far": 19.16340931375202,
+        "E_at_c1_1": 0.23796075037477846,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.5,
+        "logX": 14,
+        "far": 16.425779411787445,
+        "E_at_c1_1": 0.10331652815571862,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.5,
+        "logX": 16,
+        "far": 14.372556985314015,
+        "E_at_c1_1": 2.7491671160293407,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.5,
+        "logX": 18,
+        "far": 12.775606209168014,
+        "E_at_c1_1": 6374.063536732391,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.5,
+        "logX": 20,
+        "far": 11.49804558825121,
+        "E_at_c1_1": 15390617.741690416,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.5,
+        "logX": 24,
+        "far": 9.58170465687601,
+        "E_at_c1_1": 94974118171528.92,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.5,
+        "logX": 30,
+        "far": 7.665363725500808,
+        "E_at_c1_1": 1.610099849868685e+24,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.5,
+        "logX": 40,
+        "far": 5.749022794125605,
+        "E_at_c1_1": 2.131840028225177e+41,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.5,
+        "logX": 60,
+        "far": 3.832681862750404,
+        "E_at_c1_1": 5.249653591257973e+75,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.5,
+        "logX": 100,
+        "far": 2.2996091176502422,
+        "E_at_c1_1": 5.801632988626757e+144,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.1,
+        "logX": 12,
+        "far": 3.832681862750404,
+        "E_at_c1_1": 0.23796075037477846,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.1,
+        "logX": 14,
+        "far": 3.28515588235749,
+        "E_at_c1_1": 0.10331652815571862,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.1,
+        "logX": 16,
+        "far": 2.874511397062803,
+        "E_at_c1_1": 2.7491671160293407,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.1,
+        "logX": 18,
+        "far": 2.5551212418336027,
+        "E_at_c1_1": 6374.063536732391,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.1,
+        "logX": 20,
+        "far": 2.2996091176502427,
+        "E_at_c1_1": 15390617.741690416,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.1,
+        "logX": 24,
+        "far": 1.916340931375202,
+        "E_at_c1_1": 94974118171528.92,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.1,
+        "logX": 30,
+        "far": 1.533072745100162,
+        "E_at_c1_1": 1.610099849868685e+24,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.1,
+        "logX": 40,
+        "far": 1.1498045588251213,
+        "E_at_c1_1": 2.131840028225177e+41,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.1,
+        "logX": 60,
+        "far": 0.766536372550081,
+        "E_at_c1_1": 5.249653591257973e+75,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.1,
+        "logX": 100,
+        "far": 0.4599218235300485,
+        "E_at_c1_1": 5.801632988626757e+144,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.05,
+        "logX": 12,
+        "far": 1.916340931375202,
+        "E_at_c1_1": 0.23796075037477846,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.05,
+        "logX": 14,
+        "far": 1.642577941178745,
+        "E_at_c1_1": 0.10331652815571862,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.05,
+        "logX": 16,
+        "far": 1.4372556985314016,
+        "E_at_c1_1": 2.7491671160293407,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.05,
+        "logX": 18,
+        "far": 1.2775606209168013,
+        "E_at_c1_1": 6374.063536732391,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.05,
+        "logX": 20,
+        "far": 1.1498045588251213,
+        "E_at_c1_1": 15390617.741690416,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.05,
+        "logX": 24,
+        "far": 0.958170465687601,
+        "E_at_c1_1": 94974118171528.92,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.05,
+        "logX": 30,
+        "far": 0.766536372550081,
+        "E_at_c1_1": 1.610099849868685e+24,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.05,
+        "logX": 40,
+        "far": 0.5749022794125607,
+        "E_at_c1_1": 2.131840028225177e+41,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.05,
+        "logX": 60,
+        "far": 0.3832681862750405,
+        "E_at_c1_1": 5.249653591257973e+75,
+        "far_le_0.4": true,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.05,
+        "logX": 100,
+        "far": 0.22996091176502426,
+        "E_at_c1_1": 5.801632988626757e+144,
+        "far_le_0.4": true,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.02,
+        "logX": 12,
+        "far": 0.7665363725500809,
+        "E_at_c1_1": 0.23796075037477846,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.02,
+        "logX": 14,
+        "far": 0.6570311764714979,
+        "E_at_c1_1": 0.10331652815571862,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.02,
+        "logX": 16,
+        "far": 0.5749022794125607,
+        "E_at_c1_1": 2.7491671160293407,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.02,
+        "logX": 18,
+        "far": 0.5110242483667206,
+        "E_at_c1_1": 6374.063536732391,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.02,
+        "logX": 20,
+        "far": 0.4599218235300485,
+        "E_at_c1_1": 15390617.741690416,
+        "far_le_0.4": false,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.02,
+        "logX": 24,
+        "far": 0.38326818627504045,
+        "E_at_c1_1": 94974118171528.92,
+        "far_le_0.4": true,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.02,
+        "logX": 30,
+        "far": 0.3066145490200323,
+        "E_at_c1_1": 1.610099849868685e+24,
+        "far_le_0.4": true,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.02,
+        "logX": 40,
+        "far": 0.22996091176502426,
+        "E_at_c1_1": 2.131840028225177e+41,
+        "far_le_0.4": true,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.02,
+        "logX": 60,
+        "far": 0.15330727451001616,
+        "E_at_c1_1": 5.249653591257973e+75,
+        "far_le_0.4": true,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.02,
+        "logX": 100,
+        "far": 0.0919843647060097,
+        "E_at_c1_1": 5.801632988626757e+144,
+        "far_le_0.4": true,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.01,
+        "logX": 12,
+        "far": 0.38326818627504045,
+        "E_at_c1_1": 0.23796075037477846,
+        "far_le_0.4": true,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.01,
+        "logX": 14,
+        "far": 0.32851558823574895,
+        "E_at_c1_1": 0.10331652815571862,
+        "far_le_0.4": true,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.01,
+        "logX": 16,
+        "far": 0.28745113970628033,
+        "E_at_c1_1": 2.7491671160293407,
+        "far_le_0.4": true,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.01,
+        "logX": 18,
+        "far": 0.2555121241833603,
+        "E_at_c1_1": 6374.063536732391,
+        "far_le_0.4": true,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.01,
+        "logX": 20,
+        "far": 0.22996091176502426,
+        "E_at_c1_1": 15390617.741690416,
+        "far_le_0.4": true,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.01,
+        "logX": 24,
+        "far": 0.19163409313752022,
+        "E_at_c1_1": 94974118171528.92,
+        "far_le_0.4": true,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.01,
+        "logX": 30,
+        "far": 0.15330727451001616,
+        "E_at_c1_1": 1.610099849868685e+24,
+        "far_le_0.4": true,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.01,
+        "logX": 40,
+        "far": 0.11498045588251213,
+        "E_at_c1_1": 2.131840028225177e+41,
+        "far_le_0.4": true,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.01,
+        "logX": 60,
+        "far": 0.07665363725500808,
+        "E_at_c1_1": 5.249653591257973e+75,
+        "far_le_0.4": true,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.01,
+        "logX": 100,
+        "far": 0.04599218235300485,
+        "E_at_c1_1": 5.801632988626757e+144,
+        "far_le_0.4": true,
+        "both_c1_1": false
+      }
+    ],
+    "both_hits_c1_1": [],
+    "far_ok_not_ghk": [
+      {
+        "C_U": 0.05,
+        "logX": 60,
+        "far": 0.3832681862750405,
+        "E_at_c1_1": 5.249653591257973e+75,
+        "far_le_0.4": true,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.05,
+        "logX": 100,
+        "far": 0.22996091176502426,
+        "E_at_c1_1": 5.801632988626757e+144,
+        "far_le_0.4": true,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.02,
+        "logX": 24,
+        "far": 0.38326818627504045,
+        "E_at_c1_1": 94974118171528.92,
+        "far_le_0.4": true,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.02,
+        "logX": 30,
+        "far": 0.3066145490200323,
+        "E_at_c1_1": 1.610099849868685e+24,
+        "far_le_0.4": true,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.02,
+        "logX": 40,
+        "far": 0.22996091176502426,
+        "E_at_c1_1": 2.131840028225177e+41,
+        "far_le_0.4": true,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.02,
+        "logX": 60,
+        "far": 0.15330727451001616,
+        "E_at_c1_1": 5.249653591257973e+75,
+        "far_le_0.4": true,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.02,
+        "logX": 100,
+        "far": 0.0919843647060097,
+        "E_at_c1_1": 5.801632988626757e+144,
+        "far_le_0.4": true,
+        "both_c1_1": false
+      },
+      {
+        "C_U": 0.01,
+        "logX": 12,
+        "far": 0.38326818627504045,
+        "E_at_c1_1": 0.23796075037477846,
+        "far_le_0.4": true,
+        "both_c1_1": false
+      }
+    ],
+    "conclusion_L2": "Inserting 2\u03c0 into R-vM density improves far-sum by ~\u03c0 relative to dens~log gamma, and E1 sets C_U=1 (vs prior diagnostic C_U=2). Net ~6x improvement vs old CU=2/no-2\u03c0, but min far under GHK-feasible logX remains O(10), not O(0.1). Average-case equals R-vM mean \u2014 no further free factor without cancellation.",
+    "status": "L2_AVERAGE_RVM_2PI_EXECUTED"
+  },
+  "L3_zero_free_tube_Phi": {
+    "design": {
+      "T1_horizontal_in_ordinate_gap": "primary unconditional attempt",
+      "T2_half_isolation": "rare; not positive density",
+      "T3_average_case": "deletes local poles in L1 mean"
+    },
+    "classical_limit": "Wide zero-free tubes at moderate sigma are not classical. Only near sigma=1 do classical zero-free regions give d_tube ~ 1/log^k t.",
+    "numerical_T1": [
+      {
+        "theta_gap_fraction": 0.01,
+        "d_tube": 0.004547921179472805,
+        "mean_gap": 0.45479211794728047,
+        "Phi_local": 219.88067966382832,
+        "Phi_typical_no_local": 555.6583786434122,
+        "integral_0.2_no_local": 111.13167572868245,
+        "integral_0.2_with_local": 155.10781166144812,
+        "reservoir": 14.84131591025766,
+        "no_local_lt_half_res": false,
+        "with_local_lt_half_res": false,
+        "gap_existence": "Mean gaps exist by R-vM; a gap of size >= 2 d_tube has density depending on gap statistics (not proved for all large t)."
+      },
+      {
+        "theta_gap_fraction": 0.05,
+        "d_tube": 0.022739605897364026,
+        "mean_gap": 0.45479211794728047,
+        "Phi_local": 43.97613593276566,
+        "Phi_typical_no_local": 523.579756533662,
+        "integral_0.2_no_local": 104.7159513067324,
+        "integral_0.2_with_local": 113.51117849328553,
+        "reservoir": 14.84131591025766,
+        "no_local_lt_half_res": false,
+        "with_local_lt_half_res": false,
+        "gap_existence": "Mean gaps exist by R-vM; a gap of size >= 2 d_tube has density depending on gap statistics (not proved for all large t)."
+      },
+      {
+        "theta_gap_fraction": 0.1,
+        "d_tube": 0.04547921179472805,
+        "mean_gap": 0.45479211794728047,
+        "Phi_local": 21.98806796638283,
+        "Phi_typical_no_local": 509.7642459756977,
+        "integral_0.2_no_local": 101.95284919513955,
+        "integral_0.2_with_local": 106.35046278841611,
+        "reservoir": 14.84131591025766,
+        "no_local_lt_half_res": false,
+        "with_local_lt_half_res": false,
+        "gap_existence": "Mean gaps exist by R-vM; a gap of size >= 2 d_tube has density depending on gap statistics (not proved for all large t)."
+      },
+      {
+        "theta_gap_fraction": 0.25,
+        "d_tube": 0.11369802948682012,
+        "mean_gap": 0.45479211794728047,
+        "Phi_local": 8.795227186553133,
+        "Phi_typical_no_local": 491.5011344239118,
+        "integral_0.2_no_local": 98.30022688478238,
+        "integral_0.2_with_local": 100.059272322093,
+        "reservoir": 14.84131591025766,
+        "no_local_lt_half_res": false,
+        "with_local_lt_half_res": false,
+        "gap_existence": "Mean gaps exist by R-vM; a gap of size >= 2 d_tube has density depending on gap statistics (not proved for all large t)."
+      },
+      {
+        "theta_gap_fraction": 0.5,
+        "d_tube": 0.22739605897364024,
+        "mean_gap": 0.45479211794728047,
+        "Phi_local": 4.397613593276566,
+        "Phi_typical_no_local": 477.6856238659475,
+        "integral_0.2_no_local": 95.5371247731895,
+        "integral_0.2_with_local": 96.41664749184481,
+        "reservoir": 14.84131591025766,
+        "no_local_lt_half_res": false,
+        "with_local_lt_half_res": false,
+        "gap_existence": "Mean gaps exist by R-vM; a gap of size >= 2 d_tube has density depending on gap statistics (not proved for all large t)."
+      }
+    ],
+    "reading": "If a horizontal path sits in an ordinate gap with theta>=0.05\u20130.1 of mean gap, Phi_local drops enough that the no-local integral can compete with the reservoir at these illustration parameters \u2014 BUT existence of such t_* with large on-line Omega AND a wide gap is open (correlation of large values with zero gaps).",
+    "status": "L3_ZERO_FREE_TUBE_DESIGN_EXECUTED"
+  },
+  "resolve_board": {
+    "five_obligations": {
+      "O-M1.2": {
+        "status": "OPEN",
+        "resolved_today": "E1 sets C_U=1; 2\u03c0 R-vM improves far-sum ~6x vs prior diagnostic; joint numerical gamma1 under c1=291 still closed as obstruction; architecture unchanged/accepted.",
+        "still_missing": "uniform far domination at O-TL-relevant paths for all large gamma"
+      },
+      "O-M1.3bis": {
+        "status": "OPEN",
+        "resolved_today": "Phi structure + tube design T1\u2013T3; absolute path fails; tube path needs gap+Omega correlation",
+        "still_missing": "path with Delta theta >> log log X"
+      },
+      "O-PC": {
+        "status": "PARTIAL (on-line typical Omega accepted; strong/off-line open)",
+        "resolved_today": "R4.1 GHK strip (prior) still the clean off-line error control; R4.2\u2013R4.3 open",
+        "still_missing": "strong Omega at O-TL scale; off-line conversion"
+      },
+      "O-Moll": {
+        "status": "OPEN",
+        "resolved_today": "not attacked (no classical mollifier breakthrough available)",
+        "still_missing": "phase-oriented mollifier"
+      },
+      "O-TL": {
+        "status": "OPEN \u2014 primary",
+        "resolved_today": "no discharge; dependencies O-M1.2/M1.3bis/PC/Moll still open",
+        "still_missing": "target lemma itself"
+      }
+    },
+    "five_solid_directions": {
+      "D1_density": "Resolved as far as corpus allows (prior+Step B); polylog moderate sigma OPEN",
+      "D2_Iso_H": "OPEN; classical isolation tools insufficient (prior freeze)",
+      "D3_path_Omega": "Phi+tube design advanced; continuation OPEN",
+      "D4_resonance_offline": "R4.1 GHK strip resolved; O4.2\u2013O4.4 OPEN",
+      "D5_Mass_with_A": "Conditional DH template only; unconditional OPEN"
+    },
+    "three_levers": {
+      "L1_E1_C_U": "L1_E1_REAL_DRIFT_EXECUTED",
+      "L2_average_2pi": "L2_AVERAGE_RVM_2PI_EXECUTED",
+      "L3_tube_Phi": "L3_ZERO_FREE_TUBE_DESIGN_EXECUTED"
+    },
+    "global": {
+      "RH": "OPEN",
+      "label": "RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF",
+      "one_liner": "Resolve-for-all executed: E1/2\u03c0 improve far-sum constants but do not open the M1.2 joint window under current c1; tube design identifies the gap+Omega correlation as the path-continuation obstruction; RH remains open."
+    }
+  }
+}
