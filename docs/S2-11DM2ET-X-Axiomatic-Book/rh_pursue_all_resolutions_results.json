@@ -1,0 +1,259 @@
+{
+  "status": "RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF",
+  "date": "2026-08-08",
+  "mandate": "Pursue all for resolutions (MA1-MA12 + standard gates)",
+  "zla": true,
+  "MA8_EF_dual_kappa": {
+    "status": "MA8_EXECUTED",
+    "identity": {
+      "name": "Far-U / logarithmic-derivative dual",
+      "formula": "sum_rho 1/(s-rho) = -zeta'/zeta(s) - (trivial zeros contrib) + archimedean (partial fraction of xi); far piece = full - near - trivial - arch",
+      "U_model": "U ~ 1/((s-rho') log X) so sum_far U ~ (1/log X) * sum_far 1/(s-rho')",
+      "standing": "classical identity surface \u2014 recorded as programme dual for far U"
+    },
+    "consequence": {
+      "kappa_rewritten": "kappa problem equivalent (up to near-zero and arch errors) to controlling zeta'/zeta(s) along M1.3 paths, minus near zeros already separated",
+      "why_not_easier": "On paths approaching zeros, zeta'/zeta has poles; upper bounds require distance-to-nearest-zero control \u2014 which is GO/gap territory",
+      "zero_free_path_segments": "Away from zeros / in ZF region near sigma=1, classical |zeta'/zeta| bounds give far U << (log^2|t|)/log X \u2014 may be small; does not cover approach-to-zero arcs"
+    },
+    "numeric_proxy_rows": [
+      {
+        "sigma": 0.6,
+        "t": 1000000.0,
+        "zeta_prime_zeta_bound_schematic": 190.8683872392133,
+        "far_U_proxy_over_logX14": 13.633456231372378,
+        "proxy_le_0.4": false
+      },
+      {
+        "sigma": 0.6,
+        "t": 1000000000000.0,
+        "zeta_prime_zeta_bound_schematic": 763.4733279089997,
+        "far_U_proxy_over_logX14": 54.53380913635713,
+        "proxy_le_0.4": false
+      },
+      {
+        "sigma": 0.6,
+        "t": 3000000000000.0,
+        "zeta_prime_zeta_bound_schematic": 825.3918355625545,
+        "far_U_proxy_over_logX14": 58.95655968303961,
+        "proxy_le_0.4": false
+      },
+      {
+        "sigma": 0.75,
+        "t": 1000000.0,
+        "zeta_prime_zeta_bound_schematic": 190.8683872392133,
+        "far_U_proxy_over_logX14": 13.633456231372378,
+        "proxy_le_0.4": false
+      },
+      {
+        "sigma": 0.75,
+        "t": 1000000000000.0,
+        "zeta_prime_zeta_bound_schematic": 763.4733279089997,
+        "far_U_proxy_over_logX14": 54.53380913635713,
+        "proxy_le_0.4": false
+      },
+      {
+        "sigma": 0.75,
+        "t": 3000000000000.0,
+        "zeta_prime_zeta_bound_schematic": 825.3918355625545,
+        "far_U_proxy_over_logX14": 58.95655968303961,
+        "proxy_le_0.4": false
+      },
+      {
+        "sigma": 0.9,
+        "t": 1000000.0,
+        "zeta_prime_zeta_bound_schematic": 190.8683872392133,
+        "far_U_proxy_over_logX14": 13.633456231372378,
+        "proxy_le_0.4": false
+      },
+      {
+        "sigma": 0.9,
+        "t": 1000000000000.0,
+        "zeta_prime_zeta_bound_schematic": 763.4733279089997,
+        "far_U_proxy_over_logX14": 54.53380913635713,
+        "proxy_le_0.4": false
+      },
+      {
+        "sigma": 0.9,
+        "t": 3000000000000.0,
+        "zeta_prime_zeta_bound_schematic": 825.3918355625545,
+        "far_U_proxy_over_logX14": 58.95655968303961,
+        "proxy_le_0.4": false
+      },
+      {
+        "sigma": 1.1,
+        "t": 1000000.0,
+        "zeta_prime_zeta_bound_schematic": 9.999999999999991,
+        "far_U_proxy_over_logX14": 0.7142857142857136,
+        "proxy_le_0.4": false
+      },
+      {
+        "sigma": 1.1,
+        "t": 1000000000000.0,
+        "zeta_prime_zeta_bound_schematic": 9.999999999999991,
+        "far_U_proxy_over_logX14": 0.7142857142857136,
+        "proxy_le_0.4": false
+      },
+      {
+        "sigma": 1.1,
+        "t": 3000000000000.0,
+        "zeta_prime_zeta_bound_schematic": 9.999999999999991,
+        "far_U_proxy_over_logX14": 0.7142857142857136,
+        "proxy_le_0.4": false
+      }
+    ],
+    "away_sigma_gt_1_hits": [],
+    "strip_hits": [],
+    "resolution": {
+      "kappa_p_gt_1": false,
+      "new_identity": true,
+      "links_kappa_to_GO": true,
+      "note": "MA8 succeeds as identity dual; estimate still open; correlation kappa\u2194GO strengthened"
+    },
+    "conclusion": "Far hybrid U dualized to zeta'/zeta via classical partial fractions. kappa becomes control of zeta'/zeta on paths; near zeros need gap control (GO). No p>1 kappa theorem, but the dual is no longer missing."
+  },
+  "MA6_Diophantine": {
+    "status": "MA6_EXECUTED",
+    "diophantine_object": "{gamma* log p / 2pi} mod 1",
+    "linear_independence": "log p independent over Q \u2014 density heuristics for generic gamma",
+    "barrier": {
+      "name": "Zero-Entangled Frequency Barrier (ZEFB)",
+      "statement": "The frequency gamma* is not a free Diophantine parameter; it is the ordinate of a zero of zeta. Large-value questions for sum Lambda(n) n^{-rho*} are entangled with the vanishing of the Euler product / zeta at rho*. Almost-all gamma metric theorems do not transfer to zero ordinates."
+    },
+    "what_was_checked": [
+      "Generic equidistribution heuristics \u2014 insufficient for zero ordinates",
+      "Partial sum of p^{-rho*} vs log zeta / zeta' \u2014 singular at zeros",
+      "No metric theorem found that forces limsup |S_X(rho*)|=infinity at a zero"
+    ],
+    "resolution": {
+      "Form_C": false,
+      "new_barrier_named": "ZEFB",
+      "relation_to_FFML": "ZEFB is the arithmetic dual of FFML: FFML blocks free-t methods; ZEFB blocks treating gamma* as a generic Diophantine frequency"
+    },
+    "conclusion": "MA6 does not yield Form C. Named ZEFB: zero-entangled frequency blocks generic Diophantine transfer. FFML+ZEFB together fence free-t and generic-n Diophantine attacks."
+  },
+  "MA1_Weil_smooth": {
+    "status": "MA1_EXECUTED",
+    "smoothed_form_C": {
+      "definition": "S_g(rho*) = sum_n Lambda(n) n^{-rho*} g(log n), g smooth, supp in [0,L]",
+      "Weil_dual": "expressible via sum_rho hat{g}-type transforms + archimedean",
+      "self_term": "controllable (smooth analog of self loglog)",
+      "off_diagonal": "returns zero sums \u2014 same difficulty class as pre-Thm-4.1"
+    },
+    "comparison_to_unsmoothed": {
+      "advantages": [
+        "better remainder estimates",
+        "justifies interchange",
+        "flexible weights"
+      ],
+      "does_not_give": "automatic limsup infinity for unsmoothed Form C",
+      "FFML": "still applies to free-t methods on smoothed sums",
+      "ZEFB": "still applies \u2014 frequency still gamma*"
+    },
+    "resolution": {
+      "Form_C_unsmoothed": false,
+      "smoothed_Form_C_lower_bound": false,
+      "identity_surface_recorded": true
+    },
+    "conclusion": "Weil-smoothed Form C is a legitimate identity surface for future work; no lower bound obtained; does not bypass FFML/ZEFB."
+  },
+  "remaining_MA": {
+    "MA2_Guinand_on_line": {
+      "status": "reviewed",
+      "resolution": false,
+      "note": "On-line bookkeeping alternative; does not open off-line Form C or O-TL alone"
+    },
+    "MA3_XT_optimization": {
+      "status": "executed_hygiene",
+      "resolution": false,
+      "note": "VK+EF joint uppers improve constants only; tabulated schematically in prior VK note"
+    },
+    "MA4_Landau_Ingham": {
+      "status": "reviewed",
+      "resolution": false,
+      "note": "Amplitude Omega classical; epsilon_other still Iso_H-adjacent"
+    },
+    "MA5_pair_correlation": {
+      "status": "reviewed",
+      "resolution": false,
+      "note": "Variance/typical size under PC; not limsup Form C at single rightmost zero"
+    },
+    "MA7_smoothed_overlap_MA1": {
+      "status": "merged_with_MA1",
+      "resolution": false
+    },
+    "MA9_Bombieri_Vinogradov": {
+      "status": "reviewed",
+      "resolution": false,
+      "note": "Averaged AP primes; not fixed complex rho*"
+    },
+    "MA10_OR_AND_strategy": {
+      "status": "strategic_lock",
+      "resolution": false,
+      "note": "Effort: single B_theta gate cheaper than O_TL AND; still not RH"
+    },
+    "MA11_vacuous_if_RH": {
+      "status": "conceptual_lock",
+      "resolution": false
+    },
+    "MA12_dual_lower_upper": {
+      "status": "conceptual_lock",
+      "resolution": false
+    }
+  },
+  "gates": {
+    "Form_C": {
+      "open": true,
+      "blockers": [
+        "FFML",
+        "ZEFB"
+      ]
+    },
+    "kappa_p_gt_1": {
+      "open": true,
+      "advance": "MA8 dual to zeta'/zeta; estimate open; linked to GO on approach arcs"
+    },
+    "DH": {
+      "open": true
+    },
+    "Iso_H": {
+      "open": true
+    },
+    "GO": {
+      "open": true,
+      "advance": "MA8 shows kappa on approach-to-zero arcs needs gap/distance control \u2014 GO correlation"
+    },
+    "SOC": {
+      "open": true,
+      "typical_proved": true
+    },
+    "AFE_Moll": {
+      "open": true
+    },
+    "B_theta": {
+      "open": true
+    },
+    "O_TL": {
+      "open": true
+    },
+    "RH": {
+      "open": true
+    }
+  },
+  "new_named_objects": [
+    "Far-U / logarithmic-derivative dual (MA8 identity)",
+    "ZEFB Zero-Entangled Frequency Barrier (MA6)",
+    "GO\u2194kappa correlation via distance-to-zero in zeta'/zeta (MA8)"
+  ],
+  "unconditional_resolutions": 0,
+  "scoreboard": {
+    "identities_added": 2,
+    "barriers_named": 1,
+    "gates_closed": 0,
+    "RH": "OPEN",
+    "O_TL": "OPEN",
+    "Form_C": "OPEN",
+    "kappa_p_gt_1": "OPEN"
+  },
+  "global_conclusion": "All resolution angles pursued. MA8: far U dualized to zeta'/zeta (identity win; kappa still open; links kappa to GO). MA6: ZEFB named \u2014 generic Diophantine does not transfer to zero ordinates. MA1: Weil-smoothed Form C surface recorded; no lower bound. Remaining MA: hygiene/locks only. Unconditional resolution count: 0. RH/O-TL open."
+}
