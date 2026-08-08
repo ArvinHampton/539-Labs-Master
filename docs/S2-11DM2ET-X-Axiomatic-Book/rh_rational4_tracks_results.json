@@ -1,0 +1,464 @@
+{
+  "status": "RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF",
+  "date": "2026-08-08",
+  "mandate": "Rational-4 tracks from Pass3 explore",
+  "avoid": [
+    "absolute far cosmetics",
+    "RW-only kappa as theorem",
+    "Soundararajan-as-Form-C",
+    "Levinson-as-O-Moll",
+    "residual=>RH"
+  ],
+  "T1_Form_C": {
+    "status": "T1_FORM_C_EXECUTED",
+    "definition": "limsup |sum_{n<=X} Lambda(n)/(n^{rho*} log n)| = infinity",
+    "equivalent_to": "Form B residual / B_theta off-line (signed-sum Thm 4.1)",
+    "forbidden_attacks": [
+      "Soundararajan free-t resonator claimed as Form C proof",
+      "star-phased psi-x as the engine (P1)"
+    ],
+    "tools_survey": [
+      {
+        "tool": "Dirichlet series absolute convergence",
+        "regime": "beta* > 1",
+        "gives": "S(X) converges as X->inf; limsup finite",
+        "helps_Form_C": false,
+        "note": "off-line zeros have beta*<1, so absolute conv fails \u2014 the interesting regime"
+      },
+      {
+        "tool": "Partial summation + psi-x Omega amplitude",
+        "regime": "beta* maximal",
+        "gives": "amplitude connection via Stieltjes; phases still free",
+        "helps_Form_C": "partial",
+        "note": "reopens epsilon_other / Iso_H-adjacent issues from P1"
+      },
+      {
+        "tool": "Halasz / pretentious large values",
+        "regime": "typically |sum_{n<=X} f(n)| for multiplicative f on unit circle or real",
+        "gives": "large values when f pretends to be n^{it}",
+        "helps_Form_C": false,
+        "note": "Form C has f(n) = Lambda(n) n^{-beta*}/log n * e^{-i gamma* log n}; the frequency is FIXED to gamma* of a zero \u2014 cannot choose pretentious t freely independent of the zero. Different problem."
+      },
+      {
+        "tool": "Mean-square of S(X) along a family of gamma",
+        "regime": "average over gamma",
+        "gives": "possibly large mean square",
+        "helps_Form_C": false,
+        "note": "Form C needs ONE fixed gamma* (the zero's ordinate), not average over gamma"
+      },
+      {
+        "tool": "Conditional: assume Omega of psi-x phase-aligned (old PAO)",
+        "regime": "conditional",
+        "gives": "Form C via Thm 4.1 equivalence",
+        "helps_Form_C": "conditional",
+        "note": "circular with original PAO; P1 showed star phase constant"
+      },
+      {
+        "tool": "Vinogradov-Korobov zero-free => upper bounds on S(X)",
+        "regime": "classical ZF",
+        "gives": "upper envelope |S| << X^{1-beta*} e^{-c sqrt{log X}}/log X type",
+        "helps_Form_C": false,
+        "note": "upper bound only; limsup infinity not ruled out or proved by ZF upper bounds"
+      }
+    ],
+    "obstruction": {
+      "name": "Fixed-Frequency Multiplicative Large-Value Barrier (FFML)",
+      "statement": "Large-value theorems for Dirichlet polynomials typically optimize over the frequency t or use mean values in t. Form C freezes t = gamma* to the ordinate of a rightmost zero and requires limsup_X |S_X(rho*)| = infinity. No classical theorem supplies this off the critical line without assuming input of RH-comparable strength.",
+      "allowed_conditional": {
+        "name": "FC(c)",
+        "statement": "Along a sequence X_m, |sum_{n<=X_m} Lambda(n)/(n^{rho*} log n)| >= c > 0 (or -> infinity)",
+        "status": "HYPOTHESIS \u2014 is Form C itself"
+      }
+    },
+    "zf_upper_vs_growth": [
+      {
+        "beta": 0.55,
+        "logX": 10,
+        "ZF_upper_schematic": 6.561289416202767,
+        "loglog": 2.302585092994046,
+        "upper_grows": true
+      },
+      {
+        "beta": 0.55,
+        "logX": 20,
+        "ZF_upper_schematic": 259.05855855374136,
+        "loglog": 2.995732273553991,
+        "upper_grows": true
+      },
+      {
+        "beta": 0.55,
+        "logX": 40,
+        "ZF_upper_schematic": 872104.9174694611,
+        "loglog": 3.6888794541139363,
+        "upper_grows": true
+      },
+      {
+        "beta": 0.7,
+        "logX": 10,
+        "ZF_upper_schematic": 1.4640215582175222,
+        "loglog": 2.302585092994046,
+        "upper_grows": true
+      },
+      {
+        "beta": 0.7,
+        "logX": 20,
+        "ZF_upper_schematic": 12.89776616599543,
+        "loglog": 2.995732273553991,
+        "upper_grows": true
+      },
+      {
+        "beta": 0.7,
+        "logX": 40,
+        "ZF_upper_schematic": 2161.731962458869,
+        "loglog": 3.6888794541139363,
+        "upper_grows": true
+      }
+    ],
+    "proved": [
+      "Form B <-> Form C",
+      "self loglog cancel",
+      "ZF upper bounds (not lower)"
+    ],
+    "open": "Form C itself",
+    "resolution_today": false,
+    "conclusion": "Form C remains the sharpest B_theta object. Fixed-frequency multiplicative large-value barrier (FFML) blocks classical free-t / pretentious transfer. No Form C theorem today."
+  },
+  "T2_kappa": {
+    "status": "T2_KAPPA_P_GT_1_EXECUTED",
+    "proved": {
+      "kappa_abs": 1.0,
+      "p_proved": 0.0
+    },
+    "avoided": [
+      "claiming RW kappa as theorem",
+      "c1 cosmetics as kappa substitute"
+    ],
+    "path_local_scan": [
+      {
+        "H_path": 10,
+        "c_r": 0.25,
+        "logX": 14.0,
+        "J_local": 10.166395773708693,
+        "far_L1_local_proxy": 7.293990487429848,
+        "kappa_need": 0.054839665706905294,
+        "p_need": 1.2519325846426748,
+        "p_need_lt_1": false
+      },
+      {
+        "H_path": 10,
+        "c_r": 0.25,
+        "logX": 16.0,
+        "J_local": 10.166395773708693,
+        "far_L1_local_proxy": 6.382241676501116,
+        "kappa_need": 0.06267390366503463,
+        "p_need": 1.1943533090589253,
+        "p_need_lt_1": false
+      },
+      {
+        "H_path": 10,
+        "c_r": 1.0,
+        "logX": 14.0,
+        "J_local": 8.166395773708693,
+        "far_L1_local_proxy": 5.987572438984248,
+        "kappa_need": 0.06680503727949175,
+        "p_need": 1.288543406987989,
+        "p_need_lt_1": false
+      },
+      {
+        "H_path": 10,
+        "c_r": 1.0,
+        "logX": 16.0,
+        "J_local": 8.166395773708693,
+        "far_L1_local_proxy": 5.239125884111218,
+        "kappa_need": 0.07634861403370485,
+        "p_need": 1.2249578669924994,
+        "p_need_lt_1": false
+      },
+      {
+        "H_path": 100,
+        "c_r": 0.25,
+        "logX": 14.0,
+        "J_local": 13.488323868596055,
+        "far_L1_local_proxy": 9.463903896829525,
+        "kappa_need": 0.0422658560738347,
+        "p_need": 1.2159835569980333,
+        "p_need_lt_1": false
+      },
+      {
+        "H_path": 100,
+        "c_r": 0.25,
+        "logX": 16.0,
+        "J_local": 13.488323868596055,
+        "far_L1_local_proxy": 8.280915909725834,
+        "kappa_need": 0.04830383551295394,
+        "p_need": 1.1646613417175458,
+        "p_need_lt_1": false
+      },
+      {
+        "H_path": 100,
+        "c_r": 1.0,
+        "logX": 14.0,
+        "J_local": 11.488323868596055,
+        "far_L1_local_proxy": 8.157485848383924,
+        "kappa_need": 0.049034715773272695,
+        "p_need": 1.2350748402555143,
+        "p_need_lt_1": false
+      },
+      {
+        "H_path": 100,
+        "c_r": 1.0,
+        "logX": 16.0,
+        "J_local": 11.488323868596055,
+        "far_L1_local_proxy": 7.137800117335934,
+        "kappa_need": 0.05603967516945451,
+        "p_need": 1.1803787005363395,
+        "p_need_lt_1": false
+      },
+      {
+        "H_path": 10000.0,
+        "c_r": 0.25,
+        "logX": 14.0,
+        "J_local": 20.132180058370782,
+        "far_L1_local_proxy": 13.80373071562888,
+        "kappa_need": 0.028977673372540615,
+        "p_need": 1.1794979150519915,
+        "p_need_lt_1": false
+      },
+      {
+        "H_path": 10000.0,
+        "c_r": 0.25,
+        "logX": 16.0,
+        "J_local": 20.132180058370782,
+        "far_L1_local_proxy": 12.07826437617527,
+        "kappa_need": 0.03311734099718928,
+        "p_need": 1.1350218387492017,
+        "p_need_lt_1": false
+      },
+      {
+        "H_path": 10000.0,
+        "c_r": 1.0,
+        "logX": 14.0,
+        "J_local": 18.132180058370782,
+        "far_L1_local_proxy": 12.49731266718328,
+        "kappa_need": 0.03200688105134481,
+        "p_need": 1.187775928093607,
+        "p_need_lt_1": false
+      },
+      {
+        "H_path": 10000.0,
+        "c_r": 1.0,
+        "logX": 16.0,
+        "J_local": 18.132180058370782,
+        "far_L1_local_proxy": 10.93514858378537,
+        "kappa_need": 0.036579292630108354,
+        "p_need": 1.1416938859675214,
+        "p_need_lt_1": false
+      },
+      {
+        "H_path": 1000000.0,
+        "c_r": 0.25,
+        "logX": 14.0,
+        "J_local": 26.776036248145505,
+        "far_L1_local_proxy": 18.143557534428236,
+        "kappa_need": 0.022046393009804256,
+        "p_need": 1.1603339260408507,
+        "p_need_lt_1": false
+      },
+      {
+        "H_path": 1000000.0,
+        "c_r": 0.25,
+        "logX": 16.0,
+        "J_local": 26.776036248145505,
+        "far_L1_local_proxy": 15.875612842624706,
+        "kappa_need": 0.02519587772549058,
+        "p_need": 1.1197161023459548,
+        "p_need_lt_1": false
+      },
+      {
+        "H_path": 1000000.0,
+        "c_r": 1.0,
+        "logX": 14.0,
+        "J_local": 24.776036248145505,
+        "far_L1_local_proxy": 16.837139485982636,
+        "kappa_need": 0.023757004586973374,
+        "p_need": 1.1651156638937221,
+        "p_need_lt_1": false
+      },
+      {
+        "H_path": 1000000.0,
+        "c_r": 1.0,
+        "logX": 16.0,
+        "J_local": 24.776036248145505,
+        "far_L1_local_proxy": 14.732497050234807,
+        "kappa_need": 0.02715086238511243,
+        "p_need": 1.1235155039663378,
+        "p_need_lt_1": false
+      },
+      {
+        "H_path": 100000000.0,
+        "c_r": 0.25,
+        "logX": 14.0,
+        "J_local": 33.41989243792023,
+        "far_L1_local_proxy": 22.483384353227592,
+        "kappa_need": 0.017790915892187655,
+        "p_need": 1.1481600379355739,
+        "p_need_lt_1": false
+      },
+      {
+        "H_path": 100000000.0,
+        "c_r": 0.25,
+        "logX": 16.0,
+        "J_local": 33.41989243792023,
+        "far_L1_local_proxy": 19.672961309074143,
+        "kappa_need": 0.02033247530535732,
+        "p_need": 1.1101077053254342,
+        "p_need_lt_1": false
+      },
+      {
+        "H_path": 100000000.0,
+        "c_r": 1.0,
+        "logX": 14.0,
+        "J_local": 31.41989243792023,
+        "far_L1_local_proxy": 21.17696630478199,
+        "kappa_need": 0.018888446732319524,
+        "p_need": 1.1513480830191984,
+        "p_need_lt_1": false
+      },
+      {
+        "H_path": 100000000.0,
+        "c_r": 1.0,
+        "logX": 16.0,
+        "J_local": 31.41989243792023,
+        "far_L1_local_proxy": 18.52984551668424,
+        "kappa_need": 0.021586796265508027,
+        "p_need": 1.1126146037482032,
+        "p_need_lt_1": false
+      }
+    ],
+    "absolute_enough_local": [],
+    "reading_local": "Restricting to path-local height H reduces J but far_L1 still >> 0.4 for realistic H; absolute still fails. Does not produce p>1 theorem.",
+    "conditional": {
+      "name": "Kappa(p0)",
+      "statement": "far_signed <= J^{-p0} far_abs on M1.3 paths for some p0>1",
+      "status": "HYPOTHESIS \u2014 open for all p0>0 beyond absolute"
+    },
+    "unconditional_p_gt_1": false,
+    "resolution_today": false,
+    "conclusion": "No kappa bound with p>1 obtained. Path-local truncation does not rescue absolute majorants. Unconditional p_proved = 0 remains."
+  },
+  "T3_DH_IsoH": {
+    "status": "T3_DH_OR_ISOH_EXECUTED",
+    "DH": {
+      "definition": "N(beta*, T) = O((log T)^C) for some C, beta* in (1/2,1)",
+      "classical_ceiling": [
+        {
+          "sigma": 0.55,
+          "T_exponent_Ingham_shape": 0.9310344827586207,
+          "polylog": false
+        },
+        {
+          "sigma": 0.6,
+          "T_exponent_Ingham_shape": 0.8571428571428573,
+          "polylog": false
+        },
+        {
+          "sigma": 0.7,
+          "T_exponent_Ingham_shape": 0.6923076923076924,
+          "polylog": false
+        },
+        {
+          "sigma": 0.8,
+          "T_exponent_Ingham_shape": 0.4999999999999999,
+          "polylog": false
+        },
+        {
+          "sigma": 0.9,
+          "T_exponent_Ingham_shape": 0.27272727272727265,
+          "polylog": false
+        },
+        {
+          "sigma": 0.95,
+          "T_exponent_Ingham_shape": 0.142857142857143,
+          "polylog": false
+        },
+        {
+          "sigma": 0.99,
+          "T_exponent_Ingham_shape": 0.02970297029702973,
+          "polylog": false
+        }
+      ],
+      "near_1": "log-power bounds in thin edge only (KLN/Bellotti-type)",
+      "moderate_sigma_polylog": false,
+      "implication": "(RM)+DH => polylog A => Mass-with-A => B_theta (proved chain)",
+      "resolution_today": false
+    },
+    "Iso_H": {
+      "definition": "only {rho*, bar rho*} on Re=beta* (up to EF truncation)",
+      "tools_fail": [
+        "point isolation (finite height only)",
+        "FE (conjugate only)",
+        "Ivic multiplicity (m not ordinate count)",
+        "zero density (bulk not line)",
+        "Maynard-Pratt half-isolation (local/rare)",
+        "Hypothesis F (conditional, not Iso_H)"
+      ],
+      "implication": "(RM)+Iso_H => B_theta (proved)",
+      "new_technology": false,
+      "resolution_today": false
+    },
+    "coupling_to_Form_C": {
+      "epsilon_other": "Iso_H controls same-abscissa contamination for amplitude Omega path",
+      "Form_C_prime_side": "does not require Iso_H formally (signed residual already reduced), but hard analytically",
+      "density_not_isolation": "DEAD EDGE \u2014 confirmed"
+    },
+    "resolution_today": false,
+    "conclusion": "Neither DH at moderate sigma nor Iso_H is available. Alternate B_theta gates remain open. Proved implications intact. Density does not imply Iso_H."
+  },
+  "T4_OTL_arms": {
+    "status": "T4_OTL_ARMS_EXECUTED",
+    "GO": {
+      "definition": "infinitely many t_n with hybrid Omega scale AND gap >= theta * mean_gap",
+      "classical": "mean gaps yes; hybrid Omega on-line fixed X programme-accepted; JOINT no",
+      "resolution_today": false
+    },
+    "SOC": {
+      "on_line_typical": "PROVED (sqrt log log)",
+      "on_line_strong_model": "ACCEPTED for fixed X (Im D_X)",
+      "strong_loglog_OPC_Core": "OPEN",
+      "off_line_transfer": "OPEN (needs path + M1.2; FE bookkeeping only hygiene)",
+      "resolution_today": false
+    },
+    "AFE_Moll": {
+      "surface": "AFE dual sums F + chi G + R",
+      "forbidden": "Levinson/Conrey zero-count mollifiers",
+      "construction": "not found",
+      "objective": "amplify Im log P_X / A_X at O-TL locations",
+      "resolution_today": false
+    },
+    "joint_for_O_TL": {
+      "need_all": [
+        "kappa (T2)",
+        "GO",
+        "SOC strong+transfer",
+        "AFE-Moll"
+      ],
+      "all_open": true
+    },
+    "resolution_today": false,
+    "conclusion": "All three O-TL arms (GO, SOC, AFE-Moll) remain open; with kappa (T2) the AND-cut is fully open. No arm closed today."
+  },
+  "scoreboard": {
+    "T1_Form_C": false,
+    "T2_kappa_p_gt_1": false,
+    "T3_DH": false,
+    "T3_Iso_H": false,
+    "T4_GO": false,
+    "T4_SOC": false,
+    "T4_AFE_Moll": false,
+    "B_theta": false,
+    "O_TL": false,
+    "RH": false,
+    "unconditional_resolution_count": 0
+  },
+  "global_conclusion": "Rational-4 executed under avoid-list discipline. Form C blocked by fixed-frequency multiplicative large-value barrier; kappa p>1 not obtained; DH/Iso_H ceilings unchanged; GO/SOC/AFE-Moll all open. Unconditional resolution count still zero."
+}
