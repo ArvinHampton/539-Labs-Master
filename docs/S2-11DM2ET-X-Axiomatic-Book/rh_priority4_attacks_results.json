@@ -1,0 +1,318 @@
+{
+  "status": "RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF",
+  "date": "2026-08-08",
+  "mandate": "Priority 4 attacks from resonance/Selberg explore",
+  "zla": true,
+  "does_not_prove": [
+    "PAO",
+    "kappa p>1",
+    "O-Moll",
+    "O-TL",
+    "B_theta",
+    "RH"
+  ],
+  "P1_PAO_direct": {
+    "status": "P1_PAO_DIRECT_EXECUTED",
+    "recast": {
+      "wrong_target": "Phasing psi-x against e^{-i gamma* log x} makes the star EF term CONSTANT (-1/rho*), not oscillatory. Star alone cannot produce limsup +infty of that real part; Self loglog already cancelled the pure star loglog in S_X.",
+      "correct_PAO_core": "After star removal, need phase-aligned lower bound on the contribution of (i) other zeros, and/or (ii) the prime side residual int (psi-x)_* x^{-rho*-1}/log x, equivalent to large values of sum_{n<=X} Lambda(n) n^{-rho*}/log n (Form C).",
+      "Form_C": "limsup |sum_{n<=X} Lambda(n)/(n^{rho*} log n)| = infinity",
+      "Form_C_is": "exactly the Dirichlet polynomial S_X at rho* (up to notation)"
+    },
+    "epsilon_other": {
+      "definition": "epsilon_other = relative contamination of EF main term by zeros with beta >= beta* other than rho*, bar rho*",
+      "under_Iso_H": "epsilon_other from same-abscissa vanishes (only conj); left zeros smaller by X^{-delta}",
+      "without_Iso_H": "same-abscissa competitors can cancel the main Omega coefficient",
+      "control_status": "Unconditional control of epsilon_other for arbitrary rightmost zero is essentially Iso_H-adjacent \u2014 not available. Conditional: assume Iso_H or N_line(beta*,T)<=2 => epsilon_same_abscissa = 0 (up to conj).",
+      "lemma_template": {
+        "name": "EO(Iso_H)",
+        "statement": "Under Iso_H at beta*, epsilon_other from Re=beta* is O(contribution of bar rho* only), controlled.",
+        "status": "conditional on Iso_H \u2014 not a new Iso_H proof"
+      }
+    },
+    "single_gamma_lock": {
+      "object": "sum_n Lambda(n) n^{-beta*} n^{-i gamma*} / log n = sum Lambda(n)/(n^{beta*} log n) e^{-i gamma* log n}",
+      "mechanism": "align prime angles {gamma* log p / 2pi} mod 1 \u2014 but gamma* fixed, free variable is which primes/n or the cutoff X",
+      "diophantine": "For fixed gamma*, the sequence {gamma* log p / 2pi} is like a Kronecker sequence in p. Unlike free t, we cannot choose t to align all log p. We choose X or a set of n. This is multiplicative resonance in the n-aspect at FIXED frequency \u2014 harder than t-aspect.",
+      "status": "OPEN \u2014 no classical theorem gives limsup |S_X(rho*)|=infty off the line without RH-scale input"
+    },
+    "proved_pieces": [
+      "Self loglog cancel (star discrete contribution handled)",
+      "Form C equivalence to residual Form B under signed-sum Thm 4.1",
+      "Classical amplitude Omega of psi-x if a zero exists at beta*"
+    ],
+    "open_pieces": [
+      "epsilon_other unconditional control",
+      "single-frequency prime-side phase lock at fixed gamma*",
+      "PAO(c,delta) as originally named"
+    ],
+    "resolution_today": false,
+    "conclusion": "PAO direct recast: after star cancellation, the gap is Form C (Dirichlet poly at rho*), i.e. large values of a multiplicative sum at FIXED complex frequency \u2014 not free-t resonance. epsilon_other control is Iso_H-adjacent. No PAO theorem today."
+  },
+  "P2_kappa_GHK_U": {
+    "status": "P2_KAPPA_GHK_U_EXECUTED",
+    "proved": {
+      "absolute_kappa": 1.0,
+      "p_proved": 0.0,
+      "E1": "|U| <= 1/(|s-rho'| log X) for Re(s-rho')log X >= 0 model"
+    },
+    "attempted": {
+      "mean_square_proxy": "L2-type size far_L2 ~ C_U/logX * sqrt(2 dens / r) \u2014 NOT a uniform path bound. Would give effective p ~ 1.5-2 in scans but is an L2 heuristic/proxy only.",
+      "rows": [
+        {
+          "c_r": 0.25,
+          "logX": 12.0,
+          "J": 49.292567318190834,
+          "far_L1": 38.32681862750404,
+          "far_L2_proxy": 2.7014933176698492,
+          "kappa_L2_proxy": 0.07048571768832405,
+          "p_eff_L2": 0.6804770231328864,
+          "beats_p_1": false,
+          "far_L2_le_0.4": false
+        },
+        {
+          "c_r": 0.25,
+          "logX": 14.0,
+          "J": 49.292567318190834,
+          "far_L1": 32.85155882357489,
+          "far_L2_proxy": 2.315565700859871,
+          "kappa_L2_proxy": 0.07048571768832405,
+          "p_eff_L2": 0.6804770231328864,
+          "beats_p_1": false,
+          "far_L2_le_0.4": false
+        },
+        {
+          "c_r": 0.25,
+          "logX": 16.0,
+          "J": 49.292567318190834,
+          "far_L1": 28.74511397062803,
+          "far_L2_proxy": 2.026119988252387,
+          "kappa_L2_proxy": 0.07048571768832405,
+          "p_eff_L2": 0.6804770231328864,
+          "beats_p_1": false,
+          "far_L2_le_0.4": false
+        },
+        {
+          "c_r": 0.25,
+          "logX": 18.0,
+          "J": 49.292567318190834,
+          "far_L1": 25.551212418336025,
+          "far_L2_proxy": 1.800995545113233,
+          "kappa_L2_proxy": 0.07048571768832405,
+          "p_eff_L2": 0.6804770231328864,
+          "beats_p_1": false,
+          "far_L2_le_0.4": false
+        },
+        {
+          "c_r": 1.0,
+          "logX": 12.0,
+          "J": 47.292567318190834,
+          "far_L1": 36.802664237650845,
+          "far_L2_proxy": 1.3507466588349246,
+          "kappa_L2_proxy": 0.03670241507822816,
+          "p_eff_L2": 0.857004687260693,
+          "beats_p_1": false,
+          "far_L2_le_0.4": false
+        },
+        {
+          "c_r": 1.0,
+          "logX": 14.0,
+          "J": 47.292567318190834,
+          "far_L1": 31.545140775129294,
+          "far_L2_proxy": 1.1577828504299355,
+          "kappa_L2_proxy": 0.03670241507822816,
+          "p_eff_L2": 0.857004687260693,
+          "beats_p_1": false,
+          "far_L2_le_0.4": false
+        },
+        {
+          "c_r": 1.0,
+          "logX": 16.0,
+          "J": 47.292567318190834,
+          "far_L1": 27.60199817823813,
+          "far_L2_proxy": 1.0130599941261935,
+          "kappa_L2_proxy": 0.03670241507822817,
+          "p_eff_L2": 0.857004687260693,
+          "beats_p_1": false,
+          "far_L2_le_0.4": false
+        },
+        {
+          "c_r": 1.0,
+          "logX": 18.0,
+          "J": 47.292567318190834,
+          "far_L1": 24.535109491767226,
+          "far_L2_proxy": 0.9004977725566164,
+          "kappa_L2_proxy": 0.03670241507822817,
+          "p_eff_L2": 0.857004687260693,
+          "beats_p_1": false,
+          "far_L2_le_0.4": false
+        },
+        {
+          "c_r": 5.0,
+          "logX": 12.0,
+          "J": 44.97063922330347,
+          "far_L1": 35.033175788277816,
+          "far_L2_proxy": 0.6040722699071217,
+          "kappa_L2_proxy": 0.017242863551903444,
+          "p_eff_L2": 1.066827760693253,
+          "beats_p_1": true,
+          "far_L2_le_0.4": false
+        },
+        {
+          "c_r": 5.0,
+          "logX": 14.0,
+          "J": 44.97063922330347,
+          "far_L1": 30.028436389952414,
+          "far_L2_proxy": 0.5177762313489614,
+          "kappa_L2_proxy": 0.01724286355190344,
+          "p_eff_L2": 1.066827760693253,
+          "beats_p_1": true,
+          "far_L2_le_0.4": false
+        },
+        {
+          "c_r": 5.0,
+          "logX": 16.0,
+          "J": 44.97063922330347,
+          "far_L1": 26.274881841208362,
+          "far_L2_proxy": 0.4530542024303413,
+          "kappa_L2_proxy": 0.017242863551903444,
+          "p_eff_L2": 1.066827760693253,
+          "beats_p_1": true,
+          "far_L2_le_0.4": false
+        },
+        {
+          "c_r": 5.0,
+          "logX": 18.0,
+          "J": 44.97063922330347,
+          "far_L1": 23.355450525518545,
+          "far_L2_proxy": 0.40271484660474777,
+          "kappa_L2_proxy": 0.01724286355190344,
+          "p_eff_L2": 1.066827760693253,
+          "beats_p_1": true,
+          "far_L2_le_0.4": false
+        }
+      ],
+      "best_p_eff_L2": {
+        "c_r": 5.0,
+        "logX": 12.0,
+        "J": 44.97063922330347,
+        "far_L1": 35.033175788277816,
+        "far_L2_proxy": 0.6040722699071217,
+        "kappa_L2_proxy": 0.017242863551903444,
+        "p_eff_L2": 1.066827760693253,
+        "beats_p_1": true,
+        "far_L2_le_0.4": false
+      },
+      "L2_proxy_hits_0.4": []
+    },
+    "unconditional_p_gt_1": false,
+    "conditional_templates": [
+      {
+        "name": "Kappa_L2_path_avg",
+        "statement": "Average over path parameter s in a family of |far_signed|^2 << (far_L2)^2",
+        "gives": "average-case M1.2, not uniform O-M1.2",
+        "status": "not proved; weaker than O-M1.2"
+      },
+      {
+        "name": "Kappa_random_phase",
+        "statement": "If far zero phases are equidistributed along the path family",
+        "gives": "kappa ~ J^{-1/2} in probability \u2014 still p=0.5 < 1.12 bar",
+        "status": "heuristic; insufficient for joint window even if true"
+      }
+    ],
+    "resolution_today": false,
+    "conclusion": "No unconditional kappa bound with p>1. Absolute p=0 only. L2 proxies look numerically friendly but do not yield uniform M1.2. Random-phase p=1/2 remains below the bar. Kappa theorem still OPEN."
+  },
+  "P3_Omoll_AFE": {
+    "status": "P3_OMOLL_AFE_DESIGN_EXECUTED",
+    "forbidden": [
+      "Levinson mollifier for zeros on the line",
+      "Conrey long mollifiers for proportion on the line",
+      "Any mu-polynomial designed only to detect horizontal zeros"
+    ],
+    "AFE_surface": {
+      "form": "zeta(s) = sum_{n<=u} n^{-s} + chi(s) sum_{n<=v} n^{s-1} + R_AFE(s;u,v)",
+      "with": "uv ~ t/(2pi) on the critical line; off-line parameters free in a range",
+      "dual": "two Dirichlet polynomials F(s), G(1-s) linked by chi(s)"
+    },
+    "O_Moll_target_functional": {
+      "want": "boost |A_X(s)| or |theta_X(s)| = |Im log P_X(s)| at s near maximal-abscissa zeros",
+      "not": "|zeta psi| second moment on Re=1/2+a/log T"
+    },
+    "design_template_AFE_Moll": {
+      "name": "AFE-Moll skeleton (NOT a theorem)",
+      "step1": "Write hybrid phase theta_X via GHK: theta_X = arg zeta - arg Z_X - Im E",
+      "step2": "Replace arg zeta by arg(F + chi G + R) from AFE at the evaluation path",
+      "step3": "Choose dual lengths (u,v) and coefficients to amplify Im log of the partial Euler piece, not |F+chi G|",
+      "step4": "Prove that the dual G-term and R do not destroy the phase lower bound",
+      "blocker": "No classical optimization is known for Im log P_X. Amplifying |zeta| or zero-detection is the wrong objective functional. Step 3-4 are open design.",
+      "status": "TEMPLATE ONLY \u2014 construction not found"
+    },
+    "what_was_checked": [
+      "No Levinson/Conrey object matches O-Moll (N3)",
+      "AFE is the only classical dual-sum surface scoring +1 infrastructure",
+      "Resonance resonators maximize |I2|^2/I1 for |zeta|, not arg P_X"
+    ],
+    "resolution_today": false,
+    "conclusion": "O-Moll from AFE: skeleton written; no coefficients found that are proved to boost A_X/theta_X at O-TL locations. Explicitly excludes Levinson-type mollifiers. OPEN."
+  },
+  "P4_FE_path": {
+    "status": "P4_FE_PATH_BOOKKEEPING_EXECUTED",
+    "identity": {
+      "functional": "zeta(s) = chi(s) zeta(1-s)",
+      "arg_form": "arg zeta(s) = arg chi(s) + arg zeta(1-s) (mod 2pi; continuous lift on paths avoiding zeros)",
+      "chi_smooth": "arg chi(s) is elementary + Stirling for Gamma \u2014 controlled on vertical/horizontal paths away from poles"
+    },
+    "bookkeeping_lemmas_template": [
+      {
+        "name": "FE-Arg-Transfer",
+        "statement": "Let gamma be a path from 1/2+it to sigma+it (sigma>1/2) avoiding zeros. Let gamma' be the reflected path from 1/2-it to (1-sigma)-it (or conjugate-reflected as needed). Then Delta_gamma arg zeta = Delta_gamma arg chi + Delta_{gamma_refl} arg zeta, with arg chi explicitly estimable.",
+        "status": "standard FE consequence \u2014 bookkeeping, not a phase lower bound engine"
+      },
+      {
+        "name": "FE-Hybrid-Split",
+        "statement": "Under GHK on both s and 1-s (when applicable), theta_X(s) = arg zeta(s) - arg Z_X(s) - Im E(s) relates to quantities at 1-s plus archimedean/chi phases and dual partial products.",
+        "status": "schematic identity surface; full continuous-branch writeup open as hygiene"
+      }
+    ],
+    "what_this_does": [
+      "Moves bounds between sigma and 1-sigma",
+      "Controls archimedean phase along horizontal paths via Stirling",
+      "Clarifies that large phase on the left of 1/2 dualizes to the right"
+    ],
+    "what_this_does_NOT": [
+      "Create loglog phase at maximal abscissa from nothing",
+      "Prove GO (gap+Omega)",
+      "Prove Iso_H",
+      "Replace monodromy (already withdrawn)",
+      "Close O-M1.3bis alone"
+    ],
+    "off_line_transfer_use": {
+      "if_have": "strong on-line Omega at 1/2+it_n (SOC on-line)",
+      "FE_gives": "related phase information at 1/2-it_n and via paths to 1-sigma",
+      "still_need": "a path from 1/2+it_n toward beta*+i gamma* with controlled Phi (GO/tubes) and M1.2",
+      "status": "bookkeeping layer only"
+    },
+    "resolution_today": false,
+    "conclusion": "FE path bookkeeping recorded as transfer identities for arg zeta / hybrid split. Useful hygiene for off-line continuation; does not by itself close O-M1.3bis or O-TL."
+  },
+  "scoreboard": {
+    "P1": {
+      "resolved": false,
+      "advance": "recast to Form C; epsilon_other Iso_H-adjacent"
+    },
+    "P2": {
+      "resolved": false,
+      "advance": "L2 proxy only; unconditional p>1 false"
+    },
+    "P3": {
+      "resolved": false,
+      "advance": "AFE-Moll skeleton; Levinson excluded"
+    },
+    "P4": {
+      "resolved": false,
+      "advance": "FE-Arg-Transfer bookkeeping written"
+    }
+  },
+  "global_conclusion": "All four priorities executed: PAO recast to fixed-frequency Form C with Iso_H-adjacent epsilon_other; no kappa p>1 theorem (L2 proxy only); AFE-Moll template only; FE path bookkeeping only. Zero tip closures. RH/O-TL open."
+}
