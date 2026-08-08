@@ -1,0 +1,493 @@
+{
+  "status": "RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF",
+  "date": "2026-08-08",
+  "mandate": "Vinogradov-Korobov bounds; explicit formula techniques; full-programme missed angles/patterns/correlations",
+  "zla": true,
+  "does_not_prove": [
+    "RH",
+    "Form C",
+    "B_theta",
+    "O-TL",
+    "kappa p>1"
+  ],
+  "VK": {
+    "zero_free_shape": "sigma >= 1 - c/((log|t|)^{2/3}(loglog|t|)^{1/3})",
+    "PNT_error_schematic": "exp(-c (log x)^{3/5}/(loglog x)^{1/5}) type (VK-quality)",
+    "residual_upper_rows_sample": [
+      {
+        "logX": 10,
+        "beta": 0.55,
+        "error_type": "classical",
+        "psi_x_relative": 0.7288934141100245,
+        "residual_upper_schematic": 6.5612894162027695,
+        "grows_vs_loglog": true
+      },
+      {
+        "logX": 10,
+        "beta": 0.55,
+        "error_type": "VK",
+        "psi_x_relative": 0.7139492990423564,
+        "residual_upper_schematic": 6.42676677938113,
+        "grows_vs_loglog": true
+      },
+      {
+        "logX": 10,
+        "beta": 0.7,
+        "error_type": "classical",
+        "psi_x_relative": 0.7288934141100245,
+        "residual_upper_schematic": 1.4640215582175222,
+        "grows_vs_loglog": false
+      },
+      {
+        "logX": 10,
+        "beta": 0.7,
+        "error_type": "VK",
+        "psi_x_relative": 0.7139492990423564,
+        "residual_upper_schematic": 1.4340055007199208,
+        "grows_vs_loglog": false
+      },
+      {
+        "logX": 10,
+        "beta": 0.9,
+        "error_type": "classical",
+        "psi_x_relative": 0.7288934141100245,
+        "residual_upper_schematic": 0.1981337722458753,
+        "grows_vs_loglog": false
+      },
+      {
+        "logX": 10,
+        "beta": 0.9,
+        "error_type": "VK",
+        "psi_x_relative": 0.7139492990423564,
+        "residual_upper_schematic": 0.194071540602791,
+        "grows_vs_loglog": false
+      },
+      {
+        "logX": 20,
+        "beta": 0.55,
+        "error_type": "classical",
+        "psi_x_relative": 0.6394073191618971,
+        "residual_upper_schematic": 259.0585585537416,
+        "grows_vs_loglog": true
+      },
+      {
+        "logX": 20,
+        "beta": 0.55,
+        "error_type": "VK",
+        "psi_x_relative": 0.6159888925384669,
+        "residual_upper_schematic": 249.57048473467057,
+        "grows_vs_loglog": true
+      }
+    ],
+    "feeds": [
+      "stronger residual UPPER bounds",
+      "tighter E_X when combined with EF",
+      "edge near sigma=1"
+    ],
+    "does_not_feed": [
+      "Form C lower bound",
+      "dissolve FFML",
+      "Iso_H",
+      "O-TL"
+    ],
+    "resolution_today": false
+  },
+  "explicit_formula": {
+    "forms_in_programme": [
+      "truncated von Mangoldt EF: psi(x)=x-sum_{|gamma|<=T} x^rho/rho - log(2pi)-...+R(x,T)",
+      "Stieltjes form of S_X (B_theta master)",
+      "signed residual after interchange (Thm 4.1)",
+      "GHK hybrid as Euler-Hadamard factorization (related, not classical EF)",
+      "Weil/Guinand test-function form: UNDER-USED (MA1)"
+    ],
+    "parameter_tension_sample": [
+      {
+        "logX": 10,
+        "beta": 0.6,
+        "T_as_X_power": 0.5,
+        "R_psi_bound": 2236.1973865386494,
+        "E_X_schematic": 0.5518191617571636,
+        "E_small": false
+      },
+      {
+        "logX": 10,
+        "beta": 0.6,
+        "T_as_X_power": 1.0,
+        "R_psi_bound": 30.0,
+        "E_X_schematic": 0.004957504353332717,
+        "E_small": true
+      },
+      {
+        "logX": 10,
+        "beta": 0.6,
+        "T_as_X_power": 1.5,
+        "R_psi_bound": 10.168448674977137,
+        "E_X_schematic": 4.175425197561415e-05,
+        "E_small": true
+      },
+      {
+        "logX": 10,
+        "beta": 0.6,
+        "T_as_X_power": 2.0,
+        "R_psi_bound": 10.001361997892875,
+        "E_X_schematic": 3.376055241577774e-07,
+        "E_small": true
+      },
+      {
+        "logX": 10,
+        "beta": 0.8,
+        "T_as_X_power": 0.5,
+        "R_psi_bound": 2236.1973865386494,
+        "E_X_schematic": 0.07468060255179587,
+        "E_small": true
+      },
+      {
+        "logX": 10,
+        "beta": 0.8,
+        "T_as_X_power": 1.0,
+        "R_psi_bound": 30.0,
+        "E_X_schematic": 0.0006709252558050233,
+        "E_small": true
+      },
+      {
+        "logX": 10,
+        "beta": 0.8,
+        "T_as_X_power": 1.5,
+        "R_psi_bound": 10.168448674977137,
+        "E_X_schematic": 5.650823517452632e-06,
+        "E_small": true
+      },
+      {
+        "logX": 10,
+        "beta": 0.8,
+        "T_as_X_power": 2.0,
+        "R_psi_bound": 10.001361997892875,
+        "E_X_schematic": 4.568993923413786e-08,
+        "E_small": true
+      }
+    ],
+    "proved_uses": [
+      "eliminate signed zero sum in favor of int(psi-x)",
+      "self loglog cancel",
+      "EF remainder control with T=T(X)"
+    ],
+    "open_uses": [
+      "Form C lower bound",
+      "dualizing far hybrid U-sum for kappa (MA8)",
+      "smoothed Form C (MA7)"
+    ]
+  },
+  "correlations": [
+    {
+      "a": "Form_C",
+      "b": "B_theta",
+      "link": "equivalent via signed residual Thm 4.1",
+      "strength": 1,
+      "type": "proved_equiv"
+    },
+    {
+      "a": "Form_C",
+      "b": "EF",
+      "link": "EF is the bridge psi-x <-> zeros; Form C is prime side",
+      "strength": 1,
+      "type": "proved_bridge"
+    },
+    {
+      "a": "Form_C",
+      "b": "ZF_VK",
+      "link": "VK improves UPPER bound only; no lower bound",
+      "strength": 0,
+      "type": "upper_only"
+    },
+    {
+      "a": "Form_C",
+      "b": "FFML",
+      "link": "method barrier for free-t large values",
+      "strength": 1,
+      "type": "barrier"
+    },
+    {
+      "a": "Form_C",
+      "b": "Iso_H",
+      "link": "epsilon_other Iso_H-adjacent for amplitude path; Form C prime side formally independent",
+      "strength": 0,
+      "type": "partial_coupling"
+    },
+    {
+      "a": "Form_C",
+      "b": "kappa",
+      "link": "dual lower vs upper phase demands",
+      "strength": -1,
+      "type": "dual"
+    },
+    {
+      "a": "kappa",
+      "b": "E1",
+      "link": "E1 sets C_U=1 absolute; not p>1",
+      "strength": 1,
+      "type": "constant"
+    },
+    {
+      "a": "kappa",
+      "b": "EF",
+      "link": "far U-sums are hybrid/EF side, not prime Form C",
+      "strength": 0,
+      "type": "adjacent"
+    },
+    {
+      "a": "Iso_H",
+      "b": "DH",
+      "link": "both B_theta OR-gates; density does NOT imply isolation",
+      "strength": 0,
+      "type": "dead_edge"
+    },
+    {
+      "a": "Iso_H",
+      "b": "B_theta",
+      "link": "(RM)+Iso_H => B_theta proved",
+      "strength": 1,
+      "type": "proved_imp"
+    },
+    {
+      "a": "DH",
+      "b": "B_theta",
+      "link": "(RM)+DH => Mass-with-A => B_theta",
+      "strength": 1,
+      "type": "proved_imp"
+    },
+    {
+      "a": "DH",
+      "b": "ZF_VK",
+      "link": "ZF is free region near 1; DH is polylog count at fixed beta*",
+      "strength": 0,
+      "type": "different"
+    },
+    {
+      "a": "GO",
+      "b": "SOC",
+      "link": "both need large hybrid times; GO adds gap constraint",
+      "strength": 1,
+      "type": "correlated_open"
+    },
+    {
+      "a": "GO",
+      "b": "O_M1.3bis",
+      "link": "tube path route",
+      "strength": 1,
+      "type": "conditional_route"
+    },
+    {
+      "a": "SOC",
+      "b": "typical_Omega",
+      "link": "typical proved; strong open",
+      "strength": 1,
+      "type": "partial"
+    },
+    {
+      "a": "SOC",
+      "b": "EF",
+      "link": "hybrid identity peels to OPC-Core",
+      "strength": 1,
+      "type": "bookkeeping"
+    },
+    {
+      "a": "AFE_Moll",
+      "b": "O_TL",
+      "link": "AND arm",
+      "strength": 1,
+      "type": "obligation"
+    },
+    {
+      "a": "O_TL",
+      "b": "RH",
+      "link": "programme primary",
+      "strength": 1,
+      "type": "programme"
+    },
+    {
+      "a": "B_theta",
+      "b": "RH",
+      "link": "related off-line engine; not proved implication",
+      "strength": 0,
+      "type": "related_not_imp"
+    },
+    {
+      "a": "residual_A",
+      "b": "RH",
+      "link": "ZLA forbidden",
+      "strength": -1,
+      "type": "dead"
+    },
+    {
+      "a": "ZF_VK",
+      "b": "EF",
+      "link": "VK improves psi-x in EF error terms",
+      "strength": 1,
+      "type": "classical_pair"
+    },
+    {
+      "a": "EF",
+      "b": "kappa",
+      "link": "T-truncation vs far-sum bookkeeping tension",
+      "strength": 0,
+      "type": "parameter_tension"
+    }
+  ],
+  "missed_angles": [
+    {
+      "id": "MA1_Weil_explicit_formula",
+      "angle": "Weil explicit formula / test-function form (smooth weights on primes and zeros)",
+      "status": "under-used in programme notes",
+      "potential": "Smooth test functions could rephrase Form C as a dual zero sum with better decay, or produce averaged Form C. Does NOT automatically beat FFML for fixed rho*.",
+      "risk": "averaging reintroduces free-frequency methods",
+      "priority": "medium"
+    },
+    {
+      "id": "MA2_Guinand_Weil_on_line",
+      "angle": "Guinand\u2013Weil explicit formula specialized on the critical line",
+      "status": "classical; programme focuses off-line B_theta",
+      "potential": "on-line SOC bookkeeping alternative to GHK hybrid",
+      "risk": "does not create off-line Form C",
+      "priority": "low"
+    },
+    {
+      "id": "MA3_VK_plus_EF_parameter_optimization",
+      "angle": "Joint optimization of (X,T) under VK-quality psi-x and EF remainder simultaneously",
+      "status": "partially implicit in signed-sum \u00a75; not fully tabulated",
+      "potential": "cleaner unconditional UPPER bounds on S_X; still not Form C lower bound",
+      "risk": "confusing better uppers with progress on limsup infinity",
+      "priority": "medium for hygiene; low for resolution"
+    },
+    {
+      "id": "MA4_Landau_Ingham_Omega_methods",
+      "angle": "Classical Omega theorems from singularities of Dirichlet integrals",
+      "status": "cited as amplitude Omega source; not fully re-derived in programme",
+      "potential": "precision on epsilon_other coefficients under multiplicity assumptions",
+      "risk": "still not fixed-frequency Form C",
+      "priority": "medium"
+    },
+    {
+      "id": "MA5_two_point_correlations_Form_C",
+      "angle": "Pair correlation of zeros feeding variance of S(X;rho*)",
+      "status": "O-PC track exists; not linked tightly to Form C variance",
+      "potential": "conditional variance of Form C under PC; typical size not limsup",
+      "risk": "PC almost-all vs single rightmost zero",
+      "priority": "medium"
+    },
+    {
+      "id": "MA6_Duffin_Schaeffer_Diophantine_gamma",
+      "angle": "How well can log p approximate 2pi k / gamma* (n-aspect Diophantine)",
+      "status": "mentioned as hard; no metric number theory attack written",
+      "potential": "if {gamma* log p / 2pi} is well distributable, partial alignment of prime terms",
+      "risk": "gamma* depends on the zero; circularity if zero locations unknown",
+      "priority": "high among long-shots for Form C"
+    },
+    {
+      "id": "MA7_smoothed_Form_C",
+      "angle": "Smoothed sum sum Lambda(n) n^{-rho*} f(log n / log X) / log n",
+      "status": "not isolated as its own obligation",
+      "potential": "smoother EF dual; may ease analysis; Form C is unsmoothed limit",
+      "risk": "smoothing can hide limsup",
+      "priority": "medium"
+    },
+    {
+      "id": "MA8_kappa_from_EF_duality",
+      "angle": "Express far hybrid U-sum via primes (duality) to get cancellation from psi-x",
+      "status": "signed sum does this for Off_X near line; far hybrid U not fully dualized the same way",
+      "potential": "could convert kappa problem into prime-side estimates (opposite dual to Form C)",
+      "risk": "may loop into Form C-type difficulty",
+      "priority": "high for dual structure"
+    },
+    {
+      "id": "MA9_Bombieri_Vinogradov_level",
+      "angle": "Bombieri\u2013Vinogradov / averages of primes in AP as substitute for GRH in some estimates",
+      "status": "not systematically mapped into residual/Form C notes",
+      "potential": "averaged arithmetic progressions; not single complex rho*",
+      "risk": "averaging \u2260 fixed rho*",
+      "priority": "low for Form C; medium for other arithmetic"
+    },
+    {
+      "id": "MA10_pattern_OR_vs_AND",
+      "angle": "Structural pattern: B_theta is OR-cut (any gate); O_TL is AND-cut (all arms)",
+      "status": "recorded in gap analysis; under-used strategically",
+      "potential": "effort allocation: one B_theta gate may be cheaper than full O_TL stack",
+      "risk": "B_theta still not RH",
+      "priority": "strategic (not analytic)"
+    },
+    {
+      "id": "MA11_vacuity_pattern_under_RH",
+      "angle": "Pattern: every off-line engine (Form C, Iso_H, DH at beta*>1/2) is vacuous if RH true",
+      "status": "noted under GRH explore; global pattern",
+      "potential": "clarifies that off-line B_theta is an RH-failure engine, not an RH-proof by itself",
+      "risk": "none \u2014 hygiene",
+      "priority": "conceptual lock"
+    },
+    {
+      "id": "MA12_dual_pattern_lower_upper",
+      "angle": "Recurring dual: need lower bounds (Form C, SOC, Omega) and upper bounds (kappa, M1.2, GHK E)",
+      "status": "PAO/kappa dual named; appears also Omega vs ZF upper",
+      "potential": "any method that only upper-bounds cannot close lower-bound gates and vice versa",
+      "risk": "none \u2014 hygiene",
+      "priority": "conceptual lock"
+    }
+  ],
+  "patterns": [
+    {
+      "name": "Upper-vs-lower asymmetry",
+      "instances": [
+        "ZF/VK upper residual vs Form C lower",
+        "absolute kappa upper vs need smaller kappa",
+        "typical Omega lower vs strong Omega"
+      ],
+      "lesson": "Most classical strength sits on UPPER bounds; open gates are LOWER bounds or isolation"
+    },
+    {
+      "name": "Free-parameter vs frozen-parameter",
+      "instances": [
+        "free t resonance vs fixed gamma* Form C",
+        "free path radius vs isolation",
+        "free X vs GHK window"
+      ],
+      "lesson": "FFML is one instance of a wider pattern: tools that choose a parameter fail when the parameter is frozen by a zero"
+    },
+    {
+      "name": "Vacuous-if-RH pattern",
+      "instances": [
+        "Form C",
+        "Iso_H at beta*>1/2",
+        "DH at off-line beta*",
+        "off-line B_theta"
+      ],
+      "lesson": "Off-line package is a counterfactual engine; on-line O_TL is the RH-compatible primary"
+    },
+    {
+      "name": "OR vs AND cuts",
+      "instances": [
+        "B_theta OR three gates",
+        "O_TL AND four arms"
+      ],
+      "lesson": "Cheapest conditional path to B_theta may be a single gate; O_TL is intrinsically multi-arm"
+    },
+    {
+      "name": "Identity-rich, estimate-poor",
+      "instances": [
+        "signed residual formula proved",
+        "hybrid identity proved",
+        "E1 proved",
+        "lower bounds open"
+      ],
+      "lesson": "Programme has completed bookkeeping; remaining work is estimates of frozen-parameter objects"
+    },
+    {
+      "name": "False-friend classical objects",
+      "instances": [
+        "Levinson mollifier as O-Moll",
+        "Soundararajan as Form C",
+        "density as Iso_H",
+        "monodromy of P_X"
+      ],
+      "lesson": "Named dead routes share a pattern: right classical tool, wrong functional/target"
+    }
+  ],
+  "global_conclusion": "VK improves residual upper bounds and EF/PNT quality near sigma=1 but does not open Form C or dissolve FFML. Explicit formula techniques are the proved backbone (Stieltjes, truncated EF, signed residual); Weil test-function form and EF-dual kappa routes are under-used. Full review: six structural patterns (upper/lower, free/frozen, vacuous-if-RH, OR/AND, identity-rich, false friends); twelve missed angles ranked; dual Form_C/kappa and EF/VK pairing are the strongest correlations. Unconditional resolution count still zero."
+}
