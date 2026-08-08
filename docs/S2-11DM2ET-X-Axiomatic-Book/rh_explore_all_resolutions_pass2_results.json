@@ -1,0 +1,505 @@
+{
+  "status": "RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF",
+  "date": "2026-08-08",
+  "pass": 2,
+  "mandate": "Explore all for resolutions (post H1-H5 integration)",
+  "zla": true,
+  "residual_firewall": "A0-A5+/K+ closed; not RH levers",
+  "nodes": {
+    "RH": {
+      "type": "goal",
+      "resolved": false,
+      "class": "open"
+    },
+    "O-TL": {
+      "type": "goal",
+      "resolved": false,
+      "class": "open_primary"
+    },
+    "B_theta": {
+      "type": "goal",
+      "resolved": false,
+      "class": "open"
+    },
+    "Mass-with-A": {
+      "type": "goal",
+      "resolved": false,
+      "class": "open_unconditional"
+    },
+    "Imp_RM_IsoH_Btheta": {
+      "type": "proved_implication",
+      "resolved": true,
+      "class": "proved"
+    },
+    "Imp_RM_polylog_MassA": {
+      "type": "proved_implication",
+      "resolved": true,
+      "class": "proved"
+    },
+    "Imp_RM_MassA_Btheta": {
+      "type": "proved_implication",
+      "resolved": true,
+      "class": "proved"
+    },
+    "Imp_signed_residual_formula": {
+      "type": "proved_reduction",
+      "resolved": true,
+      "class": "proved"
+    },
+    "Imp_self_loglog_cancel": {
+      "type": "proved",
+      "resolved": true,
+      "class": "proved"
+    },
+    "Imp_E1_CU1": {
+      "type": "proved",
+      "resolved": true,
+      "class": "proved"
+    },
+    "Imp_typical_Omega_online": {
+      "type": "proved",
+      "resolved": true,
+      "class": "proved"
+    },
+    "Imp_R41_GHK_strip": {
+      "type": "proved",
+      "resolved": true,
+      "class": "proved"
+    },
+    "Imp_OPC_hybrid_identity": {
+      "type": "proved",
+      "resolved": true,
+      "class": "proved"
+    },
+    "Imp_monodromy_withdrawn": {
+      "type": "closed_nonroute",
+      "resolved": true,
+      "class": "dead"
+    },
+    "PAO": {
+      "type": "conditional",
+      "resolved": false,
+      "class": "hypothesis",
+      "hope": "H1"
+    },
+    "kappa_J_p": {
+      "type": "conditional",
+      "resolved": false,
+      "class": "hypothesis",
+      "hope": "H2",
+      "numeric_bar": "p>=1.12 safest ~2; kappa_need~0.014 at best c1=1 cell"
+    },
+    "DH": {
+      "type": "conditional",
+      "resolved": false,
+      "class": "hypothesis",
+      "hope": "H3"
+    },
+    "Iso_H": {
+      "type": "conditional",
+      "resolved": false,
+      "class": "hypothesis",
+      "hope": "H3"
+    },
+    "GO": {
+      "type": "conditional",
+      "resolved": false,
+      "class": "hypothesis",
+      "hope": "H4"
+    },
+    "SOC": {
+      "type": "conditional",
+      "resolved": false,
+      "class": "hypothesis",
+      "hope": "H5"
+    },
+    "O-M1.2": {
+      "type": "obligation",
+      "resolved": false,
+      "class": "architecture_ok_numeric_open"
+    },
+    "O-M1.3bis": {
+      "type": "obligation",
+      "resolved": false,
+      "class": "open"
+    },
+    "O-PC": {
+      "type": "obligation",
+      "resolved": false,
+      "class": "partial"
+    },
+    "O-Moll": {
+      "type": "obligation",
+      "resolved": false,
+      "class": "open_empty_shelf"
+    },
+    "O-PC_typical": {
+      "type": "sub",
+      "resolved": true,
+      "class": "proved"
+    },
+    "O-PC_strong": {
+      "type": "sub",
+      "resolved": false,
+      "class": "open"
+    },
+    "abs_avg_A": {
+      "type": "dead",
+      "resolved": true,
+      "class": "dead"
+    },
+    "abs_far_c1_291": {
+      "type": "dead",
+      "resolved": true,
+      "class": "dead"
+    },
+    "rw_kappa_alone": {
+      "type": "dead",
+      "resolved": true,
+      "class": "dead"
+    },
+    "density_implies_isoh": {
+      "type": "dead",
+      "resolved": true,
+      "class": "dead"
+    },
+    "mollifier_zero_count_as_Omoll": {
+      "type": "dead",
+      "resolved": true,
+      "class": "dead"
+    },
+    "residual_implies_RH": {
+      "type": "dead",
+      "resolved": true,
+      "class": "dead"
+    },
+    "finite_height_isoh": {
+      "type": "dead",
+      "resolved": true,
+      "class": "dead"
+    }
+  },
+  "edges": [
+    {
+      "from": "O-TL",
+      "to": "RH",
+      "kind": "programme_primary"
+    },
+    {
+      "from": "B_theta",
+      "to": "RH",
+      "kind": "related_off_line_engine"
+    },
+    {
+      "from": "Iso_H",
+      "to": "Imp_RM_IsoH_Btheta",
+      "kind": "hypothesis_in"
+    },
+    {
+      "from": "Imp_RM_IsoH_Btheta",
+      "to": "B_theta",
+      "kind": "proved_if_hyp"
+    },
+    {
+      "from": "DH",
+      "to": "Imp_RM_polylog_MassA",
+      "kind": "hypothesis_in"
+    },
+    {
+      "from": "Imp_RM_polylog_MassA",
+      "to": "Mass-with-A",
+      "kind": "proved_if_hyp"
+    },
+    {
+      "from": "Mass-with-A",
+      "to": "Imp_RM_MassA_Btheta",
+      "kind": "input"
+    },
+    {
+      "from": "Imp_RM_MassA_Btheta",
+      "to": "B_theta",
+      "kind": "proved_if_hyp"
+    },
+    {
+      "from": "Imp_signed_residual_formula",
+      "to": "PAO",
+      "kind": "reduces_Btheta_to"
+    },
+    {
+      "from": "PAO",
+      "to": "B_theta",
+      "kind": "conditional_resolution"
+    },
+    {
+      "from": "kappa_J_p",
+      "to": "O-M1.2",
+      "kind": "numeric_close_route"
+    },
+    {
+      "from": "O-M1.2",
+      "to": "O-TL",
+      "kind": "obligation"
+    },
+    {
+      "from": "GO",
+      "to": "O-M1.3bis",
+      "kind": "tube_path_route"
+    },
+    {
+      "from": "O-M1.3bis",
+      "to": "O-TL",
+      "kind": "obligation"
+    },
+    {
+      "from": "SOC",
+      "to": "O-PC_strong",
+      "kind": "defines"
+    },
+    {
+      "from": "O-PC_strong",
+      "to": "O-PC",
+      "kind": "core"
+    },
+    {
+      "from": "O-PC",
+      "to": "O-TL",
+      "kind": "obligation"
+    },
+    {
+      "from": "O-Moll",
+      "to": "O-TL",
+      "kind": "obligation"
+    },
+    {
+      "from": "Imp_typical_Omega_online",
+      "to": "O-PC",
+      "kind": "partial"
+    },
+    {
+      "from": "Imp_R41_GHK_strip",
+      "to": "O-PC",
+      "kind": "error_control"
+    },
+    {
+      "from": "Imp_E1_CU1",
+      "to": "kappa_J_p",
+      "kind": "sets_CU"
+    },
+    {
+      "from": "Imp_OPC_hybrid_identity",
+      "to": "O-PC",
+      "kind": "bookkeeping"
+    }
+  ],
+  "resolution_scenarios": [
+    {
+      "id": "S1_PAO_alone",
+      "assumes": [
+        "PAO"
+      ],
+      "gets": [
+        "B_theta off-line Form B"
+      ],
+      "gets_RH": false,
+      "note": "B_theta is not full RH; still need zero-free / critical line"
+    },
+    {
+      "id": "S2_IsoH",
+      "assumes": [
+        "Iso_H",
+        "RM"
+      ],
+      "gets": [
+        "B_theta"
+      ],
+      "gets_RH": false
+    },
+    {
+      "id": "S3_DH",
+      "assumes": [
+        "DH",
+        "RM"
+      ],
+      "gets": [
+        "Mass-with-A",
+        "B_theta via chain"
+      ],
+      "gets_RH": false
+    },
+    {
+      "id": "S4_phase_stack",
+      "assumes": [
+        "kappa_J_p",
+        "GO",
+        "SOC",
+        "O-Moll_construction"
+      ],
+      "gets": [
+        "O-M1.2 numeric",
+        "O-M1.3bis attempt",
+        "O-PC strong",
+        "O-TL attempt"
+      ],
+      "gets_RH": false,
+      "note": "Even full phase stack is debt-argument infrastructure, not auto RH"
+    },
+    {
+      "id": "S5_all_conditionals",
+      "assumes": [
+        "PAO",
+        "kappa_J_p",
+        "DH",
+        "Iso_H",
+        "GO",
+        "SOC",
+        "O-Moll"
+      ],
+      "gets": [
+        "B_theta two ways",
+        "Mass-with-A",
+        "phase programme advanced"
+      ],
+      "gets_RH": false,
+      "note": "Still not a proof of RH without the target lemma at critical zeros / full programme close"
+    }
+  ],
+  "classical_partial_mines": {
+    "PAO": {
+      "nearby": [
+        "classical Omega of psi-x from a zero",
+        "Ingham/Titchmarsh Omega theorems",
+        "explicit formula"
+      ],
+      "why_not_enough": "Omega is real-amplitude; PAO needs phase lock with x^{i gamma*} on log-measure",
+      "partial_resolution": null
+    },
+    "kappa_J_p": {
+      "nearby": [
+        "square-root cancellation heuristics",
+        "large sieve",
+        "mean-value of Dirichlet polynomials"
+      ],
+      "why_not_enough": "Need uniform upper bound on signed far U-sum along M1.3 paths, not L2 mean",
+      "partial_resolution": "absolute kappa=1 only"
+    },
+    "DH": {
+      "nearby": [
+        "zero density Ingham/Huxley/GM/KLN/Bellotti",
+        "density hypothesis"
+      ],
+      "why_not_enough": "moderate sigma retains positive T-power",
+      "partial_resolution": "near sigma=1 log-power only"
+    },
+    "Iso_H": {
+      "nearby": [
+        "Maynard-Pratt half-isolation",
+        "Hypothesis F",
+        "Ivic multiplicity"
+      ],
+      "why_not_enough": "local/rare/conditional; not unbounded line isolation",
+      "partial_resolution": null
+    },
+    "GO": {
+      "nearby": [
+        "GUE gap heuristics",
+        "resonance large values",
+        "pair correlation"
+      ],
+      "why_not_enough": "no joint theorem with hybrid maximisers",
+      "partial_resolution": null
+    },
+    "SOC": {
+      "nearby": [
+        "proved typical Omega",
+        "Soundararajan resonance",
+        "Bondarenko-Seip extreme values"
+      ],
+      "why_not_enough": "extreme |zeta| != strong |Delta_X| at loglog; off-line transfer separate",
+      "partial_resolution": "typical on-line Omega proved"
+    },
+    "O-Moll": {
+      "nearby": [
+        "Levinson-Conrey mollifiers",
+        "resonance method"
+      ],
+      "why_not_enough": "wrong target (zeros on line / |zeta| large)",
+      "partial_resolution": null
+    }
+  },
+  "weakened_targets_explored": [
+    {
+      "weakening": "O-TL at sqrt(log log X) instead of log log X",
+      "helps": "matches proved typical Omega scale",
+      "still_missing": "off-line transfer, O-M1.2, remainder domination, maximial abscissa",
+      "resolves_RH": false
+    },
+    {
+      "weakening": "B_theta only |S_X|->infinity not loglog",
+      "helps": "PAO with smaller measure",
+      "still_missing": "PAO itself",
+      "resolves_RH": false
+    },
+    {
+      "weakening": "almost-all heights instead of all large gamma",
+      "helps": "pair correlation / density almost-all",
+      "still_missing": "rightmost zero may be atypical",
+      "resolves_RH": false
+    },
+    {
+      "weakening": "conditional on RH for O-PC isolation steps",
+      "helps": "classical almost-all simplicity under RH+PC",
+      "still_missing": "circular for RH; wrong for off-line counterfactual",
+      "resolves_RH": false
+    }
+  ],
+  "unconditional_resolutions_found": [],
+  "count_open_hypotheses": 6,
+  "count_dead_routes": 8,
+  "count_proved_assets": 10,
+  "global_verdict": "Pass-2 explore-all (post H1-H5): every goal, obligation, named conditional, proved asset, and dead route is mapped in a dependency graph. Classical partial mines around PAO/kappa/DH/Iso_H/GO/SOC/O-Moll yield no new unconditional resolutions. Weakened targets still fail to reach RH. Unconditional resolution count: 0. Residual firewall held.",
+  "minimal_paths": {
+    "shortest_conditional_paths_to_B_theta": [
+      [
+        "PAO"
+      ],
+      [
+        "Iso_H",
+        "RM"
+      ],
+      [
+        "DH",
+        "RM"
+      ]
+    ],
+    "shortest_conditional_paths_toward_O_TL": [
+      [
+        "kappa_J_p",
+        "GO",
+        "SOC",
+        "O-Moll"
+      ]
+    ],
+    "no_path_to_RH_unconditional": true,
+    "no_path_to_RH_from_residual": true
+  },
+  "scoreboard_summary": {
+    "unconditional_resolutions": 0,
+    "named_conditionals_open": [
+      "PAO",
+      "kappa_J_p",
+      "DH",
+      "Iso_H",
+      "GO",
+      "SOC"
+    ],
+    "obligations": {
+      "O-M1.2": "open (numeric; needs kappa)",
+      "O-M1.3bis": "open (needs GO or average Phi)",
+      "O-PC": "partial (typical proved; strong open)",
+      "O-Moll": "open (empty shelf)",
+      "O-TL": "open primary"
+    },
+    "residual": "A0-A5+/K+ closed; ZLA separates from RH",
+    "RH": "OPEN"
+  }
+}
