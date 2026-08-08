@@ -1,0 +1,281 @@
+{
+  "status": "RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF",
+  "date": "2026-08-08",
+  "zla": true,
+  "no_model_constants": true,
+  "does_not_prove": [
+    "O-TL",
+    "RH",
+    "Iso_H",
+    "Mass-with-A",
+    "unconditional uniform M1.2"
+  ],
+  "density_input": {
+    "primary": "Chourasiya-Simonic arXiv:2507.15184",
+    "H_RH": 3000000000000.0,
+    "local_count": "R-vM scale #zeros in height H << H log gamma"
+  },
+  "step_B_gap_table": [
+    {
+      "beta_star": 0.55,
+      "theta_Ingham_CS": 0.9310344827586207,
+      "theta_Guth_Maynard": 1.1739130434782608,
+      "A_Guth_Maynard": 2.608695652173913,
+      "CS_B1": 8.604,
+      "CS_zone": "CS low [0.50,0.625]",
+      "N_shape": "<< T^0.9310 (log T)^3 [CS/Ingham]",
+      "polylog_N_vert": false,
+      "gap": "must kill positive power T^0.9310"
+    },
+    {
+      "beta_star": 0.6,
+      "theta_Ingham_CS": 0.8571428571428573,
+      "theta_Guth_Maynard": 1.0,
+      "A_Guth_Maynard": 2.5,
+      "CS_B1": 8.604,
+      "CS_zone": "CS low [0.50,0.625]",
+      "N_shape": "<< T^0.8571 (log T)^3 [CS/Ingham]",
+      "polylog_N_vert": false,
+      "gap": "must kill positive power T^0.8571"
+    },
+    {
+      "beta_star": 0.65,
+      "theta_Ingham_CS": 0.7777777777777776,
+      "theta_Guth_Maynard": 0.84,
+      "A_Guth_Maynard": 2.4,
+      "CS_B1": 22.44,
+      "CS_zone": "CS mid [0.625,0.875]",
+      "N_shape": "<< T^0.7778 (log T)^3 [CS/Ingham]",
+      "polylog_N_vert": false,
+      "gap": "must kill positive power T^0.7778"
+    },
+    {
+      "beta_star": 0.7,
+      "theta_Ingham_CS": 0.6923076923076924,
+      "theta_Guth_Maynard": 0.6923076923076924,
+      "A_Guth_Maynard": 2.3076923076923075,
+      "CS_B1": 22.44,
+      "CS_zone": "CS mid [0.625,0.875]",
+      "N_shape": "<< T^0.6923 (log T)^3 [CS/Ingham]",
+      "polylog_N_vert": false,
+      "gap": "must kill positive power T^0.6923"
+    },
+    {
+      "beta_star": 0.75,
+      "theta_Ingham_CS": 0.6,
+      "theta_Guth_Maynard": 0.5555555555555556,
+      "A_Guth_Maynard": 2.2222222222222223,
+      "CS_B1": 22.44,
+      "CS_zone": "CS mid [0.625,0.875]",
+      "N_shape": "<< T^0.6000 (log T)^3 [CS/Ingham]",
+      "polylog_N_vert": false,
+      "gap": "must kill positive power T^0.6000"
+    },
+    {
+      "beta_star": 0.8,
+      "theta_Ingham_CS": 0.4999999999999999,
+      "theta_Guth_Maynard": 0.42857142857142844,
+      "A_Guth_Maynard": 2.142857142857143,
+      "CS_B1": 22.44,
+      "CS_zone": "CS mid [0.625,0.875]",
+      "N_shape": "<< T^0.5000 (log T)^3 [CS/Ingham]",
+      "polylog_N_vert": false,
+      "gap": "must kill positive power T^0.5000"
+    },
+    {
+      "beta_star": 0.85,
+      "theta_Ingham_CS": 0.39130434782608703,
+      "theta_Guth_Maynard": 0.31034482758620696,
+      "A_Guth_Maynard": 2.0689655172413794,
+      "CS_B1": 22.44,
+      "CS_zone": "CS mid [0.625,0.875]",
+      "N_shape": "<< T^0.3913 (log T)^3 [CS/Ingham]",
+      "polylog_N_vert": false,
+      "gap": "must kill positive power T^0.3913"
+    },
+    {
+      "beta_star": 0.9,
+      "theta_Ingham_CS": 0.27272727272727265,
+      "theta_Guth_Maynard": 0.19999999999999996,
+      "A_Guth_Maynard": 2.0,
+      "CS_B1": null,
+      "CS_zone": "beyond CS; Bellotti-type near 1",
+      "N_shape": "<< T^0.2727 (log T)^3 [CS/Ingham]",
+      "polylog_N_vert": false,
+      "gap": "must kill positive power T^0.2727"
+    },
+    {
+      "beta_star": 0.95,
+      "theta_Ingham_CS": 0.142857142857143,
+      "theta_Guth_Maynard": 0.09677419354838719,
+      "A_Guth_Maynard": 1.935483870967742,
+      "CS_B1": null,
+      "CS_zone": "beyond CS; Bellotti-type near 1",
+      "N_shape": "<< T^0.1429 (log T)^3 [CS/Ingham]",
+      "polylog_N_vert": false,
+      "gap": "must kill positive power T^0.1429"
+    },
+    {
+      "beta_star": 0.98,
+      "theta_Ingham_CS": 0.058823529411764754,
+      "theta_Guth_Maynard": 0.037974683544303826,
+      "A_Guth_Maynard": 1.8987341772151898,
+      "CS_B1": null,
+      "CS_zone": "beyond CS; Bellotti-type near 1",
+      "N_shape": "<< T^0.0588 (log T)^3 [CS/Ingham]",
+      "polylog_N_vert": false,
+      "gap": "must kill positive power T^0.0588"
+    }
+  ],
+  "step_A_required_H_RH": {
+    "gamma": 3000000000000.0,
+    "logX_needed_for_far": 7224.435110138107,
+    "X_needed": "inf",
+    "X_over_gamma": "inf",
+    "E_GHK_at_needed_X": "inf",
+    "joint_feasible_loose": false
+  },
+  "step_A_required_1e30": {
+    "gamma": 1e+30,
+    "logX_needed_for_far": 37912.51989912995,
+    "X_needed": "inf",
+    "X_over_gamma": "inf",
+    "E_GHK_at_needed_X": "inf",
+    "joint_feasible_loose": false
+  },
+  "step_A_scan_H_RH": {
+    "n_strategies": 28,
+    "n_both_ok": 0,
+    "n_far_only": 0,
+    "n_ghk_only": 0,
+    "first_both_ok": null,
+    "top_tradeoffs": [
+      {
+        "type": "polylog_X",
+        "A_X": 4,
+        "logX": 13.431716451555152,
+        "X": 681271.6822132597,
+        "far_sum": 215.14555153676275,
+        "E_GHK": 0.168792359573312,
+        "far_ok": false,
+        "ghk_ok": false,
+        "both_ok": false
+      },
+      {
+        "type": "power_X",
+        "delta": 0.2,
+        "logX": 5.745926680919332,
+        "X": 312.91346445319004,
+        "far_sum": 502.9256731819082,
+        "E_GHK": 2.598591069168597,
+        "far_ok": false,
+        "ghk_ok": false,
+        "both_ok": false
+      },
+      {
+        "type": "power_X",
+        "delta": 0.15,
+        "logX": 4.309445010689498,
+        "X": 74.39918672691866,
+        "far_sum": 670.5675642425444,
+        "E_GHK": 3.996936386687618,
+        "far_ok": false,
+        "ghk_ok": false,
+        "both_ok": false
+      },
+      {
+        "type": "exp_log_power",
+        "a": 0.3333333333333333,
+        "c": 1.0,
+        "logX": 3.0627392776499116,
+        "X": 21.386059352978506,
+        "far_sum": 943.5259687767522,
+        "E_GHK": 5.298276649186837,
+        "far_ok": false,
+        "ghk_ok": false,
+        "both_ok": false
+      },
+      {
+        "type": "power_X",
+        "delta": 0.1,
+        "logX": 2.872963340459666,
+        "X": 17.689360204744265,
+        "far_sum": 1005.8513463638164,
+        "E_GHK": 5.464670851411726,
+        "far_ok": false,
+        "ghk_ok": false,
+        "both_ok": false
+      },
+      {
+        "type": "exp_log_power",
+        "a": 0.5,
+        "c": 0.5,
+        "logX": 2.6800015580497645,
+        "X": 14.585116020199667,
+        "far_sum": 1078.2732701685927,
+        "E_GHK": 5.6139700246868065,
+        "far_ok": false,
+        "ghk_ok": false,
+        "both_ok": false
+      },
+      {
+        "type": "power_X",
+        "delta": 0.08,
+        "logX": 2.298370672367733,
+        "X": 9.95794447581801,
+        "far_sum": 1257.3141829547706,
+        "E_GHK": 5.826734212791863,
+        "far_ok": false,
+        "ghk_ok": false,
+        "both_ok": false
+      },
+      {
+        "type": "exp_log_power",
+        "a": 0.4,
+        "c": 0.5,
+        "logX": 1.9155876925188218,
+        "X": 6.7909286024305775,
+        "far_sum": 1508.5574287938005,
+        "E_GHK": 5.8806785800127725,
+        "far_ok": false,
+        "ghk_ok": false,
+        "both_ok": false
+      },
+      {
+        "type": "exp_log_power",
+        "a": 0.6,
+        "c": 0.2,
+        "logX": 1.4997816866749565,
+        "X": 4.480710764687774,
+        "far_sum": 1926.7964595980131,
+        "E_GHK": 5.668192328779643,
+        "far_ok": false,
+        "ghk_ok": false,
+        "both_ok": false
+      },
+      {
+        "type": "power_X",
+        "delta": 0.05,
+        "logX": 1.436481670229833,
+        "X": 4.205872109889252,
+        "far_sum": 2011.702692727633,
+        "E_GHK": 5.603534424590323,
+        "far_ok": false,
+        "ghk_ok": false,
+        "both_ok": false
+      }
+    ],
+    "tension": "Far-sum wants large log X; GHK c1 X^4/(gamma log X)^2 wants small X. Joint window under c1=291 is the arithmetic content of Step A."
+  },
+  "step_A_scan_1e30": {
+    "n_both_ok": 0,
+    "first_both_ok": null
+  },
+  "conclusion": {
+    "polylog_density_moderate_sigma": "OPEN \u2014 theta(beta*)>0 for all tabulated beta*<=0.98",
+    "step_A_arithmetic": "Under R-vM local counts + programme c1=291,c2=8, the joint window (far_sum<=0.4 and E_GHK<=0.1) is empty at H_RH=3e12 across polylog/exp/power X trials. Required log X for far-sum alone already forces X so large that term_X4 explodes. Honest obstruction: either tighten c1 (better GHK weight / U decay) or accept weaker remainder targets. Not a completed numerical gamma1 theorem.",
+    "O_M1_2": "Architecture accepted; constants recorded; joint numerical gamma1 under current c1 NOT closed",
+    "O_TL": "OPEN",
+    "RH": "OPEN"
+  }
+}
