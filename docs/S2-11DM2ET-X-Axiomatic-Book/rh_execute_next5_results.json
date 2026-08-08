@@ -1,0 +1,1116 @@
+{
+  "status": "RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF",
+  "date": "2026-08-08",
+  "mandate": "Execute all five next pure-math moves",
+  "zla": true,
+  "no_model_constants": true,
+  "does_not_prove": [
+    "RH",
+    "O-TL",
+    "Iso_H",
+    "O-Moll",
+    "Mass-with-A",
+    "uniform O-M1.2"
+  ],
+  "N1_nonabsolute_far_sum": {
+    "status": "N1_NONABSOLUTE_FAR_SUM_EXECUTED",
+    "absolute_baseline": {
+      "formula": "far = C_U (J+1) Lg / (pi logX), C_U=1 from E1",
+      "best_under_c1_1_GHK": null,
+      "radius_scan_sample": [
+        {
+          "c_r": 0.05,
+          "logX": 14,
+          "r": 0.0017403633139293781,
+          "J": 51.614495413078195,
+          "far_abs": 34.36826320875177,
+          "E_c1_291": 0.4471834521034326,
+          "E_c1_1": 0.10331652815571862,
+          "far_le_0.4": false,
+          "joint_c1_1": false
+        },
+        {
+          "c_r": 0.1,
+          "logX": 14,
+          "r": 0.0034807266278587563,
+          "J": 50.614495413078195,
+          "far_abs": 33.715054184528974,
+          "E_c1_291": 0.4471834521034326,
+          "E_c1_1": 0.10331652815571862,
+          "far_le_0.4": false,
+          "joint_c1_1": false
+        },
+        {
+          "c_r": 0.25,
+          "logX": 14,
+          "r": 0.00870181656964689,
+          "J": 49.292567318190834,
+          "far_abs": 32.85155882357489,
+          "E_c1_291": 0.4471834521034326,
+          "E_c1_1": 0.10331652815571862,
+          "far_le_0.4": false,
+          "joint_c1_1": false
+        },
+        {
+          "c_r": 0.5,
+          "logX": 14,
+          "r": 0.01740363313929378,
+          "J": 48.292567318190834,
+          "far_abs": 32.198349799352094,
+          "E_c1_291": 0.4471834521034326,
+          "E_c1_1": 0.10331652815571862,
+          "far_le_0.4": false,
+          "joint_c1_1": false
+        },
+        {
+          "c_r": 1.0,
+          "logX": 14,
+          "r": 0.03480726627858756,
+          "J": 47.292567318190834,
+          "far_abs": 31.545140775129294,
+          "E_c1_291": 0.4471834521034326,
+          "E_c1_1": 0.10331652815571862,
+          "far_le_0.4": false,
+          "joint_c1_1": false
+        },
+        {
+          "c_r": 2.0,
+          "logX": 14,
+          "r": 0.06961453255717512,
+          "J": 46.292567318190834,
+          "far_abs": 30.891931750906494,
+          "E_c1_291": 0.4471834521034326,
+          "E_c1_1": 0.10331652815571862,
+          "far_le_0.4": false,
+          "joint_c1_1": false
+        },
+        {
+          "c_r": 5.0,
+          "logX": 14,
+          "r": 0.1740363313929378,
+          "J": 44.97063922330347,
+          "far_abs": 30.028436389952414,
+          "E_c1_291": 0.4471834521034326,
+          "E_c1_1": 0.10331652815571862,
+          "far_le_0.4": false,
+          "joint_c1_1": false
+        },
+        {
+          "c_r": 10.0,
+          "logX": 14,
+          "r": 0.3480726627858756,
+          "J": 43.97063922330347,
+          "far_abs": 29.375227365729614,
+          "E_c1_291": 0.4471834521034326,
+          "E_c1_1": 0.10331652815571862,
+          "far_le_0.4": false,
+          "joint_c1_1": false
+        }
+      ]
+    },
+    "path_radius_vs_J": {
+      "note": "Larger c_r reduces J (fewer annuli) and absolute far, but enlarges the local disk that must be free of other zeros and may worsen path geometry. At c_r=10, J drops and far improves, but isolation radius r=c_r/log gamma becomes large vs mean gap 2pi/log gamma.",
+      "mean_gap_over_r_at_cr": {
+        "0.25": 25.132741228718345,
+        "1.0": 6.283185307179586,
+        "5.0": 1.2566370614359172,
+        "10.0": 0.6283185307179586
+      }
+    },
+    "cancellation_models": {
+      "grid": [
+        {
+          "model": "absolute",
+          "kappa": 1.0,
+          "c_r": 0.25,
+          "logX": 14,
+          "J": 49.292567318190834,
+          "far_abs": 32.85155882357489,
+          "far_signed": 32.85155882357489,
+          "E_c1_1": 0.10331652815571862,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "absolute",
+          "kappa": 1.0,
+          "c_r": 0.25,
+          "logX": 16,
+          "J": 49.292567318190834,
+          "far_abs": 28.74511397062803,
+          "far_signed": 28.74511397062803,
+          "E_c1_1": 2.7491671160293407,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "absolute",
+          "kappa": 1.0,
+          "c_r": 0.25,
+          "logX": 18,
+          "J": 49.292567318190834,
+          "far_abs": 25.551212418336025,
+          "far_signed": 25.551212418336025,
+          "E_c1_1": 6374.063536732391,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "absolute",
+          "kappa": 1.0,
+          "c_r": 1.0,
+          "logX": 14,
+          "J": 47.292567318190834,
+          "far_abs": 31.545140775129294,
+          "far_signed": 31.545140775129294,
+          "E_c1_1": 0.10331652815571862,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "absolute",
+          "kappa": 1.0,
+          "c_r": 1.0,
+          "logX": 16,
+          "J": 47.292567318190834,
+          "far_abs": 27.60199817823813,
+          "far_signed": 27.60199817823813,
+          "E_c1_1": 2.7491671160293407,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "absolute",
+          "kappa": 1.0,
+          "c_r": 1.0,
+          "logX": 18,
+          "J": 47.292567318190834,
+          "far_abs": 24.535109491767226,
+          "far_signed": 24.535109491767226,
+          "E_c1_1": 6374.063536732391,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "absolute",
+          "kappa": 1.0,
+          "c_r": 5.0,
+          "logX": 14,
+          "J": 44.97063922330347,
+          "far_abs": 30.028436389952414,
+          "far_signed": 30.028436389952414,
+          "E_c1_1": 0.10331652815571862,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "absolute",
+          "kappa": 1.0,
+          "c_r": 5.0,
+          "logX": 16,
+          "J": 44.97063922330347,
+          "far_abs": 26.274881841208362,
+          "far_signed": 26.274881841208362,
+          "E_c1_1": 2.7491671160293407,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "absolute",
+          "kappa": 1.0,
+          "c_r": 5.0,
+          "logX": 18,
+          "J": 44.97063922330347,
+          "far_abs": 23.355450525518545,
+          "far_signed": 23.355450525518545,
+          "E_c1_1": 6374.063536732391,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "mild_1_over_logJ",
+          "kappa": 0.2552415577300803,
+          "c_r": 0.25,
+          "logX": 14,
+          "J": 49.292567318190834,
+          "far_abs": 32.85155882357489,
+          "far_signed": 8.38508304799062,
+          "E_c1_1": 0.10331652815571862,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "mild_1_over_logJ",
+          "kappa": 0.2552415577300803,
+          "c_r": 0.25,
+          "logX": 16,
+          "J": 49.292567318190834,
+          "far_abs": 28.74511397062803,
+          "far_signed": 7.336947666991791,
+          "E_c1_1": 2.7491671160293407,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "mild_1_over_logJ",
+          "kappa": 0.2552415577300803,
+          "c_r": 0.25,
+          "logX": 18,
+          "J": 49.292567318190834,
+          "far_abs": 25.551212418336025,
+          "far_signed": 6.521731259548258,
+          "E_c1_1": 6374.063536732391,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "mild_1_over_logJ",
+          "kappa": 0.25791291903749197,
+          "c_r": 1.0,
+          "logX": 14,
+          "J": 47.292567318190834,
+          "far_abs": 31.545140775129294,
+          "far_signed": 8.135899338762208,
+          "E_c1_1": 0.10331652815571862,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "mild_1_over_logJ",
+          "kappa": 0.25791291903749197,
+          "c_r": 1.0,
+          "logX": 16,
+          "J": 47.292567318190834,
+          "far_abs": 27.60199817823813,
+          "far_signed": 7.118911921416932,
+          "E_c1_1": 2.7491671160293407,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "mild_1_over_logJ",
+          "kappa": 0.25791291903749197,
+          "c_r": 1.0,
+          "logX": 18,
+          "J": 47.292567318190834,
+          "far_abs": 24.535109491767226,
+          "far_signed": 6.327921707926161,
+          "E_c1_1": 6374.063536732391,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "mild_1_over_logJ",
+          "kappa": 0.2612328209299078,
+          "c_r": 5.0,
+          "logX": 14,
+          "J": 44.97063922330347,
+          "far_abs": 30.028436389952414,
+          "far_signed": 7.844413146261566,
+          "E_c1_1": 0.10331652815571862,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "mild_1_over_logJ",
+          "kappa": 0.2612328209299078,
+          "c_r": 5.0,
+          "logX": 16,
+          "J": 44.97063922330347,
+          "far_abs": 26.274881841208362,
+          "far_signed": 6.86386150297887,
+          "E_c1_1": 2.7491671160293407,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "mild_1_over_logJ",
+          "kappa": 0.2612328209299078,
+          "c_r": 5.0,
+          "logX": 18,
+          "J": 44.97063922330347,
+          "far_abs": 23.355450525518545,
+          "far_signed": 6.1012102248701074,
+          "E_c1_1": 6374.063536732391,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "random_walk_1_over_sqrtJ",
+          "kappa": 0.14243256025393605,
+          "c_r": 0.25,
+          "logX": 14,
+          "J": 49.292567318190834,
+          "far_abs": 32.85155882357489,
+          "far_signed": 4.679131631574555,
+          "E_c1_1": 0.10331652815571862,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "random_walk_1_over_sqrtJ",
+          "kappa": 0.14243256025393605,
+          "c_r": 0.25,
+          "logX": 16,
+          "J": 49.292567318190834,
+          "far_abs": 28.74511397062803,
+          "far_signed": 4.094240177627736,
+          "E_c1_1": 2.7491671160293407,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "random_walk_1_over_sqrtJ",
+          "kappa": 0.14243256025393605,
+          "c_r": 0.25,
+          "logX": 18,
+          "J": 49.292567318190834,
+          "far_abs": 25.551212418336025,
+          "far_signed": 3.639324602335765,
+          "E_c1_1": 6374.063536732391,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "random_walk_1_over_sqrtJ",
+          "kappa": 0.1454131072204976,
+          "c_r": 1.0,
+          "logX": 14,
+          "J": 47.292567318190834,
+          "far_abs": 31.545140775129294,
+          "far_signed": 4.587076937819567,
+          "E_c1_1": 0.10331652815571862,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "random_walk_1_over_sqrtJ",
+          "kappa": 0.1454131072204976,
+          "c_r": 1.0,
+          "logX": 16,
+          "J": 47.292567318190834,
+          "far_abs": 27.60199817823813,
+          "far_signed": 4.013692320592121,
+          "E_c1_1": 2.7491671160293407,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "random_walk_1_over_sqrtJ",
+          "kappa": 0.1454131072204976,
+          "c_r": 1.0,
+          "logX": 18,
+          "J": 47.292567318190834,
+          "far_abs": 24.535109491767226,
+          "far_signed": 3.567726507192996,
+          "E_c1_1": 6374.063536732391,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "random_walk_1_over_sqrtJ",
+          "kappa": 0.14911985393475957,
+          "c_r": 5.0,
+          "logX": 14,
+          "J": 44.97063922330347,
+          "far_abs": 30.028436389952414,
+          "far_signed": 4.477836048358923,
+          "E_c1_1": 0.10331652815571862,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "random_walk_1_over_sqrtJ",
+          "kappa": 0.14911985393475957,
+          "c_r": 5.0,
+          "logX": 16,
+          "J": 44.97063922330347,
+          "far_abs": 26.274881841208362,
+          "far_signed": 3.9181065423140575,
+          "E_c1_1": 2.7491671160293407,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "random_walk_1_over_sqrtJ",
+          "kappa": 0.14911985393475957,
+          "c_r": 5.0,
+          "logX": 18,
+          "J": 44.97063922330347,
+          "far_abs": 23.355450525518545,
+          "far_signed": 3.482761370945829,
+          "E_c1_1": 6374.063536732391,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "strong_1_over_J",
+          "kappa": 0.020287034220491128,
+          "c_r": 0.25,
+          "logX": 14,
+          "J": 49.292567318190834,
+          "far_abs": 32.85155882357489,
+          "far_signed": 0.666460698050341,
+          "E_c1_1": 0.10331652815571862,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "strong_1_over_J",
+          "kappa": 0.020287034220491128,
+          "c_r": 0.25,
+          "logX": 16,
+          "J": 49.292567318190834,
+          "far_abs": 28.74511397062803,
+          "far_signed": 0.5831531107940484,
+          "E_c1_1": 2.7491671160293407,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "strong_1_over_J",
+          "kappa": 0.020287034220491128,
+          "c_r": 0.25,
+          "logX": 18,
+          "J": 49.292567318190834,
+          "far_abs": 25.551212418336025,
+          "far_signed": 0.5183583207058208,
+          "E_c1_1": 6374.063536732391,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "strong_1_over_J",
+          "kappa": 0.021144971751519935,
+          "c_r": 1.0,
+          "logX": 14,
+          "J": 47.292567318190834,
+          "far_abs": 31.545140775129294,
+          "far_signed": 0.6670211105878285,
+          "E_c1_1": 0.10331652815571862,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "strong_1_over_J",
+          "kappa": 0.021144971751519935,
+          "c_r": 1.0,
+          "logX": 16,
+          "J": 47.292567318190834,
+          "far_abs": 27.60199817823813,
+          "far_signed": 0.5836434717643499,
+          "E_c1_1": 2.7491671160293407,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "strong_1_over_J",
+          "kappa": 0.021144971751519935,
+          "c_r": 1.0,
+          "logX": 18,
+          "J": 47.292567318190834,
+          "far_abs": 24.535109491767226,
+          "far_signed": 0.5187941971238667,
+          "E_c1_1": 6374.063536732391,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "strong_1_over_J",
+          "kappa": 0.02223673083752403,
+          "c_r": 5.0,
+          "logX": 14,
+          "J": 44.97063922330347,
+          "far_abs": 30.028436389952414,
+          "far_signed": 0.6677342574750836,
+          "E_c1_1": 0.10331652815571862,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "strong_1_over_J",
+          "kappa": 0.02223673083752403,
+          "c_r": 5.0,
+          "logX": 16,
+          "J": 44.97063922330347,
+          "far_abs": 26.274881841208362,
+          "far_signed": 0.5842674752906981,
+          "E_c1_1": 2.7491671160293407,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "strong_1_over_J",
+          "kappa": 0.02223673083752403,
+          "c_r": 5.0,
+          "logX": 18,
+          "J": 44.97063922330347,
+          "far_abs": 23.355450525518545,
+          "far_signed": 0.519348866925065,
+          "E_c1_1": 6374.063536732391,
+          "far_le_0.4": false,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "square_1_over_J2",
+          "kappa": 0.00041156375746337803,
+          "c_r": 0.25,
+          "logX": 14,
+          "J": 49.292567318190834,
+          "far_abs": 32.85155882357489,
+          "far_signed": 0.013520510987959674,
+          "E_c1_1": 0.10331652815571862,
+          "far_le_0.4": true,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "square_1_over_J2",
+          "kappa": 0.00041156375746337803,
+          "c_r": 0.25,
+          "logX": 16,
+          "J": 49.292567318190834,
+          "far_abs": 28.74511397062803,
+          "far_signed": 0.011830447114464715,
+          "E_c1_1": 2.7491671160293407,
+          "far_le_0.4": true,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "square_1_over_J2",
+          "kappa": 0.00041156375746337803,
+          "c_r": 0.25,
+          "logX": 18,
+          "J": 49.292567318190834,
+          "far_abs": 25.551212418336025,
+          "far_signed": 0.010515952990635302,
+          "E_c1_1": 6374.063536732391,
+          "far_le_0.4": true,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "square_1_over_J2",
+          "kappa": 0.000447109830372576,
+          "c_r": 1.0,
+          "logX": 14,
+          "J": 47.292567318190834,
+          "far_abs": 31.545140775129294,
+          "far_signed": 0.01410414254104709,
+          "E_c1_1": 0.10331652815571862,
+          "far_le_0.4": true,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "square_1_over_J2",
+          "kappa": 0.000447109830372576,
+          "c_r": 1.0,
+          "logX": 16,
+          "J": 47.292567318190834,
+          "far_abs": 27.60199817823813,
+          "far_signed": 0.012341124723416202,
+          "E_c1_1": 2.7491671160293407,
+          "far_le_0.4": true,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "square_1_over_J2",
+          "kappa": 0.000447109830372576,
+          "c_r": 1.0,
+          "logX": 18,
+          "J": 47.292567318190834,
+          "far_abs": 24.535109491767226,
+          "far_signed": 0.010969888643036623,
+          "E_c1_1": 6374.063536732391,
+          "far_le_0.4": true,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "square_1_over_J2",
+          "kappa": 0.0004944721983404922,
+          "c_r": 5.0,
+          "logX": 14,
+          "J": 44.97063922330347,
+          "far_abs": 30.028436389952414,
+          "far_signed": 0.014848226954467404,
+          "E_c1_1": 0.10331652815571862,
+          "far_le_0.4": true,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "square_1_over_J2",
+          "kappa": 0.0004944721983404922,
+          "c_r": 5.0,
+          "logX": 16,
+          "J": 44.97063922330347,
+          "far_abs": 26.274881841208362,
+          "far_signed": 0.012992198585158977,
+          "E_c1_1": 2.7491671160293407,
+          "far_le_0.4": true,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        },
+        {
+          "model": "square_1_over_J2",
+          "kappa": 0.0004944721983404922,
+          "c_r": 5.0,
+          "logX": 18,
+          "J": 44.97063922330347,
+          "far_abs": 23.355450525518545,
+          "far_signed": 0.011548620964585758,
+          "E_c1_1": 6374.063536732391,
+          "far_le_0.4": true,
+          "joint_c1_1": false,
+          "joint_c1_291": false
+        }
+      ],
+      "opens_joint_c1_1": [],
+      "opens_joint_c1_291": [],
+      "n_opens_c1_1": 210,
+      "n_opens_c1_291": 0,
+      "opens_by_model_c1_1": {
+        "square_1_J2": 105,
+        "J3": 105
+      },
+      "opens_by_model_c1_291": {},
+      "sample_opens_c1_1": [
+        {
+          "model": "square_1_J2",
+          "c_r": 0.1,
+          "logX": 14.100000000000001,
+          "J": 50.614495413078195,
+          "kappa": 0.00039034639850405703,
+          "far_abs": 33.47594032506422,
+          "far_signed": 0.013067212742425552,
+          "E": 0.0995876563521881
+        },
+        {
+          "model": "J3",
+          "c_r": 0.1,
+          "logX": 14.100000000000001,
+          "J": 50.614495413078195,
+          "kappa": 7.712146398345722e-06,
+          "far_abs": 33.47594032506422,
+          "far_signed": 0.00025817135260918037,
+          "E": 0.0995876563521881
+        },
+        {
+          "model": "square_1_J2",
+          "c_r": 0.1,
+          "logX": 14.15,
+          "J": 50.614495413078195,
+          "kappa": 0.00039034639850405703,
+          "far_abs": 33.357650783279546,
+          "far_signed": 0.013021038845809208,
+          "E": 0.09788136642039721
+        },
+        {
+          "model": "J3",
+          "c_r": 0.1,
+          "logX": 14.15,
+          "J": 50.614495413078195,
+          "kappa": 7.712146398345722e-06,
+          "far_abs": 33.357650783279546,
+          "far_signed": 0.0002572590863455437,
+          "E": 0.09788136642039721
+        },
+        {
+          "model": "square_1_J2",
+          "c_r": 0.1,
+          "logX": 14.200000000000001,
+          "J": 50.614495413078195,
+          "kappa": 0.00039034639850405703,
+          "far_abs": 33.24019426643701,
+          "far_signed": 0.012975190117478892,
+          "E": 0.09629703743463383
+        },
+        {
+          "model": "J3",
+          "c_r": 0.1,
+          "logX": 14.200000000000001,
+          "J": 50.614495413078195,
+          "kappa": 7.712146398345722e-06,
+          "far_abs": 33.24019426643701,
+          "far_signed": 0.0002563532444922143,
+          "E": 0.09629703743463383
+        },
+        {
+          "model": "square_1_J2",
+          "c_r": 0.1,
+          "logX": 14.25,
+          "J": 50.614495413078195,
+          "kappa": 0.00039034639850405703,
+          "far_abs": 33.123562005853024,
+          "far_signed": 0.012929663134610548,
+          "E": 0.09485065784964639
+        },
+        {
+          "model": "J3",
+          "c_r": 0.1,
+          "logX": 14.25,
+          "J": 50.614495413078195,
+          "kappa": 7.712146398345722e-06,
+          "far_abs": 33.123562005853024,
+          "far_signed": 0.0002554537594238206,
+          "E": 0.09485065784964639
+        }
+      ]
+    },
+    "kappa_required": {
+      "easiest_in_GHK_window_c1_1": {
+        "c1": 1.0,
+        "c_r": 10.0,
+        "logX": 14.8,
+        "far_a": 27.78737723785234,
+        "J": 43.97063922330347,
+        "kappa_need": 0.014395025359036572,
+        "rw": 0.15080599638075376,
+        "strong": 0.022742448544391912,
+        "square": 0.0005172189657943138
+      },
+      "smallest_kappa_need_in_window": {
+        "logX": 14.100000000000001,
+        "c_r": 0.25,
+        "far_abs": 32.618569044684286,
+        "J": 49.292567318190834,
+        "kappa_need_for_far_0.4": 0.012262953640058173,
+        "equiv_random_walk": true,
+        "equiv_strong_1_over_J": true
+      },
+      "reading": "If easiest kappa_need is still << 1, absolute bounds cannot work; need at least that cancellation factor from signed sums.",
+      "rw_enough_at_easiest": false,
+      "strong_enough_at_easiest": false,
+      "square_enough_at_easiest": true,
+      "window_fractions_c1_1": {
+        "n_cells": 105,
+        "rw_works": 0,
+        "strong_works": 0,
+        "square_works": 105
+      }
+    },
+    "signed_sum_link": {
+      "corpus": "RH_Signed_Sum_Attack.md",
+      "object": "Sigma_X residual after EF interchange \u2014 main oscillatory Off_X piece",
+      "status": "reduced to weighted (psi-x); lower bound open; not yet a far-sum kappa theorem",
+      "programme_use": "A proved |signed far sum| <= kappa * absolute with kappa <= kappa_need would open numerical M1.2 under real c1. No such kappa theorem today."
+    },
+    "conclusion": "Absolute far-sum never reaches 0.4 under GHK-feasible X. Required kappa <= 0.0144 at best cell (c_r=10.0, logX=14.80). Random-walk 1/sqrt(J) is NOT enough there (kappa_rw=0.1508). Strong 1/J also short (=0.0227). Square 1/J^2 works in 105/105 window cells. Only strong coherent signed cancellation (stronger than random walk) can open numerical M1.2 under real c1. Signed-sum attack is the vessel; kappa theorem open. Path radius helps mildly but r>>mean gap breaks isolation."
+  },
+  "N2_gap_omega": {
+    "status": "N2_GAP_OMEGA_CORRELATION_EXECUTED",
+    "classical_positive": [
+      {
+        "item": "Mean ordinate spacing 2pi/log t",
+        "status": "classical (R-vM)"
+      },
+      {
+        "item": "Large values of log|zeta(1/2+it)| on short intervals",
+        "status": "classical Omega / resonance literature (Soundararajan, Bondarenko-Seip, ...)"
+      },
+      {
+        "item": "On-line hybrid Im D_X limsup for fixed X",
+        "status": "programme-accepted (Kronecker / resonance discrepancy notes)"
+      },
+      {
+        "item": "Zero gaps: selective results (e.g. large gaps exist infinitely often under RH or unconditionally weaker)",
+        "status": "classical partial; not coupled to hybrid Omega times"
+      }
+    ],
+    "classical_negative_missing": [
+      {
+        "item": "t_n with |Im D_X(1/2+it_n)| >> sqrt(X)/log X AND nearest-zero gap >= theta * mean_gap",
+        "status": "NO classical theorem"
+      },
+      {
+        "item": "Independence of prime-angle torus maximisers from zero ordinates",
+        "status": "OPEN (could fail if large values driven by nearby zeros)"
+      },
+      {
+        "item": "Positive-density set of wide gaps at heights of hybrid maximisers",
+        "status": "OPEN"
+      }
+    ],
+    "conditional_templates": [
+      {
+        "name": "GUE_gap + independent_torus (heuristic)",
+        "hypothesis": "Normalized gaps ~ GUE; torus maximisers independent of zeros at scale 1/log t",
+        "conclusion": "Positive density of (wide gap AND large Im D_X) for fixed X",
+        "status": "heuristic only \u2014 not ZLA theorem"
+      },
+      {
+        "name": "Hypothesis F / Iso_H local",
+        "hypothesis": "Few vertical lines / Iso_H",
+        "conclusion": "Avoidance of zeros near maximisers easier; not about horizontal gaps",
+        "status": "conditional; different geometry"
+      },
+      {
+        "name": "Pair correlation (Montgomery)",
+        "hypothesis": "PC for zeros",
+        "conclusion": "Gap statistics; still no automatic hybrid Omega correlation",
+        "status": "conditional / partial classical"
+      }
+    ],
+    "gap_tail_schematic": [
+      {
+        "t": 1000000.0,
+        "mean_gap": 0.45479211794728047,
+        "theta": 0.5,
+        "gap_width": 0.22739605897364024,
+        "GUE_large_gap_tail_schematic": 0.8217249580338772,
+        "note": "schematic GUE tail only \u2014 not a theorem for zeta"
+      },
+      {
+        "t": 1000000.0,
+        "mean_gap": 0.45479211794728047,
+        "theta": 1.0,
+        "gap_width": 0.45479211794728047,
+        "GUE_large_gap_tail_schematic": 0.45593812776599624,
+        "note": "schematic GUE tail only \u2014 not a theorem for zeta"
+      },
+      {
+        "t": 1000000.0,
+        "mean_gap": 0.45479211794728047,
+        "theta": 2.0,
+        "gap_width": 0.9095842358945609,
+        "GUE_large_gap_tail_schematic": 0.04321391826377226,
+        "note": "schematic GUE tail only \u2014 not a theorem for zeta"
+      },
+      {
+        "t": 1000000.0,
+        "mean_gap": 0.45479211794728047,
+        "theta": 3.0,
+        "gap_width": 1.3643763538418414,
+        "GUE_large_gap_tail_schematic": 0.0008514383428051582,
+        "note": "schematic GUE tail only \u2014 not a theorem for zeta"
+      },
+      {
+        "t": 1000000000000.0,
+        "mean_gap": 0.22739605897364024,
+        "theta": 0.5,
+        "gap_width": 0.11369802948682012,
+        "GUE_large_gap_tail_schematic": 0.8217249580338772,
+        "note": "schematic GUE tail only \u2014 not a theorem for zeta"
+      },
+      {
+        "t": 1000000000000.0,
+        "mean_gap": 0.22739605897364024,
+        "theta": 1.0,
+        "gap_width": 0.22739605897364024,
+        "GUE_large_gap_tail_schematic": 0.45593812776599624,
+        "note": "schematic GUE tail only \u2014 not a theorem for zeta"
+      },
+      {
+        "t": 1000000000000.0,
+        "mean_gap": 0.22739605897364024,
+        "theta": 2.0,
+        "gap_width": 0.45479211794728047,
+        "GUE_large_gap_tail_schematic": 0.04321391826377226,
+        "note": "schematic GUE tail only \u2014 not a theorem for zeta"
+      },
+      {
+        "t": 1000000000000.0,
+        "mean_gap": 0.22739605897364024,
+        "theta": 3.0,
+        "gap_width": 0.6821881769209207,
+        "GUE_large_gap_tail_schematic": 0.0008514383428051582,
+        "note": "schematic GUE tail only \u2014 not a theorem for zeta"
+      }
+    ],
+    "link_to_P3_L3": "Path continuation needs gap+Omega simultaneously. This package records that the correlation is a genuine open classical problem, not a missing citation.",
+    "conclusion": "No classical theorem links large hybrid discrepancy times to wide ordinate gaps. Conditional/heuristic templates exist (GUE+independence) but are not proved for zeta. Gap+Omega correlation remains OPEN as a pure Cat A obstruction for tube paths."
+  },
+  "N3_omoll": {
+    "status": "N3_O_MOLL_SURVEY_EXECUTED",
+    "catalogue": [
+      {
+        "name": "Dirichlet polynomial mollifier (Levinson, Conrey)",
+        "form": "psi(s) = sum_{n<=y} mu(n) n^{-s} / n^{a} or similar",
+        "target": "increase proportion of zeros on the critical line (amplitude of zeta*psi)",
+        "phase_oriented": false,
+        "feeds_O_TL": false,
+        "note": "Optimizes |zeta psi| moments / horizontal distribution \u2014 not arg P_X lower bounds"
+      },
+      {
+        "name": "Levinson method (1974)",
+        "form": "mollified second moment on Re s = 1/2 + a/log T",
+        "target": ">= 1/3 of zeros on the line (later improved)",
+        "phase_oriented": false,
+        "feeds_O_TL": false,
+        "note": "Zero-counting on the line; not continuous arg of hybrid Euler product"
+      },
+      {
+        "name": "Conrey / Bui-Conrey-Young type long mollifiers",
+        "form": "longer Dirichlet polynomials, often with mu * P(log)",
+        "target": "larger proportion on the line",
+        "phase_oriented": false,
+        "feeds_O_TL": false,
+        "note": "Still amplitude/zero-detection technology"
+      },
+      {
+        "name": "Soundararajan resonance method",
+        "form": "resonator R(t) = sum n^{-it} over special set",
+        "target": "large |zeta(1/2+it)|",
+        "phase_oriented": "partial \u2014 phase alignment of Dirichlet terms",
+        "feeds_O_TL": "partial \u2014 feeds large values / Omega, not directly arg P_X at maximal abscissa",
+        "note": "Closest classical cousin to phase alignment; still not a mollifier for A_X at O-TL locations"
+      },
+      {
+        "name": "GHK hybrid weight u / f_star (programme)",
+        "form": "smooth cutoff for hybrid Euler-Hadamard product",
+        "target": "identity zeta = P_X Z_X (1+E)",
+        "phase_oriented": "infrastructure only",
+        "feeds_O_TL": "enables hybrid arg split; not a lower-bound engine",
+        "note": "Already used; not O-Moll"
+      },
+      {
+        "name": "Programme O-Moll target (open)",
+        "form": "unknown \u2014 would need to boost continuous theta_X or A_X at maximal abscissa",
+        "target": "|A_X| or |theta_X| >> log log X with controlled remainder",
+        "phase_oriented": true,
+        "feeds_O_TL": true,
+        "note": "No classical object matches this specification"
+      }
+    ],
+    "exact_programme_match_count": 0,
+    "partial_cousins": [],
+    "decision": "No concrete classical phase-oriented mollifier matches O-Moll. The catalogue entry 'Programme O-Moll target' is the open obligation itself, not a classical object. Resonance method is the nearest cousin. O-Moll remains OPEN.",
+    "conclusion": "O-Moll not closable from classical shelf inventory on 2026-08-08."
+  },
+  "N4_isoh": {
+    "status": "N4_ISO_H_TECHNOLOGY_CEILING_EXECUTED",
+    "definition_Iso_H": "At rightmost abscissa beta*>1/2, up to EF truncation the only zeros with Re rho = beta* are {rho*, conj rho*}.",
+    "tools": [
+      {
+        "tool": "Point isolation of zeros",
+        "gives": "Finite zeros on compact height segments",
+        "gives_Iso_H_unbounded": false
+      },
+      {
+        "tool": "Functional equation quartets",
+        "gives": "Only forced same-abscissa partner is conjugate",
+        "gives_Iso_H_unbounded": false
+      },
+      {
+        "tool": "Ivic multiplicity bounds",
+        "gives": "Control m at one point; large m pushes left",
+        "gives_Iso_H_unbounded": false
+      },
+      {
+        "tool": "Zero density N(sigma,T)",
+        "gives": "Bulk count to the right of sigma",
+        "gives_Iso_H_unbounded": false,
+        "note": "Density is not isolation (RH_Density_vs_Isolation.md)"
+      },
+      {
+        "tool": "Maynard-Pratt half-isolation",
+        "gives": "Local one-sided vertical neighborhood; few such zeros; under Hyp F => better density",
+        "gives_Iso_H_unbounded": false,
+        "note": "Not Iso_H; converse direction under Hypothesis F"
+      },
+      {
+        "tool": "Levinson-Ivic horizontal isolation near sigma=1",
+        "gives": "Better zero-free / isolation near 1",
+        "gives_Iso_H_unbounded": false,
+        "note": "Edge geometry, not arbitrary beta*>1/2"
+      },
+      {
+        "tool": "Hypothesis F (finite vertical lines)",
+        "gives": "Conditional density improvements with half-isolation",
+        "gives_Iso_H_unbounded": false,
+        "note": "Conditional; not unconditional Iso_H"
+      },
+      {
+        "tool": "NEW isolation technology (required)",
+        "gives": "N_line(beta*,T) = O((log T)^C) or finite for each beta*>1/2",
+        "gives_Iso_H_unbounded": true,
+        "note": "Does not exist in classical corpus as of this resolve"
+      }
+    ],
+    "proved_implications_intact": "(RM)+(Iso_H) => OP1 => B_theta (ND1)",
+    "new_technology_found": false,
+    "conclusion": "No new isolation technology appears in the classical corpus. Density will not imply Iso_H. Unconditional Iso_H remains OPEN. Do not claim progress beyond the ceiling."
+  },
+  "N5_firewall": {
+    "status": "N5_ZLA_RESIDUAL_FIREWALL_COMPLIANT",
+    "zla_rules": [
+      "No model constants in zeta theorem environments",
+      "No residual packaging integers (18, 521, 539, 56, ...) as lemmas about zeta",
+      "No 11D / brane / continuum Cat B objects in pure Cat A RH proofs",
+      "Classical analysis language only for zeta claims"
+    ],
+    "residual_locks_not_reopened": [
+      "A0-A2 discrete",
+      "A3 first model",
+      "A4-A5 0-stem",
+      "A4+/A5+ on K+",
+      "Form SS / permanent class / thin-F kit",
+      "P+ optional permanent-class survival lock (combinatorial only)",
+      "Option 3 / No-Go"
+    ],
+    "this_package_compliance": {
+      "uses_residual_in_zeta_lemmas": false,
+      "reopens_Architecture_A": false,
+      "introduces_model_constants_in_RH": false,
+      "category_A_B_separation": true
+    },
+    "conclusion": "Firewall held. Tracks 1-4 are pure Cat A classical analysis only."
+  },
+  "global_conclusion": {
+    "N1": "Absolute far-sum never reaches 0.4 under GHK-feasible X. Required kappa <= 0.0144 at best cell (c_r=10.0, logX=14.80). Random-walk 1/sqrt(J) is NOT enough there (kappa_rw=0.1508). Strong 1/J also short (=0.0227). Square 1/J^2 works in 105/105 window cells. Only strong coherent signed cancellation (stronger than random walk) can open numerical M1.2 under real c1. Signed-sum attack is the vessel; kappa theorem open. Path radius helps mildly but r>>mean gap breaks isolation.",
+    "N2": "No classical theorem links large hybrid discrepancy times to wide ordinate gaps. Conditional/heuristic templates exist (GUE+independence) but are not proved for zeta. Gap+Omega correlation remains OPEN as a pure Cat A obstruction for tube paths.",
+    "N3": "No concrete classical phase-oriented mollifier matches O-Moll. The catalogue entry 'Programme O-Moll target' is the open obligation itself, not a classical object. Resonance method is the nearest cousin. O-Moll remains OPEN.",
+    "N4": "No new isolation technology appears in the classical corpus. Density will not imply Iso_H. Unconditional Iso_H remains OPEN. Do not claim progress beyond the ceiling.",
+    "N5": "Firewall held. Tracks 1-4 are pure Cat A classical analysis only.",
+    "one_liner": "Non-absolute far-sum: need ~1/J^2-level coherent cancellation (stronger than random walk); signed-sum kappa theorem open. Gap+Omega: no classical link. O-Moll: no shelf match. Iso_H: no new tech. ZLA/residual firewall held. RH/O-TL open.",
+    "kappa_easiest": {
+      "logX": 14.8,
+      "c_r": 5.0,
+      "far_abs": 28.4052776661712,
+      "J": 44.97063922330347,
+      "kappa_need_for_far_0.4": 0.014081890157911515,
+      "equiv_random_walk": true,
+      "equiv_strong_1_over_J": true
+    }
+  }
+}
