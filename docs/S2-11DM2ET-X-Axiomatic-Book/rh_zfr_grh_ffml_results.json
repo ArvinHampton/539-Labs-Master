@@ -1,0 +1,83 @@
+{
+  "status": "RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF",
+  "date": "2026-08-08",
+  "mandate": "Explore specific zero-free regions; investigate Grand Riemann Hypothesis; clarify FFML",
+  "zla": true,
+  "does_not_prove": [
+    "RH",
+    "GRH",
+    "Form C",
+    "B_theta",
+    "Iso_H",
+    "O-TL"
+  ],
+  "zero_free_regions": {
+    "classical": "sigma >= 1 - c/log(|t|+2)",
+    "Vinogradov_Korobov": "sigma >= 1 - c/((log|t|)^{2/3}(loglog|t|)^{1/3})",
+    "finite_height": "zeros |gamma|<=T0 on critical line (computational)",
+    "zf_table_schematic": [
+      {
+        "t": 100,
+        "classical_1_minus_beta_schematic": 0.03793289248907956,
+        "VK_1_minus_beta_schematic": 0.005452173225508193
+      },
+      {
+        "t": 1000000.0,
+        "classical_1_minus_beta_schematic": 0.012698667223180062,
+        "VK_1_minus_beta_schematic": 0.0021879232373306933
+      },
+      {
+        "t": 1000000000000.0,
+        "classical_1_minus_beta_schematic": 0.006349334530748836,
+        "VK_1_minus_beta_schematic": 0.0012747717335983074
+      },
+      {
+        "t": 3000000000000.0,
+        "classical_1_minus_beta_schematic": 0.006106537943611711,
+        "VK_1_minus_beta_schematic": 0.0012372370352289135
+      },
+      {
+        "t": 1e+30,
+        "classical_1_minus_beta_schematic": 0.002539733812299718,
+        "VK_1_minus_beta_schematic": 0.0006380379622528724
+      }
+    ],
+    "feeds": [
+      "PNT upper bounds",
+      "residual upper envelope",
+      "edge near sigma=1"
+    ],
+    "does_not_feed": [
+      "Form C lower bound",
+      "Iso_H moderate beta*",
+      "kappa p>1",
+      "O-TL"
+    ]
+  },
+  "Grand_Riemann_Hypothesis": {
+    "spelling": "Grand Riemann Hypothesis (user wrote Reimann)",
+    "Dirichlet_GRH": "zeros of all L(s,chi) on Re=1/2",
+    "Grand_automorphic": "zeros of all automorphic L-functions on Re=1/2",
+    "includes_RH": true,
+    "resolves_RH_unconditionally": false,
+    "off_line_Form_C_under_GRH": "vacuous (no off-line zeros)",
+    "ZLA_admissible_hypothesis": true
+  },
+  "FFML": {
+    "full_name": "Fixed-Frequency Multiplicative Large-Value Barrier",
+    "code": "FFML",
+    "is": "method-class barrier: free-t / pretentious / mean-in-t large values do not prove Form C at fixed gamma*",
+    "is_not": [
+      "proof Form C is false",
+      "unprovability claim",
+      "active under RH (vacuous)"
+    ],
+    "escape": [
+      "EF-feedback using that gamma* is a zero",
+      "Iso_H or DH gates",
+      "named conditional Form C"
+    ]
+  },
+  "unconditional_resolutions": 0,
+  "global_conclusion": "ZF regions strengthen near-sigma=1 upper bounds only; Grand RH vacates off-line Form C rather than proving it; FFML is a method-class barrier (free frequency vs fixed gamma*), not impossibility of Form C."
+}
