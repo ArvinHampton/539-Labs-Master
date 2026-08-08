@@ -1,0 +1,592 @@
+{
+  "status": "RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF",
+  "date": "2026-08-08",
+  "mandate": "Pursue all five ranked remaining hopes",
+  "zla": true,
+  "does_not_prove": [
+    "RH",
+    "O-TL",
+    "B_theta",
+    "Iso_H",
+    "Mass-with-A",
+    "kappa theorem",
+    "PAO",
+    "GO",
+    "SOC"
+  ],
+  "H1_phase_aligned_Omega": {
+    "status": "H1_PHASE_ALIGNED_OMEGA_EXECUTED",
+    "form_B": "limsup |int_2^X (psi-x) x^{-rho*-1} (log x)^{-1} dx| = infinity",
+    "equivalent_to": "B_theta off-line via signed residual Thm 4.1",
+    "proved": [
+      "signed residual formula (19)",
+      "self loglog cancellation",
+      "ZF upper bound (not lower)",
+      "classical Omega: psi-x = Omega(x^{beta*}/|rho*|) if zero at rho*"
+    ],
+    "open_core": "phase alignment of Omega points of psi-x with x^{i gamma*} on positive log-measure",
+    "conditional_lemma_PAO": {
+      "name": "PAO(c, delta)",
+      "statement": "There exist x_n -> infinity and delta_n in (0,1) such that on [x_n, x_n(1+delta_n)], Re( e^{-i gamma* log x} (psi(x)-x) x^{-beta*} ) >= c > 0, and int_{x_n}^{x_n(1+delta_n)} dx/(x log x) >= delta > 0 infinitely often (or sum of measures -> infinity).",
+      "conclusion": "Form B / |S_X|-> infinity along a subsequence (under admissible T(X))",
+      "status": "HYPOTHESIS \u2014 not proved"
+    },
+    "numerical_schematic": [
+      {
+        "beta_star": 0.55,
+        "logX": 10,
+        "ZF_upper_schematic": 6.561289416202767,
+        "full_align_schematic": 20.003806955671507,
+        "target_loglog": 2.302585092994046,
+        "upper_exceeds_target": true,
+        "note": "schematic classical scales; not a theorem of alignment"
+      },
+      {
+        "beta_star": 0.55,
+        "logX": 20,
+        "ZF_upper_schematic": 259.05855855374136,
+        "full_align_schematic": 900.3426586194863,
+        "target_loglog": 2.995732273553991,
+        "upper_exceeds_target": true,
+        "note": "schematic classical scales; not a theorem of alignment"
+      },
+      {
+        "beta_star": 0.55,
+        "logX": 40,
+        "ZF_upper_schematic": 872104.9174694611,
+        "full_align_schematic": 3647776.063185022,
+        "target_loglog": 3.6888794541139363,
+        "upper_exceeds_target": true,
+        "note": "schematic classical scales; not a theorem of alignment"
+      },
+      {
+        "beta_star": 0.55,
+        "logX": 60,
+        "ZF_upper_schematic": 4086925318.963456,
+        "full_align_schematic": 19705490392.659157,
+        "target_loglog": 4.0943445622221,
+        "upper_exceeds_target": true,
+        "note": "schematic classical scales; not a theorem of alignment"
+      },
+      {
+        "beta_star": 0.55,
+        "logX": 100,
+        "ZF_upper_schematic": 1.2851600114359251e+17,
+        "full_align_schematic": 7.763171346107766e+17,
+        "target_loglog": 4.605170185988092,
+        "upper_exceeds_target": true,
+        "note": "schematic classical scales; not a theorem of alignment"
+      },
+      {
+        "beta_star": 0.6,
+        "logX": 10,
+        "ZF_upper_schematic": 3.979623198174986,
+        "full_align_schematic": 13.649537508286063,
+        "target_loglog": 2.302585092994046,
+        "upper_exceeds_target": true,
+        "note": "schematic classical scales; not a theorem of alignment"
+      },
+      {
+        "beta_star": 0.6,
+        "logX": 20,
+        "ZF_upper_schematic": 95.30231775142988,
+        "full_align_schematic": 372.6197483802162,
+        "target_loglog": 2.995732273553991,
+        "upper_exceeds_target": true,
+        "note": "schematic classical scales; not a theorem of alignment"
+      },
+      {
+        "beta_star": 0.6,
+        "logX": 40,
+        "ZF_upper_schematic": 118026.56601777258,
+        "full_align_schematic": 555381.9075317426,
+        "target_loglog": 3.6888794541139363,
+        "upper_exceeds_target": true,
+        "note": "schematic classical scales; not a theorem of alignment"
+      },
+      {
+        "beta_star": 0.6,
+        "logX": 60,
+        "ZF_upper_schematic": 203476030.26958856,
+        "full_align_schematic": 1103713422.0768127,
+        "target_loglog": 4.0943445622221,
+        "upper_exceeds_target": true,
+        "note": "schematic classical scales; not a theorem of alignment"
+      },
+      {
+        "beta_star": 0.6,
+        "logX": 100,
+        "ZF_upper_schematic": 865934004239939.4,
+        "full_align_schematic": 5884631670925513.0,
+        "target_loglog": 4.605170185988092,
+        "upper_exceeds_target": true,
+        "note": "schematic classical scales; not a theorem of alignment"
+      }
+    ],
+    "measure_schematic": [
+      {
+        "beta_star": 0.55,
+        "logX": 20.0,
+        "total_log_measure": 3.3622451941356553,
+        "mu_need_for_loglog_at_c": 29.957322735539908,
+        "fraction_of_total_needed": 8.909916144066687,
+        "reading": "If alignment constant c is O(1), need a positive fraction of total log-measure aligned \u2014 a strong resonance hypothesis."
+      },
+      {
+        "beta_star": 0.55,
+        "logX": 40.0,
+        "total_log_measure": 4.0553923746956,
+        "mu_need_for_loglog_at_c": 36.88879454113936,
+        "fraction_of_total_needed": 9.09623314659121,
+        "reading": "If alignment constant c is O(1), need a positive fraction of total log-measure aligned \u2014 a strong resonance hypothesis."
+      },
+      {
+        "beta_star": 0.55,
+        "logX": 80.0,
+        "total_log_measure": 4.748539555255546,
+        "mu_need_for_loglog_at_c": 43.82026634673881,
+        "fraction_of_total_needed": 9.228156538833042,
+        "reading": "If alignment constant c is O(1), need a positive fraction of total log-measure aligned \u2014 a strong resonance hypothesis."
+      },
+      {
+        "beta_star": 0.7,
+        "logX": 20.0,
+        "total_log_measure": 3.3622451941356553,
+        "mu_need_for_loglog_at_c": 29.957322735539908,
+        "fraction_of_total_needed": 8.909916144066687,
+        "reading": "If alignment constant c is O(1), need a positive fraction of total log-measure aligned \u2014 a strong resonance hypothesis."
+      },
+      {
+        "beta_star": 0.7,
+        "logX": 40.0,
+        "total_log_measure": 4.0553923746956,
+        "mu_need_for_loglog_at_c": 36.88879454113936,
+        "fraction_of_total_needed": 9.09623314659121,
+        "reading": "If alignment constant c is O(1), need a positive fraction of total log-measure aligned \u2014 a strong resonance hypothesis."
+      },
+      {
+        "beta_star": 0.7,
+        "logX": 80.0,
+        "total_log_measure": 4.748539555255546,
+        "mu_need_for_loglog_at_c": 43.82026634673881,
+        "fraction_of_total_needed": 9.228156538833042,
+        "reading": "If alignment constant c is O(1), need a positive fraction of total log-measure aligned \u2014 a strong resonance hypothesis."
+      },
+      {
+        "beta_star": 0.9,
+        "logX": 20.0,
+        "total_log_measure": 3.3622451941356553,
+        "mu_need_for_loglog_at_c": 29.957322735539908,
+        "fraction_of_total_needed": 8.909916144066687,
+        "reading": "If alignment constant c is O(1), need a positive fraction of total log-measure aligned \u2014 a strong resonance hypothesis."
+      },
+      {
+        "beta_star": 0.9,
+        "logX": 40.0,
+        "total_log_measure": 4.0553923746956,
+        "mu_need_for_loglog_at_c": 36.88879454113936,
+        "fraction_of_total_needed": 9.09623314659121,
+        "reading": "If alignment constant c is O(1), need a positive fraction of total log-measure aligned \u2014 a strong resonance hypothesis."
+      },
+      {
+        "beta_star": 0.9,
+        "logX": 80.0,
+        "total_log_measure": 4.748539555255546,
+        "mu_need_for_loglog_at_c": 43.82026634673881,
+        "fraction_of_total_needed": 9.228156538833042,
+        "reading": "If alignment constant c is O(1), need a positive fraction of total log-measure aligned \u2014 a strong resonance hypothesis."
+      }
+    ],
+    "resolution_today": false,
+    "conclusion": "H1 reduces B_theta to multiplicative resonance between psi-x Omega points and the phase x^{i gamma*}. Classical Omega of psi-x is not enough without alignment. PAO(c,delta) is the clean conditional; unproved."
+  },
+  "H2_kappa_signed_far": {
+    "status": "H2_KAPPA_SIGNED_FAR_SUM_EXECUTED",
+    "definition": "far_signed <= kappa * far_abs with far_abs = C_U (J+1) Lg/(pi logX), C_U=1",
+    "target": "kappa <= kappa_need so far_signed <= 0.4 under E_GHK<=0.1",
+    "easiest_cell": {
+      "c1": 1.0,
+      "c_r": 5.0,
+      "logX": 14.8,
+      "J": 44.97063922330347,
+      "far_abs": 28.4052776661712,
+      "kappa_need": 0.014081890157911515,
+      "J_power_need": 1.1200353914372974,
+      "rw_kappa": 0.14911985393475957,
+      "strong_kappa": 0.02223673083752403,
+      "square_kappa": 0.0004944721983404922
+    },
+    "easiest_under_c1_291": null,
+    "grid_best_per_c1_cr": [
+      {
+        "c1": 1.0,
+        "c_r": 0.25,
+        "logX": 14.8,
+        "J": 49.292567318190834,
+        "far_abs": 31.075798887165437,
+        "kappa_need": 0.012871752756940493,
+        "J_power_need": 1.1167196592287603,
+        "rw_kappa": 0.14243256025393605,
+        "strong_kappa": 0.020287034220491128,
+        "square_kappa": 0.00041156375746337803
+      },
+      {
+        "c1": 1.0,
+        "c_r": 1.0,
+        "logX": 14.8,
+        "J": 47.292567318190834,
+        "far_abs": 29.83999803052771,
+        "kappa_need": 0.013404826621998479,
+        "J_power_need": 1.118191275588401,
+        "rw_kappa": 0.1454131072204976,
+        "strong_kappa": 0.021144971751519935,
+        "square_kappa": 0.000447109830372576
+      },
+      {
+        "c1": 1.0,
+        "c_r": 5.0,
+        "logX": 14.8,
+        "J": 44.97063922330347,
+        "far_abs": 28.4052776661712,
+        "kappa_need": 0.014081890157911515,
+        "J_power_need": 1.1200353914372974,
+        "rw_kappa": 0.14911985393475957,
+        "strong_kappa": 0.02223673083752403,
+        "square_kappa": 0.0004944721983404922
+      }
+    ],
+    "model_comparison": {
+      "random_walk": "kappa = J^{-1/2} \u2014 insufficient at all GHK cells under c1=1",
+      "strong_1_J": "kappa = J^{-1} \u2014 insufficient at best cells",
+      "square_1_J2": "kappa = J^{-2} \u2014 sufficient when GHK window nonempty (c1 small)",
+      "c1_291": "GHK window empty or kappa_need still below square in practice \u2014 joint fails"
+    },
+    "theorem_status": {
+      "proved_kappa_less_1": "only absolute kappa=1",
+      "proved_kappa_rw": false,
+      "proved_kappa_square": false,
+      "vessel": "RH_Signed_Sum_Attack.md and hybrid U-sum over far zeros"
+    },
+    "structural_tension": "H1 seeks LOWER bounds via resonance (alignment); H2 seeks UPPER bounds via cancellation. They are dual. A theorem giving kappa ~ 1/J^2 for far U-sums would open M1.2 numerically but is not implied by H1 and is not classical.",
+    "resolution_today": false,
+    "conclusion": "Need kappa <= ~0.01408 (J-power ~1.12) at easiest c1=1 cell; square model works only as a model. No proved kappa < 1 beyond absolute. H2 remains OPEN."
+  },
+  "H3_polylog_or_isoh": {
+    "status": "H3_POLYLOG_OR_ISOH_EXECUTED",
+    "polylog_StripDens": {
+      "classical_ceiling": [
+        {
+          "sigma": 0.55,
+          "Ingham_T_exponent_schematic": 0.9310344827586207,
+          "polylog": false,
+          "reading": "polylog only if exponent 0; classical exponents positive for sig<1"
+        },
+        {
+          "sigma": 0.6,
+          "Ingham_T_exponent_schematic": 0.8571428571428573,
+          "polylog": false,
+          "reading": "polylog only if exponent 0; classical exponents positive for sig<1"
+        },
+        {
+          "sigma": 0.7,
+          "Ingham_T_exponent_schematic": 0.6923076923076924,
+          "polylog": false,
+          "reading": "polylog only if exponent 0; classical exponents positive for sig<1"
+        },
+        {
+          "sigma": 0.8,
+          "Ingham_T_exponent_schematic": 0.4999999999999999,
+          "polylog": false,
+          "reading": "polylog only if exponent 0; classical exponents positive for sig<1"
+        },
+        {
+          "sigma": 0.9,
+          "Ingham_T_exponent_schematic": 0.27272727272727265,
+          "polylog": false,
+          "reading": "polylog only if exponent 0; classical exponents positive for sig<1"
+        },
+        {
+          "sigma": 0.95,
+          "Ingham_T_exponent_schematic": 0.142857142857143,
+          "polylog": false,
+          "reading": "polylog only if exponent 0; classical exponents positive for sig<1"
+        },
+        {
+          "sigma": 0.99,
+          "Ingham_T_exponent_schematic": 0.02970297029702973,
+          "polylog": false,
+          "reading": "polylog only if exponent 0; classical exponents positive for sig<1"
+        }
+      ],
+      "near_1": "KLN/Bellotti-type log-power bounds in a thin strip near sigma=1 only",
+      "moderate_sigma": "positive T-power \u2014 polylog OPEN",
+      "DH_template": "DH(beta*,C) named; conditional Mass-with-A (Step C)",
+      "resolution_today": false
+    },
+    "Iso_H": {
+      "definition": "only {rho*, conj} on Re=beta* up to EF truncation",
+      "new_technology_found": false,
+      "tools_insufficient": [
+        "point isolation",
+        "FE quartets",
+        "Ivic multiplicity",
+        "zero density",
+        "Maynard-Pratt half-isolation",
+        "Levinson-Ivic near 1",
+        "Hypothesis F (conditional only)"
+      ],
+      "resolution_today": false
+    },
+    "proved_implications_intact": [
+      "(RM)+(Iso_H)=>B_theta",
+      "(RM)+(polylog StripDens)=>Mass-with-A=>B_theta",
+      "(RM)+DH(beta*,C)=>polylog A template"
+    ],
+    "conclusion": "Neither polylog StripDens at moderate sigma nor new Iso_H technology is available. Conditional DH template remains the clean packaging for density-side Mass-with-A.",
+    "resolution_today": false
+  },
+  "H4_gap_omega": {
+    "status": "H4_GAP_OMEGA_EXECUTED",
+    "classical": {
+      "mean_gap": 0.21870050406470884,
+      "large_values_zeta": "classical / resonance literature",
+      "hybrid_on_line_Omega_fixed_X": "programme-accepted",
+      "joint_theorem": "NONE"
+    },
+    "conditional_template_GO": {
+      "name": "GO(theta, X)",
+      "statement": "There exist infinitely many t_n such that (i) |Im D_X(1/2+it_n)| >> sqrt(X)/log X (or programme Omega scale), and (ii) dist(t_n, zeros' ordinates) >= theta * mean_gap(t_n).",
+      "conclusion": "tube path at t_n has Phi_local controlled; feeds P3 continuation attempt",
+      "status": "HYPOTHESIS \u2014 not proved"
+    },
+    "numerical_tube_vs_res": [
+      {
+        "logX": 8,
+        "theta_gap": 0.5,
+        "d_tube": 0.10935025203235442,
+        "Phi_local": 9.144926339119193,
+        "integral_local_0.2": 1.8289852678238387,
+        "reservoir_sqrtX_over_logX": 6.8247687541430295,
+        "local_alone_lt_half_res": true
+      },
+      {
+        "logX": 8,
+        "theta_gap": 1.0,
+        "d_tube": 0.21870050406470884,
+        "Phi_local": 4.5724631695595965,
+        "integral_local_0.2": 0.9144926339119194,
+        "reservoir_sqrtX_over_logX": 6.8247687541430295,
+        "local_alone_lt_half_res": true
+      },
+      {
+        "logX": 8,
+        "theta_gap": 2.0,
+        "d_tube": 0.4374010081294177,
+        "Phi_local": 2.2862315847797983,
+        "integral_local_0.2": 0.4572463169559597,
+        "reservoir_sqrtX_over_logX": 6.8247687541430295,
+        "local_alone_lt_half_res": true
+      },
+      {
+        "logX": 8,
+        "theta_gap": 3.0,
+        "d_tube": 0.6561015121941265,
+        "Phi_local": 1.5241543898531988,
+        "integral_local_0.2": 0.3048308779706398,
+        "reservoir_sqrtX_over_logX": 6.8247687541430295,
+        "local_alone_lt_half_res": true
+      },
+      {
+        "logX": 10,
+        "theta_gap": 0.5,
+        "d_tube": 0.10935025203235442,
+        "Phi_local": 9.144926339119193,
+        "integral_local_0.2": 1.8289852678238387,
+        "reservoir_sqrtX_over_logX": 14.84131591025766,
+        "local_alone_lt_half_res": true
+      },
+      {
+        "logX": 10,
+        "theta_gap": 1.0,
+        "d_tube": 0.21870050406470884,
+        "Phi_local": 4.5724631695595965,
+        "integral_local_0.2": 0.9144926339119194,
+        "reservoir_sqrtX_over_logX": 14.84131591025766,
+        "local_alone_lt_half_res": true
+      },
+      {
+        "logX": 10,
+        "theta_gap": 2.0,
+        "d_tube": 0.4374010081294177,
+        "Phi_local": 2.2862315847797983,
+        "integral_local_0.2": 0.4572463169559597,
+        "reservoir_sqrtX_over_logX": 14.84131591025766,
+        "local_alone_lt_half_res": true
+      },
+      {
+        "logX": 10,
+        "theta_gap": 3.0,
+        "d_tube": 0.6561015121941265,
+        "Phi_local": 1.5241543898531988,
+        "integral_local_0.2": 0.3048308779706398,
+        "reservoir_sqrtX_over_logX": 14.84131591025766,
+        "local_alone_lt_half_res": true
+      },
+      {
+        "logX": 12,
+        "theta_gap": 0.5,
+        "d_tube": 0.10935025203235442,
+        "Phi_local": 9.144926339119193,
+        "integral_local_0.2": 1.8289852678238387,
+        "reservoir_sqrtX_over_logX": 33.61906612439459,
+        "local_alone_lt_half_res": true
+      },
+      {
+        "logX": 12,
+        "theta_gap": 1.0,
+        "d_tube": 0.21870050406470884,
+        "Phi_local": 4.5724631695595965,
+        "integral_local_0.2": 0.9144926339119194,
+        "reservoir_sqrtX_over_logX": 33.61906612439459,
+        "local_alone_lt_half_res": true
+      },
+      {
+        "logX": 12,
+        "theta_gap": 2.0,
+        "d_tube": 0.4374010081294177,
+        "Phi_local": 2.2862315847797983,
+        "integral_local_0.2": 0.4572463169559597,
+        "reservoir_sqrtX_over_logX": 33.61906612439459,
+        "local_alone_lt_half_res": true
+      },
+      {
+        "logX": 12,
+        "theta_gap": 3.0,
+        "d_tube": 0.6561015121941265,
+        "Phi_local": 1.5241543898531988,
+        "integral_local_0.2": 0.3048308779706398,
+        "reservoir_sqrtX_over_logX": 33.61906612439459,
+        "local_alone_lt_half_res": true
+      },
+      {
+        "logX": 14,
+        "theta_gap": 0.5,
+        "d_tube": 0.10935025203235442,
+        "Phi_local": 9.144926339119193,
+        "integral_local_0.2": 1.8289852678238387,
+        "reservoir_sqrtX_over_logX": 78.33093988774704,
+        "local_alone_lt_half_res": true
+      },
+      {
+        "logX": 14,
+        "theta_gap": 1.0,
+        "d_tube": 0.21870050406470884,
+        "Phi_local": 4.5724631695595965,
+        "integral_local_0.2": 0.9144926339119194,
+        "reservoir_sqrtX_over_logX": 78.33093988774704,
+        "local_alone_lt_half_res": true
+      },
+      {
+        "logX": 14,
+        "theta_gap": 2.0,
+        "d_tube": 0.4374010081294177,
+        "Phi_local": 2.2862315847797983,
+        "integral_local_0.2": 0.4572463169559597,
+        "reservoir_sqrtX_over_logX": 78.33093988774704,
+        "local_alone_lt_half_res": true
+      },
+      {
+        "logX": 14,
+        "theta_gap": 3.0,
+        "d_tube": 0.6561015121941265,
+        "Phi_local": 1.5241543898531988,
+        "integral_local_0.2": 0.3048308779706398,
+        "reservoir_sqrtX_over_logX": 78.33093988774704,
+        "local_alone_lt_half_res": true
+      }
+    ],
+    "resolution_today": false,
+    "conclusion": "Local Phi can be small in wide gaps, but correlation with hybrid Omega times is unproved. GO(theta,X) is the clean conditional; H4 remains OPEN."
+  },
+  "H5_strong_offline_opc": {
+    "status": "H5_STRONG_OFFLINE_OPC_CORE_EXECUTED",
+    "proved": [
+      "hybrid phase identity theta_X = arg zeta - arg Z_X - Im E_GHK",
+      "typical Omega >> sqrt(log log X) on the line for theta_X and Delta_X",
+      "strong on-line model Im D_X Omega accepted for fixed X (resonance discrepancy)",
+      "R4.1 pure GHK strip error for fixed X at large t",
+      "monodromy of P_X is NOT an m*pi engine"
+    ],
+    "OPC_Core": "|arg zeta - arg Z_X| >> log log X (strong scale)",
+    "off_line_target": "same lower bound at sigma -> beta* (maximal abscissa) or along M1.3 paths",
+    "missing_steps": [
+      "strong Omega at loglog scale (on or off line)",
+      "transfer on-line -> off-line (path continuation / O-M1.3bis)",
+      "remainder domination (O-M1.2) at those points",
+      "R4.2 zero avoidance for Kronecker maximisers",
+      "R4.3 continuous argument branch transfer off-line"
+    ],
+    "scale_table": [
+      {
+        "logX": 5,
+        "typical_sqrt_loglog": 1.2686362411795196,
+        "strong_loglog": 1.6094379124341003,
+        "ratio_strong_over_typical": 1.2686362411795198
+      },
+      {
+        "logX": 10,
+        "typical_sqrt_loglog": 1.5174271293851465,
+        "strong_loglog": 2.302585092994046,
+        "ratio_strong_over_typical": 1.5174271293851465
+      },
+      {
+        "logX": 20,
+        "typical_sqrt_loglog": 1.7308183826022854,
+        "strong_loglog": 2.995732273553991,
+        "ratio_strong_over_typical": 1.7308183826022852
+      },
+      {
+        "logX": 40,
+        "typical_sqrt_loglog": 1.9206455826398414,
+        "strong_loglog": 3.6888794541139363,
+        "ratio_strong_over_typical": 1.9206455826398416
+      },
+      {
+        "logX": 100,
+        "typical_sqrt_loglog": 2.145966026289347,
+        "strong_loglog": 4.605170185988092,
+        "ratio_strong_over_typical": 2.1459660262893476
+      }
+    ],
+    "conditional_template_SOC": {
+      "name": "SOC(X)",
+      "statement": "limsup_{t->infty} |Delta_X(1/2+it)| / log log X > 0 for each fixed large X (strong on-line), AND a path-transfer theorem to a rightmost zero neighborhood.",
+      "status": "HYPOTHESIS package \u2014 strong part open; transfer open"
+    },
+    "resolution_today": false,
+    "conclusion": "Typical on-line Omega is proved; strong loglog and off-line transfer remain open. H5 is the residual core of O-PC toward O-TL. Not resolved today."
+  },
+  "scoreboard": {
+    "H1": {
+      "resolved": false,
+      "conditional_named": "PAO(c,delta)"
+    },
+    "H2": {
+      "resolved": false,
+      "conditional_named": "kappa <= J^{-2} theorem"
+    },
+    "H3": {
+      "resolved": false,
+      "conditional_named": "DH(beta*,C) / Iso_H"
+    },
+    "H4": {
+      "resolved": false,
+      "conditional_named": "GO(theta,X)"
+    },
+    "H5": {
+      "resolved": false,
+      "conditional_named": "SOC(X)+transfer"
+    }
+  },
+  "global_conclusion": "All five ranked hopes pursued: clean conditional names (PAO, kappa, DH/Iso_H, GO, SOC) and quantitative barriers recorded. Zero unconditional resolutions. H1 and H2 are dual (lower vs upper); both open. RH/O-TL open. Residual firewall held."
+}
