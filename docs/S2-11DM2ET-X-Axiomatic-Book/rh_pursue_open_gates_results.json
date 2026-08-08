@@ -1,0 +1,253 @@
+{
+  "status": "RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF",
+  "date": "2026-08-08",
+  "mandate": "Pursue that which is open",
+  "zla": true,
+  "gates": {
+    "Form_C": {
+      "gate": "Form_C",
+      "standing_before": "OPEN",
+      "attempt": {
+        "zero_aware_sketch": "Write S(X;rho*) via Thm 4.1 as residual int(psi-x). Subtract principal singular part of zeta'/zeta near other zeros; ask whether the star zero forces a slow oscillation in psi-x detectable after removing near contamination (epsilon_other). Under Iso_H, epsilon_other from same abscissa vanishes \u2014 reduces to classical Omega amplitude with controlled phase from conjugate only. Without Iso_H, multi-zero contamination blocks the reduction.",
+        "what_can_be_proved_today": [
+          "Form B <-> Form C (already closed)",
+          "Under Iso_H: epsilon_other controlled (conditional template EO(Iso_H) already named)",
+          "Unconditional Form C: still blocked by FFML+ZEFB for free/generic methods"
+        ],
+        "non_circular_EF_feedback": {
+          "status": "OPEN design",
+          "idea": "Use vanishing order at rho* only through local Hadamard factor (s-rho*)^m, not through assuming large prime sums",
+          "blocker": "Local factor gives self loglog already cancelled; remainder is global"
+        }
+      },
+      "standing_after": "OPEN",
+      "advance": "Zero-aware sketch recorded; still requires Iso_H or new technology for unconditional Form C",
+      "closed": false
+    },
+    "kappa_p_gt_1": {
+      "gate": "kappa_p_gt_1",
+      "standing_before": "OPEN",
+      "attempt": {
+        "split": "path = away-from-zeros segments + approach arcs",
+        "away": "MA8 + classical |zeta'/zeta| bounds may give small far U \u2014 partial, not full M1.2",
+        "approach": "requires dist(s, zeros) control = GO input; no unconditional kappa p>1",
+        "rows_sample": [
+          {
+            "regime": "away_crude_strip",
+            "logX": 12,
+            "t": 1000000.0,
+            "U_proxy": 15.905698936601107,
+            "U_le_0.4": false
+          },
+          {
+            "regime": "away_crude_strip",
+            "logX": 12,
+            "t": 1000000000000.0,
+            "U_proxy": 63.62277732574998,
+            "U_le_0.4": false
+          },
+          {
+            "regime": "away_crude_strip",
+            "logX": 12,
+            "t": 3000000000000.0,
+            "U_proxy": 68.78265296354621,
+            "U_le_0.4": false
+          },
+          {
+            "regime": "away_crude_strip",
+            "logX": 14,
+            "t": 1000000.0,
+            "U_proxy": 13.633456231372378,
+            "U_le_0.4": false
+          },
+          {
+            "regime": "away_crude_strip",
+            "logX": 14,
+            "t": 1000000000000.0,
+            "U_proxy": 54.53380913635713,
+            "U_le_0.4": false
+          },
+          {
+            "regime": "away_crude_strip",
+            "logX": 14,
+            "t": 3000000000000.0,
+            "U_proxy": 58.95655968303961,
+            "U_le_0.4": false
+          }
+        ],
+        "away_cells_U_le_0.4": 0,
+        "zf_cells_U_le_0.4": 0
+      },
+      "standing_after": "OPEN",
+      "advance": "Segmented path analysis: away arcs potentially controllable via MA8+classical bounds; approach arcs remain GO-blocked. No p>1 theorem on full M1.3 paths.",
+      "closed": false,
+      "partial": "away-segment conditional template named Kappa_away"
+    },
+    "Iso_H": {
+      "gate": "Iso_H",
+      "standing_before": "OPEN",
+      "attempt": {
+        "tools_rechecked": [
+          "finite-height verification \u2014 only up to T0",
+          "FE conjugate \u2014 only bar rho*",
+          "density \u2014 dead edge to isolation",
+          "half-isolation / Hyp F / Ivic \u2014 local or conditional"
+        ],
+        "new_technology": false
+      },
+      "standing_after": "OPEN",
+      "advance": "Ceiling confirmed; no new isolation method",
+      "closed": false
+    },
+    "DH": {
+      "gate": "DH",
+      "standing_before": "OPEN",
+      "attempt": {
+        "target": "N(beta*,T)=O((log T)^C) at moderate beta*",
+        "classical_shape": [
+          {
+            "sigma": 0.55,
+            "T_power_shape": 0.9310344827586207,
+            "polylog": false
+          },
+          {
+            "sigma": 0.6,
+            "T_power_shape": 0.8571428571428573,
+            "polylog": false
+          },
+          {
+            "sigma": 0.7,
+            "T_power_shape": 0.6923076923076924,
+            "polylog": false
+          },
+          {
+            "sigma": 0.8,
+            "T_power_shape": 0.4999999999999999,
+            "polylog": false
+          },
+          {
+            "sigma": 0.9,
+            "T_power_shape": 0.27272727272727265,
+            "polylog": false
+          },
+          {
+            "sigma": 0.99,
+            "T_power_shape": 0.02970297029702973,
+            "polylog": false
+          }
+        ],
+        "near_1_only_log_power": true
+      },
+      "standing_after": "OPEN",
+      "advance": "No polylog at moderate beta*; implication to B_theta remains conditional",
+      "closed": false
+    },
+    "GO": {
+      "gate": "GO",
+      "standing_before": "OPEN",
+      "attempt": {
+        "need": "hybrid Omega scale AND gap >= theta * mean gap, infinitely often",
+        "have": "mean gaps classical; hybrid Omega on-line fixed X accepted; JOINT open",
+        "link_to_kappa": "MA8 approach arcs need dist to zeros \u2014 GO is the natural input",
+        "conditional_template": "GO(theta,X) already named in H4"
+      },
+      "standing_after": "OPEN",
+      "advance": "Joint still missing; structural necessity for kappa approach arcs reaffirmed",
+      "closed": false
+    },
+    "SOC_strong_offline": {
+      "gate": "SOC_strong_offline",
+      "standing_before": "OPEN (typical closed)",
+      "attempt": {
+        "typical": "CLOSED at sqrt(log log)",
+        "strong_loglog": "OPEN",
+        "offline_transfer": "OPEN \u2014 FE bookkeeping only (P4); needs path + M1.2",
+        "cannot_fake": "Do not claim typical = O-TL scale"
+      },
+      "standing_after": "OPEN",
+      "advance": "No strong loglog; transfer still blocked by path package",
+      "closed": false,
+      "partial_closed": "typical on-line Omega"
+    },
+    "AFE_Moll": {
+      "gate": "AFE_Moll",
+      "standing_before": "OPEN",
+      "attempt": {
+        "surface": "AFE dual F + chi G + R",
+        "objective": "amplify Im log P_X / A_X \u2014 not |zeta| or zero count",
+        "forbidden": "Levinson/Conrey",
+        "construction": "still empty \u2014 no coefficient optimization found for Im log P_X",
+        "design_check": "Any mollifier M that is a short Dirichlet poly multiplies zeta ~ F+chi G; arg(M zeta) = arg M + arg zeta; arg M is a controlled Dirichlet poly phase. To boost theta_X = Im log P_X one would need M to correlate with the partial Euler phase, not with full zeta. That correlation is not classical."
+      },
+      "standing_after": "OPEN",
+      "advance": "Design constraint sharpened (mollify Euler phase not zeta zeros); construction still empty",
+      "closed": false
+    },
+    "B_theta": {
+      "gate": "B_theta",
+      "standing_before": "OPEN",
+      "attempt": {
+        "OR_cut": [
+          "Form_C",
+          "Iso_H",
+          "DH"
+        ],
+        "all_inputs_open": true,
+        "proved_imps": "intact"
+      },
+      "standing_after": "OPEN",
+      "advance": "No OR-input closed this round",
+      "closed": false
+    },
+    "O_TL": {
+      "gate": "O_TL",
+      "standing_before": "OPEN",
+      "attempt": {
+        "AND_cut": [
+          "kappa",
+          "GO",
+          "SOC_strong_offline",
+          "AFE_Moll"
+        ],
+        "all_inputs_open": true,
+        "partial": "typical Omega only"
+      },
+      "standing_after": "OPEN",
+      "advance": "No AND-arm closed this round; kappa segmented analysis is partial only",
+      "closed": false
+    },
+    "RH": {
+      "gate": "RH",
+      "standing_before": "OPEN",
+      "attempt": {
+        "primary": "O_TL still open",
+        "B_theta": "related engine, not proved implication to RH",
+        "no_shortcut": "residual algebra forbidden (ZLA); GRH hypothesis not a proof"
+      },
+      "standing_after": "OPEN",
+      "advance": "None \u2014 superordinate gate",
+      "closed": false
+    }
+  },
+  "newly_closed": [],
+  "partial_advances": [
+    "Form_C: zero-aware sketch; needs Iso_H or new tech",
+    "kappa: segmented away/approach; Kappa_away template; approach=GO",
+    "AFE_Moll: objective sharpened to Euler phase not zero-count",
+    "GO: necessity for kappa approach arcs reaffirmed"
+  ],
+  "still_open": [
+    "Form_C",
+    "kappa_p_gt_1",
+    "Iso_H",
+    "DH",
+    "GO",
+    "SOC_strong_offline",
+    "AFE_Moll",
+    "B_theta",
+    "O_TL",
+    "RH"
+  ],
+  "unconditional_resolutions": 0,
+  "global_conclusion": "All ten open gates pursued. None closed. Partial advances: zero-aware Form C sketch; kappa path segmentation (away vs GO-blocked approach); AFE-Moll objective sharpened. OR-cut and AND-cut inputs all remain open. RH/O-TL open."
+}
