@@ -1,0 +1,34 @@
+{
+  "status": "RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF",
+  "date": "2026-08-08",
+  "B_theta_OR_cut": [
+    "PAO",
+    "Iso_H",
+    "DH"
+  ],
+  "O_TL_AND_cut": [
+    "kappa_J_p",
+    "GO",
+    "SOC",
+    "O-Moll"
+  ],
+  "RH_primary_gate": "O-TL",
+  "dual_gap": {
+    "lower_bound": "PAO",
+    "upper_bound": "kappa_J_p"
+  },
+  "sharpest_tips": {
+    "B_theta": "PAO phase-aligned Omega of signed residual",
+    "O_M1_2": "kappa <= J^{-p}, p>=1.12 (safer ~2)"
+  },
+  "not_gaps": [
+    "signed residual formula",
+    "E1 C_U=1",
+    "typical Omega",
+    "hybrid identity",
+    "R4.1",
+    "proved implications under hyp",
+    "residual A0-A5+"
+  ],
+  "one_liner": "Gaps sit at open tips (PAO|Iso_H|DH) for B_theta and (kappa&GO&SOC&O-Moll) for O-TL; proved subgraph has no internal hole; PAO vs kappa is dual lower/upper phase obstruction."
+}
