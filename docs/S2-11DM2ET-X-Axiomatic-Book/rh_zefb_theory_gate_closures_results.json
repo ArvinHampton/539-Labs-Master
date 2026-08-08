@@ -1,0 +1,235 @@
+{
+  "status": "RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF",
+  "date": "2026-08-08",
+  "mandate": "ZEFB implications; zero-entangled frequency theory; key gate closures summary",
+  "zla": true,
+  "ZEFB": {
+    "full_name": "Zero-Entangled Frequency Barrier",
+    "code": "ZEFB",
+    "definition": "When a frequency parameter in a multiplicative sum is constrained to be the imaginary part of a zero of zeta (or an L-function), generic Diophantine, metric, and free-frequency large-value theorems do not transfer to that frequency.",
+    "scope": {
+      "applies_to": [
+        "Form C at rho* = beta* + i gamma*",
+        "sum Lambda(n) n^{-rho*} and prime subsums at s=rho*",
+        "any n-aspect phase alignment targeting a zero ordinate",
+        "smoothed Weil forms S_g(rho*) at the same frozen frequency"
+      ],
+      "does_not_apply_to": [
+        "free-t large values of zeta(1/2+it) (different barrier: not ZEFB; those work)",
+        "generic gamma not tied to zeros",
+        "Re s > 1 absolute Euler products (no zero entanglement)",
+        "on-line SOC with free path parameter t (until t is forced to a zero height)"
+      ]
+    },
+    "mechanisms": [
+      {
+        "id": "Z1_singularity",
+        "name": "Euler / log-derivative singularity",
+        "detail": "log zeta(s) and zeta'/zeta(s) have singularities at zeros; partial Euler sums sum_{p<=Y} p^{-s} are not independent of the vanishing of zeta at rho*"
+      },
+      {
+        "id": "Z2_non_generic",
+        "name": "Non-generic ordinate",
+        "detail": "Metric theorems for almost-all real gamma miss the measure-zero set of zero ordinates; zero ordinates are arithmetic-special"
+      },
+      {
+        "id": "Z3_circularity",
+        "name": "Circularity risk",
+        "detail": "Using zeta(rho*)=0 to force prime-sum cancellation or alignment can assume what Form C is trying to extract; non-circular EF feedback remains open"
+      },
+      {
+        "id": "Z4_independence_failure",
+        "name": "Parameter independence failure",
+        "detail": "In free Diophantine problems, frequency and coefficients can be chosen independently; here frequency is defined by the zero of the same L-function generating the coefficients"
+      }
+    ],
+    "implications": {
+      "Form_C": "Standard n-aspect Diophantine does not prove Form C; need zero-aware methods or other B_theta gates",
+      "FFML_complement": "FFML blocks free-t; ZEFB blocks generic frozen-t treated as free Diophantine",
+      "escape_routes": [
+        "Iso_H gate (bypass Form C)",
+        "DH gate (bypass Form C)",
+        "Non-circular EF feedback using zero condition carefully (open)",
+        "Conditional Form C under named hypotheses"
+      ],
+      "does_not_imply": [
+        "Form C is false",
+        "Form C is unprovable",
+        "RH is true or false",
+        "on-line resonance methods are invalid"
+      ],
+      "kappa_SOC": "ZEFB is primarily a Form C / fixed-rho* barrier; kappa dual is zeta'/zeta (MA8), different entanglement",
+      "programme_strategy": "If pursuing B_theta, either invent zero-aware Form C technology or route through Iso_H/DH; do not spend effort on almost-all gamma Diophantine"
+    },
+    "theory_sketch": {
+      "name": "Zero-entangled frequency theory (programme-level)",
+      "objects": [
+        "Entangled frequency: Im(rho) for zeta(rho)=0",
+        "Free frequency: t in continuous large-value problems",
+        "Generic frequency: almost-all real t in metric number theory"
+      ],
+      "principles": [
+        "P-ZEF-1: Free-frequency theorems do not automatically specialize to entangled frequencies (FFML)",
+        "P-ZEF-2: Generic/metric frequency theorems do not automatically specialize to entangled frequencies (ZEFB)",
+        "P-ZEF-3: Identities that are singular at zeros require principal-value / excluded-neighborhood interpretation when s->rho*",
+        "P-ZEF-4: Dual descriptions (primes vs zeros) at an entangled frequency are two sides of the same singularity, not independent inputs"
+      ],
+      "examples_entangled": [
+        "S(X; rho*) Form C",
+        "partial Euler product at s=rho*",
+        "argument of zeta approaching rho* along a path"
+      ],
+      "examples_free": [
+        "max_{t in [T,2T]} |zeta(1/2+it)|",
+        "Soundararajan resonator optimizing t",
+        "Im D_X(t) maximized over t for fixed X"
+      ],
+      "standing": "programme taxonomy \u2014 not a published classical theory name; ZLA-clean"
+    }
+  },
+  "gate_closures": {
+    "note": "Closure = proved/accepted programme standing, not RH",
+    "closed_identities_and_partials": [
+      {
+        "gate": "Signed residual formula (19) / Thm 4.1",
+        "class": "identity",
+        "standing": "CLOSED"
+      },
+      {
+        "gate": "Self loglog cancel",
+        "class": "identity",
+        "standing": "CLOSED"
+      },
+      {
+        "gate": "Form B <-> Form C equivalence",
+        "class": "identity",
+        "standing": "CLOSED"
+      },
+      {
+        "gate": "Theorem E1 (C_U=1)",
+        "class": "estimate",
+        "standing": "CLOSED"
+      },
+      {
+        "gate": "(RM)+Iso_H => B_theta",
+        "class": "implication",
+        "standing": "CLOSED (hyp open)"
+      },
+      {
+        "gate": "(RM)+DH => Mass-with-A => B_theta",
+        "class": "implication",
+        "standing": "CLOSED (hyp open)"
+      },
+      {
+        "gate": "Typical on-line Omega (sqrt loglog)",
+        "class": "estimate",
+        "standing": "CLOSED"
+      },
+      {
+        "gate": "Hybrid phase identity / OPC bookkeeping",
+        "class": "identity",
+        "standing": "CLOSED"
+      },
+      {
+        "gate": "R4.1 GHK strip (off-line error control shape)",
+        "class": "estimate",
+        "standing": "CLOSED (strip)"
+      },
+      {
+        "gate": "MA8 far-U / zeta'/zeta dual",
+        "class": "identity",
+        "standing": "CLOSED"
+      },
+      {
+        "gate": "Monodromy of P_X as phase engine",
+        "class": "nonroute",
+        "standing": "CLOSED as dead"
+      },
+      {
+        "gate": "A4+/A5+ residual on K+ (separate stack)",
+        "class": "residual algebra",
+        "standing": "CLOSED (ZLA separate)"
+      },
+      {
+        "gate": "On-line strong model Im D_X at fixed X",
+        "class": "estimate",
+        "standing": "ACCEPTED (programme)"
+      },
+      {
+        "gate": "FFML method barrier (definition)",
+        "class": "barrier",
+        "standing": "LOCKED"
+      },
+      {
+        "gate": "ZEFB method barrier (definition)",
+        "class": "barrier",
+        "standing": "LOCKED"
+      },
+      {
+        "gate": "Density => Iso_H",
+        "class": "nonroute",
+        "standing": "CLOSED as dead"
+      },
+      {
+        "gate": "Levinson as O-Moll",
+        "class": "nonroute",
+        "standing": "CLOSED as dead"
+      }
+    ],
+    "open_resolution_gates": [
+      {
+        "gate": "Form C",
+        "standing": "OPEN",
+        "blockers": [
+          "FFML",
+          "ZEFB"
+        ]
+      },
+      {
+        "gate": "kappa p>1",
+        "standing": "OPEN",
+        "advance": "MA8 dual; GO-linked"
+      },
+      {
+        "gate": "Iso_H",
+        "standing": "OPEN"
+      },
+      {
+        "gate": "DH (moderate beta*)",
+        "standing": "OPEN"
+      },
+      {
+        "gate": "GO",
+        "standing": "OPEN",
+        "advance": "linked to kappa"
+      },
+      {
+        "gate": "SOC strong + offline",
+        "standing": "OPEN",
+        "partial": "typical closed"
+      },
+      {
+        "gate": "AFE-Moll construction",
+        "standing": "OPEN"
+      },
+      {
+        "gate": "B_theta",
+        "standing": "OPEN"
+      },
+      {
+        "gate": "O-TL",
+        "standing": "OPEN"
+      },
+      {
+        "gate": "RH",
+        "standing": "OPEN"
+      }
+    ],
+    "counts": {
+      "closed_assets_and_locks": 17,
+      "open_resolution_gates": 10,
+      "unconditional_RH_resolution": 0
+    }
+  },
+  "global_conclusion": "ZEFB implications formalized: blocks generic Diophantine transfer to zero ordinates; complements FFML; does not kill Form C truth-value. Zero-entangled frequency theory recorded as four principles (free/generic/entangled taxonomy). Key closures are identities, implications-under-hyp, partial Omega, duals, and dead-route locks \u2014 not RH/O-TL/Form C."
+}
