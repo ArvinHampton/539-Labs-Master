@@ -1,0 +1,568 @@
+{
+  "status": "RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF",
+  "date": "2026-08-08",
+  "mandate": "Analyze all angles for open routes for closure",
+  "zla": true,
+  "routes": [
+    {
+      "id": "Form_C",
+      "type": "OR_input",
+      "feeds": [
+        "B_theta"
+      ],
+      "closure_criterion": "limsup_X |sum_{n<=X} Lambda(n)/(n^{rho*} log n)| = infinity for a fixed off-line rho* (or equivalent residual Form B lower bound)",
+      "dependencies": [],
+      "soft_dependencies": [
+        "Iso_H for EO(epsilon_other) on amplitude path"
+      ],
+      "blockers": [
+        "FFML",
+        "ZEFB"
+      ],
+      "allowed_methods": [
+        "zero-aware EF feedback (non-circular)",
+        "conditional under Iso_H",
+        "new entangled-frequency technology"
+      ],
+      "forbidden_methods": [
+        "free-t resonance as proof",
+        "generic/almost-all gamma Diophantine",
+        "absolute triangle inequality as Form C"
+      ],
+      "viability": "hard",
+      "effort_class": "research_breakthrough",
+      "partial_templates": [
+        "EO(Iso_H)",
+        "zero-aware sketch"
+      ],
+      "closes_if": "Form_C theorem",
+      "does_not_close": [
+        "RH",
+        "O_TL"
+      ],
+      "priority_rank": 2,
+      "notes": "Shortest B_theta object; double-fenced"
+    },
+    {
+      "id": "Iso_H",
+      "type": "OR_input",
+      "feeds": [
+        "B_theta",
+        "EO_for_Form_C"
+      ],
+      "closure_criterion": "For rightmost beta*>1/2, only {rho*, bar rho*} lie on Re=beta* (up to EF truncation / multiplicity bookkeeping)",
+      "dependencies": [],
+      "soft_dependencies": [],
+      "blockers": [
+        "no classical unbounded line-isolation technology"
+      ],
+      "allowed_methods": [
+        "genuinely new isolation tech",
+        "strong named hypothesis"
+      ],
+      "forbidden_methods": [
+        "density counts as isolation",
+        "finite-height only as unbounded Iso_H"
+      ],
+      "viability": "very_hard",
+      "effort_class": "research_breakthrough",
+      "partial_templates": [
+        "(RM)+Iso_H => B_theta proved"
+      ],
+      "closes_if": "Iso_H theorem",
+      "does_not_close": [
+        "RH",
+        "O_TL",
+        "Form_C unconditionally"
+      ],
+      "priority_rank": 3,
+      "notes": "Also unlocks EO path for Form C"
+    },
+    {
+      "id": "DH",
+      "type": "OR_input",
+      "feeds": [
+        "Mass_with_A",
+        "B_theta"
+      ],
+      "closure_criterion": "N(beta*, T) = O((log T)^C) for some C and some usable beta* in (1/2,1)",
+      "dependencies": [],
+      "soft_dependencies": [],
+      "blockers": [
+        "classical density exponents positive at moderate sigma"
+      ],
+      "allowed_methods": [
+        "new density exponent 0 at moderate sigma",
+        "named DH hypothesis"
+      ],
+      "forbidden_methods": [
+        "confusing near-sigma=1 log-power with moderate-sigma DH"
+      ],
+      "viability": "very_hard",
+      "effort_class": "research_breakthrough",
+      "partial_templates": [
+        "(RM)+DH => Mass-with-A => B_theta proved"
+      ],
+      "closes_if": "DH at moderate beta*",
+      "does_not_close": [
+        "RH",
+        "O_TL",
+        "Iso_H"
+      ],
+      "priority_rank": 4,
+      "notes": "Classical ceiling well documented (Step B)"
+    },
+    {
+      "id": "kappa",
+      "type": "AND_input",
+      "feeds": [
+        "O_M1_2",
+        "O_TL"
+      ],
+      "closure_criterion": "far_signed <= J^{-p} * far_abs on full M1.3 paths for some p>1 (safer p~2), under executable c1",
+      "dependencies": [
+        "GO for approach arcs (full-path)"
+      ],
+      "soft_dependencies": [
+        "MA8 dual identity (CLOSED)"
+      ],
+      "blockers": [
+        "approach-to-zero poles of zeta'/zeta",
+        "absolute only p=0",
+        "RW p=1/2 insufficient"
+      ],
+      "allowed_methods": [
+        "Kappa_away + GO upgrade",
+        "zeta'/zeta bounds with distance-to-zero",
+        "named Kappa(p0) hypothesis"
+      ],
+      "forbidden_methods": [
+        "RW-only as theorem",
+        "c1/absolute cosmetics alone"
+      ],
+      "viability": "hard",
+      "effort_class": "conditional_then_estimate",
+      "partial_templates": [
+        "Kappa_away",
+        "MA8 dual"
+      ],
+      "closes_if": "kappa p>1 on full paths",
+      "does_not_close": [
+        "RH",
+        "B_theta",
+        "O_TL alone"
+      ],
+      "priority_rank": 1,
+      "notes": "Best partial structure; GO is the missing upgrade key"
+    },
+    {
+      "id": "GO",
+      "type": "AND_input",
+      "feeds": [
+        "O_M1_3bis",
+        "kappa_full_path",
+        "O_TL"
+      ],
+      "closure_criterion": "Infinitely many t_n with hybrid Omega scale AND gap >= theta * mean_gap",
+      "dependencies": [],
+      "soft_dependencies": [
+        "online hybrid Omega accepted for fixed X"
+      ],
+      "blockers": [
+        "joint correlation Omega x gap missing"
+      ],
+      "allowed_methods": [
+        "resonance + gap statistics joint theorem",
+        "named GO(theta,X) hypothesis",
+        "conditional on pair correlation / GUE models (not RH)"
+      ],
+      "forbidden_methods": [
+        "mean gaps alone",
+        "Omega alone as GO"
+      ],
+      "viability": "hard",
+      "effort_class": "joint_correlation_theorem",
+      "partial_templates": [
+        "GO(theta,X) named",
+        "structural link to kappa"
+      ],
+      "closes_if": "GO theorem",
+      "does_not_close": [
+        "RH",
+        "Form_C"
+      ],
+      "priority_rank": 1,
+      "notes": "Highest leverage: unlocks kappa approach arcs AND M1.3bis tubes"
+    },
+    {
+      "id": "SOC_strong_offline",
+      "type": "AND_input",
+      "feeds": [
+        "O_PC",
+        "O_TL"
+      ],
+      "closure_criterion": "|Delta_X| >> log log X at relevant locations AND transfer to maximal abscissa / O-TL path",
+      "dependencies": [
+        "path package (M1.2/M1.3)",
+        "possibly GO"
+      ],
+      "soft_dependencies": [
+        "typical Omega CLOSED"
+      ],
+      "blockers": [
+        "scale jump sqrt(loglog)->loglog",
+        "offline transfer"
+      ],
+      "allowed_methods": [
+        "strong resonance for hybrid phase",
+        "FE path bookkeeping + path bounds"
+      ],
+      "forbidden_methods": [
+        "claiming typical = O-TL scale"
+      ],
+      "viability": "hard",
+      "effort_class": "scale_and_transfer",
+      "partial_templates": [
+        "typical closed",
+        "FE path hygiene P4"
+      ],
+      "closes_if": "SOC strong + transfer",
+      "does_not_close": [
+        "RH alone",
+        "B_theta"
+      ],
+      "priority_rank": 5,
+      "notes": "Depends on path package; later in AND order"
+    },
+    {
+      "id": "AFE_Moll",
+      "type": "AND_input",
+      "feeds": [
+        "O_Moll",
+        "O_TL"
+      ],
+      "closure_criterion": "Explicit dual-sum mollifier with proved boost of Im log P_X or A_X at O-TL locations",
+      "dependencies": [],
+      "soft_dependencies": [
+        "AFE surface",
+        "GHK hybrid"
+      ],
+      "blockers": [
+        "no coefficients optimizing Euler phase",
+        "literature optimizes wrong functional"
+      ],
+      "allowed_methods": [
+        "AFE dual F+chi G design for Im log P_X"
+      ],
+      "forbidden_methods": [
+        "Levinson/Conrey zero-count mollifiers as O-Moll"
+      ],
+      "viability": "medium_hard",
+      "effort_class": "design_search",
+      "partial_templates": [
+        "AFE-Moll skeleton",
+        "Euler-phase objective"
+      ],
+      "closes_if": "working O-Moll construction + estimate",
+      "does_not_close": [
+        "RH alone",
+        "B_theta"
+      ],
+      "priority_rank": 6,
+      "notes": "Most 'engineering' of the open gates; still empty"
+    },
+    {
+      "id": "B_theta",
+      "type": "goal",
+      "feeds": [
+        "RH_related"
+      ],
+      "closure_criterion": "Any one of Form_C | Iso_H+(RM) | DH+(RM) fully closed",
+      "dependencies": [
+        "at least one OR input"
+      ],
+      "soft_dependencies": [
+        "signed residual CLOSED"
+      ],
+      "blockers": [
+        "all three OR inputs open"
+      ],
+      "allowed_methods": [
+        "close any OR input"
+      ],
+      "forbidden_methods": [
+        "claim B_theta => RH without O_TL"
+      ],
+      "viability": "depends_on_OR",
+      "effort_class": "or_reduction",
+      "partial_templates": [
+        "three proved implications under hyp"
+      ],
+      "closes_if": "one OR input",
+      "does_not_close": [
+        "RH",
+        "O_TL"
+      ],
+      "priority_rank": 2,
+      "notes": "Not automatic RH"
+    },
+    {
+      "id": "O_TL",
+      "type": "goal",
+      "feeds": [
+        "RH"
+      ],
+      "closure_criterion": "All four AND arms discharged at programme scales",
+      "dependencies": [
+        "kappa",
+        "GO",
+        "SOC_strong_offline",
+        "AFE_Moll"
+      ],
+      "soft_dependencies": [
+        "typical Omega",
+        "R4.1",
+        "hybrid identity"
+      ],
+      "blockers": [
+        "all four arms open"
+      ],
+      "allowed_methods": [
+        "close all AND arms"
+      ],
+      "forbidden_methods": [
+        "partial typical as O_TL"
+      ],
+      "viability": "depends_on_AND",
+      "effort_class": "multi_arm",
+      "partial_templates": [
+        "architecture M1.2 accepted; typical Omega"
+      ],
+      "closes_if": "full AND",
+      "does_not_close": [
+        "RH automatically without target lemma close"
+      ],
+      "priority_rank": 7,
+      "notes": "Primary programme gate to RH"
+    },
+    {
+      "id": "RH",
+      "type": "goal",
+      "feeds": [],
+      "closure_criterion": "All nontrivial zeros have Re=1/2 (or equivalent programme-complete debt close via O_TL)",
+      "dependencies": [
+        "O_TL as primary"
+      ],
+      "soft_dependencies": [
+        "B_theta related only"
+      ],
+      "blockers": [
+        "O_TL open",
+        "no residual shortcut (ZLA)"
+      ],
+      "allowed_methods": [
+        "close O_TL stack; classical RH methods outside this ledger"
+      ],
+      "forbidden_methods": [
+        "residual A0-A5+",
+        "assuming GRH as proof"
+      ],
+      "viability": "open_millennium",
+      "effort_class": "superordinate",
+      "partial_templates": [],
+      "closes_if": "O_TL programme success or external RH proof",
+      "does_not_close": [],
+      "priority_rank": 8,
+      "notes": "Superordinate; do not attack directly without arms"
+    }
+  ],
+  "closure_order": {
+    "for_B_theta": {
+      "strategy": "OR \u2014 pick cheapest single input",
+      "ranked_inputs": [
+        {
+          "id": "Form_C",
+          "why": "sharpest object; double-fenced but direct"
+        },
+        {
+          "id": "Iso_H",
+          "why": "also unlocks EO for Form C; no tech"
+        },
+        {
+          "id": "DH",
+          "why": "classical density ceiling harsh"
+        }
+      ],
+      "parallelism": "three independent research lines"
+    },
+    "for_O_TL": {
+      "strategy": "AND \u2014 sequential leverage then parallel",
+      "recommended_order": [
+        {
+          "step": 1,
+          "id": "GO",
+          "why": "unlocks kappa approach arcs + M1.3bis tubes"
+        },
+        {
+          "step": 2,
+          "id": "kappa",
+          "why": "Kappa_away + GO => full path M1.2"
+        },
+        {
+          "step": 3,
+          "id": "SOC_strong_offline",
+          "why": "needs path package partially from 1-2"
+        },
+        {
+          "step": 3,
+          "id": "AFE_Moll",
+          "why": "parallel design search once objectives clear"
+        },
+        {
+          "step": 4,
+          "id": "O_TL",
+          "why": "assemble AND"
+        },
+        {
+          "step": 5,
+          "id": "RH",
+          "why": "superordinate"
+        }
+      ],
+      "parallelism": "AFE_Moll can run parallel to SOC after GO/kappa progress"
+    },
+    "joint_portfolio": {
+      "track_A_B_theta": "Form_C zero-aware under Iso_H conditional + Iso_H/DH long shots",
+      "track_B_O_TL": "GO first, then kappa, then SOC||AFE-Moll",
+      "do_not_mix": "ZLA residual integers into either track"
+    }
+  },
+  "angles": [
+    {
+      "angle": "MA8_zeta_prime_dual",
+      "helps": [
+        "kappa",
+        "GO"
+      ],
+      "blocks_or_neutral": [
+        "Form_C"
+      ],
+      "closure_ready": false,
+      "note": "Identity ready; estimates need GO for full kappa"
+    },
+    {
+      "angle": "Kappa_away_segments",
+      "helps": [
+        "kappa"
+      ],
+      "blocks_or_neutral": [],
+      "closure_ready": false,
+      "note": "Partial only until GO"
+    },
+    {
+      "angle": "zero_aware_Form_C_sketch",
+      "helps": [
+        "Form_C",
+        "B_theta"
+      ],
+      "blocks_or_neutral": [],
+      "closure_ready": false,
+      "note": "Needs Iso_H or new tech"
+    },
+    {
+      "angle": "Weil_smoothed_Form_C",
+      "helps": [
+        "Form_C"
+      ],
+      "blocks_or_neutral": [],
+      "closure_ready": false,
+      "note": "Surface only"
+    },
+    {
+      "angle": "VK_ZF_uppers",
+      "helps": [],
+      "blocks_or_neutral": [
+        "Form_C"
+      ],
+      "closure_ready": false,
+      "note": "Upper only \u2014 does not close lower-bound gates"
+    },
+    {
+      "angle": "AFE_Euler_phase_design",
+      "helps": [
+        "AFE_Moll"
+      ],
+      "blocks_or_neutral": [],
+      "closure_ready": false,
+      "note": "Design open"
+    },
+    {
+      "angle": "FE_path_bookkeeping",
+      "helps": [
+        "SOC_strong_offline"
+      ],
+      "blocks_or_neutral": [],
+      "closure_ready": false,
+      "note": "Hygiene only"
+    },
+    {
+      "angle": "free_t_resonance",
+      "helps": [
+        "SOC_strong_offline"
+      ],
+      "blocks_or_neutral": [
+        "Form_C"
+      ],
+      "closure_ready": false,
+      "note": "On-line only; FFML for Form C"
+    },
+    {
+      "angle": "generic_Diophantine",
+      "helps": [],
+      "blocks_or_neutral": [
+        "Form_C"
+      ],
+      "closure_ready": false,
+      "note": "ZEFB"
+    },
+    {
+      "angle": "classical_density",
+      "helps": [],
+      "blocks_or_neutral": [
+        "DH",
+        "Iso_H"
+      ],
+      "closure_ready": false,
+      "note": "Insufficient for polylog/isolation"
+    },
+    {
+      "angle": "named_conditionals",
+      "helps": [
+        "Form_C",
+        "kappa",
+        "GO",
+        "DH",
+        "Iso_H",
+        "SOC_strong_offline",
+        "B_theta",
+        "O_TL"
+      ],
+      "blocks_or_neutral": [],
+      "closure_ready": false,
+      "note": "Honest conditional closures possible; not unconditional RH"
+    }
+  ],
+  "summary": {
+    "open_routes": 10,
+    "unconditional_closure_paths_today": 0,
+    "conditional_closure_paths": 9,
+    "highest_leverage": [
+      "GO",
+      "kappa"
+    ],
+    "shortest_B_theta": "any one of Form_C | Iso_H | DH",
+    "O_TL_requires": "all four AND arms",
+    "RH_requires": "O_TL primary (B_theta not sufficient)"
+  },
+  "global_conclusion": "All open routes analyzed for closure criteria, dependencies, blockers, and method angles. Zero routes have an unconditional closure path today. Highest leverage: GO then kappa (AND track); B_theta remains an independent OR of three hard inputs. Named conditionals can close gates honestly without proving RH. No angle currently converts to unconditional RH."
+}
