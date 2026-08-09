@@ -1,0 +1,61 @@
+{
+  "status": "RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF",
+  "date": "2026-08-09",
+  "mandate": "Investigate Soundararajan zero density",
+  "zla": true,
+  "clarification": {
+    "Soundararajan_primary": [
+      "Resonance method for large |zeta(1/2+it)|",
+      "Moments of zeta (2009); Harper refinements under RH",
+      "Mertens M(x) under RH",
+      "Ford-Soundararajan-Zaharescu ordinate statistics"
+    ],
+    "Soundararajan_is_NOT": [
+      "Classical N(sigma,T) exponent line (Ingham..Guth-Maynard)",
+      "Polylog N(beta*,T) at moderate beta* (programme DH)"
+    ]
+  },
+  "schematic_rows": [
+    {
+      "sigma": 0.55,
+      "Ingham_shape_T_power": 0.9310344827586207,
+      "Density_Hypothesis_2_1_minus_sigma": 0.8999999999999999
+    },
+    {
+      "sigma": 0.6,
+      "Ingham_shape_T_power": 0.8571428571428573,
+      "Density_Hypothesis_2_1_minus_sigma": 0.8
+    },
+    {
+      "sigma": 0.7,
+      "Ingham_shape_T_power": 0.6923076923076924,
+      "Density_Hypothesis_2_1_minus_sigma": 0.6000000000000001
+    },
+    {
+      "sigma": 0.8,
+      "Ingham_shape_T_power": 0.4999999999999999,
+      "Density_Hypothesis_2_1_minus_sigma": 0.3999999999999999
+    },
+    {
+      "sigma": 0.9,
+      "Ingham_shape_T_power": 0.27272727272727265,
+      "Density_Hypothesis_2_1_minus_sigma": 0.19999999999999996
+    },
+    {
+      "sigma": 0.95,
+      "Ingham_shape_T_power": 0.142857142857143,
+      "Density_Hypothesis_2_1_minus_sigma": 0.10000000000000009
+    }
+  ],
+  "programme_DH_closed_by_Soundararajan": false,
+  "programme_DH_closed_by_classical_density": false,
+  "gates_closed": [],
+  "scores": {
+    "SOC_online": 1,
+    "Form_C": "FFML_block",
+    "programme_DH": 0,
+    "Iso_H": 0,
+    "GO": 0
+  },
+  "global_conclusion": "Soundararajan is resonance/moments/FSZ, not polylog zero-density. Classical and modern N(sigma,T) still have positive T-powers at moderate sigma. No DH/Iso_H/Form C gate closed."
+}
