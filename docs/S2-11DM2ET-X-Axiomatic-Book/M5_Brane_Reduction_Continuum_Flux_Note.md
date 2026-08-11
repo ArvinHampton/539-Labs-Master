@@ -206,32 +206,118 @@ With these choices unit positive linking is I = +1. Reversing either orientation
 
 ### 10.1 NS5 sector
 
-Φ_NS5 := ∫_{Σ₃} H₃ ∈ ℤ  
+Define the continuum magnetic flux of the self-dual 3-form through a closed linking 3-cycle Σ₃:
 
-Equivalently (1/2π) ∫_{Σ₃} dB₂ ∈ ℤ.
+Φ_NS5[Σ₃] := ∫_{Σ₃} H₃
+
+Equivalently, in terms of the continuum NS-NS 2-form B₂ (with H₃ = dB₂ / 2π on the reduced type-IIA side, continuum normalization):
+
+Φ_NS5[Σ₃] = (1/(2π)) ∫_{Σ₃} dB₂
+
+Dirac quantization on every linking 3-cycle:
+
+Φ_NS5[Σ₃] ∈ ℤ    for all closed Σ₃ with I(W_NS5 , Σ₃) = ±1
+
+Component form (local continuum coordinates x^i on Σ₃):
+
+Φ_NS5 = (1/6) ∫_{Σ₃} H_{ijk} dx^i ∧ dx^j ∧ dx^k  ∈ ℤ
+
+Mutual (Dirac–Zwanziger) form with a continuum electric string charge q_F1:
+
+q_F1 · Φ_NS5 ∈ ℤ
+
+With unit continuum electric charge q_F1 = 1 this forces Φ_NS5 ∈ ℤ.
 
 ### 10.2 D4 sector
 
-Φ_D4 := (1/8π²) ∫ F₂ ∧ F₂ ∈ ℤ  
-Φ_C3 := (1/2π) ∫ F₂ ∈ ℤ  
-Φ_C5 := ∫ 1 ∈ ℤ
+Let F₂ = dA be the continuum U(1) field strength on the D4 world-volume W_D4, and let C_p be the continuum type-IIA RR potentials.
 
-### 10.3 Collective continuum flux lattice
+**Cubic continuum flux (instanton / second Chern number density):**
+
+Φ_D4[W_D4] := (1/(8π²)) ∫_{W_D4} F₂ ∧ F₂
+
+Index form:
+
+Φ_D4 = (1/(32π²)) ∫_{W_D4} ε^{abcde} F_{ab} F_{cd}  (integrated against the fifth continuum direction / volume factor as required by the 5d reduction)
+
+or, after dualization to a closed 4-cycle Σ₄ linking the D4 once:
+
+Φ_D4[Σ₄] = (1/(8π²)) ∫_{Σ₄} F ∧ F  ∈ ℤ
+
+**Continuum 3-form flux:**
+
+Φ_C3[Σ₂] := (1/(2π)) ∫_{Σ₂} F₂  ∈ ℤ
+
+for every closed continuum 2-cycle Σ₂ with unit linking to the source of Q_{C3}.
+
+Index form:
+
+Φ_C3 = (1/(4π)) ∫_{Σ₂} F_{ab} dx^a ∧ dx^b  ∈ ℤ
+
+**Continuum 5-form / D0 flux:**
+
+Φ_C5[pt] := ∫_{pt} vol̂_0  = n_{D0}  ∈ ℤ
+
+where vol̂_0 is the continuum unit 0-form charge measure dual to C₅ (equivalently the continuum D0 wrapping number).
+
+Dirac conditions (all cycles unit-linked):
+
+Φ_D4 ∈ ℤ ,   Φ_C3 ∈ ℤ ,   Φ_C5 ∈ ℤ
+
+### 10.3 Master continuum flux quantization formulas
+
+Collecting both reduction branches, the discrete continuum flux quantization rules are:
+
+(1)  Φ_NS5[Σ₃] = ∫_{Σ₃} H₃ = (1/(2π)) ∫_{Σ₃} dB₂ ∈ ℤ
+
+(2)  Φ_D4[Σ₄] = (1/(8π²)) ∫_{Σ₄} F ∧ F ∈ ℤ
+
+(3)  Φ_C3[Σ₂] = (1/(2π)) ∫_{Σ₂} F ∈ ℤ
+
+(4)  Φ_C5 = n_{D0} ∈ ℤ
+
+Dirac–Zwanziger pairing for any continuum electric–magnetic pair (q_e , Φ_m):
+
+q_e · Φ_m ∈ ℤ
+
+and for two continuum dyonic sources with charges (q_e^{(1)}, Φ_m^{(1)}) and (q_e^{(2)}, Φ_m^{(2)}):
+
+q_e^{(1)} Φ_m^{(2)} − q_e^{(2)} Φ_m^{(1)} ∈ ℤ
+
+### 10.4 Collective continuum flux lattice
 
 (Φ_NS5 , Φ_D4 , Φ_C3 , Φ_C5) ∈ ℤ⁴
 
-Each integer unit is one continuum Dirac quantum. Non-integer continuum fluxes are forbidden by Dirac single-valuedness.
+Each integer unit is one continuum Dirac quantum. Non-integer continuum fluxes are forbidden by Dirac single-valuedness of probe wave-functions on linking cycles.
+
+Minimal positive continuum flux quanta (unit lattice generators):
+
+Φ_NS5 = 1 ,   Φ_D4 = 1 ,   Φ_C3 = 1 ,   Φ_C5 = 1
+
+### 10.5 Continuum permeability coupling (optional layering)
+
+Within the continuum layer, interface permeability κ_D2 of a D2 surface can be written as a linear combination of continuum flux quanta:
+
+κ_D2 = κ_0 + α_NS5 Φ_NS5 + α_D4 Φ_D4 + α_C3 Φ_C3 + α_C5 Φ_C5
+
+with continuum coefficients α_• and base κ_0. One continuum flux quantum then corresponds to one discrete step of interface permeability or one continuum winding of the Phase Law that multiplies E_leak(t). This coupling is continuum exploratory only; it is not forced by residual discrete atoms.
 
 ---
 
 ## 11. Continuum flux definitions (clarified)
 
-| Symbol | Definition | Quantization |
-|--------|------------|--------------|
-| Φ_NS5 | ∫_{Σ₃} H₃  (or (1/2π) ∫_{Σ₃} dB₂) | ∈ ℤ |
-| Φ_D4 | (1/8π²) ∫ F₂ ∧ F₂ | ∈ ℤ |
-| Φ_C3 | (1/2π) ∫ F₂ | ∈ ℤ |
-| Φ_C5 | ∫ 1  (unit-normalized D4 volume form / D0 charge) | ∈ ℤ |
+| Symbol | Explicit formula | Domain | Quantization |
+|--------|------------------|--------|--------------|
+| Φ_NS5 | ∫_{Σ₃} H₃ = (1/(2π)) ∫_{Σ₃} dB₂ | linking 3-cycle Σ₃ | ∈ ℤ |
+| Φ_D4 | (1/(8π²)) ∫_{Σ₄} F ∧ F | linking 4-cycle Σ₄ (or W_D4) | ∈ ℤ |
+| Φ_C3 | (1/(2π)) ∫_{Σ₂} F | linking 2-cycle Σ₂ | ∈ ℤ |
+| Φ_C5 | n_{D0} = ∫ vol̂_0 | dual D0 charge point | ∈ ℤ |
+
+Dirac phase for unit intersection I = ±1:
+
+ψ ↦ exp(2π i  q_e · Φ_m · I) · ψ
+
+Single-valuedness ⇔ q_e · Φ_m · I ∈ ℤ ⇔ (with q_e = 1, I = ±1) Φ_m ∈ ℤ.
 
 ---
 
