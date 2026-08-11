@@ -10,7 +10,7 @@
 
 This note records the continuum M-theory reduction of the M5-brane (magnetic dual of the M2), the descent of its self-dual 3-form, the resulting Chern–Simons terms, the continuum charge lattice, Dirac quantization, linking-cycle geometry, orientation conventions, discrete continuum flux quantization rules, and the explicit continuum flux definitions. It layers these objects onto the existing continuum D2-interface / D3-stack / warped-throat notes without altering the residual discrete core.
 
-Cross-references: `D2_Brane_Interfaces_Note.md`, `D3_Branes_Multiverse_Role_Note.md`, `Warped_Brane_Inflation_Note.md`, `Brane_Mechanics_Phase_Law_Derivation_CatB.md`, `Eta_Problem_String_Inflation_Note.md`.
+Cross-references: `D2_Brane_Interfaces_Note.md`, `D3_Branes_Multiverse_Role_Note.md`, `Warped_Brane_Inflation_Note.md`, `Brane_Mechanics_Phase_Law_Derivation_CatB.md`, `Eta_Problem_String_Inflation_Note.md`, `M5_SelfDuality_KTheory_Charge_Quantization_CatB.md` (self-duality constraints, continuum D-brane K-theory, explicit M5 charge quantization).
 
 ---
 
@@ -349,7 +349,20 @@ Residual-flux provenance remains mandatory whenever continuum fluxes are said to
 
 ---
 
-## 14. Status freeze
+## 14. Explicit M5 charge quantization (pointer)
+
+The continuum magnetic M5 charge and its Dirac–Zwanziger pairing with the electric M2 charge are recorded in full in `M5_SelfDuality_KTheory_Charge_Quantization_CatB.md` Part C:
+
+Q_M5 = (1/(2π)) ∫_{Σ₄^⊥} F₄ ∈ ℤ  
+Q_M2 = (1/(2π)) ∫_{Σ₇^⊥} F₇ ∈ ℤ  
+Q_M2 · Q_M5 ∈ ℤ  
+
+together with self-dual world-volume periods Φ_H = ∫ H₃ ∈ ℤ (under H₃ = ★₆ H₃) and the reduction map onto (Φ_NS5, Φ_D4, Φ_C3, Φ_C5). Continuum D-brane charges after reduction are classified by continuum K-theory K^*(X) (Part B of that note), distinct from residual KO_*(K⁺).
+
+---
+
+## 15. Status freeze
+
 
 - Residual discrete core: Category A, untouched.  
 - Continuum M5 reduction, self-dual 3-form, Chern–Simons, charge lattice, Dirac quantization, linking geometry, orientation conventions, discrete continuum flux rules, and continuum flux definitions: Category B exploratory.  
