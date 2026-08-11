@@ -4,7 +4,7 @@
 **Category:** B (continuum / physical interpretation)  
 **Status:** Continuum exploratory companion to `M5_Brane_Reduction_Continuum_Flux_Note.md`. Residual discrete algebra (T₃, packaging under (S), O_res, Architecture A0–A5⁺ on K⁺, production free map, HQCC 539-step structure) remains Category A and is untouched. Residual-flux provenance mandatory. Continuum claims locked Category B.
 
-Cross-references: `M5_Brane_Reduction_Continuum_Flux_Note.md`, `D2_Brane_Interfaces_Note.md`, `D3_Branes_Multiverse_Role_Note.md`, `Warped_Brane_Inflation_Note.md`, `Brane_Mechanics_Phase_Law_Derivation_CatB.md`, `Architecture_A5plus_KO_Spin_Bordism.md` (residual KO is Category A on K⁺ only; continuum K-theory below is independent).
+Cross-references: `M5_Brane_Reduction_Continuum_Flux_Note.md`, `D2_Brane_Interfaces_Note.md`, `D3_Branes_Multiverse_Role_Note.md`, `Warped_Brane_Inflation_Note.md`, `Brane_Mechanics_Phase_Law_Derivation_CatB.md`, `Architecture_A5plus_KO_Spin_Bordism.md` (residual KO is Category A on K⁺ only; continuum K-theory below is independent), `Freed_Witten_Anomaly_Resolution_CatB.md` (continuum resolution paths for α_FW = W₃+[H]).
 
 ---
 
