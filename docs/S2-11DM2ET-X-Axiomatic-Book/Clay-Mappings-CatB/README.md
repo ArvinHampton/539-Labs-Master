@@ -1,7 +1,7 @@
 # Clay Millennium Problems – Category B Exploratory Dual-Universe Mappings
 
 **Status: Category B continuum / exploratory only**  
-**Date: 2026-08-01**  
+**Date: 2026-08-01; Poincaré suite file + Resolution-draft audit 2026-08-12**  
 **Residual-flux provenance mandatory.**
 
 No completed formal proof of any Clay Millennium Problem is claimed or supplied.  
@@ -14,8 +14,13 @@ The residual discrete algebraic core (𝓞_res, fiber blocks 68/67, permanent cl
 - 04_Riemann_Hypothesis_CatB_and_Residual.md
 - 05_Yang_Mills_CatB.md
 - 06_Navier_Stokes_CatB.md
+- 07_Poincare_CatB.md  (interpretive only; classical Poincaré is already a theorem)
 
 See also the parent note Clay_Millennium_Problems_Dual_Universe_Mappings_CatB.md.
+
+## 2026-08-12 attachment audit
+
+Attached December 2025 two-page drafts titled “P versus NP Resolution” and “Yang-Mills Existence and Mass Gap Resolution” are historical Category B sketches. They are **not** Clay proofs. Full audit: `../Clay_Attachment_Audit_Resolution_Drafts_2026-08-12.md`. Status `CLAY_RESOLUTION_DRAFTS_AUDITED_NOT_PROOFS_2026-08-12`. RH remains open.
 
 ## Private P vs NP satellite (2026-08-04)
 
