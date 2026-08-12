@@ -2,7 +2,7 @@
 
 **Status:** Single source of truth for what is **resolved** vs **open**.  
 **Rule:** Everything listed as resolved is locked; everything listed as open remains open under the stated constraints.  
-**Date lock:** 2026-07 (living book); proton stability addendum 2026-08-01; A4⁺/A5⁺ K⁺ baseline hygiene + P⁺ optional lock 2026-08-08.
+**Date lock:** 2026-07 (living book); proton stability addendum 2026-08-01; A4⁺/A5⁺ K⁺ baseline hygiene + P⁺ optional lock 2026-08-08; mechanics / residual-flux / vertex-edge hygiene 2026-08-12; Clay Resolution-draft audit 2026-08-12.
 
 **Category A / Category B separation and residual-flux provenance are mandatory on every claim.**
 
@@ -213,6 +213,9 @@ Continuum hopfion, torsion, or measure constructions remain **Category B design 
 | 9 Maths patterns | `Nine_Maths_Pattern_Exploration.md` |
 | Provenance integers | `PROVENANCE_TABLE.md` |
 | Proton stability | `Proton_Stability_NonDecay_Derivation.md` |
+| Mechanics / provenance / vertex–edge | `Mechanics_Principle_S_Residual_Flux_Provenance_Vertex_Edge_2026-08-12.md` |
+| Clay mappings (Cat B only) | `Clay_Millennium_Problems_Dual_Universe_Mappings_CatB.md`, `Clay-Mappings-CatB/` |
+| Clay “Resolution” draft audit | `Clay_Attachment_Audit_Resolution_Drafts_2026-08-12.md` |
 
 ---
 
@@ -275,3 +278,26 @@ Public definition hygiene: a "quantum of consciousness" in Orch-OR is a **discre
 Exact baryon-number conservation and $\tau_p=\infty$ derived as Category A structural consequence of Axiom 0 (three generations) + HQCC mod-9 invariant + residual product $\mathbb{Z}_3$. No $\Delta B=1$ operators admitted. Experimental Super-Kamiokande bound treated as external consistency only.
 
 **File:** `Proton_Stability_NonDecay_Derivation.md`, `PUSH_LOG_2026-08-01_Proton_Stability.md`.
+
+## Mechanics / residual-flux provenance / vertex–edge (2026-08-12)
+
+Hygiene restatement only. Status `MECHANICS_PROVENANCE_VERTEX_EDGE_CLOSED_DEFINITIONAL_2026-08-12`. No residual lock reopened.
+
+- Principle (S) is the residual minimal-action combination rule that selects \(L_{\mathrm{body}}=521\). It is not a residual discrete Lagrangian, Hamiltonian, or Noether theorem. Classical and continuum mechanics remain Category B.
+- Residual-flux provenance restated as mandatory. \(\mathcal{O}_{\mathrm{res}}\) and \(B'=539\) arise under Pack+(S) after \(N_{\mathrm{flux}}=4880\), \(f_{\max}=21\), and democratic split mod \(9\). Depth split \(N_\star=14\neq\sigma=539\) is mandatory. Free \(T^\sharp\) origin is forbidden.
+- Window/tower count closed as definitional: \(L_{\mathrm{pref}}=18\) vertices implies \(17\) window edges and \(521\) tower edges. Mass ratio \(\Sigma_{\mathrm{win}}/\Sigma\approx 0.02905\) versus length ratio \(18/539\approx 0.03340\) is a homological diagnostic, not a required equality.
+
+**Files:** `Mechanics_Principle_S_Residual_Flux_Provenance_Vertex_Edge_2026-08-12.md`, `Executive_Summary_2026-08-12_Mechanics_Provenance.md`, `PUSH_LOG_2026-08-12_Mechanics_Provenance_Vertex_Edge.md`.
+
+## Clay Millennium mappings and “Resolution” drafts (2026-08-12)
+
+Hygiene only. Status `CLAY_RESOLUTION_DRAFTS_AUDITED_NOT_PROOFS_2026-08-12`. **No Clay problem is claimed solved.**
+
+- Dual-universe Clay mappings remain Category B exploratory notes (`Clay-Mappings-CatB/01`–`07` and the parent mapping).
+- Attached December 2025 two-page drafts titled “P versus NP Resolution” and “Yang-Mills Existence and Mass Gap Resolution” fail the Clay official bar (no standard TM/circuit argument; no constructive continuum YM on \(\mathbb{R}^4\) with Hamiltonian gap). They are superseded by the 2026-08-01 Category B mappings.
+- Poincaré is already a theorem (Perelman). Standalone note: `Clay-Mappings-CatB/07_Poincare_CatB.md`.
+- RH remains `RH_OPEN_DEBT_ARGUMENT_NOT_A_PROOF`. Residual Category A untouched.
+
+**Files:** `Clay_Attachment_Audit_Resolution_Drafts_2026-08-12.md`, `Executive_Summary_2026-08-12_Clay_Attachment_Audit.md`, `Clay-Mappings-CatB/07_Poincare_CatB.md`, `PUSH_LOG_2026-08-12_Mechanics_and_Clay_Audit.md`.
+
+
