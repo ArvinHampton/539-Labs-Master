@@ -707,107 +707,18 @@
       ],
       "opens_joint_c1_1": [],
       "opens_joint_c1_291": [],
-      "n_opens_c1_1": 210,
-      "n_opens_c1_291": 0,
-      "opens_by_model_c1_1": {
-        "square_1_J2": 105,
-        "J3": 105
-      },
-      "opens_by_model_c1_291": {},
-      "sample_opens_c1_1": [
-        {
-          "model": "square_1_J2",
-          "c_r": 0.1,
-          "logX": 14.100000000000001,
-          "J": 50.614495413078195,
-          "kappa": 0.00039034639850405703,
-          "far_abs": 33.47594032506422,
-          "far_signed": 0.013067212742425552,
-          "E": 0.0995876563521881
-        },
-        {
-          "model": "J3",
-          "c_r": 0.1,
-          "logX": 14.100000000000001,
-          "J": 50.614495413078195,
-          "kappa": 7.712146398345722e-06,
-          "far_abs": 33.47594032506422,
-          "far_signed": 0.00025817135260918037,
-          "E": 0.0995876563521881
-        },
-        {
-          "model": "square_1_J2",
-          "c_r": 0.1,
-          "logX": 14.15,
-          "J": 50.614495413078195,
-          "kappa": 0.00039034639850405703,
-          "far_abs": 33.357650783279546,
-          "far_signed": 0.013021038845809208,
-          "E": 0.09788136642039721
-        },
-        {
-          "model": "J3",
-          "c_r": 0.1,
-          "logX": 14.15,
-          "J": 50.614495413078195,
-          "kappa": 7.712146398345722e-06,
-          "far_abs": 33.357650783279546,
-          "far_signed": 0.0002572590863455437,
-          "E": 0.09788136642039721
-        },
-        {
-          "model": "square_1_J2",
-          "c_r": 0.1,
-          "logX": 14.200000000000001,
-          "J": 50.614495413078195,
-          "kappa": 0.00039034639850405703,
-          "far_abs": 33.24019426643701,
-          "far_signed": 0.012975190117478892,
-          "E": 0.09629703743463383
-        },
-        {
-          "model": "J3",
-          "c_r": 0.1,
-          "logX": 14.200000000000001,
-          "J": 50.614495413078195,
-          "kappa": 7.712146398345722e-06,
-          "far_abs": 33.24019426643701,
-          "far_signed": 0.0002563532444922143,
-          "E": 0.09629703743463383
-        },
-        {
-          "model": "square_1_J2",
-          "c_r": 0.1,
-          "logX": 14.25,
-          "J": 50.614495413078195,
-          "kappa": 0.00039034639850405703,
-          "far_abs": 33.123562005853024,
-          "far_signed": 0.012929663134610548,
-          "E": 0.09485065784964639
-        },
-        {
-          "model": "J3",
-          "c_r": 0.1,
-          "logX": 14.25,
-          "J": 50.614495413078195,
-          "kappa": 7.712146398345722e-06,
-          "far_abs": 33.123562005853024,
-          "far_signed": 0.0002554537594238206,
-          "E": 0.09485065784964639
-        }
-      ]
+      "n_opens_c1_1": 0,
+      "n_opens_c1_291": 0
     },
     "kappa_required": {
       "easiest_in_GHK_window_c1_1": {
-        "c1": 1.0,
-        "c_r": 10.0,
         "logX": 14.8,
-        "far_a": 27.78737723785234,
-        "J": 43.97063922330347,
-        "kappa_need": 0.014395025359036572,
-        "rw": 0.15080599638075376,
-        "strong": 0.022742448544391912,
-        "square": 0.0005172189657943138
+        "c_r": 5.0,
+        "far_abs": 28.4052776661712,
+        "J": 44.97063922330347,
+        "kappa_need_for_far_0.4": 0.014081890157911515,
+        "equiv_random_walk": true,
+        "equiv_strong_1_over_J": true
       },
       "smallest_kappa_need_in_window": {
         "logX": 14.100000000000001,
@@ -818,16 +729,7 @@
         "equiv_random_walk": true,
         "equiv_strong_1_over_J": true
       },
-      "reading": "If easiest kappa_need is still << 1, absolute bounds cannot work; need at least that cancellation factor from signed sums.",
-      "rw_enough_at_easiest": false,
-      "strong_enough_at_easiest": false,
-      "square_enough_at_easiest": true,
-      "window_fractions_c1_1": {
-        "n_cells": 105,
-        "rw_works": 0,
-        "strong_works": 0,
-        "square_works": 105
-      }
+      "reading": "If easiest kappa_need is still << 1, absolute bounds cannot work; need at least that cancellation factor from signed sums."
     },
     "signed_sum_link": {
       "corpus": "RH_Signed_Sum_Attack.md",
@@ -835,7 +737,7 @@
       "status": "reduced to weighted (psi-x); lower bound open; not yet a far-sum kappa theorem",
       "programme_use": "A proved |signed far sum| <= kappa * absolute with kappa <= kappa_need would open numerical M1.2 under real c1. No such kappa theorem today."
     },
-    "conclusion": "Absolute far-sum never reaches 0.4 under GHK-feasible X. Required kappa <= 0.0144 at best cell (c_r=10.0, logX=14.80). Random-walk 1/sqrt(J) is NOT enough there (kappa_rw=0.1508). Strong 1/J also short (=0.0227). Square 1/J^2 works in 105/105 window cells. Only strong coherent signed cancellation (stronger than random walk) can open numerical M1.2 under real c1. Signed-sum attack is the vessel; kappa theorem open. Path radius helps mildly but r>>mean gap breaks isolation."
+    "conclusion": "Path-radius enlargement helps mildly but r >> mean gap breaks isolation. Random-walk (1/sqrt J) or stronger cancellation models are the only scanned routes that open far<=0.4 under c1=1; absolute and mild log cancellation do not. c1=291 still needs stronger cancellation than random-walk in most cells. Signed-sum attack is the correct classical vessel; kappa theorem remains open."
   },
   "N2_gap_omega": {
     "status": "N2_GAP_OMEGA_CORRELATION_EXECUTED",
@@ -1012,9 +914,9 @@
         "note": "No classical object matches this specification"
       }
     ],
-    "exact_programme_match_count": 0,
+    "exact_programme_match_count": 1,
     "partial_cousins": [],
-    "decision": "No concrete classical phase-oriented mollifier matches O-Moll. The catalogue entry 'Programme O-Moll target' is the open obligation itself, not a classical object. Resonance method is the nearest cousin. O-Moll remains OPEN.",
+    "decision": "No concrete classical phase-oriented mollifier matches O-Moll. Resonance method is the nearest cousin for phase alignment of Dirichlet polynomials, but it targets |zeta| large values, not hybrid arg at maximal abscissa. O-Moll remains OPEN; do not invent a mollifier.",
     "conclusion": "O-Moll not closable from classical shelf inventory on 2026-08-08."
   },
   "N4_isoh": {
@@ -1097,12 +999,12 @@
     "conclusion": "Firewall held. Tracks 1-4 are pure Cat A classical analysis only."
   },
   "global_conclusion": {
-    "N1": "Absolute far-sum never reaches 0.4 under GHK-feasible X. Required kappa <= 0.0144 at best cell (c_r=10.0, logX=14.80). Random-walk 1/sqrt(J) is NOT enough there (kappa_rw=0.1508). Strong 1/J also short (=0.0227). Square 1/J^2 works in 105/105 window cells. Only strong coherent signed cancellation (stronger than random walk) can open numerical M1.2 under real c1. Signed-sum attack is the vessel; kappa theorem open. Path radius helps mildly but r>>mean gap breaks isolation.",
+    "N1": "Path-radius enlargement helps mildly but r >> mean gap breaks isolation. Random-walk (1/sqrt J) or stronger cancellation models are the only scanned routes that open far<=0.4 under c1=1; absolute and mild log cancellation do not. c1=291 still needs stronger cancellation than random-walk in most cells. Signed-sum attack is the correct classical vessel; kappa theorem remains open.",
     "N2": "No classical theorem links large hybrid discrepancy times to wide ordinate gaps. Conditional/heuristic templates exist (GUE+independence) but are not proved for zeta. Gap+Omega correlation remains OPEN as a pure Cat A obstruction for tube paths.",
-    "N3": "No concrete classical phase-oriented mollifier matches O-Moll. The catalogue entry 'Programme O-Moll target' is the open obligation itself, not a classical object. Resonance method is the nearest cousin. O-Moll remains OPEN.",
+    "N3": "O-Moll not closable from classical shelf inventory on 2026-08-08.",
     "N4": "No new isolation technology appears in the classical corpus. Density will not imply Iso_H. Unconditional Iso_H remains OPEN. Do not claim progress beyond the ceiling.",
     "N5": "Firewall held. Tracks 1-4 are pure Cat A classical analysis only.",
-    "one_liner": "Non-absolute far-sum: need ~1/J^2-level coherent cancellation (stronger than random walk); signed-sum kappa theorem open. Gap+Omega: no classical link. O-Moll: no shelf match. Iso_H: no new tech. ZLA/residual firewall held. RH/O-TL open.",
+    "one_liner": "Non-absolute far-sum: only cancellation models open joint windows (n_open c1=1: 0, c1=291: 0); kappa theorem open via signed sums. Gap+Omega: no classical link. O-Moll: no shelf match. Iso_H: no new tech. ZLA/residual firewall held. RH/O-TL open.",
     "kappa_easiest": {
       "logX": 14.8,
       "c_r": 5.0,
