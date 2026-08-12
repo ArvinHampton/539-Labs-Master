@@ -15,14 +15,14 @@
     "x_max_primes": 12000,
     "X_hybrid": "(log(2+gamma))^3",
     "c_r": 0.35,
-    "n_phi": 21
+    "n_phi": 25
   },
   "summary": {
     "n_zeros": 6,
     "n_isolated": 6,
     "mean_semi_Delta_arg_P": 0.026209537773858527,
     "mean_approach_Delta_arg_P": 0.02617057549761746,
-    "mean_semi_max_abs_E": 3.2538256923253965,
+    "mean_semi_max_abs_E": 3.253324245605946,
     "mean_semi_max_abs_Im_Rpeel": 3.094151437562586,
     "mean_semi_max_abs_Im_Z_far": 0.050464579549932,
     "honesty": "Semicircle monodromy of arg P is ~0 because P_X never vanishes. Approach path measures gradual phase of P. HD-low = Odlyzko isolation. No proof claim."
@@ -34,7 +34,7 @@
       "X": 21.507537435802224,
       "c_r": 0.35,
       "m": 1,
-      "n_phi": 21,
+      "n_phi": 25,
       "HD": {
         "isolated": true,
         "r": 0.125855195472178,
@@ -47,7 +47,7 @@
         "Delta_arg_Z": 3.141592653589793,
         "Delta_arg_zeta": 3.162279368150939,
         "Delta_arg_s_minus_rho": 3.141592653589793,
-        "max_abs_E": 6.371402417567584,
+        "max_abs_E": 6.369670959093653,
         "max_abs_Im_logZ_far": 0.0,
         "max_abs_Im_Rpeel": 2.898917350115993,
         "note": "P_X is zero-free entire; monodromy of arg P about a zeta-zero is ~0. Local monodromy sits in Z / zeta, not in P."
@@ -89,15 +89,15 @@
           "Im_logZ_local": 3.141592653589793
         }
       },
-      "n_samples_ok": 21
+      "n_samples_ok": 25
     },
     {
       "gamma": 21.022039638771556,
       "r": 0.11159105886102007,
-      "X": 30.854317021732548,
+      "X": 30.85431702173255,
       "c_r": 0.35,
       "m": 1,
-      "n_phi": 21,
+      "n_phi": 25,
       "HD": {
         "isolated": true,
         "r": 0.11159105886102007,
@@ -110,7 +110,7 @@
         "Delta_arg_Z": 3.141592653589793,
         "Delta_arg_zeta": 3.1298266467300384,
         "Delta_arg_s_minus_rho": 3.141592653589793,
-        "max_abs_E": 0.08220613207045589,
+        "max_abs_E": 0.08220613207045595,
         "max_abs_Im_logZ_far": 0.0,
         "max_abs_Im_Rpeel": 3.390205629385218,
         "note": "P_X is zero-free entire; monodromy of arg P about a zeta-zero is ~0. Local monodromy sits in Z / zeta, not in P."
@@ -122,7 +122,7 @@
         "Delta_arg_P": -0.06082282933440161,
         "arg_P_start": -0.16059759330680348,
         "arg_P_end": -0.2214204226412051,
-        "abs_E_at_end": 0.039901047151977766,
+        "abs_E_at_end": 0.039901047151977787,
         "note": "Horizontal approach at t=gamma; natural path for continuous phase of P."
       },
       "m_pi": 3.141592653589793,
@@ -135,7 +135,7 @@
           "arg_Z": 0.0,
           "arg_zeta": -0.21454381926227584,
           "Im_Rpeel": -0.2214204226412051,
-          "abs_E": 0.03990104715197776,
+          "abs_E": 0.039901047151977787,
           "Im_logZ_far": 0.0,
           "Im_logZ_local": 0.0
         },
@@ -147,12 +147,12 @@
           "arg_Z": 3.141592653589793,
           "arg_zeta": 2.9152828274677627,
           "Im_Rpeel": -3.390205629385218,
-          "abs_E": 0.08220613207045589,
+          "abs_E": 0.08220613207045595,
           "Im_logZ_far": 0.0,
           "Im_logZ_local": 3.141592653589793
         }
       },
-      "n_samples_ok": 21
+      "n_samples_ok": 25
     },
     {
       "gamma": 25.01085758014569,
@@ -160,7 +160,7 @@
       "X": 35.81426543312085,
       "c_r": 0.35,
       "m": 1,
-      "n_phi": 21,
+      "n_phi": 25,
       "HD": {
         "isolated": true,
         "r": 0.10618162358113464,
@@ -173,7 +173,7 @@
         "Delta_arg_Z": 3.141592653589793,
         "Delta_arg_zeta": 3.1691160999968413,
         "Delta_arg_s_minus_rho": 3.141592653589793,
-        "max_abs_E": 6.391872513058289,
+        "max_abs_E": 6.390595291215517,
         "max_abs_Im_logZ_far": 0.0,
         "max_abs_Im_Rpeel": 2.69627743502118,
         "note": "P_X is zero-free entire; monodromy of arg P about a zeta-zero is ~0. Local monodromy sits in Z / zeta, not in P."
@@ -215,7 +215,7 @@
           "Im_logZ_local": 3.141592653589793
         }
       },
-      "n_samples_ok": 21
+      "n_samples_ok": 25
     },
     {
       "gamma": 30.424876125859512,
@@ -223,7 +223,7 @@
       "X": 42.1051810596335,
       "c_r": 0.35,
       "m": 1,
-      "n_phi": 21,
+      "n_phi": 25,
       "HD": {
         "isolated": true,
         "r": 0.10060576426974704,
@@ -278,7 +278,7 @@
           "Im_logZ_local": 3.141592653589793
         }
       },
-      "n_samples_ok": 21
+      "n_samples_ok": 25
     },
     {
       "gamma": 32.93506158773919,
@@ -286,7 +286,7 @@
       "X": 44.87098910999018,
       "c_r": 0.35,
       "m": 1,
-      "n_phi": 21,
+      "n_phi": 25,
       "HD": {
         "isolated": true,
         "r": 0.09849469280757861,
@@ -341,7 +341,7 @@
           "Im_logZ_local": 3.141592653589793
         }
       },
-      "n_samples_ok": 21
+      "n_samples_ok": 25
     },
     {
       "gamma": 37.586178158825675,
@@ -349,7 +349,7 @@
       "X": 49.77430500932555,
       "c_r": 0.35,
       "m": 1,
-      "n_phi": 21,
+      "n_phi": 25,
       "HD": {
         "isolated": true,
         "r": 0.09514799536972429,
@@ -404,7 +404,7 @@
           "Im_logZ_local": 3.141592653589793
         }
       },
-      "n_samples_ok": 21
+      "n_samples_ok": 25
     }
   ],
   "status": "M1_3_PATH_HD_LOW_DIAGNOSTIC_EXECUTED_NO_PROOF_CLAIM"
