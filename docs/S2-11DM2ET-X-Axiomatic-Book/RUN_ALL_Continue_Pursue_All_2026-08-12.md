@@ -5,13 +5,13 @@
 
 ---
 
-## 1. Residual Option 3 confirmation (this pass)
+## 1. Residual Option 3 status (this pass)
 
 Free / charge-preserving T♯ continues to supply exactly two basins of median depth O(10) with ACE N_star = 14. These free basins remain background dynamics only. Residual dynamics stay on the residual carrier O_res under Principle (S) (cardinality 539 with no 539 on the RHS, packaging 18 + 521, K+ closed through A4+/A5+). Residual-flux provenance is mandatory. No free 539 trajectory classes are claimed or produced. No new free-basin probe was run.
 
 ---
 
-## 2. Direction 1 — density gap confirmation
+## 2. Direction 1 — density gap status
 
 Post-2025 literature (Bellotti absolute-constant estimates near the Korobov–Vinogradov edge, Guth–Maynard, ANTEDB systematic exponent-pair optimisation, conditional spectral-operator bounds) was re-checked. None convert N(β⋆, T) into O((log T)^C) at any fixed moderate β⋆ ∈ [0.55, 0.80] under ZLA-admissible technology. The Step B gap table remains frozen. Direction 1 stays the ranking leader.
 
