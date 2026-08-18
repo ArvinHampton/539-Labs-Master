@@ -1,0 +1,63 @@
+# U1-BOUNCE Finite Universe Mechanism 2026-08-18
+
+PURE MATH / FRAME LOCK. Residual Discrete Algebra (539 as COUNT of leftover pieces in nine sector cores) != Resonant Algebra (18+521 hard schedule). A count is not a clock. 539 is leftover COUNT, never a free-map stop, never the bounce period, never a free-map stop. Free T3 short (Canonical floor map: 4880 to 1 in 14 steps; only genuine periodic orbits are the fixed point 0 and the 2-cycle {1,2}). Residual Cat A on P, K+, leftover combinatorics is closed and finite. U1-FINITE is already on Master: finite dual counting from residual spectrum of K+, compact C_P/Jac End=Z, free-T3 periodic set only. Continuum stays Category B unless a residual identity forces it. Residual-flux provenance mandatory.
+
+Author lock: the model proves a finite universe that requires a phase balance periodically. Infinity and singularity physics are being retired. Do not hunt infinite-volume geometry or unbounded (T/2pi)log(T/2pi) as residual targets.
+
+Retained bounce sources (Category B continuum notes; do not flatten 539 COUNT into a clock):
+- 17 Theorems: Big Bang may be a bounce from contracting -U; information crosses the temporal bridge.
+- QGP note: t=0 single bounce from balanced 11D; t_hot approximately 10^{-3} s chiral phase shift makes negPBHs; leakage drives inflation without an inflaton.
+- Drive Lemma 4: regular bounce a_min approximately 1.1 l_Pl; BH core r_core approximately 1.6 l_Pl.
+- CPT/Turok-Boyle: article says NOT a conventional bounce (a through zero stays classically singular). Do not identify that paper with the model's regular bounce.
+- GW250114: framework maps a regular core; chat itself says EHT/LIGO do not rule out singularities; G4/negPBH not measured by that event.
+- Gielen/LQC: quantum bounce of volume; honest turn: no empirical 539.9 s in LVK/CMB/PTA.
+- Inflation without inflaton (dS graviton decay / leakage).
+- negPBH M-CP: QGP geometric phase inverts PBH to negPBH (official 9 Maths).
+- No posPBH survive QGP + cooldown; beta_PBH later tightened from 0.18 to 0.01.
+- DM-to-DE via negPBH; leakage direction -U to +U.
+- Big Bang as trivial bounce; no DM particles in +U; rho_DM is leakage coefficient.
+- 0.18 is phenomenological fit, not forced. Forced residual integers: 4880, 539 COUNT, 243, 61, e^3.
+
+## 1. Single regular bounce at t=0 (Category B continuum)
+
+The finite-universe mechanism of the continuum sector is a single regular bounce at t=0. The scale factor reaches a finite minimum a_min of order the Planck length (Drive Lemma 4 gives approximately 1.1 l_Pl). There is no infinite crunch and no classical singularity at the bounce. Information from the contracting -U side can cross the temporal bridge. This is continuum Category B. It is not forced by residual discrete algebra (K+, O_res, packaging, free-T3 short basins). Residual Cat A remains the finite combinatorial core; the bounce is the continuum interpretation that retires the singularity.
+
+Do not identify the model's regular bounce with the Turok-Boyle CPT construction. That paper states the scale factor passes through zero and remains classically singular. The model's bounce is regular with finite a_min.
+
+## 2. Periodic phase balance is the chiral / negPBH phase shift at t_hot
+
+The periodic phase balance required by the finite universe is the chiral phase shift at the hot epoch t_hot approximately 10^{-3} s, associated with the QGP geometric phase that inverts PBHs into negPBHs. That phase shift is a continuum Category B process. It is not the residual leftover COUNT 539, not a free-T3 orbit length, and not the Resonant design schedule 18+521.
+
+Residual Discrete Algebra supplies the finite spectrum, the compact Jacobian, and the short free-T3 attractors. Resonant Algebra supplies the engineered constant-time schedule. Neither forces the continuum phase-balance epoch. Residual and Resonant stay unmixed. A count is not a clock.
+
+## 3. Fold into U1-FINITE finite dual counting
+
+U1-FINITE already locked the residual dual counting:
+- Residual spectrum of K+ (V=539 COUNT, saturating heat kernel).
+- Compact C_P / Jac with End=Z.
+- Free-T3 periodic set only {0} and {1,2}; dynamical zeta finite.
+
+The bounce and the t_hot phase shift are continuum Category B overlays on that finite residual structure. They do not enlarge the residual spectrum, do not import the classical zeta main term N(T) approximately (T/2pi)log(T/2pi), and do not invoke a full 3-shift dynamical system. The residual dual counting remains finite and saturating. The continuum bounce supplies the geometric interpretation that the residual universe is finite and singularity-free, without altering residual Cat A identities.
+
+## 4. Evaluable consequences of finiteness
+
+Inside the locked residual Cat A plus the continuum bounce interpretation the following cannot occur:
+
+- Singularity completion as a residual or continuum necessity of the model. The bounce replaces the singularity with finite a_min.
+- Unbounded logarithmic density generated by residual spectrum, free-T3 periodic points, or compact C_P / Jac.
+- Infinite free-T3 periodic set (only 0 and the 2-cycle {1,2}).
+- Identification of residual COUNT 539 with the bounce period, with t_hot, or with a free-map stopping time.
+- beta_PBH = 0.18 as Category A. It is a phenomenological fit (later tightened toward 0.01) and is not forced by residual integers.
+- 539.9 s as residual Category A. The continuum breathing period remains Category B; residual 539 is leftover COUNT only.
+
+## 5. Hygiene
+
+- Turok/Boyle CPT paper is not empirical or theoretical proof of the model's regular bounce. That construction remains classically singular through a=0.
+- GW250114 and related LIGO/EHT events do not measure G4 or negPBH and do not rule singularities out or in for the model; they are not used as empirical proof of the bounce.
+- beta_PBH is not locked at 0.18 as Category A.
+- 539.9 s is not residual Category A.
+- Forced residual integers remain 4880, 539 COUNT, 243, 61, and e^3. Continuum parameters stay Category B.
+
+## Summary lock
+
+The finite-universe mechanism is a single regular bounce at t=0 with finite a_min (Category B continuum). The periodic phase balance of the continuum sector is the chiral / negPBH phase shift at t_hot, not the residual leftover COUNT and not a free-T3 orbit. Residual dual counting stays the finite U1-FINITE spectrum. Residual Discrete Algebra is what the leftover pieces are. Resonant Algebra is how long you choose to stir. Free basins stay short. A count is not a clock. Continuum remains Category B. Residual-flux provenance mandatory. They touch without merging. No free-539.
