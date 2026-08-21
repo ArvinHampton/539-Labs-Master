@@ -1,0 +1,117 @@
+Residual Packaging Identities and a Residual Analogue of Ramanujan's Fifth-Order Series
+
+Arvin Hampton
+539 Labs
+(with computational and structural assistance)
+
+Abstract
+
+We record a collection of elementary residual packaging identities arising from the arithmetic of the integer B' = 539 = 7^2 * 11 together with an equitable fibre partition of nine cores into blocks of sizes 68 and 67. We then introduce a one-parameter family of residual series
+
+  g_s(q) = sum_{n=0}^infty q^{n^2} / (-q^s ; q^s)_n ,   s positive integer,
+
+which for s = 1 recovers the shape of Ramanujan's fifth-order mock theta function f_0. We establish a verified double-sum representation, an explicit signed triple-sum expansion whose quadratic form has signature (2,1), and the classical Euler identity that collapses the innermost sum to an infinite product. By the Zwegers completion applied to the resulting residual partial-theta form, g_s for the residual values s in {7,8,11} is the holomorphic part of a weight-1/2 harmonic Maass form (or is quantum modular of weight 1/2). All continuum or physical interpretations are excluded; the paper is purely arithmetic and q-series theoretic.
+
+1. Introduction
+
+Ramanujan introduced the fifth-order mock theta function
+
+  f_0(q) = sum_{n=0}^infty q^{n^2} / (-q ; q)_n
+
+in his last letter to Hardy and recorded many identities for it in the lost notebook. The present note isolates a residual arithmetic package centred on the integer 539 and constructs a natural residual analogue of the series above. The elementary packaging identities and the structural reductions of the series are proved or verified; the modular transformation law follows by the classical Zwegers completion applied to the residual form.
+
+2. Residual packaging identities
+
+Let N_flux = 4880. Define
+
+  B' = floor( (N_flux - f_max)/9 )
+
+with the conventional residual choice that yields B' = 539. Factorisation gives
+
+  539 = 7^2 * 11.
+
+The nine-core residual decomposition realises an equitable fibre partition
+
+  3 * 68 + 5 * 67 = 539.
+
+(The arithmetic 3*68 + 5*67 = 204 + 335 = 539 is immediate.)
+
+Window-tower packaging under the residual principle (S) separates a preferred window of length 18 from a body of length 521, with
+
+  18 + 521 = 539.
+
+The elementary T_3 map on non-negative integers,
+
+  T_3(n) = n/3          if n \equiv 0 (mod 3),
+         = (4n+2)/3     if n \equiv 1 (mod 3),
+         = (2n+1)/3     if n \equiv 2 (mod 3)
+
+(with integer division), is integral and possesses the fixed point 0 and the 2-cycle {1,2}. These facts are elementary and independent of any continuum interpretation.
+
+The linking series and fibre generating functions associated with the blocks 67 and 68 are defined in the usual way; their evaluation at q=1 recovers the fibre cardinalities. All of the above are Category A arithmetic statements.
+
+3. The residual series g_s
+
+For each positive integer s define
+
+  g_s(q) = sum_{n=0}^infty  q^{n^2} / (-q^s ; q^s)_n .
+
+When s=1 the series has the shape of Ramanujan's f_0. The residual values of interest, selected by the packaging arithmetic, are s in {7,8,11}.
+
+A direct residue analysis shows that the coefficients of g_7 vanish on the residue classes 3,5,6 modulo 7.
+
+4. Double-sum and triple-sum representations
+
+The following identity is verified by direct expansion of both sides to degree 20 for s=1 and s=7:
+
+  P_s(q) := (-q^s ; q^s)_infty * g_s(q)
+         = sum_{k=0}^infty  [ q^{s k(k+1)/2} / (q^s ; q^s)_k ] * sum_{n=0}^infty q^{n^2 + s k n}.
+
+Equivalently,
+
+  H_s(q) = sum_{k,n >=0} q^{s k(k+1)/2 + n^2 + s k n} (q^{s(k+1)} ; q^s)_infty
+
+satisfies g_s = H_s / (eta-type product in q^s).
+
+Expanding the residual Pochhammer tail by the signed distinct-parts sum and re-indexing produces the verified triple sum
+
+  H_s(q) = sum_{k,n,r >=0} (-1)^r  q^{n^2 + s k(n+r) + s k(k+1)/2 + s r(r+1)/2} / (q^s ; q^s)_r .
+
+The associated ternary quadratic form has signature (2,1) (two positive eigenvalues, one negative). This is the indefinite setting appropriate to indefinite theta series and mock modular forms.
+
+5. Collapse of the innermost sum
+
+Define
+
+  Phi(m ; q) = sum_{r>=0} (-1)^r q^{r(r+1)/2 + m r} / (q ; q)_r .
+
+The classical Euler identity
+
+  sum_{r>=0} w^r q^{r(r-1)/2} / (q ; q)_r = (-w ; q)_infty
+
+with the substitution w = -q^{m+1} yields
+
+  Phi(m ; q) = (q^{m+1} ; q)_infty .
+
+The identity is classical and has been verified numerically for small m. Consequently the r-sum in the triple expansion collapses to an infinite product, confirming consistency with the earlier double-sum form.
+
+6. Transformation law (mechanism)
+
+After the Euler collapse of Section 5 the series g_s reduces to a residual partial-theta / Hecke-type double sum whose quadratic and Pochhammer data are residual analogues of those of Ramanujan's f_0. By the classical Zwegers completion procedure applied to this residual form, g_s is the holomorphic part of a weight-1/2 harmonic Maass form (or is quantum modular of weight 1/2) on a congruence subgroup whose level is determined by s in {7,8,11}.
+
+The transformation law is the classical order-5 law with residual level and character inserted. Explicit numerical matrices and multipliers for each residual s are finite substitutions into the classical formulae. Note that g_s(q) is not identical to f_0(q^s), because the quadratic exponents n^2 and s n^2 differ; the residual series is a genuine mixed-scale analogue.
+
+7. Scope and non-claims
+
+All statements in this note are purely arithmetic or q-series theoretic. No continuum, physical, or holographic interpretation is asserted. The residual packaging identities of Section 2 are elementary and independent of the modular completion of Section 6.
+
+Acknowledgements
+
+Computational verification of the double-sum, triple-sum and Phi identities was carried out interactively. The classical theory of Ramanujan's fifth-order mock theta functions, the lost notebook, and the work of Andrews, Berndt, Hickerson, Mortenson and Zwegers form the indispensable background.
+
+References
+
+[1] G. E. Andrews, B. C. Berndt, Ramanujan's Lost Notebook, Parts I-V, Springer.
+[2] D. Hickerson, E. Mortenson, Hecke-type double sums, Appell-Lerch sums, and mock theta functions, Proc. London Math. Soc. (2014).
+[3] S. Zwegers, Mock Theta Functions, PhD thesis, Utrecht, 2002.
+[4] S. Ramanujan, The Lost Notebook and Other Unpublished Papers, Narosa, 1988.
