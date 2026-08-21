@@ -1,0 +1,57 @@
+{
+  "date": "2026-08-21",
+  "t3_rational_non_integral_0_49_count": 16,
+  "t3_rational_non_integral_sample": [
+    {
+      "n": 2,
+      "n_mod_3": 2,
+      "value": "5/3",
+      "branch": "(2n+1)/3"
+    },
+    {
+      "n": 5,
+      "n_mod_3": 2,
+      "value": "11/3",
+      "branch": "(2n+1)/3"
+    },
+    {
+      "n": 8,
+      "n_mod_3": 2,
+      "value": "17/3",
+      "branch": "(2n+1)/3"
+    },
+    {
+      "n": 11,
+      "n_mod_3": 2,
+      "value": "23/3",
+      "branch": "(2n+1)/3"
+    },
+    {
+      "n": 14,
+      "n_mod_3": 2,
+      "value": "29/3",
+      "branch": "(2n+1)/3"
+    }
+  ],
+  "all_failures_mod_3_equal_2": true,
+  "t3_exact_equals_floor_0_199": true,
+  "g7_degree": 80,
+  "g7_vanishing_violations": [],
+  "g7_nonzero_residues_mod_7": [
+    0,
+    1,
+    2,
+    4
+  ],
+  "packaging": {
+    "539_factor": 539,
+    "fibre": 539,
+    "window_body": 539
+  },
+  "n_flux_floor_e3_3_5": 4880,
+  "f_max_interval_for_B_prime_539": [
+    21,
+    29
+  ],
+  "hygiene": "Residual Discrete Algebra (539 COUNT) != Resonant"
+}
