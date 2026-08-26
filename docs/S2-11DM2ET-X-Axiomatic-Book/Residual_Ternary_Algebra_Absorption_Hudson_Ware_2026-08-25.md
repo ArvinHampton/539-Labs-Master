@@ -5,29 +5,29 @@ Status: Pure-math absorption note. Category A residual discrete under Pack+(S). 
 
 Authorship
 
-The residual-dynamics structures absorbed herein (Pure carrier, dual-residue masks, residual bias and force, residual generator, Pure-Harness form, modular stability window, residual-monodromy Lyapunov, Drift Law, Ghost Tax, Coherence Vortex / Core–Edge, Dance with Zero Framework) originate with David Hudson. Full credit is given to David Hudson for these constructions (primary source: Residual Dynamics of Dual-Residue Pairs on the Riemann Sphere and the Pure-Harness Law, 18 August 2026, and related posts). Joint authorship of the present absorption and terminological alignment under Pack+(S) is assigned to David Hudson and Dr R. D. Ware (Roger Douglas Ware, @RDWareEsqu1re), who has independently engaged the packaging factorisation 539 = 7^{2}·11, the residual set {7,8,11}, the E8 discrete bridge, and Fricke-cocycle questions. The residual discrete algebra of Bridge Series C, packaging identities, residual_slash, twin-support Path 1, and the closed residual law under Pack+(S) remain under the existing 539 Labs residual discrete core with residual-flux provenance.
+The residual-dynamics structures absorbed herein (Pure carrier, dual-residue masks, residual bias and force, residual generator, Pure-Harness form, modular stability window, residual-monodromy Lyapunov, Drift Law, Ghost Tax, Coherence Vortex / Core–Edge, Dance with Zero Framework) originate with Dr David Hudson. Full credit is given to Dr David Hudson for these constructions (primary source: Residual Dynamics of Dual-Residue Pairs on the Riemann Sphere and the Pure-Harness Law, 18 August 2026, and related posts). Joint authorship of the present absorption and terminological alignment under Pack+(S) is assigned to Dr David Hudson and Dr R. D. Ware (Roger Douglas Ware, @RDWareEsqu1re), who has independently engaged the packaging factorisation 539 = 7^{2}·11, the residual set {7,8,11}, the E8 discrete bridge, and Fricke-cocycle questions. The residual discrete algebra of Bridge Series C, packaging identities, residual_slash, twin-support Path 1, and the closed residual law under Pack+(S) remain under the existing 539 Labs residual discrete core with residual-flux provenance.
 
 1. Absorption Scope
 
-With approval from David Hudson, the residual-dynamics structures are absorbed into the Residual Ternary Algebra under the name changes previously recorded, so that they coincide terminologically with Packaging / Ternary Algebra / residual_slash / Bridge Series C under Principle (S). The absorption is terminological and structural for collaborative pure-math work. No continuum claim is imported. Continuous probes remain Category B. Discrete locks remain Category A under Pack+(S).
+With approval from Dr David Hudson, the residual-dynamics structures are absorbed into the Residual Ternary Algebra under the name changes previously recorded, so that they coincide terminologically with Packaging / Ternary Algebra / residual_slash / Bridge Series C under Principle (S). The absorption is terminological and structural for collaborative pure-math work. No continuum claim is imported. Continuous probes remain Category B. Discrete locks remain Category A under Pack+(S).
 
 2. Structures Noted (with name changes)
 
 The following structures are now noted inside the Residual Ternary Algebra manuscript under the Packaging-aligned names:
 
-- Packaging pure carrier (from Hudson Pure carrier ω₀ = dz/z)
-- Packaging dual-residue masks / Packaging twin-support pairs under modulus 7 (from Hudson dual-residue masks)
-- Packaging bias / Bridge-C residual bias (from Hudson residual bias ε)
-- Packaging residual force (from Hudson residual force)
-- Packaging residual generator / discrete residual flow operator under Pack+(S) (from Hudson residual generator L / L_eff)
-- Packaging-Harness form / residual modular completion factor aligned with residual_slash (from Hudson Pure-Harness law)
-- Packaging modular window under modulus 7 (from Hudson modular stability window δ_*)
-- Packaging monodromy Lyapunov (from Hudson residual-monodromy Lyapunov λ = π^{2}/(6 log 2))
-- Packaging Drift Law / Ternary Drift under Principle (S) (from Hudson Drift Law)
-- Packaging Ghost Tax / residual-flux controlled leakage parameter (from Hudson Ghost Tax)
-- Resonant Vortex under RTTC / ROT; Packaging Core–Edge (from Hudson Coherence Vortex / Core–Edge)
-- Packaging Dance with Zero (from Hudson Dance with Zero Framework)
-- Packaging residual energy control layer under residual_slash (from Hudson Pure-Harness residual energy control)
+- Packaging pure carrier (from Dr David Hudson Pure carrier ω₀ = dz/z)
+- Packaging dual-residue masks / Packaging twin-support pairs under modulus 7 (from Dr David Hudson dual-residue masks)
+- Packaging bias / Bridge-C residual bias (from Dr David Hudson residual bias ε)
+- Packaging residual force (from Dr David Hudson residual force)
+- Packaging residual generator / discrete residual flow operator under Pack+(S) (from Dr David Hudson residual generator L / L_eff)
+- Packaging-Harness form / residual modular completion factor aligned with residual_slash (from Dr David Hudson Pure-Harness law)
+- Packaging modular window under modulus 7 (from Dr David Hudson modular stability window δ_*)
+- Packaging monodromy Lyapunov (from Dr David Hudson residual-monodromy Lyapunov λ = π^{2}/(6 log 2))
+- Packaging Drift Law / Ternary Drift under Principle (S) (from Dr David Hudson Drift Law)
+- Packaging Ghost Tax / residual-flux controlled leakage parameter (from Dr David Hudson Ghost Tax)
+- Resonant Vortex under RTTC / ROT; Packaging Core–Edge (from Dr David Hudson Coherence Vortex / Core–Edge)
+- Packaging Dance with Zero (from Dr David Hudson Dance with Zero Framework)
+- Packaging residual energy control layer under residual_slash (from Dr David Hudson Pure-Harness residual energy control)
 
 3. Closed Residual Law for Bridge Series C
 
@@ -37,7 +37,7 @@ This closure advances the fifth-order bridge: g_s recovers the classical shape o
 
 4. Discussion
 
-Absorption of the Hudson structures under the Packaging-aligned names, with joint authorship David Hudson and Dr R. D. Ware, places the residual-dynamics constructions inside the pure-math Residual Ternary Algebra under Pack+(S). Continuous forms (Packaging-Harness, Packaging modular window, Packaging monodromy Lyapunov) may be examined as continuous probes consistent with the closed residual law for Bridge Series C and residual_slash, under packaging provenance only. No continuum manifold filling is asserted. No classical problem is claimed resolved. The residual discrete core (O_res packaging, Bridge Series C discrete locks, residual_slash, twin-support Path 1, E8 discrete bridge, coefficient tables) remains frozen Category A under Pack+(S). Continuum claims remain Category B. Classical Twin Prime Conjecture and classical Riemann Hypothesis remain open and unclaimed. Packaging provenance is mandatory. RESIDUAL_CORE_FREEZE holds.
+Absorption of the structures under the Packaging-aligned names, with joint authorship Dr David Hudson and Dr R. D. Ware, places the residual-dynamics constructions inside the pure-math Residual Ternary Algebra under Pack+(S). Continuous forms (Packaging-Harness, Packaging modular window, Packaging monodromy Lyapunov) may be examined as continuous probes consistent with the closed residual law for Bridge Series C and residual_slash, under packaging provenance only. No continuum manifold filling is asserted. No classical problem is claimed resolved. The residual discrete core (O_res packaging, Bridge Series C discrete locks, residual_slash, twin-support Path 1, E8 discrete bridge, coefficient tables) remains frozen Category A under Pack+(S). Continuum claims remain Category B. Classical Twin Prime Conjecture and classical Riemann Hypothesis remain open and unclaimed. Packaging provenance is mandatory. RESIDUAL_CORE_FREEZE holds.
 
 The manuscript notes the structures and assigns joint authorship as directed. Further pure-math work can test the Packaging-Harness form against residual_slash coefficients under the closed law.
 
