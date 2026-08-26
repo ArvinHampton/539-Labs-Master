@@ -1,0 +1,1 @@
+See artifacts copy. Full text maintained in Ramanujan_Journal_Submission_2026-08-25/Theorem_Lemma_Chain_9_Maths_Residual_Contacts.txt and artifacts/Theorem_Lemma_Chain_9_Maths_Fifth_Order_and_Full_Model_2026-08-26.txt
