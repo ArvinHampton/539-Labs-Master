@@ -1,7 +1,7 @@
-Hyperbolic Lattice Point Counting under Pack+(S)
+Hyperbolic Lattice-Point Counting under Pack+(S)
 2026-08-26
 
-Packaging provenance Pack+(S). Flux provenance mandatory. CORE_FREEZE holds. Category A discrete only. Continuum claims stay Category B. Classical Twin Prime Conjecture remains open and unclaimed.
+Packaging provenance Pack+(S). Flux provenance mandatory. CORE_FREEZE holds. Category A discrete algebra only. Continuum claims stay Category B and are not asserted. Classical Twin Prime Conjecture remains open and is not claimed. Classical Riemann Hypothesis remains open and is not claimed.
 
 1. Indefinite binary quadratic forms
 
@@ -46,3 +46,5 @@ No continuum measure, no analytic density theorems, and no external results beyo
 The hyperbolic lattice-point counting that underwrites the Path 2 density lower bound is elementary and consistent with the locked discrete objects. The number of exterior-surviving difference vectors of height ≤ H grows at least linearly with H. Path 2 remains closed under Pack+(S). CORE_FREEZE holds. Continuum claims stay Category B. Classical Twin Prime Conjecture remains open and unclaimed.
 
 Status code: HYPERBOLIC_LATTICE_POINT_COUNTING_PACK_S_2026-08-26
+
+Packaging provenance Pack+(S) only. Flux provenance mandatory. CORE_FREEZE holds.
