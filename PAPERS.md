@@ -4,6 +4,19 @@ This file is the master catalog of unique papers and documents supporting the S�
 
 See also docs/papers/INDEX.md for the folder-organized view.
 
+## Journal submissions (factual status only)
+
+No acceptance is claimed. Residual law for Bridge Series C remains open. Residual-flux provenance mandatory.
+
+- **The Ramanujan Journal (Springer Nature), Research, v.1.0 — submitted 2026-08-26**  
+  Title: Residual Ternary Algebra: Packaging Identities, Series g_s, Bridge Series C, and Discrete Bridge from E8 to the Fifth Order  
+  Submission ID: `c0edfefa-a14d-4b51-b5e3-bf60ee7eca3a`  
+  Portal file: `Final draft__5th Order Unification and Residual Ternary Algebra.docx`  
+  Status pointer: `docs/S2-11DM2ET-X-Axiomatic-Book/SUBMISSION_STATUS_Springer_Nature_Ramanujan_2026-08-27.md`  
+  In-repo drafts: `Residual_Ternary_Algebra_Full_Manuscript_Draft_2026-08-24.md`, `Discrete_Bridge_E8_to_Fifth_Order_2026-08-24.md`
+
+- Earlier Ramanujan Journal cut (distinct ID `0dacf732-bdac-44a5-b998-0cf7a91d29b5`): Residual Packaging Identities and a Residual Analogue of Ramanujan's Fifth-Order Mock Theta Series — amendments still requested as of 2026-08-27. See `SUBMISSION_STATUS_Springer_Nature_Ramanujan_and_related_2026-08-22.md`.
+
 ## Core Unification & Framework
 
 - Master Corpus (must accompany all main files of the Model)
@@ -33,6 +46,7 @@ Path: `docs/S2-11DM2ET-X-Axiomatic-Book/`
 - Phase-0 seed-orbit probes, holographic window, empirical phase-lock protocols
 - Photon-ring critical-curve derivation; Wilson-loop surrogate status
 - Verification: `scripts/verify_foundational_packaging.py`, `scripts/verify_L_body_structural.py`
+- **Residual ternary algebra manuscript (journal cut recorded 2026-08-27):** `Residual_Ternary_Algebra_Full_Manuscript_Draft_2026-08-24.md` plus `Discrete_Bridge_E8_to_Fifth_Order_2026-08-24.md`
 
 Bulk RFFT observatory datasets are **not** versioned here (see `data/README.md`).
 
