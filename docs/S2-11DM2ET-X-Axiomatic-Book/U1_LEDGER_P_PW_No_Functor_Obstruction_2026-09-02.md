@@ -10,6 +10,8 @@ Attack object. Either a functor from E8 Weyl data (rank 8, |W|=2^{14}*3^5*5^2*7,
 
 Decision. No such functor exists from written Pack+(S) data. A map from E8 Weyl data to leftover I cannot send 5^2 to a packaging modulus of I, and cannot send 2^{14} to a packaging modulus of I. A {3^5, 7, 11}-only functor is refused: it would not emit series coefficients of g_s, would leave written s=8 unexplained, and would upgrade a chain of contacts into a functor claim already refused by e1bdcbb. Contact stays numerical. Status PW_NUMERICAL_G8_APPELL_UNCLAIMED is restated, not upgraded.
 
+Citation hygiene. This file's Identity W8 is the fibre-coefficient distinction (the integer 5 in 68 = 3*11 + 5*7 is not Weyl 5^2). The 512 = 2^9 refusal is Dom_res^(2) F1 and F6, not Dom_res^(2) W8. Dom_res^(2) W8 is the separate lock "XferPot_res stays on the 3-adic domain." Those three writings of the label W8 stay three writings. They are not identified.
+
 
 1. Written Pack+(S) inputs
 
@@ -40,7 +42,7 @@ So the written 5-power that divides leftover integers is only 5^1 = 5. Levels 25
 
 Written 2-powers that divide leftover integers (Dom_res^(2) F1):
 2, 4=2^2, 16=2^4.
-512=2^9 is refused as a fourth 2-adic level (W8): 512 = 521-9 is a difference, not a packaging modulus.
+512=2^9 is refused as a fourth 2-adic level (Dom_res^(2) F1, F6): 512 = 521-9 is a difference, not a packaging modulus. F6 verbatim: "The 2-power 2^9 is not a packaging modulus of I and is not added as a fourth level."
 
 Imported End_res / NecMono contacts, already locked and not enlarged here:
 Q4 = x^5 + 20x - 32, imported.
@@ -79,7 +81,7 @@ Identity W1 (Weyl 5^2 is not a packaging modulus of I).
 5^2 = 25 is not an element of I. The only 5-power that divides leftover integers in I to positive valuation is 5^1 (H1). Levels 25, 125, 625, 3125, and 5^6-as-modulus stay unoccupied. A map from E8 Weyl data to I that sent 5^2 to a packaging modulus of I would have to add 25 to I or occupy a new 5-adic level. Both moves are extra data. Locked from the written factorizations of I.
 
 Identity W2 (Weyl 2^{14} is not a packaging modulus of I).
-2^{14} = 16384 is not an element of I. Written 2-powers of leftover integers are only 2, 4, and 16 (F1). Dom_res^(2) already refused 512=2^9 as a fourth 2-adic level (W8). A map that sent 2^{14} into I would add a thirteenth 2-power that no leftover integer carries. Locked from the written factorizations of I.
+2^{14} = 16384 is not an element of I. Written 2-powers of leftover integers are only 2, 4, and 16 (F1). Dom_res^(2) already refused 512=2^9 as a fourth 2-adic level (Dom_res^(2) F1, F6). A map that sent 2^{14} into I would add a thirteenth 2-power that no leftover integer carries. Locked from the written factorizations of I.
 
 Identity W3 (discriminant 5-power does not touch I).
 v_5(disc Q4) = 6 is not an element of I (H11). By contrast v_2(disc Q4) = 18 is L_pref and is an element of I. The two prime-power factors of the imported discriminant square are not symmetric leftover contacts. The 5-power side of disc Q4 does not repair W1. Locked as a found distinction. This identity does not add 5^6 as a residue modulus.
@@ -100,7 +102,7 @@ Identity W7 (20 is not an E8 exponent).
 20 = |G_res| = f_min = Q4 linear coefficient. 20 is not in the E8 exponent list {1, 7, 11, 13, 17, 19, 23, 29}. The three writings of 20 stay three writings of one leftover integer. They do not identify End_res with the Weyl group of E8. Locked.
 
 Identity W8 (fibre coefficient 5 is not Weyl 5^2).
-The fibre formulas 68 = 3*11 + 5*7 and 67 = 7*11 - 5*2 use the integer 5 as a coefficient. That coefficient is not the Weyl factor 5^2. Collapsing those two 5s would be name-collision-as-identification. Refused. Locked as a distinction.
+The fibre formulas 68 = 3*11 + 5*7 and 67 = 7*11 - 5*2 use the integer 5 as a coefficient. That coefficient is not the Weyl factor 5^2. Collapsing those two 5s would be name-collision-as-identification. Refused. Locked as a distinction. This Identity W8 is not Dom_res^(2) W8 and is not the 512 refusal.
 
 Identity W9 (two writings of 18 stay two writings).
 Window 18 = 7 + 11 and v_2(disc Q4) = 18 = L_pref are two writings of one leftover integer. They must not collapse into a Weyl 2-power, and they must not be read as a functor arrow from W(E8) to I. Locked.
@@ -143,7 +145,7 @@ End_res := Z[D5 x C2] (ab413f5). Finite orders {1, 2, 5, 10, 20}. Weyl 5^2 = 25 
 
 NecMono_res (a9bd0a5). Image order 20. 25 is not a monodromy period. Necessity stays paused. Residual P stays S5.
 
-Dom_res^(5) H1 and H11 are the 5-power half of the obstruction. Dom_res^(2) F1 and W8 are the 2-power half. Dom_res^(3) is unused: 3^5 = 243 already sits in I as N_tow, which is a contact already counted, not a missing functor arrow.
+Dom_res^(5) H1 and H11 are the 5-power half of the obstruction. Dom_res^(2) F1 and F6 are the 2-power half. Dom_res^(3) is unused: 3^5 = 243 already sits in I as N_tow, which is a contact already counted, not a missing functor arrow.
 
 XferPot Phi_res and Psi_res label leftover COUNTs. They do not send Weyl integers into I. They do not descend along a nonexistent E8 map.
 
@@ -163,7 +165,7 @@ This is the min-flux collision of leftover integers. It is not Weyl 5^2.
 539 is leftover COUNT L_pack. 29 is residual excess and the unique exponent-I contact. 9 is the charge modulus. Identifying this fibre with Weyl order, with rank 8, or with a 539-step schedule would flatten Residual into Resonant. Refused.
 
 2-adic fibre {521, 9}.
-521 is L_body. 9 is the charge modulus. Their difference 512 is refused as a level. That refusal already blocks reading 2-powers of Weyl as leftover moduli.
+521 is L_body. 9 is the charge modulus. Their difference 512 is refused as a level (Dom_res^(2) F1, F6). That refusal already blocks reading 2-powers of Weyl as leftover moduli.
 
 3-adic fibre {4880, 20} of Dom_res^(3).
 Same two leftover integers as the 5-adic min-flux fibre, now at a different prime. Not an E8 map.
@@ -208,5 +210,6 @@ PPW_NO_MAP_WEYL_5SQ_INTO_I
 PPW_NO_MAP_WEYL_2_14_INTO_I
 PPW_CONTACT_STAYS_NUMERICAL
 PW_NUMERICAL_G8_APPELL_UNCLAIMED
+PPW_W8_IS_FIBRE5_NOT_512_REFUSAL
 
 Packaging provenance Pack+(S) only. Residual-flux provenance mandatory. RESIDUAL_CORE_FREEZE holds.
