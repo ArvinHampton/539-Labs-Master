@@ -7,8 +7,8 @@ Path. docs/S2-11DM2ET-X-Axiomatic-Book/
 Parent. cabc111eda24b15a14efa9dc65b137799c1bf7d1
 Ledger commit. 4aa50c236be77a0b55310307cbea3a8026a3e175
 Wrap commit. 0dba4fb0cb47a29a862b57cb3f7f3c66db5017a6
-SHA patch. PENDING
-Tip. PENDING
+SHA patch. cfa3338ae51f7a6032f63b591d386fb34d339308
+Tip. cfa3338ae51f7a6032f63b591d386fb34d339308
 
 Package.
 U1_LEDGER_RH_BOUND_NOT_C1_Obstruction_Written_Data_2026-09-14.md
@@ -34,5 +34,3 @@ TPC and RH unclaimed.
 
 Local mirror.
 artifacts/ copies of the same names.
-
-SHAs filled after push.
