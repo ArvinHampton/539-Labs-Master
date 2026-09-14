@@ -5,6 +5,9 @@ Formal Pack+(S) Definition
 Destination. 539-Labs-Master main.
 Path. docs/S2-11DM2ET-X-Axiomatic-Book/
 Parent. a515b3ff05fa9591fa7e04486119367a6c465a16
+Ledger and wrap commit. 4bb63914570ba89d61056c0391af28b3bbbbc341
+SHA patch parent. 4bb63914570ba89d61056c0391af28b3bbbbc341
+Tip. see following commit.
 
 Package.
 U1_LEDGER_PHI_STABILIZATION_OCCFILT_IDS_Definition_Written_Data_2026-09-14.md
