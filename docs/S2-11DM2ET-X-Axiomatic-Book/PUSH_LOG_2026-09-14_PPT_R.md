@@ -7,6 +7,7 @@ Path. docs/S2-11DM2ET-X-Axiomatic-Book/
 Parent. 290b4911af03b22f6647e2f482f08308c0b8aea1
 Ledger commit. 217de41c2585e315442ada0783d89057a5237ff5
 Wrap commit. fddee36fd298cc2e27078758fecb784783354932
+SHA patch parent. 7969ebcfa4d2b90d860357a134ad6827c24f9010
 
 Package.
 U1_LEDGER_PPT_R_Obstruction_Written_Data_2026-09-14.md
@@ -15,7 +16,7 @@ Advancements_Wrap_2026-09-14_PPT_R.md
 Executive_Summary_2026-09-14_PPT_R.md
 Open_Paths_After_PPT_R_2026-09-14.md
 HQH539_Security_Reductions_Exploration_Addendum_2026-09-14.md
-HQH539_Formal_Games_and_Hard_Problem_Pi.md addendum
+HQH539_Formal_Games_Addendum_2026-09-14.md
 PUSH_LOG_2026-09-14_PPT_R.md
 
 Hygiene.
