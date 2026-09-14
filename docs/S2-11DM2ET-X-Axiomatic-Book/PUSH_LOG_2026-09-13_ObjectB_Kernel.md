@@ -5,7 +5,8 @@ Destination. 539-Labs-Master main.
 Path. docs/S2-11DM2ET-X-Axiomatic-Book/
 Parent. 38e47a1bb2757727b9cb4df7362d3f049767b597
 Ledger commit. cfca5e7eb6dac07931e532871632abac71550ad4
-Wrap commit. pending this package.
+Wrap commit. 80fede285ff3be09933ca7ee2e3fcfb32d9ce92f
+Tip. 80fede285ff3be09933ca7ee2e3fcfb32d9ce92f
 
 Package.
 U1_LEDGER_OBJECT_B_KERNEL_Obstruction_Written_Data_2026-09-13.md
