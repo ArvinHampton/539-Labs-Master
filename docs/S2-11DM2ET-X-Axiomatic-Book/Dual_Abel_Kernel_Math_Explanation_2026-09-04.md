@@ -1,59 +1,127 @@
 Dual_Abel kernel math
-Named-object lock, not a new residual-flux object
-2026-09-04 written, 2026-09-05 pushed
+Explanation from locked notes
+2026-09-04 late
 
-PURE MATH. Category A residual discrete regularization. Pack+(S). Residual-flux provenance mandatory. RESIDUAL_CORE_FREEZE holds. Twin Prime and RH unclaimed. Continuum Category B.
+Pack+(S). Residual-flux provenance mandatory. RESIDUAL_CORE_FREEZE holds.
+This is an explanation. It does not invent raw h. It does not identify Dual_Abel with Per_off.
+Twin Prime and Riemann Hypothesis unclaimed.
 
-1. What Dual_Abel is
 
-Dual_Abel is Dual_Abel_off. The 29 August Independent_H_Table occupies it. It is a damped Fourier period table on the real line.
+0. What Dual_Abel is
 
-Each locked series is cut by the sign of the Fourier index N:
+Dual_Abel is the 29 August independent period table.
+Signed Dual channels of Xi, of C_axis, and of Theta_third.
+Abel-regularised weight-1/2 Eichler kernel.
+Evaluated at x in {1/7, 3/7, 5/7, 1}, their Fricke images under W_7(x) = -1/(7x), and the positive 1/14 grid.
 
-Dual = Dual^(-1) + Dual^(0) + Dual^(+1)
+The populated sibling of those Xi channels was later named Dual_Abel_off.
+Naming Dual_Abel_off does not populate Per_off.
 
-Minus modes N less than 0. Zero mode N = 0. Plus modes N greater than 0. The three series that receive this split are Xi, C_axis, and Theta_third. Nine channels at each real x.
+
+1. Dual split
+
+Any dual lattice sum is split by the sign of the Fourier index N:
+
+Dual = Dual^{(-1)} + Dual^{(0)} + Dual^{(+1)}
+
+Dual^{(-1)} uses modes with N < 0.
+Dual^{(0)} is the N = 0 term.
+Dual^{(+1)} uses modes with N > 0.
+
+Three series are split that way: Xi, C_axis, Theta_third.
+Nine channels at each real x.
+
 
 2. The kernel
 
-The written weight-1/2 factor on a mode of degree N is N^{-1/2}. On the real line that sum does not converge, so an Abel regulator is inserted:
+The weight-1/2 Eichler kernel on a mode of degree N is
 
-K_Abel(N, epsilon) = N^{-1/2} exp(-2 pi N epsilon)
+K_Abel(N, ε) = N^{-1/2} exp(-2 π N ε)
 
-with epsilon = 10^{-4}.
+with numerical regulator ε = 10^{-4}.
 
-Phases are signed. Plus channel uses exp(+2 pi i N x). Minus channel uses exp(-2 pi i N x). A plus term is therefore
+The exponential is the Abel regulator. It makes the real-line sum converge.
+The power N^{-1/2} is the weight-1/2 Eichler factor written for these series.
 
-c_N N^{-1/2} exp(-2 pi N epsilon) exp(+2 pi i N x).
+The phase is signed.
 
-The regulator is real. Absolute values of Dual^(+1) and Dual^(-1) agree at each sample. Signed phases do not.
+Dual^{(+1)} multiplies by exp(+2 π i N x)
+Dual^{(-1)} multiplies by exp(-2 π i N x)
 
-Grid: S4 = {1/7, 3/7, 5/7, 1}, Fricke images W_7(x) = -1/(7x), and the 1/14 line.
+So a plus-channel term looks like
 
-3. What this is not
+c_N N^{-1/2} exp(-2 π N ε) exp(+2 π i N x)
+
+and a minus-channel term looks like
+
+c_N N^{-1/2} exp(-2 π N ε) exp(-2 π i N x)
+
+The Abel factor is real. That is why |Dual^{(+1)}| and |Dual^{(-1)}| agree at each sample while the signed phases do not.
+
+
+3. What this kernel is not
 
 Not the branched Fricke path integral
+h(x) = ψ/√i − ∫ Ξ(w) (w − x)^{-1/2} dw
+along the locked path from i∞.
+The 29 August note says so. The table is Abel-Fourier, not that path integral.
 
-h(x) = psi / sqrt(i) - integral Xi(w) (w-x)^{-1/2} dw
+Not the incomplete-gamma / error-function kernel that Per_off asks for.
+Convention A uses q = exp(2 π i τ) and erfc(|n+a| √(2π y)).
+Convention B uses q = exp(π i τ) and erfc(|n+a| √(π y)).
+Those are two writings of a tail in the upper half-plane.
+Dual_Abel is a damped Fourier sum on the real line.
 
-from i infinity. The 29 August note says the table is Abel-Fourier, not that path integral.
+Not Dual±, the eight-by-eight cocycle matrix whose smallest singular value is 6.38.
+Not Dual_Track.
+Not residual_slash.
+Not XferPot.
 
-Not Per_off. Per_off wants Xi only, an incomplete-gamma / erfc kernel, and a grid off F8. Dual_Abel uses three series, the Abel kernel, the four samples, and the 1/14 grid. Identification closed negative 2 September.
 
-Not Dual-plus-minus. That 8 by 8 cocycle matrix has smallest singular value 6.38.
+4. Why Per_off is still a header
 
-Not Dual_Track. Not residual_slash. Not Object B. Not XferPot. Not a watt. Not Nu_star.
+Per_off wants
+Xi only,
+incomplete-gamma / error-function kernel,
+a grid off F8 = {1/7, 3/7, 5/7, 1} union W_7 of that set,
+values not defined by residual_slash.
 
-4. What the 29 August table already showed
+Dual_Abel uses
+Xi plus C_axis plus Theta_third,
+Abel N^{-1/2} exp(-2 π N ε),
+the four samples and the 1/14 grid.
 
-No single channel realises Object A. Three plus-channels cannot. Smallest singular value 19.70. Six oscillatory channels can be forced to match residual_slash at the four samples. Off those samples every null vector disagrees. Median ratio about 0.14 to 0.29. Minimum about 0.0045.
+Two writings of a leading kernel on Xi modes are not one table.
+Matching them off-sample is OP-Xi-grid, still open.
+That match would identify a generator with itself. It would not occupy Object B.
 
-The ratio identity implied(x) implied(W_7(x)) = 1 holds by construction. That is not Object B for residual_slash.
 
-Raw numerical h as a stored function file was not found 4 September. The evaluated channel table remains Independent_H_Table_Dual_Split_Pslash_2026-08-29.md.
+5. What the table already showed
 
-5. Status
+Single channels do not realise Object A.
+Three plus-channels cannot. Smallest singular value 19.70.
+Six oscillatory channels have a four-dimensional nullspace that forces Object A at the four samples to order 10^{-13}.
+Off those samples the implied slash of every null vector disagrees with residual_slash.
+Median ratio about 0.14 to 0.29. Minimum about 0.0045.
 
-Dual_Abel is a written Category A residual discrete regularization, populated 29 August. Definition occupancy. Not a fifth residual-flux object. Per_off numerical h stays unstored. Slash_two empty. Object B unoccupied.
+The identity implied_slash(x) implied_slash(W_7(x)) = 1 holds by construction of the ratio.
+That is not Object B for residual_slash.
+Object B remains the failed product residual_slash(x) residual_slash(W_7(x)) = 1.
 
-Status code: DUAL_ABEL_NAMED_OBJECT_ABEL_FOURIER_NOT_PER_OFF_2026-09-04
+
+6. Status
+
+Explanation only.
+Raw numerical h as a stored function file was not found tonight.
+The evaluated channel table exists in Independent_H_Table_Dual_Split_Pslash_2026-08-29.md.
+CORE_FREEZE unchanged.
+No new residual-flux object.
+
+
+7. Status codes
+
+DUAL_ABEL_KERNEL_MATH_EXPLANATION_2026-09-04
+ABEL_NOT_INCOMPLETE_GAMMA
+ABEL_NOT_BRANCHED_PATH_INTEGRAL
+PER_OFF_STILL_HEADER
+CORE_FREEZE_UNCHANGED
