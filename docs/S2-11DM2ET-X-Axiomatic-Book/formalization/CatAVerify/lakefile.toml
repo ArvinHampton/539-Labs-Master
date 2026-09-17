@@ -1,0 +1,6 @@
+name = "CatAVerify"
+version = "0.1.0"
+defaultTargets = ["CatAVerify"]
+
+[[lean_lib]]
+name = "CatAVerify"
