@@ -1,57 +1,39 @@
-# Advancements wrap
-Native G4 CMB ladder, muon hold, GW retarget
+# Advancements wrap — corrected close
+Native G4 CMB/BAO/EE/Silk/heights
 2026-09-20
 
-Pack+(S). Residual-flux provenance mandatory. RESIDUAL_CORE_FREEZE holds.
-Canonical T3 is the three-branch production map. Book HQCC is not that map.
-Twin Prime and Riemann Hypothesis unclaimed.
-Continuum G4 mappings stay Category B. This wrap does not occupy a residual-flux object.
+Pack+(S). Residual-flux provenance mandatory. CORE_FREEZE holds.
+Twin Prime and RH unclaimed. Continuum G4 mappings stay Category B.
 
 
-## 0. What moved
+0. What moved
 
-Retired the observational slogan "CMB dip at l = 539.9".
-Installed the native ladder ℓ_n[G4, 11]:
+Retired "CMB dip at l = 539.9" in every live physics note in this book and in ArvinHampton/S2-11DM2ET-X.
 
-    ℓ_1 = G4 · 11/27 = 219.96
-    ℓ_2 = G4         = 539.9
-    ℓ_3 = (3/2) G4    = 809.85
-    ℓ_4 = (17/8) G4   = 1147.29
+Closed after the first wrap:
+- EE grid ell_EE,1 = G4*3/11, ell_EE,n = G4*(6n-4)/11
+- Silk ell_D = G4*8/3, ell_t = G4*11/5, ell_S = 916.3
+- P1/P2 = 539/243
+- P3/P1 = (1-kappa_dark) exp(-(ell_3^2-ell_1^2)/(3 G4)^2)
+- EE2/EE1 = G4/27, EE3/EE2 = 11/6
+- D_M(z_*) = 3(N_flux-3^5) Mpc = 13911 Mpc
+- r_d = pi D_M / [G4(mu-1)] = 147.15 Mpc
 
-Planck θ_* is not an input. The model generates the positions.
-Peak 3 locks to 3/2 G4 at 0.006%.
-
-Muon g-2 experimental anchor updated to Fermilab 2025 world average
-116592071.5(14.5) e-11. Lattice / WP25 HVP is not applied.
-Delta a_mu^{exp-disp} held until Belle II 2π unblinding.
-
-GW forecast retargeted: LVK IR1 late 2026 through 2027; O5 is not 2026.
-Search template sin(2 π t / 539.9) unchanged.
-
-Algebraic β_PBH = 11/61 is not a stellar-mass f_PBH. O4a excludes O(0.2) in 0.6-100 M_sun.
+Muon hold unchanged: Fermilab 2025 anchor; lattice HVP not applied.
+GW window: LVK IR1 2026-27; O5 is not 2026.
+beta_PBH = 11/61 is not stellar-mass f_PBH.
 
 
-## 1. What did not move
+1. What did not move
 
-G4 = 539.9 s immutable.
-CORE_FREEZE unchanged.
-TPC and RH unclaimed.
-N_star = 14 ≠ σ = 539.
-Category A discrete stack untouched.
-mu = 1.55 not retuned.
+G4 immutable. CORE_FREEZE. TPC and RH unclaimed. N_star = 14 =/= sigma = 539.
+Category A discrete stack untouched. mu = 1.55 not retuned.
 
 
-## 2. Documents written this session
+2. Documents
 
-- CMB_Acoustic_Ladder_G4_Derivation.md
-- Muon_g2_BelleII_Hold_2026-09-20.md
-- scripts/cmb_g4_ladder.py
-- Front-facing: ArvinHampton/S2-11DM2ET-X
-
-
-## 3. Next from written data
-
-BAO length from D2 leakage versus DESI DR2.
-EE half-integer test.
-Height ratios from κ_dark = 243/539.
-Do not promote open trailing rationals (peaks 5-7) into the CLOSED set.
+CMB_Acoustic_Ladder_G4_Derivation.md
+CMB_Ladder_Full_Derivation_EE_Silk_BAO_Heights_2026-09-20.md
+Muon_g2_BelleII_Hold_2026-09-20.md
+scripts/cmb_g4_ladder.py
+Front-facing: ArvinHampton/S2-11DM2ET-X
