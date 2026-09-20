@@ -80,6 +80,11 @@ Muon g−2 Path A, CuNc audit, mirror halo, photon ring, biological 18/521, sect
 | Document | Role |
 |----------|------|
 | [Proton_Stability_NonDecay_Derivation.md](Proton_Stability_NonDecay_Derivation.md) | **Category A structural**: exact $B$-conservation / $\tau_p=\infty$ from Axiom 0 + HQCC + residual $\mathbb{Z}_3$ |
+| [CMB_Acoustic_Ladder_G4_Derivation.md](CMB_Acoustic_Ladder_G4_Derivation.md) | **Category B**: TT peaks from G4 and 11/27; dip language retired |
+| [Muon_g2_BelleII_Hold_2026-09-20.md](Muon_g2_BelleII_Hold_2026-09-20.md) | **Category B**: Fermilab 2025 anchor; lattice HVP not applied |
+| [Advancements_Wrap_2026-09-20_CMB_G4_Ladder.md](Advancements_Wrap_2026-09-20_CMB_G4_Ladder.md) | Session wrap 2026-09-20 |
+
+Validator: [scripts/cmb_g4_ladder.py](scripts/cmb_g4_ladder.py). Front-facing copy: [ArvinHampton/S2-11DM2ET-X](https://github.com/ArvinHampton/S2-11DM2ET-X).
 
 ---
 
