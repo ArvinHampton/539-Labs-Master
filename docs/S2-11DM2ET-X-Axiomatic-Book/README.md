@@ -80,9 +80,11 @@ Muon g−2 Path A, CuNc audit, mirror halo, photon ring, biological 18/521, sect
 | Document | Role |
 |----------|------|
 | [Proton_Stability_NonDecay_Derivation.md](Proton_Stability_NonDecay_Derivation.md) | **Category A structural**: exact $B$-conservation / $\tau_p=\infty$ from Axiom 0 + HQCC + residual $\mathbb{Z}_3$ |
-| [CMB_Acoustic_Ladder_G4_Derivation.md](CMB_Acoustic_Ladder_G4_Derivation.md) | **Category B**: TT/EE/Silk/heights/r_d from G4; dip language retired |
-| [CMB_Ladder_Full_Derivation_EE_Silk_BAO_Heights_2026-09-20.md](CMB_Ladder_Full_Derivation_EE_Silk_BAO_Heights_2026-09-20.md) | **Category B**: full close including r_d = 147.15 Mpc |
-| [Muon_g2_BelleII_Hold_2026-09-20.md](Muon_g2_BelleII_Hold_2026-09-20.md) | **Category B**: Fermilab 2025 anchor; lattice HVP not applied |
+| [S2-11DM2ET-X_CMB_BAO_Closures_2026-09-20.md](S2-11DM2ET-X_CMB_BAO_Closures_2026-09-20.md) | Rewritten paper: TT/EE/Silk/heights/r_d/W(z) |
+| [CMB_Acoustic_Ladder_G4_Derivation.md](CMB_Acoustic_Ladder_G4_Derivation.md) | TT/EE/Silk/heights/r_d from G4 |
+| [CMB_Ladder_Full_Derivation_EE_Silk_BAO_Heights_2026-09-20.md](CMB_Ladder_Full_Derivation_EE_Silk_BAO_Heights_2026-09-20.md) | Full close including r_d = 147.15 Mpc |
+| [W_z_D2_Brane_Separation_2026-09-20.md](W_z_D2_Brane_Separation_2026-09-20.md) | Radion W(z) from D2 separation |
+| [Muon_g2_BelleII_Hold_2026-09-20.md](Muon_g2_BelleII_Hold_2026-09-20.md) | Fermilab 2025 anchor; lattice HVP not applied |
 | [Advancements_Wrap_2026-09-20_CMB_G4_Ladder.md](Advancements_Wrap_2026-09-20_CMB_G4_Ladder.md) | Session wrap 2026-09-20 |
 
 Validator: [scripts/cmb_g4_ladder.py](scripts/cmb_g4_ladder.py). Front-facing copy: [ArvinHampton/S2-11DM2ET-X](https://github.com/ArvinHampton/S2-11DM2ET-X).
