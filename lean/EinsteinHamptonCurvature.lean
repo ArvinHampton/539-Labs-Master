@@ -5,15 +5,15 @@ Verification status of L1 through L7, 29 September 2026.
 
 Proved as Lean theorems on this file:
   L1  inverse products on the named diagonal chart (off, time, ext-space, yy, fibre)
+  L2  chain rule for exp(-2 A) under A_lin; fibre half trivial
   L3  lock-slice Gamma^y / g = k, under deriv A = k
   L4  lock-slice Riemann scalar = -k^2, under the L5 deriv hypotheses
   L5  linear warp sends R_extYextY to -k^2
   L6  lock-slice Einstein blocks and named Ricci scalars when K = 8 k^2
   L7  fibre lock k^2 = Phi/1728 and K = 8 k^2 from the two block equations
 
-Named, not closed:
-  L2  chain rule for exp(-2 A). Obligation L2_lock_obligation.
-      Fibre half is trivial: B constant so partial_y g_ab = 0.
+L2 is discharged from Warp.A_lin by HasDerivAt.exp, not by deriv_exp
+on bare Real.exp. This session did not compile the file.
 
 This is a coordinate algebra file. It is not an eleven-dimensional
 Riemann API and it does not emit n_2, Gamma, G4, or J_feed.
@@ -22,6 +22,7 @@ Riemann API and it does not emit n_2, Gamma, G4, or J_feed.
 import Mathlib.Analysis.InnerProductSpace.PiL2
 import Mathlib.Analysis.Calculus.ContDiff.Basic
 import Mathlib.Analysis.SpecialFunctions.Exp
+import Mathlib.Analysis.SpecialFunctions.ExpDeriv
 import Mathlib.Tactic
 
 noncomputable section
@@ -114,6 +115,36 @@ theorem L2_lock_iff_ext (W : Warp) (y : Real)
     (hA : deriv W.A = fun _ => W.k) :
     L2_lock_obligation W y ↔ L2_ext_target W y := by
   simp [L2_lock_obligation, L2_ext_target, hA]
+
+theorem L2_fibre : L2_fib_target := trivial
+
+theorem deriv_A_of_lin (W : Warp) : deriv W.A = fun _ => W.k := by
+  funext y
+  have hA : W.A = fun z => W.k * z := funext W.A_lin
+  rw [hA]
+  have h : HasDerivAt (fun z : Real => W.k * z) W.k y := by
+    simpa using (hasDerivAt_id' y).const_mul W.k
+  exact h.deriv
+
+/-- L2 on the lock slice. Chain rule for exp(-2 A) under A_lin.
+    Public rewrite rw [deriv_exp hf] is the derivative of bare exp,
+    not the composite. Use HasDerivAt.exp. -/
+theorem L2_lock (W : Warp) (y : Real) : L2_lock_obligation W y := by
+  unfold L2_lock_obligation
+  have hfun :
+      (fun z => Real.exp (-2 * W.A z)) =
+        (fun z => Real.exp ((-2 * W.k) * z)) := by
+    funext z
+    simp [W.A_lin, mul_assoc]
+  rw [hfun]
+  have hlin :
+      HasDerivAt (fun z : Real => (-2 * W.k) * z) (-2 * W.k) y := by
+    simpa using (hasDerivAt_id' y).const_mul (-2 * W.k)
+  have hexp :
+      HasDerivAt (fun z => Real.exp ((-2 * W.k) * z))
+        (Real.exp ((-2 * W.k) * y) * (-2 * W.k)) y :=
+    hlin.exp
+  simpa [mul_comm, mul_left_comm, mul_assoc] using hexp.deriv
 
 def L3_GammaY_ext (W : Warp) (y : Real) : Real := deriv W.A y
 def L4_Riem_ext (W : Warp) (y : Real) : Real :=
