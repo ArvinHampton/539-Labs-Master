@@ -6,14 +6,13 @@ Verification status of L1 through L7, 29 September 2026.
 Proved as Lean theorems on this file:
   L1  inverse products on the named diagonal chart (off, time, ext-space, yy, fibre)
   L2  chain rule for exp(-2 A) under A_lin; fibre half trivial
-  L3  lock-slice Gamma^y / g = k, under deriv A = k
-  L4  lock-slice Riemann scalar = -k^2, under the L5 deriv hypotheses
-  L5  linear warp sends R_extYextY to -k^2
+  L3  lock-slice Gamma^y / g = k from A_lin
+  L4  lock-slice Riemann scalar = -k^2 from A_lin
+  L5  linear warp sends R_extYextY to -k^2 from A_lin
   L6  lock-slice Einstein blocks and named Ricci scalars when K = 8 k^2
   L7  fibre lock k^2 = Phi/1728 and K = 8 k^2 from the two block equations
 
-L2 is discharged from Warp.A_lin by HasDerivAt.exp, not by deriv_exp
-on bare Real.exp. This session did not compile the file.
+L3 L4 L5 take only Warp. This session did not compile the file.
 
 This is a coordinate algebra file. It is not an eleven-dimensional
 Riemann API and it does not emit n_2, Gamma, G4, or J_feed.
@@ -95,12 +94,6 @@ theorem L1_fib (W : Warp) (y : Real) {i : Idx} (h : 5 ≤ i.val) :
 def R_ext_Y_ext_Y (W : Warp) (y : Real) : Real :=
   deriv (deriv W.A) y - (deriv W.A y) ^ 2
 
-theorem L5_linear (W : Warp) (y : Real)
-    (hA : deriv W.A = fun _ => W.k)
-    (hA2 : deriv (deriv W.A) = fun _ => 0) :
-    R_ext_Y_ext_Y W y = - W.k ^ 2 := by
-  simp [R_ext_Y_ext_Y, hA, hA2]
-
 def L2_ext_target (W : Warp) (y : Real) : Prop :=
   deriv (fun y => Real.exp (-2 * W.A y)) y =
     (-2 * deriv W.A y) * Real.exp (-2 * W.A y)
@@ -126,9 +119,10 @@ theorem deriv_A_of_lin (W : Warp) : deriv W.A = fun _ => W.k := by
     simpa using (hasDerivAt_id' y).const_mul W.k
   exact h.deriv
 
-/-- L2 on the lock slice. Chain rule for exp(-2 A) under A_lin.
-    Public rewrite rw [deriv_exp hf] is the derivative of bare exp,
-    not the composite. Use HasDerivAt.exp. -/
+theorem deriv2_A_of_lin (W : Warp) : deriv (deriv W.A) = fun _ => 0 := by
+  rw [deriv_A_of_lin W]
+  exact deriv_const _
+
 theorem L2_lock (W : Warp) (y : Real) : L2_lock_obligation W y := by
   unfold L2_lock_obligation
   have hfun :
@@ -153,16 +147,17 @@ def L4_Riem_ext (W : Warp) (y : Real) : Real :=
 def L6_Ric_ext_over_g (k : Real) : Real := -4 * k ^ 2
 def L6_Ric_yy (k : Real) : Real := -4 * k ^ 2
 
-theorem L3_lock (W : Warp) (y : Real)
-    (hA : deriv W.A = fun _ => W.k) :
+theorem L3_lock (W : Warp) (y : Real) :
     L3_GammaY_ext W y = W.k := by
-  simp [L3_GammaY_ext, hA]
+  simp [L3_GammaY_ext, deriv_A_of_lin]
 
-theorem L4_lock (W : Warp) (y : Real)
-    (hA : deriv W.A = fun _ => W.k)
-    (hA2 : deriv (deriv W.A) = fun _ => 0) :
+theorem L4_lock (W : Warp) (y : Real) :
     L4_Riem_ext W y = - W.k ^ 2 := by
-  simp [L4_Riem_ext, hA, hA2]
+  simp [L4_Riem_ext, deriv_A_of_lin, deriv2_A_of_lin]
+
+theorem L5_linear (W : Warp) (y : Real) :
+    R_ext_Y_ext_Y W y = - W.k ^ 2 := by
+  simp [R_ext_Y_ext_Y, deriv_A_of_lin, deriv2_A_of_lin]
 
 theorem L4_eq_L5_scalar (W : Warp) (y : Real) :
     L4_Riem_ext W y = R_ext_Y_ext_Y W y := rfl
