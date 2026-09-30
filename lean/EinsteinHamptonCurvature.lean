@@ -12,7 +12,8 @@ Proved as Lean theorems on this file:
   L6  lock-slice Einstein blocks and named Ricci scalars when K = 8 k^2
   L7  fibre lock k^2 = Phi/1728 and K = 8 k^2 from the two block equations
 
-L3 L4 L5 take only Warp. This session did not compile the file.
+Lake 4.34.0 plus Mathlib v4.34.0 built this file on 29 September 2026
+with linter warnings only. Fibre lock is k^2 = Phi/1728 and K = 8 k^2.
 
 This is a coordinate algebra file. It is not an eleven-dimensional
 Riemann API and it does not emit n_2, Gamma, G4, or J_feed.
@@ -56,26 +57,23 @@ theorem L1_off (W : Warp) (y : Real) {i j : Idx} (h : i ≠ j) :
     g W y i j = 0 ∧ gInv W y i j = 0 := by
   constructor <;> simp [g, gInv, h]
 
+lemma exp_cancel (a : Real) : Real.exp (-a) * Real.exp a = 1 := by
+  rw [← Real.exp_add]; simp
+
 theorem L1_time (W : Warp) (y : Real) :
     g W y ⟨0, by decide⟩ ⟨0, by decide⟩ *
       gInv W y ⟨0, by decide⟩ ⟨0, by decide⟩ = 1 := by
-  simp [g, gInv]
-  ring_nf
-  simp [Real.exp_neg, mul_comm, mul_left_comm, mul_assoc]
-  have : Real.exp (-2 * W.A y) * Real.exp (2 * W.A y) = 1 := by
-    rw [← Real.exp_add]
-    simp
-  nlinarith [this]
+  simp [g, gInv, exp_cancel]
 
 theorem L1_ext_space (W : Warp) (y : Real) {i : Idx}
     (h0 : i.val ≠ 0) (h3 : i.val ≤ 3) :
     g W y i i * gInv W y i i = 1 := by
-  have hexp : Real.exp (-2 * W.A y) * Real.exp (2 * W.A y) = 1 := by
-    rw [← Real.exp_add]; simp
-  simp [g, gInv]
-  have : i.val ≠ 0 := h0
-  try simpa using hexp
-  try nlinarith [hexp]
+  unfold g gInv
+  have hne : ¬ i ≠ i := by simp
+  have hz : i.val ≠ 0 := h0
+  have hle : i.val ≤ 3 := h3
+  have hny : i.val ≠ 4 := by omega
+  simp [hne, hz, hle, hny, exp_cancel]
 
 theorem L1_yy (W : Warp) (y : Real) :
     g W y ⟨4, by decide⟩ ⟨4, by decide⟩ *
@@ -84,12 +82,12 @@ theorem L1_yy (W : Warp) (y : Real) :
 
 theorem L1_fib (W : Warp) (y : Real) {i : Idx} (h : 5 ≤ i.val) :
     g W y i i * gInv W y i i = 1 := by
-  have hne0 : ¬ i.val ≤ 3 := by omega
-  have hney : i.val ≠ 4 := by omega
-  simp [g, gInv]
-  have : Real.exp (2 * W.B) * Real.exp (-2 * W.B) = 1 := by
-    rw [← Real.exp_add]; simp
-  nlinarith [this]
+  unfold g gInv
+  have hne : ¬ i ≠ i := by simp
+  have hle : ¬ i.val ≤ 3 := by omega
+  have hny : i.val ≠ 4 := by omega
+  simp [hne, hle, hny]
+  simpa [mul_comm, neg_mul] using exp_cancel (2 * W.B)
 
 def R_ext_Y_ext_Y (W : Warp) (y : Real) : Real :=
   deriv (deriv W.A) y - (deriv W.A y) ^ 2
@@ -119,9 +117,10 @@ theorem deriv_A_of_lin (W : Warp) : deriv W.A = fun _ => W.k := by
     simpa using (hasDerivAt_id' y).const_mul W.k
   exact h.deriv
 
-theorem deriv2_A_of_lin (W : Warp) : deriv (deriv W.A) = fun _ => 0 := by
+theorem deriv2_A_of_lin (W : Warp) : deriv (deriv W.A) = fun _ => (0 : Real) := by
+  funext y
   rw [deriv_A_of_lin W]
-  exact deriv_const _
+  exact (hasDerivAt_const (F := Real) y W.k).deriv
 
 theorem L2_lock (W : Warp) (y : Real) : L2_lock_obligation W y := by
   unfold L2_lock_obligation
@@ -131,14 +130,14 @@ theorem L2_lock (W : Warp) (y : Real) : L2_lock_obligation W y := by
     funext z
     simp [W.A_lin, mul_assoc]
   rw [hfun]
-  have hlin :
-      HasDerivAt (fun z : Real => (-2 * W.k) * z) (-2 * W.k) y := by
+  have hlin : HasDerivAt (fun z : Real => (-2 * W.k) * z) (-2 * W.k) y := by
     simpa using (hasDerivAt_id' y).const_mul (-2 * W.k)
   have hexp :
       HasDerivAt (fun z => Real.exp ((-2 * W.k) * z))
         (Real.exp ((-2 * W.k) * y) * (-2 * W.k)) y :=
     hlin.exp
-  simpa [mul_comm, mul_left_comm, mul_assoc] using hexp.deriv
+  have hder := hexp.deriv
+  simpa [W.A_lin y, mul_comm, mul_left_comm, mul_assoc, neg_mul] using hder
 
 def L3_GammaY_ext (W : Warp) (y : Real) : Real := deriv W.A y
 def L4_Riem_ext (W : Warp) (y : Real) : Real :=
@@ -184,10 +183,11 @@ theorem L7_fibre_lock {k K Phi : Real}
   have hk : 18 * k ^ 2 = Phi / 96 := by
     linarith
   have hk2 : k ^ 2 = Phi / 1728 := by
-    have : k ^ 2 = (Phi / 96) / 18 := by
+    have hdiv : k ^ 2 = Phi / (96 * 18) := by
       field_simp at hk ⊢
       linarith
-    simpa [div_div] using this
+    have hden : (96 : Real) * 18 = 1728 := by norm_num
+    simpa [hden] using hdiv
   refine ⟨hk2, ?_⟩
   rw [hK, hk2]
   field_simp
