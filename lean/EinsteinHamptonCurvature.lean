@@ -11,9 +11,12 @@ Proved as Lean theorems on this file:
   L5  linear warp sends R_extYextY to -k^2 from A_lin
   L6  lock-slice Einstein blocks and named Ricci scalars when K = 8 k^2
   L7  fibre lock k^2 = Phi/1728 and K = 8 k^2 from the two block equations
+  Christoffel lock: Gamma^y/g_ext = k, Gamma^mu_y = -k, fibre symbols 0
 
-Lake 4.34.0 plus Mathlib v4.34.0 built this file on 29 September 2026
+Lake 4.34.0 plus Mathlib v4.34.0 built L1-L7 on 29 September 2026
 with linter warnings only. Fibre lock is k^2 = Phi/1728 and K = 8 k^2.
+Nonzero Christoffel symbols of this ansatz are named from A' and B.
+On the lock slice they reduce to k or vanish. Not an 11D Riemann API.
 
 This is a coordinate algebra file. It is not an eleven-dimensional
 Riemann API and it does not emit n_2, Gamma, G4, or J_feed.
@@ -149,6 +152,35 @@ def L6_Ric_yy (k : Real) : Real := -4 * k ^ 2
 theorem L3_lock (W : Warp) (y : Real) :
     L3_GammaY_ext W y = W.k := by
   simp [L3_GammaY_ext, deriv_A_of_lin]
+
+/-- Nonzero Christoffel symbols of the ansatz as functions of A' and B.
+    B is constant on Warp, so fibre-normal symbols vanish.
+    Gamma^y_mu nu = A' g_mu nu
+    Gamma^mu_y nu = -A' delta^mu_nu
+    Gamma^y_ab = 0
+    Gamma^a_yb = 0
+    Not a Riemann API. -/
+def Gamma_y_over_g_ext (W : Warp) (y : Real) : Real := deriv W.A y
+def Gamma_ext_y (W : Warp) (y : Real) : Real := - deriv W.A y
+def Gamma_y_over_g_fib (W : Warp) : Real := 0
+def Gamma_fib_y (W : Warp) : Real := 0
+
+theorem Gamma_y_over_g_ext_lock (W : Warp) (y : Real) :
+    Gamma_y_over_g_ext W y = W.k := by
+  simp [Gamma_y_over_g_ext, deriv_A_of_lin]
+
+theorem Gamma_ext_y_lock (W : Warp) (y : Real) :
+    Gamma_ext_y W y = -W.k := by
+  simp [Gamma_ext_y, deriv_A_of_lin]
+
+theorem Gamma_y_over_g_fib_zero (W : Warp) :
+    Gamma_y_over_g_fib W = 0 := rfl
+
+theorem Gamma_fib_y_zero (W : Warp) :
+    Gamma_fib_y W = 0 := rfl
+
+theorem Gamma_y_over_g_ext_eq_L3 (W : Warp) (y : Real) :
+    Gamma_y_over_g_ext W y = L3_GammaY_ext W y := rfl
 
 theorem L4_lock (W : Warp) (y : Real) :
     L4_Riem_ext W y = - W.k ^ 2 := by
