@@ -1,0 +1,386 @@
+[
+ {
+  "id": "A1",
+  "source": "raw/chat-01.txt:3438",
+  "claim": "E_±(t) ≈ (E₊ + E₋)/2 ± √[(E₊ − E₋)²/4 + V(t)²]",
+  "computed": "[E_m/2 + E_p/2 - sqrt(E_m**2 - 2*E_m*E_p + E_p**2 + 4*V**2)/2, E_m/2 + E_p/2 + sqrt(E_m**2 - 2*E_m*E_p + E_p**2 + 4*V**2)/2]",
+  "verdict": "HOLD",
+  "note": "exact eigenvalues of 2x2 real symmetric H (sympy)"
+ },
+ {
+  "id": "A2",
+  "source": "raw/chat-01.txt:3440",
+  "claim": "For weak leakage (|V(t)| << |E₊ − E₋|), the splitting is ΔE(t) ≈ V(t)² / |E₊ − E₋|",
+  "computed": "E_+ − E_- = sqrt(Δ²+4V²) ≈ Delta + 2*V**2/Delta; each level shifts by V²/Δ, splitting changes by 2V²/Δ",
+  "verdict": "FAIL",
+  "note": "V²/|Δ| is the 2nd-order shift of each level, not the splitting (splitting ≈ |Δ| + 2V²/|Δ|)"
+ },
+ {
+  "id": "A3",
+  "source": "raw/chat-01.txt:3441-3442",
+  "claim": "E₊ − E₋ ... set by ... σ_inh = 0.6 meV; ΔE_peak ≈ [...]² / σ_inh ≈ 0.619 meV (weak-leakage regime assumed at 3440)",
+  "computed": "|V| implied = sqrt(0.619*0.6) = 0.6094 meV vs |Δ| = 0.6 meV (ratio 1.016)",
+  "verdict": "FAIL",
+  "note": "weak-coupling condition |V|<<|Δ| is violated by the chat's own numbers; exact splitting would be sqrt(0.36+4*0.371)=1.359 meV"
+ },
+ {
+  "id": "A4",
+  "source": "raw/chat-01.txt:3445-3447",
+  "claim": "Δφ_mean ≈ 0.006 rad; E_bind ≈ ΔE² / (2 ħω) ≈ 0.0018 meV",
+  "computed": "0.6/100 = 0.006; 0.6²/200 = 0.0018 meV",
+  "verdict": "HOLD",
+  "note": ""
+ },
+ {
+  "id": "A5",
+  "source": "raw/chat-01.txt:3448",
+  "claim": "τ_settle = ħ / E_bind ≈ 2 ħω ħ / ΔE² ≈ 22.5 attoseconds (with E_bind ≈ 0.0018 meV)",
+  "computed": "ħ/0.0018 meV = 3.657e-10 s = 366 ps",
+  "verdict": "FAIL",
+  "note": "off by ~1.6e7"
+ },
+ {
+  "id": "A6",
+  "source": "raw/chat-01.txt:1918-1921",
+  "claim": "E_bind = 100 meV × (1 − √2/2) ≈ 29.3 meV; τ_settle = ħ / E_bind ≈ (6.582 × 10^{-16} eV·s) / (29.3 × 10^{-3} eV) ≈ 22.5 attoseconds",
+  "computed": "E_bind = 29.289 meV (HOLD); ħ/E_bind = 2.247e-14 s = 22.47 fs",
+  "verdict": "FAIL",
+  "note": "arithmetic gives 22.5 femtoseconds, not attoseconds (factor 1000); 22.5 as is repeated at chat-01 lines 1952, 2222, 2343, 2387, 2505, 2679"
+ },
+ {
+  "id": "A7",
+  "source": "raw/chat-01.txt:3862-3866",
+  "claim": "ρ(Δx) = (1/2) [[1, e^{iΔφ}],[e^{-iΔφ}, 1]] ... V(Δx) = |⟨σ_y⟩| = |exp[i δΔφ(Δx)]| = exp[−(δΔφ(Δx))² / 2]",
+  "computed": "eigenvalues [1, 0], Tr ρ² = 1, Tr(ρσ_y) = -sin(phi); |exp(iθ)| = 1 for real θ",
+  "verdict": "FAIL",
+  "note": "as written ρ is a pure state for every Δφ (no decoherence); |exp(iδΔφ)| = 1, and exp(−δΔφ²/2) only arises after averaging over a Gaussian-distributed phase, which the text does not state"
+ },
+ {
+  "id": "A8",
+  "source": "raw/chat-01.txt:1212",
+  "claim": "Tracing out -U yields a mixed state in +U ... global density matrix ρ_{+U ⊕ -U} remains pure",
+  "computed": "qualitative; standard (partial trace of a pure entangled state is mixed)",
+  "verdict": "HOLD (qualitative)",
+  "note": ""
+ },
+ {
+  "id": "A9",
+  "source": "raw/chat-01.txt:6141-6143",
+  "claim": "Collective enhancement factor √N ≈ 26 (for 676 tubulins); Γ_sup = N Γ_single ≈ 26 × 0.01 meV ≈ 0.26 meV → T₂ ≈ 1 / Γ_sup ≈ 2.5 ps (bare)",
+  "computed": "√676 = 26; N·0.01 = 6.76 meV; √N·0.01 = 0.26 meV; ħ/0.26 meV = 2.53 ps",
+  "verdict": "FAIL (internal)",
+  "note": "formula says N·Γ (=6.76 meV, T₂≈0.097 ps) but number uses √N; also line 6203 says \"enhanced by √N\" then \"γ_eff (bright) ≈ N γ_single\""
+ },
+ {
+  "id": "A10",
+  "source": "raw/chat-01.txt:6149",
+  "claim": "T₂ ≈ ħ / (Γ_single × (kT / J N)) ≈ 100–300 ms (for J ≈ 0.5 meV, N = 676, kT = 26.7 meV)",
+  "computed": "8.332e-10 s",
+  "verdict": "FAIL",
+  "note": "~0.83 ns, not 100–300 ms"
+ },
+ {
+  "id": "A11",
+  "source": "raw/chat-01.txt:6172-6173",
+  "claim": "γ_eff ≈ γ_single / N × (kT / J)^2 ≈ 0.01 meV / 676 × (27 / 0.5)^2 ≈ 10^{-5} meV; T₂ ≈ ħ / γ_eff ≈ 65 ms",
+  "computed": "γ_eff = 0.0431 meV; ħ/γ_eff = 1.53e-11 s; even with 1e-5 meV: ħ/1e-8 eV = 6.58e-08 s",
+  "verdict": "FAIL",
+  "note": "γ_eff is 0.043 meV (not 1e-5); 1e-5 meV would give 66 ns, not 65 ms"
+ },
+ {
+  "id": "A12",
+  "source": "raw/chat-01.txt:6218-6224",
+  "claim": "γ_eff ≈ 0.01 × (26.7 / 0.5 × 676)^2 ≈ ... ≈ 6.24 × 10^{-5} meV; T₂ ≈ 6.582 × 10^{-16} / 6.24 × 10^{-5} ≈ 1.055 × 10^{-11} s ≈ 10.55 ns",
+  "computed": "γ_eff = 6.240e-05 meV (HOLD); ħ/γ_eff = 1.055e-08 s = 10.55 ns",
+  "verdict": "HOLD (final) / FAIL (intermediate)",
+  "note": "10.55 ns is right; the intermediate \"1.055 × 10^{-11} s\" is 10.55 ps (meV→eV factor dropped)"
+ },
+ {
+  "id": "A13",
+  "source": "raw/chat-01.txt:6226",
+  "claim": "exp(−ΔE / kT) ≈ exp(−0.6 / 26.7) ≈ 0.978",
+  "computed": "0.9778",
+  "verdict": "HOLD",
+  "note": ""
+ },
+ {
+  "id": "B1",
+  "source": "raw/chat-05.txt:991-992",
+  "claim": "Incidence spectrum eigs: {2: 56, -1: 297, 1: 185, 0: 1}; 56+297+185+1 = 539 = V",
+  "computed": "adjacency spectrum of disjoint fiber cliques (56 K3, 185 K2, 1 K1) = {2:56, -1:297, 1:185, 0:1}; see kplus_results.json",
+  "verdict": "HOLD",
+  "note": "computed in kplus_laplacian.py"
+ },
+ {
+  "id": "B2",
+  "source": "raw/chat-13.txt:29 etc.",
+  "claim": "K⁺ (V = 539, E = 594, F = 56 ...)",
+  "computed": "Euler χ = 1; 594 = 538 path + 56 chords; n_jump = 241 recovered",
+  "verdict": "HOLD",
+  "note": ""
+ },
+ {
+  "id": "C1",
+  "source": "raw/chat-01.txt:8525",
+  "claim": "The average absolute multiplier of the written map evaluates to 2/3, so the Lyapunov exponent evaluates to ln(2/3) ≈ –0.405 ... n = 10^18 ≈ 102 steps; n = 10^20 ≈ 114 steps",
+  "computed": "geometric mean of Canonical-T3 branch factors (1/3,4/3,2/3) = 2/3; ln(2/3) = -0.405465; ln(1e18)/0.405 = 102.3; ln(1e20)/0.405 = 113.7",
+  "verdict": "HOLD",
+  "note": "holds as a GEOMETRIC mean; the arithmetic mean (1/3+4/3+2/3)/3 = 7/9 (conflict-brief A9)"
+ },
+ {
+  "id": "C2",
+  "source": "extracts/1e7fe572...md (HQCC Theorem Derives 539.9s Period)",
+  "claim": "𝔼_π[χ] = (2/3)ln(1/3) + (1/3)ln(4/3) = ln(4^{1/3}/3) ≈ −0.6365; λ_mean ≈ 0.529; N_⋆ = ⌈ln 4880/0.6365⌉ = 14",
+  "computed": "-0.636514; ln(4^(1/3)/3) = -0.636514; e^E = 0.5291; ceil = 14",
+  "verdict": "HOLD",
+  "note": "stationary distribution π = (2/3,1/3) over branches"
+ },
+ {
+  "id": "C3",
+  "source": "extracts/3da1f6d2...md (Hampton Qutrit Collatz Theorem Proven)",
+  "claim": "λ = −ln(27)/9 = −ln3/3 ≈ −0.4054651",
+  "computed": "−ln27/9 = -0.3662041",
+  "verdict": "FAIL",
+  "note": "already flagged in the extract / BATCH2-ROLLUP"
+ },
+ {
+  "id": "C4",
+  "source": "raw/chat-13.txt:74-76",
+  "claim": "The same proof text states λ = ln(3)/539 ≈ 0.99996. The actual numerical value is ln(3)/539 ≈ 0.002038.",
+  "computed": "ln3/539 = 0.002038; 1−ln3/539 = 0.99796",
+  "verdict": "HOLD (chat's correction)",
+  "note": "Banach λ = ln3/539 is RETRACTED in INGEST-PROTOCOL.md / prompt.txt line 10"
+ },
+ {
+  "id": "C5",
+  "source": "raw/chat-01.txt:8518-8521 (Public Grok)",
+  "claim": "seed 10^19 reaches 1 in 96 steps; seed 10^20 reaches 1 in 132 steps; seed 2^60 reaches 1 in 94 steps (for \"the written map\")",
+  "computed": "Canonical T3 depths: 10^18→92, 10^19→96, 10^20→132, 2^60→94, 4880→14",
+  "verdict": "HOLD",
+  "note": "reproduced exactly by Canonical T3, so \"the written map\" behaves as Canonical T3 here"
+ },
+ {
+  "id": "C6",
+  "source": "extracts/0ed64ceb...md:87; BATCH3-ROLLUP.md:87",
+  "claim": "Whether T3 admits a well-defined induced map on ℤ/9 (or a 9-state transfer matrix ...) is a concrete, checkable question",
+  "computed": "n mod 9 does NOT determine T3(n) mod 9 for residues [0, 1, 2, 3, 4, 5, 6, 7, 8]",
+  "verdict": "INFO",
+  "note": "so any mod-9 \"transfer matrix\" must be stochastic (needs n mod 27 or a lift measure); question posed by extract authors, not a chat claim"
+ },
+ {
+  "id": "D1",
+  "source": "raw/chat-06.txt:113",
+  "claim": "J = (m_t^2 - m_c^2)(m_c^2 - m_u^2)(m_t^2 - m_u^2) sin δ_CKM (1 + β_CP ρ_DM/10) / (12 m_W^6)  J≈3×10^{-5} enhanced (δ_CKM ≈ 1.2 rad, β_CP=0.05)",
+  "computed": "4.149e-04 (m_t=172.57, m_c=1.273, m_u=0.00216, m_W=80.369 GeV)",
+  "verdict": "FAIL",
+  "note": "formula evaluates to ~4e-4, ~14x the quoted 3e-5; it is also not the Jarlskog invariant (PDG J ≈ 3.1e-5 is a CKM-element combination)"
+ },
+ {
+  "id": "D2",
+  "source": "prompt.txt:7 (Kept); reports/conflict-brief-for-grok.md:29 (\"|V_us|=1/φ^2=0.382 HOLDS\")",
+  "claim": "|V_us|=1/φ²",
+  "computed": "1/φ² = 0.381966; PDG |V_us| ≈ 0.2243",
+  "verdict": "HOLD (arithmetic) / FAIL vs data",
+  "note": "not in saved chat text; freeze keeps it"
+ },
+ {
+  "id": "D3",
+  "source": "prompt.txt:10 (Retracted); theorems/unification-proof.txt:140",
+  "claim": "|V_cb| ≈ 1/φ^4 ≈0.056 (observed ~0.04)",
+  "computed": "1/φ⁴ = 0.1459; PDG |V_cb| ≈ 0.041",
+  "verdict": "FAIL",
+  "note": "already RETRACTED (|V_cb| 0.146) in the freeze"
+ },
+ {
+  "id": "D4",
+  "source": "theorems/unification-proof.txt:142",
+  "claim": "|V_ub| ≈ 1/φ^6 ≈0.009 (observed ~0.004)",
+  "computed": "1/φ⁶ = 0.0557",
+  "verdict": "FAIL",
+  "note": "arithmetic slip; not a chat; not on the retraction list"
+ },
+ {
+  "id": "D5",
+  "source": "extracts/931fd19f...md:39 / ea74f77f...md",
+  "claim": "Σ_q m_q = 178767.10 MeV (\"trace\" of the six quark masses)",
+  "computed": "178767.10",
+  "verdict": "HOLD (sum)",
+  "note": "identification with Σz = 7021 is FAIL (already in extract)"
+ },
+ {
+  "id": "D6",
+  "source": "extracts/374f8b17...md; ea74f77f...md",
+  "claim": "m_q = 539.9 · Re(ζ_{539.9}^n), n ∈ {1,2,3,4,5,118} (\"eigenvalues of the Frobenius warp operator\")",
+  "computed": "[539.863, 539.754, 539.571, 539.315, 538.986, 105.965]",
+  "verdict": "FAIL",
+  "note": "no value exceeds 539.9 MeV; none equals any listed mass"
+ },
+ {
+  "id": "E1",
+  "source": "extracts/374f8b17...md (Riemann Zeta Function Resonant Trace)",
+  "claim": "∫_0^{539.9} sin(2πt/539.9) e^{2πit/539.9} dt = 539.9/(2i)",
+  "computed": "-1.671e-14 + 269.9500 i  (= +i·P/2); 539.9/(2i) = −269.95 i",
+  "verdict": "FAIL",
+  "note": "sign error (re-verified; extract already notes it)"
+ },
+ {
+  "id": "E2",
+  "source": "extracts/374f8b17...md",
+  "claim": "Fundamental unit ε = 331.3 with log ε = 2π exactly",
+  "computed": "e^(2π) = 535.4917; ln 331.3 = 5.8030",
+  "verdict": "FAIL",
+  "note": ""
+ },
+ {
+  "id": "E3",
+  "source": "extracts/374f8b17...md (residual note)",
+  "claim": "ord_539(3) = 210 = φ(539)/2; real cyclotomic subfield degree 210, not 269 generators",
+  "computed": "ord = 210; φ(539) = 420; (539-1)/2 = 269; gcd(11,539) = 11",
+  "verdict": "HOLD (extract's note); FAIL for chat's k = 1..269",
+  "note": "also: ξ ↦ ξ^11 is not a Galois automorphism of Q(ζ_539) since gcd(11,539)=11, so \"Frobenius Φ_11\" fails even at the integer 539"
+ },
+ {
+  "id": "E4",
+  "source": "raw/chat-02.txt:1213",
+  "claim": "the total linear density of states is of order 243/(2π) ≈ 38.7 (mode spacing 2π/G4)",
+  "computed": "243/(2π) = 38.67; with spacing 2π/G4 the density is 243·G4/(2π) = 20880",
+  "verdict": "HOLD (arithmetic) / inconsistent units",
+  "note": "the stated spacing implies a factor G4 that the quoted 38.7 omits; conclusion (constant, not log, density) unaffected"
+ },
+ {
+  "id": "E5",
+  "source": "raw/chat-02.txt:1060,1076",
+  "claim": "counting function for eigenvalues of −d²/dt² on a fixed-length interval is still linear in T (spacing π/L) ... constant drift 2π/G4 ... N(T) ∼ (G4/2π) T",
+  "computed": "Dirichlet −d²/dt² on [0,L]: √λ_n = nπ/L → N linear in √λ; −i d/dt on circle length G4: λ_k = 2πk/G4 → N(T) = G4 T/2π",
+  "verdict": "HOLD (standard)",
+  "note": ""
+ },
+ {
+  "id": "E6",
+  "source": "raw/chat-02.txt:1126",
+  "claim": "H± = −i d/dt + V±(t) on L²(ℝ) ... N±(T) ∼ (1/2π) ∫ √(λ − V±(θ))^+ dθ · T",
+  "computed": "first-order −i d/dt+V is gauge-equivalent to −i d/dt (spectrum ℝ, no bands); the √(λ−V) form belongs to −d²/dt²+V",
+  "verdict": "QUALIFIED",
+  "note": "\"linear\" conclusion holds; the quoted IDS formula / band-structure remark are for the second-order operator, not the stated first-order one"
+ },
+ {
+  "id": "F5",
+  "source": "reports/heavy-daily/da927a09dac3-Matrix_Analogues...md:10-16",
+  "claim": "M_s = [[2, s], [s, s]] has determinant -s(s-2) ... Signature is (1,1) (s=5)",
+  "computed": "det = -15.000 (= -15); eigenvalues [-1.7202, 8.7202]",
+  "verdict": "HOLD",
+  "note": ""
+ },
+ {
+  "id": "F7",
+  "source": "reports/heavy-daily/da927a09dac3-Matrix_Analogues...md:10-16",
+  "claim": "M_s = [[2, s], [s, s]] has determinant -s(s-2) ... Signature is (1,1) (s=7)",
+  "computed": "det = -35.000 (= -35); eigenvalues [-2.933, 11.933]",
+  "verdict": "HOLD",
+  "note": ""
+ },
+ {
+  "id": "F8",
+  "source": "reports/heavy-daily/da927a09dac3-Matrix_Analogues...md:10-16",
+  "claim": "M_s = [[2, s], [s, s]] has determinant -s(s-2) ... Signature is (1,1) (s=8)",
+  "computed": "det = -48.000 (= -48); eigenvalues [-3.544, 13.544]",
+  "verdict": "HOLD",
+  "note": ""
+ },
+ {
+  "id": "F11",
+  "source": "reports/heavy-daily/da927a09dac3-Matrix_Analogues...md:10-16",
+  "claim": "M_s = [[2, s], [s, s]] has determinant -s(s-2) ... Signature is (1,1) (s=11)",
+  "computed": "det = -99.000 (= -99); eigenvalues [-5.3849, 18.3849]",
+  "verdict": "HOLD",
+  "note": ""
+ },
+ {
+  "id": "F12",
+  "source": "reports/heavy-daily/U1-GS-ZWEGERS-1d8e558.md:37",
+  "claim": "B_7 = [[1, 7/2],[7/2, 7/2]], det B_7 = −35/4",
+  "computed": "det = -35/4; eigenvalues [9/4 - sqrt(221)/4, 9/4 + sqrt(221)/4]",
+  "verdict": "HOLD",
+  "note": ""
+ },
+ {
+  "id": "F13",
+  "source": "reports/heavy-daily/da927a09dac3...md:22-41",
+  "claim": "residues: s=7 {0,1,2,4}; s=11 affine {0,1,3,4,5,9}; s=5 {0,1,4}; s=8 hom {0,1,4,5}, affine {0,1,4}",
+  "computed": "{'s7': [0, 1, 2, 4], 's11': [0, 1, 3, 4, 5, 9], 's5': [0, 1, 4], 's8h': [0, 1, 4, 5], 's8a': [0, 1, 4]}",
+  "verdict": "HOLD",
+  "note": "affine form Q_s = n²+snk+(s/2)k(k+1)"
+ },
+ {
+  "id": "G1",
+  "source": "theorems/unification-proof.txt:100-111",
+  "claim": "M = [[φ³/61, 1/φ³, 0],[1/φ³, φ⁵/61, 1/φ³],[0, 1/φ³, φ⁷/61]] × (1001/61) × mod × √2 × (1/φ^exp) ... three distinct real positive eigenvalues",
+  "computed": "core-matrix eigenvalues [-0.15491, 0.24838, 0.63376]; det = -0.02439",
+  "verdict": "FAIL",
+  "note": "one eigenvalue is negative, so \"three distinct real positive eigenvalues\" fails; the common scale factor cannot change signs"
+ },
+ {
+  "id": "G2",
+  "source": "theorems/unification-proof.txt:115-122",
+  "claim": "Charged leptons: exp ≈10 ... m_e ≈0.511, m_μ ≈105.7, m_τ ≈1777; Down: exp ≈11 ... m_d ≈4.8, m_s ≈95, m_b ≈4180; Up: exp ≈17 ... m_u ≈2.3, m_c ≈1275, m_t ≈173210 MeV",
+  "computed": "every sector uses the same core matrix times a scalar, so all sectors share the eigenvalue ratios [-1.0, 1.603, 4.091] (|max/min| = 4.09); required ratios: τ/e = 3477, b/d = 871, t/u = 75309",
+  "verdict": "FAIL",
+  "note": "also scale: (1001/61)·mod·√2·φ^-17 ≈ 6.481e-03 — far below MeV-scale values for any unit"
+ },
+ {
+  "id": "G3",
+  "source": "theorems/unification-proof.txt:106",
+  "claim": "mod = (1 + β_PBH ρ_DM / 10)^{-1/2} ≈0.9972",
+  "computed": "0.99722 (β_PBH=0.18, ρ_DM=0.31)",
+  "verdict": "HOLD",
+  "note": ""
+ },
+ {
+  "id": "G4",
+  "source": "theorems/unification-proof.txt:124",
+  "claim": "Koide relation emergent from ternary trace invariant det(M)/Tr(M)^3 ≈2/3",
+  "computed": "det/Tr³ = -0.06341",
+  "verdict": "FAIL",
+  "note": "also, Koide is (Σm)/(Σ√m)² = 2/3, not det/Tr³"
+ },
+ {
+  "id": "D7",
+  "source": "raw/chat-06.txt:84",
+  "claim": "δ_CKM from arg(-V_{ud} V_{ub}^* / (V_{td} V_{tb}^*))",
+  "computed": "with PDG-like angles (δ=1.144 rad): that arg = -1.625 rad; α = 1.625; γ = 1.143; Jarlskog J = 2.91e-05; unitarity err = 2.2e-16",
+  "verdict": "QUALIFIED",
+  "note": "the quoted expression equals −α (a unitarity-triangle angle), not δ_CKM (≈γ in the standard parametrization)"
+ },
+ {
+  "id": "B3-unweighted",
+  "source": "raw/chat-02.txt:1315 vs 1362",
+  "claim": "mean eigenvalue ≈ 2.201 (unweighted); c₁ = Tr(L) = 1188",
+  "computed": "Tr(L)/539 = 2.2041",
+  "verdict": "FAIL (minor, internal)",
+  "note": "the mean of the 539 eigenvalues must equal Tr(L)/539 exactly; the table mean disagrees with the chat's own trace in the 3rd decimal"
+ },
+ {
+  "id": "B3-tower-size",
+  "source": "raw/chat-02.txt:1315 vs 1362",
+  "claim": "mean eigenvalue ≈ 4.141 (tower-size); c₁ = Tr(L) = 2230",
+  "computed": "Tr(L)/539 = 4.1373",
+  "verdict": "FAIL (minor, internal)",
+  "note": "the mean of the 539 eigenvalues must equal Tr(L)/539 exactly; the table mean disagrees with the chat's own trace in the 3rd decimal"
+ },
+ {
+  "id": "B3-path-decay",
+  "source": "raw/chat-02.txt:1315 vs 1362",
+  "claim": "mean eigenvalue ≈ 1.411 (path-decay); c₁ = Tr(L) = 762",
+  "computed": "Tr(L)/539 = 1.4137",
+  "verdict": "FAIL (minor, internal)",
+  "note": "the mean of the 539 eigenvalues must equal Tr(L)/539 exactly; the table mean disagrees with the chat's own trace in the 3rd decimal"
+ },
+ {
+  "id": "B4",
+  "source": "raw/chat-02.txt:1315-1321, 1353, 1362",
+  "claim": "spectral gaps 3.9e-5 / 5.3e-5 / 2.1e-5; max 4.53 / 10.15 / 5.06; N(0.1)≈53, N(1)≈162, N(2)≈242, N(5)=539; Tr L = 1188/2230/762; Tr L² = 3896/15808/2148.5; heat-trace table",
+  "computed": "reconstruction (path of 539 + 56 chords, 30 random gap orders): Tr L exact 1188/2230/762; Tr L² 3896 / 15806–15808 / 2148.5; gaps 4.03–4.08e-5 / 5.40–5.48e-5 / 2.15–2.19e-5; max 4.566–4.589 / 10.17–10.18 / 5.066; N(0.1)=51–52, N(1)=167–169, N(2)=242, N(5)=539; heat trace matches to ~0.04 for t≤2 and within ~0.1 for t=5–100",
+  "verdict": "HOLD (traces, N(2), N(5), mult0=1) / ≈HOLD order-dependent (gap, max, N(0.1), N(1))",
+  "note": "exact chord order is not recorded in the archive; small differences are within the spread of admissible orders"
+ }
+]
