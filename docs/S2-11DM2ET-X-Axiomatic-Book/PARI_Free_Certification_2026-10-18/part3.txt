@@ -1,0 +1,12 @@
+cusp components, Q <= 400: max |coefficient| at frequencies 19600Q not of the form 140 n, gcd(n,70)=1: 0.0e+00
+kappa_c(+1): Shintani (exact rationals) vs sum_chi Ghat(chi) L(0,chi) with the exact PARI-free L-values: 5.0e-16; characters with nonzero contribution: 12, all totally odd non-sigma-invariant of conductor p2^2 p5 p7: True
+kappa_c(-1): Shintani (exact rationals) vs sum_chi Ghat(chi) L(0,chi) with the exact PARI-free L-values: 1.0e-15; characters with nonzero contribution: 12, all totally odd non-sigma-invariant of conductor p2^2 p5 p7: True
+x=    1: kappa(-1) [120960 cone pts] vs exact-Bernoulli lattice kappa 1.5e-15; kappa(1) [120960 pts] 1.6e-15; Phi_c(x) vs phi_rows (24 cusp rows) max dev 1.6e-15; Phi_73 = 0.120446470003+0.176437422094j
+x=  1/3: kappa(-3) [120960 cone pts] vs exact-Bernoulli lattice kappa 1.1e-15; kappa(1/3) [1088640 pts] 3.7e-15; Phi_c(x) vs phi_rows (24 cusp rows) max dev 1.6e-15; Phi_73 = 0.038631276713+0.077116144808j
+x=    2: kappa(-1/2) [483840 cone pts] vs exact-Bernoulli lattice kappa 2.7e-15; kappa(2) [120960 pts] 1.9e-15; Phi_c(x) vs phi_rows (24 cusp rows) max dev 4.2e-15; Phi_73 = 0.206217773055+0.263200146342j
+x=  3/5: kappa(-5/3) [1088640 cone pts] vs exact-Bernoulli lattice kappa 3.6e-15; kappa(3/5) [3024000 pts] 7.9e-15; Phi_c(x) vs phi_rows (24 cusp rows) max dev 7.1e-15; Phi_73 = 0.073437646967+0.123627119436j
+x=  7/4: kappa(-4/7) [5927040 cone pts] vs exact-Bernoulli lattice kappa 9.2e-15; kappa(7/4) [1935360 pts] 3.7e-15; Phi_c(x) vs phi_rows (24 cusp rows) max dev 1.2e-14; Phi_73 = 0.188336862451+0.245368413466j
+x=   -1: kappa(1) [120960 cone pts] vs exact-Bernoulli lattice kappa 1.6e-15; kappa(-1) [120960 pts] 1.5e-15; Phi_c(x) vs phi_rows (24 cusp rows) max dev 1.7e-15; Phi_73 = 0.006264073515+0.213537531676j
+x= -2/3: kappa(3/2) [483840 cone pts] vs exact-Bernoulli lattice kappa 2.9e-15; kappa(-2/3) [1088640 pts] 4.7e-15; Phi_c(x) vs phi_rows (24 cusp rows) max dev 3.4e-15; Phi_73 = 0.012354928128+0.156183157173j
+max deviation over the 7 x 24 cusp-row identities: 1.2e-14
+PARI lfun L(0) (lvalues.txt, printed to 4 digits) for the 24 PARI-labelled cusp characters vs PARI-free exact L(0) of the matched sigma-orbit: max dev 2.3e-03 over 48 comparisons
