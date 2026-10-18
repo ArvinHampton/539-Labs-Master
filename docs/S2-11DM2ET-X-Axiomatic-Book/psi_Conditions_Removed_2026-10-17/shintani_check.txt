@@ -1,0 +1,5 @@
+cone [r, gamma r), r=(1, 0): |det|=2, classes=2: t^-1/2 coeff=0, zeta_E(0)=1/10, t^1/2 coeff=0, zeta_E(-1)=29/1200  => zeta(-1,K)=20*zeta_E(-1)=29/60
+cone [r, gamma r), r=(1, 1): |det|=23, classes=23: t^-1/2 coeff=0, zeta_E(0)=1/10, t^1/2 coeff=0, zeta_E(-1)=29/1200  => zeta(-1,K)=20*zeta_E(-1)=29/60
+cone [r, gamma r), r=(1, 2): |det|=58, classes=58: t^-1/2 coeff=0, zeta_E(0)=1/10, t^1/2 coeff=0, zeta_E(-1)=29/1200  => zeta(-1,K)=20*zeta_E(-1)=29/60
+cone [r, gamma r), r=(2, 1): |det|=43, classes=43: t^-1/2 coeff=0, zeta_E(0)=1/10, t^1/2 coeff=0, zeta_E(-1)=29/1200  => zeta(-1,K)=20*zeta_E(-1)=29/60
+cone [r, gamma r), r=(3, 2): |det|=130, classes=130: t^-1/2 coeff=0, zeta_E(0)=1/10, t^1/2 coeff=0, zeta_E(-1)=29/1200  => zeta(-1,K)=20*zeta_E(-1)=29/60

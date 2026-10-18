@@ -1,0 +1,10 @@
+S-law w=(0.2+0.9j): max_rows |u(-1/w) - M u(w)| = 1.12e-15   (max |u| = 2.35)
+S-law w=(-0.35+0.95j): max_rows |u(-1/w) - M u(w)| = 9.16e-16   (max |u| = 2.41)
+S-law w=(0.05+1.02j): max_rows |u(-1/w) - M u(w)| = 1.20e-15   (max |u| = 2.50)
+T-law w=(0.3+1.1j): max_rows |u(w+1) - T u(w)| = 7.03e-16
+M unitary: 6.7e-16;  T unitary: 4.4e-16
+M^2 = P (nu->-nu): 6.1e-16;   (M T)^3 = P: 1.0e+00
+P u = u on all rows (u_(-al,-be)=u_(al,be)): 5.6e-16
+on the P-invariant subspace (where the u live): |((MT)^3 - I) Pi| = 1.3e-15;  |(M^2 - I) Pi| = 4.2e-16
+applied to the actual vector u(w): |(MT)^3 u - u| = 3.3e-15
+dimension of P-invariant subspace = 72
