@@ -1,0 +1,141 @@
+m = p2^3 p5 p7 oo1 oo2, Cl_m^+ = [24, 2, 2]
+  0 ((np.int64(0), np.int64(0)), (0, 0))  sgn+1 g=9800 resid=7.6e-15 |Eis|^2=1.0000 |cusp|^2=0.0000 |mixed|^2=1.1e-29 ; sgn-1 g=9800 resid=3.1e-14 |Eis|^2=1.0000 |cusp|^2=0.0000 |mixed|^2=1.0e-29
+  1 ((np.int64(0), np.int64(0)), (np.int64(-49), np.int64(14)))  sgn+1 g=9800 resid=7.6e-15 |Eis|^2=1.0000 |cusp|^2=0.0000 |mixed|^2=1.1e-29 ; sgn-1 g=9800 resid=3.1e-14 |Eis|^2=1.0000 |cusp|^2=0.0000 |mixed|^2=1.0e-29
+  2 ((np.int64(0), np.int64(10)), (0, 0))  sgn+1 g=1400 resid=5.3e-15 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=2.6e-31 ; sgn-1 g=1400 resid=2.1e-14 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=2.2e-30
+  3 ((np.int64(0), np.int64(10)), (np.int64(-49), np.int64(14)))  sgn+1 g=1400 resid=5.3e-15 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=2.6e-31 ; sgn-1 g=1400 resid=2.1e-14 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=2.2e-30
+  4 ((np.int64(0), np.int64(20)), (0, 0))  sgn+1 g=1400 resid=3.4e-15 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=7.4e-31 ; sgn-1 g=1400 resid=4.4e-15 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=6.3e-31
+  5 ((np.int64(0), np.int64(20)), (np.int64(-49), np.int64(14)))  sgn+1 g=1400 resid=3.4e-15 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=7.4e-31 ; sgn-1 g=1400 resid=4.4e-15 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=6.3e-31
+  6 ((np.int64(0), np.int64(30)), (0, 0))  sgn+1 g=1400 resid=8.2e-15 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=4.5e-31 ; sgn-1 g=1400 resid=2.7e-15 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=7.0e-31
+  7 ((np.int64(0), np.int64(30)), (np.int64(-49), np.int64(14)))  sgn+1 g=1400 resid=8.2e-15 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=4.5e-31 ; sgn-1 g=1400 resid=2.7e-15 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=7.0e-31
+  8 ((np.int64(0), np.int64(40)), (0, 0))  sgn+1 g=1400 resid=8.2e-15 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=4.5e-31 ; sgn-1 g=1400 resid=2.7e-15 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=7.0e-31
+  9 ((np.int64(0), np.int64(40)), (np.int64(-49), np.int64(14)))  sgn+1 g=1400 resid=8.2e-15 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=4.5e-31 ; sgn-1 g=1400 resid=2.7e-15 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=7.0e-31
+ 10 ((np.int64(0), np.int64(50)), (0, 0))  sgn+1 g=1400 resid=3.4e-15 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=7.4e-31 ; sgn-1 g=1400 resid=4.4e-15 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=6.3e-31
+ 11 ((np.int64(0), np.int64(50)), (np.int64(-49), np.int64(14)))  sgn+1 g=1400 resid=3.4e-15 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=7.4e-31 ; sgn-1 g=1400 resid=4.4e-15 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=6.3e-31
+ 12 ((np.int64(0), np.int64(60)), (0, 0))  sgn+1 g=1400 resid=5.3e-15 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=2.6e-31 ; sgn-1 g=1400 resid=2.1e-14 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=2.2e-30
+ 13 ((np.int64(0), np.int64(60)), (np.int64(-49), np.int64(14)))  sgn+1 g=1400 resid=5.3e-15 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=2.6e-31 ; sgn-1 g=1400 resid=2.1e-14 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=2.2e-30
+ 14 ((np.int64(14), np.int64(6)), (0, 0))  sgn+1 g=280 resid=1.2e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=5.0e-32 ; sgn-1 g=280 resid=5.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=6.7e-32
+ 15 ((np.int64(14), np.int64(6)), (np.int64(-49), np.int64(14)))  sgn+1 g=280 resid=1.2e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=5.2e-32 ; sgn-1 g=280 resid=1.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=6.8e-32
+ 16 ((np.int64(14), np.int64(16)), (0, 0))  sgn+1 g=280 resid=2.9e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=4.4e-32 ; sgn-1 g=280 resid=3.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.2e-31
+ 17 ((np.int64(14), np.int64(16)), (np.int64(-49), np.int64(14)))  sgn+1 g=280 resid=3.5e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=4.4e-32 ; sgn-1 g=280 resid=3.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.2e-31
+ 18 ((np.int64(14), np.int64(26)), (0, 0))  sgn+1 g=280 resid=2.9e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=4.4e-32 ; sgn-1 g=280 resid=3.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.2e-31
+ 19 ((np.int64(14), np.int64(26)), (np.int64(-49), np.int64(14)))  sgn+1 g=280 resid=3.5e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=4.4e-32 ; sgn-1 g=280 resid=3.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.2e-31
+ 20 ((np.int64(14), np.int64(36)), (0, 0))  sgn+1 g=280 resid=1.2e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=5.0e-32 ; sgn-1 g=280 resid=5.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=6.7e-32
+ 21 ((np.int64(14), np.int64(36)), (np.int64(-49), np.int64(14)))  sgn+1 g=280 resid=1.2e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=5.2e-32 ; sgn-1 g=280 resid=1.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=6.8e-32
+ 22 ((np.int64(14), np.int64(46)), (0, 0))  sgn+1 g=280 resid=1.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=2.7e-32 ; sgn-1 g=280 resid=1.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=4.9e-32
+ 23 ((np.int64(14), np.int64(46)), (np.int64(-49), np.int64(14)))  sgn+1 g=280 resid=2.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=2.7e-32 ; sgn-1 g=280 resid=1.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=4.7e-32
+ 24 ((np.int64(14), np.int64(56)), (0, 0))  sgn+1 g=1960 resid=4.3e-15 |Eis|^2=0.1250 |cusp|^2=0.0000 |mixed|^2=6.4e-31 ; sgn-1 g=1960 resid=3.6e-15 |Eis|^2=0.1250 |cusp|^2=0.0000 |mixed|^2=6.6e-31
+ 25 ((np.int64(14), np.int64(56)), (np.int64(-49), np.int64(14)))  sgn+1 g=1960 resid=4.1e-15 |Eis|^2=0.1250 |cusp|^2=0.0000 |mixed|^2=6.9e-31 ; sgn-1 g=1960 resid=5.3e-15 |Eis|^2=0.1250 |cusp|^2=0.0000 |mixed|^2=6.6e-31
+ 26 ((np.int64(14), np.int64(66)), (0, 0))  sgn+1 g=280 resid=1.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=2.7e-32 ; sgn-1 g=280 resid=1.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=4.9e-32
+ 27 ((np.int64(14), np.int64(66)), (np.int64(-49), np.int64(14)))  sgn+1 g=280 resid=2.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=2.7e-32 ; sgn-1 g=280 resid=1.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=4.7e-32
+ 28 ((np.int64(28), np.int64(2)), (0, 0))  sgn+1 g=280 resid=4.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.9e-31 ; sgn-1 g=280 resid=1.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.5e-31
+ 29 ((np.int64(28), np.int64(2)), (np.int64(-49), np.int64(14)))  sgn+1 g=280 resid=4.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.9e-31 ; sgn-1 g=280 resid=2.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.6e-31
+ 30 ((np.int64(28), np.int64(12)), (0, 0))  sgn+1 g=280 resid=4.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.9e-31 ; sgn-1 g=280 resid=1.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.5e-31
+ 31 ((np.int64(28), np.int64(12)), (np.int64(-49), np.int64(14)))  sgn+1 g=280 resid=4.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.9e-31 ; sgn-1 g=280 resid=2.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.6e-31
+ 32 ((np.int64(28), np.int64(22)), (0, 0))  sgn+1 g=280 resid=3.1e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=3.1e-32 ; sgn-1 g=280 resid=1.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=4.3e-32
+ 33 ((np.int64(28), np.int64(22)), (np.int64(-49), np.int64(14)))  sgn+1 g=280 resid=2.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=2.4e-32 ; sgn-1 g=280 resid=5.0e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=4.8e-32
+ 34 ((np.int64(28), np.int64(32)), (0, 0))  sgn+1 g=280 resid=7.1e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=7.8e-32 ; sgn-1 g=280 resid=5.8e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.1e-31
+ 35 ((np.int64(28), np.int64(32)), (np.int64(-49), np.int64(14)))  sgn+1 g=280 resid=5.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=7.7e-32 ; sgn-1 g=280 resid=6.4e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.2e-31
+ 36 ((np.int64(28), np.int64(42)), (0, 0))  sgn+1 g=1960 resid=4.9e-15 |Eis|^2=0.1250 |cusp|^2=0.0000 |mixed|^2=9.1e-31 ; sgn-1 g=1960 resid=1.3e-14 |Eis|^2=0.1250 |cusp|^2=0.0000 |mixed|^2=8.8e-31
+ 37 ((np.int64(28), np.int64(42)), (np.int64(-49), np.int64(14)))  sgn+1 g=1960 resid=4.8e-15 |Eis|^2=0.1250 |cusp|^2=0.0000 |mixed|^2=9.0e-31 ; sgn-1 g=1960 resid=1.3e-14 |Eis|^2=0.1250 |cusp|^2=0.0000 |mixed|^2=7.6e-31
+ 38 ((np.int64(28), np.int64(52)), (0, 0))  sgn+1 g=280 resid=7.1e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=7.8e-32 ; sgn-1 g=280 resid=5.8e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.1e-31
+ 39 ((np.int64(28), np.int64(52)), (np.int64(-49), np.int64(14)))  sgn+1 g=280 resid=5.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=7.7e-32 ; sgn-1 g=280 resid=6.4e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.2e-31
+ 40 ((np.int64(28), np.int64(62)), (0, 0))  sgn+1 g=280 resid=3.1e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=3.1e-32 ; sgn-1 g=280 resid=1.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=4.3e-32
+ 41 ((np.int64(28), np.int64(62)), (np.int64(-49), np.int64(14)))  sgn+1 g=280 resid=2.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=2.4e-32 ; sgn-1 g=280 resid=5.0e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=4.8e-32
+ 42 ((np.int64(42), np.int64(8)), (0, 0))  sgn+1 g=280 resid=3.1e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=3.1e-32 ; sgn-1 g=280 resid=1.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=4.3e-32
+ 43 ((np.int64(42), np.int64(8)), (np.int64(-49), np.int64(14)))  sgn+1 g=280 resid=2.0e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=2.4e-32 ; sgn-1 g=280 resid=4.9e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=4.9e-32
+ 44 ((np.int64(42), np.int64(18)), (0, 0))  sgn+1 g=280 resid=7.1e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=7.8e-32 ; sgn-1 g=280 resid=5.8e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.1e-31
+ 45 ((np.int64(42), np.int64(18)), (np.int64(-49), np.int64(14)))  sgn+1 g=280 resid=5.5e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=8.0e-32 ; sgn-1 g=280 resid=7.4e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.1e-31
+ 46 ((np.int64(42), np.int64(28)), (0, 0))  sgn+1 g=1960 resid=4.9e-15 |Eis|^2=0.1250 |cusp|^2=0.0000 |mixed|^2=9.1e-31 ; sgn-1 g=1960 resid=1.3e-14 |Eis|^2=0.1250 |cusp|^2=0.0000 |mixed|^2=8.8e-31
+ 47 ((np.int64(42), np.int64(28)), (np.int64(-49), np.int64(14)))  sgn+1 g=1960 resid=5.0e-15 |Eis|^2=0.1250 |cusp|^2=0.0000 |mixed|^2=9.2e-31 ; sgn-1 g=1960 resid=1.3e-14 |Eis|^2=0.1250 |cusp|^2=0.0000 |mixed|^2=7.3e-31
+ 48 ((np.int64(42), np.int64(38)), (0, 0))  sgn+1 g=280 resid=7.1e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=7.8e-32 ; sgn-1 g=280 resid=5.8e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.1e-31
+ 49 ((np.int64(42), np.int64(38)), (np.int64(-49), np.int64(14)))  sgn+1 g=280 resid=5.5e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=8.0e-32 ; sgn-1 g=280 resid=7.4e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.1e-31
+ 50 ((np.int64(42), np.int64(48)), (0, 0))  sgn+1 g=280 resid=3.1e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=3.1e-32 ; sgn-1 g=280 resid=1.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=4.3e-32
+ 51 ((np.int64(42), np.int64(48)), (np.int64(-49), np.int64(14)))  sgn+1 g=280 resid=2.0e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=2.4e-32 ; sgn-1 g=280 resid=4.9e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=4.9e-32
+ 52 ((np.int64(42), np.int64(58)), (0, 0))  sgn+1 g=280 resid=4.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.9e-31 ; sgn-1 g=280 resid=1.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.5e-31
+ 53 ((np.int64(42), np.int64(58)), (np.int64(-49), np.int64(14)))  sgn+1 g=280 resid=4.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.9e-31 ; sgn-1 g=280 resid=1.4e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.5e-31
+ 54 ((np.int64(42), np.int64(68)), (0, 0))  sgn+1 g=280 resid=4.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.9e-31 ; sgn-1 g=280 resid=1.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.5e-31
+ 55 ((np.int64(42), np.int64(68)), (np.int64(-49), np.int64(14)))  sgn+1 g=280 resid=4.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.9e-31 ; sgn-1 g=280 resid=1.4e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.5e-31
+ 56 ((np.int64(56), np.int64(4)), (0, 0))  sgn+1 g=280 resid=1.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=2.7e-32 ; sgn-1 g=280 resid=1.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=4.9e-32
+ 57 ((np.int64(56), np.int64(4)), (np.int64(-49), np.int64(14)))  sgn+1 g=280 resid=2.7e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=2.7e-32 ; sgn-1 g=280 resid=1.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=3.9e-32
+ 58 ((np.int64(56), np.int64(14)), (0, 0))  sgn+1 g=1960 resid=4.3e-15 |Eis|^2=0.1250 |cusp|^2=0.0000 |mixed|^2=6.4e-31 ; sgn-1 g=1960 resid=3.6e-15 |Eis|^2=0.1250 |cusp|^2=0.0000 |mixed|^2=6.6e-31
+ 59 ((np.int64(56), np.int64(14)), (np.int64(-49), np.int64(14)))  sgn+1 g=1960 resid=3.8e-15 |Eis|^2=0.1250 |cusp|^2=0.0000 |mixed|^2=6.7e-31 ; sgn-1 g=1960 resid=5.8e-15 |Eis|^2=0.1250 |cusp|^2=0.0000 |mixed|^2=7.0e-31
+ 60 ((np.int64(56), np.int64(24)), (0, 0))  sgn+1 g=280 resid=1.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=2.7e-32 ; sgn-1 g=280 resid=1.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=4.9e-32
+ 61 ((np.int64(56), np.int64(24)), (np.int64(-49), np.int64(14)))  sgn+1 g=280 resid=2.7e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=2.7e-32 ; sgn-1 g=280 resid=1.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=3.9e-32
+ 62 ((np.int64(56), np.int64(34)), (0, 0))  sgn+1 g=280 resid=1.2e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=5.0e-32 ; sgn-1 g=280 resid=5.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=6.7e-32
+ 63 ((np.int64(56), np.int64(34)), (np.int64(-49), np.int64(14)))  sgn+1 g=280 resid=1.2e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=5.1e-32 ; sgn-1 g=280 resid=1.8e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=7.0e-32
+ 64 ((np.int64(56), np.int64(44)), (0, 0))  sgn+1 g=280 resid=2.9e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=4.4e-32 ; sgn-1 g=280 resid=3.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.2e-31
+ 65 ((np.int64(56), np.int64(44)), (np.int64(-49), np.int64(14)))  sgn+1 g=280 resid=3.4e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=5.1e-32 ; sgn-1 g=280 resid=3.2e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.1e-31
+ 66 ((np.int64(56), np.int64(54)), (0, 0))  sgn+1 g=280 resid=2.9e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=4.4e-32 ; sgn-1 g=280 resid=3.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.2e-31
+ 67 ((np.int64(56), np.int64(54)), (np.int64(-49), np.int64(14)))  sgn+1 g=280 resid=3.4e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=5.1e-32 ; sgn-1 g=280 resid=3.2e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.1e-31
+ 68 ((np.int64(56), np.int64(64)), (0, 0))  sgn+1 g=280 resid=1.2e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=5.0e-32 ; sgn-1 g=280 resid=5.3e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=6.7e-32
+ 69 ((np.int64(56), np.int64(64)), (np.int64(-49), np.int64(14)))  sgn+1 g=280 resid=1.2e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=5.1e-32 ; sgn-1 g=280 resid=1.8e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=7.0e-32
+ 70 ((np.int64(49), np.int64(56)), (0, 0))  sgn+1 g=980 resid=7.1e-15 |Eis|^2=0.1250 |cusp|^2=0.0000 |mixed|^2=5.4e-31 ; sgn-1 g=980 resid=5.3e-15 |Eis|^2=0.1250 |cusp|^2=0.0000 |mixed|^2=6.7e-31
+ 71 ((np.int64(49), np.int64(56)), (np.int64(-49), np.int64(14)))  empty ; empty
+ 72 ((np.int64(49), np.int64(66)), (0, 0))  sgn+1 g=140 resid=1.8e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=5.8e-32 ; sgn-1 g=140 resid=3.6e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=8.0e-32
+ 73 ((np.int64(49), np.int64(66)), (np.int64(-49), np.int64(14)))  sgn+1 g=140 resid=3.2e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=4.4e-32 ; sgn-1 g=140 resid=1.9e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=3.1e-32
+ 74 ((np.int64(49), np.int64(6)), (0, 0))  sgn+1 g=140 resid=4.4e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.4e-31 ; sgn-1 g=140 resid=6.2e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=9.2e-32
+ 75 ((np.int64(49), np.int64(6)), (np.int64(-49), np.int64(14)))  sgn+1 g=140 resid=3.1e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=9.7e-32 ; sgn-1 g=140 resid=2.6e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=7.5e-32
+ 76 ((np.int64(49), np.int64(16)), (0, 0))  sgn+1 g=140 resid=4.4e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=4.8e-32 ; sgn-1 g=140 resid=1.2e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=5.0e-32
+ 77 ((np.int64(49), np.int64(16)), (np.int64(-49), np.int64(14)))  sgn+1 g=140 resid=2.9e-14 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=5.7e-31 ; sgn-1 g=140 resid=2.4e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=2.5e-32
+ 78 ((np.int64(49), np.int64(26)), (0, 0))  sgn+1 g=140 resid=4.4e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=4.8e-32 ; sgn-1 g=140 resid=1.2e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=5.0e-32
+ 79 ((np.int64(49), np.int64(26)), (np.int64(-49), np.int64(14)))  sgn+1 g=140 resid=2.9e-14 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=5.7e-31 ; sgn-1 g=140 resid=2.4e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=2.4e-32
+ 80 ((np.int64(49), np.int64(36)), (0, 0))  sgn+1 g=140 resid=4.4e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.4e-31 ; sgn-1 g=140 resid=6.2e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=9.2e-32
+ 81 ((np.int64(49), np.int64(36)), (np.int64(-49), np.int64(14)))  sgn+1 g=140 resid=3.1e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=9.7e-32 ; sgn-1 g=140 resid=2.6e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=7.1e-32
+ 82 ((np.int64(49), np.int64(46)), (0, 0))  sgn+1 g=140 resid=1.8e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=5.8e-32 ; sgn-1 g=140 resid=3.6e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=8.0e-32
+ 83 ((np.int64(49), np.int64(46)), (np.int64(-49), np.int64(14)))  sgn+1 g=140 resid=3.1e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=4.4e-32 ; sgn-1 g=140 resid=1.9e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=3.1e-32
+ 84 ((np.int64(63), np.int64(62)), (0, 0))  sgn+1 g=140 resid=1.5e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=2.4e-32 ; sgn-1 g=140 resid=1.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=3.4e-32
+ 85 ((np.int64(63), np.int64(62)), (np.int64(-49), np.int64(14)))  sgn+1 g=140 resid=3.2e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=1.3e-32 ; sgn-1 g=140 resid=2.5e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=1.7e-32
+ 86 ((np.int64(63), np.int64(2)), (0, 0))  sgn+1 g=140 resid=6.7e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=6.0e-32 ; sgn-1 g=140 resid=4.9e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=3.8e-32
+ 87 ((np.int64(63), np.int64(2)), (np.int64(-49), np.int64(14)))  sgn+1 g=140 resid=3.4e-14 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=2.0e-32 ; sgn-1 g=140 resid=1.9e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=2.0e-32
+ 88 ((np.int64(63), np.int64(12)), (0, 0))  sgn+1 g=140 resid=6.7e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=6.0e-32 ; sgn-1 g=140 resid=4.9e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=3.8e-32
+ 89 ((np.int64(63), np.int64(12)), (np.int64(-49), np.int64(14)))  sgn+1 g=140 resid=3.4e-14 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=2.0e-32 ; sgn-1 g=140 resid=1.2e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=2.1e-32
+ 90 ((np.int64(63), np.int64(22)), (0, 0))  sgn+1 g=140 resid=1.5e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=2.4e-32 ; sgn-1 g=140 resid=1.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=3.4e-32
+ 91 ((np.int64(63), np.int64(22)), (np.int64(-49), np.int64(14)))  sgn+1 g=140 resid=3.2e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=1.3e-32 ; sgn-1 g=140 resid=2.3e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=1.8e-32
+ 92 ((np.int64(63), np.int64(32)), (0, 0))  sgn+1 g=140 resid=1.8e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=9.7e-32 ; sgn-1 g=140 resid=3.4e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.0e-31
+ 93 ((np.int64(63), np.int64(32)), (np.int64(-49), np.int64(14)))  sgn+1 g=140 resid=1.7e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=6.7e-32 ; sgn-1 g=140 resid=1.1e-14 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=2.2e-31
+ 94 ((np.int64(63), np.int64(42)), (0, 0))  sgn+1 g=980 resid=7.1e-15 |Eis|^2=0.1250 |cusp|^2=0.0000 |mixed|^2=1.3e-30 ; sgn-1 g=980 resid=4.5e-15 |Eis|^2=0.1250 |cusp|^2=0.0000 |mixed|^2=1.6e-30
+ 95 ((np.int64(63), np.int64(42)), (np.int64(-49), np.int64(14)))  empty ; empty
+ 96 ((np.int64(63), np.int64(52)), (0, 0))  sgn+1 g=140 resid=1.8e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=9.7e-32 ; sgn-1 g=140 resid=3.4e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.0e-31
+ 97 ((np.int64(63), np.int64(52)), (np.int64(-49), np.int64(14)))  sgn+1 g=140 resid=1.6e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=6.7e-32 ; sgn-1 g=140 resid=1.1e-14 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=2.2e-31
+ 98 ((np.int64(7), np.int64(58)), (0, 0))  sgn+1 g=140 resid=6.7e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=6.0e-32 ; sgn-1 g=140 resid=4.9e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=3.8e-32
+ 99 ((np.int64(7), np.int64(58)), (np.int64(-49), np.int64(14)))  sgn+1 g=140 resid=3.4e-14 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=2.0e-32 ; sgn-1 g=140 resid=1.6e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=2.5e-32
+100 ((np.int64(7), np.int64(68)), (0, 0))  sgn+1 g=140 resid=6.7e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=6.0e-32 ; sgn-1 g=140 resid=4.9e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=3.8e-32
+101 ((np.int64(7), np.int64(68)), (np.int64(-49), np.int64(14)))  sgn+1 g=140 resid=3.4e-14 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=2.0e-32 ; sgn-1 g=140 resid=1.7e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=2.4e-32
+102 ((np.int64(7), np.int64(8)), (0, 0))  sgn+1 g=140 resid=1.5e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=2.4e-32 ; sgn-1 g=140 resid=1.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=3.4e-32
+103 ((np.int64(7), np.int64(8)), (np.int64(-49), np.int64(14)))  sgn+1 g=140 resid=2.8e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=1.2e-32 ; sgn-1 g=140 resid=2.2e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=1.4e-32
+104 ((np.int64(7), np.int64(18)), (0, 0))  sgn+1 g=140 resid=1.8e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=9.7e-32 ; sgn-1 g=140 resid=3.4e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.0e-31
+105 ((np.int64(7), np.int64(18)), (np.int64(-49), np.int64(14)))  sgn+1 g=140 resid=1.9e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=6.7e-32 ; sgn-1 g=140 resid=1.1e-14 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=2.1e-31
+106 ((np.int64(7), np.int64(28)), (0, 0))  sgn+1 g=980 resid=7.1e-15 |Eis|^2=0.1250 |cusp|^2=0.0000 |mixed|^2=1.3e-30 ; sgn-1 g=980 resid=4.5e-15 |Eis|^2=0.1250 |cusp|^2=0.0000 |mixed|^2=1.6e-30
+107 ((np.int64(7), np.int64(28)), (np.int64(-49), np.int64(14)))  empty ; empty
+108 ((np.int64(7), np.int64(38)), (0, 0))  sgn+1 g=140 resid=1.8e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=9.7e-32 ; sgn-1 g=140 resid=3.4e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.0e-31
+109 ((np.int64(7), np.int64(38)), (np.int64(-49), np.int64(14)))  sgn+1 g=140 resid=1.9e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=6.7e-32 ; sgn-1 g=140 resid=1.1e-14 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=2.2e-31
+110 ((np.int64(7), np.int64(48)), (0, 0))  sgn+1 g=140 resid=1.5e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=2.4e-32 ; sgn-1 g=140 resid=1.1e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=3.4e-32
+111 ((np.int64(7), np.int64(48)), (np.int64(-49), np.int64(14)))  sgn+1 g=140 resid=3.1e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=1.2e-32 ; sgn-1 g=140 resid=2.2e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=1.5e-32
+112 ((np.int64(21), np.int64(64)), (0, 0))  sgn+1 g=140 resid=4.4e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.4e-31 ; sgn-1 g=140 resid=6.2e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=9.2e-32
+113 ((np.int64(21), np.int64(64)), (np.int64(-49), np.int64(14)))  sgn+1 g=140 resid=3.6e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=9.7e-32 ; sgn-1 g=140 resid=3.0e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=8.2e-32
+114 ((np.int64(21), np.int64(4)), (0, 0))  sgn+1 g=140 resid=1.8e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=5.8e-32 ; sgn-1 g=140 resid=3.6e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=8.0e-32
+115 ((np.int64(21), np.int64(4)), (np.int64(-49), np.int64(14)))  sgn+1 g=140 resid=3.6e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=4.4e-32 ; sgn-1 g=140 resid=2.1e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=3.5e-32
+116 ((np.int64(21), np.int64(14)), (0, 0))  sgn+1 g=980 resid=7.1e-15 |Eis|^2=0.1250 |cusp|^2=0.0000 |mixed|^2=5.4e-31 ; sgn-1 g=980 resid=5.3e-15 |Eis|^2=0.1250 |cusp|^2=0.0000 |mixed|^2=6.7e-31
+117 ((np.int64(21), np.int64(14)), (np.int64(-49), np.int64(14)))  empty ; empty
+118 ((np.int64(21), np.int64(24)), (0, 0))  sgn+1 g=140 resid=1.8e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=5.8e-32 ; sgn-1 g=140 resid=3.6e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=8.0e-32
+119 ((np.int64(21), np.int64(24)), (np.int64(-49), np.int64(14)))  sgn+1 g=140 resid=3.6e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=4.4e-32 ; sgn-1 g=140 resid=2.1e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=3.4e-32
+120 ((np.int64(21), np.int64(34)), (0, 0))  sgn+1 g=140 resid=4.4e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=1.4e-31 ; sgn-1 g=140 resid=6.2e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=9.2e-32
+121 ((np.int64(21), np.int64(34)), (np.int64(-49), np.int64(14)))  sgn+1 g=140 resid=3.6e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=9.6e-32 ; sgn-1 g=140 resid=2.9e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=8.0e-32
+122 ((np.int64(21), np.int64(44)), (0, 0))  sgn+1 g=140 resid=4.4e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=4.8e-32 ; sgn-1 g=140 resid=1.2e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=5.0e-32
+123 ((np.int64(21), np.int64(44)), (np.int64(-49), np.int64(14)))  sgn+1 g=140 resid=2.9e-14 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=5.7e-31 ; sgn-1 g=140 resid=2.4e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=2.4e-32
+124 ((np.int64(21), np.int64(54)), (0, 0))  sgn+1 g=140 resid=4.4e-15 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=4.8e-32 ; sgn-1 g=140 resid=1.2e-14 |Eis|^2=0.0104 |cusp|^2=0.0000 |mixed|^2=5.0e-32
+125 ((np.int64(21), np.int64(54)), (np.int64(-49), np.int64(14)))  sgn+1 g=140 resid=2.9e-14 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=5.7e-31 ; sgn-1 g=140 resid=2.3e-15 |Eis|^2=0.0000 |cusp|^2=0.0104 |mixed|^2=2.4e-32
+126 ((np.int64(35), np.int64(60)), (0, 0))  sgn+1 g=700 resid=4.0e-14 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=6.6e-31 ; sgn-1 g=700 resid=2.6e-14 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=3.6e-31
+127 ((np.int64(35), np.int64(60)), (np.int64(-49), np.int64(14)))  empty ; empty
+128 ((np.int64(35), np.int64(0)), (0, 0))  sgn+1 g=4900 resid=4.4e-14 |Eis|^2=1.0000 |cusp|^2=0.0000 |mixed|^2=5.2e-30 ; sgn-1 g=4900 resid=3.1e-14 |Eis|^2=1.0000 |cusp|^2=0.0000 |mixed|^2=7.9e-30
+129 ((np.int64(35), np.int64(0)), (np.int64(-49), np.int64(14)))  empty ; empty
+130 ((np.int64(35), np.int64(10)), (0, 0))  sgn+1 g=700 resid=4.0e-14 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=6.6e-31 ; sgn-1 g=700 resid=2.6e-14 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=3.6e-31
+131 ((np.int64(35), np.int64(10)), (np.int64(-49), np.int64(14)))  empty ; empty
+132 ((np.int64(35), np.int64(20)), (0, 0))  sgn+1 g=700 resid=9.5e-15 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=6.5e-31 ; sgn-1 g=700 resid=1.1e-14 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=3.4e-31
+133 ((np.int64(35), np.int64(20)), (np.int64(-49), np.int64(14)))  empty ; empty
+134 ((np.int64(35), np.int64(30)), (0, 0))  sgn+1 g=700 resid=1.8e-14 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=8.1e-31 ; sgn-1 g=700 resid=1.1e-14 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=8.9e-31
+135 ((np.int64(35), np.int64(30)), (np.int64(-49), np.int64(14)))  empty ; empty
+136 ((np.int64(35), np.int64(40)), (0, 0))  sgn+1 g=700 resid=1.8e-14 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=8.1e-31 ; sgn-1 g=700 resid=1.1e-14 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=8.9e-31
+137 ((np.int64(35), np.int64(40)), (np.int64(-49), np.int64(14)))  empty ; empty
+138 ((np.int64(35), np.int64(50)), (0, 0))  sgn+1 g=700 resid=9.5e-15 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=6.5e-31 ; sgn-1 g=700 resid=1.1e-14 |Eis|^2=0.0833 |cusp|^2=0.0000 |mixed|^2=3.4e-31
+139 ((np.int64(35), np.int64(50)), (np.int64(-49), np.int64(14)))  empty ; empty
