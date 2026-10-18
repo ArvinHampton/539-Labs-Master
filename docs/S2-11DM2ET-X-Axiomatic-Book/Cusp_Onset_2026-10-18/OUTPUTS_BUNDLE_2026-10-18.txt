@@ -1,0 +1,5157 @@
+# OUTPUTS BUNDLE — Cusp_Onset_2026-10-18 (2026-10-18)
+# The text outputs (json/log/txt/sha256) of this package, concatenated verbatim, one member per file.
+# Reports (.md) and scripts (.py/.sh) are stored as separate files in this folder. Binary files (pkl/npz/npy), __pycache__ and empty logs are excluded.
+# Reason for bundling: the push tool accepts at most 4 file attachments per commit; bundling keeps the commit count modest.
+# Member format: a line "===== BEGIN FILE <relative path> bytes=<n> sha256=<hex> =====", then exactly <n> bytes, then "\n===== END FILE <relative path> =====".
+# Extract (Python 3, run in this folder):
+#   import hashlib,os,re; d=open('OUTPUTS_BUNDLE_2026-10-18.txt','rb').read(); i=0
+#   for m in re.finditer(rb'===== BEGIN FILE (\S+) bytes=(\d+) sha256=([0-9a-f]+) =====\n', d):
+#       if m.start()<i: continue
+#       p,n,h=m.group(1).decode(),int(m.group(2)),m.group(3).decode(); b=d[m.end():m.end()+n]; i=m.end()+n
+#       assert hashlib.sha256(b).hexdigest()==h; os.makedirs(os.path.dirname(p) or '.',exist_ok=True); open(p,'wb').write(b)
+# Members: 34
+===== BEGIN FILE SUPERSEDED_buggy_KN_genus_test_uL_rayclass_run1.json bytes=28672 sha256=eeec334e7ee28e890e24aadddf16fba66def5b18b259037e7e4bcc5640c0d33c =====
+[
+ {
+  "s": 5,
+  "D0": 15,
+  "c": 1,
+  "M": 12,
+  "cyc": [
+   4,
+   2,
+   2
+  ],
+  "G": 16,
+  "normimage": 4,
+  "K_N": 4,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 887,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 2,
+    "min_hits_per_class": 443,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 4,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 16,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "Eis (all c-parts seen complete)",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 6,
+  "D0": 6,
+  "c": 2,
+  "M": 32,
+  "cyc": [
+   16,
+   2,
+   2
+  ],
+  "G": 64,
+  "normimage": 16,
+  "K_N": 4,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 1170,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 8,
+    "min_hits_per_class": 145,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 4,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 64,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "Eis (all c-parts seen complete)",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 9,
+  "D0": 7,
+  "c": 3,
+  "M": 84,
+  "cyc": [
+   6,
+   2,
+   2,
+   2,
+   2
+  ],
+  "G": 96,
+  "normimage": 12,
+  "K_N": 8,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 251,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 4,
+    "min_hits_per_class": 40,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 12,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 96,
+    "complete": true
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      1
+     ],
+     [
+      3,
+      "[1, 1]~",
+      1
+     ]
+    ],
+    "Nc": 9,
+    "n_classes": 8,
+    "min_hits_per_class": 4,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 6,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 96,
+    "complete": true
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      1
+     ],
+     [
+      3,
+      "[1, 1]~",
+      2
+     ]
+    ],
+    "Nc": 27,
+    "n_classes": 6,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 12,
+    "genus_pure_chars": 12,
+    "nongenus_mixed_chars": 24,
+    "nongenus_pure_char_orders": {
+     "2": 4,
+     "6": 8
+    },
+    "observable_classes": 82,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      2
+     ],
+     [
+      3,
+      "[1, 1]~",
+      1
+     ]
+    ],
+    "Nc": 27,
+    "n_classes": 7,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 36,
+    "genus_pure_chars": 12,
+    "nongenus_mixed_chars": 48,
+    "nongenus_pure_char_orders": {
+     "2": 12,
+     "6": 24
+    },
+    "observable_classes": 82,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      3
+     ],
+     [
+      3,
+      "[1, 1]~",
+      1
+     ]
+    ],
+    "Nc": 81,
+    "n_classes": 3,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 36,
+    "genus_pure_chars": 12,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "2": 12,
+     "6": 24
+    },
+    "observable_classes": 43,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      2
+     ],
+     [
+      3,
+      "[1, 1]~",
+      2
+     ]
+    ],
+    "Nc": 81,
+    "n_classes": 3,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 36,
+    "genus_pure_chars": 12,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "2": 12,
+     "6": 24
+    },
+    "observable_classes": 43,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      1
+     ],
+     [
+      3,
+      "[1, 1]~",
+      3
+     ]
+    ],
+    "Nc": 81,
+    "n_classes": 3,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 36,
+    "genus_pure_chars": 12,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "2": 12,
+     "6": 24
+    },
+    "observable_classes": 43,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      4
+     ],
+     [
+      3,
+      "[1, 1]~",
+      1
+     ]
+    ],
+    "Nc": 243,
+    "n_classes": 2,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 12,
+    "genus_pure_chars": 12,
+    "nongenus_mixed_chars": 24,
+    "nongenus_pure_char_orders": {
+     "2": 4,
+     "6": 8
+    },
+    "observable_classes": 15,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      2
+     ],
+     [
+      3,
+      "[1, 1]~",
+      3
+     ]
+    ],
+    "Nc": 243,
+    "n_classes": 2,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 12,
+    "genus_pure_chars": 12,
+    "nongenus_mixed_chars": 24,
+    "nongenus_pure_char_orders": {
+     "2": 4,
+     "6": 8
+    },
+    "observable_classes": 15,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      1
+     ],
+     [
+      3,
+      "[1, 1]~",
+      4
+     ]
+    ],
+    "Nc": 243,
+    "n_classes": 1,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 36,
+    "genus_pure_chars": 12,
+    "nongenus_mixed_chars": 48,
+    "nongenus_pure_char_orders": {
+     "2": 12,
+     "6": 24
+    },
+    "observable_classes": 15,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      3
+     ],
+     [
+      3,
+      "[1, 1]~",
+      2
+     ]
+    ],
+    "Nc": 243,
+    "n_classes": 1,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 36,
+    "genus_pure_chars": 12,
+    "nongenus_mixed_chars": 48,
+    "nongenus_pure_char_orders": {
+     "2": 12,
+     "6": 24
+    },
+    "observable_classes": 15,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      1
+     ],
+     [
+      3,
+      "[1, 1]~",
+      5
+     ]
+    ],
+    "Nc": 729,
+    "n_classes": 1,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 12,
+    "genus_pure_chars": 12,
+    "nongenus_mixed_chars": 24,
+    "nongenus_pure_char_orders": {
+     "2": 4,
+     "6": 8
+    },
+    "observable_classes": 4,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      5
+     ],
+     [
+      3,
+      "[1, 1]~",
+      1
+     ]
+    ],
+    "Nc": 729,
+    "n_classes": 1,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 12,
+    "genus_pure_chars": 12,
+    "nongenus_mixed_chars": 24,
+    "nongenus_pure_char_orders": {
+     "2": 4,
+     "6": 8
+    },
+    "observable_classes": 4,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      4
+     ],
+     [
+      3,
+      "[1, 1]~",
+      2
+     ]
+    ],
+    "Nc": 729,
+    "n_classes": 1,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 12,
+    "genus_pure_chars": 12,
+    "nongenus_mixed_chars": 24,
+    "nongenus_pure_char_orders": {
+     "2": 4,
+     "6": 8
+    },
+    "observable_classes": 4,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      3
+     ],
+     [
+      3,
+      "[1, 1]~",
+      3
+     ]
+    ],
+    "Nc": 729,
+    "n_classes": 1,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 12,
+    "genus_pure_chars": 12,
+    "nongenus_mixed_chars": 24,
+    "nongenus_pure_char_orders": {
+     "2": 4,
+     "6": 8
+    },
+    "observable_classes": 4,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      2
+     ],
+     [
+      3,
+      "[1, 1]~",
+      4
+     ]
+    ],
+    "Nc": 729,
+    "n_classes": 1,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 12,
+    "genus_pure_chars": 12,
+    "nongenus_mixed_chars": 24,
+    "nongenus_pure_char_orders": {
+     "2": 4,
+     "6": 8
+    },
+    "observable_classes": 4,
+    "complete": false
+   }
+  ],
+  "uL_verdict": "Eis on complete c-parts; 14 incomplete",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 10,
+  "D0": 5,
+  "c": 4,
+  "M": 128,
+  "cyc": [
+   32,
+   2,
+   2
+  ],
+  "G": 128,
+  "normimage": 64,
+  "K_N": 2,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 404,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 8,
+    "min_hits_per_class": 49,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 8,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 128,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "Eis (all c-parts seen complete)",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 12,
+  "D0": 30,
+  "c": 2,
+  "M": 80,
+  "cyc": [
+   8,
+   8,
+   2,
+   2
+  ],
+  "G": 256,
+  "normimage": 32,
+  "K_N": 8,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 564,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 16,
+    "min_hits_per_class": 33,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 8,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 256,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "Eis (all c-parts seen complete)",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 13,
+  "D0": 143,
+  "c": 1,
+  "M": 44,
+  "cyc": [
+   20,
+   2,
+   2
+  ],
+  "G": 80,
+  "normimage": 20,
+  "K_N": 4,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 120,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 2,
+    "min_hits_per_class": 60,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 20,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 80,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "Eis (all c-parts seen complete)",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 14,
+  "D0": 42,
+  "c": 2,
+  "M": 96,
+  "cyc": [
+   16,
+   4,
+   2,
+   2
+  ],
+  "G": 256,
+  "normimage": 32,
+  "K_N": 8,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 208,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 8,
+    "min_hits_per_class": 23,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 8,
+    "genus_pure_chars": 8,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "4": 8
+    },
+    "observable_classes": 256,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "CUSP",
+  "uL_nongenus_pure_chars_complete": 8
+ },
+ {
+  "s": 15,
+  "D0": 195,
+  "c": 1,
+  "M": 52,
+  "cyc": [
+   24,
+   2,
+   2,
+   2
+  ],
+  "G": 192,
+  "normimage": 24,
+  "K_N": 8,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 92,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 2,
+    "min_hits_per_class": 45,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 24,
+    "genus_pure_chars": 24,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "2": 4,
+     "12": 8,
+     "6": 8,
+     "4": 4
+    },
+    "observable_classes": 192,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "CUSP",
+  "uL_nongenus_pure_chars_complete": 24
+ },
+ {
+  "s": 16,
+  "D0": 14,
+  "c": 4,
+  "M": 224,
+  "cyc": [
+   48,
+   4,
+   2,
+   2
+  ],
+  "G": 768,
+  "normimage": 48,
+  "K_N": 16,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 650,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 32,
+    "min_hits_per_class": 8,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 12,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 768,
+    "complete": true
+   },
+   {
+    "c": [
+     [
+      2,
+      "[0, 1]~",
+      1
+     ]
+    ],
+    "Nc": 2,
+    "n_classes": 64,
+    "min_hits_per_class": 3,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 6,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 766,
+    "complete": false
+   }
+  ],
+  "uL_verdict": "Eis on complete c-parts; 1 incomplete",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 17,
+  "D0": 255,
+  "c": 1,
+  "M": 60,
+  "cyc": [
+   8,
+   4,
+   2,
+   2
+  ],
+  "G": 128,
+  "normimage": 16,
+  "K_N": 8,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 73,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 2,
+    "min_hits_per_class": 36,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 16,
+    "genus_pure_chars": 16,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "8": 16
+    },
+    "observable_classes": 128,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "CUSP",
+  "uL_nongenus_pure_chars_complete": 16
+ },
+ {
+  "s": 18,
+  "D0": 2,
+  "c": 12,
+  "M": 768,
+  "cyc": [
+   64,
+   8,
+   2,
+   2
+  ],
+  "G": 2048,
+  "normimage": 128,
+  "K_N": 16,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 130,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 32,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 16,
+    "genus_pure_chars": 16,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "4": 16
+    },
+    "observable_classes": 1945,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[3, 0]~",
+      1
+     ]
+    ],
+    "Nc": 9,
+    "n_classes": 35,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 896,
+    "genus_pure_chars": 128,
+    "nongenus_mixed_chars": 768,
+    "nongenus_pure_char_orders": {
+     "8": 80,
+     "4": 16,
+     "64": 512,
+     "32": 192,
+     "16": 96
+    },
+    "observable_classes": 544,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[3, 0]~",
+      2
+     ]
+    ],
+    "Nc": 81,
+    "n_classes": 5,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 880,
+    "genus_pure_chars": 128,
+    "nongenus_mixed_chars": 768,
+    "nongenus_pure_char_orders": {
+     "8": 80,
+     "64": 512,
+     "32": 192,
+     "16": 96
+    },
+    "observable_classes": 66,
+    "complete": false
+   }
+  ],
+  "uL_verdict": "Eis on complete c-parts; 3 incomplete",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 19,
+  "D0": 323,
+  "c": 1,
+  "M": 68,
+  "cyc": [
+   32,
+   2,
+   2,
+   2
+  ],
+  "G": 256,
+  "normimage": 32,
+  "K_N": 8,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 62,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 2,
+    "min_hits_per_class": 31,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 32,
+    "genus_pure_chars": 32,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "2": 4,
+     "16": 16,
+     "8": 8,
+     "4": 4
+    },
+    "observable_classes": 256,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "CUSP",
+  "uL_nongenus_pure_chars_complete": 32
+ },
+ {
+  "s": 20,
+  "D0": 10,
+  "c": 6,
+  "M": 432,
+  "cyc": [
+   72,
+   2,
+   2,
+   2,
+   2
+  ],
+  "G": 1152,
+  "normimage": 144,
+  "K_N": 8,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 216,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 48,
+    "min_hits_per_class": 2,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 12,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 1126,
+    "complete": false
+   }
+  ],
+  "uL_verdict": "Eis on complete c-parts; 1 incomplete",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 21,
+  "D0": 399,
+  "c": 1,
+  "M": 76,
+  "cyc": [
+   72,
+   2,
+   2,
+   2
+  ],
+  "G": 576,
+  "normimage": 36,
+  "K_N": 16,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 51,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 2,
+    "min_hits_per_class": 25,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 108,
+    "genus_pure_chars": 36,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "36": 48,
+     "18": 24,
+     "12": 16,
+     "6": 8,
+     "4": 8,
+     "2": 4
+    },
+    "observable_classes": 576,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "CUSP",
+  "uL_nongenus_pure_chars_complete": 108
+ },
+ {
+  "s": 22,
+  "D0": 110,
+  "c": 2,
+  "M": 160,
+  "cyc": [
+   16,
+   8,
+   2,
+   2
+  ],
+  "G": 512,
+  "normimage": 64,
+  "K_N": 8,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 93,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 8,
+    "min_hits_per_class": 9,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 16,
+    "genus_pure_chars": 16,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "8": 16
+    },
+    "observable_classes": 512,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "CUSP",
+  "uL_nongenus_pure_chars_complete": 16
+ },
+ {
+  "s": 23,
+  "D0": 483,
+  "c": 1,
+  "M": 84,
+  "cyc": [
+   12,
+   4,
+   2,
+   2
+  ],
+  "G": 192,
+  "normimage": 24,
+  "K_N": 8,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 44,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 2,
+    "min_hits_per_class": 21,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 24,
+    "genus_pure_chars": 24,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "4": 8,
+     "12": 16
+    },
+    "observable_classes": 192,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "CUSP",
+  "uL_nongenus_pure_chars_complete": 24
+ },
+ {
+  "s": 24,
+  "D0": 33,
+  "c": 4,
+  "M": 352,
+  "cyc": [
+   40,
+   2,
+   2,
+   2,
+   2
+  ],
+  "G": 640,
+  "normimage": 160,
+  "K_N": 4,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 305,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 16,
+    "min_hits_per_class": 7,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 20,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 640,
+    "complete": true
+   },
+   {
+    "c": [
+     [
+      2,
+      "[-1, 1]~",
+      2
+     ],
+     [
+      2,
+      "[2, 1]~",
+      1
+     ]
+    ],
+    "Nc": 8,
+    "n_classes": 22,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 140,
+    "genus_pure_chars": 160,
+    "nongenus_mixed_chars": 300,
+    "nongenus_pure_char_orders": {
+     "2": 4,
+     "40": 64,
+     "20": 32,
+     "10": 16,
+     "8": 16,
+     "4": 8
+    },
+    "observable_classes": 474,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      2,
+      "[-1, 1]~",
+      1
+     ],
+     [
+      2,
+      "[2, 1]~",
+      2
+     ]
+    ],
+    "Nc": 8,
+    "n_classes": 21,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 160,
+    "genus_pure_chars": 160,
+    "nongenus_mixed_chars": 320,
+    "nongenus_pure_char_orders": {
+     "2": 8,
+     "40": 64,
+     "20": 32,
+     "10": 32,
+     "8": 16,
+     "4": 8
+    },
+    "observable_classes": 474,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      2,
+      "[-1, 1]~",
+      3
+     ],
+     [
+      2,
+      "[2, 1]~",
+      1
+     ]
+    ],
+    "Nc": 16,
+    "n_classes": 16,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 160,
+    "genus_pure_chars": 150,
+    "nongenus_mixed_chars": 160,
+    "nongenus_pure_char_orders": {
+     "2": 8,
+     "40": 64,
+     "20": 32,
+     "10": 32,
+     "8": 16,
+     "4": 8
+    },
+    "observable_classes": 291,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      2,
+      "[-1, 1]~",
+      1
+     ],
+     [
+      2,
+      "[2, 1]~",
+      3
+     ]
+    ],
+    "Nc": 16,
+    "n_classes": 16,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 160,
+    "genus_pure_chars": 150,
+    "nongenus_mixed_chars": 160,
+    "nongenus_pure_char_orders": {
+     "2": 8,
+     "40": 64,
+     "20": 32,
+     "10": 32,
+     "8": 16,
+     "4": 8
+    },
+    "observable_classes": 291,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      2,
+      "[-1, 1]~",
+      1
+     ],
+     [
+      2,
+      "[2, 1]~",
+      4
+     ]
+    ],
+    "Nc": 32,
+    "n_classes": 10,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 140,
+    "genus_pure_chars": 160,
+    "nongenus_mixed_chars": 300,
+    "nongenus_pure_char_orders": {
+     "2": 4,
+     "40": 64,
+     "20": 32,
+     "10": 16,
+     "8": 16,
+     "4": 8
+    },
+    "observable_classes": 166,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      2,
+      "[-1, 1]~",
+      4
+     ],
+     [
+      2,
+      "[2, 1]~",
+      1
+     ]
+    ],
+    "Nc": 32,
+    "n_classes": 8,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 140,
+    "genus_pure_chars": 150,
+    "nongenus_mixed_chars": 290,
+    "nongenus_pure_char_orders": {
+     "2": 4,
+     "40": 64,
+     "20": 32,
+     "10": 16,
+     "8": 16,
+     "4": 8
+    },
+    "observable_classes": 166,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      2,
+      "[-1, 1]~",
+      5
+     ],
+     [
+      2,
+      "[2, 1]~",
+      1
+     ]
+    ],
+    "Nc": 64,
+    "n_classes": 5,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 120,
+    "genus_pure_chars": 160,
+    "nongenus_mixed_chars": 160,
+    "nongenus_pure_char_orders": {
+     "40": 64,
+     "20": 32,
+     "8": 16,
+     "4": 8
+    },
+    "observable_classes": 91,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      2,
+      "[-1, 1]~",
+      1
+     ],
+     [
+      2,
+      "[2, 1]~",
+      5
+     ]
+    ],
+    "Nc": 64,
+    "n_classes": 5,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 120,
+    "genus_pure_chars": 160,
+    "nongenus_mixed_chars": 160,
+    "nongenus_pure_char_orders": {
+     "40": 64,
+     "20": 32,
+     "8": 16,
+     "4": 8
+    },
+    "observable_classes": 91,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      2,
+      "[-1, 1]~",
+      1
+     ],
+     [
+      2,
+      "[2, 1]~",
+      6
+     ]
+    ],
+    "Nc": 128,
+    "n_classes": 3,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 160,
+    "genus_pure_chars": 160,
+    "nongenus_mixed_chars": 320,
+    "nongenus_pure_char_orders": {
+     "2": 8,
+     "40": 64,
+     "20": 32,
+     "10": 32,
+     "8": 16,
+     "4": 8
+    },
+    "observable_classes": 45,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      2,
+      "[-1, 1]~",
+      6
+     ],
+     [
+      2,
+      "[2, 1]~",
+      1
+     ]
+    ],
+    "Nc": 128,
+    "n_classes": 2,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 120,
+    "genus_pure_chars": 120,
+    "nongenus_mixed_chars": 240,
+    "nongenus_pure_char_orders": {
+     "40": 64,
+     "20": 32,
+     "8": 16,
+     "4": 8
+    },
+    "observable_classes": 45,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      2,
+      "[-1, 1]~",
+      1
+     ],
+     [
+      2,
+      "[2, 1]~",
+      8
+     ]
+    ],
+    "Nc": 512,
+    "n_classes": 1,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 160,
+    "genus_pure_chars": 160,
+    "nongenus_mixed_chars": 320,
+    "nongenus_pure_char_orders": {
+     "2": 8,
+     "40": 64,
+     "20": 32,
+     "10": 32,
+     "8": 16,
+     "4": 8
+    },
+    "observable_classes": 13,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      2,
+      "[-1, 1]~",
+      12
+     ],
+     [
+      2,
+      "[2, 1]~",
+      1
+     ]
+    ],
+    "Nc": 8192,
+    "n_classes": 1,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 160,
+    "genus_pure_chars": 160,
+    "nongenus_mixed_chars": 320,
+    "nongenus_pure_char_orders": {
+     "2": 8,
+     "40": 64,
+     "20": 32,
+     "10": 32,
+     "8": 16,
+     "4": 8
+    },
+    "observable_classes": 1,
+    "complete": false
+   }
+  ],
+  "uL_verdict": "Eis on complete c-parts; 12 incomplete",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 25,
+  "D0": 23,
+  "c": 5,
+  "M": 460,
+  "cyc": [
+   264,
+   2,
+   2,
+   2
+  ],
+  "G": 2112,
+  "normimage": 88,
+  "K_N": 24,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 35,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 8,
+    "min_hits_per_class": 3,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 88,
+    "genus_pure_chars": 44,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "66": 60,
+     "33": 20,
+     "6": 6,
+     "3": 2
+    },
+    "observable_classes": 2102,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      5,
+      "[5, 0]~",
+      1
+     ]
+    ],
+    "Nc": 25,
+    "n_classes": 6,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 792,
+    "genus_pure_chars": 88,
+    "nongenus_mixed_chars": 792,
+    "nongenus_pure_char_orders": {
+     "264": 320,
+     "132": 160,
+     "88": 160,
+     "66": 40,
+     "44": 40,
+     "24": 32,
+     "12": 16,
+     "8": 16,
+     "6": 4,
+     "4": 4
+    },
+    "observable_classes": 278,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      5,
+      "[5, 0]~",
+      2
+     ]
+    ],
+    "Nc": 625,
+    "n_classes": 1,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 968,
+    "genus_pure_chars": 88,
+    "nongenus_mixed_chars": 704,
+    "nongenus_pure_char_orders": {
+     "2": 4,
+     "264": 320,
+     "132": 160,
+     "88": 160,
+     "66": 140,
+     "44": 40,
+     "33": 20,
+     "24": 32,
+     "22": 40,
+     "12": 16,
+     "8": 16,
+     "6": 14,
+     "4": 4,
+     "3": 2
+    },
+    "observable_classes": 12,
+    "complete": false
+   }
+  ],
+  "uL_verdict": "Eis on complete c-parts; 3 incomplete",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 41,
+  "D0": 1599,
+  "c": 1,
+  "M": 156,
+  "cyc": [
+   24,
+   12,
+   2,
+   2
+  ],
+  "G": 1152,
+  "normimage": 48,
+  "K_N": 24,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 18,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 2,
+    "min_hits_per_class": 8,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 240,
+    "genus_pure_chars": 48,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "24": 128,
+     "12": 48,
+     "8": 16,
+     "6": 42,
+     "3": 6
+    },
+    "observable_classes": 1152,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "CUSP",
+  "uL_nongenus_pure_chars_complete": 240
+ }
+]
+===== END FILE SUPERSEDED_buggy_KN_genus_test_uL_rayclass_run1.json =====
+===== BEGIN FILE classgroup.txt bytes=536 sha256=922f59a9da9cc113dd4962581b2c27ee8df93fcc8cb384e858b2c9a96596a786 =====
+s=5 D=60 h+=4 genera(|Cl+[2]|)=4 |Cl+^2|=1
+s=6 D=24 h+=2 genera(|Cl+[2]|)=2 |Cl+^2|=1
+s=7 D=140 h+=4 genera(|Cl+[2]|)=4 |Cl+^2|=1
+s=8 D=48 h+=2 genera(|Cl+[2]|)=2 |Cl+^2|=1
+s=9 D=252 h+=4 genera(|Cl+[2]|)=4 |Cl+^2|=1
+s=10 D=80 h+=2 genera(|Cl+[2]|)=2 |Cl+^2|=1
+s=11 D=396 h+=8 genera(|Cl+[2]|)=4 |Cl+^2|=2
+s=12 D=120 h+=4 genera(|Cl+[2]|)=4 |Cl+^2|=1
+s=13 D=572 h+=4 genera(|Cl+[2]|)=4 |Cl+^2|=1
+s=19 D=1292 h+=8 genera(|Cl+[2]|)=4 |Cl+^2|=2
+s=25 D=2300 h+=12 genera(|Cl+[2]|)=4 |Cl+^2|=3
+s=41 D=6396 h+=24 genera(|Cl+[2]|)=8 |Cl+^2|=3
+
+===== END FILE classgroup.txt =====
+===== BEGIN FILE classgroup_extra.txt bytes=540 sha256=ebf44ab3ff7f055478a0eb589c14eed3c30c90c7047ddbafa370ebe342e44664 =====
+s=5 D=60 h+=4 genera(|Cl+[2]|)=4 |Cl+^2|=1
+s=6 D=24 h+=2 genera(|Cl+[2]|)=2 |Cl+^2|=1
+s=14 D=168 h+=4 genera(|Cl+[2]|)=4 |Cl+^2|=1
+s=15 D=780 h+=8 genera(|Cl+[2]|)=8 |Cl+^2|=1
+s=16 D=224 h+=4 genera(|Cl+[2]|)=4 |Cl+^2|=1
+s=17 D=1020 h+=8 genera(|Cl+[2]|)=8 |Cl+^2|=1
+s=18 D=288 h+=4 genera(|Cl+[2]|)=4 |Cl+^2|=1
+s=20 D=360 h+=4 genera(|Cl+[2]|)=4 |Cl+^2|=1
+s=21 D=1596 h+=16 genera(|Cl+[2]|)=8 |Cl+^2|=2
+s=22 D=440 h+=4 genera(|Cl+[2]|)=4 |Cl+^2|=1
+s=23 D=1932 h+=8 genera(|Cl+[2]|)=8 |Cl+^2|=1
+s=24 D=528 h+=4 genera(|Cl+[2]|)=4 |Cl+^2|=1
+
+===== END FILE classgroup_extra.txt =====
+===== BEGIN FILE funcspan_14_15_16_17_18.json bytes=2236 sha256=05456ae082ed682fe4ad9580ac146ec455a8e98c77bb6e8a8e1e3b1ef2eafe5f =====
+[
+ {
+  "s": 14,
+  "N": 168,
+  "K": 2,
+  "D": 168,
+  "Qmax": 25,
+  "dimV": 56,
+  "dimW": 48,
+  "cusp_lo": 8,
+  "cusp_hi": 56,
+  "cusp_exact_part": 0,
+  "n_blocks": 48,
+  "W_blocks": 48,
+  "mixed_blocks": 48,
+  "W_in_V": true,
+  "uL_block_has_W": true,
+  "uL_block_dimV": 2,
+  "uL_block_dimW": 1,
+  "relations": {
+   "S2_P": 1.4484762427032945e-15,
+   "ST3_on_FixP": 1.8186766048803002e-15
+  },
+  "time": 1.2,
+  "stable_under_Qmax_x1.6": true
+ },
+ {
+  "s": 15,
+  "N": 780,
+  "K": 2,
+  "D": 390,
+  "Qmax": 25,
+  "dimV": 210,
+  "dimW": 126,
+  "cusp_lo": 84,
+  "cusp_hi": 210,
+  "cusp_exact_part": 0,
+  "n_blocks": 126,
+  "W_blocks": 126,
+  "mixed_blocks": 126,
+  "W_in_V": true,
+  "uL_block_has_W": true,
+  "uL_block_dimV": 1,
+  "uL_block_dimW": 1,
+  "relations": {
+   "S2_P": 1.0934428697813141e-15,
+   "ST3_on_FixP": 1.565150113405326e-15
+  },
+  "time": 48.1,
+  "stable_under_Qmax_x1.6": true
+ },
+ {
+  "s": 16,
+  "N": 224,
+  "K": 2,
+  "D": 224,
+  "Qmax": 25,
+  "dimV": 72,
+  "dimW": 48,
+  "cusp_lo": 24,
+  "cusp_hi": 72,
+  "cusp_exact_part": 0,
+  "n_blocks": 40,
+  "W_blocks": 40,
+  "mixed_blocks": 40,
+  "W_in_V": true,
+  "uL_block_has_W": true,
+  "uL_block_dimV": 2,
+  "uL_block_dimW": 2,
+  "relations": {
+   "S2_P": 2.2628801220403936e-15,
+   "ST3_on_FixP": 1.7736153336876666e-15
+  },
+  "time": 2.1,
+  "stable_under_Qmax_x1.6": true
+ },
+ {
+  "s": 17,
+  "N": 1020,
+  "K": 2,
+  "D": 510,
+  "Qmax": 25,
+  "dimV": 272,
+  "dimW": 162,
+  "cusp_lo": 110,
+  "cusp_hi": 272,
+  "cusp_exact_part": 0,
+  "n_blocks": 162,
+  "W_blocks": 162,
+  "mixed_blocks": 162,
+  "W_in_V": true,
+  "uL_block_has_W": true,
+  "uL_block_dimV": 2,
+  "uL_block_dimW": 1,
+  "relations": {
+   "S2_P": 1.7952734277200893e-15,
+   "ST3_on_FixP": 1.843060466825302e-15
+  },
+  "time": 175.8,
+  "stable_under_Qmax_x1.6": true
+ },
+ {
+  "s": 18,
+  "N": 288,
+  "K": 2,
+  "D": 288,
+  "Qmax": 25,
+  "dimV": 84,
+  "dimW": 60,
+  "cusp_lo": 24,
+  "cusp_hi": 84,
+  "cusp_exact_part": 0,
+  "n_blocks": 40,
+  "W_blocks": 40,
+  "mixed_blocks": 40,
+  "W_in_V": true,
+  "uL_block_has_W": true,
+  "uL_block_dimV": 3,
+  "uL_block_dimW": 2,
+  "relations": {
+   "S2_P": 2.0021503266508216e-15,
+   "ST3_on_FixP": 1.5380258301451313e-15
+  },
+  "time": 1.9,
+  "stable_under_Qmax_x1.6": true
+ }
+]
+===== END FILE funcspan_14_15_16_17_18.json =====
+===== BEGIN FILE funcspan_14_18.txt bytes=1959 sha256=90f00b5da7404c280a995c58580f5b19521084ddccf31802f2a99cd60a6795bf =====
+{"s": 14, "N": 168, "K": 2, "D": 168, "Qmax": 25, "dimV": 56, "dimW": 48, "cusp_lo": 8, "cusp_hi": 56, "cusp_exact_part": 0, "n_blocks": 48, "W_blocks": 48, "mixed_blocks": 48, "W_in_V": true, "uL_block_has_W": true, "uL_block_dimV": 2, "uL_block_dimW": 1, "relations": {"S2_P": 1.4484762427032945e-15, "ST3_on_FixP": 1.8186766048803002e-15}, "time": 1.2, "stable_under_Qmax_x1.6": true}
+{"s": 15, "N": 780, "K": 2, "D": 390, "Qmax": 25, "dimV": 210, "dimW": 126, "cusp_lo": 84, "cusp_hi": 210, "cusp_exact_part": 0, "n_blocks": 126, "W_blocks": 126, "mixed_blocks": 126, "W_in_V": true, "uL_block_has_W": true, "uL_block_dimV": 1, "uL_block_dimW": 1, "relations": {"S2_P": 1.0934428697813141e-15, "ST3_on_FixP": 1.565150113405326e-15}, "time": 48.1, "stable_under_Qmax_x1.6": true}
+{"s": 16, "N": 224, "K": 2, "D": 224, "Qmax": 25, "dimV": 72, "dimW": 48, "cusp_lo": 24, "cusp_hi": 72, "cusp_exact_part": 0, "n_blocks": 40, "W_blocks": 40, "mixed_blocks": 40, "W_in_V": true, "uL_block_has_W": true, "uL_block_dimV": 2, "uL_block_dimW": 2, "relations": {"S2_P": 2.2628801220403936e-15, "ST3_on_FixP": 1.7736153336876666e-15}, "time": 2.1, "stable_under_Qmax_x1.6": true}
+{"s": 17, "N": 1020, "K": 2, "D": 510, "Qmax": 25, "dimV": 272, "dimW": 162, "cusp_lo": 110, "cusp_hi": 272, "cusp_exact_part": 0, "n_blocks": 162, "W_blocks": 162, "mixed_blocks": 162, "W_in_V": true, "uL_block_has_W": true, "uL_block_dimV": 2, "uL_block_dimW": 1, "relations": {"S2_P": 1.7952734277200893e-15, "ST3_on_FixP": 1.843060466825302e-15}, "time": 175.8, "stable_under_Qmax_x1.6": true}
+{"s": 18, "N": 288, "K": 2, "D": 288, "Qmax": 25, "dimV": 84, "dimW": 60, "cusp_lo": 24, "cusp_hi": 84, "cusp_exact_part": 0, "n_blocks": 40, "W_blocks": 40, "mixed_blocks": 40, "W_in_V": true, "uL_block_has_W": true, "uL_block_dimV": 3, "uL_block_dimW": 2, "relations": {"S2_P": 2.0021503266508216e-15, "ST3_on_FixP": 1.5380258301451313e-15}, "time": 1.9, "stable_under_Qmax_x1.6": true}
+
+===== END FILE funcspan_14_18.txt =====
+===== BEGIN FILE funcspan_19_25.json bytes=910 sha256=b6f28afdd488a813a308acade9c13506fc88e068d146a7af61f515aa0f34d660 =====
+[
+ {
+  "s": 19,
+  "N": 1292,
+  "K": 2,
+  "D": 646,
+  "Qmax": 25.0,
+  "dimV": 342,
+  "dimW": 270,
+  "cusp_lo": 72,
+  "cusp_hi": 342,
+  "cusp_exact_part": 0,
+  "n_blocks": 270,
+  "W_blocks": 270,
+  "mixed_blocks": 270,
+  "W_in_V": true,
+  "uL_block_has_W": true,
+  "uL_block_dimV": 1,
+  "uL_block_dimW": 1,
+  "relations": {
+   "S2_P": 1.4655364458042816e-15,
+   "ST3_on_FixP": 1.952700898142422e-15
+  },
+  "time": 7.0,
+  "stable_under_Qmax_x1.6": true
+ },
+ {
+  "s": 25,
+  "N": 2300,
+  "K": 2,
+  "D": 1150,
+  "Qmax": 25.0,
+  "dimV": 600,
+  "dimW": 468,
+  "cusp_lo": 132,
+  "cusp_hi": 600,
+  "cusp_exact_part": 0,
+  "n_blocks": 396,
+  "W_blocks": 396,
+  "mixed_blocks": 396,
+  "W_in_V": true,
+  "uL_block_has_W": true,
+  "uL_block_dimV": 5,
+  "uL_block_dimW": 3,
+  "relations": {
+   "S2_P": 1.5905664321074658e-15,
+   "ST3_on_FixP": 1.9620840324990697e-15
+  },
+  "time": 26.6,
+  "stable_under_Qmax_x1.6": true
+ }
+]
+===== END FILE funcspan_19_25.json =====
+===== BEGIN FILE funcspan_19_25.txt bytes=798 sha256=a770252fc84ab1f9bbca5c38c2be01b3bb5898f017fddace3cb2d2f351331e77 =====
+{"s": 19, "N": 1292, "K": 2, "D": 646, "Qmax": 25.0, "dimV": 342, "dimW": 270, "cusp_lo": 72, "cusp_hi": 342, "cusp_exact_part": 0, "n_blocks": 270, "W_blocks": 270, "mixed_blocks": 270, "W_in_V": true, "uL_block_has_W": true, "uL_block_dimV": 1, "uL_block_dimW": 1, "relations": {"S2_P": 1.4655364458042816e-15, "ST3_on_FixP": 1.952700898142422e-15}, "time": 7.0, "stable_under_Qmax_x1.6": true}
+{"s": 25, "N": 2300, "K": 2, "D": 1150, "Qmax": 25.0, "dimV": 600, "dimW": 468, "cusp_lo": 132, "cusp_hi": 600, "cusp_exact_part": 0, "n_blocks": 396, "W_blocks": 396, "mixed_blocks": 396, "W_in_V": true, "uL_block_has_W": true, "uL_block_dimV": 5, "uL_block_dimW": 3, "relations": {"S2_P": 1.5905664321074658e-15, "ST3_on_FixP": 1.9620840324990697e-15}, "time": 26.6, "stable_under_Qmax_x1.6": true}
+
+===== END FILE funcspan_19_25.txt =====
+===== BEGIN FILE funcspan_20_21_22_23_24.json bytes=2250 sha256=4341932d88131bd0320946e26913e22d07881ef4258bf2d82aca266a5729ba17 =====
+[
+ {
+  "s": 20,
+  "N": 360,
+  "K": 2,
+  "D": 360,
+  "Qmax": 25,
+  "dimV": 110,
+  "dimW": 90,
+  "cusp_lo": 20,
+  "cusp_hi": 110,
+  "cusp_exact_part": 0,
+  "n_blocks": 72,
+  "W_blocks": 72,
+  "mixed_blocks": 72,
+  "W_in_V": true,
+  "uL_block_has_W": true,
+  "uL_block_dimV": 1,
+  "uL_block_dimW": 1,
+  "relations": {
+   "S2_P": 2.0021503266508216e-15,
+   "ST3_on_FixP": 2.255365709003435e-15
+  },
+  "time": 12.6,
+  "stable_under_Qmax_x1.6": true
+ },
+ {
+  "s": 21,
+  "N": 1596,
+  "K": 2,
+  "D": 798,
+  "Qmax": 25,
+  "dimV": 420,
+  "dimW": 240,
+  "cusp_lo": 180,
+  "cusp_hi": 420,
+  "cusp_exact_part": 0,
+  "n_blocks": 240,
+  "W_blocks": 240,
+  "mixed_blocks": 240,
+  "W_in_V": true,
+  "uL_block_has_W": true,
+  "uL_block_dimV": 1,
+  "uL_block_dimW": 1,
+  "relations": {
+   "S2_P": 9.420554752102651e-16,
+   "ST3_on_FixP": 2.1290344098064185e-15
+  },
+  "time": 201.5,
+  "stable_under_Qmax_x1.6": true
+ },
+ {
+  "s": 22,
+  "N": 440,
+  "K": 2,
+  "D": 440,
+  "Qmax": 25,
+  "dimV": 132,
+  "dimW": 108,
+  "cusp_lo": 24,
+  "cusp_hi": 132,
+  "cusp_exact_part": 0,
+  "n_blocks": 108,
+  "W_blocks": 108,
+  "mixed_blocks": 108,
+  "W_in_V": true,
+  "uL_block_has_W": true,
+  "uL_block_dimV": 2,
+  "uL_block_dimW": 1,
+  "relations": {
+   "S2_P": 2.667348073427187e-15,
+   "ST3_on_FixP": 1.9287035149883557e-15
+  },
+  "time": 2.6,
+  "stable_under_Qmax_x1.6": true
+ },
+ {
+  "s": 23,
+  "N": 1932,
+  "K": 2,
+  "D": 966,
+  "Qmax": 25,
+  "dimV": 506,
+  "dimW": 288,
+  "cusp_lo": 218,
+  "cusp_hi": 506,
+  "cusp_exact_part": 0,
+  "n_blocks": 288,
+  "W_blocks": 288,
+  "mixed_blocks": 288,
+  "W_in_V": true,
+  "uL_block_has_W": true,
+  "uL_block_dimV": 2,
+  "uL_block_dimW": 1,
+  "relations": {
+   "S2_P": 1.2139693544093743e-15,
+   "ST3_on_FixP": 1.9319720333713585e-15
+  },
+  "time": 14.7,
+  "stable_under_Qmax_x1.6": true
+ },
+ {
+  "s": 24,
+  "N": 528,
+  "K": 2,
+  "D": 528,
+  "Qmax": 25,
+  "dimV": 156,
+  "dimW": 120,
+  "cusp_lo": 36,
+  "cusp_hi": 156,
+  "cusp_exact_part": 0,
+  "n_blocks": 84,
+  "W_blocks": 84,
+  "mixed_blocks": 84,
+  "W_in_V": true,
+  "uL_block_has_W": true,
+  "uL_block_dimV": 3,
+  "uL_block_dimW": 3,
+  "relations": {
+   "S2_P": 1.5759425740954878e-15,
+   "ST3_on_FixP": 1.6311533811091559e-15
+  },
+  "time": 3.7,
+  "stable_under_Qmax_x1.6": true
+ }
+]
+===== END FILE funcspan_20_21_22_23_24.json =====
+===== BEGIN FILE funcspan_20_24.txt bytes=1973 sha256=53d825327003e976c5032d0cd2570c04eae6f84ad9e16d858074b3b4722149c9 =====
+{"s": 20, "N": 360, "K": 2, "D": 360, "Qmax": 25, "dimV": 110, "dimW": 90, "cusp_lo": 20, "cusp_hi": 110, "cusp_exact_part": 0, "n_blocks": 72, "W_blocks": 72, "mixed_blocks": 72, "W_in_V": true, "uL_block_has_W": true, "uL_block_dimV": 1, "uL_block_dimW": 1, "relations": {"S2_P": 2.0021503266508216e-15, "ST3_on_FixP": 2.255365709003435e-15}, "time": 12.6, "stable_under_Qmax_x1.6": true}
+{"s": 21, "N": 1596, "K": 2, "D": 798, "Qmax": 25, "dimV": 420, "dimW": 240, "cusp_lo": 180, "cusp_hi": 420, "cusp_exact_part": 0, "n_blocks": 240, "W_blocks": 240, "mixed_blocks": 240, "W_in_V": true, "uL_block_has_W": true, "uL_block_dimV": 1, "uL_block_dimW": 1, "relations": {"S2_P": 9.420554752102651e-16, "ST3_on_FixP": 2.1290344098064185e-15}, "time": 201.5, "stable_under_Qmax_x1.6": true}
+{"s": 22, "N": 440, "K": 2, "D": 440, "Qmax": 25, "dimV": 132, "dimW": 108, "cusp_lo": 24, "cusp_hi": 132, "cusp_exact_part": 0, "n_blocks": 108, "W_blocks": 108, "mixed_blocks": 108, "W_in_V": true, "uL_block_has_W": true, "uL_block_dimV": 2, "uL_block_dimW": 1, "relations": {"S2_P": 2.667348073427187e-15, "ST3_on_FixP": 1.9287035149883557e-15}, "time": 2.6, "stable_under_Qmax_x1.6": true}
+{"s": 23, "N": 1932, "K": 2, "D": 966, "Qmax": 25, "dimV": 506, "dimW": 288, "cusp_lo": 218, "cusp_hi": 506, "cusp_exact_part": 0, "n_blocks": 288, "W_blocks": 288, "mixed_blocks": 288, "W_in_V": true, "uL_block_has_W": true, "uL_block_dimV": 2, "uL_block_dimW": 1, "relations": {"S2_P": 1.2139693544093743e-15, "ST3_on_FixP": 1.9319720333713585e-15}, "time": 14.7, "stable_under_Qmax_x1.6": true}
+{"s": 24, "N": 528, "K": 2, "D": 528, "Qmax": 25, "dimV": 156, "dimW": 120, "cusp_lo": 36, "cusp_hi": 156, "cusp_exact_part": 0, "n_blocks": 84, "W_blocks": 84, "mixed_blocks": 84, "W_in_V": true, "uL_block_has_W": true, "uL_block_dimV": 3, "uL_block_dimW": 3, "relations": {"S2_P": 1.5759425740954878e-15, "ST3_on_FixP": 1.6311533811091559e-15}, "time": 3.7, "stable_under_Qmax_x1.6": true}
+
+===== END FILE funcspan_20_24.txt =====
+===== BEGIN FILE funcspan_41.json bytes=459 sha256=a9fdd3229641ceb5b7e3a9480454999b8c0e6a2e1ec758282622c2af70d45023 =====
+[
+ {
+  "s": 41,
+  "N": 6396,
+  "K": 2,
+  "D": 3198,
+  "Qmax": 25.0,
+  "dimV": 1640,
+  "dimW": 882,
+  "cusp_lo": 758,
+  "cusp_hi": 1640,
+  "cusp_exact_part": 0,
+  "n_blocks": 882,
+  "W_blocks": 882,
+  "mixed_blocks": 882,
+  "W_in_V": true,
+  "uL_block_has_W": true,
+  "uL_block_dimV": 2,
+  "uL_block_dimW": 1,
+  "relations": {
+   "S2_P": 1.336885555457667e-15,
+   "ST3_on_FixP": 2.272060196449128e-15
+  },
+  "time": 268.9,
+  "stable_under_Qmax_x1.6": true
+ }
+]
+===== END FILE funcspan_41.json =====
+===== BEGIN FILE funcspan_41.txt bytes=402 sha256=9f5c4cc242422016c663bc393e1e85977d81decb8026316d2d42031421757942 =====
+{"s": 41, "N": 6396, "K": 2, "D": 3198, "Qmax": 25.0, "dimV": 1640, "dimW": 882, "cusp_lo": 758, "cusp_hi": 1640, "cusp_exact_part": 0, "n_blocks": 882, "W_blocks": 882, "mixed_blocks": 882, "W_in_V": true, "uL_block_has_W": true, "uL_block_dimV": 2, "uL_block_dimW": 1, "relations": {"S2_P": 1.336885555457667e-15, "ST3_on_FixP": 2.272060196449128e-15}, "time": 268.9, "stable_under_Qmax_x1.6": true}
+
+===== END FILE funcspan_41.txt =====
+===== BEGIN FILE funcspan_5_6.json bytes=880 sha256=56a579e96a7e895b4c8788931d45da01737431b219d7f3457631c166b86ccd24 =====
+[
+ {
+  "s": 5,
+  "N": 60,
+  "K": 2,
+  "D": 30,
+  "Qmax": 25,
+  "dimV": 20,
+  "dimW": 18,
+  "cusp_lo": 2,
+  "cusp_hi": 20,
+  "cusp_exact_part": 0,
+  "n_blocks": 18,
+  "W_blocks": 18,
+  "mixed_blocks": 18,
+  "W_in_V": true,
+  "uL_block_has_W": true,
+  "uL_block_dimV": 1,
+  "uL_block_dimW": 1,
+  "relations": {
+   "S2_P": 6.955527313080394e-16,
+   "ST3_on_FixP": 1.6529325671371805e-15
+  },
+  "time": 0.0,
+  "stable_under_Qmax_x1.6": true
+ },
+ {
+  "s": 6,
+  "N": 24,
+  "K": 2,
+  "D": 24,
+  "Qmax": 25,
+  "dimV": 12,
+  "dimW": 12,
+  "cusp_lo": 0,
+  "cusp_hi": 12,
+  "cusp_exact_part": 0,
+  "n_blocks": 12,
+  "W_blocks": 12,
+  "mixed_blocks": 12,
+  "W_in_V": true,
+  "uL_block_has_W": true,
+  "uL_block_dimV": 1,
+  "uL_block_dimW": 1,
+  "relations": {
+   "S2_P": 6.988214086949734e-16,
+   "ST3_on_FixP": 1.4620191070900006e-15
+  },
+  "time": 0.0,
+  "stable_under_Qmax_x1.6": true
+ }
+]
+===== END FILE funcspan_5_6.json =====
+===== BEGIN FILE funcspan_5_6.txt bytes=768 sha256=5d4a64411c66d7797e1582233fc77344fea372af864b687bf067e03fd1768027 =====
+{"s": 5, "N": 60, "K": 2, "D": 30, "Qmax": 25, "dimV": 20, "dimW": 18, "cusp_lo": 2, "cusp_hi": 20, "cusp_exact_part": 0, "n_blocks": 18, "W_blocks": 18, "mixed_blocks": 18, "W_in_V": true, "uL_block_has_W": true, "uL_block_dimV": 1, "uL_block_dimW": 1, "relations": {"S2_P": 6.955527313080394e-16, "ST3_on_FixP": 1.6529325671371805e-15}, "time": 0.0, "stable_under_Qmax_x1.6": true}
+{"s": 6, "N": 24, "K": 2, "D": 24, "Qmax": 25, "dimV": 12, "dimW": 12, "cusp_lo": 0, "cusp_hi": 12, "cusp_exact_part": 0, "n_blocks": 12, "W_blocks": 12, "mixed_blocks": 12, "W_in_V": true, "uL_block_has_W": true, "uL_block_dimV": 1, "uL_block_dimW": 1, "relations": {"S2_P": 6.988214086949734e-16, "ST3_on_FixP": 1.4620191070900006e-15}, "time": 0.0, "stable_under_Qmax_x1.6": true}
+
+===== END FILE funcspan_5_6.txt =====
+===== BEGIN FILE funcspan_7_8_9_10_11_12_13.json bytes=3113 sha256=e12ea39b564b8ffd542692b17a24517f7c5d3ff20d0d10fc64b7cef1560b42a8 =====
+[
+ {
+  "s": 7,
+  "N": 140,
+  "K": 2,
+  "D": 70,
+  "Qmax": 25.0,
+  "dimV": 42,
+  "dimW": 36,
+  "cusp_lo": 6,
+  "cusp_hi": 42,
+  "cusp_exact_part": 0,
+  "n_blocks": 36,
+  "W_blocks": 36,
+  "mixed_blocks": 36,
+  "W_in_V": true,
+  "uL_block_has_W": true,
+  "uL_block_dimV": 1,
+  "uL_block_dimW": 1,
+  "relations": {
+   "S2_P": 5.978733960281817e-16,
+   "ST3_on_FixP": 1.4227239886005462e-15
+  },
+  "time": 0.1,
+  "stable_under_Qmax_x1.6": true
+ },
+ {
+  "s": 8,
+  "N": 48,
+  "K": 2,
+  "D": 48,
+  "Qmax": 25.0,
+  "dimV": 18,
+  "dimW": 18,
+  "cusp_lo": 0,
+  "cusp_hi": 18,
+  "cusp_exact_part": 0,
+  "n_blocks": 14,
+  "W_blocks": 14,
+  "mixed_blocks": 14,
+  "W_in_V": true,
+  "uL_block_has_W": true,
+  "uL_block_dimV": 2,
+  "uL_block_dimW": 2,
+  "relations": {
+   "S2_P": 6.772974656777018e-16,
+   "ST3_on_FixP": 1.6395809968400275e-15
+  },
+  "time": 0.1,
+  "stable_under_Qmax_x1.6": true
+ },
+ {
+  "s": 9,
+  "N": 252,
+  "K": 2,
+  "D": 126,
+  "Qmax": 25.0,
+  "dimV": 72,
+  "dimW": 60,
+  "cusp_lo": 12,
+  "cusp_hi": 72,
+  "cusp_exact_part": 0,
+  "n_blocks": 48,
+  "W_blocks": 48,
+  "mixed_blocks": 48,
+  "W_in_V": true,
+  "uL_block_has_W": true,
+  "uL_block_dimV": 3,
+  "uL_block_dimW": 2,
+  "relations": {
+   "S2_P": 1.9001715824297144e-15,
+   "ST3_on_FixP": 2.094931398774031e-15
+  },
+  "time": 0.3,
+  "stable_under_Qmax_x1.6": true
+ },
+ {
+  "s": 10,
+  "N": 80,
+  "K": 2,
+  "D": 80,
+  "Qmax": 25.0,
+  "dimV": 30,
+  "dimW": 30,
+  "cusp_lo": 0,
+  "cusp_hi": 30,
+  "cusp_exact_part": 0,
+  "n_blocks": 21,
+  "W_blocks": 21,
+  "mixed_blocks": 21,
+  "W_in_V": true,
+  "uL_block_has_W": true,
+  "uL_block_dimV": 1,
+  "uL_block_dimW": 1,
+  "relations": {
+   "S2_P": 1.5591292826657985e-15,
+   "ST3_on_FixP": 1.81453170450395e-15
+  },
+  "time": 0.1,
+  "stable_under_Qmax_x1.6": true
+ },
+ {
+  "s": 11,
+  "N": 396,
+  "K": 2,
+  "D": 198,
+  "Qmax": 25.0,
+  "dimV": 110,
+  "dimW": 90,
+  "cusp_lo": 20,
+  "cusp_hi": 110,
+  "cusp_exact_part": 0,
+  "n_blocks": 72,
+  "W_blocks": 72,
+  "mixed_blocks": 72,
+  "W_in_V": true,
+  "uL_block_has_W": true,
+  "uL_block_dimV": 1,
+  "uL_block_dimW": 1,
+  "relations": {
+   "S2_P": 9.550499576785472e-16,
+   "ST3_on_FixP": 1.9625394057268894e-15
+  },
+  "time": 0.7,
+  "stable_under_Qmax_x1.6": true
+ },
+ {
+  "s": 12,
+  "N": 120,
+  "K": 2,
+  "D": 120,
+  "Qmax": 25.0,
+  "dimV": 42,
+  "dimW": 36,
+  "cusp_lo": 6,
+  "cusp_hi": 42,
+  "cusp_exact_part": 0,
+  "n_blocks": 36,
+  "W_blocks": 36,
+  "mixed_blocks": 36,
+  "W_in_V": true,
+  "uL_block_has_W": true,
+  "uL_block_dimV": 1,
+  "uL_block_dimW": 1,
+  "relations": {
+   "S2_P": 1.6930901411803166e-15,
+   "ST3_on_FixP": 2.2572530916340106e-15
+  },
+  "time": 0.2,
+  "stable_under_Qmax_x1.6": true
+ },
+ {
+  "s": 13,
+  "N": 572,
+  "K": 2,
+  "D": 286,
+  "Qmax": 25.0,
+  "dimV": 156,
+  "dimW": 126,
+  "cusp_lo": 30,
+  "cusp_hi": 156,
+  "cusp_exact_part": 0,
+  "n_blocks": 126,
+  "W_blocks": 126,
+  "mixed_blocks": 126,
+  "W_in_V": true,
+  "uL_block_has_W": true,
+  "uL_block_dimV": 1,
+  "uL_block_dimW": 1,
+  "relations": {
+   "S2_P": 1.6910413304902302e-15,
+   "ST3_on_FixP": 1.915993512186245e-15
+  },
+  "time": 1.4,
+  "stable_under_Qmax_x1.6": true
+ }
+]
+===== END FILE funcspan_7_8_9_10_11_12_13.json =====
+===== BEGIN FILE funcspan_small.txt bytes=2726 sha256=c361c5ede2c3e8136d989efbda63aa8cbc6541a38123d2e9c5910be7b03b0695 =====
+{"s": 7, "N": 140, "K": 2, "D": 70, "Qmax": 25.0, "dimV": 42, "dimW": 36, "cusp_lo": 6, "cusp_hi": 42, "cusp_exact_part": 0, "n_blocks": 36, "W_blocks": 36, "mixed_blocks": 36, "W_in_V": true, "uL_block_has_W": true, "uL_block_dimV": 1, "uL_block_dimW": 1, "relations": {"S2_P": 5.978733960281817e-16, "ST3_on_FixP": 1.4227239886005462e-15}, "time": 0.1, "stable_under_Qmax_x1.6": true}
+{"s": 8, "N": 48, "K": 2, "D": 48, "Qmax": 25.0, "dimV": 18, "dimW": 18, "cusp_lo": 0, "cusp_hi": 18, "cusp_exact_part": 0, "n_blocks": 14, "W_blocks": 14, "mixed_blocks": 14, "W_in_V": true, "uL_block_has_W": true, "uL_block_dimV": 2, "uL_block_dimW": 2, "relations": {"S2_P": 6.772974656777018e-16, "ST3_on_FixP": 1.6395809968400275e-15}, "time": 0.1, "stable_under_Qmax_x1.6": true}
+{"s": 9, "N": 252, "K": 2, "D": 126, "Qmax": 25.0, "dimV": 72, "dimW": 60, "cusp_lo": 12, "cusp_hi": 72, "cusp_exact_part": 0, "n_blocks": 48, "W_blocks": 48, "mixed_blocks": 48, "W_in_V": true, "uL_block_has_W": true, "uL_block_dimV": 3, "uL_block_dimW": 2, "relations": {"S2_P": 1.9001715824297144e-15, "ST3_on_FixP": 2.094931398774031e-15}, "time": 0.3, "stable_under_Qmax_x1.6": true}
+{"s": 10, "N": 80, "K": 2, "D": 80, "Qmax": 25.0, "dimV": 30, "dimW": 30, "cusp_lo": 0, "cusp_hi": 30, "cusp_exact_part": 0, "n_blocks": 21, "W_blocks": 21, "mixed_blocks": 21, "W_in_V": true, "uL_block_has_W": true, "uL_block_dimV": 1, "uL_block_dimW": 1, "relations": {"S2_P": 1.5591292826657985e-15, "ST3_on_FixP": 1.81453170450395e-15}, "time": 0.1, "stable_under_Qmax_x1.6": true}
+{"s": 11, "N": 396, "K": 2, "D": 198, "Qmax": 25.0, "dimV": 110, "dimW": 90, "cusp_lo": 20, "cusp_hi": 110, "cusp_exact_part": 0, "n_blocks": 72, "W_blocks": 72, "mixed_blocks": 72, "W_in_V": true, "uL_block_has_W": true, "uL_block_dimV": 1, "uL_block_dimW": 1, "relations": {"S2_P": 9.550499576785472e-16, "ST3_on_FixP": 1.9625394057268894e-15}, "time": 0.7, "stable_under_Qmax_x1.6": true}
+{"s": 12, "N": 120, "K": 2, "D": 120, "Qmax": 25.0, "dimV": 42, "dimW": 36, "cusp_lo": 6, "cusp_hi": 42, "cusp_exact_part": 0, "n_blocks": 36, "W_blocks": 36, "mixed_blocks": 36, "W_in_V": true, "uL_block_has_W": true, "uL_block_dimV": 1, "uL_block_dimW": 1, "relations": {"S2_P": 1.6930901411803166e-15, "ST3_on_FixP": 2.2572530916340106e-15}, "time": 0.2, "stable_under_Qmax_x1.6": true}
+{"s": 13, "N": 572, "K": 2, "D": 286, "Qmax": 25.0, "dimV": 156, "dimW": 126, "cusp_lo": 30, "cusp_hi": 156, "cusp_exact_part": 0, "n_blocks": 126, "W_blocks": 126, "mixed_blocks": 126, "W_in_V": true, "uL_block_has_W": true, "uL_block_dimV": 1, "uL_block_dimW": 1, "relations": {"S2_P": 1.6910413304902302e-15, "ST3_on_FixP": 1.915993512186245e-15}, "time": 1.4, "stable_under_Qmax_x1.6": true}
+
+===== END FILE funcspan_small.txt =====
+===== BEGIN FILE funcspan_table.txt bytes=1959 sha256=81c5ca0f8a26f90ffa155ddbaef32bf3d8d0664a18a3ddd034876417f1ffb440 =====
+ s   labels  dimV  dimW(Eis)  cusp=V-W   odd-s formulas: s(s-1), 3*prod_{p^e||s(s-2)}(p^e+1)/2
+  5      60    20        18         2  stable(Qmax x1.6)=True   V==s(s-1): True   W==formula(18): True
+  6      24    12        12         0  stable(Qmax x1.6)=True
+  7     140    42        36         6  stable(Qmax x1.6)=True   V==s(s-1): True   W==formula(36): True
+  8      48    18        18         0  stable(Qmax x1.6)=True
+  9     252    72        60        12  stable(Qmax x1.6)=True   V==s(s-1): True   W==formula(60): True
+ 10      80    30        30         0  stable(Qmax x1.6)=True
+ 11     396   110        90        20  stable(Qmax x1.6)=True   V==s(s-1): True   W==formula(90): True
+ 12     120    42        36         6  stable(Qmax x1.6)=True
+ 13     572   156       126        30  stable(Qmax x1.6)=True   V==s(s-1): True   W==formula(126): True
+ 14     168    56        48         8  stable(Qmax x1.6)=True
+ 15     780   210       126        84  stable(Qmax x1.6)=True   V==s(s-1): True   W==formula(126): True
+ 16     224    72        48        24  stable(Qmax x1.6)=True
+ 17    1020   272       162       110  stable(Qmax x1.6)=True   V==s(s-1): True   W==formula(162): True
+ 18     288    84        60        24  stable(Qmax x1.6)=True
+ 19    1292   342       270        72  stable(Qmax x1.6)=True   V==s(s-1): True   W==formula(270): True
+ 20     360   110        90        20  stable(Qmax x1.6)=True
+ 21    1596   420       240       180  stable(Qmax x1.6)=True   V==s(s-1): True   W==formula(240): True
+ 22     440   132       108        24  stable(Qmax x1.6)=True
+ 23    1932   506       288       218  stable(Qmax x1.6)=True   V==s(s-1): True   W==formula(288): True
+ 24     528   156       120        36  stable(Qmax x1.6)=True
+ 25    2300   600       468       132  stable(Qmax x1.6)=True   V==s(s-1): True   W==formula(468): True
+ 41    6396  1640       882       758  stable(Qmax x1.6)=True   V==s(s-1): True   W==formula(882): True
+
+===== END FILE funcspan_table.txt =====
+===== BEGIN FILE uL_modulus_check.txt bytes=1094 sha256=eecff973f7d089cb6aac794d33dd01200f9adc8994e1ec435dfee92852568c04 =====
+{"s": 14, "L": 2688, "Pmax": 8000000, "k=1": [96, 96], "k=2": [192, 192], "k=3": [288, 288], "k=4": [384, 384], "k=7": [672, 672], "k=8": [768, 768], "k=9": [864, 864], "k=16": [1536, 1536], "k=49": [4703, 4702]}
+{"s": 17, "L": 4080, "Pmax": 8000000, "k=1": [64, 64], "k=2": [128, 128], "k=3": [192, 192], "k=4": [256, 256], "k=5": [320, 320], "k=8": [512, 512], "k=9": [576, 576], "k=16": [1024, 1024], "k=17": [1088, 1088], "k=25": [1600, 1600]}
+{"s": 18, "L": 3072, "Pmax": 8000000, "k=1": [64, 64], "k=2": [128, 128], "k=3": [192, 192], "k=4": [256, 256], "k=8": [512, 512], "k=9": [576, 576], "k=16": [1024, 1024]}
+{"s": 22, "L": 7040, "Pmax": 8000000, "k=1": [160, 160], "k=2": [320, 320], "k=3": [320, 320], "k=4": [640, 640], "k=5": [800, 800], "k=8": [1280, 1280], "k=9": [960, 960], "k=11": [1760, 1760], "k=16": [2559, 2557], "k=25": [3968, 3940]}
+{"s": 23, "L": 7728, "Pmax": 8000000, "k=1": [88, 88], "k=2": [176, 176], "k=3": [264, 264], "k=4": [352, 352], "k=7": [616, 616], "k=8": [704, 704], "k=9": [792, 792], "k=16": [1408, 1407], "k=23": [2018, 2016], "k=49": [4075, 3869]}
+
+===== END FILE uL_modulus_check.txt =====
+===== BEGIN FILE uL_periodicity.txt bytes=5332 sha256=3b2aad8ca6d3e9e481c801192d87b1ce0d444c91a7c2a21a13e92e8cf96c59b7 =====
+{"s": 7, "kappa": 20, "D0": 35, "c": 1, "dK": 140, "L": 560, "Pmax": 4000000, "k=1": {"classes_hit": 24, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=2": {"classes_hit": 48, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=3": {"classes_hit": 48, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=5": {"classes_hit": 120, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}}
+{"s": 8, "kappa": 3, "D0": 3, "c": 4, "dK": 12, "L": 384, "Pmax": 4000000, "k=1": {"classes_hit": 64, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=2": {"classes_hit": 128, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=3": {"classes_hit": 192, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=5": {"classes_hit": 256, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}}
+{"s": 11, "kappa": 36, "D0": 11, "c": 3, "dK": 44, "L": 4752, "Pmax": 4000000, "k=1": {"classes_hit": 120, "classes_mixed": 120, "frac_mixed_of_hit": 1.0, "example": [[[1, 97], [0, 2]], [[1, 313], [0, 2]], [[1, 421], [0, 2]]]}, "k=2": {"classes_hit": 240, "classes_mixed": 240, "frac_mixed_of_hit": 1.0, "example": [[[1, 97], [0, 2]], [[1, 313], [0, 2]], [[1, 421], [0, 2]]]}, "k=3": {"classes_hit": 360, "classes_mixed": 360, "frac_mixed_of_hit": 1.0, "example": [[[1, 97], [0, 2]], [[1, 313], [0, 2]], [[1, 421], [0, 2]]]}, "k=5": {"classes_hit": 480, "classes_mixed": 480, "frac_mixed_of_hit": 1.0, "example": [[[1, 97], [0, 2]], [[1, 313], [0, 2]], [[1, 421], [0, 2]]]}}
+{"s": 9, "kappa": 28, "D0": 7, "c": 3, "dK": 28, "L": 336, "Pmax": 4000000, "k=1": {"classes_hit": 8, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=2": {"classes_hit": 16, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=3": {"classes_hit": 24, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=5": {"classes_hit": 32, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}}
+{"s": 10, "kappa": 16, "D0": 5, "c": 4, "dK": 5, "L": 2560, "Pmax": 4000000, "k=1": {"classes_hit": 128, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=2": {"classes_hit": 256, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=3": {"classes_hit": 256, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=5": {"classes_hit": 640, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}}
+{"s": 12, "kappa": 10, "D0": 30, "c": 2, "dK": 120, "L": 960, "Pmax": 4000000, "k=1": {"classes_hit": 32, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=2": {"classes_hit": 64, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=3": {"classes_hit": 96, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=5": {"classes_hit": 160, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}}
+{"s": 13, "kappa": 44, "D0": 143, "c": 1, "dK": 572, "L": 2288, "Pmax": 4000000, "k=1": {"classes_hit": 48, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=2": {"classes_hit": 96, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=3": {"classes_hit": 96, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=5": {"classes_hit": 192, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}}
+{"s": 19, "kappa": 68, "D0": 323, "c": 1, "dK": 1292, "L": 5168, "Pmax": 4000000, "k=1": {"classes_hit": 72, "classes_mixed": 72, "frac_mixed_of_hit": 1.0, "example": [[[1, 389], [0, 2]], [[1, 457], [0, 2]], [[1, 593], [0, 2]]]}, "k=2": {"classes_hit": 144, "classes_mixed": 144, "frac_mixed_of_hit": 1.0, "example": [[[1, 389], [0, 2]], [[1, 457], [0, 2]], [[1, 593], [0, 2]]]}, "k=3": {"classes_hit": 144, "classes_mixed": 144, "frac_mixed_of_hit": 1.0, "example": [[[1, 389], [0, 2]], [[1, 457], [0, 2]], [[1, 593], [0, 2]]]}, "k=5": {"classes_hit": 288, "classes_mixed": 288, "frac_mixed_of_hit": 1.0, "example": [[[1, 389], [0, 2]], [[1, 457], [0, 2]], [[1, 593], [0, 2]]]}}
+{"s": 25, "kappa": 92, "D0": 23, "c": 5, "dK": 92, "L": 1840, "Pmax": 12000000, "k=1": {"classes_hit": 16, "classes_mixed": 16, "frac_mixed_of_hit": 1.0, "example": [[[1, 67], [0, 2]], [[1, 1447], [0, 2]], [[1, 1723], [0, 2]]]}, "k=2": {"classes_hit": 32, "classes_mixed": 32, "frac_mixed_of_hit": 1.0, "example": [[[1, 67], [0, 2]], [[1, 1447], [0, 2]], [[1, 1723], [0, 2]]]}, "k=3": {"classes_hit": 32, "classes_mixed": 32, "frac_mixed_of_hit": 1.0, "example": [[[1, 67], [0, 2]], [[1, 1447], [0, 2]], [[1, 1723], [0, 2]]]}, "k=5": {"classes_hit": 80, "classes_mixed": 80, "frac_mixed_of_hit": 1.0, "example": [[[1, 67], [0, 2]], [[1, 1447], [0, 2]], [[1, 1723], [0, 2]]]}}
+{"s": 41, "kappa": 156, "D0": 1599, "c": 1, "dK": 6396, "L": 25584, "Pmax": 12000000, "k=1": {"classes_hit": 160, "classes_mixed": 160, "frac_mixed_of_hit": 1.0, "example": [[[1, 271], [0, 2]], [[1, 739], [0, 2]], [[1, 2767], [0, 2]]]}, "k=2": {"classes_hit": 320, "classes_mixed": 320, "frac_mixed_of_hit": 1.0, "example": [[[1, 271], [0, 2]], [[1, 739], [0, 2]], [[1, 2767], [0, 2]]]}, "k=3": {"classes_hit": 476, "classes_mixed": 476, "frac_mixed_of_hit": 1.0, "example": [[[1, 271], [0, 2]], [[1, 739], [0, 2]], [[1, 2767], [0, 2]]]}, "k=5": {"classes_hit": 632, "classes_mixed": 632, "frac_mixed_of_hit": 1.0, "example": [[[1, 271], [0, 2]], [[1, 739], [0, 2]], [[1, 2767], [0, 2]]]}}
+
+===== END FILE uL_periodicity.txt =====
+===== BEGIN FILE uL_periodicity_extra.txt bytes=6662 sha256=fdda31aaeff82c8258428b64cfb2dbfe226e87cf3a4b63433fd95acd0a858d9e =====
+{"s": 5, "kappa": 12, "D0": 15, "c": 1, "dK": 60, "L": 240, "Pmax": 6000000, "k=1": {"classes_hit": 16, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=2": {"classes_hit": 32, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=3": {"classes_hit": 48, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=5": {"classes_hit": 80, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}}
+{"s": 6, "kappa": 8, "D0": 6, "c": 2, "dK": 24, "L": 384, "Pmax": 6000000, "k=1": {"classes_hit": 32, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=2": {"classes_hit": 64, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=3": {"classes_hit": 96, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=5": {"classes_hit": 128, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}}
+{"s": 14, "kappa": 24, "D0": 42, "c": 2, "dK": 168, "L": 2688, "Pmax": 6000000, "k=1": {"classes_hit": 96, "classes_mixed": 96, "frac_mixed_of_hit": 1.0, "example": [[[1, 17], [0, 2]], [[1, 41], [0, 2]], [[1, 89], [0, 2]]]}, "k=2": {"classes_hit": 192, "classes_mixed": 192, "frac_mixed_of_hit": 1.0, "example": [[[1, 17], [0, 2]], [[1, 41], [0, 2]], [[1, 89], [0, 2]]]}, "k=3": {"classes_hit": 288, "classes_mixed": 288, "frac_mixed_of_hit": 1.0, "example": [[[1, 17], [0, 2]], [[1, 41], [0, 2]], [[1, 89], [0, 2]]]}, "k=5": {"classes_hit": 384, "classes_mixed": 384, "frac_mixed_of_hit": 1.0, "example": [[[1, 17], [0, 2]], [[1, 41], [0, 2]], [[1, 89], [0, 2]]]}}
+{"s": 15, "kappa": 52, "D0": 195, "c": 1, "dK": 780, "L": 3120, "Pmax": 6000000, "k=1": {"classes_hit": 16, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=2": {"classes_hit": 32, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=3": {"classes_hit": 48, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=5": {"classes_hit": 80, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}}
+{"s": 16, "kappa": 7, "D0": 14, "c": 4, "dK": 56, "L": 896, "Pmax": 6000000, "k=1": {"classes_hit": 32, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=2": {"classes_hit": 64, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=3": {"classes_hit": 64, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=5": {"classes_hit": 128, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}}
+{"s": 17, "kappa": 60, "D0": 255, "c": 1, "dK": 1020, "L": 4080, "Pmax": 6000000, "k=1": {"classes_hit": 64, "classes_mixed": 64, "frac_mixed_of_hit": 1.0, "example": [[[1, 43], [0, 2]], [[1, 103], [0, 2]], [[1, 223], [0, 2]]]}, "k=2": {"classes_hit": 128, "classes_mixed": 128, "frac_mixed_of_hit": 1.0, "example": [[[1, 43], [0, 2]], [[1, 103], [0, 2]], [[1, 223], [0, 2]]]}, "k=3": {"classes_hit": 192, "classes_mixed": 192, "frac_mixed_of_hit": 1.0, "example": [[[1, 43], [0, 2]], [[1, 103], [0, 2]], [[1, 223], [0, 2]]]}, "k=5": {"classes_hit": 320, "classes_mixed": 320, "frac_mixed_of_hit": 1.0, "example": [[[1, 43], [0, 2]], [[1, 103], [0, 2]], [[1, 223], [0, 2]]]}}
+{"s": 18, "kappa": 32, "D0": 2, "c": 12, "dK": 8, "L": 3072, "Pmax": 6000000, "k=1": {"classes_hit": 64, "classes_mixed": 64, "frac_mixed_of_hit": 1.0, "example": [[[1, 23], [0, 2]], [[1, 311], [0, 2]], [[1, 503], [0, 2]]]}, "k=2": {"classes_hit": 128, "classes_mixed": 128, "frac_mixed_of_hit": 1.0, "example": [[[1, 23], [0, 2]], [[1, 311], [0, 2]], [[1, 503], [0, 2]]]}, "k=3": {"classes_hit": 192, "classes_mixed": 192, "frac_mixed_of_hit": 1.0, "example": [[[1, 23], [0, 2]], [[1, 311], [0, 2]], [[1, 503], [0, 2]]]}, "k=5": {"classes_hit": 256, "classes_mixed": 256, "frac_mixed_of_hit": 1.0, "example": [[[1, 23], [0, 2]], [[1, 311], [0, 2]], [[1, 503], [0, 2]]]}}
+{"s": 20, "kappa": 18, "D0": 10, "c": 6, "dK": 40, "L": 8640, "Pmax": 6000000, "k=1": {"classes_hit": 192, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=2": {"classes_hit": 384, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=3": {"classes_hit": 576, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=5": {"classes_hit": 960, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}}
+{"s": 21, "kappa": 76, "D0": 399, "c": 1, "dK": 1596, "L": 6384, "Pmax": 6000000, "k=1": {"classes_hit": 24, "classes_mixed": 24, "frac_mixed_of_hit": 1.0, "example": [[[1, 283], [0, 2]], [[1, 1879], [0, 2]], [[1, 2791], [0, 2]]]}, "k=2": {"classes_hit": 48, "classes_mixed": 48, "frac_mixed_of_hit": 1.0, "example": [[[1, 283], [0, 2]], [[1, 1879], [0, 2]], [[1, 2791], [0, 2]]]}, "k=3": {"classes_hit": 72, "classes_mixed": 72, "frac_mixed_of_hit": 1.0, "example": [[[1, 283], [0, 2]], [[1, 1879], [0, 2]], [[1, 2791], [0, 2]]]}, "k=5": {"classes_hit": 96, "classes_mixed": 96, "frac_mixed_of_hit": 1.0, "example": [[[1, 283], [0, 2]], [[1, 1879], [0, 2]], [[1, 2791], [0, 2]]]}}
+{"s": 22, "kappa": 40, "D0": 110, "c": 2, "dK": 440, "L": 7040, "Pmax": 6000000, "k=1": {"classes_hit": 160, "classes_mixed": 160, "frac_mixed_of_hit": 1.0, "example": [[[1, 29], [0, 2]], [[1, 109], [0, 2]], [[1, 149], [0, 2]]]}, "k=2": {"classes_hit": 320, "classes_mixed": 320, "frac_mixed_of_hit": 1.0, "example": [[[1, 29], [0, 2]], [[1, 109], [0, 2]], [[1, 149], [0, 2]]]}, "k=3": {"classes_hit": 320, "classes_mixed": 320, "frac_mixed_of_hit": 1.0, "example": [[[1, 29], [0, 2]], [[1, 109], [0, 2]], [[1, 149], [0, 2]]]}, "k=5": {"classes_hit": 800, "classes_mixed": 800, "frac_mixed_of_hit": 1.0, "example": [[[1, 29], [0, 2]], [[1, 109], [0, 2]], [[1, 149], [0, 2]]]}}
+{"s": 23, "kappa": 84, "D0": 483, "c": 1, "dK": 1932, "L": 7728, "Pmax": 6000000, "k=1": {"classes_hit": 88, "classes_mixed": 88, "frac_mixed_of_hit": 1.0, "example": [[[1, 61], [0, 2]], [[1, 229], [0, 2]], [[1, 313], [0, 2]]]}, "k=2": {"classes_hit": 176, "classes_mixed": 176, "frac_mixed_of_hit": 1.0, "example": [[[1, 61], [0, 2]], [[1, 229], [0, 2]], [[1, 313], [0, 2]]]}, "k=3": {"classes_hit": 264, "classes_mixed": 264, "frac_mixed_of_hit": 1.0, "example": [[[1, 61], [0, 2]], [[1, 229], [0, 2]], [[1, 313], [0, 2]]]}, "k=5": {"classes_hit": 352, "classes_mixed": 352, "frac_mixed_of_hit": 1.0, "example": [[[1, 61], [0, 2]], [[1, 229], [0, 2]], [[1, 313], [0, 2]]]}}
+{"s": 24, "kappa": 11, "D0": 33, "c": 4, "dK": 33, "L": 4224, "Pmax": 6000000, "k=1": {"classes_hit": 64, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=2": {"classes_hit": 128, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=3": {"classes_hit": 192, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}, "k=5": {"classes_hit": 256, "classes_mixed": 0, "frac_mixed_of_hit": 0.0, "example": []}}
+
+===== END FILE uL_periodicity_extra.txt =====
+===== BEGIN FILE uL_rayclass_11_19_41_M2.json bytes=2143 sha256=c2d2709c2df97111e7f003abc82b3efe7f1ef23ea90d3f935ee1df9fddd8b6eb =====
+[
+ {
+  "s": 11,
+  "D0": 11,
+  "c": 3,
+  "M": 216,
+  "cyc": [
+   72,
+   4,
+   2,
+   2
+  ],
+  "G": 1152,
+  "normimage": 72,
+  "K_N": 16,
+  "H": 8,
+  "mu": 1,
+  "Nmax": 80000,
+  "count_check_maxdiff": 0,
+  "n_nu": 669,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 24,
+    "min_hits_per_class": 24,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 12,
+    "genus_pure_chars": 12,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "12": 8,
+     "4": 4
+    },
+    "observable_classes": 1152,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "CUSP",
+  "uL_nongenus_pure_chars_complete": 12
+ },
+ {
+  "s": 19,
+  "D0": 323,
+  "c": 1,
+  "M": 136,
+  "cyc": [
+   32,
+   4,
+   2,
+   2,
+   2
+  ],
+  "G": 1024,
+  "normimage": 64,
+  "K_N": 16,
+  "H": 8,
+  "mu": 1,
+  "Nmax": 80000,
+  "count_check_maxdiff": 0,
+  "n_nu": 235,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 8,
+    "min_hits_per_class": 25,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 32,
+    "genus_pure_chars": 32,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "2": 4,
+     "16": 16,
+     "8": 8,
+     "4": 4
+    },
+    "observable_classes": 1024,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "CUSP",
+  "uL_nongenus_pure_chars_complete": 32
+ },
+ {
+  "s": 41,
+  "D0": 1599,
+  "c": 1,
+  "M": 312,
+  "cyc": [
+   24,
+   12,
+   4,
+   2,
+   2
+  ],
+  "G": 4608,
+  "normimage": 96,
+  "K_N": 48,
+  "H": 24,
+  "mu": 1,
+  "Nmax": 80000,
+  "count_check_maxdiff": 0,
+  "n_nu": 60,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 8,
+    "min_hits_per_class": 4,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 240,
+    "genus_pure_chars": 48,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "24": 128,
+     "12": 48,
+     "8": 16,
+     "6": 42,
+     "3": 6
+    },
+    "observable_classes": 4595,
+    "complete": false
+   }
+  ],
+  "uL_verdict": "Eis on complete c-parts; 1 incomplete",
+  "uL_nongenus_pure_chars_complete": 0
+ }
+]
+===== END FILE uL_rayclass_11_19_41_M2.json =====
+===== BEGIN FILE uL_rayclass_18_20_25.log bytes=3575 sha256=0ca29a8a3d929af251582e57bd478d70b6e847ac262ef02eb72b079653c076d1 =====
+PARI stack size set to 6000000000 bytes, maximum size set to 6000001024
+{"s": 18, "D0": 2, "c": 12, "M": 768, "cyc": [64, 8, 2, 2], "G": 2048, "normimage": 128, "K_N": 16, "H": 8, "mu": 1, "Nmax": 80000, "count_check_maxdiff": 0, "n_nu": 519, "cparts": [{"c": [], "Nc": 1, "n_classes": 32, "min_hits_per_class": 8, "genus_full": false, "genus_pure": false, "genus_mixed": true, "nongenus_pure_chars": 16, "genus_pure_chars": 16, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {"4": 16}, "observable_classes": 2048, "complete": true}, {"c": [[3, "[3, 0]~", 1]], "Nc": 9, "n_classes": 103, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": false, "nongenus_pure_chars": 704, "genus_pure_chars": 256, "nongenus_mixed_chars": 768, "nongenus_pure_char_orders": {"8": 64, "64": 384, "32": 192, "16": 64}, "observable_classes": 1500, "complete": false}, {"c": [[3, "[3, 0]~", 2]], "Nc": 81, "n_classes": 17, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": false, "nongenus_pure_chars": 768, "genus_pure_chars": 256, "nongenus_mixed_chars": 752, "nongenus_pure_char_orders": {"8": 80, "4": 16, "64": 384, "32": 192, "16": 96}, "observable_classes": 263, "complete": false}, {"c": [[3, "[3, 0]~", 3]], "Nc": 729, "n_classes": 2, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": false, "nongenus_pure_chars": 768, "genus_pure_chars": 240, "nongenus_mixed_chars": 768, "nongenus_pure_char_orders": {"8": 80, "4": 16, "64": 384, "32": 192, "16": 96}, "observable_classes": 28, "complete": false}], "uL_verdict": "CUSP", "uL_nongenus_pure_chars_complete": 16}
+{"s": 20, "D0": 10, "c": 6, "M": 432, "cyc": [72, 2, 2, 2, 2], "G": 1152, "normimage": 144, "K_N": 8, "H": 4, "mu": 1, "Nmax": 80000, "count_check_maxdiff": 0, "n_nu": 853, "cparts": [{"c": [], "Nc": 1, "n_classes": 48, "min_hits_per_class": 13, "genus_full": true, "genus_pure": true, "genus_mixed": true, "nongenus_pure_chars": 0, "genus_pure_chars": 12, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {}, "observable_classes": 1152, "complete": true}], "uL_verdict": "Eis (all c-parts seen complete)", "uL_nongenus_pure_chars_complete": 0}
+{"s": 25, "D0": 23, "c": 5, "M": 460, "cyc": [264, 2, 2, 2], "G": 2112, "normimage": 88, "K_N": 24, "H": 12, "mu": 1, "Nmax": 80000, "count_check_maxdiff": 0, "n_nu": 140, "cparts": [{"c": [], "Nc": 1, "n_classes": 8, "min_hits_per_class": 13, "genus_full": false, "genus_pure": false, "genus_mixed": true, "nongenus_pure_chars": 88, "genus_pure_chars": 44, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {"66": 60, "33": 20, "6": 6, "3": 2}, "observable_classes": 2112, "complete": true}, {"c": [[5, "[5, 0]~", 1]], "Nc": 25, "n_classes": 21, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": false, "nongenus_pure_chars": 880, "genus_pure_chars": 176, "nongenus_mixed_chars": 836, "nongenus_pure_char_orders": {"264": 320, "132": 160, "88": 160, "66": 140, "33": 20, "24": 32, "12": 16, "8": 16, "6": 14, "3": 2}, "observable_classes": 971, "complete": false}, {"c": [[5, "[5, 0]~", 2]], "Nc": 625, "n_classes": 2, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": false, "nongenus_pure_chars": 792, "genus_pure_chars": 132, "nongenus_mixed_chars": 792, "nongenus_pure_char_orders": {"264": 320, "132": 160, "88": 160, "66": 60, "33": 20, "24": 32, "12": 16, "8": 16, "6": 6, "3": 2}, "observable_classes": 50, "complete": false}], "uL_verdict": "CUSP", "uL_nongenus_pure_chars_complete": 88}
+
+===== END FILE uL_rayclass_18_20_25.log =====
+===== BEGIN FILE uL_rayclass_18_20_25.txt bytes=1613 sha256=ea12fae592675b4a265d2f93b3d4083bee0734d260ae6582d297f4d08144ad92 =====
+18 M=768 [64, 8, 2, 2] |G|=2048 |K_N|=16 |H|=8 cnt_dev=0 -> CUSP nongenus pure chars (complete parts) = 16
+    c=[] Nc=1 |T|=32 obs=2048 complete=True genus_pure=False genus_mixed=True ng_pure=16 orders={'4': 16}
+    c=[[3, '[3, 0]~', 1]] Nc=9 |T|=103 obs=1500 complete=False genus_pure=False genus_mixed=False ng_pure=704 orders={'8': 64, '64': 384, '32': 192, '16': 64}
+    c=[[3, '[3, 0]~', 2]] Nc=81 |T|=17 obs=263 complete=False genus_pure=False genus_mixed=False ng_pure=768 orders={'8': 80, '4': 16, '64': 384, '32': 192, '16': 96}
+    c=[[3, '[3, 0]~', 3]] Nc=729 |T|=2 obs=28 complete=False genus_pure=False genus_mixed=False ng_pure=768 orders={'8': 80, '4': 16, '64': 384, '32': 192, '16': 96}
+20 M=432 [72, 2, 2, 2, 2] |G|=1152 |K_N|=8 |H|=4 cnt_dev=0 -> Eis (all c-parts seen complete) nongenus pure chars (complete parts) = 0
+    c=[] Nc=1 |T|=48 obs=1152 complete=True genus_pure=True genus_mixed=True ng_pure=0 orders={}
+25 M=460 [264, 2, 2, 2] |G|=2112 |K_N|=24 |H|=12 cnt_dev=0 -> CUSP nongenus pure chars (complete parts) = 88
+    c=[] Nc=1 |T|=8 obs=2112 complete=True genus_pure=False genus_mixed=True ng_pure=88 orders={'66': 60, '33': 20, '6': 6, '3': 2}
+    c=[[5, '[5, 0]~', 1]] Nc=25 |T|=21 obs=971 complete=False genus_pure=False genus_mixed=False ng_pure=880 orders={'264': 320, '132': 160, '88': 160, '66': 140, '33': 20, '24': 32, '12': 16, '8': 16, '6': 14, '3': 2}
+    c=[[5, '[5, 0]~', 2]] Nc=625 |T|=2 obs=50 complete=False genus_pure=False genus_mixed=False ng_pure=792 orders={'264': 320, '132': 160, '88': 160, '66': 60, '33': 20, '24': 32, '12': 16, '8': 16, '6': 6, '3': 2}
+
+===== END FILE uL_rayclass_18_20_25.txt =====
+===== BEGIN FILE uL_rayclass_18_20_25_M1.json bytes=4576 sha256=535d0039d2460dd111cd57991127b8a5d209e5f6712b7ef588932951955fa55e =====
+[
+ {
+  "s": 18,
+  "D0": 2,
+  "c": 12,
+  "M": 768,
+  "cyc": [
+   64,
+   8,
+   2,
+   2
+  ],
+  "G": 2048,
+  "normimage": 128,
+  "K_N": 16,
+  "H": 8,
+  "mu": 1,
+  "Nmax": 80000,
+  "count_check_maxdiff": 0,
+  "n_nu": 519,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 32,
+    "min_hits_per_class": 8,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 16,
+    "genus_pure_chars": 16,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "4": 16
+    },
+    "observable_classes": 2048,
+    "complete": true
+   },
+   {
+    "c": [
+     [
+      3,
+      "[3, 0]~",
+      1
+     ]
+    ],
+    "Nc": 9,
+    "n_classes": 103,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 704,
+    "genus_pure_chars": 256,
+    "nongenus_mixed_chars": 768,
+    "nongenus_pure_char_orders": {
+     "8": 64,
+     "64": 384,
+     "32": 192,
+     "16": 64
+    },
+    "observable_classes": 1500,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[3, 0]~",
+      2
+     ]
+    ],
+    "Nc": 81,
+    "n_classes": 17,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 768,
+    "genus_pure_chars": 256,
+    "nongenus_mixed_chars": 752,
+    "nongenus_pure_char_orders": {
+     "8": 80,
+     "4": 16,
+     "64": 384,
+     "32": 192,
+     "16": 96
+    },
+    "observable_classes": 263,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[3, 0]~",
+      3
+     ]
+    ],
+    "Nc": 729,
+    "n_classes": 2,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 768,
+    "genus_pure_chars": 240,
+    "nongenus_mixed_chars": 768,
+    "nongenus_pure_char_orders": {
+     "8": 80,
+     "4": 16,
+     "64": 384,
+     "32": 192,
+     "16": 96
+    },
+    "observable_classes": 28,
+    "complete": false
+   }
+  ],
+  "uL_verdict": "CUSP",
+  "uL_nongenus_pure_chars_complete": 16
+ },
+ {
+  "s": 20,
+  "D0": 10,
+  "c": 6,
+  "M": 432,
+  "cyc": [
+   72,
+   2,
+   2,
+   2,
+   2
+  ],
+  "G": 1152,
+  "normimage": 144,
+  "K_N": 8,
+  "H": 4,
+  "mu": 1,
+  "Nmax": 80000,
+  "count_check_maxdiff": 0,
+  "n_nu": 853,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 48,
+    "min_hits_per_class": 13,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 12,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 1152,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "Eis (all c-parts seen complete)",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 25,
+  "D0": 23,
+  "c": 5,
+  "M": 460,
+  "cyc": [
+   264,
+   2,
+   2,
+   2
+  ],
+  "G": 2112,
+  "normimage": 88,
+  "K_N": 24,
+  "H": 12,
+  "mu": 1,
+  "Nmax": 80000,
+  "count_check_maxdiff": 0,
+  "n_nu": 140,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 8,
+    "min_hits_per_class": 13,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 88,
+    "genus_pure_chars": 44,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "66": 60,
+     "33": 20,
+     "6": 6,
+     "3": 2
+    },
+    "observable_classes": 2112,
+    "complete": true
+   },
+   {
+    "c": [
+     [
+      5,
+      "[5, 0]~",
+      1
+     ]
+    ],
+    "Nc": 25,
+    "n_classes": 21,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 880,
+    "genus_pure_chars": 176,
+    "nongenus_mixed_chars": 836,
+    "nongenus_pure_char_orders": {
+     "264": 320,
+     "132": 160,
+     "88": 160,
+     "66": 140,
+     "33": 20,
+     "24": 32,
+     "12": 16,
+     "8": 16,
+     "6": 14,
+     "3": 2
+    },
+    "observable_classes": 971,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      5,
+      "[5, 0]~",
+      2
+     ]
+    ],
+    "Nc": 625,
+    "n_classes": 2,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 792,
+    "genus_pure_chars": 132,
+    "nongenus_mixed_chars": 792,
+    "nongenus_pure_char_orders": {
+     "264": 320,
+     "132": 160,
+     "88": 160,
+     "66": 60,
+     "33": 20,
+     "24": 32,
+     "12": 16,
+     "8": 16,
+     "6": 6,
+     "3": 2
+    },
+    "observable_classes": 50,
+    "complete": false
+   }
+  ],
+  "uL_verdict": "CUSP",
+  "uL_nongenus_pure_chars_complete": 88
+ }
+]
+===== END FILE uL_rayclass_18_20_25_M1.json =====
+===== BEGIN FILE uL_rayclass_5_6_7_8_9_10_11_12_13_14_15_16_17_19_21_22_23_24_41_M1.json bytes=26676 sha256=8eedc68c93b8e1ebac075caad09fd10c3ea356124b6459703bfb2b821596e952 =====
+[
+ {
+  "s": 5,
+  "D0": 15,
+  "c": 1,
+  "M": 12,
+  "cyc": [
+   4,
+   2,
+   2
+  ],
+  "G": 16,
+  "normimage": 4,
+  "K_N": 4,
+  "H": 2,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 887,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 2,
+    "min_hits_per_class": 443,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 4,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 16,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "Eis (all c-parts seen complete)",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 6,
+  "D0": 6,
+  "c": 2,
+  "M": 32,
+  "cyc": [
+   16,
+   2,
+   2
+  ],
+  "G": 64,
+  "normimage": 16,
+  "K_N": 4,
+  "H": 2,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 1170,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 8,
+    "min_hits_per_class": 145,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 4,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 64,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "Eis (all c-parts seen complete)",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 7,
+  "D0": 35,
+  "c": 1,
+  "M": 20,
+  "cyc": [
+   8,
+   2,
+   2
+  ],
+  "G": 32,
+  "normimage": 8,
+  "K_N": 4,
+  "H": 2,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 418,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 2,
+    "min_hits_per_class": 207,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 8,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 32,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "Eis (all c-parts seen complete)",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 8,
+  "D0": 3,
+  "c": 4,
+  "M": 96,
+  "cyc": [
+   16,
+   2,
+   2,
+   2
+  ],
+  "G": 128,
+  "normimage": 16,
+  "K_N": 8,
+  "H": 4,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 2536,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 32,
+    "min_hits_per_class": 37,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 2,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 128,
+    "complete": true
+   },
+   {
+    "c": [
+     [
+      2,
+      "[1, 1]~",
+      1
+     ]
+    ],
+    "Nc": 2,
+    "n_classes": 64,
+    "min_hits_per_class": 17,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 2,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 128,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "Eis (all c-parts seen complete)",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 9,
+  "D0": 7,
+  "c": 3,
+  "M": 84,
+  "cyc": [
+   6,
+   2,
+   2,
+   2,
+   2
+  ],
+  "G": 96,
+  "normimage": 12,
+  "K_N": 8,
+  "H": 4,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 251,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 4,
+    "min_hits_per_class": 40,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 12,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 96,
+    "complete": true
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      1
+     ],
+     [
+      3,
+      "[1, 1]~",
+      1
+     ]
+    ],
+    "Nc": 9,
+    "n_classes": 8,
+    "min_hits_per_class": 4,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 6,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 96,
+    "complete": true
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      1
+     ],
+     [
+      3,
+      "[1, 1]~",
+      2
+     ]
+    ],
+    "Nc": 27,
+    "n_classes": 6,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": true,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 24,
+    "nongenus_mixed_chars": 24,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 82,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      2
+     ],
+     [
+      3,
+      "[1, 1]~",
+      1
+     ]
+    ],
+    "Nc": 27,
+    "n_classes": 7,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 24,
+    "genus_pure_chars": 24,
+    "nongenus_mixed_chars": 48,
+    "nongenus_pure_char_orders": {
+     "2": 8,
+     "6": 16
+    },
+    "observable_classes": 82,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      3
+     ],
+     [
+      3,
+      "[1, 1]~",
+      1
+     ]
+    ],
+    "Nc": 81,
+    "n_classes": 3,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 24,
+    "genus_pure_chars": 24,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "2": 8,
+     "6": 16
+    },
+    "observable_classes": 43,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      2
+     ],
+     [
+      3,
+      "[1, 1]~",
+      2
+     ]
+    ],
+    "Nc": 81,
+    "n_classes": 3,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 24,
+    "genus_pure_chars": 24,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "2": 8,
+     "6": 16
+    },
+    "observable_classes": 43,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      1
+     ],
+     [
+      3,
+      "[1, 1]~",
+      3
+     ]
+    ],
+    "Nc": 81,
+    "n_classes": 3,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 24,
+    "genus_pure_chars": 24,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "2": 8,
+     "6": 16
+    },
+    "observable_classes": 43,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      4
+     ],
+     [
+      3,
+      "[1, 1]~",
+      1
+     ]
+    ],
+    "Nc": 243,
+    "n_classes": 2,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": true,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 24,
+    "nongenus_mixed_chars": 24,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 15,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      2
+     ],
+     [
+      3,
+      "[1, 1]~",
+      3
+     ]
+    ],
+    "Nc": 243,
+    "n_classes": 2,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": true,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 24,
+    "nongenus_mixed_chars": 24,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 15,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      1
+     ],
+     [
+      3,
+      "[1, 1]~",
+      4
+     ]
+    ],
+    "Nc": 243,
+    "n_classes": 1,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 24,
+    "genus_pure_chars": 24,
+    "nongenus_mixed_chars": 48,
+    "nongenus_pure_char_orders": {
+     "2": 8,
+     "6": 16
+    },
+    "observable_classes": 15,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      3
+     ],
+     [
+      3,
+      "[1, 1]~",
+      2
+     ]
+    ],
+    "Nc": 243,
+    "n_classes": 1,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 24,
+    "genus_pure_chars": 24,
+    "nongenus_mixed_chars": 48,
+    "nongenus_pure_char_orders": {
+     "2": 8,
+     "6": 16
+    },
+    "observable_classes": 15,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      1
+     ],
+     [
+      3,
+      "[1, 1]~",
+      5
+     ]
+    ],
+    "Nc": 729,
+    "n_classes": 1,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": true,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 24,
+    "nongenus_mixed_chars": 24,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 4,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      5
+     ],
+     [
+      3,
+      "[1, 1]~",
+      1
+     ]
+    ],
+    "Nc": 729,
+    "n_classes": 1,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": true,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 24,
+    "nongenus_mixed_chars": 24,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 4,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      4
+     ],
+     [
+      3,
+      "[1, 1]~",
+      2
+     ]
+    ],
+    "Nc": 729,
+    "n_classes": 1,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": true,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 24,
+    "nongenus_mixed_chars": 24,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 4,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      3
+     ],
+     [
+      3,
+      "[1, 1]~",
+      3
+     ]
+    ],
+    "Nc": 729,
+    "n_classes": 1,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": true,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 24,
+    "nongenus_mixed_chars": 24,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 4,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      3,
+      "[-1, 1]~",
+      2
+     ],
+     [
+      3,
+      "[1, 1]~",
+      4
+     ]
+    ],
+    "Nc": 729,
+    "n_classes": 1,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": true,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 24,
+    "nongenus_mixed_chars": 24,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 4,
+    "complete": false
+   }
+  ],
+  "uL_verdict": "Eis on complete c-parts; 14 incomplete",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 10,
+  "D0": 5,
+  "c": 4,
+  "M": 128,
+  "cyc": [
+   32,
+   2,
+   2
+  ],
+  "G": 128,
+  "normimage": 64,
+  "K_N": 2,
+  "H": 2,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 404,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 8,
+    "min_hits_per_class": 49,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 8,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 128,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "Eis (all c-parts seen complete)",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 11,
+  "D0": 11,
+  "c": 3,
+  "M": 108,
+  "cyc": [
+   72,
+   2,
+   2
+  ],
+  "G": 288,
+  "normimage": 36,
+  "K_N": 8,
+  "H": 4,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 168,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 6,
+    "min_hits_per_class": 26,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 12,
+    "genus_pure_chars": 12,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "12": 8,
+     "4": 4
+    },
+    "observable_classes": 288,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "CUSP",
+  "uL_nongenus_pure_chars_complete": 12
+ },
+ {
+  "s": 12,
+  "D0": 30,
+  "c": 2,
+  "M": 80,
+  "cyc": [
+   8,
+   8,
+   2,
+   2
+  ],
+  "G": 256,
+  "normimage": 32,
+  "K_N": 8,
+  "H": 4,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 564,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 16,
+    "min_hits_per_class": 33,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 8,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 256,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "Eis (all c-parts seen complete)",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 13,
+  "D0": 143,
+  "c": 1,
+  "M": 44,
+  "cyc": [
+   20,
+   2,
+   2
+  ],
+  "G": 80,
+  "normimage": 20,
+  "K_N": 4,
+  "H": 2,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 120,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 2,
+    "min_hits_per_class": 60,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 20,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 80,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "Eis (all c-parts seen complete)",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 14,
+  "D0": 42,
+  "c": 2,
+  "M": 96,
+  "cyc": [
+   16,
+   4,
+   2,
+   2
+  ],
+  "G": 256,
+  "normimage": 32,
+  "K_N": 8,
+  "H": 4,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 208,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 8,
+    "min_hits_per_class": 23,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 8,
+    "genus_pure_chars": 8,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "4": 8
+    },
+    "observable_classes": 256,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "CUSP",
+  "uL_nongenus_pure_chars_complete": 8
+ },
+ {
+  "s": 15,
+  "D0": 195,
+  "c": 1,
+  "M": 52,
+  "cyc": [
+   24,
+   2,
+   2,
+   2
+  ],
+  "G": 192,
+  "normimage": 24,
+  "K_N": 8,
+  "H": 2,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 92,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 2,
+    "min_hits_per_class": 45,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 48,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 192,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "Eis (all c-parts seen complete)",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 16,
+  "D0": 14,
+  "c": 4,
+  "M": 224,
+  "cyc": [
+   48,
+   4,
+   2,
+   2
+  ],
+  "G": 768,
+  "normimage": 48,
+  "K_N": 16,
+  "H": 8,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 650,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 32,
+    "min_hits_per_class": 8,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 12,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 768,
+    "complete": true
+   },
+   {
+    "c": [
+     [
+      2,
+      "[0, 1]~",
+      1
+     ]
+    ],
+    "Nc": 2,
+    "n_classes": 64,
+    "min_hits_per_class": 3,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 6,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 766,
+    "complete": false
+   }
+  ],
+  "uL_verdict": "Eis on complete c-parts; 1 incomplete",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 17,
+  "D0": 255,
+  "c": 1,
+  "M": 60,
+  "cyc": [
+   8,
+   4,
+   2,
+   2
+  ],
+  "G": 128,
+  "normimage": 16,
+  "K_N": 8,
+  "H": 4,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 73,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 2,
+    "min_hits_per_class": 36,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 16,
+    "genus_pure_chars": 16,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "8": 16
+    },
+    "observable_classes": 128,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "CUSP",
+  "uL_nongenus_pure_chars_complete": 16
+ },
+ {
+  "s": 19,
+  "D0": 323,
+  "c": 1,
+  "M": 68,
+  "cyc": [
+   32,
+   2,
+   2,
+   2
+  ],
+  "G": 256,
+  "normimage": 32,
+  "K_N": 8,
+  "H": 4,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 62,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 2,
+    "min_hits_per_class": 31,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 32,
+    "genus_pure_chars": 32,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "2": 4,
+     "16": 16,
+     "8": 8,
+     "4": 4
+    },
+    "observable_classes": 256,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "CUSP",
+  "uL_nongenus_pure_chars_complete": 32
+ },
+ {
+  "s": 21,
+  "D0": 399,
+  "c": 1,
+  "M": 76,
+  "cyc": [
+   72,
+   2,
+   2,
+   2
+  ],
+  "G": 576,
+  "normimage": 36,
+  "K_N": 16,
+  "H": 4,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 51,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 2,
+    "min_hits_per_class": 25,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 72,
+    "genus_pure_chars": 72,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "36": 48,
+     "12": 16,
+     "4": 8
+    },
+    "observable_classes": 576,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "CUSP",
+  "uL_nongenus_pure_chars_complete": 72
+ },
+ {
+  "s": 22,
+  "D0": 110,
+  "c": 2,
+  "M": 160,
+  "cyc": [
+   16,
+   8,
+   2,
+   2
+  ],
+  "G": 512,
+  "normimage": 64,
+  "K_N": 8,
+  "H": 4,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 93,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 8,
+    "min_hits_per_class": 9,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 16,
+    "genus_pure_chars": 16,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "8": 16
+    },
+    "observable_classes": 512,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "CUSP",
+  "uL_nongenus_pure_chars_complete": 16
+ },
+ {
+  "s": 23,
+  "D0": 483,
+  "c": 1,
+  "M": 84,
+  "cyc": [
+   12,
+   4,
+   2,
+   2
+  ],
+  "G": 192,
+  "normimage": 24,
+  "K_N": 8,
+  "H": 4,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 44,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 2,
+    "min_hits_per_class": 21,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 24,
+    "genus_pure_chars": 24,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "4": 8,
+     "12": 16
+    },
+    "observable_classes": 192,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "CUSP",
+  "uL_nongenus_pure_chars_complete": 24
+ },
+ {
+  "s": 24,
+  "D0": 33,
+  "c": 4,
+  "M": 352,
+  "cyc": [
+   40,
+   2,
+   2,
+   2,
+   2
+  ],
+  "G": 640,
+  "normimage": 160,
+  "K_N": 4,
+  "H": 4,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 305,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 16,
+    "min_hits_per_class": 7,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 20,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 640,
+    "complete": true
+   },
+   {
+    "c": [
+     [
+      2,
+      "[-1, 1]~",
+      2
+     ],
+     [
+      2,
+      "[2, 1]~",
+      1
+     ]
+    ],
+    "Nc": 8,
+    "n_classes": 22,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 140,
+    "genus_pure_chars": 160,
+    "nongenus_mixed_chars": 300,
+    "nongenus_pure_char_orders": {
+     "2": 4,
+     "40": 64,
+     "20": 32,
+     "10": 16,
+     "8": 16,
+     "4": 8
+    },
+    "observable_classes": 474,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      2,
+      "[-1, 1]~",
+      1
+     ],
+     [
+      2,
+      "[2, 1]~",
+      2
+     ]
+    ],
+    "Nc": 8,
+    "n_classes": 21,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 160,
+    "genus_pure_chars": 160,
+    "nongenus_mixed_chars": 320,
+    "nongenus_pure_char_orders": {
+     "2": 8,
+     "40": 64,
+     "20": 32,
+     "10": 32,
+     "8": 16,
+     "4": 8
+    },
+    "observable_classes": 474,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      2,
+      "[-1, 1]~",
+      3
+     ],
+     [
+      2,
+      "[2, 1]~",
+      1
+     ]
+    ],
+    "Nc": 16,
+    "n_classes": 16,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 160,
+    "genus_pure_chars": 150,
+    "nongenus_mixed_chars": 160,
+    "nongenus_pure_char_orders": {
+     "2": 8,
+     "40": 64,
+     "20": 32,
+     "10": 32,
+     "8": 16,
+     "4": 8
+    },
+    "observable_classes": 291,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      2,
+      "[-1, 1]~",
+      1
+     ],
+     [
+      2,
+      "[2, 1]~",
+      3
+     ]
+    ],
+    "Nc": 16,
+    "n_classes": 16,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 160,
+    "genus_pure_chars": 150,
+    "nongenus_mixed_chars": 160,
+    "nongenus_pure_char_orders": {
+     "2": 8,
+     "40": 64,
+     "20": 32,
+     "10": 32,
+     "8": 16,
+     "4": 8
+    },
+    "observable_classes": 291,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      2,
+      "[-1, 1]~",
+      1
+     ],
+     [
+      2,
+      "[2, 1]~",
+      4
+     ]
+    ],
+    "Nc": 32,
+    "n_classes": 10,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 140,
+    "genus_pure_chars": 160,
+    "nongenus_mixed_chars": 300,
+    "nongenus_pure_char_orders": {
+     "2": 4,
+     "40": 64,
+     "20": 32,
+     "10": 16,
+     "8": 16,
+     "4": 8
+    },
+    "observable_classes": 166,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      2,
+      "[-1, 1]~",
+      4
+     ],
+     [
+      2,
+      "[2, 1]~",
+      1
+     ]
+    ],
+    "Nc": 32,
+    "n_classes": 8,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 140,
+    "genus_pure_chars": 150,
+    "nongenus_mixed_chars": 290,
+    "nongenus_pure_char_orders": {
+     "2": 4,
+     "40": 64,
+     "20": 32,
+     "10": 16,
+     "8": 16,
+     "4": 8
+    },
+    "observable_classes": 166,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      2,
+      "[-1, 1]~",
+      5
+     ],
+     [
+      2,
+      "[2, 1]~",
+      1
+     ]
+    ],
+    "Nc": 64,
+    "n_classes": 5,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 120,
+    "genus_pure_chars": 160,
+    "nongenus_mixed_chars": 160,
+    "nongenus_pure_char_orders": {
+     "40": 64,
+     "20": 32,
+     "8": 16,
+     "4": 8
+    },
+    "observable_classes": 91,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      2,
+      "[-1, 1]~",
+      1
+     ],
+     [
+      2,
+      "[2, 1]~",
+      5
+     ]
+    ],
+    "Nc": 64,
+    "n_classes": 5,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 120,
+    "genus_pure_chars": 160,
+    "nongenus_mixed_chars": 160,
+    "nongenus_pure_char_orders": {
+     "40": 64,
+     "20": 32,
+     "8": 16,
+     "4": 8
+    },
+    "observable_classes": 91,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      2,
+      "[-1, 1]~",
+      1
+     ],
+     [
+      2,
+      "[2, 1]~",
+      6
+     ]
+    ],
+    "Nc": 128,
+    "n_classes": 3,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 160,
+    "genus_pure_chars": 160,
+    "nongenus_mixed_chars": 320,
+    "nongenus_pure_char_orders": {
+     "2": 8,
+     "40": 64,
+     "20": 32,
+     "10": 32,
+     "8": 16,
+     "4": 8
+    },
+    "observable_classes": 45,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      2,
+      "[-1, 1]~",
+      6
+     ],
+     [
+      2,
+      "[2, 1]~",
+      1
+     ]
+    ],
+    "Nc": 128,
+    "n_classes": 2,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 120,
+    "genus_pure_chars": 120,
+    "nongenus_mixed_chars": 240,
+    "nongenus_pure_char_orders": {
+     "40": 64,
+     "20": 32,
+     "8": 16,
+     "4": 8
+    },
+    "observable_classes": 45,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      2,
+      "[-1, 1]~",
+      1
+     ],
+     [
+      2,
+      "[2, 1]~",
+      8
+     ]
+    ],
+    "Nc": 512,
+    "n_classes": 1,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 160,
+    "genus_pure_chars": 160,
+    "nongenus_mixed_chars": 320,
+    "nongenus_pure_char_orders": {
+     "2": 8,
+     "40": 64,
+     "20": 32,
+     "10": 32,
+     "8": 16,
+     "4": 8
+    },
+    "observable_classes": 13,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      2,
+      "[-1, 1]~",
+      12
+     ],
+     [
+      2,
+      "[2, 1]~",
+      1
+     ]
+    ],
+    "Nc": 8192,
+    "n_classes": 1,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 160,
+    "genus_pure_chars": 160,
+    "nongenus_mixed_chars": 320,
+    "nongenus_pure_char_orders": {
+     "2": 8,
+     "40": 64,
+     "20": 32,
+     "10": 32,
+     "8": 16,
+     "4": 8
+    },
+    "observable_classes": 1,
+    "complete": false
+   }
+  ],
+  "uL_verdict": "Eis on complete c-parts; 12 incomplete",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 41,
+  "D0": 1599,
+  "c": 1,
+  "M": 156,
+  "cyc": [
+   24,
+   12,
+   2,
+   2
+  ],
+  "G": 1152,
+  "normimage": 48,
+  "K_N": 24,
+  "H": 12,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 18,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 2,
+    "min_hits_per_class": 8,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 240,
+    "genus_pure_chars": 48,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "24": 128,
+     "12": 48,
+     "8": 16,
+     "6": 42,
+     "3": 6
+    },
+    "observable_classes": 1152,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "CUSP",
+  "uL_nongenus_pure_chars_complete": 240
+ }
+]
+===== END FILE uL_rayclass_5_6_7_8_9_10_11_12_13_14_15_16_17_19_21_22_23_24_41_M1.json =====
+===== BEGIN FILE uL_rayclass_7_11_14_15_19_25_41_M2.json bytes=6230 sha256=bb4333a3d424f72c140c115212e61812e6220c02962ee418996ccd09d91981eb =====
+[
+ {
+  "s": 7,
+  "D0": 35,
+  "c": 1,
+  "M": 40,
+  "cyc": [
+   8,
+   4,
+   2,
+   2
+  ],
+  "G": 128,
+  "normimage": 16,
+  "K_N": 8,
+  "H": 4,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 418,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 8,
+    "min_hits_per_class": 49,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 8,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 128,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "Eis (all c-parts seen complete)",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 11,
+  "D0": 11,
+  "c": 3,
+  "M": 216,
+  "cyc": [
+   72,
+   4,
+   2,
+   2
+  ],
+  "G": 1152,
+  "normimage": 72,
+  "K_N": 16,
+  "H": 8,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 168,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 24,
+    "min_hits_per_class": 4,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 12,
+    "genus_pure_chars": 12,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "12": 8,
+     "4": 4
+    },
+    "observable_classes": 1149,
+    "complete": false
+   }
+  ],
+  "uL_verdict": "Eis on complete c-parts; 1 incomplete",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 14,
+  "D0": 42,
+  "c": 2,
+  "M": 192,
+  "cyc": [
+   32,
+   4,
+   2,
+   2
+  ],
+  "G": 512,
+  "normimage": 64,
+  "K_N": 8,
+  "H": 4,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 208,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 16,
+    "min_hits_per_class": 9,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 8,
+    "genus_pure_chars": 8,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "4": 8
+    },
+    "observable_classes": 512,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "CUSP",
+  "uL_nongenus_pure_chars_complete": 8
+ },
+ {
+  "s": 15,
+  "D0": 195,
+  "c": 1,
+  "M": 104,
+  "cyc": [
+   24,
+   4,
+   2,
+   2,
+   2
+  ],
+  "G": 768,
+  "normimage": 48,
+  "K_N": 16,
+  "H": 4,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 92,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 8,
+    "min_hits_per_class": 9,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 48,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 768,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "Eis (all c-parts seen complete)",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 19,
+  "D0": 323,
+  "c": 1,
+  "M": 136,
+  "cyc": [
+   32,
+   4,
+   2,
+   2,
+   2
+  ],
+  "G": 1024,
+  "normimage": 64,
+  "K_N": 16,
+  "H": 8,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 62,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 8,
+    "min_hits_per_class": 6,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 32,
+    "genus_pure_chars": 32,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "2": 4,
+     "16": 16,
+     "8": 8,
+     "4": 4
+    },
+    "observable_classes": 1021,
+    "complete": false
+   }
+  ],
+  "uL_verdict": "Eis on complete c-parts; 1 incomplete",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 25,
+  "D0": 23,
+  "c": 5,
+  "M": 920,
+  "cyc": [
+   264,
+   4,
+   2,
+   2,
+   2
+  ],
+  "G": 8448,
+  "normimage": 176,
+  "K_N": 48,
+  "H": 24,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 35,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 21,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 2288,
+    "genus_pure_chars": 352,
+    "nongenus_mixed_chars": 3168,
+    "nongenus_pure_char_orders": {
+     "4": 16,
+     "264": 640,
+     "132": 800,
+     "88": 320,
+     "66": 140,
+     "44": 160,
+     "33": 20,
+     "24": 64,
+     "12": 80,
+     "8": 32,
+     "6": 14,
+     "3": 2
+    },
+    "observable_classes": 5327,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      5,
+      "[5, 0]~",
+      1
+     ]
+    ],
+    "Nc": 25,
+    "n_classes": 6,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 3564,
+    "genus_pure_chars": 308,
+    "nongenus_mixed_chars": 3696,
+    "nongenus_pure_char_orders": {
+     "2": 8,
+     "4": 24,
+     "264": 1280,
+     "132": 800,
+     "88": 640,
+     "66": 200,
+     "44": 240,
+     "24": 128,
+     "22": 80,
+     "12": 80,
+     "8": 64,
+     "6": 20
+    },
+    "observable_classes": 284,
+    "complete": false
+   },
+   {
+    "c": [
+     [
+      5,
+      "[5, 0]~",
+      2
+     ]
+    ],
+    "Nc": 625,
+    "n_classes": 1,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": false,
+    "nongenus_pure_chars": 3168,
+    "genus_pure_chars": 352,
+    "nongenus_mixed_chars": 3520,
+    "nongenus_pure_char_orders": {
+     "264": 1280,
+     "132": 960,
+     "88": 320,
+     "66": 300,
+     "33": 20,
+     "24": 128,
+     "12": 96,
+     "8": 32,
+     "6": 30,
+     "3": 2
+    },
+    "observable_classes": 12,
+    "complete": false
+   }
+  ],
+  "uL_verdict": "Eis on complete c-parts; 3 incomplete",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 41,
+  "D0": 1599,
+  "c": 1,
+  "M": 312,
+  "cyc": [
+   24,
+   12,
+   4,
+   2,
+   2
+  ],
+  "G": 4608,
+  "normimage": 96,
+  "K_N": 48,
+  "H": 24,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 18,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 7,
+    "min_hits_per_class": 1,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 2112,
+    "genus_pure_chars": 192,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "4": 64,
+     "12": 800,
+     "24": 1024,
+     "8": 128,
+     "6": 90,
+     "3": 6
+    },
+    "observable_classes": 3955,
+    "complete": false
+   }
+  ],
+  "uL_verdict": "Eis on complete c-parts; 1 incomplete",
+  "uL_nongenus_pure_chars_complete": 0
+ }
+]
+===== END FILE uL_rayclass_7_11_14_15_19_25_41_M2.json =====
+===== BEGIN FILE uL_rayclass_7_8_11_M1.json bytes=2337 sha256=ee11fe141c22c43989cdc904b4f3fd68b040563cf43b07eeda97e72aeb297233 =====
+[
+ {
+  "s": 7,
+  "D0": 35,
+  "c": 1,
+  "M": 20,
+  "cyc": [
+   8,
+   2,
+   2
+  ],
+  "G": 32,
+  "normimage": 8,
+  "K_N": 4,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 418,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 2,
+    "min_hits_per_class": 207,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 8,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 32,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "Eis (all c-parts seen complete)",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 8,
+  "D0": 3,
+  "c": 4,
+  "M": 96,
+  "cyc": [
+   16,
+   2,
+   2,
+   2
+  ],
+  "G": 128,
+  "normimage": 16,
+  "K_N": 8,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 2536,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 32,
+    "min_hits_per_class": 37,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 2,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 128,
+    "complete": true
+   },
+   {
+    "c": [
+     [
+      2,
+      "[1, 1]~",
+      1
+     ]
+    ],
+    "Nc": 2,
+    "n_classes": 64,
+    "min_hits_per_class": 17,
+    "genus_full": true,
+    "genus_pure": true,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 0,
+    "genus_pure_chars": 2,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {},
+    "observable_classes": 128,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "Eis (all c-parts seen complete)",
+  "uL_nongenus_pure_chars_complete": 0
+ },
+ {
+  "s": 11,
+  "D0": 11,
+  "c": 3,
+  "M": 108,
+  "cyc": [
+   72,
+   2,
+   2
+  ],
+  "G": 288,
+  "normimage": 36,
+  "K_N": 8,
+  "mu": 1,
+  "Nmax": 20000,
+  "count_check_maxdiff": 0,
+  "n_nu": 168,
+  "cparts": [
+   {
+    "c": [],
+    "Nc": 1,
+    "n_classes": 6,
+    "min_hits_per_class": 26,
+    "genus_full": false,
+    "genus_pure": false,
+    "genus_mixed": true,
+    "nongenus_pure_chars": 12,
+    "genus_pure_chars": 12,
+    "nongenus_mixed_chars": 0,
+    "nongenus_pure_char_orders": {
+     "12": 8,
+     "4": 4
+    },
+    "observable_classes": 288,
+    "complete": true
+   }
+  ],
+  "uL_verdict": "CUSP",
+  "uL_nongenus_pure_chars_complete": 12
+ }
+]
+===== END FILE uL_rayclass_7_8_11_M1.json =====
+===== BEGIN FILE uL_rayclass_M2.log bytes=5000 sha256=99152011bd0f5f3610230da429e8c2d1c11ee61441ee5ac428c43d1182b9296b =====
+PARI stack size set to 6000000000 bytes, maximum size set to 6000001024
+{"s": 7, "D0": 35, "c": 1, "M": 40, "cyc": [8, 4, 2, 2], "G": 128, "normimage": 16, "K_N": 8, "H": 4, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 418, "cparts": [{"c": [], "Nc": 1, "n_classes": 8, "min_hits_per_class": 49, "genus_full": true, "genus_pure": true, "genus_mixed": true, "nongenus_pure_chars": 0, "genus_pure_chars": 8, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {}, "observable_classes": 128, "complete": true}], "uL_verdict": "Eis (all c-parts seen complete)", "uL_nongenus_pure_chars_complete": 0}
+{"s": 11, "D0": 11, "c": 3, "M": 216, "cyc": [72, 4, 2, 2], "G": 1152, "normimage": 72, "K_N": 16, "H": 8, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 168, "cparts": [{"c": [], "Nc": 1, "n_classes": 24, "min_hits_per_class": 4, "genus_full": false, "genus_pure": false, "genus_mixed": true, "nongenus_pure_chars": 12, "genus_pure_chars": 12, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {"12": 8, "4": 4}, "observable_classes": 1149, "complete": false}], "uL_verdict": "Eis on complete c-parts; 1 incomplete", "uL_nongenus_pure_chars_complete": 0}
+{"s": 14, "D0": 42, "c": 2, "M": 192, "cyc": [32, 4, 2, 2], "G": 512, "normimage": 64, "K_N": 8, "H": 4, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 208, "cparts": [{"c": [], "Nc": 1, "n_classes": 16, "min_hits_per_class": 9, "genus_full": false, "genus_pure": false, "genus_mixed": true, "nongenus_pure_chars": 8, "genus_pure_chars": 8, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {"4": 8}, "observable_classes": 512, "complete": true}], "uL_verdict": "CUSP", "uL_nongenus_pure_chars_complete": 8}
+{"s": 15, "D0": 195, "c": 1, "M": 104, "cyc": [24, 4, 2, 2, 2], "G": 768, "normimage": 48, "K_N": 16, "H": 4, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 92, "cparts": [{"c": [], "Nc": 1, "n_classes": 8, "min_hits_per_class": 9, "genus_full": true, "genus_pure": true, "genus_mixed": true, "nongenus_pure_chars": 0, "genus_pure_chars": 48, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {}, "observable_classes": 768, "complete": true}], "uL_verdict": "Eis (all c-parts seen complete)", "uL_nongenus_pure_chars_complete": 0}
+{"s": 19, "D0": 323, "c": 1, "M": 136, "cyc": [32, 4, 2, 2, 2], "G": 1024, "normimage": 64, "K_N": 16, "H": 8, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 62, "cparts": [{"c": [], "Nc": 1, "n_classes": 8, "min_hits_per_class": 6, "genus_full": false, "genus_pure": false, "genus_mixed": true, "nongenus_pure_chars": 32, "genus_pure_chars": 32, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {"2": 4, "16": 16, "8": 8, "4": 4}, "observable_classes": 1021, "complete": false}], "uL_verdict": "Eis on complete c-parts; 1 incomplete", "uL_nongenus_pure_chars_complete": 0}
+{"s": 25, "D0": 23, "c": 5, "M": 920, "cyc": [264, 4, 2, 2, 2], "G": 8448, "normimage": 176, "K_N": 48, "H": 24, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 35, "cparts": [{"c": [], "Nc": 1, "n_classes": 21, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": false, "nongenus_pure_chars": 2288, "genus_pure_chars": 352, "nongenus_mixed_chars": 3168, "nongenus_pure_char_orders": {"4": 16, "264": 640, "132": 800, "88": 320, "66": 140, "44": 160, "33": 20, "24": 64, "12": 80, "8": 32, "6": 14, "3": 2}, "observable_classes": 5327, "complete": false}, {"c": [[5, "[5, 0]~", 1]], "Nc": 25, "n_classes": 6, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": false, "nongenus_pure_chars": 3564, "genus_pure_chars": 308, "nongenus_mixed_chars": 3696, "nongenus_pure_char_orders": {"2": 8, "4": 24, "264": 1280, "132": 800, "88": 640, "66": 200, "44": 240, "24": 128, "22": 80, "12": 80, "8": 64, "6": 20}, "observable_classes": 284, "complete": false}, {"c": [[5, "[5, 0]~", 2]], "Nc": 625, "n_classes": 1, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": false, "nongenus_pure_chars": 3168, "genus_pure_chars": 352, "nongenus_mixed_chars": 3520, "nongenus_pure_char_orders": {"264": 1280, "132": 960, "88": 320, "66": 300, "33": 20, "24": 128, "12": 96, "8": 32, "6": 30, "3": 2}, "observable_classes": 12, "complete": false}], "uL_verdict": "Eis on complete c-parts; 3 incomplete", "uL_nongenus_pure_chars_complete": 0}
+{"s": 41, "D0": 1599, "c": 1, "M": 312, "cyc": [24, 12, 4, 2, 2], "G": 4608, "normimage": 96, "K_N": 48, "H": 24, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 18, "cparts": [{"c": [], "Nc": 1, "n_classes": 7, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": true, "nongenus_pure_chars": 2112, "genus_pure_chars": 192, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {"4": 64, "12": 800, "24": 1024, "8": 128, "6": 90, "3": 6}, "observable_classes": 3955, "complete": false}], "uL_verdict": "Eis on complete c-parts; 1 incomplete", "uL_nongenus_pure_chars_complete": 0}
+
+===== END FILE uL_rayclass_M2.log =====
+===== BEGIN FILE uL_rayclass_M2_big.log bytes=1783 sha256=e8af48b1e3f5788eae03c269381370cdf516eff2f429b55dd711c57e9e1ee056 =====
+PARI stack size set to 6000000000 bytes, maximum size set to 6000001024
+{"s": 11, "D0": 11, "c": 3, "M": 216, "cyc": [72, 4, 2, 2], "G": 1152, "normimage": 72, "K_N": 16, "H": 8, "mu": 1, "Nmax": 80000, "count_check_maxdiff": 0, "n_nu": 669, "cparts": [{"c": [], "Nc": 1, "n_classes": 24, "min_hits_per_class": 24, "genus_full": false, "genus_pure": false, "genus_mixed": true, "nongenus_pure_chars": 12, "genus_pure_chars": 12, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {"12": 8, "4": 4}, "observable_classes": 1152, "complete": true}], "uL_verdict": "CUSP", "uL_nongenus_pure_chars_complete": 12}
+{"s": 19, "D0": 323, "c": 1, "M": 136, "cyc": [32, 4, 2, 2, 2], "G": 1024, "normimage": 64, "K_N": 16, "H": 8, "mu": 1, "Nmax": 80000, "count_check_maxdiff": 0, "n_nu": 235, "cparts": [{"c": [], "Nc": 1, "n_classes": 8, "min_hits_per_class": 25, "genus_full": false, "genus_pure": false, "genus_mixed": true, "nongenus_pure_chars": 32, "genus_pure_chars": 32, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {"2": 4, "16": 16, "8": 8, "4": 4}, "observable_classes": 1024, "complete": true}], "uL_verdict": "CUSP", "uL_nongenus_pure_chars_complete": 32}
+{"s": 41, "D0": 1599, "c": 1, "M": 312, "cyc": [24, 12, 4, 2, 2], "G": 4608, "normimage": 96, "K_N": 48, "H": 24, "mu": 1, "Nmax": 80000, "count_check_maxdiff": 0, "n_nu": 60, "cparts": [{"c": [], "Nc": 1, "n_classes": 8, "min_hits_per_class": 4, "genus_full": false, "genus_pure": false, "genus_mixed": true, "nongenus_pure_chars": 240, "genus_pure_chars": 48, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {"24": 128, "12": 48, "8": 16, "6": 42, "3": 6}, "observable_classes": 4595, "complete": false}], "uL_verdict": "Eis on complete c-parts; 1 incomplete", "uL_nongenus_pure_chars_complete": 0}
+
+===== END FILE uL_rayclass_M2_big.log =====
+===== BEGIN FILE uL_rayclass_M2_stability.txt bytes=3068 sha256=0400e4bcf1114e54e47d7f2b4a4771f37d1386ce4ec3e2dc0578bda58977f0de =====
+7 M=40 [8, 4, 2, 2] |G|=128 |K_N|=8 |H|=4 cnt_dev=0 -> Eis (all c-parts seen complete) nongenus pure chars (complete parts) = 0
+    c=[] Nc=1 |T|=8 obs=128 complete=True genus_pure=True genus_mixed=True ng_pure=0 orders={}
+11 M=216 [72, 4, 2, 2] |G|=1152 |K_N|=16 |H|=8 cnt_dev=0 -> Eis on complete c-parts; 1 incomplete nongenus pure chars (complete parts) = 0
+    c=[] Nc=1 |T|=24 obs=1149 complete=False genus_pure=False genus_mixed=True ng_pure=12 orders={'12': 8, '4': 4}
+14 M=192 [32, 4, 2, 2] |G|=512 |K_N|=8 |H|=4 cnt_dev=0 -> CUSP nongenus pure chars (complete parts) = 8
+    c=[] Nc=1 |T|=16 obs=512 complete=True genus_pure=False genus_mixed=True ng_pure=8 orders={'4': 8}
+15 M=104 [24, 4, 2, 2, 2] |G|=768 |K_N|=16 |H|=4 cnt_dev=0 -> Eis (all c-parts seen complete) nongenus pure chars (complete parts) = 0
+    c=[] Nc=1 |T|=8 obs=768 complete=True genus_pure=True genus_mixed=True ng_pure=0 orders={}
+19 M=136 [32, 4, 2, 2, 2] |G|=1024 |K_N|=16 |H|=8 cnt_dev=0 -> Eis on complete c-parts; 1 incomplete nongenus pure chars (complete parts) = 0
+    c=[] Nc=1 |T|=8 obs=1021 complete=False genus_pure=False genus_mixed=True ng_pure=32 orders={'2': 4, '16': 16, '8': 8, '4': 4}
+25 M=920 [264, 4, 2, 2, 2] |G|=8448 |K_N|=48 |H|=24 cnt_dev=0 -> Eis on complete c-parts; 3 incomplete nongenus pure chars (complete parts) = 0
+    c=[] Nc=1 |T|=21 obs=5327 complete=False genus_pure=False genus_mixed=False ng_pure=2288 orders={'4': 16, '264': 640, '132': 800, '88': 320, '66': 140, '44': 160, '33': 20, '24': 64, '12': 80, '8': 32, '6': 14, '3': 2}
+    c=[[5, '[5, 0]~', 1]] Nc=25 |T|=6 obs=284 complete=False genus_pure=False genus_mixed=False ng_pure=3564 orders={'2': 8, '4': 24, '264': 1280, '132': 800, '88': 640, '66': 200, '44': 240, '24': 128, '22': 80, '12': 80, '8': 64, '6': 20}
+    c=[[5, '[5, 0]~', 2]] Nc=625 |T|=1 obs=12 complete=False genus_pure=False genus_mixed=False ng_pure=3168 orders={'264': 1280, '132': 960, '88': 320, '66': 300, '33': 20, '24': 128, '12': 96, '8': 32, '6': 30, '3': 2}
+41 M=312 [24, 12, 4, 2, 2] |G|=4608 |K_N|=48 |H|=24 cnt_dev=0 -> Eis on complete c-parts; 1 incomplete nongenus pure chars (complete parts) = 0
+    c=[] Nc=1 |T|=7 obs=3955 complete=False genus_pure=False genus_mixed=True ng_pure=2112 orders={'4': 64, '12': 800, '24': 1024, '8': 128, '6': 90, '3': 6}
+11 M=216 [72, 4, 2, 2] |G|=1152 |K_N|=16 |H|=8 cnt_dev=0 -> CUSP nongenus pure chars (complete parts) = 12
+    c=[] Nc=1 |T|=24 obs=1152 complete=True genus_pure=False genus_mixed=True ng_pure=12 orders={'12': 8, '4': 4}
+19 M=136 [32, 4, 2, 2, 2] |G|=1024 |K_N|=16 |H|=8 cnt_dev=0 -> CUSP nongenus pure chars (complete parts) = 32
+    c=[] Nc=1 |T|=8 obs=1024 complete=True genus_pure=False genus_mixed=True ng_pure=32 orders={'2': 4, '16': 16, '8': 8, '4': 4}
+41 M=312 [24, 12, 4, 2, 2] |G|=4608 |K_N|=48 |H|=24 cnt_dev=0 -> Eis on complete c-parts; 1 incomplete nongenus pure chars (complete parts) = 0
+    c=[] Nc=1 |T|=8 obs=4595 complete=False genus_pure=False genus_mixed=True ng_pure=240 orders={'24': 128, '12': 48, '8': 16, '6': 42, '3': 6}
+
+===== END FILE uL_rayclass_M2_stability.txt =====
+===== BEGIN FILE uL_rayclass_main.log bytes=20300 sha256=ecc0e84bda3b626175279c8adc7c4fa3248e54f64d79bfdeddb696f29fb146b8 =====
+PARI stack size set to 6000000000 bytes, maximum size set to 6000001024
+{"s": 5, "D0": 15, "c": 1, "M": 12, "cyc": [4, 2, 2], "G": 16, "normimage": 4, "K_N": 4, "H": 2, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 887, "cparts": [{"c": [], "Nc": 1, "n_classes": 2, "min_hits_per_class": 443, "genus_full": true, "genus_pure": true, "genus_mixed": true, "nongenus_pure_chars": 0, "genus_pure_chars": 4, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {}, "observable_classes": 16, "complete": true}], "uL_verdict": "Eis (all c-parts seen complete)", "uL_nongenus_pure_chars_complete": 0}
+{"s": 6, "D0": 6, "c": 2, "M": 32, "cyc": [16, 2, 2], "G": 64, "normimage": 16, "K_N": 4, "H": 2, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 1170, "cparts": [{"c": [], "Nc": 1, "n_classes": 8, "min_hits_per_class": 145, "genus_full": true, "genus_pure": true, "genus_mixed": true, "nongenus_pure_chars": 0, "genus_pure_chars": 4, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {}, "observable_classes": 64, "complete": true}], "uL_verdict": "Eis (all c-parts seen complete)", "uL_nongenus_pure_chars_complete": 0}
+{"s": 7, "D0": 35, "c": 1, "M": 20, "cyc": [8, 2, 2], "G": 32, "normimage": 8, "K_N": 4, "H": 2, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 418, "cparts": [{"c": [], "Nc": 1, "n_classes": 2, "min_hits_per_class": 207, "genus_full": true, "genus_pure": true, "genus_mixed": true, "nongenus_pure_chars": 0, "genus_pure_chars": 8, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {}, "observable_classes": 32, "complete": true}], "uL_verdict": "Eis (all c-parts seen complete)", "uL_nongenus_pure_chars_complete": 0}
+{"s": 8, "D0": 3, "c": 4, "M": 96, "cyc": [16, 2, 2, 2], "G": 128, "normimage": 16, "K_N": 8, "H": 4, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 2536, "cparts": [{"c": [], "Nc": 1, "n_classes": 32, "min_hits_per_class": 37, "genus_full": true, "genus_pure": true, "genus_mixed": true, "nongenus_pure_chars": 0, "genus_pure_chars": 2, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {}, "observable_classes": 128, "complete": true}, {"c": [[2, "[1, 1]~", 1]], "Nc": 2, "n_classes": 64, "min_hits_per_class": 17, "genus_full": true, "genus_pure": true, "genus_mixed": true, "nongenus_pure_chars": 0, "genus_pure_chars": 2, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {}, "observable_classes": 128, "complete": true}], "uL_verdict": "Eis (all c-parts seen complete)", "uL_nongenus_pure_chars_complete": 0}
+{"s": 9, "D0": 7, "c": 3, "M": 84, "cyc": [6, 2, 2, 2, 2], "G": 96, "normimage": 12, "K_N": 8, "H": 4, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 251, "cparts": [{"c": [], "Nc": 1, "n_classes": 4, "min_hits_per_class": 40, "genus_full": true, "genus_pure": true, "genus_mixed": true, "nongenus_pure_chars": 0, "genus_pure_chars": 12, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {}, "observable_classes": 96, "complete": true}, {"c": [[3, "[-1, 1]~", 1], [3, "[1, 1]~", 1]], "Nc": 9, "n_classes": 8, "min_hits_per_class": 4, "genus_full": true, "genus_pure": true, "genus_mixed": true, "nongenus_pure_chars": 0, "genus_pure_chars": 6, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {}, "observable_classes": 96, "complete": true}, {"c": [[3, "[-1, 1]~", 1], [3, "[1, 1]~", 2]], "Nc": 27, "n_classes": 6, "min_hits_per_class": 1, "genus_full": false, "genus_pure": true, "genus_mixed": false, "nongenus_pure_chars": 0, "genus_pure_chars": 24, "nongenus_mixed_chars": 24, "nongenus_pure_char_orders": {}, "observable_classes": 82, "complete": false}, {"c": [[3, "[-1, 1]~", 2], [3, "[1, 1]~", 1]], "Nc": 27, "n_classes": 7, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": false, "nongenus_pure_chars": 24, "genus_pure_chars": 24, "nongenus_mixed_chars": 48, "nongenus_pure_char_orders": {"2": 8, "6": 16}, "observable_classes": 82, "complete": false}, {"c": [[3, "[-1, 1]~", 3], [3, "[1, 1]~", 1]], "Nc": 81, "n_classes": 3, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": true, "nongenus_pure_chars": 24, "genus_pure_chars": 24, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {"2": 8, "6": 16}, "observable_classes": 43, "complete": false}, {"c": [[3, "[-1, 1]~", 2], [3, "[1, 1]~", 2]], "Nc": 81, "n_classes": 3, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": true, "nongenus_pure_chars": 24, "genus_pure_chars": 24, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {"2": 8, "6": 16}, "observable_classes": 43, "complete": false}, {"c": [[3, "[-1, 1]~", 1], [3, "[1, 1]~", 3]], "Nc": 81, "n_classes": 3, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": true, "nongenus_pure_chars": 24, "genus_pure_chars": 24, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {"2": 8, "6": 16}, "observable_classes": 43, "complete": false}, {"c": [[3, "[-1, 1]~", 4], [3, "[1, 1]~", 1]], "Nc": 243, "n_classes": 2, "min_hits_per_class": 1, "genus_full": false, "genus_pure": true, "genus_mixed": false, "nongenus_pure_chars": 0, "genus_pure_chars": 24, "nongenus_mixed_chars": 24, "nongenus_pure_char_orders": {}, "observable_classes": 15, "complete": false}, {"c": [[3, "[-1, 1]~", 2], [3, "[1, 1]~", 3]], "Nc": 243, "n_classes": 2, "min_hits_per_class": 1, "genus_full": false, "genus_pure": true, "genus_mixed": false, "nongenus_pure_chars": 0, "genus_pure_chars": 24, "nongenus_mixed_chars": 24, "nongenus_pure_char_orders": {}, "observable_classes": 15, "complete": false}, {"c": [[3, "[-1, 1]~", 1], [3, "[1, 1]~", 4]], "Nc": 243, "n_classes": 1, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": false, "nongenus_pure_chars": 24, "genus_pure_chars": 24, "nongenus_mixed_chars": 48, "nongenus_pure_char_orders": {"2": 8, "6": 16}, "observable_classes": 15, "complete": false}, {"c": [[3, "[-1, 1]~", 3], [3, "[1, 1]~", 2]], "Nc": 243, "n_classes": 1, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": false, "nongenus_pure_chars": 24, "genus_pure_chars": 24, "nongenus_mixed_chars": 48, "nongenus_pure_char_orders": {"2": 8, "6": 16}, "observable_classes": 15, "complete": false}, {"c": [[3, "[-1, 1]~", 1], [3, "[1, 1]~", 5]], "Nc": 729, "n_classes": 1, "min_hits_per_class": 1, "genus_full": false, "genus_pure": true, "genus_mixed": false, "nongenus_pure_chars": 0, "genus_pure_chars": 24, "nongenus_mixed_chars": 24, "nongenus_pure_char_orders": {}, "observable_classes": 4, "complete": false}, {"c": [[3, "[-1, 1]~", 5], [3, "[1, 1]~", 1]], "Nc": 729, "n_classes": 1, "min_hits_per_class": 1, "genus_full": false, "genus_pure": true, "genus_mixed": false, "nongenus_pure_chars": 0, "genus_pure_chars": 24, "nongenus_mixed_chars": 24, "nongenus_pure_char_orders": {}, "observable_classes": 4, "complete": false}, {"c": [[3, "[-1, 1]~", 4], [3, "[1, 1]~", 2]], "Nc": 729, "n_classes": 1, "min_hits_per_class": 1, "genus_full": false, "genus_pure": true, "genus_mixed": false, "nongenus_pure_chars": 0, "genus_pure_chars": 24, "nongenus_mixed_chars": 24, "nongenus_pure_char_orders": {}, "observable_classes": 4, "complete": false}, {"c": [[3, "[-1, 1]~", 3], [3, "[1, 1]~", 3]], "Nc": 729, "n_classes": 1, "min_hits_per_class": 1, "genus_full": false, "genus_pure": true, "genus_mixed": false, "nongenus_pure_chars": 0, "genus_pure_chars": 24, "nongenus_mixed_chars": 24, "nongenus_pure_char_orders": {}, "observable_classes": 4, "complete": false}, {"c": [[3, "[-1, 1]~", 2], [3, "[1, 1]~", 4]], "Nc": 729, "n_classes": 1, "min_hits_per_class": 1, "genus_full": false, "genus_pure": true, "genus_mixed": false, "nongenus_pure_chars": 0, "genus_pure_chars": 24, "nongenus_mixed_chars": 24, "nongenus_pure_char_orders": {}, "observable_classes": 4, "complete": false}], "uL_verdict": "Eis on complete c-parts; 14 incomplete", "uL_nongenus_pure_chars_complete": 0}
+{"s": 10, "D0": 5, "c": 4, "M": 128, "cyc": [32, 2, 2], "G": 128, "normimage": 64, "K_N": 2, "H": 2, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 404, "cparts": [{"c": [], "Nc": 1, "n_classes": 8, "min_hits_per_class": 49, "genus_full": true, "genus_pure": true, "genus_mixed": true, "nongenus_pure_chars": 0, "genus_pure_chars": 8, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {}, "observable_classes": 128, "complete": true}], "uL_verdict": "Eis (all c-parts seen complete)", "uL_nongenus_pure_chars_complete": 0}
+{"s": 11, "D0": 11, "c": 3, "M": 108, "cyc": [72, 2, 2], "G": 288, "normimage": 36, "K_N": 8, "H": 4, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 168, "cparts": [{"c": [], "Nc": 1, "n_classes": 6, "min_hits_per_class": 26, "genus_full": false, "genus_pure": false, "genus_mixed": true, "nongenus_pure_chars": 12, "genus_pure_chars": 12, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {"12": 8, "4": 4}, "observable_classes": 288, "complete": true}], "uL_verdict": "CUSP", "uL_nongenus_pure_chars_complete": 12}
+{"s": 12, "D0": 30, "c": 2, "M": 80, "cyc": [8, 8, 2, 2], "G": 256, "normimage": 32, "K_N": 8, "H": 4, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 564, "cparts": [{"c": [], "Nc": 1, "n_classes": 16, "min_hits_per_class": 33, "genus_full": true, "genus_pure": true, "genus_mixed": true, "nongenus_pure_chars": 0, "genus_pure_chars": 8, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {}, "observable_classes": 256, "complete": true}], "uL_verdict": "Eis (all c-parts seen complete)", "uL_nongenus_pure_chars_complete": 0}
+{"s": 13, "D0": 143, "c": 1, "M": 44, "cyc": [20, 2, 2], "G": 80, "normimage": 20, "K_N": 4, "H": 2, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 120, "cparts": [{"c": [], "Nc": 1, "n_classes": 2, "min_hits_per_class": 60, "genus_full": true, "genus_pure": true, "genus_mixed": true, "nongenus_pure_chars": 0, "genus_pure_chars": 20, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {}, "observable_classes": 80, "complete": true}], "uL_verdict": "Eis (all c-parts seen complete)", "uL_nongenus_pure_chars_complete": 0}
+{"s": 14, "D0": 42, "c": 2, "M": 96, "cyc": [16, 4, 2, 2], "G": 256, "normimage": 32, "K_N": 8, "H": 4, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 208, "cparts": [{"c": [], "Nc": 1, "n_classes": 8, "min_hits_per_class": 23, "genus_full": false, "genus_pure": false, "genus_mixed": true, "nongenus_pure_chars": 8, "genus_pure_chars": 8, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {"4": 8}, "observable_classes": 256, "complete": true}], "uL_verdict": "CUSP", "uL_nongenus_pure_chars_complete": 8}
+{"s": 15, "D0": 195, "c": 1, "M": 52, "cyc": [24, 2, 2, 2], "G": 192, "normimage": 24, "K_N": 8, "H": 2, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 92, "cparts": [{"c": [], "Nc": 1, "n_classes": 2, "min_hits_per_class": 45, "genus_full": true, "genus_pure": true, "genus_mixed": true, "nongenus_pure_chars": 0, "genus_pure_chars": 48, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {}, "observable_classes": 192, "complete": true}], "uL_verdict": "Eis (all c-parts seen complete)", "uL_nongenus_pure_chars_complete": 0}
+{"s": 16, "D0": 14, "c": 4, "M": 224, "cyc": [48, 4, 2, 2], "G": 768, "normimage": 48, "K_N": 16, "H": 8, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 650, "cparts": [{"c": [], "Nc": 1, "n_classes": 32, "min_hits_per_class": 8, "genus_full": true, "genus_pure": true, "genus_mixed": true, "nongenus_pure_chars": 0, "genus_pure_chars": 12, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {}, "observable_classes": 768, "complete": true}, {"c": [[2, "[0, 1]~", 1]], "Nc": 2, "n_classes": 64, "min_hits_per_class": 3, "genus_full": true, "genus_pure": true, "genus_mixed": true, "nongenus_pure_chars": 0, "genus_pure_chars": 6, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {}, "observable_classes": 766, "complete": false}], "uL_verdict": "Eis on complete c-parts; 1 incomplete", "uL_nongenus_pure_chars_complete": 0}
+{"s": 17, "D0": 255, "c": 1, "M": 60, "cyc": [8, 4, 2, 2], "G": 128, "normimage": 16, "K_N": 8, "H": 4, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 73, "cparts": [{"c": [], "Nc": 1, "n_classes": 2, "min_hits_per_class": 36, "genus_full": false, "genus_pure": false, "genus_mixed": true, "nongenus_pure_chars": 16, "genus_pure_chars": 16, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {"8": 16}, "observable_classes": 128, "complete": true}], "uL_verdict": "CUSP", "uL_nongenus_pure_chars_complete": 16}
+{"s": 19, "D0": 323, "c": 1, "M": 68, "cyc": [32, 2, 2, 2], "G": 256, "normimage": 32, "K_N": 8, "H": 4, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 62, "cparts": [{"c": [], "Nc": 1, "n_classes": 2, "min_hits_per_class": 31, "genus_full": false, "genus_pure": false, "genus_mixed": true, "nongenus_pure_chars": 32, "genus_pure_chars": 32, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {"2": 4, "16": 16, "8": 8, "4": 4}, "observable_classes": 256, "complete": true}], "uL_verdict": "CUSP", "uL_nongenus_pure_chars_complete": 32}
+{"s": 21, "D0": 399, "c": 1, "M": 76, "cyc": [72, 2, 2, 2], "G": 576, "normimage": 36, "K_N": 16, "H": 4, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 51, "cparts": [{"c": [], "Nc": 1, "n_classes": 2, "min_hits_per_class": 25, "genus_full": false, "genus_pure": false, "genus_mixed": true, "nongenus_pure_chars": 72, "genus_pure_chars": 72, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {"36": 48, "12": 16, "4": 8}, "observable_classes": 576, "complete": true}], "uL_verdict": "CUSP", "uL_nongenus_pure_chars_complete": 72}
+{"s": 22, "D0": 110, "c": 2, "M": 160, "cyc": [16, 8, 2, 2], "G": 512, "normimage": 64, "K_N": 8, "H": 4, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 93, "cparts": [{"c": [], "Nc": 1, "n_classes": 8, "min_hits_per_class": 9, "genus_full": false, "genus_pure": false, "genus_mixed": true, "nongenus_pure_chars": 16, "genus_pure_chars": 16, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {"8": 16}, "observable_classes": 512, "complete": true}], "uL_verdict": "CUSP", "uL_nongenus_pure_chars_complete": 16}
+{"s": 23, "D0": 483, "c": 1, "M": 84, "cyc": [12, 4, 2, 2], "G": 192, "normimage": 24, "K_N": 8, "H": 4, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 44, "cparts": [{"c": [], "Nc": 1, "n_classes": 2, "min_hits_per_class": 21, "genus_full": false, "genus_pure": false, "genus_mixed": true, "nongenus_pure_chars": 24, "genus_pure_chars": 24, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {"4": 8, "12": 16}, "observable_classes": 192, "complete": true}], "uL_verdict": "CUSP", "uL_nongenus_pure_chars_complete": 24}
+{"s": 24, "D0": 33, "c": 4, "M": 352, "cyc": [40, 2, 2, 2, 2], "G": 640, "normimage": 160, "K_N": 4, "H": 4, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 305, "cparts": [{"c": [], "Nc": 1, "n_classes": 16, "min_hits_per_class": 7, "genus_full": true, "genus_pure": true, "genus_mixed": true, "nongenus_pure_chars": 0, "genus_pure_chars": 20, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {}, "observable_classes": 640, "complete": true}, {"c": [[2, "[-1, 1]~", 2], [2, "[2, 1]~", 1]], "Nc": 8, "n_classes": 22, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": false, "nongenus_pure_chars": 140, "genus_pure_chars": 160, "nongenus_mixed_chars": 300, "nongenus_pure_char_orders": {"2": 4, "40": 64, "20": 32, "10": 16, "8": 16, "4": 8}, "observable_classes": 474, "complete": false}, {"c": [[2, "[-1, 1]~", 1], [2, "[2, 1]~", 2]], "Nc": 8, "n_classes": 21, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": false, "nongenus_pure_chars": 160, "genus_pure_chars": 160, "nongenus_mixed_chars": 320, "nongenus_pure_char_orders": {"2": 8, "40": 64, "20": 32, "10": 32, "8": 16, "4": 8}, "observable_classes": 474, "complete": false}, {"c": [[2, "[-1, 1]~", 3], [2, "[2, 1]~", 1]], "Nc": 16, "n_classes": 16, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": false, "nongenus_pure_chars": 160, "genus_pure_chars": 150, "nongenus_mixed_chars": 160, "nongenus_pure_char_orders": {"2": 8, "40": 64, "20": 32, "10": 32, "8": 16, "4": 8}, "observable_classes": 291, "complete": false}, {"c": [[2, "[-1, 1]~", 1], [2, "[2, 1]~", 3]], "Nc": 16, "n_classes": 16, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": false, "nongenus_pure_chars": 160, "genus_pure_chars": 150, "nongenus_mixed_chars": 160, "nongenus_pure_char_orders": {"2": 8, "40": 64, "20": 32, "10": 32, "8": 16, "4": 8}, "observable_classes": 291, "complete": false}, {"c": [[2, "[-1, 1]~", 1], [2, "[2, 1]~", 4]], "Nc": 32, "n_classes": 10, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": false, "nongenus_pure_chars": 140, "genus_pure_chars": 160, "nongenus_mixed_chars": 300, "nongenus_pure_char_orders": {"2": 4, "40": 64, "20": 32, "10": 16, "8": 16, "4": 8}, "observable_classes": 166, "complete": false}, {"c": [[2, "[-1, 1]~", 4], [2, "[2, 1]~", 1]], "Nc": 32, "n_classes": 8, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": false, "nongenus_pure_chars": 140, "genus_pure_chars": 150, "nongenus_mixed_chars": 290, "nongenus_pure_char_orders": {"2": 4, "40": 64, "20": 32, "10": 16, "8": 16, "4": 8}, "observable_classes": 166, "complete": false}, {"c": [[2, "[-1, 1]~", 5], [2, "[2, 1]~", 1]], "Nc": 64, "n_classes": 5, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": false, "nongenus_pure_chars": 120, "genus_pure_chars": 160, "nongenus_mixed_chars": 160, "nongenus_pure_char_orders": {"40": 64, "20": 32, "8": 16, "4": 8}, "observable_classes": 91, "complete": false}, {"c": [[2, "[-1, 1]~", 1], [2, "[2, 1]~", 5]], "Nc": 64, "n_classes": 5, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": false, "nongenus_pure_chars": 120, "genus_pure_chars": 160, "nongenus_mixed_chars": 160, "nongenus_pure_char_orders": {"40": 64, "20": 32, "8": 16, "4": 8}, "observable_classes": 91, "complete": false}, {"c": [[2, "[-1, 1]~", 1], [2, "[2, 1]~", 6]], "Nc": 128, "n_classes": 3, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": false, "nongenus_pure_chars": 160, "genus_pure_chars": 160, "nongenus_mixed_chars": 320, "nongenus_pure_char_orders": {"2": 8, "40": 64, "20": 32, "10": 32, "8": 16, "4": 8}, "observable_classes": 45, "complete": false}, {"c": [[2, "[-1, 1]~", 6], [2, "[2, 1]~", 1]], "Nc": 128, "n_classes": 2, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": false, "nongenus_pure_chars": 120, "genus_pure_chars": 120, "nongenus_mixed_chars": 240, "nongenus_pure_char_orders": {"40": 64, "20": 32, "8": 16, "4": 8}, "observable_classes": 45, "complete": false}, {"c": [[2, "[-1, 1]~", 1], [2, "[2, 1]~", 8]], "Nc": 512, "n_classes": 1, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": false, "nongenus_pure_chars": 160, "genus_pure_chars": 160, "nongenus_mixed_chars": 320, "nongenus_pure_char_orders": {"2": 8, "40": 64, "20": 32, "10": 32, "8": 16, "4": 8}, "observable_classes": 13, "complete": false}, {"c": [[2, "[-1, 1]~", 12], [2, "[2, 1]~", 1]], "Nc": 8192, "n_classes": 1, "min_hits_per_class": 1, "genus_full": false, "genus_pure": false, "genus_mixed": false, "nongenus_pure_chars": 160, "genus_pure_chars": 160, "nongenus_mixed_chars": 320, "nongenus_pure_char_orders": {"2": 8, "40": 64, "20": 32, "10": 32, "8": 16, "4": 8}, "observable_classes": 1, "complete": false}], "uL_verdict": "Eis on complete c-parts; 12 incomplete", "uL_nongenus_pure_chars_complete": 0}
+{"s": 41, "D0": 1599, "c": 1, "M": 156, "cyc": [24, 12, 2, 2], "G": 1152, "normimage": 48, "K_N": 24, "H": 12, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 18, "cparts": [{"c": [], "Nc": 1, "n_classes": 2, "min_hits_per_class": 8, "genus_full": false, "genus_pure": false, "genus_mixed": true, "nongenus_pure_chars": 240, "genus_pure_chars": 48, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {"24": 128, "12": 48, "8": 16, "6": 42, "3": 6}, "observable_classes": 1152, "complete": true}], "uL_verdict": "CUSP", "uL_nongenus_pure_chars_complete": 240}
+
+===== END FILE uL_rayclass_main.log =====
+===== BEGIN FILE uL_rayclass_main.txt bytes=4982 sha256=c592a06e2fc8fb5eace06e04f41c9eda12af551c447f81e9c35f4530a2355766 =====
+5 M=12 [4, 2, 2] |G|=16 |K_N|=4 |H|=2 cnt_dev=0 -> Eis (all c-parts seen complete) nongenus pure chars (complete parts) = 0
+    c=[] Nc=1 |T|=2 obs=16 complete=True genus_pure=True genus_mixed=True ng_pure=0 orders={}
+6 M=32 [16, 2, 2] |G|=64 |K_N|=4 |H|=2 cnt_dev=0 -> Eis (all c-parts seen complete) nongenus pure chars (complete parts) = 0
+    c=[] Nc=1 |T|=8 obs=64 complete=True genus_pure=True genus_mixed=True ng_pure=0 orders={}
+7 M=20 [8, 2, 2] |G|=32 |K_N|=4 |H|=2 cnt_dev=0 -> Eis (all c-parts seen complete) nongenus pure chars (complete parts) = 0
+    c=[] Nc=1 |T|=2 obs=32 complete=True genus_pure=True genus_mixed=True ng_pure=0 orders={}
+8 M=96 [16, 2, 2, 2] |G|=128 |K_N|=8 |H|=4 cnt_dev=0 -> Eis (all c-parts seen complete) nongenus pure chars (complete parts) = 0
+    c=[] Nc=1 |T|=32 obs=128 complete=True genus_pure=True genus_mixed=True ng_pure=0 orders={}
+    c=[[2, '[1, 1]~', 1]] Nc=2 |T|=64 obs=128 complete=True genus_pure=True genus_mixed=True ng_pure=0 orders={}
+9 M=84 [6, 2, 2, 2, 2] |G|=96 |K_N|=8 |H|=4 cnt_dev=0 -> Eis on complete c-parts; 14 incomplete nongenus pure chars (complete parts) = 0
+    c=[] Nc=1 |T|=4 obs=96 complete=True genus_pure=True genus_mixed=True ng_pure=0 orders={}
+    c=[[3, '[-1, 1]~', 1], [3, '[1, 1]~', 1]] Nc=9 |T|=8 obs=96 complete=True genus_pure=True genus_mixed=True ng_pure=0 orders={}
+10 M=128 [32, 2, 2] |G|=128 |K_N|=2 |H|=2 cnt_dev=0 -> Eis (all c-parts seen complete) nongenus pure chars (complete parts) = 0
+    c=[] Nc=1 |T|=8 obs=128 complete=True genus_pure=True genus_mixed=True ng_pure=0 orders={}
+11 M=108 [72, 2, 2] |G|=288 |K_N|=8 |H|=4 cnt_dev=0 -> CUSP nongenus pure chars (complete parts) = 12
+    c=[] Nc=1 |T|=6 obs=288 complete=True genus_pure=False genus_mixed=True ng_pure=12 orders={'12': 8, '4': 4}
+12 M=80 [8, 8, 2, 2] |G|=256 |K_N|=8 |H|=4 cnt_dev=0 -> Eis (all c-parts seen complete) nongenus pure chars (complete parts) = 0
+    c=[] Nc=1 |T|=16 obs=256 complete=True genus_pure=True genus_mixed=True ng_pure=0 orders={}
+13 M=44 [20, 2, 2] |G|=80 |K_N|=4 |H|=2 cnt_dev=0 -> Eis (all c-parts seen complete) nongenus pure chars (complete parts) = 0
+    c=[] Nc=1 |T|=2 obs=80 complete=True genus_pure=True genus_mixed=True ng_pure=0 orders={}
+14 M=96 [16, 4, 2, 2] |G|=256 |K_N|=8 |H|=4 cnt_dev=0 -> CUSP nongenus pure chars (complete parts) = 8
+    c=[] Nc=1 |T|=8 obs=256 complete=True genus_pure=False genus_mixed=True ng_pure=8 orders={'4': 8}
+15 M=52 [24, 2, 2, 2] |G|=192 |K_N|=8 |H|=2 cnt_dev=0 -> Eis (all c-parts seen complete) nongenus pure chars (complete parts) = 0
+    c=[] Nc=1 |T|=2 obs=192 complete=True genus_pure=True genus_mixed=True ng_pure=0 orders={}
+16 M=224 [48, 4, 2, 2] |G|=768 |K_N|=16 |H|=8 cnt_dev=0 -> Eis on complete c-parts; 1 incomplete nongenus pure chars (complete parts) = 0
+    c=[] Nc=1 |T|=32 obs=768 complete=True genus_pure=True genus_mixed=True ng_pure=0 orders={}
+    c=[[2, '[0, 1]~', 1]] Nc=2 |T|=64 obs=766 complete=False genus_pure=True genus_mixed=True ng_pure=0 orders={}
+17 M=60 [8, 4, 2, 2] |G|=128 |K_N|=8 |H|=4 cnt_dev=0 -> CUSP nongenus pure chars (complete parts) = 16
+    c=[] Nc=1 |T|=2 obs=128 complete=True genus_pure=False genus_mixed=True ng_pure=16 orders={'8': 16}
+19 M=68 [32, 2, 2, 2] |G|=256 |K_N|=8 |H|=4 cnt_dev=0 -> CUSP nongenus pure chars (complete parts) = 32
+    c=[] Nc=1 |T|=2 obs=256 complete=True genus_pure=False genus_mixed=True ng_pure=32 orders={'2': 4, '16': 16, '8': 8, '4': 4}
+21 M=76 [72, 2, 2, 2] |G|=576 |K_N|=16 |H|=4 cnt_dev=0 -> CUSP nongenus pure chars (complete parts) = 72
+    c=[] Nc=1 |T|=2 obs=576 complete=True genus_pure=False genus_mixed=True ng_pure=72 orders={'36': 48, '12': 16, '4': 8}
+22 M=160 [16, 8, 2, 2] |G|=512 |K_N|=8 |H|=4 cnt_dev=0 -> CUSP nongenus pure chars (complete parts) = 16
+    c=[] Nc=1 |T|=8 obs=512 complete=True genus_pure=False genus_mixed=True ng_pure=16 orders={'8': 16}
+23 M=84 [12, 4, 2, 2] |G|=192 |K_N|=8 |H|=4 cnt_dev=0 -> CUSP nongenus pure chars (complete parts) = 24
+    c=[] Nc=1 |T|=2 obs=192 complete=True genus_pure=False genus_mixed=True ng_pure=24 orders={'4': 8, '12': 16}
+24 M=352 [40, 2, 2, 2, 2] |G|=640 |K_N|=4 |H|=4 cnt_dev=0 -> Eis on complete c-parts; 12 incomplete nongenus pure chars (complete parts) = 0
+    c=[] Nc=1 |T|=16 obs=640 complete=True genus_pure=True genus_mixed=True ng_pure=0 orders={}
+    c=[[2, '[-1, 1]~', 2], [2, '[2, 1]~', 1]] Nc=8 |T|=22 obs=474 complete=False genus_pure=False genus_mixed=False ng_pure=140 orders={'2': 4, '40': 64, '20': 32, '10': 16, '8': 16, '4': 8}
+    c=[[2, '[-1, 1]~', 1], [2, '[2, 1]~', 2]] Nc=8 |T|=21 obs=474 complete=False genus_pure=False genus_mixed=False ng_pure=160 orders={'2': 8, '40': 64, '20': 32, '10': 32, '8': 16, '4': 8}
+41 M=156 [24, 12, 2, 2] |G|=1152 |K_N|=24 |H|=12 cnt_dev=0 -> CUSP nongenus pure chars (complete parts) = 240
+    c=[] Nc=1 |T|=2 obs=1152 complete=True genus_pure=False genus_mixed=True ng_pure=240 orders={'24': 128, '12': 48, '8': 16, '6': 42, '3': 6}
+
+===== END FILE uL_rayclass_main.txt =====
+===== BEGIN FILE uL_rayclass_validate_7_8_11.log bytes=1956 sha256=6f57c323bf3ca617f11b030e2c5ddfaead80d6e04551805c8c56a43404af381e =====
+PARI stack size set to 6000000000 bytes, maximum size set to 6000001024
+{"s": 7, "D0": 35, "c": 1, "M": 20, "cyc": [8, 2, 2], "G": 32, "normimage": 8, "K_N": 4, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 418, "cparts": [{"c": [], "Nc": 1, "n_classes": 2, "min_hits_per_class": 207, "genus_full": true, "genus_pure": true, "genus_mixed": true, "nongenus_pure_chars": 0, "genus_pure_chars": 8, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {}, "observable_classes": 32, "complete": true}], "uL_verdict": "Eis (all c-parts seen complete)", "uL_nongenus_pure_chars_complete": 0}
+{"s": 8, "D0": 3, "c": 4, "M": 96, "cyc": [16, 2, 2, 2], "G": 128, "normimage": 16, "K_N": 8, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 2536, "cparts": [{"c": [], "Nc": 1, "n_classes": 32, "min_hits_per_class": 37, "genus_full": true, "genus_pure": true, "genus_mixed": true, "nongenus_pure_chars": 0, "genus_pure_chars": 2, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {}, "observable_classes": 128, "complete": true}, {"c": [[2, "[1, 1]~", 1]], "Nc": 2, "n_classes": 64, "min_hits_per_class": 17, "genus_full": true, "genus_pure": true, "genus_mixed": true, "nongenus_pure_chars": 0, "genus_pure_chars": 2, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {}, "observable_classes": 128, "complete": true}], "uL_verdict": "Eis (all c-parts seen complete)", "uL_nongenus_pure_chars_complete": 0}
+{"s": 11, "D0": 11, "c": 3, "M": 108, "cyc": [72, 2, 2], "G": 288, "normimage": 36, "K_N": 8, "mu": 1, "Nmax": 20000, "count_check_maxdiff": 0, "n_nu": 168, "cparts": [{"c": [], "Nc": 1, "n_classes": 6, "min_hits_per_class": 26, "genus_full": false, "genus_pure": false, "genus_mixed": true, "nongenus_pure_chars": 12, "genus_pure_chars": 12, "nongenus_mixed_chars": 0, "nongenus_pure_char_orders": {"12": 8, "4": 4}, "observable_classes": 288, "complete": true}], "uL_verdict": "CUSP", "uL_nongenus_pure_chars_complete": 12}
+
+===== END FILE uL_rayclass_validate_7_8_11.log =====
+===== BEGIN FILE uL_rayclass_validate_7_8_11.txt bytes=752 sha256=9bc4eba803241eb9c2816e3fc4e2fab2fa04984f179616a892e2c8e5603f8435 =====
+7 M=20 [8, 2, 2] |G|=32 |K_N|=4 cnt_dev=0 -> Eis (all c-parts seen complete) nongenus pure chars (complete parts) = 0
+    c=[] Nc=1 |T|=2 obs=32 complete=True genus_pure=True genus_mixed=True ng_pure=0 orders={}
+8 M=96 [16, 2, 2, 2] |G|=128 |K_N|=8 cnt_dev=0 -> Eis (all c-parts seen complete) nongenus pure chars (complete parts) = 0
+    c=[] Nc=1 |T|=32 obs=128 complete=True genus_pure=True genus_mixed=True ng_pure=0 orders={}
+    c=[[2, '[1, 1]~', 1]] Nc=2 |T|=64 obs=128 complete=True genus_pure=True genus_mixed=True ng_pure=0 orders={}
+11 M=108 [72, 2, 2] |G|=288 |K_N|=8 cnt_dev=0 -> CUSP nongenus pure chars (complete parts) = 12
+    c=[] Nc=1 |T|=6 obs=288 complete=True genus_pure=False genus_mixed=True ng_pure=12 orders={'12': 8, '4': 4}
+
+===== END FILE uL_rayclass_validate_7_8_11.txt =====
+===== BEGIN FILE uL_rule_table.txt bytes=1800 sha256=06dc12b26d293c38e6c5ca0336d91ad1cc65b691f78765e52fd4eb0f3b70e337 =====
+ s     D    h+  gen |Cl+^2| L       hit/mixed (k=1)  mixed at all k  u_L cusp?  rule(h+!=gen) agrees
+ 5     60    4    4     1     240    16/0          none       Eis       True
+ 6     24    2    2     1     384    32/0          none       Eis       True
+ 7    140    4    4     1     560    24/0          none       Eis       True
+ 8     48    2    2     1     384    64/0          none       Eis       True
+ 9    252    4    4     1     336     8/0          none       Eis       True
+10     80    2    2     1    2560   128/0          none       Eis       True
+11    396    8    4     2    4752   120/120        True       CUSP      True
+12    120    4    4     1     960    32/0          none       Eis       True
+13    572    4    4     1    2288    48/0          none       Eis       True
+14    168    4    4     1    2688    96/96         True       CUSP      False
+15    780    8    8     1    3120    16/0          none       Eis       True
+16    224    4    4     1     896    32/0          none       Eis       True
+17   1020    8    8     1    4080    64/64         True       CUSP      False
+18    288    4    4     1    3072    64/64         True       CUSP      False
+19   1292    8    4     2    5168    72/72         True       CUSP      True
+20    360    4    4     1    8640   192/0          none       Eis       True
+21   1596   16    8     2    6384    24/24         True       CUSP      True
+22    440    4    4     1    7040   160/160        True       CUSP      False
+23   1932    8    8     1    7728    88/88         True       CUSP      False
+24    528    4    4     1    4224    64/0          none       Eis       True
+25   2300   12    4     3    1840    16/16         True       CUSP      True
+41   6396   24    8     3   25584   160/160        True       CUSP      True
+
+===== END FILE uL_rule_table.txt =====
