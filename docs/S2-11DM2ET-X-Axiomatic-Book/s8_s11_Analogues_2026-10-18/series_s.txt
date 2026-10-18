@@ -1,0 +1,18 @@
+s=7: a=(Fraction(7, 10), Fraction(-1, 5)), c0=7/20, Theta_hol(Q_- form) == Mm - R: True;  2P_s == E + 1 + theta3 - Theta_hol (to q^3000): True
+   E == sum over gamma-cone [r,gamma r), r=(1, 0): True
+   E == sum over gamma-cone [r,gamma r), r=(1, 1): True
+   E == sum over gamma-cone [r,gamma r), r=(2, 1): True
+   E == sum over gamma-cone [r,gamma r), r=(1, 2): True
+   E_(-a) == E_a: True;  first E coefficients (q^0..q^40): [0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 1, 0, 1, 0]
+s=8: a=(Fraction(2, 3), Fraction(-1, 6)), c0=1/3, Theta_hol(Q_- form) == Mm - R: True;  2P_s == E + 1 + theta3 - Theta_hol (to q^3000): True
+   E == sum over gamma-cone [r,gamma r), r=(1, 0): True
+   E == sum over gamma-cone [r,gamma r), r=(1, 1): True
+   E == sum over gamma-cone [r,gamma r), r=(2, 1): True
+   E == sum over gamma-cone [r,gamma r), r=(1, 2): True
+   E_(-a) == E_a: True;  first E coefficients (q^0..q^40): [0, 1, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0]
+s=11: a=(Fraction(11, 18), Fraction(-1, 9)), c0=11/36, Theta_hol(Q_- form) == Mm - R: True;  2P_s == E + 1 + theta3 - Theta_hol (to q^3000): True
+   E == sum over gamma-cone [r,gamma r), r=(1, 0): True
+   E == sum over gamma-cone [r,gamma r), r=(1, 1): True
+   E == sum over gamma-cone [r,gamma r), r=(2, 1): True
+   E == sum over gamma-cone [r,gamma r), r=(1, 2): True
+   E_(-a) == E_a: True;  first E coefficients (q^0..q^40): [0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0]
