@@ -1,0 +1,9 @@
+x0=1.0: holomorphic fit deg 14 on 135 upper-half-plane points (Im z >= 0.010), max fit residual 6.20e-13
+   compared on real axis at 63 rationals (denominators up to 47): max |psi_exact - fit| = 8.57e-13
+   fit: psi(x0)=0.0068839938-0.0382597122j  psi'(x0)=0.0126543698-0.0603330332j; exact psi(x0)=0.0068839938-0.0382597122j
+x0=0.5: holomorphic fit deg 14 on 135 upper-half-plane points (Im z >= 0.010), max fit residual 1.49e-12
+   compared on real axis at 43 rationals (denominators up to 47): max |psi_exact - fit| = 2.30e-12
+   fit: psi(x0)=0.0016038355-0.0118845135j  psi'(x0)=0.0075433116-0.0424643973j; exact psi(x0)=0.0016038355-0.0118845135j
+x0=1.6: holomorphic fit deg 14 on 135 upper-half-plane points (Im z >= 0.010), max fit residual 9.48e-14
+   compared on real axis at 63 rationals (denominators up to 47): max |psi_exact - fit| = 6.70e-13
+   fit: psi(x0)=0.0149817089-0.0772980282j  psi'(x0)=0.0137878017-0.0683872967j; exact psi(x0)=0.0149817089-0.0772980282j
