@@ -1,0 +1,7 @@
+PARI stack size set to 3000000000 bytes, maximum size set to 3000000512
+s=8 D=48 m=2:9,3:3 Cl_m^+ cyc=[24, 2, 2, 2] order 192
+points: 109498
+ideal data done; distinct B ideals: 18261
+classes with known min norm: 192 of 192
+max over classes of min norm: 4873
+inconsistent per-ideal weights: 0;  components with full coverage: 28/48; min coverage 0.000
