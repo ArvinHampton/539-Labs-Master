@@ -1,0 +1,669 @@
+# OUTPUTS BUNDLE — Cross_Review_2026-10-18 (2026-10-18)
+# The text outputs (json/log/txt/sha256) of this package, concatenated verbatim, one member per file.
+# Reports (.md) and scripts (.py/.sh) are stored as separate files in this folder. Binary files (pkl/npz/npy), __pycache__ and empty logs are excluded.
+# Reason for bundling: the push tool accepts at most 4 file attachments per commit; bundling keeps the commit count modest.
+# Member format: a line "===== BEGIN FILE <relative path> bytes=<n> sha256=<hex> =====", then exactly <n> bytes, then "\n===== END FILE <relative path> =====".
+# Extract (Python 3, run in this folder):
+#   import hashlib,os,re; d=open('OUTPUTS_BUNDLE_2026-10-18.txt','rb').read(); i=0
+#   for m in re.finditer(rb'===== BEGIN FILE (\S+) bytes=(\d+) sha256=([0-9a-f]+) =====\n', d):
+#       if m.start()<i: continue
+#       p,n,h=m.group(1).decode(),int(m.group(2)),m.group(3).decode(); b=d[m.end():m.end()+n]; i=m.end()+n
+#       assert hashlib.sha256(b).hexdigest()==h; os.makedirs(os.path.dirname(p) or '.',exist_ok=True); open(p,'wb').write(b)
+# Members: 8
+===== BEGIN FILE cr1_T_spectrum_and_convention.txt bytes=813 sha256=77413c117a9de0d7f7a83d9326d2a4bdd490e14b8dca181a393677c97f503c7e =====
+dims: V_Eis=A3xW5+xW7+=36, V_cusp=B1xW5-xW7-=6, B1xW5+xW7+=12, A3xW5-xW7-=18; total 72
+(a) tensor-model T multiset on Fix(P) == S-Eigenvalues list: True
+    V_Eis simple with 36 distinct values: True
+    V_cusp values (x140): [19, 31, 59, 111, 131, 139]
+    V42 raw residues for V_cusp: mod4 [3], mod5 [1, 4], mod7 [3, 5, 6]
+    true local exps for V_cusp:  x4 [1], x5 [2, 3], x7 [1, 2, 4]
+    quadratic residue check: 2 is a square mod 7: True; 2 square mod 5: False; 3 square mod 7: False
+(b) s=7: |S^2-P|=5.3e-15 |(ST)^3-I|=1.6e-14 |(ST)^3-S^2|=1.6e+01 |(S^-1 T)^3 - S^-2|=2.3e-14 |P-I|=1.6e+01
+(b) s=8: |S^2-P|=3.9e-15 |(ST)^3-I|=9.5e-15 |(ST)^3-S^2|=9.4e+00 |(S^-1 T)^3 - S^-2|=1.7e-14 |P-I|=9.4e+00
+(b) s=11: |S^2-P|=1.2e-14 |(ST)^3-I|=3.5e-14 |(ST)^3-S^2|=2.8e+01 |(S^-1 T)^3 - S^-2|=8.4e-14 |P-I|=2.8e+01
+
+===== END FILE cr1_T_spectrum_and_convention.txt =====
+===== BEGIN FILE cr2_orbit_bound.json bytes=2880 sha256=d281d6d50bd6093f7f79d06a6632439a72fe049d54d321d1f45e19059471c140 =====
+[
+ {
+  "s": 5,
+  "labels": 60,
+  "dimV_upper": 20,
+  "zero_labels": 7,
+  "dimV_cusp_onset_svd": 20,
+  "match": true,
+  "s(s-1)": 20
+ },
+ {
+  "s": 6,
+  "labels": 24,
+  "dimV_upper": 12,
+  "zero_labels": 0,
+  "dimV_cusp_onset_svd": 12,
+  "match": true
+ },
+ {
+  "s": 7,
+  "labels": 140,
+  "dimV_upper": 42,
+  "zero_labels": 11,
+  "dimV_cusp_onset_svd": 42,
+  "match": true,
+  "s(s-1)": 42
+ },
+ {
+  "s": 8,
+  "labels": 48,
+  "dimV_upper": 20,
+  "zero_labels": 0,
+  "dimV_cusp_onset_svd": 18,
+  "match": false
+ },
+ {
+  "s": 9,
+  "labels": 252,
+  "dimV_upper": 72,
+  "zero_labels": 15,
+  "dimV_cusp_onset_svd": 72,
+  "match": true,
+  "s(s-1)": 72
+ },
+ {
+  "s": 10,
+  "labels": 80,
+  "dimV_upper": 30,
+  "zero_labels": 0,
+  "dimV_cusp_onset_svd": 30,
+  "match": true
+ },
+ {
+  "s": 11,
+  "labels": 396,
+  "dimV_upper": 110,
+  "zero_labels": 19,
+  "dimV_cusp_onset_svd": 110,
+  "match": true,
+  "s(s-1)": 110
+ },
+ {
+  "s": 12,
+  "labels": 120,
+  "dimV_upper": 42,
+  "zero_labels": 0,
+  "dimV_cusp_onset_svd": 42,
+  "match": true
+ },
+ {
+  "s": 13,
+  "labels": 572,
+  "dimV_upper": 156,
+  "zero_labels": 23,
+  "dimV_cusp_onset_svd": 156,
+  "match": true,
+  "s(s-1)": 156
+ },
+ {
+  "s": 14,
+  "labels": 168,
+  "dimV_upper": 56,
+  "zero_labels": 0,
+  "dimV_cusp_onset_svd": 56,
+  "match": true
+ },
+ {
+  "s": 15,
+  "labels": 780,
+  "dimV_upper": 210,
+  "zero_labels": 27,
+  "dimV_cusp_onset_svd": 210,
+  "match": true,
+  "s(s-1)": 210
+ },
+ {
+  "s": 16,
+  "labels": 224,
+  "dimV_upper": 72,
+  "zero_labels": 0,
+  "dimV_cusp_onset_svd": 72,
+  "match": true
+ },
+ {
+  "s": 17,
+  "labels": 1020,
+  "dimV_upper": 272,
+  "zero_labels": 31,
+  "dimV_cusp_onset_svd": 272,
+  "match": true,
+  "s(s-1)": 272
+ },
+ {
+  "s": 18,
+  "labels": 288,
+  "dimV_upper": 90,
+  "zero_labels": 0,
+  "dimV_cusp_onset_svd": 84,
+  "match": false
+ },
+ {
+  "s": 19,
+  "labels": 1292,
+  "dimV_upper": 342,
+  "zero_labels": 35,
+  "dimV_cusp_onset_svd": 342,
+  "match": true,
+  "s(s-1)": 342
+ },
+ {
+  "s": 20,
+  "labels": 360,
+  "dimV_upper": 110,
+  "zero_labels": 0,
+  "dimV_cusp_onset_svd": 110,
+  "match": true
+ },
+ {
+  "s": 21,
+  "labels": 1596,
+  "dimV_upper": 420,
+  "zero_labels": 39,
+  "dimV_cusp_onset_svd": 420,
+  "match": true,
+  "s(s-1)": 420
+ },
+ {
+  "s": 22,
+  "labels": 440,
+  "dimV_upper": 132,
+  "zero_labels": 0,
+  "dimV_cusp_onset_svd": 132,
+  "match": true
+ },
+ {
+  "s": 23,
+  "labels": 1932,
+  "dimV_upper": 506,
+  "zero_labels": 43,
+  "dimV_cusp_onset_svd": 506,
+  "match": true,
+  "s(s-1)": 506
+ },
+ {
+  "s": 24,
+  "labels": 528,
+  "dimV_upper": 156,
+  "zero_labels": 0,
+  "dimV_cusp_onset_svd": 156,
+  "match": true
+ },
+ {
+  "s": 25,
+  "labels": 2300,
+  "dimV_upper": 600,
+  "zero_labels": 47,
+  "dimV_cusp_onset_svd": 600,
+  "match": true,
+  "s(s-1)": 600
+ },
+ {
+  "s": 41,
+  "labels": 6396,
+  "dimV_upper": 1640,
+  "zero_labels": 79,
+  "dimV_cusp_onset_svd": 1640,
+  "match": true,
+  "s(s-1)": 1640
+ }
+]
+===== END FILE cr2_orbit_bound.json =====
+===== BEGIN FILE cr2b_with_R.json bytes=1500 sha256=1ccd3c5a23feb8a55fabb94fed43fe0d7fb722e2890c02c9f1dcd2af8192d320 =====
+[
+ {
+  "s": 5,
+  "svd": 20,
+  "gamma_neg": 20,
+  "gamma_neg_R": 20
+ },
+ {
+  "s": 6,
+  "svd": 12,
+  "gamma_neg": 12,
+  "gamma_neg_R": 12
+ },
+ {
+  "s": 7,
+  "svd": 42,
+  "gamma_neg": 42,
+  "gamma_neg_R": 42
+ },
+ {
+  "s": 8,
+  "svd": 18,
+  "gamma_neg": 20,
+  "gamma_neg_R": 20
+ },
+ {
+  "s": 9,
+  "svd": 72,
+  "gamma_neg": 72,
+  "gamma_neg_R": 72
+ },
+ {
+  "s": 10,
+  "svd": 30,
+  "gamma_neg": 30,
+  "gamma_neg_R": 30
+ },
+ {
+  "s": 11,
+  "svd": 110,
+  "gamma_neg": 110,
+  "gamma_neg_R": 110
+ },
+ {
+  "s": 12,
+  "svd": 42,
+  "gamma_neg": 42,
+  "gamma_neg_R": 42
+ },
+ {
+  "s": 13,
+  "svd": 156,
+  "gamma_neg": 156,
+  "gamma_neg_R": 156
+ },
+ {
+  "s": 14,
+  "svd": 56,
+  "gamma_neg": 56,
+  "gamma_neg_R": 56
+ },
+ {
+  "s": 15,
+  "svd": 210,
+  "gamma_neg": 210,
+  "gamma_neg_R": 210
+ },
+ {
+  "s": 16,
+  "svd": 72,
+  "gamma_neg": 72,
+  "gamma_neg_R": 72
+ },
+ {
+  "s": 17,
+  "svd": 272,
+  "gamma_neg": 272,
+  "gamma_neg_R": 272
+ },
+ {
+  "s": 18,
+  "svd": 84,
+  "gamma_neg": 90,
+  "gamma_neg_R": 90
+ },
+ {
+  "s": 19,
+  "svd": 342,
+  "gamma_neg": 342,
+  "gamma_neg_R": 342
+ },
+ {
+  "s": 20,
+  "svd": 110,
+  "gamma_neg": 110,
+  "gamma_neg_R": 110
+ },
+ {
+  "s": 21,
+  "svd": 420,
+  "gamma_neg": 420,
+  "gamma_neg_R": 420
+ },
+ {
+  "s": 22,
+  "svd": 132,
+  "gamma_neg": 132,
+  "gamma_neg_R": 132
+ },
+ {
+  "s": 23,
+  "svd": 506,
+  "gamma_neg": 506,
+  "gamma_neg_R": 506
+ },
+ {
+  "s": 24,
+  "svd": 156,
+  "gamma_neg": 156,
+  "gamma_neg_R": 156
+ },
+ {
+  "s": 25,
+  "svd": 600,
+  "gamma_neg": 600,
+  "gamma_neg_R": 600
+ }
+]
+===== END FILE cr2b_with_R.json =====
+===== BEGIN FILE cr3_parity_model.json bytes=3400 sha256=bf681d4b415aa8148df24d05f3c06a974d0f084da6926ffbd98af9a4ce3d1099 =====
+[
+ {
+  "s": 5,
+  "gamma_scalars": {
+   "3": 1,
+   "5": 4
+  },
+  "sign_rule_s_minus_1": true,
+  "FixP_numeric": 32,
+  "V": 20,
+  "W": 18,
+  "cusp": 2,
+  "oddodd": 2,
+  "A3_mixed": 0,
+  "FixP": 32,
+  "V_table": 20,
+  "W_table": 18,
+  "cusp_table": 2,
+  "match": true
+ },
+ {
+  "s": 7,
+  "gamma_scalars": {
+   "5": 1,
+   "7": 6
+  },
+  "sign_rule_s_minus_1": true,
+  "FixP_numeric": 72,
+  "V": 42,
+  "W": 36,
+  "cusp": 6,
+  "oddodd": 6,
+  "A3_mixed": 0,
+  "FixP": 72,
+  "V_table": 42,
+  "W_table": 36,
+  "cusp_table": 6,
+  "match": true
+ },
+ {
+  "s": 9,
+  "gamma_scalars": {
+   "9": 8,
+   "7": 1
+  },
+  "sign_rule_s_minus_1": true,
+  "FixP_numeric": 128,
+  "V": 72,
+  "W": 60,
+  "cusp": 12,
+  "oddodd": 12,
+  "A3_mixed": 0,
+  "FixP": 128,
+  "V_table": 72,
+  "W_table": 60,
+  "cusp_table": 12,
+  "match": true
+ },
+ {
+  "s": 11,
+  "gamma_scalars": {
+   "9": 1,
+   "11": 10
+  },
+  "sign_rule_s_minus_1": true,
+  "FixP_numeric": 200,
+  "V": 110,
+  "W": 90,
+  "cusp": 20,
+  "oddodd": 20,
+  "A3_mixed": 0,
+  "FixP": 200,
+  "V_table": 110,
+  "W_table": 90,
+  "cusp_table": 20,
+  "match": true
+ },
+ {
+  "s": 13,
+  "gamma_scalars": {
+   "11": 1,
+   "13": 12
+  },
+  "sign_rule_s_minus_1": true,
+  "FixP_numeric": 288,
+  "V": 156,
+  "W": 126,
+  "cusp": 30,
+  "oddodd": 30,
+  "A3_mixed": 0,
+  "FixP": 288,
+  "V_table": 156,
+  "W_table": 126,
+  "cusp_table": 30,
+  "match": true
+ },
+ {
+  "s": 15,
+  "gamma_scalars": {
+   "3": 2,
+   "5": 4,
+   "13": 1
+  },
+  "sign_rule_s_minus_1": true,
+  "FixP_numeric": 392,
+  "V": 210,
+  "W": 126,
+  "cusp": 84,
+  "oddodd": 42,
+  "A3_mixed": 42,
+  "FixP": 392,
+  "V_table": 210,
+  "W_table": 126,
+  "cusp_table": 84,
+  "match": true
+ },
+ {
+  "s": 17,
+  "gamma_scalars": {
+   "3": 1,
+   "5": 1,
+   "17": 16
+  },
+  "sign_rule_s_minus_1": true,
+  "FixP_numeric": 512,
+  "V": 272,
+  "W": 162,
+  "cusp": 110,
+  "oddodd": 56,
+  "A3_mixed": 54,
+  "FixP": 512,
+  "V_table": 272,
+  "W_table": 162,
+  "cusp_table": 110,
+  "match": true
+ },
+ {
+  "s": 19,
+  "gamma_scalars": {
+   "17": 1,
+   "19": 18
+  },
+  "sign_rule_s_minus_1": true,
+  "FixP_numeric": 648,
+  "V": 342,
+  "W": 270,
+  "cusp": 72,
+  "oddodd": 72,
+  "A3_mixed": 0,
+  "FixP": 648,
+  "V_table": 342,
+  "W_table": 270,
+  "cusp_table": 72,
+  "match": true
+ },
+ {
+  "s": 21,
+  "gamma_scalars": {
+   "3": 2,
+   "7": 6,
+   "19": 1
+  },
+  "sign_rule_s_minus_1": true,
+  "FixP_numeric": 800,
+  "V": 420,
+  "W": 240,
+  "cusp": 180,
+  "oddodd": 90,
+  "A3_mixed": 90,
+  "FixP": 800,
+  "V_table": 420,
+  "W_table": 240,
+  "cusp_table": 180,
+  "match": true
+ },
+ {
+  "s": 23,
+  "gamma_scalars": {
+   "3": 1,
+   "7": 1,
+   "23": 22
+  },
+  "sign_rule_s_minus_1": true,
+  "FixP_numeric": 968,
+  "V": 506,
+  "W": 288,
+  "cusp": 218,
+  "oddodd": 110,
+  "A3_mixed": 108,
+  "FixP": 968,
+  "V_table": 506,
+  "W_table": 288,
+  "cusp_table": 218,
+  "match": true
+ },
+ {
+  "s": 25,
+  "gamma_scalars": {
+   "25": 24,
+   "23": 1
+  },
+  "sign_rule_s_minus_1": true,
+  "FixP_numeric": 1152,
+  "V": 600,
+  "W": 468,
+  "cusp": 132,
+  "oddodd": 132,
+  "A3_mixed": 0,
+  "FixP": 1152,
+  "V_table": 600,
+  "W_table": 468,
+  "cusp_table": 132,
+  "match": true
+ },
+ {
+  "s": 41,
+  "gamma_scalars": {
+   "3": 1,
+   "13": 1,
+   "41": 40
+  },
+  "sign_rule_s_minus_1": true,
+  "FixP_numeric": 3200,
+  "V": 1640,
+  "W": 882,
+  "cusp": 758,
+  "oddodd": 380,
+  "A3_mixed": 378,
+  "FixP": 3200,
+  "V_table": 1640,
+  "W_table": 882,
+  "cusp_table": 758,
+  "match": true
+ }
+]
+===== END FILE cr3_parity_model.json =====
+===== BEGIN FILE cr4_symbolic_links.txt bytes=2312 sha256=890f39f93ad614a40f4c237badbbb15138e4a7b4821f2146a10db848ce9e9ed5 =====
+[PASS] a1+a2 = 1/2 (H_s report) for all s
+[PASS] gamma, R_s, phi preserve M
+[PASS] R_s a = -a (Lemma R, C_third-Unified)
+[PASS] phi linear part (zeta-curve Lemma E, phi(n,k)=(n,-2n-k-1)) satisfies phi*a - a = (0,-1) in Z^2
+[PASS] phi = -gamma*R_s  (so Lemma E's reflection, Lemma R's R_s and V42's R are one improper class)
+[PASS] R_s^2 = I
+[PASS] phi(v) = (n, -2n-k-1)
+[PASS] Q(c1) = -(s-2)/2, Q(c2) = -(7s-32)/2, B(c1,c2) = -4(s-2)
+[PASS] B(c1,c2) = 8 Q(c1)
+[PASS] B(c1,c2)^2 - 4Q(c1)Q(c2) = 9 s(s-2) = -9 det M  (Gram det of <c1,c2> = 9 det M; index 3)
+[PASS] Delta := 4Q(c1)Q(c2) = (s-2)(7s-32) = 16(s-2)^2 - 9s(s-2)
+[PASS] R_s c1 = (s-1,-1); R_s c1 = -c2 exactly when s = 5 (explains H_5 = 0 and Q(c1)=Q(c2) at s=5)
+[PASS] B(c1, nu) depends only on nu1: B(c1,(x,y)) = (s-2)x
+[PASS] gcd(7s-32, s-8) = gcd(24, s-8) = g for s=5..2000 (so g | 7s-32 always)
+[PASS] gcd(7s-32, s-2) = gcd(18, s-2) and gcd(7s-32, s) = gcd(32, s) for s=5..2000
+[PASS] denominator of c0 = 4(s-2)/gcd(s,8): {7: 20, 8: 3, 11: 36} equals the reported N(a)/Q2 = 20, 3, 36
+[PASS] for odd s the factor c_s = 4(s-2) = -B(c1,c2); for s=8 they differ (3 vs 24)
+[PASS] arccosh(s-1) = log(eps_s), eps_s = (s-1)+sqrt(s(s-2)), N(eps_s)=1
+[PASS] (s-1,1) is the fundamental solution of x^2 - s(s-2)y^2 = 1 (trivially y=1) for s=3..300
+[PASS] even s=2t: fundamental solution of x^2 - t(t-1)y^2 = 1 is (2t-1, 2) for t=3..150 (eps_gamma fundamental in the order of disc s(s-2))
+[INFO] s in [5,1e6) with Delta=(s-2)(7s-32) a perfect square: [5, 8, 26, 77, 365, 1178, 5768, 18725, 91877, 298376] (count 10)
+[INFO] s in [5,1e6) with Q(sqrt Delta) = Q(sqrt(s(s-2))) [s(7s-32)·square]: [] (count 0)
+[INFO] 7s-32 = 0 at s = 32/7 (non-integer); s=4: Q(c2)=+2>0 (non-admissible); s=5: 7s-32 = s-2 = 3 (degenerate, H_5=0)
+[INFO] zeta_E(0;s)=(s-4)(s-5)/(12(s-2)) vanishes at s=4,5 = the two integers bracketing 32/7; no mechanism found linking E_s (no c2) to H_s (Cat B coincidence)
+[PASS] C_-1/2(7) = P_-1/2 - H_-1/2 = 0.829142617052509877588212114207 equals rev3 a_C closed form (now proved symbolically, not only PSLQ)
+[PASS] H_-1/2(7) equals rev3 a_H = sqrt(pi)(sqrt1190-17sqrt14)/170
+[PASS] C_third t^-1/2 at x=0 from g_s table (P+Theta-theta3) = -sqrt(pi)(49-2sqrt14)/140 (C_third-Modularity)
+[PASS] odd s: dim Fix(P) = 2(n+1) = 2(s-1)^2 with n = s(s-2)
+
+===== END FILE cr4_symbolic_links.txt =====
+===== BEGIN FILE cr5.log bytes=466 sha256=aee67310ab63bf4347a34d8d0309d3a8e600e9d10a00360c1f856c739311d516 =====
+{"s": 26, "exact_upper": 182, "svd_dimV_Q25": 182, "svd_dimV_Q40": 182, "dimW_Q25": 126, "dimW_Q40": 126, "gap": 0}
+{"s": 28, "exact_upper": 210, "svd_dimV_Q25": 210, "svd_dimV_Q40": 210, "dimW_Q25": 168, "dimW_Q40": 168, "gap": 0}
+{"s": 32, "exact_upper": 272, "svd_dimV_Q25": 260, "svd_dimV_Q40": 260, "dimW_Q25": 126, "dimW_Q40": 126, "gap": 12}
+{"s": 50, "exact_upper": 650, "svd_dimV_Q25": 630, "svd_dimV_Q40": 630, "dimW_Q25": 312, "dimW_Q40": 312, "gap": 20}
+
+===== END FILE cr5.log =====
+===== BEGIN FILE cr5_square_halfs_26_28_32_50.json bytes=544 sha256=cca761472f35d0ece8d44a0f74c26543c794ae9f67471f365d3947e656549d50 =====
+[
+ {
+  "s": 26,
+  "exact_upper": 182,
+  "svd_dimV_Q25": 182,
+  "svd_dimV_Q40": 182,
+  "dimW_Q25": 126,
+  "dimW_Q40": 126,
+  "gap": 0
+ },
+ {
+  "s": 28,
+  "exact_upper": 210,
+  "svd_dimV_Q25": 210,
+  "svd_dimV_Q40": 210,
+  "dimW_Q25": 168,
+  "dimW_Q40": 168,
+  "gap": 0
+ },
+ {
+  "s": 32,
+  "exact_upper": 272,
+  "svd_dimV_Q25": 260,
+  "svd_dimV_Q40": 260,
+  "dimW_Q25": 126,
+  "dimW_Q40": 126,
+  "gap": 12
+ },
+ {
+  "s": 50,
+  "exact_upper": 650,
+  "svd_dimV_Q25": 630,
+  "svd_dimV_Q40": 630,
+  "dimW_Q25": 312,
+  "dimW_Q40": 312,
+  "gap": 20
+ }
+]
+===== END FILE cr5_square_halfs_26_28_32_50.json =====
+===== BEGIN FILE cr6_Hs_closure_sanity.txt bytes=185 sha256=8657f173c72f84fb88c33fb9ffa4a5ebd39630c1a4d8388ed75bf73feacdfa2a =====
+H_-1/2: s=5 -> 0 ; s=8 -> -sqrt(pi)/6
+H_1/2: s=5 -> 0 ; s=8 -> 5*sqrt(pi)/54
+H_3/2: s=5 -> 0 ; s=8 -> -175*sqrt(pi)/324
+H_{-1/2} closure form == H_s-Closed-Forms form for s=5..29: PASS
+
+===== END FILE cr6_Hs_closure_sanity.txt =====

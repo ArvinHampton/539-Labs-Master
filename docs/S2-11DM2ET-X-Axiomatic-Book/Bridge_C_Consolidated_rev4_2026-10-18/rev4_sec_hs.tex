@@ -1,0 +1,100 @@
+%=====================================================================
+\section{$H_s$ in closed form, $\Cthird$ from one kernel, and connections (revision 4)}\label{sec:hsct}
+%=====================================================================
+This section adds \src{16}, \src{22}--\src{25}. Throughout, $s\ge5$ is an integer, $c_1=(-1,1)$, $c_2=(-4,1)$, $g:=\gcd(24,s-8)$ and
+$\Delta:=(s-2)(7s-32)$. ``Modulo F1'' means given the cited two-dimensional Euler--Maclaurin expansion for cone sums with averaged edge weights (the same input
+as in Theorem~\ref{thm:zetacurve} and Lemma~P).
+
+\begin{theorem}[$H_s$ in closed form]\label{thm:Hs}
+(i) \emph{Structure.} $Q(c_1)=-(s-2)/2$, $Q(c_2)=-(7s-32)/2$, $B(c_1,c_2)=-4(s-2)$, so the pair is admissible exactly for $s\ge5$, and $4Q(c_1)Q(c_2)=\Delta$.
+$H_s=\tfrac12q^{c_0}\vartheta^{c_1,c_2}_{a,0,{\rm hol}}+\Delta_{\rm lines}(s)$, where $\Delta_{\rm lines}$ is a finite sum of unary theta series with explicit
+$s$-dependence, and $H_s$ has an explicit cone double-sum $q$-expansion for every $s\ge5$; $H_5\equiv0$.
+(ii) \emph{Radial coefficients at $x=0$.} Along $q=e^{-t}$, $H_s$ has no integer-order terms at all, and for $r\in\{-\tfrac12,\tfrac12,\tfrac32,\tfrac52\}$ its
+coefficients are $H_r=\sqrt{2\pi s}\,[R_r(s)+S_r(s,g)\sqrt\Delta]$ with
+\begin{align*}
+R_{-1/2}&=-\frac1{2(s-2)},\\
+S_{-1/2}&=\frac1{2(s-2)(7s-32)},\\
+R_{1/2}&=-\frac{(s-4)(3s-2)}{48(s-2)^2},\\
+S_{1/2}&=\frac{s^3-44s^2+192s+2g^2(s-2)}{48(s-2)^2(7s-32)^2},\\
+R_{3/2}&=-\frac{15s^4-76s^3+108s^2+96s-128}{3840(s-2)^3},\\
+S_{3/2}&=\frac{\Sigma_{3/2}}{3840(s-2)^3(7s-32)^3},\\
+R_{5/2}&=-\frac{(s-4)(105s^5-730s^4+2732s^3-5208s^2+5696s-2560)}{645120(s-2)^4}, \\
+S_{5/2}&=\frac{\Sigma_{5/2}}{645120(s-2)^4(7s-32)^4},
+\end{align*}
+where
+$\Sigma_{3/2}=3s^6-152s^5+3872s^4-28160s^3+61440s^2+20g^2s(s^3-18s^2+96s-128)-8g^4(s-2)^2$ and
+$\Sigma_{5/2}=15s^9-972s^8+28320s^7-537216s^6+4773888s^5-18923520s^4+27525120s^3
++210g^2s^2(s^5-34s^4+448s^3-2816s^2+8192s-8192)
+-8g^4s(35s^4-504s^3+2940s^2-6832s+5376)
++160g^6(s-2)^3$.
+The denominators are $(s-2)^{r+3/2}(7s-32)^{r+3/2}$, $g$ enters only through $g^{2i}$ with $i\le r+\tfrac12$, and all four vanish at $s=5$.
+(iii) $H_{-1}(x)=0$ for every rational $x$.
+(iv) \emph{$s=7$.} $a_H=H_{-1/2}(7)$ and $a_C=C_{-1/2}(7)=P_{-1/2}(7)-H_{-1/2}(7)=0.829142617\ldots$ symbolically; these are the radical forms of Table~\ref{tab:radial}.
+(v) \emph{$s=8$, the $\sqrt\pi$-rational scale.} $\Delta(8)=144$, and $H_{-1/2}(8)=-\sqrt\pi/6$, $H_{1/2}(8)=5\sqrt\pi/54$, $H_{3/2}(8)=-175\sqrt\pi/324$,
+$H_{5/2}(8)=995\sqrt\pi/972$, $C_{-1/2}(8)=11\sqrt\pi/24$. Among $s<10^6$, $\Delta$ is a perfect square only at $s=5,8,26,77,365,1178,5768,18725,91877,298376$.
+(vi) \emph{Assembly.} The integer orders of $C=P_s-H_s$ at $x=0$ are those of $(1+E_s)/2$ to all orders, and the half-integer orders are those of
+$(\theta_3-\Theta_{{\rm hol},s})/2-H_s$; $C_{-1}=\Res/2$, $C_0=(1+E_0)/2$, $C_1=E_1/2$.
+\end{theorem}
+\catA{(i): the case analysis of the weight and the characteristic correction are exact identities, checked to $q^{400}$ at $27$ values of $s$ \src{22}.
+(ii): \emph{modulo F1}. The integer orders vanish by the parity argument (the order-$j$ Euler--Maclaurin coefficients of the $\pm a$ cone sums differ by $(-1)^j$;
+each unary theta contributes only half-integer orders) \src{22, \S4.2}; the extended computation \src{23} re-derives the vanishing of the edge and area parts at
+$t^0,t^1,t^2$, and its corner terms are covered by that parity argument. The closed forms come from symbolic Euler--Maclaurin with exact Bernoulli-sum
+validation for $s=5..80,99,100,151,223,300$ \src{23}; the polynomials $\Sigma_{3/2}$, $\Sigma_{5/2}$ above are factorisations of the expressions in
+\texttt{H\_closed2.txt}. (iii): modulo F1 (cancellation of the residue-class averages of $\e(xQ)$ under $\nu\mapsto-\nu$). (iv), (v): evaluation of the closed forms
+(the $s=8$ values of $H_{3/2}$, $H_{5/2}$ were evaluated for rev.~4). $\Delta$-square list: exact search. (vi): modulo F1 and Hecke's theorem \src{22, \S5}.}
+\catB{Supporting numerics: $H_{3/2}$ against small-$t$ fits at $9$ values of $s$ ($3$--$4$ digits); $H_{5/2}$ only at $s=6,8$. Fits at $x\neq0$ ($x=\tfrac12,\tfrac13$
+for $s$ even or $3\mid s$) are stable but not closed; the fits at $x=\tfrac12$, $s=7,9,10$ and $x=\tfrac13$, $s=7,10$ are unstable and are not quoted. The modular
+completion of $\tfrac12q^{c_0}\vartheta$ is by citation (Zwegers \cite{Zw}, Cor.~2.9). The pre-registered prediction PB5 of \src{22} (a rational $t^1$ term) was refuted
+(the term is $0$).}
+
+\begin{theorem}[$\Cthird$: one coset, one cone weight, one kernel, two chains]\label{thm:cthird}
+Let $F=[e_1,\gamma e_1)$, $Q_1$ the open first quadrant, $F'=F\setminus Q_1$, and $E^X_\mu=\sum_{\nu\in\mu+\Z^2,\,\nu\in X}q^{Q(\nu)}$.
+(i) For every $s\ge5$, $2C_{\mathrm{third},s}-1+\theta_3=q^{c_0}\Theta_w(a)$ with $\Theta_w(a)=\sum_{\nu\in a+\Z^2}w(\nu)q^{Q(\nu)}$ and
+$w=1_{F'}+1_{-Q_1}$: one coset, one quadratic form, one non-negative piecewise-constant cone weight.
+(ii) \emph{Lemma~R.} With $R_s=\begin{pmatrix}1&s\\0&-1\end{pmatrix}$ ($R_s^{\mathsf T}A_sR_s=A_s$, $R_sa=-a$, $R_sF$ again a $\gamma$-fundamental cone):
+$E^F_a=E^F_{-a}$ for every $s\ge5$. Hence $\Theta_w(a)=E_L+\vartheta_{\rm hol}$: the part of $w$ that is even under $\nu\mapsto-\nu$ gives $E_L$, the odd part gives
+Zwegers' $\vartheta_{\rm hol}$, and the would-be weight-$1$ piece on the unit cone is exactly $0$. With $1_K=\tfrac14(\rho_{\rm odd}+\rho_{\rm even})$, the
+parity of the cone weight, the radial parity at $x=0$ and the automorphy type coincide.
+(iii) \emph{One kernel, two chains.} On the path of lines $c(t)$ in the signature-$(1,1)$ plane let
+$\Xi_0=\sqrt y\sum_{a+\Z^2}q^{Q(n)}e^{-\pi yB(n,c(t))^2}$ and $\Xi_1=\sqrt y\sum_{a+\Z^2}2B(n,c'(t))q^{Q(n)}e^{-\pi yB(n,c(t))^2}$, and $\Xi=\Xi_0+\Xi_1$. On the chain
+$\Gamma_{Q_1}$, $\int\Xi_1\,dt$ is exactly Zwegers' 2002 completion, with holomorphic part $\vartheta_{\rm hol}$. On the unit-cone chain $\Gamma_F=[c_1,\gamma c_1]$,
+$\int\Xi_0\,dt$ is Zwegers' 2012 mock Maass theta function $\Theta_a$, which here has no shadow and has $E_L=\tfrac12\vartheta_a$; and $\int_{\Gamma_F}\Xi_1\,dt=0$.
+(iv) The two outputs come from different operations (holomorphic projection at weight~$1$; the Lewis--Zagier period correspondence at weight~$0$) and carry
+different automorphy factors ($(c\tau+d)$ versus $|c\tau+d|$). So this is a single construction, not a single modular object; Theorems O1 and O2 still apply.
+\end{theorem}
+\catA{(i) proved (elementary, from $2P_s=E_s+1+\theta_3-\Thol$ and $Q_1\subset F$); checked to $q^{3000}$ at $s=7$ and to $q^{2000}$ for $s=5..25,41$ \src{24}.
+(ii) proved (symbolic checks of $\gamma a-a$, $R_sa+a$, $R_s^{\mathsf T}A_sR_s-A_s$, $R_s\gamma e_1=\gamma^{-1}e_1$); identically zero to $q^{3000}$ at $s=7$. This proves the
+rev.~3 observation $E_{-a}=E_a$ (an exact check to $q^{3000}$ there) for all $s\ge5$ (C15). The parity/radial dictionary is modulo F1 and Hecke. (iii), the weight-$1$
+identity: exact, by the fundamental theorem of calculus with Siegel-majorant domination \src{25, \S3.1}. (iv): the obstruction as in Theorems O1, O2.
+\emph{Lemma Prod1} (called Lemma~C1 in \src{24}): finite sums of products of weight-$0$ holomorphic forms with logarithmic cocycle and holomorphic weight-$1$ forms
+have only $t^{-2},t^{-1}\log t,t^{-1}$ radial terms, so they cannot carry either sector.}
+\catB{The weight-$0$ identification in (iii) is by citation of Zwegers 2012 \cite{Zw12} through the restatement in \cite{BCN} (the original was not read); numerical
+agreement $8\cdot10^{-16}$ ($s=7,9$), $5\cdot10^{-15}$ ($s=13$). $\int_{\Gamma_F}\Xi_1=0$: numerical ($\approx10^{-15}$), with a proof sketch whose pairing argument is not
+written out. Non-$\gamma$ control: the shadow does not cancel ($\approx0.1$). ``No exotic single kernel exists'' is open; higher depth is unavailable for the
+rank-$2$ lattice. \emph{Lemma Prod2} (Lemma~C2 of \src{24}) is conditional on the same inputs as O1.}
+
+\subsection{Connections}\label{sec:conn}
+The labels N1--N11 are those of \src{16}; the six used here are listed below.
+\begin{description}[leftmargin=1.5em,style=nextline]
+\item[N1. One improper automorph (Category A).] The involution $\varphi(n,k)=(n,-2n-k-1)$ of Lemma~E (proof of Theorem~\ref{thm:zetacurve}) equals $-\gamma R_s$, and
+$R_sa=-a$. So Lemma~E, Lemma~R, the automorph $R$ of \src{26} and $H_5\equiv0$ come from a single symmetry. $R_sc_1=-c_2$ holds only at $s=5$, which is why
+$H_5\equiv0$ and $Q(c_1)=Q(c_2)$ there. Adding $R_s$ to $\langle\gamma,-I\rangle$ gives no new label relations for any $s=5,\dots,25$ (exact orbit counts).
+\item[N4. The factor $20$ (identity Category A; its meaning Category B).] The denominator of $c_0$ is $4(s-2)/\gcd(s,8)=20,3,36$ at $s=7,8,11$, which is the ideal-norm
+factor $c_s$ in $\Nm\fa=c_sQ$ of \src{10}. For odd $s$ it equals $-B(c_1,c_2)=-8Q(c_1)=4(s-2)$ of the $H_s$ cone (at $s=8$ the two differ: $3$ versus $24$); equivalently
+$Q_s=(\Nm\fa+s)/(4(s-2))$ for odd $s$.
+\item[N5. Residue and Pell unit (Category A).] $\Res=\operatorname{arccosh}(s-1)/\sqrt{n_s}=\log\varepsilon_s/\sqrt{n_s}$ with $\varepsilon_s=(s-1)+\sqrt{n_s}$, the
+fundamental solution of $x^2-n_sy^2=1$. For even $s$ this is the fundamental unit of the order, not of the maximal order: at $s=8$, $\varepsilon_8=7+4\sqrt3$ (C17).
+\item[N6. $\Delta$ and the $s=8$ scale (Category A).] $\Delta=(s-2)(7s-32)=4Q(c_1)Q(c_2)=16(s-2)^2-9n_s$; $B(c_1,c_2)^2-4Q(c_1)Q(c_2)=9n_s$; $\det(c_1,c_2)=3$;
+$\gcd(7s-32,s-8)=g$ and $\gcd(7s-32,s-2)=\gcd(18,s-2)$. $\Q(\sqrt\Delta)\neq\Q(\sqrt{n_s})$ for every $s<10^6$ (exact search), so the $H_s$ half-integer data live in a
+different quadratic field from the $E$-residue except where $\Delta$ is a square. At $s=8$ all the listed half-integer coefficients lie in $\sqrt\pi\,\Q$ (Theorem~\ref{thm:Hs}(v)).
+\item[N7. Three parities are one (algebra Category A; same-$\rho$ identification Category B).] The label parity $P=S_{\rm lab}^2$, the cone-weight parity
+$\nu\mapsto-\nu$ and the integer versus half-integer radial orders coincide. A weight-$k$ vector-valued form satisfies $\rho(S)^2f=(-1)^kf$, so the $E$/Eisenstein sector lies
+in $W_P$ and the Zwegers/$\vartheta_{\rm hol}$ sector in $\mathrm{Fix}(-P)$ (dimension $68=4(3\cdot3+2\cdot4)$ at $s=7$). Hence weight-$1$ vectors cannot realise any part of
+$V^\perp\subset W_P$, and the rev.~2 hypothesis of \src{26} (``$V^\perp$ is realised by weight-$1$ lifts'') is retired (C18). Category~B: that Zwegers' completed theta transforms
+under this same $140$-dimensional $\rho$ with the $S_{\rm lab}=\rho(S)^{-1}$ sign.
+\item[N8. The rev.~3 constants are closed forms (Category A modulo F1).] $a_H=H_{-1/2}(7)$ and $a_C=C_{-1/2}(7)$ symbolically; the $t^{-1/2}$ coefficient of $\Cthird$ at
+$x=0$, $-\sqrt\pi(49-2\sqrt{14})/140$, is consistent with the all-$s$ formulas of Appendix~\ref{app:gs}.
+\end{description}
+\catB{Not used as results here: N2 and N9 (the SVD comparisons, superseded by the exact ranks of Theorem~\ref{thm:dims}), N3 (superseded by
+Theorems~\ref{thm:tensorodd} and~\ref{thm:dims} and the sector remark), N10 (the vanishing of $\zeta_E(0;s)$ at $s=4,5$ next to the root $32/7$ of $7s-32$: no mechanism
+found; treated as a coincidence), and N11 (superseded by Theorem~\ref{thm:tensorodd}(i)).}
