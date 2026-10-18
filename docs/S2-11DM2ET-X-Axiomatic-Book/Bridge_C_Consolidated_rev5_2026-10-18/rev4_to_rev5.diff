@@ -1,0 +1,102 @@
+--- /workspace/quantum-comp/reports/heavy-daily/2026-10-18-Bridge-C-Consolidated-rev4/bridge_c_consolidated_rev4.tex	2026-10-18 14:09:01.352275210 -0500
++++ Bridge_C_Consolidated_rev5_2026-10-18/bridge_c_consolidated_rev5.tex	2026-10-18 18:54:42.102705439 -0500
+@@ -48,7 +48,7 @@
+ \title{The Bridge Series $C$ residual: real-quadratic structure over $\Q(\sqrt{35})$,\\
+ a Baker obstruction, and an explicit vector-valued\\ quantum modular law}
+ \author{Arvin Hampton\\ \small 539 Labs}
+-\date{Consolidated write-up, 18 October 2026 --- revision 4\\ \small (internal working paper; not externally refereed)}
++\date{Consolidated write-up, 18 October 2026 --- revision 5\\ \small (internal working paper; not externally refereed)}
+ 
+ \begin{document}
+ \maketitle
+@@ -85,7 +85,7 @@
+ Gauss-sum formula for the dual cone sum $E_R$. The cusp rows at rationals are shown numerically to
+ be finite combinations of Hecke $L$-values at $s=0$. Every statement is labelled Category A (proved, or exact,
+ including exact finite computation) or Category B (floating-point or PSLQ evidence only, identification by citation only,
+-interpretation, or conjecture); revision~4 applies this convention uniformly. No claim is made concerning HQCC termination, the twin prime conjecture, or the Riemann
++interpretation, or conjecture); revision~4 applies this convention uniformly. Revision~5 (\S\ref{sec:rev5}) proves the two-dimensional Euler--Maclaurin input F1, makes the E-part cocycle (with the $140$-label vector law) Category~A, proves the $u_L$ coset property for all $s$ and the squarefree criterion $h=2^{\omega(s)}$, and proves $\dim V=2406$ at $s=98$. No claim is made concerning HQCC termination, the twin prime conjecture, or the Riemann
+ hypothesis.
+ \end{abstract}
+ 
+@@ -1135,7 +1135,7 @@
+ (iv) \emph{The $s=2m^2$ mechanism.} $\gamma$ has a square root $g\in\mathrm{SO}(A_s)(\Q)$ with $\det g=1$ iff $\mathrm{tr}\,\gamma+2=2s$ is a perfect square, i.e.\ iff
+ $s=2m^2$; then $g=(\gamma+I)/(2m)=\begin{pmatrix}0&-m\\1/m&2m\end{pmatrix}$ (in unit language $\varepsilon_s=\eta^2$, $\eta=m+\sqrt{m^2-1}$). Splitting each cone
+ $[r,\gamma r)$ as $[r,gr)\sqcup g[r,gr)$ gives an exact upper bound with gap exactly $m(m-1)$ below the orbit bound for $m=2,\dots,7$. It equals the exact lower
+-bound for $m=2,\dots,6$: $\dim V=18,84,260,630,1302$ at $s=8,18,32,50,72$. At $s=98$: $2406\le\dim V\le2408$ (not certified).
++bound for $m=2,\dots,6$: $\dim V=18,84,260,630,1302$ at $s=8,18,32,50,72$. At $s=98$ the half-cone bound $2408$ is not sharp: $\dim V=2406$ (rev.~5, Theorem~\ref{thm:s98}; erratum R5.1).
+ (v) \emph{Table} ($d_{\rm cusp}=\dim V-d_{\rm Eis}$ is the exact dimension of the cuspidal functions in the span):
+ \begin{center}\small
+ \begin{longtable}{rrrrcrrrr}\toprule
+@@ -1183,8 +1183,7 @@
+ \catA{(i); (ii) and the table entries for $\dim V$, exact per $s$; (iii) for the stated $s$, \emph{conditional on} the cited congruence theorem (odd $s$) and on
+ the exact local certifications; (iv) the square-root criterion and the upper bounds for $m\le7$, with equality for $m\le6$; $d_{\rm cusp}=\dim V-d_{\rm Eis}$ as the
+ dimension of cuspidal functions, given the $\lambda=\tfrac14$ constant-term criterion. The pure-tensor argument for (iii) has had no separate check.}
+-\catB{$\dim V=s(s-1)$ for \emph{all} odd $s$ (the lower bound is open); the gap $m(m-1)$ for all $m$ (at $m=7$ it is $42$ or $44$, and $\dim V(98)=2406$ looks
+-likely); $d_2(k,v)$ for $k\ge6$ (first case $s=64$; exact lower bounds only). \textbf{Relabelled (C13):} the floating SVD ranks and FFT counts of \src{20} (and the
++\catB{$\dim V=s(s-1)$ for \emph{all} odd $s$ (the lower bound is open); [rev.~5: the gap $m(m-1)$ for all $m$ is withdrawn, since $\dim V(98)=2406$ gives gap $44$ at $m=7$, Theorem~\ref{thm:s98}]; $d_2(k,v)$ for $k\ge7$ ($k=6$ is settled in rev.~5, Proposition~\ref{prop:s64}). \textbf{Relabelled (C13):} the floating SVD ranks and FFT counts of \src{20} (and the
+ SVD comparisons in \src{16}, N2 and N9) are Category~B; they agree with the exact values above except where \src{16} recorded truncation effects (e.g.\ $s=51$ at low $Q$).
+ The file \texttt{cert\_W\_5\_6\_7\_8.json} of \src{21} does not certify $d_{\rm Eis}$ at $s=5,7,8$ and is not used.}
+ 
+@@ -1331,6 +1330,9 @@
+ found; treated as a coincidence), and N11 (superseded by Theorem~\ref{thm:tensorodd}(i)).}
+ 
+ %=====================================================================
++\input{rev5_sec}
++
++%=====================================================================
+ \section{Status and dependencies}\label{sec:status}
+ %=====================================================================
+ 
+@@ -1432,19 +1434,12 @@
+ \begin{enumerate}[leftmargin=2em]
+ \item \textbf{Lower bound for $\dim V$ in general.} Prove $\dim V=s(s-1)$ for every odd $s$ (certified exactly only for odd $s\le51$), and find the even-$s$
+ formula. The even-$s$ tensor factorisation (where $L'/\Z^2$ is not cyclic) is not done.
+-\item \textbf{The $s=2m^2$ gap.} The gap is exactly $m(m-1)$ for $m=2,\dots,6$. At $s=98$ ($m=7$) the exact bounds $2406\le\dim V\le2408$ do not meet, and
+-the lower bound is stable from $Q=40$ to $130$: find the two missing relations or prove that they are absent. Prove the gap formula for general $m$, or
+-refute it.
+-\item \textbf{The $2$-adic Eisenstein factor $d_2(k,u)$ for $k\ge6$} (first case $s=64$): only exact lower bounds are known.
+-\item \textbf{$u_L$ cusp criterion.} The ambiguous-class count $|\bar G^\sigma|=2^{\omega(s)}\varphi(s-2)$ in general; $S$-invariance of every $T_\fc$ (deep
+-bad primes); sufficiency of the modulus $M=2dc$ for all norms; complete coverage at $s=32,34,36,40$ (predicted CUSP).
+-\item \textbf{Arithmetic of the sectors.} An exact ray-class (Hecke-character) proof that the non-all-even local sectors are cuspidal for general $s$;
+-identification of the local reflections $Z_p$ with Atkin--Lehner operators on the lifted forms; which Hecke eigenforms make up $V_{\rm cusp}$.
+-\item \textbf{$H_s$.} Orders $t^{7/2}$ and beyond at $x=0$ (mechanical); a re-derivation of the corner terms at integer orders inside the extended
+-computation; closed forms at $x\neq0$ via Gauss-sum-weighted Euler--Maclaurin; stable numerics at $x=\tfrac12$ ($s=7,9,10$) and $x=\tfrac13$ ($s=7,10$),
+-which are not quoted here.
+-\item \textbf{$\Cthird$.} A rigorous pairing argument for $\int_{\Gamma_F}\Xi_1\,dt=0$; a direct check of Zwegers' 2012 paper (only a restatement was
+-read); whether any single-weight object, or a depth-$2$ theta on a rank-$3$ lattice obtained with $\theta_3$, carries both parts.
++\item \textbf{The $s=2m^2$ gap} (rev.~5). $\dim V(98)=2406$ is proved (Theorem~\ref{thm:s98}). Open: count the extra $h$-relations at $m=2k^2-1$ (first $m=17$); prove $g$-consistency on the classes for all odd $m$; treat composite $m$.
++\item \textbf{The $2$-adic factor $d_2(k,v)$ for $k\ge7$} ($k=6$: $d_2=36$, Proposition~\ref{prop:s64}).
++\item \textbf{$u_L$ cusp criterion} (rev.~5). The coset property and the squarefree criterion are proved (Theorems~\ref{thm:coset5}, \ref{thm:sqf5}). Open: a closed criterion for non-squarefree $s(s-2)$.
++\item \textbf{Arithmetic of the sectors.} Eisenstein equality for the all-even sector; irreducibility and a uniform proof for the prime-square old/new pieces (Proposition~\ref{prop:psq5}); the local Atkin--Lehner split at $5$ and $7$ (local root numbers; blocked, \S\ref{sec:rev5misc}); which Hecke eigenforms make up $V_{\rm cusp}$.
++\item \textbf{$H_s$} (rev.~5). Orders $t^{11/2}$ and beyond (mechanical); a conceptual derivation of the mod-$72$ shapes at $x=\tfrac13$; Gauss data for general $x$.
++\item \textbf{$\Cthird$.} (rev.~5: $\int_{\Gamma_F}\Xi_1\,dt=0$ and the $\Theta_a$ identification are proved, Proposition~\ref{prop:ct5}.) Whether any single-weight object, or a depth-$2$ theta on a rank-$3$ lattice obtained with $\theta_3$, carries both parts.
+ \item \textbf{Retained from revision~3:} hand certification of the ray-class structure at $\fp_2^3\fp_5\fp_7\infty_1\infty_2$; an arithmetic proof of
+ Theorem~\ref{thm:J}; a proof of Theorem~\ref{thm:K} (Category~B); the Lewis--Zagier interpretation (Category~B); the prescription behind the framework's
+ ``Fricke samples''.
+@@ -1726,11 +1721,14 @@
+ (modulo F1); $E_{-a}=E_a$ for all $s\ge5$; the $L(0)$ vanishing for non-totally-odd characters (PARI-free exact sums).
+ 
+ %=====================================================================
++\input{rev5_app}
++
++%=====================================================================
+ \section*{Source reports}\label{sec:sources}
+ %=====================================================================
+ \addcontentsline{toc}{section}{Source reports}
+ All in \path{/workspace/quantum-comp/reports/heavy-daily/}, with scripts and outputs in the companion folders. [S14] and [S15] were added in revision~3,
+-[S16]--[S27] in revision~4. Repository copies of [S16]--[S27] are listed in \path{PUSH_LOG_2026-10-18_Rev4.md}.
++[S16]--[S27] in revision~4, [S28]--[S31] in revision~5. Repository copies of [S16]--[S27] are listed in \path{PUSH_LOG_2026-10-18_Rev4.md}.
+ \begin{enumerate}[label={[S\arabic*]},leftmargin=3em]
+ \item \texttt{2026-10-17-Bridge-C-Residual-Law.md} (obstructions; identities).
+ \item \path{2026-10-17-P_s-Structure.md} (decomposition; ray class; asymptotics; Gauss pattern).
+@@ -1759,6 +1757,10 @@
+ \item \texttt{2026-10-18-C\_third-Closure.md} (single kernel, two chains) (rev.~4).
+ \item \texttt{2026-10-18-V42-Structure.md} (irreducible pieces of $W_P$; its local forms are corrected in [S17]) (rev.~4).
+ \item \texttt{2026-10-18-rev3-changes-note.md} (planning note for rev.~3) (rev.~4, for provenance).
++\item \texttt{2026-10-18-Open-Algebraic.md} (odd-parity sectors; orbit lemma; parity fact; complement trace; prime squares; $s=64$; $\dim V(98)=2406$) (rev.~5).
++\item \texttt{2026-10-18-Open-Analytic.md} (F1 proved; $H_s$ at $x=\tfrac12,\tfrac13$, $t^{9/2}$; $\Cthird$ weight-$1$/weight-$0$) (rev.~5).
++\item \texttt{2026-10-18-uL-Criterion-Closure.md} (Chevalley/genus count; coverage; coset property, \S3A) (rev.~5).
++\item \texttt{2026-10-18-Cocycle-Closure.md} ($C=-\pi/2$; boundary step; vector law, \S3A; numerics, \S3B) (rev.~5).
+ \end{enumerate}
+ Repository errata (read-only, \path{ArvinHampton/539-Labs-Master}): \path{ERRATUM_Bridge_C_Decomposition_and_Samples_2026-10-17.md},
+ \path{ERRATUM_Bridge_C_tminushalf_Coefficient_2026-10-17.md}, \path{ERRATUM_psi_Cocycle_Component_Count_2026-10-17.md},
