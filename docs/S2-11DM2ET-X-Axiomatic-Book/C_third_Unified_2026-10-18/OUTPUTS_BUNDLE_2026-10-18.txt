@@ -1,0 +1,92 @@
+# OUTPUTS BUNDLE — C_third_Unified_2026-10-18 (2026-10-18)
+# The text outputs (json/log/txt/sha256) of this package, concatenated verbatim, one member per file.
+# Reports (.md) and scripts (.py/.sh) are stored as separate files in this folder. Binary files (pkl/npz/npy), __pycache__ and empty logs are excluded.
+# Reason for bundling: the push tool accepts at most 4 file attachments per commit; bundling keeps the commit count modest.
+# Member format: a line "===== BEGIN FILE <relative path> bytes=<n> sha256=<hex> =====", then exactly <n> bytes, then "\n===== END FILE <relative path> =====".
+# Extract (Python 3, run in this folder):
+#   import hashlib,os,re; d=open('OUTPUTS_BUNDLE_2026-10-18.txt','rb').read(); i=0
+#   for m in re.finditer(rb'===== BEGIN FILE (\S+) bytes=(\d+) sha256=([0-9a-f]+) =====\n', d):
+#       if m.start()<i: continue
+#       p,n,h=m.group(1).decode(),int(m.group(2)),m.group(3).decode(); b=d[m.end():m.end()+n]; i=m.end()+n
+#       assert hashlib.sha256(b).hexdigest()==h; os.makedirs(os.path.dirname(p) or '.',exist_ok=True); open(p,'wb').write(b)
+# Members: 4
+===== BEGIN FILE R_symmetry_check.txt bytes=225 sha256=c884bb016ee4bed2e072e7aa77db79df0d1e550b4e5effc95ba5c68c02ce4b2f =====
+gamma a - a = Matrix([[0, -1]])  R a + a = Matrix([[0, 0]])  R^T M R - M = Matrix([[0, 0], [0, 0]])  gamma^T M gamma - M = Matrix([[0, 0], [0, 0]])  R gamma e1 = Matrix([[2*s - 1, -2]])  gamma^-1 e1 = Matrix([[2*s - 1, -2]])
+
+===== END FILE R_symmetry_check.txt =====
+===== BEGIN FILE candidate_logeta_E1.txt bytes=1879 sha256=ac5822fdfe2fa2b2ac142a0e79399647d38b20caf08b6fe04d1625920f6f83e9 =====
+x=0.0: 7-term fit coefficients:
+   t^-2        (-0.0251916578366 + 0.0j)
+   t^-1 log t  (-0.0481125224325 + 0.0j)
+   t^-1        (-2.08275615573e-17 + 0.0j)
+   t^-1/2      (1.25745816604e-16 + 0.0j)
+   t^0         (-5.90934092626e-16 + 0.0j)
+   t^1/2       (1.74253901693e-15 + 0.0j)
+   t^1         (-2.24148767508e-15 + 0.0j)
+   residual 7-term 3.53e-22;  3-term (C1 basis only) residual 1.74e-27
+x=0.333333: 7-term fit coefficients:
+   t^-2        (-3.64794702009e-25 - 0.0016160456037j)
+   t^-1 log t  (-3.55902956162e-21 - 0.0277777777778j)
+   t^-1        (0.0048481368111 - 0.0305170080186j)
+   t^-1/2      (4.78935578705e-19 - 1.89101935162e-16j)
+   t^0         (-6.7482104605e-18 + 2.66447898149e-15j)
+   t^1/2       (5.96622518455e-17 - 2.35574395571e-14j)
+   t^1         (-2.30103929055e-16 + 9.08567458898e-14j)
+   residual 7-term 1.54e-21;  3-term (C1 basis only) residual 5.36e-26
+x=0.5: 7-term fit coefficients:
+   t^-2        (0.00314895722957 - 1.55779733576e-24j)
+   t^-1 log t  (0.0240562612162 - 6.76128684825e-21j)
+   t^-1        (0.0166745296368 - 0.00629791445915j)
+   t^-1/2      (-8.09655391713e-19 + 6.06868297058e-19j)
+   t^0         (7.80414085114e-18 - 5.70328970298e-18j)
+   t^1/2       (-4.71642043064e-17 + 3.36321489741e-17j)
+   t^1         (1.24232086882e-16 - 8.6515650014e-17j)
+   residual 7-term 1.15e-23;  3-term (C1 basis only) residual 5.68e-27
+x=0.142857: 7-term fit coefficients:
+   t^-2        (-7.3445066579e-5 + 9.77131377457e-21j)
+   t^-1 log t  (-0.00687321749035 + 4.89097264556e-16j)
+   t^-1        (-0.0133746636711 - 0.0149093485155j)
+   t^-1/2      (-1.42988663337e-12 - 1.49305686545e-13j)
+   t^0         (4.57575541749e-11 + 4.77744533054e-12j)
+   t^1/2       (-9.19844201409e-10 - 9.60302393036e-11j)
+   t^1         (8.07581189879e-9 + 8.43030472112e-10j)
+   residual 7-term 3.8e-17;  3-term (C1 basis only) residual 1.26e-16
+
+===== END FILE candidate_logeta_E1.txt =====
+===== BEGIN FILE single_coset.txt bytes=593 sha256=5d82a2821170a9b9ff38659c3556427c542150aca347caf25d964e96da738a0f =====
+N = 3000
+[1] E (q^(7/20) E_L) == unit-cone sum over a+Z^2: (reference identity 2C_third = q^8f + 1 + E used below)
+[2] 2C_third - 1 + theta_3 == q^(7/20) * sum_(a+Z^2) w(nu) q^Q(nu), w = 1_F' + 1_(-Q1) >= 0: True
+    and == q^(7/20)[1_F + 1_(-Q1) - 1_(Q1)] form: True
+    Theta_hol == q^(7/20)[E^(-Q1)_a - E^(Q1)_a]: True
+[3] odd part of E_L: E^F_a - E^F_(-a): identically zero to q^3000: True; nonzero count 0; first []
+    E^F_(-a) == E^F_a under nu -> R nu?  (checked via [3])
+[4] coefficient sanity: w-series nonnegative: True; first exponents [1, 4, 8, 9, 16, 18, 22, 25, 30, 36, 39, 43]
+
+===== END FILE single_coset.txt =====
+===== BEGIN FILE single_coset_s.txt bytes=3524 sha256=c552782eff888ab4e77f825cbe48b5a147460ac34dd53e42bc78be412dee30d0 =====
+N = 2000
+s=5: E^F_a == E^F_-a: True;  2C_third-1+theta3 == single-coset (1_F' + 1_-Q1): True;  Theta_hol == E^-Q1_a - E^Q1_a: True;  2P = E + 1 + th3 - Theta_hol: True
+s=6: E^F_a == E^F_-a: True;  2C_third-1+theta3 == single-coset (1_F' + 1_-Q1): True;  Theta_hol == E^-Q1_a - E^Q1_a: True;  2P = E + 1 + th3 - Theta_hol: True
+s=7: E^F_a == E^F_-a: True;  2C_third-1+theta3 == single-coset (1_F' + 1_-Q1): True;  Theta_hol == E^-Q1_a - E^Q1_a: True;  2P = E + 1 + th3 - Theta_hol: True
+s=8: E^F_a == E^F_-a: True;  2C_third-1+theta3 == single-coset (1_F' + 1_-Q1): True;  Theta_hol == E^-Q1_a - E^Q1_a: True;  2P = E + 1 + th3 - Theta_hol: True
+s=9: E^F_a == E^F_-a: True;  2C_third-1+theta3 == single-coset (1_F' + 1_-Q1): True;  Theta_hol == E^-Q1_a - E^Q1_a: True;  2P = E + 1 + th3 - Theta_hol: True
+s=10: E^F_a == E^F_-a: True;  2C_third-1+theta3 == single-coset (1_F' + 1_-Q1): True;  Theta_hol == E^-Q1_a - E^Q1_a: True;  2P = E + 1 + th3 - Theta_hol: True
+s=11: E^F_a == E^F_-a: True;  2C_third-1+theta3 == single-coset (1_F' + 1_-Q1): True;  Theta_hol == E^-Q1_a - E^Q1_a: True;  2P = E + 1 + th3 - Theta_hol: True
+s=12: E^F_a == E^F_-a: True;  2C_third-1+theta3 == single-coset (1_F' + 1_-Q1): True;  Theta_hol == E^-Q1_a - E^Q1_a: True;  2P = E + 1 + th3 - Theta_hol: True
+s=13: E^F_a == E^F_-a: True;  2C_third-1+theta3 == single-coset (1_F' + 1_-Q1): True;  Theta_hol == E^-Q1_a - E^Q1_a: True;  2P = E + 1 + th3 - Theta_hol: True
+s=14: E^F_a == E^F_-a: True;  2C_third-1+theta3 == single-coset (1_F' + 1_-Q1): True;  Theta_hol == E^-Q1_a - E^Q1_a: True;  2P = E + 1 + th3 - Theta_hol: True
+s=15: E^F_a == E^F_-a: True;  2C_third-1+theta3 == single-coset (1_F' + 1_-Q1): True;  Theta_hol == E^-Q1_a - E^Q1_a: True;  2P = E + 1 + th3 - Theta_hol: True
+s=16: E^F_a == E^F_-a: True;  2C_third-1+theta3 == single-coset (1_F' + 1_-Q1): True;  Theta_hol == E^-Q1_a - E^Q1_a: True;  2P = E + 1 + th3 - Theta_hol: True
+s=17: E^F_a == E^F_-a: True;  2C_third-1+theta3 == single-coset (1_F' + 1_-Q1): True;  Theta_hol == E^-Q1_a - E^Q1_a: True;  2P = E + 1 + th3 - Theta_hol: True
+s=18: E^F_a == E^F_-a: True;  2C_third-1+theta3 == single-coset (1_F' + 1_-Q1): True;  Theta_hol == E^-Q1_a - E^Q1_a: True;  2P = E + 1 + th3 - Theta_hol: True
+s=19: E^F_a == E^F_-a: True;  2C_third-1+theta3 == single-coset (1_F' + 1_-Q1): True;  Theta_hol == E^-Q1_a - E^Q1_a: True;  2P = E + 1 + th3 - Theta_hol: True
+s=20: E^F_a == E^F_-a: True;  2C_third-1+theta3 == single-coset (1_F' + 1_-Q1): True;  Theta_hol == E^-Q1_a - E^Q1_a: True;  2P = E + 1 + th3 - Theta_hol: True
+s=21: E^F_a == E^F_-a: True;  2C_third-1+theta3 == single-coset (1_F' + 1_-Q1): True;  Theta_hol == E^-Q1_a - E^Q1_a: True;  2P = E + 1 + th3 - Theta_hol: True
+s=22: E^F_a == E^F_-a: True;  2C_third-1+theta3 == single-coset (1_F' + 1_-Q1): True;  Theta_hol == E^-Q1_a - E^Q1_a: True;  2P = E + 1 + th3 - Theta_hol: True
+s=23: E^F_a == E^F_-a: True;  2C_third-1+theta3 == single-coset (1_F' + 1_-Q1): True;  Theta_hol == E^-Q1_a - E^Q1_a: True;  2P = E + 1 + th3 - Theta_hol: True
+s=24: E^F_a == E^F_-a: True;  2C_third-1+theta3 == single-coset (1_F' + 1_-Q1): True;  Theta_hol == E^-Q1_a - E^Q1_a: True;  2P = E + 1 + th3 - Theta_hol: True
+s=25: E^F_a == E^F_-a: True;  2C_third-1+theta3 == single-coset (1_F' + 1_-Q1): True;  Theta_hol == E^-Q1_a - E^Q1_a: True;  2P = E + 1 + th3 - Theta_hol: True
+s=41: E^F_a == E^F_-a: True;  2C_third-1+theta3 == single-coset (1_F' + 1_-Q1): True;  Theta_hol == E^-Q1_a - E^Q1_a: True;  2P = E + 1 + th3 - Theta_hol: True
+
+===== END FILE single_coset_s.txt =====
