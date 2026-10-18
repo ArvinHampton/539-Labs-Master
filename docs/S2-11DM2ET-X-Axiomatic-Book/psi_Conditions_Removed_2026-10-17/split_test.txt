@@ -1,0 +1,10 @@
+ideals of norm <= 400000 in K: 8379  (first norms: [13, 73, 133, 153, 173, 293, 313, 353, 413, 433, 493, 593])
+mod 280: 12 residue classes of primes p=13 mod 20; classes where r(p) is NOT constant: 0
+mod 560: 24 residue classes of primes p=13 mod 20; classes where r(p) is NOT constant: 0
+mod 840: 24 residue classes of primes p=13 mod 20; classes where r(p) is NOT constant: 0
+mod 1120: 48 residue classes of primes p=13 mod 20; classes where r(p) is NOT constant: 0
+mod 1680: 48 residue classes of primes p=13 mod 20; classes where r(p) is NOT constant: 0
+mod 3360: 96 residue classes of primes p=13 mod 20; classes where r(p) is NOT constant: 0
+distribution of r(p) over primes p=13 mod 20: {1: 2126, 0: 2119}
+composite test n<60000, M=280: residue classes with non-constant r(n)/R_O(n): 0  (values per class e.g. [1/2])
+composite test n<60000, M=560: residue classes with non-constant r(n)/R_O(n): 0  (values per class e.g. [1/2])
