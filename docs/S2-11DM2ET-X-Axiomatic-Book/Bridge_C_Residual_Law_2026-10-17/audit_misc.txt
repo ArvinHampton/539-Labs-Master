@@ -1,0 +1,5 @@
+residual_factor fit through the 4 locked ratios: a,b,c,d = [10.6923  0.216   2.7618 -7.5316]; det = 36.14118
+=> 'recovers the ratios to machine precision' is automatic: 4 unknowns, 4 equations, det != 0 (interpolation, not a test).
+ratios |sample|/|7x|^{-1/2} recomputed from the complex markers: [19.801, 3.161, 20.665, 55.302]
+A^-1 = [[-1/5, 1/5], [1/5, -2/35]]; |det A| = 35; level N (N A^-1 even integral) = 70
+first degrees with C-coefficient not in {0,1,3/2}: [(102, '2'), (121, '2'), (144, '3'), (170, '2'), (183, '2'), (196, '2'), (253, '2'), (289, '2')]
