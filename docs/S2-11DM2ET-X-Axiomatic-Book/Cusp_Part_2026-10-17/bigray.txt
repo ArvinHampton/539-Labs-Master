@@ -1,0 +1,10 @@
+m=p2 p5 p7: Cl_m^+ = [24, 2]; non-sigma-invariant chars: 24; pure type (Maass, lambda=1/4): 0; mixed (weight-1 holo): 24
+   Maass chars (exponent vectors, type): []
+m=p2^2 p5 p7: Cl_m^+ = [24, 2, 2]; non-sigma-invariant chars: 72; pure type (Maass, lambda=1/4): 24; mixed (weight-1 holo): 48
+   Maass chars (exponent vectors, type): [((1, 0, 0), (0, 0)), ((1, 1, 0), (1, 1)), ((3, 0, 0), (0, 0)), ((3, 1, 0), (1, 1)), ((5, 0, 0), (0, 0)), ((5, 1, 0), (1, 1)), ((7, 0, 0), (0, 0)), ((7, 1, 0), (1, 1)), ((9, 0, 0), (0, 0)), ((9, 1, 0), (1, 1)), ((11, 0, 0), (0, 0)), ((11, 1, 0), (1, 1)), ((13, 0, 0), (0, 0)), ((13, 1, 0), (1, 1)), ((15, 0, 0), (0, 0)), ((15, 1, 0), (1, 1)), ((17, 0, 0), (0, 0)), ((17, 1, 0), (1, 1)), ((19, 0, 0), (0, 0)), ((19, 1, 0), (1, 1)), ((21, 0, 0), (0, 0)), ((21, 1, 0), (1, 1)), ((23, 0, 0), (0, 0)), ((23, 1, 0), (1, 1))]
+m=p2^3 p5 p7: Cl_m^+ = [24, 2, 2]; non-sigma-invariant chars: 72; pure type (Maass, lambda=1/4): 24; mixed (weight-1 holo): 48
+   Maass chars (exponent vectors, type): [((1, 0, 1), (0, 0)), ((1, 1, 1), (1, 1)), ((3, 0, 1), (0, 0)), ((3, 1, 1), (1, 1)), ((5, 0, 1), (0, 0)), ((5, 1, 1), (1, 1)), ((7, 0, 1), (0, 0)), ((7, 1, 1), (1, 1)), ((9, 0, 1), (0, 0)), ((9, 1, 1), (1, 1)), ((11, 0, 1), (0, 0)), ((11, 1, 1), (1, 1)), ((13, 0, 1), (0, 0)), ((13, 1, 1), (1, 1)), ((15, 0, 1), (0, 0)), ((15, 1, 1), (1, 1)), ((17, 0, 1), (0, 0)), ((17, 1, 1), (1, 1)), ((19, 0, 1), (0, 0)), ((19, 1, 1), (1, 1)), ((21, 0, 1), (0, 0)), ((21, 1, 1), (1, 1)), ((23, 0, 1), (0, 0)), ((23, 1, 1), (1, 1))]
+m=p2 p5 p7^2: Cl_m^+ = [24, 2]; non-sigma-invariant chars: 24; pure type (Maass, lambda=1/4): 0; mixed (weight-1 holo): 24
+   Maass chars (exponent vectors, type): []
+m=p2 p5^2 p7: Cl_m^+ = [24, 2]; non-sigma-invariant chars: 24; pure type (Maass, lambda=1/4): 0; mixed (weight-1 holo): 24
+   Maass chars (exponent vectors, type): []
