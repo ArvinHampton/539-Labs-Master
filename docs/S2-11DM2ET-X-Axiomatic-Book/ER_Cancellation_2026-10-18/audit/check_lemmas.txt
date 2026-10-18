@@ -1,0 +1,14 @@
+Delta_n F + z/(w(w+z)) = 0
+Delta_m Delta_n F - z(14w+49+7z)/(w(w+z)(w+7)(w+7+z)) = 0
+D^2_n F - 2z^2/(w(w+z)(w+2z)) = 0
+Lemma 1 chi(0, 0) u=(0.013 + 0.02j): |B(u) - sum rho_s pi cot| = 1.02e-29
+Lemma 1 chi(0, 0) u=(0.31 - 0.4j): |B(u) - sum rho_s pi cot| = 1.53e-30
+Lemma 1 chi(0, 0) u=(0.7 + 0.003j): |B(u) - sum rho_s pi cot| = 4.86e-29
+Lemma 1 chi(4, 1) u=(0.013 + 0.02j): |B(u) - sum rho_s pi cot| = 2.18e-30
+Lemma 1 chi(4, 1) u=(0.31 - 0.4j): |B(u) - sum rho_s pi cot| = 5.19e-30
+Lemma 1 chi(4, 1) u=(0.7 + 0.003j): |B(u) - sum rho_s pi cot| = 9.79e-30
+trivial chi: max|beta(n+140)-beta(n)| = 6.19e-31, |sum_(n=1..140) beta(n)| = 2.12e-29
+trivial chi, z=(0.6 + 0.45j): (2/5) sum rho_n/(nz) = (0.00360565247869 + 0.00480753663826j)  (nonzero: the cancellation in step 6 is genuine)
+trivial chi, z=(1.0 + 0.9j): (2/5) sum rho_n/(nz) = (0.00224108234173 + 0.00249009149081j)  (nonzero: the cancellation in step 6 is genuine)
+sum rho_n/n = (1.11286081621029e-32 + 0.0112676639959175j);  i*log(eps)/(2*pi*sqrt35)*... ratio S/(log eps) = (4.49116541274528e-33 + 0.00454728408833987j)
+trivial chi: k(n) -> (2/5)(-pi i/7) = (0.0 - 0.17951958j) != 0, so sum_n rho_n k(n) oscillates with beta(n) (beta not -> 0: |beta(1)|=0.013451)
