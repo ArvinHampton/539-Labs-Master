@@ -1,0 +1,1 @@
+checked 3374 pairs (h,m), m<=105: mismatches 0 []

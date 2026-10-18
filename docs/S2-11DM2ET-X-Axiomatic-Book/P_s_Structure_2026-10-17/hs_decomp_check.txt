@@ -1,0 +1,1 @@
+PASS H_s = [K+ - walls/2] - [K- - walls/2] (21 residues (s,0)) exact to q^2000
