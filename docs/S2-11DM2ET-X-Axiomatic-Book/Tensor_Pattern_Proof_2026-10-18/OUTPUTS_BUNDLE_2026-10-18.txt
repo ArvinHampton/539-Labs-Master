@@ -1,0 +1,49 @@
+# OUTPUTS BUNDLE — Tensor_Pattern_Proof_2026-10-18 (2026-10-18)
+# The text outputs (json/log/txt/sha256) of this package, concatenated verbatim, one member per file.
+# Reports (.md) and scripts (.py/.sh) are stored as separate files in this folder. Binary files (pkl/npz/npy), __pycache__ and empty logs are excluded.
+# Reason for bundling: the push tool accepts at most 4 file attachments per commit; bundling keeps the commit count modest.
+# Member format: a line "===== BEGIN FILE <relative path> bytes=<n> sha256=<hex> =====", then exactly <n> bytes, then "\n===== END FILE <relative path> =====".
+# Extract (Python 3, run in this folder):
+#   import hashlib,os,re; d=open('OUTPUTS_BUNDLE_2026-10-18.txt','rb').read(); i=0
+#   for m in re.finditer(rb'===== BEGIN FILE (\S+) bytes=(\d+) sha256=([0-9a-f]+) =====\n', d):
+#       if m.start()<i: continue
+#       p,n,h=m.group(1).decode(),int(m.group(2)),m.group(3).decode(); b=d[m.end():m.end()+n]; i=m.end()+n
+#       assert hashlib.sha256(b).hexdigest()==h; os.makedirs(os.path.dirname(p) or '.',exist_ok=True); open(p,'wb').write(b)
+# Members: 3
+===== BEGIN FILE disc.txt bytes=314 sha256=651afc5767ae8e810b94dbdff3c51017be658b428e7296b08f48effdb32a830e =====
+L'/Z^2 cyclic of order 35, generator 70*g = (np.int64(14), np.int64(6)); Q(g) = 13/70
+Q(k g) = k^2 * 13/70 mod 1 check: True  (Q mod 1 well-defined: Q(g+n) ...)
+5-part generator 7g: Q = 1/10  -> form c5 x^2/5 with c5 = 1/2; 7-part generator 5g: Q = 9/14 -> c7 = 9/2; B(g5,g7) = 0
+Legendre: (c5|5) = -1, (c7|7) = 1
+
+===== END FILE disc.txt =====
+===== BEGIN FILE extra.txt bytes=595 sha256=c189e483bb751713f207a8d93dbf7398dfcaddd1eeffc444268d7a12541cc562 =====
+pairs (rho_W(g), g mod 4) generated: 48 = |SL2(Z/4)| -> rho on the 2-local subgroup is a function of g mod 4 (phi_4 well defined)
+model Weil p=5: S^2 = (1+0j) * Z (Z = reflection x->-x)  => -I acts on W5^+ by (1+0j) and on W5^- by (-1-0j)
+model Weil p=7: S^2 = (-1-0j) * Z (Z = reflection x->-x)  => -I acts on W7^+ by (-1-0j) and on W7^- by (1+0j)
+V_Eis: scalars of rho(M_p)^2 (= rho(-I at p)): p=4: (-1+0j), p=5: (1-0j), p=7: (-1+0j)
+V_cusp: scalars of rho(M_p)^2 (= rho(-I at p)): p=4: (-1+0j), p=5: (-1+0j), p=7: (1-0j)
+V^perp: eigenvalues of rho(M_5)^2: [np.float64(-1.0), np.float64(1.0)]
+
+===== END FILE extra.txt =====
+===== BEGIN FILE local.txt bytes=1685 sha256=aed69e9eb9fd12e817a4ec00c0f58bd3a90be3dc0cb9cef5e9278f5dd6a63156 =====
+W: S^2=I 9.6e-16, (ST)^3=I 2.2e-15, T^140=I 7.5e-14
+local generators: M_p = S mod p^k, I mod 140/p^k: M_4=[[90476, 151655], [105, 176]]; M_5=[[68125, 103404], [56, 85]]; M_7=[[-40159, -53880], [120, 161]]
+rho(S) = prod rho(M_p): 3.1e-13;  rho(T) = prod T^e_p: 1.5e-13
+local generators of different primes commute: 5.1e-14
+p=5: |image group| = 120 (|SL2(F_5)|=120); Weil +/- parts irreducible: norms {1: np.float64(1.0), -1: np.float64(1.0)}; W|G_5 = 16·W5^+ + 12·W5^-, character residual 1.5e-11
+p=7: |image group| = 336 (|SL2(F_7)|=336); Weil +/- parts irreducible: norms {1: np.float64(1.0000000000000002), -1: np.float64(0.9999999999999992)}; W|G_7 = 12·W7^+ + 8·W7^-, character residual 1.9e-11
+p=2: |image group| = 48 (|SL2(Z/4)|=48); chi_A=tr|V_Eis/12: dim 3.000, norm 1.000000; chi_B=tr|V_cusp/6: dim 1.000, norm 1.000000; <A,B> 5.3e-14; W|G4 - 18(chiA+chiB) resid 5.8e-12
+  chi_A on G4 values (rounded): [np.complex128(-3+0j), np.complex128(-1+0j), np.complex128(-0-1j), np.complex128(-0j), np.complex128(1j), np.complex128(1-0j), np.complex128(3+0j)]
+  chi_B: B1(T_4)=1j, B1(S_4)=1j
+joint isotypic components (rank of E4 E5 E7) and overlap with V_Eis / V_cusp / V^perp:
+  A⊗W5^+⊗W7^+: dim 36; rank on V_Eis 36, V_cusp 0, V^perp 0
+  A⊗W5^+⊗W7^-: dim 0; rank on V_Eis 0, V_cusp 0, V^perp 0
+  A⊗W5^-⊗W7^+: dim 0; rank on V_Eis 0, V_cusp 0, V^perp 0
+  A⊗W5^-⊗W7^-: dim 18; rank on V_Eis 0, V_cusp 0, V^perp 18
+  B⊗W5^+⊗W7^+: dim 12; rank on V_Eis 0, V_cusp 0, V^perp 12
+  B⊗W5^+⊗W7^-: dim 0; rank on V_Eis 0, V_cusp 0, V^perp 0
+  B⊗W5^-⊗W7^+: dim 0; rank on V_Eis 0, V_cusp 0, V^perp 0
+  B⊗W5^-⊗W7^-: dim 6; rank on V_Eis 0, V_cusp 6, V^perp 0
+
+===== END FILE local.txt =====
