@@ -1,0 +1,10 @@
+PARI stack size set to 2000000000 bytes, maximum size set to 2000003072
+merged 1 runs; coverage min 0.3305084745762712
+s=8: Cl_m^+=[4, 2, 2, 2] (m=2:7,3:2); chars: sigma-inv 8 (of which mixed 0), cusp-type (pure, non-inv) 8, mixed non-inv 16
+   components: pure Eis 48, pure cusp 0, both 0, zero-content 0;  max mixed content 8.01e-16
+   function-space ranks (raw Fourier matrix): Eis comps 18, cusp comps 0, Eis+cusp 18, whole family 18
+   label-space (P-invariant) dims: Eis labels 26, cusp labels 0, all 26
+   u_L = u_(a,0): |Eis|=2.236e+00 |cusp|=4.758e-16 |mixed|=8.0e-16
+   u_R labels: 48, of which pure Eis 48, cusp 0, both 0, zero 0
+   cusp characters with nonzero content: 0  (=> 0 dihedral forms if sigma-pairs)
+   by (type, N(conductor)): {}
