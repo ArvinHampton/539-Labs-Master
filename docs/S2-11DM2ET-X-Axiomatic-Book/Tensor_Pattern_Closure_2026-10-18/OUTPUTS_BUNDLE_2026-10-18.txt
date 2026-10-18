@@ -1,0 +1,65 @@
+# OUTPUTS BUNDLE — Tensor_Pattern_Closure_2026-10-18 (2026-10-18)
+# The text outputs (json/log/txt/sha256) of this package, concatenated verbatim, one member per file.
+# Reports (.md) and scripts (.py/.sh) are stored as separate files in this folder. Binary files (pkl/npz/npy), __pycache__ and empty logs are excluded.
+# Reason for bundling: the push tool accepts at most 4 file attachments per commit; bundling keeps the commit count modest.
+# Member format: a line "===== BEGIN FILE <relative path> bytes=<n> sha256=<hex> =====", then exactly <n> bytes, then "\n===== END FILE <relative path> =====".
+# Extract (Python 3, run in this folder):
+#   import hashlib,os,re; d=open('OUTPUTS_BUNDLE_2026-10-18.txt','rb').read(); i=0
+#   for m in re.finditer(rb'===== BEGIN FILE (\S+) bytes=(\d+) sha256=([0-9a-f]+) =====\n', d):
+#       if m.start()<i: continue
+#       p,n,h=m.group(1).decode(),int(m.group(2)),m.group(3).decode(); b=d[m.end():m.end()+n]; i=m.end()+n
+#       assert hashlib.sha256(b).hexdigest()==h; os.makedirs(os.path.dirname(p) or '.',exist_ok=True); open(p,'wb').write(b)
+# Members: 8
+===== BEGIN FILE closure_exact.txt bytes=1213 sha256=bb02c0879bcc1e6f5e0053ee235649dba517076cbd432596747405ffaf766deb =====
+(a) negation acts on u' exactly as Z5⊗Z7⊗I4 (u'_k = u'_N(k), phase 0): True
+    unit gamma acts exactly as I5⊗Z7⊗diag(1,1,1,-1): True
+    orbits of <N,gamma> on 140 labels: 48; consistent (free) orbits: 42 -> dim Fix = 42; inconsistent orbits (forced zero): 6 containing 11 labels
+    free-orbit sizes: [(1, 3), (2, 15), (4, 24)]; proportionality constants within orbits (u' basis): ['0', '1/2']
+    zero labels (x5,x7,eps,delta): [(0, 0, 1, 1), (0, 5, 1, 1), (2, 0, 1, 1), (0, 3, 1, 1), (4, 0, 1, 1), (0, 1, 1, 1), (0, 6, 1, 1), (1, 0, 1, 1), (0, 4, 1, 1), (3, 0, 1, 1), (0, 2, 1, 1)]
+    zero labels in original indexing: [71, 95, 107, 117, 127, 129, 131, 133, 135, 137, 139]
+    predicted dim: 3*4*3 + 2*3*1 = 42
+    proportionality constants in the original u basis are roots of unity e(r), r in Q with denominators [1, 2, 5, 10]
+(c) p=5: (conj(F)T)^3 = c·Z exactly: True; (..)^2 off-diagonal zero: True; diagonal = {(125, 0, 0, 0)} (as poly in zeta_5; constant p^3=125 means c^2 = p^3 up to the gamma^-2 sign)
+(c) p=7: (conj(F)T)^3 = c·Z exactly: True; (..)^2 off-diagonal zero: True; diagonal = {(-343, 0, 0, 0, 0, 0)} (as poly in zeta_7; constant p^3=343 means c^2 = p^3 up to the gamma^-2 sign)
+
+===== END FILE closure_exact.txt =====
+===== BEGIN FILE cusp_sector.txt bytes=40 sha256=a70176af97584c678b1224636e4280143a0c3a962a284a625d1c5da080385823 =====
+cusp labels -> (eps,delta): {(1, 1)} 24
+
+===== END FILE cusp_sector.txt =====
+===== BEGIN FILE factor.txt bytes=880 sha256=76304e0db3bcf274d8cef5ccdd07ecac683a66fea202b4b4771ca02adbd79789 =====
+T permutes only the 2-adic labels: True; T-perm on (eps,delta): {(0, 0): (0, 1), (0, 1): (0, 0), (1, 0): (1, 0), (1, 1): (1, 1)}
+T exponent = t5(x5)+t7(x7)+t2(e,d) exactly: True; t5={0: '0', 1: '2/5', 2: '3/5', 3: '3/5', 4: '2/5'}, t7={0: '0', 1: '2/7', 2: '1/7', 3: '4/7', 4: '4/7', 5: '1/7', 6: '2/7'}, t2={(0, 0): '0', (0, 1): '0', (1, 0): '1/4', (1, 1): '1/4'}
+S 2-adic support: {(0, 0): {(0, 0)}, (0, 1): {(1, 0)}, (1, 0): {(0, 1)}, (1, 1): {(1, 1)}}
+S exponent = s5(x5,y5)+s7(x7,y7)+s2(2-adic) exactly (same s5,s7 for all 2-adic blocks): True
+s5(x,y) = ['0', '1/5', '2/5', '3/5', '4/5'] ; check s5 = -2*2*x*y/5? False; s5 = c5*x*y/5 with c5 in [4]
+s7 = c7*x*y/7 with c7 in [4]
+t5 = k5*x^2/5 with k5 in [2]; t7 = k7*x^2/7 with k7 in [2]
+s2 (2-adic S, x 1/sqrt35 overall): {'((0, 0), (0, 0))': '0', '((0, 1), (1, 0))': '0', '((1, 0), (0, 1))': '0', '((1, 1), (1, 1))': '1/2'}
+
+===== END FILE factor.txt =====
+===== BEGIN FILE gaction.txt bytes=745 sha256=27c12016a94eac636b0eee19b99c7c6e47fda1937f635bc3c0ff6a4996c2a89f =====
+gamma G: x5 -> {1}·x5, x7 -> {6}·x7; 2-adic map {(0, 0): (0, 0), (0, 1): (0, 1), (1, 0): (1, 0), (1, 1): (1, 1)}; phases separable: True; 2-adic phases at x=0: {(0, 0): '0', (0, 1): '0', (1, 0): '0', (1, 1): '1/2'}; x-phases (eps=delta=0): ['0']
+negation: x5 -> {4}·x5, x7 -> {6}·x7; 2-adic map {(0, 0): (0, 0), (0, 1): (0, 1), (1, 0): (1, 0), (1, 1): (1, 1)}; phases separable: True; 2-adic phases at x=0: {(0, 0): '0', (0, 1): '0', (1, 0): '0', (1, 1): '0'}; x-phases (eps=delta=0): ['0']
+gamma*neg: x5 -> {4}·x5, x7 -> {1}·x7; 2-adic map {(0, 0): (0, 0), (0, 1): (0, 1), (1, 0): (1, 0), (1, 1): (1, 1)}; phases separable: True; 2-adic phases at x=0: {(0, 0): '0', (0, 1): '0', (1, 0): '0', (1, 1): '1/2'}; x-phases (eps=delta=0): ['0']
+
+===== END FILE gaction.txt =====
+===== BEGIN FILE local2.json bytes=273 sha256=fd824f3f840287db1b1e8b612b720ceee3490401db793e2a4a12bf4c0f2fbf17 =====
+{"t2": {"(0, 0)": "0", "(0, 1)": "0", "(1, 0)": "1/4", "(1, 1)": "1/4"}, "s2": {"((0, 0), (0, 0))": "0", "((0, 1), (1, 0))": "0", "((1, 0), (0, 1))": "0", "((1, 1), (1, 1))": "1/2"}, "Tperm": {"(0, 0)": "(0, 1)", "(0, 1)": "(0, 0)", "(1, 0)": "(1, 0)", "(1, 1)": "(1, 1)"}}
+===== END FILE local2.json =====
+===== BEGIN FILE local2.txt bytes=469 sha256=614d66378b52cbba7e2a7e5f5b151f8ab3402085d5f50edcc74dbdb641316ce3 =====
+gamma_5 = e(k/8), k in [4]; gamma_7 = e(k/8), k in [6]  (S^4=1 automatic since (F/sqrt p)^2 = Z exactly)
+k5=4,k7=6: rho_2(S)=e(3/4)S2^-1: S^4=I True, (ST)^3=S^2 True, T^4=I True; S^2 = {(0, 0): ((0, 0), Fraction(1, 2)), (1, 0): ((1, 0), Fraction(1, 2)), (0, 1): ((0, 1), Fraction(1, 2)), (1, 1): ((1, 1), Fraction(1, 2))}; (ST)^3 = {(0, 0): ((0, 0), Fraction(1, 2)), (0, 1): ((0, 1), Fraction(1, 2)), (1, 0): ((1, 0), Fraction(1, 2)), (1, 1): ((1, 1), Fraction(1, 2))}
+
+===== END FILE local2.txt =====
+===== BEGIN FILE rank_modp.txt bytes=159 sha256=3c8f31d8a6dab30fe40bbc1c9e4b8d706922f5160b538992dc5adc610b4b0cbb =====
+prime l = 29401 (= 1 mod 4900); exact Fourier matrix (|Q|<=25, 672 frequencies, constant term excluded) has rank 42 over F_l  =>  rank over Q(zeta_4900) >= 42
+
+===== END FILE rank_modp.txt =====
+===== BEGIN FILE rho2.txt bytes=537 sha256=ac9a5cf194d12c50e212ea58d3241553c10b449a847ebbfca1ff4787d34ca66c =====
+pair group (rho_2(g), g mod 4): 48 elements; distinct g mod 4: 48; distinct rho_2(g): 48  -> rho_2 is a function of g mod 4 iff pairs = #mats: True
+span(even chars) and span(odd char) invariant: True; <chiA,chiA> = 1.000000000000, <chiB,chiB> = 1.000000000000, <chiA,chiB> = 1.0e-33  (character values are exact Gaussian integers: sums of 4th roots of unity)
+B1: S -> 1/4 (turns), T -> 1/4 ; A3 T-spectrum: T2 on even chars = swap(00,01) and e(1/4) on 10 -> eigenvalues 1,-1,i
+tr rho_2(S) on A3 = e(3/4) (only 00 fixed) ; on B1 = e(1/4)
+
+===== END FILE rho2.txt =====
