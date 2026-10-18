@@ -1,0 +1,7234 @@
+# OUTPUTS BUNDLE — Open_Algebraic_2026-10-18 (2026-10-18)
+# The text outputs (json/log/txt/sha256) of this package, concatenated verbatim, one member per file.
+# Reports (.md) and scripts (.py/.sh) are stored as separate files in this folder. Binary files (pkl/npz/npy), .bak backups, __pycache__ and empty logs are excluded; they are listed under 'Excluded' below with size and sha256.
+# Reason for bundling: the push tool accepts at most 4 file attachments per commit; bundling keeps the commit count modest.
+# Member format: a line "===== BEGIN FILE <relative path> bytes=<n> sha256=<hex> =====", then exactly <n> bytes, then "\n===== END FILE <relative path> =====".
+# Extract (Python 3, run in this folder):
+#   import hashlib,os,re; d=open('OUTPUTS_BUNDLE_2026-10-18.txt','rb').read(); i=0
+#   for m in re.finditer(rb'===== BEGIN FILE (\S+) bytes=(\d+) sha256=([0-9a-f]+) =====\n', d):
+#       if m.start()<i: continue
+#       p,n,h=m.group(1).decode(),int(m.group(2)),m.group(3).decode(); b=d[m.end():m.end()+n]; i=m.end()+n
+#       assert hashlib.sha256(b).hexdigest()==h; os.makedirs(os.path.dirname(p) or '.',exist_ok=True); open(p,'wb').write(b)
+# Members: 39
+# Excluded (not in repository; available on request):
+#   w2_Y.npy  bytes=480  sha256=25f89254b6b0eaab8e8f9da5862bac938c8dbcc7c3b4b6d3b5e5df4a1ac15a1b
+# Member list:
+#   al_s7.json
+#   cusp_sectors.json
+#   even_exact.log
+#   even_exact_6_8_10_12_14_18_32.json
+#   even_sectors.json
+#   finer.log
+#   finer98.log
+#   finerOld98_q130.log
+#   finerOld_98.json
+#   finer_9.json
+#   finer_98.json
+#   finer_9_11_25.json
+#   gap_exact.json
+#   gap_exact_sub.json
+#   gap_g.json
+#   gap_locate.json
+#   gap_locate.log
+#   gap_subspace.json
+#   h_lattice.json
+#   item1_27.log
+#   item1_lead_27.json
+#   item1_lead_5_7_9_11.json
+#   item1_lead_5_7_9_11_13_15_17_19_21_23_25.json
+#   lemma1.log
+#   lemma1b.json
+#   lemma1c.json
+#   old98_h2.json
+#   old98_rel_Q40.json
+#   old_g_18.json
+#   old_g_50.json
+#   old_g_98.json
+#   old_h_98.json
+#   s64_W.json
+#   w2_cert_32.json
+#   w2_cert_64.json
+#   w2_orbits_16_32_48_64.json
+#   w2_orbs.json
+#   zall.json
+#   zall2.json
+
+===== BEGIN FILE al_s7.json bytes=4672 sha256=f9206982206fa36eb3d6b5608e8e1f0cb9892be5282abf9fee45b6d245d88105 =====
+[
+ {
+  "chi": [
+   1,
+   0,
+   1
+  ],
+  "cond_norm": 140,
+  "inf": [
+   0,
+   0
+  ],
+  "cond_exps": {
+   "2": 2,
+   "5": 1,
+   "7": 1
+  },
+  "root_number": [
+   0.93345363,
+   -0.35869809
+  ]
+ },
+ {
+  "chi": [
+   1,
+   1,
+   1
+  ],
+  "cond_norm": 140,
+  "inf": [
+   1,
+   1
+  ],
+  "cond_exps": {
+   "2": 2,
+   "5": 1,
+   "7": 1
+  },
+  "root_number": [
+   -0.93345363,
+   0.35869809
+  ]
+ },
+ {
+  "chi": [
+   3,
+   0,
+   1
+  ],
+  "cond_norm": 140,
+  "inf": [
+   0,
+   0
+  ],
+  "cond_exps": {
+   "2": 2,
+   "5": 1,
+   "7": 1
+  },
+  "root_number": [
+   0.85065081,
+   -0.52573111
+  ]
+ },
+ {
+  "chi": [
+   3,
+   1,
+   1
+  ],
+  "cond_norm": 140,
+  "inf": [
+   1,
+   1
+  ],
+  "cond_exps": {
+   "2": 2,
+   "5": 1,
+   "7": 1
+  },
+  "root_number": [
+   -0.85065081,
+   0.52573111
+  ]
+ },
+ {
+  "chi": [
+   5,
+   0,
+   1
+  ],
+  "cond_norm": 140,
+  "inf": [
+   0,
+   0
+  ],
+  "cond_exps": {
+   "2": 2,
+   "5": 1,
+   "7": 1
+  },
+  "root_number": [
+   0.09662383,
+   0.99532097
+  ]
+ },
+ {
+  "chi": [
+   5,
+   1,
+   1
+  ],
+  "cond_norm": 140,
+  "inf": [
+   1,
+   1
+  ],
+  "cond_exps": {
+   "2": 2,
+   "5": 1,
+   "7": 1
+  },
+  "root_number": [
+   -0.09662383,
+   -0.99532097
+  ]
+ },
+ {
+  "chi": [
+   7,
+   0,
+   1
+  ],
+  "cond_norm": 140,
+  "inf": [
+   0,
+   0
+  ],
+  "cond_exps": {
+   "2": 2,
+   "5": 1,
+   "7": 1
+  },
+  "root_number": [
+   0.09662383,
+   -0.99532097
+  ]
+ },
+ {
+  "chi": [
+   7,
+   1,
+   1
+  ],
+  "cond_norm": 140,
+  "inf": [
+   1,
+   1
+  ],
+  "cond_exps": {
+   "2": 2,
+   "5": 1,
+   "7": 1
+  },
+  "root_number": [
+   -0.09662383,
+   0.99532097
+  ]
+ },
+ {
+  "chi": [
+   9,
+   0,
+   1
+  ],
+  "cond_norm": 140,
+  "inf": [
+   0,
+   0
+  ],
+  "cond_exps": {
+   "2": 2,
+   "5": 1,
+   "7": 1
+  },
+  "root_number": [
+   0.85065081,
+   0.52573111
+  ]
+ },
+ {
+  "chi": [
+   9,
+   1,
+   1
+  ],
+  "cond_norm": 140,
+  "inf": [
+   1,
+   1
+  ],
+  "cond_exps": {
+   "2": 2,
+   "5": 1,
+   "7": 1
+  },
+  "root_number": [
+   -0.85065081,
+   -0.52573111
+  ]
+ },
+ {
+  "chi": [
+   11,
+   0,
+   1
+  ],
+  "cond_norm": 140,
+  "inf": [
+   0,
+   0
+  ],
+  "cond_exps": {
+   "2": 2,
+   "5": 1,
+   "7": 1
+  },
+  "root_number": [
+   0.93345363,
+   0.35869809
+  ]
+ },
+ {
+  "chi": [
+   11,
+   1,
+   1
+  ],
+  "cond_norm": 140,
+  "inf": [
+   1,
+   1
+  ],
+  "cond_exps": {
+   "2": 2,
+   "5": 1,
+   "7": 1
+  },
+  "root_number": [
+   -0.93345363,
+   -0.35869809
+  ]
+ },
+ {
+  "chi": [
+   13,
+   0,
+   1
+  ],
+  "cond_norm": 140,
+  "inf": [
+   0,
+   0
+  ],
+  "cond_exps": {
+   "2": 2,
+   "5": 1,
+   "7": 1
+  },
+  "root_number": [
+   0.93345363,
+   -0.35869809
+  ]
+ },
+ {
+  "chi": [
+   13,
+   1,
+   1
+  ],
+  "cond_norm": 140,
+  "inf": [
+   1,
+   1
+  ],
+  "cond_exps": {
+   "2": 2,
+   "5": 1,
+   "7": 1
+  },
+  "root_number": [
+   -0.93345363,
+   0.35869809
+  ]
+ },
+ {
+  "chi": [
+   15,
+   0,
+   1
+  ],
+  "cond_norm": 140,
+  "inf": [
+   0,
+   0
+  ],
+  "cond_exps": {
+   "2": 2,
+   "5": 1,
+   "7": 1
+  },
+  "root_number": [
+   0.85065081,
+   -0.52573111
+  ]
+ },
+ {
+  "chi": [
+   15,
+   1,
+   1
+  ],
+  "cond_norm": 140,
+  "inf": [
+   1,
+   1
+  ],
+  "cond_exps": {
+   "2": 2,
+   "5": 1,
+   "7": 1
+  },
+  "root_number": [
+   -0.85065081,
+   0.52573111
+  ]
+ },
+ {
+  "chi": [
+   17,
+   0,
+   1
+  ],
+  "cond_norm": 140,
+  "inf": [
+   0,
+   0
+  ],
+  "cond_exps": {
+   "2": 2,
+   "5": 1,
+   "7": 1
+  },
+  "root_number": [
+   0.09662383,
+   0.99532097
+  ]
+ },
+ {
+  "chi": [
+   17,
+   1,
+   1
+  ],
+  "cond_norm": 140,
+  "inf": [
+   1,
+   1
+  ],
+  "cond_exps": {
+   "2": 2,
+   "5": 1,
+   "7": 1
+  },
+  "root_number": [
+   -0.09662383,
+   -0.99532097
+  ]
+ },
+ {
+  "chi": [
+   19,
+   0,
+   1
+  ],
+  "cond_norm": 140,
+  "inf": [
+   0,
+   0
+  ],
+  "cond_exps": {
+   "2": 2,
+   "5": 1,
+   "7": 1
+  },
+  "root_number": [
+   0.09662383,
+   -0.99532097
+  ]
+ },
+ {
+  "chi": [
+   19,
+   1,
+   1
+  ],
+  "cond_norm": 140,
+  "inf": [
+   1,
+   1
+  ],
+  "cond_exps": {
+   "2": 2,
+   "5": 1,
+   "7": 1
+  },
+  "root_number": [
+   -0.09662383,
+   0.99532097
+  ]
+ },
+ {
+  "chi": [
+   21,
+   0,
+   1
+  ],
+  "cond_norm": 140,
+  "inf": [
+   0,
+   0
+  ],
+  "cond_exps": {
+   "2": 2,
+   "5": 1,
+   "7": 1
+  },
+  "root_number": [
+   0.85065081,
+   0.52573111
+  ]
+ },
+ {
+  "chi": [
+   21,
+   1,
+   1
+  ],
+  "cond_norm": 140,
+  "inf": [
+   1,
+   1
+  ],
+  "cond_exps": {
+   "2": 2,
+   "5": 1,
+   "7": 1
+  },
+  "root_number": [
+   -0.85065081,
+   -0.52573111
+  ]
+ },
+ {
+  "chi": [
+   23,
+   0,
+   1
+  ],
+  "cond_norm": 140,
+  "inf": [
+   0,
+   0
+  ],
+  "cond_exps": {
+   "2": 2,
+   "5": 1,
+   "7": 1
+  },
+  "root_number": [
+   0.93345363,
+   0.35869809
+  ]
+ },
+ {
+  "chi": [
+   23,
+   1,
+   1
+  ],
+  "cond_norm": 140,
+  "inf": [
+   1,
+   1
+  ],
+  "cond_exps": {
+   "2": 2,
+   "5": 1,
+   "7": 1
+  },
+  "root_number": [
+   -0.93345363,
+   -0.35869809
+  ]
+ }
+]
+===== END FILE al_s7.json =====
+===== BEGIN FILE cusp_sectors.json bytes=10248 sha256=740048b9672869810adb84a0c9bc7c18734dd503da9f4a1724f867eaa0deb347 =====
+[
+ {
+  "s": 5,
+  "dimV_sectors": 20,
+  "s(s-1)": 20,
+  "d_Eis_allEven": 18,
+  "cusp_proved_Cat_A": 2,
+  "nonEven_with_T_invariants": 0,
+  "oddchar_dim": 2,
+  "sectors": [
+   {
+    "signs": {
+     "3^1": 1,
+     "5^1": 1
+    },
+    "dim": 18,
+    "T_invariant_dim": 1
+   },
+   {
+    "signs": {
+     "3^1": -1,
+     "5^1": -1
+    },
+    "dim": 2,
+    "T_invariant_dim": 0
+   }
+  ]
+ },
+ {
+  "s": 7,
+  "dimV_sectors": 42,
+  "s(s-1)": 42,
+  "d_Eis_allEven": 36,
+  "cusp_proved_Cat_A": 6,
+  "nonEven_with_T_invariants": 0,
+  "oddchar_dim": 6,
+  "sectors": [
+   {
+    "signs": {
+     "5^1": 1,
+     "7^1": 1
+    },
+    "dim": 36,
+    "T_invariant_dim": 1
+   },
+   {
+    "signs": {
+     "5^1": -1,
+     "7^1": -1
+    },
+    "dim": 6,
+    "T_invariant_dim": 0
+   }
+  ]
+ },
+ {
+  "s": 9,
+  "dimV_sectors": 72,
+  "s(s-1)": 72,
+  "d_Eis_allEven": 60,
+  "cusp_proved_Cat_A": 12,
+  "nonEven_with_T_invariants": 0,
+  "oddchar_dim": 12,
+  "sectors": [
+   {
+    "signs": {
+     "3^2": 1,
+     "7^1": 1
+    },
+    "dim": 60,
+    "T_invariant_dim": 2
+   },
+   {
+    "signs": {
+     "3^2": -1,
+     "7^1": -1
+    },
+    "dim": 12,
+    "T_invariant_dim": 0
+   }
+  ]
+ },
+ {
+  "s": 11,
+  "dimV_sectors": 110,
+  "s(s-1)": 110,
+  "d_Eis_allEven": 90,
+  "cusp_proved_Cat_A": 20,
+  "nonEven_with_T_invariants": 0,
+  "oddchar_dim": 20,
+  "sectors": [
+   {
+    "signs": {
+     "3^2": 1,
+     "11^1": 1
+    },
+    "dim": 90,
+    "T_invariant_dim": 2
+   },
+   {
+    "signs": {
+     "3^2": -1,
+     "11^1": -1
+    },
+    "dim": 20,
+    "T_invariant_dim": 0
+   }
+  ]
+ },
+ {
+  "s": 13,
+  "dimV_sectors": 156,
+  "s(s-1)": 156,
+  "d_Eis_allEven": 126,
+  "cusp_proved_Cat_A": 30,
+  "nonEven_with_T_invariants": 0,
+  "oddchar_dim": 30,
+  "sectors": [
+   {
+    "signs": {
+     "11^1": 1,
+     "13^1": 1
+    },
+    "dim": 126,
+    "T_invariant_dim": 1
+   },
+   {
+    "signs": {
+     "11^1": -1,
+     "13^1": -1
+    },
+    "dim": 30,
+    "T_invariant_dim": 0
+   }
+  ]
+ },
+ {
+  "s": 15,
+  "dimV_sectors": 210,
+  "s(s-1)": 210,
+  "d_Eis_allEven": 126,
+  "cusp_proved_Cat_A": 84,
+  "nonEven_with_T_invariants": 0,
+  "oddchar_dim": 42,
+  "sectors": [
+   {
+    "signs": {
+     "3^1": 1,
+     "5^1": 1,
+     "13^1": 1
+    },
+    "dim": 126,
+    "T_invariant_dim": 1
+   },
+   {
+    "signs": {
+     "3^1": 1,
+     "5^1": -1,
+     "13^1": -1
+    },
+    "dim": 24,
+    "T_invariant_dim": 0
+   },
+   {
+    "signs": {
+     "3^1": -1,
+     "5^1": 1,
+     "13^1": -1
+    },
+    "dim": 18,
+    "T_invariant_dim": 0
+   },
+   {
+    "signs": {
+     "3^1": -1,
+     "5^1": -1,
+     "13^1": 1
+    },
+    "dim": 42,
+    "T_invariant_dim": 0
+   }
+  ]
+ },
+ {
+  "s": 17,
+  "dimV_sectors": 272,
+  "s(s-1)": 272,
+  "d_Eis_allEven": 162,
+  "cusp_proved_Cat_A": 110,
+  "nonEven_with_T_invariants": 0,
+  "oddchar_dim": 56,
+  "sectors": [
+   {
+    "signs": {
+     "3^1": 1,
+     "5^1": 1,
+     "17^1": 1
+    },
+    "dim": 162,
+    "T_invariant_dim": 1
+   },
+   {
+    "signs": {
+     "3^1": 1,
+     "5^1": -1,
+     "17^1": -1
+    },
+    "dim": 32,
+    "T_invariant_dim": 0
+   },
+   {
+    "signs": {
+     "3^1": -1,
+     "5^1": 1,
+     "17^1": -1
+    },
+    "dim": 24,
+    "T_invariant_dim": 0
+   },
+   {
+    "signs": {
+     "3^1": -1,
+     "5^1": -1,
+     "17^1": 1
+    },
+    "dim": 54,
+    "T_invariant_dim": 0
+   }
+  ]
+ },
+ {
+  "s": 19,
+  "dimV_sectors": 342,
+  "s(s-1)": 342,
+  "d_Eis_allEven": 270,
+  "cusp_proved_Cat_A": 72,
+  "nonEven_with_T_invariants": 0,
+  "oddchar_dim": 72,
+  "sectors": [
+   {
+    "signs": {
+     "17^1": 1,
+     "19^1": 1
+    },
+    "dim": 270,
+    "T_invariant_dim": 1
+   },
+   {
+    "signs": {
+     "17^1": -1,
+     "19^1": -1
+    },
+    "dim": 72,
+    "T_invariant_dim": 0
+   }
+  ]
+ },
+ {
+  "s": 21,
+  "dimV_sectors": 420,
+  "s(s-1)": 420,
+  "d_Eis_allEven": 240,
+  "cusp_proved_Cat_A": 180,
+  "nonEven_with_T_invariants": 0,
+  "oddchar_dim": 90,
+  "sectors": [
+   {
+    "signs": {
+     "3^1": 1,
+     "7^1": 1,
+     "19^1": 1
+    },
+    "dim": 240,
+    "T_invariant_dim": 1
+   },
+   {
+    "signs": {
+     "3^1": 1,
+     "7^1": -1,
+     "19^1": -1
+    },
+    "dim": 54,
+    "T_invariant_dim": 0
+   },
+   {
+    "signs": {
+     "3^1": -1,
+     "7^1": 1,
+     "19^1": -1
+    },
+    "dim": 36,
+    "T_invariant_dim": 0
+   },
+   {
+    "signs": {
+     "3^1": -1,
+     "7^1": -1,
+     "19^1": 1
+    },
+    "dim": 90,
+    "T_invariant_dim": 0
+   }
+  ]
+ },
+ {
+  "s": 23,
+  "dimV_sectors": 506,
+  "s(s-1)": 506,
+  "d_Eis_allEven": 288,
+  "cusp_proved_Cat_A": 218,
+  "nonEven_with_T_invariants": 0,
+  "oddchar_dim": 110,
+  "sectors": [
+   {
+    "signs": {
+     "3^1": 1,
+     "7^1": 1,
+     "23^1": 1
+    },
+    "dim": 288,
+    "T_invariant_dim": 1
+   },
+   {
+    "signs": {
+     "3^1": 1,
+     "7^1": -1,
+     "23^1": -1
+    },
+    "dim": 66,
+    "T_invariant_dim": 0
+   },
+   {
+    "signs": {
+     "3^1": -1,
+     "7^1": 1,
+     "23^1": -1
+    },
+    "dim": 44,
+    "T_invariant_dim": 0
+   },
+   {
+    "signs": {
+     "3^1": -1,
+     "7^1": -1,
+     "23^1": 1
+    },
+    "dim": 108,
+    "T_invariant_dim": 0
+   }
+  ]
+ },
+ {
+  "s": 25,
+  "dimV_sectors": 600,
+  "s(s-1)": 600,
+  "d_Eis_allEven": 468,
+  "cusp_proved_Cat_A": 132,
+  "nonEven_with_T_invariants": 0,
+  "oddchar_dim": 132,
+  "sectors": [
+   {
+    "signs": {
+     "5^2": 1,
+     "23^1": 1
+    },
+    "dim": 468,
+    "T_invariant_dim": 3
+   },
+   {
+    "signs": {
+     "5^2": -1,
+     "23^1": -1
+    },
+    "dim": 132,
+    "T_invariant_dim": 0
+   }
+  ]
+ },
+ {
+  "s": 27,
+  "dimV_sectors": 702,
+  "s(s-1)": 702,
+  "d_Eis_allEven": 546,
+  "cusp_proved_Cat_A": 156,
+  "nonEven_with_T_invariants": 0,
+  "oddchar_dim": 156,
+  "sectors": [
+   {
+    "signs": {
+     "3^3": 1,
+     "5^2": 1
+    },
+    "dim": 546,
+    "T_invariant_dim": 6
+   },
+   {
+    "signs": {
+     "3^3": -1,
+     "5^2": -1
+    },
+    "dim": 156,
+    "T_invariant_dim": 0
+   }
+  ]
+ },
+ {
+  "s": 41,
+  "dimV_sectors": 1640,
+  "s(s-1)": 1640,
+  "d_Eis_allEven": 882,
+  "cusp_proved_Cat_A": 758,
+  "nonEven_with_T_invariants": 0,
+  "oddchar_dim": 380,
+  "sectors": [
+   {
+    "signs": {
+     "3^1": 1,
+     "13^1": 1,
+     "41^1": 1
+    },
+    "dim": 882,
+    "T_invariant_dim": 1
+   },
+   {
+    "signs": {
+     "3^1": 1,
+     "13^1": -1,
+     "41^1": -1
+    },
+    "dim": 240,
+    "T_invariant_dim": 0
+   },
+   {
+    "signs": {
+     "3^1": -1,
+     "13^1": 1,
+     "41^1": -1
+    },
+    "dim": 140,
+    "T_invariant_dim": 0
+   },
+   {
+    "signs": {
+     "3^1": -1,
+     "13^1": -1,
+     "41^1": 1
+    },
+    "dim": 378,
+    "T_invariant_dim": 0
+   }
+  ]
+ },
+ {
+  "s": 45,
+  "dimV_sectors": 1980,
+  "s(s-1)": 1980,
+  "d_Eis_allEven": 990,
+  "cusp_proved_Cat_A": 990,
+  "nonEven_with_T_invariants": 0,
+  "oddchar_dim": 462,
+  "sectors": [
+   {
+    "signs": {
+     "3^2": 1,
+     "5^1": 1,
+     "43^1": 1
+    },
+    "dim": 990,
+    "T_invariant_dim": 2
+   },
+   {
+    "signs": {
+     "3^2": 1,
+     "5^1": -1,
+     "43^1": -1
+    },
+    "dim": 210,
+    "T_invariant_dim": 0
+   },
+   {
+    "signs": {
+     "3^2": -1,
+     "5^1": 1,
+     "43^1": -1
+    },
+    "dim": 252,
+    "T_invariant_dim": 0
+   },
+   {
+    "signs": {
+     "3^2": -1,
+     "5^1": -1,
+     "43^1": 1
+    },
+    "dim": 528,
+    "T_invariant_dim": 0
+   }
+  ]
+ },
+ {
+  "s": 49,
+  "dimV_sectors": 2352,
+  "s(s-1)": 2352,
+  "d_Eis_allEven": 1800,
+  "cusp_proved_Cat_A": 552,
+  "nonEven_with_T_invariants": 0,
+  "oddchar_dim": 552,
+  "sectors": [
+   {
+    "signs": {
+     "7^2": 1,
+     "47^1": 1
+    },
+    "dim": 1800,
+    "T_invariant_dim": 4
+   },
+   {
+    "signs": {
+     "7^2": -1,
+     "47^1": -1
+    },
+    "dim": 552,
+    "T_invariant_dim": 0
+   }
+  ]
+ },
+ {
+  "s": 51,
+  "dimV_sectors": 2550,
+  "s(s-1)": 2550,
+  "d_Eis_allEven": 1350,
+  "cusp_proved_Cat_A": 1200,
+  "nonEven_with_T_invariants": 0,
+  "oddchar_dim": 600,
+  "sectors": [
+   {
+    "signs": {
+     "3^1": 1,
+     "7^2": 1,
+     "17^1": 1
+    },
+    "dim": 1350,
+    "T_invariant_dim": 4
+   },
+   {
+    "signs": {
+     "3^1": 1,
+     "7^2": -1,
+     "17^1": -1
+    },
+    "dim": 384,
+    "T_invariant_dim": 0
+   },
+   {
+    "signs": {
+     "3^1": -1,
+     "7^2": 1,
+     "17^1": -1
+    },
+    "dim": 600,
+    "T_invariant_dim": 0
+   },
+   {
+    "signs": {
+     "3^1": -1,
+     "7^2": -1,
+     "17^1": 1
+    },
+    "dim": 216,
+    "T_invariant_dim": 0
+   }
+  ]
+ },
+ {
+  "s": 99,
+  "dimV_sectors": 9702,
+  "s(s-1)": 9702,
+  "d_Eis_allEven": 4410,
+  "cusp_proved_Cat_A": 5292,
+  "nonEven_with_T_invariants": 0,
+  "oddchar_dim": 2352,
+  "sectors": [
+   {
+    "signs": {
+     "3^2": 1,
+     "11^1": 1,
+     "97^1": 1
+    },
+    "dim": 4410,
+    "T_invariant_dim": 2
+   },
+   {
+    "signs": {
+     "3^2": 1,
+     "11^1": -1,
+     "97^1": -1
+    },
+    "dim": 1200,
+    "T_invariant_dim": 0
+   },
+   {
+    "signs": {
+     "3^2": -1,
+     "11^1": 1,
+     "97^1": -1
+    },
+    "dim": 1152,
+    "T_invariant_dim": 0
+   },
+   {
+    "signs": {
+     "3^2": -1,
+     "11^1": -1,
+     "97^1": 1
+    },
+    "dim": 2940,
+    "T_invariant_dim": 0
+   }
+  ]
+ },
+ {
+  "s": 225,
+  "dimV_sectors": 50400,
+  "s(s-1)": 50400,
+  "d_Eis_allEven": 21840,
+  "cusp_proved_Cat_A": 12432,
+  "nonEven_with_T_invariants": 16128,
+  "oddchar_dim": 12432,
+  "sectors": [
+   {
+    "signs": {
+     "3^2": 1,
+     "5^2": 1,
+     "223^1": 1
+    },
+    "dim": 21840,
+    "T_invariant_dim": 6
+   },
+   {
+    "signs": {
+     "3^2": 1,
+     "5^2": -1,
+     "223^1": -1
+    },
+    "dim": 6660,
+    "T_invariant_dim": 0
+   },
+   {
+    "signs": {
+     "3^2": -1,
+     "5^2": 1,
+     "223^1": -1
+    },
+    "dim": 5772,
+    "T_invariant_dim": 0
+   },
+   {
+    "signs": {
+     "3^2": -1,
+     "5^2": -1,
+     "223^1": 1
+    },
+    "dim": 16128,
+    "T_invariant_dim": 2
+   }
+  ]
+ },
+ {
+  "s": 1225,
+  "dimV_sectors": 1499400,
+  "s(s-1)": 1499400,
+  "d_Eis_allEven": 596700,
+  "cusp_proved_Cat_A": 373932,
+  "nonEven_with_T_invariants": 528768,
+  "oddchar_dim": 373932,
+  "sectors": [
+   {
+    "signs": {
+     "5^2": 1,
+     "7^2": 1,
+     "1223^1": 1
+    },
+    "dim": 596700,
+    "T_invariant_dim": 12
+   },
+   {
+    "signs": {
+     "5^2": 1,
+     "7^2": -1,
+     "1223^1": -1
+    },
+    "dim": 190632,
+    "T_invariant_dim": 0
+   },
+   {
+    "signs": {
+     "5^2": -1,
+     "7^2": 1,
+     "1223^1": -1
+    },
+    "dim": 183300,
+    "T_invariant_dim": 0
+   },
+   {
+    "signs": {
+     "5^2": -1,
+     "7^2": -1,
+     "1223^1": 1
+    },
+    "dim": 528768,
+    "T_invariant_dim": 6
+   }
+  ]
+ }
+]
+===== END FILE cusp_sectors.json =====
+===== BEGIN FILE even_exact.log bytes=2746 sha256=39133e5ef89901a0fb9a5b1f39db2d851c18347af932d13d3a224c14721e8065 =====
+{"s": 6, "N": 24, "|odd|": 3, "|2adic|": 8, "S_support_product": false, "S_exponent_split": false, "T_perm_2adic_only": true, "T_exponent_split": true, "odd_T_is_e(-Q)": false, "actions": {"neg": {"odd_map_consistent": true, "two_map_consistent": true, "phase_independent_of_odd": true}, "gamma": {"odd_map_consistent": true, "two_map_consistent": true, "phase_independent_of_odd": true}}}
+{"s": 8, "N": 48, "|odd|": 3, "|2adic|": 16, "S_support_product": false, "S_exponent_split": false, "T_perm_2adic_only": true, "T_exponent_split": true, "odd_T_is_e(-Q)": false, "actions": {"neg": {"odd_map_consistent": true, "two_map_consistent": true, "phase_independent_of_odd": true}, "gamma": {"odd_map_consistent": true, "two_map_consistent": true, "phase_independent_of_odd": true}}}
+{"s": 10, "N": 80, "|odd|": 5, "|2adic|": 16, "S_support_product": false, "S_exponent_split": false, "T_perm_2adic_only": true, "T_exponent_split": true, "odd_T_is_e(-Q)": false, "actions": {"neg": {"odd_map_consistent": true, "two_map_consistent": true, "phase_independent_of_odd": true}, "gamma": {"odd_map_consistent": true, "two_map_consistent": true, "phase_independent_of_odd": true}}}
+{"s": 12, "N": 120, "|odd|": 15, "|2adic|": 8, "S_support_product": false, "S_exponent_split": false, "T_perm_2adic_only": true, "T_exponent_split": true, "odd_T_is_e(-Q)": false, "actions": {"neg": {"odd_map_consistent": true, "two_map_consistent": true, "phase_independent_of_odd": true}, "gamma": {"odd_map_consistent": true, "two_map_consistent": true, "phase_independent_of_odd": true}}}
+{"s": 14, "N": 168, "|odd|": 21, "|2adic|": 8, "S_support_product": false, "S_exponent_split": false, "T_perm_2adic_only": true, "T_exponent_split": true, "odd_T_is_e(-Q)": false, "actions": {"neg": {"odd_map_consistent": true, "two_map_consistent": true, "phase_independent_of_odd": true}, "gamma": {"odd_map_consistent": true, "two_map_consistent": true, "phase_independent_of_odd": true}}}
+{"s": 18, "N": 288, "|odd|": 9, "|2adic|": 32, "S_support_product": false, "S_exponent_split": false, "T_perm_2adic_only": true, "T_exponent_split": true, "odd_T_is_e(-Q)": false, "actions": {"neg": {"odd_map_consistent": true, "two_map_consistent": true, "phase_independent_of_odd": true}, "gamma": {"odd_map_consistent": true, "two_map_consistent": true, "phase_independent_of_odd": true}}}
+{"s": 32, "N": 960, "|odd|": 15, "|2adic|": 64, "S_support_product": false, "S_exponent_split": false, "T_perm_2adic_only": true, "T_exponent_split": true, "odd_T_is_e(-Q)": false, "actions": {"neg": {"odd_map_consistent": true, "two_map_consistent": true, "phase_independent_of_odd": true}, "gamma": {"odd_map_consistent": true, "two_map_consistent": true, "phase_independent_of_odd": true}}}
+
+===== END FILE even_exact.log =====
+===== BEGIN FILE even_exact_6_8_10_12_14_18_32.json bytes=4099 sha256=54b447f2eb4f5c4df6dafcfe50a4c2eb0a96f56ce6b3ec737c99d8eda0f6052f =====
+[
+ {
+  "s": 6,
+  "N": 24,
+  "|odd|": 3,
+  "|2adic|": 8,
+  "S_support_product": true,
+  "S_exponent_split": true,
+  "T_perm_2adic_only": true,
+  "T_exponent_split": true,
+  "odd_T_is_e(-Q)": false,
+  "odd_T_is_e(+Q)": true,
+  "odd_S_kernel_e(-B)": false,
+  "odd_S_kernel_e(+B)": true,
+  "|supp_odd|": 9,
+  "|supp_2|": 64,
+  "actions": {
+   "neg": {
+    "odd_map_consistent": true,
+    "two_map_consistent": true,
+    "phase_independent_of_odd": true
+   },
+   "gamma": {
+    "odd_map_consistent": true,
+    "two_map_consistent": true,
+    "phase_independent_of_odd": true
+   }
+  }
+ },
+ {
+  "s": 8,
+  "N": 48,
+  "|odd|": 3,
+  "|2adic|": 16,
+  "S_support_product": true,
+  "S_exponent_split": true,
+  "T_perm_2adic_only": true,
+  "T_exponent_split": true,
+  "odd_T_is_e(-Q)": false,
+  "odd_T_is_e(+Q)": true,
+  "odd_S_kernel_e(-B)": false,
+  "odd_S_kernel_e(+B)": true,
+  "|supp_odd|": 9,
+  "|supp_2|": 256,
+  "actions": {
+   "neg": {
+    "odd_map_consistent": true,
+    "two_map_consistent": true,
+    "phase_independent_of_odd": true
+   },
+   "gamma": {
+    "odd_map_consistent": true,
+    "two_map_consistent": true,
+    "phase_independent_of_odd": true
+   }
+  }
+ },
+ {
+  "s": 10,
+  "N": 80,
+  "|odd|": 5,
+  "|2adic|": 16,
+  "S_support_product": true,
+  "S_exponent_split": true,
+  "T_perm_2adic_only": true,
+  "T_exponent_split": true,
+  "odd_T_is_e(-Q)": false,
+  "odd_T_is_e(+Q)": true,
+  "odd_S_kernel_e(-B)": false,
+  "odd_S_kernel_e(+B)": true,
+  "|supp_odd|": 25,
+  "|supp_2|": 256,
+  "actions": {
+   "neg": {
+    "odd_map_consistent": true,
+    "two_map_consistent": true,
+    "phase_independent_of_odd": true
+   },
+   "gamma": {
+    "odd_map_consistent": true,
+    "two_map_consistent": true,
+    "phase_independent_of_odd": true
+   }
+  }
+ },
+ {
+  "s": 12,
+  "N": 120,
+  "|odd|": 15,
+  "|2adic|": 8,
+  "S_support_product": true,
+  "S_exponent_split": true,
+  "T_perm_2adic_only": true,
+  "T_exponent_split": true,
+  "odd_T_is_e(-Q)": false,
+  "odd_T_is_e(+Q)": true,
+  "odd_S_kernel_e(-B)": false,
+  "odd_S_kernel_e(+B)": true,
+  "|supp_odd|": 225,
+  "|supp_2|": 64,
+  "actions": {
+   "neg": {
+    "odd_map_consistent": true,
+    "two_map_consistent": true,
+    "phase_independent_of_odd": true
+   },
+   "gamma": {
+    "odd_map_consistent": true,
+    "two_map_consistent": true,
+    "phase_independent_of_odd": true
+   }
+  }
+ },
+ {
+  "s": 14,
+  "N": 168,
+  "|odd|": 21,
+  "|2adic|": 8,
+  "S_support_product": true,
+  "S_exponent_split": true,
+  "T_perm_2adic_only": true,
+  "T_exponent_split": true,
+  "odd_T_is_e(-Q)": false,
+  "odd_T_is_e(+Q)": true,
+  "odd_S_kernel_e(-B)": false,
+  "odd_S_kernel_e(+B)": true,
+  "|supp_odd|": 441,
+  "|supp_2|": 64,
+  "actions": {
+   "neg": {
+    "odd_map_consistent": true,
+    "two_map_consistent": true,
+    "phase_independent_of_odd": true
+   },
+   "gamma": {
+    "odd_map_consistent": true,
+    "two_map_consistent": true,
+    "phase_independent_of_odd": true
+   }
+  }
+ },
+ {
+  "s": 18,
+  "N": 288,
+  "|odd|": 9,
+  "|2adic|": 32,
+  "S_support_product": true,
+  "S_exponent_split": true,
+  "T_perm_2adic_only": true,
+  "T_exponent_split": true,
+  "odd_T_is_e(-Q)": false,
+  "odd_T_is_e(+Q)": true,
+  "odd_S_kernel_e(-B)": false,
+  "odd_S_kernel_e(+B)": true,
+  "|supp_odd|": 81,
+  "|supp_2|": 1024,
+  "actions": {
+   "neg": {
+    "odd_map_consistent": true,
+    "two_map_consistent": true,
+    "phase_independent_of_odd": true
+   },
+   "gamma": {
+    "odd_map_consistent": true,
+    "two_map_consistent": true,
+    "phase_independent_of_odd": true
+   }
+  }
+ },
+ {
+  "s": 32,
+  "N": 960,
+  "|odd|": 15,
+  "|2adic|": 64,
+  "S_support_product": true,
+  "S_exponent_split": true,
+  "T_perm_2adic_only": true,
+  "T_exponent_split": true,
+  "odd_T_is_e(-Q)": false,
+  "odd_T_is_e(+Q)": true,
+  "odd_S_kernel_e(-B)": false,
+  "odd_S_kernel_e(+B)": true,
+  "|supp_odd|": 225,
+  "|supp_2|": 4096,
+  "actions": {
+   "neg": {
+    "odd_map_consistent": true,
+    "two_map_consistent": true,
+    "phase_independent_of_odd": true
+   },
+   "gamma": {
+    "odd_map_consistent": true,
+    "two_map_consistent": true,
+    "phase_independent_of_odd": true
+   }
+  }
+ }
+]
+===== END FILE even_exact_6_8_10_12_14_18_32.json =====
+===== BEGIN FILE even_sectors.json bytes=1754 sha256=d7811f3118dc69f0859ee921bcbf08e687899acc285946062e2c322ecf3a8367 =====
+[
+ {
+  "s": 6,
+  "sectors[odd,2adic]": {
+   "N=1,\u03b3_odd=(1+0j)": [
+    "2",
+    "6"
+   ],
+   "N=-1,\u03b3_odd=(-1+0j)": [
+    "1",
+    "0"
+   ]
+  },
+  "dimU_sum": "12",
+  "dimU_direct": "12",
+  "orbit_bound": 12
+ },
+ {
+  "s": 8,
+  "sectors[odd,2adic]": {
+   "N=1,\u03b3_odd=(1+0j)": [
+    "2",
+    "10"
+   ],
+   "N=-1,\u03b3_odd=(1+0j)": [
+    "1",
+    "0"
+   ]
+  },
+  "dimU_sum": "20",
+  "dimU_direct": "20",
+  "orbit_bound": 20
+ },
+ {
+  "s": 10,
+  "sectors[odd,2adic]": {
+   "N=1,\u03b3_odd=(1+0j)": [
+    "3",
+    "10"
+   ],
+   "N=-1,\u03b3_odd=(-1+0j)": [
+    "2",
+    "0"
+   ]
+  },
+  "dimU_sum": "30",
+  "dimU_direct": "30",
+  "orbit_bound": 30
+ },
+ {
+  "s": 12,
+  "sectors[odd,2adic]": {
+   "N=1,\u03b3_odd=(-1+0j)": [
+    "2",
+    "0"
+   ],
+   "N=1,\u03b3_odd=(1+0j)": [
+    "6",
+    "6"
+   ],
+   "N=-1,\u03b3_odd=(-1+0j)": [
+    "3",
+    "2"
+   ],
+   "N=-1,\u03b3_odd=(1+0j)": [
+    "4",
+    "0"
+   ]
+  },
+  "dimU_sum": "42",
+  "dimU_direct": "42",
+  "orbit_bound": 42
+ },
+ {
+  "s": 14,
+  "sectors[odd,2adic]": {
+   "N=1,\u03b3_odd=(-1+0j)": [
+    "3",
+    "0"
+   ],
+   "N=1,\u03b3_odd=(1+0j)": [
+    "8",
+    "6"
+   ],
+   "N=-1,\u03b3_odd=(-1+0j)": [
+    "6",
+    "0"
+   ],
+   "N=-1,\u03b3_odd=(1+0j)": [
+    "4",
+    "2"
+   ]
+  },
+  "dimU_sum": "56",
+  "dimU_direct": "56",
+  "orbit_bound": 56
+ },
+ {
+  "s": 18,
+  "sectors[odd,2adic]": {
+   "N=1,\u03b3_odd=(1+0j)": [
+    "5",
+    "18"
+   ],
+   "N=-1,\u03b3_odd=(-1+0j)": [
+    "4",
+    "0"
+   ]
+  },
+  "dimU_sum": "90",
+  "dimU_direct": "90",
+  "orbit_bound": 90
+ },
+ {
+  "s": 32,
+  "sectors[odd,2adic]": {
+   "N=1,\u03b3_odd=(1+0j)": [
+    "8",
+    "34"
+   ],
+   "N=-1,\u03b3_odd=(1+0j)": [
+    "7",
+    "0"
+   ]
+  },
+  "dimU_sum": "272",
+  "dimU_direct": "272",
+  "orbit_bound": 272
+ }
+]
+===== END FILE even_sectors.json =====
+===== BEGIN FILE finer.log bytes=1236 sha256=007ebb5620372c8cad03c3ec26cdb718d8c1394f5191a3d4d134f29002231890 =====
+{"s": 9, "pieces": [{"p": 3, "eps": [1, 1], "piece": "old", "dim": 12, "lift_rank": 12, "injective": true, "nu0_coefficient_nonzero": false}, {"p": 3, "eps": [1, 1], "piece": "new", "dim": 48, "lift_rank": 48, "injective": true, "nu0_coefficient_nonzero": true}, {"p": 3, "eps": [-1, -1], "piece": "new", "dim": 12, "lift_rank": 12, "injective": true, "nu0_coefficient_nonzero": true}], "all_injective": true}
+{"s": 11, "pieces": [{"p": 3, "eps": [1, 1], "piece": "old", "dim": 18, "lift_rank": 18, "injective": true, "nu0_coefficient_nonzero": false}, {"p": 3, "eps": [1, 1], "piece": "new", "dim": 72, "lift_rank": 72, "injective": true, "nu0_coefficient_nonzero": true}, {"p": 3, "eps": [-1, -1], "piece": "new", "dim": 20, "lift_rank": 20, "injective": true, "nu0_coefficient_nonzero": true}], "all_injective": true}
+{"s": 25, "pieces": [{"p": 5, "eps": [1, 1], "piece": "old", "dim": 36, "lift_rank": 36, "injective": true, "nu0_coefficient_nonzero": false}, {"p": 5, "eps": [1, 1], "piece": "new", "dim": 432, "lift_rank": 432, "injective": true, "nu0_coefficient_nonzero": true}, {"p": 5, "eps": [-1, -1], "piece": "new", "dim": 132, "lift_rank": 132, "injective": true, "nu0_coefficient_nonzero": true}], "all_injective": true}
+
+===== END FILE finer.log =====
+===== BEGIN FILE finer98.log bytes=562 sha256=5d48b19c305da5220448cdf6672e79c42483bbb5e786289b808a83ff465ee87e =====
+{"s": 98, "pieces": [{"p": 7, "eps": [1, 1], "piece": "old", "dim": 68, "lift_rank": 42, "injective": false, "nu0_coefficient_nonzero": false}, {"p": 7, "eps": [1, 1], "piece": "new", "dim": 1632, "lift_rank": 1632, "injective": true, "nu0_coefficient_nonzero": true}, {"p": 7, "eps": [-1, 1], "piece": "old", "dim": 30, "lift_rank": 12, "injective": false, "nu0_coefficient_nonzero": false}, {"p": 7, "eps": [-1, 1], "piece": "new", "dim": 720, "lift_rank": 720, "injective": true, "nu0_coefficient_nonzero": true}], "total_rank": 2406, "all_injective": false}
+
+===== END FILE finer98.log =====
+===== BEGIN FILE finerOld98_q130.log bytes=313 sha256=d540a07d21d89fb294150c5d5d5023cc7e9b38e9e694e16fca94524eafb24f1c =====
+{"s": 98, "pieces": [{"p": 7, "eps": [1, 1], "piece": "old", "dim": 68, "lift_rank": 42, "injective": false, "nu0_coefficient_nonzero": false}, {"p": 7, "eps": [-1, 1], "piece": "old", "dim": 30, "lift_rank": 12, "injective": false, "nu0_coefficient_nonzero": false}], "total_rank": null, "all_injective": false}
+
+===== END FILE finerOld98_q130.log =====
+===== BEGIN FILE finerOld_98.json bytes=436 sha256=29cc95ca3c0740e92c9463b42b3e5ac0045d84c19e4954e9393d051505597a08 =====
+[
+ {
+  "s": 98,
+  "pieces": [
+   {
+    "p": 7,
+    "eps": [
+     1,
+     1
+    ],
+    "piece": "old",
+    "dim": 68,
+    "lift_rank": 42,
+    "injective": false,
+    "nu0_coefficient_nonzero": false
+   },
+   {
+    "p": 7,
+    "eps": [
+     -1,
+     1
+    ],
+    "piece": "old",
+    "dim": 30,
+    "lift_rank": 12,
+    "injective": false,
+    "nu0_coefficient_nonzero": false
+   }
+  ],
+  "total_rank": null,
+  "all_injective": false
+ }
+]
+===== END FILE finerOld_98.json =====
+===== BEGIN FILE finer_9.json bytes=583 sha256=89ae07739233626af173e0dcd165b42f7b9fba128c373f42034444992540d336 =====
+[
+ {
+  "s": 9,
+  "pieces": [
+   {
+    "p": 3,
+    "eps": [
+     1,
+     1
+    ],
+    "piece": "old",
+    "dim": 12,
+    "lift_rank": 12,
+    "injective": true,
+    "nu0_coefficient_nonzero": false
+   },
+   {
+    "p": 3,
+    "eps": [
+     1,
+     1
+    ],
+    "piece": "new",
+    "dim": 48,
+    "lift_rank": 48,
+    "injective": true,
+    "nu0_coefficient_nonzero": true
+   },
+   {
+    "p": 3,
+    "eps": [
+     -1,
+     -1
+    ],
+    "piece": "new",
+    "dim": 12,
+    "lift_rank": 12,
+    "injective": true,
+    "nu0_coefficient_nonzero": true
+   }
+  ],
+  "all_injective": true
+ }
+]
+===== END FILE finer_9.json =====
+===== BEGIN FILE finer_98.json bytes=789 sha256=d2e4fe5beb0c46939d7872ffe76d220814b8c1eaf64e73626809d9c10ea40c57 =====
+[
+ {
+  "s": 98,
+  "pieces": [
+   {
+    "p": 7,
+    "eps": [
+     1,
+     1
+    ],
+    "piece": "old",
+    "dim": 68,
+    "lift_rank": 42,
+    "injective": false,
+    "nu0_coefficient_nonzero": false
+   },
+   {
+    "p": 7,
+    "eps": [
+     1,
+     1
+    ],
+    "piece": "new",
+    "dim": 1632,
+    "lift_rank": 1632,
+    "injective": true,
+    "nu0_coefficient_nonzero": true
+   },
+   {
+    "p": 7,
+    "eps": [
+     -1,
+     1
+    ],
+    "piece": "old",
+    "dim": 30,
+    "lift_rank": 12,
+    "injective": false,
+    "nu0_coefficient_nonzero": false
+   },
+   {
+    "p": 7,
+    "eps": [
+     -1,
+     1
+    ],
+    "piece": "new",
+    "dim": 720,
+    "lift_rank": 720,
+    "injective": true,
+    "nu0_coefficient_nonzero": true
+   }
+  ],
+  "total_rank": 2406,
+  "all_injective": false
+ }
+]
+===== END FILE finer_98.json =====
+===== BEGIN FILE finer_9_11_25.json bytes=1751 sha256=ace615b841f2d42cb31ad7984ee70c2d03a7d79c35a0889896bd9c3fe7dbe5d1 =====
+[
+ {
+  "s": 9,
+  "pieces": [
+   {
+    "p": 3,
+    "eps": [
+     1,
+     1
+    ],
+    "piece": "old",
+    "dim": 12,
+    "lift_rank": 12,
+    "injective": true,
+    "nu0_coefficient_nonzero": false
+   },
+   {
+    "p": 3,
+    "eps": [
+     1,
+     1
+    ],
+    "piece": "new",
+    "dim": 48,
+    "lift_rank": 48,
+    "injective": true,
+    "nu0_coefficient_nonzero": true
+   },
+   {
+    "p": 3,
+    "eps": [
+     -1,
+     -1
+    ],
+    "piece": "new",
+    "dim": 12,
+    "lift_rank": 12,
+    "injective": true,
+    "nu0_coefficient_nonzero": true
+   }
+  ],
+  "all_injective": true
+ },
+ {
+  "s": 11,
+  "pieces": [
+   {
+    "p": 3,
+    "eps": [
+     1,
+     1
+    ],
+    "piece": "old",
+    "dim": 18,
+    "lift_rank": 18,
+    "injective": true,
+    "nu0_coefficient_nonzero": false
+   },
+   {
+    "p": 3,
+    "eps": [
+     1,
+     1
+    ],
+    "piece": "new",
+    "dim": 72,
+    "lift_rank": 72,
+    "injective": true,
+    "nu0_coefficient_nonzero": true
+   },
+   {
+    "p": 3,
+    "eps": [
+     -1,
+     -1
+    ],
+    "piece": "new",
+    "dim": 20,
+    "lift_rank": 20,
+    "injective": true,
+    "nu0_coefficient_nonzero": true
+   }
+  ],
+  "all_injective": true
+ },
+ {
+  "s": 25,
+  "pieces": [
+   {
+    "p": 5,
+    "eps": [
+     1,
+     1
+    ],
+    "piece": "old",
+    "dim": 36,
+    "lift_rank": 36,
+    "injective": true,
+    "nu0_coefficient_nonzero": false
+   },
+   {
+    "p": 5,
+    "eps": [
+     1,
+     1
+    ],
+    "piece": "new",
+    "dim": 432,
+    "lift_rank": 432,
+    "injective": true,
+    "nu0_coefficient_nonzero": true
+   },
+   {
+    "p": 5,
+    "eps": [
+     -1,
+     -1
+    ],
+    "piece": "new",
+    "dim": 132,
+    "lift_rank": 132,
+    "injective": true,
+    "nu0_coefficient_nonzero": true
+   }
+  ],
+  "all_injective": true
+ }
+]
+===== END FILE finer_9_11_25.json =====
+===== BEGIN FILE gap_exact.json bytes=501 sha256=d3dc9eb0c8a93c572203b171ce3d41bc10d0fd7b8a391768f3361cdce06d9b22 =====
+[
+ {
+  "m": 3,
+  "s": 18,
+  "n": 32,
+  "N=1,g=1": 12,
+  "N=1,g=-1": 6,
+  "N=-1,g=1": 6,
+  "N=-1,g=-1": 8,
+  "trace_g_on_FixNgamma": 6,
+  "2m": 6,
+  "m(m-1)": 6
+ },
+ {
+  "m": 5,
+  "s": 50,
+  "n": 96,
+  "N=1,g=1": 30,
+  "N=1,g=-1": 20,
+  "N=-1,g=1": 22,
+  "N=-1,g=-1": 24,
+  "trace_g_on_FixNgamma": 10,
+  "2m": 10,
+  "m(m-1)": 20
+ },
+ {
+  "m": 7,
+  "s": 98,
+  "n": 192,
+  "N=1,g=1": 56,
+  "N=1,g=-1": 42,
+  "N=-1,g=1": 46,
+  "N=-1,g=-1": 48,
+  "trace_g_on_FixNgamma": 14,
+  "2m": 14,
+  "m(m-1)": 42
+ }
+]
+===== END FILE gap_exact.json =====
+===== BEGIN FILE gap_exact_sub.json bytes=1254 sha256=3def92c72ddd1de6e2c8dd2e126cae2cb10afd7a9feab6594303a32941238c3b =====
+[
+ {
+  "m": 3,
+  "kernel_dim": 6,
+  "rank1_delta_exact": true,
+  "Nc_eq_c_exact": true,
+  "gc_eq_minus_c_exact": true,
+  "traces": {
+   "g": {
+    "fixed_labels": 4,
+    "value": [
+     4.0,
+     0.0
+    ],
+    "phases": [
+     "0"
+    ]
+   },
+   "gN": {
+    "fixed_labels": 8,
+    "value": [
+     8.0,
+     0.0
+    ],
+    "phases": [
+     "0"
+    ]
+   },
+   "g gamma": {
+    "fixed_labels": 4,
+    "value": [
+     4.0,
+     0.0
+    ],
+    "phases": [
+     "0"
+    ]
+   },
+   "gN gamma": {
+    "fixed_labels": 8,
+    "value": [
+     8.0,
+     0.0
+    ],
+    "phases": [
+     "0"
+    ]
+   }
+  },
+  "trace_sum_over_4": 6.0
+ },
+ {
+  "m": 5,
+  "kernel_dim": 20,
+  "rank1_delta_exact": true,
+  "Nc_eq_c_exact": true,
+  "gc_eq_minus_c_exact": true,
+  "traces": {
+   "g": {
+    "fixed_labels": 8,
+    "value": [
+     8.0,
+     0.0
+    ],
+    "phases": [
+     "0"
+    ]
+   },
+   "gN": {
+    "fixed_labels": 12,
+    "value": [
+     12.0,
+     0.0
+    ],
+    "phases": [
+     "0"
+    ]
+   },
+   "g gamma": {
+    "fixed_labels": 8,
+    "value": [
+     8.0,
+     0.0
+    ],
+    "phases": [
+     "0"
+    ]
+   },
+   "gN gamma": {
+    "fixed_labels": 12,
+    "value": [
+     12.0,
+     0.0
+    ],
+    "phases": [
+     "0"
+    ]
+   }
+  },
+  "trace_sum_over_4": 10.0
+ }
+]
+===== END FILE gap_exact_sub.json =====
+===== BEGIN FILE gap_g.json bytes=1212 sha256=f31cb450d7bf66b9fd294c9cbfe715e2656c298c54ae7c3166fda6d86e3e5f20 =====
+[
+ {
+  "m": 2,
+  "s": 8,
+  "|complement labels|": 3,
+  "g^2=gamma": true,
+  "Fix(N,gamma)": 2,
+  "N=1,g=+1": 2,
+  "N=1,g=-1": 0,
+  "N=-1,g=+1": 0,
+  "N=-1,g=-1": 1,
+  "m(m-1)": 2,
+  "m(m+1)": 6
+ },
+ {
+  "m": 3,
+  "s": 18,
+  "|complement labels|": 32,
+  "g^2=gamma": true,
+  "Fix(N,gamma)": 18,
+  "N=1,g=+1": 12,
+  "N=1,g=-1": 6,
+  "N=-1,g=+1": 6,
+  "N=-1,g=-1": 8,
+  "m(m-1)": 6,
+  "m(m+1)": 12
+ },
+ {
+  "m": 4,
+  "s": 32,
+  "|complement labels|": 15,
+  "g^2=gamma": true,
+  "Fix(N,gamma)": 8,
+  "N=1,g=+1": 6,
+  "N=1,g=-1": 2,
+  "N=-1,g=+1": 3,
+  "N=-1,g=-1": 4,
+  "m(m-1)": 12,
+  "m(m+1)": 20
+ },
+ {
+  "m": 5,
+  "s": 50,
+  "|complement labels|": 96,
+  "g^2=gamma": true,
+  "Fix(N,gamma)": 50,
+  "N=1,g=+1": 30,
+  "N=1,g=-1": 20,
+  "N=-1,g=+1": 22,
+  "N=-1,g=-1": 24,
+  "m(m-1)": 20,
+  "m(m+1)": 30
+ },
+ {
+  "m": 6,
+  "s": 72,
+  "|complement labels|": 35,
+  "g^2=gamma": true,
+  "Fix(N,gamma)": 18,
+  "N=1,g=+1": 12,
+  "N=1,g=-1": 6,
+  "N=-1,g=+1": 8,
+  "N=-1,g=-1": 9,
+  "m(m-1)": 30,
+  "m(m+1)": 42
+ },
+ {
+  "m": 7,
+  "s": 98,
+  "|complement labels|": 192,
+  "g^2=gamma": true,
+  "Fix(N,gamma)": 98,
+  "N=1,g=+1": 56,
+  "N=1,g=-1": 42,
+  "N=-1,g=+1": 46,
+  "N=-1,g=-1": 48,
+  "m(m-1)": 42,
+  "m(m+1)": 56
+ }
+]
+===== END FILE gap_g.json =====
+===== BEGIN FILE gap_locate.json bytes=1006 sha256=cddb5b9ca464a63581484139adb91a13732afb748abdef86a344cff96dcf6247 =====
+[
+ {
+  "s": 8,
+  "m": 2,
+  "gap": 2,
+  "kernel_dim": 2,
+  "rank_odd_side": 2,
+  "rank_2adic_side": 1,
+  "|odd|": 3,
+  "|2adic|": 16
+ },
+ {
+  "s": 18,
+  "m": 3,
+  "gap": 6,
+  "kernel_dim": 6,
+  "rank_odd_side": 1,
+  "rank_2adic_side": 6,
+  "|odd|": 9,
+  "|2adic|": 32,
+  "isotropic_elems": 2,
+  "odd_side_translation_invariant": true,
+  "odd_side_supported_on_t_perp": true
+ },
+ {
+  "s": 32,
+  "m": 4,
+  "gap": 12,
+  "kernel_dim": 12,
+  "rank_odd_side": 8,
+  "rank_2adic_side": 4,
+  "|odd|": 15,
+  "|2adic|": 64
+ },
+ {
+  "s": 50,
+  "m": 5,
+  "gap": 20,
+  "kernel_dim": 20,
+  "rank_odd_side": 3,
+  "rank_2adic_side": 14,
+  "|odd|": 75,
+  "|2adic|": 32,
+  "isotropic_elems": 4,
+  "odd_side_translation_invariant": true,
+  "odd_side_supported_on_t_perp": true
+ },
+ {
+  "s": 72,
+  "m": 6,
+  "gap": 30,
+  "kernel_dim": 30,
+  "rank_odd_side": 18,
+  "rank_2adic_side": 4,
+  "|odd|": 315,
+  "|2adic|": 16,
+  "isotropic_elems": 2,
+  "odd_side_translation_invariant": true,
+  "odd_side_supported_on_t_perp": true
+ }
+]
+===== END FILE gap_locate.json =====
+===== BEGIN FILE gap_locate.log bytes=1038 sha256=a680c99f78c4a781524830dbadaa18124f5583dc979b7a2eee91a9560257b48f =====
+s 8 BES [(0, 0)] kernel dim 2
+{"s": 8, "m": 2, "gap": 2, "kernel_dim": 2, "rank_odd_side": 2, "rank_2adic_side": 1, "|odd|": 3, "|2adic|": 16}
+s 18 BES [(0, 0)] kernel dim 6
+{"s": 18, "m": 3, "gap": 6, "kernel_dim": 6, "rank_odd_side": 1, "rank_2adic_side": 6, "|odd|": 9, "|2adic|": 32, "isotropic_elems": 2, "odd_side_translation_invariant": true, "odd_side_supported_on_t_perp": true}
+s 32 BES [(0, 0)] kernel dim 12
+{"s": 32, "m": 4, "gap": 12, "kernel_dim": 12, "rank_odd_side": 8, "rank_2adic_side": 4, "|odd|": 15, "|2adic|": 64}
+s 50 BES [(0, 0)] kernel dim 20
+{"s": 50, "m": 5, "gap": 20, "kernel_dim": 20, "rank_odd_side": 3, "rank_2adic_side": 14, "|odd|": 75, "|2adic|": 32, "isotropic_elems": 4, "odd_side_translation_invariant": true, "odd_side_supported_on_t_perp": true}
+s 72 BES [(0, 0)] kernel dim 30
+{"s": 72, "m": 6, "gap": 30, "kernel_dim": 30, "rank_odd_side": 18, "rank_2adic_side": 4, "|odd|": 315, "|2adic|": 16, "isotropic_elems": 2, "odd_side_translation_invariant": true, "odd_side_supported_on_t_perp": true}
+
+===== END FILE gap_locate.log =====
+===== BEGIN FILE gap_subspace.json bytes=433 sha256=22772dc52f20bffe49d73d4f2d9e83f2da2c59bd938b3eebb5f00cde8d43b1b5 =====
+[
+ {
+  "m": 3,
+  "s": 18,
+  "kernel_dim": 6,
+  "m_side_rank": 1,
+  "m_side_equals_delta_iso": true,
+  "dimX": 6,
+  "rank_complement_side": 6,
+  "residual_C_in_X": 1.1275580977318974e-15,
+  "subspace_equal": true
+ },
+ {
+  "m": 5,
+  "s": 50,
+  "kernel_dim": 20,
+  "m_side_rank": 1,
+  "m_side_equals_delta_iso": true,
+  "dimX": 20,
+  "rank_complement_side": 20,
+  "residual_C_in_X": 2.6204034136071626e-15,
+  "subspace_equal": true
+ }
+]
+===== END FILE gap_subspace.json =====
+===== BEGIN FILE h_lattice.json bytes=435 sha256=fa3ba43a1460d8943ff73418f04ca62c62c3962090c86020190e3a932c64fa83 =====
+{
+ "M": [
+  [
+   "4",
+   "1"
+  ],
+  [
+   "0",
+   "1/7"
+  ]
+ ],
+ "gram": [
+  [
+   "32",
+   "64"
+  ],
+  [
+   "64",
+   "32"
+  ]
+ ],
+ "det": "-3072",
+ "even": true,
+ "hM_eq_M": true,
+ "hMsharp_eq_Msharp": true,
+ "index_M7_over_M": "4",
+ "relations": [
+  {
+   "n_plus_cosets": 32,
+   "n_minus_cosets": 32,
+   "h_maps_plus_onto_minus": true
+  },
+  {
+   "n_plus_cosets": 16,
+   "n_minus_cosets": 16,
+   "h_maps_plus_onto_minus": true
+  }
+ ]
+}
+===== END FILE h_lattice.json =====
+===== BEGIN FILE item1_27.log bytes=420 sha256=b446928ae7b6605114b5fcbdb347c1809369f2df7725cdc6b8e6ebeff3e8f58c =====
+27 orbits 702 sum_dim 702 sum_lift 702 cert True
+    {'eps': {'3': 1, '5': 1}, 'dim_in_U': 546, 'lift_rank': 546, 'injective': True, 'lead': {'q_scaled': -1350, 'orbit': 53, 'coef': 4, 'nonzero_terms': 1, 'cancellation_free': True}}
+    {'eps': {'3': -1, '5': -1}, 'dim_in_U': 156, 'lift_rank': 156, 'injective': True, 'lead': {'q_scaled': -1350, 'orbit': 53, 'coef': -4, 'nonzero_terms': 1, 'cancellation_free': True}}
+
+===== END FILE item1_27.log =====
+===== BEGIN FILE item1_lead_27.json bytes=678 sha256=3758b1cd13d14b5127fce8b4b7a4cf156a57deed5c8aa09d816d0299a5987c21 =====
+[
+ {
+  "s": 27,
+  "Qmax": 30.0,
+  "n_orbits": 702,
+  "primes": [
+   3,
+   5
+  ],
+  "sectors": [
+   {
+    "eps": {
+     "3": 1,
+     "5": 1
+    },
+    "dim_in_U": 546,
+    "lift_rank": 546,
+    "injective": true,
+    "lead": {
+     "q_scaled": -1350,
+     "orbit": 53,
+     "coef": 4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   },
+   {
+    "eps": {
+     "3": -1,
+     "5": -1
+    },
+    "dim_in_U": 156,
+    "lift_rank": 156,
+    "injective": true,
+    "lead": {
+     "q_scaled": -1350,
+     "orbit": 53,
+     "coef": -4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   }
+  ],
+  "sum_dim": 702,
+  "sum_lift": 702,
+  "certified_V": true
+ }
+]
+===== END FILE item1_lead_27.json =====
+===== BEGIN FILE item1_lead_5_7_9_11.json bytes=2663 sha256=6e541377adad52d3cf875afbba88685f5a560a5dea24cba16b95fddb20e74d8e =====
+[
+ {
+  "s": 5,
+  "Qmax": 25.0,
+  "n_orbits": 20,
+  "primes": [
+   3,
+   5
+  ],
+  "sectors": [
+   {
+    "eps": {
+     "3": 1,
+     "5": 1
+    },
+    "dim_in_U": 18,
+    "lift_rank": 18,
+    "injective": true,
+    "lead": {
+     "q_scaled": -30,
+     "orbit": 9,
+     "coef": 4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   },
+   {
+    "eps": {
+     "3": -1,
+     "5": -1
+    },
+    "dim_in_U": 2,
+    "lift_rank": 2,
+    "injective": true,
+    "lead": {
+     "q_scaled": -30,
+     "orbit": 9,
+     "coef": -4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   }
+  ],
+  "sum_dim": 20,
+  "sum_lift": 20,
+  "certified_V": true
+ },
+ {
+  "s": 7,
+  "Qmax": 25.0,
+  "n_orbits": 42,
+  "primes": [
+   5,
+   7
+  ],
+  "sectors": [
+   {
+    "eps": {
+     "5": 1,
+     "7": 1
+    },
+    "dim_in_U": 36,
+    "lift_rank": 36,
+    "injective": true,
+    "lead": {
+     "q_scaled": -70,
+     "orbit": 13,
+     "coef": 4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   },
+   {
+    "eps": {
+     "5": -1,
+     "7": -1
+    },
+    "dim_in_U": 6,
+    "lift_rank": 6,
+    "injective": true,
+    "lead": {
+     "q_scaled": -70,
+     "orbit": 13,
+     "coef": -4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   }
+  ],
+  "sum_dim": 42,
+  "sum_lift": 42,
+  "certified_V": true
+ },
+ {
+  "s": 9,
+  "Qmax": 25.0,
+  "n_orbits": 72,
+  "primes": [
+   3,
+   7
+  ],
+  "sectors": [
+   {
+    "eps": {
+     "3": 1,
+     "7": 1
+    },
+    "dim_in_U": 60,
+    "lift_rank": 60,
+    "injective": true,
+    "lead": {
+     "q_scaled": -126,
+     "orbit": 17,
+     "coef": 4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   },
+   {
+    "eps": {
+     "3": -1,
+     "7": -1
+    },
+    "dim_in_U": 12,
+    "lift_rank": 12,
+    "injective": true,
+    "lead": {
+     "q_scaled": -126,
+     "orbit": 17,
+     "coef": -4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   }
+  ],
+  "sum_dim": 72,
+  "sum_lift": 72,
+  "certified_V": true
+ },
+ {
+  "s": 11,
+  "Qmax": 25.0,
+  "n_orbits": 110,
+  "primes": [
+   3,
+   11
+  ],
+  "sectors": [
+   {
+    "eps": {
+     "3": 1,
+     "11": 1
+    },
+    "dim_in_U": 90,
+    "lift_rank": 90,
+    "injective": true,
+    "lead": {
+     "q_scaled": -198,
+     "orbit": 21,
+     "coef": 4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   },
+   {
+    "eps": {
+     "3": -1,
+     "11": -1
+    },
+    "dim_in_U": 20,
+    "lift_rank": 20,
+    "injective": true,
+    "lead": {
+     "q_scaled": -198,
+     "orbit": 21,
+     "coef": -4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   }
+  ],
+  "sum_dim": 110,
+  "sum_lift": 110,
+  "certified_V": true
+ }
+]
+===== END FILE item1_lead_5_7_9_11.json =====
+===== BEGIN FILE item1_lead_5_7_9_11_13_15_17_19_21_23_25.json bytes=9684 sha256=0a49410a1d144be1b29763be8f22c848a82b46bbe8d875709af48e24f606883d =====
+[
+ {
+  "s": 5,
+  "Qmax": 30.0,
+  "n_orbits": 20,
+  "primes": [
+   3,
+   5
+  ],
+  "sectors": [
+   {
+    "eps": {
+     "3": 1,
+     "5": 1
+    },
+    "dim_in_U": 18,
+    "lift_rank": 18,
+    "injective": true,
+    "lead": {
+     "q_scaled": -30,
+     "orbit": 9,
+     "coef": 4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   },
+   {
+    "eps": {
+     "3": -1,
+     "5": -1
+    },
+    "dim_in_U": 2,
+    "lift_rank": 2,
+    "injective": true,
+    "lead": {
+     "q_scaled": -30,
+     "orbit": 9,
+     "coef": -4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   }
+  ],
+  "sum_dim": 20,
+  "sum_lift": 20,
+  "certified_V": true
+ },
+ {
+  "s": 7,
+  "Qmax": 30.0,
+  "n_orbits": 42,
+  "primes": [
+   5,
+   7
+  ],
+  "sectors": [
+   {
+    "eps": {
+     "5": 1,
+     "7": 1
+    },
+    "dim_in_U": 36,
+    "lift_rank": 36,
+    "injective": true,
+    "lead": {
+     "q_scaled": -70,
+     "orbit": 13,
+     "coef": 4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   },
+   {
+    "eps": {
+     "5": -1,
+     "7": -1
+    },
+    "dim_in_U": 6,
+    "lift_rank": 6,
+    "injective": true,
+    "lead": {
+     "q_scaled": -70,
+     "orbit": 13,
+     "coef": -4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   }
+  ],
+  "sum_dim": 42,
+  "sum_lift": 42,
+  "certified_V": true
+ },
+ {
+  "s": 9,
+  "Qmax": 30.0,
+  "n_orbits": 72,
+  "primes": [
+   3,
+   7
+  ],
+  "sectors": [
+   {
+    "eps": {
+     "3": 1,
+     "7": 1
+    },
+    "dim_in_U": 60,
+    "lift_rank": 60,
+    "injective": true,
+    "lead": {
+     "q_scaled": -126,
+     "orbit": 17,
+     "coef": 4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   },
+   {
+    "eps": {
+     "3": -1,
+     "7": -1
+    },
+    "dim_in_U": 12,
+    "lift_rank": 12,
+    "injective": true,
+    "lead": {
+     "q_scaled": -126,
+     "orbit": 17,
+     "coef": -4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   }
+  ],
+  "sum_dim": 72,
+  "sum_lift": 72,
+  "certified_V": true
+ },
+ {
+  "s": 11,
+  "Qmax": 30.0,
+  "n_orbits": 110,
+  "primes": [
+   3,
+   11
+  ],
+  "sectors": [
+   {
+    "eps": {
+     "3": 1,
+     "11": 1
+    },
+    "dim_in_U": 90,
+    "lift_rank": 90,
+    "injective": true,
+    "lead": {
+     "q_scaled": -198,
+     "orbit": 21,
+     "coef": 4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   },
+   {
+    "eps": {
+     "3": -1,
+     "11": -1
+    },
+    "dim_in_U": 20,
+    "lift_rank": 20,
+    "injective": true,
+    "lead": {
+     "q_scaled": -198,
+     "orbit": 21,
+     "coef": -4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   }
+  ],
+  "sum_dim": 110,
+  "sum_lift": 110,
+  "certified_V": true
+ },
+ {
+  "s": 13,
+  "Qmax": 30.0,
+  "n_orbits": 156,
+  "primes": [
+   11,
+   13
+  ],
+  "sectors": [
+   {
+    "eps": {
+     "11": 1,
+     "13": 1
+    },
+    "dim_in_U": 126,
+    "lift_rank": 126,
+    "injective": true,
+    "lead": {
+     "q_scaled": -286,
+     "orbit": 25,
+     "coef": 4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   },
+   {
+    "eps": {
+     "11": -1,
+     "13": -1
+    },
+    "dim_in_U": 30,
+    "lift_rank": 30,
+    "injective": true,
+    "lead": {
+     "q_scaled": -286,
+     "orbit": 25,
+     "coef": -4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   }
+  ],
+  "sum_dim": 156,
+  "sum_lift": 156,
+  "certified_V": true
+ },
+ {
+  "s": 15,
+  "Qmax": 30.0,
+  "n_orbits": 210,
+  "primes": [
+   3,
+   5,
+   13
+  ],
+  "sectors": [
+   {
+    "eps": {
+     "3": 1,
+     "5": 1,
+     "13": 1
+    },
+    "dim_in_U": 126,
+    "lift_rank": 126,
+    "injective": true,
+    "lead": {
+     "q_scaled": -390,
+     "orbit": 20,
+     "coef": 4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   },
+   {
+    "eps": {
+     "3": 1,
+     "5": -1,
+     "13": -1
+    },
+    "dim_in_U": 24,
+    "lift_rank": 24,
+    "injective": true,
+    "lead": {
+     "q_scaled": -390,
+     "orbit": 20,
+     "coef": -4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   },
+   {
+    "eps": {
+     "3": -1,
+     "5": 1,
+     "13": -1
+    },
+    "dim_in_U": 18,
+    "lift_rank": 18,
+    "injective": true,
+    "lead": {
+     "q_scaled": -390,
+     "orbit": 20,
+     "coef": 4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   },
+   {
+    "eps": {
+     "3": -1,
+     "5": -1,
+     "13": 1
+    },
+    "dim_in_U": 42,
+    "lift_rank": 42,
+    "injective": true,
+    "lead": {
+     "q_scaled": -390,
+     "orbit": 20,
+     "coef": -4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   }
+  ],
+  "sum_dim": 210,
+  "sum_lift": 210,
+  "certified_V": true
+ },
+ {
+  "s": 17,
+  "Qmax": 30.0,
+  "n_orbits": 272,
+  "primes": [
+   3,
+   5,
+   17
+  ],
+  "sectors": [
+   {
+    "eps": {
+     "3": 1,
+     "5": 1,
+     "17": 1
+    },
+    "dim_in_U": 162,
+    "lift_rank": 162,
+    "injective": true,
+    "lead": {
+     "q_scaled": -510,
+     "orbit": 33,
+     "coef": 4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   },
+   {
+    "eps": {
+     "3": 1,
+     "5": -1,
+     "17": -1
+    },
+    "dim_in_U": 32,
+    "lift_rank": 32,
+    "injective": true,
+    "lead": {
+     "q_scaled": -510,
+     "orbit": 33,
+     "coef": -4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   },
+   {
+    "eps": {
+     "3": -1,
+     "5": 1,
+     "17": -1
+    },
+    "dim_in_U": 24,
+    "lift_rank": 24,
+    "injective": true,
+    "lead": {
+     "q_scaled": -510,
+     "orbit": 33,
+     "coef": -4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   },
+   {
+    "eps": {
+     "3": -1,
+     "5": -1,
+     "17": 1
+    },
+    "dim_in_U": 54,
+    "lift_rank": 54,
+    "injective": true,
+    "lead": {
+     "q_scaled": -510,
+     "orbit": 33,
+     "coef": 4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   }
+  ],
+  "sum_dim": 272,
+  "sum_lift": 272,
+  "certified_V": true
+ },
+ {
+  "s": 19,
+  "Qmax": 30.0,
+  "n_orbits": 342,
+  "primes": [
+   17,
+   19
+  ],
+  "sectors": [
+   {
+    "eps": {
+     "17": 1,
+     "19": 1
+    },
+    "dim_in_U": 270,
+    "lift_rank": 270,
+    "injective": true,
+    "lead": {
+     "q_scaled": -646,
+     "orbit": 37,
+     "coef": 4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   },
+   {
+    "eps": {
+     "17": -1,
+     "19": -1
+    },
+    "dim_in_U": 72,
+    "lift_rank": 72,
+    "injective": true,
+    "lead": {
+     "q_scaled": -646,
+     "orbit": 37,
+     "coef": -4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   }
+  ],
+  "sum_dim": 342,
+  "sum_lift": 342,
+  "certified_V": true
+ },
+ {
+  "s": 21,
+  "Qmax": 30.0,
+  "n_orbits": 420,
+  "primes": [
+   3,
+   7,
+   19
+  ],
+  "sectors": [
+   {
+    "eps": {
+     "3": 1,
+     "7": 1,
+     "19": 1
+    },
+    "dim_in_U": 240,
+    "lift_rank": 240,
+    "injective": true,
+    "lead": {
+     "q_scaled": -798,
+     "orbit": 27,
+     "coef": 4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   },
+   {
+    "eps": {
+     "3": 1,
+     "7": -1,
+     "19": -1
+    },
+    "dim_in_U": 54,
+    "lift_rank": 54,
+    "injective": true,
+    "lead": {
+     "q_scaled": -798,
+     "orbit": 27,
+     "coef": -4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   },
+   {
+    "eps": {
+     "3": -1,
+     "7": 1,
+     "19": -1
+    },
+    "dim_in_U": 36,
+    "lift_rank": 36,
+    "injective": true,
+    "lead": {
+     "q_scaled": -798,
+     "orbit": 27,
+     "coef": 4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   },
+   {
+    "eps": {
+     "3": -1,
+     "7": -1,
+     "19": 1
+    },
+    "dim_in_U": 90,
+    "lift_rank": 90,
+    "injective": true,
+    "lead": {
+     "q_scaled": -798,
+     "orbit": 27,
+     "coef": -4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   }
+  ],
+  "sum_dim": 420,
+  "sum_lift": 420,
+  "certified_V": true
+ },
+ {
+  "s": 23,
+  "Qmax": 30.0,
+  "n_orbits": 506,
+  "primes": [
+   3,
+   7,
+   23
+  ],
+  "sectors": [
+   {
+    "eps": {
+     "3": 1,
+     "7": 1,
+     "23": 1
+    },
+    "dim_in_U": 288,
+    "lift_rank": 288,
+    "injective": true,
+    "lead": {
+     "q_scaled": -966,
+     "orbit": 45,
+     "coef": 4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   },
+   {
+    "eps": {
+     "3": 1,
+     "7": -1,
+     "23": -1
+    },
+    "dim_in_U": 66,
+    "lift_rank": 66,
+    "injective": true,
+    "lead": {
+     "q_scaled": -966,
+     "orbit": 45,
+     "coef": -4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   },
+   {
+    "eps": {
+     "3": -1,
+     "7": 1,
+     "23": -1
+    },
+    "dim_in_U": 44,
+    "lift_rank": 44,
+    "injective": true,
+    "lead": {
+     "q_scaled": -966,
+     "orbit": 45,
+     "coef": -4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   },
+   {
+    "eps": {
+     "3": -1,
+     "7": -1,
+     "23": 1
+    },
+    "dim_in_U": 108,
+    "lift_rank": 108,
+    "injective": true,
+    "lead": {
+     "q_scaled": -966,
+     "orbit": 45,
+     "coef": 4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   }
+  ],
+  "sum_dim": 506,
+  "sum_lift": 506,
+  "certified_V": true
+ },
+ {
+  "s": 25,
+  "Qmax": 30.0,
+  "n_orbits": 600,
+  "primes": [
+   5,
+   23
+  ],
+  "sectors": [
+   {
+    "eps": {
+     "5": 1,
+     "23": 1
+    },
+    "dim_in_U": 468,
+    "lift_rank": 468,
+    "injective": true,
+    "lead": {
+     "q_scaled": -1150,
+     "orbit": 49,
+     "coef": 4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   },
+   {
+    "eps": {
+     "5": -1,
+     "23": -1
+    },
+    "dim_in_U": 132,
+    "lift_rank": 132,
+    "injective": true,
+    "lead": {
+     "q_scaled": -1150,
+     "orbit": 49,
+     "coef": -4,
+     "nonzero_terms": 1,
+     "cancellation_free": true
+    }
+   }
+  ],
+  "sum_dim": 600,
+  "sum_lift": 600,
+  "certified_V": true
+ }
+]
+===== END FILE item1_lead_5_7_9_11_13_15_17_19_21_23_25.json =====
+===== BEGIN FILE lemma1.log bytes=298 sha256=8ac934a9dcd47da20754226021a7706081214add654ae3a835d569d8adb5d888 =====
+exceptions (s,c) with extra reduced classes, odd s <= 30001 : [(27, 4), (245, 8), (363, 4), (363, 14), (847, 12), (2025, 16), (3971, 20), (5043, 4), (5043, 14), (5043, 52), (6877, 24), (10935, 28), (15125, 8), (15125, 62), (16337, 32), (23275, 36)] 16
+c=3 Pell u parities: [1, 1, 1, 1, 1, 1, 1, 1]
+
+===== END FILE lemma1.log =====
+===== BEGIN FILE lemma1b.json bytes=18916 sha256=5c1784d0e465169bd0ababb682e150950be9827ae4efafaac0d3d0c37bdec011 =====
+[
+{
+"s": 5,
+"primes": [
+3,
+5
+],
+"stabilizer": [
+[],
+[
+3,
+5
+]
+],
+"orbit_size": 4
+},
+{
+"s": 7,
+"primes": [
+5,
+7
+],
+"stabilizer": [
+[],
+[
+5,
+7
+]
+],
+"orbit_size": 4
+},
+{
+"s": 9,
+"primes": [
+3,
+7
+],
+"stabilizer": [
+[],
+[
+3,
+7
+]
+],
+"orbit_size": 4
+},
+{
+"s": 11,
+"primes": [
+3,
+11
+],
+"stabilizer": [
+[],
+[
+3,
+11
+]
+],
+"orbit_size": 4
+},
+{
+"s": 13,
+"primes": [
+11,
+13
+],
+"stabilizer": [
+[],
+[
+11,
+13
+]
+],
+"orbit_size": 4
+},
+{
+"s": 15,
+"primes": [
+3,
+5,
+13
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+13
+]
+],
+"orbit_size": 4
+},
+{
+"s": 17,
+"primes": [
+3,
+5,
+17
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+17
+]
+],
+"orbit_size": 4
+},
+{
+"s": 19,
+"primes": [
+17,
+19
+],
+"stabilizer": [
+[],
+[
+17,
+19
+]
+],
+"orbit_size": 4
+},
+{
+"s": 21,
+"primes": [
+3,
+7,
+19
+],
+"stabilizer": [
+[],
+[
+3,
+7,
+19
+]
+],
+"orbit_size": 4
+},
+{
+"s": 23,
+"primes": [
+3,
+7,
+23
+],
+"stabilizer": [
+[],
+[
+3,
+7,
+23
+]
+],
+"orbit_size": 4
+},
+{
+"s": 25,
+"primes": [
+5,
+23
+],
+"stabilizer": [
+[],
+[
+5,
+23
+]
+],
+"orbit_size": 4
+},
+{
+"s": 27,
+"primes": [
+3,
+5
+],
+"stabilizer": [
+[],
+[
+3,
+5
+]
+],
+"orbit_size": 4
+},
+{
+"s": 29,
+"primes": [
+3,
+29
+],
+"stabilizer": [
+[],
+[
+3,
+29
+]
+],
+"orbit_size": 4
+},
+{
+"s": 31,
+"primes": [
+29,
+31
+],
+"stabilizer": [
+[],
+[
+29,
+31
+]
+],
+"orbit_size": 4
+},
+{
+"s": 33,
+"primes": [
+3,
+11,
+31
+],
+"stabilizer": [
+[],
+[
+3,
+11,
+31
+]
+],
+"orbit_size": 4
+},
+{
+"s": 35,
+"primes": [
+3,
+5,
+7,
+11
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+7,
+11
+]
+],
+"orbit_size": 4
+},
+{
+"s": 37,
+"primes": [
+5,
+7,
+37
+],
+"stabilizer": [
+[],
+[
+5,
+7,
+37
+]
+],
+"orbit_size": 4
+},
+{
+"s": 39,
+"primes": [
+3,
+13,
+37
+],
+"stabilizer": [
+[],
+[
+3,
+13,
+37
+]
+],
+"orbit_size": 4
+},
+{
+"s": 41,
+"primes": [
+3,
+13,
+41
+],
+"stabilizer": [
+[],
+[
+3,
+13,
+41
+]
+],
+"orbit_size": 4
+},
+{
+"s": 43,
+"primes": [
+41,
+43
+],
+"stabilizer": [
+[],
+[
+41,
+43
+]
+],
+"orbit_size": 4
+},
+{
+"s": 45,
+"primes": [
+3,
+5,
+43
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+43
+]
+],
+"orbit_size": 4
+},
+{
+"s": 47,
+"primes": [
+3,
+5,
+47
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+47
+]
+],
+"orbit_size": 4
+},
+{
+"s": 49,
+"primes": [
+7,
+47
+],
+"stabilizer": [
+[],
+[
+7,
+47
+]
+],
+"orbit_size": 4
+},
+{
+"s": 51,
+"primes": [
+3,
+7,
+17
+],
+"stabilizer": [
+[],
+[
+3,
+7,
+17
+]
+],
+"orbit_size": 4
+},
+{
+"s": 53,
+"primes": [
+3,
+17,
+53
+],
+"stabilizer": [
+[],
+[
+3,
+17,
+53
+]
+],
+"orbit_size": 4
+},
+{
+"s": 55,
+"primes": [
+5,
+11,
+53
+],
+"stabilizer": [
+[],
+[
+5,
+11,
+53
+]
+],
+"orbit_size": 4
+},
+{
+"s": 57,
+"primes": [
+3,
+5,
+11,
+19
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+11,
+19
+]
+],
+"orbit_size": 4
+},
+{
+"s": 59,
+"primes": [
+3,
+19,
+59
+],
+"stabilizer": [
+[],
+[
+3,
+19,
+59
+]
+],
+"orbit_size": 4
+},
+{
+"s": 61,
+"primes": [
+59,
+61
+],
+"stabilizer": [
+[],
+[
+59,
+61
+]
+],
+"orbit_size": 4
+},
+{
+"s": 63,
+"primes": [
+3,
+7,
+61
+],
+"stabilizer": [
+[],
+[
+3,
+7,
+61
+]
+],
+"orbit_size": 4
+},
+{
+"s": 65,
+"primes": [
+3,
+5,
+7,
+13
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+7,
+13
+]
+],
+"orbit_size": 4
+},
+{
+"s": 67,
+"primes": [
+5,
+13,
+67
+],
+"stabilizer": [
+[],
+[
+5,
+13,
+67
+]
+],
+"orbit_size": 4
+},
+{
+"s": 69,
+"primes": [
+3,
+23,
+67
+],
+"stabilizer": [
+[],
+[
+3,
+23,
+67
+]
+],
+"orbit_size": 4
+},
+{
+"s": 71,
+"primes": [
+3,
+23,
+71
+],
+"stabilizer": [
+[],
+[
+3,
+23,
+71
+]
+],
+"orbit_size": 4
+},
+{
+"s": 73,
+"primes": [
+71,
+73
+],
+"stabilizer": [
+[],
+[
+71,
+73
+]
+],
+"orbit_size": 4
+},
+{
+"s": 75,
+"primes": [
+3,
+5,
+73
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+73
+]
+],
+"orbit_size": 4
+},
+{
+"s": 77,
+"primes": [
+3,
+5,
+7,
+11
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+7,
+11
+]
+],
+"orbit_size": 4
+},
+{
+"s": 79,
+"primes": [
+7,
+11,
+79
+],
+"stabilizer": [
+[],
+[
+7,
+11,
+79
+]
+],
+"orbit_size": 4
+},
+{
+"s": 81,
+"primes": [
+3,
+79
+],
+"stabilizer": [
+[],
+[
+3,
+79
+]
+],
+"orbit_size": 4
+},
+{
+"s": 83,
+"primes": [
+3,
+83
+],
+"stabilizer": [
+[],
+[
+3,
+83
+]
+],
+"orbit_size": 4
+},
+{
+"s": 85,
+"primes": [
+5,
+17,
+83
+],
+"stabilizer": [
+[],
+[
+5,
+17,
+83
+]
+],
+"orbit_size": 4
+},
+{
+"s": 87,
+"primes": [
+3,
+5,
+17,
+29
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+17,
+29
+]
+],
+"orbit_size": 4
+},
+{
+"s": 89,
+"primes": [
+3,
+29,
+89
+],
+"stabilizer": [
+[],
+[
+3,
+29,
+89
+]
+],
+"orbit_size": 4
+},
+{
+"s": 91,
+"primes": [
+7,
+13,
+89
+],
+"stabilizer": [
+[],
+[
+7,
+13,
+89
+]
+],
+"orbit_size": 4
+},
+{
+"s": 93,
+"primes": [
+3,
+7,
+13,
+31
+],
+"stabilizer": [
+[],
+[
+3,
+7,
+13,
+31
+]
+],
+"orbit_size": 4
+},
+{
+"s": 95,
+"primes": [
+3,
+5,
+19,
+31
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+19,
+31
+]
+],
+"orbit_size": 4
+},
+{
+"s": 97,
+"primes": [
+5,
+19,
+97
+],
+"stabilizer": [
+[],
+[
+5,
+19,
+97
+]
+],
+"orbit_size": 4
+},
+{
+"s": 99,
+"primes": [
+3,
+11,
+97
+],
+"stabilizer": [
+[],
+[
+3,
+11,
+97
+]
+],
+"orbit_size": 4
+},
+{
+"s": 101,
+"primes": [
+3,
+11,
+101
+],
+"stabilizer": [
+[],
+[
+3,
+11,
+101
+]
+],
+"orbit_size": 4
+},
+{
+"s": 103,
+"primes": [
+101,
+103
+],
+"stabilizer": [
+[],
+[
+101,
+103
+]
+],
+"orbit_size": 4
+},
+{
+"s": 105,
+"primes": [
+3,
+5,
+7,
+103
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+7,
+103
+]
+],
+"orbit_size": 4
+},
+{
+"s": 107,
+"primes": [
+3,
+5,
+7,
+107
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+7,
+107
+]
+],
+"orbit_size": 4
+},
+{
+"s": 109,
+"primes": [
+107,
+109
+],
+"stabilizer": [
+[],
+[
+107,
+109
+]
+],
+"orbit_size": 4
+},
+{
+"s": 111,
+"primes": [
+3,
+37,
+109
+],
+"stabilizer": [
+[],
+[
+3,
+37,
+109
+]
+],
+"orbit_size": 4
+},
+{
+"s": 113,
+"primes": [
+3,
+37,
+113
+],
+"stabilizer": [
+[],
+[
+3,
+37,
+113
+]
+],
+"orbit_size": 4
+},
+{
+"s": 115,
+"primes": [
+5,
+23,
+113
+],
+"stabilizer": [
+[],
+[
+5,
+23,
+113
+]
+],
+"orbit_size": 4
+},
+{
+"s": 117,
+"primes": [
+3,
+5,
+13,
+23
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+13,
+23
+]
+],
+"orbit_size": 4
+},
+{
+"s": 119,
+"primes": [
+3,
+7,
+13,
+17
+],
+"stabilizer": [
+[],
+[
+3,
+7,
+13,
+17
+]
+],
+"orbit_size": 4
+},
+{
+"s": 121,
+"primes": [
+7,
+11,
+17
+],
+"stabilizer": [
+[],
+[
+7,
+11,
+17
+]
+],
+"orbit_size": 4
+},
+{
+"s": 123,
+"primes": [
+3,
+11,
+41
+],
+"stabilizer": [
+[],
+[
+3,
+11,
+41
+]
+],
+"orbit_size": 4
+},
+{
+"s": 125,
+"primes": [
+3,
+5,
+41
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+41
+]
+],
+"orbit_size": 4
+},
+{
+"s": 127,
+"primes": [
+5,
+127
+],
+"stabilizer": [
+[],
+[
+5,
+127
+]
+],
+"orbit_size": 4
+},
+{
+"s": 129,
+"primes": [
+3,
+43,
+127
+],
+"stabilizer": [
+[],
+[
+3,
+43,
+127
+]
+],
+"orbit_size": 4
+},
+{
+"s": 131,
+"primes": [
+3,
+43,
+131
+],
+"stabilizer": [
+[],
+[
+3,
+43,
+131
+]
+],
+"orbit_size": 4
+},
+{
+"s": 133,
+"primes": [
+7,
+19,
+131
+],
+"stabilizer": [
+[],
+[
+7,
+19,
+131
+]
+],
+"orbit_size": 4
+},
+{
+"s": 135,
+"primes": [
+3,
+5,
+7,
+19
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+7,
+19
+]
+],
+"orbit_size": 4
+},
+{
+"s": 137,
+"primes": [
+3,
+5,
+137
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+137
+]
+],
+"orbit_size": 4
+},
+{
+"s": 139,
+"primes": [
+137,
+139
+],
+"stabilizer": [
+[],
+[
+137,
+139
+]
+],
+"orbit_size": 4
+},
+{
+"s": 141,
+"primes": [
+3,
+47,
+139
+],
+"stabilizer": [
+[],
+[
+3,
+47,
+139
+]
+],
+"orbit_size": 4
+},
+{
+"s": 143,
+"primes": [
+3,
+11,
+13,
+47
+],
+"stabilizer": [
+[],
+[
+3,
+11,
+13,
+47
+]
+],
+"orbit_size": 4
+},
+{
+"s": 145,
+"primes": [
+5,
+11,
+13,
+29
+],
+"stabilizer": [
+[],
+[
+5,
+11,
+13,
+29
+]
+],
+"orbit_size": 4
+},
+{
+"s": 147,
+"primes": [
+3,
+5,
+7,
+29
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+7,
+29
+]
+],
+"orbit_size": 4
+},
+{
+"s": 149,
+"primes": [
+3,
+7,
+149
+],
+"stabilizer": [
+[],
+[
+3,
+7,
+149
+]
+],
+"orbit_size": 4
+},
+{
+"s": 151,
+"primes": [
+149,
+151
+],
+"stabilizer": [
+[],
+[
+149,
+151
+]
+],
+"orbit_size": 4
+},
+{
+"s": 153,
+"primes": [
+3,
+17,
+151
+],
+"stabilizer": [
+[],
+[
+3,
+17,
+151
+]
+],
+"orbit_size": 4
+},
+{
+"s": 155,
+"primes": [
+3,
+5,
+17,
+31
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+17,
+31
+]
+],
+"orbit_size": 4
+},
+{
+"s": 157,
+"primes": [
+5,
+31,
+157
+],
+"stabilizer": [
+[],
+[
+5,
+31,
+157
+]
+],
+"orbit_size": 4
+},
+{
+"s": 159,
+"primes": [
+3,
+53,
+157
+],
+"stabilizer": [
+[],
+[
+3,
+53,
+157
+]
+],
+"orbit_size": 4
+},
+{
+"s": 161,
+"primes": [
+3,
+7,
+23,
+53
+],
+"stabilizer": [
+[],
+[
+3,
+7,
+23,
+53
+]
+],
+"orbit_size": 4
+},
+{
+"s": 163,
+"primes": [
+7,
+23,
+163
+],
+"stabilizer": [
+[],
+[
+7,
+23,
+163
+]
+],
+"orbit_size": 4
+},
+{
+"s": 165,
+"primes": [
+3,
+5,
+11,
+163
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+11,
+163
+]
+],
+"orbit_size": 4
+},
+{
+"s": 167,
+"primes": [
+3,
+5,
+11,
+167
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+11,
+167
+]
+],
+"orbit_size": 4
+},
+{
+"s": 169,
+"primes": [
+13,
+167
+],
+"stabilizer": [
+[],
+[
+13,
+167
+]
+],
+"orbit_size": 4
+},
+{
+"s": 171,
+"primes": [
+3,
+13,
+19
+],
+"stabilizer": [
+[],
+[
+3,
+13,
+19
+]
+],
+"orbit_size": 4
+},
+{
+"s": 173,
+"primes": [
+3,
+19,
+173
+],
+"stabilizer": [
+[],
+[
+3,
+19,
+173
+]
+],
+"orbit_size": 4
+},
+{
+"s": 175,
+"primes": [
+5,
+7,
+173
+],
+"stabilizer": [
+[],
+[
+5,
+7,
+173
+]
+],
+"orbit_size": 4
+},
+{
+"s": 177,
+"primes": [
+3,
+5,
+7,
+59
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+7,
+59
+]
+],
+"orbit_size": 4
+},
+{
+"s": 179,
+"primes": [
+3,
+59,
+179
+],
+"stabilizer": [
+[],
+[
+3,
+59,
+179
+]
+],
+"orbit_size": 4
+},
+{
+"s": 181,
+"primes": [
+179,
+181
+],
+"stabilizer": [
+[],
+[
+179,
+181
+]
+],
+"orbit_size": 4
+},
+{
+"s": 183,
+"primes": [
+3,
+61,
+181
+],
+"stabilizer": [
+[],
+[
+3,
+61,
+181
+]
+],
+"orbit_size": 4
+},
+{
+"s": 185,
+"primes": [
+3,
+5,
+37,
+61
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+37,
+61
+]
+],
+"orbit_size": 4
+},
+{
+"s": 187,
+"primes": [
+5,
+11,
+17,
+37
+],
+"stabilizer": [
+[],
+[
+5,
+11,
+17,
+37
+]
+],
+"orbit_size": 4
+},
+{
+"s": 189,
+"primes": [
+3,
+7,
+11,
+17
+],
+"stabilizer": [
+[],
+[
+3,
+7,
+11,
+17
+]
+],
+"orbit_size": 4
+},
+{
+"s": 191,
+"primes": [
+3,
+7,
+191
+],
+"stabilizer": [
+[],
+[
+3,
+7,
+191
+]
+],
+"orbit_size": 4
+},
+{
+"s": 193,
+"primes": [
+191,
+193
+],
+"stabilizer": [
+[],
+[
+191,
+193
+]
+],
+"orbit_size": 4
+},
+{
+"s": 195,
+"primes": [
+3,
+5,
+13,
+193
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+13,
+193
+]
+],
+"orbit_size": 4
+},
+{
+"s": 197,
+"primes": [
+3,
+5,
+13,
+197
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+13,
+197
+]
+],
+"orbit_size": 4
+},
+{
+"s": 199,
+"primes": [
+197,
+199
+],
+"stabilizer": [
+[],
+[
+197,
+199
+]
+],
+"orbit_size": 4
+},
+{
+"s": 201,
+"primes": [
+3,
+67,
+199
+],
+"stabilizer": [
+[],
+[
+3,
+67,
+199
+]
+],
+"orbit_size": 4
+},
+{
+"s": 203,
+"primes": [
+3,
+7,
+29,
+67
+],
+"stabilizer": [
+[],
+[
+3,
+7,
+29,
+67
+]
+],
+"orbit_size": 4
+},
+{
+"s": 205,
+"primes": [
+5,
+7,
+29,
+41
+],
+"stabilizer": [
+[],
+[
+5,
+7,
+29,
+41
+]
+],
+"orbit_size": 4
+},
+{
+"s": 207,
+"primes": [
+3,
+5,
+23,
+41
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+23,
+41
+]
+],
+"orbit_size": 4
+},
+{
+"s": 209,
+"primes": [
+3,
+11,
+19,
+23
+],
+"stabilizer": [
+[],
+[
+3,
+11,
+19,
+23
+]
+],
+"orbit_size": 4
+},
+{
+"s": 211,
+"primes": [
+11,
+19,
+211
+],
+"stabilizer": [
+[],
+[
+11,
+19,
+211
+]
+],
+"orbit_size": 4
+},
+{
+"s": 213,
+"primes": [
+3,
+71,
+211
+],
+"stabilizer": [
+[],
+[
+3,
+71,
+211
+]
+],
+"orbit_size": 4
+},
+{
+"s": 215,
+"primes": [
+3,
+5,
+43,
+71
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+43,
+71
+]
+],
+"orbit_size": 4
+},
+{
+"s": 217,
+"primes": [
+5,
+7,
+31,
+43
+],
+"stabilizer": [
+[],
+[
+5,
+7,
+31,
+43
+]
+],
+"orbit_size": 4
+},
+{
+"s": 219,
+"primes": [
+3,
+7,
+31,
+73
+],
+"stabilizer": [
+[],
+[
+3,
+7,
+31,
+73
+]
+],
+"orbit_size": 4
+},
+{
+"s": 221,
+"primes": [
+3,
+13,
+17,
+73
+],
+"stabilizer": [
+[],
+[
+3,
+13,
+17,
+73
+]
+],
+"orbit_size": 4
+},
+{
+"s": 223,
+"primes": [
+13,
+17,
+223
+],
+"stabilizer": [
+[],
+[
+13,
+17,
+223
+]
+],
+"orbit_size": 4
+},
+{
+"s": 225,
+"primes": [
+3,
+5,
+223
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+223
+]
+],
+"orbit_size": 4
+},
+{
+"s": 227,
+"primes": [
+3,
+5,
+227
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+227
+]
+],
+"orbit_size": 4
+},
+{
+"s": 229,
+"primes": [
+227,
+229
+],
+"stabilizer": [
+[],
+[
+227,
+229
+]
+],
+"orbit_size": 4
+},
+{
+"s": 231,
+"primes": [
+3,
+7,
+11,
+229
+],
+"stabilizer": [
+[],
+[
+3,
+7,
+11,
+229
+]
+],
+"orbit_size": 4
+},
+{
+"s": 233,
+"primes": [
+3,
+7,
+11,
+233
+],
+"stabilizer": [
+[],
+[
+3,
+7,
+11,
+233
+]
+],
+"orbit_size": 4
+},
+{
+"s": 235,
+"primes": [
+5,
+47,
+233
+],
+"stabilizer": [
+[],
+[
+5,
+47,
+233
+]
+],
+"orbit_size": 4
+},
+{
+"s": 237,
+"primes": [
+3,
+5,
+47,
+79
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+47,
+79
+]
+],
+"orbit_size": 4
+},
+{
+"s": 239,
+"primes": [
+3,
+79,
+239
+],
+"stabilizer": [
+[],
+[
+3,
+79,
+239
+]
+],
+"orbit_size": 4
+},
+{
+"s": 241,
+"primes": [
+239,
+241
+],
+"stabilizer": [
+[],
+[
+239,
+241
+]
+],
+"orbit_size": 4
+},
+{
+"s": 243,
+"primes": [
+3,
+241
+],
+"stabilizer": [
+[],
+[
+3,
+241
+]
+],
+"orbit_size": 4
+},
+{
+"s": 245,
+"primes": [
+3,
+5,
+7
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+7
+]
+],
+"orbit_size": 4
+},
+{
+"s": 247,
+"primes": [
+5,
+7,
+13,
+19
+],
+"stabilizer": [
+[],
+[
+5,
+7,
+13,
+19
+]
+],
+"orbit_size": 4
+},
+{
+"s": 249,
+"primes": [
+3,
+13,
+19,
+83
+],
+"stabilizer": [
+[],
+[
+3,
+13,
+19,
+83
+]
+],
+"orbit_size": 4
+},
+{
+"s": 251,
+"primes": [
+3,
+83,
+251
+],
+"stabilizer": [
+[],
+[
+3,
+83,
+251
+]
+],
+"orbit_size": 4
+},
+{
+"s": 253,
+"primes": [
+11,
+23,
+251
+],
+"stabilizer": [
+[],
+[
+11,
+23,
+251
+]
+],
+"orbit_size": 4
+},
+{
+"s": 255,
+"primes": [
+3,
+5,
+11,
+17,
+23
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+11,
+17,
+23
+]
+],
+"orbit_size": 4
+},
+{
+"s": 257,
+"primes": [
+3,
+5,
+17,
+257
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+17,
+257
+]
+],
+"orbit_size": 4
+},
+{
+"s": 259,
+"primes": [
+7,
+37,
+257
+],
+"stabilizer": [
+[],
+[
+7,
+37,
+257
+]
+],
+"orbit_size": 4
+},
+{
+"s": 261,
+"primes": [
+3,
+7,
+29,
+37
+],
+"stabilizer": [
+[],
+[
+3,
+7,
+29,
+37
+]
+],
+"orbit_size": 4
+},
+{
+"s": 263,
+"primes": [
+3,
+29,
+263
+],
+"stabilizer": [
+[],
+[
+3,
+29,
+263
+]
+],
+"orbit_size": 4
+},
+{
+"s": 265,
+"primes": [
+5,
+53,
+263
+],
+"stabilizer": [
+[],
+[
+5,
+53,
+263
+]
+],
+"orbit_size": 4
+},
+{
+"s": 267,
+"primes": [
+3,
+5,
+53,
+89
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+53,
+89
+]
+],
+"orbit_size": 4
+},
+{
+"s": 269,
+"primes": [
+3,
+89,
+269
+],
+"stabilizer": [
+[],
+[
+3,
+89,
+269
+]
+],
+"orbit_size": 4
+},
+{
+"s": 271,
+"primes": [
+269,
+271
+],
+"stabilizer": [
+[],
+[
+269,
+271
+]
+],
+"orbit_size": 4
+},
+{
+"s": 273,
+"primes": [
+3,
+7,
+13,
+271
+],
+"stabilizer": [
+[],
+[
+3,
+7,
+13,
+271
+]
+],
+"orbit_size": 4
+},
+{
+"s": 275,
+"primes": [
+3,
+5,
+7,
+11,
+13
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+7,
+11,
+13
+]
+],
+"orbit_size": 4
+},
+{
+"s": 277,
+"primes": [
+5,
+11,
+277
+],
+"stabilizer": [
+[],
+[
+5,
+11,
+277
+]
+],
+"orbit_size": 4
+},
+{
+"s": 279,
+"primes": [
+3,
+31,
+277
+],
+"stabilizer": [
+[],
+[
+3,
+31,
+277
+]
+],
+"orbit_size": 4
+},
+{
+"s": 281,
+"primes": [
+3,
+31,
+281
+],
+"stabilizer": [
+[],
+[
+3,
+31,
+281
+]
+],
+"orbit_size": 4
+},
+{
+"s": 283,
+"primes": [
+281,
+283
+],
+"stabilizer": [
+[],
+[
+281,
+283
+]
+],
+"orbit_size": 4
+},
+{
+"s": 285,
+"primes": [
+3,
+5,
+19,
+283
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+19,
+283
+]
+],
+"orbit_size": 4
+},
+{
+"s": 287,
+"primes": [
+3,
+5,
+7,
+19,
+41
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+7,
+19,
+41
+]
+],
+"orbit_size": 4
+},
+{
+"s": 289,
+"primes": [
+7,
+17,
+41
+],
+"stabilizer": [
+[],
+[
+7,
+17,
+41
+]
+],
+"orbit_size": 4
+},
+{
+"s": 291,
+"primes": [
+3,
+17,
+97
+],
+"stabilizer": [
+[],
+[
+3,
+17,
+97
+]
+],
+"orbit_size": 4
+},
+{
+"s": 293,
+"primes": [
+3,
+97,
+293
+],
+"stabilizer": [
+[],
+[
+3,
+97,
+293
+]
+],
+"orbit_size": 4
+},
+{
+"s": 295,
+"primes": [
+5,
+59,
+293
+],
+"stabilizer": [
+[],
+[
+5,
+59,
+293
+]
+],
+"orbit_size": 4
+},
+{
+"s": 297,
+"primes": [
+3,
+5,
+11,
+59
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+11,
+59
+]
+],
+"orbit_size": 4
+},
+{
+"s": 299,
+"primes": [
+3,
+11,
+13,
+23
+],
+"stabilizer": [
+[],
+[
+3,
+11,
+13,
+23
+]
+],
+"orbit_size": 4
+},
+{
+"s": 301,
+"primes": [
+7,
+13,
+23,
+43
+],
+"stabilizer": [
+[],
+[
+7,
+13,
+23,
+43
+]
+],
+"orbit_size": 4
+},
+{
+"s": 303,
+"primes": [
+3,
+7,
+43,
+101
+],
+"stabilizer": [
+[],
+[
+3,
+7,
+43,
+101
+]
+],
+"orbit_size": 4
+},
+{
+"s": 305,
+"primes": [
+3,
+5,
+61,
+101
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+61,
+101
+]
+],
+"orbit_size": 4
+},
+{
+"s": 307,
+"primes": [
+5,
+61,
+307
+],
+"stabilizer": [
+[],
+[
+5,
+61,
+307
+]
+],
+"orbit_size": 4
+},
+{
+"s": 309,
+"primes": [
+3,
+103,
+307
+],
+"stabilizer": [
+[],
+[
+3,
+103,
+307
+]
+],
+"orbit_size": 4
+},
+{
+"s": 311,
+"primes": [
+3,
+103,
+311
+],
+"stabilizer": [
+[],
+[
+3,
+103,
+311
+]
+],
+"orbit_size": 4
+},
+{
+"s": 313,
+"primes": [
+311,
+313
+],
+"stabilizer": [
+[],
+[
+311,
+313
+]
+],
+"orbit_size": 4
+},
+{
+"s": 315,
+"primes": [
+3,
+5,
+7,
+313
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+7,
+313
+]
+],
+"orbit_size": 4
+},
+{
+"s": 317,
+"primes": [
+3,
+5,
+7,
+317
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+7,
+317
+]
+],
+"orbit_size": 4
+},
+{
+"s": 319,
+"primes": [
+11,
+29,
+317
+],
+"stabilizer": [
+[],
+[
+11,
+29,
+317
+]
+],
+"orbit_size": 4
+},
+{
+"s": 321,
+"primes": [
+3,
+11,
+29,
+107
+],
+"stabilizer": [
+[],
+[
+3,
+11,
+29,
+107
+]
+],
+"orbit_size": 4
+},
+{
+"s": 323,
+"primes": [
+3,
+17,
+19,
+107
+],
+"stabilizer": [
+[],
+[
+3,
+17,
+19,
+107
+]
+],
+"orbit_size": 4
+},
+{
+"s": 325,
+"primes": [
+5,
+13,
+17,
+19
+],
+"stabilizer": [
+[],
+[
+5,
+13,
+17,
+19
+]
+],
+"orbit_size": 4
+},
+{
+"s": 327,
+"primes": [
+3,
+5,
+13,
+109
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+13,
+109
+]
+],
+"orbit_size": 4
+},
+{
+"s": 329,
+"primes": [
+3,
+7,
+47,
+109
+],
+"stabilizer": [
+[],
+[
+3,
+7,
+47,
+109
+]
+],
+"orbit_size": 4
+},
+{
+"s": 331,
+"primes": [
+7,
+47,
+331
+],
+"stabilizer": [
+[],
+[
+7,
+47,
+331
+]
+],
+"orbit_size": 4
+},
+{
+"s": 333,
+"primes": [
+3,
+37,
+331
+],
+"stabilizer": [
+[],
+[
+3,
+37,
+331
+]
+],
+"orbit_size": 4
+},
+{
+"s": 335,
+"primes": [
+3,
+5,
+37,
+67
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+37,
+67
+]
+],
+"orbit_size": 4
+},
+{
+"s": 337,
+"primes": [
+5,
+67,
+337
+],
+"stabilizer": [
+[],
+[
+5,
+67,
+337
+]
+],
+"orbit_size": 4
+},
+{
+"s": 339,
+"primes": [
+3,
+113,
+337
+],
+"stabilizer": [
+[],
+[
+3,
+113,
+337
+]
+],
+"orbit_size": 4
+},
+{
+"s": 341,
+"primes": [
+3,
+11,
+31,
+113
+],
+"stabilizer": [
+[],
+[
+3,
+11,
+31,
+113
+]
+],
+"orbit_size": 4
+},
+{
+"s": 343,
+"primes": [
+7,
+11,
+31
+],
+"stabilizer": [
+[],
+[
+7,
+11,
+31
+]
+],
+"orbit_size": 4
+},
+{
+"s": 345,
+"primes": [
+3,
+5,
+7,
+23
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+7,
+23
+]
+],
+"orbit_size": 4
+},
+{
+"s": 347,
+"primes": [
+3,
+5,
+23,
+347
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+23,
+347
+]
+],
+"orbit_size": 4
+},
+{
+"s": 349,
+"primes": [
+347,
+349
+],
+"stabilizer": [
+[],
+[
+347,
+349
+]
+],
+"orbit_size": 4
+},
+{
+"s": 351,
+"primes": [
+3,
+13,
+349
+],
+"stabilizer": [
+[],
+[
+3,
+13,
+349
+]
+],
+"orbit_size": 4
+},
+{
+"s": 353,
+"primes": [
+3,
+13,
+353
+],
+"stabilizer": [
+[],
+[
+3,
+13,
+353
+]
+],
+"orbit_size": 4
+},
+{
+"s": 355,
+"primes": [
+5,
+71,
+353
+],
+"stabilizer": [
+[],
+[
+5,
+71,
+353
+]
+],
+"orbit_size": 4
+},
+{
+"s": 357,
+"primes": [
+3,
+5,
+7,
+17,
+71
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+7,
+17,
+71
+]
+],
+"orbit_size": 4
+},
+{
+"s": 359,
+"primes": [
+3,
+7,
+17,
+359
+],
+"stabilizer": [
+[],
+[
+3,
+7,
+17,
+359
+]
+],
+"orbit_size": 4
+},
+{
+"s": 361,
+"primes": [
+19,
+359
+],
+"stabilizer": [
+[],
+[
+19,
+359
+]
+],
+"orbit_size": 4
+},
+{
+"s": 363,
+"primes": [
+3,
+11,
+19
+],
+"stabilizer": [
+[],
+[
+3,
+11,
+19
+]
+],
+"orbit_size": 4
+},
+{
+"s": 365,
+"primes": [
+3,
+5,
+11,
+73
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+11,
+73
+]
+],
+"orbit_size": 4
+},
+{
+"s": 367,
+"primes": [
+5,
+73,
+367
+],
+"stabilizer": [
+[],
+[
+5,
+73,
+367
+]
+],
+"orbit_size": 4
+},
+{
+"s": 369,
+"primes": [
+3,
+41,
+367
+],
+"stabilizer": [
+[],
+[
+3,
+41,
+367
+]
+],
+"orbit_size": 4
+},
+{
+"s": 371,
+"primes": [
+3,
+7,
+41,
+53
+],
+"stabilizer": [
+[],
+[
+3,
+7,
+41,
+53
+]
+],
+"orbit_size": 4
+},
+{
+"s": 373,
+"primes": [
+7,
+53,
+373
+],
+"stabilizer": [
+[],
+[
+7,
+53,
+373
+]
+],
+"orbit_size": 4
+},
+{
+"s": 375,
+"primes": [
+3,
+5,
+373
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+373
+]
+],
+"orbit_size": 4
+},
+{
+"s": 377,
+"primes": [
+3,
+5,
+13,
+29
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+13,
+29
+]
+],
+"orbit_size": 4
+},
+{
+"s": 379,
+"primes": [
+13,
+29,
+379
+],
+"stabilizer": [
+[],
+[
+13,
+29,
+379
+]
+],
+"orbit_size": 4
+},
+{
+"s": 381,
+"primes": [
+3,
+127,
+379
+],
+"stabilizer": [
+[],
+[
+3,
+127,
+379
+]
+],
+"orbit_size": 4
+},
+{
+"s": 383,
+"primes": [
+3,
+127,
+383
+],
+"stabilizer": [
+[],
+[
+3,
+127,
+383
+]
+],
+"orbit_size": 4
+},
+{
+"s": 385,
+"primes": [
+5,
+7,
+11,
+383
+],
+"stabilizer": [
+[],
+[
+5,
+7,
+11,
+383
+]
+],
+"orbit_size": 4
+},
+{
+"s": 387,
+"primes": [
+3,
+5,
+7,
+11,
+43
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+7,
+11,
+43
+]
+],
+"orbit_size": 4
+},
+{
+"s": 389,
+"primes": [
+3,
+43,
+389
+],
+"stabilizer": [
+[],
+[
+3,
+43,
+389
+]
+],
+"orbit_size": 4
+},
+{
+"s": 391,
+"primes": [
+17,
+23,
+389
+],
+"stabilizer": [
+[],
+[
+17,
+23,
+389
+]
+],
+"orbit_size": 4
+},
+{
+"s": 393,
+"primes": [
+3,
+17,
+23,
+131
+],
+"stabilizer": [
+[],
+[
+3,
+17,
+23,
+131
+]
+],
+"orbit_size": 4
+},
+{
+"s": 395,
+"primes": [
+3,
+5,
+79,
+131
+],
+"stabilizer": [
+[],
+[
+3,
+5,
+79,
+131
+]
+],
+"orbit_size": 4
+},
+{
+"s": 397,
+"primes": [
+5,
+79,
+397
+],
+"stabilizer": [
+[],
+[
+5,
+79,
+397
+]
+],
+"orbit_size": 4
+},
+{
+"s": 399,
+"primes": [
+3,
+7,
+19,
+397
+],
+"stabilizer": [
+[],
+[
+3,
+7,
+19,
+397
+]
+],
+"orbit_size": 4
+},
+{
+"s": 401,
+"primes": [
+3,
+7,
+19,
+401
+],
+"stabilizer": [
+[],
+[
+3,
+7,
+19,
+401
+]
+],
+"orbit_size": 4
+}
+]
+===== END FILE lemma1b.json =====
+===== BEGIN FILE lemma1c.json bytes=908 sha256=8e1935dbe33e69bcd1de6aceb5b03145937eae8ccae4f4bf5d350a86a3388254 =====
+[
+{
+"s": 27,
+"c": 4,
+"extra_class_in_some_ZS_O0": []
+},
+{
+"s": 245,
+"c": 8,
+"extra_class_in_some_ZS_O0": []
+},
+{
+"s": 363,
+"c": 4,
+"extra_class_in_some_ZS_O0": []
+},
+{
+"s": 363,
+"c": 14,
+"extra_class_in_some_ZS_O0": []
+},
+{
+"s": 847,
+"c": 12,
+"extra_class_in_some_ZS_O0": []
+},
+{
+"s": 2025,
+"c": 16,
+"extra_class_in_some_ZS_O0": []
+},
+{
+"s": 3971,
+"c": 20,
+"extra_class_in_some_ZS_O0": []
+},
+{
+"s": 5043,
+"c": 4,
+"extra_class_in_some_ZS_O0": []
+},
+{
+"s": 5043,
+"c": 14,
+"extra_class_in_some_ZS_O0": []
+},
+{
+"s": 5043,
+"c": 52,
+"extra_class_in_some_ZS_O0": []
+},
+{
+"s": 6877,
+"c": 24,
+"extra_class_in_some_ZS_O0": []
+},
+{
+"s": 10935,
+"c": 28,
+"extra_class_in_some_ZS_O0": []
+},
+{
+"s": 15125,
+"c": 8,
+"extra_class_in_some_ZS_O0": []
+},
+{
+"s": 15125,
+"c": 62,
+"extra_class_in_some_ZS_O0": []
+},
+{
+"s": 16337,
+"c": 32,
+"extra_class_in_some_ZS_O0": []
+},
+{
+"s": 23275,
+"c": 36,
+"extra_class_in_some_ZS_O0": []
+}
+]
+===== END FILE lemma1c.json =====
+===== BEGIN FILE old98_h2.json bytes=849 sha256=4c0400bb42ddf86d921f2108d39e745db580ef6bd2228da97a6db879cd09c000 =====
+[
+ {
+  "plus": [
+   9,
+   41,
+   57,
+   89
+  ],
+  "minus": [
+   17,
+   32,
+   64,
+   81
+  ],
+  "h_images": {
+   "32": [
+    "41",
+    "57",
+    "89",
+    "9"
+   ],
+   "64": [
+    "41",
+    "57",
+    "89",
+    "9"
+   ],
+   "9": [
+    "17",
+    "32",
+    "64",
+    "81"
+   ],
+   "41": [
+    "17",
+    "32",
+    "64",
+    "81"
+   ],
+   "17": [
+    "41",
+    "57",
+    "89",
+    "9"
+   ],
+   "81": [
+    "41",
+    "57",
+    "89",
+    "9"
+   ],
+   "89": [
+    "17",
+    "32",
+    "64",
+    "81"
+   ],
+   "57": [
+    "17",
+    "32",
+    "64",
+    "81"
+   ]
+  }
+ },
+ {
+  "plus": [
+   1,
+   49,
+   96
+  ],
+  "minus": [
+   24,
+   72
+  ],
+  "h_images": {
+   "96": [
+    "24",
+    "72"
+   ],
+   "1": [
+    "24",
+    "72"
+   ],
+   "49": [
+    "24",
+    "72"
+   ],
+   "24": [
+    "1",
+    "49",
+    "96"
+   ],
+   "72": [
+    "1",
+    "49",
+    "96"
+   ]
+  }
+ }
+]
+===== END FILE old98_h2.json =====
+===== BEGIN FILE old98_rel_Q40.json bytes=1961 sha256=020541df887767c5cbb2a04d54253efa2fd8bbf0b980d936a70718c1e348d24f =====
+{
+ "Qmax": 40.0,
+ "n_class_orbits": 98,
+ "rank": 54,
+ "kernel_dim": 44,
+ "g_relations": 84,
+ "g_rel_rank": 42,
+ "g_rel_in_kernel": true,
+ "rank_g_plus_K": 44,
+ "extra_g_symmetric_relations": 2,
+ "extra": [
+  {
+   "support": [
+    {
+     "class_orbit": 9,
+     "coef": 1,
+     "rep": [
+      392,
+      952
+     ],
+     "size": 2,
+     "q": "11/12"
+    },
+    {
+     "class_orbit": 17,
+     "coef": -1,
+     "rep": [
+      784,
+      1232
+     ],
+     "size": 2,
+     "q": "11/12"
+    },
+    {
+     "class_orbit": 32,
+     "coef": -1,
+     "rep": [
+      1568,
+      448
+     ],
+     "size": 2,
+     "q": "11/12"
+    },
+    {
+     "class_orbit": 41,
+     "coef": 1,
+     "rep": [
+      1960,
+      728
+     ],
+     "size": 2,
+     "q": "11/12"
+    },
+    {
+     "class_orbit": 57,
+     "coef": 1,
+     "rep": [
+      2744,
+      1288
+     ],
+     "size": 2,
+     "q": "11/12"
+    },
+    {
+     "class_orbit": 64,
+     "coef": -1,
+     "rep": [
+      3136,
+      224
+     ],
+     "size": 2,
+     "q": "11/12"
+    },
+    {
+     "class_orbit": 81,
+     "coef": -1,
+     "rep": [
+      3920,
+      784
+     ],
+     "size": 2,
+     "q": "11/12"
+    },
+    {
+     "class_orbit": 89,
+     "coef": 1,
+     "rep": [
+      4312,
+      1064
+     ],
+     "size": 2,
+     "q": "11/12"
+    }
+   ]
+  },
+  {
+   "support": [
+    {
+     "class_orbit": 1,
+     "coef": 1,
+     "rep": [
+      0,
+      672
+     ],
+     "size": 1,
+     "q": "1/4"
+    },
+    {
+     "class_orbit": 24,
+     "coef": -1,
+     "rep": [
+      1176,
+      168
+     ],
+     "size": 2,
+     "q": "1/4"
+    },
+    {
+     "class_orbit": 49,
+     "coef": 1,
+     "rep": [
+      2352,
+      1008
+     ],
+     "size": 2,
+     "q": "1/4"
+    },
+    {
+     "class_orbit": 72,
+     "coef": -1,
+     "rep": [
+      3528,
+      504
+     ],
+     "size": 2,
+     "q": "1/4"
+    },
+    {
+     "class_orbit": 96,
+     "coef": 1,
+     "rep": [
+      4704,
+      0
+     ],
+     "size": 1,
+     "q": "1/4"
+    }
+   ]
+  }
+ ]
+}
+===== END FILE old98_rel_Q40.json =====
+===== BEGIN FILE old_g_18.json bytes=145 sha256=a8b6ec9762d1fe0a582d5e291af3b15280ce91113dbdcfbe1c0b2aa1ade72540 =====
+{"s": 18, "p": 3, "t": [0, 192], "n_classes": 32, "g_well_defined": true, "orbits_gamma_neg": 18, "g_squared_is_gamma": true, "orbits_g_neg": 12}
+===== END FILE old_g_18.json =====
+===== BEGIN FILE old_g_50.json bytes=145 sha256=d5aecaa5602273240b325503cd0f987b91dba263afaafbf9264332cbcb590896 =====
+{"s": 50, "p": 5, "t": [0, 480], "n_classes": 96, "g_well_defined": true, "orbits_gamma_neg": 50, "g_squared_is_gamma": true, "orbits_g_neg": 30}
+===== END FILE old_g_50.json =====
+===== BEGIN FILE old_g_98.json bytes=147 sha256=759c4aec26c43adcf4c923fa5c99d4b4bea0405c4a3cf03d84a654d22417897a =====
+{"s": 98, "p": 7, "t": [0, 8064], "n_classes": 192, "g_well_defined": true, "orbits_gamma_neg": 98, "g_squared_is_gamma": true, "orbits_g_neg": 56}
+===== END FILE old_g_98.json =====
+===== BEGIN FILE old_h_98.json bytes=79 sha256=0a40a0f1aa70d847e21dfa95746eeb30618ed0556155ff67439efff0486dd32d =====
+{"n_classes": 192, "h_single_valued": 0, "h_multivalued": 48, "h_undefined": 0}
+===== END FILE old_h_98.json =====
+===== BEGIN FILE s64_W.json bytes=956 sha256=05d45623cd11d1c96e01a3817a9fff977ce170fea579ef32e82703b6a27c1ba6 =====
+[
+ {
+  "s": 16,
+  "k": 4,
+  "u_mod8": 7,
+  "N": 224,
+  "n2": 32,
+  "n_odd": 7,
+  "W2_plus": 18.0,
+  "W2_minus": 14.0,
+  "Wodd_plus": 4.0,
+  "Wodd_minus": 3.0,
+  "dimW_from_factors": 114.0,
+  "dimW_direct": 114.0,
+  "imag_check": 0.0
+ },
+ {
+  "s": 32,
+  "k": 5,
+  "u_mod8": 7,
+  "N": 960,
+  "n2": 64,
+  "n_odd": 15,
+  "W2_plus": 34.0,
+  "W2_minus": 30.0,
+  "Wodd_plus": 8.0,
+  "Wodd_minus": 7.0,
+  "dimW_from_factors": 482.0,
+  "dimW_direct": 482.0,
+  "imag_check": 0.0
+ },
+ {
+  "s": 48,
+  "k": 4,
+  "u_mod8": 5,
+  "N": 2208,
+  "n2": 32,
+  "n_odd": 69,
+  "W2_plus": 18.0,
+  "W2_minus": 14.0,
+  "Wodd_plus": 35.0,
+  "Wodd_minus": 34.0,
+  "dimW_from_factors": 1106.0,
+  "dimW_direct": 1106.0,
+  "imag_check": 0.0
+ },
+ {
+  "s": 64,
+  "k": 6,
+  "u_mod8": 7,
+  "N": 3968,
+  "n2": 128,
+  "n_odd": 31,
+  "W2_plus": 66.0,
+  "W2_minus": 62.0,
+  "Wodd_plus": 16.0,
+  "Wodd_minus": 15.0,
+  "dimW_from_factors": 1986.0,
+  "dimW_direct": 1986.0,
+  "imag_check": 0.0
+ }
+]
+===== END FILE s64_W.json =====
+===== BEGIN FILE w2_cert_32.json bytes=175 sha256=c00eda79ffdf12e3dbd958914f1d352154cc0a3a8dd8bc2b9ac419352a5e7942 =====
+{
+"s": 32,
+"Nn": 32,
+"S_invariant_exact": true,
+"dimFixO": 22,
+"dimY": 1,
+"upper": 21,
+"Y": [
+{
+"4": 1,
+"12": 1,
+"20": 1,
+"28": 1,
+"32": -1,
+"40": -1,
+"48": -1,
+"56": -1
+}
+]
+}
+===== END FILE w2_cert_32.json =====
+===== BEGIN FILE w2_cert_64.json bytes=543 sha256=bdf6307094321c804b4a68ffd101dd4f6041cfed99a0deeaad4fbc1a8ed95859 =====
+{
+"s": 64,
+"Nn": 64,
+"S_invariant_exact": true,
+"dimFixO": 42,
+"dimY": 6,
+"upper": 36,
+"Y": [
+{
+"2": -1,
+"30": -1,
+"34": -1,
+"62": -1,
+"74": 1,
+"86": 1,
+"106": 1,
+"118": 1
+},
+{
+"4": 1,
+"12": -1,
+"20": -1,
+"28": 1,
+"36": 1,
+"44": -1,
+"52": -1,
+"60": 1
+},
+{
+"64": 1,
+"80": -1,
+"96": 1,
+"112": -1
+},
+{
+"6": 1,
+"26": 1,
+"38": 1,
+"58": 1,
+"66": -1,
+"94": -1,
+"98": -1,
+"126": -1
+},
+{
+"14": 1,
+"18": 1,
+"46": 1,
+"50": 1,
+"70": -1,
+"90": -1,
+"102": -1,
+"122": -1
+},
+{
+"10": -1,
+"22": -1,
+"42": -1,
+"54": -1,
+"78": 1,
+"82": 1,
+"110": 1,
+"114": 1
+}
+]
+}
+===== END FILE w2_cert_64.json =====
+===== BEGIN FILE w2_orbits_16_32_48_64.json bytes=691 sha256=fb44475269d06d291751e760e95bcd7baa36c5d16ff8050f56925b7f357f2253 =====
+[
+ {
+  "s": 16,
+  "k": 4,
+  "u_mod8": 7,
+  "n2": 32,
+  "group_orders": [
+   16,
+   2
+  ],
+  "n_isometries": 4,
+  "orbit_upper": 12,
+  "krylov_float": 12,
+  "formula": 12
+ },
+ {
+  "s": 32,
+  "k": 5,
+  "u_mod8": 7,
+  "n2": 64,
+  "group_orders": [
+   32,
+   2
+  ],
+  "n_isometries": 4,
+  "orbit_upper": 22,
+  "krylov_float": 21,
+  "formula": 21
+ },
+ {
+  "s": 48,
+  "k": 4,
+  "u_mod8": 5,
+  "n2": 32,
+  "group_orders": [
+   16,
+   2
+  ],
+  "n_isometries": 4,
+  "orbit_upper": 12,
+  "krylov_float": 12,
+  "formula": 12
+ },
+ {
+  "s": 64,
+  "k": 6,
+  "u_mod8": 7,
+  "n2": 128,
+  "group_orders": [
+   64,
+   2
+  ],
+  "n_isometries": 4,
+  "orbit_upper": 42,
+  "krylov_float": 36,
+  "formula": 36
+ }
+]
+===== END FILE w2_orbits_16_32_48_64.json =====
+===== BEGIN FILE w2_orbs.json bytes=477 sha256=15f21286abe6c9374b5e77d52a3b2a1d9acea1c711355827046bec4f36c52420 =====
+{"orbs": [[0], [1, 31, 41, 55], [2, 14, 18, 30], [3, 29, 37, 59], [4, 28], [5, 27, 45, 51], [6, 10, 22, 26], [7, 25, 33, 63], [8, 24], [9, 23, 47, 49], [11, 21, 35, 61], [12, 20], [13, 19, 43, 53], [15, 17, 39, 57], [16], [32, 48], [34, 62], [36, 44, 52, 60], [38, 58], [40, 56], [42, 54], [46, 50]], "q": ["0", "1/64", "1/16", "9/64", "1/4", "25/64", "9/16", "49/64", "0", "17/64", "57/64", "1/4", "41/64", "33/64", "0", "1/4", "5/16", "1/2", "13/16", "1/4", "13/16", "5/16"]}
+===== END FILE w2_orbs.json =====
+===== BEGIN FILE zall.json bytes=751 sha256=f95102547880a44a0a74956b25539e645a2851c35079247c68de6ca5d36cb200 =====
+[{"s": 5, "uniform": []}, {"s": 7, "uniform": []}, {"s": 9, "uniform": []}, {"s": 11, "uniform": []}, {"s": 13, "uniform": []}, {"s": 15, "uniform": []}, {"s": 17, "uniform": []}, {"s": 19, "uniform": []}, {"s": 21, "uniform": []}, {"s": 23, "uniform": []}, {"s": 25, "uniform": []}, {"s": 27, "uniform": []}, {"s": 29, "uniform": []}, {"s": 31, "uniform": []}, {"s": 33, "uniform": []}, {"s": 35, "uniform": []}, {"s": 37, "uniform": []}, {"s": 39, "uniform": []}, {"s": 41, "uniform": []}, {"s": 43, "uniform": []}, {"s": 45, "uniform": []}, {"s": 47, "uniform": []}, {"s": 49, "uniform": []}, {"s": 51, "uniform": []}, {"s": 53, "uniform": []}, {"s": 55, "uniform": []}, {"s": 57, "uniform": []}, {"s": 59, "uniform": []}, {"s": 61, "uniform": []}]
+===== END FILE zall.json =====
+===== BEGIN FILE zall2.json bytes=1226 sha256=f033fb860c95e46b649667cba0f9c76827676fc4cf9cd35a5018a334be2a3161 =====
+[{"s": 5, "Zall_fixes_every_orbit": true, "uniform_element": [[-1, 0]], "els_2adic_residues": [["0", "0"], [0, 2], [1, 0], [1, 2]]}, {"s": 7, "Zall_fixes_every_orbit": true, "uniform_element": [[-1, 0]], "els_2adic_residues": [["0", "0"], [0, 2], [1, 0], [1, 2]]}, {"s": 9, "Zall_fixes_every_orbit": true, "uniform_element": [[-1, 0]], "els_2adic_residues": [["0", "0"], [0, 2], ["1", "0"], [1, 2]]}, {"s": 11, "Zall_fixes_every_orbit": true, "uniform_element": [[-1, 0]], "els_2adic_residues": [["0", "0"], ["0", "2"], [1, 0], [1, 2]]}, {"s": 13, "Zall_fixes_every_orbit": true, "uniform_element": [[-1, 0]], "els_2adic_residues": [["0", "0"], [0, 2], ["1", "0"], [1, 2]]}, {"s": 15, "Zall_fixes_every_orbit": true, "uniform_element": [[-1, 0]], "els_2adic_residues": [["0", "0"], ["0", "2"], [1, 0], [1, 2]]}, {"s": 21, "Zall_fixes_every_orbit": true, "uniform_element": [[-1, 0]], "els_2adic_residues": [["0", "0"], ["0", "2"], ["1", "0"], [1, 2]]}, {"s": 25, "Zall_fixes_every_orbit": true, "uniform_element": [[-1, 0]], "els_2adic_residues": [["0", "0"], ["0", "2"], [1, 0], [1, 2]]}, {"s": 27, "Zall_fixes_every_orbit": true, "uniform_element": [[-1, 0]], "els_2adic_residues": [["0", "0"], [0, 2], ["1", "0"], [1, 2]]}]
+===== END FILE zall2.json =====
