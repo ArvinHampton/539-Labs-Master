@@ -1,0 +1,12 @@
+x=-1.0: exact constant-term psi = -0.12444104-0.20006311j
+   y=0.1: Psi(z) q-series = -1.04808917-1.24704773j   period formula at complex z = -0.00311594-0.03399605j
+   y=0.05: Psi(z) q-series = -1.80686788-2.28709137j   period formula at complex z = -0.00017413-0.03436952j
+   y=0.025: Psi(z) q-series = -3.36766564-4.43496155j   period formula at complex z = 0.00130713-0.03452985j
+x=-0.4: exact constant-term psi = -1.41514752-1.42214327j
+   y=0.1: Psi(z) q-series = -0.18242933-0.04027678j   period formula at complex z = -0.00013223-0.00632906j
+   y=0.05: Psi(z) q-series = -0.46153154-0.34229780j   period formula at complex z = 0.00135193-0.00632304j
+   y=0.025: Psi(z) q-series = -0.73440476-0.69720373j   period formula at complex z = 0.00210517-0.00625421j
+x=1.0: exact constant-term psi = 0.00688399-0.03825971j
+   y=0.1: Psi(z) q-series = 0.01289787-0.03688268j   period formula at complex z = 0.01289787-0.03688268j
+   y=0.05: Psi(z) q-series = 0.00989495-0.03759936j   period formula at complex z = 0.00989495-0.03759936j
+   y=0.025: Psi(z) q-series = 0.00839079-0.03793648j   period formula at complex z = 0.00839079-0.03793648j
