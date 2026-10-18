@@ -1,0 +1,1 @@
+s=11: Qmax=150.0, points 35718, frequencies 7264; complex rank of the family = 110; sv[r-1]=2.19e+01, sv[r]=5.03e-14
