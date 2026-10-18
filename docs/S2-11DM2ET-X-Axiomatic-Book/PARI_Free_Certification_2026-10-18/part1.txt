@@ -1,0 +1,13 @@
+(label,sign) pairs with no coefficients: PARI-free 22, PARI fit 22, identical sets: True
+content g differs on 0 (label,sign) pairs
+max class-function spread (lattice weight per ideal not constant on a class): 5.6e-17
+max theta residual |c(g n) - sum_cl F(cl) I(cl,n)| over all n <= 19600*400*0.98/g coprime to 70, all 258 (label,sign): 8.9e-16  (PARI least-squares fit residual: 4.4e-14)
+|Eis|^2 per (label,sign): max |PARI-free - PARI| = 6.7e-16;  |cusp|^2: 2.3e-17;  max mixed content (PARI-free) = 7.7e-32
+cusp components: PARI-free 24, PARI 24, identical: True;  max |Eis|^2 inside cusp comps = 7.8e-35; max |cusp|^2 inside Eis comps = 3.3e-32
+Cl^+ mod p2^3 p5 p7 oo1 oo2: 96 characters; non-sigma-invariant pure-type: 24; their (finite conductor exponents at p2,p5,p7): [((2, 1, 1), 24)]; types: [((0, 0), 12), ((1, 1), 12)]
+PARI cusp characters vs PARI-free ones via Fhat vectors (24 comps x 2 signs): every PARI character matches exactly one PARI-free sigma-orbit {chi, chi o sigma}: True; PARI sigma-partners (j -> 13j) map to the same orbit: True; 12 orbits <-> 12 orbits: True; max |Fhat_PARI - Fhat_PARIfree| = 6.1e-09.  (Theta data only see Fs = sigma-symmetrised F, so characters are determined up to chi <-> chi o sigma, as in the PARI fit.)
+PARI-free cusp coefficients: max ||Fhat| - 1/48| = 3.5e-18; phases*60 all integers: True
+component_split.json exact cusp coefficients (1/48)e(k/60) vs PARI-free values: max dev 2.0e-17
+dim (P-invariant): cusp rows 12, Eis rows 60, total 72
+T block-diagonal: max|T[cusp,Eis]| = 0.0e+00, max|T[Eis,cusp]| = 0.0e+00
+S-equivariance (coefficientwise, 1027 frequencies |Q|<=40, PARI-free lattice data): |sum_(c' Eis) S[c,c'] u_c'| (c cusp) = 9.0e-17; |sum_(c' cusp) S[c,c'] u_c'| (c Eis) = 3.4e-16

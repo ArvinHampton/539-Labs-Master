@@ -1,0 +1,48 @@
+
+== modulus (2 sqrt35) oo1 oo2: |Cl| = 96, Shintani cones at scale Mp = 70, 30240 lattice points coprime to 70
+  sum over classes of zeta(0,c) = 0   (must be 0: zeta_K(0) = 0)
+  denominators of zeta(0,c): [(70, 96)]
+  N(a) mod 140 classes per ray class: max 1 residues
+  L(0,chi) = 0 for all 72 characters that are not totally odd: True
+  L(0,chi) = L(0,chi o sigma) for all 96: True
+  totally odd, non-sigma-invariant, conductor p2^2 p5 p7 = (2 sqrt35): 12 characters
+    chi#62 (order 8): L(0) = (-12)*z12^0 + (-8)*z12^1 + (12)*z12^2 = -12.928203230276+6.392304845413j; in Z[zeta12]: True; equals claimed value ['A']
+    chi#63 (order 8): L(0) = (-12)*z12^0 + (-8)*z12^1 + (12)*z12^2 = -12.928203230276+6.392304845413j; in Z[zeta12]: True; equals claimed value ['A']
+    chi#66 (order 8): L(0) = (-12)*z12^0 + (-4)*z12^3 = -12.000000000000-4.000000000000j; in Z[zeta12]: True; equals claimed value ['Bbar']
+    chi#67 (order 8): L(0) = (-12)*z12^0 + (-4)*z12^3 = -12.000000000000-4.000000000000j; in Z[zeta12]: True; equals claimed value ['Bbar']
+    chi#70 (order 8): L(0) = (8)*z12^1 + (-12)*z12^2 + (-8)*z12^3 = 0.928203230276-14.392304845413j; in Z[zeta12]: True; equals claimed value ['C']
+    chi#71 (order 8): L(0) = (8)*z12^1 + (-12)*z12^2 + (-8)*z12^3 = 0.928203230276-14.392304845413j; in Z[zeta12]: True; equals claimed value ['C']
+    chi#86 (order 8): L(0) = (-12)*z12^0 + (8)*z12^1 + (12)*z12^2 = 0.928203230276+14.392304845413j; in Z[zeta12]: True; equals claimed value ['Cbar']
+    chi#87 (order 8): L(0) = (-12)*z12^0 + (8)*z12^1 + (12)*z12^2 = 0.928203230276+14.392304845413j; in Z[zeta12]: True; equals claimed value ['Cbar']
+    chi#90 (order 8): L(0) = (-12)*z12^0 + (4)*z12^3 = -12.000000000000+4.000000000000j; in Z[zeta12]: True; equals claimed value ['B']
+    chi#91 (order 8): L(0) = (-12)*z12^0 + (4)*z12^3 = -12.000000000000+4.000000000000j; in Z[zeta12]: True; equals claimed value ['B']
+    chi#94 (order 8): L(0) = (-8)*z12^1 + (-12)*z12^2 + (8)*z12^3 = -12.928203230276-6.392304845413j; in Z[zeta12]: True; equals claimed value ['Abar']
+    chi#95 (order 8): L(0) = (-8)*z12^1 + (-12)*z12^2 + (8)*z12^3 = -12.928203230276-6.392304845413j; in Z[zeta12]: True; equals claimed value ['Abar']
+  multiset of claimed labels hit: [('A', 2), ('Abar', 2), ('B', 2), ('Bbar', 2), ('C', 2), ('Cbar', 2)]
+  other totally odd characters (imprimitive / sigma-invariant), L_f(0): #2 cond(0, 0, 0) inv=True: 0.000000+0.000000j; #3 cond(0, 0, 0) inv=True: 0.000000+0.000000j; #6 cond(0, 0, 1) inv=True: 6.000000-3.464102j; #7 cond(0, 0, 1) inv=True: -0.857143+4.453845j; #10 cond(0, 0, 1) inv=True: 6.000000+3.464102j; #11 cond(0, 0, 1) inv=True: -0.857143-4.453845j; #26 cond(0, 1, 0) inv=True: -3.200000-1.600000j; #27 cond(0, 1, 0) inv=True: -3.200000+1.600000j; #30 cond(0, 1, 1) inv=True: -2.000000+4.535898j; #31 cond(0, 1, 1) inv=True: -2.000000-11.464102j; #34 cond(0, 1, 1) inv=True: -2.000000+11.464102j; #35 cond(0, 1, 1) inv=True: -2.000000-4.535898j
+  genus test sum_a psi(Na) |_(s=0) = (1-psi(7)) L_20(0,psi) L_140(0,psi chi_140) for all 8 psi mod 20: True; values 0.0000+0.0000j, -3.2000-1.6000j, 0.0000+0.0000j, -3.2000+1.6000j, 0.0000+0.0000j, 0.0000+0.0000j, 0.0000+0.0000j, 0.0000+0.0000j
+
+== modulus p2^3 p5 p7 oo1 oo2: |Cl| = 96, Shintani cones at scale Mp = 140, 120960 lattice points coprime to 70
+  sum over classes of zeta(0,c) = 0   (must be 0: zeta_K(0) = 0)
+  denominators of zeta(0,c): [(70, 96)]
+  N(a) mod 140 classes per ray class: max 1 residues
+  L(0,chi) = 0 for all 72 characters that are not totally odd: True
+  L(0,chi) = L(0,chi o sigma) for all 96: True
+  totally odd, non-sigma-invariant, conductor p2^2 p5 p7 = (2 sqrt35): 12 characters
+    chi#62 (order 8): L(0) = (-12)*z12^0 + (-8)*z12^1 + (12)*z12^2 = -12.928203230276+6.392304845413j; in Z[zeta12]: True; equals claimed value ['A']
+    chi#63 (order 8): L(0) = (-12)*z12^0 + (-8)*z12^1 + (12)*z12^2 = -12.928203230276+6.392304845413j; in Z[zeta12]: True; equals claimed value ['A']
+    chi#66 (order 8): L(0) = (-12)*z12^0 + (-4)*z12^3 = -12.000000000000-4.000000000000j; in Z[zeta12]: True; equals claimed value ['Bbar']
+    chi#67 (order 8): L(0) = (-12)*z12^0 + (-4)*z12^3 = -12.000000000000-4.000000000000j; in Z[zeta12]: True; equals claimed value ['Bbar']
+    chi#70 (order 8): L(0) = (8)*z12^1 + (-12)*z12^2 + (-8)*z12^3 = 0.928203230276-14.392304845413j; in Z[zeta12]: True; equals claimed value ['C']
+    chi#71 (order 8): L(0) = (8)*z12^1 + (-12)*z12^2 + (-8)*z12^3 = 0.928203230276-14.392304845413j; in Z[zeta12]: True; equals claimed value ['C']
+    chi#86 (order 8): L(0) = (-12)*z12^0 + (8)*z12^1 + (12)*z12^2 = 0.928203230276+14.392304845413j; in Z[zeta12]: True; equals claimed value ['Cbar']
+    chi#87 (order 8): L(0) = (-12)*z12^0 + (8)*z12^1 + (12)*z12^2 = 0.928203230276+14.392304845413j; in Z[zeta12]: True; equals claimed value ['Cbar']
+    chi#90 (order 8): L(0) = (-12)*z12^0 + (4)*z12^3 = -12.000000000000+4.000000000000j; in Z[zeta12]: True; equals claimed value ['B']
+    chi#91 (order 8): L(0) = (-12)*z12^0 + (4)*z12^3 = -12.000000000000+4.000000000000j; in Z[zeta12]: True; equals claimed value ['B']
+    chi#94 (order 8): L(0) = (-8)*z12^1 + (-12)*z12^2 + (8)*z12^3 = -12.928203230276-6.392304845413j; in Z[zeta12]: True; equals claimed value ['Abar']
+    chi#95 (order 8): L(0) = (-8)*z12^1 + (-12)*z12^2 + (8)*z12^3 = -12.928203230276-6.392304845413j; in Z[zeta12]: True; equals claimed value ['Abar']
+  multiset of claimed labels hit: [('A', 2), ('Abar', 2), ('B', 2), ('Bbar', 2), ('C', 2), ('Cbar', 2)]
+  other totally odd characters (imprimitive / sigma-invariant), L_f(0): #2 cond(0, 0, 0) inv=True: 0.000000+0.000000j; #3 cond(0, 0, 0) inv=True: 0.000000+0.000000j; #6 cond(0, 0, 1) inv=True: 6.000000-3.464102j; #7 cond(0, 0, 1) inv=True: -0.857143+4.453845j; #10 cond(0, 0, 1) inv=True: 6.000000+3.464102j; #11 cond(0, 0, 1) inv=True: -0.857143-4.453845j; #26 cond(0, 1, 0) inv=True: -3.200000-1.600000j; #27 cond(0, 1, 0) inv=True: -3.200000+1.600000j; #30 cond(0, 1, 1) inv=True: -2.000000+4.535898j; #31 cond(0, 1, 1) inv=True: -2.000000-11.464102j; #34 cond(0, 1, 1) inv=True: -2.000000+11.464102j; #35 cond(0, 1, 1) inv=True: -2.000000-4.535898j
+  genus test sum_a psi(Na) |_(s=0) = (1-psi(7)) L_20(0,psi) L_140(0,psi chi_140) for all 8 psi mod 20: True; values 0.0000+0.0000j, -3.2000-1.6000j, 0.0000+0.0000j, -3.2000+1.6000j, 0.0000+0.0000j, 0.0000+0.0000j, 0.0000+0.0000j, 0.0000+0.0000j
+
+Ray(3)/Mp=140 and Ray(2)/Mp=70 give the same multiset of the 12 L(0) values: True
