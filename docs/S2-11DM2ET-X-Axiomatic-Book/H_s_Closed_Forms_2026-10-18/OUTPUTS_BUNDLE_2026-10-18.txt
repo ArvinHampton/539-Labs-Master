@@ -1,0 +1,205 @@
+# OUTPUTS BUNDLE — H_s_Closed_Forms_2026-10-18 (2026-10-18)
+# The text outputs (json/log/txt/sha256) of this package, concatenated verbatim, one member per file.
+# Reports (.md) and scripts (.py/.sh) are stored as separate files in this folder. Binary files (pkl/npz/npy), __pycache__ and empty logs are excluded.
+# Reason for bundling: the push tool accepts at most 4 file attachments per commit; bundling keeps the commit count modest.
+# Member format: a line "===== BEGIN FILE <relative path> bytes=<n> sha256=<hex> =====", then exactly <n> bytes, then "\n===== END FILE <relative path> =====".
+# Extract (Python 3, run in this folder):
+#   import hashlib,os,re; d=open('OUTPUTS_BUNDLE_2026-10-18.txt','rb').read(); i=0
+#   for m in re.finditer(rb'===== BEGIN FILE (\S+) bytes=(\d+) sha256=([0-9a-f]+) =====\n', d):
+#       if m.start()<i: continue
+#       p,n,h=m.group(1).decode(),int(m.group(2)),m.group(3).decode(); b=d[m.end():m.end()+n]; i=m.end()+n
+#       assert hashlib.sha256(b).hexdigest()==h; os.makedirs(os.path.dirname(p) or '.',exist_ok=True); open(p,'wb').write(b)
+# Members: 9
+===== BEGIN FILE 00_PREREG_B.sha256 bytes=81 sha256=9caf04cfe43b2c03f02675880af311dfd59d7c03d67903e66c16c88fe109eb6f =====
+0a742c6a855292c815601b6afae560023faa2646dc0da54de7af0768a030ad81  00_PREREG_B.md
+
+===== END FILE 00_PREREG_B.sha256 =====
+===== BEGIN FILE C_assemble.txt bytes=4094 sha256=0f780305c810dc43b7e47a510ed834fe553cf64f35380f7d5c5577c0e5df3eff =====
+C = P_s - H_s, radial coefficients at x=0 (s>=5):
+  t^-1: acosh(s - 1)/(2*sqrt(s)*sqrt(s - 2))
+  t^-1/2: sqrt(pi)*(7*s**(7/2)/4 - 23*s**(5/2)/2 + 16*s**(3/2) + 7*sqrt(2)*s**3/2 - s**2*sqrt(14*s**2 - 92*s + 128)/2 - 53*sqrt(2)*s**2/2 + s*sqrt(14*s**2 - 92*s + 128) + 55*sqrt(2)*s - 32*sqrt(2))/(sqrt(s)*(7*s**3 - 60*s**2 + 156*s - 128))
+  t^0: (-3*s**(3/2)*sqrt(s - 2)*acosh(s - 1) + 6*sqrt(s)*sqrt(s - 2)*acosh(s - 1) + s**4 - s**3 - 12*s**2 + 28*s - 16)/(24*(s**3 - 6*s**2 + 12*s - 8))
+  t^1/2: sqrt(pi)*(-sqrt(2)*sqrt(s)*(s**5 - 10*s**4 + 40*s**3 - 80*s**2 + 80*s - 32)*(2*g**2*s**3*sqrt(7*s**2 - 46*s + 64) - 12*g**2*s**2*sqrt(7*s**2 - 46*s + 64) + 24*g**2*s*sqrt(7*s**2 - 46*s + 64) - 16*g**2*sqrt(7*s**2 - 46*s + 64) - 147*s**6 + s**5*sqrt(7*s**2 - 46*s + 64) + 2618*s**5 - 48*s**4*sqrt(7*s**2 - 46*s + 64) - 18444*s**4 + 372*s**3*sqrt(7*s**2 - 46*s + 64) + 64984*s**3 - 944*s**2*sqrt(7*s**2 - 46*s + 64) - 118816*s**2 + 768*s*sqrt(7*s**2 - 46*s + 64) + 104448*s - 32768) + (49*s**6 - 840*s**5 + 5784*s**4 - 20512*s**3 + 39696*s**2 - 39936*s + 16384)*(sqrt(2)*s**(9/2) - 4*sqrt(2)*s**(7/2) + 16*sqrt(2)*s**(3/2) - 16*sqrt(2)*sqrt(s) + s**6 - 10*s**5 + 36*s**4 - 56*s**3 + 32*s**2))/(48*(s**5 - 10*s**4 + 40*s**3 - 80*s**2 + 80*s - 32)*(49*s**6 - 840*s**5 + 5784*s**4 - 20512*s**3 + 39696*s**2 - 39936*s + 16384))
+  t^1: (45*s**(11/2)*sqrt(s - 2)*acosh(s - 1) - 360*s**(9/2)*sqrt(s - 2)*acosh(s - 1) + 1080*s**(7/2)*sqrt(s - 2)*acosh(s - 1) - 1440*s**(5/2)*sqrt(s - 2)*acosh(s - 1) + 720*s**(3/2)*sqrt(s - 2)*acosh(s - 1) - 2*s**10 + 34*s**9 - 205*s**8 + 415*s**7 + 902*s**6 - 6440*s**5 + 13472*s**4 - 11600*s**3 - 160*s**2 + 6656*s - 3072)/(2880*(s**7 - 14*s**6 + 84*s**5 - 280*s**4 + 560*s**3 - 672*s**2 + 448*s - 128))
+Structural identities:
+  [PASS] C t^-1 = Res/2 = P t^-1
+  [PASS] C t^0 = (1+E_0)/2 = P t^0
+  [PASS] C t^1 = E_1/2 = P t^1
+[PASS] angular integrals ANG1, ANG3: closed form vs 30-digit quadrature at 16 values of s: mismatches 0
+
+Table (numerical values of the closed forms):
+ s  g | H t^-1/2      H t^1/2     | C t^-1        C t^-1/2      C t^0         C t^1/2       C t^1
+ 5  3 | +0.000000000  +0.000000000  +0.266388580  +0.551689397  +0.389004758  +0.193394178  +0.052290675
+ 6  2 | -0.282088553  -0.348867919  +0.233970328  +0.818842908  +0.433094461  +0.578993386  +0.028169789
+ 7  1 | -0.303525413  -0.395940835  +0.209419820  +0.829142617  +0.476703063  +0.662805795  -0.016756369
+ 8 24 | -0.295408975  +0.164116097  +0.190086499  +0.812374682  +0.519971167  +0.139498683  -0.086661861
+ 9  1 | -0.281893108  -0.453221136  +0.174409147  +0.791928792  +0.562987536  +0.793596367  -0.185718235
+10  2 | -0.268103502  -0.477605476  +0.161403353  +0.772453739  +0.605811452  +0.854751364  -0.318095539
+11  3 | -0.255311940  -0.500530945  +0.150415107  +0.754907457  +0.648484273  +0.914457001  -0.487962875
+12  4 | -0.243768668  -0.522316313  +0.140991541  +0.739324760  +0.691035871  +0.973031281  -0.699488714
+13  1 | -0.233426150  -0.549165484  +0.132808326  +0.725505079  +0.733488449  +1.036677357  -0.956841097
+14  6 | -0.224156206  -0.563171326  +0.125626611  +0.713208389  +0.775858905  +1.087487393  -1.264187757
+15  1 | -0.215819988  -0.591105281  +0.119266302  +0.702212113  +0.818160361  +1.152232189  -1.625696206
+16  8 | -0.208290062  -0.601130283  +0.113588848  +0.692324839  +0.860403186  +1.199074104  -2.045533789
+17  3 | -0.201455976  -0.629076812  +0.108485778  +0.683386346  +0.902595696  +1.263843098  -2.527867724
+18  2 | -0.195224105  -0.648436740  +0.103870873  +0.675263690  +0.944744650  +1.320030582  -3.076865133
+19  1 | -0.189515705  -0.666897291  +0.099674672  +0.667846634  +0.986855606  +1.375323367  -3.696693063
+20 12 | -0.184264619  -0.670477846  +0.095840544  +0.661043490  +1.028933182  +1.415740466  -4.391518498
+25  1 | -0.163190334  -0.766397760  +0.080711065  +0.633937018  +1.238937211  +1.695897272  -9.136449802
+30  2 | -0.147930295  -0.840114475  +0.070044166  +0.614522476  +1.448500074  +1.953920807  -16.381346736
+41  3 | -0.125299598  -0.983043817  +0.054790504  +0.586117987  +1.908676855  +2.502486522  -43.686717151
+
+===== END FILE C_assemble.txt =====
+===== BEGIN FILE H_closed.txt bytes=1306 sha256=f6e6eebd99c57f206d72077733970eb57b0ebeaea5d1005a2fbd2af8cf5a45cd =====
+Generic sums: Sx_p = Sy_p = m^{1-p} B_p (p>=2), 0 (p=1) [distribution relation; averaged endpoint]; Sxy12 = Sxy21 = 0 [j -> m-j symmetry: B1 odd, B2 even about 1/2]
+
+H_s closed forms (s >= 5; g = gcd(24, s-8)):
+  t^-1: 0
+  t^-1/2: sqrt(2)*sqrt(pi)*sqrt(s)*(s - sqrt(7*s**2 - 46*s + 64) - 2)/(2*(s - 2)*sqrt(7*s**2 - 46*s + 64))
+  t^0: 0
+  t^1/2: sqrt(2)*sqrt(pi)*sqrt(s)*(2*g**2*s**3*sqrt(7*s**2 - 46*s + 64) - 12*g**2*s**2*sqrt(7*s**2 - 46*s + 64) + 24*g**2*s*sqrt(7*s**2 - 46*s + 64) - 16*g**2*sqrt(7*s**2 - 46*s + 64) - 147*s**6 + s**5*sqrt(7*s**2 - 46*s + 64) + 2618*s**5 - 48*s**4*sqrt(7*s**2 - 46*s + 64) - 18444*s**4 + 372*s**3*sqrt(7*s**2 - 46*s + 64) + 64984*s**3 - 944*s**2*sqrt(7*s**2 - 46*s + 64) - 118816*s**2 + 768*s*sqrt(7*s**2 - 46*s + 64) + 104448*s - 32768)/(48*(49*s**6 - 840*s**5 + 5784*s**4 - 20512*s**3 + 39696*s**2 - 39936*s + 16384))
+  t^1: 0
+[PASS] H t^-1 = 0 (Lemma 2)
+[PASS] H t^0 = 0
+[PASS] H t^1 = 0
+  g-dependence of t^-1/2: True (False means depends on g)
+  g-dependence of t^1/2: d/dg = sqrt(2)*sqrt(pi)*g*sqrt(s)*sqrt(7*s**2 - 46*s + 64)*(s**3 - 6*s**2 + 12*s - 8)/(12*(49*s**6 - 840*s**5 + 5784*s**4 - 20512*s**3 + 39696*s**2 - 39936*s + 16384))
+[PASS] exact per-s Bernoulli sums (s=5..60, 99, 100, 151, 223, 300) equal the generic values for all sums used: mismatches []
+
+===== END FILE H_closed.txt =====
+===== BEGIN FILE H_closed_simplified.txt bytes=691 sha256=95cd444e016530239da99c9bc408b29f5a9644ccaf7aabe434b321d01e383777 =====
+factor 49s^6-...: (s - 2)**4*(7*s - 32)**2
+rational-part numerator factor: -(s - 4)*(s - 2)**2*(3*s - 2)*(7*s - 32)**2
+sqrt-part numerator factor (coefficient of sqrt(Delta)): (s - 2)**2*(2*g**2*s - 4*g**2 + s**3 - 44*s**2 + 192*s)
+so H_{1/2} = sqrt(2 pi s) * [ P0 + P1*sqrt(Delta) ] / 48*(s - 2)**4*(7*s - 32)**2
+H_{1/2} = sqrt(2 pi s) * (  -(s - 4)*(3*s - 2)/(48*(s - 2)**2)  +  (2*g**2*s - 4*g**2 + s**3 - 44*s**2 + 192*s)/(48*(s - 2)**2*(7*s - 32)**2) * sqrt((s-2)(7s-32)) )
+7 -0.3959408352148066 -0.395940835214807  H_-1/2: -0.30352541272067274
+8 0.1641160973060663 0.164116097306066  H_-1/2: -0.29540897515091935
+6 -0.34886791862991606 -0.348867918629916  H_-1/2: -0.28208855282094153
+
+===== END FILE H_closed_simplified.txt =====
+===== BEGIN FILE H_numeric.txt bytes=1965 sha256=c6feb223247d8b77df15dc948bd7a52867a15166cb880d53e1a1bdf9465f7c6c =====
+s=5 g=3: predicted h(-1/2)=0.000000000000, h(1/2)=0.000000000000; (H - pred)/t^(3/2) at t=[0.02, 0.01, 0.005, 0.0025, 0.00125]: 0.0000, 0.0000, -0.0000, -0.0000, -0.0000
+s=6 g=2: predicted h(-1/2)=-0.282088552821, h(1/2)=-0.348867918630; (H - pred)/t^(3/2) at t=[0.02, 0.01, 0.005, 0.0025, 0.00125]: -0.1668, -0.1666, -0.1665, -0.1664, -0.1664
+s=7 g=1: predicted h(-1/2)=-0.303525412721, h(1/2)=-0.395940835215; (H - pred)/t^(3/2) at t=[0.02, 0.01, 0.005, 0.0025, 0.00125]: 12.3563, 8.2451, 0.9401, -0.2007, -0.2065
+s=8 g=24: predicted h(-1/2)=-0.295408975151, h(1/2)=0.164116097306; (H - pred)/t^(3/2) at t=[0.02, 0.01, 0.005, 0.0025, 0.00125]: -0.9238, -0.9399, -0.9485, -0.9529, -0.9551
+s=9 g=1: predicted h(-1/2)=-0.281893107888, h(1/2)=-0.453221136002; (H - pred)/t^(3/2) at t=[0.02, 0.01, 0.005, 0.0025, 0.00125]: 26.8403, 44.7625, 52.9641, 25.1404, 1.3957
+s=11 g=3: predicted h(-1/2)=-0.255311939569, h(1/2)=-0.500530945419; (H - pred)/t^(3/2) at t=[0.02, 0.01, 0.005, 0.0025, 0.00125]: 15.0081, 7.2467, 0.1489, -0.3880, -0.3886
+s=13 g=1: predicted h(-1/2)=-0.233426149908, h(1/2)=-0.549165483804; (H - pred)/t^(3/2) at t=[0.02, 0.01, 0.005, 0.0025, 0.00125]: 9.8234, 8.6394, 24.3270, 57.4666, 87.7137
+s=20 g=12: predicted h(-1/2)=-0.184264618569, h(1/2)=-0.670477846183; (H - pred)/t^(3/2) at t=[0.02, 0.01, 0.005, 0.0025, 0.00125]: 5.8247, -0.2483, -0.9171, -0.9173, -0.9165
+s=25 g=1: predicted h(-1/2)=-0.163190334017, h(1/2)=-0.766397760303; (H - pred)/t^(3/2) at t=[0.02, 0.01, 0.005, 0.0025, 0.00125]: 6.5061, -5.7252, -4.7327, 29.6143, 62.6305
+H_5 as a q-series through q^2000: number of nonzero coefficients = 0  (=> H_5 == 0 exactly on this range)
+H_7 first terms: [(Fraction(0, 1), Fraction(-1, 2)), (Fraction(8, 1), Fraction(-1, 1)), (Fraction(15, 1), Fraction(1, 1)), (Fraction(18, 1), Fraction(-1, 1)), (Fraction(22, 1), Fraction(-1, 1)), (Fraction(25, 1), Fraction(1, 1)), (Fraction(30, 1), Fraction(-1, 1)), (Fraction(36, 1), Fraction(1, 1))]
+
+===== END FILE H_numeric.txt =====
+===== BEGIN FILE H_numeric_small_t.txt bytes=448 sha256=c69974eb7d1a84d23f86bde45a3b6f5b405d261f176eff7bab5c90f68ef48ef5 =====
+s=7 g=1 m=21: (H - pred)/t^(3/2): t=0.0004: -0.2065, t=0.0002: -0.2065, t=0.0001: -0.2065
+s=9 g=1 m=27: (H - pred)/t^(3/2): t=0.0002: -0.2927, t=0.0001: -0.2927, t=5e-05: -0.2927
+s=13 g=1 m=39: (H - pred)/t^(3/2): t=0.0001: -0.4928, t=5e-05: -0.4928, t=2.5e-05: -0.4928
+s=25 g=1 m=75: (H - pred)/t^(3/2): t=2e-05: -2.9156, t=1e-05: -1.2701, t=5e-06: -1.2701
+s=41 g=3 m=41: (H - pred)/t^(3/2): t=1e-05: -2.6281, t=5e-06: -2.6281, t=2.5e-06: -2.6280
+
+===== END FILE H_numeric_small_t.txt =====
+===== BEGIN FILE H_stable.txt bytes=3281 sha256=5680500a45c68fd0993c095e0bbbe9e4b8675e6fcddb5443e12799e2484e51b1 =====
+s=9: first exponent where H_s != Hcal(q,q^s): 52; predicted 52; agree True
+s=10: first exponent where H_s != Hcal(q,q^s): 56; predicted 56; agree True
+s=11: first exponent where H_s != Hcal(q,q^s): 60; predicted 60; agree True
+s=12: first exponent where H_s != Hcal(q,q^s): 64; predicted 64; agree True
+s=13: first exponent where H_s != Hcal(q,q^s): 68; predicted 68; agree True
+s=14: first exponent where H_s != Hcal(q,q^s): 72; predicted 72; agree True
+s=15: first exponent where H_s != Hcal(q,q^s): 76; predicted 76; agree True
+s=16: first exponent where H_s != Hcal(q,q^s): 80; predicted 80; agree True
+s=17: first exponent where H_s != Hcal(q,q^s): 84; predicted 84; agree True
+s=18: first exponent where H_s != Hcal(q,q^s): 88; predicted 88; agree True
+s=19: first exponent where H_s != Hcal(q,q^s): 92; predicted 92; agree True
+s=20: first exponent where H_s != Hcal(q,q^s): 96; predicted 96; agree True
+s=21: first exponent where H_s != Hcal(q,q^s): 100; predicted 100; agree True
+s=22: first exponent where H_s != Hcal(q,q^s): 104; predicted 104; agree True
+s=23: first exponent where H_s != Hcal(q,q^s): 108; predicted 108; agree True
+s=24: first exponent where H_s != Hcal(q,q^s): 112; predicted 112; agree True
+s=25: first exponent where H_s != Hcal(q,q^s): 116; predicted 116; agree True
+s=26: first exponent where H_s != Hcal(q,q^s): 120; predicted 120; agree True
+s=27: first exponent where H_s != Hcal(q,q^s): 124; predicted 124; agree True
+s=28: first exponent where H_s != Hcal(q,q^s): 128; predicted 128; agree True
+s=29: first exponent where H_s != Hcal(q,q^s): 132; predicted 132; agree True
+s=30: first exponent where H_s != Hcal(q,q^s): 136; predicted 136; agree True
+s=31: first exponent where H_s != Hcal(q,q^s): 140; predicted 140; agree True
+s=32: first exponent where H_s != Hcal(q,q^s): 144; predicted 144; agree True
+s=33: first exponent where H_s != Hcal(q,q^s): 544; predicted 544; agree True
+s=34: first exponent where H_s != Hcal(q,q^s): 559; predicted 559; agree True
+s=35: first exponent where H_s != Hcal(q,q^s): 574; predicted 574; agree True
+s=36: first exponent where H_s != Hcal(q,q^s): 589; predicted 589; agree True
+s=37: first exponent where H_s != Hcal(q,q^s): 604; predicted 604; agree True
+s=38: first exponent where H_s != Hcal(q,q^s): 619; predicted 619; agree True
+s=39: first exponent where H_s != Hcal(q,q^s): 634; predicted 634; agree True
+s=40: first exponent where H_s != Hcal(q,q^s): 649; predicted 649; agree True
+s=41: first exponent where H_s != Hcal(q,q^s): 664; predicted 664; agree True
+s=50: first exponent where H_s != Hcal(q,q^s): 799; predicted 799; agree True
+s=64: first exponent where H_s != Hcal(q,q^s): 2212; predicted 2212; agree True
+s=80: first exponent where H_s != Hcal(q,q^s): 2740; predicted 2740; agree True
+s=100: first exponent where H_s != Hcal(q,q^s): None; predicted 5969; agree True
+(s = 5..8 excluded: for s < 8 the cone admits k <= 0 rows and the stable form is not the right comparison; the exact cone closed form H_closed covers them.)
+first terms of Hcal(q, y=q^s): [(0, Fraction(-1, 2)), (1001, Fraction(-1, 1)), (2001, Fraction(1, 1)), (2004, Fraction(-1, 1)), (3001, Fraction(-1, 1)), (3004, Fraction(1, 1)), (3009, Fraction(-1, 1)), (4009, Fraction(1, 1))]   (s=1000: exponents a*s + b)
+
+===== END FILE H_stable.txt =====
+===== BEGIN FILE H_values.txt bytes=522 sha256=35487198b954272dd330a472af68035e6d725c3d9a80e2e0a15c9e26ab3104ad =====
+s=5 g=3 m=5: t^-1: 0; t^-1/2: 0; t^0: 0; t^1/2: 0; t^1: 0
+s=6 g=2 m=9: t^-1: 0; t^-1/2: -0.282088552820942; t^0: 0; t^1/2: -0.348867918629916; t^1: 0
+s=7 g=1 m=21: t^-1: 0; t^-1/2: -0.303525412720673; t^0: 0; t^1/2: -0.395940835214807; t^1: 0
+s=8 g=24 m=1: t^-1: 0; t^-1/2: -0.295408975150919; t^0: 0; t^1/2: 0.164116097306066; t^1: 0
+s=9 g=1 m=27: t^-1: 0; t^-1/2: -0.281893107888273; t^0: 0; t^1/2: -0.453221136002223; t^1: 0
+s=10 g=2 m=15: t^-1: 0; t^-1/2: -0.268103502063373; t^0: 0; t^1/2: -0.477605476458899; t^1: 0
+
+===== END FILE H_values.txt =====
+===== BEGIN FILE H_zwegers.txt bytes=7529 sha256=6f87aac8e2542b6a2937952ee91dd0f4dfc03454020431eab7d4ec1271590b42 =====
+  M: [[2, s], [s, s]]
+  det M: -s*(s - 2)
+  a = M^{-1}(0,s/2): [s/(2*(s - 2)), -1/(s - 2)]
+  Q(a) = -c0: -s/(4*(s - 2))
+  Q(c1): -(s - 2)/2
+  Q(c2): -(7*s - 32)/2
+  B(c1,c2): -4*(s - 2)
+  B(c1,a): s/2
+  B(c2,a): s/2
+  B(c1,u1): 0
+  B(c2,u2): 0
+  Q(u1): s/2
+  g^2 Q(u2/g) = Q(u2): s*(s - 2)*(7*s - 32)/2
+  4 Q(c1) Q(c2): (s - 2)*(7*s - 32)
+  Delta = 7s^2-46s+64: (s - 2)*(7*s - 32)
+  check 4Q(c1)Q(c2) == Delta: True
+  det[c1,u1]: -1
+  det[c2,u2]/g: 32 - 7*s  (divide by g)
+  c1-split: nu = x c1 + y u1 with x = -(n+a1), y = k + n + a1 + a2; a1 + a2: 1/2
+  shadow c1: ell = B(c1,nu) in (s-2)(Z + s/(2(s-2))), ell^2/(-4Q(c1)): ell^2/(2(s-2))
+  shadow c2: ell = B(c2,nu) in gZ + s/2, ell^2/(-4Q(c2)): ell^2/(2(7s-32))
+s=5: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 0; first: []
+s=6: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 95; first: [(0, Fraction(-1, 2)), (7, Fraction(-1, 1)), (13, Fraction(1, 1)), (16, Fraction(-1, 1)), (19, Fraction(-1, 1)), (22, Fraction(1, 1))]
+s=7: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 95; first: [(0, Fraction(-1, 2)), (8, Fraction(-1, 1)), (15, Fraction(1, 1)), (18, Fraction(-1, 1)), (22, Fraction(-1, 1)), (25, Fraction(1, 1))]
+s=8: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 80; first: [(0, Fraction(-1, 2)), (9, Fraction(-1, 1)), (17, Fraction(1, 1)), (20, Fraction(-1, 1)), (25, Fraction(-1, 1)), (28, Fraction(1, 1))]
+s=9: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 86; first: [(0, Fraction(-1, 2)), (10, Fraction(-1, 1)), (19, Fraction(1, 1)), (22, Fraction(-1, 1)), (28, Fraction(-1, 1)), (31, Fraction(1, 1))]
+s=10: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 84; first: [(0, Fraction(-1, 2)), (11, Fraction(-1, 1)), (21, Fraction(1, 1)), (24, Fraction(-1, 1)), (31, Fraction(-1, 1)), (34, Fraction(1, 1))]
+s=11: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 80; first: [(0, Fraction(-1, 2)), (12, Fraction(-1, 1)), (23, Fraction(1, 1)), (26, Fraction(-1, 1)), (34, Fraction(-1, 1)), (37, Fraction(1, 1))]
+s=12: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 60; first: [(0, Fraction(-1, 2)), (13, Fraction(-1, 1)), (25, Fraction(1, 1)), (28, Fraction(-1, 1)), (37, Fraction(-1, 1)), (40, Fraction(1, 1))]
+s=13: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 66; first: [(0, Fraction(-1, 2)), (14, Fraction(-1, 1)), (27, Fraction(1, 1)), (30, Fraction(-1, 1)), (40, Fraction(-1, 1)), (43, Fraction(1, 1))]
+s=14: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 63; first: [(0, Fraction(-1, 2)), (15, Fraction(-1, 1)), (29, Fraction(1, 1)), (32, Fraction(-1, 1)), (43, Fraction(-1, 1)), (46, Fraction(1, 1))]
+s=15: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 46; first: [(0, Fraction(-1, 2)), (16, Fraction(-1, 1)), (31, Fraction(1, 1)), (34, Fraction(-1, 1)), (46, Fraction(-1, 1)), (49, Fraction(1, 1))]
+s=16: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 44; first: [(0, Fraction(-1, 2)), (17, Fraction(-1, 1)), (33, Fraction(1, 1)), (36, Fraction(-1, 1)), (49, Fraction(-1, 1)), (52, Fraction(1, 1))]
+s=17: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 49; first: [(0, Fraction(-1, 2)), (18, Fraction(-1, 1)), (35, Fraction(1, 1)), (38, Fraction(-1, 1)), (52, Fraction(-1, 1)), (55, Fraction(1, 1))]
+s=18: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 44; first: [(0, Fraction(-1, 2)), (19, Fraction(-1, 1)), (37, Fraction(1, 1)), (40, Fraction(-1, 1)), (55, Fraction(-1, 1)), (58, Fraction(1, 1))]
+s=19: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 44; first: [(0, Fraction(-1, 2)), (20, Fraction(-1, 1)), (39, Fraction(1, 1)), (42, Fraction(-1, 1)), (58, Fraction(-1, 1)), (61, Fraction(1, 1))]
+s=20: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 40; first: [(0, Fraction(-1, 2)), (21, Fraction(-1, 1)), (41, Fraction(1, 1)), (44, Fraction(-1, 1)), (61, Fraction(-1, 1)), (64, Fraction(1, 1))]
+s=21: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 32; first: [(0, Fraction(-1, 2)), (22, Fraction(-1, 1)), (43, Fraction(1, 1)), (46, Fraction(-1, 1)), (64, Fraction(-1, 1)), (67, Fraction(1, 1))]
+s=22: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 34; first: [(0, Fraction(-1, 2)), (23, Fraction(-1, 1)), (45, Fraction(1, 1)), (48, Fraction(-1, 1)), (67, Fraction(-1, 1)), (70, Fraction(1, 1))]
+s=23: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 33; first: [(0, Fraction(-1, 2)), (24, Fraction(-1, 1)), (47, Fraction(1, 1)), (50, Fraction(-1, 1)), (70, Fraction(-1, 1)), (73, Fraction(1, 1))]
+s=24: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 31; first: [(0, Fraction(-1, 2)), (25, Fraction(-1, 1)), (49, Fraction(1, 1)), (52, Fraction(-1, 1)), (73, Fraction(-1, 1)), (76, Fraction(1, 1))]
+s=25: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 31; first: [(0, Fraction(-1, 2)), (26, Fraction(-1, 1)), (51, Fraction(1, 1)), (54, Fraction(-1, 1)), (76, Fraction(-1, 1)), (79, Fraction(1, 1))]
+s=26: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 30; first: [(0, Fraction(-1, 2)), (27, Fraction(-1, 1)), (53, Fraction(1, 1)), (56, Fraction(-1, 1)), (79, Fraction(-1, 1)), (82, Fraction(1, 1))]
+s=27: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 28; first: [(0, Fraction(-1, 2)), (28, Fraction(-1, 1)), (55, Fraction(1, 1)), (58, Fraction(-1, 1)), (82, Fraction(-1, 1)), (85, Fraction(1, 1))]
+s=28: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 28; first: [(0, Fraction(-1, 2)), (29, Fraction(-1, 1)), (57, Fraction(1, 1)), (60, Fraction(-1, 1)), (85, Fraction(-1, 1)), (88, Fraction(1, 1))]
+s=29: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 24; first: [(0, Fraction(-1, 2)), (30, Fraction(-1, 1)), (59, Fraction(1, 1)), (62, Fraction(-1, 1)), (88, Fraction(-1, 1)), (91, Fraction(1, 1))]
+s=30: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 24; first: [(0, Fraction(-1, 2)), (31, Fraction(-1, 1)), (61, Fraction(1, 1)), (64, Fraction(-1, 1)), (91, Fraction(-1, 1)), (94, Fraction(1, 1))]
+s=41: closed-form == Master to q^400: True;  H = (1/2)q^c0 theta_hol^Zw + Delta_lines: True;  #nonzero coeffs 17; first: [(0, Fraction(-1, 2)), (42, Fraction(-1, 1)), (83, Fraction(1, 1)), (86, Fraction(-1, 1)), (124, Fraction(-1, 1)), (127, Fraction(1, 1))]
+ALL PASS: True
+
+===== END FILE H_zwegers.txt =====
