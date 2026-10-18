@@ -1,0 +1,3 @@
+max_n<=60000 |A(n) - Eisenstein formula| = 7.35e-16
+max_n<=60000 |B(n) - Eisenstein formula| = 1.10e-15
+sum A = 2512, sum B = 2507
