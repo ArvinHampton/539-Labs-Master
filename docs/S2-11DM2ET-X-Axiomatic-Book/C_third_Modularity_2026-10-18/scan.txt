@@ -1,0 +1,1 @@
+rationals h/m in [0,1), m <= 40: 490; with s_C = 0: 229 (exactly 2|m or 5|m, Theorem G); with h_C = 0: 0; with both (finite radial limit): 0 []
