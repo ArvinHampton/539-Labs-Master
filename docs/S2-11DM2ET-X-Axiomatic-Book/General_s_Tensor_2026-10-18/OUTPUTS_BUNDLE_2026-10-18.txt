@@ -1,0 +1,1662 @@
+# OUTPUTS BUNDLE — General_s_Tensor_2026-10-18 (2026-10-18)
+# The text outputs (json/log/txt/sha256) of this package, concatenated verbatim, one member per file.
+# Reports (.md) and scripts (.py/.sh) are stored as separate files in this folder. Binary files (pkl/npz/npy), __pycache__ and empty logs are excluded.
+# Reason for bundling: the push tool accepts at most 4 file attachments per commit; bundling keeps the commit count modest.
+# Member format: a line "===== BEGIN FILE <relative path> bytes=<n> sha256=<hex> =====", then exactly <n> bytes, then "\n===== END FILE <relative path> =====".
+# Extract (Python 3, run in this folder):
+#   import hashlib,os,re; d=open('OUTPUTS_BUNDLE_2026-10-18.txt','rb').read(); i=0
+#   for m in re.finditer(rb'===== BEGIN FILE (\S+) bytes=(\d+) sha256=([0-9a-f]+) =====\n', d):
+#       if m.start()<i: continue
+#       p,n,h=m.group(1).decode(),int(m.group(2)),m.group(3).decode(); b=d[m.end():m.end()+n]; i=m.end()+n
+#       assert hashlib.sha256(b).hexdigest()==h; os.makedirs(os.path.dirname(p) or '.',exist_ok=True); open(p,'wb').write(b)
+# Members: 4
+===== BEGIN FILE gen_factor.log bytes=8497 sha256=f74204dd7f41a14252d2086783a2507cac72bf317da68604078ddfa32a81d024 =====
+{"s": 5, "n": 15, "N": 60, "T_perm_2adic_only": true, "T_exponent_kT_over_n": [14], "T2": {"(0, 0)": ["(0, 1)", "0"], "(0, 1)": ["(0, 0)", "0"], "(1, 0)": ["(1, 0)", "1/4"], "(1, 1)": ["(1, 1)", "1/4"]}, "S_2adic_support": {"(0, 0)": ["(0, 0)"], "(0, 1)": ["(1, 0)"], "(1, 0)": ["(0, 1)"], "(1, 1)": ["(1, 1)"]}, "S_exponent_cS_over_n": [13], "S_full_check": true, "S2": {"((0, 0), (0, 0))": "0", "((0, 1), (1, 0))": "0", "((1, 0), (0, 1))": "0", "((1, 1), (1, 1))": "1/2"}, "neg": {"x_multiplier_mod_n": 14, "exact": true, "phase_x_independent": true, "2adic": {"(0, 0)": ["(0, 0)", "0"], "(0, 1)": ["(0, 1)", "0"], "(1, 0)": ["(1, 0)", "0"], "(1, 1)": ["(1, 1)", "0"]}, "local_signs": {"3^1": 2, "5^1": 4}}, "gamma": {"x_multiplier_mod_n": 4, "exact": true, "phase_x_independent": true, "2adic": {"(0, 0)": ["(0, 0)", "0"], "(0, 1)": ["(0, 1)", "0"], "(1, 0)": ["(1, 0)", "0"], "(1, 1)": ["(1, 1)", "1/2"]}, "local_signs": {"3^1": 1, "5^1": 4}}, "c_local": {"3^1": {"kT": 2, "cS": 1}, "5^1": {"kT": 4, "cS": 3}}, "matches_symbolic": true}
+{"s": 7, "n": 35, "N": 140, "T_perm_2adic_only": true, "T_exponent_kT_over_n": [34], "T2": {"(0, 0)": ["(0, 1)", "0"], "(0, 1)": ["(0, 0)", "0"], "(1, 0)": ["(1, 0)", "1/4"], "(1, 1)": ["(1, 1)", "1/4"]}, "S_2adic_support": {"(0, 0)": ["(0, 0)"], "(0, 1)": ["(1, 0)"], "(1, 0)": ["(0, 1)"], "(1, 1)": ["(1, 1)"]}, "S_exponent_cS_over_n": [33], "S_full_check": true, "S2": {"((0, 0), (0, 0))": "0", "((0, 1), (1, 0))": "0", "((1, 0), (0, 1))": "0", "((1, 1), (1, 1))": "1/2"}, "neg": {"x_multiplier_mod_n": 34, "exact": true, "phase_x_independent": true, "2adic": {"(0, 0)": ["(0, 0)", "0"], "(0, 1)": ["(0, 1)", "0"], "(1, 0)": ["(1, 0)", "0"], "(1, 1)": ["(1, 1)", "0"]}, "local_signs": {"5^1": 4, "7^1": 6}}, "gamma": {"x_multiplier_mod_n": 6, "exact": true, "phase_x_independent": true, "2adic": {"(0, 0)": ["(0, 0)", "0"], "(0, 1)": ["(0, 1)", "0"], "(1, 0)": ["(1, 0)", "0"], "(1, 1)": ["(1, 1)", "1/2"]}, "local_signs": {"5^1": 1, "7^1": 6}}, "c_local": {"5^1": {"kT": 4, "cS": 3}, "7^1": {"kT": 6, "cS": 5}}, "matches_symbolic": true}
+{"s": 9, "n": 63, "N": 252, "T_perm_2adic_only": true, "T_exponent_kT_over_n": [62], "T2": {"(0, 0)": ["(0, 1)", "0"], "(0, 1)": ["(0, 0)", "0"], "(1, 0)": ["(1, 0)", "1/4"], "(1, 1)": ["(1, 1)", "1/4"]}, "S_2adic_support": {"(0, 0)": ["(0, 0)"], "(0, 1)": ["(1, 0)"], "(1, 0)": ["(0, 1)"], "(1, 1)": ["(1, 1)"]}, "S_exponent_cS_over_n": [61], "S_full_check": true, "S2": {"((0, 0), (0, 0))": "0", "((0, 1), (1, 0))": "0", "((1, 0), (0, 1))": "0", "((1, 1), (1, 1))": "1/2"}, "neg": {"x_multiplier_mod_n": 62, "exact": true, "phase_x_independent": true, "2adic": {"(0, 0)": ["(0, 0)", "0"], "(0, 1)": ["(0, 1)", "0"], "(1, 0)": ["(1, 0)", "0"], "(1, 1)": ["(1, 1)", "0"]}, "local_signs": {"3^2": 8, "7^1": 6}}, "gamma": {"x_multiplier_mod_n": 8, "exact": true, "phase_x_independent": true, "2adic": {"(0, 0)": ["(0, 0)", "0"], "(0, 1)": ["(0, 1)", "0"], "(1, 0)": ["(1, 0)", "0"], "(1, 1)": ["(1, 1)", "1/2"]}, "local_signs": {"3^2": 8, "7^1": 1}}, "c_local": {"3^2": {"kT": 8, "cS": 7}, "7^1": {"kT": 6, "cS": 5}}, "matches_symbolic": true}
+{"s": 11, "n": 99, "N": 396, "T_perm_2adic_only": true, "T_exponent_kT_over_n": [98], "T2": {"(0, 0)": ["(0, 1)", "0"], "(0, 1)": ["(0, 0)", "0"], "(1, 0)": ["(1, 0)", "1/4"], "(1, 1)": ["(1, 1)", "1/4"]}, "S_2adic_support": {"(0, 0)": ["(0, 0)"], "(0, 1)": ["(1, 0)"], "(1, 0)": ["(0, 1)"], "(1, 1)": ["(1, 1)"]}, "S_exponent_cS_over_n": [97], "S_full_check": true, "S2": {"((0, 0), (0, 0))": "0", "((0, 1), (1, 0))": "0", "((1, 0), (0, 1))": "0", "((1, 1), (1, 1))": "1/2"}, "neg": {"x_multiplier_mod_n": 98, "exact": true, "phase_x_independent": true, "2adic": {"(0, 0)": ["(0, 0)", "0"], "(0, 1)": ["(0, 1)", "0"], "(1, 0)": ["(1, 0)", "0"], "(1, 1)": ["(1, 1)", "0"]}, "local_signs": {"3^2": 8, "11^1": 10}}, "gamma": {"x_multiplier_mod_n": 10, "exact": true, "phase_x_independent": true, "2adic": {"(0, 0)": ["(0, 0)", "0"], "(0, 1)": ["(0, 1)", "0"], "(1, 0)": ["(1, 0)", "0"], "(1, 1)": ["(1, 1)", "1/2"]}, "local_signs": {"3^2": 1, "11^1": 10}}, "c_local": {"3^2": {"kT": 8, "cS": 7}, "11^1": {"kT": 10, "cS": 9}}, "matches_symbolic": true}
+{"s": 13, "n": 143, "N": 572, "T_perm_2adic_only": true, "T_exponent_kT_over_n": [142], "T2": {"(0, 0)": ["(0, 1)", "0"], "(0, 1)": ["(0, 0)", "0"], "(1, 0)": ["(1, 0)", "1/4"], "(1, 1)": ["(1, 1)", "1/4"]}, "S_2adic_support": {"(0, 0)": ["(0, 0)"], "(0, 1)": ["(1, 0)"], "(1, 0)": ["(0, 1)"], "(1, 1)": ["(1, 1)"]}, "S_exponent_cS_over_n": [141], "S_full_check": true, "S2": {"((0, 0), (0, 0))": "0", "((0, 1), (1, 0))": "0", "((1, 0), (0, 1))": "0", "((1, 1), (1, 1))": "1/2"}, "neg": {"x_multiplier_mod_n": 142, "exact": true, "phase_x_independent": true, "2adic": {"(0, 0)": ["(0, 0)", "0"], "(0, 1)": ["(0, 1)", "0"], "(1, 0)": ["(1, 0)", "0"], "(1, 1)": ["(1, 1)", "0"]}, "local_signs": {"11^1": 10, "13^1": 12}}, "gamma": {"x_multiplier_mod_n": 12, "exact": true, "phase_x_independent": true, "2adic": {"(0, 0)": ["(0, 0)", "0"], "(0, 1)": ["(0, 1)", "0"], "(1, 0)": ["(1, 0)", "0"], "(1, 1)": ["(1, 1)", "1/2"]}, "local_signs": {"11^1": 1, "13^1": 12}}, "c_local": {"11^1": {"kT": 10, "cS": 9}, "13^1": {"kT": 12, "cS": 11}}, "matches_symbolic": true}
+{"s": 15, "n": 195, "N": 780, "T_perm_2adic_only": true, "T_exponent_kT_over_n": [194], "T2": {"(0, 0)": ["(0, 1)", "0"], "(0, 1)": ["(0, 0)", "0"], "(1, 0)": ["(1, 0)", "1/4"], "(1, 1)": ["(1, 1)", "1/4"]}, "S_2adic_support": {"(0, 0)": ["(0, 0)"], "(0, 1)": ["(1, 0)"], "(1, 0)": ["(0, 1)"], "(1, 1)": ["(1, 1)"]}, "S_exponent_cS_over_n": [193], "S_full_check": true, "S2": {"((0, 0), (0, 0))": "0", "((0, 1), (1, 0))": "0", "((1, 0), (0, 1))": "0", "((1, 1), (1, 1))": "1/2"}, "neg": {"x_multiplier_mod_n": 194, "exact": true, "phase_x_independent": true, "2adic": {"(0, 0)": ["(0, 0)", "0"], "(0, 1)": ["(0, 1)", "0"], "(1, 0)": ["(1, 0)", "0"], "(1, 1)": ["(1, 1)", "0"]}, "local_signs": {"3^1": 2, "5^1": 4, "13^1": 12}}, "gamma": {"x_multiplier_mod_n": 14, "exact": true, "phase_x_independent": true, "2adic": {"(0, 0)": ["(0, 0)", "0"], "(0, 1)": ["(0, 1)", "0"], "(1, 0)": ["(1, 0)", "0"], "(1, 1)": ["(1, 1)", "1/2"]}, "local_signs": {"3^1": 2, "5^1": 4, "13^1": 1}}, "c_local": {"3^1": {"kT": 2, "cS": 1}, "5^1": {"kT": 4, "cS": 3}, "13^1": {"kT": 12, "cS": 11}}, "matches_symbolic": true}
+{"s": 21, "n": 399, "N": 1596, "T_perm_2adic_only": true, "T_exponent_kT_over_n": [398], "T2": {"(0, 0)": ["(0, 1)", "0"], "(0, 1)": ["(0, 0)", "0"], "(1, 0)": ["(1, 0)", "1/4"], "(1, 1)": ["(1, 1)", "1/4"]}, "S_2adic_support": {"(0, 0)": ["(0, 0)"], "(0, 1)": ["(1, 0)"], "(1, 0)": ["(0, 1)"], "(1, 1)": ["(1, 1)"]}, "S_exponent_cS_over_n": [397], "S_full_check": true, "S2": {"((0, 0), (0, 0))": "0", "((0, 1), (1, 0))": "0", "((1, 0), (0, 1))": "0", "((1, 1), (1, 1))": "1/2"}, "neg": {"x_multiplier_mod_n": 398, "exact": true, "phase_x_independent": true, "2adic": {"(0, 0)": ["(0, 0)", "0"], "(0, 1)": ["(0, 1)", "0"], "(1, 0)": ["(1, 0)", "0"], "(1, 1)": ["(1, 1)", "0"]}, "local_signs": {"3^1": 2, "7^1": 6, "19^1": 18}}, "gamma": {"x_multiplier_mod_n": 20, "exact": true, "phase_x_independent": true, "2adic": {"(0, 0)": ["(0, 0)", "0"], "(0, 1)": ["(0, 1)", "0"], "(1, 0)": ["(1, 0)", "0"], "(1, 1)": ["(1, 1)", "1/2"]}, "local_signs": {"3^1": 2, "7^1": 6, "19^1": 1}}, "c_local": {"3^1": {"kT": 2, "cS": 1}, "7^1": {"kT": 6, "cS": 5}, "19^1": {"kT": 18, "cS": 17}}, "matches_symbolic": true}
+{"s": 25, "n": 575, "N": 2300, "T_perm_2adic_only": true, "T_exponent_kT_over_n": [574], "T2": {"(0, 0)": ["(0, 1)", "0"], "(0, 1)": ["(0, 0)", "0"], "(1, 0)": ["(1, 0)", "1/4"], "(1, 1)": ["(1, 1)", "1/4"]}, "S_2adic_support": {"(0, 0)": ["(0, 0)"], "(0, 1)": ["(1, 0)"], "(1, 0)": ["(0, 1)"], "(1, 1)": ["(1, 1)"]}, "S_exponent_cS_over_n": [573], "S_full_check": true, "S2": {"((0, 0), (0, 0))": "0", "((0, 1), (1, 0))": "0", "((1, 0), (0, 1))": "0", "((1, 1), (1, 1))": "1/2"}, "neg": {"x_multiplier_mod_n": 574, "exact": true, "phase_x_independent": true, "2adic": {"(0, 0)": ["(0, 0)", "0"], "(0, 1)": ["(0, 1)", "0"], "(1, 0)": ["(1, 0)", "0"], "(1, 1)": ["(1, 1)", "0"]}, "local_signs": {"5^2": 24, "23^1": 22}}, "gamma": {"x_multiplier_mod_n": 24, "exact": true, "phase_x_independent": true, "2adic": {"(0, 0)": ["(0, 0)", "0"], "(0, 1)": ["(0, 1)", "0"], "(1, 0)": ["(1, 0)", "0"], "(1, 1)": ["(1, 1)", "1/2"]}, "local_signs": {"5^2": 24, "23^1": 1}}, "c_local": {"5^2": {"kT": 24, "cS": 23}, "23^1": {"kT": 22, "cS": 21}}, "matches_symbolic": true}
+
+===== END FILE gen_factor.log =====
+===== BEGIN FILE gen_factor_5_7.json bytes=2935 sha256=945faaa05ec38af6adb7a53732af0a3eb55a306c6bc41343eab356ce3a50b185 =====
+[
+ {
+  "s": 5,
+  "n": 15,
+  "N": 60,
+  "T_perm_2adic_only": true,
+  "T_exponent_kT_over_n": [
+   14
+  ],
+  "T2": {
+   "(0, 0)": [
+    "(0, 1)",
+    "0"
+   ],
+   "(0, 1)": [
+    "(0, 0)",
+    "0"
+   ],
+   "(1, 0)": [
+    "(1, 0)",
+    "1/4"
+   ],
+   "(1, 1)": [
+    "(1, 1)",
+    "1/4"
+   ]
+  },
+  "S_2adic_support": {
+   "(0, 0)": [
+    "(0, 0)"
+   ],
+   "(0, 1)": [
+    "(1, 0)"
+   ],
+   "(1, 0)": [
+    "(0, 1)"
+   ],
+   "(1, 1)": [
+    "(1, 1)"
+   ]
+  },
+  "S_exponent_cS_over_n": [
+   13
+  ],
+  "S_full_check": true,
+  "S2": {
+   "((0, 0), (0, 0))": "0",
+   "((0, 1), (1, 0))": "0",
+   "((1, 0), (0, 1))": "0",
+   "((1, 1), (1, 1))": "1/2"
+  },
+  "neg": {
+   "x_multiplier_mod_n": 14,
+   "exact": true,
+   "phase_x_independent": true,
+   "2adic": {
+    "(0, 0)": [
+     "(0, 0)",
+     "0"
+    ],
+    "(0, 1)": [
+     "(0, 1)",
+     "0"
+    ],
+    "(1, 0)": [
+     "(1, 0)",
+     "0"
+    ],
+    "(1, 1)": [
+     "(1, 1)",
+     "0"
+    ]
+   },
+   "local_signs": {
+    "3^1": 2,
+    "5^1": 4
+   }
+  },
+  "gamma": {
+   "x_multiplier_mod_n": 4,
+   "exact": true,
+   "phase_x_independent": true,
+   "2adic": {
+    "(0, 0)": [
+     "(0, 0)",
+     "0"
+    ],
+    "(0, 1)": [
+     "(0, 1)",
+     "0"
+    ],
+    "(1, 0)": [
+     "(1, 0)",
+     "0"
+    ],
+    "(1, 1)": [
+     "(1, 1)",
+     "1/2"
+    ]
+   },
+   "local_signs": {
+    "3^1": 1,
+    "5^1": 4
+   }
+  },
+  "c_local": {
+   "3^1": {
+    "kT": 2,
+    "cS": 1
+   },
+   "5^1": {
+    "kT": 4,
+    "cS": 3
+   }
+  }
+ },
+ {
+  "s": 7,
+  "n": 35,
+  "N": 140,
+  "T_perm_2adic_only": true,
+  "T_exponent_kT_over_n": [
+   34
+  ],
+  "T2": {
+   "(0, 0)": [
+    "(0, 1)",
+    "0"
+   ],
+   "(0, 1)": [
+    "(0, 0)",
+    "0"
+   ],
+   "(1, 0)": [
+    "(1, 0)",
+    "1/4"
+   ],
+   "(1, 1)": [
+    "(1, 1)",
+    "1/4"
+   ]
+  },
+  "S_2adic_support": {
+   "(0, 0)": [
+    "(0, 0)"
+   ],
+   "(0, 1)": [
+    "(1, 0)"
+   ],
+   "(1, 0)": [
+    "(0, 1)"
+   ],
+   "(1, 1)": [
+    "(1, 1)"
+   ]
+  },
+  "S_exponent_cS_over_n": [
+   5
+  ],
+  "S_full_check": false,
+  "S2": {
+   "((0, 0), (0, 0))": "0",
+   "((0, 1), (1, 0))": "0",
+   "((1, 0), (0, 1))": "0",
+   "((1, 1), (1, 1))": "1/2"
+  },
+  "neg": {
+   "x_multiplier_mod_n": 34,
+   "exact": true,
+   "phase_x_independent": true,
+   "2adic": {
+    "(0, 0)": [
+     "(0, 0)",
+     "0"
+    ],
+    "(0, 1)": [
+     "(0, 1)",
+     "0"
+    ],
+    "(1, 0)": [
+     "(1, 0)",
+     "0"
+    ],
+    "(1, 1)": [
+     "(1, 1)",
+     "0"
+    ]
+   },
+   "local_signs": {
+    "5^1": 4,
+    "7^1": 6
+   }
+  },
+  "gamma": {
+   "x_multiplier_mod_n": 6,
+   "exact": true,
+   "phase_x_independent": true,
+   "2adic": {
+    "(0, 0)": [
+     "(0, 0)",
+     "0"
+    ],
+    "(0, 1)": [
+     "(0, 1)",
+     "0"
+    ],
+    "(1, 0)": [
+     "(1, 0)",
+     "0"
+    ],
+    "(1, 1)": [
+     "(1, 1)",
+     "1/2"
+    ]
+   },
+   "local_signs": {
+    "5^1": 1,
+    "7^1": 6
+   }
+  },
+  "c_local": {
+   "5^1": {
+    "kT": 4,
+    "cS": 0
+   },
+   "7^1": {
+    "kT": 6,
+    "cS": 5
+   }
+  }
+ }
+]
+===== END FILE gen_factor_5_7.json =====
+===== BEGIN FILE gen_factor_5_7_9_11_13_15_21_25.json bytes=12171 sha256=07ed476a7452a0fc7ecd25d4f809ea065d1dc4f8bf026d499ccf5a7a40913cb4 =====
+[
+ {
+  "s": 5,
+  "n": 15,
+  "N": 60,
+  "T_perm_2adic_only": true,
+  "T_exponent_kT_over_n": [
+   14
+  ],
+  "T2": {
+   "(0, 0)": [
+    "(0, 1)",
+    "0"
+   ],
+   "(0, 1)": [
+    "(0, 0)",
+    "0"
+   ],
+   "(1, 0)": [
+    "(1, 0)",
+    "1/4"
+   ],
+   "(1, 1)": [
+    "(1, 1)",
+    "1/4"
+   ]
+  },
+  "S_2adic_support": {
+   "(0, 0)": [
+    "(0, 0)"
+   ],
+   "(0, 1)": [
+    "(1, 0)"
+   ],
+   "(1, 0)": [
+    "(0, 1)"
+   ],
+   "(1, 1)": [
+    "(1, 1)"
+   ]
+  },
+  "S_exponent_cS_over_n": [
+   13
+  ],
+  "S_full_check": true,
+  "S2": {
+   "((0, 0), (0, 0))": "0",
+   "((0, 1), (1, 0))": "0",
+   "((1, 0), (0, 1))": "0",
+   "((1, 1), (1, 1))": "1/2"
+  },
+  "neg": {
+   "x_multiplier_mod_n": 14,
+   "exact": true,
+   "phase_x_independent": true,
+   "2adic": {
+    "(0, 0)": [
+     "(0, 0)",
+     "0"
+    ],
+    "(0, 1)": [
+     "(0, 1)",
+     "0"
+    ],
+    "(1, 0)": [
+     "(1, 0)",
+     "0"
+    ],
+    "(1, 1)": [
+     "(1, 1)",
+     "0"
+    ]
+   },
+   "local_signs": {
+    "3^1": 2,
+    "5^1": 4
+   }
+  },
+  "gamma": {
+   "x_multiplier_mod_n": 4,
+   "exact": true,
+   "phase_x_independent": true,
+   "2adic": {
+    "(0, 0)": [
+     "(0, 0)",
+     "0"
+    ],
+    "(0, 1)": [
+     "(0, 1)",
+     "0"
+    ],
+    "(1, 0)": [
+     "(1, 0)",
+     "0"
+    ],
+    "(1, 1)": [
+     "(1, 1)",
+     "1/2"
+    ]
+   },
+   "local_signs": {
+    "3^1": 1,
+    "5^1": 4
+   }
+  },
+  "c_local": {
+   "3^1": {
+    "kT": 2,
+    "cS": 1
+   },
+   "5^1": {
+    "kT": 4,
+    "cS": 3
+   }
+  },
+  "matches_symbolic": true
+ },
+ {
+  "s": 7,
+  "n": 35,
+  "N": 140,
+  "T_perm_2adic_only": true,
+  "T_exponent_kT_over_n": [
+   34
+  ],
+  "T2": {
+   "(0, 0)": [
+    "(0, 1)",
+    "0"
+   ],
+   "(0, 1)": [
+    "(0, 0)",
+    "0"
+   ],
+   "(1, 0)": [
+    "(1, 0)",
+    "1/4"
+   ],
+   "(1, 1)": [
+    "(1, 1)",
+    "1/4"
+   ]
+  },
+  "S_2adic_support": {
+   "(0, 0)": [
+    "(0, 0)"
+   ],
+   "(0, 1)": [
+    "(1, 0)"
+   ],
+   "(1, 0)": [
+    "(0, 1)"
+   ],
+   "(1, 1)": [
+    "(1, 1)"
+   ]
+  },
+  "S_exponent_cS_over_n": [
+   33
+  ],
+  "S_full_check": true,
+  "S2": {
+   "((0, 0), (0, 0))": "0",
+   "((0, 1), (1, 0))": "0",
+   "((1, 0), (0, 1))": "0",
+   "((1, 1), (1, 1))": "1/2"
+  },
+  "neg": {
+   "x_multiplier_mod_n": 34,
+   "exact": true,
+   "phase_x_independent": true,
+   "2adic": {
+    "(0, 0)": [
+     "(0, 0)",
+     "0"
+    ],
+    "(0, 1)": [
+     "(0, 1)",
+     "0"
+    ],
+    "(1, 0)": [
+     "(1, 0)",
+     "0"
+    ],
+    "(1, 1)": [
+     "(1, 1)",
+     "0"
+    ]
+   },
+   "local_signs": {
+    "5^1": 4,
+    "7^1": 6
+   }
+  },
+  "gamma": {
+   "x_multiplier_mod_n": 6,
+   "exact": true,
+   "phase_x_independent": true,
+   "2adic": {
+    "(0, 0)": [
+     "(0, 0)",
+     "0"
+    ],
+    "(0, 1)": [
+     "(0, 1)",
+     "0"
+    ],
+    "(1, 0)": [
+     "(1, 0)",
+     "0"
+    ],
+    "(1, 1)": [
+     "(1, 1)",
+     "1/2"
+    ]
+   },
+   "local_signs": {
+    "5^1": 1,
+    "7^1": 6
+   }
+  },
+  "c_local": {
+   "5^1": {
+    "kT": 4,
+    "cS": 3
+   },
+   "7^1": {
+    "kT": 6,
+    "cS": 5
+   }
+  },
+  "matches_symbolic": true
+ },
+ {
+  "s": 9,
+  "n": 63,
+  "N": 252,
+  "T_perm_2adic_only": true,
+  "T_exponent_kT_over_n": [
+   62
+  ],
+  "T2": {
+   "(0, 0)": [
+    "(0, 1)",
+    "0"
+   ],
+   "(0, 1)": [
+    "(0, 0)",
+    "0"
+   ],
+   "(1, 0)": [
+    "(1, 0)",
+    "1/4"
+   ],
+   "(1, 1)": [
+    "(1, 1)",
+    "1/4"
+   ]
+  },
+  "S_2adic_support": {
+   "(0, 0)": [
+    "(0, 0)"
+   ],
+   "(0, 1)": [
+    "(1, 0)"
+   ],
+   "(1, 0)": [
+    "(0, 1)"
+   ],
+   "(1, 1)": [
+    "(1, 1)"
+   ]
+  },
+  "S_exponent_cS_over_n": [
+   61
+  ],
+  "S_full_check": true,
+  "S2": {
+   "((0, 0), (0, 0))": "0",
+   "((0, 1), (1, 0))": "0",
+   "((1, 0), (0, 1))": "0",
+   "((1, 1), (1, 1))": "1/2"
+  },
+  "neg": {
+   "x_multiplier_mod_n": 62,
+   "exact": true,
+   "phase_x_independent": true,
+   "2adic": {
+    "(0, 0)": [
+     "(0, 0)",
+     "0"
+    ],
+    "(0, 1)": [
+     "(0, 1)",
+     "0"
+    ],
+    "(1, 0)": [
+     "(1, 0)",
+     "0"
+    ],
+    "(1, 1)": [
+     "(1, 1)",
+     "0"
+    ]
+   },
+   "local_signs": {
+    "3^2": 8,
+    "7^1": 6
+   }
+  },
+  "gamma": {
+   "x_multiplier_mod_n": 8,
+   "exact": true,
+   "phase_x_independent": true,
+   "2adic": {
+    "(0, 0)": [
+     "(0, 0)",
+     "0"
+    ],
+    "(0, 1)": [
+     "(0, 1)",
+     "0"
+    ],
+    "(1, 0)": [
+     "(1, 0)",
+     "0"
+    ],
+    "(1, 1)": [
+     "(1, 1)",
+     "1/2"
+    ]
+   },
+   "local_signs": {
+    "3^2": 8,
+    "7^1": 1
+   }
+  },
+  "c_local": {
+   "3^2": {
+    "kT": 8,
+    "cS": 7
+   },
+   "7^1": {
+    "kT": 6,
+    "cS": 5
+   }
+  },
+  "matches_symbolic": true
+ },
+ {
+  "s": 11,
+  "n": 99,
+  "N": 396,
+  "T_perm_2adic_only": true,
+  "T_exponent_kT_over_n": [
+   98
+  ],
+  "T2": {
+   "(0, 0)": [
+    "(0, 1)",
+    "0"
+   ],
+   "(0, 1)": [
+    "(0, 0)",
+    "0"
+   ],
+   "(1, 0)": [
+    "(1, 0)",
+    "1/4"
+   ],
+   "(1, 1)": [
+    "(1, 1)",
+    "1/4"
+   ]
+  },
+  "S_2adic_support": {
+   "(0, 0)": [
+    "(0, 0)"
+   ],
+   "(0, 1)": [
+    "(1, 0)"
+   ],
+   "(1, 0)": [
+    "(0, 1)"
+   ],
+   "(1, 1)": [
+    "(1, 1)"
+   ]
+  },
+  "S_exponent_cS_over_n": [
+   97
+  ],
+  "S_full_check": true,
+  "S2": {
+   "((0, 0), (0, 0))": "0",
+   "((0, 1), (1, 0))": "0",
+   "((1, 0), (0, 1))": "0",
+   "((1, 1), (1, 1))": "1/2"
+  },
+  "neg": {
+   "x_multiplier_mod_n": 98,
+   "exact": true,
+   "phase_x_independent": true,
+   "2adic": {
+    "(0, 0)": [
+     "(0, 0)",
+     "0"
+    ],
+    "(0, 1)": [
+     "(0, 1)",
+     "0"
+    ],
+    "(1, 0)": [
+     "(1, 0)",
+     "0"
+    ],
+    "(1, 1)": [
+     "(1, 1)",
+     "0"
+    ]
+   },
+   "local_signs": {
+    "3^2": 8,
+    "11^1": 10
+   }
+  },
+  "gamma": {
+   "x_multiplier_mod_n": 10,
+   "exact": true,
+   "phase_x_independent": true,
+   "2adic": {
+    "(0, 0)": [
+     "(0, 0)",
+     "0"
+    ],
+    "(0, 1)": [
+     "(0, 1)",
+     "0"
+    ],
+    "(1, 0)": [
+     "(1, 0)",
+     "0"
+    ],
+    "(1, 1)": [
+     "(1, 1)",
+     "1/2"
+    ]
+   },
+   "local_signs": {
+    "3^2": 1,
+    "11^1": 10
+   }
+  },
+  "c_local": {
+   "3^2": {
+    "kT": 8,
+    "cS": 7
+   },
+   "11^1": {
+    "kT": 10,
+    "cS": 9
+   }
+  },
+  "matches_symbolic": true
+ },
+ {
+  "s": 13,
+  "n": 143,
+  "N": 572,
+  "T_perm_2adic_only": true,
+  "T_exponent_kT_over_n": [
+   142
+  ],
+  "T2": {
+   "(0, 0)": [
+    "(0, 1)",
+    "0"
+   ],
+   "(0, 1)": [
+    "(0, 0)",
+    "0"
+   ],
+   "(1, 0)": [
+    "(1, 0)",
+    "1/4"
+   ],
+   "(1, 1)": [
+    "(1, 1)",
+    "1/4"
+   ]
+  },
+  "S_2adic_support": {
+   "(0, 0)": [
+    "(0, 0)"
+   ],
+   "(0, 1)": [
+    "(1, 0)"
+   ],
+   "(1, 0)": [
+    "(0, 1)"
+   ],
+   "(1, 1)": [
+    "(1, 1)"
+   ]
+  },
+  "S_exponent_cS_over_n": [
+   141
+  ],
+  "S_full_check": true,
+  "S2": {
+   "((0, 0), (0, 0))": "0",
+   "((0, 1), (1, 0))": "0",
+   "((1, 0), (0, 1))": "0",
+   "((1, 1), (1, 1))": "1/2"
+  },
+  "neg": {
+   "x_multiplier_mod_n": 142,
+   "exact": true,
+   "phase_x_independent": true,
+   "2adic": {
+    "(0, 0)": [
+     "(0, 0)",
+     "0"
+    ],
+    "(0, 1)": [
+     "(0, 1)",
+     "0"
+    ],
+    "(1, 0)": [
+     "(1, 0)",
+     "0"
+    ],
+    "(1, 1)": [
+     "(1, 1)",
+     "0"
+    ]
+   },
+   "local_signs": {
+    "11^1": 10,
+    "13^1": 12
+   }
+  },
+  "gamma": {
+   "x_multiplier_mod_n": 12,
+   "exact": true,
+   "phase_x_independent": true,
+   "2adic": {
+    "(0, 0)": [
+     "(0, 0)",
+     "0"
+    ],
+    "(0, 1)": [
+     "(0, 1)",
+     "0"
+    ],
+    "(1, 0)": [
+     "(1, 0)",
+     "0"
+    ],
+    "(1, 1)": [
+     "(1, 1)",
+     "1/2"
+    ]
+   },
+   "local_signs": {
+    "11^1": 1,
+    "13^1": 12
+   }
+  },
+  "c_local": {
+   "11^1": {
+    "kT": 10,
+    "cS": 9
+   },
+   "13^1": {
+    "kT": 12,
+    "cS": 11
+   }
+  },
+  "matches_symbolic": true
+ },
+ {
+  "s": 15,
+  "n": 195,
+  "N": 780,
+  "T_perm_2adic_only": true,
+  "T_exponent_kT_over_n": [
+   194
+  ],
+  "T2": {
+   "(0, 0)": [
+    "(0, 1)",
+    "0"
+   ],
+   "(0, 1)": [
+    "(0, 0)",
+    "0"
+   ],
+   "(1, 0)": [
+    "(1, 0)",
+    "1/4"
+   ],
+   "(1, 1)": [
+    "(1, 1)",
+    "1/4"
+   ]
+  },
+  "S_2adic_support": {
+   "(0, 0)": [
+    "(0, 0)"
+   ],
+   "(0, 1)": [
+    "(1, 0)"
+   ],
+   "(1, 0)": [
+    "(0, 1)"
+   ],
+   "(1, 1)": [
+    "(1, 1)"
+   ]
+  },
+  "S_exponent_cS_over_n": [
+   193
+  ],
+  "S_full_check": true,
+  "S2": {
+   "((0, 0), (0, 0))": "0",
+   "((0, 1), (1, 0))": "0",
+   "((1, 0), (0, 1))": "0",
+   "((1, 1), (1, 1))": "1/2"
+  },
+  "neg": {
+   "x_multiplier_mod_n": 194,
+   "exact": true,
+   "phase_x_independent": true,
+   "2adic": {
+    "(0, 0)": [
+     "(0, 0)",
+     "0"
+    ],
+    "(0, 1)": [
+     "(0, 1)",
+     "0"
+    ],
+    "(1, 0)": [
+     "(1, 0)",
+     "0"
+    ],
+    "(1, 1)": [
+     "(1, 1)",
+     "0"
+    ]
+   },
+   "local_signs": {
+    "3^1": 2,
+    "5^1": 4,
+    "13^1": 12
+   }
+  },
+  "gamma": {
+   "x_multiplier_mod_n": 14,
+   "exact": true,
+   "phase_x_independent": true,
+   "2adic": {
+    "(0, 0)": [
+     "(0, 0)",
+     "0"
+    ],
+    "(0, 1)": [
+     "(0, 1)",
+     "0"
+    ],
+    "(1, 0)": [
+     "(1, 0)",
+     "0"
+    ],
+    "(1, 1)": [
+     "(1, 1)",
+     "1/2"
+    ]
+   },
+   "local_signs": {
+    "3^1": 2,
+    "5^1": 4,
+    "13^1": 1
+   }
+  },
+  "c_local": {
+   "3^1": {
+    "kT": 2,
+    "cS": 1
+   },
+   "5^1": {
+    "kT": 4,
+    "cS": 3
+   },
+   "13^1": {
+    "kT": 12,
+    "cS": 11
+   }
+  },
+  "matches_symbolic": true
+ },
+ {
+  "s": 21,
+  "n": 399,
+  "N": 1596,
+  "T_perm_2adic_only": true,
+  "T_exponent_kT_over_n": [
+   398
+  ],
+  "T2": {
+   "(0, 0)": [
+    "(0, 1)",
+    "0"
+   ],
+   "(0, 1)": [
+    "(0, 0)",
+    "0"
+   ],
+   "(1, 0)": [
+    "(1, 0)",
+    "1/4"
+   ],
+   "(1, 1)": [
+    "(1, 1)",
+    "1/4"
+   ]
+  },
+  "S_2adic_support": {
+   "(0, 0)": [
+    "(0, 0)"
+   ],
+   "(0, 1)": [
+    "(1, 0)"
+   ],
+   "(1, 0)": [
+    "(0, 1)"
+   ],
+   "(1, 1)": [
+    "(1, 1)"
+   ]
+  },
+  "S_exponent_cS_over_n": [
+   397
+  ],
+  "S_full_check": true,
+  "S2": {
+   "((0, 0), (0, 0))": "0",
+   "((0, 1), (1, 0))": "0",
+   "((1, 0), (0, 1))": "0",
+   "((1, 1), (1, 1))": "1/2"
+  },
+  "neg": {
+   "x_multiplier_mod_n": 398,
+   "exact": true,
+   "phase_x_independent": true,
+   "2adic": {
+    "(0, 0)": [
+     "(0, 0)",
+     "0"
+    ],
+    "(0, 1)": [
+     "(0, 1)",
+     "0"
+    ],
+    "(1, 0)": [
+     "(1, 0)",
+     "0"
+    ],
+    "(1, 1)": [
+     "(1, 1)",
+     "0"
+    ]
+   },
+   "local_signs": {
+    "3^1": 2,
+    "7^1": 6,
+    "19^1": 18
+   }
+  },
+  "gamma": {
+   "x_multiplier_mod_n": 20,
+   "exact": true,
+   "phase_x_independent": true,
+   "2adic": {
+    "(0, 0)": [
+     "(0, 0)",
+     "0"
+    ],
+    "(0, 1)": [
+     "(0, 1)",
+     "0"
+    ],
+    "(1, 0)": [
+     "(1, 0)",
+     "0"
+    ],
+    "(1, 1)": [
+     "(1, 1)",
+     "1/2"
+    ]
+   },
+   "local_signs": {
+    "3^1": 2,
+    "7^1": 6,
+    "19^1": 1
+   }
+  },
+  "c_local": {
+   "3^1": {
+    "kT": 2,
+    "cS": 1
+   },
+   "7^1": {
+    "kT": 6,
+    "cS": 5
+   },
+   "19^1": {
+    "kT": 18,
+    "cS": 17
+   }
+  },
+  "matches_symbolic": true
+ },
+ {
+  "s": 25,
+  "n": 575,
+  "N": 2300,
+  "T_perm_2adic_only": true,
+  "T_exponent_kT_over_n": [
+   574
+  ],
+  "T2": {
+   "(0, 0)": [
+    "(0, 1)",
+    "0"
+   ],
+   "(0, 1)": [
+    "(0, 0)",
+    "0"
+   ],
+   "(1, 0)": [
+    "(1, 0)",
+    "1/4"
+   ],
+   "(1, 1)": [
+    "(1, 1)",
+    "1/4"
+   ]
+  },
+  "S_2adic_support": {
+   "(0, 0)": [
+    "(0, 0)"
+   ],
+   "(0, 1)": [
+    "(1, 0)"
+   ],
+   "(1, 0)": [
+    "(0, 1)"
+   ],
+   "(1, 1)": [
+    "(1, 1)"
+   ]
+  },
+  "S_exponent_cS_over_n": [
+   573
+  ],
+  "S_full_check": true,
+  "S2": {
+   "((0, 0), (0, 0))": "0",
+   "((0, 1), (1, 0))": "0",
+   "((1, 0), (0, 1))": "0",
+   "((1, 1), (1, 1))": "1/2"
+  },
+  "neg": {
+   "x_multiplier_mod_n": 574,
+   "exact": true,
+   "phase_x_independent": true,
+   "2adic": {
+    "(0, 0)": [
+     "(0, 0)",
+     "0"
+    ],
+    "(0, 1)": [
+     "(0, 1)",
+     "0"
+    ],
+    "(1, 0)": [
+     "(1, 0)",
+     "0"
+    ],
+    "(1, 1)": [
+     "(1, 1)",
+     "0"
+    ]
+   },
+   "local_signs": {
+    "5^2": 24,
+    "23^1": 22
+   }
+  },
+  "gamma": {
+   "x_multiplier_mod_n": 24,
+   "exact": true,
+   "phase_x_independent": true,
+   "2adic": {
+    "(0, 0)": [
+     "(0, 0)",
+     "0"
+    ],
+    "(0, 1)": [
+     "(0, 1)",
+     "0"
+    ],
+    "(1, 0)": [
+     "(1, 0)",
+     "0"
+    ],
+    "(1, 1)": [
+     "(1, 1)",
+     "1/2"
+    ]
+   },
+   "local_signs": {
+    "5^2": 24,
+    "23^1": 1
+   }
+  },
+  "c_local": {
+   "5^2": {
+    "kT": 24,
+    "cS": 23
+   },
+   "23^1": {
+    "kT": 22,
+    "cS": 21
+   }
+  },
+  "matches_symbolic": true
+ }
+]
+===== END FILE gen_factor_5_7_9_11_13_15_21_25.json =====
+===== BEGIN FILE weil_sectors_5_7_9_11_13_15_17_19_21_23_25_41.json bytes=7747 sha256=989d2a688b0c73320f38c5e7a8cf0e42b4924a8e40bc01ada5f9fcebbd151aab =====
+[
+ {
+  "s": 5,
+  "n": 15,
+  "gamma_n_k_over_8": [
+   2
+  ],
+  "rho2_relations": {
+   "2": {
+    "c": "3/4",
+    "S4": true,
+    "ST3=S2": true,
+    "S2=-I": true
+   }
+  },
+  "local": {
+   "3^1": {
+    "q_p": "-2x^2/3 = 1x^2/3",
+    "divides": "s-2",
+    "gamma_sign": 1
+   },
+   "5^1": {
+    "q_p": "-2x^2/5 = 3x^2/5",
+    "divides": "s",
+    "gamma_sign": -1
+   }
+  },
+  "dimV_upper_exact_count": 20,
+  "zero_labels": 7,
+  "formula_s(s-1)": 20,
+  "formula_2s-3": 7,
+  "dimW_formula_2(s-1)^2": 32,
+  "Eis_allEven_3prod": 18,
+  "cusp_oddodd": 2,
+  "cusp_evenmixed": 0,
+  "cusp_model_total": 2
+ },
+ {
+  "s": 7,
+  "n": 35,
+  "gamma_n_k_over_8": [
+   2
+  ],
+  "rho2_relations": {
+   "2": {
+    "c": "3/4",
+    "S4": true,
+    "ST3=S2": true,
+    "S2=-I": true
+   }
+  },
+  "local": {
+   "5^1": {
+    "q_p": "-3x^2/5 = 2x^2/5",
+    "divides": "s-2",
+    "gamma_sign": 1
+   },
+   "7^1": {
+    "q_p": "-3x^2/7 = 4x^2/7",
+    "divides": "s",
+    "gamma_sign": -1
+   }
+  },
+  "dimV_upper_exact_count": 42,
+  "zero_labels": 11,
+  "formula_s(s-1)": 42,
+  "formula_2s-3": 11,
+  "dimW_formula_2(s-1)^2": 72,
+  "Eis_allEven_3prod": 36,
+  "cusp_oddodd": 6,
+  "cusp_evenmixed": 0,
+  "cusp_model_total": 6
+ },
+ {
+  "s": 9,
+  "n": 63,
+  "gamma_n_k_over_8": [
+   2
+  ],
+  "rho2_relations": {
+   "2": {
+    "c": "3/4",
+    "S4": true,
+    "ST3=S2": true,
+    "S2=-I": true
+   }
+  },
+  "local": {
+   "3^2": {
+    "q_p": "-4x^2/9 = 5x^2/9",
+    "divides": "s",
+    "gamma_sign": -1
+   },
+   "7^1": {
+    "q_p": "-4x^2/7 = 3x^2/7",
+    "divides": "s-2",
+    "gamma_sign": 1
+   }
+  },
+  "dimV_upper_exact_count": 72,
+  "zero_labels": 15,
+  "formula_s(s-1)": 72,
+  "formula_2s-3": 15,
+  "dimW_formula_2(s-1)^2": 128,
+  "Eis_allEven_3prod": 60,
+  "cusp_oddodd": 12,
+  "cusp_evenmixed": 0,
+  "cusp_model_total": 12
+ },
+ {
+  "s": 11,
+  "n": 99,
+  "gamma_n_k_over_8": [
+   2
+  ],
+  "rho2_relations": {
+   "2": {
+    "c": "3/4",
+    "S4": true,
+    "ST3=S2": true,
+    "S2=-I": true
+   }
+  },
+  "local": {
+   "3^2": {
+    "q_p": "-5x^2/9 = 4x^2/9",
+    "divides": "s-2",
+    "gamma_sign": 1
+   },
+   "11^1": {
+    "q_p": "-5x^2/11 = 6x^2/11",
+    "divides": "s",
+    "gamma_sign": -1
+   }
+  },
+  "dimV_upper_exact_count": 110,
+  "zero_labels": 19,
+  "formula_s(s-1)": 110,
+  "formula_2s-3": 19,
+  "dimW_formula_2(s-1)^2": 200,
+  "Eis_allEven_3prod": 90,
+  "cusp_oddodd": 20,
+  "cusp_evenmixed": 0,
+  "cusp_model_total": 20
+ },
+ {
+  "s": 13,
+  "n": 143,
+  "gamma_n_k_over_8": [
+   2
+  ],
+  "rho2_relations": {
+   "2": {
+    "c": "3/4",
+    "S4": true,
+    "ST3=S2": true,
+    "S2=-I": true
+   }
+  },
+  "local": {
+   "11^1": {
+    "q_p": "-6x^2/11 = 5x^2/11",
+    "divides": "s-2",
+    "gamma_sign": 1
+   },
+   "13^1": {
+    "q_p": "-6x^2/13 = 7x^2/13",
+    "divides": "s",
+    "gamma_sign": -1
+   }
+  },
+  "dimV_upper_exact_count": 156,
+  "zero_labels": 23,
+  "formula_s(s-1)": 156,
+  "formula_2s-3": 23,
+  "dimW_formula_2(s-1)^2": 288,
+  "Eis_allEven_3prod": 126,
+  "cusp_oddodd": 30,
+  "cusp_evenmixed": 0,
+  "cusp_model_total": 30
+ },
+ {
+  "s": 15,
+  "n": 195,
+  "gamma_n_k_over_8": [
+   2
+  ],
+  "rho2_relations": {
+   "2": {
+    "c": "3/4",
+    "S4": true,
+    "ST3=S2": true,
+    "S2=-I": true
+   }
+  },
+  "local": {
+   "3^1": {
+    "q_p": "-2x^2/3 = 1x^2/3",
+    "divides": "s",
+    "gamma_sign": -1
+   },
+   "5^1": {
+    "q_p": "-4x^2/5 = 1x^2/5",
+    "divides": "s",
+    "gamma_sign": -1
+   },
+   "13^1": {
+    "q_p": "-7x^2/13 = 6x^2/13",
+    "divides": "s-2",
+    "gamma_sign": 1
+   }
+  },
+  "dimV_upper_exact_count": 210,
+  "zero_labels": 27,
+  "formula_s(s-1)": 210,
+  "formula_2s-3": 27,
+  "dimW_formula_2(s-1)^2": 392,
+  "Eis_allEven_3prod": 126,
+  "cusp_oddodd": 42,
+  "cusp_evenmixed": 42,
+  "cusp_model_total": 84
+ },
+ {
+  "s": 17,
+  "n": 255,
+  "gamma_n_k_over_8": [
+   2
+  ],
+  "rho2_relations": {
+   "2": {
+    "c": "3/4",
+    "S4": true,
+    "ST3=S2": true,
+    "S2=-I": true
+   }
+  },
+  "local": {
+   "3^1": {
+    "q_p": "-1x^2/3 = 2x^2/3",
+    "divides": "s-2",
+    "gamma_sign": 1
+   },
+   "5^1": {
+    "q_p": "-1x^2/5 = 4x^2/5",
+    "divides": "s-2",
+    "gamma_sign": 1
+   },
+   "17^1": {
+    "q_p": "-8x^2/17 = 9x^2/17",
+    "divides": "s",
+    "gamma_sign": -1
+   }
+  },
+  "dimV_upper_exact_count": 272,
+  "zero_labels": 31,
+  "formula_s(s-1)": 272,
+  "formula_2s-3": 31,
+  "dimW_formula_2(s-1)^2": 512,
+  "Eis_allEven_3prod": 162,
+  "cusp_oddodd": 56,
+  "cusp_evenmixed": 54,
+  "cusp_model_total": 110
+ },
+ {
+  "s": 19,
+  "n": 323,
+  "gamma_n_k_over_8": [
+   2
+  ],
+  "rho2_relations": {
+   "2": {
+    "c": "3/4",
+    "S4": true,
+    "ST3=S2": true,
+    "S2=-I": true
+   }
+  },
+  "local": {
+   "17^1": {
+    "q_p": "-9x^2/17 = 8x^2/17",
+    "divides": "s-2",
+    "gamma_sign": 1
+   },
+   "19^1": {
+    "q_p": "-9x^2/19 = 10x^2/19",
+    "divides": "s",
+    "gamma_sign": -1
+   }
+  },
+  "dimV_upper_exact_count": 342,
+  "zero_labels": 35,
+  "formula_s(s-1)": 342,
+  "formula_2s-3": 35,
+  "dimW_formula_2(s-1)^2": 648,
+  "Eis_allEven_3prod": 270,
+  "cusp_oddodd": 72,
+  "cusp_evenmixed": 0,
+  "cusp_model_total": 72
+ },
+ {
+  "s": 21,
+  "n": 399,
+  "gamma_n_k_over_8": [
+   2
+  ],
+  "rho2_relations": {
+   "2": {
+    "c": "3/4",
+    "S4": true,
+    "ST3=S2": true,
+    "S2=-I": true
+   }
+  },
+  "local": {
+   "3^1": {
+    "q_p": "-1x^2/3 = 2x^2/3",
+    "divides": "s",
+    "gamma_sign": -1
+   },
+   "7^1": {
+    "q_p": "-1x^2/7 = 6x^2/7",
+    "divides": "s",
+    "gamma_sign": -1
+   },
+   "19^1": {
+    "q_p": "-10x^2/19 = 9x^2/19",
+    "divides": "s-2",
+    "gamma_sign": 1
+   }
+  },
+  "dimV_upper_exact_count": 420,
+  "zero_labels": 39,
+  "formula_s(s-1)": 420,
+  "formula_2s-3": 39,
+  "dimW_formula_2(s-1)^2": 800,
+  "Eis_allEven_3prod": 240,
+  "cusp_oddodd": 90,
+  "cusp_evenmixed": 90,
+  "cusp_model_total": 180
+ },
+ {
+  "s": 23,
+  "n": 483,
+  "gamma_n_k_over_8": [
+   2
+  ],
+  "rho2_relations": {
+   "2": {
+    "c": "3/4",
+    "S4": true,
+    "ST3=S2": true,
+    "S2=-I": true
+   }
+  },
+  "local": {
+   "3^1": {
+    "q_p": "-2x^2/3 = 1x^2/3",
+    "divides": "s-2",
+    "gamma_sign": 1
+   },
+   "7^1": {
+    "q_p": "-6x^2/7 = 1x^2/7",
+    "divides": "s-2",
+    "gamma_sign": 1
+   },
+   "23^1": {
+    "q_p": "-11x^2/23 = 12x^2/23",
+    "divides": "s",
+    "gamma_sign": -1
+   }
+  },
+  "dimV_upper_exact_count": 506,
+  "zero_labels": 43,
+  "formula_s(s-1)": 506,
+  "formula_2s-3": 43,
+  "dimW_formula_2(s-1)^2": 968,
+  "Eis_allEven_3prod": 288,
+  "cusp_oddodd": 110,
+  "cusp_evenmixed": 108,
+  "cusp_model_total": 218
+ },
+ {
+  "s": 25,
+  "n": 575,
+  "gamma_n_k_over_8": [
+   2
+  ],
+  "rho2_relations": {
+   "2": {
+    "c": "3/4",
+    "S4": true,
+    "ST3=S2": true,
+    "S2=-I": true
+   }
+  },
+  "local": {
+   "5^2": {
+    "q_p": "-12x^2/25 = 13x^2/25",
+    "divides": "s",
+    "gamma_sign": -1
+   },
+   "23^1": {
+    "q_p": "-12x^2/23 = 11x^2/23",
+    "divides": "s-2",
+    "gamma_sign": 1
+   }
+  },
+  "dimV_upper_exact_count": 600,
+  "zero_labels": 47,
+  "formula_s(s-1)": 600,
+  "formula_2s-3": 47,
+  "dimW_formula_2(s-1)^2": 1152,
+  "Eis_allEven_3prod": 468,
+  "cusp_oddodd": 132,
+  "cusp_evenmixed": 0,
+  "cusp_model_total": 132
+ },
+ {
+  "s": 41,
+  "n": 1599,
+  "gamma_n_k_over_8": [
+   2
+  ],
+  "rho2_relations": {
+   "2": {
+    "c": "3/4",
+    "S4": true,
+    "ST3=S2": true,
+    "S2=-I": true
+   }
+  },
+  "local": {
+   "3^1": {
+    "q_p": "-2x^2/3 = 1x^2/3",
+    "divides": "s-2",
+    "gamma_sign": 1
+   },
+   "13^1": {
+    "q_p": "-11x^2/13 = 2x^2/13",
+    "divides": "s-2",
+    "gamma_sign": 1
+   },
+   "41^1": {
+    "q_p": "-20x^2/41 = 21x^2/41",
+    "divides": "s",
+    "gamma_sign": -1
+   }
+  },
+  "dimV_upper_exact_count": 1640,
+  "zero_labels": 79,
+  "formula_s(s-1)": 1640,
+  "formula_2s-3": 79,
+  "dimW_formula_2(s-1)^2": 3200,
+  "Eis_allEven_3prod": 882,
+  "cusp_oddodd": 380,
+  "cusp_evenmixed": 378,
+  "cusp_model_total": 758
+ }
+]
+===== END FILE weil_sectors_5_7_9_11_13_15_17_19_21_23_25_41.json =====
