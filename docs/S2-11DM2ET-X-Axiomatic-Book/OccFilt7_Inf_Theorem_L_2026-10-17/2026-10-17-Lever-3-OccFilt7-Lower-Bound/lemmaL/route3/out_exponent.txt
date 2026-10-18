@@ -1,0 +1,4 @@
+closed-form c = 0.398540028615674326977505198792
+c_plus (sup F_up over alpha in [0.005,1]) = 0.398874503675155
+G0 = max_box [g(u_c) - sqrt(D0)(0.3990 - F_up)] = 0.4097920654803896
+c_minus (Psi_low at alpha*) = 0.39580831010256984
