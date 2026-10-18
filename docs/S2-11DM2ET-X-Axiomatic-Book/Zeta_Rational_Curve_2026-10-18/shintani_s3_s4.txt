@@ -1,0 +1,4 @@
+s=3 cone [r,gamma r), r=(1, 0): |det|=2, classes=2: t^-1 coeff=log(((sqrt(3) + 2)/(2 - sqrt(3)))**(sqrt(3)/6)) ~ 0.760345996300946; t^-1/2=0; zeta_E(0)=1/6; t^1/2=0; zeta_E(-1)=-1/48
+s=3 cone [r,gamma r), r=(1, 1): |det|=11, classes=11: t^-1 coeff=log(((sqrt(3) + 2)/(2 - sqrt(3)))**(sqrt(3)/6)) ~ 0.760345996300946; t^-1/2=0; zeta_E(0)=1/6; t^1/2=0; zeta_E(-1)=-1/48
+s=4 cone [r,gamma r), r=(1, 0): |det|=2, classes=2: t^-1 coeff=log(((2*sqrt(2) + 3)/(3 - 2*sqrt(2)))**(sqrt(2)/8)) ~ 0.623225240140231; t^-1/2=0; zeta_E(0)=0; t^1/2=0; zeta_E(-1)=-1/24
+s=4 cone [r,gamma r), r=(1, 1): |det|=14, classes=14: t^-1 coeff=log(((2*sqrt(2) + 3)/(3 - 2*sqrt(2)))**(sqrt(2)/8)) ~ 0.623225240140231; t^-1/2=0; zeta_E(0)=0; t^1/2=0; zeta_E(-1)=-1/24

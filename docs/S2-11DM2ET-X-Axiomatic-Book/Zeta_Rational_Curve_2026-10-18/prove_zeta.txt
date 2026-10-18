@@ -1,0 +1,29 @@
+[PASS] Q_s(n,k) = Q2((n,k)+a) + c0
+[PASS] det(gamma) = 1
+[PASS] Q2(gamma x) = Q2(x)
+[PASS] gamma a - a = (0,-1), so gamma preserves the coset a+Z^2
+[PASS] gamma r1 = (-1, 2)
+[PASS] Q2(S r1 + T r2) = S^2 + 2(s-1) S T + T^2
+[PASS] Q_s(n, -2n-k-1) = Q_s(n,k)
+[PASS] S = n + k/2 + 1/2 + delta, delta = 1/(2(s-2))
+[PASS] (by hand, see proof) for integer s>=3: 0<1/(s-2)<=1, so T>=0 <=> k>=1; S>0 <=> k >= -2n-1 for n<=-1; phi maps {n<=-1,k<=0} onto {n<=-1, k>=-2n-1}
+[PASS] finite confirmation of region identity, s=3..60, |n|<=40, |k|<=120: mismatches = 0
+[PASS] class coords (n2=0):  S - (1/2+delta) integer(=n1), T - (1-delta) = -1
+[PASS] class coords (n2=1):  S - delta = n1+1, T - (1/2-delta) = 0
+[PASS] (by hand) for s>=3: 0<delta<=1/2, so x in (0,1], y in [0,1) for both classes; [Lambda:Z^2]=2 so exactly these 2 classes
+per-class EM coefficients (x,y = class coords, A = s-1):
+   t^-1/2: -sqrt(pi)*(x + y - 1)/2
+   t^0: (6*s*x**2 - 6*s*x + 6*s*y**2 - 6*s*y + 2*s - 6*x**2 + 12*x*y - 6*y**2 + 1)/12
+   t^1/2: -sqrt(pi)*s*(s - 2)*(x + y - 1)*(2*x**2 - 2*x*y - x + 2*y**2 - y)/12
+   t^1: (60*s**3*x**4 - 120*s**3*x**3 + 60*s**3*x**2 + 60*s**3*y**4 - 120*s**3*y**3 + 60*s**3*y**2 - 4*s**3 - 180*s**2*x**4 + 360*s**2*x**3 - 180*s**2*x**2 - 180*s**2*y**4 + 360*s**2*y**3 - 180*s**2*y**2 + 12*s**2 + 90*s*x**4 - 180*s*x**3 - 180*s*x**2*y**2 + 180*s*x**2*y + 60*s*x**2 + 180*s*x*y**2 - 180*s*x*y + 30*s*x + 90*s*y**4 - 180*s*y**3 + 60*s*y**2 + 30*s*y - 11*s + 30*x**4 - 120*x**3*y + 180*x**2*y**2 - 30*x**2 - 120*x*y**3 + 60*x*y + 30*y**4 - 30*y**2 + 3)/360
+[PASS] d/dm antiderivative = 1/(m^2 + 2(s-1)m + 1)
+[PASS] t^{-1/2} coefficient vanishes
+[PASS] t^{1/2} coefficient vanishes
+[PASS] zeta_E(0) = t^0 coeff = (s-4)(s-5)/(12(s-2))
+[PASS] zeta_E(-1) = -(t^1 coeff) = (2s^5-14s^4-45s^3+425s^2-632s-96)/(1440(s-2)^2)
+   zeta_E(0)  = (s - 5)*(s - 4)/(12*(s - 2))
+   zeta_E(-1) = (2*s**5 - 14*s**4 - 45*s**3 + 425*s**2 - 632*s - 96)/(1440*(s - 2)**2)
+[PASS] Res = 2*area = arccosh(s-1)/sqrt(s(s-2)) (symbolic area = -log(-(-s + sqrt(s*(s - 2)) + 1)/(s + sqrt(s*(s - 2)) - 1))/(2*sqrt(s*(s - 2))); numeric check at s=3,5,7,8,11,41)
+[PASS] cross-check vs earlier exact cone computations: 42 (s, cone) pairs, s in [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 25, 30, 41]; mismatches: []
+[PASS] per-class t^0 = B1(x)B1(y) + (A/2)(B2(x)+B2(y))
+[PASS] per-class t^1 = -(6A-4A^3)(B4(x)+B4(y))/24 - (B1B3+B3B1)/3 - A B2B2/2
