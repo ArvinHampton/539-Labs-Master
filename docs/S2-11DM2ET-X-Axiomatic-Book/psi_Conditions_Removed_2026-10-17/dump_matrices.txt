@@ -1,0 +1,4 @@
+(a,0) row index 70: Phi(1)/2 = 0.0068839937604-0.0382597122170j   (old psi(1) = 0.0068839937604-0.0382597122170j)
+row (a,0) of S has 35 nonzero entries, all of modulus [0.16903085]
+S entries: modulus 1/sqrt35 = 0.169030850946; nonzeros per row: [np.int64(35)]
+T is monomial: nonzeros per row [np.int64(1)]
