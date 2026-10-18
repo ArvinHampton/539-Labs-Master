@@ -1,0 +1,2 @@
+Krylov span of e_L: dim 60; rank(W Pi)=36; rank([W Pi; Pi])=72; rank Pi=72
+=> every component u_c = e_c Pi u lies in span{u_L o gamma}: False
