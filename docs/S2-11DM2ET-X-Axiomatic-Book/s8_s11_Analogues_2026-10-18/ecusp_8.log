@@ -1,0 +1,14 @@
+PARI stack size set to 3000000000 bytes, maximum size set to 3000000512
+s=8 m=2:7,3:2 Cl_m^+=[4, 2, 2, 2], |H|=|(1-sigma)G|=4, bad primes [2, 3]
+points L 838, R 40142; class-function inconsistencies L 0, R 6692; C-parts L 2, R 75  (54s)
+NCmin 192 Nmax for synthesis 313
+prime ideals 61 (54s)
+ideals generated 82 (54s)
+max over classes of min norm 241
+non-Eis content (sigma-symmetrised) of E_L: max |pure-type| 0.000e+00, max |mixed-type| 0.000e+00; characters used: []
+non-Eis content (sigma-symmetrised) of E_R: max |pure-type| 0.000e+00, max |mixed-type| 0.000e+00; characters used: []
+PARI stack size set to 1000000000 bytes, maximum size set to 3000000512
+z=(0.0001+1j): Psi_q=0.0151742507012+0.0549078684615j  [synth full: -0.0275862014452+0.0583181064337j]  Psi_nonEis=0.0000000000000-0.0000000000000j  Psi_q-Psi_nonEis=0.0151742507012+0.0549078684615j  Herglotz_Eis=0.0151742507012+0.0549078684619j  |diff|=3.31e-13
+z=(0.4+0.95j): Psi_q=0.0418018602449+0.0262064904377j  [synth full: -0.0102408570095+0.0311832563383j]  Psi_nonEis=0.0000000000000+0.0000000000000j  Psi_q-Psi_nonEis=0.0418018602449+0.0262064904377j  Herglotz_Eis=0.0418018602449+0.0262064904380j  |diff|=3.17e-13
+z=(0.6+0.85j): Psi_q=0.0457465429572+0.0087038678302j  [synth full: -0.0168800235792+0.0185244315778j]  Psi_nonEis=0.0000000000000+0.0000000000000j  Psi_q-Psi_nonEis=0.0457465429572+0.0087038678302j  Herglotz_Eis=0.0457465429572+0.0087038678305j  |diff|=3.16e-13
+z=(0.2+1.1j): Psi_q=0.0388895110141+0.0495183790466j  [synth full: -0.0069360676123+0.0508557215635j]  Psi_nonEis=0.0000000000000+0.0000000000000j  Psi_q-Psi_nonEis=0.0388895110141+0.0495183790466j  Herglotz_Eis=0.0388895110141+0.0495183790469j  |diff|=3.22e-13
