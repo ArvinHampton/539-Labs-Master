@@ -1,0 +1,9 @@
+s=7: D=70, |L'/L|=35, lattice odd, w_c=[ 7 -2]/70, a in L'? False; labels N=140 (#al=70, #be=2)
+   S unitary: 4.0e-15;  |S^2-P| = 5.3e-15;  |(ST)^3 - I| = 1.6e-14;  |(ST)^3 - S^2| = 1.6e+01;  P^2=I: 2.3e-15
+   order of T = 140;  P-invariant dimension = 72;  gamma acts on labels with order 2
+s=8: D=48, |L'/L|=48, lattice even, w_c=0, a in L'? True; labels N=48 (#al=48, #be=1)
+   S unitary: 3.5e-15;  |S^2-P| = 3.9e-15;  |(ST)^3 - I| = 9.5e-15;  |(ST)^3 - S^2| = 9.4e+00;  P^2=I: 0.0e+00
+   order of T = 48;  P-invariant dimension = 26;  gamma acts on labels with order 2
+s=11: D=198, |L'/L|=99, lattice odd, w_c=[11 -2]/198, a in L'? False; labels N=396 (#al=198, #be=2)
+   S unitary: 8.8e-15;  |S^2-P| = 1.2e-14;  |(ST)^3 - I| = 3.5e-14;  |(ST)^3 - S^2| = 2.8e+01;  P^2=I: 6.4e-15
+   order of T = 396;  P-invariant dimension = 200;  gamma acts on labels with order 2
