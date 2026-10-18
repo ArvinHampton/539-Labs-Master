@@ -1,0 +1,3 @@
+pairs with G(x), G(W7 x) both nonzero (x = h/m, m < 30, 0 < x < 2): 120
+distinct raw phases (turns) of G(x)/(7^-1/2 (7x) G(W7x)): 108
+distinct phases after removing e(7(x - W7x)/20): 4: [0.15, 0.35, 0.65, 0.85]

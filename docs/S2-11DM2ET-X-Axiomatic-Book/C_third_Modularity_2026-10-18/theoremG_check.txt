@@ -1,0 +1,1 @@
+Theorem G check, reduced h/m with m<=60: 1102 rationals, 493 zeros, mismatches with (2|m or 5|m): 0
