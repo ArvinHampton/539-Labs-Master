@@ -1,0 +1,6 @@
+Theorem 2 vs lattice (from-scratch enumeration of nu in F cap A^-1 Z^2), N <= 14000 (Q <= 100):
+  max_N |c_R(N/140) - formula(N)| = 1.84e-15; nonzero coefficients: 627; max |Im| either side: 6.7e-16
+  odd N with nonzero coefficient: 0 (all frequencies lie in (2/140)Z, consistent with 140Q = 2(-7m1^2+14m1m2-2m2^2))
+  coefficients recognised as A+B*phi with identical (A,B) on both sides: 627/627
+  first 12 (N: lattice | formula): 10: -1.0000000000 | -1.0000000000; 26: -0.6180339887 | -0.6180339887; 34: +1.6180339887 | +1.6180339887; 40: +1.0000000000 | +1.0000000000; 76: +0.6180339887 | +0.6180339887; 90: -1.0000000000 | -1.0000000000; 104: -1.6180339887 | -1.6180339887; 124: -1.6180339887 | -1.6180339887; 136: +0.6180339887 | +0.6180339887; 140: +1.0000000000 | +1.0000000000; 146: -0.6180339887 | -0.6180339887; 160: +1.0000000000 | +1.0000000000
+I1 check: lattice E_L coefficients (nu in F cap (a+Z^2), 20Q=n<= 2000) vs sum_chi w_chi (a*b)(n): max dev 0.00e+00; nonzero: 37
