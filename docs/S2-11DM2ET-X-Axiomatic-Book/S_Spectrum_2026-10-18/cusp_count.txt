@@ -1,0 +1,3 @@
+cusp characters occurring: 24; sigma-orbits (= distinct dihedral theta series / Maass forms): 12; all orbits of size 2: True
+rank of label x (char,sign) content matrix: 6
+rank after merging sigma-pairs (= dim of cusp span in functions): 6; forms with nonzero content: 12
