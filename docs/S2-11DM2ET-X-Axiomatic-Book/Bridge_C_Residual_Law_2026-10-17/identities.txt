@@ -1,0 +1,14 @@
+N = 3000, box B = 256 (rerun at B+30 identical for H_s)
+PASS I1  C_mixed := C - C_axis - C_third vanishes through q^293 (Master claim)
+PASS I1b C_mixed is NOT identically zero: first nonzero coefficient is at q^294
+PASS I2  C_third = q^8 f_{2,7,7}(-q^10,-q^14,q) + P_s
+PASS I3  Theta_hol = q^8 f_{2,7,7}(-q^10,-q^14,q) + theta_3
+PASS I4  C_third = Theta_hol - sum_{n>=1} q^{n^2} + R
+PASS I5  C - C_third = -H_s - q^8 f_{2,7,7}(-q^10,-q^14,q)   (both residuals are the SAME P_s)
+PASS I6  C_mixed = -H_s - q^8 f - 3/2 - sum_{n>=1}q^{n^2} - sum_{k>=1}q^{7k(k+1)/2}  (mock + unary only)
+PASS I7  C = P_s - H_s and P_s = R + (1+theta_3)/2
+C coefficient value set through q^N: [Fraction(0, 1), Fraction(1, 2), Fraction(1, 1), Fraction(3, 2), Fraction(2, 1), Fraction(3, 1)]
+C coefficient value set through q^293: [Fraction(0, 1), Fraction(1, 1), Fraction(3, 2), Fraction(2, 1), Fraction(3, 1)]
+first nonzero C_mixed (deg, coeff): [(294, '-1/2'), (301, '1/2'), (330, '-1'), (337, '1'), (368, '-1'), (375, '1'), (408, '-1'), (415, '1'), (450, '-1'), (457, '1'), (494, '-1'), (501, '1')]
+first C_third exponents: [8, 18, 22, 30, 39, 43, 44, 58, 60, 67, 71, 78, 79, 93]
+C_third coefficient max to N: 3
