@@ -1,0 +1,10 @@
+== 1,1,-1,1,0,0,-1,1,0,1,-2,1,-1,2,-2
+[(53256, "Coefficients of the '5th-order' mock theta function f_0(q).")]
+== 1,1,0,-1,1,1,-1,-1,0,2,0,-2,1,1
+[(53250, "Coefficients of the '3rd-order' mock theta function phi(q)."), (324966, 'Number of distinct odd prime indices of n.'), (5090, 'Number of primes == 2 mod 3 dividing n.')]
+== 1,1,0,0,1,0,0,0,-1,1,0,-1,0,0,0,1,0,0,0,0,0,0,-1,-1
+None
+== 1,1,0,0,1,0,0,0,0,0,0,0,-1,0,0,0,1,0,0,0,0,0,0,0,-1
+None
+== 1,1,0,0,1,0,0,0,0,1,0,0,-1,0,0,-1,1,0,0,0,-1
+[(25441, 'Number of partitions of n into 2 distinct nonzero squares.'), (353814, 'a(n) = 1 if n is the sum of 2 distinct nonzero squares, 0 otherwise.')]
