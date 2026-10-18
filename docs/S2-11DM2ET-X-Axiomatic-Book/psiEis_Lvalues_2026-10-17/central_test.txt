@@ -1,0 +1,6 @@
+row 73, h=1: characters with nonzero weight: 24 (all cusp characters: True); totally odd among them: 12
+exact:  kappa_73(1) = sum_{chi'} Ghat(chi') L(0,chi'),  only the totally odd cusp chi' contribute; L(0,chi') = W(chi') 140 L(1,conj chi')/pi^2
+L(0) [exact formula]: Phi_73(1) = 0.120446470003+0.176437422094j; max over cusp rows |Phi(1) - phi_rows| = 3.849e-15
+L(1/2) replacing L(0) [central-value hypothesis]: Phi_73(1) = 0.034895687556+0.074828076368j; max over cusp rows |Phi(1) - phi_rows| = 3.151e-01
+L(1/2) of the 12 totally odd cusp chars in place of L(0): Phi_73(1) = 0.050612123558+0.106486421762j; max dev 3.061e-01
+rank of the 24 'unit-L' response vectors at x=1: 6 (the 24 cusp-row values at x=1 lie in a 6-dim space: one direction per sigma-pair of totally odd characters; Phi(1) is reproduced by the L(0) values and not by the L(1/2) values)
