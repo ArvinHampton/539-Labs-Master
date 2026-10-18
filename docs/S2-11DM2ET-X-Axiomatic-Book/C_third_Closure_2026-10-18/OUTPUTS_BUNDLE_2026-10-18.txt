@@ -1,0 +1,45 @@
+# OUTPUTS BUNDLE — C_third_Closure_2026-10-18 (2026-10-18)
+# The text outputs (json/log/txt/sha256) of this package, concatenated verbatim, one member per file.
+# Reports (.md) and scripts (.py/.sh) are stored as separate files in this folder. Binary files (pkl/npz/npy), __pycache__ and empty logs are excluded.
+# Reason for bundling: the push tool accepts at most 4 file attachments per commit; bundling keeps the commit count modest.
+# Member format: a line "===== BEGIN FILE <relative path> bytes=<n> sha256=<hex> =====", then exactly <n> bytes, then "\n===== END FILE <relative path> =====".
+# Extract (Python 3, run in this folder):
+#   import hashlib,os,re; d=open('OUTPUTS_BUNDLE_2026-10-18.txt','rb').read(); i=0
+#   for m in re.finditer(rb'===== BEGIN FILE (\S+) bytes=(\d+) sha256=([0-9a-f]+) =====\n', d):
+#       if m.start()<i: continue
+#       p,n,h=m.group(1).decode(),int(m.group(2)),m.group(3).decode(); b=d[m.end():m.end()+n]; i=m.end()+n
+#       assert hashlib.sha256(b).hexdigest()==h; os.makedirs(os.path.dirname(p) or '.',exist_ok=True); open(p,'wb').write(b)
+# Members: 3
+===== BEGIN FILE unified_theta_check_s13.txt bytes=813 sha256=ab091fee1b32ac98376a0f4dfbbcb8a4221e252b91c144ade6fff49584b5aeb2 =====
+s=13: t2 - t1 = -3.176313180592, log(eps) = 3.176313180592
+(A) Theta^_a (segment integral of Xi_0) = -0.327388953871+0.024843586828j
+    sgn(t2-t1) * Zwegers K_0 sign series = -0.327388953871+0.024843586828j   |diff| = 5.13e-15
+(B) int Xi_1 dt = 0.000000000000-0.000000000000j
+    Zwegers-2002 completion sum        = 0.000000000000-0.000000000000j   |diff| = 2.63e-15   (vanishes: c2 = gamma c1 and gamma a = a mod Z^2)
+non-gamma pair (c1, c(t2/3)):  int Xi_1 = 0.001456208521+0.094735831717j; Zwegers-2002 sum = 0.001456208521+0.094735831717j; |diff| = 1.99e-17
+                               Theta^ = -0.161330099389+0.013509743254j; sign series Theta = -0.031596372037-0.021917811442j; |Theta^ - Theta| = 1.34e-01 (nonzero shadow expected)
+(C) max_q |sign-weight count - 2 * #F-cone points| over Q <= 30: 0.0
+
+===== END FILE unified_theta_check_s13.txt =====
+===== BEGIN FILE unified_theta_check_s7.txt bytes=813 sha256=673c73380867166bf385b4ab05e33812e432af577cc0990b6fb7ecaee97cf5c9 =====
+s=7: t2 - t1 = -2.477888730288, log(eps) = 2.477888730288
+(A) Theta^_a (segment integral of Xi_0) = -0.279757458041+0.008788388523j
+    sgn(t2-t1) * Zwegers K_0 sign series = -0.279757458041+0.008788388523j   |diff| = 8.03e-16
+(B) int Xi_1 dt = 0.000000000000+0.000000000000j
+    Zwegers-2002 completion sum        = -0.000000000000+0.000000000000j   |diff| = 6.29e-16   (vanishes: c2 = gamma c1 and gamma a = a mod Z^2)
+non-gamma pair (c1, c(t2/3)):  int Xi_1 = 0.023155737161+0.079240351085j; Zwegers-2002 sum = 0.023155737161+0.079240351085j; |diff| = 5.65e-17
+                               Theta^ = -0.124414659737+0.011888200437j; sign series Theta = -0.238060141623+0.034902880345j; |Theta^ - Theta| = 1.16e-01 (nonzero shadow expected)
+(C) max_q |sign-weight count - 2 * #F-cone points| over Q <= 30: 0.0
+
+===== END FILE unified_theta_check_s7.txt =====
+===== BEGIN FILE unified_theta_check_s9.txt bytes=813 sha256=1019eb0b5f56419e6cb5f2aab04dc180e4e38b16f0dd25d57907e5ac666bd6ff =====
+s=9: t2 - t1 = -2.768659383314, log(eps) = 2.768659383314
+(A) Theta^_a (segment integral of Xi_0) = -0.301244170519+0.017387924217j
+    sgn(t2-t1) * Zwegers K_0 sign series = -0.301244170519+0.017387924217j   |diff| = 8.08e-16
+(B) int Xi_1 dt = -0.000000000000+0.000000000000j
+    Zwegers-2002 completion sum        = 0.000000000000-0.000000000000j   |diff| = 1.85e-15   (vanishes: c2 = gamma c1 and gamma a = a mod Z^2)
+non-gamma pair (c1, c(t2/3)):  int Xi_1 = 0.015107202991+0.088543167185j; Zwegers-2002 sum = 0.015107202991+0.088543167185j; |diff| = 3.27e-17
+                               Theta^ = -0.142994668683+0.012342178220j; sign series Theta = -0.036060031576-0.023838010742j; |Theta^ - Theta| = 1.13e-01 (nonzero shadow expected)
+(C) max_q |sign-weight count - 2 * #F-cone points| over Q <= 30: 0.0
+
+===== END FILE unified_theta_check_s9.txt =====
