@@ -1,0 +1,21 @@
+u_L: max over 11 positive norms <= 25 of |coef(S+) - coef(S-)| = 0.00e+00
+u_R: max over 177 positive norms <= 25 of |coef(S+) - coef(S-)| = 4.71e-14
+x=1     : exact Bernoulli-sum psi=0.0068839937604-0.0382597122170j   period integral=0.0068839937604-0.0382597122170j   |diff|=1.6e-14  (quadrature change 4e-17)
+x=1/3   : exact Bernoulli-sum psi=0.0005873917409-0.0056523667535j   period integral=0.0005873917409-0.0056523667535j   |diff|=7.9e-15  (quadrature change 6e-18)
+x=2     : exact Bernoulli-sum psi=0.0204228810685-0.1051292325457j   period integral=0.0204228810685-0.1051292325457j   |diff|=1.9e-14  (quadrature change 9e-17)
+x=3/7   : exact Bernoulli-sum psi=0.0011075780879-0.0089974727973j   period integral=0.0011075780878-0.0089974727973j   |diff|=8.8e-15  (quadrature change 8e-18)
+x=5/8   : exact Bernoulli-sum psi=0.0026645822772-0.0175892303908j   period integral=0.0026645822772-0.0175892303908j   |diff|=1.2e-14  (quadrature change 3e-17)
+x=13/17 : exact Bernoulli-sum psi=0.0040880577790-0.0247647202855j   period integral=0.0040880577791-0.0247647202856j   |diff|=1.8e-14  (quadrature change 2e-17)
+x=55/89 : exact Bernoulli-sum psi=0.0025991533759-0.0172491931495j   period integral=0.0025991533759-0.0172491931495j   |diff|=2.1e-14  (quadrature change 1e-17)
+x=7/3   : exact Bernoulli-sum psi=0.0247615875363-0.1287889062934j   period integral=0.0247615875364-0.1287889062934j   |diff|=1.8e-14  (quadrature change 2e-16)
+x=1/9   : exact Bernoulli-sum psi=0.0000272129785-0.0006707279016j   period integral=0.0000272129785-0.0006707279016j   |diff|=2.6e-15  (quadrature change 3e-18)
+x=-1    : exact Bernoulli-sum psi=-0.1244410442189-0.2000631110920j   period integral=0.0027964050240-0.0346729389428j   |diff|=2.1e-01  (quadrature change 3e-17)
+x=-2/5  : exact Bernoulli-sum psi=-1.4151475166635-1.4221432702154j   period integral=0.0028670730860-0.0061408403967j   |diff|=2.0e+00  (quadrature change 1e-17)
+x=-13/4 : exact Bernoulli-sum psi=0.3152801763900+2.6388401557937j   period integral=-0.0201936202721-0.1923496873868j   |diff|=2.9e+00  (quadrature change 3e-16)
+max |diff| over 12 rationals = 2.85e+00
+x=1.414214: period-integral psi = 0.0124191810748-0.0647376570834j
+x=1.047198: period-integral psi = 0.0074867929072-0.0411309622887j
+x=0.010000: period-integral psi = 0.0000000206052-0.0000054888670j
+x=0.050000: period-integral psi = 0.0000025557287-0.0001369380908j
+x=10.000000: period-integral psi = 0.0739436561025-0.6639956591924j
+x=100.000000: period-integral psi = 0.0993660050916-6.6674771069873j
