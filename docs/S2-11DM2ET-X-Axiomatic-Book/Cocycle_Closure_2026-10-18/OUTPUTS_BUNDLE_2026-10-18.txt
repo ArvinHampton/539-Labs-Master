@@ -1,0 +1,108 @@
+# OUTPUTS BUNDLE — Cocycle_Closure_2026-10-18 (2026-10-18)
+# The text outputs (json/log/txt/sha256) of this package, concatenated verbatim, one member per file.
+# Reports (.md) and scripts (.py/.sh) are stored as separate files in this folder. Binary files (pkl/npz/npy), .bak backups, __pycache__ and empty logs are excluded; they are listed under 'Excluded' below with size and sha256.
+# Reason for bundling: the push tool accepts at most 4 file attachments per commit; bundling keeps the commit count modest.
+# Member format: a line "===== BEGIN FILE <relative path> bytes=<n> sha256=<hex> =====", then exactly <n> bytes, then "\n===== END FILE <relative path> =====".
+# Extract (Python 3, run in this folder):
+#   import hashlib,os,re; d=open('OUTPUTS_BUNDLE_2026-10-18.txt','rb').read(); i=0
+#   for m in re.finditer(rb'===== BEGIN FILE (\S+) bytes=(\d+) sha256=([0-9a-f]+) =====\n', d):
+#       if m.start()<i: continue
+#       p,n,h=m.group(1).decode(),int(m.group(2)),m.group(3).decode(); b=d[m.end():m.end()+n]; i=m.end()+n
+#       assert hashlib.sha256(b).hexdigest()==h; os.makedirs(os.path.dirname(p) or '.',exist_ok=True); open(p,'wb').write(b)
+# Members: 7
+# Excluded (not in repository; available on request):
+#   Cocycle-Closure.pre-3A.md.bak  bytes=10480  sha256=eda239289a4a6b10db22329c1ee263653743044aea64059b22e2106ab2bdf498
+# Member list:
+#   c0_check.txt
+#   labels_exact.txt
+#   nontangential_check.txt
+#   vc_k1.txt
+#   vc_k2.txt
+#   vc_k3.txt
+#   vector_cocycle.jsonl
+
+===== BEGIN FILE c0_check.txt bytes=432 sha256=47ef3678fd17995cc6b30dd03ab9c2bfe897a62ae8d98164ff2656a55fd301ac =====
+1 0.3 -1.57079632679489661629753645871 0.999999999999999998132294312838
+1 1.0 -1.57079632679489661615726798256 0.999999999999999998042996627483
+1 3.0 -1.57079632679489661865764438699 0.999999999999999999634785684903
+2 0.3 -1.57079632679489661494136786104 0.999999999999999997268930568899
+2 1.0 -1.57079632679489661484045732961 0.999999999999999997204688929348
+2 3.0 -1.57079632679489661841732131446 0.999999999999999999481791265174
+
+===== END FILE c0_check.txt =====
+===== BEGIN FILE labels_exact.txt bytes=236 sha256=849f231bc3a84437f1cdd57beda0c5395eecbc6bba1d142fa08aad9d1e426930 =====
+labels 140
+common gamma-stabiliser order k = 2
+S/T/parity closure: OK (all targets in {0,a}+L' x {0,-a}+L')
+labels with al in Z^2 (b = log eps): 2
+wc characteristic (checked on generators; Q-B is additive mod 1 since B(n,m) in Z): True
+
+===== END FILE labels_exact.txt =====
+===== BEGIN FILE nontangential_check.txt bytes=1894 sha256=70338bb2e7f9ba07a35062a2eb27c8de129a992bb050372fdd580072ac41be4e =====
+x 1/2 kappa exact (-0.45399049973954725+0.8910065241883689j)
+  phi=1.571 kappa_fit (-0.45372296021224917+0.8904814483032516j) |diff| 0.0005893064430316314 A (-7.394241052366412e-08-3.7675540137865887e-08j)
+  phi=0.785 kappa_fit (-0.45467249102162904+0.8912290625642332j) |diff| 0.0007173809570708451 A (8.937855428389077e-08+4.8961540474609505e-08j)
+  phi=2.356 kappa_fit (-0.45376967278783836+0.891689071597832j) |diff| 0.0007173810066943244 A (9.214610702314492e-08+4.352992709785212e-08j)
+  phi=0.524 kappa_fit (-0.45435635997540624+0.8917608672051149j) |diff| 0.0008383836228698143 A (1.0188940492732402e-07-6.321161126516173e-08j)
+x 1/3 kappa exact (-0.25581630895733365+1.4345352381188756j)
+  phi=1.571 kappa_fit (-0.2558325732334708+1.4344398236864095j) |diff| 9.679070513788814e-05 A (-0.0068664124521997+0.02113260464867007j)
+  phi=0.785 kappa_fit (-0.2558524560040373+1.434643340593886j) |diff| 0.00011398576265825666 A (-0.006866383833020112+0.021132595262444164j)
+  phi=2.356 kappa_fit (-0.2557459972385146+1.4346188191551867j) |diff| 0.00010922237606887075 A (-0.006866383006672872+0.0211326033854965j)
+  phi=0.524 kappa_fit (-0.2557482739072151+1.4346412621945484j) |diff| 0.0001259756828395423 A (-0.006866399103253227+0.02113258407653181j)
+x 2/5 kappa exact (-0.5874842213905277+0.9650157987655841j)
+  phi=1.571 kappa_fit (-0.5874680061565893+0.9650087328151352j) |diff| 1.768789041749479e-05 A (-1.0280277580321243e-09-2.3571621444173907e-09j)
+  phi=0.785 kappa_fit (-0.5875033470008522+0.9650171047814415j) |diff| 1.9170149913427203e-05 A (2.0820728017411673e-09+1.8592077721445247e-09j)
+  phi=2.356 kappa_fit (-0.5874983829059868+0.9650290282224063j) |diff| 1.9379552314474512e-05 A (-6.136243935433648e-11+2.822480320036571e-09j)
+  phi=0.524 kappa_fit (-0.5874953349438337+0.9650332925401287j) |diff| 2.072542436001846e-05 A (2.7049001390461435e-09-1.3568682901345208e-09j)
+
+===== END FILE nontangential_check.txt =====
+===== BEGIN FILE vc_k1.txt bytes=1249 sha256=a2ef5c6948d2289d44dc2acee572c6c4ba83f7683fb88bae5feca9c72dcd5d33 =====
+{'k': 1, 'x': '1/2', 'gx': '1', 'sign_cx_d': -1, 'maxerr_140': 1.0367366991496098e-14, 'max_abs_kappa': 2.5000000000000004, 'L_err': 1.8619006149354548e-16}
+{'k': 1, 'x': '1/3', 'gx': '1/2', 'sign_cx_d': -1, 'maxerr_140': 1.2314970930892997e-14, 'max_abs_kappa': 6.000000000000001, 'L_err': 4.7791200441584545e-15}
+{'k': 1, 'x': '2/3', 'gx': '2', 'sign_cx_d': -1, 'maxerr_140': 8.449373463310848e-15, 'max_abs_kappa': 2.5000000000000013, 'L_err': 2.026347117705549e-15}
+{'k': 1, 'x': '-1/2', 'gx': '-1/3', 'sign_cx_d': -1, 'maxerr_140': 1.6594027833190757e-14, 'max_abs_kappa': 7.365459931328113, 'L_err': 3.985994439185401e-15}
+{'k': 1, 'x': '3/2', 'gx': '-3', 'sign_cx_d': 1, 'maxerr_140': 1.3804318614747006e-14, 'max_abs_kappa': 2.5000000000000004, 'L_err': 7.683082245783184e-16}
+{'k': 1, 'x': '2', 'gx': '-2', 'sign_cx_d': 1, 'maxerr_140': 1.6800722979961107e-14, 'max_abs_kappa': 2.500000000000001, 'L_err': 1.826392801036703e-15}
+{'k': 1, 'x': '5/3', 'gx': '-5/2', 'sign_cx_d': 1, 'maxerr_140': 1.7580829429435567e-14, 'max_abs_kappa': 5.999999999999999, 'L_err': 4.577566798522238e-15}
+{'k': 1, 'x': '0', 'gx': '0', 'sign_cx_d': -1, 'maxerr_140': 1.2121276483828484e-14, 'max_abs_kappa': 2.5000000000000004, 'L_err': 2.081853200119796e-15}
+
+===== END FILE vc_k1.txt =====
+===== BEGIN FILE vc_k2.txt bytes=1086 sha256=54dc4445d301d1f4b5a263b45f95cc19c04f69511ea268867be4ce3329e08e1a =====
+{'k': 2, 'x': '1/3', 'gx': '1', 'sign_cx_d': -1, 'maxerr_140': 4.587406070663595e-13, 'max_abs_kappa': 2.5000000000000004, 'L_err': 3.656766540298207e-14}
+{'k': 2, 'x': '1/4', 'gx': '1/2', 'sign_cx_d': -1, 'maxerr_140': 4.3654246036072917e-13, 'max_abs_kappa': 6.000000000000001, 'L_err': 5.552458330477151e-14}
+{'k': 2, 'x': '2/3', 'gx': '-2', 'sign_cx_d': 1, 'maxerr_140': 4.627497467337845e-13, 'max_abs_kappa': 2.500000000000001, 'L_err': 3.651513654453868e-14}
+{'k': 2, 'x': '1', 'gx': '-1', 'sign_cx_d': 1, 'maxerr_140': 3.653839611874335e-13, 'max_abs_kappa': 2.500000000000001, 'L_err': 1.0311280485457798e-13}
+{'k': 2, 'x': '-1', 'gx': '-1/3', 'sign_cx_d': -1, 'maxerr_140': 1.0177448317160905e-12, 'max_abs_kappa': 7.365459931328113, 'L_err': 3.095696995672253e-13}
+{'k': 2, 'x': '0', 'gx': '0', 'sign_cx_d': -1, 'maxerr_140': 3.5921443964147516e-13, 'max_abs_kappa': 2.5000000000000004, 'L_err': 1.0356325820378126e-13}
+{'k': 2, 'x': '3/5', 'gx': '-3', 'sign_cx_d': 1, 'maxerr_140': 4.800587925917848e-13, 'max_abs_kappa': 2.5000000000000004, 'L_err': 2.103022949064239e-14}
+
+===== END FILE vc_k2.txt =====
+===== BEGIN FILE vc_k3.txt bytes=629 sha256=2265ea036f923da928e2a800baffdc5d2e5e463c6577c5ff775d2f19cd5b55da =====
+{'k': 3, 'x': '1/2', 'gx': '-1', 'sign_cx_d': 1, 'maxerr_140': 2.420255567965811e-12, 'max_abs_kappa': 2.500000000000001, 'L_err': 1.1443916996305594e-15}
+{'k': 3, 'x': '1/4', 'gx': '1', 'sign_cx_d': -1, 'maxerr_140': 2.4222480395202277e-12, 'max_abs_kappa': 2.5000000000000004, 'L_err': 3.2345964853260536e-15}
+{'k': 3, 'x': '1/5', 'gx': '1/2', 'sign_cx_d': -1, 'maxerr_140': 2.4221740275663948e-12, 'max_abs_kappa': 6.000000000000001, 'L_err': 3.360144595992222e-15}
+{'k': 3, 'x': '-1/3', 'gx': '-1/6', 'sign_cx_d': -1, 'maxerr_140': 3.2745281285378736e-12, 'max_abs_kappa': 15.09966887054149, 'L_err': 1.0986160316453369e-14}
+
+===== END FILE vc_k3.txt =====
+===== BEGIN FILE vector_cocycle.jsonl bytes=2964 sha256=bd3d467e20cb8cfb7146bf7654713222aac7d8618189a408cad5517db4fe3b1e =====
+{"k": 1, "x": "1/2", "gx": "1", "sign_cx_d": -1, "maxerr_140": 1.0367366991496098e-14, "max_abs_kappa": 2.5000000000000004, "L_err": 1.8619006149354548e-16}
+{"k": 1, "x": "1/3", "gx": "1/2", "sign_cx_d": -1, "maxerr_140": 1.2314970930892997e-14, "max_abs_kappa": 6.000000000000001, "L_err": 4.7791200441584545e-15}
+{"k": 1, "x": "2/3", "gx": "2", "sign_cx_d": -1, "maxerr_140": 8.449373463310848e-15, "max_abs_kappa": 2.5000000000000013, "L_err": 2.026347117705549e-15}
+{"k": 1, "x": "-1/2", "gx": "-1/3", "sign_cx_d": -1, "maxerr_140": 1.6594027833190757e-14, "max_abs_kappa": 7.365459931328113, "L_err": 3.985994439185401e-15}
+{"k": 1, "x": "3/2", "gx": "-3", "sign_cx_d": 1, "maxerr_140": 1.3804318614747006e-14, "max_abs_kappa": 2.5000000000000004, "L_err": 7.683082245783184e-16}
+{"k": 1, "x": "2", "gx": "-2", "sign_cx_d": 1, "maxerr_140": 1.6800722979961107e-14, "max_abs_kappa": 2.500000000000001, "L_err": 1.826392801036703e-15}
+{"k": 1, "x": "5/3", "gx": "-5/2", "sign_cx_d": 1, "maxerr_140": 1.7580829429435567e-14, "max_abs_kappa": 5.999999999999999, "L_err": 4.577566798522238e-15}
+{"k": 1, "x": "0", "gx": "0", "sign_cx_d": -1, "maxerr_140": 1.2121276483828484e-14, "max_abs_kappa": 2.5000000000000004, "L_err": 2.081853200119796e-15}
+{"k": 2, "x": "1/3", "gx": "1", "sign_cx_d": -1, "maxerr_140": 4.587406070663595e-13, "max_abs_kappa": 2.5000000000000004, "L_err": 3.656766540298207e-14}
+{"k": 2, "x": "1/4", "gx": "1/2", "sign_cx_d": -1, "maxerr_140": 4.3654246036072917e-13, "max_abs_kappa": 6.000000000000001, "L_err": 5.552458330477151e-14}
+{"k": 2, "x": "2/3", "gx": "-2", "sign_cx_d": 1, "maxerr_140": 4.627497467337845e-13, "max_abs_kappa": 2.500000000000001, "L_err": 3.651513654453868e-14}
+{"k": 2, "x": "1", "gx": "-1", "sign_cx_d": 1, "maxerr_140": 3.653839611874335e-13, "max_abs_kappa": 2.500000000000001, "L_err": 1.0311280485457798e-13}
+{"k": 2, "x": "-1", "gx": "-1/3", "sign_cx_d": -1, "maxerr_140": 1.0177448317160905e-12, "max_abs_kappa": 7.365459931328113, "L_err": 3.095696995672253e-13}
+{"k": 2, "x": "0", "gx": "0", "sign_cx_d": -1, "maxerr_140": 3.5921443964147516e-13, "max_abs_kappa": 2.5000000000000004, "L_err": 1.0356325820378126e-13}
+{"k": 2, "x": "3/5", "gx": "-3", "sign_cx_d": 1, "maxerr_140": 4.800587925917848e-13, "max_abs_kappa": 2.5000000000000004, "L_err": 2.103022949064239e-14}
+{"k": 3, "x": "1/2", "gx": "-1", "sign_cx_d": 1, "maxerr_140": 2.420255567965811e-12, "max_abs_kappa": 2.500000000000001, "L_err": 1.1443916996305594e-15}
+{"k": 3, "x": "1/4", "gx": "1", "sign_cx_d": -1, "maxerr_140": 2.4222480395202277e-12, "max_abs_kappa": 2.5000000000000004, "L_err": 3.2345964853260536e-15}
+{"k": 3, "x": "1/5", "gx": "1/2", "sign_cx_d": -1, "maxerr_140": 2.4221740275663948e-12, "max_abs_kappa": 6.000000000000001, "L_err": 3.360144595992222e-15}
+{"k": 3, "x": "-1/3", "gx": "-1/6", "sign_cx_d": -1, "maxerr_140": 3.2745281285378736e-12, "max_abs_kappa": 15.09966887054149, "L_err": 1.0986160316453369e-14}
+
+===== END FILE vector_cocycle.jsonl =====
