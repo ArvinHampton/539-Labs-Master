@@ -1,0 +1,10 @@
+x=0: C_third remainder after s/t + h t^-1/2 + c at t=[0.004, 0.002, 0.001, 0.0005]: 1.69e-02, 1.19e-02, 8.45e-03, 5.97e-03  (should scale like t^{1/2})
+   q^8 f fit coefficients [t^-1/2, t^0, t^1/2, t^1, t^3/2, t^2]: 1.05e+00, 1.11e-05, 5.33e-01, 6.78e-03, 5.45e-01, 3.60e-01;  predicted t^-1/2 coeff |2h_C - h_E| = 1.051234
+x=1/2: C_third remainder after s/t + h t^-1/2 + c at t=[0.004, 0.002, 0.001, 0.0005]: 2.08e-01, 1.57e-01, 1.15e-01, 8.32e-02  (should scale like t^{1/2})
+   q^8 f fit coefficients [t^-1/2, t^0, t^1/2, t^1, t^3/2, t^2]: 8.86e-01, 1.31e-03, 7.90e+00, 3.67e+00, 1.45e+02, 4.43e+02;  predicted t^-1/2 coeff |2h_C - h_E| = 0.886227
+x=1/3: C_third remainder after s/t + h t^-1/2 + c at t=[0.004, 0.002, 0.001, 0.0005]: 1.28e-02, 1.15e-02, 9.43e-03, 7.30e-03  (should scale like t^{1/2})
+   q^8 f fit coefficients [t^-1/2, t^0, t^1/2, t^1, t^3/2, t^2]: 8.38e-01, 1.98e-03, 8.40e-01, 7.88e-01, 1.16e+01, 2.92e+01;  predicted t^-1/2 coeff |2h_C - h_E| = 0.838269
+x=1/7: C_third remainder after s/t + h t^-1/2 + c at t=[0.004, 0.002, 0.001, 0.0005]: 7.15e-02, 5.83e-02, 4.52e-02, 3.39e-02  (should scale like t^{1/2})
+   q^8 f fit coefficients [t^-1/2, t^0, t^1/2, t^1, t^3/2, t^2]: 5.21e-01, 1.72e-02, 3.95e+00, 7.69e+00, 9.07e+00, 3.48e+01;  predicted t^-1/2 coeff |2h_C - h_E| = 0.521582
+x=1/5: C_third remainder after s/t + h t^-1/2 + c at t=[0.004, 0.002, 0.001, 0.0005]: 2.09e-01, 1.55e-01, 1.13e-01, 8.18e-02  (should scale like t^{1/2})
+   q^8 f fit coefficients [t^-1/2, t^0, t^1/2, t^1, t^3/2, t^2]: 9.90e-01, 1.67e-01, 3.20e+00, 6.52e+01, 6.75e+02, 2.02e+03;  predicted t^-1/2 coeff |2h_C - h_E| = 0.988826
