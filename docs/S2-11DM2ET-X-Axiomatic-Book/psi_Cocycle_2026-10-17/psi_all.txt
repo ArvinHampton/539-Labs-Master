@@ -1,0 +1,4 @@
+44 grid rationals
+grid: max |exact - period integral| = 2.70e-14
+40 random rationals (denominators<=60, both signs): max |exact - period integral| = 1.12e-13
+symmetry check psi_minus(-x) = conj(psi(x)) on the negative ones: max dev = 7.73e-14
