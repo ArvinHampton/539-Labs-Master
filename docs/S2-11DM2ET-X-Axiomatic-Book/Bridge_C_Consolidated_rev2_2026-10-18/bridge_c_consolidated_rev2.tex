@@ -1,0 +1,1137 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,array,longtable}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\usepackage{xcolor}
+\usepackage{xurl}
+\sloppy
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{mainthm}{Theorem}
+\renewcommand{\themainthm}{\Alph{mainthm}}
+\newtheorem{revthm}{Theorem}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{conjecture}[theorem]{Category B statement}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Hb}{\mathbb{H}}
+\newcommand{\Qbar}{\overline{\mathbb{Q}}}
+\newcommand{\e}{\mathbf{e}}
+\newcommand{\Ok}{\mathcal{O}}
+\newcommand{\K}{\mathcal{K}}
+\newcommand{\fp}{\mathfrak{p}}
+\newcommand{\fa}{\mathfrak{a}}
+\newcommand{\ff}{\mathfrak{f}}
+\newcommand{\fm}{\mathfrak{m}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\Res}{\operatorname*{Res}}
+\newcommand{\Thol}{\Theta_{\mathrm{hol}}}
+\newcommand{\Cthird}{C_{\mathrm{third}}}
+\newcommand{\Caxis}{C_{\mathrm{axis}}}
+\newcommand{\Cmixed}{C_{\mathrm{mixed}}}
+\newcommand{\Nm}{\mathrm{N}}
+\newcommand{\catA}[1]{\par\smallskip\noindent\fbox{\parbox{0.96\linewidth}{\small\textbf{Status (Category A).} #1}}\par\smallskip}
+\newcommand{\catB}[1]{\par\smallskip\noindent\fbox{\parbox{0.96\linewidth}{\small\textbf{Category B.} #1}}\par\smallskip}
+\newcommand{\src}[1]{\textup{[S#1]}}
+
+\title{The Bridge Series $C$ residual: real-quadratic structure over $\Q(\sqrt{35})$,\\
+a Baker obstruction, and an explicit vector-valued\\ quantum modular law}
+\author{Arvin Hampton\\ \small 539 Labs}
+\date{Consolidated write-up, 18 October 2026 --- revision 2\\ \small (internal working paper; not externally refereed)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Let $Q_7(n,k)=n^2+7nk+\tfrac72 k(k+1)$, an indefinite binary quadratic polynomial whose
+quadratic part has discriminant $35$. We study the orthant series
+$P_s=\sum_{n,k\ge 0}q^{Q_7(n,k)}$, which is the common non-theta remainder of the
+``Bridge Series'' $C=P_s-H_s$ and of $\Cthird=\sum_{n,k\ge1}q^{n^2+7nk+\frac72k(k-1)}$,
+where $H_s$ is a signature-$(1,1)$ Zwegers-type indefinite theta series.
+We prove the elementary decomposition $2P_s=E+1+\theta_3-\Thol$, in which
+$\Thol$ is a Zwegers holomorphic part and $E(q)=\sum_{\fa\in\K}q^{(\Nm\fa+7)/20}$ is the
+partial theta series of a single narrow ray class $\K$ of $\Q(\sqrt{35})$ modulo $\fp_2\fp_5\infty_1\infty_2$.
+The radial asymptotics at $q\to1$ have leading coefficient
+$I=\log(6+\sqrt{35})/(2\sqrt{35})$; combined with Baker's theorem this excludes every
+representation of $C$ or $\Cthird$ as an algebraic combination of classical modular, mock
+(signature $(1,1)$), unary, partial or false theta objects plus an $o(1/t)$ error, and it excludes
+all quotient laws $C\cdot g=F$ and all scalar $W_7$ slash laws. In the opposite direction,
+the Siegel theta lift of $\K$ over the closed geodesic of the unit $6+\sqrt{35}$ yields a
+$140$-label family of weight-$0$ Maass forms with eigenvalue $1/4$, carrying a $72$-dimensional
+representation of $\mathrm{PSL}_2(\Z)$ (the lattice is odd, so a characteristic vector enters the $T$-law).
+The order-$t^0$ $S$-cocycle of the fundamental-domain cone sums is the Lewis--Zagier period
+function of these forms; it is real-analytic on $\R\setminus\{0\}$ for the automorphy factor
+$|cx+d|$. The family splits as $60$ Eisenstein plus $12$ cuspidal dimensions, the latter spanned by
+$12$ explicit dihedral Maass forms (of level $19600$ by standard theory). For the scalar row we prove (given three
+earlier inputs) an exact twisted Herglotz/digamma closed form for the cocycle and a closed
+Gauss-sum formula for the dual cone sum $E_R$. The cusp rows at rationals are shown numerically to
+be finite combinations of Hecke $L$-values at $s=0$. Every statement is labelled as proved,
+exactly/finitely verified, or numerically verified (Category A), or as interpretation/conjecture
+(Category B). No claim is made concerning HQCC termination, the twin prime conjecture, or the Riemann
+hypothesis.
+\end{abstract}
+
+\tableofcontents
+
+%=====================================================================
+\section{Introduction}
+%=====================================================================
+
+\subsection{Origin and scope}
+The series studied here arise as the ``Bridge Series~$C$'' in the S$^2$-11DM$^2$ET-X framework
+(repository \path{ArvinHampton/539-Labs-Master}, directory
+\path{docs/S2-11DM2ET-X-Axiomatic-Book/}, file \path{Residual_Bridge_Series_C_Definition.md}).
+The question posed there was whether $C$ satisfies a ``residual law'': a modular part plus a controlled
+remainder, or an exact weight-$\tfrac12$ slash relation. This paper consolidates seven internal reports
+(dated 17--18 October 2026; listed in \S\ref{sec:sources}) and the errata recorded in the repository on
+17 October 2026. It is written to be read without the framework: all objects are defined from scratch
+below, and nothing in this paper depends on, or is claimed to bear on, other parts of the framework.
+
+\paragraph{What is not claimed.} \emph{No claim is made about HQCC termination, about the twin prime
+conjecture, or about the Riemann hypothesis.} We do not claim that $C$, $\Cthird$ or $P_s$ is modular,
+mock modular, or quantum modular as a scalar $q$-series; the quantum-modular statements concern the
+fundamental-domain cone-sum vector of \S\ref{sec:lz}.
+
+\subsection{Category convention}\label{sec:cat}
+Throughout, every result carries one of the following labels, and the label is repeated in every section.
+\begin{itemize}[leftmargin=2em]
+\item \textbf{Category A} (proved or exactly verified). We always state the precise status, among:
+\emph{proved} (written proof in the sources, not audited); \emph{proved, audited once} (one internal audit
+pass, \S\ref{sec:audit}); \emph{exact finite verification} (rational or integer arithmetic over a stated
+range); \emph{numerically verified} (floating-point or multiprecision agreement at a stated tolerance);
+\emph{conditional on} a named cited theorem or on PARI/GP; \emph{PSLQ identification} (a closed form
+recognised from high-precision numerics).
+\item \textbf{Category B} (interpretation, expectation or conjecture): statements resting on standard
+theory that was not re-proved, analogies, and untested expectations.
+\end{itemize}
+
+\subsection{The lattice and the quadratic polynomial}
+Write $\e(x)=e^{2\pi i x}$ and $q=\e(\tau)$, $\tau\in\Hb$. Let
+\[
+A=\begin{pmatrix}2&7\\7&7\end{pmatrix},\qquad B(x,y)=x^{\mathsf T}Ay,\qquad
+Q(x)=\tfrac12B(x,x)=x_1^2+7x_1x_2+\tfrac72x_2^2 .
+\]
+Then $\det A=-35$, $Q$ has signature $(1,1)$, $L=\Z^2$ is an \emph{odd} lattice ($Q(L)\not\subset\Z$),
+$L'=A^{-1}\Z^2$ with $A^{-1}=\begin{pmatrix}-1/5&1/5\\1/5&-2/35\end{pmatrix}$, $|L'/L|=35$, and the level is
+$70$ (the least $N$ with $NA^{-1}$ even integral) \src{1, A5}. Put
+\[
+Q_7(n,k)=Q(n,k)+\tfrac72k=n^2+7nk+\tfrac72k(k+1),\qquad
+Q_-(n,k)=n^2+7nk+\tfrac72k(k-1)=Q_7(-n,-k).
+\]
+With $a=(\tfrac7{10},-\tfrac15)$ one has $Aa=(0,\tfrac72)$, $Q(a)=-\tfrac7{20}$, hence
+\begin{equation}\label{eq:shift}
+Q_7(v)=Q(v+a)+\tfrac{7}{20}\qquad(v\in\Z^2).
+\end{equation}
+The characteristic vector of the odd lattice is $w_c=A^{-1}(0,\tfrac12)=(\tfrac1{10},-\tfrac1{35})$; it satisfies
+$\e(Q(n))=\e(B(n,w_c))$ for $n\in\Z^2$ and $w_c\equiv a\pmod{L'}$ \src{4, \S2.3}.
+Let $\varepsilon=6+\sqrt{35}$, the fundamental unit of $K=\Q(\sqrt{35})$ ($\Nm\varepsilon=+1$), and
+\[
+I=\frac{\log\varepsilon}{2\sqrt{35}}=0.209419820314714631473\ldots
+\]
+
+\subsection{The series}
+All definitions are those of \path{Residual_Bridge_Series_C_Definition.md} (ll.~11--36) and
+\path{Pursue_All_C_Closure_Status_2026-08-23.md} (ll.~41--46), as quoted in \src{1, \S0}.
+Let $c_1=(-1,1)$, $c_2=(-4,1)$; then $Q(c_1)=-\tfrac52$, $Q(c_2)=-\tfrac{17}2$ (negative norm), and for
+$v=(n,k)$, $B(c_1,v)=5n$, $B(c_2,v)=-n-21k$. With $\sgn(0)=0$ put
+$w(v)=\tfrac12\bigl(\sgn B(c_1,v)-\sgn B(c_2,v)\bigr)$ (so $w=\tfrac12$ on the walls). Define
+\begin{align*}
+P_s&=\sum_{n,k\ge0}q^{Q_7(n,k)}, &
+H_s&=\sum_{v\in\Z^2}w(v)\,q^{Q_7(v)}, &
+C&:=P_s-H_s,\\
+\Caxis&=\tfrac32+\sum_{n\ge1}q^{n^2}+\sum_{k\ge1}q^{7k(k+1)/2}, &
+\Cthird&=\sum_{n,k\ge1}q^{Q_-(n,k)}, &
+\Cmixed&:=C-\Caxis-\Cthird.
+\end{align*}
+Further, $\theta_3=\sum_{n\in\Z}q^{n^2}$, $R:=\sum_{n\ge0,\,k\ge1}q^{Q_7(n,k)}$,
+\[
+\Thol:=\sum_{n\ge1,\,k\ge0}q^{Q_-(n,k)}-\sum_{n\le0,\,k\le-1}q^{Q_-(n,k)},
+\]
+the holomorphic part of a Zwegers indefinite theta function \cite{Zw}, and $f_{a,b,c}$ is the
+Hecke-type double sum of Hickerson--Mortenson \cite[Def.~0.2]{HM},
+$f_{a,b,c}(x,y,q)=\sum_{\sgn(r)=\sgn(s)}\sgn(r)(-1)^{r+s}x^ry^sq^{a\binom r2+brs+c\binom s2}$, with
+$\sgn(r)=1$ for $r\ge0$ and $-1$ for $r<0$ in this formula.
+
+Finally, for a rational $x=h/m$ ($\gcd(h,m)=1$) define the Gauss mean
+\[
+G(x)=(2m)^{-2}\sum_{(n,k)\bmod 2m}\e\bigl(xQ_7(n,k)\bigr).
+\]
+
+\subsection{Summary of results}
+In one sentence: $C$ and $\Cthird$ share the remainder $P_s$; $P_s$ is, up to theta and mock pieces,
+one ray class partial theta series of $\Q(\sqrt{35})$; its regulator-type singularity rules out every scalar
+modular/mock ``residual law'' (Baker); and the obstruction is resolved, not by a scalar law, but by a
+vector-valued weight-$1$ quantum modular structure coming from a Siegel theta lift to weight-$0$ Maass
+forms, whose cocycle is computed in closed form.
+The precise statements are collected in \S\ref{sec:main}.
+
+%=====================================================================
+\section{Main results}\label{sec:main}
+%=====================================================================
+Each theorem is followed by its exact status. Section references in brackets $[\mathrm{S}n]$ are to the
+source reports listed in \S\ref{sec:sources}.
+
+\begin{mainthm}[Shared remainder]\label{thm:A}
+As formal $q$-series,
+\begin{enumerate}[label=(\roman*)]
+\item $\Cthird=q^8f_{2,7,7}(-q^{10},-q^{14},q)+P_s$;
+\item $C-\Cthird=-H_s-q^8f_{2,7,7}(-q^{10},-q^{14},q)$;
+\item $\Thol=q^8f_{2,7,7}(-q^{10},-q^{14},q)+\theta_3=\Cthird+\sum_{n\ge1}q^{n^2}-R$, and $P_s=R+\tfrac12(1+\theta_3)$;
+\item $\Cmixed=-H_s-q^8f_{2,7,7}(-q^{10},-q^{14},q)-\Caxis$ vanishes through $q^{293}$ but not identically:
+$\Cmixed=-\tfrac12q^{294}+\tfrac12q^{301}-q^{330}+q^{337}-q^{368}+q^{375}-\cdots$.
+\end{enumerate}
+\end{mainthm}
+\catA{(i) proved by reindexing \src{1, A1}; (ii)--(iv) follow from (i) and the definitions by elementary
+reindexing (\S\ref{sec:elem}; the reindexing for (iii) is written out in this consolidation); all
+identities also checked with exact rational coefficients through $q^{3000}$ \src{1, A1}. The
+first nonzero terms in (iv) are an exact computation.}
+
+\begin{mainthm}[Real-quadratic decomposition and ray class]\label{thm:B}
+Let $\K$ be the narrow ray class modulo $\fp_2\fp_5\infty_1\infty_2$ of $K=\Q(\sqrt{35})$ containing
+$\fp_7(\alpha_1)$ for any $\alpha_1\equiv1\bmod^\times\fp_2\fp_5$ with signs $(-,+)$. Then
+\[
+2P_s=E+1+\theta_3-\Thol,\qquad E(q)=\sum_{\fa\in\K}q^{(\Nm\fa+7)/20},
+\]
+and $E$ is the sum of $q^{Q_7(v)}$ over $v+a$ in one fundamental cone for the action of the automorph
+$\gamma=\begin{pmatrix}-1&-7\\2&13\end{pmatrix}$ (eigenvalues $6\pm\sqrt{35}$) on the positive sector.
+\end{mainthm}
+\catA{Proved: algebraic identification by hand with symbolic checks of the key identities \src{2, A1--A2};
+uses that $\Z[\sqrt{35}]$ is the maximal order and its unit group is $\pm\varepsilon^\Z$. The cone identity is
+checked exactly to $q^{3000}$ for four fundamental cones. Not audited.}
+
+\begin{mainthm}[Radial asymptotics and partial zeta values]\label{thm:C}
+As $t\to0^+$, with $q=e^{-t}$,
+$P_s=I/t+a_P\,t^{-1/2}+\tfrac{11-7I}{20}+O(t^{1/2})$ with $a_P=\sqrt\pi(49-2\sqrt{14})/140=0.5256172043\ldots$;
+$E=2I/t+\tfrac{1-7I}{10}+O(t)$ with no half-integral powers; $\zeta(0,\K)=\tfrac1{10}$,
+$\zeta(-1,\K)=\tfrac{29}{60}$, $\Res_{s=1}\zeta(s,\K)=\log\varepsilon/(20\sqrt{35})$;
+and $C=I/t+a_C\,t^{-1/2}+\tfrac{11-7I}{20}+O(t^{1/2})$ with
+\[
+a_C=\sqrt\pi\,\bigl(833+204\sqrt{14}-14\sqrt{1190}\bigr)/2380=0.8291426171\ldots
+\]
+The full table of coefficients is Table~\ref{tab:radial}.
+\end{mainthm}
+\catA{$P_s$, $R$, $E$ rows and $a_P$: exact (symbolic Euler--Maclaurin) \src{2, A3}. $\zeta(0,\K)$, $\zeta(-1,\K)$:
+exact rational arithmetic, confirmed by five independent Shintani cone decompositions \src{4, \S4.1}.
+$a_H$ and $a_C$: explicit Euler--Maclaurin expressions evaluated to 30 digits; the radical forms are PSLQ
+identifications at 30 digits; numerically confirmed (remainder $\sim\sqrt t$ down to $t=2.5\cdot10^{-5}$).
+The constant term $0$ of $H_s$ is known to 30 digits only. \textbf{Correction:} the earlier fitted value
+$\approx0.8174$ for $a_C$ is superseded (erratum, \S\ref{sec:recon}).}
+
+\begin{mainthm}[Gauss-mean pattern]\label{thm:D}
+For $\gcd(h,m)=1$: $G(h/m)=0$ if $2\mid m$ or $5\mid m$; $|G(h/m)|=1/m$ if $\gcd(m,70)=1$;
+$|G(h/m)|=\sqrt7/m$ if $7\mid m$ and $\gcd(m,10)=1$. Moreover
+$\lim_{t\to0^+}t\,S(\e(x)e^{-t})=I\cdot G(x)$ for $S\in\{P_s,C,\Cthird\}$ and every rational $x$.
+\end{mainthm}
+\catA{Pattern: proved \src{2, A4}; checked on all $3374$ coprime pairs with $m\le105$. Limit: Euler--Maclaurin
+argument \src{1, A2, Lemma 3}, numerically checked to $t=6.25\cdot10^{-4}$.}
+
+\begin{mainthm}[Baker obstruction: scalar no-go]\label{thm:E}
+\begin{enumerate}[label=(\roman*)]
+\item (Additive.) There is no identity $S=F+\mathcal E$ with $S\in\{C,\Cthird\}$, $F$ in the $\Qbar$-span
+$\mathcal M$ of \S\ref{sec:baker} (holomorphic modular forms with algebraic coefficients, signature-$(1,1)$
+Zwegers holomorphic parts with rational characteristics, unary/partial/false theta series), and
+$\mathcal E(e^{-t})=o(1/t)$.
+\item (Multiplicative.) For holomorphic modular forms $g\not\equiv0$ and $F$ of any weights, levels and
+multipliers, with complex coefficients, and any $q^r$ factor: $\Cthird\cdot g\neq F$ and $C\cdot g\neq F$.
+\item (Scalar $W_7$.) For no $k$ and no constant $\lambda$ is
+$C(\tau)-\lambda(7\tau)^{-k}C(-1/(7\tau))$ radially bounded at all rationals.
+\end{enumerate}
+\end{mainthm}
+\catA{(i) proved, \emph{conditional on} Baker's theorem \cite{Baker} and on the $q$-expansion principle
+(algebraicity of expansions at all cusps), both cited and not re-proved; theorem numbers not re-checked
+\src{1, A3}. (ii) for $\Cthird$: proved \src{1, A4}; for $C$ over $\C$: proved, the nonvanishing input being
+$a_C=0.829\ldots\neq0$ from a 30-digit evaluation of an explicit expression \src{2, A3} (erratum E2).
+(iii) exact finite computation: $178$ of $270$ test rationals (denominator $<30$) have exactly one of
+$G(x),G(-1/(7x))$ zero, including $x=5/7$ \src{1, A5}; the zero pattern is explained by Theorem~\ref{thm:D}.}
+
+\begin{mainthm}[Theta lift and vector-valued $S/T$ law]\label{thm:F}
+Let $u_{\alpha,\beta}$ ($\alpha\in(\{0,a\}+L')/\Z^2$, $\beta\in\{0,-a\}$; $140$ labels) be the
+Siegel-theta lifts of \S\ref{sec:lift}. Each $u_{\alpha,\beta}$ is a weight-$0$ Laplace eigenfunction with
+$\lambda=\tfrac14$, and
+\[
+u_{\alpha,\beta}(-1/w)=\frac{\e(B(\alpha,\beta))}{\sqrt{35}}\sum_{p\in L'/\Z^2}u_{p-\beta,\alpha}(w),\qquad
+u_{\alpha,\beta}(w+1)=\e\bigl(-Q(\alpha)-B(\alpha,w_c)\bigr)\,u_{\alpha,\alpha+\beta+w_c}(w).
+\]
+The resulting $S$, $T$ matrices are unitary, $S^2=P$ (the label involution $(\alpha,\beta)\mapsto(-\alpha,-\beta)$),
+and on the $72$-dimensional $P$-invariant subspace $S^2=(ST)^3=I$: a $72$-dimensional representation of
+$\mathrm{PSL}_2(\Z)$.
+\end{mainthm}
+\catA{$S$-law: proved by Poisson summation \src{4, \S2.1}, independent of Borcherds \cite{Borcherds}.
+$T$-law: derived \src{4, \S2.3}. Group relations: numerically verified ($1.3\cdot10^{-15}$). $S$/$T$ laws numerically
+verified on all $140$ rows ($\le1.2\cdot10^{-15}$). Not audited. \textbf{Correction:} the earlier ``36-component''
+family and ``Weil representation on the 35-element discriminant group'' are superseded (erratum, \S\ref{sec:recon}).}
+
+\begin{mainthm}[Lewis--Zagier period formula; quantum modularity]\label{thm:G}
+Let $\Psi(z)=E_L(-1/z)-(z/\sqrt{35})E_R(z)$ (\S\ref{sec:lz}). Then $\Psi$ extends holomorphically from $\Hb$ to
+$\C\setminus i\R$, and for $x>0$
+\[
+\psi(x)=\frac{x}{\pi\sqrt{35}}\Bigl(\int_0^{i\infty}[u_R,R_x^{1/2}]-\frac{\log\varepsilon}2\Bigr),
+\]
+where $\psi$ is the order-$t^0$ radial $S$-cocycle; with the factor $|x|$ the same holds for $x<0$ and
+$\psi(-x)=\overline{\psi(x)}$. The analogous closed form holds on every row of the $140$-label vector
+cocycle $\Phi$, which is real-analytic on $\R\setminus\{0\}$ and satisfies the three-term relation \eqref{eq:3term}.
+\end{mainthm}
+\catA{Green-form constant $C=-\pi/2$: proved \src{4, \S1}. Stokes argument: written \src{3, A3}. Fourier/integral
+interchange (R2) and sector-uniform Euler--Maclaurin (R1): written proofs in \src{7, \S6}, audited once as part of
+the $E_R$ audit. Numerically: $84$ rationals to $1.1\cdot10^{-13}$ \src{3}; all $140$ rows to $2.3\cdot10^{-14}$;
+three-term relation to $7\cdot10^{-15}$ \src{4, \S3}. The phrase ``quantum modular form in Zagier's sense'' for the real
+factor $|cx+d|$ is terminology (Category B).}
+
+\begin{mainthm}[Eisenstein/cusp split]\label{thm:H}
+$u_L=u_{a,0}$ and $u_R$ are pure Eisenstein (combinations of the $8$ genus series attached to
+$\psi\circ\Nm$, $\psi\bmod20$). The $72$-dimensional representation splits $\mathrm{SL}_2(\Z)$-equivariantly as
+$60$ (Eisenstein; $116$ components) $+$ $12$ (cuspidal; $24$ components with $\beta=-a$ and $7$-denominator
+$\alpha\in a+L'$). The cusp components are exact combinations of $12$ dihedral Maass forms
+($\lambda=\tfrac14$) from the ray class characters of conductor $(2\sqrt{35})$ of pure infinity type.
+Consequently $\psi_{\rm cusp}\equiv0$ for the scalar cocycle.
+\end{mainthm}
+\catA{$u_L$ Eisenstein: hand proof independent of PARI \src{5, \S5} plus exact coefficient match for all
+$n\le60\,000$ \src{5, \S2}. $60+12$ split, equivariance: numerically verified (fit residual $4.4\cdot10^{-14}$, equivariance
+$9\cdot10^{-17}$), using PARI ray-class data for the modulus $\fp_2^3\fp_5\fp_7\infty_1\infty_2$. Category B: cuspidality
+$\Leftrightarrow\chi\neq\chi\circ\sigma$, level $19600$, nebentypus, newform status (standard theory \cite{Maass}).
+\textbf{Correction:} the earlier claim that $u_L$ has a nonzero dihedral cusp part is withdrawn (\S\ref{sec:recon}).}
+
+\begin{mainthm}[Herglotz closed form; $=$ Theorem 1 of \src{7}]\label{thm:I}
+On $U=\Hb\cup\{\mathrm{Re}\,z>0\}$,
+\[
+\Psi(z)=\frac18\sum_{j\in\{0,2,4,6\}}\sum_{l\in\{0,1\}}\e(-j/8)\,R_{j,l}(z),\qquad
+R_\chi(z)=\sum_{m\ge1}a_\chi(m)\sum_{s=1}^{140}\rho^\chi_s\,\psi_\Gamma\Bigl(\frac s{140}+\frac m{20z}\Bigr),
+\]
+with $\psi_\Gamma=\Gamma'/\Gamma$ and the data of \S\ref{sec:herglotz}. In particular (given R1) $\psi(x)$ for rational
+$x>0$ equals this expression.
+\end{mainthm}
+\begin{mainthm}[Closed form of $E_R$; $=$ Theorem 2 of \src{7}]\label{thm:J}
+\[
+E_R(z)=\frac{\sqrt{35}}{140}\sum_\chi w_\chi\sum_{n,k\ge1}\widehat b_\chi(n)\,\check a_\chi(k)\,\e(nkz/140),\qquad w_\chi=\e(-j/8)/16.
+\]
+\end{mainthm}
+\catA{Theorems~\ref{thm:I}--\ref{thm:J}: \emph{proved, audited once} (one internal pass; verdict ``pass with fixes'';
+all fixes applied in rev.~2), \emph{given} the inputs (I1) $E_L=\sum_\chi w_\chi G_\chi(\cdot/20)$, (I2) the Maass
+$S$-law, (I3) the Green-form lemma and Stokes continuation, which are earlier Category A results not re-audited.
+Numerically verified: Theorem~\ref{thm:I} to $5.5\cdot10^{-35}$ on $\Hb$, to $\le9.2\cdot10^{-16}$ off $\Hb$, to
+$5.7\cdot10^{-35}$ at rationals; Theorem~\ref{thm:J} for all $N\le14\,000$ ($627$ nonzero coefficients identical as
+elements of $\Z[\phi]$). No arithmetic (Gauss-sum or ideal-theoretic) proof of Theorem~\ref{thm:J} is claimed.}
+
+\begin{mainthm}[Cusp rows and $L(0)$]\label{thm:K}
+For every cusp row $c$ and each of the seven rationals $x\in\{1,\tfrac13,2,\tfrac35,\tfrac74,-1,-\tfrac23\}$, the radial
+constants $\kappa_c(h/k)$ entering $\Phi_c(x)$ are explicit finite combinations of ray-class Hecke $L$-values
+$L_{\fm_k}(0,\chi')$ of $K$; only totally odd characters contribute, and the $L(0)$ values lie in $\Z[\zeta_{12}]$.
+Replacing $L(0,\cdot)$ by $L(\tfrac12,\cdot)$ fails by up to $0.32$.
+\end{mainthm}
+\catA{Numerically verified at the seven points, all $24$ cusp rows, to $4\cdot10^{-14}$, \emph{conditional on PARI}
+\texttt{lfun}. The $\Z[\zeta_{12}]$ values are recognitions to $10^{-10}$. Not proved. The structure
+$\mathrm{Cl}^+_{(2\sqrt{35})\infty_1\infty_2}\cong\Z/2\times\Z/2\times\Z/24$ with $\sigma$-action, types and conductors is
+hand-certified without PARI \src{6, \S3}.}
+
+%=====================================================================
+\section{The real-quadratic decomposition and the ray class}\label{sec:rq}
+%=====================================================================
+
+\subsection{Elementary identities (Theorem~\ref{thm:A})}\label{sec:elem}
+\begin{proof}[Proof of Theorem~\ref{thm:A}]
+(i) \src{1, A1}. In $q^8f_{2,7,7}(-q^{10},-q^{14},q)$ put $n=r+1$, $k=s+1$. The signs $(-1)^{r+s}$ from $x=-q^{10}$,
+$y=-q^{14}$ cancel those in $f$, and on $r,s\ge0$ the exponent is
+$8+10r+14s+r(r-1)+7rs+\tfrac72s(s-1)=Q_-(n,k)$; this orthant gives $\Cthird$. On $r,s<0$, after
+$(r,s)=(-1-n,-1-k)$ the exponent is $Q_7(n,k)$ with sign $-1$; this gives $-P_s$.
+
+(ii) is (i) combined with $C=P_s-H_s$. For (iii) (reindexing written for this consolidation): in the
+second sum defining $\Thol$ substitute $(n,k)=(-n',-k')$ with $n'\ge0$, $k'\ge1$; since $Q_-(-v)=Q_7(v)$ it equals $R$.
+The first sum is $\Cthird+\sum_{n\ge1}q^{n^2}$ (split $k\ge1$ and $k=0$). Hence $\Thol=\Cthird+\sum_{n\ge1}q^{n^2}-R$.
+The $k=0$ row of $P_s$ gives $P_s=R+\sum_{n\ge0}q^{n^2}=R+\tfrac12(1+\theta_3)$, and then (i) gives
+$\Thol=q^8f+\theta_3$. (iv) is the definition combined with (ii).
+\end{proof}
+\catA{All identities in Theorem~\ref{thm:A} were in addition checked with exact rational coefficients through $q^{3000}$; the
+$H_s$ summation box was enlarged by $30$ with identical output \src{1, A1}.}
+
+\begin{remark}[Origin of $\Cmixed$]
+At $q^{294}$ the point $(21,-1)$ lies on the $c_2$-wall $n+21k=0$, has $w=\tfrac12$ and lies outside the orthant,
+contributing $-\tfrac12$. Points such as $(22,-1)$ ($q^{330}$) and $(-22,1)$ ($q^{337}$) lie in the $H_s$ cones but outside the
+orthant. Thus ``$C=\Caxis+\Cthird$'' holds only through $q^{293}$. The coefficient set $\{0,1,\tfrac32\}$ holds through $q^{101}$
+only (first coefficient $2$ at $q^{102}$, first $3$ at $q^{144}$, first $\tfrac12$ at $q^{294}$); through $q^{3000}$ the set is
+$\{0,\tfrac12,1,\tfrac32,2,3\}$. The support $\{0,1,2,4\}\bmod 7$ holds for all terms since $Q_7\equiv n^2\pmod7$.
+(Category A, exact; repository erratum E1 of 17 Oct.)
+\end{remark}
+
+Consequently, every part of $C$ and of $\Cthird$ other than $P_s$ is a signature-$(1,1)$ mock/indefinite theta object or a
+unary theta series, and the residual-law question is a question about $P_s$ alone. Note also that $R$ is a cone sum of the
+\emph{indefinite} form $Q_7$ (positive only on the closed orthant), so it cannot be split by inclusion--exclusion into full
+lattice theta series: $\sum_{\Z^2}q^{Q_7}$ diverges \src{1, A1, F1}.
+
+\subsection{Automorphs and the fundamental cone}
+In the coordinates $\nu=v+a$, let $\rho_1=\begin{pmatrix}1&7\\0&-1\end{pmatrix}$, $\rho_2=\begin{pmatrix}-1&0\\2&1\end{pmatrix}$
+\src{2, A1}. Both are integral reflections preserving $Q$; $\rho_1$ fixes the ray $\nu_2=0$, $\rho_2$ fixes $\nu_1=0$, the two walls
+of $C_0=\{\nu_1>0,\nu_2>0\}$. Their product $\gamma=\rho_2\rho_1$ has eigenvalues $6\pm\sqrt{35}$. The reflections swap $a+\Z^2$ and
+$-a+\Z^2$; $\gamma$ preserves $a+\Z^2$. Coset points never lie on the walls ($\nu_1\equiv0.7$, $\nu_2\equiv0.8\bmod1$). Hence
+$C_0\cup\rho_2C_0$ is a fundamental domain $F$ for $\langle\gamma\rangle$ on the positive sector $S^+$, and
+\begin{equation}\label{eq:Edef}
+E:=R+\Cthird+\sum_{n\ge1}q^{n^2}=\sum_{v:\;v+a\in F}q^{Q_7(v)}
+\end{equation}
+for any $\gamma$-fundamental cone $F=[r,\gamma r)\subset S^+$. With Theorem~\ref{thm:A}(iii) this gives
+$R-(\Cthird+\sum_{n\ge1}q^{n^2})=-\Thol$ and, adding, $2P_s=E+1+\theta_3-\Thol$.
+\catA{Proved \src{2, A1}; reflections and coset behaviour checked symbolically; \eqref{eq:Edef} checked exactly to $q^{3000}$ for
+$r=(1,0),(1,1),(7,-1),(1,2)$. Also $E_{-a}=E_a$ exactly to $q^{3000}$, so the sign-twisted partner $E_a-E_{-a}$ (a weight-$1$
+Hecke form in Zwegers' $c_2=\gamma c_1$ set-up) vanishes for this coset.}
+
+\subsection{Ray-class identification (Theorem~\ref{thm:B})}
+Put $(X,Y)=10\nu\in(7,-2)+10\Z^2$ and $\beta=(2X+7Y)+Y\sqrt{35}\in\Z[\sqrt{35}]$ \src{2, A2}. Then $Q(\nu)=\Nm(\beta)/400$,
+$\beta(\gamma\nu)=\varepsilon\beta(\nu)$, $\beta$ runs over $\beta_0+10\fp_2$ with $\beta_0=-2\sqrt{35}$ and
+$\fp_2=(2,1+\sqrt{35})$, and $\nu\in S^+\Leftrightarrow\beta\gg0$. With $\mathfrak d'=\gcd((\beta_0),10\fp_2)=\fp_2^2\fp_5$ and
+$\ff=\fp_2\fp_5$, the ideals $\fa=(\beta)\mathfrak d'^{-1}$ are exactly $\alpha\fp_7$ with $\alpha\equiv1\bmod^\times\ff$ and
+$\sgn\alpha=(-,+)$: one narrow ray class $\K$ modulo $\ff\infty_1\infty_2$. Totally positive units $\equiv1\bmod^\times\ff$ are
+$\varepsilon^\Z$ ($\varepsilon\equiv1$ mod $\fp_2$ and mod $\fp_5$), so $\gamma$-orbits correspond bijectively to ideals in $\K$, and
+$\Nm\fa=20Q_7(v)-7$. This yields Theorem~\ref{thm:B}. Sanity check: the first norms are $13,73,133=7\cdot19,153=9\cdot17,173,\dots$, all
+$\equiv13\bmod20$.
+\catA{Proved: hand algebra with symbolic checks of $Q=\Nm(\beta)/400$ and $\beta(\gamma\nu)=\varepsilon\beta$ \src{2, A2}. Not audited.
+The region-to-class bijection was also checked exactly against PARI's independent ideal enumeration up to norm $60\,000$ \src{5, \S5}.}
+
+\begin{remark}[Group data]
+$\mathrm{Cl}(K)=\Z/2$, $\mathrm{Cl}^+(K)=(\Z/2)^2$; $|\mathrm{Cl}^+_{\ff\infty_1\infty_2}|=16$, with structure $\Z/8\times\Z/2$.
+Category A: $\mathrm{Cl}(K)$ and the order $16$ are hand-certified (Minkowski bound $\sqrt{140}/2\approx5.92$; $h\varphi(\ff)2^2/[U:U_{\ff,1}]=2\cdot4\cdot4/2$)
+\src{5, \S5}; the group structure $\Z/8\times\Z/2$ and the narrow class group are from PARI (\texttt{bnfcertify}$=1$) \src{4, \S4.2}.
+\end{remark}
+
+\subsection{Analytic consequences}
+By Hecke, $\zeta(s,\K)=\sum_{\fa\in\K}\Nm\fa^{-s}$ continues meromorphically with a single simple pole at $s=1$, so
+\[
+E(e^{-t})=e^{-7t/20}\Bigl[\frac{20\Res_{s=1}\zeta(s,\K)}{t}+\sum_{j\ge0}\zeta(-j,\K)\frac{(-t/20)^j}{j!}\Bigr]
+\]
+has an expansion in integral powers of $t$; by Siegel--Klingen the $\zeta(-j,\K)$ are rational.
+The exact computation gives $\Res_{s=1}\zeta(s,\K)=\log\varepsilon/(20\sqrt{35})$, $\zeta(0,\K)=\tfrac1{10}$ \src{2, A2}, and
+$\zeta(-1,\K)=20\,\zeta_E(-1)=\tfrac{29}{60}$, where $\zeta_E(s)=\sum_{\nu\in F\cap(a+\Z^2)}Q(\nu)^{-s}$, $\zeta_E(0)=\tfrac1{10}$,
+$\zeta_E(-1)=\tfrac{29}{1200}$ \src{3, A5}.
+\catA{The exact values are Euler--Maclaurin computations in rational arithmetic; the half-integral coefficients vanish
+identically (symbolic); independently confirmed by five Shintani cones $[r,\gamma r)$, $r\in\{(1,0),(1,1),(1,2),(2,1),(3,2)\}$
+($|\det|=2,23,58,43,130$), each giving $\tfrac1{10}$ and $\tfrac{29}{1200}$ \src{4, \S4.1}. The appeal to Hecke and Siegel--Klingen
+\cite{Hecke,SiegelKlingen} is to standard theorems cited by name; rationality is used only as a sanity check.}
+\catB{The residue matches the narrow ray-class residue formula $R_\ff/(w\sqrt{d_K}\,\Nm\ff)$ with $d_K=140$, $\Nm\ff=10$, $w=1$; this was
+not re-checked against a source \src{2, B4}. The Mellin transform of $P_s$ is a Shintani-type cone zeta whose residue is ``class-number-like''
+\src{1, B2}.}
+
+%=====================================================================
+\section{Asymptotics and the Baker obstruction}\label{sec:baker}
+%=====================================================================
+
+\subsection{Radial expansions}
+Table~\ref{tab:radial} \src{2, A3} lists the coefficients of $t^{-1},t^{-1/2},t^0$ at $q=e^{-t}$. The method is two-dimensional
+Euler--Maclaurin on shifted quadrants; for $H_s$ the closed cone $\langle(0,1),(21,-1)\rangle$ is decomposed into $21$ residue
+classes $(s,0)+\mathbb N v_1+\mathbb N v_2$ minus half-walls (decomposition exact to $q^{2000}$).
+\begin{table}[ht]\centering\small
+\begin{tabular}{lccc}\toprule
+series & $t^{-1}$ & $t^{-1/2}$ & $t^0$\\\midrule
+$P_s$ & $I$ & $\sqrt\pi(49-2\sqrt{14})/140=0.5256172043$ & $(11-7I)/20=0.4767030629$\\
+$\Cthird$ & $I$ & $-\sqrt\pi(49-2\sqrt{14})/140$ & $(11-7I)/20$\\
+$R$ & $I$ & $-0.3606097211$ & $(1-7I)/20$\\
+$E$ & $2I$ & $0$ & $(1-7I)/10$\\
+$H_s$ & $0$ & $a_H=\sqrt\pi(\sqrt{1190}-17\sqrt{14})/170=-0.3035254127$ & $0$ (to 30 digits)\\
+$C$ & $I$ & $a_C=\sqrt\pi(833+204\sqrt{14}-14\sqrt{1190})/2380=0.8291426171$ & $(11-7I)/20$\\\bottomrule
+\end{tabular}
+\caption{Radial coefficients at $q=e^{-t}$ \src{2, A3}. Status as in Theorem~\ref{thm:C}.}\label{tab:radial}
+\end{table}
+Consistency: $2P_s=E+1+\theta_3-\Thol$ forces the $t^{-1/2}$ coefficient of $\Thol$ to be $\sqrt\pi-2a_P=\sqrt\pi(21+2\sqrt{14})/70$.
+For $Z(s)=\sum_{(n,k)\ge0,\ne0}Q_7^{-s}$: simple poles at $s=1$ (residue $I$) and $s=\tfrac12$ (residue $(49-2\sqrt{14})/140$), and
+$Z(0)=-(9+7I)/20$; the $\log\varepsilon$ in $Z(0)$ comes entirely from the shift $\tfrac7{20}$ \src{2, A3}.
+
+\begin{lemma}[Zwegers parts carry no $1/t$ term {\src{1, A2, Lemma 2}}]\label{lem:zw0}
+The holomorphic part of any signature-$(1,1)$ indefinite theta $\vartheta^{c_1,c_2}_{a,b}$ with $c_1,c_2$ of negative norm and rational
+$a,b$ has $1/t$ coefficient $0$ at $q=e^{-t}$. This covers $H_s$, $\Thol$ and $q^8f_{2,7,7}$.
+\end{lemma}
+\begin{proof}[Sketch]
+The weight is $+1$ on a cone $\mathcal C$ and $-1$ on $-\mathcal C$ (walls contribute $O(t^{-1/2})$). The mean of $\e(B(\nu,b))$ over the coset is the same on
+$\mathcal C$ and $-\mathcal C$, and $Q$ is even, so the leading integrals cancel.
+\end{proof}
+\catA{Proved (symmetry argument; null cones excluded). Numerically $t\,H_s\to0$ (fit $-0.0002$).}
+
+\subsection{The additive obstruction (Theorem~\ref{thm:E}(i))}
+Let $\mathcal M$ be the $\Qbar$-span of: (i) $q^rf$, $r\in\Q$, $f$ a holomorphic weight-$1$ form on some $\Gamma(N)$ with $\Qbar$
+coefficients; (ii) $q^rf$ with $f$ of half-integral weight, and $f$ of integral weight $k\ge2$ without $q^r$ shift; (iii) $q^r$ times
+Zwegers holomorphic parts as in Lemma~\ref{lem:zw0}; (iv) unary, partial and false theta series
+$\sum_{n\ge n_0}\psi(n)n^\epsilon q^{an^2+bn}$ with $\psi$ periodic and $\Qbar$-valued, $\epsilon\in\{0,1\}$, $a>0$ \src{1, A3}.
+\begin{proof}[Proof of Theorem~\ref{thm:E}(i)]
+Multiply by $t$ and let $t\to0^+$. Class (i) contributes $2\pi\beta$ with $\beta\in\Qbar$ (algebraic expansion of $f|S$); (ii) contributes $0$;
+(iii) contributes $0$ by Lemma~\ref{lem:zw0}; (iv) contributes $0$ or $\mathrm{mean}(\psi)/(2a)\in\Qbar$. So $I=2\pi\beta+\gamma'$ with
+$\beta,\gamma'\in\Qbar$, i.e.\ $\log(6+\sqrt{35})+4\sqrt{35}\,i\beta\log(-1)-2\sqrt{35}\gamma'=0$, a nontrivial $\Qbar$-linear relation
+among $1$, $\log(6+\sqrt{35})$, $\log(-1)=i\pi$. Since $\log(6+\sqrt{35})$ (real, nonzero) and $i\pi$ are $\Q$-linearly independent,
+Baker's theorem \cite{Baker} says $1,\log\alpha_1,\log\alpha_2$ are $\Qbar$-linearly independent: contradiction.
+\end{proof}
+\catA{Proved, conditional on Baker \cite{Baker} and on algebraicity of cusp expansions (Shimura's $\Q(\zeta_N)$-rationality / the
+$q$-expansion principle); neither re-derived, theorem numbers not re-checked \src{1, A3}. Lemma 1 of \src{1} (the radial expansion) is now
+covered by the sector-uniform Euler--Maclaurin argument R1 of \S\ref{sec:R1}.}
+\catB{Reading: the remainder of $C$ is ``weight-1 sized'' at $q\to1$ with a regulator as coefficient; weight-$\tfrac12$ false thetas are
+$O(t^{-1/2})$ and cannot carry it. An Appell--Lerch formula for $E$ or $P_s$ with algebraic data would likewise be excluded, but this needs
+the $q\to1$ asymptotics of Appell--Lerch sums, which were not verified; that obstruction is \emph{conditional} \src{2, B3}.}
+
+\subsection{The multiplicative obstruction (Theorem~\ref{thm:E}(ii))}
+\begin{proof}
+Along $q=e^{-t}$, $F/g=c\,t^{-j}e^{-\alpha/t}(1+O(e^{-\beta/t}))$ times a power series in $t$, so only integer-step powers of $t$ occur;
+but $\Cthird$ has the nonzero term $-a_Pt^{-1/2}$ and $C$ the nonzero term $a_Ct^{-1/2}$ (Table~\ref{tab:radial}) \src{1, A4; 2, A3}.
+\end{proof}
+\catA{Proved. For $C$ the nonvanishing of $a_C$ rests on the 30-digit value $0.8291\ldots$ (far from $0$). This covers every space with
+$k\in\{\tfrac12,1,\tfrac32,2\}$, $N\mid140$ or $280$; no Sturm-bound search was needed.}
+
+\subsection{Gauss means and the scalar $W_7$ obstruction}
+\begin{proof}[Proof of Theorem~\ref{thm:D} (pattern), after {\src{2, A4}}]
+If $2\mid m$, shift $k\mapsto k+m$: $(Q_7(n,k+m)-Q_7(n,k))/m=7n+7k+\tfrac72(m+1)$ and the phase $\e(7h(m+1)/2)=-1$, so $G=0$. If $m$ is odd,
+$Q_7$ is $m$-periodic and $2$ is invertible mod $m$; with $n'=n+7\cdot2^{-1}k$, $hQ_7\equiv h[n'^2-\tfrac{35}4k^2+\tfrac72k]$ and
+$G=m^{-2}g_ng_k$ with $|g_n|=\sqrt m$. If $5\mid m$, the shift $(n,k)\mapsto(n-m/5,k+m/5)$ changes the constant part by $j/5$, $j\equiv1\bmod5$,
+so $G=0$. If $\gcd(m,35)=1$, completing the square gives $|g_k|=\sqrt m$. If $7^e\Vert m$, $5\nmid m$, by CRT the $7$-part of $g_k$ is $7\sum_{k\bmod 7^{e-1}}\e\bigl(h(-\tfrac54k^2+\tfrac k2)/7^{e-1}\bigr)$, of modulus $7^{(e+1)/2}$,
+so $|G|=\sqrt7/m$.
+\end{proof}
+\catA{Proved; verified on all $3374$ coprime pairs with $m\le105$, zero mismatches. For $x=h/7$, $G=\bigl(\tfrac h7\bigr)i/\sqrt7$.}
+
+For the scalar $W_7$ question \src{1, A5}: a singularity $\sim G(x)I/(2\pi\varepsilon')$ at $x$ (with $\tau=x+i\varepsilon'$) maps under
+$W_7$ to $\sim|7x|^2G(-1/(7x))I/(2\pi\varepsilon')$, so boundedness of $C-\lambda(7\tau)^{-k}C(-1/(7\tau))$ would force
+$G(x)=\lambda(7x)^{-k}|7x|^2G(-1/(7x))$ for all $x$. This fails at the $178$ zero-mismatch points; on the $60$ pairs of common support the
+moduli obey an exact \emph{weight-1} relation with $|\lambda|=7^{-1/2}$ but the phase varies ($\pi/2$ at $1/7$ and $1$, $-\pi/6$ at $1/3$ and
+$3/7$); for $W_{35},W_{70},W_{140}$ there are no pairs with both values nonzero. The map $\tau\mapsto-1/(7\tau)$ does not normalise $\Gamma_0(70)$.
+\catA{Exact finite computation (floating-point exponential sums; nonzero values $\ge0.034$, zeros $<10^{-9}$).}
+\catB{The scalar failure is \emph{vector mixing}: the leading profiles obey a vector-valued law (\S\ref{sec:lead}), under which $W_7$-type
+maps mix components; this is not a contradiction with modularity of the vector (erratum E3).}
+
+\begin{remark}[Published sample values]
+The four ``Fricke samples'' of the framework (magnitudes $19.80,1.82,9.24,20.90$ at $x=1/7,3/7,5/7,1$) are not radial values of $C$,
+$\Cthird$ or $P_s$: $|C(0.995\,\e(x))|\approx19.5,18.5,19.9,54.0$ \src{1, B1}. The 4-parameter ``residual factor'' fitted to $4$ ratios
+(interpolation determinant $36.14118\neq0$) is an interpolation, not a test \src{1, A6}. The finite radial targets are the singular coefficients
+$I\cdot G(x)$; e.g.\ $I\cdot G(1)=I$ and $|I\cdot G|=I/\sqrt7=0.079153\ldots$ at $x=1/7,3/7,5/7$. The near-equality $|{\rm sample}(1)|=20.90\approx I/(2t)=20.89$ is a numerical
+coincidence (Category B: no evidential weight).
+\end{remark}
+
+%=====================================================================
+\section{The theta lift and the vector-valued $S/T$ law}\label{sec:lift}
+%=====================================================================
+
+\subsection{Leading order: radial profiles}\label{sec:lead}
+For $\alpha,\beta\in\Q^2$ let $G_{\alpha,\beta}(x)$ be the mean over $\nu\in\alpha+\Z^2$ of $\e(xQ(\nu)+B(\nu,\beta))$; this is the $1/t$
+radial profile (divided by the cone measure) of any cone sum over that coset and twist. Then \src{2, A5}
+\[
+G_{a,b}(-1/x)=\frac{\e(B(a,b))}{\sqrt{35}\,|x|}\sum_{p\in A^{-1}\Z^2/\Z^2}G_{b+p,-a}(x),\]
+\[
+G_{a,b}(x+1)=\e\bigl(-Q(a)-\tfrac12B(A^{-1}A^*,a)\bigr)\,G_{a,\,a+b+\frac12A^{-1}A^*}(x).
+\]
+\catA{Numerically exact: $S$-law to $10^{-14}$ in all $27$ tests (components $(a,0)$, $(p,-a)$, $(a+p_7,p_2)$, $9$ values of $x$ incl.\ zeros of $G$);
+$T$-law exact on tests. The shift $\tfrac12A^{-1}A^*=(\tfrac12,0)$ is congruent to $w_c$ mod $L'$, so these checks stand after the odd-lattice
+correction (erratum E1 to the $\psi$ package). \emph{Rev.~2:} the factor is $1/(\sqrt{35}\,|x|)$; with the signed factor $x$ the ratio is exactly $-1$ at every negative $x$ tested \src{11}, consistent with Theorem~\ref{thm:G}. A general written proof of the profile law is not in the sources (Category B as a theorem).}
+
+At the cusp pair $(0,\infty)$ no exact vector-valued \emph{modular} law with algebraic data can hold: at $x=0$ each cone sum has singular part
+$IG/t\neq0$, while at $\infty$ there is no $q^0$ term ($Q$ has no nonzero rational zeros since $35$ is not a square); an exact law would force
+$I\in\pi\Qbar+\Qbar$, excluded by Baker \src{2, A5} (Category A, conditional on Baker).
+At order $t^{-1/2}$ the \emph{quadrant}-cone vector fails the weight-$1$ $S$-law ($|{\rm LHS}|/|{\rm RHS}|\in[0.49,2.97]$ over $16$ tests,
+either wall convention), while the \emph{fundamental-domain} vector has vanishing $t^{-1/2}$ coefficients ($\le5\cdot10^{-15}$) \src{2, A6}
+(Category A, finite computation; the second-order formula is a derivation in the source).
+
+\subsection{Siegel theta and Poisson summation}
+Fix a majorant (a point of the $\gamma$-geodesic) with $Q=Q_++Q_-$ and put $G_\tau(\nu)=\e(\tau Q_+(\nu)+\bar\tau Q_-(\nu))$,
+$\Theta_{\alpha,\beta}(\tau)=\sum_{\nu\in\alpha+\Z^2}\e(B(\nu,\beta))G_\tau(\nu)$. Poisson summation, with
+$\widehat G_{-1/\tau}(A\eta)=(|\tau|/\sqrt{35})G_\tau(\eta)$ (the two square roots of $\det(M/i)=35|\tau|^2$ are complex conjugate), gives
+\src{4, \S2.1}
+\begin{equation}\label{eq:thetaS}
+\Theta_{\alpha,\beta}(-1/\tau)=|\tau|\,\frac{\e(B(\alpha,\beta))}{\sqrt{35}}\sum_{p\in L'/\Z^2}\Theta_{p-\beta,\alpha}(\tau).
+\end{equation}
+
+\subsection{The lift}
+Integrating over the closed geodesic of $\langle\gamma^k\rangle$ ($k=2$ is the common stabiliser order on all labels), unfolding with
+$\int_\R e^{-a\cosh2w}\,dw=K_0(a)$ and geodesic length $\log\varepsilon$, and multiplying by $\sqrt y$ ($w=x+iy$) gives \src{3, A1; 5, \S1}
+\[
+u_{\alpha,\beta}(w)=\sqrt y\Bigl[\log\varepsilon\cdot\delta_{\alpha\in\Z^2}+\tfrac12\!\!\sum_{\nu\bmod\gamma^2}\!\!\e(B(\nu,\beta))\,K_0(2\pi|Q(\nu)|y)\,\e(Q(\nu)x)\Bigr],
+\]
+the sum over $\nu\in\alpha+\Z^2$, $\nu\neq0$, in all four sign regions $\pm S^+$, $\pm T^+$ (negative-norm vectors give negative frequencies; the
+fundamental cones are $[e_1,\gamma e_1)$, $[f,\gamma f)$, $f=(1,-1)$, and their negatives). Each term $\sqrt yK_0(2\pi|n|y)\e(nx)$, and $\sqrt y$,
+is a $\Delta$-eigenfunction with $\lambda=\tfrac14$. The scalar rows are $u_L=u_{a,0}$ and $u_R=\sum_pu_{p,-a}$; for these the formula reduces to
+$u_L=\sqrt y\sum_{\nu\in(a+\Z^2)/\langle\gamma\rangle}K_0(\cdot)\e(\cdot)$ and
+$u_R=\sqrt y[\log\varepsilon+\sum_{0\neq\nu\in L'/\langle\gamma\rangle}\e(B(\nu,-a))K_0(\cdot)\e(\cdot)]$ \src{3, A1}.
+Reductions: $u_{\alpha+n,\beta}=u_{\alpha,\beta}$ ($n\in\Z^2$), $u_{\alpha,\beta+\mu}=\e(B(\alpha,\mu))u_{\alpha,\beta}$ ($\mu\in L'$),
+$u_{-\alpha,-\beta}=u_{\alpha,\beta}$.
+
+\begin{proof}[Proof of Theorem~\ref{thm:F} (sketch)]
+Integrate \eqref{eq:thetaS} over the geodesic and use $\sqrt{\mathrm{Im}(-1/\tau)}=\sqrt y/|\tau|$; the factor $|\tau|$ cancels and gives the
+weight-$0$ $S$-law; the constant term $\sqrt y\log\varepsilon$ comes from $\nu=0$ and appears exactly when $\alpha\in\Z^2$. For $(a,0)$ the right
+side is $\tfrac1{\sqrt{35}}\sum_pu_{p,a}=u_R/\sqrt{35}$ using $u_{p,a}=u_{-p,-a}$, i.e.\ $u_L(-1/w)=u_R(w)/\sqrt{35}$. The $T$-law follows from
+$\e(Q(n))=\e(B(n,w_c))$; the naive even-lattice $T$-law fails by $O(1)$. With labels $\alpha\in(\{0,a\}+L')/\Z^2$ ($70$ classes) and
+$\beta\in\{0,-a\}$ the family is closed; each row of $S$ has exactly $35$ entries of modulus $1/\sqrt{35}$, $T$ is monomial.
+\end{proof}
+\catA{$S$-law proved by Poisson summation (written, not audited); $T$-law derived; numerically on all $140$ rows at three points with
+$y\approx1$: $|u(-1/w)-Su(w)|\le1.2\cdot10^{-15}$, $|u(w+1)-Tu(w)|\le7\cdot10^{-16}$, $|Pu-u|\le6\cdot10^{-16}$; on the $72$-dimensional
+$P$-invariant subspace $S^2=I$, $(ST)^3=I$ to $1.3\cdot10^{-15}$ \src{4, \S2.4}. Borcherds \cite[Thm.~4.1]{Borcherds} gives the same
+automorphy factor $(c\tau+d)^{b^+/2}(c\bar\tau+d)^{b^-/2}$ and was used in the earlier report; it is no longer needed.
+The $S$-law $u_L(-1/w)=u_R(w)/\sqrt{35}$ was also checked to $6\cdot10^{-11}$ and $u_L(w+1)=\e(13/20)u_L(w)$ exactly \src{3, A1}.}
+
+\begin{remark}
+The $36$ components used in \src{2} are not closed under $T$; their cyclic $S,T$-span from $u_L$ has dimension $36$ inside the $72$
+\src{5, \S3.2}. The positive Fourier coefficients satisfy $f_{u_L}=2E_L$, $f_{u_R}=2E_R$ (the automorph $-\rho_1$ maps $S^+$ to $S^-$ preserving
+the coset and phase) \src{3, A1}, checked for all norms $\le25$ (Category A, numerical).
+\end{remark}
+
+%=====================================================================
+\section{The Lewis--Zagier cocycle and quantum modularity}\label{sec:lz}
+%=====================================================================
+
+\subsection{Definitions}
+Let $F=[e_1,\gamma e_1)$ (half-open, vertex excluded). For labels $(\alpha,\beta)$ set
+$E_{\alpha,\beta}(\tau)=\sum_{\nu\in F\cap(\alpha+\Z^2)}\e(B(\nu,\beta))\e(\tau Q(\nu))$, $E_L=E_{a,0}$ and $E_R=\sum_pE_{p,-a}$.
+Thus $E_L(\tau)=\sum_{\fa\in\K}\e(\tau\Nm\fa/20)$ and $E=q^{7/20}E_L$. At rational $x$,
+$E(x+iy)=2I\,G(x)/t+\kappa(x)+O(t)$ with no $t^{-1/2}$ term. The \emph{scalar cocycle} is
+\[
+\psi(x)=\kappa_L(-1/x)-\frac{x}{\sqrt{35}}\sum_p\kappa_{p,-a}(x),
+\]
+a finite Shintani-type sum of $B_2$, $B_1B_1$ and roots of unity at each rational; hence $\psi(h/m)\in\Q(\zeta_N,\sqrt{35})$ \src{3}.
+For the vector, let $f_{\alpha,\beta}$ be the $\gamma$-averaged positive-frequency parts of $u_{\alpha,\beta}$, $\kappa$ the vector of their radial
+constant terms, and $\Phi(x)=\kappa(-1/x)-|x|\,S\kappa(x)$. Normalisation: $\Phi_{(a,0)}=2\psi$ (since $f_{u_L}=2E_L$) \src{4, \S3}.
+
+\subsection{The Green-form lemma}
+Let $R_z(w)=\mathrm{Im}\,w/((w-z)(\bar w-z))$, $[u,v]=u_wv\,dw+uv_{\bar w}\,d\bar w$ and $T_n(w)=\sqrt yK_0(2\pi|n|y)\e(nx)$.
+\begin{lemma}[{\src{4, \S1}}]\label{lem:green}
+For $z\in\Hb$, $F_n(z):=\int_z^{z+i\infty}[T_n,R_z^{1/2}]$ (vertical ray) equals $-\tfrac\pi2\e(nz)$ for $n>0$ and $0$ for $n<0$, and
+$\int_z^{z+i\infty}[\sqrt y,R_z^{1/2}]=\tfrac12$.
+\end{lemma}
+\begin{proof}[Sketch]
+$\Delta_wR_z^{1/2}=\tfrac14R_z^{1/2}$ and the form is closed (sympy). $R_z$ is holomorphic in $z$ and the endpoint term vanishes
+($R^{-1/2}\to0$ like $|w-z|^{1/2}$), so $F_n$ is holomorphic; translation covariance gives $F_n=C_n\e(nz)$. For $n<0$ boundedness forces $C_n=0$.
+For $n>0$, Laplace's method as $y\to\infty$ with $K_\nu(X)=\sqrt{\pi/(2X)}e^{-X}(1+O(1/X))$ (DLMF 10.40.2) gives the limit
+$(\sqrt{\pi a}/2)\int_0^\infty s^{-1/2}e^{-as}ds=\pi/2$ with $a=2\pi n$, and an overall minus sign. For $n=0$ the integral is
+$\tfrac14B(\tfrac12,1)=\tfrac12$.
+\end{proof}
+\catA{Proved (written proof; symbolic ingredients checked by sympy); earlier 30-digit quadrature ($-1.5707963267949$) is a cross-check.
+Not audited. This is the $s=\tfrac12$ case of the Lewis--Zagier construction \cite[Ch.~II \S2]{LZ}; the proof does not depend on the citation.}
+
+\subsection{The period formula (Theorem~\ref{thm:G})}
+\begin{proof}[Sketch {\src{3, A3}}]
+By Lemma~\ref{lem:green}, $-\tfrac\pi2\cdot2E_L(-1/z)=\int_{-1/z}^{i\infty}[u_L,R^{1/2}_{-1/z}]$. Pull back by $w\mapsto-1/w$ using
+$u_L(-1/w)=u_R(w)/\sqrt{35}$, $R_{-1/z}(-1/w)=z^2R_z(w)$ and invariance of the Green form, obtaining
+$(z/\sqrt{35})\int_z^0[u_R,R_z^{1/2}]$. Subtract $(z/\sqrt{35})\int_z^{i\infty}[u_R,R_z^{1/2}]=(z/\sqrt{35})(-\pi E_R(z)+\tfrac12\log\varepsilon)$ and
+close the contour (closedness; integrable branch point; convergence at $0$ since $u_R(it)=\sqrt{35}u_L(i/t)$ decays exponentially, at $i\infty$
+since the constant-term integrand is $O(t^{-2})$). This gives
+$\Psi(z)=\tfrac{z}{\pi\sqrt{35}}\bigl(\int_0^{i\infty}[u_R,R_z^{1/2}]-\tfrac12\log\varepsilon\bigr)$, holomorphic wherever $z^2+t^2\neq0$ on the path, i.e.\ on
+$\C\setminus i\R$. Boundary values: by R1 (\S\ref{sec:R1}) the radial expansions hold non-tangentially; since $\Psi$ is bounded near $x>0$ the
+singular terms cancel and $\Psi(x)=\psi(x)$.
+\end{proof}
+The split-contour form used numerically is $\psi(x)=-\tfrac1\pi\bigl[\tfrac x{\sqrt{35}}(\tfrac12\log\varepsilon-J_R(x))+J_L(-1/x)\bigr]$,
+$J(z)=\int_i^{i\infty}[u,R_z^{1/2}]$. For every row $u=u_{\alpha,\beta}$, with $U$ the corresponding $S$-row combination and $a_0$ the constant
+term \src{4, \S3},
+\[
+\Phi_u(x)=-\frac2\pi\Bigl[\,|x|\frac{a_0(U)}2-\frac{a_0(u)}2-|x|J_U(x)+J_u(-1/x)\Bigr].
+\]
+From $f(z+1)=Tf(z)$ and $(ST)^3=I$,
+\begin{equation}\label{eq:3term}
+\Phi(z)=T\,\Phi\bigl(z/(z+1)\bigr)+\frac z{z+1}\,TST\,\Phi(z+1).
+\end{equation}
+\catA{Proved given Lemma~\ref{lem:green}, the $S$-law, R1 and R2 (\S\ref{sec:R1}). Numerically: period formula vs.\ exact Bernoulli sums on
+$84$ rationals (denominators $\le60$, both signs), max deviation $1.1\cdot10^{-13}$; a holomorphic fit from $\mathrm{Im}\,z\ge0.01$ reproduces the
+real-axis values to $2\cdot10^{-12}$ at $169$ rationals; negative side with factor $|x|$ to $1.6\cdot10^{-14}$; $\psi(-x)=\overline{\psi(x)}$ to
+$8\cdot10^{-14}$ \src{3}. All $140$ rows at $x\in\{1,\tfrac13,2,\tfrac35,\tfrac74,-1,-\tfrac23\}$: singular cancellation $9.0\cdot10^{-16}$, no
+$t^{-1/2}$ terms $5.7\cdot10^{-16}$, $P\kappa=\kappa$ $5.3\cdot10^{-15}$, closed form $2.3\cdot10^{-14}$; \eqref{eq:3term} at
+$z\in\{1,\tfrac12,\tfrac23,\tfrac32\}$ to $7\cdot10^{-15}$ \src{4, \S3}.}
+
+\paragraph{The automorphy factor.} With the holomorphic factor $x$ the cocycle at $x<0$ is unbounded (it grows like $1/y$); with the real factor
+$|x|$, the boundary value of $E_L(-1/z)+(z/\sqrt{35})E_R(z)$ gives the conjugate. Near $0$, $\psi(x)\approx-0.0549i\,x^2+0.0206\,x^3$ (from
+$x=0.01,0.05$); $\psi$ is not analytic at $0$. Since $T$ acts by phases and $S,T$ generate, every $h_\gamma$ is real-analytic off
+$\gamma^{-1}\infty$ \src{3, A4}. Example: $\psi(1)=0.006883993760419869190321587-0.03825971221697307224258855\,i$ \src{6}.
+\catB{Interpretation: the $72$-dimensional fundamental-domain vector is a vector-valued quantum modular form of weight $1$ in Zagier's sense for the
+real automorphy factor $|cx+d|$ (``weight $(\tfrac12,\tfrac12)$''), i.e.\ the $f$-function of a $\lambda=\tfrac14$ Maass vector, with exceptional
+set $\{0\}$ for $S$; $E$ itself is then a ``renormalised'' weight-$1$ quantum modular object with the singular parts $I\cdot G(x)$ removed. The
+Lewis--Zagier period-function reading \cite{LZ} and the broader context of \cite{BLZ} are cited for context only.}
+
+%=====================================================================
+\section{The Eisenstein/cusp split}\label{sec:split}
+%=====================================================================
+
+\subsection{$u_L$ is Eisenstein}
+Modulo $\ff\infty_1\infty_2$ ($\ff=\fp_2\fp_5$; $\mathrm{Cl}^+_\ff=\Z/8\times\Z/2$) each sign region of $u_L$ is one ray class:
+$S^+\mapsto(5,0)$, $S^-\mapsto(1,0)$, $T^+\mapsto(1,1)$, $T^-\mapsto(5,1)$, with lattice counts equal to ideal counts for every $n\le60\,000$
+\src{5, \S2}. With $d=(4,0)$ the class of a totally negative element $\equiv1\bmod\ff$, $S^-=S^++d$ and $T^-=T^++d$, so each character
+coefficient carries $(1+\bar\chi(d))$ and the characters $\chi_{j,l}$ with $j$ odd (exactly the non-$\sigma$-invariant ones) drop out:
+\[
+u_L(w)=\tfrac14\sum_{j\in\{0,2,4,6\}}\e(-j/8)\bigl[U^{\cos}_{\chi_{j,0}}(w)+i\,U^{\sin}_{\chi_{j,1}}(w)\bigr],\]
+\[
+U^{\cos/\sin}_\chi=\sqrt y\!\!\sum_{(\fa,10)=1}\!\!\chi(\fa)K_0\Bigl(\frac{2\pi\Nm\fa\,y}{20}\Bigr)\{2\cos,2\sin\}\Bigl(\frac{2\pi\Nm\fa\,x}{20}\Bigr).
+\]
+Each of the $8$ characters is a genus character $\psi\circ\Nm$, $\psi$ of conductor dividing $20$, normalised by $\psi(7)=\chi(\fp_7)$
+(Table~\ref{tab:genus}), with coefficients $\lambda_\chi(n)=1_{(n,10)=1}\sum_{d\mid n}\psi(d)(\psi\chi_{140})(n/d)$.
+\begin{table}[ht]\centering\small
+\begin{tabular}{llll}\toprule
+$\chi$ & $\psi$ & $\psi\chi_{140}$ & type\\\midrule
+$\chi_{0,0}$ & $1$ & $\chi_{140}$ & $(0,0)$\\
+$\chi_{0,1}$ & $\chi_{-4}$ & $\chi_{-35}$ & $(1,1)$\\
+$\chi_{4,0}$ & $\chi_5^2=(\tfrac5\cdot)$ & $\chi_{28}$ & $(0,0)$\\
+$\chi_{4,1}$ & $\chi_{-20}$ & $\chi_{-7}$ & $(1,1)$\\
+$\chi_{2,0}$ & $\chi_5^3\chi_{-4}$ & $\chi_5\chi_{-7}$ & $(0,0)$\\
+$\chi_{2,1}$ & $\chi_5^3$ & $\chi_5\chi_{-4}\chi_{-7}$ & $(1,1)$\\
+$\chi_{6,0}$ & $\chi_5\chi_{-4}$ & $\chi_5^3\chi_{-7}$ & $(0,0)$\\
+$\chi_{6,1}$ & $\chi_5$ & $\chi_5^3\chi_{-4}\chi_{-7}$ & $(1,1)$\\\bottomrule
+\end{tabular}
+\caption{The genus characters $\chi_{j,l}(c)=\e(jc_1/8+lc_2/2)$; $\chi_5$ is the quartic character mod $5$ with $\chi_5(2)=i$ \src{5, \S2}.}\label{tab:genus}
+\end{table}
+\catA{Hand proof independent of PARI \src{5, \S5}: $\mathrm{Cl}(K)=\Z/2$; $|\mathrm{Cl}^+_\ff|=16$; $S^-=S^++d$ by $\beta(-\nu)=-\beta(\nu)$, $d\neq0$
+since $-\varepsilon^k\equiv-1\bmod\fp_5$; the $8$ characters $\psi\circ\Nm$ ($\psi\bmod20$) are distinct, satisfy $\psi\circ\Nm(d)=1$, and hence are
+exactly the characters with $\chi(d)=1$. Exact coefficient match $A(n)=\#(S^+\cup S^-)$, $B(n)=\#(T^+\cup T^-)$ for every $n\le60\,000$ (error
+$10^{-15}$). Calling the pieces Maass--Eisenstein series $E_{\psi,\psi\chi_{140}}(\cdot,\tfrac12)$ is standard (Category B).}
+
+\subsection{The $60+12$ split and the dihedral forms}
+Every one of the $140$ components is exactly a ray class theta series modulo $\fm=\fp_2^3\fp_5\fp_7\infty_1\infty_2$ (fit over $n$ coprime to $70$
+up to $54\,880$; max residual $4.4\cdot10^{-14}$ over $280$ fits). Expanding in characters: mixed-type content $\le10^{-29}$; $116$ components have
+cusp content $\le3\cdot10^{-30}$ (pure Eisenstein); $24$ components have Eisenstein content $\le8\cdot10^{-31}$ (pure cusp). The cusp rows have rank $12$
+and the Eisenstein rows rank $60$ in the $72$-dimensional space; the split is preserved by $S$ and $T$ (coefficientwise $\le9\cdot10^{-17}$)
+\src{5, \S3}. The cusp components are the $\beta=-a$ twists of the cosets with $\alpha\cdot70\in\{(49,\ast),(63,\ast),(7,\ast),(21,\ast)\}$ (indices
+$73,75,\dots,125$ in \src{5, \S3.3}).
+
+Modulo $\fp_2\fp_5\infty_1\infty_2$ the non-$\sigma$-invariant characters all have \emph{mixed} type (weight-$1$ holomorphic, cancelling in $u$); pure-type
+(Maass) cusp characters first appear at modulus $(2\sqrt{35})\infty_1\infty_2=\fp_2^2\fp_5\fp_7\infty_1\infty_2$ \src{5, \S3.1}. There, of $96$
+characters, $24$ are non-$\sigma$-invariant of pure type, all of conductor $(2\sqrt{35})$ ($12$ of type $(0,0)$, $12$ of type $(1,1)$), $48$ are mixed and
+$24$ are genus \src{6, \S3}. With $\chi=\chi_{j,l,1}$, $j$ odd mod $24$, $\sigma: j\mapsto13j$, one obtains one form per $\sigma$-orbit and each $l$:
+\[
+u_\chi(z)=\sqrt y\sum_{n\ge1}\lambda_\chi(n)K_0(2\pi ny)\cdot\{2\cos(2\pi nx)\ (l=0);\ 2i\sin(2\pi nx)\ (l=1)\},\qquad
+\lambda_\chi(n)=\sum_{\Nm\fa=n}\chi(\fa),
+\]
+$6$ even and $6$ odd, of level $140\cdot\Nm(\ff_\chi)=19600$, nebentypus $\chi_{140}\omega_0$ with $\omega_0(n)=\chi((n))$ even mod $35$ (consistent on
+$27$ primes). Each cusp component is $u_c(w)=\sum_\chi2\widehat F_c(\chi)u_\chi(w/140)$ with $\widehat F_c(\chi)=\tfrac1{48}\e(k_{c,\chi}/60)$; e.g.\ for
+$c=73$, $k=7,57,47,37,27,17$ for $j=1,3,5,7,9,11$ ($l=0$), shifted by $30$ for $l=1$ \src{5, \S3.4}.
+\catA{Numerically verified fits and split (PARI ray-class data for $\fm$; base field certified with \texttt{bnfcertify}$=1$); phases recognised to
+$6\cdot10^{-9}$ from $10^{-14}$-accurate fits. The structure of $\mathrm{Cl}^+_{(2\sqrt{35})\infty_1\infty_2}$ is hand-certified (\S\ref{sec:L0});
+the structure at the fitting modulus $\fp_2^3\fp_5\fp_7\infty_1\infty_2$ is PARI-only.}
+\catB{Maass's construction \cite{Maass} of dihedral $\lambda=\tfrac14$ forms from pure-type Hecke characters; cuspidality $\Leftrightarrow\chi\neq\chi\circ\sigma$;
+the level formula $d_K\Nm(\ff_\chi)$; newform status; Hecke's theory \cite{Hecke} cited generically.}
+
+\paragraph{Consequence for $\psi$.} Both representations of the scalar $\psi$ involve only $u_L$ and $u_R$, which are Eisenstein; hence
+$\psi_{\rm cusp}\equiv0$, $\psi=\psi_{\rm Eis}$ (Category A given the above). The $24$ cusp rows of $\Phi$ are nonzero (e.g.\
+$\Phi_{73}(1)=0.120446470003+0.176437422094\,i$); their identification as Lewis--Zagier period functions of the cusp vector is Category B.
+
+%=====================================================================
+\section{The Herglotz closed form (Theorems~\ref{thm:I} and~\ref{thm:J})}\label{sec:herglotz}
+%=====================================================================
+All statements in this section are from \src{7} (rev.~2) and its audit \src{8}. Status: \emph{proved, audited once (internal), pass with
+fixes, all fixes applied; given (I1)--(I3)}.
+
+\subsection{Data}
+For each genus character $\chi=\chi_{j,l}$ (Table~\ref{tab:genus}) with its $\psi\bmod20$: $a(m)=\psi(m)1_{(m,10)=1}$ (period $20$, $a(0)=0$);
+$b(k)=\psi(k)\chi_{140}(k)$ (period $140$, $b(0)=b(140)=0$); parities $\eta_a=\psi(-1)$, $\eta_b=\psi(-1)\chi_{140}(-1)=\eta_a$, so
+$\eta_a\eta_b=1$ ($\chi_{140}$ is even, $K$ being real). Gauss sums
+$\widehat b(n)=\sum_{r\bmod140}b(r)\e(rn/140)$, $\check a(k)=\sum_{r\bmod20}a(r)\e(kr/20)$; $\rho_n=-\widehat b(n)/(2\pi i\cdot140)$, which is
+$140$-periodic with $\rho_0=0$, $\rho_{-n}=\eta_b\rho_n$, $\sum_{s=1}^{140}\rho_s=0$. Put $G_\chi(\tau)=\sum_{m,k\ge1}a(m)b(k)\e(mk\tau)$,
+$\varphi(X)=\sum_s\rho_s\psi_\Gamma(s/140+X)$, $R_\chi(z)=\sum_{m\ge1}a(m)\varphi(m/(20z))$, $w_\chi=\e(-j/8)/16$. Equivalently
+$R_\chi(z)=-140z\sum_{m,n\ge1}a(m)\rho_n/(7m+nz)$. When $\psi'=\psi\chi_{140}$ is primitive mod $140$, $\rho_s=-\tau(\psi')\overline{\psi'(s)}/(2\pi i\cdot140)$
+\src{6, \S0}.
+
+\paragraph{Inputs.} (I1) $E_L=\sum_\chi w_\chi G_\chi(\cdot/20)$ (\S\ref{sec:split}; $w_\chi=\bar\chi(S^+)/16$). (I2) the Maass $S$-law
+(Theorem~\ref{thm:F}). (I3) Lemma~\ref{lem:green} and the Stokes continuation of $\Psi$ (Theorem~\ref{thm:G}). The audit checked (I1) exactly for
+$20Q\le2000$ and the (I3) period formula numerically, but did not re-audit their proofs.
+
+\subsection{Proof outline}
+\begin{lemma}[Mittag-Leffler]
+$B(u):=\sum_{k\ge1}b(k)\e(ku)$ continues to $P(\e(u))/(1-\e(140u))$, $\deg P\le139$, and for $u\notin\frac1{140}\Z$,
+$B(u)=\sum_n\rho_n/(u-n/140)$ (symmetric summation) $=\sum_{s=1}^{140}\rho_s\pi\cot\pi(u-s/140)$; the one-sided series converge.
+\end{lemma}
+\noindent(Same poles and residues, both vanish at $\pm i\infty$, Liouville in $\e(u)$; one-sided convergence by Abel summation.)
+
+\begin{lemma}
+For $X\notin(-\infty,-\tfrac1{140}]$: $\varphi(X)=-140\sum_{n\ge1}\rho_n/(n+140X)$. With $\beta_1=\sum_s\rho_sB_1(s/140)$ ($=0$ if $\eta_b=+1$), uniformly in
+$|\arg X|\le\pi-\delta$, $\varphi(X)=\beta_1/X+O_\delta(|X|^{-2})$ for $|X|\ge1$. Consequently $R$ is holomorphic on $U=\Hb\cup\{\mathrm{Re}\,z>0\}$ (since
+$\arg X_m=-\arg z\in(-\pi,\pi/2)$), and $|R(z)|\le C(1+|z|)$ on $S=\{1\le\mathrm{Re}\,z\le141,\ \mathrm{Im}\,z\le-1\}$ (odd tail by Abel summation).
+\end{lemma}
+
+\begin{proposition}
+For $z\in\Hb$: $G_\chi(-1/(20z))=2R_\chi(z)+T_\chi(z)$ with $T_\chi(z)=-\lim_M\sum_{0<|m|\le M}a(m)\varphi(m/(20z))$. Hence Theorem~\ref{thm:I} is equivalent to
+\begin{equation}\label{eq:star}\textstyle
+\sum_\chi w_\chi T_\chi(z)=(z/\sqrt{35})\,E_R(z)\qquad(z\in\Hb).
+\end{equation}
+\end{proposition}
+
+\begin{proposition}
+For every genus $\chi$ and $z\in\Hb$, $T_\chi(z)=\frac z{140}\sum_{n,k\ge1}\widehat b(n)\check a(k)\e(nkz/140)$, absolutely convergent.
+\end{proposition}
+\noindent For nontrivial $\psi$ this is two-variable summation by parts (kernel $F(m,n)=1/(nz+7m)$ with uniform $O(|w|^{-3})$ bounds on
+$\Delta_m\Delta_nF$, $D_n^2F$) followed by the cotangent evaluation
+$\lim_M\sum_{|m|\le M}a(m)/(7m+nz)=-\tfrac{2\pi i}{140}\sum_k\check a(k)\e(nkz/140)$. For trivial $\psi$ the $n$-outer sum diverges and a second-order
+argument is needed; the constants $\pm\tfrac25\sum_n\rho_n/(nz)$ cancel. They are genuinely nonzero:
+$\sum\rho_n/n=i\log\varepsilon/(70\pi)$ to $15$ digits (Category B context via the class number formula; not used).
+
+\paragraph{Liouville step.} Let $D=\Psi-2\sum_\chi w_\chi R_\chi$, holomorphic on $\{\mathrm{Re}\,z>0\}$ by (I3) and the lemma. On $\Hb$, $D=zP$ with
+$P(z)=\sum_{N\ge1}p_N\e(Nz/140)$ ($E_R$ has no constant term since $\nu=0\notin F$; its frequencies lie in $\tfrac1{70}\Z$). $P$ extends to an entire
+$140$-periodic function, holomorphic in $q'=\e(z/140)$ on $\C^\ast$ with Laurent coefficients $p_N$, $N\ge1$. A growth bound on $S$ (Lemma 8 of \src{7}:
+$|\Psi|\le C(1+|z|)^2$) gives $|P|\le C'(1+\log|q'|)$ for $|q'|\ge e^{2\pi/140}$; Cauchy's estimates force $p_N=0$. Hence $P\equiv0$, which is
+\eqref{eq:star} (Theorem~\ref{thm:J}) and $D\equiv0$ (Theorem~\ref{thm:I}). Periodicity and absence of a constant term alone would not suffice
+($\e(z/140)$); the $o(|q'|)$ growth is essential.
+
+\paragraph{Arithmetic form of Theorem~\ref{thm:J}.} With $\nu\in L'$, $(u,v)=A\nu$, $\theta=(7u-2v)+u\sqrt{35}$: $\nu\mapsto\theta$ is a bijection
+$L'\to\fp_2$, $Q(\nu)=-\Nm(\theta)/140$, $B(\nu,a)=\mathrm{Re}\,\theta/10$, and the coefficient of $\e(Nz/140)$ in $E_R$ is
+$c_R(N/140)=\tfrac{\sqrt{35}}{140}\sum_\chi w_\chi\sum_{nk=N}\widehat b(n)\check a(k)$.
+
+\subsection{Analytic conditions R1 and R2}\label{sec:R1}
+\textbf{R2} (Fourier sum and Green integral commute): dominated convergence with frequencies $|Q|\ge n_0>0$ ($n_0=4/140$ for $u_R$, $0.35$ for $u_L$) and
+$O(X)$ $\gamma$-orbits with $|Q|\le X$ \src{7, \S6.1}. \textbf{R1} (sector-uniform Euler--Maclaurin): for rational $x$, any cone sum $f$ and
+$|\arg t|\le\pi/2-\delta$, $|t|\le1$, $f(\e(x)e^{-t})=s/t+h\,t^{-1/2}+\kappa+O(|t|^{1/2})$ with the real-$t$ coefficients; proved by order-$3$
+two-variable Euler--Maclaurin with every remainder bounded \src{7, \S6.2}.
+\catA{R1, R2: written proofs, audited once. R1 uses the $1$D remainder $\frac{(-1)^{p+1}}{p!}\int_0^\infty\tilde B_p(y-u)f^{(p)}(y)\,dy$; the audit's
+proposed form with $\tilde B_p(u-y)$ is wrong for odd $p$ (checked to $10^{-31}$ for $p=1,2,3$), and rev.~2 deviates from the audit here; the bounds use only
+$|\tilde B_p|$, so the argument is unaffected. The Corollary $\Psi(x)=\kappa_L(-1/x)-(x/\sqrt{35})\sum\kappa_R(x)$ follows from Theorem~\ref{thm:I} and R1 at each rational
+$x>0$ separately.}
+
+\catB{Reading of $R_\chi$ as the Lewis--Zagier Eisenstein period function at $s=\tfrac12$ for $(\psi,\psi')$ \cite[Ch.~IV]{LZ}; ``twisted
+Herglotz/Kronecker-limit'' terminology. Contrast with Radchenko--Zagier \cite{RZ}, whose untwisted $F(x)=\sum(\psi_\Gamma(nx)-\log nx)/n$ has dilogarithmic
+rational values; here no log-regularisation is needed and the combination takes algebraic values at rationals. Radchenko--Zagier also record Herglotz's
+evaluation at the same unit $6+\sqrt{35}$ (suggestive only). Zagier's Kronecker limit formula \cite{Zagier75} is context only. Individual $R_\chi(x)$ were not
+tested for algebraicity.}
+
+%=====================================================================
+\section{$L(0)$ identities for the cusp rows}\label{sec:L0}
+%=====================================================================
+For a cusp row $c$, $\kappa_c(x)$ is the $t^0$ coefficient of $f_c(\e(x)e^{-t})$; by Mellin, $\kappa_c(x)=Z_c(0;x)$ with $Z_c(w;x)=\sum A_Q\e(Qx)Q^{-w}$ entire.
+For $x=h/k$ with $k$ composed of $2,5,7$, $\e(h\Nm\fa/(140k))$ is a ray class function mod $\fm_k$ (checked on all classes to norm $60\,000$); for $3\mid k$ the
+ideals divisible by the inert prime $3$ give one extra ray-class sum \src{6, \S2.1}. This yields
+\[
+\kappa_c(h/k)=\sum_{\chi'}\widehat G_{c,h/k}(\chi')\,L_{\fm_k}(0,\chi'),\]
+and, for $3\nmid k$,
+\[
+\kappa_c(h/k)=\frac1{\varphi(140k)}\sum_{\psi\bmod140k}\tau(\bar\psi)\psi(h)\sum_\chi\widehat F_c(\chi)\,L(0,u_\chi\otimes\psi).
+\]
+Only totally odd characters contribute; for those $L(0,\chi)=W(\chi)\cdot140\cdot L(1,\bar\chi)/\pi^2$ (checked to $2\cdot10^{-15}$). Type-$(0,0)$ and mixed-type
+characters have $L(0)=0$ (Category A from PARI values; Category B as Hecke functional-equation theory).
+\catA{Numerically verified, conditional on PARI \texttt{lfun} (38 digits; primitive characters via \texttt{bnrmap}, imprimitive Euler factors restored): all
+$24$ cusp rows at all $7$ points to $4\cdot10^{-14}$ (Table~\ref{tab:phi73}). Not proved. Central-value hypothesis rejected: replacing $L(0)$ by $L(\tfrac12)$
+gives $\Phi_{73}(1)=0.0349+0.0748i$, max deviation $0.32$ ($0.31$ with only the $12$ totally odd central values). At $x=1$ the $24$ values lie in a
+$6$-dimensional space.}
+
+\paragraph{Hand certification of $\mathrm{Cl}^+_{(2\sqrt{35})\infty_1\infty_2}$ \src{6, \S3}.} From
+$1\to U/U_{\fm,1}\to(\Ok/\fm)^\times\times\{\pm\}^2\to\mathrm{Cl}^+_\fm\to\mathrm{Cl}\to1$ with $(\Ok/(2))^\times=\langle\sqrt{35}\rangle\cong\Z/2$,
+$\mathbb F_5^\times=\langle2\rangle$, $\mathbb F_7^\times=\langle3\rangle$, $U=\langle-1,\varepsilon\rangle$, $\mathrm{Cl}=\Z/2$ generated by $\fp_{13}$
+($\fp_{13}^2=(22+3\sqrt{35})$), the Smith normal form gives invariants $[2,2,24]$, order $96=2\cdot48\cdot4/4$. The $\sigma$-action, infinity types and conductors
+are read off and match PARI. (Category A, PARI-free.)
+
+\begin{table}[ht]\centering\small
+\begin{tabular}{llll}\toprule
+$\chi$ ($\sigma$-pair) & type & $L(\tfrac12,u_\chi)$ & $L(0)$\\\midrule
+$(1,\cdot,1)\sim(13,\cdot,1)$ & $(0,0)$ & $1.109240202417-0.205788403698i$ & $0$\\
+ & $(1,1)$ & $0.131513747745+0.708885114750i$ & $-(6+4\sqrt3)+(6\sqrt3-4)i$\\
+$(3,\cdot,1)\sim(15,\cdot,1)$ & $(0,0)$ & $1.057777176883-0.300492329005i$ & $0$\\
+ & $(1,1)$ & $-0.123002454086-0.432986722370i$ & $-12+4i$\\
+$(5,\cdot,1)\sim(17,\cdot,1)$ & $(0,0)$ & $0.514021161380+0.466537408032i$ & $0$\\
+ & $(1,1)$ & $1.122786592523-1.237062791397i$ & $(4\sqrt3-6)-(4+6\sqrt3)i$\\\bottomrule
+\end{tabular}
+\caption{Central values and $L(0)$ for six of the twelve dihedral forms; the other six ($j=7,9,11\sim19,21,23$) are complex conjugates. Root numbers in
+\src{6, \S2.3}. All $12$ central values are nonzero. PARI \texttt{lfun}, 38 digits; $L(0)$ values recognised to $10^{-10}$.}\label{tab:L}
+\end{table}
+
+%=====================================================================
+\section{Numerical verification}\label{sec:num}
+%=====================================================================
+All entries are Category A at the stated status; ``exact'' means rational/integer arithmetic.
+
+\begin{table}[ht]\centering\small
+\begin{tabular}{p{6.2cm}p{4.2cm}p{4.2cm}}\toprule
+check & range / points & result\\\midrule
+Theorem~\ref{thm:A} identities & through $q^{3000}$ & exact\\
+$\Cmixed=0$ & through $q^{293}$ & exact; $-\tfrac12q^{294}$ first term\\
+cone sum \eqref{eq:Edef}, four cones; $E_{-a}=E_a$ & through $q^{3000}$ & exact\\
+$H_s$ cone decomposition & through $q^{2000}$ & exact\\
+Gauss pattern (Thm.~\ref{thm:D}) & $3374$ pairs, $m\le105$ & 0 mismatches\\
+$\zeta_E(0)$, $\zeta_E(-1)$ & 1 + 5 Shintani cones & exact $\tfrac1{10}$, $\tfrac{29}{1200}$\\
+Radial fit, $P_s$ & $t\in[0.00125,0.08]$ & $0.209419$ ($I$), $0.52569$ ($a_P$)\\
+EM remainder (Table~\ref{tab:radial}) & $t\ge2.5\cdot10^{-5}$ & scales as $\sqrt t$ ($t$ for $E$)\\
+region $\leftrightarrow$ ray class; $u_L$ Eisenstein & $n\le60\,000$ & exact (max diff $0$)\\
+\bottomrule
+\end{tabular}
+\caption{Exact and finite checks \src{1,2,4,5}.}
+\end{table}
+
+\begin{table}[ht]\centering\small
+\begin{tabular}{p{6.4cm}p{4.0cm}p{4.0cm}}\toprule
+check & points & max deviation\\\midrule
+Maass $S$-, $T$-law, $P$-invariance, all $140$ rows & 3 points, $y\approx1$ & $1.2\cdot10^{-15}$, $7\cdot10^{-16}$, $6\cdot10^{-16}$\\
+$S^2=I$, $(ST)^3=I$ on $72$-dim space & --- & $1.3\cdot10^{-15}$\\
+Green constant $-\pi/2$ (cross-check) & $n=1,2,3$, two $z$ & 30 digits\\
+period formula vs.\ Bernoulli $\psi$ & $84$ rationals & $1.1\cdot10^{-13}$\\
+all-row closed form; three-term relation & $7$ pts; $4$ pts & $2.3\cdot10^{-14}$; $7\cdot10^{-15}$\\
+component fits ($140\times2$) & $n\le54\,880$ & $4.4\cdot10^{-14}$\\
+Thm.~\ref{thm:I}, 34 digits & $44$ rationals in $[\tfrac18,2]$ & $5.7\cdot10^{-33}$ \src{6}\\
+Thm.~\ref{thm:I}, random rationals & $40$, den.\ $\le60$ & $2.5\cdot10^{-12}$\\
+Thm.~\ref{thm:I} on $\Hb$ (audit, 36 digits) & $6$ points & $5.5\cdot10^{-35}$\\
+Thm.~\ref{thm:I} off $\Hb$ (audit, double) & $5+3$ points & $2.5\cdot10^{-16}$; $9.2\cdot10^{-16}$\\
+Thm.~\ref{thm:I} at rationals (audit) & $8$ rationals & $5.7\cdot10^{-35}$\\
+split $G=2R+T$ (audit) & $8$ chars, $5$ points & $\le8\cdot10^{-34}$\\
+Thm.~\ref{thm:J} (audit) & $N\le14\,000$ & $1.84\cdot10^{-15}$; $627$ coeffs equal in $\Z[\phi]$\\
+cusp rows $=L(0)$ combinations & $24$ rows, $7$ points & $4\cdot10^{-14}$\\\bottomrule
+\end{tabular}
+\caption{Numerical checks \src{3--8}. In the audit the rational $\kappa$ reference reused \texttt{hp\_check.psi\_exact} from the audited folder
+(not independent code); the independent cross-check there is the from-scratch period formula at double precision ($5.7\cdot10^{-17}$).}
+\end{table}
+
+\begin{table}[ht]\centering\small
+\begin{tabular}{lcc}\toprule
+$x$ & $\Phi_c$ dev.\ ($24$ rows) & $\Phi_{73}(x)$\\\midrule
+$1$ & $3.8\cdot10^{-15}$ & $0.120446470003+0.176437422094i$\\
+$-1$ & $4.5\cdot10^{-15}$ & $0.006264073515+0.213537531676i$\\
+$2$ & $9.6\cdot10^{-15}$ & $0.206217773055+0.263200146342i$\\
+$7/4$ & $3.4\cdot10^{-13}$ & $0.188336862451+0.245368413466i$\\
+$1/3$ & $6.7\cdot10^{-15}$ & $0.038631276713+0.077116144808i$\\
+$3/5$ & $4.0\cdot10^{-14}$ & $0.073437646967+0.123627119436i$\\
+$-2/3$ & $1.2\cdot10^{-14}$ & $0.012354928128+0.156183157173i$\\\bottomrule
+\end{tabular}
+\caption{Cusp-row cocycle from $L(0)$ values vs.\ exact Bernoulli sums \src{6, \S2.2}.}\label{tab:phi73}
+\end{table}
+
+%=====================================================================
+\section{Status and dependencies}\label{sec:status}
+%=====================================================================
+
+\subsection{Summary table}
+\begin{center}\small
+\begin{longtable}{p{2.6cm}p{6.6cm}p{5.6cm}}\toprule
+result & status (Category A unless stated) & external dependencies\\\midrule\endhead
+Thm.~\ref{thm:A} & proved (elementary reindexing); exact to $q^{3000}$ & none\\
+Thm.~\ref{thm:B} & proved by hand with symbolic checks; not audited & standard facts on $\Z[\sqrt{35}]$\\
+Thm.~\ref{thm:C} & exact (symbolic EM) for $P_s,R,E,a_P$; $a_H,a_C$ 30-digit evaluation + PSLQ; $H_s$ constant $0$ to 30 digits & Hecke continuation; Siegel--Klingen (sanity check only)\\
+Thm.~\ref{thm:D} & proved; verified $m\le105$ & none\\
+Thm.~\ref{thm:E}(i) & proved, conditional & Baker 1966; $q$-expansion principle\\
+Thm.~\ref{thm:E}(ii) & proved ($a_C\neq0$ from 30-digit value) & none\\
+Thm.~\ref{thm:E}(iii) & exact finite computation & none\\
+Leading Weil law & numerically exact on tests; general proof not written (Category B as theorem) & ---\\
+Thm.~\ref{thm:F} & $S$-law proved (Poisson); $T$-law derived; group relations numerical; not audited & none (Borcherds no longer needed)\\
+Thm.~\ref{thm:G} & proved given Lemma~\ref{lem:green}, $S$-law, R1, R2; numerically verified; Lemma and Stokes step not audited & DLMF 10.40.2\\
+Thm.~\ref{thm:H} & $u_L,u_R$ Eisenstein: proved (PARI-free); $60+12$ split: numerically verified & PARI ray-class data at $\fp_2^3\fp_5\fp_7\infty_1\infty_2$; Maass/Hecke theory (Category B)\\
+Thms.~\ref{thm:I}, \ref{thm:J} & proved, audited once (internal), given (I1)--(I3) & (I1)--(I3) not re-audited\\
+Corollary (rationals) & as above plus R1 (audited once) & ---\\
+Thm.~\ref{thm:K} & numerically verified, not proved & PARI \texttt{lfun}\\\bottomrule
+\end{longtable}
+\end{center}
+
+\subsection{The audit}\label{sec:audit}
+Theorems~\ref{thm:I}--\ref{thm:J} together with R1 and R2 were checked in \emph{one internal audit pass} \src{8}, performed within the same project
+workflow (auditor recorded as Grok Bot) on 18 October 2026, with numerical code written from scratch except for one reused routine. The verdict was
+\emph{pass with fixes}: no fatal error, three fixable gaps (G1 holomorphy of $R$ on $\Hb\cap\{\mathrm{Re}\,z\le0\}$; G2 the odd-character tail; G3
+the Euler--Maclaurin remainder bookkeeping) and eight minor issues (m1--m8), all addressed in rev.~2 \src{7}. \textbf{This audit is not external
+refereeing.} No other result in this paper has been audited; the inputs (I1)--(I3) were checked numerically but their proofs were not re-audited.
+
+\subsection{PARI/GP dependencies}
+PARI (cypari2 2.2.4) enters in: (a) the narrow class group and the structure $\Z/8\times\Z/2$ of $\mathrm{Cl}^+_{\fp_2\fp_5\infty_1\infty_2}$ (order hand-certified);
+(b) the ray-class data at $\fp_2^3\fp_5\fp_7\infty_1\infty_2$ used for the $140$-component fits and the $60+12$ split; (c) \texttt{lfun} values for
+Theorem~\ref{thm:K}; (d) ideal enumeration used as an independent cross-check. The base field is certified (\texttt{bnfcertify}$=1$); ray-class routines
+were not independently certified. Removed dependencies: $u_L$ Eisenstein (hand proof), $\mathrm{Cl}(K)$, $|\mathrm{Cl}^+_\ff|=16$, and the full structure of
+$\mathrm{Cl}^+_{(2\sqrt{35})\infty_1\infty_2}$ (hand certification).
+
+\subsection{Other caveats}
+The radical forms of $a_H$, $a_C$ and the exact $\Z[\zeta_{12}]$ $L(0)$ values are recognitions (PSLQ / numerical) rather than derivations. The Gauss-mean
+zero/nonzero decisions and the $W_7$ statistics are floating-point with a wide margin. Category B items are listed in each section and in
+\S\ref{sec:open}.
+
+\subsection{Reconciliation of sources}\label{sec:recon}
+Where the sources disagree we follow the latest correction. The following supersessions apply (repository errata dated 2026-10-17 in
+\path{docs/S2-11DM2ET-X-Axiomatic-Book/}, read-only).
+\begin{enumerate}[leftmargin=2em]
+\item $t^{-1/2}$ coefficient of $C$: the fitted $\approx0.8174$ \src{1, B4} is replaced by $a_C=0.8291426171\ldots$ \src{2, A3}
+(\path{ERRATUM_Bridge_C_tminushalf_Coefficient}); obstruction (ii) for $C$ over $\C$ is upgraded from Category B to A.
+\item Component count: the ``36-component'' vector and ``Weil representation on the 35-element discriminant group'' \src{2, 3} are replaced by the
+$140$-label family and its $72$-dimensional representation; the lattice is odd and the $T$-law needs $w_c$ \src{4, \S2}
+(\path{ERRATUM_psi_Cocycle_Component_Count}). The leading-order $T$-law checks of \src{2, A5} stand, since their shift is $\equiv w_c$ mod $L'$.
+\item Cusp content of $u_L$: the claim in \src{4, \S4.2} that $u_L$ has a nonzero dihedral cusp part at negative frequencies is \emph{withdrawn};
+it came from counting only $T^+$ and omitting $T^-$ \src{5, \S0} (\path{ERRATUM_psi_Conditions_Removed_Cusp_Claim}).
+\item Decomposition range: ``$C=\Caxis+\Cthird$'' holds only through $q^{293}$; the coefficient set $\{0,1,\tfrac32\}$ only through $q^{101}$
+(\path{ERRATUM_Bridge_C_Decomposition_and_Samples}, E1); $R$ is a cone sum of an \emph{indefinite} form (E5).
+\item $|G|$ pattern: ``observed only, $m<30$'' \src{1} is replaced by Theorem~\ref{thm:D} \src{2, A4}, which also adds the case $7\mid m$.
+\item $E_R$ cancellation: ``Category B, not proved'' \src{6, \S1.2} is superseded by Theorems~\ref{thm:I}--\ref{thm:J} \src{7}.
+\item $\psi_{\rm Eis}$: ``no elementary closed form obtained'' and the expectation that cusp rows involve central values \src{5, \S4} are superseded by
+\src{6}: a twisted Herglotz form exists, and the cusp rows involve $L(0)$, not $L(\tfrac12)$.
+\item The audit's proposed Euler--Maclaurin remainder sign is incorrect for odd $p$; rev.~2 uses the corrected sign \src{7, changelog G3}.
+\item Normalisations: $\Phi_{(a,0)}=2\psi$ \src{4, \S3}; \src{3} sums $u_L$ over $\langle\gamma\rangle$-orbits, \src{5} writes $\tfrac12\sum_{\bmod\gamma^2}$;
+these agree for the scalar rows (resolved in rev.~2, \S\ref{app:norm}).
+\item Minor numerical differences between runs (e.g.\ Theorem~\ref{thm:I} at rationals $5.7\cdot10^{-33}$ in \src{6} vs.\ $5.7\cdot10^{-35}$ in \src{8};
+off-$\Hb$ $2\cdot10^{-12}$ (rev.~1, double precision) vs.\ $9\cdot10^{-16}$ (audit)) reflect precision settings, not disagreements.
+\end{enumerate}
+
+%=====================================================================
+\section{Open problems}\label{sec:open}
+%=====================================================================
+\begin{enumerate}[leftmargin=2em]
+\item \textbf{$s=8$ and $s=11$ analogues} (computation in progress). Known so far \src{3, A6}: for general $s$, $Q_s=Q(\nu)+s/(4(s-2))$, the reflections and
+$\gamma_s=\begin{pmatrix}-1&-s\\2&2s-1\end{pmatrix}$ (trace $2s-2$) give the same cone bookkeeping, so $2P_s=E_s+1+\theta_3-\Theta_{\mathrm{hol},s}$ holds
+formally (no series check run). $s=8$: $D=48$, $2I=\log(7+4\sqrt3)/(4\sqrt3)$, $\zeta_E(0)=\tfrac16$, $\zeta_E(-1)=\tfrac5{36}$; $s=11$: $D=99$,
+$2I=\log(10+3\sqrt{11})/(3\sqrt{11})$, $\zeta_E(0)=\tfrac7{18}$, $\zeta_E(-1)=\tfrac{1129}{1296}$; no half-integral powers (Category A, exact). The
+ray-class identification, the lift, and the cocycle for $s=8,11$ are Category B/open; for $s=8$ the eigenvalue of $\gamma_8$ is $(2+\sqrt3)^2$, so $E_8$ may
+cover each ideal twice.
+\item \textbf{Removing PARI dependencies}: hand certification of the ray class structure at $\fp_2^3\fp_5\fp_7\infty_1\infty_2$ and of
+$\Z/8\times\Z/2$; an independent evaluation of the $L(0)$ values (e.g.\ by Shintani/Siegel formulas) to make Theorem~\ref{thm:K} PARI-free.
+\item \textbf{An arithmetic proof of Theorem~\ref{thm:J}} (Gauss-sum/ideal-theoretic), and simplification of the imprimitive Gauss sums $\widehat b,\check a$
+to primitive ones.
+\item \textbf{A proof of Theorem~\ref{thm:K}} for all rationals, and of the general leading-order profile law.
+\item \textbf{Lewis--Zagier interpretation} (Category B): identify $R_\chi$ with the LZ period functions of $E_{\psi,\psi\chi_{140}}(\cdot,\tfrac12)$; relate the
+central values (Table~\ref{tab:L}) to Mellin transforms of $\Phi$; functional equations of individual $R_\chi$ in the style of \cite{RZ}.
+\item Independent (external) refereeing of Theorems~\ref{thm:B}, \ref{thm:F}, \ref{thm:G} and of the audited Theorems~\ref{thm:I}--\ref{thm:J}.
+\item The prescription behind the framework's ``Fricke samples'' remains unrecovered.
+\end{enumerate}
+
+%=====================================================================
+\appendix
+\section{Revision 2 additions (18 October 2026)}\label{app:rev2}
+%=====================================================================
+This appendix adds the results of five reports produced on 18 October 2026 (sources [S9]--[S13] below). Nothing earlier in the paper is
+withdrawn except where stated: the leading-order $S$-law in \S\ref{sec:lead} now carries $|x|$, and the lift-normalisation item in
+\S\ref{sec:status} is resolved for the scalar rows (\S\ref{app:norm}). Category labels are those of the main text. No claim is made concerning
+HQCC termination, the twin prime conjecture or the Riemann hypothesis.
+
+\subsection{PARI-free certification of the $s=7$ cusp-part results}\label{app:pari}
+\catA{An exact, finite computation, or a standard theorem applied to exact data \src{9}. Hand inputs: $\varepsilon=6+\sqrt{35}$ is the
+fundamental unit and $\mathrm{Cl}=\Z/2$ (generated by $\fp_{13}$, $\fp_{13}^2=(22+3\sqrt{35})$).}
+\begin{itemize}[leftmargin=2em]
+\item The ray class group mod $\fm=\fp_2^3\fp_5\fp_7\infty_1\infty_2$, constructed by hand from
+$U\to(\Ok/\fm)^\times\times\{\pm\}^2\to\mathrm{Cl}^+_\fm\to\mathrm{Cl}\to1$, has order $96$ and structure $\Z/24\times\Z/2\times\Z/2$; the same
+holds for $\ff=(2\sqrt{35})\infty_1\infty_2$.
+\item The independent class assignment of all $140$ components reproduces the PARI fit exactly: the $22$ empty (label, sign) slots, every
+content $g$, the Eisenstein/cusp/mixed norms (differences $\le 6.7\cdot10^{-16}$), the same $24$ cusp components with coefficients
+$\tfrac1{48}\e(k/60)$, and the $60+12$ split (ranks $60$ and $12$). The theta identity holds for all $n$ with $|Q|\le400$ (residual
+$\le8.9\cdot10^{-16}$); the statement for all $n$ is Category B.
+\item Exact Shintani cone sums give the $12$ values $L(0,\chi)$ of the totally odd, non-$\sigma$-invariant characters of conductor
+$(2\sqrt{35})$ in $\Z[\zeta_{12}]$: $-(6+4\sqrt3)\pm(6\sqrt3-4)i$, $-12\pm4i$, $(4\sqrt3-6)\mp(4+6\sqrt3)i$, each twice (one per $\sigma$-pair).
+Validations: $\sum_c\zeta(0,c)=0$; $L(0,\chi)=0$ for all $72$ non-totally-odd characters; $L(\chi)=L(\chi\circ\sigma)$; a genus test exact for all
+$8$ characters mod $20$; two independent moduli agree exactly.
+\item All $7\times24$ cusp-row identities of Theorem~\ref{thm:K} hold to $1.2\cdot10^{-14}$ with PARI-free inputs. No discrepancy was found.
+\end{itemize}
+Open problem 2 of \S\ref{sec:open} is therefore settled for the ray class structure, the classification and the $L(0)$ values.
+\emph{Not} redone without PARI: $L(\tfrac12,\chi)$, $L(1,\chi)$, root numbers. Characters are determined only up to $\chi\leftrightarrow\chi\circ\sigma$.
+Note that the group mod $\fm$ (order $96$) is not the group mod $\fp_2\fp_5\infty_1\infty_2$ (order $16$, $\Z/8\times\Z/2$) used in \S\ref{sec:rq}.
+
+\subsection{The $s=8$ and $s=11$ analogues; cusp onset}\label{app:s811}
+\catA{Computed or checked on the box, exact or to the stated finite range \src{10}; transfers of the $s=7$ proof template are Category B.}
+\begin{itemize}[leftmargin=2em]
+\item $2P_s=E_s+1+\theta_3-\Theta_{\mathrm{hol},s}$ holds exactly as a $q$-series to $q^{3000}$ for $s=7,8,11$.
+\item Fields and orders: $s=8$: $\Q(\sqrt3)$, order $\Z[2\sqrt3]$, $\varepsilon=2+\sqrt3$, $\gamma$-eigenvalue $\varepsilon^2$ but multiplicity
+one (no double counting, answering the caveat in \S\ref{sec:open}); $s=11$: $\Q(\sqrt{11})$, order $\Z[3\sqrt{11}]$, $\varepsilon=10+3\sqrt{11}$.
+$E_s$ is a single-class ray-class series for each $s$.
+\item $\zeta_E(0)$, $\zeta_E(-1)$: $1/10, 29/1200$ ($s=7$); $1/6, 5/36$ ($s=8$); $7/18, 1129/1296$ ($s=11$), by Shintani cones and by PARI
+Hecke $L$-functions. The $t^{\pm1/2}$ coefficients of $E_s$ vanish; the Baker obstruction carries over.
+\item $S/T$ family: $S$ unitary, $S^2=P$, $(ST)^3=I$ for all three $s$. $s=8$: even lattice, whole family Eisenstein, $\psi=\psi_{\rm Eis}$,
+Herglotz form to $3\cdot10^{-13}$. $s=11$: $u_L$ has a genuine dihedral cusp component ($6$ Maass forms with $\lambda=\tfrac14$ from $12$ non-genus
+characters of conductor $(3)$ and $(9)$); $\psi=\psi_{\rm Eis}+\psi_{\rm cusp}$ with $\psi_{\rm cusp}\neq0$ at $8$ rationals. So ``$\psi$ is purely
+Eisenstein'' is not family-wide. Cusp rank $\ge73$ and $\ge90$ dihedral newforms for $s=11$ are lower bounds.
+\end{itemize}
+\textbf{Genus correction.} \src{10} listed $s=11$ as $h^+=8$ with $2$ genera. The correct count is $4$ genera ($2^{\mu-1}$, $\mu=3$), so
+$\mathrm{Cl}^+\cong\Z/4\times\Z/2$ \src{13}. The conclusion $h^+>\#\text{genera}$ (hence a cusp part) is unchanged.
+
+\textbf{Cusp onset} (Category A for the counts; Category B for ``$h^+\neq\#$genera $\Leftrightarrow$ cusp part'').
+With $D=4s(s-2)$ ($s$ odd), $s(s-2)$ ($s$ even), $h^+$ equals the number of genera for every $s\in\{3,\dots,20,30\}$ except $s=11$ ($8$ vs $4$)
+and $s=19$ ($8$ vs $4$); also $s=25$ ($12$ vs $4$) and $s=41$ ($24$ vs $8$). The cusp onset is at $s=11,19,25,41$ in the tested range; only
+$s=11$ has an actual cusp decomposition (the others are predictions, Category B). The onset is invisible in all radial data at $x=0$, which are
+$s$-uniform (\S\S\ref{app:zeta}--\ref{app:gs}).
+
+\subsection{Modularity status of $\Cthird$}\label{app:cthird}
+\catA{Proved or exactly checked in \src{11}, conditional where stated; the words ``quantum modular form'' for the factor $|cx+d|$ are terminology
+(Category B).}
+\noindent\textbf{Verdicts.} $\Cthird$ is not modular (Theorem~E(i) (Baker), Theorem~E(ii), and Theorem O2 below); not mock or mixed mock with a
+holomorphic factor and an $o(1/y)$ cocycle (O2; O1 for $E_L$, $X=\tfrac12(\vartheta_{\rm hol}+E_L)$ and the $E$-vector); has no strict
+quantum-modular values (radial divergence at all $490$ rationals with $m\le40$; ``every rational'' is Category B); and is renormalised quantum
+modular after removing $q^{7/20}$ and the theta pieces.
+
+\noindent\textbf{Identity.} $2\Cthird=q^8f_{2,7,7}(-q^{10},-q^{14},q)+1+E$, checked to $q^{8000}$, and
+\[\Cthird=\tfrac12(1-\theta_3)+\tfrac12\,\e(7\tau/20)\bigl[\vartheta_{\rm hol}+E_L\bigr].\]
+
+\noindent\textbf{Lemma P (parity splitting).} At every rational $x$, along $q=\e(x)e^{-t}$, $t\to0^+$: $\e(7\tau/20)\vartheta_{\rm hol}$,
+$\theta_3$ and $q^8f$ contain only half-integer powers of $t$; $E=q^{7/20}E_L$ contains only integer powers $t^{-1},t^0,t^1,\dots$. Hence the
+integer-order radial data of $\Cthird$ are those of $\tfrac12(1+E)$ and the half-integer ones those of $\tfrac12q^8f$.
+(Category A, conditional on 2-D Euler--Maclaurin and Hecke's continuation theorem.)
+
+\noindent\textbf{Theorem O2 (the $q^{7/20}$ phase obstruction).} Let $\Gamma\subset\mathrm{SL}_2(\Z)$ have finite index, $\rho$ any
+finite-dimensional representation, $j(\gamma,\tau)=(c\tau+d)^k$ or $|c\tau+d|^k$, and $V$ holomorphic with
+$V(\gamma\tau)=j(\gamma,\tau)\rho(\gamma)V(\tau)+o(1/y)$ at every rational $x\neq\gamma^{-1}\infty$. Then $\Cthird\neq\lambda\cdot V$ for every
+$\lambda$; likewise for $C$, $P_s$ and $E$. (Category A, unconditional; the proof uses $G(1/m)=\e(7/(20m))P(m\bmod140)/m$ for $\gcd(m,70)=1$ and
+a linear-recurrence/essential-singularity argument.)
+
+\noindent\textbf{Theorem O1 (the sign obstruction).} If $V$ is holomorphic and finite-dimensional on $\Gamma\ni S,T^N$, $\rho'(T^N)$ is
+diagonalisable with unimodular eigenvalues, and $V(\gamma\tau)=(c\tau+d)^k\rho'(\gamma)V(\tau)+o(1/y)$, then none of $E_L$, $X$ or the
+$72$-component $E$-vector is $\lambda\cdot V$. Hence $E$ is not the holomorphic part of a weight-$1$ harmonic Maass form, nor a holomorphic
+weight-$1$ form, nor mixed mock with modular factors of weight $<1$. (Category A, conditional on the cited analyticity of harmonic-Maass
+cocycles and on the $|x|$ profile law, checked exactly at the points used.) Objects whose cocycles are themselves of size $\ge1/y$ are not
+excluded (open).
+
+\noindent\textbf{Theorem P (structure of $\Cthird$).} (i) The decomposition above, with $\vartheta_{\rm hol}$ a signature-$(1,1)$ Zwegers
+holomorphic part and $E_L$ the $(a,0)$ component of the $72$-dimensional vector. (ii) $E_L$ is the Lewis--Zagier $f$-function of the
+$\lambda=\tfrac14$ Maass Eisenstein lift; its $|cx+d|$ weight-1 cocycle is real-analytic off $\gamma^{-1}\infty$. (iii) Lemma P.
+(iv) For $x=h/m$, the renormalised value is $c_C(x)=\tfrac12+\tfrac12\e(7x/20)Z_x(0)-\tfrac7{20}I\,G(x)=\alpha(x)+\beta(x)I$ with $\alpha$
+algebraic and $\beta=-\tfrac7{20}G(x)$, which vanishes iff $2\mid m$ or $5\mid m$; e.g.\ $c_C(0)=\tfrac{11}{20}-\tfrac7{20}I$, $c_C(1/2)=0$,
+$c_C(1/4)=2+\tfrac32i$. The cusp-form $L(0)$ values do not enter. (Category A for (i), (iii) and the formula in (iv); the general genus formula
+behind $Z_x(0)$ is Category B.)
+
+\subsection{$\zeta_E(0;s)$ and $\zeta_E(-1;s)$ on one rational curve}\label{app:zeta}
+\begin{theorem}[Rational $\zeta$-curve]\label{thm:zetacurve}
+For every integer $s\ge3$, with $c_0=s/(4(s-2))$ and $\zeta_E(w;s)=\sum_m e_m(m-c_0)^{-w}$:
+\[\zeta_E(0;s)=\frac{(s-4)(s-5)}{12(s-2)},\qquad
+\zeta_E(-1;s)=\frac{2s^5-14s^4-45s^3+425s^2-632s-96}{1440(s-2)^2},\]
+the $t^{-1}$ coefficient of $E_s(e^{-t})e^{c_0t}$ is $\operatorname{arccosh}(s-1)/\sqrt{s(s-2)}$, and the $t^{-1/2}$ and $t^{1/2}$ coefficients vanish.
+\end{theorem}
+\catA{All algebraic steps symbolic in $s$ \src{12}: in the $\gamma$-adapted basis $Q_2=S^2+2(s-1)ST+T^2$; $E_s$ is the sum over one half-open cone
+with exactly two lattice classes $(\tfrac12+\delta,1-\delta)$, $(\delta,\tfrac12-\delta)$, $\delta=1/(2(s-2))$, via the involution
+$(n,k)\mapsto(n,-2n-k-1)$. Analytic inputs cited (2-D Euler--Maclaurin; Mellin dictionary; Zagier 2006, Shintani 1976). Cross-checked against
+$42$ exact cone values ($s=3,\dots,20,25,30,41$). Only $s=7,8,11$ are framework scales.}
+\noindent\emph{Normalisation note.} The ray-class value $\zeta(-1,\K)=29/60$ and $\zeta_E(-1;7)=29/1200$ differ only by normalisation: since
+$\Nm\fa=20Q$, $\sum_{\fa\in\K}\Nm\fa^{-w}=20^{-w}\zeta_E(w;7)$, and at $w=-1$ this gives $29/60=20\cdot29/1200$. Likewise $5/12=3\cdot5/36$
+($\Nm\fa=3Q$, $s=8$) and $1129/36=36\cdot1129/1296$ ($\Nm\fa=36Q$, $s=11$).
+
+\subsection{Closed forms for $g_s$ (Theorem G$_s$)}\label{app:gs}
+Let $g_s(q)=\sum_{n\ge0}q^{n^2}/(-q^s;q^s)_n$ (Master contact 23). The label G$_s$ distinguishes this result from Theorem~\ref{thm:G}.
+\begin{theorem}[Theorem G$_s$]\label{thm:Gs}
+For every real $s>0$, $g_s(e^{-t})\sim\sum_{k\ge0}c_k(s)t^k$ as $t\to0^+$, with $c_k\in\Q[s]$ of exact degree $k$ and no $t^{-1}$ or
+half-integer terms. In particular $c_0=2$, $c_1=2(s-3)$, $c_2=5s^2-44s+75$, $c_3=(55s^3-930s^2+3918s-4683)/3$,
+$c_4=(1073s^4-28864s^3+214620s^2-593128s+545835)/12$. Consequently $\zeta_g(0)=1$, $\zeta_g(-1)=6-2s$ and $\zeta_g(-k)=(-1)^kk!\,c_k(s)$.
+\end{theorem}
+\catA{Elementary proof \src{13}: write $1/(-q^s;q^s)_n=2^{-n}\exp\sum_{j\le n}\Lambda(sjt)$, expand with Faulhaber polynomials, sum against
+$2^{-n}$, and bound the remainder by splitting at $N=t^{-1/3}$. Pre-registered and confirmed on held-out $s$. The Dirichlet-series reading of
+$\zeta_g$ is Category B.}
+\noindent\textbf{$P_s$ and $\Thol$ for all $s\ge3$} (Category A modulo 2-D Euler--Maclaurin), with $\Res=\operatorname{arccosh}(s-1)/\sqrt{s(s-2)}$:
+$P_s$ has $t^{-1}$ coefficient $\Res/2$ and $t^{-1/2}$ coefficient $\sqrt\pi(s^2-2\sqrt{2s})/(4s(s-2))$; $\Thol$ has $t^{-1/2}$ coefficient
+$\sqrt\pi(s^2/2-2s+\sqrt{2s})/(s(s-2))$ and no integer-order terms through $t^1$. Thus Lemma P holds at $x=0$ as an identity in $s$. $g_s$ is not
+in $\mathrm{span}_\Q\{1,\theta_3,R,M_m\}$ (exact rank to $q^{400}$, $s=3..20,25,30,41$). $H_s$ is Zwegers-admissible only for integer $s\ge5$.
+Higher radial coefficients of $H_s$ in $s$ are not computed (open).
+
+\subsection{The lift normalisation}\label{app:norm}
+\S\ref{sec:status} noted that \src{3} sums $u_L$ over $\langle\gamma\rangle$-orbits while \src{5} writes $\tfrac12\sum_{\bmod\gamma^2}$.
+For the scalar rows these agree exactly: $\gamma$ maps $a+\Z^2$ to itself ($\gamma a-a=(0,-1)$) and preserves $Q$; it fixes no nonzero vector
+(hyperbolic), so every $\langle\gamma\rangle$-orbit is the disjoint union of exactly two $\langle\gamma^2\rangle$-orbits with equal $Q$; and the
+phase $\e(B(\nu,\beta))$ is $\gamma$-invariant for $\beta=0$, and for $\beta=-a$ on $L'$ because $\gamma^{-1}a-a\in\Z^2$ and $B(L',\Z^2)\subset\Z$.
+Hence $\tfrac12\sum_{\nu\bmod\gamma^2}=\sum_{\nu\bmod\gamma}$ termwise for $u_L$ and $u_R$ (Category A, elementary). For labels whose coset is
+not $\gamma$-stable the $\tfrac12\sum_{\bmod\gamma^2}$ form is the definition; no conflict remains.
+
+%=====================================================================
+\section*{Source reports}\label{sec:sources}
+%=====================================================================
+\addcontentsline{toc}{section}{Source reports}
+All in \path{/workspace/quantum-comp/reports/heavy-daily/}, with scripts and outputs in the companion folders.
+\begin{enumerate}[label={[S\arabic*]},leftmargin=3em]
+\item \texttt{2026-10-17-Bridge-C-Residual-Law.md} (obstructions; identities).
+\item \path{2026-10-17-P_s-Structure.md} (decomposition; ray class; asymptotics; Gauss pattern).
+\item \texttt{2026-10-17-psi-Cocycle.md} (Lewis--Zagier closed form; analyticity; zeta values).
+\item \texttt{2026-10-17-psi-Conditions-Removed.md} ($C=-\pi/2$; Poisson $S$-law; 140 labels; 72-dim rep). Its \S4.2 cusp claim is withdrawn.
+\item \texttt{2026-10-17-Cusp-Part.md} ($u_L$ Eisenstein; $60+12$; 12 dihedral forms).
+\item \texttt{2026-10-17-psiEis-and-Lvalues.md} (Herglotz form; $L(0)$ rows; hand certification).
+\item \texttt{2026-10-18-ER-Cancellation-Proof-rev2.md} (Theorems 1--2, rev.~2).
+\item \texttt{2026-10-18-ER-Cancellation-Audit.md} (one internal audit pass).
+\item \texttt{2026-10-18-PARI-Free-Certification.md} (rev.~2).
+\item \texttt{2026-10-18-s8-s11-Analogues.md} (rev.~2; genus count for $s=11$ corrected in [S13]).
+\item \texttt{2026-10-18-C\_third-Modularity.md} (rev.~2).
+\item \texttt{2026-10-18-Zeta-Rational-Curve-Proof.md} (rev.~2).
+\item \texttt{2026-10-18-g\_s-Closed-Forms.md} (rev.~2).
+\end{enumerate}
+Repository errata (read-only, \path{ArvinHampton/539-Labs-Master}): \path{ERRATUM_Bridge_C_Decomposition_and_Samples_2026-10-17.md},
+\path{ERRATUM_Bridge_C_tminushalf_Coefficient_2026-10-17.md}, \path{ERRATUM_psi_Cocycle_Component_Count_2026-10-17.md},
+\path{ERRATUM_psi_Conditions_Removed_Cusp_Claim_2026-10-17.md}.
+
+\begin{thebibliography}{99}\small
+\bibitem{Baker} A.~Baker, Linear forms in the logarithms of algebraic numbers~I, \emph{Mathematika} \textbf{13} (1966). [Cited by name in \src{1}; theorem number not re-checked.]
+\bibitem{Borcherds} R.~E.~Borcherds, Automorphic forms with singularities on Grassmannians, \emph{Invent. Math.} \textbf{132} (1998), arXiv:alg-geom/9609022. [Thm.~4.1 statement checked online in \src{3}; no longer needed for any proof here.]
+\bibitem{BLZ} R.~Bruggeman, J.~Lewis, D.~Zagier, Period functions for Maass wave forms and cohomology, \emph{Mem. AMS} \textbf{237} (2015), no.~1118. [Scope checked online in \src{3}; context only.]
+\bibitem{DLMF} NIST Digital Library of Mathematical Functions, \S10.40.2. [Used in \src{4}.]
+\bibitem{Hecke} E.~Hecke, analytic continuation of ray-class partial zeta functions and functional equations for Gr\"o\ss encharaktere; dihedral forms. [Cited generically in \src{2,5,6}; no specific paper verified.]
+\bibitem{HM} D.~Hickerson, E.~Mortenson, Hecke-type double sums, Appell--Lerch sums, and mock theta functions, arXiv:1208.1421 (``HM2014''), Def.~0.2. [Cited in \src{1}; bibliographic details beyond the arXiv number not checked.]
+\bibitem{LZ} J.~Lewis, D.~Zagier, Period functions for Maass wave forms~I, \emph{Ann. of Math.} \textbf{153} (2001), arXiv:math/0101270. [Table of contents checked online in \src{3}; Ch.~II \S2.]
+\bibitem{Maass} H.~Maass, \"Uber eine neue Art von nichtanalytischen automorphen Funktionen und die Bestimmung Dirichletscher Reihen durch Funktionalgleichungen, \emph{Math. Ann.} \textbf{121} (1949), 141--183, doi:10.1007/BF01329622. [Bibliographic data verified in \src{5}; content treated as standard, not re-read.]
+\bibitem{RZ} D.~Radchenko, D.~Zagier, Arithmetic properties of the Herglotz function, \emph{J. reine angew. Math.}, doi:10.1515/crelle-2023-0009, arXiv:2012.15805. [Bibliographic data and cocycle statements checked online in \src{5}.]
+\bibitem{Shintani} T.~Shintani, \emph{J. Fac. Sci. Univ. Tokyo Sect. IA} \textbf{23} (1976), 393--417, MR0427231. [Verified bibliographically in \src{7}; context only.]
+\bibitem{SiegelKlingen} C.~L.~Siegel; H.~Klingen: rationality of partial zeta values of totally real fields at negative integers. [Cited by name in \src{2,3}; not re-checked.]
+\bibitem{Zagier75} D.~Zagier, A Kronecker limit formula for real quadratic fields, \emph{Math. Ann.} \textbf{213} (1975). [Context only; \emph{not} checked online.]
+\bibitem{Zw} S.~Zwegers, \emph{Mock theta functions}, Ph.D. thesis, Utrecht, 2002, arXiv:0807.4834. [Local copy used in \src{2}; Cor.~2.9.]
+\end{thebibliography}
+
+\end{document}
