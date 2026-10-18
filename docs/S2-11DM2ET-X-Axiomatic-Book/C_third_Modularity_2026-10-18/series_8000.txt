@@ -1,0 +1,14 @@
+N = 8000, box B = 416
+E1 == E2 (P_s-report definition = unit-fundamental-cone sum): PASS
+E2 == E3 (lattice cone = ideal-side ray-class enumeration, norms (Na+7)/20): PASS
+I2  C_third = q^8 f + P_s: PASS
+I3  Theta_hol = q^8 f + theta_3: PASS
+P_s report: 2 P_s = E + 1 + theta_3 - Theta_hol: PASS
+(1) 2 C_third = q^8 f + 1 + E: PASS
+(1) 2 C_third = (Theta_hol - theta_3) + (1 + E): PASS
+E has nonnegative integer coefficients, E(0) = 0: PASS
+C_third coefficients nonnegative integers: PASS
+first exponents E: [1, 4, 7, 8, 9, 15, 16, 18, 21, 22, 25, 30]  coefficients [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1]
+first exponents q8f: [0, 1, 4, 7, 8, 9, 15, 16, 18, 21, 22, 25]  coefficients [-1, -1, -1, -1, 1, -1, -1, -1, 1, -1, 1, -2]
+first exponents C_third: [8, 18, 22, 30, 39, 43, 44, 58, 60, 67, 71, 78]  coefficients [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+sanity: 2C_third - q^8f - E has only the constant term: [0], value 1
