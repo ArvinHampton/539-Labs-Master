@@ -1,0 +1,17 @@
+PASS Q_s(v) = Q2(v+a) + 7/20, a = (7/10,-1/5)   [symbolic]
+PASS rho1=[[1,7],[0,-1]], rho2=[[-1,0],[2,1]] (reflections, det -1, fixing the rays nu2=0 resp. nu1=0), gamma=rho2*rho1=[[-1, -7], [2, 13]] preserve Q2  [symbolic]
+     gamma eigenvalues [6 - sqrt(35), sqrt(35) + 6]  (6 +- sqrt35; eps = 6+sqrt35 is the fundamental unit, N(eps)=+1)
+     rho1 maps the coset a+Z^2 to -a+Z^2
+     rho2 maps the coset a+Z^2 to -a+Z^2
+     gamma maps the coset a+Z^2 to a+Z^2
+PASS E := R + C_third + sum_(n>=1)q^(n^2)  ==  sum over the gamma-fundamental cone [r, gamma r) in S+, r = (1, 0)   (to q^3000)
+PASS E := R + C_third + sum_(n>=1)q^(n^2)  ==  sum over the gamma-fundamental cone [r, gamma r) in S+, r = (1, 1)   (to q^3000)
+PASS E := R + C_third + sum_(n>=1)q^(n^2)  ==  sum over the gamma-fundamental cone [r, gamma r) in S+, r = (7, -1)   (to q^3000)
+PASS E := R + C_third + sum_(n>=1)q^(n^2)  ==  sum over the gamma-fundamental cone [r, gamma r) in S+, r = (1, 2)   (to q^3000)
+PASS 2 P_s = E + 1 + theta_3 - Theta_hol   (to q^3000)
+PASS E_(-a) == E_a   (so the Hecke sign-twisted combination E_a - E_(-a) vanishes identically)
+E first coefficients: [np.int64(0), np.int64(1), np.int64(0), np.int64(0), np.int64(1), np.int64(0), np.int64(0), np.int64(1), np.int64(1), np.int64(1), np.int64(0), np.int64(0), np.int64(0), np.int64(0), np.int64(0), np.int64(1), np.int64(1), np.int64(0), np.int64(1), np.int64(0), np.int64(0), np.int64(1), np.int64(1), np.int64(0), np.int64(0), np.int64(2), np.int64(0), np.int64(0), np.int64(0), np.int64(0), np.int64(1), np.int64(0), np.int64(0), np.int64(0), np.int64(0), np.int64(0), np.int64(2), np.int64(1), np.int64(0), np.int64(1)]
+PASS Q2(nu) = N(beta)/400 with beta = (2X+7Y)+Y*sqrt35, (X,Y)=10*nu;  beta(gamma nu) = eps*beta(nu): True
+     (X,Y) in (7,-2)+10Z^2  <=>  beta in beta0 + 10*b,  b := Z*2 + Z*(7+sqrt35) (ideal of Z[sqrt35], index 2)
+     beta0 = beta(7,-2) = -2*sqrt(35)
+PASS sample points of S+ have beta totally positive
