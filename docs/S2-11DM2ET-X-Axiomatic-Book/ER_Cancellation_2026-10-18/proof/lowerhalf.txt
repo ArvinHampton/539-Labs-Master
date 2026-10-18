@@ -1,0 +1,6 @@
+z=(1-0.3j): period formula=-0.011615428311-0.041165800341j (quad. change 6e-17)  Herglotz=-0.011615428311-0.041165800340j  |diff|=1.7e-12
+z=(0.7-0.6j): period formula=-0.031736216388-0.022301322133j (quad. change 3e-17)  Herglotz=-0.031736216387-0.022301322131j  |diff|=1.8e-12
+z=(2-1j): period formula=-0.050081770254-0.117388672913j (quad. change 1e-16)  Herglotz=-0.050081770253-0.117388672911j  |diff|=1.4e-12
+z=(1.5+0.4j): period formula=0.040795470473-0.064227653712j (quad. change 7e-17)  Herglotz=0.040795470474-0.064227653711j  |diff|=1.5e-12
+z=(3-2.5j): period formula=-0.140909100920-0.205862786699j (quad. change 6e-16)  Herglotz=-0.140909100920-0.205862786698j  |diff|=1.2e-12
+z=(0.4-0.1j): period formula=-0.002822538503-0.008185904986j (quad. change 8e-18)  Herglotz=-0.002822538502-0.008185904984j  |diff|=2.1e-12
