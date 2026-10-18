@@ -1,0 +1,7 @@
+region S+ <-> ray class (5, 0): max_n<=60000 |lattice count - ideal count| = 0  (total ideals 1256)
+region S- <-> ray class (1, 0): max_n<=60000 |lattice count - ideal count| = 0  (total ideals 1256)
+region T+ <-> ray class (1, 1): max_n<=60000 |lattice count - ideal count| = 0  (total ideals 1256)
+region T- <-> ray class (5, 1): max_n<=60000 |lattice count - ideal count| = 0  (total ideals 1251)
+genus test positive (S+ + S-): residue classes mod 280 with non-constant coeff/R_O: 0 of 48
+genus test negative (T+ + T-): residue classes mod 280 with non-constant coeff/R_O: 0 of 48
+genus test T+ alone (previous report's test): residue classes mod 280 with non-constant coeff/R_O: 6 of 48

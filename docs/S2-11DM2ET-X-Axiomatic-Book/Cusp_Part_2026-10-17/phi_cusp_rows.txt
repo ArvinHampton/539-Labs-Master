@@ -1,0 +1,8 @@
+Phi rows (exact Bernoulli/kappa formula, from psi-conditions/phi_rows.npy) restricted to cusp rows:
+x=1    : max|Phi_cusp rows|=0.4271, max|Phi_Eis rows|=0.8162; Phi_73=0.1204464700+0.1764374221j; Phi_70(=u_L row)=0.0137679875-0.0765194244j
+x=1/3  : max|Phi_cusp rows|=0.2979, max|Phi_Eis rows|=0.7921; Phi_73=0.0386312767+0.0771161448j; Phi_70(=u_L row)=0.0011747835-0.0113047335j
+x=2    : max|Phi_cusp rows|=0.5325, max|Phi_Eis rows|=0.8789; Phi_73=0.2062177731+0.2632001463j; Phi_70(=u_L row)=0.0408457621-0.2102584651j
+x=3/5  : max|Phi_cusp rows|=0.3645, max|Phi_Eis rows|=0.7993; Phi_73=0.0734376470+0.1236271194j; Phi_70(=u_L row)=0.0048692629-0.0327773007j
+x=7/4  : max|Phi_cusp rows|=0.5091, max|Phi_Eis rows|=0.8614; Phi_73=0.1883368625+0.2453684135j; Phi_70(=u_L row)=0.0340859066-0.1752665715j
+x=-1   : max|Phi_cusp rows|=0.4271, max|Phi_Eis rows|=0.8162; Phi_73=0.0062640735+0.2135375317j; Phi_70(=u_L row)=0.0137679875+0.0765194244j
+x=-2/3 : max|Phi_cusp rows|=0.3769, max|Phi_Eis rows|=0.8016; Phi_73=0.0123549281+0.1561831572j; Phi_70(=u_L row)=0.0061313217+0.0392997970j
