@@ -1,0 +1,4 @@
+Cl(K)=[2]  narrow Cl^+(K)=[2, 2]  fu=[Mod(y + 6, y^2 - 35)]  bnfcertify=1
+Cl_f^+ (f=p2 p5, both oo) cyc=[8, 2] order=16
+sigma(g1)=[5, 0]~  sigma(g2)=[4, 1]~
+classes: primes over 13 = [[1, 0]~, [5, 0]~], p7 = [1, 1]~
