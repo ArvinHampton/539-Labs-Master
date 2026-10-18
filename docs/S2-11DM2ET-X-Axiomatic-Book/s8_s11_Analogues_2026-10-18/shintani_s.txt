@@ -1,0 +1,15 @@
+s=7 cone [r,gamma r), r=(1, 0): |det|=2, classes=2: t^-1 coeff=log(((sqrt(35) + 6)/(6 - sqrt(35)))**(sqrt(35)/70)) ~ 0.418839640629429; t^-1/2=0; zeta_E(0)=1/10; t^1/2=0; zeta_E(-1)=29/1200
+s=7 cone [r,gamma r), r=(1, 1): |det|=23, classes=23: t^-1 coeff=log(((sqrt(35) + 6)/(6 - sqrt(35)))**(sqrt(35)/70)) ~ 0.418839640629429; t^-1/2=0; zeta_E(0)=1/10; t^1/2=0; zeta_E(-1)=29/1200
+s=7 cone [r,gamma r), r=(2, 1): |det|=43, classes=43: t^-1 coeff=log(((sqrt(35) + 6)/(6 - sqrt(35)))**(sqrt(35)/70)) ~ 0.418839640629429; t^-1/2=0; zeta_E(0)=1/10; t^1/2=0; zeta_E(-1)=29/1200
+s=7 cone [r,gamma r), r=(1, 2): |det|=58, classes=58: t^-1 coeff=log(((sqrt(35) + 6)/(6 - sqrt(35)))**(sqrt(35)/70)) ~ 0.418839640629429; t^-1/2=0; zeta_E(0)=1/10; t^1/2=0; zeta_E(-1)=29/1200
+s=7 cone [r,gamma r), r=(3, 1): |det|=67, classes=67: t^-1 coeff=log(((sqrt(35) + 6)/(6 - sqrt(35)))**(sqrt(35)/70)) ~ 0.418839640629429; t^-1/2=0; zeta_E(0)=1/10; t^1/2=0; zeta_E(-1)=29/1200
+s=8 cone [r,gamma r), r=(1, 0): |det|=2, classes=2: t^-1 coeff=log(((4*sqrt(3) + 7)/(7 - 4*sqrt(3)))**(sqrt(3)/24)) ~ 0.380172998150473; t^-1/2=0; zeta_E(0)=1/6; t^1/2=0; zeta_E(-1)=5/36
+s=8 cone [r,gamma r), r=(1, 1): |det|=26, classes=26: t^-1 coeff=log(((4*sqrt(3) + 7)/(7 - 4*sqrt(3)))**(sqrt(3)/24)) ~ 0.380172998150473; t^-1/2=0; zeta_E(0)=1/6; t^1/2=0; zeta_E(-1)=5/36
+s=8 cone [r,gamma r), r=(2, 1): |det|=48, classes=48: t^-1 coeff=log(((4*sqrt(3) + 7)/(7 - 4*sqrt(3)))**(sqrt(3)/24)) ~ 0.380172998150473; t^-1/2=0; zeta_E(0)=1/6; t^1/2=0; zeta_E(-1)=5/36
+s=8 cone [r,gamma r), r=(1, 2): |det|=66, classes=66: t^-1 coeff=log(((4*sqrt(3) + 7)/(7 - 4*sqrt(3)))**(sqrt(3)/24)) ~ 0.380172998150473; t^-1/2=0; zeta_E(0)=1/6; t^1/2=0; zeta_E(-1)=5/36
+s=8 cone [r,gamma r), r=(3, 1): |det|=74, classes=74: t^-1 coeff=log(((4*sqrt(3) + 7)/(7 - 4*sqrt(3)))**(sqrt(3)/24)) ~ 0.380172998150473; t^-1/2=0; zeta_E(0)=1/6; t^1/2=0; zeta_E(-1)=5/36
+s=11 cone [r,gamma r), r=(1, 0): |det|=2, classes=2: t^-1 coeff=log(((3*sqrt(11) + 10)/(10 - 3*sqrt(11)))**(sqrt(11)/66)) ~ 0.300830214985482; t^-1/2=0; zeta_E(0)=7/18; t^1/2=0; zeta_E(-1)=1129/1296
+s=11 cone [r,gamma r), r=(1, 1): |det|=35, classes=35: t^-1 coeff=log(((3*sqrt(11) + 10)/(10 - 3*sqrt(11)))**(sqrt(11)/66)) ~ 0.300830214985482; t^-1/2=0; zeta_E(0)=7/18; t^1/2=0; zeta_E(-1)=1129/1296
+s=11 cone [r,gamma r), r=(2, 1): |det|=63, classes=63: t^-1 coeff=log(((3*sqrt(11) + 10)/(10 - 3*sqrt(11)))**(sqrt(11)/66)) ~ 0.300830214985482; t^-1/2=0; zeta_E(0)=7/18; t^1/2=0; zeta_E(-1)=1129/1296
+s=11 cone [r,gamma r), r=(1, 2): |det|=90, classes=90: t^-1 coeff=log(((3*sqrt(11) + 10)/(10 - 3*sqrt(11)))**(sqrt(11)/66)) ~ 0.300830214985482; t^-1/2=0; zeta_E(0)=7/18; t^1/2=0; zeta_E(-1)=1129/1296
+s=11 cone [r,gamma r), r=(3, 1): |det|=95, classes=95: t^-1 coeff=log(((3*sqrt(11) + 10)/(10 - 3*sqrt(11)))**(sqrt(11)/66)) ~ 0.300830214985482; t^-1/2=0; zeta_E(0)=7/18; t^1/2=0; zeta_E(-1)=1129/1296
