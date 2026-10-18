@@ -1,0 +1,2 @@
+rank C(q>0) = 42, rank C(q<0) = 42, rank [C(q>0) C(q<0)] = 42
+If f_{al,be} := positive-frequency part of u_{al,be}, its label span lies in V (dim 42) and cannot supply the missing 30 dims.
