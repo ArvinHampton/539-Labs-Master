@@ -1,0 +1,14 @@
+12 quadclassunit no/cyc: 1 []  qfbclassno 1  unit norm 1
+8 quadclassunit no/cyc: 1 []  qfbclassno 1  unit norm -1
+60 quadclassunit no/cyc: 2 [2]  qfbclassno 2  unit norm 1
+24 quadclassunit no/cyc: 1 []  qfbclassno 1  unit norm 1
+140 quadclassunit no/cyc: 2 [2]  qfbclassno 2  unit norm 1
+48 quadclassunit no/cyc: 1 []  qfbclassno 1  unit norm 1
+252 quadclassunit no/cyc: 2 [2]  qfbclassno 2  unit norm 1
+80 quadclassunit no/cyc: 1 []  qfbclassno 1  unit norm 1
+396 quadclassunit no/cyc: 4 [4]  qfbclassno 4  unit norm 1
+120 quadclassunit no/cyc: 2 [2]  qfbclassno 2  unit norm 1
+572 quadclassunit no/cyc: 2 [2]  qfbclassno 2  unit norm 1
+1292 quadclassunit no/cyc: 4 [4]  qfbclassno 4  unit norm 1
+2300 quadclassunit no/cyc: 6 [6]  qfbclassno 6  unit norm 1
+6396 quadclassunit no/cyc: 12 [6, 2]  qfbclassno 12  unit norm 1

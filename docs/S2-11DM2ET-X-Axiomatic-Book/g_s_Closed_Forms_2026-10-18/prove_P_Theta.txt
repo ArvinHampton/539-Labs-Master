@@ -1,0 +1,28 @@
+
+P_s coefficients (general s>=3):
+   t^-1: acosh(s - 1)/(2*sqrt(s)*sqrt(s - 2))
+   t^-1/2: sqrt(pi)*(-2*sqrt(2)*sqrt(s) + s**2)/(4*s*(s - 2))
+   t^0: (-3*s**(3/2)*sqrt(s - 2)*acosh(s - 1) + 6*sqrt(s)*sqrt(s - 2)*acosh(s - 1) + s**4 - s**3 - 12*s**2 + 28*s - 16)/(24*(s**3 - 6*s**2 + 12*s - 8))
+   t^1/2: sqrt(pi)*(sqrt(2)*s**(9/2) - 4*sqrt(2)*s**(7/2) + 16*sqrt(2)*s**(3/2) - 16*sqrt(2)*sqrt(s) + s**6 - 10*s**5 + 36*s**4 - 56*s**3 + 32*s**2)/(48*(s**5 - 10*s**4 + 40*s**3 - 80*s**2 + 80*s - 32))
+   t^1: (45*s**(11/2)*sqrt(s - 2)*acosh(s - 1) - 360*s**(9/2)*sqrt(s - 2)*acosh(s - 1) + 1080*s**(7/2)*sqrt(s - 2)*acosh(s - 1) - 1440*s**(5/2)*sqrt(s - 2)*acosh(s - 1) + 720*s**(3/2)*sqrt(s - 2)*acosh(s - 1) - 2*s**10 + 34*s**9 - 205*s**8 + 415*s**7 + 902*s**6 - 6440*s**5 + 13472*s**4 - 11600*s**3 - 160*s**2 + 6656*s - 3072)/(2880*(s**7 - 14*s**6 + 84*s**5 - 280*s**4 + 560*s**3 - 672*s**2 + 448*s - 128))
+Theta_hol coefficients:
+   t^-1: 0
+   t^-1/2: sqrt(pi)*(sqrt(2)*sqrt(s) + s**2/2 - 2*s)/(s*(s - 2))
+   t^0: 0
+   t^1/2: sqrt(pi)*(-sqrt(2)*s**(9/2) + 4*sqrt(2)*s**(7/2) - 16*sqrt(2)*s**(3/2) + 16*sqrt(2)*sqrt(s) - s**6 + 10*s**5 - 36*s**4 + 56*s**3 - 32*s**2)/(24*(s**5 - 10*s**4 + 40*s**3 - 80*s**2 + 80*s - 32))
+   t^1: 0
+E_s (q^{Q_s}-normalised) coefficients:
+   t^-1: acosh(s - 1)/(sqrt(s)*sqrt(s - 2))
+   t^-1/2: 0
+   t^0: (-3*s**(3/2)*acosh(s - 1) + 6*sqrt(s)*acosh(s - 1) + s**3*sqrt(s - 2) - 11*s**2*sqrt(s - 2) + 38*s*sqrt(s - 2) - 40*sqrt(s - 2))/(12*(s - 2)**(5/2))
+   t^1/2: 0
+   t^1: -(-45*s**(11/2)*acosh(s - 1) + 360*s**(9/2)*acosh(s - 1) - 1080*s**(7/2)*acosh(s - 1) + 1440*s**(5/2)*acosh(s - 1) - 720*s**(3/2)*acosh(s - 1) + 2*s**9*sqrt(s - 2) - 30*s**8*sqrt(s - 2) + 145*s**7*sqrt(s - 2) - 125*s**6*sqrt(s - 2) - 1152*s**5*sqrt(s - 2) + 4136*s**4*sqrt(s - 2) - 5200*s**3*sqrt(s - 2) + 1200*s**2*sqrt(s - 2) + 2560*s*sqrt(s - 2) - 1536*sqrt(s - 2))/(1440*(s - 2)**(13/2))
+[PASS] P t^-1/2 = sqrt(pi)(s^2 - 2 sqrt(2s))/(4 s (s-2))  [pre-stated guess]
+[PASS] Theta_hol t^-1 = 0
+[PASS] Theta_hol t^0 = 0
+[PASS] Theta_hol t^1 = 0
+[PASS] => integer orders of P equal those of (1+E)/2: t^0
+[PASS] t^1
+[PASS] s=7: matches 2026-10-18-s8-s11/asym_s.txt (max diff 2.2e-16)
+[PASS] s=8: matches 2026-10-18-s8-s11/asym_s.txt (max diff 3.3e-16)
+[PASS] s=11: matches 2026-10-18-s8-s11/asym_s.txt (max diff 4.4e-16)
