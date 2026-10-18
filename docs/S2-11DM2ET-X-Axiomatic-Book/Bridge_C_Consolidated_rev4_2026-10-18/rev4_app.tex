@@ -1,0 +1,53 @@
+%=====================================================================
+\section{Revision 4: errata, notation and relabelling (18 October 2026)}\label{app:rev4}
+%=====================================================================
+This appendix records the corrections that come from the internal cross-review \src{16}; its item numbers C1--C18 are quoted where they apply. No claim is made
+concerning HQCC termination, the twin prime conjecture or the Riemann hypothesis. The corresponding repository record is
+\path{ERRATUM_Consolidated_CrossReview_2026-10-18.md}; earlier repository files are not edited.
+
+\subsection{Errata}
+\begin{enumerate}[label=\textbf{R4.\arabic*},leftmargin=3.2em]
+\item (C2) $s=11$ family: $\dim V=110$, $d_{\rm Eis}=90$, $d_{\rm cusp}=20$ (exact); the earlier ``cusp rank $\ge73$, Eisenstein $\le37$'' is withdrawn (Appendix~\ref{app:s811}).
+\item (C11) ``Cusp part $\Leftrightarrow h^+\neq\#$genera'' and the ``cusp onset at $11,19,25,41$'' are withdrawn (Appendix~\ref{app:s811}, Proposition~\ref{prop:cuspcrit}).
+\item (C10) The stale rev.~3 open item on $s=8,11$ is removed (\S\ref{sec:open}).
+\item (C9) $a_H$, $a_C$ and the $H_s$ constant term are proved closed forms modulo F1, no longer PSLQ or 30-digit statements (Theorem~\ref{thm:C}, Table~\ref{tab:radial}).
+\item (C14) The ``Weil erratum'' is reworded: the old $36$-component Weil claim was wrong, but the label representation is exactly a Weil representation tensored with a
+$2$-adic factor (Theorem~\ref{thm:tensor7}; \S\ref{sec:recon}, item~2).
+\item (C15) $\dim V=42$ is exact (Proposition~\ref{prop:matched}); $E_{-a}=E_a$ is proved for all $s\ge5$ (Lemma~R).
+\item (C17) $s=8$: the fundamental unit of the order $\Z[2\sqrt3]$ is $7+4\sqrt3=\varepsilon_\gamma$, not $2+\sqrt3$.
+\item (C4) The local forms are $2x^2/5$ and $x^2/7$, not $x^2/5$ and $3x^2/7$ (status box of Theorem~\ref{thm:tensor7}).
+\item (C18) The hypothesis that $V^\perp$ is realised by weight-$1$ lifts is retired (N7).
+\item (C3) The $s=7$ label split ``$60$ Eisenstein-or-zero $+$ $12$ cusp'' of \src{10} is superseded by $W_P=72$, $V=42=36+6$, $V^\perp=30$.
+\item (C1) $s=11$ has $4$ genera, not $2$ (discriminant $396=4\cdot9\cdot11$ has three prime-discriminant factors); this was already corrected in Appendix~\ref{app:s811} and in the repository file \path{ERRATUM_s11_Genus_Count_2026-10-18.md}.
+\item (notation) In the even-$s$ Eisenstein factor of Theorem~\ref{thm:dims}, the case split of $d_2$ refers to $v$, the odd part of $2t(t-1)$; the verbal formula of \src{21} writes $u$ for this quantity.
+\end{enumerate}
+
+\subsection{Notation and name changes}
+\begin{center}\small
+\begin{longtable}{p{4.6cm}p{4.6cm}p{5.6cm}}\toprule
+old usage & rev.~4 & where\\\midrule\endhead
+$W$ $=\mathrm{Fix}(P)$, $\dim=2(s-1)^2$ ($72$ at $s=7$) & $W_P$ & \src{17,18,19}\\
+$W$ $=$ Eisenstein space, $\dim=3\prod(p^e+1)/2$ & $V_{\rm Eis}$, $d_{\rm Eis}$ & \src{20,21}\\
+$W$ $=$ complement of $V$ in $\mathrm{Fix}(P)$ & $V^\perp$ & rev.~3 (Prop.~\ref{prop:spec}), \src{15}\\
+$D=70,48,198$ (coordinate scale) & $\ell_s$ & \src{10}\\
+$D=140,48,396$ (discriminant of the order) & $D_s$ & \src{13,20,21}\\
+$D=99$ ($=s(s-2)$) & $n_s$ & rev.~3 open problems\\
+``Theorem G'' (zero set of $G$) & Theorem~\ref{thm:D} & \src{11}\\
+``Theorem G'' ($g_s$ asymptotics) & Theorem G$_s$ & \src{13}\\
+Theorem G (Lewis--Zagier) & Theorem~\ref{thm:G} (unchanged) & this paper\\
+$S$ (label matrix) & $S_{\rm lab}$; $\rho(S):=S_{\rm lab}^{-1}$ & Remark~\ref{rem:Sconv}\\
+Lemma C1, C2 & Lemma Prod1, Prod2 & \src{24}\\
+$W_2(k,u)$ & $d_2(k,v)$ & \src{21}\\\bottomrule
+\end{longtable}
+\end{center}
+New labels in revision~4: Theorems~\ref{thm:tensor7}, \ref{thm:tensorodd}, \ref{thm:dims}, \ref{thm:Hs}, \ref{thm:cthird}; Propositions~\ref{prop:matched}, \ref{prop:cuspcrit},
+\ref{prop:deep}; Remarks~\ref{rem:notation}, \ref{rem:Sconv}; Lemma~R, Lemma Prod1, Lemma Prod2; connections N1, N4--N8; errata R4.1--R4.12. They are numbered within
+sections, so no new lettered theorem is introduced. None of them is ``Theorem~L'' (the framework's Parity Dominance Theorem), none collides with the framework
+labels L1--L7, and the framework's Lemma~L keeps its name (Lemma~P of this paper is unchanged).
+
+\subsection{Relabelled under the rev.~4 convention}
+\emph{Category A $\to$ B} (floating or PSLQ only): Theorem~\ref{thm:K} (the cusp-row identities); the $140$ component fits and the Eisenstein/cusp classification of
+components (\S\ref{sec:split}); the $W_7$ phase values; the quadrant-cone weight-$1$ ratio test (\S\ref{sec:lead}); the rank $6$ of the content matrix
+(Proposition~\ref{prop:spec}(iv)); the floating SVD/FFT results of \src{20} and the SVD comparisons of \src{16}; the numerical certificates of \src{17}.
+\emph{Category B (or numerical) $\to$ A} (now proved or exact): $\dim V=42$ and the $36+6$ split; the $S$ multiplicities on $V$; $a_H$, $a_C$ and the $H_s$ constant term
+(modulo F1); $E_{-a}=E_a$ for all $s\ge5$; the $L(0)$ vanishing for non-totally-odd characters (PARI-free exact sums).

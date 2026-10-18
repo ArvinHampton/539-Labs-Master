@@ -1,0 +1,197 @@
+%=====================================================================
+\section{The theta-lift family: tensor structure, dimensions and cusp sectors (revision 4)}\label{sec:family}
+%=====================================================================
+This section adds the results of \src{16}--\src{21}. For an integer $s\ge5$ let $A_s=\begin{pmatrix}2&s\\s&s\end{pmatrix}$, $Q_s$, $a$, $c_0=s/(4(s-2))$ and
+$\gamma=\begin{pmatrix}-1&-s\\2&2s-1\end{pmatrix}$ be as in Appendix~\ref{app:s811}, and let $u_{\alpha,\beta}$ be the theta lifts of \S\ref{sec:lift} built from $A_s$
+(for $s=7$ these are the $140$ functions of Theorem~\ref{thm:F}).
+
+\begin{remark}[Notation, rev.~4]\label{rem:notation}
+\begin{itemize}[leftmargin=2em]
+\item $n_s:=s(s-2)$ (the radicand: $35,48,99$ at $s=7,8,11$); $D_s$ := the discriminant of the order of the form ($140,48,396$); $\ell_s$ := the coordinate
+scale $X=\ell_s\nu$ used in \src{10} ($70,48,198$). Revisions~2--3 and \src{10} wrote ``$D$'' for all three; ``$D=99$'' in rev.~3 meant $n_{11}$.
+\item $N_s$ := the number of labels; $N_s=4n_s$ for odd $s$ (so $N_7=140$).
+\item $W_P:=\mathrm{Fix}(P)$, the label representation ($\dim W_P=72$ at $s=7$). $V$ := the span of the values of the lift vector (the function span).
+$V_{\rm Eis}$ := the $\mathrm{SL}_2(\Z)$-cyclic span of the constant-term vector, $d_{\rm Eis}:=\dim V_{\rm Eis}$, and $d_{\rm cusp}:=\dim V-d_{\rm Eis}$.
+$V^\perp$ := the complement of $V$ in $W_P$. Several sources use ``$W$'' both for $\mathrm{Fix}(P)$ \src{17,18,19} and for the Eisenstein space \src{20,21},
+and rev.~3 used it for $V^\perp$; this paper uses $W_P$, $V_{\rm Eis}$ (or $d_{\rm Eis}$) and $V^\perp$ instead.
+\item $N$ := the negation map $u_{\alpha,\beta}\mapsto u_{-\alpha,-\beta}$ on labels (not to be confused with $N_s$).
+\end{itemize}
+\end{remark}
+
+\begin{remark}[The $S$ versus $S^{-1}$ label convention]\label{rem:Sconv}
+Let $S_{\rm lab}$ be the label matrix of Theorem~\ref{thm:F}, i.e.\ $u(-1/w)=S_{\rm lab}u(w)$. On the stored matrices for $s=7,8,11$:
+$S_{\rm lab}^2=P$, $(S_{\rm lab}T)^3=I$ on all labels, $(S_{\rm lab}T)^3\neq S_{\rm lab}^2$, and $(S_{\rm lab}^{-1}T)^3=S_{\rm lab}^{-2}$ \src{16}. So the representation of
+$\mathrm{SL}_2(\Z)$ in the standard presentation $S^4=1$, $(ST)^3=S^2$ is $\rho(S):=S_{\rm lab}^{-1}$, $\rho(T):=T$. The statement ``$(ST)^3=I$ on all of $\C^{140}$''
+(rev.~3) and the statement ``$(ST)^3\neq P$ on all $140$ labels'' \src{14} are both correct for $S=S_{\rm lab}$, and they agree. On $W_P$ one has $S_{\rm lab}=S_{\rm lab}^{-1}$,
+so nothing changes there. (Category A, exact.)
+\end{remark}
+
+\subsection{Exact tensor factorisation at $s=7$}
+Let $g=(14,6)/70$, a generator of $L'/\Z^2\cong\Z/35$, and $a_2=(\tfrac12,0)$, so that $a=a_2+a_{\rm odd}$ with $a_{\rm odd}=(\tfrac15,-\tfrac15)\in L'$. In the
+adapted basis $u'_{x,\epsilon,\delta}:=u_{xg+\epsilon a_2,\,-\delta a_2}$ ($x\in\Z/35\cong\Z/5\times\Z/7$ by CRT, $\epsilon,\delta\in\{0,1\}$) put
+$F_p[x,y]=\e(4xy/p)$, $T_p=\mathrm{diag}\,\e(2x^2/p)$, and let $S_2$, $T_2$ be the $4\times4$ monomial matrices on the theta characteristics $(\epsilon,\delta)$:
+$S_2:00\mapsto00$, $01\leftrightarrow10$, $11\mapsto-11$; $T_2:00\leftrightarrow01$, $10\mapsto i\cdot10$, $11\mapsto i\cdot11$.
+\begin{theorem}[Tensor factorisation, $s=7$]\label{thm:tensor7}
+(i) Exactly, $S_{\rm lab}=(F_5/\sqrt5)\otimes(F_7/\sqrt7)\otimes S_2$ and $T=T_5\otimes T_7\otimes T_2$.
+(ii) $\rho=\rho_5\otimes\rho_7\otimes\rho_2$, where $\rho_p$ is the Weil representation of $(\Z/p,q_p)$ with $q_5=2x^2/5$ and $q_7=x^2/7$, and
+$\rho_2=(\e(3/4)S_2^{-1},T_2)$ is a faithful representation of $\mathrm{SL}_2(\Z/4)$ (image of order $48$). Hence $\rho$ factors through
+$\mathrm{SL}_2(\Z/140)=\mathrm{SL}_2(\Z/4)\times\mathrm{SL}_2(\mathbb F_5)\times\mathrm{SL}_2(\mathbb F_7)$.
+(iii) $\rho_2=A_3\oplus B_1$, where $A_3$ is the span of the three even characteristics $00,01,10$ (irreducible, $T$-spectrum $\{1,-1,i\}$) and $B_1$ is the odd
+characteristic $11$ ($S,T\mapsto\e(1/4)$).
+(iv) $P=\rho(-I)=Z_5\otimes Z_7\otimes I_4$, where $Z_p$ is the reflection $x\mapsto-x$. Hence
+$W_P=(W_5^+\otimes W_7^+\oplus W_5^-\otimes W_7^-)\otimes\C^4$; the mixed local parities are absent. The restrictions are $16W_5^++12W_5^-$,
+$12W_7^++8W_7^-$ and $18(A_3+B_1)$.
+(v) $\mathrm{tr}\,\rho_5(S)|_{W_5^\pm}=(-1,0)$, $\mathrm{tr}\,\rho_7(S)|_{W_7^\pm}=(0,-1)$, $\mathrm{tr}\,\rho_2(S)|_{A_3}=-i$, $\mathrm{tr}\,\rho_2(S)|_{B_1}=i$, so $\mathrm{tr}\,S=0$ on each of the
+four sectors below and $n_\pm=36/36$ on $W_P$.
+\end{theorem}
+\begin{proof}[Proof outline]
+Every entry of $S_{\rm lab}$ is one term $\e(r)/\sqrt{35}$ with $r\in\Q$, and $T$ is monomial, so (i) is a finite identity over $\Q(\zeta_{140})$, checked
+exactly \src{18}. For (ii), $(\overline{F_p}T_p)^3=c\,Z_p$ exactly in $\Z[\zeta_p]$ with $c^2=125$ ($p=5$) and $c^2=-343$ ($p=7$); with Gauss's sign of the quadratic
+Gauss sum this gives the scalars $\gamma_5=-1$, $\gamma_7=\e(3/4)$, so $\rho_p$ is exactly the Weil representation of $q_p$; by the congruence theorem for Weil
+representations of finite quadratic modules of odd level \cite{Weil}, $\rho_p$ factors through $\mathrm{SL}_2(\Z/p)$. $\rho_2$ satisfies $S^4=I$,
+$(ST)^3=S^2=-I$, $T^4=I$ exactly, and the pair group $(\rho_2(g),g\bmod4)$ has exactly $48$ elements. The scalars cancel in the product, which equals
+$(S_{\rm lab}^{-1},T)$. (iv) and (v) follow from the local Gauss sums.
+\end{proof}
+\catA{Exact (Fractions and cyclotomic arithmetic) \src{18}, \emph{conditional on} the cited congruence theorem for the odd local factors \cite{Weil}
+(hypotheses checked: exact match with the Weil formulas, odd level). The earlier numerical certificates of \src{17} (congruence words $M_p$, character
+residuals $\le3\cdot10^{-11}$) are Category~B and are superseded by this exact proof. \textbf{Correction (C4):} \src{26} listed the local forms as $x^2/5$ and $3x^2/7$ (raw
+residues of the $140$th-root exponent $a$). The true local exponents satisfy $a=35x_4+28x_5+20x_7$, i.e.\ $x_4\equiv3a\bmod4$, $x_5\equiv2a\bmod5$,
+$x_7\equiv6a\bmod7$, and the forms are $2x^2/5$ and $x^2/7$. Since $2$ is a non-square mod $5$ and $3$ is a non-square mod $7$, the old forms are not
+isometric to the true ones.}
+
+\begin{proposition}[$V$ is the matched-sector space; local reflections]\label{prop:matched}
+Let $X^\pm=W_5^\pm\otimes W_7^\pm$. At $s=7$:
+(i) negation acts on $u'$ as $Z_5\otimes Z_7\otimes I_4$, and the unit $\gamma$ ($\varepsilon=6+\sqrt{35}$) acts as $I_5\otimes Z_7\otimes\mathrm{diag}(1,1,1,-1)$;
+(ii) $V=\mathrm{Fix}(N)\cap\mathrm{Fix}(\gamma)=A_3\otimes X^+\oplus B_1\otimes X^-$, of dimension $36+6=42$, and the lift kills
+$V^\perp=B_1\otimes X^+\,(12)\oplus A_3\otimes X^-\,(18)$;
+(iii) $V_{\rm Eis}=A_3\otimes X^+$ and the cuspidal part of $V$ is $V_{\rm cusp}=B_1\otimes X^-$. The $24$ cusp components of \S\ref{sec:split} are exactly the nonzero
+labels with $(\epsilon,\delta)=(1,1)$, and the $11$ identically vanishing labels are exactly the $6$ inconsistent orbits ($x_5x_7=0$, $\epsilon=\delta=1$);
+(iv) each of the $42$ classes is a free $\langle N,\gamma\rangle$-orbit (sizes $1,2,4$: $3,15,24$ classes), with proportionality constants $\pm1$ in the $u'$ basis;
+(v) the local reflections $Z_5$, $Z_7$ and $Z_2:=\mathrm{diag}(1,1,1,-1)$ commute with $\rho$. Their signs $(Z_5,Z_7,Z_2)$ are $(+,+,+)$ on $V_{\rm Eis}$, $(-,-,-)$ on $V_{\rm cusp}$,
+$(+,+,-)$ on $B_1\otimes X^+$ and $(-,-,+)$ on $A_3\otimes X^-$. Thus $Z_5Z_7=+1$ on $W_P$ (this is $P$) and $Z_7Z_2=+1$ exactly on $V$ (this is $\gamma$).
+$S$ commutes with all three, and $n_\pm=d/2$ on every joint eigenspace.
+\end{proposition}
+\begin{proof}[Proof outline]
+(i) The identities $u_{-\alpha,-\beta}=u_{\alpha,\beta}$ and $u_{\gamma\alpha,\gamma\beta}=u_{\alpha,\beta}$ hold as identities of functions, and their actions on $u'$ are computed exactly.
+(ii) Hence $V\subseteq\mathrm{Fix}(N)\cap\mathrm{Fix}(\gamma)$, which has dimension $42$. The exact Fourier matrix (sums of $4900$th roots of unity, $|Q|\le25$) has rank $42$
+modulo a prime above $\ell=29401\equiv1\bmod4900$; rank cannot increase under reduction, so $\dim V\ge42$. (iii) The constant-term vector is
+$\delta_{x=0}\otimes(e_{00}+e_{01})$, a pure tensor with $2$-adic part in $A_3$; its cyclic span is $A_3\otimes X^+$ (the argument is that of Theorem~\ref{thm:dims}(iii)).
+The cuspidal functions of the span are those orthogonal to $V_{\rm Eis}$ (the $\lambda=\tfrac14$ constant-term criterion \src{20}); by unitarity this is $B_1\otimes X^-$.
+\end{proof}
+\catA{Exact \src{18}: (i), (ii), (iv), (v) and the label statements of (iii). The mechanism that kills $V^\perp$ is the $\gamma$ phase flip: the unit acts by $-1$
+at $7$ and by $-1$ on the odd characteristic, the analogue of the exact vanishing of the $11$ labels (R3.4). (iii) uses the cited congruence theorem and the
+standard $\lambda=\tfrac14$ constant-term criterion. This answers the rev.~3 open items on the $30$-dimensional complement and on the structure behind the
+$6$ cusp combinations.}
+\catB{Calling $Z_5,Z_7,Z_2$ the Atkin--Lehner operators $W_5,W_7,W_4$ on the lifted forms (not checked on the forms). The Hecke-character reading: a
+character contributes only if $\psi(\varepsilon)=\psi(-1)=1$; genus characters are even at the ramified primes and land in $A_3\otimes X^+$; characters odd at
+$5$ and $7$ are not genus characters, hence not $\sigma$-invariant, and give Maass cusp forms in $B_1\otimes X^-$ \src{18, \S4}. The identification of
+$V_{\rm cusp}$ with specific dihedral Hecke eigenforms rests on the floating fits of \S\ref{sec:split}.}
+
+\subsection{General odd $s$}
+\begin{theorem}[Tensor factorisation for odd $s$]\label{thm:tensorodd}
+Let $s\ge5$ be odd and $n=n_s$. Then $L'/\Z^2\cong\Z/n$ is generated by $g=A_s^{-1}e_2$, $a=a_2+a_{\rm odd}$ with $a_2=(\tfrac12,0)$ and
+$a_{\rm odd}=(1,-1)/(s-2)\in L'$, and in the basis $u'_{x,\epsilon,\delta}:=u_{xg+\epsilon a_2,\,-\delta a_2}$ ($N_s=4n$ labels):
+\[
+T=\mathrm{diag}_x\,\e(-x^2/n)\otimes T_2,\qquad S_{\rm lab}=\bigl[\e(-2xy/n)/\sqrt n\bigr]_{x,y}\otimes S_2,
+\]
+with $S_2:(\epsilon,\delta)\mapsto(\delta,\epsilon)$ with phase $(-1)^{\epsilon\delta}$, and $T_2$ as above; $S_2,T_2$ do not depend on $s$.
+(i) With $\rho(S):=S_{\rm lab}^{-1}$, $\rho=\bigotimes_{p^e\Vert n}\rho_{q_p}\otimes\rho_2$, where $\rho_{q_p}$ is the Weil representation of $(\Z/p^e,q_p)$,
+$q_p(x)=-v_px^2/p^e$, $v_p=(n/p^e)^{-1}\bmod p^e$, and $\rho_2=(\e(3/4)S_2^{-1},T_2)$ is the $s=7$ factor. The Weil scalar is $\e(1/4)$ for every odd $s$, since
+$n\equiv3\bmod4$. $\rho$ factors through $\mathrm{SL}_2(\Z/4n)=\mathrm{SL}_2(\Z/4)\times\prod\mathrm{SL}_2(\Z/p^e)$, so $N_s=4s(s-2)$ is the number of labels and the order of $T$.
+(ii) Negation acts as $\bigotimes_pZ_p\otimes I_4$; $\gamma$ acts as $x\mapsto(s-1)x$ with phase $(-1)^{\epsilon\delta}$, i.e.\ as
+$\bigotimes_{p\mid s}Z_p\otimes\bigotimes_{p\mid s-2}I\otimes Z_2$. In fact $\gamma\equiv(s-1)\cdot I$ on all of $L'/\Z^2$, because
+$(\gamma-(s-1)I)A_s^{-1}=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$; and $s-1\equiv-1\bmod p^e$ for $p\mid s$, $\equiv+1$ for $p\mid s-2$ (the reduction of
+$\varepsilon_s=(s-1)+\sqrt{n_s}$ at the ramified primes).
+(iii) $P=S_{\rm lab}^2=Z_n\otimes I_4$, so $\dim W_P=4\cdot\tfrac{n+1}2=2(s-1)^2$ (this is $72$ at $s=7$).
+(iv) $\mathrm{Fix}(N)\cap\mathrm{Fix}(\gamma)=\{Z_{(s)}Z_{(s-2)}=+1,\ Z_{(s)}Z_2=+1\}$ has dimension $3E(s)E(s-2)+O(s)O(s-2)=s(s-1)$, with $E(m)=\tfrac{m+1}2$,
+$O(m)=\tfrac{m-1}2$ and $Z_{(m)}=\bigotimes_{p\mid m}Z_p$. Hence $\dim V\le s(s-1)$. There are exactly $2s-3$ forced-zero labels, and the odd-characteristic
+sector $B_1\otimes(\Z/s)^-\otimes(\Z/(s-2))^-$ has dimension $(s-1)(s-3)/4$.
+\end{theorem}
+\catA{Symbolic proof for all odd $s$ \src{19} (the $T$- and $S$-entries from $B(g,g)=-2/n$, $B(g,a_2)=0$, $w_c=g/2$, and the CRT split of $-x^2/n$); exact verification
+entry by entry at $s=5,7,9,11,13,15,21,25$ (including the prime powers $9$ and $25$); the scalar proof of (ii) is \src{21, \S2.1}. The congruence statement in (i)
+is \emph{conditional on} the cited theorem \cite{Weil}, whose hypotheses were checked; its convention was checked against the exact $s=7$ relations but not
+line by line against the published text. Correction recorded in \src{19}: $\dim W_P=2(s-1)^2$; the expression $3\prod(p^e+1)/2$ is $d_{\rm Eis}$, not $\dim W_P$.}
+
+\subsection{Dimensions of $V$, $V_{\rm Eis}$ and the cusp part}
+\begin{theorem}[Dimensions]\label{thm:dims}
+(i) \emph{Orbit bound.} $\dim V\le\#\{\text{consistent }\langle\gamma,-1\rangle\text{-orbits}\}$, and the number of orbits is $s(s-1)$ for odd $s$ and
+$(s/2)(s/2+1)$ for even $s$ (Burnside, with $|\mathrm{Fix}\,\gamma|=2(s-2)$, $|\mathrm{Fix}(-\gamma)|=2s$ and $|\Delta[2]|=4$, using (ii) of Theorem~\ref{thm:tensorodd}).
+(ii) \emph{Exact ranks.} For every $s=5,\dots,51$ and for $s=72$, the exact rational rank of the integer orbit-count matrix equals the upper bound
+(for $s=8,18,32,50,72$ the half-cone bound of (iv)). Hence $\dim V$ is known exactly there; for odd $s\le51$, $\dim V=s(s-1)$.
+(iii) \emph{Eisenstein dimension.} For odd $s$, $d_{\rm Eis}=3\prod_{p^e\Vert n_s}(p^e+1)/2$, at every odd $s$ whose local factors with $e\ge2$ are certified
+($p^e\in\{9,25,27,49\}$ suffices for odd $s\le51$). For even $s=2t$, with $2^k\Vert2t(t-1)$ and $v$ the odd part of $2t(t-1)$,
+$d_{\rm Eis}=d_2(k,v)\prod_{p^e\Vert v}(p^e+1)/2$, where $d_2(k,v)=2^{k-1}+4$ ($k$ even), $2^{k-1}+6$ ($k$ odd, $v\equiv1\bmod4$), $2^{k-1}+5$ ($k$ odd,
+$v\equiv3\bmod4$), certified for $k\le5$ (every even $s\le62$).
+(iv) \emph{The $s=2m^2$ mechanism.} $\gamma$ has a square root $g\in\mathrm{SO}(A_s)(\Q)$ with $\det g=1$ iff $\mathrm{tr}\,\gamma+2=2s$ is a perfect square, i.e.\ iff
+$s=2m^2$; then $g=(\gamma+I)/(2m)=\begin{pmatrix}0&-m\\1/m&2m\end{pmatrix}$ (in unit language $\varepsilon_s=\eta^2$, $\eta=m+\sqrt{m^2-1}$). Splitting each cone
+$[r,\gamma r)$ as $[r,gr)\sqcup g[r,gr)$ gives an exact upper bound with gap exactly $m(m-1)$ below the orbit bound for $m=2,\dots,7$. It equals the exact lower
+bound for $m=2,\dots,6$: $\dim V=18,84,260,630,1302$ at $s=8,18,32,50,72$. At $s=98$: $2406\le\dim V\le2408$ (not certified).
+(v) \emph{Table} ($d_{\rm cusp}=\dim V-d_{\rm Eis}$ is the exact dimension of the cuspidal functions in the span):
+\begin{center}\small
+\begin{longtable}{rrrrcrrrr}\toprule
+$s$ & $\dim V$ & $d_{\rm Eis}$ & $d_{\rm cusp}$ && $s$ & $\dim V$ & $d_{\rm Eis}$ & $d_{\rm cusp}$\\\midrule\endhead
+\input{dims_table.tex}
+\bottomrule
+\end{longtable}
+\end{center}
+In particular $d_{\rm cusp}>0$ for every $s$ in the table except $s=6,8,10$, and at $s=11$: $\dim V=110$, $d_{\rm Eis}=90$, $d_{\rm cusp}=20$.
+\end{theorem}
+\begin{proof}[Proof notes]
+(i) is \src{21, \S2.1}. (ii): \texttt{vrank.py} counts the points of each orbit at each norm in the four cones and takes the exact rank over $\Q$ (FLINT
+\texttt{fmpz\_mat}); a rank of evaluations is a lower bound for $\dim V$ \src{21, \S2.2}. (iii), odd $s$ (\emph{argument written for this consolidation}): by
+Theorem~\ref{thm:tensorodd} the constant-term vector (labels with $\alpha\in\Z^2$, i.e.\ $x=0$, $\epsilon=0$) is the pure tensor
+$\delta_0\otimes\cdots\otimes\delta_0\otimes(e_{00}+e_{01})$, with $2$-adic part in $A_3$. Since $\rho(\mathrm{SL}_2(\Z))$ is the full product of the local images,
+the cyclic span of a pure tensor is the tensor product of the local cyclic spans. These are $A_3$ (irreducible, dimension $3$) and the cyclic span of $\delta_0$
+in $\rho_{q_p}$, of dimension $(p^e+1)/2$: by hand for $e=1$, and by exact certification (Krylov rank mod $\ell$ equal to the $O(\Delta)$-orbit upper bound)
+for the listed $p^e$ \src{21}. This replaces the floating conjugacy check to the Weil representation of $L_0$ used in \src{21, \S2.3}. Even $s$: the family is
+literally the Weil representation of $L'/\Z^2$ (an exact identity of the $S,T$ matrices), with local factors certified as stated \src{21}. (iv): the square root
+and the half-cone bound are exact \src{21, \S2.4}; the $s=8$ relations $N_{O12}=N_{O7}+N_{O9}$ and $N_{O2}=N_{O15}+N_{O19}$ are instances.
+\end{proof}
+\catA{(i); (ii) and the table entries for $\dim V$, exact per $s$; (iii) for the stated $s$, \emph{conditional on} the cited congruence theorem (odd $s$) and on
+the exact local certifications; (iv) the square-root criterion and the upper bounds for $m\le7$, with equality for $m\le6$; $d_{\rm cusp}=\dim V-d_{\rm Eis}$ as the
+dimension of cuspidal functions, given the $\lambda=\tfrac14$ constant-term criterion. The pure-tensor argument for (iii) has had no separate check.}
+\catB{$\dim V=s(s-1)$ for \emph{all} odd $s$ (the lower bound is open); the gap $m(m-1)$ for all $m$ (at $m=7$ it is $42$ or $44$, and $\dim V(98)=2406$ looks
+likely); $d_2(k,v)$ for $k\ge6$ (first case $s=64$; exact lower bounds only). \textbf{Relabelled (C13):} the floating SVD ranks and FFT counts of \src{20} (and the
+SVD comparisons in \src{16}, N2 and N9) are Category~B; they agree with the exact values above except where \src{16} recorded truncation effects (e.g.\ $s=51$ at low $Q$).
+The file \texttt{cert\_W\_5\_6\_7\_8.json} of \src{21} does not certify $d_{\rm Eis}$ at $s=5,7,8$ and is not used.}
+
+\begin{remark}[Sector reading of the cusp dimension, odd $s$]
+By Theorem~\ref{thm:tensorodd}(iv), $V\subseteq A_3\otimes(\text{even}\otimes\text{even})\oplus B_1\otimes(\text{odd}\otimes\text{odd})$, where even/odd refer to $Z_{(s)}$ and $Z_{(s-2)}$.
+The all-even sector $A_3\otimes\bigotimes_pW_p^+$ has dimension $d_{\rm Eis}$. Wherever $\dim V=s(s-1)$, the cusp part is
+$d_{\rm cusp}=O(s)O(s-2)+3\bigl(E(s)E(s-2)-\prod(p^e+1)/2\bigr)\ge(s-1)(s-3)/4>0$, with equality iff $s$ and $s-2$ are both prime powers. This reproduces
+$2,6,12,20,30,84,110,72,180,218,132$ at $s=5,\dots,25$ and $758$ at $s=41$ (connection N3 of \src{16}). Category A at the certified $s$; for general odd $s$
+it is Category~B, through the open lower bound. The family cusp part is therefore a local (Weil-parity) phenomenon, not a class-group one.
+\end{remark}
+
+\subsection{Two cusp notions: the family span and the vector $u_L$}
+The family statement above concerns the whole span $V$. Whether the single vector $u_L=u_{a,0}$ has cusp content is a different question; the two must be kept apart.
+\begin{proposition}[Cusp criterion for $u_L$]\label{prop:cuspcrit}
+Let $G=\mathrm{Cl}^+_{M\infty_1\infty_2}$ with $M=2dc$, $d=2(s-2)$, $n_s=c^2D_0$; let $T\subset G$ be the class set of the coprime part of $u_L$, $S=\mathrm{Stab}(T)$,
+$j=[-1]$, $\bar G=G/(S+\langle j\rangle)$, $H=(1-\sigma)G$ and $\bar H$ its image in $\bar G$.
+(i) The coprime part of $u_L$ is Eisenstein (genus-pure) iff $\bar H=1$, i.e.\ iff $\sigma$ acts trivially on $\bar G$; the number of non-genus pure characters is
+then $|\bar G|-|\bar G^\sigma|$.
+(ii) For odd $s$ with $c=1$ ($n_s$ squarefree): $|\bar G|=h\varphi(s-2)$; if $|\bar G^\sigma|=2^{\omega(s)}\varphi(s-2)$, then $u_L$ is Eisenstein iff $h(\Q(\sqrt{n_s}))=2^{\omega(s)}$, and the
+number of non-genus characters is $\varphi(s-2)(h-2^{\omega(s)})$. Among the odd $s\le121$ with $c=1$ (class numbers certified with \texttt{bnfcertify}) this predicts Eisenstein only at $s=5,7,13,15$.
+(iii) Verdicts. Eisenstein: $s=5,7,9,13,15,16,20,24$ (at $9,16,24$ on every tested part, Proposition~\ref{prop:deep}). Cusp content: $s=11,14,17,18,19,21,22,23,25,29$,
+the odd $s$ from $31$ to $41$, and $s=53,55,57$. Open (predicted cusp): $s=32,34,36,40$.
+(iv) The rule ``$u_L$ has cusp content iff $h^+\neq\#$genera'' is false: $s=14,17,18,22,23$ have $h^+=\#$genera and cusp content (all with $\bar H$ of order~$2$).
+(v) The two notions differ: $d_{\rm cusp}>0$ at $s=5,7,13,15$, where $u_L$ is Eisenstein. The $u_L$ verdict is class-group data ($\bar H$) on top of the local structure.
+\end{proposition}
+\catA{(i): reduction (Tate's $\ker\Nm=C_K^{1-\sigma}$ for cyclic $K/\Q$, plus the content dictionary ``Maass content of $u_L$ = pure-type character content of its class
+sets'' used in \src{5, 10}) \src{21, \S1.1}. $|\bar G|=h\varphi(s-2)$ in (ii). (iii), (iv): exact finite group computations per $s$, on the stated norm ranges, with complete
+coprime parts (the $s=18$ coprime part is complete at $B=150\,000$) \src{20, 21}; every cusp verdict comes from a complete part.}
+\catB{The ambiguous-class count $|\bar G^\sigma|=2^{\omega(s)}\varphi(s-2)$ in general (verified at every tested $s$), hence the closed form in (ii); sufficiency of the
+modulus $M=2dc$ for all norms (stable under $M\to2M$ wherever tested); the floating FFT character counts of \src{20}; the counts at $s=53,55,57$ (incomplete coverage,
+but matching the prediction).}
+
+\begin{proposition}[Deep bad-prime parts]\label{prop:deep}
+At $s=9$ (the $29$ parts $(e_1,e_2)$ with $e_1\le e_2\le7$ at the split prime $3$, plus $\fc=1$), $s=16$ ($\fc=1,\fp_2$; and $7$) and $s=24$ ($15$ parts at $2$, up to
+exponent $8$; and $11$), every tested $\fc$-part is complete and genus-pure. At $s=18$ the $3$-parts are pure, but the coprime part is not, so $u_L$ has cusp content.
+If $\bar H=1$ and every $T_\fc$ is $S$-invariant, then every $\fc$-part is genus-pure and $u_L$ is Eisenstein; conversely, if $\bar H\neq1$, the coprime part already
+gives cusp content. So the coprime criterion decides, given $S$-invariance.
+\end{proposition}
+\catA{Per tested part: exact (\texttt{matsolvemod} lattice solve, completeness of every class, exact purity test) \src{21, \S4}. The reduction lemma, given
+$S$-invariance: $(1+j)1_{T_\fc}$ is $(S+\langle j\rangle)$-invariant, hence $H$-invariant, and $\sigma H=H$.}
+\catB{$S$-invariance of $T_\fc$ for all $\fc$ (verified on every tested part; the likely proof via multiplication by $\lambda\equiv1$ is not written out); hence
+``Eisenstein'' at $s=9,16,24$ over all (infinitely many) parts. Mixed $\fc$-parts with two bad primes at once were not enumerated. The incomplete runs at $B=4000$
+(spurious non-pure flags at $s=16,24$) are superseded.}
