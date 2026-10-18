@@ -1,0 +1,220 @@
+# OUTPUTS BUNDLE — Audit_and_ProfileLaw_2026-10-18 (2026-10-18)
+# The text outputs (json/log/txt/sha256) of this package, concatenated verbatim, one member per file.
+# Reports (.md) and scripts (.py/.sh) are stored as separate files in this folder. Binary files (pkl/npz/npy), __pycache__ and empty logs are excluded.
+# Reason for bundling: the push tool accepts at most 4 file attachments per commit; bundling keeps the commit count modest.
+# Member format: a line "===== BEGIN FILE <relative path> bytes=<n> sha256=<hex> =====", then exactly <n> bytes, then "\n===== END FILE <relative path> =====".
+# Extract (Python 3, run in this folder):
+#   import hashlib,os,re; d=open('OUTPUTS_BUNDLE_2026-10-18.txt','rb').read(); i=0
+#   for m in re.finditer(rb'===== BEGIN FILE (\S+) bytes=(\d+) sha256=([0-9a-f]+) =====\n', d):
+#       if m.start()<i: continue
+#       p,n,h=m.group(1).decode(),int(m.group(2)),m.group(3).decode(); b=d[m.end():m.end()+n]; i=m.end()+n
+#       assert hashlib.sha256(b).hexdigest()==h; os.makedirs(os.path.dirname(p) or '.',exist_ok=True); open(p,'wb').write(b)
+# Members: 11
+===== BEGIN FILE green_lemma_check.txt bytes=2527 sha256=a33283ab5660e6b0f3aab986bf43ee294eb7f69db002431c1f30e100de4c2f80 =====
+z=(0.3 + 0.8j) n=+1: F_n = (0.0031849313445113016 - 0.00980221076603588062j)   expected (0.0031849313445113016 - 0.00980221076603588062j)   |diff| = 3.7e-23
+z=(0.3 + 0.8j) n=+2: F_n = (0.0000547108156331718565 + 0.000039749734299359888j)   expected (0.0000547108156331718565 + 0.000039749734299359888j)   |diff| = 3.48e-25
+z=(0.3 + 0.8j) n=+3: F_n = (-3.58980636427059412e-7 + 2.60814699094689202e-7j)   expected (-3.58980636427059412e-7 + 2.60814699094689202e-7j)   |diff| = 2.81e-27
+z=(0.3 + 0.8j) n=-1: F_n = (2.39741371701415214e-26 + 7.37848072865259228e-26j)   expected 0   |diff| = 7.76e-26
+z=(0.3 + 0.8j) n=-2: F_n = (1.59002007946805648e-28 - 1.15521720811601019e-28j)   expected 0   |diff| = 1.97e-28
+z=(0.3 + 0.8j) n= 0: int[sqrt y, R^1/2] = (0.5 + 0.0j)  expected 1/2  |diff| = 5.14e-22
+z=(-0.17 + 0.45j) n=+1: F_n = (-0.0447719689672110218 + 0.0814399092188343184j)   expected (-0.0447719689672110218 + 0.0814399092188343184j)   |diff| = 3.27e-22
+z=(-0.17 + 0.45j) n=+2: F_n = (0.00294623149381437933 + 0.00464251797135024874j)   expected (0.00294623149381437933 + 0.00464251797135024874j)   |diff| = 2.8e-23
+z=(-0.17 + 0.45j) n=+3: F_n = (0.000324672790765597308 - 0.0000204266805973314793j)   expected (0.000324672790765597308 - 0.0000204266805973314793j)   |diff| = 2.04e-24
+z=(-0.17 + 0.45j) n=-1: F_n = (-9.46833388327734447e-25 - 1.72228353966840078e-24j)   expected 0   |diff| = 1.97e-24
+z=(-0.17 + 0.45j) n=-2: F_n = (2.52456358016837119e-26 - 3.97807565880510768e-26j)   expected 0   |diff| = 4.71e-26
+z=(-0.17 + 0.45j) n= 0: int[sqrt y, R^1/2] = (0.5 + 0.0j)  expected 1/2  |diff| = 6.86e-22
+z=(1.1 + 1.3j) n=+1: F_n = (-0.000360328821789636991 - 0.000261794213096236332j)   expected (-0.000360328821789636991 - 0.000261794213096236332j)   |diff| = 1.61e-24
+z=(1.1 + 1.3j) n=+2: F_n = (-3.90252057226987495e-8 - 1.20107233187627885e-7j)   expected (-3.90252057226987495e-8 - 1.20107233187627885e-7j)   |diff| = 6.52e-28
+z=(1.1 + 1.3j) n=+3: F_n = (1.10653888762451329e-11 - 3.4055765176861629e-11j)   expected (1.10653888762451329e-11 - 3.4055765176861629e-11j)   |diff| = 2.27e-31
+z=(1.1 + 1.3j) n=-1: F_n = (-1.09793065498814671e-27 + 7.97693313649669557e-28j)   expected 0   |diff| = 1.36e-27
+z=(1.1 + 1.3j) n=-2: F_n = (-4.45855409253954736e-32 + 1.37220185302144113e-31j)   expected 0   |diff| = 1.44e-31
+z=(1.1 + 1.3j) n= 0: int[sqrt y, R^1/2] = (0.5 + 0.0j)  expected 1/2  |diff| = 4.04e-22
+Delta R_z^(1/2) / R_z^(1/2) at w=0.9+1.6i, z=0.2+0.7i: (0.25 + 6.1392015100018973992e-32j) (expected 1/4)
+
+===== END FILE green_lemma_check.txt =====
+===== BEGIN FILE o2_counts_check.txt bytes=1087 sha256=2ad9c9cb3ca7945d6a0021a8c39ce0a234f478bb8a8308e924c1c00212a23b69 =====
+G implementation check (h/m=3/7, 2/9): 3.2e-14 7.7e-15
+O2 input, all m<1200 with gcd(m,70)=1: P(m):=m G(1/m) e(-7/(20m)) depends only on m mod 70 (max spread 1.2e-13); |P|=1: 5.1e-15
+   closed form G(1/m) = e(7*20^-1/m) (35/m)/m : max deviation 7.8e-16
+Theorem D: coprime pairs (h mod m, m<=105) = 3374; pattern mismatches = 0
+x=h/7: G = (h/7) i/sqrt7 ? ['1.000000000000', '1.000000000000', '1.000000000000', '1.000000000000', '1.000000000000', '1.000000000000']
+sum_{m<=105} phi(m) = 3374 ; sum_{m<=40} phi = 490 ; sum_{m<=60} phi = 1102 ; sum_{m<=29} phi = 270
+E(iii) candidate set 0<x<1, m<30: size 269, exactly one of G(x),G(-1/7x) zero: 178, both nonzero: 59
+E(iii) candidate set 0<x<=1, m<30: size 270, exactly one of G(x),G(-1/7x) zero: 178, both nonzero: 60
+E(iii) candidate set 0<=x<1, m<30: size 269, exactly one of G(x),G(-1/7x) zero: 178, both nonzero: 59
+I = 0.209419820314714650; a_P = 0.5256172043; a_H = -0.3035254127; a_C = 0.8291426171; a_P - a_H = 0.8291426171; (11-7I)/20 = 0.4767030629; R t^-1/2 = a_P - sqrt(pi)/2 = -0.3606097211
+|I G| at x=1/7: I/sqrt7 = 0.079153
+
+===== END FILE o2_counts_check.txt =====
+===== BEGIN FILE profile_corollaries.txt bytes=709 sha256=9941d8d0def0ce281323e9a1cb30bdee3e6e7748e3d78b161b84c202f8784750 =====
+word ST = [[0,-1],[1,1]], x=1/9, gx=-9/10: max|G(gx)-rho G(x)/|cx+d|| = 3.2e-16, max|G(gx)| = 0.224
+word SSTT = [[-1,-2],[0,-1]], x=-2/3, gx=4/3: max|G(gx)-rho G(x)/|cx+d|| = 6.6e-16, max|G(gx)| = 0.333
+word TT = [[1,2],[0,1]], x=1/9, gx=19/9: max|G(gx)-rho G(x)/|cx+d|| = 3.4e-16, max|G(gx)| = 0.111
+word SSST = [[0,1],[-1,-1]], x=1/3, gx=-3/4: max|G(gx)-rho G(x)/|cx+d|| = 6.0e-16, max|G(gx)| = 0.250
+word SSST = [[0,1],[-1,-1]], x=1/3, gx=-3/4: max|G(gx)-rho G(x)/|cx+d|| = 6.0e-16, max|G(gx)| = 0.250
+word TTT = [[1,3],[0,1]], x=1/9, gx=28/9: max|G(gx)-rho G(x)/|cx+d|| = 2.8e-16, max|G(gx)| = 0.111
+(C1) max deviation 6.6e-16
+(C2) G_(a,0)(x/(140x+1))|140x+1| = G_(a,0)(x) at 6 rationals: max dev 3.0e-15
+
+===== END FILE profile_corollaries.txt =====
+===== BEGIN FILE profile_law_check.txt bytes=748 sha256=81e5c5070aaaf72965071f59b01a5629bf1e3a06bf2f0c389a93a4e12517c280 =====
+period check (Fraction(7, 10), Fraction(-1, 5)) (0, 0) 1/3 diff 1.39e-17
+period check (Fraction(1, 2), Fraction(1, 3)) (Fraction(1, 3), Fraction(0, 1)) -2/3 diff 6.78e-18
+period check (Fraction(0, 1), Fraction(5, 7)) (Fraction(-7, 10), Fraction(1, 5)) 3/7 diff 1.19e-19
+S-law, all 140 labels x in {1,-1,1/3,-2/3}: 560 tests, 280 with LHS nonzero, max |LHS-RHS| = 3.34e-15
+S-law, 13 labels x 12 x-values: 156 tests, 88 nonzero, max dev 3.21e-15
+S-law, 40 random (al,be) with denominators in {1,2,3,4,6}: 40 tests, 3 nonzero, max dev 2.24e-15
+with signed factor x instead of |x| at x<0, LHS/RHS = ['-1.000000000000+8.1e-16i', '-1.000000000000-6.3e-16i', '-1.000000000000-1.8e-15i']
+T-law, all 140 labels, x in {1/3,-2/5}: 280 tests, max dev 5.59e-16
+
+===== END FILE profile_law_check.txt =====
+===== BEGIN FILE profile_law_random.log bytes=117 sha256=960b547d77fd712c850b01381e07fc8c62c78200334dfb1d226069056e9e9e9c =====
+SUMMARY: 60 nonzero random tests (of 1654 drawn), max |LHS-RHS| = 3.21e-15
+
+real	0m8.078s
+user	0m7.923s
+sys	0m0.932s
+
+===== END FILE profile_law_random.log =====
+===== BEGIN FILE profile_law_random.txt bytes=7763 sha256=527cc781b49756f1225a0d7a619858217063c8ca250e31a7896805c85bffa162 =====
+al=(Fraction(0, 1), Fraction(1, 3)) be=(Fraction(1, 2), Fraction(0, 1)) x=1/3: LHS=1.000000000000+0.000000000000j |dev|=3.0e-15
+al=(Fraction(4, 5), Fraction(1, 5)) be=(Fraction(9, 10), Fraction(1, 35)) x=-1/3: LHS=-0.809016994375-0.587785252292j |dev|=2.0e-15
+al=(Fraction(0, 1), Fraction(0, 1)) be=(Fraction(1, 2), Fraction(0, 1)) x=-3: LHS=-0.333333333333+0.000000000000j |dev|=9.2e-17
+al=(Fraction(0, 1), Fraction(4, 7)) be=(Fraction(1, 2), Fraction(4, 7)) x=1/3: LHS=0.623489801859-0.781831482468j |dev|=1.1e-15
+al=(Fraction(1, 2), Fraction(0, 1)) be=(Fraction(0, 1), Fraction(0, 1)) x=-9: LHS=-0.000000000000+0.111111111111j |dev|=1.3e-16
+al=(Fraction(0, 1), Fraction(0, 1)) be=(Fraction(1, 2), Fraction(0, 1)) x=-9: LHS=0.111111111111+0.000000000000j |dev|=1.1e-16
+al=(Fraction(1, 2), Fraction(0, 1)) be=(Fraction(0, 1), Fraction(0, 1)) x=1/3: LHS=0.000000000000+1.000000000000j |dev|=1.7e-15
+al=(Fraction(0, 1), Fraction(0, 1)) be=(Fraction(1, 2), Fraction(0, 1)) x=-9: LHS=0.111111111111+0.000000000000j |dev|=1.1e-16
+al=(Fraction(1, 2), Fraction(1, 2)) be=(Fraction(0, 1), Fraction(1, 2)) x=1/3: LHS=0.707106781187-0.707106781187j |dev|=1.3e-15
+al=(Fraction(0, 1), Fraction(0, 1)) be=(Fraction(1, 2), Fraction(3, 7)) x=1/3: LHS=1.000000000000+0.000000000000j |dev|=7.8e-16
+al=(Fraction(1, 2), Fraction(0, 1)) be=(Fraction(0, 1), Fraction(0, 1)) x=-9: LHS=-0.000000000000+0.111111111111j |dev|=1.3e-16
+al=(Fraction(1, 2), Fraction(3, 5)) be=(Fraction(0, 1), Fraction(23, 35)) x=-3: LHS=-0.301609017489+0.141926430522j |dev|=2.8e-17
+al=(Fraction(1, 3), Fraction(3, 7)) be=(Fraction(1, 2), Fraction(3, 7)) x=1/3: LHS=0.623489801859-0.781831482468j |dev|=1.5e-15
+al=(Fraction(3, 10), Fraction(1, 5)) be=(Fraction(0, 1), Fraction(0, 1)) x=1: LHS=-0.587785252292+0.809016994375j |dev|=2.5e-16
+al=(Fraction(0, 1), Fraction(1, 3)) be=(Fraction(1, 2), Fraction(5, 7)) x=-1/3: LHS=1.000000000000+0.000000000000j |dev|=1.5e-15
+al=(Fraction(3, 10), Fraction(4, 7)) be=(Fraction(0, 1), Fraction(3, 5)) x=3: LHS=0.331709860862+0.032858474067j |dev|=6.5e-17
+al=(Fraction(9, 14), Fraction(0, 1)) be=(Fraction(3, 7), Fraction(0, 1)) x=-9: LHS=-0.091130250511-0.063568517791j |dev|=4.2e-17
+al=(Fraction(1, 2), Fraction(4, 5)) be=(Fraction(3, 5), Fraction(0, 1)) x=3: LHS=0.327429083576+0.062460438195j |dev|=1.8e-16
+al=(Fraction(1, 2), Fraction(0, 1)) be=(Fraction(0, 1), Fraction(0, 1)) x=-1: LHS=0.000000000000+1.000000000000j |dev|=4.5e-16
+al=(Fraction(0, 1), Fraction(0, 1)) be=(Fraction(1, 2), Fraction(0, 1)) x=1: LHS=1.000000000000+0.000000000000j |dev|=5.8e-16
+al=(Fraction(7, 10), Fraction(4, 5)) be=(Fraction(0, 1), Fraction(0, 1)) x=1/9: LHS=0.587785252292+0.809016994375j |dev|=1.6e-15
+al=(Fraction(0, 1), Fraction(2, 3)) be=(Fraction(1, 2), Fraction(4, 7)) x=1/3: LHS=-0.500000000000+0.866025403784j |dev|=1.5e-15
+al=(Fraction(1, 5), Fraction(0, 1)) be=(Fraction(1, 10), Fraction(4, 5)) x=3: LHS=0.330704900438-0.041777744521j |dev|=1.2e-16
+al=(Fraction(0, 1), Fraction(2, 7)) be=(Fraction(1, 2), Fraction(6, 7)) x=-1: LHS=1.000000000000+0.000000000000j |dev|=2.2e-16
+al=(Fraction(1, 2), Fraction(6, 7)) be=(Fraction(0, 1), Fraction(1, 7)) x=-1: LHS=0.433883739118+0.900968867902j |dev|=8.3e-16
+al=(Fraction(0, 1), Fraction(1, 7)) be=(Fraction(1, 2), Fraction(0, 1)) x=1/3: LHS=-0.222520933956+0.974927912182j |dev|=1.2e-15
+al=(Fraction(0, 1), Fraction(1, 5)) be=(Fraction(1, 10), Fraction(0, 1)) x=-3: LHS=0.330704900438+0.041777744521j |dev|=2.8e-16
+al=(Fraction(1, 2), Fraction(5, 7)) be=(Fraction(2, 5), Fraction(11, 35)) x=-3: LHS=-0.000000000000-0.333333333333j |dev|=1.7e-16
+al=(Fraction(1, 3), Fraction(0, 1)) be=(Fraction(1, 2), Fraction(0, 1)) x=-1/3: LHS=-0.500000000000-0.866025403784j |dev|=1.5e-15
+al=(Fraction(0, 1), Fraction(2, 5)) be=(Fraction(9, 10), Fraction(0, 1)) x=-9: LHS=-0.070824887750+0.085612582531j |dev|=1.1e-16
+al=(Fraction(0, 1), Fraction(0, 1)) be=(Fraction(1, 2), Fraction(6, 7)) x=1/3: LHS=1.000000000000+0.000000000000j |dev|=7.8e-16
+al=(Fraction(1, 2), Fraction(0, 1)) be=(Fraction(0, 1), Fraction(0, 1)) x=1/9: LHS=-0.000000000000-1.000000000000j |dev|=1.8e-15
+al=(Fraction(1, 2), Fraction(0, 1)) be=(Fraction(0, 1), Fraction(0, 1)) x=-1/3: LHS=-0.000000000000-1.000000000000j |dev|=3.2e-15
+al=(Fraction(1, 2), Fraction(0, 1)) be=(Fraction(3, 5), Fraction(9, 35)) x=1: LHS=0.000000000000+1.000000000000j |dev|=4.9e-16
+al=(Fraction(1, 2), Fraction(6, 7)) be=(Fraction(0, 1), Fraction(2, 7)) x=-1/3: LHS=0.433883739118+0.900968867902j |dev|=2.2e-15
+al=(Fraction(0, 1), Fraction(1, 5)) be=(Fraction(3, 10), Fraction(3, 5)) x=3: LHS=-0.242989542474+0.228182368643j |dev|=1.9e-16
+al=(Fraction(0, 1), Fraction(0, 1)) be=(Fraction(1, 2), Fraction(0, 1)) x=-9: LHS=0.111111111111+0.000000000000j |dev|=1.1e-16
+al=(Fraction(0, 1), Fraction(3, 7)) be=(Fraction(1, 2), Fraction(0, 1)) x=-1/3: LHS=-0.900968867902+0.433883739118j |dev|=8.0e-16
+al=(Fraction(1, 2), Fraction(0, 1)) be=(Fraction(0, 1), Fraction(0, 1)) x=1/9: LHS=-0.000000000000-1.000000000000j |dev|=1.8e-15
+al=(Fraction(1, 5), Fraction(3, 7)) be=(Fraction(1, 2), Fraction(12, 35)) x=1: LHS=0.893035048613-0.449987113092j |dev|=4.6e-16
+al=(Fraction(0, 1), Fraction(0, 1)) be=(Fraction(1, 2), Fraction(0, 1)) x=-1: LHS=1.000000000000+0.000000000000j |dev|=5.4e-16
+al=(Fraction(1, 2), Fraction(0, 1)) be=(Fraction(0, 1), Fraction(5, 7)) x=3: LHS=0.000000000000+0.333333333333j |dev|=1.4e-16
+al=(Fraction(0, 1), Fraction(0, 1)) be=(Fraction(1, 2), Fraction(0, 1)) x=1: LHS=1.000000000000+0.000000000000j |dev|=5.8e-16
+al=(Fraction(0, 1), Fraction(0, 1)) be=(Fraction(1, 2), Fraction(0, 1)) x=1/9: LHS=1.000000000000+0.000000000000j |dev|=2.4e-15
+al=(Fraction(2, 5), Fraction(3, 7)) be=(Fraction(1, 2), Fraction(22, 35)) x=-3: LHS=-0.242989542474+0.228182368643j |dev|=2.8e-16
+al=(Fraction(1, 2), Fraction(0, 1)) be=(Fraction(0, 1), Fraction(0, 1)) x=1: LHS=-0.000000000000-1.000000000000j |dev|=6.1e-16
+al=(Fraction(1, 2), Fraction(0, 1)) be=(Fraction(0, 1), Fraction(4, 7)) x=-9: LHS=0.000000000000+0.111111111111j |dev|=1.0e-16
+al=(Fraction(0, 1), Fraction(6, 7)) be=(Fraction(1, 2), Fraction(3, 7)) x=-9: LHS=0.069276644651-0.086870164719j |dev|=9.3e-17
+al=(Fraction(1, 2), Fraction(3, 7)) be=(Fraction(0, 1), Fraction(0, 1)) x=-1: LHS=-0.781831482468+0.623489801859j |dev|=1.6e-16
+al=(Fraction(1, 2), Fraction(0, 1)) be=(Fraction(0, 1), Fraction(0, 1)) x=1: LHS=-0.000000000000-1.000000000000j |dev|=6.1e-16
+al=(Fraction(3, 5), Fraction(0, 1)) be=(Fraction(1, 2), Fraction(4, 5)) x=1/3: LHS=0.728968627421-0.684547105929j |dev|=1.8e-15
+al=(Fraction(1, 3), Fraction(3, 7)) be=(Fraction(1, 2), Fraction(0, 1)) x=1/3: LHS=-0.900968867902-0.433883739118j |dev|=1.8e-15
+al=(Fraction(0, 1), Fraction(1, 5)) be=(Fraction(9, 10), Fraction(1, 7)) x=-1/3: LHS=0.728968627421-0.684547105929j |dev|=1.1e-16
+al=(Fraction(3, 5), Fraction(3, 7)) be=(Fraction(1, 10), Fraction(0, 1)) x=-9: LHS=-0.012935900390-0.110355523167j |dev|=1.3e-16
+al=(Fraction(1, 2), Fraction(0, 1)) be=(Fraction(0, 1), Fraction(0, 1)) x=1: LHS=-0.000000000000-1.000000000000j |dev|=6.1e-16
+al=(Fraction(1, 2), Fraction(0, 1)) be=(Fraction(0, 1), Fraction(0, 1)) x=1/3: LHS=0.000000000000+1.000000000000j |dev|=1.7e-15
+al=(Fraction(1, 2), Fraction(1, 3)) be=(Fraction(0, 1), Fraction(1, 7)) x=-1/3: LHS=0.000000000000+1.000000000000j |dev|=1.8e-15
+al=(Fraction(1, 2), Fraction(3, 7)) be=(Fraction(0, 1), Fraction(0, 1)) x=1/3: LHS=0.433883739118-0.900968867902j |dev|=2.0e-15
+al=(Fraction(7, 10), Fraction(0, 1)) be=(Fraction(3, 5), Fraction(4, 7)) x=-3: LHS=0.327429083576-0.062460438195j |dev|=9.4e-17
+al=(Fraction(0, 1), Fraction(0, 1)) be=(Fraction(1, 2), Fraction(0, 1)) x=-1/3: LHS=1.000000000000+0.000000000000j |dev|=1.1e-15
+SUMMARY: 60 nonzero random tests (of 1654 drawn), max |LHS-RHS| = 3.21e-15
+
+===== END FILE profile_law_random.txt =====
+===== BEGIN FILE thmF_exact.txt bytes=1956 sha256=c969ee74b272dd5e24e8ebd24a1009bbda73c36475399468e123450d42196e86 =====
+|L'/Z^2| = 35  alpha classes = 70  a in L'? False  2a in L'? True
+A(a-wc) = (Fraction(0, 1), Fraction(3, 1)) -> wc = a mod L': True ; (1/2,0) = wc mod L': True
+labels = 140
+S: entries per row min/max = 35 35 ; repeated (i,j) pairs: 0
+common phase denominator M = 140
+max|S_rebuilt - S_stored| = 1.6e-16  max|T_rebuilt - T_stored| = 7.0e-16
+Gauss sum check sigma_j(2 sqrt35) = chi(j) 2sqrt35 at j=1,3,11,13: ['1.000000000000', '1.000000000000', '1.000000000000', '1.000000000000']
+EXACT (all 48 Galois conjugates sigma_j, j in (Z/140)^x): max entry moduli of the algebraic-integer differences:
+  S0^2-35P: 1.9e-14;  P^2-I: 3.3e-16;  PT-TP: 7.4e-16;  (S0 T)^3 (I+P) - 35^(3/2)(I+P): 4.0e-13
+  (S0 T)^3 - 35^(3/2) I on all 140 labels: 3.1e-13  => (ST)^3 = I exactly on all of C^140 (while S^2 = P != I)
+  all < 1/2 at every conjugate => each difference is an algebraic integer of norm < 1 => exactly 0.
+  Hence exactly: S^2 = P, P^2 = I, [P,T]=0, and (ST)^3 = I on Fix(P) (S = S0/sqrt35).
+on all 140: |(ST)^3 - I| = 0.00, |(ST)^3 - P| = 1.00  (so S^2=P holds, S^2=I only on Fix(P); (ST)^3=I on all 140)
+rank(I+P) = dim Fix(P) = 72
+P-fixed labels: [(('0', '0'), ('0', '0')), (('0', '0'), ('-7/10', '1/5')), (('1/2', '0'), ('0', '0')), (('1/2', '0'), ('-7/10', '1/5'))]  phases: ['0', '0', '0', '0']
+gamma^1 stabilises all 140 labels (coset and phase): False
+gamma^2 stabilises all 140 labels (coset and phase): True
+order of T on all 140 labels (exact) = 140
+dim Fix(P) basis = 72 ; T|Fix(P) eigenvalue multiplicities: {1: 12, 2: 18, 4: 6} ; distinct = 36 ; total = 72
+  values with multiplicity 4: ['111/140', '131/140', '139/140', '19/140', '31/140', '59/140']
+label-space cyclic span of row e_(a,0) under S,T: dim = 60 ; after projection to Fix(P) (rows times (I+P)/2): rank = 36
+unitarity: |S S^* - I| = 6.7e-16, |T T^* - I| = 2.2e-16
+I = log(6+sqrt35)/(2 sqrt35) = 0.2094198203147146314731
+S on Fix(P): tr = -3.3e-16+5.7e-17i ; eigenvalues +1: 36, -1: 36
+
+===== END FILE thmF_exact.txt =====
+===== BEGIN FILE vspace_check_X12.txt bytes=417 sha256=67f7e9e7c2e466075fcb63bfaa3fdd2596e661a670c4d20f8e34a862edf1e2da =====
+|Q|<=12.0: 342 nonzero modes; singular values around the gap: 6.633e+00, 6.382e+00 | 6.208e-15; rank = 42
+S-invariance: rank[C|SC] = 42 ; T-invariance: rank[C|TC] = 42 ; P C = C: 7.0e-16
+cusp labels by the Section 7.2 description: 28
+rank V_Eis (cusp rows zeroed) = 36 ; rank V_cusp = 6 ; S-inv: 36 6 ; T-inv: 36 6
+tr S on V = -1.89e-15, on V_Eis = +8.05e-16, on V_cusp = -2.22e-16  (S^2=I there, so n+ = n- = dim/2)
+
+===== END FILE vspace_check_X12.txt =====
+===== BEGIN FILE vspace_check_X25.txt bytes=1247 sha256=0f06947cc9cd7d954c9c7334199b62e505bc70696102f7b245b5b55c1dfd9723 =====
+|Q|<=25.0: 673 nonzero modes; singular values around the gap: 1.081e+01, 1.001e+01 | 1.579e-14; rank = 42
+S-invariance: rank[C|SC] = 42 ; T-invariance: rank[C|TC] = 42 ; P C = C: 9.9e-16
+cusp labels by the Section 7.2 description: 28
+rank V_Eis (cusp rows zeroed) = 36 ; rank V_cusp = 6 ; S-inv: 36 6 ; T-inv: 36 6
+tr S on V = -1.90e-15, on V_Eis = -1.86e-16, on V_cusp = -3.33e-16  (S^2=I there, so n+ = n- = dim/2)
+precise cusp labels: 24 ; the 4 extra labels of the loose description: [(49, 56), (63, 42), (7, 28), (21, 14)] ; their row norms in C: ['2.22e-16', '2.22e-16', '3.14e-16', '2.22e-16']
+with the precise 24: rank V_Eis = 36 ; rank V_cusp = 6 ; S-inv: 36 6 ; T-inv: 36 6
+labels whose lift function vanishes identically (all modes |Q|<=X zero): 11 [(('7/10', '4/5'), 'be=-a'), (('9/10', '3/5'), 'be=-a'), (('1/10', '2/5'), 'be=-a'), (('3/10', '1/5'), 'be=-a'), (('1/2', '6/7'), 'be=-a'), (('1/2', '0'), 'be=-a'), (('1/2', '1/7'), 'be=-a'), (('1/2', '2/7'), 'be=-a'), (('1/2', '3/7'), 'be=-a'), (('1/2', '4/7'), 'be=-a'), (('1/2', '5/7'), 'be=-a')]
+T spectrum on V_cusp (r with eigenvalue e(r)): ['19/140', '31/140', '59/140', '111/140', '131/140', '139/140']
+T spectrum on V_Eis: distinct = 36 of 36 ; contains the 6 cusp values: True
+
+===== END FILE vspace_check_X25.txt =====
+===== BEGIN FILE zero_labels_check.txt bytes=198 sha256=9bb1743dd06214ac9b64ff5cb8ed7dd271b814b8afc042c342519df45a6fae9b =====
+labels with gamma-stable coset and phase factor -1 under gamma: 5
+(('7/10', '4/5'), 'be=-a')
+(('9/10', '3/5'), 'be=-a')
+(('1/10', '2/5'), 'be=-a')
+(('3/10', '1/5'), 'be=-a')
+(('1/2', '0'), 'be=-a')
+
+===== END FILE zero_labels_check.txt =====
+===== BEGIN FILE zeta_gs_check.txt bytes=1511 sha256=03fe496e5203d0b4a1179d6f69f5bec0102e5a7ad293958c64b588fb54900981 =====
+Q_s - Q2(nu) - c0 == 0: True
+gamma preserves Q2: True ; det = 1 ; gamma a - a = [0, -1]
+Q2 in (S,T) basis: S**2 + 2*S*T*s - 2*S*T + T**2  (expect S^2+2(s-1)ST+T^2)
+involution phi(n,k)=(n,-2n-k-1) preserves Q_s: True
+Lemma E region check s=3..30, |n|<=40,|k|<=80: mismatches = 0
+per-class t^0 coefficient: (6*A*x**2 - 6*A*x + 6*A*y**2 - 6*A*y + 2*A + 12*x*y - 6*x - 6*y + 3)/12  vs B1B1+(A/2)(B2+B2): True
+zeta_E(0;s) = (s - 5)*(s - 4)/(12*(s - 2)) ; matches (s-4)(s-5)/(12(s-2)): True
+zeta_E(-1;s) = (2*s**5 - 14*s**4 - 45*s**3 + 425*s**2 - 632*s - 96)/(1440*(s - 2)**2) ; matches quintic/1440(s-2)^2: True
+sum of t^-1/2 coefficients over the two classes: 0
+sum of t^1/2 coefficients over the two classes: 0
+area term numeric at s=7 vs arccosh(6)/sqrt(35): 0.418839640629429 0.418839640629429
+values s=7,8,11: [(1/10, 29/1200), (1/6, 5/36), (7/18, 1129/1296)]
+G_s c_k(s), k=0..4: [2, 2*s - 6, 5*s**2 - 44*s + 75, 55*s**3/3 - 310*s**2 + 1306*s - 1561, 1073*s**4/12 - 7216*s**3/3 + 17885*s**2 - 148282*s/3 + 181945/4]
+match the paper: [True, True, True, True, True]
+s=3 t=0.002: g_s=1.9999525030698969154  sum_k<=4 c_k t^k=1.9999525034880000000  diff=-4.18e-10 (expect O(t^5))
+s=3 t=0.001: g_s=1.9999880624548716917  sum_k<=4 c_k t^k=1.9999880624680000000  diff=-1.31e-11 (expect O(t^5))
+s=7.5 t=0.002: g_s=2.0180924211868011385  sum_k<=4 c_k t^k=2.0180924307187500004  diff=-9.53e-9 (expect O(t^5))
+s=7.5 t=0.001: g_s=2.0090247294958729147  sum_k<=4 c_k t^k=2.0090247298574218752  diff=-3.62e-10 (expect O(t^5))
+
+===== END FILE zeta_gs_check.txt =====
