@@ -1,0 +1,4 @@
+C_third = q^8 f_{2,7,7}(-q^10,-q^14,q) + sum_{n,k>=0} q^{Q_plus(n,k)} to q^500: True
+Q_plus orthant first: [(0, 1), (1, 1), (4, 1), (7, 1), (9, 1), (15, 1), (16, 1), (21, 1), (25, 2), (36, 2), (37, 1), (42, 1)]
+Thm0.4 divisibility (a|b,c|b) under r=m r',s=n s' splits, m,n<30: []
+b^2-ac = 35
