@@ -1,0 +1,4 @@
+cusp components: max |coefficient| at N(beta)/140 not coprime to 70 = 0.0e+00 over 0 frequencies (=> chi(a)=0 convention exact; all coefficients are ideal sums twisted by the conductor-(2 sqrt35) characters)
+S: max|S[cusp,Eis]| = 1.7e-01, max|S[Eis,cusp]| = 1.7e-01
+T: max|T[cusp,Eis]| = 0.0e+00, max|T[Eis,cusp]| = 0.0e+00
+dim of cusp part of the 72-dim P-invariant representation = rank(Pi[cusp rows]) = 12; Eisenstein part = 60
