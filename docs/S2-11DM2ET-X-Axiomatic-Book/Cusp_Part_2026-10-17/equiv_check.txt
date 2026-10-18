@@ -1,0 +1,1 @@
+|sum_(c' Eis) S[c,c'] u_c'| for c cusp: 9.0e-17;  |sum_(c' cusp) S[c,c'] u_c'| for c Eis: 3.4e-16  (coefficientwise, 1027 frequencies, |Q|<=40; scale of coefficients ~1)
