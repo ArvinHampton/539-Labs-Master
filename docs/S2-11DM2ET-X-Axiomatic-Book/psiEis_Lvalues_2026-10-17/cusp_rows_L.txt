@@ -1,0 +1,5 @@
+kappa_c(+1) over the 24 cusp rows: max |L-value formula - exact Bernoulli kappa| = 3.18e-15  (max |kappa| = 2.000)
+kappa_c(-1) over the 24 cusp rows: max |L-value formula - exact Bernoulli kappa| = 3.36e-15  (max |kappa| = 2.000)
+Phi_c(+1) from L(0)-values vs phi_rows: max dev = 3.85e-15;  Phi_73(+1) = 0.120446470003+0.176437422094j
+Phi_c(-1) from L(0)-values vs phi_rows: max dev = 4.50e-15;  Phi_73(-1) = 0.006264073515+0.213537531676j
+functional equation L(0,chi)=W(chi)*140*L(1,chi^-)/pi^2 for the 12 totally odd cusp chars: max dev 1.79e-15

@@ -1,0 +1,2 @@
+x=2: kappa(-1/2) via 24/384 chars: dev 7.51e-15; kappa(2) via 24/96 chars: dev 3.35e-15; Phi_c(x) vs phi_rows: max dev 9.55e-15; Phi_73=0.206217773055+0.263200146342j
+x=7/4: kappa(-4/7) via 72/672 chars: dev 3.25e-13; kappa(7/4) via 24/768 chars: dev 1.98e-14; Phi_c(x) vs phi_rows: max dev 3.35e-13; Phi_73=0.188336862451+0.245368413466j
