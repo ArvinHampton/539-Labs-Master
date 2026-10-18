@@ -1,0 +1,146 @@
+%=====================================================================
+\section{Revision 5: cocycle closure, the $u_L$ criterion, sectors and $s=98$ (18 October 2026)}\label{sec:rev5}
+%=====================================================================
+This section adds the results of four reports written after revision~4: [S28] (\path{2026-10-18-Open-Algebraic.md}), [S29]
+(\path{2026-10-18-Open-Analytic.md}), [S30] (\path{2026-10-18-uL-Criterion-Closure.md}) and [S31] (\path{2026-10-18-Cocycle-Closure.md}).
+Category convention as in \S\ref{sec:cat}: Category~A means proved, or exact (including exact finite computation); floating-point-only results are Category~B.
+All new labels are numbered within this section. None of them is a lettered theorem, none is ``Theorem~L'' (the framework's Parity Dominance Theorem), and none
+collides with the framework labels L1--L7. No claim is made concerning HQCC termination, the twin prime conjecture or the Riemann hypothesis; CORE\_FREEZE is respected.
+
+\subsection{F1 removed: the two-dimensional Euler--Maclaurin expansion}\label{sec:rev5F1}
+\begin{proposition}[Cone Euler--Maclaurin \src{29}, \S2]\label{prop:EM5}
+For every rational $x$, the shifted-lattice cone sums of $e^{-tQ}$ that make up $H_s(\e(x)e^{-t})$ and $E_L(x+h)$ have a full asymptotic expansion in powers of
+$t^{1/2}$. The coefficients are area terms, edge Bernoulli sums with the half-weight rule $\tilde B_r$ at the edges, and corner terms. The remainders are explicit integrals of periodic Bernoulli functions and are bounded uniformly in every sector $|\arg t|\le\pi/2-\delta$.
+\end{proposition}
+\catA{Proved in \src{29}, \S2: a one-dimensional lemma (Zagier's asymptotic lemma with the Euler--Maclaurin remainder), a quadrant lemma, and a decomposition of the
+closed cone into translated quadrants. The sector-uniform form is \src{31}, \S2.2. \textbf{Consequence:} the qualifier ``modulo F1'' in Theorem~\ref{thm:Hs}, Theorem~\ref{thm:C}
+and Table~\ref{tab:radial} is removed as far as the expansion is concerned. Any separate Hecke input that is listed for the $C$ closed forms is unaffected.}
+
+\subsection{$H_s$ at $x=\tfrac12$, $x=\tfrac13$ and $t^{9/2}$}\label{sec:rev5Hs}
+Write $\Delta=(s-2)(7s-32)$, $g=\gcd$ as in \S\ref{sec:hsct}, and let $c_e$ be the coefficient of $t^{e/2}$ in $H_s(\e(x)e^{-t})$.
+\begin{proposition}[Exact reductions \src{29}, \S1.6]\label{prop:R123}
+For every rational $x$: (i) the corner terms cancel between $Q_+$ and $Q_-$; (ii) every integer order vanishes; (iii) $c_e=\gamma_0A_e(s)+\sum_r eb_r\,Y_{e,r}(s)+\sum_r ea_r\,X_{e,r}(s,g)$,
+with universal functions $A_e$, $Y_{e,r}$, $X_{e,r}$ and finite Gauss data $\gamma_0$, $eb_r$, $ea_r$ given by distribution relations.
+\end{proposition}
+\begin{proposition}[$x=\tfrac12$ \src{29}, \S1.4, Proposition O]\label{prop:xhalf}
+(i) If $s$ is odd, $\gamma_0=eb=ea=0$, so $H_s(-e^{-t})=O(t^N)$ for every $N$. (ii) If $s$ is even, $\gamma_0=0$, $eb_r=4\cdot2^{1-r}(2-2^{1-r})B_r$ for even $r\ge2$ (and $0$ otherwise), and
+$ea_r=[16\mid s]\,eb_r$. For $16\nmid s$:
+\begin{multline*}\frac{H_s(-e^{-t})}{\sqrt{2\pi s}}\sim-\tfrac18t^{1/2}+\tfrac{s-4}{64}t^{3/2}-\tfrac{31s^2-168s+192}{3072}t^{5/2}\\+\tfrac{(s-4)(173s^2-632s+544)}{24576}t^{7/2}
+-\tfrac{25261s^4-245680s^3+845440s^2-1226240s+634880}{3932160}t^{9/2}+\cdots.\end{multline*}
+For $16\mid s$ there is an extra $\sqrt\Delta$ term at each order; for example $g^2/(8(s-2)(7s-32)^2)$ at $t^{1/2}$ \src{29}, \S1.4.
+\end{proposition}
+\catA{Exact symbolic computation on the proved expansion (Proposition~\ref{prop:EM5}). Consistency with an independent exact-term engine to $\le7\cdot10^{-38}$ through $t^{5/2}$ and to $\le5\cdot10^{-34}$
+through $t^{9/2}$ (these comparisons are support only). Odd $s$: vanishing to all orders means there is no power-law term. The direct sums are not identically zero: outside the window
+$t\ll1/(4m)^2$ the terms $e^{-c/(m^2t)}$ appear (e.g.\ $H_7(-e^{-0.01})\approx-7.95$, floating). This also explains the rev.~4 instability at $s=7,9,10$.}
+\begin{proposition}[$x=\tfrac13$ \src{29}, \S1.5]\label{prop:xthird}
+$\gamma_0=i/\sqrt3$, $e(1/6)/3$, $0$ for $s\equiv0,1,2\bmod3$; $eb_r$ depends only on $s\bmod3$; $ea_r$ depends only on $s\bmod144$. For $s\equiv2\bmod3$ the $(\gamma_0,eb)$ part of
+$c_{-1}/\sqrt{2\pi s}$ is $-(1+i\sqrt3)/(12s)$, and the higher orders through $t^{5/2}$ are explicit (\texttt{x\_third\_closed\_K5.txt}).
+\end{proposition}
+\catA{The dependence on $s\bmod3$ and $s\bmod144$ is proved. The closed form is exact computer algebra. Consistency with the engine is to $\le2.4\cdot10^{-35}$. \emph{Category~B:} the finer statement that $ea$ is periodic
+mod $72$ with four shapes (exhaustive table over $s=5,\dots,240$ plus the mod-$144$ proof; no conceptual Gauss-sum derivation).}
+\begin{proposition}[$t^{7/2}$, $t^{9/2}$ at $x=0$ \src{29}, \S1.3, \S1.7]\label{prop:t92}
+$H_{9/2}=\sqrt{2\pi s}\,[R_9(s)+S_9(s,g)\sqrt\Delta]$, where $R_9$ is an explicit rational function with denominator $5449973760(s-2)^6$ and $S_9$ is of degree $10$ in $g$ (\texttt{H\_closed4.txt}); $H_{9/2}(5)=0$.
+The $t^{7/2}$ closed form is likewise explicit.
+\end{proposition}
+\catA{Two independent symbolic routes agree to $170$ digits at $8$ values of $s$; exact computer algebra on the proved expansion. The decimal values quoted in \src{29} are evaluations.}
+
+\subsection{$\Cthird$: the weight-$1$ piece and the weight-$0$ integral}\label{sec:rev5ct}
+\begin{proposition}[\src{29}, \S3.1--3.2]\label{prop:ct5}
+(i) On the unit cone, both the holomorphic weight-$1$ $q$-series and its Zwegers completion vanish identically. (ii) $\int_{\Gamma_F}\Xi_0\,dt=\sqrt y\sum_{\gamma\text{-orbits }O\subset a+\Z^2}\e(Q(O)x)K_0(2\pi|Q(O)|y)$,
+which is Zwegers' mock Maass theta $\Theta_a$.
+\end{proposition}
+\catA{(i) is proved by the orbit-count symmetry $N(a,+,n)=N(-a,+,n)$, which comes from the automorph $R$, together with a telescoping argument for the completion. (ii) is proved by orbit unfolding. This upgrades two
+Category~B items of rev.~4 (the integral $\int_{\Gamma_F}\Xi_1=0$ and the identification by citation of Zwegers 2012) to Category~A. Modularity is by Siegel/Vign\'eras, which is standard. \emph{Category~B:} that no depth-$2$
+rank-$3$ object carries $\Cthird$ (a structural argument, not a classification).}
+
+\subsection{The E-part cocycle is Category A}\label{sec:rev5coc}
+\begin{theorem}[E-part cocycle \src{31}]\label{thm:coc5}
+Let $s=7$, and let $u_L$ and $E_L$ be as in \S\ref{sec:lz}.
+\begin{enumerate}[label=(\roman*)]
+\item (Constant) For $u=\sqrt y\sum A_nK_0(2\pi|n|y)\e(nx)+b\sqrt y$, $\int_z^{i\infty}[u,R_z^{1/2}]=-\tfrac\pi2 f_u(z)+\tfrac b2$, so $C=-\pi/2$ and $E_L(z)=-\tfrac1\pi\int_z^{i\infty}[u_L,R_z^{1/2}]$.
+\item (Boundary step, both signs of $cx+d$) If $u_L\circ\gamma'=u_L$, then for rational $x\neq\gamma'^{-1}\infty$,
+\[\kappa_L(x)-|cx+d|^{-1}\kappa_L(\gamma'x)=-\tfrac1\pi\int_{\gamma'^{-1}\infty}^{i\infty}[u_L,R_x^{1/2}],\]
+with branch sign $\varepsilon=\sgn(cx+d)$, and the singular profile obeys $A(x)=|cx+d|\,A(\gamma'x)$.
+\item (Vector law) For all $140$ labels $\lambda=(\alpha,\beta)$, $u\circ\gamma'=\rho(\gamma')u$ for every $\gamma'\in\mathrm{SL}_2(\Z)$, with $\rho$ generated by the $S$- and $T$-matrices of
+Theorem~\ref{thm:F}. The constant terms $b_\lambda=\log\varepsilon\cdot\delta_{\alpha\in\Z^2}$ (here $\varepsilon=6+\sqrt{35}$) are carried inside the theta identity. The vector cocycle with $b$ holds for general $\gamma'$, and on the $L$-row at $\gamma'=S$ it reduces exactly to the psi-Cocycle $S$-formula.
+\end{enumerate}
+\end{theorem}
+\catA{(i): the integral is holomorphic and translation-covariant, so it equals $C\,\e(nz)$; the asymptotics as $y\to\infty$ then give $C=-\pi/2$ by hand \src{31}, \S1. (ii): closedness of the Green form, the
+non-tangential expansion (Proposition~\ref{prop:EM5}) and the positive-root branch comparison \src{31}, \S2. (iii): Poisson summation at a fixed majorant, the $T$-law, the reductions, exact
+$\gamma^2$-periodicity and cycle integration, label by label \src{31}, \S3A. \emph{Category~B support:} the vector identity at $\gamma'=STS,\,ST^2S,\,ST^3S$ agrees to $\le3.3\cdot10^{-12}$ \src{31}, \S3B; the scalar cocycle agrees at $45$
+rationals to $7\cdot10^{-13}$; the quadrature check of $C$ agrees to $10^{-18}$; non-tangential $\kappa$ fits were made in $4$ directions.}
+
+\subsection{The $u_L$ criterion}\label{sec:rev5uL}
+Notation of Proposition~\ref{prop:cuspcrit}. Here $\mathbf W\subset(\Ok/M)^\times$ is the unit stabiliser of $\beta_0+L$ (unrelated to $W_P$), $S_0$ is the coprime-part stabiliser and $\psi(\lambda)=[(\lambda)]$.
+\begin{theorem}[Coset property \src{30}, \S3, \S3A]\label{thm:coset5}
+For every $s$ and every $c$-part $\fc$, $T_\fc+\psi(\mathbf W)=T_\fc$, and $S_0=\psi(\mathbf W)$. Hence every $T_\fc$ is a union of $S_0$-cosets.
+\end{theorem}
+\catA{The lemma $T_\fc+\psi(\mathbf W)=T_\fc$ is elementary. $S_0=\psi(\mathbf W)$ follows from the local condition $R_p=\mathbf W_p$, proved for all $s$ and $p$ in \src{30}, \S3A: it reduces to the fact that ratios of exact-valuation
+elements of $\beta_0+L$ lie in the multiplier order of $L$. The cases are $p\nmid f$; odd $p\mid c$ with $p\mid s$ or $p\mid s-2$; and $p=2$ in each $2$-adic case. Also checked exactly: global $S_0=\psi(\mathbf W)$ at $s=5,\dots,44$, and $R_p=\mathbf W_p$ at $s\le150$.}
+\begin{theorem}[Squarefree criterion \src{30}, \S1]\label{thm:sqf5}
+Let $s$ be odd with $s(s-2)$ squarefree, and $h=h(\Q(\sqrt{s(s-2)}))$. Then only the coprime $c$-part occurs, $|\bar G^\sigma|=2^{\omega(s)}\varphi(s-2)$, and
+$u_L$ is Eisenstein $\iff h=2^{\omega(s)}$. The number of non-genus characters is $\varphi(s-2)(h-2^{\omega(s)})$.
+\end{theorem}
+\catA{The proof uses Chevalley's ambiguous class number formula (ray form, unit-norm index $1$) and, independently, Gauss genus theory; these are classical theorems applied to exact data. The exact cross-check covers $47$ values $s\le151$: Eisenstein only at $s=5,7,13,15$.}
+\begin{center}\small
+\begin{tabular}{lp{11cm}}\toprule
+verdict ($5\le s\le44$) & $s$\\\midrule
+Eisenstein & $5,6,7,8,9,10,12,13,15,16,20,24,28$\\
+CUSP & $11,14,17,18,19,21,22,23,25,26,27$ and every $s$ with $29\le s\le44$\\\bottomrule
+\end{tabular}
+\end{center}
+\catA{Verdicts are per $s$ over all (infinitely many) $c$-parts, using Theorem~\ref{thm:coset5}. Coverage at $s=32,34,36,40$ was completed by enumeration to $B=200000$, and all four are CUSP. At $s=24$ there are no mixed-prime parts for any exponents (a local proof), and the
+parts $(1,12)$, $(12,1)$, $(1,16)$, $(16,1)$ are genus-pure \src{30}, \S2.}
+
+\subsection{Sectors: parity, the orbit lemma and prime squares}\label{sec:rev5sec}
+\begin{proposition}[Odd-parity sectors are cusp \src{28}, Item~5]\label{prop:oddcusp5}
+If $\rho(T)$ has no eigenvalue $1$ on a $\rho$-invariant subspace $\sigma$, the projection of the lift onto $\sigma$ is cuspidal. Consequently $d_{\rm cusp}\ge(s-1)(s-3)/4$ wherever the $B_1$ sector lies in $V$, and
+$d_{\rm Eis}\le3\prod(p^e+1)/2$ whenever no odd parity is carried only by primes with $e\ge2$ (every tested odd $s\le99$; the first undecided cases are $s=225,1225$).
+\end{proposition}
+\catA{Proved: no constant term at any cusp. \emph{Category~B:} equality $d_{\rm Eis}=3\prod(p^e+1)/2$, i.e.\ that the all-even sector carries no cusp content.}
+\begin{proposition}[Parity fact \src{28}, 17:38 update (a)]\label{prop:parity5}
+For every odd $s$, every $\Delta$ label has even second coordinate $x_2$. Hence $Z_{\rm all}$ acts as negation on $\Delta$, fixes every $\langle\gamma,-1\rangle$-orbit, and every sector with $\varepsilon_{\rm all}=-1$ vanishes.
+\end{proposition}
+\catA{Symbolic: $D\cdot A^{-1}=-2\,\mathrm{adj}A$ gives even second coordinates on $L'$; $a=(s^2,-2s)$; $D$ is even.}
+\begin{proposition}[Corrected orbit lemma \src{28}, 15:50 update (1)]\label{prop:orbit5}
+For every odd $s$, $c_\varepsilon(O_0,q_{\min})=(1+\varepsilon_{\rm all})N_{O_0}(q_{\min})$, where $O_0=\{\pm\nu_0,\pm\gamma\nu_0\}$ and $\nu_0=(s,-2)$. This is nonzero on every sector with $\varepsilon_{\rm all}=+1$. The original form of the lemma (no extra
+reduced classes) is \emph{false}: extra classes occur at $s=27,245,363,847,2025,\dots$ ($16$ cases with $s\le30001$), but they never land in $Z_SO_0$.
+\end{proposition}
+\catA{Symbolic (Nagell bound, $\gamma^2\nu_0\equiv\nu_0$, stabiliser $\{1,Z_{\rm all}\}$, exclusion of extra classes). Also checked exactly for odd $s\le401$ and at all $16$ exceptions. At $s=27$ the sector run certifies $\dim V=702$ (exact), in agreement with the rev.~4 table.
+Combined with Proposition~\ref{prop:parity5}, the matched sectors with $\varepsilon_{\rm all}=+1$ have a nonzero lift. Injectivity therefore follows wherever the sector is irreducible (squarefree $s(s-2)$). \emph{Open:} $\dim V=s(s-1)$ when $e\ge2$.}
+\begin{proposition}[Prime-square sectors \src{28}]\label{prop:psq5}
+The isotropic projector $\Pi$ splits each sector into old and new pieces. Exactly:
+\begin{center}\small\begin{tabular}{rrrrr}\toprule $s$&$(+,+)$ old&$(+,+)$ new&$(-,-)$ new&total\\\midrule 9&12&48&12&72\\ 11&18&72&20&110\\ 25&36&432&132&600\\\bottomrule\end{tabular}\end{center}
+Every piece is injective. The $\nu_0$ coefficient is nonzero on every new piece and zero on every old piece.
+\end{proposition}
+\catA{Exact integer ranks (flint). \emph{Open:} a uniform proof, irreducibility of the pieces, and a uniform leading vector for old pieces. Building $\rho$ on the old piece is blocked, so the irreducibility test was not run.}
+
+\subsection{The $2$-adic gap and $s=98$}\label{sec:rev5gap}
+Let $s=2m^2$ with $m$ odd and $g=(\gamma+I)/(2m)$, as in Theorem~\ref{thm:dims}(iv).
+\begin{proposition}[Complement trace \src{28}, 17:38 update (b)]\label{prop:trace5}
+For every odd $m$: $\#\mathrm{Fix}(g)=2(m-1)$ and $\#\mathrm{Fix}(-g)=2(m+1)$ on the complement, $\mathrm{tr}(g\mid\mathrm{Fix}(N,\gamma))=2m$, and the $g=-1$ eigenspace $X$ of $\mathrm{Fix}(N)$ has dimension $m(m-1)$.
+\end{proposition}
+\catA{$A(g\mp1)^{-1}$ is integral, and $\gamma=1$ on the complement $C$. Exact at $m=3,5,7$ as well.}
+\begin{proposition}[Half-cone relations \src{28}, 18:51 update \S2]\label{prop:hc5}
+If $g$ acts on $M_7$-classes (more generally on the classes of $\Z^2+\Z t$) and $m$ is prime, the span of the half-cone $g$-relations $e_c-e_{gc}$ is exactly $\delta_{\rm iso}\otimes X$, of dimension $m(m-1)$.
+\end{proposition}
+\catA{Proved for prime $m$, given that $g$ is consistent on the classes. That consistency is checked exactly only at $m=3,5,7$. At $m=3,5$ the exact half-cone kernel equals $\delta_{\rm iso}\otimes X$ vector by vector. \emph{Open:} $g$-consistency for all odd $m$, and composite $m$ (the $m$-part is not cyclic). In general the kernel can be larger than the $g$-relations; see Theorem~\ref{thm:s98}.}
+\begin{theorem}[$\dim V(98)=2406$ \src{28}, 18:44 and 18:51 updates]\label{thm:s98}
+At $s=98$ ($m=7$), $\dim V=2406$. The kernel of the lift on the $98$-dimensional $7$-adic old space has dimension $44$. It is spanned by the $42=m(m-1)$ $g$-relations and two $h$-relations,
+$R_1$ (at $q=11/12$) and $R_2$ (at $q=1/4$). Here $h=(g+I)/4\in\mathrm{SO}(A)(\Q)$, with $h^2=g$ and $h^{\mathsf T}Ah=A$. The half-cone upper bound $2408$ is not sharp.
+\end{theorem}
+\catA{\emph{Lower bound:} the exact rank is $2406$ (flint, $Q_{\max}=40$; old-piece ranks are stable to $Q_{\max}=130$). The new pieces are injective, and all $44$ missing dimensions lie in the old space. \emph{Upper bound:} take the overlattice
+$M=\bigcap_{k=0}^{7}h^kM_7$, $M_7=\Z^2+\Z t_0$, with basis $(4,0),(1,1/7)$, $[M_7:M]=4$ and Gram matrix ($2Q$) $\begin{pmatrix}32&64\\64&32\end{pmatrix}$ (even, det $-3072$). Exact HNF gives $hM=M$ and $hM^\sharp=M^\sharp$.
+Moreover $h$ maps the $+$ set of $R_i$ bijectively onto its $-$ set as $M$-cosets ($32+32$ for $R_1$, $16+16$ for $R_2$). The sets are $\gamma$-invariant ($\gamma=h^4$). Since $h$ has positive eigenvalues $2\pm\sqrt3$, it maps fundamental cones for $\langle\gamma\rangle$ to fundamental cones, so
+$N_{S^+}(q)=N_{S^-}(q)$ for all $q$, and the theta identities hold. The same argument with $g$ on $M_7$ (eigenvalues $7\pm\sqrt{48}$) proves the $42$ $g$-relations. The $44$ relations are independent (exact rank $44$), so $\dim V\le2450-44=2406$.}
+\catB{\emph{Prediction (not computed):} extra $h$-relations beyond $m(m-1)$ occur exactly when $2m+2$ is a square, i.e.\ $m=2k^2-1$ ($m=7,17,31,\dots$). At $m=17$ ($s=578$), $h=(g+I)/6$ exists, but the number of extra relations was not computed, so no number is claimed.
+The general gap formula for $s=2m^2$ is therefore open, and $m(m-1)$ is not the gap in general.}
+
+\subsection{$s=64$, cusp-sector bounds and Atkin--Lehner}\label{sec:rev5misc}
+\begin{proposition}[$s=64$ \src{28}, 15:10 (d) and 15:50 (3)]\label{prop:s64}
+$\dim W_P(64)=1986$. The $2$-adic cyclic span $d_2$ at $k=6$ equals $36$, so the $2$-adic factor of the function span is $36\cdot16=576$ at $s=64$.
+\end{proposition}
+\catA{$W_P$ is an exact count. For the upper bound, $d_2\le\#O(\Delta_2)$-orbits $=42$, minus a $6$-dimensional $S,T$-invariant subspace $Y\perp\delta_0$ that is verified exactly in $\Z[\zeta_{64}]$, leaving $36$. The lower bound $36$ is exact. This settles the rev.~4 open item ``$d_2(k,v)$ for $k\ge6$'' at $k=6$ only. The value $2^{k-1}+4$ for general $k$ remains Category~B.}
+\textbf{Atkin--Lehner (partial).} The $24$ cusp characters at $s=7$ have conductor of norm $140$ (ramified at $\fp_2,\fp_5,\fp_7$). The vector-valued components are $\Gamma(140)$-modular, and the scalar newforms have level
+$140^2=19600$, so the two levels are consistent (Category~A, by reconciliation). The global root numbers are non-real (Category~B, numerical), so the $Z_p$ act by pseudo-eigenvalues of modulus $1$. \emph{Open (blocked):} the local split at $5$ and $7$, i.e.\ the local
+root numbers $\varepsilon(\psi_\fp)$. This needs the additive character on $\Ok_\fp$ (inverse different of $\Q(\sqrt{35})$) and the Langlands $\lambda$-factor convention, which have not been implemented.
