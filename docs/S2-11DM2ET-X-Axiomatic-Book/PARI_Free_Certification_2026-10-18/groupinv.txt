@@ -1,0 +1,2 @@
+e2=2: order 96, element-order counts [(1, 1), (2, 7), (3, 2), (4, 8), (6, 14), (8, 16), (12, 16), (24, 32)]; matches Z/24 x Z/2 x Z/2
+e2=3: order 96, element-order counts [(1, 1), (2, 7), (3, 2), (4, 8), (6, 14), (8, 16), (12, 16), (24, 32)]; matches Z/24 x Z/2 x Z/2
