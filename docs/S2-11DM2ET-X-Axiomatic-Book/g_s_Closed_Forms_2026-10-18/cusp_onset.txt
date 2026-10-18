@@ -1,0 +1,21 @@
+s= 3 D=   12 h+=  2 genera=  2  Cl+/genus nontrivial (cusp part expected): False
+s= 4 D=    8 h+=  1 genera=  1  Cl+/genus nontrivial (cusp part expected): False
+s= 5 D=   60 h+=  4 genera=  4  Cl+/genus nontrivial (cusp part expected): False
+s= 6 D=   24 h+=  2 genera=  2  Cl+/genus nontrivial (cusp part expected): False
+s= 7 D=  140 h+=  4 genera=  4  Cl+/genus nontrivial (cusp part expected): False
+s= 8 D=   48 h+=  2 genera=  2  Cl+/genus nontrivial (cusp part expected): False
+s= 9 D=  252 h+=  4 genera=  4  Cl+/genus nontrivial (cusp part expected): False
+s=10 D=   80 h+=  2 genera=  2  Cl+/genus nontrivial (cusp part expected): False
+s=11 D=  396 h+=  8 genera=  4  Cl+/genus nontrivial (cusp part expected): True
+s=12 D=  120 h+=  4 genera=  4  Cl+/genus nontrivial (cusp part expected): False
+s=13 D=  572 h+=  4 genera=  4  Cl+/genus nontrivial (cusp part expected): False
+s=14 D=  168 h+=  4 genera=  4  Cl+/genus nontrivial (cusp part expected): False
+s=15 D=  780 h+=  8 genera=  8  Cl+/genus nontrivial (cusp part expected): False
+s=16 D=  224 h+=  4 genera=  4  Cl+/genus nontrivial (cusp part expected): False
+s=17 D= 1020 h+=  8 genera=  8  Cl+/genus nontrivial (cusp part expected): False
+s=18 D=  288 h+=  4 genera=  4  Cl+/genus nontrivial (cusp part expected): False
+s=19 D= 1292 h+=  8 genera=  4  Cl+/genus nontrivial (cusp part expected): True
+s=20 D=  360 h+=  4 genera=  4  Cl+/genus nontrivial (cusp part expected): False
+s=25 D= 2300 h+= 12 genera=  4  Cl+/genus nontrivial (cusp part expected): True
+s=30 D=  840 h+=  8 genera=  8  Cl+/genus nontrivial (cusp part expected): False
+s=41 D= 6396 h+= 24 genera=  8  Cl+/genus nontrivial (cusp part expected): True

@@ -1,0 +1,10 @@
+c_0(s) = 2   [degree 0]
+   held-out [1, 2, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 25, 30, 41]: worst rel. dev 1.54e-19 at s=1  (num. stability of that s: 3.43e-5)
+c_1(s) = 2*s - 6   [degree 1]
+   held-out [1, 2, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 25, 30, 41]: worst rel. dev 6.56e-16 at s=1  (num. stability of that s: 3.43e-5)
+c_2(s) = 5*s**2 - 44*s + 75   [degree 2]
+   held-out [1, 2, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 25, 30, 41]: worst rel. dev 2.77e-13 at s=1  (num. stability of that s: 3.43e-5)
+c_3(s) = 55*s**3/3 - 310*s**2 + 1306*s - 1561   [degree 3]
+   held-out [1, 2, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 25, 30, 41]: worst rel. dev 4.13e-11 at s=1  (num. stability of that s: 3.43e-5)
+c_4(s) = 1073*s**4/12 - 7216*s**3/3 + 17885*s**2 - 148282*s/3 + 181945/4   [degree 4]
+   held-out [1, 2, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 25, 30, 41]: worst rel. dev 2.96e-09 at s=1  (num. stability of that s: 3.43e-5)
