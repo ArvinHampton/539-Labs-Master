@@ -1,0 +1,176 @@
+%=====================================================================
+\section[Revision 7: Proposition K1, origin of $\Delta$, cone choice, $H_s^{\rm axes}$, analytic rounds 3--4]{Revision 7: Proposition K1, the lattice origin of $\Delta$, the cone choice, $H_s^{\rm axes}$, and analytic rounds 3--4 (19 October 2026)}\label{sec:rev7}
+%=====================================================================
+This section adds the results produced after revision~6. The sources are [S36] (the sections of \path{2026-10-18-Analytic-CatB-Push.md} from ``Continuation~2'' on: D.0--D.4, E.0--E.3, Round~3 (F.1--F.3) and Round~4 (G.0--G.4), with the new scripts and outputs of its folder) and [S37] (\path{2026-10-18-Algebraic-Round3.md}, \S\S1--7, with its folder).
+Category convention as in \S\ref{sec:cat}: \textbf{Category~A} is proved, or exact (exact finite computation; mod-$\ell$ computation with a stated lift); anything resting on floating-point evidence only is \textbf{Category~B}, and the two are kept separate throughout. No claim is made concerning HQCC termination, the twin prime conjecture or the Riemann hypothesis; nothing here bears on the HQCC termination claims.
+
+\paragraph{Labels.} New results are numbered within this section, with two named exceptions. The CRT factorisation of the Gauss data (Proposition~\ref{prop:crt6}(ii)) is called the \emph{CRT Factorization Proposition} (\textbf{CFP}); this is the statement that [S36] and its scripts \texttt{gauss\_local.py}, \texttt{even\_N\_theorem.py} label with a letter in their comments, a label that is retired here (see the repository note \path{NOTE_LABEL_CFP.md}). The $k(k-1)$ count of extra $h$-relations is \textbf{Proposition~K1}. No lettered theorem is introduced, no label collides with L1--L7, Lemma~L keeps its name, and Lemma~R of rev.~4 keeps its meaning.
+
+\paragraph{CORE\_FREEZE.} The locked object $H_s$ with $c_1=(-1,1)$ and $c_2=(-4,1)$ (\S\ref{sec:hsct}) is \emph{not} redefined. The axes-cone series $H_s^{\rm axes}$ of \S\ref{sec:rev7axes} is a separate, parallel object; every statement about it is a statement about that object only.
+
+%---------------------------------------------------------------------
+\subsection{Proposition K1: the extra $h$-relations at $m=2k^2-1$}\label{sec:rev7K1}
+Fix $k\ge2$, $m=2k^2-1$, $s=2m^2$, and let $g=(\gamma+I)/(2m)$ and $h=(g+I)/(2k)$ be as in Theorem~\ref{thm:dims}(iv) and Theorem~\ref{thm:s98}. Let $\mathrm{rank}_g$ and $\mathrm{rank}_h$ be the ranks of the orbit-sum maps $F\to\mathrm{Fun}(\langle X,-1\rangle\text{-orbits on }M^\sharp/M)$, $X\in\{g,h\}$, with $F=\mathrm{Fun}(M_t^\sharp/M_t)^{\langle\gamma,-1\rangle}$, as defined in \texttt{hcount.py} [S33].
+\begin{propKone}[\src{37}, \S1]\label{prop:K1}
+$\mathrm{rank}_g=m(m+1)$ and $\mathrm{rank}_h=m(m+1)-k(k-1)$. Hence the number of extra $h$-relations is exactly $k(k-1)$ for every $k\ge2$. Moreover $\dim F=2m^2=s$.
+\end{propKone}
+\begin{proof}[Proof outline]
+\emph{Order model.} $M_t=\Z e_1\oplus\Z f$ with Gram matrix $\left(\begin{smallmatrix}2&2m\\2m&2\end{smallmatrix}\right)$ and $gf=-e_1+2mf$, so $(M_t,B,g)\cong(R_m,\mathrm{Tr}(x\bar y),\cdot\varepsilon_m)$ with $R_n=\Z[\sqrt{n^2-1}]$, $\varepsilon_n=n+\sqrt{n^2-1}$; hence $C:=M_t^\sharp/M_t\cong R_m/2\sqrt{d_m}R_m$, $d_n=n^2-1$.
+\emph{Pell self-similarity.} With $u=(e_1+f)/(2k)$ one has $hu=f$, $hf=-u+2kf$ and $\mathrm{Gram}(u,f)=\left(\begin{smallmatrix}2&2k\\2k&2\end{smallmatrix}\right)$, so $N_1=M_t+hM_t=\Z u\oplus\Z f$ is even, $h$-stable, and $(N_1,h)\cong(R_k,\varepsilon_k)$: $h$ is ``$g$ at level $k$''. $I=N_1/M_t$ is isotropic of order $2k$ and $C_1=I^\perp/I\cong R_k/2\sqrt{d_k}R_k$.
+\emph{Hecke reduction.} On $V_0=\mathrm{Fun}(C)^{\langle g,-1\rangle}$ (so $\mathrm{rank}_g=\dim V_0$), $\mathrm{rank}_h$ is the rank of $1+\tau$ with $\tau=(2k)^{-1}\uparrow\circ\bar h\circ\downarrow$, where $\downarrow$ sums over $I$-cosets in $I^\perp$ and $\uparrow$ is its adjoint.
+\emph{Spectrum.} $\downarrow\uparrow=2k$, so $\tau^2$ is an orthogonal projection, $\tau^3=\tau$, and the $(-1)$-eigenspace of $\tau$ has dimension $a-b$, with $a,b$ the numbers of $\langle h^2,-1\rangle$- and $\langle h,-1\rangle$-orbits on $C_1$.
+\emph{Burnside.} On $R_n/2\sqrt dR_n$, $\langle\varepsilon,-1\rangle$ acts through $\{\pm1,\pm\varepsilon\}$ with $|\mathrm{Fix}(-1)|=4$, $|\mathrm{Fix}(\mp\varepsilon)|=2(n\mp1)$; so there are $n(n+1)$ orbits of $\langle\varepsilon,-1\rangle$ and $2n^2$ of $\langle\varepsilon^2,-1\rangle$. Level $m$ gives $\mathrm{rank}_g=m(m+1)$ and $\dim F=2m^2$; level $k$ gives $a=2k^2$, $b=k(k+1)$, so the extra count is $2k^2-k(k+1)=k(k-1)$. The full proof is in [S37], \S1.
+\end{proof}
+\catA{Proved for all $k\ge2$ (written proof, not externally audited; the symbolic-in-$k$ ingredients are in \texttt{proof\_ingredients.py}, and the Burnside counts are brute-forced for $n=2,\dots,40$). \emph{Exact checks of the reformulation:} \texttt{tau.py} (exact over $\Q$, $k=2,3,4$) gives $\mathrm{rank}(I+\tau)=54,300,980$, equal to $\mathrm{rank}_h$ of rev.~6, with minimal polynomial $x^3-x$; \texttt{tau\_fast.py} at $k=5$ ($m=49$) and $k=6$ ($m=71$) gives extra $=20,30$ and $\mathrm{rank}\,\tau=50,72$, with ranks computed mod $1000003$ and mod $998244353$ in agreement. Those mod-$p$ ranks are consistency checks of a proved statement, not independent proofs.}
+\begin{corollary}[\src{37}, \S1]\label{cor:K1}
+On $V_0$, $\tau$ has eigenvalues $+1$, $-1$, $0$ with multiplicities $k(k+1)$, $k(k-1)$, $m(m+1)-2k^2$; so $\mathrm{tr}\,\tau=2k$ and $\mathrm{rank}\,\tau=2k^2$. The extra relations are explicit: $\uparrow$ of the $\bar h$-odd $\langle\bar g,-1\rangle$-invariant functions on $C_1=N_1^\sharp/N_1$. The exact data ``$\#$closed orbits $=m(m+1)=\mathrm{rank}_g$'' of Proposition~\ref{prop:h6} are now proved.
+\end{corollary}
+\catA{Consequence of Proposition~K1. The equal-kernel statement $\ker^+=\ker^-$ of \S\ref{sec:rev6h} is not re-derived; it is not needed.}
+\noindent\textbf{Dimension consequences (Category~A as upper bounds; sharpness open).} Proposition~K1 is a statement about the lattice-level rank $\mathrm{rank}_h$, which is a proved upper bound for the old lift rank. Every $h$-relation is a proved theta relation (the argument of Theorem~\ref{thm:s98}), so for $s=2m^2$, $m=2k^2-1$, the dimension bounds obtained by subtracting the $k(k-1)$ extra relations are \emph{proved upper bounds}: $\dim V(98)\le2406$ (equality, Theorem~\ref{thm:s98}) and $\dim V(578)\le83532$ (Proposition~\ref{prop:h6}), and likewise at every $m=2k^2-1$. Whether these bounds are sharp, i.e.\ whether there are no further relations (equality with the actual theta rank) at $m=17,31,\dots$, is \emph{not} proved. This supersedes the Category~B status of the $k(k-1)$ count in \S\ref{sec:rev6h}.
+
+%---------------------------------------------------------------------
+\subsection{The lattice origin of $\Delta=(s-2)(7s-32)$}\label{sec:rev7delta}
+Let $A=\left(\begin{smallmatrix}2&s\\s&s\end{smallmatrix}\right)$ be the Gram matrix of $Q_2(n,k)=n^2+snk+\tfrac s2k^2$, so $\det A=-s(s-2)$, and let $c_1=(-1,1)$, $c_2=(-4,1)$ (the locked choice) and $e_1=(1,0)$.
+\begin{proposition}[\src{37}, \S2]\label{prop:delta7}
+\begin{enumerate}[label=(\roman*)]
+\item $7s-32=-2Q(c_2)$. Indeed $c_2=c_1-3e_1$, $B(c_1,e_1)=s-2$, $Q(e_1)=1$, and $-2Q(c_2)=(s-2)+6(s-2)-18=7s-32$.
+\item $v:=(3s,s-8)=JAc_2$ ($J$ the rotation by $90^\circ$) spans $c_2^\perp$, $B(c_2,x)=\det(x,v)$, and $u_2=v/g$ with $g=\gcd(s-8,3s)=\gcd(24,s-8)$.
+\item $2Q(v)=\det A\cdot2Q(c_2)=s(s-2)(7s-32)$, so $Q_2(u_2)=s\Delta/(2g^2)$.
+\item For any $w$ with $\det(w,u_2)=1$, the residual coefficient in the Gauss phase of Proposition~\ref{prop:crt6}(iii) is $\det A/(4Q(u_2))=-g^2/(2(7s-32))=Q(\pi w)$, where $\pi$ is the $B$-orthogonal projection onto $\R c_2$ along $u_2$.
+\item $\Delta=4Q(c_1)Q(c_2)=B(c_1,c_2)^2+\det\mathrm{Gram}(c_1,c_2)=16(s-2)^2-9s(s-2)$, with $B(c_1,c_2)=-4(s-2)$ and $\det(c_1,c_2)^2=9$.
+\end{enumerate}
+\end{proposition}
+\catA{All identities are symbolic in $s$ (\texttt{delta\_lattice.py}). The degenerate prime cases of Proposition~\ref{prop:crt6}(iv) are read off: $p\mid7s-32$ means that $c_2$ is isotropic mod $p$ (the residual sum collapses to a delta), and $p\mid s-2$ is the $c_1$ analogue. No physical interpretation is offered.}
+
+%---------------------------------------------------------------------
+\subsection{The cone choice: what is intrinsic and what is tied to the locked $c_2$}\label{sec:rev7cone}
+Write $c_a=(-a,1)$ and $H_s^{(c_1,c)}$ for the cone series with Zwegers-type weight $w=\tfrac12(\sgn B(c_1,v)-\sgn B(c,v))$, so that the locked $H_s$ is $H_s^{(c_1,c_4)}$. The $c_1$-wall is $n=0$ (edge $u_1=(0,1)$) and the $c_2$-wall is the edge $u_2\propto(3s,s-8)$; this is exactly the summation cone of \texttt{asym\_engine.py}.
+\begin{proposition}[Edge-class invariance \src{37}, \S5(b)]\label{prop:Minv7}
+$M(n,k)=(-n-sk,k)$ is an integral involution of determinant $-1$ with $Q_+(Mv)=Q_+(v)$ (including the linear term), and $Mc_a=c_{s-a}$. For admissible $a$, $H_s^{(c_1,c_a)}=H_s^{(c_1,c_{s-a})}$. Also $-2Q(c_a)=(2a-1)s-2a^2$ is invariant under $a\leftrightarrow s-a$, and $4Q(c_1)Q(c_a)=(s-2)\big((2a-1)s-2a^2\big)$.
+\end{proposition}
+\catA{Proof: the difference is $\tfrac12\sum f(v)q^{Q_+(v)}$ with $f=\sgn B(c_{s-a},\cdot)-\sgn B(c_a,\cdot)$ supported in a sector between two positive lines (finitely many terms per degree); $f\circ M=-f$ and $M$ is a $Q_+$-preserving bijection, so the sum vanishes. Symbolic identities: \texttt{c2\_symbolic.py}; exact $q$-series check at $s=7,8,9,11,13$ to $q^{800}$ or $q^{600}$ (\texttt{h\_pair.json}).}
+\begin{proposition}[$c_1$ is forced; the axes cone \src{37}, \S6.1--6.2]\label{prop:axes7}
+\begin{enumerate}[label=(\roman*)]
+\item If one wall of the cone is the orthant edge $n=0$, then $c_1=\pm(-1,1)$ (the sign being fixed by orientation), up to its $M$-image $c_{s-1}$, which gives the same series. $Q(c_1)=-(s-2)/2<0$ for all $s>2$.
+\item (Axes cone.) Let $c_2^{\rm ax}$ be the primitive vector on the ray of $(-s,2)$, so that $B(c_2^{\rm ax},v)\propto-k$ (the $k=0$ wall); it is $M$-fixed, with $Q(-s,2)=-s(s-2)<0$. Then $w=\tfrac12(\sgn n+\sgn k)$ and $\Cmixed\equiv0$ identically, i.e.\ $C=\Caxis+\Cthird$.
+\item For any admissible $c_2$, $\Cmixed^{(c_2)}=H_s^{(c_1,c_2^{\rm ax})}-H_s^{(c_1,c_2)}$, a sector sum with finitely many terms per degree. For the locked $c_2=(-4,1)$ at $s=7$ its first term is the wall point $(21,-1)$, $Q_+=294$, weight $-\tfrac12$; this is exactly the rev.~6 statement ``$\Cmixed$ vanishes through $q^{293}$ but not identically''.
+\end{enumerate}
+\end{proposition}
+\catA{(i): $Ac_1\propto(1,0)$. (ii): $P-H=\Caxis+\Cthird$ by direct regrouping (the negative quadrant gives $\Cthird$ since $Q_+(-n,-k)=Q_-(n,k)$); exact check at $s=5,\dots,13$ to $q^{600}$ (\texttt{axes\_cmixed.json}). (iii): first nonzero degree of the locked $\Cmixed$ is $27,294,375,242,189,168$ for $s=6,7,10,11,12,13$; $\equiv0$ at $s=8$ (where $(-4,1)$ \emph{is} the axes vector); none through $q^{600}$ at $s=9$. At $s=7$, any $c_1\notin\{(-1,1),(-6,1)\}$ tested destroys the $q^0$ normalisation of $C$ (\texttt{rays\_s7.json}).}
+\begin{proposition}[Status of $c_2=(-4,1)$ \src{37}, \S5(c), \S6.2]\label{prop:c2status7}
+$c_2=(-4,1)$ is a \emph{definition}: it was locked at $s=7$ in \textup{\texttt{Residual\_Bridge\_Series\_C\_Definition.md}}, \S1, and frozen as $s$ varies (\S\ref{sec:hsct}). Within the class $c\in c_1+\Z e_1$ (second coordinate $b=1$) at $s=7$: $Q(c_a)<0$ iff $a\in\{1,\dots,6\}$; the closed orthant lies strictly inside the $w=1$ region iff $a\ge4$; and the $\Cmixed$ vanishing order is maximal (first nonzero term $q^{294}$) exactly for the $M$-class $\{3,4\}$. Together these give $a=4$ uniquely among $b=1$. Among all primitive $(-a,b)$ with $b\le6$ it is \emph{not} unique, even up to $M$: the vanishing order grows as $a/b\to s/2$, and the optimum under the $\Cmixed$ criterion is the axes vector $(-7,2)$. For $s\ne7$ the frozen choice is not forced (the deepest $b=1$ class is $a\approx s/2$).
+\end{proposition}
+\catA{The computations (exact to $q^{1200}$ at $s=7$: \texttt{cmixed\_vs\_a\_s7.json}; \texttt{rays\_s7.json}; \texttt{c2\_choice.json}).}
+\catB{Reading the three conditions as the ``selection rule'' behind the original choice is an interpretation.}
+\begin{remark}[What is intrinsic in $\Delta$]\label{rem:intrinsic7}
+Combining Propositions~\ref{prop:delta7}--\ref{prop:c2status7} (all Category~A):
+\begin{itemize}[leftmargin=2em]
+\item the factor $s-2=-2Q(c_1)$ of $\Delta$ is \emph{intrinsic given $c_1$}, and $c_1$ is itself forced once one wall is the orthant edge $n=0$;
+\item the factor $7s-32=-2Q(c_2)$, and with it every $\sqrt\Delta$ term, every $(7s-32)^r$ denominator and every $g$-dependence in the $H_s$ coefficients of \S\ref{sec:hsct}, \S\ref{sec:rev5} and \S\ref{sec:rev6an}, is \emph{tied to the locked choice} $c_2=(-4,1)$; it is invariant only under $a\leftrightarrow s-a$ (Proposition~\ref{prop:Minv7}), and other admissible $c_2$ give $\Delta(a)=(s-2)((2a-1)s-2a^2)$.
+\end{itemize}
+These statements concern the locked object as defined; nothing in them changes it (CORE\_FREEZE).
+\end{remark}
+
+%---------------------------------------------------------------------
+\subsection{The parallel object $H_s^{\rm axes}$: exact closed forms through $t^{13/2}$}\label{sec:rev7axes}
+\begin{definition}\label{def:axes7}
+$H_s^{\rm axes}:=H_s^{(c_1,c_2^{\rm ax})}$, the cone series with $c_1=(-1,1)$ and $c_2^{\rm ax}=\mathrm{prim}(-s,2)$ (the $k=0$ wall). It is a separate object from the locked $H_s$; by Proposition~\ref{prop:axes7}(ii), $H_s^{\rm axes}=P_s-\Caxis-\Cthird$ exactly.
+\end{definition}
+\begin{theorem}[\src{37}, \S7]\label{thm:axes7}
+Let $c_r$ be the coefficient of $t^r$ in $H_s^{\rm axes}(e^{-t})$ ($x=0$), $s\ge3$. All integer orders vanish, and for $r\in\{-\tfrac12,\tfrac12,\dots,\tfrac{13}2\}$,
+\[c_r=\sqrt\pi\,\big[R^{\rm ax}_r(s)+S^{\rm ax}_r(s)\sqrt{2s}\big],\qquad R^{\rm ax}_r,S^{\rm ax}_r\in\Q(s),\]
+with denominators $(s-2)^{r+3/2}$ times small integers, and no dependence on $g$. The first rows are
+\begin{center}\footnotesize
+\setlength{\tabcolsep}{4pt}\begin{tabular}{lll}\toprule
+$r$ & $R^{\rm ax}_r$ & $S^{\rm ax}_r$\\\midrule
+$-\tfrac12$ & $\dfrac1{s-2}$ & $-\dfrac1{2(s-2)}$\\[1ex]
+$\tfrac12$ & $\dfrac{s^2(s-4)}{24(s-2)^2}$ & $-\dfrac{(s-4)(3s-2)}{48(s-2)^2}$\\[1ex]
+$\tfrac32$ & $-\dfrac{s^3(s-4)(s^2-4s+8)}{960(s-2)^3}$ & $-\dfrac{15s^4-76s^3+108s^2+96s-128}{3840(s-2)^3}$\\[1ex]
+$\tfrac52$ & $\dfrac{s^4(s-4)(5s^4-40s^3+126s^2-184s+128)}{80640(s-2)^4}$ & $-\dfrac{(s-4)(105s^5-730s^4+2732s^3-5208s^2+5696s-2560)}{645120(s-2)^4}$\\\bottomrule
+\end{tabular}
+\end{center}
+and the rows $r=\tfrac72,\dots,\tfrac{13}2$ are in \texttt{c7/axes\_RS\_forms.json}. In particular $c_{-1/2}=\sqrt\pi(2-\sqrt{2s})/(2(s-2))=-\sqrt\pi/(\sqrt{2s}+2)$, and $R^{\rm ax}_r$ carries the factors $(s-4)$ and $s^{r+3/2}$ for every $r\ge\tfrac12$.
+\end{theorem}
+\catA{Proof: $H^{\rm axes}=P-\Caxis-\Cthird$; $P$ and $\Cthird$ are expanded by the proved two-dimensional quadrant Euler--Maclaurin lemma (F1, Proposition~\ref{prop:EM5}), $\Caxis$ has an exact unary expansion, and the area integrals are evaluated exactly (even moments cancel between $P$ and $\Cthird$). Everything is symbolic in $\sqrt{s/2}$ (\texttt{c7/axes\_closed.py}, \texttt{rs\_forms.py}). \emph{Record note:} the stored \texttt{c7/verify.json} is empty, so the ``$\le3\cdot10^{-47}$ engine agreement'' sentence of [S37], \S7 is not backed by a stored file and is not used here; the Category~A status rests on the derivation.}
+\catB{\emph{Numerical support only.} $70$-digit engine numerics with PSLQ at $s=7,\dots,13$ (\texttt{c6/repslq.json}) recognise the same field $\Q(\sqrt{2s})$ and the leading term; held-out direct summation at $s=20$ converges towards $c_{11/2}+c_{13/2}t$ (\texttt{c7/verify\_direct.json}).}
+
+%---------------------------------------------------------------------
+\subsection{The universal piece $R_e$ is wall-independent through $t^{13/2}$}\label{sec:rev7univ}
+For the locked $H_s$ write, as in Theorem~\ref{thm:Hs}(ii) and its continuations, $H_r=\sqrt{2\pi s}\,[R_r(s)+S_r(s,g)\sqrt\Delta]$.
+\begin{proposition}[\src{36}, G.4; \src{37}, \S7]\label{prop:univ7}
+For every $r\in\{-\tfrac12,\tfrac12,\dots,\tfrac{13}2\}$, $R_r(s)=S^{\rm ax}_r(s)$ identically in $s$. Equivalently, the $\sqrt{2\pi s}\cdot\Q(s)$ part of the radial expansion is the same for the locked cone and for the axes cone through $t^{13/2}$, while $R_r\ne R^{\rm ax}_r$.
+\end{proposition}
+\catA{Exact rational-function identities: $r\le\tfrac52$ by comparison with Theorem~\ref{thm:Hs}(ii) [S37, \S7]; $r=\tfrac72,\dots,\tfrac{13}2$ by \texttt{compare\_axes.py} (difference $0$ at $e=7,9,11,13$; $R_7,R_9$ recomputed from the $K=13$ pickle). \emph{Open:} the identity at general order. Comparison at $t^{15/2}$, $t^{17/2}$ needs the axes forms at $K\ge15$, which were not computed.}
+\catB{\emph{Interpretation:} the $c_1$ wall produces the universal piece and the $c_2$ wall the remainder ($S_r\sqrt\Delta$ for the locked cone, $R^{\rm ax}_r$ for the axes cone).}
+
+%---------------------------------------------------------------------
+\subsection{Analytic: general $x=a/N$ completed, even $N$, $x=\tfrac14,\tfrac16$, and $t^{15/2}$, $t^{17/2}$}\label{sec:rev7an}
+\begin{proposition}[General-formula checks completed \src{36}, D.0, E.0]\label{prop:gen7}
+The closed form of $H(c)$ given by the CFP together with Lemma~\ref{lem:qred6} agrees exactly with brute force for every $N\in\{2,\dots,13,15,16,21,25,27,32,35,45,49\}$, every $a$ coprime to $N$, every $s<200$ and every $c$. The new runs are $N=32,35,45,49$ with $199680$, $327600$, $421200$, $802620$ tests and $0$ mismatches.
+\end{proposition}
+\catA{Exact arithmetic in $\Z[\zeta_L]$, $L=\mathrm{lcm}(8,2N)$ (\texttt{gauss\_local\_run.log}).}
+\begin{proposition}[Even $N$ from the $2$-adic reduction \src{36}, D.2]\label{prop:evenN7}
+\begin{enumerate}[label=(\roman*)]
+\item $H_{1/2}(c)=4(-1)^c[16\mid s]$; period $16$.
+\item $H_{a/4}(c)=0$ if $4\nmid s$; $=4(1+i^a)$ if $s\equiv4\bmod8$ or $s\equiv8\bmod16$; $=8\,\e(ac^2/4)$ if $16\mid s$; period $16$.
+\item $N=8$: there are exactly six classes, $4\nmid s$ (zero), $s\equiv0\bmod32$, $s\equiv16\bmod32$, $s\equiv8\bmod16$, and $s\equiv4\bmod8$ split by $b\equiv3$ or $1\bmod4$; the period is $96=\mathrm{lcm}(32,48)$, the $48$ coming from $b\bmod4$ through $g_3^{-1}$.
+\end{enumerate}
+\end{proposition}
+\catA{(i), (ii): conceptual, from the CFP and Lemma~\ref{lem:qred6} with the $2$-adic valuations of $A2=s\Delta/g^2$ class by class; (ii) also checked exactly in $\Z[\zeta_8]$ for $s<2000$ ($31920$ tests). (iii): the invariants (and the factors $32$ and $3$) are derived by hand; pairwise distinctness is proved in Proposition~\ref{prop:n8dist7}. This supersedes the ``partial conceptual reason'' in the status of Proposition~\ref{prop:crt6}(v).}
+\begin{proposition}[The six $N=8$ classes are pairwise distinct \src{36}, F.2]\label{prop:n8dist7}
+With $I_1=\max_c|H(c)|$, $I_2=\mathrm{supp}\,H$, $I_3=$ phase of $H(0)$, $I_4=H(1)/H(0)$ (for $a=1$): class $s\equiv0\bmod32$ has $(16,\text{full})$; $s\equiv16\bmod32$ has $(16,\text{odd }c)$; $s\equiv8\bmod16$ has $(8,\text{full})$ with $I_3=\e(1/8)$; the two $s\equiv4\bmod8$ classes have $(8,\text{full})$ with $H(0)=+8$ real, and are separated by $I_4=+1$ ($b\equiv3\bmod4$) versus $I_4=-1$ ($b\equiv1\bmod4$), for all $a\in\{1,3,5,7\}$.
+\end{proposition}
+\catA{Residue reduction ($H_{a/8}$ depends only on $s\bmod16$ and on $u_2,w\bmod16$), hand derivation of $I_1$--$I_4$ from Lemma~\ref{lem:qred6}, and an exact finite computation over all residue tuples satisfying each class's constraints (\texttt{n8\_distinct\_residues.py}, \texttt{n8\_DE\_residues.py}); no scan over $s$.}
+\noindent\textbf{$ea$ tables at $x=a/8$ (Category~A).} For $r=1,\dots,4$ and $a=1$: $s\equiv0\bmod32$: $(0,1-\sqrt2(1+i)/12,0,-1/64+7\sqrt2(1+i)/15360)$; $s\equiv16\bmod32$: $(0,-\sqrt2(1+i)/12,0,7\sqrt2(1+i)/15360)$; $s\equiv8\bmod16$: $(0,\sqrt2(1+i)/24,0,-\sqrt2(1+i)/30720)$; $s\equiv4\bmod8$: $(\mp4,\tfrac12,\pm\tfrac3{64},-\tfrac1{128})$ for $b\equiv3,1\bmod4$ (independent of $a$); for $a=3,5,7$ the factor $\sqrt2(1+i)$ rotates to $\sqrt2(-1+i)$, $\sqrt2(-1-i)$, $\sqrt2(1-i)$. Full data: \texttt{ea\_N8.json}.
+
+\begin{proposition}[$t^{11/2}$, $t^{13/2}$ at $x=\tfrac14,\tfrac16$, and vanishing \src{36}, D.1]\label{prop:x1416}
+For $e=11,13$ and $x\in\{\tfrac14,\tfrac16\}$, $c_e(s)=\gamma_0A_e(s)+\sum_reb_rY_{e,r}(s)+\sum_rea_rX_{e,r}(s,g)$ with the universal functions of the $P=8$, $P=12$, $K=13$ runs and the exact class constants (for $x=\tfrac14$, $4\mid s$: $\gamma_0=(1+i)/2$, $eb=(0,\tfrac13-\tfrac i6,0,\dots)$; for $x=\tfrac16$: $\gamma_0=0$). Moreover:
+\begin{enumerate}[label=(\roman*)]
+\item $x=\pm\tfrac14$, $4\nmid s$: $H_s(\pm i\,e^{-t})=O(t^M)$ for every $M$;
+\item $x=\tfrac16$, $s$ odd: $H_s(\e(1/6)e^{-t})=O(t^M)$ for every $M$.
+\end{enumerate}
+\end{proposition}
+\catA{Universal form: exact symbolic runs (\texttt{sym\_universal\_P8\_K13}, \texttt{P12\_K13}) and \texttt{class\_data\_N4\_N6.json}. (i): a sign-reversing shift kills $G(j)$, so $\gamma_0=eb=0$, and $ea=0$ by Proposition~\ref{prop:evenN7}(ii). (ii): by the CFP (which applies equally to $G$ and $\gamma_0$) the Gauss data contain the $x=\tfrac12$ factor, which vanishes for odd $s$ (Proposition~\ref{prop:xhalf}). Exact zeros at $s=5,7,9,\dots$ confirm both.}
+\catB{The independent (floating-point) engine agrees to double precision at $s=8,12,16$ ($x=\tfrac14$) and $s=8,16$ ($x=\tfrac16$). $60$-digit direct sums at $s=8$:  relative errors $2.0\cdot10^{-13}$, $1.7\cdot10^{-9}$ ($x=\tfrac14$, also $\tfrac34$) and $8.0\cdot10^{-10}$, $8.3\cdot10^{-7}$ ($x=\tfrac16$) for $c_{11}$, $c_{13}$. Larger $s$ were not run (they need $\gtrsim10^7$ terms).}
+
+\begin{proposition}[$t^{15/2}$ and $t^{17/2}$ at $x=0$ \src{36}, F.1, G.1]\label{prop:t1517}
+For $e=15,17$, $c_e=\sqrt{2\pi s}\,[R_e(s)+S_e(s,g)\sqrt\Delta]$: the $R+S\sqrt\Delta$ split persists. Explicitly
+\begin{align*}
+R_{15}&=-\frac{109395s^{16}+101686679952s^{15}-3187115618544s^{14}+\cdots-3332235344216064}{148002103413964800\,(s-2)^9},\\
+R_{17}&=-\frac{(s-4)\,(4849845s^{17}-139775079348190s^{16}+\cdots-4580182201382993920)}{472422714097375641600\,(s-2)^{10}},
+\end{align*}
+with all coefficients in \texttt{closed\_P1\_K15.json}, \texttt{closed\_P1\_K17.json}; $S_e$ is a polynomial in $g^2$ over $(s-2)^{(e+3)/2}(7s-32)^{(e+3)/2}$. Both vanish at $s=5$. The factor $(s-4)$ occurs in $R_e$ for $e=9,13,17$.
+\end{proposition}
+\catA{Exact symbolic runs ($K=15$, $K=17$; the $K=17$ run reuses the exact $e\le15$ entries). The split is unique at each sample $s$ and both interpolants pass exact checks at $10$ held-out $s$. $K=15$ reproduces every $K=13$ coefficient exactly; the $e\le13$ entries of $K=17$ agree with the independent $K=13$ run; $c_{15}(5)=c_{17}(5)=0$.}
+\catB{Independent (floating-point) engine: $c_{15}$ equal at double precision for $s=6,7,9$; $c_{17}$ equal for $s=6$ and to $\le9\cdot10^{-16}$ for $s=7,9$ (\texttt{check\_K15.log}, \texttt{check\_K17.log}). $60$-digit direct sums at $s=20,32,8$: relative errors $2.6\cdot10^{-10}$, $4.5\cdot10^{-9}$, $8.9\cdot10^{-6}$ for $c_{15}$ and $3.5\cdot10^{-10}$, $6.1\cdot10^{-9}$, $1.2\cdot10^{-5}$ for $c_{17}$.}
+
+\noindent\textbf{Structure of $S_e$.} Write $S_e(s-2)^k(7s-32)^k=\sum_j\sigma_{e,2j}(s)g^{2j}$, $k=(e+3)/2$.
+\catA{Exact factorisations for each of $e=11,13,15,17$ (\texttt{S\_structure.txt}, \texttt{S\_structure\_with17.txt}): only even powers $g^0,\dots,g^{e+1}$ occur; $\sigma_{e,e+1}=\mathrm{const}\cdot(s-2)^{(e+1)/2}$; for $1\le j\le(e+1)/2$, $\sigma_{e,2j}=\mathrm{const}\cdot s^{(e+1)/2-j}(s-2)^j(s-8)^{\max(0,e+3-4j)}\varphi_{e,j}(s)$; the cofactors pair up ($\varphi_{e,j}=\varphi_{e,j'}$ up to constants when $2j+2j'=e+3$); and $\sigma_{e,0}=s^{(e+1)/2}\cdot$(an irreducible polynomial of degree $e+1$).}
+\catB{\emph{Observation, not proved:} that this pattern holds for all odd $e$. Likewise an \emph{observation}: the constant in the top coefficient $\sigma_{e,e+1}$ carries the numerator of the Bernoulli number $B_{e+1}$ ($691$ for $e=11$, $3617$ for $e=15$, $43867$ for $e=17$), consistent with the $r=e+1$ Bernoulli term of the $u_2$-edge. (The (s$-$8)-exponent formula above replaces a garbled bullet in [S36], G.2; see G.0 there.)}
+
+%---------------------------------------------------------------------
+\subsection{Weil-representation inputs computed exactly}\label{sec:rev7weil}
+\begin{proposition}[\src{37}, \S3]\label{prop:weil7}
+The even and odd parts of the Weil representation of $\Z/M$ have the following (dimension, commutant): $M=47$: $(24,1)$, $(23,1)$; $M=59$: $(30,1)$, $(29,1)$; $M=71$: $(36,1)$, $(35,1)$; $M=17^2$: $(145,2)$, $(144,1)$; $M=19^2$: $(181,2)$, $(180,1)$; $M=23^2$: $(265,2)$, $(264,1)$. Hence for $q=47,59,71$ both parts are irreducible, and for $p=17,19,23$ the even part of $\Z/p^2$ is $\mathbf1\oplus R$ with $R$ irreducible and the odd part is irreducible.
+\end{proposition}
+\catA{Commutants computed mod $\ell\equiv1\pmod M$ on exactly verified bases, both square classes (\texttt{weil\_cyclic.py}); the characteristic-$0$ commutant is bounded above by the mod-$\ell$ one, and for $\Z/p^2$ below by $2$ via the invariant line $\delta_{p\Z/p^2}$. With Proposition~\ref{prop:c3small6}, (C3) is now Category~A for every prime $q\mid s-2$ and every $p^2$ occurring at $s=9,25,49$ (in particular $W_{47}^\pm$ irreducible, used for the $1728$ at $s=49$), and for $\Z/17^2,\Z/19^2,\Z/23^2$. The general-$p$ statement remains cited (Scheithauer, IMRN 2009, Prop.~4.5 and Thm.~4.7; Cliff--McNeilly--Szechtman, main theorem; Nobs--Wolfart, theorem number not verified).}
+\catB{$s=121$ and $s=3481$ remain \emph{factor-dimension predictions} (Proposition~\ref{prop:splits6} and the remarks after it): the factors are Category~A, but the assembled decompositions are conditional on the tensor factorisation and were not computed by a label-space run (estimated $6.6$\,GB for the $s=121$ table alone; not feasible on the current machine).}
+
+%---------------------------------------------------------------------
+\subsection{Correction remark}\label{sec:rev7corr}
+\begin{remark}[Refinement of the role of $\Delta$]\label{rem:corr7}
+An earlier statement, that $\Delta=(s-2)(7s-32)$ constrains the S$^2$-side expansions \emph{intrinsically}, is refined as follows: only the factor $(s-2)=-2Q(c_1)$ is intrinsic (given $c_1$, which is forced by the wall $n=0$). The factor $7s-32=-2Q(c_2)$ and the $\sqrt\Delta$ terms are properties of the locked choice $c_2=(-4,1)$ (Remark~\ref{rem:intrinsic7}; Category~A). The universal piece $R_e$ does not see $c_2$ through $t^{13/2}$ (Proposition~\ref{prop:univ7}). The locked object is unchanged.
+\end{remark}
+
+%---------------------------------------------------------------------
+\subsection{Open problems after revision 7}\label{sec:open7}
+\begin{enumerate}[leftmargin=2em]
+\item \textbf{Sharpness of the K1 bounds.} Prove (or refute) that there are no relations beyond the $g$- and $h$-relations at $m=17,31,\dots$ (lower bounds for $\dim V(2m^2)$); composite $m$; $g$-consistency for all odd $m$.
+\item \textbf{Universal piece at all orders.} Prove $R_e=S^{\rm ax}_e$ for every odd $e$ (currently exact for $t^{-1/2},\dots,t^{13/2}$); compute the axes forms at $K\ge15$ to test $t^{15/2}$, $t^{17/2}$.
+\item \textbf{Structure of $S_e$.} Prove the even-power, $(s-8)^{\max(0,e+3-4j)}$, pairing and Bernoulli-numerator pattern for all $e$ (Category~B observation at $e=11,\dots,17$).
+\item \textbf{Higher orders.} $t^{19/2}$ and beyond at $x=0$ (mechanical, about $\times3.3$ cost per order); $x=\tfrac14,\tfrac16$ direct numerics for $s\ne8$.
+\item \textbf{$H_s^{\rm axes}$ at $x\neq0$.} Closed forms at $x=\tfrac12,\tfrac13$ (same method with residue classes mod $2N$; not run).
+\item \textbf{Cone choice.} Why $c_1=(-1,1)$ and $c_2=(-4,1)$ were chosen originally; whether a canonical $s$-dependent $c_2$ (deepest class, or the axes wall) gives cleaner closed forms in general (Category~B evidence favours the axes cone: field $\Q(\sqrt{2s})$, denominators $(s-2)^k$). The locked object stays as defined.
+\item \textbf{Prime squares.} Label-space runs at $s=121$ and $s=3481$ (sparse/blocked VF or a $\ge32$\,GB machine); a citation-free proof of (C3) for general $p$.
+\item \textbf{Retained from revision~6:} a self-contained proof that the Weil representation factors through $\mathrm{Mp}_2(\Z/N)$; Atkin--Lehner $W_p$ on the level-$19600$ forms; $\dim V=s(s-1)$ for $e\ge2$ in general; even $s$; Eisenstein equality of the all-even sector.
+\end{enumerate}
