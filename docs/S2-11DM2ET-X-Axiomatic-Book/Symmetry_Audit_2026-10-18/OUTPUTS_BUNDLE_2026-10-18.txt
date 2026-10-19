@@ -1,0 +1,698 @@
+# OUTPUTS BUNDLE — Symmetry_Audit_2026-10-18 (2026-10-18)
+# The text outputs (json/log/txt/sha256) of this package, concatenated verbatim, one member per file.
+# Reports (.md) and scripts (.py/.sh) are stored as separate files in this folder. Binary files (pkl/npz/npy), .bak backups, __pycache__ and empty logs are excluded; they are listed under 'Excluded' below with size and sha256.
+# Reason for bundling: the push tool accepts at most 4 file attachments per commit; bundling keeps the commit count modest.
+# Member format: a line "===== BEGIN FILE <relative path> bytes=<n> sha256=<hex> =====", then exactly <n> bytes, then "\n===== END FILE <relative path> =====".
+# Extract (Python 3, run in this folder):
+#   import hashlib,os,re; d=open('OUTPUTS_BUNDLE_2026-10-18.txt','rb').read(); i=0
+#   for m in re.finditer(rb'===== BEGIN FILE (\S+) bytes=(\d+) sha256=([0-9a-f]+) =====\n', d):
+#       if m.start()<i: continue
+#       p,n,h=m.group(1).decode(),int(m.group(2)),m.group(3).decode(); b=d[m.end():m.end()+n]; i=m.end()+n
+#       assert hashlib.sha256(b).hexdigest()==h; os.makedirs(os.path.dirname(p) or '.',exist_ok=True); open(p,'wb').write(b)
+# Members: 23
+# Excluded (not in repository; available on request):
+#   (none)
+# Member list:
+#   exact_commute.json
+#   p_old_fixed_11_-1,-1.json
+#   p_old_fixed_11_1,1.json
+#   p_old_fixed_25_-1,-1.json
+#   p_old_fixed_25_1,1.json
+#   p_old_fixed_49_1,1.json
+#   p_old_fixed_9_-1,-1.json
+#   p_old_fixed_9_1,1.json
+#   sec_fixed_11_-1,-1.json
+#   sec_fixed_11_-1,1.json
+#   sec_fixed_11_1,-1.json
+#   sec_fixed_11_1,1.json
+#   sec_fixed_25_-1,-1.json
+#   sec_fixed_25_-1,1.json
+#   sec_fixed_25_1,-1.json
+#   sec_fixed_25_1,1.json
+#   sec_fixed_49.log
+#   sec_fixed_7_-1,-1.json
+#   sec_fixed_7_-1,1.json
+#   sec_fixed_7_1,-1.json
+#   sec_fixed_7_1,1.json
+#   sec_fixed_9_-1,-1.json
+#   sec_fixed_9_1,1.json
+
+===== BEGIN FILE exact_commute.json bytes=3290 sha256=3fba0a8b483c0c01acb013791d79e811d826dbb59a70ddc488bcedf00c7abb5e =====
+{
+ "5": {
+  "neg": {
+   "vecfam": {
+    "S": false,
+    "T": false
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  },
+  "gamma": {
+   "vecfam": {
+    "S": true,
+    "T": true
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  },
+  "3": {
+   "vecfam": {
+    "S": false,
+    "T": false
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  },
+  "5": {
+   "vecfam": {
+    "S": true,
+    "T": true
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  }
+ },
+ "7": {
+  "neg": {
+   "vecfam": {
+    "S": false,
+    "T": false
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  },
+  "gamma": {
+   "vecfam": {
+    "S": true,
+    "T": true
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  },
+  "5": {
+   "vecfam": {
+    "S": false,
+    "T": false
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  },
+  "7": {
+   "vecfam": {
+    "S": true,
+    "T": true
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  }
+ },
+ "9": {
+  "neg": {
+   "vecfam": {
+    "S": false,
+    "T": false
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  },
+  "gamma": {
+   "vecfam": {
+    "S": true,
+    "T": true
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  },
+  "3": {
+   "vecfam": {
+    "S": true,
+    "T": true
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  },
+  "7": {
+   "vecfam": {
+    "S": false,
+    "T": false
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  }
+ },
+ "11": {
+  "neg": {
+   "vecfam": {
+    "S": false,
+    "T": false
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  },
+  "gamma": {
+   "vecfam": {
+    "S": true,
+    "T": true
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  },
+  "3": {
+   "vecfam": {
+    "S": false,
+    "T": false
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  },
+  "11": {
+   "vecfam": {
+    "S": true,
+    "T": true
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  }
+ },
+ "13": {
+  "neg": {
+   "vecfam": {
+    "S": false,
+    "T": false
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  },
+  "gamma": {
+   "vecfam": {
+    "S": true,
+    "T": true
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  },
+  "11": {
+   "vecfam": {
+    "S": false,
+    "T": false
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  },
+  "13": {
+   "vecfam": {
+    "S": true,
+    "T": true
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  }
+ },
+ "15": {
+  "neg": {
+   "vecfam": {
+    "S": false,
+    "T": false
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  },
+  "gamma": {
+   "vecfam": {
+    "S": true,
+    "T": true
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  },
+  "3": {
+   "vecfam": {
+    "S": true,
+    "T": true
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  },
+  "5": {
+   "vecfam": {
+    "S": true,
+    "T": true
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  },
+  "13": {
+   "vecfam": {
+    "S": false,
+    "T": false
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  }
+ },
+ "25": {
+  "neg": {
+   "vecfam": {
+    "S": false,
+    "T": false
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  },
+  "gamma": {
+   "vecfam": {
+    "S": true,
+    "T": true
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  },
+  "5": {
+   "vecfam": {
+    "S": true,
+    "T": true
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  },
+  "23": {
+   "vecfam": {
+    "S": false,
+    "T": false
+   },
+   "P": {
+    "S": true,
+    "T": true
+   }
+  }
+ }
+}
+===== END FILE exact_commute.json =====
+===== BEGIN FILE p_old_fixed_11_-1,-1.json bytes=184 sha256=55082938bd5d214328c474d69048e3ae4fb0937f51121d52377895433a2be3c4 =====
+{
+ "s": 11,
+ "p": 3,
+ "Np": 81,
+ "c": 19360,
+ "sector_dim": 20,
+ "p_invariant_dim": 0,
+ "rank[F,SF,TF]": 0,
+ "pred_3(s-1)/2": 15,
+ "ratio_sector_over_F": null,
+ "pred_(p^2+1)/2": 6.0
+}
+===== END FILE p_old_fixed_11_-1,-1.json =====
+===== BEGIN FILE p_old_fixed_11_1,1.json bytes=185 sha256=9bae8f2f1c3340eda2cbe005dd60b9ef03bcb8c9eb42596f24bb6cdfd93ccd63 =====
+{
+ "s": 11,
+ "p": 3,
+ "Np": 81,
+ "c": 19360,
+ "sector_dim": 90,
+ "p_invariant_dim": 18,
+ "rank[F,SF,TF]": 18,
+ "pred_3(s-1)/2": 15,
+ "ratio_sector_over_F": 5.0,
+ "pred_(p^2+1)/2": 6.0
+}
+===== END FILE p_old_fixed_11_1,1.json =====
+===== BEGIN FILE p_old_fixed_25_-1,-1.json bytes=188 sha256=c196aa5ab99cf983de7f9a3239a9d46786ed8180059194c5536ee155cd5ec539 =====
+{
+ "s": 25,
+ "p": 5,
+ "Np": 625,
+ "c": 499376,
+ "sector_dim": 132,
+ "p_invariant_dim": 0,
+ "rank[F,SF,TF]": 0,
+ "pred_3(s-1)/2": 36,
+ "ratio_sector_over_F": null,
+ "pred_(p^2+1)/2": 13.0
+}
+===== END FILE p_old_fixed_25_-1,-1.json =====
+===== BEGIN FILE p_old_fixed_25_1,1.json bytes=190 sha256=5ffc3e6e82ffe9176955bb97aca25973cc0f2d16a117d749263d69f38c7388e6 =====
+{
+ "s": 25,
+ "p": 5,
+ "Np": 625,
+ "c": 499376,
+ "sector_dim": 468,
+ "p_invariant_dim": 36,
+ "rank[F,SF,TF]": 36,
+ "pred_3(s-1)/2": 36,
+ "ratio_sector_over_F": 13.0,
+ "pred_(p^2+1)/2": 13.0
+}
+===== END FILE p_old_fixed_25_1,1.json =====
+===== BEGIN FILE p_old_fixed_49_1,1.json bytes=194 sha256=27dd348c00770d3eab10dee7b462651e6dd5a0775c7551fd633de8964aaaed92 =====
+{
+ "s": 49,
+ "p": 7,
+ "Np": 2401,
+ "c": 18590944,
+ "sector_dim": 1800,
+ "p_invariant_dim": 72,
+ "rank[F,SF,TF]": 72,
+ "pred_3(s-1)/2": 72,
+ "ratio_sector_over_F": 25.0,
+ "pred_(p^2+1)/2": 25.0
+}
+===== END FILE p_old_fixed_49_1,1.json =====
+===== BEGIN FILE p_old_fixed_9_-1,-1.json bytes=183 sha256=9882b8cbcbca873412a2b7a834227d2f729da3713844882d80c33644cab0bfe3 =====
+{
+ "s": 9,
+ "p": 3,
+ "Np": 81,
+ "c": 21952,
+ "sector_dim": 12,
+ "p_invariant_dim": 0,
+ "rank[F,SF,TF]": 0,
+ "pred_3(s-1)/2": 12,
+ "ratio_sector_over_F": null,
+ "pred_(p^2+1)/2": 5.0
+}
+===== END FILE p_old_fixed_9_-1,-1.json =====
+===== BEGIN FILE p_old_fixed_9_1,1.json bytes=184 sha256=eac9b98153efcdb5012832ff933cce5bad638b2a56344df651b13541b92780ab =====
+{
+ "s": 9,
+ "p": 3,
+ "Np": 81,
+ "c": 21952,
+ "sector_dim": 60,
+ "p_invariant_dim": 12,
+ "rank[F,SF,TF]": 12,
+ "pred_3(s-1)/2": 12,
+ "ratio_sector_over_F": 5.0,
+ "pred_(p^2+1)/2": 5.0
+}
+===== END FILE p_old_fixed_9_1,1.json =====
+===== BEGIN FILE sec_fixed_11_-1,-1.json bytes=257 sha256=130adcf56f92efc4891c48aa205c6bb6e16d1ee484e09de363f9f68f33f7fb83 =====
+{
+ "s": 11,
+ "N": 396,
+ "d": 20,
+ "ell": 156817,
+ "Kbig": 156816,
+ "unknowns": 20,
+ "comm_ub": 1,
+ "sum_dims": 20,
+ "pieces": [
+  [
+   20,
+   20,
+   20
+  ]
+ ],
+ "eps": [
+  -1,
+  -1
+ ],
+ "invariance_failures_sampled": 0,
+ "maxrss_GB": 0.075856,
+ "sec": 0.0
+}
+===== END FILE sec_fixed_11_-1,-1.json =====
+===== BEGIN FILE sec_fixed_11_-1,1.json bytes=33 sha256=06a3038a0965f5c1060e793bd7909a0c6d87992a9027dd8e5f39d6d14e243113 =====
+{"s": 11, "eps": [-1, 1], "d": 0}
+===== END FILE sec_fixed_11_-1,1.json =====
+===== BEGIN FILE sec_fixed_11_1,-1.json bytes=33 sha256=6b48fd5dc66fe15560b6e07e8c3e4a24c54f20569b7d228b3fe58b3be5a12ef1 =====
+{"s": 11, "eps": [1, -1], "d": 0}
+===== END FILE sec_fixed_11_1,-1.json =====
+===== BEGIN FILE sec_fixed_11_1,1.json bytes=285 sha256=4914791f1b644497e5beaf0e1ccddaf0a1e398c341702deaea5a18e54fc782b5 =====
+{
+ "s": 11,
+ "N": 396,
+ "d": 90,
+ "ell": 156817,
+ "Kbig": 156816,
+ "unknowns": 126,
+ "comm_ub": 2,
+ "sum_dims": 90,
+ "pieces": [
+  [
+   18,
+   18,
+   18
+  ],
+  [
+   72,
+   72,
+   72
+  ]
+ ],
+ "eps": [
+  1,
+  1
+ ],
+ "invariance_failures_sampled": 0,
+ "maxrss_GB": 0.078416,
+ "sec": 0.1
+}
+===== END FILE sec_fixed_11_1,1.json =====
+===== BEGIN FILE sec_fixed_25_-1,-1.json bytes=266 sha256=d6689c36187760156ad06898c4144885cfcfb734b6f918a52e0d86624ddd6a95 =====
+{
+ "s": 25,
+ "N": 2300,
+ "d": 132,
+ "ell": 21160001,
+ "Kbig": 5290000,
+ "unknowns": 154,
+ "comm_ub": 1,
+ "sum_dims": 132,
+ "pieces": [
+  [
+   132,
+   132,
+   132
+  ]
+ ],
+ "eps": [
+  -1,
+  -1
+ ],
+ "invariance_failures_sampled": 0,
+ "maxrss_GB": 0.10206,
+ "sec": 0.9
+}
+===== END FILE sec_fixed_25_-1,-1.json =====
+===== BEGIN FILE sec_fixed_25_-1,1.json bytes=33 sha256=803c3f752b195dd97204c2b8760e994cd73baeadbcb788e7f3e5947a055f898e =====
+{"s": 25, "eps": [-1, 1], "d": 0}
+===== END FILE sec_fixed_25_-1,1.json =====
+===== BEGIN FILE sec_fixed_25_1,-1.json bytes=33 sha256=a4ab2d04b7a236f7b282662d5616a2dd98aa42ef32c3ed8e0877f28b68df3481 =====
+{"s": 25, "eps": [1, -1], "d": 0}
+===== END FILE sec_fixed_25_1,-1.json =====
+===== BEGIN FILE sec_fixed_25_1,1.json bytes=294 sha256=c166d9b045d2db7f41009367b02f630acdb7e600e8d2a9d2e63779039a2fed13 =====
+{
+ "s": 25,
+ "N": 2300,
+ "d": 468,
+ "ell": 21160001,
+ "Kbig": 5290000,
+ "unknowns": 684,
+ "comm_ub": 2,
+ "sum_dims": 468,
+ "pieces": [
+  [
+   36,
+   36,
+   36
+  ],
+  [
+   432,
+   432,
+   432
+  ]
+ ],
+ "eps": [
+  1,
+  1
+ ],
+ "invariance_failures_sampled": 0,
+ "maxrss_GB": 0.147728,
+ "sec": 9.0
+}
+===== END FILE sec_fixed_25_1,1.json =====
+===== BEGIN FILE sec_fixed_49.log bytes=657 sha256=6bd15c0666b68752a3bff0e2d7203f63fb65ce73b3f34a43ab00867c15de0b6e =====
+49 N 9212 sector dim 1800 t 11.4 maxrss GB 0.409032
+49 K 42430472 Kbig 84860944 ell 1272914161
+49 invariance-certificate sampled rows 300 failures 0
+49 Sd,Td built t 13.7 maxrss GB 0.553228
+49 T-eigendecomp done; unknowns 2664 t 1171.3 maxrss GB 0.75264
+49 commutant upper bound 2 t 1196.8 maxrss GB 1.117712
+49 piece dim 72 rank[W,SW,TW] 72 alg mult 72
+49 piece dim 1728 rank[W,SW,TW] 1728 alg mult 1728
+{'s': 49, 'N': 9212, 'd': 1800, 'ell': 1272914161, 'Kbig': 84860944, 'unknowns': 2664, 'comm_ub': 2, 'sum_dims': 1800, 'pieces': [(72, 72, 72), (1728, 1728, 1728)], 'eps': [1, 1], 'invariance_failures_sampled': 0, 'maxrss_GB': 1.212016, 'sec': 1215.8}
+
+===== END FILE sec_fixed_49.log =====
+===== BEGIN FILE sec_fixed_7_-1,-1.json bytes=247 sha256=eb59caefba81acc5730f52300b3acc3c3c42479b1c15006ebd114343688d6b8b =====
+{
+ "s": 7,
+ "N": 140,
+ "d": 6,
+ "ell": 78401,
+ "Kbig": 19600,
+ "unknowns": 6,
+ "comm_ub": 1,
+ "sum_dims": 6,
+ "pieces": [
+  [
+   6,
+   6,
+   6
+  ]
+ ],
+ "eps": [
+  -1,
+  -1
+ ],
+ "invariance_failures_sampled": 0,
+ "maxrss_GB": 0.07476,
+ "sec": 0.0
+}
+===== END FILE sec_fixed_7_-1,-1.json =====
+===== BEGIN FILE sec_fixed_7_-1,1.json bytes=32 sha256=ab95f9f4ccb0ca1410b70f66efd6cb6591414c97e57d9b236ebee043c4513de1 =====
+{"s": 7, "eps": [-1, 1], "d": 0}
+===== END FILE sec_fixed_7_-1,1.json =====
+===== BEGIN FILE sec_fixed_7_1,-1.json bytes=32 sha256=69ad674d10bc9e11a1defcc440cabee25961cebbf05117fcdd5b3693b4c86357 =====
+{"s": 7, "eps": [1, -1], "d": 0}
+===== END FILE sec_fixed_7_1,-1.json =====
+===== BEGIN FILE sec_fixed_7_1,1.json bytes=252 sha256=aecd0c4cf2d11213d439b165309e3df2a718ce9e164082e1272242219c214cde =====
+{
+ "s": 7,
+ "N": 140,
+ "d": 36,
+ "ell": 78401,
+ "Kbig": 19600,
+ "unknowns": 36,
+ "comm_ub": 1,
+ "sum_dims": 36,
+ "pieces": [
+  [
+   36,
+   36,
+   36
+  ]
+ ],
+ "eps": [
+  1,
+  1
+ ],
+ "invariance_failures_sampled": 0,
+ "maxrss_GB": 0.075236,
+ "sec": 0.0
+}
+===== END FILE sec_fixed_7_1,1.json =====
+===== BEGIN FILE sec_fixed_9_-1,-1.json bytes=255 sha256=18d59c93ec680495cc00b4f90990bd17706004e478368e78b78319eb9ba1da5b =====
+{
+ "s": 9,
+ "N": 252,
+ "d": 12,
+ "ell": 444529,
+ "Kbig": 63504,
+ "unknowns": 12,
+ "comm_ub": 1,
+ "sum_dims": 12,
+ "pieces": [
+  [
+   12,
+   12,
+   12
+  ]
+ ],
+ "eps": [
+  -1,
+  -1
+ ],
+ "invariance_failures_sampled": 0,
+ "maxrss_GB": 0.074976,
+ "sec": 0.0
+}
+===== END FILE sec_fixed_9_-1,-1.json =====
+===== BEGIN FILE sec_fixed_9_1,1.json bytes=282 sha256=d9447a727b86f4686b4fbbd7f7283232d9252d5158d822590ecf35caf54603cd =====
+{
+ "s": 9,
+ "N": 252,
+ "d": 60,
+ "ell": 444529,
+ "Kbig": 63504,
+ "unknowns": 84,
+ "comm_ub": 2,
+ "sum_dims": 60,
+ "pieces": [
+  [
+   12,
+   12,
+   12
+  ],
+  [
+   48,
+   48,
+   48
+  ]
+ ],
+ "eps": [
+  1,
+  1
+ ],
+ "invariance_failures_sampled": 0,
+ "maxrss_GB": 0.076164,
+ "sec": 0.1
+}
+===== END FILE sec_fixed_9_1,1.json =====
