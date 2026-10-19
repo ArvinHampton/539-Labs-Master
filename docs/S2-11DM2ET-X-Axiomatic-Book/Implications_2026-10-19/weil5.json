@@ -1,0 +1,26 @@
+{
+ "even": {
+  "dim": 3,
+  "|G|": 120,
+  "|scalars in G|": 2,
+  "|G/scalars|": 60,
+  "element orders mod scalars": [
+   1,
+   2,
+   3,
+   5
+  ]
+ },
+ "odd": {
+  "dim": 2,
+  "|G|": 120,
+  "|scalars in G|": 2,
+  "|G/scalars|": 60,
+  "element orders mod scalars": [
+   1,
+   2,
+   3,
+   5
+  ]
+ }
+}
