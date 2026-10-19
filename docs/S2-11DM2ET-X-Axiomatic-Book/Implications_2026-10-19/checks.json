@@ -1,0 +1,254 @@
+{
+ "multik_thm31": true,
+ "seeds": {
+  "x^5-55*x+88": {
+   "disc": 58564000000,
+   "square": true,
+   "polgalois": "[60, 1, 4, \"A5\"]"
+  },
+  "x^5-100*x+400": {
+   "disc": 77440000000000,
+   "square": true,
+   "polgalois": "[60, 1, 4, \"A5\"]"
+  },
+  "x^5+20*x+16": {
+   "disc": 1024000000,
+   "square": true,
+   "polgalois": "[60, 1, 4, \"A5\"]"
+  },
+  "x^5+20*x-32": {
+   "disc": 4096000000,
+   "square": true,
+   "polgalois": "[10, 1, 2, \"D(5) = 5:2\"]"
+  }
+ },
+ "RTA_two_Ps_first_diffs_s7": [
+  [
+   14,
+   1,
+   0
+  ],
+  [
+   21,
+   2,
+   1
+  ],
+  [
+   22,
+   1,
+   0
+  ],
+  [
+   28,
+   2,
+   0
+  ],
+  [
+   29,
+   1,
+   0
+  ],
+  [
+   32,
+   1,
+   0
+  ]
+ ],
+ "lattices": [
+  {
+   "name": "s=7 even sublattice {x2 even} of (Z^2,A)",
+   "gram": [
+    [
+     2,
+     14
+    ],
+    [
+     14,
+     28
+    ]
+   ],
+   "det": -140,
+   "even": true,
+   "isotropic": false,
+   "minus2_solution": "[]"
+  },
+  {
+   "name": "s=7 lattice (Z^2,2A)",
+   "gram": [
+    [
+     4,
+     14
+    ],
+    [
+     14,
+     14
+    ]
+   ],
+   "det": -140,
+   "even": true,
+   "isotropic": false,
+   "minus2_solution": "[]"
+  },
+  {
+   "name": "M_t at k=2, m=7",
+   "gram": [
+    [
+     2,
+     14
+    ],
+    [
+     14,
+     2
+    ]
+   ],
+   "det": -192,
+   "even": true,
+   "isotropic": false,
+   "minus2_solution": "[]"
+  },
+  {
+   "name": "M_t at k=3, m=17",
+   "gram": [
+    [
+     2,
+     34
+    ],
+    [
+     34,
+     2
+    ]
+   ],
+   "det": -1152,
+   "even": true,
+   "isotropic": false,
+   "minus2_solution": "[]"
+  },
+  {
+   "name": "M_t at k=4, m=31",
+   "gram": [
+    [
+     2,
+     62
+    ],
+    [
+     62,
+     2
+    ]
+   ],
+   "det": -3840,
+   "even": true,
+   "isotropic": false,
+   "minus2_solution": "[]"
+  }
+ ],
+ "gamma_powers_on_disc(Z^2,2A)": {
+  "2": {
+   "plus1": true,
+   "minus1": false
+  },
+  "4": {
+   "plus1": true,
+   "minus1": false
+  },
+  "6": {
+   "plus1": true,
+   "minus1": false
+  },
+  "8": {
+   "plus1": true,
+   "minus1": false
+  },
+  "10": {
+   "plus1": true,
+   "minus1": false
+  },
+  "12": {
+   "plus1": true,
+   "minus1": false
+  }
+ },
+ "gamma_powers_on_disc(even sublattice)": {
+  "1": {
+   "plus1": false,
+   "minus1": false
+  },
+  "2": {
+   "plus1": true,
+   "minus1": false
+  },
+  "3": {
+   "plus1": false,
+   "minus1": false
+  },
+  "4": {
+   "plus1": true,
+   "minus1": false
+  },
+  "5": {
+   "plus1": false,
+   "minus1": false
+  },
+  "6": {
+   "plus1": true,
+   "minus1": false
+  },
+  "7": {
+   "plus1": false,
+   "minus1": false
+  },
+  "8": {
+   "plus1": true,
+   "minus1": false
+  },
+  "9": {
+   "plus1": false,
+   "minus1": false
+  },
+  "10": {
+   "plus1": true,
+   "minus1": false
+  },
+  "11": {
+   "plus1": false,
+   "minus1": false
+  },
+  "12": {
+   "plus1": true,
+   "minus1": false
+  }
+ },
+ "M_t k=2: g on disc": {
+  "plus1": false,
+  "minus1": false
+ },
+ "M_t k=2: g^2 on disc": {
+  "plus1": true,
+  "minus1": false
+ },
+ "M_t k=3: g on disc": {
+  "plus1": false,
+  "minus1": false
+ },
+ "M_t k=3: g^2 on disc": {
+  "plus1": true,
+  "minus1": false
+ },
+ "M_t k=4: g on disc": {
+  "plus1": false,
+  "minus1": false
+ },
+ "M_t k=4: g^2 on disc": {
+  "plus1": true,
+  "minus1": false
+ },
+ "Weil_Z5_even_dim3": {
+  "group_order(numerical closure)": 120,
+  "order_mod_scalars": 81
+ },
+ "Weil_Z5_odd_dim2": {
+  "group_order(numerical closure)": 120,
+  "order_mod_scalars": 67
+ },
+ "5399_isprime": true,
+ "2cos(2pi*10/5399) degree": 2699
+}
