@@ -1,0 +1,47 @@
+%=====================================================================
+\section{Revision 8: reproducibility of the new checks, corrections and changelog (19 October 2026)}\label{app:rev8}
+%=====================================================================
+Revision~8 adds \S\ref{sec:rev8k3} and \S\ref{sec:rev8impl}. No earlier file is edited, renamed or deleted; revision~8 is built locally only and is not pushed. CORE\_FREEZE holds: the locked $H_s$ ($c_1=(-1,1)$, $c_2=(-4,1)$) is unchanged and $H_s^{\rm axes}$ is a parallel object. No claim is made concerning HQCC termination, the twin prime conjecture or the Riemann hypothesis.
+
+\subsection{Scripts and outputs}\label{app:rev8scripts}
+All paths are relative to \path{/workspace/quantum-comp/reports/heavy-daily/2026-10-19-Implications-checks/}.
+\begin{center}\small
+\begin{longtable}{p{4.1cm}p{3.9cm}p{6.5cm}}\toprule
+script & output & content (used in)\\\midrule\endhead
+\texttt{checks.py} & \texttt{checks.json} & IC-2 (two $P_s$), IC-4 (multi-$k$ Thm.~3.1, seed discriminants, \texttt{polgalois}), IC-5 (no $-2$, anisotropy), IC-6 ($\gamma$ on discriminant groups), IC-7 ($5399$ prime, degree $2699$) (Prop.~\ref{prop:ic12}, \S\S\ref{sec:rev8multik}, \ref{sec:rev8K3impl}, Thm.~\ref{thm:K3exist8}(iii))\\
+\texttt{cvals.py} & \texttt{cvals.json} & IC-1: exact coefficients of $C$ at $s=7$ to $q^{419}$ (Prop.~\ref{prop:ic12}(i))\\
+\texttt{weil5.py} & \texttt{weil5.json} & IC-3: floating group closure on $W_5^\pm$ (Category~B; \S\ref{sec:rev8multik})\\
+\texttt{k3\_140/rev\_exact.py} & \texttt{rev\_s7\_exact.pkl} & exact label operators $S_{\rm lab}$, $T_{\rm lab}$ at $s=7$, convention $Y[i,j(i)]$\\
+\texttt{k3\_140/lattices.py} & \texttt{lattices.json}, \texttt{rev\_spec.pkl} & $T$-spectrum comparisons (Thm.~\ref{thm:weil8}(iii))\\
+\texttt{k3\_140/intertwine.py} & \texttt{intertwine.json}, \texttt{X\_modl.pkl} & relations and Hom dimensions mod $\ell=840841$ (Prop.~\ref{prop:hom8})\\
+\texttt{k3\_140/explicit.py} & \texttt{explicit.json}, \texttt{X\_explicit.pkl} & sparse exact intertwiner (second solution; lift data used by \texttt{closed\_exact.py})\\
+\texttt{k3\_140/formula.py}, \texttt{pure\_test.py} & --- & closed-form search and test (exploratory; not needed for any statement)\\
+\texttt{k3\_140/closed\_exact.py} & \texttt{closed\_exact.json} & exact $\Z[\zeta_{280}]$ check of $X$; $\bar\gamma$ on local parts; explicit $T$ (Thm.~\ref{thm:weil8}, Props.~\ref{prop:disc8}, \ref{prop:T8}, \ref{prop:gamma8})\\
+\texttt{k3\_140/aut.py} & \texttt{aut.json} & $O(N_2)$ action on $A_{N_2}$ and on the positive cone (Prop.~\ref{prop:gamma8}(iii))\\\bottomrule
+\end{longtable}
+\end{center}
+\textbf{Dependencies.} Python~3 with \texttt{sympy} and \texttt{numpy}; \texttt{checks.py} also uses PARI/GP through \texttt{cypari2}. \texttt{rev\_exact.py} imports the read-only \texttt{family\_s.py} from \path{2026-10-18-Open-Algebraic/} (unmodified; subclassed only). The scripts write their outputs into the current directory.
+
+\textbf{Reproduce command.}
+\begin{verbatim}
+cd 2026-10-19-Implications-checks
+python3 checks.py && python3 cvals.py && python3 weil5.py
+cd k3_140 && python3 rev_exact.py && python3 lattices.py \
+  && python3 intertwine.py && python3 explicit.py \
+  && python3 closed_exact.py && python3 aut.py
+\end{verbatim}
+Because the scripts overwrite their outputs in place, the revision-8 re-run was made on a scratch copy of the folder (\path{/tmp/rev8repro/}), leaving the originals untouched.
+
+\textbf{Re-run result (19 October 2026, 09:29--09:32 CDT).} Python~3.13.5, sympy~1.14.0, numpy~2.5.4. All nine scripts exited with status~$0$ (total wall time about $50$\,s: \texttt{lattices} $13$\,s, \texttt{intertwine} $26$\,s, \texttt{explicit} $8$\,s, the others $\le2$\,s). All eight JSON outputs and all four pickles were \emph{byte-identical} to the stored files.
+
+\subsection{Corrections and supersessions}
+\begin{enumerate}[label={R8.\arabic*},leftmargin=3em]
+\item \textbf{Scope of K3 statements.} [S39] (\S4, IC-6) treated $N_1=(\Z^2,2A)$ and $N_2$ (and $M_t$) as K3 candidates. The $140$-label representation is $\rho_{N_2}$, not $\rho_{N_1}$ (Theorem~\ref{thm:weil8}); every K3 statement here is for $N_2$ only ([S38], \S6).
+\item \textbf{Resolved (Category~B $\to$ A).} [S39]'s hypothesis that the label representation is the Weil representation of an order-$140$ discriminant form (``possibly $\rho_L$ or $\rho_L^*$'') is resolved: $\rho_{\rm rev}\cong\rho_{N_2}\cong\rho_T^*$, with an explicit intertwiner.
+\item \textbf{IC-1.} The coefficient set $\{0,1,\tfrac32\}$ of $C$ holds only through $q^{101}$; $[q^{102}]C=2$, $[q^{144}]C=3$ (consistent with item~4 of \S\ref{sec:recon}).
+\item \textbf{IC-2.} Two different series are called $P_s$ in the RTA manuscript; this paper uses only the orthant series.
+\item \textbf{Corpus corrections (Category~B notes).} $H^3(\mathrm{K3};\Z)=0$; $2\cos(2\pi/539.9)$ is algebraic of degree $2699$ as printed.
+\item \textbf{Source typo.} [S38] gives the entropy as ``$\approx4.93$''; the value of $2\log(6+\sqrt{35})$ is $4.9558\ldots$ (Theorem~\ref{thm:aut8}).
+\item \textbf{Superseded output.} The entries \texttt{Weil\_Z5\_even\_dim3}, \texttt{Weil\_Z5\_odd\_dim2} of \texttt{checks.json} (``order\_mod\_scalars'' $81$, $67$) are superseded by \texttt{weil5.json} (quotients of order $60$); only the latter is quoted, as Category~B.
+\item \textbf{Added:} \S\ref{sec:rev8k3} (Propositions~\ref{prop:disc8}, \ref{prop:hom8}, \ref{prop:T8}, \ref{prop:gamma8}; Theorems~\ref{thm:weil8}, \ref{thm:K3exist8}, \ref{thm:aut8}; Corollary~\ref{cor:T8}; Remarks~\ref{rem:twist8}, \ref{rem:open8}); \S\ref{sec:rev8impl} (Propositions~\ref{prop:noscalar8}, \ref{prop:weight8}, \ref{prop:ic12}, \ref{prop:s7role8}; Remarks~\ref{rem:samples8}, \ref{rem:holproj8}); this appendix; sources [S38], [S39]; references \cite{Nikulin}, \cite{Morrison}, \cite{Huybrechts}, \cite{GY}. All new labels are numbered within their sections; none is lettered, none is ``Theorem~L'', and none collides with L1--L7.
+\end{enumerate}
