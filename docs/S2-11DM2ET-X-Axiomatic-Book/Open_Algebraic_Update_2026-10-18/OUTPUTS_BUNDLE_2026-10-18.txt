@@ -1,0 +1,239 @@
+# OUTPUTS BUNDLE — Open_Algebraic_Update_2026-10-18 (2026-10-18)
+# The text outputs (json/log/txt/sha256) of this package, concatenated verbatim, one member per file.
+# Reports (.md) and scripts (.py/.sh) are stored as separate files in this folder. Binary files (pkl/npz/npy), .bak backups, __pycache__ and empty logs are excluded; they are listed under 'Excluded' below with size and sha256.
+# Reason for bundling: the push tool accepts at most 4 file attachments per commit; bundling keeps the commit count modest.
+# Member format: a line "===== BEGIN FILE <relative path> bytes=<n> sha256=<hex> =====", then exactly <n> bytes, then "\n===== END FILE <relative path> =====".
+# Extract (Python 3, run in this folder):
+#   import hashlib,os,re; d=open('OUTPUTS_BUNDLE_2026-10-18.txt','rb').read(); i=0
+#   for m in re.finditer(rb'===== BEGIN FILE (\S+) bytes=(\d+) sha256=([0-9a-f]+) =====\n', d):
+#       if m.start()<i: continue
+#       p,n,h=m.group(1).decode(),int(m.group(2)),m.group(3).decode(); b=d[m.end():m.end()+n]; i=m.end()+n
+#       assert hashlib.sha256(b).hexdigest()==h; os.makedirs(os.path.dirname(p) or '.',exist_ok=True); open(p,'wb').write(b)
+# Members: 8
+# Excluded (not in repository; available on request):
+#   krylov25.log  bytes=0  sha256=empty
+# Member list:
+#   commutant_11.json
+#   commutant_9.json
+#   hcount_17.json
+#   hcount_31.json
+#   hcount_3_5_7_9_15_17.json
+#   hcount_7.json
+#   krylov_irr_11.json
+#   krylov_irr_9.json
+
+===== BEGIN FILE commutant_11.json bytes=230 sha256=4dbceca675851ead18abe415394dc58f421553eee27d1a91d5c8dd7921b7a6a8 =====
+{
+ "s": 11,
+ "max_commutator_with_S": 0.19795380650754474,
+ "sectors": [
+  {
+   "eps": [
+    1,
+    1
+   ],
+   "dim": 90,
+   "commutant_dim": 1
+  },
+  {
+   "eps": [
+    -1,
+    -1
+   ],
+   "dim": 20,
+   "commutant_dim": 1
+  }
+ ]
+}
+===== END FILE commutant_11.json =====
+===== BEGIN FILE commutant_9.json bytes=229 sha256=0a9a1570967ed17f13e325653ca86cae435689bb87f43ffdac734c753af31a52 =====
+{
+ "s": 9,
+ "max_commutator_with_S": 0.24565874303319277,
+ "sectors": [
+  {
+   "eps": [
+    1,
+    1
+   ],
+   "dim": 60,
+   "commutant_dim": 2
+  },
+  {
+   "eps": [
+    -1,
+    -1
+   ],
+   "dim": 12,
+   "commutant_dim": 1
+  }
+ ]
+}
+===== END FILE commutant_9.json =====
+===== BEGIN FILE hcount_17.json bytes=381 sha256=403f47d51e000ed53370ce7af55e82ebe2d4f6bb91022c6f3bf06bf415f6eac7 =====
+[
+ {
+  "m": 17,
+  "s": 578,
+  "isotropic": true,
+  "gMt_eq_Mt": true,
+  "h_isometry": true,
+  "h_sq_g": true,
+  "hM_eq_M": true,
+  "M_basis": "[[6, 1], [0, 1/17]]",
+  "M_gram": "[[72, 216], [216, 72]]",
+  "|M#/M|": 41472,
+  "enumerated": 41472,
+  "n_old_classes": 1152,
+  "dim_F": 578,
+  "rank_g": 306,
+  "classorbits_g": 306,
+  "rank_h": 300,
+  "predicted_extra_relations": 6
+ }
+]
+===== END FILE hcount_17.json =====
+===== BEGIN FILE hcount_31.json bytes=388 sha256=71aad280417fda112ecd528998e11c9bbbc2e286646ad56fc88772d3e74a8a10 =====
+[
+ {
+  "m": 31,
+  "s": 1922,
+  "isotropic": true,
+  "gMt_eq_Mt": true,
+  "h_isometry": true,
+  "h_sq_g": true,
+  "hM_eq_M": true,
+  "M_basis": "[[8, 1], [0, 1/31]]",
+  "M_gram": "[[128, 512], [512, 128]]",
+  "|M#/M|": 245760,
+  "enumerated": 245760,
+  "n_old_classes": 3840,
+  "dim_F": 1922,
+  "rank_g": 992,
+  "classorbits_g": 992,
+  "rank_h": 980,
+  "predicted_extra_relations": 12
+ }
+]
+===== END FILE hcount_31.json =====
+===== BEGIN FILE hcount_3_5_7_9_15_17.json bytes=421 sha256=f6c10fa016721ee0ae20f2f67f1ba010d4408f926f65d704ff6c0678d4062d6a =====
+[
+ {
+  "m": 3,
+  "s": 18,
+  "isotropic": true,
+  "gMt_eq_Mt": true
+ },
+ {
+  "m": 5,
+  "s": 50,
+  "isotropic": true,
+  "gMt_eq_Mt": true
+ },
+ {
+  "m": 7,
+  "s": 98,
+  "isotropic": true,
+  "gMt_eq_Mt": true
+ },
+ {
+  "m": 9,
+  "s": 162,
+  "isotropic": true,
+  "gMt_eq_Mt": true
+ },
+ {
+  "m": 15,
+  "s": 450,
+  "isotropic": true,
+  "gMt_eq_Mt": true
+ },
+ {
+  "m": 17,
+  "s": 578,
+  "isotropic": true,
+  "gMt_eq_Mt": true
+ }
+]
+===== END FILE hcount_3_5_7_9_15_17.json =====
+===== BEGIN FILE hcount_7.json bytes=369 sha256=539a84a541f688aa8716f81ce59b8dc22301561694f768628f8ebbb5d8a20115 =====
+[
+ {
+  "m": 7,
+  "s": 98,
+  "isotropic": true,
+  "gMt_eq_Mt": true,
+  "h_isometry": true,
+  "h_sq_g": true,
+  "hM_eq_M": true,
+  "M_basis": "[[4, 1], [0, 1/7]]",
+  "M_gram": "[[32, 64], [64, 32]]",
+  "|M#/M|": 3072,
+  "enumerated": 3072,
+  "n_old_classes": 192,
+  "dim_F": 98,
+  "rank_g": 56,
+  "classorbits_g": 56,
+  "rank_h": 54,
+  "predicted_extra_relations": 2
+ }
+]
+===== END FILE hcount_7.json =====
+===== BEGIN FILE krylov_irr_11.json bytes=265 sha256=221599c56911824d4fe512ee7b78281be4c093b269b6d3e0131d65d6f47b167e =====
+{
+ "s": 11,
+ "sectors": [
+  {
+   "eps": [
+    1,
+    1
+   ],
+   "dim": 90,
+   "n_simple_T_eigs": 78,
+   "cyclic_span_dims": [
+    90
+   ]
+  },
+  {
+   "eps": [
+    -1,
+    -1
+   ],
+   "dim": 20,
+   "n_simple_T_eigs": 20,
+   "cyclic_span_dims": [
+    20
+   ]
+  }
+ ]
+}
+===== END FILE krylov_irr_11.json =====
+===== BEGIN FILE krylov_irr_9.json bytes=264 sha256=159debea076ba955e2a2da60f3c8e240442e0839282fc7a7267491919df621b1 =====
+{
+ "s": 9,
+ "sectors": [
+  {
+   "eps": [
+    1,
+    1
+   ],
+   "dim": 60,
+   "n_simple_T_eigs": 36,
+   "cyclic_span_dims": [
+    48
+   ]
+  },
+  {
+   "eps": [
+    -1,
+    -1
+   ],
+   "dim": 12,
+   "n_simple_T_eigs": 12,
+   "cyclic_span_dims": [
+    12
+   ]
+  }
+ ]
+}
+===== END FILE krylov_irr_9.json =====
