@@ -1,0 +1,64 @@
+--- rev7/bridge_c_consolidated_rev7.tex
++++ rev8/bridge_c_consolidated_rev8.tex
+@@ -50,7 +50,7 @@
+ \title{The Bridge Series $C$ residual: real-quadratic structure over $\Q(\sqrt{35})$,\\
+ a Baker obstruction, and an explicit vector-valued\\ quantum modular law}
+ \author{Arvin Hampton\\ \small 539 Labs}
+-\date{Consolidated write-up, 19 October 2026 --- revision 7\\ \small (internal working paper; not externally refereed)}
++\date{Consolidated write-up, 19 October 2026 --- revision 8\\ \small (internal working paper; not externally refereed)}
+ 
+ \begin{document}
+ \maketitle
+@@ -87,7 +87,7 @@
+ Gauss-sum formula for the dual cone sum $E_R$. The cusp rows at rationals are shown numerically to
+ be finite combinations of Hecke $L$-values at $s=0$. Every statement is labelled Category A (proved, or exact,
+ including exact finite computation) or Category B (floating-point or PSLQ evidence only, identification by citation only,
+-interpretation, or conjecture); revision~4 applies this convention uniformly. Revision~5 (\S\ref{sec:rev5}) proves the two-dimensional Euler--Maclaurin input F1, makes the E-part cocycle (with the $140$-label vector law) Category~A, proves the $u_L$ coset property for all $s$ and the squarefree criterion $h=2^{\omega(s)}$, and proves $\dim V=2406$ at $s=98$. Revision~7 (\S\ref{sec:rev7}) proves that the extra $h$-relations number exactly $k(k-1)$ at $m=2k^2-1$ (Proposition~K1), derives $7s-32=-2Q(c_2)$ from the lattice, shows that only the factor $s-2$ of $\Delta$ is intrinsic while $7s-32$ is tied to the locked cone edge $c_2=(-4,1)$, gives exact closed forms through $t^{13/2}$ for the parallel axes-cone object $H_s^{\rm axes}$ with a wall-independent universal piece, and adds $t^{15/2}$, $t^{17/2}$ and the even-$N$ Gauss data. No claim is made concerning HQCC termination, the twin prime conjecture, or the Riemann
++interpretation, or conjecture); revision~4 applies this convention uniformly. Revision~5 (\S\ref{sec:rev5}) proves the two-dimensional Euler--Maclaurin input F1, makes the E-part cocycle (with the $140$-label vector law) Category~A, proves the $u_L$ coset property for all $s$ and the squarefree criterion $h=2^{\omega(s)}$, and proves $\dim V=2406$ at $s=98$. Revision~7 (\S\ref{sec:rev7}) proves that the extra $h$-relations number exactly $k(k-1)$ at $m=2k^2-1$ (Proposition~K1), derives $7s-32=-2Q(c_2)$ from the lattice, shows that only the factor $s-2$ of $\Delta$ is intrinsic while $7s-32$ is tied to the locked cone edge $c_2=(-4,1)$, gives exact closed forms through $t^{13/2}$ for the parallel axes-cone object $H_s^{\rm axes}$ with a wall-independent universal piece, and adds $t^{15/2}$, $t^{17/2}$ and the even-$N$ Gauss data. Revision~8 (\S\S\ref{sec:rev8k3}--\ref{sec:rev8impl}, Appendix~\ref{app:rev8}) proves that the $140$-label representation is isomorphic to the Weil representation of the even lattice $N_2=\{x\in\Z^2:x_2\text{ even}\}$ (explicit intertwiner, exact in $\Z[\zeta_{280}]$), hence to the dual Weil representation of $T=\langle-2\rangle\oplus\langle70\rangle\oplus U\oplus E_8(-1)^2$, the transcendental lattice of an $N_2$-polarised K3 surface; it records, conditional on cited theorems, the K3 surfaces and their automorphisms, and states the implications for the Residual Ternary Algebra, fifth-order unification, even multi-$k$ and K3, with corrections. No claim is made concerning HQCC termination, the twin prime conjecture, or the Riemann
+ hypothesis.
+ \end{abstract}
+ 
+@@ -1335,6 +1335,7 @@
+ \input{rev5_sec}
+ \input{rev6_sec}
+ \input{rev7_sec}
++\input{rev8_sec}
+ 
+ %=====================================================================
+ \section{Status and dependencies}\label{sec:status}
+@@ -1728,13 +1729,14 @@
+ \input{rev5_app}
+ \input{rev6_app}
+ \input{rev7_app}
++\input{rev8_app}
+ 
+ %=====================================================================
+ \section*{Source reports}\label{sec:sources}
+ %=====================================================================
+ \addcontentsline{toc}{section}{Source reports}
+ All in \path{/workspace/quantum-comp/reports/heavy-daily/}, with scripts and outputs in the companion folders. [S14] and [S15] were added in revision~3,
+-[S16]--[S27] in revision~4, [S28]--[S31] in revision~5, [S32]--[S35] in revision~6, [S36]--[S37] in revision~7. Repository copies of [S16]--[S27] are listed in \path{PUSH_LOG_2026-10-18_Rev4.md}.
++[S16]--[S27] in revision~4, [S28]--[S31] in revision~5, [S32]--[S35] in revision~6, [S36]--[S37] in revision~7, [S38]--[S39] in revision~8. Repository copies of [S16]--[S27] are listed in \path{PUSH_LOG_2026-10-18_Rev4.md}.
+ \begin{enumerate}[label={[S\arabic*]},leftmargin=3em]
+ \item \texttt{2026-10-17-Bridge-C-Residual-Law.md} (obstructions; identities).
+ \item \path{2026-10-17-P_s-Structure.md} (decomposition; ray class; asymptotics; Gauss pattern).
+@@ -1773,6 +1775,8 @@
+ \item \texttt{2026-10-18-AtkinLehner-Local.md} (local root numbers at $s=7$) (rev.~6).
+ \item \texttt{2026-10-18-Analytic-CatB-Push.md}, sections from ``Continuation~2'' on (D.0--D.4, E.0--E.3, Round~3, Round~4), and the new files of its folder (general-formula checks; even $N$; $x=\tfrac14,\tfrac16$; $t^{15/2}$, $t^{17/2}$; $S_e$ structure; comparison with the axes forms) (rev.~7).
+ \item \texttt{2026-10-18-Algebraic-Round3.md} and folder (Proposition~K1; origin of $7s-32$; Weil representations; cone choice; $H_s^{\rm axes}$) (rev.~7).
++\item \path{2026-10-19-K3-140-check.md} and folder \path{2026-10-19-Implications-checks/k3_140/} (Weil realisation of the 140-label representation by $N_2$; explicit intertwiner; transcendental lattice; K3 existence and automorphisms; items K-1--K-9) (rev.~8).
++\item \path{2026-10-19-Implications-Unification-RTA-multik-K3.md} and folder \path{2026-10-19-Implications-checks/} (implications for fifth-order unification, the Residual Ternary Algebra, even multi-$k$ and K3; checks IC-1--IC-7; its \S4 and IC-6 are corrected by [S38], \S6) (rev.~8).
+ \end{enumerate}
+ Repository errata (read-only, \path{ArvinHampton/539-Labs-Master}): \path{ERRATUM_Bridge_C_Decomposition_and_Samples_2026-10-17.md},
+ \path{ERRATUM_Bridge_C_tminushalf_Coefficient_2026-10-17.md}, \path{ERRATUM_psi_Cocycle_Component_Count_2026-10-17.md},
+@@ -1795,6 +1799,10 @@
+ \bibitem{Zw12} S.~Zwegers, Mock Maass theta functions, \emph{Q. J. Math.} \textbf{63} (2012), 753--770. [Abstract and review read in \src{24}; used via the restatement in \cite{BCN}; the paper itself was not read.]
+ \bibitem{BCN} K.~Bringmann, W.~Craig, C.~Nazaroglu, arXiv:2409.17818, \S2.2. [Restatement of Zwegers' 2012 Lemma~2.4, read in \src{25}.]
+ \bibitem{Weil} A.~Nobs, J.~Wolfart (1976); N.-P.~Skoruppa; F.~Str\"omberg, Weil representations associated with finite quadratic modules, \emph{Math. Z.} \textbf{275} (2013). [Congruence and tensor-product properties of Weil representations of finite quadratic modules of odd order; cited in \src{18}, \src{19}; convention checked against the exact $s=7$ relations, not line by line against the published text.]
++\bibitem{Nikulin} V.~V.~Nikulin, Integral symmetric bilinear forms and some of their applications, \emph{Izv. Akad. Nauk SSSR Ser. Mat.} \textbf{43} (1979); English transl. \emph{Math. USSR Izv.} \textbf{14} (1980). [Prop.~1.6.1, Cor.~1.5.2, Thm.~1.14.4 used in \S\ref{sec:rev8k3}; theorem numbers checked against secondary sources only, as reported in \src{38}.]
++\bibitem{Morrison} D.~R.~Morrison, On K3 surfaces with large Picard number, \emph{Invent. Math.} \textbf{75} (1984), 105--121. [Cor.~2.9(i) used in \S\ref{sec:rev8geom}; number checked against secondary sources only.]
++\bibitem{Huybrechts} D.~Huybrechts, \emph{Lectures on K3 Surfaces}, Cambridge Stud. Adv. Math. \textbf{158}, Cambridge University Press, 2016. [Strong Torelli theorem (Thm.~7.5.3, as cited in \src{38}); ample cone and elliptic fibrations; not re-read for this revision.]
++\bibitem{GY} M.~Gromov, On the entropy of holomorphic maps, \emph{Enseign. Math.} \textbf{49} (2003); Y.~Yomdin, Volume growth and entropy, \emph{Israel J. Math.} \textbf{57} (1987). [Entropy $=$ log of the spectral radius on cohomology for automorphisms of compact K\"ahler surfaces; cited by name, not re-checked.]
+ \end{thebibliography}
+ 
+ \end{document}
