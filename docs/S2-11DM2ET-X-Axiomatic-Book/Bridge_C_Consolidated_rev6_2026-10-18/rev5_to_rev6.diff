@@ -1,0 +1,167 @@
+--- 2026-10-18-Bridge-C-Consolidated-rev5/bridge_c_consolidated_rev5.tex	2026-10-18 19:53:57.057990638 -0500
++++ 2026-10-18-Bridge-C-Consolidated-rev6/bridge_c_consolidated_rev6.tex	2026-10-18 22:08:24.826435368 -0500
+@@ -48,7 +48,7 @@
+ \title{The Bridge Series $C$ residual: real-quadratic structure over $\Q(\sqrt{35})$,\\
+ a Baker obstruction, and an explicit vector-valued\\ quantum modular law}
+ \author{Arvin Hampton\\ \small 539 Labs}
+-\date{Consolidated write-up, 18 October 2026 --- revision 5\\ \small (internal working paper; not externally refereed)}
++\date{Consolidated write-up, 18 October 2026 --- revision 6\\ \small (internal working paper; not externally refereed)}
+ 
+ \begin{document}
+ \maketitle
+@@ -1331,6 +1331,7 @@
+ 
+ %=====================================================================
+ \input{rev5_sec}
++\input{rev6_sec}
+ 
+ %=====================================================================
+ \section{Status and dependencies}\label{sec:status}
+@@ -1722,13 +1723,14 @@
+ 
+ %=====================================================================
+ \input{rev5_app}
++\input{rev6_app}
+ 
+ %=====================================================================
+ \section*{Source reports}\label{sec:sources}
+ %=====================================================================
+ \addcontentsline{toc}{section}{Source reports}
+ All in \path{/workspace/quantum-comp/reports/heavy-daily/}, with scripts and outputs in the companion folders. [S14] and [S15] were added in revision~3,
+-[S16]--[S27] in revision~4, [S28]--[S31] in revision~5. Repository copies of [S16]--[S27] are listed in \path{PUSH_LOG_2026-10-18_Rev4.md}.
++[S16]--[S27] in revision~4, [S28]--[S31] in revision~5, [S32]--[S35] in revision~6. Repository copies of [S16]--[S27] are listed in \path{PUSH_LOG_2026-10-18_Rev4.md}.
+ \begin{enumerate}[label={[S\arabic*]},leftmargin=3em]
+ \item \texttt{2026-10-17-Bridge-C-Residual-Law.md} (obstructions; identities).
+ \item \path{2026-10-17-P_s-Structure.md} (decomposition; ray class; asymptotics; Gauss pattern).
+@@ -1761,6 +1763,10 @@
+ \item \texttt{2026-10-18-Open-Analytic.md} (F1 proved; $H_s$ at $x=\tfrac12,\tfrac13$, $t^{9/2}$; $\Cthird$ weight-$1$/weight-$0$) (rev.~5).
+ \item \texttt{2026-10-18-uL-Criterion-Closure.md} (Chevalley/genus count; coverage; coset property, \S3A) (rev.~5).
+ \item \texttt{2026-10-18-Cocycle-Closure.md} ($C=-\pi/2$; boundary step; vector law, \S3A; numerics, \S3B) (rev.~5).
++\item \texttt{2026-10-18-Symmetry-Audit.md} and folder (transpose root cause; exact splits; Erratum~2) (rev.~6).
++\item \texttt{2026-10-18-Open-Algebraic.md}, sections after 19:37 CDT (prime-square theorem; $s=49$; $h$-relation data; $s=121$ factor dimensions; the 21:15 section is superseded) (rev.~6).
++\item \texttt{2026-10-18-Analytic-CatB-Push.md} and folder (period $72$; $t^{11/2}$, $t^{13/2}$; general $x=a/N$) (rev.~6).
++\item \texttt{2026-10-18-AtkinLehner-Local.md} (local root numbers at $s=7$) (rev.~6).
+ \end{enumerate}
+ Repository errata (read-only, \path{ArvinHampton/539-Labs-Master}): \path{ERRATUM_Bridge_C_Decomposition_and_Samples_2026-10-17.md},
+ \path{ERRATUM_Bridge_C_tminushalf_Coefficient_2026-10-17.md}, \path{ERRATUM_psi_Cocycle_Component_Count_2026-10-17.md},
+--- /dev/null	2026-10-18 19:52:17.817990638 -0500
++++ 2026-10-18-Bridge-C-Consolidated-rev6/rev6_sec.tex	2026-10-18 22:11:28.782435368 -0500
+@@ -0,0 +1,103 @@
++%=====================================================================
++\section{Revision 6: symmetry audit, prime-square sectors, $h$-relations, Gauss data and local root numbers (18 October 2026)}\label{sec:rev6}
++%=====================================================================
++This section adds the results produced after revision~5. The sources are [S32] (\path{2026-10-18-Symmetry-Audit.md}); [S33] (the sections of \path{2026-10-18-Open-Algebraic.md} after 19:37 CDT); [S34] (\path{2026-10-18-Analytic-CatB-Push.md}); and [S35] (\path{2026-10-18-AtkinLehner-Local.md}).
++Category convention as in \S\ref{sec:cat}: Category~A is proved or exact; floating-point-only is Category~B. New labels are numbered within this section. None of them is a lettered theorem or ``Theorem~L'' (the framework's Parity Dominance Theorem), none collides with L1--L7, and Lemma~R of rev.~4 keeps its meaning. Two labels of [S34] are renamed here: its ``Theorem~L'' (CRT factorisation) is Proposition~\ref{prop:crt6}, and its ``Lemma~R'' ($q$-adic reduction) is Lemma~\ref{lem:qred6}. No claim is made concerning HQCC termination, the twin prime conjecture or the Riemann hypothesis. CORE\_FREEZE is respected.
++
++\subsection{Symmetry audit of the label operators}\label{sec:rev6audit}
++\begin{proposition}[Operator audit \src{32}]\label{prop:audit6}
++In the label family for odd $s$, build each label map with the convention $Y[i,j(i)]=\e(\mathrm{ph}_i)$, which is that of the family's permutation matrix. Then $\mathrm{neg}=\rho(-I)=S^2$, and $\mathrm{neg}$, $\gamma$, $Z_p$ ($p\mid s$) and $Z_q$ ($q\mid s-2$) all commute exactly with $S$ and $T$.
++\end{proposition}
++\catA{Exact exponent arithmetic modulo $K=2D^2$ at $s=5,7,9,11,13,15,25$. The transposed convention $X[j(i),i]$, which was used by \texttt{commutant.py}, \texttt{krylov\_irr.py} and \texttt{sec\_sparse}/\texttt{sec\_valid}, breaks $\mathrm{neg}$ and $Z_q$. $\gamma$ and $Z_p$ pass in both conventions.}
++\noindent\textbf{Consequences.} Every rev.~4/rev.~5 claim that uses $\mathrm{neg}$ or $Z_q$ is \emph{sound}:
++\begin{center}\small
++\begin{tabular}{p{7.2cm}l}\toprule
++claim & verdict\\\midrule
++$V=A_3\otimes X^+\oplus B_1\otimes X^-$ at $s=7$ (Prop.~\ref{prop:matched}, Thm.~\ref{thm:tensorodd}) & sound\\
++odd-parity sectors are cusp (Prop.~\ref{prop:oddcusp5}); $d_{\rm cusp}\ge(s-1)(s-3)/4$ & sound\\
++$\varepsilon_{\rm all}=-1$ sectors vanish (Prop.~\ref{prop:parity5}) & sound\\
++corrected orbit lemma (Prop.~\ref{prop:orbit5}) & sound\\
++$u_L$ criterion (\S\ref{sec:rev5uL}) & unaffected\\
++$s=7$ Atkin--Lehner sector signs (post-push erratum (c)) & sound\\
++prime-square ranks and injectivity (Prop.~\ref{prop:psq5}) & sound\\
++Prop.~\ref{prop:psq5} ``old/new pieces'' & sound; reworded (\S\ref{sec:rev6psq})\\
++post-push erratum item (a) & \textbf{wrong in part} (Erratum~2, Appendix~\ref{app:rev6})\\\bottomrule
++\end{tabular}\end{center}
++The 21:15 CDT ``retraction'' section of [S33] was itself produced by the transpose bug. It is \emph{superseded}, is not a result, and is not used here.
++
++\subsection{Prime-square sectors}\label{sec:rev6psq}
++Let $s=p^2$ with $p$ an odd prime. Write $W_p^\pm$ for the even and odd parts of the Weil representation of $\Z/p^2$ (or of $\Z/q$), and $A_3$ for the irreducible $3$-dimensional $2$-adic factor (rev.~4).
++\begin{theorem}[Prime-square structure \src{33}, 21:51 update]\label{thm:psq6}
++Assume (C1) Theorem~\ref{thm:tensorodd} and (C2) CRT surjectivity, both from rev.~4, and (C3) the cited Nobs--Wolfart / Cliff--McNeilly--Szechtman decomposition $W_p^+=\mathbf 1\oplus R$, with $R$ irreducible of dimension $(p^2-1)/2$, and $W_q^\pm$ irreducible for primes $q$. Let $\varepsilon=(\varepsilon_q)_{q\mid s-2}$, with $Z_{(s)}=+$. Then:
++\begin{enumerate}[label=(\roman*)]
++\item The sector is $\Sigma_\varepsilon=W_p^+\otimes(\bigotimes_qW_q^{\varepsilon_q})\otimes A_3$. Its $p$-local invariants are $\mathbf 1\otimes(\bigotimes_qW_q^{\varepsilon_q})\otimes A_3$. Summed over the $\varepsilon$ with $Z_{(s-2)}=+$, these have total dimension $3(s-1)/2$.
++\item If $s-2$ is squarefree, then $\Sigma_\varepsilon=(\text{$p$-local invariants})\oplus R\otimes(\bigotimes_qW_q^{\varepsilon_q})\otimes A_3$ is a sum of two non-isomorphic irreducibles.
++\end{enumerate}
++\end{theorem}
++\catA{Conditional on (C3), which is cited and not re-proved; (C1) and (C2) are Category~A in rev.~4. Irreducibility of the complement follows from the outer-tensor argument. \emph{Caveats:} if $s-2$ is composite, the sector splits by prime sign (see $s=121$ below). If $q^2\mid s-2$, the complement is reducible.}
++\begin{proposition}[Exact splits \src{32,33}]\label{prop:splits6}
++The ``$(+,+)$'' sectors split as follows: $s=9$: $12+48$; $s=11$: $18+72$; $s=25$: $36+432$; $s=49$: $72+1728$. In each case the commutant is $2$ and the smaller piece is exactly the $p$-local invariant subspace. The $(-,-)$ sectors at $s=9,11,25$ (dimensions $12,20,132$) are irreducible, and the mixed sectors vanish.
++\end{proposition}
++\catA{The sectors are built in the correct convention, with an exact invariance certificate (0 failures). The commutant is computed mod $\ell$ on an exactly verified basis. It is lifted to $\C$ using $\ell\nmid|\mathrm{Mp}_2(\Z/N)|$; this divisibility is machine-checked (e.g.\ $s=49$: $\ell=1272914161$). \emph{Standard input, cited:} a Weil representation factors through $\mathrm{Mp}_2(\Z/\mathrm{ord}\,T)$. An outline of this is in [S33] (22:10): for $\gamma\in\Gamma(N)$, the cited Borcherds/Scheithauer $\Gamma_0(N)$ formula gives $\rho_D(\gamma)=\chi_D(\gamma)I$. It remains cited. After Proposition~\ref{prop:c3small6}, the splits at $s=9,25$ need neither this nor (C3). The $s=9,25,49$ splits agree with Theorem~\ref{thm:psq6}(ii), where $s-2=7,23,47$ is prime.}
++\catB{\emph{$s=121$, factor dimensions only (no label-space run).} The factor data are exact mod $\ell$: $\Z/121$ even $=1\oplus R_{60}$, odd $60$ irreducible; $\Z/7$: $4,3$; $\Z/17$: $9,8$. Combined with the cited tensor factorisation, they predict $p$-local invariants of $108$ in $(+,+,+)$ and $72$ in $(+,-,-)$, for a total of $180=3(s-1)/2$.}
++\begin{proposition}[(C3) for small $p$; non-squarefree $s-2$ \src{33}, 22:10 update]\label{prop:c3small6}
++For $p\in\{3,5,7,11,13,59\}$, the even Weil representation of $\Z/p^2$ is $\mathbf 1\oplus R$ with $R$ irreducible, and the odd part is irreducible. Together with (C1), this gives the $(+,+)$ decompositions at $s=9,25,49$ in characteristic~$0$ directly, without the $\ell\nmid|\mathrm{Mp}_2|$ lift.
++\end{proposition}
++\catA{The mod-$\ell$ commutant is $2$ (even part) or $1$ (odd part), on exactly verified bases, for both square classes. Semicontinuity bounds the characteristic-$0$ commutant above by the mod-$\ell$ one. The explicit invariant line $\delta_{p\Z/p^2}$ bounds it below by $2$. The general-$p$ case remains cited (Nobs--Wolfart / Cliff--McNeilly--Szechtman). The irreducibility of $1728$ at $s=49$ also uses $W_{47}^+$ irreducible (cited; not run).}
++\catB{\emph{Factor dimensions only:} $s=59^2=3481$, $s-2=7^2\cdot71$. The prediction is: in $(+,+,+)$, $p$-invariants $108+2592$ and complement $187920+4510080$ (reducible); in $(+,-,-)$, $2520$ and $4384800$; total $p$-invariants $5220=3(s-1)/2$. No label-space run.}
++\noindent\textbf{Rewording of Proposition~\ref{prop:psq5}.} ``Old'' means the $p$-local invariants, and ``new'' means their complement. Both are subrepresentations. The exact ranks, injectivity and $\nu_0$ statements of rev.~5 stand.
++
++\subsection{$h$-relations at $m=2k^2-1$}\label{sec:rev6h}
++\begin{proposition}[\src{33}, post-push erratum (d)]\label{prop:h6}
++Let $m=2k^2-1$ and $h=(g+I)/(2k)$. The extra $h$-relations number exactly $2,6,12$ at $k=2,3,4$ ($m=7,17,31$). These are proved relations, so they give upper bounds, e.g.\ $\dim V(578)\le83532$; at $m=7$ the count is the equality of Theorem~\ref{thm:s98}. Further exact data at $k=2,3,4$: there are $2k$ $h$-fixed closed orbits; the closed orbits number $m(m+1)=\mathrm{rank}_g$; and the difference span $\{V(O)-V(hO)\}$ has rank $2k(k^2-1)$.
++\end{proposition}
++\catA{Exact orbit-sum ranks (flint) and exact orbit counts. The matches with $2k$, $m(m+1)$ and $2k(k^2-1)$ are exact at three points each, but they are fits, not proofs. The difference span is \emph{not} $k(k-1)$.}
++\noindent\textbf{$h$-eigenspaces (22:10 update).} On $Y$ (the old $g$-orbits together with their $h$-images), $h$ is an involution with $\dim Y^\pm=(|Y|\pm2k)/2$, and $\mathrm{rank}(V|_{Y^+})=\mathrm{rank}_h$ exactly. At $k=2,3,4$ one also has $\ker^+=\ker^-$ exactly, hence $\mathrm{rank}^+-\mathrm{rank}^-=2k$. Then extra $=k(k-1)$ is equivalent to $\mathrm{rank}^++\mathrm{rank}^-=2(m(m+1)-k^2)$. These are exact data at three points; there is no proof.
++\catB{The general count $k(k-1)$ (three data points; no proof). Lower bounds at $m=17,31$ were not computed. The $g$-consistency for all odd $m$ is Category~A (post-push erratum (d)).}
++
++\subsection{Analytic: $x=\tfrac13$ period, $t^{11/2}$ and $t^{13/2}$, general $x=a/N$}\label{sec:rev6an}
++\begin{theorem}[Period $72$ at $x=\tfrac13$ \src{34}, \S1]\label{thm:p72}
++Let $\varepsilon=(-1)^{v_2(\gcd(s,8))}$. Then $ea$ depends only on $(s\bmod9,\varepsilon)$, so its period is $72$. Explicitly:
++\begin{itemize}[leftmargin=2em]
++\item for $s\not\equiv2\bmod3$: $ea=eb$ or $ea_r=(-1)^reb_r$, according to $b\equiv2$ or $1\bmod3$;
++\item for $s\equiv2\bmod9$: $ea=0$;
++\item for $s\equiv5\bmod9$: $ea=eb$ ($\varepsilon=-1$) or $(-1)^reb_r$ ($\varepsilon=+1$);
++\item for $s\equiv8\bmod9$: $ea_r=2^{2-r}i\sqrt3\sum_{c<3}\omega^{-\varepsilon c}\tilde B_r(c/3)$, which is $V$ for $\varepsilon=-1$ and $(-1)^rV_r$ for $\varepsilon=+1$.
++\end{itemize}
++\end{theorem}
++\catA{Elementary proof: reduction mod $3$, a reflection lemma, and the mod-$3$ Gauss sum. Exact check for $s=5,\dots,1000$ and $r\le10$. \textbf{Correction} to the rev.~5 wording (Proposition~\ref{prop:xthird}, from Open-Analytic \S1.5): the split is by $\varepsilon$, not by the parity of $s$ (e.g.\ $s=28,52$ have $ea=eb$), and ``$-V$'' should read $(-1)^rV_r$. This also replaces the Category~B ``mod $72$, four shapes'' statement of rev.~5 by a Category~A theorem.}
++\begin{proposition}[$t^{11/2}$, $t^{13/2}$ \src{34}, \S2]\label{prop:t1113}
++At $x=0$, $c_e=\sqrt{2\pi s}\,[R_e+S_e\sqrt\Delta]$ for $e=11,13$, with $R_{11}$ of denominator $5667972710400(s-2)^7$ and $R_{13}$ of denominator $136031345049600(s-2)^8$; both vanish at $s=5$. At $x=\tfrac12$ (even $s$):
++\[Rh_{11}=\tfrac{(s-4)(675691s^4-5253968s^3+14999488s^2-18628608s+8491008)}{94371840},\]
++and $Rh_{13}$ is likewise explicit, with a $[16\mid s]\sqrt\Delta$ part. At $x=\tfrac13$ the coefficients are given by the universal form with the Gauss data of Theorem~\ref{thm:p72}. The full expressions are in \texttt{closed\_P1\_K13.json}, \texttt{closed\_P4\_K13.json} and \texttt{hs\_coeffs.py}.
++\end{proposition}
++\catA{Exact symbolic coefficients at $K=13$ (identical to the $K=9$ ones through $t^{9/2}$). The $R+S\sqrt\Delta$ split is interpolated and re-verified at $10$ held-out values of $s$. \emph{Category~B support:} agreement with the term-by-term engine (to $\le3\cdot10^{-41}$ where the quadrature allows), and $60$-digit direct sums (relative error $10^{-14}$--$10^{-6}$).}
++\begin{proposition}[General $x=a/N$ \src{34}, \S3, C.1--C.3]\label{prop:crt6}
++\begin{enumerate}[label=(\roman*)]
++\item (Periodicity) $\gamma_0,G,eb$ depend only on $s\bmod N'$, and $H,ea$ only on $s\bmod24N'$, where $N'=N$ ($N$ odd) or $2N$ ($N$ even).
++\item (CRT factorisation) $H_{a/N}(c)=[2\text{ if $N$ odd}]\,T_2\prod_pT_{p^e}$, with local quadratic sums $T$. The Bernoulli-weighted $ea$ is linear in $H$ but does not factor.
++\item (Prime $p\ge5$, $p\nmid a\,s(s-2)(7s-32)$) $H(c)=2\big(\tfrac{aQ_2(u_2)}p\big)g_p\,\e\big(\tfrac ap[-g^2(c+\delta)^2/(2(7s-32))+c_0]\big)$.
++\item (Degenerate $p\ge5$) If $p\mid s$, $H(c)=2p\,\e(an_w^2c^2/p)$. If $p\mid s-2$, $ea=0$. If $p\mid7s-32$, $H$ is a delta at one class $c^*$, and $ea_r=2^{2-r}p\,\e(aQ_+(c^*w)/p)\tilde B_r(c^*/p)$.
++\item (Even $N$) The minimal periods of $s\mapsto H_{a/N}$ are $16,16,144,96$ for $N=2,4,6,8$. At $x=\tfrac14$, $ea=0$ unless $4\mid s$; $ea=eb=(0,\tfrac13-\tfrac i6,0,-\tfrac1{240}+\tfrac{7i}{1920},\dots)$ for $s\equiv0\bmod16$; and $ea=(0,\tfrac{1+i}{12},0,-\tfrac{1+i}{3840},\dots)$ for $s\equiv4,8,12\bmod16$.
++\end{enumerate}
++\end{proposition}
++\begin{lemma}[$q$-adic reduction \src{34}, C.2]\label{lem:qred6}
++For any prime $q$, a quadratic sum $\sum_{y\bmod q^n}\e((\alpha y^2+\beta y+\gamma)/q^n)$ reduces by $q^{v_q(\alpha)}$ to a unit-leading sum. The unit-leading sum is then evaluated by the odd-$q$ Gauss sum, or by the explicit $2$-adic formula. This gives a closed form for $H(c)$ for every $N$.
++\end{lemma}
++\catA{(i), (ii), (iii), (iv) and Lemma~\ref{lem:qred6} have elementary proofs. They were also checked exactly in $\Z[\zeta_L]$ against brute force: about $7\cdot10^4$, $6.2\cdot10^5$ and $7\cdot10^5$ tests, with $0$ mismatches. For (v), $144=\mathrm{lcm}(16,72)$ is explained by (ii). The periods $16$ and $96$ are proved by exhaustive exact check across the proved bound $48N$; there is only a partial conceptual reason for them. At $x=\tfrac14$ only the Gauss data ($ea,eb$) are given; the $t^{e/2}$ coefficients at $x=\tfrac14,\tfrac16$ were not computed.}
++
++\subsection{Local root numbers at $s=7$}\label{sec:rev6al}
++\begin{proposition}[\src{35}]\label{prop:al6}
++For the $24$ cusp characters, the local root numbers $\varepsilon_v$ ($\fp_2,\fp_5,\fp_7,\infty$) are exact elements of $\Q(\zeta_{840})$ of modulus $1$. $\varepsilon_{\fp_2}$ is a $6$th root of unity; $\varepsilon_{\fp_5}$ is never a root of unity. The global root numbers have non-monic minimal polynomials (e.g.\ $5t^8+6t^4+5$), so they are not roots of unity. The sector signs are \emph{products} of local root numbers: $Z_p=\psi_\fp(-1)=\varepsilon(\psi_\fp)\varepsilon(\psi_\fp^{-1})=-1$ ($p=5,7$), and $S_p^2=\omega_{\pi_p}(-1)$. They are not individual local root numbers.
++\end{proposition}
++\catA{The local factors (Tate's formulas) and the character-side identities are exact.}
++\catB{$\prod_v\varepsilon_v=W$ against PARI's numerical root number ($\le2.7\cdot10^{-63}$). $W_p\leftrightarrow S_p$ holds only up to a fixed unit (the Atkin--Li normalisation, cited and not re-derived).}
++
++\subsection{Open problems after revision 6}\label{sec:open6}
++\begin{enumerate}[leftmargin=2em]
++\item A proof of the $h$-extra count $k(k-1)$ for all $k$, and lower bounds at $m=17,31$.
++\item Prime squares: label-space runs at $s=121$ and $s=3481$; (C3) for general $p$ (Category~A only for $p\le13$ and $p=59$); a self-contained proof that the Weil representation factors through $\mathrm{Mp}_2(\Z/N)$; the identification of the space where the $h$-drop lives (proof of $\ker^+=\ker^-$).
++\item A conceptual derivation of the even-$N$ periods $16$ and $96$; the $t^{e/2}$ coefficients at $x=\tfrac14,\tfrac16$ ($P=8,12$).
++\item Atkin--Lehner: $W_p$ applied to the actual level-$19600$ forms, and the normalising unit.
++\item $\dim V=s(s-1)$ for $e\ge2$ in general; even $s$; Eisenstein equality of the all-even sector (all from rev.~5).
++\end{enumerate}
+--- /dev/null	2026-10-18 19:52:17.817990638 -0500
++++ 2026-10-18-Bridge-C-Consolidated-rev6/rev6_app.tex	2026-10-18 22:11:05.694435368 -0500
+@@ -0,0 +1,12 @@
++%=====================================================================
++\section{Revision 6: errata and changelog (18 October 2026)}\label{app:rev6}
++%=====================================================================
++Revision~6 adds \S\ref{sec:rev6}. No earlier repository file is edited; the corrections are recorded in the repository as \path{ERRATUM_2_Rev5_2026-10-18.md}. No claim is made concerning HQCC termination, the twin prime conjecture or the Riemann hypothesis.
++\begin{enumerate}[label={R6.\arabic*},leftmargin=3em]
++\item \textbf{Erratum~2 (post-push erratum item (a)).} The statement ``$s=11$ $(+,+)$ sector ($90$) is irreducible; commutant $1$'' is \emph{wrong}. With the correct convention the sector is $18+72$, with commutant $2$, and the $(-,-)$ sector ($20$) is irreducible. The cause was the transposed label-map convention in \texttt{commutant.py} and \texttt{krylov\_irr.py}. Their \texttt{commutant\_*.json} and \texttt{krylov\_*.json} outputs in \path{Open_Algebraic_Update_2026-10-18/} are invalid evidence. Items (b)--(d) of the post-push erratum stand.
++\item \textbf{Erratum~2 (Proposition~\ref{prop:psq5}).} ``Old/new pieces'' means: the $p$-local invariants and their complement. Both are subrepresentations. Prime-square sectors are reducible with two pieces (Proposition~\ref{prop:splits6}). The open problem ``prime-square irreducibility'' of rev.~5 is resolved \emph{negatively}.
++\item \textbf{Proposition~\ref{prop:xthird}.} The case split is by $\varepsilon=(-1)^{v_2(\gcd(s,8))}$, not by the parity of $s$. ``$-V$'' should read $(-1)^rV_r$. The period-$72$ statement is now Category~A (Theorem~\ref{thm:p72}).
++\item \textbf{Superseded.} The 21:15 CDT ``retraction'' section of the Open-Algebraic report came from the same transpose bug. It is not a result.
++\item \textbf{Label renaming.} [S34]'s ``Theorem~L'' becomes Proposition~\ref{prop:crt6}(ii), and its ``Lemma~R'' becomes Lemma~\ref{lem:qred6}. This avoids collisions with the framework's Theorem~L and with Lemma~R of rev.~4.
++\item \textbf{Added:} \S\ref{sec:rev6audit}--\S\ref{sec:open6} (including the 22:10 CDT Open-Algebraic update: Proposition~\ref{prop:c3small6} and the $h$-eigenspace data); sources [S32]--[S35].
++\end{enumerate}
