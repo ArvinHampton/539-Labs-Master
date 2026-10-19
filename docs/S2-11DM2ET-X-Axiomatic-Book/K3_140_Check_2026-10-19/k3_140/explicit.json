@@ -1,0 +1,18 @@
+{
+ "sparse_dim": 2,
+ "exact_S_failures": 0,
+ "exact_T_failures": 0,
+ "invertible": true,
+ "c1_minus_c0_exponent_counts": {
+  "0": 14,
+  "9/10": 14,
+  "1/5": 14,
+  "1/10": 14,
+  "2/5": 14,
+  "3/10": 14,
+  "3/5": 14,
+  "1/2": 14,
+  "4/5": 14,
+  "7/10": 14
+ }
+}

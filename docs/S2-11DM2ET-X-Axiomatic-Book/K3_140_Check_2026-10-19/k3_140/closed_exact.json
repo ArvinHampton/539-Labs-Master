@@ -1,0 +1,45 @@
+{
+ "exact_S_failures": 0,
+ "exact_T_failures": 0,
+ "B(v,beta1) mod 1": "1/2",
+ "invertible": true,
+ "gamma_on_A_N2_local": {
+  "2": {
+   "|A_p|": 4,
+   "gamma=+1": false,
+   "gamma=-1": false
+  },
+  "5": {
+   "|A_p|": 5,
+   "gamma=+1": true,
+   "gamma=-1": false
+  },
+  "7": {
+   "|A_p|": 7,
+   "gamma=+1": false,
+   "gamma=-1": true
+  }
+ },
+ "gamma_is_pm1_on_A": {
+  "+1": false,
+  "-1": false
+ },
+ "gamma^2_is_+1": true,
+ "N2_diagonalised": "Matrix([[2, 0], [0, -70]])",
+ "embedding_norms": [
+  2,
+  -70,
+  -2,
+  70
+ ],
+ "orthogonality": [
+  0,
+  0,
+  0,
+  0
+ ],
+ "complement_check": "span(t1,t2) has index 1 in (n1,n2)^perp",
+ "primitive_gcd_minors": 1,
+ "T-part_primitive_gcd_minors": 1,
+ "q_T_equals_minus_q_N2": "identity map on (Z/2 x Z/70): q_T(x,y)=-x^2/4+y^2/140 = -q_N2(x,y)"
+}

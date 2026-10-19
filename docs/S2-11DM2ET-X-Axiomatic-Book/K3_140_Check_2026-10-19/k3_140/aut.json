@@ -1,0 +1,69 @@
+{
+ "g_in_diag_basis": "Matrix([[6, 35], [1, 6]])",
+ "table": {
+  "g^k, k=0": {
+   "on_A": "+1",
+   "preserves_positive_cone": true
+  },
+  "g^k, k=1": {
+   "on_A": "other",
+   "preserves_positive_cone": true
+  },
+  "g^k, k=2": {
+   "on_A": "+1",
+   "preserves_positive_cone": true
+  },
+  "g^k, k=3": {
+   "on_A": "other",
+   "preserves_positive_cone": true
+  },
+  "-g^k, k=0": {
+   "on_A": "-1",
+   "preserves_positive_cone": false
+  },
+  "-g^k, k=1": {
+   "on_A": "other",
+   "preserves_positive_cone": false
+  },
+  "-g^k, k=2": {
+   "on_A": "-1",
+   "preserves_positive_cone": false
+  },
+  "-g^k, k=3": {
+   "on_A": "other",
+   "preserves_positive_cone": false
+  },
+  "r g^k, k=0": {
+   "on_A": "-1",
+   "preserves_positive_cone": true
+  },
+  "r g^k, k=1": {
+   "on_A": "other",
+   "preserves_positive_cone": true
+  },
+  "r g^k, k=2": {
+   "on_A": "-1",
+   "preserves_positive_cone": true
+  },
+  "r g^k, k=3": {
+   "on_A": "other",
+   "preserves_positive_cone": true
+  },
+  "-r g^k, k=0": {
+   "on_A": "+1",
+   "preserves_positive_cone": false
+  },
+  "-r g^k, k=1": {
+   "on_A": "other",
+   "preserves_positive_cone": false
+  },
+  "-r g^k, k=2": {
+   "on_A": "+1",
+   "preserves_positive_cone": false
+  },
+  "-r g^k, k=3": {
+   "on_A": "other",
+   "preserves_positive_cone": false
+  }
+ }
+}
