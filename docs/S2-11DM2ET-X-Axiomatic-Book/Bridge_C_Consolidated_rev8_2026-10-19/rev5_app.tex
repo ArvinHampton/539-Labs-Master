@@ -1,0 +1,22 @@
+%=====================================================================
+\section{Revision 5: errata and changelog (18 October 2026)}\label{app:rev5}
+%=====================================================================
+Revision~5 adds \S\ref{sec:rev5} and the following corrections. Earlier repository files are not edited; the repository record is
+\path{ERRATUM_Consolidated_Rev5_2026-10-18.md}. No claim is made concerning HQCC termination, the twin prime conjecture or the Riemann hypothesis.
+\subsection{Errata}
+\begin{enumerate}[label=\textbf{R5.\arabic*},leftmargin=3.2em]
+\item $s=98$: ``$2406\le\dim V\le2408$ (not certified)'' (Theorem~\ref{thm:dims}(iv), \S\ref{sec:open} item~2) is replaced by $\dim V(98)=2406$ (Category~A, Theorem~\ref{thm:s98}). The half-cone bound $2408$ is not sharp, and the gap at $m=7$ is $44$, not $m(m-1)=42$.
+\item The rev.~4 Category~B statement ``the gap $m(m-1)$ for all $m$'' is withdrawn. It fails at $m=7$, and further extras are predicted at $m=2k^2-1$ (Category~B, no count claimed for $m=17$).
+\item The original orbit lemma (no reduced classes beyond $\pm\nu_0$) is false for some odd $s$ (first at $s=27$). It is replaced by Proposition~\ref{prop:orbit5}. No dimension in the rev.~4 table changes.
+\item ``Modulo F1'' is removed from Theorem~\ref{thm:Hs}, Theorem~\ref{thm:C} and Table~\ref{tab:radial}; the expansion is now proved (Proposition~\ref{prop:EM5}). The relevant statements become Category~A, except for any separate Hecke input.
+\item The rev.~4 open item ``stable numerics at $x=\tfrac12$ ($s=7,9,10$) and $x=\tfrac13$'' is resolved. The instability came from fitting outside the asymptotic window, and exact closed forms now replace the fits (Propositions~\ref{prop:xhalf}, \ref{prop:xthird}). The rev.~4 instruction not to quote those fits still applies to the old fits.
+\item Category~B $\to$ A: $\int_{\Gamma_F}\Xi_1\,dt=0$ and the identification of the weight-$0$ integral with Zwegers' $\Theta_a$ (Proposition~\ref{prop:ct5}). The E-part cocycle, including $C=-\pi/2$ by hand, both signs of $cx+d$, and the $140$-label vector law (Theorem~\ref{thm:coc5}). The ambiguous-class count, the squarefree criterion and the coset property for all $s$ (Theorems~\ref{thm:sqf5}, \ref{thm:coset5}). The vanishing of the $\varepsilon_{\rm all}=-1$ sectors for all odd $s$ (Proposition~\ref{prop:parity5}). $d_2=36$ at $k=6$ (Proposition~\ref{prop:s64}).
+\item $u_L$ coverage: $s=32,34,36,40$ are CUSP (Category~A), confirming the rev.~4 prediction.
+\end{enumerate}
+\subsection{Changelog}
+\begin{itemize}[leftmargin=2em]
+\item New \S\ref{sec:rev5} (eight subsections). New labels: Propositions~\ref{prop:EM5}--\ref{prop:s64} and Theorems~\ref{thm:coc5}, \ref{thm:coset5}, \ref{thm:sqf5}, \ref{thm:s98}, all numbered within \S\ref{sec:rev5}. No lettered theorem and no ``Theorem~L'' is introduced; the framework's Theorem~L is the Parity Dominance Theorem, and Lemma~L keeps its name. No label collides with L1--L7.
+\item All rev.~4 names are kept: $W_P$ vs $d_{\rm Eis}$, Theorem~G $=$ Lewis--Zagier, Theorem~G$_s$, Lemma Prod1/Prod2, $d_2(k,v)$, $S_{\rm lab}$, $D_s$, $n_s$, $\ell_s$. In \S\ref{sec:rev5uL}, bold $\mathbf W$ is the unit stabiliser of \src{30} and is unrelated to $W_P$.
+\item Open problems (\S\ref{sec:open}) are updated in items 2--7. Sources [S28]--[S31] are added.
+\item \textbf{Still open:} the Atkin--Lehner local split (blocked); irreducibility of the old prime-square pieces and a uniform proof (blocked/partial); the general $s=2m^2$ gap and $g$-consistency for all odd $m$; composite $m$; $\dim V=s(s-1)$ for $e\ge2$; Eisenstein equality for the all-even sector; even $s$ in general.
+\end{itemize}

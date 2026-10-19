@@ -1,0 +1,12 @@
+%=====================================================================
+\section{Revision 6: errata and changelog (18 October 2026)}\label{app:rev6}
+%=====================================================================
+Revision~6 adds \S\ref{sec:rev6}. No earlier repository file is edited; the corrections are recorded in the repository as \path{ERRATUM_2_Rev5_2026-10-18.md}. No claim is made concerning HQCC termination, the twin prime conjecture or the Riemann hypothesis.
+\begin{enumerate}[label={R6.\arabic*},leftmargin=3em]
+\item \textbf{Erratum~2 (post-push erratum item (a)).} The statement ``$s=11$ $(+,+)$ sector ($90$) is irreducible; commutant $1$'' is \emph{wrong}. With the correct convention the sector is $18+72$, with commutant $2$, and the $(-,-)$ sector ($20$) is irreducible. The cause was the transposed label-map convention in \texttt{commutant.py} and \texttt{krylov\_irr.py}. Their \texttt{commutant\_*.json} and \texttt{krylov\_*.json} outputs in \path{Open_Algebraic_Update_2026-10-18/} are invalid evidence. Items (b)--(d) of the post-push erratum stand.
+\item \textbf{Erratum~2 (Proposition~\ref{prop:psq5}).} ``Old/new pieces'' means: the $p$-local invariants and their complement. Both are subrepresentations. Prime-square sectors are reducible with two pieces (Proposition~\ref{prop:splits6}). The open problem ``prime-square irreducibility'' of rev.~5 is resolved \emph{negatively}.
+\item \textbf{Proposition~\ref{prop:xthird}.} The case split is by $\varepsilon=(-1)^{v_2(\gcd(s,8))}$, not by the parity of $s$. ``$-V$'' should read $(-1)^rV_r$. The period-$72$ statement is now Category~A (Theorem~\ref{thm:p72}).
+\item \textbf{Superseded.} The 21:15 CDT ``retraction'' section of the Open-Algebraic report came from the same transpose bug. It is not a result.
+\item \textbf{Label renaming.} [S34]'s ``Theorem~L'' becomes Proposition~\ref{prop:crt6}(ii), and its ``Lemma~R'' becomes Lemma~\ref{lem:qred6}. This avoids collisions with the framework's Theorem~L and with Lemma~R of rev.~4.
+\item \textbf{Added:} \S\ref{sec:rev6audit}--\S\ref{sec:open6} (including the 22:10 CDT Open-Algebraic update: Proposition~\ref{prop:c3small6} and the $h$-eigenspace data); sources [S32]--[S35].
+\end{enumerate}
