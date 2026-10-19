@@ -1,0 +1,62 @@
+--- 2026-10-18-Bridge-C-Consolidated-rev6/bridge_c_consolidated_rev6.tex	2026-10-18 22:08:24.826435368 -0500
++++ 2026-10-19-Bridge-C-Consolidated-rev7/bridge_c_consolidated_rev7.tex	2026-10-19 08:52:09.593698216 -0500
+@@ -19,6 +19,8 @@
+ \newtheorem{definition}[theorem]{Definition}
+ \newtheorem{remark}[theorem]{Remark}
+ \newtheorem{conjecture}[theorem]{Category B statement}
++\theoremstyle{plain}
++\newtheorem*{propKone}{Proposition K1}
+ 
+ \newcommand{\Q}{\mathbb{Q}}
+ \newcommand{\Z}{\mathbb{Z}}
+@@ -48,7 +50,7 @@
+ \title{The Bridge Series $C$ residual: real-quadratic structure over $\Q(\sqrt{35})$,\\
+ a Baker obstruction, and an explicit vector-valued\\ quantum modular law}
+ \author{Arvin Hampton\\ \small 539 Labs}
+-\date{Consolidated write-up, 18 October 2026 --- revision 6\\ \small (internal working paper; not externally refereed)}
++\date{Consolidated write-up, 19 October 2026 --- revision 7\\ \small (internal working paper; not externally refereed)}
+ 
+ \begin{document}
+ \maketitle
+@@ -85,7 +87,7 @@
+ Gauss-sum formula for the dual cone sum $E_R$. The cusp rows at rationals are shown numerically to
+ be finite combinations of Hecke $L$-values at $s=0$. Every statement is labelled Category A (proved, or exact,
+ including exact finite computation) or Category B (floating-point or PSLQ evidence only, identification by citation only,
+-interpretation, or conjecture); revision~4 applies this convention uniformly. Revision~5 (\S\ref{sec:rev5}) proves the two-dimensional Euler--Maclaurin input F1, makes the E-part cocycle (with the $140$-label vector law) Category~A, proves the $u_L$ coset property for all $s$ and the squarefree criterion $h=2^{\omega(s)}$, and proves $\dim V=2406$ at $s=98$. No claim is made concerning HQCC termination, the twin prime conjecture, or the Riemann
++interpretation, or conjecture); revision~4 applies this convention uniformly. Revision~5 (\S\ref{sec:rev5}) proves the two-dimensional Euler--Maclaurin input F1, makes the E-part cocycle (with the $140$-label vector law) Category~A, proves the $u_L$ coset property for all $s$ and the squarefree criterion $h=2^{\omega(s)}$, and proves $\dim V=2406$ at $s=98$. Revision~7 (\S\ref{sec:rev7}) proves that the extra $h$-relations number exactly $k(k-1)$ at $m=2k^2-1$ (Proposition~K1), derives $7s-32=-2Q(c_2)$ from the lattice, shows that only the factor $s-2$ of $\Delta$ is intrinsic while $7s-32$ is tied to the locked cone edge $c_2=(-4,1)$, gives exact closed forms through $t^{13/2}$ for the parallel axes-cone object $H_s^{\rm axes}$ with a wall-independent universal piece, and adds $t^{15/2}$, $t^{17/2}$ and the even-$N$ Gauss data. No claim is made concerning HQCC termination, the twin prime conjecture, or the Riemann
+ hypothesis.
+ \end{abstract}
+ 
+@@ -1332,6 +1334,7 @@
+ %=====================================================================
+ \input{rev5_sec}
+ \input{rev6_sec}
++\input{rev7_sec}
+ 
+ %=====================================================================
+ \section{Status and dependencies}\label{sec:status}
+@@ -1724,13 +1727,14 @@
+ %=====================================================================
+ \input{rev5_app}
+ \input{rev6_app}
++\input{rev7_app}
+ 
+ %=====================================================================
+ \section*{Source reports}\label{sec:sources}
+ %=====================================================================
+ \addcontentsline{toc}{section}{Source reports}
+ All in \path{/workspace/quantum-comp/reports/heavy-daily/}, with scripts and outputs in the companion folders. [S14] and [S15] were added in revision~3,
+-[S16]--[S27] in revision~4, [S28]--[S31] in revision~5, [S32]--[S35] in revision~6. Repository copies of [S16]--[S27] are listed in \path{PUSH_LOG_2026-10-18_Rev4.md}.
++[S16]--[S27] in revision~4, [S28]--[S31] in revision~5, [S32]--[S35] in revision~6, [S36]--[S37] in revision~7. Repository copies of [S16]--[S27] are listed in \path{PUSH_LOG_2026-10-18_Rev4.md}.
+ \begin{enumerate}[label={[S\arabic*]},leftmargin=3em]
+ \item \texttt{2026-10-17-Bridge-C-Residual-Law.md} (obstructions; identities).
+ \item \path{2026-10-17-P_s-Structure.md} (decomposition; ray class; asymptotics; Gauss pattern).
+@@ -1767,6 +1771,8 @@
+ \item \texttt{2026-10-18-Open-Algebraic.md}, sections after 19:37 CDT (prime-square theorem; $s=49$; $h$-relation data; $s=121$ factor dimensions; the 21:15 section is superseded) (rev.~6).
+ \item \texttt{2026-10-18-Analytic-CatB-Push.md} and folder (period $72$; $t^{11/2}$, $t^{13/2}$; general $x=a/N$) (rev.~6).
+ \item \texttt{2026-10-18-AtkinLehner-Local.md} (local root numbers at $s=7$) (rev.~6).
++\item \texttt{2026-10-18-Analytic-CatB-Push.md}, sections from ``Continuation~2'' on (D.0--D.4, E.0--E.3, Round~3, Round~4), and the new files of its folder (general-formula checks; even $N$; $x=\tfrac14,\tfrac16$; $t^{15/2}$, $t^{17/2}$; $S_e$ structure; comparison with the axes forms) (rev.~7).
++\item \texttt{2026-10-18-Algebraic-Round3.md} and folder (Proposition~K1; origin of $7s-32$; Weil representations; cone choice; $H_s^{\rm axes}$) (rev.~7).
+ \end{enumerate}
+ Repository errata (read-only, \path{ArvinHampton/539-Labs-Master}): \path{ERRATUM_Bridge_C_Decomposition_and_Samples_2026-10-17.md},
+ \path{ERRATUM_Bridge_C_tminushalf_Coefficient_2026-10-17.md}, \path{ERRATUM_psi_Cocycle_Component_Count_2026-10-17.md},
