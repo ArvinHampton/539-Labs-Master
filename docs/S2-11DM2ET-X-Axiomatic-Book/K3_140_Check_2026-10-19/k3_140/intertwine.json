@@ -1,0 +1,59 @@
+{
+ "ell": 840841,
+ "rev_relations": {
+  "(S_lab,T)": {
+   "S^4=I": true,
+   "(ST)^3=S^2": false
+  },
+  "(S_lab^-1,T)": {
+   "S^4=I": true,
+   "(ST)^3=S^2": true
+  }
+ },
+ "N2=[[2,14],[14,28]] Weil relations": {
+  "S^4=I": true,
+  "(ST)^3=S^2": true
+ },
+ "Hom(rho_W[N2=[[2,14],[14,28]]], rho_rev(S_lab^-1,T))": {
+  "T_spectra_equal": true,
+  "unknowns": 702,
+  "dim_Hom": 8,
+  "rank_of_random_combination": 140
+ },
+ "Hom(rho_W[N2=[[2,14],[14,28]]], rho_rev(S_lab,T))": {
+  "T_spectra_equal": true,
+  "unknowns": 702,
+  "dim_Hom": 4,
+  "rank_of_random_combination": 72
+ },
+ "N2=[[2,14],[14,28]] dual Weil relations": {
+  "S^4=I": true,
+  "(ST)^3=S^2": true
+ },
+ "Hom(rho_W[N2=[[2,14],[14,28]] dual], rho_rev(S_lab^-1,T))": {
+  "T_spectra_equal": false
+ },
+ "Hom(rho_W[N2=[[2,14],[14,28]] dual], rho_rev(S_lab,T))": {
+  "T_spectra_equal": false
+ },
+ "N1=[[4,14],[14,14]] Weil relations": {
+  "S^4=I": true,
+  "(ST)^3=S^2": true
+ },
+ "Hom(rho_W[N1=[[4,14],[14,14]]], rho_rev(S_lab^-1,T))": {
+  "T_spectra_equal": false
+ },
+ "Hom(rho_W[N1=[[4,14],[14,14]]], rho_rev(S_lab,T))": {
+  "T_spectra_equal": false
+ },
+ "N1=[[4,14],[14,14]] dual Weil relations": {
+  "S^4=I": true,
+  "(ST)^3=S^2": true
+ },
+ "Hom(rho_W[N1=[[4,14],[14,14]] dual], rho_rev(S_lab^-1,T))": {
+  "T_spectra_equal": false
+ },
+ "Hom(rho_W[N1=[[4,14],[14,14]] dual], rho_rev(S_lab,T))": {
+  "T_spectra_equal": false
+ }
+}
