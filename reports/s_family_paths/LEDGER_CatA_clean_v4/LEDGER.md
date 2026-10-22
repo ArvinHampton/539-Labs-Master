@@ -1,0 +1,406 @@
+# Category A ledger: s-family, dimensions, Bridge C, T3 arithmetic, H3 orbit map
+
+**For:** Arvin Hampton · 2026-10-22
+
+Path shorthand: `SF/` = `/workspace/quantum-comp/reports/s_family_paths/`.
+
+## 0. Standing hypotheses
+
+- **(TB3)** S² = P on the label space, i.e. ρ(−I) = P.
+- **(TB4)** The components of the theta lift u are invariant under the principal congruence subgroup Γ(N), where N = ord ρ(T).
+- **(TB)** The manuscript theta lift u has type ρ_s and eigenvalue λ = 1/4. The λ = 1/4 constant-term criterion holds. Arb/python-flint ball arithmetic is correct. The rounding analysis of `SF/A2/scripts/certify_hybrid.py` is correct.
+- **(F1–F5)** These are standard facts about Weil representations of finite quadratic modules, including Scheithauer's upper-triangular formula (as listed in `SF/A12_H1H2_odd`).
+- **(I1–I5)** These are the local imports listed in `SF/A15_ST_balance` §1. They consist of F1–F5 together with the local models of `SF/A11_induction`.
+- **Computer certificates.** "Exact mod-p rank" means the following. The defining equations have coefficients in Z[ζ][1/N], and they are reduced at a prime above p. Under reduction the rank can only drop. So a computed mod-p dimension is an upper bound for the dimension over C. Likewise, an integer bounded by ℓ/2 in absolute value is determined by its residue mod ℓ.
+
+Writing TB2 for the part of TB concerning the theta lift: u has type ρ_s, eigenvalue λ = 1/4, its constant term is a multiple of c₀ = Π_Wδ₀, and the λ = 1/4 constant-term criterion holds.
+
+Notation: ρ_s is the s-family Weil representation, W is its γ_s- and (−1)-invariant subspace, E = ρ-span(δ₀) ⊆ W, and C = W ⊖ E is the cusp part. S, T and Z = S² are the standard generators. e(x) = e^{2πix}.
+
+---
+
+## 1. s-family Weil representation ρ_s
+
+1. **Theorem.** Assume TB3. For every odd s ≥ 5, tr_C ρ(S) = tr_W ρ(S) = tr_E ρ(S) = 0, hence dim C⁺ = dim C⁻ = d_cusp/2.
+    *Proof.* Let n = s(s−2) ≡ 3 mod 4 and Ŝ = √n·S on the label space.
+    - **Fields.** For the labels, B(α,β) ∈ (1/2n)Z and Q(α) ∈ (1/4n)Z. So Ŝ has entries in Q(ζ_{2n}), T is monomial with phases in Q(ζ_{4n}), the monomials γ_s and N that cut out W have phases in Q(ζ_{2n}), and c₀ is rational.
+    - **T^{2n} is diagonal.** Summing the T-phases over 2n steps gives T^{2n} = D := diag(e(−2nQ(α))), a sign matrix.
+    - **The Galois element.** Let σ ∈ Gal(Q(ζ_{4n})/Q) send ζ_{4n} ↦ ζ_{4n}^{2n+1}. Since 2n+1 ≡ 1 mod 2n, σ fixes Ŝ, the W-phases and c₀, and σ(T) = TD = T^{2n+1}. Write √n = k√d with d ≡ 3 mod 4. Since 2n+1 ≡ 1 mod d and ≡ 3 mod 4, quadratic reciprocity gives (d/(2n+1)) = −1, so σ(√n) = −√n and σ(S) = −S.
+    - **Invariance.** σ(W) = W. σ(E) is the smallest subspace containing Π_W c₀ that is stable under −S and T^{2n+1}, and T^{2n+1} generates the same group as T, so σ(E) = E. σ commutes with complex conjugation, so σ(C) = C and σ fixes the orthogonal projector P_C.
+    - **Conclusion.** t = tr(P_C S) satisfies σ(t) = −t. By TB3, S² = 1 on W, so t is a rational integer, and therefore t = 0. The same argument applies to W and E.
+    (`SF/A6_certify/REPORT.md` A4; exact hypothesis checks for s = 5..40 in `SF/A6_certify/scripts/galois_sign.py`.)
+
+2. **Certificate.** Let s ≡ 4, 6 mod 8 with 12 ≤ s ≤ 46, and let E = ρ-span(δ₀) in C[D]. Then tr_E S = 0. Combined with entry 3, tr_C S = 0, so dim C⁺ = dim C⁻.
+    *Certificate.* `SF/A31_entry7_check/global_trE.py`, run for s = 12, 14, 20, 22, 28, 30, 36, 38, 44, 46 (log: `SF/A34_ledger_checks/logs/global_trE_rerun_and_4_6mod8.txt`). The script computes the ⟨S,T⟩-span of δ₀ and tr_E S modulo two primes ℓ ≡ 1 mod 8M. On E, S² = 1, so tr_E S is an integer with |tr| ≤ dim E < ℓ/2, and its residue determines it. All ten values are 0.
+
+3. **Theorem.** For every even s, tr_W S = 0.
+    *Proof.* There is a monomial unitary K_y on W that anticommutes with S and commutes with γ_s and −1. Then tr_W S = tr_W(K_y S K_y^{−1}) = −tr_W S. (`SF/A8c_Spairing_even/REPORT.md`. An exact check for even s = 6..60 is in `pairing_on_W.py`.)
+4. **Theorem.** Assume F1–F5. Let s ≡ 0, 2 mod 8 and E = ρ-span(δ₀). Then tr_E S = 0 and tr_C S = 0, so dim C⁺ = dim C⁻.
+    *Proof.* By entry 8, tr_E S = ∏_p t_p, where t_p is the local trace on the local δ₀-span. Since s ≡ 0, 2 mod 8, m ≡ 0, 1 mod 4, so 4 | M, and the 2-adic exponent is a ≥ 2. There are two cases.
+    - **a odd, or u ≡ 1 mod 4.** Then t₂ = 0. For a ≥ 3 this follows from entry 5 (P-stability) and entry 6 (H2), by the lift lemma of entry 8, down to the base classes. For a = 2 the base classes (2, 1/4) ⊕ (8, −u/16) have trace 0 exactly when u ≡ 1 mod 4 (certificate: `SF/A11_induction/exact_E0.py`, exact arithmetic). This case does not use H2.
+    - **a even and u ≡ 3 mod 4.** The odd number u is a product of odd prime powers. Because u ≡ 3 mod 4, some p^e ∥ u satisfies p^e ≡ 3 mod 4. Then t_p = 0 by entry 7.
+
+    So tr_E S = 0. Since E ⊆ W (γ_s commutes with ρ and fixes δ₀), tr_C S = tr_W S − tr_E S = 0 by entry 3. (`SF/A12_H1H2_odd`, `SF/A31_entry7_check/REFEREE.md` §5.)
+    **Corollary.** tr_C S = 0 for every odd s ≥ 5, for every s ≡ 0, 2 mod 8 (with E = ρ-span(δ₀)), and for every s ≡ 4, 6 mod 8 with 12 ≤ s ≤ 46 (entries 1, 2 and 4).
+5. **Theorem (P-stability).** Assume F1–F5. For every 2-adic exponent a ≥ 2, δ_h lies in the δ₀-span.
+    *Proof.* δ_h is obtained from δ₀ by the explicit word S T^{2^a} S. This is evaluated with Scheithauer's formula (F1–F5). (`SF/A12`.) An exact mod-p check (p = 33556993) for a = 2..7 and all 24 classes u mod 8 is in `SF/A13_H1_check/verify_h1.py`.
+6. **Theorem (H2).** Assume F1–F5 and a ≥ 3. Then tr S = 0 on (1 − P)E₀.
+    *Proof.* The space X = (1 − P)E₀ has a basis indexed by P¹(Z/M). The level is lcm(4, M), which is where a ≥ 3 is needed. In this basis S acts monomially and without fixed points, so every diagonal entry of S vanishes. (`SF/A12`.)
+7. **Theorem (odd-prime local factor).** Let p be an odd prime, e ≥ 0, c a unit mod p^e, D_p = (Z/p^e, q(x) = cx²/p^e), and ρ_p its Weil representation. Let E0_p be the SL₂(Z)-span of δ₀ in C[D_p]. Then:
+    - (i) E0_p is the space of even functions on D_p, of dimension (p^e + 1)/2.
+    - (ii) t_p := tr(S | E0_p) is equal to:
+        - 1 if e is even;
+        - (2/p) if e is odd and p ≡ 1 mod 4;
+        - 0 if e is odd and p ≡ 3 mod 4.
+
+        In particular t_p does not depend on c.
+    - (iii) For the global form D = ⊕_p D_p, E0 = ⊗_p E0_p, and tr_E S = ∏_p t_p.
+
+    *Proof.* Write γ(a) = Σ_{x mod p^e} e(ax²/p^e). Take S e_x = ε p^{−e/2} Σ_y e(−2cxy/p^e) e_y with ε = conj γ(c)/|γ(c)|. Then:
+    - tr S = conj γ(c) γ(−2c)/p^e and tr SZ = conj γ(c) γ(2c)/p^e.
+    - **e even:** γ(a) = p^{e/2} for every unit a, so tr S = tr SZ = 1.
+    - **e odd:** γ(a) = p^{(e−1)/2} (a/p) ε_p √p, so tr S = (−2/p) and tr SZ = (2/p).
+
+    By (i), the projection onto E0_p is ½(1 + Z), so t_p = ½(tr S + tr SZ) = (2/p)(1 + (−1/p))/2. This gives (ii). The opposite sign convention for T conjugates every quantity, and t_p is real, so it is unchanged. Part (i) is the odd case of H1/H2 (F1–F5). For (iii): δ₀ = ⊗ δ_{0,p}; SL₂(Z) → ∏_p SL₂(Z/p^{k_p}) is surjective; and ρ = ⊗ρ_p. Hence the span of the pure tensor δ₀ is the tensor product of the local spans. The phases are consistent because the total signature is 0 and every odd local part has even signature. (W and C are not tensor products, and the argument does not use such a decomposition.)
+    *Certificate.* `SF/A31_entry7_check/local_odd.py` covers all 53 odd prime powers p^e ≤ 201, each with c a residue and with c a non-residue. It computes t_p exactly in Z[ζ_{p^e}] modulo Φ_{p^e}, and dim E0_p as a rank mod ℓ ≡ 1 mod p^e (lower bound = dim W⁺). It finds (i) and (ii) in all 106 cases.
+8. **Theorem (factorisation and lift lemma).** Assume F1–F5. For even s, the original definitions of W, E and C reduce to C[D], with the complex-conjugate convention of `SF/A10`, so vanishing statements transfer between the two. Furthermore, tr_C S = −∏_p t_p, and tr_{P E0_a} S = t_{a−2} (2-adic lift lemma).
+    *Proof.* `SF/A11_induction/REPORT.md`. The factorisation is entry 7(iii) combined with entry 3. The lift lemma follows by comparing P E0_a with E0_{a−2} through the isotropic quotient. *Certificate:* the base classes a = 2, 3, 4, including P-stability, are computed exactly in `SF/A11_induction/exact_E0.py`.
+9. **Theorem.** On the full space C[D], tr S = tr SZ = 0. The Eisenstein trace factorises as a product of local factors, and the local factor vanishes for every odd p ≡ 3 mod 4 with exponent 1.
+    *Proof.* tr S and tr SZ are normalised quadratic Gauss sums of the bilinear form, and they vanish by a one-line Gauss-sum evaluation. The factorisation follows from the tensor decomposition of entry 7(iii). The local vanishing is entry 7(ii) with e = 1. *Certificate:* 2-adic and odd local classes are checked exactly in `SF/A10_uniform_Spairing/exact_local.py`.
+10. **Certificate.** Let s ≡ 0, 2 mod 8 with 8 ≤ s ≤ 74. Then tr_E S = 0, where E = ρ-span(δ₀).
+    *Certificate:* `SF/A31_entry7_check/global_trE.py`. It works on the full D = A^{−1}Z²/Z². It computes the ⟨S, T⟩-span of δ₀ and tr_E S modulo two primes ℓ ≡ 1 mod 8M. On E, S² = 1, so tr_E S is an integer of absolute value at most dim E < ℓ/2, and its residue determines it. All 18 values of s give 0. For s = 8, 16, 18, 24, 26, 32, 40, 48, 50, 56 and 58, an independent certificate of tr_C S = tr_E S = 0 is given by the invertible operator Y = Z − SZS, which anticommutes with S (exact mod-𝔭 rank of Y|_W on the orbit basis of W; `SF/A8c_Spairing_even/scripts/pairing_on_W.py`). Since Y lies in the image of the group algebra and anticommutes with S on W, invertibility of Y|_W makes Y|_C an isomorphism C⁺ → C⁻. For s = 10, C = 0.
+11. **Theorem (ST-balance, even s).** Assume I1–I5. Let R = ST, so R³ = I, and let ω = e^{2πi/3}. For every even s ≥ 6:
+    - tr_W R = −ω if s ≡ 2 mod 3, and tr_W R = 0 otherwise.
+    - tr_E R = −ω exactly when (Exc) holds, and tr_E R = 0 otherwise. Here (Exc) means: 3 | m − 1, a is even, u ≡ 1 mod 4, and v_p(M) is even for every prime p ≡ 2 mod 3.
+    - Hence tr_C R ∈ {0, −ω}. The R-eigenvalue multiplicities on C are (k, k, k) or (k+1, k, k+1).
+    - Moreover, 3 | d_cusp ⇔ tr_C R = 0 ⇔ (s ≢ 2 mod 3 or (Exc)).
+
+    *Proof.* R splits into local factors because γ_s splits D (entry 13). The local traces r_p are computed in entry 13. The 2-adic base cases are certified exactly (`SF/A15_ST_balance/local_2adic_ab.py`). Since R³ = I, the multiplicities (n₁, n_ω, n_ω̄) satisfy n₁ + n_ω ω + n_ω̄ ω̄ = tr R with n₁ + n_ω + n_ω̄ = dim. Solving gives the stated patterns. (`SF/A15_ST_balance/REPORT.md`.)
+12. **Certificate.** For every even s with 6 ≤ s ≤ 400 (198 values), tr_W R equals the Gauss-sum formula of entry 11. The method computes exact phase histograms, evaluates them at 40 digits, and rounds into the lattice Z[ω]. The lattice spacing is far above the error, so the rounding is exact. (`SF/A15_ST_balance/formula_even.py`, `gauss_even.py`.)
+13. **Theorem (local formulas for tr_W R).** Assume I5.
+    - γ_s splits D, since (1/(m−1))Z² ∩ (1/p^k)Z² = Z².
+    - For odd p, r_p = ½ a_p(1 + κ_p). So r_p ≠ 0 iff χ₋₃(p^e) = 1, and r_3 ≠ 0 always.
+    - The case analysis mod 3 (3 ∤ M; 3 | m; 3 | m − 1) is exhaustive.
+    - Multiplicities of R computed mod p equal the true multiplicities for p ∤ 3, because R³ = I is diagonalisable mod p.
+
+    *Proof.* `SF/A15_ST_balance/REPORT.md` §§2–4. The splitting is the stated lattice intersection. r_p is a local Gauss-sum evaluation. The last point holds because x³ − 1 is separable mod p.
+14. **Theorem (closed forms for d_cusp, odd s).** For odd m let G(m) = ∏_{q‖m} (q+1)/2, where q runs over the exact prime-power divisors of m. For odd s ≥ 5 let n = s(s−2), dim V = s(s−1), d_Eis = 3G(n) and d_cusp = dim V − d_Eis. Then:
+    - (i) G(m) ≤ (m+1)/2 for odd m, with equality iff m = 1 or m is a prime power;
+    - (ii) d_cusp ≥ (s−1)(s−3)/4 > 0, with equality iff s and s−2 are both prime powers;
+    - (iii) d_cusp is even.
+
+    These are statements about the closed forms. They describe the true d_cusp for odd s ≤ 51, where dim V = s(s−1) and d_Eis = 3G(n) are proved.
+    *Proof.* (i) If m = q is a prime power, then G(m) = (q+1)/2. For coprime odd a, b ≥ 3, (a+1)(b+1)/4 < (ab+1)/2 is equivalent to (a−1)(b−1) > 0. By multiplicativity and induction on the number of prime-power factors, G(m) < (m+1)/2 whenever m has at least two of them. (ii) gcd(s, s−2) = 1, so G(n) = G(s)G(s−2) ≤ (s+1)(s−1)/4 by (i). Hence d_cusp ≥ s(s−1) − 3(s²−1)/4 = (s−1)(s−3)/4, with equality iff equality holds in (i) for both s and s−2. (iii) s(s−1) is even. One of s, s−2 is ≡ 3 mod 4, and an integer ≡ 3 mod 4 has an exact prime-power divisor q ≡ 3 mod 4, since a product of factors ≡ 1 mod 4 is ≡ 1 mod 4. Then (q+1)/2 is even, so G(n) and d_Eis are even. (Parity for odd s also follows from entry 1.)
+
+15. **Theorem (distribution of r, odd s, formula level).** Let r = d_cusp/dim V with the closed forms of entry 14. Write k = ω(s) + ω(s−2) and g(m) = ∏_{q‖m}(1+1/q)/2, so that 1 − r = 3·(s−2)/(s−1)·g(s)g(s−2). All averages below are over odd s ≤ X.
+    - (i) mean k = 2 log log X + O(1), and Var k ≪ log log X.
+    - (ii) The empirical law of r tends to the point mass at 1. In particular mean r → 1.
+    - (iii) For almost all odd s, 1 − r = (log s)^{−2 log 2 + o(1)}.
+    - (iv) (log X)^{−2 log 2} ≪ mean g(s)g(s−2) ≪ 1/log X. Consequently the density of {s : r < 1 − ε} is ≪ 1/(ε log X).
+    - (v) Y = Σ_{q‖s(s−2)} log(1 + 1/q) has a limit law, and that law is continuous.
+    - (vi) The set L of limit points of r satisfies L ⊆ {1} ∪ {1 − 3w : w ∈ W}, where W = {2^{−2−j}∏_{q∈S}(1+1/q)/2 : j ≥ 0, S a finite set of pairwise coprime odd prime powers}. Hence L is countable and closed, and L ⊆ {1/4} ∪ [1/2, 1].
+
+    *Proof.* (i) For an odd prime p ≤ X, the number of odd s ≤ X with p | s(s−2) is X/p + O(1). Mertens' theorem gives mean k = Σ_{3≤p≤X} 2/p + O(1) = 2 log log X + O(1). For p ≠ q both ≤ X^{1/4}, the density of {pq | s(s−2)-type events} is 4/(pq) + O(X^{−1/2}). The primes above X^{1/4} contribute O(1) to k, so the second moment is (mean k)² + O(log log X).
+    (ii) By (i) and Chebyshev, k ≥ log log X except on a set of density O(1/log log X). Off that set, 1 − r ≤ 3(2/3)^k → 0.
+    (iii) log(1 − r) = −k log 2 + Y + O(1), with 0 ≤ Y ≤ Σ_{p|n} 1/p ≪ log log log s. By (i), k = 2 log log s + O(ψ(s)√(log log s)) for almost all s, for any ψ → ∞.
+    (iv) *Lower bound:* g(s)g(s−2) ≥ 2^{−k}, and x ↦ 2^{−x} is convex, so by Jensen the mean is ≥ 2^{−mean k}, and (i) gives ≫ (log X)^{−2 log 2}. *Upper bound:* apply Nair–Tenenbaum (Acta Math. 180 (1998), Theorem 1) with two variables, Q₁(n) = n, Q₂(n) = n − 2 and y = x. Q₁Q₂ has no fixed prime divisor, because Q₁Q₂(1) = −1. F(n₁,n₂) = g(n₁)g(n₂), with g(2^e) := 1, satisfies F(m₁n₁, m₂n₂) ≤ F(n₁,n₂) for coprime pairs, so F ∈ M₂(1,1,ε). The theorem gives Σ_{n≤X} F(n, n−2) ≪ X ∏_{p≤X}(1 − 2/p)·(Σ_{n≤X} g(n)/n)². Since Σ_{n≤X} g(n)/n ≤ ∏_{p≤X}(1 + 1/(2p) + O(p^{−2})) ≪ (log X)^{1/2}, the sum is ≪ X/log X. Restricting to odd n only decreases it, since F ≥ 0. The density statement follows by Markov's inequality.
+    (v) *Existence:* truncate Y at primes p ≤ y. By CRT, the truncated variable has the law of Σ_{p≤y} X_p with independent X_p, and E|Y − Y_y| ≤ Σ_{p>y} 2/p² → 0. *Continuity:* each X_p is discrete with largest atom P(X_p = 0) = 1 − 2/p for p ≥ 5, and ∏_p(1 − 2/p) = 0. By Lévy's theorem (Studia Math. 3 (1931)), a convergent series of independent discrete random variables has a continuous law iff the product of the largest atoms is 0.
+    (vi) Along a subsequence on which r tends to a limit below 1, k is bounded, since otherwise g → 0. Pass to further subsequences on which k is constant and each prime-power factor is either constant or tends to ∞. A factor tending to ∞ contributes the factor 1/2 in the limit, and since s → ∞, at least one factor of s and one factor of s−2 tend to ∞. This gives the form 1 − 3w. W is countable, and its only accumulation points are again of the same form, which gives the stated inclusions.
+
+16. **Theorem.** Assume Chen's theorem (1973). Let r = d_cusp/dim V for odd s (formula level).
+    - Whether r is close to 1/4 depends only on the number k of prime-power factors of s(s−2). If every prime factor grows, then r → 1 − 3/2^k.
+    - liminf r = 1/4 is equivalent to the existence of infinitely many pairs (s−2, s) of odd prime powers.
+    - liminf r ≤ 5/8.
+
+    *Proof.* The first two statements follow from the multiplicative closed form of r: each factor tends to its limit as the prime grows. The third follows by applying Chen's theorem (p + 2 = prime or a product of two primes) to get k ≤ 3 infinitely often. (`SF/A3_chen/REPORT.md`.)
+17. **Theorem (isometry swap).** Let h ∈ SO(A)(Q) with h(S⁺) = S⁻ and Q∘h = Q. Then θ(R⁺) = θ(R⁻). At m = 7 (s = 98) such an h exists, so dim V(98) = 2406. Also, tr(g | Fix N) = 2m.
+    *Proof.* h maps the representation-number sets bijectively while preserving Q, so the two theta series agree term by term. (`SF/galois_review/REVIEW.md` G11.)
+18. **Theorem (Gauss-sum vanishing).** Let Q(n,k) = n² + 7nk + 7k(k+1)/2 and, for gcd(h,m) = 1, G(h/m) = (2m)^{−2} Σ_{n,k mod 2m} e(hQ(n,k)/m). Then G(h/m) = 0 iff 2 | m or 5 | m. Otherwise |G(h/m)| = 1/m if 7 ∤ m, and |G(h/m)| = √7/m if 7 | m.
+    *Proof.* Q is integer-valued. Q(n+2m,k) − Q(n,k) and Q(n,k+2m) − Q(n,k) are divisible by m, so the summand is 2m-periodic and shifts permute the terms.
+    - **2 | m.** Q(n,k+m) − Q(n,k) = m(7n + 7k + 7(m+1)/2). The shift k ↦ k+m multiplies every term by e(7h(m+1)/2) = −1, because 7h(m+1) is odd. Hence G = −G = 0.
+    - **m odd and 5 | m.** Put a = m/5. Then Q(n−a, k+a) − Q(n,k) = mn + a(7−m)/2. The shift multiplies every term by e(h(7−m)/10) = e(hj/5) with j = (7−m)/2 ≡ 1 mod 5. Since gcd(h,5) = 1, the factor is ≠ 1, so G = 0.
+    - **m odd and 5 ∤ m.** Q is m-periodic, so G = m^{−2}Σ_{n,k mod m}. Because 2 is invertible mod m, the substitution n′ = n + 7·2^{−1}k gives hQ ≡ h(n′² − (35/4)k² + (7/2)k). So G = m^{−2}g₁g₂, where g₁ = Σ_{n′} e(hn′²/m) has |g₁| = √m. By the Chinese remainder theorem, g₂ factors over p^e ‖ m. For p ∤ 35, completing the square gives a factor of modulus p^{e/2}. For p = 7, the factor is Σ_{k mod 7^e} e(h′(−(5/4)k² + k/2)/7^{e−1}) = 7·Σ_{k mod 7^{e−1}}(…). Since −5/4 is a unit mod 7, it has modulus 7·7^{(e−1)/2}. Multiplying, |G| = m^{−2}·√m·√m·(√7 if 7 | m). This is non-zero.
+
+## 2. Dimensions of S(ρ_s)
+
+Here S(ρ_s) denotes the space of Maass cusp forms of type ρ_s on W, of weight 0, with λ = 1/4. Every result in this section assumes TB. Upper bounds come from `SF/A2/scripts/certify_hybrid.py` (M = 6, Q = 40; Arb ball arithmetic). Lower bounds come from the sector lemma (entry 25) applied with d_cusp > 0, or from exact Hecke or T-row determinants.
+
+19. **Certificate.** dim S(ρ_s) = 1 for s = 5, 7, 9, 12, 13, 14. (`SF/A/REPORT.md` §3, `SF/A2/REPORT.md`.)
+20. **Certificate.** dim S(ρ_s) = 2 for s = 11 and s = 19. At s = 19 there is one form in each of two sectors. (`SF/A2`, `SF/A9_hecke_family/certify_hecke_s.py`.)
+21. **Certificate.** Assume in addition Γ(1596)-invariance via Wohlfahrt. Then dim S(ρ_21) = 5. The lower bound comes from the Hecke images T′_p, p = 1597, certified in Arb at 256 bits from exact Fourier coefficients. (`SF/A7_s21/certify_hecke.py`.)
+22. **Certificate.** dim S(ρ_23) = 3 (`SF/A6_certify`) and dim S(ρ_25) = 3 (`SF/A9`).
+23. **Certificate.**
+    - 3 ≤ dim S(ρ_15) ≤ 4.
+    - 3 ≤ dim S(ρ_17) ≤ 4.
+    - dim S(ρ_s) ≥ 3 for s = 27, 29, 31.
+
+    (`SF/A9_hecke_family`.)
+24. **Theorem (Hecke commutation).** Let N ≥ 1 and let p be a prime with p ≡ 1 mod N. Let F be a smooth vector-valued function with F(γz) = ρ(γ)F(z) for all γ ∈ SL₂(Z), invariant under Γ(N), with ΔF = λF. Put T′_pF(z) = p^{−1/2}[F(pz) + Σ_{j=0}^{p−1} F((z+Nj)/p)]. Then:
+    - T′_pF is of type ρ, with ΔT′_pF = λT′_pF;
+    - T′_p commutes with every constant matrix, in particular with the sector projectors P_σ;
+    - if every component of F is Σ_{m∈(1/N)Z} a(m)√y K₀(2π|m|y)e(mx) + c√y, then T′_pF has coefficients b(m) = a(pm) + a(m/p) and constant term 2c.
+
+    *Proof.* Let Δ_p = {M ∈ M₂(Z) : det M = p, M ≡ I mod N}. The p+1 matrices (1, Nj; 0, p) (0 ≤ j < p) and (p, 0; 0, 1) lie in Δ_p, because p ≡ 1 mod N, and they represent the p+1 classes of Γ(N)\Δ_p. For γ ∈ SL₂(Z), γ^{−1}Δ_pγ = Δ_p, so {γ^{−1}Mγ} is again a system of representatives. Therefore Σ_M F(Mγz) = Σ_M F(γ·γ^{−1}Mγ·z) = ρ(γ)Σ_{M′} F(M′z), and the sum does not depend on the choice of representatives by Γ(N)-invariance. The Laplacian commutes with z ↦ Mz for M ∈ GL₂⁺(R), so λ is preserved, and the operator acts componentwise. On the Fourier side, F(pz) contributes p^{1/2}a(m′/p) at frequency m′. For the other terms, Σ_j e(mNj/p) equals p if p | mN and 0 otherwise; since mN ∈ Z and gcd(p,N) = 1, p | mN iff m/p ∈ (1/N)Z. So Σ_j F((z+Nj)/p) contributes p·p^{−1/2}a(pm′) at frequency m′. After the factor p^{−1/2}, b(m′) = a(pm′) + a(m′/p). Each √y-term contributes c√y, which gives 2c.
+
+25. **Theorem (sector lemma).** Assume TB2. Let s be odd with 5 ≤ s ≤ 51, so that dim V = dim W = s(s−1). Let σ be a P-even local-sign sector other than the all-plus sector, with P_σW ≠ 0. Then P_σu is a non-zero cusp form of type ρ_s with λ = 1/4. Forms obtained from distinct sectors are linearly independent.
+    *Proof.*
+    1. P_σ is a polynomial in the local reflections Z_p, which commute with ρ. So P_σu has type ρ_s and eigenvalue 1/4.
+    2. The constant term of u is a multiple of c₀ = Π_Wδ₀ (TB2). E = ρ-span(c₀) lies in the all-plus sector, because c₀ is even in every local component and the Z_p commute with ρ. Hence P_σc₀ = 0, the constant term of P_σu vanishes, and P_σu is cuspidal by the λ = 1/4 constant-term criterion.
+    3. Since dim V = dim W, the components of u on W are linearly independent functions. If P_σu = 0, every row of P_σ would be a linear functional on W vanishing on all values of u, which would force P_σ|_W = 0, contrary to hypothesis.
+    4. The sector projectors are mutually orthogonal, so forms in distinct sectors are independent.
+
+### Dihedral structure
+
+Throughout this subsection, s is odd, n = s(s−2), K_s = Q(√n), O = Z[√n], ω = (s+√n)/2 and ε = (s−1)+√n. "Dihedral over K_s" means a finite linear combination of theta series θ_ψ attached to finite-order Hecke characters ψ of K_s with ψ ≠ ψ∘σ, where σ is the non-trivial automorphism of K_s. In addition to TB and TB4, the results assume the classical Hecke–Maass correspondence: a Hecke theta series attached to a finite-order character of a real quadratic field, with no archimedean twist, is a Maass form with λ = 1/4; it is cuspidal iff ψ ≠ ψ∘σ, and it is an Eisenstein series iff ψ = ψ∘σ.
+
+
+26. **Theorem (the lattice form is a norm form).** Let Q(x) = x₁² + s x₁x₂ + (s/2)x₂². Then Q(x) = N(x₁ + ωx₂), and Λ = Z + Zω is an invertible ideal of O. For s = 9, …, 29, ε is the fundamental unit of O and has norm +1. Consequently every component of the theta lift u is a Hecke theta series of K_s at λ = 1/4. Its cusp part is dihedral over K_s. The sector projectors P_σ and the Hecke operators T′_p (p ≡ 1 mod the T-level) preserve the space of such combinations.
+    *Proof.* ω + ω′ = s and ωω′ = (s² − n)/4 = s/2, so N(x₁ + ωx₂) = x₁² + s x₁x₂ + (s/2)x₂². 2Q is primitive of discriminant 4n, so Λ is an invertible O-ideal. The unit statements come from the continued fraction of √n (exact integer arithmetic; `SF/A36_hecke_character/scripts/classdata.py`, `out/classdata.json`). By the coefficient formula of the lift (TB), a_{α,β}(m) = ½ Σ e(B(ν,β)), where the sum is over ν ∈ α + Λ with Q(ν) = m, taken modulo ε². So each component is the theta series of an ε²-invariant function on D⁻¹Λ/Λ with no |ν/ν′|^{it} factor. Expanding this function in characters of G₀ = I_D(O)/{(ν) : ν ≡ 1 mod D, N(ν) > 0} writes the component as a finite combination of θ_ψ(k·), and Hecke–Maass gives λ = 1/4. Terms with ψ = ψ∘σ are Eisenstein, so cusp parts involve only ψ ≠ ψ∘σ. P_σ is a constant matrix, and T′_p acts diagonally on each θ_ψ, so both preserve the space.
+
+
+27. **Certificate (exact class data).** The data below are computed unconditionally, using Gauss reduction cycles and composition for Cl(O), the continued fraction of √n for ε, exhaustive enumeration of (O/DO)^×, and |G₀| = h·|(O/DO)^×| / |⟨−1, ε⟩ mod D| (`SF/A36_hecke_character/scripts/classdata.py`, `out/classdata.json`; no conditional input).
+
+    | s | D | h⁺(4n) | h(4n) | Cl(O) | ring-class cusp pairs (h − \|Cl[2]\|)/2 | \|(O/DO)^×\| | \|G₀\| |
+    |---|---|---|---|---|---|---|---|
+    | 9 | 126 | 4 | 2 | Z/2 | 0 | 4536 | 36 |
+    | 11 | 198 | 8 | 4 | Z/4 | 1 | 11880 | 120 |
+    | 23 | 966 | 8 | 4 | (Z/2)² | 0 | 255024 | 528 |
+    | 25 | 1150 | 12 | 6 | Z/6 | 2 | 506000 | 1320 |
+    | 27 | 1350 | 12 | 6 | Z/6 | 2 | 486000 | 1080 |
+    | 29 | 1566 | 12 | 6 | Z/6 | 2 | 789264 | 1512 |
+
+
+28. **Theorem.** For s = 9, 11, 23 and 25, S(ρ_s) is exactly the span of forms built from u (by P_σ and T′_p). Hence every form in S(ρ_s) is dihedral over K_s. The data are:
+
+    | s | K_s | Cl(O) | dim S(ρ_s) | character types of the eigenforms |
+    |---|---|---|---|---|
+    | 9 | Q(√7) | Z/2 | 1 | one quadratic ray-class character |
+    | 11 | Q(√11) | Z/4 | 2 | one ring-class character of order 4; one ray-class character |
+    | 23 | Q(√483) | (Z/2)² | 3 | three quadratic ray-class characters |
+    | 25 | Q(√23) | Z/6 | 3 | one ring-class character (order 3 or 6); two ray-class characters |
+
+    *Proof.* The certified lower bounds are realised by forms built from u alone. At s = 9 this is u_cusp; at s = 23, P_σu (entry 25); at s = 11 and 25, P_σu and T′_pP_σu (`SF/A9_hecke_family/certs/hecke_lower_s*.json`). These lower bounds equal the certified dimensions (entries 19, 20 and 22). So the span of these forms is all of S(ρ_s), and by entry 26 it is dihedral over K_s. The character types are read off from the eigenvalue certificate (entry 29): a system is of ring-class type iff ψ(𝔭) depends only on the class of 𝔭 in Cl(O), i.e. ψ(𝔭) = 1 at principal 𝔭. Ray-class type is certified by a value ψ(𝔭) ≠ 1 at a principal 𝔭 in the sample.
+
+
+29. **Certificate (Hecke eigenvalues).** For each of the 15 eigensystems (sectors and Hecke eigenforms) at s = 9, 11, 23, 25, 27 and 29, the eigenvalue λ_p of T′_p at each of 8 split primes p ≡ 1 mod the T-level satisfies λ_p = ζ + ζ⁻¹ with ζ^E = 1, i.e. a_p = ψ(𝔭) + ψ(𝔭̄). Here E = exp((O/DO)^×)·h.
+    *Certificate.* The lift coefficients are reduced exactly modulo a prime ℓ ≈ 10¹² with ℓ ≡ 1 mod lcm(D², phase denominators, E). Rank-1 sectors without an Eisenstein part give λ_p directly. The other sectors are solved with the second-order coefficients a(p₀²m). In the rank-2 sectors at s = 25, 27, 29, the 2 × 2 matrix of T′_{p₀} is verified exactly on two further columns. Membership of each λ_p in {ζ + ζ⁻¹ : ζ^E = 1} is tested exactly mod ℓ, and all 15 × 8 tests pass. Within each s the eigensystems are distinct (`SF/A36_hecke_character/scripts/hecke_modl.py`, `out/hecke_modl_s*.json`, `logs/run_s*.out`).
+
+
+30. **Theorem.** At s = 9, 11, 23 and 25, the ring-class characters of O alone give 0, 1, 0 and 2 cusp pairs, against dim S(ρ_s) = 1, 2, 3 and 3. So ray-class characters of modulus dividing D are necessary at each of these s. At s = 25, the second ring-class pair does not occur in S(ρ_25).
+    *Proof.* The number of ring-class cusp pairs is (h − |Cl[2]|)/2 (entry 27), and the dimensions are entries 19, 20 and 22. At s = 25, S(ρ_25) is spanned by three eigenforms with pairwise distinct eigensystems (entries 28 and 29). Exactly one of them is of ring-class type, and the other two are ray-class. So only one of the two ring-class pairs of Cl(O) ≅ Z/6 occurs.
+
+
+31. **Theorem.** At s = 27 and s = 29, the three forms spanning the Hecke span of the sector projections of u (P_σu and T′_pP_σu) are dihedral over K_s.
+    *Proof.* By entry 26, every form built from u by P_σ and T′_p is dihedral over K_s. The three linearly independent forms are those certified in `SF/A9_hecke_family/certs/hecke_lower_s27.json` and `hecke_lower_s29.json`.
+
+
+## 3. Bridge C at s = 7
+
+Here A_7 = [[2,7],[7,7]] and |D| = 35. ρ₃₅ is the Weil representation of the discriminant form D(A_7) (S e_μ = (i/√35) Σ_ν e(−b(μ,ν)) e_ν, T e_μ = e(q(μ)) e_μ). χ is the generator of Hom(SL₂(Z), C^×) ≅ Z/12, with χ(T) = e(1/12) and χ(S) = −i.
+
+**The 35-component law vector.** Let A = A_7, Q(ν) = ½νᵀAν and B(ν,β) = νᵀAβ. For α, β ∈ Q² and x ∈ Q, put G_{α,β}(x) = mean over ν ∈ α + Z² of e(x·Q(ν) + B(ν,β)). This is the mean of a periodic function over a coset, so it is a finite Gauss mean. Let D = A⁻¹Z²/Z², a = (7/10, −1/5) and h_A = ½A⁻¹A* = (1/2, 0), where A* is the diagonal of A. Note that a ≡ h_A mod A⁻¹Z². The four candidate definitions of the 35-component law vector are the vectors indexed by μ ∈ D:
+- K1_μ = G_{a+μ, a};
+- K2_μ = G_{a+μ, 0};
+- K3_μ = G_{μ, a};
+- K4_μ = G_{μ, 0}.
+
+V denotes the space of functions on Q spanned by the 105 components of K2, K3 and K4. Z₅ and Z₇ denote the local reflections of D = D₅ ⊕ D₇, which act as −1 on one local part and as the identity on the other.
+
+
+32. **Theorem.** At s = 7, ρ_7|W = E ⊕ C with dim E = 36 and dim C = 6. Both E and C are irreducible, and dim C⁺ = dim C⁻ = 3. Hence C has no 1-dimensional ρ-invariant subspace, and any S-eigenvector in C generates all of C as a ρ-module.
+    *Proof.* dim End(ρ_7|W) = 2 (exact mod-p upper bound; `SF/A32_35_to_rho7/exact_hom.py`), and E, C ≠ 0 are subrepresentations. So both summands are irreducible and non-isomorphic. The equality of C⁺ and C⁻ is entry 1. (`SF/RTA_implications/REPORT.md`.)
+33. **Certificate.** Assume TB. Then dim S(ρ_7) = 1. (`SF/A/scripts/certify_s.py`, `SF/A/REPORT.md` §3.)
+34. **Theorem.**
+    - Q(√35) has class number 2, and 6 + √35 is a unit of norm +1.
+    - [[2,1],[1,−17]] is an odd lattice.
+    - There is no even binary lattice of determinant −35.
+
+    *Proof.* 6² − 35 = 1, and the class number is standard. For an even binary form, the discriminant b² − 4ac would equal 35, but 35 ≡ 3 mod 4 is not a square mod 4. (`SF/RTA_prereg/REPORT.md`.)
+35. **Theorem.** Let C be any irreducible unitary representation.
+    - Every Γ-equivariant map C^{⊗a} ⊗ C̄^{⊗b} → C is Z/3-graded by R-degree.
+    - If no T-exponents satisfy a + b + c − d ≡ 0 mod 1, then Hom_Γ(C⊗C⊗C, C) = 0.
+    - The products x⟨z, y⟩ and z⟨x, y⟩ are equivariant.
+
+    *Proof.* R³ = I acts on the tensor product, and an intertwiner commutes with R. An intertwiner also commutes with T, so it can only connect T-eigenvectors whose exponents match. ⟨·,·⟩ is Γ-invariant. (`SF/A18_RTA_foundation/REPORT.md`.)
+36. **Theorem.** dim Hom_{SL₂(Z)}(ρ₃₅ ⊗ χ³, ρ_7|W) = 1. A generator Φ is monomial: after rescaling, its non-zero entries lie in {±1, ±e(1/5)}. Its image is exactly C, and its kernel has dimension 29. Consequently C ≅ ρ₅⁻ ⊗ ρ₇⁻ ⊗ χ³, where ρ₅⁻ ⊗ ρ₇⁻ is the 6-dimensional subspace of ρ₃₅ that is odd under both local reflections Z₅ and Z₇.
+    *Proof and certificate.*
+    - **Upper bound.** dim ≤ 1 from an exact mod-p rank computation at p = 29 401 and p = 14 729 401 (p ≡ 1 mod 29 400; `SF/A32_35_to_rho7/exact_hom.py`).
+    - **Lower bound.** The explicit 35 × 42 matrix Y with unit entries (`SF/A32_35_to_rho7/X_chi3.npy`) satisfies Y·S₃₅′ = S_7·Y (210 of 210 entries) and Y·T₃₅′ = T_7·Y (24 of 24 entries), exactly in Z[Z/29400] modulo Φ₂₉₄₀₀ (`SF/A32_35_to_rho7/exact_verify.py`). Generators suffice.
+    - **Rank and image.** The six image rows have disjoint column supports, so the rank is 6. The image is a 6-dimensional subrepresentation of W = E ⊕ C. By entry 32 it must be C.
+    - **Kernel and isomorphism.** The kernel contains the 11 labels with a zero local component and the 18-dimensional complement of the (−,−) sector on the 24 primitive labels, so Φ restricted to ρ₅⁻ ⊗ ρ₇⁻ ⊗ χ³ is an isomorphism onto C.
+
+37. **Theorem (elementary rules).** For all α, β ∈ Q² and x ∈ Q:
+    - G_{α+n,β} = G_{α,β} for every n ∈ Z²;
+    - G_{α,β+λ} = e(B(α,λ))·G_{α,β} whenever Aλ ∈ Z²;
+    - G_{gα,gβ} = G_{α,β} for every g ∈ GL₂(Z) with gᵀAg = A.
+
+    *Proof.* The first rule holds because α + n + Z² = α + Z². For the second, write ν = α + n; then B(n,λ) = nᵀAλ ∈ Z, so the factor is e(B(α,λ)). For the third, ν ↦ gν is a bijection of α + Z² onto gα + Z² with Q(gν) = Q(ν) and B(gν,gβ) = B(ν,β), and it preserves means of periodic functions.
+
+
+38. **Theorem (automorph and the local reflection Z₇).** Let γ = [[−1,−7],[2,13]]. Then:
+    - γᵀAγ = A and det γ = 1;
+    - γ⁻¹ acts on D as Z₇, i.e. as the identity on D₅ and as −1 on D₇;
+    - γ⁻¹a − a = (7, −1) ∈ Z².
+
+    Consequently the vectors K2, K3 and K4 are Z₇-invariant: g_μ = g_{Z₇μ} for every μ ∈ D. So their Z₇-odd parts vanish, and in particular their ρ₅⁻ ⊗ ρ₇⁻ parts vanish. K1 is Z₇-odd, and K1 ≡ 0 (entry 42), so the ρ₅⁻ ⊗ ρ₇⁻ part of each of K1–K4 is 0. Hence the image of each of K1–K4 under the χ³-twisted map Φ of entry 36 is 0.
+    *Proof.* The identities for γ are a direct computation in integer and rational arithmetic. By the first and third rules of entry 37, G_{α,β} = G_{γ⁻¹α, γ⁻¹β}. By the first rule, γ⁻¹(a+μ) ≡ a + Z₇μ mod Z², and by the second rule the class of the β-argument can be moved back with an explicit phase. For K2, K3 and K4 these phases equal 1 for all 35 μ; for K1 the phase is ½, i.e. the factor is −1. Φ factors through the projection onto ρ₅⁻ ⊗ ρ₇⁻ (entry 36). *Certificate:* exact rational check of all phases for the 35 values of μ (`SF/A33_law_vector_chi3/exact_z7.py`, output `exact_z7.json`).
+
+
+39. **Theorem (T-law and S-law).** For all α, β ∈ Q² and x ∈ Q:
+    - **T-law:** G_{α,β}(x+1) = e(−Q(α) − B(α,h_A))·G_{α, β+α+h_A}(x);
+    - **S-law:** for x ≠ 0, G_{α,β}(−1/x) = (1/(|x|√35))·e(B(α,β))·Σ_{p∈D} G_{β+p, −α}(x).
+
+    *Proof.* *T-law.* For n ∈ Z², Q(n) = n₁² + 7n₁n₂ + (7/2)n₂² ≡ (7/2)n₂ ≡ B(n,h_A) mod 1, because n₂² ≡ n₂ mod 2. With ν = α + n, this gives Q(ν) ≡ Q(α) + B(n,α) + B(n,h_A) ≡ B(ν, α + h_A) − Q(α) − B(α,h_A) mod 1. Substituting into the mean proves the law.
+    *S-law.* Fix y ≠ 0 and t > 0, and put Z = yA + itI. Let f(ν) = exp(πi·νᵀZν + 2πi·B(ν,β)). Poisson summation gives Σ_{ν∈α+Z²} f(ν) = det(−iZ)^{−1/2}·Σ_{w∈Z²} e(wᵀα)·exp(−πi(w − Aβ)ᵀZ⁻¹(w − Aβ)). Substitute w − Aβ = −Aγ', so that γ' runs over β + A⁻¹Z² and e(wᵀα) = e(B(α,β) − B(γ',α)). Now let t → 0.
+    - *Left side.* The integrand is periodic, so t·(left side) → G_{α,β}(y), up to an exponentially small error.
+    - *Determinant.* A has eigenvalues λ₁ > 0 > λ₂. With principal branches, det(−iZ)^{1/2} → √(|y|λ₁)e^{∓iπ/4}·√(|y||λ₂|)e^{±iπ/4} = |y|√35 for either sign of y.
+    - *Exponent.* AZ⁻¹A = A/y − (it/y²)I + O(t²). On the coset β + A⁻¹Z² (density 35), the right side is therefore a periodic phase e(−Q(γ')/y − B(γ',α)) times the Gaussian e^{−πt|γ'|²/y²}, up to O(1). Summing gives 35·(mean)·y²/t. The mean over β + A⁻¹Z² equals (1/35)Σ_{p∈D} G_{β+p,−α}(−1/y).
+    - *Conclusion.* Comparing the 1/t terms, G_{α,β}(y) = (|y|/√35)·e(B(α,β))·Σ_p G_{β+p,−α}(−1/y). Putting y = −1/x gives the S-law.
+
+    *Closed forms.* Reducing every term with entry 37, both laws map the 105 symbols K2 ∪ K3 ∪ K4 into their own span. The S-matrix M_S has rows (1/√35)·Σ of 35 terms of the form e(k/9800). The T-matrix M_T is monomial with phases e(k/9800): it is diagonal on K2 and swaps K3_μ ↔ K4_μ. The family K1 is mapped into its own span by both laws. (`SF/A35_lawspace_exact/symbols.py`.)
+
+
+40. **Theorem.** dim V = 36, and V is closed under S and T, i.e. under x ↦ −1/x with the weight |x|⁻¹ of entry 39, and under x ↦ x + 1.
+    *Proof and certificate.*
+    - *Upper bound.* By the third rule of entry 37, applied to the 12 automorphs of A found with entries of absolute value ≤ 40 (including ±I and γ), the 105 symbols fall into orbits, 12 in each of K2, K3 and K4. Within an orbit, every symbol is e(k/9800) times the orbit representative. So V is spanned by the 3·12 orbit representatives, and dim V ≤ 36 (`SF/A35_lawspace_exact/orbits.py`).
+    - *Lower bound.* The Gauss means of all 105 symbols are evaluated exactly mod p at the 48 rationals h/m with 1 ≤ m ≤ 6 and −2m ≤ h < 2m, for p = 1 764 001 and p = 6 468 001 (both ≡ 1 mod 588 000, with ζ sent to a root of unity of F_p). At both primes the rank equals the number of orbit representatives, 3·12. The values lie in Z[ζ][1/(4m)²], and rank can only drop under reduction, so the rank in characteristic 0 is ≥ 36 (`SF/A35_lawspace_exact/exact_dim.py`, `exact_dim.json`).
+    - *Closure.* By entry 39, both laws hold for all x and map symbols to combinations of symbols, so V is S- and T-stable. The orbit representatives form a basis.
+
+
+41. **Theorem.** V ≅ E as SL₂(Z)-representations, with no twist. Moreover, for every k ∈ Z/12: Hom(V ⊗ χᵏ, C) = Hom(C, V ⊗ χᵏ) = 0; Hom(V ⊗ χᵏ, E) = 0 for k ≠ 0; and End(V) is 1-dimensional. In particular no χᵏ-twist of the 35-component law vector maps non-trivially to C, including k = 3.
+    *Proof and certificate.*
+    - *Hom dimensions.* The intertwining equations are solved over F_p at two primes with ζ mapped into F_p (A32's method). Each mod-p dimension is an upper bound for the dimension in characteristic 0. The results are End(V) = 1, Hom(V,E) = Hom(E,V) = 1, Hom(V⊗χᵏ,C) = Hom(C,V⊗χᵏ) = 0 for all k, and Hom(V⊗χᵏ,E) = 0 for k ≠ 0, identically at both primes (`SF/A35_lawspace_exact/exact_main.py`, `exact_main.json`).
+    - *Explicit isomorphism.* Let N = 58 800. On V and on E, T is monomial, and its exact eigenbases P_V and P_E lie over Z[½, ζ_N] (P⁻¹P = I verified exactly). The two spectra coincide, and each eigenvalue occurs with multiplicity 1. Put X = P_E·Π·diag(c)·P_V⁻¹, where Π matches equal eigenvalues and each c_i is a root of unity ζ_N^{e_i}. Then X·T_V = T_E·X by construction. X·S_V = S_E·X was verified exactly modulo Φ₅₈₈₀₀ in all 1296 entries; the common factor 1/√35 cancels. X is invertible as a product of invertible matrices (`SF/A35_lawspace_exact/exact_intertwiner.py`, `exact_intertwiner.json`).
+
+
+42. **Theorem.** K1 ≡ 0 on Q.
+    *Proof.* *x = 0:* G_{α,a}(0) = e(B(α,a))·(mean over n ∈ Z² of e(nᵀAa)). Since Aa = (0, 7/2), this is the mean of (−1)^{n₂}, which is 0. *Closure:* by entry 39, T maps K1 to K1 monomially, and S maps K1 to linear combinations of K1. *Induction on the denominator:* for integers n, K1(n) = M_Tⁿ·K1(0) = 0. For x = h/m in lowest terms with m ≥ 2, write x = n + r/m with 0 < r < m. By the T-law, K1(x) is a monomial image of K1(r/m), and by the S-law K1(r/m) = (r/m)·M_S·K1(−m/r). Here −m/r has the smaller denominator r, so the induction closes.
+
+
+## 4. T3 and budget arithmetic
+
+T3(n) is defined by:
+- T3(n) = n/3 for n ≡ 0 mod 3;
+- T3(n) = (4n + 2)/3 for n ≡ 1 mod 3;
+- T3(n) = (2n + 1)/3 for n ≡ 2 mod 3 (in the integer form of `SF/A20`).
+
+σ(n) is the number of steps needed to reach 1.
+
+43. **Theorem.** With the integer form, T3 maps positive integers to positive integers. The expression (2n + 1)/3 is not an integer for n ≡ 2 mod 3; for example, (2·2 + 1)/3 = 5/3.
+    *Proof.* Check each residue class mod 3. (`SF/A20`, `SF/A25`.)
+44. **Theorem.** σ(3ᵏm) = k + σ(m), and σ(3ᵏ) = k.
+    *Proof.* T3(3n) = n. Use induction on k. (`SF/A23`, `SF/A24`.)
+45. **Theorem.** If σ(n) ≤ 539, then T3^{539}(n) = 1 when σ(n) is odd, and T3^{539}(n) = 2 when σ(n) is even.
+    *Proof.* T3 alternates 1 ↦ 2 ↦ 1. After reaching 1 at step σ(n), the remaining 539 − σ(n) steps alternate. (`SF/A23_axiom01_revised/REPORT.md`.)
+46. **Theorem.** If σ(n) ≤ 540, then T3^{540}(n) = 1 iff σ(n) is even. In particular T3^{540}(4880) = 1, and among n ≤ 10⁶, exactly 504 899 end at 1 and 495 101 end at 2.
+    *Proof.* As in entry 45. The counts are an exact enumeration (`SF/A30_540_thermo/tests540.py`).
+47. **Theorem.** For every j ≥ 1, the map n mod 3ʲ ↦ (T3ˢ(n) mod 3)_{0≤s<j} is a bijection from Z/3ʲ onto the words of length j over {0, 1, 2}.
+    *Proof.* Induction on j. On each residue class mod 3, T3 is affine with leading coefficient 1/3 or 4/3 or 2/3. So T3(n) mod 3^{j−1} is determined by n mod 3ʲ, and it runs over all classes mod 3^{j−1} as n runs over a fixed class mod 3. Exhaustive check for j ≤ 8: `SF/A29_patterns_all/run_core.py`.
+48. **Theorem.** T3 does not induce a map on Z/9 (and more generally on Z/3ʲ).
+    *Proof.* By entry 47, T3(n) mod 3ʲ depends on n mod 3^{j+1} and not on n mod 3ʲ.
+49. **Theorem.** Each m has an explicit list of T3-preimages. Moreover, T3(n) + 2 ≤ (4/3)(n + 2), with equality iff n ≡ 1 mod 3.
+    *Proof.* The preimages are found by inverting each branch. For the inequality: n ≡ 1 gives equality, and the other branches give strictly less. (`SF/A24_threshold_1e18`.)
+50. **Theorem.** ⌊(4880 − 21)/9⌋ = 539.
+    *Proof.* 4859/9 = 539.89. (`SF/A20`, `SF/A23`.)
+51. **Theorem.** ⌊3⁵e³⌋ = 4880 and ⌊35e³⌋ = 702.
+    *Proof.* 3⁵e³ = 4880.84 and 35e³ = 702.99, both evaluated with rigorous error bounds. (`SF/A19`, `SF/A25`.)
+52. **Theorem.**
+    - 540 = 2²·3³·5 = 4860/9.
+    - ⌊(4880 − f)/9⌋ = 540 exactly for f = 12, …, 20.
+    - 539.9 = 540(1 − 1/5400).
+    - 5399 is prime. Hence e^{2πi/539.9} = e^{2πi·10/5399} is a primitive 5399th root of unity, and its 539th power is not 1. Moreover, 539 steps of the phase e^{2πi/539.9} give 5390/5399 of a full turn.
+    - The beat period of 540 against 539.9 is 2 915 460.
+
+    *Proof.* Direct computation. Primality of 5399 is checked by trial division up to 73. (`SF/A25`, `SF/A30`.)
+53. **Certificate.** Let m₅₃₉ be the smallest n with σ(n) = 539. Then:
+    - 10⁷ < m₅₃₉ ≤ 788 638 819 521 764 360 564 859 602 047 870.
+    - For every d ≤ 291 there is a seed below 10¹⁸ with σ = d.
+    - σ(666 954 248 808 172 552) = 291.
+
+    The method is exact integer iteration (`SF/A24_threshold_1e18/exact_min.py`, `beam.py`).
+54. **Certificate (exact counts).**
+    - max_{n ≤ 20 000} σ(n) = 53, attained at n = 16261.
+    - max_{n ≤ 50 000} σ(n) = 55, attained at n = 36043 and 36592.
+    - σ(4880) = 14 and σ(10¹⁸) = σ(10¹⁸ + 1) = 92.
+    - σ(3^{539}) = 539.
+    - Every n ≤ 10⁷ satisfies σ(n) ≤ 539.
+    - σ(3^{540}) = 540, and T3^{539}(3^{540}) = 3.
+
+    The method is exact integer iteration (`SF/A19_9maths_axioms/checks.py`, `SF/A23_axiom01_revised/budget.py`, `SF/A28`).
+55. **Theorem.**
+    - φ⁷ = (29 + 13√5)/2.
+    - 1001 = 7·11·13.
+    - 18 + 1 + 520 = 539.
+    - 243 − 244 + 55 = 54.
+    - 4·8 + 5·12 = 92.
+    - 4·122 = 488.
+
+    *Proof.* Direct computation. For φ⁷, use φⁿ = (Lₙ + Fₙ√5)/2 with L₇ = 29 and F₇ = 13.
+56. **Theorem.** Consider any lift of T3 in which the integer coordinate evolves by T3 and steps are counted one-to-one. In any such lift, the number of steps to reach 1 is exactly σ(n).
+    *Proof.* The projection to the integer coordinate is a step-preserving semiconjugacy. (`SF/A20_T3_bulk_vs_shadow`.)
+
+## 5. The H3 orbit map
+
+Φ(n) = Σ_{s<539} w(r_s(n)) ∈ ⟨c⟩ ≅ Z/N, where r_s(n) = T3ˢ(n) mod 3, and w: {0, 1, 2} → Z/N.
+
+57. **Theorem.** Φ is well defined for every n ≥ 1.
+    *Proof.* The sum is finite (539 terms) and every T3ˢ(n) is defined. (`SF/A28_H3_map_construction/REPORT.md`.)
+58. **Theorem (cocycle law).** Let S_k(n) = Σ_{s<k} w(r_s(n)). Then S_{k+l}(n) = S_k(n) + S_l(T3ᵏn). Hence w induces a monoid homomorphism {0, 1, 2}* → Z/N.
+    *Proof.* Split the sum at s = k.
+59. **Theorem (tail formula).** If σ(n) ≤ 539 and L = 539 − σ(n), then Φ(n) = S_σ(n) + ⌈L/2⌉w(1) + ⌊L/2⌋w(2).
+    *Proof.* Apply entry 58 at k = σ(n). The tail orbit is 1, 2, 1, 2, …, with residues 1, 2, 1, 2, …. An exact check on 301 seeds × 9 weight choices is in `SF/A28_H3_map_construction/h3map.py`.
+60. **Theorem.** Replacing the generator c by another generator multiplies Φ by a unit of Z/N. This preserves the zero set of Φ, its additive order, and τ. The manifolds M_A and M_B, with Z/N coefficients, give identical values.
+    *Proof.* Φ depends only on the cyclic group ⟨c⟩ ≅ Z/N.
+61. **Theorem.**
+    - Tors H³(M_A; Z) = Z/N, and there is no self-linking form on H³ in dimension 7.
+    - For M_B = L⁷(N), H³(M_B; Z) = 0 and H³(M_B; Z/N) = Z/N.
+
+    *Proof.* Standard: universal coefficients, and the cellular chain complex of a lens space. A linking form in dimension 7 pairs H³ with H⁴, not H³ with itself. (`SF/A28`.)
+62. **Theorem.** Let T = d + (ζ(t) − 1)H₃∧. Then T² = 0 iff dt ∧ H₃ = 0 and dH₃ = 0. A torsion class has no non-zero de Rham representative. On M_A, H₃ is exact, and T = e^{−fB} ∘ d ∘ e^{fB}; hence the T-cohomology is isomorphic to de Rham cohomology.
+    *Proof.* Expand T². de Rham cohomology is a real vector space, so torsion maps to 0. If H₃ = dB, conjugate d by the exponential. (`SF/A25`, `SF/A28`.)
+
+## 6. Non-existence and vanishing results
+
+63. **Theorem.** There exist positive integers n with σ(n) > 539. Specifically, σ(3^{540}) = 540.
+    *Proof.* Entry 44.
+64. **Theorem.** For every k ≥ 38 with k ≠ 539, σ(3ᵏ) = k ≠ 539, and 3ᵏ > 10¹⁸. Hence σ is not constantly equal to 539 on n ≥ 10¹⁸.
+    *Proof.* Entry 44, together with 3^{38} > 10¹⁸.
+65. **Theorem.**
+    - 3·61 + 162 + 223 = 568.
+    - 244 − 18 − 1 = 225.
+    - The alternating sum of the sequence of Betti numbers recorded in `SF/A25` is −162.
+    - A closed oriented 7-manifold has b₃ = b₄. Hence no closed oriented 7-manifold has b₃ = 223 and b₄ = 61.
+    - With χ = 0 and rk = 3, χ/2 + rk = 3.
+    - 3¹⁸ < 10⁹.
+
+    *Proof.* Direct computation. b₃ = b₄ follows from Poincaré duality. (`SF/A25`.)
+66. **Theorem.** 540·{2, 3, 4, 5, 10} = {1080, 1620, 2160, 2700, 5400}. None of these is an integer multiple of 539.9.
+    *Proof.* k·540/539.9 = 5400k/5399. Since 5399 is prime and does not divide 5400k for these k, the quotient is not an integer. (`SF/A19`, `SF/A23`.)
+67. **Theorem.**
+    - 540/(1 + 1/540) = 291600/541 ≈ 539.0018.
+    - 540/(1 + 0.01·0.185) ≈ 539.0028.
+    - 540(1 − 0.0001) = 539.946.
+    - 540/(1 + δ) = 539.9 iff δ = 1/5399.
+
+    *Proof.* Direct computation. (`SF/A30`.)
+68. **Theorem.** Let ω > 0 and let A, κ be constants with κ ≠ 0. Consider the ordinary differential equation (★) AΦ″(t) = κ sin(ωt)Φ(t). This is the spatially homogeneous form (Φ = Φ(t), constant coefficients) of the friction-coupled equation ∂_t²Φ + c ∂_t²Φ = κ sin(ωt)Φ + βg ∂_t²Φ, with A = 1 + c − βg.
+    - (i) For every Φ₀ and every (a, b) ≠ (0, 0), the function Φ₀ + a cos ωt + b sin ωt is not a solution of (★).
+    - (ii) If A ≠ 0, then (★) has no solution that attracts all solutions.
+    - (iii) If A = 0, the only solution is Φ ≡ 0.
+
+    *Proof.* (i) The left side has only the frequency ω. The right side equals κΦ₀ sin ωt + (κa/2) sin 2ωt + (κb/2)(1 − cos 2ωt). Equating the coefficients of sin 2ωt and cos 2ωt gives a = b = 0. (ii) Write (★) as x′ = M(t)x with x = (Φ, Φ′) and M = (0, 1; κA^{−1} sin ωt, 0). Since tr M = 0, Liouville's formula shows that the monodromy matrix has determinant 1. Suppose a solution p satisfies |x(t) − p(t)| → 0 for every solution x. The differences x − p run over all solutions, so every solution would tend to 0. Then both Floquet multipliers would have modulus less than 1, which contradicts determinant 1. (iii) If A = 0, then κ sin(ωt)Φ(t) = 0. So Φ vanishes wherever sin ωt ≠ 0, and by continuity everywhere.
+
+69. **Theorem.** Let V ∈ {ρ₃₅, ρ₃₅*}, U ∈ {ρ_7|W, ρ_7|W*} and k ∈ Z/12. Then Hom_{SL₂(Z)}(V ⊗ χᵏ, U) = 0 and Hom_{SL₂(Z)}(U, V ⊗ χᵏ) = 0, except in the two cases (V, k, U) = (ρ₃₅, 3, ρ_7|W) and (ρ₃₅*, 9, ρ_7|W*), where the dimension is 1 (entry 36 and its complex conjugate). In particular there is no non-zero intertwiner ρ₃₅ → ρ_7|W. All 12 T-eigenvalues of ρ₃₅ occur in ρ_7|W, so the vanishing is forced by S, not by the T-spectra.
+    *Certificate.* The equations XS₁ = S₂X and XT₁ = T₂X are solved over F_p with ζ ↦ a primitive 29 400th root of unity. This was done at p = 29 401 and p = 14 729 401, with identical results. 96 Hom spaces were computed, and the mod-p nullity is 0 in each case listed. (`SF/A32_35_to_rho7/exact_hom.py`, `run.py`, `results.json`.)
+70. **Theorem.** Let s ∈ {8, 10, 16, 18}, let L be the conductor of the label data, and let Ŝ = √|D|·S. There is no triple (a, u, k), with a ∈ (Z/L)^×, u ∈ (Z/D)^× and k ∈ Z, such that σ_a(T) = M_u T^k M_u^{−1} and σ_a(Ŝ) = −M_u Ŝ M_u^{−1}. Here σ_a is the Galois automorphism ζ_L ↦ ζ_L^a, and M_u is the label dilation x ↦ ux.
+    *Certificate.* `SF/A8c_Spairing_even/scripts/galois_dilation_fast.py`. For each (a, u), it searches exhaustively for k by testing the T-identity exactly as an identity of monomial matrices with integer phases. For every compatible triple it then tests the Ŝ-identity entrywise modulo one prime 𝔭 | p with p ≡ 1 mod L. An identity in characteristic 0 survives reduction, and the signs +1 and −1 cannot both hold mod 𝔭, because p is odd and Ŝ is invertible. Results: (compatible triples, sign +1, sign −1) = (1024, 128, 0), (4096, 256, 0), (36864, 768, 0), (36864, 768, 0) at s = 8, 10, 16, 18. At s = 12 and 14 there are sign −1 solutions, which exercises the test.
+71. **Theorem.** Let h(D) be the wide class number of discriminant D. Let K_s = Q(√(s(s−2))) with discriminant d_K, and let 4n_s = 4s(s−2).
+    - (i) h(d_K) = 1 at s = 9, 11, 25, 27 and h(d_K) = 2 at s = 29. In each case dim S(ρ_s) ≠ h(d_K)/2.
+    - (ii) h(4n_23) = 4 and dim S(ρ_23) = 3. In particular dim S(ρ_23) ∉ {h/2, h}.
+
+    *Proof.* The class numbers are computed exactly by counting the cycles of reduced primitive indefinite forms under Gauss reduction. Two reduced forms are properly equivalent iff they lie on the same cycle. The wide classes are the orbits of the cycles under (a,b,c) ↦ (−a,b,−c). (Script: `SF/A34_ledger_checks/scripts/classno_exact.py`, output `classno_exact.json`.) The dimensions are those of entries 19, 20, 22 and 23: dim = 1, 2, 3 at s = 9, 11, 25; dim ≥ 3 at s = 27, 29; dim = 3 at s = 23. In (i), the values h/2 are 1/2 at s = 9, 11, 25, 27 and 1 at s = 29, and none of them equals the dimension.
+
+72. **Theorem.** Assume I1–I5. At s = 56, the multiplicities of the eigenvalues (1, ω, ω̄) of R = ST are (187, 186, 187) on E and (84, 84, 84) on C.
+    *Proof.* *dim E = 560.* By entry 7(iii), dim E = dim E0_{27}·dim E0_7·dim E0_2. The two odd factors are 14 and 4 (entry 7(i)). The 2-adic factor is the dimension for an order-16 class (2,1/4) ⊕ (8, −u/16). For these classes, `SF/A11_induction/exact_E0.py` certifies that the span is exactly 10-dimensional for u ≡ 1 mod 4 and exactly 9-dimensional for u ≡ 3 mod 4 (`logs_exact_E0.txt`). So dim E ∈ {504, 560}. A mod-ℓ Krylov rank (`SF/A31_entry7_check/global_trE.py`, two primes) gives dim E ≥ 560, so dim E = 560.
+    *Multiplicities.* At s = 56, (Exc) holds and s ≡ 2 mod 3, so entry 11 gives tr_E R = tr_W R = −ω. Write (n₁, n_ω, n_ω̄) for the multiplicities on E. Then n₁ + n_ω + n_ω̄ = 560 and n₁ + ωn_ω + ω̄n_ω̄ = −ω. Comparing imaginary parts gives n_ω̄ = n_ω + 1, and comparing real parts gives n₁ = n_ω + 1. Hence 3n_ω + 2 = 560, and the multiplicities are (187, 186, 187). On C, dim C = dim W − dim E = 812 − 560 = 252, where dim W = t(t+1) with t = 28 is an orbit count. Also tr_C R = tr_W R − tr_E R = 0, so the three multiplicities are equal, namely 84.
+

@@ -1,0 +1,10 @@
+s=27 N=2700 Tlevel=2700 primes=[8101, 21601, 32401, 43201, 54001, 56701, 70201, 72901] ell=999998460001 L=3645000 E=16200
+class of p-ideal (narrow idx, wide idx): {8101: (3, 3), 21601: (3, 3), 32401: (0, 0), 43201: (4, 4), 54001: (4, 4), 56701: (3, 3), 70201: (3, 3), 72901: (3, 3)} principal narrow idx 0
+((3, 1), (5, 1)) Eis present; cusp rank 1; exact lambda via a(p0^2 m), p0=8101 col (-1, 1946) (16s); all in Lambda_E: True orders [3, 3, 1, 3, 3, 3, 3, 3] ratios==1? [True, True, False, True, True, True, True, True]
+((3, 1), (5, -1)) {'c0_rows': 0, 'rank_modl': 0, 'note': 'rank 0: search not implemented'}
+((3, -1), (5, 1)) {'c0_rows': 0, 'rank_modl': 0, 'note': 'rank 0: search not implemented'}
+((3, -1), (5, -1)) rank 2: T_p0 on span solved from a(p0^2 m) (46s); extra-column checks [True, True]
+   system: all in Lambda_E: True orders [1, 1, 2, 1, 1, 1, 1, 1]
+   system: all in Lambda_E: True orders [3, 3, 2, 3, 3, 3, 3, 3]
+((3, -1), (5, -1)) rank 2: #admissible mu = 2
+done

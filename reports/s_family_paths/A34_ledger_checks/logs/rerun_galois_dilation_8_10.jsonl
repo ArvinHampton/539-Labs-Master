@@ -1,0 +1,2 @@
+{"s": 8, "s_mod8": 0, "L": 192, "p": 100417, "ord_T": 48, "n_dilations": 16, "n_T_compatible": 1024, "n_eps_plus": 128, "n_eps_minus": 0, "eps_minus_examples": []}
+{"s": 10, "s_mod8": 2, "L": 320, "p": 100801, "ord_T": 80, "n_dilations": 32, "n_T_compatible": 4096, "n_eps_plus": 256, "n_eps_minus": 0, "eps_minus_examples": []}

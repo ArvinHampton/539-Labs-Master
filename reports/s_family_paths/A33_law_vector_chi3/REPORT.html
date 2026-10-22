@@ -1,0 +1,155 @@
+<html><head><meta charset="utf-8"><style>body{font-family:"DejaVu Sans",sans-serif;font-size:10pt;max-width:900px;margin:auto}table{border-collapse:collapse}td,th{border:1px solid #888;padding:3px 6px}code{font-family:"DejaVu Sans Mono",monospace}</style></head><body><h1>A33: The 35-component "law vector" (Residual-Law B3) and the χ³ sector</h1>
+<p><strong>For:</strong> Arvin Hampton (539 Labs) · 2026-10-22, about 10:36 AM CDT.</p>
+<p><strong>Folder:</strong> <code>reports/s_family_paths/A33_law_vector_chi3/</code></p>
+<ul>
+<li>Scripts: <code>law.py</code>, <code>module.py</code>, <code>to_rho7.py</code>, <code>spec_check.py</code>, <code>sectors.py</code>, <code>exact_z7.py</code>.</li>
+<li>Outputs: <code>weil_fit.json</code>, <code>module.json</code>, <code>module.npz</code>, <code>to_rho7.json</code>, <code>spec_check.json</code>, <code>sectors.json</code>, <code>exact_z7.json</code>, <code>g_K*.npy</code>.</li>
+<li>Preregistration: <code>prereg.md</code>, SHA-256 <code>b5bff8ae8652c9e86bf1410e1f8890a3126e1d0d3fd7721138b5c11048e0752c</code>. It was hashed at 10:28 AM CDT, before any computation, and re-verified when this report was written.</li>
+</ul>
+<p><strong>Ground rules</strong></p>
+<ul>
+<li>CORE_FREEZE: H_s was not redefined and certifier code was not touched.</li>
+<li>A32 outputs, <code>RTA_prereg/results/run_all.py</code> (EC, the source of ρ_7|W, E and C) and <code>weil_family</code> were imported read-only.</li>
+<li>New files only. Nothing was pushed or sent. No TPC or RH claims.</li>
+<li><strong>Cat A</strong> = exact or proved. <strong>Cat B</strong> = floating point or interpretation.</li>
+</ul>
+<h2>Verdict: <strong>does not land</strong> (Cat B for the full statement; the key vanishing is Cat A)</h2>
+<ul>
+<li><strong>Exact (Cat A):</strong> every candidate law vector built from the source's profiles is <strong>even under the local reflection Z₇</strong>.</li>
+<li>So its ρ₅⁻⊗ρ₇⁻ component, which A32's χ³ map Φ needs, is identically zero.</li>
+<li>The one exception is the (a,a) characteristic K1. That candidate is identically zero numerically (Cat B) and does not appear in the source's laws.</li>
+<li><strong>Floating point (Cat B, large gaps):</strong> the profiles do not form a ρ₃₅-module at all.</li>
+<li>Together with their S and T translates, they span a <strong>36-dimensional irreducible</strong> SL₂(Z)-module V.</li>
+<li><strong>V ≅ E</strong>, the 36-dimensional part of ρ_7|W, <strong>with no twist</strong>.</li>
+<li><strong>Hom(V⊗χᵏ, C) = 0 for all 12 k</strong> (and for duals). So neither law·η⁶ nor law/η⁶, nor any other η^{2k} twist, reaches C.</li>
+</ul>
+<h2>1. Where the law is defined (sources)</h2>
+<ul>
+<li><strong>Primary source.</strong> <code>docs/.../Bridge_C_Residual_Law_2026-10-17/2026-10-17-Bridge-C-Residual-Law.md</code>, line 173, <strong>B3 "Vector-valued escape"</strong>. It says:</li>
+<li>over the 35 characteristic components (Zwegers Cor. 2.9(5) shape), the leading profiles G_μ(x) should transform by the weight-1 Weil representation;</li>
+<li>the expected law covers <strong>the singular parts only</strong>, and the cone sums themselves stay non-modular;</li>
+<li>status: <strong>"Not attempted"</strong>.</li>
+<li><strong>Other places the same item appears.</strong></li>
+<li>Line 31 and next step (b) at line 196 of the same file.</li>
+<li>The same text is filed as <strong>B2</strong> in <code>CatB_Notes_Bridge_C_Residual_Law_2026-10-17.md</code>.</li>
+<li><code>ERRATUM_Bridge_C_tminushalf_Coefficient_2026-10-17.md</code> E3: the leading order was later checked.</li>
+<li><code>P_s_Structure_2026-10-17/2026-10-17-P_s-Structure.md</code> §A5, <code>weil_test.py</code>: the S-law and T-law were checked at 27 + 6 points. The scripts there already speak of a <strong>"36-component family"</strong>.</li>
+<li>RTA_prereg Amendment 2 and A32 only cite it.</li>
+<li><strong>What the law is.</strong> It is <strong>not a q-series and not an eta or theta quotient.</strong></li>
+<li>
+<p>Its components are functions on Q:
+    G_{α,β}(x) = mean over ν ∈ α+Z² of e(x·Q(ν) + B(ν,β)), with Q(ν) = ½νᵀAν and A = [[2,7],[7,7]].</p>
+</li>
+<li>
+<p>Each one is the coefficient of the 1/t singularity of a cone sum at q = e(x)e^{−t}.</p>
+</li>
+<li>The law expresses weight 1 in "profile form": g(−1/x) = x^{−1}·M_S·g(x) and g(x+1) = M_T·g(x).</li>
+<li><strong>There is no principal part and no Fourier expansion.</strong> Baker's theorem excludes an exact holomorphic vector-valued law with algebraic data (P_s ledger, A5).</li>
+<li>So item (2) of the brief, "q-expansions", does not apply. What can be built exactly is the finite Gauss-mean value at each rational x.</li>
+<li><strong>What the source leaves open.</strong> It does not say which 35 pairs (α,β) make up the vector. The preregistered candidates, with μ ∈ D = A⁻¹Z²/Z² and the source's characteristic a = (7/10, −1/5), are:</li>
+<li>K1 = G_{a+μ, a}</li>
+<li>K2 = G_{a+μ, 0}</li>
+<li>K3 = G_{μ, a}</li>
+<li>K4 = G_{μ, 0}</li>
+<li>Fact (Cat A): a ≡ ½A⁻¹A* mod A⁻¹Z².</li>
+</ul>
+<h2>2. Construction and transformation tests</h2>
+<ul>
+<li><strong>How the values were computed.</strong> Each G is an exact finite mean over a 4m × 4m box. The phases are integers mod 9800m, so no phase rounding occurs; the exponentials themselves are evaluated in floating point.</li>
+<li>Coverage: 216 rationals h/m with m ≤ 15 (138 rationals with m ≤ 12 in <code>law.py</code>).</li>
+<li><strong>Each candidate against ρ₃₅⊗χᵏ</strong> (A32 labels; ε = i; all 12 k; ρ and dual; weight factor x^{±1}), from <code>weil_fit.json</code>:</li>
+<li><strong>K1:</strong> identically 0 (|g| ≤ 4·10⁻¹⁶). It trivially satisfies every law.</li>
+<li><strong>K4:</strong> the S-law holds as ρ₃₅⊗χ, with error 7·10⁻¹⁵ and weight factor x^{−1}. <strong>The T-law fails</strong> (error 1): T moves the twist β from 0 to the class of a.</li>
+<li><strong>K2, K3:</strong> they fail both laws.</li>
+<li><strong>None of the 35-vectors is a ρ₃₅⊗χᵏ vector.</strong> This is expected for the <strong>odd</strong> lattice A_7. As with θ₂, θ₃, θ₄, T permutes the characteristic classes: K4 →T K3 →S K2.</li>
+<li><strong>The module V</strong> (<code>module.py</code>).</li>
+<li>The 105 functions K2∪K3∪K4 span a space of <strong>dimension 36</strong>, with singular values 1.57 against 3·10⁻¹⁴.</li>
+<li>The space is closed under S and T: the out-of-span residual is 4·10⁻¹⁵.</li>
+<li>The fitted M_S and M_T satisfy S⁴ = 1 and (ST)³ = S² to 2·10⁻¹⁴.</li>
+<li>dim End(V) = 1, so V is irreducible (Cat B).</li>
+</ul>
+<h2>3. Decomposition and the χ³ map</h2>
+<ul>
+<li><strong>Exact (Cat A), from <code>exact_z7.py</code>, all in rational arithmetic.</strong></li>
+<li>γ = [[−1,−7],[2,13]] satisfies γᵀAγ = A and det γ = 1.</li>
+<li>γ⁻¹ acts on D <strong>exactly as the local reflection Z₇</strong>: identity on D₅ and −1 on D₇.</li>
+<li>γ⁻¹a − a = (7, −1) ∈ Z².</li>
+<li>Changing variables ν ↦ γν gives G_{α,β} = G_{γ⁻¹α, γ⁻¹β}. Shifting β by λ ∈ A⁻¹Z² multiplies G by e(B(α,λ)).</li>
+<li>Checking these phases for all 35 μ gives <strong>g_μ = g_{Z₇μ} exactly for K2, K3 and K4</strong>. So each of these has <strong>zero Z₇-odd part, and in particular zero ρ₅⁻⊗ρ₇⁻ part</strong>.</li>
+<li>For K1 the phase is ½, so K1 is exactly Z₇-odd. K1 is nevertheless 0 on every test point (Cat B); this was not proved in general.</li>
+<li><strong>Sector norms (Cat B), from <code>sectors.json</code>, maximum over the test rationals.</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>candidate</th>
+<th>(+,+)</th>
+<th>(+,−)</th>
+<th>(−,+)</th>
+<th>(−,−)</th>
+<th>max|Φ g|</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K2</td>
+<td>1.0</td>
+<td>3e−17</td>
+<td>0.95</td>
+<td>3e−17</td>
+<td>2e−16</td>
+</tr>
+<tr>
+<td>K3</td>
+<td>1.0</td>
+<td>6e−17</td>
+<td>0.95</td>
+<td>2e−17</td>
+<td>2e−16</td>
+</tr>
+<tr>
+<td>K4</td>
+<td>1.0</td>
+<td>6e−17</td>
+<td>9e−17</td>
+<td>3e−17</td>
+<td>2e−16</td>
+</tr>
+<tr>
+<td>K1</td>
+<td>4e−16</td>
+<td>2e−17</td>
+<td>2e−16</td>
+<td>1e−17</td>
+<td>1e−17</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Module level (Cat B), from <code>to_rho7.py</code> and <code>spec_check.py</code>.</strong></li>
+<li>Hom(V⊗χᵏ, X) was computed for X ∈ {W, E, C}, their duals, all 12 k, and both transpose conventions.</li>
+<li>The <strong>only</strong> non-zero result is <strong>k = 0 into E (and hence W), with dimension 1</strong>.</li>
+<li>Every χᵏ twist into C is 0, <strong>including χ³</strong> (the η⁶ multiplier, weight 3) <strong>and χ⁹</strong> (the η⁻⁶ direction).</li>
+<li>V has 36 distinct T-eigenvalues (in units of 1/140), and they <strong>coincide exactly with those of E</strong>.</li>
+<li>Smallest singular values for Hom(V, E): 3·10⁻¹⁵, then 0.297.</li>
+<li>Hom(V, ρ₃₅-sector⊗χᵏ) = 0 for all 4 sectors × 12 k × {ρ, ρ*}.</li>
+<li><strong>About weight.</strong> A32's Φ intertwines ρ₃₅⊗χ³, and χ³ is the multiplier of η⁶ (weight 3).</li>
+<li>The law has profile weight 1, so a twist law·η^{±6} would have weight 1 ± 3 as a representation-theoretic object.</li>
+<li><strong>As actual functions this twist is undefined:</strong> η vanishes radially at every rational, so η⁶ times a 1/t profile has zero leading profile.</li>
+<li>At the representation level, every twist is covered by Hom(V⊗χᵏ, C) = 0 above. Weight compatibility therefore cannot rescue a landing.</li>
+</ul>
+<h2>4. Verdict and reasons</h2>
+<p><strong>Does not land.</strong></p>
+<ol>
+<li><strong>(Cat A)</strong> Every non-zero candidate 35-vector built from the source's profiles has an exactly vanishing ρ₅⁻⊗ρ₇⁻ component. The reason is the lattice automorph γ, which acts as Z₇ on D and fixes the characteristic.</li>
+<li><strong>(Cat B)</strong> The law is not a ρ₃₅⊗χᵏ object. Its SL₂(Z)-span is a 36-dimensional irreducible V ≅ E, untwisted, and no twist χᵏ maps it to C.</li>
+</ol>
+<p><strong>What is not claimed</strong></p>
+<ul>
+<li>A general proof of the Weil law for G at all x. The source has it as Cat B; here it is Cat A only per tested point, and the module matrices are fitted.</li>
+<li>An exact (cyclotomic) certificate of V ≅ E.</li>
+<li>K1 ≡ 0 in general.</li>
+<li>Any statement about cone sums beyond leading order.</li>
+</ul>
+<p><strong>Possible follow-up:</strong> an exact certificate of V ≅ E. Write M_S and M_T in closed form from the S-law and T-law, then rerun A32's mod-p rank method.</p>
+<p><strong>Ledger suggestion (Cat B):</strong> "The B3 leading-order law vector lives in E (≅, untwisted, 36-dim), not in C; its ρ₅⁻⊗ρ₇⁻ part vanishes exactly by the automorph γ."</p></body></html>

@@ -1,0 +1,198 @@
+[
+ {
+  "s": 5,
+  "disc": "K_s",
+  "D": 60,
+  "h_narrow": 4,
+  "h_wide": 2
+ },
+ {
+  "s": 5,
+  "disc": "4n",
+  "D": 60,
+  "h_narrow": 4,
+  "h_wide": 2
+ },
+ {
+  "s": 7,
+  "disc": "K_s",
+  "D": 140,
+  "h_narrow": 4,
+  "h_wide": 2
+ },
+ {
+  "s": 7,
+  "disc": "4n",
+  "D": 140,
+  "h_narrow": 4,
+  "h_wide": 2
+ },
+ {
+  "s": 9,
+  "disc": "K_s",
+  "D": 28,
+  "h_narrow": 2,
+  "h_wide": 1
+ },
+ {
+  "s": 9,
+  "disc": "4n",
+  "D": 252,
+  "h_narrow": 4,
+  "h_wide": 2
+ },
+ {
+  "s": 11,
+  "disc": "K_s",
+  "D": 44,
+  "h_narrow": 2,
+  "h_wide": 1
+ },
+ {
+  "s": 11,
+  "disc": "4n",
+  "D": 396,
+  "h_narrow": 8,
+  "h_wide": 4
+ },
+ {
+  "s": 13,
+  "disc": "K_s",
+  "D": 572,
+  "h_narrow": 4,
+  "h_wide": 2
+ },
+ {
+  "s": 13,
+  "disc": "4n",
+  "D": 572,
+  "h_narrow": 4,
+  "h_wide": 2
+ },
+ {
+  "s": 15,
+  "disc": "K_s",
+  "D": 780,
+  "h_narrow": 8,
+  "h_wide": 4
+ },
+ {
+  "s": 15,
+  "disc": "4n",
+  "D": 780,
+  "h_narrow": 8,
+  "h_wide": 4
+ },
+ {
+  "s": 17,
+  "disc": "K_s",
+  "D": 1020,
+  "h_narrow": 8,
+  "h_wide": 4
+ },
+ {
+  "s": 17,
+  "disc": "4n",
+  "D": 1020,
+  "h_narrow": 8,
+  "h_wide": 4
+ },
+ {
+  "s": 19,
+  "disc": "K_s",
+  "D": 1292,
+  "h_narrow": 8,
+  "h_wide": 4
+ },
+ {
+  "s": 19,
+  "disc": "4n",
+  "D": 1292,
+  "h_narrow": 8,
+  "h_wide": 4
+ },
+ {
+  "s": 21,
+  "disc": "K_s",
+  "D": 1596,
+  "h_narrow": 16,
+  "h_wide": 8
+ },
+ {
+  "s": 21,
+  "disc": "4n",
+  "D": 1596,
+  "h_narrow": 16,
+  "h_wide": 8
+ },
+ {
+  "s": 23,
+  "disc": "K_s",
+  "D": 1932,
+  "h_narrow": 8,
+  "h_wide": 4
+ },
+ {
+  "s": 23,
+  "disc": "4n",
+  "D": 1932,
+  "h_narrow": 8,
+  "h_wide": 4
+ },
+ {
+  "s": 25,
+  "disc": "K_s",
+  "D": 92,
+  "h_narrow": 2,
+  "h_wide": 1
+ },
+ {
+  "s": 25,
+  "disc": "4n",
+  "D": 2300,
+  "h_narrow": 12,
+  "h_wide": 6
+ },
+ {
+  "s": 27,
+  "disc": "K_s",
+  "D": 12,
+  "h_narrow": 2,
+  "h_wide": 1
+ },
+ {
+  "s": 27,
+  "disc": "4n",
+  "D": 2700,
+  "h_narrow": 12,
+  "h_wide": 6
+ },
+ {
+  "s": 29,
+  "disc": "K_s",
+  "D": 348,
+  "h_narrow": 4,
+  "h_wide": 2
+ },
+ {
+  "s": 29,
+  "disc": "4n",
+  "D": 3132,
+  "h_narrow": 12,
+  "h_wide": 6
+ },
+ {
+  "s": 31,
+  "disc": "K_s",
+  "D": 3596,
+  "h_narrow": 12,
+  "h_wide": 6
+ },
+ {
+  "s": 31,
+  "disc": "4n",
+  "D": 3596,
+  "h_narrow": 12,
+  "h_wide": 6
+ }
+]

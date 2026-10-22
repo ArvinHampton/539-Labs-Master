@@ -1,0 +1,358 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>A34 ledger checks</title><style>body{font-family:'DejaVu Sans',sans-serif;font-size:10pt;max-width:900px;margin:auto;line-height:1.35}p{margin:0.35em 0}code{font-family:'DejaVu Sans Mono',monospace;font-size:8.5pt}ul{margin:0.2em 0}table{border-collapse:collapse}td,th{border:1px solid #999;padding:2px 5px}</style></head><body><h1>A34: checks and closures for the clean Category A ledger</h1>
+<p><strong>For:</strong> Arvin Hampton · 2026-10-22, America/Chicago (CDT).</p>
+<p><strong>Ground rules.</strong></p>
+<ul>
+<li>New files only, in <code>SF/A34_ledger_checks/</code>.</li>
+<li>CORE_FREEZE is respected: H_s is not redefined, and no certifier code was touched or run.</li>
+<li>The s31 mm sector was not touched.</li>
+<li>All jobs ran under <code>nice</code> with OMP_NUM_THREADS=1 and <code>ulimit -v</code> ≤ 2.5 GB. Peak resident memory was about 0.7 GB.</li>
+<li>Nothing was pushed or sent. No TPC/RH claims are made.</li>
+</ul>
+<p><strong>Categories.</strong> <strong>Cat A</strong> = proved, or exact relative to named hypotheses. <strong>Cat B</strong> = numerical or interpretive. The two are kept strictly apart.</p>
+<p><code>SF/</code> = <code>/workspace/quantum-comp/reports/s_family_paths/</code>. Entry numbers refer to <code>LEDGER_CatA_clean</code> (v1).</p>
+<h2>Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(1) Entry 14, closed forms for d_cusp</td>
+<td><strong>Fixed.</strong> The odd-s statements are verified. The even-s statements are only conditional, and one step has a gap (§1.1).</td>
+</tr>
+<tr>
+<td>(1) Entry 17, Gauss-sum vanishing</td>
+<td><strong>Fixed.</strong> The statement had a transcription error: it read "2 ‖ m" where the correct condition is "2 | m". The full proof is verified, and the exact values of |G| were added (§1.2).</td>
+</tr>
+<tr>
+<td>(1) Entry 23, Hecke commutation</td>
+<td><strong>Verified</strong> under the hypothesis of Γ(N)-invariance (TB4). The proof is written out (§1.3).</td>
+</tr>
+<tr>
+<td>(1) Entry 24, sector lemma</td>
+<td><strong>Fixed.</strong> The proof needs dim V = dim W, which is proved only for odd s ≤ 51, so the scope is restricted to that range (§1.4).</td>
+</tr>
+<tr>
+<td>(2) Certificate 10</td>
+<td><strong>Fixed citation.</strong> The Y-certificate is <code>SF/A8c_Spairing_even/scripts/pairing_on_W.py</code>, not <code>A8_Spairing_even/modp_trace.py</code>. Re-run for s = 8, 16, 18, 24, 26: identical results. <code>global_trE.py</code> was also re-run: identical results.</td>
+</tr>
+<tr>
+<td>(2) Certificate 56</td>
+<td><strong>Verified</strong> (<code>galois_dilation_fast.py</code>). Re-run at s = 8 and 10: identical results.</td>
+</tr>
+<tr>
+<td>(2) Certificate 57</td>
+<td><strong>Fixed.</strong> The script <code>classgroups_A5.py</code> uses PARI <code>quadclassunit</code>, so I replaced it with an unconditional reduction-cycle computation (<code>A34/scripts/classno_exact.py</code>). The values agree. <strong>The claim "the Cl(4n_s) predictor fails at s = 25" was wrong</strong>: the predictor gives 3, and dim S(ρ_25) = 3. The correct exact failures are listed in §2.3.</td>
+</tr>
+<tr>
+<td>(2) Certificate 58</td>
+<td><strong>Fixed citation.</strong> The (187, 186, 187) multiplicities came from <code>scan.py</code>, which is floating point (Cat B). The entry now has a proof: entry 11 together with an exact dim E = 560 (§2.4).</td>
+</tr>
+<tr>
+<td>(3) rev1 entry 15, distribution of r</td>
+<td><strong>Closed</strong> (Cat A). The CHECK marks are resolved. The mean upper bound follows from Nair–Tenenbaum (Acta Math. 180 (1998), Theorem 1), whose hypotheses I verified. The lower bound is elementary. The Gaussian refinement is not needed and is not included (§3.1).</td>
+</tr>
+<tr>
+<td>(3) Friction-coupled PDE</td>
+<td><strong>Closed for its spatially homogeneous reduction.</strong> In that reduction there is no attracting solution of any kind, and the stated function is not a solution. <strong>The full PDE is not well-formed</strong>: the contraction for γF∇Φ is unspecified, so nothing can be proved about it (§3.2).</td>
+</tr>
+<tr>
+<td>(3) Class-group predictor at s = 27, 29</td>
+<td><strong>Failed to close.</strong> dim S(ρ_s) ∈ [3, 4] at both s, and the predictor value is 3. Raising the Hecke lower bound with 8 primes leaves it at 3 (§3.3). Only the Cl(K_s) version fails exactly there.</td>
+</tr>
+<tr>
+<td>(3) E_L ↔ u_L identification</td>
+<td><strong>Not proved; left out.</strong> It is an analytic identification of a cone-sum generating function with a Maass theta lift. None of the ledger entries depends on it (§3.4).</td>
+</tr>
+<tr>
+<td>Found during checks</td>
+<td>Entry 2 (s ≡ 4, 6 mod 8) <strong>failed as stated</strong>. A6 verified the even-s step only for s ≤ 38. It is replaced by an exact certificate for 12 ≤ s ≤ 46 (§2.5). As a result, the corollary "tr_C S = 0 for every s ≥ 5" is narrowed to the proved ranges.</td>
+</tr>
+</tbody>
+</table>
+<h2>1. Proof checks</h2>
+<h3>1.1 Entry 14 (closed forms for d_cusp; <code>SF/A/REPORT.md</code> §1, <code>p1_formula_check.py</code>)</h3>
+<p>The setting is odd s with n = s(s−2), G(m) = ∏_{q‖m} (q+1)/2, dim V = s(s−1) and d_Eis = 3G(n).</p>
+<ul>
+<li><strong>Lemma (verified).</strong> For odd m, G(m) ≤ (m+1)/2, with equality iff m = 1 or m is a prime power.</li>
+<li><em>Proof.</em> If m = q is a prime power, G = (q+1)/2.</li>
+<li>For coprime odd a, b ≥ 3, we have (a+1)(b+1)/4 &lt; (ab+1)/2. This is equivalent to (a−1)(b−1) &gt; 0.</li>
+<li>If G(a) ≤ (a+1)/2 and G(b) ≤ (b+1)/2, then G(ab) = G(a)G(b) ≤ (a+1)(b+1)/4 &lt; (ab+1)/2.</li>
+<li>Induction on the number of prime-power factors gives the lemma, with strict inequality whenever there are two or more factors.</li>
+<li><strong>Odd s lower bound (verified).</strong></li>
+<li>Since gcd(s, s−2) = 1, G(n) = G(s)G(s−2) ≤ (s+1)(s−1)/4.</li>
+<li>So d_cusp = s(s−1) − 3G(n) ≥ s(s−1) − 3(s²−1)/4 = (s−1)(s−3)/4 &gt; 0 for s ≥ 5.</li>
+<li>Equality holds iff s and s−2 are both prime powers.</li>
+<li><strong>Odd s parity (verified).</strong></li>
+<li>s(s−1) is even.</li>
+<li>One of s, s−2 is ≡ 3 mod 4. An integer ≡ 3 mod 4 has a prime-power factor q ∥ it with q ≡ 3 mod 4, because a product of factors ≡ 1 mod 4 is ≡ 1 mod 4.</li>
+<li>For such q, (q+1)/2 is even, so G(n) is even and d_Eis is even.</li>
+<li><strong>Even s: d_cusp = 0 ⇔ s ∈ {6, 8, 10}, and parity (NOT verified unconditionally).</strong></li>
+<li>The proof assumes d₂(k, v) ≤ 2^{k−1} + 6, which is proved only for k ≤ 6.</li>
+<li>Step 4 (s = 2m²) bounds the number of extra relations only as "at most about m/2", which is not a proof.</li>
+<li>Parity at even s needs the d₂ formula for every k.</li>
+<li><strong>Status:</strong> odd-s statements are Cat A at formula level. The even-s statements are dropped from the ledger.</li>
+<li><strong>Scope.</strong> These are statements about closed forms. They equal the true d_cusp where dim V and d_Eis are proved: dim V = s(s−1) for odd s ≤ 51, together with the certified local factors.</li>
+</ul>
+<h3>1.2 Entry 17 (Gauss-sum vanishing; <code>stage_ps/.../P_s-Structure §A4</code>, <code>heavy-daily/2026-10-18-C_third-modularity/theoremG_check.py</code>)</h3>
+<p><strong>Definitions.</strong></p>
+<ul>
+<li>Q(n,k) = n² + 7nk + 7k(k+1)/2, which is integer-valued.</li>
+<li>For gcd(h,m) = 1, G(h/m) = (2m)^{−2} Σ_{n,k mod 2m} e(hQ(n,k)/m).</li>
+</ul>
+<p>The summand is 2m-periodic in each variable, since Q(n+2m,k) − Q(n,k) and Q(n,k+2m) − Q(n,k) are both divisible by m.</p>
+<p><strong>Statement.</strong> G(h/m) = 0 iff 2 | m or 5 | m. Otherwise:</p>
+<ul>
+<li>|G| = 1/m if 7 ∤ m;</li>
+<li>|G| = √7/m if 7 | m.</li>
+</ul>
+<p>The v1 ledger had "2 ‖ m". That is a transcription error: the source writes "2|m", an escaped "|".</p>
+<p><strong>Proof (verified line by line).</strong></p>
+<ul>
+<li><strong>2 | m.</strong> Q(n,k+m) − Q(n,k) = m(7n + 7k + 7(m+1)/2). With m even, the phase change is e(7h(m+1)/2) = −1, because 7h(m+1) is odd. The shift k ↦ k+m is a bijection mod 2m, so G = −G = 0.</li>
+<li><strong>m odd, 5 | m.</strong> Put a = m/5. Then Q(n−a, k+a) − Q(n,k) = mn + a(7−m)/2. The phase is e(h(7−m)/10). Here (7−m)/2 ≡ 7·2^{−1} ≡ 1 mod 5 and gcd(h,5) = 1, so the phase is ≠ 1, and G = 0.</li>
+<li><strong>m odd, 5 ∤ m.</strong></li>
+<li>Q is m-periodic, so G = m^{−2} Σ_{n,k mod m}.</li>
+<li>With 2 invertible mod m, the substitution n′ = n + 7·2^{−1}k gives hQ ≡ h(n′² − (35/4)k² + (7/2)k).</li>
+<li>So G = m^{−2} g₁ g₂ with g₁ = Σ_{n′} e(hn′²/m), and |g₁| = √m.</li>
+<li>By CRT, g₂ factors over p^e ∥ m.<ul>
+<li>If p ∤ 35, the quadratic coefficient is a unit, and completing the square gives modulus p^{e/2}.</li>
+<li>If p = 7, the sum is Σ_{k mod 7^e} e(h′(−(5/4)k² + k/2)/7^{e−1}) = 7·Σ_{k mod 7^{e−1}}(…). Its modulus is 7·7^{(e−1)/2} = 7^{(e+1)/2}, because the quadratic coefficient is a unit mod 7.</li>
+</ul>
+</li>
+<li>Hence |G| = m^{−2}·√m·√m·(√7 if 7 | m) ≠ 0.</li>
+</ul>
+<p><strong>Cross-check (Cat B, float).</strong> <code>theoremG_check.py</code> covers m ≤ 60 (1102 rationals) with 0 mismatches. The source reports m ≤ 105 (3374 pairs) with 0 mismatches.</p>
+<h3>1.3 Entry 23 (Hecke commutation; <code>SF/A7_s21/REPORT.md</code> A1)</h3>
+<p><strong>Hypotheses.</strong></p>
+<ul>
+<li>N ≥ 1, and p is prime with p ≡ 1 mod N.</li>
+<li>F is a smooth vector-valued function with F(γz) = ρ(γ)F(z) for γ ∈ SL₂(Z), and F is Γ(N)-invariant (TB4).</li>
+<li>ΔF = λF.</li>
+</ul>
+<p><strong>Definition.</strong> T′_p F(z) = p^{−1/2}[F(pz) + Σ_{j=0}^{p−1} F((z+Nj)/p)].</p>
+<p><strong>Statement.</strong></p>
+<ul>
+<li>T′_p F is of type ρ with the same λ, and it commutes with every constant matrix commuting with ρ (in particular the P_σ).</li>
+<li>If every component of F has the form Σ_{m∈(1/N)Z} a(m)√y K₀(2π|m|y)e(mx) + c√y, then T′_p F has coefficients b(m) = a(pm) + a(m/p), and constant term 2c.</li>
+</ul>
+<p><strong>Proof (verified).</strong>
+1. Let Δ = {M ∈ M₂(Z) : det M = p, M ≡ I mod N}. The p+1 matrices (1, Nj; 0, p) and (p, 0; 0, 1) lie in Δ, because p ≡ 1 mod N. They are inequivalent under left multiplication by Γ(N), and since |Γ(N)\Δ| = p + 1 for p ∤ N, they form a complete system of representatives.
+2. For γ ∈ SL₂(Z), γ^{−1}Δγ = Δ, so {γ^{−1}Mγ} is again a system of representatives.
+3. Then Σ_M F(Mγz) = Σ_M F(γ·γ^{−1}Mγ·z) = ρ(γ) Σ_{M′} F(M′z). Changing representatives does not change the sum, by Γ(N)-invariance.
+4. Δ (the Laplacian) commutes with every z ↦ Mz for M ∈ GL₂⁺(R), so λ is preserved. The operator acts componentwise, so it commutes with constant matrices.</p>
+<p><strong>5.</strong> <strong>Fourier side.</strong> F(pz) contributes p^{1/2} a(m′/p) at frequency m′.</p>
+<ul>
+<li>Σ_j e(mNj/p) = p if p | mN and 0 otherwise. Since mN ∈ Z and gcd(p,N) = 1, p | mN iff m/p ∈ (1/N)Z.</li>
+<li>So Σ_j F((z+Nj)/p) contributes p·a(pm′)√(y/p) at frequency m′.</li>
+<li>After the factor p^{−1/2} this gives b = a(pm′) + a(m′/p). The √y-terms contribute c + c.</li>
+</ul>
+<h3>1.4 Entry 24 (sector lemma; <code>SF/A6_certify/REPORT.md</code> A1)</h3>
+<p><strong>Hypotheses.</strong></p>
+<ul>
+<li>TB2: u has type ρ_s and λ = 1/4. Its constant term is a multiple of c₀ = Π_W δ₀. The λ = 1/4 constant-term criterion holds.</li>
+<li>s is odd with 5 ≤ s ≤ 51, so dim V = dim W = s(s−1) and the components of u on W are linearly independent.</li>
+<li>σ is a P-even local-sign sector other than all-plus, with P_σW ≠ 0.</li>
+</ul>
+<p><strong>Proof (verified, with the hypothesis made explicit).</strong>
+1. P_σ is a polynomial in the local reflections Z_p, which commute with ρ. So P_σu has type ρ_s and the same λ.
+2. E = ρ-span(c₀) lies in the all-plus sector, because c₀ is even in every local component and the Z_p commute with ρ. Hence P_σc₀ = 0. The constant term of P_σu vanishes, so P_σu is cuspidal by the criterion.
+3. If P_σu = 0, every row of P_σ would be a linear functional on W killing all values of u. By linear independence this forces P_σ|_W = 0, a contradiction.
+4. Forms in distinct sectors are linearly independent, because the projectors are orthogonal.</p>
+<p>The v1 hypothesis "P_σW ≠ 0" is equivalent to "P_σC ≠ 0" here, since P_σE = 0. <strong>v1 omitted the range s ≤ 51; it is now explicit.</strong></p>
+<h2>2. Certificate and citation checks (re-runs in <code>A34/logs/</code>)</h2>
+<h3>2.1 Certificate 10</h3>
+<ul>
+<li><strong>Y = Z − SZS certificate.</strong></li>
+<li>The correct script is <code>SF/A8c_Spairing_even/scripts/pairing_on_W.py</code>; <code>SF/A8_Spairing_even/scripts/modp_trace.py</code> is not it. The script computes rank_𝔭(Y_λ|_W) exactly mod 𝔭 on the orbit basis of W, for λ = (1) and (1,1), and checks Ŝ² = |det| on W.</li>
+<li>Re-run (<code>logs/rerun_pairing_on_W.jsonl</code>): s = 8, 16, 18, 24, 26 give rank = dim W, identical to the source.</li>
+<li>Source values: full rank for s = 8, 16, 18, 24, 26, 32, 40, 48, 50, 56, 58. At s = 34 and 42 the rank is dim W − 2, so Y certifies nothing there. At s = 10, C = 0.</li>
+<li><strong>global_trE.py.</strong> Re-run (<code>logs/global_trE_rerun_and_4_6mod8.txt</code>): s = 8, 16, 18 give identical results.</li>
+</ul>
+<h3>2.2 Certificate 56 (<code>SF/A8c_Spairing_even/scripts/galois_dilation_fast.py</code>)</h3>
+<p><strong>What it computes.</strong> For every a ∈ (Z/L)^×, label dilation M_u and k with σ_a(T) = M_u T^k M_u^{−1} (exact monomial identity), it tests σ_a(Ŝ) = ±M_u Ŝ M_u^{−1} mod one prime 𝔭.</p>
+<p><strong>Why mod 𝔭 suffices.</strong> A char-0 identity survives reduction, and +1 and −1 cannot both hold mod 𝔭.</p>
+<p><strong>Results.</strong></p>
+<ul>
+<li>Re-run at s = 8 and 10 (<code>logs/rerun_galois_dilation_8_10.jsonl</code>): T-compatible (a,u,k) counts 1024 and 4096, ε = +1 counts 128 and 256, ε = −1 count 0. Identical to the source.</li>
+<li>s = 16 and 18 were not re-run; the source log is <code>galois_dilation_fast_16_18.jsonl</code>.</li>
+<li>The controls s = 12 and 14 do have ε = −1 solutions, which exercises the code.</li>
+</ul>
+<h3>2.3 Certificate 57 (class-group predictors)</h3>
+<p><strong>Predictor.</strong> As stated in <code>SF/A2/REPORT.md</code> B2, the predictor for the group X is dim S(ρ_s) = h(X)/2 if Cl(X) is cyclic, and h(X) if Cl(X) ≅ [2,2].</p>
+<p><strong>Exact class numbers.</strong> <code>scripts/classno_exact.py</code> counts cycles of reduced primitive indefinite forms. This is unconditional; PARI <code>quadclassunit</code> is GRH-conditional. Results are in <code>classno_exact.json</code>, and all agree with <code>SF/A5_classgroup/classgroups_A5.json</code>.</p>
+<table>
+<thead>
+<tr>
+<th>s</th>
+<th>d_K</th>
+<th>h(K_s)</th>
+<th>h(4n_s)</th>
+<th>certified dim</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9</td>
+<td>28</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>11</td>
+<td>44</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+</tr>
+<tr>
+<td>23</td>
+<td>1932</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+</tr>
+<tr>
+<td>25</td>
+<td>92</td>
+<td>1</td>
+<td>6</td>
+<td>3</td>
+</tr>
+<tr>
+<td>27</td>
+<td>12</td>
+<td>1</td>
+<td>6</td>
+<td>[3, 4]</td>
+</tr>
+<tr>
+<td>29</td>
+<td>348</td>
+<td>2</td>
+<td>6</td>
+<td>[3, 4]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exact conclusions (Cat A).</strong></p>
+<ul>
+<li><strong>Cl(K_s).</strong> The predicted value is h/2 for cyclic groups. It gives 1/2 at s = 9, 11, 25, 27 and 1 at s = 29, so it fails at all five.</li>
+<li><strong>Cl(4n_s).</strong></li>
+<li>At s = 23, h = 4, so the predicted value is 2 (if cyclic) or 4 (if [2,2]). Either way it is ≠ 3, so the predictor fails exactly at s = 23.</li>
+<li>At s = 25, Cl(4n_25) has order 6 and is therefore cyclic. The predicted value is 3 = dim S(ρ_25), so the predictor <strong>holds</strong> there. The v1 claim was wrong.</li>
+<li>At s = 27 and 29 the group is cyclic of order 6. The predicted value is 3, which lies inside the certified bracket, so this case is not decided (§3.3).</li>
+</ul>
+<h3>2.4 Certificate 58 (R-multiplicities on E at s = 56)</h3>
+<ul>
+<li>The cited <code>exact_E0_R.py</code> certifies local classes only. The global (187, 186, 187) numbers come from <code>scan.py</code> (<code>logs_scan_s56.jsonl</code>), which is float64 SVD (Cat B).</li>
+<li><strong>Replacement proof (Cat A, assuming I1–I5).</strong></li>
+<li><strong>dim E ≥ 560.</strong> This is a mod-ℓ Krylov rank, so a lower bound, from <code>SF/A31_entry7_check/global_trE.py</code> at two primes.</li>
+<li><strong>dim E is 504 or 560.</strong> By the tensor factorisation (ledger entry 7(iii)), dim E = dim E0_{27}·dim E0_7·dim E0_2. The odd factors are 14 and 4 (entry 7(i)). For the 2-adic classes (2,1/4) ⊕ (8, −u/16) of order 16, <code>SF/A11_induction/exact_E0.py</code> (<code>logs_exact_E0.txt</code>, exact_span_certified) gives dim 10 for u ≡ 1 mod 4 and 9 for u ≡ 3 mod 4.</li>
+<li><strong>So dim E = 560.</strong></li>
+<li><strong>Multiplicities.</strong> At s = 56, (Exc) holds and s ≡ 2 mod 3. So by entry 11, tr_E R = −ω and tr_W R = −ω. Solving n₁ + n_ω + n_ω̄ = 560 and n₁ + ωn_ω + ω̄n_ω̄ = −ω gives (187, 186, 187).</li>
+<li><strong>On C.</strong> dim W = 812 = t(t+1) with t = 28 (orbit count). Then dim C = 252 and tr_C R = 0, so the multiplicities on C are (84, 84, 84).</li>
+<li><strong>Caveat.</strong> This argument assumes the 2-adic component at s = 56 is one of the order-16 classes (2,1/4) ⊕ (8, −u/16) in A11's coverage list. The bound dim E ≥ 560 then excludes the dim-9 case.</li>
+</ul>
+<h3>2.5 Entry 2 (s ≡ 4, 6 mod 8): failed as stated, replaced</h3>
+<ul>
+<li><code>SF/A6_certify/REPORT.md</code> says the even-s analogue of step 2 (T^{2n} diagonal) "is computer-verified, not written for all s", for s = 6, 12, 14, 20, 22, 28, 30, 36, 38. So "for all s ≡ 4, 6 mod 8" is not proved.</li>
+<li><strong>New certificate.</strong> <code>global_trE.py</code> was run for s = 12, 14, 20, 22, 28, 30, 36, 38, 44, 46. tr_E S = 0 at two primes each, an exact integer since |tr| ≤ dim E &lt; ℓ/2.</li>
+<li>With tr_W S = 0 (entry 3), this gives tr_C S = 0 for every s ≡ 4, 6 mod 8 with 12 ≤ s ≤ 46. Here E = ρ-span(δ₀) in C[D], identified with the original E by entry 8.</li>
+</ul>
+<h2>3. Closure attempts</h2>
+<h3>3.1 rev1 entry 15: distribution of r (odd s, formula level). <strong>Closed.</strong></h3>
+<p><strong>Notation.</strong></p>
+<ul>
+<li>n = s(s−2) and k = ω(s) + ω(s−2).</li>
+<li>g(m) = ∏_{q‖m} (1+1/q)/2.</li>
+<li>1 − r = 3·(s−2)/(s−1)·g(s)g(s−2).</li>
+</ul>
+<p>All averages are over odd s ≤ X.</p>
+<ul>
+<li><strong>(a) Mean of k (elementary).</strong></li>
+<li>For odd p ≤ X, the number of odd s ≤ X with p | s(s−2) is X/p + O(1).</li>
+<li>Summing over p ≤ X: mean k = Σ_{3≤p≤X} 2/p + O(1/log X) = 2 log log X + O(1), by Mertens.</li>
+<li>For the second moment, pairs p ≠ q contribute density 4/(pq) + O(1/X). Truncating at p, q ≤ X^{1/4} and bounding the tail by O(1) gives Var k ≪ log log X (Turán–Kubilius).</li>
+<li><strong>(b) The limit law of r is δ₁ (elementary).</strong></li>
+<li>By Chebyshev and (a), k ≥ log log X for all but O(X/log log X) odd s ≤ X.</li>
+<li>For those s, 1 − r ≤ 3(2/3)^k → 0.</li>
+<li>Since r ≤ 1, the empirical law of r converges to δ₁, and mean r → 1.</li>
+<li><strong>(c) Typical rate (elementary).</strong> For almost all odd s:</li>
+<li>log(1−r) = −k log 2 + Y + O(1), where 0 ≤ Y ≤ Σ_{p|n} 1/p ≪ log log log s;</li>
+<li>and k = 2 log log s + O(ψ(s)√(log log s)) for any ψ → ∞.</li>
+<li>Hence 1 − r = (log s)^{−2 log 2 + o(1)}.</li>
+<li><strong>(d) Mean of g(s)g(s−2).</strong></li>
+<li><strong>Lower bound (elementary).</strong> g ≥ 2^{−ω}, and x ↦ 2^{−x} is convex, so by Jensen the mean is ≥ 2^{−mean k}. That is ≫ (log X)^{−2 log 2}.</li>
+<li><strong>Upper bound ≪ 1/log X.</strong> Use Nair–Tenenbaum, Acta Math. 180 (1998) 119–144, Theorem 1, with k = 2, Q₁(n) = n, Q₂(n) = n−2, and y = x.<ul>
+<li>Q = n(n−2) has no fixed prime divisor, since Q(1) = −1.</li>
+<li>F(n₁,n₂) = g(n₁)g(n₂), extended with g(2^e) = 1, satisfies F(m₁n₁, m₂n₂) = g(m₁)g(m₂)F(n₁,n₂) ≤ F(n₁,n₂). So F ∈ M₂(1, 1, ε).</li>
+<li>The bound gives Σ_{n≤X} F ≪ X ∏_{p≤X}(1 − 2/p)(Σ_{n≤X} g(n)/n)².</li>
+<li>Σ_{n≤X} g(n)/n ≤ ∏_{p≤X}(1 + 1/(2p) + O(p^{−2})) ≍ (log X)^{1/2}.</li>
+<li>So the sum is ≪ X/log X. Restricting to odd n only decreases the sum, since F ≥ 0.</li>
+</ul>
+</li>
+<li><strong>Consequence.</strong> Mean(1−r) ≍ mean g between (log X)^{−1.386} and (log X)^{−1}. By Markov, the density of {r &lt; 1−ε} is ≪ 1/(ε log X).</li>
+<li><strong>(e) Y has a continuous limit law.</strong></li>
+<li><em>Existence.</em> Truncate at p ≤ y. By CRT, the truncated law is the law of Σ_{p≤y} X_p with independent X_p. The tail satisfies E|Y − Y_y| ≤ Σ_{p&gt;y} 2/p² → 0.</li>
+<li><em>Continuity.</em> Each X_p is discrete with largest atom P(X_p = 0) = 1 − 2/p for p ≥ 5, and ∏_p(1 − 2/p) = 0. By Lévy's theorem (P. Lévy, Studia Math. 3 (1931); see also Elliott, <em>Probabilistic Number Theory I</em>, Ch. 1), a convergent series of independent discrete variables has a continuous law iff the product of its largest atoms is 0.</li>
+<li><strong>Note.</strong> This uses one classical cited theorem, stated with its hypothesis verified.</li>
+<li><strong>(f) Limit-point structure (elementary; source A5).</strong> The set L of limit points of r satisfies L ⊆ {1} ∪ {1 − 3w : w ∈ W}, where W = {2^{−2−j}∏_{q∈S}(1+1/q)/2}.</li>
+<li>Along a subsequence with limit &lt; 1, k is bounded. Pass to subsequences on which each prime-power factor is either constant or tends to ∞; each factor tending to ∞ contributes 1/2.</li>
+<li>So L is countable and closed, and L ⊆ {1/4} ∪ [1/2, 1].</li>
+<li><strong>Not included.</strong></li>
+<li>The Gaussian refinement (Halberstam) and the Chen-type disjunctions of A4 A6 are not needed.</li>
+<li>The Euler-product asymptotic B1 is Cat B.</li>
+</ul>
+<h3>3.2 Friction-coupled PDE (<code>SF/../maths/theorem-lemma-chain-9-maths.txt</code> Lemma 5 / Def. 1.1; <code>SF/A19_9maths_axioms</code> §1.6)</h3>
+<p><strong>The source equation.</strong></p>
+<p>∂_t²Φ + γ_LQG F_friction(t)∇Φ + ρ_snap Θ_hyp(ρ_snap − ρ_DM) ∂_t²Φ = κ_dark sin(2πt/539.9) Φ + β_PBH ∂_t(e^{−M/k_BT} Φ̇).</p>
+<ul>
+<li>The full equation is <strong>not well-formed</strong>. γF∇Φ is a vector added to scalars, with no contraction specified, and F_friction is never defined. So "no periodic attractor" cannot be stated or proved for it. <strong>Failed (not provable).</strong></li>
+<li><strong>Self-contained reduction (Cat A).</strong> Take Φ = Φ(t), so ∇Φ = 0, and freeze c = ρ_snapΘ_hyp and g = e^{−M/k_BT} as constants. With ω = 2π/539.9 and A = 1 + c − βg, the equation becomes</li>
+<li>(★) AΦ″ = κ sin(ωt) Φ.</li>
+<li><strong>Theorem.</strong> Assume κ ≠ 0.</li>
+<li>(i) For any Φ₀ and any (a,b) ≠ (0,0), the function Φ₀ + a cos ωt + b sin ωt does not solve (★). In particular the source's Φ₀ + 0.90 cos ωt + 0.18 sin ωt does not.</li>
+<li>(ii) If A ≠ 0, (★) has no solution that attracts all solutions.</li>
+<li>(iii) If A = 0, the only solution is Φ ≡ 0.</li>
+<li><strong>Proof.</strong></li>
+<li>(i) The left side contains only the frequency ω. The right side contains (κa/2) sin 2ωt − (κb/2) cos 2ωt. Both must vanish, so a = b = 0.</li>
+<li>(ii) (★) is the linear system x′ = M(t)x with x = (Φ, Φ′), where tr M = 0. By Liouville, the monodromy matrix has determinant 1.<ul>
+<li>Suppose a solution p attracts every solution, meaning |x(t) − p(t)| → 0 for all x. Since x − p ranges over all solutions, every solution tends to 0.</li>
+<li>Then both Floquet multipliers have modulus &lt; 1, contradicting det = 1.</li>
+</ul>
+</li>
+<li>(iii) If A = 0, then κ sin(ωt)Φ = 0, so Φ = 0 wherever sin ωt ≠ 0, and by continuity Φ ≡ 0.</li>
+<li>The <code>checks.py</code> harmonic balance (sympy) agrees with (i).</li>
+</ul>
+<h3>3.3 Class-group predictor at s = 27 and 29. <strong>Failed to close.</strong></h3>
+<ul>
+<li><strong>Upper bounds.</strong> s = 27 (3−,5−) ≤ 3 is certified (<code>SF/A9_hecke_family/certs/hcert_s27_3m_5m_M6_Q40.json</code>, re-read, not re-run). The (+,+) sector certificates for s = 27 and 29, and the s = 29 (−,−) certificate, never completed: OOM or box restart (<code>SF/A9/logs/queue_rerun.out</code>). I did not re-run them, because each needs hours of certifier time near the 3 GB limit.</li>
+<li><strong>Why upper bounds would not settle it anyway.</strong> The Cl(4n) predictor value is 3. Refuting it needs <strong>dim = 4, i.e. a lower bound of 4</strong>, not an upper bound.</li>
+<li><strong>Attempt.</strong> I copied <code>certify_hecke_s.py</code> to <code>A34/scripts</code> (unchanged) and ran it with 8 Hecke primes instead of 3 (<code>logs/hecke_27_29_NP8.out</code>, <code>certs/hecke_lower_s{27,29}.json</code>; 4 min each, &lt; 0.7 GB).</li>
+<li>The rank of {P_σu, T′_p P_σu} stays at 2 in (−,−) and 1 in (+,+), at both s.</li>
+<li>So the Hecke span of the lift is exhausted. A third (−,−) form would need a different construction, such as a theta lift from another genus class.</li>
+<li><strong>Result.</strong> dim S(ρ_s) ∈ [3, 4] at s = 27 and 29 (the upper bound 4 at s = 27 is not certified either, since (+,+) did not finish). Whether the Cl(4n) predictor fails there is undecided. The Cl(K_s) predictor fails exactly at both (§2.3).</li>
+</ul>
+<h3>3.4 E_L ↔ u_L (<code>SF/RTA_implications</code> §2). <strong>Not proved; left out.</strong></h3>
+<ul>
+<li>The claim identifies the ν ↦ −ν even part of the cone-sum series C_third,s with the λ = 1/4 Maass theta lift. It is Cat B by citation in its source (C_third-Unified).</li>
+<li>A proof would need the analytic comparison of the two generating functions: the indefinite theta integral against the cone sums, including the wall terms. That cannot be done within this check.</li>
+<li>No ledger entry uses it. Entry 25 (irreducibility of C at s = 7) is independent of it.</li>
+</ul>
+<h2>4. Other notes</h2>
+<ul>
+<li><strong>Entry 1.</strong> The proof is now the full A6 argument. It needs TB3 (S² = P on the label space, i.e. ρ(−I) = P), which is added as a standing hypothesis.</li>
+<li><strong>Cat B kept out of the ledger.</strong> All float scans, the A5 dims, and <code>theoremG_check.py</code> (float).</li>
+</ul>
+<h2>Files (all new)</h2>
+<ul>
+<li>REPORT.md, REPORT.html, REPORT.pdf</li>
+<li><code>scripts/classno_exact.py</code>, <code>classno_exact.json</code></li>
+<li><code>scripts/certify_hecke_s.py</code>, <code>coeffsS.py</code>, <code>liftS.py</code> (copies of A9's, unchanged); <code>certs/hecke_lower_s27.json</code>, <code>hecke_lower_s29.json</code></li>
+<li><code>logs/</code>: hecke_27_29_NP8.out, rerun_galois_dilation_8_10.jsonl, rerun_pairing_on_W.jsonl, global_trE_rerun_and_4_6mod8.txt</li>
+</ul></body></html>

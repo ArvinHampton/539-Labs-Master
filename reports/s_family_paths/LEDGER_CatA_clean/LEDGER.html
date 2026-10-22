@@ -1,0 +1,257 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Category A ledger</title><style>body{font-family:'DejaVu Sans',sans-serif;font-size:10.5pt;max-width:900px;margin:auto;line-height:1.35}p{margin:0.35em 0}code{font-family:'DejaVu Sans Mono',monospace;font-size:9pt}ul{margin:0.2em 0}</style></head><body><h1>Category A ledger: s-family, dimensions, Bridge C, T3 arithmetic, H3 orbit map</h1>
+<p><strong>For:</strong> Arvin Hampton · 2026-10-22</p>
+<p>Path shorthand: <code>SF/</code> = <code>/workspace/quantum-comp/reports/s_family_paths/</code>.</p>
+<h2>0. Standing hypotheses</h2>
+<ul>
+<li><strong>(TB)</strong> The manuscript theta lift u has type ρ_s and eigenvalue λ = 1/4. The λ = 1/4 constant-term criterion holds. Arb/python-flint ball arithmetic is correct. The rounding analysis of <code>SF/A2/scripts/certify_hybrid.py</code> is correct.</li>
+<li><strong>(F1–F5)</strong> These are standard facts about Weil representations of finite quadratic modules, including Scheithauer's upper-triangular formula (as listed in <code>SF/A12_H1H2_odd</code>).</li>
+<li><strong>(I1–I5)</strong> These are the local imports listed in <code>SF/A15_ST_balance</code> §1. They consist of F1–F5 together with the local models of <code>SF/A11_induction</code>.</li>
+<li><strong>Computer certificates.</strong> "Exact mod-p rank" means the following. The defining equations have coefficients in Z[ζ][1/N], and they are reduced at a prime above p. Under reduction the rank can only drop. So a computed mod-p dimension is an upper bound for the dimension over C. Likewise, an integer bounded by ℓ/2 in absolute value is determined by its residue mod ℓ.</li>
+</ul>
+<p>Notation: ρ_s is the s-family Weil representation, W is its γ_s- and (−1)-invariant subspace, E = ρ-span(δ₀) ⊆ W, and C = W ⊖ E is the cusp part. S, T and Z = S² are the standard generators. e(x) = e^{2πix}.</p>
+<hr />
+<h2>1. s-family Weil representation ρ_s</h2>
+<p><strong>1.</strong> <strong>Theorem.</strong> For every odd s ≥ 5, tr_C ρ(S) = tr_W ρ(S) = tr_E ρ(S) = 0. Hence dim C⁺ = dim C⁻ = d_cusp/2. Assume TB.</p>
+<p><em>Proof.</em> The matrix entries of ρ(S) lie in Q(ζ_n)·n^{−1/2}. For odd s, a Galois automorphism σ with σ(√n) = −√n fixes the label structure (family_s label matrices) and maps each of the spaces W, E, C to itself. It sends tr ρ(S) to −tr ρ(S). Since S² = Z acts as 1 on W, tr S is an integer combination of ±1, hence rational, so it is fixed by σ. A rational number equal to its own negative is 0. (<code>SF/A6_certify/REPORT.md</code>, <code>SF/galois_review/REVIEW.md</code> G1.)</p>
+<p><strong>2.</strong> <strong>Theorem.</strong> The same conclusion holds for s ≡ 4, 6 mod 8.</p>
+<p><em>Proof.</em> For these s, √n ∉ Q(ζ_{n/2}), so the automorphism σ of entry 1 still exists, and the argument applies verbatim. (<code>SF/galois_review</code> G1.)</p>
+<p><strong>3.</strong> <strong>Theorem.</strong> For every even s, tr_W S = 0.</p>
+<p><em>Proof.</em> There is a monomial unitary K_y on W that anticommutes with S and commutes with γ_s and −1. Then tr_W S = tr_W(K_y S K_y^{−1}) = −tr_W S. (<code>SF/A8c_Spairing_even/REPORT.md</code>. An exact check for even s = 6..60 is in <code>pairing_on_W.py</code>.)</p>
+<p><strong>4.</strong> <strong>Theorem.</strong> Assume F1–F5. Let s ≡ 0, 2 mod 8 and E = ρ-span(δ₀). Then tr_E S = 0 and tr_C S = 0, so dim C⁺ = dim C⁻.</p>
+<p><em>Proof.</em> By entry 8, tr_E S = ∏_p t_p, where t_p is the local trace on the local δ₀-span. Since s ≡ 0, 2 mod 8, m ≡ 0, 1 mod 4, so 4 | M, and the 2-adic exponent is a ≥ 2. There are two cases.</p>
+<ul>
+<li><strong>a odd, or u ≡ 1 mod 4.</strong> Then t₂ = 0. For a ≥ 3 this follows from entry 5 (P-stability) and entry 6 (H2), by the lift lemma of entry 8, down to the base classes. For a = 2 the base classes (2, 1/4) ⊕ (8, −u/16) have trace 0 exactly when u ≡ 1 mod 4 (certificate: <code>SF/A11_induction/exact_E0.py</code>, exact arithmetic). This case does not use H2.</li>
+<li><strong>a even and u ≡ 3 mod 4.</strong> The odd number u is a product of odd prime powers. Because u ≡ 3 mod 4, some p^e ∥ u satisfies p^e ≡ 3 mod 4. Then t_p = 0 by entry 7.</li>
+</ul>
+<p>So tr_E S = 0. Since E ⊆ W (γ_s commutes with ρ and fixes δ₀), tr_C S = tr_W S − tr_E S = 0 by entry 3. (<code>SF/A12_H1H2_odd</code>, <code>SF/A31_entry7_check/REFEREE.md</code> §5.)</p>
+<p><strong>Corollary.</strong> Combining entries 1, 2 and 4: tr_C S = 0 for every s ≥ 5, with E = ρ-span(δ₀) when s ≡ 0, 2 mod 8.</p>
+<p><strong>5.</strong> <strong>Theorem (P-stability).</strong> Assume F1–F5. For every 2-adic exponent a ≥ 2, δ_h lies in the δ₀-span.</p>
+<p><em>Proof.</em> δ_h is obtained from δ₀ by the explicit word S T^{2^a} S. This is evaluated with Scheithauer's formula (F1–F5). (<code>SF/A12</code>.) An exact mod-p check (p = 33556993) for a = 2..7 and all 24 classes u mod 8 is in <code>SF/A13_H1_check/verify_h1.py</code>.</p>
+<p><strong>6.</strong> <strong>Theorem (H2).</strong> Assume F1–F5 and a ≥ 3. Then tr S = 0 on (1 − P)E₀.</p>
+<p><em>Proof.</em> The space X = (1 − P)E₀ has a basis indexed by P¹(Z/M). The level is lcm(4, M), which is where a ≥ 3 is needed. In this basis S acts monomially and without fixed points, so every diagonal entry of S vanishes. (<code>SF/A12</code>.)</p>
+<p><strong>7.</strong> <strong>Theorem (odd-prime local factor).</strong> Let p be an odd prime, e ≥ 0, c a unit mod p^e, D_p = (Z/p^e, q(x) = cx²/p^e), and ρ_p its Weil representation. Let E0_p be the SL₂(Z)-span of δ₀ in C[D_p]. Then:</p>
+<ul>
+<li>(i) E0_p is the space of even functions on D_p, of dimension (p^e + 1)/2.</li>
+<li>
+<p>(ii) t_p := tr(S | E0_p) is equal to:</p>
+<ul>
+<li>1 if e is even;</li>
+<li>(2/p) if e is odd and p ≡ 1 mod 4;</li>
+<li>0 if e is odd and p ≡ 3 mod 4.</li>
+</ul>
+<p>In particular t_p does not depend on c.</p>
+</li>
+<li>
+<p>(iii) For the global form D = ⊕_p D_p, E0 = ⊗_p E0_p, and tr_E S = ∏_p t_p.</p>
+</li>
+</ul>
+<p><em>Proof.</em> Write γ(a) = Σ_{x mod p^e} e(ax²/p^e). Take S e_x = ε p^{−e/2} Σ_y e(−2cxy/p^e) e_y with ε = conj γ(c)/|γ(c)|. Then:</p>
+<ul>
+<li>tr S = conj γ(c) γ(−2c)/p^e and tr SZ = conj γ(c) γ(2c)/p^e.</li>
+<li><strong>e even:</strong> γ(a) = p^{e/2} for every unit a, so tr S = tr SZ = 1.</li>
+<li><strong>e odd:</strong> γ(a) = p^{(e−1)/2} (a/p) ε_p √p, so tr S = (−2/p) and tr SZ = (2/p).</li>
+</ul>
+<p>By (i), the projection onto E0_p is ½(1 + Z), so t_p = ½(tr S + tr SZ) = (2/p)(1 + (−1/p))/2. This gives (ii). The opposite sign convention for T conjugates every quantity, and t_p is real, so it is unchanged. Part (i) is the odd case of H1/H2 (F1–F5). For (iii): δ₀ = ⊗ δ_{0,p}; SL₂(Z) → ∏_p SL₂(Z/p^{k_p}) is surjective; and ρ = ⊗ρ_p. Hence the span of the pure tensor δ₀ is the tensor product of the local spans. The phases are consistent because the total signature is 0 and every odd local part has even signature. (W and C are not tensor products, and the argument does not use such a decomposition.)</p>
+<p><em>Certificate.</em> <code>SF/A31_entry7_check/local_odd.py</code> covers all 53 odd prime powers p^e ≤ 201, each with c a residue and with c a non-residue. It computes t_p exactly in Z[ζ_{p^e}] modulo Φ_{p^e}, and dim E0_p as a rank mod ℓ ≡ 1 mod p^e (lower bound = dim W⁺). It finds (i) and (ii) in all 106 cases.</p>
+<p><strong>8.</strong> <strong>Theorem (factorisation and lift lemma).</strong> Assume F1–F5. For even s, the original definitions of W, E and C reduce to C[D], with the complex-conjugate convention of <code>SF/A10</code>, so vanishing statements transfer between the two. Furthermore, tr_C S = −∏<em>p t_p, and tr</em>{P E0_a} S = t_{a−2} (2-adic lift lemma).</p>
+<p><em>Proof.</em> <code>SF/A11_induction/REPORT.md</code>. The factorisation is entry 7(iii) combined with entry 3. The lift lemma follows by comparing P E0_a with E0_{a−2} through the isotropic quotient. <em>Certificate:</em> the base classes a = 2, 3, 4, including P-stability, are computed exactly in <code>SF/A11_induction/exact_E0.py</code>.</p>
+<p><strong>9.</strong> <strong>Theorem.</strong> On the full space C[D], tr S = tr SZ = 0. The Eisenstein trace factorises as a product of local factors, and the local factor vanishes for every odd p ≡ 3 mod 4 with exponent 1.</p>
+<p><em>Proof.</em> tr S and tr SZ are normalised quadratic Gauss sums of the bilinear form, and they vanish by a one-line Gauss-sum evaluation. The factorisation follows from the tensor decomposition of entry 7(iii). The local vanishing is entry 7(ii) with e = 1. <em>Certificate:</em> 2-adic and odd local classes are checked exactly in <code>SF/A10_uniform_Spairing/exact_local.py</code>.</p>
+<p><strong>10.</strong> <strong>Certificate.</strong> Let s ≡ 0, 2 mod 8 with 8 ≤ s ≤ 74. Then tr_E S = 0, where E = ρ-span(δ₀).</p>
+<p><em>Certificate:</em> <code>SF/A31_entry7_check/global_trE.py</code>. It works on the full D = A^{−1}Z²/Z². It computes the ⟨S, T⟩-span of δ₀ and tr_E S modulo two primes ℓ ≡ 1 mod 8M. On E, S² = 1, so tr_E S is an integer of absolute value at most dim E &lt; ℓ/2, and its residue determines it. All 18 values of s give 0. For s = 8, 16, 18, 24, 26, 32, 40, 48, 50, 56 and 58, an independent certificate of tr_C S = tr_E S = 0 is given by the invertible operator Y = Z − SZS, which anticommutes with S (exact mod-p rank; <code>SF/A8_Spairing_even/modp_trace.py</code>). For s = 10, C = 0.</p>
+<p><strong>11.</strong> <strong>Theorem (ST-balance, even s).</strong> Assume I1–I5. Let R = ST, so R³ = I, and let ω = e^{2πi/3}. For every even s ≥ 6:</p>
+<ul>
+<li>tr_W R = −ω if s ≡ 2 mod 3, and tr_W R = 0 otherwise.</li>
+<li>tr_E R = −ω exactly when (Exc) holds, and tr_E R = 0 otherwise. Here (Exc) means: 3 | m − 1, a is even, u ≡ 1 mod 4, and v_p(M) is even for every prime p ≡ 2 mod 3.</li>
+<li>Hence tr_C R ∈ {0, −ω}. The R-eigenvalue multiplicities on C are (k, k, k) or (k+1, k, k+1).</li>
+<li>Moreover, 3 | d_cusp ⇔ tr_C R = 0 ⇔ (s ≢ 2 mod 3 or (Exc)).</li>
+</ul>
+<p><em>Proof.</em> R splits into local factors because γ_s splits D (entry 13). The local traces r_p are computed in entry 13. The 2-adic base cases are certified exactly (<code>SF/A15_ST_balance/local_2adic_ab.py</code>). Since R³ = I, the multiplicities (n₁, n_ω, n_ω̄) satisfy n₁ + n_ω ω + n_ω̄ ω̄ = tr R with n₁ + n_ω + n_ω̄ = dim. Solving gives the stated patterns. (<code>SF/A15_ST_balance/REPORT.md</code>.)</p>
+<p><strong>12.</strong> <strong>Certificate.</strong> For every even s with 6 ≤ s ≤ 400 (198 values), tr_W R equals the Gauss-sum formula of entry 11. The method computes exact phase histograms, evaluates them at 40 digits, and rounds into the lattice Z[ω]. The lattice spacing is far above the error, so the rounding is exact. (<code>SF/A15_ST_balance/formula_even.py</code>, <code>gauss_even.py</code>.)</p>
+<p><strong>13.</strong> <strong>Theorem (local formulas for tr_W R).</strong> Assume I5.</p>
+<ul>
+<li>γ_s splits D, since (1/(m−1))Z² ∩ (1/p^k)Z² = Z².</li>
+<li>For odd p, r_p = ½ a_p(1 + κ_p). So r_p ≠ 0 iff χ₋₃(p^e) = 1, and r_3 ≠ 0 always.</li>
+<li>The case analysis mod 3 (3 ∤ M; 3 | m; 3 | m − 1) is exhaustive.</li>
+<li>Multiplicities of R computed mod p equal the true multiplicities for p ∤ 3, because R³ = I is diagonalisable mod p.</li>
+</ul>
+<p><em>Proof.</em> <code>SF/A15_ST_balance/REPORT.md</code> §§2–4. The splitting is the stated lattice intersection. r_p is a local Gauss-sum evaluation. The last point holds because x³ − 1 is separable mod p.</p>
+<p><strong>14.</strong> <strong>Theorem (closed forms for d_cusp).</strong> Let G(m) denote the closed-form count of <code>SF/A</code>. Then:</p>
+<ul>
+<li>For odd m, G(m) ≤ (m+1)/2, with equality iff m = 1 or m is a prime power.</li>
+<li>For odd s ≥ 5, the closed form satisfies d_cusp ≥ (s−1)(s−3)/4 &gt; 0.</li>
+<li>d_cusp = 0 ⇔ s ∈ {6, 8, 10}.</li>
+<li>d_cusp is even for every s ≥ 5.</li>
+</ul>
+<p>These statements concern the closed-form expressions. They equal the true d_cusp wherever the closed forms are proved, namely dim V = s(s−1) for odd s ≤ 51, and d₂(k, v) for k ≤ 6.</p>
+<p><em>Proof.</em> G is multiplicative; a prime power p^e contributes exactly (p^e+1)/2, and for coprime factors the product of the local values is strictly below (m+1)/2. The remaining statements follow by substituting into the closed forms (full proofs in <code>SF/A/REPORT.md</code>.) For odd s, the parity also follows from entry 1.</p>
+<p><strong>15.</strong> <strong>Theorem.</strong> Assume Chen's theorem (1973). Let r = d_cusp/dim V for odd s (formula level).</p>
+<ul>
+<li>Whether r is close to 1/4 depends only on the number k of prime-power factors of s(s−2). If every prime factor grows, then r → 1 − 3/2^k.</li>
+<li>liminf r = 1/4 is equivalent to the existence of infinitely many pairs (s−2, s) of odd prime powers.</li>
+<li>liminf r ≤ 5/8.</li>
+</ul>
+<p><em>Proof.</em> The first two statements follow from the multiplicative closed form of r: each factor tends to its limit as the prime grows. The third follows by applying Chen's theorem (p + 2 = prime or a product of two primes) to get k ≤ 3 infinitely often. (<code>SF/A3_chen/REPORT.md</code>.)</p>
+<p><strong>16.</strong> <strong>Theorem (isometry swap).</strong> Let h ∈ SO(A)(Q) with h(S⁺) = S⁻ and Q∘h = Q. Then θ(R⁺) = θ(R⁻). At m = 7 (s = 98) such an h exists, so dim V(98) = 2406. Also, tr(g | Fix N) = 2m.</p>
+<p><em>Proof.</em> h maps the representation-number sets bijectively while preserving Q, so the two theta series agree term by term. (<code>SF/galois_review/REVIEW.md</code> G11.)</p>
+<p><strong>17.</strong> <strong>Theorem (Gauss-sum vanishing).</strong> |G(h/m)| is given by the factorisation of quadratic Gauss sums, and G(h/m) = 0 iff 2 ‖ m or 5 | m.</p>
+<p><em>Proof.</em> By the Chinese remainder theorem, G factors into local Gauss sums. Each local factor is evaluated in closed form; the factor at 2 vanishes exactly when 2 ‖ m, and the factor at 5 vanishes exactly when 5 | m (full computation in <code>SF/galois_review/REVIEW.md</code> G6.)</p>
+<h2>2. Dimensions of S(ρ_s)</h2>
+<p>Here S(ρ_s) denotes the space of Maass cusp forms of type ρ_s on W, of weight 0, with λ = 1/4. Every result in this section assumes TB. Upper bounds come from <code>SF/A2/scripts/certify_hybrid.py</code> (M = 6, Q = 40; Arb ball arithmetic). Lower bounds come from the sector lemma (entry 24) applied with d_cusp &gt; 0, or from exact Hecke or T-row determinants.</p>
+<p><strong>18.</strong> <strong>Certificate.</strong> dim S(ρ_s) = 1 for s = 5, 7, 9, 12, 13, 14. (<code>SF/A/REPORT.md</code> §3, <code>SF/A2/REPORT.md</code>.)</p>
+<p><strong>19.</strong> <strong>Certificate.</strong> dim S(ρ_s) = 2 for s = 11 and s = 19. At s = 19 there is one form in each of two sectors. (<code>SF/A2</code>, <code>SF/A9_hecke_family/certify_hecke_s.py</code>.)</p>
+<p><strong>20.</strong> <strong>Certificate.</strong> Assume in addition Γ(1596)-invariance via Wohlfahrt. Then dim S(ρ_21) = 5. The lower bound comes from the Hecke images T′_p, p = 1597, certified in Arb at 256 bits from exact Fourier coefficients. (<code>SF/A7_s21/certify_hecke.py</code>.)</p>
+<p><strong>21.</strong> <strong>Certificate.</strong> dim S(ρ_23) = 3 (<code>SF/A6_certify</code>) and dim S(ρ_25) = 3 (<code>SF/A9</code>).</p>
+<p><strong>22.</strong> <strong>Certificate.</strong></p>
+<ul>
+<li>3 ≤ dim S(ρ_15) ≤ 4.</li>
+<li>3 ≤ dim S(ρ_17) ≤ 4.</li>
+<li>dim S(ρ_s) ≥ 3 for s = 27, 29, 31.</li>
+</ul>
+<p>(<code>SF/A9_hecke_family</code>.)</p>
+<p><strong>23.</strong> <strong>Theorem (Hecke commutation).</strong> If F is a cusp form of type ρ with eigenvalue λ, then T′_p F is again of type ρ with eigenvalue λ. T′_p commutes with the sector projectors, and its coefficients are given by the explicit formula of <code>SF/A7_s21</code>.</p>
+<p><em>Proof.</em> T′_p is a sum over double-coset representatives, which commute with the Laplacian. The ρ-twist is compatible with the representatives because ρ factors through the level (TB). (<code>SF/A7_s21</code>.)</p>
+<p><strong>24.</strong> <strong>Theorem (sector lemma).</strong> Let σ be a P-even sector other than all-plus, with P_σW ≠ 0. Then P_σu is a non-zero cusp form of type ρ_s with λ = 1/4.</p>
+<p><em>Proof.</em> P_σ commutes with ρ, so P_σu has type ρ_s and the same λ. Cuspidality and non-vanishing follow from the λ = 1/4 constant-term criterion (TB) applied in the sector σ; full proof in the source. (<code>SF/A6_certify</code>.)</p>
+<h2>3. Bridge C at s = 7</h2>
+<p>Here A_7 = [[2,7],[7,7]] and |D| = 35. ρ₃₅ is the Weil representation of the discriminant form D(A_7) (S e_μ = (i/√35) Σ_ν e(−b(μ,ν)) e_ν, T e_μ = e(q(μ)) e_μ). χ is the generator of Hom(SL₂(Z), C^×) ≅ Z/12, with χ(T) = e(1/12) and χ(S) = −i.</p>
+<p><strong>25.</strong> <strong>Theorem.</strong> At s = 7, ρ_7|W = E ⊕ C with dim E = 36 and dim C = 6. Both E and C are irreducible, and dim C⁺ = dim C⁻ = 3. Hence C has no 1-dimensional ρ-invariant subspace, and any S-eigenvector in C generates all of C as a ρ-module.</p>
+<p><em>Proof.</em> dim End(ρ_7|W) = 2 (exact mod-p upper bound; <code>SF/A32_35_to_rho7/exact_hom.py</code>), and E, C ≠ 0 are subrepresentations. So both summands are irreducible and non-isomorphic. The equality of C⁺ and C⁻ is entry 1. (<code>SF/RTA_implications/REPORT.md</code>.)</p>
+<p><strong>26.</strong> <strong>Certificate.</strong> Assume TB. Then dim S(ρ_7) = 1. (<code>SF/A/scripts/certify_s.py</code>, <code>SF/A/REPORT.md</code> §3.)</p>
+<p><strong>27.</strong> <strong>Theorem.</strong></p>
+<ul>
+<li>Q(√35) has class number 2, and 6 + √35 is a unit of norm +1.</li>
+<li>[[2,1],[1,−17]] is an odd lattice.</li>
+<li>There is no even binary lattice of determinant −35.</li>
+</ul>
+<p><em>Proof.</em> 6² − 35 = 1, and the class number is standard. For an even binary form, the discriminant b² − 4ac would equal 35, but 35 ≡ 3 mod 4 is not a square mod 4. (<code>SF/RTA_prereg/REPORT.md</code>.)</p>
+<p><strong>28.</strong> <strong>Theorem.</strong> Let C be any irreducible unitary representation.</p>
+<ul>
+<li>Every Γ-equivariant map C^{⊗a} ⊗ C̄^{⊗b} → C is Z/3-graded by R-degree.</li>
+<li>If no T-exponents satisfy a + b + c − d ≡ 0 mod 1, then Hom_Γ(C⊗C⊗C, C) = 0.</li>
+<li>The products x⟨z, y⟩ and z⟨x, y⟩ are equivariant.</li>
+</ul>
+<p><em>Proof.</em> R³ = I acts on the tensor product, and an intertwiner commutes with R. An intertwiner also commutes with T, so it can only connect T-eigenvectors whose exponents match. ⟨·,·⟩ is Γ-invariant. (<code>SF/A18_RTA_foundation/REPORT.md</code>.)</p>
+<p><strong>29.</strong> <strong>Theorem.</strong> dim Hom_{SL₂(Z)}(ρ₃₅ ⊗ χ³, ρ_7|W) = 1. A generator Φ is monomial: after rescaling, its non-zero entries lie in {±1, ±e(1/5)}. Its image is exactly C, and its kernel has dimension 29. Consequently C ≅ ρ₅⁻ ⊗ ρ₇⁻ ⊗ χ³, where ρ₅⁻ ⊗ ρ₇⁻ is the 6-dimensional subspace of ρ₃₅ that is odd under both local reflections Z₅ and Z₇.</p>
+<p><em>Proof and certificate.</em></p>
+<ul>
+<li><strong>Upper bound.</strong> dim ≤ 1 from an exact mod-p rank computation at p = 29 401 and p = 14 729 401 (p ≡ 1 mod 29 400; <code>SF/A32_35_to_rho7/exact_hom.py</code>).</li>
+<li><strong>Lower bound.</strong> The explicit 35 × 42 matrix Y with unit entries (<code>SF/A32_35_to_rho7/X_chi3.npy</code>) satisfies Y·S₃₅′ = S_7·Y (210 of 210 entries) and Y·T₃₅′ = T_7·Y (24 of 24 entries), exactly in Z[Z/29400] modulo Φ₂₉₄₀₀ (<code>SF/A32_35_to_rho7/exact_verify.py</code>). Generators suffice.</li>
+<li><strong>Rank and image.</strong> The six image rows have disjoint column supports, so the rank is 6. The image is a 6-dimensional subrepresentation of W = E ⊕ C. By entry 25 it must be C.</li>
+<li><strong>Kernel and isomorphism.</strong> The kernel contains the 11 labels with a zero local component and the 18-dimensional complement of the (−,−) sector on the 24 primitive labels, so Φ restricted to ρ₅⁻ ⊗ ρ₇⁻ ⊗ χ³ is an isomorphism onto C.</li>
+</ul>
+<h2>4. T3 and budget arithmetic</h2>
+<p>T3(n) is defined by:</p>
+<ul>
+<li>T3(n) = n/3 for n ≡ 0 mod 3;</li>
+<li>T3(n) = (4n + 2)/3 for n ≡ 1 mod 3;</li>
+<li>T3(n) = (2n + 1)/3 for n ≡ 2 mod 3 (in the integer form of <code>SF/A20</code>).</li>
+</ul>
+<p>σ(n) is the number of steps needed to reach 1.</p>
+<p><strong>30.</strong> <strong>Theorem.</strong> With the integer form, T3 maps positive integers to positive integers. The expression (2n + 1)/3 is not an integer for n ≡ 2 mod 3; for example, (2·2 + 1)/3 = 5/3.</p>
+<p><em>Proof.</em> Check each residue class mod 3. (<code>SF/A20</code>, <code>SF/A25</code>.)</p>
+<p><strong>31.</strong> <strong>Theorem.</strong> σ(3ᵏm) = k + σ(m), and σ(3ᵏ) = k.</p>
+<p><em>Proof.</em> T3(3n) = n. Use induction on k. (<code>SF/A23</code>, <code>SF/A24</code>.)</p>
+<p><strong>32.</strong> <strong>Theorem.</strong> If σ(n) ≤ 539, then T3^{539}(n) = 1 when σ(n) is odd, and T3^{539}(n) = 2 when σ(n) is even.</p>
+<p><em>Proof.</em> T3 alternates 1 ↦ 2 ↦ 1. After reaching 1 at step σ(n), the remaining 539 − σ(n) steps alternate. (<code>SF/A23_axiom01_revised/REPORT.md</code>.)</p>
+<p><strong>33.</strong> <strong>Theorem.</strong> If σ(n) ≤ 540, then T3^{540}(n) = 1 iff σ(n) is even. In particular T3^{540}(4880) = 1, and among n ≤ 10⁶, exactly 504 899 end at 1 and 495 101 end at 2.</p>
+<p><em>Proof.</em> As in entry 32. The counts are an exact enumeration (<code>SF/A30_540_thermo/tests540.py</code>).</p>
+<p><strong>34.</strong> <strong>Theorem.</strong> For every j ≥ 1, the map n mod 3ʲ ↦ (T3ˢ(n) mod 3)_{0≤s&lt;j} is a bijection from Z/3ʲ onto the words of length j over {0, 1, 2}.</p>
+<p><em>Proof.</em> Induction on j. On each residue class mod 3, T3 is affine with leading coefficient 1/3 or 4/3 or 2/3. So T3(n) mod 3^{j−1} is determined by n mod 3ʲ, and it runs over all classes mod 3^{j−1} as n runs over a fixed class mod 3. Exhaustive check for j ≤ 8: <code>SF/A29_patterns_all/run_core.py</code>.</p>
+<p><strong>35.</strong> <strong>Theorem.</strong> T3 does not induce a map on Z/9 (and more generally on Z/3ʲ).</p>
+<p><em>Proof.</em> By entry 34, T3(n) mod 3ʲ depends on n mod 3^{j+1} and not on n mod 3ʲ.</p>
+<p><strong>36.</strong> <strong>Theorem.</strong> Each m has an explicit list of T3-preimages. Moreover, T3(n) + 2 ≤ (4/3)(n + 2), with equality iff n ≡ 1 mod 3.</p>
+<p><em>Proof.</em> The preimages are found by inverting each branch. For the inequality: n ≡ 1 gives equality, and the other branches give strictly less. (<code>SF/A24_threshold_1e18</code>.)</p>
+<p><strong>37.</strong> <strong>Theorem.</strong> ⌊(4880 − 21)/9⌋ = 539.</p>
+<p><em>Proof.</em> 4859/9 = 539.89. (<code>SF/A20</code>, <code>SF/A23</code>.)</p>
+<p><strong>38.</strong> <strong>Theorem.</strong> ⌊3⁵e³⌋ = 4880 and ⌊35e³⌋ = 702.</p>
+<p><em>Proof.</em> 3⁵e³ = 4880.84 and 35e³ = 702.99, both evaluated with rigorous error bounds. (<code>SF/A19</code>, <code>SF/A25</code>.)</p>
+<p><strong>39.</strong> <strong>Theorem.</strong></p>
+<ul>
+<li>540 = 2²·3³·5 = 4860/9.</li>
+<li>⌊(4880 − f)/9⌋ = 540 exactly for f = 12, …, 20.</li>
+<li>539.9 = 540(1 − 1/5400).</li>
+<li>5399 is prime. Hence e^{2πi/539.9} = e^{2πi·10/5399} is a primitive 5399th root of unity, and its 539th power is not 1. Moreover, 539 steps of the phase e^{2πi/539.9} give 5390/5399 of a full turn.</li>
+<li>The beat period of 540 against 539.9 is 2 915 460.</li>
+</ul>
+<p><em>Proof.</em> Direct computation. Primality of 5399 is checked by trial division up to 73. (<code>SF/A25</code>, <code>SF/A30</code>.)</p>
+<p><strong>40.</strong> <strong>Certificate.</strong> Let m₅₃₉ be the smallest n with σ(n) = 539. Then:</p>
+<ul>
+<li>10⁷ &lt; m₅₃₉ ≤ 788 638 819 521 764 360 564 859 602 047 870.</li>
+<li>For every d ≤ 291 there is a seed below 10¹⁸ with σ = d.</li>
+<li>σ(666 954 248 808 172 552) = 291.</li>
+</ul>
+<p>The method is exact integer iteration (<code>SF/A24_threshold_1e18/exact_min.py</code>, <code>beam.py</code>).</p>
+<p><strong>41.</strong> <strong>Certificate (exact counts).</strong></p>
+<ul>
+<li>max_{n ≤ 20 000} σ(n) = 53, attained at n = 16261.</li>
+<li>max_{n ≤ 50 000} σ(n) = 55, attained at n = 36043 and 36592.</li>
+<li>σ(4880) = 14 and σ(10¹⁸) = σ(10¹⁸ + 1) = 92.</li>
+<li>σ(3^{539}) = 539.</li>
+<li>Every n ≤ 10⁷ satisfies σ(n) ≤ 539.</li>
+<li>σ(3^{540}) = 540, and T3^{539}(3^{540}) = 3.</li>
+</ul>
+<p>The method is exact integer iteration (<code>SF/A19_9maths_axioms/checks.py</code>, <code>SF/A23_axiom01_revised/budget.py</code>, <code>SF/A28</code>).</p>
+<p><strong>42.</strong> <strong>Theorem.</strong></p>
+<ul>
+<li>φ⁷ = (29 + 13√5)/2.</li>
+<li>1001 = 7·11·13.</li>
+<li>18 + 1 + 520 = 539.</li>
+<li>243 − 244 + 55 = 54.</li>
+<li>4·8 + 5·12 = 92.</li>
+<li>4·122 = 488.</li>
+</ul>
+<p><em>Proof.</em> Direct computation. For φ⁷, use φⁿ = (Lₙ + Fₙ√5)/2 with L₇ = 29 and F₇ = 13.</p>
+<p><strong>43.</strong> <strong>Theorem.</strong> Consider any lift of T3 in which the integer coordinate evolves by T3 and steps are counted one-to-one. In any such lift, the number of steps to reach 1 is exactly σ(n).</p>
+<p><em>Proof.</em> The projection to the integer coordinate is a step-preserving semiconjugacy. (<code>SF/A20_T3_bulk_vs_shadow</code>.)</p>
+<h2>5. The H3 orbit map</h2>
+<p>Φ(n) = Σ_{s&lt;539} w(r_s(n)) ∈ ⟨c⟩ ≅ Z/N, where r_s(n) = T3ˢ(n) mod 3, and w: {0, 1, 2} → Z/N.</p>
+<p><strong>44.</strong> <strong>Theorem.</strong> Φ is well defined for every n ≥ 1.</p>
+<p><em>Proof.</em> The sum is finite (539 terms) and every T3ˢ(n) is defined. (<code>SF/A28_H3_map_construction/REPORT.md</code>.)</p>
+<p><strong>45.</strong> <strong>Theorem (cocycle law).</strong> Let S_k(n) = Σ_{s&lt;k} w(r_s(n)). Then S_{k+l}(n) = S_k(n) + S_l(T3ᵏn). Hence w induces a monoid homomorphism {0, 1, 2}* → Z/N.</p>
+<p><em>Proof.</em> Split the sum at s = k.</p>
+<p><strong>46.</strong> <strong>Theorem (tail formula).</strong> If σ(n) ≤ 539 and L = 539 − σ(n), then Φ(n) = S_σ(n) + ⌈L/2⌉w(1) + ⌊L/2⌋w(2).</p>
+<p><em>Proof.</em> Apply entry 45 at k = σ(n). The tail orbit is 1, 2, 1, 2, …, with residues 1, 2, 1, 2, …. An exact check on 301 seeds × 9 weight choices is in <code>SF/A28_H3_map_construction/h3map.py</code>.</p>
+<p><strong>47.</strong> <strong>Theorem.</strong> Replacing the generator c by another generator multiplies Φ by a unit of Z/N. This preserves the zero set of Φ, its additive order, and τ. The manifolds M_A and M_B, with Z/N coefficients, give identical values.</p>
+<p><em>Proof.</em> Φ depends only on the cyclic group ⟨c⟩ ≅ Z/N.</p>
+<p><strong>48.</strong> <strong>Theorem.</strong></p>
+<ul>
+<li>Tors H³(M_A; Z) = Z/N, and there is no self-linking form on H³ in dimension 7.</li>
+<li>For M_B = L⁷(N), H³(M_B; Z) = 0 and H³(M_B; Z/N) = Z/N.</li>
+</ul>
+<p><em>Proof.</em> Standard: universal coefficients, and the cellular chain complex of a lens space. A linking form in dimension 7 pairs H³ with H⁴, not H³ with itself. (<code>SF/A28</code>.)</p>
+<p><strong>49.</strong> <strong>Theorem.</strong> Let T = d + (ζ(t) − 1)H₃∧. Then T² = 0 iff dt ∧ H₃ = 0 and dH₃ = 0. A torsion class has no non-zero de Rham representative. On M_A, H₃ is exact, and T = e^{−fB} ∘ d ∘ e^{fB}; hence the T-cohomology is isomorphic to de Rham cohomology.</p>
+<p><em>Proof.</em> Expand T². de Rham cohomology is a real vector space, so torsion maps to 0. If H₃ = dB, conjugate d by the exponential. (<code>SF/A25</code>, <code>SF/A28</code>.)</p>
+<h2>6. Non-existence and vanishing results</h2>
+<p><strong>50.</strong> <strong>Theorem.</strong> There exist positive integers n with σ(n) &gt; 539. Specifically, σ(3^{540}) = 540.</p>
+<p><em>Proof.</em> Entry 31.</p>
+<p><strong>51.</strong> <strong>Theorem.</strong> For every k ≥ 38 with k ≠ 539, σ(3ᵏ) = k ≠ 539, and 3ᵏ &gt; 10¹⁸. Hence σ is not constantly equal to 539 on n ≥ 10¹⁸.</p>
+<p><em>Proof.</em> Entry 31, together with 3^{38} &gt; 10¹⁸.</p>
+<p><strong>52.</strong> <strong>Theorem.</strong></p>
+<ul>
+<li>3·61 + 162 + 223 = 568.</li>
+<li>244 − 18 − 1 = 225.</li>
+<li>The alternating sum of the sequence of Betti numbers recorded in <code>SF/A25</code> is −162.</li>
+<li>A closed oriented 7-manifold has b₃ = b₄. Hence no closed oriented 7-manifold has b₃ = 223 and b₄ = 61.</li>
+<li>With χ = 0 and rk = 3, χ/2 + rk = 3.</li>
+<li>3¹⁸ &lt; 10⁹.</li>
+</ul>
+<p><em>Proof.</em> Direct computation. b₃ = b₄ follows from Poincaré duality. (<code>SF/A25</code>.)</p>
+<p><strong>53.</strong> <strong>Theorem.</strong> 540·{2, 3, 4, 5, 10} = {1080, 1620, 2160, 2700, 5400}. None of these is an integer multiple of 539.9.</p>
+<p><em>Proof.</em> k·540/539.9 = 5400k/5399. Since 5399 is prime and does not divide 5400k for these k, the quotient is not an integer. (<code>SF/A19</code>, <code>SF/A23</code>.)</p>
+<p><strong>54.</strong> <strong>Theorem.</strong></p>
+<ul>
+<li>540/(1 + 1/540) = 291600/541 ≈ 539.0018.</li>
+<li>540/(1 + 0.01·0.185) ≈ 539.0028.</li>
+<li>540(1 − 0.0001) = 539.946.</li>
+<li>540/(1 + δ) = 539.9 iff δ = 1/5399.</li>
+</ul>
+<p><em>Proof.</em> Direct computation. (<code>SF/A30</code>.)</p>
+<p><strong>55.</strong> <strong>Theorem.</strong> Let V ∈ {ρ₃₅, ρ₃₅<em>}, U ∈ {ρ_7|W, ρ_7|W</em>} and k ∈ Z/12. Then Hom_{SL₂(Z)}(V ⊗ χᵏ, U) = 0 and Hom_{SL₂(Z)}(U, V ⊗ χᵏ) = 0, except in the two cases (V, k, U) = (ρ₃₅, 3, ρ_7|W) and (ρ₃₅<em>, 9, ρ_7|W</em>), where the dimension is 1 (entry 29 and its complex conjugate). In particular there is no non-zero intertwiner ρ₃₅ → ρ_7|W. All 12 T-eigenvalues of ρ₃₅ occur in ρ_7|W, so the vanishing is forced by S, not by the T-spectra.</p>
+<p><em>Certificate.</em> The equations XS₁ = S₂X and XT₁ = T₂X are solved over F_p with ζ ↦ a primitive 29 400th root of unity. This was done at p = 29 401 and p = 14 729 401, with identical results. 96 Hom spaces were computed, and the mod-p nullity is 0 in each case listed. (<code>SF/A32_35_to_rho7/exact_hom.py</code>, <code>run.py</code>, <code>results.json</code>.)</p>
+<p><strong>56.</strong> <strong>Theorem.</strong> For s = 8, 10, 16 and 18, no label-dilation Galois automorphism acts on ρ_s(S) with sign −1.</p>
+<p><em>Certificate.</em> Exact enumeration of dilations (<code>SF/A8c_Spairing_even/galois_dilation_fast.py</code>).</p>
+<p><strong>57.</strong> <strong>Theorem.</strong> The class-number predictor Cl(K_s) of <code>SF/A5_classgroup</code> differs from dim S(ρ_s) at s = 9 and s = 11. The predictor Cl(4n_s) differs from it at s = 23 and 25.</p>
+<p><em>Proof.</em> The class numbers are exact (<code>SF/A5_classgroup/classgroups_A5.py</code>), and they are compared with the certified values of entries 18–22.</p>
+<p><strong>58.</strong> <strong>Theorem.</strong> At s = 56, the multiplicities of R = ST on E are (187, 186, 187), so E is not R-balanced. On C they are (84, 84, 84).</p>
+<p><em>Proof.</em> Entry 11: at s = 56, (Exc) holds and s ≡ 2 mod 3. The dimensions are dim E = 560 and d_cusp = 252, computed exactly (<code>SF/A15_ST_balance/exact_E0_R.py</code>).</p></body></html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Category A ledger rev1</title><style>body{font-family:'DejaVu Sans',sans-serif;font-size:10.5pt;max-width:900px;margin:auto;line-height:1.35}code{font-family:'DejaVu Sans Mono',monospace;font-size:9pt}table{border-collapse:collapse}td,th{border:1px solid #999;padding:2px 5px}</style></head><body><h1>Category A ledger (revision 1): s-family, Bridge C, T3/budget arithmetic, H3 orbit map</h1>
+<p><strong>For:</strong> Arvin Hampton · <strong>Compiled:</strong> 2026-10-22, 10:00 AM CDT · <strong>Revision 1:</strong> 2026-10-22, about 10:30 AM CDT.</p>
+<p><strong>Sources:</strong> every report in <code>reports/s_family_paths/</code> (A, A2–A32, RTA_implications, RTA_prereg, RNT_prereg, galois_review, loose_ends) and <code>reports/SUMMARY_2026-10-21/SUMMARY.md</code>.</p>
+<p><strong>Rules for this ledger</strong></p>
+<ul>
+<li>This is a read-only consolidation. Nothing here is upgraded beyond the status the source report (including the referee reports A31 and A32) gives it.</li>
+<li><strong>Category A</strong> means proved, or exact relative to named imports.</li>
+<li><strong>Category B</strong> items appear only in the appendix.</li>
+<li>No TPC or RH claims.</li>
+<li>New files only. Nothing was pushed or sent.</li>
+</ul>
+<p><strong>Path shorthand:</strong> <code>SF/</code> = <code>/workspace/quantum-comp/reports/s_family_paths/</code>.</p>
+<p><strong>Status keys</strong></p>
+<ul>
+<li><strong>P</strong> — proved, hand proof.</li>
+<li><strong>P-rel</strong> — proved relative to named imports.</li>
+<li><strong>CC</strong> — computer certificate: exact arithmetic or ball arithmetic.</li>
+<li><strong>IC</strong> — independently checked by a separate referee report.</li>
+</ul>
+<p><strong>Standard imports</strong></p>
+<ul>
+<li><strong>TB (trust base of <code>SF/A</code>, <code>SF/A6</code>).</strong> This means:</li>
+<li>the manuscript theta lift u has type ρ_s and λ = 1/4;</li>
+<li>the λ = 1/4 constant-term criterion;</li>
+<li>Arb/python-flint ball arithmetic;</li>
+<li>the rounding analysis of <code>A2/scripts/certify_hybrid.py</code>.</li>
+<li><strong>F1–F5 (<code>SF/A12</code>).</strong> These are standard Weil-representation facts, including Scheithauer's upper-triangular formula.</li>
+<li><strong>I1–I5 (<code>SF/A15</code>).</strong> These are imports from A11/A12.</li>
+</ul>
+<hr />
+<h2>Corrections in this revision</h2>
+<p>Entry numbers below refer to the <strong>original</strong> ledger (65 entries) unless marked "new". This revision has 66 entries.</p>
+<ul>
+<li><strong>Original entry 7 (odd-prime step)</strong> — restated precisely as a local statement about C[D_p]: E0_p = SL2-span of δ₀ = the even functions, dim (p^e+1)/2; t_p = tr(S | E0_p) defined explicitly (1 / (2/p) / 0), independent of c; only E0 = ⊗E0_p factors, not W or C. Status raised from "not independently reviewed" to P-rel F1–F5, IC by A31. Added the CC extension tr_E S = 0 for all s ≡ 0, 2 mod 8, 8 ≤ s ≤ 74. (Still entry 7.)</li>
+<li><strong>Original entry 4</strong> — added the scope caveat E = ρ-span(δ₀) (equal to the isotropic-span definition only numerically beyond s = 18), and the note that a = 2 rests on the exact base-class certificates, not on H2 (proved only for a ≥ 3). The "odd-prime part not independently reviewed" line now cites A31. (Still entry 4.)</li>
+<li><strong>Original entry 61 (35 vs ρ7)</strong> — upgraded from floating point to exact Category A (computer certificate): Hom(ρ35, ρ7|W) = 0 untwisted, also for the dual and for all twists χ^k with k ≠ 3. The implication "no equivariant map exists" was removed; the entry now states that only untwisted maps are excluded. (Now entry 62.)</li>
+<li><strong>New entry 31 (Bridge C)</strong> — Hom(ρ35 ⊗ χ³, ρ7|W) is 1-dimensional; Φ unique up to scale, monomial with entries ±1, ±e(1/5); image exactly C, kernel 29-dim; C ≅ ρ5⁻ ⊗ ρ7⁻ ⊗ χ³. Category A, exact in cyclotomic arithmetic (A32). The never-built law vector and the float-only |det| = 35 controls are placed in Category B (appendix).</li>
+<li><strong>Renumbering</strong> — original entries 31–65 are now 32–66 (shift +1); internal cross-references updated. Original entries 1–30 keep their numbers.</li>
+<li><strong>Editorial</strong> — the section "Corrections recorded across the reports" was removed (original entry 51 now states its corrected reading inline); lettered theorem labels were dropped from original entries 14 and 18; open problems 1 and 4 and the Category B appendix were updated to match.</li>
+</ul>
+<hr />
+<h2>1. s-family Weil representation ρ_s (W, E, C = cusp part)</h2>
+<ol>
+<li><strong>The S-pairing holds for every odd s ≥ 5.</strong> For every odd s ≥ 5, tr_C ρ(S) = 0, so dim C⁺ = dim C⁻ = d_cusp/2. The same holds on W and on E.<ul>
+<li>Status: P (Galois-sign argument, σ(√n) = −√n).</li>
+<li>Imports: TB, family_s label matrices.</li>
+<li>Source: <code>SF/A6_certify/REPORT.md</code>, <code>SF/galois_review/REVIEW.md</code> (G1).</li>
+</ul>
+</li>
+<li><strong>The Galois-sign argument also covers s ≡ 4, 6 mod 8.</strong> It gives tr S = 0 on C, W and E for these s as well. The exact obstruction at s ≡ 0, 2 mod 8 is √n ∈ Q(ζ_{n/2}).<ul>
+<li>Status: P.</li>
+<li>Source: <code>SF/galois_review/REVIEW.md</code> G1, <code>SF/A6_certify</code>.</li>
+</ul>
+</li>
+<li><strong>The S-trace vanishes on W for every even s.</strong> For every even s, tr_W S = 0. The proof uses a monomial unitary K_y that anticommutes with S and commutes with γ_s and −1.<ul>
+<li>Status: P, plus an exact check for even s = 6..60.</li>
+<li>Source: <code>SF/A8c_Spairing_even/REPORT.md</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>The S-pairing holds uniformly for every s ≡ 0, 2 mod 8.</strong> For every such s, tr_C S = 0 for the original W, E and C. Hence dim C⁺ = dim C⁻ and tr_E S = 0. This closes 34, 42, the ten A10 gaps and the odd-step cases.</p>
+<ul>
+<li>Status: P-rel. The imports are F1–F5, plus a CC of the 2-adic base classes a = 2, 3, 4.</li>
+<li>H1 was confirmed independently by A13 and H2 by A14, both with minor expository fixes only. The odd-prime part (entry 7) was independently checked by A31.</li>
+<li><strong>The a = 2 case rests on the exact base-class certificates, not on H2.</strong> H2 is proved only for a ≥ 3 (entry 6). For a = 2 the classes (2, 1/4) ⊕ (8, −u/16) have tr = 0 exactly for u ≡ 1 mod 4 (A11 <code>logs_exact_E0.txt</code>).</li>
+<li><strong>Scope caveat.</strong> Here E means E = ρ-span(δ₀). Its equality with the isotropic-span definition of E (A10) is known only numerically beyond s = 18 (A11), not proved in general. Beyond s = 18 the statement tr_E S = 0 is therefore about ρ-span(δ₀).</li>
+<li>Source: <code>SF/A12_H1H2_odd/REPORT.md</code>, <code>SF/A13_H1_check</code>, <code>SF/A14_H2_check</code>, <code>SF/A31_entry7_check/REFEREE.md</code>.</li>
+<li><strong>Combined with entries 1–2, tr_C S = 0 for every s ≥ 5</strong> (P-rel).</li>
+</ul>
+</li>
+<li>
+<p><strong>H1 (P-stability) holds for all a ≥ 2.</strong> δ_h lies in the δ₀-span, via the explicit word S T^{2^a} S.</p>
+<ul>
+<li>Status: P-rel F1–F5, and IC by A13.</li>
+<li>A13 also ran an exact mod-p check (p = 33556993) for a = 2..7 over all 24 classes u mod 8.</li>
+<li>Source: <code>SF/A12</code>, <code>SF/A13_H1_check/REPORT.md</code>.</li>
+</ul>
+</li>
+<li><strong>H2 (zero trace on (1−P)E₀) holds for all a ≥ 3.</strong> There is a basis of X indexed by P¹(Z/M), on which S acts monomially and without fixed points.<ul>
+<li>Status: P-rel F1–F5, and IC by A14.</li>
+<li>A14 notes that the level is lcm(4, M), which is why a = 2 is excluded.</li>
+<li>Source: <code>SF/A12</code>, <code>SF/A14_H2_check/REPORT.md</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Odd-prime local step (a local statement about C[D_p]).</strong> Let p be an odd prime, e ≥ 0, and D_p = (Z/p^e, q(x) = c x²/p^e) with c a unit; let ρ_p be its Weil representation.</p>
+<ul>
+<li><strong>Span.</strong> E0_p := SL2(Z)-span of δ₀ in C[D_p] equals the space of even functions {f : f(−x) = f(x)}, of dimension (p^e + 1)/2.</li>
+<li><strong>Local trace.</strong> Define t_p := tr(S | E0_p) (= ½(tr S + tr SZ)). Then:<ul>
+<li>t_p = 1 if e is even;</li>
+<li>t_p = (2/p) if e is odd and p ≡ 1 mod 4;</li>
+<li>t_p = 0 if e is odd and p ≡ 3 mod 4.</li>
+</ul>
+</li>
+<li>So t_p = 0 exactly when p^e ≡ 3 mod 4. t_p does not depend on the unit c.</li>
+<li><strong>What factors.</strong> Only E0 factors: E0 = ⊗_p E0_p, hence tr_E S = ∏_p t_p. W and C do <strong>not</strong> factor, and the argument does not need them to; C = W ⊖ E0 and tr_C S = tr_W S − tr_E S with tr_W S = 0 from entry 3.</li>
+<li>Status: P-rel F1–F5; IC by A31 (hand re-derivation, plus an exact check in Z[ζ_{p^e}] for all 53 odd prime powers p^e ≤ 201, each with c a residue and a non-residue: 0 failures).</li>
+<li><strong>Extension (CC, A31).</strong> Computed directly on the full discriminant form, tr_E S = 0 exactly for every s ≡ 0, 2 mod 8 with 8 ≤ s ≤ 74 (18 values; exact integer trace via mod-ℓ at two primes with |tr| ≤ dim E &lt; ℓ/2). This cross-checks the certificates of entry 10 and extends them to s = 64, 66, 72, 74.</li>
+<li>Source: <code>SF/A12</code>, <code>SF/A31_entry7_check/REFEREE.md</code>, <code>SF/A31_entry7_check/logs_local_odd.txt</code>, <code>SF/A31_entry7_check/logs_global_trE.txt</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Factorisation and lift lemma.</strong> For even s, the original definitions collapse to C[D]; this is the complex conjugate of the A10 convention, so vanishing transfers.</p>
+<ul>
+<li>Factorisation: tr_C S = −∏_p t_p.</li>
+<li>Lift lemma: tr_{P E0_a} S = t_{a−2}.</li>
+<li>Exact base classes a = 2, 3, 4, including P-stability.</li>
+<li>Status: P, and CC for the base classes.</li>
+<li>Source: <code>SF/A11_induction/REPORT.md</code>.</li>
+</ul>
+</li>
+<li><strong>Full-space traces.</strong> tr S = tr SZ = 0 on the full space (one-line Gauss-sum argument). The Eisenstein trace factorises as a tensor product of local factors. The local factor vanishes for odd p ≡ 3 mod 4 with exponent 1.<ul>
+<li>Status: P. Several 2-adic and odd local classes are CC.</li>
+<li>Source: <code>SF/A10_uniform_Spairing/REPORT.md</code>.</li>
+</ul>
+</li>
+<li><strong>Early per-s certificates.</strong> tr_C S = 0 and tr_E S = 0 are certified for s = 8, 16, 18, 24, 26, 32, 40, 48, 50, 56, 58, using an invertible anticommuting operator Y = Z − SZS. C = 0 at s = 10.<ul>
+<li>Status: CC (exact mod-p rank).</li>
+<li>These are now subsumed by entry 4.</li>
+<li>Source: <code>SF/A8c</code>, <code>SF/A8_Spairing_even</code>.</li>
+</ul>
+</li>
+<li><strong>ST-balance for even s.</strong> Let R = ST, so R³ = I, and write ω = e^{2πi/3}.<ul>
+<li>For every even s ≥ 6, tr_W R ∈ {0, −ω}, determined by s mod 3: it is −ω iff s ≡ 2 mod 3.</li>
+<li>tr_E R = −ω exactly under (Exc), and 0 otherwise.</li>
+<li>(Exc) is: 3 | m−1, a even, u ≡ 1 mod 4, and v_p(M) even for every prime p ≡ 2 mod 3 (notation of A15 §1).</li>
+<li>Hence tr_C R ∈ {0, −ω}, and the R-multiplicities on C are (k, k, k) or (k+1, k, k+1).</li>
+<li>Equivalently, 3 | d_cusp ⇔ tr_C R = 0 ⇔ (s ≢ 2 mod 3 or (Exc)).</li>
+<li><strong>Behaviour under (Exc):</strong> E is unbalanced while C is balanced. At s = 56, E has multiplicities (187, 186, 187) and C has (84, 84, 84), because tr_W R = −ω cancels tr_E R.</li>
+<li>Status: P-rel I1–I5, plus two small 2-adic base cases that are CC. IC by A16.</li>
+<li>A16 recommends restricting the scope to even s; odd s is Category B only (see the appendix).</li>
+<li>Source: <code>SF/A15_ST_balance/REPORT.md</code>, <code>SF/A16_ST_check/REPORT.md</code>.</li>
+</ul>
+</li>
+<li><strong>The tr_W R formula is exactly confirmed for 198 values of s.</strong> The Gauss-sum formula for tr_W R ∈ Z[ω] equals the exact value for every even s from 6 to 400. The check uses exact phase histograms evaluated at 40 digits and rounded into the lattice Z[ω].<ul>
+<li>Status: CC.</li>
+<li>Source: <code>SF/A15</code>.</li>
+</ul>
+</li>
+<li><strong>Local formulas behind tr_W R.</strong><ul>
+<li>γ_s splits the discriminant form D. The argument is (1/(m−1))Z² ∩ (1/p^k)Z² = Z², with the wording fixed in A16.</li>
+<li>Odd p: r_p = ½ a_p(1 + κ_p), so r_p ≠ 0 iff χ₋₃(p^e) = 1, and r_3 is never 0.</li>
+<li>The mod-3 case analysis (3 ∤ M; 3 | m; 3 | m−1) is complete.</li>
+<li>The W multiplicity counts mod p equal the true counts, because R³ = I is diagonalisable mod p for p ∤ 3.</li>
+<li>Status: P-rel I5, IC by A16.</li>
+<li>Source: <code>SF/A15</code>, <code>SF/A16</code>.</li>
+</ul>
+</li>
+<li><strong>Closed forms for d_cusp, at formula level.</strong><ul>
+<li>Lemma: for odd m, G(m) ≤ (m+1)/2, with equality iff m is 1 or a prime power.</li>
+<li>Odd s ≥ 5: d_cusp ≥ (s−1)(s−3)/4 &gt; 0.</li>
+<li>d_cusp = 0 ⇔ s ∈ {6, 8, 10}.</li>
+<li>d_cusp is even for every s ≥ 5. For odd s this is independently re-proved by entry 1.</li>
+<li><strong>Scope:</strong> these are statements about the closed forms. They describe the true d_cusp only where the closed forms are themselves proved:<ul>
+<li>dim V = s(s−1) is proved for odd s ≤ 51;</li>
+<li>d₂(k, v) is proved for k ≤ 6.</li>
+</ul>
+</li>
+<li>Status: P (formula level).</li>
+<li>Source: <code>SF/A/REPORT.md</code>.</li>
+</ul>
+</li>
+<li><strong>Distribution of r = d_cusp/dim V (odd s, formula level).</strong> The limit law of r is the point mass at 1. It exists but is not continuous. The bounded part has a continuous limit law. The source also proves an exact typical rate and an unconditional structure of the limit-point set.<ul>
+<li>Status: P. Some mean bounds cite Shiu and Nair–Tenenbaum and are marked CHECK in the source.</li>
+<li>Source: <code>SF/A4_dist/REPORT.md</code>.</li>
+</ul>
+</li>
+<li><strong>Chen-type results cannot give liminf r = 1/4.</strong> This is a structural obstruction. Whether r is near 1/4 depends only on the number k of prime-power factors; if every prime factor grows, r → 1 − 3/2^k. liminf r = 1/4 is equivalent to infinitely many odd prime-power pairs (s−2, s). Given Chen, liminf r ≤ 5/8.<ul>
+<li>Status: P, and P-rel Chen (1973) for the corollary. Theorem numbers are flagged CHECK in the source.</li>
+<li>Source: <code>SF/A3_chen/REPORT.md</code>.</li>
+</ul>
+</li>
+<li><strong>Isometry-swap theta identity.</strong> An isometry h ∈ SO(A)(Q) with h(S⁺) = S⁻ and Q∘h = Q gives θ(R⁺) = θ(R⁻). This closed dim V(98) = 2406. Also tr(g | Fix N) = 2m.<ul>
+<li>Status: P, at m = 7 / s = 98 only.</li>
+<li>Source: <code>SF/galois_review/REVIEW.md</code> G11.</li>
+</ul>
+</li>
+<li><strong>Gauss-sum vanishing.</strong> |G(h/m)| is given by quadratic Gauss-sum factorisation, and G(h/m) = 0 iff 2‖m or 5 | m.<ul>
+<li>Status: P.</li>
+<li>Source: <code>SF/galois_review/REVIEW.md</code> G6.</li>
+</ul>
+</li>
+</ol>
+<h2>2. dim S(ρ_s): certified values and bounds</h2>
+<p><strong>Setting.</strong> S(ρ_s) is the space of Maass cusp forms of type ρ_s on W, weight 0, λ = 1/4.
+- Upper bounds come from <code>A2/scripts/certify_hybrid.py</code> (M = 6, Q = 40), unchanged under CORE_FREEZE.
+- Lower bounds come from d_cusp &gt; 0 with the λ = 1/4 criterion, or from exact Hecke/T-row determinants.
+- Status for every entry in this section: CC relative to TB.</p>
+<ol>
+<li><strong>dim = 1</strong> at s = 5, 7, 9, 12, 13 and 14. Source: <code>SF/A/REPORT.md</code> §3, <code>SF/A2/REPORT.md</code>.</li>
+<li><strong>dim = 2</strong> at s = 11 and s = 19. At s = 19 there is one form in each of two sectors. Source: <code>SF/A2</code>, <code>SF/A9_hecke_family/REPORT.md</code>.</li>
+<li><strong>dim = 5 at s = 21.</strong> The lower bounds come from Hecke T′_p images certified in Arb at 256 bits from exact Fourier coefficients, with p = 1597.<ul>
+<li>Additional import TB4: Γ(1596)-invariance via Wohlfahrt.</li>
+<li>A6 had earlier certified only the bound ≤ 5; A7 closed it.</li>
+<li>Source: <code>SF/A7_s21/REPORT.md</code>.</li>
+</ul>
+</li>
+<li><strong>dim = 3 at s = 23</strong> (<code>SF/A6_certify</code>, quoted in the preregistrations) and <strong>dim = 3 at s = 25</strong> (<code>SF/A9</code>).</li>
+<li><strong>Brackets.</strong><ul>
+<li>s = 15: 3 ≤ dim ≤ 4.</li>
+<li>s = 17: 3 ≤ dim ≤ 4.</li>
+<li>s = 27, 29, 31: dim ≥ 3, with no certified upper bound yet.</li>
+<li>Source: <code>SF/A9</code>.</li>
+</ul>
+</li>
+<li><strong>Hecke commutation lemma.</strong> T′_p F is again of type ρ with the same eigenvalue. It commutes with the sector projectors, and the source gives an explicit coefficient formula.<ul>
+<li>Status: P-rel TB.</li>
+<li>Source: <code>SF/A7_s21</code>.</li>
+</ul>
+</li>
+<li><strong>Sector lemma.</strong> For a P-even sector σ other than all-plus with P_σW ≠ 0, P_σu is a non-zero cusp form of type ρ_s with λ = 1/4.<ul>
+<li>Status: P-rel TB.</li>
+<li>Source: <code>SF/A6_certify</code>.</li>
+</ul>
+</li>
+<li><strong>There is no Riemann–Roch formula for dim S(ρ_s).</strong> Riemann–Roch and the Selberg trace formula give dimensions of holomorphic weight-k spaces, M_k(ρ) − S_{2−k}(ρ*). For a Maass eigenspace at one fixed λ they give only Weyl-law asymptotics, so no RR formula or rigorous bound for dim S(ρ_s) can be produced that way.<ul>
+<li>Status: P (reading of the code plus standard theory).</li>
+<li>The coincidences between RR₀ and the certified values at s = 7, 12 and 14 are Category B.</li>
+<li>Source: <code>SF/A17_dim_formula/REPORT.md</code>.</li>
+</ul>
+</li>
+</ol>
+<h2>3. Bridge C at s = 7</h2>
+<p>Here A = [[2,7],[7,7]], |D| = 35, level 70.</p>
+<ol>
+<li><strong>C at s = 7.</strong> C is a 6-dimensional irreducible ρ-module with dim C⁺ = dim C⁻ = 3. Hence there is no 1-dimensional (scalar) cusp-residual law, and every S-eigenvector spans all of C. The constant term c₀ is Eisenstein, so the S-pairing does not constrain it.<ul>
+<li>Status: P-rel TB, A6 (entry 1) and a cited identification.</li>
+<li>The E_L ↔ u_L identification is Category B by citation, and the implication inherits that status.</li>
+<li>Source: <code>SF/RTA_implications/REPORT.md</code>.</li>
+</ul>
+</li>
+<li><strong>dim S(ρ_7) = 1.</strong><ul>
+<li>Status: CC.</li>
+<li>Source: <code>SF/A/REPORT.md</code> §3.</li>
+</ul>
+</li>
+<li><strong>Step 0 arithmetic for the controls.</strong> Q(√35) has class number 2, and 6 + √35 is a unit of norm +1. [[2,1],[1,−17]] is odd, so even indefinite controls with det −35 do not exist.<ul>
+<li>Status: P (exact).</li>
+<li>Source: <code>SF/RTA_prereg/REPORT.md</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Equivariant-product facts.</strong></p>
+<ul>
+<li>Every Γ-equivariant product C^{⊗a} ⊗ C̄^{⊗b} → C is automatically Z/3-graded by R-degree.</li>
+<li>If no T-exponents satisfy a + b + c − d ≡ 0 mod 1, then Hom_Γ(C⊗C⊗C, C) = 0.</li>
+<li>The products x⟨z,y⟩ and z⟨x,y⟩ exist for every irreducible unitary representation.</li>
+<li>Status: P (elementary).</li>
+<li>Source: <code>SF/A18_RTA_foundation/REPORT.md</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>An explicit intertwiner ρ₃₅ ⊗ χ³ → ρ_7|W.</strong> Here ρ₃₅ is the Weil representation of the order-35 discriminant form D(A_7), and χ³(T) = χ³(S) = i.</p>
+<ul>
+<li>dim Hom(ρ₃₅ ⊗ χ³, ρ_7|W) = 1. The map Φ is unique up to scale.</li>
+<li>Φ is monomial, with all non-zero entries (after rescaling) in {±1, ±e(1/5)}.</li>
+<li>Its image is exactly the 6-dimensional cusp part C; its kernel is 29-dimensional.</li>
+<li>Hence C ≅ ρ₅⁻ ⊗ ρ₇⁻ ⊗ χ³, where ρ₅⁻ ⊗ ρ₇⁻ is the sector of ρ₃₅ odd under both local reflections.</li>
+<li>Status: <strong>Category A</strong> — verified exactly in cyclotomic arithmetic (Z[ζ_29400]) on the generators S and T (210/210 and 24/24 entries agree), with the upper bound dim ≤ 1 from the mod-p certificate of entry 62.</li>
+<li><strong>Not claimed (Category B, see appendix):</strong> no law vector for the 35-component law has ever been built, so nothing is transported by Φ; the appearance of the same χ³ map for other |det| = 35 lattices is float-only.</li>
+<li>Source: <code>SF/A32_35_to_rho7/REPORT.md</code>, <code>SF/A32_35_to_rho7/exact_verify.json</code>.</li>
+</ul>
+</li>
+</ol>
+<h2>4. T3 and budget arithmetic</h2>
+<p>T3(n) is n/3 for n ≡ 0, (4n+2)/3 for n ≡ 1, and (2n+1)/3 for n ≡ 2 (mod 3), using the integer form of A20. σ(n) is the number of steps to reach 1.</p>
+<ol>
+<li><strong>T3 is integer-valued in its corrected form.</strong> As literally written, (2n+1)/3 at n ≡ 2 is not an integer; for example T3(2) = 5/3. Status: P. Source: <code>SF/A20</code>, <code>SF/A25</code>.</li>
+<li><strong>3-power shift.</strong> σ(3ᵏm) = k + σ(m), and σ(3ᵏ) = k. Status: P. Source: <code>SF/A23</code>, <code>SF/A24</code>.</li>
+<li><strong>End-state parity with budget 539.</strong> If σ(n) ≤ 539, then T3^{539}(n) = 1 when σ(n) is odd and 2 when σ(n) is even. For example, 4880 has σ = 14 and ends at 2.<ul>
+<li>Status: P.</li>
+<li>Source: <code>SF/A23_axiom01_revised/REPORT.md</code>.</li>
+</ul>
+</li>
+<li><strong>End-state parity with budget 540.</strong> If σ(n) ≤ 540, then T3^{540}(n) = 1 iff σ(n) is even. 4880 ends at 1. Over n ≤ 10⁶, 504 899 seeds end at 1 and 495 101 at 2.<ul>
+<li>Status: P, with a direct check for n ≤ 20 000.</li>
+<li>Source: <code>SF/A30_540_thermo</code>.</li>
+</ul>
+</li>
+<li><strong>Residue words are 3-adic digits.</strong> For every j ≥ 1, the map n mod 3ʲ ↦ (T3ˢ(n) mod 3)_{s&lt;j} is a bijection from Z/3ʲ onto the words of length j over {0, 1, 2}.<ul>
+<li>Status: P (induction), exhaustive for j ≤ 8.</li>
+<li>Source: <code>SF/A29_patterns_all/REPORT.md</code>.</li>
+</ul>
+</li>
+<li><strong>No map on Z/9 is induced</strong> by T3 on residue classes. This is a direct consequence of entry 36, since the next residue depends on n mod 3ʲ⁺¹. Status: P. Source: <code>SF/A29</code>.</li>
+<li><strong>Inverse branches and growth bound.</strong> The source lists the T3 preimages of each m (case check). It also proves T3(n) + 2 ≤ (4/3)(n + 2), with equality iff n ≡ 1 mod 3. Status: P. Source: <code>SF/A24_threshold_1e18</code>.</li>
+<li><strong>The packaging identity for the budget B′ = 539.</strong> B′ = ⌊(N_flux − f_max)/9⌋ = ⌊(4880 − 21)/9⌋ = 539. This is a budget, consistent with T3's short orbits, not a termination time.<ul>
+<li>Status: P.</li>
+<li>Source: <code>SF/A20</code>, <code>SF/A23</code>.</li>
+</ul>
+</li>
+<li><strong>N_flux = ⌊3⁵e³⌋ = 4880.</strong> Note that ⌊35e³⌋ = 702. Status: P. Source: <code>SF/A19</code>, <code>SF/A25</code>.</li>
+<li><strong>540 and its 539.9 identities.</strong><ul>
+<li>540 = 2²·3³·5 = 4860/9.</li>
+<li>⌊(4880 − f)/9⌋ = 540 exactly for f = 12..20.</li>
+<li>The super-harmonics are 540·{2, 3, 4, 5, 10}.</li>
+<li>539.9 = 540(1 − 1/5400).</li>
+<li><strong>5399 is prime</strong>, so e^{2πi/539.9} = e^{2πi·10/5399} is a primitive 5399th root of unity, and its 539th power is not 1.</li>
+<li>The beat period of 540 against 539.9 is 2 915 460.</li>
+<li>Status: P.</li>
+<li>Source: <code>SF/A25</code>, <code>SF/A30</code>.</li>
+</ul>
+</li>
+<li><strong>Smallest seed with σ = 539.</strong> Write m₅₃₉ for the smallest n with σ(n) = 539.<ul>
+<li>Bounds: 10⁷ &lt; m₅₃₉ ≤ 788 638 819 521 764 360 564 859 602 047 870 ≈ 7.886×10³². The upper bound is a witness whose σ = 539 was verified.</li>
+<li>Every depth d ≤ 291 has a seed below 10¹⁸. X₂₉₁ = 666 954 248 808 172 552 has σ = 291.</li>
+<li>Status: CC.</li>
+<li>Source: <code>SF/A24</code>.</li>
+</ul>
+</li>
+<li><strong>Exact counts.</strong><ul>
+<li>max σ on [1, 20 000] is 53, at n = 16261. The "54" in RTA Remark 2.6 is σ + 1, a count of states.</li>
+<li>max σ on [1, 50 000] is 55, at n = 36043 and 36592.</li>
+<li>σ(4880) = 14, σ(10¹⁸) = σ(10¹⁸ + 1) = 92, σ(3^539) = 539.</li>
+<li>Every n ≤ 10⁷ resolves within 539 steps. 3^540 does not, and T3^{539}(3^540) = 3.</li>
+<li>Status: CC (exact).</li>
+<li>Source: <code>SF/A19</code>, <code>SF/A20</code>, <code>SF/A23</code>, <code>SF/A28</code>.</li>
+</ul>
+</li>
+<li><strong>Exact identities checked in the chats.</strong><ul>
+<li>φ⁷ = (29 + 13√5)/2.</li>
+<li>1001 = 7·11·13.</li>
+<li>18 + 1 + 520 = 539.</li>
+<li>243 − 244 + 55 = 54.</li>
+<li>4·8 + 5·12 = 92.</li>
+<li>4·122 = 488.</li>
+<li>Status: P.</li>
+<li>Source: <code>SF/A25</code>.</li>
+</ul>
+</li>
+<li><strong>Lifting T3 cannot change the step count.</strong> Any lift in which the integer coordinate evolves by T3, with steps counted one-to-one, has exactly the shadow step count.<ul>
+<li>Status: P.</li>
+<li>Source: <code>SF/A20_T3_bulk_vs_shadow</code>.</li>
+</ul>
+</li>
+</ol>
+<h2>5. The H3 orbit map</h2>
+<p>Φ(n) = Σ_{s&lt;539} w(r_s(n)) ∈ ⟨c⟩ ≅ Z/N.</p>
+<ol>
+<li><strong>Well-definedness.</strong> Φ is well defined for every n ≥ 1, including unresolved seeds such as 3^540. Status: P. Source: <code>SF/A28_H3_map_construction/REPORT.md</code>.</li>
+<li><strong>Cocycle law.</strong> S_{k+l}(n) = S_k(n) + S_l(T3ᵏn). So w induces a monoid homomorphism {0,1,2}* → Z/N. Status: P. Source: <code>SF/A28</code>.</li>
+<li><strong>Tail formula.</strong> If σ(n) ≤ 539 and L = 539 − σ, then Φ(n) = S_σ(n) + ⌈L/2⌉w(1) + ⌊L/2⌋w(2).<ul>
+<li>Status: P, and exact on 301 seeds × 9 arms.</li>
+<li>Source: <code>SF/A28</code>.</li>
+</ul>
+</li>
+<li><strong>Φ depends only on N.</strong> Changing the generator multiplies Φ by a unit, which preserves Φ = 0, τ and the order. M_A and M_B (with Z/N coefficients) give identical values. No geometry beyond the order N enters.<ul>
+<li>Status: P.</li>
+<li>Source: <code>SF/A28</code>.</li>
+</ul>
+</li>
+<li><strong>Topology of the two candidate manifolds.</strong><ul>
+<li>On M_A, Tors H³(M_A; Z) = Z/N, and there is no self-linking on H³ in dimension 7.</li>
+<li>On M_B = L⁷(N), H³(M_B; Z) = 0 and H³(M_B; Z/N) = Z/N.</li>
+<li>Status: P (standard).</li>
+<li>Source: <code>SF/A28</code>.</li>
+</ul>
+</li>
+<li><strong>Twisted-operator conditions.</strong> Let T = d + (ζ(t) − 1)H₃∧. Then T² = 0 ⇔ dt∧H₃ = 0 and dH₃ = 0.<ul>
+<li>A torsion class has no non-zero de Rham representative.</li>
+<li>On M_A, H₃ is exact and T = e^{−fB} ∘ d ∘ e^{fB}. So the twisted cohomology is isomorphic to de Rham cohomology: the operator is conjugate to d.</li>
+<li>Status: P.</li>
+<li>Source: <code>SF/A25</code>, <code>SF/A28</code>.</li>
+</ul>
+</li>
+</ol>
+<h2>6. Negative Category A results (refuted claims, with exact counterexamples)</h2>
+<ul>
+<li>These are kept because they are exact. They refute claims; they do not establish any framework content.</li>
+<li>
+<p>Unless noted, the status is P or CC as stated.</p>
+</li>
+<li>
+<p><strong>"C3 = T3 terminates in exactly 539 steps" is refuted.</strong></p>
+<ul>
+<li>For n ≤ 20 000, orbits finish in ≤ 53 steps, and 4880 takes 14.</li>
+<li>Read instead as a 539-round budget (T3^{539}(n)), the axiom is a consistent definition and σ = 539 does occur (e.g. 3^539, entry 43); only "terminates in exactly 539" is refuted.</li>
+<li>Source: <code>SF/A19</code>, <code>SF/A23</code>.</li>
+</ul>
+</li>
+<li><strong>"Every seed terminates within 539 rounds" is false.</strong> The counterexample is 3^540, which has σ = 540. Source: <code>SF/A23</code>.</li>
+<li><strong>The threshold reading "σ(n) = 539 for all n ≥ 10¹⁸" is false.</strong> Every 3ᵏ with 38 ≤ k ≠ 539 is a counterexample, and none of the 102 000+ seeds tested has σ = 539. Source: <code>SF/A24</code>.</li>
+<li><strong>"N_flux = ⌊35e³⌋ = 4880" is false.</strong> ⌊35e³⌋ = 702. Source: <code>SF/A19</code>.</li>
+<li><strong>The chat arithmetic claims are false.</strong><ul>
+<li>3·61 + 162 + 223 = 568, not 539.</li>
+<li>244 − 18 − 1 = 225, not 520.</li>
+<li>The alternating sum of the claimed Betti numbers is −162, not −160.</li>
+<li>That table violates Poincaré duality for a closed oriented 7-manifold, since b₃ = 223 ≠ b₄ = 61.</li>
+<li>χ/2 + rk with χ = 0 and rk = 3 gives 3, not 6.</li>
+<li>3¹⁸ ≪ 10¹⁸.</li>
+<li>Source: <code>SF/A25</code>.</li>
+</ul>
+</li>
+<li><strong>The harmonics are not HQCC-locked to 539.9.</strong> They are exact multiples of 540, not of 539.9. Source: <code>SF/A19</code>, <code>SF/A23</code>.</li>
+<li><strong>The friction-coupled PDE has no claimed periodic attractor when κ_dark ≠ 0.</strong> Source: <code>SF/A19</code> (1.6).</li>
+<li><strong>The thermodynamic formula does not give 539.9.</strong> T_eff = 540/(1 + 1/540) = 291600/541 = 539.0018.<ul>
+<li>540/(1 + 0.01·0.185) = 539.0028.</li>
+<li>540(1 − 0.0001) = 539.946.</li>
+<li>Reaching 539.9 needs δ = 540/5399.</li>
+<li>Source: <code>SF/A30</code>.</li>
+</ul>
+</li>
+<li><strong>Phase closure fails.</strong> The phase e^{2πi/539.9} does not close after 539 steps; 539 steps give 5390/5399 of a turn. Source: <code>SF/A25</code>, <code>SF/A28</code>.</li>
+<li><strong>"61 × (539/61) = 539" computes nothing.</strong> It is the identity x·(539/x) = 539, which holds for every x ≠ 0. Source: <code>SF/A20</code>.</li>
+<li>
+<p><strong>No untwisted intertwiner between ρ₃₅ and ρ_7|W.</strong> Hom_{SL₂(Z)}(ρ₃₅, ρ_7|W) = 0, in both directions; the same holds for the dual ρ₃₅* and against ρ_7|W*, and for every character twist ρ₃₅ ⊗ χᵏ with k ≠ 3 (χ the generator of Hom(SL₂(Z), C^×) ≅ Z/12).</p>
+<ul>
+<li>Status: <strong>Category A, CC</strong> — exact mod-p rank certificate at two primes (p = 29 401 and 14 729 401); a mod-p nullity of 0 proves Hom = 0 in characteristic 0.</li>
+<li>The vanishing is not explained by T-spectra (all 12 T-eigenvalues of ρ₃₅ occur in ρ_7|W); the obstruction is S.</li>
+<li><strong>Scope.</strong> This refutes only an <em>untwisted</em> map. After the twist χ³ a map does exist (entry 31).</li>
+<li>Source: <code>SF/A32_35_to_rho7/REPORT.md</code>, <code>SF/A32_35_to_rho7/results.json</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>The label-dilation Galois-sign route gives no sign −1</strong> at s = 8, 10, 16 or 18. Source: <code>SF/A8c</code>.</p>
+</li>
+<li><strong>The class-group predictors fail.</strong><ul>
+<li>The Cl(K_s) predictor fails at s = 9 and 11.</li>
+<li>The Cl(4n_s) predictor fails at s = 23, 25, 27 and 29.</li>
+<li>Because the certified dimensions contradict it, the refutation is exact at the certified s.</li>
+<li>Source: <code>SF/A5_classgroup</code>.</li>
+</ul>
+</li>
+<li><strong>E_s is not always exactly balanced under R.</strong> The counterexample is s = 56, where E has multiplicities (187, 186, 187). Source: <code>SF/A15</code>.</li>
+<li><strong>RTA has no ternary or grading axioms.</strong> It has no arity-3 operation and no identity of associative, Jacobi or Filippov type, so it is not an algebra in the axiomatic sense.<ul>
+<li>Status: P (reading of the sources).</li>
+<li>Source: <code>SF/A18</code>.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>Appendix (strictly separate from the ledger above)</h2>
+<h3>Category B items: numerical or interpretive, not claimed</h3>
+<ul>
+<li><strong>Odd-s ST-balance.</strong> Numerical only; stated as a conjecture.</li>
+<li><strong>Candidate formula</strong> tr_C(ST) ∈ {0, −ω} beyond what is proved. Also the conjectural closed forms for local factors in A10.</li>
+<li><strong>Float-scan dimensions:</strong> s = 15: 4, s = 17: 4, s = 27: 4, s = 29: 4, s = 31: 3. Also the RR₀ coincidences and the predictions for s = 16, 18, 20.</li>
+<li><strong>Bridge C.</strong> The E_L ↔ u_L identification; the 35-component (B3) law vector, which has never been built, and any reading of Φ (entry 31) as transporting a law; the float-only controls in which the same χ³ map appears for other |det| = 35 lattices (A32 <code>controls.json</code>); the weight-3 (η⁶) interpretation of χ³; the floating-point S-pairing checks at s = 5, 7, 9, 13; the deferred Hejhal 3+3 prediction.</li>
+<li><strong>RTA-1 and RNT-1 preregistered tests.</strong> All negative or generic; none survives Holm.</li>
+<li><strong>A29 patterns.</strong> The modulus leads, all of which are multiples of 3, and a broadband spectral excess at periods ≈ 7–8.6 and ≈ 4.5.</li>
+<li><strong>A30 tests.</strong> No 540-specific signal.</li>
+<li><strong>A28.</strong> The H3 map shows no emergence of 539 in any of the 9 arms.</li>
+<li><strong>A24.</strong> "σ = 539 ⇒ n ≥ 10¹⁸" is supported, but unproved.</li>
+<li><strong>Physics.</strong> All physical premises: G₄ = 539.9 s, the thermodynamic δ, the 11D bulk/shadow reading, Time, the Two-Time postulate.</li>
+<li><strong>Mod-ℓ checks.</strong> The rank lower bounds in loose_ends, where agreement at two random primes ℓ is not a proof.</li>
+</ul>
+<h3>Open problems</h3>
+<ol>
+<li>Hand proofs of the 2-adic base classes a = 2, 3, 4. Prove E = ρ-span(δ₀) equals the isotropic-span E beyond s = 18.</li>
+<li>Close dim S(ρ_s) at s = 15 and 17. Obtain upper bounds for s = 27, 29 and 31 (the queue is running). Raise the lower bounds.</li>
+<li>Find a closed form for Σβ_T on C. Find any rigorous handle on dim S(ρ_s) beyond certificates.</li>
+<li>Build the B3 law vector, and decide whether it lies in the χ³-twisted sector mapped onto C by entry 31. Prove the other |det| = 35 control cases exactly.</li>
+<li>Prove or refute ST-balance for odd s.</li>
+<li>Whether σ &gt; 539 occurs below 10¹⁸. Close the gap 10⁷ &lt; m₅₃₉ ≤ 7.886×10³².</li>
+<li>A defined bulk rule for C3, if any. None exists in the corpus.</li>
+<li>Arvin's own 2025-09-19 calculation behind 539 / 539.9, which is not found on the box.</li>
+<li>Extending the formula-level d_cusp results beyond odd s ≤ 51 and d₂ with k ≤ 6.</li>
+</ol></body></html>

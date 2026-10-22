@@ -1,0 +1,11 @@
+s=23 N=1932 Tlevel=1932 primes=[1933, 9661, 11593, 17389, 25117, 36709, 73417, 83077] ell=1000111809313 L=20529432 E=42504
+class of p-ideal (narrow idx, wide idx): {1933: (0, 0), 9661: (0, 0), 11593: (0, 0), 17389: (0, 0), 25117: (0, 0), 36709: (0, 0), 73417: (0, 0), 83077: (0, 0)} principal narrow idx 0
+((3, 1), (7, 1), (23, 1)) cusp rank 0
+((3, 1), (7, 1), (23, -1)) {'c0_rows': 0, 'rank_modl': 0, 'note': 'rank 0: search not implemented'}
+((3, 1), (7, -1), (23, 1)) {'c0_rows': 0, 'rank_modl': 0, 'note': 'rank 0: search not implemented'}
+((3, 1), (7, -1), (23, -1)) rank 1: exact eigenvector; all lambda_p in Lambda_E: True orders [2, 1, 2, 2, 2, 1, 1, 1]
+((3, -1), (7, 1), (23, 1)) {'c0_rows': 0, 'rank_modl': 0, 'note': 'rank 0: search not implemented'}
+((3, -1), (7, 1), (23, -1)) rank 1: exact eigenvector; all lambda_p in Lambda_E: True orders [1, 2, 1, 1, 1, 2, 2, 1]
+((3, -1), (7, -1), (23, 1)) rank 1: exact eigenvector; all lambda_p in Lambda_E: True orders [2, 2, 2, 2, 2, 2, 2, 1]
+((3, -1), (7, -1), (23, -1)) {'c0_rows': 0, 'rank_modl': 0, 'note': 'rank 0: search not implemented'}
+done

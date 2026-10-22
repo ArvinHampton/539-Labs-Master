@@ -1,0 +1,174 @@
+[
+ {
+  "s": 9,
+  "n": 63,
+  "D_label": 126,
+  "disc": 252,
+  "h_narrow": 4,
+  "h_wide": 2,
+  "wide_class_orders": [
+   1,
+   2
+  ],
+  "Cl_wide_cyclic": true,
+  "Cl_wide_2torsion": 2,
+  "ring_class_cusp_pairs": 0,
+  "fund_unit": [
+   8,
+   1
+  ],
+  "fund_unit_norm": 1,
+  "eps_s_is_power": 1,
+  "OD_units_order": 4536,
+  "OD_units_exponent": 126,
+  "unit_image_order": 252,
+  "G0_order": 36,
+  "E_bound": 252
+ },
+ {
+  "s": 11,
+  "n": 99,
+  "D_label": 198,
+  "disc": 396,
+  "h_narrow": 8,
+  "h_wide": 4,
+  "wide_class_orders": [
+   1,
+   2,
+   4,
+   4
+  ],
+  "Cl_wide_cyclic": true,
+  "Cl_wide_2torsion": 2,
+  "ring_class_cusp_pairs": 1,
+  "fund_unit": [
+   10,
+   1
+  ],
+  "fund_unit_norm": 1,
+  "eps_s_is_power": 1,
+  "OD_units_order": 11880,
+  "OD_units_exponent": 990,
+  "unit_image_order": 396,
+  "G0_order": 120,
+  "E_bound": 3960
+ },
+ {
+  "s": 23,
+  "n": 483,
+  "D_label": 966,
+  "disc": 1932,
+  "h_narrow": 8,
+  "h_wide": 4,
+  "wide_class_orders": [
+   1,
+   2,
+   2,
+   2
+  ],
+  "Cl_wide_cyclic": false,
+  "Cl_wide_2torsion": 4,
+  "ring_class_cusp_pairs": 0,
+  "fund_unit": [
+   22,
+   1
+  ],
+  "fund_unit_norm": 1,
+  "eps_s_is_power": 1,
+  "OD_units_order": 255024,
+  "OD_units_exponent": 10626,
+  "unit_image_order": 1932,
+  "G0_order": 528,
+  "E_bound": 42504
+ },
+ {
+  "s": 25,
+  "n": 575,
+  "D_label": 1150,
+  "disc": 2300,
+  "h_narrow": 12,
+  "h_wide": 6,
+  "wide_class_orders": [
+   1,
+   2,
+   3,
+   3,
+   6,
+   6
+  ],
+  "Cl_wide_cyclic": true,
+  "Cl_wide_2torsion": 2,
+  "ring_class_cusp_pairs": 2,
+  "fund_unit": [
+   24,
+   1
+  ],
+  "fund_unit_norm": 1,
+  "eps_s_is_power": 1,
+  "OD_units_order": 506000,
+  "OD_units_exponent": 25300,
+  "unit_image_order": 2300,
+  "G0_order": 1320,
+  "E_bound": 151800
+ },
+ {
+  "s": 27,
+  "n": 675,
+  "D_label": 1350,
+  "disc": 2700,
+  "h_narrow": 12,
+  "h_wide": 6,
+  "wide_class_orders": [
+   1,
+   2,
+   3,
+   3,
+   6,
+   6
+  ],
+  "Cl_wide_cyclic": true,
+  "Cl_wide_2torsion": 2,
+  "ring_class_cusp_pairs": 2,
+  "fund_unit": [
+   26,
+   1
+  ],
+  "fund_unit_norm": 1,
+  "eps_s_is_power": 1,
+  "OD_units_order": 486000,
+  "OD_units_exponent": 2700,
+  "unit_image_order": 2700,
+  "G0_order": 1080,
+  "E_bound": 16200
+ },
+ {
+  "s": 29,
+  "n": 783,
+  "D_label": 1566,
+  "disc": 3132,
+  "h_narrow": 12,
+  "h_wide": 6,
+  "wide_class_orders": [
+   1,
+   2,
+   3,
+   3,
+   6,
+   6
+  ],
+  "Cl_wide_cyclic": true,
+  "Cl_wide_2torsion": 2,
+  "ring_class_cusp_pairs": 2,
+  "fund_unit": [
+   28,
+   1
+  ],
+  "fund_unit_norm": 1,
+  "eps_s_is_power": 1,
+  "OD_units_order": 789264,
+  "OD_units_exponent": 21924,
+  "unit_image_order": 3132,
+  "G0_order": 1512,
+  "E_bound": 131544
+ }
+]

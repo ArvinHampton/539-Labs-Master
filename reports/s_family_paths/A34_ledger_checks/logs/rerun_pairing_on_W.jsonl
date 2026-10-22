@@ -1,0 +1,5 @@
+{"s": 8, "s_mod8": 0, "p": 1001089, "L": 192, "dim_W": 20, "S2_eq_det_on_W": true, "trials": [{"lam": [1], "rank_YW": 20}, {"lam": [1, 1], "rank_YW": 20}], "trC_S_zero_certified": true}
+{"s": 16, "s_mod8": 0, "p": 1005313, "L": 896, "dim_W": 72, "S2_eq_det_on_W": true, "trials": [{"lam": [1], "rank_YW": 72}, {"lam": [1, 1], "rank_YW": 72}], "trC_S_zero_certified": true}
+{"s": 18, "s_mod8": 2, "p": 1001089, "L": 1152, "dim_W": 90, "S2_eq_det_on_W": true, "trials": [{"lam": [1], "rank_YW": 86}, {"lam": [1, 1], "rank_YW": 90}], "trC_S_zero_certified": true}
+{"s": 24, "s_mod8": 0, "p": 1001089, "L": 2112, "dim_W": 156, "S2_eq_det_on_W": true, "trials": [{"lam": [1], "rank_YW": 156}, {"lam": [1, 1], "rank_YW": 156}], "trC_S_zero_certified": true}
+{"s": 26, "s_mod8": 2, "p": 1010881, "L": 2496, "dim_W": 182, "S2_eq_det_on_W": true, "trials": [{"lam": [1], "rank_YW": 182}, {"lam": [1, 1], "rank_YW": 182}], "trC_S_zero_certified": true}

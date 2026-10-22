@@ -1,0 +1,7 @@
+s=9 N=252 Tlevel=252 primes=[757, 1009, 2017, 2269, 2521, 3529, 4789, 6301] ell=1000000059913 L=15876 E=252
+class of p-ideal (narrow idx, wide idx): {757: (0, 0), 1009: (0, 0), 2017: (0, 0), 2269: (0, 0), 2521: (0, 0), 3529: (0, 0), 4789: (0, 0), 6301: (0, 0)} principal narrow idx 0
+((3, 1), (7, 1)) cusp rank 0
+((3, 1), (7, -1)) {'c0_rows': 0, 'rank_modl': 0, 'note': 'rank 0: search not implemented'}
+((3, -1), (7, 1)) {'c0_rows': 0, 'rank_modl': 0, 'note': 'rank 0: search not implemented'}
+((3, -1), (7, -1)) rank 1: exact eigenvector; all lambda_p in Lambda_E: True orders [2, 2, 2, 2, 2, 2, 2, 1]
+done

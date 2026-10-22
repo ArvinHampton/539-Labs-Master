@@ -1,0 +1,153 @@
+<html><head><meta charset="utf-8"><style>body{font-family:"DejaVu Sans",sans-serif;font-size:10pt;max-width:900px;margin:auto}table{border-collapse:collapse}td,th{border:1px solid #888;padding:3px 6px}code{font-family:"DejaVu Sans Mono",monospace}</style></head><body><h1>A35: The space spanned by the 35-component law vector, made exact</h1>
+<p><strong>For:</strong> Arvin Hampton (539 Labs) · 2026-10-22, about 10:55 AM CDT.</p>
+<p><strong>Folder:</strong> <code>reports/s_family_paths/A35_lawspace_exact/</code></p>
+<ul>
+<li>Scripts: <code>symbols.py</code>, <code>orbits.py</code>, <code>exact_dim.py</code>, <code>exact_main.py</code>, <code>exact_intertwiner.py</code>, <code>floatcheck.py</code>.</li>
+<li>Outputs: <code>exact_main.json</code>, <code>exact_dim.json</code>, <code>exact_intertwiner.json</code>, <code>quot_*.json</code>, <code>X_modp_*.npy</code>.</li>
+</ul>
+<p><strong>Ground rules</strong></p>
+<ul>
+<li>CORE_FREEZE: H_s was not redefined and certifier code was not touched.</li>
+<li>Read-only imports: A32 (<code>exact_hom.py</code>, <code>exact_verify.json</code>), <code>A/scripts/weil_family.py</code>, and A33's <code>law.py</code>. The last is used only in the floating-point sanity check.</li>
+<li>New files only. Nothing was pushed or sent. No TPC or RH claims.</li>
+<li><strong>Cat A</strong> = proved, or a computer certificate (CC) with exact arithmetic. <strong>Cat B</strong> = floating point.</li>
+</ul>
+<p><strong>Notation</strong></p>
+<ul>
+<li>The <strong>35-component law vector</strong> has components G_{α,β}(x) = mean over ν ∈ α+Z² of e(x·Q(ν) + B(ν,β)), for x ∈ Q, with A = [[2,7],[7,7]].</li>
+<li>Its characteristic classes are, for μ ∈ D = A⁻¹Z²/Z²:</li>
+<li>K2_μ = G_{a+μ,0}</li>
+<li>K3_μ = G_{μ,a}</li>
+<li>K4_μ = G_{μ,0}</li>
+<li>K1_μ = G_{a+μ,a}</li>
+</ul>
+<p>Here a = (7/10, −1/5) and h_A = ½A⁻¹A* = (1/2, 0).</p>
+<ul>
+<li><strong>V</strong> is the space of functions on Q spanned by K2∪K3∪K4.</li>
+</ul>
+<h2>Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(1) Profile S-law and T-law, closed-form M_S and M_T</td>
+<td><strong>Proved</strong> (Cat A). Correction: the factor is <strong>|x|⁻¹</strong>, not x⁻¹</td>
+</tr>
+<tr>
+<td>(2) Exact basis, dim V = 36, closure of V under S and T</td>
+<td><strong>Proved / certified</strong> (Cat A; upper bound proved, lower bound CC at two primes)</td>
+</tr>
+<tr>
+<td>(3) V ≅ E with an explicit cyclotomic intertwiner; Hom(V⊗χᵏ, C) = 0 for all k</td>
+<td><strong>Proved</strong> (Cat A; intertwiner verified exactly in Q(ζ₅₈₈₀₀); Hom vanishing CC at two primes)</td>
+</tr>
+<tr>
+<td>(4) K1 ≡ 0</td>
+<td><strong>Proved</strong> (Cat A)</td>
+</tr>
+</tbody>
+</table>
+<h2>1. The laws (Cat A, proof)</h2>
+<p><strong>Elementary rules.</strong> These hold for all α, β ∈ Q² and all x:</p>
+<ul>
+<li>G_{α+n,β} = G_{α,β} for n ∈ Z².</li>
+<li>G_{α,β+λ} = e(B(α,λ))·G_{α,β} whenever Aλ ∈ Z². The reason is that B(n,λ) = nᵀAλ ∈ Z.</li>
+<li>G_{gα,gβ} = G_{α,β} for every automorph g ∈ GL₂(Z) with gᵀAg = A. This is a change of variables ν ↦ gν on the lattice coset; the integrand is periodic, so the mean is preserved.</li>
+</ul>
+<p><strong>T-law.</strong> For all α, β and all x:</p>
+<p>G_{α,β}(x+1) = e(−Q(α) − B(α,h_A))·G_{α, β+α+h_A}(x).</p>
+<p><em>Proof.</em> Write ν = α+n. Then Q(n) = n₁² + 7n₁n₂ + (7/2)n₂² ≡ (7/2)n₂ ≡ ½nᵀA* = B(n,h_A) mod 1, using n₂² ≡ n₂ mod 2. Expanding gives Q(ν) ≡ B(ν, α+h_A) − Q(α) − B(α,h_A) mod 1, which is the law.</p>
+<p><strong>S-law.</strong> For all α, β and all x ∈ Q with x ≠ 0:</p>
+<p>G_{α,β}(−1/x) = (1/(|x|·√35))·e(B(α,β))·Σ_{p∈D} G_{β+p,−α}(x).</p>
+<p><em>Proof (Poisson summation).</em></p>
+<ol>
+<li><strong>Set-up.</strong> Put Z = yA + itI with t &gt; 0, and f(ν) = exp(πi·νᵀZν + 2πi·B(ν,β)).</li>
+<li><strong>Poisson summation:</strong> Σ_{ν∈α+Z²} f(ν) = det(−iZ)^{−1/2} · Σ_{w∈Z²} e(wᵀα) · exp(−πi·(w−Aβ)ᵀZ⁻¹(w−Aβ)).</li>
+<li><strong>Substitution.</strong> Put w − Aβ = −Aγ. Then γ runs over β + A⁻¹Z², and e(wᵀα) = e(B(α,β) − B(γ,α)).</li>
+<li><strong>Left side as t → 0.</strong> The integrand is periodic, so a finite Fourier expansion and Poisson summation for the Gaussian give t·LHS → G_{α,β}(y), with an exponentially small error.</li>
+<li><strong>Right side.</strong>
+   - <strong>Determinant.</strong> A has eigenvalues λ₁ &gt; 0 &gt; λ₂. With principal branches, det(−iZ)^{1/2} → √(|y|λ₁)·e^{∓iπ/4} · √(|y||λ₂|)·e^{±iπ/4} = |y|·√35, for either sign of y. Signature 0 means no eighth root of unity survives.
+   - <strong>Expansion of the quadratic form.</strong> A·Z⁻¹·A = A/y − (it/y²)·I + O(t²). The O(t²) term changes the phase by O(t²|γ|²), which contributes O(1) against a main term of order 1/t.
+   - <strong>Mean on the dual side.</strong> The main term is a periodic phase e(−Q(γ)/y − B(γ,α)) on the coset β + A⁻¹Z² (density 35) times the Gaussian e^{−πt|γ|²/y²}. Its sum is 35·(mean)·y²/t, and the mean over β + A⁻¹Z² equals (1/35)·Σ_p G_{β+p,−α}(−1/y).</li>
+<li><strong>Conclusion.</strong> Together: G_{α,β}(y) = (|y|/√35)·e(B(α,β))·Σ_p G_{β+p,−α}(−1/y). Putting y = −1/x gives the stated law. ∎</li>
+</ol>
+<p><strong>Closed forms (Cat A).</strong> <code>symbols.py</code> reduces every term with the elementary rules. On the 105 symbols K2∪K3∪K4:</p>
+<ul>
+<li><strong>M_S:</strong> each row is (1/√35)·Σ of 35 terms of the form e(k/9800).</li>
+<li><strong>M_T:</strong> monomial. It acts diagonally on K2 and swaps K3_μ ↔ K4_μ, with e(k/9800) phases.</li>
+</ul>
+<p>The family K1 is closed on its own under both laws.</p>
+<p><strong>Sign of x (Cat B corroboration, <code>floatcheck.py</code>).</strong></p>
+<ul>
+<li>On 72 rationals of both signs: the |x|⁻¹ law has error 5·10⁻¹⁵ and the T-law 1·10⁻¹⁵.</li>
+<li>The signed x⁻¹ version <strong>fails for x &lt; 0</strong> (error 2).</li>
+<li>So item (1) as worded ("x⁻¹") is correct only for x &gt; 0. The correct weight factor is |x|⁻¹.</li>
+</ul>
+<h2>2. Exact basis and dim V = 36 (Cat A)</h2>
+<ul>
+<li><strong>Upper bound (proved).</strong></li>
+<li>The automorph group search (<code>orbits.py</code>) gives 12 elements with |entries| ≤ 40, including ±I and γ = [[−1,−7],[2,13]].</li>
+<li>Under these elements, the 105 symbols fall into <strong>36 orbits</strong>: 12 in each of K2, K3 and K4, of sizes 1, 2 and 4.</li>
+<li>Within an orbit, every symbol equals e(k/9800) times the orbit representative. No orbit is forced to vanish.</li>
+<li>So V is spanned by the 36 orbit representatives, and <strong>dim V ≤ 36</strong>.</li>
+<li>Cross-check: the relation rank is 69 at two primes, and the relation span is closed under S and T.</li>
+<li><strong>Lower bound (CC).</strong></li>
+<li>The Gauss means of all 105 symbols were evaluated <strong>exactly mod p</strong> at the 48 rationals h/m with m ≤ 6 and −2m ≤ h &lt; 2m.</li>
+<li>The primes were p = 1 764 001 and 6 468 001, both ≡ 1 mod 588 000, with ζ mapped to a root of unity in F_p.</li>
+<li>The rank is <strong>36</strong> at both primes.</li>
+<li>The values lie in Z[ζ][1/(4m)²], so the rank can only drop under reduction. Hence the char-0 rank is ≥ 36, and <strong>dim V = 36</strong>.</li>
+<li><strong>Consequences.</strong></li>
+<li>The 36 orbit representatives form an <strong>exact basis</strong> of V.</li>
+<li>The relation space is exactly the kernel of evaluation.</li>
+<li><strong>V is closed under S and T</strong>, because both laws hold for all x and map the symbols into the symbols.</li>
+<li>The quotient matrices M_S and M_T on V are explicit cyclotomic matrices. They satisfy S⁴ = 1 and (ST)³ = S² mod p, for exactly one of the two roots of 35 mod p. That root is the same one that ρ_7|W selects.</li>
+</ul>
+<h2>3. V ≅ E, and no χᵏ-twisted map into C (Cat A)</h2>
+<p><strong>Mod-p Hom dimensions</strong> (<code>exact_main.json</code>; A32's method; identical at both primes):</p>
+<ul>
+<li>End(V) = 1.</li>
+<li>Hom(V, E) = Hom(E, V) = Hom(V, W) = 1.</li>
+<li><strong>Hom(V⊗χᵏ, C) = Hom(C, V⊗χᵏ) = 0 for all k = 0, …, 11.</strong></li>
+<li>Hom(V⊗χᵏ, E) = 0 for k ≠ 0.</li>
+<li>Each mod-p dimension is an upper bound for the char-0 dimension, so every vanishing above is <strong>exact</strong>.</li>
+<li>E and C are coordinate blocks of W (orbit indices 26, 28, …, 36 form C), and the block-diagonal form was verified exactly.</li>
+</ul>
+<p><strong>Explicit intertwiner</strong> (<code>exact_intertwiner.py</code>), with N = 58 800:</p>
+<ul>
+<li><strong>T-eigenbases.</strong> On V, T is monomial with 1- and 2-cycles, and its T-eigenbasis is exact over Z[½, ζ_N]. On E, T is likewise monomial.</li>
+<li><strong>T-spectra.</strong> Both spectra consist of the same <strong>36 distinct</strong> values, in exact agreement.</li>
+<li><strong>The map.</strong> X = P_E · Π · diag(c) · P_V⁻¹, where:</li>
+<li>P_V and P_E are the exact eigenvector matrices (P⁻¹P = I checked exactly);</li>
+<li>Π matches equal eigenvalues;</li>
+<li><strong>every c_i is a root of unity ζ_N^{e_i}</strong>. The exponents are listed in <code>exact_intertwiner.json</code>.</li>
+<li><strong>Exact verification.</strong></li>
+<li>X·S_V = S_E·X: <strong>0 of 1296 entries fail</strong>, checked by reduction modulo the cyclotomic polynomial Φ₅₈₈₀₀. The factor 1/√35 (positive root on both sides) cancels.</li>
+<li>X·T_V = T_E·X holds by the exact eigenvalue match.</li>
+<li>X is invertible because it is a product of invertible factors.</li>
+<li><strong>Therefore V ≅ E, with no twist (proved).</strong></li>
+<li>Since dim V = dim E = 36, together with the vanishing Hom(V⊗χᵏ, C) = 0 for every k: <strong>the 35-component law vector has no image in C under any η^{2k} twist, including χ³ (η⁶).</strong> This upgrades A33's Cat B statements to Cat A.</li>
+</ul>
+<h2>4. K1 ≡ 0 (Cat A, proof)</h2>
+<ol>
+<li><strong>Zero at x = 0.</strong> G_{α,a}(0) = e(B(α,a))·mean over n ∈ Z² of e(nᵀAa). Here Aa = (0, 7/2), so the mean is the mean of (−1)^{n₂}, which is 0. So K1(0) = 0.</li>
+<li><strong>Closure.</strong> The family K1 is closed under both laws (<code>symbols.py</code>): T maps K1 to K1 monomially, and S maps K1 to combinations of K1.</li>
+<li><strong>Induction on the denominator.</strong>
+   - For an integer x = n: K1(n) = M_Tⁿ·K1(0) = 0.
+   - For x = h/m with m ≥ 2: write x = n + r/m with 0 &lt; r &lt; m. By the S-law, K1(r/m) = (r/m)·M_S·K1(−m/r), and −m/r has the smaller denominator r.</li>
+<li><strong>Conclusion.</strong> Hence <strong>K1 ≡ 0 on Q</strong>, matching A33's floating-point observation.</li>
+</ol>
+<h2>Not claimed</h2>
+<ul>
+<li><strong>Scope of the S-law.</strong> It is proved for the leading radial profiles (the 35-component law vector) only. Nothing is claimed about the cone sums beyond leading order.</li>
+<li><strong>Gauss-mean values.</strong> The evaluations used for the lower bound are mod-p certificates, not full cyclotomic values.</li>
+</ul>
+<h2>Status</h2>
+<ul>
+<li><strong>Cat A:</strong> items (1)–(4) as proved or certified above. The only correction is the |x|⁻¹ weight factor.</li>
+<li><strong>Cat B:</strong> only the floating-point corroboration in <code>floatcheck.py</code>.</li>
+</ul></body></html>

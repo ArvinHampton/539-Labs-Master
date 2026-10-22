@@ -1,0 +1,235 @@
+<html><head><meta charset=utf-8><style>body{font-family:sans-serif;font-size:10.5px;max-width:950px;margin:auto}table{border-collapse:collapse}td,th{border:1px solid #999;padding:2px}</style></head><body><h1>A32: The 35-component Weil representation and ρ_7: exact intertwiners and an explicit map</h1>
+<p><strong>For:</strong> Arvin Hampton · 2026-10-22, about 10:25 AM CDT.</p>
+<p><strong>Folder:</strong> <code>reports/s_family_paths/A32_35_to_rho7/</code>
+- Scripts: <code>exact_hom.py</code>, <code>run.py</code>, <code>numeric.py</code>, <code>exact_verify.py</code>, <code>controls.py</code>.
+- Results: <code>results.json</code>, <code>numeric.json</code>, <code>exact_verify.json</code>, <code>controls.json</code>, <code>X_chi3.npy</code>.</p>
+<p><strong>Ground rules</strong>
+- <code>A/scripts/weil_family.py</code> and the RTA_prereg runner were imported read-only. The certifier was not touched (CORE_FREEZE), and H_s was not redefined.
+- The cert queue was not touched.
+- New files only. Nothing was pushed or sent.
+- No TPC or RH claims.
+- <strong>Cat A</strong> = proved, or exact relative to named imports. <strong>Cat B</strong> = numerical or interpretive.</p>
+<h2>Verdict</h2>
+<ol>
+<li><strong>Exact: no equivariant map without a twist.</strong> Hom_{SL₂(Z)}(ρ₃₅, ρ_7|W) = 0, and the same holds for the dual ρ₃₅<em>, in both directions and against ρ_7|W</em>. This is proved by a mod-p rank certificate at two primes (Cat A, computer certificate). It is <strong>not</strong> explained by disjoint T-spectra: all 12 T-eigenvalues of ρ₃₅ occur in ρ_7|W. The obstruction is the S-matrix.</li>
+<li><strong>Exact: an explicit map after the order-4 character twist χ³.</strong></li>
+<li><strong>Twist:</strong> χ is the generator of Hom(SL₂(Z), C^×) ≅ Z/12, with χ(T) = e(1/12) and χ(S) = −i. So χ³(T) = i and χ³(S) = i.</li>
+<li><strong>Hom dimension:</strong> dim Hom(ρ₃₅⊗χ³, ρ_7|W) = 1.</li>
+<li><strong>The map Φ:</strong> it is explicit and monomial, with rank 6 and image exactly the cusp part C. It is verified exactly in Z[ζ_29400] on S and T (Cat A).</li>
+<li><strong>Identification:</strong> <strong>C ≅ (ρ₃₅)_{(−,−)} ⊗ χ³</strong>, where (ρ₃₅)_{(−,−)} = ρ₅⁻ ⊗ ρ₇⁻ is the 6-dimensional part that is odd under both local reflections Z₅ and Z₇.</li>
+<li><strong>Uniqueness:</strong> this is the only one of the 12 characters that gives a non-zero Hom, and it does so with multiplicity 1. The other non-zero cases are the dual and adjoint forms of the same statement.</li>
+<li><strong>Revised ledger entry 61.</strong> The untwisted statement is upgraded from floating point to <strong>exact Cat A (computer certificate)</strong>. The conclusion "no equivariant map" holds only untwisted. Up to the χ³ twist, C is canonically a sector of the 35-component Weil representation.</li>
+</ol>
+<h2>1. What the objects are (sources: RTA_prereg Amendments 1–2, RTA_implications §2, A18 §4)</h2>
+<ul>
+<li><strong>Lattice.</strong> A_7 = [[2,7],[7,7]], with det −35. It is an <strong>odd</strong> lattice.</li>
+<li>Amendment 1 (Cat A): there is no even binary lattice of det −35, because b² − 4ac = 35 ≡ 3 mod 4 is impossible.</li>
+<li><strong>D(A_7) and its form.</strong> D(A_7) = L′/L has order 35. Since 35 is odd, b(μ,ν) = μᵀA⁻¹ν mod 1 has a unique quadratic refinement q(μ) = 2⁻¹·b(μ,μ), with 2⁻¹ = 18 mod 35.</li>
+<li><strong>The 35-dim representation ρ₃₅</strong> is the Weil representation of (D, q):</li>
+<li>T e_μ = e(q(μ)) e_μ;</li>
+<li>S e_μ = (ε/√35) Σ_ν e(−b(μ,ν)) e_ν, with <strong>ε = i</strong>.</li>
+<li>ε is fixed by the SL₂ relations. It is the unique choice at both primes used below, and numerically it is also unique.</li>
+<li><strong>Group and level.</strong> ρ₃₅ is a representation of SL₂(Z) (S⁴ = 1, (ST)³ = S²). It needs no metaplectic cover. T has exact order 35, so the representation factors through SL₂(Z/35).</li>
+<li><strong>The "35-component law" (Residual-Law B3).</strong> Its source marks it "Not attempted". <strong>No B3 law vector exists anywhere in the repo</strong> (Amendment 2; A18 §4). So the representation space is the only exact object available, and this report works with it.</li>
+<li><strong>ρ_7.</strong> This is the s-family representation on the 140 labels (<code>family_s.py</code> / <code>WFam(7)</code>), restricted to the 42-dimensional subspace W fixed by γ₇ and −1.</li>
+<li>It is an SL₂(Z) representation, with T of <strong>exact order 140</strong> on W (computed here exactly; not the "level 70" sometimes quoted).</li>
+<li>W = E ⊕ C, where E is 36-dimensional and C is 6-dimensional.</li>
+<li>dim End(ρ_7|W) = 2 exactly, and dim End(ρ₃₅) = 4 exactly.</li>
+<li><strong>Matrices.</strong></li>
+<li>ρ₃₅: S and T as above. The labels are listed in <code>exact_verify.json</code> (stored as r = adj(A)·m mod 35, so μ = r/(−35)), with their q values.</li>
+<li>ρ_7|W: the WFam S_row and T_mono rows restricted to W orbit vectors. All phases lie in e(Z/9800), i.e. are 9800th roots of unity, and the normalisation is 1/√35.</li>
+</ul>
+<h2>2. Exact intertwiner computation</h2>
+<ul>
+<li><strong>Method.</strong> Solve XS₁ = S₂X and XT₁ = T₂X in exact arithmetic over F_p, with p ≡ 1 mod 29 400 (= lcm(9800, 140, 12, 8)), and with ζ ↦ a primitive 29 400th root of unity in F_p.</li>
+<li>√35 and ε are fixed in F_p by the relations: exactly one root of 35 and one ε satisfy them.</li>
+<li>Both S's carry the same factor 1/√35, so it cancels.</li>
+<li><strong>Why the mod-p result is a proof of vanishing.</strong> The equations have coefficients in Z[ζ][1/35]. Reduction mod a prime above p is a ring map, so the rank can only drop, and <strong>dim Hom over C ≤ dim over F_p</strong>. A mod-p nullity of 0 therefore proves Hom = 0 in characteristic 0.</li>
+<li>Two primes were used, p = 29 401 and 14 729 401, with identical results.</li>
+<li><strong>Scope of the check.</strong> 96 Hom spaces in total: {ρ₃₅, ρ₃₅<em>} ⊗ χᵏ (k = 0..11) → {ρ_7|W, ρ_7|W</em>}, in both directions.</li>
+<li><strong>T-spectra (exact).</strong></li>
+<li>
+<p>ρ₃₅ has eigenvalues e(t), with multiplicities:</p>
+<table>
+<thead>
+<tr>
+<th>t</th>
+<th>0</th>
+<th>1/7</th>
+<th>2/7</th>
+<th>4/7</th>
+<th>2/5</th>
+<th>3/5</th>
+<th>6/35</th>
+<th>19/35</th>
+<th>24/35</th>
+<th>26/35</th>
+<th>31/35</th>
+<th>34/35</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mult.</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>ρ_7|W has 36 distinct eigenvalues of order dividing 140; the full list is in <code>results.json</code>.</p>
+</li>
+<li><strong>Overlap, untwisted:</strong> all 12 eigenvalues of ρ₃₅ occur in ρ_7|W, each with multiplicity 1 there. So the spectrum allows up to 37 matched unknowns, and the vanishing comes from S.</li>
+<li><strong>Overlap after χ³:</strong> the shifted values t + 1/4 all occur too.</li>
+<li><strong>Results.</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Variant</th>
+<th>dim Hom (exact upper bound, two primes)</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ρ₃₅ → ρ_7|W, and the reverse direction</td>
+<td>0</td>
+<td><strong>Cat A, = 0</strong></td>
+</tr>
+<tr>
+<td>ρ₃₅* → ρ_7|W, and the reverse direction</td>
+<td>0</td>
+<td><strong>Cat A, = 0</strong></td>
+</tr>
+<tr>
+<td>ρ₃₅, ρ₃₅* → ρ_7|W*</td>
+<td>0</td>
+<td><strong>Cat A, = 0</strong></td>
+</tr>
+<tr>
+<td>ρ₃₅⊗χᵏ → ρ_7|W, for k ≠ 3</td>
+<td>0</td>
+<td><strong>Cat A, = 0</strong></td>
+</tr>
+<tr>
+<td><strong>ρ₃₅⊗χ³ ↔ ρ_7|W</strong></td>
+<td><strong>1</strong></td>
+<td><strong>Cat A, = 1</strong> (lower bound by the explicit map in §3)</td>
+</tr>
+<tr>
+<td>ρ₃₅<em>⊗χ⁹ ↔ ρ_7|W</em></td>
+<td>1</td>
+<td>the complex-conjugate statement</td>
+</tr>
+<tr>
+<td>all other combinations</td>
+<td>0</td>
+<td>Cat A</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Consequences for subspaces.</strong> For the subspaces E and C, every Hom vanishes except χ³ → C, which has dimension 1. This follows because a Hom into a subrep embeds in the Hom into W, and the image in the χ³ case is C (§3).</li>
+<li><strong>Metaplectic (half-integral η-power) twists.</strong> A genuine character of Mp₂(Z) acts by −1 on the central element S⁴. Both representations here are trivial on S⁴, so all those Hom spaces are 0 (Cat A, one line).</li>
+<li><strong>Weight-shift twists by η^{2k}.</strong> These are exactly the χᵏ above, and the list is exhaustive: χ generates all 12 characters of SL₂(Z).</li>
+</ul>
+<h2>3. The explicit map (Cat A)</h2>
+<ul>
+<li><strong>Construction.</strong> Φ: ρ₃₅⊗χ³ → ρ_7|W was found in floating point.</li>
+<li>Its residual is 1.4·10⁻¹⁶, and the gap to the next singular value is 1.05.</li>
+<li>All 24 non-zero entries have equal modulus, and their phases are exact multiples of 1/29 400.</li>
+<li><strong>Exact verification.</strong> Rescaled to unit entries, Y was verified <strong>exactly</strong> in the group ring Z[Z/29400], reduced modulo the cyclotomic polynomial Φ₂₉₄₀₀:</li>
+<li>Y·S₃₅′ = S_7·Y: <strong>210 of 210 entries agree</strong>;</li>
+<li>Y·T₃₅′ = T_7·Y: <strong>24 of 24 entries agree</strong>.</li>
+<li>The check uses the unnormalised orbit basis. All six target orbits have size 4, so the normalisation is a single scalar.</li>
+<li>Generators suffice, so Φ is an SL₂(Z)-intertwiner.</li>
+<li><strong>Rank and image.</strong> Rank 6: the six image rows have disjoint column supports.</li>
+<li>The image is spanned by the W-orbit basis vectors with indices 26, 28, 30, 32, 34 and 36.</li>
+<li>That image is C, because W = E ⊕ C with End = 2, so E and C are the only non-zero proper subreps, and C is the 6-dimensional one.</li>
+<li><strong>So C is spanned exactly by six W-orbit vectors.</strong></li>
+<li><strong>Kernel (29-dim).</strong> It contains every e_μ with μ in the 5-torsion or the 7-torsion subgroup. These are the 11 labels with q ∈ {0, 1/7, 2/7, 4/7, 2/5, 3/5}, i.e. with a zero local component. The remaining 18 dimensions of the kernel come from the other local-sign sectors on the 24 labels.</li>
+<li><strong>What Φ does to the 35 components.</strong> The 24 "primitive" labels, those with both local parts non-zero (q ∈ (1/35)Z with denominator 35), map 4-to-1 onto the six C basis vectors. Each row is an orbit {±μ, ±μ′}, where μ′ is μ with one local part negated:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>C row</th>
+<th>labels (coefficient)</th>
+<th>q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>26</td>
+<td>[7,23] (+1), [28,12] (+1), [7,33] (−1), [28,2] (−1)</td>
+<td>34/35</td>
+</tr>
+<tr>
+<td>28</td>
+<td>[7,18] (+1), [28,17] (+1), [7,3] (−1), [28,32] (−1)</td>
+<td>24/35</td>
+</tr>
+<tr>
+<td>30</td>
+<td>[7,13] (+1), [28,22] (+1), [7,8] (−1), [28,27] (−1)</td>
+<td>19/35</td>
+</tr>
+<tr>
+<td>32</td>
+<td>[14,11], [21,24] (e(1/5)); [14,31], [21,4] (e(7/10))</td>
+<td>31/35</td>
+</tr>
+<tr>
+<td>34</td>
+<td>[14,6], [21,29] (e(1/5)); [14,1], [21,34] (e(7/10))</td>
+<td>26/35</td>
+</tr>
+<tr>
+<td>36</td>
+<td>[14,26], [21,9] (e(1/5)); [14,16], [21,19] (e(7/10))</td>
+<td>6/35</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Reading the table.</strong> Each row is even under μ ↦ −μ and odd under the local reflection. So the source of Φ is the (Z₅ = −, Z₇ = −) sector ρ₅⁻ ⊗ ρ₇⁻, of dimension 2·3 = 6. This is consistent with A ("for odd s, C lies in the (Z_p = −1)-sectors").</li>
+<li><strong>Is Φ canonical?</strong> Yes, up to a scalar: Hom is 1-dimensional and both sides are irreducible. It is unique up to scaling once χ³ is fixed.</li>
+<li><strong>Applying it to the B3 law.</strong> Φ would send any 35-component vector to its (−,−) primitive sector. This <strong>could transport a B3 law vector into C</strong>, but no such vector exists, so nothing is transported here.</li>
+</ul>
+<h2>4. Controls and interpretation (Cat B)</h2>
+<ul>
+<li><strong>Floating-point controls</strong> (<code>controls.json</code>, χᵏ for k = 0..11): the same single χ³ hit (or its dual) appears for −[[2,1],[1,18]], the dual of [[2,1],[1,18]], [[5,0],[0,7]], [[3,1],[1,12]] and [[2,1],[1,−17]]. It does <strong>not</strong> appear for ±[[6,1],[1,6]], [[1,0],[0,35]] or [[4,1],[1,9]].</li>
+<li><strong>So the map is not specific to A_7.</strong> It exists whenever the local odd parts of the order-35 discriminant form match those of D(A_7) (Cat B: controls in floating point only).</li>
+<li><strong>Interpretation (Cat B).</strong> χ³ is the multiplier of η⁶ (weight 3). One reading is that C is the doubly-odd sector of the D(A_7) Weil representation, shifted by a weight-3 multiplier. Whether the Residual-Law B3 law, if ever built, lives in this sector is open.</li>
+</ul>
+<h2>5. Status</h2>
+<ul>
+<li><strong>Cat A</strong></li>
+<li>The untwisted Hom = 0 results (exact, CC at two primes; one prime suffices).</li>
+<li>The 12-character exhaustive table.</li>
+<li>The explicit Φ with its exact Z[ζ] verification, its rank 6 and image C, its kernel, and the component table.</li>
+<li>C ≅ ρ₅⁻ ⊗ ρ₇⁻ ⊗ χ³.</li>
+<li><strong>Inherited imports:</strong><ul>
+<li>ε = i, from the SL₂ relations (unique mod p; standard Weil-representation theory);</li>
+<li>WFam's definitions of ρ_7 and W;</li>
+<li>E being a subrep (RTA_implications), with End = 2 exact by the same mod-p bound plus E, C ≠ 0.</li>
+</ul>
+</li>
+<li><strong>Cat B:</strong> the controls, and the physical or "law" reading.</li>
+<li><strong>Open:</strong> the B3 law vector, which has never been built.</li>
+<li><strong>Ledger entry 61 (revised):</strong></li>
+<li>"Hom(ρ₃₅, ρ_7|W) = Hom(ρ₃₅*, ρ_7|W) = 0" is now <strong>exact (CC)</strong>.</li>
+<li><strong>Amendment:</strong> "after the χ³ twist there is a unique (up to scalar) intertwiner Φ, with image C ≅ (ρ₃₅)_{(−,−)} ⊗ χ³, verified exactly". This moves from the negative section to section 3 (Bridge C) as a positive Cat A result.</li>
+</ul></body></html>

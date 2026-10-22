@@ -1,0 +1,8 @@
+s=11 N=396 Tlevel=396 primes=[397, 2377, 3169, 4357, 6337, 6733, 7129, 8317] ell=1000005046921 L=392040 E=3960
+class of p-ideal (narrow idx, wide idx): {397: (6, 3), 2377: (6, 3), 3169: (6, 3), 4357: (0, 0), 6337: (0, 0), 6733: (0, 0), 7129: (0, 0), 8317: (0, 0)} principal narrow idx 0
+((3, 1), (11, 1)) Eis present; cusp rank 1; exact lambda via a(p0^2 m), p0=397 col (-1, 266) (0s); all in Lambda_E: True orders [2, 2, 2, 1, 1, 1, 1, 1] ratios==1? [True, True, True, False, False, False, False, False]
+((3, 1), (11, 1)) Eis present; cusp rank 1 #admissible eigen-systems 0
+((3, 1), (11, -1)) {'c0_rows': 0, 'rank_modl': 0, 'note': 'rank 0: search not implemented'}
+((3, -1), (11, 1)) {'c0_rows': 0, 'rank_modl': 0, 'note': 'rank 0: search not implemented'}
+((3, -1), (11, -1)) rank 1: exact eigenvector; all lambda_p in Lambda_E: True orders [4, 4, 4, 2, 2, 1, 2, 2]
+done
