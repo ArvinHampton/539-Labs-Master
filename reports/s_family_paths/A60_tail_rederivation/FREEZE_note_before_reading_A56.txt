@@ -1,0 +1,3 @@
+Freeze record (written before any A56/A57 source file was opened).
+Reading so far, all outputs of this track: A56/A57 REPORT.md, A57 prereg.md (statements only), file names of A59 (format).
+Not opened: A56 proof/*.py, cert/*.c, exact/*.c, A57 proof/* copies, A61, A59 code.
