@@ -1,0 +1,5 @@
+- started genus runs s=9,11 done; 23-29 running Thu Oct 22 12:44:07 CDT 2026
+- KR=6 runs too short for s>=25 (s=25 (-,-) u-rank 1 < certified 2); moved to logs/kr6; rerun KR=10 Thu Oct 22 13:10:34 CDT 2026
+- Thu Oct 22 13:19:19 CDT 2026: killed stale KR6 s=29; KR10 queue 25,27,29,23 running (alldone2 marker)
+- Thu Oct 22 13:45:54 CDT 2026: s=25 KR10 control: (-,-) u-rank 1 (<2 certified; column coverage), genus adds 0. Restarted with per-(p,k) disk cache out/cache, KR=16, order 27,29,25
+- Thu Oct 22 14:10:08 CDT 2026: REPORT.md written (s=27/29 pending)
