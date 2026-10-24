@@ -1,0 +1,33 @@
+# NOTES for LEDGER v8 (problems found and fixed while folding). 2026-10-24, America/Chicago.
+
+- **Sources folded.**
+  - v7 entries 1–97, verbatim apart from the header, the new standing hypothesis TB5 in §0, and the dependency paragraph of entry 91.
+  - Entries 98–100 of `LEDGER_ADDENDUM_T3_2026-10-23.md`, verbatim, as §9.
+  - New entries:
+    - 101: A60;
+    - 102: A61, with A59 as a dependency;
+    - 103: A48 REPORT_v3, Category A part only;
+    - 104–106: `reports/bridges/BRIDGE_C_35/RESULTS.md`;
+    - 107–109: `reports/bridges/BRIDGE_C_35/order2/RESULTS.md`.
+- **Pending items checked.**
+  - A46 zero facts: already present as entries 77–78.
+  - A47 sign rule: already present as entry 85.
+  - A51: already present as entries 93–95.
+  - Entry 40 citation: v7 entry 40 already cites `SF/A35_lawspace_exact/exact_main.json` (eval_points 48, eval_rank 36 at both primes). No change was needed.
+- **Entry 91 dependencies.** The v7 text said that the major-arc third-derivative bound was "checked numerically, not proved" and that the tail step "has not been re-derived independently". Both statements are now superseded: A61 item 1 proves the bound with constant 1, and A60 re-derives the tail. The paragraph was rewritten to point to entries 101–102. The statement and constants of entry 91 are unchanged.
+- **Entry 102, odd n.** A61 proves the upper bound on log A_n for even n only (the only case used). Entry 102 states it for even n.
+- **Entry 103.**
+  - The sector flagged `Eis` at s = 33 and 39 is counted using cuspidal combinations, as in A37. The totals 5, 5 follow that convention, and the entry says so.
+  - **The upper-bound certifier at s = 33/39 is on hold** (its exact stage needs more than the available memory, and a memory-lean version would need a change of certifier code, which CORE_FREEZE excludes). The entry claims no upper bound there.
+  - The Category B hint of A48 §4 (a possible third form in (3−,5−) at s = 27) is excluded.
+- **Excluded as Category B.**
+  - The order-2 closure test (BRIDGE_C_35/order2, its third map).
+  - The √π/4 match at x = 1/2.
+  - Every floating-point radial fit.
+  - The A53 claim "V_s ≅ E_s" (mod-p evidence only).
+- **Entries 104–109.**
+  - The proofs were copied from the bridge RESULTS files and checked again while copying.
+  - Entry 107's proof is self-contained.
+  - Entry 109 depends on entry 107 plus the interval computation.
+  - Entry 104 uses entry 97 (End(V) = 1 at s = 7) for the cyclic-vector statement.
+- **PDF rendering.** The same renderer as v7 (markdown to Chrome PDF), with entry numbers rendered explicitly.
