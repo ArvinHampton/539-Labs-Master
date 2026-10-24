@@ -1,0 +1,46 @@
+{
+ "leading": {
+  "rank_A": [
+   36,
+   372760035075603.06
+  ],
+  "prereg_|x|^-w_w0.5": [
+   72,
+   42340671020814.13
+  ],
+  "corrected_|x|^+w_w0.5": [
+   72,
+   35920606612154.586
+  ],
+  "prereg_|x|^-w_w1.0": [
+   72,
+   29647447849834.68
+  ],
+  "corrected_|x|^+w_w1.0": [
+   36,
+   191383772147177.06
+  ]
+ },
+ "order2": {
+  "rank_A": [
+   105,
+   Infinity
+  ],
+  "prereg_|x|^-w_w0.5": [
+   138,
+   Infinity
+  ],
+  "corrected_|x|^+w_w0.5": [
+   138,
+   Infinity
+  ],
+  "prereg_|x|^-w_w1.0": [
+   138,
+   Infinity
+  ],
+  "corrected_|x|^+w_w1.0": [
+   138,
+   Infinity
+  ]
+ }
+}
