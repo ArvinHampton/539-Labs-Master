@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/scripts/posthoc_radial_small_t.py", line 6, in <module>
+    R=int(math.sqrt(X/0.6))+2
+                    ^
+NameError: name 'X' is not defined. Did you mean: 'XS'?
