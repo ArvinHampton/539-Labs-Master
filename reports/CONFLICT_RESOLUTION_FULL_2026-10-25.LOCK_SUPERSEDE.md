@@ -1,0 +1,3 @@
+# LOCK SUPERSEDE NOTE — CONFLICT_RESOLUTION_FULL_2026-10-25.md
+19:22 CDT (America/Chicago), 2026-10-25. Sidecar only; body unchanged (sha256 `b7ae82ed62f9a81e48c9630808c352417b394b68b1822c039e8291d604e4b1b9`).
+Historical claim at L4: "Status: residual-C **OPEN-conditional**" — superseded by residual-C LOCK_DIGEST `964294ccc4516dee846676510a6e1f99d830a355ed29bb84527aad84cdd4274d` (POST_LOCK_FILE_SHA `492fb3ac95c20e9117594639eb5947c90785a09e93da8301d6e83980c490a6fa`). Index: LOCK_SUPERSEDE_INDEX_t1055u_2026-10-25.md. Bridge PARTIAL · READY NO · not Cat A.

@@ -1,0 +1,46 @@
+== MR2 adoption blockers: Riemann / systole / full EOM ==
+l/l_p = 49.68438219, l^2 = 2468.537834 l_p^2
+
+== V. validation ==
+   geometry built: 25 Christoffels, 29 derivatives [0s]
+AdS7xS4 pt=['1.3', '0.4', '1.1', '2.0'] true flux: max|E^M_N|=5.51e-40 (scale 12.0)
+AdS7xS4 pt=['1.3', '0.4', '1.1', '2.0'] WRONG flux x1.1: max|E^M_N|=2.52 (scale 12.0)
+   curvature-operator max|eig| = 4.000000000000 (exact 4 from S4; AdS7 -1), max|Im eig| = 0.0e+00
+   K=468.0 (exact 2*7*6 + 2*4*3*16 = 468), RicSq=828.0 (exact 7*36+4*144=828), R=6.0 (exact -42+48=6), Weyl^2=100.8
+AdS7xS4 pt=['0.7', '1.0e-6', '1.5', '3.141'] true flux: max|E^M_N|=7.22e-22 (scale 12.0)
+AdS7xS4 pt=['0.7', '1.0e-6', '1.5', '3.141'] WRONG flux x1.1: max|E^M_N|=2.52 (scale 12.0)
+   curvature-operator max|eig| = 4.000000000000 (exact 4 from S4; AdS7 -1), max|Im eig| = 0.0e+00
+   K=468.0 (exact 2*7*6 + 2*4*3*16 = 468), RicSq=828.0 (exact 7*36+4*144=828), R=6.0 (exact -42+48=6), Weyl^2=100.8
+
+== building candidate geometry (symbolic Christoffels + derivatives) ==
+   geometry built: 72 Christoffels, 164 derivatives [54s]
+(D) product AdS5(F0=2/3)xH2(G0=1/6)xS4(1/2) pt=['1.0', '1.0', '0.7', '0.4']: K=618.0 (exact 40*9/4+4*36+384 = 618), RicSq=828.0 (exact 828), R=6.0 (exact 6), max|eig Q|=6.000000000000 (exact 6)
+(D) product AdS5(F0=2/3)xH2(G0=1/6)xS4(1/2) pt=['1.0', '1.0', '1.0e-6', '1.0e-6']: K=618.00000000000000203 (exact 40*9/4+4*36+384 = 618), RicSq=828.0 (exact 828), R=6.0 (exact 6), max|eig Q|=6.000000000000 (exact 6)
+grid: 17 points (alpha in {1e-6, pi/4+d, pi/2+d, 3pi/4+d, pi-1e-6} x beta in {1e-6, pi/4+d, pi/2-1e-6}, d=1.234e-3 + 2 generic); dps=40
+
+== closure d*G4 = 0 (G^G = 0 identically: G4 has legs only on the 6 internal directions), exact symbolic with LAMBDA free ==
+MN1(z=0): LAMBDA solving d*G=0 at 3 pts x 2 components: [0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000, ('identically', 0), ('identically', 0), ('identically', 0)]; residual |d*G| at LAMBDA=1/16: 5.18E-172
+MN2(z=1): LAMBDA solving d*G=0 at 3 pts x 2 components: [0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000]; residual |d*G| at LAMBDA=1/16: 1.66E-170
+BBBW(z=2): LAMBDA solving d*G=0 at 3 pts x 2 components: [0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000]; residual |d*G| at LAMBDA=1/16: 5.18E-172
+BBBW(z=3): LAMBDA solving d*G=0 at 3 pts x 2 components: [0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000]; residual |d*G| at LAMBDA=1/16: 5.18E-172
+
+== full Einstein (all 66 components), dG4 = 0, Riemann invariants ==
+Traceback (most recent call last):
+  File "/workspace/quantum-comp/reports/MR2_TWISTED_VACUA_ADOPTION_BLOCKERS_RIEMANN_SYSTOLE_FULL_EOM_2026-11-09.py", line 354, in <module>
+    G4 = hodge_num(Om, g_, gi_, 11, 7)
+  File "/workspace/quantum-comp/reports/MR2_TWISTED_VACUA_ADOPTION_BLOCKERS_RIEMANN_SYSTOLE_FULL_EOM_2026-11-09.py", line 144, in hodge_num
+    dm = mp.det(M)
+  File "/home/box/.local/lib/python3.13/site-packages/mpmath/matrices/linalg.py", line 545, in det
+    R, p = ctx.LU_decomp(A)
+           ~~~~~~~~~~~~~^^^
+  File "/home/box/.local/lib/python3.13/site-packages/mpmath/matrices/linalg.py", line 140, in LU_decomp
+    ctx.swap_row(A, j, p[j])
+    ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/box/.local/lib/python3.13/site-packages/mpmath/matrices/matrices.py", line 880, in swap_row
+    A[i,k], A[j,k] = A[j,k], A[i,k]
+                     ~^^^^^
+  File "/home/box/.local/lib/python3.13/site-packages/mpmath/matrices/matrices.py", line 490, in __getitem__
+    if key[0] >= self.__rows or key[1] >= self.__cols:
+       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'NoneType' and 'int'
+exit_code=1

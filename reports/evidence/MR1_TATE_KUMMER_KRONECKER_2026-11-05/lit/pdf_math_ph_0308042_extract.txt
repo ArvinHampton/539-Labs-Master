@@ -1,0 +1,323 @@
+INTERACTION MEASURES ON THE SPACE OF DISTRIBUTIONS
+OVER THE FIELD OF p-ADIC NUMBERS
+ANATOLY N. KOCHUBEI and MUSTAFA R. SAIT-AMETOV
+
+arXiv:math-ph/0308042v1 29 Aug 2003
+
+Institute of Mathematics
+National Academy of Sciences of Ukraine
+Tereshchenkivska 3, Kiev 01601, Ukraine
+e-mail: kochubei@i.com.ua, mustafa@imath.kiev.ua
+
+Abstract. We construct measures on the space D′ (Qnp ), n ≤ 4, of BruhatSchwartz distributions over the field of p-adic numbers, corresponding to finite
+volume polynomial interactions in a p-adic analog of the Euclidean quantum
+field theory. In contrast to earlier results in this direction, our choice of the free
+measure is the Gaussian measure corresponding to an elliptic pseudo-differential
+operator over Qnp . Analogs of the Euclidean P (ϕ)-theories with free and halfDirichlet boundary conditions are considered.
+
+1
+
+Introduction
+
+The basic objects of the Euclidean quantum field theory [2, 9, 13] are probability measures on the space D′ (Rn ) or S ′ (Rn ) of real distributions. Equivalently,
+one can speak about a generalized random process ϕ(f ), f ∈ D(Rn ), fixing
+a probability measure µ0 on the Borel σ-algebra Σ of D′ (Rn ) and considering the probability space (D′ (Rn ), Σ, µ0 ). The free boson field is described by
+the measure µ0 corresponding to the Gaussian
+ process with mean zero and covariance h ϕ(f ) ϕ(g) i = f, (−∆ + m2 )−1 g . In order to describe fields with
+interaction corresponding to a polynomial P , it is necessary to define P (ϕ)
+via some renormalization procedure. Then, for any g ∈ D(Rn ), the measure
+exp {− (P (ϕ), g)} dµ0 (ϕ)
+dµg (ϕ) = R
+,
+exp {− (P (ϕ), g)} dµ0 (ϕ)
+
+(1.1)
+
+if the expression (1.1) makes sense and indeed defines a measure, is interpreted
+as an interaction measure in a finite volume. In some cases there exists (in a
+certain sense) also an infinite volume limit limg→1 dµg .
+Within the recent tendency to find non-Archimedean analogs of all important
+objects of mathematical physics,[4, 5, 15] it is natural to look for p-adic counterparts of the above constructions. This problem (formulated in Refs. 14, 16) is
+of a clear mathematical interest as a major problem of the infinite-dimensional
+non-Archimedean analysis, irrespective of possible physical applications.
+As we switch from Rn to Qnp = Qp × · · · × Qp , where Qp is the field of p-adic
+numbers, we consider the space D′ (Qnp ) of Bruhat-Schwartz distributions. It
+turns out that the first crucial step is the choice of a free covariance. Note that
+one cannot define differential operators acting on complex-valued functions over
+Qp .
+1
+
+The first results in p-adic quantum field theory were obtained in a series of
+papers by Lerner and Missarov (see e.g. Refs. 7, 8, 10) whose main motivation
+was to find a continuous analog of hierarchical models. Their choice of a free
+covariance was
+Z
+const
+f (x)kx − yk−αn f (y) dx dy,
+α > 0,
+n
+Qn
+p ×Qp
+
+which had nice scaling and discretization properties, made it possible to define a Hamiltonian of the discretized interacting field, but did not lead to the
+construction (1.1).
+In this paper we propose a different approach. We follow the construction of
+Refs. 13, 2 using (instead of the Laplacian) elliptic pseudo-differential operators
+over Qp introduced in Refs 6,5. Such elliptic operators exist only for n ≤ 4, and
+in the “physical” dimension 4 such an operator is unique up to an isomorphism.
+Below we assume that p 6= 2.
+More specifically, let h(ξ1 , . . . , ξn ) be a quadratic form with coefficients from
+Qp , such that the ellipticity (or anisotropy) condition
+h(ξ1 , . . . , ξn ) 6= 0
+
+|ξ1 |p + · · · + |ξn |p 6= 0
+
+if
+
+(1.2)
+
+holds. On the space L2 (Qnp ) of square integrable complex-valued functions
+with respect to the additive Haar measure we consider the self-adjoint positive operator A = F −1 Mh,α F , where Mh,α is the operator of multiplication by
+|h(ξ1 , . . . , ξn )|α
+p , α > 0, F is the Fourier transform (for the main notions and
+results of non-Archimedean analysis used in this paper see Ref. 5)
+If O is a ball in Qnp (with respect to the absolute value max1≤j≤n |ξj |p ),
+then AO will denote the operator on L2 (O) defined as follows. Let f ∈ D(O),
+that is f ∈ D(Qnp ), supp f ⊂ O. Extending f onto Qnp by zero, we apply the
+operator A to that extension. Restricting the resulting function to O we obtain
+a function from L2 (O) which is taken as AO f . This defines an operator on
+D(O); its closure AO is a self-adjoint positive operator on L2 (O).
+Let µ0 be the measure on D′ (Qnp ) corresponding to the Gaussian process with
+
+the mean zero and covariance h ϕ(f ) ϕ(g) i = f, (A + m2 )−1 g , where (·, ·) is
+the inner product in L2 (Qnp ). As it is dictated by the condition (1.2), we always
+assume that n ≤ 4. We show that for any semibounded polynomial P and any
+α ≥ n2 , we can define P (ϕ) to be the Wick renormalization with respect to the
+measure µ0 , as it is done in the Euclidean P (ϕ)2 -model.[13, 2] The resulting
+non-Gaussian generalized stochastic process will be denoted : P (ϕ): . Moreover,
+with this renormalization the measure (1.1) is well-defined. It may be seen as a
+p-adic counterpart of the Euclidean P (ϕ)2 with free boundary conditions.[13]
+Another option (resembling the P (ϕ)2 with the half-Dirichlet boundary conditions from Ref. 13) is to use the above Wick renormalization with respect to
+′
+µ0 while replacing µ0 in (1.1) by µO
+0 , the measure on D (O) corresponding, as
+above, to the operator AO , and taking g to be the indicator function of the ball
+O. We show that (1.1) makes sense in this case too. This approach has some
+preferences. Though the infinite volume limit is not considered in this paper,
+we prove that within this “mixed” construction of the interaction measure the
+corresponding Schwinger functionals (under some assumptions on P ) depend
+monotonously on the radius of the ball O. This result is based on a version
+of the lattice (or, rather, graph) approximation, which is of some independent
+interest.
+
+2
+
+2
+
+Elliptic operators
+
+In this section we introduce the elliptic pseudo-differential operators that play
+the role of the Laplacian in our approach. Hereinafter we will assume that m is
+n
+some fixed positive constant, α ≥ .
+2
+
+2.1
+
+Basic information
+
+The theory of the operator A defined in the introduction is expounded in detail
+in Ref. 5. The results needed here can be summarized as follows.
+The resolvent (A + m2 )−1 is an integral operator of convolution type,
+Z
+
+(A + m2 )−1 f (x) =
+E(X − Y )f (Y )dY,
+X ∈ Qnp .
+Qn
+p
+
+The investigation of the Green function E(X) = E(x1 , . . . , xn ), x1 , . . . , xn ∈ Qp ,
+is based on a procedure of reduction of multi-dimensional pseudo-differential
+operators over Qp to one-dimensional operators on more general fields.
+The vector space K = Qnp (n ≤ 4) can be endowed with additional algebraic
+structures, so that K is assumed to be a local field (an extension of Qp ), if n ≤ 3,
+or the non-commutative quaternion algebra over Qp , if n = 4. Let k · k be the
+normalized absolute value, β be a prime element of K, q be the cardinality of the
+residue field of K. For x ∈ K, kxk = q N , we will write x = β −N ux , kux k = 1.
+It is shown in Ref. 5 that for each quadratic form h satisfying (1.2) we can
+construct K in such way that
+
+
+−1
+′ −1
+E(x1 , . . . , xn ) = |det T |−1
+X)1 e1 + · · · + (T ′ X)n en )
+(2.1)
+p E (T
+where e1 , . . . , en is a basis of K over Qp , T ∈ GL(n, Qp ), T ′ is the transpose
+of T , E is the Green function, that is the integral (convolution) kernel of the
+resolvent (A+m2 )−1 of a pseudo-differential operator A over K with the symbol
+a(ξ) = kξk2α/n γ(uξ ),
+
+ξ ∈ K,
+
+(2.2)
+
+where γ is a continuous strictly positive function on the group of units U of
+K. As usual, the operator A is defined on the space D(K) of locally constant
+−1
+Ma FK , where Ma is the operator
+functions with compact supports as A = FK
+of multiplication by a, FK is the Fourier transform, that is
+Z
+χ(ξx)f (x) dx,
+ξ ∈ K,
+(FK f )(ξ) =
+K
+
+where χ is a rank zero additive character on K. Below we will often use the
+notation fb = FK f .
+Explicit forms of all the above objects (the choice of the expressions for function γ, the basis of coordinate representation e1 , . . . , en , the matrix T appearing
+in (2.1) etc.) can be found for various classes of the forms h in Ref. 5.
+The relation (2.1) shows that the Gaussian measure µ0 corresponding to
+the operator A and a similar measure constructed from the operator A (we
+can identify K and Qnp via the basis {ej }) are connected by a simple linear
+transformation. Therefore we will substantiate (1.1) using A instead of A. In
+3
+
+order to simplify the notations, below we will ignore the difference between A
+and A, and understand µ0 as the measure corresponding to A.
+Under the above identification of K and Qnp a ball O in Qnp corresponds to
+a compact set Π in K which is not necessary a ball, but the union of a finite
+number of disjoint balls. Therefore, in the construction of the mixed interaction
+measure instead of µO
+0 (defined in the introduction) we will deal with a similar
+measure µΠ
+.
+0
+Later we will often make use of the following technical lemma.
+Lemma 2.1. Let the function a(ξ) be as in (2.2). If α ≥ n2 , then for any κ ∈ Z,
+κ ≥ 1,
+Z
+−1
+dξ ≤ c1 κ,
+(2.3)
+a(ξ) + m2
+kξk≤qκ
+
+and for any β > 1
+Z
+
+a(ξ) + m2
+
+kξk≥qκ
+
+−β
+
+dξ ≤ c2 q −κ(2αβ/n−1) ,
+
+(2.4)
+
+where c1 and c2 are positive constants that do not depend on κ.
+Proof. First, note that γ(uξ ) in the definition (2.2) is a positive continuous
+function on a compact set. Thus there exist such positive constants γmin and
+γmax , that
+γmin ≤ γ(uξ ) ≤ γmax for any ξ ∈ K.
+The following simple calculations prove (2.3):
+Z
+
+a(ξ) + m
+
+kξk≤qκ
+
+≤m
+
+−2
+
++
+
+
+2 −1
+
+dξ ≤ m
+
+−2
+
+Z
+
+dξ +
+
+kξk≤1
+
+−1
+γmin
+(1 − q −1 )
+
+κ
+X
+
+−1
+γmin
+
+Z
+
+kξk−2α/n dξ
+
+1<kξk≤qκ
+
+−1
+q −l(2α/n −1) ≤ m−2 + γmin
+(1 − q −1 ) κ.
+
+l=1
+
+Next,
+Z
+
+kξk≥qκ
+
+a(ξ) + m2
+
+−β
+
+−1
+dξ ≤ γmin
+
+Z
+
+−1
+≤ γmin
+(1 − q −1 )
+
+kξk−2αβ/n dξ
+
+kξk≥qκ
+
+∞
+X
+
+q −l(2αβ/n −1) ≤ c2 q −κ(2αβ/n −1) ,
+
+l=κ
+
+since 2αβ
+n > 0 and q > 1.
+Calculations similar to those in proof of (2.3) give the estimate
+Z
+−β
+dξ ≤ c κ,
+a(ξ) + m2
+
+(2.5)
+
+kξk≤qκ
+
+where positive constant c does not depend on κ. Thus from (2.4) and (2.5) we
+R
+−β
+can conclude that the integral K a(ξ) + m2
+dξ converges for any β > 1.
+4
+
+

@@ -1,0 +1,66 @@
+{
+ "control_full": {
+  "rank_tw_eta": 2,
+  "rank_with_sad": 3,
+  "survives": true
+ },
+ "fibres": {
+  "0": {
+   "rank_tw_eta": 2,
+   "rank_with_sad": 3,
+   "survives": true
+  },
+  "1": {
+   "rank_tw_eta": 2,
+   "rank_with_sad": 3,
+   "survives": true
+  },
+  "2": {
+   "rank_tw_eta": 2,
+   "rank_with_sad": 3,
+   "survives": true
+  },
+  "3": {
+   "rank_tw_eta": 2,
+   "rank_with_sad": 3,
+   "survives": true
+  },
+  "4": {
+   "rank_tw_eta": 2,
+   "rank_with_sad": 3,
+   "survives": true
+  },
+  "5": {
+   "rank_tw_eta": 2,
+   "rank_with_sad": 3,
+   "survives": true
+  },
+  "6": {
+   "rank_tw_eta": 2,
+   "rank_with_sad": 3,
+   "survives": true
+  },
+  "7": {
+   "rank_tw_eta": 2,
+   "rank_with_sad": 3,
+   "survives": true
+  }
+ },
+ "survival_set": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "C20_predicted_set": [
+  0,
+  4,
+  6
+ ],
+ "C19": "PASS",
+ "C20": "FAIL"
+}

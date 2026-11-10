@@ -1,0 +1,64 @@
+[0] KK .py sha256 88949658116586c63dc4785fc31c222eed6d9ef44afbefbc6e40a4946b20b26c (MATCH 88949658); exec'ing its group section
+[G] generator g1: x->ix: kappa=0.000000+1.000000j; branch-point perm ['0', 'inf', 'i', '-1', '-i', '1']
+[G] generator g2: x->(x+1)/(1-x): kappa=-8.000000-0.000000j; branch-point perm ['1', '-1', 'inf', 'i', '0', '-i']
+[G] |closure of <g1,g2,J,K>| = 96;  holomorphic (Aut+) = 48;  antiholomorphic = 48
+[G] distinct H^1 matrices: 96 (faithful on H^1 iff = |G|)
+[G] Aut+ element orders: [(1, 1), (2, 13), (3, 8), (4, 6), (6, 8), (8, 12)]
+[G] Isom element orders: [(1, 1), (2, 31), (3, 8), (4, 8), (6, 8), (8, 24), (12, 16)]
+[G] GL(2,3) by enumeration: |GL(2,3)|=48, element orders [(1, 1), (2, 13), (3, 8), (4, 6), (6, 8), (8, 12)]
+[G] elements acting as -1 on H^1: 1 (the hyperelliptic involution); central in Isom: True
+[G] Aut+ (order 48): 8 classes, sizes [np.int64(1), np.int64(1), np.int64(6), np.int64(6), np.int64(6), np.int64(8), np.int64(8), np.int64(12)], irrep dims [1, 1, 2, 2, 2, 3, 3, 4], sum d^2 = 48, orthogonality err 4.2e-15
+[G] Aut+ (order 48) class rep orders [1, 2, 8, 4, 8, 3, 6, 2]; orientation [1, 1, 1, 1, 1, 1, 1, 1]
+   chi_0: +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000
+   chi_1: +1.000  +1.000  -1.000  +1.000  -1.000  +1.000  +1.000  -1.000
+   chi_2: +2.000  +2.000  -0.000  +2.000  -0.000  -1.000  -1.000  -0.000
+   chi_3: +2.000  -2.000  +0.000+1.414i  -0.000  -0.000-1.414i  -1.000  +1.000  -0.000
+   chi_4: +2.000  -2.000  +0.000-1.414i  -0.000  -0.000+1.414i  -1.000  +1.000  -0.000
+   chi_5: +3.000  +3.000  +1.000  -1.000  +1.000  +0.000  +0.000  -1.000
+   chi_6: +3.000  +3.000  -1.000  -1.000  -1.000  +0.000  -0.000  +1.000
+   chi_7: +4.000  -4.000  +0.000  +0.000  -0.000  +1.000  -1.000  -0.000
+[G] Isom (order 96): 13 classes, sizes [np.int64(1), np.int64(1), np.int64(2), np.int64(6), np.int64(6), np.int64(8), np.int64(8), np.int64(8), np.int64(8), np.int64(12), np.int64(12), np.int64(12), np.int64(12)], irrep dims [1, 1, 1, 1, 2, 2, 3, 3, 3, 3, 4, 4, 4], sum d^2 = 96, orthogonality err 2.9e-14
+[G] Isom (order 96) class rep orders [1, 2, 4, 2, 4, 3, 6, 12, 12, 8, 2, 8, 2]; orientation [1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, -1, 1]
+   chi_0: +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000
+   chi_1: +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  -1.000  -1.000  -1.000  -1.000
+   chi_2: +1.000  +1.000  -1.000  -1.000  +1.000  +1.000  +1.000  -1.000  -1.000  -1.000  +1.000  +1.000  -1.000
+   chi_3: +1.000  +1.000  -1.000  -1.000  +1.000  +1.000  +1.000  -1.000  -1.000  +1.000  -1.000  -1.000  +1.000
+   chi_4: +2.000  +2.000  +2.000  +2.000  +2.000  -1.000  -1.000  -1.000  -1.000  -0.000  -0.000  -0.000  -0.000
+   chi_5: +2.000  +2.000  -2.000  -2.000  +2.000  -1.000  -1.000  +1.000  +1.000  +0.000  +0.000  -0.000  +0.000
+   chi_6: +3.000  +3.000  +3.000  -1.000  -1.000  -0.000  -0.000  +0.000  +0.000  -1.000  +1.000  -1.000  +1.000
+   chi_7: +3.000  +3.000  +3.000  -1.000  -1.000  -0.000  -0.000  -0.000  -0.000  +1.000  -1.000  +1.000  -1.000
+   chi_8: +3.000  +3.000  -3.000  +1.000  -1.000  +0.000  -0.000  +0.000  -0.000  -1.000  -1.000  +1.000  +1.000
+   chi_9: +3.000  +3.000  -3.000  +1.000  -1.000  -0.000  +0.000  -0.000  -0.000  +1.000  +1.000  -1.000  -1.000
+   chi_10: +4.000  -4.000  +0.000  +0.000  +0.000  +1.000  -1.000  -1.732  +1.732  +0.000  -0.000  -0.000  -0.000
+   chi_11: +4.000  -4.000  +0.000  -0.000  -0.000  +1.000  -1.000  +1.732  -1.732  +0.000  +0.000  -0.000  +0.000
+   chi_12: +4.000  -4.000  +0.000  +0.000  +0.000  -2.000  +2.000  +0.000  -0.000  +0.000  +0.000  -0.000  -0.000
+[G] (A) H^1(Sigma,R) (harmonic 1-forms, dim 4): multiplicities [-0.0, 0.0, -0.0, 1.0, 1.0, 0.0, -0.0, 0.0]  trivial-rep multiplicity = -0.000000
+[G] (B) H^1(Sigma,R) (harmonic 1-forms, dim 4): multiplicities [0.0, 0.0, 0.0, 0.0, -0.0, 0.0, -0.0, 0.0, 0.0, 0.0, -0.0, -0.0, 1.0]  trivial-rep multiplicity = 0.000000
+[G] (A) H^0(K) = holomorphic 1-forms (dim 2; q=1 lowest Landau level): multiplicities [-0.0, 0.0, -0.0, -0.0, 1.0, 0.0, -0.0, 0.0]  trivial-rep multiplicity = -0.000000
+[G] (A) H^0(K^2) = Sym^2 H^0(K) (dim 3; q=2 lowest Landau level): multiplicities [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]  trivial-rep multiplicity = 0.000000
+[G] Aut+: number of 1-dim characters = 2
+[G] Isom: number of 1-dim characters = 4
+[W] (A) Aut+ odd spin structures (theta chars O(P_i)): 6 objects, orbit sizes [6], invariant = 0
+[W] (A) Aut+ even spin structures (3+3 partitions): 10 objects, orbit sizes [4, 6], invariant = 0
+[W] (A) Aut+ nonzero H^1(Sigma,Z2) classes (P_i-P_j): discrete Z2 Wilson lines: 15 objects, orbit sizes [3, 12], invariant = 0
+[W] (B) Isom odd spin structures (theta chars O(P_i)): 6 objects, orbit sizes [6], invariant = 0
+[W] (B) Isom even spin structures (3+3 partitions): 10 objects, orbit sizes [4, 6], invariant = 0
+[W] (B) Isom nonzero H^1(Sigma,Z2) classes (P_i-P_j): discrete Z2 Wilson lines: 15 objects, orbit sizes [3, 12], invariant = 0
+[W] check: 6 odd + 10 even = 16 spin structures; 15 nonzero Z2 classes = 2^4-1
+[L] dim H^1(Sigma;R)^Aut+ = rank of averaging projector = 0; so dim (H^1 (x) su(2))^Aut+ = 3 x that = 0: all 12 SU(2)_R flat-direction modes at the background are removed (PROVED)
+[A] |[Aut+,Aut+]| = 24 (SL(2,3) has 24); J in [Aut+,Aut+]: True => every character s has s(J)=+1, so J.theta = -theta = theta forces 2 theta = 0
+[A] 2-torsion theta: nonzero classes form Aut+ orbits 3 + 12 (ecee2668 log [W]; Pin+ log [Z]) => only theta = 0 (trivial connection) is invariant. Abelian invariant points: {trivial} (PROVED)
+[I] chose x_A (order 2), y_A (order 3) in Aut+ with x_A y_A of order 8 generating Aut+: True (Delta+(2,3,8) -> Aut+, kernel = pi1(Sigma): CONDITIONAL standard Bolza uniformization)
+[I] k=2 (z rotation angle 2pi*2/8), y-axis tilt 0.615480 rad, relations x^2=y^3=z^8=1, xyz=1 hold, order(z)=4: graph of Delta+ in Aut+ x SO(3) finite, size 48 => |image of pi1(Sigma)| = 1 (factors through Aut+: trivial on pi1, not a new point)
+[I] k=2 (z rotation angle 2pi*2/8), y-axis tilt 2.526113 rad, relations x^2=y^3=z^8=1, xyz=1 hold, order(z)=4: graph of Delta+ in Aut+ x SO(3) finite, size 48 => |image of pi1(Sigma)| = 1 (factors through Aut+: trivial on pi1, not a new point)
+[I] k=3 (z rotation angle 2pi*3/8), y-axis tilt 1.113098 rad, relations x^2=y^3=z^8=1, xyz=1 hold, order(z)=8: graph exceeds 6748 elements (infinite image: no finite subgroup of SO(3) has elements of orders 3 and 8) => restriction to pi1(Sigma) has infinite image
+[I] k=3 (z rotation angle 2pi*3/8), y-axis tilt 2.028495 rad, relations x^2=y^3=z^8=1, xyz=1 hold, order(z)=8: graph exceeds 6748 elements (infinite image: no finite subgroup of SO(3) has elements of orders 3 and 8) => restriction to pi1(Sigma) has infinite image
+[I] k=4 (z rotation angle 2pi*4/8), y-axis tilt 1.570796 rad, relations x^2=y^3=z^8=1, xyz=1 hold, order(z)=2: graph of Delta+ in Aut+ x SO(3) finite, size 48 => |image of pi1(Sigma)| = 1 (factors through Aut+: trivial on pi1, not a new point)
+[I] k=5 (z rotation angle 2pi*5/8), y-axis tilt 1.113098 rad, relations x^2=y^3=z^8=1, xyz=1 hold, order(z)=8: graph exceeds 6748 elements (infinite image: no finite subgroup of SO(3) has elements of orders 3 and 8) => restriction to pi1(Sigma) has infinite image
+[I] k=5 (z rotation angle 2pi*5/8), y-axis tilt 2.028495 rad, relations x^2=y^3=z^8=1, xyz=1 hold, order(z)=8: graph exceeds 6748 elements (infinite image: no finite subgroup of SO(3) has elements of orders 3 and 8) => restriction to pi1(Sigma) has infinite image
+[I] k=6 (z rotation angle 2pi*6/8), y-axis tilt 0.615480 rad, relations x^2=y^3=z^8=1, xyz=1 hold, order(z)=4: graph of Delta+ in Aut+ x SO(3) finite, size 48 => |image of pi1(Sigma)| = 1 (factors through Aut+: trivial on pi1, not a new point)
+[I] k=6 (z rotation angle 2pi*6/8), y-axis tilt 2.526113 rad, relations x^2=y^3=z^8=1, xyz=1 hold, order(z)=4: graph of Delta+ in Aut+ x SO(3) finite, size 48 => |image of pi1(Sigma)| = 1 (factors through Aut+: trivial on pi1, not a new point)
+[I] tilt pairs (th, pi-th) are conjugate by the pi-rotation about the x-axis; k=5 is k=3 with z^-1 (same SO(3) class). k=1,7: no root (angles pi/2+pi/3+pi/8 < pi: hyperbolic). Hence Hom(Delta+(2,3,8),SO(3)) with all generators nontrivial = {factor-through-Aut+ reps (k=2,4,6)} + ONE infinite-image class (k=3).
+[I] the k=3 class restricted to pi1(Sigma) is an Aut+-invariant (up to SO(3) gauge) flat SO(3)_R connection with infinite image; irreducible since a finite-index subgroup of the dense image cannot preserve a line (md)
+[I] Weil count for Delta+(2,3,8) with three nontrivial rotations, H^0 = 0 (irreducible), H^2 = 0 (orbifold sphere, Poincare dual to H^0): dim H^1 = 3*(3-1) - 6 + 0 + 0 = 0 => isolated (no invariant moduli); and H^1(pi1;ad)^Aut+ = H^1(Delta+;ad) (transfer, char 0)
+[done] runtime 11.0 s

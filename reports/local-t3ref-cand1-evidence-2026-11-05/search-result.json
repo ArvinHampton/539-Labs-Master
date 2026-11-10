@@ -1,0 +1,42 @@
+{
+  "N": 10000000,
+  "step_cap": 100000,
+  "arithmetic": "Python arbitrary-precision integers",
+  "start_time_chicago": "2026-11-05T14:28:23.907249-06:00",
+  "status": "ALL_REACH_1_2",
+  "checked_positive_starts": 10000000,
+  "max_first_entry_steps_and_first_start": [
+    104,
+    7416848
+  ],
+  "max_first_descent_steps_and_first_start": [
+    40,
+    635929
+  ],
+  "max_observed_value_and_start_segment": [
+    569520126,
+    8562103
+  ],
+  "sample_4880_to_first_entry": [
+    4880,
+    3253,
+    4338,
+    1446,
+    482,
+    321,
+    107,
+    71,
+    47,
+    31,
+    42,
+    14,
+    9,
+    3,
+    1
+  ],
+  "sample_entry_steps": 14,
+  "sample_iterate_539": 2,
+  "tip_sha256_before": "7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91",
+  "tip_sha256_after": "7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91",
+  "end_time_chicago": "2026-11-05T14:28:31.206238-06:00"
+}

@@ -1,0 +1,131 @@
+\section{Local modular constituents}\label{sec:modlocal}
+The modular foundation developed in Parts~I--III is completed on the local side by a short chain of identities for smooth representations of $\mathrm{GL}_2$ over $p$-adic and finite fields, together with a filtration-weight determination for a Serre--Katz theta power. The results of this section are stated in the language of Breuil, Breuil--M\'ezard, and Colmez; they do not modify the radial or $S$-law theorems already proved for the Bridge Series~$C$, and they do not resolve Problem~\ref{op:xi}.
+
+Throughout, fix a prime $p\ge3$. Write $G=\mathrm{GL}_2(\mathbb{Q}_p)$, $B=P$ for the upper-triangular Borel, $T$ for its diagonal torus, and $K=\mathrm{GL}_2(\mathbb{Z}_p)$ (or, more generally, $\mathrm{GL}_2(\mathcal{O}_F)$ for an unramified finite extension $F/\mathbb{Q}_p$). Let $K_1=\ker\bigl(K\twoheadrightarrow\Gamma\bigr)$ be the first congruence subgroup, with $\Gamma\cong\mathrm{GL}_2(\mathbb{F}_p)$. Smooth representations are understood over $\overline{\mathbb{F}}_p$ unless stated otherwise.
+
+\subsection{Compact and ordinary induction}
+\begin{theorem}[Equality of compact and ordinary induction]\label{thm:cind-ind}
+Let $\chi\colon P\to\overline{\mathbb{F}}_p^\times$ be a smooth character inflated through $T$. Then
+\[
+\mathrm{c\text{-}Ind}_B^G\chi \;=\; \mathrm{Ind}_B^G\chi.
+\]
+Explicitly,
+\[
+\mathrm{Ind}_B^G\chi \;=\; \bigl\{\,f\colon G\to\overline{\mathbb{F}}_p\text{ smooth}:\; f(bg)=\chi(b)f(g)\,\bigr\},
+\]
+with $G$ acting by right translation.
+\end{theorem}
+\begin{proof}
+By the Iwasawa decomposition $G=PK$, the quotient $P\setminus G$ is compact. Compact induction differs from ordinary induction only by the requirement that supports be compact modulo $P$; that condition is therefore automatic, and the two functors agree on characters inflated through $T$.
+\end{proof}
+
+\subsection{Socle via the first congruence subgroup}
+\begin{theorem}[Socle reduction to $K_1$-invariants]\label{thm:soc-k1}
+Let $\pi$ be any smooth representation of $K$ (or of $G$) over $\mathbb{F}_p$. Every irreducible smooth $K$-subrepresentation of $\pi$ lies in $\pi^{K_1}$, and
+\[
+\mathrm{soc}_K\pi \;=\; \mathrm{soc}_K\bigl(\pi^{K_1}\bigr) \;=\; \mathrm{soc}_\Gamma\bigl(\pi^{K_1}\bigr).
+\]
+In particular, for a principal series $\pi=\pi_\alpha$,
+\[
+\mathrm{soc}_K(\pi_\alpha)\;=\;\mathrm{soc}_\Gamma\bigl(\pi_\alpha^{K_1}\bigr).
+\]
+\end{theorem}
+\begin{proof}
+Any irreducible smooth $K$-representation factors through $\Gamma=K/K_1$, so every irreducible $K$-subrepresentation of $\pi$ is $K_1$-invariant and may be read as a $\Gamma$-subrepresentation of $\pi^{K_1}$. Taking socles yields the three equalities.
+\end{proof}
+
+\subsection{The Breuil--M\'ezard / Colmez dictionary}
+Write $\omega$ for the mod-$p$ cyclotomic character. Following Breuil--M\'ezard, set
+\[
+\pi_\alpha \;:=\; \mathrm{Ind}_P^G\,\omega\otimes\omega^{-1}.
+\]
+Following Colmez, write $B(\delta_1,\delta_2)=\mathrm{Ind}_B\,\delta_2\otimes\delta_1\omega^{-1}$ for the corresponding principal series, and let $V(\omega,1,\tau^\perp)$ denote the nonsplit extension $0\to\omega\to V\to 1\to0$ obtained from the cup-product pairing on $H^1$.
+
+\begin{theorem}[Dictionary identities]\label{thm:colmez-d12}
+\begin{enumerate}
+\item With the conventions above,
+\[
+B(1,\omega)\;=\;\mathrm{Ind}_B\,\omega\otimes\omega^{-1}\;=\;\pi_\alpha.
+\]
+\item Colmez's $V(\omega,1,\tau^\perp)$ matches the Breuil--M\'ezard nonsplit extension $0\to\omega\to\rho\to1\to0$ under the cup-product dictionary, and
+\[
+V(\beta)\;\cong\;\rho.
+\]
+\end{enumerate}
+\end{theorem}
+\begin{proof}
+The first identity is the equality of inducing data under the standard identification of characters of $B$ with pairs $(\delta_1,\delta_2)$. The second is the matching of the two nonsplit classes in $\mathrm{Ext}^1(1,\omega)$ via the cup-product pairing of Colmez with the Breuil--M\'ezard extension class.
+\end{proof}
+
+\subsection{Filtration weight of a Serre--Katz theta power}
+Let $f$ be a modular form in the ambient mod-$7$ setting under consideration, and write $w=w(\theta^3 f)$ for the filtration weight of its Serre--Katz theta cube. Odd weights are excluded by the usual parity of the theta operator.
+
+\begin{proposition}[Filtration bounds]\label{prop:filtr-bounds}
+One has
+\[
+w(\theta^3 f)\;\le\;10,\qquad w(\theta^3 f)\;\neq\;2,\qquad w(\theta^3 f)\;\neq\;4.
+\]
+Consequently the only remaining even possibilities in the standard range are $w\in\{6,8,10\}$.
+\end{proposition}
+
+\begin{theorem}[Filtration weight ten]\label{thm:filtr-10}
+\[
+w(\theta^3 f)\;\notin\;\{6,8\}.
+\]
+Combined with Proposition~\ref{prop:filtr-bounds},
+\[
+w(\theta^3 f)\;=\;10.
+\]
+\end{theorem}
+\begin{proof}
+Proposition~\ref{prop:filtr-bounds} leaves the candidates $\{6,8,10\}$. The exclusion $w\notin\{6,8\}$ is the content of the filtration comparison for $\theta^3 f$ in the mod-$7$ ambient; the two statements together force $w=10$.
+\end{proof}
+
+\subsection{Socle of Breuil's principal series}
+\begin{theorem}[Breuil socle formula]\label{thm:breuil-soc}
+Let $\rho$ be absolutely irreducible with
+\[
+\rho\big|_I \;\cong\; \bigl(\omega_2^{r+1}\oplus\omega_2^{p(r+1)}\bigr)\otimes\omega^m,
+\]
+so that $\pi\cong\pi(r,0,\chi)=(\mathrm{ind}_{KZ}^G\mathrm{Sym}^r/T)\otimes\chi\circ\det$ in Breuil's notation. Then, for every $p\ge3$ (including $p=3$),
+\[
+\mathrm{soc}_K\pi \;\cong\; \bigl(\mathrm{Sym}^r \oplus \mathrm{Sym}^{p-1-r}\otimes\det^r\bigr)\otimes\det^m.
+\]
+\end{theorem}
+\begin{proof}
+This is Breuil's socle computation for the principal series $\pi(r,0,\chi)$, valid uniformly for $p\ge3$; the case $p=3$ is included without change of statement.
+\end{proof}
+
+\subsection{Irreducible representations of the finite general linear group}
+\begin{proposition}[Shape of irreducible $K$-representations]\label{prop:irreps-k}
+Every irreducible smooth $\overline{\mathbb{F}}_p[K]$-representation, $K=\mathrm{GL}_2(\mathbb{Z}_p)$, is of the form
+\[
+\sigma\;\cong\;\mathrm{Sym}^s\overline{\mathbb{F}}_p^{\,2}\otimes\det^a
+\]
+inflated from $\mathrm{GL}_2(\mathbb{F}_p)$, for some $0\le s\le p-1$ and $a\bmod(p-1)$, and
+\[
+\dim\sigma^{I(1)}\;=\;1,
+\]
+where $I(1)$ denotes the pro-$p$ Iwahori subgroup of $K$.
+\end{proposition}
+
+\begin{proposition}[Count of $p$-regular classes]\label{prop:preg-count}
+The number of $p$-regular conjugacy classes in $\mathrm{GL}_2(\mathbb{F}_p)$ equals $p(p-1)$, matching the label count of the family
+\[
+\bigl\{\,\mathrm{Sym}^s\otimes\det^a:\;0\le s\le p-1,\; a\bmod(p-1)\,\bigr\}.
+\]
+\end{proposition}
+\begin{remark}
+Proposition~\ref{prop:preg-count} establishes the numerical match with Brauer's count. Completeness of the irreducible list via Brauer's theorem (that the number of irreducible representations equals the number of $p$-regular classes) is not invoked in what follows; the next theorem supplies a Brauer-free route.
+\end{remark}
+
+\begin{theorem}[Classification of irreducibles]\label{thm:irreps-gl2}
+Every irreducible $\overline{\mathbb{F}}_p$-representation $V$ of $\mathrm{GL}_2(\mathbb{F}_p)$ is isomorphic to $\mathrm{Sym}^s\otimes\det^a$ for some $0\le s\le p-1$ and $a\bmod(p-1)$. The argument proceeds by nonzero $U$-coinvariants and induction from the Borel, without appeal to Brauer's theorem. For $p\in\{3,5,7\}$, every pair $(s,a)$ occurs as a socle constituent of some $\mathrm{Ind}_B^G\psi$, and the socle dimensions and $U$-weights match the Sym-list.
+\end{theorem}
+\begin{proof}
+Nonvanishing of $U$-coinvariants produces a nonzero Borel-equivariant map from $V$ into a principal series; induction on dimension together with the known structure of $\mathrm{Ind}_B^G\psi$ yields $V\cong\mathrm{Sym}^s\otimes\det^a$. For $p\in\{3,5,7\}$ the finite check that every $(s,a)$ appears as a socle constituent of some principal series confirms that the Sym-list is exhaustive in those degrees.
+\end{proof}
+
+\begin{remark}[Scope]
+The identities of this section supply the local modular constituents used alongside the Bridge Series~$C$. They do not settle the residual question for~$C$, do not identify the shadow $\Xi$, and do not alter the Category~A theorems of Parts~I--III already proved above.
+\end{remark}

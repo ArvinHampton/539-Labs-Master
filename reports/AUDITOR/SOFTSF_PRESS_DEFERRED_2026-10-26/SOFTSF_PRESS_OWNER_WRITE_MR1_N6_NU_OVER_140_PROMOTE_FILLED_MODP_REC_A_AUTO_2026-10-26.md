@@ -1,0 +1,5 @@
+# Soft SF PRESS — N6 ν=/140 promote FILLED-MODP Rec A AUTO
+OWNER_WRITE sha256: 10791f24497f65c7c8fb57c3623a2a396ffb9068e41898b27f4c4165f6851b3b
+ASSIGN sha256: 9db9c8e68effa605c2dd57707e531043a403c82fc3a918fc11d236894fbf4fc5
+Absorb FINDINGS_MR1_N6_MODP_Q121_D1_GA1 c2deddc5…. tip Soft SF LOCK 7cddb188… tip_touched NO.
+Order: Soft SF CONFIRM Write-only / no tip fold.

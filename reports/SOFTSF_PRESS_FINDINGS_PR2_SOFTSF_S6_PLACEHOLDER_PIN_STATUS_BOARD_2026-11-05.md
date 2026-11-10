@@ -1,0 +1,3 @@
+# Soft SF PRESS — PR2 §6 placeholder Soft SF pin pack / status board only — 2026-11-05
+FINDINGS FINDINGS_PR2_SOFTSF_S6_PLACEHOLDER_PIN_STATUS_BOARD_2026-11-05.md sha256 d52c9c42ca7638a680c45025fe663c03e2aab8eeedbd74889549d2f2028e7036
+Soft SF OFFER 11 Soft SF RESOLVED: status board only (no table invent). Counts Soft SF: GAP 4 · OUT-OF-LANE 2 · E-UNTESTED noted on CRD/Falsifiable Signatures · NON-APPLICABLE 1. Soft SF KEEP CRD/rotation/BH-core/SNF/Falsifiable Signatures Soft SF GAP until Author Soft SF R5–R7. OFFER 9 lit occurrence Soft SF KEEP PRESENT 0 / ABSENT 3 (≠ Tier E fill). Adjacent Cosmo C14/C16 · C13/C15 · C24/C26/C27 hygiene Soft SF ≠ §6 fill. invent HOLD STANDS. Tip 7cddb188… tip_touched NO. No CERT. Soft SF → Auditor + Professor Proof + Physicist.

@@ -1,0 +1,12 @@
+# AUDITOR — Canonical index entry (additive), 2026-11-10 ~11:08 AM CST (America/Chicago)
+
+- Voice call-83d7a0fa ~11:08 AM — reports/OWNER_WRITE_CALL_83d7a0fa_PURSUE_HW_ODD_G4_BRIDGE_C_CLOSING_IMPLICATIONS_2026-11-10_1108.md — sha256 c6375f853020e8e994125e1b42acffe830350db0b116b60f0f5f75abbb5f84ca (MATCH to on-disk file; 2493 B; mtime 11:08 CST). Author: Physicist and Mathematician. Coordinator record of Owner DIRECT from live voice call-83d7a0fa-8869-4dae-8f29-2c69554f7b52.
+- Pursuit directives only. Nothing is adopted from the pasted text (Hořava–Witten fixed plane with odd G₄ parity implications), nor by this index. Standing t4436 unchanged for remaining open paths: the math leads; no unproved option is adopted by fiat. Not a go to edit the tip. No CERT. No Gemini and no external sends. Junction remains UNSOLVED.
+- Assigned pursuits as recorded:
+  1. Non Local Path: verify whether the localized stress-energy of the E₈ instantons makes up the exact geometric delta in M5s + E₈ instantons = 2N at N = 4880, total topological charge 9,760, and isolate the E₈ instanton stress-energy tensor contribution under odd G₄ projection. All prior calculations assuming a pure uncharged M5-brane stack are dead as the working assumption for this pursuit.
+  2. Math Research 2: ensure the 11D curvature check's boundary terms matching onto the HW fixed plane do not trigger an irreversible divergence in Ricci² or Weyl².
+  3. E₈ wall sector is to be pursued as CONDITIONAL, gated entirely by how the instantons backreact across the flow, given the non-supersymmetric face with varying tension-to-charge ratio (1.26–1.33 at the AdS end, 5/3 at the UV end). Pursuit framing only: those figures are not adopted; the wall is not adopted as a proved result; 1a is not adopted as the physical wall; B1-c2′ overall is not adopted as the KK scope.
+  4. Auditor: track the shifted technical debt across all active bots (companion register, same date-stamp).
+- Local Path pursues any Bridge C closing implications in its lane; Professor Proof audits results as they are filed. Neither adopts the pasted text. Relayed by Physicist to Local Path, Non Local Path, Auditor, Math Research 2, and Professor Proof only.
+
+Unchanged: tip /workspace/residual-c-field-WRITTEN_PREMISES_DRAFT.md sha256 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 re-hashed and unchanged after this index; No CERT; no external or Gemini send; nothing adopted.

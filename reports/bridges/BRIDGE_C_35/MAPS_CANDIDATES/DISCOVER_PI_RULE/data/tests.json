@@ -1,0 +1,10 @@
+{
+ "T1_segments": 1,
+ "T2_segments": 539,
+ "T1": "FAIL",
+ "T2": "FAIL",
+ "T3c_max": 269,
+ "T3c_count": 810,
+ "T3c": "PASS",
+ "Pi_max_sha256": "c2c26fdae7b1e1f677799f9a6a210c429ea9c1f4b23f48ae1bbc66aab54f8d87"
+}

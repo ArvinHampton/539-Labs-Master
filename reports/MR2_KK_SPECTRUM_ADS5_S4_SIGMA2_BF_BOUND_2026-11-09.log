@@ -1,0 +1,27 @@
+1. Ric_S4/g = 8*k**2  expect 3/r^2 = 8*k**2 | Ric_ext/g = -4*k**2  expect -4/L5^2 = -4*k**2  Sigma K=-1/rho^2 = -4*k**2
+   KR(13) ratios L5/rho, L5/r: 2 2*sqrt(6)/3 | (D): 2 2*sqrt(6)/3
+   L7 = sqrt(6)/(2*k)  2r = sqrt(6)/(2*k)  (AdS7xS4 relation L7=2R holds: True )  (L5/L7)^2 = 2/3
+2. 7D masses M^2 L7^2 (DeWolfe 4.7); 7D BF = -9; 5D BF in L7 units = -4*(L7/L5)^2 = -6
+   S4 level k=0 [dim 1]: minus None  plus 72
+   S4 level k=1 [dim 5]: minus None  plus 112
+   S4 level k=2 [dim 14]: minus -8  plus 160
+   S4 level k=3 [dim 30]: minus 0  plus 216
+   S4 level k=4 [dim 55]: minus 16  plus 280
+   S4 level k=5 [dim 91]: minus 40  plus 352
+3. k=2 [14] mode: m^2 L5^2 = 4*lambda_hyp - 16/3 ; BF violated iff lambda_hyp < 1/3
+   constant mode (lam=0): m^2L^2 = -16/3 = -5.333333333333333  Delta = 2 +/- sqrt(4+m^2L^2) = 2 + 2*sqrt(3)*I/3
+   lam1=KMP upper bound 3.8388976481: m^2L^2 = 10.0222572591
+   lam1=Bolza 3.8388872588: m^2L^2 = 10.0222157019
+   lam1=threshold 0.333333333333: m^2L^2 = -4.0
+   lam1=Otal-Rosas 1/4 0.25: m^2L^2 = -4.33333333333
+   other levels: k=3 minus (M2L7^2=0) -> m^2L^2 = 4 lam >= 0; plus branch k=0 ->  48 (PP C3 breathing 48)
+4. Sigma breathing: V(0)= -12*k**2  V'(0)= 0  m^2L^2=V''(0)/k^2 = 8 (PP C3: 8)
+   Teichmueller TT (holomorphic quadratic differentials, 6g-6 real): 5D m^2 = 0 (Einstein-deformation kernel); graviton tower m^2L^2 = 4 lam_hyp
+5. probe M5: q0/(4k) = sqrt(6)/2 = 1.224744871391589 ; AdS7 calib q/(6k) with q=6k -> 1 ; general AdS_{d+1}xH^{6-d}: sqrt(6/d): [sqrt(3), sqrt(2), sqrt(6)/2, sqrt(30)/5, 1]
+6. k = 0.0246505002 lp^-1; L5 = 40.567128; L7 = 49.684382; r = 24.842191 = (piN)^(1/3)=24.842191; rho = 20.283564
+   K_Sigma = -4k^2 = -0.00243058863 lp^-2; Phi=216(piN)^(-2/3)=0.350004763; -Phi/144 = -0.00243058863
+   Area(Sigma_2) = pi(g-1)/k^2 = 5170.09355 lp^2; lam1 physical range (0, 0.009330781] lp^-2; BF-unstable iff lam_phys < 4k^2/3 = 0.00081019621 lp^-2
+   (lp/r)^6 = 4.25462e-9  (lp/L5)^6 = 2.24365e-10
+   calib L7^5/G7 = 62799827174.3 vs 16N^3/(3pi^2) = 62799827174.3
+   a_D = c_D (2-derivative) = 2.811512763e+10; (2/3)^(7/2)(g-1)N^3 = 2.811512763e+10 = 8sqrt6/81 = 0.2419249129
+   comparison only (not (D)): MN N=2 (GM 2.5, 2.1) a=3.873809006e+10 c=3.873808985e+10; MN N=1 large-N 9/32(g-1)N^3 = 3.2685264e+10

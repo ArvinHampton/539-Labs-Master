@@ -1,0 +1,2 @@
+# PRESS (for PP) — Gap 2 ζ: Dedekind-sum closed form, s∈{7,8,11} — 2026-10-28
+Status PARTIAL. |C|=D^{-1/2} now proved from Bringmann–Ono Thm 2.1 (elementary identity rw+y=(cτ+d)/D). Phase given in closed form C=σ_r·D^{-1/2}·e(−(p+y)/(24r)+s(y,r)/2−1/8−B/(24D)) with Dedekind sum s(y,r); matches 17/17 table entries exactly — numerical, not yet proved (sign σ_r empirical). Zwegers 2001 primary, error bounds, β/A promotion: still ABSENT/invent-pending. tip_touched NO; Kerr BLOCKED.

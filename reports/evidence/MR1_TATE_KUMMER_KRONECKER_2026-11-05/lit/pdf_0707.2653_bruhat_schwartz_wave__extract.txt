@@ -1,0 +1,227 @@
+A Non-Archimedean Wave Equation
+arXiv:0707.2653v2 [math.NT] 6 Dec 2007
+
+Anatoly N. Kochubei∗
+Institute of Mathematics,
+National Academy of Sciences of Ukraine,
+Tereshchenkivska 3, Kiev, 01601 Ukraine
+E-mail: kochubei@i.com.ua
+
+Abstract
+Let K be a non-Archimedean local field with the normalized absolute value | · |. It
+is shown that a “plane wave” f (t + ω1 x1 + · · · + ωn xn ), where f is a Bruhat-Schwartz
+complex-valued test function on K, (t, x1 , . . . , xn ) ∈ K n+1 , max |ωj | = 1, satisfies, for
+1≤j≤n
+
+any f , a certain homogeneous pseudo-differential equation, an analog of the classical wave
+equation. A theory of the Cauchy problem for this equation is developed.
+
+Key words: local field, plane wave, pseudo-differential equation, Cauchy problem
+MSC 2000. Primary: 11S80; 35S10. Secondary: 35L99.
+
+1
+
+INTRODUCTION
+
+Pseudo-differential equations for complex-valued functions defined on non-Archimedean local
+fields, in particular the field Qp of p-adic numbers, are becoming increasingly important, both in
+view of rich mathematical structures involved in their studies and due to emerging applications;
+see the surveys in [1, 7, 8, 9, 13, 14, 16].
+In most cases, pseudo-differential equations over Qnp with the symbols |P (ξ1, . . . , ξn )|αp , α >
+0, where P is a polynomial, were studied. The class of elliptic operators correspond to such
+polynomials P that P (ξ1 , . . . , ξn ) 6= 0 for (ξ1 , . . . , ξn ) 6= 0. An equation of the Schrödinger type
+is obtained if there is a distinguished variable, say ξ1 , and P (ξ1 , . . . , ξn ) = ξ1 − r(ξ2 , . . . , ξn )
+where r is a p-adic quadratic form. It has been understood also that analogs of parabolic
+equations are evolution equations with a real time variable and p-adic spatial variables (this is
+connected with probabilistic applications; see [7] and references therein). It seemed natural to
+interpret the case where P (ξ1, . . . , ξn ) = ξ12 − r(ξ2 , . . . , ξn ) with an anisotropic quadratic form
+Partially supported by DFG under Grant 436 UKR 113/87/01, and by the Ukrainian Foundation for
+Fundamental Research, Grant 14.1/003.
+∗
+
+1
+
+r, as the case of hyperbolic equations. However the results available for this case (see [7]) are
+quite scant. In particular, no well-posed problems for such equations have been identified.
+In this paper we propose an alternative approach. Instead of a formal resemblance in the
+definition of an equation, we proceed from its properties. Let us call a function u(t, x1 , . . . , xn ) :
+Qn+1
+→ C a plane wave, if
+p
+u(t, x1 , . . . , xn ) = f (t + ω1 x1 + · · · + ωn xn )
+
+(1)
+
+where f belongs to the Bruhat-Schwartz space D(Qp ) of test functions, ω1 , . . . , ωn ∈ Qp ,
+max |ωj |p = 1 (in fact, we will consider not only Qp but arbitrary non-Archimedean local
+1≤j≤n
+
+fields; see below).
+We will show that every function (1) is a solution of the equation
+Dtα u − Dxα,n u = 0
+
+(2)
+
+where D α is Vladimirov’s fractional differentiation operator, that is a pseudo-differential operator with the symbol |ξ|αp, while D α,n is a pseudo-differential operator of n variables with the
+symbol max |ξj |αp , α > 0 is an arbitrary number.
+1≤j≤n
+
+The equation (2) with n = 1 was mentioned in [15] as an example of the following pathology.
+Consider the equation for a related fundamental solution E:
+Dtα E − Dxα,n E = δ
+
+(3)
+
+where E belongs to some class of distributions, on which the operators are defined, with the
+usual relations between them and the Fourier
+ transform. Then,
+ performing the Fourier transe ξ1 , . . . , ξn ) = 1 where the
+form we obtain the contradictory identity |τ |α − max |ξj |α E(τ,
+p
+
+1≤j≤n
+
+p
+
+left-hand side vanishes on the open set
+
+
+n+1
+0 6= (τ, ξ1 , . . . , ξn ) ∈ Qp : |τ |p = max |ξj |p .
+1≤j≤n
+
+Therefore the fundamental solution cannot exist, and one cannot expect any reasonable
+behavior of an inhomogeneous equation associated with (2). On the other hand, the set of
+solutions of the one-dimensional equation Dtα u = λu is infinite-dimensional (see [7, 14]). Thus,
+at the first sight, the equation (2) does not look as an evolution equation with the “time”
+variable t.
+Nevertheless, in this paper we prove the existence and uniqueness of solutions for some
+analogs of the Cauchy problem for the equation (2) in the class of radial functions, that is those
+depending (in the variable t) only on |t|p . On this class, the operator D α becomes a counterpart
+of the Caputo-Dzhrbashyan regularized fractional derivative appearing in fractional evolution
+equations of real analysis (see [4]). Moreover, the above connection with plane waves, together
+with the inversion formula for the Radon transform, available in the non-Archimedean case too
+[3], leads to a formula for solutions and an analog of the Huygens principle.
+
+2
+
+2
+
+Preliminaries
+
+2.1. Local fields. Let K be a non-Archimedean local field, that is a non-discrete totally
+disconnected locally compact topological field. It is well known that K is isomorphic either to
+a finite extension of the field Qp of p-adic numbers (if K has characteristic 0), or to the field
+of formal Laurent series with coefficients from a finite field Fq , if K has characteristic p 6= 0; in
+this case q = pν , ν ∈ N. For a summary of main notions and results regarding local fields see,
+for example, [7].
+Any local field is endowed with an absolute value | · |, such that |x| = 0 if and only if x = 0,
+|xy| = |x| · |y|, |x + y| ≤ max(|x|, |y|). Denote O = {x ∈ K : |x| ≤ 1}, P = {x ∈ K : |x| < 1},
+U = O \ P . O is a subring of K called the ring of integers, P is an ideal in O called the
+prime ideal; the multiplicative group U is called the group of units. The ideal P contains an
+element β, such that P = βO (a prime element). The quotient ring O/P is actually a finite
+field; denote by q its cardinality. We will always assume that the absolute value is normalized,
+that is |β| = q −1 . The normalized absolute value | · | takes the values q N , N ∈ Z.
+If K = Qp (p is a prime number), that is a completion of the field Q of rational numbers
+with respect to the absolute value
+|x|p = p−ν
+
+for x = pν
+
+m
+,
+n
+
+where ν, m, n ∈ Z, and m, n are prime to p, then β = p (p is seen as an element of Qp ) and
+q = p (as a natural number).
+Returning to a general local field K, denote by S ⊂ O a complete system of representatives
+of the residue classes from O/P . Then any nonzero element x ∈ K admits the canonical
+representation in the form of the convergent series
+
+x = β −n x0 + x1 β + x2 β 2 + · · ·
+
+where n ∈ Z, |x| = q n , xj ∈ S, x0 ∈
+/ P . For K = Qp , one may take S = {0, 1, . . . , p − 1}.
+The additive group of any local field is self-dual, that is if χ is any non-constant complexvalued additive character of K, then any other additive character can be written as χa (x) =
+χ(ax), x ∈ K, for some a ∈ K. See [7] for an explicit description of the character χ used
+in harmonic analysis on local fields (“the canonical additive character”). In particular, it is
+assumed that χ is a rank zero character, that is χ(x) ≡ 1 for x ∈ O, while there exists such an
+element x0 ∈ K that |x0 | = q and χ(x0 ) 6= 1.
+The above duality is used in the definition of the Fourier transform over K. Denoting by
+dx the Haar measure on the additive group of K (normalized in such a way that the measure
+of O equals 1) we write
+Z
+e
+f (ξ) = χ(xξ)f (x) dx, ξ ∈ K,
+K
+
+where f is a complex-valued function from L1 (K). As usual, the Fourier transform F can be
+extended from L1 (K) ∩ L2 (K) to a unitary operator on L2 (K). If Ff = fe ∈ L1 (K), we have
+the inversion formula
+Z
+f (x) = χ(−xξ)fe(ξ) dξ.
+K
+
+3
+
+Similarly, if f : K n → C, we write
+Z
+fe(ξ1 , . . . , ξn ) =
+χ(x1 ξ1 + · · · + xn ξn )f (x1 , . . . , xn ) dx1 . . . dxn .
+Kn
+
+The inversion formula is then
+
+f (x1 , . . . , xn ) =
+
+Z
+
+Kn
+
+χ(−x1 ξ1 − · · · − xn ξn )fe(ξ1 , . . . , ξn ) dξ1 . . . dξn .
+
+2.2. Spaces of test functions and distributions. A function f : K → C is called
+locally constant, if there exists such an integer l that for any x ∈ K
+f (x + x′ ) = f (x),
+
+if |x′ | ≤ q −l .
+
+The smallest number l with this property is called the exponent of local constancy of the
+function f .
+Denote by D(K) the set of all locally constant functions with compact supports. D(K) is
+a vector space over C. In order to furnish it with a topology, consider a subspace DlN ⊂ D(K)
+of functions with supports in the ball
+
+BN = x ∈ K : |x| ≤ q N , n ∈ Z,
+
+and the exponents of local constancy ≤ l.
+The space DlN is finite-dimensional; thus it has a natural topology induced from C. Then
+we set
+DN = lim DlN ,
+−→
+l→∞
+
+and define the topology in D(K) as the inductive limit topology, that is
+D(K) = lim DN .
+−→
+N →∞
+
+The strong conjugate space D′ (K) is called the space of Bruhat-Schwartz distributions.
+The operation of the Fourier transform preserves the space D(K) or D(K n ) (this property
+contrasts the Archimedean case). Therefore the Fourier transform of a distribution defined, by
+duality, just as for distributions from S′ (Rn ), acts continuously on D′ (K), resp. D′ (K n ). As in
+the case of Rn , there exists a well-developed theory of distributions over local fields including
+such topics as convolution, direct product, homogeneous distributions etc. Note in particular
+that a function |x|α−1 , ℜ α > 0, admits an analytic continuation in α to a meromorphic
+distribution
+Z
+α−1
+|x| , ϕ = |x|α−1 [ϕ(x) − ϕ(0)] dx, ϕ ∈ D(K),
+(4)
+K
+
+ℜα > 0 (see Sect. VIII in [14] for K = Qp . The general case is completely similar). See
+[2, 5, 7, 14] for further details.
+4
+
+

@@ -1,0 +1,6 @@
+v17 DRAFT QA-fix recompile — 2026-11-05 CST
+PDF: /workspace/quantum-comp/reports/papers/RTA_FOUNDATION_BOUND_v17_DRAFT_2026-11-05_2037CST/RTA_FOUNDATION_BOUND_v17_DRAFT.pdf
+Pages: 156
+Additive local env census (ledger+boundary+appE): see python above
+New mathematical theorems: 3 (bare/M36/M48)
+Fixes: C3 absolute values; F[G]; irrationality wording; |W| single-coeff; capacity remark+catB; ledger unnumbered; orbit 2-col table; lem:parity renamed in draft copy

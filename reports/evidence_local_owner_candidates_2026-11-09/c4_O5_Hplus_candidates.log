@@ -1,0 +1,11 @@
+Dirac Clifford err 0.0  all gamma imaginary: False
+Majorana Clifford err 4.0  all gamma imaginary: False
+Dirac m=0.0: FW unitary+diagonalising err 1.33e-15;  ||A H A^-1 + H|| max 6.12e+00;  gamma0 gamma0* = +1
+Dirac m=1.0: FW unitary+diagonalising err 1.78e-15;  ||A H A^-1 + H|| max 5.99e+00;  gamma0 gamma0* = +1
+Majorana m=0.0: FW unitary+diagonalising err 2.61e+00;  ||A H A^-1 + H|| max 5.24e+00;  gamma0 gamma0* = -1
+Majorana m=1.0: FW unitary+diagonalising err 3.66e+00;  ||A H A^-1 + H|| max 7.77e+00;  gamma0 gamma0* = -1
+C2 internal C^35: (A x 1)^2 = g0 g0* x 1 err 0.0
+d=1: (-1)^d = -1  => V conj(V) = -1 impossible (|det V|^2 >= 0)
+d=3: (-1)^d = -1  => V conj(V) = -1 impossible (|det V|^2 >= 0)
+d=35: (-1)^d = -1  => V conj(V) = -1 impossible (|det V|^2 >= 0)
+eigenvalues of H(p) (Majorana, m=1, random p): [-1.763859 -1.763859  1.763859  1.763859]

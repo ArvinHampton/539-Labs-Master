@@ -1,0 +1,140 @@
+599:                                                  P        k(k−1)/2 z k /(p; p) with p = q s and z = q s(n+1) gives
+600: Proof. Euler’s identity (−z; p)∞ =                  k≥0 p                     k
+601:                                                         P
+602: (−q s ; q s )∞ /(−q s ; q s )n = (−q s(n+1) ; q s )∞ = k≥0 q sk(k−1)/2+s(n+1)k /(q s ; q s )k , and n2 +sk(k −1)/2+
+603:                                                      2
+604: s(n + 1)k = Qs (n, k). Multiplying by q n and summing over n gives the first identity; both double
+605: sums converge in Z[[q]] because Qs (n, k) ≥ n2 + 2s k(k + 1). Since 1/(q s ; q s )k − 1 has non-negative
+606:                                           P
+607: coeﬀicients, so does Πs − Psorth = n,k q Qs (n,k) (1/(q s ; q s )k − 1); the term (n, k) = (0, 1) contributes
+608: q s · q s with coeﬀicient 1.
+609: 
+610:      Throughout, the Bridge Series is built from Psorth only. Part II uses Psorth for P7orth when s = 7
+
+6383:     Congruence theorem for Weil rep-      Theorems 19.3, 19.5, 20.1(iii); Proposition 19.4(iii)
+6384:     resentations [16]
+6385:     Nobs–Wolfart / Cliff–McNeilly–        (C3) of Theorem 20.11 for primes not covered by Proposi-
+6386:     Szechtman / Scheithauer, decom-       tions 20.14, 20.15
+6387:     position of Weil representations of
+6388:     Z/p2
+
+6610: cannot increase. The 216 × 105 value matrix has rank 36 modulo each of p = 17 657 640 001,
+6611: 21 189 168 001, 35 315 280 001, 42 378 336 001 (A51_bridgeC_exact/rank216.py). So the rank in
+6612: characteristic 0 is at least 36.
+6613: 
+6614: Proposition 33.7 (Exact SL2 -relations and irreducibility; computer-assisted). Let MS , MT be the
+6615: matrices of S and T on V35 in the basis of orbit representatives.
+6616:                                                                 √        P             k
+6617:  (i) MS4 = I and (MS MT )3 = MS2 exactly over Q(ζ9800 ), with 35 = −i k mod 35 35   k
+6618:                                                                                        ζ35 .
+6619: 
+6620:  (ii) dim EndSL2 (Z) (V35 ) = 1, and V35 is isomorphic to the 36-dimensional summand E36 of the
+6621:       decomposition E36 ⊕ C6 of the 42-dimensional lift representation of Part II at s = 7; E36 and
+6622:       C6 are irreducible.
+6623: In particular every non-zero vector of V35 generates V35 under S and T .
+6624: Proof. (i) Exact reduction modulo the cyclotomic polynomial Φ9800 of all 1296 entries (A51_brid
+6625: geC_exact/sl2_exact.py). (ii) The intertwining equations were solved over Fp at two primes;
+6626: a dimension over Fp bounds the dimension in characteristic 0 from above, and the identity gives
+6627: dim End ≥ 1. An explicit isomorphism X : V35 → E36 was verified exactly modulo Φ58800 (X SV =
+6628: SE X in all 1296 entries, X a product of invertible matrices; A35_lawspace_exact/exact_intertw
+6629: iner.py). The lift representation is unitary, hence semisimple, and its commutant has dimension
+6630: 2 (exact upper bound, A32_35_to_rho7/exact_hom.py); with two non-zero invariant summands
+6631: E36 , C6 this forces both to be irreducible and non-isomorphic. The final statement holds for any
+6632: irreducible representation.
+6633: 
+6634: 
+6635: 34 The Bridge Series and the normalized Bridge Series at leading
+6636:    order
+6637: 34.1   Companion series
+6638: Definition 34.1. Let K+ = {(n, k) ∈ R2 : n ≥ 0, n + 21k ≥ 0} and K− = −K+ . For v ∈ Z2 let
+6639: wt(v) = 1[v1 ≥ 0, v2 ≥ 0] − w(v). For each of the 105 pairs (α, β) of Definition 33.2 (α ∈ {a + µ, µ},
+6640: β ∈ {0, a}, excluding the K1 pairs) the companion series is
+6641:                                     X                                     
+6642:                         Sα,β (τ ) =    wt(v) e B(α + v, β) e τ Q(α + v) .
+6643:                                    v∈Z2
+6644: 
+6645:    Since Q(a + v) = Q7 (v) − 20
+6646:                               7
+6647:                                 , Sa,0 = q −7/20 (P7orth − H7 ) = q −7/20 C: the normalized Bridge
+
+8232: Remark 40.11 (Scope and count). The seven Category A results of this section are Theorems 40.1,
+8233: 40.2, 40.3, 40.5, 40.6, 40.10 and Proposition 40.7, with the Category A bounds of Proposition 40.4
+8234: absorbed into Theorem 40.5 for the theorem count. Proposition 40.8 remains outside Category A
+8235: as a completeness claim. These identities do not settle the residual question for C and do not
+8236: identify the shadow Ξ.
+8237: 
+8238: 
+8239: 41 Local cite-lifts and residual packaging advancements
+8240: This section records three Category A cite-lifts from the residual path-problem (RPP) group-ring
+8241: calculus—named Local cite-lifts F1–F3 to distinguish them from the unrelated E8 filter families F1–
+8242: F3 of Section 28—together with the November 2026 packaging advancements that fix the ambient
+8243: Hilbert newspace, the thin form complex, and the static cell budget. The Local cite-lifts are
+8244: independent of the local modular constituents of Section 40. Nothing in this section settles the
+8245: residual question for the Bridge Series C, identifies the shadow Ξ, or produces an explicit formula
+8246: for a boundary vector of C inside V35 .
+8247:     Throughout, fix an integer M ≥ 2 and write G = Z/M Z. Let Z[G]      P be the group ring, and let
+8248: ρ : Z[G] → MatM (Z) be the regular representation, so that for h = g ag [g] the matrix ρ(h) is the
+8249:                                        P                                           Q
+8250: circulant with eigenvalues ĥ(k) = g ag ω kg , ω = e2πi/M , and det ρ(h) = k ĥ(k). Given a step
+8251: alphabet C ⊂ Z, weights w = (w1 , . . . , wn ) and integer multiplicities ai,c , set
+8252:                      X
+8253:                hi :=    ai,c [c · wi ] ∈ Z[G],    T := hn · · · h1 ,  |T | := |hn | · · · |h1 |,
+8254:                      c∈C
+8255:              P
+8256: where |h| = g |ag |[g]. For a source residue rs and a target residue rt , write W = W (rs → rt ) for
+8257: the signed path weight (ρ(T ))rt ,rs and N = N (rs → rt ) for the unsigned path weight (ρ(|T |))rt ,rs .
+8258: Write k · k1 for the `1 -norm of coeﬀicients and spr for the spectral radius over C.
+8259: 
+8260: 41.1   Local cite-lift F1: weak NP-completeness on an odd-M slice
+8261: Theorem 41.1 (Local cite-lift F1). Consider the residual path problem (RPP) of deciding whether
+8262: there exists a path of signed weight summing to a prescribed target residue modulo M . Restrict to
+8263: the slice in which M is part of the input, C = {0, 1}, every multiplicity equals 1, and
+8264:                                                            X
+8265:                                                            n
+8266:                                       M = 2k + 1 > Σ :=           wi
+8267:                                                             i=1
+8268: 
+8269: 
+8270:                                                   131
+8271: 
+8272: for some k ≥ 1. Then:
+8273:   (i) for every odd M , one has 1 + ω j 6= 0 for all j, hence det ρ(hi ) 6= 0 for each layer and
+8274:       det ρ(T ) 6= 0;
+8275:  (ii) RPP restricted to this slice is weakly NP-complete (membership via a polynomial certificate;
+8276:       hardness by reduction from Subset Sum through the odd modulus M = 2k + 1 > Σ).
+
+8385:                                                35
+8386: [2, 2] and level (1) for Hilbert modular forms over K. As an LMFDB newspace it is the direct sum
+8387: of the four newforms
+8388:                                      label          dim CM base change
+8389:                                 2.2.140.1-1.1-a      2   yes        yes
+8390:                                 2.2.140.1-1.1-b      2   yes         no                            (41.3)
+8391:                                 2.2.140.1-1.1-c      2   yes        yes
+8392:                                 2.2.140.1-1.1-d      8    no         yes
+8393: of total dimension 2 + 2 + 2 + 8 = 14. The numeral “35” in the subscript names the field K, not
+8394: the dimension. The space includes all four narrow class components (41.2).
+8395: Theorem 41.7 (Dimension and narrow components). One has dim V35    Hilb = 14, with the split (41.3)
+8396: 
+8397: verified against the LMFDB newform pages for 2.2.140.1 at parallel weight [2, 2] and level 1. The
+8398: space contains every narrow class component of Cl+ (K). These forms are Hilbert modular forms
+8399: over K, not Siegel modular forms.
+8400: Proof. The four newform pages of LMFDB for field 2.2.140.1, level 1, weight [2, 2] list dimensions
+8401: 2, 2, 2, 8 with the CM and base-change attributes of (41.3); the sum is 14. The narrow class number
+8402: h+ = 4 is the standard narrow-class computation for discriminant 140, and Definition 41.6 includes
+8403: every component by fiat. Hilbert versus Siegel is the standard dictionary for parallel weight [2, 2]
+8404: over a real quadratic field.
+8405:                                                                                   √
+8406: Status (Category A). Full level-1 parallel-weight [2, 2] cuspidal newspace over Q( 35), dimension
+8407: 14 = 2 + 2 + 2 + 8, all four Cl+ components; Hilbert, not Siegel.
+8408: 
+8409: Remark 41.8 (Notation relative to V35 ). The space V35
+8410:                                                      Hilb of Definition 41.6 is not to be confused
+8411: 
+8412: with the 36-dimensional span V35 of the 35-component law vector of Part III (Definition 33.2). No
+8413: identification between them is claimed.
+8414: 
+8415: 41.6    Classical arithmetic corrections
+8416: Proposition 41.9 (Classical exponents and conductors). The following classical facts are recorded
+8417: for reference; none is promoted as a bound for the Bridge Series C or for the Local cite-lifts.
+8418:   (i) The classical Burgess exponent on character sums is 3/16, not 1/5.
+8419:  (ii) The conductor of the elliptic curve Y 2 = X 3 −35X is 78400, not 560. This curve is a different

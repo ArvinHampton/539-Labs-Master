@@ -1,0 +1,25 @@
+{
+ "E1": true,
+ "E2_multiset_mismatches": 0,
+ "E2": true,
+ "rankPp": 60,
+ "rankPm": 45,
+ "id_Ym_eq_mhalfD": 7.944109290391274e-15,
+ "anti_invariance": 0.0,
+ "RG15": {
+  "abs": 52.03058523763432,
+  "predicted": 52.03,
+  "norm": 744.308278152274,
+  "rel": 0.06990461716588575,
+  "nonvac": 0.802129016683534,
+  "verdict": "FAIL"
+ },
+ "RG16": {
+  "R_total": 54.4056376674763,
+  "R_plus": 15.899421682375081,
+  "R_minus": 52.03058523763432,
+  "share_minus": 0.9145966619228573,
+  "pythagoras_relerr": 2.2756775828587656e-15,
+  "verdict": "PASS"
+ }
+}

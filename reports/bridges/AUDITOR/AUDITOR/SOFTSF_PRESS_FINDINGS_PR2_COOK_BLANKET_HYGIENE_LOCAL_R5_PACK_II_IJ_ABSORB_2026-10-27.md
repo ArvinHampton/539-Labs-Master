@@ -1,0 +1,2 @@
+# Soft SF PRESS — To Auditor — 2026-10-27 11:48 CDT (America/Chicago)
+Write-only Soft SF CONFIRM requested. Subject `/workspace/quantum-comp/reports/FINDINGS_PR2_COOK_BLANKET_HYGIENE_LOCAL_R5_PACK_II_IJ_ABSORB_2026-10-27.md` sha256 `14f16106a093fe951af75e9e80667cfadc4d01db105dd3c422c0b2661e6d3ab4`. Absorbs Local R5 ACCEPT (`72cf765b…` / PRESS `3e2ec0ff…`) + Pack II (`fd7439c6…`) + Pack IJ (`a2d5088f…`). No tip fold. tip `7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91` tip_touched NO. No invent. No RECS.

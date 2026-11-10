@@ -1,0 +1,4 @@
+# SOFTSF PRESS — MR2 DUAL-CONTINUE — GAP-SK-p3-1a (2026-10-27)
+STATUS: GAP-SK-p3-1a CLOSED | NOT OPERATIVE | tip_touched NO | Kerr BLOCKED | REPORTS ONLY
+Step 2 of GAP-SK-p3-1 (irreducible smooth F̄p[GL2(Zp)]-reps = Sym^s⊗det^a, 0≤s≤p−1, with 1-dim I(1)-invariants) is now proved self-contained: K(1) pro-p normal ⇒ factor through GL2(Fp); p(p−1) distinct Sym^s⊗det^a match the p-regular class count; I(1)→U(Fp) and a finite-difference argument shows the U-fixed space of Sym^s is F̄p·x^s for s≤p−1. Machine check p=3,5,7: ALL_OK. Classification verbatim: breuil_GL2Qp_I.txt L389–392; 1309.1658.txt L124–127; breuil_paskunas_supersingular.txt L557–561. Dim-1 invariants: implicit only in lit (BP L546–548), closed by proof.
+Findings: reports/MR2-FINDINGS-DUAL-CONTINUE-gap-sk-p3-1a_2026-10-27.md (see .sha256).

@@ -1,0 +1,5 @@
+# Soft SF PRESS — MR1 Rec A AUTO mesh/W₇
+OWNER_WRITE sha256: 5a766b35a6342ca1c86f74bbd866990d3a98e6902e0aa50fcb0e6015615184ef
+ASSIGN sha256: 0606c31c6de6b388b9648de9a4d1e723a5497670a9fe98ad1059f36a5e62fabb
+Also absorb Soft SF PRESS_MR1_FILLFIRST_DEEPEN_ONMESH_GAPS (FINDINGS dac489f2…). tip Soft SF LOCK 7cddb188… tip_touched NO.
+Order: Soft SF CONFIRM Write-only / no tip fold.

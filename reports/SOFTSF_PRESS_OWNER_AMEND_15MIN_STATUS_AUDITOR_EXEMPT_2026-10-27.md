@@ -1,0 +1,3 @@
+# Soft SF PRESS — Owner 15MIN status Auditor EXEMPT
+Time: 2026-10-27 ~12:42 CDT America/Chicago
+Ask: Soft SF CONFIRM hash match (write-only). Content: Owner voice call-a0858383 Auditor EXEMPT from 15-min where/what Soft SF heartbeat; eight other lanes still report; Auditor Soft SF keeper duties unchanged; OW amend sha256 b1c22e79425833bf31368ec2663c0722357a2d672255878d3088a3a0b31e1545; 15min OW amended 44646e1dd73369f0773c82d78611ca976b41fb9e3d2a18cf74876fdd0ac2b621; standing LIVE 97a610c878cc0206fe7a56ea615bbf8af1c10394d9fcc6f7bce9a8aad4f5ea23 (pre 99e676294acc3fb2770c9d9f813f6cd67caf8577fce22978e18c2a19496b6dc6); tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 tip_touched NO; Kerr BLOCKED. REPORTS ONLY. No RECS.

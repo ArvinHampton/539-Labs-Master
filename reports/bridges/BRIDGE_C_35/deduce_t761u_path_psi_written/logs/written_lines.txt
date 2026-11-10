@@ -1,0 +1,24 @@
+# verbatim Written/ACCEPT lines (extracted Sun Oct 25 12:43:31 CDT 2026)
+b329c67c L21: # Residual Period-Function Candidate for Bridge Series C
+b329c67c L16:    - Residual law for C remains open
+552541cf L46: (with path from 0 to i∞ for the Fricke involution). This structure is recorded and real-analytic off ℚ by construction.
+22959c01(6d0a7777) L57: h_{W_7}(x) = ψ(x)/√i − ∫_0^{i∞} Ξ(w) (w − x)^{−1/2} dw
+1bab65c4 L32: where Ξ_N is the residual truncation of Ξ at residual degree N, the residual path is the residual Fricke-compatible path (residual discrete from residual i∞ to residual x), and residual continuous extension off residual rationals is supplied by the residual incomplete integrals of the residual weight-3/2 Fourier terms.
+t713u PREREG L3/L6/L11/L13:
+
+- t713s4484: ψ ≡ Bridge C ψ := psi-Cocycle ψ (reports/heavy-daily/2026-10-17-psi-Cocycle.md 1be7f7d198ce6c527702d36e84db6722fd9562557e408b6d02d09fa7ffcaeb5a).
+P1 ψ ≡ psi-Cocycle ψ (t713s4484; 1be7f7d1…). x>0: fastkappa.psi (exact Bernoulli sums; 2026-10-17-psi-cocycle/fastkappa.py 70f605a4…). x<0: psi_minus (|x| factor, psi-Cocycle §A4; neg_side2.py), = conj ψ(−x).
+P3 Branch principal (w−x)^{−1/2}, Arg ∈ (−π, π]; on the ray (it)^{−1/2} = t^{−1/2}e^{−iπ/4}. √i = e^{iπ/4} principal.
+t721u PREREG L3-4:
+Authority: t712s4471 (G-A3-only compute); t713s4484 (R-B0 ψ ≡ psi-Cocycle); t713s4497 (defaults; principal branch Arg∈(−π,π]); t720u AUTHOR-ACCEPT R-PKG1 (R-C1 ledger Ξ HOLD lift, R-D3 contour); t721u path P2 i∞→x.
+Knobs: Path P2 i∞→x; branch principal; R-C1 Ξ source = ledger 7dbd63af5afbdf61fc61dc2f85d237bddc97c21605c062a6333ccd3a9f24ff47 (pins/CONSOLIDATED_PIN_LEDGER_2026-10-24_t604u_confirmed.md); R-D3 Im-shifted path w=x+iε+it, tail bound |q|=e^{−2πε} geometric, ε→0 Abel limit with stated bound; R-E2 slash regen from 437d4571… / 3d502756… full precision; R-B0 ψ.
+t718u menu L14-16:
+| R-A2 | Keep path, alt branch Arg∈[0,2π) / (w−x)^{−1/2}=e^{+iπ/4}t^{−1/2} | none Written (branch unspecified everywhere, t712u B-path) | invent-risk / AUTHOR-ACCEPT-needed | Global phase flip on I ⇒ conjugate-type change; |δ| magnitudes O(10) persist; F1 FAIL expected |
+| R-B0 | Keep ψ≡psi-Cocycle (t713s4484) | 1be7f7d1… ACCEPT | ACCEPT-sourced | baseline |
+| R-B1 | ψ≡0 restricted trial (Ξ-integral-only diagnostic) | none (t712u: "ψ≡0 would be invented") | AUTHOR-ACCEPT-needed (diagnostic only, never fill) | |Δδ| ≲ few×4e-2·slash ⇒ F1 unchanged FAIL; useful only to isolate Ξ contribution |
+Auditor t718u L30-31:
+- SF-t718-2 VERIFIED (as stated in menu): Written path conflict b329c67c/552541cf/22959c01 vs 1bab65c4 unresolved; Arvin pick required (R-A1 "Written" valid only with pick).
+- SF-t718-3 VERIFIED (as stated; consistent with t712u B-path): branch unspecified in Written; R-A2 invent-risk.
+t721u RESULTS L9-10:
+Verdict: G-A3 BLOCKED (RG-0, ledger Ξ symbolic) | Bridge PARTIAL | READY NO | residual-C OPEN. Bridge YES / δ≡0 / residual-C newly forced: NO/NO/NO. No order78.
+Unblock options (author decision, not taken): (a) supply Written definitions of χ_even/odd(k), ϑ_even/odd(q;·), n; (b) AUTHOR-ACCEPT an X4 identification ledger-χ/ϑ ≡ outer_*·Θ_{3/2} (then R-D3 run on that Ξ, ≈R-PKG2-like); (c) R-D3+R-E2 on t713u regenerated Ξ 35b186f9… as diagnostic only.

@@ -1,0 +1,3 @@
+# Soft SF PRESS: PR1 Gemini Compendium review — questions / proof requests / lane offers (2026-11-05 ~13:56 CST)
+To: Auditor Write-only + Physicist. Findings sha ed1ea3e2e1730e53e29f4140dd3fb8ca86e4546acd3ad1026a6b34a67a83ee79.
+10 questions (Q1–Q10) · 7 proof requests (P1–P7) · 8 lane offers (O1–O8). Force projections / unitarity / BH / observables; math≠Tier E. RECEIVED §6 table cells ABSENT; CRD/unitarity HQCC-dependent rows FENCED-pending-NLP. tip Soft SF LOCK 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 tip_touched NO. invent HOLD. No CERT. No RECS. No publish/spend/Gemini send.

@@ -1,0 +1,39 @@
+{
+ "prereg_sha": "b75fa7dadfea3c1ed223bf8c25b51d8b68524841887a3db42b50b7dc62947c2d",
+ "rho_res_mod": [
+  "1/2",
+  "0",
+  "1/2",
+  "0",
+  "0",
+  "0",
+  "0",
+  "0"
+ ],
+ "rho_res": [
+  "1/32",
+  "1/4",
+  "3/32",
+  "0",
+  "7/32",
+  "1/4",
+  "5/32",
+  "0"
+ ],
+ "P1_exact_equal": false,
+ "TV": "7/8",
+ "mod_zero_on_3_7": true,
+ "support_mod": [
+  0,
+  2
+ ],
+ "support_res": [
+  0,
+  1,
+  2,
+  4,
+  5,
+  6
+ ],
+ "verdict": "FAIL"
+}

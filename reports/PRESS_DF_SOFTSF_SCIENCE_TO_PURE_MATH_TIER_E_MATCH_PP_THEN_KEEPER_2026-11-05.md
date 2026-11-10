@@ -1,0 +1,6 @@
+# PRESS — DF Soft SF → PP Soft SF unpaid, then Keeper — science↔pure-math Tier E match — 2026-11-05
+FINDINGS FINDINGS_DF_SOFTSF_SCIENCE_TO_PURE_MATH_TIER_E_MATCH_2026-11-05.md
+FINDINGS sha 4605058f02f869cc6f3cfb88d044ecc4e1b0c49805c14c3fc2193755e7419226
+Authority OW assign eba467c9b7bc129ef017c6e5c08a0b51dbe60ee4c9e4a54a0553a0b714204425; Tier E hygiene 104d8ae9c8274310a65af0a28a24209cee949cec3524c034e339ca91c134f0ce; D1/Seff lock 96f8d42e80c1975b4390fed950a4fb4b420088e6b19b2cbef8a44bebd28ff2ba; RTA v16 1fe7b8a2e245e90009c41726db13518b4c752e99ba4e08b4ffd006d8a73c3297.
+Owner Soft SF UPDATE ~13:20 CST: three-field hygiene (math · empirical · physical); Owner non-coincidence ≠ verification; no automatic E-UNTESTED solely for unwritten maps.
+Verdict Soft SF Tier E counts: E-MATCH 0 · E-PARTIAL 9 · E-TENSION 2 · E-FIT 3 · E-UNTESTED 3. Planted G4 suite E-FIT (539.9 plant vs Prop 42.6/41.11 cardinality 539); freeze 540 vs plant E-TENSION; SOHO/RIKEN/Haar70/D1/Bridge C E-PARTIAL with empirical ABSENT or Cat-B-only gaps flagged; no packaging↔IE theorem E-UNTESTED. Tier E never upgrades Tier P. Haar70 identity-only Tier P unchanged (no physics Soft SF CERT). invent HOLD 1fadc632… STANDS. tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 tip_touched NO. No CERT. Soft SF→PP Soft SF unpaid then Keeper.

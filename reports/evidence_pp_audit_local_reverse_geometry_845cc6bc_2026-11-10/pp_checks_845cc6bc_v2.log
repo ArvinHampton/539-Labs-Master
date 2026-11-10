@@ -1,0 +1,66 @@
+RUN_START 2026-11-10 11:35:56 CST
+SCRIPT_SHA256 702244d0be626793ef7a900086b1becdeb3b07f869abbddacc03a0113e54841d
+== K: Kronecker symbols (Euler criterion, cross-checked vs sympy.jacobi) ==
+  (140/23) = +1
+PASS R5b (140/23)=+1 matches Local G4
+  (-20/23) = +1
+PASS R5b (-20/23)=+1 matches Local G4
+  (-7/23) = +1
+PASS R5b (-7/23)=+1 matches Local G4
+  (5/23) = -1
+PASS R5b (5/23)=-1 matches Local G4
+  (28/23) = -1
+PASS R5b (28/23)=-1 matches Local G4
+  (-35/23) = -1
+PASS R5b (-35/23)=-1 matches Local G4
+  (35/23) = +1
+PASS R5b (35/23)=+1 matches Local G4
+  (-4/23) = -1
+PASS R5b (-4/23)=-1 matches Local G4
+  (8/23) = +1
+PASS R5b (8/23)=+1 matches Local G4
+  (-8/23) = -1
+PASS R5b (-8/23)=-1 matches Local G4
+PASS (-7/17) = -1
+PASS (-7/113) = +1 (wrongly listed in 845cc6bc s4)
+PASS (-7/137) = +1 (wrongly listed in 845cc6bc s4)
+PASS (-7/193) = +1 (wrongly listed in 845cc6bc s4)
+PASS (-7/233) = +1 (wrongly listed in 845cc6bc s4)
+PASS (-7/281) = +1 (wrongly listed in 845cc6bc s4)
+== N2: lattice [[2,14],[14,28]] ==
+PASS det = -140
+PASS even (diagonal even)
+PASS signature (1,1) since det<0 for 2x2 symmetric => sig = 0
+  Smith diag: 2 70
+PASS D(N2) = Z/2 x Z/70, |D|=140
+PASS 2-torsion of D = gcd(2,d1)*gcd(2,d2) = 4
+PASS rho(-I) eigenspace dims (sig=0: permutation g->-g): +72 / -68
+PASS 140 fundamental discriminant (140=4*35, 35=3 mod 4 squarefree)
+PASS chi_140(-1) = sign(140) = +1 = e(-0/4)
+PASS |L'/L| enumerated = 140
+PASS discriminant bilinear form nondegenerate (=> sum_d e(-(t,d)) = 0 for t != 0)
+== R2: one-line congruence (replaces tautological v3 G5 loop) ==
+PASS (a-b) - 2(c-b) - (a+b-2c) expands to 0, so a+b=2c over Z => a = b mod 2
+== R4a: Jac(C), C: y^2 = x^5 - x, at p = 17, by brute-force point counts over F_17 and F_289 ==
+  disc(x^5-x) = -256
+PASS disc(x^5-x) = -256 = -2^8 (good reduction at every odd p for the odd-degree model)
+  #C(F_17) = 30  #C(F_289) = 286  P(x) = x**4 + 12*x**3 + 70*x**2 + 204*x + 289
+PASS Frobenius char poly of Jac(C)/F_17 = (x^2+6x+17)^2 (expand difference == 0)
+  coefficients: [1, 12, 70, 204, 289]
+PASS x^3 coefficient 12 (trace of Frobenius -12)
+PASS x^2 coefficient 70, 17 does not divide 70 (p-rank 2: ordinary, g=2 criterion)
+PASS x^2+6x+17 irreducible over Q (disc -32 < 0)
+PASS Newton polygon of x^2+6x+17 at 17: v(17)=1, v(6)=0 => exactly one 17-adic unit root
+PASS s_f = -6 s_{f-1} - 17 s_{f-2}: s_f = (-6)^f mod 17, nonzero mod 17 for f=1..60
+PASS a_17(49a1) = 18 - #E(F_17) = 0 (point count; supersingular at 17 since 17 | a_17)
+== ER: erratum prime lists vs independent point counts p = 5..281 and vs v3 log ==
+PASS v3 log G3 lists 58 primes 5..281
+PASS independent factor sets equal v3 log G3 factor sets at all 58 primes
+  (-7/p)=-1, quadratic factor nonzero trace: [17, 41, 73, 89, 97, 241, 257]
+  (-7/p)=-1, irreducible quartic x^4+cx^2+p^2, p !| c: [19, 59, 83, 131, 139, 227, 251]
+  (-2/p)=+1 with quadratic factor (p, squarefree part of a^2-4p): [(17, -2), (41, -2), (73, -2), (89, -2), (97, -2), (113, -2), (137, -2), (193, -2), (233, -2), (241, -2), (257, -2), (281, -2)]
+PASS erratum item 1 list = 17,41,73,89,97,241,257
+PASS erratum item 1 quartic-ordinary list = 19,59,83,131,139,227,251, all = 3 mod 8
+PASS erratum item 2: 12 primes, list as filed, all squarefree part -2
+ALL_CHECKS PASS (40)
+EXIT 0

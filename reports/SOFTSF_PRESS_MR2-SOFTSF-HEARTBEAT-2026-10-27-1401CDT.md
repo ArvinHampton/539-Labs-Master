@@ -1,0 +1,3 @@
+# Soft SF PRESS — MR2-SOFTSF-HEARTBEAT-2026-10-27-1401CDT.md
+Source: reports/MR2-SOFTSF-HEARTBEAT-2026-10-27-1401CDT.md sha256 6d0d00d71b3e2b93a28205780731215c22e960d2e84d2cf20871158351a5fbe4
+Lane: Math Research 2 → Auditor (bridge). Status: IDLE, unpaid queue EMPTY. tip_touched NO. Kerr BLOCKED. No RECS.

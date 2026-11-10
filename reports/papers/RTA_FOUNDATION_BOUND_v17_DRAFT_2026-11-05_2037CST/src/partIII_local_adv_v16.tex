@@ -1,0 +1,209 @@
+\section{Local cite-lifts and residual packaging advancements}\label{sec:localadv}
+This section records three Category~A cite-lifts from the residual path-problem (RPP) group-ring calculus---named \emph{Local cite-lifts F1--F3} to distinguish them from the unrelated $E_8$ filter families F1--F3 of Section~\ref{sec:emit}---together with the November~2026 packaging advancements that fix the ambient Hilbert newspace, the thin form complex, and the static cell budget. The Local cite-lifts are independent of the local modular constituents of Section~\ref{sec:modlocal}. Nothing in this section settles the residual question for the Bridge Series~$C$, identifies the shadow~$\Xi$, or produces an explicit formula for a boundary vector of~$C$ inside~$\VV$.
+
+Throughout, fix an integer $M\ge2$ and write $G=\Z/M\Z$. Let $\Z[G]$ be the group ring, and let $\rho\colon\Z[G]\to\mathrm{Mat}_M(\Z)$ be the regular representation, so that for $h=\sum_g a_g[g]$ the matrix $\rho(h)$ is the circulant with eigenvalues $\hat h(k)=\sum_g a_g\,\omega^{kg}$, $\omega=e^{2\pi i/M}$, and $\det\rho(h)=\prod_k\hat h(k)$. Given a step alphabet $C\subset\Z$, weights $w=(w_1,\dots,w_n)$ and integer multiplicities $a_{i,c}$, set
+\[
+h_i:=\sum_{c\in C}a_{i,c}\,[c\cdot w_i]\in\Z[G],\qquad
+T:=h_n\cdots h_1,\qquad
+|T|:=|h_n|\cdots|h_1|,
+\]
+where $|h|=\sum_g|a_g|[g]$. For a source residue $r_s$ and a target residue $r_t$, write $W=W(r_s\to r_t)$ for the signed path weight $(\rho(T))_{r_t,r_s}$ and $N=N(r_s\to r_t)$ for the unsigned path weight $(\rho(|T|))_{r_t,r_s}$. Write $\|\cdot\|_1$ for the $\ell^1$-norm of coefficients and $\mathrm{spr}$ for the spectral radius over $\C$.
+
+\subsection{Local cite-lift F1: weak NP-completeness on an odd-$M$ slice}
+\begin{theorem}[Local cite-lift F1]\label{thm:local-F1}
+Consider the residual path problem (RPP) of deciding whether there exists a path of signed weight summing to a prescribed target residue modulo~$M$. Restrict to the slice in which $M$ is part of the input, $C=\{0,1\}$, every multiplicity equals~$1$, and
+\[
+M=2^k+1>\Sigma:=\sum_{i=1}^n w_i
+\]
+for some $k\ge1$. Then:
+\begin{enumerate}[label=(\roman*)]
+\item for every odd $M$, one has $1+\omega^j\neq0$ for all $j$, hence $\det\rho(h_i)\neq0$ for each layer and $\det\rho(T)\neq0$;
+\item RPP restricted to this slice is weakly NP-complete (membership via a polynomial certificate; hardness by reduction from Subset Sum through the odd modulus $M=2^k+1>\Sigma$).
+\end{enumerate}
+The same decision problem is false for fixed odd $M\le\Sigma$: the instance $M=3$, $w=\{1,2\}$, target~$0$ has no nonempty subset summing to~$0$ over~$\Z$, yet $\{1,2\}\equiv0\pmod3$. Completeness is weak only: a pseudo-polynomial dynamic program of cost $O(nM)$ applies.
+\end{theorem}
+\begin{proof}
+(i)~If $1+\omega^j=0$ then $\omega^j=-1$, so $(-1)^M=\omega^{jM}=1$, contradicting $M$ odd. Hence each $\hat h_i(k)=1+\omega^{k w_i}$ (or $2$ when $w_i\equiv0$) is nonzero, and $\det\rho(T)=\prod_i\det\rho(h_i)\neq0$. (ii)~The standard Subset-Sum reduction with modulus $2^k$ produces layers with $\det\rho(h_i)=0$ whenever some $w_i$ is odd (evaluate at frequency $M/2$). Replacing the modulus by the odd integer $M=2^k+1>\Sigma$ restores nonvanishing of every determinant while preserving the subset-sum encoding of yes/no instances, because the encoding uses only the inequality $M>\Sigma$ (and, for no-instances, a reachable-residue argument independent of parity). Membership is the usual short certificate that a path realises the target; checking that the instance lies on the slice is polynomial for $C=\{0,1\}$ and unit coefficients. The counterexample at fixed $M=3$, $w=\{1,2\}$, target~$0$ is immediate. Weakness follows from the standard $O(nM)$ DP on residues.
+\end{proof}
+\catA{Cite-lift. Weak NP-completeness of RPP on the odd-$M=2^k+1>\Sigma$ unit-coefficient slice with $C=\{0,1\}$; false for fixed odd $M\le\Sigma$. Distinct from the $E_8$ filter family F1 of Section~\ref{sec:emit}.}
+
+\subsection{Local cite-lift F2: nonvanishing determinant does not prevent cancellation}
+\begin{proposition}[Local cite-lift F2]\label{prop:local-F2}
+Nonvanishing of $\det\rho(h_i)$ does not preclude signed path cancellation. Explicitly, for $M=3$,
+\[
+h_1=[0]+[1],\qquad h_2=-[0]+[1]+3[2],
+\]
+one has $\det\rho(h_1)=2$ and $\det\rho(h_2)=36$, yet at target residue~$1$ the two contributing paths cancel: $W=0$ and $N=2$.
+\end{proposition}
+\begin{proof}
+The eigenvalues of a circulant are the DFT evaluations, so $\det\rho(h_1)=\prod_{k=0}^{2}(1+\omega^k)=2$ and $\det\rho(h_2)=\prod_{k=0}^{2}(-1+\omega^k+3\omega^{2k})=36$. The two length-$2$ paths from residue~$0$ to residue~$1$ have signed weights $1\cdot(-1)$ and $1\cdot1$, summing to $W=0$, while the unsigned count is $N=2$.
+\end{proof}
+\catA{Cite-lift. Explicit $M=3$ counterexample: $\det\rho\neq0$ coexists with $W=0$, $N=2$. Distinct from the $E_8$ filter family F2 of Section~\ref{sec:emit}.}
+
+\subsection{Local cite-lift F3: signed bound by the regular spectral radius}
+\begin{proposition}[Local cite-lift F3]\label{prop:local-F3}
+For arbitrary integer multiplicities,
+\[
+|W|\;\le\; N\;\le\;\prod_i\|h_i\|_1\;=\;\mathrm{spr}\bigl(\rho(|T|)\bigr).
+\]
+In particular the inequality requires no nonvanishing-determinant hypothesis. The stronger reading that nonvanishing of $\det\rho$ \emph{causes} the bound is false (Proposition~\ref{prop:local-F2}). No claim of ``total cancellation'' is made.
+\end{proposition}
+\begin{proof}
+The triangle inequality gives $|W|=|\sum\sigma|\le\sum|\sigma|=N$. The quantity $N$ is an entry of the nonnegative circulant $\rho(|T|)$; the augmentation $\varepsilon\colon\Z[G]\to\Z$ is a ring homomorphism, so the column sums of $\rho(|T|)$ equal $\||T|\|_1=\prod_i\|h_i\|_1$, and every entry is at most the column sum. For a nonnegative circulant the all-ones vector is a Perron eigenvector with eigenvalue equal to the row sum, hence $\mathrm{spr}(\rho(|T|))=\prod_i\|h_i\|_1$.
+\end{proof}
+\catA{Cite-lift. The bound $|W|\le N\le\prod\|h_i\|_1=\mathrm{spr}(\rho(|T|))$ holds with no determinant hypothesis; det-causation is excluded. Distinct from the $E_8$ filter family F3 of Section~\ref{sec:emit}.}
+
+\begin{remark}[Scope of the Local cite-lifts]\label{rem:local-scope}
+The three Local cite-lifts F1--F3 exhaust the Category~A content drawn from the group-ring reading of the residual path problem. They are combinatorial and scale-free. No normalisation scalar enters them, and they do not identify any modular form, any shadow series, or any boundary vector of~$C$.
+\end{remark}
+
+\subsection{Absence of a normalisation for the Local cite-lifts}
+\begin{proposition}[Scale-free Local cite-lifts; Hecke-scale fallback]\label{prop:Lambda0-none}
+No normalisation scalar enters Theorems~\ref{thm:local-F1}--\ref{prop:local-F3}. In particular the Local cite-lifts are independent of every candidate of the form
+\[
+\frac{\ln(6+\sqrt{35})}{\sqrt{10}},\qquad
+1.81,\qquad
+0.7858.
+\]
+If a later Hecke deformation over $K=\Q(\sqrt{35})$ requires a field-invariant scale, the only canonical choice recorded here is the residue of the Dedekind zeta at $s=1$,
+\begin{equation}\label{eq:res-zetaK}
+\Res_{s=1}\zeta_K
+\;=\;
+\frac{2\,h_K\,R_K}{\sqrt{140}}
+\;=\;
+\frac{2\ln(6+\sqrt{35})}{\sqrt{35}}
+\;\approx\;0.837679,
+\end{equation}
+where $h_K=2$ and $R_K=\ln(6+\sqrt{35})$ (fundamental unit of norm~$+1$). Identity~\eqref{eq:res-zetaK} equals $L(1,\chi_{140})$ and is \emph{not} a normalisation of the Local cite-lifts.
+\end{proposition}
+\begin{proof}
+The statements of Theorems~\ref{thm:local-F1}--\ref{prop:local-F3} are purely combinatorial identities and complexity statements in $\Z[G]$; no scalar appears. The classical formula for $\Res_{s=1}\zeta_K$ over a real quadratic field of discriminant~$140$ is standard ($r_1=2$, $w=2$), and the numerical evaluation follows from $h_K=2$ and $R_K=\ln\varepsilon_K$ with $\varepsilon_K=6+\sqrt{35}$.
+\end{proof}
+\catA{No normalisation for Local F1--F3; $\Res\zeta_K\approx0.837679$ reserved only as a Hecke-scale fallback.}
+
+\subsection{The full level-one Hilbert newspace over $\Q(\sqrt{35})$}
+Write $K=\Q(\sqrt{35})$, so that the LMFDB label of $K$ is $2.2.140.1$. Let $\mathrm{Cl}^+(K)$ denote the narrow class group; one has $h_K=2$ and $h^+=4$, with
+\[
+\mathrm{Cl}^+(K)\;\cong\; C_2\times C_2
+\]
+generated by the four narrow classes
+\begin{equation}\label{eq:clplus}
+\begin{aligned}
+C_{00}&=(1),&
+C_{10}&=\mathfrak p_2=(2,1+\sqrt{35}),\\
+C_{01}&=\mathfrak p_{19},&
+C_{11}&=\mathfrak p_5=(5,\sqrt{35}).
+\end{aligned}
+\end{equation}
+
+\begin{definition}[The space $\mathcal V_{35}^{\mathrm{Hilb}}$]\label{def:V35hilb}
+Let $\mathcal V_{35}^{\mathrm{Hilb}}$ denote the full cuspidal newspace of parallel weight $[2,2]$ and level~$(1)$ for Hilbert modular forms over~$K$. As an LMFDB newspace it is the direct sum of the four newforms
+\begin{equation}\label{eq:V35split}
+\begin{array}{c|ccc}
+\text{label} & \dim & \mathrm{CM} & \text{base change}\\\hline
+2.2.140.1\text{-}1.1\text{-}a & 2 & \mathrm{yes} & \mathrm{yes}\\
+2.2.140.1\text{-}1.1\text{-}b & 2 & \mathrm{yes} & \mathrm{no}\\
+2.2.140.1\text{-}1.1\text{-}c & 2 & \mathrm{yes} & \mathrm{yes}\\
+2.2.140.1\text{-}1.1\text{-}d & 8 & \mathrm{no} & \mathrm{yes}
+\end{array}
+\end{equation}
+of total dimension $2+2+2+8=14$. The numeral ``$35$'' in the subscript names the field~$K$, not the dimension. The space includes all four narrow class components~\eqref{eq:clplus}.
+\end{definition}
+
+\begin{theorem}[Dimension and narrow components]\label{thm:V35}
+One has $\dim\mathcal V_{35}^{\mathrm{Hilb}}=14$, with the split~\eqref{eq:V35split} verified against the LMFDB newform pages for $2.2.140.1$ at parallel weight $[2,2]$ and level~$1$. The space contains every narrow class component of $\mathrm{Cl}^+(K)$. These forms are Hilbert modular forms over~$K$, not Siegel modular forms.
+\end{theorem}
+\begin{proof}
+The four newform pages of LMFDB for field $2.2.140.1$, level~$1$, weight~$[2,2]$ list dimensions $2,2,2,8$ with the CM and base-change attributes of~\eqref{eq:V35split}; the sum is~$14$. The narrow class number $h^+=4$ is the standard narrow-class computation for discriminant~$140$, and Definition~\ref{def:V35hilb} includes every component by fiat. Hilbert versus Siegel is the standard dictionary for parallel weight $[2,2]$ over a real quadratic field.
+\end{proof}
+\catA{Full level-$1$ parallel-weight $[2,2]$ cuspidal newspace over $\Q(\sqrt{35})$, dimension $14=2+2+2+8$, all four $\mathrm{Cl}^+$ components; Hilbert, not Siegel.}
+
+\begin{remark}[Notation relative to $\VV$]\label{rem:V35-vs-VV}
+The space $\mathcal V_{35}^{\mathrm{Hilb}}$ of Definition~\ref{def:V35hilb} is not to be confused with the $36$-dimensional span $\VV$ of the $35$-component law vector of Part~III (Definition~\ref{def:K}). No identification between them is claimed.
+\end{remark}
+
+\subsection{Classical arithmetic corrections}
+\begin{proposition}[Classical exponents and conductors]\label{prop:classical-corr}
+The following classical facts are recorded for reference; none is promoted as a bound for the Bridge Series~$C$ or for the Local cite-lifts.
+\begin{enumerate}[label=(\roman*)]
+\item The classical Burgess exponent on character sums is $3/16$, not $1/5$.
+\item The conductor of the elliptic curve $Y^2=X^3-35X$ is $78400$, not $560$. This curve is a different object from $\mathcal V_{35}^{\mathrm{Hilb}}$.
+\item The Kim--Sarnak bound $\theta=7/64$ applies to Maass forms; for holomorphic cusp forms of weight~$2$ one has $\theta=0$ by Deligne.
+\end{enumerate}
+No Burgess bound, no Kim--Sarnak bound, and no conductor-$560$ statement is used as a hypothesis anywhere in this paper.
+\end{proposition}
+\begin{proof}
+(i)~is Burgess's theorem. (ii)~is the Cremona/LMFDB conductor of the curve with Weierstrass model $y^2=x^3-35x$ (minimal discriminant and conductor $78400=2^6\cdot5^2\cdot7^2$). (iii)~is Deligne's theorem for holomorphic weight~$2$, contrasted with the Kim--Sarnak hybrid bound for Maass forms.
+\end{proof}
+\catA{Recorded classical facts only: Burgess $3/16$; conductor $78400$; Kim--Sarnak $7/64$ not for holomorphic weight~$2$.}
+
+\subsection{The thin form complex and the rank-one classifier $D_1$}
+Let $X_\times=K_9\times P_{B'}$ be the product of the complete $9$-vertex charge skeleton with the residual path of length $B'=539$, and let $F$ be the thin residual form complex on the locked generators $\{1,\alpha,\omega_2,\mu,f,\delta f\}$ with product differential~$D$, under the residual relations $\omega_2=d_Q\alpha$ and $\mu=-B'\,\omega_2$ on ordered triples, truncated by $F^3:=0$ (brutal truncation $\sigma_{\le2}$). Write $s_{\alpha\delta}$ for the mixed generator $\alpha\otimes\delta f$.
+
+\begin{theorem}[Rank-one classifier $D_1$]\label{thm:D1}
+In the thin truncated complex~$F$ one has
+\[
+H^0(F)\;\cong\;\Q,\qquad
+H^1(F)\;=\;0,\qquad
+H^2(F)\;\cong\;\Q\cdot[s_{\alpha\delta}],
+\]
+and consequently the formality equivalence $F\simeq\Q[0]\oplus\Q[-2]$. Define $D_1$ to be the $\Q$-linear functional on $H^2(F)$ that isolates the line $\Q\cdot[s_{\alpha\delta}]$. Then:
+\begin{enumerate}[label=(\roman*)]
+\item $D_1$ is a static rank-$1$ classifier over~$\Q$, spanned by $[s_{\alpha\delta}]\in H^2(F)$;
+\item $D_1$ acts only on the nine charge sectors of $X_\times$ and takes no argument from any temporal variable, execution schedule, or metric normalisation;
+\item no algebraic datum of $D_1$ is shared with any resonant counter set;
+\item Layer~$2$ structure beyond the definition of $D_1$ is not constructed from $D_1$ in this paper.
+\end{enumerate}
+The class $[s_{\alpha\delta}]$ is the generator of $\mathrm{coker}(D^1\colon F^1\to F^2)$ in the thin truncation; in the filled cochain complex of $X_\times$ the same cochain is not a cocycle whenever $\delta f\not\equiv0$.
+\end{theorem}
+\begin{proof}
+The cohomology computation $H^0(F)\cong\Q$, $H^1(F)=0$, $H^2(F)\cong\Q\cdot[s_{\alpha\delta}]$ is the locked computation on the thin residual form complex: $Df=v_\delta$ forces $f\in F^0$, the relation $\ker D=\mathrm{span}\{v_\delta\}=\mathrm{im}(D\colon F^0\to F^1)$ kills $H^1$, and after quotienting by the exact pure-charge pieces the mixed class $[s_{\alpha\delta}]$ spans $H^2$. Formality $F\simeq\Q[0]\oplus\Q[-2]$ is the unique formal model with these Betti numbers. Items~(i)--(iii) are the definition of $D_1$ as the projection onto that line, with domain restricted to the static charge sectors and with no structure map into any resonant counter. Item~(iv) records that no further Layer~$2$ construction is derived from $D_1$ here. The filled-complex caveat is the identity $Ds_{\alpha\delta}=-\delta f$ on prisms, which is nonzero on the residual data.
+\end{proof}
+\catA{Rank-$1$ over $\Q$, spanned by $[s_{\alpha\delta}]\in H^2(F)\cong\Q$; $H^1(F)=0$; formality $F\simeq\Q[0]\oplus\Q[-2]$; Layer~$2$ not constructed from $D_1$.}
+
+\subsection{Static cell budget and Residual versus Resonant}
+\begin{proposition}[Static cell budget $S_{\mathrm{eff}}$]\label{prop:Seff}
+Let $T_3$ denote the ternary map of Proposition~\ref{prop:T3} and write $539$ for the residual cardinality of Proposition~\ref{prop:T3}. Define the effective packaging structure $S_{\mathrm{eff}}$ by the following constraints.
+\begin{enumerate}[label=(\roman*)]
+\item The integer $T_3=539$ is a static cell capacity (equivalently: a static arithmetic hash budget). It is not a stopping time, not a convergence rate, and not a runtime execution length forced by residual cohomology.
+\item There is no global guarantee that a packaging remainder $\Omega$ satisfies $\Omega\equiv0\pmod{539}$.
+\item Dual-rail representations, when mentioned, are hardware-only side-channel countermeasures and play no algebraic role in $S_{\mathrm{eff}}$.
+\item The assignment
+\[
+\mathcal M\colon S_{\mathrm{eff}}\longrightarrow\bigl(\mathrm{Residual}_{539}\times\mathrm{Resonant}_{539}\bigr)
+\]
+keeps the two factors disjoint: the residual factor is a count of leftover cells, the resonant factor is a forced round count; a count is not a clock.
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+Items~(i)--(iv) are definitional constraints on the packaging arithmetic already present in Proposition~\ref{prop:T3} and Remark~\ref{rem:nolink}: the identity $539=\lfloor4859/9\rfloor=18+521$ records a cell count and, separately, a window-plus-body split used as a schedule; neither identity produces a congruence $\Omega\equiv0\pmod{539}$ nor a structure map from residual cohomology into the schedule. Dual-rail hardware is excluded from the algebraic criteria by~(iii).
+\end{proof}
+\catA{$T_3=539$ is a static cell/hash budget, not a stopping time; no global $\Omega\equiv0\pmod{539}$; dual-rail hardware-only; Residual~$\neq$~Resonant.}
+
+\begin{proposition}[Residual is not Resonant]\label{prop:res-vs-res}
+The residual cardinality $539$ (a count of leftover cells per charge sector after packaging) is a different mathematical object from the resonant schedule length $539$ (a forced iteration count of $T_3$). Equality of the two integers is an equality of values, not a structure map of chain complexes, graded vector spaces, or sets. In particular, residual product cohomology does not force the resonant schedule, and the resonant schedule does not redefine residual cohomology.
+\end{proposition}
+\begin{proof}
+By construction of the residual product complex, $B'=539$ is the number of residual path edges in each sector. By construction of the resonant schedule, the same integer is used as a constant-time iteration budget. No chain map, graded map, or set map relating $C^\bullet(X_\times)$, $F$, or $H^\bullet(F)$ to the counter set $\{1,\dots,539\}$ is part of either definition (Theorem~\ref{thm:D1}(iii) and Proposition~\ref{prop:Seff}(iv)).
+\end{proof}
+\catA{Residual cardinality $\neq$ resonant schedule; equality of integers is not a structure map.}
+
+\subsection{Status of claims not established}
+\begin{proposition}[Claims not part of the theory]\label{prop:not-established}
+The following are recorded as not established, and are not used as hypotheses in this paper.
+\begin{enumerate}[label=(\roman*)]
+\item A Petersson inner-product formula for the shadow~$\Xi$ is not used as a proved identity.
+\item No Kronecker $11$-element purge and no four-forces (or $SU(3)$ continuum) mapping is part of the theory.
+\item The assertion $C\notin\mathcal V_{35}^{\mathrm{Hilb}}$ still lacks an explicit formula for a boundary vector of~$C$; the elliptic curve $Y^2=X^3-35X$ is not a substitute.
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+(i)--(iii) are negative inventory statements: no written Petersson identity for~$\Xi$ is cited as proved; continuum and four-forces maps are excluded from every Category~A statement above; and without an explicit formula for a boundary component of~$C$ the membership $C\notin\mathcal V_{35}^{\mathrm{Hilb}}$ cannot be evaluated.
+\end{proof}
+\catA{Status only: $\Xi$ Petersson not used as proved; Kronecker/four-forces maps excluded; $C\notin\mathcal V_{35}^{\mathrm{Hilb}}$ lacks an explicit formula for~$C$.}
+
+\begin{remark}[Scope relative to Parts~I--III]\label{rem:localadv-scope}
+The Local cite-lifts F1--F3 and the packaging advancements of this section do not modify the radial or $S$-law theorems already proved for the Bridge Series~$C$, do not resolve Problem~\ref{op:xi}, and do not identify the shadow~$\Xi$. The seven Category~A local modular theorems of Section~\ref{sec:modlocal} remain unchanged.
+\end{remark}
+
+\noindent\textit{Tip untouched. / No CERT.}

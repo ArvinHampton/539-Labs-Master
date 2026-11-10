@@ -1,0 +1,89 @@
+{
+ "P1_max_A2H": 1.0846837446788912e-30,
+ "P2_max": 6.7869051337056904e-15,
+ "lines_A2_max": 4.3924683523859855e-30,
+ "scale_A2": 18.36910530008569,
+ "P1": "pass",
+ "P2": "pass",
+ "ctrl_w1": {
+  "rank": 36,
+  "joint": 36,
+  "closed": true,
+  "fixed_resid": 7.728085430751456e-16
+ },
+ "ctrl_wm1": {
+  "rank": 36,
+  "joint": 72,
+  "closed": false,
+  "fixed_resid": 2.6666666666666674
+ },
+ "control_pass": true,
+ "A1_w0.5": {
+  "rank": 105,
+  "joint": 210,
+  "closed": false,
+  "fixed_resid": 1.823261652454602
+ },
+ "A1_w1.0": {
+  "rank": 105,
+  "joint": 210,
+  "closed": false,
+  "fixed_resid": 4.785070417224119
+ },
+ "A1c_w0.5": {
+  "rank": 105,
+  "joint": 210,
+  "closed": false,
+  "fixed_resid": 1.5336150467589933
+ },
+ "A1c_w1.0": {
+  "rank": 105,
+  "joint": 210,
+  "closed": false,
+  "fixed_resid": 4.266919552585936
+ },
+ "A1c_odd_w0.5": {
+  "rank": 103,
+  "joint": 206,
+  "closed": false
+ },
+ "A1c_odd_w1.0": {
+  "rank": 103,
+  "joint": 206,
+  "closed": false
+ },
+ "A2_w0.0": {
+  "rank": 73,
+  "joint": 146,
+  "closed": false,
+  "fixed_resid": 0.6851693614114192
+ },
+ "A2_w0.5": {
+  "rank": 73,
+  "joint": 146,
+  "closed": false,
+  "fixed_resid": 0.8155879717629121
+ },
+ "A2c_w0.0": {
+  "rank": 73,
+  "joint": 146,
+  "closed": false,
+  "fixed_resid": 0.6851693614114192
+ },
+ "A2c_w0.5": {
+  "rank": 73,
+  "joint": 146,
+  "closed": false,
+  "fixed_resid": 0.8155879717629121
+ },
+ "A2c_odd_w0.0": {
+  "rank": 99,
+  "joint": 190,
+  "closed": false
+ },
+ "A2c_odd_w0.5": {
+  "rank": 99,
+  "joint": 190,
+  "closed": false
+ }
+}

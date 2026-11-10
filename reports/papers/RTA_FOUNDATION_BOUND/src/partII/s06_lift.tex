@@ -1,0 +1,139 @@
+
+%=====================================================================
+\section{The theta lift and the vector-valued $S/T$ law}\label{sec:lift}
+%=====================================================================
+
+\subsection{Leading order: radial profiles}\label{sec:lead}
+For $\alpha,\beta\in\Q^2$ let $G_{\alpha,\beta}(x)$ be the mean over $\nu\in\alpha+\Z^2$ of $\e(xQ(\nu)+B(\nu,\beta))$; this is the $1/t$
+radial profile (divided by the cone measure) of any cone sum over that coset and twist (leading-order Euler--Maclaurin, as in
+Theorem~\ref{thm:D} and R1). For rational $\alpha,\beta$ and rational $x$ the summand is periodic on $\alpha+\Z^2$, and the mean is the average over
+one period. Write $A^*=(A_{11},A_{22})=(2,7)$, so $\tfrac12A^{-1}A^*=(\tfrac12,0)$.
+
+\begin{theorem}[Profile $S/T$ law]\label{thm:profile}
+For all $\alpha,\beta\in\Q^2$ and all $x\in\Q\setminus\{0\}$,
+\[
+G_{\alpha,\beta}(-1/x)=\frac{\e(B(\alpha,\beta))}{\sqrt{35}\,|x|}\sum_{p\in L'/\Z^2}G_{\beta+p,-\alpha}(x),
+\]
+\[
+G_{\alpha,\beta}(x+1)=\e\bigl(-Q(\alpha)-B(\alpha,w_c)\bigr)\,G_{\alpha,\,\alpha+\beta+w_c}(x).
+\]
+The $T$-law may equivalently be written with $\tfrac12A^{-1}A^*=(\tfrac12,0)$ in place of $w_c$ (both in the phase and in the label), since
+$(\tfrac12,0)-w_c\in L'$ and $G_{\alpha,\beta+\mu}=\e(B(\alpha,\mu))G_{\alpha,\beta}$ for $\mu\in L'$.
+\end{theorem}
+\begin{proof}
+\emph{$T$-law.} For $\nu=\alpha+n$, $Q(\nu)=Q(\alpha)+B(\alpha,n)+Q(n)$ and $\e(Q(n))=\e(B(n,w_c))$ (indeed $B(n,w_c)=n_2/2$ and
+$Q(n)\equiv\tfrac72n_2^2\equiv n_2/2\bmod1$). Hence $\e(Q(\nu))=\e(-Q(\alpha)-B(\alpha,w_c))\,\e(B(\nu,\alpha+w_c))$; average over the coset.
+
+\emph{$S$-law.} (1) \emph{Gaussian-weighted sums.} Let $M\subset\R^2$ be a lattice, $c\in\R^2$, $\Pi$ a function on $c+M$ periodic modulo a
+sublattice $\Lambda\subset M$ of finite index, and $N$ complex symmetric with $\mathrm{Re}\,N>0$. Splitting $c+M$ into $\Lambda$-cosets and applying
+Poisson summation on each,
+\[
+\sum_{\eta\in c+M}\Pi(\eta)e^{-\pi\delta\,\eta^{\mathsf T}N\eta}=\frac{\mathrm{mean}_{c+M}(\Pi)}{\mathrm{vol}(M)\,\delta\,(\det N)^{1/2}}+O\bigl(\delta^{-1}e^{-\kappa/\delta}\bigr)
+\qquad(\delta\to0^+),
+\]
+since $\mathrm{Re}\,N^{-1}>0$; here $(\det N)^{1/2}$ is the branch on the (convex) Siegel domain that is positive on real $N$, and $\kappa>0$ and the
+$O$-constant are uniform for $N$ in a compact neighbourhood of $I$.
+(2) \emph{Poisson.} Fix $x\ne0$, $\epsilon>0$, put $Z_\epsilon=\epsilon I+\tfrac ixA$ ($\mathrm{Re}\,Z_\epsilon=\epsilon I>0$) and
+$g(\nu)=\e(B(\nu,\beta))e^{-\pi\nu^{\mathsf T}Z_\epsilon\nu}=\e(-Q(\nu)/x+B(\nu,\beta))e^{-\pi\epsilon|\nu|^2}$, a Schwartz function. By (1) with
+$M=\Z^2$, $N=I$, $\delta=\epsilon$: $\sum_{\nu\in\alpha+\Z^2}g(\nu)=\epsilon^{-1}G_{\alpha,\beta}(-1/x)+O(\epsilon^{-1}e^{-\kappa/\epsilon})$.
+On the other hand, $\sum_ng(\alpha+n)=\sum_{k\in\Z^2}\widehat g(k)\e(k\cdot\alpha)$ with
+$\widehat g(k)=(\det Z_\epsilon)^{-1/2}\exp(-\pi(k-A\beta)^{\mathsf T}Z_\epsilon^{-1}(k-A\beta))$. Write $k=A\mu$, $\mu\in L'$, $\eta=\mu-\beta\in-\beta+L'$,
+so $\e(k\cdot\alpha)=\e(B(\alpha,\beta))\e(B(\eta,\alpha))$. With $N_\epsilon=(I-i\epsilon xA^{-1})^{-1}$ one has
+$Z_\epsilon=\tfrac ixA\,N_\epsilon^{-1}$ and $AZ_\epsilon^{-1}A=-ixA+\epsilon x^2N_\epsilon$, so
+\[
+\sum_{\nu\in\alpha+\Z^2}g(\nu)=\frac{\e(B(\alpha,\beta))}{(\det Z_\epsilon)^{1/2}}\sum_{\eta\in-\beta+L'}\e\bigl(xQ(\eta)+B(\eta,\alpha)\bigr)\,
+e^{-\pi\epsilon x^2\eta^{\mathsf T}N_\epsilon\eta}.
+\]
+By (1) with $M=L'$ ($\mathrm{vol}=1/35$), $N=N_\epsilon\to I$, $\delta=\epsilon x^2$, and
+$\mathrm{mean}_{-\beta+L'}=\tfrac1{35}\sum_{p\in L'/\Z^2}G_{p-\beta,\alpha}(x)$, the right side is
+$\e(B(\alpha,\beta))\,[(\det Z_\epsilon)(\det N_\epsilon)]^{-1/2}(\epsilon x^2)^{-1}\sum_pG_{p-\beta,\alpha}(x)$ up to $O(\epsilon^{-1}e^{-\kappa'/\epsilon})$.
+(3) \emph{The factor $|x|$.} $(\det Z_\epsilon)(\det N_\epsilon)=\det(\tfrac ixA)=35/x^2$ for all $\epsilon$. Along $Z_{s}=\epsilon I+s\tfrac ixA$, $s\in[0,1]$,
+the eigenvalues $\epsilon+is\lambda_j/x$ ($\lambda_1>0>\lambda_2$ the eigenvalues of $A$, $\lambda_1\lambda_2=-35$) stay in the right half-plane, so
+$(\det Z_\epsilon)^{1/2}=\prod_j(\epsilon+i\lambda_j/x)^{1/2}$ (principal roots) $\to(i\lambda_1/x)^{1/2}(i\lambda_2/x)^{1/2}=\sqrt{35}/|x|$, the arguments
+$\pm\pi/4$ cancelling for either sign of $x$ (signature $(1,1)$); and $(\det N_\epsilon)^{1/2}\to1$. The continuous product, whose square is
+constant, therefore equals $\sqrt{35}/|x|$. Comparing the coefficients of $\epsilon^{-1}$ gives
+$G_{\alpha,\beta}(-1/x)=\e(B(\alpha,\beta))(\sqrt{35}|x|)^{-1}\sum_pG_{p-\beta,\alpha}(x)$. Finally $G_{-\gamma,-\delta}=G_{\gamma,\delta}$ ($\nu\mapsto-\nu$,
+$Q$ even) and $p\mapsto-p$ permutes $L'/\Z^2$, so $\sum_pG_{p-\beta,\alpha}=\sum_pG_{\beta+p,-\alpha}$.
+\end{proof}
+\catA{Proved above; the analytic inputs are Poisson summation for Schwartz functions and the complex Gaussian Fourier transform. Numerically verified
+independently of the proof: the $S$-law on all $140$ labels at $x\in\{1,-1,\tfrac13,-\tfrac23\}$ ($560$ tests, $280$ with nonzero value), on $13$ labels
+at $12$ values of $x$ (both signs), and on $40+60$ random rational pairs $(\alpha,\beta)$ outside the family ($3+60$ with nonzero value), with maximal
+deviation $3.3\cdot10^{-15}$; the $T$-law on all $140$ labels to $5.6\cdot10^{-16}$. With the signed factor $x$ in place of $|x|$ the ratio is exactly
+$-1$ at $x<0$.}
+\begin{corollary}[Consequences of Theorem~\ref{thm:profile}]\label{cor:profile}
+(i) The $140$-vector $\mathbf G(x)=(G_{\alpha,\beta}(x))$ satisfies $P\mathbf G=\mathbf G$, $\mathbf G(-1/x)=|x|^{-1}S\mathbf G(x)$ and $\mathbf G(x+1)=T\mathbf G(x)$ with
+the matrices of Theorem~\ref{thm:F}; hence $\mathbf G(\gamma x)=|cx+d|^{-1}\rho(\gamma)\mathbf G(x)$ for all $\gamma\in\mathrm{SL}_2(\Z)$ and rational $x\ne-d/c$.
+(ii) $G_{a,0}\bigl(x/(140x+1)\bigr)\,|140x+1|=G_{a,0}(x)$ for all rational $x\neq0,-\tfrac1{140}$.
+(iii) For $\gcd(m,70)=1$, $m\,\e(-7/(20m))\,G(1/m)=m\,G_{a,0}(1/m)$ depends only on $m\bmod70$.
+(iv) For the fundamental-domain vector (all components are cone sums over the same cone measure), the $1/t$ coefficients $A(x)$ satisfy
+$|x|\,A(-1/x)=S\,A(x)$ at every rational $x\ne0$.
+\end{corollary}
+\begin{proof}
+(i) The reductions $G_{\alpha+n,\beta}=G_{\alpha,\beta}$, $G_{\alpha,\beta+\mu}=\e(B(\alpha,\mu))G_{\alpha,\beta}$ ($\mu\in L'$), $G_{-\alpha,-\beta}=G_{\alpha,\beta}$ are those of
+the $u_{\alpha,\beta}$, so the laws of Theorem~\ref{thm:profile} have exactly the matrices $S,T$; $|cx+d|$ is a cocycle and $\rho$ is well defined on
+$\mathrm{Fix}(P)$. (ii) Apply the $S$-law at $x'=-1/x-140$, then $G_{p,-a}(y-140)=G_{p,-a}(y)$ (since $70Q(\nu)\in\Z$ for $\nu\in L'$), then the $S$-law at
+$-1/x$. (iii) The $S$-law gives $m\,G_{a,0}(1/m)=35^{-1/2}\sum_pG_{p,-a}(-m)$, and $mQ(\nu)\bmod1$ depends only on $m\bmod70$ for $\nu\in L'$.
+(iv) Each $1/t$ coefficient is (cone measure)$\times G$, by leading-order Euler--Maclaurin (R1); apply (i).
+\end{proof}
+\catA{Proved given Theorem~\ref{thm:profile} ((iv) also uses R1). Numerically: (i) for random words in $S,T$ to $6.6\cdot10^{-16}$,
+(ii) at $6$ rationals to $3\cdot10^{-15}$, (iii) for all $m<1200$ (spread $1.2\cdot10^{-13}$). Part (ii) is the Weil-kernel invariance used in
+Theorem~\ref{thm:Pstruct}(ii), and (iii) is the Gauss-sum input of Theorem~\ref{thm:O2}.}
+
+At the cusp pair $(0,\infty)$ no exact vector-valued \emph{modular} law with algebraic data can hold: at $x=0$ each cone sum has singular part
+$IG/t\neq0$, while at $\infty$ there is no $q^0$ term ($Q$ has no nonzero rational zeros since $35$ is not a square); an exact law would force
+$I\in\pi\Qbar+\Qbar$, excluded by Baker (Category A, conditional on Baker).
+At order $t^{-1/2}$ the \emph{quadrant}-cone vector fails the weight-$1$ $S$-law ($|{\rm LHS}|/|{\rm RHS}|\in[0.49,2.97]$ over $16$ tests,
+either wall convention), while the \emph{fundamental-domain} vector has vanishing $t^{-1/2}$ coefficients ($\le5\cdot10^{-15}$) (Category~B:
+floating-point ratios and residuals). For the scalar rows the vanishing that is actually needed is proved in the course of the proof of
+Theorem~\ref{thm:G} (\S\ref{sec:lzpf}).
+
+\subsection{Siegel theta and Poisson summation}
+Fix a majorant (a point of the $\gamma$-geodesic) with $Q=Q_++Q_-$ and put $G_\tau(\nu)=\e(\tau Q_+(\nu)+\bar\tau Q_-(\nu))$,
+$\Theta_{\alpha,\beta}(\tau)=\sum_{\nu\in\alpha+\Z^2}\e(B(\nu,\beta))G_\tau(\nu)$. Poisson summation, with
+$\widehat G_{-1/\tau}(A\eta)=(|\tau|/\sqrt{35})G_\tau(\eta)$ (the two square roots of $\det(M/i)=35|\tau|^2$ are complex conjugate), gives
+\begin{equation}\label{eq:thetaS}
+\Theta_{\alpha,\beta}(-1/\tau)=|\tau|\,\frac{\e(B(\alpha,\beta))}{\sqrt{35}}\sum_{p\in L'/\Z^2}\Theta_{p-\beta,\alpha}(\tau).
+\end{equation}
+
+\subsection{The lift}\label{sec:liftpf}
+Integrating over the closed geodesic of $\langle\gamma^k\rangle$ ($k=2$ is the common stabiliser order on all labels), unfolding with
+$\int_\R e^{-a\cosh2w}\,dw=K_0(a)$ and geodesic length $\log\varepsilon$, and multiplying by $\sqrt y$ ($w=x+iy$) gives
+\[
+u_{\alpha,\beta}(w)=\sqrt y\Bigl[\log\varepsilon\cdot\delta_{\alpha\in\Z^2}+\tfrac12\!\!\sum_{\nu\bmod\gamma^2}\!\!\e(B(\nu,\beta))\,K_0(2\pi|Q(\nu)|y)\,\e(Q(\nu)x)\Bigr],
+\]
+the sum over $\nu\in\alpha+\Z^2$, $\nu\neq0$, in all four sign regions $\pm S^+$, $\pm T^+$ (negative-norm vectors give negative frequencies; the
+fundamental cones are $[e_1,\gamma e_1)$, $[f,\gamma f)$, $f=(1,-1)$, and their negatives). Each term $\sqrt yK_0(2\pi|n|y)\e(nx)$, and $\sqrt y$,
+is a $\Delta$-eigenfunction with $\lambda=\tfrac14$. The scalar rows are $u_L=u_{a,0}$ and $u_R=\sum_pu_{p,-a}$; for these the formula reduces to
+$u_L=\sqrt y\sum_{\nu\in(a+\Z^2)/\langle\gamma\rangle}K_0(\cdot)\e(\cdot)$ and
+$u_R=\sqrt y[\log\varepsilon+\sum_{0\neq\nu\in L'/\langle\gamma\rangle}\e(B(\nu,-a))K_0(\cdot)\e(\cdot)]$.
+Reductions: $u_{\alpha+n,\beta}=u_{\alpha,\beta}$ ($n\in\Z^2$), $u_{\alpha,\beta+\mu}=\e(B(\alpha,\mu))u_{\alpha,\beta}$ ($\mu\in L'$),
+$u_{-\alpha,-\beta}=u_{\alpha,\beta}$.
+
+\begin{proof}[Proof of Theorem~\ref{thm:F}]
+Integrate \eqref{eq:thetaS} over the geodesic and use $\sqrt{\mathrm{Im}(-1/\tau)}=\sqrt y/|\tau|$; the factor $|\tau|$ cancels and gives the
+weight-$0$ $S$-law; the constant term $\sqrt y\log\varepsilon$ comes from $\nu=0$ and appears exactly when $\alpha\in\Z^2$. For $(a,0)$ the right
+side is $\tfrac1{\sqrt{35}}\sum_pu_{p,a}=u_R/\sqrt{35}$ using $u_{p,a}=u_{-p,-a}$, i.e.\ $u_L(-1/w)=u_R(w)/\sqrt{35}$. The $T$-law follows from
+$\e(Q(n))=\e(B(n,w_c))$; the naive even-lattice $T$-law fails by $O(1)$. With labels $\alpha\in(\{0,a\}+L')/\Z^2$ ($70$ classes) and
+$\beta\in\{0,-a\}$ the family is closed; each row of $S$ has exactly $35$ entries of modulus $1/\sqrt{35}$, $T$ is monomial.
+\end{proof}
+\catA{$S$-law proved by Poisson summation; $T$-law derived. Numerically on all $140$ rows at three points with $y\approx1$:
+$|u(-1/w)-Su(w)|\le1.2\cdot10^{-15}$, $|u(w+1)-Tu(w)|\le7\cdot10^{-16}$, $|Pu-u|\le6\cdot10^{-16}$; on the $72$-dimensional $P$-invariant subspace
+$S^2=I$, $(ST)^3=I$ to $1.3\cdot10^{-15}$. Borcherds \cite[Thm.~4.1]{Borcherds} gives the same automorphy factor
+$(c\tau+d)^{b^+/2}(c\bar\tau+d)^{b^-/2}$; it is not needed. The $S$-law $u_L(-1/w)=u_R(w)/\sqrt{35}$ was also checked to $6\cdot10^{-11}$, and
+$u_L(w+1)=\e(13/20)u_L(w)$ exactly.}
+
+\begin{remark}
+The cyclic $S,T$-span of the row $e_{(a,0)}$ has dimension $60$ in label space $\C^{140}$; after projection to $\mathrm{Fix}(P)$ (rows multiplied by
+$\tfrac12(I+P)$, which is what acts on the $P$-invariant vector $u$) its rank is $36$. The positive Fourier coefficients satisfy $f_{u_L}=2E_L$,
+$f_{u_R}=2E_R$ (the automorph $-\rho_1$ maps $S^+$ to $S^-$ preserving the coset and phase), checked for all norms $\le25$ (Category A for the
+automorph argument; the numerical check is supporting).
+\end{remark}
+
+\begin{remark}[Normalisation of the lift]\label{rem:norm}
+The lift can be written as a sum over $\langle\gamma\rangle$-orbits or as $\tfrac12\sum_{\bmod\gamma^2}$.
+For the scalar rows these agree exactly: $\gamma$ maps $a+\Z^2$ to itself ($\gamma a-a=(0,-1)$) and preserves $Q$; it fixes no nonzero vector
+(hyperbolic), so every $\langle\gamma\rangle$-orbit is the disjoint union of exactly two $\langle\gamma^2\rangle$-orbits with equal $Q$; and the
+phase $\e(B(\nu,\beta))$ is $\gamma$-invariant for $\beta=0$, and for $\beta=-a$ on $L'$ because $\gamma^{-1}a-a\in\Z^2$ and $B(L',\Z^2)\subset\Z$.
+Hence $\tfrac12\sum_{\nu\bmod\gamma^2}=\sum_{\nu\bmod\gamma}$ termwise for $u_L$ and $u_R$ (Category A, elementary). For labels whose coset is
+not $\gamma$-stable the $\tfrac12\sum_{\bmod\gamma^2}$ form is the definition.
+\end{remark}

@@ -1,0 +1,225 @@
+COLLOQUIUM MATHEMATICUM
+VOL. 130                                     2013                                       NO. 1
+
+
+
+
+ WHEN DOES THE KATĚTOV ORDER IMPLY THAT ONE IDEAL
+                EXTENDS THE OTHER?
+                                              BY
+
+
+           PAWEŁ BARBARSKI, RAFAŁ FILIPÓW, NIKODEM MROŻEK
+                       and PIOTR SZUCA (Gdańsk)
+
+    Abstract. We consider the Katětov order between ideals of subsets of natural num-
+bers (“≤K ”) and its stronger variant—containing an isomorphic ideal (“v”). In particular,
+we are interested in ideals I for which
+                                    I ≤K J ⇒ I v J
+for every ideal J . We find examples of ideals with this property and show how this
+property can be used to reformulate some problems known from the literature in terms of
+the Katětov order instead of the order “v” (and vice versa).
+
+    1. Introduction. Given two ideals I and J we write I ≤K J if there
+exists a function f : ω → ω such that f −1 [A] ∈ J whenever A ∈ I. This pre-
+order is called the Katětov order and it was introduced by Katětov in [Kat68]
+and [Kat72a] to investigate ideal convergence of sequences of continuous
+functions. (For more on this order see e.g. [Hru11].)
+    Given two ideals I and J we write I v J if there exists a bijection
+f : ω → ω such that f −1 [A] ∈ J whenever A ∈ I. If I v J then we say that
+J contains an ideal isomorphic to I. This preorder was used by Debs–Saint
+Raymond [DSR09] and Laczkovich–Recław [LR09] to characterize the class
+of all ideal limits of sequences of continuous functions.
+    Obviously, if I v J then I ≤K J . In this note we are interested in
+the reverse implication. (The relationship between the Katětov order and
+the order “v” was already considered by Solecki [Sol00, Section 2].) Let us
+introduce the main definition of this paper. We say that an ideal I has
+the property Kat (I ∈ Kat for short) if for every ideal J the following are
+equivalent:
+    (1) I v J ,
+    (2) I ≤K J .
+
+2010 Mathematics Subject Classification: Primary 03E05; Secondary 03E15, 40A35.
+Key words and phrases: ideal, filter, Katětov order, rank of ideals, rank of filters, extending
+ideals, ideal convergence, Bolzano–Weierstrass property, BW property.
+
+DOI: 10.4064/cm130-1-9                       [91]           c Instytut Matematyczny PAN, 2013
+92                           P. BARBARSKI ET AL.
+
+
+   It is easy to see that the ideal Fin of all finite subsets of ω has the
+property Kat. It was observed in [FS12] that the ideal Fin × Fin = {A ⊆
+ω × ω : (∃N ∈ ω)(∀n > N ) {k : (n, k) ∈ A} is finite} also has the property
+Kat.
+   In Section 3 we prove some general facts about the property Kat. In
+Section 4 we provide examples of ideals with and without the property Kat.
+For instance, we show (Example 4.1) that the ideal Finα has the property
+Kat for every α < ω1 . In Section 5 we show that the ideal Finω , defined by
+the inductive limit, has the property Kat.
+   In Section 6 we show how the property Kat can be used to reformulate
+a conjecture of Debs–Saint Raymond [DSR09] and a question of Hrušák
+[Hru11] in terms of the Katětov order instead of the order “v”.
+
+    2. Preliminaries. Our notation and terminology follows that used in
+the most recent set-theoretic literature. The cardinality of the set X is de-
+noted by |X|. By ω we denote the set of all natural numbers, and by ω1 the
+smallest uncountable ordinal number.
+    An ideal on X is a nonempty family of subsets of a set X closed under
+taking finite unions and subsets of its elements. By Fin(X) we denote the
+ideal of all finite subsets of X (in case of X = ω we just write Fin). If not
+explicitly stated, all ideals we consider in this paper contain all finite sets
+(Fin(X) ⊆ I) and are defined on a countable infinite set X (hence, they can
+be seen as ideals on ω by identifying X with ω via a fixed bijection). We use
+the symbol 0 for the ideal {∅} (this ideal does not contain Fin).
+    An ideal I on ω is called dense if every infinite A ⊆ ω contains an infinite
+subset that belongs to the ideal.
+
+    2.1. Sums of ideals. Let I be an ideal on I, J be an ideal on J and
+Ji be ideals on Ji (i ∈ I).
+                                               P
+    For
+    P    any  family
+                S    of sets {A i : i ∈ I} let   i∈I Ai be its disjoint union,
+i.e. i∈I Ai = i∈I {i} × Ai .
+                  P                                                P
+    The family { i∈I Ai : Ai ∈ Ji for every i ∈ I}P  is an ideal on i∈I Ji . It
+is called the sum of the ideals Ji and denoted by {Ji : i ∈ I}.
+                  P                                                P
+    The family { i∈I Ai : {i ∈ I : Ai ∈ / Ji } ∈ I} is an ideal on
+                                                                 P i∈I Ji . It
+is called the I-Fubini sum of the ideals Ji andPdenoted by I- P{Ji : i ∈ I}.
+Note that using this notation we may say that {Ji : i ∈ I} = 0- {Ji : i ∈ I}.
+                                                          P
+    If Ji = J for every i ∈ I then we write I × J = I- {Ji : i ∈ I}.
+                                                        P
+    If Ji = 0 for every i ∈ I then we write I × 0 = I- {Ji : i ∈ I}.
+    For more on sums and Fubini sums of ideals see e.g. [Kat68] and [DSR09]
+(note that in both papers the authors use the dual notion of filters instead
+of ideals).
+                                KATĚTOV ORDER                               93
+
+
+   2.2. Finα . The ideals Finα on Xα (α < ω1 ) are defined in the following
+way ([Kat72b, p. 240], where the author considers the dual filters and denotes
+them by N α ):
+      (1) Fin0 = 0 = {∅}, X0 = {0},
+      (2) Finα+1 = Fin × Finα , Xα+1 = n∈ω Xα ,
+                                        P
+
+      (3) Finλ = Iλ - {Finα : α < λ}, where λ is a limit ordinal P
+                     P
+                                                                 and Iλ is the
+          ideal on λ generated by the family {α : α < λ}, Xλ = α<λ Xα .
+
+    3. The characterization. We will need the following lemma, which
+lists some immediate properties of preorders “v” and “≤K ”.
+    Lemma 3.1. Let I and J be ideals on ω (we do not need to assume that
+Fin ⊆ J ).
+      (1) I v Fin ⇔ I = Fin.
+      (2) I ≤K Fin ⇔ I is not dense.
+      (3) I ≤K I × J .
+   Lemma 3.2. Let I be an ideal with the property Kat. Then either I = Fin
+or I is a dense ideal.
+   Proof. If I is not dense then, by Lemma 3.1(2), I ≤K Fin. Since I ∈ Kat,
+we have I v Fin. Thus, by Lemma 3.1(1), I = Fin.
+    Lemma 3.3 (see also [BNF12]). Let I be a dense ideal. Then I v J ⇔
+there is a 1-1 function f : ω → ω such that f −1 [A] ∈ J for every A ∈ I.
+   Proof. “⇒”. Obvious.
+   “⇐”. Let A ∈ I be an infinite set with A ⊆ f [ω]. Let B = f −1 [A] ∈ J .
+Let g : B → A ∪ (ω \ f [ω]) be a bijection. Then h = (f (ω \ B)) ∪ g shows
+that I v J .
+   Theorem 3.4. Let I be a dense ideal. Then the following conditions are
+equivalent:
+       (i) I ∈ Kat;
+      (ii) I v I × 0.
+   Proof. (i)⇒(ii). Let I be an ideal with the property Kat. By Lem-
+ma 3.1(3), I ≤K I × 0, so I v I × 0.
+   (ii)⇒(i). Let I be a dense ideal such that I v I × 0. Let φ : ω × ω → ω
+be a bijection such that φ−1 [A] ∈ I × 0 for every A ∈ I, i.e.
+(?)            {n ∈ ω : ∃k∈ω φ(n, k) ∈ A} ∈ I    whenever A ∈ I.
+      Let K be an ideal such that I ≤K K. Let f : ω → ω be such that
+(??)                     f −1 [A] ∈ K   for every A ∈ I.
+94                             P. BARBARSKI ET AL.
+
+
+     We define g : ω → ω by
+        g(m) = φ(n, k) iff m is the kth element of the set f −1 (n).
+From the above definition it follows that for each A ⊆ ω,
+              g(m) ∈ A ⇒ (∃k∈ω φ(n, k) ∈ A and f (m) = n)
+                       ⇔ f (m) ∈ {n ∈ ω : ∃k∈ω φ(n, k) ∈ A}.
+Fix any A ∈ I. Since φ−1 [A] ∈ I × 0, from the above implication and
+conditions (?), (??), it follows that
+                g −1 [A] ⊆ f −1 [{n ∈ ω : ∃k∈ω φ(n, k) ∈ A}] ∈ K.
+     Since g is 1-1 and I is dense, Lemma 3.3 yields I v K.
+   Remark. The assumption that I is dense, in the above proposition, is
+necessary. Indeed, let I = Fin × 0. (Recall that Fin × 0 6= Fin1 .) Since I is
+not dense and contains an infinite set, Lemma 3.2 implies that I ∈  / Kat. On
+the other hand, it is not difficult to check that I v I × 0.
+   Theorem 3.4 gives us a characterization of the property Kat; however, for
+some ideals I it can be difficult to prove that I 6v I × 0. Below we give some
+necessary and some sufficient conditions for ideals to have the Kat property.
+     3.1. Local Q-ideals. In [BTW82], the authors introduced the following
+definition. An ideal I on ω is called a local Q-ideal if for every partition
+F0 , F1 , . . . of ω into finite sets there exists S ∈
+                                                     / I with |An ∩ S| ≤ 1 for every
+n ∈ ω. The next lemma follows immediately from the definition of a local
+Q-point.
+     Lemma 3.5.
+     (1) If I v J and J is a local Q-ideal, then I is a local Q-ideal.
+     (2) I × 0 is a local Q-ideal for every ideal I.
+    Proposition 3.6. Let I be an ideal with the property Kat. Then I is a
+local Q-ideal.
+   Proof. By Theorem 3.4, I v I × 0. By Lemma 3.5(2), I × 0 is a local
+Q-ideal, so, by Lemma 3.5(1), I is a local Q-ideal as well.
+   Remark. The condition from the above proposition is not sufficient. In-
+deed, under the Continuum Hypothesis there is a maximal local Q-ideal I
+(the dual ultrafilter I ? is called a Q-point) and by Example 4.2 below,
+I∈/ Kat.
+     3.2. Analytic P-ideals. An ideal I is a P-ideal if for every sequence
+(An )n∈ω of sets from I there is an A ∈ I such that An \ A ∈ Fin for all n,
+i.e. An is almost contained in A for each n.
+                                KATĚTOV ORDER                                    95
+
+
+    By identifying sets of naturals with their characteristic functions, we
+equip P (ω) with the Cantor-space topology and therefore we can assign
+topological complexity to ideals of sets of integers. In particular, an ideal I
+is Fσ (resp. analytic) if it is an Fσ subset of the Cantor space (resp. a
+continuous image of a Gδ subset of the Cantor space). For example the ideal
+Id of asymptotic density 0 sets is an analytic P-ideal (for more examples see
+e.g. [Far00]).
+    Proposition 3.7. Assume that I is an analytic P-ideal. Then I ∈ Kat
+if and only if I = Fin.
+    Proof. Suppose that an analytic P-ideal I has the property Kat and
+I=6 Fin. By Lemma 3.2 and Proposition 3.6, I is a dense local Q-ideal. On
+the other hand, by [FMRS11, Lemma 3.7], an analytic P-ideal which is a
+local Q-ideal is not dense, a contradiction.
+    3.3. Sums of ideals. In this subsection we assume that I is an ideal
+on I, J is an ideal on J, and Ji are ideals on Ji (i ∈ I). The following facts
+are easy to prove.
+    Fact 3.8. Suppose that I ≤K J and f : ω → ω witnesses this fact. If
+J contains an infinite set then we can assume that f is onto. (Else take an
+infinite set A ∈ J and put f 0 = (f (ω \ A)) ∪ g where g : A → ω is onto.)
+   Fact 3.9.
+          P
+   (1) I- {Ji : i ∈ I} is a dense ideal for
+                                         P any ideal I.
+   (2) If Ji are dense for all i ∈ I then {Ji : i ∈ I} is a dense ideal.
+   Proposition 3.10. Assume that Ji ∈ Kat for all i ∈ I.
+          P
+   (1) I- {Ji : i ∈ I} ∈ Kat for any ideal
+                                         P I.
+   (2) If Ji are dense for all i ∈ I then {Ji : i ∈ I} ∈ Kat.
+   Proof. We will prove (1) and (2) simultaneously.
+                  P                       P
+P  Let   J   =  I-  {J  i : i ∈ I} (J =     {Ji : i ∈ I} in case (2)) and J =
+  i∈I Ji . Let K be an ideal on ω such that J ≤K K. Take a function f : ω → J
+such that f −1 [A] ∈ K for any A ∈ J . By Fact 3.9, J is a dense ideal, so,
+by Lemma 3.1(2), K 6= Fin (hence there are infinite sets in K). Thus, by
+Fact 3.8 we can assume that f is onto.
+   Define Bi = f −1 [{i} × Ji ] (i ∈ I). Since f is onto, the sets Bi are infinite.
+Let Ji−1 be an ideal on Bi generated by the family
+                            {f −1 [{i} × A] : A ∈ Ji }.
+Then the function fi : Bi → Ji given by
+                          fi (k) = a ⇔ f (k) = (i, a)
+

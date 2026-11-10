@@ -1,0 +1,6 @@
+2026-10-24 search log (grep, read-only)
+s11_family.tex: 0 hits for corner|pairing|orthant (has Thm tensor7 ρ_lab matrices only).
+order60-62 md/scripts: no written ρ_lab/Δ pairing for corner; order62:24 is a suggestion only.
+order7: fixed weight-1 S-law F(-1/τ)=(τ/√35)M F (105-dim M, not ρ_lab) -> P-even forbidden (Cat A).
+order13: Lemma W (scalar χ, standard T-law); NOTES:22 Laplacian identity for P_even-lift (Φ_orth/ϑ product), not a ρ_lab pairing.
+MAPS_CANDIDATES/BATCH4 PREREG:27: corner A2c -> S(0,8;i) target, mod-8 map, not ρ_lab.

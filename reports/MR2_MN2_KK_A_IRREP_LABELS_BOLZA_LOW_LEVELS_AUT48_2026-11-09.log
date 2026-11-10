@@ -1,0 +1,100 @@
+[0] KK .py sha256 88949658116586c63dc4785fc31c222eed6d9ef44afbefbc6e40a4946b20b26c (MATCH 88949658); exec'ing its group section [G]/[W] and FEM helpers of [T] (mesh/assemble only)
+[G] generator g1: x->ix: kappa=0.000000+1.000000j; branch-point perm ['0', 'inf', 'i', '-1', '-i', '1']
+[G] generator g2: x->(x+1)/(1-x): kappa=-8.000000-0.000000j; branch-point perm ['1', '-1', 'inf', 'i', '0', '-i']
+[G] |closure of <g1,g2,J,K>| = 96;  holomorphic (Aut+) = 48;  antiholomorphic = 48
+[G] distinct H^1 matrices: 96 (faithful on H^1 iff = |G|)
+[G] Aut+ element orders: [(1, 1), (2, 13), (3, 8), (4, 6), (6, 8), (8, 12)]
+[G] Isom element orders: [(1, 1), (2, 31), (3, 8), (4, 8), (6, 8), (8, 24), (12, 16)]
+[G] GL(2,3) by enumeration: |GL(2,3)|=48, element orders [(1, 1), (2, 13), (3, 8), (4, 6), (6, 8), (8, 12)]
+[G] elements acting as -1 on H^1: 1 (the hyperelliptic involution); central in Isom: True
+[G] Aut+ (order 48): 8 classes, sizes [np.int64(1), np.int64(1), np.int64(6), np.int64(6), np.int64(6), np.int64(8), np.int64(8), np.int64(12)], irrep dims [1, 1, 2, 2, 2, 3, 3, 4], sum d^2 = 48, orthogonality err 4.2e-15
+[G] Aut+ (order 48) class rep orders [1, 2, 8, 4, 8, 3, 6, 2]; orientation [1, 1, 1, 1, 1, 1, 1, 1]
+   chi_0: +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000
+   chi_1: +1.000  +1.000  -1.000  +1.000  -1.000  +1.000  +1.000  -1.000
+   chi_2: +2.000  +2.000  -0.000  +2.000  -0.000  -1.000  -1.000  -0.000
+   chi_3: +2.000  -2.000  +0.000+1.414i  -0.000  -0.000-1.414i  -1.000  +1.000  -0.000
+   chi_4: +2.000  -2.000  +0.000-1.414i  -0.000  -0.000+1.414i  -1.000  +1.000  -0.000
+   chi_5: +3.000  +3.000  +1.000  -1.000  +1.000  +0.000  +0.000  -1.000
+   chi_6: +3.000  +3.000  -1.000  -1.000  -1.000  +0.000  -0.000  +1.000
+   chi_7: +4.000  -4.000  +0.000  +0.000  -0.000  +1.000  -1.000  -0.000
+[G] Isom (order 96): 13 classes, sizes [np.int64(1), np.int64(1), np.int64(2), np.int64(6), np.int64(6), np.int64(8), np.int64(8), np.int64(8), np.int64(8), np.int64(12), np.int64(12), np.int64(12), np.int64(12)], irrep dims [1, 1, 1, 1, 2, 2, 3, 3, 3, 3, 4, 4, 4], sum d^2 = 96, orthogonality err 2.9e-14
+[G] Isom (order 96) class rep orders [1, 2, 4, 2, 4, 3, 6, 12, 12, 8, 2, 8, 2]; orientation [1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, -1, 1]
+   chi_0: +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000
+   chi_1: +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  -1.000  -1.000  -1.000  -1.000
+   chi_2: +1.000  +1.000  -1.000  -1.000  +1.000  +1.000  +1.000  -1.000  -1.000  -1.000  +1.000  +1.000  -1.000
+   chi_3: +1.000  +1.000  -1.000  -1.000  +1.000  +1.000  +1.000  -1.000  -1.000  +1.000  -1.000  -1.000  +1.000
+   chi_4: +2.000  +2.000  +2.000  +2.000  +2.000  -1.000  -1.000  -1.000  -1.000  -0.000  -0.000  -0.000  -0.000
+   chi_5: +2.000  +2.000  -2.000  -2.000  +2.000  -1.000  -1.000  +1.000  +1.000  +0.000  +0.000  -0.000  +0.000
+   chi_6: +3.000  +3.000  +3.000  -1.000  -1.000  -0.000  -0.000  +0.000  +0.000  -1.000  +1.000  -1.000  +1.000
+   chi_7: +3.000  +3.000  +3.000  -1.000  -1.000  -0.000  -0.000  -0.000  -0.000  +1.000  -1.000  +1.000  -1.000
+   chi_8: +3.000  +3.000  -3.000  +1.000  -1.000  +0.000  -0.000  +0.000  -0.000  -1.000  -1.000  +1.000  +1.000
+   chi_9: +3.000  +3.000  -3.000  +1.000  -1.000  -0.000  +0.000  -0.000  -0.000  +1.000  +1.000  -1.000  -1.000
+   chi_10: +4.000  -4.000  +0.000  +0.000  +0.000  +1.000  -1.000  -1.732  +1.732  +0.000  -0.000  -0.000  -0.000
+   chi_11: +4.000  -4.000  +0.000  -0.000  -0.000  +1.000  -1.000  +1.732  -1.732  +0.000  +0.000  -0.000  +0.000
+   chi_12: +4.000  -4.000  +0.000  +0.000  +0.000  -2.000  +2.000  +0.000  -0.000  +0.000  +0.000  -0.000  -0.000
+[G] (A) H^1(Sigma,R) (harmonic 1-forms, dim 4): multiplicities [-0.0, 0.0, -0.0, 1.0, 1.0, 0.0, -0.0, 0.0]  trivial-rep multiplicity = -0.000000
+[G] (B) H^1(Sigma,R) (harmonic 1-forms, dim 4): multiplicities [0.0, 0.0, 0.0, 0.0, -0.0, 0.0, -0.0, 0.0, 0.0, 0.0, -0.0, -0.0, 1.0]  trivial-rep multiplicity = 0.000000
+[G] (A) H^0(K) = holomorphic 1-forms (dim 2; q=1 lowest Landau level): multiplicities [-0.0, 0.0, -0.0, -0.0, 1.0, 0.0, -0.0, 0.0]  trivial-rep multiplicity = -0.000000
+[G] (A) H^0(K^2) = Sym^2 H^0(K) (dim 3; q=2 lowest Landau level): multiplicities [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]  trivial-rep multiplicity = 0.000000
+[G] Aut+: number of 1-dim characters = 2
+[G] Isom: number of 1-dim characters = 4
+[W] (A) Aut+ odd spin structures (theta chars O(P_i)): 6 objects, orbit sizes [6], invariant = 0
+[W] (A) Aut+ even spin structures (3+3 partitions): 10 objects, orbit sizes [4, 6], invariant = 0
+[W] (A) Aut+ nonzero H^1(Sigma,Z2) classes (P_i-P_j): discrete Z2 Wilson lines: 15 objects, orbit sizes [3, 12], invariant = 0
+[W] (B) Isom odd spin structures (theta chars O(P_i)): 6 objects, orbit sizes [6], invariant = 0
+[W] (B) Isom even spin structures (3+3 partitions): 10 objects, orbit sizes [4, 6], invariant = 0
+[W] (B) Isom nonzero H^1(Sigma,Z2) classes (P_i-P_j): discrete Z2 Wilson lines: 15 objects, orbit sizes [3, 12], invariant = 0
+[W] check: 6 odd + 10 even = 16 spin structures; 15 nonzero Z2 classes = 2^4-1
+[T] (2,3,8) triangle: r_B=0.364566859027, r_C=0.405616400802; arc centre c0=1.553773974030 (real => right angle at B); |C-c0|-R = 0.00e+00 (law-of-cosines consistency)
+[T] angle at C between ray and arc = 1.047197551197 vs pi/3 = 1.047197551197
+[C] Coxeter triple in Isom: antiholomorphic involutions r_AB,r_AC,r_BC with orders (r_AB r_AC, r_AB r_BC, r_AC r_BC) = (8,2,3), generating 96 elements
+[C] Isom -> O_h (B3 mirrors e3, e2-e3, e1-e2) well defined on all 96 elements: True; kernel size 2 (= <J>, order 2)
+[C] H^1 rep orthogonal after Gram change of basis: True
+[C] real orthogonal irreps found: 13, dims [1, 1, 1, 1, 2, 2, 3, 3, 3, 3, 4, 4, 4], sum d^2 = 96 (|Isom| = 96 => complete iff 96; all real type iff <chi,chi> = 1 each)
+[C] Aut+ = GL(2,3) real-irreducible pieces (labels: 3 := trace +1 on the order-8 rotation z = r_AB r_AC; 3(x)sgn := 3 tensor det, trace -1 on z):
+     dim 1: <chi,chi> = 1, chi(J) = +1, chi(z) = +1 -> 1
+     dim 1: <chi,chi> = 1, chi(J) = +1, chi(z) = -1 -> sgn
+     dim 2: <chi,chi> = 1, chi(J) = +2, chi(z) = 0 -> 2(J-trivial)
+     dim 3: <chi,chi> = 1, chi(J) = +3, chi(z) = -1 -> 3(x)sgn
+     dim 3: <chi,chi> = 1, chi(J) = +3, chi(z) = +1 -> 3
+     dim 4: <chi,chi> = 1, chi(J) = -4, chi(z) = 0 -> 4(J-faithful)
+     dim 4: <chi,chi> = 2, chi(J) = -4, chi(z) = 0 -> 2'+2'' (complex pair, real 4-dim)
+[C] Isom irreps (tag; dim; chi(J); chi(z); chi(r_AB); chi(r_AC); chi(r_BC); restriction to Aut+):
+     I1: dim 1, chi(J) +1, chi(z) +1, chi(r_AB) +1, chi(r_AC) +1, chi(r_BC) +1 | Aut+: 1
+     I2: dim 1, chi(J) +1, chi(z) +1, chi(r_AB) -1, chi(r_AC) -1, chi(r_BC) -1 | Aut+: 1
+     I3: dim 1, chi(J) +1, chi(z) -1, chi(r_AB) +1, chi(r_AC) -1, chi(r_BC) -1 | Aut+: sgn
+     I4: dim 1, chi(J) +1, chi(z) -1, chi(r_AB) -1, chi(r_AC) +1, chi(r_BC) +1 | Aut+: sgn
+     I5: dim 2, chi(J) +2, chi(z) 0, chi(r_AB) +2, chi(r_AC) 0, chi(r_BC) 0 | Aut+: 2(J-trivial)
+     I6: dim 2, chi(J) +2, chi(z) 0, chi(r_AB) -2, chi(r_AC) 0, chi(r_BC) 0 | Aut+: 2(J-trivial)
+     I7: dim 3, chi(J) +3, chi(z) -1, chi(r_AB) +1, chi(r_AC) -1, chi(r_BC) -1 | Aut+: 3(x)sgn
+     I8: dim 3, chi(J) +3, chi(z) -1, chi(r_AB) -1, chi(r_AC) +1, chi(r_BC) +1 | Aut+: 3(x)sgn
+     I9: dim 3, chi(J) +3, chi(z) +1, chi(r_AB) -1, chi(r_AC) -1, chi(r_BC) -1 | Aut+: 3
+     I10: dim 3, chi(J) +3, chi(z) +1, chi(r_AB) +1, chi(r_AC) +1, chi(r_BC) +1 | Aut+: 3
+     I11: dim 4, chi(J) -4, chi(z) 0, chi(r_AB) 0, chi(r_AC) 0, chi(r_BC) 0 | Aut+: 4(J-faithful)
+     I12: dim 4, chi(J) -4, chi(z) 0, chi(r_AB) 0, chi(r_AC) 0, chi(r_BC) 0 | Aut+: 4(J-faithful)
+     I13: dim 4, chi(J) -4, chi(z) 0, chi(r_AB) 0, chi(r_AC) 0, chi(r_BC) 0 | Aut+: 2'+2'' (complex pair, real 4-dim)
+[F] I1 (dim 1): Richardson(60,120) eigenvalues < 25.5: ['0.00000', '23.07856']  (largest computed 256.693; Richardson correction sizes ['6.3e-14', '1.4e-03'])
+[F] I2 (dim 1): Richardson(60,120) eigenvalues < 25.5: []  (largest computed 948.136; Richardson correction sizes [])
+[F] I3 (dim 1): Richardson(60,120) eigenvalues < 25.5: []  (largest computed 640.297; Richardson correction sizes [])
+[F] I4 (dim 1): Richardson(60,120) eigenvalues < 25.5: []  (largest computed 475.174; Richardson correction sizes [])
+[F] I5 (dim 2): Richardson(60,120) eigenvalues < 25.5: ['8.24955']  (largest computed 185.202; Richardson correction sizes ['1.3e-04'])
+[F] I6 (dim 2): Richardson(60,120) eigenvalues < 25.5: []  (largest computed 368.773; Richardson correction sizes [])
+[F] I7 (dim 3): Richardson(60,120) eigenvalues < 25.5: []  (largest computed 263.611; Richardson correction sizes [])
+[F] I8 (dim 3): Richardson(60,120) eigenvalues < 25.5: ['15.04892']  (largest computed 229.779; Richardson correction sizes ['6.8e-04'])
+[F] I9 (dim 3): Richardson(60,120) eigenvalues < 25.5: []  (largest computed 327.178; Richardson correction sizes [])
+[F] I10 (dim 3): Richardson(60,120) eigenvalues < 25.5: ['3.83889', '18.65882']  (largest computed 167.999; Richardson correction sizes ['4.6e-05', '8.7e-04'])
+[F] I11 (dim 4): Richardson(60,120) eigenvalues < 25.5: ['14.72622']  (largest computed 182.095; Richardson correction sizes ['7.1e-04'])
+[F] I12 (dim 4): Richardson(60,120) eigenvalues < 25.5: ['5.35360']  (largest computed 170.724; Richardson correction sizes ['1.2e-04'])
+[F] I13 (dim 4): Richardson(60,120) eigenvalues < 25.5: ['20.51986']  (largest computed 193.036; Richardson correction sizes ['1.3e-03'])
+[F] control: the 1-dim sectors I1-I4 must match the scalar NN/DD/DN/ND FEM of ecee2668 (NN 0, 23.078559; DN 32.673650; ND 91.464863; DD 222.371127): only I1 has eigenvalues below 25.5 (0 and 23.0786)
+[F] Weyl check: number of nonzero eigenvalues below 25.5 counted with multiplicity = 24; Weyl leading term area*lambda/(4 pi) = 4 pi (g-1) * 25.5/(4 pi) = 25.5
+[L] assembled spectrum (lambda < 25.5): eigenvalue, Isom irrep, dim; grouped by level (tolerance 2e-3):
+     lambda = 3.83889: Isom I10 | dim 3 | Aut+: 3 | SU nearest 3.838887 (mult 3), rel diff 3.1e-09
+     lambda = 5.35360: Isom I12 | dim 4 | Aut+: 4(J-faithful) | SU nearest 5.353601 (mult 4), rel diff 3.8e-09
+     lambda = 8.24955: Isom I5 | dim 2 | Aut+: 2(J-trivial) | SU nearest 8.249555 (mult 2), rel diff 7.8e-09
+     lambda = 14.72622: Isom I11 | dim 4 | Aut+: 4(J-faithful) | SU nearest 14.726217 (mult 4), rel diff 6.7e-09
+     lambda = 15.04892: Isom I8 | dim 3 | Aut+: 3(x)sgn | SU nearest 15.048916 (mult 3), rel diff 1.4e-08
+     lambda = 18.65882: Isom I10 | dim 3 | Aut+: 3 | SU nearest 18.658820 (mult 3), rel diff 2.5e-08
+     lambda = 20.51986: Isom I13 | dim 4 | Aut+: 2'+2'' (complex pair, real 4-dim) | SU nearest 20.519860 (mult 4), rel diff 2.0e-09
+     lambda = 23.07856: Isom I1 | dim 1 | Aut+: 1 | SU nearest 23.078558 (mult 1), rel diff 3.9e-08
+[done] runtime 40.0 s

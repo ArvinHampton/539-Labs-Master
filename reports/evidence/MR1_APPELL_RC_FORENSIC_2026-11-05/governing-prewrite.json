@@ -1,0 +1,47 @@
+{
+  "tip": {
+    "path": "/workspace/residual-c-field-WRITTEN_PREMISES_DRAFT.md",
+    "sha256": "7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91"
+  },
+  "invent_HOLD": {
+    "path": "/workspace/quantum-comp/reports/FINDINGS_MR1_ACK_OW_CALL_9ee0f248_RECLAIM_ONLY_HOLD_INVENT_2026-11-05.md",
+    "sha256": "1fadc632f86332808995573b485225048c4f0fa78ac44a36da4f67315beab783"
+  },
+  "PRIMARY": {
+    "path": "/workspace/quantum-comp/reports/OWNER_WRITE_CALL_53991ebf_PRIMARY_OPERATING_RULE_ALL_TWELVE_2026-11-05.md",
+    "sha256": "bcc3ced0f1dfe15560e0bdb2e45bb35f4b1db26dcfb439e647a98c12fc5bc9a9"
+  },
+  "RESONANT_OW": {
+    "path": "/workspace/quantum-comp/reports/OWNER_WRITE_CALL_53991ebf_RESONANT_MATH_PREDICTIONS_ALL_FIELDS_2026-11-05.md",
+    "sha256": "b25d56165039d2cf2a064d8c9b5e08c0920601e83b0574947ea116f2ac6ec455"
+  },
+  "Gemini_FINDINGS": {
+    "path": "/workspace/quantum-comp/reports/FINDINGS_MR1_SOFTSF_GEMINI_COMPENDIUM_REVIEW_Q_PROOF_OFFERS_HOLD_INVENT_2026-11-05.md",
+    "sha256": "ff1770535fe7aa4e157fbd205b7e1f81341f7829786e7c8dec32d6ce0c54ebeb"
+  },
+  "compendium": {
+    "path": "/workspace/quantum-comp/references/gemini-compendium-20261105/RECEIVED_COMPENDIUM.txt",
+    "sha256": "49849cae20fe57c24533b770c13c4a53e5844f0bb75086250b9a82af0b446b73"
+  },
+  "RTA_v16_pdf": {
+    "path": "/workspace/quantum-comp/reports/papers/RTA_FOUNDATION_BOUND/RTA_FOUNDATION_BOUND_v16.pdf",
+    "sha256": "1fe7b8a2e245e90009c41726db13518b4c752e99ba4e08b4ffd006d8a73c3297"
+  },
+  "expected": {
+    "tip": "7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91",
+    "invent_HOLD": "1fadc632f86332808995573b485225048c4f0fa78ac44a36da4f67315beab783",
+    "PRIMARY": "bcc3ced0f1dfe15560e0bdb2e45bb35f4b1db26dcfb439e647a98c12fc5bc9a9",
+    "RESONANT_OW": "b25d56165039d2cf2a064d8c9b5e08c0920601e83b0574947ea116f2ac6ec455",
+    "Gemini_FINDINGS": "ff1770535fe7aa4e157fbd205b7e1f81341f7829786e7c8dec32d6ce0c54ebeb",
+    "compendium": "49849cae20fe57c24533b770c13c4a53e5844f0bb75086250b9a82af0b446b73"
+  },
+  "match": {
+    "tip": true,
+    "invent_HOLD": true,
+    "PRIMARY": true,
+    "RESONANT_OW": true,
+    "Gemini_FINDINGS": true,
+    "compendium": true
+  },
+  "when_CST": "2026-11-05 pre-write Soft SF"
+}

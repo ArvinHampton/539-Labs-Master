@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>FINDINGS — HQH-539 Criterion 3 open lemmas: Π domain, residual predicate, λ-family, C2 mid-fiber (definitional pinboard)</title>
+<style>
+  @page { size: Letter; margin: 0.7in; }
+  body { font-family: "DejaVu Sans", "Noto Sans", "Liberation Sans", sans-serif; font-size: 10pt; line-height: 1.35; color: #111; }
+  h1 { font-size: 14pt; margin-top: 0; border-bottom: 1px solid #333; padding-bottom: 0.25em; }
+  h2 { font-size: 12pt; margin-top: 1.1em; border-bottom: 1px solid #999; padding-bottom: 0.12em; }
+  h3 { font-size: 11pt; margin-top: 0.9em; }
+  table { border-collapse: collapse; width: 100%; margin: 0.5em 0 0.9em; font-size: 8.5pt; }
+  th, td { border: 1px solid #666; padding: 3px 5px; vertical-align: top; }
+  th { background: #eee; }
+  code, pre { font-family: "DejaVu Sans Mono", "Liberation Mono", monospace; font-size: 8pt; }
+  pre { background: #f6f6f6; padding: 0.45em; overflow-wrap: anywhere; white-space: pre-wrap; }
+  blockquote { border-left: 3px solid #888; margin-left: 0; padding-left: 0.7em; color: #333; }
+  .banner { background: #fff3cd; border: 1px solid #856404; padding: 0.5em 0.7em; margin-bottom: 0.9em; font-weight: 600; font-size: 9pt; }
+  hr { border: none; border-top: 1px solid #ccc; margin: 1em 0; }
+  a { color: #0645ad; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="banner">DRAFT ONLY — render of on-disk FINDINGS · source sha cc95ceb9a81c77e2d9c9d1c3dc40c33aaaa309d957866ff5692f598988d8bf97 · tip untouched · No CERT · 2026-11-05 America/Chicago</div>
+<h1 id="findings-hqh-539-criterion-3-open-lemmas-domain-residual-predicate-family-c2-mid-fiber-definitional-pinboard">FINDINGS — HQH-539 Criterion 3 open lemmas: Π domain, residual predicate, λ-family, C2 mid-fiber (definitional pinboard)</h1>
+<p><strong>Date:</strong> 2026-11-05 (America/Chicago) · <strong>Status:</strong> DRAFT-ONLY · Soft SF follow-on · <strong>No CERT</strong> · not peer reviewed<br />
+<strong>Scope:</strong> definitions and blanks only. No proofs, no hardness, no probability bounds asserted as theorems. No Shor/Grover/post-quantum claims.</p>
+<h2 id="1-ack-lineage">1. ACK / lineage</h2>
+<ul>
+<li>Continues <strong>OW 4ba9151f…</strong> (hardness research). Draft-only; nothing published, sent, pushed, or spent.</li>
+<li>Prior FINDINGS (not edited): <code>/workspace/539-labs/lqh-alu/FINDINGS_HQH_HARDNESS_RESEARCH_2026-11-05.md</code>, sha256 <code>70091747b300c7eea4cae3fe0cc2186f8c0f7877ba95bfa4fef6dcc000caba3e</code> (re-verified at write time). OL numbering (OL-1…OL-11) is taken from its §4.2; this note executes its §"next" items 1–3.</li>
+<li><strong>Tip 7cddb188 untouched.</strong> No git operations performed.</li>
+</ul>
+<h3 id="sources-read-sha256-at-write-time">Sources read (sha256 at write time)</h3>
+<table>
+<thead>
+<tr>
+<th>Short</th>
+<th>Path</th>
+<th>sha256</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[SW]</td>
+<td><code>quantum-comp/oct17-master/docs/hqh539-verification/Architecture_SHA3_Sandwich.md</code></td>
+<td><code>fdad074d…a09d49ab</code></td>
+</tr>
+<tr>
+<td>[FG]</td>
+<td><code>quantum-comp/oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/HQH539_Formal_Games_and_Hard_Problem_Pi.md</code></td>
+<td><code>03865621…3a64dde8</code></td>
+</tr>
+<tr>
+<td>[FG-A]</td>
+<td>same dir, <code>HQH539_Formal_Games_Addendum_2026-09-14.md</code></td>
+<td><code>4d3a168d…b2f9860c</code></td>
+</tr>
+<tr>
+<td>[SR]</td>
+<td>same dir, <code>HQH539_Security_Reductions_Exploration.md</code> (+ Addendum 2026-09-14)</td>
+<td><code>9f3a6a74…5ab05b</code></td>
+</tr>
+<tr>
+<td>[RPP]</td>
+<td><code>quantum-comp/reports/crypto/RPP_formal_statement/RPP_formal_statement.md</code></td>
+<td><code>173c2c66…77dac</code></td>
+</tr>
+<tr>
+<td>[REF]</td>
+<td><code>quantum-comp/oct17-master/docs/hqh539-verification/hqh539.py</code></td>
+<td><code>fef5fce5…8115dd</code></td>
+</tr>
+<tr>
+<td>[FREEZE]</td>
+<td>same dir, <code>FREEZE_LOCK_Canonical_4q2_SHA3_2026-08-02.md</code></td>
+<td><code>3d60ee3c…1022</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-pinned-primary-object-for-all-criterion-3-work-ol-1-ol-2-pin-as-read-from-freeze-ref">2. Pinned primary object for all Criterion-3 work (OL-1 / OL-2 pin, as read from FREEZE + REF)</h2>
+<p>This is a <strong>pin of what the code computes</strong>, not a rewrite of [FG]. All cards below use only this object; spec v0.2 domain-tag and P32 profiles are <strong>out of scope</strong> for Crit. 3 primary work.</p>
+<p><strong>T3_ref : ℕ → ℕ</strong> ([REF] <code>T3</code>, [FREEZE] §2, [RPP] §1.3):<br />
+- n = 3q → q<br />
+- n = 3q+1 → (4n+2)/3 = 4q+2 (exact)  — Canonical "4q+2" branch<br />
+- n = 3q+2 → ⌊(2n+1)/3⌋ = 2q+1</p>
+<p><strong>H_ref (Option A / REF, ACCEPTED in FREEZE):</strong> for message m, salt s (bytes):<br />
+1. x := int_be(SHA3-512(m ‖ s)) ∈ [0, 2^512)<br />
+2. z := T3_ref^L(x), L = 539 (loop packaged 18 + 521; packaging only, same map 539 times)<br />
+3. d := SHA3-512(enc(z) ‖ s ‖ DOMAIN_SEP), enc = minimal big-endian bytes, DOMAIN_SEP = b"" ([REF] line 16)</p>
+<p>Constants: L = 539, seed width n = 512, digest width 512. [FG] text for T3 differs from T3_ref on residue 2 (RPP §1.2–1.5); OL-1 author confirmation remains open — this pin does not close it, it only fixes the object Soft SF uses.</p>
+<h2 id="3-needs-definition-cards">3. NEEDS-DEFINITION cards</h2>
+<p>Notation: <code>⟦BLANK: …⟧</code> = author must supply; nothing in a blank is asserted. "On-disk" = existing sketch cited, not imported as proof.</p>
+<h3 id="card-ol-3-solution-domain-of">Card OL-3 — Solution domain of Π</h3>
+<p><strong>Proposed statement template.</strong></p>
+<blockquote>
+<p>Π_⟦D⟧(inst): Instance ⟦BLANK: y ∈ ℕ | digest d ∈ {0,1}^512 with salt s⟧. Solution x ∈ <strong>D</strong> with ⟦BLANK: T3_ref^L(x) = y | SHA3-512(enc(T3_ref^L(x))‖s) = d⟧ ∧ ⟦BLANK: residual predicate Res, see OL-4, or "none"⟧.<br />
+D ∈ { ℕ (free) | [0, 2^n) (bounded) | Im(SHA3-512 ∘ (·‖s)) (SHA3-image) } — ⟦BLANK: author choice⟧.</p>
+</blockquote>
+<p><strong>On-disk consequences per candidate (cited, not new):</strong><br />
+| D | Recorded status | Source |<br />
+|---|---|---|<br />
+| ℕ | trivially solvable: x = 3^L·y (proven on disk) | [RPP] §2.4(1); [FG-A] |<br />
+| [0,2^512) | heuristic/empirical easiness at hash parameters (best-first 100/100); no proof either way | [RPP] §2.4(6) — labeled heuristic |<br />
+| Im(SHA3) | equals Preimage(H_ref) itself; no content beyond the game | [RPP] R1, R4 |<br />
+| Π_dig, D = ℕ | equivalent to SHA3-512 preimage on enc(z)‖s; T3 layer adds nothing | [RPP] R2 |</p>
+<p><strong>Status:</strong> NEEDS-DEFINITION. No candidate is asserted hard here.</p>
+<h3 id="card-ol-4-residual-path-predicate">Card OL-4 — Residual path predicate</h3>
+<p><strong>Proposed statement template.</strong></p>
+<blockquote>
+<p>Res : (u_0,…,u_L; P) → {0,1}, where P = (O_res, block partition 3×68 + 5×67, ⟦BLANK: permanent class [α⊗δf] or none⟧, ⟦BLANK: activity flag⟧).<br />
+Required sub-definitions: (a) ⟦BLANK: map ι from step index i and/or value u_i to O_res label⟧; (b) ⟦BLANK: fiber-membership rule, map to block id ∈ {0..7}⟧; (c) ⟦BLANK: permanent-class evaluation as a Boolean of the path⟧; (d) ⟦BLANK: who sets "active" — public param / per instance⟧; (e) ⟦BLANK: does Res restrict seeds, orbits, or digests⟧.<br />
+<strong>Alternative (explicit drop):</strong> declare Res ≡ 1 for the public-hash reduction target and rename the problem ⟦BLANK: name⟧ so it is not called RPP-with-residuals.</p>
+</blockquote>
+<p><strong>On-disk:</strong> [FG] §Π search task (residual constraints "when active"); [RPP] §2.5 items 1–4 (none defined); U1 I10: H_ref does not evaluate residuals; [SR] §7 residual-only tracks. Arithmetic 3·68+5·67 = 539 fixes block sizes only.<br />
+<strong>Status:</strong> NEEDS-DEFINITION. Until filled, Π_res is not statable; no sparsity/density statement is made.</p>
+<h3 id="card-ol-5-family">Card OL-5 — λ-family</h3>
+<p><strong>Proposed statement template.</strong></p>
+<blockquote>
+<p>Family {H_λ}<em>{λ∈ℕ}: L(λ) = ⟦BLANK⟧, seed width n(λ) = ⟦BLANK⟧, digest width ℓ(λ) = ⟦BLANK⟧, salt length bound ⟦BLANK⟧, inner/outer hash H_in(λ), H_out(λ) = ⟦BLANK: SHA3 variant or RO of output ℓ(λ)⟧, residual parameters P(λ) = ⟦BLANK: how 539 / 68 / 67 scale, or "fixed, residuals dropped"⟧.<br />
+Consistency requirement: H</em>{λ<em>} = H_ref at ⟦BLANK: λ</em>⟧ with (L, n, ℓ) = (539, 512, 512).</p>
+</blockquote>
+<p><strong>On-disk:</strong> [RPP] §2.2 item 6, §3.2(1); [RPP] §3.3(4) records (heuristic) that L has quantitative effect on state size — so L(λ) is not a free label.<br />
+<strong>Status:</strong> NEEDS-DEFINITION. Without it, "poly" and "negl" in §4 are not well-typed; only a concrete (fixed-parameter) table form could be used.</p>
+<h3 id="card-ol-7-c2-mid-fiber-collision-under-imsha3">Card OL-7 — C2 mid-fiber collision under Im(SHA3)</h3>
+<p><strong>Definition (random variable only; no bound asserted).</strong></p>
+<blockquote>
+<p>Let U, U′ be ⟦BLANK: independent uniform on {0,1}^512 | RO outputs on distinct inputs (m‖s) ≠ (m′‖s′)⟧, viewed as integers. Define the event<br />
+C2 := [ U ≠ U′ ∧ T3_ref^L(U) = T3_ref^L(U′) ], and ε_C2(L, n) := Pr[C2].<br />
+Equivalently ε_C2 = Σ_z p_z² − 2^{-n}, with p_z := Pr_U[T3_ref^L(U) = z] (collision probability of the 539-step state minus the trivial diagonal term).<br />
+Multi-query form for a q-query adversary: ε_C2^{(q)} := Pr[∃ i&lt;j ≤ q: C2 for (U_i, U_j)] ≤ ⟦BLANK: bound, e.g. C(q,2)·ε_C2 by union — only valid once ε_C2 is defined/bounded⟧.<br />
+Target lemma (OPEN): ε_C2(539, 512) ≤ ⟦BLANK: function, with proof⟧.</p>
+</blockquote>
+<p><strong>On-disk:</strong> [SW] §5 (C2 attack surface), §9 item 2 ("bound on probability that two independent RO outputs fall in the same T^539 fiber"); [RPP] R6 (proven: any state collision ⇒ H collision, same s); [RPP] §3.3(3) Rényi model R₂ — <strong>heuristic, model-extrapolated from n ≤ 48; not imported</strong>. Constructive fibers: <code>Architecture_Collision_4q2.md</code> §3.<br />
+<strong>Status:</strong> invent-pending. The blank is not filled. Note for the author: by R6 any mid-fiber term enters a CR reduction as an <em>additive loss</em>, so the direction of the needed lemma is an <strong>upper</strong> bound on ε_C2.</p>
+<h3 id="context-no-new-card-ol-6-ol-8-ol-9-ol-10">(Context, no new card) OL-6, OL-8, OL-9, OL-10</h3>
+<p>Remain invent-pending exactly as in prior FINDINGS §4.2. OL-6 (SHA3 programming/composition lemma) is referenced as a blank in §4. Not addressed further here.</p>
+<h2 id="4-criterion-3-adv-relation-skeleton-template-only">4. Criterion-3 Adv relation skeleton (template only)</h2>
+<p>What would <strong>count</strong> as a Crit. 3 relation — a shape, not a claim that any R exists:</p>
+<blockquote>
+<p>For each game G ∈ {Pre, SPR, Col} on H_λ and every adversary A running in time t_A with q oracle queries, there exists an algorithm R = R^A (explicitly given) with running time t_R ≤ ⟦BLANK: poly(λ)·t_A or concrete⟧ such that<br />
+<strong>Adv_G^{H_λ}(A) ≤ ⟦BLANK: poly(λ) or concrete factor k(q)⟧ · Adv_{Π_λ}(R^A) + ⟦BLANK: ε_hash (SHA3/RO term, OL-6)⟧ + ⟦BLANK: ε_C2^{(q)} for Col/SPR (OL-7)⟧ + negl(λ).</strong></p>
+</blockquote>
+<p>Mandatory components before the template is non-vacuous:<br />
+1. Π_λ fully defined (OL-3, OL-4) with a separately stated assumption (OL-9) not already trivial on disk.<br />
+2. λ-family (OL-5).<br />
+3. SHA3 model and planting/extraction lemma (OL-6): how R embeds a Π instance into A's view and extracts a Π witness from A's output.<br />
+4. Instance-space agreement (OL-10).<br />
+5. Explicit R: inputs, oracle simulation, extraction, running time.</p>
+<p>Known obstruction on disk: [FG-A] "No Pack+(S) algorithm R and no explicit advantage relation are constructible from the written games and written Pi"; [RPP] R3–R5. <strong>This note does not assert that any concrete R exists.</strong></p>
+<h2 id="5-explicit-non-claims">5. Explicit non-claims</h2>
+<ul>
+<li>No hardness of any Π variant is claimed; no proof of any OL is supplied.</li>
+<li>No value or bound for ε_C2 is claimed; heuristic Rényi figures (≈2^70 / 2^140) are <strong>not</strong> imported as results.</li>
+<li>No reduction R and no advantage relation is claimed to exist.</li>
+<li>No security level for HQH-539-512; no collision/preimage-resistance claim beyond what SHA3 alone is generally assumed to give.</li>
+<li>No Shor, Grover, or post-quantum claims of any kind.</li>
+<li>539 is packaging depth, not a mixing-time or clock theorem.</li>
+<li>The §2 pin does not edit [FG]; OL-1/OL-2 author confirmation remains open.</li>
+<li>Not peer reviewed (Criterion 4 unmet).</li>
+</ul>
+<h2 id="6-status-line">6. Status line</h2>
+<p>Tip 7cddb188 untouched · No CERT · draft-only · nothing pushed, sent, published, or spent.</p>
+<p><strong>Cards issued:</strong> OL-3 (Π domain), OL-4 (residual predicate), OL-5 (λ-family), OL-7 (C2 mid-fiber under Im(SHA3)); §2 pins the OL-1/OL-2 working object; §4 template touches OL-6/OL-8 only as blanks.</p>
+</body>
+</html>

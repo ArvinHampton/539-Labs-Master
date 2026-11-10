@@ -1,0 +1,123 @@
+## vector-valued|vector valued
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/ORDER64_BRIEF.md:18:Document allowed continuations still open: vector-valued / (1,1) / Δ-type — inventory which written objects exist for each, ABSENT list. No adopt
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/RESULTS.md:10:| B (vector-valued S-law) | Identity (B) holds | **Confirmed and proved**: exact at 216/216 points (two primes) + full proof below | A |
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/RESULTS.md:23:## Map B: the vector-valued S-law for RTA's C at leading order (new Category A theorem)
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/RESULTS.md:29:**Theorem 3 (vector-valued S-law of C at leading order).** Let Λ_C(y) = lim_{t→0+} t·C(e(y)e^{−t}). For every rational x > 0:
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/RESULTS.md:42:3. The vector-valued leading-order S-law of RTA's C (Theorem 3), with the 36-dimensional V as its module.
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/PREREG.md:6:Record Physicist ruling: order7 Cat A (M² = 35P ⇒ no nonzero P-even vector obeys fixed weight-1 105-dim M-law) EXPLAINS the RG47e w=1 defect. Sub
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/PREREG.md:10:## (c) Inventory of WRITTEN objects for tracks (1) vector-valued, (2) indefinite (1,1), (3) Δ-type
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/PREREG.md:11:Method: rg over BRIDGE_C_35/ and papers/ (text sources) for vector-valued / indefinite / (1,1) / signature / Δ-type / Delta-type. Log to logs/sear
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/logs/search.log:1:## vector-valued|vector valued
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order63/RESULTS.md:15:Physicist disposition 2026-10-24: Route A Weil χ=±i track CLOSED, Cat A, by order13 Lemma W (Θ_E + any h cannot satisfy χ=±i under standard T
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order63/PREREG.md:4:## (a) RG47f — corner/EVEN alone at w=1 under a WRITTEN vector-valued S-law / Δ-type pairing using s11 ρ_lab = ρ5⊗ρ7⊗ρ2
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order58/RESULTS.md:45:3. Route A can only continue with vector-valued or indefinite-signature constructions, e.g. a (1,1) mate or Δ-type laws. Excluding definite mates
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order62/RESULTS.md:24:RG47f: test the corner/EVEN piece alone under a vector-valued (ρ_lab, s11) S-law or Δ-type law at w=1 to explain the 2-dim defect (carriers den 
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/PREREG.md:19:- Residual-Law B3 (written, not attempted): a vector-valued leading-order law should exist over the 35 characteristic components.
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/PREREG.md:32:## 3. Map B (vector-valued law for RTA's C at leading order)
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/PREREG.md:33:Definition. Untwist: Λ_C(x) = I·e(7x/20)·K2_0(x). Map B asserts that RTA's C carries, at the 1/t order, the vector-valued S-law of the 35-component law 
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/PREREG.md:40:What Map B claims as a link: the RTA object C has a leading-order transformation law under x ↦ −1/x that is vector-valued in V (weight |x|^{−1}), aft
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order2/RESULTS.md:72:  - A closure would force rank ≤ 105. So **the order-2 profiles have no vector-valued law of weight 1/2 or 1 within their own span**.
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order2/PREREG.md:29:## 4. Map 3: vector-valued law at order 2 (Residual-Law B3; prediction: none)
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order2/PREREG.md:33:What a "not closed" outcome means: no finite vector-valued modular law at order 2 in the span of these 105 profiles (evidence only), consistent with
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order2/REPORT.md:10:3. **No vector-valued law at order 2 inside the companion's span (Category B).** Under x ↦ −1/x, with weight 1/2 or 1, the 105 order-2 profiles 
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order2/REPORT.md:37:- The vector-valued structure found at leading order, the 36-dimensional V, does not persist at order 2 in finite form inside the companion's own sp
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order2/scripts/map3_closure.py:1:# Map 3 (Category B): order-2 vector-valued closure test for the 105 companions, with the leading-order control.
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/ORDER60_BRIEF.md:24:- Allowed continuations only: vector-valued, indefinite (1,1), or Δ-type laws.
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/ORDER63_BRIEF.md:11:- Test corner/EVEN piece alone against a **written** vector-valued S-law at w=1 using s11 ρ_lab (ρ5⊗ρ7⊗ρ2) ingredients already on disk, OR S
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/REPORT.md:10:2. **Map B, confirmed and proved (Category A).** After removing q^{7/20}, RTA's C carries the exact vector-valued S-law of the 35-component law vector at l
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/REPORT.md:30:- Residual-Law note (`reports/heavy-daily/2026-10-17-Bridge-C-Residual-Law.md`): radial asymptotics (A2, proof sketch), Baker obstruction (A3), scalar W_7 
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/REPORT.md:61:3. The explicit leading-order vector-valued S-law of RTA's C, with module V.
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/REPORT.md:76:- **(a)** Adopt q^{−7/20}C as RTA's normalized Bridge Series and pursue the next order: the t^{−1/2} terms (shadow side), using the 105 shifted and twi
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order60/RESULTS.md:22:Per order58 amend: RG48 Weil χ=±i span was not executed as preregistered (no Cat A verdict). Milgram / definite genus-mate enumeration is Cat B 
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order57/GATE_DECISIONS.md:13:- **RG48 / Route A Weil (χ=±i) track: CLOSED** (Category A) by order13 Lemma W: Θ_E + any h cannot satisfy χ=±i under the standard T-l
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order3/PREREG.md:48:Only Map 2 with all predictions holding and the control passing. It would say: the obstruction to a finite vector-valued law at order 2 (order2 Map 
+## indefinite|\(1,1\)|signature
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/ORDER64_BRIEF.md:18:Document allowed continuations still open: vector-valued / (1,1) / Δ-type — inventory which written objects exist for each, ABSENT list. No adopt
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/MAPS_CANDIDATES/PATTERN_SIGNED_RR/NOTES.md:5:- I use the signed cone-weighted lattice content, i.e. the H_s-type indefinite theta per label. I do not use the full Siege
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order12/RESULTS.md:29:- **Next construction:** the χ = ±i basis should be built from the Weil representation itself, by computing the discriminant form of the compani
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order12/PREREG.md:9:- A' = [[a,b],[b,c]] are integers with ac − b² = 35, |b| ≤ 7, a, c ≤ 42. That gives **82 matrices** (signature (2,0), det 35, like −det A).
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order12/PREREG.md:11:- Rationale: a definite lattice with the same discriminant form as A has Weil-representation factor e(−2/8) = −i relative to signature (1,1). T
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order12/PREREG.md:17:  - **Predicted: FAIL.** Reason: Θ_E is a holomorphic indefinite-cone series whose radial A1 and A2 carry edge (wall) terms (order8 M2c/order9 R1)
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order12/NOTES.md:29:- **Next construction:** the χ = ±i basis should be built from the Weil representation itself, by computing the discriminant form of the companion
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order63/RESULTS.md:15:Physicist disposition 2026-10-24: Route A Weil χ=±i track CLOSED, Cat A, by order13 Lemma W (Θ_E + any h cannot satisfy χ=±i under standard T
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order13/PREREG.md:14:The genus-mate basis is therefore not needed. A Milgram remark, for context: a signature-2 lattice with the same discriminant form would need sig �
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order31/RESULTS.md:11:| ((1,0),(1,1)) | 0.788 | 0.0936 | 0.996 |
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order4a/PREREG.md:5:Source principle: Zwegers-type completion of indefinite theta series of signature (1,1). The boundary weight sgn is replaced by its erf-completion. 
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order4a/NOTES.md:3:- **Untested variant.** The preregistered family used coefficients ε_Q ∈ {0,1}. A completion with non-trivial, analytically derived coefficients w
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/PREREG.md:6:Record Physicist ruling: order7 Cat A (M² = 35P ⇒ no nonzero P-even vector obeys fixed weight-1 105-dim M-law) EXPLAINS the RG47e w=1 defect. Sub
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/PREREG.md:10:## (c) Inventory of WRITTEN objects for tracks (1) vector-valued, (2) indefinite (1,1), (3) Δ-type
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/PREREG.md:11:Method: rg over BRIDGE_C_35/ and papers/ (text sources) for vector-valued / indefinite / (1,1) / signature / Δ-type / Delta-type. Log to logs/sear
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/MAPS_CANDIDATES/PATTERN_S_MARKOV/RESULTS.md:4:| fibre | ρ_res (MF2) | push(π), π = S-orbit average | class (0,0) | class (1,1) |
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/logs/search.log:2:/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/ORDER64_BRIEF.md:18:Document allowed continuations still open: vector-valued / (1,1) / Δ-
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/logs/search.log:8:/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/PREREG.md:10:## (c) Inventory of WRITTEN objects for tracks (1) vector-valued, (2)
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/logs/search.log:9:/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/PREREG.md:11:Method: rg over BRIDGE_C_35/ and papers/ (text sources) for vector-va
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/logs/search.log:13:/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order58/RESULTS.md:45:3. Route A can only continue with vector-valued or indefinite-signa
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/logs/search.log:25:/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/ORDER60_BRIEF.md:24:- Allowed continuations only: vector-valued, indefinite (1,1), or Δ-
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/logs/search.log:34:## indefinite|\(1,1\)|signature
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/MAPS_CANDIDATES/PATTERN_S_MARKOV/PREREG.md:9:Explore finds this matrix is doubly stochastic and reducible, with 3 closed classes (coset α, coset β): (0,0), (1,1), and
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/MAPS_CANDIDATES/PATTERN_S_MARKOV/NOTES.md:8:(a) The |S|² chain is doubly stochastic. It is reducible into exactly 3 closed classes indexed by (coset α, coset β): (0,
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/MAPS_CANDIDATES/PATTERN_S_MARKOV/NOTES.md:13:- The (1,1) class (a-cosets) supports {1,3,5,7}, the odd fibres. The (0,0) class supports {0,4}.
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order10/PREREG.md:29:"Even-piece ξ-shadow located" requires a weight-1 completion Θ̂_E with ξ₁Θ̂_E equal to a sum of weight-3/2 unary thetas. The Φ₀ route gi
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/MAPS_CANDIDATES/PATTERN_S_MARKOV/scripts/explore.py:47:blocks={'(0,0)':cls[(0,0)],'(1,1)':cls[(1,1)],'(0,1)+(1,0)':cls[(0,1)]+cls[(1,0)]}
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/MAPS_CANDIDATES/PATTERN_S_MARKOV/logs/explore.log:52:  "(1,1)": {
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/MAPS_CANDIDATES/PATTERN_S_MARKOV/data/explore.json:34:  "(1,1)": {
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/ORDER60_BRIEF.md:24:- Allowed continuations only: vector-valued, indefinite (1,1), or Δ-type laws.
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order58/RESULTS.md:36:  - its even rescaling A(2) = [[4,14],[14,14]] has det −140, signature (1,1), and Milgram sum 1.000;
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order58/RESULTS.md:45:3. Route A can only continue with vector-valued or indefinite-signature constructions, e.g. a (1,1) mate or Δ-type laws. Excluding definite mates
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order58/PREREG.md:21:Enumerate discriminant form of companion lattice (as written in order12) + signature-2 genus mates.
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order62/RESULTS.md:15:1. order12/RESULTS.md:29 — "the χ = ±i basis should be built from the Weil representation itself, by computing the discriminant form of the co
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order62/RESULTS.md:20:ABSENT: companion-lattice discriminant form / Gram as a written object; χ=±i Weil eigenvectors over a full basis; written signature-2 genus-mate
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/MAPS_CANDIDATES/PATTERN_FIBRE_RR/NOTES.md:20:The obstruction is in the unary exponent itself. The written object that escapes it is the **binary** form of the same fami
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order61/RESULTS.md:41:- a signature-2 genus-mate basis.
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order60/RESULTS.md:22:Per order58 amend: RG48 Weil χ=±i span was not executed as preregistered (no Cat A verdict). Milgram / definite genus-mate enumeration is Cat B 
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/MAPS_CANDIDATES/PATTERN_ST_MARKOV/RESULTS.md:6:- C35: type (1,1); 35 labels.
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/MAPS_CANDIDATES/PATTERN_ST_MARKOV/PREREG.md:11:- C35 = {(1,1)}, 35 labels.
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order23/PREREG.md:5:K1 = cone(e1,(1,1)), K2 = cone((1,1),e2). Exact weights: on K's interior and on the ray (1,1) the two subcones add to 1; on the rays e1, e2 they giv
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order7/RESULTS.md:7:**Status.** This is Category A by Weil-representation theory: S² = Z acts as α ↦ −α with e(−sig/4) = 1 for signature (1,1). The numerical c
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order23/scripts/o23.py:19:        K1[ix,j]=corner(al,be,x,(1,0),(1,1)); K2[ix,j]=corner(al,be,x,(1,1),(0,1))
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order7/REPORT.md:7:**Status.** This is Category A by Weil-representation theory: S² = Z acts as α ↦ −α with e(−sig/4) = 1 for signature (1,1). The numerical ch
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order40/RESULTS.md:10:| ((1,1),(0,1)) | 0.02072 | 0.02317 | 0.265 |
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order22/RESULTS.md:8:| **Map RG9b**: Corner(e1,(1,1)) + Corner((1,1),e2) = Corner(e1,e2) | max abs 0.250 | **FAIL** |
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order22/PREREG.md:17:## Map RG9b (cone additivity under subdivision by the ray (1,1))
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order22/PREREG.md:18:Corner_{(e1,(1,1))} + Corner_{((1,1),e2)} = Corner_{(e1,e2)} = CO (each subcone unimodular). Metric: max abs difference. PASS ≤ 1e−9; FAIL ≥ 
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order22/scripts/o22.py:46:        K1[ix,j]=corner(al,be,x,(1,0),(1,1)); K2[ix,j]=corner(al,be,x,(1,1),(0,1))
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order28/RESULTS.md:20:Post-hoc observation: J1 = γ⁻¹K2 and J2 = γ⁻¹K1 (γ⁻¹(1,1) = (20,−3)). So the mediant subdivision of γ⁻¹K is the γ⁻¹-transpor
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/REVIEW_2026-10-24/REPORT.md:10:- **The fibre parity structure is clean and nobody has tested it.** C35 (type (1,1)) lives only on odd fibres {1,3,5,7}. Class (0,0) live
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order28/PREREG.md:10:Cones (continued-fraction or Farey subdivisions of the boundary rays): K1 = cone((1,0),(1,1)), K2 = cone((1,1),(0,1)) (order23 subdivision of K); J
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/MAPS_CANDIDATES/PATTERN_QNU_RR/PREREG.md:12:Why not the cone weight w(v)? w(v) (rev8 l.~155) is written for the convergence of the indefinite series. Any cone of positi
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order28/scripts/o28.py:22:cones={'K':((1,0),(0,1)),'K1':((1,0),(1,1)),'K2':((1,1),(0,1)),'J1':((7,-1),(20,-3)),'J2':((20,-3),(13,-2))}
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order32/RESULTS.md:11:Disclosure (post-hoc): ((1,0),(8,−1)) = h((1,0),(1,1)) and ((1,0),(9,−1)) = h((1,0),(2,1)), since h = [[1,7],[0,−1]] fixes e1. Their values 
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order5/PREREG.md:10:### 1.1 Indefinite form and cone structure
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order5/PREREG.md:11:Q has signature (1,1). With c1 = (−1,1), c2 = (−4,1): A c1 = (5,0), A c2 = (−1,−21), so B(c1,v) = 5n and B(c2,v) = −(n+21k). Hence
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order57/AUDIT_CORPUS.md:19:- A25_H3_map_search/hits.json and A22_grok_export_search/core_hits.json: these quote "completed indefinite theta ... holomorphic projection e
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order57/AUDIT_CORPUS.md:30:- W2. order12 RESULTS:22–29: Lemma O (Category A). P-even has no completion under χ=±1 (Category A) and none under χ=±i in the tested b
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order57/AUDIT_CORPUS.md:42:**RG48: W2 no-go (Category A).** Compute the discriminant form of the companion lattice and enumerate the signature-2 genus mates. Preregiste
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order57/GATE_DECISIONS.md:13:- **RG48 / Route A Weil (χ=±i) track: CLOSED** (Category A) by order13 Lemma W: Θ_E + any h cannot satisfy χ=±i under the standard T-l
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order5/scripts/zwegers.py:1:# task (a) test Z + controls + P3: completed indefinite theta series at interior tau vs the fixed 35-component law vector S-matrix
+## Δ-type|Delta-type|delta type
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/ORDER64_BRIEF.md:18:Document allowed continuations still open: vector-valued / (1,1) / Δ-type — inventory which written objects exist for each, ABSENT list. No adopt
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/PREREG.md:6:Record Physicist ruling: order7 Cat A (M² = 35P ⇒ no nonzero P-even vector obeys fixed weight-1 105-dim M-law) EXPLAINS the RG47e w=1 defect. Sub
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/PREREG.md:10:## (c) Inventory of WRITTEN objects for tracks (1) vector-valued, (2) indefinite (1,1), (3) Δ-type
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/PREREG.md:11:Method: rg over BRIDGE_C_35/ and papers/ (text sources) for vector-valued / indefinite / (1,1) / signature / Δ-type / Delta-type. Log to logs/sear
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/logs/search.log:2:/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/ORDER64_BRIEF.md:18:Document allowed continuations still open: vector-valued / (1,1) / Δ-
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/logs/search.log:8:/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/PREREG.md:10:## (c) Inventory of WRITTEN objects for tracks (1) vector-valued, (2)
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/logs/search.log:9:/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/PREREG.md:11:Method: rg over BRIDGE_C_35/ and papers/ (text sources) for vector-va
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/logs/search.log:12:/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order63/PREREG.md:4:## (a) RG47f — corner/EVEN alone at w=1 under a WRITTEN vector-valu
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/logs/search.log:13:/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order58/RESULTS.md:45:3. Route A can only continue with vector-valued or indefinite-signa
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/logs/search.log:14:/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order62/RESULTS.md:24:RG47f: test the corner/EVEN piece alone under a vector-valued (ρ_l
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/logs/search.log:25:/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/ORDER60_BRIEF.md:24:- Allowed continuations only: vector-valued, indefinite (1,1), or Δ-
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/logs/search.log:35:/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/ORDER64_BRIEF.md:18:Document allowed continuations still open: vector-valued / (1,1) / Δ
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/logs/search.log:48:/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/PREREG.md:10:## (c) Inventory of WRITTEN objects for tracks (1) vector-valued, (2
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/logs/search.log:49:/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/PREREG.md:11:Method: rg over BRIDGE_C_35/ and papers/ (text sources) for vector-v
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/logs/search.log:64:/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/ORDER60_BRIEF.md:24:- Allowed continuations only: vector-valued, indefinite (1,1), or Δ-
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/logs/search.log:66:/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order58/RESULTS.md:45:3. Route A can only continue with vector-valued or indefinite-signa
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order64/logs/search.log:97:## Δ-type|Delta-type|delta type
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order57/GATE_DECISIONS.md:13:- **RG48 / Route A Weil (χ=±i) track: CLOSED** (Category A) by order13 Lemma W: Θ_E + any h cannot satisfy χ=±i under the standard T-l
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order62/RESULTS.md:24:RG47f: test the corner/EVEN piece alone under a vector-valued (ρ_lab, s11) S-law or Δ-type law at w=1 to explain the 2-dim defect (carriers den 
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order63/RESULTS.md:5:No written formula pairs corner/EVEN (order61/62 R) with s11 ρ_lab = ρ5⊗ρ7⊗ρ2, and no written Δ-type law for it at w=1. Searched (logs/rg4
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order63/RESULTS.md:15:Physicist disposition 2026-10-24: Route A Weil χ=±i track CLOSED, Cat A, by order13 Lemma W (Θ_E + any h cannot satisfy χ=±i under standard T
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order60/RESULTS.md:22:Per order58 amend: RG48 Weil χ=±i span was not executed as preregistered (no Cat A verdict). Milgram / definite genus-mate enumeration is Cat B 
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order63/PREREG.md:4:## (a) RG47f — corner/EVEN alone at w=1 under a WRITTEN vector-valued S-law / Δ-type pairing using s11 ρ_lab = ρ5⊗ρ7⊗ρ2
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order63/PREREG.md:5:Step 0 (gate, non-numeric): search corpus for a written formula that pairs the corner/EVEN piece (order61/62 R) with ρ_lab components (or a Δ-type
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/ORDER60_BRIEF.md:24:- Allowed continuations only: vector-valued, indefinite (1,1), or Δ-type laws.
+/workspace/quantum-comp/reports/bridges/BRIDGE_C_35/order58/RESULTS.md:45:3. Route A can only continue with vector-valued or indefinite-signature constructions, e.g. a (1,1) mate or Δ-type laws. Excluding definite mates

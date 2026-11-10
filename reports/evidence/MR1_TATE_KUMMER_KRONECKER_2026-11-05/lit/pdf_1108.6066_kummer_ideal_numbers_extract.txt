@@ -1,0 +1,199 @@
+arXiv:1108.6066v1 [math.NT] 30 Aug 2011
+
+JACOBI AND KUMMER’S IDEAL NUMBERS
+FRANZ LEMMERMEYER
+Abstract. In this article we give a modern interpretation of Kummer’s ideal
+numbers and show how they developed from Jacobi’s work on cyclotomy, in
+particular the methods for studying “Jacobi sums” which he presented in his
+lectures on number theory and cyclotomy in the winter semester 1836/37.
+
+Dem Andenken an Herbert Pieper1 (1943 – 2008) gewidmet.
+Every mathematician nowadays is familiar with the notion of an ideal in a ring.
+Ideals were introduced by Dedekind when he generalized Kummer’s ideal numbers
+to general number fields. Kummer had invented ideal numbers in order to restore
+some kind of unique factorization in cyclotomic rings, and in the literature one
+usually finds the following characterizations of Kummer’s invention:
+(1) Kummer’s idea was brilliant and new; there were no traces of it in the
+number theoretical work of his predecessors: it appeared out of the blue
+and solved the “problem” of nonunique factorization in a way reminiscent
+of Alexander the Great’s solution of the Gordian knot.
+(2) Kummer’s definition of an ideal prime is difficult to understand and not
+easy to use in practice.
+These opinions seem to be generally accepted: Dickson [8], to quote a typical example, wrote in connection with his review of Reid’s textbook on algebraic number
+theory:
+He [Reid] wisely did not attempt to give any idea of Kummer’s
+ideal numbers, the operations on which are so delicate that one
+must use the utmost circumspection (as remarked by Dedekind in
+his important historical papers in Darboux’s Bulletin).
+This explains why there are hardly any expositions of Kummer’s theory of ideal
+numbers; among the few exceptions are Edwards’ book [12] and Soublin’s article
+[40]. Nevertheless, Kummer’s articles on the arithmetic of cyclotomic number fields
+are fairly easy to read2 by simply replacing the expression “ideal number” by the
+word “ideal”. This works very well except for his work on the foundations of
+his theory of ideal numbers: the problems Kummer had to overcome when he
+introduced ideal numbers seem to differ fundamentally from the obstacles Dedekind
+had to deal with when he introduced ideals.
+Let us now summarize the content of this article:
+1
+Eine Würdigung von E. Knobloch zu Piepers 65. Geburtstag findet sich auf
+http://www.uni-potsdam.de/u/romanistik/humboldt/hin/hin16/knobloch.htm .
+2
+The majority of Kummer’s articles is written in German, only a few in Latin and French.
+
+1
+
+2
+
+FRANZ LEMMERMEYER
+
+• We start by giving a brief summary of Jacobi’s lectures on number theory
+and cyclotomy in the winter semester 1836/37; as we will show, they played
+a major role in the development of Kummer’s notion of ideal numbers.
+• Next we address the role of Fermat’s Last Theorem in Kummer’s early
+work.
+• Afterwards we explain the “Jacobi maps”, certain substitutions used by
+Jacobi that turned out to be the key idea later used by Kummer when he
+invented ideal numbers.
+• In our discussion of Kummer’s ideal numbers we offer a translation of ideal
+numbers into the modern mathematical language which is more faithful
+than the simple substitution of “ideal” for “ideal number”. We try to correct the historical picture of the development of Kummer’s ideal numbers3
+by showing that the notion of ideal numbers used by Kummer is perfectly
+natural, and that it is based to a large degree on ideas put forth by Jacobi
+in his investigations in cyclotomy. Moreover, a theory of divisibility built on
+these ideas is hardly more complicated than Dedekind’s approach; Jung, in
+his introductory lectures [25] on the arithmetic of quadratic number fields,
+uses an approach that is very close to Kummer’s first attempt at defining
+ideal numbers, and so do Stevenhagen & Lenstra in [41, p. 33].
+• Finally we discuss the relevance of the notion of integral closure for Kummer’s work by looking carefully at the concept of singularity in number
+theory and algebraic geometry.
+It seems that the importance of Jacobi’s Königsberg lectures [24] on number theory
+for the development of ideal numbers has not been recognized before. Apparently
+Kummer had carefully studied a copy of Jacobi’s lectures. We know from Jacobi
+himself that Kummer had access to these lecture notes: In 1846, Jacobi had a note
+from 1837 reprinted in Crelle’s Journal [23] and added a footnote in which he said:
+Diese aus vielfach verbreiteten Nachschriften der oben erwähnten Vorlesung (an der Königsberger Universität) auch den Herren
+Dirichlet und Kummer seit mehreren Jahren bekannten Beweise
+sind neuerdings von Hrn. Dr. Eisenstein im 27ten Bande des
+Crelleschen Journals auf S. 53 publicirt worden.4
+Whether Eisenstein really had seen Jacobi’s lecture notes prior to 1846 is open to
+debate; most (if not all) historians of mathematics seem to agree that Eisenstein
+developed his proofs of quadratic, cubic and quartic reciprocity laws independently
+from Jacobi. Later, both Kummer and Eisenstein employed (without attribution)
+some form of p-adic development of the logarithm, which first appeared in Jacobi’s
+lectures.
+1. Jacobi’s Königsberg Lectures
+In his lectures [24] on number theory during the winter semester 1836/37, Jacobi
+introduced his audience to the basic theory of Gauss and Jacobi sums (at that time,
+this was called the theory of cyclotomy (Kreisteilung)), and applied these techniques
+to derive the quadratic, cubic and quartic reciprocity laws, as well as results on the
+3See Bölling [3], Edwards [12, 13, 14, 15, 16], Neumann [34] and Soublin [40].
+4These proofs, which were known for several years to Mr. Dirichlet and Mr. Kummer, among
+others, through widely circulated notes of the lectures (at the University of Königsberg) mentioned
+above, have lately been published by Dr. Eisenstein on p. 53 of the 27th volume of Crelle’s Journal.
+
+JACOBI AND KUMMER’S IDEAL NUMBERS
+
+3
+
+representation of primes by quadratic forms that led him to conjecture Dirichlet’s
+class number formula for binary quadratic forms of negative prime discriminants.
+Today, these results are proved using the ideal decomposition of Gauss and Jacobi
+sums. The fact that Jacobi’s proofs are essentially equivalent to the modern proofs
+implies that he must have possessed a technique that allowed him to express the
+essential content of the prime ideal factorizations of Gauss and Jacobi sums. We
+will say more on this in Sections 4 and 5, and now turn to the content of Jacobi’s
+lectures.
+In the first 5 lectures, Jacobi presents elementary number theory: congruences,
+primes, Euler’s phi function, the theorem of Euler-Fermat, quadratic residues, and
+the Legendre symbol. The second part deals with cyclotomy: he introduces Gauss
+and Jacobi sums (without their modern names, of course), develops their basic
+properties, and explains the connections between Gauss sums and certain binomial
+
+coefficients; in particular, he proves Gauss’s famous congruence 2a ≡ ± 2n
+n mod p
+for primes p = a2 + 4b2 = 4n + 1. The third part of the lectures is dedicated to
+applications of cyclotomy to number theory. Jacobi begins with his proof of the
+quadratic reciprocity law (the one Legendre included in his Théorie des Nombres,
+and which led to the priority dispute between Jacobi and Eisenstein that began with
+Jacobi’s footnote quoted above), then derives results by Dirichlet on quartic residues
+as well as the full quartic reciprocity law. After briefly discussing cubic residues
+and proving the cubic reciprocity law, Jacobi then shows that if λ ≡ 3 mod 4
+h
+2
+2
+and p = λn + 1 are primes (this implies that ( −λ
+p ) = +1), then 4p = x + λy
+for integers x, y and some positive integer h that can be expressed as a sum of
+Legendre symbols, and which Jacobi conjectured to be equal to the number of
+classes of binary quadratic forms with discriminant −λ. In the last few lectures, he
+deals with similar problems for primes λ ≡ 1 mod 4.
+It is remarkable how quickly Jacobi led his audience from the basic facts of elementary number theory right into the middle of research problems he was working
+on.5
+Jacobi’s principal technique for studying Gauss and Jacobi sums were certain
+substitutions, whose key role in the era before Kummer’s ideal numbers was emphasized by Frobenius [35, p. 117–118]:
+Als Cauchy, Jacobi und Kummer angefangen hatten, die Untersuchungen von Gauss über complexe Zahlen auf allgemeinere aus
+Einheitswurzeln gebildete algebraische Zahlen auszudehnen, ergab
+sich das unerwünschte Resultat, daß in diesem Gebiete zwei Zahlen
+nicht immer einen größten gemeinsamen Divisor besitzen, und daß
+Producte unzerlegbarer Factoren einander gleich sein können, ohne
+daß die Factoren einzeln übereinstimmen. Die Gleichheit solcher
+Producte konnte man daher immer nur durch besondere Kunstgriffe
+beweisen, zu denen namentlich der gehörte, durch Substitution
+gewisser rationalen Zahlen für die algebraischen die untersuchten
+Gleichungen in Congruenzen zu verwandeln. Mit den Methoden,
+5Many of the results that Jacobi presented in his lectures had also been obtained around 1830
+by Cauchy, who published his theory in a long series of articles [5] in 1840. Lebesgue [31] later
+gave simplified proofs for the main results of Jacobi and Cauchy “on just a few pages”, as he
+proudly remarked.
+
+4
+
+FRANZ LEMMERMEYER
+
+solcher Schwierigkeiten Herr zu werden, beschäftigt sich auch ein
+großer Theil von Kronecker’s Dissertation.6
+We remark that the first part of Kronecker’s thesis (written under the supervision
+of Kummer) deals with the basic arithmetic of cyclotomic fields. The following
+result is related to the finiteness of the class number of cyclotomic number fields
+once Kummer had introduced ideal numbers and the class group: Let Mλ denote
+the maximum of the norm of x + x1 ε + . . . + xλ−1 ελ−1 as −1 ≤ xj ≤ 1 (here ε is
+a primitive λth root of unity). Then for any prime p there is an integer n < Mλ
+such that np is a norm from Q(ε). Kronecker observes that this is analogous to
+the finiteness of the number of reduced forms. In the second part of his thesis,
+Kronecker proved “Dirichlet’s” unit theorem for cyclotomic extensions.
+2. Kummer and Fermat’s Last Theorem
+The story according to which Kummer, at the beginning of his career, gave a
+proof of Fermat’s Last Theorem in which he erroneously assumed unique factorization in the number rings Z[α] of λ-th roots of unity7 probably first appeared
+in the “Gedächtnisrede” on Kummer by Hensel [35], and is now believed to be
+false. Indeed, Edwards [12, 13, 14], Neumann [34] and Bölling [4] have shown that
+Kummer’s first article on cyclotomy dealt with the factorization of primes λm + 1
+in the rings Z[α] of λ-th roots of unity, and that his (false) result implied unique
+factorization in Z[α].
+Hensel [35, p. 93] even claimed that Kummer developed his theory of ideal
+numbers only because of Fermat’s Last Theorem, and this is definitely not true (see
+also [6]). The weaker claim that Kummer invented his ideal numbers in connection
+with his work on Fermat’s Last Theorem is a story that perhaps originated in a
+short note by Kronecker [26], who claimed
+So führte das Reciprocitätsgesetz für quadratische Reste schon zur
+weiteren Ausbildung der Theorie der Kreistheilung, und der berühmte Fermat’sche Satz gab Hrn. Kummer vor etwa dreissig
+Jahren die hauptsächlichste Anregung zu jenen von so glücklichem
+Erfolge gekrönten Untersuchungen, auf denen das Reuschle’sche
+Werk basirt und deren Weiterförderung es zugleich gewidmet ist.8
+Kummer himself left no doubt as to which problems motivated his work; in [28],
+he writes
+6When Cauchy, Jacobi and Kummer started to extend Gauss’s investigations on complex
+numbers to general algebraic numbers formed with roots of unity, they came across the unpleasant
+fact that in this domain two numbers do not always have a greatest common divisor, and that
+products of irreducible factors can be equal without the factors being the same. The equality
+of such products could be proved only by resorting to certain tricks, notably the one that turns
+the equations under investigation into congruences by substitutions of certain rational numbers
+for the algebraic numbers. A large part of Kronecker’s dissertation deals with the methods for
+mastering such problems.
+7In Jacobi’s and Kummer’s notation, λ is an odd prime number and α a primitive root of the
+equation αλ = 1. The ring Z[α] consists of all Z-linear combinations of powers of α.
+8Thus the reciprocity law for quadratic residues led to the further development of the theory of
+cyclotomy, and Fermat’s famous theorem was thirty years ago Kummer’s main motivation for his
+successful investigations on which the work of Reuschle is built and to whose further advancement
+it is dedicated.
+
+

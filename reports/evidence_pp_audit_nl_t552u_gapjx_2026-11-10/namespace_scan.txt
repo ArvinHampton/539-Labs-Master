@@ -1,0 +1,50 @@
+PP namespace scan, NL frozen scripts (t552u gapjx), 2026-11-10 12:17:59 CST
+== /workspace/nl-gapjx-t552-1110/gapjx_gap.py (516a87b7d9244cb05a43cad1c64497972cdd9d6281fe01ed629a1054a77161dc)
+-- imports:
+4:import sympy as sp
+5:from fractions import Fraction as Fr
+-- risky names (float|numpy|np.|allclose|nsimplify|simplify|evalf|.n(|N( ) incl. comments:
+3:# {sin^2+cos^2-1}, or exact Rational/Fraction comparisons. No simplify()==0, no allclose, no floats in any test.
+103:# consistency only (stage-2 printed floats, CONDITIONAL; not evidence): e_u/n at n=1..5 and e_u(100)
+123:check("A9a n* = 248: g_IR >= n^2/20 - n - 2808.6 > 0 for all n >= 248 and all u >= 1 (no float enters the IR sign)",
+-- sympy reshaping calls used (exact; reported for transparency):
+      1 41:sp.together
+      1 56:sp.sqrt
+      1 70:sp.numer
+      1 70:sp.together
+      1 71:sp.reduced
+      1 76:sp.sqrt
+      1 85:sp.sqrt
+      2 90:sp.sqrt
+      1 92:sp.sqrt
+      1 95:sp.together
+      1 96:sp.together
+-- [PASS]/[FAIL] lines in frozen NL log:
+== /workspace/nl-gapjx-t552-1110/gapjx_junction.py (b054521be0b458821afc7d6bf6d44ae48bb1ba41d2181e4f5f2217e6309a0ac9)
+-- imports:
+4:import sympy as sp
+5:from fractions import Fraction as Fr
+101:import itertools
+-- risky names (float|numpy|np.|allclose|nsimplify|simplify|evalf|.n(|N( ) incl. comments:
+3:# No simplify()==0, no allclose, no floats in any test.
+-- sympy reshaping calls used (exact; reported for transparency):
+      2 102:sp.LeviCivita
+      1 80:sp.expand_power_base
+      1 80:sp.powsimp
+      1 81:sp.expand_power_base
+      1 81:sp.powsimp
+      1 86:sp.expand_power_base
+      1 86:sp.powsimp
+      1 87:sp.expand_power_base
+      1 87:sp.powsimp
+      1 88:sp.expand_power_base
+      1 88:sp.powsimp
+      1 90:sp.powsimp
+      2 91:sp.powsimp
+      1 97:sp.LeviCivita
+-- [PASS]/[FAIL] lines in frozen NL log:
+21
+0
+10
+0
+Notes: matches above for float/simplify are comment lines only (gap L3,L103,L108,L114,L123; junction L3). powsimp/expand_power_base(force=True) in gapjx_junction J5/J6 act on monomials in positive symbols (exact exponent arithmetic); PP redid J5/J6 with Fraction exponent pairs (PJ9-PJ10). Fr("...") strings in H6e are printed stage-2 floats read as exact rationals: consistency only, not evidence (as NL labels). Fr("2808.6") = 14043/5 exact encoding of the CONDITIONAL unadopted test target.

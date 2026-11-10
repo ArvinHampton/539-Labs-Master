@@ -1,0 +1,544 @@
+{
+ "pred": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  12,
+  18,
+  23,
+  29,
+  35,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  53,
+  58,
+  64
+ ],
+ "zero": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  12,
+  18,
+  23,
+  29,
+  35,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  53,
+  58,
+  64
+ ],
+ "min_nonzero": 0.8586042847382671,
+ "verdict": "pass",
+ "per": [
+  [
+   0,
+   "(Fraction(0, 1), Fraction(0, 1))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "1.0e-32",
+   true
+  ],
+  [
+   1,
+   "(Fraction(0, 1), Fraction(6, 7))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "6.23e-32",
+   true
+  ],
+  [
+   2,
+   "(Fraction(0, 1), Fraction(5, 7))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "5.37e-32",
+   true
+  ],
+  [
+   3,
+   "(Fraction(0, 1), Fraction(4, 7))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "6.36e-32",
+   true
+  ],
+  [
+   4,
+   "(Fraction(0, 1), Fraction(3, 7))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "6.36e-32",
+   true
+  ],
+  [
+   5,
+   "(Fraction(0, 1), Fraction(2, 7))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "4.73e-32",
+   true
+  ],
+  [
+   6,
+   "(Fraction(0, 1), Fraction(1, 7))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "6.12e-32",
+   true
+  ],
+  [
+   7,
+   "(Fraction(4, 5), Fraction(32, 35))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "1.0",
+   false
+  ],
+  [
+   8,
+   "(Fraction(4, 5), Fraction(27, 35))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "0.996",
+   false
+  ],
+  [
+   9,
+   "(Fraction(4, 5), Fraction(22, 35))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "0.996",
+   false
+  ],
+  [
+   10,
+   "(Fraction(4, 5), Fraction(17, 35))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "1.0",
+   false
+  ],
+  [
+   11,
+   "(Fraction(4, 5), Fraction(12, 35))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "1.0",
+   false
+  ],
+  [
+   12,
+   "(Fraction(4, 5), Fraction(1, 5))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "2.08e-32",
+   true
+  ],
+  [
+   13,
+   "(Fraction(4, 5), Fraction(2, 35))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "1.0",
+   false
+  ],
+  [
+   14,
+   "(Fraction(3, 5), Fraction(34, 35))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "0.993",
+   false
+  ],
+  [
+   15,
+   "(Fraction(3, 5), Fraction(29, 35))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "0.993",
+   false
+  ],
+  [
+   16,
+   "(Fraction(3, 5), Fraction(24, 35))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "0.996",
+   false
+  ],
+  [
+   17,
+   "(Fraction(3, 5), Fraction(19, 35))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "0.996",
+   false
+  ],
+  [
+   18,
+   "(Fraction(3, 5), Fraction(2, 5))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "1.92e-32",
+   true
+  ],
+  [
+   19,
+   "(Fraction(3, 5), Fraction(9, 35))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "0.996",
+   false
+  ],
+  [
+   20,
+   "(Fraction(3, 5), Fraction(4, 35))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "0.996",
+   false
+  ],
+  [
+   21,
+   "(Fraction(2, 5), Fraction(31, 35))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "0.996",
+   false
+  ],
+  [
+   22,
+   "(Fraction(2, 5), Fraction(26, 35))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "0.996",
+   false
+  ],
+  [
+   23,
+   "(Fraction(2, 5), Fraction(3, 5))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "1.84e-32",
+   true
+  ],
+  [
+   24,
+   "(Fraction(2, 5), Fraction(16, 35))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "0.996",
+   false
+  ],
+  [
+   25,
+   "(Fraction(2, 5), Fraction(11, 35))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "0.996",
+   false
+  ],
+  [
+   26,
+   "(Fraction(2, 5), Fraction(6, 35))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "0.993",
+   false
+  ],
+  [
+   27,
+   "(Fraction(2, 5), Fraction(1, 35))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "0.993",
+   false
+  ],
+  [
+   28,
+   "(Fraction(1, 5), Fraction(33, 35))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "1.0",
+   false
+  ],
+  [
+   29,
+   "(Fraction(1, 5), Fraction(4, 5))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "2.08e-32",
+   true
+  ],
+  [
+   30,
+   "(Fraction(1, 5), Fraction(23, 35))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "1.0",
+   false
+  ],
+  [
+   31,
+   "(Fraction(1, 5), Fraction(18, 35))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "1.0",
+   false
+  ],
+  [
+   32,
+   "(Fraction(1, 5), Fraction(13, 35))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "0.996",
+   false
+  ],
+  [
+   33,
+   "(Fraction(1, 5), Fraction(8, 35))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "0.996",
+   false
+  ],
+  [
+   34,
+   "(Fraction(1, 5), Fraction(3, 35))",
+   "(Fraction(1, 2), Fraction(0, 1))",
+   "1.0",
+   false
+  ],
+  [
+   35,
+   "(Fraction(7, 10), Fraction(-1, 5))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "2.73e-32",
+   true
+  ],
+  [
+   36,
+   "(Fraction(7, 10), Fraction(23, 35))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "0.998",
+   false
+  ],
+  [
+   37,
+   "(Fraction(7, 10), Fraction(18, 35))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "0.999",
+   false
+  ],
+  [
+   38,
+   "(Fraction(7, 10), Fraction(13, 35))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "0.999",
+   false
+  ],
+  [
+   39,
+   "(Fraction(7, 10), Fraction(8, 35))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "0.999",
+   false
+  ],
+  [
+   40,
+   "(Fraction(7, 10), Fraction(3, 35))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "0.999",
+   false
+  ],
+  [
+   41,
+   "(Fraction(7, 10), Fraction(-2, 35))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "0.998",
+   false
+  ],
+  [
+   42,
+   "(Fraction(3, 2), Fraction(5, 7))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "4.35e-32",
+   true
+  ],
+  [
+   43,
+   "(Fraction(3, 2), Fraction(4, 7))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "1.17e-31",
+   true
+  ],
+  [
+   44,
+   "(Fraction(3, 2), Fraction(3, 7))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "9.51e-32",
+   true
+  ],
+  [
+   45,
+   "(Fraction(3, 2), Fraction(2, 7))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "3.68e-32",
+   true
+  ],
+  [
+   46,
+   "(Fraction(3, 2), Fraction(1, 7))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "6.77e-32",
+   true
+  ],
+  [
+   47,
+   "(Fraction(3, 2), Fraction(0, 1))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "3.1e-32",
+   true
+  ],
+  [
+   48,
+   "(Fraction(3, 2), Fraction(-1, 7))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "5.36e-32",
+   true
+  ],
+  [
+   49,
+   "(Fraction(13, 10), Fraction(27, 35))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "0.999",
+   false
+  ],
+  [
+   50,
+   "(Fraction(13, 10), Fraction(22, 35))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "0.999",
+   false
+  ],
+  [
+   51,
+   "(Fraction(13, 10), Fraction(17, 35))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "0.999",
+   false
+  ],
+  [
+   52,
+   "(Fraction(13, 10), Fraction(12, 35))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "0.998",
+   false
+  ],
+  [
+   53,
+   "(Fraction(13, 10), Fraction(1, 5))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "1.89e-32",
+   true
+  ],
+  [
+   54,
+   "(Fraction(13, 10), Fraction(2, 35))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "0.998",
+   false
+  ],
+  [
+   55,
+   "(Fraction(13, 10), Fraction(-3, 35))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "0.999",
+   false
+  ],
+  [
+   56,
+   "(Fraction(11, 10), Fraction(24, 35))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "1.0",
+   false
+  ],
+  [
+   57,
+   "(Fraction(11, 10), Fraction(19, 35))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "0.999",
+   false
+  ],
+  [
+   58,
+   "(Fraction(11, 10), Fraction(2, 5))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "3.66e-32",
+   true
+  ],
+  [
+   59,
+   "(Fraction(11, 10), Fraction(9, 35))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "0.999",
+   false
+  ],
+  [
+   60,
+   "(Fraction(11, 10), Fraction(4, 35))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "1.0",
+   false
+  ],
+  [
+   61,
+   "(Fraction(11, 10), Fraction(-1, 35))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "1.0",
+   false
+  ],
+  [
+   62,
+   "(Fraction(11, 10), Fraction(-6, 35))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "1.0",
+   false
+  ],
+  [
+   63,
+   "(Fraction(9, 10), Fraction(26, 35))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "0.999",
+   false
+  ],
+  [
+   64,
+   "(Fraction(9, 10), Fraction(3, 5))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "3.04e-32",
+   true
+  ],
+  [
+   65,
+   "(Fraction(9, 10), Fraction(16, 35))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "0.999",
+   false
+  ],
+  [
+   66,
+   "(Fraction(9, 10), Fraction(11, 35))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "1.0",
+   false
+  ],
+  [
+   67,
+   "(Fraction(9, 10), Fraction(6, 35))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "1.0",
+   false
+  ],
+  [
+   68,
+   "(Fraction(9, 10), Fraction(1, 35))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "1.0",
+   false
+  ],
+  [
+   69,
+   "(Fraction(9, 10), Fraction(-4, 35))",
+   "(Fraction(6, 5), Fraction(-1, 5))",
+   "1.0",
+   false
+  ]
+ ]
+}

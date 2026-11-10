@@ -1,0 +1,1925 @@
+                                                                    ON TWO GEOMETRIC THETA LIFTS
+
+                                                                     JAN HENDRIK BRUINIER* AND JENS FUNKE**
+arXiv:math/0212286v4 [math.NT] 14 Mar 2003
+
+
+
+
+                                                                                     1. Introduction
+                                                Borcherds [Bo1] introduced a ‘singular’ theta lift from modular forms of (typically) neg-
+                                             ative weight for SL2 (R) to the orthogonal group O(p, 2). This gave rise to remarkable
+                                             product expansions of automorphic forms for O(p, 2), but also to the realization of gener-
+                                             ating series of certain ‘special’ divisors in locally symmetric spaces attached to O(p, 2) as
+                                             holomorphic modular forms of positive weight [Bo2]. The Borcherds lift was generalized
+                                             by the first named author and studied in connection with the cohomology of the special
+                                             divisors [Br1, Br2].
+                                                On the other hand, the Weil representation and theta series have been utilized in a more
+                                             classical way by several people (e.g. [Sh, Od, RS, TW, W]) to establish generating series
+                                             of special cycles in orthogonal and unitary locally symmetric spaces of arbitrary signature
+                                             as modular forms, in greatest generality by Kudla and Millson (see e.g. [KM3]).
+                                                The purpose of this paper is threefold:
+                                                 (1) For O(p, 2), we derive an adjointness result between the Kudla-Millson lift and the
+                                                     Borcherds lift.
+                                                 (2) We also introduce a new Borcherds lift for O(p, q) and obtain a similar relationship
+                                                     to the Kudla-Millson lift.
+                                                 (3) As a geometric application, we show that the exterior derivative of the current
+                                                     induced by this generalized Borcherds lift is closely related to the delta current of
+                                                     a special cycle.
+
+                                                We sketch the main results of the paper in more detail.
+                                                Let V be a quadratic space over Q of signature (p, q) and write D for the associated
+                                             symmetric space. Let L be an even lattice in V , Γ be a subgroup of finite index of the group
+                                             of units of L and X = Γ\D the associated locally symmetric space. The special cycles arise
+                                             from subsymmetric spaces of codimension q induced by embeddings of orthogonal groups
+                                             of signature (p − 1, q) into O(V ).
+                                                For simplicity of the exposition we assume in the introduction that L is unimodular. (In
+                                             the main body of the paper, we treat the general case of arbitrary level by using Borcherds’
+                                             vector valued modular form setting. Moreover, for q odd, this is essential in order to obtain
+                                             a nonzero theory).
+
+                                               Date: March 14, 2003.
+                                               1991 Mathematics Subject Classification. 11F55, 14C25.
+                                               * Supported by a Heisenberg-Stipendium of the DFG.
+                                               ** J.E. Marsden PostDoctoral Fellow 02/03 at the Fields Institute, Toronto.
+                                                                                               1
+2                             JAN H. BRUINIER AND JENS FUNKE
+
+    We first introduce a new space of automorphic forms of (typically negative) weight k.
+Its importance lies in the fact that on one hand we will systematically treat this space as
+the input space for both the Borcherds lift for O(p, 2) and its extension to O(p, q), while on
+the other hand it satisfies a duality with the space of holomorphic cusp forms of (positive)
+weight 2 − k. This duality, interesting in its own right, will be crucial for us.
+    Namely, we let Hk be the space of weak Maass forms, consisting of those smooth functions
+f on the upper half plane H, which transform with weight k = 2 − (p + q)/2 under SL2 (Z),
+are annihilated by the Laplacian of weight k, and satisfy f (τ ) = O(eCv ) as τ = u+iv → i∞
+for some constant C > 0. For f ∈ Hk , put ξk (f ) = R−k (v k f¯), where R−k is the standard
+raising operator for modular forms of weight −k. We prove that ξk defines an antilinear
+                    !
+map ξk : Hk → M2−k     , to the space of meromorphic modular forms of weight 2 − k which
+are holomorphic on H (see Proposition 3.2). It is easily checked that Mk! is the kernel of
+ξk . We let Hk+ be the preimage of S2−k , the space of cusp forms of weight 2 − k.
+Theorem 1.1. The bilinear pairing between S2−k and Hk+ , defined by
+                                   {g, f } = (g, ξk (f ))2−k ,
+for g ∈ S2−k and f ∈ Hk+ , induces a non-degenerate pairing of S2−k and Hk+ /Mk! . Here
+( , )2−k is the Petersson scalar product for modular forms of weight 2 − k.
+   The main point here is to show that the map ξk is surjective. The proof is using methods
+from complex geometry and is ultimately based on Serre duality. The pairing {g, f } can
+be explicitly evaluated in terms of the Fourier coefficients of g and the singular part of f
+(Proposition 3.5). Note that Borcherds [Bo2] established a similar duality statement (in
+terms of formal power series).
+   For signature (p, 2), when D is Hermitian, we then introduce the Borcherds lift as a map
+on Hk+ ; i.e, for any f ∈ Hk+ , its lift is given by integrating f ∈ Hk+ against Θ(τ, z, ϕ0 ),
+(τ = u + iv ∈ H, z ∈ D), the Siegel theta series attached to the standard Gaussian ϕ0 on
+V (R) (see also [Bo1], [Br1]):
+                                      Z reg
+                                                                   du dv
+(1.1)                      Φ(z, f ) =            f (τ )Θ(τ, z, ϕ0 ) 2 .
+                                       SL2 (Z)\H                    v
+The integral is usually divergent, and a suitable regularization was found by Harvey and
+Moore [HM]. The regularization process leads to logarithmic singularities along certain
+special cycles Z(f ) in D which in this case are divisors. Moreover, ΛB (z, f ) := ddc Φ(z, f )
+actually extends to a closed smooth (1, 1)-form on X. Here d and dc are the standard
+(exterior) differential operators on D. Hence, we have a map
+(1.2)                               ΛB : Hk+ −→ Z 2 (X),
+
+to the space of closed 2-forms on X. For f ∈ Mk! one has ΛB (f ) = a+ (0)Ω, where a+ (0) is
+the constant coefficient of f , and Ω is the suitably normalized Kähler form on D.
+  On the other hand, Kudla and Millson [KM3] construct for general signature (p, q) a
+theta series Θ(τ, z, ϕKM ) associated to a certain Schwartz function ϕKM on V (R), which
+                             ON TWO GEOMETRIC THETA LIFTS                                     3
+
+                                         (p−1)q
+takes values in Z q (X). Then for η ∈ Zc     (X), the compactly supported closed (p − 1)q-
+forms on X, the Kudla-Millson lift is defined by
+                                           Z
+                              ΛKM (τ, η) =    η ∧ Θ(τ, ϕKM ).
+                                               X
+It turns out that ΛKM (τ, η) is actually a holomorphic modular form of weight 2 − k, so
+that we have a map
+(1.3)                           ΛKM : Zc(p−1)q (X) −→ M2−k ,
+which also factors through cohomology. Moreover, the Fourier coefficients of ΛKM are
+given by periods of η over the special cycles.
+Theorem 1.2. Assume D be Hermitian, i.e., q = 2, and let f ∈ Hk+ with constant
+coefficient a+ (0). We then have the following identity of closed 2-forms on X:
+                       ΛB (z, f ) = (Θ(τ, z, ϕKM ), ξk (f ))2−k + a+ (0)Ω.
+Therefore the maps ΛB and ΛKM are naturally adjoint via the standard pairing ( , )X of
+Zc2p−2 (X) with Z 2 (X) and the paring { , } of M2−k with Hk+ , that is,
+                                                                  
+                         η, ΛB (f ) X = {ΛKM (η), f } + a+ (0) η, Ω X .
+Furthermore, this duality factors through cohomology, and Hk+ /Mk! , respectively. (See also
+Theorem 6.3.)
+  This is based on the fundamental relationship between the two theta series involved:
+Theorem 1.3. Let L2−k be the lowering Maass operator of weight 2 − k on H. Then
+                            L2−k Θ(τ, z, ϕKM ) = −ddc Θ(τ, z, ϕ0 ).
+   We show this by switching to the Fock model of the Weil representation. Then the idea
+for the proof of Theorem 1.2 is given by the following formal (!) calculation:
+                                                        reg
+        (Θ(ϕKM ), ξk (f ))2−k “=” − L2−k Θ(ϕKM ), v k f¯ −k
+                                                               Z reg
+                                    c
+                                                 
+                                              k ¯ reg        c                   dudv
+                              “=” dd Θ(ϕ0 ), v f −k “=” dd                Θ(ϕ0 )f 2 .
+                                                                SL2 (Z)\H         v
+The first equality follows from the adjointness of the raising and lowering operator. How-
+ever, the second scalar product no longer converges and needs to be regularized. At this
+point, one also obtains an ‘error’ term involving the Kähler form. The second equality
+follows from the key fact provided in Theorem 1.3 and the last one by interchanging the
+integration and differentiation (which also needs careful consideration). An additional diffi-
+culty occurs by the fact that in the intermediate steps one also has to deal with singularities
+along the special divisors.
+   As an application, we are able to recover several of the geometric properties of the
+Borcherds lift in [Br1] with often simpler proofs.
+   For general signature (p, q), we note that by the work of Kudla and Millson [KM3], there
+exists a theta function Θ(τ, z, ψ) with values in the (q − 1)-forms of X such that
+                             L2−k ϕKM (τ, z, ϕKM ) = dΘ(τ, z, ψ).
+4                             JAN H. BRUINIER AND JENS FUNKE
+
+This is the exact analogon for the crucial identity given in Theorem 1.3 in the Hermitian
+case. So, for f ∈ Hk+ , we define the Borcherds lift Φ(z, f, ψ) by replacing Θ(τ, z, ϕ0 ) by
+Θ(τ, z, ψ) as the kernel function in (1.1). Note that this is now not scalar-valued but a
+(q − 1)-form with singularities of higher order along the special cycle Z(f ) (see Proposition
+5.6). The point is here that Borcherds, while introducing his lift for arbitrary signature and
+also for general (scalar-valued) theta kernels, focuses on the Hermitian case. In particular,
+the geometric interpretation given in [Bo2, Br1] only applies to this case. Hence from this
+aspect the lift Φ(z, f, ψ) and its features are new. We put ΛB,ψ (z, f ) = −dΦ(z, f, ψ) and
+one sees that this again extends to a closed smooth q-form on M. Moreover, it essentially
+vanishes for f ∈ Mk! . One obtains as above (for a precise statement, see Theorem 6.3):
+Theorem 1.4. In the case of signature (p, q), the lifts ΛKM and ΛB,ψ are adjoint.
+  This, almost axiomatic, introduction of the Borcherds lift for general signature does
+indeed lead to new information:
+Theorem 1.5. Let f ∈ Hk+ . Then ΛB,ψ (z, f ) is a harmonic representative of the Poincaré
+dual class of the cycle Z(f ). Moreover, we have the following equation of currents
+                             d[Φ(z, f, ψ)] + δZ(f ) = [ΛB,ψ (z, f )].
+In particular, the pair (Z(f ), Φ(z, f, ψ)) defines a differential character in the sense of
+Cheeger and Simons (see [C, CS]). For q = 2, we have in addition for the ‘classical’
+Borcherds lift
+                               ddc [Φ(z, f )] + δZ(f ) = [ΛB (z, f )],
+i.e., Φ(z, f ) is a Green’s function for the divisor Z(f ).
+   For q = 2 the latter result already follows from [Br1, Br2]. We also briefly discuss the
+relationship of Φ(z, f ) to the Green’s functions for the special divisors constructed by Oda
+and Tsuzuki [OT] and Kudla [Ku1, Ku2].
+   The results of this paper are subject to several extensions and generalizations. On
+one hand, one should be able to introduce suitable Borcherds lifts for unitary groups, since
+[KM3] covers these groups as well. This is of particular interest, as the symmetric spaces are
+Hermitian in this case. In particular, this should lead to the explicit construction of Green’s
+currents for cycles of complex codimension q. On the other hand, Funke and Millson [FM2]
+are currently developing a theory for special cycles with coefficients analogous to the Kudla-
+Millson lift. This also should give rise to new Borcherds lifts with geometric importance.
+On a more speculative note, it is a very interesting problem to generalize the present results
+to special cycles of higher codimension. In the frame work of this paper, one would need
+to define a suitable Borcherds lift for the symplectic group Spn (R). For this one would
+need an analogue of the space Hk+ and henceforth of Theorem 1.1. We hope to come back
+to these issues in the near future.
+   The paper is organized as follows. After setting up the basic notions in section 2, we
+discuss in section 3 the space of weak Maass forms Hk in detail and prove Theorem 1.1. In
+section 4, we consider the Fock model of the Weil representation and the Schwartz forms
+ϕKM and ψ in detail and derive Theorem 1.3. We discuss the Kudla-Millson lift and the
+Borcherds lift in section 5, introducing for general signature the Borcherds lift Φ(z, f, ψ).
+                               ON TWO GEOMETRIC THETA LIFTS                                        5
+
+The main result, Theorems 1.2 and 1.4, is proven in section 6. Finally, Theorem 1.5 is
+considered in section 7.
+   This project was first conceived and advanced during three visits from 1999 to 2002
+of the second named author in Heidelberg. He would like to thank the Forschergruppe
+Arithmetik at Heidelberg and E. Freitag in particular for their generous hospitality during
+these visits. He also thanks J. Burgos and J. Naranjo at the University of Barcelona for
+their patient hospitality in the summer 2002, where major work on this paper was done.
+We also would like to thank J. Burgos, E. Freitag, W. Kohnen, S. Kudla, and J. Millson
+for useful discussions and comments on this project.
+
+                                      2. Basic Notations
+    Let V be a rational vector space over Q with a non-degenerate bilinear form ( , ) of
+signature (p, q); we assume dim V ≥ 3. Let L be an even lattice in V (that is q(x) :=
+1
+2
+  (x, x) ∈ Z for x ∈ L) and write L# for its dual. We will write V − (respectively L− ) for
+the vector space V (Z-module L) together with the bilinear form −( , ).
+    We pick an orthogonal basis {vi } of V (R) = V ⊗Q R such that (vα , vα ) = 1 for α = 1, . . . , p
+and (vµ , vµ ) = −1 for µ = p + 1, . . . , p + q. The corresponding coordinates we denote by
+xi . Throughout the paper we will use the subscript α for the ‘positive’ variables and µ for
+the ‘negatives’ ones. We realize the symmetric space associated to V as the set of negative
+q-planes in V (R):
+                        D ≃ {z ⊂ V (R); dim z = q          and ( , )|z < 0}.
+Occasionally, we will write Dp,q to emphasize the signature. The assignment z 7→ z ⊥ gives
+the identification Dp,q ≃ Dq,p . Putting G = SO0 (V (R)), the connected component of
+the orthogonal group, and letting K be the maximal compact subgroup of G stabilizing
+z0 = span{vµ ; p + 1 ≤ µ ≤ p + q}, we certainly have D ≃ G/K.
+   For z ∈ D, we associate the standard majorant ( , )z given by
+                                 (x, x)z = (xz ⊥ , xz ⊥ ) − (xz , xz ),
+where x = xz + xz ⊥ ∈ V (R) is given by the orthogonal decomposition V (R) = z ⊕ z ⊥ .
+   Let g be the Lie algebra of G and g = p + k its Cartan decomposition. Then p ≃ g/k
+is isomorphic to the tangent space at the base point of D, and with respect to the above
+basis of V (R) we have
+                                                  
+                                 0 X
+(2.1)                  p≃      t       ; X ∈ Mp,q (R) ≃ Mp,q (R).
+                                 X 0
+   For q = 2, it is well known that D is Hermitian, and we assume that the complex
+                                                             0 1
+structure on p is given by right multiplication with J = ( −1  0 ).
+   Let Γ ⊂ G be a congruence subgroup of the orthogonal group of L fixing the discriminant
+lattice L# /L and X = Γ\D be the associated locally symmetric space. Throughout we
+assume that Γ is torsion free such that Γ acts freely on D, and X is a real analytic manifold
+of dimension pq. Observe that for instance the principal congruence subgroup Γ(N) of level
+N (of the discriminant kernel of O(L)), i.e., the the kernel of the natural homomorphism
+6                                JAN H. BRUINIER AND JENS FUNKE
+                       
+O(L) → O ( N1 L# )/L , is torsion free for N ≥ 3 (which is seen similarly as Hilfssatz 6.5
+in [Fr] chapter II.6).
+   For x ∈ V (R) with q(x) > 0, we let
+                                       Dx = {z ∈ D; z ⊥ x}.
+Note that Dx is a subsymmetric space of type Dp−1,q attached to the orthogonal group Gx ,
+the pointwise stabilizer of x in G. Put Γx = Γ ∩ Gx . Then for x ∈ L# , the quotient
+                                       Z(x) = Γx \Dx −→ X
+defines a (in general relative) cycle in X. For h ∈ L# /L and n ∈ Q, the group Γ acts on
+Lh,n = {x ∈ L + h; q(x) = n} with finitely many orbits, and we define the composite cycle
+                                               X
+                                   Z(h, n) =        Z(x).
+                                                  x∈Γ\Lh,n
+
+Occasionally, we will identify Z(h, n) with its preimage in D.
+  Borcherds [Bo2] and Bruinier [Br1] (for O(2, p)) use vectors of negative length to define
+special cycles (which are divisors in that case); by switching to the space V − these are the
+same as the divisors for Dp,2 defined above by vectors of positive length.
+  We orient D and the cycles Dx as in [KM3], page 130/131. Note that for q even, Dx
+and D−x have the same orientation while for q odd, the opposite. Moreover, for q = 2, this
+orientation coincides with the orientation given by the complex structure on D and Dx .
+
+   Let G′ = Mp2 (R) be the two-fold cover of SL2 (R), realized by the two choices of holo-
+morphic square roots of τ 7→ j(g, τ ) = cτ + d; here τ ∈ H = {w ∈ C; ℑ(w) > 0}, the upper
+half plane and g = ( ac db ) ∈ SL2 (R). So elements of Mp2 (R) are of the form (g, φ(τ )) with
+g ∈ SL2 (R) and φ(τ ) a holomorphic function such that φ(τ )2 = j(g, τ ). The multiplication
+is given by (g1 , φ1 (τ ))(g2 , φ2 (τ )) = (g1 g2 , φ1 (g2 τ )φ2 (τ )), where SL2 (R) acts on H by linear
+fractional transformations. For z = reiθ ∈ C× with θ ∈ (−π,               p π] and r positive, we take
+√
+   z = z 1/2 = r 1/2 eiθ/2 . Occasionally we just write g for (g, j(g, τ )) ∈ G′ .
+   We write K ′ for the inverse image of SO(2) ≃U(1) under                 the covering map Mp2 (R) −→
+                                                               cos(θ) sin(θ)
+SL2 (R). Note that for kθ ∈ SO(2) with kθ = − sin(θ) cos(θ) , (θ ∈ (−π, π]), we obtain a
+character of K ′ by the assignment
+                                         p                    p          −1
+                          χ1/2 : (kθ , ± j(kθ , τ )) 7→ ± j(kθ , i) = ±eiθ/2 .
+   We denote by ω = ωV the Schrödinger model of the (restriction of the) Weil represen-
+tation of G′ × O(V (R)) acting on S(V (R)), the space of Schwartz functions on V (R). We
+have
+                                  ω(g)ϕ(x) = ϕ(g −1x)
+for ϕ ∈ S(V (R)) and g ∈ O(V (R)). The action of G′ is given as follows:
+                             ω(m(a))ϕ(x) = a(p+q)/2 ϕ(ax)
+                                 
+for a > 0 and with m(a) = a0 a−1
+                              0
+                                  ;
+                                    ω(n(b))ϕ(x) = eπib(x,x) ϕ(x)
+                                 ON TWO GEOMETRIC THETA LIFTS                                   7
+
+with n(b) = ( 10 1b ); and
+                                                  √ p−q
+                                      ω(S)ϕ(x) = i ϕ̂(−x)
+                    √                          R
+with S = (( 01 −1
+               0 ),    τ ), and where ϕ̂(y) = V (R) ϕ(x)e2πi(x,y) dx is the Fourier transform. If
+p + q is even, (1, t) ∈ G′ acts trivially, otherwise by multiplication by t.
+  For ϕ ∈ S(V (R)) and h ∈ L# /L, we define the theta function
+                                        X
+                         θ(g ′, ϕ, h) =     ω(g ′)ϕ(λ)          (g ′ ∈ G′ ).
+                                        λ∈L+h
+
+  We write Γ′ for the inverse image of SL2 (Z) in Mp2 (R). For the generators S and
+T = (n(1), 1) of Γ′ , we then have
+(2.2)                             θ(T g ′, ϕ, h) = eπi(h,h) θ(g ′ , ϕ, h),
+and by Poisson summation
+                                        √ p−q
+                                          i        X               ′
+(2.3)                 θ(Sg ′ , ϕ, h) = p                  e−2πi(h,h ) θ(g ′ , ϕ, h′ ).
+                                           #
+                                         |L /L| h′ ∈L# /L
+
+The equations (2.2) and (2.3) define a representation ̺L of Γ′ acting on the group algebra
+C[L# /L], whose standard basis elements we denote by eh , h ∈ L# /L. Defining the vector
+                                                          X
+                 Θ(g ′, ϕ, L) := (θ(g ′ , ϕ, h))h∈L# /L =   θ(g ′ , ϕ, h)eh ,
+                                                                h∈L# /L
+
+we then have
+                                Θ(γg ′, ϕ, L) = ̺L (γ)Θ(g ′ , ϕ, L)
+for all γ ∈ Γ′ . Note that with respect to the standard scalar product h , i on C[L# /L]
+(linear in the first and anti-linear in the second variable), we have that ̺L− = ̺∗L = ̺¯L ;
+i.e., L and L− give rise to dual representations. From (2.2) and (2.3) it is clear that ̺L
+coincides with the representation ̺L considered in [Bo1] and [Br1]. Ultimately, ̺L goes
+back to Shintani [Sh], which is also a good reference for the above discussion.
+   Let ϕ now be an eigenfunction under the action of K ′ ; i.e., ω(kθ )ϕ = χr1/2 (kθ )ϕ for some
+r ∈ Z, so that
+                             Θ(g ′kθ , ϕ, L) = χr1/2 (kθ )Θ(g ′, ϕ, L).
+Then we can associate to Θ(g ′ , ϕ,L) a (vector-valued)
+                                                            function on the upper half plane in
+                                       1/2
+the usual way: We let gτ′ = ( 10 u1 ) v 0 v−1/2
+                                            0       with τ = u + iv ∈ H be the standard element
+moving the base point i ∈ H to τ and define
+                                                            X X
+              Θ(τ, ϕ, L) := j(gτ′ , i)r/2 Θ(gτ′ , ϕ, L). =             ϕ(λ, τ, z)eh
+                                                              h∈L# /L λ∈L+h
+
+with
+                                  ϕ(λ, τ, z) = j(gτ′ , i)r/2 ω(gτ′ )ϕ(λ).
+Hence, for (γ, φ) ∈ Γ′ ,
+(2.4)                         Θ(γτ, ϕ, L) = φ(τ )r ̺L (γ, φ)Θ(τ, ϕ, L);
+8                                JAN H. BRUINIER AND JENS FUNKE
+
+i.e., Θ(τ, ϕ, L) is a C ∞ -automorphic form of weight r/2 with respect to the representation
+̺L . (Note however, that it is usually not an eigenfunction of the Laplacian).
+   We denote the real analytic functions on H satisfying the transformation property (2.4)
+with weight k by Ak,L .
+   From now on we will frequently drop the lattice L from the argument of Θ(g ′ , ϕ, L).
+   The space of K-invariant Schwartz functions S(V (R))K is of particular interest as we
+have
+                              S(V (R))K ≃ [S(V (R)) ⊗ C ∞ (D)]G ,
+where the isomorphism is giving by evaluation at the base point z0 of D. Note that for such
+ϕ(x, z) ∈ [S(V (R)) ⊗ C ∞ (D)]G , the theta function Θ(g ′ , z, ϕ) is Γ-invariant as a function
+of z; hence, it descends to a function on X.        P p+q 2
+   The Gaussian on V (R) is given by ϕ0 (x) = e−π i=1 xi . Certainly ϕ0 ∈ S(V (R))K , and
+the corresponding function in [S(V (R)) ⊗ C ∞ (D)]G is given by
+                                         ϕ0 (x, z) = e−π(x,x)z .
+Occasionally we will write ϕp,q
+                             0 to emphasize the signature. We have
+                              X X
+              Θ(τ, z, ϕ0 ) =           ϕ0 (λ, τ, z)eh ∈ A(p−q)/2,L ⊗ C ∞ (X),
+                                h∈L# /L λ∈L+h
+
+and
+                                                                                                
+      ϕ0 (λ, τ, z) = v q/2 exp πi((λ, λ)u + (λ, λ)z iv) = exp πi((λz ⊥ , λz ⊥ )τ + (λz , λz )τ̄ ) .
+
+                                     3. Weak Maass forms
+  In this section we introduce a new space of Maass wave forms. In particular, we establish
+a pairing with holomorphic modular forms and obtain a duality theorem for this pairing.
+The results of this section can be either viewed as an analytic version of the Serre duality
+result in [Bo2] section 3, or as an algebraic approach to [Br1] chapter 1.
+  Let k ∈ 21 Z with k 6= 1. (In our later applications k will be smaller than 1. However, we
+do not need that here.) Moreover, let Γ′′ ≤ Γ′ be a subgroup of finite index.
+  We write Hk,L (Γ′′ ) for the space of weak Maass forms of weight k with representation
+̺L for the group Γ′′ . By definition, this is the space of twice continuously differentiable
+functions f : H → C[L# /L] satisfying:
+      i) f (γτ ) = φ(τ )2k ̺L (γ, φ)f (τ ) for all (γ, φ) ∈ Γ′′ ;
+     ii) there is a C > 0 such that for any cusp s ∈ Q ∪ {∞} of Γ′′ and (δ, φ) ∈ Γ′ with
+         δ∞ = s the function fs (τ ) = φ(τ )−2k ̺−1                                              Cv
+                                                          L (δ, φ)f (δτ ) satisfies fs (τ ) = O(e ) as
+         v → ∞ (uniformly in u, where τ = u + iv);
+    iii) ∆k f (τ ) = 0, where
+                                         2                                
+                                      2     ∂      ∂2               ∂      ∂
+(3.1)                      ∆k = −v             +         + ikv         +i
+                                           ∂u2 ∂v 2                 ∂u    ∂v
+         denotes the usual hyperbolic Laplace operator in weight k.
+                             ON TWO GEOMETRIC THETA LIFTS                                     9
+
+   Since ∆k is an elliptic differential operator, such a function f will automatically be real
+analytic. We will mainly work with the full group Γ′ and therefore abbreviate Hk,L =
+Hk,L (Γ′ ). The transformation property (i) implies that any f ∈ Hk,L has a Fourier expan-
+sion                                    X X
+                              f (τ ) =           a(h, n; v)e(nu)eh ,
+                                     h∈L# /L n∈Q
+
+where e(u) = e2πiu , as usual. The coefficients a(h, n; v) vanish unless n − q(h) ∈ Z.
+In particular, the denominators of the indices n of all non-zero coefficients a(h, n; v) are
+bounded by the level N of the lattice L. Because of property (iii), the coefficients a(h, n; v)
+satisfy the second order differential equation ∆k a(h, n; v)e(nu) = 0 as functions in v. If
+n = 0, one finds that a(h, 0; v) is a linear combination of 1 and v 1−k . If n 6= 0, then,
+writing a(h, n; v) as b(2πnv), it is easily seen that b(w) is a solution of the second order
+linear differential equation
+                                                              
+                         ∂2                 k    ∂
+                             b(w) − b(w) +         b(w) + b(w) = 0,
+                        ∂w 2                w ∂w
+which is independent of h and n. It is immediately checked that e−w is a solution. A
+second, linearly independent solution is found by reduction of the order. Here we choose
+the function                                 Z ∞
+                                          −w
+                               H(w) = e          e−t t−k dt.
+                                                   −2w
+The integral converges for k < 1 and can be holomorphically continued in k (for w 6= 0) in
+the same way as the Gamma function. If w < 0, then H(w) = e−w Γ(1 − k, −2w), where
+Γ(a, x) denotes the incomplete Gamma function as in [AbSt] (6.5.3). The function H(w)
+has the asymptotic behavior
+                                  (
+                                   (2|w|)−k e−|w| , for w → −∞,
+                         H(w) ∼
+                                   (−2w)−k ew ,     for w → +∞.
+
+(Clearly the functions |w|k/2e−w/2 and |w|k/2H(w/2) are the special values of the standard
+Whittaker functions Wν,µ (|w|) and Mν,µ (|w|) for ν = sgn(n)k/2, µ = k/2−1/2 as in [AbSt]
+chapter 13.) We find that
+                            (
+                              a+ (h, 0) + a− (h, 0)v 1−k ,         if n = 0,
+               a(h, n; v) =
+                              a+ (h, n)e−2πnv + a− (h, n)H(2πnv), if n 6= 0,
+with complex coefficients a± (h, n). Thus any weak Maass form f of weight k has a unique
+decomposition f = f + + f − , where
+                        X X
+(3.2a)      f + (τ ) =            a+ (h, n)e(nτ )eh ,
+                       h∈L# /L n∈Q
+                       X                 X                     
+               −           −        1−k      −
+(3.2b)        f (τ ) =    a (h, 0)v     +   a (h, n)H(2πnv)e(nu) eh .
+                       h∈L# /L                     n∈Q
+                                                   n6=0
+10                             JAN H. BRUINIER AND JENS FUNKE
+
+Note that if f satisfies condition (ii) above, then all but finitely many a+ (h, n) (respectively
+a− (h, n)) with negative (respectively positive) index n vanish.
+  Let us briefly recall the Maass raising and lowering operators on non-holomorphic mod-
+ular forms of weight k. They are defined as the differential operators
+                             ∂                                  ∂
+                       Rk = 2i  + kv −1    and      Lk = −2iv 2 .
+                            ∂τ                                 ∂τ̄
+The raising operator Rk maps Ak,L to Ak+2,L , and the lowering operator Lk maps Ak,L to
+Ak−2,L . The Laplacian ∆k can be expressed in terms of Rk and Lk by
+(3.3)                            −∆k = Lk+2 Rk + k = Rk−2 Lk .
+     The following lemma is proved by a straightforward computation.
+Lemma 3.1. Let f ∈ Hk,L be a weak Maass form of weight k and write f = f + + f − as
+in (3.2). Then
+                          X                     X                        
+               −      2−k              −            −             1−k
+    Lk f = Lk f = −2v          (k − 1)a (h, 0) +   a (h, n)(−4πn) e(nτ̄ ) eh .
+                              h∈L# /L                      n∈Q
+                                                           n6=0
+
+                  !
+   We write Mk,L    (Γ′′ ) for the space of holomorphic C[L# /L]-valued functions on H satis-
+fying the transformation property (i) above and being meromorphic at the cusps of Γ′′ .
+                                                                                        !
+We call such modular forms weakly holomorphic. Identity (3.3) implies that Mk,L           (Γ′′ ) ⊂
+Hk,L (Γ′′ ). If we also require holomorphicity (vanishing) at the cusp, we obtain the space of
+holomorphic modular forms Mk,L (Γ′′ ) (cusp forms Sk,L (Γ′′ )). Finally, if Γ′′ is the full mod-
+ular group Γ′ , then we will briefly write Mk,L  !
+                                                   , Mk,L , and Sk,L for these spaces of modular
+forms. They were first considered by Borcherds [Bo1] and later in [Br1].
+   The lattice L− gives rise to the dual representation ̺∗L = ̺¯L . Hence, we can consider
+Ak,L− , etc. also as the space of modular forms with respect to the dual representation ̺∗L
+of ̺L . We will make frequent use of this fact.
+   Recall that the Petersson scalar product on Mk,L is given by
+                                                 Z
+(3.4)                                (f, g)k,L =     hf, giv k dµ
+                                                  Γ′ \H
+
+for f, g ∈ Mk,L , whenever the integral converges absolutely. Here dµ = duv2dv denotes the
+usual invariant volume form on H.
+Proposition 3.2. The assignment f (τ ) 7→ ξk (f )(τ ) := v k−2Lk f (τ ) = R−k v k f (τ ) defines
+an antilinear mapping
+                                                      !
+(3.5)                                   ξk : Hk,L −→ M2−k,L −.
+
+               !
+Its kernel is Mk,L ⊂ Hk,L .
+Proof. By Lemma 3.1, the function ξk (f )(τ ) is holomorphic on H. It vanishes if and
+only if f − vanishes. It is meromorphic at the cusp via the growth condition on f . The
+transformation behavior of ξk (f )(τ ) is easily checked.                            
+                              ON TWO GEOMETRIC THETA LIFTS                                    11
+
+  We denote the inverse image of the space of holomorphic cusp forms S2−k,L− under the
+                 +                     +
+mapping ξk by Hk,L  . Hence, if f ∈ Hk,L , then the Fourier coefficients a− (h, n) with non-
+                                                                                         +
+negative index n vanish, so f − is rapidly decreasing for v → ∞. Clearly Mk,L    !
+                                                                                    ⊂ Hk,L .
+                          −                        +
+Moreover, if k ≥ 2, then f vanishes for all f ∈ Hk,L .
+  Let now f ∈ Hk,L and write its Fourier expansion as in (3.2). Then we call the Fourier
+polynomial
+                                       X X
+(3.6)                     P (f )(τ ) =           a+ (h, n)e(nτ )eh
+                                        h∈L# /L n∈Q
+                                                n≤0
+                                               +
+the principal part of f . Observe that if f ∈ Hk,L , then f − P (f ) is exponentially decreasing
+                                                                            +
+as v → ∞. (This property could actually be used to define the space Hk,L       in an alternative
+way.)
+Lemma 3.3. If f ∈ Hk,L , then there is a constant C > 0 such that f (τ ) = O(eC/v ) as
+v → 0, uniformly in u.
+Proof. This follows from the transformation behavior and the growth of f in the same way
+as the analogous statement for holomorphic modular forms.                             
+ Later, we will need the following growth estimate for the Fourier coefficients of weak
+Maass forms.
+Lemma 3.4. Let f ∈ Hk,L and write its Fourier expansion as in (3.2). Then there is a
+constant C > 0 such that the Fourier coefficients satisfy
+                                        √ 
+                          a+ (h, n) = O eC |n| , n → +∞,
+                                        √ 
+                          a− (h, n) = O eC |n| , n → −∞.
+        +
+If f ∈ Hk,L , then the a− (h, n) actually satisfy the stronger bound a− (h, n) = O(|n|k/2) as
+n → −∞.
+Proof. To prove the asymptotic for the a− (h, n) we consider the weakly holomorphic mod-
+                      !
+ular form ξk (f ) ∈ M2−k,L − . By Lemma 3.1 and the formula for the Fourier coefficients we
+
+have
+                                           Z 1D                E
+                     −              1−k          k−2
+(3.7)              2a (h, n)(−4πn)      =−      v Lk f (τ ), eh e(nτ ) du.
+                                               0
+Thus, according to Lemma 3.3, we get
+                                                    Z 1
+                              −               k−1
+                             a (h, n) ≪ |n|               eC/v e−2πnv du
+                                                     0
+for all positive 0 <pv ≤ 1 with some positive constant C (independent of v and n). If we
+take v equal to 1/ |n|, we see that
+                                                  √       √
+                              a− (h, n) ≪ |n|k−1eC |n| e2π |n|
+for all n < 0, proving the first assertion on the a− (h, n).
+12                             JAN H. BRUINIER AND JENS FUNKE
+
+                   !                                                        +
+  From ξk (f ) ∈ M2−k,L − it can be deduced that the individual functions f   and f − in the
+splitting f = f + + f − also satisfy the estimate of Lemma 3.3. We may apply the above
+argument to
+                                       Z 1
+                              +
+(3.8)                       a (h, n) =       f + (τ ), eh e(−nτ ) du
+                                                0
+
+to derive the estimate for the a+ (n, h) as n → +∞.
+            +
+   If f ∈ Hk,L , then ξk (f ) ∈ S2−k,L− is a holomorphic cusp form. Hence the usual Hecke
+bound for the Fourier coefficients of cusp forms implies that the left hand side of (3.7)
+is bounded by some constant times |n|1−k/2 for all n < 0. Thus a− (h, n) = O(|n|k/2) as
+n → −∞.                                                                                
+   The estimates of Lemma 3.4 are far from being optimal. However, they are sufficient
+for our purposes. Observe that all the above results have obvious generalizations to finite
+index subgroups Γ′′ ≤ Γ′ .
+                                                                                +
+  Put κ = 2 − k. We now define a bilinear pairing between the spaces Mκ,L− and Hk,L by
+putting
+                                                   
+(3.9)                          {g, f } = g, ξk (f ) κ,L−
+                       +
+for g ∈ Mκ,L− and f ∈ Hk,L .
+                                                             P
+Proposition 3.5. Let g ∈ Mκ,L− with Fourier expansion g = h,n b(h, n)e(nτ )eh , and f ∈
+  +
+Hk,L with Fourier expansion as in (3.2). Then the pairing (3.9) of g and f is determined
+by the principal part of f . It is equal to
+                                        X X
+(3.10)                       {g, f } =       a+ (h, n)b(h, −n).
+                                       h∈L# /L n≤0
+
+Proof. We begin by noticing that hg, fidτ is a Γ′ -invariant 1-form on H. We have
+                                       D           E
+             d hg, fidτ = ∂¯ hg, fidτ = g, ∂∂τ̄ f dτ̄ dτ = −hg, Lk f i dµ.
+Hence, by Stokes’ theorem we get
+            Z                    Z                        Z 1/2
+               hg, Lk f i dµ = −           hg, fi dτ =            hg(u + it), f (u + it)i du,
+              Ft                     ∂Ft                   −1/2
+
+where
+(3.11)                    Ft = {τ ∈ H; |τ | ≥ 1, |u| ≤ 1/2 , and v ≤ t}
+denotes the truncated fundamental domain for the action of SL2 (Z) on H. In the last line
+we have used the invariance of hg, fidτ . If we insert the Fourier expansions of f and g, we
+see that the integral over u picks out the 0-th Fourier coefficient of hg, f i. Thus
+                    Z                  XX
+                       hg, Lk f i dµ =        a+ (h, n)b(h, −n) + O(e−εt )
+                     Ft                     h       n≤0
+                              ON TWO GEOMETRIC THETA LIFTS                                  13
+
+for some ε > 0. We finally obtain
+                              Z                 X X
+                {g, f } = lim   hg, Lk f i dµ =     a+ (h, n)b(h, −n)
+                          t→∞    Ft
+                                                  h∈L# /L n≤0
+
+
+as asserted.                                                                                
+
+   Observe that the definition of the pairing (3.9) immediately implies that {g, f } = 0 for
+          !
+all f ∈ Mk,L . By (3.10) we get nontrivial relations among the coefficients of modular forms
+in Mκ,L− . These are also easily obtained by means of the residue theorem on the Riemann
+sphere. Moreover, it is clear that {g, f } = 0 for all Eisenstein series g ∈ Mκ,L− .
+                                               +     !
+Theorem 3.6. The pairing between the quotient Hk,L /Mk,L and Sκ,L− induced by (3.9) is
+non-degenerate.
+                                             +
+  It suffices to show that the mapping ξk : Hk,L → Sκ,L− is surjective. This is an immediate
+consequence of
+                                      !
+Theorem 3.7. The mapping ξk : Hk,L → Mκ,L − defined in Proposition 3.2 is surjective.
+
+
+
+   Before beginning with the proof, we need to introduce some notation.
+   Let Γ′′ ≤ Γ′ be a normal subgroup of finite index. We write X(Γ′′ ) for the compact
+modular curve corresponding to Γ′′ and π : H → X(Γ′′ ) for the canonical map. The
+Poincaré metric 1/v 2 on H induces a Kähler metric on X(Γ′′ ) (with logarithmic singularities
+at the cusps). We write ∗ for the corresponding Hodge star operator.
+   We denote the sheaf of holomorphic functions (respectively 1-forms) on X(Γ′′ ) by O
+(respectively Ω) and the sheaf of C ∞ differential forms of type (p, q) by E p,q . If D is a
+divisor on X(Γ′′ ), then we write OD for the sheaf corresponding to D. The sections of
+OD over an open subset U ⊂ X(Γ′′ ) are given by meromorphic functions f satisfying
+div(f ) ≥ −D on U.
+   If L is any O-module on X(Γ′′ ), we denote the L-valued C ∞ differential forms on an
+open set U ⊂ X(Γ′′ ), that is, the sections of E p,q ⊗O L over U, by E p,q (U, L). Moreover, we
+write Lk,L for the O-module sheaf of modular forms of weight k with representation ̺L on
+X(Γ′′ ). If U ⊂ X(Γ′′ ) is open, then the sections Lk,L (U) are holomorphic C[L# /L]-valued
+functions on the open subset π −1 (U) ⊂ H satisfying the transformation law of modular
+forms of weight k with representation ̺L for Γ′′ , and being holomorphic at the cusps.
+If Γ′′ acts freely on H, then Lk,L is a holomorphic vector bundle. A Hermitean metric
+(with logarithmic singularities at the cusps) on it is given by the Hermitean scalar product
+(f, g)τ = hf, giv k on the fiber over π(τ ), where τ = u + iv ∈ H and hf, gi denotes the
+standard scalar product on C[L# /L] as before.
+   The dual vector bundle L∗k,L of Lk,L can be identified with the vector bundle L−k,L− of
+modular forms of weight −k with representation ̺∗L on X(Γ′′ ). The mapping f 7→ v k f¯
+defines an anti-linear bundle isomorphism Lk,L → L∗k,L . It induces a Hodge star operator
+
+          ∗¯L : E p,q ⊗O Lk,L −→ E 1−p,1−q ⊗O L∗k,L ,    ¯∗L (φ ⊗ f ) = (∗φ̄) ⊗ (v k f¯),
+14                               JAN H. BRUINIER AND JENS FUNKE
+
+on Lk,L -valued C ∞ differential forms on X(Γ′′ ) (see [We] chapter V.2). It is easily verified
+that
+(3.12a)                 ∗¯L (f ) = v k−2 f¯ du dv, for f ∈ E 0,0 (U, Lk,L),
+(3.12b)               ¯∗L (f dτ ) = iv k f¯dτ̄ ,   for f dτ ∈ E 1,0 (U, Lk,L ),
+(3.12c)                ¯∗L (f¯dτ̄ ) = iv k f dτ,   for f¯dτ̄ ∈ E 0,1 (U, Lk,L).
+The Laplace operator on differential forms in E p,q (U, Lk,L) is given by
+                                 = ∂¯ ¯∗L ∂¯
+                                           ¯∗L + ∗¯L ∂¯
+                                                     ¯∗L ∂.
+                                                         ¯
+By a straightforward computation using (3.12) it can be shown that
+(3.13)                            ¯∗L ∂¯ f = Rk−2 Lk f = −∆k f
+                         f = ∗¯L ∂¯
+for functions f ∈ E 0,0 (U, Lk,L).
+Proof of Theorem 3.7. Let Γ′′ ≤ Γ′ be a normal subgroup of finite index that acts freely
+on H. We first prove the analogous result for the group Γ′′ , namely that the mapping
+ξk : Hk,L (Γ′′ ) → Mκ,L
+                    !       ′′
+                        − (Γ ) is surjective.
+                                                ′′
+   We consider the Riemann surface     P X = X(Γ ) using the above notation. Let s1 , . . . , sr
+be the cusps of X and write D = i si for the divisor on X given by the cusps. Let n be
+a positive integer. By tensoring the Dolbeault resolution of the structure sheaf O with the
+locally free O-module Lk,L ⊗O OnD , we get the exact sheaf sequence
+                                                              ¯
+     0       / O ⊗ Lk,L ⊗ OnD           / E 0,0 ⊗ Lk,L ⊗ OnD ∂⊗1⊗1/ E 0,1 ⊗ Lk,L ⊗ OnD     / 0.
+
+Since E p,q ⊗ Lk,L ⊗ OnD is a fine sheaf, it is acyclic. Hence we obtain the following long
+exact cohomology sequence:
+(3.14) 0 −→ (Lk,L ⊗ OnD )(X) −→ E 0,0(X, Lk,L ⊗ OnD )
+                                      −→ E 0,1(X, Lk,L ⊗ OnD ) −→ H 1 (X, Lk,L ⊗ OnD ) −→ 0.
+  We claim that H 1 (X, Lk,L ⊗ OnD ) vanishes, if n is large. In fact, using Serre duality (see
+[We] chapter V Theorem 2.7) we find
+                             = H 0 (X, Ω ⊗ L∗ ⊗ O∗ ) ∼
+        H 1 (X, Lk,L ⊗ OnD ) ∼                     k,L     = H 0 (X, Lκ,L− ⊗ O−nD ).
+                                                            nD
+
+Because the number of zeros (counted with multiplicities) of holomorphic modular forms
+of fixed weight κ is bounded, the latter cohomology group vanishes if n is sufficiently large.
+This proves the claim.
+                    !       ′′
+   Now let g ∈ Mκ,L     − (Γ ).   We want to show that there is an f ∈ Hk,L (Γ′′ ) such that
+ξk (f ) = g. We chose a positive integer n greater or equal to the orders of the poles of g
+at the cusps and such that H 1 (X, Lk,L ⊗ OnD ) vanishes. Then the 1-form g dτ defines a
+global holomorphic section in E 1,0 (X, L∗k,L ⊗ OnD ). Applying the Hodge star operator, we
+get the 1-form iv −k ḡ dτ̄ ∈ E 0,1 (X, Lk,L ⊗ OnD ). By virtue of the exact sequence (3.14) we
+find that there is a function f ∈ E 0,0(X, Lk,L ⊗ OnD ) satisfying ∂f ¯ = iv −k ḡ dτ̄ . But this is
+equivalent to saying
+                                        −v k−2 Lk f dτ̄ = ḡ dτ̄ .
+                              ON TWO GEOMETRIC THETA LIFTS                                    15
+
+We are left with showing that ∆k f = 0. This follows from
+                                ¯∗L ∂¯ f = ∗¯L ∂¯
+               −∆k f = f = ∗¯L ∂¯             ¯∗L iv −k ḡ dτ̄ = −¯∗L ∂¯ gdτ = 0
+completing the proof of Theorem 3.7 for the group Γ′′ .
+  For the full modular group Γ′ the assertion follows by considering the Γ′ /Γ′′ -invariant
+subspaces in (3.14), using the fact that the cohomology of a finite group acting on a C-
+vector space vanishes.                                                                   
+Corollary 3.8. The following sequences are exact:
+                                                       ξk
+                         0      / M!          / Hk,L        / M!      / 0,
+                                   k,L                         κ,L−
+
+                                                       ξk
+                          0      / M!          / H+         / Sκ,L−   / 0.
+                                    k,L          k,L
+
+   We will also need a slight variation of the above duality result. To formulate it, we
+                                                 +
+introduce a second pairing between the spaces Hk,L   and Mκ,L− . If g ∈ Mκ,L− with Fourier
+               P                               +
+expansion g = h,n b(h, n)e(nτ )eh , and f ∈ Hk,L with Fourier expansion as in (3.2), then
+we put
+                                      X X
+(3.15)                    {g, f }′ =          a+ (h, n)b(h, −n).
+                                         h∈L# /L n<0
+
+This definition differs from (3.10) by the fact that we only sum over negative n. We let
+   !!                         !
+Mk,L  be the subspacePof Mk,L     consisting of those weakly holomorphic modular forms f
+whose constant term h a+ (h, 0)eh in the Fourier expansion is orthogonal to the constant
+terms of all g ∈ Mκ,L− with respect to h·, ·i. If k < 0 or if k = 0 and ̺L does not contain
+                                                                                    !!
+the trivial representation, then, using Eisenstein series in Mκ,L− , one sees that Mk,L  simply
+                         !
+consists of those f ∈ Mk,L with vanishing constant term. However, otherwise the fact that
+                                                                                       !!
+Eisenstein series of weight ≤ 2 may be non-holomorphic implies that some f ∈ Mk,L            may
+                                                 !!                                        ′
+have non-vanishing constant term. If f ∈ Mk,L or g ∈ Sκ,L− , then {g, f } = {g, f } . In
+particular the pairing {g, f }′ vanishes, if f ∈ Mk,L
+                                                    !!
+                                                       .
+                                         +    !!                           +     !
+Corollary 3.9. The pairings between Hk,L    /Mk,L and Mκ,L− (respectively Hk,L /Mk,L and
+Sκ,L− ) induced by (3.15) are non-degenerate.
+   This can be proved using Theorem 3.6 and Eisenstein series in Mκ,L− . The details are
+left to the reader.
+Remark 3.10. If h ∈ L# /L and m ∈ Z + q(h) is negative, the Hejhal Poincaré series
+Fh,m (τ, κ/2) defined in [Br1] Definition 1.8 and Proposition 1.10 (see also [He] and [Ni]) are
+                                      +
+examples of weak Maass forms in Hk,L     . If k < 0, it can be shown that they span the whole
+          +
+space Hk,L (see [Br1] Proposition 1.12). Moreover, one can check that ξk (Fh,m (τ, κ/2))
+equals up to a constant factor the usual holomorphic Poincaré series Ph,−m (τ ) ∈ Sκ,L− (as
+e.g. defined in [Br1] chapter 1.2.1). Therefore, for κ > 2 (and k < 0), the above duality
+statement also follows from chapter 1 of [Br1]. However, the approach of the present paper
+is more conceptual while also covering the low weights κ = 3/2 and 2 (where the Ph,−m
+would need to be defined by Hecke summation).
+16                              JAN H. BRUINIER AND JENS FUNKE
+
+     The principal part of the Hejhal Poincaré series Fh,m (τ, κ/2) is equal to
+                          e(mτ )eh + (−1)q e(mτ )e−h + constant term.
+This shows that, up to the constant term, any Fourier polynomial as in (3.6) occurs as
+                                       +
+the principal part P (f ) of some f ∈ Hk,L . This can also be deduced from Theorem 3.7 as
+follows:
+Proposition 3.11. For every Fourier polynomial of the form
+                                X       X
+                       Q(τ ) =              a+ (h, n)e(nτ )eh
+                                     h∈L# /L n∈Z+q(h)
+                                               n<0
+                     +
+there exists an f ∈ Hk,L with principal part P (f ) = Q + c for some T -invariant constant
+         #
+c ∈ C[L /L]. The function f is uniquely determined, if k < 0 (and sometimes also if
+k = 0).
+Proof. Given Q as above, we define a linear functional λQ on Sκ,L− via the right hand side
+of (3.15). By virtue of Corollary 3.9 this functional is represented by a weak Maass form
+        +
+h ∈ Hk,L  , i.e., {g, h} = λQ (g) for all g ∈ Sκ,L− . The functional λQ−P (h) then vanishes
+identically on Sκ,L− . Hence, by a variant of Theorem 3.1 of [Bo2] (see [Br1] Theorem 1.17),
+there exists a weakly holomorphic h′ ∈ Mk,L   !
+                                                with principal part Q − P (h) + c for some
+                                                           +
+T -invariant constant c ∈ C[L /L]. Then f := h + h′ ∈ Hk,L
+                               #
+                                                               has principal part Q + c. 
+                              4. Special Schwartz Functions
+  For the following discussion the reader should consult [KM3], sections 5-8.
+  Kudla and Millson constructed (in more generality) Schwartz forms ϕKM on V (R) taking
+values in Aq (D), the differential q-forms on D. More precisely,
+                                                               ^q
+                   ϕKM ∈ [S(V (R)) ⊗ Aq (D)]G ≃ [S(V (R)) ⊗       (p∗ )]K ,
+where the isomorphism is again given by evaluation at the base point of D.
+   We denote by Xαµ (1 ≤ α ≤ p, p + 1 ≤ µ ≤ p + q) the elements of the obvious basis of p
+in (2.1) and let ωαµ be the elements of the dual basis which pick out the αµth coordinate
+of p. Then ϕKM is given by applying the operator
+                                 p+q
+                                      " p                       #
+                              1 Y X                1 ∂
+                       D = q/2               xα −           ⊗ Aαµ
+                            2 µ=p+1 α=1           2π ∂xα
+                                                V
+to the standard Gaussian ϕ0 ⊗ 1 ∈ [S(V (R)) ⊗ 0 (p∗ )]K :
+                                        ϕKM = D(ϕ0 ⊗ 1).
+Here Aαµ denotes the left multiplication by ωαµ . Note that this is 2q/2 times the corre-
+sponding quantity in [KM3]. It is easy to see that ϕKM is K-invariant, and by [KM1],
+Theorem 3.1 it is an eigenfunction of K ′ of weight p+q        2
+                                                                 .
+  For a multi-index α = (α1 , . . . , αq ) ∈ {1, . . . , p}q , we have
+                                  X
+                    ϕKM (x) =           Pα (x) ϕ0 (x) ωα1 p+1 ∧ · · · ∧ ωαq p+q ,
+                                    α
+                               ON TWO GEOMETRIC THETA LIFTS                                 17
+
+where Pα (x) is a (in general non-homogeneous) polynomial of degree q. For α = (α, . . . , α),
+Pα (x) is given by
+                                                    √     
+                               Pα (x) = (4π)−q/2 Hq    2πxα ,
+                       2   q    2
+where Hq (t) = (−1)q et dtd q e−t is the q-th Hermite polynomial. For ‘mixed’ α, Pα (x) is a
+product of Hermite functions in the xα .
+  In particular, we have (see [KM1], Prop. 5.1)
+(4.1)                                     ϕKM (0) = eq ,
+where for q = 2l even, eq is the Euler form of the symmetric space D (which is the Euler
+class (see e.g. [KN]) of the tautological vector bundle over D, i.e., the fiber over a point
+z ∈ D is given by V  the negative q-plane z) and zero for q odd. Here eq is normalized such
+that it is given in q (p∗ ) by
+                            l X
+                           1    1
+                 eq = −               sgn(σ)Ωp+σ(1),p+σ(2) . . . Ωp+σ(2l−1),p+σ(2l) ,
+                          4π l! σ∈S
+                                     q
+
+
+with
+                                               p
+                                               X
+                                     Ωµν =           ωαµ ∧ ωαν .
+                                               α=1
+
+Note that for q = 2, Ω := −e2 is positive, i.e., it defines a Kähler form on the Hermitian
+domain D.
+   The space of K ′ -finite vectors in S(V (R)) is given by the so-called polynomial Fock
+space S(V (R)) ⊂ S(V (R)) which consists of those Schwartz functions on V (R) of the
+form p(x)ϕ0 (x), where p(x) is a polynomial function on V (R). Differentiating the action of
+Mp2 (R)×O(V (R)) on S(V (R)) we obtain the associated action of the Lie algebra sl2 ×o(V )
+which we also denote by ω. Then there is an intertwining map ι : S(V (R)) −→ P(Cp+q )
+to the infinitesimal Fock model of the Weil representation acting on the space of complex
+polynomials P(Cp+q ) in p + q variables such that ι(ϕ0 ) = 1. We denote the variables in
+P(Cp+q ) by zα (1 ≤ α ≤ p) and zµ (p + 1 ≤ µ ≤ p + q). Since
+                                              
+                                         1 ∂
+                                ι xj −           ι−1 = − 2π
+                                                          1
+                                                            zj ,
+                                        2π ∂xj
+the form ϕKM becomes
+                             √ !q
+                           − 2     X
+(4.2)           ϕKM =                      zα1 · · · zαq ⊗ ωα1 p+1 ∧ · · · ∧ ωαq p+q ,
+                            4π    α ,...,α
+                                      1    q
+
+                                             V
+when considered as an element in [P(Cp+q ) ⊗ q (p∗ )]K .
+  In the Fock model, the Weil representation acts as follows: For o(V (R)), we have
+                                                  ∂2     1
+                               ω(Xαµ ) = −4π           + zα zµ .
+                                                ∂zα ∂zµ 4π
+18                             JAN H. BRUINIER AND JENS FUNKE
+
+(There is a sign error in [KM3].) The elements R and L in sl2 (C) (which correspond to
+the raising and lowering operators R and L on H, see section 3) are given by
+                                                              
+                           1 1 i                      1 1 −i
+                     R=                  and     L=                 ,
+                           2 i −1                     2 −i −1
+and their action is
+                                           p           p+q
+                                        1 X 2          X    ∂2
+(4.3)                         ω(R) = −        zα + 2π            ,
+                                       8π α=1         µ=p+1
+                                                            ∂zµ2
+
+                                             p                   p+q
+                                             X ∂2   1 X 2
+(4.4)                        ω(L) = 2π           −         z .
+                                        α=1
+                                            ∂zα2   8π µ=p+1 µ
+                                                             V
+The differentiation d in the Lie algebra complex [P(Cp+q ) ⊗ (p∗ )]K is given by
+                                       X
+                                   d=      ω(Xαµ ) ⊗ Aαµ .
+                                          α,µ
+
+Form this it is easy to see that ϕKM is closed.
+     We also define a form
+                                                             ^
+(4.5)                         ψKM = ψ ∈ [P(Cp+q ) ⊗              q−1
+                                                                       (p∗ )]K
+(and therefore in [S(V (R)) ⊗ Aq−1 (D)]G ) by
+                                           −1
+(4.6)                            ψKM =             h(ϕKM ),
+                                      2(p + q − 1)
+                                       V       K
+where h is the operator on [P(Cp+q ) ⊗ ∗ (p∗ )] given by
+                                      X       ∂
+                                 h=       zµ      ⊗ A∗αµ .
+                                      α,µ
+                                             ∂z α
+
+Here A∗αµ denotes the (interior) multiplication with Xαµ , i.e., A∗αµ (ωα′ µ′ ) = δαα′ δµµ′ .
+Lemma 4.1.
+                                                                                              
+                   √ !q                                                zp+1      ...    zp+q
+                 − 2       −1        X                               ωα1 p+1    ...   ωα1 p+q 
+        ψKM =                                   zα1 · · · zαq−1 det 
+                                                                        ..               ..   ,
+                                                                                               
+                  4π    2(q − 1)! α ,...,α                                .                .
+                                     1    q−1
+                                                       ωαq−1 p+1 . . . ωαq−1 p+q
+                                                               V
+where the determinant in the non-commutative algebra P(Cp+q ) ⊗ ∗ (p∗ ) is defined induc-
+tively via expansion after the first row.
+Proof. We give a brief sketch. We first note (easily checked by induction)
+                                  √ !q
+                                − 2       1 X
+(4.7)                  ϕKM =                        zα · · · zαq det(Ω),
+                                 4π      q! α ,...,α 1
+                                                    1    q
+                                  ON TWO GEOMETRIC THETA LIFTS                                           19
+
+where                                                    
+                                    ωα1 p+1 . . . ωα1 p+q
+                              Ω =  ...              ..  .
+                                                      .
+                                    ωαq p+1 . . . ωαq p+q
+                             ∗
+The action of the operator Aβµ on det(Ω) can be computed by expanding det(Ω) by the
+(p − µ)-th column. If we write Ωνµ for the (q − 1) × (q − 1) matrix obtained from Ω by
+canceling the ν-th row and the (p − µ)-th column, we have
+                           q                                             q
+                           X                                             X
+         A∗βµ det(Ω) = −         (−1)   µ−p
+                                              A∗βµ ωαν µ det(Ωνµ ) = −         (−1)µ−p δβαν det(Ωνµ ).
+                           ν=1                                           ν=1
+
+A little calculation then shows
+                                                                                           
+                    √                                               zp+1    ...     zp+q
+               −(− 2/4π)q         X ∂                             ωα1 p+1 . . . ωα1 p+q 
+      ψKM =                                    zα1 · · · zαq det 
+                                                                     ..              ..    .
+                                                                                            
+            2(p + q − 1)(q − 1)! α ,...,α ∂zαq                         .               .
+                                  1      q
+                                                                  ωαq−1 p+1 . . . ωαq−1 p+q
+One now applies the product rule to obtain the assertion.                                                
+Theorem 4.2 (Kudla-Millson [KM3]).
+   (i) We have the identity
+                              ω(L)ϕKM = dψKM .
+   (ii) ψKM is an eigenfunction of K ′ with weight p+q
+                                                    2
+                                                       − 2.
+Example 4.3. For signature (p, 1), we have in the Fock model (Schrödinger model) of the
+Weil representation
+                     √ p                                 p
+                                                                          !
+                       2X                           √ X
+             ϕKM = −         zα ⊗ ωαp+1 = (ι ⊗ 1)     2     xα ϕ0 ⊗ ωαp+1
+                     4π α=1                             α=1
+
+and                               √                            
+                              2                     −1
+                       ψKM =    zp+1 ⊗ 1 = (ι ⊗ 1) √ xp+1 ϕ0 ⊗ 1 .
+                             8π                      2
+
+  We now specialize to the case of signature (p, 2), i.e., q = 2, when we have an underlying
+complex structure on D. Then by the conventions of section 2, the operators ∂ and ∂¯ on
+D are given by
+                        1X
+                   ∂=         ω(Xαp+1 − iXαp+2 ) ⊗ (ωαp+1 + iωαp+2 ),
+                        2 α
+                        1X
+                   ∂¯ =       ω(Xαp+1 + iXαp+2 ) ⊗ (ωαp+1 − iωαp+2 ).
+                        2 α
+               1
+  We set dc = 4πi      ¯ so that ddc = − 1 ∂ ∂.
+                  (∂ − ∂),                   ¯ Note that in this case ϕKM is actually a
+                                        2πi
+(1, 1)-form.
+20                                 JAN H. BRUINIER AND JENS FUNKE
+
+Theorem 4.4. In the case of signature (p, 2), we have
+                                            ω(L)ϕKM = −ddc ϕ0 .
+  We prove the theorem by computing the two sides separately. For the left hand side, by
+(4.4) and (4.2) we easily see
+Lemma 4.5. For signature (p, 2),
+                    p
+                 1 X                    1      2     2
+                                                          X
+      ω(L)ϕKM =        ωαp+1 ∧ ωαp+2 −      (z   + z    )      zα1 zα2 ωα1 p+1 ∧ ωα2 p+2 .
+                2π α=1                 64π 3 p+1    p+2
+                                                          α ,α              1       2
+
+
+     For the right hand side we get the same:
+Lemma 4.6. For signature (p, 2),
+                        p
+                     1 X                    1                   X
+        −ddc ϕ0 =          ωαp+1 ∧ ωαp+2 −       (z 2
+                                                   p+1 + z 2
+                                                          p+2 )      zα1 zα2 ωα1 p+1 ∧ ωα2 p+2.
+                    2π α=1                 64π 3                α ,α    1       2
+
+
+Proof. We have
+        1                           ∂    ∂        ∂       1
+          ω(Xαp+1 ± iXαp+2 ) = −2π    (      ±i       ) + zα (zp+1 ± izp+2 ).
+        2                          ∂zα ∂zp+1    ∂zp+2    8π
+We first see
+                                        X
+                         ¯ 0) = 1
+                         ∂(ϕ                    zα (zp+1 + izp+2 )(ωαp+1 − iωαp+2 )
+                                8π          α
+and then
+               ¯ 0) = −    1X
+             ∂ ∂(ϕ               (ωαp+1 + iωαp+2 ) ∧ (ωαp+1 + iωαp+2 )
+                           2 α
+                            1 X
+                         −            zα zα (zp+1 − izp+2 )(zp+1 + izp+2 )
+                           64π 2 α ,α 1 2
+                                    1   2
+
+                                                × (ωα1 p+1 + iωα1 p+2 ) ∧ (ωα2 p+1 − iωα2 p+2 )
+                              X
+                       = +i        ωαp+1 ∧ ωαp+2
+                               α
+                               i X              2      2
+                         −      2
+                                      zα1 zα2 (zp+1 + zp+2 ) ωα1 p+1 ∧ ωα2 p+2 .
+                             32π α ,α
+                                    1   2
+
+The lemma follows.                                                                                
+Remark 4.7. Theorem 4.2 states that there is (q −1)-form ψ such that ω(L)ϕKM = dψKM
+(for any signature). So Theorem 4.4 suggests (and it is easily checked) that in the Hermitian
+case one has
+(4.8)                                             ψ = −dc ϕ0 .
+From this perspective we can consider Theorem 4.4 as the Weil representation-theoretic
+analogue of the ddc -Lemma in complex geometry.
+                             ON TWO GEOMETRIC THETA LIFTS                                   21
+
+                                   5. The Theta Lifts
+5.1. The Kudla-Millson Lift. We consider the Schwartz function ϕKM from the previous
+section. Since ϕKM is closed and an eigenfunction of K ′ of weight κ = (p + q)/2, we get
+                               Θ(τ, z, ϕKM ) ∈ Aκ,L ⊗ Z q (X),
+i.e., Θ(τ, z, ϕKM ) is a non-holomorphic modular form of weight κ associated to the repre-
+sentation ̺L with values in Z q (X), the closed q-forms on X. (In fact, it extends to a closed
+q-form on the Borel-Serre compactification X̄ of X, see [FM1]). We then can consider the
+assignment                                    Z
+                          η 7→ ΛKM (τ, η) :=        η ∧ Θ(τ, z, ϕKM ),
+                                                X
+which is defined for rapidly decreasing (p − 1)q-forms on X. This map factors through
+ (p−1)q
+Hc      (X), the de Rham cohomology with compact support of X.
+Theorem 5.1 (Kudla-Millson, see [KM3]). For η closed and rapidly decreasing, the func-
+tion Λ(τ, η) is holomorphic on H and at the cusp (even though Θ(τ, z, ϕKM ) is not). We
+therefore have a map
+                               ΛKM : Hc(p−1)q (X) −→ Mκ,L .
+The Fourier expansion is given by
+                                    Z          X Z         
+                  ΛKM (τ, η)h = δh0     η ∧ eq +            η e(nτ ),
+                                       X               n>0    Z(h,n)
+
+i.e., the n-th Fourier coefficient of Θ(τ, z, ϕKM )h is a Poincaré dual form of the cycle
+Z(h, n). Here (for q even), eq is the Euler form of the symmetric space D, see (4.1). For
+q odd, ΛKM (τ, η) is a cusp form.
+Remark 5.2. For p = 1 and X non-compact, we have Hc0(X) = 0, so that Theorem
+5.1 would be empty. However, in that case, the q-form Θ(τ, z, ϕKM ) is actually rapidly
+decreasing on X, see [FM1], and therefore defines a class in Hcq (X). This corresponds to
+the fact that the cycles Z(h, n) are a collection of points in this situation. Hence ΛKM
+is defined on H 0 (X) ≃ R and for q ≥ 3, the lift Λ(τ, η) is a holomorphic modular form
+([FM1]), while for q = 2, it is non-holomorphic, see [Fu].
+5.2. The (Generalized) Borcherds Lift.
+5.2.1. The Hermitian Case. Here we assume that V has signature (p, 2) such that the
+corresponding symmetric domain is Hermitean. We put k = 1 − p/2 and κ = 1 + p/2.
+In this section we briefly recall some facts on the Borcherds lift from weakly holomorphic
+elliptic modular forms of weight k to automorphic forms on the orthogonal group O(V (R))
+[Bo1] and its generalization to weak Maass forms [Br1].
+   We consider the Siegel theta function Θ(τ, z, ϕp,2                      ∞
+                                                       0 ) ∈ A−k,L ⊗ C (X). The (additive)
+                                              +
+Borcherds lift of a weak Maass form f ∈ Hk,L− is defined by the theta integral
+                                              Z reg
+(5.1)               Φ(z, f ) = Φ(z, f, ϕ0 ) =       hf (τ ), Θ(τ, z, ϕp,2
+                                                                      0 )i dµ.
+                                               Γ′ \H
+22                             JAN H. BRUINIER AND JENS FUNKE
+
+The integral is typically divergent and needs to be regularized in the following way (indi-
+cated by the superscript “reg”): If F is a Γ′ -invariant function on H, we consider for an
+additional complex parameter s ∈ C the function
+                                         Z
+(5.2)                                lim   F (τ )v −s dµ,
+                                      t→∞    Ft
+
+where Ft denotes the truncated fundamental domain (3.11) for the action of SL2 (Z) on H.
+Formally, at s = 0, the quantity (5.2) equals the usual integral of F over Γ′ \H. However,
+even if this diverges, (5.2) sometimes converges for ℜ(s) ≫ 0 and has a meromorphic
+continuation to a neighborhood of s = 0. Then we define
+                                       Z reg
+(5.3)                                        F (τ ) dµ
+                                            Γ′ \H
+
+to be the constant term in the Laurent expansion of (5.2) at s = 0. So one feature of the
+regularization consists in prescribing the order of integration, the other in introducing s
+and looking at the Laurent expansion. The above regularization of the theta integral for
+weakly holomorphic modular forms was discovered by Harvey and Moore [HM] and vastly
+generalized by Borcherds [Bo1]. In connection with weak Maass forms it was investigated
+in [Br1].
+Remark 5.3. Note that in [Bo1] and [Br1] the Borcherds lift is actually defined for sig-
+nature (2, p). Identifying the symmetric spaces Dp,2 and D2,p and switching to the space
+V − one has
+                                                              
+                                                            − reg
+                           Φ(z, f ) = f (τ ), Θ(τ, z, ϕ2,p
+                                                       0 , L ) k,L− ,
+
+where the integral defining the Peterson scalar product is regularized as above. The right
+hand side is the definition used in [Bo1] and [Br1]. The definition given here is more
+convenient for our purposes.
+                                                               +
+Proposition 5.4. Denote the Fourier expansion of f ∈ Hk,L        − as in (3.2). The regular-
+                                                        ∞
+ized integral for Φ(z, f ) converges to a Γ-invariant C function on D with a logarithmic
+singularity along the divisor
+                                   X X
+                                −2           a+ (h, n)Z(h, −n).
+                                     h   n∈Q<0
+
+Proof. See [Bo1] section 6 and [Br1] section 2.2.                                               
+   We list some further properties of Φ(z, f ): Outside its singularities, the function Φ(z, f )
+is almost an eigenfunction of the invariant Laplacian ∆ on D induced by the Casimir
+element of the universal enveloping algebra of the Lie algebra of O(V (R)). More precisely,
+if we normalize ∆ as in [Br1] chapter 4.1, we have ∆Φ(z, f ) = 4p a+ (0, 0). Consequently,
+since ∆ is an elliptic differential operator on D, the function Φ(z, f ) is actually real analytic
+outside its singularities.
+   It is proved in [Br1] chapter 3.2 that Φ(z, f ) can be split into a sum
+(5.4)                        Φ(z, f ) = −2 log |Ψ(z, f )| + ξ(z, f ),
+                             ON TWO GEOMETRIC THETA LIFTS                                    23
+
+where ξ(z, f ) is real analytic on the whole domain D and Ψ(z, f ) is a meromorphic function
+on D whose divisor equals
+                                       X X
+(5.5)                         Z(f ) :=          a+ (h, n)Z(h, −n).
+                                       h     n∈Q<0
+           !                                 +
+If f ∈ Mk,L  − and its Fourier coefficients a (h, n) with negative index are integral, then
+
+ξ(z, f ) reduces to a “simple” function and Ψ(z, f ) is a meromorphic modular form for
+the group Γ of weight a+ (0, 0). This is the (multiplicative) Borcherds lift from Mk,L !
+                                                                                          − to
+
+meromorphic modular forms for Γ. If f is not holomorphic, then Ψ(z, f ) is far from being
+modular under Γ. (Caution: It is in general not true that ξ(z, f ) is equal to the regularized
+theta integral of f − as one might think.)
+   From these considerations it can be deduced that the (1, 1)-form
+(5.6)                         ΛB (f ) := ddc Φ(z, f ) = ddc ξ(z, f )
+is closed, harmonic, Γ-invariant, and of moderate growth. It represents the Chern class of
+the divisor (5.5) in the second cohomology H 2 (X). In particular, we have
+                                   Z       Z
+(5.7)                                   η=    η ∧ ΛB (f )
+                                     Z(f )        X
+                                                     !                      +
+for any rapidly decreasing 2(p − 1)-form η. If f ∈ Mk,L − , then ΛB (f ) = a (0, 0)Ω, i.e., a
+                                                                            !!
+multiple of the Kähler form Ω = −e2 on D and actually vanishes for f ∈ Mk,L   − and k < 0.
+
+   We summarize part of the above discussion in the following theorem.
+Theorem 5.5. (See [Br1] chapter 5.) The assignment f 7→ ΛB (f ) defines a linear mapping
+ +         1,1                  1,1
+Hk,L − → Zmg (X) to the space Zmg (X) of closed (1, 1)-forms of moderate growth on X.
+                      +        1,1                          +       !
+The induced mapping Hk,L − → Zmg (X)/CΩ factors through Hk,L− /Mk,L− .
+
+
+5.2.2. The Real Case. We now consider the case of general signature (p, q). If x ∈ V (R),
+we put |x| = |(x, x)|1/2 . Moreover, as before we let κ = (p + q)/2 and k = 2 − κ. The
+Schwartz form ψ = ψKM (see section 4) has weight −k = (q + p)/2 − 2 by Theorem 4.2
+(ii), hence
+                              Θ(τ, z, ψ) ∈ A−k,L ⊗ Aq−1(X).
+Note that the components of Θ(τ, z, ψ) are given by
+                                          X        √
+                  (Θ(τ, z, ψ))h = v 1−q/2      Pψ ( vλ, z)ϕp,q
+                                                           0 (λ, τ, z),
+                                              λ∈L+h
+
+with a (in general non-homogeneous) polynomial Pψ (x, z) ∈ [P(V (R)) ⊗ Aq−1(D)]G of
+degree q. By Lemma 4.1, Pψ can be written as
+                                      X
+(5.8)                     Pψ (x, z) =    Qα (x, z) Rα (x, z),
+                                              α
+
+where the sum extends over all multi-indices α = (α1 , . . . , αq−1 ). Here Qα is polynomial in
+[P(V (R)) ⊗ A0 (D)]G of degree q − 1 (in fact, a product of Hermite functions as for ϕKM ),
+which only depends on xz ⊥ ; while Rα is a homogeneous linear polynomial in [P(V (R)) ⊗
+24                           JAN H. BRUINIER AND JENS FUNKE
+
+Aq−1 (D)]G , which only depends on xz . In particular, we have Pψ (0, z) = 0. We normalize
+the polynomials such that at the base point z0 , we have
+                                                                               
+                                                       xp+1     ···     xp+q
+                                        −1           ωα1 p+1 · · · ωα1 p+q 
+             Rα (x) = Rα (x, z0 ) = √           det 
+                                                        ..                ..   ,
+                                                                                
+                                      2(q − 1)!           .                 .
+                                                     ωαq−1 p+1 · · · ωαq−1 p+q
+                                                                 Qq−1
+and the leading term of Qα (x) = Qα (x, z0 ) is given by 2(q−1)/2 i=1   xαi .
+              +
+  Let f ∈ Hk,L− be a weak Maass form. We then define the Borcherds lift for signature
+(p, q) by
+                                                      Z reg
+                                           k
+                                              reg
+(5.9)           Φ(z, f, ψ) := Θ(τ, z, ψ), v f −k,L =        hΘ(τ, z, ψ), f i dµ.
+                                                         Γ′ \H
+
+  We define the cycle Z(f ) associated to f by (5.5), as in the Hermitian case. Note that
+the Fourier coefficients satisfy a+ (−h, n) = (−1)q a+ (h, n), corresponding to Z(−h, n) =
+(−1)q Z(h, n). In particular, we have Z(Fh,m ) = 2Z(h, −m), where Fh,m is the Hejhal
+Poincaré series, see Remark 3.10.
+Proposition 5.6. The regularized integral for Φ(z, f, ψ) converges to a Γ-invariant C ∞
+function on D with singularities along Z(f ). More presicely, there exist G-invariant scalar-
+valued polynomials Qeα (x, z) ∈ [P(V (R)) ⊗ A0 (D)]G of degree (q − 1) such that in a small
+neighborhood of w ∈ D the singularity is of type
+             X X                    X     X
+                       a+ (h, n)              Qeα (λz ⊥ /|λz |, z) Rα (λz /|λz |, z) .
+               h   n∈Q<0        λ∈w ⊥ ∩Lh,−n   α
+
+The leading term Q         eα at the base point z0 is given by
+                 eα,q−1 of Q
+                                                        q−1
+                                            Γ (q/2) Y
+                                eα,q−1(x) = √
+                                Q                        xαi .
+                                              2π q/2 i=1
+
+   Note that all sums in the above formula are finite. The polynomials Q   eα and Rα only
+depend on the signature (p, q) and not on f .
+                                                                         √
+Example 5.7. In the hyperbolic case (q = 1), we have Q         e = 1/ 2 and R(x, z) =
+√1 (x, gvp+q ) with z = gz0 for some g ∈ G, and the singularity near w ∈ D is given
+  2
+by
+                      1X X +                X     X
+                                a (h, n)               sgn (λ, gvp+q ) .
+                      2 h n∈Q               ⊥       α
+                               <0          λ∈w ∩Lh,−n
+
+In particular, Φ(z, f, ψ) is locally bounded.
+Proof. The argument follows in large parts [Bo1], section 6. Since the function f − is
+exponentially decreasing as v → ∞, and Θ(τ, z, ψ) has moderate growth, the integral
+                                Z
+                                  hf − (τ ), Θ(τ, z, ψ)i dµ
+                                    F
+                                        ON TWO GEOMETRIC THETA LIFTS                       25
+
+over the standard fundamental domain F = {τ ∈ H; |τ | ≥ 1, |u| ≤ 1/2} for SL2 (Z) con-
+verges absolutely and defines a real analytic function on D. Moreover, the integral of
+hf + (τ ), Θ(τ, z, ψ)i over the compact subset F1 ⊂ H converges absolutely and defines a real
+analytic function on D. Hence we are left with considering the function
+                                  Z ∞ Z 1/2
+                        h(z, s) =           hf + (τ ), Θ(τ, z, ψ)iv −2−s du dv.
+                                          1   −1/2
+
+If we insert the Fourier expansions, the integration over u picks out the constant term in
+the Fourier expansion of hf + (τ ), Θ(τ, z, ψ)i. Thus
+                       X                   Z ∞
+                            +
+                                                    √
+(5.10)       h(z, s) =     a (λ, −q(λ))         Pψ ( vλ, z) exp(4πvq(λz ))v −1−s dv.
+                                                     1
+                            λ∈L#
+
+(Note that q(λz ) ≤ 0 for all λ in the above sum.) By the growth of f , it has only finitely
+many non-zero Fourier coefficients a+ (h, n) with negative index n. Hence, if U ⊂ D is a
+relatively compact neighborhood of w and ε > 0, then by reduction theory the set
+                    
+         Sf (U, ε) = λ ∈ L# ; a+ (λ, −q(λ)) 6= 0 and |q(λz )| < ε for some z ∈ U
+
+is finite. We split the sum over λ ∈ L# in (5.10) into the sum over λ ∈ Sf (U, ε) and the
+sum over λ ∈ L# − Sf (U, ε). The latter sum is up to a constant factor majorized by
+                             X
+                                     |a+ (λ, −q(λ))| exp(2πq(λz )),
+                                 λ∈L# −Sf (U,ε)
+
+
+locally uniformly in s ∈ C and z ∈ U. According to Lemma 3.4 there exists a constant
+C > 0 such that this sum is majorized by
+        X            p                
+               exp C |q(λ)| + 2πq(λz )
+        λ∈L#
+   a+ (λ,−q(λ))6=0
+             X                p                  π         X      π       
+    =                     exp C |q(λ)| + πq(λ) exp − (λ, λ)z ≪    exp − (λ, λ)z ,
+                                                    2                  2
+             λ∈L#                                               #      λ∈L
+        a+ (λ,−q(λ))6=0
+
+
+which clearly converges. We may conclude that the sum over λ ∈ L# − Sf (U, ε) in (5.10)
+(and all its derivatives) converges locally uniformly absolutely for s ∈ C and z ∈ U. In
+particular, it defines a C ∞ function for z ∈ U at s = 0.
+  Hence the singularity of Φ(z, f, ψ) for z ∈ U is dictated by the finite sum
+                        X                   Z ∞
+                               +
+                                                    √
+          h1 (z, s) =         a (λ, −q(λ))      Pψ ( vλ, z) exp(4πvq(λz ))v −1−s dv.
+                           λ∈Sf (U,ε)                    1
+
+
+Note that so far the argument works for any polynomial P (x, z).
+26                               JAN H. BRUINIER AND JENS FUNKE
+
+  Since Pψ (0, z) = 0, the term for λ = 0 does not contribute (and this implies that h1 (z, s)
+will be actually holomorphic at s = 0). We are left to consider (for λ 6= 0)
+                       Z ∞
+                               √
+        ψ̃(λ, z, s) :=     Pψ ( vλ, z) exp(4πvq(λz ))v −1−s dv
+                        1
+                       X              Z ∞
+                                              √                                 dv
+                    =     Rα (λz , z)     Qα ( vλz ⊥ , z) exp(4πvq(λz ))v 1/2−s
+                       α               1                                         v
+(5.11)                 X                 q−1
+                                         X                       Z ∞
+                                                                                                   dv
+                   =       Rα (λz , z)         Qα,ℓ (λz ⊥ , z)         exp(4πvq(λz ))v ℓ/2+1/2−s
+                       α                 ℓ=0                     1                                 v
+                       X                 q−1
+                                         X                                                                   
+                   =       Rα (λz , z)         Qα,ℓ (λz ⊥ , z) |4πq(λz )|s−(ℓ+1)/2 Γ   ℓ+1
+                                                                                        2
+                                                                                           − s, |4πq(λz )|       .
+                       α                 ℓ=0
+
+Here Qα,ℓR(λz ⊥ , z) denotes the homogeneous component of degree ℓ of Qα (λz ⊥ , z) and
+             ∞
+Γ(a, x) = x e−t ta−1 dt is the incomplete Gamma function as in [AbSt] (6.5.3). This shows
+that h1 (z, s) has a meromorphic continuation in s to the whole complex plane and is holo-
+morphic at s = 0. The claim now follows from the recurrence relations of the incomplete
+Gamma function and from Γ(q/2, |4πq(λz )|) = Γ(q/2) + O(|λz |) as λz → 0.               
+     Analogously to the Hermitian situation we define the map ΛB,ψ by
+(5.12)                               ΛB,ψ (z, f ) = −dΦ(z, f, ψ).
+This is the analogue to the map ΛB = ΛB,ϕ0 considered in the Hermitian case. The
+corresponding geometric properties will easily follow from the relationship to the Kudla-
+Millson lift which we establish in the next section.
+Remark 5.8. Note that in the Hermitian case of signature (p, 2) we have now defined two
+Borcherds lifts, the ‘classical’ one Φ(z, f ) = Φ(z, f, ϕ0 ) and Φ(z, f, ψ) = Φ(z, f, −dc ϕ0 ).
+We will later see that we actually have (outside Z(f ))
+                                         dc Φ(z, f ) = −Φ(z, f, ψ);
+i.e., one can interchange the differential operator dc on the orthogonal domain D with the
+regularized SL2 (R)-integral.
+Remark 5.9. Analogously to [Br1], chapter 4, one can show that Φ(z, f, ψ) is harmonic,
+i.e., annihilated by the Laplacian for the symmetric space D. In particular, Φ(z, f, ψ) is
+real analytic.
+
+                                           6. Main Results
+  Recall (with κ = (p + q)/2 and k = 2 − κ) the map ξk (f ) = R−k (v k f¯) ∈ Sκ,L for
+       +
+f ∈ Hk,L − . Since Θ(τ, z, ϕKM ) is moderately increasing in τ , we can therefore study the
+
+scalar product
+                             (Θ(τ, z, ϕKM ), ξk (f ))κ,L ∈ Z q (X).
+                              ON TWO GEOMETRIC THETA LIFTS                                   27
+
+                                                           +
+Theorem 6.1. Let V be of signature (p, q) and let f ∈ Hk,L   − . Then, outside Z(f ), the set
+
+of singularities of the Borcherds lift Φ(z, f, ψ), we have
+(6.1)         (Θ(z, ϕKM ), ξk (f ))κ,L − a+ (0, 0)eq = −dΦ(z, f, ψ) = ΛB,ψ (z, f ).
+For the ‘classical’ Borcherds lift in signature (p, 2), we have, outside Z(f ),
+(6.2)           (Θ(z, ϕKM ), ξk (f ))κ,L + a+ (0, 0)Ω = ddc Φ(z, f ) = ΛB (z, f ).
+Here a+ (0, 0) is the constant coefficient of the Fourier expansion of f , eq is the Euler form
+on D for q even (and zero for q odd), and Ω = −e2 is the Kähler form for the Hermitian
+domain Dp,2.
+Theorem 6.2.
+   (i) ΛB,ψ (f ) extends to a smooth closed q-form of moderate growth on X.
+                 !
+  (ii) If f ∈ Mk,L  − is weakly holomorphic, then
+
+
+                                    ΛB,ψ (f ) = −a+ (0, 0)eq .
+  (iii) In particular, ΛB,ψ induces a map
+                                    +       !        q
+                            ΛB,ψ : Hk,L − /Mk,L− −→ H (X)/Ceq .
+
+
+Proof. This follows immediately from Theorem 6.1: The left hand side of (6.1) is smooth
+and has moderate growth, which gives (i). The assertion (ii) follows from ξk (f ) = 0 for
+       !
+f ∈ Mk,L −.                                                                            
+   Observe that in view of (6.2) one obtains new proofs of the analogous properties of the
+‘classical’ Borcherds lift listed in section 6.
+                                                     qp−ℓ
+   We denote by (·, ·)X the natural pairing between Zrd   (X), the closed rapidly decreasing
+                      ℓ
+(qp−ℓ)-forms, and Zmg (X), the closed ℓ-forms of moderate growth. Recall that by Poincaré
+duality this induces a non-degenerate pairing between Hcqp−ℓ (X) and H ℓ (X), see [BT].
+                                                                                +
+   On the other hand, recall the pairings { , } and { , }′ between Mκ,L and Hk,L   − defined
+
+in (3.9) and (3.15).
+                                                     q(p−1)
+Theorem 6.3. The Kudla-Millson lift ΛKM : Zrd          (X) → Mκ,L and the Borcherds lift
+         +        q                                                          q(p−1)
+ΛB,ψ : Hk,L− → Zmg (X) are adjoint in the following sense: For any η ∈ Zrd          (X) and
+           +
+any f ∈ Hk,L− we have
+                                           
+                               η, ΛB,ψ (f ) X = {ΛKM (η), f }′ .
+Moreover, this duality factors through the non-degenerate pairings on the cohomology level
+                             +      !!
+and the one of Mκ,L with Hk,L  − /Mk,L− .
+
+
+Proof. Using (6.1) we see that
+                                                                            
+              η, ΛB,ψ (f ) X + a+ (0, 0) η, eq X = η, (ΘKM (τ, Z), ξk (f ))κ,L X
+                                                                             
+                                                 = (η, ΘKM (τ, Z))X , ξk (f ) κ,L
+                                                  
+                                                 = ΛKM (η), f .
+28                                JAN H. BRUINIER AND JENS FUNKE
+
+Here, in the second equality, we have exchanged the order of integration. This is valid
+because the latter integrals converge absolutely. Now the assertion follows from the Fourier
+expansion of the Kudla-Millson lift (see Theorem 5.1) and the definition of the pairing
+{ , }′ .                                                                                  
+
+Remark 6.4. In signature (p, 2), the same statement of Theorem 6.3 holds with ΛB,ψ
+replaced by the classical Borcherds lift ΛB .
+                                q(p−1)                +
+Corollary 6.5. For η ∈ Zrd               (X) and f ∈ Hk,L − , we have
+
+                                                                  Z
+                                                          
+                                             η, ΛB,ψ (f ) X =              η.
+                                                                   Z(f )
+
+
+For q even, this also holds with η = ep−1
+                                       q . In particular, ΛB,ψ (f ) is a harmonic represen-
+tative of the Poincaré dual form of the cycle Z(f ).
+
+Proof. By Theorem 5.1 and Proposition 3.5, we have
+                                     Z          X X          Z
+                             +                       +
+            {ΛKM (η), f } = a (0, 0)   η ∧ eq +     a (h, n)                                             η
+                                                  X                                             Z(h,n)
+                                                                  h∈L# /L n<0
+                                                              Z
+                                    +
+                                                      
+                                = a (0, 0) η, eq X +                  η.
+                                                              Z(f )
+
+
+The claim now follows from Theorem 6.3. The above calculation also holds for η = ep−1 q , see
+[KM4]; hence the corollary is valid in this case as well. ΛB,ψ (f ) is harmonic by Remark 5.9
+or alternatively by [KM4], Theorem 4.1.                                                    
+
+Proof of Theorem 6.1. We would like to use the adjointness of R−k and −L2−k to compute
+
+                      (Θ(z, ϕKM ), ξk (f ))2−k,L = (Θ(z, ϕKM ), R−k (v k f¯))2−k,L .
+
+However, due to the rapid growth of f , the scalar product (L2−k Θ(z, ϕKM ), v k f¯)−k,L does
+not converge. We have to proceed more carefully.
+   Let Ft be the truncated fundamental domain (see (3.11)) for the action of SL2 (Z) on
+H. For g ∈ A2−k,L and h ∈ A−k,L− , we then have (see [Br1], Lemma 4.2, correcting a sign
+error)
+
+        Z                               Z                                        Z1/2
+(6.3)        hg, R−k hiv −k du dv = −        hL2−k g, hiv 2−k du dv +                   hg(u + it), h(u + it)iv −k du.
+        Ft                              Ft                                      −1/2
+
+
+Note that we do not require any regularity for g or h at the cusp. We apply (6.3) for
+g = Θ(τ, z, ϕKM ) and h = v k f¯ and obtain
+                                ON TWO GEOMETRIC THETA LIFTS                                     29
+
+Lemma 6.6.
+                                               Z
+                                k ¯
+(6.4)    (Θ(z, ϕKM ), R−k (v f ))2−k,L = lim     hΘ(τ, z, ϕKM ), R−k v k f¯iv −k du dv
+                                          t→∞ F
+                                              tZ
+                                                                               du dv
+(6.5)                                   = lim −      hL2−k Θ(τ, z, ϕKM ), f¯i 2
+                                          t→∞     Ft                             v
+                                                Z 1/2                                    
+(6.6)                                         +       hΘ(u + it, z, ϕKM ), f (u + it)i du .
+                                                   −1/2
+
+  Next, we would like to compute the limit in (6.5) and (6.6) separately. We will see that
+this is possible for z ∈
+                       / Z(f ), while for z ∈ Z(f ) the limits of both terms do not exist (in
+(6.5) and (6.6), the singularities cancel each other out). We first consider the term (6.6).
+The integration picks out the 0-th Fourier coefficient of hΘ(u + it, z, ϕKM ), f (u + it)i.
+Lemma 6.7. Outside Z(f ), we have
+                  Z 1/2
+              lim       hΘ(u + it, z, ϕKM ), f (u + it)i du = a+ (0, 0)eq ,
+                   t→∞   −1/2
+
+while the limit does not exist for z ∈ Z(f ). In particular, the limit defines a smooth
+differential form on D − Z(f ), which extends smoothly to D.
+Proof. Since f − is rapidly decreasing in v, we see
+                           Z 1/2
+                      lim        hΘ(u + it, z, ϕKM ), f − (u + it)i du = 0.
+                      t→∞    −1/2
+
+We write ϕKM (x, z) = PKM (x, z)ϕ0 (x, z), where PKM is a polynomial in [P(V (R)) ⊗
+Aq (D)]G only depending on xz ⊥ . For f + , one then has
+     Z 1/2
+           hΘ(u + it, z, ϕKM ), f + (u + it)i du
+        −1/2
+                                                X             √
+                      = ϕKM (0)a+ (0, 0) +               PKM ( tλ, z)a+ (λ, −q(λ))e4πq(λz )t .
+                                               λ∈L# −0
+
+For z ∈ Z(f ), hence λz = 0, the sum clearly diverges as t → ∞, otherwise, the sum is
+rapidly decreasing in t by arguments similar to the proof of Proposition 5.6. The lemma
+now follows from ϕKM (0) = eq , see (4.1).                                            
+Lemma 6.8. The quantity in (6.5) is given by
+              Z                                 Z reg
+          lim                          ¯
+                  hL2−k Θ(τ, z, ϕKM ), f i dµ =       hL2−k Θ(τ, z, ϕKM ), f¯i dµ
+         t→∞ F                                    ′
+                                                 Γ \H
+                t
+                                                Z reg
+                                              =       hΘ(τ, z, dψ), f¯i dµ.
+                                                     Γ′ \H
+
+This defines a smooth form on D − Z(f ) which extends smoothly to all of D.
+30                                 JAN H. BRUINIER AND JENS FUNKE
+
+Proof. The second equality follows from the fundamental fact
+                                   L2−k Θ(τ, z, ϕKM ) = Θ(τ, z, dψ),
+which is Theorem 4.2. From the Lemmas 6.6 and 6.7 it follows that the limit exists, defining
+a smooth form outside Z(f ). As (6.4) defines a smooth form on D, the limit extends to all
+of D. As the limit exists, it is per definitionem the regularized integral. (This corresponds
+to LϕKM (0) = dψ(0) = 0).                                                                  
+  Combining Lemmas 6.6, 6.7, 6.8 we obtain outside Z(f ):
+                                         Z reg
+(6.7)     (Θ(z, ϕKM ), ξk (f ))2−k,L = −       hΘ(τ, z, dψ), f¯i dµ + a+ (0, 0)eq .
+                                                 Γ′ \H
+
+The identity (6.1) now follows from
+Lemma 6.9.
+          Z reg                                 Z reg
+                                     ¯ dµ = d
+                       hΘ(τ, z, dψ), fi                  hΘ(τ, z, ψ), f¯i dµ = dΦ(z, f, ψ).
+               Γ′ \H                             Γ′ \H
+
+Proof. We recall that because of Pψ (0, z) = 0, we have
+                    Z reg                           Z
+                                       ¯
+                          hΘ(τ, z, ψ), f i dµ = lim   hΘ(τ, z, ψ), f¯i dµ.
+                          Γ′ \H                      t→∞      Ft
+
+Since Ft is compact, we only have to justify the interchange of the differentiation d with
+the limit t → ∞. Arguing as in the proof of Proposition 5.6 (using the notation from
+there) we find that it suffices to show:
+                         X                  Z ∞
+                                +
+                                                     √                     dv
+(6.8)        dh(z, 0) =        a (λ, −q(λ))     dPψ ( vλ, z) exp(4πvq(λz )) .
+                             #               1                              v
+                             λ∈L
+
+If U ⊂ D is any relatively compact open subset and ε > 0, we split the sum over λ ∈ L#
+into the finite sum over λ ∈ Sf (U, ε) and the sum over λ ∈ L# − Sf (U, ε). An estimate
+for the latter sum as in Proposition 5.6 shows that it converges uniformly absolutely on U,
+justifying the interchange of differentiation and the limit. Thus it suffices to show that
+            Z ∞                                 Z ∞
+                     √                     dv             √                       dv
+          d      Pψ ( vλ, z) exp(4πvq(λz )) =        dPψ ( vλ, z) exp(4πvq(λz ))
+             1                              v     1                                v
+for λ ∈ Sf (U, ε) and z ∈ U − Z(f ). This follows from the exponential decay of the
+integrands as v → ∞.                                                             
+  For (6.2), we note that in this case, we have ψ = −dc ϕ0 , see (4.8). Therefore, we just
+need to show
+          Z reg                               Z reg
+(6.9)            c               ¯
+                d hΘ(τ, z, ϕ0 ), f i dµ = d c
+                                                    hΘ(τ, z, ϕ0 ), f¯i dµ = dc Φ(z, f, ϕ0 ).
+            Γ′ \H                                Γ′ \H
+
+This goes through as above with one extra point: Since ϕ0 (0) = 1 6= 0, the constant term
+of hΘ(τ, z, ϕ0 ), f¯i involves also the term a+ (0, 0)v. One sees that the regularized integral
+                                ON TWO GEOMETRIC THETA LIFTS                                           31
+
+is actually given by
+         Z reg                                         Z
+                                                                                                
+(6.10)                        ¯         +
+               hΘ(τ, z, ϕ0 ), f i dµ = a (0, 0)C + lim           hΘ(τ, z, ϕ0 ), f¯i − a+ (0, 0)v dµ,
+          Γ′ \H                                     t→∞    Ft
+
+where C is a constant not depending
+                              R          on z (namely the constant term in the Laurent
+expansion at s = 0 of limt→∞ Ft v dµ). Applying dc to the right hand side, one can now
+                                  1−s
+
+interchange differentiation and the limit as above. One obtains (6.9), which implies (6.2).
+   This completes the proof of Theorem 6.1.                                              
+
+                             7. The Borcherds lift as a current
+  In this section, we consider the current which is induced by the Borcherds lift Φ(f, ψ)
+defined in (5.9).
+  Consider a top degree form φ ∈ Apq (Γ\D). We then have
+                             Z           Z            
+                                  φ(z) =       φ(g)dg (1p),
+                                  Γ\D             Γ\G
+                                                                                   V
+where φ on the right hand side is considered as an element in [C ∞ (Γ\G) ⊗ pq p∗ ]K .
+(We will frequently use this
+                         V identification without further comment.) Here 1p is a properly
+oriented basis vector for pq p ≃ R of length one with respect to the Killing form. Moreover,
+dg = dz dk, where dz is the measure on D coming form the Killing form and vol(K, dk) = 1.
+   We now pick appropriate coordinates for D. We denote by H = Gv1 the stabilizer in G
+of the first basis vector v1 of V . Then H is the fixed point set of an involution τ on G.
+On the Lie algebra level we obtain a decomposition g = h + q into ±1 eigenspaces of τ .
+Then L = H ∩ K is a maximal compact subgroup of H. We write ΓH = Γv1 . There is a
+diffeomorphism (see [KM2], section 4, [FJ], section 2)
+                                 Ψ : H ×L (p ∩ q) −→ D = G/K,
+                                        (h, Y ) 7→ h exp(Y )K.
+Let at = exp(tX1p+q ) for t ∈ R, and let A = {at ; t ∈ R} ≃ R be the one-parameter
+subgroup of G associated to the maximal abelian subspace of p ∩ q generated by X1p+q .
+We write Aε = {at ; t ≥ ε}. We have a decomposition G = HAK and, with a positive
+constant C depending on the normalizations of the invariant measures, the integral formula
+(see [FJ], section 2)
+               Z             Z Z Z
+                  φ(g)dg = C         φ(hat k)| sinh(t)|q−1 cosh(t)p−1 dh dt dk.
+                  G              K   A0   H
+
+(If q = 1, one has to replace A0 by A, corresponding to the fact that in this case Dv1 splits
+D into two pieces).
+Proposition 7.1. The (q − 1)-form Φ(f, ψ) is locally integrable, i.e.,
+                                Z
+                                   η ∧ Φ(f, ψ) < ∞
+                                          X
+          (p−1)q+1
+for η ∈ Ac            (X).
+32                                         JAN H. BRUINIER AND JENS FUNKE
+
+Proof. For q = 1 the statement is clear since in that case Φ(f, ψ) is locally bounded, see
+Proposition 5.6 and Example 5.7. For q 6= 1, we need to show
+                            Z
+                                  η(g) ∧ Φ(f, ψ)(g) dg < ∞.
+                                                Γ\G
+
+We can replace Φ(f, ψ)(g) by the part which gives rise to its singularities
+                           X X                 X
+                                     a+ (h, n)       ψ̃(g −1 λ)
+                                            h     n∈Q<0             λ∈Lh,−n
+
+with ψ̃(λ) := ψ̃(λ, z0 , 0) given by setting s = 0 in (5.11). Now
+                           X                   X       X
+                                 ψ̃(g −1 λ) =               ψ̃(γ −1 g −1λ),
+                              λ∈Lh,−n                      λ∈Γ\Lh,−n γ∈Γλ \Γ
+
+and therefore by unfolding
+                  Z    X X                                     X
+                                                  a+ (h, n)             η(g) ∧ ψ̃(g −1λ) dg
+                           Γ\G    h   n∈Q<0                   λ∈Lh,−n
+                              X X                             X         Z
+                                                +
+                          =                  a (h, n)                           η(g) ∧ ψ̃(g −1 λ) dg.
+                              h   n∈Q<0                   λ∈Γ\Lh,−n     Γλ \G
+
+This is a finite sum (since a+ (h, n) = 0 for n ≪ 0), so that we only have to √      show the
+existence of the integral for a given λ of positive length. We can assume λ = mv1 for
+some m > 0. We have
+       Z
+                             √
+(7.1)         η(g) ∧ ψ̃(g −1 mv1 ) dg
+        ΓH \G
+                             Z    Z ∞
+                           ′
+                                                          √
+                      =C              η(hat ) ∧ ψ̃(a−1
+                                                    t h
+                                                       −1
+                                                            mv1 ) sinh(t)q−1 cosh(t)p−1 dt dh
+                                          ΓH \H     0
+
+with a positive constant C . But now h−1 v1 = v1 and
+                                      ′
+                           √              √             √
+                       a−1
+                        t    mv1 = cosh(t) mv1 − sinh(t) mvp+q .
+Hence
+                                                √                     √
+(7.2a)                                     (a−1
+                                              t   mv1 )z0 = − sinh(t) mvp+q ,
+                                                √                   √
+(7.2b)                                    (a−1
+                                             t    mv1 )z0⊥ = cosh(t) mv1 ,
+so that, see (5.11),
+                                                              q−1
+                  √           −1 X              X       √             
+(7.3)    ψ̃(a−1
+             t        mv1 ) = √      Rα (vp+q )     Qα,ℓ m cosh(t)v1
+                                2π α            ℓ=0
+                                                                    −ℓ/2                                              
+                                                    × 2πm sinh2 (t)       Γ                      ℓ+1
+                                                                                                  2
+                                                                                                     , 2πm sinh2 (t)       .
+Therefore the integrand in (7.1) is bounded as t → 0. On the other hand, ψ̃(a−1 −1
+                                                                             t h v1 ) is
+exponentially decreasing in et (uniformly in h). Since η has compact support and ΓH \H
+                                 ON TWO GEOMETRIC THETA LIFTS                                             33
+
+has finite volume, we conclude that (7.1) converges. Hence the above unfolding is valid
+and the proposition is proved.                                                       
+  Recall that a locally integrable ℓ-form ω on X defines a current [ω] on X, i.e., a linear
+functional on Apq−ℓ
+               c    (X), via                 Z
+                                            [ω](η) :=             η∧ω
+                                                              X
+for η ∈ Apq−ℓ
+         c    (X). For a current T , we define its exterior derivative by
+                                   (dT )(η) = (−1)deg(η)+1 T (dη).
+Theorem 7.2. Let δZ(f ) be the delta-current for the special cycle Z(f ), and for a locally
+integrable differential form ω, we denote the associated current by [ω]. Then
+(7.4)                              d[Φ(f, ψ)] + δZ(f ) = [ΛB,ψ (f )].
+                    (p−1)q
+Proof. Let η ∈ Ac            (X). Then
+                                                    Z
+                                         (p−1)q+1
+              d[Φ(f, ψ)](η) = (−1)                      dη ∧ Φ(f, ψ)
+                                                    X
+                                                    Z                              Z
+                                         (p−1)q+1
+                                = (−1)                  d (η ∧ Φ(f, ψ)) +                 η ∧ dΦ(f, ψ).
+                                                    X                                 X
+To obtain the theorem we therefore only need to show
+                                     Z                   Z
+                            (p−1)q+1
+                       (−1)            d (η ∧ Φ(f, ψ)) =                               η.
+                                               X                               Z(f )
+
+By Stokes’ theorem, we can modify the differential form Φ(f, ψ) by a smooth form without
+changing the integral. Hence we can replace it by its ‘singular’ part as in the previous
+proposition. By unfolding we see
+         Z                    X X                 X Z                         
+                                       +
+            d (η ∧ Φ(f, ψ)) =         a (h, n)                d η ∧ ψ̃(λ, z, 0) .
+          X                         h    n∈Q<0                λ∈Γ\Lh,−n       Γλ \D
+
+Again,
+     √ this is a finite sum, so it suffices to consider the integral on the right hand side for
+λ = mv1 .
+   For ε > 0,
+                             Uε := D − Ψ (H × {tX1p+q ; t ≥ ε})
+defines an open neighborhood of the cycle Dv1 . (For q = 1, replace the condition t ≥ ε by
+|t| ≥ ε.) Then by Stokes’ theorem we obtain
+            Z                                   Z
+                             √                                         √
+(7.5)               d η ∧ ψ̃( mv1 , z, 0) = lim                 η ∧ ψ̃( mv1 , z, 0).
+              ΓH \D                                     ε→0       ∂(ΓH \(D−Uε ))
+
+By the analogue for (7.1) (which follows from the considerations in [FJ], section 2), we see
+that (7.5) is equal to
+                 Z
+                                       √                                        
+(7.6)     C lim        η(haε ) ∧ ψ̃(a−ε mv1 ) sinh(ε)q−1 cosh(ε)p−1 dh 1p/RX1p+q .
+              ε→0   ΓH \H
+
+for some universal constant C 6= 0.
+34                                   JAN H. BRUINIER AND JENS FUNKE
+
+  We consider (7.2) and (7.3) (with t = ε). For (7.6) only the terms with ℓ = q − 1 can
+contribute. But
+                                         ( √            q−1
+                   √                         2m cosh(ε)      , α = (1, 1, . . . , 1),
+           Qα,q−1 ( m cosh(ε)v1 , z0 ) =
+                                          0,                   otherwise.
+We obtain
+               Z                                                                               Z
+                                          √                 q−1             p−1            ′
+      C lim                η(haε ) ∧ ψ̃(a−ε mv1 ) sinh(ε)         cosh(ε)         dh = C               η(h) dh
+         ε→0       ΓH \H                                                                       ΓH \H
+
+with a constant C and ψ̃(λ) = ψ̃(λ, z0 , 0) as before. Therefore, the theorem holds with δZ(f )
+replaced by C ′′ δZ(f ) with a certain constant C ′′ independent of η. We conclude that the
+constant is equal to 1 by noting that this
+                                         R is the case for η closed: In (7.4), d[Φ(f, ψ)](η) = 0,
+while [ΛB,ψ (f )](η) = (η, ΛB,ψ (f ))X = Z(f ) η by Corollary 6.5.                             
+
+   The previous theorem can be reformulated saying that the pair (Z(f ), Φ(z, f, ψ)) defines
+a class in the group of differential characters introduced by Cheeger and Simons, see [C, CS].
+Note that we can consider the group of differential characters as the analogue for real
+manifolds of the arithmetic Chow group, see [GS].
+Theorem 7.3. In the Hermitian case of q = 2, then the ‘classical’ Borcherds lift Φ(z, f )
+defines a Green’s current for the divisor Z(f ), i.e.,
+                                     ddc [Φ(z, f )] + δZ(f ) = [ΛB (z, f )].
+Proof. Using −dc Φ(z, f ) = Φ(z, f, ψ), one easily obtains
+               (ddc η)Φ(z, f ) = η ∧ ddc Φ(z, f ) + d ((dc η)Φ(z, f ) + η ∧ Φ(z, f, ψ)) .
+The theorem now follows from the previous theorem and the logarithmic growth of Φ(z, f )
+along Z(f ).                                                                         
+   This result also follows from the splitting (5.4) of Φ(z, f ), obtained in [Br1] via the
+Fourier expansion, and the Poincaré-Lelong formula.
+   Observe that in the generic case the space X will be non-compact. Thus, to study
+intersection theory, one has to consider a smooth compactification X  e of X. In particular,
+in the arithmetic intersection theory of special divisors at the Archimedian place, one has
+to study Φ(z, f ) as a current on X. e This requires a detailed analysis of the growth of
+Φ(z, f ) at the boundary, which turns out to be of log- and log-log-type (for the case of
+Hilbert modular surfaces see [BBK]). One has to work with the extension of arithmetic
+intersection theory provided in [BKK].
+   Oda and Tsuzuki [OT] constructed Green’s functions for the special divisors by means of
+Poincaré series involving the secondary spherical function. By Theorem 4.7 of [BK], Φ(z, f )
+can be written as a linear combination of the Green’s functions of [OT] in an explicit way.
+   Let us also compare Φ(z, f ) with the Green’s functions constructed by Kudla [Ku1, Ku2].
+He introduces for x ∈ V (R), x 6= 0 and z ∈ D, the function
+                                        ξ 0 (x, z) = − Ei(2π(xz , xz )),
+                                ON TWO GEOMETRIC THETA LIFTS                                           35
+
+which for (x, x) > 0 turns out to be a Green’s function for the Rcycle Dx on the Hermitian
+                                                                    w t
+domain D and is smooth otherwise. Here, for w ∈ C, Ei(w) = −∞ et dt is the exponential
+integral.
+     √     While ξ 0 is not a Schwartz function on V (R), we can still define ξ(x, τ, z) =
+ξ 0 ( vx, z)e−πτ (x,x) for τ ∈ H, and one then has, see [Ku1, Ku2],
+                                    ddc ξ(x, τ, z) = ϕKM (x, τ, z)
+for x 6= 0. On the other hand, we can apply the lowering operator Lκ on H to ξ, and one
+easily checks
+                               Lκ ξ(x, τ, z) = −ϕ0 (x, τ, z).
+This provides a different proof of Theorem 4.4, i.e., φ := Lκ ϕKM = −ddc ϕ0 , and in
+summary, we obtain the following commutative diagram:
+                                                    Lκ
+                                    ξ(x, τ, z)          / −ϕ0 (x, τ, z) .
+                                         _                      _
+                                             ddc                     ddc
+                                                   Lκ
+                                                                 
+                                  ϕKM (x, τ, z)          / φ(x, τ, z)
+
+One can then use the ideas of the proof of Theorem 6.1 together with (6.10) to account for
+the problem that ξ is not defined for x = 0, to express Φ(z, f ) in terms of ξ.
+  Finally, we would like to mention that one can use the ideas of this paper to give a
+somewhat different proof of the results in [Ku1] and [BK] relating the geometric degrees
+(and the Archimedean contribution to the arithmetic degrees) of the special cycles to the
+coefficients of certain Eisenstein series and its derivatives (see also [Ku2, KRY]).
+                                               References
+[AbSt]   M. Abramowitz and I. Stegun, Pocketbook of Mathematical Functions, Verlag Harri Deutsch
+         (1984).
+[Bo1]    R. E. Borcherds, Automorphic forms with singularities on Grassmannians, Invent. Math. 132
+         (1998), 491–562.
+[Bo2]    R. E. Borcherds, The Gross-Kohnen-Zagier theorem in higher dimensions, Duke Math. J. 97
+         (1999), 219–233.
+[BT]     R. Bott and Tu, Differential Forms in Algebraic Topology, GTM 82, Springer Verlag.
+[Br1]    J. H. Bruinier, Borcherds products on O(2, l) and Chern classes of Heegner divisors, Springer
+         Lecture Notes in Mathematics 1780, Springer-Verlag (2002).
+[Br2]    J. H. Bruinier, Borcherds products and Chern classes of Hirzebruch-Zagier divisors, Invent. math.
+         138 (1999), 51–83.
+[BBK]    J. H. Bruinier, J. Burgos, and U. Kühn, Borcherds products in the arithmetic intersection theory
+         of Hilbert modular surfaces, in preparation.
+[BKK]    J. Burgos, J. Kramer, U. Kühn, in preparation.
+[BK]     J. H. Bruinier and U. Kühn, Integrals of automorphic Green’s functions associated to Heegner
+         divisors, preprint (2002), to appear in Int. Math. Res. Not.
+[C]      J. Cheeger, Multiplication of differential characters, Instituto Nazionale di Alta Mathematica,
+         Symposia Mathematica XI, (1973), 441-445.
+[CS]     J. Cheeger and J. Simons, Differential characters and geometric invariants, Geometry and Topol-
+         ogy (College Park, 1983/84), 50-80, Springer Lecture Notes in Mathematics 1167, Springer-
+         Verlag (1985)
+[FJ]     M. Flensted-Jensen, Discrete series for semi-simple symmetric spaces, Ann. Math. 111 (1980),
+         253-311.
+36                                JAN H. BRUINIER AND JENS FUNKE
+
+[Fr]      E. Freitag, Siegelsche Modulfunktionen, Springer-Verlag (1983).
+[Fu]      J. Funke, Heegner divisors and nonholomorphic modular forms, Compos. Math. 133 (2002),
+          289-321.
+[FM1]     J. Funke and J. Millson, in preparation.
+[FM2]     J. Funke and J. Millson, in preparation.
+[GS]      H. Gillet and S. Soulé, Arithmetic Chow groups and differential characters, Algebraic K-theory:
+          connections with geometry and topology (Lake Luise, 1987), 29-88, NATO Adv. Sci. Inst. Ser.
+          C Math. Phys. Sci. 279, Kluwer (1989).
+[HM]      J. Harvey and G. Moore, Algebras, BPS states, and strings, Nuclear Phys. B 463 (1996), no.
+          2-3, 315–368.
+[He]      D. A. Hejhal, The Selberg Trace Formula for PSL(2, R), Lecture Notes in Mathematics 1001,
+          Springer-Verlag (1983).
+[KN]      S. Kobayashi and K. Nomizu, Foundations of Differential Geometry II, Wiley (1969).
+[Ku1]     S. Kudla, Integrals of Borcherds forms, preprint (2001), to appear in Compos. Math.
+[Ku2]     S. Kudla, Central derivatives of Eisenstein series and height pairings, Ann. Math. 146 (1997),
+          545–646.
+[KM1]     S. Kudla and J. Millson, The theta correspondence and harmonic forms I, Math. Ann. 274,
+          (1986), 353–378.
+[KM2]     S. Kudla and J. Millson, The theta correspondence and harmonic forms II, Math. Ann. 277,
+          (1987), 267–314.
+[KM3]     S. Kudla and J. Millson, Intersection numbers of cycles on locally symmetric spaces and Fourier
+          coefficients of holomorphic modular forms in several complex variables, IHES Publi. Math. 71
+          (1990), 121–172.
+[KM4]     S. Kudla and J. Millson, Tubes, cohomology with growth conditions and an application to the
+          theta correspondence, Canad. J. Math. 40 (1988), 1–37.
+[KRY]     S. Kudla, M. Rapoport, T. Yang, Derivatives of Eisenstein series and Faltings heights, preprint
+          (2001).
+[Ni]      D. Niebur, A class of nonanalytic automorphic functions, Nagoya Math. J. 52 (1973), 133–145.
+[Od]      T. Oda, On Modular Forms Associated with Indefinite Quadratic Forms of Signature (2, n − 2),
+          Math. Ann. 231 (1977), 97–144.
+[OT]      T. Oda and M. Tsuzuki, Automorphic Green functions associated with the secondary spherical
+          functions, preprint, to appear in Publ. Res. Inst. Math. Sci.
+[RS]      S. Rallis and G. Schiffmann, On a relation between SL2 cusp forms and cusp forms on tube
+          domains associated to orthogonal groups, Trans. AMS 263 (1981), 1–58.
+[Sh]      T. Shintani, On the construction of holomorphic cusp forms of half integral weight, Nagoya Math.
+          J. 58 (1975), 83-126.
+[TW]      Y. Tong and S. Wang, Harmonic forms dual to geodesic cycles in quotients of SU(p, q), Math.
+          Ann. 258 (1982), 298-318.
+[W]       S. Wang, Correspondence of modular forms to cycles associated to O(p, q), J. Differential Geom-
+          etry 22 (1985), 151-223.
+[We]      R. O. Wells, Differential Analysis on Complex Manifolds, Springer-Verlag (1980).
+
+     Mathematisches Institut, Universität zu Köln, Weyertal 86–90, D-50931 Köln, Germany
+     E-mail address: bruinier@math.uni-koeln.de
+
+     Fields Institute, 222 College Street, Toronto, Ontario, M5T 3J1, Canada
+     E-mail address: jfunke@fields.utoronto.ca
+

@@ -1,0 +1,1 @@
+chain v1 (PID 942754) stopped by Local at Tue Nov 10 00:06:30 CST 2026 to avoid a memory clash with the D=56 rerun; superseded by chain_v2

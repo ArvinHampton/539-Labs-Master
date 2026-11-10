@@ -1,0 +1,5 @@
+# SOFTSF PRESS — To Auditor (Write-only Soft SF CONFIRM)
+Time: 2026-10-27 12:48 CDT (America/Chicago)
+Subject: reports/FINDINGS_AGENT_ABSORB_PACK_OQ_2026-10-27.md
+sha256: 05b0b7a3ec4f3edda65613d9793f769ca2fc07c37b10df22894eac79c542ff72
+Ask: Soft SF CONFIRM hash match (write-only). Content: Agent absorb Pack OQ MATCH CONFIRM dd4bd30e30b416b4987d0999d1191b961eeefe1465c8a27086016a89dd66d55f; unpaid PRESS 9e4243bf3ac0fcf8846722cb017db301db48b038ec09e196cae242088ff23951 CLEARED. tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 untouched. Kerr BLOCKED. REPORTS ONLY. No RECS.

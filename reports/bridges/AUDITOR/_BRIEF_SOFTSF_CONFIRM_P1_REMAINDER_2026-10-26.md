@@ -1,0 +1,81 @@
+# Soft SF CONFIRM Priority-1 REMAINDER — post t1921u wave
+
+## Role
+Auditor Soft SF CONFIRM Write-only. Packaging only. No physics invent. No tip edit/fold.
+
+## Tip Soft SF LOCK (HARD)
+- `/workspace/residual-c-field-WRITTEN_PREMISES_DRAFT.md` sha256 `7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91`
+- tip_touched NO — verify start/end; never write tip
+- invent HOLD tip fill else; Soft SF F3 CLOSED; Bridge PARTIAL READY NO; Kerr BLOCKED; Card11 CLOSED B tip folds HELD
+
+## Template
+Follow `FINDINGS_2026-10-26_t1604u_CARD11_CLOSED_B_CONFIRM.md` / t1921u FINDINGS style.
+Write under `/workspace/quantum-comp/reports/bridges/AUDITOR/` as `FINDINGS_2026-10-26_t1928u_<SLUG>_CONFIRM.md` + `.sha256`.
+
+## Already Soft SF CONFIRMED (skip)
+t1921u six FINDINGS: Resume MATCH; Roster MATCH-with-SF; NL Gap-IA Accept wave; Lane ACK presses; Lane FINDINGS/Rule5 HOLD-clean; NL ABC re-stamp.
+
+## Soft SF CONFIRM now — from SOFTSF_QUEUE_THIN KEEP Priority-1 unpaid
+
+### Pack A — N36 / Eigen / MR1 / Local
+Resolve each PRESS under `/workspace/quantum-comp/reports/` (and mirrors); Soft SF CONFIRM subject + PRESS:
+- SOFTSF_PRESS_EIGEN_N36_503_BASIS_FINDINGS_2026-10-26.md
+- SOFTSF_PRESS_N36_503_UNBLOCK_CLOSED_A_2026-10-26.md
+- SOFTSF_PRESS_MR1_N36_503_GAP_ABSORB_2026-10-26.md
+- SOFTSF_PRESS_EIGEN_Q89_ZETA49_CRT_CLOSED_A_2026-10-26.md
+- SOFTSF_PRESS_EIGEN_W1_MATCH_MODP_CLOSED_B_2026-10-26.md
+- SOFTSF_PRESS_MR1_FILLFIRST_N36_MODP_CELLS_MATCH_2026-10-26.md
+- SOFTSF_PRESS_MR1_PROMOTE_N36_NU21_25_FILLED_MODP_2026-10-26.md
+- SOFTSF_PRESS_LOCAL_COOK_N36_FILLED_MODP_ABSORB_2026-10-26.md
+- SOFTSF_PRESS_MR1_COOK_RESUME_MATHLIT_G1_N36N6_PACKAGING_2026-10-26.md
+
+### Pack B — leftover roster/process OWs (if not in t1921u roster FINDINGS)
+- SOFTSF_PRESS_OWNER_WRITE_AUDITOR_SEQUENCE_REPORT_THEN_SOFTSF_RESUME_2026-10-26.md
+- SOFTSF_PRESS_OWNER_WRITE_AUDITOR_PAUSE_RESPOND_PHYSICIST_IMMEDIATE_2026-10-26.md
+- SOFTSF_PRESS_OWNER_WRITE_RESUME_NINE_COOK_CURRENT_STRUCTURE_2026-10-26.md
+- SOFTSF_PRESS_OWNER_WRITE_PHYSICIST_CONTINUE_LANE_AFTER_RESPONSE_2026-10-26.md
+- SOFTSF_PRESS_OWNER_WRITE_INVENT_BAN_LIFTED_PROOF_STANDARD_NO_CATA_GATE_2026-10-26.md
+(If already covered by t1921u ROSTER FINDINGS, cite skip.)
+
+### Pack C — COOK ships
+- SOFTSF_PRESS_LOCAL_D1_NORM_LAYER2_ABSENT_CLOSED_AB_2026-10-26.md
+- SOFTSF_PRESS_LOCAL_SCOPED_C1_LAYER1_SUSY_AUTHORIZED_2026-10-26.md
+- SOFTSF_PRESS_LOCAL_FREE_PURSUE_MISSED_VARS_RH_BRIDGE_C_2026-10-26.md
+- SOFTSF_PRESS_WRITE_NL_GAP_I_A_ADEQUACY_DEF_NL_GS_IND_8_2026-10-26.md
+- SOFTSF_PRESS_WRITE_NL_ZX_MAP_01_PHI_IOTA_OR_UNLINK_2026-10-26.md
+- SOFTSF_PRESS_MR1_CF980_INSET_RUNNER_CRT_CERT_2026-10-26.md
+- SOFTSF_PRESS_MR2_FINDINGS_CATB2_TEITELBAUM_DEEPEN_2026-10-26.md (may overlap t1921u CatB-2 — Soft SF CONFIRM PRESS if unpaid)
+- SOFTSF_PRESS_PR1_HEPP_QM_GR_LAB_OBS_MATCH_RESUME_COOK_2026-10-26.md
+- SOFTSF_PRESS_FINDINGS_PR2_COOK_RESUME_BIO_NEURO_SILENCE_2026-10-26.md
+- SOFTSF_PRESS_FINDINGS_PR2_FREE_PURSUE_MISSED_VARS_COSMO_BIO_NEURO_2026-10-26.md
+
+### Also unpaid from t1921u notes
+- Eigen Jochnowitz REVIEW full sha resolve Soft SF CONFIRM if not in t1921u: EIGEN_REVIEW_RELAY_MR2_H3_JOCHNOWITZ_SAGE (prefix a68ddb81)
+- MR2 resume PRESS if still missing — record unpaid
+
+## Deferred
+Do NOT Soft SF CONFIRM deferred folder contents this wave (`SOFTSF_PRESS_DEFERRED_2026-10-26/`).
+
+## Report back
+Each FINDINGS path, sha256, verdict, tip_touched, Soft SF flags; short plain digest for Physicist.
+
+
+## ADDENDUM ~19:29 CDT — PRIORITY fold (Owner filtration + NL continue)
+
+### Filtration convention BOTH NAMED PARALLEL — clears H3 Soft SF HOLD-clean
+Owner WRITE (Soft SF CONFIRM first in this remainder wave):
+- `OWNER_WRITE_FILTRATION_CONVENTION_BOTH_NAMED_PARALLEL_2026-10-26.md` claimed `c3288fbfdb3c9c0952eaecb950e0dc67642dba712d550e744c8bcebedc5aa43a`
+- PRESS `SOFTSF_PRESS_OWNER_WRITE_FILTRATION_CONVENTION_BOTH_NAMED_PARALLEL_2026-10-26.md` claimed `343684f884ac585929aa05ffea526255d16a4141dd633a465dbd059dfc6f8481`
+- Eigen ACK `EIGEN_ACK_FILTRATION_BOTH_NAMED_PARALLEL_2026-10-26.md` claimed prefix `4d82ae0e` (resolve full sha)
+- PRESS Eigen ACK claimed prefix `eed48905` (resolve full sha)
+
+LOCKED: Γ₀(7)-geom w=10 AND Katz level-1 w=40 both named parallel — do NOT collapse to one operative. Soft SF CONFIRM H3 Teitelbaum+Jochnowitz under BOTH labels (not HOLD awaiting pick). tip Soft SF LOCK 7cddb188… tip_touched NO; GAP-5 untouched.
+
+### NL Gap-I CONTINUE COOK CLOSED
+- WRITE `WRITE_NL_GAP_IA_CONTINUE_COOK_CLOSED_OWNER_GATES_IDLE_2026-10-26.md` claimed `0c53ceb7317427745652da8d7f0763c882f579427a0865361ece7cafaf3f2f42`
+- PRESS `SOFTSF_PRESS_WRITE_NL_GAP_IA_CONTINUE_COOK_CLOSED_OWNER_GATES_IDLE_2026-10-26.md` claimed `7572c09bce94c159e5481746783f9759a596e24bef5d1fe5a3b13cd224d96278`
+HARD PROVISIONAL. Independence COOK CLOSED under a9eff7f9…. tip Soft SF LOCK 7cddb188… tip_touched NO.
+
+
+## ADDENDUM ~19:29 CDT — MR2 resume PRESS now on disk
+- Soft SF CONFIRM MR2 resume ACK claimed prefix `7f70eec3` + PRESS `947b91a5` (subject OW a51992d4…). Resolve full paths/shas. Clears t1921u unpaid-MR2-resume-PRESS flag.

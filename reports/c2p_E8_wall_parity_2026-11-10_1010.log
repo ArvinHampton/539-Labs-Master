@@ -1,0 +1,34 @@
+[M] metric invariance (pullback g -> J^T g(f(p)) J, exact):
+  r~ = {x,phi1}                invariant: True
+  P = {phi2}                   invariant: True
+  f = P o r~ = {x,phi1,phi2}   invariant: True
+  c2' = f o Pi_x3              invariant: True
+[D] S^4-fibre orientation degree (det of Jacobian on (mu1,mu2,phi1,phi2)):
+  r~ = {x,phi1}                deg = -1
+  P = {phi2}                   deg = -1
+  f = P o r~ = {x,phi1,phi2}   deg = 1
+  c2' = f o Pi_x3              deg = 1
+[G] G4 pullback sign from bd47ff5e index sets (u = Sigma coordinate x):
+  r~ = {x,phi1}                f*G = {-1}
+  P = {phi2}                   f*G = {-1}
+  f = P o r~ = {x,phi1,phi2}   f*G = {1}
+  c2' = f o Pi_x3              f*G = {1}
+[Q] tr R^R components on Y6 at point mu1=1/2, mu2=2/5, y=13/10 (dps 30); elapsed 1.4s
+  ['mu1', 'mu2', 'x', 'y']: 0.0  zero  parity r~,P,f,c2' = -
+  ['mu1', 'phi1', 'x', 'y']: -1.24602914466112  NONZERO  parity r~,P,f,c2' = [1, 1, 1, 1]
+  ['mu1', 'phi2', 'x', 'y']: 0.0  zero  parity r~,P,f,c2' = -
+  ['mu2', 'phi1', 'x', 'y']: 1.30287362414501e-32  zero  parity r~,P,f,c2' = -
+  ['mu2', 'phi2', 'x', 'y']: 0.0  zero  parity r~,P,f,c2' = -
+  ['phi1', 'phi2', 'x', 'y']: 0.0  zero  parity r~,P,f,c2' = -
+  ['mu1', 'mu2', 'phi1', 'x']: 2.29185663382081e-32  zero  parity r~,P,f,c2' = -
+  ['mu1', 'mu2', 'phi2', 'x']: 0.0  zero  parity r~,P,f,c2' = -
+  ['mu1', 'phi1', 'phi2', 'x']: 0.0  zero  parity r~,P,f,c2' = -
+  ['mu2', 'phi1', 'phi2', 'x']: 0.0  zero  parity r~,P,f,c2' = -
+  ['mu1', 'mu2', 'phi1', 'y']: 0.0  zero  parity r~,P,f,c2' = -
+  ['mu1', 'mu2', 'phi2', 'y']: 0.0  zero  parity r~,P,f,c2' = -
+  ['mu1', 'phi1', 'phi2', 'y']: 0.0  zero  parity r~,P,f,c2' = -
+  ['mu2', 'phi1', 'phi2', 'y']: 0.0  zero  parity r~,P,f,c2' = -
+  ['mu1', 'mu2', 'phi1', 'phi2']: 0.0  zero  parity r~,P,f,c2' = -
+[Q] nonzero tr R^R components with odd parity (would contradict naturality): {'r~ = {x,phi1}': [], 'P = {phi2}': [], 'f = P o r~ = {x,phi1,phi2}': [], "c2' = f o Pi_x3": []}
+done 1.4s
+EXIT 0

@@ -1,0 +1,36 @@
+Sun Oct 25 12:43:31 CDT 2026
+OK b329c67c78b1bd0218ad6f618ce43c3300894ee0aff98d207820816e8bd7d4b9  /workspace/quantum-comp/reports/heavy-daily/26ce36226487-Residual_Period_Candidate_C_2026-08-23.md
+OK 552541cf11545d5ea863dc5738d859281af2831f0a21b573f32652c9678e1c2e  /workspace/quantum-comp/reports/heavy-daily/545edf7dd645-Continue_Resolution_Residual_Shadow_Xi_2026-08-23.md
+OK 6d0a77773a72731414362809302f5f10fce11d95a93e982b312d52929b54b608  /workspace/quantum-comp/reports/heavy-daily/22959c019dda-Expand_Recover_Residual_Shadow_Slash_2026-08-23.md
+OK 1bab65c422e4425bc4b9a833b68ba6ec814b83f1767c405ecb9236baa3b5908e  /workspace/quantum-comp/reports/heavy-daily/3957bc442bd8-Construct_Higher_Fidelity_Residual_Eichler_Integral_C_2026-08-25.md
+OK 1be7f7d198ce6c527702d36e84db6722fd9562557e408b6d02d09fa7ffcaeb5a  /workspace/quantum-comp/reports/heavy-daily/2026-10-17-psi-Cocycle.md
+OK 70f605a43132c18f5eccd969e8527333ea410dd39a1037a1cca1faf3ecafe832  /workspace/quantum-comp/reports/heavy-daily/2026-10-17-psi-cocycle/fastkappa.py
+OK 333fa5bc39064b88f6d720c4b2728242c5174300773c68ff32bda031d4725840  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t712u_ga3_compute/RESULTS.md
+OK a05693fbfd6da3030f762241845f040a133e611b6474b7401c030020c01d1523  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t718u_ga3_revise_menu/author_candidates/AUTHOR_CANDIDATE_GA3_revise_menu_2026-10-25.md
+OK 2e1dec49fc0b31a92b01cb82ed859ab3f1e50053672cb188098f45d810a67dee  /workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_2026-10-25_t718u_ga3_revise_menu_confirm.md
+OK 7d324d735f857e003e57cc96876d6f2848eb5d7d524ea91d21ae362c51e36f1e  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t721u_ga3_rpkg1/RESULTS.md
+OK 9aa52f19788a2992c3ace1f334516053af50bc79492e6c6225902d6432231c7a  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t722u_ga3_opt_c_diag/RESULTS.md
+OK 4ad006b79a08224ee510c3e7b2773d922ec1ceae7e1c8a0088769b5d102da088  /workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_2026-10-25_t722u_ga3_opt_c_diag_confirm.md
+OK aac04151accb03b0464ffaf2fff09b733af99b820a97479f262a6d82f60b13d1  /workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_2026-10-25_t761u_accept_CONFIRM.md
+OK 4cf8cc18beec7a057f33fa8da47fc4ec86deaccb95927fa6bfa41f374a62b286  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t761u_outer_accept/PREREG.md
+OK 467b6af23f908dc375d7b3ddef917e228abb6f844b2e719370dee898625218ab  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t761u_outer_accept/RESULTS.md
+OK 0f7271f5d2741d69f281f70ae7e1c7f413c006ebae6654c5fa85396b15d79979  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t761u_outer_accept/SHA256SUMS
+OK 7eef4763d20c266aeb9c5494e71d7388caf3622e1100963bfe8e05c3499965f9  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t761u_outer_accept/author_candidates/O_ALPHA_ACCEPT_SCOPE_QUOTE_t761u.md
+OK 6f1c16624a192b8185973e419eae8af1a2258d3caa8e7b4e3ab325ce21ad8f35  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t761u_outer_accept/FINDINGS_DRAFT_for_Auditor_CONFIRM_t761u_outer_accept_2026-10-25.md
+OK 544de792bc9d2f76982f24bf2dd1b7600214aa154747ade110e745c2f7d9af48  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t761u_absent_inventory/MASTER_ABSENT_INVENTORY_t761u_2026-10-25.md
+OK b96ff7bdd579d6b431f44ba1421f22cfa025770cbb70aa721da9607cb0a5fde1  /workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_2026-10-25_t748u_accept_CONFIRM.md
+OK 5f5f283203834eeafe78a9d44a1a7a70baac51e3ac84c945bc286df25afc39f7  /workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_2026-10-25_t756u_accept_CONFIRM.md
+OK 2bb870b47a3c11d5a6466aa6acd335cd9b37e94c5775c6b763bb9e7c4cc11d76  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t726u_x4/author_candidates/AUTHOR_CANDIDATE_X4_rev_t726u_2026-10-25.md
+REC 49bd0b24fa2bd488a25d93293b47ec02d114b8c1d77d3bf7973234a8119e425b  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t713u_ga3_fill/PREREG.md  (t713u PREREG; P3 branch default line; recorded)
+-- outer_accept SUMS -c
+./FINDINGS_DRAFT_for_Auditor_CONFIRM_t761u_outer_accept_2026-10-25.md: OK
+./INVENTORY.md: OK
+./PREREG.md: OK
+./RESULTS.md: OK
+./author_candidates/O_ALPHA_ACCEPT_SCOPE_QUOTE_t761u.md: OK
+./logs/PREREG.sha256: OK
+./logs/verify_basis.txt: OK
+rc=0
+F-A PASS: 22/22 basis shas match (prefix where only prefix given); sha256sum -c rc=0; mismatches=0
+-- addendum (post-PREREG, steering 12:44 CDT): O-α Auditor CONFIRM MATCH soft SF none
+OK b467bb54b7d759416cf9898ba806926758f01efb7fe8c0624edf13458d35a5f0  /workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_2026-10-25_t761u_outer_accept_CONFIRM.md

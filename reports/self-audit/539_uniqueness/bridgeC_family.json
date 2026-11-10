@@ -1,0 +1,449 @@
+[
+ {
+  "s": 5,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.2663885801259851,
+  "orbit_bound_dimV": 20
+ },
+ {
+  "s": 6,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.23397032752589256,
+  "orbit_bound_dimV": 12
+ },
+ {
+  "s": 7,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.20941982031471465,
+  "orbit_bound_dimV": 42
+ },
+ {
+  "s": 8,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.19008649907523661,
+  "orbit_bound_dimV": 20
+ },
+ {
+  "s": 9,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.17440914745936115,
+  "orbit_bound_dimV": 72
+ },
+ {
+  "s": 10,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.1614033528615015,
+  "orbit_bound_dimV": 30
+ },
+ {
+  "s": 11,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.15041510749274092,
+  "orbit_bound_dimV": 110
+ },
+ {
+  "s": 12,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.14099154136149797,
+  "orbit_bound_dimV": 42
+ },
+ {
+  "s": 13,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.13280832592749908,
+  "orbit_bound_dimV": 156
+ },
+ {
+  "s": 14,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.12562661068973616,
+  "orbit_bound_dimV": 56
+ },
+ {
+  "s": 15,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.11926630243396463,
+  "orbit_bound_dimV": 210
+ },
+ {
+  "s": 16,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.11358884789037613,
+  "orbit_bound_dimV": 72
+ },
+ {
+  "s": 17,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.10848577819448794,
+  "orbit_bound_dimV": 272
+ },
+ {
+  "s": 18,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.1038708733567051,
+  "orbit_bound_dimV": 90
+ },
+ {
+  "s": 19,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.09967467222408785,
+  "orbit_bound_dimV": 342
+ },
+ {
+  "s": 20,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.09584054357069757,
+  "orbit_bound_dimV": 110
+ },
+ {
+  "s": 21,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.0923218211772259,
+  "orbit_bound_dimV": 420
+ },
+ {
+  "s": 22,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.08907967950306238,
+  "orbit_bound_dimV": 132
+ },
+ {
+  "s": 23,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.08608153464823516,
+  "orbit_bound_dimV": 506
+ },
+ {
+  "s": 24,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.08329982426164667,
+  "orbit_bound_dimV": 156
+ },
+ {
+  "s": 25,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.08071106504620001,
+  "orbit_bound_dimV": 600
+ },
+ {
+  "s": 26,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.07829511647197024,
+  "orbit_bound_dimV": 182
+ },
+ {
+  "s": 27,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.07603459963009464,
+  "orbit_bound_dimV": 702
+ },
+ {
+  "s": 28,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.07391443417751234,
+  "orbit_bound_dimV": 210
+ },
+ {
+  "s": 29,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.07192146614181515,
+  "orbit_bound_dimV": 812
+ },
+ {
+  "s": 30,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.07004416633181582,
+  "orbit_bound_dimV": 240
+ },
+ {
+  "s": 49,
+  "M": 800,
+  "cone_identity": {
+   "(1, 0)": true,
+   "(1, 1)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.0475544843000477,
+  "orbit_bound_dimV": 2352
+ },
+ {
+  "s": 98,
+  "M": 1500,
+  "cone_identity": {
+   "(1, 0)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.02715521415360523,
+  "orbit_bound_dimV": 2450
+ },
+ {
+  "s": 121,
+  "M": 1500,
+  "cone_identity": {
+   "(1, 0)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.022836716129377224,
+  "orbit_bound_dimV": 14520
+ },
+ {
+  "s": 147,
+  "M": 1500,
+  "cone_identity": {
+   "(1, 0)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.019441353545548924,
+  "orbit_bound_dimV": 21462
+ },
+ {
+  "s": 169,
+  "M": 1500,
+  "cone_identity": {
+   "(1, 0)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.017313111182386407,
+  "orbit_bound_dimV": 28392
+ },
+ {
+  "s": 245,
+  "M": 1500,
+  "cone_identity": {
+   "(1, 0)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.012685170482189766,
+  "orbit_bound_dimV": 59780
+ },
+ {
+  "s": 363,
+  "M": 1500,
+  "cone_identity": {
+   "(1, 0)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.0090950478026429,
+  "orbit_bound_dimV": 131406
+ },
+ {
+  "s": 539,
+  "M": 1500,
+  "cone_identity": {
+   "(1, 0)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": true,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.0064879339557275895,
+  "orbit_bound_dimV": 289982
+ },
+ {
+  "s": 3481,
+  "M": 1500,
+  "cone_identity": {
+   "(1, 0)": true
+  },
+  "two_P_identity": true,
+  "residual_R_nonzero": false,
+  "nonsquare_radicand": true,
+  "Baker_lead_coeff": 0.0012712550428144011,
+  "orbit_bound_dimV": 12113880
+ }
+]

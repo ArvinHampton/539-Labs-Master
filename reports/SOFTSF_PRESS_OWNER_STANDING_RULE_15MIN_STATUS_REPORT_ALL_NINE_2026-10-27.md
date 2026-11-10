@@ -1,0 +1,3 @@
+# Soft SF PRESS — Owner 15-MINUTE STATUS REPORT standing rule all nine
+Time: 2026-10-27 ~12:39 CDT America/Chicago
+Ask: Soft SF CONFIRM hash match (write-only). Content: Owner voice call-a0858383 LOCKED 15-min short where/what-doing report for all nine lanes; OW sha256 239dcc857668fce4782e44065e4a47ab83a943c91d95d391aaec58a61b6b17be; standing LIVE 99e676294acc3fb2770c9d9f813f6cd67caf8577fce22978e18c2a19496b6dc6 (pre 2050914ca0e4102f1b713785dcce8a2bbab97572d2bb190f4a0e00fd183d18b0); tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 tip_touched NO; Kerr BLOCKED. REPORTS ONLY. No RECS.

@@ -1,0 +1,131 @@
+{
+ "title": "DRAFT Gemini request packet, all twelve agents (not validated findings)",
+ "created": "2026-11-05, finalized about 15:25 CST (America/Chicago); document finalization only (Owner 15:20 CST authorization; 15:17 CST research halt in force). Bounded doc-only preamble revision 15:24 CST.",
+ "intakes": {
+  "local": {
+   "path": "/workspace/pqc-gemini-request-intake-20261105-1513/local.md",
+   "sha256": "d1488dffda8c8cd9bb9dc705382717d079db4f0188b3d5939d60c3facfea6f5a"
+  },
+  "nonlocal": {
+   "path": "/workspace/pqc-gemini-request-intake-20261105-1513/nonlocal.md",
+   "sha256": "4e6f5408598fc8078b49f24ee18c3ab29b09173f747808d8f928710dc704fa19"
+  },
+  "auditor": {
+   "path": "/workspace/pqc-gemini-request-intake-20261105-1513/auditor.md",
+   "sha256": "bc10f9cc9579dcfee797bf0832884b2942b18e215ceee51a140e469e2f269728"
+  },
+  "professor-proof": {
+   "path": "/workspace/pqc-gemini-request-intake-20261105-1513/professor-proof.md",
+   "sha256": "4498c0cccdee31c5eb3a9985cd5cd42c27a0945a411b460e9b25e58e330523bb"
+  },
+  "labs539": {
+   "path": "/workspace/pqc-gemini-request-intake-20261105-1513/labs539.md",
+   "sha256": "e1f37867ad816bf4365e33fb61148c2bf7ce2fa7216907f9fadd4ff42d5256d0"
+  },
+  "math1": {
+   "path": "/workspace/pqc-gemini-request-intake-20261105-1513/math1.md",
+   "sha256": "ccbb3f47bd0116d975907d48dfc7bec8b223853ce663d0a770204668722c8b64"
+  },
+  "math2": {
+   "path": "/workspace/pqc-gemini-request-intake-20261105-1513/math2.md",
+   "sha256": "4a89f647f05bf906442e4c239d9646a1d9b57b39a49c6e7d4a1f99de04a135bf"
+  },
+  "physics1": {
+   "path": "/workspace/pqc-gemini-request-intake-20261105-1513/physics1.md",
+   "sha256": "a4d6d42ff3fba925e36876cf8c25336382b8a6fca371a89b55718df8584743ce"
+  },
+  "physics2": {
+   "path": "/workspace/pqc-gemini-request-intake-20261105-1513/physics2.md",
+   "sha256": "908aaa0d4405c3f65e4ec0adebf5b6f18536bd165454156215f6f7154317c2e6"
+  },
+  "eigen": {
+   "path": "/workspace/pqc-gemini-request-intake-20261105-1513/eigen.md",
+   "sha256": "bde19232007b366af78035861c93123ec23215ad3994f9ce97b246d5b59e5790"
+  },
+  "dataset": {
+   "path": "/workspace/pqc-gemini-request-intake-20261105-1513/dataset.md",
+   "sha256": "7a331bfebc3448f4be0c5190df544a7d6e293c0c9d51b71ce47714cfa5a27d80"
+  },
+  "agent": {
+   "path": "/workspace/pqc-gemini-request-intake-20261105-1513/agent.md",
+   "sha256": "7bcfb60f24fb56c85d060181ebf1e8db56c09331a38f16d72fa9ac4933d2c7be"
+  }
+ },
+ "additive_correction": {
+  "path": "/workspace/pqc-gemini-request-intake-20261105-1513/labs539_ADDITIVE_CORRECTION_T3REF.md",
+  "sha256": "c8e064c768e76e1766af66ea07f4da1fedaf6d2e1d95b6491a9db0c3c3e2fe45"
+ },
+ "rules": {
+  "OWNER_WRITE_CALL_53991ebf_PRIMARY_OPERATING_RULE_ALL_TWELVE_2026-11-05.md": "bcc3ced0f1dfe15560e0bdb2e45bb35f4b1db26dcfb439e647a98c12fc5bc9a9",
+  "OWNER_DIRECTIVE_GR_EXTENSION_FULL_STANDARD_MODEL_RECOVERY_2026-11-05.md": "6237cc716829c2838368099382c7ecdebfed46895491f8ecb37ee5cc167c815e",
+  "OWNER_DIRECTIVE_WEEKLY_USAGE_80_STOP_AND_FINAL_REPORT_2026-11-05.md": "51ff16771c69d877675ac7c59e269d76444180784e81842c7818029387d1747e",
+  "OWNER_DIRECTIVE_GEMINI_COMPUTATION_TOKEN_PRESERVATION_VERIFY_2026-11-05.md": "3921181508acede9740ba9892b35cb1e379d25ccc0af4f601cbe803a01b68b67",
+  "OWNER_DIRECTIVE_GEMINI_FILE_LOOP_VERIFICATION_ONLY_2026-11-05.md": "a29f87d93fd75a9a34dc7acce66ab5474968180bb532d3a8d11804d6539253be",
+  "STANDING_RULES_INDEX_GEMINI_FILE_LOOP_UPDATE_2026-11-05.md": "3abbfb9e91650e5f3dd0fccf50c0d7dc67499dfb48ad82805e1611151b5e073c",
+  "STANDING_RULES_INDEX_GEMINI_UPDATE_2026-11-05.md": "b1400fd10005c673f95c22589f06cd1776d2cb6acb215f15e80588f6e1b3fd24"
+ },
+ "outputs": {
+  "txt": {
+   "path": "/workspace/quantum-comp/reports/GEMINI_REQUEST_PACKET_ALL_TWELVE_DRAFT_2026-11-05.txt",
+   "sha256": "0d9e2d5a515c9b87041306ce1d9079467bfa84c82b051a5aaaa614abeaa10d99"
+  },
+  "pdf": {
+   "path": "/workspace/quantum-comp/reports/GEMINI_REQUEST_PACKET_ALL_TWELVE_DRAFT_2026-11-05.pdf",
+   "sha256": "bbb617acac18abb7e2539bb0b5268fb1d5e353f177655c0c178e200bc99c7f14",
+   "pages": 15
+  }
+ },
+ "companion": {
+  "path": "/workspace/quantum-comp/reports/GEMINI_COMPENDIUM_AGENT_QUESTIONS_PROOF_REQUESTS_CONSOLIDATED_2026-11-05.pdf",
+  "sha256": "3eacced22f4f901cfcd110418f859cc4996da1f370fe8d697f8f9d11edf1e6a8",
+  "pages": 77,
+  "expected_sha256": "3eacced22f4f901cfcd110418f859cc4996da1f370fe8d697f8f9d11edf1e6a8",
+  "unchanged": true
+ },
+ "delivery_chunks": [
+  {
+   "path": "/workspace/pqc-gemini-request-intake-20261105-1513/_build/delivery-chunks/GEMINI_REQUEST_PACKET_DRAFT_chunk_01_of_08.txt",
+   "sha256": "2c6bf406ef48a082ba6883534ac6691d6db5ded27048eeb5fa683ca57770deeb"
+  },
+  {
+   "path": "/workspace/pqc-gemini-request-intake-20261105-1513/_build/delivery-chunks/GEMINI_REQUEST_PACKET_DRAFT_chunk_02_of_08.txt",
+   "sha256": "25080d74f61731f08ca7fc73e24afc7b2032186cd5c8458ecfd9bdefc16c2666"
+  },
+  {
+   "path": "/workspace/pqc-gemini-request-intake-20261105-1513/_build/delivery-chunks/GEMINI_REQUEST_PACKET_DRAFT_chunk_03_of_08.txt",
+   "sha256": "5a93a5dcc46ad9926be9b17cdb2628c85c6101b2990fe857ca39583984cc8ec8"
+  },
+  {
+   "path": "/workspace/pqc-gemini-request-intake-20261105-1513/_build/delivery-chunks/GEMINI_REQUEST_PACKET_DRAFT_chunk_04_of_08.txt",
+   "sha256": "fff064ae83476e59916efc4ded3c220d486ef8229a2c1f82165a3505363d9140"
+  },
+  {
+   "path": "/workspace/pqc-gemini-request-intake-20261105-1513/_build/delivery-chunks/GEMINI_REQUEST_PACKET_DRAFT_chunk_05_of_08.txt",
+   "sha256": "4a3f14ea35ccd2d5a3fccf95f9ab40eeb3094c6572a27397e6b8115b6ab695f0"
+  },
+  {
+   "path": "/workspace/pqc-gemini-request-intake-20261105-1513/_build/delivery-chunks/GEMINI_REQUEST_PACKET_DRAFT_chunk_06_of_08.txt",
+   "sha256": "68c8f0c421f38f43c83d596a477c51f970ebe3f6a2c2b8e05b43ae555e406854"
+  },
+  {
+   "path": "/workspace/pqc-gemini-request-intake-20261105-1513/_build/delivery-chunks/GEMINI_REQUEST_PACKET_DRAFT_chunk_07_of_08.txt",
+   "sha256": "ff3de1bb2b32ac881693a0976b548614a7ee2d415cd98f1d1aab225f3acc8d98"
+  },
+  {
+   "path": "/workspace/pqc-gemini-request-intake-20261105-1513/_build/delivery-chunks/GEMINI_REQUEST_PACKET_DRAFT_chunk_08_of_08.txt",
+   "sha256": "8799e74192e19eb9188bef7380c09192395139f9ab43d76dcb35ddccf3eb769d"
+  }
+ ],
+ "notes": [
+  "nonlocal.md was revised by its agent at ~15:16 CST (earlier 15:15 snapshot sha 887e8bda...); current 4e6f5408... used.",
+  "pdftotext drops end-of-line hyphens (dehyphenation); otherwise whitespace-normalized PDF text equals TXT.",
+  "No external Gemini submission/transfer; no computation or research."
+ ],
+ "revision": {
+  "superseded": {
+   "txt": "6d44fdc9d8cd21dd97c3bac4ec85e7b80be0fb4eb0dc18c211a5d67b46998151",
+   "pdf": "58868d471d4774622e128d434b0f7fed9d13eb411ea700d4571b1aef305a39ad"
+  },
+  "deltas": "Preamble only: title time placeholder; A2 halt wording; A3 80% rule wording; A6 10^7 pin attribution. Sections B1-B12 and C byte-identical."
+ }
+}

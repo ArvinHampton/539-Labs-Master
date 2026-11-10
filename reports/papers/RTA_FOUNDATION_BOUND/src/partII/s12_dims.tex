@@ -1,0 +1,171 @@
+%=====================================================================
+\section{The theta-lift family: dimensions}\label{sec:dimsec}
+%=====================================================================
+\subsection{Dimensions of $V$, $V_{\rm Eis}$ and the cusp part}
+\begin{theorem}[Dimensions]\label{thm:dims}
+(i) \emph{Orbit bound.} $\dim V\le\#\{\text{consistent }\langle\gamma,-1\rangle\text{-orbits}\}$, and the number of orbits is $s(s-1)$ for odd $s$ and
+$(s/2)(s/2+1)$ for even $s$ (Burnside, with $|\mathrm{Fix}\,\gamma|=2(s-2)$, $|\mathrm{Fix}(-\gamma)|=2s$ and $|\Delta[2]|=4$, using (ii) of Theorem~\ref{thm:tensorodd}).
+(ii) \emph{Exact ranks.} For every $s=5,\dots,51$ and for $s=72$, the exact rational rank of the integer orbit-count matrix equals the upper bound
+(for $s=8,18,32,50,72$ the half-cone bound of (iv)). Hence $\dim V$ is known exactly there; for odd $s\le51$, $\dim V=s(s-1)$.
+(iii) \emph{Eisenstein dimension.} For odd $s$, $d_{\rm Eis}=3\prod_{p^e\Vert n_s}(p^e+1)/2$, at every odd $s$ whose local factors with $e\ge2$ are certified
+($p^e\in\{9,25,27,49\}$ suffices for odd $s\le51$). For even $s=2t$, with $2^k\Vert2t(t-1)$ and $v$ the odd part of $2t(t-1)$,
+$d_{\rm Eis}=d_2(k,v)\prod_{p^e\Vert v}(p^e+1)/2$, where $d_2(k,v)=2^{k-1}+4$ ($k$ even), $2^{k-1}+6$ ($k$ odd, $v\equiv1\bmod4$), $2^{k-1}+5$ ($k$ odd,
+$v\equiv3\bmod4$), certified for $k\le5$ (every even $s\le62$).
+(iv) \emph{The $s=2m^2$ mechanism.} $\gamma$ has a square root $g\in\mathrm{SO}(A_s)(\Q)$ with $\det g=1$ iff $\mathrm{tr}\,\gamma+2=2s$ is a perfect square, i.e.\ iff
+$s=2m^2$; then $g=(\gamma+I)/(2m)=\begin{pmatrix}0&-m\\1/m&2m\end{pmatrix}$ (in unit language $\varepsilon_s=\eta^2$, $\eta=m+\sqrt{m^2-1}$). Splitting each cone
+$[r,\gamma r)$ as $[r,gr)\sqcup g[r,gr)$ gives an exact upper bound with gap exactly $m(m-1)$ below the orbit bound for $m=2,\dots,7$. It equals the exact lower
+bound for $m=2,\dots,6$: $\dim V=18,84,260,630,1302$ at $s=8,18,32,50,72$. At $s=98$ the half-cone bound $2408$ is not sharp: there are two further relations and $\dim V=2406$ (Theorem~\ref{thm:s98}).
+(v) \emph{Table} ($d_{\rm cusp}=\dim V-d_{\rm Eis}$ is the exact dimension of the cuspidal functions in the span):
+\begin{center}\small
+\begin{longtable}{rrrrcrrrr}\toprule
+$s$ & $\dim V$ & $d_{\rm Eis}$ & $d_{\rm cusp}$ && $s$ & $\dim V$ & $d_{\rm Eis}$ & $d_{\rm cusp}$\\\midrule\endhead
+5 & 20 & 18 & 2 && 6 & 12 & 12 & 0\\
+7 & 42 & 36 & 6 && 8 & 18 & 18 & 0\\
+9 & 72 & 60 & 12 && 10 & 30 & 30 & 0\\
+11 & 110 & 90 & 20 && 12 & 42 & 36 & 6\\
+13 & 156 & 126 & 30 && 14 & 56 & 48 & 8\\
+15 & 210 & 126 & 84 && 16 & 72 & 48 & 24\\
+17 & 272 & 162 & 110 && 18 & 84 & 60 & 24\\
+19 & 342 & 270 & 72 && 20 & 110 & 90 & 20\\
+21 & 420 & 240 & 180 && 22 & 132 & 108 & 24\\
+23 & 506 & 288 & 218 && 24 & 156 & 120 & 36\\
+25 & 600 & 468 & 132 && 26 & 182 & 126 & 56\\
+27 & 702 & 546 & 156 && 28 & 210 & 168 & 42\\
+29 & 812 & 630 & 182 && 30 & 240 & 144 & 96\\
+31 & 930 & 720 & 210 && 32 & 260 & 126 & 134\\
+33 & 1056 & 576 & 480 && 34 & 306 & 198 & 108\\
+35 & 1190 & 432 & 758 && 36 & 342 & 270 & 72\\
+37 & 1332 & 684 & 648 && 38 & 380 & 300 & 80\\
+39 & 1482 & 798 & 684 && 40 & 420 & 270 & 150\\
+41 & 1640 & 882 & 758 && 42 & 462 & 240 & 222\\
+43 & 1806 & 1386 & 420 && 44 & 506 & 288 & 218\\
+45 & 1980 & 990 & 990 && 46 & 552 & 432 & 120\\
+47 & 2162 & 1080 & 1082 && 48 & 600 & 288 & 312\\
+49 & 2352 & 1800 & 552 && 50 & 630 & 312 & 318\\
+51 & 2550 & 1350 & 1200 && 72 & 1302 & 540 & 762\\
+\bottomrule
+\end{longtable}
+\end{center}
+In particular $d_{\rm cusp}>0$ for every $s$ in the table except $s=6,8,10$, and at $s=11$: $\dim V=110$, $d_{\rm Eis}=90$, $d_{\rm cusp}=20$.
+\end{theorem}
+\begin{proof}[Proof notes]
+(i) is. (ii): one counts the points of each orbit at each norm in the four cones and takes the exact rank over $\Q$ (FLINT
+\texttt{fmpz\_mat}); a rank of evaluations is a lower bound for $\dim V$. (iii), odd $s$: by
+Theorem~\ref{thm:tensorodd} the constant-term vector (labels with $\alpha\in\Z^2$, i.e.\ $x=0$, $\epsilon=0$) is the pure tensor
+$\delta_0\otimes\cdots\otimes\delta_0\otimes(e_{00}+e_{01})$, with $2$-adic part in $A_3$. Since $\rho(\mathrm{SL}_2(\Z))$ is the full product of the local images,
+the cyclic span of a pure tensor is the tensor product of the local cyclic spans. These are $A_3$ (irreducible, dimension $3$) and the cyclic span of $\delta_0$
+in $\rho_{q_p}$, of dimension $(p^e+1)/2$: by hand for $e=1$, and by exact certification (Krylov rank mod $\ell$ equal to the $O(\Delta)$-orbit upper bound)
+for the listed $p^e$. Even $s$: the family is
+literally the Weil representation of $L'/\Z^2$ (an exact identity of the $S,T$ matrices), with local factors certified as stated. (iv): the square root
+and the half-cone bound are exact; the $s=8$ relations $N_{O12}=N_{O7}+N_{O9}$ and $N_{O2}=N_{O15}+N_{O19}$ are instances.
+\end{proof}
+\catA{(i); (ii) and the table entries for $\dim V$, exact per $s$; (iii) for the stated $s$, conditional on the cited congruence theorem (odd $s$) and on
+the exact local certifications; (iv) the square-root criterion and the upper bounds for $m\le7$, with equality for $m\le6$; $d_{\rm cusp}=\dim V-d_{\rm Eis}$ as the
+dimension of cuspidal functions, given the $\lambda=\tfrac14$ constant-term criterion.}
+\catB{$\dim V=s(s-1)$ for \emph{all} odd $s$ (the lower bound is open); $d_2(k,v)$ for $k\ge7$ ($k=6$ is Proposition~\ref{prop:s64}). Floating-point singular-value
+ranks and FFT counts agree with the exact values above, except for visible truncation effects at low $Q$ (e.g.\ $s=51$).}
+
+\begin{remark}[Sector reading of the cusp dimension, odd $s$]
+By Theorem~\ref{thm:tensorodd}(iv), $V\subseteq A_3\otimes(\text{even}\otimes\text{even})\oplus B_1\otimes(\text{odd}\otimes\text{odd})$, where even/odd refer to $Z_{(s)}$ and $Z_{(s-2)}$.
+The all-even sector $A_3\otimes\bigotimes_pW_p^+$ has dimension $d_{\rm Eis}$. Wherever $\dim V=s(s-1)$, the cusp part is
+$d_{\rm cusp}=O(s)O(s-2)+3\bigl(E(s)E(s-2)-\prod(p^e+1)/2\bigr)\ge(s-1)(s-3)/4>0$, with equality iff $s$ and $s-2$ are both prime powers. This reproduces
+$2,6,12,20,30,84,110,72,180,218,132$ at $s=5,\dots,25$ and $758$ at $s=41$. Category A at the certified $s$; for general odd $s$
+it is Category~B, through the open lower bound. The family cusp part is therefore a local (Weil-parity) phenomenon, not a class-group one.
+\end{remark}
+
+\subsection{The case $s=2m^2$}\label{sec:2m2}
+Let $s=2m^2$ with $m$ odd and $g=(\gamma+I)/(2m)$, as in Theorem~\ref{thm:dims}(iv).
+\begin{proposition}[Complement trace]\label{prop:trace5}
+For every odd $m$: $\#\mathrm{Fix}(g)=2(m-1)$ and $\#\mathrm{Fix}(-g)=2(m+1)$ on the complement, $\mathrm{tr}(g\mid\mathrm{Fix}(N,\gamma))=2m$, and the $g=-1$ eigenspace $X$ of $\mathrm{Fix}(N)$ has dimension $m(m-1)$.
+\end{proposition}
+\catA{$A(g\mp1)^{-1}$ is integral, and $\gamma=1$ on the complement $C$. Exact at $m=3,5,7$ as well.}
+\begin{proposition}[Half-cone relations]\label{prop:hc5}
+If $g$ acts on $M_7$-classes (more generally on the classes of $\Z^2+\Z t$) and $m$ is prime, the span of the half-cone $g$-relations $e_c-e_{gc}$ is exactly $\delta_{\rm iso}\otimes X$, of dimension $m(m-1)$.
+\end{proposition}
+\catA{Proved for prime $m$, given that $g$ is consistent on the classes. That consistency is checked exactly only at $m=3,5,7$. At $m=3,5$ the exact half-cone kernel equals $\delta_{\rm iso}\otimes X$ vector by vector. \emph{Open:} $g$-consistency for all odd $m$, and composite $m$ (the $m$-part is not cyclic). In general the kernel can be larger than the $g$-relations; see Theorem~\ref{thm:s98}.}
+\begin{theorem}[$\dim V(98)=2406$]\label{thm:s98}
+At $s=98$ ($m=7$), $\dim V=2406$. The kernel of the lift on the $98$-dimensional $7$-adic old space has dimension $44$. It is spanned by the $42=m(m-1)$ $g$-relations and two $h$-relations,
+$R_1$ (at $q=11/12$) and $R_2$ (at $q=1/4$). Here $h=(g+I)/4\in\mathrm{SO}(A)(\Q)$, with $h^2=g$ and $h^{\mathsf T}Ah=A$. The half-cone upper bound $2408$ is not sharp.
+\end{theorem}
+\catA{\emph{Lower bound:} the exact rank is $2406$ (flint, $Q_{\max}=40$; old-piece ranks are stable to $Q_{\max}=130$). The new pieces are injective, and all $44$ missing dimensions lie in the old space. \emph{Upper bound:} take the overlattice
+$M=\bigcap_{k=0}^{7}h^kM_7$, $M_7=\Z^2+\Z t_0$, with basis $(4,0),(1,1/7)$, $[M_7:M]=4$ and Gram matrix ($2Q$) $\begin{pmatrix}32&64\\64&32\end{pmatrix}$ (even, det $-3072$). Exact HNF gives $hM=M$ and $hM^\sharp=M^\sharp$.
+Moreover $h$ maps the $+$ set of $R_i$ bijectively onto its $-$ set as $M$-cosets ($32+32$ for $R_1$, $16+16$ for $R_2$). The sets are $\gamma$-invariant ($\gamma=h^4$). Since $h$ has positive eigenvalues $2\pm\sqrt3$, it maps fundamental cones for $\langle\gamma\rangle$ to fundamental cones, so
+$N_{S^+}(q)=N_{S^-}(q)$ for all $q$, and the theta identities hold. The same argument with $g$ on $M_7$ (eigenvalues $7\pm\sqrt{48}$) proves the $42$ $g$-relations. The $44$ relations are independent (exact rank $44$), so $\dim V\le2450-44=2406$.}
+\catB{Extra $h$-relations beyond $m(m-1)$ are expected exactly when $2m+2$ is a square, i.e.\ $m=2k^2-1$ ($m=7,17,31,\dots$); their number is given by Proposition~K1 below. Beyond $m=7$ the actual lift rank is not computed.}
+The two $h$-relations at $m=7$ are the case $k=2$ of the following count. Fix $k\ge2$, $m=2k^2-1$, $s=2m^2$, and let $g=(\gamma+I)/(2m)$ and
+$h=(g+I)/(2k)$. Let $\mathrm{rank}_g$ and $\mathrm{rank}_h$ be the ranks of the orbit-sum maps $F\to\mathrm{Fun}(\langle X,-1\rangle\text{-orbits on }M^\sharp/M)$,
+$X\in\{g,h\}$, with $F=\mathrm{Fun}(M_t^\sharp/M_t)^{\langle\gamma,-1\rangle}$, computed by exact orbit sums.
+\begin{proposition}[K1]\label{prop:K1}
+$\mathrm{rank}_g=m(m+1)$ and $\mathrm{rank}_h=m(m+1)-k(k-1)$. Hence the number of extra $h$-relations is exactly $k(k-1)$ for every $k\ge2$. Moreover $\dim F=2m^2=s$.
+\end{proposition}
+\begin{proof}[Proof outline]
+\emph{Order model.} $M_t=\Z e_1\oplus\Z f$ with Gram matrix $\left(\begin{smallmatrix}2&2m\\2m&2\end{smallmatrix}\right)$ and $gf=-e_1+2mf$, so $(M_t,B,g)\cong(R_m,\mathrm{Tr}(x\bar y),\cdot\varepsilon_m)$ with $R_n=\Z[\sqrt{n^2-1}]$, $\varepsilon_n=n+\sqrt{n^2-1}$; hence $C:=M_t^\sharp/M_t\cong R_m/2\sqrt{d_m}R_m$, $d_n=n^2-1$.
+\emph{Pell self-similarity.} With $u=(e_1+f)/(2k)$ one has $hu=f$, $hf=-u+2kf$ and $\mathrm{Gram}(u,f)=\left(\begin{smallmatrix}2&2k\\2k&2\end{smallmatrix}\right)$, so $N_1=M_t+hM_t=\Z u\oplus\Z f$ is even, $h$-stable, and $(N_1,h)\cong(R_k,\varepsilon_k)$: $h$ is ``$g$ at level $k$''. $I=N_1/M_t$ is isotropic of order $2k$ and $C_1=I^\perp/I\cong R_k/2\sqrt{d_k}R_k$.
+\emph{Hecke reduction.} On $V_0=\mathrm{Fun}(C)^{\langle g,-1\rangle}$ (so $\mathrm{rank}_g=\dim V_0$), $\mathrm{rank}_h$ is the rank of $1+\tau$ with $\tau=(2k)^{-1}\uparrow\circ\bar h\circ\downarrow$, where $\downarrow$ sums over $I$-cosets in $I^\perp$ and $\uparrow$ is its adjoint.
+\emph{Spectrum.} $\downarrow\uparrow=2k$, so $\tau^2$ is an orthogonal projection, $\tau^3=\tau$, and the $(-1)$-eigenspace of $\tau$ has dimension $a-b$, with $a,b$ the numbers of $\langle h^2,-1\rangle$- and $\langle h,-1\rangle$-orbits on $C_1$.
+\emph{Burnside.} On $R_n/2\sqrt dR_n$, $\langle\varepsilon,-1\rangle$ acts through $\{\pm1,\pm\varepsilon\}$ with $|\mathrm{Fix}(-1)|=4$, $|\mathrm{Fix}(\mp\varepsilon)|=2(n\mp1)$; so there are $n(n+1)$ orbits of $\langle\varepsilon,-1\rangle$ and $2n^2$ of $\langle\varepsilon^2,-1\rangle$. Level $m$ gives $\mathrm{rank}_g=m(m+1)$ and $\dim F=2m^2$; level $k$ gives $a=2k^2$, $b=k(k+1)$, so the extra count is $2k^2-k(k+1)=k(k-1)$.
+\end{proof}
+\catA{Proved for all $k\ge2$ (the Burnside counts are also brute-forced for $n=2,\dots,40$). \emph{Exact checks of the reformulation:} Exact computation ( over $\Q$, $k=2,3,4$) gives $\mathrm{rank}(I+\tau)=54,300,980$, equal to $\mathrm{rank}_h$, with minimal polynomial $x^3-x$; the same computation at $k=5$ ($m=49$) and $k=6$ ($m=71$) gives extra $=20,30$ and $\mathrm{rank}\,\tau=50,72$, with ranks computed mod $1000003$ and mod $998244353$ in agreement. Those mod-$p$ ranks are consistency checks of a proved statement, not independent proofs.}
+\begin{corollary}\label{cor:K1}
+On $V_0$, $\tau$ has eigenvalues $+1$, $-1$, $0$ with multiplicities $k(k+1)$, $k(k-1)$, $m(m+1)-2k^2$; so $\mathrm{tr}\,\tau=2k$ and $\mathrm{rank}\,\tau=2k^2$. The extra relations are explicit: $\uparrow$ of the $\bar h$-odd $\langle\bar g,-1\rangle$-invariant functions on $C_1=N_1^\sharp/N_1$. In particular the number of closed orbits is $m(m+1)=\mathrm{rank}_g$.
+\end{corollary}
+\catA{Consequence of Proposition~K1.}
+\begin{proposition}[Sharpness of Proposition~K1 on the old space]\label{prop:K1sharp}
+For $k=2,3,4,5$ ($m=7,17,31,49$), the theta lift on $F=\mathrm{Fun}(M_t^\sharp/M_t)^{\langle\gamma,-1\rangle}$ has rank exactly $m(m+1)-k(k-1)=54,\,300,\,980,\,2430$. So at these $m$ the old space has no relations beyond the $g$- and $h$-relations.
+\end{proposition}
+\catA{The upper bound is Proposition~K1. The lower bound is the rank over $\mathbb F_{2^{31}-1}$ of the exact (orbit $\times$ norm) count matrix of the $x\in M_t^\sharp$ with $0<|Q(x)|\le Q_{\max}$, in an exact fundamental domain for $\langle\gamma\rangle$; a rank modulo a prime is a lower bound for the rank over $\Q$. At $k=2$ this reproduces the old-piece ranks $42+12$ of Theorem~\ref{thm:s98}. \emph{Not claimed:} $\dim V(578)=83532$, which would also need injectivity and independence of the new pieces at $s=578$.}
+\catA{Proposition~K1: proved for all $k\ge2$. The symbolic-in-$k$ ingredients and the Burnside counts (brute-forced for $n=2,\dots,40$) are checked by
+computer. Consistency checks of the reformulation: exact over $\Q$ for $k=2,3,4$, $\mathrm{rank}(I+\tau)=54,300,980$ with minimal polynomial $x^3-x$; modulo
+two primes at $k=5,6$ ($m=49,71$), extra $=20,30$ and $\mathrm{rank}\,\tau=50,72$.}
+\noindent\textbf{Dimension consequences (Category~A as upper bounds; sharpness open).} Proposition~K1 is a statement about the lattice-level rank
+$\mathrm{rank}_h$, which is a proved upper bound for the old lift rank. Every $h$-relation is a proved theta relation (the argument of Theorem~\ref{thm:s98}),
+so for $s=2m^2$, $m=2k^2-1$, subtracting the $k(k-1)$ extra relations gives \emph{proved upper bounds}: $\dim V(98)\le2406$ (equality,
+Theorem~\ref{thm:s98}) and $\dim V(578)\le83532$, and likewise at every $m=2k^2-1$. Whether these bounds are sharp at $m=17,31,\dots$ is \emph{not} proved.
+
+\subsection{The case $s=64$}\label{sec:s64}
+\begin{proposition}[$s=64$]\label{prop:s64}
+$\dim W_P(64)=1986$. The $2$-adic cyclic span $d_2$ at $k=6$ equals $36$, so the $2$-adic factor of the function span is $36\cdot16=576$ at $s=64$.
+\end{proposition}
+\catA{$W_P$ is an exact count. For the upper bound, $d_2\le\#O(\Delta_2)$-orbits $=42$, minus a $6$-dimensional $S,T$-invariant subspace $Y\perp\delta_0$ that is verified exactly in $\Z[\zeta_{64}]$, leaving $36$. The lower bound $36$ is exact. The value $2^{k-1}+4$ for general $k$ remains Category~B.}
+
+\subsection{Prime-square sectors}\label{sec:psq}
+For $s=p^2$ the isotropic projector $\Pi$ splits each sector into an \emph{old} piece, the $p$-local invariants, and a \emph{new} piece, their complement; both are
+subrepresentations.
+\begin{proposition}[Prime-square sectors: ranks]\label{prop:psq5}
+Exactly:
+\begin{center}\small\begin{tabular}{rrrrr}\toprule $s$&$(+,+)$ old&$(+,+)$ new&$(-,-)$ new&total\\\midrule 9&12&48&12&72\\ 11&18&72&20&110\\ 25&36&432&132&600\\\bottomrule\end{tabular}\end{center}
+Every piece is injective. The $\nu_0$ coefficient is nonzero on every new piece and zero on every old piece.
+\end{proposition}
+\catA{Exact integer ranks. The irreducible decompositions are Proposition~\ref{prop:splits6}; a uniform proof is open.}
+Let $s=p^2$ with $p$ an odd prime. Write $W_p^\pm$ for the even and odd parts of the Weil representation of $\Z/p^2$ (or of $\Z/q$), and $A_3$ for the irreducible $3$-dimensional $2$-adic factor.
+\begin{theorem}[Prime-square structure]\label{thm:psq6}
+Assume (C1) Theorem~\ref{thm:tensorodd} and (C2) CRT surjectivity, both proved above, and (C3) the cited Nobs--Wolfart / Cliff--McNeilly--Szechtman decomposition $W_p^+=\mathbf 1\oplus R$, with $R$ irreducible of dimension $(p^2-1)/2$, and $W_q^\pm$ irreducible for primes $q$. Let $\varepsilon=(\varepsilon_q)_{q\mid s-2}$, with $Z_{(s)}=+$. Then:
+\begin{enumerate}[label=(\roman*)]
+\item The sector is $\Sigma_\varepsilon=W_p^+\otimes(\bigotimes_qW_q^{\varepsilon_q})\otimes A_3$. Its $p$-local invariants are $\mathbf 1\otimes(\bigotimes_qW_q^{\varepsilon_q})\otimes A_3$. Summed over the $\varepsilon$ with $Z_{(s-2)}=+$, these have total dimension $3(s-1)/2$.
+\item If $s-2$ is squarefree, then $\Sigma_\varepsilon=(\text{$p$-local invariants})\oplus R\otimes(\bigotimes_qW_q^{\varepsilon_q})\otimes A_3$ is a sum of two non-isomorphic irreducibles.
+\end{enumerate}
+\end{theorem}
+\catA{Conditional on (C3), which is cited and not re-proved; (C1) and (C2) are proved above; (C3) is Category~A for the primes covered by Propositions~\ref{prop:c3small6} and~\ref{prop:weil7}. Irreducibility of the complement follows from the outer-tensor argument. \emph{Caveats:} if $s-2$ is composite, the sector splits by prime sign (see $s=121$ below). If $q^2\mid s-2$, the complement is reducible.}
+\begin{proposition}[Exact splits]\label{prop:splits6}
+The ``$(+,+)$'' sectors split as follows: $s=9$: $12+48$; $s=11$: $18+72$; $s=25$: $36+432$; $s=49$: $72+1728$. In each case the commutant is $2$ and the smaller piece is exactly the $p$-local invariant subspace. The $(-,-)$ sectors at $s=9,11,25$ (dimensions $12,20,132$) are irreducible, and the mixed sectors vanish.
+\end{proposition}
+\catA{The sectors are built with an exact invariance certificate (0 failures). The commutant is computed mod $\ell$ on an exactly verified basis. It is lifted to $\C$ using $\ell\nmid|\mathrm{Mp}_2(\Z/N)|$; this divisibility is machine-checked (at $s=49$ with the two primes $\ell=1272914161$ and $\ell=2036662657$, both giving commutant $2$ and pieces of dimensions $72$ and $1728$). \emph{Standard input, cited:} a Weil representation factors through $\mathrm{Mp}_2(\Z/\mathrm{ord}\,T)$. For $\gamma\in\Gamma(N)$ the cited Borcherds/Scheithauer $\Gamma_0(N)$ formula gives $\rho_D(\gamma)=\chi_D(\gamma)I$. After Proposition~\ref{prop:c3small6}, the splits at $s=9,25$ need neither this nor (C3). The $s=9,25,49$ splits agree with Theorem~\ref{thm:psq6}(ii), where $s-2=7,23,47$ is prime.}
+\begin{proposition}[Label-space counts at $s=121$ and $s=169$]\label{prop:s121}
+Let the $p$-local invariants of a sector be the vectors fixed by $\langle T^a,ST^aS^{-1}\rangle$, where $a\equiv1\pmod{p^2}$ and $a\equiv0\pmod{n_T/p^2}$; this definition does not use the tensor factorisation.
+\begin{enumerate}[label=(\roman*)]
+\item $s=121$ ($p=11$, $s-2=7\cdot17$; signs ordered $Z_7,Z_{11},Z_{17}$). The nonzero sectors are $(+,+,+)$, $(-,+,-)$, $(+,-,-)$ and $(-,-,+)$, of dimensions $6588$, $4392$, $1920$ and $1620$. They contain at most $108$, $72$, $0$ and $0$ independent $p$-local invariants respectively, for a total of at most $180=3(s-1)/2$.
+\item $s=169$ ($p=13$). The $(+,+)$ sector has dimension $21420$ and contains at most $252=3(s-1)/2$ independent $p$-local invariants; the $(-,-)$ sector has dimension $6972$ and contains none.
+\end{enumerate}
+Given the cited factorisation of a Weil representation through $\mathrm{Mp}_2(\Z/n_T)$, these upper bounds are equalities.
+\end{proposition}
+\catA{Sector dimensions: exact orbit counts. Invariant counts: $2k-\mathrm{rank}[X\mid SX]$ computed modulo $\ell$, which bounds the characteristic-$0$ count from above. At $s=121$ two primes ($\ell=19903795297$, $99518976481$) agree exactly; at $s=169$ one prime was used. Equality holds if $\ell\nmid|H|$, which is guaranteed when $\rho$ factors through $\mathrm{Mp}_2(\Z/n_T)$ (cited), since $\ell$ exceeds every prime dividing $|\mathrm{SL}_2(\Z/n_T)|$. The counts agree with Theorem~\ref{thm:psq6}(i) and do not use (C1) or (C3). Irreducibility of the complements is not claimed.}
+\begin{proposition}[(C3) for small $p$]\label{prop:c3small6}
+For $p\in\{3,5,7,11,13,59\}$, the even Weil representation of $\Z/p^2$ is $\mathbf 1\oplus R$ with $R$ irreducible, and the odd part is irreducible. Together with (C1), this gives the $(+,+)$ decompositions at $s=9,25,49$ in characteristic~$0$ directly, without the $\ell\nmid|\mathrm{Mp}_2|$ lift.
+\end{proposition}
+\catA{The mod-$\ell$ commutant is $2$ (even part) or $1$ (odd part), on exactly verified bases, for both square classes. Semicontinuity bounds the characteristic-$0$ commutant above by the mod-$\ell$ one. The explicit invariant line $\delta_{p\Z/p^2}$ bounds it below by $2$. The general-$p$ case remains cited (Nobs--Wolfart / Cliff--McNeilly--Szechtman). The irreducibility of $1728$ at $s=49$ also uses $W_{47}^+$ irreducible (cited; not run).}
+\catB{\emph{Factor dimensions only:} $s=59^2=3481$, $s-2=7^2\cdot71$. The prediction is: in $(+,+,+)$, $p$-invariants $108+2592$ and complement $187920+4510080$ (reducible); in $(+,-,-)$, $2520$ and $4384800$; total $p$-invariants $5220=3(s-1)/2$. No label-space run.}
+\begin{proposition}[Weil representations of $\Z/M$]\label{prop:weil7}
+The even and odd parts of the Weil representation of $\Z/M$ have the following (dimension, commutant): $M=47$: $(24,1)$, $(23,1)$; $M=59$: $(30,1)$, $(29,1)$; $M=71$: $(36,1)$, $(35,1)$; $M=17^2$: $(145,2)$, $(144,1)$; $M=19^2$: $(181,2)$, $(180,1)$; $M=23^2$: $(265,2)$, $(264,1)$. Hence for $q=47,59,71$ both parts are irreducible, and for $p=17,19,23$ the even part of $\Z/p^2$ is $\mathbf1\oplus R$ with $R$ irreducible and the odd part is irreducible.
+\end{proposition}
+\catA{Commutants computed mod $\ell\equiv1\pmod M$ on exactly verified bases, both square classes; the characteristic-$0$ commutant is bounded above by the mod-$\ell$ one, and for $\Z/p^2$ below by $2$ via the invariant line $\delta_{p\Z/p^2}$. With Proposition~\ref{prop:c3small6}, (C3) is Category~A for every prime $q\mid s-2$ and every $p^2$ occurring at $s=9,25,49$ (in particular $W_{47}^\pm$ irreducible, used for the $1728$ at $s=49$), and for $\Z/17^2,\Z/19^2,\Z/23^2$. The general-$p$ statement remains cited (Scheithauer, IMRN 2009, Prop.~4.5 and Thm.~4.7; Cliff--McNeilly--Szechtman, main theorem; Nobs--Wolfart, theorem number not verified).}
+\catB{At $s=3481$ the decomposition remains a factor-dimension prediction: the factors are Category~A, but the assembled decomposition is conditional on the tensor factorisation and was not computed in label space.}

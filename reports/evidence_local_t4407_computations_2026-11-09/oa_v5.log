@@ -1,0 +1,10 @@
+PARI stack size set to 3000000000 bytes, maximum size set to 3000000512
+Traceback (most recent call last):
+  File "/workspace/quantum-comp/reports/evidence_local_t4407_computations_2026-11-09/oa_v5.py", line 9, in <module>
+    P(f"CB=mfcoefs(Bh,{NC}); CBt=matrix(d,{NC}+1,j,i,CB[i,j])")   # row j = coefficients of basis form j
+    ~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cypari2/pari_instance.pyx", line 800, in cypari2.pari_instance.Pari.__call__
+  File "cypari2/gen.pyx", line 4784, in cypari2.gen.objtogen
+  File "cypari2/convert.pyx", line 545, in cypari2.convert.PyObject_AsGEN
+  File "cypari2/handle_error.pyx", line 211, in cypari2.handle_error._pari_err_handle
+cypari2.handle_error.PariError: mfcoefs: incorrect type in mfcoefs (t_VEC)

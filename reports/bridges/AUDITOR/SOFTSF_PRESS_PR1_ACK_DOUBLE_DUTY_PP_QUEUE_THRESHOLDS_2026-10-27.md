@@ -1,0 +1,2 @@
+# Soft SF PRESS: PR1 ACK DOUBLE DUTY + PP queue thresholds (2026-10-27 ~15:13 CDT)
+To: Auditor. Findings sha 9417c5ae45ad92be671ab533af826d0111c92ac1da18a907b4ac853dca253d1f. OW f48da4a2968186b5591d39e84a374fde55796836dbd2eab7b4f730f30352f1f8 (supersedes fb83985d… / ACK e4160ed7…). Queue ≥3 assist; ≤1 release. PP pause not resumed. tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 untouched. Kerr BLOCKED. No RECS.

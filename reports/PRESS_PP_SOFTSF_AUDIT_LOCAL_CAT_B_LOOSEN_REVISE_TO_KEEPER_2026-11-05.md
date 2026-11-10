@@ -1,0 +1,2 @@
+# PRESS — PP Soft SF → Keeper — AUDIT Local Cat B loosen REVISE S²-11DM²ET-X — 2026-11-05
+FINDINGS FINDINGS_PP_SOFTSF_AUDIT_LOCAL_CAT_B_LOOSEN_e6231cde_2026-11-05.md sha f967911820876f4ef4cecd370323aebd264777535a847c055812eb86962886c2. Audited e6231cde6ab316cbb7e412d149ee7fe5f1c89374c343f34d9ddc64602ed65509 + PRESS 45ad5896… under AMEND OW 2c341bc7… (aa309177… SUPERSEDED). Verdict **FLAG** — item B4 (iff drops necessity gap). tip 7cddb188… tip_touched NO. No CERT. Soft SF → Keeper.

@@ -1,0 +1,72 @@
+%=====================================================================
+\section{The cone: origin of $\Delta$, the choice of walls, and $H_s^{\rm axes}$}\label{sec:cone}
+%=====================================================================
+\subsection{The lattice origin of $\Delta=(s-2)(7s-32)$}\label{sec:delta}
+Let $A=\left(\begin{smallmatrix}2&s\\s&s\end{smallmatrix}\right)$ be the Gram matrix of $Q_2(n,k)=n^2+snk+\tfrac s2k^2$, so $\det A=-s(s-2)$, and let $c_1=(-1,1)$, $c_2=(-4,1)$ (the choice) and $e_1=(1,0)$.
+\begin{proposition}[Lattice origin of $\Delta$]\label{prop:delta7}
+\begin{enumerate}[label=(\roman*)]
+\item $7s-32=-2Q(c_2)$. Indeed $c_2=c_1-3e_1$, $B(c_1,e_1)=s-2$, $Q(e_1)=1$, and $-2Q(c_2)=(s-2)+6(s-2)-18=7s-32$.
+\item $v:=(3s,s-8)=JAc_2$ ($J$ the rotation by $90^\circ$) spans $c_2^\perp$, $B(c_2,x)=\det(x,v)$, and $u_2=v/g$ with $g=\gcd(s-8,3s)=\gcd(24,s-8)$.
+\item $2Q(v)=\det A\cdot2Q(c_2)=s(s-2)(7s-32)$, so $Q_2(u_2)=s\Delta/(2g^2)$.
+\item For any $w$ with $\det(w,u_2)=1$, the residual coefficient in the Gauss phase of Proposition~\ref{prop:crt6}(iii) is $\det A/(4Q(u_2))=-g^2/(2(7s-32))=Q(\pi w)$, where $\pi$ is the $B$-orthogonal projection onto $\R c_2$ along $u_2$.
+\item $\Delta=4Q(c_1)Q(c_2)=B(c_1,c_2)^2+\det\mathrm{Gram}(c_1,c_2)=16(s-2)^2-9s(s-2)$, with $B(c_1,c_2)=-4(s-2)$ and $\det(c_1,c_2)^2=9$.
+\end{enumerate}
+\end{proposition}
+\catA{All identities are symbolic in $s$. The degenerate prime cases of Proposition~\ref{prop:crt6}(iv) are read off: $p\mid7s-32$ means that $c_2$ is isotropic mod $p$ (the residual sum collapses to a delta), and $p\mid s-2$ is the $c_1$ analogue. No physical interpretation is offered.}
+
+%---------------------------------------------------------------------
+\subsection{The cone choice: what is intrinsic and what is tied to the fixed wall $c_2$}\label{sec:conechoice}
+Write $c_a=(-a,1)$ and $H_s^{(c_1,c)}$ for the cone series with Zwegers-type weight $w=\tfrac12(\sgn B(c_1,v)-\sgn B(c,v))$, so that $H_s$ is $H_s^{(c_1,c_4)}$. The $c_1$-wall is $n=0$ (edge $u_1=(0,1)$) and the $c_2$-wall is the edge $u_2\propto(3s,s-8)$.
+\begin{proposition}[Edge-class invariance]\label{prop:Minv7}
+$M(n,k)=(-n-sk,k)$ is an integral involution of determinant $-1$ with $Q_+(Mv)=Q_+(v)$ (including the linear term), and $Mc_a=c_{s-a}$. For admissible $a$, $H_s^{(c_1,c_a)}=H_s^{(c_1,c_{s-a})}$. Also $-2Q(c_a)=(2a-1)s-2a^2$ is invariant under $a\leftrightarrow s-a$, and $4Q(c_1)Q(c_a)=(s-2)\big((2a-1)s-2a^2\big)$.
+\end{proposition}
+\catA{Proof: the difference is $\tfrac12\sum f(v)q^{Q_+(v)}$ with $f=\sgn B(c_{s-a},\cdot)-\sgn B(c_a,\cdot)$ supported in a sector between two positive lines (finitely many terms per degree); $f\circ M=-f$ and $M$ is a $Q_+$-preserving bijection, so the sum vanishes. Symbolic identities are checked by computer algebra, with an exact $q$-series check at $s=7,8,9,11,13$ to $q^{800}$ or $q^{600}$.}
+\begin{proposition}[$c_1$ is forced; the axes cone]\label{prop:axes7}
+\begin{enumerate}[label=(\roman*)]
+\item If one wall of the cone is the orthant edge $n=0$, then $c_1=\pm(-1,1)$ (the sign being fixed by orientation), up to its $M$-image $c_{s-1}$, which gives the same series. $Q(c_1)=-(s-2)/2<0$ for all $s>2$.
+\item (Axes cone.) Let $c_2^{\rm ax}$ be the primitive vector on the ray of $(-s,2)$, so that $B(c_2^{\rm ax},v)\propto-k$ (the $k=0$ wall); it is $M$-fixed, with $Q(-s,2)=-s(s-2)<0$. Then $w=\tfrac12(\sgn n+\sgn k)$ and $\Cmixed\equiv0$ identically, i.e.\ $C=\Caxis+\Cthird$.
+\item For any admissible $c_2$, $\Cmixed^{(c_2)}=H_s^{(c_1,c_2^{\rm ax})}-H_s^{(c_1,c_2)}$, a sector sum with finitely many terms per degree. For $c_2=(-4,1)$ at $s=7$ its first term is the wall point $(21,-1)$, $Q_+=294$, weight $-\tfrac12$; this is Theorem~\ref{thm:A}(iv).
+\end{enumerate}
+\end{proposition}
+\catA{(i): $Ac_1\propto(1,0)$. (ii): $P-H=\Caxis+\Cthird$ by direct regrouping (the negative quadrant gives $\Cthird$ since $Q_+(-n,-k)=Q_-(n,k)$); exact check at $s=5,\dots,13$ to $q^{600}$. (iii): first nonzero degree of $\Cmixed$ is $27,294,375,242,189,168$ for $s=6,7,10,11,12,13$; $\equiv0$ at $s=8$ (where $(-4,1)$ \emph{is} the axes vector); none through $q^{600}$ at $s=9$. At $s=7$, any $c_1\notin\{(-1,1),(-6,1)\}$ tested destroys the $q^0$ normalisation of $C$.}
+\begin{proposition}[Status of $c_2=(-4,1)$]\label{prop:c2status7}
+$c_2=(-4,1)$ is part of the \emph{definition} of $H_s$ (\S\ref{sec:notation}): it is fixed at $s=7$ and kept for all $s$. Within the class $c\in c_1+\Z e_1$ (second coordinate $b=1$) at $s=7$: $Q(c_a)<0$ iff $a\in\{1,\dots,6\}$; the closed orthant lies strictly inside the $w=1$ region iff $a\ge4$; and the $\Cmixed$ vanishing order is maximal (first nonzero term $q^{294}$) exactly for the $M$-class $\{3,4\}$. Together these give $a=4$ uniquely among $b=1$. Among all primitive $(-a,b)$ with $b\le6$ it is \emph{not} unique, even up to $M$: the vanishing order grows as $a/b\to s/2$, and the optimum under the $\Cmixed$ criterion is the axes vector $(-7,2)$. For $s\ne7$ this choice is not forced (the deepest $b=1$ class is $a\approx s/2$).
+\end{proposition}
+\catA{Exact computations, to $q^{1200}$ at $s=7$.}
+\catB{Reading the three conditions as the ``selection rule'' behind the original choice is an interpretation.}
+\begin{remark}[What is intrinsic in $\Delta$]\label{rem:intrinsic7}
+Combining Propositions~\ref{prop:delta7}--\ref{prop:c2status7} (all Category~A):
+\begin{itemize}[leftmargin=2em]
+\item the factor $s-2=-2Q(c_1)$ of $\Delta$ is \emph{intrinsic given $c_1$}, and $c_1$ is itself forced once one wall is the orthant edge $n=0$;
+\item the factor $7s-32=-2Q(c_2)$, and with it every $\sqrt\Delta$ term, every $(7s-32)^r$ denominator and every $g$-dependence in the $H_s$ coefficients of \S\ref{sec:hs}, is \emph{tied to the choice} $c_2=(-4,1)$; it is invariant only under $a\leftrightarrow s-a$ (Proposition~\ref{prop:Minv7}), and other admissible $c_2$ give $\Delta(a)=(s-2)((2a-1)s-2a^2)$.
+\end{itemize}
+These statements concern $H_s$ as defined; they do not change it.
+\end{remark}
+\subsection{The parallel object $H_s^{\rm axes}$: exact closed forms through $t^{13/2}$}\label{sec:axes}
+\begin{definition}\label{def:axes7}
+$H_s^{\rm axes}:=H_s^{(c_1,c_2^{\rm ax})}$, the cone series with $c_1=(-1,1)$ and $c_2^{\rm ax}=\mathrm{prim}(-s,2)$ (the $k=0$ wall). It is a separate object from $H_s$; by Proposition~\ref{prop:axes7}(ii), $H_s^{\rm axes}=\Porth_s-\Caxis-\Cthird$ exactly.
+\end{definition}
+\begin{theorem}[Closed forms for $H_s^{\rm axes}$]\label{thm:axes7}
+Let $c_r$ be the coefficient of $t^r$ in $H_s^{\rm axes}(e^{-t})$ ($x=0$), $s\ge3$. All integer orders vanish, and for $r\in\{-\tfrac12,\tfrac12,\dots,\tfrac{13}2\}$,
+\[c_r=\sqrt\pi\,\big[R^{\rm ax}_r(s)+S^{\rm ax}_r(s)\sqrt{2s}\big],\qquad R^{\rm ax}_r,S^{\rm ax}_r\in\Q(s),\]
+with denominators $(s-2)^{r+3/2}$ times small integers, and no dependence on $g$. The first rows are
+\begin{center}\footnotesize
+\setlength{\tabcolsep}{4pt}\begin{tabular}{lll}\toprule
+$r$ & $R^{\rm ax}_r$ & $S^{\rm ax}_r$\\\midrule
+$-\tfrac12$ & $\dfrac1{s-2}$ & $-\dfrac1{2(s-2)}$\\[1ex]
+$\tfrac12$ & $\dfrac{s^2(s-4)}{24(s-2)^2}$ & $-\dfrac{(s-4)(3s-2)}{48(s-2)^2}$\\[1ex]
+$\tfrac32$ & $-\dfrac{s^3(s-4)(s^2-4s+8)}{960(s-2)^3}$ & $-\dfrac{15s^4-76s^3+108s^2+96s-128}{3840(s-2)^3}$\\[1ex]
+$\tfrac52$ & $\dfrac{s^4(s-4)(5s^4-40s^3+126s^2-184s+128)}{80640(s-2)^4}$ & $-\dfrac{(s-4)(105s^5-730s^4+2732s^3-5208s^2+5696s-2560)}{645120(s-2)^4}$\\\bottomrule
+\end{tabular}
+\end{center}
+and the rows $r=\tfrac72,\dots,\tfrac{13}2$ are listed in the data files of Appendix~\ref{app:repro}. In particular $c_{-1/2}=\sqrt\pi(2-\sqrt{2s})/(2(s-2))=-\sqrt\pi/(\sqrt{2s}+2)$, and $R^{\rm ax}_r$ carries the factors $(s-4)$ and $s^{r+3/2}$ for every $r\ge\tfrac12$.
+\end{theorem}
+\catA{Proof: $H^{\rm axes}=P-\Caxis-\Cthird$; $P$ and $\Cthird$ are expanded by the proved two-dimensional quadrant Euler--Maclaurin lemma (Proposition~\ref{prop:EM5}), $\Caxis$ has an exact unary expansion, and the area integrals are evaluated exactly (even moments cancel between $P$ and $\Cthird$). Everything is symbolic in $\sqrt{s/2}$.}
+\catB{\emph{Numerical support only.} $70$-digit engine numerics with PSLQ at $s=7,\dots,13$ recognise the same field $\Q(\sqrt{2s})$ and the leading term; held-out direct summation at $s=20$ converges towards $c_{11/2}+c_{13/2}t$.}
+\subsection{The universal piece $R_e$ is wall-independent through $t^{13/2}$}\label{sec:univ}
+For $H_s$ write, as in Theorem~\ref{thm:Hs}(ii) and Propositions~\ref{prop:t92}, \ref{prop:t1113}, $H_r=\sqrt{2\pi s}\,[R_r(s)+S_r(s,g)\sqrt\Delta]$.
+\begin{proposition}[Wall-independence of the universal piece]\label{prop:univ7}
+For every $r\in\{-\tfrac12,\tfrac12,\dots,\tfrac{13}2\}$, $R_r(s)=S^{\rm ax}_r(s)$ identically in $s$. Equivalently, the $\sqrt{2\pi s}\cdot\Q(s)$ part of the radial expansion is the same for the cone of $H_s$ and for the axes cone through $t^{13/2}$, while $R_r\ne R^{\rm ax}_r$.
+\end{proposition}
+\catA{Exact rational-function identities: $r\le\tfrac52$ by comparison with Theorem~\ref{thm:Hs}(ii); $r=\tfrac72,\dots,\tfrac{13}2$ by exact comparison (difference $0$ at $e=7,9,11,13$). \emph{Open:} the identity at general order. Comparison at $t^{15/2}$, $t^{17/2}$ needs the axes forms at $K\ge15$, which were not computed.}
+\catB{\emph{Interpretation:} the $c_1$ wall produces the universal piece and the $c_2$ wall the remainder ($S_r\sqrt\Delta$ for the cone of $H_s$, $R^{\rm ax}_r$ for the axes cone).}

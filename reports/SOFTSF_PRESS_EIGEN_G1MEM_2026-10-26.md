@@ -1,0 +1,2 @@
+# Soft SF press — Eigen G1-mem (2026-10-26, CDT)
+STATUS GAP. Char-0 kernel vectors of solve36w are structurally in V (all-cusp polar conditions, W1 genuine seeds). The mod-p/CRT kernel, however, is not shown to be a reduction of a char-0 kernel. ABSENT: P1 char-0 rank, P2 coordinated Kr + exact zero-polar check, P3 503-block Sturm. G1 stays PARTIAL. tip 7cddb188… untouched. FINDINGS: EIGEN-TE-RHOBAR-N36-G1MEM_2026-10-26.md

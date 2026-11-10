@@ -1,0 +1,244 @@
+5405: 
+5406: 26.4    Geometric realisation
+5407: Theorem 26.7 (N2 -polarised K3 surfaces). (i) The primitive embedding N2 ,→ ΛK3 is unique
+5408:     up to O(ΛK3 ); hence T is unique up to isometry.
+5409: 
+5410:                                                     = N2 and TX ∼
+5411:  (ii) There is a projective K3 surface X with NS(X) ∼           = T.
+5412: 
+5413: (iii) N2 represents neither −2 nor 0 (non-trivially). Hence such an X contains no smooth rational
+5414:       curves and admits no elliptic fibration, and its ample cone is the whole component of the
+5415:       positive cone containing an ample class.
+5416: 
+5417: Proof sketch. (i) Nikulin [13, Thm. 1.14.4] (p. 126 of the translation): ΛK3 is even unimodular
+5418: of signature (3, 19), N2 is even of signature (1, 1), 3 > 1, 19 > 1, and rk ΛK3 − rk N2 = 20 ≥
+5419: 2 + l(AN2 ) = 4. (ii) Morrison [12, Cor. 2.9(i)] (p. 112; proved there via Cor. 1.9): for ρ ≤ 10
+5420: every even lattice of signature (1, ρ − 1) is the Néron–Severi lattice of some algebraic K3 surface    
+5421: (equivalently, surjectivity of the period map); with (i), TX ∼ = T . (iii) x · x = 2 (x1 + 7y)2 − 35y 2 ;
+5422: −2 would need u2 − 35y 2 = −1, impossible since −1 is not a square mod 7; 0 would need 35 to
+5423: be a square. Without (−2)-classes the ample cone is a full component of the positive cone, and an
+5424: elliptic fibration requires a non-zero isotropic class in NS (standard, [9]).
+5425: 
+5426: Status (Category A). Category A (cited): we use Nikulin [13, Thm. 1.14.4] and Morrison [12,
+5427: Cor. 2.9(i)], and standard facts on ample cones and elliptic fibrations [9]. The arithmetic in (iii) is exact.
+5428: 
+5429: 
+5430: 26.5    Automorphisms
+5431:                
+5432: Let γ = −1  −7                                              T
+5433:           2 13 , the Pell automorph of Theorem 11.2: γ Aγ = A, det γ = 1, tr γ = 12, eigenvalues
+5434:     √
+5435: 6 ± 35. It preserves N2 (the second coordinate of γx is 2x1 +     √ 13x2 ). Let r = diag(1, −1) in the
+5436: h2i ⊕ h−70i basis; there γ = ( 61 35
+5437:                                   6  ) (multiplication by ε = 6 +  35).
+5438: 
+
+5462: Status (Category A). Exact.
+5463: 
+5464: Theorem 26.9 (Automorphisms of N2 -polarised K3 surfaces). Let X be as in Theorem 26.7, with
+5465: NS(X) = N2 glued to TX = T as in Proposition 26.5.
+5466: 
+5467:   (i) γ 2 ⊕idT extends to a Hodge isometry of H 2 (X, Z) preserving the ample√
+5468:                                                                              cone, and is induced
+5469:                                                                                              √ by
+5470:                                                     ∗
+5471:       a unique f ∈ Aut(X). f has infinite order; f has spectral radius (6 + 35) = 71 + 12 35 on
+5472:                                                                                  2
+5473: 
+5474:       H 2 (X, Z) (a quadratic unit, not a Salem number of higher degree), so its topological entropy
+5475:       is                                          √        √
+5476:                                 h(f ) = 2 log(6 + 35) = 4 35 I ≈ 4.9558,
+5477:                          √        √
+5478:       where I = log(6 + 35)/(2 35) is the constant of Theorem 11.3.
+5479: 
+5480:  (ii) r ⊕ (−idT ) is induced by a non-symplectic involution ι ∈ Aut(X).
+5481: 
+5482: (iii) If NS(X) ∼
+5483:                = N2 (so that the Hodge isometries of TX are only ±1, Proposition 26.10(i)), then
+5484:       Aut(X) = hf, ιi ∼
+5485:                       = Z ⋊ Z/2 (the infinite dihedral group D∞ ), and γ itself does not lift to
+5486:       Aut(X).
+5487: 
+5488: Proof sketch. By Nikulin’s gluing criterion [13], Cor. 1.5.2, an isometry gNS ⊕gT of N2 ⊕T extends to
+5489: H 2 (X, Z) iff ḡNS and ḡT agree under the glue isomorphism AN2 ∼ = AT . By Proposition 26.8, γ̄ 2 = +1
+5490: and r̄ = −1, compatible with idT and −idT , which are Hodge isometries. Both preserve the positive
+5491: cone, hence (Theorem 26.7(iii)) the ample cone. By the strong Torelli theorem (Piatetski-Shapiro–
+5492: Shafarevich, Burns–Rapoport; e.g. [9], Thm. 7.5.3) they are induced by unique automorphisms
+5493:                                                                                        √               f,
+5494: ι; ι acts by −1 on H 2,0 , so it is non-symplectic. The eigenvalues of f ∗ are (6 ± 35)2 on NS ⊗ R
+5495: and 1 on T , and the entropy is the logarithm of the spectral radius (Gromov–Yomdin [6]). For
+
+5544: w = 1 can be taken, i.e. whether γ itself lifts on this locus.
+5545: 
+5546: Remark 26.11 (Category B and open items for this section). None of the following is a result of
+5547: this paper.
+5548:  (a) Noether–Lefschetz / Heegner series (Category B). The Noether–Lefschetz/Heegner generating
+5549:      series of the N2 -polarised family are vector-valued modular forms of weight 1 + 18/2 = 10 for
+5550:      ρT or ρ∗T (depending on convention; Borcherds, Kudla–Millson, Maulik–Pandharipande, cited
+5551:      by name only). The residual objects of Theorems 11.6–11.7 are weight-0 Maass-type objects
+5552:      with λ = 41 . A shared representation (Corollary 26.6) is not a shared form; no theta-lift or
+5553:      Borcherds-product link has been checked.
+5554:  (b) Special members (open). Whether γ itself lifts on the rank-6 locus of Proposition 26.10(iii),
+5555:      or on any X with ρ(X) ≥ 6.
+5556:  (c) Interpretation (Category B). Any physical or “unification” reading of X, f or ι.
+5557:  (d) Scope. Every K3 statement in this paper concerns N2 , because the 140-label representation
+5558:      is ρN2 and not ρN1 (Theorem 26.2(iii)).
+5559: 
+5560: 
+5561: 27 Uniqueness and normalisation of the vector completion
+5562: Throughout this section s = 7, ρ = ρlab is the 140-label representation (ρlab ∼
+5563:                                                                               = ρN2 , Theorem 26.2),
+5564:        2 , and the laws are those of Theorem 11.6: u(−1/w) = S u(w) and u(w + 1) = T u(w).
+5565: P = Slab                                                           lab
+5566: Floating-point checks are Category B and are labelled where they occur.
+5567: 
+5568: 27.1   The adapted basis and the eight sectors
+5569: Let g = (14, 6)/70 (the generator of L′ /Z2 used in Theorem 19.3), a2 = ( 12 , 0), and put u′x,ε,δ :=
+5570: uxg+εa2 , −δa2 for x ∈ Z/35 and ε, δ ∈ {0, 1}, with the phases of the labels in the convention of
+5571: Remark 19.2.
+5572: 
+5573:                                                      89
+5574: 
+5575: Proposition 27.1 (Adapted-basis splitting at s = 7). In the basis u′x,ε,δ the 140 labels are hit
+5576: bijectively, and
+5577:                       h               i                                
+
+6455:     (Remark 27.16(a)).
+6456: 
+6457: 12. Whether γ itself lifts on the rank-6 Noether–Lefschetz locus of Proposition 26.10(iii) (Re-
+6458:     mark 26.11(b)); any link between Noether–Lefschetz series and the residual objects beyond
+6459:     the shared representation.
+6460: 
+6461: 13. Coeﬀicient-emitting maps outside the classes of §28 (Remark 28.5).
+6462: 
+6463: 14. Quantum modularity of scalar C and of gs (not claimed).
+6464: 
+6465: 
+6466: 
+6467: 
+6468:                                                   104
+6469: 
+6470: Part III
+6471: The 35-component law vector and the
+6472: normalized Bridge Series
+6473: 33 The 35-component law vector
+6474: Notation is that of §2. In Part III, x denotes a rational number h/m with m ≥ 1, gcd(h, m) = 1
+6475: (and m = 1 for x = 0).
+6476: 
+6477: 33.1   Gauss means
+6478: Definition 33.1. For α, β ∈ Q2 and x ∈ Q the function ν 7→ e(xQ(ν) + B(ν, β)) on α + Z2 is
+6479: invariant under ν 7→ ν+M u (u ∈ Z2 ) for every positive integer M divisible by a suitable M0 (α, β, x),
+6480: because xQ(ν + M u) + B(ν + M u, β) − xQ(ν) − B(ν, β) = xM B(ν, u) + xM 2 Q(u) + M B(u, β) and
+6481: B(ν, u), Q(u), B(u, β) have bounded denominators. The Gauss mean is
+6482:                                           X                                  
+6483:                       Gα,β (x) = M −2           e xQ(α + n) + B(α + n, β) ,
+6484:                                         n∈Z2 /M Z2
+6485: 
+6486: which does not depend on the admissible M .
+6487: 
+6488:    Let hA = ( 21 , 0). For µ ∈ D we use the representative of µ in [0, 1)2 .
+
+8067: 
+8068: 
+8069: 40.3    The Breuil–Mézard / Colmez dictionary
+8070: Write ω for the mod-p cyclotomic character. Following Breuil–Mézard, set
+8071:                                                       −1
+8072:                                                  P ω⊗ω .
+8073:                                         πα := IndG
+8074: 
+8075: Following Colmez, write B(δ1 , δ2 ) = IndB δ2 ⊗ δ1 ω −1 , and let V (ω, 1, τ ⊥ ) denote the nonsplit
+8076: extension 0 → ω → V → 1 → 0 obtained from the cup-product pairing on H 1 .
+8077: Theorem 40.3 (Dictionary identities).         1. With the conventions above,
+8078: 
+8079:                                       B(1, ω) = IndB ω ⊗ ω −1 = πα .
+8080: 
+8081:   2. Colmez’s V (ω, 1, τ ⊥ ) matches the Breuil–Mézard nonsplit extension 0 → ω → ρ → 1 → 0
+8082:      under the cup-product dictionary, and
+8083: 
+8084:                                                  V (β) ∼
+8085:                                                        = ρ.
+8086:                                                                                                       
+8087: Proof. Both sources use the same character convention on the Borel: a pair (χ1 , χ2 ) sends a0 db to
+8088: χ1 (a)χ2 (d). Colmez’s identity B(δ1 , δ2 ) = IndB δ2 ⊗ δ1 ω −1 with (δ1 , δ2 ) = (1, ω) yields B(1, ω) =
+8089: IndB ω ⊗ ω −1 = πα . Colmez constructs V (ω, 1, τ ⊥ ) as the nonsplit extension of kL by kL (ω) whose
+8090: class generates the orthogonal of τ ; Breuil–Mézard attach to a nonzero ϕ the nonsplit extension
+8091: 0 → ω → ρ → 1 → 0 and record V (β) ∼       = ρ. The functors agree by Breuil–Mézard’s identification
+8092: of their V with Colmez’s.
+8093: 
+8094: Status (Category A). Proved. Breuil–Mézard πα equals Colmez B(1, ω), and V (β) ∼
+8095:                                                                                = ρ under the
+8096: cup-product dictionary.
+8097: 
+8098: 
+8099:                                                   128
+8100: 
+
+8143: 
+8144: 40.5   Socle of Breuil’s principal series
+8145: Theorem 40.6 (Breuil socle formula). Let ρ be absolutely irreducible with
+8146:                                                 p(r+1) 
+8147:                                ρI ∼
+8148:                                   = ω2r+1 ⊕ ω2           ⊗ ωm,
+8149: 
+8150: so that π ∼                  KZ Sym /T ) ⊗ χ ◦ det in Breuil’s notation. Then, for every p ≥ 3
+8151:           = π(r, 0, χ) = (indG      r
+8152: 
+8153: (including p = 3),
+8154:                                                            r     m
+8155:                            socK π ∼
+8156:                                   = Symr ⊕ Symp−1−r ⊗ det ⊗ det .
+8157: 
+8158:                                                  129
+8159: 
+8160: Proof. By Breuil’s correspondence, π ∼   = π(r, 0, χ). Twisting reduces to m = 0. The space π I(1) has
+8161: dimension 2. Every irreducible Fp [K]-representation has one-dimensional I(1)-invariants, and every
+8162: nonzero smooth K-representation has nonzero I(1)-invariants, so socK π has at most two irreducible
+8163: summands. The map v 7→ [Id, v] : Symr → π is nonzero, hence injective. The isomorphism π ∼          =
+8164: π(p − 1 − r, 0, ω r ) likewise embeds Symp−1−r ⊗ detr into π. These two images are non-isomorphic: if
+8165: r 6= p−1−r the dimensions differ; if r = (p−1)/2 then detr is nontrivial and the I(1)-eigencharacters
+8166: differ. Their sum is therefore direct inside the socle, and the dimension bound forces equality.
+8167: 
+8168: Status (Category A). Proved for all p ≥ 3, including p = 3. Socle of Breuil’s π(r, 0, χ) is (Symr ⊕
+8169: Symp−1−r ⊗ detr ) ⊗ detm .
+8170: 
+8171: 
+8172: 40.6    Irreducible representations of the finite general linear group
+8173: Proposition 40.7 (Shape of irreducible K-representations). Every irreducible smooth Fp [K]-
+8174: representation, K = GL2 (Zp ), is of the form
+8175:                                                                a
+8176:                                            σ ∼
+
+8230: p ∈ {3, 5, 7} that every label occurs in a socle.
+8231: 
+8232: Remark 40.11 (Scope and count). The seven Category A results of this section are Theorems 40.1,
+8233: 40.2, 40.3, 40.5, 40.6, 40.10 and Proposition 40.7, with the Category A bounds of Proposition 40.4
+8234: absorbed into Theorem 40.5 for the theorem count. Proposition 40.8 remains outside Category A
+8235: as a completeness claim. These identities do not settle the residual question for C and do not
+8236: identify the shadow Ξ.
+8237: 
+8238: 
+8239: 41 Local cite-lifts and residual packaging advancements
+8240: This section records three Category A cite-lifts from the residual path-problem (RPP) group-ring
+8241: calculus—named Local cite-lifts F1–F3 to distinguish them from the unrelated E8 filter families F1–
+8242: F3 of Section 28—together with the November 2026 packaging advancements that fix the ambient
+8243: Hilbert newspace, the thin form complex, and the static cell budget. The Local cite-lifts are
+8244: independent of the local modular constituents of Section 40. Nothing in this section settles the
+8245: residual question for the Bridge Series C, identifies the shadow Ξ, or produces an explicit formula
+8246: for a boundary vector of C inside V35 .
+8247:     Throughout, fix an integer M ≥ 2 and write G = Z/M Z. Let Z[G]      P be the group ring, and let
+8248: ρ : Z[G] → MatM (Z) be the regular representation, so that for h = g ag [g] the matrix ρ(h) is the
+8249:                                        P                                           Q
+8250: circulant with eigenvalues ĥ(k) = g ag ω kg , ω = e2πi/M , and det ρ(h) = k ĥ(k). Given a step
+8251: alphabet C ⊂ Z, weights w = (w1 , . . . , wn ) and integer multiplicities ai,c , set
+8252:                      X
+8253:                hi :=    ai,c [c · wi ] ∈ Z[G],    T := hn · · · h1 ,  |T | := |hn | · · · |h1 |,
+8254:                      c∈C
+8255:              P
+8256: where |h| = g |ag |[g]. For a source residue rs and a target residue rt , write W = W (rs → rt ) for
+8257: the signed path weight (ρ(T ))rt ,rs and N = N (rs → rt ) for the unsigned path weight (ρ(|T |))rt ,rs .
+8258: Write k · k1 for the `1 -norm of coeﬀicients and spr for the spectral radius over C.
+8259: 
+8260: 41.1   Local cite-lift F1: weak NP-completeness on an odd-M slice
+8261: Theorem 41.1 (Local cite-lift F1). Consider the residual path problem (RPP) of deciding whether
+8262: there exists a path of signed weight summing to a prescribed target residue modulo M . Restrict to
+8263: the slice in which M is part of the input, C = {0, 1}, every multiplicity equals 1, and

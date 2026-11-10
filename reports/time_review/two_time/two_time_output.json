@@ -1,0 +1,20 @@
+{
+ "beat_period_s": 2915460.0,
+ "beat_days": 33.74375,
+ "ratio": "5399/5400",
+ "torus_closure_s": 2915460.0,
+ "lock_identity_zero": true,
+ "charpoly": "Omega**4 - Omega**2*omega1**2 - Omega**2*omega2**2 + g**2 + omega1**2*omega2**2",
+ "Omega2": [
+  "omega1**2/2 + omega2**2/2 - sqrt(-4*g**2 + omega1**4 - 2*omega1**2*omega2**2 + omega2**4)/2",
+  "omega1**2/2 + omega2**2/2 + sqrt(-4*g**2 + omega1**4 - 2*omega1**2*omega2**2 + omega2**4)/2"
+ ],
+ "g_crit": "Abs(omega1**2/2 - omega2**2/2)",
+ "g_crit_numeric_s^-2": 2.507835857073126e-08,
+ "g_crit_over_omega2": 0.00018516803840882225,
+ "dE_dt_on_shell": "0",
+ "max|a|_0.5gc": 1.4433754545058144,
+ "Edrift_0.5gc": 3.3327782062429236e-12,
+ "max|a|_2gc": 31.91328957691921,
+ "Edrift_2gc": 3.3402150538758626e-12
+}

@@ -1,0 +1,22 @@
+./deduce_t708u_ga3/PREREG.md:23:- RG-H4 Impact: conditional (IF h supplied/ACCEPT) vs current standing (Bridge PARTIAL; READY NO; residual-C OPEN; UNIQUE-in-family/PARTIAL; G-A1c, G-R2 open).
+./deduce_t708u_ga3/RESULTS.md:16:- IF h supplied & ACCEPTed and F1 holds: RG76d sample PASS-candidate; δ≡0 still NOT forced by samples alone (F2); Bridge YES/residual-C close would additionally need identity or author rule, plus G-A1c (uniqueness beyond fam
+./deduce_t708u_ga3/RESULTS.md:18:- Current (unchanged): Bridge PARTIAL; READY NO; residual-C OPEN; UNIQUE-in-family/PARTIAL; G-A1c open; G-R2 open; G-A3 open.
+./deduce_t708u_ga3/FINDINGS_DRAFT_for_Auditor_CONFIRM_t708u_2026-10-25.md:22:4. Bridge YES NOT newly forced (and not automatically forced even with h: samples ≠ δ≡0; G-A1c, G-R2 open).
+./deduce_t691u_revise_sb1p/PREREG.md:11:RG-R3: Uniqueness (within-family; wider class) and Dual-split (G-A1b) under (S-B1 kept/weakened) ∧ revised S-B1′. Verdict ∈ {UNIQUE-FORCED, PARTIAL, PASS-NO-UNIQUE-STILL}.
+./deduce_t691u_revise_sb1p/RESULTS.md:11:Within Written family: UNIQUE (4 samples, nonsingular). Wider class satisfying revised S-B1′ ∧ weakened S-B1: NOT unique (e.g. adding any O(t²) pole-free function vanishing at t=−2,0,2,4 preserves samples) — G-
+./deduce_t691u_revise_sb1p/RESULTS.md:12:Verdict: PARTIAL. Gaps: G-A1b, G-A1c, G-R2, Arvin ACCEPT of candidate.
+./deduce_t700u_ga1b/RESULTS.md:15:Any G-A1b closure (R-DS0 most natural) only tidies scope; B7/OB4 already establish Written off-sample NON-uniqueness, so closure cannot force uniqueness beyond the Written family (G-A1c stays open). δ≡0 / RG76d / Bridge YES
+./deduce_t700u_ga1b/RESULTS.md:16:Standing: Bridge PARTIAL; READY NO; residual-C OPEN; no order78. Gaps: G-A1b (candidate pending ACCEPT), G-A1c, G-A3, G-R2; X4 coeffs ABSENT; B3 empty.
+./deduce_t704u_accept/FINDINGS_DRAFT_for_Auditor_CONFIRM_t704u_2026-10-25.md:22:4. UNIQUE-in-family / overall PARTIAL (G-A1c OPEN). δ≡0/RG76d/Bridge YES NOT forced (G-A3 ABSENT). Bridge PARTIAL; READY NO; residual-C OPEN.
+./deduce_t704u_accept/FINDINGS_DRAFT_for_Auditor_CONFIRM_t704u_2026-10-25.md:26:G-A1c, G-A3, G-R2; X4 coeffs ABSENT; B3 empty.
+./deduce_t704u_accept/PREREG.md:23:- RG-D2 Uniqueness: expected UNIQUE-in-family / overall PARTIAL (G-A1c wider class OPEN; R-DS0 cannot force it).
+./deduce_t704u_accept/RESULTS.md:12:Written 4-param family + Object A UNIQUE; deg-3 EXCLUDED by S-B1′; wider class NOT unique (G-A1c OPEN). R-DS0 is scope-only and adds no constraint on O(t²) pole-free additions ⇒ cannot close G-A1c.
+./deduce_t704u_accept/RESULTS.md:20:Gaps remaining: G-A1c, G-A3, G-R2 (open check, not law); X4 coeffs ABSENT; B3 table empty.
+./STREAM_IDLE_LOCAL.md:21:- LOCK 2026-10-25 deduce_t691u_revise_sb1p (t691s4368 G-A1a): PREREG 6e2ef05ae6863282e94330c323a24071a099bb7af73c1f3d8d7149fa81de8b67 / RESULTS 547e97392c27030ca241a2e9c02f6a8fea99f9d5fecb7bbfead5b9b1f29d1d72 / SUMS 26f71cf3b506bd9ec7
+./STREAM_IDLE_LOCAL.md:22:- LOCK 2026-10-25 deduce_t695u_accept (t695s4386 AUTHOR ACCEPT of 3d502756… → both selectors ACCEPT-sourced Cat A): PREREG 8cb69ab3a225e89f8731b5d5400949e84637d5ffc70573ff2ab8d6fd72c6f5d8 / RESULTS f36beeea8e18b3d3c28cb8733bfcf8ef
+./STREAM_IDLE_LOCAL.md:24:- LOCK 2026-10-25 deduce_t704u_accept (t704s4427 AUTHOR ACCEPT R-DS0 only of 0504098862367dc0c8d2ea08af4460feb19064c23481701bf85d9e7cf63c5650): PREREG dc74aab66ab20821251625d1dbc6dc1d023e6389a8710c926fa869f522524470 / RESULTS e5b65693
+./STREAM_IDLE_LOCAL.md:25:- LOCK 2026-10-25 deduce_t708u_ga3 (t708s4448 PURSUE G-A3): PREREG 5c65afec75cdebc9965a9f7ce9c3d78f04ac447bc96e5250188339facd8f4949 / RESULTS 1c0e12ca78666028fcf136f8c3283644d010d2a3ec111c4bc0ce779b4c676309 / SUMS 483cd14ef05a50a91101
+./deduce_t682u_accept/RESULTS.md:11:Gaps: G-A1a no Written residual_factor satisfying S-B1∧S-B1′∧Object A; G-A1b Dual-split W_7-paired values ABSENT; G-A1c uniqueness proof over any wider class ABSENT.
+./deduce_t695u_accept/PREREG.md:14:- RG-P1 Uniqueness under ACCEPTED selectors: re-verify (family+Object A UNIQUE; deg-3 EXCLUDED by S-B1′; wider class NOT unique G-A1c unless newly forced; Dual-split NOT FORCED G-A1b unless Written W₇-paired values). Expe
+./deduce_t695u_accept/RESULTS.md:12:- Wider class: NOT unique (G-A1c) — O(t²) pole-free additions vanishing at the samples preserve both selectors; no uniqueness proof claimed.
+./deduce_t695u_accept/RESULTS.md:23:Gaps: G-A1b, G-A1c, G-A3, G-R2; X4 coeffs ABSENT; B3 table empty.

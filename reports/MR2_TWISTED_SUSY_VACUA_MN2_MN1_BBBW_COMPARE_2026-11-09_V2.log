@@ -1,0 +1,97 @@
+== 0. constants ==
+a_D = c_D (KR direct product (D)) = 28115127627.6
+l/l_p = 2 (pi N)^(1/3) = 49.6843821928 ; l^2/l_p^2 = 2468.537834
+check l^3 = 8 pi N l_p^3 : 1.0
+AdS7xS4 flux / (2 pi)^3 N = 1.0
+
+== 1. twist parameters at g=2 (1203.0303 (2.12)-(2.13)) ==
+z=-3: (p,q)=(-2,4), p+q=2=2g-2 BBBW |z|>1
+z=-2: (p,q)=(-1,3), p+q=2=2g-2 BBBW |z|>1
+z=-1: (p,q)=(0,2), p+q=2=2g-2 MN2
+z=+0: (p,q)=(1,1), p+q=2=2g-2 MN1
+z=+1: (p,q)=(2,0), p+q=2=2g-2 MN2
+z=+2: (p,q)=(3,-1), p+q=2=2g-2 BBBW |z|>1
+z=+3: (p,q)=(4,-2), p+q=2=2g-2 BBBW |z|>1
+0<|z|<1 needs z=n/(g-1) non-integer: impossible at g=2 (g-2 = 0 such points)
+
+== 2. BBBW IR fixed point (1112.5487 (8)-(9) / 1203.0303 (3.8)) ==
+MN1(z=0) {'z': 0, 'X0': 1.25878334839, 'X1': 0.944087511295, 'X2': 0.944087511295, 'ef': 0.794417880787, 'e2g': 0.210366589771, 'a1': 0.500000000000, 'a2': 0.500000000000}
+MN2(z=1) {'z': 1, 'X0': 1.31950791077, 'X1': 0.659753955386, 'X2': 1.31950791077, 'ef': 0.757858283255, 'e2g': 0.287174588749, 'a1': 1.00000000000, 'a2': 0}
+BBBW(z=2) {'z': 2, 'X0': 1.36852523442, 'X1': 0.580673592059, 'X2': 1.47211425957, 'ef': 0.730713599464, 'e2g': 0.409849822930, 'a1': 1.50000000000, 'a2': -0.500000000000}
+BBBW(z=3) {'z': 3, 'X0': 1.39560472508, 'X1': 0.547600099047, 'X2': 1.54580698857, 'ef': 0.716535263913, 'e2g': 0.538366799084, 'a1': 2.00000000000, 'a2': -1.00000000000}
+BBBW(z=-2) mirror {'z': -2, 'X0': 1.36852523442, 'X1': 1.47211425957, 'X2': 0.580673592059, 'ef': 0.730713599464, 'e2g': 0.409849822930, 'a1': -0.500000000000, 'a2': 1.50000000000}
+MN2: X1 - 2^(-3/5) = 0 ; X2 - X0 = 0 (SO(3) condition)
+MN1: X1^5 - 3/4 = 0 ; MN (28): e^{5phi}=4/3 -> X1=e^{-phi}; X0=e^{4phi}:  0 ; MN (28) e^{-2g-3phi}=4 with e^{2g}=e^{2g0}, e^{-3phi}=X1^3: 4.0000000000000000000
+
+== 3. large-N a=c (1203.0303 (4.6),(4.7), kappa=-1) ==
+MN1(z=0): e^(3f0+2g0)=0.105468750000000  a/N^3 via (4.6)=0.281250000000000  via (4.7)=0.281250000000000  a(N=4880)=32685264000.0  ratio to a_D=1.162550796
+MN2(z=1): e^(3f0+2g0)=0.125000000000000  a/N^3 via (4.6)=0.333333333333333  via (4.7)=0.333333333333333  a(N=4880)=38738090666.7  ratio to a_D=1.377837980
+BBBW(z=2): e^(3f0+2g0)=0.159906575353578  a/N^3 via (4.6)=0.426417534276208  via (4.7)=0.426417534276208  a(N=4880)=49555803313.9  ratio to a_D=1.762602823
+BBBW(z=3): e^(3f0+2g0)=0.198057355398973  a/N^3 via (4.6)=0.528152947730595  via (4.7)=0.528152947730595  a(N=4880)=61378910325.2  ratio to a_D=2.183127572
+BBBW(z=-2) mirror: e^(3f0+2g0)=0.159906575353578  a/N^3 via (4.6)=0.426417534276208  via (4.7)=0.426417534276208  a(N=4880)=49555803313.9  ratio to a_D=1.762602823
+MN1/MN2 large-N ratio = 0.843750000000000 (27/32 = 0.843750000000000 )
+(4.9) large-z asymptote c~(sqrt3/16)z+3/16 at z=3: 0.512259526419165 vs 0.528152947730595
+
+== 4. exact finite-N a, c via a-maximization (1203.0303 (2.6),(2.16)) for A_{N-1} ==
+MN1(z=0): eps*=0 a=32685263542.3125 c=32685263237.3750 a/c=1.00000000932951
+    a/a_largeN-1=-1.40029E-8  ratio a/a_D=1.16255077961  c/a_D=1.16255076877
+MN2(z=1): eps*=-0.333333333333333 a=38738090056.4583 c=38738089853.1667 a/c=1.00000000524785 | (2.17) eps=-0.333333333333333 (2.20) a-diff=0 c-diff=0
+    a/a_largeN-1=-1.57522E-8  ratio a/a_D=1.37783795861  c/a_D=1.37783795138
+BBBW(z=2): eps*=-0.434258543204520 a=49555802320.3552 c=49555802280.2612 a/c=1.00000000080907 | (2.17) eps=-0.434258543204520 (2.20) a-diff=-0E-115 c-diff=-0E-115
+    a/a_largeN-1=-2.00499E-8  ratio a/a_D=1.76260278725  c/a_D=1.76260278583
+BBBW(z=3): eps*=-0.476833620530217 a=61378908870.5925 c=61378909001.8683 a/c=0.999999997861222 | (2.17) eps=-0.476833620530217 (2.20) a-diff=0E-116 c-diff=0E-116
+    a/a_largeN-1=-2.36982E-8  ratio a/a_D=2.18312752066  c/a_D=2.18312752533
+MN2 GM (2.5) check: a_GM= 929714161355/24  a_amax-a_GM= 0  c_GM= 232428539119/6  c_amax-c_GM= 0
+MN2 symbolic: eps*=-1/3  a=(N - 1)*(8*N**2 + 8*N + 5)/24  c=(N - 1)*(2*N**2 + 2*N + 1)/6
+MN1 symbolic: eps*=0  a=3*(N - 1)*(3*N**2 + 3*N + 2)/32  c=(N - 1)*(9*N**2 + 9*N + 4)/32
+GM (2.5) a factor: (N - 1)*(8*N**2 + 8*N + 5)/24  c factor: (N - 1)*(2*N**2 + 2*N + 1)/6
+bound (2.23) 1/2<=a/c<=3/2 MN1(z=0): True
+bound (2.23) 1/2<=a/c<=3/2 MN2(z=1): True
+bound (2.23) 1/2<=a/c<=3/2 BBBW(z=2): True
+bound (2.23) 1/2<=a/c<=3/2 BBBW(z=3): True
+
+== 5. holographic normalization: a = (g-1) N^3 e^(3f0+2g0) J / pi^2, J = int Delta^-1/2 sqrt(h4) ==
+det h4 = -(X0*sin(alpha)**2 - X0 + X1*sin(alpha)**2*sin(beta)**2 - X1*sin(alpha)**2 - X2*sin(alpha)**2*sin(beta)**2)*sin(alpha)**6*sin(beta)**2*cos(beta)**2/(X0*X1**2*X2**2)
+MN1(z=0): J/(8pi^2/3)=1.0  a/N^3 holo=0.28125 vs (4.7) 0.281250000000000
+MN2(z=1): J/(8pi^2/3)=1.0  a/N^3 holo=0.333333333333333 vs (4.7) 0.333333333333333
+BBBW(z=2): J/(8pi^2/3)=1.0  a/N^3 holo=0.426417534276208 vs (4.7) 0.426417534276208
+BBBW(z=3): J/(8pi^2/3)=1.0  a/N^3 holo=0.528152947730595 vs (4.7) 0.528152947730595
+BBBW(z=-2) mirror: J/(8pi^2/3)=1.0  a/N^3 holo=0.426417534276208 vs (4.7) 0.426417534276208
+
+== 6. 11D curvature: Einstein check R^t_t = -R (G4 has no AdS5 legs) and Phi = G.G = 144 R ==
+symbolic Ricci built in 65s
+-- 6a. validation of the routine on exact cases (X1=X2=1, a1=a2=0: AdS5(radius^2 F0) x H2(radius^2 G0) x round S4(radius 1/2)) --
+VALID (D) KR product F0=2/3 G0=1/6 [exact R=6, must pass]: npts=48 (incl. alpha,beta within 1e-6 of 0,pi/2,pi)  max|R^t_t+R|=3.53e-25  max|R^r_r+R|=3.53e-25  (r,v)-indep=0.0  R in [6.0,6.0] (1/l^2)  max R_MN R^MN=828.0  [31s]  |R-6|max=3.53e-25
+VALID-NEG product F0=G0=1 [not a solution: R=26, R^t_t=-4, residual must be 22]: npts=48 (incl. alpha,beta within 1e-6 of 0,pi/2,pi)  max|R^t_t+R|=22.0  max|R^r_r+R|=22.0  (r,v)-indep=0.0  R in [26.0,26.0] (1/l^2)  max R_MN R^MN=658.0  [30s]  |R-26|max=3.53e-25
+-- 6b. candidates --
+MN1(z=0): npts=48 (incl. alpha,beta within 1e-6 of 0,pi/2,pi)  max|R^t_t+R|=4.28e-25  max|R^r_r+R|=4.28e-25  (r,v)-indep=1.12e-59  R in [4.402569665,6.999279321] (1/l^2)  max R_MN R^MN=1061.544699  [33s]
+    Phi=144R in [633.97003,1007.8962] /l^2 ; l_p^2 R_max=0.00283539  l_p^2 Phi_max=0.408297  l_p^2 sqrt(R_MN R^MN)_max=0.0131986  PASS(1e-10)=True
+    sizes (units l): L5=e^f0=0.79441788, H2 radius e^g0=0.45865738, ratio e^g0/e^f0=0.57735; S4 radius ~1/2 (x Delta^-1/3 warp)
+MN2(z=1): npts=48 (incl. alpha,beta within 1e-6 of 0,pi/2,pi)  max|R^t_t+R|=4.83e-25  max|R^r_r+R|=4.83e-25  (r,v)-indep=9.96e-60  R in [5.29133684,12.0] (1/l^2)  max R_MN R^MN=3312.0  [33s]
+    Phi=144R in [761.9525,1728.0] /l^2 ; l_p^2 R_max=0.00486118  l_p^2 Phi_max=0.70001  l_p^2 sqrt(R_MN R^MN)_max=0.0233134  PASS(1e-10)=True
+    sizes (units l): L5=e^f0=0.75785828, H2 radius e^g0=0.53588673, ratio e^g0/e^f0=0.707107; S4 radius ~1/2 (x Delta^-1/3 warp)
+BBBW(z=2): npts=48 (incl. alpha,beta within 1e-6 of 0,pi/2,pi)  max|R^t_t+R|=4.42e-25  max|R^r_r+R|=4.42e-25  (r,v)-indep=9.96e-60  R in [5.205860851,14.89732995] (1/l^2)  max R_MN R^MN=5086.047604  [34s]
+    Phi=144R in [749.64396,2145.2155] /l^2 ; l_p^2 R_max=0.00603488  l_p^2 Phi_max=0.869023  l_p^2 sqrt(R_MN R^MN)_max=0.0288902  PASS(1e-10)=True
+    sizes (units l): L5=e^f0=0.7307136, H2 radius e^g0=0.64019514, ratio e^g0/e^f0=0.876123; S4 radius ~1/2 (x Delta^-1/3 warp)
+BBBW(z=3): npts=48 (incl. alpha,beta within 1e-6 of 0,pi/2,pi)  max|R^t_t+R|=1.7e-25  max|R^r_r+R|=1.7e-25  (r,v)-indep=8.59e-59  R in [5.235636091,16.48102209] (1/l^2)  max R_MN R^MN=6203.918527  [33s]
+    Phi=144R in [753.9316,2373.2672] /l^2 ; l_p^2 R_max=0.00667643  l_p^2 Phi_max=0.961406  l_p^2 sqrt(R_MN R^MN)_max=0.0319075  PASS(1e-10)=True
+    sizes (units l): L5=e^f0=0.71653526, H2 radius e^g0=0.73373483, ratio e^g0/e^f0=1.024; S4 radius ~1/2 (x Delta^-1/3 warp)
+NEG-CONTROL z=2 with X1*1.1: npts=48 (incl. alpha,beta within 1e-6 of 0,pi/2,pi)  max|R^t_t+R|=1.36  max|R^r_r+R|=1.36  (r,v)-indep=6.22e-60  R in [4.071980812,11.99726234] (1/l^2)  max R_MN R^MN=3861.549791  [34s]
+    Phi=144R in [586.36524,1727.6058] /l^2 ; l_p^2 R_max=0.00486007  l_p^2 Phi_max=0.69985  l_p^2 sqrt(R_MN R^MN)_max=0.0251734  PASS(1e-10)=False
+
+(D) reference: R=4k^2, Phi=576k^2 with k = sqrt(3/8)(pi N)^(-1/3)/l_p
+   l_p^2 R_D = 0.00243059  l_p^2 Phi_D = 0.350005
+
+== 7. cross-check vs NL 418e4e50 (G5 ratios; a ~ L5^3/G5) ==
+a_D from NL C3: pi L5^3/(8 G5) = 0.24192492 N^3 ; MR2 (8/81)sqrt6 = 0.24192491
+MN2(z=1): L5=l e^f0=37.6537206 (NL 37.653721); G5=pi L5^3/(8a)=5.41185e-7 (NL 5.4118e-7); G5/G5_D=(L5/L5D)^3 a_D/a=0.58037 (NL 0.5804); a_D/a=0.725775
+    Area(Sigma)=l^2 e^(2g0) 4pi(g-1)=8908.3169 l_p^2
+MN1(z=0): L5=l e^f0=39.4701616 (NL 39.470162); G5=pi L5^3/(8a)=7.38779e-7 (NL 7.3878e-7); G5/G5_D=(L5/L5D)^3 a_D/a=0.79227 (NL 0.7923); a_D/a=0.860177
+    Area(Sigma)=l^2 e^(2g0) 4pi(g-1)=6525.6897 l_p^2
+BBBW(z=2): L5=l e^f0=36.3050537 (NL 36.305054); G5=pi L5^3/(8a)=3.79199e-7 (NL 3.7920e-7); G5/G5_D=(L5/L5D)^3 a_D/a=0.40665 (NL 0.4067); a_D/a=0.567343
+    Area(Sigma)=l^2 e^(2g0) 4pi(g-1)=12713.772 l_p^2
+BBBW(z=3): L5=l e^f0=35.6006119 (NL 35.600612); G5=pi L5^3/(8a)=2.88678e-7 (NL 2.8868e-7); G5/G5_D=(L5/L5D)^3 a_D/a=0.30958 (NL 0.3096); a_D/a=0.458058
+    Area(Sigma)=l^2 e^(2g0) 4pi(g-1)=16700.44 l_p^2
+
+DONE
+exit_code=0

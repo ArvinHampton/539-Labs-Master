@@ -1,0 +1,63 @@
+RUN_START_WALLCLOCK 2026-11-10 11:36:19 CST
+SCRIPT_SHA256 412f3527495e125fd6383e47e5cc8af104e75a754396793b689a37240366f345
+sympy 1.14.0
+
+== P2 own curvature for g = dy^2 + sum_a eta_a e^{2A_a(y)} dx_a^2, D=11 ==
+PASS P2.0 sample off-pattern Riemann components vanish (diagonal curvature operator)
+PASS P2.1 riem2 is exp-free polynomial in (p,q)
+PASS P2.1 ric2 is exp-free polynomial in (p,q)
+PASS P2.1 weyl2 is exp-free polynomial in (p,q)
+PASS P2.1 R is exp-free polynomial in (p,q)
+PASS P2.2 Riem^2 = 4 sum(A''+A'^2)^2 + 2 sum_{a!=b}(A'_aA'_b)^2  [MR2 A0]
+PASS P2.3 Riem^2 w^2-coeff = 4 tr k^2
+PASS P2.4 Ric^2 w^2-coeff = tr k^2 + (tr k)^2
+PASS P2.5 R^2 w^2-coeff = 4 (tr k)^2
+PASS P2.6 Weyl^2 (explicit Weyl tensor) w^2-coeff = (32/9)(tr k^2 - (tr k)^2/10)
+PASS P2.7 Gauss-Bonnet w^2-coeff = 0
+PASS P2.8 riem2 degree in w <= 2
+PASS P2.8 ric2 degree in w <= 2
+PASS P2.8 weyl2 degree in w <= 2
+PASS P2.9 own Weyl^2 = Riem^2 - (4/9)Ric^2 + (1/45)R^2 (D=11 identity, exact)
+
+== P2L parse MR2 log lines and compare ==
+PASS P2L.1 parsed log polynomials contain no Float
+PASS P2L.2 log Weyl^2 16(...)/45 == (32/9) tr k~^2 (Poly.is_zero)
+PASS P2L.3 log Weyl^2 polynomial == PP own Weyl^2 coefficient
+PASS P2L.4 log Ric^2 2(...) == tr k^2 + (tr k)^2
+PASS P2L.5 log Riem^2 == 4 tr k^2 ; log R^2 == 4 (tr k)^2 ; log GB == 0
+
+== P3D general-D algebra (GIVEN Riem^2,Ric^2,R^2 delta^2 coefficients 4t2, t2+t1^2, 4t1^2) ==
+PASS P3D.1 4t2 - 4/(D-2)(t2+t1^2) + 8/((D-1)(D-2)) t1^2 == 4(D-3)/(D-2)(t2 - t1^2/(D-1))  (numerator Poly zero)
+PASS P3D.2 D=4 value 2(t2-t1^2/3) [MR2 B4], D=11 value (32/9)(t2-t1^2/10) [MR2 A4]
+
+== P5 profile integrals (exact; s=y/eps, T=tanh s, ds sech^2 = dT) ==
+PASS P5.1 int sech^2 ds = 2, int sech^4 ds = 4/3 (Rational)
+PASS P5.2 int phi_eps = 1 and int phi_eps^2 = 1/(3 eps) exactly
+PASS P5.3 CS equality case (uniform on [-L eps, L eps]) gives exactly 1/(2 L eps)
+PASS P5.4 normalisation: c(k)*4/(3eps) with k=-[K]/2 equals c([K])/(3 eps) for homogeneous quadratic c
+
+== P7 Israel S = -(1/kappa^2)([K] - I tr[K]), n=10, generic mixed matrix ==
+PASS P7.1 [K]~ = -kappa^2 S~ (all 100 entries exact)
+PASS P7.2 tr[K] = (kappa^2/9) tr S
+PASS P7.3 tr([K]~^2) = kappa^4 tr(S~^2) (generic matrix)
+PASS P7.4 I+J (10x10) positive definite: leading minors 2..11 exact
+PASS P7.5 null stress M=sigma k^a k_b: M!=0, tr M = 0, tr M^2 = 0 => tr M^2+(tr M)^2 = 0 and tr M~^2 = 0 (P-Poinc/diagonalisability is load-bearing for strict positivity)
+
+== P8 alpha Riem^2 + beta Ric^2 + gamma R^2 delta^2-free ==
+PASS P8.1 t2=tr k^2 and t1^2=(tr k)^2 independent on 10D diagonal k: k=(1,-1,0..) gives (2,0), k=(1,0..) gives (1,1)
+PASS P8.2 solution set {(beta,gamma)=(-4alpha, alpha)}
+
+== P9 sum_{k=t+-e_i} |F(k,.)|^2 on R^{1,9}, 45 components ==
+PASS P9.1 form == 16 sum_j F_tj^2 + 4 sum_{i<j} F_ij^2 exactly (diagonal; 9 pivots 16, 36 pivots 4)
+PASS P9.2 component count 45 = 9 + 36
+PASS P9.3 F(k,.)_c k^c = 0 for null k=t+e1 (covector F(k,.) annihilates k, so it is spacelike or null)
+PASS P9.4 M5 term S(k,k) = tau for k = t + transverse unit (=> S(k,k)=0 forces tau=0)
+PASS P9.5 M5 term S(k,k) = 0 for k = t + worldvolume direction (needs transverse k, as MR2 states)
+
+== P11 instances ==
+PASS P11.1 MN2 k=(a^4,0^6): [16,20,128/15,0,64] a^2
+PASS P11.2 umbilic: Weyl^2 0, Riem^2 40a^2
+PASS P11.3 BPS 1:1:0: Weyl^2 delta^2-coeff (in [K] units) = (128/15) kappa^4 tau^2
+
+ALL_CHECKS PASS
+RUN_END_WALLCLOCK 2026-11-10 11:37:06 CST

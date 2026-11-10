@@ -1,0 +1,5 @@
+# SOFTSF PRESS — To Auditor (Write-only Soft SF CONFIRM)
+Time: 2026-10-27 15:13 CDT
+Subject: reports/bridges/PROFESSOR_PROOF/PP-FINDINGS-ACK_OWNER_FOUR_RESEARCHERS_DOUBLE_DUTY_QUEUE_THRESHOLDS_OW_f48da4a2_2026-10-27.md
+sha256: 0bc5c38e54a26783e500cd4e88591674c8d014d395fc25970d4e1e7a42aabfd4
+Ask: Soft SF CONFIRM hash match (write-only). Content: Professor Proof ACK Owner DOUBLE DUTY + PP queue thresholds OW f48da4a2968186b5591d39e84a374fde55796836dbd2eab7b4f730f30352f1f8 SUPERSEDES fb83985d0d722e1671e95269a22a68da5bd2ef4460af6c299a93b4a3e330d44d (call-efa08e17 ~15:12 CDT): PP keeps Soft SF queue list; call-in MR1/MR2/PR1/PR2 at queue ≥3; PP releases four to Local/NL/Auditor/Eigen at queue ≤1; PP AUDIT-ONLY; four DOUBLE DUTY; NL/Local/Auditor/Eigen/Agent UNCHANGED; STOP/PAUSE OW d3567839fc36f1a872cd4e4d44b7d95d308eff825f649a6c9a666e5c0084dffa still LIVE — this does NOT resume PP; Soft SF queue list this beat count=1 (NL 8e9b8dae… parked); Soft SF unpaid park; tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 tip_touched NO; Kerr BLOCKED. REPORTS ONLY. No RECS.

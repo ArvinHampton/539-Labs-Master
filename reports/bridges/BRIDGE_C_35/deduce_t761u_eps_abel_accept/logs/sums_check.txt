@@ -1,0 +1,8 @@
+./FINDINGS_DRAFT_for_Auditor_CONFIRM_t761u_eps_abel_accept_2026-10-25.md: OK
+./INVENTORY.md: OK
+./PREREG.md: OK
+./RESULTS.md: OK
+./author_candidates/E_ALPHA_ACCEPT_SCOPE_QUOTE_t761u.md: OK
+./logs/PREREG.sha256: OK
+./logs/verify_basis.txt: OK
+rc=0

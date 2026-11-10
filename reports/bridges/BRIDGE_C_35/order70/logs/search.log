@@ -1,0 +1,244 @@
+# order70 light delta re-sweep 2026-10-24T22:34:48-05:00
+## /rho_lab/
+./reports/DEEP_HUNT_WRITTEN_2026-10-24.md:2
+./reports/bridges/AUDITOR/FINDINGS_2026-10-24_order65_nl.md:1
+./reports/bridges/AUDITOR/FINDINGS_2026-10-24_order66.md:1
+./reports/bridges/BRIDGE_C_35/order65/RESULTS.md:1
+./reports/bridges/BRIDGE_C_35/order67/PREREG.md:1
+./reports/bridges/BRIDGE_C_35/order67/data/DEEP_HUNT_WRITTEN_2026-10-24.md:2
+## /P-even/
+./grok_export/unzipped/ttl/30d/export_data/fe3969ab-7793-4b80-8bd2-46f354c000f7/prod-grok-backend.json:1
+./reports/DEEP_HUNT_WRITTEN_2026-10-24.md:4
+./reports/bridges/AUDITOR/FINDINGS_2026-10-24_continue.md:1
+./reports/bridges/AUDITOR/FINDINGS_2026-10-24_priority.md:1
+./reports/bridges/BRIDGE_C_35/MAPS_CANDIDATES/BATCH2/PREREG.md:3
+./reports/bridges/BRIDGE_C_35/MAPS_CANDIDATES/BATCH2/RESULTS.md:1
+./reports/bridges/BRIDGE_C_35/MAPS_CANDIDATES/BATCH3_RTA_GEOM/PREREG.md:1
+./reports/bridges/BRIDGE_C_35/MAPS_CANDIDATES/BATCH4_RTA_GEOM/PREREG.md:3
+./reports/bridges/BRIDGE_C_35/MAPS_CANDIDATES/BATCH4_RTA_GEOM/RESULTS.md:2
+./reports/bridges/BRIDGE_C_35/MAPS_CANDIDATES/BATCH5_RTA_GEOM/NOTES.md:1
+./reports/bridges/BRIDGE_C_35/MAPS_CANDIDATES/BATCH6_RTA_GEOM/PREREG.md:1
+./reports/bridges/BRIDGE_C_35/MAPS_CANDIDATES/C11_GRADING_ACCEPT/PREREG.md:1
+./reports/bridges/BRIDGE_C_35/MAPS_CANDIDATES/C11_GRADING_ACCEPT/REPORT.md:2
+./reports/bridges/BRIDGE_C_35/MAPS_CANDIDATES/C11_GRADING_ACCEPT/RESULTS.md:1
+./reports/bridges/BRIDGE_C_35/MAPS_CANDIDATES/C3_RUN/RESULTS.md:1
+./reports/bridges/BRIDGE_C_35/ORDER64_BRIEF.md:1
+./reports/bridges/BRIDGE_C_35/REVIEW_PARALLEL/FINDINGS.md:3
+./reports/bridges/BRIDGE_C_35/REVIEW_PARALLEL/NOTES.md:1
+./reports/bridges/BRIDGE_C_35/REVIEW_PARALLEL/REPORT.md:4
+./reports/bridges/BRIDGE_C_35/order10/NOTES.md:1
+./reports/bridges/BRIDGE_C_35/order11/NOTES.md:8
+./reports/bridges/BRIDGE_C_35/order11/PREREG.md:6
+./reports/bridges/BRIDGE_C_35/order11/RESULTS.md:5
+./reports/bridges/BRIDGE_C_35/order12/NOTES.md:7
+./reports/bridges/BRIDGE_C_35/order12/PREREG.md:6
+./reports/bridges/BRIDGE_C_35/order12/RESULTS.md:7
+./reports/bridges/BRIDGE_C_35/order13/NOTES.md:7
+./reports/bridges/BRIDGE_C_35/order13/PREREG.md:5
+./reports/bridges/BRIDGE_C_35/order13/RESULTS.md:7
+./reports/bridges/BRIDGE_C_35/order14/MAP_RG1.md:1
+./reports/bridges/BRIDGE_C_35/order14/NOTES.md:6
+./reports/bridges/BRIDGE_C_35/order14/PREREG.md:4
+./reports/bridges/BRIDGE_C_35/order14/RESULTS.md:5
+./reports/bridges/BRIDGE_C_35/order14/scripts/e2int.py:1
+./reports/bridges/BRIDGE_C_35/order15/NOTES.md:3
+./reports/bridges/BRIDGE_C_35/order15/RESULTS.md:3
+./reports/bridges/BRIDGE_C_35/order16/NOTES.md:1
+./reports/bridges/BRIDGE_C_35/order16/PREREG.md:1
+./reports/bridges/BRIDGE_C_35/order17/PREREG.md:2
+./reports/bridges/BRIDGE_C_35/order18/PREREG.md:1
+## /Fix\(-P\)/
+## /weight[- ]0/
+./grok-chats/raw-neutrino/8b1d097f-0943-4c13-bd13-74a616fd3365.txt:1
+./grok_export/unzipped/ttl/30d/export_data/fe3969ab-7793-4b80-8bd2-46f354c000f7/prod-grok-backend.json:1
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Construct_Higher_Fidelity_Residual_Eichler_Integral_C_2026-08-25.md:2
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Continue_Research_Closure_Law_C_2026-08-24.md:2
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/PUSH_LOG_2026-08-24_Continue_Research_Closure_Law_C.md:1
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Residual_Slash_Identity_Construction_and_Identification_C_2026-08-25.md:2
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/U1_LEDGER_PATH2_OR_QM_Obstruction_Written_Data_2026-09-14.md:1
+./reports/DEEP_HUNT_WRITTEN_2026-10-24.md:2
+./reports/bridges/BRIDGE_C_35/MAPS_CANDIDATES/PATTERN_BNU_RR/NOTES.md:1
+./reports/bridges/BRIDGE_C_35/ORDER65_BRIEF.md:1
+./reports/bridges/BRIDGE_C_35/order10/NOTES.md:2
+./reports/bridges/BRIDGE_C_35/order10/PREREG.md:2
+./reports/bridges/BRIDGE_C_35/order10/RESULTS.md:2
+./reports/bridges/BRIDGE_C_35/order11/NOTES.md:1
+./reports/bridges/BRIDGE_C_35/order11/RESULTS.md:1
+./reports/bridges/BRIDGE_C_35/order12/PREREG.md:1
+./reports/bridges/BRIDGE_C_35/order13/NOTES.md:1
+./reports/bridges/BRIDGE_C_35/order13/PREREG.md:1
+./reports/bridges/BRIDGE_C_35/order13/RESULTS.md:1
+./reports/bridges/BRIDGE_C_35/order2/PREREG.md:1
+./reports/bridges/BRIDGE_C_35/order2/RESULTS.md:1
+./reports/bridges/BRIDGE_C_35/order3c/NOTES.md:1
+./reports/bridges/BRIDGE_C_35/order4b/PREREG.md:3
+./reports/bridges/BRIDGE_C_35/order4b/REPORT.md:2
+./reports/bridges/BRIDGE_C_35/order4b/RESULTS.md:2
+./reports/bridges/BRIDGE_C_35/order57/GATE_DECISIONS.md:1
+./reports/bridges/BRIDGE_C_35/order6/NOTES.md:1
+./reports/bridges/BRIDGE_C_35/order64/ORDER64_PREP_INVENTORY.md:1
+./reports/bridges/BRIDGE_C_35/order64/PREREG.md:1
+./reports/bridges/BRIDGE_C_35/order64/RESULTS.md:2
+./reports/bridges/BRIDGE_C_35/order67/PREREG.md:1
+./reports/bridges/BRIDGE_C_35/order67/data/DEEP_HUNT_WRITTEN_2026-10-24.md:2
+./reports/bridges/BRIDGE_C_35/order67/logs/search.log:1
+./reports/bridges/BRIDGE_C_35/order68/PREREG.md:1
+./reports/bridges/BRIDGE_C_35/order69/PREREG.md:1
+./reports/bridges/BRIDGE_C_35/order69/RESULTS.md:1
+./reports/bridges/BRIDGE_C_35/order7/NOTES.md:1
+./reports/bridges/BRIDGE_C_35/order7/PREREG.md:4
+./reports/bridges/BRIDGE_C_35/order7/REPORT.md:5
+./reports/bridges/BRIDGE_C_35/order7/RESULTS.md:5
+## /weight[- ]2.{0,40}(M-law|S-law|M law|S law)/
+## /(M-law|S-law).{0,40}weight[- ]?2/
+## /companion lattice/
+./reports/bridges/AUDITOR/FINDINGS_2026-10-24_order61.md:1
+./reports/bridges/BRIDGE_C_35/order12/NOTES.md:1
+./reports/bridges/BRIDGE_C_35/order12/RESULTS.md:1
+./reports/bridges/BRIDGE_C_35/order57/AUDIT_CORPUS.md:2
+./reports/bridges/BRIDGE_C_35/order58/PREREG.md:2
+./reports/bridges/BRIDGE_C_35/order58/scripts/rg48.py:1
+./reports/bridges/BRIDGE_C_35/order61/RESULTS.md:1
+./reports/bridges/BRIDGE_C_35/order62/RESULTS.md:2
+./reports/bridges/BRIDGE_C_35/order64/logs/search.log:2
+## /indefinite theta/
+./grok-chats/raw-neutrino/8b1d097f-0943-4c13-bd13-74a616fd3365.txt:1
+./grok_export/unzipped/ttl/30d/export_data/fe3969ab-7793-4b80-8bd2-46f354c000f7/prod-grok-backend.json:1
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Bilateralisation_Complete_Status_2026-08-20.md:2
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Continue_Closure_Residual_Period_C_2026-08-23.md:1
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Explore_Fricke_Polynomial_Identities_Residual_C_2026-08-24.md:1
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Open_Path_Closures_Residue_Support_s8_s11_and_MultiIndex_2026-08-22.md:1
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/PUSH_LOG_2026-08-23_False_Theta_Construction_Attempt.md:1
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Ramanujan_Explain_Operators_2026-08-31.md:1
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Residual_Bridge_Series_C_Definition.md:1
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Residual_False_Theta_Construction_Attempt_C_2026-08-23.md:2
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Residual_Modular_Connection_RJ_2026-08-22.md:1
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Residual_Packaging_and_Series_Manuscript_FINAL_2026-08-20.txt:1
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Residual_Period_Candidate_C_2026-08-23.md:1
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Residual_Ternary_Algebra_Full_Manuscript_Draft_2026-08-24.md:1
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Residual_Transformation_Law_Theorem_2026-08-22.md:1
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Series_g_s_Locked_Material_2026-08-22.md:1
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/U1_GS_TL_AUDIT_25ed7ea_Not_Theorem_2026-08-22.md:1
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/U1_GS_ZWEGERS_Mixed_Scale_Not_Congruence_2026-08-21.md:1
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/U1_LEDGER_P_TL_No_Classical_Realisation_g7_C_2026-09-01.md:3
+./reports/bridges/AUDITOR/AUDIT_STATUS.md:1
+./reports/bridges/AUDITOR/FINDINGS_2026-10-24_order65_nl.md:1
+./reports/bridges/BRIDGE_C_35/MAPS_CANDIDATES/PATTERN_SIGNED_RR/NOTES.md:1
+./reports/bridges/BRIDGE_C_35/ORDER65_BRIEF.md:1
+./reports/bridges/BRIDGE_C_35/ORDER66_BRIEF.md:1
+./reports/bridges/BRIDGE_C_35/order4a/PREREG.md:1
+./reports/bridges/BRIDGE_C_35/order5/scripts/zwegers.py:1
+./reports/bridges/BRIDGE_C_35/order57/AUDIT_CORPUS.md:1
+./reports/bridges/BRIDGE_C_35/order64/ORDER64_PREP_INVENTORY.md:2
+./reports/bridges/BRIDGE_C_35/order64/RESULTS.md:3
+./reports/bridges/BRIDGE_C_35/order64/logs/search.log:4
+./reports/bridges/BRIDGE_C_35/order65/PREREG.md:1
+./reports/bridges/BRIDGE_C_35/order65/RESULTS.md:3
+./reports/bridges/BRIDGE_C_35/order67/RESULTS.md:1
+./reports/crypto/RPP_spec_v1/scripts/chats/0306d76a-a7d7-4491-8a32-ab2e1544a062.txt:3
+./reports/crypto/RPP_spec_v1/scripts/chats/057303c9-ab90-4111-92da-9bc5ce4f9361.txt:3
+./reports/crypto/RPP_spec_v1/scripts/chats/615919d3-04b9-4887-a90f-44d03138f54b.txt:1
+./reports/crypto/RPP_spec_v1/scripts/chats/a1faa2a6-2005-4bdc-a20f-ba0ecc7217e8.txt:1
+./reports/crypto/RPP_spec_v1/scripts/chats/c7fa7ae8-4e69-4150-a11d-c9a639bb4e88.txt:15
+./reports/heavy-daily/2026-10-17-Bridge-C-Residual-Law.md:1
+./reports/heavy-daily/2026-10-17-Levers-1-2-Hecke-g7-Cthird.md:2
+## /ϑ\^c.{0,60}(ρlab|rho_lab|ρ_lab)|(ρlab|rho_lab|ρ_lab).{0,60}ϑ\^c/
+./reports/DEEP_HUNT_WRITTEN_2026-10-24.md:1
+./reports/bridges/BRIDGE_C_35/order66/PREREG.md:1
+./reports/bridges/BRIDGE_C_35/order67/data/DEEP_HUNT_WRITTEN_2026-10-24.md:1
+./reports/bridges/BRIDGE_C_35/order67/logs/search.log:1
+./reports/bridges/BRIDGE_C_35/order69/RESULTS.md:1
+## /\\hat\{P\}/
+./grok_export/unzipped/ttl/30d/export_data/fe3969ab-7793-4b80-8bd2-46f354c000f7/prod-grok-backend.json:1
+./reports/crypto/RPP_spec_v1/scripts/chats/21ecbd40-9b30-4c28-b119-55c29a0efd99.txt:7
+./reports/crypto/RPP_spec_v1/scripts/chats/31f59f6f-3977-4c28-81a7-e596c8dbc370.txt:1
+./reports/crypto/RPP_spec_v1/scripts/chats/6a433805-2851-430b-b1e3-8619e398d761.txt:19
+./reports/crypto/RPP_spec_v1/scripts/chats/c3c76d9f-ab22-4de1-ad22-40cd6e4176f8.txt:3
+./reports/s_family_paths/A22_grok_export_search/chats/15540fac-86a5-49c5-947d-0146c79b940b.txt:3
+./reports/s_family_paths/A22_grok_export_search/chats/492b67c8-652b-43d9-8f73-78c61f1bfd5b.txt:7
+./reports/s_family_paths/A22_grok_export_search/chats/4cbf2820-1e76-4394-ab4b-760ec23df808.txt:6
+./reports/s_family_paths/A22_grok_export_search/chats/8555e4f4-e74c-4a53-be91-1f4842e02066.txt:1
+./reports/s_family_paths/A22_grok_export_search/chats/e1b65f56-4a9a-41c3-afb1-68adab49a311.txt:6
+./reports/s_family_paths/A22_grok_export_search/core_hits.json:2
+./reports/s_family_paths/A30_540_thermo/thermo_hits.json:4
+## /P\^\{?orth/
+## /orthant projector/
+./grok_export/unzipped/ttl/30d/export_data/fe3969ab-7793-4b80-8bd2-46f354c000f7/prod-grok-backend.json:1
+./reports/s_family_paths/A22_grok_export_search/chats/0817c866-e179-41d6-b61d-305f25e814aa.txt:10
+## unreadables
+./reports/crypto/PRESENTATION_SUPPORT/LQH_SEARCH_ALL/raw/drive/dl/1ld6P9ct_128LQH_Software_and_FPGA_Execution_paper_Untitled.docx
+./reports/crypto/PRESENTATION_SUPPORT/LQH_SEARCH_ALL/raw/drive/dl/1CyCn5Ag_Native_Hardware_Resonant_Ternary_Map_Photonic_Qutrit.docx
+./reports/crypto/PRESENTATION_SUPPORT/LQH_SEARCH_ALL/raw/drive/dl/IACR_ePrint_HQH539512_Residual_Ternary_Algebra_2026-09-07.docx
+./reports/crypto/PRESENTATION_SUPPORT/LQH_SEARCH_ALL/raw/drive/dl/1kf-ueAo_539_Labs_Main_Definition_software_and_hardware.docx
+./reports/crypto/PRESENTATION_SUPPORT/LQH_SEARCH_ALL/raw/drive/dl/1IXL_RMM_Extremely_Sensitive_539_Labs_Proprietary_Comms.docx
+./reports/crypto/PRESENTATION_SUPPORT/LQH_SEARCH_ALL/raw/drive/dl/1SmI_0wU_NIST_APPLICATION.docx
+./reports/crypto/PRESENTATION_SUPPORT/LQH_SEARCH_ALL/raw/drive/dl/1vhF897f_Verilog_Pipeline_Stub_539-stage.docx
+./reports/crypto/PRESENTATION_SUPPORT/LQH_SEARCH_ALL/raw/drive/dl/1sMJ7dz9_hash1_doc.docx
+./reports/crypto/PRESENTATION_SUPPORT/LQH_SEARCH_ALL/raw/drive/dl/1DS4eGKD_Photon_data_transfer_HQH-529-512_128LQH.docx
+./reports/crypto/PRESENTATION_SUPPORT/LQH_SEARCH_ALL/raw/drive/dl/1NxH5xf4_128-Logical-Qutrit_Hampton_Processor_Jan.docx
+./reports/crypto/PRESENTATION_SUPPORT/LQH_SEARCH_ALL/raw/drive/dl/1Yhw6JOc_128_Logical_Qutrit_Hampton_Processor.docx
+./reports/crypto/PRESENTATION_SUPPORT/LQH_SEARCH_ALL/raw/drive/dl/10-TIRxVQ_Untitled_2026-06-17.docx
+./reports/crypto/PRESENTATION_SUPPORT/LQH_SEARCH_ALL/raw/drive/dl/1bibjtHe_Architecture_of_the_128-L-Q-H_Processor.docx
+./reports/crypto/PRESENTATION_SUPPORT/LQH_SEARCH_ALL/raw/drive/dl/1Y35QtVj_Full_Expanded_Investor_Pitch_18min.docx
+./reports/crypto/PRESENTATION_SUPPORT/LQH_SEARCH_ALL/raw/drive/dl/1h_wxKrl_HQH-539_Hampton_Qutrit_Hash_539_Steps.docx
+./reports/crypto/PRESENTATION_SUPPORT/LQH_SEARCH_ALL/raw/drive/dl/12Tj7C2A_HQH-539-512_Fixed-Round_Ternary_Walk.docx
+./reports/crypto/PRESENTATION_SUPPORT/LQH_SEARCH_ALL/raw/drive/dl/1vu18Fgs_PROVISIONAL_APPLICATION_FOR_PATENT_COVER_SHEET.docx
+./reports/crypto/PRESENTATION_SUPPORT/LQH_SEARCH_ALL/raw/drive/dl/1z8qoRXk_128_LQH_Processor_Patent_Specification_w_images.docx
+./reports/crypto/PRESENTATION_SUPPORT/LQH_SEARCH_ALL/raw/drive/dl/19RXjTQa_128-Logical-Qutrit_Hampton_Processor.docx
+./reports/crypto/PRESENTATION_SUPPORT/LQH_SEARCH_ALL/raw/drive/dl/15jX0LZ4_objective_review_of_539_Labs_claims.docx
+./reports/crypto/PRESENTATION_SUPPORT/LQH_SEARCH_ALL/raw/drive/dl/1zA7jsD1_Expanded_Verilog_Skeleton_Single_Logical_Qutrit_Core.docx
+./reports/crypto/PRESENTATION_SUPPORT/LQH_SEARCH_ALL/raw/drive/dl/1ekzGQnA_Highly_sensitive_128LQH_Next_Deliverables.docx
+./reports/crypto/PRESENTATION_SUPPORT/LQH_SEARCH_ALL/raw/drive/dl/185RSn0m_HQH-539_and_the_Resonant_Path_Problem.docx
+## context: orthant projector
+tification would require extracting the Fourier coefficients of the completed form by a method that does not invoke the orthant projector — for example, numerical evaluation of the full non-holomorphic series (including the complementary error-function corrections) followed by isolation of the ho
+holomorphic series numerically and isolates the holomorphic coefficients by an independent method (without invoking the orthant projector) has not been performed. The coefficients above are obtained by direct enumeration of the orthant sum, which is the holomorphic projection by the classical con
+s the full non-holomorphic series numerically and isolates coefficients by discrete Fourier transform without using the orthant projector has not been performed. The coefficients above are the holomorphic Fourier coefficients under the classical construction itself.
+s the full non-holomorphic series numerically and isolates coefficients by discrete Fourier transform without using the orthant projector has not been performed. 
+## context: weight-0 oct17-master
+oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Construct_Higher_Fidelity_Residual_Eichler_Integral_C_2026-08-25.md:e residual non-constant residual differences under residual discrete probes. The residual numerical weight-0 correction that recovers residual sample magnitudes to residual machine precision remains in the residual continuous span of the residual p
+oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Construct_Higher_Fidelity_Residual_Eichler_Integral_C_2026-08-25.md:dual periods (residual numerical reconstruction error previously of order 10^{-11} for the residual weight-0 correction).
+oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/PUSH_LOG_2026-08-24_Continue_Research_Closure_Law_C.md:- Numerical weight-0 correction recovers sample magnitudes of C to machine precision and lies in the continuous span of proxies for the locked periods of C_axis
+oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Residual_Slash_Identity_Construction_and_Identification_C_2026-08-25.md:3. Residual continuous weight-0 correction recovered from residual periods
+oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Residual_Slash_Identity_Construction_and_Identification_C_2026-08-25.md:sidual modular completion of Theta_third + residual higher-fidelity Eichler of Xi onto the residual weight-0 residual correction space that absorbs residual non-uniformity of residual ratios to residual |7x|^(-1/2).
+oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/U1_LEDGER_PATH2_OR_QM_Obstruction_Written_Data_2026-09-14.md:Fundamental unit epsilon = 6 + sqrt(35) sends every third-quadrant lattice point to sign-weight 0. Affine difference 2 is not preserved. No exterior-surviving unit-orbit family exists.
+oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Continue_Research_Closure_Law_C_2026-08-24.md:Elementary classical modular transformation laws (pure weight-0 or weight-1/2 functional equations under packaging-type Fricke W_{7}) fail on the sample set and its images. The orthant support of C is no
+oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Continue_Research_Closure_Law_C_2026-08-24.md:le candidates produce non-constant differences. The ratio of the continuous period to the numerical weight-0 correction that recovers the sample magnitudes remains highly non-uniform. The explicit continuous cocycle that recovers the sample magnitu
+## context: \hat{P} s_family chats (P_orth/projector?)
+reports/s_family_paths/A22_grok_export_search/chats/4cbf2820-1e76-4394-ab4b-760ec23df808.txt:   with projector \(\hat{P}_{\text{res}}\) selecting non-leaking modes (n ≡ 0 mod 3 from HQCC). τ_ent = 233
+reports/s_family_paths/A22_grok_export_search/chats/4cbf2820-1e76-4394-ab4b-760ec23df808.txt:Q(t) is the expectation of residual projector \(\hat{P}_{\text{res}}\) (selects non-leaking modes n ≡ 0 mod 3 from HQCC qutrit map):
+reports/crypto/RPP_spec_v1/scripts/chats/6a433805-2851-430b-b1e3-8619e398d761.txt: observable and obtain outcome corresponding to projector \(\hat{P}_m\), the state collapses according to  
+reports/crypto/RPP_spec_v1/scripts/chats/6a433805-2851-430b-b1e3-8619e398d761.txt:Because \(\hat{P}_m^2 = \hat{P}_m\), once the state has been projected, applying the same projector again does 
+reports/crypto/RPP_spec_v1/scripts/chats/6a433805-2851-430b-b1e3-8619e398d761.txt:urements**: A complete set of projectors satisfies \(\sum_m \hat{P}_m = \hat{I}\).  
+reports/crypto/RPP_spec_v1/scripts/chats/6a433805-2851-430b-b1e3-8619e398d761.txt:onality**: Different outcomes have orthogonal projectors: \(\hat{P}_m \hat{P}_n = 0\) for \(m \neq n\).  
+## docx text-extract (Bridge-C-looking: Residual_Ternary_Algebra)
+1ld6P9ct_128LQH_Software_and_FPGA_Execution_paper_Untitled.docx 14206 []
+1CyCn5Ag_Native_Hardware_Resonant_Ternary_Map_Photonic_Qutrit.docx 4805 []
+IACR_ePrint_HQH539512_Residual_Ternary_Algebra_2026-09-07.docx 49133 ['orthant']
+1kf-ueAo_539_Labs_Main_Definition_software_and_hardware.docx 38263 ['Δ']
+1IXL_RMM_Extremely_Sensitive_539_Labs_Proprietary_Comms.docx 9835 []
+1SmI_0wU_NIST_APPLICATION.docx 50280 []
+1vhF897f_Verilog_Pipeline_Stub_539-stage.docx 4685 []
+1sMJ7dz9_hash1_doc.docx 107182 []
+1DS4eGKD_Photon_data_transfer_HQH-529-512_128LQH.docx 3436 []
+1NxH5xf4_128-Logical-Qutrit_Hampton_Processor_Jan.docx 4568 ['Δ']
+1Yhw6JOc_128_Logical_Qutrit_Hampton_Processor.docx 7915 []
+10-TIRxVQ_Untitled_2026-06-17.docx 8597 []
+1bibjtHe_Architecture_of_the_128-L-Q-H_Processor.docx 52518 []
+1Y35QtVj_Full_Expanded_Investor_Pitch_18min.docx 2854 []
+1h_wxKrl_HQH-539_Hampton_Qutrit_Hash_539_Steps.docx 6444 []
+12Tj7C2A_HQH-539-512_Fixed-Round_Ternary_Walk.docx 46663 []
+1vu18Fgs_PROVISIONAL_APPLICATION_FOR_PATENT_COVER_SHEET.docx 899 []
+1z8qoRXk_128_LQH_Processor_Patent_Specification_w_images.docx 6235 []
+19RXjTQa_128-Logical-Qutrit_Hampton_Processor.docx 3701 ['Δ']
+15jX0LZ4_objective_review_of_539_Labs_claims.docx 50990 []
+1zA7jsD1_Expanded_Verilog_Skeleton_Single_Logical_Qutrit_Core.docx 7240 []
+1ekzGQnA_Highly_sensitive_128LQH_Next_Deliverables.docx 12429 ['Δ']
+185RSn0m_HQH-539_and_the_Resonant_Path_Problem.docx 9987 []
+IACR_ePrint_HQH539512_Residual_Ternary_Algebra_2026-09-07.pdf
+IACR_ePrint_HQH539512_Residual_Ternary_Algebra_2026-09-07.txt
+dl
+## IACR docx 'orthant' context
+   .1. On the indefinite lattice M of signature (1, 1) with bilinear form given by the matrix with rows (2, s) and (s, s), define Bridge Series C as the orthant-versus-cone mismatch C = Porth - Hs. Definition 7.2. The axis contribution is Caxis = 3/2 + sum
+    Proposition 7.3. Caxis is the contribution of the origin together with the pure square and 7-triangular lattice points under the orthant support of C. Definition 7.4. The natural characteristic is chinat(s) = (s/(2(s-2)), -1/(s-2)).
+   ice with one positive direction and one negative direction, lattice points can be counted in two ways. One count uses a coordinate quarter, called an orthant. The other count uses a cone cut by a pair of slopes. Their difference is Bridge Series C. S6.1
+## Delta in 539 docx = hardware/timing context (non-Bridge-C); not quoted

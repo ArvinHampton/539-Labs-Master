@@ -1,0 +1,242 @@
+                                                  PSEUDOPERIODICITY AND THE 3x + 1 CONJUGACY FUNCTION
+
+                                                                                        JONATHAN YAZINSKI
+arXiv:1102.5547v1 [math.NT] 27 Feb 2011
+
+
+
+
+                                                   Abstract. The 3x+1 function T : N → N is defined by T (x) = 3x+1     2
+                                                                                                                            for x odd and T (x) = x2 for
+                                                   x even. The function T has a natural extension to the 2-adic integers Z2 and there is a continuous
+                                                   function Φ which conjugates T to the 2-adic shift map σ. Bernstein and Lagarias conjectured that
+                                                   −1 and 13 are the only odd fixed points of Φ. In this paper we investigate periodicity associated
+                                                   with Φ, a property of the map which is a natural extention of solenoidality. We use it to show
+                                                   that there are nontrivial infinite families of 2-adics that are not fixed points of Φ. In particular,
+                                                   we prove that three sequences of farPoints of 2-adics are finitely pseudoperiodic, providing more
+                                                   evidence supporting the Φ Fixed Point Conjecture.
+
+
+
+
+                                                                                          1. Introduction
+                                                                                                                          ∞
+                                                                                                                          P
+                                             Let Z2 denote the ring of 2-adic integers. If x ∈ Z2 with x =                      di 2i with di ∈ {0, 1}, we write
+                                                                                                                          i=0
+                                          x = d0 d1 d2 · · · . Define the 3x + 1 function T : Z2 → Z2 as follows.
+                                                                                        (
+                                                                                            3x+1
+                                                                                              2   if x is odd
+                                                                                T (x) =     x
+                                                                                            2     if x is even
+
+                                          The famous 3x + 1 conjecture states that for every x ∈ N+ there is some k ∈ N+ such that the
+                                          k-th iterate T k (x) = 1, i.e. the conjecture asserts that the T -orbit of every positive integer will
+                                          eventually enter the cycle {1, 2}. Define the 2-adic shift map σ : Z2 → Z2 by
+                                                                                      (
+                                                                                         x−1
+                                                                                           2   if x is odd
+                                                                              σ (x) =    x
+                                                                                         2     if x is even
+
+                                          so that σ (d0 d1 · · · ) = d1 d2 · · · . Hence σ just removes the first digit of a 2-adic integer1. There is a
+                                          continuous bijective map Φ : Z2 → Z2 such that the following diagram commutes:
+                                                                                                    σ
+                                                                                          Z2      −→        Z2
+                                          (1.1)                                           Φ↓                Φ↓
+                                                                                                    T
+                                                                                           Z2     −→         Z2
+                                          so that Φ ◦ σ = T ◦ Φ [L]. The map Φ is solenoidal, that is, x ≡n y ⇒ Φ (x) ≡n Φ (y) [BL] (where ≡n
+                                                                                                                      2                2                     2
+                                          denotes congruence mod 2n ). In fact, Φ induces permutations on Z2n Z.
+                                             An explicit formula
+                                                             P for Φ was discovered by Bernstein [B], but a convenient one is not known for
+                                          its inverse. If x = 2di , with 0 ≤ d0 < d1 < · · · , then
+                                                                 i
+                                                                                                        X
+                                          (1.2)                                          Φ (x) = −          2di 3−i
+                                                                                                        i
+
+
+                                             1σ is called S in [BL]
+
+                                                                                                    1
+2                                            JONATHAN YAZINSKI
+
+
+It follows from the conjugacy in (1.1) that the inverse map is given by
+                                                  ∞
+                                                  X                   
+                                      Φ−1 (x) =         T i (x) M od 2 2i
+                                                  i=0
+
+and we say that Φ maps a 2-adic to its parity vector 2.
+                     −1
+
+   Many of the interesting properties of the 3x + 1 conjugacy function do not lead to an apparent
+solution to the 3x + 1 problem [BL]. The map Φ seems to inherit much of the problematic nature
+of T, and the authors of [BL] have proposed the seemingly equally intractable
+
+    Φ Fixed Point Conjecture: The only odd fixed points of Φ are −1 and 31 .
+                                  
+   From (1.2), we see that Φ 2k x = 2k Φ (x) so that every even fixed point of Φ is either 0 or
+2k x, where x is an odd fixed point. There is another more general conjecture proposed in [BL]
+stating that for any given 2-power, Φ will have finitely many odd periodic points whose period is
+that 2-power.
+
+
+                                              2. Main Results
+   We now provide evidence supporting the Φ Fixed Point Conjecture by demonstrating a periodicity
+associated with Φ and a related property which we will call pseudoperiodicity. Solenoidality allows
+us to study the action of Φ on the first k digits of a 2-adic; however, periodicity will allow us to
+look at beginning of the infinite “tail” end. First, we define what it means for a sequence to be
+pseudoperiodic.
+Definition 2.1. Let X be a set, and let {an } be a sequence (where a : N → X). For all n ∈ N we
+say that the n-th term an is pseudoperiodic if
+                                         ∃m ∈ N ∀r∈ N+ an+mr = an
+We say that the sequence {an } is pseudoperiodic if all of its terms are pseudoperiodic.
+    We will also say that the sequence {an }n≥k is pseudoperiodic if we replace “For all n ∈ N” in the
+above definition with “For all n ≥ k”. It will be convenient in some applications to take X ∪ {∞} ,
+where X ⊆ R to be the codomain of a and say that in this case {an } is finitely pseudoperiodic
+when all terms an 6= ∞ are pseudoperiodic.
+    Hence a sequence is pseudoperiodic if for every term in the sequence, there is some period m with
+which that term will repeat in the sequence. For example, every periodic sequence is pseudoperiodic.
+For a somewhat less trivial example, consider b : N → N, where bn is defined to be the smallest
+positive prime dividing n + 2. The pseudoperiodicity of this sequence is reminiscent of the sieve of
+Eratosthenes.
+    Because Φ is solenoidal, “the action of Φ on the first k digits of a 2-adic” is well defined. That
+is, the first k digits of Φ (x) are completely determined by the first k digits of x. Therefore we can
+classify non-fixed points by their congruence class mod 2k . In fact, we will say that x is a fixed
+point of Φ mod 2k when Φ (x) ≡ x. Consequently, whenever x is a fixed point mod 2k , we can ask
+                                    2k
+how many more digits r are needed so that there is no fixed point mod 2k+r having the same first
+k digits as x. This motivates the following definition.
+
+   2As given in [BL], the formula for Φ−1 (x) uses mod instead of M od, but throughout the course of this paper we
+will keep the convention that for z ∈ Z2 and k ∈ N, z M od 2k will be the least m ∈ N such that m ≡ z.
+                                                                                                2k
+                         PSEUDOPERIODICITY AND THE 3x + 1 CONJUGACY FUNCTION                                   3
+
+
+Definition 2.2. For k ∈ N and x ∈ N ⊆ Z2 with x < 2k , define
+                                                                        
+                    fP (x, k) = min r ∈ N | ∀z ∈ Z2 , z ≡ x ⇒ Φ (z) 6≡ z
+                                                                        2k              2k+r
+when the minimum exists, and ∞ otherwise.
+   That is, fP (x, k) is the smallest number of digits r needed so that no 2-adic agreeing with x on
+the first k digits will be a fixed point of Φ mod 2k+r . We call fP (x, k) the farPoint of x on the
+first k digits.
+Example 2.3. If Φ (x) 6≡ x then fP (x, k) = 0. The converse is also true.
+                                2k
+
+Example 2.4. fP (0, k) = ∞ for any k, since Φ (0) = 0.
+Example 2.5. Since Φ (1) ≡2 1 and Φ (1) ≡3 5 we have that fP (1, 2) = 1.
+                                     2               2
+
+   For x ∈ Z2 , denote Lk (x) = x M od 2 and Rk (x) = σ k (x) . Lk (x) and Rk (x) will be called
+                                                     k
+
+the ( k-)left and (k-)right parts of x, respectively. Thus, if x =   d0 d1 · · · dk−1 dk· · · , then Lk (x) =
+d0 d1 · · · dk−1 and Rk (x) = dk dk+1 · · · . So, for example, L3 31 = 3 and R3 13 = − 31 , since 13 =
+1101010 · · · and − 31 = 101010 · · · . With these definitions we are able to state our first result.
+Theorem 2.6. Fix H ≥ 3 and q ∈ Q∩Z2 . Then the sequence {LH Rn ΦLn (q)} is eventually periodic.
+   We call the property of Φ exhibited in this theorem the periodicity of Φ. We can use this property
+to make progress on the Fixed Point Conjecture by showing that certain sequences of farPoints are
+pseudoperiodic.
+Theorem 2.7. The sequence {fP (2n − 1, n + 1)} is finitely pseudoperiodic.
+   If the Φ Fixed Point Conjecture is true, then all terms in the above
+                                                                      sequence will be finite (and
+hence pseudoperiodic) except for when n = 0, 2. Any odd x ∈ Z2 − 13 , −1 that is a fixed point of
+Φ will agree with either −1 or 13 on a finite number of digits. Direct calculation shows that such a
+fixed point x must agree with one of these fixed points on at least its first 100 digits. Theorem 2.7
+corresponds to those potential fixed points whose initial segments agree with −1 on a finite number
+of digits. We have an analogous theorem for 31 :
+                                        n
+                                                                          n
+                                                                                                       
+                                          P                                  P
+Theorem 2.8. The sequences fP 1 +            22i+1 , 2n + 4    and fP 1 +       22i+1 + 22n+2 , 2n + 3
+                                                  i=0                                          i=0
+are finitely psuedoperiodic.
+                      ∞
+                      P
+   Note that 13 = 1+ 22i+1 . Knowing that a particular value of farPoint is finite in any of the three
+                          i=0
+sequences in Theorems 2.7 and 2.8 yields an infinite family of non-fixed points of Φ. In particular,
+the above theorems imply
+                                                                        n ones                       n ones
+                                                                 z }| {                        z }| {
+Corollary 2.9. If there are no fixed points of the form 11 · · · 1 0 · · · (respectively, 11 010 · · · 10 0 · · ·
+       n ones
+      z }| {
+or 11 010 · · · 1 1 · · · ), then there will be some h such that for every r ∈ N, there will be no fixed point
+                n+rh ones                            n+rh ones               n+rh ones
+            z }| {                                 z }| {                    z }| {
+of the form 1111 · · · 1 0 · · · (respectively, 11 010 · · · 100 · · · or 11 010 · · · 11 · · · ).
+   Interestingly, the h in Corollary 2.9 turns out to be a 2 power in every case. Some values of
+farPoint are listed in Table 1, from which we obtain an immediate example of the pseudoperiodicity
+from Theorem 2.7.
+4                                           JONATHAN YAZINSKI
+
+
+    n   fPn    n    fPn     n     fPn      n     fPn          n   fPn      n   fPn        n   fPn   n    fPn
+    1   1      10     5   19    1      28   6      37   1      46    7     55     1                 64   45
+    2   ∞      11     1   20    8      29   1      38 11       47    1     56 37                    65   1
+    3   1      12    18   21    1      30 12       39   1      48 13       57     1                 66   10
+    4   7      13     1   22    6      31   1      40 10       49    1     58     5                 67   1
+    5   1      14    11   23    1      32 62       41   1      50    8     59     1                 68   7
+    6   10     15     1   24 11        33   1      42   5      51    1     60     6                 69   1
+    7   1      16    83   25    1      34 13       43   1      52    9     61     1                 70   12
+    8   29     17     1   26    5      35   1      44 10       53    1     62 13                    71   1
+    9   1      18    75   27    1      36 15       45   1      54    6     63     1                 72   9
+                                                  n
+                    Table 1. Values of fPn = fP (2 − 1, n + 1) for n from 1 to 72
+
+
+
+Example 2.10. We see that we can have no Φ fixed point of the form 1110 · · · from Table 1, and
+in this case we have that the h in Corollary 2.9 will be equal to 2. So there will be no fixed points of
+                                                        1+2r ones
+                                                       z }| {
+the form 111110 · · · , 11111110 · · · , or in general 1111 · · · 1 0 · · · for any r ∈ N, so that there is no
+fixed point of Φ whose digit expansion will have an odd number of ones followed by a zero.
+   We will see why h = 2 is the period of this value of farPoint in the proof of Theorem 2.7 in
+the next section. Continuing the table further
+                                                 would illustrate the pseudoperiodicity of all of these
+farPoints. For example, fP 210 − 1, 11 is pseudoperiodic with period h = 25−1 = 16, as seen by
+the farPoint value of 5 for n = 10, 26, 42, 58 in the above table.
+
+                           3. Pseudohomomorphism and Φ Periodicity
+   Here we discuss some general properties of Φ that will be used in the proofs of our main results.
+                                         ∞
+                                         P
+If x ∈ N ⊆ Z2 , then we define α (x) =      di where x = d0 d1 · · · . The following theorem shows
+                                                i=0
+that, with sufficient restrictions, Φ acts on the right and left parts of a 2-adic nearly as an additive
+homomorphism.
+Theorem 3.1. Let x ∈ Z2 , k ∈ N and a ∈ N with a < 2k . Denote m = α (a) . Then
+                                                           Φ (x)
+                                        Φ a + 2k x = Φ (a) + m 2k
+                                                             3
+Proof. If a = 2d0 + 2d1 + · · · + 2dm−1 and x = 2dm + 2dm+1 + · · · , with 0 ≤ d0 < d1 < · · · < dm−1
+and 0 ≤ dm < dm+1 < · · · , then by (1.2),
+                                           m−1          ∞
+                                                                             !
+                                           X          X
+                                  k             di −i       di+m +k −(i+m)
+                       Φ a+2 x =−              2 3 +      2          3
+                                                 i=0              i=0
+                                              m−1                        ∞
+                                                                                      !
+                                                                  k
+                                              X
+                                                      di −i     2        X
+                                         =−          2 3      + m       − 2di+m 3−i
+                                               i=0
+                                                               3         i=0
+                                                         2k
+                                         = Φ (a) + Φ (x) m
+                                                        3
+                                                                                                               
+

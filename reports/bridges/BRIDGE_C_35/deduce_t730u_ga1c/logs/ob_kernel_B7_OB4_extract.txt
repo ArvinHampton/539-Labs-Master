@@ -1,0 +1,3 @@
+86:Necessity paused. P stays S5. R1 stands, no P <-> Q4. Cite a9bd0a5 and 7b7c8aa.
+143:Identity B7 (off-sample uniqueness is not forced).
+161:Obstruction OB4.

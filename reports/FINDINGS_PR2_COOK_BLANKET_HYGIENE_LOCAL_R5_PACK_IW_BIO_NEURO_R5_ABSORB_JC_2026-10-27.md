@@ -1,0 +1,35 @@
+# FINDINGS — PR2 Soft SF Write-only hygiene status-absorb: Local R5 + Pack IW (IU+IV subject) + Local R5 + Pack JC (Bio/Neuro invent subject)
+Date: 2026-10-27 ~12:10 CDT America/Chicago. Author: PR2. Soft SF Write-only. REPORTS ONLY. No RECS. Kerr BLOCKED. tip Soft SF LOCK untouched.
+
+## Tip
+`/workspace/residual-c-field-WRITTEN_PREMISES_DRAFT.md` `7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91` (hashed BEFORE; not opened/edited). tip_touched NO.
+
+## Authority (re-hashed)
+- Owner invent-ban LIFT call-a0858383 (via PM; message authority).
+- OW blanket `reports/bridges/AUDITOR/OWNER_WRITE_BLANKET_OWNER_PURSUE_WRITE_AUTHORITY_ALL_LANES_2026-10-26.md` `9b993a72bcdfed3fe2d78c15cbe76d0c8197958ca5ac60111546cd5e7ec6498b`
+- OW invent-lift `reports/OWNER_WRITE_INVENT_BAN_LIFTED_ALL_LANES_PURSUE_FREEDOM_RIGHT_AUTHORITY_2026-10-27.md` `1c7163deec3cd5ee7ec6c8ee6db6b02c8bf7738e52a052218157c3b9239e0dec`
+- Local Path Rule-5 ACCEPT on both subjects (message authority + REVIEW files below).
+
+## Subject A — Soft SF Pack IU+IV absorb (status only; NOT amended)
+- FINDINGS `reports/FINDINGS_PR2_COOK_BLANKET_HYGIENE_LOCAL_R5_PACK_IU_IV_ABSORB_2026-10-27.md` `c97b68028f17d2d7d4ae1011cdd77ea42cddb998c2967a70ee7d08cb41fbfbd3`
+- PRESS `reports/SOFTSF_PRESS_FINDINGS_PR2_COOK_BLANKET_HYGIENE_LOCAL_R5_PACK_IU_IV_ABSORB_2026-10-27.md` `d0cf560f9459af39a63003c525c9d92dc1560000b76331a97a4e03f808aa9a2d`
+- Local R5 ACCEPT: REVIEW `reports/REVIEW_LOCAL_PR2_COOK_BLANKET_HYGIENE_LOCAL_R5_PACK_IU_IV_ABSORB_2026-10-27.md` `0ee16a02d8306773600d53da1fc4b6ff5b8f5a56a5347b71a80024edadb44c9d`; PRESS `reports/SOFTSF_PRESS_REVIEW_LOCAL_PR2_COOK_BLANKET_HYGIENE_LOCAL_R5_PACK_IU_IV_ABSORB_2026-10-27.md` `4405f98dd6f8d3bea6423688e1da5dcd5afa99422cf2fbf6c07194accb1d37e8`
+- Auditor Pack IW MATCH: `reports/bridges/AUDITOR/FINDINGS_2026-10-27_t1202u_PR2_HYGIENE_LOCAL_R5_PACK_IU_IV_ABSORB_CONFIRM.md` `5d51f04103ed687af740a68883a446fb81bc2c234468277f229c96a9d2995b67`
+- Auditor Pack JK MATCH on Local REVIEW IU+IV: `reports/bridges/AUDITOR/FINDINGS_2026-10-27_t1208u_REVIEW_LOCAL_PR2_COOK_BLANKET_HYGIENE_LOCAL_R5_PACK_IU_IV_ABSORB_2026__CONFIRM.md` `b6be8d6a4d2c17b08517548b06ff714b9cf13be76d09f6a18c0bb4de4f818e16`
+- Prior MATCH (already folded into Subject A; cite only): `reports/bridges/AUDITOR/FINDINGS_2026-10-27_t1159u_PR2_HYGIENE_LOCAL_R5_PACK_IS_IT_ABSORB_CONFIRM.md` `f7db5a0fb8cb25514f65ea34465fdbee6aa7a71a40ac122972a97dee41843f03` (Pack IU); `reports/bridges/AUDITOR/FINDINGS_2026-10-27_t1201u_LOCAL_R5_PR2_HYGIENE_PACK_IS_IT_ABSORB_CONFIRM.md` `34f9de8071f16dbd6f69be4531413bd26d12cbe36ae06cdd863534545f7d26b6` (Pack IV).
+- Status: Local R5 ACCEPT + Auditor CONFIRMED (IW). Local R5 unpaid CLEARED.
+
+## Subject B — Soft SF Bio/Neuro invent-pursue call-a0858383 (status only; NOT amended)
+- FINDINGS `reports/FINDINGS_PR2_COOK_SOFTSF_BIO_NEURO_INVENT_PURSUE_call-a0858383_2026-10-27.md` `b7cf379cb59b56cd075d509dd76a9a62a46b62a19ed8db7fa7cddd017c21a877`
+- PRESS `reports/SOFTSF_PRESS_FINDINGS_PR2_COOK_SOFTSF_BIO_NEURO_INVENT_PURSUE_call-a0858383_2026-10-27.md` `c33ef576c7621e78aa7d82c62753d5e4042e83344a10f77a856960c844ec1358`
+- Local R5 ACCEPT: REVIEW `reports/REVIEW_LOCAL_PR2_COOK_SOFTSF_BIO_NEURO_INVENT_PURSUE_call-a0858383_2026-10-27.md` `b1641b60fe47bbf32065d1133a156c3674a1de4eaec49318e6d70e3e97c19855`; PRESS `reports/SOFTSF_PRESS_REVIEW_LOCAL_PR2_COOK_SOFTSF_BIO_NEURO_INVENT_PURSUE_call-a0858383_2026-10-27.md` `3c501db279b9cd2d2c634ff4c6972d479907cda87849f5a274bab7f01954438a`
+- Auditor Pack JC MATCH on Subject B (found on mid-write AUDITOR scan; folded): `reports/bridges/AUDITOR/FINDINGS_2026-10-27_t1208u_FINDINGS_PR2_COOK_SOFTSF_BIO_NEURO_INVENT_PURSUE_CALL_A0858383_2026_10_CONFIRM.md` `c05b4210d277a63c805da6d8e57102e907238aa2b989054afac6f5020484530c`
+- Auditor Pack JL MATCH on Local REVIEW Bio/Neuro: `reports/bridges/AUDITOR/FINDINGS_2026-10-27_t1208u_REVIEW_LOCAL_PR2_COOK_SOFTSF_BIO_NEURO_INVENT_PURSUE_CALL_A0858383_202_CONFIRM.md` `a8b03381811d35933e754b74f71d79718b8fc026009ffa7ac6b047b30252727a`
+- Invent labels on Subject B REMAIN Soft SF Write-only proposals — NOT tip fold.
+- Status: Local R5 ACCEPT + Auditor CONFIRMED (JC). Local R5 unpaid CLEARED.
+
+## Pack naming
+This Soft SF absorbs Pack IW (+JK) on IU+IV and Pack JC (+JL) on Bio/Neuro. Next Auditor Pack letter is Auditor-assigned; none self-assigned.
+
+## Scope
+Status absorb only. No subject rewrite. No tip/catalog edit. No Kerr invent. No RECS.

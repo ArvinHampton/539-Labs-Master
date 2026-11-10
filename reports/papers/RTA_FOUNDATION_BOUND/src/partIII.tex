@@ -1,0 +1,461 @@
+%=====================================================================
+\section{The 35-component law vector}\label{sec:law35}
+%=====================================================================
+Notation is that of \S\ref{sec:prelim}. In Part~III, $x$ denotes a rational number $h/m$ with $m\ge1$, $\gcd(h,m)=1$ (and $m=1$ for $x=0$).
+
+\subsection{Gauss means}
+\begin{definition}\label{def:gaussmean}
+For $\alpha,\beta\in\Q^2$ and $x\in\Q$ the function $\nu\mapsto\e(xQ(\nu)+B(\nu,\beta))$ on $\alpha+\Z^2$ is invariant under $\nu\mapsto\nu+Mu$
+($u\in\Z^2$) for every positive integer $M$ divisible by a suitable $M_0(\alpha,\beta,x)$, because
+$xQ(\nu+Mu)+B(\nu+Mu,\beta)-xQ(\nu)-B(\nu,\beta)=xMB(\nu,u)+xM^2Q(u)+MB(u,\beta)$ and $B(\nu,u)$, $Q(u)$, $B(u,\beta)$ have bounded denominators.
+The \emph{Gauss mean} is
+\[
+G_{\alpha,\beta}(x)=M^{-2}\sum_{n\in\Z^2/M\Z^2}\e\bigl(xQ(\alpha+n)+B(\alpha+n,\beta)\bigr),
+\]
+which does not depend on the admissible $M$.
+\end{definition}
+Let $h_A=(\tfrac12,0)$. For $\mu\in D$ we use the representative of $\mu$ in $[0,1)^2$.
+\begin{definition}[The 35-component law vector]\label{def:K}
+For $\mu\in D$ put
+\[
+K1_\mu=G_{a+\mu,a},\quad K2_\mu=G_{a+\mu,0},\quad K3_\mu=G_{\mu,a},\quad K4_\mu=G_{\mu,0}.
+\]
+The vector $(K2_\mu)_{\mu\in D}$ is the \emph{35-component law vector}; $K3$ and $K4$ are its $S$- and $T$-companions. $\VV$ denotes the
+complex span of the $105$ functions $K2_\mu,K3_\mu,K4_\mu$ on $\Q$.
+\end{definition}
+
+\begin{lemma}[Elementary rules]\label{lem:rules}
+For $\alpha,\beta\in\Q^2$ and $x\in\Q$:
+\begin{enumerate}[label=(\roman*)]
+\item $G_{\alpha+n,\beta}=G_{\alpha,\beta}$ for $n\in\Z^2$;
+\item $G_{\alpha,\beta+\lambda}=\e(B(\alpha,\lambda))\,G_{\alpha,\beta}$ whenever $A\lambda\in\Z^2$;
+\item $G_{g\alpha,g\beta}=G_{\alpha,\beta}$ for $g\in\mathrm{GL}_2(\Z)$ with $g^{\mathsf T}Ag=A$.
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+(i) $\alpha+n+\Z^2=\alpha+\Z^2$. (ii) For $\nu=\alpha+n$, $B(\nu,\lambda)=B(\alpha,\lambda)+n^{\mathsf T}A\lambda\in B(\alpha,\lambda)+\Z$.
+(iii) $\nu\mapsto g\nu$ maps $\alpha+\Z^2$ bijectively onto $g\alpha+\Z^2$, commutes with translation by $M\Z^2$ up to the bijection $g$ of
+$\Z^2/M\Z^2$, and $Q(g\nu)=Q(\nu)$, $B(g\nu,g\beta)=B(\nu,\beta)$.
+\end{proof}
+
+\begin{theorem}[$T$-law and $S$-law]\label{thm:STlaw}
+For $\alpha,\beta\in\Q^2$ and $x\in\Q$,
+\begin{align*}
+G_{\alpha,\beta}(x+1)&=\e\bigl(-Q(\alpha)-B(\alpha,h_A)\bigr)\,G_{\alpha,\beta+\alpha+h_A}(x),\\
+G_{\alpha,\beta}(-1/x)&=\frac{\e(B(\alpha,\beta))}{|x|\sqrt{35}}\sum_{p\in D}G_{\beta+p,-\alpha}(x)\qquad(x\ne0).
+\end{align*}
+\end{theorem}
+\begin{proof}
+\emph{$T$-law.} For $n\in\Z^2$, $Q(n)=n_1^2+7n_1n_2+\tfrac72n_2^2\equiv\tfrac72n_2\equiv B(n,h_A)\pmod1$, since $n_2^2\equiv n_2\pmod 2$ and
+$B(n,h_A)=n_1+\tfrac72n_2$. For $\nu=\alpha+n$,
+$Q(\nu)=Q(\alpha)+B(n,\alpha)+Q(n)\equiv Q(\alpha)+B(n,\alpha)+B(n,h_A)$, while
+$B(\nu,\alpha+h_A)=2Q(\alpha)+B(\alpha,h_A)+B(n,\alpha)+B(n,h_A)$. Hence
+$Q(\nu)\equiv B(\nu,\alpha+h_A)-Q(\alpha)-B(\alpha,h_A)\pmod 1$, and inserting this into the mean defining $G_{\alpha,\beta}(x+1)$ gives the law.
+
+\emph{$S$-law.} Fix $y\in\Q\setminus\{0\}$ and $t>0$, and let $Z=yA+itI$. Then $Z$ is symmetric with $\operatorname{Im}Z=tI$ positive definite, so
+$f(v)=\exp(\pi i v^{\mathsf T}Zv+2\pi iv^{\mathsf T}A\beta)$ is a Schwartz function on $\R^2$. Its Fourier transform is
+$\hat f(w)=\det(-iZ)^{-1/2}\exp(-\pi i(w-A\beta)^{\mathsf T}Z^{-1}(w-A\beta))$, where $\det(-iZ)^{1/2}$ is the branch that is positive for
+$y=0$; diagonalising $A$ by an orthogonal matrix, with eigenvalues $\lambda_1>0>\lambda_2$, it equals
+$\prod_j(t-iy\lambda_j)^{1/2}$ with principal square roots. Poisson summation for $v\mapsto f(\alpha+v)$ gives
+\begin{equation}\label{eq:poisson}
+\sum_{\nu\in\alpha+\Z^2}f(\nu)=\det(-iZ)^{-1/2}\sum_{w\in\Z^2}\e(w^{\mathsf T}\alpha)\exp\bigl(-\pi i(w-A\beta)^{\mathsf T}Z^{-1}(w-A\beta)\bigr).
+\end{equation}
+\emph{Left side.} $f(\nu)=\e(yQ(\nu)+B(\nu,\beta))e^{-\pi t|\nu|^2}$. The phase is $M\Z^2$-periodic on $\alpha+\Z^2$; for each residue class
+$r+M\Z^2$, Poisson summation gives $\sum_{n\in r+M\Z^2}e^{-\pi t|n|^2}=(M^2t)^{-1}(1+O(e^{-c/t}))$ with $c=\pi/M^2$. Hence the left side is
+$t^{-1}G_{\alpha,\beta}(y)+O(t^{-1}e^{-c/t})$.
+
+\emph{Right side.} Put $w-A\beta=-A\gamma$; as $w$ runs over $\Z^2$, $\gamma=\beta-A^{-1}w$ runs over $\beta+A^{-1}\Z^2$, and
+$w^{\mathsf T}\alpha=(\beta-\gamma)^{\mathsf T}A\alpha=B(\alpha,\beta)-B(\gamma,\alpha)$. The exponent is $-\pi i\gamma^{\mathsf T}AZ^{-1}A\gamma$.
+Since $Z^{-1}=(yA)^{-1}(I+it(yA)^{-1})^{-1}$, one has $AZ^{-1}A=y^{-1}A-ity^{-2}I+t^2R_t$ with $\|R_t\|$ bounded for $t\le t_0$. Hence the summand is
+\[
+\e\bigl(B(\alpha,\beta)-B(\gamma,\alpha)-Q(\gamma)/y\bigr)\,e^{-\pi t|\gamma|^2/y^2}\,\exp(-\pi i t^2\gamma^{\mathsf T}R_t\gamma).
+\]
+On the support of the Gaussian the last factor is $1+O(t^2|\gamma|^2)$, and $\sum_\gamma t^2|\gamma|^2e^{-\pi t|\gamma|^2/y^2}=O(1)$.
+The phase $\gamma\mapsto\e(-B(\gamma,\alpha)-Q(\gamma)/y)$ is periodic on $\beta+A^{-1}\Z^2$, a coset of a lattice of covolume $1/35$; its mean over
+that coset is $\frac1{35}\sum_{p\in D}G_{\beta+p,-\alpha}(-1/y)$, because $\beta+A^{-1}\Z^2=\bigsqcup_{p\in D}(\beta+p+\Z^2)$. The same residue-class
+argument as on the left gives the right side as
+$\det(-iZ)^{-1/2}\,\e(B(\alpha,\beta))\,35\cdot\frac{y^2}{t}\cdot\frac1{35}\sum_pG_{\beta+p,-\alpha}(-1/y)+O(1)$.
+Finally $\det(-iZ)^{1/2}\to(-iy\lambda_1)^{1/2}(-iy\lambda_2)^{1/2}=|y|\sqrt{|\lambda_1\lambda_2|}=|y|\sqrt{35}$, since the two
+arguments are $\mp\pi/2$ and $\pm\pi/2$.
+
+Multiplying \eqref{eq:poisson} by $t$ and letting $t\to0^+$ gives
+$G_{\alpha,\beta}(y)=\frac{|y|}{\sqrt{35}}\e(B(\alpha,\beta))\sum_{p\in D}G_{\beta+p,-\alpha}(-1/y)$. Substituting $y=-1/x$ gives the $S$-law.
+\end{proof}
+
+\begin{proposition}[Closure]\label{prop:closure}
+The laws of Theorem~\ref{thm:STlaw}, followed by the reductions of Lemma~\ref{lem:rules}(i),(ii), map each of the $105$ functions
+$K2_\mu,K3_\mu,K4_\mu$ to a linear combination of them with coefficients in $\Q(\zeta_{9800},\sqrt{35})$: $T$ maps $K2$ to $K2$ and exchanges
+$K3$ and $K4$; $S$ maps $K2$ into the span of $K3$, $K3$ into the span of $K2$, and $K4$ into the span of $K4$. Hence $\VV$ is stable under
+$x\mapsto x+1$ and under $x\mapsto-1/x$ with the factor $|x|^{-1}$.
+\end{proposition}
+\begin{proof}
+$a-h_A=(\tfrac15,-\tfrac15)$ and $A(a-h_A)=(-1,0)$, so $a\equiv h_A$ modulo $A^{-1}\Z^2$; $A(2a)=(0,7)$, so $2a\in A^{-1}\Z^2$; and $D\subset A^{-1}\Z^2/\Z^2$.
+\emph{$T$.} For $K2_\mu$ the new second argument is $a+\mu+h_A\equiv 2a+\mu\equiv0$; for $K3_\mu=G_{\mu,a}$ it is $a+\mu+h_A\equiv0$ (giving $K4_\mu$);
+for $K4_\mu$ it is $\mu+h_A\equiv a$ (giving $K3_\mu$); all congruences modulo $A^{-1}\Z^2$, where Lemma~\ref{lem:rules}(ii) applies.
+\emph{$S$.} $K2_\mu\mapsto\sum_pG_{p,-a-\mu}$ and $-a-\mu\equiv a$; $K3_\mu\mapsto\sum_pG_{a+p,-\mu}$ and $-\mu\equiv0$; $K4_\mu\mapsto\sum_pG_{p,-\mu}$ and $-\mu\equiv0$.
+The phases introduced are $\e(B(\alpha,\lambda))$ with $\alpha\in\frac1{70}\Z^2$ and $\lambda\in A^{-1}\Z^2$, roots of unity of order dividing $9800$.
+\end{proof}
+
+\begin{proposition}[Dimension; computer-assisted]\label{prop:dimV}
+$\dim\VV=36$.
+\end{proposition}
+\begin{proof}
+\emph{Upper bound.} Lemma~\ref{lem:rules}(iii), applied to twelve automorphs $g$ of $A$ (including $\pm I$ and
+$\gamma=\left(\begin{smallmatrix}-1&-7\\2&13\end{smallmatrix}\right)$), followed by (i) and (ii), shows that each of the $105$ functions equals a
+root of unity times one of $36$ orbit representatives, $12$ in each family (exact rational computation, \path{A35_lawspace_exact/orbits.py}).
+\emph{Lower bound.} At the $216$ rationals $X_{216}=\{h/m:1\le m\le15,\ 1\le h\le3m,\ \gcd(h,m)=1\}$ every value $G_{\alpha,\beta}(h/m)$ is a finite
+mean over a $4m\times4m$ box and lies in $R=\Z[\zeta_L][1/(4m)^2]$ with $L=3\,531\,528\,000$. For a prime $p\equiv1\pmod L$, sending $\zeta_L$ to a
+primitive $L$-th root of unity in $\mathbb F_p$ defines a ring homomorphism $R\to\mathbb F_p$, under which the rank of a matrix cannot increase.
+The $216\times105$ value matrix has rank $36$ modulo each of $p=17\,657\,640\,001$, $21\,189\,168\,001$, $35\,315\,280\,001$, $42\,378\,336\,001$
+(\path{A51_bridgeC_exact/rank216.py}). So the rank in characteristic $0$ is at least $36$.
+\end{proof}
+
+\begin{proposition}[Exact $\mathrm{SL}_2$-relations and irreducibility; computer-assisted]\label{prop:sl2}
+Let $M_S$, $M_T$ be the matrices of $S$ and $T$ on $\VV$ in the basis of orbit representatives.
+\begin{enumerate}[label=(\roman*)]
+\item $M_S^4=I$ and $(M_SM_T)^3=M_S^2$ exactly over $\Q(\zeta_{9800})$, with $\sqrt{35}=-i\sum_{k\bmod35}\bigl(\tfrac k{35}\bigr)\zeta_{35}^k$.
+\item $\dim\mathrm{End}_{\mathrm{SL}_2(\Z)}(\VV)=1$, and $\VV$ is isomorphic to the $36$-dimensional summand $\EE$ of the decomposition
+$\EE\oplus\CC$ of the $42$-dimensional lift representation of Part~II at $s=7$; $\EE$ and $\CC$ are irreducible.
+\end{enumerate}
+In particular every non-zero vector of $\VV$ generates $\VV$ under $S$ and $T$.
+\end{proposition}
+\begin{proof}
+(i) Exact reduction modulo the cyclotomic polynomial $\Phi_{9800}$ of all $1296$ entries (\path{A51_bridgeC_exact/sl2_exact.py}).
+(ii) The intertwining equations were solved over $\mathbb F_p$ at two primes; a dimension over $\mathbb F_p$ bounds the dimension in
+characteristic $0$ from above, and the identity gives $\dim\mathrm{End}\ge1$. An explicit isomorphism $X:\VV\to\EE$ was verified exactly modulo
+$\Phi_{58800}$ ($X\,S_V=S_E\,X$ in all $1296$ entries, $X$ a product of invertible matrices; \path{A35_lawspace_exact/exact_intertwiner.py}).
+The lift representation is unitary, hence semisimple, and its commutant has dimension $2$ (exact upper bound, \path{A32_35_to_rho7/exact_hom.py});
+with two non-zero invariant summands $\EE$, $\CC$ this forces both to be irreducible and non-isomorphic. The final statement holds for any irreducible
+representation.
+\end{proof}
+
+%=====================================================================
+\section{The Bridge Series and the normalized Bridge Series at leading order}\label{sec:p3lead}
+%=====================================================================
+\subsection{Companion series}
+\begin{definition}\label{def:companion}
+Let $K_+=\{(n,k)\in\R^2:n\ge0,\ n+21k\ge0\}$ and $K_-=-K_+$. For $v\in\Z^2$ let $\wt(v)=\mathbf 1[v_1\ge0,v_2\ge0]-w(v)$. For each of the $105$ pairs
+$(\alpha,\beta)$ of Definition~\ref{def:K} ($\alpha\in\{a+\mu,\mu\}$, $\beta\in\{0,a\}$, excluding the $K1$ pairs) the \emph{companion series} is
+\[
+S_{\alpha,\beta}(\tau)=\sum_{v\in\Z^2}\wt(v)\,\e\bigl(B(\alpha+v,\beta)\bigr)\,\e\bigl(\tau Q(\alpha+v)\bigr).
+\]
+\end{definition}
+Since $Q(a+v)=Q_7(v)-\tfrac7{20}$, $S_{a,0}=q^{-7/20}(\Porth_7-H_7)=q^{-7/20}C$: the \emph{normalized Bridge Series}.
+\begin{lemma}[Weights]\label{lem:weights}
+$B(c_1,v)=5v_1$, $B(c_2,v)=-v_1-21v_2$, so $w(v)=\tfrac12(\sgn v_1+\sgn(v_1+21v_2))$. Hence $w=1$ on the interior of $K_+$, $w=-1$ on the interior of
+$K_-$, $w=\pm\tfrac12$ on the boundary rays of $K_\pm$ other than $0$, and $w=0$ elsewhere. The series $S_{\alpha,\beta}$ converges absolutely for $\tau\in\Hb$.
+\end{lemma}
+\begin{proof}
+The formulas for $B$ are direct. If $w(v)\ne0$ then $v\in K_+\cup K_-$, and $Q(\xi u_1+\eta u_2)=\tfrac{595}2\xi^2+140\xi\eta+\tfrac72\eta^2$ with
+$u_1=(21,-1)$, $u_2=(0,1)$ is positive definite on $\xi,\eta\ge0$; on the orthant $Q(n,k)\ge n^2+\tfrac72k^2$. So $\operatorname{Re}(-2\pi i\tau Q)\le-c|v|^2$
+on the support of $\wt$, for some $c>0$ depending on $\operatorname{Im}\tau$.
+\end{proof}
+
+\subsection{Decomposition into pieces}
+A \emph{piece} is a triple $(c,U,\sigma)$ with $c\in\Z^2$, $U=(u_1\,u_2)\in M_2(\Z)$ and a sign $\sigma$; it stands for the sum over $c+U\Z^2_{\ge0}$. A \emph{ray}
+is a pair $(c,u)$ with weight $\sigma$, standing for the sum over $c+u\N$.
+\begin{proposition}[Exact decomposition]\label{prop:decomp}
+Let $u_1=(21,-1)$, $u_2=(0,1)$, $e_1=(1,0)$. For every function $\Phi$ on $\Z^2$ with $\sum|\wt(v)\Phi(v)|<\infty$ and $\sum_{K_\pm\cap\Z^2}|\Phi|<\infty$,
+\begin{align*}
+\sum_v\wt(v)\Phi(v)=&\sum_{z\in\Z^2_{\ge0}}\Phi(z)-\sum_{r=0}^{20}\sum_{z\ge0}\Phi(re_1+Uz)+\sum_{r=0}^{20}\sum_{z\ge0}\Phi(-re_1-Uz)\\
+&+\tfrac12\sum_{b\ge0}\bigl(\Phi(bu_2)+\Phi(bu_1)-\Phi(-bu_2)-\Phi(-bu_1)\bigr),
+\end{align*}
+with $U=(u_1\,u_2)$.
+\end{proposition}
+\begin{proof}
+For $(n,k)\in\Z^2$ write $n=21j+r$ with $0\le r<21$. Then $n\ge0\iff j\ge0$, and $n+21k\ge0\iff j+k\ge0$ because $0\le r<21$. As
+$(n,k)=re_1+ju_1+(j+k)u_2$, the map $(r,j,i)\mapsto re_1+ju_1+iu_2$ is a bijection from $\{0,\dots,20\}\times\Z^2_{\ge0}$ onto $K_+\cap\Z^2$.
+The two boundary rays of $K_+$ are $\N u_2$ ($n=0$) and $\N u_1$ ($n+21k=0$); they meet only at $0$. By Lemma~\ref{lem:weights},
+$\sum_vw(v)\Phi(v)=\bigl[\sum_{K_+}\Phi-\tfrac12\sum_{\N u_1}\Phi-\tfrac12\sum_{\N u_2}\Phi\bigr]-\bigl[\sum_{K_-}\Phi-\tfrac12\sum_{-\N u_1}\Phi-\tfrac12\sum_{-\N u_2}\Phi\bigr]$:
+interior points get $\pm1$, non-zero ray points $\pm\tfrac12$, and $0$ gets $(1-\tfrac12-\tfrac12)-(1-\tfrac12-\tfrac12)=0$. Subtracting from the orthant sum gives the identity.
+\end{proof}
+For a piece $(c,U)$ and a pair $(\alpha,\beta)$ put
+\begin{gather*}
+p=Q(u_1),\quad r=Q(u_2),\quad \mathsf q=B(u_1,u_2),\quad \tilde Q(z)=Q(Uz)=pz_1^2+\mathsf qz_1z_2+rz_2^2,\\
+l_i=B(\alpha+c,u_i),\quad Q_0=Q(\alpha+c),
+\end{gather*}
+so that $Q(\alpha+c+Uz)=E(z):=\tilde Q(z)+l_1z_1+l_2z_2+Q_0$. For the orthant $(p,\mathsf q,r)=(1,7,\tfrac72)$; for the pieces of $K_\pm$,
+$(p,\mathsf q,r)=(\tfrac{595}2,140,\tfrac72)$. In both cases $p,r>0$, $\mathsf q\ge0$ and $\Delta:=\mathsf q^2-4pr>0$ ($\Delta=35$ and $\Delta=15435=35\cdot441$).
+
+\begin{lemma}[Periodicity]\label{lem:period}
+Let $x=h/m$, $N=2m$, and $\varphi(\nu)=\e(xQ(\nu)+B(\nu,\beta))$ for $\nu\in\alpha+\Z^2$, with $(\alpha,\beta)$ one of the $105$ pairs or $(\alpha,\beta)=(a,0)$.
+Then $\varphi(\nu+Nu)=\varphi(\nu)$ for all $u\in\Z^2$. Consequently, for every piece, $f(z):=\varphi(\alpha+c+Uz)$ is $N$-periodic in each coordinate,
+and for every ray $b\mapsto\varphi(\alpha+c+bu)$ is $N$-periodic.
+\end{lemma}
+\begin{proof}
+$\varphi(\nu+Nu)/\varphi(\nu)=\e(xNB(\nu,u)+xN^2Q(u)+NB(u,\beta))$. Here $A\nu\in A\alpha+\Z^2$, and $A\alpha\in\Z^2$ (if $\alpha=\mu$) or
+$A\alpha\in(0,\tfrac72)+\Z^2$ (if $\alpha=a+\mu$), since $A\mu\in\Z^2$. So $B(\nu,u)=u^{\mathsf T}A\nu\in\tfrac12\Z$ and $xNB(\nu,u)\in h\Z$.
+$Q(u)\in\tfrac12\Z$ gives $xN^2Q(u)\in2mh\Z$. $B(u,0)=0$ and $B(u,a)=\tfrac72u_2$ give $NB(u,\beta)\in m\Z$.
+\end{proof}
+
+\subsection{Leading order}
+\begin{theorem}[Profile of $C$ and of $q^{-7/20}C$]\label{thm:p3profile}
+Let $G(x)=(2m)^{-2}\sum_{v\bmod 2m}\e(xQ_7(v))$. Then $G(x)=\e(7x/20)\,K2_0(x)$ for every rational $x$, and $G\notin\VV$ (computer-assisted).
+\end{theorem}
+\begin{proof}
+$Q_7(v)=Q(v+a)+\tfrac7{20}$ and $v\mapsto v+a$ maps $\Z^2$ onto $a+\Z^2$, so $G(x)=\e(7x/20)G_{a,0}(x)=\e(7x/20)K2_0(x)$.
+If $G\in\VV$, then on $X_{216}$ the column of values of $G$ lies in the complex span of the $105$ columns, and the $216\times106$ matrix has rank at most
+$36$ over $\Q(\zeta_L)$, with the notation of the proof of Proposition~\ref{prop:dimV} (the values of $G$ also lie in $R$). Reduction modulo $p$
+cannot raise this rank. The computed rank modulo each of the four primes of Proposition~\ref{prop:dimV} is $37$, and each run verifies the identity
+$G=\e(7x/20)K2_0$ exactly modulo $p$ at all $216$ points (\path{BRIDGE_C_35/scripts/testA.py}).
+\end{proof}
+
+\begin{theorem}[Radial asymptotics at leading order]\label{thm:lead}
+Let $I=\log(6+\sqrt{35})/(2\sqrt{35})$. For every rational $x$, as $t\to0^+$,
+\[
+t\,\Porth_7(\e(x)e^{-t})=I\,G(x)+O(t^{1/2}),\quad t\,H_7(\e(x)e^{-t})=O(t^{1/2}),\quad t\,C(\e(x)e^{-t})=I\,G(x)+O(t^{1/2}),
+\]
+and $t\,S_{\alpha,\beta}(\e(x)e^{-t})=I\,G_{\alpha,\beta}(x)+O(t^{1/2})$ for every companion series. In particular the leading profile of
+$q^{-7/20}C$ is $I\,K2_0\in\VV$, and that of $C$ is $I\,G\notin\VV$.
+\end{theorem}
+\begin{proof}
+This is the $t^{-1}$ part of Theorem~\ref{thm:expansion} below, together with Corollary~\ref{cor:A0} and Theorem~\ref{thm:p3profile}; the
+statements for $\Porth_7$ and $H_7$ are the orthant term and the $K_\pm$ terms of the same computation.
+\end{proof}
+
+\begin{theorem}[Vector-valued $S$-law of $C$ at leading order]\label{thm:SlawC}
+Let $\Lambda_C(y)=\lim_{t\to0^+}t\,C(\e(y)e^{-t})$. For every rational $x>0$,
+\[
+\Lambda_C(-1/x)=I\,\e\Bigl(-\frac7{20x}\Bigr)\frac1{x\sqrt{35}}\sum_{p\in D}\e(-B(p,2a))\,K3_p(x).
+\]
+The leading profile $\Lambda_{a,0}=I\,K2_0$ of $q^{-7/20}C$, together with its images under $x\mapsto x+1$ and under $x\mapsto-1/x$ with the factor $|x|^{-1}$,
+spans $\VV$; $S$ and $T$ act on it by the matrices of Proposition~\ref{prop:sl2}.
+\end{theorem}
+\begin{proof}
+By Theorems~\ref{thm:p3profile} and~\ref{thm:lead}, $\Lambda_C(y)=I\e(7y/20)K2_0(y)$. Theorem~\ref{thm:STlaw} with $(\alpha,\beta)=(a,0)$ gives
+$K2_0(-1/x)=(x\sqrt{35})^{-1}\sum_pG_{p,-a}(x)$. Since $A(2a)\in\Z^2$, Lemma~\ref{lem:rules}(ii) with $\lambda=-2a$ gives
+$G_{p,-a}=G_{p,a-2a}=\e(-B(p,2a))G_{p,a}=\e(-B(p,2a))K3_p$. Multiply by $I\e(7(-1/x)/20)$. The spanning statement follows from
+$K2_0\ne0$ ($|K2_0(1)|=|G(1)|=1$ by Theorem~\ref{thm:D}) and Proposition~\ref{prop:sl2}.
+\end{proof}
+\begin{remark}\label{rem:mapC}
+By Theorem~\ref{thm:D}, $|\Lambda_C(x)|/I$ equals $\sqrt7/7$ at $x=\tfrac17,\tfrac37,\tfrac57$, equals $1$ at $x=1$ and at $x=-1$, equals $\tfrac13$ at $-\tfrac13$, $0$ at $-\tfrac15$
+and $\sqrt7/7$ at $-\tfrac17$. Hence $|\Lambda_C(-1/(7x))|/(|7x|^{-1/2}|\Lambda_C(x)|)$ takes the values $\sqrt7,\sqrt{7/3},0,1$ at $x=\tfrac17,\tfrac37,\tfrac57,1$:
+no scalar factor $|7x|^{-1/2}$ relates $\Lambda_C$ to its $W_7$-image, in accordance with Theorem~\ref{thm:E}(iii).
+\end{remark}
+
+%=====================================================================
+\section{The radial expansion through order $t^0$}\label{sec:expansion}
+%=====================================================================
+\subsection{One-variable lemmas}
+\begin{lemma}[Euler--Maclaurin with offset]\label{lem:EM1}
+Let $N\ge1$, $\rho\in\{0,\dots,N-1\}$, $y_0=\rho/N$, and let $h\in C^3[0,\infty)$ satisfy $|h^{(i)}(u)|\le c_1e^{-c_2u^2}$ for $i\le3$, with constants $c_1,c_2>0$. Then
+\begin{align*}
+\sum_{j\ge0}h(\rho+Nj)&=N^{-1}\!\int_0^\infty\!h+R_1,&|R_1|&\le\tfrac12|h(0)|+\tfrac12\!\int_0^\infty\!|h'|,\\
+\sum_{j\ge0}h(\rho+Nj)&=N^{-1}\!\int_0^\infty\!h-B_1(y_0)h(0)+R_2,&|R_2|&\le\tfrac N6\!\int_0^\infty\!|h''|,\\
+\sum_{j\ge0}h(\rho+Nj)&=N^{-1}\!\int_0^\infty\!h-B_1(y_0)h(0)-\tfrac N2B_2(y_0)h'(0)+R_3,&|R_3|&\le\tfrac{N^2}{9}\!\int_0^\infty\!|h'''|.
+\end{align*}
+\end{lemma}
+\begin{proof}
+Let $\phi(u)=h(Nu)$, so the sum is $\sum_{j\ge0}\phi(y_0+j)$. For $u\ge0$ the counting function $S(u)=\#\{j\ge0:y_0+j\le u\}$ equals
+$u+\tfrac12-y_0-\bar B_1(u-y_0)=u-B_1(y_0)-\bar B_1(u-y_0)$, and $S(0^-)=0$. Stieltjes integration by parts on $[0,\infty)$ gives
+\[
+\sum_{j\ge0}\phi(y_0+j)=-\int_0^\infty\phi'(u)S(u)\,du=\int_0^\infty\phi-B_1(y_0)\phi(0)+\int_0^\infty\phi'(u)\bar B_1(u-y_0)\,du .
+\]
+Since $|\bar B_1|\le\frac12$ and $|B_1(y_0)|\le\frac12$, and $\int\phi=N^{-1}\int h$, $\int|\phi'|=\int|h'|$, the first statement follows. Using
+$\bar B_1=\frac12\bar B_2'$ and continuity of $\bar B_2$,
+$\int_0^\infty\phi'\bar B_1(u-y_0)du=-\frac12\phi'(0)B_2(y_0)-\frac12\int_0^\infty\phi''\bar B_2(u-y_0)du$ (note $\bar B_2(-y_0)=B_2(y_0)$). Since
+$|\phi'(0)|\le\int|\phi''|$ and $|\bar B_2|\le\frac16$, the remainder after $-B_1(y_0)\phi(0)$ is at most $\frac16\int|\phi''|=\frac N6\int|h''|$. One further
+integration by parts, with $\bar B_2=\frac13\bar B_3'$, gives
+$-\frac12\int\phi''\bar B_2=\frac16\phi''(0)\bar B_3(-y_0)+\frac16\int\phi'''\bar B_3(u-y_0)du$; with $|\bar B_3|\le\sqrt3/36$ and $|\phi''(0)|\le\int|\phi'''|$
+this is at most $\frac{\sqrt3}{108}\int|\phi'''|\le\frac19N^2\int|h'''|$. Finally $\phi'(0)=Nh'(0)$.
+\end{proof}
+
+\begin{lemma}[Gaussian bounds]\label{lem:gauss}
+Let $E(z)=\tilde Q(z)+l_1z_1+l_2z_2+Q_0$ with $\tilde Q(z)=pz_1^2+\mathsf qz_1z_2+rz_2^2$, $p,r>0$, $\mathsf q\ge0$, and put $\kappa=\min(p,r)$ and
+$F_t=e^{-tE}$. For every multi-index $a$ with $|a|\le3$ there is $C_a$ such that, for $0<t\le1$ and $z\in\R^2_{\ge0}$,
+\[
+|\partial^aF_t(z)|\le C_a\,t^{|a|/2}\,e^{-t\kappa|z|^2/4}.
+\]
+Consequently, uniformly in the remaining variable, $\int_0^\infty|\partial^aF_t|\,dz_i=O(t^{(|a|-1)/2})$, $\iint_{\R^2_{\ge0}}|\partial^aF_t|=O(t^{|a|/2-1})$,
+and $\sum_{j\ge0}e^{-t\kappa(\rho+Nj)^2/4}=O(t^{-1/2})$.
+\end{lemma}
+\begin{proof}
+On $z\ge0$, $\tilde Q(z)\ge\kappa|z|^2$, so $tE(z)\ge t\kappa|z|^2-t|l||z|-t|Q_0|\ge\frac{t\kappa}2|z|^2-c_1$ with $c_1=|l|^2/(2\kappa)+|Q_0|$. A derivative of order $k$ of
+$F_t$ is $F_t$ times a sum of products of $k-m$ factors $-t\partial_jE$ (each $\le Ct(1+|z|)$) and $m$ factors $-t\partial_{ij}E$ (each $\le Ct$), with
+$0\le m\le k/2$. Such a product is at most $Ct^{k-m}(1+|z|)^{k-2m}=Ct^{k/2}(\sqrt t(1+|z|))^{k-2m}$. Since $\sqrt t(1+|z|)\le1+\sqrt t|z|$ and
+$(1+s)^je^{-\kappa s^2/4}$ is bounded on $s\ge0$, the bound follows. The consequences follow from $\int_0^\infty e^{-t\kappa s^2/4}ds=O(t^{-1/2})$ and
+from the first statement of Lemma~\ref{lem:EM1}.
+\end{proof}
+
+\begin{lemma}[Integrals]\label{lem:integrals}
+With the notation of Lemma~\ref{lem:gauss} and $\Delta=\mathsf q^2-4pr>0$, as $t\to0^+$,
+\begin{align*}
+\iint_{\R^2_{\ge0}}F_t&=t^{-1}\Ar-t^{-1/2}(l_1J_a+l_2J_b)+\bigl(\tfrac12K(l)-Q_0\Ar\bigr)+O(t^{1/2}),\\
+\int_0^\infty F_t(s,0)\,ds&=\tfrac12\sqrt{\pi/(tp)}-\tfrac{l_1}{2p}+O(t^{1/2}),\qquad
+\int_0^\infty F_t(0,s)\,ds=\tfrac12\sqrt{\pi/(tr)}-\tfrac{l_2}{2r}+O(t^{1/2}),\\
+\int_0^\infty\partial_2F_t(s,0)\,ds&=-\tfrac{\mathsf q}{2p}+O(t^{1/2}),\qquad
+\int_0^\infty\partial_1F_t(0,s)\,ds=-\tfrac{\mathsf q}{2r}+O(t^{1/2}),\qquad F_t(0,0)=1+O(t),
+\end{align*}
+where $J_a=\iint u_1e^{-\tilde Q(u)}du$, $J_b=\iint u_2e^{-\tilde Q(u)}du$, $K(l)=\iint(l_1u_1+l_2u_2)^2e^{-\tilde Q(u)}du$ (over $\R^2_{\ge0}$), and
+\[
+\Ar=\iint_{\R^2_{\ge0}}e^{-\tilde Q}=\frac{\log\frac{\mathsf q+\sqrt\Delta}{\mathsf q-\sqrt\Delta}}{2\sqrt\Delta},\quad
+J_a=\frac{\sqrt\pi}4\cdot\frac{2}{4pr-\mathsf q^2}\Bigl(2\sqrt r-\frac{\mathsf q}{\sqrt p}\Bigr),\quad
+J_b=\frac{\sqrt\pi}4\cdot\frac{2}{4pr-\mathsf q^2}\Bigl(2\sqrt p-\frac{\mathsf q}{\sqrt r}\Bigr),
+\]
+\[
+K(l)=\int_0^\infty\frac{(l_1+l_2\lambda)^2}{2\tilde Q(1,\lambda)^2}\,d\lambda .
+\]
+\end{lemma}
+\begin{proof}
+Substituting $z=u/\sqrt t$, $\iint F_t=t^{-1}\iint e^{-\tilde Q(u)-w(u)}du$ with $w=\sqrt t(l_1u_1+l_2u_2)+tQ_0$. By Taylor's theorem
+$|e^{-w}-1+w-\frac12w^2|\le\frac16|w|^3e^{|w|}$, and $e^{-\tilde Q(u)+|w(u)|}\le e^{-\kappa|u|^2+|l||u|+|Q_0|}$ is integrable, so the expansion follows with the
+$t^0$ term $\iint(\frac12(l_1u_1+l_2u_2)^2-Q_0)e^{-\tilde Q}$. The one-variable integrals are treated in the same way with
+$\int_0^\infty e^{-pu^2}du=\frac12\sqrt{\pi/p}$, $\int_0^\infty ue^{-pu^2}du=\frac1{2p}$. For the derivative integrals, $\partial_2F_t(s,0)=-t(\mathsf qs+l_2)F_t(s,0)$,
+and the substitution $s=u/\sqrt t$ gives $-t\cdot t^{-1}\mathsf q\int ue^{-pu^2}du+O(t^{1/2})$. $F_t(0,0)=e^{-tQ_0}$.
+For the closed forms write $u=\rho(1,\lambda)$, $du=\rho\,d\rho\,d\lambda$. Then $\Ar=\int_0^\infty d\lambda/(2\tilde Q(1,\lambda))$; the roots of
+$r\lambda^2+\mathsf q\lambda+p$ are $\lambda_\pm=(-\mathsf q\pm\sqrt\Delta)/(2r)<0$ since $\mathsf q>\sqrt\Delta$, and partial fractions give
+$\int_0^\infty d\lambda/(r(\lambda-\lambda_+)(\lambda-\lambda_-))=\Delta^{-1/2}\log(\lambda_-/\lambda_+)$. Next
+$J_a=\int_0^\infty\int_0^\infty\rho^2e^{-\rho^2\tilde Q(1,\lambda)}d\rho\,d\lambda=\frac{\sqrt\pi}4\int_0^\infty\tilde Q(1,\lambda)^{-3/2}d\lambda$, and
+$\frac{d}{d\lambda}\frac{2(2r\lambda+\mathsf q)}{(4pr-\mathsf q^2)\sqrt{r\lambda^2+\mathsf q\lambda+p}}=(r\lambda^2+\mathsf q\lambda+p)^{-3/2}$; evaluating at $0$ and $\infty$ gives $J_a$.
+$J_b$ follows by the parametrisation $u=\rho(\lambda,1)$, which exchanges $p$ and $r$. $K(l)$ follows from $\int_0^\infty\rho^3e^{-\rho^2c}d\rho=1/(2c^2)$.
+\end{proof}
+
+\subsection{The expansion}
+\begin{theorem}[Expansion of a piece]\label{thm:piece}
+Let $(p,\mathsf q,r)$, $l_1,l_2,Q_0$ be as above with $p,r>0$, $\mathsf q\ge0$, $\Delta>0$, and let $f:\Z^2_{\ge0}\to\C$ be $N$-periodic in each coordinate
+with $|f|\le1$. Put, with $z$ running over $\{0,\dots,N-1\}^2$,
+\begin{gather*}
+\mean(f)=N^{-2}\sum_zf(z),\qquad W_i=N^{-1}\sum_zf(z)B_1(z_i/N),\\
+V_i=\sum_zf(z)B_2(z_i/N),\qquad \mathsf C=\sum_zf(z)B_1(z_1/N)B_1(z_2/N).
+\end{gather*}
+Then, as $t\to0^+$,
+\[
+\sum_{z\in\Z^2_{\ge0}}f(z)e^{-tE(z)}=t^{-1}A_{0}^{P}+t^{-1/2}A_{1}^{P}+A_{2}^{P}+O(t^{1/2}),
+\]
+with
+\begin{align*}
+A_0^P&=\mean(f)\,\Ar,\\
+A_1^P&=-\mean(f)(l_1J_a+l_2J_b)-\tfrac{\sqrt\pi}2\bigl(r^{-1/2}W_1+p^{-1/2}W_2\bigr),\\
+A_2^P&=\mean(f)\bigl(\tfrac12K(l)-Q_0\Ar\bigr)+\frac{l_2W_1}{2r}+\frac{l_1W_2}{2p}+\frac{\mathsf q}4\Bigl(\frac{V_1}r+\frac{V_2}p\Bigr)+\mathsf C .
+\end{align*}
+\end{theorem}
+\begin{proof}
+Write the sum as $\sum_{\rho}f(\rho)\Sigma_\rho$ with $\Sigma_\rho=\sum_{j\in\Z^2_{\ge0}}F_t(\rho+Nj)$, $\rho\in\{0,\dots,N-1\}^2$, and $y_i=\rho_i/N$.
+Fix $\rho$. For each $z_1=\rho_1+Nj_1$ apply the third statement of Lemma~\ref{lem:EM1} in $z_2$:
+\[
+\Sigma_\rho=\sum_{j_1\ge0}\Bigl[N^{-1}\!\int_0^\infty\!F_t(z_1,s)ds-B_1(y_2)F_t(z_1,0)-\tfrac N2B_2(y_2)\partial_2F_t(z_1,0)+R_3(z_1)\Bigr].
+\]
+By Lemma~\ref{lem:gauss}, $\sum_{j_1}|R_3(z_1)|\le\frac{N^2}9\sum_{j_1}\int_0^\infty|\partial_2^3F_t(z_1,s)|ds\le Ct^{3/2}\cdot t^{-1/2}\cdot t^{-1/2}=O(t^{1/2})$.
+For the first term apply the third statement of Lemma~\ref{lem:EM1} in $z_1$ to $g(z_1)=N^{-1}\int_0^\infty F_t(z_1,s)ds$ (differentiation under the integral
+is justified by Lemma~\ref{lem:gauss}); its remainder is at most $\frac{N^2}9\int|g'''|\le CN\iint|\partial_1^3F_t|=O(t^{1/2})$. This gives
+$N^{-2}\iint F_t-N^{-1}B_1(y_1)\int_0^\infty F_t(0,s)ds-\frac12B_2(y_1)\int_0^\infty\partial_1F_t(0,s)ds+O(t^{1/2})$.
+For the second term apply the second statement of Lemma~\ref{lem:EM1} to $F_t(\cdot,0)$; the remainder is at most $\frac N6\int|\partial_1^2F_t(s,0)|ds=O(t^{1/2})$.
+This gives $-B_1(y_2)[N^{-1}\int_0^\infty F_t(s,0)ds-B_1(y_1)F_t(0,0)]+O(t^{1/2})$.
+For the third term apply the first statement of Lemma~\ref{lem:EM1} to $\partial_2F_t(\cdot,0)$; the remainder is at most
+$\frac12|\partial_2F_t(0,0)|+\frac12\int|\partial_1\partial_2F_t(s,0)|ds=O(t^{1/2})$. This gives $-\frac12B_2(y_2)\int_0^\infty\partial_2F_t(s,0)ds+O(t^{1/2})$.
+Altogether
+\begin{align*}
+\Sigma_\rho=&N^{-2}\iint F_t-N^{-1}B_1(y_1)\int_0^\infty F_t(0,s)ds-N^{-1}B_1(y_2)\int_0^\infty F_t(s,0)ds+B_1(y_1)B_1(y_2)F_t(0,0)\\
+&-\tfrac12B_2(y_1)\int_0^\infty\partial_1F_t(0,s)ds-\tfrac12B_2(y_2)\int_0^\infty\partial_2F_t(s,0)ds+O(t^{1/2}).
+\end{align*}
+Insert Lemma~\ref{lem:integrals}, multiply by $f(\rho)$ and sum over $\rho$. The coefficient of $t^{-1}$ is $N^{-2}\sum f\cdot\Ar$. The coefficient of $t^{-1/2}$ is
+$-\mean(f)(l_1J_a+l_2J_b)-N^{-1}\sum_\rho f(\rho)B_1(y_1)\frac{\sqrt\pi}{2\sqrt r}-N^{-1}\sum_\rho f(\rho)B_1(y_2)\frac{\sqrt\pi}{2\sqrt p}$. The $t^0$ coefficient is
+$\mean(f)(\frac12K-Q_0\Ar)+W_1\frac{l_2}{2r}+W_2\frac{l_1}{2p}+\mathsf C+\frac12V_1\frac{\mathsf q}{2r}+\frac12V_2\frac{\mathsf q}{2p}$.
+\end{proof}
+
+\begin{lemma}[Expansion of a ray]\label{lem:ray}
+Let $Q(u)>0$, $l_u=B(u,\alpha+c)$, and let $b\mapsto f(b)$ be $N$-periodic with $|f|\le1$. Then
+\[
+\sum_{b\ge0}f(b)e^{-tQ(\alpha+c+bu)}=t^{-1/2}\frac{\sqrt\pi}2Q(u)^{-1/2}\mean(f)-\mean(f)\frac{l_u}{2Q(u)}-\sum_{b=0}^{N-1}f(b)B_1(b/N)+O(t^{1/2}),
+\]
+with $\mean(f)=N^{-1}\sum_{b<N}f(b)$.
+\end{lemma}
+\begin{proof}
+Here $h(b)=e^{-t(Q(u)b^2+l_ub+Q(\alpha+c))}$. Apply the second statement of Lemma~\ref{lem:EM1} for each residue $\rho$; the remainder is
+$O(\int|h''|)=O(t^{1/2})$. Then $\int_0^\infty h=\frac12\sqrt{\pi/(tQ(u))}-\frac{l_u}{2Q(u)}+O(t^{1/2})$ and $h(0)=1+O(t)$, as in Lemma~\ref{lem:integrals}.
+\end{proof}
+
+\begin{theorem}[Radial expansion of the companion series]\label{thm:expansion}
+For each of the $105$ companion series and for $q^{-7/20}C=S_{a,0}$, and every rational $x$,
+\[
+S_{\alpha,\beta}(\e(x)e^{-t})=t^{-1}A_0(x)+t^{-1/2}A_1(x)+A_2(x)+O(t^{1/2})\qquad(t\to0^+),
+\]
+where $A_j=\sum_{\rm pieces}\sigma A_j^P+\sum_{\rm rays}\sigma A_j^{\rm ray}$ over the signed pieces and rays of Proposition~\ref{prop:decomp}, with
+$f(z)=\e(xQ(\alpha+c+Uz)+B(\alpha+c+Uz,\beta))$ and $N=2m$, $A^P_j$ as in Theorem~\ref{thm:piece}, and $A^{\rm ray}_1=\frac{\sqrt\pi}2Q(u)^{-1/2}\mean(f)$,
+$A^{\rm ray}_2=-\mean(f)\frac{l_u}{2Q(u)}-\sum_{b<N}f(b)B_1(b/N)$, $A_0^{\rm ray}=0$.
+\end{theorem}
+\begin{proof}
+With $\Phi(v)=\e(B(\alpha+v,\beta))\e(xQ(\alpha+v))e^{-tQ(\alpha+v)}$, $S_{\alpha,\beta}(\e(x)e^{-t})=\sum_v\wt(v)\Phi(v)$, and Proposition~\ref{prop:decomp} applies by
+Lemma~\ref{lem:weights}. Each piece is a sum as in Theorem~\ref{thm:piece} with $f$ $N$-periodic by Lemma~\ref{lem:period}, and each ray is as in Lemma~\ref{lem:ray}.
+There are finitely many pieces and rays, so the $O(t^{1/2})$ remainders add up.
+\end{proof}
+
+\begin{corollary}[Order $t^{-1}$]\label{cor:A0}
+$A_0(x)=I\,G_{\alpha,\beta}(x)$ for every companion. In particular $A_0=I\,K2_0$ for $q^{-7/20}C$, and $t\,H_7(\e(x)e^{-t})=O(t^{1/2})$.
+\end{corollary}
+\begin{proof}
+The orthant has $U=I$ and $\Ar=\log((7+\sqrt{35})/(7-\sqrt{35}))/(2\sqrt{35})=I$, because $(7+\sqrt{35})/(7-\sqrt{35})=6+\sqrt{35}$; its mean is
+$G_{\alpha,\beta}(x)$. The $21$ pieces of $K_+$ have a common $\Ar_+$. As $(r,j)$ runs over $\{0,\dots,20\}\times\{0,\dots,N-1\}$, $21j+r$ runs over
+$\{0,\dots,21N-1\}$, which covers each residue modulo $N$ exactly $21$ times; for each $(r,j)$, $i-j$ covers each residue once as $i$ does. Hence
+$\sum_r\mean(f_r)=21\,G_{\alpha,\beta}(x)$. For $K_-$ the same count applies to $\nu=\alpha-v$, and $\alpha-v$ runs over $\alpha+\Z^2$ modulo $N$ as $v$ does,
+so $\sum_r\mean(f'_r)=21\,G_{\alpha,\beta}(x)$. The signs are $-1$ and $+1$, so the cone pieces cancel at order $t^{-1}$. The statement for $H_7$ is
+the $K_\pm$ part of the same computation for $(\alpha,\beta)=(a,0)$, multiplied by $q^{7/20}$, which changes the expansion by a factor $1+O(t)$
+and the phase $\e(7x/20)$.
+\end{proof}
+
+\begin{corollary}[Order $t^{-1/2}$: algebraicity]\label{cor:A1alg}
+For every companion and every rational $x$, $A_1(x)/\sqrt\pi$ is an algebraic number. The number $\log(6+\sqrt{35})$ does not enter $A_1$.
+\end{corollary}
+\begin{proof}
+By Theorems~\ref{thm:piece} and~\ref{thm:expansion}, $A_1/\sqrt\pi$ is a finite sum of products of roots of unity (values of $f$), rational numbers
+($B_1$-weights, $l_i$, signs, $\frac12$), and the algebraic numbers $J_a/\sqrt\pi$, $J_b/\sqrt\pi$, $r^{-1/2}$, $p^{-1/2}$, $Q(u)^{-1/2}$ with $p,\mathsf q,r,Q(u)$ rational.
+\end{proof}
+\begin{remark}
+For the orthant piece alone at $x=0$ and $(\alpha,\beta)=(a,0)$ the formula gives $0.5256172043\ldots$, the $t^{-1/2}$ coefficient $a_P=\sqrt\pi(49-2\sqrt{14})/140$
+of $\Porth_7$ in Part~II (Table~\ref{tab:radial}).
+\end{remark}
+
+\begin{proposition}[Order $t^{-1/2}$ on the zero set of the leading term; computer-assisted]\label{prop:A1nonzero}
+Let $Z_0=\{x\in X_{216}:2\mid m\text{ or }5\mid m\}$ ($105$ points). For $q^{-7/20}C$, $A_1(x)\ne0$ for every $x\in Z_0$ and for $x=-\frac15$. Since $A_0(x)=0$
+there (Theorem~\ref{thm:D}), $t\,|q^{-7/20}C(\e(x)e^{-t})|=|A_1(x)|\,t^{1/2}+O(t)$ at these points. The minimum of $|A_1|$ over these points is
+$0.1229\ldots$, and $|A_1(-\frac15)|=0.4285\ldots$.
+\end{proposition}
+\begin{proof}
+The formula of Theorem~\ref{thm:expansion} is a finite expression. The phase histograms were computed in exact rational arithmetic, and the trigonometric
+and algebraic values were enclosed in interval arithmetic at $60$ digits (\path{BRIDGE_C_35/order2/data/map2_interval.json}); the enclosure of $|A_1|^2$
+excludes $0$ at all $106$ points, with maximal width $6\cdot10^{-59}$.
+\end{proof}
+
+\subsection{Decomposition of $A_1$ by quadratic class}
+Each term of $A_1$ carries a label: the drift terms $-\mean(f)(l_1J_a+l_2J_b)$ of the pieces; the sawtooth terms $-\frac{\sqrt\pi}2Q(u_i)^{-1/2}W_i$ of the pieces,
+labelled by $Q(u_i)$ for the edge direction $u_i$ whose $B_1$-weight they carry (the $W_1$ term carries $r^{-1/2}=Q(u_2)^{-1/2}$, the $W_2$ term $p^{-1/2}=Q(u_1)^{-1/2}$);
+and the ray terms $\pm\frac12\cdot\frac{\sqrt\pi}2Q(u)^{-1/2}\mean(f)$, labelled by $Q(u)$.
+\begin{proposition}[Exact decomposition of $A_1$]\label{prop:A1split}
+$Q(e_1)=1$, $Q(e_2)=Q(0,\pm1)=\frac72$ and $Q(\pm(21,-1))=\frac{595}2$. Consequently, for every companion and every rational $x$,
+\[
+A_1=D+R+W[1]+W[\tfrac72]+W[\tfrac{595}2],\qquad R=R[\tfrac72]+R[\tfrac{595}2],
+\]
+where $D$ is the sum of the drift terms, $W[\lambda]$ the sum of the sawtooth terms with label $\lambda$, and $R[\lambda]$ the sum of the ray terms with label $\lambda$;
+$R[\frac72]$ collects the rays $\pm\N(0,1)$ and $R[\frac{595}2]$ the rays $\pm\N(21,-1)$.
+\end{proposition}
+\begin{proof}
+$Q(21,-1)=\frac12(2\cdot441-2\cdot7\cdot21+7)=\frac{595}2$. The edge directions of the pieces are $e_1,e_2$ (orthant) and $\pm u_1,\pm u_2$ (cones), and the rays of
+Proposition~\ref{prop:decomp} are $\pm\N u_1$, $\pm\N u_2$. Every term of $A_1$ in Theorem~\ref{thm:expansion} is therefore of exactly one of the listed kinds with one of
+the listed labels, and the identities are regroupings of a finite sum.
+\end{proof}
+
+\begin{remark}[Structure of $A_2$]
+By Theorem~\ref{thm:expansion}, $A_2$ consists of the moments $\frac12K(l)-Q_0\Ar$ of the drift, edge terms $l_iW_j$, terms $\frac{\mathsf q}4V_i$ weighted by the
+cross coefficient, corner terms $\mathsf C$ (finite sums of Dedekind-sum type), and the ray constants. Only $K(l)$ and $\Ar$ are transcendental integrals.
+\end{remark}
+
+%=====================================================================
+\section{Order four: the shadow candidate and the law at order $t^0$}\label{sec:order4}
+%=====================================================================
+The next two questions are (a) whether $A_1$ becomes $S$-covariant after subtracting an explicit shadow contribution, and (b) whether the
+$t^0$ coefficient $A_2$ of Theorem~\ref{thm:expansion}, or $A_2$ minus a completion term, satisfies a weight-$0$ vector-valued law.
+
+Both questions were tested numerically; neither produced a Category~A statement, and the results are recorded only in the following remarks
+and in Appendix~\ref{app:catB}.
+\begin{remark}[Category B: the sawtooth shadow candidate]
+The candidate for (a), modelled on an erf-completion, removes all sawtooth groups: the completed coefficient is $A_1-\Xi_\varepsilon$ with
+$\Xi_\varepsilon=\sum_\lambda\varepsilon_\lambda W[\lambda]$, $\varepsilon=(1,1,1)$, that is $A_1-\Xi_\varepsilon=D+R$ (Proposition~\ref{prop:A1split}).
+Its $S$-image is not in its span, so this candidate does not close; nor does any of the six secondary subsets $\varepsilon\ne(0,0,0),(1,1,1)$.
+The sign control (closure of $A_0$ at weight $1$, failure at the wrong weight) passed (item~\ref{catB:4a}). The candidate is not the
+actual completion: the erf-completion constants of $H_7$ have not been derived (Problem~\ref{op:xi}).
+\end{remark}
+\begin{remark}[Category B: a weight-$0$ law for $A_2$]
+For (b), $A_2$ does not satisfy a pure weight-$0$ vector-valued law, nor one of weight $\frac12$ or $1$; a mixed law
+$A_2(-1/x)\in\operatorname{span}[A_2(x),|x|^{1/2}A_1(x),|x|A_0(x)]$ is not closed either, but this test has little discriminating power (rank
+$214$ on $216$ points). The sign control passed (item~\ref{catB:4b}).
+\end{remark}

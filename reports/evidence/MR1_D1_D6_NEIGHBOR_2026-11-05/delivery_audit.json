@@ -1,0 +1,95 @@
+{
+  "prepared": "2026-11-05 14:10:16 CST (America/Chicago)",
+  "role": "Soft SF Write-only; agent/voice != OWNER_WRITE",
+  "tip_pre": "7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91",
+  "tip_post": "7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91",
+  "tip_touched": false,
+  "governing_and_sources": [
+    {
+      "tag": "HOLD",
+      "path": "/workspace/quantum-comp/reports/FINDINGS_MR1_ACK_OW_CALL_9ee0f248_RECLAIM_ONLY_HOLD_INVENT_2026-11-05.md",
+      "sha256": "1fadc632f86332808995573b485225048c4f0fa78ac44a36da4f67315beab783"
+    },
+    {
+      "tag": "PRIMARY",
+      "path": "/workspace/quantum-comp/reports/OWNER_WRITE_CALL_53991ebf_PRIMARY_OPERATING_RULE_ALL_TWELVE_2026-11-05.md",
+      "sha256": "bcc3ced0f1dfe15560e0bdb2e45bb35f4b1db26dcfb439e647a98c12fc5bc9a9"
+    },
+    {
+      "tag": "RESONANT",
+      "path": "/workspace/quantum-comp/reports/OWNER_WRITE_CALL_53991ebf_RESONANT_MATH_PREDICTIONS_ALL_FIELDS_2026-11-05.md",
+      "sha256": "b25d56165039d2cf2a064d8c9b5e08c0920601e83b0574947ea116f2ac6ec455"
+    },
+    {
+      "tag": "ALL_PURSUITS",
+      "path": "/workspace/quantum-comp/reports/OWNER_WRITE_CALL_53991ebf_ALL_RECOMMENDED_PURSUITS_2026-11-05.md",
+      "sha256": "865d3a37f1c13431c78672847dcd33007b3467df92f1e7c8602057f257b1bf3b"
+    },
+    {
+      "tag": "CAT",
+      "path": "/workspace/quantum-comp/reports/FINDINGS_MR1_RESONANT_MATH_PREDICTIONS_NT_MODULAR_HECKE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "7a0be1d521c7e60d1aaee148af4cb6321785218ba70e9a72e1097d406713001a"
+    },
+    {
+      "tag": "O1",
+      "path": "/workspace/quantum-comp/reports/FINDINGS_MR1_SOFTSF_XI_SHADOW_PETERSSON_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "28d4b4aeca7341d787c1a17a802751b8f69624e24bcb8b4a1ce6fef0b3a2a9fa"
+    },
+    {
+      "tag": "DIM14",
+      "path": "/workspace/quantum-comp/reports/FINDINGS_MR1_SOFTSF_LMFDB_HILBERT_Q35_DIM14_LIVECHECK_HOLD_INVENT_2026-11-05.md",
+      "sha256": "06c0fca1ae9c0023acf60e19f582c5691b7ddfdbb602de3e3064727238b781b7"
+    },
+    {
+      "tag": "HQ35",
+      "path": "/workspace/quantum-comp/reports/FINDINGS_MR1_CAT_A_HECKE_Q35_RESIDUAL_C_CITE_HUNT_2026-11-03.md",
+      "sha256": "6eb9713e03e01a2feef3c0797f1dc97ddd8a4d2097dd7af245eef048ce506b13"
+    },
+    {
+      "tag": "DEEP",
+      "path": "/workspace/quantum-comp/reports/FINDINGS_MR1_CAT_A_CITE_PACK_DEEPEN_S32_HECKE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "202e674fd052764ef4c750a265748fc57f15aebeaeab29d031678bd5faf5b844"
+    },
+    {
+      "tag": "ROLLUP",
+      "path": "/workspace/quantum-comp/reports/FINDINGS_MR1_SOFTSF_O1_O4_CITE_DEEPEN_ROLLUP_HOLD_INVENT_2026-11-05.md",
+      "sha256": "d29a5ed617df6d1cfa860213f6106fbd0d283453ead6b56d09841dd094a4064f"
+    },
+    {
+      "tag": "C123",
+      "path": "/workspace/quantum-comp/reports/FINDINGS_MR1_SOFTSF_C1_C3_CONDITIONAL_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "e31fba1b3f046df5858595b88ebe8ccbbd9e276ff54b9bfb2daa1c5c0482ba6b"
+    },
+    {
+      "tag": "GEMINI",
+      "path": "/workspace/quantum-comp/reports/FINDINGS_MR1_SOFTSF_GEMINI_OFFERS_6_10_ROLLUP_HOLD_INVENT_2026-11-05.md",
+      "sha256": "d01c02916afaeae16260dda5f2d2b665a5d3df0143111dcc49af72f7f66555af"
+    }
+  ],
+  "findings": {
+    "path": "/workspace/quantum-comp/reports/FINDINGS_MR1_SOFTSF_D1_D6_NEIGHBOR_CITE_HOLD_INVENT_2026-11-05.md",
+    "sha256": "293db339d9a94e484511efcf02e224708ba317a5e71b2e12a673b168755d1ba8"
+  },
+  "press": {
+    "path": "/workspace/quantum-comp/reports/PRESS_MR1_SOFTSF_D1_D6_NEIGHBOR_CITE_HOLD_INVENT_2026-11-05.md",
+    "sha256": "cd789e1b42802812e29e2c1b6a6a224516caf44f314d45a72f813a3d9c9110c0"
+  },
+  "mirror_dirs": [
+    "/workspace/quantum-comp/bridges/AUDITOR",
+    "/workspace/quantum-comp/bridges/PHYSICIST",
+    "/workspace/quantum-comp/bridges/PROFESSOR_PROOF",
+    "/workspace/quantum-comp/bridges/LOCAL",
+    "/workspace/quantum-comp/reports/bridges/AUDITOR",
+    "/workspace/quantum-comp/reports/bridges/PHYSICIST",
+    "/workspace/quantum-comp/reports/bridges/PROFESSOR_PROOF",
+    "/workspace/quantum-comp/reports/bridges/LOCAL"
+  ],
+  "mirror_file_checks": 32,
+  "mirror_byte_match": true,
+  "new_project_theorems": 0,
+  "invent_prove_BEGIN": false,
+  "CERT": false,
+  "publish": false,
+  "spend": false,
+  "RECS": false
+}

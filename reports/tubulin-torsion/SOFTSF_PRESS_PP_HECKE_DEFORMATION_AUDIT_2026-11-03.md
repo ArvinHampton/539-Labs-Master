@@ -1,0 +1,2 @@
+# SOFT SF PRESS — PP Hecke Deformation audit (2026-11-03)
+Codex 802030a4… audited. Arithmetic is wrong: Q(√35) has discriminant 140 (ramified 2,5,7), splitting is by (140/p) not squares mod 35; χ₃₅ belongs to Q(√−35), not Q(√35); the Perron integral at x=3 equals 1/2 (for both χ₃₅ and χ₁₄₀), so C₃=538.1 is impossible. T̃_p and Θ_p are undefined; no theorem removes the P5a/P5b obligation. No CERT. Tip untouched. Details: PP-FINDINGS-HECKE_DEFORMATION_AUDIT_2026-11-03.md.

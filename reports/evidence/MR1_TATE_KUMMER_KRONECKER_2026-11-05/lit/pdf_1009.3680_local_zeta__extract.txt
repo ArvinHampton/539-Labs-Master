@@ -1,0 +1,167 @@
+arXiv:1009.3680v8 [math.AG] 8 Jun 2015
+
+LOCAL ZETA FUNCTIONS FOR NON-DEGENERATE LAURENT
+POLYNOMIALS OVER P-ADIC FIELDS
+E. LEÓN-CARDENAL AND W. A. ZÚÑIGA-GALINDO
+Abstract. In this article, we study local zeta functions attached to Laurent
+polynomials over p-adic fields, which are non-degenerate with respect to their
+Newton polytopes at infinity. As an application we obtain asymptotic expansions for p-adic oscillatory integrals attached to Laurent polynomials. We
+show the existence of two different asymptotic expansions for p-adic oscillatory
+integrals, one when the absolute value of the parameter approaches infinity,
+the other when the absolute value of the parameter approaches zero. These
+two asymptotic expansions are controlled by the poles of twisted local zeta
+functions of Igusa type.
+
+1. Introduction
+The local zeta functions for non-degenerate polynomials (or more generally for
+non-degenerate analytic functions) have been studied quite extensively. Initially
+these functions were studied by Varchenko in the Archimedean case, later Denef
+studied them in the non-Archimedean case, see e.g. [2], [4], [5], [8], [16], [19], [20],
+[23], [24], among others. In this article, we study local zeta functions attached
+to Laurent polynomials over p-adic fields, which are weakly non-degenerate with
+respect to their Newton polytopes at infinity, see Definition 2.4. This notion of
+non-degeneracy is weaker than the standard non-degeneracy condition of Khovanskii, see Definition 2.5 and Example 2.6. By using a variation of toric resolution of
+singularities, we show the existence of a meromorphic continuation for these zeta
+functions as rational functions of q −s , see Theorem 3.3. We also extend Igusa’s
+stationary phase method for oscillatory integrals (and certain exponential sums)
+depending on a p-adic parameter to the case of Laurent polynomials, see Theorem
+4.2. Here, a new and interesting phenomenon occurs: there are two different asymptotic expansions for p-adic oscillatory integrals, one when the absolute value of
+the parameter approaches infinity, the other when the absolute value of the parameter approaches zero. These two asymptotic expansions are controlled by the poles
+of twisted local zeta functions.
+The classical local zeta functions are connected with polynomial congruences
+mod pm . In the case of Laurent polynomials the corresponding local zeta functions
+control the asymptotic behavior of the volumes of ‘tubular neighborhoods’ attached
+to the polynomials, see Theorem 3.8.
+There are several important differences between the classical local zeta functions
+for non-degenerate polynomials and the local zeta functions studied here. First,
+2000 Mathematics Subject Classification. Primary 14G10, 11S40; Secondary 11T23, 14M25.
+Key words and phrases. p-adic oscillatory integrals, Laurent polynomials, Igusa zeta function,
+Newton polytopes, non-degeneracy conditions at infinity.
+The second author was partially supported by Conacyt (Mexico), Grant # 127794.
+1
+
+2
+
+E. LEÓN-CARDENAL AND W. A. ZÚÑIGA-GALINDO
+
+the classical local zeta functions have only poles with negative real parts while the
+local zeta functions for Laurent polynomials have poles with positive and negative
+real parts. This fact makes more difficult the determination of the actual poles of
+these new local zeta functions. Second, the convergence of the integral defining the
+local zeta function (see Definition 3.2) is not a straightforward matter due to the
+presence of ‘denominators.’
+Finally we want to comment that our initial motivation was to find p-adic counterparts of certain estimates for exponential sums attached to non-degenerate Laurent polynomials over finite fields due to Adolphson and Sperber [1] and Denef and
+Loeser [6], see Corollary 4.3.
+Acknowledgement. The authors want to thank to the referees for their careful
+reading of the article and for several useful suggestions.
+2. Newton Polytopes, Non-degeneracy Conditions and Toric
+Manifolds
+In this section, we review some basic results on toric manifolds, and non-degeneracy
+conditions for Laurent polynomials over a local field of characteristic zero. The results needed here are variations of the ones given in [14]-[15], [17], in the Archimedean
+setting. The material needed to adapt these results to the p-adic setting can be
+found in [12], [18].
+2.1. Newton Polytopes. We set R+ := {x ∈ R; x ⩾ 0}. Let h·, ·i denote the
+usual inner product of Rn , and identify the dual space of Rn with Rn itself by
+means of it.
+Let K be a local field of characteristic zero. Let
+X
+
+
+−1
+f (x) =
+am xm ∈ K x1 , . . . , xn , x−1
+1 , . . . , xn
+m∈Zn
+
+be a non-constant Laurent polynomial. Set supp(f ) := {m ∈ Zn ; am 6= 0}. We
+define the Newton polytope Γ∞ (f ) := Γ∞ of f at infinity as the convex hull of
+supp(f ) in Rn . Note that, if supp(f ) = {m1 , . . . , ml }, then
+( l
+)
+l
+X
+X
+Γ∞ = conv (m1 , . . . , ml ) =
+λi mi ; λ1 , . . . , λl ∈ R+ ,
+λi = 1 .
+i=1
+
+i=1
+
+In combinatorics a set like Γ∞ is typically called a rational (or lattice) polytope (i.e.
+a compact polyhedron). From now on, we will use just polytope to mean rational
+polytope and assume that dim Γ∞ = n.
+
+2.1.1. Faces. Let H be the hyperplane {x ∈ Rn ; ha, xi = b}. Then H determines
+two closed half-spaces:
+H + := {x ∈ Rn ; ha, xi ≥ b}
+
+and
+
+H − := {x ∈ Rn ; ha, xi ≤ b} .
+
+We say that H is a supporting hyperplane of Γ∞ , if Γ∞ ∩H 6= ∅ and Γ∞ is contained
+in one of the closed half-spaces determined by H.
+The dimension of a face τ of Γ∞ is the dimension of its affine span, and its
+codimension is cod (τ ) = n − dim (τ ). A face of codimension 1 is a facet. Faces
+of dimension 0 and 1 are called vertices and edges respectively. We denote by
+
+ZETA FUNCTIONS FOR LAURENT POLYNOMIALS
+
+3
+
+vert(Γ∞ ) the set of vertices of Γ∞ . A face of Γ∞ different from Γ∞ is called
+proper.
+Given a ∈ Rn , we define
+d(a, Γ∞ ) := d(a) = inf {ha, xi ; x ∈ Γ∞ } .
+
+Note, that since a convex polytope is the convex hull of its vertices, we can take
+the infimum as v varies in vert(Γ∞ ), which is a finite set, hence
+d(a) = min {ha, xi ; x ∈ vert(Γ∞ )} ,
+
+and d(a) = ha, x0 i for some x0 ∈ vert(Γ∞ ).
+
+2.1.2. Primitive vectors and facets. Given a supporting hyperplane H containing
+a facet of Γ∞ , there exists a unique vector a ∈ Zn r {0} perpendicular to H and
+directed into the polytope. This vector is called the inward normal to H. A vector
+a = (a1 , . . . , an ) ∈ Zn is called primitive if g.c.d.(a1 , . . . , an ) = 1. Every facet has a
+unique primitive inward vector. We denote the set of all these vectors as D(Γ∞ ).
+2.2. Cones and Fans. We now review the construction of conical subdivisions of
+Rn and Rn+ subordinated to Γ∞ . Such constructions are simple variation of some
+well-known ones, see e.g. [10], [15, The main example, Section 1.2], [22, Chapter
+7], we also use [5], [19], for this reason we do not give proofs.
+We recall that the cone strictly spanned by the vectors a1 , . . . , ar ∈ Rn \ {0}
+is the set ∆◦ = {λ1 a1 + ... + λr ar ; λi ∈ R+ , λi > 0}. Notice that the topological
+closure of ∆◦ is
+(2.1)
+
+∆ = {λ1 a1 + ... + λr ar ; λi ∈ R+ , λi ≥ 0} ,
+
+cf. Lemma 2.1. This set is typically called a convex polyhedral cone. If a1 , . . . , ar are
+linearly independent over R, ∆◦ and ∆ are called simplicial cones. If a1 , . . . , ar ∈
+Zn , we say ∆◦ and ∆ are rational cones. If {a1 , . . . , ar } is a subset of a basis of the
+Z-module Zn , we call ∆◦ and ∆ simple cones. The justification for this ‘unusual’
+approach is the following. The computation and the obtention of explicit formulas
+of local zeta functions require ‘open cones’, see Remark 3.5 (ii) and [5], [20], [24],
+while calculations using toroidal resolution of singularities require ‘closed cones’.
+We define the first meet locus of a ∈ Rn as
+F (a, Γ∞ ) := F (a) = {x ∈ Γ∞ ; ha, xi = d (a)} .
+
+Note that F (a) is a face of Γ∞ , and that F (0) = Γ∞ .
+We define an equivalence relation on Rn by taking
+
+a ∼ a′ ⇐⇒ F (a) = F (a′ ) .
+If τ is a face of Γ∞ , we define the cone associated to τ as
+
+∆◦τ = a ∈ Rn+ ; F (a) = τ .
+
+Lemma 2.1. Let τ be a proper face of Γ∞ . Then
+(1) ∆◦τ is a relatively open in the vector subspace of Rn spanned by ∆◦τ .
+(2) The topological closure ∆τ of ∆◦τ is a rational convex polyhedral cone with vertex
+at the origin, and
+∆τ = {a ∈ Rn ; F (a) ⊃ τ } .
+
+(3) dim ∆◦τ = dim ∆τ = n − dim τ.
+(4) The function d (·) is linear on ∆τ .
+
+

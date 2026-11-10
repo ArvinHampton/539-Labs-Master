@@ -1,0 +1,49 @@
+[PASS] A0 rep(sign=+1): Clifford(1,10) exact; Gamma^(0..10) = c*Id with c=1
+[PASS] A0 rep(sign=-1): Clifford(1,10) exact; Gamma^(0..10) = c*Id with c=-1
+[PASS] A0b both inequivalent representations realised (c=+1 and c=-1)
+[PASS] A1 c=-1 F4: Gamma^0123 Gamma^r vol_F Gamma^nu = (perm sign 1)*c*Id exactly
+[PASS] A2 c=-1 F4: all 16 (chi4,s,n) cases: dim 4, vol_F single real eigenvalue, rank 2 with Gamma^12=i
+[PASS] A1 c=-1 C4: Gamma^0123 Gamma^r vol_F Gamma^nu = (perm sign 1)*c*Id exactly
+[PASS] A2 c=-1 C4: all 16 (chi4,s,n) cases: dim 4, vol_F single real eigenvalue, rank 2 with Gamma^12=i
+[PASS] A3 c=-1 lock sign +1: locked&Gamma^n=+1 dim 4, single s3* w.r.t. o_p, equal for n=+-e_r, opposite for opposite chi4 (s3*(i)=1)
+[PASS] A3 c=-1 lock sign -1: locked&Gamma^n=+1 dim 4, single s3* w.r.t. o_p, equal for n=+-e_r, opposite for opposite chi4 (s3*(i)=-1)
+[PASS] A4 c=-1: CH unique s1, and flipping s3 at fixed (chi4,s2') flips s1 (all 8 cases)
+[PASS] A5 c=-1: for either lock sign, exactly one of the two pole sections is unlocked when s2' agrees and s3 flips
+[PASS] A1 c=+1 F4: Gamma^0123 Gamma^r vol_F Gamma^nu = (perm sign 1)*c*Id exactly
+[PASS] A2 c=+1 F4: all 16 (chi4,s,n) cases: dim 4, vol_F single real eigenvalue, rank 2 with Gamma^12=i
+[PASS] A1 c=+1 C4: Gamma^0123 Gamma^r vol_F Gamma^nu = (perm sign 1)*c*Id exactly
+[PASS] A2 c=+1 C4: all 16 (chi4,s,n) cases: dim 4, vol_F single real eigenvalue, rank 2 with Gamma^12=i
+[PASS] A3 c=+1 lock sign +1: locked&Gamma^n=+1 dim 4, single s3* w.r.t. o_p, equal for n=+-e_r, opposite for opposite chi4 (s3*(i)=-1)
+[PASS] A3 c=+1 lock sign -1: locked&Gamma^n=+1 dim 4, single s3* w.r.t. o_p, equal for n=+-e_r, opposite for opposite chi4 (s3*(i)=1)
+[PASS] A4 c=+1: CH unique s1, and flipping s3 at fixed (chi4,s2') flips s1 (all 8 cases)
+[PASS] A5 c=+1: for either lock sign, exactly one of the two pole sections is unlocked when s2' agrees and s3 flips
+[PASS] B1 c2(S^+ (x) lambda), c1(lambda)=k*alpha: 2*g - 2; expand(c2-(2g-2))==0
+[PASS] B2 c2(S^- (x) lambda), c1(lambda)=k*alpha: 2 - 2*g; expand(c2+(2g-2))==0
+[PASS] B3 Bolza g=2: (+2,-2); torus control g=1: (0,0)
+[PASS] B4 premise-necessity: with a fibre component c1(lambda)=k*alpha+j*beta, c2 = 2*g + 2*j*k - 2, -2*g + 2*j*k + 2 (depends on k*j; vanishes e.g. g=2,k=1,j=-1)
+[PASS] B5 Sigma_g x S^2: correct form (c1^2 -+ 2chi - 3sigma)/4 reproduces (+(2g-2), -(2g-2)) at sigma=0
+[PASS] B6 filing text form (c1^2 - 2chi -+ 3sigma)/4 gives +(2g-2) for BOTH at sigma=0, contradicting FX-2b (transcription error, W^- line)
+[PASS] B7 S^2xS^2 control: c2(S^+)=-2, c2(S^-)=2; (0 -+ 2*4 - 0)/4 = (-2, +2)
+[PASS] B8 CP^2 control: c2(W^+)=0=(9-6-3)/4, c2(W^-)=3=(9+6-3)/4 (chi=3, sigma=1)
+[PASS] B9 S^2-bundle intersection form [[0,1],[1,e]]: det=-1 for all e (eigenvalues of opposite sign: sigma=0); chi(Sigma_2 x S^2)=-4
+[PASS] C1 rotation weight w.r.t. one global orientation of S^2: north [[0, -w], [w, 0]], south [[0, w], [-w, 0]] (weights +w, -w)
+[PASS] C2 two-pole charges q_N - q_S = w*s3* (nonzero for w != 0, s3* = +-1) => no common charge
+[PASS] C3 S-pole equation a s2 - b s3 = 2q is the N-pole equation under (s2,s3)->(s2,-s3): bijection of solution sets (expand==0)
+[PASS] C4 product of the 6 pairwise differences = 64*a**2*b**2*(a - b)*(a + b): a coincidence occurs iff a=0, b=0 or a=+-b
+[PASS] C5 for a=b the coincident pair (+,-),(-,+) has value 0; for a=-b the pair (+,+),(-,-) has value 0 => residual exactly |a|=|b|, q=0
+[PASS] C6 sweep |a|,|b|<=6 (a,b != 0): N and S solution counts equal; non-unique only with |a|=|b| and 2q=0: [(True, 0)]
+[PASS] C7 orbit dims on S^4: full 3, SO(3)_R 2, T^2 2, diagonal 1; cohomogeneity with H_Sigma: 2,3,3,4, none 5
+[PASS] C8 counterexample to A12's residual sentence: the E4-6 main case (H_Sigma x SO(3)_R x U(1)_R, singular on C4) is in A10 and has cohomogeneity 2 < 4
+[PASS] D1 axis mu=e1 (own normal chart, t_a(r) generic, then (ln t_a)'=tau_a): shape operator diagonal and all 4 margins = (2phi'-A') + closed form
+[PASS] D1 axis mu=e3 (own normal chart, t_a(r) generic, then (ln t_a)'=tau_a): shape operator diagonal and all 4 margins = (2phi'-A') + closed form
+[PASS] D1 axis mu=e5 (own normal chart, t_a(r) generic, then (ln t_a)'=tau_a): shape operator diagonal and all 4 margins = (2phi'-A') + closed form
+[PASS] D2 Z-N3 re-derived: m(e1;e2)+2m(e3;e4)+2m(e5;e1) - 5(2phi'-A') == 0 (expand), weights (1,2,2) >= 0
+[PASS] D3 Sigma margin (k_S-k_x)/eps = 5phi'-A' (frozen k_S, k_x; D' cancels)
+[PASS] D4 Z-N5 chain: -V - [(9/2)A'^2 - 30lam'^2 - (3/2)w'^2] = -30(phi'-A'/2)(phi'+A'/2) on the constraint (expand==0)
+[PASS] D5 A'<=0 is a needed premise: (A',phi')=(1,0) has 2phi'<=A' but (phi'-A'/2)(phi'+A'/2) = -1/4
+[PASS] D6 '|V| <= (3/8)*12A'^2' is not implied when V>0: at (A',phi',lam',w')=(-1,-1,0,0) all axis/Sigma margins [-4, -1] <= 0, V=18 > 9/2; the -V form holds
+[PASS] D7 Z-N6: at zero scalar velocity comb = -5A' (expand==0)
+[PASS] D8 frozen V at the MN2 point = -3*2**(2/3) = -3*2^(2/3) < 0 (exact), so A'(MN2) = -sqrt(-V0/12) = -2^(-2/3) != 0
+[PASS] D9 NL's re-typed face formulas, T, constraint, A'=-sqrt branch occur verbatim in frozen 21bcbc3f (grid excludes the axis points)
+SUMMARY: 47 passed, 0 failed
+exit 0

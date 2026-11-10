@@ -1,0 +1,284 @@
+1
+
+THE KRONECKER LIMIT FORMULAS VIA THE
+DISTRIBUTION RELATION
+
+arXiv:0807.4008v1 [math.NT] 25 Jul 2008
+
+KENICHI BANNAI AND SHINICHI KOBAYASHI
+Abstract. In this paper, we give a proof of the classical Kronecker
+limit formulas using the distribution relation of the Eisenstein-Kronecker
+series. Using a similar idea, we then prove p-adic analogues of the Kronecker limit formulas for the p-adic Eisenstein-Kronecker functions defined in our previous paper.
+
+1. Introduction
+In these notes, we will give a proof of the classical first and second Kronecker limit formulas concerning the limit of values of Eisenstein-KroneckerLerch series. Our proof is based on the distribution relation of the EisensteinKronecker-Lerch series. Using a similar idea, we then prove p-adic analogues
+of these formulas for the p-adic Eisenstein-Kronecker functions defined in our
+previous paper [BFK].
+Let Γ ⊂ C be a lattice. We define a pairing for z, w ∈ C by hz, wiΓ :=
+exp [(zw − wz)/A(Γ)], where A(Γ) is the area of the fundamental domain of
+Γ divided by π = 3.1415 · · · . Then for an integer a and a fixed z0 , w0 ∈ C,
+the Eisenstein-Kronecker-Lerch series is defined as
+X∗ (z 0 + γ)a
+hγ, w0 iΓ ,
+Ka∗ (z0 , w0 , s; Γ) =
+γ∈Γ |z0 + γ|2s
+P
+where ∗ denotes the sum taken over all γ ∈ Γ except for γ = −z0 if z0 ∈ Γ.
+The above series converges for Re(s) > a/2+ 1, but one may give it meaning
+for general s by analytic continuation. In what follows, we omit the Γ from
+the notations if there is no fear of confusion.
+We let θ(z) be the reduced theta function on C/Γ associated to the divisor
+[0] ⊂ C/Γ, normalized so that θ ′ (0) = 1. Then the Kronecker limit formulas
+are given as follows.
+Theorem 1.1 (Kronecker limit formulas). Let c be the Euler constant c :=
+limn→∞ 1 + 21 + · · · + n1 − log n , and let ∆ be the discriminant of Γ defined
+P
+as ∆ := g23 − 27g32 , where gk := γ∈Γ\{0} γ −2k . Then we have the following.
+(i) The first limit formula
+
+
+1
+1
+∗
+= − log |∆|2 − 2 log A + 2c.
+lim AK0 (0, 0, s) −
+s→1
+s−1
+12
+
+1
+
+The 2000 Mathematics Subject Classification: 11M35, 11M36, 11S80
+1
+
+2
+
+KENICHI BANNAI AND SHINICHI KOBAYASHI
+
+(ii) For z ∈
+/ Γ, the second limit formula
+|z|2
+1
+−
+log |∆|2 .
+A
+12
+Numerous proofs exist for this classical formula, and many of the proofs
+rely on arguments concerning the moduli space. We give a proof of the
+above theorem, valid for a fixed lattice Γ ⊂ C, using the Kronecker theta
+function. As in the original proof by Kronecker, we first prove the second
+limit formula, and then deduce the first limit formula from the second. The
+key in our proof is the distribution relation for the Eisenstein-Kronecker
+function.
+Our view of understanding the Kronecker limit formulas in terms of the
+Kronecker theta function and the distribution relation allows us to prove the
+following p-adic analogues of Theorem 1.1. Suppose now that Γ corresponds
+to a period lattice corresponding to the invariant differential ω = dx/y of an
+elliptic curve E : y 2 = 4x3 −g2 x−g3 with complex multiplication by the ring
+of integers OK of an imaginary quadratic field K. We assume in addition
+that E is defined over K, and that the model above has good reduction at
+the primes above p ≥ 5. We fix a branch of the p-adic logarithm, which is
+a homomorphism logp : C×
+p → Cp . In the paper [BFK], we introduced the
+col (z) as a Coleman function for integers
+p-adic Eisenstein-Kronecker series Ea,b
+a, b such that b ≥ 0. This function is a p-adic analogue of the Kronecker
+double series
+X∗ γ a+b
+∗
+hγ, zi.
+Ka+b
+(0, z, b) =
+γ∈Γ |γ|b
+In this paper, we let
+col
+col
+Ka+b
+(0, z, b) := Ea,b
+(z)
+AK0∗ (0, z, 1) = − log |θ(z)|2 +
+
+to highlight the analogy. Then in analogy with Theorem 1.1 (ii), we have
+the following.
+Theorem 1.2 (p-adic Kronecker second limit formula). For any prime p ≥ 5
+of good reduction, we have the second limit formula
+1
+K0col (0, z, 1) = − logp θ(z) −
+logp ∆,
+12
+where logp θ(z) is a certain p-adic analogue of the function log |θ(z)|−|z|2 /A
+defined in Definition 3.1 using the reduced theta function θ(z) and the branch
+of our p-adic logarithm.
+The p-adic analogues of Kronecker second limit formula were previously
+investigated by Katz [Ka] and de Shalit [dS] in the context of p-adic Lfunctions when p is a prime of good ordinary reduction. Our formulation
+via p-adic Eisenstein-Kronecker series gives a direct p-adic analogue, and is
+valid even for supersingular p.
+When p ≥ 5 is a prime of good ordinary reduction, we defined in [BK1]
+§3.1 a two-variable p-adic measure µ := µ0,0 on Zp × Zp interpolating
+
+KRONECKER LIMIT FORMULAS
+
+3
+
+∗ (0, 0, b)/Aa
+Eisenstein-Kronecker numbers, or more precisely, the values Ka+b
+for a, b ≥ 0. We define the p-adic Eisenstein-Kronecker-Lerch series by
+Z
+(p)
+Ka (0, 0, s) :=
+hxis−1 ω(y)a−1 hyia−s dµ(x, y)
+×
+Z×
+p ×Zp
+
+×
+×
+for any s ∈ Zp , where h−i : Z×
+p → Cp is given as the composition Zp →
+×
+×
+1 + pZp ֒→ Cp and ω : Zp → µp−1 is the Teichmüller character. Then an
+argument similar to the proof of Theorem 1.1 (i) gives the following.
+
+Proposition 1.3. Suppose p ≥ 5 is a prime of good ordinary reduction.
+Then
+
+
+1
+(p)
+−1
+lim K (0, 0, s) = Ωp
+1−
+logp π
+s→1 0
+p
+where Ωp is a p-adic period of the formal group of E.
+The proof of the above proposition is similar to that of the proof of Theorem 1.1. However, due to the existence of a trivial zero for the function
+(p)
+K0 (0, 0, s) at s = 1, the analogy with the classical case is not perfect. See
+Remark 3.8 for details.
+2. Kronecker limit formulas
+2.1. Kronecker’s Theorem. In this section, we recall the definition of
+Eisenstein-Kronecker-Lerch series and the Kronecker theta function. Then
+we will state Kronecker’s theorem giving the relation between the two. All
+of the results are contained in [We1]. Se also [BK1] or [BKT].
+We fix a lattice Γ in C and let A be the area of the fundamental domain
+of Γ divided by π. Let a be an integer ≥ 0. For a fixed z0 , w0 ∈ C, we let
+θa∗ (t, z0 , w0 ) be the function
+X∗
+exp(−t|z0 + γ|2 /A)hγ, w0 i(z 0 + γ)a ,
+θa∗ (t, z0 , w0 ) =
+P∗
+
+γ∈Γ
+
+means the sum taken over all γ ∈ Γ other than −z0 if z0 is in Γ.
+where
+Furthermore, we let
+Z ∞
+θa∗ (t, z0 , w0 )ts−1 dt.
+Ia (z0 , w0 , s) :=
+1
+
+Then we have
+
+(1) As Γ(s)Ka∗ (z0 , w0 , s) = Ia (z0 , w0 , s) −
+
+δz0 ,a
+hw0 , z0 i
+s
+
+δw0 ,a
+,
+s−1
+where δa,x = 1 if a = 0 and x ∈ Γ, and δa,x = 0 otherwise. The above
+integral expression gives the meromorphic continuation of Ka∗ (z0 , w0 , s) to
+the whole complex plane, and also the functional equation.
+We next review the definition of the Kronecker theta function. We let θ(z)
+be the reduced theta function on C/Γ associated to the divisor [0] ∈ C/Γ,
++ Ia (w0 , z0 , a + 1 − s)hw0 , z0 i +
+
+4
+
+KENICHI BANNAI AND SHINICHI KOBAYASHI
+
+normalized so that θ ′ (0) = 1. This function may be given explicitly in terms
+of the Weierstrass σ-function
+
+
+
+Y 
+z
+z2
+z
++ 2
+exp
+σ(z) := z
+1−
+γ
+γ 2γ
+γ∈Γ\{0}
+
+as follows. Let e∗0,2 := lims→2+
+
+P
+
+2
+−2s . Then θ(z) is given as
+γ∈Γ\{0} γ |γ|
+
+"
+
+#
+−e∗0,2 z 2
+θ(z) = exp
+σ(z).
+2
+This function is known to satisfy the transformation formula
+
+
+zγ
+γγ
+θ(z + γ) = ε(γ) exp
++
+θ(z)
+A
+2A
+for any γ ∈ Γ, where ε : Γ → {±1} is such that ε(γ) = −1 if γ ∈ 2Γ and
+ε(γ) = 1 otherwise. We define the Kronecker theta function Θ(z, w) by
+Θ(z, w) :=
+
+θ(z + w)
+.
+θ(z)θ(w)
+
+The above function is known to be a reduced theta function associated to
+the Poincaré bundle on C/Γ × C/Γ.
+For any z, w ∈ C such that z, w 6∈ Γ, we let Ka (z, w, s) := Ka∗ (z, w, s),
+which we view as a C ∞ function for z and w. The relation between this
+function and the Kronecker theta function is given by the following theorem
+due to Kronecker.
+Theorem 2.1 (Kronecker).
+
+zw
+K1 (z, w, 1).
+Θ(z, w) = exp
+A
+
+
+The above theorem was originally proved in terms of Jacobi theta functions by Kronecker using moduli arguments (See for example [We1].) In
+[BK1] or [BK2], we give another proof valid for a fixed lattice Γ ⊂ C using the fact that both sides of the equality are reduced meromorphic theta
+functions associated to the Poincaré bundle on C/Γ × C/Γ, with the same
+poles and the same residue at each pole.
+2.2. Proof of the second limit formula. In this subsection, we deduce
+Theorem 1.1 (ii) from Theorem 2.1.
+Proposition 2.2. There exists a constant C such that
+log |θ(z)|2 −
+for any z ∈
+/ Γ.
+
+|z|2
+= −AK0∗ (0, z, 1) + C
+A
+
+

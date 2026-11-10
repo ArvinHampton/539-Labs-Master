@@ -1,0 +1,10 @@
+PARI stack size set to 3000000000 bytes, maximum size set to 3000000512
+Traceback (most recent call last):
+  File "/workspace/quantum-comp/reports/evidence_local_t4407_computations_2026-11-09/oa_v4.py", line 6, in <module>
+    P("KB=mfkohnenbasis(m); I=matintersect(KB,K); KP=matrix(#I,701,j,i,mfcoefs(mflinear(Bh,I[,j]),700)[i])")
+    ~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cypari2/pari_instance.pyx", line 800, in cypari2.pari_instance.Pari.__call__
+  File "cypari2/gen.pyx", line 4784, in cypari2.gen.objtogen
+  File "cypari2/convert.pyx", line 545, in cypari2.convert.PyObject_AsGEN
+  File "cypari2/handle_error.pyx", line 211, in cypari2.handle_error._pari_err_handle
+cypari2.handle_error.PariError: variable name expected

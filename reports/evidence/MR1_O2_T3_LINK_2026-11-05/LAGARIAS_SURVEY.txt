@@ -1,0 +1,260 @@
+                                               The 3x + 1 Problem: An Annotated Bibliography (1963–1999)
+                                                                   (Sorted by Author)
+                                                                                       Jeffrey C. Lagarias
+                                                                               Department of Mathematics
+                                                                                 University of Michigan
+arXiv:math/0309224v13 [math.NT] 11 Jan 2011
+
+
+
+
+                                                                               Ann Arbor, MI 48109–1109
+                                                                                 lagarias@umich.edu
+
+                                                                                   (January 1, 2011 version)
+
+
+
+                                              ABSTRACT. The 3x + 1 problem concerns iteration of the map T : Z → Z given by
+                                                                                     3x + 1
+                                                                                   
+                                                                                   
+                                                                                              if x ≡ 1 (mod 2) .
+                                                                                       2
+                                                                                   
+                                                                                   
+                                                                         T (x) =
+                                                                                   
+                                                                                         x
+                                                                                   
+                                                                                              if x ≡ 0 (mod 2) .
+                                                                                          2
+                                              The 3x + 1 Conjecture asserts that each m ≥ 1 has some iterate T (k) (m) = 1. This is an
+                                              annotated bibliography of work done on the 3x + 1 problem and related problems from 1963
+                                              through 1999. At present the 3x + 1 Conjecture remains unsolved.
+                                                  This version of the 3x + 1 bibliography sorts the papers alphabetically by the ﬁrst author’s
+                                              surname. A diﬀerent version of this bibliography appears in the recent book: The Ultimate
+                                              Challenge: The 3x + 1 Problem, Amer. Math. Soc, Providence, RI 2010. In it the papers are
+                                              sorted by decade (1960-1969), (1970-1979), (1980-1989), (1990-1999).
+
+
+                                              1. Introduction
+
+
+                                                  The 3x + 1 problem is most simply stated in terms of the Collatz function C(x) deﬁned
+                                              on integers as “multiply by three and add one” for odd integers and “divide by two” for even
+                                              integers. That is,                 
+                                                                                  3x + 1 if x ≡ 1 (mod 2) ,
+                                                                                 
+                                                                                 
+                                                                         C(x) =
+                                                                                       x
+                                                                                              if x ≡ 0 (mod 2) ,
+                                                                                   
+                                                                                   
+                                                                                   
+                                                                                        2
+                                              The 3x + 1 problem, or Collatz problem, is to prove that starting from any positive integer,
+                                              some iterate of this function takes the value 1.
+                                                 Much work on the problem is stated in terms of the 3x + 1 function
+                                                                                     3x + 1
+                                                                                   
+                                                                                   
+                                                                                              if x ≡ 1 (mod 2)
+                                                                                       2
+                                                                                   
+                                                                                   
+                                                                         T (x) =
+                                                                                   
+                                                                                         x
+                                                                                   
+                                                                                              if x ≡ 0 (mod 2) .
+                                                                                          2
+                                              The 3x + 1 conjecture states that every m ≥ 1 has some iterate T (k) (m) = 1.
+
+                                                                                               1
+    The 3x + 1 problem is generally attributed to Lothar Collatz and has reportedly circulated
+since at least the early 1950’s. It also goes under the names Syracuse Problem, Hasse’s Algo-
+rithm, Kakutani’s Problem and Ulam’s Problem. The ﬁrst published reference to a 3x + 1-like
+function that I am aware of is Klamkin (1963), which concern’s Collatz’s original function,
+which is a permutation of the integers. Collatz has stated that he studied this function in the
+1930’s, see Lagarias (1985). The 3x + 1 problem itself was reportedly described in an informal
+lecture of Collatz in 1950 at the International Math. Congress in Cambridge, Massachusetts
+(see Shanks (1965) and Trigg et al (1976)). The ﬁrst journal appearance of the 3x + 1 problem
+itself seems to be the text of a 1970 lecture of H. S. M. Coxeter, which appeared in Coxeter
+(1971). This was followed by Beeler et al (1972), Conway (1972), Gardner (1972), Kay (1972)
+and Ogilvy (1972). See Bryan Thwaites (1985) for his assertion to have formulated the problem
+in 1952. See Collatz (1986) for his assertions on formulating the 3x + 1 problem prior to 1952.
+    The 3x+ 1 problem can also be rephrased as a problem concerning sets of integers generated
+using aﬃne maps. Let T be the smallest set of integers including 1 and closed under iteration
+of the aﬃne maps x 7→ 2x and 3x + 2 7→ 2x + 1. Here the latter map is the aﬃne map y → 2y−1     3 ,
+with input restricted to integers y ≡ 2 (mod 3), so that the output is an integer. The 3x + 1
+conjecture asserts that T is the set of all positive integers. Therefore this bibliography includes
+work on sets of integers generated by iteration of aﬃne maps, tracing back to Isard and Zwicky
+(1970) and Klarner and Rado (1974), which includes a problem of Erdős, described in Klarner
+(1982).
+    As of 1999 the 3x + 1 conjecture was veriﬁed up to 2 × 1016 by a computation of Oliveira
+e Silva (1999). It has since been veriﬁed to at least 2 × 1018 in independent computations by
+Oliveira e Silva and Roosendaal. At present the 3x + 1 conjecture remains unsolved.
+
+   This bibliography includes some surveys on results on the 3x + 1 problem during 1963–
+1999: Lagarias (1985), Müller (1991), and the ﬁrst chapter of Wirsching (1998a).
+
+2. Terminology
+
+
+   We use the following deﬁnitions. The trajectory or forward orbit of an integer m is the set
+                                  {m, T (m) , T (2) (m), . . .} .
+The stopping time σ(m) of m is the least k such that T (k) (m) < m, and is ∞ if no such k exists.
+The total stopping time σ∞ (m) is the least k such that m iterates to 1 under k applications of
+the function T i.e.
+                             σ∞ (m) := inf {k : T (k) (m) = 1}.
+The scaled total stopping time or gamma value γ(m) is
+                                                    σ∞ (m)
+                                        γ(m) :=
+                                                    log m
+The height h(m) the least k for which the Collatz function C(x) has C (k) (m) = 1. It is easy to
+show that
+                                   h(m) = σ∞ (m) + d(m),
+where d(m) counts the number of iterates T (k) (m) in 0 ≤ k < σ∞ (m) that are odd integers.
+Finally, the function πa (x) counts the number of n with |n| ≤ x whose forward orbit under T
+includes a.
+
+                                                2
+3. Bibliography
+
+
+   This annotated bibliography mainly covers research articles and survey articles on the 3x+1
+problem and related problems. It provides additional references to earlier history, much of it
+appearing as problems. It also includes a few inﬂuential technical reports that were never
+published. Chinese references are written with surnames ﬁrst.
+
+  1. Sergio Albeverio, Danilo Merlini and Remiglio Tartini (1989), Una breve introduzione a
+     diffusioni su insiemi frattali e ad alcuni essempi di sistemi dinamici semplici, Note di
+     matematica e ﬁsica, Edizioni Cerﬁm Locarno 3 (1989), 1–39.
+
+          This paper discusses dimensions of some simple fractals, starting with the Sierpinski
+     gasket and the Koch snowﬂake. These arise as a ﬁxed set from combining several linear
+     iterations. It then considers the Collatz function iteration as analogous, as it is given
+     by set of two linear transformations. It looks at the tree of inverse iterates (”chalice”)
+     and estimates emprically the number of leaves at depth at most k as growing like ck for
+     c ≈ 1.265. It discusses various cascades of points that arrive at the cycle {1, 4, 2}.
+     It then looks at iteration schemes of type: start with vertices of equilateral triangle, and
+     a new point x0 not on the triangle. Then form f (x0 ) = x0 +x
+                                                                ξ
+                                                                   k
+                                                                     where ξ > 0 is a parameter.
+     then iterate with k varying in any order through 1, 2, 3. Depending on the value of ξ for
+     1 < ξ < 2 get a fractal set, for ξ = 2 get an orbit supported on Sierpinski gasket. It
+     discusses critical exponents, analogy with Julia sets, and then the Ising model.
+  2. Jean-Paul Allouche (1979), Sur la conjecture de “Syracuse-Kakutani-Collatz”, Séminaire
+     de Théorie des Nombres 1978–1979, Expose No. 9, 15pp., CNRS Talence (France), 1979.
+     (MR 81g:10014).
+
+         This paper studies generalized 3x + 1 functions of the form proposed by Hasse.
+     These have the form
+                                      mn + rj
+                                    
+                                    
+                                             if n ≡ j (mod d), 1 ≤ j ≤ d − 1
+                                        d
+                                    
+                                    
+              T (n) = Tm,d,R (n) :=
+                                       x
+                                              if n ≡ 0 (mod d) .
+                                    
+                                    
+                                    
+                                        d
+     in which the parameters (d, m) satisfy d ≥ 2, gcd(m, d) = 1, and the set R = {rj : 1 ≤
+     j ≤ d − 1} has each rj ≡ −mj ( mod d). The author notes that it is easy to show that all
+     maps in Hasse’s class with 1 ≤ m < d have a ﬁnite number of cycles, and for these maps
+     all orbits eventually enter one of these cycles. Thus we may assume that m > d.
+     The paper proves two theorems. Theorem 1 improves on the results of Heppner (1978).
+     Let T (·) be a function in Hasse’s class with parameters d, m. Let a > 1 be ﬁxed and
+                                                                                        mi
+     set k = ⌊ alog x
+                 log m ⌋. Let A, B be two rationals with A < B that are not of the form dj for
+     integers i ≥ 0, j ≥ 1, and consider the counting function
+                                                x
+                                                                           !
+                                                X              T (k) (n)
+                                Fa,A,B (x) :=         χ(A,B)                   ,
+                                                n=1
+                                                                   n
+
+     in which χ(A,B) (u) = 1 if A < u < B and 0 otherwise. Let C be the maximum of the
+     denominators of A and B. Then:
+
+                                                 3
+(i) If A < B < 0 then
+                                                       1
+                                                          
+                                   Fa,A,B (x) = O Cx a ,
+where the constant implied by the O-symbol is absolute.
+(ii) If B > 0 and there exists ǫ > 0 such that
+
+                               d−1    log d   log B
+                                   ≥        +       + ǫ,
+                                d    log m k log m
+
+then for k > k0 (ǫ), there holds
+                                                              | log η|
+                                                                          
+                                                 1     1− a log m
+                             Fa,A,B (x) = O Cx a + x
+
+                                                                                         d
+for some η with 0 < η < 1 which depends on ǫ. This is true in particular when m > d d−1
+with B ﬁxed and x → ∞.
+(iii) If B > A > 0 and if there exists ǫ such that
+
+                               d−1    log d   log A
+                                   ≤        +       − ǫ,
+                                d    log m k log m
+
+then for k > k0 (ǫ), there holds
+                                                              | log η|
+                                                                          
+                                                 1     1− a log m
+                             Fa,A,B (x) = O Cx + x
+                                                 a
+
+
+
+                                                                                         d
+for some η with 0 < η < 1 which depends on ǫ. This is true in particular when m < d d−1 ,
+with A ﬁxed and x → ∞.
+Theorem 2 constructs for given values d, m with gcd(m, d) = 1 with m > d ≥ 2 two
+functions F (·) and G(·) which fall slightly outside Hasse’s class and have the following
+properties:
+(i) The function F (·) has a ﬁnite number of periodic orbits, and every n when iterated
+under F (·) eventually enters one of these orbits.
+(ii) Each orbit of the function G(·) is divergent, i.e. |G(k) (n)| → ∞ as k → ∞, for all but
+a ﬁnite number of initial values n.
+To deﬁne the ﬁrst function F (·) pick an integer u such that d < m < du , and set
+                           mx + rj
+                         
+                         
+                                     if n ≡ j(mod du ), gcd(j, d) = 1,
+                               d
+                         
+                         
+               F (x) =
+                            x
+                                      if x ≡ j (mod du ), j ≡ 0(mod d).
+                         
+                         
+                              + sj
+                             d
+in which 0 < rj < du is determined by mj + rj ≡ 0(mod du ), and 0 ≤ sj < du−1 is
+determined by dj + rj ≡ 0(mod du−1 ). The second function G(x) is deﬁned by G(x) =
+F (x) + 1.
+These functions fall outside Hasse’s class because each is linear on residue classes n(mod
+du ) for some u ≥ 2, rather than linear on residue classes (mod d). However both these
+
+
+
+                                          4
+

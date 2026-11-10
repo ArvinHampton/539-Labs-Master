@@ -1,0 +1,14 @@
+SCRIPT_SHA256 1b8cd3c676c655b9a0aca183fd3fcdfe7d016ec25a88dadb25ed51f8c769b90f pp_independent_checks.py
+PASS no code use of 'nsimplify' (0 hits)
+PASS no code use of 'simplify(' (0 hits)
+PASS no code use of 'numpy' (0 hits)
+PASS no code use of 'allclose' (0 hits)
+PASS no code use of 'evalf' (0 hits)
+PASS no code use of 'float(' (0 hits)
+PASS no code use of 'Float' (0 hits)
+PASS no code use of 'mpmath' (0 hits)
+PASS no code use of 'mr2_' (0 hits)
+PASS no code use of 'import mr2' (0 hits)
+PASS no code use of 'riemann_at_point' (0 hits)
+PASS no float literals in AST
+ALL_CHECKS PASS

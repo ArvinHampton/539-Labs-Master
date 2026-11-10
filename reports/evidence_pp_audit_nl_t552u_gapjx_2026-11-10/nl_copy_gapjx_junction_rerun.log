@@ -1,0 +1,12 @@
+[PASS] J0 YM block data: rho = (Pff+Pm+Pss)/2, tr_Sigma S = Pss - Pff, tr_fib S = -Pm - 2Pss
+[PASS] J1 IR-kept: minimal negative tension = |1 + w_fib| rho_req exactly: 1/5 (UV end), 1/3 (IR end); exact primal + dual certificate
+[PASS] J2 UV-kept: minimal negative tension = |w_fib| |rho_req|: 6/5 (UV end), 4/3 (IR end); exact primal + dual certificate
+[PASS] J3 4 rho + tr_fib S = sum_types T (4 - n_fib) + 2Pff + Pm  (so negative tension with few fibre legs is the only fibre-NEC supply)
+[PASS] J4 wall-filling tension Lambda (either sign): S(k,k) = -Lambda h(k,k) = 0 for every null k = t + e_j (NEC-neutral)
+[PASS] J5 requirement (1/kappa^2) K x fibre / T_M5 ~ N; wall terms l^(2k-10) R^k: k=0 ~ N^(4/3) (Lambda), k=1 ~ N^(2/3), k=2 ~ N^0, k=3 ~ N^(-2/3)
+[PASS] J6 S4 scaling: G ~ 1/L; C^X8 delta-stress ~ N^-1 M5 units (smooth R), ~ N^0 (delta(0) ~ 1/l_P); relative to requirement N: N^-2, N^-1
+[PASS] J7 transgression: delta[eps^abcd F_ab.F_cd] = 4 d_c[eps^abcd F_ab.dA_d] (Bianchi + ad-invariance; so delta of a characteristic form is exact)
+[PASS] J8 any static Poincare face: rho = (2/kappa^2)(k_x - K), and tr_fib S + 4 rho = -(2/kappa^2) sum_f (K_ff - k_t)
+[PASS] J9 null k = t + e_j: S(k,k) = rho + S_jj = -(2/kappa^2)(K_jj - k_t) for every j (so DEC/NEC sources need K_jj <= k_t on every face)
+10/10 PASS
+ALL PASS

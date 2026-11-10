@@ -1,0 +1,7 @@
+# Soft SF HEARTBEAT — Local Path — 2026-10-27 14:05 CDT America/Chicago
+Where: Local Path / Bridge C A1→Ξ→RTA (local modular only). Prior heartbeat 1345CDT; Auditor CONFIRM t1348u on disk. Since then Local wrote ACK of PP sole-proof OW 31111e97… (FINDINGS f9b531f4… / PRESS a806aff9…), Auditor CONFIRM t1350u on disk. Local unpaid Soft SF queue EMPTY.
+New on disk (~14:03–14:04 CDT): OWNER_WRITE_LANE_SELF_PROVE_PP_AUDIT_KEEPER_2026-10-27.md — SUPERSEDES PP sole-proof authority and invent-pending→PP-for-proving; inventing lane (incl. Local) attempts its own proof; PP audits only; then Keeper (Auditor). Local ACK of this OW is PENDING (not written by this heartbeat).
+Invent proof-pursuit: G-vi-1 pursuit dccf3a8c… OPEN; canon 480f6d72… stays invented pending mathematical proof (P4 α=−1/2 MET conditional; P1 NOT-FEASIBLE-PENDING, ĝ_s transform ABSENT; P2/P3/P5 PARTIAL). G-vi-1 currently at PP via handoff 1b90d840…; under the new OW it returns to Local for self-prove. Bridge C: C1 blocked only on n↔A (D1 norm f8c95f7c…), NL lane.
+What doing: 15m heartbeat only. Not idle: pending absorb/ACK of lane self-prove OW, then resume G-vi-1 self-proof pursuit.
+Standing LIVE: HARD GATE + where-feasible + NOT-FEASIBLE 24h + USAGE VISIBILITY (no token halt) + research priority.
+tip Soft SF LOCK residual-c-field 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 tip_touched NO (re-hashed 14:05 CDT MATCH). Kerr BLOCKED. REPORTS ONLY. No RECS. Heartbeat is not a substitute for proof Soft SF.

@@ -1,0 +1,41 @@
+RUN_START_WALLCLOCK 2026-11-10 11:50:23 CST (America/Chicago)
+SCRIPT_SHA256 2d8092a779b8ed5cf4118d05f054ff9ccf227dbe10fc754a93d645ba10c75d5c mr2_hw_backreact_jet_charge_2026-11-10.py
+sympy 1.14.0
+
+== V. validation ==
+PASS V1 unit S^2 jet: R = 2
+PASS V2 unit S^3 jet: R = 6
+
+== J1-J3. g = dy^2 + h_ab(y,u,v), a,b in (t,u,v) Lorentzian; h = h0 + y h1 + y^2 h2; point y=0,u=1/3,v=1/5 ==
+PASS J1a constraints: G_yy contains no second y-derivative of h (independent of h2)
+PASS J1b constraints: G_ya (a = t,u,v) contain no second y-derivative of h
+PASS J1c evolution: R_ab = -(1/2) d_y^2 h_ab + (terms without h2), i.e. d_y^2 h is solved for algebraically (unit coefficient)
+PASS J2 Gauss constraint exact: 2 G_yy = -r[h] + (tr K)^2 - tr(K^2)
+  Codazzi sign found: +
+PASS J3 Codazzi constraint exact: G_ya = s (D_b K^b_a - D_a K), s = +1 or -1 fixed by convention
+
+== J4. Israel (PP/NL convention) with Z2: [K] = 2K+, K+_ab - h_ab K+ = -(kappa^2/2) S_ab, n = 10 ==
+PASS J4a inversion: K+ - h tr K+ = -(kappa^2/2) S (eigenvalue-wise, diagonalisable premise)
+PASS J4b tr K+ = kappa^2 tr S / 18
+PASS J4c (tr K+)^2 - tr(K+^2) = (kappa^4/4)((tr S)^2/9 - tr S^2)  [exact]
+
+== J5. T_yy = (1/12)(G_yPQR G_y^PQR - (1/8) g_yy G^2) with G = G_t + dy^H, Lorentzian D = 6 generic ==
+PASS J5 T_yy = H.H/24 - G_t.G_t/96 (full index contractions; exact)
+
+== J6. Gauss on the Z2 plane:  H.H/24 = -r/2 + (kappa^4/8)((trS)^2/9 - trS^2) + J.J/384   (G_t(0+) = J/2) ==
+  H.H/24 required = -(3*f1**4*kappa2**2 - 2*f1**2*f2**2*kappa2**2 + 4*f1**2*kappa2**2*tau + 3*f2**4*kappa2**2 + 4*f2**2*kappa2**2*tau - j**2 + 4*kappa2**2*tau**2 + 8*r)/16
+  example A (r=+1, kappa^2=1, f1=f2=1, tau=0, j=0): -3/4   example B (r=-1, same): 1/4
+PASS J6a the Gauss constraint is a genuine inequality on plane data (example A: required H.H < 0, no real H on Riemannian Y6)
+PASS J6b and is satisfiable (example B: required H.H > 0) -> no pointwise algebraic rule-out
+PASS J6c null-positivity of this content: S(k,k) >= 0 for k = t + e_i, all i (sums of squares / tau >= 0)
+
+== K. 11D thin-wall delta^2 coefficients (re-derived), Israel map, null-positivity lemma ==
+PASS K1 Ric_MN Ric^MN delta^2 coeff = tr k^2 + (tr k)^2
+PASS K2 Riem^2 delta^2 coeff = 4 tr k^2
+PASS K3 Weyl^2 delta^2 coeff = (32/9)(tr k^2 - (tr k)^2/10)
+PASS K4 Ric^2 coefficient form I + 11^T is positive definite (zero iff k = 0)
+PASS K5 Israel: [K] = 0 iff S = 0, and traceless [K]~ = -kappa^2 S~
+PASS K6 sum over null k = t +- e_i of |F(k,.)|^2 is positive definite (exact LDL): S_YM(k,k)=0 for all null k forces F = 0
+
+ALL_CHECKS PASS
+RUN_END_WALLCLOCK 2026-11-10 11:50:48 CST

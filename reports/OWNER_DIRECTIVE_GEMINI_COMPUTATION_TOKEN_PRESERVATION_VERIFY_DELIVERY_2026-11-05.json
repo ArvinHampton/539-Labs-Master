@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-11-05T15:13:24.142979-06:00",
+  "directive_sha256": "3921181508acede9740ba9892b35cb1e379d25ccc0af4f601cbe803a01b68b67",
+  "standing_rules_index_sha256": "b1400fd10005c673f95c22589f06cd1776d2cb6acb215f15e80588f6e1b3fd24",
+  "delivery_acknowledgements": 12,
+  "required_project_recipients": 12,
+  "recipients": [
+    "Local Path",
+    "Non Local Path",
+    "Auditor",
+    "Professor Proof",
+    "539 Labs Ops",
+    "Math Research 1",
+    "Math Research 2",
+    "Physics Research 1",
+    "Physics Research 2",
+    "Eigenvalues and matrix",
+    "Dataset Filtration",
+    "Agent"
+  ],
+  "interpretation": "Delivery confirmed, not yet all-recipient absorption, Gemini access verification, external prompt submission, or measured usage savings."
+}

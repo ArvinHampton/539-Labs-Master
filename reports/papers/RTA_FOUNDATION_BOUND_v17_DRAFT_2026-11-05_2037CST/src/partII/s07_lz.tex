@@ -1,0 +1,167 @@
+%=====================================================================
+\section{The Lewis--Zagier cocycle and quantum modularity}\label{sec:lz}
+%=====================================================================
+
+\subsection{Definitions}\label{sec:lzdef}
+Let $F=[e_1,\gamma e_1)$ (half-open, vertex excluded). For labels $(\alpha,\beta)$ set
+$E_{\alpha,\beta}(\tau)=\sum_{\nu\in F\cap(\alpha+\Z^2)}\e(B(\nu,\beta))\e(\tau Q(\nu))$, $E_L=E_{a,0}$ and $E_R=\sum_pE_{p,-a}$.
+Thus $E_L(\tau)=\sum_{\fa\in\K}\e(\tau\Nm\fa/20)$ and $E=q^{7/20}E_L$. At rational $x$,
+$E(x+iy)=2I\,G(x)/t+\kappa(x)+O(t)$ with no $t^{-1/2}$ term. Write $\kappa_L(x)$ and $\kappa_{p,-a}(x)$ for the radial constant terms of $E_L$ and $E_{p,-a}$ at $x$. The \emph{scalar cocycle} is
+\[
+\psi(x)=\kappa_L(-1/x)-\frac{|x|}{\sqrt{35}}\sum_p\kappa_{p,-a}(x)\qquad(x\in\Q\setminus\{0\}),
+\]
+a finite Shintani-type sum of $B_2$, $B_1B_1$ and roots of unity at each rational; hence $\psi(h/m)\in\Q(\zeta_N,\sqrt{35})$.
+The real factor $|x|$ is the one dictated by the profile law (Theorem~\ref{thm:profile}). On $\Hb$ we use
+\[
+\Psi(z)=E_L(-1/z)-\frac{z}{\sqrt{35}}E_R(z),\qquad \Psi^-(z)=E_L(-1/z)+\frac{z}{\sqrt{35}}E_R(z),
+\]
+whose radial constant terms at rational $x>0$, respectively $x<0$, are $\psi(x)$ (Theorem~\ref{thm:G}(ii)).
+For the vector, let $f_{\alpha,\beta}$ be the $\gamma$-averaged positive-frequency parts of $u_{\alpha,\beta}$, $\kappa$ the vector of their radial
+constant terms, and $\Phi(x)=\kappa(-1/x)-|x|\,S\kappa(x)$. Normalisation: $\Phi_{(a,0)}=2\psi$ (since $f_{u_L}=2E_L$).
+
+\subsection{The Green-form lemma}
+Let $R_z(w)=\mathrm{Im}\,w/((w-z)(\bar w-z))$, $[u,v]=u_wv\,dw+uv_{\bar w}\,d\bar w$ and $T_n(w)=\sqrt yK_0(2\pi|n|y)\e(nx)$.
+\begin{lemma}[Green-form lemma]\label{lem:green}
+For $z\in\Hb$, $F_n(z):=\int_z^{z+i\infty}[T_n,R_z^{1/2}]$ (vertical ray) equals $-\tfrac\pi2\e(nz)$ for $n>0$ and $0$ for $n<0$, and
+$\int_z^{z+i\infty}[\sqrt y,R_z^{1/2}]=\tfrac12$.
+\end{lemma}
+\begin{proof}
+$\Delta_wR_z^{1/2}=\tfrac14R_z^{1/2}$ and the form is closed (a direct computation). $R_z$ is holomorphic in $z$ and the endpoint term vanishes
+($R^{-1/2}\to0$ like $|w-z|^{1/2}$), so $F_n$ is holomorphic (in detail: the integrand is $O(s^{-1/2})$ at the lower end, so one works with translation covariance gives $F_n=C_n\e(nz)$. For $n<0$ boundedness forces $C_n=0$.
+For $n>0$, Laplace's method as $y\to\infty$ with $K_\nu(X)=\sqrt{\pi/(2X)}e^{-X}(1+O(1/X))$ (DLMF 10.40.2) gives the limit
+$(\sqrt{\pi a}/2)\int_0^\infty s^{-1/2}e^{-as}ds=\pi/2$ with $a=2\pi n$, and an overall minus sign. For $n=0$ the integral is
+$\tfrac14B(\tfrac12,1)=\tfrac12$.
+\end{proof}
+$F_{n,\eta}(z)=\int_{z+i\eta}^{z+i\infty}$; by closedness and the $z$-holomorphy of $R_z$, $\partial_{\bar z}F_{n,\eta}(z)=-T_n\,\partial_{\bar w}R_z^{1/2}$ at
+$w=z+i\eta$, which tends to $0$ locally uniformly, while $F_{n,\eta}\to F_n$ locally uniformly);
+\catA{Proved; the symbolic ingredients are checked by computer algebra. Independent $30$-digit quadrature at $z\in\{0.3+0.8i,-0.17+0.45i,1.1+1.3i\}$,
+$n\in\{\pm1,\pm2,3\}$ and $n=0$ agrees to $\le7\cdot10^{-22}$. This is the $s=\tfrac12$ case of the Lewis--Zagier construction \cite[Ch.~II \S2]{LZ}; the
+proof does not depend on the citation. By translation covariance the lemma holds for every real $n\neq0$.}
+
+\subsection{The branch lemma}
+For $z\in\C\setminus i\R$ write $\varsigma(z)=\sgn\mathrm{Re}\,z$.
+\begin{lemma}[Branch lemma]\label{lem:branch}
+Let $z\in\Hb\setminus i\R$ and let $C_z$ be the image of the vertical ray $-1/z+i\R_{\ge0}$ under $w'\mapsto-1/w'$, an arc from $z$ to $0$. On the ray take
+the positive root of $R_{-1/z}$; on $C_z$ take the root of $R_z$ continued from the principal root on $i\R_{>0}$ near $0$. Then, for $w\in C_z$,
+\[
+R_{-1/z}(-1/w)^{1/2}=\varsigma(z)\,z\,R_z(w)^{1/2}.
+\]
+\end{lemma}
+\begin{proof}
+Since $-1/w+1/z=(w-z)/(wz)$ and $\mathrm{Im}(-1/w)=\mathrm{Im}\,w/|w|^2$, one has $R_{-1/z}(-1/w)=z^2R_z(w)$. Both roots are continuous and nonvanishing along
+$C_z$, so the two sides agree up to a sign that is constant on $C_z$. Compare at $w\to0$ along $C_z$, where $C_z$ is tangent to $i\R$. There
+$R_z(w)=\mathrm{Im}\,w\,z^{-2}(1+o(1))$, and the principal root of $z^{-2}$ is $\varsigma(z)/z$ (the root with positive real part), so
+$\varsigma(z)\,z\,R_z(w)^{1/2}=(\mathrm{Im}\,w)^{1/2}(1+o(1))>0$. On the other side $-1/w\to i\infty$ on the ray, where $R_{-1/z}(-1/w)>0$ and its
+positive root is taken. Hence the sign is $+$.
+\end{proof}
+\catA{Elementary. Checked numerically at points of both half-planes (the sign is $+1$ for $\mathrm{Re}\,z>0$ and $-1$ for $\mathrm{Re}\,z<0$).}
+
+\subsection{Proof of the period formula}\label{sec:lzpf}
+\begin{proof}[Proof of Theorem~\ref{thm:G}]
+\emph{(i) Holomorphy.} On the path $w=it$, $R_z(it)=t/(t^2+z^2)$. For $z\notin i\R$ and $t>0$ we have $t^2+z^2\notin(-\infty,0]$, so the principal
+roots of $R_z(it)$ and of its $\bar w$-derivative are holomorphic in $z$. The integrand decays exponentially as $t\to0$ (since $u_R(it)=\sqrt{35}\,u_L(i/t)$
+and $u_L$ has no constant term) and is $O(t^{-2})$ as $t\to\infty$ (the $1/t$ terms of the constant-term integrand cancel). The convergence is
+locally uniform in $z$, so $\Omega$ is holomorphic on $\C\setminus i\R$.
+
+\emph{Identification on $\Hb$.} Fix $z\in\Hb\setminus i\R$ and put $\varsigma=\varsigma(z)$. Lemma~\ref{lem:green} at the point $-1/z$, applied to $u_L$
+(no constant term, $f_{u_L}=2E_L$), gives
+\[
+\int_{-1/z}^{-1/z+i\infty}[u_L,R_{-1/z}^{1/2}]=-\pi E_L(-1/z).
+\]
+Pull back by the involution $g:w\mapsto-1/w$, which maps the vertical ray from $-1/z$ onto the arc $C_z$ from $z$ to $0$. The Green form is natural:
+$g^*[u,v]=[u\circ g,v\circ g]$. By Theorem~\ref{thm:F}, $u_L\circ g=u_R/\sqrt{35}$, and by Lemma~\ref{lem:branch}, $R_{-1/z}^{1/2}\circ g=\varsigma\,z\,R_z^{1/2}$ on
+$C_z$. By bilinearity,
+\[
+-\pi E_L(-1/z)=\frac{\varsigma z}{\sqrt{35}}\int_{C_z}[u_R,R_z^{1/2}].
+\]
+Lemma~\ref{lem:green} at $z$, applied to $u_R$ (constant term $\sqrt y\log\varepsilon$, $f_{u_R}=2E_R$), gives
+$\int_z^{z+i\infty}[u_R,R_z^{1/2}]=-\pi E_R(z)+\tfrac12\log\varepsilon$. The form $[u_R,R_z^{1/2}]$ is closed on $\Hb\setminus\{z\}$ (both entries are
+$\Delta$-eigenfunctions with eigenvalue $\tfrac14$), $R_z$ has no zeros on $\Hb$, and the continuation of $R_z^{1/2}$ around the loop formed by the vertical
+ray from $z$, the imaginary axis and $C_z$ is single-valued (it is the positive root on the vertical ray and near $i\infty$, and the principal root on
+$i\R_{>0}$). At $w=z$ the integrand is $O(|w-z|^{-1/2})$, so small arcs around $z$ contribute $o(1)$; the contribution at height $Y\to\infty$ is $O(1/Y)$;
+at $0$ the arc $C_z$ is tangent to $i\R$ and $u_R$ decays exponentially. Hence
+\[
+\int_{C_z}[u_R,R_z^{1/2}]=\int_z^{z+i\infty}[u_R,R_z^{1/2}]-\int_0^{i\infty}[u_R,R_z^{1/2}]=-\pi E_R(z)+\tfrac12\log\varepsilon-\int_0^{i\infty}[u_R,R_z^{1/2}].
+\]
+Combining the last two displays and multiplying by $\varsigma/\pi$ (note $\varsigma^2=1$),
+\[
+\Omega(z)=\varsigma\,E_L(-1/z)-\frac z{\sqrt{35}}E_R(z),
+\]
+which is $\Psi(z)$ for $\mathrm{Re}\,z>0$ and $-\Psi^-(z)$ for $\mathrm{Re}\,z<0$. In particular $\Psi$ and $\Omega$ agree on $\Hb\cap\{\mathrm{Re}\,z>0\}$, so
+$\Psi$ continues holomorphically to $U$.
+
+\emph{(ii) Boundary values.} Let $x>0$ be rational and let $z=x+iy\to x$ non-tangentially in $\Hb$. With $t=2\pi y$ and $t''=-2\pi i(-1/z+1/x)=t/(xz)$
+(so that $\e(-1/z)=\e(-1/x)e^{-t''}$, and $t''\to0$ non-tangentially), R1 (\S\ref{sec:EM}) gives
+\[
+E_L(-1/z)=\frac{A_L(-1/x)}{t''}+\kappa_L(-1/x)+O(|t|^{1/2}),\qquad E_{p,-a}(z)=\frac{A_p(x)}{t}+\frac{h_p(x)}{t^{1/2}}+\kappa_{p,-a}(x)+O(|t|^{1/2}),
+\]
+where $E_L$ has no $t''^{-1/2}$ term (Lemma~\ref{lem:parity-cthird}). Since $1/t''=xz/t$, the $1/t$ part of $\Psi(z)$ is
+\[
+\frac{z}{t}\Bigl(x\,A_L(-1/x)-\frac1{\sqrt{35}}\sum_pA_p(x)\Bigr)=0
+\]
+\emph{exactly}, by Corollary~\ref{cor:profile}(iv) on the row $(a,0)$, whose $S$-row is $\frac1{\sqrt{35}}\sum_p$ over the labels $(p,-a)$. Therefore
+\[
+\Psi(z)=-\frac{z}{\sqrt{35}}\Bigl(\sum_ph_p(x)\Bigr)t^{-1/2}+\kappa_L(-1/x)-\frac{x}{\sqrt{35}}\sum_p\kappa_{p,-a}(x)+o(1).
+\]
+By (i), $\Psi=\Omega$ near $x$ and $\Omega$ is holomorphic at $x$, so $\Psi$ is bounded as $z\to x$. Hence $\sum_ph_p(x)=0$, and the limit is
+$\Omega(x)=\kappa_L(-1/x)-\frac{x}{\sqrt{35}}\sum_p\kappa_{p,-a}(x)=\psi(x)$.
+
+For rational $x<0$ the same computation applies to $\Psi^-$: its $1/t$ part is $\frac zt\bigl(xA_L(-1/x)+\frac1{\sqrt{35}}\sum_pA_p(x)\bigr)=\frac zt\bigl(-|x|A_L(-1/x)+\frac1{\sqrt{35}}\sum_pA_p(x)\bigr)=0$
+by Corollary~\ref{cor:profile}(iv); $\Psi^-=-\Omega$ is bounded near $x$, so the $t^{-1/2}$ coefficient vanishes, and
+$-\Omega(x)=\kappa_L(-1/x)+\frac{x}{\sqrt{35}}\sum_p\kappa_{p,-a}(x)=\psi(x)$.
+
+\emph{(iii) Rows.} For a row $u=u_{\alpha,\beta}$ with $S$-row combination $U$, the same argument (Lemma~\ref{lem:green} with the constant terms $a_0(u),a_0(U)$,
+the $S$-law of Theorem~\ref{thm:F}, Lemma~\ref{lem:branch}, Corollary~\ref{cor:profile}(iv) and R2 for the termwise integration) gives the split-contour formula
+\eqref{eq:rowform} below. The functions $J_U(x)$ and $J_u(-1/x)$ there are holomorphic in $x$ off $i\R$, so $\Phi$ is real-analytic on $\R\setminus\{0\}$. The
+three-term relation follows from $f(z+1)=Tf(z)$ and $(ST)^3=I$.
+\end{proof}
+The order of the argument in (ii) matters: the profile law removes the $1/t$ singularity exactly; boundedness, which comes from the holomorphic
+continuation (i), then removes the $t^{-1/2}$ term and identifies the limit.
+
+The split-contour form used numerically is $\psi(x)=-\tfrac1\pi\bigl[\tfrac x{\sqrt{35}}(\tfrac12\log\varepsilon-J_R(x))+J_L(-1/x)\bigr]$ for $x>0$,
+$J(z)=\int_i^{i\infty}[u,R_z^{1/2}]$. For every row $u=u_{\alpha,\beta}$, with $U$ the corresponding $S$-row combination and $a_0$ the constant term,
+\begin{equation}\label{eq:rowform}
+\Phi_u(x)=-\frac2\pi\Bigl[\,|x|\frac{a_0(U)}2-\frac{a_0(u)}2-|x|J_U(x)+J_u(-1/x)\Bigr].
+\end{equation}
+From $f(z+1)=Tf(z)$ and $(ST)^3=I$,
+\begin{equation}\label{eq:3term}
+\Phi(z)=T\,\Phi\bigl(z/(z+1)\bigr)+\frac z{z+1}\,TST\,\Phi(z+1).
+\end{equation}
+\catB{Supporting numerics for (ii)--(iii): a holomorphic fit from $\mathrm{Im}\,z\ge0.01$ reproduces the real-axis values to $2\cdot10^{-12}$ at $169$
+rationals; negative side with the factor $|x|$ to $1.6\cdot10^{-14}$. All $140$ rows at $x\in\{1,\tfrac13,2,\tfrac35,\tfrac74,-1,-\tfrac23\}$: singular
+cancellation $9.0\cdot10^{-16}$, no $t^{-1/2}$ terms $5.7\cdot10^{-16}$, $P\kappa=\kappa$ to $5.3\cdot10^{-15}$, closed form to $2.3\cdot10^{-14}$; \eqref{eq:3term}
+at $z\in\{1,\tfrac12,\tfrac23,\tfrac32\}$ to $7\cdot10^{-15}$.}
+
+\paragraph{The automorphy factor.} With the holomorphic factor $x$ in place of $|x|$ the cocycle at $x<0$ is unbounded (it grows like $1/y$); the bounded
+object on the negative side is $\Psi^-$, i.e.\ the real factor $|x|$. Numerically $\psi(-x)=\overline{\psi(x)}$ to $8\cdot10^{-14}$ (Category~B; this
+symmetry is not proved here and is not used). Near $0$, $\psi(x)\approx-0.0549i\,x^2+0.0206\,x^3$ (from $x=0.01,0.05$); $\psi$ is not analytic at $0$.
+Since $T$ acts by phases and $S,T$ generate, every $h_\gamma$ is real-analytic off $\gamma^{-1}\infty$. Example:
+$\psi(1)=0.006883993760419869190321587-0.03825971221697307224258855\,i$.
+\catB{Interpretation: the $72$-dimensional fundamental-domain vector is a vector-valued quantum modular form of weight $1$ in Zagier's sense for the
+real automorphy factor $|cx+d|$ (``weight $(\tfrac12,\tfrac12)$''), i.e.\ the $f$-function of a $\lambda=\tfrac14$ Maass vector, with exceptional
+set $\{0\}$ for $S$; $E$ itself is then a ``renormalised'' weight-$1$ quantum modular object with the singular parts $I\cdot G(x)$ removed. The
+Lewis--Zagier period-function reading \cite{LZ} and the broader context of \cite{BLZ} are cited for context only.}
+
+\subsection{The cocycle of the $E$-part}\label{sec:coc}
+\begin{theorem}[Cocycle of the $E$-part]\label{thm:coc5}
+Let $s=7$, and let $u_L$ and $E_L$ be as in \S\ref{sec:lz}.
+\begin{enumerate}[label=(\roman*)]
+\item (Constant) For $u=\sqrt y\sum A_nK_0(2\pi|n|y)\e(nx)+b\sqrt y$, $\int_z^{i\infty}[u,R_z^{1/2}]=-\tfrac\pi2 f_u(z)+\tfrac b2$, so $C=-\pi/2$ and $E_L(z)=-\tfrac1\pi\int_z^{i\infty}[u_L,R_z^{1/2}]$.
+\item (Boundary step, both signs of $cx+d$) If $u_L\circ\gamma'=u_L$, then for rational $x\neq\gamma'^{-1}\infty$,
+\[\kappa_L(x)-|cx+d|^{-1}\kappa_L(\gamma'x)=-\tfrac1\pi\int_{\gamma'^{-1}\infty}^{i\infty}[u_L,R_x^{1/2}],\]
+with branch sign $\sgn(cx+d)$, and the singular profile obeys $A(x)=|cx+d|\,A(\gamma'x)$.
+\item (Vector law) For all $140$ labels $\lambda=(\alpha,\beta)$, $u\circ\gamma'=\rho(\gamma')u$ for every $\gamma'\in\mathrm{SL}_2(\Z)$, with $\rho$ generated by the $S$- and $T$-matrices of
+Theorem~\ref{thm:F}. The constant terms $b_\lambda=\log\varepsilon\cdot\delta_{\alpha\in\Z^2}$ (here $\varepsilon=6+\sqrt{35}$) are carried inside the theta identity. The vector cocycle with $b$ holds for general $\gamma'$, and on the $L$-row at $\gamma'=S$ it reduces exactly to the $S$-formula for $\psi$ (\S\ref{sec:lzdef}).
+\end{enumerate}
+\end{theorem}
+\catA{(i): the integral is holomorphic and translation-covariant, so it equals $C\,\e(nz)$; the asymptotics as $y\to\infty$ give $C=-\pi/2$ (as in
+Lemma~\ref{lem:green}; the constant term contributes $b/2$). (ii): closedness of the Green form, the non-tangential expansion R1 and the
+positive-root branch comparison (Lemma~\ref{lem:branch} is the case $\gamma'=S$). (iii): Poisson summation at a fixed majorant, the $T$-law, the
+reductions, exact $\gamma^2$-periodicity and cycle integration, label by label.}
+\catB{The vector identity at $\gamma'=STS,\,ST^2S,\,ST^3S$ agrees to $\le3.3\cdot10^{-12}$; the scalar cocycle at $45$ rationals to $7\cdot10^{-13}$; the
+quadrature check of $C$ to $10^{-18}$; non-tangential $\kappa$ fits in $4$ directions.}
+
+\subsection{Interchange of sum and integral}\label{sec:R2}
+\textbf{R2.} The Fourier expansion of $u$ may be integrated termwise against $R_z^{1/2}$ along the paths used above: the frequencies satisfy
+$|Q|\ge n_0>0$ ($n_0=4/140$ for $u_R$, $0.35$ for $u_L$), there are $O(X)$ $\gamma$-orbits with $|Q|\le X$, and dominated convergence applies.
+\catA{Proved (elementary estimates).}

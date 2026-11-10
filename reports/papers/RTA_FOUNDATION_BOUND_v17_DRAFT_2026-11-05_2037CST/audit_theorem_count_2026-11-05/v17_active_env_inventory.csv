@@ -1,0 +1,259 @@
+file,env,title,line
+intro.tex,definition,,69
+intro.tex,proposition,,78
+partII/s03_main.tex,theorem,Shared remainder,6
+partII/s03_main.tex,theorem,Real-quadratic decomposition and ray class,19
+partII/s03_main.tex,theorem,Radial asymptotics and partial zeta values,31
+partII/s03_main.tex,theorem,Gauss-mean pattern and zero set,47
+partII/s03_main.tex,theorem,Baker obstruction: scalar no-go,55
+partII/s03_main.tex,theorem,Theta lift and vector-valued $S/T$ law,72
+partII/s03_main.tex,theorem,Lewis--Zagier period formula,92
+partII/s03_main.tex,theorem,Eisenstein/cusp split,115
+partII/s03_main.tex,theorem,Herglotz closed form,130
+partII/s03_main.tex,theorem,Closed form of $E_R$,139
+partII/s03_main.tex,conjecture,Cusp rows and $L(0)$,150
+partII/s04_rq.tex,remark,Origin of $\Cmixed$,21
+partII/s04_rq.tex,remark,Group data,61
+partII/s05_baker.tex,proposition,Cone Euler--Maclaurin,7
+partII/s05_baker.tex,lemma,Zwegers parts carry no $1/t$ term,43
+partII/s06_lift.tex,theorem,Profile $S/T$ law,12
+partII/s06_lift.tex,corollary,Consequences of Theorem~\ref{thm:profile},63
+partII/s06_lift.tex,remark,,125
+partII/s06_lift.tex,remark,Normalisation of the lift,132
+partII/s07_lz.tex,lemma,Green-form lemma,24
+partII/s07_lz.tex,lemma,Branch lemma,43
+partII/s07_lz.tex,theorem,Cocycle of the $E$-part,146
+partII/s08_split.tex,proposition,,72
+partII/s09_herglotz.tex,remark,Use of Theorem~\ref{thm:G} in this section,20
+partII/s09_herglotz.tex,lemma,Mittag-Leffler,27
+partII/s09_herglotz.tex,lemma,,33
+partII/s09_herglotz.tex,proposition,,39
+partII/s09_herglotz.tex,proposition,,46
+partII/s11_family.tex,remark,The $S$ versus $S^{-1}$ label convention,7
+partII/s11_family.tex,remark,Label operators,13
+partII/s11_family.tex,theorem,"Tensor factorisation, $s=7$",24
+partII/s11_family.tex,proposition,$V$ is the matched-sector space; local reflections,50
+partII/s11_family.tex,theorem,Tensor factorisation for odd $s$,78
+partII/s11_family.tex,remark,The two generators at $s=7$,101
+partII/s11_family.tex,proposition,Odd-parity sectors are cusp,109
+partII/s11_family.tex,proposition,Parity fact,114
+partII/s11_family.tex,proposition,Orbit lemma,118
+partII/s12_dims.tex,theorem,Dimensions,5
+partII/s12_dims.tex,remark,"Sector reading of the cusp dimension, odd $s$",68
+partII/s12_dims.tex,proposition,Complement trace,78
+partII/s12_dims.tex,proposition,Half-cone relations,82
+partII/s12_dims.tex,theorem,$\dim V(98)=2406$,86
+partII/s12_dims.tex,proposition,K1,98
+partII/s12_dims.tex,corollary,,109
+partII/s12_dims.tex,proposition,Sharpness of Proposition~K1 on the old space,113
+partII/s12_dims.tex,proposition,$s=64$,126
+partII/s12_dims.tex,proposition,Prime-square sectors: ranks,134
+partII/s12_dims.tex,theorem,Prime-square structure,141
+partII/s12_dims.tex,proposition,Exact splits,149
+partII/s12_dims.tex,proposition,Label-space counts at $s=121$ and $s=169$,153
+partII/s12_dims.tex,proposition,(C3) for small $p$,162
+partII/s12_dims.tex,proposition,Weil representations of $\Z/M$,167
+partII/s13_uL.tex,proposition,Cusp criterion for $u_L$,5
+partII/s13_uL.tex,theorem,Coset property,21
+partII/s13_uL.tex,theorem,Squarefree criterion,26
+partII/s13_uL.tex,proposition,Deep bad-prime parts,43
+partII/s13_uL.tex,proposition,Local root numbers,55
+partII/s14_hs.tex,theorem,$H_s$ in closed form,7
+partII/s14_hs.tex,proposition,Exact reductions,47
+partII/s14_hs.tex,proposition,$x=\tfrac12$,51
+partII/s14_hs.tex,proposition,$x=\tfrac13$,61
+partII/s14_hs.tex,theorem,Period $72$ at $x=\tfrac13$,68
+partII/s14_hs.tex,proposition,"$t^{7/2}$, $t^{9/2}$ at $x=0$",79
+partII/s14_hs.tex,proposition,"$t^{11/2}$, $t^{13/2}$",84
+partII/s14_hs.tex,proposition,$t^{15/2}$ and $t^{17/2}$ at $x=0$,90
+partII/s14_hs.tex,proposition,General $x=a/N$,106
+partII/s14_hs.tex,lemma,$q$-adic reduction,115
+partII/s14_hs.tex,proposition,Checks of the general formula,119
+partII/s14_hs.tex,proposition,Even $N$ from the $2$-adic reduction,123
+partII/s14_hs.tex,proposition,The six $N=8$ classes are pairwise distinct,131
+partII/s14_hs.tex,proposition,"$t^{11/2}$, $t^{13/2}$ at $x=\tfrac14,\tfrac16$, and vanishing",137
+partII/s15_cone.tex,proposition,Lattice origin of $\Delta$,6
+partII/s15_cone.tex,proposition,Edge-class invariance,20
+partII/s15_cone.tex,proposition,$c_1$ is forced; the axes cone,24
+partII/s15_cone.tex,proposition,"Status of $c_2=(-4,1)$",32
+partII/s15_cone.tex,remark,What is intrinsic in $\Delta$,37
+partII/s15_cone.tex,definition,,46
+partII/s15_cone.tex,theorem,Closed forms for $H_s^{\rm axes}$,49
+partII/s15_cone.tex,proposition,Wall-independence of the universal piece,68
+partII/s16_cthird.tex,theorem,"$\Cthird$: one coset, one cone weight, one kernel, two chains",5
+partII/s16_cthird.tex,proposition,Unit cone,27
+partII/s16_cthird.tex,lemma,Parity splitting,44
+partII/s16_cthird.tex,theorem,Phase obstruction,51
+partII/s16_cthird.tex,theorem,Sign obstruction,59
+partII/s16_cthird.tex,theorem,Structure of $\Cthird$,67
+partII/s17_sfamily.tex,theorem,Rational $\zeta$-curve,5
+partII/s17_sfamily.tex,theorem,Radial expansion of $g_s$,22
+partII/s17_sfamily.tex,remark,,59
+partII/s18_k3.tex,proposition,Discriminant form of $N_2$,17
+partII/s18_k3.tex,theorem,Weil realisation of the label representation,44
+partII/s18_k3.tex,proposition,Relations and Hom spaces modulo $\ell$,63
+partII/s18_k3.tex,remark,"Dual, twist, metaplectic sign",74
+partII/s18_k3.tex,proposition,Explicit primitive embedding and $T$,80
+partII/s18_k3.tex,corollary,The residual law in K3 terms,96
+partII/s18_k3.tex,theorem,$N_2$-polarised K3 surfaces,105
+partII/s18_k3.tex,proposition,Action on $A_{N_2}$ and $O(N_2)$,121
+partII/s18_k3.tex,theorem,Automorphisms of $N_2$-polarised K3 surfaces,132
+partII/s18_k3.tex,proposition,Lifting $\gamma$,152
+partII/s18_k3.tex,remark,Category~B and open items for this section,166
+partII/s19_uniq.tex,proposition,Adapted-basis splitting at $s=7$,11
+partII/s19_uniq.tex,proposition,"Sectors, $T$-fixed vectors and the support of $u$",24
+partII/s19_uniq.tex,proposition,The $\kappa$-level gauge,59
+partII/s19_uniq.tex,theorem,Uniqueness of the Maass completion,73
+partII/s19_uniq.tex,lemma,Estimates for Theorem~\ref{thm:U2}(b),80
+partII/s19_uniq.tex,corollary,Cocycle and period function determine $u$,111
+partII/s19_uniq.tex,theorem,Uniqueness and residual ambiguity of the vector completion,121
+partII/s19_uniq.tex,proposition,Sector-by-sector uniqueness and the scalars,141
+partII/s19_uniq.tex,proposition,Sector bounds for $\dim S(\rho)$,151
+partII/s19_uniq.tex,lemma,,189
+partII/s19_uniq.tex,lemma,A priori bounds,196
+partII/s19_uniq.tex,proposition,Certification criterion,211
+partII/s19_uniq.tex,theorem,Dimension of the cusp space,237
+partII/s19_uniq.tex,corollary,,264
+partII/s19_uniq.tex,remark,Dihedral consistency check,272
+partII/s19_uniq.tex,remark,Further remarks on \S\ref{sec:uniq},277
+partII/s20_emit.tex,proposition,The $t^1$ obstruction for modular-type sums,10
+partII/s20_emit.tex,proposition,$E_8$ is invisible to the vector and cone data,23
+partII/s20_emit.tex,proposition,Exact linear-span test to $q^{1499}$,27
+partII/s20_emit.tex,proposition,No low-degree rational generating function,42
+partII/s20_emit.tex,remark,Scope: what is \emph{not} excluded,50
+partII/s21_consequences.tex,proposition,No scalar residual law,5
+partII/s21_consequences.tex,proposition,The law that exists has weight $1$ and is vector-valued,17
+partII/s21_consequences.tex,remark,Weight $\tfrac12$ cannot carry the residue,31
+partII/s21_consequences.tex,remark,Sample values,36
+partII/s21_consequences.tex,proposition,What depends on $s=7$,43
+partIII.tex,definition,,7
+partIII.tex,definition,The 35-component law vector,18
+partIII.tex,lemma,Elementary rules,27
+partIII.tex,theorem,$T$-law and $S$-law,41
+partIII.tex,proposition,Closure,85
+partIII.tex,proposition,Dimension; computer-assisted,99
+partIII.tex,proposition,Exact $\mathrm{SL}_2$-relations and irreducibility; computer-assisted,113
+partIII.tex,definition,,136
+partIII.tex,lemma,Weights,144
+partIII.tex,proposition,Exact decomposition,157
+partIII.tex,lemma,Periodicity,180
+partIII.tex,theorem,Profile of $C$ and of $q^{-7/20}C$,192
+partIII.tex,theorem,Radial asymptotics at leading order,203
+partIII.tex,theorem,Vector-valued $S$-law of $C$ at leading order,216
+partIII.tex,remark,,230
+partIII.tex,lemma,Euler--Maclaurin with offset,240
+partIII.tex,lemma,Gaussian bounds,263
+partIII.tex,lemma,Integrals,280
+partIII.tex,theorem,Expansion of a piece,314
+partIII.tex,lemma,Expansion of a ray,356
+partIII.tex,theorem,Radial expansion of the companion series,368
+partIII.tex,corollary,Order $t^{-1}$,383
+partIII.tex,corollary,Order $t^{-1/2}$: algebraicity,396
+partIII.tex,remark,,403
+partIII.tex,proposition,Order $t^{-1/2}$ on the zero set of the leading term; computer-assisted,408
+partIII.tex,proposition,Exact decomposition of $A_1$,423
+partIII.tex,remark,Structure of $A_2$,437
+partIII.tex,remark,Category B: the sawtooth shadow candidate,450
+partIII.tex,remark,Category B: a weight-$0$ law for $A_2$,457
+partIII_shadow_v5.tex,lemma,,20
+partIII_shadow_v5.tex,proposition,"exact, computer-assisted",29
+partIII_shadow_v5.tex,lemma,parity of a weight-one law,44
+partIII_shadow_v5.tex,lemma,no even weight-one law,51
+partIII_shadow_v5.tex,corollary,,60
+partIII_shadow_v5.tex,lemma,,68
+partIII_shadow_v5.tex,proposition,,83
+partIII_shadow_v5.tex,proposition,,102
+partIII_shadow_v5.tex,lemma,,116
+partIII_shadow_v5.tex,theorem,,126
+partIII_shadow_v5.tex,theorem,,146
+partIII_shadow_v5.tex,proposition,,167
+partIII_shadow_v5.tex,theorem,,189
+partIII_shadow_v5.tex,catbremark,,200
+partIII_shadow_v5.tex,remark,,204
+partIII_radial_v5.tex,proposition,,8
+partIII_radial_v5.tex,theorem,,24
+partIII_radial_v5.tex,corollary,,40
+partIII_radial_v5.tex,theorem,,54
+partIII_radial_v5.tex,theorem,,72
+partIII_radial_v5.tex,corollary,,80
+partIII_radial_v5.tex,catbremark,,83
+partIII_order0_v6.tex,lemma,,6
+partIII_order0_v6.tex,theorem,,16
+partIII_order0_v6.tex,theorem,,25
+partIII_order0_v6.tex,theorem,,43
+partIII_order0_v6.tex,proposition,,50
+partIII_order0_v6.tex,remark,,58
+partIII_order0_v6.tex,catbremark,,63
+partIII_bern_v7.tex,proposition,,6
+partIII_bern_v7.tex,catbremark,,17
+partIII_cones_v8.tex,proposition,,6
+partIII_cones_v8.tex,proposition,,13
+partIII_cones_v8.tex,proposition,,20
+partIII_cones_v8.tex,corollary,,28
+partIII_cones_v8.tex,catbremark,,36
+partIII_gamma_v9.tex,proposition,"exact, computer-assisted",4
+partIII_gamma_v9.tex,corollary,,13
+partIII_gamma_v9.tex,catbremark,,23
+partIII_improper_v10.tex,lemma,,4
+partIII_improper_v10.tex,proposition,"exact, computer-assisted",11
+partIII_improper_v10.tex,corollary,,20
+partIII_improper_v10.tex,catbremark,,27
+partIII_inv_v12.tex,proposition,"exact, computer-assisted",8
+partIII_inv_v12.tex,theorem,,17
+partIII_inv_v12.tex,remark,,30
+partIII_inv_v12.tex,catbremark,,33
+partIII_partial_v16.tex,remark,,26
+partIII_modlocal_v15.tex,theorem,Equality of compact and ordinary induction,7
+partIII_modlocal_v15.tex,theorem,Socle reduction to $K_1$-invariants,24
+partIII_modlocal_v15.tex,theorem,Dictionary identities,46
+partIII_modlocal_v15.tex,proposition,Filtration bounds,66
+partIII_modlocal_v15.tex,theorem,Filtration weight ten,78
+partIII_modlocal_v15.tex,theorem,Breuil socle formula,93
+partIII_modlocal_v15.tex,proposition,Shape of irreducible $K$-representations,109
+partIII_modlocal_v15.tex,proposition,Count of $p$-regular classes,125
+partIII_modlocal_v15.tex,remark,,134
+partIII_modlocal_v15.tex,theorem,Classification of irreducibles,138
+partIII_modlocal_v15.tex,remark,Scope and count,146
+partIII_local_adv_v16.tex,theorem,Local cite-lift F1,13
+partIII_local_adv_v16.tex,proposition,Local cite-lift F2,31
+partIII_local_adv_v16.tex,proposition,Local cite-lift F3,44
+partIII_local_adv_v16.tex,remark,Scope of the Local cite-lifts,56
+partIII_local_adv_v16.tex,proposition,Scale-free Local cite-lifts; Hecke-scale fallback,61
+partIII_local_adv_v16.tex,definition,The space $\mathcal V_{35}^{\mathrm{Hilb}}$,99
+partIII_local_adv_v16.tex,theorem,Dimension and narrow components,113
+partIII_local_adv_v16.tex,remark,Notation relative to $\VV$,121
+partIII_local_adv_v16.tex,proposition,Classical exponents and conductors,126
+partIII_local_adv_v16.tex,theorem,Rank-one classifier $D_1$,143
+partIII_local_adv_v16.tex,proposition,Static cell budget $S_{\mathrm{eff}}$,165
+partIII_local_adv_v16.tex,proposition,Residual is not Resonant,183
+partIII_local_adv_v16.tex,proposition,Claims not part of the theory,192
+partIII_local_adv_v16.tex,remark,Scope relative to Parts~I--III,205
+partIII_postv16_ledger_v17.tex,remark,Local / Professor Proof Bridge~$C$ closures,32
+partIII_postv16_ledger_v17.tex,remark,Non-Local formal status,36
+partIII_postv16_ledger_v17.tex,remark,Eigen / PR1 height and Pack~I,40
+partIII_postv16_ledger_v17.tex,remark,PR2 / Agent T3 and citation closure,44
+partIII_boundary_rank_v17.tex,definition,Coordinates and index,12
+partIII_boundary_rank_v17.tex,definition,Coefficient and character fields,24
+partIII_boundary_rank_v17.tex,definition,Shifted transfer operator,32
+partIII_boundary_rank_v17.tex,definition,Original A/B/C/D table,50
+partIII_boundary_rank_v17.tex,remark,Orbit memberships,69
+partIII_boundary_rank_v17.tex,definition,Spatial selectors and translation,113
+partIII_boundary_rank_v17.tex,definition,Cascade versus endpoint constraints,121
+partIII_boundary_rank_v17.tex,theorem,Bare stacked matrix of rank~$24$,133
+partIII_boundary_rank_v17.tex,theorem,Original-table matrix~$M$ of exact rank~$36$,147
+partIII_boundary_rank_v17.tex,theorem,Singleton tuning restores full rank,164
+partIII_boundary_rank_v17.tex,definition,Path mass and signed weight,210
+partIII_boundary_rank_v17.tex,remark,Capacity remains OPEN,226
+partIII_boundary_rank_v17.tex,proposition,Compression of a rank-$36$ operator,231
+partIII_boundary_rank_v17.tex,proposition,Inert-prime filter and local isometry,239
+partIII_boundary_rank_v17.tex,remark,Graph Poisson versus capacity,251
+partIII_boundary_rank_v17.tex,remark,Geometry,255
+found_v6.tex,proposition,Identification of objects,9
+found_v6.tex,corollary,Residue law of $g_7$ and its converse,23
+found_v6.tex,theorem,The normalized Bridge Series and the 35-component law vector,32
+found_v6.tex,proposition,No scalar residual law,47
+found_v6.tex,proposition,No vector-valued Fricke law at leading order; computer-assisted,55
+found_v6.tex,proposition,Facts about $T_3$ and $539$,64
+found_v6.tex,remark,No written link,81
+appE_withdrawn_v17.tex,proposition,Clifford and quantum readings excluded from the proved core,4
+appE_withdrawn_v17.tex,proposition,Undefined modular--Iwasawa bridges,18

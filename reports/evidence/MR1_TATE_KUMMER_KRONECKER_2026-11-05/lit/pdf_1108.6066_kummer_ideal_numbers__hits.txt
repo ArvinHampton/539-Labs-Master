@@ -1,0 +1,30 @@
+3:JACOBI AND KUMMER’S IDEAL NUMBERS
+5:Abstract. In this article we give a modern interpretation of Kummer’s ideal
+11:Every mathematician nowadays is familiar with the notion of an ideal in a ring.
+12:Ideals were introduced by Dedekind when he generalized Kummer’s ideal numbers
+13:to general number fields. Kummer had invented ideal numbers in order to restore
+14:some kind of unique factorization in cyclotomic rings, and in the literature one
+15:usually finds the following characterizations of Kummer’s invention:
+16:(1) Kummer’s idea was brilliant and new; there were no traces of it in the
+18:and solved the “problem” of nonunique factorization in a way reminiscent
+20:(2) Kummer’s definition of an ideal prime is difficult to understand and not
+24:He [Reid] wisely did not attempt to give any idea of Kummer’s
+25:ideal numbers, the operations on which are so delicate that one
+28:This explains why there are hardly any expositions of Kummer’s theory of ideal
+30:[40]. Nevertheless, Kummer’s articles on the arithmetic of cyclotomic number fields
+31:are fairly easy to read2 by simply replacing the expression “ideal number” by the
+32:word “ideal”. This works very well except for his work on the foundations of
+33:his theory of ideal numbers: the problems Kummer had to overcome when he
+34:introduced ideal numbers seem to differ fundamentally from the obstacles Dedekind
+35:had to deal with when he introduced ideals.
+41:The majority of Kummer’s articles is written in German, only a few in Latin and French.
+51:a major role in the development of Kummer’s notion of ideal numbers.
+52:• Next we address the role of Fermat’s Last Theorem in Kummer’s early
+55:Jacobi that turned out to be the key idea later used by Kummer when he
+56:invented ideal numbers.
+57:• In our discussion of Kummer’s ideal numbers we offer a translation of ideal
+59:than the simple substitution of “ideal” for “ideal number”. We try to correct the historical picture of the development of Kummer’s ideal numbers3
+60:by showing that the notion of ideal numbers used by Kummer is perfectly
+65:uses an approach that is very close to Kummer’s first attempt at defining
+66:ideal numbers, and so do Stevenhagen & Lenstra in [41, p. 33].
+67:• Finally we discuss the relevance of the notion of integral closure for Kummer’s work by looking carefully at the concept of singularity in number

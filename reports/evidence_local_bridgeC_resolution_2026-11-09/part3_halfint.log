@@ -1,0 +1,5 @@
+a_p(49a1) for p=3,5,11,23,29,37,43: [0, 0, 4, 8, 2, -6, -12]
+dim S_3/2(Gamma0(196)) = 6
+dim of {F : T(p^2)F = a_p(f) F, p in {3,5,11,23,29,37,43}} = 0
+dim Kohnen plus space S^+_3/2(196) = 0
+dim (plus space) ∩ (f-eigenspace) = 0

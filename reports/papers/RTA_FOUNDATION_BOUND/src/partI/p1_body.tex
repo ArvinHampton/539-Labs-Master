@@ -1,0 +1,1101 @@
+\section{Definitions}\label{definitions}
+
+\textbf{Conventions.} \(\mathbb{N}=\{0,1,2,\dots\}\). All series are formal power series with integer coefficients; \([x^m]F\) is the coefficient of \(x^m\) in \(F\). For a positive integer \(k\) and an integer \(n\ge0\) put \((-q^k;q^k)_n=\prod_{j=1}^{n}(1+q^{kj})\).
+
+\textbf{Definition 3.1.} For \(k\ge1\),
+\[g_k(q)=\sum_{n\ge0}\frac{q^{n^2}}{(-q^k;q^k)_n}=\sum_{d\ge0}g_k(d)\,q^d .\]
+For \(n\ge0\) let
+\[P_n(x)=\prod_{j=1}^{n}\frac{1}{1+x^{j}}=\sum_{m\ge0}\varphi_n(m)\,x^m,\qquad P_\infty(x)=\prod_{j\ge1}\frac{1}{1+x^{j}}=\sum_{m\ge0}\varphi_\infty(m)\,x^m ,\]
+with \(P_0=1\).
+
+The series for \(g_k\) converges in \(\mathbb{Z}[[q]]\) because the \(n\)-th summand is \(q^{n^2}P_n(q^k)\) and has order \(n^2\).
+
+\textbf{Proposition 3.2 (expansion in \(d\)).} For all \(k\ge1\) and \(d\ge0\),
+\[g_k(d)=\sum_{\substack{n\ge0,\ n^2\le d\\ n^2\equiv d\ (\mathrm{mod}\ k)}}\varphi_n\!\left(\frac{d-n^2}{k}\right).\tag{3.1}\]
+
+\emph{Proof.} The \(n\)-th summand of \(g_k(q)\) is \(q^{n^2}P_n(q^k)=\sum_{m\ge0}\varphi_n(m)q^{n^2+km}\). The coefficient of \(q^d\) collects the pairs \((n,m)\) with \(n^2+km=d\). \(\blacksquare\)
+
+The summand of index \(n\) in (3.1) is called the \emph{term} \(n\) of \(g_k(d)\); it is defined when \(n^2\le d\) and \(k\mid d-n^2\), and \(m_n=(d-n^2)/k\) is its \emph{index}.
+
+\textbf{Definition 3.3.} Let \(\mathcal S_k=\{\,n^2 \bmod k:\ n\in\mathbb{Z}\,\}\subseteq\mathbb{Z}/k\mathbb{Z}\). An integer \(d\ge0\) is \emph{allowed} for \(k\) if \(d \bmod k\in\mathcal S_k\).
+\[Z_k=\{\,d\ge0\ \text{allowed for }k:\ g_k(d)=0\,\}.\]
+\(\mathrm{OccFilt}_k(\infty)\) is the set of residue classes \(r\in\mathbb{Z}/k\mathbb{Z}\) such that \(g_k(d)\ne0\) for all sufficiently large \(d\equiv r \pmod k\).
+
+\textbf{Proposition 3.4.} (i) If \(d\) is not allowed for \(k\) then \(g_k(d)=0\). (ii) \(\mathrm{OccFilt}_k(\infty)\subseteq\mathcal S_k\), with equality if and only if \(Z_k\) is finite.
+
+\emph{Proof.} (i) If \(d\bmod k\notin\mathcal S_k\), no \(n\) satisfies \(n^2\equiv d\pmod k\), so the sum (3.1) is empty. (ii) A class \(r\notin\mathcal S_k\) has \(g_k(d)=0\) for all \(d\equiv r\), hence \(r\notin\mathrm{OccFilt}_k(\infty)\). For \(r\in\mathcal S_k\), \(r\in\mathrm{OccFilt}_k(\infty)\) if and only if \(Z_k\) contains only finitely many \(d\equiv r\). Since there are finitely many classes, equality holds if and only if \(Z_k\) is finite. \(\blacksquare\)
+
+By Proposition 3.4, the statement \(\mathrm{OccFilt}_k(\infty)=\mathcal S_k\) (``every square class occurs for all large \(d\)'') is the statement that \(Z_k\) is finite. Section 8 proves it for every odd \(k\le33\), with \(Z_k\) computed exactly.
+
+\section{\texorpdfstring{The polynomials \(\varphi_n\)}{The polynomials \textbackslash varphi\_n}}\label{the-polynomials-varphi_n}
+
+\subsection{Stabilisation, product form, sign rule}\label{stabilisation-product-form-sign-rule}
+
+\textbf{Lemma 4.1 (stabilisation).} For all \(n\ge0\) and \(0\le m\le n\), \(\varphi_n(m)=\varphi_\infty(m)\).
+
+\emph{Proof.} \(P_n(x)=P_\infty(x)\prod_{j>n}(1+x^j)\) and \(\prod_{j>n}(1+x^j)\equiv1 \pmod{x^{n+1}}\). \(\blacksquare\)
+
+Write \(c_m=\varphi_\infty(m)\). By Lemma 4.1, \(\varphi_n(m)=c_m\) whenever \(m\le n\).
+
+\textbf{Lemma 4.2 (product form).} For \(n\ge0\), as formal power series,
+\[\prod_{j=1}^{n}\frac{1}{1+(-x)^{j}}=\prod_{\substack{j\le n\\ j\ \mathrm{odd}}}(1+x^{j})\ \prod_{\lfloor n/2\rfloor<l\le n}\frac{1}{1-x^{2l}} .\tag{4.1}\]
+The left side equals \(\sum_m(-1)^m\varphi_n(m)x^m\). Consequently, with \(a_n(m)=[x^m]\) of the right side,
+\[(-1)^m\varphi_n(m)=a_n(m)\ge0,\qquad a_n(m)=\#\{(\lambda,\mu)\},\tag{4.2}\]
+where \((\lambda,\mu)\) runs over pairs consisting of a set \(\lambda\) of distinct odd integers in \([1,n]\) and a multiset \(\mu\) of even integers in \((n,2n]\), with \(\sum\lambda+\sum\mu=m\).
+
+\emph{Proof.} Replacing \(x\) by \(-x\) in \(P_n\) gives the left side and \(\sum_m\varphi_n(m)(-x)^m\). For odd \(j\), \(1+(-x)^j=1-x^j\) and \(\frac1{1-x^j}=\frac{1+x^j}{1-x^{2j}}\). For \(j=2i\), \(\frac1{1+x^{2i}}=\frac{1-x^{2i}}{1-x^{4i}}\). Multiplying over \(j\le n\), the numerators contribute \(\prod_{j\le n,\,j\text{ odd}}(1+x^j)\prod_{i\le\lfloor n/2\rfloor}(1-x^{2i})\) and the denominators contribute \(\prod_{j\le n,\,j\text{ odd}}(1-x^{2j})\prod_{i\le\lfloor n/2\rfloor}(1-x^{4i})=\prod_{j\le n}(1-x^{2j})\). The factors \(1-x^{2i}\), \(i\le\lfloor n/2\rfloor\), cancel, which leaves (4.1). The right side of (4.1) is a product of series with nonnegative coefficients; its coefficient count is (4.2), because \(l\in(n/2,n]\) corresponds to the even integers \(2l\in(n,2n]\). \(\blacksquare\)
+
+We write \(A_n(m)=|\varphi_n(m)|=a_n(m)\) and \(A_n(x)=\sum_m a_n(m)x^m\) (the series (4.1)); the meaning is clear from the argument.
+
+Let \(Q(m)\) denote the number of partitions of \(m\) into distinct odd parts (\(Q(0)=1\)).
+
+\textbf{Lemma 4.3.} \(P_\infty(x)=\prod_{j\ \mathrm{odd}}(1-x^{j})\). Hence \(c_m=(-1)^mQ(m)\), and \((-1)^m\varphi_n(m)=Q(m)\) for \(m\le n\). The values are
+\[(c_0,\dots,c_{12})=(1,-1,0,-1,1,-1,1,-1,2,-2,2,-2,3).\]
+
+\emph{Proof.} \(\frac1{1+x^j}=\frac{1-x^j}{1-x^{2j}}\) and \(\prod_{j\ge1}\frac{1-x^j}{1-x^{2j}}=\prod_{j\text{ odd}}(1-x^j)\), the factors with \(j\) even cancelling against the denominators. Expanding, a partition of \(m\) into \(r\) distinct odd parts contributes \((-1)^r=(-1)^m\) (each odd part is \(\equiv1\bmod2\)). Lemma 4.1 gives the rest. The values follow from \(Q(0..12)=1,1,0,1,1,1,1,1,2,2,2,2,3\). \(\blacksquare\)
+
+\textbf{Lemma 4.4.} \(Q(2)=0\); \(Q(m)\ge1\) for \(m\ne2\); \(Q(m)\ge2\) for \(m\ge8\).
+
+\emph{Proof.} \(2\) is not a sum of distinct odd integers. For \(m\ge1\) odd, \(\{m\}\) is a partition; for \(m\ge4\) even, \(\{1,m-1\}\) is one; \(Q(0)=1\). For \(m\ge9\) odd, \(\{m\}\) and \(\{1,3,m-4\}\) are distinct partitions (\(m-4\ge5\)). For \(m\ge8\) even, \(\{1,m-1\}\) and \(\{3,m-3\}\) are distinct partitions (\(m-3\ge5\), so \(m-3\ne3\)). \(\blacksquare\)
+
+\textbf{Lemma 4.5 (truncation formula).} For \(n\ge0\) and \(0\le m\le2n+1\),
+\[\varphi_n(m)=c_m+\sum_{x=0}^{m-n-1}(-1)^xQ(x),\qquad A_n(m)=Q(m)+(-1)^m\sum_{x=0}^{m-n-1}(-1)^xQ(x),\tag{4.3}\]
+where an empty sum is \(0\). In particular \(\varphi_n(m)=c_m\) for \(m\le n\).
+
+\emph{Proof.} \(P_n=P_\infty\prod_{j>n}(1+x^j)\). A product of two or more distinct factors \(x^{j}\) with \(j>n\) has degree \(\ge(n+1)+(n+2)=2n+3\). Hence modulo \(x^{2n+2}\), \(\prod_{j>n}(1+x^j)\equiv1+\sum_{b=n+1}^{2n+1}x^b\). Therefore for \(m\le2n+1\), \(\varphi_n(m)=c_m+\sum_{b=n+1}^{m}c_{m-b}=c_m+\sum_{x=0}^{m-n-1}(-1)^xQ(x)\). Multiplying by \((-1)^m\) and using (4.2) gives the second formula. \(\blacksquare\)
+
+\textbf{Lemma 4.6 (small \(n\)).} \(\varphi_0(m)=\delta_{m,0}\); \(\varphi_1(m)=(-1)^m\); and \(\varphi_2(m)=1,-1,0,0\) for \(m\equiv0,1,2,3\pmod 4\).
+
+\emph{Proof.} \(P_1=1/(1+x)=\sum(-x)^m\). \((1+x)(1+x^2)=(1-x^4)/(1-x)\), so \(P_2=(1-x)/(1-x^4)=\sum_{i\ge0}(x^{4i}-x^{4i+1})\). \(\blacksquare\)
+
+\subsection{\texorpdfstring{The case of odd \(k\)}{The case of odd k}}\label{the-case-of-odd-k}
+
+\textbf{Proposition 4.7 (\(E\)--\(O\) identity).} Let \(k\) be odd and \(d\ge0\). For each term \(n\) of \(g_k(d)\) with index \(m_n\), \((-1)^d\varphi_n(m_n)=(-1)^n a_n(m_n)\). Hence
+\[(-1)^d g_k(d)=E_d-O_d,\qquad E_d=\sum_{n\ \mathrm{even}}a_n(m_n),\quad O_d=\sum_{n\ \mathrm{odd}}a_n(m_n),\tag{4.4}\]
+the sums running over the terms \(n\) of \(g_k(d)\); all summands are \(\ge0\).
+
+\emph{Proof.} \(d=n^2+km_n\) with \(n^2\equiv n\) and \(km_n\equiv m_n\pmod 2\) (\(k\) odd), so \((-1)^d=(-1)^{n+m_n}\). By (4.2), \((-1)^{m_n}\varphi_n(m_n)=a_n(m_n)\). Multiply: \((-1)^d\varphi_n(m_n)=(-1)^na_n(m_n)\). Summing over \(n\) and using (3.1) gives (4.4). \(\blacksquare\)
+
+In particular, for odd \(k\) and allowed \(d\): \(g_k(d)\ne0\) if and only if \(E_d\ne O_d\), and the term of index \(n\) has sign \((-1)^{d+n}\).
+
+\section{Zero families}\label{zero-families}
+
+\subsection{\texorpdfstring{Squarefree \(k\)}{Squarefree k}}\label{squarefree-k}
+
+\textbf{Theorem 5.1.} If \(k\ge2\) is squarefree, then \(g_k\bigl(k(k+2)\bigr)=0\).
+
+\emph{Proof.} Let \(d=k^2+2k\). A term \(n\) of \(g_k(d)\) has \(n^2\le d<(k+1)^2\), so \(n\le k\), and \(k\mid n^2\). Since \(k\) is squarefree, \(k\mid n^2\) implies \(k\mid n\), so \(n\in\{0,k\}\). For \(n=0\) the index is \(m=k+2\ge1\) and \(\varphi_0(k+2)=0\) (Lemma 4.6). For \(n=k\) the index is \(m=2\le k\), so \(\varphi_k(2)=c_2=0\) (Lemma 4.1, Lemma 4.3). Hence \(g_k(d)=0\). \(\blacksquare\)
+
+\emph{Remark 5.2.} The hypothesis \(k\ge2\) is needed: \(g_1(3)=\varphi_1(2)=1\). Exact evaluation of \(g_k(k(k+2))\) for every \(k=2,\dots,1001\) gives \(0\) for all \(608\) squarefree \(k\) and a nonzero value for each of the \(392\) non-squarefree \(k\) (for \(k\le 30\) non-squarefree: \(g_4=-1\), \(g_8=1\), \(g_9=2\), \(g_{12}=-2\), \(g_{16}=-2\), \(g_{18}=6\), \(g_{20}=-5\), \(g_{24}=6\), \(g_{25}=6\), \(g_{27}=8\), \(g_{28}=-8\) at \(d=k(k+2)\)). This is a computation (Appendix A.1).
+
+\subsection{\texorpdfstring{Values at \(d=k^2+jk+b^2\)}{Values at d=k\^{}2+jk+b\^{}2}}\label{values-at-dk2jkb2}
+
+\textbf{Theorem 5.3.} Let \(b\in\{1,2\}\), \(j\in\mathbb{Z}\), and let \(k=p^a\) be an odd prime power with
+\[k\ge K:=\max(j+3b,\ 2b+1,\ -j).\]
+Then for \(d=k^2+jk+b^2\),
+\[g_k(d)=\varphi_b(k+j)+[\,j\ge-2b\,]\,c_{j+2b}+[\,j\ge2b\,]\,c_{j-2b},\tag{5.1}\]
+where \([\cdot]\) is the Iverson bracket and \(c_m\) is as in Lemma 4.3 (with \(c_m\) for \(m\ge0\) only occurring when its bracket is \(1\)).
+
+\emph{Proof.} Let \(n\) be a term of \(g_k(d)\): \(n^2\equiv d\equiv b^2\pmod{p^a}\), so \(p^a\mid(n-b)(n+b)\). A common prime factor of \(n-b\) and \(n+b\) divides \(2b\in\{2,4\}\), hence is not \(p\). Thus \(p^a\) divides one of the two factors: \(n\equiv\pm b\pmod k\). The candidates are \(n\in\{b,\,k-b,\,k+b,\,2k-b,\,2k+b,\dots\}\) (as \(k>2b\), these are distinct and increasing in this order, and \(b\ge1\)).
+
+\emph{Large \(n\) do not occur.} For \(n\ge2k-b\) we would need \((2k-b)^2\le d\), i.e.~\(3k\le j+4b\). But \(k\ge j+3b\) gives \(j+4b\le k+b\), and \(3k\le k+b\) contradicts \(k\ge2b+1\).
+
+\emph{The three remaining candidates.}
+
+\begin{itemize}
+\tightlist
+\item
+  \(n=b\): \(b^2\le d\) iff \(k+j\ge0\), true since \(k\ge-j\). Index \(m=(d-b^2)/k=k+j\); the term is \(\varphi_b(k+j)\).
+\item
+  \(n=k-b\) (\(\ge1\)): \((k-b)^2\le d\) iff \(j\ge-2b\). Index \(m=(d-(k-b)^2)/k=j+2b\). Since \(k\ge j+3b\), \(m=j+2b\le k-b=n\), so the term is \(c_{j+2b}\) (Lemma 4.1).
+\item
+  \(n=k+b\): \((k+b)^2\le d\) iff \(j\ge2b\). Index \(m=j-2b\), and \(m\le n\) since \(k\ge j+3b\); the term is \(c_{j-2b}\).
+\end{itemize}
+
+Summing gives (5.1). \(\blacksquare\)
+
+\textbf{Corollary 5.4 (three families).} Let \(k\) be an odd prime power.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(g_k\bigl((k+2)^2-3\bigr)=0\) for every \(k\ge5\). For \(k=3\): \(g_3(22)=-1\).
+\item
+  If \(k\equiv3\pmod 4\): \(g_k(k^2+2k+4)=0\) for every \(k\ne3,7\). Values: \(g_3(19)=-1\), \(g_7(67)=+1\).
+\item
+  If \(k\equiv1\pmod 4\): \(g_k(k^2+3k+4)=0\) for every \(k\ne5\). Value: \(g_5(44)=-1\).
+\end{enumerate}
+
+\emph{Proof.} (1) \((k+2)^2-3=k^2+4k+1\): \(b=1\), \(j=4\), \(K=7\). By (5.1), for odd \(k\ge7\): \(g=\varphi_1(k+4)+c_6+c_2=(-1)^{k+4}+1+0=0\). For \(k=5\) the terms are \((n,m,\varphi_n(m))=(1,9,-1),(4,6,+1),(6,2,0)\) (the term \(n=4\) has \(m=6>4\); by (4.3), \(\varphi_4(6)=c_6+\sum_{x=0}^{1}(-1)^xQ(x)=1+(1-1)=1\)), so \(g_5(46)=0\). For \(k=3\): \(d=22\), terms \((1,7,-1),(2,6,0),(4,2,0)\), so \(g_3(22)=-1\).
+
+\begin{enumerate}
+\def\labelenumi{(\arabic{enumi})}
+\setcounter{enumi}{1}
+\item
+  \(k^2+2k+4\): \(b=2\), \(j=2\), \(K=8\). For \(k\ge9\), (5.1) gives \(g=\varphi_2(k+2)+c_6=\varphi_2(k+2)+1\), which is \(0\) iff \(\varphi_2(k+2)=-1\) iff \(k+2\equiv1\pmod 4\) (Lemma 4.6) iff \(k\equiv3\pmod4\). The odd prime powers \(k\equiv3\pmod 4\) below \(9\) are \(3,7\). For \(k=7\): \(d=67\), terms \((2,9,-1)\), \((5,6,+2)\) {[}\(\varphi_5(6)=c_6+Q(0)=2\){]}, so \(g_7(67)=+1\). For \(k=3\): \(d=19\), terms \((1,6,+1),(2,5,-1),(4,1,-1)\), so \(g_3(19)=-1\).
+\item
+  \(k^2+3k+4\): \(b=2\), \(j=3\), \(K=9\). For \(k\ge9\), (5.1) gives \(g=\varphi_2(k+3)+c_7=\varphi_2(k+3)-1\), which is \(0\) iff \(\varphi_2(k+3)=1\) iff \(k+3\equiv0\pmod4\) iff \(k\equiv1\pmod4\). The only odd prime power \(k\equiv1\pmod 4\) below \(9\) is \(5\): \(d=44\), terms \((2,8,+1)\), \((3,7,-2)\), so \(g_5(44)=-1\). \(\blacksquare\)
+\end{enumerate}
+
+(The term lists were computed by exact integer arithmetic. For all odd prime powers \(k\le1001\) the exact values of \(g_k\) at these \(d\) were also computed directly: the only nonzero values are those listed. Appendix A.1.)
+
+\textbf{Theorem 5.5 (zero classes for \(b\in\{1,2\}\)).} Let \(b\in\{1,2\}\), \(j\in\mathbb{Z}\), and \(k\ge K\) an odd prime power as in Theorem 5.3. Then \(g_k(k^2+jk+b^2)=0\) in exactly the following cases.
+
+\begin{itemize}
+\tightlist
+\item
+  \(b=1\): \(j\in\{-2,-1,1,4\}\) (all \(k\)).
+\item
+  \(b=2\), \(-4\le j\le3\): \(k\equiv 1,3,1,1,1,3,3,1 \pmod 4\) for \(j=-4,-3,-2,-1,0,1,2,3\) respectively.
+\item
+  \(b=2\), \(j\le-5\): \(k\equiv1\pmod 4\) if \(j\equiv1,2\pmod 4\) and \(k\equiv3\pmod 4\) if \(j\equiv0,3\pmod 4\).
+\item
+  \(b=2\), \(j\ge4\): never.
+\end{itemize}
+
+\emph{Proof.} Let \(k\) be odd. We use (5.1) and the values \(c_0,\dots,c_7=1,-1,0,-1,1,-1,1,-1\) and \(c_{m}=(-1)^mQ(m)\).
+
+\emph{\(b=1\).} \(\varphi_1(k+j)=(-1)^{k+j}=-(-1)^j\). For \(j\le-3\) only this term is present, so \(g=\pm1\ne0\). For \(-2\le j\le1\): \(j=-2\): \(-1+c_0=0\); \(j=-1\): \(+1+c_1=0\); \(j=0\): \(-1+c_2=-1\); \(j=1\): \(+1+c_3=0\). For \(j\ge2\): \(g=-(-1)^j+(-1)^j\bigl(Q(j+2)+Q(j-2)\bigr)=(-1)^j\bigl(Q(j+2)+Q(j-2)-1\bigr)\) (here \(c_{j+2}\) and \(c_{j-2}\) have the sign \((-1)^j\)). This vanishes iff \(Q(j+2)+Q(j-2)=1\). Since \(Q(j+2)\ge1\) and \(Q(j-2)\ge1\) unless \(j-2=2\) (Lemma 4.4), this holds iff \(j=4\) (\(Q(6)+Q(2)=1+0\)). For \(j=2,3\): \(Q(4)+Q(0)=2\), \(Q(5)+Q(1)=2\), nonzero.
+
+\emph{\(b=2\), \(j\ge4\).} \(\varphi_2(k+j)\in\{1,-1,0,0\}\) and \(c_{j+4}+c_{j-4}=(-1)^j\bigl(Q(j+4)+Q(j-4)\bigr)\) with \(Q(j+4)\ge2\) (\(j+4\ge8\)) and \(Q(j-4)\ge0\), so \(|c_{j+4}+c_{j-4}|\ge2>|\varphi_2(k+j)|\): \(g\ne0\).
+
+\emph{\(b=2\), \(-4\le j\le3\).} Here \(g=\varphi_2(k+j)+c_{j+4}\), which vanishes iff \(\varphi_2(k+j)=-c_{j+4}\). For \(j+4=0,\dots,7\) we have \(-c_{j+4}=-1,1,0,1,-1,1,-1,1\). By Lemma 4.6, \(\varphi_2(m)=-1\) iff \(m\equiv1\), \(=1\) iff \(m\equiv0\), \(=0\) iff \(m\equiv2,3\pmod4\). So: \(j=-4\): \(k-4\equiv1\), \(k\equiv1\). \(j=-3\): \(k-3\equiv0\), \(k\equiv3\). \(j=-2\): \(k-2\in\{2,3\}\) mod \(4\), \(k\) odd gives \(k\equiv1\). \(j=-1\): \(k-1\equiv0\), \(k\equiv1\). \(j=0\): \(k\equiv1\). \(j=1\): \(k+1\equiv0\), \(k\equiv3\). \(j=2\): \(k+2\equiv1\), \(k\equiv3\). \(j=3\): \(k+3\equiv0\), \(k\equiv1\).
+
+\emph{\(b=2\), \(j\le-5\).} Then \(j<-2b\) and \(j<2b\), so \(g=\varphi_2(k+j)\), zero iff \(k+j\equiv2,3\pmod 4\). With \(k\) odd: \(j\) even requires \(k+j\equiv3\), i.e.~\(k\equiv3-j\); \(j\) odd requires \(k+j\equiv2\), i.e.~\(k\equiv2-j\). These give \(k\equiv1\) for \(j\equiv2,1\) and \(k\equiv3\) for \(j\equiv0,3\pmod4\). \(\blacksquare\)
+
+(For \(b=2\) and \(j\le-5\), the condition \(k\ge K\) reads \(k\ge-j\).) The cases \((b,j)=(1,4)\), \((2,2)\), \((2,3)\) are the three families of Corollary 5.4. Appendix A.1 lists the exact values of (5.1) for all \((b,j)\) with \(-8\le j\le16\) and all odd prime powers \(k\le500\) with \(k\ge K\) against the exact coefficients of \(g_k\): \(5121\) cases, no discrepancy.
+
+\section{\texorpdfstring{The value of \(g_k\) at \((k+2)^2-3\) for odd \(k\) with two prime factors}{The value of g\_k at (k+2)\^{}2-3 for odd k with two prime factors}}\label{the-value-of-g_k-at-k22-3-for-odd-k-with-two-prime-factors}
+
+Throughout this section \(d_k=(k+2)^2-3=k^2+4k+1\).
+
+\subsection{Reduction to one pair of terms}\label{reduction-to-one-pair-of-terms}
+
+For a positive integer \(s\) and an integer \(k>2s\) with \(k\mid s^2-1\) put
+\[t=\frac{s^2-1}{k},\quad m_1=k+4-t,\quad m_2=4+2s-t,\quad n_2=k-s,\quad u=k-2s,\]
+\[A_1=A_s(m_1),\qquad A_2=A_{n_2}(m_2)\]
+(so \(m_1-m_2=u\)).
+
+\textbf{Lemma 6.1 (pair reduction).} Let \(k\ge7\) and \(\Xi_k=\{s:\ 1<s<k/2,\ s^2\equiv1\pmod k\}\). Then
+\[g_k(d_k)=(-1)^k+1+\sum_{s\in\Xi_k}\bigl[\varphi_s(m_1)+\varphi_{k-s}(m_2)\bigr],\tag{6.1}\]
+and \(\varphi_s(m_1)=(-1)^{m_1}A_1\), \(\varphi_{k-s}(m_2)=(-1)^{m_2}A_2\). For odd \(k\) the bracket equals \((-1)^{t+1}(A_1-A_2)\).
+
+\emph{Proof.} A term \(n\) of \(g_k(d_k)\) has \(n^2\le k^2+4k+1<(k+2)^2\), so \(n\le k+1\), and \(n^2\equiv d_k\equiv1\pmod k\). The residues \(r\in\{0,\dots,k-1\}\) with \(r^2\equiv1\) include \(1\) and \(k-1\) (\(r=0\) is excluded since \(k\ge2\)), and the others \(1<r<k-1\) come in pairs \(\{s,k-s\}\) with \(s\in\Xi_k\) (\(s=k/2\) is not a root for \(k\ge4\): if \(k=2h\) with \(h\) odd then \(h^2\equiv1\bmod 2h\) forces \(h=1\), and if \(4\mid k\) then \((k/2)^2\equiv0\bmod k\)). For \(n\le k+1\) the possible \(n\) are therefore \(n=1\), \(n=k-1\), \(n=k+1\), and \(n\in\{s,k-s\}\), \(s\in\Xi_k\) (note \(r+k>k+1\) for \(r\ge2\)).
+
+\begin{itemize}
+\tightlist
+\item
+  \(n=1\): \(m=(d_k-1)/k=k+4\); term \(\varphi_1(k+4)=(-1)^{k}\).
+\item
+  \(n=k-1\): \(m=\bigl(k^2+4k+1-(k-1)^2\bigr)/k=6\le k-1\), so the term is \(c_6=1\) (Lemma 4.1, 4.3).
+\item
+  \(n=k+1\): \(m=\bigl(k^2+4k+1-(k+1)^2\bigr)/k=2\); the term is \(c_2=0\).
+\item
+  \(n=s\): \(m=(k^2+4k+1-s^2)/k=k+4-t=m_1\); term \(\varphi_s(m_1)\).
+\item
+  \(n=k-s\): \(m=\bigl(k^2+4k+1-(k-s)^2\bigr)/k=4+2s-t=m_2\); term \(\varphi_{k-s}(m_2)\).
+\end{itemize}
+
+This is (6.1). By (4.2), \(\varphi_n(m)=(-1)^mA_n(m)\). For odd \(k\): \(m_1\equiv1+t\) and \(m_2\equiv t\pmod 2\), so the bracket is \((-1)^{t+1}A_1+(-1)^tA_2\). \(\blacksquare\)
+
+\textbf{Lemma 6.2 (root geometry).} Let \(k\) be odd, \(s\ge3\), \(k>2s\), \(k\mid s^2-1\). Then: (i) \(1\le t<s/2\); (ii) \(u=k-2s\) is odd and \(u\ge3\), \(u^2\ge k+4\), \(m_1\le u^2-1\) and hence \(u\ge\sqrt{m_1+1}\); (iii) \(\tfrac32 s+4<m_2\le 2s+3\) and \(m_2<m_1\); (iv) \(n_2\ge s+3\), and with \(y_2=m_2-n_2-1\): \(y_2\le s-1\) whenever \(m_2>n_2\).
+
+\emph{Proof.} (i) \(t\ge1\) since \(s^2-1\ge k>0\) is a positive multiple of \(k\); and \(k>2s\) gives \(t<(s^2-1)/(2s)<s/2\). (ii) \(u\) is odd since \(k\) is odd. \(u\equiv-2s\pmod k\) gives \(u^2\equiv4s^2\equiv4\pmod k\). If \(u=1\) then \(k\mid-3\), i.e.~\(k=3\), contradicting \(k>2s\ge6\). So \(u\ge3\), \(u^2-4>0\) is a positive multiple of \(k\), whence \(u^2\ge k+4\). Then \(m_1=k+4-t\le k+3\le u^2-1\). (iii) \(m_2=2s+4-t\le2s+3\) and \(m_2>2s+4-s/2\). \(m_1-m_2=u>0\). (iv) \(k=2s+u\ge2s+3\). If \(m_2>n_2\): \(y_2=(2s+4-t)-(k-s)-1=s+3-t-u\le s+3-1-3\). \(\blacksquare\)
+
+\subsection{\texorpdfstring{Estimates for \(A_1\) and \(A_2\)}{Estimates for A\_1 and A\_2}}\label{estimates-for-a_1-and-a_2}
+
+\textbf{Lemma 6.3.} Let \(s\ge3\), \(k\) odd, \(k>2s\), \(k\mid s^2-1\), and assume that \(Q\) is nondecreasing on \([2,\infty)\) (Lemma 6.5 below).
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  For every \(m\ge s+4\): \(A_s(m)\ \ge\ Q(m)-\dfrac{m-s+1}{2}\,Q(m-s-1)\).
+\item
+  Let \(e_0=s+1\) if \(s\) is odd and \(e_0=s+2\) if \(s\) is even. If \(D\ge0\) is a sum of integers from the set \(\{e\ \text{even}:\ s<e\le2s\}\), then \(A_s(m)\ge A_s(m-D)\). A number \(D\) is such a sum if \(D=0\) or if \(D\) is even, \(D\ge e_0\) and: (\(s\) odd) always; (\(s\) even, \(s\ge4\)) \(D\ne2s+2\).
+\item
+  \(A_2\le Q(m_2)+Q(s)\), and \(A_2=Q(m_2)\) if \(m_2\le n_2\).
+\item
+  If \(m_1\ge5s+8\), then \(n_2>m_2\) and \(A_2=Q(m_2)\le Q(2s+3)\).
+\end{enumerate}
+
+\emph{Proof.} (1) By (4.2), \(A_s(m)\) is at least the number of partitions of \(m\) into distinct odd parts all \(\le s\) (take \(\mu=\emptyset\)). The number of partitions of \(m\) into distinct odd parts having at least one part \(j>s\) is at most \(\sum_{j\ \mathrm{odd},\ s<j\le m}Q(m-j)\) (remove the part \(j\)). The arguments \(x=m-j\) have the parity of \(m-1\) and satisfy \(0\le x\le y:=m-s-1\). For \(y\ge3\), \(Q(x)\le Q(y)\) for \(2\le x\le y\) (monotonicity) and for \(x\in\{0,1\}\) (as \(Q(x)=1\le Q(y)\), Lemma 4.4). The number of such \(x\) is at most \(\lfloor y/2\rfloor+1\le(m-s+1)/2\). Hence \(A_s(m)\ge Q(m)-\frac{m-s+1}2Q(m-s-1)\).
+
+\begin{enumerate}
+\def\labelenumi{(\arabic{enumi})}
+\setcounter{enumi}{1}
+\item
+  By (4.2), adjoining a fixed multiset of even parts in \((s,2s]\) to \(\mu\) is an injective map from the pairs counted by \(A_s(m-D)\) to those counted by \(A_s(m)\). For \(j\) parts, the attainable sums are exactly all even numbers in \([je_0,2js]\) (each part ranges over all even integers in \([e_0,2s]\)). For \(s\) odd, \(e_0=s+1\), and consecutive intervals overlap or touch: \((j+1)(s+1)\le2js+2\) iff \(s-1\le j(s-1)\). So every even \(D\ge s+1\) is attainable. For \(s\ge4\) even, \(e_0=s+2\): for \(j=1,2\) the intervals are \([s+2,2s]\) and \([2s+4,4s]\), missing only \(2s+2\) between them; for \(j\ge2\), \((j+1)(s+2)\le 2js+2\) iff \(s(j-1)\ge2j\), true for \(s\ge4\).
+\item
+  By Lemma 6.2 (iv), \(n_2\ge s+3\) so \(m_2\le2s+3\le2n_2+1\) and (4.3) applies: \(A_2=Q(m_2)+(-1)^{m_2}\sum_{x=0}^{y_2}(-1)^xQ(x)\) for \(y_2=m_2-n_2-1\ge0\) (empty sum if \(m_2\le n_2\)). Since \(Q(0)=Q(1)\), the sum equals \(\sum_{x=2}^{y_2}(-1)^xQ(x)\) for \(y_2\ge1\), an alternating sum of a nondecreasing nonnegative sequence, which has absolute value at most \(Q(y_2)\); for \(y_2=0\) it equals \(1\le Q(s)\). As \(y_2\le s-1\), \(A_2\le Q(m_2)+Q(s)\).
+\item
+  \(k=m_1+t-4\ge5s+5\), so \(n_2=k-s\ge4s+5>2s+3\ge m_2\) and \(A_2=Q(m_2)\le Q(2s+3)\) by monotonicity. \(\blacksquare\)
+\end{enumerate}
+
+\subsection{\texorpdfstring{Chern's bound for \(Q(n)\)}{Chern's bound for Q(n)}}\label{cherns-bound-for-qn}
+
+For \(n\ge1\) let \(v(n)=24n-1\), \(x(n)=\pi\sqrt{v(n)}/12\), and
+\[\psi(n)=\frac{\sqrt6\,e^{x(n)}}{v(n)^{3/4}},\qquad M(n)=\frac{\pi}{\sqrt{v(n)}}\,I_1\bigl(x(n)\bigr),\]
+with \(I_1\) the modified Bessel function.
+
+\textbf{Cited result.} Let \(G(q)=\prod_{r=1}^{R}(q^{m_r};q^{m_r})_\infty^{\delta_r}=\sum g(n)q^n\) with distinct positive integers \(m_r\) and nonzero integers \(\delta_r\), \(\sum\delta_r\ge0\). Put \(\Delta_1=-\frac12\sum\delta_r\), \(\Delta_2=\sum m_r\delta_r\), \(\Delta_3(\ell)=-\sum\delta_r\gcd^2(m_r,\ell)/m_r\), \(\Delta_4(\ell)=\prod(m_r/\gcd(m_r,\ell))^{-\delta_r/2}\), \(L=\operatorname{lcm}(m_r)\), \(L_{>0}=\{1\le\ell\le L:\Delta_3(\ell)>0\}\). S. Chern \cite[Theorem~1.1]{Chern} states: if \(\Delta_1\le0\) and \(\min_r\gcd^2(m_r,\ell)/m_r\ge\Delta_3(\ell)/24\) for all \(1\le\ell\le L\), then for all integers \(n>-\Delta_2/24\),
+\begin{multline}g(n)=E(n)+\sum_{\ell\in L_{>0}}2\pi\Delta_4(\ell)\Bigl(\frac{24n+\Delta_2}{\Delta_3(\ell)}\Bigr)^{-\frac{\Delta_1+1}{2}}\\\sum_{\substack{1\le k\le N\\ k\equiv\ell\ (L)}}\frac{I_{-\Delta_1-1}\!\bigl(\frac{\pi}{6k}\sqrt{\Delta_3(\ell)(24n+\Delta_2)}\bigr)}{k}\sum_{\substack{0\le h<k\\(h,k)=1}}\omega_{h,k}\,e\!\left(-\frac{nh}{k}\right),\tag{6.2}\end{multline}
+with \(N=\lfloor\sqrt{2\pi(n+\Delta_2/24)}\rfloor\) and \(|\omega_{h,k}|=1\). The explicit bound for \(E(n)\) is \cite[(3.10)]{Chern} (announced in \cite[Remark~3 after Theorem~1.1]{Chern}); with \(\nu=n+\Delta_2/24\), \(\varrho=1/N^2\), and \(\Delta_1=0\) (so \(\Xi_{\Delta_1}(N)=1\)):
+\begin{multline}|E(n)|\le\frac{N^2}{\pi\nu}e^{2\pi\varrho\nu}\!\!\sum_{\ell\in L_{>0}}\!e^{\pi\Delta_3(\ell)/3}\\+2e^{2\pi\varrho\nu}\Bigl\{\sum_{\ell=1}^{L}\Delta_4(\ell)\exp\Bigl(\tfrac{\pi\Delta_3(\ell)}{24}+\sum_{r}\frac{|\delta_r|e^{-\pi\gcd^2(m_r,\ell)/m_r}}{(1-e^{-\pi\gcd^2(m_r,\ell)/m_r})^{2}}\Bigr)\Bigr.\\\Bigl.-\!\!\sum_{\ell\in L_{>0}}\!\Delta_4(\ell)e^{\pi\Delta_3(\ell)/24}\Bigr\}.\tag{6.3}\end{multline}
+(Numbering as in arXiv:1805.08759v1.)
+
+\textbf{Application.} \(\sum_{n}Q(n)q^n=(-q;q^2)_\infty=\dfrac{(q^2;q^2)_\infty^2}{(q;q)_\infty(q^4;q^4)_\infty}\) (since \((-q;q^2)_\infty=(q^2;q^4)_\infty/(q;q^2)_\infty\) and \(1/(q;q^2)_\infty=(q^2;q^2)_\infty/(q;q)_\infty\)). Here \(m=(1,2,4)\), \(\delta=(-1,2,-1)\), \(\sum\delta_r=0\), \(\Delta_1=0\), \(\Delta_2=-1\), \(L=4\), and
+\[(\Delta_3(\ell))_{\ell=1..4}=(\tfrac14,-2,\tfrac14,1),\quad(\Delta_4(\ell)^2)_{\ell=1..4}=(1,2,1,1),\quad L_{>0}=\{1,3,4\}.\]
+The inequality \(\min_r\gcd^2(m_r,\ell)/m_r\ge\Delta_3(\ell)/24\) holds for \(\ell=1,2,3,4\) (the minima are \(\tfrac14,1,\tfrac14,1\); exact rational comparison in \texttt{chern\_margins.py}). So (6.2) holds for all \(n\ge1\). The term \(k=1\) of (6.2) is \(2\pi\cdot1\cdot(4v)^{-1/2}\,I_1\bigl(\frac\pi6\sqrt{v/4}\bigr)=M(n)\) (\(\omega_{1,1}=1\)), where \(v=v(n)\) and \(I_{-1}=I_1\).
+
+\textbf{Lemma 6.4 (Bessel bounds).} For \(y>0\):
+\[\Bigl(1-\frac3{4y}\Bigr)\frac{e^y}{\sqrt{2\pi y}}\ \le\ I_1(y)\ \le\ \min\Bigl(\frac{ye^y}2,\ \frac{e^y}{\sqrt{2\pi y}}\Bigr)\le0.4302\,e^y .\]
+Moreover \(I_1\) is increasing and \(I_1'(y)=I_0(y)-I_1(y)/y\), \(I_0\ge I_1\).
+
+\emph{Proof.} \(I_1(y)=\frac y\pi\int_{-1}^1\sqrt{1-t^2}\,e^{yt}\,dt\). Substituting \(t=1-w\) gives \(I_1(y)=\frac y\pi e^y\int_0^2\sqrt{w(2-w)}\,e^{-yw}dw\). \emph{Upper:} \(\sqrt{w(2-w)}\le\sqrt{2w}\) and \(\int_0^\infty\sqrt{2w}e^{-yw}dw=\sqrt2\,\Gamma(\frac32)y^{-3/2}\) give \(I_1\le e^y/\sqrt{2\pi y}\); also \(e^{yt}\le e^y\) and \(\int_{-1}^1\sqrt{1-t^2}dt=\pi/2\) give \(I_1\le ye^y/2\). Since \(y/2\) is increasing and \((2\pi y)^{-1/2}\) is decreasing, \(\min(y/2,(2\pi y)^{-1/2})\) is at most the common value at the crossing point \(y=(2/\pi)^{1/3}\), namely \(\frac12(2/\pi)^{1/3}=0.43012\ldots<0.4302\). \emph{Lower:} for \(w\in[0,2]\), \(\sqrt{w(2-w)}=\sqrt{2w}\sqrt{1-w/2}\ge\sqrt{2w}(1-w/2)\), and \(\sqrt{2w}(1-w/2)<0\) for \(w>2\), so \(\int_0^2\sqrt{2w}(1-\frac w2)e^{-yw}dw\ge\int_0^\infty\sqrt{2w}(1-\frac w2)e^{-yw}dw=\sqrt2\bigl[\Gamma(\tfrac32)y^{-3/2}-\tfrac12\Gamma(\tfrac52)y^{-5/2}\bigr]\). With \(\Gamma(\frac32)=\frac{\sqrt\pi}2\), \(\Gamma(\frac52)=\frac{3\sqrt\pi}4\) this gives the lower bound. The series \(I_1(y)=\sum_{i\ge0}(y/2)^{2i+1}/(i!(i+1)!)\) has positive coefficients, so \(I_1\) is increasing; \(I_1'=I_0-I_1/y\) is a standard identity; \(I_0(y)-I_1(y)=\frac1\pi\int_0^\pi e^{y\cos\theta}(1-\cos\theta)d\theta\ge0\). \(\blacksquare\)
+
+\textbf{Lemma 6.5.} Let \(C_E=138.1955\) and \(K=1.3828\) (the numbers are upper roundings, see below), and \(\bar B(n)=C_E+Ke^{x(n)/2}\), \(\bar\beta(n)=\bar B(n)/\psi(n)\).
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  For every integer \(n\ge300\): \(|Q(n)-M(n)|\le\bar B(n)\). Consequently, for \(n\ge300\),
+  \[\Bigl(1-\frac{3}{4x(n)}-\bar\beta(n)\Bigr)\psi(n)\ \le\ Q(n)\ \le\ \bigl(1+\bar\beta(n)\bigr)\psi(n).\tag{6.4}\]
+\item
+  \(\bar\beta\) is nonincreasing on \([300,\infty)\), and \(\bar\beta(300)\le6.7\cdot10^{-3}\), \(\bar\beta(1000)\le1.7\cdot10^{-6}\), \(\bar\beta(1804)\le2.6\cdot10^{-9}\), \(\bar\beta(6000)\le1.2\cdot10^{-18}\).
+\item
+  \(Q(n+1)\ge Q(n)\) for all \(n\ge2\).
+\end{enumerate}
+
+\emph{Proof.} (1) Let \(n\ge300\), \(\nu=n-\frac1{24}\ge299.9\), \(N=\lfloor\sqrt{2\pi\nu}\rfloor\ge43\). By the definition of \(N\), \(N^2\le2\pi\nu<(N+1)^2\), hence \(N^2/(\pi\nu)\le2\) and \(e^{2\pi\varrho\nu}=e^{2\pi\nu/N^2}<e^{(1+1/N)^2}\le e^{(44/43)^2}\). In (6.3) all other quantities depend only on the data of \(Q\). Evaluating them in interval arithmetic (\(\sum_{\ell\in L_{>0}}e^{\pi\Delta_3(\ell)/3}=5.448\ldots\) and the curly bracket \(=18.803\ldots\)) gives \(|E(n)|\le C_E\) with \(C_E=2e^{(44/43)^2}(5.4482+18.8031)\le138.1955\) (value of the interval upper end: \(138.19547\ldots\)).
+
+The terms \(k\ge3\) in (6.2) with \(k\equiv1,3\ (4)\) have \(\Delta_3=\frac14\), \(\Delta_4=1\) and size at most \(\frac{\pi}{\sqrt v}I_1(x/k)\cdot\frac{\#\{h\}}{k}\le\frac\pi{\sqrt v}I_1(x/k)\) (using \(|\omega_{h,k}|=1\), \(\#\{h\}\le k\), \(I_1\) increasing); those with \(4\mid k\) have \(\Delta_3=1\) and size at most \(\frac{2\pi}{\sqrt v}I_1(2x/k)\), \(2x/k\le x/2\). In both cases the Bessel argument is at most \(x/2\), so by Lemma 6.4 each such term is at most \(\frac{2\pi}{\sqrt v}\cdot0.4302\,e^{x/2}\). There are at most \(N\le\sqrt{2\pi\nu}\le\sqrt{\pi v/12}\) terms (since \(2\pi\nu=\pi v/12\)). So their sum is at most \(2\pi\sqrt{\pi/12}\cdot0.4302\,e^{x/2}\le Ke^{x/2}\) with \(K=1.3828\) (evaluation: \(1.38280\ldots\)). Together with (6.2), \(|Q(n)-M(n)|\le C_E+Ke^{x/2}=\bar B(n)\). Lemma 6.4 gives \((1-\frac3{4x})\frac{e^x}{\sqrt{2\pi x}}\le I_1(x)\le\frac{e^x}{\sqrt{2\pi x}}\), and \(\frac{\pi}{\sqrt v}\frac{e^x}{\sqrt{2\pi x}}=\psi(n)\) (because \(2\pi x=\pi^2\sqrt v/6\)). Hence \((1-\frac3{4x})\psi\le M\le\psi\), which with the bound on \(|Q-M|\) gives (6.4).
+
+\begin{enumerate}
+\def\labelenumi{(\arabic{enumi})}
+\setcounter{enumi}{1}
+\item
+  \(\frac{d}{dn}\ln\psi=\frac{\pi}{\sqrt v}-\frac{18}{v}>0\) for \(\sqrt v>18/\pi\), so \(C_E/\psi\) is decreasing; \(Ke^{x/2}/\psi=\frac K{\sqrt6}v^{3/4}e^{-x/2}\) and \(\frac d{dn}\ln(v^{3/4}e^{-x/2})=\frac{18}{v}-\frac\pi{2\sqrt v}<0\) for \(\sqrt v>36/\pi\). The numerical values are interval evaluations (\texttt{chern\_margins.py}).
+\item
+  For \(2\le n\le35199\) this is checked on the exact table of \(Q\) (Appendix A.2). Let \(n\ge35200\), \(x=x(n)\ge240\), \(v=v(n)\). Differentiating, \(M'(\xi)=\pi^2v(\xi)^{-1}\bigl[I_0(x(\xi))-2I_1(x(\xi))/x(\xi)\bigr]\) (use \(\frac{dx}{d\xi}=\pi/\sqrt{v}\), \(12/\sqrt v=\pi/x\) and \(I_1'=I_0-I_1/x\)), which is \(\ge\pi^2v(\xi)^{-1}(1-2/x(\xi))I_1(x(\xi))\) by \(I_0\ge I_1\). On \([n,n+1]\): \(v(\xi)\le v(n+1)\), and \((1-2/x)\), \(I_1\) are increasing, so with Lemma 6.4,
+  \[M(n+1)-M(n)\ \ge\ \Lambda(n):=\pi\Bigl(1-\tfrac2x\Bigr)\Bigl(1-\tfrac3{4x}\Bigr)\frac{\psi(n)\sqrt{v(n)}}{v(n+1)}\ \ge\ 3\,\frac{\psi(n)}{\sqrt{v}}=3\sqrt6\,e^{x}v^{-5/4}\]
+  (using \(x\ge240\), \(v(n+1)\le1.0001\,v\)). On the other hand \(x(n+1)-x(n)\le\pi/\sqrt v<0.0035\) so \(\bar B(n)+\bar B(n+1)\le2C_E+2.004\,Ke^{x/2}\). By (1), \(Q(n+1)-Q(n)\ge\Lambda(n)-\bar B(n)-\bar B(n+1)\), which is positive as soon as
+  \[2C_E\,v^{5/4}e^{-x}+2.004\,K\,v^{5/4}e^{-x/2}<3\sqrt6 .\]
+  The left side is nonincreasing in \(n\) (for \(\sqrt v>60/\pi\), \(\frac d{dn}\ln(v^{5/4}e^{-x/2})=\frac{30}v-\frac{\pi}{2\sqrt v}<0\), and similarly for \(e^{-x}\)), and at \(n=35200\) it is \(<10^{-40}\) (interval evaluation). \(\blacksquare\)
+\end{enumerate}
+
+\subsection{\texorpdfstring{The inequality \(A_1>A_2\)}{The inequality A\_1\textgreater A\_2}}\label{the-inequality-a_1a_2}
+
+\textbf{Theorem 6.6.} Let \(k\) be odd, \(s\ge3\), \(k>2s\), \(k\mid s^2-1\). Then \(A_1>A_2\), except for \((s,k)=(4,15)\) and \((8,21)\), where \(A_1=A_2=2\) and \(A_1=A_2=6\) respectively.
+
+The proof has two parts: a finite exact computation for \(3\le s\le2500\) (Proposition 6.7) and an analytic argument for \(s\ge2501\) (Proposition 6.8).
+
+\textbf{Proposition 6.7 (finite range; computer-assisted).} For every pair \((s,k)\) with \(3\le s\le2500\), \(k\) odd, \(k>2s\), \(k\mid s^2-1\) (there are \(15\,616\) pairs), \(A_1>A_2\) except for \((4,15)\) and \((8,21)\).
+
+\emph{Proof.} All arithmetic is exact integer arithmetic. The table of \(Q(0),\dots,Q(35200)\) is computed exactly. For each pair, \(A_2=A_{n_2}(m_2)\) is computed by (4.3) (valid since \(m_2\le2n_2+1\), Lemma 6.2). A lower bound \(\mathrm{LB}\le A_1\) is computed as follows: choose \(m''\le m_1\) with \(m''\equiv m_1\pmod2\) such that \(D=m_1-m''\) is a sum of even integers in \((s,2s]\) (this is decided exactly by the criterion of Lemma 6.3(2): \(D=0\), or \(D\) even and \(\lceil D/2s\rceil e_0\le D\)), and set \(\mathrm{LB}=A_s(m'')\) computed by (4.3) if \(m''\le2s+1\), and otherwise \(\mathrm{LB}=Q(m'')-\sum_{j\ \mathrm{odd},\ s<j\le m''}Q(m''-j)\). By Lemma 6.3(2) and the proof of Lemma 6.3(1), \(\mathrm{LB}\le A_s(m'')\le A_1\) (the inequality \(Q(x)\le Q(y)\) is not used here: the exact sum is subtracted). The candidates are the integers \(m''\) with \(m_2<m''\le\min(m_1,35200)\) satisfying the two conditions above (they are tried in the order \(m_1\), \(4s+3,4s+2,4s+1,4s\), then downward from \(\min(m_1,8s,35200)\); the order only affects speed), and the first with \(\mathrm{LB}>A_2\) is accepted. The result: \(15\,587\) pairs are certified (\(\mathrm{LB}>A_2\), so \(A_1>A_2\)). The remaining \(29\) pairs all have \(s\le32\); they are listed in the output file and are settled by the exact computation of \(A_1=[x^{m_1}]\prod_{j\ \mathrm{odd}\le s}(1+x^j)\prod_{s/2<i\le s}(1-x^{2i})^{-1}\) (Lemma 4.2), which was carried out for \textbf{all} pairs with \(s\le300\) (\(995\) pairs): \(A_1>A_2\) for every pair except \((4,15)\) and \((8,21)\); the smallest ratio \(A_1/A_2\) among the others is \(1.7811\) at \((s,k)=(34,77)\). For the two exceptions the terms of \(g_k(d_k)\) are listed in Section 6.6; they give \(A_1=A_2=2\) for \((4,15)\) and \(A_1=A_2=6\) for \((8,21)\). \(\blacksquare\)
+
+\textbf{Proposition 6.8 (analytic range).} Under Lemma 6.5, \(A_1>A_2\) for all \((s,k)\) as in Theorem 6.6 with \(s\ge2501\).
+
+\emph{Proof.} Let \(s\ge2501\). All arguments of \(Q\) below are \(\ge300\), so (6.4) applies, and \(\bar\beta\) is nonincreasing. Define
+\[\lambda(n)=1-\frac3{4x(n)}-\bar\beta(n),\]
+which is increasing in \(n\).
+
+\textbf{Case 1: \(m_1\le5s+7\).} Put \(y_1=m_1-s-1\), \(n_a=\frac32s+4\). By Lemma 6.2, \(m_1>m_2>n_a\) and \(y_1>s/2+3\). By Lemma 6.3 (1),(3),
+\[A_1-A_2\ \ge\ Q(m_1)-\tfrac{m_1-s+1}{2}Q(y_1)-Q(m_2)-Q(s).\]
+Divide by \(\psi(m_1)\) and use (6.4):
+\[\frac{A_1-A_2}{\psi(m_1)}\ \ge\ \lambda(m_1)-\tfrac{m_1-s+1}2\bigl(1+\bar\beta(y_1)\bigr)\frac{\psi(y_1)}{\psi(m_1)}-\bigl(1+\bar\beta(m_2)\bigr)\frac{\psi(m_2)}{\psi(m_1)}-\bigl(1+\bar\beta(s)\bigr)\frac{\psi(s)}{\psi(m_1)}.\]
+We bound the four terms.
+
+\emph{First term.} \(\lambda(m_1)\ge\lambda(n_a)=:L\).
+
+\emph{Third term} (\(m_2=m_1-u\)). Write \(\psi(m_2)/\psi(m_1)=e^{f(u)}\) with \(v_1=v(m_1)\) and
+\[f(u)=-\bigl(x(m_1)-x(m_1-u)\bigr)+\tfrac34\ln\frac{v_1}{v_1-24u}.\]
+Then \(f'(u)=\dfrac{18-\pi\sqrt{v_1-24u}}{v_1-24u}<0\) (as \(\sqrt{v(m_2)}>18/\pi\)), so \(f\) is decreasing in \(u\) and, with \(u_0=\sqrt{m_1+1}\le u\) (Lemma 6.2), \(f(u)\le f(u_0)\). By concavity of \(x(\cdot)\), \(x(m_1)-x(m_1-u_0)\ge u_0x'(m_1)=\pi u_0/\sqrt{v_1}>\pi/\sqrt{24}\) (as \((m_1+1)/(24m_1-1)>1/24\)). The logarithmic term is at most \(\frac34\ln\bigl(1-24u_0/v_1\bigr)^{-1}\), which is decreasing in \(m_1\), hence at most its value at \(m_1=n_a\). Therefore
+\[\frac{\psi(m_2)}{\psi(m_1)}\le r_0:=e^{-\pi/\sqrt{24}}\Bigl(1-\frac{24\sqrt{n_a+1}}{24n_a-1}\Bigr)^{-3/4},\qquad\text{third term}\le(1+\bar\beta(n_a))\,r_0=:T .\]
+
+\emph{Second term.} \(m_1-s+1\le4s+8\). By concavity, \(x(m_1)-x(y_1)\ge(s+1)x'(m_1)=\pi(s+1)/\sqrt{v_1}\ge\pi(s+1)/\sqrt{120s+167}\) (since \(m_1\le5s+7\)). Also \(v(m_1)/v(y_1)=\frac{24m_1-1}{24m_1-24s-25}\) is decreasing in \(m_1\), so \(\le\frac{36s+95}{12s+71}<3\) at \(m_1=n_a\). Hence the second term is at most
+\[\theta(s)=(2s+4)\bigl(1+\bar\beta(\tfrac s2+3)\bigr)3^{3/4}e^{-\pi(s+1)/\sqrt{120s+167}} .\]
+
+\emph{Fourth term.} \(x(m_1)-x(s)\ge(m_1-s)x'(m_1)=\pi\frac{m_1-s}{\sqrt{24m_1-1}}\ge\pi\frac{s/2+4}{\sqrt{120s+167}}\) (numerator minimal at \(m_1=n_a\), denominator maximal at \(m_1=5s+7\)), and \(v(m_1)/v(s)\le(120s+167)/(24s-1)\). So the fourth term is at most
+\[U(s)=\bigl(1+\bar\beta(s)\bigr)e^{-\pi(s/2+4)/\sqrt{120s+167}}\Bigl(\frac{120s+167}{24s-1}\Bigr)^{3/4}.\]
+
+\emph{Monotonicity in \(s\).} \(L\) is increasing and \(T\) is decreasing in \(s\) (both \(1+\bar\beta(n_a)\) and \(r_0\) decrease as \(n_a\) grows). For \(\theta\): \(\bar\beta\) factor nonincreasing, and \(\frac d{ds}\ln\bigl[(s+2)e^{-\pi(s+1)/\sqrt{120s+167}}\bigr]=\frac1{s+2}-\frac{\pi(60s+107)}{(120s+167)^{3/2}}<0\) for \(s\ge100\) (the second fraction is \(\ge0.139\,s^{-1/2}\), the first is \(\le0.1\,s^{-1/2}\)). For \(U\): \(\frac d{ds}\bigl[-\pi(\tfrac s2+4)(120s+167)^{-1/2}\bigr]=-\pi\frac{30s-156.5}{(120s+167)^{3/2}}<0\) and \(\frac{d}{ds}\frac34\ln\frac{120s+167}{24s-1}<0\); the \(\bar\beta\) factor is nonincreasing. Hence the lower bound \(\mathrm{M}_1(s)=L-T-\theta-U\) is nondecreasing in \(s\), and at \(s=2501\) interval evaluation gives \(L\ge0.99046\), \(T\le0.53316\), \(\theta\le6.73\cdot10^{-3}\), \(U\le2.52\cdot10^{-3}\), so \(\mathrm M_1(2501)\ge0.448>0\) (\texttt{chern\_margins.py}). Hence \(A_1>A_2\) in Case 1 for all \(s\ge2501\).
+
+\textbf{Case 2: \(m_1\ge5s+8\).} By Lemma 6.3 (4), \(A_2\le Q(2s+3)\). Choose \(m''\in\{4s,4s+1,4s+2,4s+3\}\) with \(m''\equiv m_1\pmod2\) and \(D=m_1-m''\ne2s+2\) (of the two admissible values, the corresponding \(D\) differ by \(2\), so one of them is not \(2s+2\)). Then \(D\ge m_1-(4s+3)\ge s+5\) is even, so by Lemma 6.3 (2), \(A_1\ge A_s(m'')\). By Lemma 6.3 (1) and monotonicity, \(A_s(m'')\ge Q(4s)-(\tfrac32s+2)Q(3s+2)\) (as \(m''\ge4s\), \(\frac{m''-s+1}{2}\le\frac32s+2\), \(m''-s-1\le3s+2\)). Hence
+\[\frac{A_1-A_2}{\psi(4s)}\ \ge\ \lambda(4s)-c_1(s)-c_2(s),\]
+\[c_1=(\tfrac32s+2)\bigl(1+\bar\beta(3s+2)\bigr)\frac{\psi(3s+2)}{\psi(4s)},\qquad c_2=\bigl(1+\bar\beta(2s+3)\bigr)\frac{\psi(2s+3)}{\psi(4s)} .\]
+By concavity \(x(4s)-x(3s+2)\ge(s-2)\pi/\sqrt{96s-1}\) and \(x(4s)-x(2s+3)\ge(2s-3)\pi/\sqrt{96s-1}\), and \(v(4s)/v(3s+2)=\frac{96s-1}{72s+47}\), \(v(4s)/v(2s+3)=\frac{96s-1}{48s+71}\). Thus \(c_1\le(\tfrac32s+2)(1+\bar\beta(3s+2))e^{-\pi(s-2)/\sqrt{96s-1}}\bigl(\tfrac{96s-1}{72s+47}\bigr)^{3/4}\) and \(c_2\le(1+\bar\beta(2s+3))e^{-\pi(2s-3)/\sqrt{96s-1}}\bigl(\tfrac{96s-1}{48s+71}\bigr)^{3/4}\). These bounds are decreasing in \(s\) for \(s\ge2501\) (the logarithmic derivatives of the elementary factors are \(\frac1{s+4/3}-\frac{\pi(48s+95)}{(96s-1)^{3/2}}+O(s^{-2})<0\) and \(-\frac{\pi(96s+142)}{(96s-1)^{3/2}}+O(s^{-2})<0\), and the \(\bar\beta\) factors are nonincreasing), while \(\lambda(4s)\) is increasing. At \(s=2501\): \(\lambda(4s)\ge0.99415\), \(c_1\le5.13\cdot10^{-4}\), \(c_2\le2.1\cdot10^{-14}\), so the margin is \(\ge0.9936>0\). \(\blacksquare\)
+
+\emph{Proof of Theorem 6.6.} Propositions 6.7 and 6.8 cover all \(s\ge3\). \(\blacksquare\)
+
+\emph{Dependence.} Proposition 6.8 depends on \cite{Chern} only through (6.2)--(6.3) (Lemma 6.5 (1)). Proposition 6.7 and the exact tables do not depend on \cite{Chern}. The margins in Proposition 6.8 are large: if every occurrence of \(\bar\beta\) is replaced by a constant \(0.25\), the lower bounds at \(s=2501\) are still positive (\(0.06\) in Case 1), whereas \(\bar\beta(1253)\le2\cdot10^{-7}\).
+
+\subsection{The theorem}\label{the-theorem}
+
+\textbf{Theorem 6.9.} Let \(k\) be an odd integer with exactly two distinct prime factors. Then \(g_k\bigl((k+2)^2-3\bigr)\ne0\), except for \(k=15\) and \(k=21\), for which \(g_k\bigl((k+2)^2-3\bigr)=0\).
+
+For odd prime powers \(k\ge5\), \(g_k\bigl((k+2)^2-3\bigr)=0\) (Corollary 5.4).
+
+\emph{Proof.} Let \(k=p^aq^b\) with \(p<q\) odd primes; \(k\ge15\). The solutions of \(x^2\equiv1\pmod k\) are, by the Chinese remainder theorem, exactly four residues \(\pm1,\pm s_0\) with \(s_0\not\equiv\pm1\). Hence \(\Xi_k\) consists of exactly one element \(s\) (one of \(s_0,k-s_0\) lies in \((1,k/2)\)), and \(s\ge3\) since \(s^2\equiv1\), \(s=2\) would give \(k\mid3\). By Lemma 6.1 and \((-1)^k+1=0\),
+\[g_k\bigl((k+2)^2-3\bigr)=(-1)^{t+1}(A_1-A_2).\]
+By Theorem 6.6, \(A_1\ne A_2\) unless \((s,k)\in\{(4,15),(8,21)\}\), and for these two pairs \(A_1=A_2\), so \(g_k(d_k)=0\). \(\blacksquare\)
+
+\subsection{\texorpdfstring{The cases \(k=15\) and \(k=21\)}{The cases k=15 and k=21}}\label{the-cases-k15-and-k21}
+
+For \(k=15\), \(d=286\): the terms \((n,m,\varphi_n(m))\) are \((1,19,-1)\), \((4,18,+2)\), \((11,11,-2)\), \((14,6,+1)\), \((16,2,0)\) (\(s=4\), \(t=1\), \(A_1=A_4(18)=2\), \(A_2=A_{11}(11)=2\)). For \(k=21\), \(d=526\): \((1,25,-1)\), \((8,22,+6)\), \((13,17,-6)\), \((20,6,+1)\), \((22,2,0)\) (\(s=8\), \(t=3\), \(A_1=A_8(22)=6\), \(A_2=A_{13}(17)=6\)). In both cases the sum is \(0\).
+
+\emph{Computer-assisted items in this section:} the table of \(Q\) up to \(35200\) and its monotonicity; the interval evaluation of \(C_E\), \(K\), \(\bar\beta\) and of the margins at \(s=2501\); the finite certificate of Proposition 6.7 (Appendix A.2).
+
+\section{\texorpdfstring{Even \(k\)}{Even k}}\label{even-k}
+
+\subsection{Signs of the terms and finiteness of the zero set in ``one-sign'' classes}\label{signs-of-the-terms-and-finiteness-of-the-zero-set-in-one-sign-classes}
+
+\textbf{Lemma 7.1.} Let \(k\ge1\) and \(d\ge0\). The term \(n\) of \(g_k(d)\) equals \((-1)^{m_n}A_n(m_n)\). Two terms \(n,n'\) of \(g_k(d)\) have the same sign factor \((-1)^{m_n}=(-1)^{m_{n'}}\) if and only if \(n^2\equiv n'^2\pmod{2k}\).
+
+\emph{Proof.} The first statement is (4.2). Also \(m_n-m_{n'}=(n'^2-n^2)/k\), which is even if and only if \(2k\mid n'^2-n^2\). \(\blacksquare\)
+
+\emph{Definition 7.2.} A residue class \(c\in\mathcal S_k\) is a \emph{one-sign class} if \(n^2\equiv n'^2\pmod{2k}\) whenever \(n^2\equiv n'^2\equiv c\pmod k\). For such a class and every \(d\equiv c\pmod k\), all terms of \(g_k(d)\) have the same sign factor \(\varepsilon_d=(-1)^{m_n}\) and
+\[g_k(d)=\varepsilon_d\sum_nA_n(m_n),\qquad\text{so }g_k(d)\ne0\iff A_n(m_n)\ge1\text{ for some term }n .\tag{7.1}\]
+
+\textbf{Lemma 7.3.} If \(k\equiv2\pmod 4\), every class \(c\in\mathcal S_k\) is a one-sign class.
+
+\emph{Proof.} Let \(k=2h\), \(h\) odd, \(n^2\equiv n'^2\pmod k\). Then \(n\equiv n'\pmod2\), so \(n^2-n'^2=(n-n')(n+n')\) is a product of two even numbers and \(4\mid n^2-n'^2\); also \(h\mid n^2-n'^2\). As \(\gcd(4,h)=1\), \(4h=2k\) divides \(n^2-n'^2\). \(\blacksquare\)
+
+\textbf{Theorem 7.4.} Let \(k\ge2\) and let \(c\) be a one-sign class. Let \(n_0\) be the least integer \(n\ge3\) with \(n^2\equiv c\pmod k\), \(L=\lfloor n_0/2\rfloor+1\), and
+\[B_c=n_0^2+k\bigl(2L(L-1)+1\bigr).\]
+Then \(g_k(d)\ne0\) for every \(d\equiv c\pmod k\) with \(d\ge B_c\), and \(g_k(d)\) has the sign \(\varepsilon_d\).
+
+\emph{Proof.} \(n_0\) exists since if \(n^2\equiv c\) then also \((n+k)^2\equiv c\) and one of \(n,n+k,n+2k\) is \(\ge3\). Let \(d\ge B_c\). Then \(n_0\) is a term of \(g_k(d)\), with index \(m=(d-n_0^2)/k\ge2L(L-1)+1\). By (7.1) it suffices to show \(A_{n_0}(m)\ge1\).
+
+The even integers \(2L\) and \(2L+2\) lie in \((n_0,2n_0]\): \(2L=2\lfloor n_0/2\rfloor+2>n_0\) and \(2L+2\le2n_0\) iff \(\lfloor n_0/2\rfloor+2\le n_0\), true for \(n_0\ge3\). Every integer \(N\ge L(L-1)\) is of the form \(aL+b(L+1)\) with \(a,b\ge0\): write \(N=qL+r\), \(0\le r<L\); then \(q\ge L-1\ge r\) and \(N=(q-r)L+r(L+1)\). Hence every even integer \(\ge2L(L-1)\) is a sum of parts \(2L\) and \(2L+2\). If \(m\) is even, take \(\lambda=\emptyset\) and \(\mu\) such a multiset with sum \(m\) (\(m\ge2L(L-1)+2\)). If \(m\) is odd, take \(\lambda=\{1\}\) (\(1\le n_0\)) and \(\mu\) with sum \(m-1\ge2L(L-1)\). By (4.2), \(A_{n_0}(m)\ge1\). \(\blacksquare\)
+
+\textbf{Corollary 7.5.} If \(k\equiv2\pmod 4\) then \(Z_k\) is finite, \(Z_k\subset[0,\max_cB_c)\), and \(\mathrm{OccFilt}_k(\infty)=\mathcal S_k\).
+
+The sets \(Z_k\) for \(k\equiv2\pmod4\), \(k\le34\), are computed exactly in Appendix B.2 (\(d<\max_cB_c\) is a finite range; the program evaluates \(g_k(d)\) exactly for all \(d\le\max_cB_c+3000\)). For example:
+\[Z_2=\{2,8,10,26\},\qquad Z_6=\{3,6,12,18,21,24,30,46,48,78\},\]
+\[Z_{10}=\{5,6,10,15,20,24,29,30,34,40,45,50,60,70,80,90,120\},\]
+\begin{multline*}Z_{14}=\{2,7,8,11,14,21,22,28,32,35,37,42,44,46,53,56,70,\\77,84,86,88,98,102,112,126,140,154,168,182,224\},\end{multline*}
+with \(\max_cB_c=42,186,710,1778\) and \(|Z_k|=4,10,17,30\) respectively.
+
+\subsection{\texorpdfstring{The case \(k=2\)}{The case k=2}}\label{the-case-k2}
+
+\textbf{Theorem 7.6.} For every \(d\ge0\), \(g_2(d)=0\) or \(\operatorname{sign}g_2(d)=(-1)^{\lfloor d/2\rfloor}\). Moreover \(g_2(d)\ne0\) for all even \(d\ge42\) and all odd \(d\ge19\), and the zero set is
+\[Z_2=\{2,8,10,26\}.\]
+
+\emph{Proof.} \emph{Sign.} Let \(n\) be a term of \(g_2(d)\), \(m=(d-n^2)/2\). If \(d\) is even, \(n=2j\) and \(m=d/2-2j^2\equiv d/2\pmod2\). If \(d\) is odd, \(n\) is odd and \(n^2\equiv1\pmod8\), so \(m=\frac{d-1}2-\frac{n^2-1}{2}\equiv\frac{d-1}2\pmod 2\) (as \(4\mid\frac{n^2-1}2\)). In both cases \((-1)^m=(-1)^{\lfloor d/2\rfloor}\), independent of \(n\), and by (4.2) every term \(\varphi_n(m)=(-1)^mA_n(m)\) has that sign (or is \(0\)).
+
+\emph{Nonvanishing.} The two classes \(c=0\) (\(n\) even) and \(c=1\) (\(n\) odd) are one-sign classes (Lemma 7.3). For \(c=0\): \(n_0=4\), \(L=3\), \(B_0=16+2(2\cdot3\cdot2+1)=42\). For \(c=1\): \(n_0=3\), \(L=2\), \(B_1=9+2(2\cdot2\cdot1+1)=19\). By Theorem 7.4, \(g_2(d)\ne0\) for even \(d\ge42\) and odd \(d\ge19\).
+
+\emph{Finite range.} The exact values \(g_2(d)\) for \(0\le d\le41\) are:
+
+\begin{longtable}[]{@{}lllllllllllllll@{}}
+\toprule\noalign{}
+\(d\) & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(g_2(d)\) & 1 & 1 & 0 & -1 & 1 & 1 & -1 & -1 & 0 & 2 & 0 & -2 & 1 & 1 \\
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(d\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+14
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+15
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+16
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+17
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+18
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+19
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+20
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+21
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+22
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+23
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+24
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+25
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+26
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+27
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(g_2(d)\) & -1 & -2 & 1 & 3 & -1 & -2 & 1 & 2 & -2 & -3 & 1 & 4 & 0 & -4 \\
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(d\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+28
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+29
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+30
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+31
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+32
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+33
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+34
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+35
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+36
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+37
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+38
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+39
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+40
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+41
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(g_2(d)\) & 2 & 3 & -2 & -4 & 1 & 5 & -2 & -5 & 3 & 5 & -3 & -5 & 2 & 7 \\
+\end{longtable}
+
+The zeros in \(d<42\) are \(2,8,10,26\); all nonzero values have the sign \((-1)^{\lfloor d/2\rfloor}\). \(\blacksquare\)
+
+\subsection{\texorpdfstring{The value at \((k+2)^2-3\) for even \(k\)}{The value at (k+2)\^{}2-3 for even k}}\label{the-value-at-k22-3-for-even-k}
+
+\textbf{Theorem 7.7.} Let \(k\ge8\) be even and \(d_k=(k+2)^2-3\).
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(g_k(d_k)=2+\sum_{s\in\Xi_k}(-1)^{t}(A_1+A_2)\) with \(t=(s^2-1)/k\), and every \(s\in\Xi_k\) is odd.
+\item
+  If \(8\nmid k\), every \(t\) is even and \(g_k(d_k)\ge2\).
+\item
+  If \(k=2p^a\) with \(p\) an odd prime (\(k\ge10\)), then \(\Xi_k=\emptyset\) and \(g_k(d_k)=2\).
+\item
+  If \(k=2^a\) with \(a\ge3\), then \(\Xi_k=\{k/2-1\}\) and \(g_k(d_k)=2-A_1-A_2<0\). Values: \(g_8(97)=-3\), \(g_{16}(321)=-8\), \(g_{32}(1153)=-31\), \(g_{64}(4353)=-236\), \(g_{128}(16897)=-5174\).
+\end{enumerate}
+
+\emph{Proof.} (1) Lemma 6.1 with \((-1)^k+1=2\); for even \(k\), \(m_1\equiv m_2\equiv t\pmod 2\), so the bracket is \((-1)^t(A_1+A_2)\). A root \(s\) of \(s^2\equiv1\pmod k\) with \(k\) even is odd.
+
+\begin{enumerate}
+\def\labelenumi{(\arabic{enumi})}
+\setcounter{enumi}{1}
+\item
+  \(s\) odd gives \(8\mid s^2-1=tk\), and \(v_2(k)\le2\) forces \(v_2(t)\ge1\). All pair terms are \(\ge0\).
+\item
+  Modulo \(p^a\) the roots are \(\pm1\) and modulo \(2\) the root is \(1\), so \(s^2\equiv1\pmod{2p^a}\) implies \(s\equiv\pm1\pmod{2p^a}\): only \(s=1,k-1\), which are excluded from \(\Xi_k\).
+\item
+  The solutions of \(x^2\equiv1\pmod{2^a}\), \(a\ge3\), are \(\pm1\) and \(2^{a-1}\pm1\). So \(\Xi_k=\{s\}\) with \(s=k/2-1\ (>1)\), and \(t=\frac{(s-1)(s+1)}{k}=\frac{(k/2-2)(k/2)}{k}=\frac k4-1\), which is odd since \(k/4\) is even. Hence \(g_k(d_k)=2-(A_1+A_2)\). Here \(n_2=k-s=\frac k2+1\) and \(m_2=4+2s-t=\frac{3k}4+3\), which is odd (as \(\frac{3k}{4}\) is even). For \(k\ge16\) and \(o\in\{1,3,5\}\), the pair \(\lambda=\{o\}\), \(\mu=\{m_2-o\}\) is admissible in (4.2) for \(A_{n_2}(m_2)\): \(o\le n_2\); \(m_2-o\) is even; \(m_2-o\le\frac{3k}4+2\le k+2=2n_2\); and \(m_2-o>\frac k2+1=n_2\) iff \(o<\frac k4+2\), true for \(o\le5\) when \(k\ge16\). These are three different pairs, so \(A_2\ge3\), \(A_1\ge0\) and \(g_k(d_k)\le-1\). For \(k=8\) the terms of \(g_8(97)\) are \((1,12,+1)\), \((3,11,-2)\), \((5,9,-3)\), \((7,6,+1)\), \((9,2,0)\), with sum \(-3\). The values for \(k=16,\dots,128\) are exact evaluations (Appendix A.1). \(\blacksquare\)
+\end{enumerate}
+
+\emph{Scope.} Lemma 7.1 shows that for \(4\mid k\) there are classes \(c\) in which two roots \(n,n'\) have \(n^2\not\equiv n'^2\pmod{2k}\); in such a class the terms of \(g_k(d)\) have different signs and Theorem 7.4 does not apply. For \(k=4,8,12\) these classes are: \(c\equiv0\) (\(k=4\)), \(c\equiv1\) (\(k=8\)), \(c\equiv0,4\) (\(k=12\)) (computed by enumeration of \(n\) modulo \(2k\)). Nothing is claimed for such classes.
+
+\section{\texorpdfstring{Parity dominance for odd \(k\le33\)}{Parity dominance for odd k\textbackslash le33}}\label{parity-dominance-for-odd-kle33}
+
+Throughout this section \(k\) is odd, \(3\le k\le33\), and \(d\) is allowed for \(k\) (Definition 3.3). The notation \(a_n(m)\), \(A_n(x)\), \(E_d\), \(O_d\) is that of Section 4: \(a_n(m)=|\varphi_n(m)|\), \(A_n(x)=\sum_ma_n(m)x^m\) is the product (4.1), and by (4.4)
+\[(-1)^dg_k(d)=E_d-O_d,\qquad E_d=\sum_{n\ \mathrm{even}}a_n(m_n),\quad O_d=\sum_{n\ \mathrm{odd}}a_n(m_n).\]
+
+\subsection{Statement}\label{statement}
+
+For \(k\) in the table of Section 8.7, \(R_k<1\) and \(D_0(k)\) are the numbers computed there (Table 8.2). Put \(\eta_t=10^{-6}\).
+
+\textbf{Theorem 8.1 (parity dominance).} Let \(k\in\{3,5,\dots,33\}\).
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  For every allowed \(d\ge D_0(k)\): \(O_d>0\) and \(E_d\le(R_k+\eta_t)\,O_d\). Consequently \((-1)^dg_k(d)\le-(1-R_k-\eta_t)O_d<0\); in particular \(g_k(d)\ne0\) and \(\operatorname{sign}g_k(d)=(-1)^{d+1}\).
+\item
+  \(Z_k\) is a finite set, \(\max Z_k<D_0(k)\), and \(Z_k\) is the explicit set of Appendix B.1 (cardinalities and maxima in Table 8.5).
+\item
+  \(\mathrm{OccFilt}_k(\infty)=\mathcal S_k\): the residue classes mod \(k\) that occur for all large \(d\) are exactly the squares mod \(k\).
+\end{enumerate}
+
+Part 3 follows from Part 2 and Proposition 3.4. Part 2 follows from Part 1 and the finite certificate of Section 8.7. Part 1 is proved in Sections 8.2 to 8.5: it combines (a) a local limit estimate for a family of integer-valued random variables attached to \(A_n\) (Sections 8.2, 8.3), (b) a comparison of each even term with the two odd terms \(n\pm k\) (Section 8.4) and (c) an upper bound for the even terms far from the saddle, and a lower bound for one odd term (Section 8.5).
+
+Computer-assisted steps: the finite computations of Algorithms C (cells), R (block bound), T (tail) and the modular certificate. Each is specified below and reproduced by the code listed in Appendix A.3; they use interval (ball) arithmetic with the Arb library through python-flint \cite{Arb}, at 128-bit working precision, except for the modular certificate, which uses exact integer arithmetic modulo two primes.
+
+\subsection{The tilted model}\label{the-tilted-model}
+
+Let \(n\ge1\) and \(0<r<1\). Put \(t=-\ln r\) and
+\[p_j=\frac{r^j}{1+r^j}=\frac1{1+e^{jt}}\ (j\text{ odd},\ j\le n),\qquad w_l=r^{2l}=e^{-2lt}\ \bigl(\tfrac n2<l\le n\bigr).\]
+Let \(B_j\) (\(j\) odd \(\le n\)) be independent Bernoulli variables with \(P(B_j=1)=p_j\), and \(N_l\) (\(n/2<l\le n\), \(l\) integer) independent geometric variables with \(P(N_l=i)=(1-w_l)w_l^{\,i}\), \(i\ge0\), all independent, and
+\[S=S_n(r)=\sum_{j\ \mathrm{odd}\le n}jB_j+\sum_{n/2<l\le n}2l\,N_l\in\mathbb{N}.\]
+
+\textbf{Lemma 8.2.} \(E\,z^{S}=A_n(rz)/A_n(r)\) for \(|z|\le1\). Hence \(P(S=m)=a_n(m)\,r^m/A_n(r)\) for all integers \(m\) (both sides vanish for \(m<0\)).
+
+\emph{Proof.} \(E\,z^{jB_j}=1-p_j+p_jz^j=\frac{1+(rz)^j}{1+r^j}\) and \(E\,z^{2lN_l}=\frac{1-w_l}{1-w_lz^{2l}}=\frac{1-r^{2l}}{1-(rz)^{2l}}\). Multiply and use (4.1). \(\blacksquare\)
+
+Put \(\mu=ES\), \(\sigma^2=\operatorname{Var}S\), \(\kappa_3\) the third cumulant, and \(\varphi(\theta)=Ee^{i\theta S}\). With \(v_j=p_j(1-p_j)=\bigl(4\cosh^2(jt/2)\bigr)^{-1}\) and \(\lambda_l=\frac{4w_l}{(1-w_l)^2}=\sinh^{-2}(lt)\):
+\[\varphi(\theta)=\prod_{j\ \mathrm{odd}\le n}\bigl(1-p_j+p_je^{ij\theta}\bigr)\prod_{n/2<l\le n}\frac{1-w_l}{1-w_le^{2il\theta}},\tag{8.1}\]
+\[\mu=\sum_jjp_j+\sum_l\frac{2lw_l}{1-w_l},\quad\sigma^2=\sum_jj^2v_j+\sum_ll^2\lambda_l,\quad\kappa_3=\sum_jj^3v_j(1-2p_j)+\sum_l(2l)^3\frac{w_l(1+w_l)}{(1-w_l)^3}.\tag{8.2}\]
+(The cumulants of \(jB_j\) are \(jp_j\), \(j^2p_j(1-p_j)\), \(j^3p_j(1-p_j)(1-2p_j)\); those of \(2lN_l\) are \(\frac{2lw}{1-w}\), \(\frac{4l^2w}{(1-w)^2}\), \(\frac{8l^3w(1+w)}{(1-w)^3}\).)
+
+In all applications \(u>0\) is given and \(r=e^{-u/n}\), i.e.~\(t=u/n\). Then \(\mu/n^2\) and \(\sigma^2/n^3\) are bounded above and below by the enclosures of Table 8.1 (Lemma 8.5).
+
+\emph{Monotonicity of the mean.} For fixed \(n\), \(\mu_n(r)\) is continuous and strictly increasing in \(r\in(0,1)\) (\(\frac{d\mu}{dr}=\sigma^2/r>0\) from Lemma 8.2: \(\mu=r\,A_n'(r)/A_n(r)\)), with \(\mu\to0\) as \(r\to0\) and \(\mu\to\infty\) as \(r\to1\) (the geometric means \(2lw_l/(1-w_l)\to\infty\)). Equivalently \(u\mapsto\mu_n(e^{-u/n})\) is strictly decreasing and onto \((0,\infty)\). So for every real \(m>0\) there is exactly one \(u>0\) with \(\mu_n(e^{-u/n})=m\).
+
+\subsection{The local limit estimate}\label{the-local-limit-estimate}
+
+\subsubsection{Fourier inversion}\label{fourier-inversion}
+
+\textbf{Lemma 8.3.} Let \(0<\theta_0\le\pi\) and put \(\tilde\varphi(\theta)=\varphi(\theta)e^{-i\mu\theta}\), \(g(\theta)=e^{-\sigma^2\theta^2/2}\). For every integer \(m\),
+\[\Bigl|\sqrt{2\pi}\,\sigma P(S=m)-e^{-(m-\mu)^2/(2\sigma^2)}\Bigr|\le M+T+Q,\]
+\[M=\frac{\sigma}{\sqrt{2\pi}}\int_{|\theta|\le\theta_0}|\tilde\varphi-g|\,d\theta,\quad T=\operatorname{erfc}\!\Bigl(\frac{\sigma\theta_0}{\sqrt2}\Bigr),\quad Q=\frac{2\sigma}{\sqrt{2\pi}}\int_{\theta_0}^{\pi}|\varphi(\theta)|\,d\theta .\]
+
+\emph{Proof.} \(S\) is integer valued, so \(P(S=m)=\frac1{2\pi}\int_{-\pi}^{\pi}\varphi(\theta)e^{-im\theta}d\theta\). With \(x=m-\mu\), \(e^{-im\theta}\varphi=\tilde\varphi e^{-ix\theta}\), and \(e^{-x^2/(2\sigma^2)}=\frac{\sigma}{\sqrt{2\pi}}\int_{\mathbb R}g\,e^{-ix\theta}d\theta\). Hence the difference is \(\frac\sigma{\sqrt{2\pi}}\bigl[\int_{|\theta|\le\pi}(\tilde\varphi-g)e^{-ix\theta}d\theta-\int_{|\theta|>\pi}g\,e^{-ix\theta}d\theta\bigr]\). Split \(|\theta|\le\theta_0\) and \(\theta_0<|\theta|\le\pi\); use \(|\tilde\varphi|=|\varphi|\), \(|\varphi(-\theta)|=|\varphi(\theta)|\) and \(\int_{\theta_0<|\theta|\le\pi}g+\int_{|\theta|>\pi}g=\int_{|\theta|>\theta_0}g=\frac{\sqrt{2\pi}}{\sigma}\operatorname{erfc}(\sigma\theta_0/\sqrt2)\). \(\blacksquare\)
+
+We use these elementary facts: (E1) \(1-x^2/2\le\cos x\le1-x^2/2+x^4/24\) for real \(x\) (integrate \(\sin x\le x\) repeatedly); (E2) Taylor's formula with integral remainder: for \(F\in C^r[0,\theta]\), \(|F(\theta)-\sum_{s<r}F^{(s)}(0)\theta^s/s!|\le\sup|F^{(r)}|\,|\theta|^r/r!\); (E3) \(|e^z-1|\le|z|e^{\max(0,\operatorname{Re}z)}\); (E4) \(\operatorname{erfc}(z)\le e^{-z^2}/(z\sqrt\pi)\) for \(z>0\) (since \(\operatorname{erfc}(z)=\frac2{\sqrt\pi}\int_z^\infty e^{-s^2}ds\le\frac2{\sqrt\pi}\int_z^\infty\frac sze^{-s^2}ds\)).
+
+\subsubsection{\texorpdfstring{The logarithm of \(\varphi\) and its third derivative}{The logarithm of \textbackslash varphi and its third derivative}}\label{the-logarithm-of-varphi-and-its-third-derivative}
+
+For \(|\theta|\le\pi\) every factor in (8.1) has positive real part after normalisation: \(1-p_j+p_je^{iy}=(1-p_j)(1+q_je^{iy})\) with \(q_j=p_j/(1-p_j)=e^{-jt}<1\), so \(\operatorname{Re}(1+q_je^{iy})\ge1-q_j>0\); and \(\operatorname{Re}(1-w_le^{iy})\ge1-w_l>0\). Let \(f(\theta)=\operatorname{Log}\varphi(\theta)\), the sum of the principal logarithms of the factors; \(f\) is real-analytic on \(\mathbb R\), \(e^f=\varphi\), \(f(0)=0\), and \(f^{(s)}(0)=i^s\kappa_s\).
+
+\textbf{Lemma 8.4 (third derivative).} (a) Let \(0<p\le\frac12\), \(v=p(1-p)\), \(|y|\le t'<\pi\) and \(h=\dfrac{pe^{iy}}{1-p+pe^{iy}}\). Then
+\[|h(1-h)(1-2h)|\le\frac{v\,[(1-2p)+p|y|]}{\cos(y/2)^3}\le\frac{v(1-2p)+t'vp}{\cos(t'/2)^3}.\]
+(b) For \(0<w<1\), \(y\in\mathbb R\) and \(g=\dfrac{we^{iy}}{1-we^{iy}}\): \(|g(1+g)(1+2g)|\le\dfrac{w(1+w)}{(1-w)^3}\).
+(c) Let \(n\ge1\), \(u>0\), \(0<\tau_0<\pi\), \(\theta_0=\tau_0/n\). Then \(\sup_{|\theta|\le\theta_0}|f'''(\theta)|\le n^4\kappa(\tau_0)\) with
+\[\kappa(\tau_0)=\frac{K_{3}+\tau_0K_{4}}{\cos(\tau_0/2)^3}+8K_{G},\]\[K_3\ge n^{-4}\!\!\sum_{j\ \mathrm{odd}\le n}\!j^3v_j(1-2p_j),\ K_4\ge n^{-5}\!\!\sum_{j}j^4v_jp_j,\ K_G\ge n^{-4}\!\!\sum_{l}l^3\frac{w_l(1+w_l)}{(1-w_l)^3}.\]
+
+\emph{Proof.} (a) With \(e=e^{iy}\): \(1-h=\frac{1-p}{1-p+pe}\), \(1-2h=\frac{1-p-pe}{1-p+pe}\), so \(h(1-h)(1-2h)=\dfrac{v\,e\,(1-p-pe)}{(1-p+pe)^3}\). Numerator: \(|1-p-pe|=|(1-2p)+p(1-e)|\le(1-2p)+p|y|\) since \(|1-e^{iy}|=2|\sin(y/2)|\le|y|\). Denominator: \(|1-p+pe|^2=(1-p)^2+p^2+2p(1-p)\cos y=1-4v\sin^2(y/2)\ge1-\sin^2(y/2)=\cos^2(y/2)\) since \(4v\le1\). Finally \(\cos(y/2)\ge\cos(t'/2)>0\) and \(|y|\le t'\).
+(b) \(1+g=\frac1{1-we}\), \(1+2g=\frac{1+we}{1-we}\), so \(|g(1+g)(1+2g)|=\frac{w|1+we|}{|1-we|^3}\le\frac{w(1+w)}{(1-w)^3}\).
+(c) \(f(\theta)=\sum_j[\ln(1-p_j)+B_j(ij\theta)]+\sum_l[\ln(1-w_l)+G_l(2il\theta)]\) with \(B_j(z)=\ln(1+q_je^z)\), \(G_l(z)=-\ln(1-w_le^z)\). \(B_j'''(z)=h(1-h)(1-2h)\) with \(h=q_je^z/(1+q_je^z)\), and \(G_l'''(z)=g(1+g)(1+2g)\) with \(g=w_le^z/(1-w_le^z)\) (differentiate \(B'=h\), \(h'=h(1-h)\), and \(G'=g\), \(g'=g(1+g)\)). By the chain rule \(f'''=\sum_j(ij)^3B_j'''(ij\theta)+\sum_l(2il)^3G_l'''(2il\theta)\). For \(|\theta|\le\theta_0\) and odd \(j\le n\), \(|j\theta|\le t_j:=j\tau_0/n\le\tau_0<\pi\), so by (a), \(|B_j'''|\le\dfrac{v_j(1-2p_j)+t_jv_jp_j}{\cos(\tau_0/2)^3}\); summing \(j^3|B_j'''|\) gives at most \(\cos(\tau_0/2)^{-3}\bigl[\sum j^3v_j(1-2p_j)+\frac{\tau_0}{n}\sum j^4v_jp_j\bigr]\le n^4\cos(\tau_0/2)^{-3}(K_3+\tau_0K_4)\). By (b), \(\sum_l(2l)^3|G_l'''|\le8\sum_ll^3\frac{w_l(1+w_l)}{(1-w_l)^3}\le8n^4K_G\). \(\blacksquare\)
+
+\subsubsection{Lattice sums}\label{lattice-sums}
+
+\textbf{Lemma 8.5 (lattice sums).} Let \(n_0\ge1\), let \(f\in C^1[0,1+1/n_0]\) and \(n\ge n_0\). Write \(TV\) for the total variation and \(\sup\) for the supremum norm of \(f\) on the indicated interval.
+
+\begin{itemize}
+\tightlist
+\item
+  (odd) \(\Bigl|\frac1n\sum_{j\ \mathrm{odd}\le n}f(j/n)-\frac12\int_0^1f\Bigr|\le\frac{TV_{[0,1+1/n_0]}f+\frac12\sup|f|}{n}\).
+\item
+  (even-index geometric) \(\Bigl|\frac1n\sum_{n/2<l\le n}f(l/n)-\int_{1/2}^1f\Bigr|\le\frac{TV_{[1/2,1+1/n_0]}f+\sup|f|}{n}\).
+\end{itemize}
+
+\emph{Proof.} (odd) The intervals \([(j-1)/n,(j+1)/n]\), \(j\) odd \(\le n\), are disjoint with union \([0,b]\), \(b=1\) (\(n\) even) or \(1+1/n\) (\(n\) odd). On each, \(f(j/n)\) and the mean value \(\frac n2\int f\) both lie between the minimum and maximum of \(f\), so they differ by at most the variation of \(f\) on the interval. Summing and dividing by \(n\): \(|\frac1n\sum f(j/n)-\frac12\int_0^bf|\le TV/n\); and \(|\frac12\int_1^bf|\le\frac{\sup|f|}{2n}\). (geometric) The intervals \([(l-\frac12)/n,(l+\frac12)/n]\) are disjoint with union \([a,1+\frac1{2n}]\), \(a=\frac12+\frac1{2n}\) (\(n\) even) or \(\frac12\) (\(n\) odd); the same argument gives \(TV/n\), and the endpoint mismatch with \([\frac12,1]\) costs at most \(\sup|f|/n\). \(TV\) and \(\sup\) over \([0,1+1/n]\) are bounded by those over \([0,1+1/n_0]\). \(\blacksquare\)
+
+The sums needed are of the form \(n^{-(q+1)}\sum_jj^qF(cuj/n)=\frac1n\sum f(j/n)\) with \(f(y)=y^qF(cuy)\). The nine sums are listed in Table 8.1 (with \(z=cuy\) and \(w=e^{-z}\), \(p(z)=\frac1{1+e^z}\), \(v(z)=p(1-p)\), \(\lambda(z)=\frac{4w}{(1-w)^2}\)):
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+name
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+sum
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(q\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(c\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(F(z)\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+summation
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(SB\) & \(n^{-3}\sum j^2v_j\) & 2 & 1 & \(v(z)\) & odd \(j\le n\) \\
+\(SG\) & \(n^{-3}\sum l^2\lambda_l\) & 2 & 2 & \(\lambda(z)\) & \(\frac n2<l\le n\) \\
+\(V4\) & \(n^{-5}\sum j^4v_j\) & 4 & 1 & \(v(z)\) & odd \\
+\(QG\) & \(n^{-5}\sum l^4\lambda_l\) & 4 & 2 & \(\lambda(z)\) & geometric \\
+\(K3a\) & \(n^{-4}\sum j^3v_j(1-2p_j)\) & 3 & 1 & \(v(1-2p)\) & odd \\
+\(K4a\) & \(n^{-5}\sum j^4v_jp_j\) & 4 & 1 & \(vp\) & odd \\
+\(KGr\) & \(n^{-4}\sum l^3\frac{w_l(1+w_l)}{(1-w_l)^3}\) & 3 & 2 & \(\frac{w(1+w)}{(1-w)^3}\) & geometric \\
+\(MB\) & \(n^{-2}\sum jp_j\) & 1 & 1 & \(p(z)\) & odd \\
+\(MG\) & \(n^{-2}\sum\frac{lw_l}{1-w_l}\) & 1 & 2 & \(\frac{w}{1-w}\) & geometric \\
+\end{longtable}
+
+By (8.2) and the table: \(\sigma^2/n^3=SB+SG\), \(\mu/n^2=MB+2MG\), and \(\kappa_3/n^4=K3a+8KGr\).
+
+\textbf{Algorithm E (enclosure of one lattice sum).} Input: \(F\) (with its derivative formula), \(q\), \(c\), a ball \(U=[u_a,u_b]\) for \(u\), \(n_0\), an integer \(Q_e\) (we use \(Q_e=600\)), and the flag odd/geometric. Put \([y_a,y_b]=[0,1]\) (odd) or \([\frac12,1]\) (geometric) and \(y_e=1+1/n_0\). (1) \(J\): split \([y_a,y_b]\) into \(Q_e\) equal sub-intervals \(Y_i\) and take the ball sum \(\sum_i\operatorname{width}\cdot\bigl(Y_i^q\,F(cUY_i)\bigr)\) (ball arithmetic: the product encloses \(f(y)=y^qF(cuy)\) for all \(y\in Y_i\), \(u\in U\)). (2) Split \([y_a,y_e]\) into \(Q_e\) sub-intervals \(Y_i'\); \(TV\) is the sum of \(\operatorname{width}\cdot\sup_{Y_i'\times U}|f'|\) with \(f'(y)=qy^{q-1}F(cuy)+y^q\,cu\,F'(cuy)\), and \(\sup\) is the maximum over \(i\) of the upper bound of \(|f|\) on \(Y_i'\times U\). (3) Return the interval \([\,J/2-e,\ J/2+e\,]\) with \(e=(TV+\sup/2)/n_0\) (odd) or \([\,J-e,\ J+e\,]\) with \(e=(TV+\sup)/n_0\) (geometric). The derivative formulas are \(v'=-(1-2p)v\), \(p'=-v\), \((v(1-2p))'=-v((1-2p)^2-2v)\), \((vp)'=-v(p(1-2p)+v)\), \(\lambda'=-\frac{4w(1+w)}{(1-w)^3}\), \(\bigl(\frac{w(1+w)}{(1-w)^3}\bigr)'=-\frac{w(1+4w+w^2)}{(1-w)^4}\), \(\bigl(\frac w{1-w}\bigr)'=-\frac w{(1-w)^2}\) (in \(z\), \(w=e^{-z}\); verified symbolically).
+
+By Lemma 8.5, the interval returned in Algorithm E contains \(n^{-(q+1)}\sum_jj^qF(cuj/n)\) for \textbf{every} \(n\ge n_0\) and every \(u\in U\). We write \(X_{lo},X_{hi}\) for its endpoints, \(X\in\{SB,\dots,MG\}\).
+
+\subsubsection{The main arc}\label{the-main-arc}
+
+\textbf{Proposition 8.6.} Let \(n\ge n_0\), \(u\in U\), \(0<\tau_0<\pi\), \(\theta_0=\tau_0/n\), \(S_{lo}=SB_{lo}+SG_{lo}\) (so \(\sigma^2\ge S_{lo}n^3\)), \(\kappa=\kappa(\tau_0)\) computed from \(K_3=K3a_{hi}\), \(K_4=K4a_{hi}\), \(K_G=KGr_{hi}\), and suppose \(c:=\tau_0\kappa/S_{lo}<3\). Then
+\[M\le D_1:=\frac{\kappa}{6\sqrt{2\pi}\,S_{lo}^{3/2}\sqrt{n_0}\,(\frac12-\frac c6)^2},\qquad T\le D_2:=\frac{e^{-z^2}}{z\sqrt\pi},\ z=\tau_0\sqrt{S_{lo}n_0/2}.\]
+
+\emph{Proof.} By (E2) with \(r=3\) and Lemma 8.4(c), \(f(\theta)=i\mu\theta-\frac{\sigma^2\theta^2}2+R(\theta)\) with \(|R|\le K_3'|\theta|^3/6\), \(K_3'=n^4\kappa\). Then \(\tilde\varphi=ge^R\), and by (E3), \(|\tilde\varphi-g|\le g|R|e^{|R|}\). For \(|\theta|\le\theta_0\): \(|R|\le\frac{K_3'\theta_0}{6}\theta^2\) and \(K_3'\theta_0=n^3\kappa\tau_0\le c\,\sigma^2\) (as \(\sigma^2\ge S_{lo}n^3\)). Hence \(ge^{|R|}\le e^{-a\theta^2}\) with \(a=\sigma^2(\frac12-\frac c6)>0\), and
+\[\int_{|\theta|\le\theta_0}|\tilde\varphi-g|\le\frac{K_3'}{6}\cdot2\int_0^\infty\theta^3e^{-a\theta^2}d\theta=\frac{K_3'}{6a^2}.\]
+Multiplying by \(\sigma/\sqrt{2\pi}\): \(M\le\frac{K_3'}{6\sqrt{2\pi}\sigma^3(1/2-c/6)^2}\le\frac{n^4\kappa}{6\sqrt{2\pi}S_{lo}^{3/2}n^{9/2}(\ldots)^2}=\frac{\kappa}{6\sqrt{2\pi}S_{lo}^{3/2}\sqrt n(1/2-c/6)^2}\le D_1\). For \(T\): \(\sigma\theta_0/\sqrt2=\sigma\tau_0/(n\sqrt2)\ge\tau_0\sqrt{S_{lo}n/2}\ge z\) and \(\operatorname{erfc}\) is decreasing, \(e^{-z^2}/(z\sqrt\pi)\) is decreasing in \(z\); (E4). \(\blacksquare\)
+
+\subsubsection{Minor arcs}\label{minor-arcs}
+
+\textbf{Lemma 8.7 (modulus).} For \(\theta\in\mathbb R\),
+\[|\varphi(\theta)|\le\exp\Bigl(-\sum_{j\ \mathrm{odd}\le n}v_j(1-\cos j\theta)\Bigr)\prod_{n/2<l\le n}\bigl(1+\lambda_l\sin^2(l\theta)\bigr)^{-1/2}.\]
+
+\emph{Proof.} \(|1-p+pe^{iy}|^2=1-2v(1-\cos y)\le e^{-2v(1-\cos y)}\). Also \(\bigl|\frac{1-w}{1-we^{iy}}\bigr|^2=\frac{(1-w)^2}{(1-w)^2+4w\sin^2(y/2)}=\bigl(1+\lambda\sin^2(y/2)\bigr)^{-1}\); put \(y=2l\theta\). \(\blacksquare\)
+
+Fix \(n\ge n_0\), a cell \(U=[u_a,u_b]\ni u\), the enclosures of Algorithm E, and \(\tau_0\). Put \(\tau=n\theta\) and write \(\operatorname{pref}=\sqrt{2\pi S_{hi}}/\pi\), where \(S_{hi}=SB_{hi}+SG_{hi}\), so that \(\sigma\le\sqrt{S_{hi}}\,n^{3/2}\) and \(\frac{2\sigma}{\sqrt{2\pi}}=\sigma\sqrt{2/\pi}\le\operatorname{pref}\cdot n^{3/2}\). Split \([\theta_0,\pi]\) into \(A=[\tau_0/n,\,1.5/n]\), \(B=[1.5/n,\,\pi-1.5/n]\), \(C=[\pi-1.5/n,\,\pi]\) (these are non-empty since \(n\ge n_0>3\)).
+
+\textbf{Lemma 8.8 (region A).} Let \([\tau_l,\tau_h]\subset[\tau_0,1.5]\), \(\tau_l\ge0\), \(Z=\lambda(u_a)\min(1,\tau_h^2)\) and \(\ell=\ln(1+Z)/Z\) (here \(\lambda(u)=4e^{-u}/(1-e^{-u})^2\)). For \(\tau=n\theta\in[\tau_l,\tau_h]\), \(|\varphi(\theta)|\le e^{-nb}\) with \(b=b_o^++b_g^+\) (\(x^+=\max(x,0)\)),
+\[b_o=\tfrac12\tau_l^2SB_{lo}-\tfrac1{24}\tau_h^4V4_{hi},\qquad b_g=\tfrac\ell2\bigl(\tau_l^2SG_{lo}-\tfrac13\tau_h^4QG_{hi}\bigr).\]
+
+\emph{Proof.} By Lemma 8.7 it suffices to bound the two sums. By (E1), \(\sum_jv_j(1-\cos j\theta)\ge\sum_jv_j\bigl(\frac{(j\theta)^2}2-\frac{(j\theta)^4}{24}\bigr)\ge n\bigl(\frac{\tau^2}2SB-\frac{\tau^4}{24}V4\bigr)\) (as \(\sum j^2v_j=n^3SB\), \(\sum j^4v_j=n^5V4\), \(\theta=\tau/n\)), and this is \(\ge nb_o\). Since \(z_l=\lambda_l\sin^2(l\theta)\le\lambda_l\min(1,(l\theta)^2)\le Z\) (here \(l\theta\le\tau\le\tau_h\), and \(\lambda_l=\lambda(2lu/n)\le\lambda(u)\le\lambda(u_a)\) because \(2l/n>1\) and \(\lambda\) is decreasing), concavity of \(\ln(1+z)\) gives \(\ln(1+z_l)\ge\ell z_l\). And \(\sin^2x\ge x^2-x^4/3\) (\(\sin^2x=\frac{1-\cos2x}2\), (E1)). Hence \(\frac12\sum_l\ln(1+z_l)\ge\frac\ell2\sum_l\lambda_l\bigl((l\theta)^2-\frac{(l\theta)^4}3\bigr)\ge nb_g\), using \(\sum l^2\lambda_l=n^3SG\), \(\sum l^4\lambda_l=n^5QG\). Both exponents are nonnegative, so each may be replaced by its positive part. \(\blacksquare\)
+
+\textbf{Lemma 8.9 (Abel step and region B).} (a) Let \(\sin\theta\ne0\), \(X=1/|\sin\theta|\), and let \(v_1\ge v_3\ge\dots\ge v_J\ge0\) (\(J\) odd). Then \(\sum_{j\ \mathrm{odd}\le J}v_j(1-\cos j\theta)\ge\sum_{j\ \mathrm{odd},\,X+1\le j\le J}v_j\).
+(b) Let \(Y_0=\frac3{n_0}+\bigl[1.5\,(1-\frac{1.5^2}{6n_0^2})\bigr]^{-1}<1\) and \(b_B=\frac12\cdot\frac{1-Y_0}{M}\sum_{i=1}^{M}v\bigl(u_b(Y_0+i\frac{1-Y_0}M)\bigr)\) with \(v(z)=(2\cosh(z/2))^{-2}\), \(M=300\). For \(\theta\in[1.5/n,\pi-1.5/n]\), \(n\ge n_0\), \(u\in U\): \(|\varphi(\theta)|\le e^{-nb_B}\).
+
+\emph{Proof.} (a) Let \(N(j)=\frac{j+1}2\) (the number of odd integers in \([1,j]\)), \(c_i=1-\cos i\theta\) and \(C_j=\sum_{i\ \mathrm{odd}\le j}c_i=N(j)-s_j\) with \(s_j=\sum_{i\ \mathrm{odd}\le j}\cos i\theta=\frac{\sin((j+1)\theta)}{2\sin\theta}\) (telescoping \(2\sin\theta\cos i\theta=\sin((i+1)\theta)-\sin((i-1)\theta)\)). Since \(|s_j|\le\min(N(j),X/2)\), \(C_j\ge h(j):=(N(j)-X/2)^+\). Put \(v_{J+2}=0\). By Abel summation, \(\sum_jv_jc_j=\sum_j(v_j-v_{j+2})C_j\ge\sum_j(v_j-v_{j+2})h(j)=\sum_jv_j\bigl(h(j)-h(j-2)\bigr)\) with \(h(-1)=0\). Here \(h\) is non-decreasing, so every difference is \(\ge0\), and \(h(j)-h(j-2)=1\) whenever \(N(j-2)\ge X/2\), i.e.~\(j\ge X+1\). This gives (a).
+(b) For \(\theta\in[1.5/n,\pi-1.5/n]\), \(|\sin\theta|\ge\sin(1.5/n)\ge\frac{1.5}n\bigl(1-\frac{1.5^2}{6n^2}\bigr)\), so \((X+3)/n\le Y_0\) for \(n\ge n_0\). Drop the second product in Lemma 8.7 (each factor is \(\le1\)). By (a) with \(J\) the largest odd integer \(\le n\), \(\sum_jv_j(1-\cos j\theta)\ge\sum_{j\ \mathrm{odd}\in[X+1,J]}v_j\). As \(v(\cdot)\) is even and decreasing on \([0,\infty)\), \(v_j\ge\frac12\int_j^{j+2}v(yu/n)dy\); the smallest odd \(j\ge X+1\) is \(<X+3\), and \(J+2>n\), so the sum is \(\ge\frac12\int_{X+3}^nv(yu/n)dy=\frac n2\int_{(X+3)/n}^1v(ux)dx\ge\frac n2\int_{Y_0}^1v(u_bx)dx\ge nb_B\), because a right Riemann sum underestimates the integral of a decreasing function. \(\blacksquare\)
+
+\textbf{Lemma 8.10 (region C).} Let \(b_C=\frac12\cdot\frac{1/2-1/n_0}{M}\sum_{i=1}^Mv\bigl(u_b(\frac1{n_0}+i\frac{1/2-1/n_0}{M})\bigr)\). For \(\theta=\pi-\phi\), \(0\le\phi\le1.5/n\), \(n\ge n_0\), \(u\in U\): \(|\varphi(\theta)|\le e^{-nb_C}\).
+
+\emph{Proof.} For odd \(j\le n/2\): \(j\phi\le0.75<\pi/2\), so \(\cos j\theta=-\cos j\phi<0\) and \(1-\cos j\theta\ge1\). By Lemma 8.7, \(|\varphi|\le\exp(-\sum_{j\ \mathrm{odd}\le n/2}v_j)\). With \(J\) the largest odd integer \(\le n/2\) we have \(J+2>n/2\), and \(v_j\ge\frac12\int_j^{j+2}v(yu/n)dy\), so \(\sum\ge\frac12\int_1^{n/2}v(yu/n)dy=\frac n2\int_{1/n}^{1/2}v(ux)dx\ge\frac n2\int_{1/n_0}^{1/2}v(u_bx)dx\ge nb_C\). \(\blacksquare\)
+
+\textbf{Proposition 8.11 (local limit theorem on a cell).} Let \(U=[u_a,u_b]\), \(n_0\ge4\) and \(\tau_0\in(0,1.5]\) be such that: \(c=\tau_0\kappa(\tau_0)/S_{lo}<2.9\); \(n_0b\ge\frac12\) for each sub-cell of Lemma 8.8 when \([\tau_0,1.5]\) is cut into \(240\) equal parts; \(n_0b_B\ge\frac32\) and \(n_0b_C\ge\frac32\). Put
+\[D_3=\operatorname{pref}\Bigl[\sqrt{n_0}\sum_{i}(\tau_{i+1}-\tau_i)e^{-n_0b_i}+\pi n_0^{3/2}e^{-n_0b_B}+1.5\sqrt{n_0}\,e^{-n_0b_C}\Bigr],\quad\delta=D_1+D_2+D_3.\]
+Then for all \(n\ge n_0\), \(u\in U\), integers \(m\):
+\[\Bigl|\sqrt{2\pi}\,\sigma P(S_n(e^{-u/n})=m)-e^{-(m-\mu)^2/(2\sigma^2)}\Bigr|\le\delta.\]
+Moreover \(S_{lo}n^3\le\sigma^2\le S_{hi}n^3\) and \(M_{lo}n^2\le\mu\le M_{hi}n^2\), where \(M=MB+2MG\).
+
+\emph{Proof.} Lemma 8.3 with \(\theta_0=\tau_0/n\) gives the bound \(M+T+Q\). \(M\le D_1\) and \(T\le D_2\) by Proposition 8.6 (all quantities there were enclosed uniformly in \(n\ge n_0\), \(u\in U\)). For \(Q=\frac{2\sigma}{\sqrt{2\pi}}\int_{\theta_0}^\pi|\varphi|\) we use \(\frac{2\sigma}{\sqrt{2\pi}}\le\operatorname{pref}\,n^{3/2}\), \(\operatorname{pref}=\sqrt{2\pi S_{hi}}/\pi=\sqrt{2S_{hi}/\pi}\). Region \(A\) (\(\theta=\tau/n\), \(d\theta=d\tau/n\)): \(\int_A|\varphi|\le\frac1n\sum_i(\tau_{i+1}-\tau_i)e^{-nb_i}\), so its contribution to \(Q\) is \(\le\operatorname{pref}\,\sqrt n\sum_i(\tau_{i+1}-\tau_i)e^{-nb_i}\). Region \(B\): length \(\le\pi\) and Lemma 8.9: contribution \(\le\operatorname{pref}\,\pi n^{3/2}e^{-nb_B}\). Region \(C\): length \(1.5/n\) and Lemma 8.10: \(\le\operatorname{pref}\,1.5\sqrt n\,e^{-nb_C}\). Each of the three terms has the form \(n^ae^{-n\beta}\) with \(a\in\{\frac12,\frac32\}\), which is non-increasing for \(n\ge a/\beta\); the hypotheses give \(n_0\beta\ge a\). So the three contributions at \(n\ge n_0\) are bounded by their values at \(n=n_0\). Finally \(D_1\propto n^{-1/2}\) and \(D_2\) is decreasing in \(n\) (only \(S_{lo}n_0\) enters, as a lower bound for \(n\)). The bounds on \(\sigma^2,\mu\) are (8.2) and Table 8.1. \(\blacksquare\)
+
+\textbf{Algorithm C (cells).} Fix \(n_0=1467\). For \(i=19,\dots,331\) let \(u_i\) be the double-precision number nearest \(i/100\). The \(312\) cells are \(U_i=[u_i,u_{i+1}]\), \(i=19,\dots,330\); they are contiguous and cover \([u_{19},u_{331}]\). For each cell: compute the nine enclosures by Algorithm E (\(Q_e=600\)); for each \(\tau_0\in\{0.05i:\ i=2,\dots,24\}\) test the hypotheses of Proposition 8.11 and compute \(\delta(\tau_0)\); keep the admissible \(\tau_0\) with least \(\delta\). All operations are in ball arithmetic at 128 bits; \(\delta\) is rounded up to double precision. All later uses of the cells take \(u\)-intervals whose endpoints are double-precision numbers inside \([u_{19},u_{331}]\).
+
+\textbf{Theorem 8.12 (result of Algorithm C).} All \(312\) cells admit an admissible \(\tau_0\). The following hold: \(\max\delta=0.08727\) (on \([3.30,3.31]\)), \(\min\delta=0.02847\); \(\tau_0\in[0.10,0.55]\); \(\max D_1=0.06539\), \(\max D_2=2.21\cdot10^{-3}\), \(\max D_3=1.99\cdot10^{-2}\); \(\max c=1.1870\). Consequently the conclusion of Proposition 8.11 holds with \(n_0=1467\) on every cell. The cell-wise values are stored in \texttt{data/pd/cells56\_sharp.json} (Appendix A.3), and Table 8.4 of Section 8.7 lists the first and last cells.
+
+The proof is the computation. (The code is \texttt{code/pd/clt56.py}, \texttt{make\_cells56.py}; a full regeneration produced byte-identical data, see Appendix A.3.)
+
+\subsection{The block inequality}\label{the-block-inequality}
+
+Fix odd \(k\in[3,33]\), \(N_1=1500\) and the window parameters \(U_A<U_B\) of Table 8.3 (the same numbers for all \(k\) are listed there). Call an even \(n\ge N_1\) \textbf{admissible for \(d\)} if \(m_n=(d-n^2)/k\) is a positive integer. For admissible \(n\) put \(e_n=a_n(m_n)\); \(n_\pm=n\pm k\) are odd, \(n_\pm^2\equiv n^2\pmod k\), and \(m_\pm=m_n-\frac{n_\pm^2-n^2}k\), i.e.~\(m_+=m_n-2n-k\), \(m_-=m_n+2n-k\); \(o_\pm=a_{n_\pm}(m_\pm)\) whenever \(m_\pm\ge0\) (otherwise there is no such term). By Section 8.2 let \(u=u_n\) be the unique number with \(\mu_n(e^{-u/n})=m_n\) and put \(r=e^{-u/n}\).
+
+The finite differences. For even \(n\) and \(j=n+t\), \((-1)^j=(-1)^t\). By (4.1), \(A_N(r)=\prod_{j\le N}(1+(-r)^j)^{-1}\). Put \(s=1/n\), \(\xi_t=1+ts\), \(z_t=(-1)^tr^{\,n+t}=(-1)^te^{-u\xi_t}\), and for \(\varepsilon\in\{+1,-1\}\) let \(T_{+}=\{1,\dots,k\}\), \(T_{-}=\{-k+1,\dots,0\}\). Define
+\[\Lambda_\varepsilon=\varepsilon\sum_{t\in T_\varepsilon}\bigl(-\log(1+z_t)\bigr),\quad\Delta\mu_\varepsilon=\varepsilon\sum_{t\in T_\varepsilon}\Bigl(-\xi_t\frac{z_t}{1+z_t}\Bigr),\quad\Delta\sigma_\varepsilon=\varepsilon\sum_{t\in T_\varepsilon}\Bigl(-\xi_t^2\frac{z_t}{(1+z_t)^2}\Bigr).\tag{8.3}\]
+Then
+\[\log\frac{A_{n+\varepsilon k}}{A_n}(r)=\Lambda_\varepsilon,\qquad\mu_{n+\varepsilon k}(r)-\mu_n(r)=n\,\Delta\mu_\varepsilon,\qquad\sigma^2_{n+\varepsilon k}(r)-\sigma_n^2(r)=n^2\Delta\sigma_\varepsilon .\tag{8.4}\]
+Indeed \(\log A_N=-\sum_{j\le N}\log(1+(-r)^j)\); with \(z=(-r)^j\) one has \(r\,\frac{dz}{dr}=jz\), so \(r\frac d{dr}[-\log(1+z)]=-\frac{jz}{1+z}\) and \(r\frac d{dr}\bigl[-\frac{jz}{1+z}\bigr]=-\frac{j^2z}{(1+z)^2}\); summing these over \(j\le N\) gives \(\log A_N\), \(\mu_N\), \(\sigma_N^2\) (Lemma 8.2: \(\mu_N=r\frac d{dr}\log A_N\), \(\sigma_N^2=r\frac d{dr}\mu_N\)), and passing from \(n\) to \(n+k\) adds the terms \(j=n+1,\dots,n+k\), while passing to \(n-k\) removes \(j=n-k+1,\dots,n\), with \(j=n\xi_t\).
+
+\textbf{Lemma 8.13 (block inequality).} Let \(n\ge N_1\) be even and admissible, \(U=[u_a,u_b]\ni u_n\) a box with \([u_a(1-k/N_1),\,u_b(1+k/N_1)]\subset[u_{19},u_{331}]\), \(\delta_U\) the maximum of \(\delta\) over the cells meeting that interval, \(S_b\) a lower bound of \(S_{lo}\) over the cells meeting \(U\), and \(S_\varepsilon\) a lower bound of \(S_{lo}\) over the cells meeting the \(u\)-range of the partner \(n+\varepsilon k\) (namely \([u_a(1-k/N_1),u_b]\) for \(\varepsilon=-1\) and \([u_a,u_b(1+k/N_1)]\) for \(\varepsilon=+1\)). Let \(s_b=1/N_1\), \(\gamma\ge(1-ks_b)^{-3}\). Let \(\Lambda_\varepsilon,\Delta\mu_\varepsilon,\Delta\sigma_\varepsilon\) be enclosed for \(u\in U\), \(s\in[0,s_b]\), and put
+\[\rho_\varepsilon=\exp\!\bigl(\Lambda_\varepsilon-u(2\varepsilon+ks)\bigr)\bigl(1+q_\varepsilon\bigr)^{-1/2},\quad q_\varepsilon=\frac{s_b\,\sup|\Delta\sigma_\varepsilon|}{S_b},\quad X_\varepsilon=-(2\varepsilon+ks)-\Delta\mu_\varepsilon,\]
+\[\beta_\varepsilon=1-\frac{\sup X_\varepsilon^2\;s_b\,\gamma}{2S_\varepsilon}-\delta_U,\qquad R_U=\frac{1+\delta_U}{\frac12\sum_{\varepsilon=\pm1}\inf\rho_\varepsilon\cdot\beta_\varepsilon}\]
+(the suprema and infima are over \(u\in U\), \(s\in[0,s_b]\)). If \(\beta_\pm>0\) then \(m_\pm\ge0\) and \(e_n\le R_U\cdot\frac12(o_{n-k}+o_{n+k})\).
+
+(Here \((n_\varepsilon^2-n^2)/(kn)=2\varepsilon+ks\) for \(n_\varepsilon=n+\varepsilon k\).)
+
+\emph{Proof.} Write \(a_N(m)=A_N(r)r^{-m}P_N(S_N(r)=m)\) (Lemma 8.2) for \(N\in\{n,n_\pm\}\) with the same \(r\); \(S_{n_\varepsilon}\) is the model of Section 8.2 at level \(u_\varepsilon=un_\varepsilon/n\in\{u(1+\varepsilon ks)\}\), which lies in the range of the partner. Then
+\[\frac{o_\varepsilon}{e_n}=\frac{A_{n_\varepsilon}}{A_n}(r)\,r^{m_n-m_\varepsilon}\,\frac{P_{n_\varepsilon}(m_\varepsilon)}{P_n(m_n)},\qquad r^{m_n-m_\varepsilon}=r^{(n_\varepsilon^2-n^2)/k}=e^{-u(2\varepsilon+ks)},\]
+because \((n_\varepsilon^2-n^2)/k=(2\varepsilon kn+k^2)/k=n(2\varepsilon+ks)\) and \(r=e^{-us}\). Apply Proposition 8.11 at \((n,u)\) with \(m=m_n=\mu_n\) and at \((n_\varepsilon,u_\varepsilon)\) with \(m=m_\varepsilon\) (\(n_\varepsilon\ge N_1-k\ge1467=n_0\); the \(u\)-values lie in cells by the hypothesis):
+\[P_n(m_n)\le\frac{1+\delta_U}{\sqrt{2\pi}\sigma_n},\qquad P_{n_\varepsilon}(m_\varepsilon)\ge\frac{e^{-x_\varepsilon^2/(2\sigma_\varepsilon^2)}-\delta_U}{\sqrt{2\pi}\sigma_\varepsilon}\ge\frac{1-x_\varepsilon^2/(2\sigma_\varepsilon^2)-\delta_U}{\sqrt{2\pi}\sigma_\varepsilon},\]
+where \(\sigma_\varepsilon=\sigma_{n_\varepsilon}(r)\) and \(x_\varepsilon=m_\varepsilon-\mu_{n_\varepsilon}(r)=-\frac{n_\varepsilon^2-n^2}k-(\mu_{n_\varepsilon}-\mu_n)=n X_\varepsilon\) by (8.4) (as \(\mu_n=m_n\)). Since \(\sigma_\varepsilon^2=\sigma_n^2+n^2\Delta\sigma_\varepsilon\le\sigma_n^2(1+s\sup|\Delta\sigma_\varepsilon|/S_b)\le\sigma_n^2(1+q_\varepsilon)\) (using \(\sigma_n^2\ge S_bn^3\)), \(\sigma_n/\sigma_\varepsilon\ge(1+q_\varepsilon)^{-1/2}\). Also \(x_\varepsilon^2/(2\sigma_\varepsilon^2)\le\frac{X_\varepsilon^2n^2}{2S_\varepsilon n_\varepsilon^3}=\frac{X_\varepsilon^2 s}{2S_\varepsilon}\bigl(\frac n{n_\varepsilon}\bigr)^3\le\frac{\sup X_\varepsilon^2s_b\gamma}{2S_\varepsilon}\) since \(n_\varepsilon\ge n(1-ks)\). Combining: if \(\beta_\varepsilon>0\) then \(P_{n_\varepsilon}(m_\varepsilon)>0\), so \(m_\varepsilon\) is in the support of \(S_{n_\varepsilon}\), hence \(m_\varepsilon\ge0\) and \(o_\varepsilon\) is a term; and \(o_\varepsilon\ge e_n\,\rho_\varepsilon\beta_\varepsilon/(1+\delta_U)\). Adding the two inequalities: \(\frac12(o_++o_-)\ge e_n\frac{\frac12\sum\rho_\varepsilon\beta_\varepsilon}{1+\delta_U}\), i.e.~\(e_n\le R_U\frac12(o_++o_-)\). \(\blacksquare\)
+
+\textbf{Algorithm R.} Input \(k\), \(U_A,U_B\) (Table 8.3), \(H=0.0025\), the cells of Theorem 8.12. Let \(s_b\) be the upper end of the ball \(1/N_1\), \(\gamma\) the upper end of \((1-ks_b)^{-3}\), \(n_{box}=\operatorname{round}((U_B-U_A)/H)\), and for \(i<n_{box}\) the box \(U_i=[U_A+iH,\ U_A+(i+1)H]\) (the last one ends at \(U_B\)). For each box compute \(\delta_U\), \(S_b\), \(S_\varepsilon\) from the cells (an exact comparison of double-precision endpoints; the program asserts that the cells meeting the range are contiguous and cover it), enclose \(\Lambda_\varepsilon,\Delta\mu_\varepsilon,\Delta\sigma_\varepsilon\) by interval arithmetic in \(u\in U_i\), \(s\in[0,s_b]\) (the \(2k\) terms \(t\in T_\pm\) are summed with interval arithmetic in the variables \((u,s)\)), check \(\beta_\varepsilon>0\), and compute \(R_{U_i}\) (rounded up). Return \(R_k=\max_iR_{U_i}\) (rounded up).
+
+\textbf{Proposition 8.14 (block bound).} For each odd \(k\in[3,33]\) Algorithm R succeeds (all \(\beta_\varepsilon>0\), all required cells exist) and returns the value \(R_k\) of Table 8.2; in all cases \(R_k<1-10^{-6}\). Consequently, for \(d\) allowed and every even \(n\ge N_1\) admissible for \(d\) with \(u_n\in[U_A,U_B]\): \(e_n\le R_k\cdot\frac12(o_{n-k}+o_{n+k})\), and
+\[\sum_{n\ \mathrm{even}\ \mathrm{admissible},\ u_n\in[U_A,U_B]}e_n\le R_k\,O_d.\]
+
+\emph{Proof.} The computation is the content of the first assertion (code \texttt{code/pd/blocks56.py}). For the second, each \(u_n\in[U_A,U_B]\) lies in a box \(U_i\), and Lemma 8.13 applies with \(R_{U_i}\le R_k\) (\(n\ge N_1\) gives \(s\le s_b\)). Every odd \(N\) occurs at most twice among \(\{n\pm k\}\) (\(n=N-k\) as \(n_+\) and \(n=N+k\) as \(n_-\)) with weight \(\frac12\) each, so \(\sum_n\frac12(o_{n-k}+o_{n+k})\le\sum_{N\ \mathrm{odd}}a_N(m_N)=O_d\). \(\blacksquare\)
+
+\subsection{The tails}\label{the-tails}
+
+Let \(\Phi_1(u)=\frac12\int_0^1\log(1+e^{-uy})dy+\frac12\int_1^2\bigl[-\log(1-e^{-uy})\bigr]dy\), \(g(u)=-\log(1-e^{-u})\), and for \(\alpha=n/\sqrt d\)
+\[F_k(\alpha,u)=\alpha\Phi_1(u)+\frac{(1-\alpha^2)u}{k\alpha},\qquad\rho(\alpha)=\frac{1/\alpha^2-1}k=\frac{m_n}{n^2}.\]
+
+\textbf{Lemma 8.15.} (a) \(\Phi_1(u)=\bigl[\mathrm{Li}_2(-e^{-u})+\frac{\pi^2}{12}+\mathrm{Li}_2(e^{-u})-\mathrm{Li}_2(e^{-2u})\bigr]/(2u)\) for \(u>0\).
+(b) For even \(n\ge2\) and \(u>0\): \(\log A_n(e^{-u/n})\le n\Phi_1(u)+\log2\).
+(c) For \(n\ge1\), \(u>0\): \(\log A_n(e^{-u/n})\ge n\Phi_1(u)-\frac12\log2-g(u)\).
+(d) For \(n\) even with \(n^2\le d\), \(m=(d-n^2)/k\in\mathbb Z\) and any \(u_c>0\): \(a_n(m)\le A_n(e^{-u_c/n})e^{u_cm/n}\le2\exp\bigl(\sqrt d\,F_k(n/\sqrt d,u_c)\bigr)\).
+(e) \(\partial_\alpha^2F_k=2u/(k\alpha^3)>0\); hence for fixed \(u\), \(F_k(\cdot,u)\) on an interval \([x,y]\) is at most \(\max(F_k(x,u),F_k(y,u))\), and for \(\alpha\) in an interval with midpoint \(c\) and half-width \(h\), \(F_k(\alpha,u)\ge F_k(c,u)-h\,|\partial_\alpha F_k(c,u)|\).
+
+\emph{Proof.} (a) \(\frac d{dy}\mathrm{Li}_2(-e^{-uy})=u\log(1+e^{-uy})\) and \(\frac d{dy}\mathrm{Li}_2(e^{-uy})=u\log(1-e^{-uy})\) (from \(\mathrm{Li}_2'(z)=-\log(1-z)/z\)), and \(\mathrm{Li}_2(-1)=-\pi^2/12\). Integrating, \(\int_0^1\log(1+e^{-uy})dy=[\mathrm{Li}_2(-e^{-u})+\pi^2/12]/u\) and \(\int_1^2[-\log(1-e^{-uy})]dy=[\mathrm{Li}_2(e^{-u})-\mathrm{Li}_2(e^{-2u})]/u\).
+By (4.1), with \(r=e^{-u/n}\), \(\log A_n=\sum_{j\ \mathrm{odd}\le n}f_B(j/n)+\sum_{n/2<l\le n}f_G(l/n)\), \(f_B(x)=\log(1+e^{-ux})\), \(f_G(x)=-\log(1-e^{-2ux})\), both decreasing, and \(\Phi_1=\frac12\int_0^1f_B+\int_{1/2}^1f_G\).
+(b) For odd \(j\ge3\), \(f_B(j/n)\le\frac n2\int_{(j-2)/n}^{j/n}f_B\); these intervals are disjoint in \([1/n,1]\), and \(f_B(1/n)\le\log2\). So \(\sum_{\mathrm{odd}}f_B\le\log2+\frac n2\int_0^1f_B\). For \(n\) even, the integers \(l\in(n/2,n]\) give the intervals \([(l-1)/n,l/n]\) with union \([1/2,1]\), and \(f_G(l/n)\le n\int_{(l-1)/n}^{l/n}f_G\). Add.
+(c) \(f_B(j/n)\ge\frac n2\int_{j/n}^{(j+2)/n}f_B\); the intervals for odd \(j\le n\) cover \([1/n,1]\), so \(\sum f_B\ge\frac n2\int_{1/n}^1f_B\ge\frac n2\int_0^1f_B-\frac12\log2\) (\(f_B\le\log2\)). \(f_G(l/n)\ge n\int_{l/n}^{(l+1)/n}f_G\) for \(l=\lfloor n/2\rfloor+1,\dots,n\); the union contains \([\frac12+\frac1n,1]\) and \(f_G\le f_G(\frac12)=g(u)\) on \([\frac12,1]\), so \(\sum f_G\ge n\int_{1/2}^1f_G-g(u)\).
+(d) All \(a_n(m')\ge0\) (Lemma 4.2), so \(a_n(m)r^m\le A_n(r)\); with \(r=e^{-u_c/n}\) and (b): \(\log a_n(m)\le n\Phi_1(u_c)+\log2+u_cm/n\), and \(u_cm/n=\sqrt d\,u_c(1-\alpha^2)/(k\alpha)\), \(n=\alpha\sqrt d\).
+(e) \(F_k=\alpha\Phi_1+\frac uk(\frac1\alpha-\alpha)\) and the first term is linear in \(\alpha\); \(\partial_\alpha^2=\frac uk\cdot\frac2{\alpha^3}\). Convex functions lie below the chord's maximum and above their tangents. \(\blacksquare\)
+
+\textbf{Lemma 8.16 (small \(\alpha\)).} Let \(3\le k\le33\), \(n\ge2\) even, \(\alpha=n/\sqrt d\le0.005\) and \(u_c=k\alpha^2/2\). Then
+\[F_k(\alpha,u_c)\le F_{\rm tiny}(\alpha):=\frac\alpha2\Bigl(2-\log k-2\log\alpha+\frac{3k\alpha^2}8\Bigr),\quad g(u_c)\le\log\frac{2d}k,\]
+\(F_{\rm tiny}\) is increasing on \((0,1/\sqrt k)\). Hence \(\log a_n(m)\le\sqrt d\,F_{\rm tiny}(0.005)+\log2+\log(2d/k)\).
+
+\emph{Proof.} \(1-e^{-x}=2e^{-x/2}\sinh(x/2)\ge xe^{-x/2}\), so \(g(u)\le-\log u+u/2\). Bound \(\int_0^1\log(1+e^{-uy})dy\le\log2\) and \(-\log(1-e^{-uy})\le-\log(uy)+uy/2\) on \([1,2]\), using \(\int_1^2\log y\,dy=2\log2-1\): \(\Phi_1(u)\le\frac12(1-\log2-\log u+\frac{3u}4)\). With \(u=u_c=k\alpha^2/2\): \(-\log2-\log u_c=-\log k-2\log\alpha\), \(\frac{3u_c}4=\frac{3k\alpha^2}8\), and \(\frac{(1-\alpha^2)u_c}{k\alpha}\le\frac\alpha2\); add. Monotonicity: \(F_{\rm tiny}'(\alpha)=-\log(\sqrt k\alpha)+\frac{9k\alpha^2}{16}>0\) for \(\sqrt k\alpha<1\). Finally \(g(u_c)\le-\log u_c+\frac{u_c}2=\log\frac{2d}{kn^2}+\frac{k\alpha^2}4\le\log\frac{2d}k-\log4+0.001\). \(\blacksquare\)
+
+\textbf{Lemma 8.17 (central odd term).} Let \(A_0\in(0,1)\), \(d\) allowed, \(d\ge D\) where \(A_0\sqrt D\ge N_1\), \(h=k/\sqrt d\). There is an odd integer \(n^*\in[A_0\sqrt d,\,A_0\sqrt d+2k]\) with \(k\mid d-n^{*2}\); \(m^*=(d-n^{*2})/k\ge0\) if \(A_0+2h<1\). Suppose \(\underline M(U_{LO})\ge(1/A_0^2-1)/k\) and \(\overline M(U_{HI})\le(1/(A_0+2h)^2-1)/k\), where \(\underline M(u)\le\mu_n(e^{-u/n})/n^2\le\overline M(u)\) are the enclosures of Table 8.1 valid for all \(n\ge N_1\). Then the saddle \(u^*\) of \(n^*\) satisfies \(U_{LO}\le u^*\le U_{HI}\). Let \(\delta_c=\max\delta\) over the cells meeting \([U_{LO},U_{HI}]\) and \(S_{hi}\ge\sigma^2/n^3\) for \(n\ge N_1\), \(u\in[U_{LO},U_{HI}]\). Then \(o^*:=a_{n^*}(m^*)\) satisfies
+\[\log o^*\ge\sqrt d\,\Psi_{\rm low}-C^*,\quad C^*=\tfrac12\log2+g(U_{LO})+\tfrac12\log2\pi+\tfrac32\log(A_0\sqrt d+2k)+\tfrac12\log S_{hi}-\log(1-\delta_c),\]
+where \(\Psi_{\rm low}\le\min\{F_k(\alpha,u):\alpha\in[A_0,A_0+2h],\,u\in[U_{LO},U_{HI}]\}\).
+
+\emph{Proof.} The interval contains \(2k\) consecutive integers, so one in every class mod \(2k\); as \(k\) is odd, CRT gives an odd \(n^*\) in the class \(n_0\pmod k\) where \(n_0^2\equiv d\pmod k\) (\(d\) allowed). \(\alpha^*=n^*/\sqrt d\in[A_0,A_0+2h]\) and \(n^*\ge A_0\sqrt D\ge N_1\). Let \(\rho^*=m^*/n^{*2}=\rho(\alpha^*)\in[(1/(A_0+2h)^2-1)/k,(1/A_0^2-1)/k]\). Then \(\mu_{n^*}(e^{-U_{LO}/n^*})/n^{*2}\ge\rho^*\ge\mu_{n^*}(e^{-U_{HI}/n^*})/n^{*2}\) and since \(u\mapsto\mu_{n^*}(e^{-u/n^*})\) is strictly decreasing, \(u^*\in[U_{LO},U_{HI}]\). At \(m=\mu\), Proposition 8.11 gives \(P(S=m^*)\ge(1-\delta_c)/(\sqrt{2\pi}\sigma)\), with \(\sigma\le\sqrt{S_{hi}}n^{*3/2}\). Lemma 8.15(c) with \(g(u^*)\le g(U_{LO})\): \(a_{n^*}(m^*)=A(r^*)r^{*-m^*}P\ge\exp(n^*\Phi_1(u^*)+u^*m^*/n^*-\frac12\log2-g(U_{LO}))\cdot\frac{1-\delta_c}{\sqrt{2\pi}\sqrt{S_{hi}}n^{*3/2}}\), and \(n^*\Phi_1(u^*)+u^*m^*/n^*=\sqrt d\,F_k(\alpha^*,u^*)\), \(n^*\le A_0\sqrt d+2k\). \(\blacksquare\)
+
+\textbf{Lemma 8.18 (window).} Let \(\alpha_1\ge(1+k\underline M(U_A))^{-1/2}\), \(\alpha_2\le(1+k\overline M(U_B))^{-1/2}\), \(D_0\ge(N_1/\alpha_1)^2\). For \(d\ge D_0\) and every even admissible \(n\) with \(\alpha=n/\sqrt d\in[\alpha_1,\alpha_2]\): \(n\ge N_1\) and \(u_n\in[U_A,U_B]\).
+
+\emph{Proof.} \(n=\alpha\sqrt d\ge\alpha_1N_1/\alpha_1=N_1\). \(\rho(\alpha)\) is decreasing, \(\rho(\alpha_1)\le\underline M(U_A)\) and \(\rho(\alpha_2)\ge\overline M(U_B)\). The saddle satisfies \(\mu_n/n^2=\rho(\alpha)\); so \(\mu_n(e^{-u_n/n})/n^2\le\underline M(U_A)\le\mu_n(e^{-U_A/n})/n^2\) gives \(u_n\ge U_A\) (monotonicity), and similarly \(u_n\le U_B\). \(\blacksquare\)
+
+\textbf{Algorithm T.} Input \(k\) and the numbers of Table 8.3 (\(U_A,U_B,U_{LO},U_{HI},A_0\)), the constants \(\underline M(U_A)\), \(\overline M(U_B)\), \(\underline M(U_{LO})\), \(\overline M(U_{HI})\), \(S_{hi}\) (from Algorithm E on \([U_{LO},U_{HI}]\) cut into \(35\) equal pieces, \(n_0=1500\)) and \(\delta_c\). Set \(\eta_t=10^{-6}\), \(\alpha_1,\alpha_2,D_0\) as in Lemma 8.18 (rounded in the safe direction), \(h=k/\sqrt{D_0}\), \(\alpha_m=A_0+h\).
+1. (Window condition) verify \(A_0\sqrt{D_0}\ge N_1\) and the two hypotheses of Lemma 8.17 for \(d=D_0\).
+2. \(\Psi_{\rm low}\): cut \([U_{LO},U_{HI}]\) into boxes \(V_i\) of width \(10^{-4}\) and take the minimum over \(i\) of the lower end of \(F_k(\alpha_m,V_i)-h|\partial_\alpha F_k(\alpha_m,V_i)|\) (Lemma 8.15(e)).
+3. \(\alpha\)-boxes: \([0.005+0.0025i,\,0.005+0.0025(i+1)]\) for \(i\ge0\), the last one truncated at \(\alpha_1\) (left tail), and \([\alpha_2+0.0025i,\alpha_2+0.0025(i+1)]\) truncated at \(1\) (right tail). For each box \([x,y]\) choose \(u_c\) (a double near the minimiser of \(F_k(\frac{x+y}2,\cdot)\); any positive value is valid) and put \(\mathrm{Fup}=\max(F_k(x,u_c),F_k(y,u_c))^{\uparrow}\), \(\mathrm{gap}=\mathrm{Fup}-\Psi_{\rm low}\), \(w_{box}=\sqrt{D_0}\,\mathrm{gap}+g(u_c)\).
+4. Tiny part: \(\mathrm{tiny\_gap}=F_{\rm tiny}(0.005)-\Psi_{\rm low}\), \(w_{\rm tiny}=\sqrt{D_0}\,\mathrm{tiny\_gap}+\log(2D_0/k)+1\).
+5. \(C^*(D_0)\) as in Lemma 8.17 at \(d=D_0\), and \(T(D_0)=\log\sqrt{D_0}+\log2+\max(\max_{box}w_{box},w_{\rm tiny})+C^*(D_0)-\log\eta_t\).
+6. Check \(\max\mathrm{gap}\le-2.5/\sqrt{D_0}\) and \(\mathrm{tiny\_gap}\le-4.5/\sqrt{D_0}\) and \(T(D_0)\le0\).
+
+\textbf{Proposition 8.19 (tail bound).} Suppose Algorithm T succeeds. Then for every allowed \(d\ge D_0\),
+\[\sum_{\substack{n\ \mathrm{even},\,2\le n\le\sqrt d\\ n/\sqrt d\notin[\alpha_1,\alpha_2],\ k\mid d-n^2}}a_n\Bigl(\frac{d-n^2}k\Bigr)\le\eta_t\,o^*\le\eta_t\,O_d .\]
+
+\emph{Proof.} Fix \(d\ge D_0\), put \(x=\sqrt d\). By Lemma 8.17 \(\log o^*\ge x\Psi_{\rm low}-C^*(d)\): the window \([A_0,A_0+2k/x]\) is contained in the one at \(D_0\), the \(u^*\)-hypotheses at \(d\) follow from those at \(D_0\) (the right side of the second inequality increases with \(d\)), and \(\Psi_{\rm low}\) is a lower bound on the larger window. For an even \(n\) with \(\alpha=n/x\in[0.005,\alpha_1]\cup[\alpha_2,1]\), \(\alpha\) lies in a box \([x_b,y_b]\) and Lemma 8.15(d),(e) give \(\log a_n\le x\max(F_k(x_b,u_c),F_k(y_b,u_c))+\log2\le x\mathrm{Fup}+\log 2\) (and \(+g(u_c)\) may be added, harmlessly). For \(\alpha<0.005\), Lemma 8.16 gives \(\log a_n\le xF_{\rm tiny}(0.005)+\log2+\log(2d/k)\). There are at most \(x/2\le x\) even \(n\). Hence the tail sum divided by \(o^*\) is at most \(\exp(\tau(x))\) with
+\[\tau(x)=\log x+\log2+\max\bigl(\max_{box}[x(\mathrm{Fup}-\Psi_{\rm low})+g(u_c)],\ x(F_{\rm tiny}(0.005)-\Psi_{\rm low})+\log(2x^2/k)\bigr)+C^*(x).\]
+It suffices to show \(\tau(x)\le\log\eta_t\) for \(x\ge\sqrt{D_0}\); by hypothesis \(\tau(\sqrt{D_0})=T(D_0)+\log\eta_t\le\log\eta_t\). The function of \(x\) in the box part is \(\log x+x\,\mathrm{gap}+\frac32\log(A_0x+2k)+\mathrm{const}\) with derivative \(\le\mathrm{gap}+\frac1x+\frac{3A_0}{2(A_0x+2k)}\le\mathrm{gap}+\frac{2.5}x\le0\) for \(x\ge\sqrt{D_0}\) (as \(\mathrm{gap}\le-2.5/\sqrt{D_0}\le-2.5/x\)). The tiny part is \(x\,\mathrm{tiny\_gap}+\log x+\log(2x^2/k)+\frac32\log(A_0x+2k)+\mathrm{const}\), with derivative \(\le\mathrm{tiny\_gap}+\frac{1+2+1.5}x\le0\). A maximum of non-increasing functions is non-increasing. Finally \(o^*\le O_d\). \(\blacksquare\)
+
+\textbf{Proposition 8.20 (results of Algorithms R and T).} For every odd \(k\in\{3,\dots,33\}\) both algorithms succeed with the parameters of Table 8.3 and give the values of Table 8.2 (in particular \(R_k<1-2\eta_t\), \(T(D_0)<0\), and \(\max\text{gap}\cdot\sqrt{D_0}\) as listed).
+
+This is a computation (Appendix A.3). Its inputs are the cells (Theorem 8.12) and the constants of Table 8.3.
+
+\subsection{Proof of Theorem 8.1}\label{proof-of-theorem-8.1}
+
+\textbf{Part 1.} Let \(k\) be odd, \(3\le k\le33\), \(d\ge D_0(k)\) allowed. The even \(n\) with \(n^2\le d\), \(k\mid d-n^2\) are split by \(\alpha=n/\sqrt d\). The terms with \(\alpha\in[\alpha_1,\alpha_2]\) satisfy \(n\ge N_1\) and \(u_n\in[U_A,U_B]\) (Lemma 8.18), so by Proposition 8.14 their sum is \(\le R_kO_d\). The remaining terms are bounded by Proposition 8.19 by \(\eta_tO_d\); the term \(n=0\) vanishes for \(d>0\). Therefore \(E_d\le(R_k+\eta_t)O_d\). By Lemma 8.17, \(O_d\ge o^*>0\). With (4.4), \((-1)^dg_k(d)=E_d-O_d\le-(1-R_k-\eta_t)O_d<0\) (Table 8.2: \(R_k<0.906\)).
+
+\textbf{Part 2 (finite range).} Section 8.7 describes the modular certificate for \(0\le d\le6\cdot10^7\) and the exact evaluation of the candidates, giving Table 8.5 and Appendix B.1: the set of allowed \(d\le6\cdot10^7\) with \(g_k(d)=0\). Since \(6\cdot10^7>D_0(k)\) for each \(k\), Part 1 and the finite computation together give \(Z_k\) in full; and \(\max Z_k<D_0(k)\) (Table 8.5).
+
+\textbf{Part 3.} By Proposition 3.4.
+
+\subsection{The finite certificate, the tables, and the zero sets}\label{the-finite-certificate-the-tables-and-the-zero-sets}
+
+\subsubsection{The modular certificate}\label{the-modular-certificate}
+
+\textbf{Lemma 8.21.} Let \(k\) be odd and \(D\ge0\). Put \(a_0[m]=\delta_{m,0}\) and, for \(n\ge1\) and \(0\le m\le(D-n^2)/k\), \(a_n[m]=a_{n-1}[m]-(-1)^na_n[m-n]\) (with \(a_n[m']=0\) for \(m'<0\)). Then \(a_n[m]=a_n(m)\) and for \(0\le d\le D\)
+\[G[d]:=\sum_{n\ge0,\ n^2\le d,\ k\mid d-n^2}(-1)^na_n\Bigl(\frac{d-n^2}k\Bigr)=(-1)^dg_k(d).\]
+If \(G[d]\not\equiv0\pmod p\) for some integer modulus \(p\ge2\), then \(g_k(d)\ne0\).
+
+\emph{Proof.} \(A_n(x)(1+(-x)^n)=A_{n-1}(x)\) by (4.1); compare coefficients of \(x^m\). The identity for \(G\) is (4.4). The recursion for \(a_n[m]\) needs only \(m\le(D-n^2)/k\), a range that decreases with \(n\), so the entries computed at step \(n-1\) suffice. Reduction mod \(p\) commutes with the integer recursion. \(\blacksquare\)
+
+\textbf{Algorithm M.} Input \(k\), \(D=6\cdot10^7\) and a modulus \(p<2^{63}\); compute \(G[d]\bmod p\) for all \(0\le d\le D\) by Lemma 8.21 in \(64\)-bit unsigned arithmetic (sums of two residues \(<2p<2^{64}\) do not overflow), and print the allowed \(d\) with \(G[d]\equiv0\). (\texttt{cert/modcert\_copy.c}; \(O(D^{3/2}/k)\) operations.) Run with the two primes \(p_1=2^{61}-1=2305843009213693951\) and \(p_2=4611686018427387847\) for each odd \(k\in[3,33]\) (the moduli need not be prime for the argument; both are).
+
+\textbf{Theorem 8.22 (zero sets).} For each odd \(k\in\{3,\dots,33\}\) let \(C_k\) be the set of allowed \(d\le6\cdot10^7\) with \(G[d]\equiv0\) modulo both \(p_1\) and \(p_2\). Then every \(d\in C_k\) has \(g_k(d)=0\) (exact evaluation in integer arithmetic), so \(Z_k\cap[0,6\cdot10^7]=C_k\). The cardinalities and maxima are in Table 8.5, the elements in Appendix B.1. In every case \(\max Z_k<D_0(k)\le6\cdot10^7\).
+
+\emph{Proof.} If \(d\) is allowed, \(d\le D\) and \(d\notin C_k\) then \(G[d]\not\equiv0\) for \(p_1\) or \(p_2\), so \(g_k(d)\ne0\) by Lemma 8.21. For \(d\in C_k\), \(g_k(d)\) is computed exactly by \texttt{code/zero\_sets.py} and vanishes (the program also evaluates \(g_k(d)\) exactly for all allowed \(d\le\max C_k\) and asserts that the zeros are precisely \(C_k\)). \(\blacksquare\)
+
+\subsubsection{Tables}\label{tables}
+
+\textbf{Table 8.2.} Results of Algorithms R and T (\(N_1=1500\), \(\eta_t=10^{-6}\), \(H=0.0025\)). \(\eta_k=1-R_k-10^{-6}\) truncated to five decimals. Entries are printed to the digits shown; the stored values (\texttt{data/pd/pd56\_results.json}) are directed-rounded doubles, and \(D_0\) is exact.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(k\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(R_k\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\max\delta\) on block cells
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\eta_k\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\alpha_1\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\alpha_2\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(D_0\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(T(D_0)\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\max\text{gap}\cdot\sqrt{D_0}\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+3 & 0.5077783 & 0.05933 & 0.49222 & 0.36739 & 0.74689 & 16,669,607 & -69.25 & -108.45 \\
+5 & 0.5601190 & 0.04374 & 0.43988 & 0.33225 & 0.72095 & 20,382,618 & -54.18 & -92.85 \\
+7 & 0.5989585 & 0.03885 & 0.40104 & 0.30672 & 0.70327 & 23,916,479 & -49.60 & -88.00 \\
+9 & 0.6311271 & 0.04069 & 0.36887 & 0.28726 & 0.68958 & 27,265,747 & -47.21 & -85.45 \\
+11 & 0.6601314 & 0.04215 & 0.33986 & 0.27013 & 0.67591 & 30,835,058 & -48.67 & -86.81 \\
+13 & 0.6867128 & 0.04462 & 0.31328 & 0.26126 & 0.66711 & 32,963,377 & -40.85 & -78.86 \\
+15 & 0.7098506 & 0.04621 & 0.29014 & 0.25133 & 0.65684 & 35,620,105 & -38.58 & -76.51 \\
+17 & 0.7316365 & 0.04789 & 0.26836 & 0.24350 & 0.64926 & 37,947,145 & -35.41 & -73.27 \\
+19 & 0.7529213 & 0.04973 & 0.24707 & 0.23414 & 0.64067 & 41,043,238 & -36.87 & -74.70 \\
+21 & 0.7740846 & 0.05103 & 0.22591 & 0.22915 & 0.63381 & 42,849,645 & -32.55 & -70.32 \\
+23 & 0.7949990 & 0.05225 & 0.20499 & 0.22225 & 0.62687 & 45,550,651 & -32.75 & -70.50 \\
+25 & 0.8160826 & 0.05402 & 0.18391 & 0.21627 & 0.62111 & 48,102,974 & -32.56 & -70.28 \\
+27 & 0.8379773 & 0.05526 & 0.16202 & 0.21361 & 0.61493 & 49,312,289 & -27.62 & -65.28 \\
+29 & 0.8596991 & 0.05641 & 0.14029 & 0.20890 & 0.60963 & 51,557,554 & -26.95 & -64.58 \\
+31 & 0.8819648 & 0.05761 & 0.11803 & 0.20472 & 0.60507 & 53,684,094 & -26.10 & -63.72 \\
+33 & 0.9052174 & 0.05905 & 0.09478 & 0.20099 & 0.59981 & 55,698,896 & -25.05 & -62.64 \\
+\end{longtable}
+
+\textbf{Table 8.3.} Window parameters (inputs; chosen from the critical point of \(F_k\), any values passing the checks would do). In the continuation, \(\underline M,\overline M\) are enclosures of \(\mu_n/n^2\) at the indicated points and \(S_{hi}\) is the maximum of \(SB_{hi}+SG_{hi}\) over \(35\) equal pieces of \([U_{LO},U_{HI}]\).
+
+\begin{longtable}[]{@{}llllll@{}}
+\toprule\noalign{}
+\(k\) & UA & UB & ULO & UHI & A0 \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+3 & 0.21 & 1.1 & 0.346 & 0.519 & 0.508 \\
+5 & 0.27 & 1.38 & 0.435 & 0.653 & 0.466 \\
+7 & 0.31 & 1.59 & 0.501 & 0.751 & 0.438 \\
+9 & 0.34 & 1.76 & 0.554 & 0.83 & 0.417 \\
+11 & 0.36 & 1.89 & 0.598 & 0.896 & 0.401 \\
+13 & 0.39 & 2.02 & 0.636 & 0.953 & 0.387 \\
+15 & 0.41 & 2.12 & 0.669 & 1.004 & 0.375 \\
+17 & 0.43 & 2.22 & 0.699 & 1.049 & 0.365 \\
+19 & 0.44 & 2.3 & 0.726 & 1.089 & 0.356 \\
+21 & 0.46 & 2.38 & 0.751 & 1.127 & 0.348 \\
+23 & 0.47 & 2.45 & 0.774 & 1.161 & 0.341 \\
+25 & 0.48 & 2.52 & 0.795 & 1.193 & 0.334 \\
+27 & 0.5 & 2.58 & 0.815 & 1.223 & 0.329 \\
+29 & 0.51 & 2.64 & 0.834 & 1.251 & 0.323 \\
+31 & 0.52 & 2.7 & 0.851 & 1.277 & 0.318 \\
+33 & 0.53 & 2.75 & 0.868 & 1.302 & 0.313 \\
+\end{longtable}
+
+\textbf{Table 8.3 (continued).} Lattice-sum constants at \(n\ge1500\).
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(k\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\underline M(U_A)\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\overline M(U_B)\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\underline M(U_{LO})\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\overline M(U_{HI})\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(S_{hi}\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+3 & 2.136238 & 0.264198 & 1.210238 & 0.744639 & 4.13818 \\
+5 & 1.611788 & 0.184786 & 0.920200 & 0.553556 & 2.59855 \\
+7 & 1.375649 & 0.145980 & 0.772751 & 0.458497 & 1.94612 \\
+9 & 1.235346 & 0.122548 & 0.680379 & 0.399027 & 1.58216 \\
+11 & 1.154952 & 0.108081 & 0.616503 & 0.357888 & 1.35068 \\
+13 & 1.050030 & 0.095924 & 0.568702 & 0.327282 & 1.18826 \\
+15 & 0.988744 & 0.087856 & 0.531774 & 0.303090 & 1.06913 \\
+17 & 0.933259 & 0.080721 & 0.501364 & 0.283879 & 0.97518 \\
+19 & 0.907444 & 0.075594 & 0.476250 & 0.268270 & 0.90042 \\
+21 & 0.859252 & 0.070921 & 0.454692 & 0.254579 & 0.83830 \\
+23 & 0.836728 & 0.067164 & 0.436159 & 0.243176 & 0.78640 \\
+25 & 0.815164 & 0.063686 & 0.420230 & 0.233110 & 0.74291 \\
+27 & 0.774688 & 0.060908 & 0.405871 & 0.224213 & 0.70460 \\
+29 & 0.755671 & 0.058301 & 0.392911 & 0.216345 & 0.67074 \\
+31 & 0.737406 & 0.055853 & 0.381839 & 0.209391 & 0.64236 \\
+33 & 0.719850 & 0.053924 & 0.371233 & 0.203005 & 0.61565 \\
+\end{longtable}
+
+\textbf{Table 8.4.} Sample of the \(312\) cells of Theorem 8.12 (all cells: \texttt{data/pd/cells56\_sharp.json}). Over all cells: \(\max\delta=0.08727\) (cell \([3.30,3.31]\), \(\tau_0=0.55\)), \(\min\delta=0.02847\), \(\tau_0\in[0.10,0.55]\), \(\max D_1=0.06539\), \(\max D_2=2.21\cdot10^{-3}\), \(\max D_3=1.99\cdot10^{-2}\), \(\max c=1.1870\); every monotonicity flag of Proposition 8.11 holds.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0909}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0909}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0909}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0909}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0909}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0909}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0909}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0909}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0909}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0909}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0909}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(u\)-cell
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\tau_0\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(c\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(D_1\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(D_2\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(D_3\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\delta\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(S_{lo}\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(S_{hi}\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(M_{lo}\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(M_{hi}\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+{[}0.19,0.20{]} & 0.10 & 1.187 & 0.0641 & 2.00e-41 & 3.32e-21 & 0.06412 & 12.3906 & 13.8664 & 2.2538 & 2.3995 \\
+{[}0.49,0.50{]} & 0.10 & 0.441 & 0.0302 & 1.01e-07 & 7.19e-07 & 0.03021 & 1.9378 & 2.0371 & 0.7746 & 0.8003 \\
+{[}0.79,0.80{]} & 0.15 & 0.419 & 0.0308 & 1.02e-06 & 3.80e-06 & 0.03080 & 0.7263 & 0.7530 & 0.4165 & 0.4276 \\
+{[}1.19,1.20{]} & 0.20 & 0.393 & 0.0331 & 3.02e-05 & 6.32e-05 & 0.03319 & 0.2983 & 0.3073 & 0.2286 & 0.2341 \\
+{[}1.69,1.70{]} & 0.25 & 0.375 & 0.0376 & 5.66e-04 & 8.21e-04 & 0.03903 & 0.1310 & 0.1347 & 0.1286 & 0.1315 \\
+{[}2.19,2.20{]} & 0.35 & 0.438 & 0.0457 & 5.11e-04 & 7.28e-04 & 0.04697 & 0.0679 & 0.0698 & 0.0810 & 0.0828 \\
+{[}2.69,2.70{]} & 0.45 & 0.490 & 0.0547 & 7.12e-04 & 9.96e-04 & 0.05641 & 0.0390 & 0.0401 & 0.0550 & 0.0563 \\
+{[}3.19,3.20{]} & 0.55 & 0.536 & 0.0646 & 1.15e-03 & 7.47e-03 & 0.07320 & 0.0242 & 0.0249 & 0.0395 & 0.0405 \\
+{[}3.30,3.31{]} & 0.55 & 0.523 & 0.0654 & 1.98e-03 & 1.99e-02 & 0.08727 & 0.0219 & 0.0226 & 0.0370 & 0.0379 \\
+\end{longtable}
+
+\textbf{Table 8.5.} Zero sets of Theorem 8.22.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 32\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 32\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 32\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 32\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 32\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 32\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 32\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 32\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 32\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 32\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 32\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 32\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 32\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 32\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 32\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 32\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 32\tabcolsep) * \real{0.0588}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(k\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+3
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+5
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+7
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+9
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+11
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+13
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+15
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+17
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+19
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+21
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+23
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+25
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+27
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+29
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+31
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+33
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(\#Z_k\) & 9 & 17 & 24 & 20 & 43 & 54 & 55 & 80 & 89 & 88 & 105 & 76 & 68 & 121 & 127 & 88 \\
+\(\max Z_k\) & 43 & 176 & 247 & 118 & 273 & 545 & 565 & 1137 & 766 & 2055 & 837 & 936 & 1375 & 1934 & 1712 & 1587 \\
+\end{longtable}
+
+\subsection{Computer-assisted steps and what each relies on}\label{computer-assisted-steps-and-what-each-relies-on}
+
+The following steps are carried out by programs; everything else in Section 8 is proved by hand above.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Lattice-sum enclosures} (Algorithm E) for the \(312\) cells and for the window points: Arb ball arithmetic, \(128\) bits, through python-flint \cite{Arb}.
+\item
+  \textbf{Cells} (Algorithm C, Theorem 8.12): the same arithmetic. Output: \(\delta\) for \(312\) cells.
+\item
+  \textbf{Block bound} (Algorithm R, Proposition 8.14), for \(16\) values of \(k\) and about \((U_B-U_A)/0.0025\) boxes each: interval arithmetic over Arb balls.
+\item
+  \textbf{Tail bound} (Algorithm T, Propositions 8.19, 8.20): Arb balls, with the dilogarithm of Arb.
+\item
+  \textbf{Modular certificate} (Algorithm M) and the exact evaluation of \(C_k\) (Theorem 8.22): integer arithmetic only (a C program with \(64\)-bit residues; exact Python integers).
+\end{enumerate}
+
+The only places where floating-point numbers enter as inputs are: the double-precision endpoints of cells and boxes (each is an exactly representable binary number, converted without rounding to a ball), the choice of \(\tau_0\), \(u_c\), \(U_A,\dots,A_0\) (any value is valid; correctness never depends on how they were chosen), and output roundings, which are all directed (upward for upper bounds, downward for lower bounds). The programs were re-run from their inputs for this paper: every output file (window parameters, cells, constants, results) is identical to the stored one (Appendix A.3). This checks reproducibility, not independence of the method.
+
+\subsection{Remarks}\label{remarks}
+
+\emph{An independent derivation of the block step} (separate code, a different decomposition of the circle into five regimes, cells of width \(0.005\) on \([0.40,2.90]\), a fourth-derivative remainder) reports, for \(k=27,29,31,33\), block ratios \(0.79055\), \(0.80677\), \(0.82294\), \(0.83906\), below the values \(R_k\) of Table 8.2. These numbers play no role in the proofs above and were not recomputed for this paper.
+
+\emph{What is proved and what is not.} Theorem 8.1 is proved for the sixteen values \(k=3,\dots,33\) through the finite data above. It is a statement about each fixed \(k\); no bound uniform in \(k\) is claimed, and no extension to \(k\ge35\) or to even \(k\) is asserted.

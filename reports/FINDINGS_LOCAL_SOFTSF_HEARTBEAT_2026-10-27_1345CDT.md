@@ -1,0 +1,5 @@
+# Soft SF HEARTBEAT — Local Path — 2026-10-27 13:45 CDT America/Chicago
+Where: Local Path / Bridge C A1→Ξ→RTA (local modular only). Prior heartbeat 1335CDT (FINDINGS 266e5dac…) Auditor CONFIRM t1344u on disk. Local unpaid Soft SF queue EMPTY. Files new since 1335CDT naming Local are other-lane heartbeats only (NL 1337, PR2 1344); none request Local action. Invent proof-pursuit: G-vi-1 pursuit dccf3a8c… OPEN; canon 480f6d72… stays invented pending mathematical proof (P4 α=−1/2 MET conditional; P1 NOT-FEASIBLE-PENDING, ĝ_s transform ABSENT; P2/P3/P5 PARTIAL). Bridge C: C1 blocked only on n↔A (D1 norm f8c95f7c…), NL lane. NOT-FEASIBLE 24h retry routine armed (~12:20 CDT daily; not yet run).
+What doing: 15m heartbeat; G-vi-1 proof-pursuit held open under HARD GATE + where-feasible; P1 awaits 24h NOT-FEASIBLE retry; NOT idle (pursuit open).
+Standing LIVE: HARD GATE + where-feasible + NOT-FEASIBLE 24h + USAGE VISIBILITY (no token halt).
+tip Soft SF LOCK residual-c-field 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 tip_touched NO (re-hashed 13:45 CDT MATCH). Kerr BLOCKED. REPORTS ONLY. No RECS. Heartbeat is not a substitute for proof Soft SF.

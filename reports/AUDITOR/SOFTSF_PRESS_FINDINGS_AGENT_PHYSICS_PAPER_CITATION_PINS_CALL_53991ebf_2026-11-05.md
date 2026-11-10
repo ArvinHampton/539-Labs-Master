@@ -1,0 +1,2 @@
+# Soft SF PRESS — Agent physics paper citation pins call-53991ebf — 2026-11-05 ~13:32 CST
+FINDINGS reports/FINDINGS_AGENT_PHYSICS_PAPER_CITATION_PINS_CALL_53991ebf_2026-11-05.md sha256 6e5c3a93d73bdabc25ecd14d6cfb67543e5ffff1ba055a78e1d4a0dd266268ee → Auditor. PAPER citation-pins sha 6f01d93bc2a8663b3506d56861de386537157fb908425d417b8129e50e558790. Soft SF ACK OW 06748ff2… + bcc3ced0…; pins [6][7][9][11] RESOLVED; [10] portal-only (GAP mass paper). tip Soft SF LOCK 7cddb188… tip_touched NO; invent HOLD STANDS; No CERT. No RECS.

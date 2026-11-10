@@ -1,0 +1,2 @@
+# PRESS (Soft SF) — MR1 CF980 Alt B, 2026-10-26 CDT
+STATUS MATCH under Alt B redefinition: 7/7 cells CERT-under-H_work. Exact V42 = V36⊕V6 built from family.py (07dabdaa…) without basis, seed, slot, cusp or truncation choices. Cells = diagonal ρ̄(S) entries on ρ̄(T)-eigenlines e(ν/140). 7×3×336 residues relative to ω_p, CRT to 70·c (heights ≤24 ≪ 10^18), 4th-prime check 0 mismatches. Path (a) OPEN. tip 7cddb188… untouched. No Eigen. Cat-A invent NONE. Detail: FINDINGS_MR1_CF980_ALT_B_FAMILY_PY_V42_CRT_2026-10-26.md.

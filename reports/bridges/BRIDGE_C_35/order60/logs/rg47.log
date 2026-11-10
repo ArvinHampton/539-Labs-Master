@@ -1,0 +1,76 @@
+{
+ "RG47b_i": {
+  "ratio": "1",
+  "Q1": "1",
+  "Q72": "1",
+  "PASS": true
+ },
+ "RG47b_ii": "SKIP: no written ray->sawtooth map",
+ "RG47b_iii": "SKIP: no Eichler normalisation/constants/eval points for order6 shadows",
+ "RG47b": "SKIP",
+ "rank": {
+  "Ahat": {
+   "0.5": {
+    "rank": 75,
+    "joint": 148,
+    "excess": 73,
+    "closed": false
+   },
+   "1.0": {
+    "rank": 75,
+    "joint": 150,
+    "excess": 75,
+    "closed": false
+   }
+  },
+  "R_Q1": {
+   "0.5": {
+    "rank": 75,
+    "joint": 146,
+    "excess": 71,
+    "closed": false
+   },
+   "1.0": {
+    "rank": 75,
+    "joint": 124,
+    "excess": 49,
+    "closed": false
+   }
+  },
+  "R_Q72": {
+   "0.5": {
+    "rank": 84,
+    "joint": 168,
+    "excess": 84,
+    "closed": false
+   },
+   "1.0": {
+    "rank": 84,
+    "joint": 156,
+    "excess": 72,
+    "closed": false
+   }
+  },
+  "R_both": {
+   "0.5": {
+    "rank": 34,
+    "joint": 68,
+    "excess": 34,
+    "closed": false
+   },
+   "1.0": {
+    "rank": 34,
+    "joint": 36,
+    "excess": 2,
+    "closed": false
+   }
+  }
+ },
+ "gate": true,
+ "reduction": {
+  "R_Q1": 26,
+  "R_Q72": 3,
+  "R_both": 73
+ },
+ "RG47c": "PARTIAL"
+}

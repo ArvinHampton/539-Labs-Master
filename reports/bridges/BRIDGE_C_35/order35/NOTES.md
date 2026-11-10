@@ -1,0 +1,4 @@
+# order35 NOTES
+- Lesson: "outside the companions by characteristic" ≠ "outside the span of the 35-component law vector". The correct leakage measure is a span projection. It needs the companion-span of Gauss means at each x (rank 36 ambient; order20 RG7 joint ranks).
+- Open next step (order36, not started): preregister RG33. At each grid point, project the exact L_B outside terms onto the span of the 105 companion Gauss means (G(x) = A0(x)/I, rank 36). Define the leakage as the residual of that projection, and predict r(C2b) from it with no fit (r_pred = ‖P⊥_span S‖-type quantity, together with the κ-direction bookkeeping), on P7 first. Also state in advance how grid dependence (P7 0.0585 vs full 0.00305) is to be handled, e.g. per-point r.
+- CORE_FREEZE; new files only. Geometric only; MAPS_CANDIDATES untouched; no Resonant objects; no bridge claim. Naming: RG* only, no labels L1–L7. nice, OMP_NUM_THREADS=1, 3 GB, ~66 s; no push or sends.

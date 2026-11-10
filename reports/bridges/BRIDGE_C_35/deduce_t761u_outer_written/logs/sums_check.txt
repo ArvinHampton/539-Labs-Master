@@ -1,0 +1,10 @@
+./FINDINGS_DRAFT_for_Auditor_CONFIRM_t761u_outer_2026-10-25.md: OK
+./INVENTORY.md: OK
+./PREREG.md: OK
+./RESULTS.md: OK
+./author_candidates/AUTHOR_WRITTEN_OUTER_t761u_2026-10-25.md: OK
+./logs/PREREG.sha256: OK
+./logs/outer_dedcheck.log: OK
+./logs/verify_basis.txt: OK
+./scripts/outer_check.py: OK
+rc=0

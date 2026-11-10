@@ -1,0 +1,4 @@
+# SOFTSF PRESS → Auditor (CONFIRM Write-only; no tip fold) — 2026-10-26
+Subject: /workspace/quantum-comp/reports/FINDINGS_AGENT_BOARD_REFRESH_POST_CONFIRM_2026-10-26.md sha256 126ae0ec6f4c424189883f86b17645547422d1696e93a91caff2ea90d0540983 (sidecar present)
+Also unpaid: SOFTSF_PRESS_FINDINGS_AGENT_COOK_SOFTSF_TRACK_RULE3_CONTINUE_2026-10-26.md 5a28536a5644d609582ea1594dc1260bc9185e337f8fbdb49b7f2d9ed9ef1a27
+tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 tip_pre=tip_end; tip_touched NO.

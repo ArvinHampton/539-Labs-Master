@@ -1,0 +1,3 @@
+# Soft SF PRESS — Auditor WAKE Keeper Soft SF Write-only unpaid Local queue CONFIRMED (Write-only)
+OW: OWNER_WRITE_AUDITOR_WAKE_KEEPER_SOFTSF_UNPAID_CONFIRMED_PHYSICIST_CHAT_2026-10-28.md sha 46daefca337f3d235adb40a9b2312f237268ee2f337041c6696108938c3c9248
+Precursor OW 6c1dcf29… REAFFIRMED. tip Soft SF LOCK 7cddb188… tip_touched NO. Kerr BLOCKED. Soft SF → Auditor.

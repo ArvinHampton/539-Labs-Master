@@ -1,0 +1,40 @@
+PARI stack size set to 4000000000 bytes, maximum size set to 4000002048
+dim S_3/2(196,chi_28) = 9
+charpoly T(3^2) on full space: [x - 2, 1; x, 4; x + 2, 3; x + 4, 1]
+charpoly T(5^2) on full space: [x, 8; x + 6, 1]
+charpoly T(11^2) on full space: [x - 12, 1; x - 4, 4; x, 4]
+charpoly T(13^2) on full space: [x - 4, 1; x, 4; x + 4, 3; x + 14, 1]
+ after p=3: dim joint f-eigenspace = 4
+ after p=5: dim joint f-eigenspace = 4
+ after p=11: dim joint f-eigenspace = 4
+ after p=13: dim joint f-eigenspace = 4
+ after p=17: dim joint f-eigenspace = 4
+ after p=19: dim joint f-eigenspace = 4
+ after p=23: dim joint f-eigenspace = 4
+ after p=29: dim joint f-eigenspace = 4
+ after p=31: dim joint f-eigenspace = 4
+ after p=37: dim joint f-eigenspace = 4
+dim ker T(9) alone = 4 ; K3 == span(K)? 1
+S_2(Gamma0(98)) newforms (level, a_3, a_5, a_11):
+  level 14 #1: field y  a_2..a_13: [-1, -2, 1, 0, 2, 1, -1, 1, 0, 0, -2, -4]
+  level 49 #1: field y  a_2..a_13: [1, 0, -1, 0, 0, 0, -3, -3, 0, 4, 0, 0]
+  level 98 #1: field y  a_2..a_13: [-1, 2, 1, 0, -2, 0, -1, 1, 0, 0, 2, 4]
+  level 98 #2: field y^2 - 2  a_2..a_13: [Mod(1, y^2 - 2), Mod(y, y^2 - 2), Mod(1, y^2 - 2), Mod(-2*y, y^2 - 2), Mod(y, y^2 - 2), Mod(0, y^2 - 2), Mod(1, y^2 - 2), Mod(-1, y^2 - 2), Mod(-2*y, y^2 - 2), Mod(-2, y^2 - 2), Mod(y, y^2 - 2), Mod(0, y^2 - 2)]
+a_3(f) = 0 ; Eisenstein-type |lambda_3| = 4 (Hasse: |a_3(g)|<=2sqrt3 < 4)
+G_1 (row-reduced, exact) n=0..80: [0, 1, 0, 0, 0, 0, 0, 0, -2, 1, 0, 0, 0, 0, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, -2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, -2, -2, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0]
+G_2 (row-reduced, exact) n=0..80: [0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, -2, 1, 0, -1, 0, 0, 0, 2, -2, 0, 0, 0, 0, 0, -2, -2, 0, -1, 0, 0, 0, 1, -2, 0, -2, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, -1, 2, 0, 0, 0, 0, 0, 0, 2, 0, -2, 0, 0, 0, -1, 0, 0, 2, 0, 0, 0, 4, -1, 0, 2, 0, 0, 0, -2, 0, 0]
+G_3 (row-reduced, exact) n=0..80: [0, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, -1, 0, -1, 2, 0, 0, 0, 1, 0, 2, 0, 0, 0, 0, -2, 0, 2, 1, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, -2, 0, 0, 2, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 3, 0, -1, 1, 0, 0, 0, 2]
+G_4 (row-reduced, exact) n=0..80: [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, -2, -1, 0, 0, 0, -1, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, -1, 0, 0, -2, 0, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 2, 0, 0, 0, 0]
+support of the isotypic space by n mod 4 (count of n<=1200 with some nonzero coeff): [210, 217, 213, 207]
+support by n mod 7 : [0, 144, 140, 141, 146, 141, 135]
+Kohnen plus space dim = 3
+dim (plus space ∩ f-isotypic) = 2
+Traceback (most recent call last):
+  File "/workspace/quantum-comp/reports/evidence_local_t4407_computations_2026-11-09/oa_v2.py", line 45, in <module>
+    rows.append(str(P("[matrank(Mat([fv;fv2;fv4;s]))-matrank(Mat([fv;fv2;fv4])), if(s==0*s,0,1), matsolve(Mat([fv;fv2;fv4])[,[1,2,4]]~, s[[1,2,4]]~)~]")))
+                    ~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cypari2/pari_instance.pyx", line 800, in cypari2.pari_instance.Pari.__call__
+  File "cypari2/gen.pyx", line 4784, in cypari2.gen.objtogen
+  File "cypari2/convert.pyx", line 545, in cypari2.convert.PyObject_AsGEN
+  File "cypari2/handle_error.pyx", line 211, in cypari2.handle_error._pari_err_handle
+cypari2.handle_error.PariError: this should be a small integer

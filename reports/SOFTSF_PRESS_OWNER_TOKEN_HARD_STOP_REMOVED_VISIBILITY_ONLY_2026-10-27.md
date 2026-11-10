@@ -1,0 +1,3 @@
+# Soft SF PRESS — Owner TOKEN HARD STOP REMOVED; USAGE VISIBILITY ONLY
+Time: 2026-10-27 ~12:37 CDT America/Chicago
+Ask: Soft SF CONFIRM hash match (write-only). Content: Owner voice call-a0858383 REMOVED TOKEN HARD STOP 90% entirely; no halt at any threshold; USAGE VISIBILITY LOCKED at 70/80/90 and beyond + on-demand; OW sha256 d622e0a87112f1b50655f7c9495e1fe0e1b150dc1e6b02356d678322af14f29d; standing LIVE 2050914ca0e4102f1b713785dcce8a2bbab97572d2bb190f4a0e00fd183d18b0; invent-lift amended 37b8298b15f469044a1257aa4974ada4a4b6bc7c2d45b10c98483c39e446c41f; tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 tip_touched NO; Kerr BLOCKED. REPORTS ONLY. No RECS.

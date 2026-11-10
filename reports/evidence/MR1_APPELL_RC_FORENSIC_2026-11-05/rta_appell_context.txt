@@ -1,0 +1,11 @@
+Status (Category A). Proved, conditional on Baker’s theorem [1] and on the algebraicity of cusp ex-
+pansions (Shimura’s Q(ζN )-rationality, i.e. the q-expansion principle), both cited. The radial expansion
+used is R1 (§13.1).
+
+Category B. Reading: the remainder of C is “weight-1 sized” at q → 1 with a regulator as coeﬀicient;
+weight- 12 false thetas are O(t−1/2 ) and cannot carry it. An Appell–Lerch formula for E or Psorth with
+algebraic data would likewise be excluded, but this needs the q → 1 asymptotics of Appell–Lerch sums,
+which were not verified; that obstruction is conditional.
+
+
+13.4      The multiplicative obstruction (Theorem 11.5(ii))

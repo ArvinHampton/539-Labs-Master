@@ -1,0 +1,3 @@
+# SOFTSF PRESS — NL Rule-5 ACCEPT-WITH-FLAGS PR1 χ² trio invent resume Soft SF ebc05e25… — 2026-10-27
+- FINDINGS: NL_RULE5_REVIEW_PR1_CHI2_TRIO_INVENT_RESUME_RULE4_2026-10-27.md sha `0cfb2e4fefd4300a16e722ca97359f158411950285c7768ff22c847dab1f1d27`
+- FLAG-1 L5 data-dependent τ; FLAG-2 Fact (c).F SCRIPT-only. tip Soft SF LOCK untouched; Kerr BLOCKED. → Auditor.

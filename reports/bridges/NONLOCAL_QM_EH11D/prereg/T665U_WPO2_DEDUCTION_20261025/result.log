@@ -1,0 +1,10 @@
+RESULTS t665u — 2026-10-25 00:24 CDT (America/Chicago)
+PREREG sha 599712c3293b6ee4fedb7c6cd26fc4765985b7631d52a6b59c42563d852ce231
+D1 Codex Ω11D occurrences on terms:
+5
+11:The total effective force on a valence electron is the coherent sum of all contributions, each scaled by the single geometric factor Ω₁₁D (fixed once by 11D compactification geometry):
+D1 PASS: DEDUCED F_total=Ω11D·ΣF̂_i (uniform scalar; per-term mapping of sub-factors f_* to F_i NOT forced)
+D2 regex hits Codex/ExplDeriv:
+/tmp/Periodic_Table_Codex_HQH539.txt:0
+/tmp/Explicit_Derivations_S2-11DM2ET-X.txt:0
+D2: Ω₀ ABSENT(closed form); f_warp ABSENT; f_curv ABSENT; f_b DEDUCED-tie only (f_b↔B'=539, no form); Φ_flux DEDUCED-tie (period 539.9 s, Explicit_Derivations:21,37; form beyond phase lock not written)

@@ -1,0 +1,14 @@
+Proposition 42.6 (Facts about T3 and 539). Let T3 (3k) = k, T3 (3k + 1) = 4k + 2, T3 (3k + 2) =
+2k + 1.
+
+  (i) If 539 = a1 + · · · + a8 with positive integers and max ai − min ai ≤ 1, then {ai } =
+      {68, 68, 68, 67, 67, 67, 67, 67}.
+
+ (ii) For M coprime to 6 and L ≥ 1, as n runs over Z/3L M , T3L (n) mod M is well defined and
+      takes each value exactly 3L times.
+
+(iii) Extended to Z3 , T3 preserves Haar measure, and the itinerary map n 7→ (T3j (n) mod 3)j≥0 is
+      a homeomorphism Z3 → {0, 1, 2}N conjugating T3 to the shift.
+
+Proof. (i) Let q = min ai and let b be the number of parts equal to q + 1. If b = 8 then 8 | 539, false.
+So 539 = 8q+b with 0 ≤ b ≤ 7, and q = 67, b = 3. (ii) For N = 3i M (i ≥ 1) and n = 3k+r, replacing

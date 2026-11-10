@@ -1,0 +1,72 @@
+######## command: python3 MR2_TWISTED_VACUA_EINSTEIN_SYMBOLIC_AND_GLOBAL_CURVATURE_2026-11-09.py points MN2(z=1) (8 points) ; started 18:00 CST
+== MR2 adoption blockers: Riemann / systole / full EOM ==
+check ghat*Delta^(-2/3) == V2 cand_metric(): True
+
+## MN2(z=1): minimal polynomial of X1 over Q: 8*X1**5 - 1  (deg 5); X2 -> 2*X1
+  pt 0: (r,v,s_a,s_b)=(24/7,63/38,40/9,55/48): 66 comps; 53 identically 0 in Q(X1,X2); 13/13 remaining reduce EXACTLY to 0 mod minpoly; failures []  [55s]
+  pt 1: (r,v,s_a,s_b)=(12,60/13,27/64,7/12): 66 comps; 53 identically 0 in Q(X1,X2); 13/13 remaining reduce EXACTLY to 0 mod minpoly; failures []  [47s]
+  pt 2: (r,v,s_a,s_b)=(21/41,28/13,7/16,55/52): 66 comps; 53 identically 0 in Q(X1,X2); 13/13 remaining reduce EXACTLY to 0 mod minpoly; failures []  [66s]
+  pt 3: (r,v,s_a,s_b)=(28/75,40/27,15/2,25/24): 66 comps; 53 identically 0 in Q(X1,X2); 13/13 remaining reduce EXACTLY to 0 mod minpoly; failures []  [48s]
+  pt 4: (r,v,s_a,s_b)=(30/11,21/73,59/18,39/41): 66 comps; 53 identically 0 in Q(X1,X2); 13/13 remaining reduce EXACTLY to 0 mod minpoly; failures []  [66s]
+  pt 5: (r,v,s_a,s_b)=(23/41,62/23,10/3,71/25): 66 comps; 53 identically 0 in Q(X1,X2); 13/13 remaining reduce EXACTLY to 0 mod minpoly; failures []  [56s]
+  pt 6: (r,v,s_a,s_b)=(43/90,11/8,19/79,88/31): 66 comps; 53 identically 0 in Q(X1,X2); 13/13 remaining reduce EXACTLY to 0 mod minpoly; failures []  [144s]
+  pt 7: (r,v,s_a,s_b)=(4/25,33/32,39/71,79/20): 66 comps; 53 identically 0 in Q(X1,X2); 13/13 remaining reduce EXACTLY to 0 mod minpoly; failures []  [94s]
+  MN2(z=1) SUMMARY: 8 random rational points x 66 components: all exact zero = True
+DONE 575s
+exit_code=0
+######## command: python3 MR2_TWISTED_VACUA_EINSTEIN_SYMBOLIC_AND_GLOBAL_CURVATURE_2026-11-09.py points MN1(z=0) (8 points) ; started 18:00 CST
+== MR2 adoption blockers: Riemann / systole / full EOM ==
+check ghat*Delta^(-2/3) == V2 cand_metric(): True
+
+## MN1(z=0): minimal polynomial of X1 over Q: 4*X1**5 - 3  (deg 5); X2 -> X1
+  pt 0: (r,v,s_a,s_b)=(24/7,63/38,40/9,55/48): 66 comps; 52 identically 0 in Q(X1,X2); 14/14 remaining reduce EXACTLY to 0 mod minpoly; failures []  [199s]
+  pt 1: (r,v,s_a,s_b)=(12,60/13,27/64,7/12): 66 comps; 52 identically 0 in Q(X1,X2); 14/14 remaining reduce EXACTLY to 0 mod minpoly; failures []  [169s]
+  pt 2: (r,v,s_a,s_b)=(21/41,28/13,7/16,55/52): 66 comps; 52 identically 0 in Q(X1,X2); 14/14 remaining reduce EXACTLY to 0 mod minpoly; failures []  [234s]
+  pt 3: (r,v,s_a,s_b)=(28/75,40/27,15/2,25/24): 66 comps; 52 identically 0 in Q(X1,X2); 14/14 remaining reduce EXACTLY to 0 mod minpoly; failures []  [112s]
+  pt 4: (r,v,s_a,s_b)=(30/11,21/73,59/18,39/41): 66 comps; 52 identically 0 in Q(X1,X2); 14/14 remaining reduce EXACTLY to 0 mod minpoly; failures []  [148s]
+  pt 5: (r,v,s_a,s_b)=(23/41,62/23,10/3,71/25): 66 comps; 52 identically 0 in Q(X1,X2); 14/14 remaining reduce EXACTLY to 0 mod minpoly; failures []  [104s]
+  pt 6: (r,v,s_a,s_b)=(43/90,11/8,19/79,88/31): 66 comps; 52 identically 0 in Q(X1,X2); 14/14 remaining reduce EXACTLY to 0 mod minpoly; failures []  [264s]
+  pt 7: (r,v,s_a,s_b)=(4/25,33/32,39/71,79/20): 66 comps; 52 identically 0 in Q(X1,X2); 14/14 remaining reduce EXACTLY to 0 mod minpoly; failures []  [323s]
+  MN1(z=0) SUMMARY: 8 random rational points x 66 components: all exact zero = True
+DONE 1553s
+exit_code=0
+######## command: python3 MR2_TWISTED_VACUA_EINSTEIN_SYMBOLIC_AND_GLOBAL_CURVATURE_2026-11-09.py points BBBW(z=2) 8 CONTROLS (8 points) ; started 18:00 CST
+== MR2 adoption blockers: Riemann / systole / full EOM ==
+check ghat*Delta^(-2/3) == V2 cand_metric(): True
+
+## BBBW(z=2): minimal polynomial of X1 over Q: 16*X1**10 - 1228*X1**5 + 81  (deg 10); X2 -> -8*X1**6/255 + 647*X1/255
+  pt 0: (r,v,s_a,s_b)=(24/7,63/38,40/9,55/48): 66 comps; 52 identically 0 in Q(X1,X2); 14/14 remaining reduce EXACTLY to 0 mod minpoly; failures []  [204s]
+  pt 1: (r,v,s_a,s_b)=(12,60/13,27/64,7/12): 66 comps; 52 identically 0 in Q(X1,X2); 14/14 remaining reduce EXACTLY to 0 mod minpoly; failures []  [174s]
+  pt 2: (r,v,s_a,s_b)=(21/41,28/13,7/16,55/52): 66 comps; 52 identically 0 in Q(X1,X2); 14/14 remaining reduce EXACTLY to 0 mod minpoly; failures []  [219s]
+  pt 3: (r,v,s_a,s_b)=(28/75,40/27,15/2,25/24): 66 comps; 52 identically 0 in Q(X1,X2); 14/14 remaining reduce EXACTLY to 0 mod minpoly; failures []  [118s]
+  pt 4: (r,v,s_a,s_b)=(30/11,21/73,59/18,39/41): 66 comps; 52 identically 0 in Q(X1,X2); 14/14 remaining reduce EXACTLY to 0 mod minpoly; failures []  [162s]
+  pt 5: (r,v,s_a,s_b)=(23/41,62/23,10/3,71/25): 66 comps; 52 identically 0 in Q(X1,X2); 14/14 remaining reduce EXACTLY to 0 mod minpoly; failures []  [111s]
+  pt 6: (r,v,s_a,s_b)=(43/90,11/8,19/79,88/31): 66 comps; 52 identically 0 in Q(X1,X2); 14/14 remaining reduce EXACTLY to 0 mod minpoly; failures []  [308s]
+  pt 7: (r,v,s_a,s_b)=(4/25,33/32,39/71,79/20): 66 comps; 52 identically 0 in Q(X1,X2); 14/14 remaining reduce EXACTLY to 0 mod minpoly; failures []  [343s]
+  BBBW(z=2) SUMMARY: 8 random rational points x 66 components: all exact zero = True
+CONTROL z=2 LAMBDA=1/8: components NOT zero at the exact fixed point = 15 (must be > 0)
+CONTROL z=2 LAMBDA=0: components NOT zero at the exact fixed point = 15 (must be > 0)
+CONTROL z=2 flux x 11/10: components NOT zero = 15 (must be > 0)
+CONTROL z=2 X1 x 1.1 (X2 fixed): max |E_MN| (lower, s-coords) = 8.1841 (must be >> 0)
+cross-check data: z=2 at the control point, R(full)*Delta^(-2/3) = Rc = 4.79894282723861209339590479980, Delta = 1.37028702467149660666309159138
+DONE 2317s
+exit_code=0
+######## command: python3 MR2_TWISTED_VACUA_EINSTEIN_SYMBOLIC_AND_GLOBAL_CURVATURE_2026-11-09.py points BBBW(z=3) (8 points) ; started 18:00 CST
+== MR2 adoption blockers: Riemann / systole / full EOM ==
+check ghat*Delta^(-2/3) == V2 cand_metric(): True
+
+## BBBW(z=3): minimal polynomial of X1 over Q: 3*X1**10 - 122*X1**5 + 6  (deg 10); X2 -> -3*X1**6/46 + 65*X1/23
+  pt 0: (r,v,s_a,s_b)=(24/7,63/38,40/9,55/48): 66 comps; 52 identically 0 in Q(X1,X2); 14/14 remaining reduce EXACTLY to 0 mod minpoly; failures []  [210s]
+  pt 1: (r,v,s_a,s_b)=(12,60/13,27/64,7/12): 66 comps; 52 identically 0 in Q(X1,X2); 14/14 remaining reduce EXACTLY to 0 mod minpoly; failures []  [185s]
+  pt 2: (r,v,s_a,s_b)=(21/41,28/13,7/16,55/52): 66 comps; 52 identically 0 in Q(X1,X2); 14/14 remaining reduce EXACTLY to 0 mod minpoly; failures []  [205s]
+  pt 3: (r,v,s_a,s_b)=(28/75,40/27,15/2,25/24): 66 comps; 52 identically 0 in Q(X1,X2); 14/14 remaining reduce EXACTLY to 0 mod minpoly; failures []  [107s]
+  pt 4: (r,v,s_a,s_b)=(30/11,21/73,59/18,39/41): 66 comps; 52 identically 0 in Q(X1,X2); 14/14 remaining reduce EXACTLY to 0 mod minpoly; failures []  [146s]
+  pt 5: (r,v,s_a,s_b)=(23/41,62/23,10/3,71/25): 66 comps; 52 identically 0 in Q(X1,X2); 14/14 remaining reduce EXACTLY to 0 mod minpoly; failures []  [112s]
+  pt 6: (r,v,s_a,s_b)=(43/90,11/8,19/79,88/31): 66 comps; 52 identically 0 in Q(X1,X2); 14/14 remaining reduce EXACTLY to 0 mod minpoly; failures []  [294s]
+  pt 7: (r,v,s_a,s_b)=(4/25,33/32,39/71,79/20): 66 comps; 52 identically 0 in Q(X1,X2); 14/14 remaining reduce EXACTLY to 0 mod minpoly; failures []  [321s]
+  BBBW(z=3) SUMMARY: 8 random rational points x 66 components: all exact zero = True
+DONE 1579s
+exit_code=0
+######## symbolic-mode runs (same .py, 'symbolic <cand>'), started 18:00 CST: MN1, z=2, z=3 KILLED at ~18:08 CST to free CPU for MN2 (Owner priority); MN2 still running at 18:43 CST (no output beyond header yet):
+== MR2 adoption blockers: Riemann / systole / full EOM ==
+check ghat*Delta^(-2/3) == V2 cand_metric(): True

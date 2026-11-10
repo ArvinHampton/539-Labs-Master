@@ -1,0 +1,2 @@
+# Soft SF PRESS — Agent ACK+PULL MR1 call-9ee0f248 — 2026-11-05 ~11:41 CST
+FINDINGS reports/FINDINGS_AGENT_ACK_PULL_MR1_FROM_PP_QUEUE_CALL_9ee0f248_2026-11-05.md sha256 3806d918f3b5e040c4e63091c23e9b31c0ac6b50bc08dd2204ac567ecc5764dd → Auditor. Owner Soft SF voice: FULL STOP lifted THIS Agent pull; Agent share = MR1 only (Rules 4–5); MR2/PR1/PR2 not pulled. MR1 status PARKED/HALTED under OW 61edc308… (disk Soft SF 4a239ff8…); Agent Rule-5 LIVE / invent-pending EMPTY; tip Soft SF LOCK 7cddb188… tip_touched NO; No CERT. No RECS.

@@ -1,0 +1,9 @@
+PARI stack size set to 6000000000 bytes, maximum size set to 6000001024
+[J-3] 49a1: conductor 49 , torsion [2] , ellrank [lower, upper, ...]: [0, 0]
+[J-3] Xi : conductor 19600 , torsion [2] , ellrank [lower, upper]: [1, 1]
+      Xi points found: [[8730, 810550]] ; on curve: [1] ; ellorder (0 = infinite order): [0] ; canonical height: [6.78208010970256]
+      Xi minimal model a-invariants: 0 [0, 0, 0, -42875, -4201750]
+[J-3] ellrank over K failed: ellrank: incorrect type in checkell over Q (t_VEC)
+[J-1] [980,2,chi_140] flag 1: dim 152, rank_p C 152, rank_p[C|f_Xi] 153, rank_p[C|f_49a1] 153
+[J-1] [980,2,chi_140] flag 4: dim 184, rank_p C 184, rank_p[C|f_Xi] 185, rank_p[C|f_49a1] 185
+[J-1] f_49a1 old copies in S_2(Gamma0(980)): number of d | 20 = 6

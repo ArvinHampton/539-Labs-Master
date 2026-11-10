@@ -1,0 +1,57 @@
+cosets: 288 (index of Gamma0(140) = 140*3/2*6/5*8/7 = 288)
+Schreier generators (nontrivial): 259  max word length: 39  max #S letters: 10
+ a=1: |S^4-I|=3.12e-15, |(ST)^3-S^2|=1.19e-15, |S S^*-I|=1.55e-15
+ twist a= 1 done; running max residual 2.6895931884816997e-15 t=0s
+ a=3: |S^4-I|=3.19e-15, |(ST)^3-S^2|=5.56e-15, |S S^*-I|=1.55e-15
+ twist a= 3 done; running max residual 9.055277548519197e-15 t=0s
+ twist a= 9 done; running max residual 1.810113533271689e-14 t=0s
+ twist a= 11 done; running max residual 6.13119322798046e-14 t=0s
+ twist a= 13 done; running max residual 6.13119322798046e-14 t=0s
+ twist a= 17 done; running max residual 6.13119322798046e-14 t=0s
+ twist a= 19 done; running max residual 6.398539302433471e-14 t=0s
+ twist a= 23 done; running max residual 8.448267975744088e-14 t=0s
+ twist a= 27 done; running max residual 1.0974229889449265e-13 t=0s
+ twist a= 29 done; running max residual 1.0974229889449265e-13 t=0s
+ twist a= 31 done; running max residual 1.1415266865243068e-13 t=0s
+ twist a= 33 done; running max residual 1.1415266865243068e-13 t=0s
+ twist a= 37 done; running max residual 1.1415266865243068e-13 t=0s
+ twist a= 39 done; running max residual 1.1415266865243068e-13 t=0s
+ twist a= 41 done; running max residual 1.4878406640532879e-13 t=1s
+ twist a= 43 done; running max residual 1.4878406640532879e-13 t=1s
+ twist a= 47 done; running max residual 1.4878406640532879e-13 t=1s
+ twist a= 51 done; running max residual 1.523521013373185e-13 t=1s
+ twist a= 53 done; running max residual 1.523521013373185e-13 t=1s
+ twist a= 57 done; running max residual 2.45109656468685e-13 t=1s
+ twist a= 59 done; running max residual 2.45109656468685e-13 t=1s
+ twist a= 61 done; running max residual 2.45109656468685e-13 t=1s
+ twist a= 67 done; running max residual 2.5451754989361107e-13 t=1s
+ twist a= 69 done; running max residual 2.5451754989361107e-13 t=1s
+ twist a= 71 done; running max residual 2.5451754989361107e-13 t=1s
+ twist a= 73 done; running max residual 2.5451754989361107e-13 t=1s
+ twist a= 79 done; running max residual 2.5451754989361107e-13 t=1s
+ twist a= 81 done; running max residual 2.653936808873588e-13 t=1s
+ twist a= 83 done; running max residual 2.653936808873588e-13 t=1s
+ twist a= 87 done; running max residual 3.4784857706970723e-13 t=1s
+ twist a= 89 done; running max residual 3.4784857706970723e-13 t=1s
+ twist a= 93 done; running max residual 5.122602938446097e-13 t=1s
+ twist a= 97 done; running max residual 5.122602938446097e-13 t=1s
+ twist a= 99 done; running max residual 5.122602938446097e-13 t=1s
+ twist a= 101 done; running max residual 5.122602938446097e-13 t=1s
+ twist a= 103 done; running max residual 5.122602938446097e-13 t=1s
+ twist a= 107 done; running max residual 5.122602938446097e-13 t=1s
+ twist a= 109 done; running max residual 5.14545860235566e-13 t=1s
+ twist a= 111 done; running max residual 5.14545860235566e-13 t=1s
+ twist a= 113 done; running max residual 5.209729868960319e-13 t=1s
+ twist a= 117 done; running max residual 5.209729868960319e-13 t=1s
+ twist a= 121 done; running max residual 5.209729868960319e-13 t=2s
+ twist a= 123 done; running max residual 5.209729868960319e-13 t=2s
+ twist a= 127 done; running max residual 5.209729868960319e-13 t=2s
+ twist a= 129 done; running max residual 5.209729868960319e-13 t=2s
+ twist a= 131 done; running max residual 5.209729868960319e-13 t=2s
+ twist a= 137 done; running max residual 5.209729868960319e-13 t=2s
+ a=139: |S^4-I|=1.60e-13, |(ST)^3-S^2|=1.69e-13, |S S^*-I|=2.26e-14
+ twist a= 139 done; running max residual 5.209729868960319e-13 t=2s
+max over 48 Galois twists and all generators of |rho_a(g)e0 - chi140(d_g) e0|_inf = 5.209729868960319e-13
+control word matrix: [[1, 0], [70, 1]]
+control (1,0;70,1): |component e0| = 4.312657533053476e-16  mass off e0 = 0.9999999999999997
+homomorphism check: d-entry multiplicative on 2000 random products in Gamma0(140): True

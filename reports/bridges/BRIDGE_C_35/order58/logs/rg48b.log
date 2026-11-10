@@ -1,0 +1,583 @@
+{
+ "A(2)": {
+  "n": 140,
+  "milgram": [
+   0.9999999999999991,
+   -9.711505529130966e-16
+  ]
+ },
+ "definite_det140": [
+  {
+   "gram": [
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     70
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     2,
+     -2
+    ],
+    [
+     -2,
+     72
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     72
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     4,
+     -2
+    ],
+    [
+     -2,
+     36
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     4,
+     2
+    ],
+    [
+     2,
+     36
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     6,
+     -2
+    ],
+    [
+     -2,
+     24
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     6,
+     2
+    ],
+    [
+     2,
+     24
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     6,
+     -4
+    ],
+    [
+     -4,
+     26
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     6,
+     4
+    ],
+    [
+     4,
+     26
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     8,
+     -2
+    ],
+    [
+     -2,
+     18
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     8,
+     2
+    ],
+    [
+     2,
+     18
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     8,
+     -6
+    ],
+    [
+     -6,
+     22
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     8,
+     6
+    ],
+    [
+     6,
+     22
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     10,
+     0
+    ],
+    [
+     0,
+     14
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     10,
+     -10
+    ],
+    [
+     -10,
+     24
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     10,
+     10
+    ],
+    [
+     10,
+     24
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     12,
+     -2
+    ],
+    [
+     -2,
+     12
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     12,
+     2
+    ],
+    [
+     2,
+     12
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     12,
+     -10
+    ],
+    [
+     -10,
+     20
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     12,
+     10
+    ],
+    [
+     10,
+     20
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     14,
+     -14
+    ],
+    [
+     -14,
+     24
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     14,
+     14
+    ],
+    [
+     14,
+     24
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     18,
+     -16
+    ],
+    [
+     -16,
+     22
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     18,
+     16
+    ],
+    [
+     16,
+     22
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     24,
+     -22
+    ],
+    [
+     -22,
+     26
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     24,
+     22
+    ],
+    [
+     22,
+     26
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     36,
+     -34
+    ],
+    [
+     -34,
+     36
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     36,
+     34
+    ],
+    [
+     34,
+     36
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     70,
+     -70
+    ],
+    [
+     -70,
+     72
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  },
+  {
+   "gram": [
+    [
+     70,
+     70
+    ],
+    [
+     70,
+     72
+    ]
+   ],
+   "n": 140,
+   "milgram": [
+    -0.0,
+    1.0
+   ],
+   "same_qvals": false,
+   "same_minus": false
+  }
+ ],
+ "any_match": false,
+ "any_match_minus": false
+}

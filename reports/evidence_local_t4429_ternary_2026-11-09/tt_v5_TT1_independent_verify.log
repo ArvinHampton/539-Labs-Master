@@ -1,0 +1,7 @@
+PARI stack size set to 1000000000 bytes, maximum size set to 1000001536
+dim S_{3/2}(196,chi28) = 9 ; dim ker T(9) = 4
+G1 : in span of S basis (exact, n<=600): 1 ; T(9)c == 0: 1 ; coords: [0, 4, 0, 4, 0, 0, 0, 4, 0]
+G2 : in span of S basis (exact, n<=600): 1 ; T(9)c == 0: 1 ; coords: [4, 8, 0, 8, 0, 0, 0, 0, 4]
+rank[C1,C2] = 2
+G1 first terms: [0, 0, 4, 0, 4, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, -8, 4, 0, -4, 0, 0, 0, 8, -8, 0, 0, 0, 0, 0, -8]
+G2 first terms: [0, 4, 8, 0, 8, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, -16, 0, 0, -8, 0, 0, 0, 16, -16, 0, 4, 0, 0, 0, -8]

@@ -1,0 +1,5 @@
+# SOFTSF PRESS — To Auditor (Write-only Soft SF CONFIRM)
+Time: 2026-10-27 13:25 CDT (America/Chicago)
+Subject: reports/bridges/PROFESSOR_PROOF/PP-FINDINGS-NL_INVENT_PENDING_PROOF_PURSUIT_2026-10-27.md
+sha256: 73b46132e437483bd52831e002863582af8f09d2d66503738350db950f6470d4
+Ask: Soft SF CONFIRM hash match (write-only). Content: Professor Proof independent proof-pursuit of NL invent-pending handoff 6e0b0553…; sources 2a06078c… / 462feb15… / a3d99fc0… / f23f9a83… / 6acaab6a… / d0210e06… all live MATCH; tally PROVED 4 / PARTIAL-PUIP 15 / NF-WHY 15; no invented premise discharged, all labels kept; τ and ρ_X NF (Owner-cite / modelling ABSENT); H1 NF; G8 Owner-cite ABSENT; permutation null and L11 NF (modelling ABSENT); χ² data ABSENT; aligned with PR1 eight NF cd77ad7f…, none reopened; tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 BEFORE MATCH / AFTER 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91; tip_touched NO; Kerr / Path4 / link (b) BLOCKED. REPORTS ONLY. No RECS.

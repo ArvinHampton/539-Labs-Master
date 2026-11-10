@@ -1,0 +1,5 @@
+# SOFTSF PRESS — To Auditor (Write-only Soft SF CONFIRM)
+Time: 2026-10-27 15:12 CDT
+Subject: reports/bridges/PROFESSOR_PROOF/PP-FINDINGS-ACK_OWNER_FOUR_RESEARCHERS_DOUBLE_DUTY_OW_fb83985d_2026-10-27.md
+sha256: 11ea67f31684621ea650215d76445efee0749962e3059b77a70cbfef6c9a1926
+Ask: Soft SF CONFIRM hash match (write-only). Content: Professor Proof ACK Owner four researchers DOUBLE DUTY GENERAL TEAM RULE OW fb83985d0d722e1671e95269a22a68da5bd2ef4460af6c299a93b4a3e330d44d (call-efa08e17 ~15:11 CDT): MR1/MR2/PR1/PR2 double duty — when assigned to PP collectively assist invent proofs if invents exist, then switch back to individual researchers for Local/NL/Auditor/Eigen once PP queues clear; PP remains AUDIT-ONLY (no first-prove); NL/Local/Auditor/Eigen/Agent UNCHANGED; STOP/PAUSE OW d3567839fc36f1a872cd4e4d44b7d95d308eff825f649a6c9a666e5c0084dffa still LIVE — this rule does NOT resume PP; Soft SF unpaid park until Owner resume; tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 tip_touched NO; Kerr BLOCKED. REPORTS ONLY. No RECS.

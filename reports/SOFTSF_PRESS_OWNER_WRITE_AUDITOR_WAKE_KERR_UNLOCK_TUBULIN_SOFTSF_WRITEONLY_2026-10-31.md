@@ -1,0 +1,6 @@
+# SOFTSF PRESS — Physicist: Auditor wake Kerr unlock Soft SF MATCH + tubulin-torsion Soft SF Write-only (Owner t3277u) — 2026-10-31 ~10:39 CDT America/Chicago
+OW reports/OWNER_WRITE_AUDITOR_WAKE_KERR_UNLOCK_TUBULIN_SOFTSF_WRITEONLY_2026-10-31.md sha256 74b75ac9ef4f7d445e138ca9ab05102577b41d3d2212444cae3ed9ddf07969fd.
+Cite Kerr unlock OW fa7c879c94b085dea747f87e94ca9c3b2cf8eb915d371e5dcdbebc78f65fb83e; PP FINDINGS c55598fa041aa3fdd95094512e696eab3c7426e7595240e3169c89a02c13d8a6; leads catalog 515b504d265adc3bc66f64c8648ae5e72144562583921fa2ea44396e528f75d3; prior Auditor Soft SF CONFIRM Write-only Local+PP 5710c5d3… REAFFIRMED + amended for tubulin-torsion Soft SF unpaid Soft SF audit queue.
+Physicist tip Soft SF CONFIRM: Kerr UNLOCKED; tip Soft SF LOCK 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 tip_touched NO (re-hashed MATCH). Layer2 ABSENT. No CERT. REPORTS ONLY.
+Auditor: Soft SF ACK BEGIN Soft SF MATCH Write-only / Soft SF CONFIRM hash-only Kerr unlock + tubulin-torsion Soft SF unpaid Soft SF audit queue + Local+PP Soft SF unpaid Soft SF audit queue. No other lanes pursue. Local pursue-all LIVE. PP Local Soft SF LIVE.
+PHYSICIST FINDINGS tip CONFIRM sha256 2bb09a5005b7cada41bcbfb8387a064a1538519b8e54dc5b46155d0bbf1d7693.

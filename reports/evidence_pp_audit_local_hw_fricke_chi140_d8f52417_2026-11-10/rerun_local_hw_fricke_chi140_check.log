@@ -1,0 +1,24 @@
+== H1: discriminant form / Weil rep of N2 vs N2+E8 vs N2+Leech-rank stand-in ==
+det E8 = 1  even: True  posdef: True
+|D(N2)| = 140  |D(N2+E8)| = 140
+#N2'/N2 = 140
+Milgram N2: sum e(q)/sqrt|D| = (1-0j)  => sig mod 8 = 0; sig(N2)=(1,1)->0, sig(N2+E8)=(9,1)->8≡0, N2+Leech (25,1)->24≡0
+N2 eigen signs: [-1, 1]
+== H2: V9 matrix identity, symbolic ==
+LHS-RHS = [[0, 0], [0, 0]]  det(gamma_u) = 1
+== H3: further quadratic twists of Xi: w19600*r^2 predicted = chi_D(-19600)*(+1) = chi_D(-1) ==
+Xi cond 19600  rootno -1  w=-eps = 1
+D=  -3 cond=176400 (=19600*D^2? True)  eps=+1  w=-eps=-1  predicted w=-1  match=True
+D= -11 cond=2371600 (=19600*D^2? True)  eps=+1  w=-eps=-1  predicted w=-1  match=True
+D=  13 cond=3312400 (=19600*D^2? True)  eps=-1  w=-eps=+1  predicted w=+1  match=True
+D= -19 cond=7075600 (=19600*D^2? True)  eps=+1  w=-eps=-1  predicted w=-1  match=True
+D= -23 cond=10368400 (=19600*D^2? True)  eps=+1  w=-eps=-1  predicted w=-1  match=True
+D=  29 cond=16483600 (=19600*D^2? True)  eps=-1  w=-eps=+1  predicted w=+1  match=True
+D=  33 cond=21344400 (=19600*D^2? True)  eps=-1  w=-eps=+1  predicted w=+1  match=True
+D= -31 cond=18835600 (=19600*D^2? True)  eps=+1  w=-eps=-1  predicted w=-1  match=True
+D=  37 cond=26832400 (=19600*D^2? True)  eps=-1  w=-eps=+1  predicted w=+1  match=True
+D= -43 cond=36240400 (=19600*D^2? True)  eps=+1  w=-eps=-1  predicted w=-1  match=True
+D=  41 cond=32947600 (=19600*D^2? True)  eps=-1  w=-eps=+1  predicted w=+1  match=True
+== H4: chi140 dictionary facts (independent re-check) ==
+chi140 = chi-20*chi-7 on 1..140: True  chi140(-1) = 1
+chi140(4880) = 0  chi140(9760) = 0   gcd(4880,140) = 20  (only listed to show the charge integers are not coprime to 140; no dictionary uses them)

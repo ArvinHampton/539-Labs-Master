@@ -1,0 +1,22 @@
+== integers 1<=m<=300 ==
+     k  tested  irred    A5   D5  undet reducible | pari A5/D5/other(irr) | frob!=pari | D5<=>resolvent root violations
+  -8/5     300    300   300    0      0         0 | 300/0/0 | 0 | 0
+    -4     300    300   300    0      0         0 | 300/0/0 | 0 | 0
+   4/5     300    300   300    0      0         0 | 300/0/0 | 0 | 0
+ total     900    900   900    0      0         0
+
+== fractions p/q, 2<=q<=10, 0<m<=10 ==
+     k  tested  irred    A5   D5  undet reducible | pari A5/D5/other(irr) | frob!=pari | D5<=>resolvent root violations
+  -8/5     310    310   308    2      0         0 | 308/2/0 | 0 | 0
+    -4     310    310   309    1      0         0 | 309/1/0 | 0 | 0
+   4/5     310    310   310    0      0         0 | 310/0/0 | 0 | 0
+ total     930    930   927    3      0         0
+
+D5 fibres (k, m, cleared A, B):
+  k=-8/5 m=5/9  x^5+(-80)x+(384)  pari=D5
+  k=-8/5 m=5/8  x^5+(20)x+(-32)  pari=D5
+  k=-4 m=7/2  x^5+(11)x+(-44)  pari=D5
+undetermined:
+reducible fibres:
+min/max number of Frobenius primes used:
+(542, 547)

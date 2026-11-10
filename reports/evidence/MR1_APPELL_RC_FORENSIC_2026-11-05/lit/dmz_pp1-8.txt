@@ -1,0 +1,359 @@
+                                        Preprint typeset in JHEP style - HYPER VERSION
+
+
+
+
+                                        Quantum Black Holes, Wall Crossing, and Mock
+                                        Modular Forms
+
+                                        Atish Dabholkar1,2 , Sameer Murthy3 , and Don Zagier4,5
+arXiv:1208.4074v2 [hep-th] 3 Apr 2014
+
+
+
+
+                                           1 Theory Division, CERN, PH-TH Case C01600, CH-1211, 23 Geneva, Switzerland
+
+                                           2 Sorbonne Universités, UPMC Univ Paris 06
+
+                                            UMR 7589, LPTHE, F-75005, Paris, France
+                                             CNRS, UMR 7589, LPTHE, F-75005, Paris, France
+                                           3 NIKHEF theory group, Science Park 105, 1098 XG Amsterdam, The Netherlands
+
+                                           4 Max-Planck-Institut für Mathematik,Vivatsgasse 7, 53111 Bonn, Germany
+
+                                           5 Collège de France, 3 Rue d’Ulm, 75005 Paris, France
+
+
+                                        Emails: atish@lpthe.jussieu.fr, murthy.sameer@gmail.com, don.zagier@mpim-bonn.mpg.de
+
+
+                                        Abstract: We show that the meromorphic Jacobi form that counts the quarter-BPS states
+                                        in N = 4 string theories can be canonically decomposed as a sum of a mock Jacobi form and
+                                        an Appell-Lerch sum. The quantum degeneracies of single-centered black holes are Fourier
+                                        coefficients of this mock Jacobi form, while the Appell-Lerch sum captures the degeneracies
+                                        of multi-centered black holes which decay upon wall-crossing. The completion of the mock
+                                        Jacobi form restores the modular symmetries expected from AdS3 /CF T2 holography but has
+                                        a holomorphic anomaly reflecting the non-compactness of the microscopic CFT. For every
+                                        positive integral value m of the magnetic charge invariant of the black hole, our analysis leads
+                                        to a special mock Jacobi form of weight two and index m, which we characterize uniquely up to
+                                        a Jacobi cusp form. This family of special forms and another closely related family of weight-one
+                                        forms contain almost all the known mock modular forms including the mock theta functions of
+                                        Ramanujan, the generating function of Hurwitz-Kronecker class numbers, the mock modular
+                                        forms appearing in the Mathieu and Umbral moonshine, as well as an infinite number of new
+                                        examples.
+
+                                        Keywords: black holes, mock modular forms, superstrings, wall-crossing.
+Contents
+1. Introduction                                                 3
+   1.1 Introduction for mathematicians                          3
+   1.2 Introduction for physicists                              6
+   1.3 Organization of the paper                               12
+
+2. Review of Type-II superstring theory on K3 × T 2            12
+
+3. Modular forms in one variable                               17
+   3.1 Basic definitions and properties                        18
+   3.2 Quantum black holes and modular forms                   21
+
+4. Jacobi forms                                                23
+   4.1 Basic definitions                                       23
+   4.2 Theta expansion and Taylor expansion                    24
+   4.3 Example: Jacobi forms of index 1                        27
+   4.4 Hecke-like operators                                    29
+   4.5 Quantum black holes and Jacobi forms                    32
+
+5. Siegel modular forms                                        33
+   5.1 Definitions and examples of Siegel modular forms        33
+   5.2 Quantum black holes and Siegel modular forms            36
+
+6. Walls and contours                                          37
+
+7. Mock modular forms                                          40
+   7.1 Pure mock modular forms                                 40
+   7.2 Mock Jacobi forms                                       44
+   7.3 Mock modular forms: the general case                    48
+   7.4 Superconformal characters and mock modular forms        50
+
+8. From meromorphic Jacobi forms to mock modular forms         51
+   8.1 The Fourier coefficients of a meromorphic Jacobi form   52
+   8.2 The polar part of ϕ (case of simple poles)              53
+   8.3 Mock modularity of the Fourier coefficients             57
+   8.4 The case of double poles                                61
+   8.5 Examples                                                64
+
+
+
+                                         –1–
+9. Special mock Jacobi forms                                                                    67
+   9.1 The simplest meromorphic Jacobi forms                                                    67
+   9.2 Choosing the function ϕ for weight 2 and small index                                     69
+   9.3 Further data and formulation of main results for the weight 2 family                     75
+   9.4 Optimal choice of the function Φ2,m                                                      81
+   9.5 Observations on the weight one family, integrality, and positivity                       86
+   9.6 Higher weights                                                                           95
+
+10. Structure theorems for Jacobi and mock Jacobi forms                                         98
+    10.1 Relations among the polar coefficients of weak Jacobi forms                            98
+    10.2 Choosing optimal versions of weak elliptic forms                                      102
+    10.3 The residues of mock Jacobi forms                                                     107
+    10.4 Remaining proofs of theorems from §9                                                  109
+
+11. Quantum black holes and mock modular forms                                                115
+    11.1 Mock Jacobi forms, immortal black holes, and AdS2 holography                         115
+    11.2 Meromorphy, mock modularity, and noncompactness                                      120
+    11.3 The M-Theory limit and AdS3 holography                                               122
+    11.4 Open problems and comments                                                           126
+
+A. Appendix: Tables of special mock Jacobi forms                                              130
+   A.1 Table of QM (weight 2 case)                                                            130
+   A.2 Table of Φ01,m of optimal growth                                                       134
+   A.3 Table of QM (weight 1 case)                                                            139
+
+B. Bibliography                                                                               144
+
+
+
+
+    “My dream is that I will live to see the day when our young physicists, struggling to bring
+the predictions of superstring theory into correspondence with the facts of nature, will be led to
+enlarge their analytic machinery to include not only theta-functions but mock theta-functions . . .
+But before this can happen, the purely mathematical exploration of the mock-modular forms and
+their mock-symmetries must be carried a great deal further.”
+                                     Freeman Dyson (1987 Ramanujan Centenary Conference)
+
+
+
+                                              –2–
+1. Introduction
+
+The quantum degeneracies associated with a black hole horizon are of central importance in
+quantum gravity. The counting function for these degeneracies for a large class of black holes
+in string theory is expected to be modular from the perspective of holography. However, in
+situations with wall-crossing, there is an apparent loss of modularity and it is far from clear if
+and how such a counting function can be modular. In the context of quarter-BPS black holes
+in N = 4 supersymmetric theories, we develop the required analytic machinery that provides
+a complete answer to this question which leads naturally to the mathematics of mock modular
+forms. We present a number of new mathematical results motivated by but independent of
+these physical considerations.
+     Since this paper is of possible interest to both theoretical physicists (especially string theo-
+rists) and theoretical mathematicians (especially number theorists), we give two introductions
+in their respective dialects.
+
+1.1 Introduction for mathematicians
+
+In the quantum theory of black holes in the context of string theory, the physical problem of
+counting the dimensions of certain eigenspaces (“the number of quarter-BPS dyonic states of a
+given charge”) has led to the study of Fourier coefficients of certain meromorphic Siegel modular
+forms and to the question of the modular nature of the corresponding generating functions.
+Using and refining results of S. Zwegers [130], we show that these generating functions belong
+to the recently discovered class of functions called mock modular forms.
+     Since this notion is still not widely known, it will be reviewed in some detail (in §7.1). Very
+roughly, a mock modular form of weight k (more precisely, “pure” mock modular forms; we
+will also introduce a somewhat more general notion of “mixed” mock modular forms in §7.3)
+is a holomorphic function f in the upper half plane to which is associated a holomorphic
+modular form g of weight 2 − k, called the “shadow” of f , such that the sum of f and a
+suitable non-holomorphic integral of g transforms like a holomorphic modular form of weight k.
+Functions of this type occur in several contexts in mathematics and mathematical physics: as
+certain q-hypergeometric series (like Ramanujan’s original mock theta functions), as generating
+functions of class numbers of imaginary quadratic fields [126], or as characters of extended
+superconformal algebras [99], with special cases of the last class being conjecturally related to
+the Mathieu group M24 [52]. They also arise, as was shown by Zwegers in his thesis [130], as
+the Fourier coefficients of meromorphic Jacobi forms. It is this last occurrence which is at the
+origin of the connection to black hole physics, because the Fourier coefficients of meromorphic
+Jacobi forms have the same wall-crossing behavior as that exhibited by the degeneracies of BPS
+states.
+
+
+
+                                               –3–
+    The specific meromorphic Jacobi forms that are of interest for the black hole counting
+problem are the Fourier-Jacobi coefficients ψm (τ, z) of the meromorphic Siegel modular form
+                            ∞                                   
+                  1         X
+                                            m
+                                                            τ z         2πiσ
+                                                                              
+                        =       ψm (τ, z) p ,         Ω=           , p=e        ,         (1.1)
+                Φ10 (Ω)    m=−1
+                                                             zσ
+
+the reciprocal of the Igusa cusp form of weight 10, which arises as the partition function of
+quarter-BPS dyons in the type II compactification on the product of a K3 surface and an
+elliptic curve [51, 109, 42]. These coefficients, after multiplication by the discriminant function
+∆(τ ), are meromorphic Jacobi forms of weight 2 with a double pole at z = 0 and no others (up
+to translation by the period lattice).
+     The new mathematical results of the paper are contained in Sections 8, 9 and 10. In §8,
+extending the results of [130], we show that any meromorphic Jacobi form ϕ(τ, z) having
+poles only at torsion points z = ατ + β (α, β ∈ Q) has a canonical decomposition into two
+pieces ϕF (τ, z) and ϕP (τ, z), called its “finite” part and “polar” part, respectively, of which the
+first is a finite linear combination of classical theta series with mock modular forms as coeffi-
+cients, and the second is an elementary expression that is determined completely by the poles
+of ϕ. Again using the results of Zwegers, we give explicit formulas for the polar part ϕP for
+all ϕ having only simple or double poles. In the particular case of ψm , the polar part is given
+by the formula
+
+                  P            p24 (m + 1)
+                                                                 q = e2πiτ , y = e2πiz ,
+                                                                                      
+                 ψm (τ, z) =               A2,m (τ, z)                                         (1.2)
+                                  ∆(τ )
+where ∆(τ ) is the Ramanujan discriminant function, p24 (m + 1) the coefficient of q m in ∆(τ )−1 ,
+and A2,m (τ, z) the elementary function (Appell-Lerch sum)
+                                                  X q ms2 +s y 2ms+1
+                                 A2,m (τ, z) =                           .                     (1.3)
+                                                  s∈Z
+                                                          (1 − q s y)2
+
+Note that A2,m exhibits wall-crossing: for 0 < Im(z) < Im(τ ) it has the Fourier expansion
+                                                         r 2 −`2
+                                                X
+                             A2,m (τ, z) =            ` q 4m y r ,                        (1.4)
+                                                     r≥`>0
+                                                 r ≡` (mod 2m)
+
+
+but the Fourier expansions are different in other strips n < Im(z)/Im(τ ) < n + 1. This
+wall-crossing is at the heart of both the mathematical and the physical theories. On the
+                                                                 F
+mathematical side it explains the “mockness” of the finite part ψm of ψm . On the physical side
+it has an interpretation in terms of counting two-centered black holes, with the integer ` in
+(1.4) being the dimension of the SU (2) multiplet with angular momentum (` − 1)/2 contained
+in the electromagnetic field produced by the two centers.
+
+
+
+                                                 –4–
+    Starting in §9 we focus attention on two particular classes of functions {ϕ1,m } and {ϕ2,m },
+where ϕk,m is a meromorphic Jacobi form of weight k ∈ {1, 2} and index m ∈ N having singular
+part (2πiz)−k + O(1) as z → 0 and no other poles except the translates of this one by the
+period lattice. These functions in the case k = 2 are related to the Fourier coefficients ψm
+defined in (1.1) by
+                         p24 (m + 1)
+           ψm (τ, z) =               ϕ2,m (τ, z) + (weakly holomorphic Jacobi form).          (1.5)
+                            ∆(τ )
+The polar part of ϕ2,m is the function A2,m defined above, and that of ϕ1,m an Appell-Lerch
+sum A1,m with a similar definition (eq. (9.6)), but the functions themselves are not unique,
+since we can add to them any (weak) Jacobi forms of weight k and index m without changing
+the defining property. This will change the mock Jacobi form Φk,m = ϕFk,m in the corresponding
+way. Much of our analysis concerns finding “optimal” choices, meaning choices for which the
+functions Φk,m have poles of as small an order as possible at infinity and consequently Fourier
+coefficients whose asymptotic growth is as small as possible. Our main results concern the
+case k = 2, and are as follows:
+
+  1. If m is a prime power, then the functions Φ2,m can be chosen to be strongly holomor-
+     phic (i.e., with Fourier expansions containing only monomials q n y r with 4nm − r2 ≥ 0).
+     Their Fourier coefficients then have polynomial growth and are given by explicit linear
+     combinations of class numbers of imaginary quadratic fields.
+  2. More generally, for arbitrary m, the function Φ2,m can be chosen to be the sum of the im-
+     ages under appropriate “Hecke-like operators” of special mock Jacobi forms QM , where M
+     ranges over all divisors of m having an even number of distinct prime factors. These sum-
+     mands are the eigencomponents of Φ2,m with respect to the Atkin-Lehner-like operators
+     Wm1 (m1 |m, (m1 , m/m1 ) = 1) acting on the space of mock Jacobi forms of index m.
+  3. The mock Jacobi form Q1 is the generating function of class numbers of imaginary
+     quadratic fields, and is strongly holomorphic. The other special mock Jacobi forms QM
+     (M = 6, 10, 14, . . . ) can be chosen to have “optimal growth” (meaning that their Fourier
+     expansions contain√
+                           only monomials q n y r with 4nm − r2 ≥ −1). Their Fourier coefficients
+     then grow like eπ ∆/m as ∆ := 4nm − r2 tends to infinity.
+                                                                                  P 0
+  4. One can also choose Φ2,m (τ, z) for arbitrary m ≥ 1 to be of the form          Φ2,m/d2 (τ, dz),
+                                                       2              0
+     where d ranges over positive integers with d |m and each Φ2,m/d2 has optimal growth.
+  5. There are explicit formulas for the polar coefficients (those with ∆ < 0) of Φ02,m and QM .
+     In particular, the coefficient of q n y r in QM vanishes if 4nM −r2 = 0 and equals ±ϕ(M )/12
+     if 4nM − r2 = −1, where ϕ(M ) = p|M (p − 1) is the Euler ϕ-function of M .
+                                              Q
+
+The proofs of these properties are contained in §10, which gives a detailed description (based on
+difficult results on Jacobi forms proved in [114, 115]) of the way that the space of holomorphic
+
+
+
+                                              –5–
+Jacobi forms is contained in the spaces of weak or of weakly holomorphic Jacobi forms. This
+analysis contains several surprises, such as the result (Theorem 9.4) that for all m ≥ 1 the
+space of holomorphic Jacobi forms of index m has codimension exactly 1 in the space of Jacobi
+forms of index m with optimal growth.
+     For ϕ1,m the description is much less complete. There is still a result like 2., with M now
+ranging over the divisors of m with an odd number of distinct prime factors, but it is no longer
+possible in general to choose the QM to have optimal growth. The few cases where this is
+possible turn out to be related to mock theta functions that have played a prominent role in
+the past. Thus Q30 and Q42 are essentially equal to the mock theta functions of “order 5”
+and “order 7” in Ramanujan’s original letter to Hardy, and Q2 and several of the other QM
+are related to the “Mathieu moonshine” and “Umbral moonshine” story [52, 25]. The mock
+Jacobi forms QM for the k = 2 case are also related to special mock theta functions, now of
+weight 3/2, e.g. Q6 is the mock theta function with shadow η(τ ) given in [129].
+     The applications of the results (for the k = 2 case, via the fact that ψm is the sum of
+p24 (m + 1)ϕ2,m /∆ and a weakly holomorphic Jacobi form of weight −10 and index m) to the
+original physics problem are explained in §11 and in the following “second introduction.”
+
+1.2 Introduction for physicists
+The microscopic quantum description of supersymmetric black holes in string theory usually
+starts with a brane configuration of given charges and mass at weak coupling, which is localized
+at a single point in the noncompact spacetime. One then computes an appropriate indexed
+partition function in the world-volume theory of the branes, which from the perspective of enu-
+merative geometry computes topological invariants such as the Donaldson-Thomas invariants.
+At strong coupling, the brane configuration gravitates and the indexed partition function is ex-
+pected to count the microstates of the corresponding macroscopic gravitational configurations.
+Assuming that the gravitational configuration is a single-centered black hole then gives a way
+to obtain a statistical understanding of the entropy of the black hole in terms of its microstates,
+in accordance with the Boltzmann relation1 .
+    One problem that one often encounters is that the macroscopic configurations are no longer
+localized at a point and include not only a single-centered black hole of interest but also several
+multi-centered ones [46, 47, 11, 48]. Moreover, the indexed degeneracy of the multi-centered
+configurations typically jumps upon crossing walls of marginal stability in the moduli space
+where the multi-centered configuration breaks up into its single-centered constituents. These
+jumps are referred to as the ‘wall-crossing phenomenon’.
+    If one is interested in the physics of the horizon or the microstates of a single black hole, the
+multi-centered configurations and the associated wall-crossings are thus something of a nuisance.
+  1
+      Under certain conditions the index equals the absolute number [106, 107, 37].
+
+
+
+
+                                                     –6–
+It is desirable to have a mathematical characterization that isolates the single-centered black
+holes directly at the microscopic level. One distinguishing feature of single-centered black holes
+is that they are ‘immortal ’ in that they exist as stable quantum states for all values of the
+moduli and hence their degeneracy does not exhibit the wall-crossing phenomenon. We will use
+this property later to define the counting function for the immortal black holes.
+     The wall-crossing phenomenon raises important conceptual questions regarding the proper
+holographic formulation in this context. In many cases, the black hole can be viewed as an
+excitation of a black string. The near horizon geometry of a black string is AdS3 which is
+expected to be holographically dual to a two-dimensional conformal field theory CF T2 . The
+conformal boundary of Euclidean AdS3 is a 2-torus with a complex structure parameter τ ,
+and the physical partition function of AdS3 and of the boundary CF T2 is a function of τ . The
+SL(2, Z) transformations of τ can be identified geometrically with global diffeomorphisms of the
+boundary of AdS3 space. The partition function is expected to have good modular properties
+under this geometric symmetry. This symmetry is crucial for the Rademacher-type expansions
+of the black hole degeneracies for understanding the quantum entropy of these black holes via
+holography [106, 107, 35, 49, 44, 89, 117, 95, 90, 36]. Implementing the modular symmetries
+presents several subtleties in situations when there is wall-crossing.
+     The wall-crossing phenomenon has another important physical implication for the invari-
+ance of the spectrum under large gauge transformations of the antisymmetric tensor field.
+Large gauge transformations lead to the ‘spectral flow symmetry’ of the partition function of
+the black string [44]. Since these transformations act both on the charges and the moduli,
+degeneracies of states with a charge vector Γ at some point φ in the moduli space get mapped
+to the degeneracies of states with charge vector Γ0 at some other point φ0 in the moduli space.
+Typically, there are many walls separating the point φ0 and the original point φ. As a result,
+the degeneracies extracted from the black string at a given point φ in the moduli space do not
+exhibit the spectral-flow symmetry. On the other hand, the spectrum of immortal black holes
+is independent of asymptotic moduli and hence must exhibit the spectral-flow symmetry. This
+raises the question as to how to make the spectral-flow symmetry manifest for the degeneracies
+of immortal black holes in the generic situation when there is wall-crossing.
+     With these motivations, our objective will be to isolate the partition functions of the black
+string associated with immortal black holes and investigate their transformation properties
+under the boundary modular group and large gauge transformations. More precisely, we would
+like to investigate the following four questions.
+
+  1. Can one define a microscopic counting function that cleanly isolates the microstates of
+     immortal black holes from those of the multi-centered black configurations?
+  2. What are the modular properties of the counting function of immortal black holes when
+     the asymptotic spectrum exhibits the wall-crossing phenomenon?
+
+
+
+                                              –7–
+

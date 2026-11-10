@@ -1,0 +1,12 @@
+# SOFT SF PRESS — MR1 Fill-first / Deepen / On-mesh gaps — 2026-10-26 (amended)
+FINDINGS:
+dac489f2fedf0cbf109fbd22a74593740dce13ad406983061c0fbb136e2f87b9  FINDINGS_MR1_FILLFIRST_DEEPEN_ONMESH_GAPS_2026-10-26.md
+Authority:
+203676c9e6118a5e19e843182940b1f94db873c7579510222f92c298eeb86187  OWNER_WRITE_SCOPE_EIGHT_AGENTS_ONLY_2026-10-26.md
+1cd5610e55b3850c62ab1ad9b084fc6a6f2753ef7d6e39dd5789189cfeef9a0b  ASSIGN_MR1_THREE_TRACK_REFRESH_LIFT8_2026-10-26.md
+3c95fd9c471377a052d4bb35430d032094660bbd79b5ac43e22372876dde4634  OWNER_WRITE_LIFT_HOLDS_EIGHT_AGENTS_FRESH_ASSIGN_2026-10-26.md
+d69c29cfeb77b0ece212435b7e7b5063921b9d78fe2290a43b17d6acfeea5700  ASSIGN_MR1_FILLFIRST_N36_N6_DEEPEN_ONMESH_GAPS_PURSUE_2026-10-26.md (CONTINUE base)
+7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91  residual-c-field-WRITTEN_PREMISES_DRAFT.md (tip_pre = tip_end; tip_touched NO)
+STATUS: PARTIAL. T1 PARTIAL/ABSENT (V₄₂ exact; q^18 dim MATCH; char-0 basis + ζ₄₉ CRT ABSENT). T2 PARTIAL (mod-p MATCH 7/1/6; exact OPEN). T3 ABSENT (6 OFF-MESH no Written premise; ν=0 VACUOUS stands).
+Soft-SF Write-only · Card6 STANDS · Kerr BLOCKED stands · no Cat A invented · no CSV edits · no Eigen contact.
+Rec A: Owner Write mesh extension N>18 (or W₇/slash-uniqueness premise); hold 7 MODP cells for exact transcription on ζ₄₉ CRT CERT.

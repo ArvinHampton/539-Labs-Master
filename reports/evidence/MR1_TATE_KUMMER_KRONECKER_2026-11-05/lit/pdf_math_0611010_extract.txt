@@ -1,0 +1,285 @@
+Gelfand-Graev characters of the finite unitary groups
+
+arXiv:math/0611010v1 [math.RT] 1 Nov 2006
+
+Nathaniel Thiem∗ and C. Ryan Vinroot†
+
+Abstract
+Gelfand-Graev characters and their degenerate counterparts have an important role in
+the representation theory of finite groups of Lie type. Using a characteristic map to translate
+the character theory of the finite unitary groups into the language of symmetric functions, we
+study degenerate Gelfand-Graev characters of the finite unitary group from a combinatorial
+point of view. In particular, we give the values of Gelfand-Graev characters at arbitrary
+elements, recover the decomposition multiplicities of degenerate Gelfand-Graev characters
+in terms of tableau combinatorics, and conclude with some multiplicity consequences.
+
+1
+
+Introduction
+
+Gelfand-Graev modules have played an important role in the representation theory of finite
+groups of Lie type [4, 7, 20]. In particular, if G is a finite group of Lie type, then GelfandGraev modules of G both contain cuspidal representations of G as submodules, and have a
+multiplicity free decomposition into irreducible G-modules. Thus, Gelfand-Graev modules can
+give constructions for cuspidal G-modules. This paper uses a combinatorial correspondence
+between characters and symmetric functions (as described in [21]) to examine the Gelfand-Graev
+character and its degenerate relatives for the finite unitary group.
+Let B < be a maximal unipotent subgroup of a finite group of Lie type G. Then the GelfandGraev character Γ of G is the character obtained by inducing a generic linear character from
+B < to G. The degenerate Gelfand-Graev characters of G are obtained by inducing arbitrary linear characters. In the case GL(n, Fq ), Zelevinsky [24] described the multiplicities of irreducible
+characters in degenerate Gelfand-Graev characters by counting multi-tableaux of specified shape
+and weight, and obtained the result that every irreducible appears with multiplicity one in some
+degenerate Gelfand-Graev character. It is known that this multiplicity one result is not true in
+a general finite group of Lie type, and in fact there are characters which do not appear in any
+degenerate Gelfand-Graev character in general. This follows, for example, by work of Kotlar
+[11] which gives a geometric description of the irreducible characters appear in some degenerate
+Gelfand-Graev character in general type. In the finite unitary case, we give a combinatorial description of which irreducible characters appear in some degenerate Gelfand-Graev character, as
+well as a combinatorial description of a large family of characters which appear with multiplicity
+one.
+Section 2 reviews the necessary combinatorics and results from [21]. Section 3 examines the
+Gelfand-Graev character, and uses a remarkable formula for the character values of the GelfandGraev character of GL(n, Fq ) (for an elementary proof see [9]) to obtain the corresponding
+formula for U(n, Fq2 ). The following is the main result of this section.
+∗
+†
+
+Stanford University: thiem@math.stanford.edu
+University of Arizona: vinroot@math.arizona.edu
+MSC 2000: 20C33 (05E05)
+Keywords: finite unitary group, degenerate Gelfand-Graev, multiplicity, domino tableaux, characteristic map
+
+1
+
+I. (Corollary 3.1) If Γ(n) is the Gelfand-Graev character of U(n, Fq2 ), and g ∈ U(n, Fq2 ), then
+
+⌊n/2⌋+(2ℓ ) ℓ
+(−1)
+(q − (−1)ℓ ) · · · (q − 1) if g is unipotent, block type (µ1 , µ2 , . . . , µℓ ),
+Γ(n) (g) =
+0
+otherwise.
+Section 4 computes the decomposition of degenerate Gelfand-Graev characters in a fashion
+analogous to [24], with the main result as follows.
+II. (Theorem 4.3) The degenerate Gelfand-Graev character Γ(k,ν) decomposes as
+X
+Γ(k,ν) =
+mλ χλ ,
+λ
+
+where λ is a multi-partition and mλ is a nonnegative integer obtained by counting “battery
+tableaux” of a given weight and shape.
+
+In the process of proving Theorem 4.3, we obtain some combinatorial Pieri-type formulas
+(Lemma 4.2) and decompositions of induced characters from GL(n, Fq2 ) to U(2n, Fq2 ) (Theorem 4.1 and Theorem 4.2).
+Section 5 concludes with a discussion of the multiplicity implications of Section 4. In particular, we improve a multiplicity one result by Ohmori [17].
+III. (Theorem 5.2) We give combinatorial conditions on multipartitions λ that guarantee that
+the irreducible character χλ appears with multiplicity one in some degenerate Gelfand-Graev
+character.
+Another question one might ask is how the generalized Gelfand-Graev representations of the
+finite unitary group decompose. Generalized Gelfand-Graev representations, which were defined
+by Kawanaka in [10], are obtained by inducing certain irreducible representations (not necessarily
+one dimensional) from a unipotent subgroup. Rainbolt studies the generalized Gelfand-Graev
+representations of U(3, Fq2 ) in [18], but in the general case they seem to be significantly more
+complicated than the degenerate Gelfand-Graev representations.
+Acknowledgements. We would like to thank G. Malle for suggesting the questions that led
+to the results in Section 5, S. Assaf for a helpful discussion regarding Section 5.1, and T. Lam
+helping us connect Lemma 4.2 to the literature.
+
+2
+
+Preliminaries
+
+2.1
+
+Partitions
+
+Let
+P=
+
+[
+
+Pn ,
+
+Pn = {partitions of n}.
+
+where
+
+n≥0
+
+For ν = (ν1 , ν2 , . . . , νl ) ∈ Pn , the length ℓ(ν) of ν is the number of parts l, and the size |ν| of ν
+is the sum of the parts n. Let ν ′ denote the conjugate of the partition ν. We also write
+ν = (1m1 (ν) 2m2 (ν) · · · ),
+
+where
+
+Define n(ν) to be
+n(ν) =
+
+X
+
+mi (ν) = |{j ∈ Z≥1 | νj = i}|.
+(i − 1)νi .
+
+i
+
+If µ, ν ∈ P, we define µ ∪ ν ∈ P to be the partition of size |µ| + |ν| whose set of parts is the union
+of the parts of µ and ν. For k ∈ Z≥1 , let kν = (kν1 , kν2 , . . .), and if every part of ν is divisible
+by k, then we let ν/k = (ν1 /k, ν2 /k, . . .). A partition ν is even if νi is even for 1 ≤ i ≤ ℓ(ν).
+2
+
+2.2
+
+The ring of symmetric functions
+
+Let X = {X1 , X2 , . . .} be an infinite set of variables and let
+Λ(X) = C[p1 (X), p2 (X), . . .],
+
+where
+
+pk (X) = X1k + X2k + · · · ,
+
+be the graded C-algebra of symmetric functions in the variables {X1 , X2 , . . .}. For ν = (ν1 , ν2 , . . . , νℓ ) ∈
+P, the power-sum symmetric function pν (X) is
+pν (X) = pν1 (X)pν2 (X) · · · pνℓ (X).
+The irreducible characters ω λ of Sn are indexed by λ ∈ Pn . Let ω λ (ν) be the value of ω λ on
+a permutation with cycle type ν.
+The Schur function sλ (X) is given by
+Y
+X
+ω λ (ν)zν−1 pν (X), where zν =
+imi mi !
+(2.1)
+sλ (X) =
+i≥1
+
+ν∈P|λ|
+
+is the order of the centralizer in Sn of the conjugacy class corresponding to ν = (1m1 2m2 · · · ) ∈ P.
+Fix t ∈ C× . For µ ∈ P, the Hall-Littlewood symmetric function Pµ (X; t) is given by
+X
+Kλµ (t)Pµ (X; t),
+(2.2)
+sλ (X) =
+µ∈P|λ|
+
+where Kλµ (t) is the Kostka-Foulkes polynomial (as in [16, III.6]). For ν, µ ∈ Pn , the classical
+Green function Qµν (t) is given by
+X
+Qµν (t−1 )tn(µ) Pµ (X; t).
+(2.3)
+pν (X) =
+µ∈P|ν|
+
+As a graded ring,
+Λ(X) = C-span{pν (X) | ν ∈ P}
+= C-span{sλ (X) | λ ∈ P}
+= C-span{Pµ (X; t) | µ ∈ P},
+with change of bases given in (2.1), (2.2), and (2.3).
+We will also use several products formulas in the ring of symmetric functions. The usual
+product on Schur functions
+X
+sν sµ =
+cλνµ sλ
+(2.4)
+λ∈P
+
+gives us the Littlewood-Richardson coefficients cλνµ . The plethysm of pν with pk is
+pν ◦ pk = pkν .
+Thus, we can consider the nonnegative integers cγλ given by
+s λ ◦ pk =
+
+X γ
+X ω λ (ν)
+cλ sγ .
+pkν =
+zν
+γ∈Pk|λ|
+
+ν∈P|λ|
+
+3
+
+(2.5)
+
+Chen, Garsia, and Remmel [2] give a combinatorial algorithm for computing the coefficients cγλ .
+We will use the case k = 2 in Section 4.4.
+Remark. The unipotent characters χλ̃ of GL(n, Fq2 ) are indexed by partitions λ̃ of n and the
+unipotent characters χγ of U(2n, Fq2 ) are indexed by partitions γ of 2n. It will follow from
+Theorem 4.2 that
+X γ
+U(2n,F 2 )
+RGL(n,Fq 2 ) (χλ̃ ) =
+cλ̃ χγ ,
+q
+
+|γ|=2|λ̃|
+
+G is Harish-Chandra induction.
+where RH
+
+2.3
+
+The finite unitary groups
+
+Let Ḡn = GL(n, F̄q ) be the general linear group with entries in the algebraic closure of the finite
+field Fq with q elements.
+For the Frobenius automorphisms F̃ , F, F ′ : Ḡn → Ḡn given by
+F̃ ((aij )) = (aqij ),
+F ((aij )) = (aqji )−1 ,
+
+(2.6)
+
+F ((aij )) = (aqn−j,n−i )−1 ,
+′
+
+where (aij ) ∈ Ḡn ,
+
+let
+Gn = ḠF̃n = {a ∈ Ḡn | F̃ (a) = a},
+Un = ḠFn = {a ∈ Ḡn | F (a) = a},
+
+(2.7)
+
+F′
+
+Un′ = Ḡn = {a ∈ Ḡn | F ′ (a) = a}.
+Then Gn = GL(n, Fq ) and Un′ ∼
+= Un are isomorphic to the finite unitary group U(n, Fq2 ). In
+fact, if follows from the Lang-Steinberg theorem that Un′ and Un are conjugate subgroups of Ḡn .
+For k ∈ Z≥0 , let
+(
+F×
+if k is even,
+Fk ∼
+F̃ k ∼ ×
+qk
+and
+T(k) = Ḡ1 =
+T̃(k) = Ḡ1 = Fqk
+k +1
+q
+{t ∈ Fq | t
+= 1} if k is odd.
+For every partition η = (η1 , η2 , . . . , ηℓ ) ∈ Pn let
+Tη = T(η1 ) × T(η2 ) × · · · × T(ηℓ )
+T̃η = T̃(η1 ) × T̃(η2 ) × · · · × T̃(ηℓ ) .
+Every maximal torus of Gn is isomorphic to T̃η for some η ∈ Pn , and every maximal torus of
+Un is isomorphic to Tη for some η ∈ Pn .
+
+2.4
+
+Multipartitions
+
+×
+Let F : Ḡn → Ḡn be as in (2.6), and let F̄∗q = {ϕ : F̄×
+q → C } be the group of multiplicative
+×
+complex-valued characters of F̄q . Consider
+
+Φ = {F -orbits of F̄×
+q }
+
+and
+
+4
+
+Θ = {F -orbits of F̄∗q }.
+
+

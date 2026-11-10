@@ -1,0 +1,11 @@
+2026-11-05 ~13:55 CST live checks
+200 LMFDB NumberField 2.2.140.1; API class_number=2 regulator=2.47788873029 (=ln(6+sqrt35))
+200 LMFDB Dirichlet character 140/139 L-function page
+200 LMFDB EC search conductor=78400 j=1728; API ainvs [0,0,0,-35,0] -> 78400.ga1 conductor 78400
+500 doi.org/10.1112/plms/s3-13.1.524 (Burgess) ; Crossref OK title "On Character Sums and L-Series. II" PLMS
+403 doi.org/10.1090/S0894-0347-02-00410-1 (Kim, appx Kim-Sarnak) ; Crossref OK "Functoriality for the exterior square of GL4 and symmetric fourth of GL2" JAMS
+200 doi.org/10.1007/BF02684373 Deligne Weil I (Crossref OK); Crossref 10.1007/BF02684780 "La conjecture de Weil : II" OK
+202 doi.org/10.1515/crll.1974.268-269.110 ambiguous, unverified -> EXCLUDED
+FAIL arXiv math/0010110 resolves to unrelated paper (Lawrence-Doniach) -> DISCARDED
+NOT LIVE-CHECKED Tate thesis (1950) / Igusa "Intro to Theory of Local Zeta Functions" (AMS/IP 2000): no DOI resolved -> excluded from PRESENT
+python: 2*ln(6+sqrt35)/sqrt35 = 0.8376792812588586

@@ -1,0 +1,282 @@
+%=====================================================================
+\section{Uniqueness and normalisation of the vector completion}\label{sec:uniq}
+%=====================================================================
+Throughout this section $s=7$, $\rho=\rho_{\rm lab}$ is the $140$-label representation ($\rho_{\rm lab}\cong\rho_{N_2}$, Theorem~\ref{thm:weil8}), $P=S_{\rm lab}^2$,
+and the laws are those of Theorem~\ref{thm:F}: $u(-1/w)=S_{\rm lab}u(w)$ and $u(w+1)=Tu(w)$. Floating-point checks are Category~B and are labelled where they occur.
+
+\subsection{The adapted basis and the eight sectors}\label{sec:basis}
+Let $g=(14,6)/70$ (the generator of $L'/\Z^2$ used in Theorem~\ref{thm:tensor7}), $a_2=(\tfrac12,0)$, and put
+$u'_{x,\varepsilon,\delta}:=u_{xg+\varepsilon a_2,\,-\delta a_2}$ for $x\in\Z/35$ and $\varepsilon,\delta\in\{0,1\}$, with the phases of the labels in the convention of Remark~\ref{rem:conv}.
+
+\begin{proposition}[Adapted-basis splitting at $s=7$]\label{prop:basis9}
+In the basis $u'_{x,\varepsilon,\delta}$ the $140$ labels are hit bijectively, and
+\[
+S'=\Bigl[\tfrac{1}{\sqrt{35}}\,\e\bigl(13xy/35\bigr)\Bigr]_{x,y}\otimes S_2,\qquad T'=\mathrm{diag}_x\,\e\bigl(24x^2/35\bigr)\otimes T_2,
+\]
+with the same theta-characteristic factors $S_2,T_2$ as in Theorem~\ref{thm:tensorodd}. Since $\tfrac1{35}=\tfrac35-\tfrac47$, under $x\leftrightarrow(x\bmod5,x\bmod7)$ one has
+$\e(13xy/35)=\e(4x_5y_5/5)\,\e(4x_7y_7/7)$ and $\e(24x^2/35)=\e(2x_5^2/5)\,\e(2x_7^2/7)$. This is exactly the factorisation $F_5\otimes F_7$, $T_5\otimes T_7$ of Theorem~\ref{thm:tensor7}(i).
+\end{proposition}
+\catA{Exact check in rational phases: $0$ failures over all $4900$ $S$-entries and all $140$ $T$-entries. The CRT identities are elementary. With the generator
+$A_7^{-1}e_2$ of Theorem~\ref{thm:tensorodd} one obtains the factors $\e(-2xy/35)$, $\e(-x^2/35)$ instead (Remark~\ref{rem:gen}).}
+
+Write $W_5^\pm$, $W_7^\pm$ for the $(\pm1)$-eigenspaces of $x\mapsto-x$ on the $\Z/5$ and $\Z/7$ factors ($\dim W_5^+=3$, $\dim W_5^-=2$, $\dim W_7^+=4$, $\dim W_7^-=3$), and $A_3$, $B_1$ for the $3$- and $1$-dimensional summands of the $4$-dimensional theta-characteristic factor $\rho_2$ (Theorem~\ref{thm:tensor7}(iii)), as in Proposition~\ref{prop:matched}. We abbreviate $X^\pm=W_5^\pm\otimes W_7^\pm$; thus $A_3X^+=A_3\otimes W_5^+\otimes W_7^+=V_{\rm Eis}$ and $B_1X^-=B_1\otimes W_5^-\otimes W_7^-=V_{\rm cusp}$.
+
+\begin{proposition}[Sectors, $T$-fixed vectors and the support of $u$]\label{prop:sectors9}
+\begin{enumerate}[label=(\roman*)]
+\item $\C^{140}$ splits into eight $\rho$-stable sectors $W_5^\pm\otimes W_7^\pm\otimes\{A_3,B_1\}$:
+\begin{center}\small
+\begin{tabular}{lcccc}\toprule
+sector & dim & $P$ & $\dim\mathrm{Fix}(T)$ & meets $u$\\\midrule
+$A_3X^+$ & $36$ & $+1$ & $1$ & yes (all $507$ frequencies)\\
+$B_1X^+$ & $12$ & $+1$ & $0$ & no\\
+$A_3X^-$ & $18$ & $+1$ & $0$ & no\\
+$B_1X^-$ & $6$ & $+1$ & $0$ & yes ($131$ of $507$ frequencies)\\
+$W_5^+W_7^-A_3$ & $27$ & $-1$ & $0$ & no\\
+$W_5^+W_7^-B_1$ & $9$ & $-1$ & $0$ & no\\
+$W_5^-W_7^+A_3$ & $24$ & $-1$ & $0$ & no\\
+$W_5^-W_7^+B_1$ & $8$ & $-1$ & $0$ & no\\\bottomrule
+\end{tabular}
+\end{center}
+The dimensions sum to $140$, and the $P=+1$ sectors give $\dim W_P=72$.
+\item $\mathrm{Fix}(T)=\C\,v_0$ with $v_0=e_{x=0}\otimes(e_{00}+e_{01})\in A_3X^+$ (and $Pv_0=v_0$).
+\item $\rho$ has no nonzero $\mathrm{SL}_2(\Z)$-invariant vector: $S'v_0=35^{-1/2}\sum_ye_y\otimes(e_{00}+e_{10})\notin\C v_0$.
+\item Projected to the six sectors other than $A_3X^+$ and $B_1X^-$, the positive-frequency coefficients of $u$ vanish at all $507$ positive frequencies $n\le40$. The $A_3X^+$ component is nonzero at all $507$, first at $n=\tfrac1{14}$. The $B_1X^-$ component is nonzero at $131$ of them, first at $n=\tfrac{19}{140}$.
+\end{enumerate}
+\end{proposition}
+\catA{Exact. (i)--(iii): exact linear algebra in the adapted basis. (iv): exact in $\Z[\zeta_{20}]$ ($1169$ lattice points). That the four $P$-odd sectors carry
+nothing follows from $Pu=u$. That $u$ lies in $V=A_3X^+\oplus B_1X^-$ for \emph{all} frequencies is Proposition~\ref{prop:matched}; (iv) is an independent exact check
+up to frequency $40$.}
+
+\subsection{Three levels of uniqueness}\label{sec:levels}
+We separate three levels:
+\begin{itemize}
+\item[($\kappa$)] functions on $\Q$ (radial profiles and constant terms);
+\item[($u$)] $\lambda=\tfrac14$ Maass vectors and their positive-frequency $q$-series;
+\item[($\Phi$)] real-analytic weight-$1$ period functions on $\R\setminus\{0\}$, i.e.\ the Lewis--Zagier class \cite{LZ}.
+\end{itemize}
+In this subsection $\rho$ is the representation in which Corollary~\ref{cor:profile} and Theorem~\ref{thm:F} are written.
+
+\begin{proposition}[The $\kappa$-level gauge]\label{prop:U1}
+Let $\mathcal G$ be the space of functions $g:\Q\to\C^{140}$ with $g(\gamma x)=|cx+d|\,\rho(\gamma)g(x)$ for all $\gamma\in\mathrm{SL}_2(\Z)$ and all $x\in\Q$ with $\gamma x\in\Q$. Then $\dim\mathcal G=\dim\mathrm{Fix}(T)=1$. A basis is $g_0(h/m):=m^2\,\mathbf G(h/m)$ ($\gcd(h,m)=1$, $m>0$), where $\mathbf G$ is the profile vector of Corollary~\ref{cor:profile}. Moreover $\|g_0(h/m)\|=m\,\|g_0(0)\|=m\sqrt{70}$.
+\end{proposition}
+\begin{proof}
+\emph{Dimension.} $\mathrm{SL}_2(\Z)$ acts transitively on $\mathbb P^1(\Q)$. So $g$ is determined by $g(0)$, and $g(0)$ must be fixed by the stabiliser of $0$, which is $\pm S\langle T\rangle S^{-1}$. On this stabiliser $|c\cdot0+d|=1$. Hence $g(0)\in\rho(S)\bigl(\mathrm{Fix}(T)\cap\mathrm{Fix}(P)\bigr)=\rho(S)\C v_0$ (Proposition~\ref{prop:sectors9}(ii)), so $\dim\mathcal G\le1$. Equality holds because $g_0\neq0$ lies in $\mathcal G$.
+\emph{Equivariance of $g_0$.} Corollary~\ref{cor:profile}(i) gives $\mathbf G(\gamma x)=|cx+d|^{-1}\rho(\gamma)\mathbf G(x)$. If $x=h/m$ in lowest terms, the denominator of $\gamma x$ is $m'=m|cx+d|$, and $m'^2=m^2|cx+d|^2$ turns weight $-1$ into weight $+1$.
+\emph{Norm.} Choose $\gamma$ with $\gamma(h/m)=0$; then $|c\,h/m+d|=1/m$. Corollary~\ref{cor:profile}(i) gives $\mathbf G(0)=m\,\rho(\gamma)\mathbf G(h/m)$, and unitarity gives $\|\mathbf G(h/m)\|=\|\mathbf G(0)\|/m$. Finally $\mathbf G(0)=\sum_\alpha e_{(\alpha,0)}$ has $\|\mathbf G(0)\|^2=70$.
+\end{proof}
+\catA{Proved, given Theorem~\ref{thm:profile} and Corollary~\ref{cor:profile}. Consequence: the only ambiguity at level $\kappa$ is the radial gauge $\C g_0$, which grows like $m$ along $h/m$. Two $\kappa$-level objects with the same law whose difference is $o(m)$ along rationals coincide, and the canonical radial normalisation $q=\e(x)e^{-t}$ removes the gauge. The constant coboundary $\Phi_{v_0}(x)=v_0-|x|S_{\rm lab}v_0$ (the analogue of Lewis--Zagier's $1-z^{-2s}$) solves the homogeneous $\Phi$-level law. It is excluded once the $q^0$ term is prescribed.}
+\catB{The $S$- and $T$-laws for $g_0$ hold to $\le5\cdot10^{-9}$ at $11$ rationals; $\|g_0(h/m)\|/(m\|g_0(0)\|)=1$ to $10^{-11}$; and $ST^{-1}S^{-1}g_0(0)=g_0(0)$ to
+$4\cdot10^{-15}$.}
+
+\medskip\noindent Let $M(\rho)$ be the space of real-analytic $d:\Hb\to\C^{140}$ of moderate growth at the cusp with $\Delta d=\tfrac14d$, $d(-1/w)=S_{\rm lab}d(w)$ and $d(w+1)=Td(w)$; such $d$ satisfy $Pd=d$ automatically. Let $S(\rho)\subset M(\rho)$ be the subspace with zero constant term. Write $f_d^+$ for the positive-frequency part of $d$, $a_d$ for the coefficient in its constant term, $u_{\rm lift}=u$ for the lift of Theorem~\ref{thm:F}, and $c_d(z)=\int_0^{i\infty}[d,R_z^{1/2}]$ with the Green form of Lemma~\ref{lem:green}.
+
+\begin{theorem}[Uniqueness of the Maass completion]\label{thm:U2}
+\begin{enumerate}[label=(\alph*)]
+\item $M(\rho)=\C\,u_{\rm lift}\oplus S(\rho)$.
+\item The map $d\mapsto f_d^+$ is injective on $M(\rho)$.
+\end{enumerate}
+\end{theorem}
+\catA{Proved below. The proof uses Lemma~\ref{lem:green} (for every real frequency), Lemma~\ref{lem:branch} and the contour argument of \S\ref{sec:lzpf}.}
+\begin{lemma}[Estimates for Theorem~\ref{thm:U2}(b)]\label{lem:U2est}
+Let $d\in M(\rho)$. By Theorem~\ref{thm:U2}(a) its constant term is $\sqrt y\,a_dv_0$. Let $C_d=\sup\|d(w)-\sqrt{\mathrm{Im}\,w}\,a_dv_0\|$ over the standard fundamental domain, which is finite because the nonconstant modes decay. Use the notation of Lemmas~\ref{lem:green} and~\ref{lem:branch}: $R_z(w)=\mathrm{Im}\,w/((w-z)(\bar w-z))$ and $\varsigma(z)=\sgn\,\mathrm{Re}\,z$.
+\begin{enumerate}[label=(\roman*)]
+\item The Fourier coefficients of every component satisfy $|c_j(n)|\le K_0(2\pi)^{-1}\bigl(|a_d|\,|n|+C_d|n|^{1/2}\bigr)$ for $n\neq0$.
+\item Fix $z\in\Hb$ and $X>0$, and let $Y\ge2(|z|+X)$. On the horizontal segment $\{w=x'+iY:\ |x'-\mathrm{Re}\,z|\le X\}$, the coefficient of $dw$ and of $d\bar w$ in the form $[\sqrt{\mathrm{Im}\,w},R_z^{1/2}]$ are bounded in absolute value by $8/Y$. So the constant-term contribution of this segment is at most $16X|a_d|/Y$, which tends to $0$ as $Y\to\infty$.
+\item Near the cusp $0$, the pullback by $w\mapsto-1/w$ (Lemma~\ref{lem:branch}: $R_{-1/z}(-1/w)^{1/2}=\varsigma(z)\,z\,R_z(w)^{1/2}$) carries the constant-term contribution to that of (ii), with $z$ replaced by $-1/z$ and $v_0$ by $S_{\rm lab}v_0$. It therefore also tends to $0$.
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+(i) We have $c_j(n)\sqrt yK_0(2\pi|n|y)=\int_0^1d_j(x+iy)\e(-nx)\,dx$; take $y=1/|n|\le1$. For $\mathrm{Im}\,w=y\le1$ the reduced point $w^*$ satisfies $\mathrm{Im}\,w^*\le1/y$. Since $\rho$ is unitary, $\|d(w)\|=\|d(w^*)\|\le|a_d|\,y^{-1/2}+C_d$, and dividing by $|n|^{-1/2}K_0(2\pi)$ gives the bound.
+(ii) On the segment, $Y/2\le|w-z|\le3Y/2$, so $|R_z|\le4/Y$. With $u=\sqrt{\mathrm{Im}\,w}$ we have $|u_w|=\tfrac14Y^{-1/2}$. Also $\partial_{\bar w}R_z=\tfrac i2((w-z)(\bar w-z))^{-1}-\mathrm{Im}\,w\,(w-z)^{-1}(\bar w-z)^{-2}$, so $|\partial_{\bar w}R_z|\le10/Y^2$, and $|R_z|^{-1/2}\le\tfrac32Y^{1/2}$. Hence $|u_wR_z^{1/2}|\le\tfrac1{2Y}$ and $|u\,\partial_{\bar w}R_z^{1/2}|\le\tfrac12\cdot\tfrac32\cdot10\,Y^{-1}<8/Y$. The segment has length $2X$.
+(iii) We have $-1/w+1/z=(w-z)/(wz)$ and $\mathrm{Im}(-1/w)=\mathrm{Im}\,w/|w|^2$. The $S$-law moves the constant term to $\sqrt{\mathrm{Im}(-1/w)}\,a_dS_{\rm lab}v_0$, so (ii) applies at the point $-1/z$.
+\end{proof}
+\begin{proof}[Proof (outline; the estimates are Lemma~\ref{lem:U2est})]
+(a) Since $\mathrm{Fix}(T)=\C v_0$, the constant term of $d\in M(\rho)$ is $\sqrt y\,(a+b\log y)\,v_0$. Green's theorem on the truncated fundamental domain (Maass--Selberg; the Hermitian pairing is legitimate because $\rho$ is unitary) gives $a_1\bar b_2-b_1\bar a_2=0$ for any $d_1,d_2\in M(\rho)$. The lift has constant term $\sqrt y\,(\log\varepsilon)\,v_0$ and no $\log y$ term (\S\ref{sec:lz} and the lift formula). Pairing $d$ with $u_{\rm lift}$ therefore forces $b_d=0$. So $d-(a_d/\log\varepsilon)u_{\rm lift}$ has zero constant term; its nonconstant modes decay exponentially.
+(b) \emph{Holomorphy.} $c_d(z)=\int_0^{i\infty}[d,R_z^{1/2}]$ is taken along the fixed path $i\R_{>0}$, where $R_z(it)=t/(t^2+z^2)$. It is therefore holomorphic wherever $t^2+z^2\neq0$ for all $t>0$, i.e.\ on $\C\setminus i\R$. This needs no contour argument.
+\emph{Fourier interchange.} By Lemma~\ref{lem:U2est}(i) the coefficients satisfy $|c(n)|\ll|n|$. Since $\sqrt yK_0(2\pi|n|y)$ decays exponentially in $|n|y$, the Fourier series converges absolutely and uniformly on $y\ge y_0>0$, so it may be integrated term by term on every segment with $y\ge y_0$.
+\emph{The $S$-relation.} Lemma~\ref{lem:green} holds for every real frequency $n\neq0$ by translation covariance (and gives $\tfrac12$ for the constant term). Apply it on $\Hb$ to the modes of $d$, close the contour as in the proof of Theorem~\ref{thm:G}, and pull back by $w\mapsto-1/w$ using $d(-1/w)=S_{\rm lab}d(w)$ and Lemma~\ref{lem:branch}. This gives, on $\Hb\setminus i\R$,
+\[
+c_d(z)=I_d(z)-\varsigma(z)\,z^{-1}S_{\rm lab}I_d(-1/z),\qquad I_d=-\tfrac\pi2f_d^++\tfrac12a_dv_0,\qquad \varsigma(z)=\sgn\,\mathrm{Re}\,z.
+\]
+The contour step is not verbatim from Theorem~\ref{thm:G}. There $u_L$ has no constant term and decays at the cusp $0$, but for general $d$ the constant term $\sqrt y\,a_dv_0$ is carried to the cusp $0$ by the $S$-law. Its contribution is controlled exactly as at $i\infty$. On the connecting segments the constant-term integrand is $-\tfrac{i}{2}z\,a\,t^{-2}$ times a fixed vector, i.e.\ $O(t^{-2})$, so a segment at height $Y$ (or $1/Y$ after the $S$-pullback) contributes $O(1/Y)\to0$ (Lemma~\ref{lem:U2est}(ii),(iii)). All other terms decay exponentially.
+\emph{Reflection.} The reflection $\epsilon(w)=-\bar w$ satisfies $\epsilon^*[u,v]=[\tilde v,\tilde u]=\mathrm{d}(\tilde u\tilde v)-[\tilde u,\tilde v]$ (here $\mathrm{d}$ is the exterior derivative, not the Maass vector $d$). Hence $c_d(z)=a_d\bigl(v_0-\varsigma(z)z^{-1}S_{\rm lab}v_0\bigr)-c_{\tilde d}(-z)$ with $\tilde d(w)=d(-\bar w)$. Here $\tilde d$ obeys the same $S$-law and the $T^{-1}$-twisted $T$-law, and the positive frequencies of $\tilde d$ are the negative frequencies of $d$.
+\emph{Parity step.} Suppose $f_d^+=0$. Then $I_d=\tfrac12a_dv_0$ is constant, and the $S$-relation shows that $c_d$ is a rational function on each of the two quadrants of $\Hb\setminus i\R$. By the reflection identity, the negative-mode series $F$ of $d$ (the $I$-function of $\tilde d$) then satisfies, on the two quadrants,
+\begin{align*}
+F(w)&=\kappa\,w^{-1}S_{\rm lab}F(-1/w)+L_1(w)&&(\text{first quadrant}),\\
+F(w)&=-\kappa\,w^{-1}S_{\rm lab}F(-1/w)+L_2(w)&&(\text{second quadrant}),
+\end{align*}
+for a fixed $\kappa\in\{\pm1\}$ and rational functions $L_1,L_2$. The relative sign is $\varsigma(z)$. The first-quadrant relation has the holomorphic coefficient $w^{-1}$, so it continues analytically to the whole half-plane on which $F$ is holomorphic. Subtracting the second-quadrant relation there gives $2\kappa\,w^{-1}S_{\rm lab}F(-1/w)=L_2(w)-L_1(w)$. So $F$ is rational, and since it decays exponentially, $F=0$. (Using the relations quadrant by quadrant without the continuation only gives $F=PF$, which is vacuous because $Pd=d$.) Then $d=\sqrt y(a+b\log y)v_0$, and the $S$-law forces $d=0$ because $S_{\rm lab}v_0\notin\C v_0$ (Proposition~\ref{prop:sectors9}(iii)).
+\end{proof}
+
+\begin{corollary}[Cocycle and period function determine $u$]\label{cor:U3}
+For $d\in M(\rho)$: if $c_d\equiv0$ on $\Hb$, then $d=0$. Moreover, the restriction $\Phi|_{(0,\infty)}$ of the period function of Theorem~\ref{thm:G} determines $u$, and hence the positive-frequency series $f$.
+\end{corollary}
+\catA{Proved below; rests on Theorem~\ref{thm:U2}.}
+\begin{proof}[Proof (outline)]
+\emph{Key step.} Let $e\in M(\rho)$ and suppose that on the first quadrant $c_e(z)=r(z)$ with $r$ rational. The $S$-relation of Theorem~\ref{thm:U2}(b) with $\varsigma(z)=+1$ gives $I_e(z)=z^{-1}S_{\rm lab}I_e(-1/z)+r(z)$ there. $I_e$ is holomorphic on $\Hb$, $z\mapsto-1/z$ preserves $\Hb$, and $z^{-1}$ is holomorphic there, so this relation continues analytically to all of $\Hb$. Applying it twice, with $I_e(-1/z)=-z\,S_{\rm lab}I_e(z)+r(-1/z)$, gives $I_e=-PI_e+(\text{rational})$. Since $Pe=e$, $PI_e=I_e$, so $2I_e$ is rational. $f_e^+$ decays exponentially as $\mathrm{Im}\,z\to\infty$, so $f_e^+=0$, and $e=0$ by Theorem~\ref{thm:U2}(b).
+\emph{First claim.} If $c_d\equiv0$, apply the key step with $r=0$.
+\emph{Second claim.} $\Phi$ (in the normalisation of \S\ref{sec:lz}) and $c_u$ differ by an explicit constant-coboundary term, rational in $z$ with coefficient $a_u$, and a scalar. $(0,\infty)$ lies in the right half-plane, where $c_u$ is holomorphic (and $\Omega=\Psi$, Theorem~\ref{thm:G}(i)). Suppose $u,u'\in M(\rho)$ have the same $\Phi$ on $(0,\infty)$. By the identity theorem, $c_{u-u'}$ is rational on the first quadrant, and the key step gives $u=u'$.
+\end{proof}
+
+\begin{theorem}[Uniqueness and residual ambiguity of the vector completion]\label{thm:uniq9}
+Let $u=u_{\rm lift}$, with positive-frequency series $f$ and period function $\Phi$ (Theorems~\ref{thm:F}, \ref{thm:G}).
+\begin{enumerate}[label=(\roman*)]
+\item \emph{Uniqueness given strong data.} Among $d\in M(\rho)$, $u$ is the only element with positive-frequency series $f$ and $q^0$-coefficient $a_u$. Moreover, among period functions of elements of $M(\rho)$, $\Phi$ is determined by its restriction to $(0,\infty)$.
+\item \emph{Non-uniqueness under weak conditions.} Consider period functions of elements of $M(\rho)$ with the same $\rho$-law (weight $1$, factor $|cx+d|$), the same singular $I/t$ data, and real-analytic on $\R\setminus\{0\}$. They form the affine space $\Phi+\{\Phi_c:\ c\in S(\rho)\}$, enlarged by $\C\,\Phi_{v_0}$ when the $q^0$ term is not prescribed. The parametrisation $c\mapsto\Phi_c$ is injective.
+\item \emph{The cusp space is nonzero.} $\dim S(\rho)\ge1$. An explicit witness is $u_{\rm cusp}:=\Pi_{B_1X^-}u_{\rm lift}$, the projection to the $\rho$-stable sector $B_1X^-$. It lies in $M(\rho)$, has zero constant term because $\mathrm{Fix}(T)\cap B_1X^-=0$, and is nonzero because its coefficient at $n=\tfrac{19}{140}$ is nonzero. Hence, by the injectivity in (ii), the class in (ii) contains more than one element.
+\item \emph{Shape of the ambiguity.} The non-cusp part of $M(\rho)$ is exactly one-dimensional and lies in $A_3X^+$, and the $P$-odd sectors contribute nothing. An explicit basis of the residual ambiguity is
+\begin{align*}
+&\{\Phi_{v_0}\}&&(\text{only if }q^0\text{ is free})\\
+\oplus\ &\{\Phi_c:\ c\in\text{a basis of }S(\rho)\}&&(\text{containing }\Phi_{u_{\rm cusp}}\neq0)\\
+\oplus\ &\C\,g_0&&(\kappa\text{-level, Proposition~\ref{prop:U1}}).
+\end{align*}
+\end{enumerate}
+\end{theorem}
+\catA{(i) and the injectivity in (ii): Theorem~\ref{thm:U2} and Corollary~\ref{cor:U3}. (iii): $\dim S(\rho)\ge1$ with witness $u_{\rm cusp}$ is independent of
+Theorem~\ref{thm:U2}: sector projectors commute with $\rho$, the vanishing of the constant term is Proposition~\ref{prop:sectors9}(i),(ii), and non-vanishing is an exact
+$\Z[\zeta_{20}]$ value. That the class in (ii) has more than one element, and $\Phi_{u_{\rm cusp}}\neq0$ in (iv), use the injectivity (Corollary~\ref{cor:U3}). (iv): given
+Theorem~\ref{thm:U2}(a) and Proposition~\ref{prop:sectors9}. \emph{Not claimed:} that every real-analytic $\rho$-cocycle with Lewis--Zagier growth comes from $M(\rho)$
+(Remark~\ref{rem:uniqB}(a)); for cusp-type period functions with the growth conditions stated there this follows from Deitmar--Hilgert, but the non-cusp part is not covered.}
+
+\begin{proposition}[Sector-by-sector uniqueness and the scalars]\label{prop:U5}
+$u_{\rm lift}$ has components only in $\sigma\in\{A_3X^+,B_1X^-\}$. For each such $\sigma$:
+\begin{enumerate}[label=(\roman*)]
+\item the $\sigma$-component is the unique element of $\Pi_\sigma M(\rho)$ with positive-frequency series $f_\sigma$;
+\item it is unique up to a scalar given only the line $\C f_\sigma$;
+\item the scalar is fixed by the first nonzero coefficient: $n=\tfrac1{14}$ for $A_3X^+$ and $n=\tfrac{19}{140}$ for $B_1X^-$, both exact cyclotomic numbers (Appendix~\ref{app:repro}).
+\end{enumerate}
+Only $A_3X^+$ has a non-cusp part, and it is one-dimensional. In $B_1X^-$ the completion is unique given $f$. In the weak class of Theorem~\ref{thm:uniq9}(ii) it is ambiguous by $S(\rho)\cap B_1X^-$, which contains $u_{\rm cusp}$.
+\end{proposition}
+\catA{Support: Propositions~\ref{prop:matched} and~\ref{prop:sectors9}. Uniqueness in (i)--(ii): Theorem~\ref{thm:U2} applied to $\Pi_\sigma d$. (iii): exact values.}
+\begin{proposition}[Sector bounds for $\dim S(\rho)$]\label{prop:SrhoSectors}
+Let $\sigma$ run over the eight $\rho$-stable sectors of Proposition~\ref{prop:sectors9}, and write $M(\rho)_\sigma$, $S(\rho)_\sigma$ for the $\sigma$-components.
+\begin{enumerate}[label=(\roman*)]
+\item For the four $P$-odd sectors, $M(\rho)_\sigma=S(\rho)_\sigma=0$.
+\item $M(\rho)_{A_3X^+}=\C\,\Pi_{A_3X^+}u_{\rm lift}\oplus S(\rho)_{A_3X^+}$, and $M(\rho)_\sigma=S(\rho)_\sigma$ for $\sigma\in\{B_1X^+,A_3X^-,B_1X^-\}$.
+\item $\dim S(\rho)_{B_1X^-}\ge1$, with witness $u_{\rm cusp}=\Pi_{B_1X^-}u_{\rm lift}$.
+\end{enumerate}
+\begin{center}\small
+\begin{tabular}{lcccl}\toprule
+sector & $\dim\sigma$ & $P$ & $\dim S(\rho)_\sigma$ & status\\\midrule
+$A_3X^+$ & $36$ & $+1$ & $0$ & A (computer-assisted, Theorem~\ref{thm:SrhoDim})\\
+$B_1X^+$ & $12$ & $+1$ & $0$ & A (computer-assisted, Theorem~\ref{thm:SrhoDim})\\
+$A_3X^-$ & $18$ & $+1$ & $0$ & A (computer-assisted, Theorem~\ref{thm:SrhoDim})\\
+$B_1X^-$ & $6$ & $+1$ & $1$ & A ($\ge1$: exact witness at $n=\tfrac{19}{140}$; $\le1$: Theorem~\ref{thm:SrhoDim})\\
+$W_5^+W_7^-A_3$ & $27$ & $-1$ & $0$ & A\\
+$W_5^+W_7^-B_1$ & $9$ & $-1$ & $0$ & A\\
+$W_5^-W_7^+A_3$ & $24$ & $-1$ & $0$ & A\\
+$W_5^-W_7^+B_1$ & $8$ & $-1$ & $0$ & A\\\bottomrule
+\end{tabular}
+\end{center}
+The upper bounds in the $P$-even sectors are Theorem~\ref{thm:SrhoDim}.
+\end{proposition}
+\begin{proof}
+(i) Every $d\in M(\rho)$ satisfies $Pd=d$, because $S_{\rm lab}^2=P$ and $d(-1/(-1/w))=d(w)$. So $d$ has no component in $\mathrm{Fix}(-P)$.
+(ii) Theorem~\ref{thm:U2}(a), together with $\mathrm{Fix}(T)=\C v_0\subset A_3X^+$, so constant terms vanish outside $A_3X^+$.
+(iii) Theorem~\ref{thm:uniq9}(iii). The coefficient at $n=\tfrac{19}{140}$ was also recomputed exactly: $8$ lattice points, all phases $\pm1$, rational projectors, $4$ nonzero $B_1X^-$ entries.
+\end{proof}
+\noindent\fbox{\parbox{0.96\linewidth}{\small\textbf{Status.} (i) and (iii): Category~A. (ii): Category~A given Theorem~\ref{thm:U2}(a). \emph{Irreducibility} of the eight sectors: each has a simple $T$-spectrum with exact exponents in $\tfrac1{140}\Z$ (Category~A), and the $S$-graph between $T$-eigenvectors is connected, a zero/nonzero test done in floating point (Category~B). \emph{Category~B (consistency):} theta lifts of all even binary lattices $ax^2-by^2$ with discriminant group of order $\le2000$ give, inside $\rho$, only multiples of the components of $u_{\rm lift}$, in agreement with Theorem~\ref{thm:SrhoDim}.}}
+\subsection{The dimension of $S(\rho)$}\label{sec:Srhocert}
+Fix a $P$-even sector $\sigma$ of dimension $d$. Its $T$-spectrum is simple, with exponents $r_1,\dots,r_d\in\{0,\dots,139\}$ (Proposition~\ref{prop:SrhoSectors}). Let
+$v_1,\dots,v_d$ be the unit $T$-eigenvectors, $Tv_k=\e(r_k/140)v_k$. They are orthonormal, and we write $S_\sigma=(\langle Sv_l,v_k\rangle)_{k,l}$, a unitary matrix with $S_\sigma^2=I$. For
+$d\in S(\rho)_\sigma$ put $g_k=\langle d,v_k\rangle$. Then $g(w+1)=\mathrm{diag}(\e(r_k/140))\,g(w)$ and $g(-1/w)=S_\sigma g(w)$. Because the constant term vanishes and $d$ has moderate growth,
+\begin{equation}\label{eq:gk}
+g_k(x+iy)=\sum_{n\in r_k/140+\Z,\ n\neq0}c_k(n)\sqrt y\,K_0(2\pi|n|y)\,\e(nx),
+\end{equation}
+so $g$ decays exponentially at the cusp and $\|d\|_\infty:=\sup_{\Hb}\|d(w)\|_2<\infty$. Since $\rho$ is unitary, $\|d(w)\|_2$ is $\Gamma$-invariant, and the supremum is attained at some point
+$w_0$ of the closed standard fundamental domain. In particular $\Im w_0\ge\tfrac{\sqrt3}2$.
+
+\begin{lemma}\label{lem:K0bd}
+$K_0(x)\le\sqrt{\pi/(2x)}\,e^{-x}$ for $x>0$.
+\end{lemma}
+\begin{proof}
+$K_0(x)=\int_0^\infty e^{-x\cosh t}\,dt\le\int_0^\infty e^{-x(1+t^2/2)}\,dt=e^{-x}\sqrt{\pi/(2x)}$, since $\cosh t\ge1+t^2/2$.
+\end{proof}
+
+\begin{lemma}[A priori bounds]\label{lem:apriori}
+Let $d\in S(\rho)_\sigma$ with $\|d\|_\infty=1$, and let $\mu_0=\sqrt{1/2}\,K_0(1/2)$. Then:
+\begin{enumerate}[label=(\roman*)]
+\item $|c_k(n)|\le\sqrt{2\pi|n|}/\mu_0$ for every $k$ and every $n$.
+\item For $M\ge1$ and $y>0$, the part of \eqref{eq:gk} with $|n|>M$ is bounded in absolute value by
+$\tau_M(y):=\dfrac{\sqrt{\pi/2}}{\mu_0}\cdot\dfrac{2e^{-2\pi My}}{1-e^{-2\pi y}}$.
+\item For $y\ge\tfrac{\sqrt3}2$, $\ \sqrt y\,K_0(2\pi|n|y)\le\omega_n:=\min\bigl(\sqrt{\pi/2}/\sqrt{2\pi|n|},\ (4|n|)^{-1/2}e^{-\pi\sqrt3|n|}\bigr)$.
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+(i) We have $c_k(n)\sqrt yK_0(2\pi|n|y)=\int_0^1g_k(x+iy)\e(-nx)\,dx$, and $|g_k|\le\|d\|_2\le1$. Take $y=1/(4\pi|n|)$.
+(ii) By (i) and Lemma~\ref{lem:K0bd}, each term is at most $\sqrt{\pi/2}\,\mu_0^{-1}e^{-2\pi|n|y}$. The frequencies $n>M$ in $r/140+\Z$ are $>M+j$ for $j=0,1,\dots$, and likewise for $n<-M$.
+(iii) The first bound holds because $\sqrt tK_0(t)\le\sqrt{\pi/2}$, by Lemma~\ref{lem:K0bd}. The second follows from Lemma~\ref{lem:K0bd} and monotonicity in $y$.
+\end{proof}
+
+\begin{proposition}[Certification criterion]\label{prop:hejhalcert}
+Fix $M\ge1$ and let $\mathcal C=\{(k,n):\ n\in r_k/140+\Z,\ n\neq0,\ n=r_k/140+j,\ |j|\le M\}$. Fix sample points $w_m=x_m+iY_m$, $m=1,\dots,R$, and elements $\gamma_m\in\mathrm{SL}_2(\Z)$, and let
+$w_m^*=\gamma_m^{-1}w_m$. Let $\Gamma_m$ be the matrix with $g(w_m)=\Gamma_m\,g(w_m^*)$; it is a product of $S_\sigma$ and diagonal phase matrices, and it is unitary. Let $G$ be the $(Rd)\times|\mathcal C|$
+matrix whose block row $m$ is $E_m-\Gamma_mF_m$. Here $E_m$ and $F_m$ evaluate the basis functions $\sqrt yK_0(2\pi|n|y)\e(nx)$ of column $(k,n)$, placed in row $k$, at $w_m$ and at $w_m^*$.
+Let $D=\mathrm{diag}(s_{(k,n)})$ with all $s>0$, and $H=(GD^{-1})^*(GD^{-1})$. Put
+\[
+\varrho=\sum_{m}d\,\bigl(\tau_M(Y_m)+\tau_M(\Im w_m^*)\bigr)^2,\quad \Omega=\max_k\sum_{(k,n)\in\mathcal C}(\omega_n/s_{(k,n)})^2,\quad t_0=\sqrt d\,\tau_M(\tfrac{\sqrt3}2).
+\]
+If $t_0<1$ and the $(j+1)$-st smallest eigenvalue of $H$ exceeds $\varrho\,\Omega/(1-t_0)^2$, then $\dim S(\rho)_\sigma\le j$.
+\end{proposition}
+\begin{proof}
+Let $d\in S(\rho)_\sigma$ and write $c=(c_k(n))_{(k,n)\in\mathcal C}$, $c''=Dc$. The map $d\mapsto c''$ is linear.
+
+\emph{Step 1: the map is injective.} Normalise $\|d\|_\infty=1$ and evaluate at $w_0$. By Lemma~\ref{lem:apriori}(ii),(iii) and Cauchy--Schwarz in each component,
+\[
+1=\|d(w_0)\|_2\le\Bigl(\sum_k\bigl(\sum_n\omega_n|c_k(n)|\bigr)^2\Bigr)^{1/2}+t_0\le\Omega^{1/2}\|c''\|_2+t_0 .
+\]
+Hence $\|c''\|_2\ge(1-t_0)\Omega^{-1/2}>0$.
+
+\emph{Step 2: the residual is small.} The identity $g(w_m)=\Gamma_mg(w_m^*)$ is exact. Splitting each side of \eqref{eq:gk} into the part in $\mathcal C$ and the rest gives $GD^{-1}c''=\varepsilon$. Here
+$\varepsilon_m=-(\text{tail of }g(w_m))+\Gamma_m(\text{tail of }g(w_m^*))$, so $\|\varepsilon_m\|_2\le\sqrt d(\tau_M(Y_m)+\tau_M(\Im w_m^*))$ by Lemma~\ref{lem:apriori}(ii) and the unitarity of $\Gamma_m$. Hence $\|GD^{-1}c''\|_2^2\le\varrho$.
+
+\emph{Step 3: conclusion.} Suppose $\dim S(\rho)_\sigma\ge j+1$. By Step~1 the image of $d\mapsto c''$ has dimension at least $j+1$. By the Courant--Fischer theorem it contains a vector $c''\neq0$ with $\|GD^{-1}c''\|^2\ge\lambda_{j+1}(H)\|c''\|^2$. Rescale the corresponding $d$ to $\|d\|_\infty=1$. Steps~1 and~2 then give
+$\lambda_{j+1}(H)(1-t_0)^2/\Omega\le\varrho$, which contradicts the hypothesis.
+\end{proof}
+
+\begin{theorem}[Dimension of the cusp space]\label{thm:SrhoDim}
+$\dim S(\rho)_{A_3X^+}=\dim S(\rho)_{B_1X^+}=\dim S(\rho)_{A_3X^-}=0$ and $\dim S(\rho)_{B_1X^-}=1$. Hence $\dim S(\rho)=1$ and $S(\rho)=\C\,u_{\rm cusp}$.
+\end{theorem}
+\begin{proof}
+We apply Proposition~\ref{prop:hejhalcert} with $M=6$, $Y_m\in\{\tfrac45,\tfrac7{10},\tfrac35,\tfrac12\}$ and $x_m=\tfrac{2m+1}{80}-\tfrac12$, $m=0,\dots,39$. Each $\gamma_m$ is the usual reduction word, chosen in floating point; the identity holds for any word. The law $d(-1/w)=S_{\rm lab}d(w)$ used here agrees with $\rho(S)=S_{\rm lab}^{-1}$ (Remark~\ref{rem:Sconv}), since $S_{\rm lab}^2=P$ gives $S_{\rm lab}^{-1}=S_{\rm lab}$ on every $P$-even sector.
+All of the following are computed in ball arithmetic (128-bit precision) from the exact rational phase data of $S_{\rm lab}$, $T_{\rm lab}$, the adapted basis and the exact sector projectors:
+$v_k$ (via the exact eigenprojection $\frac1{140}\sum_{j}\e(-r_kj/140)T^j$), $S_\sigma$, $\Gamma_m$, $w_m^*$, the entries of $G$ (with $K_0(x)=\sqrt\pi e^{-x}U(\tfrac12,1,2x)$), $H$, $\varrho$, $\Omega$ and $t_0$.
+The ball checks $TV=V\,\mathrm{diag}(\e(r_k/140))$, $V^*V=I$, $SV=VS_\sigma$, $S_\sigma^2=I$ and $S_\sigma S_\sigma^*=I$ all contain $0$.
+Eigenvalue lower bounds for $H$ come from an approximate unitary $Q$ and two estimates. Weyl's inequality applied to $Q^*HQ-\Lambda$ gives $\lambda_k(Q^*HQ)\ge\Lambda_k-\|Q^*HQ-\Lambda\|_F$. Ostrowski's theorem gives $\lambda_k(H)\ge\lambda_k(Q^*HQ)/(1+\|Q^*Q-I\|_F)$.
+The resulting certified values are:
+\begin{center}\small
+\begin{tabular}{lcccccl}\toprule
+sector & $d$ & $|\mathcal C|$ & rows & threshold $\varrho\Omega/(1-t_0)^2\le$ & certified lower bound & conclusion\\\midrule
+$A_3X^+$ & $36$ & $467$ & $5760$ & $1.04\cdot10^{-14}$ & $\lambda_1\ge0.0251$ & $\dim=0$\\
+$B_1X^+$ & $12$ & $156$ & $1920$ & $3.6\cdot10^{-15}$ & $\lambda_1\ge0.0373$ & $\dim=0$\\
+$A_3X^-$ & $18$ & $234$ & $2880$ & $5.2\cdot10^{-15}$ & $\lambda_1\ge0.0154$ & $\dim=0$\\
+$B_1X^-$ & $6$ & $78$ & $960$ & $4.4\cdot10^{-15}$ & $\lambda_2\ge0.1317$ & $\dim\le1$\\\bottomrule
+\end{tabular}
+\end{center}
+A second run with $M=8$ and $40\to48$ points per horocycle gives thresholds $\le4\cdot10^{-20}$ and the same lower bounds to three digits.
+For $B_1X^-$, the lower bound $\dim\ge1$ is Proposition~\ref{prop:SrhoSectors}(iii). The $P$-odd sectors contribute $0$ by Proposition~\ref{prop:SrhoSectors}(i).
+\end{proof}
+\noindent\fbox{\parbox{0.96\linewidth}{\small\textbf{Status: Category~A (computer-assisted).} This is a computer-assisted proof in the sense of \S\ref{sec:cat}. The analytic reduction (Lemmas~\ref{lem:K0bd}, \ref{lem:apriori}, Proposition~\ref{prop:hejhalcert}) is proved
+in full. It uses no coefficient bound beyond the trivial sup-norm bound and no assumption on $\lambda$ other than $\lambda=\tfrac14$. The finite verification uses ball arithmetic (Arb via python-flint),
+and every quantity entering the final inequality is a rigorous enclosure. Floating point only chooses the reduction words, column scalings and the approximate eigenbasis $Q$; these choices are not
+part of the proof. The margin is at least $10^{12}$ in every sector.}}
+
+\begin{corollary}\label{cor:SrhoDim}
+$\dim M(\rho)=2$ and $M(\rho)=\C\,u_{\rm lift}\oplus\C\,u_{\rm cusp}$. In Theorem~\ref{thm:uniq9}(ii), the ambiguity of period functions under the weak conditions is exactly the line $\C\,\Phi_{u_{\rm cusp}}$.
+\end{corollary}
+\begin{proof}
+Theorem~\ref{thm:U2}(a), which gives $M(\rho)=\C u_{\rm lift}\oplus S(\rho)$, together with Theorem~\ref{thm:SrhoDim}.
+\end{proof}
+\noindent\fbox{\parbox{0.96\linewidth}{\small\textbf{Status.} Category~A, given Theorem~\ref{thm:U2}(a) and the same conditions as Theorem~\ref{thm:uniq9}(ii).}}
+
+\begin{remark}[Dihedral consistency check]\label{rem:dihedral7_10}
+Independently of Theorem~\ref{thm:SrhoDim}: among the ray class characters $\chi\neq\chi^\sigma$ of $\Q(\sqrt D)$, $D\in\{2,5,7,10,14,35,70\}$, with infinity type $(+,+)$ or $(-,-)$ and $\mathrm{Ind}\,\chi$ of conductor dividing $19600$, there are exactly $120$, giving $36$ even dihedral representations, and none has projective image field $\Q(\sqrt7,\sqrt{10})$. So that field contributes no dihedral $\lambda=\tfrac14$ form at this level, as Theorem~\ref{thm:SrhoDim} requires.
+\end{remark}
+\catA{Exact enumeration (PARI/GP). Completeness: the sum over primitive characters equals $|\mathrm{Cl}_\fm|$ for all seven fields, and split primes $\le3000$ generate each $\mathrm{Cl}_\fm$, so the test $\chi\neq\chi^\sigma$ is exact.}
+
+\begin{remark}[Further remarks on \S\ref{sec:uniq}]\label{rem:uniqB}
+\begin{enumerate}[label=(\alph*)]
+\item \emph{Period functions of cusp forms.} We use Deitmar--Hilgert \cite[Thm.~3.3 and Thm.~4.4]{DH} with $\Gamma=\mathrm{PSL}_2(\Z)$, the finite-image representation $\eta=\rho$ and spectral parameter $\nu=0$ (our $\lambda=\tfrac14$, as $\Delta u=(\tfrac14-\nu^2)u$; the hypotheses $\nu\notin\tfrac12+\Z$ and $\mathrm{Re}\,\nu>-\tfrac12$ hold). The dictionary is $\psi(x)=\rho(S)^{-1}\Phi(x)/x$ on $x>0$, with $\Phi(x)=\kappa(-1/x)-|x|S_{\rm lab}\kappa(x)$; $\psi$ satisfies the three-term equation $\eta(T)\psi(z)=\psi(z+1)+(z+1)^{-1}\eta(ST^{-1})\psi(z/(z+1))$, and the growth conditions of \cite[Thm.~4.4]{DH} read $\Phi(x)=o(1)$ as $x\to0^+$ and $\Phi(x)=o(x)$ as $x\to\infty$. Under these conditions period functions correspond bijectively to elements of $S(\rho)$, so by Theorem~\ref{thm:SrhoDim} they form the line spanned by $\Phi_{u_{\rm cusp}}$. Lewis--Zagier \cite{LZ} treats the scalar case for $\mathrm{SL}_2(\Z)$ only. The non-cusp form $u_{\rm lift}$ is not covered by either reference. Status: Category~A (cited; hypotheses checked against \cite{DH}); the numerical check of the dictionary (residual $7\cdot10^{-15}$) is Category~B.
+\item \emph{Numerical support for Proposition~\ref{prop:U1}}: the $S$- and $T$-laws for $g_0$ hold to $\le5\cdot10^{-9}$ at $11$ rationals; $\|g_0(h/m)\|/(m\|g_0(0)\|)=1$ to $10^{-11}$; and $ST^{-1}S^{-1}g_0(0)=g_0(0)$ to $4\cdot10^{-15}$. Floating point: Category~B.
+\end{enumerate}
+\end{remark}

@@ -1,0 +1,8 @@
+PP re-run comparison, 2026-11-10 12:17:59 CST
+python 3.13.5, sympy 1.14.0
+Copies: nl_copy_gapjx_gap.py = 516a87b7... (= frozen original), nl_copy_gapjx_junction.py = b054521b... (= frozen original). Frozen originals not modified (still mode 444, same hash).
+cmp nl_copy_gapjx_gap_rerun.log vs /workspace/nl-gapjx-t552-1110/gapjx_gap_run.log: BYTE-IDENTICAL (no wall-clock lines in either log)
+cmp nl_copy_gapjx_junction_rerun.log vs /workspace/nl-gapjx-t552-1110/gapjx_junction_run.log: BYTE-IDENTICAL
+Run timing (see rerun_timing.txt): gap re-run 0.363 s wall; junction re-run 1.484 s wall.
+NL freeze/run mtimes: gap script+sidecar 12:02:26.341579586, gap log content 12:02:26.685577072 (344 ms later, same second; consistent with the 0.36 s runtime measured here), gap log sidecar 12:02:28.289565343. Junction script 12:02:26.341579586, sidecar 12:02:26.345579557, log content 12:02:28.213565899 (1.872 s after freeze; consistent with 1.48 s runtime), sidecar 12:02:28.293565314.
+First-draft bugs (disclosed; drafts in /tmp, not used as grounds): (1) PJ8 draft had the sign of the |e|^2-1 residual term wrong (FAIL); fixed to S(k,k) + (2/k2)(K(e,e)-k) - (2/k2)K(|e|^2-1) = 0 before freezing. (2) PG1 and PJ2 drafts contained a dead 'X if False else Y' construct (no effect on the result); removed before freezing.

@@ -1,0 +1,1582 @@
+         SUR QUELQUES REPRÉSENTATIONS
+        MODULAIRES ET p-ADIQUES DE GL2 (Qp ) I
+
+                                                              par
+
+                                               Christophe Breuil
+
+
+
+      Résumé. — Soit p un nombre premier et F un corps local complet de corps
+      résiduel fini de caractéristique p. En 1993, Barthel et Livné ont montré ([1], [2])
+      l’existence de représentations d’un type nouveau de GL2 (F ) sur Fp qu’ils ont bap-
+      tisées “supersingulières” et sur lesquelles on ne sait presque rien. Dans cet article,
+      on détermine toutes les représentations supersingulières de GL2 (Qp ) avec leurs en-
+      trelacements. Cela achève la classification des représentations lisses irréductibles de
+      GL2 (Qp ) sur Fp avec caractère central et met en évidence une bijection naturelle
+      entre les classes d’isomorphisme de représentations supersingulières de GL2 (Qp )
+      et les classes d’isomorphisme de représentations irréductibles de Gal(Qp /Qp ) de
+      dimension 2 sur Fp .
+
+
+
+
+                                               Table des matières
+      1. Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+      2. Préliminaires . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+      3. Invariants sous le pro-p-Iwahori . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+      4. Preuve des résultats principaux . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+      Références . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+
+
+
+                                                  1. Introduction
+
+  Soit p un nombre premier, F un corps local complet pour une valuation discrète
+de corps résiduel fini de caractéristique p et F une clôture séparable de F . Il est
+
+Mots clefs. — Représentation supersingulière, entrelacement.
+
+Je remercie Alain Genestier pour de nombreuses discussions durant la gestation de cet article.
+2                                         C. BREUIL
+
+
+maintenant connu que, pour ` 6= p, il existe une bijection “naturelle” entre les
+classes d’isomorphisme de représentations lisses supercuspidales de GLn (F ) sur
+F` et les classes d’isomorphisme de représentations irréductibles de Gal(F /F )
+de dimension n sur F` ([8]). On peut même étendre cette correspondance de
+façon à inclure les représentations semi-simples de Gal(F /F ) de dimension n
+([8]). L’étape suivante consiste à regarder le cas ` = p et, comme de sérieuses
+complications sont attendues, à se limiter dans un premier temps à GL2 et aux
+représentations galoisiennes de dimension 2. La classification des représentations
+semi-simples de dimension 2 de Gal(F /F ) sur Fp à partir des caractères fon-
+damentaux de Serre ([7]) n’est pas difficile. Il y a quelques années, Barthel et
+Livné se sont attelés à la tâche de déterminer toutes les représentations lisses
+irréductibles avec caractère central de GL2 (F ) sur Fp . Outre les caractères (= les
+représentations de dimension 1), ils ont trouvé des séries principales et des séries
+spéciales qu’ils ont complètement étudiées, et des représentations d’un type nou-
+veau qu’ils ont appelées “supersingulières” et laissées de côté après avoir démontré
+qu’elles étaient toutes quotients d’induites compactes quotientées par l’image d’un
+endomorphisme T ([2]) et que leur duale lisse était nulle (résultat non publié de
+Livné). Le but de cet article est de faire l’étude complète des représentations su-
+persingulières dans le cas particulier, mais important, où F = Qp . Contrairement
+à la classification des séries principales ou spéciales, celle des représentations
+supersingulières de GL2 (Qp ) met alors clairement en évidence une correspon-
+dance naturelle entre ces représentations et les représentations irréductibles de
+Gal(Qp /Qp ) de dimension 2 sur Fp .
+
+                                                                                          2
+  Soit Z le centre de GL2 (Qp ), r un entier compris entre 0 et p − 1 et Symr Fp
+la représentation naturelle de GL2 (Zp ) (agissant via GL2 (Fp )) qu’on étend à
+GL2 (Zp )Z en envoyant p sur l’identité. On note :
+
+                                        GL (Q )           2
+                                     indGL22 (Zpp)Z Symr Fp
+
+                                                                     2
+le Fp -espace vectoriel des fonctions f : GL2 (Qp ) → Symr Fp à support compact
+modulo Z telles que f (kg) = Symr (k) f (g) (g ∈ GL2 (Qp ), k ∈ GL2 (Zp )Z)
+                                               
+muni de l’action à gauche usuelle de GL2 (Qp ). On peut définir sur cet espace un
+certain endomorphisme GL2 (Qp )-équivariant injectif T (voir §2.6) et considérer,
+                             ×
+pour λ ∈ Fp et χ : Q× p → Fp un caractère lisse, les divers quotients :
+
+                             h                        2
+                                                               i
+                                    GL (Q )
+              π(r, λ, χ) =       indGL22 (Zpp)Z Symr Fp /(T − λ)   ⊗ (χ ◦ dét)
+
+qui sont lisses et de dimension infinie. Dans [1] et [2], Barthel et Livné ont
+complètement étudié π(r, λ, χ) lorsque λ 6= 0. On regarde ici le cas λ = 0.
+            REPRÉSENTATIONS MODULAIRES ET p-ADIQUES DE GL2 (Qp ) I                    3
+
+
+ Théorème 1.1 (cf. corollaires 4.1.1 et 4.1.4). — Pour r ∈ {0, . . . , p − 1},
+les représentations :
+                             GL (Q )           2
+                          indGL22 (Zpp)Z Symr Fp /(T )
+sont irréductibles.
+
+  Il s’ensuit d’après [1] et [2] que les représentations supersingulières de GL2 (Qp )
+sont exactement les représentations π(r, 0, χ) et que l’on a :
+ Corollaire 1.2. — Les représentations lisses irréductibles de GL2 (Qp ) sur Fp
+ayant un caractère central sont les représentations suivantes :
+                                 ×
+(i) les χ ◦ dét où χ : Q×p → Fp est un caractère lisse,
+(ii) les Sp ⊗ (χ ◦ dét) où χ est comme en (i) et Sp la représentation “spéciale”
+définie dans [1],
+(iii) les π(r, λ, χ) où χ est comme en (i), r ∈ {0, . . . , p − 1}, λ ∈ Fp \ {−1, 1}, et
+r ∈ {1, · · · , p − 2}, λ ∈ {−1, +1}.
+
+  Soit ω le caractère cyclotomique modulo p vu comme caractère de Q×   p via l’iso-
+morphisme de réciprocité (normalisé pour que les uniformisantes correspondent
+aux Frobenius géométriques), et µ−1 l’unique caractère quadratique non ramifié
+de Q×p . Contrairement à ce qui se passe lorsque λ 6= 0, les π(r, 0, χ) admettent
+entre elles des entrelacements non triviaux :
+ Théorème 1.3 (cf. corollaire 4.1.5). — Les équivalences entre les représen-
+tations supersingulières de GL2 (Qp ) sont les suivantes (r ∈ {0, . . . , p − 1} et
+            ×
+χ : Q×p → Fp ) :
+
+                       π(r, 0, χ) ≃ π(r, 0, χµ−1 )
+                       π(r, 0, χ) ≃ π(p − 1 − r, 0, χω r )
+                       π(r, 0, χ) ≃ π(p − 1 − r, 0, χω r µ−1 ).
+
+                       ×
+   Soit ω2 : Ip → Fp le caractère fondamental de Serre de niveau 2 où Ip est
+le sous-groupe d’inertie de Gal(Qp /Qp ) et notons ind(ω2s ) pour s ∈ {0, . . . , p}
+l’unique représentation (irréductible) de Gal(Qp /Qp ) sur Fp de déterminant ω s
+et telle que ind(ω2s )|Ip ≃ ω2s ⊕ ω2ps . On sait que, pour r ∈ {0, . . . , p − 1} et χ :
+           ×                                          r+1
+Q× p → Fp , les représentations ρ(r, χ) = (ind(ω2 )) ⊗ χ ont pour déterminant
+ω r+1 χ2 et épuisent les représentations irréductibles de Gp de dimension 2 sur Fp
+avec les isomorphismes :
+                           ρ(r, χ) ≃ ρ(r, χµ−1 )
+                           ρ(r, χ) ≃ ρ(p − 1 − r, χω r )
+                           ρ(r, χ) ≃ ρ(p − 1 − r, χω r µ−1 ).
+On en déduit :
+4                                     C. BREUIL
+
+
+ Corollaire 1.4. — Il existe une (unique) bijection entre les classes d’isomor-
+phisme de représentations supersingulières de GL2 (Qp ) et les classes d’isomor-
+phisme de représentations irréductibles de Gal(Qp /Qp ) de dimension 2 sur Fp
+telle que π(r, 0, χ) corresponde à ρ(r, χ) pour tout r ∈ {0, . . . , p − 1} et tout
+caractère χ.
+
+   Le résultat clef dont on déduit les deux théorèmes précédents est le calcul des
+invariants de π(r, 0, χ) sous le pro-p-sous-groupe du sous-groupe de GL2 (Zp ) des
+matrices triangulaires supérieures modulo p (théorème 3.2.4 et corollaire 4.1.4).
+Il est obtenu par une récurrence descendante sur le “diamètre” dans l’arbre de
+SL2 (Qp ) du support modulo T des fonctions f relevant de tels invariants. Il uti-
+lise de façon essentielle le fait qu’on travaille avec Qp et il est faux sinon (il
+semble qu’il y ait plus d’invariants en général, cf. remarque finale). Du coup, on
+peut se demander si les analogues pour F 6= Qp des représentations π(r, 0, χ)
+ne sont pas réductibles lorsque F 6= Qp (il faudrait alors étudier leur(s) quo-
+tient(s) irréductible(s)). Cela dit, on peut quand même s’attendre à ce que le
+corollaire 1.4 reste toujours vrai, i.e. conjecturer l’existence, pour tout corps F
+comme au début, d’une bijection naturelle entre ces quotients irréductibles (i.e.
+entre les classes d’isomorphisme de représentations supersingulières de GL2 (F ))
+et les classes d’isomorphisme de représentations irréductibles de Gal(F /F ) de
+dimension 2 sur Fp .
+
+
+   L’article est organisé comme suit : la section 2 rappelle les notations, formules et
+résultats nécessaires à la suite, la section 3 contient deux propositions techniques
+mais élémentaires qui permettent de déduire le calcul des invariants de π(r, 0, χ)
+sous le pro-p-Iwahori et la dernière section contient les preuves des résultats de
+cette introduction.
+
+
+  Signalons qu’on peut étendre la correspondance de l’énoncé 1.4 de manière à
+inclure les représentations semi-simples de dimension 2 de Gal(Qp /Qp ) sur Fp
+(voir la fin de l’article). La correspondance qu’on obtient sera utilisée dans [3]
+pour prédire la réduction modulo p de certaines représentations p-adiques de
+Gal(Qp /Qp ) de dimension 2 sur Qp .
+
+
+
+                                 2. Préliminaires
+
+2.1. On fixe une clôture algébrique Fp de Fp ainsi qu’un plongement du corps
+résiduel F de F dans Fp . On note q = pf le cardinal de F, O l’anneau des entiers
+de F , $ une uniformisante de O et val la valuation $-adique sur F normalisée
+par val($) = 1. On note G = GL2 (F ), K = GL2 (O), I le sous-groupe d’Iwahori
+           REPRÉSENTATIONS MODULAIRES ET p-ADIQUES DE GL2 (Qp ) I                  5
+
+
+de K, I(1) le pro-p-sous-groupe de I et Z le centre de G. On a donc :
+                                                               
+                             a b
+                 I =                , a ∈ O , d ∈ O , b ∈ O, c ∈ O
+                                            ×       ×
+                           $c d
+                                                     
+                             a b
+              I(1) =                 ∈ I, a ≡ d ≡ 1 ($)
+                           $c d
+                                         
+                           a 0            ×
+                Z =               ,a ∈ F      .
+                           0 a
+                                                       
+                      1 0              0 1              0 1
+On note enfin α =             ,β =             et w =         . On rappelle que β
+                      0 $             $ 0               1 0
+normalise I et I(1) et que l’on a les décompositions de Cartan :
+                               `                `  `             
+                KZα−n KZ =           IZα−n KZ            IZβα−n KZ .
+             `
+(1)    G=
+             n∈N                  n∈N                 n∈N
+
+
+2.2. Soit A l’arbre de SL2 (F ) ([5]) : ses sommets sont en bijection équivariante
+avec les classes G/KZ pour l’action à gauche de G. On pose I0 = {0} et, si
+n ∈ Z>0 , In = {[λ0 ] + $[λ1 ] + . . . + $n−1 [λn−1 ], λi ∈ F} ⊂ O où [·] désigne le
+représentant multiplicatif. Pour n ∈ N et λ ∈ In , on définit :
+                                         n 
+                               0          $ λ
+                              gn,λ =
+                                           0 1
+                                                     
+                               1           1     0
+                              gn,λ =                     .
+                                          $λ $n+1
+      0          1
+On a g0,0 = Id, g0,0 = α et :
+                             0      1
+(2)                        βgn,λ = gn,λ w.
+On a également IZα−n KZ =     0
+                                  KZ et IZβα−n KZ =
+                           `                        ` 1
+                             gn,λ                    gn,λ KZ. D’après
+                                λ∈In                            λ∈In
+          0       1
+(1), les gn,λ et gn,λ forment donc un système de représentants de G/KZ :
+                               `         `  `          
+                                   0              1
+                          G=      gn,λ KZ        gn,λ KZ .
+                                n,λ            n,λ
+
+Pour n ∈ N, on pose :
+                                −n                       −n
+                   Sn0 = IZα  ` KZ         Sn1 = IZβα ` 1KZ
+                     0             0         1
+                   Bn =          Sm        Bn =          Sm
+                             m≤n                     m≤n
+                             Sn0 Sn1                Bn0 Bn1 .
+                                `                      `
+                   Sn =                    Bn =
+En particulier S0 = KZ αKZ. On peut voir que Sn0 Sn−1
+                                                     ` 1
+                                                             (resp. Bn0 Bn−1
+                       `                                               ` 1
+                                                                                 ) est
+l’ensemble des sommets de A de distance n (resp. inférieure ou égale à n) ` 0KZ
+                                                                              de
+pour la distance naturelle sur A (cf. [5]). De même Sn Sn−1 (resp. Bn Bn−1 )
+                                                       1
+                                                         ` 0               1
+
+est l’ensemble des sommets de A de distance n (resp. inférieure ou égale à n) de
+αKZ.
+6                                       C. BREUIL
+
+
+2.3. Soit σ une représentation lisse de KZ sur un Fp -espace vectoriel Vσ de
+dimension finie. On note :
+                                    indG
+                                       KZ σ
+
+le Fp -espace vectoriel des fonctions f de G dans Vσ à support compact modulo
+Z telles que f (kg) = σ(k) f (g) (g ∈ G, k ∈ KZ) muni de l’action à gauche
+de G : (gf )(g 0 ) = f (g 0 g). Ces fonctions sont automatiquement (uniformément)
+localement constantes. Comme dans [2], pour g ∈ G et v ∈ Vσ on note [g, v]
+l’élément de indGKZ σ défini comme suit :
+
+                      [g, v](g 0 ) = σ(g 0 g) · v si g 0 ∈ KZg −1
+                      [g, v](g 0 ) =      0       si g 0 ∈
+                                                         / KZg −1 .
+On a g([g 0 , v]) = [gg 0 , v] et [gk, v] = [g, σ(k)v]
+                                                    P si k ∈ KZ. De plus, tout élément
+       G
+de indKZ σ s’écrit comme une somme finie i [gi , vi ] où gi ∈ G et vi ∈ Vσ ([2]).
+                                                                             0
+D’après le §2.2, on peut toujours prendre les gi distincts dans {gn,λ          , n ∈ N, λ ∈
+         1
+                                              P
+In } ∪ {gn,λ , n ∈ N, λ ∈ In }. L’écriture i [gi , vi ] précédente est alors unique. Soit
+f ∈ indGKZ σ, on appelle support de f l’ensemble des sommets gKZ ∈ A tels que
+    −1
+f (g ) 6= 0 (c’est indépendant du représentant g choisi). On écrit f ∈ Sn (resp.
+Bn , resp. Sn0 , resp. Sn`  + Sn−1 , etc.) si le support de f est contenu dans P Sn (resp.
+              0
+Bn , resp. Sn , resp. Sn Sn−1 , etc.). Dans ce cas, on    ` peut écrire f = [gi , vi ] avec
+vi = 0 si gi KZ ∈  / Sn (resp. Bn , resp. Sn0 , resp. Sn Sn−1 , etc.).
+
+
+2.4. L’algèbre de Hecke relativement à KZ et σ est par définition EndG (indG  KZ σ).
+Par réciprocité de Frobenius, elle s’identifie à l’algèbre de convolution des fonc-
+tions ϕ : G → EndFp (Vσ ) à support compact modulo Z telles que :
+                            ϕ(k1 gk2 ) = σ(k1 ) ◦ ϕ(g) ◦ σ(k2 )
+pour k1 , k2 ∈ KZ et g ∈ G ([2]). Soit ϕ une telle fonction, T l’endomorphisme
+correspondant de indG  KZ σ, g ∈ G, v ∈ Vσ et [g, v] l’élément défini au §2.3. Alors
+on a la formule (cf. [2]) :
+                                                       −1
+                                    X
+(3)                  T ([g, v]) =         [gg 0 , ϕ(g 0 )(v)].
+                                   g 0 KZ∈G/KZ
+
+On écrit T (Sn ) (resp. T (Sn ) + T (Sn−1 ), etc.) pour désigner le`sous-Fp -espace
+vectoriel des fonctions T (f ) avec f à support dans Sn (resp. Sn Sn−1 , etc.).
+
+                                                                    −1
+2.5. On suppose maintenant que le support  de ϕdans G est KZα KZ =
+                                           0 1
+KZαKZ et on pose, pour λ ∈ O, wλ =                  ∈ K. On a KZαKZ =
+                                           1 −λ
+`          `
+                                   0 −1
+     0
+    g1,λ KZ    αKZ (cf. §2.2) et (g1,λ ) = wα−1 wλ (λ ∈ I1 ). On déduit alors
+    λ∈I1
+             REPRÉSENTATIONS MODULAIRES ET p-ADIQUES DE GL2 (Qp ) I                            7
+
+
+de la formule (3) :
+                       X
+                           0
+                               , σ(w)ϕ(α−1 )σ(wλ )(v) + [gα, ϕ(α−1 )(v)].
+                                                     
+(4)     T ([g, v]) =     gg1,λ
+                       λ∈I1
+
+Pour 0 ≤ m ≤ n,Psoit [ ]m : In → Im les applications “troncatures” qui envoient
+P  n−1   i           m−1   i
+   i=0 $ [λi ] sur   i=0 $ [λi ] si m ≥ 1 et sur 0 si m = 0. Notons que, si λ ∈ In
+                                                       0
+et λ0 ∈ In0 , alors λ + $n λ0 ∈ In+n0 et λ0 + $n λ ∈ In+n0 . Dans le système de
+représentants du §2.2, la formule (4) s’explicite comme suit :
+Si n ≥ 1 et µ ∈ In :
+                      X
+         0                 0                      −1
+(5) T ([gn,µ , v]) =     [gn+1,µ+$  n λ , σ(w)ϕ(α    )σ(wλ )(v)]
+                        λ∈I1
+                                                0
+                                            + [gn−1,[µ] n−1
+                                                            , σ(ww [µ]n−1 −µ )ϕ(α−1 )(v)]
+                                                                       $ n−1
+                        X
+         1                       1                 −1
+(6) T ([gn,µ , v]) =           [gn+1,µ+$ n λ , ϕ(α    )σ(wλ w)(v)]
+                        λ∈I1
+                                                1
+                                            + [gn−1,[µ] n−1
+                                                            , σ(w [µ]n−1 −µ )ϕ(α−1 )σ(w)(v)].
+                                                                     $ n−1
+
+Si n = 0 :
+                         X
+(7)   T ([Id, v]) =               0
+                                [g1,λ , σ(w)ϕ(α−1 )σ(wλ )(v)] + [α, ϕ(α−1 )(v)]
+                         λ∈I1
+                         X
+(8)    T ([α, v]) =               1
+                                [g1,λ , ϕ(α−1 )σ(wλ w)(v)] + [Id, σ(w)ϕ(α−1 )σ(w)(v)].
+                         λ∈I1
+
+                                         0                   1
+Bien sûr on passe des formules pour gn,µ    à celles pour gn,µ en appliquant β des
+deux côtés du signe = puis en utilisant la formule (2) et le fait que w2 = Id.
+
+
+ 2.6. On suppose maintenant que σ est l’une des représentations σ~r suivantes :
+~r = (r1 , . . . , rf ) ∈ {0, . . . , p − 1}f et σ~r est l’unique représentation de KZ dont
+ l’espace sous-jacent est :
+                                       2               2                      2
+                  Vσ~r = Symr1 Fp ⊗Fp Symr2 Fp ⊗Fp · · · ⊗Fp Symrf Fp
+                                                
+                    $ 0                       a b
+ telle que σ~r                = Id et, si             ∈K :
+                     0 $                      c d
+                                                       p p                q q
+           a b                               a b            a b                  a b
+     σ~r            (v1 ⊗ · · · ⊗ vf ) =            v ⊗ p p v2 ⊗ · · · ⊗ q q vf
+           c d                               c d 1          c d                  c d
+                              2                                                2
+où K agit sur Symrj Fp via l’action naturelle de GL2 (F) sur Fp (noter que la
+définition des σ~r fait intervenir le choix de $). A torsion près par les caractères,
+les σ~r donnent toutes les représentations lisses irréductibles de dimension finie de
+                                                          2
+KZ sur Fp ([2]). On identifiera dans la suite Symrj Fp avec le Fp -espace vectoriel
+8                                         C. BREUIL
+
+rj
+          r −i
+      Fp xj j yji des polynômes homogènes de degré rj en les variables xj et yj avec
+L
+i=0
+l’action à gauche de K donnée par :
+                        
+                     a b    r −i
+                           x j yji = (axj + cyj )rj −i (bxj + dyj )i .
+                     c d j
+
+
+2.7. D’après [2], il existe une unique fonction ϕ : G → EndFp (Vσ~r ) à support
+dans KZα−1 KZ telle que ϕ(k1 α−1 k2 ) = σ~r (k1 ) ◦ ϕ(α−1 ) ◦ σ~r (k2 ) (k1 , k2 ∈ KZ,
+                                                                    2
+g ∈ G) et ϕ(α−1 ) = Ur1 ⊗ · · · ⊗ Urf où Urj ∈ EndFp (Symrj Fp ) est défini par
+        r −i                               r          r
+Urj (xj j yji ) = 0 si i 6= rj et Urj (yj j ) = yj j . On note T l’opérateur de Hecke
+                                                      indG
+                                                         KZ σ~
+correspondant (cf. §2.5) et, pour λ ∈ Fp ,             (T −λ)
+                                                              r
+                                                                  la représentation conoyau du
+morphisme G-équivariant injectif :
+                                               T −λ
+                                     indG           G
+                                            r −→ indKZ σ~
+                                        KZ σ~           r.
+
+On note aussi, comme dans [2], ~0 = (0, . . . , 0), p~ − ~1 = (p − 1, . . . , p − 1) et
+              ×                                                   ×
+µλ : F × → Fp le caractère non ramifié µλ (x) = λval(x) (λ ∈ Fp ). Le théorème
+suivant résume une partie des résultats de [1] et [2] :
+                                                                                ×
+ Théorème 2.7.1. — Soit ~r ∈ {0, . . . , p − 1}f et χ : F × → Fp un caractère
+lisse.
+(i) Tout quotient irréductible de (indG
+                                       KZ σ~
+                                           r )⊗(χ◦dét) est un quotient (irréductible)
+    indG
+       KZ σ~
+de (T −λ) ⊗ (χ ◦ dét) pour un certain λ ∈ Fp .
+           r
+
+                 ×          indG σ
+(ii) Si λ ∈ Fp , alors (TKZ−λ)
+                                ~
+                                r
+                                  ⊗ (χ ◦ dét) est irréductible si et seulement si (~r, λ) ∈
+                                                                                            /
+{(~0, ±1), (~p − ~1, ±1)}.
+                                                       indG σ~r
+(iii) Si (~r, λ) ∈ {(~0, ±1), (~p − ~1, ±1)}, alors (TKZ  −λ)
+                                                                ⊗ (χ ◦ dét) est de longueur
+                                                                             
+2, de semi-simplifiée isomorphe à (χµλ ◦ dét) ⊕ Sp ⊗ (χµλ ◦ dét) où Sp est une
+représentation lisse irréductible de G appelée représentation “spéciale”.
+(iv) Les seules équivalences entre les représentations irréductibles en (ii) et (iii)
+                                                                         ×
+sont les suivantes : (~r, λ) ∈ / {(~0, ±1), (~p − ~1, ±1)} (avec λ ∈ Fp ) et :
+
+                       indG
+                          KZ σ~
+                              r                indG
+                                                  KZ σ~
+                                                      r
+                                ⊗ (χ ◦ dét) ≃          ⊗ (χµ−1 ◦ dét)
+                       (T − λ)                 (T + λ)
+                     indGKZ σp
+                             ~−~1                indG
+                                                    KZ σ~0
+                                  ⊗ (χ ◦ dét) ≃           ⊗ (χ ◦ dét).
+                       (T − λ)                   (T − λ)
+(v) Il n’y a pas d’équivalences entre les représentations irréductibles en (ii) et
+                                        indG
+                                           KZ σ~
+(iii) et les quotients irréductibles de (T  )
+                                               r
+                                                 ⊗ (χ ◦ dét) pour toutes valeurs de ~r
+et χ.
+              REPRÉSENTATIONS MODULAIRES ET p-ADIQUES DE GL2 (Qp ) I                   9
+
+
+ Définition 2.7.2 ([2]). — (i) On appelle séries spéciales les représentations :
+
+                                    Sp ⊗ (χ ◦ dét).
+
+(ii) On appelle séries principales les représentations :
+
+                                  indG
+                                     KZ σ~
+                                         r
+                                           ⊗ (χ ◦ dét)
+                                  (T − λ)
+           ×
+pour λ ∈ Fp et (~r, λ) ∈/ {(~0, ±1), (~p − ~1, ±1)}.
+(iii) On appelle représentations supersingulières les quotients irréductibles de :
+
+                                  indG
+                                     KZ σ~
+                                         r
+                                           ⊗ (χ ◦ dét)
+                                    (T )
+
+pour ~r ∈ {0, . . . , p − 1}f .
+
+
+   Dans [2], il est également démontré que toute représentation lisse irréductible
+de G sur Fp admettant un caractère central est soit un caractère, soit une série
+spéciale, soit une série principale, soit une représentation supersingulière. En
+dehors du cas F = Qp qui fait l’objet de cet article, rien n’est connu (outre
+                                                        indG
+                                                           KZ σ~
+                                                               r
+leur existence [2]) sur les quotients irréductibles de (T   )
+                                                                 .
+
+
+
+
+                         3. Invariants sous le pro-p-Iwahori
+
+  On suppose maintenant F = Qp et $ = p. On fixe r ∈ {0, . . . , p − 1} et
+on note σr au lieu de σ~r la représentation de KZ définie au §2.6. On identifie
+             2    r
+Vσr = Symr Fp à    Fp xr−i y i comme au §2.6. On note également ϕ la fonction
+                 L
+                      i=0
+définie au §2.7 et T l’opérateur de Hecke associé. Dans la base (xr−i y i )0≤i≤r ,
+ϕ(α−1 ) est donc donné par la matrice :
+                                                
+                                  0 ... ... 0
+                                 .. . . . .. .. 
+                                .          . .
+                                .               .
+                                 .. . . . 0 0
+                                  0 ... 0 1
+10                                         C. BREUIL
+
+
+3.1.
+                                   r                              2
+                                         ci xr−i y i ∈ Symr Fp et λ ∈ I1 , on a :
+                                   P
+Lemme 3.1.1. — Soit v =
+                                   i=0
+                                                          r
+                                                         X               
+(9)               σr (w)ϕ(α−1 )σr (wλ )(v) =                      ci (−λ)i xr
+                                                           i=0
+                                                          r
+                                                         X                 
+(10)                  ϕ(α−1 )σr (wλ w)(v) =                       ci (−λ)r−i y r .
+                                                           i=0
+
+
+Démonstration. — Calcul.
+                                                   2
+ Corollaire 3.1.2. — Soit v ∈ Symr Fp tel que σr (w)ϕ(α−1 )σr (wλ )(v) = 0
+(resp. ϕ(α−1 )σr (wλ w)(v) = 0) pour tout λ ∈ I1 , alors v = 0.
+
+Démonstration. — On utilise 3.1.1 et le fait que, pour 0 ≤ r ≤ p − 1, la matrice :
+                              1 0 ... ... 0
+                                                   
+                            1 1 . . . . . . 1 
+                            1 2 22 . . . 2r 
+                                                   
+                            . . .           ..  .. 
+                             .. .. ..        .   .
+                                    1 r       r2   . . . rr
+est inversible modulo p. On peut aussi dire qu’un polynôme de degré ≤ p − 1 qui
+a p zéros est nul.
+                                                       indG
+                                                          KZ σr
+Corollaire 3.1.3. — La représentation                    (T )
+                                                                  est de dimension infinie.
+
+Démonstration. — Sinon, il existe N  0 tel que tout f ∈ indG            KZ σr est dans
+BN + T (indG    σ
+             KZ r   ). Considérant f = [g 0
+                                          n,0 , y r
+                                                    ] pour n > N , on a f  − T (h) ∈ BN
+                  G
+pour un h ∈ indKZ σr . Par les formules du §2.5 et le corollaire 3.1.2, cela entraı̂ne
+que h doit être à support dans Bn−1 et que les termes de f − T (h) à support dans
+Bn doivent tous être nuls. Un examen des formules (5) et (9) montre que cela est
+impossible.
+Remarque 3.1.4. — Dans [2], il est démontré que indG      KZ σr , en tant que Fp [T ]-
+module, est libre de rang infini, d’où en particulier le corollaire ci-dessus.
+ Lemme 3.1.5. — Soit n ∈ N, n ≥ 1, µ ∈ In−1 , c(X) ∈ Fp [X] de degré ≤ r et
+        0
+posons S−1 = S01 et S−1
+                     1
+                        = S00 , alors :
+                  X       0                r         0        0
+                                              
+                     c(λ) gn,µ+p  n−1 λ , x     ∈ T (Sn−1 ) + Sn−2
+                   λ∈I1
+                   X           1              r         1        1
+                                                 
+                          c(λ) gn,µ+pn−1 λ , y     ∈ T (Sn−1 ) + Sn−2 .
+                   λ∈I1
+             REPRÉSENTATIONS MODULAIRES ET p-ADIQUES DE GL2 (Qp ) I                           11
+
+
+Démonstration.
+             P — La deuxième assertion se déduit de la première en appliquant
+β. Si c(X) = ri=0 ci X i , alors, on vérifie à partir des formules (5), (7) et (9) que :
+          X                                 r
+                                             X
+             0                 r
+                                     0
+                                               ci (−1)i xr−i y i ∈ Sn−2
+                                                                    0
+                                                               
+            gn,µ+pn−1 λ , c(λ)x − T gn−1,µ ,
+          λ∈I1                                       i=0
+
+d’où le résultat.
+
+ Lemme 3.1.6. — Soit f : Fp → Fp une application quelconque. Alors il existe
+un unique polynôme c(X) ∈ Fp [X] de degré inférieur ou égal à p − 1 tel que
+c(λ) = f (λ) pour tout λ ∈ Fp .
+
+                                                                   p
+Démonstration. — Il s’agit de trouver (a0 , . . . , ap−1 ) ∈ Fp tel que :
+                              p−1
+                              X
+                                    ai λi = f (λ) ∀λ ∈ Fp .
+                              i=0
+
+L’existence et l’unicité découlent du fait que la matrice :
+                         1     0       ...     ...     0
+                                                             
+                      1       1       ...     ...     1      
+                      1       2       22      ...    2p−1 
+                                                             
+                      .       ..       ..      ..      ..    
+                       ..      .        .       .       .    
+                         1 p − 1 (p − 1)2 . . . (p − 1)p−1
+est inversible modulo p.
+
+ Lemme 3.1.7. — Soit i ∈ {0, . . . , p − 1}. On a :
+
+                          λi = 0 si i 6= p − 1
+                  P
+                  Pλ∈Fp i
+                     λ∈Fp λ     = −1 si i = p − 1.
+
+Démonstration. — Triviale.
+
+ Lemme 3.1.8. — Soit (λ0 , λ1 , λ2 ) ∈ F3p , alors :
+                                                    λp0 +1−(λ0 +1)p
+[λ0 ] + p[λ1 ] + p2 [λ2 ] + 1 ≡ [λ0 + 1] + p[λ1 +          p
+                                                                    ] + p2 [λ2 + Pλ0 (λ1 )] (p3 )
+                                                                                  λp +1−(λ0 +1)p
+où Pλ0 (X) est un polynôme de degré p−1 et de coefficient dominant − 0               p
+                                                                                                 .
+
+Démonstration. — Calcul sur les vecteurs de Witt W (Fp ) = Zp . Voir [6] par
+exemple.
+12                                        C. BREUIL
+
+
+3.2. On définit X00 = [Id, xr ], X01 = [α, y r ] et, si n ∈ Z>0 :
+                                  X X
+                     Xn0 =                 λr+1 gn,µ+p
+                                                   0               r
+                                                                      
+                                                          n−1 λ , x
+
+                                    µ∈In−1 λ∈I1
+                                     X X
+                         Xn1 =                    λr+1 gn,µ+p
+                                                       1              r
+                                                                         
+                                                             n−1 λ , y    .
+                                    µ∈In−1 λ∈I1
+                                                                                     
+                                                                                  a b
+On a Xn0 ∈ Sn0 , Xn1 ∈ Sn1 et βXn0 = Xn1 pour tout n ∈ N. Si                            ∈ KZ et
+                                                                                  c d
+                                                 
+         2r                   a b               a b
+v ∈ Sym Fp , on écrit              v pour σr         (v).
+                              c d               c d
+                                                                           0
+ Proposition 3.2.1. — Supposons r ≤ p−2 et convenons que S−1                          1
+                                                                             = S01 , S−1 =
+  0                                                             G
+S0 et S−1 = S0 . Soit n ∈ Z>0 et fn un élément de indKZ σr tel que fn ∈ Sn et
+gfn − fn ∈ T (indG    KZ σr ) + Bn−1 ∀g ∈ I(1). On a alors :
+(i) gfn − fn ∈ T (Sn−1 ) + Sn−2 ∀g ∈ I(1)
+                              2
+(ii) il existe (c0 , c1 ) ∈ Fp tels que fn − c0 Xn0 − c1 Xn1 ∈ T (Sn−1 ) + Sn−2 .
+
+Démonstration. — (i) Comme gfn − fn ∈ Sn pour g ∈ I(1), en regardant les
+supports des fonctions et d’après le corollaire 3.1.2 et les formules du §2.5, on
+voit qu’on doit avoir gfn − fn ∈ T (Bn−1 ) + Bn−1 pour tout g ∈ I(1). Comme
+T (Bn−2 ) ⊂ Bn−1 si n ≥ 2, on a gfn − fn ∈ T (Sn−1 ) + Bn−1 . En regardant encore
+les supports, cela entraı̂ne gfn − fn ∈ T (Sn−1 ) + Sn−2 .
+(ii) On écrit fn = fn0 + fn1 où fn0 est à support dans Sn0 et fn1 à support dans Sn1 .
+Comme I(1) préserve Sn0 et Sn1 , T (Sn−10                0
+                                              ) ⊂ Sn0 ∪ Sn−2          1
+                                                               et T (Sn−1             1
+                                                                          ) ⊂ Sn1 ∪ Sn−2  , on
+a gfn0 − fn0 ∈ T (Sn−1
+                     0        0
+                        ) + Sn−2  et gfn1 − fn1 ∈ T (Sn−11         1
+                                                             ) + Sn−2   pour tout g ∈ I(1).
+Il suffit donc de montrer fn0 − c0 Xn0 ∈ T (Sn−1 0          0
+                                                      ) + Sn−2   pour un c0 ∈ Fp , l’égalité
+                   1
+analogue pour fn s’en déduisant par le même raisonnement P             appliqué à β −1 fn1
+en remarquant que β −1 normalise I(1). On écrit donc fn0 = λ∈In [gn,λ            0
+                                                                                     , vλ ] où
+              2
+vλ ∈ Symr Fp . Un calcul donne (en utilisant 3.1.8) :
+                                                          
+        1 pn                                              1 1
+                                               h                         i
+                   0              0                0
+                [gn,λ , vλ ] − [gn,λ , vλ ] = gn,λ ,            v − vλ
+        0 1                                               0 1 λ
+                                                              λpn−1 +1−(λn−1 +1)p
+                                                                                !
+  1 pn−1                                                   1
+                                               h                                                i
+             0               0                     0
+           [gn,λ , vλ ] − [gn,λ    , v λ   ] =   gn,λ+1 ,              p            v λ − v λ
+  0   1                         +1      +1
+                                                           0           1
+                                                                                             +1
+
+
+
+où λ+1 = [λ0 ] + p[λ1 ] + . . . + pn−1 [λn−1 + 1] si λ = [λ0 ] + p[λ1 ] + . . . + pn−1 [λn−1 ]
+(λi ∈ Fp ). D’après 3.1.1 et l’hypothèse, on doit donc avoir pour tout λ ∈ In :
+                                                
+                                            1 1
+(11)                                               v − v λ ∈ Fp x r
+                                            0 1 λ
+                           λpn−1 +1−(λn−1 +1)p
+                                               !
+                        1
+(12)                                 p           vλ − vλ+1 ∈ Fp xr .
+                        0            1
+            REPRÉSENTATIONS MODULAIRES ET p-ADIQUES DE GL2 (Qp ) I                      13
+
+
+L’égalité (11) entraı̂ne vλ ∈ Fp xr + Fp xr−1 y et, en notant vλ = cλ xr + dλ xr−1 y,
+l’égalité (12) entraı̂ne :
+                         λpn−1 + 1 − (λn−1 + 1)p r
+                                               
+         cλ − cλ+1 + dλ                           x + (dλ − dλ+1 )xr−1 y ∈ Fp xr .
+                                    p
+Donc dλ − dλ+1 = 0 et dλ ne dépend que de [λ]n−1 et pas de λn−1 . Fixons [λ]n−1
+et notons dλ = d[λ]n−1 et cλ = c[λ]n−1 (λn−1 ) que l’on voit comme un polynôme
+en λn−1 de degré ≤ p − 1 par le lemme 3.1.6. Les formules (5), (9) et le calcul
+précédent montrent que :
+                                                          λpn−1 + 1 − (λn−1 + 1)p
+         c[λ]n−1 (λn−1 ) − c[λ]n−1 (λn−1 + 1) + d[λ]n−1
+                                                                     p
+est un polynôme en λn−1 de degré r. Comme c[λ]n−1 (λn−1 ) − c[λ]n−1 (λn−1 + 1) est
+                                                                          λp   +1−(λ   +1)p
+                                                                                     n−1
+un polynôme en λn−1 de degré ≤ p − 2 et comme r ≤ p − 2, d[λ]n−1 n−1             p
+doit être aussi de degré ≤ p − 2, ce qui oblige d[λ]n−1 = 0. Donc c[λ]n−1 (λn−1 ) −
+c[λ]n−1 (λn−1 + 1) doit être de degré ≤ r, ce qui force c[λ]n−1 (λn−1 ) de degré ≤ r + 1.
+Changeant de notations, on peut donc écrire :
+                                  X X
+                           fn0 =              0
+                                           [gn,µ+p               r
+                                                  n−1 λ , cµ (λ)x ]
+
+                                   µ∈In−1 λ∈I1
+
+                                                          0       0
+avec cµ (X) ∈ Fp [X] de degré ≤ r + 1. Modulo T (Sn−1       ) + Sn−2 , on peut supposer
+              r+1
+cµ (λ) = cµ λ      par le lemme 3.1.5 où cµ ∈ Fp ne dépend que de µ. Donc :
+                       X       X
+               fn0 −        cµ   λr+1 [gn,µ+p
+                                        0             r         0        0
+                                             n−1 λ , x ] ∈ T (Sn−1 ) + Sn−2
+
+                    µ∈In−1       λ∈I1
+
+et on peut remplacer fn0 par la double somme. Il reste         à montrer que cµ est
+                                                        1 µ 0
+indépendant de µ. Soit µ ∈ In−1 , les termes dans               f − fn0 à support dans
+                                                        0 1 n
+                0           −1
+les classes KZ(gn,µ+pn−1 λ )   pour λ ∈ I1 sont :
+                                    X
+                         (c0 − cµ )     λr+1 [gn,µ+p
+                                               0             r
+                                                    n−1 λ , x ].
+
+                                        λ∈I1
+                            
+                     1 µ 0
+Mais la condition          f − fn0 ∈ T (Sn−1
+                                           0       0
+                                              ) + Sn−2 entraı̂ne (formules (5) et (9))
+                     0 1 n
+que (c0 − cµ )λr+1 est de degré r en λ, ce qui force c0 = cµ . Comme ceci doit être
+vrai pour tout µ ∈ In−1 , on voit que la constante c0 = cµ convient.
+ Remarque 3.2.2. — Pour r = p−1,      P il y a0 un énoncé  analogue
+                                                                  P à 3.2.1    à condi-
+tion de remplacer Xn0 (resp. Xn1 ) par λ∈In [gn,λ , xp−2 y] (resp. λ∈In [gn,λ
+                                                                          1
+                                                                              , xy p−2 ]).
+Nous n’en aurons pas besoin.
+ Proposition 3.2.3. — Supposons r ≤ p − 2 et soit f ∈ indG     KZ σr tel que gf −
+f ∈ T (indG σ
+          KZ r ) pour tout g ∈ I(1), alors f ∈ T (indG
+                                                       σ
+                                                     KZ r ) + B1.
+14                                           C. BREUIL
+
+
+Démonstration. — Soit n ∈ N maximal tel que Sn ∩ Supp(f ) 6= ∅. On    P suppose
+n ≥ 2 sinon c’est fini et on traite d’abord le cas n ≥ 3. On écrit f = ni=0 fi où
+fi est à support dans Si . On a :
+          g(fn ) − fn + g(fn−1 ) − fn−1 + g(fn−2 ) − fn−2 ∈ T (Bn−1 ) + Bn−3 .
+En examinant les supports, on voit que g(fn ) − fn ∈ T (Bn−1 ) + Bn−1 et g(fn−1 ) −
+fn−1 ∈ T (Bn−2 ) + Bn−2 pour tout g ∈ I(1). Par le (ii) de la proposition 3.2.1
+appliqué à fn , quitte à modifier fn−2 , on peut supposer fn = c0 Xn0 + c1 Xn1 . Par le
+(i) de la proposition 3.2.1 appliqué à fn−1 , on a g(fn−1 ) − fn−1 ∈ T (Sn−2 ) + Sn−3 ,
+d’où :
+(13)              g(fn ) − fn + g(fn−2 ) − fn−2 ∈ T (Bn−1 ) + Bn−3 .
+Soit λ = [λ0 ] + p[λ1 ] + . . . + pn−1 [λn−1 ] ∈ In , un calcul donne :
+                                                              
+                                1 pn−2 0              0     1 ∗
+                                             gn,λ = gn,λ̃
+                                0      1                    0 1
+                                                                               λp +1−(λn−2 +1)p
+                                                                    h                           i
+où ∗ ∈ Zp et λ̃ = [λ0 ] + p[λ1 ] + . . . + pn−2 [λn−2 + 1] + pn−1 λn−1 + n−2        p
+(cf. lemme 3.1.8). D’où, en changeant de notation :
+                          
+                  1 pn−2                       X X
+                              Xn0 − Xn0 =                         0
+                                                          cµ (λ)[gn,µ+p         r
+                                                                       n−1 λ , x ]
+                  0    1
+                                              µ∈In−1 λ∈I1
+                                            r+1
+                      (µn−2 −1)p +1−µpn−2
+              
+où cµ (X) = X −               p
+                                                   − X r+1 ∈ Fp [X] si µ = [µ0 ] + p[µ1 ] + . . . +
+pn−2 [µn−2 ]. On déduit des formules (5), (9) et du lemme 3.1.7 :
+                                 
+                           1 pn−2
+                                    Xn0 − Xn0 − Y ∈ T (Sn−1
+                                                        0
+                                                            )
+                           0   1
+où :
+                          X (µn−2 − 1)p + 1 − µpn−2
+                  r                                        0
+     Y   = (−1) (r + 1)                                  [gn−2,[µ]     , (µn−2 x + y)r ]
+                         µ∈In−1
+                                              p                    n−2
+
+
+                          X               X (λ − 1)p + 1 − λp                 
+               r                  0                                          r
+         = (−1) (r + 1)          gn−2,µ ,                        (λx + y)
+                         µ∈In−2           λ∈Fp
+                                                       p
+                          X 
+         = (−1)r (r + 1)          0
+                                        , y r + x(∗) ,
+                                                    
+(14)                             gn−2,µ
+                            µ∈In−2
+
+∗ étant un polynôme homogèneen x et y de degré r − 1 (nul si r = 0). On a
+                                 1 pn−2
+donc, en appliquant (13) à g =            :
+                                 0    1
+                            
+              0       1 pn−2
+             cY +              fn−2 − fn−2 ∈ T (Bn−1 ) + Bn−3 + Sn1 .
+                      0   1
+               REPRÉSENTATIONS MODULAIRES ET p-ADIQUES DE GL2 (Qp ) I                                15
+
+
+Un examen des supports montre (via le corollaire 3.1.2) qu’on a en fait :
+                    
+       0      1 pn−2                     1
+      cY +             fn−2 − fn−2 ∈ T (Sn−1 ) + T (Bn−3 ) + Bn−3 + Sn1 .
+              0   1
+Les termes à support dans les classes KZ(gn−2,µ          0
+                                                                )−1 (µ ∈ In−2 ) qui apparaissent
+                                                            0
+dans le membre de droite proviennent de T (Sn−3                ) ⊂ T (Bn−3 ). Les formules (5) et
+                                                                            0
+(8) (avec le lemme 3.1.1) montrent qu’ils sont somme de [gn−2,µ                   , vµ ] pour des vµ
+          r
+dans Fp x . Pour le membre de gauche, les termes à support dans KZ(gn−2,µ                     0
+                                                                                                     )−1
+                             
+                    1 pn−2
+provenant de                      fn−2 − fn−2 sont de la forme :
+                    0     1
+                                                                           
+              1 pn−2         0                 0                0        1 1
+                           [gn−2,µ , vµ ] − [gn−2,µ , vµ ] = [gn−2,µ ,          v − vµ ]
+              0     1                                                    0 1 µ
+                                                                        
+                                                                      1 1
+                    r        r−i i
+pour des vµ ∈ ⊕i=0 Fp x y . Supposons r ≥ 1, alors                         v −v ∈ ⊕r−1   i=0 Fp x
+                                                                                                  r−i i
+                                                                                                       y.
+                                                                      0 1 µ µ
+      0
+Les [gn−2,µ , vµ ] apparaissant dans c0 Y doivent donc aussi vérifier vµ∈ ⊕r−1           i=0 Fp x
+                                                                                                   r−i i
+                                                                                                       y.
+                                 0
+La
+   formule
+               (14)   force   c    =   0.  Supposons      r  =   0.  Un  calcul  montre      qu’alors
+  1 pn−2
+              fn−2 − fn−2 = 0 puis Y = T ([Id, 1]) − [α, 1] si n = 3 et Y =
+  0    1
+                0
+                      , 1]) si n ≥ 4. Ceci ne donne rien sur c0 . On fait alors agir
+   P
+T ( µ∈In−3 [gn−3,µ
+         
+  1 pn−3
+              ∈ I(1). Un calcul analogue à (14) utilisant les lemmes 3.1.8 et 3.1.7
+  0    1
+                           
+                  1 pn−3
+montre que                    Xn0 − Xn0 − Y ∈ T (Sn−1    0
+                                                              ) où :
+                  0     1
+         X (µn−3 −1)p +1−µp                            X X (λ−1)p +1−λp
+                                   n−3    0                                        0
+   Y =                     p
+                                       [gn−2,µ , 1] =                    p
+                                                                                [gn−2,µ+p   n−3 λ , 1]
+
+         µ∈In−2                                       µ∈In−3 λ∈I1
+
+et :
+                          
+           0      1 pn−3                             1
+       cY +                    fn−2 − fn−2 ∈ T (Sn−1     ) + T (Bn−3 ) + Bn−3 + Sn1 .
+                  0      1
+                                                0                    1
+                     P         P
+Ecrivons fn−2 = µ∈In−3 λ∈I1 cµ (λ)[gn−2,µ+p            n−3 λ , 1] + fn−2 avec cµ (X) ∈ Fp [X]
+                                            1       1
+de degré ≤ p − 1 (lemme 3.1.6) et fn−2          ∈ Sn−2 . On obtient donc :
+ X X               p     p                    0                        0             1   1
+          (c0 (λ−1) p+1−λ +cµ (λ−1)−cµ (λ))[gn−2,µ+pn−3 λ , 1] ∈ T (Bn−3 )+Bn−3 +Sn +Sn−2 .
+
+µ∈In−3 λ∈I1
+
+Un examen des supports et la formule (5) montrent que le polynôme :
+               (X − 1)p + 1 − X p
+          c0                      + cµ (X − 1) − cµ (X) = −c0 X p−1 + P (X),
+                       p
+où P (X) est de degré ≤ p − 2, doit être constant. Cela force encore c0 = 0.
+Finalement, dans tous les cas on a c0 = 0 et f = c1 Xn1 + fn−1 + fn−2 + etc. En
+appliquant le raisonnement précédent à β −1 f (qui vérifie encore gβ −1 f − β −1 f ∈
+16                                       C. BREUIL
+
+
+T (indG
+      KZ σr ) pour tout g ∈ I(1) puisque β
+                                           −1
+                                              normalise I(1)), on obtient de même
+  1
+c = 0, d’où fn = 0. Par récurrence descendante sur le support de f modulo
+l’image de T , on est ainsi ramené au cas n = 2. Comme précédemment, on écrit
+alors f = f2 + f1 + f0 avec pour tout g ∈ I(1) :
+                   g(f2 ) − f2 + g(f1 ) − f1 + g(f0 ) − f0 ∈ T (B1 ).
+Par le (ii) de la proposition 3.2.1 appliqué à f2 , quitte à modifier  f0 on   peut
+                                                                           1     1
+supposer f2 = c0 X20 + c1 X21 . Le même calcul que pour n ≥ 3 donne               X20 −
+                                                                           0 1
+X20 −Y ∈ T (S10 ) où Y = (−1)r (r+1)[Id, y r +x(∗)], ∗ étant un polynôme homogène
+en x et y de degré r − 1 (nul si r = 0). On a ainsi :
+                                       
+          0        1 1                1 1
+         cY +             f − f1 +           f − f0 ∈ T (S11 ) + T (S0 ) + S21 .
+                   0 1 1              0 1 0
+Les termes à support dans la classe KZ qui apparaissent à droite proviennent de
+T (S01 ) ⊂ T (S0 ) et leur somme est encore de la forme λ[Id, xr ] pour un λ ∈ Fp . Les
+termes à support
+                      dans la classe
+                                 KZ   qui apparaissent à gauche proviennent de Y
+          1 1                     1 1
+et de             f − f0 . Pour        f − f0 , leur somme est de la forme [Id, v] avec
+          0 1 0                   0 1 0
+v ∈ ⊕r−1 i=0 Fp x
+                  r−i i
+                     y et le même raisonnement que dans le cas n ≥ 3 pour r 6= 0
+fournit c = 0, puis c1 = 0 ce qui achève
+           0
+                                              la preuve dans ce cas. Reste le cas r = 0,
+                                   1 1    1            1
+mais un calcul montre que               [g1,λ , 1] − [g1,λ , 1] = 0 pour tout λ ∈ I1 . Donc
+                                   0 1
+                                                                         
+  1 1                                     0                             1 1
+           f − f1 est à support dans S1 . Comme dans ce cas                  f − f0 = 0,
+  0 1 1                                                                 0 1 0
+on obtient c0 Y ∈ T (S11 ) + T (S0 ) + S21 + S10 avec Y = [Id, 1]. Un examen attentif
+des supports montre que cela entraı̂ne c0 = 0, puis c1 = 0 en remplaçant f par
+β −1 f . Ceci achève la preuve.
+
+ Théorème 3.2.4. — Supposons r ≤ p − 2 et notons [Id, xr ] (resp. [α, y r ])
+                                               indG
+                                                  KZ σr
+l’image de [Id, xr ] (resp. [α, y r ]) dans (T      )
+                                                        . On a :
+                                         I(1)
+                         indG
+                     
+                             KZ σr
+                                               = Fp [Id, xr ] ⊕ Fp [α, y r ].
+                       T (indGKZ  σ  r )
+
+Démonstration. — Il est d’abord clair que la famille ([Id, xr ], [α, y r ]) est libre sur
+Fp (aucune combinaison linéaire de [Id, xr ] et [α, y r ] ne peut être dans l’image de
+T pour des questions de support). Soit f ∈ indG                                     G
+                                                  KZ σr tel que gf − f ∈ T (indKZ σr )
+pour tout g ∈ I(1). Par la proposition 3.2.3, quitte à modifier f par un élément
+dans l’image de T , on peut supposer que f est à support dans B1 . Par la propo-
+sition 3.2.1, quitte à modifier encore f par un tel élément, on peut écrire :
+                         f = c0 X10 + c1 X11 + [Id, v 0 ] + [α, v 1 ]
+             REPRÉSENTATIONS MODULAIRES ET p-ADIQUES DE GL2 (Qp ) I                             17
+
+
+                 2
+où (c0 , c1 ) ∈ Fp et (v 0 , v 1 ) ∈ Vσ2r . Un calcul donne en utilisant les formules (7) et
+(9) :
+       
+  1 1                         X                          
+           X10 − X10 =               (λ − 1)r+1 − λr+1 [g1,λ 0
+                                                               , xr ]
+  0 1
+                              λ∈I1
+                                 h                r                 
+                                              r+1
+                                                  X
+                                                       r+1
+                                                            r−i i i
+                       = T Id, (−1)                     i
+                                                            x y        − [α, (−1)r+1 (r + 1)y r ].
+                                                i=0
+                                                       
+                         1 1                           1 1
+Par hypothèse,               f − f ∈ T (S0 ). Comme        [α, v 1 ] − [α, v 1 ] = 0, on
+                         0 1                           0 1
+obtient :
+                                                 h      
+                                 1 1 1 1                1 1 0
+                                                                    i
+   0          r+1             r               1 1                 0
+−c [α, (−1)         (r + 1)y ] +      c X1 − c X1 + Id,      v − v = T (f0 )
+                                 0 1                    0 1
+où f0 = [Id, w0 ] + [α, w1 ] ∈ S0 ((w0 , w1 ) ∈ Vσ2r ). Comme il n’y a pas de termes
+                                          0 −1
+à support dans les classes KZ(g1,λ         ) (λ ∈ I1 ) dans le membre de gauche, il n’y
+en a pas non plus dans T (f0 ), ce qui entraı̂ne w0 = 0 par la formule (7) (et le
+corollaire 3.1.2). Mais comme dans T ([α, w1 ]) il n’y a pas de termes à support
+dans la classe KZα−1 , on a c0 [α, (−1)r+1 (r + 1)y r ] = 0 d’où c0 = 0 puisque
+r ≤ p − 2. Le même raisonnement appliqué à β −1 f donne c1 = 0. On a donc
+f = [Id, v 0 ] + [α, v 1 ] et g([Id, v 0 ] + [α, v 1 ]) − [Id, v 0 ] − [α, v 1 ] ∈ T (S0 ) pour tout
+g ∈ I(1). Cela entraı̂ne facilement g([Id, v 0 ]) = [Id, v 0 ] et g([α, v 1 ]) = [α, v 1 ] i.e.
+        I(1)                      I(1)
+v 0 ∈ Vσr et σr (w)(v 1 ) ∈ Vσr soit finalement v 0 ∈ Fp xr et v 1 ∈ Fp y r .
+
+ Remarque 3.2.5. — Le théorème 3.2.4 est encore vrai pour r = p − 1 comme
+                                     indG
+                                        KZ σ0   indG σp−1
+conséquence de l’entrelacement entre (T  )
+                                              et KZ (T )
+                                                          : voir section suivante.
+
+
+
+                           4. Preuve des résultats principaux
+
+4.1.
+                                                                             indG
+                                                                                KZ σr
+ Corollaire 4.1.1. — Supposons r ≤ p−2, la représentation                      (T )
+                                                                                      est irréducti-
+ble.
+
+                                      indG σ
+                                    KZ r
+Démonstration. — Soit V ⊂ (T          )
+                                          une sous-G-représentation non nulle. Puisque
+                               I(1)
+I(1) est un pro-p-groupe, V           6= 0 (cf. [1] par exemple) et par 3.2.4, il existe
+            2
+(c , c ) ∈ Fp \ {(0, 0)} tel que c [Id, xr ] + c1 [α, y r ] ∈ V . Si c0 = 0 (resp. c1 = 0),
+  0 1                               0
+
+              indG σ
+alors V = (T    KZ r
+                  )
+                     puisque [α, y r ] (resp. [Id, xr ]) engendre indG
+                                                                     KZ σr (car σr est
+                           0           1
+irréductible). Supposons c 6= 0 et c 6= 0. Quitte à renormaliser, on peut prendre
+18                                               C. BREUIL
+
+                                                                             
+                                                                      1 0
+                  6 0, soit λ ∈ F×
+    0                                       r
+                                                                                                          
+c       = 1. Si r =              p tel que λ 6= 1. On a                           [Id, xr ] + c1 [α, y r ] ∈
+                                                                      0 [λ]
+V soit :
+                                    [Id, xr ] + λr c1 [α, y r ] ∈ V
+                                    [Id, xr ] + c1 [α, y r ] ∈ V
+                                                            KZ r   indG σ
+d’où on déduit [α, y r ] ∈ V . Donc on a encore V = (T     )
+                                                                 . Si r = 0, pour λ ∈ I1
+                                     0
+soit gλ ∈ K tel que gλ αKZ = g1,λ KZ. On a :
+                                         X
+                   [Id, 1] + c1 [α, 1] +   gλ [Id, 1] + c1 [α, 1] ∈ V
+                                                                 
+                                                 λ∈I1
+
+soit :
+                                        X
+        (p + 1)[Id, 1] + c1 [α, 1] +                 , 1] = [Id, 1] + c1 T ([Id, 1]) = [Id, 1] ∈ V
+                                                 0
+                                                         
+                                               [g1,λ
+                                        λ∈I1
+
+et V est encore tout.
+                         ×
+  Soit ω : Q×                                                                     ×
+              p → Fp le caractère lisse défini par ω(p) = 1 et ω(x) = x si x ∈ Zp
+(x est la réduction modulo p de x).
+ Proposition 4.1.2. — Soit r ∈ {0, . . . , p − 1}. La sous-KZ-représentation σr0
+     indG σ
+de KZ(T p−1−r
+            )
+              ⊗ (ω r ◦ dét) engendrée par l’image de [α, y p−1−r ] est isomorphe à
+σr .
+                                   
+                            a b
+Démonstration. — Soit               ∈ I et λ ∈ I1 \ {0}, un calcul donne (dans la
+                           pc d
+représentation (indG                r
+                    KZ σp−1−r ) ⊗ (ω ◦ dét)) :
+                                                     
+                  a b         p−1−r        r r     a pb p−1−r
+(15)                    [α, y       ] = a d [α,           y      ]
+                 pc d                              c d
+                                          = ar [α, y p−1−r ]
+                                                        0 −λ−1 p−1−r
+                                                            
+                       1 0        p−1−r       0
+                            [α, y       ] = [g1,λ−1 ,            y   ]
+                       λ 1                              λ    p
+                                                 = (−λ)r [g1,λ
+                                                           0
+                                                              −1 , x
+                                                                     p−1−r
+                                                                           ]
+                        w[α, y p−1−r ] = (−1)r [g1,00
+                                                      , xp−1−r ].
+                         
+               ` 1 0
+                            I wI, σr0 a donc pour espace Vσr0 sous-jacent l’image
+                              `
+Comme K =
+             λ∈I1 λ 1
+     Fp [g1,λ , xp−1−r ] ⊕ Fp [α, y p−1−r ]. Supposons d’abord r = 0, il résulte de la
+          0
+   L
+de
+        λ∈I1
+formule (7) et des lemmes 3.1.1 et 3.1.6 que :
+                     M
+                             0
+                        Fp [g1,λ , xp−1 ] ⊂ T (S00 ) + Fp [α, y p−1 ]
+                             λ∈I1
+             REPRÉSENTATIONS MODULAIRES ET p-ADIQUES DE GL2 (Qp ) I                     19
+
+
+et Vσ00 est de dimension 1, engendré par l’image [α, y p−1 ] de [α, y p−1 ]. Donc σ00 est
+un caractère (dét)s pour un s ∈ {0, . . . , p − 2}. Mais comme I agit trivialement
+sur [α, y p−1 ] (cf. formule (15)), on a s = 0 et σ00 = σ0 . Supposons maintenant
+r 6= 0 i.e. p − 1 − r ≤ p − 2. Soit f ∈ (indG                  r
+                                               KZ σp−1−r ) ⊗ (ω ◦ dét) de support dans
+  0
+S0 et non nul. Pour des raisons de support, on a :
+
+                          X
+                                      0
+                     f∈
+                      /          Fp [g1,λ , xp−1−r ] + Fp [α, y p−1−r ] + T (S0 ).
+                          λ∈I1
+
+
+
+On en déduit Vσr0 ∩(Fp [Id, xp−1−r ]⊕Fp [α, y p−1−r ]) = Fp [α, y p−1−r ] et donc, d’après
+         I(1)
+3.2.4, Vσr0 = Fp [α, y p−1−r ]. Soit σr00 ⊂ σr0 une sous-K-représentation non nulle.
+              I(1)         I(1)                                              I(1)
+On a 0 6= Vσr00 ⊂ Vσr0 = Fp [α, y p−1−r ] ce qui entraı̂ne Vσr00 = Fp [α, y p−1−r ],
+donc σr00 ≃ σr0 puisque Fp [α, y p−1−r ] engendre σr0 . La représentation σr0 est donc
+                                                     p
+irréductible. Soit c(∞) ∈ Fp et (c(λ))λ∈I1 ∈ Fp . D’après la formule (7) et les
+lemmes 3.1.1 et 3.1.5, on a c(∞)[α, y p−1−r ] + λ∈I1 c(λ)[g1,λ    0
+                                                                    , xp−1−r ] ∈ T (S0 ) si
+                                                   P
+et seulement si le polynôme en X associé à (c(λ))λ∈I1 par le lemme 3.1.6 est
+de degré ≤ p − 1 − r et a c(∞) comme coefficient de X p−1−r . Comme l’espace
+des polynômes de Fp [X] de degré ≤ p − 1 − r est de dimension p − r, on obtient
+dim(Vσr0 ) = p+1−(p−r) = r+1. La classification des représentations irréductibles
+                                                               0               s
+de dimension finie de K sur Fp (voir    [2]) force alors σr ≃ σr ⊗ (dét) pour un
+                                    a 0
+s ∈ {0, . . . , p − 2}. L’action de        ∈ I sur [α, y p−1−r ] montre qu’on doit avoir
+                                    0 1
+s = 0 i.e. σr0 ≃ σr .
+
+
+ Corollaire 4.1.3. — Soit r ∈ {0, . . . , p − 1}, il existe un (unique) isomor-
+phisme G-équivariant :
+
+                        indG
+                           KZ σr     ∼   indG
+                                            KZ σp−1−r
+                 ψr :       G
+                                    −→                  ⊗ (ω r ◦ dét)
+                      T (indKZ σr )    T (indG  σ
+                                             KZ p−1−r )
+
+                    
+tel que ψr [Id, xr ] = [α, y p−1−r ].
+
+
+Démonstration. — Il résulte de la proposition 4.1.2 et de la réciprocité de Fro-
+benius ([2]) qu’envoyer [Id, xr ] sur [α, y p−1−r ] induit un morphisme G-équivariant
+                          indG
+                             KZ σp−1−r
+surjectif ψr : indG
+                  KZ σr       (T )
+                                       ⊗(ω r ◦dét). Supposons d’abord r ∈/ {0, p−1}.
+            indG
+               KZ σp−1−r
+Par 4.1.1,       (T )
+                         ⊗ (ω r ◦ dét) est un quotient irréductible supersingulier de
+                                                                        indG
+                                                                           KZ σr
+indG
+   KZ σr . D’après le théorème 2.7.1, ψr se factorise forcément par    (T )
+                                                                                 qui est
+20                                           C. BREUIL
+
+
+encore irréductible, d’où le résultat dans ce cas. Pour r = 0, on a :
+                                               X            
+                                                      0
+                           
+             ψ0 T ([Id, 1]) = ψ0 [α, 1] +          [g1,λ , 1]
+                                                        λ∈I1
+                                                            X
+                                                                    0
+                                = βψ0 ([Id, 1]) +                  g1,λ ψ0 ([Id, 1])
+                                                            λ∈I1
+                                               X h 1 λ          i
+                                =       [w, y p−1 ] +     , y p−1
+                                                    0 1
+                                               λ∈I1
+                                                h X                i
+                                = [Id, xp−1 ] + Id,  (λx + y)p−1
+                                                               λ∈I1
+                                                        h        X             i
+                                = [Id, xp−1 ] + Id,                    λp−1 xp−1 = 0,
+                                                                λ∈I1
+
+                             indG
+                                KZ σ0
+donc ψ0 se factorise par (T ) qui est irréductible, d’où le résultat dans ce cas.
+Pour r = p − 1, on remarque que ψp−1 = ψ0−1 .
+                                                  p−1   indG σ
+Corollaire 4.1.4. — La représentation KZ    (T )
+                                                      est irréductible et :
+               G          I(1)
+                indKZ σp−1
+                                 = Fp [Id, xp−1 ] ⊕ Fp [α, y p−1 ].
+                   (T )
+
+Démonstration. — Découle de 4.1.1 et 4.1.3.
+
+     Rappelons (cf. [2]) que pour tout r ∈ {0, . . . , p − 1}, on a :
+                         indG
+                            KZ σr  ∼ indG
+                                        KZ σr
+                                  −→          ⊗ (µ−1 ◦ dét)
+                           (T )        (T )
+                             [g, v] 7−→ µ−1 (dét(g))[g, v].
+
+
+ Corollaire 4.1.5. — Les seules équivalences entre les représentations super-
+                                                                                  ×
+singulières de GL2 (Qp ) sont les suivantes (r ∈ {0, . . . , p − 1} et χ : Q×
+                                                                             p → Fp ) :
+
+              indG
+                 KZ σr                   ∼   indG
+                                                KZ σr
+                           ⊗ (χ ◦ dét) −→                ⊗ (χµ−1 ◦ dét)
+            T (indG
+                  KZ σ r )                 T (indG
+                                                 KZ σ r )
+              indG
+                 KZ σr                  ∼   indG
+                                               KZ σp−1−r
+                  G
+                          ⊗ (χ ◦ dét) −→       G
+                                                            ⊗ (χω r ◦ dét).
+            T (indKZ σr )                 T (indKZ σp−1−r )
+
+Démonstration. — On a déjà construit de telles équivalences, il s’agit de montrer
+qu’il n’y en a pas d’autres. Soit (r, r0 ) ∈ {0, . . . , p − 1}2 et χ, χ0 deux caractères
+         indG
+            KZ σr             indG
+                                 KZ σr 0
+tels que (T   )
+                  ⊗(χ◦dét) ≃ (T   )
+                                         ⊗(χ0 ◦dét). Quitte à tensoriser par χ−1 ◦dét,
+                REPRÉSENTATIONS MODULAIRES ET p-ADIQUES DE GL2 (Qp ) I                        21
+
+                                                      0                 ×
+on peut supposer χ = 1. On écrit χ0 = µλ0 ω s où λ0 ∈ Fp et s0 ∈ {0, . . . , p − 2}.
+                                                                  0    0
+L’égalité des caractères centraux entraı̂ne ω r = µλ0 2 ω r +2s d’où λ0 2 = 1 i.e. λ0 ∈
+                                 indG
+                                    KZ σr     indG
+                                                 KZ σr 0
+                                                              0
+{−1, +1} et on est ramené à (T      )
+                                          ≃ (T     )
+                                                         ⊗(ω s ◦dét) avec s0 ∈ {0, . . . , p−2}.
+Notons que pour p = 2 cela achève la preuve. Supposons p 6= 2 dans la suite.
+                                                                                     2
+D’après 3.2.4, on a [Id, xr ] 7→ c0 [Id, xr0 ] + c1 [α, y r0 ] pour (c0 , c1 ) ∈ Fp . Si g =
+       
+  a b                                                            0   0 s
+                                                                         0
+            ∈ I, on a g[Id, xr ] = ar [Id, xr ], g[Id, xr0 ] = ar +s d [Id, xr0 ] et g[α, y r0 ] =
+  pc d
+  0   r 0 +s0                                                   0   0   s0    0   r0 +s0
+as d     [α, y r0 ]. Si c0 6= 0 et c1 6= 0, cela force ar = ar +s d = as d    pour tout
+            × 2                      0             0                         1
+(a, d) ∈ (Fp ) ce qui entraı̂ne s = 0 et (r, r ) ∈ {(0, p−1), (p−1, 0)}. Si c = 0, cela
+                 0   0   s0
+force ar = ar +s d qui entraı̂ne s0 = 0 et r = r0 ou (r, r0 ) ∈ {(0, p − 1), (p − 1, 0)}.
+                                    0   0
+                                 0 r +s
+Si c0 = 0, cela force ar = as d           qui entraı̂ne r0 + s0 ∈ {0, p − 1} et soit s0 = r
+soit (s , r) = (0, p − 1). Si r + s = 0, alors s0 = 0, r0 = 0 et r = 0 ou r = p − 1.
+       0                       0      0
+
+Si r0 + s0 = p − 1 et s0 = 0, alors r0 = p − 1 et r = 0 ou r = p − 1. Enfin, si
+r0 + s0 = p − 1 et s0 6= 0, alors s0 = r et r0 = p − 1 − r.
+
+4.2. On note Gp = Gal(Qp /Qp ), Ip son sous-groupe d’inertie et on normalise
+l’injection du corps de classe local ι : Q×        ab
+                                           p ,→ Gp de telle sorte que les unifor-
+misantes s’envoient sur les Frobenius géométriques. Grâce à ι, on identifie les
+                                 ×                                        ×
+caractères (lisses) de Q×                                        ab
+                         p dans Fp et les caractères (finis) de Gp dans Fp .
+                                        ×
+ Lemme 4.2.1. — Soit ε : Gab   p → Zp le caractère cyclotomique p-adique et ε
+sa réduction modulo p. On a (ε ◦ ι)(p) = 1 et ε ◦ ι = ω.
+
+Démonstration. — Résultat classique du corps de classe local (pour la normali-
+sation précédente). Voir par exemple le §4 du chapitre III de [4].
+                                  ×       ×
+  Soit ω2 : Ip → µp2 −1 (Qp ) ⊂ Fp le caractère fondamental de niveau 2 de Serre
+                              1/(p2 −1)                     2
+défini par ω2 (g) = g(p     2
+                        p1/(p −1)
+                                  )
+                                    si g ∈ Ip . On a ω2p −1 = 1 et ω2p+1 = ω|Ip . Pour
+s ∈ {0, . . . , p}, on note ind(ω2s ) l’unique représentation irréductible de Gp de
+dimension 2 sur Fp de déterminant ω s et dont la restriction à Ip est ω2s ⊕ ω2ps .
+                                                                                           ×
+ Lemme 4.2.2. — Soit (r, r0 ) ∈ {0, . . . , p − 1}2 et χ, χ0 : Q×      p → Fp deux
+                                     r+1                   r 0 +1    0
+caractères (lisses). Alors (ind(ω2 )) ⊗ χ ≃ (ind(ω2 )) ⊗ χ si et seulement
+si (r0 , χ0 ) = (r, χ) ou (r0 , χ0 ) = (r, χµ−1 ) ou (r0 , χ0 ) = (p − 1 − r, χω r ) ou
+(r0 , χ0 ) = (p − 1 − r, χµ−1 ω r ).
+
+Démonstration. — On laisse au lecteur le soin de vérifier qu’on a bien des iso-
+morphismes pour les valeurs (r0 , χ0 ) données. Il reste à voir qu’il n’y en a pas
+                                                                         0
+d’autres. Soit (r, r0 ) et (χ, χ0 ) tels que (ind(ω2r+1 )) ⊗ χ ≃ (ind(ω2r +1 )) ⊗ χ0 . Quitte
+                                                                              0             ×
+à tensoriser par χ−1 , on peut supposer χ = 1. On écrit χ0 = µλ0 ω s où λ0 ∈ Fp
+22                                      C. BREUIL
+
+                                                                                      0     0
+et s0 ∈ {0, . . . , p − 2}. L’égalité des déterminants entraı̂ne ω r+1 = µλ0 2 ω r +1+2s
+                                                                                0           0
+d’où λ0 2 = 1 i.e. λ0 ∈ {−1, +1} et on est ramené à ind(ω2r+1 ) ≃ (ind(ω2r +1 )) ⊗ ω s .
+Quitte à inverser r et r0 et à remplacer s0 par p − 1 − s0 , on peut supposer r0 ≥ r
+                                                r0 +1+(p+1)s0             pr0 +p+(p+1)s0
+et, en restreignant à Ip , on a ω2r+1 = ω2                   ou ω2r+1 = ω2              . Le
+premier cas donne p2 − 1 | r0 − r + (p + 1)s0 qui force r0 = r et s0 = 0. Le deuxième
+cas donne p2 −1 | (p+1)(r0 +s0 )+p−1−(r0 +r) qui entraı̂ne p+1 | p−1−(r0 +r)
+qui force r0 +r = p −1. D’où p −1 | p −1+(s0 −r) qui force s0 −r ∈ {−p +1, 0}. Si
+s0 − r = −p + 1, alors s0 = 0, r = p − 1 et r0 = 0. Sinon s0 = r et r0 = p − 1 − r.
+
+   Si (π, V ) est une représentation lisse de G ou de KZ sur un Fp -espace vectoriel
+                                                                  déf
+V , on note (π ∗ , V ) la représentation donnée par π ∗ (g) · v = π(τg −1 ) · v (v ∈ V ,
+g ∈ G ou KZ et τg désigne la transposée de g dans G = GL2 (Qp )). Rappelons
+que le dual de Cartier d’une représentation de Gp est son dual usuel tordu par ε.
+ Corollaire 4.2.3. — Il existe une (unique) bijection entre les classes d’iso-
+morphisme de représentations supersingulières de GL2 (Qp ) et les classes d’iso-
+morphisme de représentations irréductibles de Gal(Qp /Qp ) de dimension 2 sur
+Fp telle que :
+                      indG KZ σr
+                                 ⊗ (χ ◦ dét) 7−→ (ind(ω2r+1 )) ⊗ χ
+                          (T )
+pour tout r ∈ {0, . . . , p − 1} et tout caractère χ. De plus, cette bijection envoie
+ indG
+    KZ σr
+          ∗
+    (T )
+             sur le dual de cartier de ind(ω2r+1 ).
+
+Démonstration. — Pour la première assertion, il faut vérifier que deux représenta-
+tions supersingulières dans la liste ci-dessus sont isomorphes si et seulement si les
+représentations galoisiennes associées le sont aussi. Cela découle de 4.1.5 et 4.2.2.
+Pour la deuxième assertion,   il est clair d’après les définitions que l’application
+f 7−→ g 7→ f (τg −1 ) induit un isomorphisme G-équivariant :
+                     
+
+                          ∗   ∼       ∗                      −r
+               (indG             G              G
+                   KZ σr ) −→ indKZ (σr ) ≃ (indKZ σr ) ⊗ (ω    ◦ dét).
+On épargne au lecteur la vérification du fait que cet isomorphisme induit par
+passage au quotient :
+                     indG σ ∗           G
+                         KZ r       ∼ indKZ σr
+                                  −→            ⊗ (ω −r ◦ dét)
+                        (T )             (T )
+qui correspond bien à la représentation (ind(ω2−r−1 )) ⊗ ω.
+
+   On peut également définir une correspondance (motivée par les résultats de
+[3]) qui inclut les représentations semi-simples de dimension 2 de Gp :
+                                                                                  ×
+ Définition 4.2.4. — Soit r ∈ {0, . . . , p − 1}, λ ∈ Fp , χ : Q×      p → Fp un ca-
+ractère lisse et [p − 3 − r] l’unique entier dans {0, . . . , p − 2} congru à p − 3 − r
+modulo p − 1. On appelle “correspondance semi-simple modulo p pour GL2 (Qp )”
+             REPRÉSENTATIONS MODULAIRES ET p-ADIQUES DE GL2 (Qp ) I                          23
+
+
+la correspondance suivante entre classes d’isomorphisme de représentations semi-
+simples de Gal(Qp /Qp ) de dimension 2 sur Fp et certaines classes d’isomor-
+phisme de représentations lisses semi-simples de GL2 (Qp ) sur Fp :
+(i) si λ = 0 :
+                                                indG
+                                                   KZ σr
+                          (ind(ω2r+1 )) ⊗ χ ←→            ⊗χ
+                                                  (T )
+(ii) si λ 6= 0 :
+     r+1                        G        ss      G                      ss
+      ω µλ        0                indKZ σr            indKZ σ[p−3−r]    r+1
+                        ⊗ χ ←→                ⊗χ⊕                     ⊗ω       ⊗χ
+         0       µλ−1               (T − λ)              (T − λ−1 )
+où “ss” signifie “semi-simplifiée”.
+
+                                                                                   indG
+                                                                                      KZ σr
+  On a noté χ au lieu de χ ◦ dét pour alléger l’énoncé. Rappelons que          (T −λ)
+                                                                                              et
+indG
+   KZ σ[p−3−r]
+   (T −λ−1 )
+               sont génériquement irréductibles (voir §2.7) et que, vu la normalisa-
+tion choisie, le caractère non ramifié µλ côté Gp envoie le Frobenius arithmétique
+sur λ−1 . On laisse au lecteur le soin de vérifier à partir du théorème 2.7.1 (et
+du corollaire 4.2.3) que l’existence d’un isomorphisme entre représentations de
+GL2 (Qp ) de cette liste entraı̂ne l’existence d’un isomorphisme entre représenta-
+tions galoisiennes associées et vice-versa. Ceci assure que la correspondance en
+4.2.4 est bien définie.
+ Remarque 4.2.5. — On verra dans [3] que les représentations de GL2 (Qp ) un
+peu
+ Gbizarresss qui
+                 apparaissent    dans ssla définition 4.2.4, à savoir les représentations
+  indKZ σr       indG
+                    KZ σ[p−3−r]    r+1
+   (T −λ)
+              ⊕     (T −λ−1 )
+                                ⊗ω         , apparaissent aussi comme réduction modulo
+p (semi-simplifiée) de représentations p-adiques simples de GL2 (Qp ), ce qui est la
+raison principale pour les introduire. Ces représentations ont génériquement une
+interprétation en termes d’induites paraboliques (cf. [2]) :
+                              indG
+                                 KZ σr
+                                       ≃ indG          r
+                                            B (µλ−1 ⊗ ω µλ )
+                              (T − λ)
+               indG
+                  KZ σ[p−3−r]     r+1         G     r                    −1
+                                                                            
+                              ⊗ ω     ≃   ind B  (ω   µ λ )ω ⊗ (µ λ−1 )ω
+                 (T − λ−1 )
+où B désigne le sous-groupe de Borel de G . On note qu’il s’agit précisément des
+séries principales dont on “aimerait qu’elles soient entrelacées mais qui ne le sont
+pas en ` = p”.
+ Remarque 4.2.6. — Supposons F = Fp ((t)), $ = t et considérons la représen-
+        indG
+           KZ σ0     indG 1
+tation (T    )
+                  = (TKZ )
+                            . Alors, au moins pour p > 2, on peut montrer que
+                                               0            
+l’image de l’élément Xn0 = µ∈In−1 λ∈I1 λ gn,µ+t
+                              P        P
+                                                    n−1 λ , 1 est invariante sous I(1)
+                                     G I(1)
+                                     indKZ σ0
+lorsque n ≥ 3. Cela entraı̂ne que       (T )
+                                                est de dimension infinie. Supposons
+F = Qpf (l’unique extension non ramifiée de Qp de degré f ) avec f > 1, $ = p
+24                                      C. BREUIL
+
+
+                         indG 1
+et considérons encore (TKZ )
+                               . Alors, au moins pour p > 2, on peut montrer que
+                        0
+                             P        P          0           
+l’image de l’élément Xn = µ∈In−1 λ∈I1 λ gn,µ+p     n−1 λ , 1 est invariante sous I(1)
+                                      G I(1)
+                                       indKZ σ0
+lorsque n ≥ 2. Cela entraı̂ne que         (T )
+                                                    est encore de dimension infinie.
+La raison pour laquelle la récurrence du §3.2 dans ce cas ne donne rien est que
+         p−1
+P
+   λ∈F λ     = 0 dès que F 6= Fp .
+
+
+                                      Références
+ [1] Barthel L., Livné R., Modular representations of GL2 of a local field : the ordinary,
+     unramified case, J. of Number Theory 55, 1995, 1-27.
+ [2] Barthel L., Livné R., Irreducible modular representations of GL2 of a local field,
+     Duke Math. J. 75, 1994, 261-292.
+ [3] Breuil C., Sur quelques représentations modulaires et p-adiques de GL2 (Qp ) II, à
+     paraı̂tre.
+ [4] Neukirch J., Class Field Theory, Springer-Verlag, 1986.
+ [5] Serre J.-P., Arbres, amalgames, SL2 , Astérisque 46, 3ième édition, Soc. Math. de
+     France, 1983.
+ [6] Serre J.-P., Corps locaux, 3ième édition, Hermann, 1968.
+ [7] Serre J.-P., Propriétés galoisiennes des points d’ordre fini des courbes elliptiques,
+     Inv. Math. 15, 1972, 259-331.
+ [8] Vignéras M.-F., Correspondance de Langlands semi-simple pour GLn (F ) modulo
+     ` 6= p, Inv. Math. 144, 2001, 177-223.
+
+
+
+C. Breuil, Département de Mathématiques, U.M.R. 8628 du C.N.R.S., Université Paris-
+    Sud, 91405 Orsay, France • E-mail : breuil@math.u-psud.fr
+

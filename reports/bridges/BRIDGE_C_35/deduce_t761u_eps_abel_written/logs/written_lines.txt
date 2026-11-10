@@ -1,0 +1,51 @@
+# verbatim Written/ACCEPT lines — labels = computed sha256 prefix (SF-1 guard), extracted Sun Oct 25 12:53:12 CDT 2026
+## W₇ action on τ=x+iε (Written HD/Consolidated: Möbius on τ)
+== sha f26a6418 (full f26a641872fc31ed3737a1e470fdefca7dd13fc2fd72ad7a5d33cf1b4bea6e50) 2026-10-17-Bridge-C-Residual-Law.md L145-L145
+Take τ = x + iε. A singularity ~ G(x)I/(2πε) at x maps under W_7 to ~ |7x|²G(−1/(7x))I/(2πε). So the cocycle h = C − λ(7τ)^{−k}C(−1/(7τ)) has bounded radial limits only if G(x) = λ(7x)^{−k}|7x|²G(−1/(7x)) for all x.
+== sha 2716a441 (full 2716a4411f2496b91cf8cbb397cd127ff2103c5c46977f142ba043d0cbaa357c) bridge_c_consolidated_rev3.tex L499-L501
+For the scalar $W_7$ question \src{1, A5}: a singularity $\sim G(x)I/(2\pi\varepsilon')$ at $x$ (with $\tau=x+i\varepsilon'$) maps under
+$W_7$ to $\sim|7x|^2G(-1/(7x))I/(2\pi\varepsilon')$, so boundedness of $C-\lambda(7\tau)^{-k}C(-1/(7\tau))$ would force
+$G(x)=\lambda(7x)^{-k}|7x|^2G(-1/(7x))$ for all $x$. This fails at the $178$ zero-mismatch points; on the $60$ pairs of common support the
+## Non-tangential boundary values (ψ/Herglotz; vertical approach maps to curve)
+== sha ca3a6d68 (full ca3a6d6835bf04e61a7e43518a806939f8d352ca97a3a7163dba3dcdbcf8f502) 2026-10-18-ER-Cancellation-Proof.md L271-L271
+**Use.** With R1, the vertical approach z = x + iy → x, which maps to a curve approaching −1/x non-tangentially, gives Ψ(x) = κ_L(−1/x) − (x/√35)Σκ_R(x). So the Herglotz values at rationals equal the exact Bernoulli sums. Combined with Theorem 1, this is now a proof, not only the earlier 33-digit numerics.
+== sha a9c9d066 (full a9c9d066c2535260b59a0cd4158e792e800ddfb86b49685decac7e7d5acb5fa1) s07_lz.tex L93-L94
+\emph{(ii) Boundary values.} Let $x>0$ be rational and let $z=x+iy\to x$ non-tangentially in $\Hb$. With $t=2\pi y$ and $t''=-2\pi i(-1/z+1/x)=t/(xz)$
+(so that $\e(-1/z)=\e(-1/x)e^{-t''}$, and $t''\to0$ non-tangentially), R1 (\S\ref{sec:EM}) gives
+== sha e7967dde (full e7967ddeacf06a934978dc09704df91479e56c91a6210c994f616aa36888892e) s09_herglotz.tex L65-L66
+For rational $x>0$ it follows, by Theorem~\ref{thm:G}(ii), that $\psi(x)=\kappa_L(-1/x)-(x/\sqrt{35})\sum_p\kappa_{p,-a}(x)$ is the boundary value of the
+right-hand side of Theorem~\ref{thm:I}.
+## Abel / radial-limit status (Written: ABSENT as prescription for residual h)
+== sha c48144bf (full c48144bfbd4dae3767fde7d2fe7860c84b19a0f95ab6282691ba030a909618cf) b088ae365177-Residual_Law_for_Bridge_C_L_A_Pursuit_2026-08-23.md L83-L83
+1. Recover or restate the precise weight-1/2 Fricke slash operator and radial limit prescription that produced the published samples.
+== sha 3a5f7aea (full 3a5f7aeaf545c381a597b7fabca3e972f98acbe06c2edddd619caceaec0c14f1) 2d0099b-U1_LEDGER_P_TL_No_Classical_Realisation_g7_C.md L57-L57
+The symbol g_7^rad is the radial limit of g_7 as q approaches a root of unity from inside the disk. RADIAL lock f768a4f already records that those limits are unavailable as a theorem from the Euler double-sum and residue vanishing. QM lock 517acae already records that a Zagier cocycle is not forced by the same input.
+== sha 13eb50e6 (full 13eb50e66a9abbff9427d7e9d7bc8872f244b291e4bb9f4cf6a1c3909887c1fd) U1_LEDGER_OBJECT_B_KERNEL_Obstruction_Written_Data_2026-09-13.md L50-L51
+Abel-Fourier definition occupancy. Kernel K_Abel(N, ε) = N^{-1/2} exp(-2 π N ε), ε = 10^{-4}, nine sign-split channels of Xi, C_axis, Theta_third. Cite bfaca06.
+Identification Dual_Abel = Per_off already closed negative 2 September.
+== sha 73e5a1a9 (full 73e5a1a94222146c0b912b0f70efb6cd17eebe3165fb15c845b2fc50837186d7) 2026-09-05-12-heavy-residual.md L13-L13
+- Dual_Abel named-object lock as Dual_Abel_off (Abel-Fourier kernel N^{-1/2} exp(-2 pi N epsilon); definition occupancy; removes Dual_Abel from missing-research). Explicitly **not** a fifth residual-flux object. Dual_Abel_off is not Per_off.
+== sha e7967dde (full e7967ddeacf06a934978dc09704df91479e56c91a6210c994f616aa36888892e) s09_herglotz.tex L31-L31
+\noindent(Same poles and residues, both vanish at $\pm i\infty$, Liouville in $\e(u)$; one-sided convergence by Abel summation.)
+## Residual defect definition (real x; no ε) — file named 3957bc442bd8, sha 1bab65c4 (SF-1)
+== sha 1bab65c4 (full 1bab65c422e4425bc4b9a833b68ba6ec814b83f1767c405ecb9236baa3b5908e) 3957bc442bd8-Construct_Higher_Fidelity_Residual_Eichler_Integral_C_2026-08-25.md L46-L46
+δh(x) = h_residual^{high}(x) − residual_automorphy(x) · h_residual^{high}(W_7(x))
+== sha 1bab65c4 (full 1bab65c422e4425bc4b9a833b68ba6ec814b83f1767c405ecb9236baa3b5908e) 3957bc442bd8-Construct_Higher_Fidelity_Residual_Eichler_Integral_C_2026-08-25.md L32-L32
+where Ξ_N is the residual truncation of Ξ at residual degree N, the residual path is the residual Fricke-compatible path (residual discrete from residual i∞ to residual x), and residual continuous extension off residual rationals is supplied by the residual incomplete integrals of the residual weight-3/2 Fourier terms.
+## Prior Bridge C convention rows (not Written HD)
+== sha a05693fb (full a05693fbfd6da3030f762241845f040a133e611b6474b7401c030020c01d1523) AUTHOR_CANDIDATE_GA3_revise_menu_2026-10-25.md L23-L23
+| R-D3 | Complex-contour / Im-shifted evaluation: integrate on w = x+iε+it (or i∞→x+iε then Γ-type tail), giving geometric convergence |q|=e^{−2πε} and explicit tail bound; take ε→0 by Abel/limit with stated bound | Rationale from fill PREREG "no convergent bound"; contour not Written | AUTHOR-ACCEPT-needed (evaluation convention, not new object) | Gives controlled error ⇒ F3 could become "controlled"; F1 outcome unknown (honest: may still FAIL if defect real) |
+== sha 9e0c3705 (full 9e0c3705655d66307135534d51134ab1cd71cd240cf13cf6f2644a5f4ae01f47) PREREG.md L4-L4
+Knobs: Path P2 i∞→x; branch principal; R-C1 Ξ source = ledger 7dbd63af5afbdf61fc61dc2f85d237bddc97c21605c062a6333ccd3a9f24ff47 (pins/CONSOLIDATED_PIN_LEDGER_2026-10-24_t604u_confirmed.md); R-D3 Im-shifted path w=x+iε+it, tail bound |q|=e^{−2πε} geometric, ε→0 Abel limit with stated bound; R-E2 slash regen from 437d4571… / 3d502756… full precision; R-B0 ψ.
+== sha 36b663d3 (full 36b663d3015b385114fec80305c1f4d79b6775e469caa6dd40740f7dce4163f5) PREREG.md L14-L14
+R-D3 contour: h(x) := ψ(x)e^{−iπ/4} − I_N(x+iε), with I_N(z)=Σ_ν −e^{iπ/4} c_ν (2ν)^{−1/2} e(νz) over Ξ_N106 (termwise closed form of P2 integral i∞→x+iε, vertical segment above the real endpoint). W₇ side: h(W₇x) with endpoint W₇x+iε (primary) and W₇(x+iε) (sensitivity). ε ∈ {0.1, 0.05, 0.02, 0.01, 0.005, 0}. Error/tail bounds:
+== sha 9aa52f19 (full 9aa52f19788a2992c3ace1f334516053af50bc79492e6c6225902d6432231c7a) RESULTS.md L11-L13
+Contour: P2 vertical i∞→x+iε, termwise closed form I_N(z)=Σ −e^{iπ/4}c_ν(2ν)^{-1/2}e(νz); h_ε=ψ(x)e^{−iπ/4}−I_N(x+iε); W₇ side endpoint W₇x+iε (variant W₇(x+iε)). ε∈{0.1,0.05,0.02,0.01,0.005,0}. Tail bound T(ε)=Σ_{ν>106}M(ν)(2ν)^{-1/2}e^{−2πνε}, M=√ν(2⌊√(ν/35)⌋+2); E_δ=T(1+slash)+2e-9. ε=0 reproduces REJECTED fill exactly (62.970/7.082/5.558/35.139) — consistency check.
+
+| ε | abs δ at 1/7, 3/7, 5/7, 1 | tol (t713u σ) | E_δ max | shift S(ε) |
+== sha 9aa52f19 (full 9aa52f19788a2992c3ace1f334516053af50bc79492e6c6225902d6432231c7a) RESULTS.md L21-L21
+W₇(x+iε) variant differs strongly (e.g. x=1, ε=0.05: 4.116 vs 0.0569) → convention-sensitive. Full table: author_candidates/DIAGNOSTIC_TABLE_GA3_contour_N106_2026-10-25.md bd63821f….
+== sha 9aa52f19 (full 9aa52f19788a2992c3ace1f334516053af50bc79492e6c6225902d6432231c7a) RESULTS.md L26-L28
+- F3: PASS (nonzero defect) — controlled ONLY as a regularized quantity at fixed ε≥0.02 (E_δ ≪ |δ_ε|, rigorous majorant). NOT controlled for the real-x defect: |δ_ε| not stable as ε→0 (grows ~10–100× from ε=0.05 to 0.005; tail majorant diverges at ε=0; S(ε)≈5 ≫ |δ|), and W₇-endpoint convention changes values by O(1–70×). Per PREREG criterion: F3 controlled = NO.
+Verdict: DIAGNOSTICS COMPLETE. G-A3 NOT filled (diagnostic only) | Bridge PARTIAL | READY NO | residual-C OPEN. Bridge YES / δ≡0 / residual-C newly forced: NO/NO/NO. No order78.
+Soft: (S1) tol formula retains t713u 4-dec σ; with exact regen σ→0, tol→1e-11 (F1 worse). (S2) W₇ action on Im-shifted endpoint is a convention not fixed by P1–P7 (needs AUTHOR choice). (S3) ψ evaluated on real x (principal branch) while I at x+iε — mixed regularization. (S4) Ξ_N106 only 9 terms; true ε→0 needs full Written series beyond N, outside Ξ-source lock.

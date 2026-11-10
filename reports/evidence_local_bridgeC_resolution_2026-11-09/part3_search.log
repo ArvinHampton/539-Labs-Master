@@ -1,0 +1,29 @@
+196 1 dim 6 f-eigenspace dim 0
+196 5 ERR mfinit: incorrect type in checkNF [chi] (t_VEC)
+196 8 ERR mfinit: incorrect type in checkNF [chi] (t_VEC)
+196 -4 dim 0 
+196 -8 ERR mfinit: incorrect type in checkNF [chi] (t_VEC)
+196 28 dim 9 f-eigenspace dim 4
+196 -7 dim 0 
+196 7 ERR mfinit: incorrect type in znchar (t_INT)
+196 -20 ERR mfinit: incorrect type in checkNF [chi] (t_VEC)
+196 20 ERR mfinit: incorrect type in checkNF [chi] (t_VEC)
+196 140 ERR mfinit: incorrect type in checkNF [chi] (t_VEC)
+196 -35 ERR mfinit: incorrect type in checkNF [chi] (t_VEC)
+392 1 dim 18 f-eigenspace dim 0
+392 5 ERR mfinit: incorrect type in checkNF [chi] (t_VEC)
+392 8 dim 18 f-eigenspace dim 0
+392 -4 dim 0 
+392 -8 dim 0 
+392 28 dim 17 f-eigenspace dim 6
+392 -7 dim 0 
+392 7 ERR mfinit: incorrect type in znchar (t_INT)
+392 -20 ERR mfinit: incorrect type in checkNF [chi] (t_VEC)
+392 20 ERR mfinit: incorrect type in checkNF [chi] (t_VEC)
+392 140 ERR mfinit: incorrect type in checkNF [chi] (t_VEC)
+392 -35 ERR mfinit: incorrect type in checkNF [chi] (t_VEC)
+980 1 dim 66 f-eigenspace dim 0
+980 5 dim 66 f-eigenspace dim 0
+980 8 ERR mfinit: incorrect type in checkNF [chi] (t_VEC)
+980 -4 dim 0 
+980 -8 ERR mfinit: incorrect type in checkNF [chi] (t_VEC)

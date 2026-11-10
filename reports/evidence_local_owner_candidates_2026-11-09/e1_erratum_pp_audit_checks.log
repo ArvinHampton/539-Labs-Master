@@ -1,0 +1,11 @@
+Fix1: W T W^-1 = [[1, 0], [-49, 1]] ; S T^49 S^-1 = [[1, 0], [-49, 1]] ; equal: True
+Fix4: a_11(49a1) = 4 ; chi140(11) = (140/11) = -1 ; (-7/11) = 1
+Fix4: primes p<1229 with chi140(p)=-1 and a_p(f)!=0 (first 10): [11, 37, 53, 71, 79, 113, 137, 151, 179, 191]  count: 52
+Traceback (most recent call last):
+  File "/workspace/quantum-comp/reports/evidence_local_owner_candidates_2026-11-09/e1_erratum_pp_audit_checks.py", line 31, in <module>
+    print("Fix5: det AL49 =", AL49.det(), "; W49=(0,-1;49,0) normalizes G0(980):", normalizes(W, N), "; W980 normalizes:", normalizes(W980, N), "; AL W_49^(980) normalizes:", normalizes(AL49, N))
+                                                                                                                           ~~~~~~~~~~^^^^^^^^^
+  File "/workspace/quantum-comp/reports/evidence_local_owner_candidates_2026-11-09/e1_erratum_pp_audit_checks.py", line 23, in normalizes
+    assert in_G0(g, N), g
+           ~~~~~^^^^^^
+AssertionError: Matrix([[-92, 1], [23520, 191]])

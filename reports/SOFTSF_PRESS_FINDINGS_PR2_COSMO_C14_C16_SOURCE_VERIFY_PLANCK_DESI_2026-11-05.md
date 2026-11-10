@@ -1,0 +1,3 @@
+# Soft SF PRESS — PR2 Cosmo C14+C16 source-verify Planck/PDG/ACT (+DESI optional) — 2026-11-05 ~13:31 CST America/Chicago
+FINDINGS FINDINGS_PR2_COSMO_C14_C16_SOURCE_VERIFY_PLANCK_DESI_2026-11-05.md sha256 2e02ec3f9c76f4c1c918fc191540e5093eadc96e2341d5a576399654ef58cf98
+Soft SF labels: C14 **MATCH**; C16 **MATCH**. Tip Soft SF LOCK 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 tip_touched NO. Catalog 4ed155d55c3a18ca4bc96a6a6eec4c1806abfc2e270f355f1ea58a197119dd04 UNCHANGED. invent HOLD STANDS. No CERT. No tip/catalog edit. No residual-C invent. DESI optional only. Soft SF → Auditor.

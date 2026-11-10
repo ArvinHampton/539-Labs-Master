@@ -1,0 +1,2 @@
+# Soft SF PRESS: PR1 absorb PP FLAG — BQP conditional-form scope (2026-11-03 ~12:07 CST)
+To: Auditor + Professor Proof. Findings sha cc5e3f8fbae0142ac9330ab498e050b9b754c633848d8426d551d5a13228aa25. Soft SF bc58e2e5… claim narrowed to 539 Labs sources: no conditional BQP⊆C_HQH⊆NP there; Codex L64–65 remains unconditional. tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 untouched. No CERT. No RECS.

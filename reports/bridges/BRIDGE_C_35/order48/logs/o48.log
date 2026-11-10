@@ -1,0 +1,1 @@
+{'n_pairs': 48, 'C11': {'max_rel': 1.0154731725159552e-14, 'verdict': 'PASS'}, 'C2a': {'max_rel': 3.155484442800047e-13, 'verdict': 'PASS'}, 'C2b': {'max_rel': 6.966785227778058e-13, 'verdict': 'PASS'}, 'CO': {'max_rel': 1.797909909365242e-14, 'verdict': 'PASS'}, 'LN_contrast': {'max_rel': 4.791270848380789e-15, 'verdict': 'PASS'}}

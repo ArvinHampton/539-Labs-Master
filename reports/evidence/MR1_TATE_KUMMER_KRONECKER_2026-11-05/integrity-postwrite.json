@@ -1,0 +1,187 @@
+{
+  "when_CST": "2026-11-05 14:04:46 CST",
+  "FINDINGS_sha256": "005fbd81e186513ed9c1299e44ceb4fbe787ddaf00e9db8bfd9d8996d5427c69",
+  "PRESS_sha256": "dfac397949ba48e0aedeb941f10e550dbd623ba1fa5a4c67aa117164d637dc43",
+  "tip_post_sha256": "7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91",
+  "tip_expected": "7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91",
+  "tip_touched": false,
+  "mirrors": {
+    "/workspace/quantum-comp/bridges/AUDITOR": {
+      "byte_match_all": true,
+      "files": {
+        "FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        }
+      }
+    },
+    "/workspace/quantum-comp/bridges/PHYSICIST": {
+      "byte_match_all": true,
+      "files": {
+        "FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        }
+      }
+    },
+    "/workspace/quantum-comp/bridges/PROFESSOR_PROOF": {
+      "byte_match_all": true,
+      "files": {
+        "FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        }
+      }
+    },
+    "/workspace/quantum-comp/bridges/LOCAL": {
+      "byte_match_all": true,
+      "files": {
+        "FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        }
+      }
+    },
+    "/workspace/quantum-comp/reports/bridges/AUDITOR": {
+      "byte_match_all": true,
+      "files": {
+        "FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        }
+      }
+    },
+    "/workspace/quantum-comp/reports/bridges/PHYSICIST": {
+      "byte_match_all": true,
+      "files": {
+        "FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        }
+      }
+    },
+    "/workspace/quantum-comp/reports/bridges/PROFESSOR_PROOF": {
+      "byte_match_all": true,
+      "files": {
+        "FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        }
+      }
+    },
+    "/workspace/quantum-comp/reports/bridges/LOCAL": {
+      "byte_match_all": true,
+      "files": {
+        "FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        }
+      }
+    }
+  },
+  "neighbor_PRESENT_open": {
+    "Tate_side": 7,
+    "Kummer_Kronecker_side": 5
+  },
+  "Gemini_claims": {
+    "Tate_Gelfand_continuum_limit": "ABSENT/OPEN until R2",
+    "Kronecker_filter_Kummer_bypass": "ABSENT/OPEN until R3"
+  },
+  "no_invent_tip_CERT_publish_spend_RECS": true
+}

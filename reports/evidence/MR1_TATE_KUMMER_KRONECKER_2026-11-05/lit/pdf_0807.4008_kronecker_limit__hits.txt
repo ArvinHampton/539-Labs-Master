@@ -1,0 +1,25 @@
+3:THE KRONECKER LIMIT FORMULAS VIA THE
+9:Abstract. In this paper, we give a proof of the classical Kronecker
+10:limit formulas using the distribution relation of the Eisenstein-Kronecker
+11:series. Using a similar idea, we then prove p-adic analogues of the Kronecker limit formulas for the p-adic Eisenstein-Kronecker functions defined in our previous paper.
+14:In these notes, we will give a proof of the classical first and second Kronecker limit formulas concerning the limit of values of Eisenstein-KroneckerLerch series. Our proof is based on the distribution relation of the EisensteinKronecker-Lerch series. Using a similar idea, we then prove p-adic analogues
+15:of these formulas for the p-adic Eisenstein-Kronecker functions defined in our
+20:the Eisenstein-Kronecker-Lerch series is defined as
+31:[0] ⊂ C/Γ, normalized so that θ ′ (0) = 1. Then the Kronecker limit formulas
+33:Theorem 1.1 (Kronecker limit formulas). Let c be the Euler constant c :=
+68:above theorem, valid for a fixed lattice Γ ⊂ C, using the Kronecker theta
+69:function. As in the original proof by Kronecker, we first prove the second
+71:key in our proof is the distribution relation for the Eisenstein-Kronecker
+73:Our view of understanding the Kronecker limit formulas in terms of the
+74:Kronecker theta function and the distribution relation allows us to prove the
+84:p-adic Eisenstein-Kronecker series Ea,b
+85:a, b such that b ≥ 0. This function is a p-adic analogue of the Kronecker
+103:Theorem 1.2 (p-adic Kronecker second limit formula). For any prime p ≥ 5
+112:The p-adic analogues of Kronecker second limit formula were previously
+114:via p-adic Eisenstein-Kronecker series gives a direct p-adic analogue, and is
+119:KRONECKER LIMIT FORMULAS
+124:Eisenstein-Kronecker numbers, or more precisely, the values Ka+b
+125:for a, b ≥ 0. We define the p-adic Eisenstein-Kronecker-Lerch series by
+160:2. Kronecker limit formulas
+161:2.1. Kronecker’s Theorem. In this section, we recall the definition of
+162:Eisenstein-Kronecker-Lerch series and the Kronecker theta function. Then

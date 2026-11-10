@@ -1,0 +1,57 @@
+z49 coordinated r_p 95685 exp 1
+p 7969361 m 7 BMAX 0
+Ind generator series built; support steps {0: 49, 1: 1, 2: 49, 3: 49, 4: 49, 5: 49, 6: 49, 7: 49} 0.18548154830932617
+polar(+constant) eqs 13305 trunc slots at infinity 648
+  weight 4 basis 3 Sage dim M_k(G0(49)) 18
+  weight 2 basis 0 Sage dim M_k(G0(49)) 8
+  weight 8 basis 6 Sage dim M_k(G0(49)) 36
+  weight 6 basis 3 Sage dim M_k(G0(49)) 28
+  weight 12 basis 16 Sage dim M_k(G0(49)) 56
+  weight 10 basis 9 Sage dim M_k(G0(49)) 46
+  weight 16 basis 33 Sage dim M_k(G0(49)) 74
+  weight 14 basis 18 Sage dim M_k(G0(49)) 64
+  weight 20 basis 53 Sage dim M_k(G0(49)) 92
+  weight 18 basis 40 Sage dim M_k(G0(49)) 84
+  weight 24 basis 85 Sage dim M_k(G0(49)) 112
+  weight 22 basis 69 Sage dim M_k(G0(49)) 102
+  weight 28 basis 113 Sage dim M_k(G0(49)) 130
+  weight 26 basis 99 Sage dim M_k(G0(49)) 120
+  weight 32 basis 133 Sage dim M_k(G0(49)) 148
+  weight 30 basis 125 Sage dim M_k(G0(49)) 140
+  weight 36 basis 153 Sage dim M_k(G0(49)) 168
+  weight 34 basis 143 Sage dim M_k(G0(49)) 158
+  weight 40 basis 171 Sage dim M_k(G0(49)) 186
+  weight 38 basis 161 Sage dim M_k(G0(49)) 176
+  weight 44 basis 189 Sage dim M_k(G0(49)) 204
+  weight 42 basis 181 Sage dim M_k(G0(49)) 196
+  weight 48 basis 209 Sage dim M_k(G0(49)) 224
+  weight 46 basis 199 Sage dim M_k(G0(49)) 214
+  weight 52 basis 227 Sage dim M_k(G0(49)) 242
+  weight 50 basis 217 Sage dim M_k(G0(49)) 232
+  weight 56 basis 245 Sage dim M_k(G0(49)) 260
+  weight 54 basis 237 Sage dim M_k(G0(49)) 252
+  weight 60 basis 265 Sage dim M_k(G0(49)) 280
+  weight 58 basis 255 Sage dim M_k(G0(49)) 270
+  weight 64 basis 283 Sage dim M_k(G0(49)) 298
+  weight 62 basis 273 Sage dim M_k(G0(49)) 288
+  weight 68 basis 301 Sage dim M_k(G0(49)) 316
+  weight 66 basis 293 Sage dim M_k(G0(49)) 308
+  weight 72 basis 321 Sage dim M_k(G0(49)) 336
+  weight 70 basis 311 Sage dim M_k(G0(49)) 326
+  weight 76 basis 339 Sage dim M_k(G0(49)) 354
+  weight 74 basis 329 Sage dim M_k(G0(49)) 344
+  weight 80 basis 357 Sage dim M_k(G0(49)) 372
+  weight 78 basis 349 Sage dim M_k(G0(49)) 364
+unknowns 11700 16.947801113128662
+ weight 66 done 28.214881896972656
+ weight 68 done 41.21325087547302
+ weight 70 done 55.509637117385864
+ weight 72 done 68.80316209793091
+ weight 74 done 84.9578423500061
+ weight 76 done 100.84676504135132
+ weight 78 done 115.06586003303528
+ weight 80 done 131.03982639312744
+polar matrix (11700, 13305) 211.45477986335754
+kernel dim 503 325.8516426086426
+RANK of cusp-holomorphic weight-4 truncated image at infinity through q^18: 503 target 503 330.19169306755066
+done 334.6597990989685

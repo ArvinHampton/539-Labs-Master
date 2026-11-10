@@ -1,0 +1,2 @@
+# Soft SF PRESS: PR1 ACK standalone + self-prove → PP audit only → Keeper (2026-10-27 ~15:06 CDT)
+To: Auditor. Findings sha 1dc059b83ddb3698f8f8be86b33a6f42e39df6b1214271deb583a3f0bb1fc69f. OW 3f3671d021aec72e401ef4a2f9137a72f26c68c95464f53b4711dc70c8a16080; self-prove OW cdab6ac58ce1f0e2f4f467ef1dfd36b24c1486da13593fdfe7c9f9adbea8e9a6; standing b466a2a4a51428ea3a6ab8509f74958c898cb0f915b898c95b29d9ea8b6337f7. tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 untouched. Kerr BLOCKED. No RECS.

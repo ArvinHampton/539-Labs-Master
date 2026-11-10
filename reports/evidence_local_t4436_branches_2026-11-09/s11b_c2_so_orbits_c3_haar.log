@@ -1,0 +1,5 @@
+n=1 q=3: #Lagrangians=2 (formula 2); orbit of U0 under <r_v0 r_w> = 1 (claimed 1); r_v0 U0 in that orbit: False
+n=2 q=3: #Lagrangians=8 (formula 8); orbit of U0 under <r_v0 r_w> = 4 (claimed 4); r_v0 U0 in that orbit: False
+n=2 q=5: #Lagrangians=12 (formula 12); orbit of U0 under <r_v0 r_w> = 6 (claimed 6); r_v0 U0 in that orbit: False
+n=3 q=3: #Lagrangians=80 (formula 80); orbit of U0 under <r_v0 r_w> = 40 (claimed 40); r_v0 U0 in that orbit: False
+c-3: #SO48(F23) = 23^552 (23^24-1) prod_{i=1}^{23}(23^{2i}-1); vol(K23) = #SO48(F23)/23^1128 exactly; 1/vol = 1.0018975264131855

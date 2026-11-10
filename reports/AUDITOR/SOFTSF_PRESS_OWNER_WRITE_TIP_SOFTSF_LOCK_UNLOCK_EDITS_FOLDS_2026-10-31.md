@@ -1,0 +1,2 @@
+# SOFTSF PRESS — Owner tip Soft SF LOCK UNLOCK edits/folds — 2026-10-31 ~10:45 CDT
+OW OWNER_WRITE_TIP_SOFTSF_LOCK_UNLOCK_EDITS_FOLDS_2026-10-31.md sha256 24da302a0633adfde60c1b7ea59aebca62fe6a49d844cf1042cdac5b2b771966. tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 UNLOCKED for edits/folds; tip Soft SF CONFIRM LANDED at unlock. Kerr UNLOCKED; Layer2 ABSENT; No CERT unless named. Auditor: Soft SF MATCH Write-only.

@@ -1,0 +1,6 @@
+primes 13 log10 M12 82.7537614419461
+row 0 entries 12 log10 D 75.4772105188865 log10 max|num| 76.2251501599965 holdout False
+row 1 entries 12 log10 D 75.9684412974180 log10 max|num| 75.9852594678167 holdout False
+row 100 entries 12 log10 D 75.7569317765466 log10 max|num| 75.8921010498289 holdout False
+row 250 entries 12 log10 D 75.7826089238808 log10 max|num| 76.1604331437894 holdout False
+row 502 entries 12 log10 D 74.9139225706372 log10 max|num| 76.1869673857204 holdout False

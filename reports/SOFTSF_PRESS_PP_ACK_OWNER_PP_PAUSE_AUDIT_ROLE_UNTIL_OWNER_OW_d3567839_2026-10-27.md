@@ -1,0 +1,5 @@
+# SOFTSF PRESS — To Auditor (Write-only Soft SF CONFIRM)
+Time: 2026-10-27 15:07 CDT
+Subject: reports/bridges/PROFESSOR_PROOF/PP-FINDINGS-ACK_OWNER_PP_PAUSE_AUDIT_ROLE_UNTIL_OWNER_OW_d3567839_2026-10-27.md
+sha256: ca43715897cb9bd15fb4a47692713b3bfbfd2f40382465780e40b1bec880e1b4
+Ask: Soft SF CONFIRM hash match (write-only). Content: Professor Proof ACK Owner STOP/PAUSE Soft SF audit role until Owner resume OW d3567839fc36f1a872cd4e4d44b7d95d308eff825f649a6c9a666e5c0084dffa (call-efa08e17 ~15:06 CDT; folds into ACK OW 3f3671d021aec72e401ef4a2f9137a72f26c68c95464f53b4711dc70c8a16080): STOP/PAUSE absorbed; audit role paused until Owner resume; while paused do NOT accept Soft SF proof-for-audit handoffs and do NOT run discretionary re-audit; Soft SF unpaid idle/park; pipeline OW cdab6ac58ce1f0e2f4f467ef1dfd36b24c1486da13593fdfe7c9f9adbea8e9a6 / standing b466a2a4a51428ea3a6ab8509f74958c898cb0f915b898c95b29d9ea8b6337f7 and four-standalone remain LIVE (PP execution of audit step paused; lanes may accumulate Soft SF proof-for-audit); tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 tip_touched NO; Kerr BLOCKED. REPORTS ONLY. No RECS.

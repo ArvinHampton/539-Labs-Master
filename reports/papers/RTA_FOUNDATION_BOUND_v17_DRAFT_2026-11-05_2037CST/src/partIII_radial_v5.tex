@@ -1,0 +1,86 @@
+%=====================================================================
+\section{The completion law and the order $t^{-1/2}$ coefficient}\label{sec:radial}
+%=====================================================================
+Notation is that of Section~\ref{sec:shadow}. For a rational $x$ write $S(\e(x)e^{-t})\sim\sum_{j\ge0}A_j(S)(x)\,t^{(j-2)/2}$; on $\Hb$ this is $\tau=x+it/(2\pi)$, $y=t/(2\pi)$.
+By Lemma~\ref{lem:Pinv}, $A_j(PS)=P\,A_j(S)$. Put $\bar B_1(u)=\{u\}-\frac12$ for $u\notin\Z$ and $\bar B_1(u)=0$ for $u\in\Z$.
+
+\subsection{The transformation law of the completions}
+\begin{proposition}\label{prop:zw}
+For every companion, $\widehat H$ and $\widehat G_O$ satisfy $F(-1/\tau)=\tau\,35^{-1/2}MF(\tau)$ and $F(\tau+1)=TF(\tau)$.
+\end{proposition}
+\begin{proof}
+Let $A^*=(2,7)$ be the diagonal of $A$. For $c_1,c_2$ with $Q(c_i)<0$ and $B(c_1,c_2)<0$ put $\hat\rho(\nu)=E(B(c_1,\nu)\sqrt y/\sqrt{-Q(c_1)})-E(B(c_2,\nu)\sqrt y/\sqrt{-Q(c_2)})$
+and $\hat\vartheta_{a,b}=\sum_{\nu\in a+\Z^2}\hat\rho(\nu)\e(Q(\nu)\tau+B(\nu,b))$. By \cite[Cor.~2.9]{Zw} (with $r=2$, $\det A=-35$),
+\[ \hat\vartheta_{a,b}(\tau+1)=\e\big(-Q(a)-\tfrac12B(A^{-1}A^*,a)\big)\hat\vartheta_{a,a+b+\frac12A^{-1}A^*}(\tau),\qquad
+\hat\vartheta_{a,b}(-1/\tau)=\frac{i}{\sqrt{35}}(-i\tau)\,\e(B(a,b))\sum_{p\in A^{-1}\Z^2/\Z^2}\hat\vartheta_{b+p,-a}(\tau). \]
+Here $\frac12A^{-1}A^*=(\frac12,0)$ and $i(-i\tau)=\tau$. These are exactly the $T$- and $S$-rules from which $T$ and $M$ are formed (Section~\ref{sec:shadow}); the
+reduction rules of Definition~\ref{def:companion} hold termwise for every weight depending on $\nu$ only, and the closure of the $105$ companions under the rules is a
+finite computation in $\Q$. Since $E$ is odd, $\frac12\big(E(s_{c_1}\sqrt y)+E(s_c\sqrt y)\big)$ is $\frac12\hat\rho$ for the pair $(c_1,-c)$. For $\widehat H$ the pair is
+$c_1=(-1,1)$, $-c_2=(-4,1)$ with $Q=-\frac52,-\frac{17}2$ and $B(c_1,-c_2)=-20$; for $\widehat G_O$ it is $c_1$, $-c'=(-7,2)$ with $Q=-\frac52,-35$ and $B(c_1,-c')=-35$.
+\end{proof}
+By Lemma~\ref{lem:W}, Proposition~\ref{prop:zw} is consistent only with $P$-odd vectors; indeed $\hat\rho$ is odd.
+
+\subsection{Radial triviality of the completed odd part}
+\begin{theorem}\label{thm:radtriv}
+Let $\widehat F_{\rm odd}=\frac12\widehat G_O-\widehat H$. For every companion and rational $x$, $\widehat F_{\rm odd}(x+it/2\pi)=O(t^K)$ as $t\to0^+$ for every $K$.
+\end{theorem}
+\begin{proof}
+The phase $\e(xQ(\nu)+B(\nu,\beta))$ is constant on the cosets $\nu_r+N\Z^2$ of $\alpha+\Z^2$ for a suitable $N$ (Lemma~\ref{lem:period}). On a coset the sum is
+$\sum_{\mu\in\Z^2}g(\sqrt y(\nu_r+N\mu))$ with $g(w)=\hat\rho_{\rm odd}(w)e^{-2\pi Q(w)}$, where $\hat\rho_{\rm odd}$ is the combination of $E$-functions at $y=1$. In the
+coordinates $s=B(w,z)$, $s'=B(w,z')$ of a unit negative $z$ one has $e^{-2\pi Q}=e^{-\pi(s'^2-s^2)/2}$; the cone conditions give $|\hat\rho_{\rm odd}(w)|\le Ce^{-\pi s_*^2}$ on
+the region where $Q<0$, with $s_*$ the distance to the cone boundary as in the convergence argument of \cite[Prop.~2.4]{Zw}, and every derivative of $E$ is a polynomial times a Gaussian;
+hence $g$ is a Schwartz function. Poisson summation gives $\sum_\mu g(\sqrt y(\nu_r+N\mu))=(N^2y)^{-1}\sum_{k\in\Z^2}\hat g(k/(N\sqrt y))\e(\cdot)$, where all terms with
+$k\ne0$ are $O(y^K)$ and the $k=0$ term is $(N^2y)^{-1}\int g=0$ because $g$ is odd.
+\end{proof}
+
+For a wall with primitive direction $d$, a vector $e$ with $(e,d)$ a basis of $\Z^2$, transverse coordinate $a$ ($\nu=ae+bd$, $a\in a_\alpha+\Z$, $b\in b_\alpha+\Z$),
+and a common period $N$ of the phase in $a$ and $b$, let $\varphi(\rho)$ be the mean of the phase over one period of the line $a=\rho$. The three walls are
+$c_1$: $d=(0,1)$, $e=(1,0)$, $a=\nu_1$; $c'$: $d=(1,0)$, $e=(0,1)$, $a=\nu_2$; $c_2$: $d=(21,-1)$, $e=(1,0)$, $a=\nu_1+21\nu_2$; with weights $\kappa_{c_1}=-\frac14$,
+$\kappa_{c'}=\frac14$, $\kappa_{c_2}=-\frac12$, so that the odd weight is $o=\sum_c\kappa_c\operatorname{sgn}(a_c)$.
+\begin{corollary}\label{cor:A1odd}
+$A_0(S^o)=0$ and
+\[ A_1(S^o)=-\sum_c2\kappa_c\sqrt{\pi/Q(d_c)}\sum_{\rho\in a_\alpha+\{0,\dots,N-1\}}\varphi_c(\rho)\,\bar B_1(\rho/N). \]
+\end{corollary}
+\begin{proof}
+$S^o=\widehat F_{\rm odd}-\sum_c\kappa_c R_c$ with $R_c=\sum_\nu\big(E(s_c\sqrt y)-\operatorname{sgn}s_c\big)\e(B(\nu,\beta))q^{Q(\nu)}$, which converges absolutely since
+$|E(u)-\operatorname{sgn}u|\le e^{-\pi u^2}$ and $q^{Q}$ contributes $e^{\pi y(s^2-s'^2)/2}$. By Theorem~\ref{thm:radtriv} it suffices to expand $R_c$. On the line $a=\rho$
+(fixed coset class), $s_c$ is constant, $s_c^2=35a^2/Q(d)$, and the sum over $b$ of $e^{-tQ}$ times the periodic phase equals $\varphi(\rho)\sqrt{\pi/(tQ(d))}e^{ts_c^2/4}+O(t^K)$ by
+Poisson summation. The remaining sum over $a\in\rho+N\Z$ is $\sum h(\sqrt t\,a)$ with $h(u)=(E(\sigma u/\sqrt{2\pi})-\operatorname{sgn}u)e^{\sigma^2u^2/4}$, $\sigma^2=35/Q(d)$;
+$h$ is odd, smooth on each side of $0$ with jump $-2$ and Gaussian decay. Lemma~\ref{lem:EM1}, applied on both half-lines, gives
+$\sum_{a\in\rho+N\Z}h(\sqrt t a)=(N\sqrt t)^{-1}\int h+2\bar B_1(\rho/N)+O(\sqrt t)$ with $\int h=0$. Collect the factor $\sqrt{\pi/(tQ(d))}$ and the sign of $S^o=-\sum\kappa_cR_c+\dots$.
+\end{proof}
+
+\subsection{The even part}
+\begin{theorem}\label{thm:evenA1}
+Let $E=\frac12(1+s_1s_2)$. For every companion and rational $x$, $A_1(S^E)=0$.
+\end{theorem}
+\begin{proof}
+Fix a coset $\nu_r+N\Z^2$ on which the phase is constant; $\nu=(\rho_1+Ni,\rho_2+Nj)$. One has $E=\chi_{++}+\chi_{--}$, where $\chi_{++}$ is the indicator of
+the closed quadrant $\nu_1,\nu_2\ge0$ with weight $\frac12$ on each boundary half-axis and $\frac14$ at the origin, and $\chi_{--}(\nu)=\chi_{++}(-\nu)$; this is checked on the
+open quadrants, the four half-axes and the origin. On the closed quadrant $Q$ is positive definite, so $h(w)=e^{-Q(w)}$ is Gaussian there and $e^{-tQ(\nu)}=h(\sqrt t\nu)$.
+Lemma~\ref{lem:EM1} in the form $\sum'_{u\in\rho+N\Z,\,u\ge0}\phi(\sqrt tu)=(N\sqrt t)^{-1}\int_0^\infty\phi-\bar B_1(\rho/N)\phi(0)+O(\sqrt t)$ (the prime giving weight $\frac12$
+to $u=0$), applied in $\nu_2$ and then in $\nu_1$, gives for the $\chi_{++}$-sum on the coset the $t^{-1/2}$ coefficient
+$-N^{-1}\big[\bar B_1(\rho_1/N)\int_0^\infty h(0,w)dw+\bar B_1(\rho_2/N)\int_0^\infty h(w,0)dw\big]$. For $\chi_{--}$ substitute $\nu=-\mu$; $\mu$ runs over the coset
+$-\nu_r+N\Z^2$ of the closed quadrant with the same constant phase, so its coefficient is the same expression with $-\rho_1,-\rho_2$, which is the negative since $\bar B_1$
+is odd. The two cancel on every coset.
+\end{proof}
+
+\subsection{The order $t^{-1/2}$ coefficient}
+For a line $\nu=\nu_0+bu$ with $Q(u)>0$ and a weight equal to $w_\pm$ for $\pm b$ large, the $t^{-1/2}$ coefficient is $\frac{\sqrt\pi}2Q(u)^{-1/2}\,\mean(\text{phase})(w_++w_-)$
+(Lemma~\ref{lem:EM1}). Denote by $A_1^{\rm lines}$ the sum of these over the line terms of Proposition~\ref{prop:lines}: $h_2$-lines ($u=(1,0)$, $w_+=h_2$, $w_-=0$),
+$h_1$-lines ($u=(0,1)$, $w_+=h_1-\frac12g_1$, $w_-=-\frac12g_1$) and $g_3$-lines ($u=(21,-1)$, $w_\pm=-\frac12g_3$); points contribute only at order $t^0$.
+\begin{theorem}\label{thm:A1exact}
+For every companion and rational $x$, $A_1=A_1^{\rm lines}+A_1(S^o)$ with $A_1(S^o)$ as in Corollary~\ref{cor:A1odd}. Equivalently,
+$A_1-A_1^{\rm lines}+\sum_c\kappa_cA_1(R_c)=0$: the order $t^{-1/2}$ coefficient minus the explicit completion and line terms vanishes identically, and in particular
+satisfies every law trivially.
+\end{theorem}
+\begin{proof}
+$S^W=S^p+S^{W-p}$ and $S^p=S^o+\frac12S^E$ (Lemma~\ref{lem:psplit}). Apply Theorem~\ref{thm:evenA1}, Corollary~\ref{cor:A1odd} and the line formula.
+\end{proof}
+\begin{corollary}\label{cor:A1parity}
+$A_0$ is $P$-even and $A_1-A_1^{\rm lines}$ is $P$-odd.
+\end{corollary}
+\begin{catbremark}
+The identity of Theorem~\ref{thm:A1exact} was checked against the independent piece decomposition of Theorem~\ref{thm:expansion} on $105$ companions at $216$ points and
+their $S$-images (Appendix~\ref{app:catB}, item~\ref{catB:sh5}).
+\end{catbremark}

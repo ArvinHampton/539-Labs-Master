@@ -1,0 +1,303 @@
+---- arxiv_api_tate_thesis ---- https://export.arxiv.org/api/query?search_query=all:%22Tate+thesis%22+OR+all:%22Fourier+analysis+in+number+fields%22&start=0&max_results=5
+HTTP 200 size=8688
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxi
+---- arxiv_api_local_zeta_Igusa ---- https://export.arxiv.org/api/query?search_query=all:%22local+zeta+functions%22+Igusa&start=0&max_results=5
+HTTP 200 size=8119
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxi
+---- arxiv_api_gelfand_graev ---- https://export.arxiv.org/api/query?search_query=all:%22Gelfand-Graev%22+OR+all:%22Gelfand–Graev%22&start=0&max_results=5
+HTTP 200 size=7209
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxi
+---- arxiv_api_bruhat_schwartz ---- https://export.arxiv.org/api/query?search_query=all:%22Bruhat-Schwartz%22+OR+all:%22Bruhat–Schwartz%22+OR+ti:Bruhat+AND+ti:Schwartz&start=0&max_results=8
+HTTP 200 size=8439
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxi
+---- arxiv_api_kummer_cyclotomic ---- https://export.arxiv.org/api/query?search_query=all:Kummer+cyclotomic+%22unique+factorization%22&start=0&max_results=5
+HTTP 200 size=6774
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxi
+---- arxiv_api_kronecker_limit ---- https://export.arxiv.org/api/query?search_query=ti:%22Kronecker+limit%22+OR+all:%22Kronecker+limit+formula%22&start=0&max_results=5
+HTTP 200 size=6472
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxi
+---- arxiv_api_kronecker_symbol ---- https://export.arxiv.org/api/query?search_query=ti:%22Kronecker+symbol%22+OR+all:%22Kronecker+symbol%22+quadratic&start=0&max_results=5
+HTTP 200 size=6521
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxi
+
+=== CONCRETE SOURCE FETCHES ===
+---- arxiv_api_gelfand_shilov ---- https://export.arxiv.org/api/query?search_query=all:%22Gelfand-Shilov%22+OR+all:%22Gelfand–Shilov%22+distribution&start=0&max_results=5
+HTTP 200 size=9138
+---- arxiv_api_tamagawa ---- https://export.arxiv.org/api/query?search_query=ti:Tamagawa+OR+all:%22Tamagawa+number%22+adelic&start=0&max_results=5
+HTTP 200 size=9414
+---- arxiv_api_kummer_ideal_history ---- https://export.arxiv.org/api/query?search_query=all:Kummer+%22ideal+numbers%22+OR+all:Kummer+%22cyclotomic+integers%22+factorization&start=0&max_results=8
+HTTP 200 size=14040
+---- arxiv_api_schwartz_bruhat_local ---- https://export.arxiv.org/api/query?search_query=all:%22Schwartz-Bruhat%22+OR+all:%22Bruhat-Schwartz+space%22&start=0&max_results=5
+HTTP 200 size=7548
+---- arxiv_api_tate_fourier_number ---- https://export.arxiv.org/api/query?search_query=ti:Tate+AND+(all:adelic+OR+all:%22local+zeta%22+OR+all:%22Fourier+analysis%22)&start=0&max_results=8
+HTTP 200 size=11229
+---- pdf_2001.01721_tate_vladimirov ---- https://ar5iv.labs.arxiv.org/html/2001.01721
+HTTP 200 size=863003
+---- abs_2011.02058_local_global_tate ---- https://arxiv.org/abs/2011.02058
+HTTP 200 size=36460
+---- pdf_2011.02058 ---- https://arxiv.org/pdf/2011.02058.pdf
+HTTP 200 size=971425
+PDF_OK pdf_2011.02058
+65:LOCAL ZETA FUNCTIONS: R× OR C×
+69:LOCAL ZETA FUNCTIONS: Q×
+95:LOCAL ZETA FUNCTIONS (BIS)
+130:of Tate’s thesis, as well as incorporating material of a more recent vintage, for example
+1151:17: LEMMA pZp is an ideal in Zp , in fact pZp is a maximal ideal in Zp , in fact
+1152:pZp is the unique maximal ideal in Zp , hence Zp is a local ring.
+1454:31: REMARK Take n ≥ 1 −then the pn Zp are principal ideals in Zp and, apart
+1456:from {0}, these are the only ideals in Zp , thus Zp is a principal ideal domain.
+1885:4: LEMMA P is a maximal ideal.
+4450:[This follows from the theory of ”fractional ideals” (details omitted).]
+4857:The Schwartz space S(Rn ) consists of those complex valued C ∞ functions which,
+4935:6: DEFINITION The Bruhat space B(G) consists of those complex valued lo-
+5539:LOCAL ZETA FUNCTIONS: R× or C×
+5547:1: DEFINITION Given f ∈ S(Rn ) and a character χ : R× → C× , the local zeta
+5567:PROOF Since f is Schwartz, there are no issues at inﬁnity. As for what happens at
+6019:the local zeta function attached to the pair (f, χ) is
+6216:LOCAL ZETA FUNCTIONS: Q×
+6223:p → C , the local zeta
+8224:5: DEFINITION The Bruhat space B(Afin ) consists of all ﬁnite linear combina-
+8237:6: DEFINITION The Bruhat-Schwartz space B∞ (A) consists of all ﬁnite linear
+8276:is a Bruhat-Schwartz function, then
+9841:LOCAL ZETA FUNCTIONS (BIS)
+9847:local zeta function attached to the pair (f, ω) is
+9916:local zeta function attached to the pair (f, ω) is
+11022:[Cyclotomic extensions are Galois and abelian.]
+---- pdf_1604.07533_schwartz_bruhat ---- https://arxiv.org/pdf/1604.07533.pdf
+HTTP 200 size=142947
+PDF_OK pdf_1604.07533_schwartz_bruhat
+4:transform on the Schwartz-Bruhat space
+8:on the space of Schwartz-Bruhat functions on locally compact
+9:Abelian groups. The result states that any appropriately additive bijection of the Schwartz space onto itself, which interchanges
+27:Key words and phrases. Fourier transform, Schwartz-Bruhat space.
+39:of tempered distributions, while the conclusion states that the map is
+42:on the Schwartz space of the Heisenberg group[11]. This result did
+57:state and prove this characterisation of the Fourier transform on LCA
+60:Before stating our results, we recall the Schwartz-Bruhat space of
+62:F. Bruhat[3] extended the notion of a smooth function to a large
+64:Osborne characterised the Schwartz-Bruhat space of functions on a
+90:We now recall the definition of S = S(G), the Schwartz-Bruhat
+94:the Schwartz-Bruhat space if f satisfies the following conditions:
+500:[3] F. Bruhat, Distributions sur un groupe localement compact et applications à
+516:on the Schwartz space, submitted for publication. matharXiv:1604.05551.
+519:[12] M. Scott Osborne, On the Schwartz-Bruhat Space and the Paley-Wiener theorem for locally compact Abelian groups, Journal of Functional Analysis 19
+524:[14] A. Wawrzyńczyk, On tempered distributions and Bochner-Schwartz theorem
+---- pdf_0707.2653_bruhat_schwartz_wave ---- https://arxiv.org/pdf/0707.2653.pdf
+HTTP 200 size=193868
+PDF_OK pdf_0707.2653_bruhat_schwartz_wave
+12:is shown that a “plane wave” f (t + ω1 x1 + · · · + ωn xn ), where f is a Bruhat-Schwartz
+55:where f belongs to the Bruhat-Schwartz space D(Qp ) of test functions, ω1 , . . . , ωn ∈ Qp ,
+120:U = O \ P . O is a subring of K called the ring of integers, P is an ideal in O called the
+121:prime ideal; the multiplicative group U is called the group of units. The ideal P contains an
+209:The strong conjugate space D′ (K) is called the space of Bruhat-Schwartz distributions.
+1427:[5] I. M. Gelfand, M. I. Graev, and I. I. Piatetski-Shapiro, Representation Theory and Automorphic Functions, Saunders, Philadelphia, 1969.
+1452:local zeta functions, Bull. Austral. Math. Soc. 70 (2004), 73–86.
+---- pdf_0807.4008_kronecker_limit ---- https://arxiv.org/pdf/0807.4008.pdf
+HTTP 200 size=175611
+PDF_OK pdf_0807.4008_kronecker_limit
+3:THE KRONECKER LIMIT FORMULAS VIA THE
+9:Abstract. In this paper, we give a proof of the classical Kronecker
+10:limit formulas using the distribution relation of the Eisenstein-Kronecker
+11:series. Using a similar idea, we then prove p-adic analogues of the Kronecker limit formulas for the p-adic Eisenstein-Kronecker functions defined in our previous paper.
+14:In these notes, we will give a proof of the classical first and second Kronecker limit formulas concerning the limit of values of Eisenstein-KroneckerLerch series. Our proof is based on the distribution relation of the EisensteinKronecker-Lerch series. Using a similar idea, we then prove p-adic analogues
+15:of these formulas for the p-adic Eisenstein-Kronecker functions defined in our
+20:the Eisenstein-Kronecker-Lerch series is defined as
+31:[0] ⊂ C/Γ, normalized so that θ ′ (0) = 1. Then the Kronecker limit formulas
+33:Theorem 1.1 (Kronecker limit formulas). Let c be the Euler constant c :=
+68:above theorem, valid for a fixed lattice Γ ⊂ C, using the Kronecker theta
+69:function. As in the original proof by Kronecker, we first prove the second
+71:key in our proof is the distribution relation for the Eisenstein-Kronecker
+73:Our view of understanding the Kronecker limit formulas in terms of the
+74:Kronecker theta function and the distribution relation allows us to prove the
+84:p-adic Eisenstein-Kronecker series Ea,b
+85:a, b such that b ≥ 0. This function is a p-adic analogue of the Kronecker
+103:Theorem 1.2 (p-adic Kronecker second limit formula). For any prime p ≥ 5
+112:The p-adic analogues of Kronecker second limit formula were previously
+114:via p-adic Eisenstein-Kronecker series gives a direct p-adic analogue, and is
+119:KRONECKER LIMIT FORMULAS
+124:Eisenstein-Kronecker numbers, or more precisely, the values Ka+b
+125:for a, b ≥ 0. We define the p-adic Eisenstein-Kronecker-Lerch series by
+160:2. Kronecker limit formulas
+161:2.1. Kronecker’s Theorem. In this section, we recall the definition of
+162:Eisenstein-Kronecker-Lerch series and the Kronecker theta function. Then
+---- pdf_2305.04996_kronecker_limit_kleinian ---- https://arxiv.org/pdf/2305.04996.pdf
+HTTP 200 size=225188
+PDF_OK pdf_2305.04996_kronecker_limit_kleinian
+3:A FIRST KRONECKER LIMIT FORMULA FOR KLEINIAN
+6:Abstract. We prove a first Kronecker limit formula for cofinite discrete subgroups of SL(2, C), also called Kleinian groups, generalizing a method of Goldstein over SL(2, R). The proof uses the Fourier expansion of Eisenstein series,
+12:1.1. The first Kronecker limit formula and Dedekind sums. The first Kronecker limit formula states that for any point z in the upper-half plane,
+67:Using an analogue of the first Kronecker limit formula for Eisenstein series associated to cofinite (but not cocompact) discrete subgroups Γ of PSL(2, R), also
+74:Kronecker limit formula.
+83:1.2. Extension to imaginary quadratic fields. In this paper, we adapt Goldstein’s method to derive a first Kronecker limit formula for Eisenstein series attached
+156:for c, d ∈ OΛ with d 6= 0, where Ek (x) is the Eisenstein-Kronecker series. Ito
+170:A FIRST KRONECKER LIMIT FORMULA FOR KLEINIAN GROUPS
+174:Elstrodt-Grunewald-Mennicke [EGM85, Theorem 5.3] proved a first Kronecker
+269:Bruhat-type decomposition. Let Γ be a discrete subgroup of PSL(2, C). Chose two
+319:A FIRST KRONECKER LIMIT FORMULA FOR KLEINIAN GROUPS
+519:A FIRST KRONECKER LIMIT FORMULA FOR KLEINIAN GROUPS
+587:4. The Kronecker Limit Formula
+683:A FIRST KRONECKER LIMIT FORMULA FOR KLEINIAN GROUPS
+744:Now we are ready to prove the analogue of Kronecker’s first limit formula for
+925:A FIRST KRONECKER LIMIT FORMULA FOR KLEINIAN GROUPS
+1096:A FIRST KRONECKER LIMIT FORMULA FOR KLEINIAN GROUPS
+1115:be the set of all fractional ideals of OK . Then for any m ∈ M, u ∈ H, s ∈ C with
+1137:depend only on the equivalence class of m in the ideal class group M/K ∗ . By
+1161:( ac db ), uA is the ideal generated by c, d as an OK -module. Note that the number of
+1288:A FIRST KRONECKER LIMIT FORMULA FOR KLEINIAN GROUPS
+---- pdf_1504.02618_kronecker_symbol ---- https://arxiv.org/pdf/1504.02618.pdf
+HTTP 200 size=115162
+PDF_OK pdf_1504.02618_kronecker_symbol
+1:Periodic continued fractions and Kronecker
+9:We study the Kronecker symbol st for the sequence of the convergents s/t of a
+11:of Jacobi symbols is always periodic, it turns out that the sequence of Kronecker
+47:s, t, t ≥ 1, is the Kronecker symbol. It coincides with the Jacobi symbol if t is odd. If
+72:(see [1], p. 28 ff.). The Kronecker symbol shares many properties with the Jacobi symbol,
+90:corresponding sequence of Kronecker symbols, which we call the Kronecker sequence of
+121:critical convergent with respect to L exists. Then the Kronecker sequence stkk , k ≥ 0, is
+123:with respect to L, then the Kronecker sequence is aperiodic.
+125:precisely. As a rule, one finds more examples with periodic Kronecker sequences than
+132:s1 /t1 = 3/2 has the effect that the Kronecker
+137:the Kronecker sequence is aperiodic.
+150:residue classes of a0 , . . . , ak mod 4. No result of this kind can hold for the Kronecker
+154:2)/3 ≡ (7 · 2j − 2)/3 mod 2j+1 . The Kronecker symbol, however, takes the
+158:Hence our approach to the Kronecker sequence differs from the above strategy of
+168:obtain the values of the Kronecker symbol in the case where tk is even. For this purpose
+525:The Kronecker symbol on the right hand side coincides with the Jacobi symbol, since
+553:The periodic case of the Kronecker symbol is contained in the following proposition.
+555:Proposition 2 In the above setting, suppose there are no critical convergents with respect to L. Then the Kronecker sequence is purely periodic with period length L except
+557:this case the Kronecker sequence is purely periodic with period length 2L.
+561: the Kronecker symbol
+760:properties. Suppose that the Kronecker sequence is periodic with period length 2i dL,
+---- pdf_1608.03957_kronecker_symbol_mock ---- https://arxiv.org/pdf/1608.03957.pdf
+HTTP 200 size=223594
+PDF_OK pdf_1608.03957_kronecker_symbol_mock
+1:MOCK CHARACTERS AND THE KRONECKER SYMBOL
+9:Along the way we prove a few new results concerning the behavior of the Kronecker symbol.
+12:One of the most familiar objects in number theory is the Kronecker symbol, denoted na
+26:possible to being characters. We will justify this statement qualitatively, and also formulate
+31:explore the relationship between mock characters and the Kronecker symbol, and use our
+32:results to obtain some new results about the Kronecker symbol. In the final section, we view
+39:Recall that a Finite State Machine is a finite collection of states along with transition
+40:rules between states. A positive integer corresponds to a program: its digits (read right to
+41:left) dictate the individual state transitions.
+43:State Machine which outputs an when given the program n (written base q).
+111:MOCK CHARACTERS AND THE KRONECKER SYMBOL
+167:We now deduce the claim in full generality. Let χ be as in the statement of the proposition.
+214:MOCK CHARACTERS AND THE KRONECKER SYMBOL
+301:3. Kronecker symbols are (mock) characters
+307:where the right hand side is the Kronecker symbol. After briefly recalling the definition
+308:and basic properties of the Kronecker symbol, we show that κa is either a Dirichlet or a
+310:functions of Kronecker symbols.
+312:3.1. The Kronecker symbol. We briefly recall the definition of the Kronecker symbol na .
+326:MOCK CHARACTERS AND THE KRONECKER SYMBOL
+383:A fundamental property of the Kronecker symbol (which we shall require in the sequel) is
+406:3.2. (Non)periodicity of the Kronecker symbol. Recall that κa (n) := na . It is common
+455:Combining Theorems 3.1 and 3.2 with basic properties of the Kronecker symbol yields the
+457:Corollary 3.3. The Kronecker symbol κa is a Dirichlet character if and only if a 6≡ 3 (mod 4).
+485:MOCK CHARACTERS AND THE KRONECKER SYMBOL
+498:• Periodicity and Kronecker symbols have also been studied in the context of periodic
+---- abs_math_0611010_gelfand_graev ---- https://arxiv.org/abs/math/0611010
+HTTP 200 size=39333
+---- pdf_math_0611010 ---- https://arxiv.org/pdf/math/0611010.pdf
+HTTP 200 size=300277
+PDF_OK pdf_math_0611010
+1:Gelfand-Graev characters of the finite unitary groups
+8:Gelfand-Graev characters and their degenerate counterparts have an important role in
+11:study degenerate Gelfand-Graev characters of the finite unitary group from a combinatorial
+12:point of view. In particular, we give the values of Gelfand-Graev characters at arbitrary
+13:elements, recover the decomposition multiplicities of degenerate Gelfand-Graev characters
+20:Gelfand-Graev modules have played an important role in the representation theory of finite
+21:groups of Lie type [4, 7, 20]. In particular, if G is a finite group of Lie type, then GelfandGraev modules of G both contain cuspidal representations of G as submodules, and have a
+22:multiplicity free decomposition into irreducible G-modules. Thus, Gelfand-Graev modules can
+24:between characters and symmetric functions (as described in [21]) to examine the Gelfand-Graev
+26:Let B < be a maximal unipotent subgroup of a finite group of Lie type G. Then the GelfandGraev character Γ of G is the character obtained by inducing a generic linear character from
+27:B < to G. The degenerate Gelfand-Graev characters of G are obtained by inducing arbitrary linear characters. In the case GL(n, Fq ), Zelevinsky [24] described the multiplicities of irreducible
+28:characters in degenerate Gelfand-Graev characters by counting multi-tableaux of specified shape
+30:degenerate Gelfand-Graev character. It is known that this multiplicity one result is not true in
+32:degenerate Gelfand-Graev character in general. This follows, for example, by work of Kotlar
+34:Gelfand-Graev character in general type. In the finite unitary case, we give a combinatorial description of which irreducible characters appear in some degenerate Gelfand-Graev character, as
+38:Gelfand-Graev character, and uses a remarkable formula for the character values of the GelfandGraev character of GL(n, Fq ) (for an elementary proof see [9]) to obtain the corresponding
+46:Keywords: finite unitary group, degenerate Gelfand-Graev, multiplicity, domino tableaux, characteristic map
+50:I. (Corollary 3.1) If Γ(n) is the Gelfand-Graev character of U(n, Fq2 ), and g ∈ U(n, Fq2 ), then
+58:Section 4 computes the decomposition of degenerate Gelfand-Graev characters in a fashion
+60:II. (Theorem 4.3) The degenerate Gelfand-Graev character Γ(k,ν) decomposes as
+73:the irreducible character χλ appears with multiplicity one in some degenerate Gelfand-Graev
+75:Another question one might ask is how the generalized Gelfand-Graev representations of the
+76:finite unitary group decompose. Generalized Gelfand-Graev representations, which were defined
+78:one dimensional) from a unipotent subgroup. Rainbolt studies the generalized Gelfand-Graev
+80:complicated than the degenerate Gelfand-Graev representations.
+---- doi_zagier_kronecker_limit ---- https://doi.org/10.1007/BF01350802
+HTTP 404 size=10600
+---- crossref_zagier ---- https://api.crossref.org/works/10.1007/BF01350802
+HTTP 404 size=19
+---- doi_washington_cyclotomic ---- https://doi.org/10.1007/978-1-4612-1934-7
+HTTP 500 size=0
+---- crossref_search_kummer_cyclotomic ---- https://api.crossref.org/works?query=Kummer%20ideal%20theory%20cyclotomic&rows=5
+HTTP 200 size=7921
+---- crossref_search_tate_thesis ---- https://api.crossref.org/works?query.bibliographic=Fourier%20analysis%20in%20number%20fields%20Tate&rows=5
+HTTP 200 size=12970
+---- crossref_search_gelfand_graev ---- https://api.crossref.org/works?query=Gelfand-Graev%20representations%20local%20fields&rows=5
+HTTP 200 size=28935
+---- crossref_zagier_bib ---- https://api.crossref.org/works?query.bibliographic=Kronecker%20limit%20formula%20real%20quadratic%20fields%20Zagier&rows=5
+HTTP 200 size=29330
+---- crossref_zagier_mathann ---- https://api.crossref.org/works?query.container-title=Mathematische%20Annalen&query.author=Zagier&query=Kronecker&rows=5
+HTTP 200 size=4461
+---- pdf_2001.01721 ---- https://arxiv.org/pdf/2001.01721.pdf
+HTTP 200 size=542490
+PDF_OK pdf_2001.01721
+---- pdf_1009.3680_local_zeta ---- https://arxiv.org/pdf/1009.3680.pdf
+HTTP 200 size=281239
+PDF_OK pdf_1009.3680_local_zeta
+---- arxiv_api_kummer_fermat_history ---- https://export.arxiv.org/api/query?search_query=all:Kummer+Fermat+%22ideal%20theory%22+OR+all:%22Kummer%27s%20ideal%20numbers%22&start=0&max_results=8
+HTTP 200 size=10645
+---- pdf_Edwards_or_survey ---- https://arxiv.org/pdf/1208.5825.pdf
+HTTP 200 size=281752
+PDF_OK pdf_Edwards_or_survey
+---- crossref_edwards_flt ---- https://api.crossref.org/works?query.bibliographic=Fermat%27s%20Last%20Theorem%20Edwards%20Kummer&rows=3
+HTTP 200 size=7096
+---- crossref_washington_gtm ---- https://api.crossref.org/works?query.bibliographic=Introduction%20to%20Cyclotomic%20Fields%20Washington&rows=3
+HTTP 200 size=4968
+---- crossref_ggps ---- https://api.crossref.org/works?query.bibliographic=Representation%20Theory%20and%20Automorphic%20Functions%20Gelfand%20Graev&rows=3
+HTTP 200 size=26873
+---- abs_math_ph_0308042_bruhat_dist ---- https://arxiv.org/abs/math-ph/0308042
+HTTP 200 size=38698
+---- pdf_math_ph_0308042 ---- https://arxiv.org/pdf/math-ph/0308042.pdf
+HTTP 200 size=271033
+PDF_OK pdf_math_ph_0308042
+---- pdf_first_tamagawa_api ---- https://export.arxiv.org/api/query?search_query=all:%22Tamagawa%20number%22+Weil&start=0&max_results=3
+HTTP 200 size=5762
+---- doi_zagier_bf01343950 ---- https://doi.org/10.1007/bf01343950
+HTTP 500 size=0
+---- crossref_zagier_bf01343950 ---- https://api.crossref.org/works/10.1007/bf01343950
+HTTP 200 size=4412
+---- zagier_mpim_search ---- https://people.mpim-bonn.mpg.de/zagier/preprints.html
+HTTP 404 size=236
+---- pdf_1108.6066_kummer_ideal_numbers ---- https://arxiv.org/pdf/1108.6066.pdf
+HTTP 200 size=337130
+PDF_OK pdf_1108.6066_kummer_ideal_numbers
+---- abs_1108.6066 ---- https://arxiv.org/abs/1108.6066
+HTTP 200 size=37678
+---- pdf_1902.00718_kummer_class_unit ---- https://arxiv.org/pdf/1902.00718.pdf
+HTTP 200 size=188799
+PDF_OK pdf_1902.00718_kummer_class_unit
+---- crossref_weil_adeles ---- https://api.crossref.org/works?query.bibliographic=Adeles%20and%20algebraic%20groups%20Weil%20Tamagawa&rows=3
+HTTP 200 size=4906
+---- crossref_tate_cassels ---- https://api.crossref.org/works?query.bibliographic=Fourier%20analysis%20in%20number%20fields%20and%20Hecke%27s%20zeta-functions%20Tate&rows=5
+HTTP 200 size=10315
+---- crossref_bruhat_distributions ---- https://api.crossref.org/works?query.bibliographic=Distributions%20sur%20un%20groupe%20localement%20compact%20Bruhat&rows=3
+HTTP 200 size=13078
+=== 2001.01721 Tate hits ===

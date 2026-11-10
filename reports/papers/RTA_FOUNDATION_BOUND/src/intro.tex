@@ -1,0 +1,120 @@
+%=====================================================================
+\section{Introduction}\label{sec:gintro}
+%=====================================================================
+\subsection{Goal}
+The aim of this work is to tie Residual Ternary Algebra (RTA) to a foundation: to identify which RTA objects are governed by modular,
+mock-modular or vector-valued modular structure, and to prove each such statement. RTA, as written, has no algebraic axioms. Its objects are
+(a) elementary arithmetic of the ternary map $T_3$ and of the residual cardinality $539$ (packaging identities, the equitable partition
+$539=3\cdot68+5\cdot67$, the carrier $\mathcal O_{\rm res}$); (b) the residual series $g_s$; (c) the Bridge Series $C$ and its pieces
+$\Caxis$, $\Cthird$; and (d) a weight-$\tfrac32$ shadow $\Xi$ and a weight-$\tfrac12$ period-function candidate, described in words but not
+defined as explicit series. A ``foundation'' here means a theorem placing an object of (a)--(d) inside a structure with known transformation
+laws under $\mathrm{SL}_2(\Z)$.
+
+\subsection{What is achieved}
+\begin{enumerate}[label=(\arabic*),leftmargin=2em]
+\item For the $s$-series (Part~I): the coefficient expansion of $g_s$, its zero families, sign laws for even $s$, and complete zero sets and
+residue-class occupancy for odd $s\le33$. In particular the residue law of $g_7$ recorded in RTA follows from the expansion, and its converse holds
+(Corollary~\ref{cor:g7res}).
+\item For the Bridge Series (Part~II): $C$ and $\Cthird$ share the orthant remainder $\Porth_7$; up to theta and mock pieces this is a partial theta series
+of one ray class of $\Q(\sqrt{35})$; a Baker-type argument excludes every scalar modular or mock residual law, including every scalar $W_7$ slash law;
+the leading radial data carry a vector-valued structure coming from a Siegel theta lift.
+\item For the 35-component law vector (Part~III, new): the leading profile of $C$ is $I\,\e(7x/20)K2_0(x)$ and lies outside $\VV$; the normalized
+series $q^{-7/20}C$ has profile $I\,K2_0\in\VV$ and satisfies the vector-valued $S$-law of $\VV$; the radial expansion of $q^{-7/20}C$ and of
+$105$ companion series is computed in closed form through order $t^{0}$ at every rational point.
+\item For the foundation question (\S\ref{sec:found}): every written link between RTA and the framework above is listed with its status.
+\end{enumerate}
+
+\subsection{What is not achieved}
+\begin{enumerate}[label=(\arabic*),leftmargin=2em]
+\item No written object links $T_3$, $\mathcal O_{\rm res}$, the number $539$ or the packaging identities to $g_s$, $C$ or $\VV$. These parts of
+RTA are not tied to the modular framework by anything proved here.
+\item The shadow $\Xi$ is not identified. The vector-valued law of $\VV$ holds at leading order only; at order $t^{-1/2}$ no law of the same kind
+is known, and the numerical evidence (Appendix~\ref{app:catB}) is against closure inside the companion span.
+\item No link to the $g_s$ family is proved beyond the shared definition and the residue law.
+\item Nothing here concerns the twin prime conjecture, the Riemann hypothesis, or any security property of a hash construction.
+\end{enumerate}
+
+\subsection{Status conventions}
+Every statement in a theorem, proposition, lemma or corollary is \textbf{Category~A}: proved here; or proved by a finite exact computation
+(integer, rational, modular or cyclotomic arithmetic, including ranks modulo a prime together with the argument that transfers them to
+characteristic $0$); or proved by a finite computation in rigorous ball or interval arithmetic (labelled \emph{computer-assisted}); or proved
+conditional on a cited published theorem, named each time. \textbf{Category~B} statements (floating-point evidence, fits, singular-value ranks,
+patterns, interpretations) appear only in remarks labelled ``Remark (Category~B)'', in status boxes marked Category~B, or in the appendices.
+Part~II uses status boxes after its results; their wording is part of the record.
+
+\subsection{Organisation}
+Section~\ref{sec:prelim} fixes common notation and resolves notational conflicts between the parts. Part~I (Sections~\ref{definitions}--\ref{parity-dominance-for-odd-kle33})
+is the $s$-series. Part~II (Sections~\ref{sec:intro}--\ref{sec:open}) is the Bridge Series. Part~III (Sections~\ref{sec:law35}--\ref{sec:order4}) is
+the 35-component law vector and the normalized Bridge Series. Section~\ref{sec:found} treats the foundation question and Section~\ref{sec:gopen}
+lists open problems. Appendices~A--C contain the computational records of Parts~I--II, and Appendix~\ref{app:catB} the Category~B record of Part~III.
+
+%=====================================================================
+\section{Preliminaries and unified notation}\label{sec:prelim}
+%=====================================================================
+\subsection{Common conventions}
+$\N=\{0,1,2,\dots\}$; $\e(x)=e^{2\pi i x}$; $q=\e(\tau)$ with $\tau\in\Hb$. ``Radial'' means $q=\e(x)e^{-t}$ with $x\in\Q$ and $t\to0^+$, so that
+$q^{\lambda}=\e(\lambda x)e^{-\lambda t}$ for real $\lambda$. $(a;q)_n=\prod_{j=0}^{n-1}(1-aq^j)$. $B_1(y)=y-\tfrac12$, $B_2(y)=y^2-y+\tfrac16$,
+$B_3(y)=y^3-\tfrac32y^2+\tfrac12y$ are Bernoulli polynomials and $\bar B_j(y)=B_j(\{y\})$ their periodic versions.
+
+\subsection{The lattice}
+$A=\left(\begin{smallmatrix}2&7\\7&7\end{smallmatrix}\right)$, $B(x,y)=x^{\mathsf T}Ay$, $Q(x)=\tfrac12B(x,x)=x_1^2+7x_1x_2+\tfrac72x_2^2$. The form $Q$ has
+signature $(1,1)$ and $\det A=-35$. $D=A^{-1}\Z^2/\Z^2$ has order $35$. $a=(\tfrac7{10},-\tfrac15)$, so $Aa=(0,\tfrac72)$ and $Q(a)=-\tfrac7{20}$.
+For general $s$: $A_s=\left(\begin{smallmatrix}2&s\\s&s\end{smallmatrix}\right)$ and
+\[
+Q_s(n,k)=n^2+snk+\tfrac s2k(k+1).
+\]
+At $s=7$, $Q_7(v)=Q(v)+\tfrac72v_2=Q(v+a)+\tfrac7{20}$.
+
+\subsection{The residual series and the two series previously both written $P_s$}
+\begin{definition}\label{def:series}
+For $s\ge1$:
+\begin{enumerate}[label=(\roman*)]
+\item the \emph{$s$-series} $g_s(q)=\sum_{n\ge0}q^{n^2}/(-q^s;q^s)_n$ (in Part~I written $g_k$, with $k$ in place of $s$);
+\item the \emph{product-normalised $s$-series} $\Pprod_s(q)=(-q^s;q^s)_\infty\,g_s(q)$;
+\item the \emph{orthant series} $\Porth_s(q)=\sum_{n,k\ge0}q^{Q_s(n,k)}$.
+\end{enumerate}
+\end{definition}
+In the RTA manuscript both $\Pprod_s$ and $\Porth_s$ carry the name $P_s$. They are different series:
+\begin{proposition}\label{prop:PiPorth}
+For every $s\ge1$, in $\Z[[q]]$,
+\[
+\Pprod_s(q)=\sum_{n,k\ge0}\frac{q^{Q_s(n,k)}}{(q^s;q^s)_k}
+=\sum_{k\ge0}\frac{q^{sk(k+1)/2}}{(q^s;q^s)_k}\sum_{n\ge0}q^{n^2+skn},
+\]
+and $\Pprod_s-\Porth_s$ has non-negative coefficients and is non-zero; its coefficient of $q^{2s}$ is at least $1$.
+\end{proposition}
+\begin{proof}
+Euler's identity $(-z;p)_\infty=\sum_{k\ge0}p^{k(k-1)/2}z^k/(p;p)_k$ with $p=q^s$ and $z=q^{s(n+1)}$ gives
+$(-q^s;q^s)_\infty/(-q^s;q^s)_n=(-q^{s(n+1)};q^s)_\infty=\sum_{k\ge0}q^{sk(k-1)/2+s(n+1)k}/(q^s;q^s)_k$, and
+$n^2+sk(k-1)/2+s(n+1)k=Q_s(n,k)$. Multiplying by $q^{n^2}$ and summing over $n$ gives the first identity; both double sums converge in
+$\Z[[q]]$ because $Q_s(n,k)\ge n^2+\tfrac s2k(k+1)$. Since $1/(q^s;q^s)_k-1$ has non-negative coefficients, so does
+$\Pprod_s-\Porth_s=\sum_{n,k}q^{Q_s(n,k)}(1/(q^s;q^s)_k-1)$; the term $(n,k)=(0,1)$ contributes $q^{s}\cdot q^{s}$ with coefficient $1$.
+\end{proof}
+Throughout, the Bridge Series is built from $\Porth_s$ only. Part~II uses $\Porth_s$ for $\Porth_7$ when $s=7$ is fixed.
+
+\subsection{The Bridge Series}
+$c_1=(-1,1)$, $c_2=(-4,1)$, $w(v)=\tfrac12(\sgn B(c_1,v)-\sgn B(c_2,v))$ with $\sgn 0=0$, and
+\[
+H_s=\sum_{v\in\Z^2}w(v)q^{Q_s(v)},\qquad C=\Porth_7-H_7 .
+\]
+$H_s$ is the cone series of Part~II, \S\ref{sec:conv}, with the fixed walls $c_1,c_2$ for every $s$; it is not redefined anywhere in this paper.
+This is the Bridge Series of RTA (Definition~9.1 there), and it is the object $C$ of Part~II.
+
+\subsection{Notational conflicts and their resolution}
+Each part keeps its own local notation where this causes no ambiguity. The following symbols have different meanings in different parts.
+\begin{center}\small
+\begin{longtable}{p{2.6cm}p{6.2cm}p{6.2cm}}\toprule
+symbol & meaning & other meaning, and its name here\\\midrule\endhead
+$P_s$ & not used & RTA: both $\Pprod_s$ and $\Porth_s$ (Proposition~\ref{prop:PiPorth})\\
+$P_n(x)$ & Part~I: $\prod_{j\le n}(1+x^j)^{-1}$ & --\\
+$V$ & Part~II: the $42$-dimensional span of the lift functions & Part~III: $\VV$, the $36$-dimensional span of the 35-component law vector\\
+$E$ & Part~II: the ray-class partial theta series & Part~III: $\EE$, a $36$-dimensional summand of a representation\\
+$C$ & the Bridge Series & Part~III: $\CC$, a $6$-dimensional summand of a representation\\
+$\Xi$ & \S\ref{sec:found}: the RTA shadow & Part~I: $\Xi_k$, a finite set of integers\\
+$Q$ & the quadratic form above & Part~I: $Q(m)$, the number of partitions of $m$ into distinct odd parts\\
+$N$ & Part~III: the period $2m$ & Part~II: the label negation map\\
+$k$ & Part~I: the parameter of $g_k$ & Parts~II, III: the second lattice coordinate\\
+$G$ & Parts~II, III: the Gauss mean of $Q_7$ & Part~I, \S\ref{cherns-bound-for-qn}: an eta-quotient\\
+\bottomrule
+\end{longtable}
+\end{center}

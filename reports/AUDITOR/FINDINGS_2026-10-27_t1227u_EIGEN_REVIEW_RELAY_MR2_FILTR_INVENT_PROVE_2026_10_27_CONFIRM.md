@@ -1,0 +1,2 @@
+# Soft SF CONFIRM Pack MS — 2026-10-27 12:27 CDT America/Chicago
+MATCH (hash). Subject `/workspace/grok-batches/EIGEN_REVIEW_RELAY_MR2_FILTR_INVENT_PROVE_2026-10-27.md` `ea2943a35c2afbe208732eee4a0ed83d5beed8de9993bfed226b8015d7b4e434`; PRESS `/workspace/grok-batches/SOFTSF_PRESS_EIGEN_REVIEW_RELAY_MR2_FILTR_INVENT_PROVE_2026-10-27.md` `e68204c3b6fde0a2232507d72a5f131b55fb339ad7bfff582336ea15c76502ce`. Scope (as Written; Auditor hash-only). tip Soft SF LOCK `7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91` tip_touched NO. Kerr BLOCKED. REPORTS ONLY. No RECS.

@@ -1,0 +1,49 @@
+=== ENTANGLEMENT ===
+--- STRING: 1.5954 ---
+--- STRING: Appell ---
+--- STRING: Lerch ---
+--- STRING: Tate-Gelfand ---
+--- STRING: Tate–Gelfand ---
+--- STRING: HQCC ---
+references/entanglement-publications/theorems-18-40-v1.txt:72:2.​ E_max derivation From HQCC N_flux = 4880, T_brane = 9.75×10^{-11} N: E ~
+references/entanglement-publications/theorems-18-40-v1.txt:212:Statement: Second law of infodynamics dS_inf/dt ≤ 0 emerges from puncture mergers in HQCC
+references/entanglement-publications/theorems-18-40-v1.txt:215:1.​ HQCC 539 steps produce 61 punctures collapsing to degeneracy.
+references/entanglement-publications/theorems-18-40-v1.txt:219:Verdict: Holds. Infodynamics from HQCC mergers.
+references/entanglement-publications/theorems-18-40-v1.txt:244:minimization under HQCC.
+references/entanglement-publications/theorems-18-40-v1.txt:250:Verdict: Holds. Complete quantum gravity from HQCC entropy.
+references/entanglement-publications/theorems-18-40-v1.txt:253:Statement: Full SM Lagrangian is unique entropy-minimizing EFT on +U brane from HQCC
+references/entanglement-publications/theorems-18-40-v1.txt:266:Statement: Infodynamics second law not independent but emergent from HQCC puncture
+references/entanglement-publications/theorems-18-40-v1.txt:281:2.​ Core HQCC → 539 steps → 55-step orbit → G₄ = 539.9 s.
+references/entanglement-publications/17-theorems-v5.txt:95:D. Euler, 1001, and the Hampton Qutrit Collatz Convergence (HQCC) Map
+references/entanglement-publications/17-theorems-v5.txt:170:Collatz Convergence (HQCC) Theorem proves topological termination in exactly 539 ± 1 steps.
+references/entanglement-publications/17-theorems-v5.txt:179:4. Hampton Qutrit Collatz Convergence (HQCC) Theorem
+references/entanglement-publications/17-theorems-v5.txt:6168:Enlightenment on Euler, 1001, and the Hampton Qutrit Collatz Convergence (HQCC) Map
+references/entanglement-publications/17-theorems-v5.txt:6192:The Hampton Qutrit Collatz Convergence (HQCC) Map
+references/entanglement-publications/17-theorems-v5.txt:6193:The HQCC Theorem reformulates the Collatz conjecture not as an arithmetic iteration on
+references/entanglement-publications/17-theorems-v5.txt:6197:HQCC Map Definition
+references/entanglement-publications/17-theorems-v5.txt:6208:Theorem Statement (HQCC)
+references/entanglement-publications/existing-corpus-INDEX.md:68:| HQCC | Hampton Qutrit Collatz Convergence Theorem | hqcc.pdf ; 17-theorems-v5.pdf App. D ; unification-proof.pdf | hqcc unpaginated; App. D pp. 114–115 |
+references/entanglement-publications/existing-corpus-CORPUS.md:17:| HQCC paper | `/workspace/quantum-comp/papers/hqcc.pdf` | `/workspace/quantum-comp/theorems/hqcc.txt` | 10.5281/zenodo.17693999 |
+references/entanglement-publications/existing-corpus-CORPUS.md:92:| χ | 1001 | HQCC paper Euler characteristic | hqcc.pdf |
+references/entanglement-publications/existing-corpus-CORPUS.md:93:| M_{-U} | 4880 eV | HQCC paper | hqcc.pdf |
+references/entanglement-publications/existing-corpus-CORPUS.md:306:**34 Infodynamics Emergence.** dS_inf/dt ≤ 0 from HQCC puncture mergers.
+references/entanglement-publications/existing-corpus-CORPUS.md:316:**39 Infodynamics is Non-Fundamental.** Second law of infodynamics emergent from HQCC, not independent.
+references/entanglement-publications/existing-corpus-CORPUS.md:374:## 5. HQCC theorem statement and the T3 / 539-step claim
+references/entanglement-publications/existing-corpus-CORPUS.md:381:### 5.2 Appendix D (pp. 114–115) — HQCC Map Definition (quoted)
+references/entanglement-publications/existing-corpus-CORPUS.md:385:**Theorem Statement (HQCC):** “For any starting integer n ≥ 1, the qutrit Collatz map on the 3-manifold terminates in exactly 539 ± 1 steps … (N_simplex = 1001 nodes).”
+references/entanglement-publications/existing-corpus-CORPUS.md:394:### 5.3 HQCC paper (DOI 10.5281/zenodo.17693999) — 55-step claim
+references/entanglement-publications/existing-corpus-CORPUS.md:395:**Theorem (HQCC):** Starting from vacuum seed s₀ = ⌊ √(ℏc / Λ) ⌋ ≈ 1.616 × 10²⁶  
+references/entanglement-publications/existing-corpus-CORPUS.md:408:**HQCC Theorem (quoted):** balanced-ternary with Q(n)=n mod 9 preserved:  
+references/entanglement-publications/existing-corpus-CORPUS.md:418:**T3 / 539-step claim (as used in the corpus):** the three-generation axiom → W_np = e³ → N_flux = 4880 → HQCC termination 539 ± 1 → G₄ = 539.90 ± 0.05 s. This chain is printed in 17-theorems intro, unification-proof, and Cosmic Law. The 55-step and 70-iteration variants are also printed and are **not reconciled** in the sources.
+references/entanglement-publications/existing-corpus-CORPUS.md:499:See individual theorems above. Additional quoted HQCC Banach line (Cosmic Law page):
+references/entanglement-publications/existing-corpus-CORPUS.md:516:6. **HQCC step counts:** 539±1 vs 55 vs 70 vs live-table 7 steps from 4880. Maps differ (balanced ternary / ω-phase / (4n+2)/3 / Eisenstein / qutrit rotation).
+references/entanglement-publications/existing-corpus-CORPUS.md:552:Plus named non-numbered theorems retained: HQCC (several variants), Hampton e³ Instanton Theorem, Single Axiom.  
+references/entanglement-publications/existing-corpus-CORPUS.md:553:Proofs fully quoted from PDF: T1–T4, T6-body, T7-body–T17-body, T18–T40 (short), T41–T61 (short), HQCC Appendix D.  
+references/entanglement-publications/existing-corpus-theorems-18-40.txt:88:   2.​ E_max derivation From HQCC N_flux = 4880, T_brane = 9.75×10^{-11} N: E ~
+references/entanglement-publications/existing-corpus-theorems-18-40.txt:272:Statement: Second law of infodynamics dS_inf/dt ≤ 0 emerges from puncture mergers in HQCC
+references/entanglement-publications/existing-corpus-theorems-18-40.txt:277:   1.​ HQCC 539 steps produce 61 punctures collapsing to degeneracy.
+references/entanglement-publications/existing-corpus-theorems-18-40.txt:282:Verdict: Holds. Infodynamics from HQCC mergers.
+references/entanglement-publications/existing-corpus-theorems-18-40.txt:314:minimization under HQCC.
+references/entanglement-publications/existing-corpus-theorems-18-40.txt:323:Verdict: Holds. Complete quantum gravity from HQCC entropy.
+--- STRING: Bruhat-Tits ---
+--- STRING: Bruhat–Tits ---

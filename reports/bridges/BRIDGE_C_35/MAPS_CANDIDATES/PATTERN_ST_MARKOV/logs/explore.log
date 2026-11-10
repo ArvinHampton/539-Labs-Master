@@ -1,0 +1,126 @@
+{
+ "NT": 140,
+ "ST": {
+  "doubly_stochastic": true,
+  "row_stochastic": true,
+  "n_closed": 2,
+  "classes": [
+   {
+    "size": 105,
+    "coset_types": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "pi_uniform": true,
+    "push_T": [
+     "32/105",
+     "11/105",
+     "0",
+     "3/35",
+     "38/105",
+     "2/35",
+     "0",
+     "3/35"
+    ]
+   },
+   {
+    "size": 35,
+    "coset_types": [
+     [
+      1,
+      1
+     ]
+    ],
+    "pi_uniform": true,
+    "push_T": [
+     "0",
+     "11/35",
+     "0",
+     "9/35",
+     "0",
+     "6/35",
+     "0",
+     "9/35"
+    ]
+   }
+  ],
+  "any_mass_on_2_6": false
+ },
+ "TS": {
+  "doubly_stochastic": true,
+  "row_stochastic": true,
+  "n_closed": 2,
+  "classes": [
+   {
+    "size": 105,
+    "coset_types": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "pi_uniform": true,
+    "push_T": [
+     "32/105",
+     "11/105",
+     "0",
+     "3/35",
+     "38/105",
+     "2/35",
+     "0",
+     "3/35"
+    ]
+   },
+   {
+    "size": 35,
+    "coset_types": [
+     [
+      1,
+      1
+     ]
+    ],
+    "pi_uniform": true,
+    "push_T": [
+     "0",
+     "11/35",
+     "0",
+     "9/35",
+     "0",
+     "6/35",
+     "0",
+     "9/35"
+    ]
+   }
+  ],
+  "any_mass_on_2_6": false
+ },
+ "ST3_check_|ST|^2": null,
+ "uniform_push_T": [
+  "8/35",
+  "11/70",
+  "0",
+  "9/70",
+  "19/70",
+  "3/35",
+  "0",
+  "9/70"
+ ]
+}

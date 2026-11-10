@@ -1,0 +1,26 @@
+\subsection{The unit on the companions}\label{sec:gammacomp}
+Let $\Gamma=\Gamma_\gamma$ be the matrix of Proposition~\ref{prop:transport} for the unit $\gamma=\begin{psmallmatrix}-1&-7\\2&13\end{psmallmatrix}$, so that $\Gamma_{j,\pi(j)}=\zeta_{9800}^{g_j}$ for a
+permutation $\pi$ of the $105$ companions and exponents $g_j$ obtained by exact reduction.
+\begin{proposition}[exact, computer-assisted]\label{prop:gammainv}
+$\Gamma^2=I$ and $\Gamma M=M\Gamma$.
+\end{proposition}
+\begin{proof}
+$\Gamma^2=I$ is equivalent to $\pi\circ\pi=\mathrm{id}$ and $g_j+g_{\pi(j)}\equiv0\pmod{9800}$ for all $j$, a finite check in $\Z$. For the commutator,
+$(\Gamma M)_{jk}=\sum_{e\in S(\pi(j),k)}\zeta^{g_j+e}$ and $(M\Gamma)_{jk}=\sum_{e\in S(j,\pi^{-1}(k))}\zeta^{e+g_{\pi^{-1}(k)}}$, where $S(j,k)$ is the multiset of exponents
+defining $M_{jk}$. For every $(j,k)$ the two exponent multisets coincide modulo $9800$, which implies equality in $\Z[\zeta_{9800}]$. Script:
+\path{BRIDGE_C_35/order25/scripts/o25.py}.
+\end{proof}
+\begin{corollary}\label{cor:split}
+$P_\pm=\frac12(I\pm\Gamma)$ are complementary orthogonal projectors commuting with $M$. For $Y_\pm=P_\pm A_2^{\rm corner}$ one has
+$Y_-=\frac12\big(\mathrm{Cor}_K-\mathrm{Cor}_{\gamma^{-1}K}\big)$, and the residual $R(Y)(x)=Y(-1/x)-x\,35^{-1/2}MY(x)$ satisfies $R(Y_\pm)=P_\pm R(A_2^{\rm corner})$ and
+$\|R(A_2^{\rm corner})\|^2=\|R(Y_+)\|^2+\|R(Y_-)\|^2$ pointwise. In particular no linear combination of $\Gamma$-images of $A_2^{\rm corner}$ satisfies this law unless
+$R(A_2^{\rm corner})$ lies in the corresponding eigenspace.
+\end{corollary}
+\begin{proof}
+$\Gamma$ is a monomial matrix with entries of modulus one, hence unitary; with $\Gamma^2=I$ it is Hermitian, so $P_\pm$ are orthogonal projectors. They commute with $M$ by
+Proposition~\ref{prop:gammainv}, which gives $R(P_\pm Y)=P_\pm R(Y)$. The formula for $Y_-$ is Proposition~\ref{prop:transport} with $g=\gamma$.
+\end{proof}
+\begin{catbremark}
+On the $216$ points of $(0,3]$: $\|R(A_2^{\rm corner})\|=54.41$, $\|R(Y_+)\|=15.90$, $\|R(Y_-)\|=52.03$, so $91.5\%$ of the squared defect is $\Gamma$-anti-invariant
+(Appendix~\ref{app:catB}, item~\ref{catB:o25}).
+\end{catbremark}

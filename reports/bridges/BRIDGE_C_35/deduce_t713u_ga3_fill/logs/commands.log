@@ -1,0 +1,3 @@
+2026-10-25 CDT  python3 scripts/ga3_fill.py 106 > data/ga3_fill_N106.json
+2026-10-25 CDT  python3 scripts/ga3_fill.py 150 > data/ga3_fill_N150.json   (N-sensitivity diagnostic)
+2026-10-25 CDT  python3 scripts/quad_check.py > logs/quad_check.log          (closed form vs mpmath quadrature, max 2.0e-9)

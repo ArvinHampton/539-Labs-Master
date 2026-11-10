@@ -1,0 +1,46 @@
+HTTP/2 302 
+date: Thu, 05 Nov 2026 19:58:50 GMT
+content-type: text/html;charset=utf-8
+location: https://www.ams.org/jams/2008-21-04/S0894-0347-07-00587-5/
+server: cloudflare
+vary: Origin
+vary: Accept
+expires: Thu, 05 Nov 2026 20:45:14 GMT
+permissions-policy: interest-cohort=(),browsing-topics=()
+cf-cache-status: DYNAMIC
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=NDHH8Y%2Fs5KGqcoDM%2ByoJvYV0gKD3I99mnwj7yoEddqD3nSTEQbChlEJmfg6xGbOg7lE6CMNJG8xp3%2FFy0B0ksdGNNHLbWVk%2FFhqxdgBlGewTUPiaWt%2FuKqX3iMhL6RtFK2Fo2iI%3D"}]}
+cf-ray: a55e6f7c1a7d6fa3-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 302 
+date: Thu, 05 Nov 2026 19:58:50 GMT
+content-type: text/html; charset=iso-8859-1
+location: https://pubs.ams.org/journals/jams/2008-21-04/S0894-0347-07-00587-5
+server: cloudflare
+x-frame-options: SAMEORIGIN
+set-cookie: __cf_bm=1LQ6sV51a2PtA.nxwcTduNR1q2W6lUQb6LdU5OCbZjg-1793908730.307218-1.0.1.1-gD5AD2KrkV5vu9kRES4BvTYtJq_wo6ChQYxx61gX56eo2bjH86K_M8aezYvG3MckaOXlSWslgnd5t0KlqdNY1U4nryceWjZ7rPIIoxxHSLztxzR18WFg.nfEfrEZ6F.4; HttpOnly; SameSite=None; Secure; Path=/; Domain=ams.org; Expires=Thu, 05 Nov 2026 20:28:50 GMT
+cf-cache-status: DYNAMIC
+cf-ray: a55e6f7c6f28e615-IAD
+
+HTTP/2 200 
+date: Thu, 05 Nov 2026 19:58:51 GMT
+content-type: text/html; charset=utf-8
+cache-control: no-cache,no-store
+pragma: no-cache
+expires: -1
+vary: Accept-Encoding
+server: cloudflare
+set-cookie: .AspNetCore.Antiforgery.Pc7rQrlEJhQ=CfDJ8Lb9jZXSyONLi29FKSVw88xQTVkyf6YMIcI1ljLY4Ef3c77nIKMw3z7i3yzRaUxX8-mvdbbZDBAJ2IFnC6DUI6gTeGGB7U6PMaT77U0toDGubClbKnOgtbyMjJYgndW0BX3_COm-IDvsMcDePXfRZOc; path=/; samesite=strict; httponly
+set-cookie: AMS.Bookstore.Session=CfDJ8Lb9jZXSyONLi29FKSVw88yUd9ykbMS6vO7tzZJKnsksLflv3jhCxKlLbc1XWhuy8elphK4qjhNbwnpS5QbeBmnIOo2s19WUfBCJQ%2FDg13kaTIBqTQwj3UVageJ6Bze64KKyC9qpAi7vIAcK19fcxT3PFWJe5xKEsGYHTWPyPzB4; domain=.ams.org; path=/; samesite=lax; httponly
+set-cookie: __cf_bm=tKq1e_Lg4BLaP1U4iR8exY_ETGXUONy42OZMtmGDxkU-1793908730.4371042-1.0.1.1-B9eEv_jxDQkjyvnAWXlK2EGgPP4xO589cWjKtU1Gar.ISgWNB5JBBCn3KOeoM8GU4oPMwQjHZ6MADqJTgxzLeHsQ4u85RZffT.XEQDPg13vcT55SMJcEHRHVhDDCy0kl; HttpOnly; SameSite=None; Secure; Path=/; Domain=ams.org; Expires=Thu, 05 Nov 2026 20:28:51 GMT
+x-frame-options: SAMEORIGIN
+x-frame-options: SAMEORIGIN
+x-powered-by: ASP.NET
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+strict-transport-security: max-age=86400; includeSubDomains
+cf-cache-status: DYNAMIC
+cf-ray: a55e6f7d3e9acf0f-IAD
+

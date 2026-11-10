@@ -1,0 +1,26 @@
+0 1/15
+20 2/7
+40 4/7
+60 11/13
+80 17/15
+100 7/5
+120 22/13
+140 25/13
+160 29/13
+180 38/15
+200 39/14
+control {'rank': 36, 'rank_joint': 36, 'closed': True, 'inconclusive': False} {'rank': 36, 'rank_joint': 72, 'closed': False, 'inconclusive': False} True
+D 1.0 {'rank': 58, 'rank_joint': 98, 'closed': False, 'inconclusive': False}
+D 0.5 {'rank': 58, 'rank_joint': 116, 'closed': False, 'inconclusive': False}
+R 0.5 {'rank': 105, 'rank_joint': 210, 'closed': False, 'inconclusive': False}
+R 1.0 {'rank': 105, 'rank_joint': 210, 'closed': False, 'inconclusive': False}
+W1 0.5 {'rank': 90, 'rank_joint': 178, 'closed': False, 'inconclusive': False}
+W1 1.0 {'rank': 90, 'rank_joint': 156, 'closed': False, 'inconclusive': False}
+W7/2 0.5 {'rank': 60, 'rank_joint': 116, 'closed': False, 'inconclusive': False}
+W7/2 1.0 {'rank': 60, 'rank_joint': 120, 'closed': False, 'inconclusive': False}
+W595/2 0.5 {'rank': 100, 'rank_joint': 200, 'closed': False, 'inconclusive': False}
+W595/2 1.0 {'rank': 100, 'rank_joint': 200, 'closed': False, 'inconclusive': False}
+A1 0.5 {'rank': 105, 'rank_joint': 210, 'closed': False, 'inconclusive': False}
+A1 1.0 {'rank': 105, 'rank_joint': 210, 'closed': False, 'inconclusive': False}
+Wtot 0.5 {'rank': 105, 'rank_joint': 210, 'closed': False, 'inconclusive': False}
+Wtot 1.0 {'rank': 105, 'rank_joint': 210, 'closed': False, 'inconclusive': False}

@@ -1,0 +1,5 @@
+# SOFTSF PRESS — To: Auditor — PR2 Cook Bio/Neuro physical-load PROOF PURSUE (call-a0858383) — 2026-10-27
+Write-only **Soft SF CONFIRM**. FINDINGS `FINDINGS_PR2_COOK_SOFTSF_BIO_NEURO_PHYSICAL_LOAD_PROOF_PURSUE_call-a0858383_2026-10-27.md` sha256 `fd1b85aaf4b37e20709f99642f72f07970fd9350047588aef6098500c9b17ccf`.
+Owner standing rule: invent → must pursue mathematical proof, label "invented pending mathematical proof"; OWNER AMEND (via PM): where feasible, else record why and keep label. Applied: lemmas PROVED for PL-1 (1a/1b/1c), PL-2, PL-3 (3a/3b), PL-4 (4a/4b); all four parents remain **invented pending mathematical proof** (parents empirical/free-parameter — proof not feasible, reasons recorded; PL-3 ρ>0 not feasible).
+Cites: subject FINDINGS c1c6775b…, PRESS b645e3bd…, R5 38443ead…, catalog 4ed155d5… (N1,N2,N10), OW invent-lift live d087ff9d… (dispatch 5cbc33ac… MISMATCH noted).
+Tip BEFORE 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91; tip_touched NO. Kerr BLOCKED. No RECS.

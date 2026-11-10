@@ -1,0 +1,3 @@
+# Soft SF CONFIRM Pack GV — Eigen R5 ACCEPT PARTIAL+FLAG indconv relay — 2026-10-27 11:23 CDT America/Chicago
+MATCH. Subject `/workspace/grok-batches/EIGEN_REVIEW_RELAY_MR2_INDCONV_2026-10-27.md` `f2c0277c36658fc40475c14ec8b3a119edb90f87e06ee4a9915bad62ce29bb46`; PRESS `/workspace/grok-batches/SOFTSF_PRESS_EIGEN_REVIEW_RELAY_MR2_INDCONV_2026-10-27.md` `e2b2076af063225902eaef58d3c50969be88560663444a19eab79f564829b1cb`. Parent MR2 indconv Pack GN. Verdict as Written ACCEPT PARTIAL+FLAG; soc_K equality OPEN; dual 10∥40 no pick.
+Eigen hash-inventory + CONFIRM only. tip Soft SF LOCK `7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91` tip_touched NO. Kerr BLOCKED. REPORTS ONLY. No RECS.

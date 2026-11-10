@@ -1,0 +1,2 @@
+# Soft SF CONFIRM Pack MF — 2026-10-27 12:27 CDT America/Chicago
+MATCH (hash). Subject `/workspace/quantum-comp/reports/MR2-FINDINGS-DUAL-CONTINUE-filtr-invent-prove_2026-10-27.md` `d760f4f8dc7b317cbee55cf4e51f8e92ef7adda79cdf64e58cbdc179abd59c62`; PRESS `/workspace/quantum-comp/reports/SOFTSF_PRESS_MR2-DUAL-CONTINUE-filtr-invent-prove_2026-10-27.md` `67f217834693e173c9658f456e134116009e52acb9d7ed372fd9e24526226591`. Scope (as Written). tip Soft SF LOCK `7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91` tip_touched NO. Kerr BLOCKED. REPORTS ONLY. No RECS.

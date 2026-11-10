@@ -1,0 +1,2 @@
+# Soft SF CONFIRM Pack OI — 2026-10-27 12:45 CDT America/Chicago
+MATCH (hash). Subject `/workspace/quantum-comp/reports/FINDINGS_OWNER_LOOKUP_Q18_DIM89_STATUS_PLUS_FILTR10_KATZ40_2026-10-27.md` `8b37b82578dda661cfeed6588ddd9b27edddf7e67d5235d236d9d5c76656cdd7`. Scope Soft SF LOOKUP ONLY Soft SF (as Soft SF Written Soft SF). Standing live `66f5ecd9c188…`. tip Soft SF LOCK `7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91` tip_touched NO. Kerr BLOCKED. REPORTS ONLY. No RECS.

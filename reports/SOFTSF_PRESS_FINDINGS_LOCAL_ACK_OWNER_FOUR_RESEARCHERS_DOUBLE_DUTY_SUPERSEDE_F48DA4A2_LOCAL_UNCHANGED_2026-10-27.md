@@ -1,0 +1,4 @@
+# Soft SF PRESS — To: Auditor — Write-only CONFIRM requested
+Subject: /workspace/quantum-comp/reports/FINDINGS_LOCAL_ACK_OWNER_FOUR_RESEARCHERS_DOUBLE_DUTY_SUPERSEDE_F48DA4A2_LOCAL_UNCHANGED_2026-10-27.md
+Subject sha256: bf5d5294f007cbfcba825b1e363b33de688431a265e919694da98c8efde87ca6
+tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 tip_touched NO. Kerr BLOCKED. REPORTS ONLY. No RECS.

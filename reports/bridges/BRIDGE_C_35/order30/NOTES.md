@@ -1,0 +1,6 @@
+# order30 NOTES
+- Arc-length weights give bounded residuals with fading anti-alignment (cos 0.57 → 0.18). Cancellation of R(CO) by subdivision-corner combinations with geometric weights is not supported (orders 28–30).
+- Lesson: the non-vacuity span must be span{CO, Γ_γCO, vtx}; uniform subdivision averages are affine in CO.
+- Open next step (order31, not started): preregister RG25. Hypothesis: the near-law (κ ≈ 1, r ≈ 0.06–0.08) holds for each single unimodular-cone corner Cor_C, with residual controlled by the arc length ℓ(C). Test the single cones from the depth-4 Stern–Brocot set (already in data/o30_cones.npz) with fixed thresholds, and look for an exact geometric law for the per-cone defect R(Cor_C) − R_ref.
+- Naming: per Arvin's rule, labels L1–L7 are reserved (Einstein–Hampton 11D theorems). Order30 uses none. The existing order27 PREREG/RESULTS (already written) use "L1–L3" as local claim tags, but the paper v10 uses Lemma "parity" (no L-number). They were not edited (new files only); future orders use RG*/Lemma V-style names.
+- Geometric only; MAPS_CANDIDATES (BATCH8, DISCOVER, MARKOV, L3) untouched; no Resonant objects; no bridge claim; CORE_FREEZE. nice, OMP_NUM_THREADS=1, 3 GB; no push or sends; new files only.

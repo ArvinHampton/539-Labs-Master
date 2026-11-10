@@ -1,0 +1,2 @@
+# ACK — NL PURSUE-ALL APPROVED t2101u
+ACK Owner APPROVE ALL NL 1–8. A sha256 b3f2ac7e59457446d4fac5c2256d250f014e15d9d0c532efa68a736607625d6a. Tip 3d47ce497f812792a900cb103baff6ddfe838058d7883399239cd7763ba7bf79 untouched. Re-search: 0 new human hits; no elevate. Soft SF fold MATCH 9667f44e… noted. Bridge PARTIAL / READY NO.

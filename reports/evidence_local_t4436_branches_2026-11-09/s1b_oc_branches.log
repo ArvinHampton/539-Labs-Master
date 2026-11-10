@@ -1,0 +1,25 @@
+PARI stack size set to 3000000000 bytes, maximum size set to 3000000512
+[1] S_{3/2}(196,chi28): mfparams = [196, 3/2, 28, 1, t + 1]  dim = 9  Sturm bound (3/2)/12*[SL2:G0(196)] = 42
+[2] dim K = ker T(9) = 4 ; dim W4 (menu Oc-1 def, p in {3,11,13,23,29,37}) = 4 ; rank[W4|K] = 4 (4 => W4 = K)
+    c(35) on the K basis: [0, 0, 0, 0]
+[3] dim {F in S : c(n)=0 for all non-square n <= 600 } = 1
+    dim {F in K : c(n)=0 for all non-square n <= 600 } = 0
+[4] u_psi, psi = 1 (untwisted partial theta): rank C = 9, rank [C|u] = 10 -> NOT in S (rank rises);  rank [C K|u] = 5 vs 4 -> NOT in K
+[4] u_psi, psi = chi_-4: rank C = 9, rank [C|u] = 10 -> NOT in S (rank rises);  rank [C K|u] = 5 vs 4 -> NOT in K
+[4] u_psi, psi = chi_-7: rank C = 9, rank [C|u] = 9 -> coefficients CONSISTENT with S (n<=600);  rank [C K|u] = 5 vs 4 -> NOT in K
+     coordinates in mfbasis: [1, 0, 0, 2, 0, 0, 0, 0, -3] ; T(9) x = [-4, 0, 0, -8, 0, 0, 0, 0, 12] ; T(9)-eigen: 1 ; eigenvalue lambda_9 = -4
+       T(3^2) eigenvalue on u: -4
+       T(5^2) eigenvalue on u: -6
+       T(11^2) eigenvalue on u: 12
+       T(13^2) eigenvalue on u: -14
+[4] u_psi, psi = chi_-3: rank C = 9, rank [C|u] = 10 -> NOT in S (rank rises);  rank [C K|u] = 5 vs 4 -> NOT in K
+[4] u_psi, psi = chi_-8: rank C = 9, rank [C|u] = 10 -> NOT in S (rank rises);  rank [C K|u] = 5 vs 4 -> NOT in K
+[4] u_psi, psi = chi_-20: rank C = 9, rank [C|u] = 10 -> NOT in S (rank rises);  rank [C K|u] = 5 vs 4 -> NOT in K
+[4] u_psi, psi = chi_-35: rank C = 9, rank [C|u] = 10 -> NOT in S (rank rises);  rank [C K|u] = 5 vs 4 -> NOT in K
+[4] u_psi, psi = chi_28: rank C = 9, rank [C|u] = 10 -> NOT in S (rank rises);  rank [C K|u] = 5 vs 4 -> NOT in K
+[4] u_psi, psi = chi_140: rank C = 9, rank [C|u] = 10 -> NOT in S (rank rises);  rank [C K|u] = 5 vs 4 -> NOT in K
+[5] a_p(f), chi_140(p) for p in {11,37,53,71}: [[11, 4, -1], [37, -6, -1], [53, -10, -1], [71, 16, -1]]
+    level 196, char 1: dim S = 6; dim common eigensp. for chi140(p)a_p(f) (Xi) = 0; for a_p(f) (49a1 packet) = 0
+    level 196, char -4: dim 0
+    level 196, char -7: dim 0
+    level 196, char 28: dim S = 9; dim common eigensp. for chi140(p)a_p(f) (Xi) = 0; for a_p(f) (49a1 packet) = 4

@@ -1,0 +1,2 @@
+# Soft SF PRESS — Agent Soft SF ACK resonant-math predictions all fields — 2026-11-05 ~13:33 CST
+FINDINGS reports/FINDINGS_AGENT_SOFTSF_ACK_OWNER_WRITE_RESONANT_MATH_PREDICTIONS_ALL_FIELDS_2026-11-05.md sha256 27c4a216fed0b6cab0ac37b0f24d19c25d4d3dc8ab796db3242485b9b3a1dbc2 → Auditor. OW b25d56165039d2cf2a064d8c9b5e08c0920601e83b0574947ea116f2ac6ec455 MATCH. Citation pins done; STARTING catalog. tip Soft SF LOCK 7cddb188… tip_touched NO; invent HOLD STANDS; No CERT. No RECS.

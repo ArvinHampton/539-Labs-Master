@@ -1,0 +1,19 @@
+target Rc claim 1.5954
+| Constant | Value | |diff| vs 1.5954 | MATCH? |
+|---|---|---|---|
+| Prop.41.5 Res ζ_K = 2ln(6+√35)/√35 | 0.837679281259 | 0.757720718741 | NO-MATCH |
+| Prop.41.5 written ≈0.837679 | 0.837679 | 0.757721 | NO-MATCH |
+| Prop.41.5 candidate ln(6+√35)/√10 | 0.783577217617 | 0.811822782383 | NO-MATCH |
+| Prop.41.5 candidate 1.81 (as written) | 1.81 | 0.2146 | NO-MATCH |
+| Prop.41.5 candidate 0.7858 (as written) | 0.7858 | 0.8096 | NO-MATCH |
+| Thm.34.5 Soft SF I = ln(6+√35)/(2√35) | 0.209419820315 | 1.38598017969 | NO-MATCH |
+| Regulator R_K = ln(6+√35) | 2.47788873029 | 0.882488730288 | NO-MATCH |
+| 2×Res (forensic only) | 1.67535856252 | 0.0799585625177 | NO-MATCH |
+| 1/Res (forensic only) | 1.19377430285 | 0.401625697146 | NO-MATCH |
+| NON-ID π/2 | 1.57079632679 | 0.0246036732051 | NO-MATCH |
+| NON-ID √e | 1.6487212707 | 0.0533212707001 | NO-MATCH |
+| NON-ID ln(5) | 1.60943791243 | 0.0140379124341 | NO-MATCH |
+| NON-ID e/1.7 | 1.59898931086 | 0.00358931085826 | NO-MATCH |
+| NON-ID 2ln(2) | 1.38629436112 | 0.20910563888 | NO-MATCH |
+ALL written Soft SF / v16 Prop.41.5 constants: NO-MATCH to 1.5954.
+No Appell-Lerch identification invented.

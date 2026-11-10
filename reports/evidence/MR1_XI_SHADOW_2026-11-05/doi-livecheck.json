@@ -1,0 +1,227 @@
+[
+  {
+    "doi": "10.1215/S0012-7094-04-12513-8",
+    "url": "https://doi.org/10.1215/S0012-7094-04-12513-8",
+    "status": 200,
+    "title": "On two geometric theta lifts",
+    "author": [
+      {
+        "given": "Jan Hendrik",
+        "family": "Bruinier",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jens",
+        "family": "Funke",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2004,
+          10,
+          1
+        ]
+      ]
+    },
+    "final_url": "https://api.crossref.org/v1/works/10.1215%2FS0012-7094-04-12513-8/transform",
+    "checked": "2026-11-05T13:38:19.194569-06:00"
+  },
+  {
+    "doi": "10.1007/s00208-008-0252-1",
+    "url": "https://doi.org/10.1007/s00208-008-0252-1",
+    "status": 200,
+    "title": "Differential operators for harmonic weak Maass forms and the vanishing of Hecke eigenvalues",
+    "author": [
+      {
+        "given": "Jan H.",
+        "family": "Bruinier",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ken",
+        "family": "Ono",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Robert C.",
+        "family": "Rhoades",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2008,
+          6,
+          28
+        ]
+      ]
+    },
+    "final_url": "https://api.crossref.org/v1/works/10.1007%2Fs00208-008-0252-1/transform",
+    "checked": "2026-11-05T13:38:19.153424-06:00"
+  },
+  {
+    "doi": "10.1112/S0010437X19007504",
+    "url": "https://doi.org/10.1112/S0010437X19007504",
+    "status": 200,
+    "title": "On some incomplete theta integrals",
+    "author": [
+      {
+        "given": "Jens",
+        "family": "Funke",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Stephen",
+        "family": "Kudla",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          8,
+          2
+        ]
+      ]
+    },
+    "final_url": "https://api.crossref.org/v1/works/10.1112%2FS0010437X19007504/transform",
+    "checked": "2026-11-05T13:38:19.234567-06:00"
+  },
+  {
+    "doi": "10.1007/s002220050232",
+    "url": "https://doi.org/10.1007/s002220050232",
+    "status": 200,
+    "title": "Automorphic forms with singularities on Grassmannians",
+    "author": [
+      {
+        "given": "Richard E.",
+        "family": "Borcherds",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1998,
+          5,
+          8
+        ]
+      ]
+    },
+    "final_url": "https://api.crossref.org/v1/works/10.1007%2Fs002220050232/transform",
+    "checked": "2026-11-05T13:38:19.257527-06:00"
+  },
+  {
+    "doi": "10.1017/CBO9780511543371.011",
+    "url": "https://doi.org/10.1017/CBO9780511543371.011",
+    "status": 200,
+    "title": "Petersson's trace formula and the Hecke eigenvalues of Hilbert modular forms",
+    "author": [
+      {
+        "given": "Andrew",
+        "family": "Knightly",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Charles",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2008,
+          11,
+          27
+        ]
+      ]
+    },
+    "final_url": "https://api.crossref.org/v1/works/10.1017%2FCBO9780511543371.011/transform",
+    "checked": "2026-11-05T13:38:19.218105-06:00"
+  },
+  {
+    "doi": "10.1090/claymath/11/37",
+    "url": "https://doi.org/10.1090/claymath/11/37",
+    "status": 404,
+    "title": null,
+    "author": null,
+    "issued": null,
+    "final_url": "https://doi.org/10.1090/claymath/11/37",
+    "checked": "2026-11-05T13:38:18.987898-06:00"
+  }
+]

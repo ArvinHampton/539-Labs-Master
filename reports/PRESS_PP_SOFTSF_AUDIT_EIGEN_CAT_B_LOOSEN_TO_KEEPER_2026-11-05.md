@@ -1,0 +1,2 @@
+# PRESS — PP Soft SF → Keeper — AUDIT Eigen Cat B loosen + S² AMEND — 2026-11-05
+FINDINGS FINDINGS_PP_SOFTSF_AUDIT_EIGEN_CAT_B_LOOSEN_deebdc5e_2026-11-05.md sha b3f56e605ce5e47ee47c2662572997a7c3080854d0910e2ccb0e8c05f3396ea6. Audited base deebdc5ebd5ae483b4b18ef374c0efb6c4bb8da82cb7e3f26e05bc90af979211 + AMEND de8cadc3c3f5d0bec258cb64b419fb676afe24644cd7b96e99fbba5b77ccb8c7 (PRESS f0b4fe01…) under OW 2c341bc7…. Verdict **FLAG** — #10 sufficiency assert; S9 nonexistent cite. O4 relaxation ACCEPT (NOT proven). tip 7cddb188… tip_touched NO. No CERT. Soft SF → Keeper.

@@ -1,0 +1,17 @@
+{'ctrl_w1': {'rank': 36, 'joint': 36, 'closed': True}, 'ctrl_wrong': {'rank': 36, 'joint': 72, 'closed': False}, 'control_pass': True}
+(0, 0, 0) 0.5 {'rank': 105, 'joint': 210, 'closed': False}
+(0, 0, 0) 1.0 {'rank': 105, 'joint': 210, 'closed': False}
+(0, 0, 1) 0.5 {'rank': 91, 'joint': 182, 'closed': False}
+(0, 0, 1) 1.0 {'rank': 91, 'joint': 182, 'closed': False}
+(0, 1, 0) 0.5 {'rank': 104, 'joint': 208, 'closed': False}
+(0, 1, 0) 1.0 {'rank': 104, 'joint': 208, 'closed': False}
+(0, 1, 1) 0.5 {'rank': 90, 'joint': 180, 'closed': False}
+(0, 1, 1) 1.0 {'rank': 90, 'joint': 180, 'closed': False}
+(1, 0, 0) 0.5 {'rank': 105, 'joint': 210, 'closed': False}
+(1, 0, 0) 1.0 {'rank': 105, 'joint': 210, 'closed': False}
+(1, 0, 1) 0.5 {'rank': 87, 'joint': 170, 'closed': False}
+(1, 0, 1) 1.0 {'rank': 87, 'joint': 156, 'closed': False}
+(1, 1, 0) 0.5 {'rank': 103, 'joint': 206, 'closed': False}
+(1, 1, 0) 1.0 {'rank': 103, 'joint': 206, 'closed': False}
+(1, 1, 1) 0.5 {'rank': 58, 'joint': 116, 'closed': False}
+(1, 1, 1) 1.0 {'rank': 58, 'joint': 98, 'closed': False}

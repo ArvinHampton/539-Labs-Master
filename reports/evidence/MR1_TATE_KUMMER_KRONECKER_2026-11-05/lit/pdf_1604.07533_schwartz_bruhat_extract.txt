@@ -1,0 +1,175 @@
+arXiv:1604.07533v1 [math.FA] 26 Apr 2016
+
+A Characterisation of the Fourier
+transform on the Schwartz-Bruhat space
+of locally compact Abelian groups
+R. Lakshmi Lavanya
+Abstract. We obtain a characterisation of the Fourier transform
+on the space of Schwartz-Bruhat functions on locally compact
+Abelian groups. The result states that any appropriately additive bijection of the Schwartz space onto itself, which interchanges
+convolution and pointwise products is essentially the Fourier transform. The proof of this result is very similar to that obtained by
+the author recently for the Euclidean Fourier transform.
+
+1. Introduction
+The properties of the Fourier transform on various locally compact
+groups with respect to different operations on function spaces on these
+groups have been well understood. The interaction between the Fourier
+transform and the translations on the groups, and with certain products on the functions defined on these groups have been used to obtain
+characterisations of the Fourier transform. For more details, refer to
+[1],[2],[4],[5],[7]-[11] and the references therein.
+In 2008, S. Alesker, S. Artstein-Avidan and V. Milman[2] characterised the Euclidean Fourier transform with the hypothesis involving
+only algebraic properties of the map on the space of tempered distributions on Rn .
+Theorem 1.1. Assume that T : S(Rn ) → S(Rn ) is a bijection
+which admits a bijective extension T ′ : S ′ (Rn ) → S ′ (Rn ) such that for
+all f ∈ S(Rn ) and ϕ ∈ S ′ (Rn ), we have
+T (f ∗ ϕ) = T (f )T (ϕ) and T (f · ϕ) = T (f ) ∗ T (ϕ).
+2010 Mathematics Subject Classification. 43A25,43A15,42A38.
+Key words and phrases. Fourier transform, Schwartz-Bruhat space.
+1
+
+2
+
+R. LAKSHMI LAVANYA
+
+Then T is essentially the Fourier transform: that is, for some matrix
+B ∈ GL(n, R) with |det B| = 1, we have either T f = F (f ◦ B) or
+T f = F (f ◦ B) for all functions f ∈ S(Rn ).
+As the authors of the above result had remarked, the hypotheses
+of this result involves only algebraic properties of the map on the class
+of tempered distributions, while the conclusion states that the map is
+essentially the Fourier transform.
+The above result led to a characterisation of the Fourier transform
+on the Schwartz space of the Heisenberg group[11]. This result did
+not involve the tempered distributions in its hypothesis. The anonymous referee of [11] asked an interesting question, namely, if for the
+Euclidean Fourier transform also, one could obtain a characterisation
+without any assumptions on the tempered distributions. This question
+was answered in affirmation in [10] via the following result:
+Theorem 1.2. Let T : S(Rn ) → S(Rn ) be a bijection satisfying the
+following conditions for all functions f, g ∈ S(Rn ) :
+(a): T (f +g) = T (f )+[T (g)]∗, where [T g]∗ (x) = T g(−x), x ∈ Rn .
+(b): T (f · g) = T (f ) ∗ T (g),
+(c): T (f ∗ g) = T (g) · T (g).
+Then there exists a matrix B ∈ GL(n, R), with |det B| = 1 such that
+either T f = F (f ◦ B) for all f ∈ S(Rn ), or T f = F (f ◦ B) for all
+f ∈ S(Rn ).
+Hereon, we write LCA groups for locally compact Abelian groups.
+It is interesting to know that the above result holds good for a general LCA group, with minor changes to its proof. In this paper, we
+state and prove this characterisation of the Fourier transform on LCA
+groups. We will discuss analogous characterisations on non-Abelian
+groups in a future work.
+Before stating our results, we recall the Schwartz-Bruhat space of
+functions on a locally compact Abelian group.
+F. Bruhat[3] extended the notion of a smooth function to a large
+class of groups, which encompasses the LCA groups. 1n 1975, M.S.
+Osborne characterised the Schwartz-Bruhat space of functions on a
+LCA group in terms of the asymptotic behavior of the function and its
+
+CHARACTERISATION OF FOURIER TRANSFORM
+
+3
+
+Fourier transform.
+b the unitary dual
+Let G be a locally compact Abelian group, and G,
+of G. We use lowercase alphabets x, y for elements of G, the letters
+f, g, h for functions on G, and the lowercase Greek letters α, β for complex numbers. We denote the product of two elements x, y ∈ G as xy.
+b
+We use the notation dx and dξ for the Haar measures on G and G
+b we denote this duality by hx, ξi.
+respectively. For x ∈ G, and ξ ∈ G,
+For an integrable function f on G, its Fourier transform is defined as
+Z
+fb(ξ) = f (x) hx, ξi dx,
+G
+
+where dx denotes the Haar measure on G.
+Let f ∗ (x) = f (x−1 ). Then the Fourier transform satisfies
+b
+fb∗ (ξ) = [fb]∗ (ξ), for ξ ∈ G.
+
+We now recall the definition of S = S(G), the Schwartz-Bruhat
+space of functions on G. Suppose G is an elementary group, i.e., G is
+of the form G = Rn × Tm × Zk × F, where n, m, k ∈ N0 = {0, 1, 2, · · · },
+and F is a finite Abelian group. A function f : G → C is said to belong
+the Schwartz-Bruhat space if f satisfies the following conditions:
+(a): f ∈ C ∞ (G).
+(b): P (∂)f ∈ L∞ (G) for all polynomial differential operators
+P (∂), where the polynomial is in Rn × Zk variables.
+For any locally compact Abelian group G, we have
+S(G) = lim S(H/K),
+→
+
+where the direct limit is taken over all pairs (H, K) of subgroups of G
+such that
+(i): The subgroup H is open and compactly generated,
+(ii): The subgroup K is compact
+(iii): The quotient H/K is a Lie group.
+For a more detailed definition of the space S(G), we refer the reader
+to [14], where the following result was proved.
+Theorem 1.3. [14] The Fourier transform maps S(G) isomorphib and S(G) is dense in L1 (G).
+cally onto S(G)
+
+For a function f : G → C, the support of f, denoted Supp f, is
+defined as
+Supp f := Closure({x ∈ G : f (x) 6= 0}).
+
+4
+
+R. LAKSHMI LAVANYA
+
+Let Cc∞ = Cc∞ (G) := {f ∈ S(G) : Supp f is compact}. Then the
+space Cc∞ is dense in S(G).
+For functions f, g : G → C, let
+(f g)(x) = f · g(x) = f (x)g(x)
+Z
+(f ∗ g)(x) =
+f (xy −1) g(y) dy
+G
+
+Then S(G) forms an algebra with the above products of functions.
+Also, the Fourier transform satisfies
+\
+(f
+∗ g) = fb gb,
+
+\
+and (f
+· g) = fb ∗ b
+g , for all f, g ∈ S(G).
+
+We now proceed to our main result.
+
+2. A Characterisation of Fourier transform on S(G)
+Our results are influenced by the those of Alesker et al.[2] and their
+interesting proofs.
+The proof of the following result is very much similar to that of
+Theorem 1.2 given in [10], except for some minor variations. For the
+sake of completeness, we present the proof here.
+Our main result is the following:
+b be a bijection satisfying the
+Theorem 2.1. Let T : S(G) → S(G)
+following conditions for all functions f, g ∈ S(G) :
+(a): T (f + g ∗ ) = T (f ) + [T (g)]∗,
+(b): T (f · g) = T (f ) ∗ T (g),
+(c): T (f ∗ g) = T (g) · T (g).
+Then there exists a measure-preserving homeomorphism ψ on G such
+\
+\
+that either T f = (f
+◦ ψ) for all f ∈ S(G), or T f = (f
+◦ ψ) for all
+f ∈ S(G).
+b Since the Fourier
+Proof. For f ∈ S(G), we have T f ∈ S(G).
+b there exists unique g ∈
+transform is a bijection of S(G) onto S(G),
+S(G) with T f = b
+g . Define a map U : S(G) → S(G) as Uf := g if
+[) for all f ∈ S. The map U is a bijection
+Tf = b
+g . Then T f = (Uf
+of S onto itself and satisfies the following conditions for all functions
+f, g ∈ S(G) :
+(1) U(f + g ∗ ) = U(f ) + [U(g)]∗ ,
+
+

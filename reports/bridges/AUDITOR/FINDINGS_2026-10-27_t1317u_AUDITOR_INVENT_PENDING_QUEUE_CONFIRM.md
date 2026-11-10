@@ -1,0 +1,2 @@
+# Soft SF CONFIRM Pack QE — 2026-10-27 13:17 CDT America/Chicago
+MATCH (hash). Subject `/workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_AUDITOR_INVENT_PENDING_QUEUE_FOR_PROFESSOR_PROOF_2026-10-27.md` `5c802c06dbf902190b3ea97e5ee73dc9b7c9abeb585c123a482018b318e8ea71`. Scope Soft SF LOOKUP/INVENTORY ONLY Soft SF (as Soft SF Written Soft SF). tip Soft SF LOCK `7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91` tip_touched NO. Kerr BLOCKED. REPORTS ONLY. No RECS.

@@ -1,0 +1,15 @@
+[A] q_T well-defined: True; quadratic refinement of intersection form: True; 16 distinct forms: True; Arf=1 count: 6 (single-point T: 6/6)
+[G] |image of Aut+ on W| = 24 (expect 24 = Aut+/<J>), |image of Isom| = 48 (expect 48), orientation-reversing images: 24
+[C] orientation-reversing classes (image in O_h acting on the 6 octahedron vertices W):
+  class size  3 | cycle type (2, 1, 1, 1, 1) | order on W 2 | rep perm ['0', 'inf', '1', '-i', '-1', 'i'] | vertical spin structures fixed: 8/16 (odd 4, even 4) | distinct delta(f;s) values: 2
+  class size  6 | cycle type (2, 2, 1, 1) | order on W 2 | rep perm ['0', 'inf', 'i', '1', '-i', '-1'] | vertical spin structures fixed: 4/16 (odd 2, even 2) | distinct delta(f;s) values: 4
+  class size  6 | cycle type (4, 2) | order on W 4 | rep perm ['inf', '0', 'i', '-1', '-i', '1'] | vertical spin structures fixed: 2/16 (odd 0, even 2) | distinct delta(f;s) values: 8
+  class size  1 | cycle type (2, 2, 2) | order on W 2 | rep perm ['inf', '0', '-1', '-i', '1', 'i'] | vertical spin structures fixed: 4/16 (odd 0, even 4) | distinct delta(f;s) values: 4
+  class size  8 | cycle type (6,) | order on W 6 | rep perm ['1', '-1', 'i', 'inf', '-i', '0'] | vertical spin structures fixed: 1/16 (odd 0, even 1) | distinct delta(f;s) values: 16
+[C] total orientation-reversing image elements: 24 ; with >= 1 fixed vertical spin structure: 24 ; with none: 0
+[K] r = complex conjugation c (real points exist: x=2, y^2=30>0 => c is a reflection with fixed ovals): fixed 8/16 ; fixed list [['0'], ['inf'], ['1'], ['-1'], ['0', '1', 'inf'], ['-1', '0', 'inf'], ['-1', '0', '1'], ['-i', '0', 'i']]
+[W2] dA = F_xy dx^dy with F_xy = y**(-2) = hyperbolic area density (curvature -1 metric (dx^2+dy^2)/y^2): True
+[W2] Area(Bolza) = (8-2)pi - 8(pi/4) = 4*pi ; |deg L| = Area/2pi = 2 ; c1(L) mod 2 = 0 -> w2(V_vert) = pi^* w2(L + R^3) = 0; w1 = 0
+[S] lift of f at a fixed point = e3 e4 (pi-rotation), lift^2 = -1; restricted to S+: -1, to S-: -1; preserves S+ and S- (commutes with chirality): True
+[S] 248 = (3,1)+(1,133)+(2,56) under SU(2)xE7: -1 in SU(2) acts as +1 on 3+133 = 136 dims and -1 on 112 dims -> nontrivial element of E8 (dims check: 248 )
+EXIT 0

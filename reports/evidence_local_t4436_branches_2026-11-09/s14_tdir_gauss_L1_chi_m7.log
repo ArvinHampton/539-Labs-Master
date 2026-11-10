@@ -1,0 +1,23 @@
+=== [G4] G(chi_{-4}) = 2i ===
+chi_{-4}(k) for k=0..3: [(0, 0), (1, 1), (2, 0), (3, -1)]
+G = 1*i + (-1)*(-i) = 2i
+=== [G5] G(chi_5)^2 = 5 in Z[zeta_5], and G=1+2*phi ===
+zeta^4 reduced: [-1, -1, -1, -1]
+phi=zeta+zeta^4: [-1, 0, -1, -1]
+psi=zeta^2+zeta^3: [0, 0, 1, 1]
+phi+psi: [-1, 0, 0, 0] expected -1 (=[-1,0,0,0] after using 1+z+z2+z3+z4=0)?
+phi+psi reduced: [-1, 0, 0, 0]
+phi*psi: [-1, 0, 0, 0] expected -1
+G=phi-psi: [-1, 0, -2, -2]
+1+2*phi: [-1, 0, -2, -2]
+G^2: [5, 0, 0, 0] equals 5? True
+X^2+X-1: findings identify phi as the positive root ((-1)+sqrt(5))/2, hence G=sqrt(5)
+=== [G140] Kronecker factors and assembly ===
+chi_{-4}(35)= -1 chi_{-35}(4)= 1
+chi_5(7)= -1 chi_{-7}(5)= -1
+G(chi_{-35}) = (chi_5(7)*chi_{-7}(5))*sqrt(5)*i*sqrt(7) = i*sqrt(35)
+G(chi_140) = (chi_{-4}(35)*chi_{-35}(4))*2i*i*sqrt(35) = -2 i^2 sqrt(35) = 2*sqrt(35) = sqrt(140)
+=== [S7] sum_{m=1..6} m chi_{-7}(m) ===
+terms: [(1, 1, 1), (2, 1, 2), (3, -1, -3), (4, 1, 4), (5, -1, -5), (6, -1, -6)]
+sum = -7
+DONE; all exact assertions passed.

@@ -1,0 +1,17 @@
+# Soft SF CONFIRM — NL_RULE5_ACCEPT_PR1_CHI2_SLOT_B_PURSUE_WRITE_AUTHORITY
+
+Date: 2026-10-26 21:19 CDT (t2119u). Write-only packaging; sources not edited; no invent; no RECS; Kerr BLOCKED.
+
+## Hash checks (sha256 recomputed vs claimed)
+- REVIEW NL_RULE5_REVIEW_PR1_CHI2_SLOT_B_PURSUE_WRITE_AUTHORITY_2026-10-26.md 680a2b3d95aa6045c120c49319746928b0a7c21d3b009e23786e6b1ccd497113 MATCH
+- PRESS SOFTSF_PRESS_NL_RULE5_REVIEW_PR1_CHI2_SLOT_B_PURSUE_WRITE_AUTHORITY_2026-10-26.md 5c0d6653ed7c56a5f6026b249e9d4a24a31a6b21f5423b583220d8e484def91b MATCH
+- RELAY NL_RELAY_PR1_CHI2_SLOT_B_PURSUE_WRITE_AUTHORITY_2026-10-26.md 1f9702697dba58b3318cd3a01bcc8e6e2aaf359061dccd46d992c3f9edf8d89d MATCH
+- TIP /workspace/residual-c-field-WRITTEN_PREMISES_DRAFT.md 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 MATCH (LOCK held); tip_touched NO
+
+## Record
+- ACCEPT: ABSENT reaffirmed for χ² slot (b); (a)(c) ABSENT.
+- INCONCLUSIVE stands.
+- Doc 0.79 not usable.
+- 5 residual Owner-Write leaves.
+- No invented χ².
+- Flags: none.

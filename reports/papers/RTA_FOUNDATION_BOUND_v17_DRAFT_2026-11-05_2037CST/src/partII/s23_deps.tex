@@ -1,0 +1,31 @@
+%=====================================================================
+\section{External dependencies}\label{sec:deps}
+%=====================================================================
+The following published results are used. Each is cited, not re-proved; ``we use [X]'' in the text refers to this list.
+\begin{center}\small
+\begin{longtable}{p{5.2cm}p{9.4cm}}\toprule
+result & where used\\\midrule\endhead
+Baker's theorem \cite{Baker} & Theorem~\ref{thm:E}(i); the obstruction at the cusp pair (\S\ref{sec:lead}); Proposition~\ref{prop:noscalar8}\\
+$q$-expansion principle (Shimura) & Theorem~\ref{thm:E}\\
+Hecke's continuation theorem \cite{Hecke} & Theorem~\ref{thm:Hs}(vi); Lemma~\ref{lem:parity-cthird}; \S\ref{sec:cthird}\\
+Siegel--Klingen \cite{SiegelKlingen} & rationality of the partial zeta values in Theorem~\ref{thm:C}\\
+Congruence theorem for Weil representations \cite{Weil} & Theorems~\ref{thm:tensor7}, \ref{thm:tensorodd}, \ref{thm:dims}(iii); Proposition~\ref{prop:matched}(iii)\\
+Nobs--Wolfart / Cliff--McNeilly--Szechtman / Scheithauer, decomposition of Weil representations of $\Z/p^2$ & (C3) of Theorem~\ref{thm:psq6} for primes not covered by Propositions~\ref{prop:c3small6}, \ref{prop:weil7}\\
+Zwegers, thesis Cor.~2.9 \cite{Zw} & modular completion of $H_s$ (Theorem~\ref{thm:Hs})\\
+Zwegers 2012 \cite{Zw12} via \cite{BCN} & identification of $\int\Xi_0$ in Theorem~\ref{thm:cthird}(iii) (also proved directly, Proposition~\ref{prop:ct5})\\
+Chevalley's ambiguous class number formula; Gauss genus theory; Tate's $\ker\Nm=C_K^{1-\sigma}$ & Theorem~\ref{thm:sqf5}; Proposition~\ref{prop:cuspcrit}(i)\\
+Maass's dihedral construction \cite{Maass} & the identification of $V_{\rm cusp}$ with dihedral forms (\S\ref{sec:dihedral}; Category~B parts)\\
+Nikulin \cite{Nikulin}, Thm.~1.14.4, Cor.~1.5.2 & Theorems~\ref{thm:K3exist8}, \ref{thm:aut8}\\
+Morrison \cite{Morrison}, Cor.~2.9(i) & Theorem~\ref{thm:K3exist8}; Proposition~\ref{prop:liftgamma}(iii)\\
+Deitmar--Hilgert \cite{DH}, Thms.~3.3, 4.4 & Remark~\ref{rem:uniqB}(a)\\
+Arb ball arithmetic (python-flint) & Theorem~\ref{thm:SrhoDim} (computer-assisted)\\
+Strong Torelli theorem \cite{Huybrechts} & Theorem~\ref{thm:aut8}\\
+Gromov--Yomdin \cite{GY} & entropy in Theorem~\ref{thm:aut8}\\
+Standard Bessel asymptotics (DLMF 10.40.2) & Lemma~\ref{lem:green}\\
+\bottomrule
+\end{longtable}
+\end{center}
+\noindent\textbf{PARI dependencies.} The following use PARI/GP and are otherwise unverified: the ray-class data at $\fp_2^3\fp_5\fp_7\infty_1\infty_2$ used for the
+$140$-component fits and the Eisenstein/cusp classification of the components; \texttt{lfun} values for $L(\tfrac12,\chi)$, $L(1,\chi)$ and root numbers; the
+numerical side of Theorem~\ref{thm:K}; the dihedral enumeration of Remark~\ref{rem:dihedral7_10}. Not dependent on PARI: $u_L$ Eisenstein, $\mathrm{Cl}(K)$, $|\mathrm{Cl}^+_\ff|=16$, the structure of
+$\mathrm{Cl}^+_{(2\sqrt{35})\infty_1\infty_2}$ and the $12$ values $L(0,\chi)$ (\S\ref{app:pari}).

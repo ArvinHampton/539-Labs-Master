@@ -1,0 +1,4 @@
+[S] Clifford exact: True ; (e3 e4)^2 + 1 = 0: True ; commutes with chirality: True ; Ad(e3 e4) fixes e1,e2 and negates e3,e4: [True, True, True, True]
+[W2] F_xy - y^{-2} (exact expand): 0 ; expand is the zero integer: True ; GB area (8-2)pi - 8(pi/4) - 4pi: 0 ; |deg L| = area/(2pi): 2
+[R] real branch roots (exact): [-1, 0, 1] ; Sturm count on a large interval: 3
+[R] sign of x^5-x on (-inf,-1),(-1,0),(0,1),(1,inf): [-1, 1, -1, 1] ; ovals k=2 for c (y real: positive intervals (-1,0) and (1,inf)); 2**(g+k-1) = 8  (citation only; Gross-Harris; no grade)

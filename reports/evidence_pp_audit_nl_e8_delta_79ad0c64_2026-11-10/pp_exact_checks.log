@@ -1,0 +1,54 @@
+[PASS] P1a trace: K = kappa^2 S/18
+[PASS] P1b K_ab = -(kappa^2/2)(S_ab - h_ab S/9)
+[PASS] P1c S(k,k) = -(2/kappa^2) K(k,k) for k = t+e_j, every j
+[PASS] P2 IR: K = 4 k_x
+[PASS] P2 IR: w_fib = -4/3, w_Sigma = -4/3 exactly
+[PASS] P2 IR: S(t+e_fib,t+e_fib) = (2/kappa^2) k_x
+[PASS] P2 IR: S(k,k)*rho = -c k_x^2 with c>0 (sign(S(k,k)) = -sign(rho), both pairings)
+[PASS] P2 UV: K = 6 k_x
+[PASS] P2 UV: w_fib = -6/5, w_Sigma = -1 exactly
+[PASS] P2 UV: S(t+e_fib,t+e_fib) = (2/kappa^2) k_x
+[PASS] P2 UV: S(k,k)*rho = -c k_x^2 with c>0 (sign(S(k,k)) = -sign(rho), both pairings)
+[PASS] P2 w_fib(UV)=-6/5 < -1 and w_fib(IR)=-4/3 < -1
+[PASS] P3a S(k,k) = <F(k,.),F(k,.)>_eta - 1/4 eta(k,k) F^2 for arbitrary k (exact poly)
+[PASS] P3b F(k,k) = v_b k^b = 0 (antisymmetry) for arbitrary k; with k=(1,n): v_0 = -n.v_s
+[PASS] P3c Lagrange identity |n|^2|w|^2-(n.w)^2 = sum (n_i w_j - n_j w_i)^2 (so S(k,k)>=0 for every null k)
+[PASS] P3d C3 exact: S(t+e_j,t+e_j) = sum_{c not in {t,j}} F(k,e_c)^2, all j=1..9
+[PASS] P3e C1a x-block = -rho eta
+[PASS] P3e C1b trace = -6 rho
+[PASS] P3e C1c rho = 1/2 sum F_ab^2
+[PASS] P3e C1d/e blocks; mixed x/t-Y6 = 0
+[PASS] P3e C1f S_aa + rho = |F(e_a,.)|^2 on Y6
+[PASS] P3e C1g S_ss - S_xx = |F(e_s,.)|^2
+[PASS] P3f two-generator tr stress = S[F^1]+S[F^2] (one-generator reduction is exact)
+[PASS] P4a star^2 = 1 on fibre 2-forms
+[PASS] P4b Bogomolny: rho - q/2 = (1/8) sum_{ordered}(F-*F)^2 = 1/2 sum_{3 pairs}(F-*F)^2
+[PASS] P4c chosen SD parametrisation is *-self-dual
+[PASS] P4d SD: fibre block 0, mixed 0, worldvolume -rho h
+[PASS] P4e SD: rho = q/2
+[PASS] P4f general fibre field: fibre block traceless
+[PASS] P4g S1/Y5: K^wv = kappa^2 rho/6 h, K^fib = -kappa^2 rho/3, ratio -2
+[PASS] P5 M(v)^T M(v) = |v|^2 I_3 (so v^F=0, v!=0, F SD => F=0)
+[PASS] P6 brane S(k,k) = T*[j not in worldvolume] >= 0 for T >= 0
+[PASS] P7a HW printed lambda^2 = 2pi(4pi kappa^2)^(2/3) = (2pi)^7 (convention 2k^2=(2pi)^8)
+[PASS] P7b u := 8pi^2/(lambda^2 T_M5): HW -> 2, Conrad/Lu -> 1 (exact)
+[PASS] P7c Conrad/Lu lambda^6/kappa^4 = (4pi)^5 with lambda^2 = 2(2pi)^7
+[PASS] P7d convention-free: [(4pi)^5 / (HW lambda^6/kappa^4 = 128 pi^5)]^(1/3) = 2 = lambda^2 ratio
+[PASS] P7e energy per unit charge = 8pi^2/lambda^2 iff unit charge is int trF^F = 16pi^2 (GA3 I_4 normalisation)
+[PASS] P7f with Sec.2's n_inst = (1/8pi^2) int trF^F, energy per unit = 4pi^2/lambda^2 = u/2 (factor-2 mismatch)
+[PASS] P8a C4b tension = 2N+(u-1)n+eps
+[PASS] P8b C4c d/dn at u=1 is 0
+[PASS] P8c 10N/3 at N=4880 is 48800/3 (not 16266.7): 16266.7 is a 1-decimal print
+[PASS] P8d UV N_req/(2N) = 5/3 exactly IF N_req^UV = 10N/3 exactly (identity of the on-record formula; C4e is by construction)
+[PASS] P8e printed 16266.7/9760 != 5/3 (so any 5/3 'exactness' is from the formula, not the print)
+[PASS] P8f MN2: printed N_req/9760 = 62843/48800 (exact rational of a print; ratio 1.2878)
+[PASS] P8f MN1: printed N_req/9760 = 122521/97600 (exact rational of a print; ratio 1.2553)
+[PASS] P8f z=2: printed N_req/9760 = 64061/48800 (exact rational of a print; ratio 1.3127)
+[PASS] P8f z=3: printed N_req/9760 = 8089/6100 (exact rational of a print; ratio 1.3261)
+[PASS] P9 Y16 Q5 (-8pi^2/lambda^2) + one I_4-unit BPS energy (+8pi^2/lambda^2) = 0: a >=0 energy CAN cancel it
+[PASS] P10a §7 counts equal list lengths 22/16/5/2
+[PASS] P10b no item double-counted; 45 distinct
+   NL log: 23 [PASS] lines, 0 [FAIL] lines
+[PASS] P10c NL log has 23 checks (not 26 as filed): 23 PASS, 0 FAIL
+TOTAL 51/51 PASS
+ALL PASS

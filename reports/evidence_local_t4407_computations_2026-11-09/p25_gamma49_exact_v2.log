@@ -1,0 +1,3 @@
+ell=2147482681: [k, dim T-eigenspace for i^k, F_ell-rank of (S - i^k) on it] = [(0, 1, 1), (1, 2, 2), (2, 1, 1), (3, 0, 'empty')] => no 1-dim subrep
+ell=2147482121: [k, dim T-eigenspace for i^k, F_ell-rank of (S - i^k) on it] = [(0, 1, 1), (1, 2, 2), (2, 1, 1), (3, 0, 'empty')] => no 1-dim subrep
+ell=2147480161: [k, dim T-eigenspace for i^k, F_ell-rank of (S - i^k) on it] = [(0, 1, 1), (1, 2, 2), (2, 1, 1), (3, 0, 'empty')] => no 1-dim subrep

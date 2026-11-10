@@ -1,0 +1,1 @@
+{'H1_offending_lines': [], 'H1': True, 'H2': True, 'H3': True, 'H3_count': 105, 'H3b_constant_ratio': True, 'H4': 'follows from H2,H3b and period() using only equality tests of k', 'verdict': 'PASS'}

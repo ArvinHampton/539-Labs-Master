@@ -1,0 +1,2 @@
+# Soft SF PRESS — Agent ACK+BEGIN Cat A foolproof lift corpus support (call-a63dad1e) — 2026-11-03 ~10:38 CST
+FINDINGS reports/FINDINGS_AGENT_ACK_BEGIN_CAT_A_FOOLPROOF_LIFT_CORPUS_CALL_a63dad1e_2026-11-03.md sha256 017e64152be72669d80ced6154aee77a83fea1b8998daab3ada428054567c6bc → Auditor. BEGIN absorbed; Rule-5 LIVE / Agent invent-pending EMPTY; Video EXCLUDED; tip Soft SF LOCK 7cddb188… tip_touched NO; No CERT. No RECS.

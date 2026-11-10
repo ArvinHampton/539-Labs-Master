@@ -1,0 +1,827 @@
+                                                      THE BRUINIER–FUNKE PAIRING AND THE ORTHOGONAL
+                                                           COMPLEMENT OF UNARY THETA FUNCTIONS
+
+                                                                                 BEN KANE AND SIU HANG MAN
+
+
+                                                   Abstract. We describe an algorithm for computing the inner product between a holomorphic
+arXiv:1706.07770v1 [math.NT] 23 Jun 2017
+
+
+
+
+                                                   modular form and a unary theta function, in order to determine whether the form is orthogonal
+                                                   to unary theta functions without needing a basis of the entire space of modular forms and without
+                                                   needing to use linear algebra to decompose this space completely.
+
+
+
+
+                                                                                        1. Introduction
+                                              In this paper, we are interested in the decomposition of holomorphic modular forms. Suppose that
+                                           f is a weight 3/2 holomorphic modular form on some congruence subgroup Γ. One can decompose
+                                           f into an Eisenstein series component E, a sum Ψ of (cuspidal) unary theta functions (see (2.6)
+                                           for the definition), and a cusp form g in the orthogonal complement of unary theta functions. This
+                                           is an orthogonal splitting with respect to the usual Petersson inner product, since the Eisenstein
+                                           series is orthogonal to cusp forms. It is thus natural to try to compute the individual pieces. The
+                                           Eisenstein series component may be computed by determining the growth of f towards the cusps.
+                                           Furthermore, its Fourier coefficients may be explicitly computed, and these generally constitute the
+                                           main asymptotic term of the Fourier coefficients of f . In a number of combinatorial applications,
+                                           this is quite useful in determining the overall growth of the coefficients of f . For example, if f is
+                                           the generating function for the number of representations by a ternary quadratic form Q, then the
+                                           coefficients of the Eisenstein series count the number of local representations, and the fact that this
+                                           is (usually) the main asymptotic term implies an equidistribution result about the representations
+                                           of integers in the genus of Q (i.e., those quadratic forms which are locally equivalent to Q). This
+                                           equidistribution result does not always hold, however; the coefficients of Ψ grow as fast as the
+                                           coefficients of E within their support, although they are only supported in finitely many square
+                                           classes (known on the algebraic side of the theory of quadratic forms as spinor exceptional square
+                                           classes). Using an upper bound of Duke [6] for the coeffients of g, Duke and Schulze-Pillot [7]
+                                           combined these ideas to conclude an equidistribution result for the primitive representations by
+                                           every element of the genus away from these spinor exceptional square classes.
+                                              It is natural to ask whether similar results hold true when the quadratic form is replaced with a
+                                           totally positive quadratic polynomial (i.e., a form constructed as a linear combination of a positive-
+                                           definite integral quadratic form, linear terms, and the unique constant such that the quadratic
+                                           polynomial only represents non-negative integers and represents zero). One such example is sums
+                                           of polygonal numbers. For n ∈ Z, the nth generalized m-gonal number is
+                                                                                            (m − 2)n2 − (m − 4)n
+                                                                                pm (n) :=                        ,
+                                                                                                      2
+
+                                              Date: November 8, 2018.
+                                              2010 Mathematics Subject Classification. 11F37,11F12, 11F30, 11E20.
+                                              Key words and phrases. Petersson inner products, unary theta functions, modular forms, representations by
+                                           ternary quadratic polynomials.
+                                              The research of the first author was supported by grant project numbers 27300314, 17302515, and 17316416 of
+                                           the Research Grants Council.
+                                                                                                  1
+2                                   BEN KANE AND SIU HANG MAN
+
+and for a, b, c ∈ N we investigate sums of the type
+                      P (x, y, z) = Pa,b,c (x, y, z) := apm (x) + bpm (y) + cpm (z),
+where x, y, z ∈ Z. We consider a, b, and c to be fixed and vary x, y, and z. We package P into a
+generating function                      X
+                                               e2πiP (x,y,z)τ
+                                           x,y,z∈Z
+with τ ∈ H := {α ∈ C : Im(α) > 0}; this is known as the theta function for P . We may then
+investigate the Fourier coefficients of this theta function in order to attempt to understand which
+integers are represented by P . It is actually more natural to complete the square to rewrite
+                                    (2(m − 2)x − (m − 4))2      (m − 4)2
+                           pm (x) =                          −
+                                           8(m − 2)             8(m − 2)
+Adding an appropriate constant, we obtain a theta function for a shifted lattice L+ν, where ν ∈ QL
+inside a quadratic space with associated quadratic norm Q; quadratic forms are simply the case
+when ν = 0 (or equivalently, ν ∈ L). These theta functions are again modular forms and the unary
+theta functions govern whether the local-to-global principle fails finitely or infinitely often.
+Theorem 1.1. Suppose that L is a ternary positive-definite lattice and ν is a vector in the associated
+quadratic space over Q. Suppose further that the congruence class (M Z + r) ∩ N0 is primitively
+represented locally by the associated quadratic form Q on L + ν and denote by aL+ν (M n + r) the
+number of vectors of length M n+r in L+ν (i.e., the number of µ ∈ L+ν for which Q(µ) = M n+r).
+If                                                X
+                                     ΘL+ν (τ ) :=     e2πiQ(µ)τ
+                                                     µ∈L+ν
+is orthogonal to unary theta functions, then
+                               {n ∈ Z :6 ∃µ ∈ L + ν, Q(µ) = M n + r}
+is finite.
+Remark. If ΘL+ν is orthogonal to unary theta functions for every L + ν in a given genus, then one
+obtains an equidistribution result for representations of M n + r (for n sufficiently large, but with
+an ineffective bound) across the entire genus in the same manner as for the case of quadratic forms.
+   There are a number of cases where Theorem 1.1 has been employed to show that certain quadratic
+polynomials P are almost universal (i.e., they represent all but finitely many integers). In the case
+of triangular numbers (that is to say, m = 3), the first author and Sun [10] obtained a near-
+classification which was later fully resolved by Chan–Oh [5]; further classification results about
+sums of triangular numbers and squares were completed by Chan–Haensch [4]. More recently, the
+case a = b = c = 1 with arbitrary m was considered by Haensch and the first author [8]. In
+[8], a number of almost universality results are obtained by taking advantage of the fact that the
+structure of modular forms may be used to determine that certain congruence classes are not in
+the support of the coefficients of all of the unary theta functions in the same space, and hence
+directly obtaining the orthogonality needed for Theorem 1.1. This was generalized by the second
+author and Mehta [11] to include many more cases of a, b, c where the same phenomenon implies
+orthogonality. We next consider a case which does not immediately follow from this approach.
+Proposition 1.2. Every sufficiently large positive integer may be written in the form p8 (x) +
+3p8 (y) + 3p8 (z) with x, y, z ∈ Z. In other words, p8 (x) + 3p8 (y) + 3p8 (z) is almost universal.
+  In order to show Proposition 1.2, we use Theorem 1.1 and show that the theta function ΘL+ν
+associated to p8 (x)+3p8 (y)+3p8 (z) is orthogonal to all unary theta functions. One can numerically
+compute the inner product with unary theta functions directly from the definition as an integral
+                       BRUINIER–FUNKE PAIRING AND UNARY THETA FUNCTIONS                                  3
+
+over a fundamental domain of SL2 (Z)\H or use a method called unfolding to write it as infinite
+sums involving products of the Fourier coefficients of ΘL+ν and those of the unary theta functions.
+However, this is not sufficient for our purposes, since we need to algebraically verify that the inner
+product is indeed zero and the first method is only a numerical approximation while the second
+method yields an infinite sum. Since the associated space of modular forms is finite-dimensional
+and there is a natural orthogonal basis of Hecke eigenforms, one can decompose the space explicitly
+to determine whether this orthogonality holds, but the linear algebra involved is usually computa-
+tionally expensive and is not feasible in many cases. We hence use a pairing of Bruinier and Funke
+[3] to rewrite the inner product as a finite sum. The basic idea is to use Stokes’ Theorem to rewrite
+the inner product as a (finite) linear combination of products of the Fourier coefficients of ΘL+ν
+and coefficients of certain “pre-images” of the unary theta functions under a natural differential
+operator. In order to find these pre-images, we employ work of Zwegers [17], who showed that these
+pre-images are related to the mock theta functions of Ramanujan.
+   The paper is organized as follows. In Section 2, we give some preliminary information about
+modular forms and harmonic Maass forms. In Section 3, we describe how to compute the inner
+product using the Bruinier–Funke pairing and construct explicit pre-images of unary theta functions
+using [17] (see Theorem 3.4). Finally, in Section 4, we prove Theorem 1.1 and Proposition 1.2.
+
+                                           2. Preliminaries
+  We recall some results about modular forms and harmonic Maass forms.
+2.1. Basic definitions. Let H denote  the upper half-plane, i.e., those τ = u + iv ∈ C with u ∈ R
+and v > 0. The matrices γ = ac db ∈ SL2 (Z) (the space of two-by-two integral matrices with
+                                                                                              aτ +b
+integer coefficients and determinant 1) act on H via fractional linear transformations γτ := cτ +d .
+For
+                                         j(γ, τ ) := cτ + d,
+a multiplier system for a subgroup Γ ⊆ SL2 (Z) and weight r ∈ R is a function ν : Γ 7→ C such that
+for all γ, M ∈ Γ (cf. [12, (2a.4)])
+                           ν(M γ)j(M γ, τ )r = ν(M )j(M, γτ )r ν(γ)j(γ, τ )r .
+The slash operator |r,ν of weight r and multiplier system ν is then
+                                  f |r,ν γ(τ ) := ν(γ)−1 j(γ, τ )−r f (γτ ).
+A harmonic Maass form of weight r ∈ R and multiplier system ν for Γ is a function f : H → C
+satisfying the following criteria:
+(1) The function f is annihilated by the weight r hyperbolic Laplacian
+                                            ∆r := −ξ2−r ◦ ξr ,
+    where
+                                                            ∂
+                                              ξr := 2iv r      .                                    (2.1)
+                                                            ∂τ
+(2) For every γ ∈ Γ, we have
+                                                    f |r,ν γ = f.                                    (2.2)
+(3) The function f exhibits at most linear exponential growth towards every cusp (i.e., those
+     elements of Γ\(Q ∪ {i∞})). This means that at each cusp ̺ of Γ\H, the Fourier expansion of
+     the function f̺ (τ ) := f |r,ν γ̺ (τ ) has at most finitely many terms which grow, where γ̺ ∈ SL2 (Z)
+     sends i∞ to ̺.
+If f is holomorphic and the Fourier expansion at each cusp is bounded, then we call f a holomorphic
+modular form. Furthermore, if f is a holomorphic modular form and vanishes at every cusp (i.e.,
+the limit limτ →i∞ f̺ (τ ) = 0), then we call f a cusp form.
+4                                   BEN KANE AND SIU HANG MAN
+
+2.2. Half-integral weight forms. We are particularly interested in the case where r = k + 1/2
+with k ∈ N0 and, in the example given in Theorem 1.1 that motivates this study we may choose Γ
+to be an intersection between the groups
+                                                     
+                                 a b
+                   Γ0 (M ) :=          ∈ SL2 (Z) : M | c ,
+                                 c d
+                                                                         
+                                 a b
+                   Γ1 (M ) :=          ∈ SL2 (Z) : M | c, a ≡ d ≡ 1 (mod M )
+                                 c d
+for some M ∈ N divisible by 4. The multiplier system we are particularly interested in is given in
+[13, Proposition 2.1], although we do not need the explicit form of the multiplier for this paper.
+  If T N ∈ Γ with T := ( 10 11 ), then by (2.2) we have f (τ + N ) = f (τ ), and hence f has a Fourier
+expansion (cf (v; n) ∈ C)
+                                               X              2πinτ
+                                      f (τ ) =      cf (v; n)e N .                               (2.3)
+                                            n≫−∞
+Moreover, f is meromorphic if and only if cf (v; n) = cf (n) is independent of v. For holomorphic
+modular forms, an additional restriction n ≥ 0 follows from the fact that f is bounded as τ → i∞.
+There are similar expansions at the other cusps. One commonly sets q := e2πiτ and associates the
+above expansion with the corresponding formal power series, using them interchangeably unless
+explicit analytic properties of the function f are required.
+
+2.3. Theta functions for quadratic polynomials. In [13, (2.0)], Shimura defined theta func-
+tions associated to lattice cosets L + ν (for a lattice L of rank n) and polynomials P on lattice
+points. Namely, he defined
+                                                  X
+                                   ΘL+ν,P (τ ) :=      P (x)q Q(x) ,
+                                                 x∈L+ν
+where Q is the quadratic map in the associated quadratic space. We omit P when it is trivial. In
+this case, we may write rL+ν (ℓ) for the number of elements in L + ν of norm ℓ and we get
+                                                  X
+                                      ΘL+ν (τ ) =   rL+ν (ℓ)q ℓ .                          (2.4)
+                                                  ℓ≥0
+
+Shimura then showed (see [13, Proposition 2.1]) that ΘL+ν is a modular form of weight n/2 for
+Γ = Γ0 (4N 2 ) ∩ Γ1 (2N ) (for some N which depends on L and ν) and a particular multiplier. Note
+that we have taken τ 7→ 2N τ in Shimura’s definition. To show the modularity properties, for
+γ = ac db ∈ Γ, we compute
+                                                                      
+                                  aτ + b   a(2N τ ) + 2N b      a 2N b
+                    2N γ(τ ) = 2N        = c               =    c        (2N τ ).            (2.5)
+                                  cτ + d    2N (2N τ ) + d     2N  d
+Since γ ∈ Γ, we have
+                                                                         
+           a 2N b                      a b
+           c         ∈ Γ(2N ) := γ =         ∈ SL2 (Z) : γ ≡ I2       (mod N ) ⊂ Γ1 (2N ),
+          2N    d                      c d
+so we may then use [13, Proposition 2.1]. Specifically, the multiplier is the same multiplier as Θ3 ,
+              P        2
+where Θ(τ ) := n∈Z q n is the classical Jacobi theta function.
+   We only require the associated polynomial in one case. Namely, for n = 1 and P (x) = x, we
+require the unary theta functions (see [13, (2.0)] with N 7→ N/t, P (m) = m, A = (N/t), and
+τ 7→ 2N τ )
+                                                         X            2
+                            ϑh,t (τ ) = ϑh,t,N (τ ) :=           rq tr ,                       (2.6)
+                                                          r∈Z
+                                                    r≡h   (mod 2N
+                                                                t
+                                                                  )
+                      BRUINIER–FUNKE PAIRING AND UNARY THETA FUNCTIONS                                5
+
+where h may be chosen modulo 2N/t and t is a squarefree divisor of 2N . These are weight 3/2
+modular forms on Γ0 (4N 2 ) ∩ Γ1 (2N ) with the same multliplier system as ΘL+ν .
+
+                                3. The Bruinier–Funke pairing
+  In this section, we describe how to compute the inner product with unary theta functions. We
+again begin by noting the decomposition of a weight 3/2 modular form f as
+                                           f = E + Ψ + g,
+where E is an Eisenstein series, Ψ is a linear combination of unary theta functions, and g is a cusp
+form in the orthogonal complement of unary theta functions. Since the decomposition above is
+an orthogonal splitting with respect to the Petersson inner product, one may instead compute the
+inner product
+                                                hf, Θj i
+for each unary theta function Θj . Recall that Petersson’s classical definition of the inner product
+between two holomorphic modular forms f and h (for which f h is cuspidal) is (here and throughout
+τ = u + iv)
+                                                  Z
+                                           1                        3 dudv
+                           hf, hi :=                   f (τ )h(τ )v 2 2 ,
+                                     [SL2 (Z) : Γ] Γ\H                 v
+where [SL2 (Z) : Γ] denotes the index of Γ in SL2 (Z). While one may be able to approximate the
+integral well numerically, we are interested in obtaining a precise (algebraic) formula for the inner
+product (and hence an explicit formula for Ψ). In order to do so, we rely on a formula of Bruinier
+and Funke (see [3, Theorem 1.1 and Proposition 3.5]) known as the Bruinier–Funke pairing. The
+basic premise is to use Stokes’ Theorem in order to compute the inner product in a different way.
+Suppose that we have a preimage H under the operator ξ1/2 , where
+
+                                                         ∂
+                                            ξκ := 2iv κ
+                                                         ∂τ
+is a differential operator which sends functions satisfying weight κ modularity to functions satisfying
+weight 2 − κ modularity. Note that since h is holomorphic and ξ1/2 (H) = h, the fact that the kernel
+of ξ2−κ is holomorphic functions implies that the function H is necessarily annihilated by the weight
+κ hyperbolic Laplacian (for κ = 1/2)
+                                          ∆κ = −ξ2−κ ◦ ξκ .
+If we further impose that H is modular of weight κ on Γ and has certain restrictions on its singular-
+ities in Γ\(H ∪ Q ∪ {i∞}) (see Section 2 for further details), then we obtain a harmonic Maass form.
+Due to the fact that Γ is a congruence subgroup, it contains T N for some N , where T := ( 10 11 ).
+Similarly, if γ̺ ∈ SL2 (Z) sends i∞ to a cusp ̺, then T N̺ is contained in γ̺−1 Γγ̺ for some N̺ ∈ N;
+here N̺ is known as the cusp width at ̺. Using this, one can show that it has a Fourier expansion
+around each cusp ̺ of Γ of the shape
+                                              X               2πinτ
+                                    H̺ (τ ) =     cH,̺ (v; n)e N̺ ,
+                                              n∈Z
+
+for some cH,̺ (y; n) ∈ C, and where H̺ := H|κ γ̺ is the expansion around ̺. Note however, that
+since H is not holomorphic, the Fourier coefficients may depend on v. Solving the differential
+equation ∆κ (H) = 0 termwise yields a natural splitting of the Fourier expansion into holomorphic
+and non-holomorphic parts, namely
+                                      H̺ (τ ) = H̺+ (τ ) + H̺− (τ )
+6                                      BEN KANE AND SIU HANG MAN
+
+with
+                                X               2πinτ
+                   H̺+ (τ ) =          c+
+                                        H,̺ (n)e
+                                                 N̺
+
+                                n≫−∞
+                                                X                                      
+                                                                                 4πnv        2πinτ
+                   H̺− (τ ) = c−
+                               H,̺ (0)v
+                                        2−κ
+                                            +           c−
+                                                         H,̺ (n)Γ       2 − κ, −            e N̺ ,
+                                                n≪∞
+                                                                                  N̺
+                                                 n6=0
+
+where now the coefficients are independent of v. It is these Fourier coefficients which are used by
+Bruinier and Funke to compute the inner product explicitly in [3, Proposition 3.5]. To state their
+formula, let SΓ denote the set of cusps and write
+                                               X          2πinτ
+                                     f̺ (τ ) =   cf,̺ (n)e N̺ .
+                                                  n≥0
+
+Theorem 3.1 (Bruinier–Funke). We have
+                                             1       XX
+                            hf, hi =                    cf,̺ (n)c+
+                                                                 H,̺ (−n).
+                                       [SL2 (Z) : Γ]
+                                                        ̺∈SΓ n≥0
+
+  Theorem 3.1 is algebraic, precise, and is actually a finite sum since there are only finitely many n
+for which c+H,̺ (−n) 6= 0, allowing one to explicitly compute the inner product. We will assume that
+sufficiently many Fourier coefficients of f are known, or in other words the input to our algorithm
+will be the Fourier coefficients cf,̺ (n) and the function h, which in our case will be a unary theta
+function. The assumption that the expansions are known at every cusp may at first seem to be a
+somewhat strong assumption, since in combinatorial applications we often only know the expansion
+at one cusp. However, when f = ΘL+ν is the theta function for a shifted lattice, Shimura [13] has
+computed the modularity properties for all of SL2 (Z) and one obtains modularity for SL2 (Z) in a
+vector-valued sense, where the components of the vector are the functions f̺ . In other words, given
+just the theta function f , one can determine
+                                               the functions f̺ as long as one can write γ̺ explicitly
+                                    0 −1
+in terms of the generators S := 1 0 and T of SL2 (Z). Although this rewriting is well-known, we
+provide the details for the convenience of the reader.
+Lemma 3.2. Given ̺ = a/c, there is an algorithm to determine γ̺ ∈ SL2 (Z) explicitly in terms of
+S and T .
+Proof. First, we need to construct γ̺ for which γ̺ (i∞) = a/c. In other words, we want a matrix
+  a b   ∈ SL2 (Z). Since ad − bc = 1 and a and c are necessarily prime, we see that b and −c
+  c d
+are precisely the coefficients from Bezout’s theorem. We next construct the sequence of S and T
+recursively as follows.
+   Let γ0 := γ̺ . At step j + 1 (with j ∈ N0 ) we will construct γj+1 inductively/recursively from γj
+by multiplying either by S or by ST m for some m ∈ Z, and eventually obtain γℓ = ±T m for some
+step ℓ and m ∈ Z. Suppose that
+                                                         
+                                                   a j bj
+                                           γj =             .
+                                                   cj dj
+If cj = 0, then aj = dj = ±1 and ℓ = j with γj = ±T ±bj , and reversing back through the recursion
+gives the expansion of γ0 in terms of S and T , so we are done.
+   If cj 6= 0, then we choose r ∈ Z such that |aj + rcj | is minimal (if there are two choices, i.e, if
+aj + rcj = cj /2 for some r, then we take this choice of r). We then set
+                                                                                
+                            r          aj + rcj bj + rdj           −cj       −dj
+                 γj+1 := ST γj−1 = S                         =                       .
+                                          cj        dj           aj + rcj bj + rdj
+                        BRUINIER–FUNKE PAIRING AND UNARY THETA FUNCTIONS                            7
+
+Note that |aj + rcj | ≤ |cj |/2 by construction, so the entry in the lower-left corner is necessarily
+smaller at step j + 1 than it was at step j. Therefore the algorithm will halt after a finite number
+of steps.                                                                                          
+
+  In order to determine the inner product hf, hi, it remains to compute the preimage H and
+compute its Fourier expansion. Luckily, motivated by Ramanujan’s mock theta functions, Zwegers
+[17] constructed pre-images of the unary theta functions using a holomorphic function µ which he
+“completed” to obtain a harmonic Maass form (actually, he is even able to view his completed
+object as a non-holomorphic Jacobi form, and one obtains the pre-images of unary theta functions
+by plugging in elements of Q + Qτ for the elliptic variable z). Choosing z to be an appropriate
+element of Q + Qτ , one may compute the expansions at all cusps by viewing Zwegers’s function as
+a component of a vector-valued modular form. As a first example, Zwegers himself computed the
+corresponding vector when the unary theta function is given by
+                                           X        
+                                                   1 3πi(n+ 1 )2 τ
+                                Θ0 (τ ) :=    n+       e      6    .
+                                                   6
+                                              n∈Z
+
+This is related to the third order mock theta function f (q), and played an important role in
+Bringmann and Ono’s [1] proof of the Andrews–Dragonette conjecture. One may find the full
+transformation properties listed in [1, Theorem 2.1]. Specifically, let
+                                            ∞
+                                            X                        2
+                                                                qn
+                             f (q) := 1 +
+                                                       2      2 2           n 2
+                                            n=1 (1 + q) (1 + q ) · · ·(1 + q )
+
+and
+                                       ∞
+                                       X                    2
+                                                          q n +2n
+                             ω(q) :=                                            .
+                                                  2      3 2            2n+1 )2
+                                       n=0 (1 − q) (1 − q ) · · ·(1 − q
+
+Setting (q := e2πiτ )
+                                                       1               1
+                                                                            1      1
+                                                                                         1 T
+              F (τ ) = (F0 (τ ), F1 (τ ), F2 (τ ))T := q − 24 f (q), 2q 3 ω q 2 , 2q 3 ω −q 2   ,
+
+we have the following.
+Theorem 3.3 (Zwegers [17]). There is a vector-valued harmonic Maass form H = (H0 , H1 , H2 )T
+whose meromorphic part is F (component-wise). The harmonic Maass form satisfies
+                                                ξ 1 (H0 ) = Θ0
+                                                 2
+
+and the modularity properties for SL2 (Z) given by
+                                            −1                
+                                             ζ24 0           0
+                              H(τ + 1) =  0       0        ζ3  H(τ ),
+                                              0 ζ3           0
+                                                                 
+                                                 0        1 0
+                                    1      √
+                              H −       = −iτ 1            0 0  H(τ ),
+                                    τ              0        0 −1
+
+where ζn := e2πi/n .
+  Pre-images of a more general family of unary theta functions were investigated by Bringmann
+and Ono in [2]; these are connected to Dyson’s rank for the partition function, and the modularity
+of the relevant functions is given in [2, Theorem 1.2], with the full vector-valued transformation
+properties given in [2, Theorem 2.3].
+8                                           BEN KANE AND SIU HANG MAN
+
+  Theorem 3.3 is the first case of a much more general theorem which follows by combining the re-
+sults in Zwegers’s thesis [17]. To describe this result, for a, b ∈ C and τ ∈ H, define the holomorphic
+function
+                                            eπia X (−1)n eπi(n +n)τ +2πinb
+                                                                  2
+
+                            µ(a, b; τ ) :=                                   ,
+                                           θ(b; τ )       1 − e2πinτ +2πia
+                                                        n∈Z
+and also define the real-analytic function
+                        X                          
+                                                 Im(a) √
+                                                            
+                                                                      1      2
+           R(a; τ ) :=         sgn(ν) − E     ν+         2v    (−1)ν− 2 e−πiν τ −2πiaν ,
+                         1
+                                                   v
+                        ν∈ 2 +Z
+
+where sgn(x) is the usual sign function,
+                                                      X
+                                                                eπiν τ +2πiν (z+ 2 ) ,
+                                                                      2                    1
+                                       θ(z; τ ) :=
+                                                     ν∈ 12 +Z
+
+and
+                                                                                      
+                                            E(z) := sgn(z) 1 − β z 2
+with (for x ∈ R≥0 )
+                                                         Z ∞
+                                                                      1
+                                              β(x) :=            t− 2 e−πt dt.
+                                                          x
+One then defines
+                                                            i
+                                µ
+                                e(a, b; τ ) := µ(a, b; τ ) + R(a − b; τ ).                                                (3.1)
+                                                            2
+The function µ
+             e is essentially a weight 1/2 harmonic Maass form.
+Theorem 3.4. For h, t, N ∈ N with t | 2N , the function
+                                                                             
+                                              2
+                                  −2πi(h− Nt ) τ     ht − N 8N 2 τ   1 8N 2 τ
+                 Fh,t,N (τ ) := −e               µ
+                                                 e                 ,− ; 2
+                                                       2N    t2      2 t
+is a weight 1/2 harmonic Maass form on Γ := Γ1 (4N/t)∩Γ0 (16N 2 /t2 ) with some multiplier system.
+Furthermore, it satisfies
+                                    ξ 1 (Fh,t,N ) = ϑh,t,N (τ ).
+                                               2
+
+Proof. The modularity
+                    properties2 of 2Fh,t,N follow by [17, Theorem 1.11]. In particular, for γ =
+             ′
+ a b ∈ Γ and γ =          a       8N b/t
+ c d                 ct2 /(8N 2 )   d
+                                         , a change of variables in [17, Theorem 1.11 (2)] together
+with (2.5) implies that (with v(γ ′ ) := η(γ ′ τ )/(j(γ ′ , τ )η(τ )) denoting the multiplier system of the
+                                    Q
+Dedekind η-function η(τ ) := q 1/24 n≥1 (1 − q n ))
+                                                             2                        2              
+                                                       a     8N
+                                                                    τ   +  8N 2 b
+                                                                                      a   8N
+                                                                                               τ + 8N 2 b
+           aτ + b                   2 aτ       ht − N           t2          t2      1      t2       t2
+                    = −e−2πi(h− t ) cτ +d µ
+                                 N       +b
+  Fh,t,N                                    e                                  ,− ; 2  2             
+           cτ + d                                 2N        ct2    8N 2
+                                                                        τ +d        2  ct     8N
+                                                                                                 τ +d
+                                                                     8N 2     t2                          8N 2   t2
+                                                                                                                     2
+                                                                            ct2       ht−N a 8N 2 τ + 8N 2 b + cτ +d
+                                                                                                        
+                                2                                             2        2N     t2       t2        2
+                   −2πi(h− Nt ) ( aτ
+                                  cτ +d )
+                                     +b
+                                              ′ −3               1   −πi 8N
+             = −e                     v(γ ) (cτ + d) e           2                             cτ +d
+                                                                                      
+                                           ht   1      8N 2       8N 2 b       cτ + d 8N 2 τ
+                                     ×µ
+                                      e       −      a      τ   +          , −       ;         . (3.2)
+                                           2N   2       t2         t2             2    t2
+We next use the fact that a ≡ 1 (mod 4N/t) to obtain
+                                          
+              ht − N       8N 2       8N 2 b     ht − N 8N 2 τ                                          8N 2 τ
+                       a        τ   +          ≡                                               (mod Z          + Z),
+                2N          t2         t2          2N    t2                                              t2
+                        BRUINIER–FUNKE PAIRING AND UNARY THETA FUNCTIONS                                                        9
+
+while 16N 2 /t2 | c and d ≡ 1 (mod 4N/t) imply that
+                                cτ + d     1           8N 2 τ
+                                        ≡     (mod Z 2 + Z),
+                                   2       2            t
+Hence by [17, Theorem 1.11 (1)], we have
+                                                 
+     ht − N      8N 2      8N 2 b       cτ + d 8N 2 τ
+ µ
+ e            a       τ + 2          ,−       ; 2
+       2N          t2        t             2    t
+                                                                        2
+                                                                           2 2
+                                                                                                 ct2     ht−N 8N 2 τ
+                                                                                                                   
+              ht−N                    ct2       d−1   πi (a−1) ht−N + ct 2   8N τ          ht−N                      1
+= (−1)(a−1) 2N +(h− t ) t − 16N 2 − 2 e
+                         N    4Nb
+                                                                2N   16N       2 +2πi (a−1) 2N +
+                                                                               t                    2     2N
+                                                                                                        16N     2 +2    t
+
+                                                                                                                   
+                                                                                       ht − N 8N 2 τ     1 8N 2 τ
+                                                                           ×µ
+                                                                            e                        , −  ;             . (3.3)
+                                                                                         2N    t2        2 t2
+The power of −1 modifies the multiplier system accordingly. Plugging back into (3.2), we see that
+it remains to simplify the exponentials to match the power of τ .
+   The parameter of the exponential (or rather, the part which involves τ ) is cτ2πi
+                                                                                  +d times
+                                                                                    2
+          N 2                  ct2     ht − N           8N 2           8N 2 b       cτ + d
+  − h−           (aτ + b) −                          a         τ + 2             +
+           t                 16N 2       2N               t2             t             2
+                                 2                                                     
+  1           ht − N       ct2       8N 2 τ                            ht − N        ct2    ht − N 8N 2 τ
++     (a − 1)          +                    (cτ  +   d) +    (a  −  1)           +                          (cτ + d)
+  2             2N        16N 2       t2                                 2N         16N 2      2N       t2
+                                                                        
+          N 2                          2          N 2         ct          N                            ct2
+=− h−             (aτ + b) − c(aτ + b) h −               −           h−         (aτ + b)(cτ + d) −         (cτ + d)2
+           t                                       t        4N             t                         64N 2
+                                                                      
+                2       N 2                     t                     N                      t2 2
+     + (a − 1) h −             τ (cτ + d) +         (a − 1) h −             cτ (cτ + d) +         c τ (cτ + d)
+                         t                    4N                       t                   64N 2
+                                                                                            
+                                                         N 2                      t         N
+                                   + 2(a − 1) h −                τ (cτ + d) +          h−        cτ (cτ + d). (3.4)
+                                                         t                       4N         t
+We consider (3.4) as a polynomial in h − N/t and simplify the coefficients of each power of h − N/t.
+We first combine and simplify the terms in (3.4) with (h − N/t)2 . Using ad − bc = 1, these are
+(h − N/t)2 times
+  − (aτ + b) − c(aτ + b)2 + (a − 1)2 τ (cτ + d) + 2(a − 1)τ (cτ + d)
+= −aτ −b−2abcτ −b2c+a2 dτ +dτ −cτ 2 −2dτ = −aτ −b−2abcτ −b(ad−1)+a(1+bc)τ +dτ −cτ 2−2dτ
+                                                          = −abcτ − abd + dτ − cτ 2 − 2dτ = −(cτ + d)(τ + ab).
+Thus the exponential corresponding to the terms with (h − N/t)2 is
+                                            2                                  2                    2
+                         e cτ +d (h− t ) (cτ +d)(−τ −ab) = e−2πi(h− t ) τ e−2πi(h− t ) ab .
+                             2πi      N                                    N                    N
+
+
+
+The first factor is precisely the factor in front of Fh,t,N and the second contributes to the multiplier
+system.
+  We next simplify the terms in (3.4) with h − N/t. These give
+                                                                            
+                  N              ct                                         N              ct
+             h−       (cτ + d)      (−(aτ + b) + (a − 1)τ + τ ) = −b h −         (cτ + d)     .
+                  t             4N                                           t            4N
+The resulting exponential contributes to the multiplier system since the factor cτ + d cancels.
+  Finally, we see directly that the terms in (3.4) which are constant when considered as a polynomial
+in h − N/t cancel. Therefore, the simplification of (3.4) yields that the exponential is
+                                                      2              2
+                                    e−2πi(h− t ) τ e−2πi(h− t ) ab e−2πib(h− t ) 4N .
+                                                 N               N                     N   ct
+                                                                                                                            (3.5)
+10                                              BEN KANE AND SIU HANG MAN
+
+Altogether, plugging (3.3) and (3.5) into (3.2) (note that in the simplification we left out one
+exponential term in (3.3) because it was independent of τ ) yields
+                 
+           aτ + b                                   ht−N              ct2   d−1
+                    = v(γ ′ )−3 (cτ + d) 2 (−1)(a−1) 2N +(h− t ) t − 16N 2 − 2
+                                         1                  N 4Nb
+  Fh,t,N
+           cτ + d
+                                                                                                   2
+                                                                                                     
+                                                            2                ct πi (a−1) ht−N + ct
+                                                −2πi(h− Nt ) ab −2πib(h− N )
+                                           ×e                            e
+                                                                         t 4N             2N   16N e2
+                                                                                                                              Fh,t,N (τ ). (3.6)
+We see from (3.6) that Fh,t,N has the desired modularity properties.
+  We next compute the image under ξ1/2 . Since the µ-function is holomorphic on the upper half-
+plane, it is annihilated by ξ1/2 . Therefore, plugging in the definition (3.1) of µ
+                                                                                  e, we have
+                                                                                    
+                                  1                  2
+                                         −2πi(h− Nt ) τ     8N 2 ht    1       1 8N 2 τ
+             ξ 1 (Fh,t,N (τ )) = − ξ 1 e                R            −     τ+ ; 2          .
+               2                  2i 2                       t2   2N   2       2 t
+Noting that we have                                                                    
+                                                    8N 2    ht   1
+                                                                         
+                                           Im        t2     2N − 2           τ + 21             ht  1
+                                                                                          =      − ,
+                                                       Im       8N 2 τ                          2N  2
+                                                                 t2
+we then employ [17, Theorem 1.16] to rewrite this as
+                                                                               
+                                               Z            g ht ,0 (z)
+                                         1  i∞                                 
+                    ξ 1 (Fh,t,N (τ )) = − ξ 1           r   2N
+                                                                           dz ,                                                        (3.7)
+                      2                  2i 2  − 8N22 τ             8N 2τ
+                                                                                
+                                                   t       −i z + t2
+
+where                                                               X                   2
+                                                ga,b (τ ) :=                  νeπiν τ +2πibν .
+                                                                  ν∈a+Z
+The remaining integral is what is known as a non-holomorphic Eichler integral, and is easily eval-
+uated by the Fundamental Theorem of Calculus as
+                                                                2 
+         Z i∞       g       (z)                        2 g        8N τ                        
+                     ht
+                         ,0                      1 8N
+                                                           ht
+                                                              ,0   t2           2N         2N
+                 r  2N                                  2N
+    ξ1                              dz  = −2iv 2 t2 2N p               = −2i    g ht
+                                                                                 t 2N ,0    t
+                                                                                              τ .
+     2         2
+          − 8N2 τ            8N 2 τ                      t    −2i(τ − τ )
+             t     −i z + t2
+
+Therefore (3.7) becomes
+                                                                                                        
+                                                               2N                               8N 2
+                                           ξ 1 (Fh,t,N (τ )) =    g ht                               τ       .
+                                             2                  t 2N ,0                          t2
+We finally rewrite
+                                                         X                                     X
+            2N                8N 2             2N                        8πiN 2 ν 2 τ                              2
+               g ht                τ       =                       νe       t2          =                    νe2πiν τ = ϑh,t,N (τ ).
+             t 2N ,0           t2               t        ht
+                                                      ν∈ 2N +Z                              ν∈h+ 2N
+                                                                                                  t
+                                                                                                    Z
+
+                                                                                                                                              
+  In order to prove Proposition 1.2, we are particularly interested in the case of N = 3 and h = 2. It
+turns out that congruence conditions immediately rule out all of the possible unary theta functions
+except for the form                             X                2
+                                   ϑχ−3 (τ ) :=    χ−3 (n)ne2πin τ ,                             (3.8)
+                                                                   n∈Z
+                  d
+                      
+where χd (n) :=   nis the usual Kronecker–Jacobi character (also known as the extended Legendre
+symbol). We rewrite this form in the notation from this paper as follows.
+                      BRUINIER–FUNKE PAIRING AND UNARY THETA FUNCTIONS                                                        11
+
+Lemma 3.5. We have                                                  τ 
+                                                            .
+                                             ϑχ−3 (τ ) = ϑ2,1,3
+                                                        4
+Remark. By Theorem 3.4, Lemma 3.5 together with the chain rule implies that
+                                              τ  1
+                                   ξ 1 F2,1,3       = ϑχ−3 (τ ).
+                                     2          4     4
+Proof. We compute
+              X                    2
+                                         X                     2
+  ϑχ−3 (τ ) =   (3n + 1)ne2πi(3n+1) τ −     (3n − 1)ne2πi(3n−1) τ
+             n∈Z                              n∈Z
+                          X                                   X
+                                         2πi(3n+1)2 τ                                            2
+                      =         (3n + 1)ne              −         (−3n − 1)ne2πi(−3n−1) τ
+                          n∈Z                                 n∈Z
+                                                   X                  2
+                                                                                     X               2τ
+                                                                                                                   τ 
+                                       =2                     ne2πin τ =                       ne2πin 4 = ϑ2,1,3          .
+                                                                                                                    4
+                                             n≡1    (mod 3)                    n≡2   (mod 6)
+
+                                                                                                                              
+
+                                 4. An application to lattice theory
+4.1. An application. To motivate this study, we first prove Theorem 1.1.
+Proof of Theorem 1.1. We decompose ΘL+ν as an Eisenstein series E, a unary theta function, and
+a cusp form g which is orthogonal to unary theta functions. Since the unary theta function is trivial
+by assumption, we have
+                                          ΘL+ν = E + g.
+We then compare the coefficients of E + g. Since every element of M Z + r is primitively represented
+locally, the local densities increase as a function of n. The product of the local densities were shown
+in [16] (and independently in [14]) to be the Fourier coefficients of E, paralleling the famous Siegel–
+Weil formula. Since ν ∈ QL, there exists R ∈ N for which Rν ∈ L. Note further that (denoting
+the localization at the prime p by Lp := L ⊗ Qp ) for each prime p ∤ R, we have ν ∈ Lp (because R
+is invertible in Qp ) Therefore
+                                               Lp + ν = Lp .
+In other words, the local density at p for L + ν and for L agree. Denoting the local densities for
+L + ν by βp and the local densities of L by αp , we have
+                                              Q
+                                     Y           p|R βp
+                                                        Y
+                                         βp = Q           αp .
+                                       p         p|R αp p
+             Q
+The product p αp is known to be a (Hurwitz) class number for an imaginary quadratic field (see
+                                                                           1
+[9, Theorem 86]) and these are known to grow faster than n 2 −ε by Siegel’s [15] famous (ineffective)
+lower bound for the class numbers. On the other hand, Duke [6] has shown that the coefficients of
+g grow slower than n3/7+ε . Therefore, the coefficients of E are the main asymptotic term and they
+are positive. For n sufficiently large the coefficient must be positive, yielding the claim.       
+   It is worth noting that the Fourier coefficients of the unary theta function grow at the same rate
+as the coefficients of the Eisenstein series. In other words, when the unary theta function is not
+trivial, it is often the case that the set investigated in Theorem 1.1 is actually infinite. One such
+example is worked out in [8, Theorem 1.5] with an applications to sums of polygonal numbers, and
+a proposed algebraic explanation for this behavior involving the spinor genus of L + ν is given in
+[8, Conjecture 1.3].
+12                                   BEN KANE AND SIU HANG MAN
+
+4.2. An individual case. In individual cases, one may combine Theorem 1.1 with Theorem 3.4 to
+show that certain quadratic polynomials are almost universal. We demonstrate one such example
+in Proposition 1.2.
+Proof of Proposition 1.2. Let L+ν be the corresponding shifted lattice. By Theorem 1.1, it suffices
+to show that the inner product of ΘL+ν against all theta functions in the same space is trivial. For
+the diagonal lattice corresponding to the quadratic form Q(x, y, z) = x2 + 3y 2 + 3z 2 , an inclusion-
+                                                        P       2
+exclusion argument implies that (recalling that Θ(τ ) = n∈Z q n )
+                  ΘL+ν (τ ) = (Θ(τ ) − Θ(9τ )) (Θ(3τ ) − Θ(27τ )) (Θ(3τ ) − Θ(27τ )) ,
+from which one sees that ΘL+ν is actually a weight 3/2 modular form on Γ0 (108). Specifically, in
+Shimura’s notation, we have
+                                                             
+                                               3     3 0 0
+                          ΘL+ν (τ ) = θ 6τ ; 9 , 0 9 0 , 9, 1 ,
+                                               9     0 0 9
+where (for A a symmetric n × n matrix, h ∈ Zn satisfying Ah ∈ N Zn , and P a spherical function)
+                                               X               2πiτ t
+                         θ(τ ; h, A, N, P ) :=          P (x)e 2N 2 xAx .                  (4.1)
+                                                             x∈Zn
+                                                       x≡h    (mod N )
+
+Here t x denotes the transpose of x. We write hL and AL for the corresponding vector and lattice
+in our case and omit P = 1 in the notation in the following.
+  A straightforward check of congruence conditions implies that the only relevant theta function is
+ϑχ−3 defined in (3.8). By Lemma 3.5, Theorem 3.4, and Theorem 3.1, it suffices to show that, for
+Γ = Γ0 (108),
+                              XX
+                                      cΘL+ν ,̺ (n)cF2,1,3 (τ /4),̺ (−n) = 0,                  (4.2)
+                                ̺∈SΓ n≥0
+where we abuse notation to write cF2,1,3 (τ /4),̺ (−n) as the (−n)th coefficient of F2,1,3 (τ /4). In order
+to compute the expansions at other cusps, we apply S and T repeatedly (using Lemma 3.2) and
+note that [17, Theorem 1.11 (2)] yields the fully modularity properties of F2,1,3 (τ /4) as a vector-
+valued modular form, while ΘL+ν behaves as a vector-valued modular form on the full modular
+group by [13, (2.4) and (2.5)]. Specifically, we have (for arbitrary h satisfying AL h ∈ 9Z3 )
+                                        X
+                    1                                 2πi
+               θ − ; h, AL , 9 =                     e 27 (k1 h1 +3k2 h2 +3k3 h3 ) θ(z; k, AL , 9) ,
+                    z
+                                       k (mod 9)
+                                     AL k≡0 (mod 9)
+
+                                   θ(z + 2; ; h, AL , 9) = e 27 (h1 +3h2 +3h3 ) θ(z; h, AL , 9) .
+                                                                   2πi         2   2   2
+
+
+
+Note that the restriction AL h ≡ 0 (mod 9) is equivalent to 3 | h1 , so the exponential in the first
+identity may be simplified as                           
+                                            2πi    k1 h1
+                                                         +k2 h2 +k3 h3
+                                           e 9       3
+
+
+and the exponential in the second identity may be simplified as
+                                                        2             
+                                                 2πi    h1
+                                                  9      3
+                                                           +h22 +h23
+                                             e                             .
+Since the only terms contributing to the sum in (4.2) are the principal parts (the terms where the
+power of q is negative) of the expansions around each cusp of F2,1,3 , we only need to compute a few
+Fourier coefficients for each of the components of the vector-valued modular forms corresponding
+to ΘL+ν and F2,1,3 . A computer check then verifies (4.2), yielding the claim in the proposition. 
+                         BRUINIER–FUNKE PAIRING AND UNARY THETA FUNCTIONS                                           13
+
+                                                   References
+ [1] K. Bringmann and K. Ono, The f (q) mock theta function conjecture and partition ranks, Invent. Math. 165
+     (2006), 243–266.
+ [2] K. Bringmann and K. Ono, Dyson’s rank and Maass forms, Ann. of Math. 171 (2010), 419–449.
+ [3] J. Bruinier, J. Funke, On two geometric theta lifts, Duke Math. J. 125 (2004), no. 1, 45–90.
+ [4] W. K. Chan and A. Haensch, Almost universal ternary sums of squares and triangular numbers, Developments
+     in Mathematics 31, Springer-Verlag, New York, 2013, pp. 51– 62.
+ [5] W.K. Chan and B.-K. Oh, Almost universal ternary sums of triangular numbers, Proc. Amer. Math. Soc. 137
+     (2009), 3553–3562.
+ [6] W. Duke, Hyperbolic distribution problems and half-integral weight Maass forms, Invent. Math. 92 (1988), 73–90.
+ [7] W. Duke and R. Schulze-Pillot, Representation of integers by positive ternary quadratic forms and equidistribution
+     of lattice points on ellipsoids, Invent. Math. 99 (1990), no. 1, 49–57.
+ [8] A. Haensch and B. Kane, Almost universal ternary sums of polygonal numbers, submitted for publication.
+ [9] B. Jones, The arithmetic theory of quadratic forms, Carcus Monograph series 10, Math. Assoc. Amer., Buffalo,
+     NY, 1950.
+[10] B. Kane and Z.W. Sun, On almost universal mixed sums of squares and triangular numbers, Trans. Amer. Math.
+     Soc. 362 (2010), 6425–6455.
+[11] S. Man and A. Mehta, Almost universal weighted ternary sums of polygonal numbers, in preparation.
+[12] H. Petersson, Konstruktion der Modulformen und der zu gewissen Grenzkreisgruppen gehörigen automorphen
+     Formen von positiver reeller Dimension und die vollständige Bestimmung ihrer Fourierkoeffzienten, S.-B. Hei-
+     delberger Akad. Wiss. Math. Nat. Kl. (1950), 415–474.
+[13] G. Shimura, On modular forms of half-integral weight, Ann. Math. 97 (1973), 440–481.
+[14] G. Shimura, Inhomogeneous quadratic forms and triangular numbers, Amer. J. Math. 126 (2004), 191–214.
+[15] C. Siegel, Über die analytische Theorie der quadratischen Formen, Ann. Math. 36 (1935), 527–606.
+[16] F. van der Blij, On the theory of quadratic forms, Ann. Math 50 (1949), 875–883.
+[17] S. Zwegers, Mock theta functions, Ph.D. thesis, Utrecht University (2002).
+
+  Ben Kane, Department of Mathematics, University of Hong Kong, Pokfulam, Hong Kong.
+  E-mail address: bkane@hku.hk
+
+  Siu Hang Man, Department of Mathematics, University of Hong Kong, Pokfulam, Hong Kong.
+  E-mail address: der.gordox@gmail.com
+

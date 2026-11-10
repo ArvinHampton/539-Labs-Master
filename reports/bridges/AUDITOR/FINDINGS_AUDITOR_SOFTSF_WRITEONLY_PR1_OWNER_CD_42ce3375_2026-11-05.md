@@ -1,0 +1,108 @@
+# Auditor Soft SF Write-only hash inventory
+Item: 6
+Hash-only. No RECS. No CERT.
+invent HOLD STANDS
+Hash MATCH ≠ SM recovery / Gemini access validation. No external Gemini prompt.
+Subjects and tip read only; tip_touched: NO
+Tip SHA256 before: `7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91`
+Search: /workspace regular Markdown hashes, matching basenames and SHA256 sidecar mentions; symlinks not followed.
+## Documentary only
+Soft SF KEEP Soft SF 3c9deb7f UNVERIFIED O5 + MATCH=0; Owner Tier E table ≠ CRD±tol; DF solar stands.
+## Subject
+Path: `/workspace/quantum-comp/reports/PR1-FINDINGS-OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md`
+Expected SHA256: `42ce3375d7a0d19c7d9e3547ed7f195a22cf1ec756ab1633038ebe1e7c9eb72c`
+SHA256: `42ce3375d7a0d19c7d9e3547ed7f195a22cf1ec756ab1633038ebe1e7c9eb72c`
+Hash status: MATCH
+Sidecar: `/workspace/quantum-comp/reports/PR1-FINDINGS-OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md.sha256`
+Sidecar SHA256: `fedfae9e80bc5a51234e28d172c867b028e3fc43e5f27c7d7f829ddbd3669a10`
+Sidecar status: MATCH
+```text
+42ce3375d7a0d19c7d9e3547ed7f195a22cf1ec756ab1633038ebe1e7c9eb72c  PR1-FINDINGS-OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md
+```
+### Mirrors
+Path: `/workspace/quantum-comp/bridges/AUDITOR/PR1-FINDINGS-OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md`
+Expected SHA256: `42ce3375d7a0d19c7d9e3547ed7f195a22cf1ec756ab1633038ebe1e7c9eb72c`
+SHA256: `42ce3375d7a0d19c7d9e3547ed7f195a22cf1ec756ab1633038ebe1e7c9eb72c`
+Hash status: MATCH
+Sidecar: `/workspace/quantum-comp/bridges/AUDITOR/PR1-FINDINGS-OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md.sha256`
+Sidecar SHA256: `fedfae9e80bc5a51234e28d172c867b028e3fc43e5f27c7d7f829ddbd3669a10`
+Sidecar status: MATCH
+```text
+42ce3375d7a0d19c7d9e3547ed7f195a22cf1ec756ab1633038ebe1e7c9eb72c  PR1-FINDINGS-OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md
+```
+Path: `/workspace/quantum-comp/reports/AUDITOR/PR1-FINDINGS-OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md`
+Expected SHA256: `42ce3375d7a0d19c7d9e3547ed7f195a22cf1ec756ab1633038ebe1e7c9eb72c`
+SHA256: `42ce3375d7a0d19c7d9e3547ed7f195a22cf1ec756ab1633038ebe1e7c9eb72c`
+Hash status: MATCH
+Sidecar: `/workspace/quantum-comp/reports/AUDITOR/PR1-FINDINGS-OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md.sha256`
+Sidecar SHA256: `fedfae9e80bc5a51234e28d172c867b028e3fc43e5f27c7d7f829ddbd3669a10`
+Sidecar status: MATCH
+```text
+42ce3375d7a0d19c7d9e3547ed7f195a22cf1ec756ab1633038ebe1e7c9eb72c  PR1-FINDINGS-OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md
+```
+Path: `/workspace/quantum-comp/reports/bridges/AUDITOR/PR1-FINDINGS-OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md`
+Expected SHA256: `42ce3375d7a0d19c7d9e3547ed7f195a22cf1ec756ab1633038ebe1e7c9eb72c`
+SHA256: `42ce3375d7a0d19c7d9e3547ed7f195a22cf1ec756ab1633038ebe1e7c9eb72c`
+Hash status: MATCH
+Sidecar: `/workspace/quantum-comp/reports/bridges/AUDITOR/PR1-FINDINGS-OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md.sha256`
+Sidecar SHA256: `fedfae9e80bc5a51234e28d172c867b028e3fc43e5f27c7d7f829ddbd3669a10`
+Sidecar status: MATCH
+```text
+42ce3375d7a0d19c7d9e3547ed7f195a22cf1ec756ab1633038ebe1e7c9eb72c  PR1-FINDINGS-OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md
+```
+### Sidecars mentioning expected digest
+- `/workspace/quantum-comp/bridges/AUDITOR/PR1-FINDINGS-OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md.sha256`; SHA256 `fedfae9e80bc5a51234e28d172c867b028e3fc43e5f27c7d7f829ddbd3669a10`
+- `/workspace/quantum-comp/reports/AUDITOR/PR1-FINDINGS-OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md.sha256`; SHA256 `fedfae9e80bc5a51234e28d172c867b028e3fc43e5f27c7d7f829ddbd3669a10`
+- `/workspace/quantum-comp/reports/PR1-FINDINGS-OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md.sha256`; SHA256 `fedfae9e80bc5a51234e28d172c867b028e3fc43e5f27c7d7f829ddbd3669a10`
+- `/workspace/quantum-comp/reports/bridges/AUDITOR/PR1-FINDINGS-OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md.sha256`; SHA256 `fedfae9e80bc5a51234e28d172c867b028e3fc43e5f27c7d7f829ddbd3669a10`
+## Subject
+Path: `/workspace/quantum-comp/reports/SOFTSF_PRESS_PR1_OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md`
+Expected SHA256: `1ee1e8cc3597ebeae51f6953f54e449515ab79dfa2b04c897bf8345cecdb3b07`
+SHA256: `1ee1e8cc3597ebeae51f6953f54e449515ab79dfa2b04c897bf8345cecdb3b07`
+Hash status: MATCH
+Sidecar: `/workspace/quantum-comp/reports/SOFTSF_PRESS_PR1_OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md.sha256`
+Sidecar SHA256: `e34242730649f0fda91fbdb50839bca3c66bc66ad01fd3b23fab90379bf86953`
+Sidecar status: MATCH
+```text
+1ee1e8cc3597ebeae51f6953f54e449515ab79dfa2b04c897bf8345cecdb3b07  SOFTSF_PRESS_PR1_OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md
+```
+### Mirrors
+Path: `/workspace/quantum-comp/bridges/AUDITOR/SOFTSF_PRESS_PR1_OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md`
+Expected SHA256: `1ee1e8cc3597ebeae51f6953f54e449515ab79dfa2b04c897bf8345cecdb3b07`
+SHA256: `1ee1e8cc3597ebeae51f6953f54e449515ab79dfa2b04c897bf8345cecdb3b07`
+Hash status: MATCH
+Sidecar: `/workspace/quantum-comp/bridges/AUDITOR/SOFTSF_PRESS_PR1_OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md.sha256`
+Sidecar SHA256: `e34242730649f0fda91fbdb50839bca3c66bc66ad01fd3b23fab90379bf86953`
+Sidecar status: MATCH
+```text
+1ee1e8cc3597ebeae51f6953f54e449515ab79dfa2b04c897bf8345cecdb3b07  SOFTSF_PRESS_PR1_OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md
+```
+Path: `/workspace/quantum-comp/reports/AUDITOR/SOFTSF_PRESS_PR1_OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md`
+Expected SHA256: `1ee1e8cc3597ebeae51f6953f54e449515ab79dfa2b04c897bf8345cecdb3b07`
+SHA256: `1ee1e8cc3597ebeae51f6953f54e449515ab79dfa2b04c897bf8345cecdb3b07`
+Hash status: MATCH
+Sidecar: `/workspace/quantum-comp/reports/AUDITOR/SOFTSF_PRESS_PR1_OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md.sha256`
+Sidecar SHA256: `e34242730649f0fda91fbdb50839bca3c66bc66ad01fd3b23fab90379bf86953`
+Sidecar status: MATCH
+```text
+1ee1e8cc3597ebeae51f6953f54e449515ab79dfa2b04c897bf8345cecdb3b07  SOFTSF_PRESS_PR1_OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md
+```
+Path: `/workspace/quantum-comp/reports/bridges/AUDITOR/SOFTSF_PRESS_PR1_OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md`
+Expected SHA256: `1ee1e8cc3597ebeae51f6953f54e449515ab79dfa2b04c897bf8345cecdb3b07`
+SHA256: `1ee1e8cc3597ebeae51f6953f54e449515ab79dfa2b04c897bf8345cecdb3b07`
+Hash status: MATCH
+Sidecar: `/workspace/quantum-comp/reports/bridges/AUDITOR/SOFTSF_PRESS_PR1_OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md.sha256`
+Sidecar SHA256: `e34242730649f0fda91fbdb50839bca3c66bc66ad01fd3b23fab90379bf86953`
+Sidecar status: MATCH
+```text
+1ee1e8cc3597ebeae51f6953f54e449515ab79dfa2b04c897bf8345cecdb3b07  SOFTSF_PRESS_PR1_OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md
+```
+### Sidecars mentioning expected digest
+- `/workspace/quantum-comp/bridges/AUDITOR/SOFTSF_PRESS_PR1_OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md.sha256`; SHA256 `e34242730649f0fda91fbdb50839bca3c66bc66ad01fd3b23fab90379bf86953`
+- `/workspace/quantum-comp/reports/AUDITOR/SOFTSF_PRESS_PR1_OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md.sha256`; SHA256 `e34242730649f0fda91fbdb50839bca3c66bc66ad01fd3b23fab90379bf86953`
+- `/workspace/quantum-comp/reports/SOFTSF_PRESS_PR1_OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md.sha256`; SHA256 `e34242730649f0fda91fbdb50839bca3c66bc66ad01fd3b23fab90379bf86953`
+- `/workspace/quantum-comp/reports/bridges/AUDITOR/SOFTSF_PRESS_PR1_OWNER_CD_EXECUTION_PROTOCOL_TIERE_SOFTSF_2026-11-05.md.sha256`; SHA256 `e34242730649f0fda91fbdb50839bca3c66bc66ad01fd3b23fab90379bf86953`
+Aggregate hash status: MATCH
+Tip SHA256 after: `7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91`
+tip_touched: NO
+Inventory read errors: 0

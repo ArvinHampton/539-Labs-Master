@@ -1,0 +1,9 @@
+{
+ "control_M2_35P_bad": 0,
+ "X2_bad": 0,
+ "control_wrong_34I_bad": 105,
+ "X1_bad": 0,
+ "X1": "PASS",
+ "X2": "PASS",
+ "controls_ok": true
+}

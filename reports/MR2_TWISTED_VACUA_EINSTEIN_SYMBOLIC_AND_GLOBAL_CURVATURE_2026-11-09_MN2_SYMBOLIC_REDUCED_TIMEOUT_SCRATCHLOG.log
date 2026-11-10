@@ -1,0 +1,5 @@
+== MR2 adoption blockers: Riemann / systole / full EOM ==
+check ghat*Delta^(-2/3) == V2 cand_metric(): True
+DONE 0s
+MN2 symbolic (reduced): field Rational function field in X1, s_a, s_b over QQ with lex order; minpoly 8*X1**5 - 1
+exit_code=124

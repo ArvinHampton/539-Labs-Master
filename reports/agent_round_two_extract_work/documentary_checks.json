@@ -1,0 +1,51 @@
+{
+  "scope": "Seven fixed registered source files only; no exhaustive corpus absence claim; no proofs created.",
+  "t3": {
+    "B_II_2_line": "T_{3-ref}(n) = { n//3 if n ≡ 0 (mod 3); (4n+2)//3 if n ≡ 1 (mod 3); (2n+1)//3 if n ≡ 2 (mod 3) }",
+    "Option_line": "| Map | **Canonical T3**: \\(0\\to n//3\\), \\(1\\to(4n+2)//3\\), \\(2\\to(2n+1)//3\\) |",
+    "REF_function": "def T3(n: int) -> int:\n    \"\"\"Single step of the balanced ternary Syracuse map.\"\"\"\n    r = n % 3\n    if r == 0:\n        return n // 3\n    if r == 1:\n        return (4 * n + 2) // 3\n    return (2 * n + 1) // 3",
+    "byte_identical_expression_documents": false,
+    "normalized_three_branch_expressions_match": true,
+    "global_convergence_proved": false
+  },
+  "Rc": {
+    "searched_source_ids": [
+      "PAPER",
+      "PINS",
+      "G",
+      "AX2",
+      "RES",
+      "OPTION",
+      "REF"
+    ],
+    "hits": [
+      {
+        "source": "G",
+        "line": 93,
+        "text": "| C9 | Parameter-free \\(R_c\\approx1.5954\\) via Appell–Lerch | **UNDEFINED / OVERCLAIM** | No Soft SF-checked evaluation in Agent anchors |"
+      },
+      {
+        "source": "G",
+        "line": 116,
+        "text": "10. **\\(R_c\\approx1.5954\\).** Which Appell–Lerch sum (indices, characteristics, nome/modulus, regularization) evaluates to this number without free parameters, and where is the Soft SF-readable evaluation?"
+      },
+      {
+        "source": "G",
+        "line": 132,
+        "text": "| P4 | Derivation: named Appell–Lerch evaluation → \\(R_c\\approx1.5954\\) with error bound / parameter inventory | §4 boundary claim |"
+      },
+      {
+        "source": "G",
+        "line": 184,
+        "text": "- Invented Bruhat–Tits embedding, \\((4+1)/(5+1)\\) split, vacuum-\\(\\Lambda\\) cancellation, Kronecker–Kummer bypass, Tate–Gelfand continuum theorem, Appell–Lerch→\\(R_c\\), or reconciliation of the three T3 maps."
+      },
+      {
+        "source": "OPTION",
+        "line": 6,
+        "text": "**Companions:** `DUAL_PROFILES.md`, `Architecture_Ternary_Primitive_Comparison.md`, `rtl_vector_crosscheck.py`"
+      }
+    ],
+    "standalone_Appell_Lerch_spectral_radius_derivation_found": false,
+    "meaning": "References/questions/proposal language may be PRESENT; a standalone explicit evaluation was not located in these seven files. B itself asserts a new evaluation but does not supply it."
+  }
+}

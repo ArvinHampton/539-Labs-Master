@@ -1,0 +1,26 @@
+Remark 41.4 (Scope of the Local cite-lifts). The three Local cite-lifts F1–F3 exhaust the Cate-
+gory A content drawn from the group-ring reading of the residual path problem. They are combi-
+natorial and scale-free. No normalisation scalar enters them, and they do not identify any modular
+form, any shadow series, or any boundary vector of C.
+
+41.4   Absence of a normalisation for the Local cite-lifts
+Proposition 41.5 (Scale-free Local cite-lifts; Hecke-scale fallback). No normalisation scalar enters
+Theorems 41.1–41.3. In particular the Local cite-lifts are independent of every candidate of the
+form                                     √
+                                 ln(6 + 35)
+                                      √      ,      1.81,       0.7858.
+                                        10
+                                            √
+If a later Hecke deformation over K = Q( 35) requires a field-invariant scale, the only canonical
+choice recorded here is the residue of the Dedekind zeta at s = 1,
+                                                           √
+                                    2 hK R K     2 ln(6 + 35)
+                         Res ζK = √           =        √           ≈ 0.837679,                (41.1)
+                         s=1            140              35
+                                    √
+where hK = 2 and RK = ln(6 + 35) (fundamental unit of norm +1). Identity (41.1) equals
+L(1, χ140 ) and is not a normalisation of the Local cite-lifts.
+
+Proof. The statements of Theorems 41.1–41.3 are purely combinatorial identities and complexity
+statements in Z[G]; no scalar appears. The classical formula for Ress=1 ζK over a real quadratic
+field of discriminant 140 is standard (r1√= 2, w = 2), and the numerical evaluation follows from

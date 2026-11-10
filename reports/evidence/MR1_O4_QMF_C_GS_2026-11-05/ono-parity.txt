@@ -1,0 +1,833 @@
+                 PARITY OF THE PARTITION FUNCTION
+                       IN ARITHMETIC PROGRESSIONS
+
+
+                                            Ken Ono
+                          In memory of the late S. Janaki Ammal
+
+      Abstract. Let p(n) denote the number of partitions of a non-negative integer n. A
+      well-known conjecture asserts that every arithmetic progression contains infinitely many
+      integers M for which p(M ) is odd, as well as infinitely many integers N for which p(N )
+      is even (see Subbarao [23]). In this paper we prove that there indeed are infinitely many
+      integers N in every arithmetic progression for which p(N ) is even; and that there are
+      infinitely many integers M in every arithmetic progression for which p(M ) is odd so
+      long as there is at least one (actually, we prove that if there is no such M less than
+      1010 t7 where t is the modulus of the arithmetic progression, then p(N ) must be even for
+      all N in the arithmetic progression). Using these results we have checked Subbarao’s
+      conjecture for all arithmetic progressions with modulus ≤ 100, 000. The main tools in
+      our proofs are the methods developed by Deligne, Serre, and Sturm for the reduction
+      of positive integer weight holomorphic modular forms.
+
+
+
+
+                                       1. Introduction
+A partition of a non-negative integer n is a non-increasing sequence of positive integers
+whose sum is n. Euler gave the following generating function for p(n), the number of
+partitions of an integer n:
+                                   ∞                 ∞
+                                   X                 Y      1
+(1)                                      p(n)q n =               .
+                                   n=0               n=1
+                                                         1 −  qn
+
+Ramanujan observed various surprising congruences for p(n) when n is in certain,
+very special, arithmetic progressions; for example:
+
+                                    p(5n + 4) ≡ 0        mod 5,
+
+                                    p(7n + 5) ≡ 0        mod 7,
+and
+                                   p(11n + 6) ≡ 0        mod 11.
+
+  1991 Mathematics Subject Classification. Primary 05A17; Secondary 11P83.
+  Key words and phrases. Parity conjecture, partitions, modular forms.
+  The author is support by National Science Foundation grant DMS-9508976.
+
+                                                                              Typeset by AMS-TEX
+                                                 1
+2                                       KEN ONO
+
+
+There are now many proofs of these congruences (and their generalizations) in the
+literature (see [1, 2, 3, 4, 5, 6, 7, 11, 12, 24 ] for instance), often involving modular
+equations and various exotic combinatorial objects.
+    Surprisingly there does not seem to be any such congruences modulo 2 or 3. In
+fact the parity of p(n) seems to be quite random, and it is believed that the partition
+function is ‘equally often’ even and odd; that is that p(n) is even for ∼ 12 x positive
+integers n ≤ x (see Parkin and Shanks [20]).
+    In [23] Subbarao made the following conjecture on the parity of p(n), for those
+integers n belonging to any given arithmetic progression:
+Conjecture. For any arithmetic progression r (mod t), there are infinitely many
+integers M ≡ r (mod t) for which p(M ) is odd, and there are infinitely many integers
+N ≡ r (mod t) for which p(N ) is even.
+   This conjecture has been proved for t = 1, 2, 3, 4, 5, 10, 12, 16 and 40, using a variety
+of elegant combinatorial methods, from the works of Garvan, Kolberg, Hirschhorn,
+Stanton and Subbarao (see [6, 9, 10, 13, 16, 23]).
+   In this paper, using ideas from the theory of modular forms (as developed by
+Deligne, Ligozat, Serre, and Sturm), we go some way to proving Subbarao’s conjec-
+ture, with the following two results:
+Main Theorem 1. For any arithmetic progression r (mod t), there are infinitely
+many integers N ≡ r (mod t) for which p(N ) is even.
+Main Theorem 2. For any arithmetic progression r (mod t), there are infinitely
+many integers M ≡ r (mod t) for which p(M ) is odd, provided there is one such M .
+Furthermore, if there does exist an M ≡ r (mod t) for which p(M ) is odd, then the
+smallest such M is less than Cr,t , where
+
+                               223+j · 37 t6 Y
+                                                       
+                                                     1
+                       Cr,t :=                   1 −      − 2j ,
+                                    d2               p2
+                                              p|6t
+
+                                                            t
+with d := gcd(24r − 1, t) and j an integer satisfying 2j > 24 .
+   ¿From the two theorems we have an algorithm to determine the truth of our parity
+conjecture for any given arithmetic progression r (mod t): Compute p(N ) (mod 2)
+for N = r, r + t, r + 2t, . . . for all such N up to Cr,t . As soon as we find one odd
+number we have verified the conjecture. If all these numbers are even then we have
+proved that the conjecture is false.
+   Ken Burrell ran an efficient version of this algorithm on a CRAY C-90, giving the
+following result which confirms the conjecture for all moduli up to 100, 000:
+Main Corollary. For all 0 ≤ r < t ≤ 105 , there are infinitely many integers M ≡ r
+(mod t) for which p(M ) is odd, and there are infinitely many integers N ≡ r (mod t)
+for which p(N ) is even.
+
+                                  2. Preliminaries
+                 
+             a b
+Let A =              ∈ SL2 (Z) act on H, the upper half of the complex plane, by the
+             c d
+linear fractional transformation Az = az+b
+                                       cz+d . If N is a positive integer, then we define
+                              PARITY OF THE PARTITION FUNCTION                              3
+
+
+the following congruence subgroups of SL2 (Z) of level N :
+                                                            
+                              a b
+                Γ0 (N ) :=           | ad − bc = 1, c ≡ 0 mod N .
+                              c d
+
+and
+                                                                                 
+                        a b
+      Γ1 (N ) :=                  | ad − bc = 1, a ≡ d ≡ 1 mod N, and c ≡ 0 mod N       .
+                        c d
+
+    A meromorphic function f (z) on H is called a modular function with positive integer
+weight k with respect to congruence subgroup Γ if
+                                          
+                                    az + b
+                               f              = (cz + d)k f (z)
+                                    cz + d
+                              
+                         a b
+for all z ∈ H and all             ∈ Γ. If f (z) is holomorphic on H and at the cusps of Γ
+                         c d
+(i.e. the rationals), then f (z) is known as a modular form of weight k with respect to
+Γ. If f (z) vanishes at the cusps of Γ, then f (z) is known as a cusp form.
+    We denote the finite dimensional space of modular forms (resp. cusp forms) of
+weight k with respect to Γ1 (N ) by Mk (N ) (resp. Sk (N )). In the variable q = e2πiz ,
+a holomorphic modular form f (z) ∈ Mk (N ) admits a Fourier expansion of the form
+                                                   ∞
+                                                   X
+                                         f (z) =         a(n)q n .
+                                                   n=0
+
+   Of particular interest are certain modular forms in Mk (N ) with nice modular
+transformation properties with respect to Γ0 (N ). If χ is a Dirichlet character mod N,
+then we say that a form f (z) ∈ Mk (N ) (resp. Sk (N ) ) is modular form of weight k
+with Nebentypus character χ if
+                                     
+                               az + b
+                           f            = χ(d)(cz + d)k f (z)
+                               cz + d
+                            
+                        a b
+for all z ∈ H and all          ∈ Γ0 (N ). The space of such modular forms (resp. cusp
+                        c d
+forms) is denoted by Mk (N, χ) (resp. Sk (N, χ)).
+   The spaces Mk (N ) and Sk (N ) have the following decomposition where the sums
+are over all Dirichlet characters χ mod N :
+
+(2)                                    Mk (N ) = ⊕χ Mk (N, χ)
+
+                                        Sk (N ) = ⊕χ Sk (N, χ).
+    The Dedekind Eta-function is the principal modular form of interest in this paper;
+it is defined by the infinite product
+                                                       ∞
+                                                   1
+                                                       Y
+(3)                                    η(z) := q 24          (1 − q n ).
+                                                       n=1
+4                                                KEN ONO
+
+                                                      1
+The generating function (1) for p(n) is q 24 η −1 (z).
+   A function f (z) is called an Eta-product if it is expressible as a finite product of
+the form                                  Y
+                                  f (z) =      η rδ (δz)
+                                                      δ|N
+
+where N and each rδ is an integer. Probably the most famous
+                                                       Q∞ of all Eta-products is
+Ramanujan’s ∆−function, defined by ∆(z) := η 24 (z) = q n=1 (1 − q n )24 . This is the
+unique normalized weight 12 cusp form on SL2 (Z). More generally, Gordon, Hughes,
+and Newman established the following theorem regarding the modular properties of
+Eta-products [8, 18, 19].
+Theorem 1. (Gordon, Hughes, Newman) If f (z) = δ|N η rδ (δz) is an Eta-
+                                                         Q
+
+product for which
+                                      X
+(4)                                         δrδ ≡ 0         mod 24
+                                      δ|N
+
+
+and
+                                     XN
+(5)                                             rδ ≡ 0      mod 24,
+                                            δ
+                                     δ|N
+
+
+then f (z) satisfies
+                                   f (Az) = χ(d)(cz + d)k f (z)
+                         
+                  a   b
+                            ∈ Γ0 (N ) where k = 12
+                                                            P
+for all A =                                                 δ|N rδ . Here the character χ is defined
+                  c  d
+              (−1)k s
+                          and s = δ|N δ rδ .
+                                  Q
+by χ(d) =         d
+
+In particular, if k is a positive integer and f (z) is holomorphic (resp. vanishes) at all
+of the cusps of Γ0 (N ), then f (z) ∈ Mk (N, χ) (resp. Sk (N, χ)).
+   The following theorem will be used to determine whether certain Eta-products are
+modular forms: since η(z) is analytic and never vanishes on H, it suffices for the
+orders at the cusps be non-negative. The following theorem due to Ligozat [17] is the
+necessary criterion for determining orders of an Eta-product at a cusp.
+Theorem 2. (Ligozat) Let c, d and N be positive integers with d | N and gcd(c, d) =
+1. With the notation as above, if the Eta-product f (z) satisfies (4) and (5), then the
+order of vanishing of f (z) at the cusp dc is
+
+                                        1 X N (d, δ)2 rδ
+(6)                                                      .
+                                        24  (d, Nd )dδ
+                                                δ|N
+
+
+
+   Equipped with Theorems 1 and 2 we construct holomorphic modular forms that
+are Eta-products whose Fourier expansions mod 2 are determined by the values of
+p(n) modulo 2.
+                           PARITY OF THE PARTITION FUNCTION                                    5
+
+                                                                                       t
+Proposition 1. For a given positive integer t, let j be an integer satisfying 2j > 24    .
+Define ft (z) by
+                              η(24z) 2j            X
+                    ft (z) :=        ∆ (24tz) =        at (n)q 24n−1 .
+                              η(48z)
+                                                   n≥1
+                                               2
+                                                 
+Then ft (z) is a cusp form in S2j ·12 (1152t, d ). Moreover the Fourier expansion of
+ft (z) mod 2 can be factored as:
+                ∞                    ∞
+                                                    ! ∞                       !
+               X                   X                    X j                 2
+(7) ft (z) =      at (n)q 24n−1 ≡       p(n)q 24n−1          q 2 ·24t(2n+1)     mod 2.
+                 n=0                     n=0                   n=0
+
+
+Proof. ft (z) is an Eta-product with r24 = 1, r48 = −1, r24t = 24 · 2j and rδ = 0
+otherwise. Thus N must be a multiple of 48t = [24, 48, 24t]. If we let N = 1152 =
+24 · 48t then 24 divides δ and N/δ for each of δ = 24, 48, 24t, so that the congruences
+(4) and (5) are evidently true.
+   The cusps of Γ0 (1152t) are represented by fractions dc where d | 1152t and gcd(c, d) =
+1. By Ligozat’s formula (6), the order of vanishing is N/(24(d, Nd )d) times
+
+          (d, 24)2   (d, 48)2   (d, 24t)2 24 · 2j   (d, 24)2           2j
+                                                                          
+                   −          +                   ≥           1−2+           >0
+             24         48            24t              24             t/24
+
+since 2j > t/24 by the hypothesis. Thus ft (z) is a cusp form in S2j ·12 (1152t, d2 ), by
+                                                                                   
+
+Theorems 1 and 2.
+   Now we shall establish the mod 2 factorization of ft (z). The following infinite
+product identity was proved by Jacobi:
+                        ∞                   ∞
+          η 2 (16z)    Y   (1 − q 16n )2   X           2
+                    =q             8n )
+                                         =     q (2n+1) = q + q 9 + q 25 + q 49 + . . . .
+           η(8z)       n=1
+                            (1 − q         n=0
+
+Now, since (1 − Q)2 ≡ 1 − Q2 ≡ 1 + Q2 mod 2, we have
+                       ∞                  ∞                   ∞
+                       Y (1 − q n )32    Y   (1 − q 16n )2   X            2
+(8)       ∆(z) := q              n 8
+                                     ≡ q             8n
+                                                           =     q (2n+1)             mod 2,
+                       n=1
+                           (1 − q )      n=1
+                                              (1 − q )       n=0
+
+so that
+                                                  ∞
+                       j                          X       j              2
+                   ∆2 (24tz) ≡ ∆(24 · 2j tz) ≡          q 2 ·24t(2n+1)       mod 2.
+                                                  n=0
+
+Moreover
+             ∞                 ∞             ∞              ∞
+             X                 Y      1     Y   1 + qn     Y   1 − qn
+(9)                p(n)q n =              =              ≡                       mod 2,
+             n=0               n=1
+                                   1 − qn   n=1
+                                                1 − q 2n   n=1
+                                                               1 − q 2n
+
+so that
+                                 ∞               ∞
+                     η(24z)   1 Y 1 − q 24n     X
+                            =                 ≡     p(n)q 24n−1              mod 2.
+                     η(48z)   q n=1 1 − q 48n   n=0
+
+(7) now follows from multiplying together the two congruences above.                           
+6                                       KEN ONO
+
+
+                                  3. The even case
+Using `−adic Galois representations attached to certain modular forms by Deligne,
+Serre [21] proved the following remarkable theorem about the divisibility of Fourier
+coefficients of holomorphic modular forms.
+Theorem 3. (Serre) Let f (z) be a holomorphic modular form of positive integer
+weight k on some congruence subgroup of SL2 (Z) with Fourier expansion
+                                              ∞
+                                              X
+                                   f (z) =          a(n)q n
+                                              n=0
+
+where a(n) are algebraic integers in some number field. If m is a positive integer,
+then there exists a constant α such that there are O( logxα x ) integers n ≤ x such that
+a(n) is not divisible by m.
+In particular almost all of the Fourier coefficients of a modular form are divisible by
+any given integer m.
+                           P∞
+Corollary 1. If f (z) = n=0 a(n)q n is the Fourier expansion of the form above,
+then
+                                  a(n) ≡ 0 mod m
+for almost all n in any given fixed arithmetic progression r (mod t).
+With this corollary we obtain
+Main Theorem 1. For any arithmetic progression r (mod t), there are infinitely
+many integers N ≡ r (mod t) for which p(N ) is even.
+Proof. In Proposition 1 we defined an Eta-product ft (z) for any given integer t, which
+we proved is a cusp form. Therefore by Serre’s Theorem we see that almost all of the
+coefficients at (n), in the Fourier expansion of ft (z), are even. Now, by multiplying
+                                          1
+(7) through by q, and replacing q by q 24 , we get
+                                  ∞
+                                             ! ∞                !
+                                               X j
+                                                     2 t(2n+1)2
+                 X               X
+                            n              n
+(10)                 at (n)q ≡       p(n)q         q               mod 2.
+               n≥0              n=0                 n=0
+
+   Now let us suppose that p(n) is odd for all but finitely many n ≡ r mod t; in
+particular that p(n) is odd for all n ≥ n0 with n ≡ r mod t. Then, comparing the
+                  j   2
+coefficient of q 2 tk +n on both sides of (10) we find that
+                                     X
+                  at (2j tk 2 + n) ≡        p(2j t(k 2 − i2 ) + n) mod 2.
+                                 i≥1, i odd
+
+Note that each 2j t(k 2 − i2 ) + n ≡ n ≡ r mod t. Now if i ≤ k then 2j t(k 2 − i2 ) + n ≥
+                                                                             n
+n ≥ n0 so that p(2j t(k 2 − i2 ) + n) is odd. If k is odd and i > k > 2j+2      t − 1 then
+ j     2     2                     j   2   2
+2 t(k − i ) + n < 0 so that p(2 t(k − i ) + n) = 0. Therefore, for such k, we have
+at (2j tk 2 + n) ≡ k+1
+                    2  mod 2. We have now proved that for all sufficiently large k ≡ 1
+mod 4 we have at (n) odd for all n ≡ r mod t in the interval [2j tk 2 + n0 , 2j t(k + 2)2 +
+r − t] (assuming, without loss of generality that 0 ≤ r ≤ t − 1). By taking all such
+intervals into account we have a positive proportion of at (n) with n ≡ r mod t are
+odd, contradicting Corollary 1 to Serre’s Theorem.                                        
+                       PARITY OF THE PARTITION FUNCTION                                7
+
+
+                                  4. The odd case
+In this section we establish that there are infinitely many M ≡ r (mod t) where p(M )
+is odd provided that there is at least one M. To do this we prove a technical lemma
+about the reduction mod m of the Fourier expansions of holomorphic modular forms.
+The main result of this section follows as a consequence, for if there were only finitely
+many M ≡ r (mod t) for which p(M ) is odd, then the reduction mod 2 of the
+relevant modular form contradicts the lemma.
+                                                                                 n
+                                                                     P
+   For a given positive integer m and formal power series f :=          n∈Z a(n)q with
+algebraic integer coefficients, we define Ordm (f ) to be the smallest integer n for
+which a(n) is not divisible by m. A special case of a theorem of Sturm [22] allows us
+to computationally determine whether m divides a(n) for every integer n (that is, to
+determine whether Ordm (f ) = ∞).
+                                      P∞
+Theorem 4. (Sturm) Let f (z) = n=0 a(n)q n ∈ Mk (N ) for some positive integer
+N with algebraic integer Fourier coefficients from a fixed number field. If m is a
+positive integer and
+                                          k 2Y           1
+                             Ordm (f ) >     N      (1 − 2 ),
+                                          12             p
+                                                   p|N
+
+then Ordm (f ) = ∞. (i.e. a(n) ≡ 0 mod m for all n)
+Before proceeding to the crucial lemma about the reduction of a modular form
+mod m, we first state a proposition concerning the solutions of Pell’s equation that
+is used in the proof.
+Proposition 2. Let D be a positive integer and c a nonzero integer. Then the set of
+primes p such that there is an integral solution of the form (x, 2p) to the Pell equation
+
+                                     x2 − Dy 2 = c
+
+has density zero in the set of primes.
+Proof. If D is a square, then the unique factorization of integers establishes that there
+are finitely many solutions (x, y); and hence only finitely many of the form (x, 2p)
+where p is prime.                                                √
+   If D is not a square, then consider the ring of integers of Q( D). There are finitely
+many principal ideals with norm | c |, and pick a single generator αi for each such
+ideal. Then every integer solution to x2 − Dy 2 = c is of the form
+                                               √
+                                   ±αi (x0 +       Dy0 )k
+
+for√some i and some integer k where (x0 , y0 ) corresponds to the fundamental unit in
+Q( D). Since the solutions (x, y) grow exponentially with k, the set of primes p such
+that (x, 2p) is a solution has density zero in the set of primes by the Prime Number
+Theorem.                                                                           
+Now we prove the essential lemma about the reduction of a holomorphic modular
+form mod m.
+8                                           KEN ONO
+
+                         P∞
+Lemma 1. Let f (z) = n=0 a(n)q n where the coefficients a(n) are algebraic integers
+in some number field. Let s and w be positive integers and b1 , b2 , . . . bs distinct non-
+zero integers. If m is a positive integer and
+                                 ∞
+                               X X                           2
+                     f (z) ≡                ai (n)q w(2n+1) +bi     mod m
+                               1≤i≤s n=0
+
+
+where ai (n) 6≡ 0 mod m for all n ≥ 0, then f (z) is not in Mk (N ) for any pair of
+positive integers k, and N.
+Proof. Let k and N be positive integers and suppose that f (z) ∈ Mk (N ). We now
+analyze the action of the Hecke operators Tp on f (z) and determine that the proposed
+congruence contradicts Sturm’s theorem. The Hecke operators are linear transforma-
+tions
+P∞ which npreserve Sk (N, χ) and Mk (N, χ). If p is a rational prime and F (z) =
+   n=0 A(n)q ∈ Mk (N, χ), then the modular form F (z) | Tp ∈ Mk (N, χ) is defined
+by
+                                    X
+(11)                 F (z) | Tp =         (A(pn) + χ(p)pk−1 A(n/p))q n .
+                                    n≥0
+
+
+Here A(n/p) = 0 if n/p is not an integer.
+   Now if p ≡ 1 mod N is prime, then the action of the Hecke operator Tp on f (z)
+is well defined and is given by
+                                       X
+(12)                    f (z) | Tp =         (a(pn) + pk−1 a(n/p))q n
+                                       n≥0
+
+
+since χ(p) = 1 for all Dirichlet characters χ mod N. Therefore throughout this proof
+we consider primes p ≡ 1 mod N.
+   The contradiction to the proposed congruence is established by proving the exis-
+tence of infinitely many primes p (although only one is needed) where
+
+                     k 2Y      1
+                        N (1 − 2 ) < Ordm (f (z) | Tp ) < +∞.
+                     12       p
+                            p|N
+
+
+By Sturm’s theorem the left inequality asserts that f (z) | Tp ≡ 0 mod m but the
+right inequality asserts that f (z) | Tp 6≡ 0 mod m; this is the contradiction.
+               P∞                     2
+   Let fi (z) = n=0 ai (n)q w(2n+1) +bi . So we find that
+                                           X
+                               f (z) ≡            fi (z)   mod m.
+                                          1≤i≤s
+
+
+   We first establish that Ordm (fi (z) | Tp ) is unbounded over the primes p ≡ 1
+mod
+P∞ N. We nnow rename, for convenience, the Fourier expansions of fi (z) by fi (z) =
+   n=0 ci (n)q . Suppose there exists a constant C such that Ordm (fi (z) | Tp ) < C for
+all such primes. If p > C > n, then ci (n/p) = 0; thus if Ordm (fi (z) | Tp ) = h < C,
+                       PARITY OF THE PARTITION FUNCTION                                9
+
+
+then by (12) we obtain ci (ph) 6≡ 0 mod m. Therefore ph = wn2 + bi for some positive
+odd integer n. This implies that
+
+(13)                      wn2 + bi ∈ {0, p, 2p, . . . , (C − 1)p}.
+
+   For sufficiently large x, we now count the number of primes p in (x, 2x]√ for which
+(13) holds. Since p ≤ 2x we find that wn2 + bi < 2Cx and so n < 2Cx for x
+sufficiently large. Now at most one prime p > x divides an integer < 2Cx if x > 2C.
+                                         x
+The number of primes p in (x, 2x] is ∼ logx by Dirichlet’s theorem. So for x sufficiently
+                                    x
+large we find that there are ∼ φ(N )logx many primes p ≡ 1 mod N in (x, 2x] where
+Ordm (fi (z) | Tp ) > C.
+   Given a constant    C > 0, we now show that for almost all primes p ≡ 1 mod N
+where −bpi w = 1 that C < Ordm (fi (z) | Tp ) < +∞. Let n ≤ p be the minimal
+              
+
+positive odd integer where
+                                 wn2 + bi ≡ 0 mod p.
+By (12) the only way that
+
+                                                      wn2 + bi
+                             Ordm (fi (z) | Tp ) 6=
+                                                         p
+
+is if there exists another positive odd integer l such that
+
+                              wn2 + bi
+(14)                                   ≥ p(wl2 + bi ) > 0.
+                                 p
+
+If p is sufficiently large, then since n ≤ p we find that
+
+                                    wp ≥ p(wl2 + bi ).
+
+Moreover this forces wl2 + bi ∈ {1, 2, . . . w}. However if there exists a positive odd
+integer l for which
+
+                                wn2 + bi
+(15)                                     > p(wl2 + bi ),
+                                   p
+
+then by (12) this would mean that
+
+                          Ordm (fi (z) | Tp ) ∈ {p, 2p, . . . , wp}.
+
+Therefore those primes p where there exists a positive odd integer l for which (15)
+holds have the property that
+
+(16)                            Ordm (fi (z) | Tp ) < +∞.
+
+  Suppose that in (14) we have the equality
+
+                                wn2 + bi
+                                         = p(wl2 + bi ).
+                                   p
+10                                       KEN ONO
+
+
+Since n ≤ p we obtain
+
+                                         wn2 + bi       bi
+(17)                        wl2 + bi =       2
+                                                  ≤ w + 2.
+                                           p           p
+
+If bi > 0, then there are no such l.
+   If bi < 0, then by (17) we find that l = 1 for all p sufficiently large. By letting
+x = 2wn, y = 2p, and D = w(w + bi ) we find that this equality reduces to the Pell
+equation
+
+(18)                                x2 − Dy 2 = −4wbi .
+
+By Proposition 2, we know that the set of primes where there exists a positive integer
+x such that (x, 2p) is a solution to (18) has density zero. Therefore    we can now
+conclude that for almost all primes p ≡ 1 mod N where −bpi w = 1 that
+                                                              
+
+
+                                 Ordm (fi (z) | Tp ) < +∞.
+
+Combining this with our earlier observation we obtain that for any constant C, that
+for x sufficiently large there are ∼ 2φ(Nx)logx many primes p ≡ 1 mod N in (x, 2x]
+with −bpi w = 1 such that
+            
+
+
+(19)                         C < Ordm (fi (z) | Tp ) < +∞.
+
+   Now we apply these results to describe the behavior of Ordm (f (z) | Tp ). If 1 ≤ i 6=
+j ≤ s, then there are only finitely many n such that ci (n) and cj (n) are both non-zero
+mod m. To see this we only need to note that this occurs precisely when there exists
+positive odd integers l and n such that wn2 + bi = wl2 + bj which reduces to
+
+                                 w(l + n)(l − n) = bi − bj .
+
+Given w, bi , and bj , there are only finitely many solutions l and n (if any). As a
+consequence, for all but finitely many primes p ≡ 1 mod N , we obtain
+
+(20)           Ordm (f (z) | Tp ) = min{Ordm (fi (z) | Tp ) | 1 ≤ i ≤ s}.
+
+By (19), (20) and Dirichlet’s theorem again, there are infinitely many primes p ≡ 1
+mod N such that
+                     k 2Y      1
+                        N (1 − 2 ) < Ordm (f (z) | Tp ) < +∞.
+                     12       p
+                           p|N
+
+
+This contradicts Sturm’s theorem.
+                                                                                   
+In the next lemma we use the orthogonality relations of Dirichlet characters to show
+that the restriction of the Fourier expansion of a modular form to those terms whose
+powers of q are in a fixed arithmetic progression is a modular form.
+                        PARITY OF THE PARTITION FUNCTION                             11
+
+                           P∞
+Lemma 2. Let f (z) = n=0 a(n)q n be a modular form in Mk (N, χ) and let d :=
+gcd(r, t). If 0 ≤ r < t, then
+                                                  X
+                               fr,t (z) =                  a(n)q n
+                                            n≡r mod t
+
+                                                                       
+                                                                 N t2
+is the Fourier expansion of a modular form in Mk                  d         .
+
+Proof. First we recall the orthogonality relations for Dirichlet characters. If a and b
+are any pair of integers where gcd(b, N ) = 1, then
+
+                                                  φ(N ) if a ≡ b mod N
+                       X                     
+                              χ(a)χ(b) =
+                    χ mod N
+                                                  0 otherwise.
+
+Here φ is Euler’s function and the sum is over all Dirichlet characters mod N.
+  Now we cite basic facts concerning the twisting of modular forms    P by Dirichlet
+characters [15]. Let  be a Dirichlet character mod M. If f (z) = n≥0 a(n)q n ∈
+Mk (N, χ), then define f (z) by
+                                            X
+                                 f (z) =          (n)a(n)q n .
+                                            n≥0
+
+
+Then f (z) ∈ Mk (N M 2 , 2 χ).
+  If gcd(r, t) = 1, then define fr,t (z) by
+
+                                           1       X
+                             fr,t (z) =                    (r)f (z).
+                                          φ(t)
+                                                  mod t
+
+
+Here the sum is over all Dirichlet characters  mod t. The Fourier expansion of fr,t (z)
+is
+                                       ∞
+                                   1 X X
+                      fr,t (z) =                 (r)(n)a(n)q n .
+                                 φ(t) n=0
+                                                  mod t
+                       n
+So the coefficient of q in fr,t (z) is a(n) if n ≡ r mod t and 0 otherwise. Therefore
+we obtain                                    X
+                              fr,t (z) =           a(n)q n .
+                                            n≡r mod t
+
+Since each f (z) is a modular form of weight k with respect to Γ1 (N t2 ) and since
+the sum of any two such forms is also a modular form of weight k with respect to
+Γ1 (N t2 ), we find that fr,t (z) ∈ Mk (N t2 ).
+   Now suppose that 1 < d = gcd(t, r). Then let fd (z) := f (z)|Td := n≥0 a(dn)q n ,
+                                                                     P
+
+also a modular form in Mk (N, χ). By replacing z by dz, we obtain a new modular
+form                                              X
+                               F (z) := fd (dz) =   a(dn)q dn
+                                                     n≥0
+12                                              KEN ONO
+
+
+with respect to Γ0 (dN ). Now to isolate those terms whose powers of q belong to
+the arithmetic progression r mod t we apply the orthogonality relations again using
+Dirichlet characters mod dt . To isolate the class r mod t, we simply define
+
+                                                1         X
+                              fr,t (z) :=       t
+                                                                  (r)F (z).
+                                            φ   d        mod dt
+
+
+Here the sum is over all Dirichlet characters  mod dt . The Fourier expansion of fr,t (z)
+is:                                         X
+                               fr,t (z) =         a(n)q n .
+                                                n≡r mod t
+                                                                             
+                                                                       N t2
+By the theory of twists we find that fr,t (z) ∈ Mk                      d         . This completes the proof of
+this Lemma.
+                                                                                                             
+We now combine these facts to establish the main theorem of this section.
+Main Theorem 2. For any arithmetic progression r( mod t), there are infinitely
+many integers M ≡ r (mod t) for which p(M ) is odd, provided there is one such M.
+Furthermore, if there does exist an M ≡ r (mod t) for which p(M ) is odd, then the
+smallest such M is less than Cr,t . where
+
+                               223+j · 37 t6 Y
+                                                      
+                                                     1
+                       Cr,t :=                   1 − 2 − 2j .
+                                    d2              p
+                                                         p|6t
+
+                                                             t
+where d := gcd(24r − 1, t) and j an integer satisfying 2j > 24 .
+Proof. Recall from Proposition 1 that
+
+                       η(24z) 2j         X
+           ft (z) :=          ∆ (24tz) =   at (n)q 24n−1 ∈ S2j ·12 (1152t, χ).
+                       η(48z)
+                                                    n≥1
+
+and
+                              ∞                         ∞
+                              X                         X          j              2
+                                            24n−1
+                   ft (z) ≡         p(n)q                   q 24·2 t(2n+1)            mod 2.
+                              n=0                    n=0
+
+Let d := gcd(24r − 1, t). Therefore by Lemma 2 we define
+                                                                                       13 4 3 
+                                        X                                              2 ·3 t
+            f24r−1,24t (z) =                              at (n)q n ∈ S2j ·12                    ,
+                                                                                          d
+                               n≡24r−1 mod 24t
+
+which when reduced       mod 2 is:
+                                                                ∞
+                                    X                           X                 j      2
+(21)       f24r−1,24t (z) ≡                  p(n)q 24n−1               q 24·2 t(2n+1)        mod 2.
+                               n≡r mod t                        n=0
+
+Note that the arithmetic progression r mod t corresponds to the arithmetic progres-
+sion 24r − 1 mod 24t. If p(M ) is odd for at least one M ≡ r (mod t) but only finitely
+                       PARITY OF THE PARTITION FUNCTION                                13
+
+
+many, then the mod 2 factorization in (21) contradicts Lemma 1. This proves that
+if p(M ) is odd for at least one M ≡ r (mod t), then p(M ) is odd for infinitely many
+such M.
+    Now we prove the second part of the theorem. Assume that p(M ) is even for all
+M ≡ r (mod t) where 0 ≤ M ≤ Cr,t . Then it is easy to see that this implies that
+p(M ) is even for all M ≡ r (mod t) where
+
+                                223+j · 37 t6 Y
+                                                        
+                                                      1
+                    r≤M ≤                         1 −      − 2j t + r.
+                                    d2                p2
+                                            p|6t
+
+
+Since the exponent associated with p(M ) is 24M − 1, the first exponent in the left
+factor of the product (19) which cannot vanish mod 2 is
+
+                                2
+             2j · 12 213 · 34 t3 Y
+                                         
+                                         1
+                                     1 − 2 − 24 · 2j t + 24r − 1 + 24t.
+               12        d              p
+                                   p|6t
+
+
+Thus since the first exponent in the right hand factor of (19) is 24 · 2j t, we find that
+
+                                                   2
+                                2j · 12 213 · 34 t3 Y
+                                                            
+                                                            1
+      Ord2 (f24r−1,24t (z)) ≥                           1 − 2 + 24(t + r) − 1.
+                                  12        d              p
+                                                    p|6t
+
+
+By Sturm’s theorem this forces f24r−1,24t (z) ≡ 0 mod 2. By Main Theorem 1, this
+means that p(M ) is even for all M ≡ r (mod t).
+
+                                                                                   
+This theorem proves that if 0 ≤ r < t, then if p(M ) is ever odd for an M ≡ r (mod t)
+(hence infinitely often), the first odd value must occur where M < Cr,t . It is easy
+                                     t
+to verify that Cr,t < 1010 t7 since 12 > 2j when we choose the minimal j such that
+ j     t
+2 > 24 . As a consequence of the two main theorems we verified the conjecture for
+lots of arithmetic progressions. By computing p(n) mod 2 for all n ≤ 5, 000, 000 we
+obtain:
+
+Main Corollary. For all 0 ≤ r < t ≤ 105 , there are infinitely many integers M ≡ r
+(mod t) for which p(M ) is odd, and there are infinitely many integers N ≡ r (mod t)
+for which p(N ) is even.
+
+
+                                5. Acknowledgements
+I am indebted Ken T. Burrell ( Universal Analytics, Inc.) whose computations are
+the content of the Main Corollary. The computations were completed on a CRAY
+C-90 at the San Diego Supercomputing Center. I am indebted to Andrew Granville
+whose suggestions dramatically clarified and improved the content of this paper. I
+also thank Bruce Berndt and Brad Wilson for previewing preliminary versions of this
+paper.
+14                                           KEN ONO
+
+
+                                          References
+ 1. G. Andrews, The Theory of Partitions, Addison-Wesley, 1976.
+ 2. G. Andrews and F. Garvan, Dyson’s crank of a partition, Bull. Am. Math. Soc. 18 (1988),
+    167-171.
+ 3. A.O.L. Atkin, Proof of a conjecture of Ramanujan, Glasgow Math. J. 8 (1967), 14-32.
+ 4. F. Garvan, A simple proof of Watson’s partition congruence for powers of 7, J. Australian Math.
+    Soc. (A) 36 (1984), 316-334.
+ 5. F. Garvan, New combinatorial interpretations of Ramanujan’s partition congruences mod 5,
+    7 and 11, Trans. Am. Math. Soc. 305 (1988), 47-77.
+ 6. F. Garvan and D. Stanton, Sieved partition functions and q−binomial coefficients, Math. Comp.
+    55 191 (1990), 299-311.
+ 7. F. Garvan and D. Stanton, Cranks and t−cores, Invent. Math. 101 (1990), 1-17.
+ 8. B. Gordon and K. Hughes, Multiplicative properties of η−products II, A tribute to Emil Gross-
+    wald: Number Theory and related analysis, Cont. Math. 143 (1993), Amer. Math. Soc., 415-430.
+ 9. M. Hirschhorn, On the residue mod 2 and mod 4 of p(n), Acta Arithmetica 38 (1980), 105-109.
+10.         , On the parity of p(n) II, J. Combin. Theory (A) 62 (1993), 128-138.
+11.         , Ramanujan’s partition congruences, Discrete Math. 131 (1994), 351-355.
+12. M. Hirschhorn and D.C. Hunt, A simple proof of the Ramanujan conjecture for powers of 5, J.
+    Reine Angew. Math. 336 (1981), 1-17.
+13. M. Hirschhorn and M. Subbarao, On the parity of p(n), Acta Arith. 50 4 (1988), 355-356.
+14. M. Knopp, Modular functions in analytic number theory, Markham, 1970.
+15. N. Koblitz, Introduction to elliptic curves and modular forms, Springer-Verlag, 1984.
+16. O. Kolberg, Note on the parity of the partition function, Math. Scand. 7 (1959), 377-378.
+17. G. Ligozat, Courbes modulaires de genre 1, Bull. Soc. Math. France [Memoire 43] (1972), 1-80.
+18. M. Newman, Construction and application of a certain class of modular functions, Proc. London
+    Math. Soc. (3) 7 (1956), 334-350.
+19. M. Newman, Construction and application of a certain class of modular functions II, Proc.
+    London Math. Soc. (3) 9 (1959), 373-387.
+20. T. R. Parkin and D. Shanks, On the distribution of parity in the partition function, Math. Comp.
+    21 (1967), 466-480.
+21. J.-P. Serre, Divisibilité des coefficients des formes modulaires de poids entier, C.R. Acad. Sci.
+    Paris (A) 279 (1974), 679-682.
+22. J. Sturm, On the congruence of modular forms, Springer Lect. Notes 1240 (1984), Springer-
+    Verlag.
+23. M. Subbarao, Some remarks on the partition function, Amer. Math. Monthly 73 (1966), 851-854.
+24. G.N. Watson, Ramanujan’s vermutung über zerfällungsanzahlen, J. Reine Angew. Math. vol 179
+    (1938), 97-128.
+
+   Department of Mathematics, The University of Illinois, Urbana, Illinois 61801
+   Current address: School of Mathematics, Institute for Advanced Study, Princeton, New Jersey
+08540
+   E-mail address: ono@symcom.math.uiuc.edu
+

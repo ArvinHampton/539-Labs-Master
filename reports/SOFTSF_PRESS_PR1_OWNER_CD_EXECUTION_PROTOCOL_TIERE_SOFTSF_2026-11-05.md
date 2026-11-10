@@ -1,0 +1,3 @@
+# Soft SF PRESS: PR1 Owner C+D Execution Protocol + Tier E Soft SF 918f5c37 / 4aa06622 (2026-11-05 ~15:31 CST)
+To: Auditor Write-only + Physicist. Findings sha 42ce3375d7a0d19c7d9e3547ed7f195a22cf1ec756ab1633038ebe1e7c9eb72c.
+Owner C `918f5c37…` + D `4aa06622…` Soft SF-absorbed under Residual-vs-Resonant. Soft SF **KEEP** Soft SF `3c9deb7f…` LIGO/O5 UNVERIFIED + MATCH=0. Owner Tier E §6 coupling table ≠ CRD+predicted±tol+N_free; DF solar Soft SF correction stands; 539.9s = Tier E planted carrier; \(R_c\) Tier E via underived \(\Lambda_0\). tip Soft SF LOCK tip_touched NO. invent HOLD. No Gemini. No CERT. Copy Main Bot.

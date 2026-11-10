@@ -1,0 +1,176 @@
+{
+ "map1_max": 2.797157557069881e-17,
+ "control": [
+  {
+   "rank": 36,
+   "joint": 36,
+   "closed": true
+  },
+  {
+   "rank": 36,
+   "joint": 72,
+   "closed": false
+  }
+ ],
+ "control_pass": true,
+ "G[1]|w0.5": {
+  "rank": 90,
+  "joint": 178,
+  "closed": false
+ },
+ "G[1]|Theta1(K2+K3)|w0.5": {
+  "rank": 62,
+  "joint": 122,
+  "closed": false
+ },
+ "G[1]|Theta2(K4)|w0.5": {
+  "rank": 29,
+  "joint": 58,
+  "closed": false
+ },
+ "G[1]|w1.0": {
+  "rank": 90,
+  "joint": 156,
+  "closed": false
+ },
+ "G[1]|Theta1(K2+K3)|w1.0": {
+  "rank": 62,
+  "joint": 110,
+  "closed": false
+ },
+ "G[1]|Theta2(K4)|w1.0": {
+  "rank": 29,
+  "joint": 48,
+  "closed": false
+ },
+ "G[7/2]|w0.5": {
+  "rank": 60,
+  "joint": 116,
+  "closed": false
+ },
+ "G[7/2]|Theta1(K2+K3)|w0.5": {
+  "rank": 40,
+  "joint": 80,
+  "closed": false
+ },
+ "G[7/2]|Theta2(K4)|w0.5": {
+  "rank": 20,
+  "joint": 36,
+  "closed": false
+ },
+ "G[7/2]|w1.0": {
+  "rank": 60,
+  "joint": 120,
+  "closed": false
+ },
+ "G[7/2]|Theta1(K2+K3)|w1.0": {
+  "rank": 40,
+  "joint": 80,
+  "closed": false
+ },
+ "G[7/2]|Theta2(K4)|w1.0": {
+  "rank": 20,
+  "joint": 40,
+  "closed": false
+ },
+ "G[595/2]|w0.5": {
+  "rank": 100,
+  "joint": 200,
+  "closed": false
+ },
+ "G[595/2]|Theta1(K2+K3)|w0.5": {
+  "rank": 67,
+  "joint": 134,
+  "closed": false
+ },
+ "G[595/2]|Theta2(K4)|w0.5": {
+  "rank": 33,
+  "joint": 66,
+  "closed": false
+ },
+ "G[595/2]|w1.0": {
+  "rank": 100,
+  "joint": 200,
+  "closed": false
+ },
+ "G[595/2]|Theta1(K2+K3)|w1.0": {
+  "rank": 67,
+  "joint": 134,
+  "closed": false
+ },
+ "G[595/2]|Theta2(K4)|w1.0": {
+  "rank": 33,
+  "joint": 66,
+  "closed": false
+ },
+ "G[D]|w0.5": {
+  "rank": 58,
+  "joint": 116,
+  "closed": false
+ },
+ "G[D]|Theta1(K2+K3)|w0.5": {
+  "rank": 39,
+  "joint": 78,
+  "closed": false
+ },
+ "G[D]|Theta2(K4)|w0.5": {
+  "rank": 19,
+  "joint": 38,
+  "closed": false
+ },
+ "G[D]|w1.0": {
+  "rank": 58,
+  "joint": 98,
+  "closed": false
+ },
+ "G[D]|Theta1(K2+K3)|w1.0": {
+  "rank": 39,
+  "joint": 66,
+  "closed": false
+ },
+ "G[D]|Theta2(K4)|w1.0": {
+  "rank": 19,
+  "joint": 32,
+  "closed": false
+ },
+ "A1|w0.5": {
+  "rank": 105,
+  "joint": 210,
+  "closed": false
+ },
+ "A1|Theta1(K2+K3)|w0.5": {
+  "rank": 70,
+  "joint": 140,
+  "closed": false
+ },
+ "A1|Theta2(K4)|w0.5": {
+  "rank": 35,
+  "joint": 70,
+  "closed": false
+ },
+ "A1|w1.0": {
+  "rank": 105,
+  "joint": 210,
+  "closed": false
+ },
+ "A1|Theta1(K2+K3)|w1.0": {
+  "rank": 70,
+  "joint": 140,
+  "closed": false
+ },
+ "A1|Theta2(K4)|w1.0": {
+  "rank": 35,
+  "joint": 70,
+  "closed": false
+ },
+ "A0|Theta1(K2+K3)|w1": {
+  "rank": 24,
+  "joint": 24,
+  "closed": true
+ },
+ "A0|Theta2(K4)|w1": {
+  "rank": 12,
+  "joint": 12,
+  "closed": true
+ }
+}

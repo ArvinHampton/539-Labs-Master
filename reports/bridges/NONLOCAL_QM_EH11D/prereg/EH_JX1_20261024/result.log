@@ -1,0 +1,9 @@
+K_mn = Matrix(0, 0, [])  trace K = -4*k
+P1 True
+P2_4D True
+P2_10D True
+P3 True
+C1_fails True
+C2_fails True
+C3_fails True
+EH-JX1 PASS

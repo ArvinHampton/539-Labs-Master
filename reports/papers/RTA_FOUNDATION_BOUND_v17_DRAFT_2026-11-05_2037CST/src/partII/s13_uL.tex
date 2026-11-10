@@ -1,0 +1,59 @@
+%=====================================================================
+\section{Cusp content of the vector $u_L$}\label{sec:uL}
+%=====================================================================
+The family statements of \S\ref{sec:dimsec} concern the whole span $V$. Whether the single vector $u_L=u_{a,0}$ has cusp content is a different question; the two must be kept apart.
+\begin{proposition}[Cusp criterion for $u_L$]\label{prop:cuspcrit}
+Let $G=\mathrm{Cl}^+_{M\infty_1\infty_2}$ with $M=2dc$, $d=2(s-2)$, $n_s=c^2D_0$; let $T\subset G$ be the class set of the coprime part of $u_L$, $S=\mathrm{Stab}(T)$,
+$j=[-1]$, $\bar G=G/(S+\langle j\rangle)$, $H=(1-\sigma)G$ and $\bar H$ its image in $\bar G$.
+(i) The coprime part of $u_L$ is Eisenstein (genus-pure) iff $\bar H=1$, i.e.\ iff $\sigma$ acts trivially on $\bar G$; the number of non-genus pure characters is
+then $|\bar G|-|\bar G^\sigma|$.
+(ii) For odd $s$ with $c=1$ ($n_s$ squarefree), only the coprime part occurs and Theorem~\ref{thm:sqf5} decides: $u_L$ is Eisenstein iff
+$h(\Q(\sqrt{n_s}))=2^{\omega(s)}$.
+(iii) The verdicts for $5\le s\le44$ are those of Table~\ref{tab:uL}.
+(iv) The rule ``$u_L$ has cusp content iff $h^+\neq\#$genera'' is false: $s=14,17,18,22,23$ have $h^+=\#$genera and cusp content (all with $\bar H$ of order~$2$).
+(v) The two notions differ: $d_{\rm cusp}>0$ at $s=5,7,13,15$, where $u_L$ is Eisenstein. The $u_L$ verdict is class-group data ($\bar H$) on top of the local structure.
+\end{proposition}
+\catA{(i): reduction (Tate's $\ker\Nm=C_K^{1-\sigma}$ for cyclic $K/\Q$, plus the dictionary ``Maass content of $u_L$ = pure-type character content of its class
+sets''). (iv): exact finite group computations per $s$ on complete coprime parts (the $s=18$ coprime part is complete at $B=150\,000$).}
+\catB{Sufficiency of the modulus $M=2dc$ for all norms (stable under $M\to2M$ wherever tested).}
+
+Here $\mathbf W\subset(\Ok/M)^\times$ is the unit stabiliser of $\beta_0+L$ (unrelated to $W_P$), $S_0$ is the coprime-part stabiliser and $\psi(\lambda)=[(\lambda)]$.
+\begin{theorem}[Coset property]\label{thm:coset5}
+For every $s$ and every $c$-part $\fc$, $T_\fc+\psi(\mathbf W)=T_\fc$, and $S_0=\psi(\mathbf W)$. Hence every $T_\fc$ is a union of $S_0$-cosets.
+\end{theorem}
+\catA{The lemma $T_\fc+\psi(\mathbf W)=T_\fc$ is elementary. $S_0=\psi(\mathbf W)$ follows from the local condition $R_p=\mathbf W_p$, proved for all $s$ and $p$: it reduces to the fact that ratios of exact-valuation
+elements of $\beta_0+L$ lie in the multiplier order of $L$. The cases are $p\nmid f$; odd $p\mid c$ with $p\mid s$ or $p\mid s-2$; and $p=2$ in each $2$-adic case. Also checked exactly: global $S_0=\psi(\mathbf W)$ at $s=5,\dots,44$, and $R_p=\mathbf W_p$ at $s\le150$.}
+\begin{theorem}[Squarefree criterion]\label{thm:sqf5}
+Let $s$ be odd with $s(s-2)$ squarefree, and $h=h(\Q(\sqrt{s(s-2)}))$. Then only the coprime $c$-part occurs, $|\bar G^\sigma|=2^{\omega(s)}\varphi(s-2)$, and
+$u_L$ is Eisenstein $\iff h=2^{\omega(s)}$. The number of non-genus characters is $\varphi(s-2)(h-2^{\omega(s)})$.
+\end{theorem}
+\catA{The proof uses Chevalley's ambiguous class number formula (ray form, unit-norm index $1$) and, independently, Gauss genus theory; these are classical theorems applied to exact data. The exact cross-check covers $47$ values $s\le151$: Eisenstein only at $s=5,7,13,15$.}
+\begin{table}[ht]\centering\small
+\begin{tabular}{lp{11cm}}\toprule
+verdict ($5\le s\le44$) & $s$\\\midrule
+Eisenstein & $5,6,7,8,9,10,12,13,15,16,20,24,28$\\
+cusp content & $11,14,17,18,19,21,22,23,25,26,27$ and every $s$ with $29\le s\le44$\\\bottomrule
+\end{tabular}
+\caption{Verdicts for $u_L$.}\label{tab:uL}
+\end{table}
+\catA{Verdicts are per $s$ over all (infinitely many) $c$-parts, using Theorem~\ref{thm:coset5} and Proposition~\ref{prop:deep}. Coverage at $s=32,34,36,40$ was
+completed by enumeration to $B=200000$. At $s=24$ there are no mixed-prime parts for any exponents (a local proof), and the parts $(1,12)$, $(12,1)$, $(1,16)$,
+$(16,1)$ are genus-pure. Beyond the table, cusp content holds at $s=53,55,57$ (incomplete coverage, matching the prediction of (ii); Category~B).}
+
+\begin{proposition}[Deep bad-prime parts]\label{prop:deep}
+At $s=9$ (the $29$ parts $(e_1,e_2)$ with $e_1\le e_2\le7$ at the split prime $3$, plus $\fc=1$), $s=16$ ($\fc=1,\fp_2$; and $7$) and $s=24$ ($15$ parts at $2$, up to
+exponent $8$; and $11$), every tested $\fc$-part is complete and genus-pure. At $s=18$ the $3$-parts are pure, but the coprime part is not, so $u_L$ has cusp content.
+If $\bar H=1$ and every $T_\fc$ is $S$-invariant, then every $\fc$-part is genus-pure and $u_L$ is Eisenstein; conversely, if $\bar H\neq1$, the coprime part already
+gives cusp content. By Theorem~\ref{thm:coset5} every $T_\fc$ is a union of $S$-cosets, hence $S$-invariant, so the coprime criterion decides.
+\end{proposition}
+\catA{Per tested part: exact (\texttt{matsolvemod} lattice solve, completeness of every class, exact purity test). The reduction lemma, given
+$S$-invariance: $(1+j)1_{T_\fc}$ is $(S+\langle j\rangle)$-invariant, hence $H$-invariant, and $\sigma H=H$.}
+
+\subsection{Local root numbers at $s=7$}\label{sec:al}
+The $24$ cusp characters at $s=7$ have conductor of norm $140$ (ramified at $\fp_2,\fp_5,\fp_7$). The vector-valued components are $\Gamma(140)$-modular and
+the scalar newforms have level $140^2=19600$; the two levels are consistent (Category~A).
+\begin{proposition}[Local root numbers]\label{prop:al6}
+For the $24$ cusp characters, the local root numbers $\varepsilon_v$ ($\fp_2,\fp_5,\fp_7,\infty$) are exact elements of $\Q(\zeta_{840})$ of modulus $1$. $\varepsilon_{\fp_2}$ is a $6$th root of unity; $\varepsilon_{\fp_5}$ is never a root of unity. The global root numbers have non-monic minimal polynomials (e.g.\ $5t^8+6t^4+5$), so they are not roots of unity. The sector signs are \emph{products} of local root numbers: $Z_p=\psi_\fp(-1)=\varepsilon(\psi_\fp)\varepsilon(\psi_\fp^{-1})=-1$ ($p=5,7$), and $S_p^2=\omega_{\pi_p}(-1)$. They are not individual local root numbers.
+\end{proposition}
+\catA{The local factors (Tate's formulas) and the character-side identities are exact.}
+\catB{$\prod_v\varepsilon_v=W$ against PARI's numerical root number ($\le2.7\cdot10^{-63}$). $W_p\leftrightarrow S_p$ holds only up to a fixed unit (the Atkin--Li normalisation, cited and not re-derived).}

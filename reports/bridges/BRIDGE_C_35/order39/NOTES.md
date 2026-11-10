@@ -1,0 +1,5 @@
+# order39 NOTES
+- Lesson: grid-composition confounding. Orderings found on XS must be tested off-grid along fixed-den and fixed-num lines.
+- Pattern from the new points (post hoc, to be hashed before any verdict use): r decreases with both |num| and den. At fixed den = 1, r ≈ 0.0118 → 0.0096 for num 41 → 59, a slow decay.
+- Open next step (order40, not started): preregister RG37, a two-variable blind test on a fixed new design (e.g. num ∈ {61, 67, 71} × den ∈ {1, 2, 4, 5}). Write a monotonicity prediction in BOTH variables (r strictly decreasing along each line) with a fixed rule and no fitted exponent. Or step back to an exact source: derive the per-point miss from L_B at x = n integer, where N′ = 2n and the structure is simplest, as a Category A candidate.
+- Naming: RG* only, no labels L1–L7; "36" only as dim V. MAPS_CANDIDATES and REVIEW_2026-10-24 untouched; no Resonant objects; no new Bernoulli objects; no bridge claim; CORE_FREEZE. nice, OMP_NUM_THREADS=1, 3 GB, ~5 s; no push or sends; new files only.

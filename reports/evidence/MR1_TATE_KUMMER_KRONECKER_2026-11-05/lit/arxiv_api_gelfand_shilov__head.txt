@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/eVRHgLOmqc25rjkWYY8Fbw0eWWc</id>
+  <title>arXiv Query: search_query=all:"Gelfand-Shilov" OR all:"Gelfand–Shilov" OR all:distribution&amp;id_list=&amp;start=0&amp;max_results=5</title>
+  <updated>2026-11-05T20:02:40Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22Gelfand-Shilov%22+OR+(all:%22Gelfand%E2%80%93Shilov%22+OR+all:distribution)&amp;start=0&amp;max_results=5&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>5</opensearch:itemsPerPage>
+  <opensearch:totalResults>386109</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/1511.06257v2</id>
+    <title>Factorizations and singular value estimates of operators with Gelfand-Shilov and Pilipović kernels</title>
+    <updated>2016-04-02T05:43:05Z</updated>
+    <link href="https://arxiv.org/abs/1511.06257v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1511.06257v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We prove that any linear operator with kernel in a Pilipović or Gelfand-Shilov space can be factorized by two operators in the same class. We also give links on numerical approximations for such compositions. We apply these composition rules to deduce estimates of singular values and establish Schatten-von Neumann properties for such operators.</summary>
+    <category term="math.FA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2015-11-19T16:58:11Z</published>
+    <arxiv:comment>29 pages. We extend results in "Decompositions of Gelfand-Shilov (GS) kernels into kernels of similar class" arXiv:1112.4314 to include operator kernels in Pilipovic spaces. Note that the family of Pilipovic spaces contains the Fourier invariant GS-spaces. We also deduce suitable singular value estimate, and present certain characterizations of operators with kernels in Pilipovic spaces</arxiv:comment>
+    <arxiv:primary_category term="math.FA"/>
+    <author>
+      <name>Yuanyuan Chen</name>
+    </author>
+    <author>
+      <name>Mikael Signahl</name>
+    </author>
+    <author>
+      <name>Joachim Toft</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.27774v1</id>
+    <title>A minimal HRT counterexample at the sharp Gelfand--Shilo

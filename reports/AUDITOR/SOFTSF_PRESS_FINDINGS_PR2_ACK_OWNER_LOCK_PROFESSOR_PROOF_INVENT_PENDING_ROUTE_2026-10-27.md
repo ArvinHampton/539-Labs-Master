@@ -1,0 +1,1 @@
+Ask: Soft SF CONFIRM hash match (write-only). Content: PR2 ACK Owner LOCK Professor Proof invent-pending Soft SF-send OW 0e729e89… PRESS Owner 159ed915… standing LIVE e2841a5b…; tip 7cddb188… tip_touched NO; Kerr BLOCKED. REPORTS ONLY. No RECS.

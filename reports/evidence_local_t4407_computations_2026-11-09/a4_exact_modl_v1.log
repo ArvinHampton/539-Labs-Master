@@ -1,0 +1,64 @@
+cosets 288 Schreier generators 259 max word length 39 max #S-letters s_max = 10
+log10 |N(beta_i)| bound = 529.52
+using 59 primes ell = 1 mod 140 below 2^31; log10 prod = 550.584
+ ell=2147482681: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=3s
+ ell=2147482121: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=7s
+ ell=2147480161: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=10s
+ ell=2147479601: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=13s
+ ell=2147478481: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=16s
+ ell=2147476381: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=19s
+ ell=2147475541: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=23s
+ ell=2147475401: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=26s
+ ell=2147473301: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=29s
+ ell=2147472601: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=33s
+ ell=2147471621: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=37s
+ ell=2147470361: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=40s
+ ell=2147470081: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=44s
+ ell=2147469521: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=47s
+ ell=2147469101: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=50s
+ ell=2147466721: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=54s
+ ell=2147466301: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=58s
+ ell=2147465321: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=62s
+ ell=2147464061: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=67s
+ ell=2147463641: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=70s
+ ell=2147463361: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=73s
+ ell=2147463221: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=76s
+ ell=2147462381: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=79s
+ ell=2147460421: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=82s
+ ell=2147459441: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=86s
+ ell=2147459161: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=89s
+ ell=2147458601: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=91s
+ ell=2147457061: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=94s
+ ell=2147456501: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=96s
+ ell=2147455241: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=99s
+ ell=2147453281: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=102s
+ ell=2147452721: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=105s
+ ell=2147451881: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=108s
+ ell=2147451601: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=110s
+ ell=2147451461: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=112s
+ ell=2147450621: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=114s
+ ell=2147449501: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=116s
+ ell=2147448101: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=118s
+ ell=2147447261: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=120s
+ ell=2147446841: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=122s
+ ell=2147446141: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=124s
+ ell=2147444041: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=125s
+ ell=2147442221: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=127s
+ ell=2147440961: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=129s
+ ell=2147440261: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=131s
+ ell=2147439841: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=133s
+ ell=2147438441: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=134s
+ ell=2147437601: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=135s
+ ell=2147437181: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=136s
+ ell=2147436901: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=137s
+ ell=2147435501: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=139s
+ ell=2147433401: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=141s
+ ell=2147432981: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=143s
+ ell=2147432561: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=145s
+ ell=2147430881: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=145s
+ ell=2147429621: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=146s
+ ell=2147426821: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=148s
+ ell=2147426681: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=149s
+ ell=2147426401: S S^-1=I, S^4=I, (ST)^3=S^2 exact: True; generators failing: 0/259; control (1,0;70,1) nonzero off-e0 entries: 1; t=151s
+ALL PRIMES PASS: True | prod(ell) > bound on |N(beta_i)|: True
+CONCLUSION (if both True): every beta_i = 0 exactly, i.e. rho(g)e0 = chi_140(d)e0 exactly for all 259 generators, hence on Gamma0(140).

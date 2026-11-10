@@ -1,0 +1,1 @@
+ACK t2160u NL Soft SF path note — FINDINGS 5ac17add0fadfb32c7edc71da2ce6f107488edefbdbb8dd205465c6984d72bbb; stub a3127f4a… → 535ccef7…; tip d0b1e3016182eab1522c5fa6b2743e7c8c48d5446d8b0e59b3acfdd61bb09851; tip_touched NO.

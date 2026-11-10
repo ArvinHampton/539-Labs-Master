@@ -1,0 +1,104 @@
+=== RTA Kronecker contexts ===
+68-      the rank-1 classifier D1 on H 2 (F ) ∼ = Q · [sαδ ] with formality F ≃ Q[0] ⊕ Q[−2]; and locks the
+69-      static cell budget Seﬀ with T3 = 539 as cell/hash capacity (Residual 6= Resonant). Claims not
+70:      established—a Petersson formula for Ξ, Kronecker/four-forces maps, and an explicit formula
+71-      for a boundary vector of C—are recorded as such. No claim is made about the twin prime
+72-      conjecture or the Riemann hypothesis.
+--
+3728-Theorem 11.9.
+3729-Category B. Reading of Rχ as the Lewis–Zagier Eisenstein period function at s = 12 for (ψ, ψ ′ ) [10,
+3730:Ch. IV]; “twisted Herglotz/Kronecker-limit”
+3731-                   P                          terminology. Contrast with Radchenko–Zagier [14], whose
+3732-untwisted F (x) = (ψΓ (nx) − log nx)/n has dilogarithmic rational values; here no log-regularisation is
+3733-needed and the combination takes√algebraic values at rationals. Radchenko–Zagier also record Herglotz’s
+3734:evaluation at the same unit 6 + 35 (suggestive only). Zagier’s Kronecker limit formula [17] is context
+3735-only. Individual Rχ (x) were not tested for algebraicity.
+3736-
+--
+8389-  (i) A Petersson inner-product formula for the shadow Ξ is not used as a proved identity.
+8390-
+8391: (ii) No Kronecker 11-element purge and no four-forces (or SU (3) continuum) mapping is part of
+8392-      the theory.
+8393-
+--
+8404-evaluated.
+8405-
+8406:Status (Category A). Status only: Ξ Petersson not used as proved; Kronecker/four-forces maps
+8407-excluded; C ∈
+8408-            / V35
+--
+9002-     quadratic modules, Math. Z. 275 (2013).
+9003-
+9004:[17] D. Zagier, A Kronecker limit formula for real quadratic fields, Math. Ann. 213 (1975).
+9005-
+9006-[18] S. Zwegers, Mock theta functions, Ph.D. thesis, Utrecht, 2002, arXiv:0807.4834.
+=== RTA Tate/Tamagawa/local zeta/Bruhat/Gelfand ===
+19:   complete zero sets (computer-assisted  √      in stated steps). Part II treats the Bridge Series C: a
+25:   series through order t0 at every rational point, with closed formulas, an algebraicity statement
+27:   states precisely which links between RTA and this framework are proved, which written RTA
+48:   an empty schema, item X4 is absent with a stated gap, and no written samples of hhigh      residual exist;
+124:  8.1 Statement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      27
+433:ω, ρ                   mod-p cyclotomic character; nonsplit extension 0 → ω →           Thm. 40.3
+487:prove each such statement. RTA, as written, has no algebraic axioms. Its objects are (a) elementary
+527:Every statement in a theorem, proposition, lemma or corollary is Category A: proved here; or
+528:proved by a finite exact computation (integer, rational, modular or cyclotomic arithmetic, including
+534:conditional on a cited published theorem, named each time. Category B statements (floating-
+643:cm , Q(m), Ed , Od , Ξk ) is local to this part. Results proved with a computer state the computation
+644:and what it relies on; the dependence on one cited explicit bound is stated where used.
+648:Result                              Statement                            Nature of proof
+685:    Scope. Only proved statements are included. For even k no claim is made on classes of d that
+748:     By Proposition 3.4, the statement OccFiltk (∞) = Sk (“every square class occurs for all large
+749:d”) is the statement that Zk is finite. Section 8 proves it for every odd k ≤ 33, with Zk computed
+1061:Theorem 1.1] states: if ∆1 ≤ 0 and minr gcd2 (mr , `)/mr ≥ ∆3 (`)/24 for all 1 ≤ ` ≤ L, then for all
+1410:    Proof. The first statement is (4.2). Also mn − mn′ = (n′2 − n2 )/k, which is even if and only if
+1542:8.1    Statement
+2458:through the finite data above. It is a statement about each fixed k; no bound uniform in k is
+2478:Maass forms, whose cocycle is computed in closed form. The precise statements are collected in
+2489:statements concern the fundamental-domain cone-sum vector of §15. The K3 statements of §26
+2493:Section 10 fixes conventions and notation, and §11 states the main theorems. Sections 12–18
+2508:   modular or cyclotomic arithmetic over a stated finite set (including exact ranks, and ranks
+2509:   modulo a prime ` together with a stated argument that transfers them to characteristic 0); or
+2510:   proved conditional on a named published theorem, stated each time. Where a written proof
+2513: • Category B: statements whose only support is floating-point or multiprecision numerics (in-
+2517:Numerical checks reported inside a Category A status box are supporting evidence for a statement
+2941:Nf = 10, w = 1; this was not checked against a published statement. The Mellin transform of Psorth is a
+3116:B(ν, β))e−πϵ|ν| , a Schwartz function. By (1) with M = Z2 , N = I, δ = :
+3149:Status (Category A). Proved above; the analytic inputs are Poisson summation for Schwartz functions
+3274:Q(ζN , 35). The real factor |x| is the one dictated by the profile law (Theorem 14.1). On H we
+3551:and the cusp components 6 dimensions, and both subspaces are S- and T -invariant. These state-
+3803:   |Q| ≤ 400 (residual ≤ 8.9 · 10−16 ); the statement for all n is Category B.
+3879:Status (Category A). Exact (rational and cyclotomic arithmetic), conditional on the cited congruence
+3906:Status (Category A). Exact: (i), (ii), (iv), (v) and the label statements of (iii). The mechanism that
+3960:s = 5, 7, 9, 11, 13, 15, 21, 25 (including the prime powers 9 and 25). The congruence statement in (i)
+4068:identity of the S, T matrices), with local factors certified as stated. (iv): the square root and the
+4072:Status (Category A). (i); (ii) and the table entries for dim V , exact per s; (iii) for the stated s,
+4175:mod 998244353 in agreement. Those mod-p ranks are consistency checks of a proved statement, not
+=== tip Tate/Kummer/Kronecker/filter ===
+22:**Naming note [R5].** W₇ here = Fricke τ ↦ −1/(49τ) on level-49 forms. DMZ's W₄₉ is the index-49 Jacobi operator. These are different operators; the DMZ scalar statement is not a statement about ρ(W₇).
+116:- **W-SF:** SF-1 Item2 cite annotated 49aba949→live 358f4d05 (§1b, §2); SF-2 acknowledged — no on-box backup of 9adb84fa… exists, none invented; SF-3 §1b L49 / §1c L68 annotated superseded; SF-4 invent-ban lift scoped to this package only.
+121:- **LOCK digest:** `964294ccc4516dee846676510a6e1f99d830a355ed29bb84527aad84cdd4274d` (pre-stamp tip = §1f state; Auditor DIGEST (A)).
+147:- **Folded (retire APPLY):** residual-C supply ledger **RETIRE** {55-Step κ_dark^(class)=0.181; master harmonic 58481; closure 539=55+55φ⁷−12·55+484; δa_μ^(55) prefactor (61/55)³·3^(1/6)·κ} — arithmetic false as written (F1–F6). **KEEP** narrative/contact only: 61 ω-punctures, ratio 61/55 (no numeric residual role). Owner optional: restate intended formulas for F1/F2/F4/F6.
+274:- **Fold items (cite-only):** §6 W-P5a-OP inserted as operative P5a + W-P5a-HIST prepended to old Γ₀(49)⁺ P5a and to "Superseded BF-route wording"; §6 Accepted selection tag → **to prove**; W-R10-NAME applied on §1f + §5 [R10]; §1f W-P5-AXIOM + §1v PF-2 "(axiom, unproved)" annotated superseded; §6 [R8] W₇-eigenspace note marked Soft SF history.
+331:**Naming reminder [R5]:** W₇ = Fricke τ ↦ −1/(49τ) on level-49 forms ≠ DMZ's index-49 Jacobi operator W₄₉; the DMZ scalar (−1)^k is not a statement about ρ(W₇).
+337:> - **Naming [R5]:** W₇ = Fricke τ ↦ −1/(49τ) on level-49 forms ≠ DMZ Jacobi W₄₉. DMZ scalar wall is not a statement about ρ(W₇). P5d / forcing role (B) remains optional parallel, not a substitute for Role A.
+373:1. `[[ k ]]` and a statement that k < 0. If k = 0, a separate justification is needed because BF only says "sometimes".
+381:**Space distinction [R10].** Keep three spaces separate: (1) the scalar space S₂(Γ₀(49)) (cited: dim 1, the 49a line); (2) the vector-valued S_{2,L⁻} for ρ_L on Mp₂(ℤ) (BF side); (3) the cusp space for (Γ₀(49), ρ̄) `[[ name ]]` (operative per W-R10-NAME, §1w; *history: "the cusp space for (Γ₀(49)⁺, dual ρ)" — superseded*). A statement about one is not a statement about the others without a Written dictionary.
+410:> **P5a (obstruction form, operative G = Γ₀(49); Soft SF Path C §1p/§1s/§1t).** Let κ = 2 − k with k < 0 as in P3. With k = −2 (Written), κ = 4. The space of cusp forms for the pair (Γ₀(49), dual representation ρ̄) at weight κ = 4 is {0}. **to prove** (prove campaign; Owner t1805u / t1805s8825; supersedes §1f W-P5-AXIOM *accepted as axiom*, which superseded t1055u P5-T *to prove*). Not proved. G = Γ₀(49) = ⟨g1,…,g11, −I⟩ (§1n/§1p); W₇ ∉ G; P2 VACATED (A1) — no ρ(W₇) eigenspace cut and no ±1 cut on V₄₂ (§1t); P2′ imposes no constraint on V₄₂ (PF-1, §1v). (Bruinier–Funke's S_{κ,L⁻} statement is the *template* for this vanishing only; it is not identified with a Weil space / dictionary.) **κ=4 caveat (DEVELOP_d2 fac67a14…):** whether this space is {0} is a literature/computation question and is NOT asserted; if nonzero, P5a fails and the k/route choice returns to Arvin.
+412:> *(Superseded history — Soft SF P5a rewrite, Owner Write P5A_REWRITE_GAMMA0_49: historical G = Γ₀(49)⁺ and "P2-chosen eigenspace of ρ(W₇)" wording; operative P5a is W-P5a-OP above.)* **P5a (obstruction form, Γ₀(49)⁺ / BF-as-template) — proposed text per MR2 Option A:** Let κ = 2 − k with k < 0 as in P3. The space of cusp forms for (Γ₀(49)⁺, dual representation ρ̄) at weight κ that lie in the P2-chosen eigenspace of ρ(W₇) is {0}. **accepted as axiom** (§1f; was *to prove* t1055u P5-T; not proved). (Bruinier–Funke’s S_{κ,L⁻} statement is the *template* for this vanishing; it is not identified with a Weil space unless Arvin later Writes a dictionary / Option B.) *(Source: `residual-c-w7-optionA-PASTE.md` §2; tag filled **to prove** by t1055u.)* *(Soft SF §1p / Path C: operative G = Γ₀(49); Fricke Role A / ρ(W₇) suspended on V₄₂ — historical Γ₀(49)⁺ / ρ(W₇) language superseded)*
+425:- No source states or proves any of P5a–c at level 49 (deepen cross-cut: "What still cannot be claimed").
+427:- DMZ analogue: uniqueness holds only "up to a Jacobi cusp form" (Thm 9.5). Whether J_{2,49} = 0 is not stated in DMZ and not asserted here.
+443:- [ ] It does **not** claim the 49a obstruction vanishes under W₇, and states no AL eigenvalue beyond the DMZ-cited scalar (−1)^k on J_{k,49} [R9].
+463:**Honest literature limits (carried over):** no published W₇ uniqueness on Γ₀(49); BF Prop 3.11 gives uniqueness only for k < 0 ("sometimes" k = 0) on (Mp₂(ℤ), ρ_L), not Γ₀(49)+Fricke; DMZ Thm 9.5 gives uniqueness only up to J_{2,49}, and J_{2,49} = 0 is not stated in DMZ.
+502:**P-ρ.3 (weight).** Name k. For BF uniqueness (Prop. 3.11), state **k < 0** (or separately justify the “sometimes” case k = 0).
+522:**P-W7.2 (compatibility).** State that principal parts / polar data / shadows are W₇-compatible (cusps ∞ ↔ 0 linked).
+649:  - plus a rule for the K_49 direction (Thm 9.4: non-uniqueness of K_m can occur for m ≥ 25; whether at 49 is **not stated** in DMZ).
+696:- **REJECT:** state the reason (e.g. wrong route, BF framing unsuitable). The draft is then discarded, and no premise enters the record.
+=== compendium claims for OFFER 7/8 ===
+3:The S²-11DM²ET (3-adic) framework is an 11-dimensional extension of General Relativity that replaces traditional continuum spacetime manifolds with a non-Archimedean, 3-adic algebraic core. By leveraging Resonant Algebra, Temporal Torsion Cohomology, and the Hampton Qutrit Collatz Convergence (HQCC) theorem, the model resolves long-standing cosmological singularities, unifies the four fundamental forces as 3-adic tensor projections, and guarantees scale invariance without manual parameter tuning.
+7:The mathematical backbone shifts the physical continuum to an absolute non-Archimedean metric space. The space is modeled via an isometric embedding of the Bruhat-Tits tree into an 11-dimensional hyperbolic space.
+16:• Purged Primes: The framework screens out incompatible prime fields using a specialized Kronecker filter routine. This completely bypasses the Kummer ideal factorization crisis by isolating invariant ideals within Q_3.
+18:• Scale Invariance: The continuum limit is established via the Tate-Gelfand pairing, ensuring that discrete valuations smoothly transition to macroscopic metrics without weight-level collapse or information loss.
+24:• Gravitational Breathing Modes: At the event horizon, standard continuous coordinate failure is replaced by discrete, oscillating boundary phases called gravitational breathing modes. These modes regulate energy flux and dictate how matter interacts with the core.
+25:• Ternary Syracuse Map (T_3) & HQCC Theorem: The convergence of states inside a black hole is governed by a 3-adic variant of the Collatz conjecture:
+27:The Hampton Qutrit Collatz Convergence (HQCC) theorem guarantees that all interior state trajectories terminate in a bounded, 539-step step convergence sequence, ensuring absolute unitarity and resolving the information paradox.
+31:A rigorous test of the model's matching functions confirmed that the asymptotic mass scales naturally without manual fine-tuning. By imposing an isometric embedding on the Bruhat-Tits tree and evaluating the boundary behavior using specialized Appell-Lerch sums, the framework yields a parameter-free transition boundary scale: R_c ≈ 1.5954

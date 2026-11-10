@@ -1,0 +1,4 @@
+PARI stack size set to 6000000000 bytes, maximum size set to 6000001024
+ N=6272 D=56: mfinit done, dim 388 [131s]
+   after p=3: joint kernel dim 88 [188s]
+   after p=5: joint kernel dim 32 [488s]

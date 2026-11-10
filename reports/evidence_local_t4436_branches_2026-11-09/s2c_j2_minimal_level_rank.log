@@ -1,0 +1,6 @@
+PARI stack size set to 12000000000 bytes, maximum size set to 12000002048
+Xi conductor 19600 ; prime p = 2305843009213693967
+level 2800, S_2: dim 445, rows n=0..509, rank_p C = 445, rank_p [C|f_Xi] = 446 -> f_Xi NOT in space (PROVED); control 49a1: rank_p [C|w] = 446 (49a1 NOT in space); 9s
+level 2800, M_2: dim 516, rows n=0..750, rank_p C = 516, rank_p [C|f_Xi] = 517 -> f_Xi NOT in space (PROVED); control 49a1: rank_p [C|w] = 517 (49a1 NOT in space); 12s
+level 3920, S_2: dim 625, rows n=0..693, rank_p C = 625, rank_p [C|f_Xi] = 626 -> f_Xi NOT in space (PROVED); control 49a1: rank_p [C|w] = 625 (49a1 consistent with space); 33s
+level 3920, M_2: dim 720, rows n=0..1030, rank_p C = 720, rank_p [C|f_Xi] = 721 -> f_Xi NOT in space (PROVED); control 49a1: rank_p [C|w] = 720 (49a1 consistent with space); 35s

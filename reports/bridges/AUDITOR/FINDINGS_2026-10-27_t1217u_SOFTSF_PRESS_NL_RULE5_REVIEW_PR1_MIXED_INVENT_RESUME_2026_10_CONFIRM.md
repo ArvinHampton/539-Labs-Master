@@ -1,0 +1,2 @@
+# Soft SF CONFIRM Pack LA — 2026-10-27 12:17 CDT America/Chicago
+MATCH (hash). Subject `/workspace/quantum-comp/reports/NL_RULE5_REVIEW_PR1_MIXED_INVENT_RESUME_2026-10-27.md` `b1223d4d1d7f25927b2946411d210c1d13b100e24c3ba2b585648aa6e30f0b27`; PRESS `/workspace/quantum-comp/reports/SOFTSF_PRESS_NL_RULE5_REVIEW_PR1_MIXED_INVENT_RESUME_2026-10-27.md` `10455bb997aba2502dfe6723d0157aca4fea437db6d80a1d87a6fa3f1001ae16`. Scope (as Written). tip Soft SF LOCK `7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91` tip_touched NO. Kerr BLOCKED. REPORTS ONLY. No RECS.

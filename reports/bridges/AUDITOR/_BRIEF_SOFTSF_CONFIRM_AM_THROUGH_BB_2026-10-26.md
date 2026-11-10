@@ -1,0 +1,109 @@
+# Soft SF CONFIRM Brief — Packs AM→BB
+Auditor Soft SF CONFIRM Write-only. REPORTS ONLY.
+Tip Soft SF LOCK `/workspace/residual-c-field-WRITTEN_PREMISES_DRAFT.md` =
+`7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91`
+tip_touched NO. Kerr BLOCKED. No invent; no RECS; do not edit sources.
+Output dir: `/workspace/quantum-comp/reports/bridges/AUDITOR/`. Each CONFIRM + `.sha256`.
+Skip a pack only if its Out file already exists AND all source hashes MATCH claimed.
+Write packs in letter order AM→BB. Verify each source with sha256sum before writing.
+
+## Pack AM — MR2 DUAL CONTINUE H3 L-inv ABGT
+- FINDINGS: `/workspace/quantum-comp/reports/MR2-FINDINGS-DUAL-CONTINUE-H3-LINV-ABGT_2026-10-26.md` claimed `b04066dc7374b02f105da6cd25e8897e9de4c10942da9463232c633c8c5ba35c`
+- PRESS: `/workspace/quantum-comp/reports/SOFTSF_PRESS_MR2-DUAL-CONTINUE-H3-LINV-ABGT_2026-10-26.md` claimed `5f91d7388c30b9b0fb878e0ab1da1b0a70d89d9935c83cbee6837b7fa17eabd2`
+- Out: `FINDINGS_2026-10-26_t2121u_MR2_DUAL_CONTINUE_H3_LINV_ABGT_CONFIRM.md`
+- Record as written: PARTIAL: v7=0 CITE-VERIFY ABGT Table4+Sage; BOTH NAMED 10||40; BM ABSENT.
+
+## Pack AN — MR1 path(a) ABSENT
+- FINDINGS: `/workspace/quantum-comp/reports/FINDINGS_MR1_PATH_A_EXACT_RHOBAR_SOFTSF_CORPUS_2026-10-26.md` claimed `f0f61da0c5beda8d89f7671b78bac2c96d4386af7e00cd6a4581d3f5447c1b01`
+- PRESS: `/workspace/quantum-comp/reports/SOFTSF_PRESS_MR1_PATH_A_EXACT_RHOBAR_SOFTSF_CORPUS_2026-10-26.md` claimed `5bf860354c03175f947064d2e3b47adea6f8ffe135b52c927223ee7b845ac338`
+- Out: `FINDINGS_2026-10-26_t2121u_MR1_PATH_A_EXACT_RHOBAR_SOFTSF_CORPUS_CONFIRM.md`
+- Record as written: ABSENT; G-PATH-A OPEN; no invent.
+
+## Pack AO — NL R5 ACCEPT PR1 Gap-X1
+- REVIEW: `/workspace/quantum-comp/reports/bridges/NONLOCAL_QM_EH11D/NL_RULE5_REVIEW_PR1_GAP_X1_CLUSTER_PURSUE_CITE_WRITE_AUTHORITY_2026-10-26.md` claimed `8978926fd159472cf2dbbdf6c0bc1b4a16217d1a267f1a74e5d2f7d6515d2b55`
+- PRESS: `/workspace/quantum-comp/reports/bridges/NONLOCAL_QM_EH11D/SOFTSF_PRESS_NL_RULE5_REVIEW_PR1_GAP_X1_CLUSTER_PURSUE_CITE_WRITE_AUTHORITY_2026-10-26.md` claimed `543ad04a9a851e2a3d1993484f05e27992cc6f0605633a5966991766c5e44e6d`
+- RELAY: `/workspace/quantum-comp/reports/bridges/NONLOCAL_QM_EH11D/NL_RELAY_PR1_GAP_X1_CLUSTER_PURSUE_CITE_WRITE_AUTHORITY_2026-10-26.md` claimed `963891e646d3b13fd3b46684a0e0d9014c3d8c32c87e3834c3c0c60a432dc7e7`
+- Out: `FINDINGS_2026-10-26_t2121u_NL_RULE5_ACCEPT_PR1_GAP_X1_CLUSTER_PURSUE_CITE_CONFIRM.md`
+- Record as written: ACCEPT cite-only; G8/B5 ABSENT/OPEN; Channel A gated.
+
+## Pack AP — NL Cat A PATH OPEN/ABSENT
+- WRITE: `/workspace/quantum-comp/reports/bridges/NONLOCAL_QM_EH11D/WRITE_NL_GAP_IA_CAT_A_PURSUE_PATH_WRITE_CONFIRM_2026-10-26.md` claimed `4f427aeaa6b3fc6e5a192328e5746e15149397bb47fce2427bd02f028d94fb1a`
+- PRESS: `/workspace/quantum-comp/reports/bridges/NONLOCAL_QM_EH11D/SOFTSF_PRESS_WRITE_NL_GAP_IA_CAT_A_PURSUE_PATH_WRITE_CONFIRM_2026-10-26.md` claimed `5098fc25e8e1666ef11b29853aacb4ab3779fae4fd0e6b4eca7465f6e29bb472`
+- Out: `FINDINGS_2026-10-26_t2121u_NL_CAT_A_PURSUE_PATH_WRITE_CONFIRM.md`
+- Record as written: PATH OPEN / Cat A ABSENT until Owner Write + Auditor CONFIRM; NOT Cat A.
+
+## Pack AQ — Eigen R5 MR2 H3 L-inv
+- REVIEW: `/workspace/grok-batches/EIGEN_REVIEW_RELAY_MR2_H3_LINV_ABGT_2026-10-26.md` claimed `0abfccb3f903ff8ee3051b0c5cdbb64b73287eeb3657a68f89d379b675b094ba`
+- PRESS: `/workspace/grok-batches/SOFTSF_PRESS_EIGEN_REVIEW_RELAY_MR2_H3_LINV_ABGT_2026-10-26.md` claimed `cbc75955ec34167759fcd17591579d0d18fad96869f76382b9464894c931238b`
+- Out: `FINDINGS_2026-10-26_t2122u_EIGEN_RULE5_ACCEPT_MR2_H3_LINV_ABGT_CONFIRM.md`
+- Record as written: ACCEPT PARTIAL+FLAG cite-scope; Teitelbaum gap; L_fd not Soft SF as L.
+
+## Pack AR — Agent R5 MR1 path(a)
+- REVIEW: `/workspace/quantum-comp/reports/AGENT_RULE5_REVIEW_MR1_PATH_A_EXACT_RHOBAR_SOFTSF_CORPUS_2026-10-26.md` claimed `226d44c892fbed2f12f8d2e22c5649cd6d012c32c8f961a7112c928a6f6d35ed`
+- PRESS: `/workspace/quantum-comp/reports/SOFTSF_PRESS_AGENT_RULE5_REVIEW_MR1_PATH_A_EXACT_RHOBAR_SOFTSF_CORPUS_2026-10-26.md` claimed `c9769e1ca84272e1df953858fd35c6848be124f3526a5cd3aca64e520a048652`
+- Out: `FINDINGS_2026-10-26_t2122u_AGENT_RULE5_ACCEPT_MR1_PATH_A_EXACT_RHOBAR_CONFIRM.md`
+- Record as written: ACCEPT; G-PATH-A OPEN correctly documented.
+
+## Pack AS — PR1 Owner-gated MIXED/obs
+- FINDINGS: `/workspace/quantum-comp/reports/PR1-FINDINGS-OWNER_GATED_OBS_MIXED_LEAVES_PURSUE_WRITE_AUTHORITY_2026-10-26.md` claimed `24746b024df9aefbae6f95ed5788dba31e6562c4d399d147f56cd998d287a508`
+- PRESS: `/workspace/quantum-comp/reports/SOFTSF_PRESS_PR1_OWNER_GATED_OBS_MIXED_LEAVES_PURSUE_WRITE_AUTHORITY_2026-10-26.md` claimed `34dfb60aa8d66279bfef0a1ea916e5262a3f5b54fa2f6c09092bcf5b3f3b9591`
+- Out: `FINDINGS_2026-10-26_t2122u_PR1_OWNER_GATED_OBS_MIXED_LEAVES_PURSUE_CONFIRM.md`
+- Record as written: invent-free EXHAUSTED; MIXED 1/12/30; waiting Owner Written landings.
+
+## Pack AT — Eigen solve42g root5
+- FINDINGS: `/workspace/grok-batches/EIGEN-TE-RHOBAR-Q89-ZETA49-SOLVE42G-PROGRESS_ROOT5_2026-10-26.md` claimed `b1d21eb6d12cfc8dc5d370b674ca87d122fe313dd703a71a6d39caa3482f8a12`
+- PRESS: `/workspace/grok-batches/SOFTSF_PRESS_EIGEN_ZETA49_SOLVE42G_PROGRESS_ROOT5_2026-10-26.md` claimed `f8b7d713110209afcc31b3710aff0ac380cd3e276b82cde6e132e61ab5e6e0f9`
+- Out: `FINDINGS_2026-10-26_t2122u_EIGEN_ZETA49_SOLVE42G_PROGRESS_ROOT5_CONFIRM.md`
+- Record as written: rank 89/89; roots 6/42; LIVE root6. Hash-inventory only.
+
+## Pack AU — NL R5 ACCEPT PR1 OBS/MIXED
+- REVIEW: `/workspace/quantum-comp/reports/bridges/NONLOCAL_QM_EH11D/NL_RULE5_REVIEW_PR1_OWNER_GATED_OBS_MIXED_LEAVES_PURSUE_WRITE_AUTHORITY_2026-10-26.md` claimed `6a883270c37155770dbcfb412d0748758667fb42ea0c44f473e0dc580be127ed`
+- PRESS: `/workspace/quantum-comp/reports/bridges/NONLOCAL_QM_EH11D/SOFTSF_PRESS_NL_RULE5_REVIEW_PR1_OWNER_GATED_OBS_MIXED_LEAVES_PURSUE_WRITE_AUTHORITY_2026-10-26.md` claimed `dbc6bc4a98ccd9dec4371a3c7b31061d6a872105f5a4193d55c14b8859a69811`
+- RELAY: `/workspace/quantum-comp/reports/bridges/NONLOCAL_QM_EH11D/NL_RELAY_PR1_OWNER_GATED_OBS_MIXED_LEAVES_PURSUE_WRITE_AUTHORITY_2026-10-26.md` claimed `b1599a9ad900f7761d9ded068e8a58633ea7209c6392f3644c22065008856c66`
+- Out: `FINDINGS_2026-10-26_t2123u_NL_RULE5_ACCEPT_PR1_OWNER_GATED_OBS_MIXED_LEAVES_CONFIRM.md`
+- Record as written: ACCEPT; MIXED 1/12/30; invent-free EXHAUSTED.
+
+## Pack AV — MR1 G1-mem/G-PATH-A GAP STANDS
+- FINDINGS: `/workspace/quantum-comp/reports/FINDINGS_MR1_NAMED_GAPS_G1MEM_GPATHA_STATUS_2026-10-26.md` claimed `27dd3cc38f9dde89db02a3b96d31fff91790c4f75df680189b35f6be223eddc3`
+- PRESS: `/workspace/quantum-comp/reports/SOFTSF_PRESS_MR1_NAMED_GAPS_G1MEM_GPATHA_STATUS_2026-10-26.md` claimed `7b607777e07a454da37824275d54650b564c6b0fe70db620749d7f4df4db35b3`
+- Out: `FINDINGS_2026-10-26_t2123u_MR1_NAMED_GAPS_G1MEM_GPATHA_STATUS_CONFIRM.md`
+- Record as written: G1-mem OPEN; G-PATH-A OPEN; GAP STANDS.
+
+## Pack AW — MR2 BM ingest+JH
+- FINDINGS: `/workspace/quantum-comp/reports/MR2-FINDINGS-DUAL-CONTINUE-BM-INGEST-JH_2026-10-26.md` claimed `860f01396c0d762cec0a153fc48af444ab009c04fc1bb9ed0a1ff3ff8ca24caa`
+- PRESS: `/workspace/quantum-comp/reports/SOFTSF_PRESS_DUAL_CONTINUE_BM-INGEST-JH_2026-10-26.md` claimed `6427c85d4782c453fbfd1d5d7d101d2a9f65cdea290f5b1cd150c6ba642865c4`
+- Out: `FINDINGS_2026-10-26_t2124u_MR2_DUAL_CONTINUE_BM_INGEST_JH_CONFIRM.md`
+- Record as written: PARTIAL: Paskunas BM CITE; JH proved; BM->L ABSENT; End=k CONDITIONAL; BOTH NAMED.
+
+## Pack AX — NL COOK open-leaves post B/Phi/CatA
+- WRITE: `/workspace/quantum-comp/reports/bridges/NONLOCAL_QM_EH11D/WRITE_NL_GAP_IA_COOK_OPEN_LEAVES_POST_B_PHI_CATA_PATH_2026-10-26.md` claimed `814bee9c652aa269249d0e4eb27ddfff63d6bf8109b7b2ae00a474c0d5558846`
+- PRESS: `/workspace/quantum-comp/reports/bridges/NONLOCAL_QM_EH11D/SOFTSF_PRESS_WRITE_NL_GAP_IA_COOK_OPEN_LEAVES_POST_B_PHI_CATA_PATH_2026-10-26.md` claimed `b9a052d33e942cba2530470cc82fe49090f52b09d89d9fd09673a07cc0be1d55`
+- Out: `FINDINGS_2026-10-26_t2124u_NL_COOK_OPEN_LEAVES_POST_B_PHI_CATA_PATH_CONFIRM.md`
+- Record as written: Gate-4 CLOSED-prov; Cat A HOLD; independence COOK CLOSED; B4/D1/C1 ABSENT cite-only.
+
+## Pack AY — Eigen R5 MR2 BM+JH
+- REVIEW: `/workspace/grok-batches/EIGEN_REVIEW_RELAY_MR2_BM_INGEST_JH_2026-10-26.md` claimed `9be56d6f99e4ac880bb040a546ede35808e3105bf9d3acd1e1e8a0de60097da4`
+- PRESS: `/workspace/grok-batches/SOFTSF_PRESS_EIGEN_REVIEW_RELAY_MR2_BM_INGEST_JH_2026-10-26.md` claimed `b860b50f321a0e7871d616ab7d9d100ceb494dc0d84b042c538b1b1b7f3296f6`
+- Out: `FINDINGS_2026-10-26_t2125u_EIGEN_RULE5_ACCEPT_MR2_BM_INGEST_JH_CONFIRM.md`
+- Record as written: ACCEPT PARTIAL+FLAG: End=k CONDITIONAL unverified; no BM->L Soft SF; BOTH NAMED.
+
+## Pack AZ — Agent R5 MR1 GAP STANDS
+- REVIEW: `/workspace/quantum-comp/reports/AGENT_RULE5_REVIEW_MR1_NAMED_GAPS_G1MEM_GPATHA_STATUS_2026-10-26.md` claimed `ef225ec3cbcc3724d087fea886b852413c7b250b974d9826e71331805126a519`
+- PRESS: `/workspace/quantum-comp/reports/SOFTSF_PRESS_AGENT_RULE5_REVIEW_MR1_NAMED_GAPS_G1MEM_GPATHA_STATUS_2026-10-26.md` claimed `8fefdc00865b865b81d3161859350d1056a666180d77004dfa94b6c455e45a9d`
+- Out: `FINDINGS_2026-10-26_t2125u_AGENT_RULE5_ACCEPT_MR1_NAMED_GAPS_G1MEM_GPATHA_CONFIRM.md`
+- Record as written: ACCEPT; G1-mem OPEN; G-PATH-A OPEN; MR1 does not promote G1.
+
+## Pack BA — NL COOK EXHAUSTED / Owner-gated park
+- WRITE: `/workspace/quantum-comp/reports/bridges/NONLOCAL_QM_EH11D/WRITE_NL_GAP_IA_COOK_OPEN_LEAVES_EXHAUSTED_OWNER_GATED_PARK_2026-10-26.md` claimed `f2c2db65951403f172cb763daad4f425572a4e82fb77d9612a20c581620b1f9c`
+- PRESS: `/workspace/quantum-comp/reports/bridges/NONLOCAL_QM_EH11D/SOFTSF_PRESS_WRITE_NL_GAP_IA_COOK_OPEN_LEAVES_EXHAUSTED_OWNER_GATED_PARK_2026-10-26.md` claimed `b7af439e5eb484cf6c24bc79ed965244ec0cb99f20f6e58bc19105e8c7041739`
+- Out: `FINDINGS_2026-10-26_t2125u_NL_COOK_OPEN_LEAVES_EXHAUSTED_OWNER_GATED_PARK_CONFIRM.md`
+- Record as written: invent-free EXHAUSTED; Cat A HOLD; B4/D1/C1 ABSENT cite-only + invent-ban R5 only; independence CLOSED; hygiene CLEAN.
+
+## Pack BB — MR2 resid-reducible
+- FINDINGS: `/workspace/quantum-comp/reports/MR2-FINDINGS-DUAL-CONTINUE-resid-reducible_2026-10-26.md` claimed `c358d9e652877590e8b3d548b9d240e242a3f9b32fbf18134b576cf3b856eb3e`
+- PRESS: `/workspace/quantum-comp/reports/SOFTSF_PRESS_MR2-DUAL-CONTINUE-resid-reducible_2026-10-26.md` claimed `731c7de5290a089002ff7cb1d900e57111a2a8cf2b100726f5b6519c79aec403`
+- Out: `FINDINGS_2026-10-26_t2125u_MR2_DUAL_CONTINUE_RESID_REDUCIBLE_CONFIRM.md`
+- Record as written: PARTIAL: rhobar^ss cong omega+omega^2 Sturm-proved; abs-irreducibility FAILS; End_GQ7 ABSENT; BOTH NAMED.
+
+## Report
+All CONFIRM paths, sha256s, MATCH/flag summary, tip_touched.

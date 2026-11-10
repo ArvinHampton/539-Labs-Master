@@ -1,0 +1,69 @@
+RUN_START_WALLCLOCK 2026-11-10 11:32:31 CST (America/Chicago)
+SCRIPT_SHA256 cd289c73043595e303fc5f2d5a0c2e7ba0b2fa5b5cdef33489dcf0231a9c695d mr2_hw_plane_ricci2_weyl2_2026-11-10.py
+sympy 1.14.0
+
+== V. validation (exact) ==
+PASS S^2 normal-coord jet: R = 2, Riem^2 = 4, Weyl^2 n/a(2D)
+PASS H^2 normal-coord jet: R = -2
+PASS S^3 normal-coord jet: R = 6, Ric^2 = 12, Riem^2 = 12, Weyl^2 = 0 (conformally flat)
+
+== A. 11D wall model g = dy^2 + sum_a eta_a e^{2A_a(y)} dx_a^2 (a = 0..9, eta_0 = -1), 2-jet at y0 ==
+PASS A0 Riem^2 = 4 sum(A''+A'^2)^2 + 2 sum_{a!=b}(A'_a A'_b)^2 (exact polynomial identity)
+  w^2 coefficient of riem2: 4*(k0**2 + k1**2 + k2**2 + k3**2 + k4**2 + k5**2 + k6**2 + k7**2 + k8**2 + k9**2)
+  w^2 coefficient of ric2: 2*(k0**2 + k0*k1 + k0*k2 + k0*k3 + k0*k4 + k0*k5 + k0*k6 + k0*k7 + k0*k8 + k0*k9 + k1**2 + k1*k2 + k1*k3 + k1*k4 + k1*k5 + k1*k6 + k1*k7 + k1*k8 + k1*k9 + k2**2 + k2*k3 + k2*k4 + k2*k5 + k2*k6 + k2*k7 + k2*k8 + k2*k9 + k3**2 + k3*k4 + k3*k5 + k3*k6 + k3*k7 + k3*k8 + k3*k9 + k4**2 + k4*k5 + k4*k6 + k4*k7 + k4*k8 + k4*k9 + k5**2 + k5*k6 + k5*k7 + k5*k8 + k5*k9 + k6**2 + k6*k7 + k6*k8 + k6*k9 + k7**2 + k7*k8 + k7*k9 + k8**2 + k8*k9 + k9**2)
+  w^2 coefficient of weyl2: 16*(9*k0**2 - 2*k0*k1 - 2*k0*k2 - 2*k0*k3 - 2*k0*k4 - 2*k0*k5 - 2*k0*k6 - 2*k0*k7 - 2*k0*k8 - 2*k0*k9 + 9*k1**2 - 2*k1*k2 - 2*k1*k3 - 2*k1*k4 - 2*k1*k5 - 2*k1*k6 - 2*k1*k7 - 2*k1*k8 - 2*k1*k9 + 9*k2**2 - 2*k2*k3 - 2*k2*k4 - 2*k2*k5 - 2*k2*k6 - 2*k2*k7 - 2*k2*k8 - 2*k2*k9 + 9*k3**2 - 2*k3*k4 - 2*k3*k5 - 2*k3*k6 - 2*k3*k7 - 2*k3*k8 - 2*k3*k9 + 9*k4**2 - 2*k4*k5 - 2*k4*k6 - 2*k4*k7 - 2*k4*k8 - 2*k4*k9 + 9*k5**2 - 2*k5*k6 - 2*k5*k7 - 2*k5*k8 - 2*k5*k9 + 9*k6**2 - 2*k6*k7 - 2*k6*k8 - 2*k6*k9 + 9*k7**2 - 2*k7*k8 - 2*k7*k9 + 9*k8**2 - 2*k8*k9 + 9*k9**2)/45
+  w^2 coefficient of gb: 0
+  w^2 coefficient of R^2: 4*(k0 + k1 + k2 + k3 + k4 + k5 + k6 + k7 + k8 + k9)**2
+PASS A1 Riem^2 delta^2-coefficient = 4 tr[k^2], independent of A', regular A''
+PASS A2 Ric_MN Ric^MN delta^2-coefficient = tr k^2 + (tr k)^2
+PASS A3 R^2 delta^2-coefficient = 4 (tr k)^2
+PASS A4 Weyl^2 delta^2-coefficient = (32/9)(tr k^2 - (tr k)^2/10) = (32/9) tr(k~^2)
+PASS A5 Gauss-Bonnet delta^2-coefficient = 0 identically
+PASS A6 riem2 has degree <= 2 in 1/eps (no worse than delta^2)
+PASS A6 ric2 has degree <= 2 in 1/eps (no worse than delta^2)
+PASS A6 weyl2 has degree <= 2 in 1/eps (no worse than delta^2)
+
+== B. 4D model g = dy^2 + h_ab(y,u), a,b in (t,u,v); h = h0(u) + y h1(u) + y^2 (h2 + w kappa), point y=0,u=1/2 ==
+PASS B1 Riem^2 w^2-coeff = 4 tr(M^2), M = h0^{-1} kappa (non-diagonal, Lorentzian, x-dependent)
+PASS B2 Ric^2 w^2-coeff = tr M^2 + (tr M)^2
+PASS B3 R w-coeff = -2 tr M (R^2 w^2-coeff = 4 (tr M)^2)
+PASS B4 Weyl^2 w^2-coeff (D=4) = (4(D-3)/(D-2))(tr M^2 - (tr M)^2/(D-1)) = 2(trM^2 - trM^2/3)
+PASS B5 GB w^2-coeff = 0
+PASS B6 R_{ab MN} with both FORM legs a,b tangent (Gauss R_abcd and Codazzi R_ab y c) contain no 1/eps term
+PASS B7 only R_{y a y b} carries the 1/eps (delta) term
+
+== B'. Z2-even metric h(-y) = h(y): one-sided limits at the plane ==
+PASS B'1 Gauss components R_abcd: one-sided limits EQUAL (Z2-even, single-valued on the plane)
+PASS B'2 Codazzi components R_yabc: one-sided limits OPPOSITE (Z2-odd), nonzero here
+PASS B'3 Riem^2, Ric^2, R, Weyl^2 one-sided limits EQUAL (finite, single-valued)
+  one-sided Riem^2 at plane (rational, model): 22060879544658852719761651378242583581233/8817744215871473472071475695594643240000
+
+== C. profile integrals (exact) ==
+PASS C1 d/ds (tanh - tanh^3/3) = sech^4  (polynomial identity in T)
+  int sech^4 ds = 4/3  int sech^2 ds = 2
+PASS C2 phi_eps = sech^2(y/eps)/(2 eps): int phi = 1, int phi^2 = (1/(4 eps^2)) * eps * 4/3 = 1/(3 eps)
+  => int Q dy over the wall ~ Q_delta2 / (3 eps) -> infinity unless Q_delta2 = 0 ; Cauchy-Schwarz: any mollifier with support 2L eps has int phi^2 >= 1/(2 L eps)
+
+== D. Israel: S^a_b = -(1/kappa^2)([K]^a_b - delta [K]), n = 10 ==
+PASS D1 traceless parts: [K]~ = -kappa^2 S~ (exact)
+PASS D2 tr[K] = (kappa^2/9) tr S
+PASS D3 Weyl^2 delta^2-coeff = (32/9) kappa^4 tr(S~^2): zero iff S proportional to h
+PASS D4 Ric^2 delta^2-coeff tr[K]^2 + (tr[K])^2 is a positive-definite form (diagonalisable [K]): zero iff [K]=0 iff S=0
+
+== E. instances (11D, w^2 coefficients in units a^2, eigenvalues of -[K]/2 per smoothing) ==
+  MN2 kink (x-block bends, k=(a,a,a,a,0^6)) [Riem2, Ric2, Weyl2, GB, R2]: [16*a**2, 20*a**2, 128*a**2/15, 0, 64*a**2]
+PASS E1 reproduces filed PP-PROVED coefficients 16, 20, 128/15, R^2 64 (aeb9ab13 section 4)
+PASS E2 umbilic wall (k = a h): Weyl^2 delta^2 = 0, Riem^2 = 40 a^2 (filed V1)
+  BPS-type 1:1:0 stress: Weyl^2 delta^2-coeff = 128*kappa2**2*tau**2/15
+PASS E3 BPS-type 1:1:0 wall stress has nonzero Weyl^2 delta^2 for tau > 0
+
+== F. alpha Riem^2 + beta Ric^2 + gamma R^2 free of delta^2 for every wall ==
+  solution: [{beta: -4*alpha, gamma: alpha}]
+PASS F1 unique up to scale: (alpha, beta, gamma) = (1, -4, 1) = Gauss-Bonnet
+
+== G. sum over null k = t +- e_i of T_YM(k,k) is positive definite in F (D_wall = 10) ==
+PASS G1 quadratic form sum_k |F(k,.)|^2 positive definite (exact LDL, all pivots > 0) => T_YM(k,k)=0 for all null k forces F=0
+  LDL pivots (distinct): [4, 16]
+
+ALL_CHECKS PASS
+RUN_END_WALLCLOCK 2026-11-10 11:33:13 CST

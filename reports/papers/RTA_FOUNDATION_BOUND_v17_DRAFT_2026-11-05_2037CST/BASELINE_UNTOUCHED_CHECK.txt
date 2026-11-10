@@ -1,0 +1,13 @@
+Baseline untouched check (pre-v17-draft)
+time: 2026-11-05 20:38:33 CST
+1fe7b8a2e245e90009c41726db13518b4c752e99ba4e08b4ffd006d8a73c3297  /workspace/quantum-comp/reports/papers/RTA_FOUNDATION_BOUND/RTA_FOUNDATION_BOUND_v16.pdf
+061eac86c303a4ce6dcf74e14b5c4f53a139b3c195bc16e5e4125c7d0d593d03  /workspace/quantum-comp/reports/papers/RTA_FOUNDATION_BOUND/NOTES_v16.md
+2b5d48e21f60976303b2a417ea7658246e41184db7faf9e21a874de12cd173d2  /workspace/quantum-comp/reports/papers/RTA_FOUNDATION_BOUND/src/main_v16.tex
+da0d310c664303ce71ce6d1555b1f40e7b9c0006244e6a18350ce7b5a96cb76c  /workspace/quantum-comp/reports/papers/RTA_FOUNDATION_BOUND/src/front_v16.tex
+e7e5fa6413dc720ec2fdb72ef1426783b4734295d2d13934ac230790fbd2997e  /workspace/quantum-comp/reports/papers/RTA_FOUNDATION_BOUND/src/partIII_local_adv_v16.tex
+1fe7b8a2e245e90009c41726db13518b4c752e99ba4e08b4ffd006d8a73c3297  /workspace/quantum-comp/reports/papers/RTA_FOUNDATION_BOUND/RTA_FOUNDATION_BOUND_v16.pdf
+061eac86c303a4ce6dcf74e14b5c4f53a139b3c195bc16e5e4125c7d0d593d03  /workspace/quantum-comp/reports/papers/RTA_FOUNDATION_BOUND/NOTES_v16.md
+---baseline after---
+1fe7b8a2e245e90009c41726db13518b4c752e99ba4e08b4ffd006d8a73c3297  /workspace/quantum-comp/reports/papers/RTA_FOUNDATION_BOUND/RTA_FOUNDATION_BOUND_v16.pdf
+061eac86c303a4ce6dcf74e14b5c4f53a139b3c195bc16e5e4125c7d0d593d03  /workspace/quantum-comp/reports/papers/RTA_FOUNDATION_BOUND/NOTES_v16.md
+2b5d48e21f60976303b2a417ea7658246e41184db7faf9e21a874de12cd173d2  /workspace/quantum-comp/reports/papers/RTA_FOUNDATION_BOUND/src/main_v16.tex

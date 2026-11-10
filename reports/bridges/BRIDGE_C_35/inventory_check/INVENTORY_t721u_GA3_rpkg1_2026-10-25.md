@@ -1,0 +1,2 @@
+# INVENTORY t721u GA3 R-PKG1 (2026-10-25 CDT)
+deduce_t721u_ga3_rpkg1: PREREG 9e0c3705… RESULTS 7d324d735f857e003e57cc96876d6f2848eb5d7d524ea91d21ae362c51e36f1e SUMS 3f557c8acbef0d5597a9959dfc7c88df8f22b4fe74ee4dbb87e32b2edc5cc94f — BLOCKED RG-0 (ledger Ξ 7dbd63af… symbolic). Class C, not Cat A.

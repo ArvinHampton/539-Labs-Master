@@ -1,0 +1,10 @@
+chain v2 start Tue Nov 10 00:06:30 CST 2026
+ob_v3 gone at Tue Nov 10 00:48:10 CST 2026
+ob_v3 did not finish D=56; starting ob_v4_6272_D56 at Tue Nov 10 00:48:10 CST 2026
+./chain_v2_ob_v3_then_D56_s2e_12544.sh: line 15: 1045533 Killed                  timeout 14400 python3 -u ob_v4_6272_D56.py > ob_v4_6272_D56.log 2>&1
+ob_v4_6272_D56 exit 137 at Tue Nov 10 10:18:08 CST 2026
+s2e exit 0 at Tue Nov 10 10:36:30 CST 2026
+s1e log sidecar written Tue Nov 10 10:54:00 CST 2026
+ob_v4_12544 start Tue Nov 10 10:54:00 CST 2026
+./chain_v2_ob_v3_then_D56_s2e_12544.sh: line 19: 1121292 Killed                  timeout 86400 python3 -u ob_v4_12544.py > ob_v4_12544.log 2>&1
+ob_v4_12544 exit 137 at Tue Nov 10 11:35:40 CST 2026

@@ -1,0 +1,75 @@
+{
+ "row_stochastic": true,
+ "doubly_stochastic": true,
+ "irreducible": false,
+ "dim_stationary": 3,
+ "pi_uniform": false,
+ "NT": 140,
+ "push_T": [
+  "0",
+  "0",
+  "0",
+  "0",
+  "0",
+  "0",
+  "0",
+  "0"
+ ],
+ "classes": {
+  "(0,0)": {
+   "size": 35,
+   "closed": true,
+   "uniform_stationary": true,
+   "push_T": [
+    "16/35",
+    "0",
+    "0",
+    "0",
+    "19/35",
+    "0",
+    "0",
+    "0"
+   ]
+  },
+  "(1,1)": {
+   "size": 35,
+   "closed": true,
+   "uniform_stationary": true,
+   "push_T": [
+    "0",
+    "11/35",
+    "0",
+    "9/35",
+    "0",
+    "6/35",
+    "0",
+    "9/35"
+   ]
+  },
+  "(0,1)+(1,0)": {
+   "size": 70,
+   "closed": true,
+   "uniform_stationary": "periodic",
+   "push_T": [
+    "8/35",
+    "11/70",
+    "0",
+    "9/70",
+    "19/70",
+    "3/35",
+    "0",
+    "9/70"
+   ]
+  }
+ },
+ "cesaro_from_uniform_push_T": [
+  "8/35",
+  "11/70",
+  "0",
+  "9/70",
+  "19/70",
+  "3/35",
+  "0",
+  "9/70"
+ ]
+}

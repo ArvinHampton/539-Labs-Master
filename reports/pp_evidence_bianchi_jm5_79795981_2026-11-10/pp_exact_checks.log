@@ -1,0 +1,23 @@
+V2 sha ad134752da79e3064e209cd840b0aec53e004e3fa0fec8bbc9299eb12940eb85
+C1 limit X1^5 = 1/8 | equals 1/8: True
+C1 ratio(z=1) = 1/2 | X2/X1 == 2: True
+C1 X0-X2 numerator (1-8q^5)/(4q^4): True
+C1 a1,a2 = 1 0
+C2 expand(U - p^2(s-4)) == 0: True | expand(D - p(1-s/2)) == 0: True
+C3 det G == prod(A) S^2 det(fib): True
+C3 row v of G^-1 only (v,v): True | G^vv = 1/S: True | G^uu = 1/S: True
+C3 det(G^{B,B}), B=(0..6) == 1/(prod A S^2): True
+C3 V2 Omega comps other than (0..6) contain index 6: False
+C4 g(phi1,u) - g(phi1,phi1) a1/v == 0: True
+C4 g(phi2,u) == g(phi2,phi2) a2/v: True | at a2=0: True
+C4 nonzero pattern: [(0, 0), (1, 1), (2, 2), (3, 3), (4, 4), (5, 5), (5, 9), (5, 10), (6, 6), (7, 7), (7, 8), (8, 8), (9, 9), (10, 10)]
+C4 metric independent of phi1, phi2, u: True
+C5 det h identity (poly reduction mod ca^2+sa^2=1, cb^2+sb^2=1) == 0: True
+C5 V2 fibre block equals c*h with c=D^(-2/3)/4 (by construction, V2 lines 236-243); X0*X1^2*X2^2 = 1 since X0=(X1X2)^-2
+C6 int_alpha int_beta (U/D^2) sin^3 cos sin = -4
+C6 int G4_fib (kappa=1) over fibre = -pi**2 | == -pi^2: True
+C7 star^2 == +1 on Lambda^2: True
+C7 sigma=+1: expand(p1(L2) - (p1 + 2e)) == 0: True
+C7 sigma=-1: expand(p1(L2) - (p1 - 2e)) == 0: True
+done
+exit 0

@@ -1,0 +1,7 @@
+PARI stack size set to 5500000000 bytes, maximum size set to 5500002304
+Xi conductor: 19600
+ level 9800 S_2: mfinit+coefs done, dim 1585, B=1711 [536s]
+level 9800, S_2: dim 1585, rows n=0..1711, rank_p C = 1585, rank_p [C|f_Xi] = 1586 -> f_Xi NOT in space; control 49a1: rank_p [C|w] = 1585 (49a1 consistent with space); 540s
+ level 9800 M_2: mfinit+coefs done, dim 1776, B=2500 [552s]
+level 9800, M_2: dim 1776, rows n=0..2500, rank_p C = 1776, rank_p [C|f_Xi] = 1777 -> f_Xi NOT in space; control 49a1: rank_p [C|w] = 1776 (49a1 consistent with space); 561s
+elapsed 1102s

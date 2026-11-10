@@ -1,0 +1,2 @@
+# Soft SF PRESS — Agent Soft SF ACK Owner FULL STOP except PP+Auditor — 2026-11-03 ~13:19 CST
+FINDINGS reports/FINDINGS_AGENT_ACK_OWNER_FULL_STOP_EXCEPT_PP_AUDITOR_2026-11-03.md sha256 d19d72c2fd5b0fefd2140df8d443464d37771c3ee253add5d0fc35d79d335f99 → Auditor. Soft SF as Written MATCH OW 61edc308…; Agent HALTED QUIET; Rule-5 STOPPED; invent-pending EMPTY; routines remain PAUSED; tip Soft SF LOCK 7cddb188… tip_touched NO; No CERT. No RECS.

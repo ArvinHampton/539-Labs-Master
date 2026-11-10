@@ -1,0 +1,7 @@
+family,t_ord_exponent,on_mesh,fill_tier,simpson_weight,coeff_status_this_run,source
+N36,21,YES(Write-ext OW 5a766b35),ext-write,,OPEN (out of scope; 503-block G1),OW 8690275a GA1
+N36,25,YES(Write-ext OW 5a766b35),ext-write,,OPEN (out of scope; 503-block G1),OW 8690275a GA1
+N6,29,YES(Write-ext OW 5a766b35),ext-write,,MODP-D1 see N6_D1_nu_columns_modp.csv,OW 8690275a GA1
+N6,81,YES(Write-ext OW 5a766b35),ext-write,,MODP-D1 see N6_D1_nu_columns_modp.csv,OW 8690275a GA1
+N6,109,YES(Write-ext OW 5a766b35),ext-write,,MODP-D1 see N6_D1_nu_columns_modp.csv,OW 8690275a GA1
+N6,121,YES(Write-ext OW 5a766b35),ext-write,,MODP-D1 see N6_D1_nu_columns_modp.csv,OW 8690275a GA1

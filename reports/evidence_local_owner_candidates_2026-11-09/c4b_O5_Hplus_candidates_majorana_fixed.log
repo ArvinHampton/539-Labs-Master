@@ -1,0 +1,9 @@
+Dirac Clifford err 0.0  purely imaginary: False  gamma0 gamma0* = 1.0
+Majorana Clifford err 0.0  purely imaginary: True  gamma0 gamma0* = -1.0
+Dirac m=0.0: FW err 1.33e-15;  max||A H(p) A^-1 + H(p)|| = 6.12e+00
+Dirac m=1.0: FW err 1.78e-15;  max||A H(p) A^-1 + H(p)|| = 5.99e+00
+Majorana m=0.0: FW err 9.49e-16;  max||A H(p) A^-1 + H(p)|| = 0.00e+00
+Majorana m=1.0: FW err 1.83e-15;  max||A H(p) A^-1 + H(p)|| = 0.00e+00
+Option M: Phat^2 = (g0 g0*) x (sx sx*) = -1.0  err 0.0
+Option M: ||Phat Htot Phat^-1 + Htot|| = 0.0
+C2: (A x 1_35)(A x 1_35)^bar = -1 err 0.0

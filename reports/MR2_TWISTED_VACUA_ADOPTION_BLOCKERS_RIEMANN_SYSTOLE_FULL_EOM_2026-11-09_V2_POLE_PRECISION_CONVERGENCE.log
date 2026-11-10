@@ -1,0 +1,58 @@
+== MR2 adoption blockers: Riemann / systole / full EOM ==
+l/l_p = 49.68438219, l^2 = 2468.537834 l_p^2
+
+== V. validation ==
+   geometry built: 25 Christoffels, 29 derivatives [0s]
+AdS7xS4 pt=['1.3', '0.4', '1.1', '2.0'] true flux: max|E^M_N|=5.51e-40 (scale 12.0)
+AdS7xS4 pt=['1.3', '0.4', '1.1', '2.0'] WRONG flux x1.1: max|E^M_N|=2.52 (scale 12.0)
+   curvature-operator max|eig| = 4.000000000000 (exact 4 from S4; AdS7 -1), max|Im eig| = 0.0e+00
+   K=468.0 (exact 2*7*6 + 2*4*3*16 = 468), RicSq=828.0 (exact 7*36+4*144=828), R=6.0 (exact -42+48=6), Weyl^2=100.8
+AdS7xS4 pt=['0.7', '1.0e-6', '1.5', '3.141'] true flux: max|E^M_N|=7.22e-22 (scale 12.0)
+AdS7xS4 pt=['0.7', '1.0e-6', '1.5', '3.141'] WRONG flux x1.1: max|E^M_N|=2.52 (scale 12.0)
+   curvature-operator max|eig| = 4.000000000000 (exact 4 from S4; AdS7 -1), max|Im eig| = 0.0e+00
+   K=468.0 (exact 2*7*6 + 2*4*3*16 = 468), RicSq=828.0 (exact 7*36+4*144=828), R=6.0 (exact -42+48=6), Weyl^2=100.8
+
+== building candidate geometry (symbolic Christoffels + derivatives) ==
+   geometry built: 72 Christoffels, 164 derivatives [54s]
+(D) product AdS5(F0=2/3)xH2(G0=1/6)xS4(1/2) pt=['1.0', '1.0', '0.7', '0.4']: K=618.0 (exact 40*9/4+4*36+384 = 618), RicSq=828.0 (exact 828), R=6.0 (exact 6), max|eig Q|=6.000000000000 (exact 6)
+(D) product AdS5(F0=2/3)xH2(G0=1/6)xS4(1/2) pt=['1.0', '1.0', '1.0e-6', '1.0e-6']: K=618.00000000000000203 (exact 40*9/4+4*36+384 = 618), RicSq=828.0 (exact 828), R=6.0 (exact 6), max|eig Q|=6.000000000000 (exact 6)
+grid: 17 points (alpha in {1e-6, pi/4+d, pi/2+d, 3pi/4+d, pi-1e-6} x beta in {1e-6, pi/4+d, pi/2-1e-6}, d=1.234e-3 + 2 generic); dps=40
+
+== PRECISION-CONVERGENCE at near-pole corners (same code; params evaluated to 120 digits) ==
+dps=40 MN1(z=0) (alpha,beta)=(1.0e-6, pi/2-1.0e-6): max|E^M_N|=1.36e-6 rel=1.69e-7
+dps=40 MN1(z=0) (alpha,beta)=(1.0e-6, pi/2-1.57): max|E^M_N|=1.67e-16 rel=2.07e-17
+dps=40 MN1(z=0) (alpha,beta)=(0.001, pi/2-0.001): max|E^M_N|=6.13e-23 rel=7.6e-24
+dps=40 MN2(z=1) (alpha,beta)=(1.0e-6, pi/2-1.0e-6): max|E^M_N|=6.15e-6 rel=5.81e-7
+dps=40 MN2(z=1) (alpha,beta)=(1.0e-6, pi/2-1.57): max|E^M_N|=3.6e-16 rel=3.4e-17
+dps=40 MN2(z=1) (alpha,beta)=(0.001, pi/2-0.001): max|E^M_N|=4.59e-23 rel=4.34e-24
+dps=40 BBBW(z=2) (alpha,beta)=(1.0e-6, pi/2-1.0e-6): max|E^M_N|=1.38e-5 rel=1.02e-6
+dps=40 BBBW(z=2) (alpha,beta)=(1.0e-6, pi/2-1.57): max|E^M_N|=1.3e-16 rel=9.6e-18
+dps=40 BBBW(z=2) (alpha,beta)=(0.001, pi/2-0.001): max|E^M_N|=2.87e-23 rel=2.12e-24
+dps=40 BBBW(z=3) (alpha,beta)=(1.0e-6, pi/2-1.0e-6): max|E^M_N|=3.01e-5 rel=1.71e-6
+dps=40 BBBW(z=3) (alpha,beta)=(1.0e-6, pi/2-1.57): max|E^M_N|=2.75e-16 rel=1.57e-17
+dps=40 BBBW(z=3) (alpha,beta)=(0.001, pi/2-0.001): max|E^M_N|=6.56e-23 rel=3.73e-24
+dps=60 MN1(z=0) (alpha,beta)=(1.0e-6, pi/2-1.0e-6): max|E^M_N|=2.82e-25 rel=3.49e-26
+dps=60 MN1(z=0) (alpha,beta)=(1.0e-6, pi/2-1.57): max|E^M_N|=1.13e-36 rel=1.4e-37
+dps=60 MN1(z=0) (alpha,beta)=(0.001, pi/2-0.001): max|E^M_N|=2.56e-43 rel=3.17e-44
+dps=60 MN2(z=1) (alpha,beta)=(1.0e-6, pi/2-1.0e-6): max|E^M_N|=2.87e-25 rel=2.71e-26
+dps=60 MN2(z=1) (alpha,beta)=(1.0e-6, pi/2-1.57): max|E^M_N|=1.16e-36 rel=1.09e-37
+dps=60 MN2(z=1) (alpha,beta)=(0.001, pi/2-0.001): max|E^M_N|=1.55e-43 rel=1.47e-44
+dps=60 BBBW(z=2) (alpha,beta)=(1.0e-6, pi/2-1.0e-6): max|E^M_N|=1.66e-25 rel=1.23e-26
+dps=60 BBBW(z=2) (alpha,beta)=(1.0e-6, pi/2-1.57): max|E^M_N|=1.83e-36 rel=1.35e-37
+dps=60 BBBW(z=2) (alpha,beta)=(0.001, pi/2-0.001): max|E^M_N|=4.98e-45 rel=3.68e-46
+dps=60 BBBW(z=3) (alpha,beta)=(1.0e-6, pi/2-1.0e-6): max|E^M_N|=4.37e-25 rel=2.48e-26
+dps=60 BBBW(z=3) (alpha,beta)=(1.0e-6, pi/2-1.57): max|E^M_N|=1.62e-36 rel=9.2e-38
+dps=60 BBBW(z=3) (alpha,beta)=(0.001, pi/2-0.001): max|E^M_N|=2.39e-43 rel=1.36e-44
+dps=90 MN1(z=0) (alpha,beta)=(1.0e-6, pi/2-1.0e-6): max|E^M_N|=1.1e-55 rel=1.36e-56
+dps=90 MN1(z=0) (alpha,beta)=(1.0e-6, pi/2-1.57): max|E^M_N|=1.31e-66 rel=1.62e-67
+dps=90 MN1(z=0) (alpha,beta)=(0.001, pi/2-0.001): max|E^M_N|=4.1e-73 rel=5.08e-74
+dps=90 MN2(z=1) (alpha,beta)=(1.0e-6, pi/2-1.0e-6): max|E^M_N|=1.57e-55 rel=1.48e-56
+dps=90 MN2(z=1) (alpha,beta)=(1.0e-6, pi/2-1.57): max|E^M_N|=1.63e-66 rel=1.54e-67
+dps=90 MN2(z=1) (alpha,beta)=(0.001, pi/2-0.001): max|E^M_N|=3.08e-73 rel=2.91e-74
+dps=90 BBBW(z=2) (alpha,beta)=(1.0e-6, pi/2-1.0e-6): max|E^M_N|=3.62e-55 rel=2.67e-56
+dps=90 BBBW(z=2) (alpha,beta)=(1.0e-6, pi/2-1.57): max|E^M_N|=1.64e-66 rel=1.22e-67
+dps=90 BBBW(z=2) (alpha,beta)=(0.001, pi/2-0.001): max|E^M_N|=3.06e-74 rel=2.26e-75
+dps=90 BBBW(z=3) (alpha,beta)=(1.0e-6, pi/2-1.0e-6): max|E^M_N|=4.51e-55 rel=2.56e-56
+dps=90 BBBW(z=3) (alpha,beta)=(1.0e-6, pi/2-1.57): max|E^M_N|=4.41e-66 rel=2.51e-67
+dps=90 BBBW(z=3) (alpha,beta)=(0.001, pi/2-0.001): max|E^M_N|=5.54e-73 rel=3.15e-74
+exit_code=0

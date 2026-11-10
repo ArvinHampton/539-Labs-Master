@@ -1,0 +1,6 @@
+33:Q_7(n,k) = \Bigl(n + \frac{7}{2}k\Bigr)^2 - \frac{35}{4}k^2 - \frac{7}{2}k.
+37:\Xi_{\rm even}(q) = \sum_{k \in \mathbb{Z}} \chi_{\rm even}(k) \, q^{-\frac{35}{4}k^2 - \frac{7}{2}k} \, \vartheta_{\rm even}\Bigl(q;\, n + \tfrac{7}{2}k\Bigr),
+40:\Xi_{\rm odd}(q) = \sum_{k \in \mathbb{Z}} \chi_{\rm odd}(k) \, q^{-\frac{35}{4}k^2 - \frac{7}{2}k} \, \vartheta_{\rm odd}\Bigl(q;\, n + \tfrac{7}{2}k\Bigr).
+44:### Specialization at \(n=1\)
+46:\Xi_{\rm even}(q)\big|_{n=1} = \sum_{k \in \mathbb{Z}} \chi_{\rm even}(k) \, q^{-\frac{35}{4}k^2 - \frac{7}{2}k} \, \vartheta_{\rm even}\Bigl(q;\, 1 + \tfrac{7}{2}k\Bigr),
+49:\Xi_{\rm odd}(q)\big|_{n=1} = \sum_{k \in \mathbb{Z}} \chi_{\rm odd}(k) \, q^{-\frac{35}{4}k^2 - \frac{7}{2}k} \, \vartheta_{\rm odd}\Bigl(q;\, 1 + \tfrac{7}{2}k\Bigr).

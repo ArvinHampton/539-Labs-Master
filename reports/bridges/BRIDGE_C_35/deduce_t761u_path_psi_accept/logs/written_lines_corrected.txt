@@ -1,0 +1,9 @@
+# CORRECTED verbatim Written lines (soft SF-1 hygiene fix in ACCEPT; Written package NOT edited) — extracted Sun Oct 25 12:49:10 CDT 2026
+# source file sha verified: b329c67c78b1bd0218ad6f618ce43c3300894ee0aff98d207820816e8bd7d4b9  /workspace/quantum-comp/reports/heavy-daily/26ce36226487-Residual_Period_Candidate_C_2026-08-23.md
+b329c67c L21: - the path is the residual Fricke path from 0 to i∞,
+b329c67c L16: h_residual(x) = ψ(x)/√i − ∫_path Ξ(w) (w − x)^{−1/2} dw
+552541cf L46: (with path from 0 to i∞ for the Fricke involution). This structure is recorded and real-analytic off ℚ by construction.
+22959c01(content 6d0a7777) L57: h_{W_7}(x) = ψ(x)/√i − ∫_0^{i∞} Ξ(w) (w − x)^{−1/2} dw
+1bab65c4 L32: where Ξ_N is the residual truncation of Ξ at residual degree N, the residual path is the residual Fricke-compatible path (residual discrete from residual i∞ to residual x), and residual continuous extension off residual rationals is supplied by the residual incomplete integrals of the residual weight-3/2 Fourier terms.
+t713u PREREG 49bd0b24 P3: P3 Branch principal (w−x)^{−1/2}, Arg ∈ (−π, π]; on the ray (it)^{−1/2} = t^{−1/2}e^{−iπ/4}. √i = e^{iπ/4} principal.
+# Note: prior Written log quoted 'b329c67c L21/L16' from title line / 26ce36226487-PUSH_LOG L16 (glob collision). Real L21 supports claim (path 0→i∞).

@@ -1,0 +1,63 @@
+1:          SUR QUELQUES REPRÉSENTATIONS
+2:         MODULAIRES ET p-ADIQUES DE GL2 (Qp ) I
+3: 
+4:                                                               par
+5: 
+6:                                                Christophe Breuil
+7: 
+8: 
+9: 
+10:       Résumé. — Soit p un nombre premier et F un corps local complet de corps
+11:       résiduel fini de caractéristique p. En 1993, Barthel et Livné ont montré ([1], [2])
+12:       l’existence de représentations d’un type nouveau de GL2 (F ) sur Fp qu’ils ont bap-
+13:       tisées “supersingulières” et sur lesquelles on ne sait presque rien. Dans cet article,
+14:       on détermine toutes les représentations supersingulières de GL2 (Qp ) avec leurs en-
+15:       trelacements. Cela achève la classification des représentations lisses irréductibles de
+16:       GL2 (Qp ) sur Fp avec caractère central et met en évidence une bijection naturelle
+17:       entre les classes d’isomorphisme de représentations supersingulières de GL2 (Qp )
+18:       et les classes d’isomorphisme de représentations irréductibles de Gal(Qp /Qp ) de
+19:       dimension 2 sur Fp .
+
+68: 
+69:                                                                                           2
+70:   Soit Z le centre de GL2 (Qp ), r un entier compris entre 0 et p − 1 et Symr Fp
+71: la représentation naturelle de GL2 (Zp ) (agissant via GL2 (Fp )) qu’on étend à
+72: GL2 (Zp )Z en envoyant p sur l’identité. On note :
+73: 
+74:                                         GL (Q )           2
+75:                                      indGL22 (Zpp)Z Symr Fp
+76: 
+77:                                                                      2
+78: le Fp -espace vectoriel des fonctions f : GL2 (Qp ) → Symr Fp à support compact
+79: modulo Z telles que f (kg) = Symr (k) f (g) (g ∈ GL2 (Qp ), k ∈ GL2 (Zp )Z)
+80:                                                
+81: muni de l’action à gauche usuelle de GL2 (Qp ). On peut définir sur cet espace un
+82: certain endomorphisme GL2 (Qp )-équivariant injectif T (voir §2.6) et considérer,
+83:                              ×
+84: pour λ ∈ Fp et χ : Q× p → Fp un caractère lisse, les divers quotients :
+85: 
+86:                              h                        2
+87:                                                                i
+88:                                     GL (Q )
+89:               π(r, λ, χ) =       indGL22 (Zpp)Z Symr Fp /(T − λ)   ⊗ (χ ◦ dét)
+90: 
+91: qui sont lisses et de dimension infinie. Dans [1] et [2], Barthel et Livné ont
+92: complètement étudié π(r, λ, χ) lorsque λ 6= 0. On regarde ici le cas λ = 0.
+93: 
+94:             REPRÉSENTATIONS MODULAIRES ET p-ADIQUES DE GL2 (Qp ) I                    3
+95: 
+96: 
+97:  Théorème 1.1 (cf. corollaires 4.1.1 et 4.1.4). — Pour r ∈ {0, . . . , p − 1},
+98: les représentations :
+99:                              GL (Q )           2
+100:                           indGL22 (Zpp)Z Symr Fp /(T )
+101: sont irréductibles.
+102: 
+103:   Il s’ensuit d’après [1] et [2] que les représentations supersingulières de GL2 (Qp )
+104: sont exactement les représentations π(r, 0, χ) et que l’on a :
+105:  Corollaire 1.2. — Les représentations lisses irréductibles de GL2 (Qp ) sur Fp
+106: ayant un caractère central sont les représentations suivantes :
+107:                                  ×
+108: (i) les χ ◦ dét où χ : Q×p → Fp est un caractère lisse,
+109: (ii) les Sp ⊗ (χ ◦ dét) où χ est comme en (i) et Sp la représentation “spéciale”
+110: définie dans [1],

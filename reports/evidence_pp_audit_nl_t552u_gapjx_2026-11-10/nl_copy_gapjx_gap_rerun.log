@@ -1,0 +1,23 @@
+[PASS] H1a so(3) generators stacked have rank 3 on R^3 (common fixed vector only x=0); det J = 1 (U(1) fixes only z=0)
+[PASS] H1b orbit dims: (e1,0) -> 2 (S^2 orbit), (0,e1) -> 1 (S^1 orbit), (x,z) generic rational point -> 3; fixed point would need x=0 and z=0, not on S^4
+[PASS] H2 W*eps - W_min*q/2 = (W - W_min)*eps + W_min*(eps - q/2)  (each term >= 0 by P1 and W >= W_min)
+[PASS] H4 Riccati identity: p b'^2 + q b^2 - (psi b^2)' = p(b' - psi b/p)^2 + (q - psi^2/p - psi') b^2
+[PASS] H5a e_u density - [a'^2/(2s) + s(c/2)R2^2(n-a)^2/W^2] = s[h'^2/gtt + (n-a)^2h^2/gpp + (1-h^2)^2/2] (sum of squares, dropped)
+[PASS] H5b with a = n(1-beta): kept density = n^2 [p beta'^2 + q beta^2], p = 1/(2s), q = (c/2) s R2^2/W^2
+[PASS] H5c phi := (sqrt c/2) R2/W satisfies phi^2 = p q exactly (s cancels)
+[PASS] H5d psi = -theta(phi-phi1): q - psi^2/p - psi' = (1-theta^2)q - theta|phi'| + theta^2 phi1(2phi-phi1)/p, using phi^2 = pq
+[PASS] H5e conformal fibre data: g_tt = sin^2 chi + r cos^2 chi, R2/W = 1/(Xb(Xa tan^2 chi + Xb)) (mod sin^2+cos^2-1)
+[PASS] H5f (q/|phi'|)^2 = c cos^2chi r (sin^2chi + r cos^2chi)/(4 Xa^2 Xb^2)  (mod sin^2+cos^2-1)
+[PASS] H5g phi' = -(sqrt c/2) Xa (2 sin chi/cos^2 chi) / (Xb (Xa tan^2 + Xb)^2)  (<= 0 on [0, pi/2))
+[PASS] H6a IR data: Xb/Xa = 2, Xa^2 Xb^3 = 1 (X0 = Xb), sqrt(c)/(Xa Xb) = 1, phi(0) = sqrt(c)/(2 Xb^2) = 1/4
+[PASS] H6b at IR: phi = w/(2(1+w)) and (q/|phi'|)^2 = w(1+w)/2, w = cos^2 chi (both increasing in w, w decreasing in chi)
+[PASS] H6c theta = 3/10, cos^2 chi1 = 1/5: (theta/(1-theta^2))^2 = 900/8281 <= w1(1+w1)/2 = 3/25 (Riccati condition on [0, chi1])
+[PASS] H6d kappa_IR = theta (phi(0) - phi(chi1)) = (3/10)(1/4 - 1/12) = 1/20  =>  e_u >= n^2/20 in the ansatz at the MN2 IR face
+[PASS] H6e consistency (not evidence): stage-2 prints satisfy e_u >= n^2/20 (n = 1..5 and e_u(100) = 1180.61 >= 500)
+[PASS] Gc1 single block, any N- >= 0: closure needs u n^2/20 - n <= Delta_N(IR): n <= 247 at u=1, n <= 172 at u=2
+[PASS] Gc2 multi-block (<= 8 commuting SU(2), MP2): each block has n_i^2/20 - |n_i| >= -5, so |n_i| <= 248 at u=1 (Delta + 35 bound)
+[PASS] A9a n* = 248: g_IR >= n^2/20 - n - 2808.6 > 0 for all n >= 248 and all u >= 1 (no float enters the IR sign)
+[PASS] A9b g_UV = (u-1)n - 19520/3 < 0: u=1 all n; u=2 for 248 <= n <= 6506; u < 1 + (19520/3)/248 for n=248; n* <= Q = 9760
+[PASS] A12a F=0, q- = Delta/2, q+ = q_tot + Delta/2: charge q+ - q- = q_tot and tension q+ + q- = q_tot + Delta = rho_req/T_M5
+21/21 PASS
+ALL PASS

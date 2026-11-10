@@ -1,0 +1,145 @@
+%=====================================================================
+\section{$H_s$ in closed form}\label{sec:hs}
+%=====================================================================
+Throughout, $s\ge5$ is an integer, $c_1=(-1,1)$, $c_2=(-4,1)$, $g:=\gcd(24,s-8)$ and $\Delta:=(s-2)(7s-32)$ (\S\ref{sec:notation}). All radial expansions
+rest on Proposition~\ref{prop:EM5}.
+
+\begin{theorem}[$H_s$ in closed form]\label{thm:Hs}
+(i) \emph{Structure.} $Q(c_1)=-(s-2)/2$, $Q(c_2)=-(7s-32)/2$, $B(c_1,c_2)=-4(s-2)$, so the pair is admissible exactly for $s\ge5$, and $4Q(c_1)Q(c_2)=\Delta$.
+$H_s=\tfrac12q^{c_0}\vartheta^{c_1,c_2}_{a,0,{\rm hol}}+\Delta_{\rm lines}(s)$, where $\Delta_{\rm lines}$ is a finite sum of unary theta series with explicit
+$s$-dependence, and $H_s$ has an explicit cone double-sum $q$-expansion for every $s\ge5$; $H_5\equiv0$.
+(ii) \emph{Radial coefficients at $x=0$.} Along $q=e^{-t}$, $H_s$ has no integer-order terms at all, and for $r\in\{-\tfrac12,\tfrac12,\tfrac32,\tfrac52\}$ its
+coefficients are $H_r=\sqrt{2\pi s}\,[R_r(s)+S_r(s,g)\sqrt\Delta]$ with
+\begin{align*}
+R_{-1/2}&=-\frac1{2(s-2)},\\
+S_{-1/2}&=\frac1{2(s-2)(7s-32)},\\
+R_{1/2}&=-\frac{(s-4)(3s-2)}{48(s-2)^2},\\
+S_{1/2}&=\frac{s^3-44s^2+192s+2g^2(s-2)}{48(s-2)^2(7s-32)^2},\\
+R_{3/2}&=-\frac{15s^4-76s^3+108s^2+96s-128}{3840(s-2)^3},\\
+S_{3/2}&=\frac{\Sigma_{3/2}}{3840(s-2)^3(7s-32)^3},\\
+R_{5/2}&=-\frac{(s-4)(105s^5-730s^4+2732s^3-5208s^2+5696s-2560)}{645120(s-2)^4}, \\
+S_{5/2}&=\frac{\Sigma_{5/2}}{645120(s-2)^4(7s-32)^4},
+\end{align*}
+where
+$\Sigma_{3/2}=3s^6-152s^5+3872s^4-28160s^3+61440s^2+20g^2s(s^3-18s^2+96s-128)-8g^4(s-2)^2$ and
+$\Sigma_{5/2}=15s^9-972s^8+28320s^7-537216s^6+4773888s^5-18923520s^4+27525120s^3
++210g^2s^2(s^5-34s^4+448s^3-2816s^2+8192s-8192)
+-8g^4s(35s^4-504s^3+2940s^2-6832s+5376)
++160g^6(s-2)^3$.
+The denominators are $(s-2)^{r+3/2}(7s-32)^{r+3/2}$, $g$ enters only through $g^{2i}$ with $i\le r+\tfrac12$, and all four vanish at $s=5$.
+(iii) $H_{-1}(x)=0$ for every rational $x$.
+(iv) \emph{$s=7$.} $a_H=H_{-1/2}(7)$ and $a_C=C_{-1/2}(7)=P_{-1/2}(7)-H_{-1/2}(7)=0.829142617\ldots$ symbolically; these are the radical forms of Table~\ref{tab:radial}.
+(v) \emph{$s=8$, the $\sqrt\pi$-rational scale.} $\Delta(8)=144$, and $H_{-1/2}(8)=-\sqrt\pi/6$, $H_{1/2}(8)=5\sqrt\pi/54$, $H_{3/2}(8)=-175\sqrt\pi/324$,
+$H_{5/2}(8)=995\sqrt\pi/972$, $C_{-1/2}(8)=11\sqrt\pi/24$. Among $s<10^6$, $\Delta$ is a perfect square only at $s=5,8,26,77,365,1178,5768,18725,91877,298376$.
+(vi) \emph{Assembly.} The integer orders of $C=\Porth_s-H_s$ at $x=0$ are those of $(1+E_s)/2$ to all orders, and the half-integer orders are those of
+$(\theta_3-\Theta_{{\rm hol},s})/2-H_s$; $C_{-1}=\Res/2$, $C_0=(1+E_0)/2$, $C_1=E_1/2$.
+\end{theorem}
+\catA{(i): the case analysis of the weight and the characteristic correction are exact identities, checked to $q^{400}$ at $27$ values of $s$. (ii): the
+integer orders vanish by the parity argument (the order-$j$ Euler--Maclaurin coefficients of the $\pm a$ cone sums differ by $(-1)^j$; each unary theta
+contributes only half-integer orders); the closed forms come from symbolic Euler--Maclaurin on the expansion of Proposition~\ref{prop:EM5}, with exact
+Bernoulli-sum validation for $s=5..80,99,100,151,223,300$. (iii): cancellation of the residue-class averages of $\e(xQ)$ under $\nu\mapsto-\nu$. (iv), (v): evaluation
+of the closed forms; the $\Delta$-square list is an exact search. (vi): uses in addition Hecke's continuation theorem.}
+\catB{Supporting numerics: $H_{3/2}$ against small-$t$ fits at $9$ values of $s$ ($3$--$4$ digits); $H_{5/2}$ only at $s=6,8$. The modular completion of
+$\tfrac12q^{c_0}\vartheta$ is by citation (Zwegers \cite{Zw}, Cor.~2.9).}
+
+\subsection{$H_s$ at $x=\tfrac12$, $x=\tfrac13$ and higher orders at $x=0$}\label{sec:Hsx}
+Let $c_e$ be the coefficient of $t^{e/2}$ in $H_s(\e(x)e^{-t})$.
+\begin{proposition}[Exact reductions]\label{prop:R123}
+For every rational $x$: (i) the corner terms cancel between $Q_+$ and $Q_-$; (ii) every integer order vanishes; (iii) $c_e=\gamma_0A_e(s)+\sum_r eb_r\,Y_{e,r}(s)+\sum_r ea_r\,X_{e,r}(s,g)$,
+with universal functions $A_e$, $Y_{e,r}$, $X_{e,r}$ and finite Gauss data $\gamma_0$, $eb_r$, $ea_r$ given by distribution relations.
+\end{proposition}
+\begin{proposition}[$x=\tfrac12$]\label{prop:xhalf}
+(i) If $s$ is odd, $\gamma_0=eb=ea=0$, so $H_s(-e^{-t})=O(t^N)$ for every $N$. (ii) If $s$ is even, $\gamma_0=0$, $eb_r=4\cdot2^{1-r}(2-2^{1-r})B_r$ for even $r\ge2$ (and $0$ otherwise), and
+$ea_r=[16\mid s]\,eb_r$. For $16\nmid s$:
+\begin{multline*}\frac{H_s(-e^{-t})}{\sqrt{2\pi s}}\sim-\tfrac18t^{1/2}+\tfrac{s-4}{64}t^{3/2}-\tfrac{31s^2-168s+192}{3072}t^{5/2}\\+\tfrac{(s-4)(173s^2-632s+544)}{24576}t^{7/2}
+-\tfrac{25261s^4-245680s^3+845440s^2-1226240s+634880}{3932160}t^{9/2}+\cdots.\end{multline*}
+For $16\mid s$ there is an extra $\sqrt\Delta$ term at each order; for example $g^2/(8(s-2)(7s-32)^2)$ at $t^{1/2}$
+\end{proposition}
+\catA{Exact symbolic computation on the proved expansion (Proposition~\ref{prop:EM5}). Consistency with an independent exact-term engine to $\le7\cdot10^{-38}$ through $t^{5/2}$ and to $\le5\cdot10^{-34}$
+through $t^{9/2}$ (these comparisons are support only). Odd $s$: vanishing to all orders means there is no power-law term. The direct sums are not identically zero: outside the window
+$t\ll1/(4m)^2$ the terms $e^{-c/(m^2t)}$ appear (e.g.\ $H_7(-e^{-0.01})\approx-7.95$, floating).}
+\begin{proposition}[$x=\tfrac13$]\label{prop:xthird}
+$\gamma_0=i/\sqrt3$, $\e(1/6)/3$, $0$ for $s\equiv0,1,2\bmod3$; $eb_r$ depends only on $s\bmod3$; $ea_r$ depends only on $(s\bmod9,\varepsilon)$ with
+$\varepsilon=(-1)^{v_2(\gcd(s,8))}$ (Theorem~\ref{thm:p72}). For $s\equiv2\bmod3$ the $(\gamma_0,eb)$ part of $c_{-1}/\sqrt{2\pi s}$ is $-(1+i\sqrt3)/(12s)$, and
+the higher orders through $t^{5/2}$ are explicit.
+\end{proposition}
+\catA{The dependence on $s\bmod3$ is proved, and that of $ea$ is Theorem~\ref{thm:p72}. The closed form is exact computer algebra; consistency with an
+independent engine to $\le2.4\cdot10^{-35}$.}
+\begin{theorem}[Period $72$ at $x=\tfrac13$]\label{thm:p72}
+Let $\varepsilon=(-1)^{v_2(\gcd(s,8))}$. Then $ea$ depends only on $(s\bmod9,\varepsilon)$, so its period is $72$. Explicitly:
+\begin{itemize}[leftmargin=2em]
+\item for $s\not\equiv2\bmod3$: $ea=eb$ or $ea_r=(-1)^reb_r$, according to $b\equiv2$ or $1\bmod3$;
+\item for $s\equiv2\bmod9$: $ea=0$;
+\item for $s\equiv5\bmod9$: $ea=eb$ ($\varepsilon=-1$) or $(-1)^reb_r$ ($\varepsilon=+1$);
+\item for $s\equiv8\bmod9$: $ea_r=2^{2-r}i\sqrt3\sum_{c<3}\omega^{-\varepsilon c}\tilde B_r(c/3)$, which is $V$ for $\varepsilon=-1$ and $(-1)^rV_r$ for $\varepsilon=+1$.
+\end{itemize}
+\end{theorem}
+\catA{Elementary proof: reduction mod $3$, a reflection lemma, and the mod-$3$ Gauss sum. Exact check for $s=5,\dots,1000$ and $r\le10$. The split is by
+$\varepsilon$, not by the parity of $s$ (e.g.\ $s=28,52$ have $ea=eb$).}
+\begin{proposition}[$t^{7/2}$, $t^{9/2}$ at $x=0$]\label{prop:t92}
+$H_{9/2}=\sqrt{2\pi s}\,[R_9(s)+S_9(s,g)\sqrt\Delta]$, where $R_9$ is an explicit rational function with denominator $5449973760(s-2)^6$ and $S_9$ is of degree $10$ in $g$; $H_{9/2}(5)=0$.
+The $t^{7/2}$ closed form is likewise explicit.
+\end{proposition}
+\catA{Two independent symbolic routes agree to $170$ digits at $8$ values of $s$; exact computer algebra on the proved expansion.}
+\begin{proposition}[$t^{11/2}$, $t^{13/2}$]\label{prop:t1113}
+At $x=0$, $c_e=\sqrt{2\pi s}\,[R_e+S_e\sqrt\Delta]$ for $e=11,13$, with $R_{11}$ of denominator $5667972710400(s-2)^7$ and $R_{13}$ of denominator $136031345049600(s-2)^8$; both vanish at $s=5$. At $x=\tfrac12$ (even $s$):
+\[Rh_{11}=\tfrac{(s-4)(675691s^4-5253968s^3+14999488s^2-18628608s+8491008)}{94371840},\]
+and $Rh_{13}$ is likewise explicit, with a $[16\mid s]\sqrt\Delta$ part. At $x=\tfrac13$ the coefficients are given by the universal form with the Gauss data of Theorem~\ref{thm:p72}. The full expressions are in the data files listed in Appendix~\ref{app:repro}.
+\end{proposition}
+\catA{Exact symbolic coefficients at $K=13$ (identical to the $K=9$ ones through $t^{9/2}$). The $R+S\sqrt\Delta$ split is interpolated and re-verified at $10$ held-out values of $s$. \emph{Category~B support:} agreement with the term-by-term engine (to $\le3\cdot10^{-41}$ where the quadrature allows), and $60$-digit direct sums (relative error $10^{-14}$--$10^{-6}$).}
+\begin{proposition}[$t^{15/2}$ and $t^{17/2}$ at $x=0$]\label{prop:t1517}
+For $e=15,17$, $c_e=\sqrt{2\pi s}\,[R_e(s)+S_e(s,g)\sqrt\Delta]$: the $R+S\sqrt\Delta$ split persists. Explicitly
+\begin{align*}
+R_{15}&=-\frac{109395s^{16}+101686679952s^{15}-3187115618544s^{14}+\cdots-3332235344216064}{148002103413964800\,(s-2)^9},\\
+R_{17}&=-\frac{(s-4)\,(4849845s^{17}-139775079348190s^{16}+\cdots-4580182201382993920)}{472422714097375641600\,(s-2)^{10}},
+\end{align*}
+with all coefficients in the data files of Appendix~\ref{app:repro}; $S_e$ is a polynomial in $g^2$ over $(s-2)^{(e+3)/2}(7s-32)^{(e+3)/2}$. Both vanish at $s=5$. The factor $(s-4)$ occurs in $R_e$ for $e=9,13,17$.
+\end{proposition}
+\catA{Exact symbolic runs ($K=15$, $K=17$; the $K=17$ run reuses the exact $e\le15$ entries). The split is unique at each sample $s$ and both interpolants pass exact checks at $10$ held-out $s$. $K=15$ reproduces every $K=13$ coefficient exactly; the $e\le13$ entries of $K=17$ agree with the independent $K=13$ run; $c_{15}(5)=c_{17}(5)=0$.}
+\catB{Independent (floating-point) engine: $c_{15}$ equal at double precision for $s=6,7,9$; $c_{17}$ equal for $s=6$ and to $\le9\cdot10^{-16}$ for $s=7,9$. $60$-digit direct sums at $s=20,32,8$: relative errors $2.6\cdot10^{-10}$, $4.5\cdot10^{-9}$, $8.9\cdot10^{-6}$ for $c_{15}$ and $3.5\cdot10^{-10}$, $6.1\cdot10^{-9}$, $1.2\cdot10^{-5}$ for $c_{17}$.}
+
+\noindent\textbf{Structure of $S_e$.} Write $S_e(s-2)^k(7s-32)^k=\sum_j\sigma_{e,2j}(s)g^{2j}$, $k=(e+3)/2$.
+\catA{Exact factorisations for each of $e=11,13,15,17$: only even powers $g^0,\dots,g^{e+1}$ occur; $\sigma_{e,e+1}=\mathrm{const}\cdot(s-2)^{(e+1)/2}$; for $1\le j\le(e+1)/2$, $\sigma_{e,2j}=\mathrm{const}\cdot s^{(e+1)/2-j}(s-2)^j(s-8)^{\max(0,e+3-4j)}\varphi_{e,j}(s)$; the cofactors pair up ($\varphi_{e,j}=\varphi_{e,j'}$ up to constants when $2j+2j'=e+3$); and $\sigma_{e,0}=s^{(e+1)/2}\cdot$(an irreducible polynomial of degree $e+1$).}
+\catB{\emph{Observation, not proved:} that this pattern holds for all odd $e$. Likewise an \emph{observation}: the constant in the top coefficient $\sigma_{e,e+1}$ carries the numerator of the Bernoulli number $B_{e+1}$ ($691$ for $e=11$, $3617$ for $e=15$, $43867$ for $e=17$), consistent with the $r=e+1$ Bernoulli term of the $u_2$-edge.}
+
+\subsection{General $x=a/N$: the CRT Factorization Proposition}\label{sec:cfp}
+\begin{proposition}[General $x=a/N$]\label{prop:crt6}
+\begin{enumerate}[label=(\roman*)]
+\item (Periodicity) $\gamma_0,G,eb$ depend only on $s\bmod N'$, and $H,ea$ only on $s\bmod24N'$, where $N'=N$ ($N$ odd) or $2N$ ($N$ even).
+\item (\textbf{CRT Factorization Proposition}, CFP) $H_{a/N}(c)=[2\text{ if $N$ odd}]\,T_2\prod_pT_{p^e}$, with local quadratic sums $T$. The Bernoulli-weighted $ea$ is linear in $H$ but does not factor.
+\item (Prime $p\ge5$, $p\nmid a\,s(s-2)(7s-32)$) $H(c)=2\big(\tfrac{aQ_2(u_2)}p\big)g_p\,\e\big(\tfrac ap[-g^2(c+\delta)^2/(2(7s-32))+c_0]\big)$.
+\item (Degenerate $p\ge5$) If $p\mid s$, $H(c)=2p\,\e(an_w^2c^2/p)$. If $p\mid s-2$, $ea=0$. If $p\mid7s-32$, $H$ is a delta at one class $c^*$, and $ea_r=2^{2-r}p\,\e(aQ_+(c^*w)/p)\tilde B_r(c^*/p)$.
+\item (Even $N$) The minimal periods of $s\mapsto H_{a/N}$ are $16,16,144,96$ for $N=2,4,6,8$. At $x=\tfrac14$, $ea=0$ unless $4\mid s$; $ea=eb=(0,\tfrac13-\tfrac i6,0,-\tfrac1{240}+\tfrac{7i}{1920},\dots)$ for $s\equiv0\bmod16$; and $ea=(0,\tfrac{1+i}{12},0,-\tfrac{1+i}{3840},\dots)$ for $s\equiv4,8,12\bmod16$.
+\end{enumerate}
+\end{proposition}
+\begin{lemma}[$q$-adic reduction]\label{lem:qred6}
+For any prime $q$, a quadratic sum $\sum_{y\bmod q^n}\e((\alpha y^2+\beta y+\gamma)/q^n)$ reduces by $q^{v_q(\alpha)}$ to a unit-leading sum. The unit-leading sum is then evaluated by the odd-$q$ Gauss sum, or by the explicit $2$-adic formula. This gives a closed form for $H(c)$ for every $N$.
+\end{lemma}
+\catA{(i), (ii), (iii), (iv) and Lemma~\ref{lem:qred6} have elementary proofs. They were also checked exactly in $\Z[\zeta_L]$ against brute force: about $7\cdot10^4$, $6.2\cdot10^5$ and $7\cdot10^5$ tests, with $0$ mismatches. For (v), $144=\mathrm{lcm}(16,72)$ is explained by (ii). The periods $16$ and $96$ are proved conceptually in Propositions~\ref{prop:evenN7} and~\ref{prop:n8dist7} (and also by exhaustive exact check across the proved bound $48N$). The coefficients at $x=\tfrac14,\tfrac16$ are Proposition~\ref{prop:x1416}.}
+\begin{proposition}[Checks of the general formula]\label{prop:gen7}
+The closed form of $H(c)$ given by the CFP together with Lemma~\ref{lem:qred6} agrees exactly with brute force for every $N\in\{2,\dots,13,15,16,21,25,27,32,35,45,49\}$, every $a$ coprime to $N$, every $s<200$ and every $c$. The runs at $N=32,35,45,49$ have $199680$, $327600$, $421200$, $802620$ tests and $0$ mismatches.
+\end{proposition}
+\catA{Exact arithmetic in $\Z[\zeta_L]$, $L=\mathrm{lcm}(8,2N)$.}
+\begin{proposition}[Even $N$ from the $2$-adic reduction]\label{prop:evenN7}
+\begin{enumerate}[label=(\roman*)]
+\item $H_{1/2}(c)=4(-1)^c[16\mid s]$; period $16$.
+\item $H_{a/4}(c)=0$ if $4\nmid s$; $=4(1+i^a)$ if $s\equiv4\bmod8$ or $s\equiv8\bmod16$; $=8\,\e(ac^2/4)$ if $16\mid s$; period $16$.
+\item $N=8$: there are exactly six classes, $4\nmid s$ (zero), $s\equiv0\bmod32$, $s\equiv16\bmod32$, $s\equiv8\bmod16$, and $s\equiv4\bmod8$ split by $b\equiv3$ or $1\bmod4$; the period is $96=\mathrm{lcm}(32,48)$, the $48$ coming from $b\bmod4$ through $g_3^{-1}$.
+\end{enumerate}
+\end{proposition}
+\catA{(i), (ii): conceptual, from the CFP and Lemma~\ref{lem:qred6} with the $2$-adic valuations of $A2=s\Delta/g^2$ class by class; (ii) also checked exactly in $\Z[\zeta_8]$ for $s<2000$ ($31920$ tests). (iii): the invariants (and the factors $32$ and $3$) are derived by hand; pairwise distinctness is proved in Proposition~\ref{prop:n8dist7}.}
+\begin{proposition}[The six $N=8$ classes are pairwise distinct]\label{prop:n8dist7}
+With $I_1=\max_c|H(c)|$, $I_2=\mathrm{supp}\,H$, $I_3=$ phase of $H(0)$, $I_4=H(1)/H(0)$ (for $a=1$): class $s\equiv0\bmod32$ has $(16,\text{full})$; $s\equiv16\bmod32$ has $(16,\text{odd }c)$; $s\equiv8\bmod16$ has $(8,\text{full})$ with $I_3=\e(1/8)$; the two $s\equiv4\bmod8$ classes have $(8,\text{full})$ with $H(0)=+8$ real, and are separated by $I_4=+1$ ($b\equiv3\bmod4$) versus $I_4=-1$ ($b\equiv1\bmod4$), for all $a\in\{1,3,5,7\}$.
+\end{proposition}
+\catA{Residue reduction ($H_{a/8}$ depends only on $s\bmod16$ and on $u_2,w\bmod16$), hand derivation of $I_1$--$I_4$ from Lemma~\ref{lem:qred6}, and an exact finite computation over all residue tuples satisfying each class's constraints; no scan over $s$.}
+\noindent\textbf{$ea$ tables at $x=a/8$ (Category~A).} For $r=1,\dots,4$ and $a=1$: $s\equiv0\bmod32$: $(0,1-\sqrt2(1+i)/12,0,-1/64+7\sqrt2(1+i)/15360)$; $s\equiv16\bmod32$: $(0,-\sqrt2(1+i)/12,0,7\sqrt2(1+i)/15360)$; $s\equiv8\bmod16$: $(0,\sqrt2(1+i)/24,0,-\sqrt2(1+i)/30720)$; $s\equiv4\bmod8$: $(\mp4,\tfrac12,\pm\tfrac3{64},-\tfrac1{128})$ for $b\equiv3,1\bmod4$ (independent of $a$); for $a=3,5,7$ the factor $\sqrt2(1+i)$ rotates to $\sqrt2(-1+i)$, $\sqrt2(-1-i)$, $\sqrt2(1-i)$.
+
+\begin{proposition}[$t^{11/2}$, $t^{13/2}$ at $x=\tfrac14,\tfrac16$, and vanishing]\label{prop:x1416}
+For $e=11,13$ and $x\in\{\tfrac14,\tfrac16\}$, $c_e(s)=\gamma_0A_e(s)+\sum_reb_rY_{e,r}(s)+\sum_rea_rX_{e,r}(s,g)$ with the universal functions of the $P=8$, $P=12$, $K=13$ runs and the exact class constants (for $x=\tfrac14$, $4\mid s$: $\gamma_0=(1+i)/2$, $eb=(0,\tfrac13-\tfrac i6,0,\dots)$; for $x=\tfrac16$: $\gamma_0=0$). Moreover:
+\begin{enumerate}[label=(\roman*)]
+\item $x=\pm\tfrac14$, $4\nmid s$: $H_s(\pm i\,e^{-t})=O(t^M)$ for every $M$;
+\item $x=\tfrac16$, $s$ odd: $H_s(\e(1/6)e^{-t})=O(t^M)$ for every $M$.
+\end{enumerate}
+\end{proposition}
+\catA{Universal form: exact symbolic runs with the exact class data. (i): a sign-reversing shift kills $G(j)$, so $\gamma_0=eb=0$, and $ea=0$ by Proposition~\ref{prop:evenN7}(ii). (ii): by the CFP (which applies equally to $G$ and $\gamma_0$) the Gauss data contain the $x=\tfrac12$ factor, which vanishes for odd $s$ (Proposition~\ref{prop:xhalf}). Exact zeros at $s=5,7,9,\dots$ confirm both.}
+\catB{The independent (floating-point) engine agrees to double precision at $s=8,12,16$ ($x=\tfrac14$) and $s=8,16$ ($x=\tfrac16$). $60$-digit direct sums at $s=8$:  relative errors $2.0\cdot10^{-13}$, $1.7\cdot10^{-9}$ ($x=\tfrac14$, also $\tfrac34$) and $8.0\cdot10^{-10}$, $8.3\cdot10^{-7}$ ($x=\tfrac16$) for $c_{11}$, $c_{13}$. Larger $s$ were not run (they need $\gtrsim10^7$ terms).}

@@ -1,0 +1,182 @@
+{
+  "time": "2026-11-05T13:53:54.998662-06:00",
+  "tip_pre": "7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91",
+  "tip_post": "7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91",
+  "tip_touched": false,
+  "governing_match": true,
+  "prior_match": {
+    "FINDINGS_MR1_SOFTSF_XI_SHADOW_PETERSSON_CITE_HOLD_INVENT_2026-11-05.md": "28d4b4aeca7341d787c1a17a802751b8f69624e24bcb8b4a1ce6fef0b3a2a9fa",
+    "FINDINGS_MR1_SOFTSF_O2_T3_ORES_539_LINK_CITE_HOLD_INVENT_2026-11-05.md": "6349a521897c0668e4e9705ae48e3e25bf4f10418c55f0dcf1ab676dd9e7cac2",
+    "FINDINGS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md": "eea879c7dbff8853e13fb44fc7c2af05db8d8df132d5bee1ea5f1624a7f389ed"
+  },
+  "files": {
+    "FINDINGS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md": "8d00dabdeb490f2f3bce05d16b92ecfb4b226a75ae8d1f4af0ec5f86633a391c",
+    "SOFTSF_PRESS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md": "da8399bdee03dfe7415f8187a348d4aefdf691cf452ac8b0111b16e7ccec4e35",
+    "FINDINGS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md.sha256": "903b8956cd1ff2ab76cde594321504c304fc06295d7707a3fce0124bd0b672a8",
+    "SOFTSF_PRESS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md.sha256": "a4473c49010d15c6734c251ee680268632e1cf255ddb9861d0786a8ded306837"
+  },
+  "mirror_copies": [
+    {
+      "path": "/workspace/quantum-comp/bridges/AUDITOR/FINDINGS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "8d00dabdeb490f2f3bce05d16b92ecfb4b226a75ae8d1f4af0ec5f86633a391c",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/bridges/AUDITOR/SOFTSF_PRESS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "da8399bdee03dfe7415f8187a348d4aefdf691cf452ac8b0111b16e7ccec4e35",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/bridges/AUDITOR/FINDINGS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "903b8956cd1ff2ab76cde594321504c304fc06295d7707a3fce0124bd0b672a8",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/bridges/AUDITOR/SOFTSF_PRESS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "a4473c49010d15c6734c251ee680268632e1cf255ddb9861d0786a8ded306837",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/bridges/PHYSICIST/FINDINGS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "8d00dabdeb490f2f3bce05d16b92ecfb4b226a75ae8d1f4af0ec5f86633a391c",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/bridges/PHYSICIST/SOFTSF_PRESS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "da8399bdee03dfe7415f8187a348d4aefdf691cf452ac8b0111b16e7ccec4e35",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/bridges/PHYSICIST/FINDINGS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "903b8956cd1ff2ab76cde594321504c304fc06295d7707a3fce0124bd0b672a8",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/bridges/PHYSICIST/SOFTSF_PRESS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "a4473c49010d15c6734c251ee680268632e1cf255ddb9861d0786a8ded306837",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/bridges/PROFESSOR_PROOF/FINDINGS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "8d00dabdeb490f2f3bce05d16b92ecfb4b226a75ae8d1f4af0ec5f86633a391c",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/bridges/PROFESSOR_PROOF/SOFTSF_PRESS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "da8399bdee03dfe7415f8187a348d4aefdf691cf452ac8b0111b16e7ccec4e35",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/bridges/PROFESSOR_PROOF/FINDINGS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "903b8956cd1ff2ab76cde594321504c304fc06295d7707a3fce0124bd0b672a8",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/bridges/PROFESSOR_PROOF/SOFTSF_PRESS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "a4473c49010d15c6734c251ee680268632e1cf255ddb9861d0786a8ded306837",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/bridges/LOCAL/FINDINGS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "8d00dabdeb490f2f3bce05d16b92ecfb4b226a75ae8d1f4af0ec5f86633a391c",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/bridges/LOCAL/SOFTSF_PRESS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "da8399bdee03dfe7415f8187a348d4aefdf691cf452ac8b0111b16e7ccec4e35",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/bridges/LOCAL/FINDINGS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "903b8956cd1ff2ab76cde594321504c304fc06295d7707a3fce0124bd0b672a8",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/bridges/LOCAL/SOFTSF_PRESS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "a4473c49010d15c6734c251ee680268632e1cf255ddb9861d0786a8ded306837",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "8d00dabdeb490f2f3bce05d16b92ecfb4b226a75ae8d1f4af0ec5f86633a391c",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/reports/bridges/AUDITOR/SOFTSF_PRESS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "da8399bdee03dfe7415f8187a348d4aefdf691cf452ac8b0111b16e7ccec4e35",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "903b8956cd1ff2ab76cde594321504c304fc06295d7707a3fce0124bd0b672a8",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/reports/bridges/AUDITOR/SOFTSF_PRESS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "a4473c49010d15c6734c251ee680268632e1cf255ddb9861d0786a8ded306837",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/reports/bridges/PHYSICIST/FINDINGS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "8d00dabdeb490f2f3bce05d16b92ecfb4b226a75ae8d1f4af0ec5f86633a391c",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/reports/bridges/PHYSICIST/SOFTSF_PRESS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "da8399bdee03dfe7415f8187a348d4aefdf691cf452ac8b0111b16e7ccec4e35",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/reports/bridges/PHYSICIST/FINDINGS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "903b8956cd1ff2ab76cde594321504c304fc06295d7707a3fce0124bd0b672a8",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/reports/bridges/PHYSICIST/SOFTSF_PRESS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "a4473c49010d15c6734c251ee680268632e1cf255ddb9861d0786a8ded306837",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/reports/bridges/PROFESSOR_PROOF/FINDINGS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "8d00dabdeb490f2f3bce05d16b92ecfb4b226a75ae8d1f4af0ec5f86633a391c",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/reports/bridges/PROFESSOR_PROOF/SOFTSF_PRESS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "da8399bdee03dfe7415f8187a348d4aefdf691cf452ac8b0111b16e7ccec4e35",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/reports/bridges/PROFESSOR_PROOF/FINDINGS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "903b8956cd1ff2ab76cde594321504c304fc06295d7707a3fce0124bd0b672a8",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/reports/bridges/PROFESSOR_PROOF/SOFTSF_PRESS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "a4473c49010d15c6734c251ee680268632e1cf255ddb9861d0786a8ded306837",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/reports/bridges/LOCAL/FINDINGS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "8d00dabdeb490f2f3bce05d16b92ecfb4b226a75ae8d1f4af0ec5f86633a391c",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/reports/bridges/LOCAL/SOFTSF_PRESS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "da8399bdee03dfe7415f8187a348d4aefdf691cf452ac8b0111b16e7ccec4e35",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/reports/bridges/LOCAL/FINDINGS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "903b8956cd1ff2ab76cde594321504c304fc06295d7707a3fce0124bd0b672a8",
+      "byte_match": true
+    },
+    {
+      "path": "/workspace/quantum-comp/reports/bridges/LOCAL/SOFTSF_PRESS_MR1_SOFTSF_O4_QUANTUM_MODULAR_C_GS_PARITY_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "a4473c49010d15c6734c251ee680268632e1cf255ddb9861d0786a8ded306837",
+      "byte_match": true
+    }
+  ],
+  "O4": "ABSENT/OPEN",
+  "neighbor_present_count": 8
+}

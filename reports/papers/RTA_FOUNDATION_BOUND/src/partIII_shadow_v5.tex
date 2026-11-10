@@ -1,0 +1,207 @@
+%=====================================================================
+\section{Shadow structure of the companion series}\label{sec:shadow}
+%=====================================================================
+Throughout this section $Q(\nu)=\nu_1^2+7\nu_1\nu_2+\frac72\nu_2^2$, $B(\mu,\nu)=Q(\mu+\nu)-Q(\mu)-Q(\nu)$, so that $B(\nu,\nu)=2Q(\nu)$ and $\det$ of the Gram matrix
+$A=\begin{psmallmatrix}2&7\\7&7\end{psmallmatrix}$ is $-35$. The index set $J$ consists of the $105$ companion pairs $(\alpha_j,\beta_j)$ of
+Definition~\ref{def:companion} (families $K2,K3,K4$). For a function $f$ on $\R^2$ we write
+\[ S^f_{\alpha,\beta}(\tau)=\sum_{\nu\in\alpha+\Z^2} f(\nu)\,\e(B(\nu,\beta))\,q^{Q(\nu)},\qquad q=\e(\tau), \]
+whenever the series converges absolutely and locally uniformly on $\Hb$, and $S^f=(S^f_{\alpha_j,\beta_j})_{j\in J}$.
+
+\subsection{The matrices $M$, $T$, $P$}
+The reduction rules of Definition~\ref{def:companion} express every pair $(\alpha,\beta)\in(\Q/\Z)^2\times\Q^2$ occurring below as a root of unity times a pair indexed by $J$;
+they act on the terms of $S^f$ and are therefore valid for every $f$ depending only on $\nu$. Define the formal $105\times105$ matrices
+\begin{itemize}[leftmargin=2em]
+\item $M=(M_{jk})$: the coefficient matrix of the right-hand side of Theorem~\ref{thm:STlaw} (the $S$-law) after reduction to $J$, without the factor $35^{-1/2}$;
+\item $T=(T_{jk})$: the monomial matrix of the $T$-law, $T_{jk}=\e(Q(\alpha_j))\,\delta$ after reduction;
+\item $P=(P_{jk})$: the monomial matrix defined by $S^f_{-\alpha_j,-\beta_j}=\sum_k P_{jk}S^f_{\alpha_k,\beta_k}$.
+\end{itemize}
+All entries lie in $\Z[\zeta_{9800}]$, $\zeta_N=\e(1/N)$.
+
+\begin{lemma}\label{lem:Pinv}
+For every $f$ one has $(PS^f)_j=S^{f^-}_{\alpha_j,\beta_j}$ with $f^-(\nu)=f(-\nu)$. In particular $P^2=I$ on the image of the series, and $P^2=I$ holds as a matrix identity.
+\end{lemma}
+\begin{proof}
+Substituting $\nu\mapsto-\nu$ gives $S^f_{-\alpha,-\beta}=\sum_{\nu\in\alpha+\Z^2}f(-\nu)\e(B(\nu,\beta))q^{Q(\nu)}=S^{f^-}_{\alpha,\beta}$. The matrix identity is a finite
+check on the exponents of the monomial entries: $P$ is a permutation matrix with root-of-unity weights $\zeta_{9800}^{e_j}$, the permutation is an involution and
+$e_j+e_{\pi(j)}\equiv0\pmod{9800}$ for all $j$ (script \path{BRIDGE_C_35/order9/cyclo.py}).
+\end{proof}
+
+\begin{proposition}[exact, computer-assisted]\label{prop:M2}
+$M^2=35P$ and $(MT)^3=35\sqrt{35}\,P$, where $\sqrt{35}>0$ is embedded in $\Q(\zeta_{140})\subset\Q(\zeta_{9800})$ via the identity embedding $\zeta_N\mapsto\e(1/N)$.
+\end{proposition}
+\begin{proof}
+Let $X$ be an entry of $M^2-35P$. It is an algebraic integer in $K=\Q(\zeta_{9800})$, $[K:\Q]=\varphi(9800)=3360$. Evaluating $X$ under each of the $3360$ embeddings
+$\zeta_{9800}\mapsto\zeta_{9800}^g$, $g\in(\Z/9800)^\times$, in ball arithmetic \cite{Arb} with $200$ bits gives $|\sigma_g(X)|<\frac12$ for every $g$. Then
+$|N_{K/\Q}(X)|<2^{-3360}<1$; since $N_{K/\Q}(X)\in\Z$ this forces $N_{K/\Q}(X)=0$, hence $X=0$.
+For the second identity put $Y=(MT)^3P$. The same argument applied to all off-diagonal entries of $Y$, to all differences $Y_{jj}-Y_{11}$ and to $Y_{11}^2-35^3$ shows that
+$Y=sI$ with $s^2=35^3$. Under the identity embedding $s$ evaluates to a positive real ball, so $s=35\sqrt{35}$, and $(MT)^3=sP^{-1}=35\sqrt{35}P$ by Lemma~\ref{lem:Pinv}.
+Scripts: \path{BRIDGE_C_35/order9/cyclo.py}, \path{BRIDGE_C_35/order13/w1.py}.
+\end{proof}
+
+For $F:\Hb\to\C^{105}$, $g=\begin{psmallmatrix}a&b\\c&d\end{psmallmatrix}\in\mathrm{SL}_2(\Z)$ and a constant matrix $X$ put $(F|_1g)(\tau)=(c\tau+d)^{-1}F(g\tau)$; then
+$(F|_1g)|_1h=F|_1(gh)$ and $(XF)|_1g=X(F|_1g)$. Let $S=\begin{psmallmatrix}0&-1\\1&0\end{psmallmatrix}$, $T_0=\begin{psmallmatrix}1&1\\0&1\end{psmallmatrix}$.
+
+\begin{lemma}[parity of a weight-one law]\label{lem:O}
+Let $F:\Hb\to\C^{105}$ and $\chi\in\C^\times$ with $F(-1/\tau)=\chi\,\tau\,35^{-1/2}MF(\tau)$ for all $\tau\in\Hb$. Then $F=-\chi^2PF$.
+\end{lemma}
+\begin{proof}
+Apply the law at $-1/\tau$: $F(\tau)=\chi(-1/\tau)35^{-1/2}MF(-1/\tau)=-\chi^2\,35^{-1}M^2F(\tau)=-\chi^2PF(\tau)$ by Proposition~\ref{prop:M2}.
+\end{proof}
+
+\begin{lemma}[no even weight-one law]\label{lem:W}
+Let $F\not\equiv0$ satisfy the law of Lemma~\ref{lem:O} and in addition $F(\tau+1)=TF(\tau)$. Then $\chi=1$ and $PF=-F$.
+\end{lemma}
+\begin{proof}
+The hypotheses read $F|_1S=\chi35^{-1/2}MF$ and $F|_1T_0=TF$. Hence $F|_1(ST_0)=(\chi35^{-1/2}MF)|_1T_0=\chi35^{-1/2}MTF$ and, iterating,
+$F|_1(ST_0)^3=\chi^3 35^{-3/2}(MT)^3F=\chi^3PF$ by Proposition~\ref{prop:M2}. Since $(ST_0)^3=-I$ and $F|_1(-I)=-F$, we get $\chi^3PF=-F$. Lemma~\ref{lem:O} gives
+$\chi^2PF=-F$. Subtracting, $\chi^2(\chi-1)PF=0$; as $P$ is invertible and $F\not\equiv0$, $\chi=1$, and then $PF=-F$.
+\end{proof}
+
+\begin{corollary}\label{cor:even}
+If $F$ satisfies the hypotheses of Lemma~\ref{lem:W} for some $\chi$, then its $P$-even part $\frac12(F+PF)$ vanishes. No nonzero $P$-even vector satisfies a weight-one
+law with matrices $(35^{-1/2}\chi M,T)$ for any $\chi$.
+\end{corollary}
+
+\subsection{Sign weights and parity}
+Let $s_1=\operatorname{sgn}\nu_1$, $s_2=\operatorname{sgn}\nu_2$, $s_3=\operatorname{sgn}(\nu_1+21\nu_2)$ (with $\operatorname{sgn}0=0$) and define the $\nu$-sign weight
+\[ p(\nu)=\tfrac14(1+s_1)(1+s_2)-\tfrac12(s_1+s_3). \]
+\begin{lemma}\label{lem:psplit}
+$\frac12(p(\nu)+p(-\nu))=\frac14(1+s_1s_2)$ and $\frac12(p(\nu)-p(-\nu))=\frac14(s_1+s_2)-\frac12(s_1+s_3)$. Consequently, by Lemma~\ref{lem:Pinv}, the $P$-even part of $S^p$ is
+$\frac12S^{E}$ with $E=\frac12(1+s_1s_2)$, and the $P$-odd part is $\frac12S^{\rho_O}-S^{\rho_H}$ with $\rho_O=\frac12(s_1+s_2)$, $\rho_H=\frac12(s_1+s_3)$.
+\end{lemma}
+\begin{proof}
+The signs are odd functions of $\nu$; expand $p$ and separate even and odd monomials in $s_1,s_2,s_3$.
+\end{proof}
+The series $S^{\rho_H}$ and $S^{\rho_O}$ are indefinite theta series attached to the cones spanned by $c_1=(-1,1)$, $c_2$ and $c_1$,
+$c'=(7,-2)$, respectively, where $c_2=(4,-1)$; one has $Q(c_1)=-\frac52$, $Q(c_2)=-\frac{17}2$, $Q(c')=-35$, and $B(c_1,\nu)=5\nu_1$, $B(c_2,\nu)=\nu_1+21\nu_2$, $B(c',\nu)=35\nu_2$.
+
+\subsection{The $P$-odd shadow}
+For a negative vector $c$ put $s_c(\nu)=B(c,\nu)/\sqrt{-Q(c)}$ and $s'_c(\nu)$ for the coordinate along a unit vector of $c^\perp$, normalised so that $Q(\nu)=\frac14(s'^2_c-s^2_c)$.
+With $E(u)=2\int_0^ue^{-\pi t^2}dt$ define
+\[ \widehat S^{c}_{\alpha,\beta}(\tau)=\sum_{\nu\in\alpha+\Z^2}E\big(s_c(\nu)\sqrt{y}\big)\e(B(\nu,\beta))q^{Q(\nu)},\qquad
+X^c_{\alpha,\beta}(\tau)=y^{1/2}\sum_{\nu\in\alpha+\Z^2}s_c(\nu)\,\e\!\big(\tfrac{s_c^2}4\tau\big)\,\overline{\e\!\big(\tfrac{s'^2_c}4\tau\big)}\,\e(-B(\nu,\beta)). \]
+\begin{proposition}\label{prop:xi}
+$\xi_1\widehat S^c=X^c$, where $\xi_1=2iy\,\overline{\partial_{\bar\tau}}$.
+\end{proposition}
+\begin{proof}
+$E'(u)=2e^{-\pi u^2}$, so $\partial_yE(s\sqrt y)=s\,y^{-1/2}e^{-\pi s^2y}$ and $\partial_{\bar\tau}=\frac i2\partial_y$ on functions of $y$. Since
+$q^{Q(\nu)}e^{-\pi s^2y}=\e(\frac{s'^2}4\tau)\,\overline{\e(\frac{s^2}4\tau)}$, termwise differentiation (justified by the Gaussian majorant $e^{-\pi y(s^2+s'^2)/2}$, locally
+uniform in $\tau$) gives $\partial_{\bar\tau}\widehat S^c=\frac i2y^{-1/2}\sum s\,\e(\frac{s'^2}4\tau)\overline{\e(\frac{s^2}4\tau)}\e(B(\nu,\beta))$; apply $2iy\,\overline{\cdot}$.
+\end{proof}
+For $c_1$, $c_2$, $c'$ one has $s_c^2/4=\frac52\nu_1^2$, $\frac1{34}(\nu_1+21\nu_2)^2$, $\frac{35}4\nu_2^2$; the corresponding weight-$\frac32$ unary series are
+$\sum u\,\e(\frac52u^2\tau)$, $\sum R\,\e(\frac{R^2}{34}\tau)$, $\sum m\,\e(\frac{35}{4}m^2\tau)$, and the weight-$\frac12$ partners in $s'_c$ have quadratic forms $\frac72$,
+$\frac{35}{34}$ and $1$ in suitable coordinates. Thus exactly three distinct unary theta series of weight $\frac32$ occur; the one in $\frac52u^2$ is shared between the cones
+of $\rho_H$ and $\rho_O$. The completions $\widehat H=\frac12(\widehat S^{c_1}+\widehat S^{c_2})$ and $\widehat G_O=\frac12(\widehat S^{c_1}+\widehat S^{c'})$ transform as
+vector-valued forms of weight one with the matrices $(35^{-1/2}M,T)$ (Proposition~\ref{prop:zw}), and their $\xi_1$-images are $\frac12(X^{c_1}+X^{c_2})$ and $\frac12(X^{c_1}+X^{c'})$.
+
+\subsection{Boundary series and their vanishing}
+For a unit negative vector $z$ ($Q(z)=-1$) with unit positive orthogonal $z'$ let $s=B(\nu,z)$, $s'=B(\nu,z')$ and
+\[ \mathcal B_{z,z'}(\tau)=\sum_{\nu\in\alpha+\Z^2}\e(B(\nu,\beta))\,s\,s'\,\e\!\big(\tfrac{s'^2}4\tau\big)\,\e\!\big(-\tfrac{s^2}4\bar\tau\big). \]
+Let $\hat c'=c'/\sqrt{35}$ and $\hat c_1=c_1/\sqrt{5/2}$ (both with $Q=-1$), $e_1=(1,0)$, $\hat e_2=e_2/\sqrt{7/2}$.
+
+\begin{proposition}\label{prop:Bcp}
+$\mathcal B_{\hat c',e_1}\equiv0$ for every companion.
+\end{proposition}
+\begin{proof}
+Here $s=\sqrt{35}\nu_2$ and $s'=B(\nu,e_1)=2\nu_1+7\nu_2$. The map $\rho(\nu)=(-\nu_1-7\nu_2,\nu_2)$ preserves $Q$, fixes $s$, sends $s'\mapsto-s'$, and maps $\alpha+\Z^2$ to
+$\rho(\alpha)+\Z^2$. Writing $\beta=(b_0,b_1)$ one checks from Definition~\ref{def:companion} that every companion satisfies $\rho(\alpha)\equiv\alpha\pmod{\Z^2}$ and
+$B(\rho\nu,\beta)\equiv B(\nu,\beta)\pmod1$ for $\nu\in\alpha+\Z^2$ (a finite check on the $105$ pairs, \path{BRIDGE_C_35/order13/cprime_all.py}, exact in $\Q$). Hence the
+summand is odd under the bijection $\nu\mapsto\rho\nu$ of $\alpha+\Z^2$, and the sum vanishes.
+\end{proof}
+
+For $\hat c_1$ take $z'=\hat e_2$. With $u=\nu_1$ and $m=\nu_1+\nu_2$ one has $s=\sqrt{10}\,u$ up to sign, $s'=\pm\sqrt{14}\,m$, $Q=\frac72m^2-\frac52u^2$, and
+$B(\nu,\beta)=7(b_0+b_1)m-5b_0u$. Define
+\[ \vartheta^+(\tau)=\sum_{m\in\alpha_1+\alpha_2+\Z}m\,\e\!\big(\tfrac72m^2\tau+7(b_0+b_1)m\big),\qquad
+\vartheta^-(\tau)=\sum_{u\in\alpha_1+\Z}u\,\e\!\big(\tfrac52u^2\tau+5b_0u\big). \]
+\begin{lemma}\label{lem:unary0}
+Let $A>0$, $\delta,c\in\R$. Then $\vartheta(\tau)=\sum_{m\in\delta+\Z}m\,\e(Am^2\tau+cm)\equiv0$ on $\Hb$ if and only if $2\delta\in\Z$, $2c\in\Z$ and $2c\delta\in\Z$.
+\end{lemma}
+\begin{proof}
+The exponents $Am^2$, $m\in\delta+\Z$, take each value at most at $m$ and $-m$, and $-m\in\delta+\Z$ iff $2\delta\in\Z$. If $2\delta\notin\Z$, the coefficient of
+$q^{Am^2}$ for any $m\ne0$ is $m\,\e(cm)\ne0$. If $2\delta\in\Z$, the coefficient of $q^{Am^2}$ ($m>0$, $m\in\delta+\Z$) is $m(\e(cm)-\e(-cm))=2im\sin(2\pi cm)$,
+which vanishes for all such $m$ iff $2cm\in\Z$ for all $m\in\delta+\Z$, i.e.\ iff $2c\delta\in\Z$ and $2c\in\Z$. The term $m=0$ contributes $0$. Distinct exponents give
+linearly independent functions, which proves both directions.
+\end{proof}
+
+\begin{theorem}\label{thm:Bc1}
+$\mathcal B_{\hat c_1,\hat e_2}=\varepsilon\sqrt{140}\,\vartheta^+\,\overline{\vartheta^-}$ with $\varepsilon\in\{\pm1\}$ fixed by the orientation of $\hat e_2$. It vanishes identically if and only
+if $2(\alpha_1+\alpha_2),\,14(b_0+b_1),\,14(b_0+b_1)(\alpha_1+\alpha_2)\in\Z$, or $2\alpha_1,\,10b_0,\,10b_0\alpha_1\in\Z$.
+\end{theorem}
+\begin{proof}
+$(u,m)$ is a $\Z$-basis change, so $\alpha+\Z^2\to(\alpha_1+\Z)\times(\alpha_1+\alpha_2+\Z)$ is a bijection and the sum factors: $ss'=\varepsilon\sqrt{140}\,um$,
+$\e(\frac{s'^2}4\tau)=\e(\frac72m^2\tau)$, $\e(-\frac{s^2}4\bar\tau)=\overline{\e(\frac52u^2\tau)}$ and $\e(B(\nu,\beta))=\e(7(b_0+b_1)m)\,\overline{\e(5b_0u)}$. The product
+of the holomorphic $\vartheta^+$ and the antiholomorphic $\overline{\vartheta^-}$ vanishes identically iff one factor does: if both are $\not\equiv0$, pick $\tau_0$ with
+$\vartheta^-(\tau_0)\ne0$; then $\vartheta^+(\tau)\overline{\vartheta^-(\tau_0)}$ is the restriction to $\bar\tau=\bar\tau_0$ of the real-analytic function
+$(\tau,w)\mapsto\vartheta^+(\tau)\overline{\vartheta^-(\bar w)}$, which vanishes on the totally real set $\{w=\bar\tau\}$ and hence identically, contradicting $\vartheta^+\not\equiv0$.
+Apply Lemma~\ref{lem:unary0} with $(A,\delta,c)=(\frac72,\alpha_1+\alpha_2,7(b_0+b_1))$ and $(\frac52,\alpha_1,5b_0)$.
+\end{proof}
+The two conditions are exactly the conditions that the involutions $\rho_m:(u,m)\mapsto(u,-m)$, resp.\ $\rho_u:(u,m)\mapsto(-u,m)$, preserve the companion; this is the
+statement that the endpoint term vanishes if and only if one of the two reflections fixing the boundary ray preserves the companion.
+
+\subsection{The Siegel lift over the orthant arc and the $P$-even defect}
+For a unit negative $z$ put $\Theta_z(\tau)=y^{1/2}\sum_{\nu\in\alpha+\Z^2}\e(B(\nu,\beta))\,\e(Q(\nu)x)\,e^{-\pi y(s^2+s'^2)/2}$, with $s,s'$ as above. Let
+$z(\mu)=\cosh\mu\,\hat c'-\sinh\mu\,e_1$ and $L=\frac12\log(6+\sqrt{35})$. Then $Q(z(\mu))=-1$, $z'(\mu)=\frac{d}{d\mu}z(\mu)$ is unit positive and orthogonal to $z(\mu)$,
+$\cosh L=\sqrt{7/2}$, $\sinh L=\sqrt{5/2}$, and a direct computation gives $z(L)=-\hat c_1$, $z'(L)=-\hat e_2$, $z(0)=\hat c'$, $z'(0)=-e_1$. Define
+\[ \Phi_{\rm orth}(\tau)=\int_0^L\Theta_{z(\mu)}(\tau)\,d\mu,\qquad \Delta_0=-y^2(\partial_x^2+\partial_y^2). \]
+\begin{theorem}\label{thm:lap}
+$(\Delta_0-\frac14)\Phi_{\rm orth}=\frac\pi2y^{3/2}\big[\mathcal B_{z(\mu),z'(\mu)}\big]_{\mu=0}^{\mu=L}=\frac\pi2\sqrt{140}\,y^{3/2}\,\vartheta^+\,\overline{\vartheta^-}$ (the
+sign being that of Theorem~\ref{thm:Bc1} for $z'=-\hat e_2$, $z=-\hat c_1$, for which $ss'=+\sqrt{140}\,um$).
+\end{theorem}
+\begin{proof}
+Fix $\nu$ and write the summand of $\Theta_{z(\mu)}$ as $t=\e(B(\nu,\beta))\,y^{1/2}\e(Qx)e^{-\pi yK}$ with $K=\frac12(s^2+s'^2)$, where $s=s(\mu)$, $s'=s'(\mu)$ satisfy $\partial_\mu s=s'$, $\partial_\mu s'=s$
+(because $z''=z$), so $\partial_\mu K=2ss'$ and $\partial_\mu(ss')=s^2+s'^2=2K$. Using $Q=\frac14(s'^2-s^2)$, a direct differentiation gives
+\[ (\Delta_0-\tfrac14)t=\partial_\mu\!\Big(\tfrac\pi2y^{3/2}ss'\,\e(Qx)e^{-\pi yK}\Big); \]
+explicitly, both sides equal $\frac\pi2y^{3/2}\e(Qx)e^{-\pi yK}\big(2K-2\pi y\,s^2s'^2\big)$, as one checks from $\partial_x^2t=-4\pi^2Q^2t$,
+$\partial_y^2t=\big(-\frac14y^{-2}-\pi Ky^{-1}+\pi^2K^2\big)t$, and $K^2-4Q^2=s^2s'^2$. Summing over $\nu$ (the Gaussian majorant is uniform for $\mu\in[0,L]$ and $\tau$ in compact
+sets, justifying termwise differentiation and the exchange with $\int d\mu$) and integrating in $\mu$ gives the first equality, since
+$y^{3/2}ss'\e(Qx)e^{-\pi yK}=y^{3/2}ss'\e(\frac{s'^2}4\tau)\e(-\frac{s^2}4\bar\tau)$. At $\mu=0$ the boundary term vanishes by Proposition~\ref{prop:Bcp} (the sign of $z'$
+is immaterial for vanishing); at $\mu=L$ Theorem~\ref{thm:Bc1} applies with $ss'=+\sqrt{140}\,um$.
+\end{proof}
+Since $E=\frac12(1+s_1s_2)$, the $P$-even part of $S^p$ is $\frac12S^E$; for $\Phi_{\rm orth}$ the corresponding defect is $\frac12(\Delta_0-\frac14)\Phi_{\rm orth}=
+\frac\pi4\sqrt{140}\,y^{3/2}\vartheta^+\overline{\vartheta^-}$, which by Theorem~\ref{thm:Bc1} vanishes exactly on the companions preserved by $\rho_m$ or $\rho_u$.
+
+\subsection{Line terms of the literal series}
+Write $\nu=\alpha+v$ with $\alpha$ the representative of Definition~\ref{def:companion} and $v=(n,k)\in\Z^2$. The literal weight is
+$W(v)=\mathbf 1[n\ge0]\mathbf 1[k\ge0]-\frac12(\operatorname{sgn}n+\operatorname{sgn}(n+21k))$. Put $\sigma=\alpha_1+21\alpha_2$, $m=n+21k$ and
+\[ h_1=\mathbf 1[n\ge0]-\tfrac12(1+s_1),\quad h_2=\mathbf 1[k\ge0]-\tfrac12(1+s_2),\quad g_1=\operatorname{sgn}n-s_1,\quad g_3=\operatorname{sgn}m-\operatorname{sgn}(m+\sigma). \]
+\begin{proposition}\label{prop:lines}
+$W(v)-p(\nu)=\frac12(1+s_1)h_2+\frac12(1+s_2)h_1+h_1h_2-\frac12g_1-\frac12g_3$. Each of $h_1,g_1$ (resp.\ $h_2$; $g_3$) is supported on the integers $n$ (resp.\ $k$; $m$)
+in the closed interval between $0$ and $-\alpha_1$ (resp.\ $-\alpha_2$; $-\sigma$).
+\end{proposition}
+\begin{proof}
+By definition $\mathbf 1[n\ge0]=\frac12(1+s_1)+h_1$ and $\mathbf 1[k\ge0]=\frac12(1+s_2)+h_2$; multiplying, $\mathbf 1[n\ge0]\mathbf 1[k\ge0]=\frac14(1+s_1)(1+s_2)+\frac12(1+s_1)h_2+
+\frac12(1+s_2)h_1+h_1h_2$. Also $\operatorname{sgn}n=s_1+g_1$ and $\operatorname{sgn}(n+21k)=s_3+g_3$ since $\nu_1=n+\alpha_1$ and $\nu_1+21\nu_2=m+\sigma$. Subtract $p$.
+The functions $n\mapsto\mathbf 1[n\ge0]$ and $n\mapsto\frac12(1+\operatorname{sgn}(n+\alpha_1))$ agree unless $n$ and $n+\alpha_1$ lie on different sides of $0$ or one of them is $0$,
+which confines $n$ to the stated interval; likewise for the others.
+\end{proof}
+Hence $S^W-S^p$ is a finite sum of unary series, by type:
+\begin{enumerate}[label=(\alph*),leftmargin=2em]
+\item half-lines $\nu_2=c$ fixed (weight $h_2\cdot\frac12(1+s_1)$): $Q=w^2-\frac{35}4c^2$, $w=\nu_1+\frac72c$, a partial theta in $w\ge\frac72c$ with Eichler partner $\sum w\,\e(w^2\tau)$;
+\item half-lines $\nu_1=c$ fixed (weight $h_1\cdot\frac12(1+s_2)$): $Q=\frac72m'^2-\frac52c^2$, $m'=c+\nu_2\ge c$, a partial theta with partner $\sum m'\,\e(\frac72m'^2\tau)$;
+\item the finite set where $h_1h_2\ne0$;
+\item full lines $\nu_1=c$ (weight $-\frac12g_1$): $q^{-5c^2/2}$ times a weight-$\frac12$ unary theta in $\frac72m'^2$;
+\item full lines $n+21k=M$ (weight $-\frac12g_3$): with $\nu_0=(\alpha_1+M,\alpha_2)$, $u=(-21,1)$, $Q(\nu_0+ku)=\frac{595}2\big(k+\frac{B(\nu_0,u)}{595}\big)^2+Q(\nu_0)-\frac{B(\nu_0,u)^2}{1190}$,
+a weight-$\frac12$ unary theta of norm $\frac{595}2$.
+\end{enumerate}
+No line term introduces a weight-$\frac32$ unary theta beyond the three of Proposition~\ref{prop:xi}.
+
+\subsection{Summary}
+\begin{theorem}\label{thm:hybrid}
+For the $105$ companions:
+\begin{enumerate}[label=(\roman*),leftmargin=2em]
+\item the $P$-odd part of $S^p$ equals the holomorphic part of $\frac12\widehat G_O-\widehat H$, whose $\xi_1$-image is $\frac14(X^{c'}-X^{c_1})-\frac12X^{c_2}$ and involves exactly
+three distinct weight-$\frac32$ unary thetas;
+\item the $P$-even part admits no weight-one law with the matrices $(\chi35^{-1/2}M,T)$ (Corollary~\ref{cor:even});
+\item the orthant Siegel lift $\Phi_{\rm orth}$ has the Laplacian defect of Theorem~\ref{thm:lap}, a single product of the weight-$\frac32$ unary series $\vartheta^+$
+(in $\frac72m^2$) and the conjugate of $\vartheta^-$ (in $\frac52u^2$), vanishing iff $\rho_m$ or $\rho_u$ preserves the companion;
+\item the literal series differs from $S^p$ by the line terms of Proposition~\ref{prop:lines}.
+\end{enumerate}
+\end{theorem}
+\begin{catbremark}
+The identification of the holomorphic projection of $\Phi_{\rm orth}$ with $S^E$ and the independent tests of the $P$-even law and of the vanishing set are numerical; see
+Appendix~\ref{app:catB}, items \ref{catB:sh1}, \ref{catB:sh3}, \ref{catB:sh4}.
+\end{catbremark}
+\begin{remark}
+Descriptively, the $P$-odd part is a local (cone-type) mock modular object of weight one and the $P$-even part is a non-local (arc-integral) object whose defect lives on the
+endpoint ray; these words describe the structure above and are not further statements.
+\end{remark}

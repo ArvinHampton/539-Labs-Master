@@ -1,0 +1,36 @@
+== MR2 adoption blockers: Riemann / systole / full EOM ==
+V2 routines sha256 verified: ad134752da79e3064e209cd840b0aec53e004e3fa0fec8bbc9299eb12940eb85
+MN2: X1=0.659753955386447 X2=1.31950791077289 X0=1.31950791077289 F0=0.574349177498518 G0=0.287174588749259 a1=1.0 a2=0.0
+[U] exact: X0 = X2: True, X1 = X2/2: True;  U = p**2*(s - 4)  (s = mu1^2 in [0,1] => U in [-4p^2, -3p^2] < 0)
+[F] fibre block has no u,v mixing: False ; g_(phi1,u) present (Dphi1): True
+   geometry built: 43 Christoffels, 105 derivatives [57s]
+   geometry built: 14 Christoffels, 28 derivatives [4s]
+[J] (alpha,beta)=(0.37,1.11): V2 Hodge G4_(7,8,9,10) = 0.004801292192432389780811121 ; formula U D^(-7/6) sqrt(det g_fib) = -0.004801292192432389780811121
+[J] (alpha,beta)=(2.01,0.23): V2 Hodge G4_(7,8,9,10) = 0.08861410043251590019223917 ; formula U D^(-7/6) sqrt(det g_fib) = -0.08861410043251590019223917
+   elapsed 1s
+[V] v=1.0: p1(Y6) fibre comp at (0.37,1.11) = 0.0
+[V] v=3.0: p1(Y6) fibre comp at (0.37,1.11) = 0.0
+[I] GL 24x16 (384 pts), elapsed 75s
+   |int G4_fib| (kappa=1) = 9.869604400823735415   pi^2 = 9.8696044010893586188
+   int e(fibre) = 1.9999999784732826887   int p1(fibre) = 0.0   int p1(Lambda2+) = 3.9999999569465653773   int p1(Lambda2-) = -3.9999999569465653773
+   int p1(TY6) fibre component = 0.0
+   max antisymmetry defect of ON curvature = 1.6462e-38 ; max |star^2+1| = 2.0 ; max |p1(L2+-) - (p1 +- 2e)| pointwise = 8.6096e-42
+[R] ratio scan over 408 points (GL grid + 24 edge points at dps 60), elapsed 81s
+   E0: max Q/rho_J = 0.0 at (0.0075599,0.00832449) ; min = 0.0 at (0.0075599,0.00832449)
+   ET: max Q/rho_J = 0.0 at (0.0075599,0.00832449) ; min = 0.0 at (0.0075599,0.00832449)
+   Lp: max Q/rho_J = -1.42304189431507e-5 at (1.0e-5,1.57079) ; min = -0.000402497029203276 at (1.5708,1.0e-5)
+   Lm: max Q/rho_J = 0.000402497029203276 at (1.5708,1.0e-5) ; min = 1.42304189431507e-5 at (1.0e-5,1.57079)
+   rho_J per unit fibre volume (rho_J/sqrt det g_fib): min 4983.71725859555 at (1.0e-5,1.57079), max 8391.05022271765
+   E-Lambda+ sigma=+1: sigma*L <= 0 at all scanned points (no upper bound on j from the scan)
+   E-Lambda+ sigma=-1: J_M5 >= 0 at all scanned points iff j <= j* = 2484.4903873687 (binding point (1.5708,1.0e-5))
+   E-Lambda- sigma=+1: J_M5 >= 0 at all scanned points iff j <= j* = 2484.4903873687 (binding point (1.5708,1.0e-5))
+   E-Lambda- sigma=-1: sigma*L <= 0 at all scanned points (no upper bound on j from the scan)
+   E0 sigma=+1: min over scan of J_M5/rho_J = 1.0
+   E0 sigma=-1: min over scan of J_M5/rho_J = 1.0
+   ET sigma=+1: min over scan of J_M5/rho_J = 1.0
+   ET sigma=-1: min over scan of J_M5/rho_J = 1.0
+   E-S+ (j=1) sigma=+1: min over scan of J_M5/rho_J = 1.00001423041894
+   E-S+ (j=1) sigma=-1: min over scan of J_M5/rho_J = 0.999597502970797
+   E-S- (j=1) sigma=+1: min over scan of J_M5/rho_J = 0.999597502970797
+   E-S- (j=1) sigma=-1: min over scan of J_M5/rho_J = 1.00001423041894
+done 81s

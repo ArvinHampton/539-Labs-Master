@@ -1,0 +1,2 @@
+# SOFTSF PRESS — Agent physics paper S²-11DM²ET-X GR extension — call-53991ebf — 2026-11-05
+Paper PAPER_S2_11DM2ETX_EXTENSION_OF_GENERAL_RELATIVITY_INTERPRETATION_2026-11-05.md sha e140947e408b165d15cbaaa8deedc8bb53ac9c1a9fe89ab56034c2cd191a9685 landed (~3040 words, refs [1]–[10], v16 primary; DESI DR2 / ATLAS cited as E-UNTESTED). Haar identity = math; BH core = interpretive; 45/72 candidates. OW 546a61df / e053f34e / 1a32d878 / ffc45eb4 MATCH. tip 7cddb188… tip_touched NO. No CERT. → PP then Keeper.

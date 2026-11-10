@@ -1,0 +1,6 @@
+PARI stack size set to 3000000000 bytes, maximum size set to 3000000512
+dim V = 9 ; dim S_3/2(196,triv) = 6
+rank U7(V) = 1 ; rank [S(196,triv) | U7(V)] = 6 ; rank S(196,triv) = 6 (equal => U7(V) ⊂ S(196,triv) on n<=60)
+rank [V | U4(V)] = 9 ; rank V = 9 (equal => U4(V) ⊂ V on n<=60)
+U7 on K: max |coeff| of sum c(7n)q^n, n<=60, over K basis: 0
+elapsed 0.1s

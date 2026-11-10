@@ -1,0 +1,29 @@
+even m=1 outer=42 listed=42 match=True
+even m=2 outer=154 listed=154 match=True
+even m=3 outer=336 listed=336 match=True
+even m=4 outer=588 listed=588 match=True
+even m=5 outer=910 listed=910 match=True
+even m=6 outer=1302 listed=1302 match=True
+even m=7 outer=1764 listed=1764 match=True
+even m=8 outer=2296 listed=2296 match=True
+odd m=0 outer=49/4 (12.25) listed=12.25 match=True
+odd m=1 outer=357/4 (89.25) listed=89.25 match=True
+odd m=2 outer=945/4 (236.25) listed=236.25 match=True
+odd m=3 outer=1813/4 (453.25) listed=453.25 match=True
+odd m=4 outer=2961/4 (740.25) listed=740.25 match=True
+odd m=5 outer=4389/4 (1097.25) listed=1097.25 match=True
+odd m=6 outer=6097/4 (1524.25) listed=1524.25 match=True
+k=0 |ledger_exp|=0 outer=0 match=True
+k=1 |ledger_exp|=49/4 outer=49/4 match=True
+k=2 |ledger_exp|=42 outer=42 match=True
+k=3 |ledger_exp|=357/4 outer=357/4 match=True
+k=4 |ledger_exp|=154 outer=154 match=True
+k=5 |ledger_exp|=945/4 outer=945/4 match=True
+k=6 |ledger_exp|=336 outer=336 match=True
+k=7 |ledger_exp|=1813/4 outer=1813/4 match=True
+k=8 |ledger_exp|=588 outer=588 match=True
+k=9 |ledger_exp|=2961/4 outer=2961/4 match=True
+k=10 |ledger_exp|=910 outer=910 match=True
+k=11 |ledger_exp|=4389/4 outer=4389/4 match=True
+note: 1bab65c4 even list starts m=1 (outer_even(0)=0 not listed) -> G-O1
+ALL_MATCH True

@@ -1,0 +1,5 @@
+# SOFTSF PRESS — To Auditor (Write-only Soft SF CONFIRM)
+Time: 2026-10-27 15:13 CDT (America/Chicago)
+Subject: reports/FINDINGS_AGENT_ACK_OWNER_FOUR_RESEARCHERS_DOUBLE_DUTY_QUEUE_THRESHOLDS_ROLE_UNCHANGED_OW_f48da4a2_2026-10-27.md
+sha256: 847cd4b8c7c93a3ed4b559b4012b2d30c1c6b56c829d97d0428ba3c244866581
+Ask: Soft SF CONFIRM hash match (write-only). Content: Agent ACK Owner FOUR RESEARCHERS DOUBLE DUTY + PP queue thresholds OW f48da4a2968186b5591d39e84a374fde55796836dbd2eab7b4f730f30352f1f8 SUPERSEDES fb83985d… — Agent ROLE UNCHANGED; PP ≥3 call-in / ≤1 release researchers only; tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 untouched; Kerr BLOCKED; Standing LIVE b466a2a4…. REPORTS ONLY. No RECS.

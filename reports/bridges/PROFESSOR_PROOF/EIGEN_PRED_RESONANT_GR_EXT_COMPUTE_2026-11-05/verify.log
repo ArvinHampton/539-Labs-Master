@@ -1,0 +1,95 @@
+PASS A1 det A=-35
+PASS A1 eig A=(9±sqrt221)/2 {9/2 - sqrt(221)/2: 1, 9/2 + sqrt(221)/2: 1}
+PASS A1 signature (1,1)
+PASS A1 Q=n1^2+7n1n2+7/2 n2^2
+PASS A1 disc(2Q)=140
+PASS A2 Q7=(n+7k/2)^2-(35/4)k^2+(7/2)k
+PASS A2 Q-=(n+7k/2)^2-(35/4)k^2-(7/2)k [item 8 form]
+PASS A2 Q-(n,k)=Q7(-n,-k)
+PASS A6 Aa=(0,7/2)
+PASS A6 Q(a)=-7/20
+PASS A6 Q7(v)=Q(v+a)+7/20
+PASS A6 wc=(1/10,-1/35)
+PASS A6 wc-a in L'=A^-1 Z^2
+PASS A3 rho1^T A rho1=A
+PASS A3 rho1^2=I det-1
+PASS A3 rho2^T A rho2=A
+PASS A3 rho2^2=I det-1
+PASS A3 gamma=[[-1,-7],[2,13]]
+PASS A3 charpoly gamma=x^2-12x+1
+PASS A3 eig gamma=6±sqrt35
+PASS A3 gamma preserves a+Z^2
+PASS A3 rho_i map a+Z^2 -> -a+Z^2
+PASS A3 tr gamma^m recurrence m<=7
+PASS A4 cf sqrt35=[5;(1,10)]
+PASS A4 6^2-35*1^2=1
+PASS A4 minimal Pell sol (6,1) by search
+PASS A4 x^2-35y^2=-1 impossible mod 5 (-1 not QR mod 5? check mod 7)
+PASS A4b narrow class number h+(140)=4 (expect 4)
+PASS A4b 4 genera => Cl+ elementary 2-group C2xC2
+PASS A5 Res zeta_K=2ln(6+sqrt35)/sqrt35=0.8376792813
+PASS A5 2hR/sqrt140 = 2lnε/sqrt35 for h=2
+PASS A7 T mult on Fix(P): 12*1+18*2+6*4=72; 36 values
+PASS A7 V=36+6=42; Vperp=0*12+1*18+2*6=30=72-42
+PASS A7 S on V 21/21 = 18/18+3/3; dim W_P=2(s-1)^2=72 at s=7
+PASS A8 SL2Z model: S^2=(ST)^3=-I, S^4=I
+PASS A9 det rho(h1)=2, det rho(h2)=36
+PASS A9 explicit circulant dets 2,36
+PASS A9 signed W=(rho(h2)rho(h1))[1,0]=0, unsigned N=2
+PASS A10 spr nonneg circulant = row sum 11
+PASS A9b 1+zeta_M^j !=0 for odd M<=51
+PASS A11 t_W=-(3t+16)/(t+3) from x->-1/(7x), t=7x-3
+PASS A11 Wm^2=-7I, tr0, det7
+PASS A12 shell measures k=0,1,2 [80/81, 80/6561, 80/531441]
+INFO geometric series (|r|<1): 1/(1 - rr)
+PASS A12 nu=1 closed form
+PASS A12 nu=2 closed form
+PASS A12 nu=3 closed form
+PASS A12 nu=1/2 closed form
+PASS A12 nu=5 closed form
+PASS A12 nu=1 integral =1
+PASS A12 mu(3^539 Z_3^4)=3^-2156
+PASS A13 g_2(8)=0 [Thm 5.1 instance]
+PASS A13 g_3(15)=0 [Thm 5.1 instance]
+PASS A13 g_5(35)=0 [Thm 5.1 instance]
+PASS A13 g_6(48)=0 [Thm 5.1 instance]
+PASS A13 g_7(63)=0 [Thm 5.1 instance]
+PASS A13 g_10(120)=0 [Thm 5.1 instance]
+PASS A13 g_11(143)=0 [Thm 5.1 instance]
+PASS A13 g7 support in {0,1,2,4} mod 7 up to 3000
+INFO g7 allowed-degree zeros <=3000: [2, 7, 14, 16, 18, 21, 28, 32, 35, 36, 42, 43, 44, 57, 60, 63, 78, 79, 85, 100, 107, 135, 191, 247]
+PASS A20 last allowed zero of g7 in [0,3000] is 247
+PASS A14 Q(2)=0,Q(m)>=1 m!=2,Q(m)>=2 m>=8 (m<=200)
+PASS A14 c_m=(-1)^m Q(m), m<=29
+PASS A15 floor(e^3*3^5)=4880
+PASS A15 sum_{z=1}^{118} z=7021
+PASS A15 539=floor(4859/9)=18+521=7^2*11
+PASS A15 sum 3^k/k! = e^3
+PASS A16 n=2: string '2', L=1, halts in 1 step (both readings)
+PASS A16 n=3: base-3 '10' has 2 digits but ceil(log3 3)=1 (definition inconsistent at powers of 3)
+INFO A16 shift outcomes n in [2,3^9) shift; [2,3^6) rot+append: {'HALT': 1, 'LENGTH_MISMATCH': 8, 'LOOP': 19672}
+INFO A16 shift halting step counts set: [1]
+PASS A16 shift: no n in [2,3^9) halts in 538..540 steps
+INFO A16 rot+append outcomes n in [2,3^9) shift; [2,3^6) rot+append: {'HALT': 1, 'LENGTH_MISMATCH': 5, 'NOHALT_2000': 721}
+INFO A16 rot+append halting step counts set: [1]
+PASS A16 rot+append: no n in [2,3^9) halts in 538..540 steps
+PASS A16 n=5 ('12') loops under shift reading
+PASS A17 eig rho={0,1} for all real phi
+PASS A17 Tr rho^2=1 (pure)
+INFO Tr(rho sigma_y)= -sin(phi)
+PASS A17 |<sigma_y>|=|sin phi| (not identically 1)
+PASS A17 |exp(i*phi)|=1 for real phi
+PASS A17 E[e^(i theta)], theta~N(0,s^2) = exp(-sigma**2/2)
+PASS A17 averaged rho eig (1±e^{-s^2/2})/2
+PASS A18 exact eigenvalues
+PASS A18 splitting E+-E- = Delta + 2V^2/Delta + O(V^4): Delta + 2*epsilon**2/Delta
+PASS A18 level shift each = V^2/Delta: Delta/2 + epsilon**2/Delta
+PASS B1 min denominator 3^-539>0
+PASS B1 1-2GM/D=0 iff D=2GM: pole persists e.g. 2GM=D(5)
+PASS B2 |3^v u|_3^-539 = 3^(539 v); (-1)^(±1)=-1
+PASS B4 K9 adjacency eig {8,-1^8}
+PASS B4 K9 graph Euler char 9-36=-27, b1=28
+PASS B4 path P_n adjacency eig 2cos(pi j/(n+1)) (n=6 check)
+INFO B4 spr(K9 box P540)=8+2cos(pi/541)= 9.999966278724392  lambda2(L)=2-2cos(pi/540)= 3.384628451152949e-05
+PASS B6 (4+1)+(3+1)=9 != 11; 10+1=11
+TOTAL 86 PASS 86 FAIL 0

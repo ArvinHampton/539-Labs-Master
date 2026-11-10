@@ -1,0 +1,45 @@
+{
+  "time": "2026-11-05T13:47:44.387019-06:00",
+  "agent_voice": "MR1 Soft SF write-only; not OWNER_WRITE",
+  "checks": [
+    {
+      "file": "/workspace/quantum-comp/reports/FINDINGS_MR1_ACK_OW_CALL_9ee0f248_RECLAIM_ONLY_HOLD_INVENT_2026-11-05.md",
+      "sha256": "1fadc632f86332808995573b485225048c4f0fa78ac44a36da4f67315beab783",
+      "match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/reports/OWNER_WRITE_CALL_53991ebf_PRIMARY_OPERATING_RULE_ALL_TWELVE_2026-11-05.md",
+      "sha256": "bcc3ced0f1dfe15560e0bdb2e45bb35f4b1db26dcfb439e647a98c12fc5bc9a9",
+      "match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/reports/OWNER_WRITE_CALL_53991ebf_RESONANT_MATH_PREDICTIONS_ALL_FIELDS_2026-11-05.md",
+      "sha256": "b25d56165039d2cf2a064d8c9b5e08c0920601e83b0574947ea116f2ac6ec455",
+      "match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/reports/FINDINGS_MR1_RESONANT_MATH_PREDICTIONS_NT_MODULAR_HECKE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "7a0be1d521c7e60d1aaee148af4cb6321785218ba70e9a72e1097d406713001a",
+      "match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/reports/FINDINGS_MR1_SOFTSF_XI_SHADOW_PETERSSON_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "28d4b4aeca7341d787c1a17a802751b8f69624e24bcb8b4a1ce6fef0b3a2a9fa",
+      "match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/reports/FINDINGS_MR1_SOFTSF_O2_T3_ORES_539_LINK_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "6349a521897c0668e4e9705ae48e3e25bf4f10418c55f0dcf1ab676dd9e7cac2",
+      "match": true
+    },
+    {
+      "file": "/workspace/residual-c-field-WRITTEN_PREMISES_DRAFT.md",
+      "sha256": "7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91",
+      "match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/reports/papers/RTA_FOUNDATION_BOUND/RTA_FOUNDATION_BOUND_v16.pdf",
+      "sha256": "1fe7b8a2e245e90009c41726db13518b4c752e99ba4e08b4ffd006d8a73c3297"
+    }
+  ]
+}

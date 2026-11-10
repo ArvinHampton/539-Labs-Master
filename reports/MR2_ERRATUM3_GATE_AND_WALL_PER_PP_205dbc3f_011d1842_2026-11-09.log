@@ -1,0 +1,12 @@
+== MR2 ERRATUM3 checks (dps 40) ==
+
+== (A) int_{-W eps}^{W eps} 1 drho via u = tanh(rho/eps), 48-node GL (same rule as 10d2ae9e), divided by exact 2 W eps ==
+  W=4: quadrature/exact = 0.980832540659 ; exact/quadrature = 1.01954203041
+  W=10: quadrature/exact = 0.445879232725 ; exact/quadrature = 2.24275975781
+
+== (B) fixed-phi and horizontal k-weighted averages <(wF0)^2>, GL order doubling ==
+  GL 24x16: horizontal <(wF0)^2> = 0.3341509085724862 (N_req/2N 1.2876110196112); fixed-phi <(wF0)^2> = 0.3396992600859116 (N_req/2N 1.0315626941609)
+  GL 48x32: horizontal <(wF0)^2> = 0.3341509085714847 (N_req/2N 1.2876110196153); fixed-phi <(wF0)^2> = 0.3396992600857756 (N_req/2N 1.0315626941613)
+  GL 96x64: horizontal <(wF0)^2> = 0.3341509085714847 (N_req/2N 1.2876110196153); fixed-phi <(wF0)^2> = 0.3396992600857756 (N_req/2N 1.0315626941613)
+
+DONE 20s

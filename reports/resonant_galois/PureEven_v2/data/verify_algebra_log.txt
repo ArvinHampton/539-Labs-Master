@@ -1,0 +1,25 @@
+disc(x^5+ax+b) = 256 a^5 + 3125 b^4 : OK
+disc(x^5+alpha x+k alpha)=alpha^4(256 alpha+3125 k^4); with alpha=alpha(m,k): disc=(256 alpha^2 m)^2 : OK
+alpha(m,k)=0 iff 65536 m^2 = 3125 k^4 iff 5 = (256 m / (25 k^2))^2 -> impossible over Q (k!=0): so alpha(m,k)!=0 always.
+alpha=0: disc(x^5+b)=3125 b^4 = 5 (25 b^2)^2, never a rational square for b!=0.
+Scaling: t^5 f_{m,k}(x/t) = f_{t^2 m, t k}(x) : OK  => f_{m,k} ~ f_{m/k^2, 1}
+x -> -x:  -f_{m,k}(-x) = f_{m,-k}(x) : OK
+Cross-k paths:
+  flagship: m=5/16, k=-8/5: alpha=-55, beta=88  (target (-55, 88))
+  classical: m=5/16, k=4/5: alpha=20, beta=16  (target (20, 16))
+  LSW: m=55/16, k=-4: alpha=-100, beta=400  (target (-100, 400))
+  D5 example: m=5/8, k=-8/5: alpha=20, beta=-32  (target (20, -32))
+  flagship->classical (m const) u=0: m=5/16, k=-8/5: alpha=-55, beta=88  (target (-55, 88))
+  flagship->classical (m const) u=1: m=5/16, k=4/5: alpha=20, beta=16  (target (20, 16))
+  flagship->classical (m const): disc = (256 alpha(u)^2 m(u))^2 identically in u: OK;  alpha(u) = -5*(81*u**4 - 216*u**3 + 216*u**2 - 96*u + 11)
+  flagship->LSW u=0: m=5/16, k=-8/5: alpha=-55, beta=88  (target (-55, 88))
+  flagship->LSW u=1: m=55/16, k=-4: alpha=-100, beta=400  (target (-100, 400))
+  flagship->LSW: disc = (256 alpha(u)^2 m(u))^2 identically in u: OK;  alpha(u) = -5*(81*u**4 + 216*u**3 - 284*u**2 - 4*u + 11)
+  LSW->classical u=0: m=55/16, k=-4: alpha=-100, beta=400  (target (-100, 400))
+  LSW->classical u=1: m=5/16, k=4/5: alpha=20, beta=16  (target (20, 16))
+  LSW->classical: disc = (256 alpha(u)^2 m(u))^2 identically in u: OK;  alpha(u) = -20*(324*u**4 - 1080*u**3 + 1225*u**2 - 475*u + 5)
+disc(f_m) = 2^48 m^10 (1 - eps)^4, eps = 3125 k^4/(65536 m^2) : OK  (exact identity)
+  k=-8/5, m=300: correction = -1.38889130016e-5; -4eps = -1.38888888889e-5; remainder/eps^2 = -2.0000046 (-> -2)
+  k=-4, m=1000: correction = -4.88284230256e-5; -4eps = -4.8828125e-5; remainder/eps^2 = -2.0000163 (-> -2)
+  k=4/5, m=7000/3: correction = -1.43494898217e-8; -4eps = -1.43494897959e-8; remainder/eps^2 = -2.0 (-> -2)
+Normal form: f_{m,k}(x) = k^5 g_mu(x/k), g_mu(y)=y^5+(256 mu^2-3125/256)(y+1), mu=m/k^2 : OK

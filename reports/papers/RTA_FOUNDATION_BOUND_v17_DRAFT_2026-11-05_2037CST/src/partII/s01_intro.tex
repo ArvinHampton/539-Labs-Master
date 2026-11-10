@@ -1,0 +1,120 @@
+
+
+%=====================================================================
+\section{Introduction to Part~II}\label{sec:intro}
+%=====================================================================
+
+\subsection{Setting and question}
+The series studied here arise as the ``Bridge Series~$C$'' of the author's S$^2$-11DM$^2$ET-X programme. The question posed there was whether $C$
+satisfies a \emph{residual law}: a modular part plus a controlled remainder, or an exact weight-$\tfrac12$ slash relation. This part is self-contained.
+All objects are defined from scratch in \S\ref{sec:conv}, and nothing in it depends on, or is claimed to bear on, other parts of that programme.
+
+\subsection{Summary}
+In one sentence: $C$ and $\Cthird$ share the remainder $\Porth_s$; up to theta and mock pieces, $\Porth_s$ is one ray class partial theta series of
+$\Q(\sqrt{35})$; its regulator-type singularity rules out every scalar modular or mock residual law (Baker); and the obstruction is resolved not by a
+scalar law but by a vector-valued weight-$1$ quantum modular structure, coming from a Siegel theta lift to weight-$0$ Maass forms, whose cocycle is
+computed in closed form. The precise statements are collected in \S\ref{sec:main}.
+
+\subsection{What is not claimed}
+No claim is made about the twin prime conjecture or the Riemann hypothesis, and nothing here concerns any termination claim of the wider programme.
+We do not claim that $C$, $\Cthird$ or $\Porth_s$ is modular, mock modular or quantum modular as a scalar $q$-series. The quantum-modular statements concern
+the fundamental-domain cone-sum vector of \S\ref{sec:lz}. The K3 statements of \S\ref{sec:k3} concern a shared representation, not a shared modular form.
+
+
+\subsection{Organisation}
+Section~\ref{sec:conv} fixes conventions and notation, and \S\ref{sec:main} states the main theorems. Sections~\ref{sec:rq}--\ref{sec:L0} prove them:
+the ray class decomposition, the radial asymptotics and the Baker obstruction, the profile law and the theta lift, the Lewis--Zagier period formula,
+the Eisenstein/cusp split, the Herglotz closed form, and the $L(0)$ data for the cusp rows. Sections~\ref{sec:family}--\ref{sec:uL} treat the lift
+family for general $s$ (tensor structure, dimensions, the cusp content of $u_L$). Sections~\ref{sec:hs}--\ref{sec:sfamily} treat $H_s$, the cone, $\Cthird$
+and the dependence on $s$. Section~\ref{sec:k3} gives the K3 realisation, \S\ref{sec:uniq} the uniqueness of the vector completion, and \S\ref{sec:emit}
+the obstructions for coefficient-emitting maps. Sections~\ref{sec:consequences}--\ref{sec:open} collect consequences, numerical checks, dependencies
+and open problems. Appendix~\ref{app:repro} lists the scripts that carry out the exact and numerical verifications.
+
+%=====================================================================
+\section{Conventions and notation}\label{sec:conv}
+%=====================================================================
+
+\subsection{Conventions on status}\label{sec:cat}
+Every result carries one of two labels.
+\begin{itemize}[leftmargin=2em]
+\item \textbf{Category A}: proved in this paper; or \emph{exact}, meaning a finite verification in rational, integer, modular or cyclotomic arithmetic over
+a stated finite set (including exact ranks, and ranks modulo a prime $\ell$ together with a stated argument that transfers them to characteristic $0$);
+or proved \emph{conditional on} a named published theorem, stated each time. Where a written proof is long and only its structure is reproduced here,
+it is marked ``Proof (outline)''.
+\item \textbf{Category B}: statements whose only support is floating-point or multiprecision numerics (including singular-value ranks, FFT character
+counts and fits), PSLQ recognition, identification by citation only, interpretation, analogy, patterns observed on finitely many cases, and conjectures.
+\end{itemize}
+Numerical checks reported inside a Category~A status box are supporting evidence for a statement that is proved or exact. The scripts behind every
+exact and numerical claim are listed in Appendix~\ref{app:repro}. Section~\ref{sec:deps} lists the cited results on which proofs depend.
+\emph{Computer-assisted proofs.} A finite verification carried out in rigorous ball (interval) arithmetic (Arb), in which every quantity entering the final inequality is a proven enclosure of the exact value, counts as Category~A and is labelled ``Category~A (computer-assisted)''.
+\emph{Naming.} Results are numbered by section, continuously with the rest of the paper.
+
+\subsection{The lattice and the quadratic polynomial}
+Write $\e(x)=e^{2\pi i x}$ and $q=\e(\tau)$, $\tau\in\Hb$. Let
+\[
+A=\begin{pmatrix}2&7\\7&7\end{pmatrix},\qquad B(x,y)=x^{\mathsf T}Ay,\qquad
+Q(x)=\tfrac12B(x,x)=x_1^2+7x_1x_2+\tfrac72x_2^2 .
+\]
+Then $\det A=-35$, $Q$ has signature $(1,1)$, $L=\Z^2$ is an \emph{odd} lattice ($Q(L)\not\subset\Z$),
+$L'=A^{-1}\Z^2$ with $A^{-1}=\begin{pmatrix}-1/5&1/5\\1/5&-2/35\end{pmatrix}$, $|L'/L|=35$, and the level is
+$70$ (the least $N$ with $NA^{-1}$ even integral). Put
+\[
+Q_7(n,k)=Q(n,k)+\tfrac72k=n^2+7nk+\tfrac72k(k+1),\qquad
+Q_-(n,k)=n^2+7nk+\tfrac72k(k-1)=Q_7(-n,-k).
+\]
+With $a=(\tfrac7{10},-\tfrac15)$ one has $Aa=(0,\tfrac72)$, $Q(a)=-\tfrac7{20}$, hence
+\begin{equation}\label{eq:shift}
+Q_7(v)=Q(v+a)+\tfrac{7}{20}\qquad(v\in\Z^2).
+\end{equation}
+The characteristic vector of the odd lattice is $w_c=A^{-1}(0,\tfrac12)=(\tfrac1{10},-\tfrac1{35})$; it satisfies
+$\e(Q(n))=\e(B(n,w_c))$ for $n\in\Z^2$ and $w_c\equiv a\pmod{L'}$.
+Let $\varepsilon=6+\sqrt{35}$, the fundamental unit of $K=\Q(\sqrt{35})$ ($\Nm\varepsilon=+1$), and
+\[
+I=\frac{\log\varepsilon}{2\sqrt{35}}=0.209419820314714631473\ldots
+\]
+
+\subsection{The series}
+Let $c_1=(-1,1)$, $c_2=(-4,1)$; then $Q(c_1)=-\tfrac52$, $Q(c_2)=-\tfrac{17}2$ (negative norm), and for
+$v=(n,k)$, $B(c_1,v)=5n$, $B(c_2,v)=-n-21k$. With $\sgn(0)=0$ put
+$w(v)=\tfrac12\bigl(\sgn B(c_1,v)-\sgn B(c_2,v)\bigr)$ (so $w=\tfrac12$ on the walls). Define
+\begin{align*}
+\Porth_s&=\sum_{n,k\ge0}q^{Q_7(n,k)}, &
+H_s&=\sum_{v\in\Z^2}w(v)\,q^{Q_7(v)}, &
+C&:=\Porth_s-H_s,\\
+\Caxis&=\tfrac32+\sum_{n\ge1}q^{n^2}+\sum_{k\ge1}q^{7k(k+1)/2}, &
+\Cthird&=\sum_{n,k\ge1}q^{Q_-(n,k)}, &
+\Cmixed&:=C-\Caxis-\Cthird.
+\end{align*}
+Further, $\theta_3=\sum_{n\in\Z}q^{n^2}$, $R:=\sum_{n\ge0,\,k\ge1}q^{Q_7(n,k)}$,
+\[
+\Thol:=\sum_{n\ge1,\,k\ge0}q^{Q_-(n,k)}-\sum_{n\le0,\,k\le-1}q^{Q_-(n,k)},
+\]
+the holomorphic part of a Zwegers indefinite theta function \cite{Zw}, and $f_{a,b,c}$ is the
+Hecke-type double sum of Hickerson--Mortenson \cite[Def.~0.2]{HM},
+$f_{a,b,c}(x,y,q)=\sum_{\sgn(r)=\sgn(s)}\sgn(r)(-1)^{r+s}x^ry^sq^{a\binom r2+brs+c\binom s2}$, with
+$\sgn(r)=1$ for $r\ge0$ and $-1$ for $r<0$ in this formula.
+
+Finally, for a rational $x=h/m$ ($\gcd(h,m)=1$) define the Gauss mean
+\[
+G(x)=(2m)^{-2}\sum_{(n,k)\bmod 2m}\e\bigl(xQ_7(n,k)\bigr).
+\]
+Throughout, ``radial'' refers to $q=\e(x)e^{-t}$ with $x$ rational and $t\to0^+$, and $t^{r}$ coefficients are those of the resulting asymptotic expansion.
+
+\subsection{Notation for the lift family}\label{sec:notation}
+For an integer $s\ge5$ let $A_s=\left(\begin{smallmatrix}2&s\\s&s\end{smallmatrix}\right)$, $Q_s(n,k)=n^2+snk+\tfrac s2k(k+1)$, $a=A_s^{-1}(0,\tfrac s2)$,
+$c_0=s/(4(s-2))$ and $\gamma=\left(\begin{smallmatrix}-1&-s\\2&2s-1\end{smallmatrix}\right)$ (so that $Q_s(v)=Q(v+a)+c_0$; at $s=7$ these are the objects above).
+\begin{itemize}[leftmargin=2em]
+\item $n_s:=s(s-2)$ (the radicand: $35,48,99$ at $s=7,8,11$); $D_s$ is the discriminant of the order of the form ($140,48,396$); $\varepsilon_s=(s-1)+\sqrt{n_s}$.
+\item $N_s$ is the number of labels of the lift family; $N_s=4n_s$ for odd $s$ (so $N_7=140$).
+\item $S_{\rm lab}$, $T$ are the label matrices of the $S$- and $T$-laws (Theorem~\ref{thm:F}); $P=S_{\rm lab}^2$ is the label involution and
+$W_P:=\mathrm{Fix}(P)$ ($\dim W_P=72$ at $s=7$). The representation of $\mathrm{SL}_2(\Z)$ in the standard presentation is $\rho(S):=S_{\rm lab}^{-1}$,
+$\rho(T):=T$ (Remark~\ref{rem:Sconv}); on $W_P$, $S_{\rm lab}=S_{\rm lab}^{-1}$.
+\item $V$ is the span of the values of the lift vector (the function span); $V_{\rm Eis}$ is the $\mathrm{SL}_2(\Z)$-cyclic span of the constant-term
+vector, $d_{\rm Eis}:=\dim V_{\rm Eis}$, $d_{\rm cusp}:=\dim V-d_{\rm Eis}$; $V^\perp$ is the complement of $V$ in $W_P$.
+\item $N$ denotes the negation map $u_{\alpha,\beta}\mapsto u_{-\alpha,-\beta}$ on labels (not to be confused with $N_s$); $Z_p$ is the local
+reflection $x\mapsto-x$ on a $p$-primary factor, and $Z_{(m)}=\bigotimes_{p\mid m}Z_p$.
+\item $W_p^\pm$ are the even and odd parts of a local Weil representation; $A_3$, $B_1$ are the $3$- and $1$-dimensional summands of the
+$2$-adic factor $\rho_2$ (Theorem~\ref{thm:tensor7}); $X^\pm=W_5^\pm\otimes W_7^\pm$ at $s=7$.
+\item $H_s$ always denotes the cone series of \S\ref{sec:conv} with the fixed walls $c_1=(-1,1)$, $c_2=(-4,1)$ (for every $s$). The axes-cone series
+$H_s^{\rm axes}$ of \S\ref{sec:cone} is a separate object. We write $g:=\gcd(24,s-8)$ and $\Delta:=(s-2)(7s-32)$.
+\end{itemize}

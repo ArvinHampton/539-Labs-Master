@@ -1,0 +1,137 @@
+                                                                    ON TWO GEOMETRIC THETA LIFTS
+
+                                                                     JAN HENDRIK BRUINIER* AND JENS FUNKE**
+arXiv:math/0212286v4 [math.NT] 14 Mar 2003
+
+
+
+
+                                                                                     1. Introduction
+                                                Borcherds [Bo1] introduced a ‘singular’ theta lift from modular forms of (typically) neg-
+                                             ative weight for SL2 (R) to the orthogonal group O(p, 2). This gave rise to remarkable
+                                             product expansions of automorphic forms for O(p, 2), but also to the realization of gener-
+                                             ating series of certain ‘special’ divisors in locally symmetric spaces attached to O(p, 2) as
+                                             holomorphic modular forms of positive weight [Bo2]. The Borcherds lift was generalized
+                                             by the first named author and studied in connection with the cohomology of the special
+                                             divisors [Br1, Br2].
+                                                On the other hand, the Weil representation and theta series have been utilized in a more
+                                             classical way by several people (e.g. [Sh, Od, RS, TW, W]) to establish generating series
+                                             of special cycles in orthogonal and unitary locally symmetric spaces of arbitrary signature
+                                             as modular forms, in greatest generality by Kudla and Millson (see e.g. [KM3]).
+                                                The purpose of this paper is threefold:
+                                                 (1) For O(p, 2), we derive an adjointness result between the Kudla-Millson lift and the
+                                                     Borcherds lift.
+                                                 (2) We also introduce a new Borcherds lift for O(p, q) and obtain a similar relationship
+                                                     to the Kudla-Millson lift.
+                                                 (3) As a geometric application, we show that the exterior derivative of the current
+                                                     induced by this generalized Borcherds lift is closely related to the delta current of
+                                                     a special cycle.
+
+                                                We sketch the main results of the paper in more detail.
+                                                Let V be a quadratic space over Q of signature (p, q) and write D for the associated
+                                             symmetric space. Let L be an even lattice in V , Γ be a subgroup of finite index of the group
+                                             of units of L and X = Γ\D the associated locally symmetric space. The special cycles arise
+                                             from subsymmetric spaces of codimension q induced by embeddings of orthogonal groups
+                                             of signature (p − 1, q) into O(V ).
+                                                For simplicity of the exposition we assume in the introduction that L is unimodular. (In
+                                             the main body of the paper, we treat the general case of arbitrary level by using Borcherds’
+                                             vector valued modular form setting. Moreover, for q odd, this is essential in order to obtain
+                                             a nonzero theory).
+
+                                               Date: March 14, 2003.
+                                               1991 Mathematics Subject Classification. 11F55, 14C25.
+                                               * Supported by a Heisenberg-Stipendium of the DFG.
+                                               ** J.E. Marsden PostDoctoral Fellow 02/03 at the Fields Institute, Toronto.
+                                                                                               1
+2                             JAN H. BRUINIER AND JENS FUNKE
+
+    We first introduce a new space of automorphic forms of (typically negative) weight k.
+Its importance lies in the fact that on one hand we will systematically treat this space as
+the input space for both the Borcherds lift for O(p, 2) and its extension to O(p, q), while on
+the other hand it satisfies a duality with the space of holomorphic cusp forms of (positive)
+weight 2 − k. This duality, interesting in its own right, will be crucial for us.
+    Namely, we let Hk be the space of weak Maass forms, consisting of those smooth functions
+f on the upper half plane H, which transform with weight k = 2 − (p + q)/2 under SL2 (Z),
+are annihilated by the Laplacian of weight k, and satisfy f (τ ) = O(eCv ) as τ = u+iv → i∞
+for some constant C > 0. For f ∈ Hk , put ξk (f ) = R−k (v k f¯), where R−k is the standard
+raising operator for modular forms of weight −k. We prove that ξk defines an antilinear
+                    !
+map ξk : Hk → M2−k     , to the space of meromorphic modular forms of weight 2 − k which
+are holomorphic on H (see Proposition 3.2). It is easily checked that Mk! is the kernel of
+ξk . We let Hk+ be the preimage of S2−k , the space of cusp forms of weight 2 − k.
+Theorem 1.1. The bilinear pairing between S2−k and Hk+ , defined by
+                                   {g, f } = (g, ξk (f ))2−k ,
+for g ∈ S2−k and f ∈ Hk+ , induces a non-degenerate pairing of S2−k and Hk+ /Mk! . Here
+( , )2−k is the Petersson scalar product for modular forms of weight 2 − k.
+   The main point here is to show that the map ξk is surjective. The proof is using methods
+from complex geometry and is ultimately based on Serre duality. The pairing {g, f } can
+be explicitly evaluated in terms of the Fourier coefficients of g and the singular part of f
+(Proposition 3.5). Note that Borcherds [Bo2] established a similar duality statement (in
+terms of formal power series).
+   For signature (p, 2), when D is Hermitian, we then introduce the Borcherds lift as a map
+on Hk+ ; i.e, for any f ∈ Hk+ , its lift is given by integrating f ∈ Hk+ against Θ(τ, z, ϕ0 ),
+(τ = u + iv ∈ H, z ∈ D), the Siegel theta series attached to the standard Gaussian ϕ0 on
+V (R) (see also [Bo1], [Br1]):
+                                      Z reg
+                                                                   du dv
+(1.1)                      Φ(z, f ) =            f (τ )Θ(τ, z, ϕ0 ) 2 .
+                                       SL2 (Z)\H                    v
+The integral is usually divergent, and a suitable regularization was found by Harvey and
+Moore [HM]. The regularization process leads to logarithmic singularities along certain
+special cycles Z(f ) in D which in this case are divisors. Moreover, ΛB (z, f ) := ddc Φ(z, f )
+actually extends to a closed smooth (1, 1)-form on X. Here d and dc are the standard
+(exterior) differential operators on D. Hence, we have a map
+(1.2)                               ΛB : Hk+ −→ Z 2 (X),
+
+to the space of closed 2-forms on X. For f ∈ Mk! one has ΛB (f ) = a+ (0)Ω, where a+ (0) is
+the constant coefficient of f , and Ω is the suitably normalized Kähler form on D.
+  On the other hand, Kudla and Millson [KM3] construct for general signature (p, q) a
+theta series Θ(τ, z, ϕKM ) associated to a certain Schwartz function ϕKM on V (R), which
+                             ON TWO GEOMETRIC THETA LIFTS                                     3
+
+                                         (p−1)q
+takes values in Z q (X). Then for η ∈ Zc     (X), the compactly supported closed (p − 1)q-
+forms on X, the Kudla-Millson lift is defined by
+                                           Z
+                              ΛKM (τ, η) =    η ∧ Θ(τ, ϕKM ).
+                                               X
+It turns out that ΛKM (τ, η) is actually a holomorphic modular form of weight 2 − k, so
+that we have a map
+(1.3)                           ΛKM : Zc(p−1)q (X) −→ M2−k ,
+which also factors through cohomology. Moreover, the Fourier coefficients of ΛKM are
+given by periods of η over the special cycles.
+Theorem 1.2. Assume D be Hermitian, i.e., q = 2, and let f ∈ Hk+ with constant
+coefficient a+ (0). We then have the following identity of closed 2-forms on X:
+                       ΛB (z, f ) = (Θ(τ, z, ϕKM ), ξk (f ))2−k + a+ (0)Ω.
+Therefore the maps ΛB and ΛKM are naturally adjoint via the standard pairing ( , )X of
+Zc2p−2 (X) with Z 2 (X) and the paring { , } of M2−k with Hk+ , that is,
+                                                                  
+                         η, ΛB (f ) X = {ΛKM (η), f } + a+ (0) η, Ω X .
+Furthermore, this duality factors through cohomology, and Hk+ /Mk! , respectively. (See also
+Theorem 6.3.)
+  This is based on the fundamental relationship between the two theta series involved:
+Theorem 1.3. Let L2−k be the lowering Maass operator of weight 2 − k on H. Then
+                            L2−k Θ(τ, z, ϕKM ) = −ddc Θ(τ, z, ϕ0 ).
+   We show this by switching to the Fock model of the Weil representation. Then the idea
+for the proof of Theorem 1.2 is given by the following formal (!) calculation:
+                                                        reg
+        (Θ(ϕKM ), ξk (f ))2−k “=” − L2−k Θ(ϕKM ), v k f¯ −k
+                                                               Z reg
+                                    c
+                                                 
+                                              k ¯ reg        c                   dudv
+                              “=” dd Θ(ϕ0 ), v f −k “=” dd                Θ(ϕ0 )f 2 .
+                                                                SL2 (Z)\H         v
+The first equality follows from the adjointness of the raising and lowering operator. How-
+ever, the second scalar product no longer converges and needs to be regularized. At this
+point, one also obtains an ‘error’ term involving the Kähler form. The second equality
+follows from the key fact provided in Theorem 1.3 and the last one by interchanging the
+integration and differentiation (which also needs careful consideration). An additional diffi-
+culty occurs by the fact that in the intermediate steps one also has to deal with singularities
+along the special divisors.
+   As an application, we are able to recover several of the geometric properties of the
+Borcherds lift in [Br1] with often simpler proofs.
+   For general signature (p, q), we note that by the work of Kudla and Millson [KM3], there
+exists a theta function Θ(τ, z, ψ) with values in the (q − 1)-forms of X such that
+                             L2−k ϕKM (τ, z, ϕKM ) = dΘ(τ, z, ψ).
+

@@ -1,0 +1,934 @@
+                                      Topology 40 (2001) 945}960
+
+
+
+
+           Vassiliev invariants and a strange identity related to
+                        the Dedekind eta-function
+                                                 Don Zagier*
+                       Max-Planck-Institut fur Mathematik, Vivatsgasse 7, 53111 Bonn, Germany
+                                Received 9 August 1999; accepted 15 November 1999
+
+
+Abstract
+
+   In this paper the `functiona F(q)" (1!q)(1!q)2(1!qL) is studied. The series does not
+                                            Lvalues and derivatives of all orders when q is a root of unity. It
+converge in any open set, but has well-de"ned
+is shown that the coe$cients of its Taylor expansion at q"1 are equal to the numbers  of `regular
+                                                                                                   "
+linearized chord diagramsa as de"ned by Stoimenow and hence give an upper bound (the best currently
+known) for the number of linearly independent Vassiliev invariants of degree D. There are similar expansions
+at other roots of unity. The same values and derivatives of all orders at all roots of unity are obtained as the
+limiting value of the function ! 9(!1)L6n#1qL>L, the `derivative of order one-half '' of the
+                                     LZ
+Dedekind eta-function, and also exhibit   a kind of modular behavior which can be seen as an example of
+a generalization of the classical theory of periods of modular forms to the case of half-integral weight.
+Functions of a similar type also occurred in recent joint work with Lawrence in connection with the
+Witten}Reshetikhin}Turaev invariants of knots.  2001 Elsevier Science Ltd. All rights reserved.
+
+MSC: 57M27; 05A30; 11F11; 11F20; 11F67
+
+Keywords: Vassiliev invariants; Knots; Dedekind -function; q-Calculus; Modular forms; Periods of modular forms
+
+
+
+
+Introduction
+
+   An important open problem of knot theory is the determination of the number <(D) of linearly
+independent Vassiliev invariants of degree D, or equivalently of chord diagrams of degree
+D modulo the 4-term relation. In a recent paper, Stoimenow [6] introduced the notion of `regular
+linearized chord diagramsa (the de"nition is recalled in Section 1) and proved that <(D) is bounded
+by the number  of such diagrams of degree D. He gave an explicit, but somewhat complicated,
+                 "
+  * Tel.: #49-228-402233; fax: #49-228-40 2220.
+  E-mail address: zagier@mpim-bonn.mpg.de (D. Zagier).
+
+0040-9383/01/$ - see front matter  2001 Elsevier Science Ltd. All rights reserved.
+PII: S 0 0 4 0 - 9 3 8 3 ( 0 0 ) 0 0 0 0 5 - 7
+946                               D. Zagier / Topology 40 (2001) 945}960
+
+algorithm (Eqs. (8)}(11) below) to compute the numbers  and used it to show that
+                                                                   "
+ )C(M)D\+ D! for any M'0, improving the previously known upper bound (D!2)!/2 for the
+ "
+number of Vassiliev invariants, but observed that the numerical computations (up to D"30)
+actually suggested a better estimate `something like D!/1.5" a. In this paper we will give another
+and simpler description of Stoimenow's numbers  and use it to deduce that  /D! tends to
+                                                      "                                "
+0 exponentially fast (like 1.6442\" ). The analysis involves a series of surprising identities related
+to the Dedekind eta-function. These identities also provide the "rst indication of the existence of
+a period theory (or theory of Eichler integrals) for modular forms of half-integral weight.
+   Speci"cally, we will show (Theorem 1) that Stoimenow's numbers  are given by the simple
+                                                                          "
+generating function identity
+                                       
+        (1!q)(1!q)2(1!qL)"   (1!q)"                                                             (1)
+                                             "
+      L                              "
+in 9[[1!q]]. This identity, apart from its elegance, makes the numerical evaluation of the  very
+                                                                                                "
+easy. Calculating the values up to D"200 and interpolating numerically suggested an asymptotic
+formula of the form
+
+
+                                           
+         D! (D     C   C
+       &       C #  #  #2                                                                        (2)
+       " (/6)"  D   D
+with C +2.704332490062429595, C +!1.52707 and C +!0.269009. Our second main
+                                                               
+result (Theorem 4 in Section 3) is a proof of this formula with explicitly computable constants C . In
+                                                                                                 G
+particular,
+            12(3 
+       C "        e ,                                                                           (3)
+            
+which agrees to the accuracy given above with the empirically obtained value. The proof of (2) is
+based on the following surprising identity of formal power series (Theorem 3 in Section 2):
+
+                                                    
+                                         ¹    t L
+     e\R  (1!e\R)2(1!e\LR)"  L                  .                                        (4)
+                                            n! 24
+            L                         L
+Here the numbers ¹ "1, ¹ "23, ¹ "1681,2 (which occur in the literature under the name
+                                    
+`Glaisher's T-numbersa; cf. [5], sequence C5138), are integers given by the generating function
+
+                                                            
+            ¹              sin 2x                sin x
+              L xL>"                     "                                                       (5)
+          (2n#1)!          2 cos 3x             1!4 sin x
+      L
+or in closed form by the formulas
+
+                                               
+           (!144)L       1          5                   (2n#1)! ¸(2n#2, )
+      ¹ "6         B        !B                         "                   ,                        (6)
+       L    n#1     L> 12    L> 12                    2 (3   (/6)L>
+where B (x) denotes the nth Bernoulli polynomial and ¸(s,) is the Dirichlet L-series associated to
+        L
+the quadratic character "(12/ ) ) of conductor 12.
+  Identity (4) is surprising, but not strange: it is a normal identity between two formal power series.
+The `strange identitya of the title is the `formulaa
+                                            1 
+        (1!q)(1!q)2(1!qL)"!  n(n)qL\.                                                    (7)
+                                             2
+      L                                       L
+                                   D. Zagier / Topology 40 (2001) 945}960                              947
+
+What is strange about it, apart from the factor ! on the right-hand side, is that the two sides
+                                                         
+never make sense simultaneously: the left-hand side is divergent both as a power series in q and as
+a complex-valued function in the region q(1 (or of course q'1), but has a well-de"ned value
+when q is a root of unity, while the right-hand side converges as a formal power series and in the
+disk q(1, but nowhere on the unit circle. The meaning of the equality is that the function on
+the left agrees at roots of unity with the radial limit of the function on the right, and similarly for the
+derivatives of all orders. Eq. (7), of which (4) is a consequence, is related to the Dedekind -function
+and the theory of periods of modular forms. This will be discussed brie#y in Section 6, and at more
+length in a later paper.
+   I end this introduction with a few words on the origin of the formulas above. The expression
+occurring on the left-hand side of (1) occurred in a lecture on analytic continuation of Feynman
+integrals given by Maxim Kontsevich in the Max-Planck-Institut fuK r Mathematik in October 1997.
+He had studied the values of this expression when q is a root of unity (in which case the sum
+terminates) and discovered a very surprising asymptotic formula (Eq. (34) below) for these values
+when q"e I with kPR. I gave an interpretation of his formula as a statement about a certain
+`period functiona associated to the Dedekind eta-function and showed that it would follow from
+identity (7). As part of the attempt to prove (7) and its special case (4) I calculated the "rst few
+Taylor coe$cients at q"1 of the left-hand side of (1) and discovered by using the on-line version of
+[5] that the same numbers had occurred in [6] in the context of counting chord diagrams. Studying
+the recursions in [6] led to a proof of identity (1) and to a derivation of the asymptotic Eq. (2)
+modulo identity (4), for which I "nally found an elementary direct proof.
+
+
+1. The number of regular linearized chord diagrams
+   We de"ne a linearized chord diagram (LCD) of degree D as a "xed-point free involution  on the
+set 1,2,2,2D. (Think of the chords as the semi-circles in the upper half-plane with end-points
+i and (i) for 1)i)2D.) The diagram is called regular if [i, i#1]-[(i#1),(i)] when-
+ever (i#1)((i). For instance, in degree 2 there are two regular LCDs (12)(34) and (13)(24)
+and one irregular one (14)(23), while in degree 3 there are "ve regular LCDs
+(12)(34)(56), (12)(35)(46), (13)(25)(46), (13)(24)(56) and (14)(25)(36) and ten irregular ones. It is well
+known that the dimension of the space of Vassiliev invariants of degree D is equal to the dimension
+of the space of LCDs of degree D modulo a certain relation (the four-term relation). The total
+number of LCDs of degree D is equal to
+      (2D)! 2" D!
+           &      ,
+      2"D! (D
+so this is a trivial upper bound on the dimension in question. This bound was improved to (D!1)!
+by Chmutov and Duzhin [2] and to (D!2)!/2 by Ng and Stanford [4]. In a recent paper [6],
+Stoimenow showed that any linearized chord diagram is equivalent modulo the four-term relation
+to a linear combination of regular ones, so that the dimension <(D) of the space of Vassiliev
+invariants is also bounded by the number  of regular LCDs. In this section we will prove the
+                                               "
+generating function identity (1) for these numbers.
+  In fact, we will prove a slightly more precise generating function identity. Following Stoimenow,
+we de"ne  for all k*1 as the number of regular LCSs of degree D whose leftmost chord has
+              "I
+948                              D. Zagier / Topology 40 (2001) 945}960
+
+length k (i.e. (1)"k#1). The numbers  vanish for k'D and are related to the numbers  by
+                                          "I                                           "
+               "
+       "   "                .                                                        (8)
+        "           "I    "> 
+             I
+Stoimenow gave the following recursive formula to compute the numbers  :
+                                                                       "I
+                                  "\ J
+       "1 and  "   K                                for D*2,                       (9)
+                        "I              "\ J N J I\ N
+                                JI\ N
+where K       is de"ned by the formula
+         "JN
+
+                             
+                  N           p!1
+      K     "  (!1)N\H                                                               (10)
+        "JN                   j!1 ">H\J H
+                 H
+and the coe$cients        by the generating function
+                       JIN
+                                          1!x
+           xIyJzN"                                          .                         (11)
+                 JIN        1!x!z(y/(1!y)!xy/(1!xy))
+      I J NV
+From these one can compute numerical values. Here is a table for D)7:
+
+D           k"1       2         3            4           5           6    7         
+                                                                                     "
+1           1                                                                       1
+2           1         1                                                             2
+3           2         2         1                                                   5
+4           5         6         3            1                                      15
+5           15        21        12           4           1                          53
+6           53        84        54           20          5           1              217
+7           217       380       270          110         30          6    1         1014
+
+
+    We extend the de"nition to all D, k*0 by setting  "0 whenever Dk"0 except for  "1.
+                                                      "I                            
+Theorem 1. The numbers       are given by the generating function
+                           "I
+                           
+         X" >I"  (1!a)(1!qa)2(1!qL\a) 39[>][[X]],                                         (12)
+             "I
+     " IV                L
+where q and a are related to X and Y by
+       q"1!X,         a"1!X>.                                                                 (13)
+
+    Specializing to >"1, a"q and using (8), we obtain the generating function identity (1).
+
+Proof. We can rewrite (9) (with D#1, k#1 in place of D, k) as
+
+
+                                                           
+                  " J     N            p!1
+               "    (!1)N\H                   
+        "> I>                        j!1 ">H\J H J I N
+                 JI N H
+                  " J
+                "            H
+                         ">H\J H J I H
+                 JI H
+                                   D. Zagier / Topology 40 (2001) 945}960                   949
+
+with
+
+
+                          
+             J             p!1
+     H "  (!1)N\H                    (l*j*1).
+      JIH                  j!1 J I N
+            NH
+Using the generating function (11) we compute
+
+
+                                                        
+                                               p!1
+                H xIyJzH"           (!1)N\H      xIyJzH
+                  JIH                          j!1 J I N
+       JVHV IV           JVNVHV IV
+                         "          xIyJz(z!1)N\
+                                     JIN
+                          JVNV IV
+
+                                                                           
+                            z            (1!y)(1!xy)
+                         "                               !1
+                          z!1 (1!y)(1!xy)!y(z!1)(1#x!xy)
+                           yz(1#x!xy)
+                         "             ,
+                          1!yz(1#x!xy)
+which gives the explicit formula
+       H "coe$cient of xIyJ\H in (1#x(1!y))H
+        JIH
+
+                       
+                     j   k
+            "(!1)J\H          .
+                     k l!j
+(In particular H "0 unless l*j*k*l!j*0.) In other words, we have replaced (9)}(11) by
+                JIH
+the simpler recursion relation
+
+
+                                 
+                    I "\P          k j
+              "   (!1)P                       (D*1)                                    (14)
+       "> I>                     r k "\P H
+                  P HI
+and this recursion remains true for D"0 with the conventions above.
+  Now let F(X, >) be the generating function de"ned by the left-hand side of Eq. (12). Then the
+recursion relation (14) translates into the identity
+
+       F(X, >)"1#              X">>I>
+                         "> I>
+                  " IV
+
+                                                
+                                       k j
+              "1 # X>           (!1)P      X">P>I
+                                       r k "H
+                       "VHVIVPV
+
+                                    
+                               j
+              "1#X>               X">I(1!X)I
+                               k "H
+                      "VHVIV
+             "1#X>   X"(1#>!X>)H
+                        "H
+                  "VHV
+             "1#X>F(X, 1#>!X>).
+950                               D. Zagier / Topology 40 (2001) 945}960
+
+Now make the change of variables (13). Then F(X, >) becomes a power series f (q, a) in 1!q and
+1!a (because  "0 for k'D) and the functional equation just proved translates into the
+                "I
+simpler functional equation
+
+        f (q, a)"1#(1!a) f (q, qa).
+
+Iterating this, we "nd that f (q, a) is equal to the expression on the right-hand side of (12). 䊐
+
+
+2. Some beautiful power series identities
+
+  Set
+
+               
+       F(q)"  (1!q)2(1!qL),                                                                       (15)
+              L
+where the empty product as usual is taken to be 1. This expression does not make any sense either
+as a formal power series in q (since the terms tend to a non-zero limit in 9[[q]]) or as a function of
+a complex variable (since the series diverges both for q(1 and for q'1), but does make sense
+when q is a root of unity (since the series then terminates) and also as a formal power series in 1!q
+or in !q for any root of unity . The values and power series expansions of q at general roots of
+unity will be discussed in Section 5; for now, we consider only the expansion of F around q"1, our
+immediate goal being to prove identity (4) describing expansion of F(e\R) as a power series in t. We
+use the standard notation (a) for the product (1!a)(1!qa)2(1!qL\a) (to be taken as 1 if
+                                L
+n"0), so that F(q) can be written simply as           (q) .
+                                                    LV L
+  Our "rst step is to replace F by another function which makes sense both as a function of the
+complex variable q and as a power series in q. By partial summation or induction on N we have
+
+      ,\               ,
+        [(q) !(q) ]"  n(q)       qL                                                              (16)
+              L   ,            L\
+      L              L
+for any integer N*1, and letting NPR we see that the series
+
+               
+     F (q)"  n (q)       qL,                                                                (17)
+                    L\
+              L
+which makes sense both as a function of q (for q(1) and as a power series in either q or 1!q,
+equals F(q) as a power series in (1!q) (or in !q for any root of unity ), while the series
+
+                
+      F (q)"  [(q) !(q) ]                                                                         (18)
+                       L      
+               L
+agrees with F (q) both as a power series in q and as a function in the disk of radius 1. We will prove
+              
+an identity for the function F "F 39[[q]]. To state it, we introduce two more power series.
+                                     
+   Let ( ) )"(12/ ) ) be the unique primitive character of conductor 12, already mentioned in the
+introduction. Euler's famous `pentagonal number theorema (q) " 9 (!1)IqII> can be
+                                                                          IZ
+                                  D. Zagier / Topology 40 (2001) 945}960                           951
+
+written in the form
+                              
+        (q) ":     (1!qL)"  (n) qL\"1!q#q#q#q#2;                                       (19)
+           
+               L            L
+this has a natural interpretation (which we will return to in Section 6) as saying that the Dedeind
+eta-function q(q) is a theta series. We de"ne a new power series H(q)39[[q]] by
+                      
+                
+        H(q)"  n(n) qL\"1!5q!7q#11q#13q!2,                                             (20)
+               L
+i.e., formally by `di!erentiating the Dedekind eta-function half a timea (this, too, will be discussed
+in more detail in Section 6). Finally, we de"ne a power series E(q)"q#2q#2q#3q#2 by
+                d                        qL       
+     E(q)"! [log (qx) ]        "             "  d(n) qL,                                        (21)
+               dx          V         1!qL
+                                    L           L
+where d(n) denotes the number of divisors of an integer n.
+
+Theorem 2. The power series F , H and E are related by
+                             
+     F (q)"! H(q)#(!E(q))(q) .                                                                   (22)
+                                
+Proof. De"ne a power series in q, a and x by the formula
+                                                     
+     S(a, x)"  (1!a)(1!qa)2(1!qL\a) xL"  (a) xL.
+                                                            L
+               L                                   L
+(Here q is considered as "xed and is suppressed in the notation.) The two recursions
+      (1!x) S(a, x)"1!ax S(a, qx) , S(a, x)"1#(1!a) x S(qa, x)
+are immediately veri"ed, and from them we deduce that the series
+                              
+           : (1!x) S(qx, x)"  (x)
+      S(x) "                          xL 3 Z[[q, x]]
+                                  L>
+                             L
+satis"es the recursion S(x)"1!qx!qx S(qx), whence
+              
+      S(x)"  (n)xL\qL\.                                                              (23)
+             L
+(This is Exercise 10, p. 29, of [1].) In particular, for   small we have
+                                      n!1
+     S(1! )"  (n) qL\!               (n) qL\#O( ).
+                                           2
+               L                   L
+On the other hand, directly from the de"nition we have
+                       
+      S(x)"(qx) #(1!x)  [(qx) !(qx) ]xL
+                             L     
+                      L
+952                              D. Zagier / Topology 40 (2001) 945}960
+
+which gives (cf. Eq. (21))
+     S(1! )"(q) #[E(q)(q) #F (q)] #O( ).
+                                
+The theorem now follows by comparing the coe$cients of            and recalling that F "F . 䊐
+                                                                                        
+
+Remark. An amusing consequence of (22) is the formula
+
+
+                                                                     
+          n (n) qL            qL                1
+       LV              "1!2            1#
+           (n) qL             1!qL       (1!q)2(1!qL)
+        LV                    L
+for what one could call the `-logarithmic derivative of the Dedekind eta-functiona.
+                             
+  Theorem 2 concerned power series expansions near q"0. We now consider the expansion of
+F(q) at q"1, or rather, three di!erent expansions, de"ning coe$cients a , b , c  in 9 by
+                                                                               L    L    L
+                                          b                        c
+       F(1!x)"  a xL, F(e\R)"  L tL, e\RF(e\R)"                      L tL,                (24)
+                          L                   n!                        24Ln!
+                   L                   L                       L
+so Theorem 1 asserts the equality  "a and Eq. (4) the identity c "¹ . (An interpretation of
+                                       "     "                           L     L
+the intermediate coe$cients b will be given in Section 6.) We give a small table of these coe$cients
+                                L
+to illustrate their size; the precise asymptotics will be discussed in the next section.
+
+n       0       1        2      3        4          5                6                7
+
+a       1       1        2      5        15         53               217              1014
+  L
+b       1       1        3      19       207        3451             81663            2602699
+  L
+c       1       23       1681   257543   67637281   27138236663      15442193173681   11828536957233383
+ L
+
+
+Theorem 3. The coezcients c dexned by the generating function (24) agree for all n with the Glaisher
+                           L
+T-numbers ¹ dexned by the generating function (5) or by the closed formula (6).
+           L
+
+Proof. We have already seen that F(q) and F (q) agree to all orders as q approaches 1 (or any other
+                                               
+root of unity) radially from within the unit disk. From Theorem 2 it follows that F(q) also agrees
+with !H(q) to all orders, since (q) vanishes to in"nite order as we approach any root of unity
+                                    
+and E(q) blows up at worst like (1!q)\ (because the coe$cients d(n) in (21) are trivially bounded
+by n). It follows that the function H(q) has an asymptotic expansion in powers of 1!q as q tends
+to 1 and that, if we de"ne coe$cients   by the asymptotic expansion
+                                           L
+                                             
+       e\RH(e\R)"  m(m)e\KR&             tL as tW0,
+                                                 L
+                        K                  L
+then c /24Ln!"! /2 for all n. But a standard argument shows that
+       L              L
+             (!1)L
+          "         ¸(!2n!1, )                                                                  (25)
+        L     24Ln!
+                                    D. Zagier / Topology 40 (2001) 945}960                      953
+
+for all n*0, where ¸(!2n!1, ) is the value de"ned by analytic continuation of the ¸-series
+¸(s,)"(m)m\Q. Indeed,
+
+
+                                             
+                                      
+         e\R H(e\R)tQ\ dt"  m (m) e\KR tQ\ dt"24Q (s) ¸(2s!1, ),
+                             K      
+while on the other hand we have
+
+
+                                                      
+         !                          ! ,\                    ,\
+             e\RH(e\R)tQ\ dt"          tL#O(t,) tQ\ dt"     L #R (s)
+                                          L                      s#n   ,
+                                    L                    L
+with R (s) holomorphic in R(s)'!N (N any positive integer), and comparing the residues at
+        ,
+s"!n gives Eq. (24). But by the functional equation of ¸(s, ) we "nd that the number ¹ de"ned
+                                                                                         L
+by (6) is equal to (!1)L\¸(!2n!1, )/2, and combining this with formula (25) and the equality
+c /24Ln!"! /2 we obtain the main assertion of the theorem. To relate the generating function (5)
+ L               L
+and the formula for ¹ in terms of Bernoulli polynomials in (6), one applies the same method to the
+                     L
+function  (m) e\KR"(e\R!e\R)/1#e\R)"sinh 2t/cosh 3t instead of  m (m) e\KR. 䊐
+            K                                                                 K
+
+Remark. The same method applied to the full identity (23) gives the two-variable identity
+                                                              tL (!1)PuP>
+     e\R  (1!e\S)(1!e\R\S)2(1!e\LR\S)e\L>S"  ¹                       .
+                                                          L>P 24Ln! 2P(2r#1)!
+           L                                      L PV
+
+
+3. Asymptotic formula for 
+                           "
+   In [6], Stoimenow used his recursive formulas (8)}(11) to compute a table up to D"30 and to
+prove that  /D! goes to 0 faster than any power of 1/D, but observed that the numerical results in
+             "
+fact suggested a faster exponential decrease roughly like 1.5\". Using (1) we can compute the
+numbers  much more easily, e.g. the "rst k values can be computed by the one-line PARI program
+           "
+     s"1#o(xk); p"s; q"s; for (n"1,k,q"q!q*x; p"p!p*q; s"s;p); vec(s)
+
+which takes about 0.5 s on a SUN workstation for k"100 and about 11 s for k"200, the
+corresponding "nal values being
+     "6.09186804812;10,             "1.77229377482;10.
+                                     
+To make Stoimenow's guess about the asymptotics of  precise, we make the Ansatz
+                                                    "
+    
+     " &D?A\B(C #C D\#C D\#2)                                                                (26)
+    D!                         
+
+with some unknown constants , A, C , C ,2 and then try to "t these to the numerical data. The
+                                      
+easiest way to do this is to note that (26) implies that     /D has an asymptotic expansion
+                                                          ">    "
+954                                D. Zagier / Topology 40 (2001) 945}960
+
+b #b D\#2 with some coe$cients b "1/A, b "( #1)/A,2 . Given a function D C f (D)
+                                                    
+for which such an asymptotic expansion is expected, one can determine the b 's numerically by
+                                                                                  G
+multiplying the function f (D) by DP for some moderately small value of r (say, r"10) and taking the
+rth di!erence of the resulting function DP f (D)"b DP#b DP\#2#b #b D\#2. This
+                                                                           P   P>
+di!erence equals r!b #O(D\P\) and hence tends very rapidly to r!b as D gets large, and once
+                                                                        
+one has computed b one can compute b by applying the same process to D( f (D)!b ) and then
+                                                                                       
+continue the process iteratively. Applying this procedure in our case we found (to 20-digit accuracy)
+that the numbers and A in (26) were given by  and /6, respectively, and that the "rst few
+                                                     
+coe$cients C had the numerical values given in the introduction.
+              G
+Theorem 4. The numbers  dexned by (1) have an asymptotic expansion of the form (2) with
+                            "
+computable coezcients C and with C as given in Eq. (3). In particular, the number of Vassiliev
+                          G          
+invariants of degree D is O(D!(D/(/6)").
+
+
+Proof. We know from Theorem 1 that  "a , with a de"ned by Eq. (24). We use that formula to
+                                        "     "      "
+express the a in terms of the b and the c . First, we have
+             L                  L           L
+
+                   
+            1 L     n
+     b "              c .
+       L 24L        k I
+               I
+Substituting into this the formula c "¹ and the asymptotic formula
+                                    L     L
+              1 (2n#1)!
+     ¹ "                   (1#O(5\L)),
+        L 2(3 (/6)L>
+
+which follows immediately from (6), we "nd
+
+
+                                                                      
+             (2n#1)!      /72   (/72)/2!
+      b &4(3           1#       #             #2
+       L    (2/3)L>   2n#1 (2n#1)(2n!1)
+and hence by Stirling's formula
+
+
+                                                
+         12(3n n!
+      b &              1#  #  #2                                                               (27)
+       L   (/6)L   n   n
+with computable coe$cients         "  #, ,2 . Now we use the generating function
+                                     
+      tK            (1!e\R)L
+         " S                  ,
+      m!         L K    n!
+            LK
+where S      denotes the Stirling number of the "rst kind (de"ned as the number of elements of
+         LK
+S with exactly m cycles, or as the coe$cient of xK in x(x#1)2(x#n!1)) to deduce from (24)
+  L
+the relation
+         1 L\
+      a "  S        b                                                                           (28)
+       L n!     L L\I L\I
+            I
+                                   D. Zagier / Topology 40 (2001) 945}960                       955
+
+between a and b . From S "1 and the recursion S      "S      #nS we have
+          L     L        LL                    L> K   L K\    LK
+
+                                               
+              nI    c (k) c (k)
+     S      "     1!  #  #2
+      L L\I 2Ik!       n    n
+with computable coe$cients c (k)"(2k#k)/3, c (k),2. Together with (27) and (28) this gives
+                                            
+
+                                                                         
+         b      (/12)I    2k!11k             n!(n      C
+      a & L             1#          #2 &              C #  #2
+       L n!        k!           6n             (/6)L    n
+            IV
+with C given by (3), C "C (!#  ), and all C e!ectively computable. 䊐
+                                           G
+
+4. Enumeration of connected regular chord diagrams
+
+   In Section 4 of [6], Stoimenow also gave an algorithm, similar to but more complicated than
+(8)}(11), to compute the number  of connected regular LCDs of degree D, which is an upper
+                                     "
+bound for the number of primitive Vassiliev invariants of this degree. Here again we can partly
+solve the recursions to give a fairly simple formula for the generating function
+               
+     (X)"   X""X#X#2X#5X#16X#63X#293X#1561X#2.
+                   "
+             "
+To do this, we de"ne a power series  ( )"1#X! #2X!2X # #239[[X, ]] by
+                                      6
+                      (1!q)2(1!qL)
+      ( )"                                (q"1!X).                            (29)
+       6          (1# )(1#q )2(1#qL )
+              L
+Using the identity  (q )"(1# )  ( )! /(1# ) we get the alternative expression
+                     6              6
+               
+      ( )"  [1#(1!qL>)#(1!qL>)(1!qL>)#2](! )L.                             (30)
+       6
+              L
+Theorem 5. The generating function (X) equals \(1).
+                                                6
+Proof. We give a sketch only, since the details are similar to, but more tedious than, those of the
+proof of Theorem 1. We use the notations and formulas of [6], Section 4, without restating them.
+The recursions for the numbers      translate to the functional equation
+                                 "IL
+      (1!X>#X>Z)F(X, >, Z)"Z#X>ZF(X,1#>!X>, Z)
+for the generating function F(X, >, Z)" X">IZL. Iterating this, we obtain
+                                         "IL
+                     1         1!a           (1!a)(1!qa)
+      F(X, >, Z)"        #             #                      #2,
+                   1#       (1# )(1#q ) (1# )(1#q )(1#q )
+where q and a are de"ned by (13) and "a(1!Z)/Z. In particular,
+
+
+                                                 
+                  1!Z  1   1!Z
+     F(X,1, Z)" q    "       !1#Z.
+                6  Z   Z 6  Z
+956                              D. Zagier / Topology 40 (2001) 945}960
+
+On the other hand, Eq. (2) of [6] is equivalent to the relation
+
+      P (X, >, Z)"1#(X, Z P (X, >, Z))
+       H                    H
+between the two generating functions
+
+      P (X, >, Z)"1#                X">JZL, (X, Z)"   X"ZL.
+        H                         "LJ                            "L
+                         " L JV                          " LV
+Finally, from      " "                   we get P (X,1, Z)"1!Z#F(X,1, Z). Combining
+                IV " I L      "L     JV " L J         H
+these equations leads to the `closeda formula
+
+      (X, Z)"Z\(Z)!1#Z.
+                6
+The theorem is obtained by specializing to Z"1.         䊐
+
+  Theorem 5 lets us compute the  very quickly. For instance, the evaluation of
+                                 "
+       "443902366431562012886101206
+       
+took just 1 s of CPU time on a Sun workstation as compared to the 30 h cited in [6]. Computing
+further to D"100 (time: 3 min) and interpolating numerically in the way explained in the previous
+section, we "nd empirically that  satis"es an asymptotic formula like (2) but with the coe$cients
+                                  "
+C replaced by other coe$cients CH, with C /CH"2.7182818285 to 11 decimals, con"rming
+  H                                   H          
+Stoimenow's guess that  & /e as DPR. In particular, considering  rather than  can give
+                        "      "                                          "               "
+at most a very modest improvement of the bound on <(D) in Theorem 4.
+
+
+5. Expansions of F(q) near roots of unity
+
+  As already remarked, the series F(q) in (15) makes sense not only for q equal or near to 1, but also
+for q equal or near to any root of unity "e ?, 30. We can write its Taylor expansion near such
+a root of unity in three di!erent sets of coordinates, setting
+
+                                               b ()                       c ()
+     F((1!X))"  a ()XL, F(e\R)"  L tL, e\RF(e\R)"  L tL,                                (31)
+                            L                      n!                          24Ln!
+                      L                     L                          L
+where a (), b (), and c () belong to 9[]. The following result generalizes Theorem 3.
+       L      L           L
+Theorem 6. Let "e ? be a root of unity. Then the coezcients c () dexned by (31) are given by the
+                                                                L
+generating function
+
+        1      ,                            (!1)L
+                (m)K\e\KR&2               c ()tL> (tP0),                            (32)
+     1!e\,R                                     n! L
+              K                         L
+where N is any positive multiple of 12 such that ,"1.
+                                    D. Zagier / Topology 40 (2001) 945}960                            957
+
+Proof. The proof is similar to that of Theorem 3. Using Mellin transforms, we see that the function
+H de"ned by (20) has the asymptotic expansion
+
+
+                                                                                      
+                                                      ¸ (!2n!1,)    t L
+     e\RH(e\R)"  m(m)K\e\KR&  K                   !
+                                                               n!     24
+                     K                             L
+around the point , where ¸ (s, ) is the twisted ¸-series de"ned by
+                           K
+                 
+       ¸ (s, )"  (m)K\m\Q
+        K
+                K
+if R(s)'1 and by analytic continuation otherwise. From Theorem 2 and (32) it follows that
+
+       c ()"(!1)L\¸ (!2n!1, )/2.                                                                   (33)
+        L            K
+On the other hand, the same Mellin transform argument shows that (!1)L¸ (!n, ) for any n*0
+                                                                                 K
+is the coe$cient of tL/n! in the Taylor expansion of  (m)K\e\KR at t"0, and since the
+                                                       K
+function m C (m) K \ is periodic of period N, this latter function is equal to the left-hand side
+of (32). (One must also check that this sum, which obviously has an expansion in t\"[[t]], is "nite
+at t"0 and is an odd function of t, but this is easy.) Combining these statements gives the desired
+result. 䊐
+
+    We can write (32) more explicitly in the form
+
+
+                                                        
+             (!1)LNL> ,                       m
+      c ()"               (m)K\B           ,
+       L       2n#2                         L> N
+                         K
+where B (x) denotes the nth Bernoulli polynomial. (Cf. (6), where "1, N"12.) For the special
+         L
+case n"0 this becomes
+
+             1 ,
+     F()"        m(m)K\.
+            4N
+                K
+Here is a small table of c () for the "rst four roots of unity "1, !1, "e  and i:
+                          L
+n            c (1)       c (!1)           c ()                              c (i)
+              L           L                L                                  L
+0            1           3                5!                                8!3i
+1            23          261              955!215                           2728!1125i
+2            1681        76083            625925!141841                     3180983!1317369i
+3            257543      46620501         862948795!195611975               7796806408!3229519605i
+
+
+  As in the special case "1, the coe$cients b () and a () de"ned by (31) grow more slowly than
+                                               L         L
+the c (), e.g. the sequence b (!1)    begins 3, 11, 133, 3389,2 and the sequence a (!1)
+     L                         L     LV                                               L       LV
+begins 3, 11, 72, 635,2 . The asymptotics of these sequences could be determined, if so desired, by
+the method of Section 3.
+958                              D. Zagier / Topology 40 (2001) 945}960
+
+6. Modular properties
+
+  As mentioned at the end of the introduction, Kontsevich originally introduced the function F(q)
+de"ned by (15), noted that it makes sense whenever q is a root of unity, and performed numerical
+computations which led to the conjectural asymptotic formula
+
+
+                                                              
+                      i     1                         b     2i L
+      F(e I)&exp !    k!3#               k#  L !              (kPR)                      (34)
+                     12      k                         n!     k
+                                                   LV
+with the "rst few coe$cients b given empirically by
+                                  L
+       b "1, b "1, b "3, b "19, b "207,2 .                                                      (35)
+                                             
+Comparing (35) with the table given in Section 2 suggests that the coe$cients b are indeed the
+                                                                                   L
+same as the coe$cients b de"ned there using the generating function expansion (24). The attempt
+                           L
+to understand the reason for the asymptotic development (34) and to identify the coe$cients (35)
+led to the results of the present paper. In this section we will establish the asymptotic expansion
+(34), with b as given in (24), and "nd the corresponding statement for the expansion of F near other
+            L
+roots of unity. We give only brief indications of the proofs, since this is part of a more general
+theory of `period functions for modular forms of half-integral weighta which will be developed in
+more detail in [7].
+   The "rst remark is that (34) becomes simpler if we multiply both sides by e I, namely
+
+
+                                               
+                                 c       i L
+      F( )&\I> k#  L !                  (kPR),                                        (36)
+      I    I                 n!     12k
+                             LV
+where  for any m3- denotes e K and the c are related to the b as in (24). We can write this in
+       K                                    L                    L
+a more enlightening way by de"ning a function  : 0P" by
+      ( )"e ? F(e ?) ( 30).                                                              (37)
+(The factor e ? is suggested by Theorem 2, since both the functions H(q) and (q) become more
+                                                                                    
+natural when multiplied by q.) Then  obviously satis"es
+      ( #1)" ( ) ( 30),                                                               (38)
+                 
+so (k)"I (0)"I and Eq. (36) and its complex conjugate can be rewritten as
+                   
+
+                                                    
+                                       c      i L
+      ($1/k)&!k(Gk)#  L G                    (kPR).
+                                      n!    12k
+                                   LV
+Together with (38), this formula suggests some kind of modular transformation behavior of the
+function  under the generators P #1, P!1/ of PS¸(2, 9), and indeed this is the case.
+
+Theorem. The function  : 0P" dexned by (37) satisxes the modular transformation equations (38)
+and
+      ( )#(i )\(!1/ )"g( ) ( 30, O0),                                                      (39)
+where (i )\ is the principal branch ("! \ for $ '0) and g : 1P" is a C function
+                                          
+which is real-analytic everywhere except at x"0 and whose derivatives at x"0 are given by
+                                  D. Zagier / Topology 40 (2001) 945}960                            959
+
+gL(0)"(!i/12)Lc (n"0,1, 2). More generally,  satisxes
+                    L
+       ( )!v( )(c #d)\( ( ))"g ( ) ( 30, ( )OR)
+                                      A
+
+                     
+                      a b
+for all matrices "        3S¸(2, 9), where v( ) is a 24th root of unity related to the multiplier of the
+                      c d
+Dedekind eta-function and g is a C function on 1 which is real-analytic except at \(R).
+                           A
+    We do not give the complete proof, since this theorem is a special case of results to be proved in
+more detail in [7], but only give an indication of the reason for the theorem and the de"nition of
+the function g. In the classical theory of periods of modular forms, we assign to a cusp form
+f (z)" a(n)e LX of integral weight k*2 on S¸(2,9) its Eichler integral fI (z)
+          L
+" n\Ia(n)e LX. Then the modularity of f and the fact that (d/dz)I\fI is a multiple of f
+       L
+imply that fI is `nearly modulara of weight 2!k: we have fI (z#1)" fI (z) and
+zI\fI (!1/z)"fI (z)#g(z) for a certain polynomial g of degree *k!2, the period polynomial
+of f, given explicitly by the formula g(x)"c f (z) (z!x)I\ dz where c is a constant depending
+                                             I                            I
+
+                                                                
+                                                             a b
+only on k. More generally, for an arbitrary element "               in the modular group we have
+                                                             c d
+(cz#d)I\ fI ( (z))"fI (z)#g (z) where g is a polymomial given by the same integral formula, but
+                               A          A
+with the integral taken from \(R)"!d/c to R.
+    In our case we replace f with the Dedekind eta-function
+                                      
+       (z)"eX      (1!e LX)"  (n) e LX,
+                    L               L
+which is a modular form of weight  on S¸(2, 9):
+                                       
+       (z#1)" (z),          (!1/z)"(z/i)(z),        ( (z))"v ( ) (cz#d)(z),
+                                                                    E
+where v ( ) is a certain 24th root of unity, depending on and on the determination of the square
+          E
+root of cz#d, whose value was determined by Dedekind. If we formally de"ne the Eichler integral
+(z) by the same formula as before, then it is (up to a constant) the power series n(n)e LX with
+integer coe$cients (because k!1" in this case and the exponents occurring in the Fourier
+                                         
+expansion of  are proportional to perfect squares). The integral which we previously used to de"ne
+the period polynomial g would be g(x)"c(z!x)\(z) dz. This does not make sense for x in
+                                               
+the upper half-plane, because of the two-valuedness and singularity at z"x of the factor
+(z!x)\, and indeed there is no direct analogue for  of the `nearly modulara property of fI valid
+in the upper half-plane. But the integral does make sense for x real, and it turns out that the limiting
+values of  at rational points (and, indeed, its full asymptotic expansions at all rational points) do
+satisfy modular transformation properties analogous to those of the Eichler integral fI of a modular
+form f of integral weight. Together with Theorem 2, which shows that the limiting value of  at any
+rational point is !2( ), this gives the results stated in the theorem, with g(x) given by the above
+integral formula and g (x) by the same integral but with the lower limit replaced by
+                           A
+  \(R)"!d/c.
+    As a "nal remark, we mention that formulas of the type discussed in this paper have a second
+connection with knot theory, quite separate from the generating function (1): it turns out that the
+960                                    D. Zagier / Topology 40 (2001) 945}960
+
+Witten}Reshitikhin}Turaev invariants of certain 3-manifolds lead to a formalism and to generat-
+ing functions which are very similar to those occurring here, but this time related to the period
+functions of modular forms of weight  (rather than ) and to the `mock theta functionsa of
+                                                      
+Ramanujan. This connection is discussed in [3].
+
+
+References
+
+[1] G. Andrews, The Theory of Partitions, Encyclopedia of Mathematics and its Applications, Vol. 2, Addison-Wesley,
+    Reading, MA, 1976.
+[2] S.V. Chmutov, S.V. Duzhin, An upper bound for the number of Vassiliev knot invariants, J. Knot Theory
+    Rami"cations 3 (1994) 141}151.
+[3] R. Lawrence, D. Zagier, Modular forms and quantum invariants of 3-manifolds, Asian J. Math. 3 (1999) 93}108.
+[4] K.Y. Ng, T. Stanford, On Gusarov's groups of knots, Math. Proc. Cambridge Philos. Soc. 126 (1999) 63}76.
+[5] N.J.A. Sloane, S. Plou!e, The Encyclopedia of Integer Sequences, Academic Press, San Diego, 1995. On-line version:
+    sequences@research.att.com.
+[6] A. Stoimenow, Enumeration of chord diagrams and an upper bound for Vassiliev invariants, J. Knot Theory
+    Rami"cations 7 (1998) 93}114.
+[7] D. Zagier, Period functions for modular forms of half-integral weight, in preparation.
+

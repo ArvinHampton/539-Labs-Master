@@ -1,0 +1,136 @@
+# AUDITOR — Corpus crawl BATCH 13 — OWNER_WRITE #165–245 (2026-10-26 untimed → 2026-11-09 13:00 CDT)
+Date: 2026-11-09 (America/Chicago). Same scope, method, and limits as batches 11–12 (read-only; no sidecars; tip 7cddb188… unchanged on re-hash; no CERT; no Owner Write edited).
+#181–211 carry no time in their filenames and are placed at the end of 2026-10-26.
+
+## 1. Custody (81 files)
+| # | date | time (CDT) | file | sha256 | sidecar |
+|---|---|---|---|---|---|
+| 165 | 2026-10-26 | 18:35 | `OWNER_WRITE_DEFS_CLARIFY_ASK_AUDITOR_NOT_OWNER_2026-10-26.md` | `ad8bbfd65f3ad1b6a611a87721961bc38be48a45968a1e7b8081dd6f0eaf79a7` | MATCH |
+| 166 | 2026-10-26 | 18:35 | `OWNER_WRITE_NINE_AGENT_ROSTER_LOCKED_EIGEN_FIT_2026-10-26.md` | `9bd78736c17d134c262c6c8fc2f2ee1a22d5bf3be4521c104ca6989dd0a7dbe7` | MATCH |
+| 167 | 2026-10-26 | 18:39 | `OWNER_WRITE_PAIRINGS_AGENT_MR1_EIGEN_MR2_2026-10-26.md` | `201eb4a0fb9dcf04fbc9439cd0ec93ab49dfa5cc85743d30062aadfdfce07cb2` | MATCH |
+| 168 | 2026-10-26 | 18:39 | `OWNER_WRITE_PAIRINGS_TRANSFER_RULES_4_5_AGENT_MR1_EIGEN_MR2_2026-10-26.md` | `e7f50719beb0ce083b0b04094f880c4b6ca723530eca3a435ae28c52688db0b6` | MATCH |
+| 169 | 2026-10-26 | 18:40 | `OWNER_WRITE_AUDITOR_CONNECTION_MAP_RULES_4_5_2026-10-26.md` | `ea42a98de8fa9e26af5ed7cd6f66999a98f0d43b06f0b8cb5372afd26db664f2` | MATCH |
+| 170 | 2026-10-26 | 18:42 | `OWNER_WRITE_CANCEL_PRIMARY_MESH_AUDITOR_KEEPER_SHARES_2026-10-26.md` | `419af1a2c0d3a34c148f60de38af805cd523d910a1635f012372bfbbc8b42f0b` | MATCH |
+| 171 | 2026-10-26 | 18:42 | `OWNER_WRITE_PRIMARY_MESH_LOCAL_NL_EIGEN_AGENT_RULES_4_5_2026-10-26.md` | `3c543b36873d7e0a501dbb44df30cddce76d05db2e07dd821dde1a7a171aeb3a` | MATCH |
+| 172 | 2026-10-26 | 19:02 | `OWNER_WRITE_PHYSICIST_INTERNAL_QUEUES_FIVE_2026-10-26.md` | `5b0c477f3e351b27428b0a7d07fade858ef9cd65a6ef8c6a2c6d6d0e90d964eb` | MATCH |
+| 173 | 2026-10-26 | 19:05 | `OWNER_WRITE_RULE_3_AUTO_APPROVE_2026-10-26.md` | `6b657e975876fd3fbe1e7eb9c51269c2a327c9d38e5f085efdec07e49dcdb918` | MATCH |
+| 174 | 2026-10-26 | 19:11 | `OWNER_WRITE_NL_GAP_IA_UNLOCK_PURSUE_BCD_IA_2026-10-26.md` | `e3bccf440183dd06cc8cb7a2e054ff1b6bcd81cc96fcc1e145e480ae9fe5e4ca` | MATCH |
+| 175 | 2026-10-26 | 19:15 | `OWNER_WRITE_NL_GAP_IA_PROVISIONAL_FREEDOM_PURSUE_2026-10-26.md` | `c3954963745870d59b07aafde0bfdefba56c4e50bbf4b0e81e764d8785f6bb70` | MATCH |
+| 176 | 2026-10-26 | 19:15 | `OWNER_WRITE_NL_GAP_IA_WRITE_AUTHORITY_PROVISIONAL_2026-10-26.md` | `5544907ec1fff3687b35740c0b91725ac7b684db5667453a634f29887ffc6a0b` | MATCH |
+| 177 | 2026-10-26 | 19:17 | `OWNER_WRITE_ACCIDENTAL_STOPSUBAGENT_ALL_NL_RESUME_NINE_2026-10-26.md` | `a51992d4bf4c77df28dd5e3b5ed2d9c772cceea43a2bbe9eff96b09b8c45a5ef` | MATCH |
+| 178 | 2026-10-26 | 19:23 | `OWNER_WRITE_NL_GAP_IA_PATH_B_H_CONV_ACCEPT_2026-10-26.md` | `500d27663fbbea448ed5af58e0d79e64b836cd55baa8ab5bdaf762aa935b0dea` | MATCH |
+| 179 | 2026-10-26 | 19:28 | `OWNER_WRITE_FILTRATION_CONVENTION_BOTH_NAMED_PARALLEL_2026-10-26.md` | `c3288fbfdb3c9c0952eaecb950e0dc67642dba712d550e744c8bcebedc5aa43a` | MATCH |
+| 180 | 2026-10-26 | 21:10 | `OWNER_WRITE_BLANKET_OWNER_PURSUE_WRITE_AUTHORITY_ALL_LANES_2026-10-26.md` | `9b993a72bcdfed3fe2d78c15cbe76d0c8197958ca5ac60111546cd5e7ec6498b` | MATCH |
+| 181 | 2026-10-26 | — | `OWNER_WRITE_AUDITOR_PAUSE_RESPOND_PHYSICIST_IMMEDIATE_2026-10-26.md` | `bd70907c37159ea741e8964d5c2a60eac864a564562638447bbd7271f28de88e` | MATCH |
+| 182 | 2026-10-26 | — | `OWNER_WRITE_AUDITOR_SEQUENCE_REPORT_THEN_SOFTSF_RESUME_2026-10-26.md` | `d4d86fd219bbca5c0d8fe2fbde48bf00ea77e3b939bf51a26f60415157696fc2` | MATCH |
+| 183 | 2026-10-26 | — | `OWNER_WRITE_CANDIDATE_DEFS_BH_MECHANICS_BLOCK_MODULAR_2026-10-26.md` | `48883398d6b7657f4d79e57562acec8a7ebce6a7bba6e8841050b1959fd3503c` | MATCH |
+| 184 | 2026-10-26 | — | `OWNER_WRITE_CANDIDATE_LOCAL_D1_D2_DEF_RECS_2026-10-26.md` | `8e9e5c1d5f7aa145189ea4d6dbce0ead38538e5d949a331a06fd13492f499f25` | MATCH |
+| 185 | 2026-10-26 | — | `OWNER_WRITE_CANDIDATE_LOCAL_PATH4_SHEET_TBD_REFINE_RECS_2026-10-26.md` | `8bed9d12c79bf4c7c2a64c7b7cb38ab1265e3595abfad4ea71f997bec617b52b` | MATCH |
+| 186 | 2026-10-26 | — | `OWNER_WRITE_CANDIDATE_TE_RHOBAR_EXACT_MODEL_THEN_BASIS_2026-10-26.md` | `7828d243d16745d03a67cd84fa83ec2a6eadfcfd5652ddfe2e6ffb66e8844021` | MATCH |
+| 187 | 2026-10-26 | — | `OWNER_WRITE_CANDIDATE_TE_RHOBAR_EXACT_SAGE_V42_BUILD_2026-10-26.md` | `efa39aca209a5d60f70ae0283cae78e097ccde35010a6535e03f60f5806aebdf` | MATCH |
+| 188 | 2026-10-26 | — | `OWNER_WRITE_CANDIDATE_TE_RHOBAR_SAGE_BASIS_N18_2026-10-26.md` | `8a974354432182e9ccc2c7d13b1354a038c2cbba270d2b981ae4da71979c94f5` | MATCH |
+| 189 | 2026-10-26 | — | `OWNER_WRITE_CANDIDATE_TE_SIMPSON_OWNER_ANSWERS_4Q_2026-10-26.md` | `11f104c7361970a2dc02b3f6300071a20d32cad76f0055a616ebded1974ebff2` | MATCH |
+| 190 | 2026-10-26 | — | `OWNER_WRITE_CANDIDATE_TE_SIMPSON_SELECTION_QEXP_2026-10-26.md` | `98f996ae846f051d512f89b0c96f5bea3c173d23f55940f626ae637a09c62784` | MATCH |
+| 191 | 2026-10-26 | — | `OWNER_WRITE_CANDIDATE_ZWEGERS_BH_CONSISTENCY_CHECK_SHEET_2026-10-26.md` | `475a66ff8a6b888346154fe6e7003d4963788381768cab03eb9c80e33a905c64` | MATCH |
+| 192 | 2026-10-26 | — | `OWNER_WRITE_CARD7_TIPFOLDS_WTD_WTC_DEFERRED_2026-10-26.md` | `af15ca4f0504e6496461ea883fd66007528495c1a67b83d14055d743b6444345` | MATCH |
+| 193 | 2026-10-26 | — | `OWNER_WRITE_CARD_EIGEN_Q89_BASIS_NEXT_2026-10-26.md` | `c9642faa0ade875460aee43d30144d566483f4a723f22bf95492a566a92008eb` | MATCH |
+| 194 | 2026-10-26 | — | `OWNER_WRITE_D1_D2_DEFS_LOCKED_2026-10-26.md` | `6fba77178694a42e1556134323f1c67b1f79c83ca0b9ed4b071dedf200e5a4a2` | MATCH |
+| 195 | 2026-10-26 | — | `OWNER_WRITE_DRAFT_MR1_P2_CUSP_PATH_C_2026-10-26.md` | `c16deedf94a66aa072272f73ddb548c2f241ba9a825703e70fb8a667dd7ee15d` | MATCH |
+| 196 | 2026-10-26 | — | `OWNER_WRITE_JOINING_QM_SPLIT_RPPT_RR_MAP_DRAFT_2026-10-26.md` | `75fe9b93b41db12aa46cd29f78a5ab153efd39d7ef66c3ff24cff4c56fddb7a0` | MATCH |
+| 197 | 2026-10-26 | — | `OWNER_WRITE_LOCAL_ASYMPTOTIC_C1_GATE_CARD4_2026-10-26.md` | `6298ad2696f19560be92087e4bccae4770ee3dca79a337d261a00e48c75696c2` | MATCH |
+| 198 | 2026-10-26 | — | `OWNER_WRITE_LOCAL_OWN_TASK_RECS_APPROVED_2026-10-26.md` | `04871dfc9b36906cf163828bb7ec3cf96e2a155c6583da5139e1759165b49ade` | MATCH |
+| 199 | 2026-10-26 | — | `OWNER_WRITE_LOCAL_ZWEGERS_BH_OBS_MATCH_RECS_LOCKED_2026-10-26.md` | `e30eb2cbb7cf4c2444df351362d0df0a4a49fc3ffcb163581a2714f319c9f321` | MATCH |
+| 200 | 2026-10-26 | — | `OWNER_WRITE_MR1_TIPFOLD_WINDOW_REOPEN_CARD6_2026-10-26.md` | `752535edf42f8934415fdd02e71bfe61eb8e8153a222063513bc9176ec5d2f69` | MATCH |
+| 201 | 2026-10-26 | — | `OWNER_WRITE_MR2_CATB2_TEITELBAUM_AUTHORIZE_CARD3_2026-10-26.md` | `a3c8af2f585287673db601167967195e556fa4ce382ae52f73f4fcf8fbcc62e0` | MATCH |
+| 202 | 2026-10-26 | — | `OWNER_WRITE_NEXTSTEP_APPROVE_ALL_LANDED_2026-10-26.md` | `dc1deabc17a7124f5ea8fdb49d82eaf2d78230ee7cef090ed36979cee1ee9f56` | MATCH |
+| 203 | 2026-10-26 | — | `OWNER_WRITE_PHYSICIST_CONTINUE_LANE_AFTER_RESPONSE_2026-10-26.md` | `d5f4640e8836c16939f29b6f6a5c256ed328e437042c49c2807aa12c38a271e1` | MATCH |
+| 204 | 2026-10-26 | — | `OWNER_WRITE_RESUME_NINE_COOK_CURRENT_STRUCTURE_2026-10-26.md` | `fe0d3543028b801643d342466853d85bdce2f1bb47295e936a5c2bd7a3373d1b` | MATCH |
+| 205 | 2026-10-26 | — | `OWNER_WRITE_TE_RHOBAR_CUSP6_Q18_BASIS_CARD1C_2026-10-26.md` | `d3e36edd15e7aea42e25a69f999f2f449b144489537efe4a380a80e117d62e19` | MATCH |
+| 206 | 2026-10-26 | — | `OWNER_WRITE_TE_RHOBAR_LINALG_IND_CARD1B_2026-10-26.md` | `43e94be25c8137112b1722a20616533f4a9d9c69ef95a88691965dcd202586a6` | MATCH |
+| 207 | 2026-10-26 | — | `OWNER_WRITE_TE_RHOBAR_LOCAL_FACTOR_CARD1D_2026-10-26.md` | `ab8a4937eb4087a8c63b1c9addeb5e9a5c085c3428f963bcb10d3fe468e4595a` | MATCH |
+| 208 | 2026-10-26 | — | `OWNER_WRITE_TE_RHOBAR_METHOD_CLOSURES_ACCEPT_CARD2_2026-10-26.md` | `f56b7d9b4fddf1cea67ef399795eff8351e0212c6e754fd825f131fc01e53d57` | MATCH |
+| 209 | 2026-10-26 | — | `OWNER_WRITE_TE_RHOBAR_TARGET_SPACE_592_SEED_CARD1A_2026-10-26.md` | `dede8346d5639ebc9b2667af36728d894c12c7cefc4b2bfac1db6bc866de8c2a` | MATCH |
+| 210 | 2026-10-26 | — | `OWNER_WRITE_VANISH_HOLD_ALL_CARD5_2026-10-26.md` | `b85c64910ce588ebd14ca1171f9d6f2f4debf792d67d601dcfb78169812251ba` | MATCH |
+| 211 | 2026-10-26 | — | `OWNER_WRITE_ZWEGERS_BH_CONSISTENCY_CHECK_SHEET_LOCKED_2026-10-26.md` | `28bf58fb406fb2f3e3ebe8c9727f20d0eb6b5c4d4f046c891de44cfba366c9b3` | MATCH |
+| 212 | 2026-10-27 | 11:17 | `OWNER_WRITE_STANDING_RULE_NO_IDLE_IF_QUEUE_OPEN_2026-10-27.md` | `a0ba14167bb8d2e2608fa83a8315b722980dd1cbb6b2640c9e7329e102e1065f` | MATCH |
+| 213 | 2026-10-27 | 11:32 | `OWNER_WRITE_CONDITIONAL_CAT_A_LIFT_NONTIP_PROVE_NAMED_GAP_2026-10-27.md` | `42bf6b7bb18995f34e92982c50ece345df82492e993f4864449e69d0d8efb6e6` | MATCH |
+| 214 | 2026-10-27 | 12:01 | `OWNER_WRITE_INVENT_BAN_LIFTED_ALL_LANES_PURSUE_FREEDOM_RIGHT_AUTHORITY_2026-10-27.md` | `37b8298b15f469044a1257aa4974ada4a4b6bc7c2d45b10c98483c39e446c41f` | MATCH |
+| 215 | 2026-10-27 | 12:09 | `OWNER_WRITE_AMEND_INVENT_LABEL_PENDING_MATH_PROOF_2026-10-27.md` | `c9dd3a0a79a0698ff9d454efeea903d20f3c5b41b085c3fbcdcedc39eb22d64e` | NONE |
+| 216 | 2026-10-27 | 12:09 | `OWNER_WRITE_NL_ABSENT_LIST_FULL_AUTHORITY_WRITE_2026-10-27.md` | `93182a3d3e1d8d1454401764ba48141c84d3782a80d26e2912ac5a53f5754310` | MATCH |
+| 217 | 2026-10-27 | 12:17 | `OWNER_WRITE_AMEND_INVENT_THEN_PROVE_DUTY_2026-10-27.md` | `65483b09bb5b7f4c92ab2083a20b75e6a3181c82f510894735978fda9ed7e8dc` | MATCH |
+| 218 | 2026-10-27 | 12:18 | `OWNER_WRITE_AMEND_INVENT_THEN_PROVE_WHERE_FEASIBLE_2026-10-27.md` | `4a6dca0515f311e4de4e34ca3bcc3db02a59cb17af7ca3b2902eae9e2ff57e1d` | MATCH |
+| 219 | 2026-10-27 | 12:20 | `OWNER_WRITE_AMEND_INVENT_HARD_GATE_PROOF_PURSUIT_2026-10-27.md` | `878631bd94f20d8c74656782ebc3bbdaf466ba20c4eac6a497199b51b7a91d0a` | MATCH |
+| 220 | 2026-10-27 | 12:22 | `OWNER_WRITE_TOKEN_USAGE_HARD_STOP_90PCT_2026-10-27.md` | `86ad87631cb5bebc073e01e727d01352ba388df79eb20d401a048f122f2a903b` | MATCH |
+| 221 | 2026-10-27 | 12:24 | `OWNER_WRITE_AMEND_INVENT_NOT_FEASIBLE_RETRY_24H_2026-10-27.md` | `8ff0766655a79eedab38edd246a53e8e48ca12a619c82c57fad7eaf560c3a858` | MATCH |
+| 222 | 2026-10-27 | 12:24 | `OWNER_WRITE_INVENT_NOT_FEASIBLE_RETRY_24H_2026-10-27.md` | `291b54ea8bf86830071f7f91781cb5a6a408a9e49e771d7ddaf3db7b8c8238d5` | MATCH |
+| 223 | 2026-10-27 | 12:36 | `OWNER_WRITE_MR1_HOLD_PROOF_PURSUE_RELEASED_VOICE_CONFIRM_2026-10-27.md` | `6e5d382b3eb2fb02fb2fb8ee3d33d7fbf8164b982900c3d9223fb0270946c020` | MATCH |
+| 224 | 2026-10-27 | 12:37 | `OWNER_WRITE_TOKEN_USAGE_HARD_STOP_REMOVED_VISIBILITY_ONLY_2026-10-27.md` | `d622e0a87112f1b50655f7c9495e1fe0e1b150dc1e6b02356d678322af14f29d` | MATCH |
+| 225 | 2026-10-27 | 12:39 | `OWNER_WRITE_STANDING_RULE_15MIN_STATUS_REPORT_ALL_NINE_2026-10-27.md` | `44646e1dd73369f0773c82d78611ca976b41fb9e3d2a18cf74876fdd0ac2b621` | MATCH |
+| 226 | 2026-10-27 | 12:42 | `OWNER_WRITE_AMEND_15MIN_STATUS_AUDITOR_EXEMPT_2026-10-27.md` | `b1c22e79425833bf31368ec2663c0722357a2d672255878d3088a3a0b31e1545` | MATCH |
+| 227 | 2026-10-27 | 12:42 | `OWNER_WRITE_STANDING_RULE_DAILY_NOON_STATUS_REPORT_2026-10-27.md` | `b105e0aa603182a611c7f3acc3d2dfa4adfcba826f83baacdbf5966c821bb19a` | MATCH |
+| 228 | 2026-10-27 | 15:01 | `OWNER_WRITE_NL_PURSUE_ALL_FIVE_SELF_PROVE_2026-10-27.md` | `6b6342bae6894dddd7ecdbae4edd560ad79e7af1bbacb428488994efa0a46220` | MATCH |
+| 229 | 2026-10-27 | 15:02 | `OWNER_WRITE_NL_RIDE_AUTHORITY_FIVE_PURSUE_2026-10-27.md` | `66ea05db06adc5159eaa15d02d6b051a070c8dca7b8cebe07c6d8daec75a5b54` | MATCH |
+| 230 | 2026-10-27 | 15:13 | `OWNER_WRITE_RESUME_ON_REVISED_RULE_ACK_PP_STAYS_PAUSED_2026-10-27.md` | `a26b11d412a092e37d2a8a0d901d728d8d3daf48e6242753a0656226713039c2` | MATCH |
+| 231 | 2026-10-27 | 15:50 | `OWNER_WRITE_FULL_STOP_ALL_LANES_USAGE_OWNER_PHYSICIST_ONLY_2026-10-27.md` | `95d7c3c878773ce299a6435c74a1ed038f3ca6a2d89b159d3215e54a99ef8cf7` | MATCH |
+| 232 | 2026-10-27 | 16:40 | `OWNER_WRITE_PHYSICIST_ONLY_AUDIT_UNTIL_AUTOMORPHOUS_2026-10-27.md` | `16dde263ad026e3fc7b39716e38c21f48f8092a5f032b7e8a94df82552160a43` | MATCH |
+| 233 | 2026-10-27 | 16:41 | `OWNER_WRITE_AUDIT_DRAFT_ONLY_NO_COMPUTE_REPORT_NOT_PAPER_2026-10-27.md` | `dab0ea3410fba3c6e85a7b36adb61e44c9906dd9123afa5fe18c5091a74f6fad` | MATCH |
+| 234 | 2026-10-28 | 01:02 | `OWNER_WRITE_LOCAL_ASYMPTOTICS_APPROVED_WRITE_PURSUE_2026-10-28.md` | `6081e5ac817cfb4e67c4562f59b3d1f32e718606183def768a828582450c1b00` | MATCH |
+| 235 | 2026-10-28 | 01:44 | `OWNER_WRITE_AUDITOR_WAKE_KEEPER_SOFTSF_UNPAID_CONFIRMED_PHYSICIST_CHAT_2026-10-28.md` | `46daefca337f3d235adb40a9b2312f237268ee2f337041c6696108938c3c9248` | MATCH |
+| 236 | 2026-10-28 | 01:46 | `OWNER_WRITE_AUDITOR_RESUME_SOFTSF_CONFIRM_WRITEONLY_LOCAL_PP_QUEUE_2026-10-28.md` | `5710c5d3bff3d80f63cdfa06e690f655f146a48470dfbda847d8918b46e630d9` | MATCH |
+| 237 | 2026-11-03 | 12:39 | `OWNER_WRITE_CAVEAT3_LMFDB_DISCHARGE_FINDINGS_378ca325_2026-11-03.md` | `3bbf715f5d021fe30d0dc664b49f5cbb9961843176b6732ad202830054d0c90b` | MATCH |
+| 238 | 2026-11-03 | 12:51 | `OWNER_WRITE_CAVEAT2_NARROW_ALL_FOUR_CLPLUS_V35_2026-11-03.md` | `e4ef0a810d1be98f9995c3120cc60954b6120632419a6f443cf451cef2c09f3e` | MATCH |
+| 239 | 2026-11-03 | 13:17 | `OWNER_WRITE_AUDITOR_FULLCORPUS_SOFTSF_INVENTORY_18CLASS_2026-11-03.md` | `5b6af540f9bf17d48a3f5c15d36086867f3017d35520bd0bd1a49b5b0315dd0b` | MATCH |
+| 240 | 2026-11-03 | 13:18 | `OWNER_WRITE_FULL_STOP_EXCEPT_PP_AUDITOR_2026-11-03.md` | `61edc308743b4a16bb2692cc3d005ebebae9389b888ade972f14e8818330d20e` | MATCH |
+| 241 | 2026-11-03 | 13:19 | `OWNER_WRITE_FULL_STOP_PP_AUDITOR_RECORD_ONLY_2026-11-03.md` | `63f0e6d18e46aebe8c946baf232f09eeedc830a4462047a6b58d120df2ae42ae` | MATCH |
+| 242 | 2026-11-03 | 13:20 | `OWNER_WRITE_AUDITOR_FULL_REPORT_AFTER_PP_QUESTIONS_2026-11-03.md` | `a86b6f79d4d11de1755be67e0420a65576479507cd0fb799fa2bede7cb1451b6` | MATCH |
+| 243 | 2026-11-03 | 13:21 | `OWNER_WRITE_AUDITOR_REPORT_PLAIN_LAYMAN_EXEC_SUMMARY_2026-11-03.md` | `ce0aa2217fb32f2b59584c5a942b0e9f37bdbc62e5d215dc3b695bb65599ecd6` | MATCH |
+| 244 | 2026-11-05 | 14:11 | `OWNER_WRITE_CALL_53991ebf_45_COUNT_CLARIFICATION_2026-11-05.md` | `e918811ef7a35197162332822b52ccee5fafb614e52c3cda22f0dc0da16cb0bb` | NONE |
+| 245 | 2026-11-09 | 13:00 | `OWNER_WRITE_CALL_e9c1dbda_WRITE_DERIVE_AUTHORIZATION_2026-11-09_1300.md` | `33d25a790fb1e0da5d93dc5cfb911963fa9a9a83c6dab6dfc8326c34096d7e15` | MATCH |
+
+Sidecar summary for #165–245: 79 MATCH, 2 NONE (#215 AMEND_INVENT_LABEL_PENDING_MATH_PROOF; #244 45_COUNT_CLARIFICATION), 0 MISMATCH.
+
+## 2. Locks / verdicts set or changed
+- #179 / #180. Filtration convention: BOTH NAMED PARALLEL (Γ₀(7) w = 10 ∥ Katz w = 40). Blanket pursue/write authority across all lanes.
+- #183 / #184 / #194. "Defined BH mechanics" (D1) and "block modular mathematics" (D2) are LOCKED for the Zwegers package only (#194:15–19). NOTE: this "D1" is a homonym. It is NOT the Layer2 operator D₁ (OWNER_WRITE_LOCK_D1_Seff_Layer2_T3_2026-11-03, sha 96f8d42e…, covered in batch 07).
+- #186–#190 / #205–#209. TE ρ̄ cards. The target S₄(Γ₀(49),ρ̄) with 592 = 503 ⊕ 89 is LOCKED (Card 1A, #209:26–30). Simpson N = 18 selection is LOCKED but labelled SCALAR REFERENCE ONLY (#190:13, #189:32).
+- #195. DRAFT P2 cusp path C: 8-cusp table with supp(Q) options (Owner justification blank).
+- #198. Local own-task recs LOCKED (P5a at κ = 4 left "open-to-prove" unless the Owner picks FAIL-fold or rewrite). #210: vanish HOLD all (Card 5).
+- #201. Cat B-2 Teitelbaum is authorized, with the caveat that Γ₀(49) is not squarefree (no full-applicability claim).
+- #212–#233 (10-27). Standing rules (no idle, 15-min/daily status; Auditor exempt per #226). #213: conditional Cat A lift (non-tip prove-or-named-gap only). #214 is the invent ban lifted, with an AMEND chain #215 → #217 → #218 → #219 → #221 edited in place. #220/#224: token hard-stop added, then removed. #231–#233: FULL STOP, Physicist-only, audit draft-only.
+- #234 (10-28). Local asymptotics APPROVED (ĝ_s growth class; β_s, A_s, α still ABSENT).
+- #237 / #238 (11-03). V₃₅ caveat 3 DISCHARGED (LMFDB split 2+2+2+8), and caveat 2 CLOSED (all four Cl⁺ components). Parent lock: /workspace/reports/539labs/ow/OW_PP_picks_Lambda0_V35_Owner_LOCK_2026-11-03.md, sha c290a274e7b31dc781cd2506a1fbd29a84a0af1f8b8a19adf1872a68432b36e3, no sidecar. This parent lies outside the batch-09 tree.
+- #239–#243. Kerr UNLOCKED · Layer2 ABSENT · no CERT, restated in each. FULL STOP except PP and Auditor (record-only).
+- #244 (11-05). Count clarification (see §5).
+- #245 (11-09 13:00). Write/derive authorization. Auditor keeps its audit-only lane. Labels must stay distinct, and derived definitions are CONDITIONAL until adopted (:14).
+
+## 3. Math claims
+| file:line | claim | label | recompute |
+|---|---|---|---|
+| #179:8 | w(θ³f) ∈ {28,22,16,10,4} | PROVED (arith.: 4 + 3(p+1) − 6j, p = 7) | — |
+| #189:18–21, #190:15–18 | Simpson schedule N = 18: 9 / 8 / 2 slots = 19 | PROVED | — |
+| #190:12 | kμ/12 = 18.67 ⇒ n ≤ 18 (scalar) | PROVED; ρ̄ analogue OPEN (stated by the file) | — |
+| #190:24 | dim M₄(Γ₀(49)) = 18 = 10 cusp + 8 Eis | PROVED | (k−1)(g−1) + (k/2−1)c + ν₂⌊k/4⌋ + ν₃⌊k/3⌋ = 0+8+0+2 = 10; Eis = c = 8 |
+| #190:24 | θ of x²+xy+2y²: wt 1, level 7, χ₋₇ | PROVED (disc 1−8 = −7) | — |
+| #190:25 | rank-11 spanning subspace, 7 dims OPEN | CONDITIONAL (computed in python; not rerun) | — |
+| #195:15–21 | 8 cusps, widths 49/1/1×6 | PROVED | as batch 11 #48 |
+| #196:11 | fibre 3·68 + 5·67 = 539 | PROVED | 204 + 335 |
+| #205:12 | Ind dim 2352 = 42×56 | PROVED | — |
+| #208:16 | W = 72, Eis = 36, cusp = 6, V₄₂ = 42 | CONDITIONAL (Sage .sobj) | 36+6 = 42 PROVED |
+| #209:26–30 | 592 = 503 ⊕ 89 | dims CONDITIONAL; sum PROVED | — |
+| c290a274:14 (parent of #237) | Res ζ_K = 2hR/√140 = L(1,χ₁₄₀) ≈ 0.837679, K = ℚ(√35) | PROVED | h = 2, R = ln(6+√35) = 2.477889; 4R/√140 = 0.8376793 |
+| c290a274:20, #238:16 | h⁺ = 4, Cl⁺ ≅ C₂×C₂; 𝔭₂, 𝔭₅ ramified; 19 split | PROVED (N(ε) = +1 ⇒ h⁺ = 2h; genus theory, 3 prime divisors of 140; (35/19) = +1); component listing CONDITIONAL | — |
+| c290a274:17 | V₃₅ newspace dim 14, split 2+2+2+8 | CONDITIONAL (LMFDB; Physicist re-fetch MATCH 74453e8c… cited, not refetched) | 2+2+2+8 = 14 PROVED |
+
+## 4. Conflicts
+- C13-1. AMEND chain on #214. #215 records post-hash 5cbc33ac…, but the live #214 hashes to 37b8298b… with a MATCH sidecar. The later AMENDs (#217–#221) record intermediate hashes (d087ff9d…, 922c5230…, 5dd8d59c…, …), and 37b8298b is cited by later 10-27 FINDINGS. Classification: AMENDED-IN-PLACE (documented, multi-step). The terminal step to 37b8298b was not reconstructed (UNDETERMINED for that last link). #215 has no sidecar.
+- C13-2. The "D1" homonym (#194 vs. the Layer2 D₁). Relays must disambiguate.
+- C13-3. 539labs/ow ATTACH_Layer2_T3_specs_LOCKED_t3511u (sha a71f388e…) self-describes Layer2 as "LOCKED (Owner Write)" with [s_αδ] ∈ H²(F) "on X_×". The Soft SF records on disk contradict this: OW_revised_Layer2_T3_specs_flag2 8bff661b… says "Neither locked yet; Layer2 ABSENT", and OW_Layer2_md_status_SoftSF_REFUSE 55911193… finds generated/Layer2.md absent (re-verified absent today). Batch 07 refutes the X_× reading. The attachment is NOT an Owner Write and does not close Layer2.
+- No contradiction with batches 01–10.
+
+## 5. B10-3: RESOLVED (verbatim source)
+OWNER_WRITE_CALL_53991ebf_45_COUNT_CLARIFICATION_2026-11-05.md, sha e918811ef7a35197162332822b52ccee5fafb614e52c3cda22f0dc0da16cb0bb, no sidecar. Owner words (verbatim excerpt): "Apply the recommended clarification about the 45-candidate count rule … the 45 count counts each item's first-listed tag, while counting every tag gives 46 before the update and 47 afterward … without changing any locked definitions or theorem statements …". It is cited by FINDINGS_PP_SOFTSF_CLOSE_N1_45_COUNT_OW_e918811e and by Keeper …N1_CLOSE_49995b0d_e918811e. The GR-paper amendment classified in batch 10 is thereby Owner-sourced for the count part. No dedicated Owner Write exists for the line-36 floor fix; it rests on the G15 chain 345222c4 (PP 5fbd6068, Keeper 95d57624), so that part of B10-3 is downgraded to B13-1.
+
+## 6. Bridge items
+- Λ₀. Owner LOCK c290a274 (2026-11-03) sets Λ₀ = NONE for Local F1–F3 and rejects √10-form, 1.81, and 0.7858 as the normalization there. → CLOSABLE for F1–F3 scope only (as "NONE"). Λ₀ outside F1–F3 remains OPEN.
+- κ = 1.595361. No Owner Write defines it. Observation (arithmetic only, PROVED): √(2/0.7858) = 1.5953611, and √(2/0.783577) = 1.5976222, where 0.783577 = ln(6+√35)/√10 per Soft SF REFUSE 4e5a39af. So the 6-decimal κ is numerically tied to the Λ₀ value the LOCK rejects for F1–F3. Any derivation of κ through Λ₀ = 0.7858 is unsupported by an Owner Write. Status: OPEN, not refuted.
+- Layer2 transfer: ABSENT (restated through 11-03). Junction: no Owner Write (hits only in REFUSED attachments). R_c: none. S²-11DM²ET-X objects: none defined in Owner Writes.

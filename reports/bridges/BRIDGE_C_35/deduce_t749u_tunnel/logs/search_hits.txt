@@ -1,0 +1,22 @@
+# search_hits t749u — rg -i over /workspace/quantum-comp excl. reports/bridges/BRIDGE_C_35/deduce_t749u_tunnel; raw 6750 lines (broad pattern incl. 'barrier','transmission','2κ'); curated below
+SHA 693139049aae149d50bba20d7ea83aac122a543702d972f90e3d70415429925c  notes/quantum-tunneling.md
+SHA e8e6fd52e1da19e30c616558bfb947aa14fee979ef6b659dc6806c2fbb8d22af  theorems/discrete-core-s3.txt
+SHA 62c0161de1b49be56e189872a5297dd1c9662fcf316bfaa8f56ff37aa1ef4e34  reports/heavy-daily/2026-10-19-Bridge-C-Consolidated-rev9.2/bridge_c_consolidated_rev9_2_fulltext.txt
+SHA ba381f9054dab675310a23e3f9f57fee13608b86f303d2b303d1fcff84176164  reports/self-audit/repo/docs/S2-11DM2ET-X-Axiomatic-Book/psiEis_Lvalues_2026-10-17/cusp_rows_L.py
+SHA d3938e1c034b961d3577d3253bb3d836f189db7542fea0923fe2d4a2e313e049  reports/bridges/BRIDGE_C_35/order17/PREREG.md
+SHA 251f30583d3f4a57f4bbf9b0aa6eb7dd7e3a3b225180151a4ed5fd4064b70e28  reports/bridges/BRIDGE_C_35/order7/PREREG.md
+SHA 375ce7bcb01d311638cac1b558f3750fe403229f0dfcf3526c231af544bf7cbd  reports/s_family_paths/A22_grok_export_search/chats/15540fac-86a5-49c5-947d-0146c79b940b.txt
+SHA 3d016e955abe40423ceb2a8925940ec3af3bafed18d3fe8200635e00fdf2e4e0  reports/s_family_paths/A22_grok_export_search/chats/70e4fcee-dd8e-4b2d-8a4b-722b2f88cf87.txt
+SHA a1cc3cfb55eeed67db9c09023b98cd7a3c61e7b9484ab41bd3bca847d7c30f6e  theorems/theorems-41-61.txt
+SHA dcef9accc520fdd47767747bdfe66ec73e9cb03a652e24cfc87e4166dedbb6d8  theorems/batch-late/three-body-problem-s2-11dm2et-x.txt
+SHA 2fe34c2513cf883464e820030da4d0e73ecc0b1e734303909accc747bd540e0d  reports/bridges/NONLOCAL_QM_EH11D/prereg/T749U_NL_TUNNEL_CROSSING_EXTRACT_20261025/PREREG.md
+H1 notes/quantum-tunneling.md:8 T≈e^{-2κL} — (d) self-referential t749u AUTHOR-CANDIDATE note; not Written force
+H2 Bridge C consolidated rev8/9/9.2 (+clones) 'Ψ(x)=κL(−1/x)−…', 'κL(x)−|cx+d|κL(γx)' — (b) NOTATIONAL: κ_L = left L-value cusp kernel (cusp_rows_L.py def kappaL(i,h)), not κ·L; no width, no exponential transmission
+H3 BRIDGE_C_35 order17 PREREG:14-15 '2κ_c', 'jump −2κ' — (b) Gaussian-sum jump constant; not width-exponential
+H4 BRIDGE_C_35 order7 PREREG:11 'G=exp(−π(ℓ1²+ℓ2²))', Vignéras defect −(2κ0/π)G — (b) Gaussian defect in √y; not barrier/κL transmission toward nonlocal
+H5 theorems/discrete-core-s3.txt:55,135,223 'tunnels into 11 nested shells', 'E_leak barriers' — (c)/(d) physics/EH11D-side narrative; no e^{-2κL}; not local modular
+H6 theorems-41-61 fission barrier; three-body wormhole tunnel — (b)/(c) physics; out of scope
+H7 grok-chats A22 15540fac:3388 k_tun∝e^{-2κd}; 70e4fcee:476 P_res=1−e^{-2πκL/l_osc} — (b) general QM/axion analogy in chats; not local-modular object
+H8 NONLOCAL_QM_EH11D T749U PREREG — (c) Non Local Path parallel hunt; noted only, not used
+H9 AUDITOR t748u CONFIRM:27 tunneling FYI not folded — (b) meta
+Double-barrier ⇒ T²: 0 hits in Written/Bridge C

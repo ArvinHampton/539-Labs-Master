@@ -1,0 +1,139 @@
+{
+  "title": "GEMINI_EXPANDED_REQUEST_2026-11-05_1554 submission attachment manifest",
+  "created_at_america_chicago": "2026-11-05 15:58:26 CST",
+  "usage_checkpoint_pct": 75.5,
+  "primary_payload": {
+    "path": "/workspace/quantum-comp/reports/GEMINI_EXPANDED_REQUEST_2026-11-05_1554.txt",
+    "sha256": "03d8a851d0408ddb780213ab38c5e45ce21e239143abdd18448ec35fc2ca588a",
+    "bytes": 45473,
+    "role": "expanded_request_full_text"
+  },
+  "short_browser_prompt": {
+    "path": "/workspace/quantum-comp/reports/GEMINI_EXPANDED_REQUEST_2026-11-05_1554_SHORT_BROWSER_PROMPT.txt",
+    "sha256": "5f0772915ec85da01f4bb0ea6a2f6d79e7a7ade52da32bf704315e136d949594",
+    "bytes": 999
+  },
+  "verbatim_sources": [
+    {
+      "id": "B1",
+      "title": "Local Path",
+      "path": "/workspace/pqc-gemini-request-intake-20261105-1513/local.md",
+      "sha256": "d1488dffda8c8cd9bb9dc705382717d079db4f0188b3d5939d60c3facfea6f5a",
+      "bytes": 2962,
+      "role": "verbatim_intake"
+    },
+    {
+      "id": "B2",
+      "title": "Non Local Path",
+      "path": "/workspace/pqc-gemini-request-intake-20261105-1513/nonlocal.md",
+      "sha256": "4e6f5408598fc8078b49f24ee18c3ab29b09173f747808d8f928710dc704fa19",
+      "bytes": 2674,
+      "role": "verbatim_intake"
+    },
+    {
+      "id": "B3",
+      "title": "Auditor",
+      "path": "/workspace/pqc-gemini-request-intake-20261105-1513/auditor.md",
+      "sha256": "bc10f9cc9579dcfee797bf0832884b2942b18e215ceee51a140e469e2f269728",
+      "bytes": 2405,
+      "role": "verbatim_intake"
+    },
+    {
+      "id": "B4",
+      "title": "Professor Proof",
+      "path": "/workspace/pqc-gemini-request-intake-20261105-1513/professor-proof.md",
+      "sha256": "4498c0cccdee31c5eb3a9985cd5cd42c27a0945a411b460e9b25e58e330523bb",
+      "bytes": 2553,
+      "role": "verbatim_intake"
+    },
+    {
+      "id": "B5",
+      "title": "539 Labs Ops",
+      "path": "/workspace/pqc-gemini-request-intake-20261105-1513/labs539.md",
+      "sha256": "e1f37867ad816bf4365e33fb61148c2bf7ce2fa7216907f9fadd4ff42d5256d0",
+      "bytes": 2660,
+      "role": "verbatim_intake"
+    },
+    {
+      "id": "B6",
+      "title": "Math Research 1",
+      "path": "/workspace/pqc-gemini-request-intake-20261105-1513/math1.md",
+      "sha256": "ccbb3f47bd0116d975907d48dfc7bec8b223853ce663d0a770204668722c8b64",
+      "bytes": 2818,
+      "role": "verbatim_intake"
+    },
+    {
+      "id": "B7",
+      "title": "Math Research 2",
+      "path": "/workspace/pqc-gemini-request-intake-20261105-1513/math2.md",
+      "sha256": "4a89f647f05bf906442e4c239d9646a1d9b57b39a49c6e7d4a1f99de04a135bf",
+      "bytes": 2792,
+      "role": "verbatim_intake"
+    },
+    {
+      "id": "B8",
+      "title": "Physics Research 1",
+      "path": "/workspace/pqc-gemini-request-intake-20261105-1513/physics1.md",
+      "sha256": "a4d6d42ff3fba925e36876cf8c25336382b8a6fca371a89b55718df8584743ce",
+      "bytes": 2862,
+      "role": "verbatim_intake"
+    },
+    {
+      "id": "B9",
+      "title": "Physics Research 2",
+      "path": "/workspace/pqc-gemini-request-intake-20261105-1513/physics2.md",
+      "sha256": "908aaa0d4405c3f65e4ec0adebf5b6f18536bd165454156215f6f7154317c2e6",
+      "bytes": 2766,
+      "role": "verbatim_intake"
+    },
+    {
+      "id": "B10",
+      "title": "Eigenvalues and matrix",
+      "path": "/workspace/pqc-gemini-request-intake-20261105-1513/eigen.md",
+      "sha256": "bde19232007b366af78035861c93123ec23215ad3994f9ce97b246d5b59e5790",
+      "bytes": 2176,
+      "role": "verbatim_intake"
+    },
+    {
+      "id": "B11",
+      "title": "Dataset Filtration",
+      "path": "/workspace/pqc-gemini-request-intake-20261105-1513/dataset.md",
+      "sha256": "7a331bfebc3448f4be0c5190df544a7d6e293c0c9d51b71ce47714cfa5a27d80",
+      "bytes": 2398,
+      "role": "verbatim_intake"
+    },
+    {
+      "id": "B12",
+      "title": "Agent",
+      "path": "/workspace/pqc-gemini-request-intake-20261105-1513/agent.md",
+      "sha256": "7bcfb60f24fb56c85d060181ebf1e8db56c09331a38f16d72fa9ac4933d2c7be",
+      "bytes": 2871,
+      "role": "verbatim_intake"
+    },
+    {
+      "id": "B5-ADDITIVE",
+      "title": "539 Labs Ops T3 additive correction",
+      "path": "/workspace/pqc-gemini-request-intake-20261105-1513/labs539_ADDITIVE_CORRECTION_T3REF.md",
+      "sha256": "c8e064c768e76e1766af66ea07f4da1fedaf6d2e1d95b6491a9db0c3c3e2fe45",
+      "bytes": 782,
+      "role": "additive_correction_verbatim"
+    }
+  ],
+  "old_15pp_packet": {
+    "path": "/workspace/quantum-comp/reports/GEMINI_REQUEST_PACKET_ALL_TWELVE_DRAFT_2026-11-05.txt",
+    "note": "Prior draft; halt preamble SUPERSEDED by this 15:54 cover. Intakes reused from intake .md sources, not re-edited.",
+    "excluded_from_this_send_as_primary": true
+  },
+  "excluded": [
+    "77pp GEMINI_COMPENDIUM_AGENT_QUESTIONS PDF re-render",
+    "external web queries by compiler",
+    "independent proof compute",
+    "SendToAgent / browser Gemini by this executor"
+  ],
+  "authorization_record": "/workspace/quantum-comp/reports/OWNER_DIRECTIVE_RESUME_AND_ONE_GEMINI_SUBMISSION_2026-11-05_1554.md",
+  "parent_actions_expected": [
+    "SEND 12 formal review requests to PQC agents (not done by this executor)",
+    "ONE Gemini send of this expanded request and return reply"
+  ],
+  "reviews_collected_claim": false
+}

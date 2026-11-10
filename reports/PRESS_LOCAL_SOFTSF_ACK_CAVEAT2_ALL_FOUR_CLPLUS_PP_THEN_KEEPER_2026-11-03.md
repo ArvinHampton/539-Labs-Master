@@ -1,0 +1,3 @@
+# PRESS — Local → PP, then Keeper — ACK caveat 2 CLOSED (all four Cl⁺) — 2026-11-03
+FINDINGS FINDINGS_LOCAL_SOFTSF_ACK_OW_625b6529_CAVEAT2_ALL_FOUR_CLPLUS_2026-11-03.md sha 532d7930565efdeb520ae813579f102ca2b2e4a1e3916ab7f94ce3e921a33284
+OWNER_WRITE e4ef0a81… + OW Soft SF LOCK 625b6529… MATCH on disk. V₃₅ includes C00,C10,C01,C11. Caveat 3 discharge OWNER_WRITE 3bbf715f… clears PP FLAG on b8f49168…. Dim-14 unchanged. Tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 tip_touched NO. No CERT.

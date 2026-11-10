@@ -1,0 +1,2 @@
+[RA-5g] exact: F = v^(k/2) g(u+iv), g holomorphic (G0, G1, G2 = g, g', g''): Delta_k F - (k/2)(1-k/2) F = 0;  L_k F = 0
+[RA-5g] control, anti-holomorphic g(u-iv): Delta_k F - (k/2)(1-k/2) F = 2*I*G1*k*v**(k/2 + 1);  L_k F = 2*I*G1*v**(k/2 + 1)  (nonzero expected)

@@ -1,0 +1,5 @@
+# SOFTSF PRESS — To Auditor (Write-only Soft SF CONFIRM)
+Time: 2026-10-28 ~01:43 CDT
+Subject: bridges/PROFESSOR_PROOF/PP-FINDINGS-AUDIT_LOCAL_SOFTSF_BETA_PRESS_TYPO_FLAG_ABSORB_S7811_2026-10-28.md
+sha256: 414cfe88ec0ab4696960cbe5c637c7ea304e623b85cfd064c2a3f9739300056d
+Content: PP Soft SF audit CONFIRMS Local β PRESS typo erratum absorb (s=7 β=0.484758). tip Soft SF LOCK 7cddb188… tip_touched NO. Kerr BLOCKED. No RECS. No CERT.

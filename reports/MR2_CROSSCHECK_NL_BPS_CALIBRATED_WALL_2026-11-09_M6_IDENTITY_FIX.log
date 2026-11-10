@@ -1,0 +1,10 @@
+  [M6] trial 0: max entry |sum_int Gamma^a(Gamma_a Gslash - 12 Gamma^cde G_acde) + 6 Gslash| = 0 ; Gslash nonzero: True
+  [M6] trial 1: max entry |sum_int Gamma^a(Gamma_a Gslash - 12 Gamma^cde G_acde) + 6 Gslash| = 0 ; Gslash nonzero: True
+  [M6] trial 2: max entry |sum_int Gamma^a(Gamma_a Gslash - 12 Gamma^cde G_acde) + 6 Gslash| = 0 ; Gslash nonzero: True
+  [M6] trial 3: max entry |sum_int Gamma^a(Gamma_a Gslash - 12 Gamma^cde G_acde) + 6 Gslash| = 0 ; Gslash nonzero: True
+Traceback (most recent call last):
+  File "/workspace/quantum-comp/reports/MR2_CROSSCHECK_NL_BPS_CALIBRATED_WALL_2026-11-09_M6_IDENTITY_FIX.py", line 40, in <module>
+    P("  [M6] x-row: G has no x-legs => Gthree(G, a in x) = 0:", all(Gthree({c: 1 for c in subs4}, a).is_zero_matrix for a in range(4)))
+    ~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: P() takes 1 positional argument but 2 were given
+EXIT 1

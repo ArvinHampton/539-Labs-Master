@@ -1,0 +1,4 @@
+# OWNER WRITE — main chat t4339u, 2026-11-09 16:46 CST
+Owner's words: "Move for derivations" (reply to the widget t4338s18019 asking whether NL should set up the junction now or wait for the vacuum hold to lift).
+Read as: GO for NL to derive the junction setup now for MN N=2, MN N=1 and BBBW, using brane := wrapped M5 stack and face := 10D matching hypersurface (OW f283cffd). The face is a constant-radius slice of each flow, from the AdS7×S4 throat to the AdS5 region. Derive the induced metric, the extrinsic curvature and the Israel condition with the M5-stack tension. b stays free and OPEN. No vacuum adopted; the HOLD (aaadb280) stands. Cap about 35 min. Grade results PROVED / CONDITIONAL / OPEN / REFUTED. PP audits afterwards.
+Neutral items per 5f59e33e are unchanged. Tip 7cddb188 untouched. No CERT. No Gemini.

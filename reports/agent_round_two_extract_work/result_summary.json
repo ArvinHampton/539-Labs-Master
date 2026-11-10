@@ -1,0 +1,19 @@
+{
+  "FINDINGS": {
+    "path": "/workspace/quantum-comp/reports/FINDINGS_AGENT_SOFTSF_EXTRACT_ROUND_TWO_OWNER_DOCUMENTS_A_B_2026-11-05.md",
+    "sha256": "26cf4794ada4d8db75b18d9f6ca6a63cb95a0e65e1617ff214d1320c9751f92e"
+  },
+  "PRESS": {
+    "path": "/workspace/quantum-comp/reports/SOFTSF_PRESS_FINDINGS_AGENT_SOFTSF_EXTRACT_ROUND_TWO_OWNER_DOCUMENTS_A_B_2026-11-05.md",
+    "sha256": "9d7e10af3dc34082518cb8a20cfb9dda1bf8fba2cc241db0684587b074a31503"
+  },
+  "tip_sha256": "7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91",
+  "tip_touched": "NO",
+  "cmp": "32/32",
+  "questions": 15,
+  "statements": 30,
+  "exact_proof_requests": 11,
+  "offers_completed": 10,
+  "offers_proposed": 6,
+  "delivery_verification_sha256": "50e55333fe8560ebb11e926361534f8a0341be0f2cf959f34d5514c44a511ccf"
+}

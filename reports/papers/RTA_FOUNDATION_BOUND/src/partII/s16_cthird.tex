@@ -1,0 +1,78 @@
+%=====================================================================
+\section{The structure of $\Cthird$}\label{sec:cthird}
+%=====================================================================
+\subsection{One coset, one cone weight, one kernel}\label{sec:cthirdthm}
+\begin{theorem}[$\Cthird$: one coset, one cone weight, one kernel, two chains]\label{thm:cthird}
+Let $F=[e_1,\gamma e_1)$, $Q_1$ the open first quadrant, $F'=F\setminus Q_1$, and $E^X_\mu=\sum_{\nu\in\mu+\Z^2,\,\nu\in X}q^{Q(\nu)}$.
+(i) For every $s\ge5$, $2C_{\mathrm{third},s}-1+\theta_3=q^{c_0}\Theta_w(a)$ with $\Theta_w(a)=\sum_{\nu\in a+\Z^2}w(\nu)q^{Q(\nu)}$ and
+$w=1_{F'}+1_{-Q_1}$: one coset, one quadratic form, one non-negative piecewise-constant cone weight.
+(ii) \emph{Reflection lemma.} With $R_s=\begin{pmatrix}1&s\\0&-1\end{pmatrix}$ ($R_s^{\mathsf T}A_sR_s=A_s$, $R_sa=-a$, $R_sF$ again a $\gamma$-fundamental cone):
+$E^F_a=E^F_{-a}$ for every $s\ge5$. Hence $\Theta_w(a)=E_L+\vartheta_{\rm hol}$: the part of $w$ that is even under $\nu\mapsto-\nu$ gives $E_L$, the odd part gives
+Zwegers' $\vartheta_{\rm hol}$, and the would-be weight-$1$ piece on the unit cone is exactly $0$. With $1_K=\tfrac14(\rho_{\rm odd}+\rho_{\rm even})$, the
+parity of the cone weight, the radial parity at $x=0$ and the automorphy type coincide.
+(iii) \emph{One kernel, two chains.} On the path of lines $c(t)$ in the signature-$(1,1)$ plane let
+$\Xi_0=\sqrt y\sum_{a+\Z^2}q^{Q(n)}e^{-\pi yB(n,c(t))^2}$ and $\Xi_1=\sqrt y\sum_{a+\Z^2}2B(n,c'(t))q^{Q(n)}e^{-\pi yB(n,c(t))^2}$, and $\Xi=\Xi_0+\Xi_1$. On the chain
+$\Gamma_{Q_1}$, $\int\Xi_1\,dt$ is exactly Zwegers' 2002 completion, with holomorphic part $\vartheta_{\rm hol}$. On the unit-cone chain $\Gamma_F=[c_1,\gamma c_1]$,
+$\int\Xi_0\,dt$ is Zwegers' 2012 mock Maass theta function $\Theta_a$, which here has no shadow and has $E_L=\tfrac12\vartheta_a$; and $\int_{\Gamma_F}\Xi_1\,dt=0$.
+(iv) The two outputs come from different operations (holomorphic projection at weight~$1$; the Lewis--Zagier period correspondence at weight~$0$) and carry
+different automorphy factors ($(c\tau+d)$ versus $|c\tau+d|$). So this is a single construction, not a single modular object; Theorems~\ref{thm:O1} and~\ref{thm:O2} still apply.
+\end{theorem}
+\catA{(i) proved (elementary, from $2\Porth_s=E_s+1+\theta_3-\Thol$ and $Q_1\subset F$); checked to $q^{3000}$ at $s=7$ and to $q^{2000}$ for $s=5..25,41$.
+(ii) proved (symbolic checks of $\gamma a-a$, $R_sa+a$, $R_s^{\mathsf T}A_sR_s-A_s$, $R_s\gamma e_1=\gamma^{-1}e_1$); identically zero to $q^{3000}$ at $s=7$. The
+parity/radial dictionary uses Proposition~\ref{prop:EM5} and Hecke's theorem. (iii), the weight-$1$ identity: exact, by the fundamental theorem of calculus with Siegel-majorant
+domination. (iv): the obstruction of Theorems~\ref{thm:O1} and~\ref{thm:O2}.}
+\catB{The weight-$0$ identification in (iii) is by citation of Zwegers 2012 \cite{Zw12} through the restatement in \cite{BCN}; numerical agreement $8\cdot10^{-16}$
+($s=7,9$), $5\cdot10^{-15}$ ($s=13$). Non-$\gamma$ control: the shadow does not cancel ($\approx0.1$). ``No exotic single kernel exists'' is open; higher depth is
+unavailable for the rank-$2$ lattice.}
+\begin{proposition}[Unit cone]\label{prop:ct5}
+(i) On the unit cone, both the holomorphic weight-$1$ $q$-series and its Zwegers completion vanish identically. (ii) $\int_{\Gamma_F}\Xi_0\,dt=\sqrt y\sum_{\gamma\text{-orbits }O\subset a+\Z^2}\e(Q(O)x)K_0(2\pi|Q(O)|y)$,
+which is Zwegers' mock Maass theta $\Theta_a$.
+\end{proposition}
+\catA{(i) is proved by the orbit-count symmetry $N(a,+,n)=N(-a,+,n)$, which comes from the automorph $R_s$, together with a telescoping argument for the
+completion; $\int_{\Gamma_F}\Xi_1=0$ follows. (ii) is proved by orbit unfolding. Modularity is by Siegel/Vign\'eras, which is standard.
+\emph{Category~B:} that no depth-$2$ rank-$3$ object carries $\Cthird$ (a structural argument, not a classification).}
+\textbf{Lemma Prod1.} Finite sums of products of weight-$0$ holomorphic forms with logarithmic cocycle and holomorphic weight-$1$ forms have only
+$t^{-2},t^{-1}\log t,t^{-1}$ radial terms, so they cannot carry either sector. (Category A.)
+\textbf{Lemma Prod2.} The same holds for products involving the Zwegers pieces; it is conditional on the same inputs as Theorem~\ref{thm:O1}. (Category B.)
+
+\subsection{Modularity status of $\Cthird$}\label{sec:cthirdmod}
+The statements of this subsection are proved or exactly checked, conditional where stated; the words ``quantum modular form'' for the factor $|cx+d|$ are terminology (Category B).
+
+\noindent\textbf{Identity.} $2\Cthird=q^8f_{2,7,7}(-q^{10},-q^{14},q)+1+E$, checked to $q^{8000}$, and
+\[\Cthird=\tfrac12(1-\theta_3)+\tfrac12\,\e(7\tau/20)\bigl[\vartheta_{\rm hol}+E_L\bigr].\]
+
+\begin{lemma}[Parity splitting]\label{lem:parity}
+At every rational $x$, along $q=\e(x)e^{-t}$, $t\to0^+$: $\e(7\tau/20)\vartheta_{\rm hol}$, $\theta_3$ and $q^8f$ contain only half-integer powers of $t$;
+$E=q^{7/20}E_L$ contains only integer powers $t^{-1},t^0,t^1,\dots$. Hence the integer-order radial data of $\Cthird$ are those of $\tfrac12(1+E)$ and
+the half-integer ones those of $\tfrac12q^8f$.
+\end{lemma}
+\catA{Proved, conditional on two-dimensional Euler--Maclaurin (Proposition~\ref{prop:EM5}) and Hecke's continuation theorem.}
+
+\begin{theorem}[Phase obstruction]\label{thm:O2}
+Let $\Gamma\subset\mathrm{SL}_2(\Z)$ have finite index, $\rho$ any finite-dimensional representation, $j(\gamma,\tau)=(c\tau+d)^k$ or $|c\tau+d|^k$, and $V$ holomorphic with
+$V(\gamma\tau)=j(\gamma,\tau)\rho(\gamma)V(\tau)+o(1/y)$ at every rational $x\neq\gamma^{-1}\infty$. Then $\Cthird\neq\lambda\cdot V$ for every $\lambda$; likewise for
+$C$, $\Porth_s$ and $E$.
+\end{theorem}
+\catA{Unconditional. The proof uses $G(1/m)=\e(7/(20m))P(m\bmod140)/m$ for $\gcd(m,70)=1$ (which also follows from Corollary~\ref{cor:profile}(iii)) and a
+linear-recurrence/essential-singularity argument.}
+
+\begin{theorem}[Sign obstruction]\label{thm:O1}
+If $V$ is holomorphic and finite-dimensional on $\Gamma\ni S,T^N$, $\rho'(T^N)$ is diagonalisable with unimodular eigenvalues, and
+$V(\gamma\tau)=(c\tau+d)^k\rho'(\gamma)V(\tau)+o(1/y)$, then none of $E_L$, $X=\tfrac12(\vartheta_{\rm hol}+E_L)$ or the $72$-component $E$-vector is $\lambda\cdot V$.
+Hence $E$ is not the holomorphic part of a weight-$1$ harmonic Maass form, nor a holomorphic weight-$1$ form, nor mixed mock with modular factors of weight $<1$.
+\end{theorem}
+\catA{Conditional on the cited analyticity of harmonic-Maass cocycles, which is needed only for the class-membership corollaries; the $|x|$ profile law is Theorem~\ref{thm:profile}.
+Objects whose cocycles are themselves of size $\ge1/y$ are not excluded (open).}
+
+\begin{theorem}[Structure of $\Cthird$]\label{thm:Pstruct}
+(i) The decomposition above, with $\vartheta_{\rm hol}$ a signature-$(1,1)$ Zwegers holomorphic part and $E_L$ the $(a,0)$ component of the $72$-dimensional vector.
+(ii) $E_L$ is the Lewis--Zagier $f$-function of the $\lambda=\tfrac14$ Maass Eisenstein lift; its $|cx+d|$ weight-$1$ cocycle is real-analytic off $\gamma^{-1}\infty$.
+(iii) Lemma~\ref{lem:parity}. (iv) For $x=h/m$, the renormalised value is $c_C(x)=\tfrac12+\tfrac12\e(7x/20)Z_x(0)-\tfrac7{20}I\,G(x)=\alpha(x)+\beta(x)I$ with $\alpha$ algebraic and
+$\beta=-\tfrac7{20}G(x)$, which vanishes iff $2\mid m$ or $5\mid m$ (Theorem~\ref{thm:D}); the Weil-kernel invariance $G_{a,0}(\gamma x)|cx+1|=G_{a,0}(x)$,
+$\gamma=\bigl(\begin{smallmatrix}1&0\\140&1\end{smallmatrix}\bigr)$, is Corollary~\ref{cor:profile}(ii). For example $c_C(0)=\tfrac{11}{20}-\tfrac7{20}I$, $c_C(1/2)=0$, $c_C(1/4)=2+\tfrac32i$.
+The cusp-form $L(0)$ values do not enter.
+\end{theorem}
+\catA{For (i), (iii) and the formula in (iv); the general genus formula behind $Z_x(0)$ is Category B.}
+\begin{center}\small\fbox{\parbox{0.94\linewidth}{\textbf{Verdicts.} $\Cthird$ is not modular (Theorem~\ref{thm:E}(i) (Baker), Theorem~\ref{thm:E}(ii) and Theorem~\ref{thm:O2}); not mock or mixed
+mock with a holomorphic factor and an $o(1/y)$ cocycle (Theorems~\ref{thm:O1} and~\ref{thm:O2}); has no strict quantum-modular values (radial divergence at all $490$ rationals
+with $m\le40$; ``every rational'' is Category~B); and is renormalised quantum modular after removing $q^{7/20}$ and the theta pieces.}}\end{center}

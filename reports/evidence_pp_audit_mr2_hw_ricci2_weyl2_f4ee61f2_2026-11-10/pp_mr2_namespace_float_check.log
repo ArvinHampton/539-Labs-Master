@@ -1,0 +1,12 @@
+RUN_START_WALLCLOCK 2026-11-10 11:37:06 CST
+SCRIPT_SHA256 4d996ee938b64ddd830644e502aae222ee7f00e07bbc816e3190aaa49f54efd0
+TARGET_SHA256 cd289c73043595e303fc5f2d5a0c2e7ba0b2fa5b5cdef33489dcf0231a9c695d
+PASS S1 no bare simplify( call (only nsimplify)
+PASS S2 nsimplify appears exactly once (E1 inst)
+PASS S3 no numpy / allclose / evalf / N( / float(
+PASS S4 no decimal float literals in code (outside comments/strings)
+TARGET_ALL_CHECKS_LINE ['ALL_CHECKS PASS']
+PASS N1 MR2 coef[riem2,ric2,weyl2,gb] and eR2 contain no Float
+PASS N2 MR2 cA riem2/ric2/weyl2/Rs contain no Float
+PASS N3 E1 inputs to nsimplify are Float-free and nsimplify(x) == x for each (nsimplify is a no-op here)
+ALL_CHECKS PASS

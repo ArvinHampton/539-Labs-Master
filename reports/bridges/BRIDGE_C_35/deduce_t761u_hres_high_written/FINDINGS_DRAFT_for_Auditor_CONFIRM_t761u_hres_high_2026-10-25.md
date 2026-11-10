@@ -1,0 +1,2 @@
+# FINDINGS DRAFT for Auditor CONFIRM — t761u hres_high (MASTER #6), 2026-10-25 CDT
+Claims to confirm: (a) basis live MATCH (logs/verify_basis.txt); (b) 0 Written numeric h_residual^{high} samples (logs/search_hits.txt); (c) B3-α KEEP b96ff7bd… not superseded; (d) G-A3 PAUSED, 4da09dec… not revived; (e) menu H-α..H-ε has no numeric cells, nothing adopted, rec H-α; (f) no Cat A, δ≡0/Bridge YES NO/NO. Verdict requested: MATCH / MISMATCH.

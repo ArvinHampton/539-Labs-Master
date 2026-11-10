@@ -1,0 +1,25 @@
+== MR2 batch-1 candidate resolutions: computations (dps 40) ==
+V2 routines sha256 verified: ad134752da79e3064e209cd840b0aec53e004e3fa0fec8bbc9299eb12940eb85
+
+== (A) C3 fixed set {phi2 = 0} (beta in (0,pi) covers mu2 = sin(al) sin(be) of both signs): tr R^R of the induced 10D metric ==
+   geometry built: 58 Christoffels, 128 derivatives [45s]
+  (alpha,beta)=(0.37,1.11): max|tr(R^R)_abcd| (orthonormal) = 5.191020e+01 at ['u', 'v', 'be', 'p1']; |tr R^R| (sum over a<b<c<d) = 6.192156e+01; induced Riem^2 = 322.511344; antisym/pair-sym checks 8.9e-16/8.9e-16
+  (alpha,beta)=(2.01,0.23): max|tr(R^R)_abcd| (orthonormal) = 7.572514e+01 at ['u', 'v', 'al', 'p1']; |tr R^R| (sum over a<b<c<d) = 8.459017e+01; induced Riem^2 = 936.625734; antisym/pair-sym checks 1.8e-15/2.4e-15
+  (alpha,beta)=(1.2,2.5): max|tr(R^R)_abcd| (orthonormal) = 7.820352e+01 at ['u', 'v', 'be', 'p1']; |tr R^R| (sum over a<b<c<d) = 9.050671e+01; induced Riem^2 = 617.625276; antisym/pair-sym checks 8.9e-16/8.9e-16
+  (alpha,beta)=(0.8,0.6): max|tr(R^R)_abcd| (orthonormal) = 6.445271e+01 at ['u', 'v', 'al', 'p1']; |tr R^R| (sum over a<b<c<d) = 8.113309e+01; induced Riem^2 = 460.148201; antisym/pair-sym checks 8.9e-16/1.8e-15
+
+== (B) wall-thickness scales at N = 4880 (l_p = 1) ==
+  AdS7xS4 radii for N M5s: R_S4 = (pi N)^(1/3) = 24.8421911; R_AdS7 = 2 R_S4 = l = 49.68438219
+  flux check: int_S4 G4 with G4 = 3 R^3 vol(unit S4) = 3 R^3 * 8pi^2/3 = 8 pi^2 R^3 = 1210485.0415989 vs (2pi)^3 N = 1210485.0415989
+  wall curvature k in [0.025358493, 0.028463946]; 1/k in [35.132164, 39.43452]; L5 = l sqrt(F0) = 37.653721
+  eps_y = 1: k*eps_y in [0.02536, 0.02846] (thin wall needs << 1); EFT factor (k l_p)(l_p/eps)^m, m=1: [0.0254, 0.0285], m=3: [0.0254, 0.0285]
+  eps_y = 3: k*eps_y in [0.07608, 0.08539] (thin wall needs << 1); EFT factor (k l_p)(l_p/eps)^m, m=1: [0.00845, 0.00949], m=3: [0.000939, 0.00105]
+  eps_y = 10: k*eps_y in [0.2536, 0.2846] (thin wall needs << 1); EFT factor (k l_p)(l_p/eps)^m, m=1: [0.00254, 0.00285], m=3: [2.54e-5, 2.85e-5]
+  eps_y = 24.842: k*eps_y in [0.63, 0.7071] (thin wall needs << 1); EFT factor (k l_p)(l_p/eps)^m, m=1: [0.00102, 0.00115], m=3: [1.65e-6, 1.86e-6]
+
+== (C) NEC deficit: required S(k,k) = -2k/kappa^2 along every internal null k = t+e; rho_w = 6k/kappa^2 <-> N_req M5 units ==
+  horizontal, warp range: N_req in [10581.6, 16797.3]; min negative energy |sigma| >= rho_w/3 <-> [3527.2, 5599.08] M5 units; OM5-type planes (charge/tension -1/2 each) needed >= [7054.4, 11198.2]
+  fixed-phi, warp range: N_req in [8618.14, 13680.4]; min negative energy |sigma| >= rho_w/3 <-> [2872.71, 4560.13] M5 units; OM5-type planes (charge/tension -1/2 each) needed >= [5745.43, 9120.26]
+
+DONE 76s
+EXIT 0

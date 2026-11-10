@@ -1,0 +1,372 @@
+Periodic continued fractions and Kronecker
+symbols
+
+arXiv:1504.02618v1 [math.NT] 10 Apr 2015
+
+Kurt Girstmair
+Abstract
+
+We study the Kronecker symbol st for the sequence of the convergents s/t of a
+purely periodic continued fraction expansion. Whereas the corresponding sequence
+of Jacobi symbols is always periodic, it turns out that the sequence of Kronecker
+symbols may be aperiodic. Our main result describes the period length in the
+periodic case in terms of the period length of the sequence of Jacobi symbols and
+gives a necessary and sufficient condition for the occurrence of the aperiodic case.
+
+1. Introduction and main results
+Let [a0 , a1 , a2 , . . .] be the regular continued fraction expansion of an irrational number z.
+We consider the convergents sk /tk , k ≥ 0, of this expansion. They are defined by the
+well-known recursion formulas
+s−1 = 1, t−1 = 0, s0 = a0 , t0 = 1,
+
+(1)
+
+sk = ak sk−1 + sk−2, tk = ak tk−1 + tk−2 ,
+
+(2)
+
+and
+for k ≥ 1. Then
+
+sk /tk = [a0 , . . . , ak ], k ≥ 0,
+
+is the kth convergent of z (see [4], p. 250). Note that tk is a positive
+  integer for k ≥ 0.
+In the papers [2] and [3] we investigated the Jacobi symbol stkk in the periodic case,
+i.e., for a quadratic
+  irrational z. Since this symbol is defined only for odd denominators
+tk , we defined stkk = ∗ if tk is even. It turned out that the sequence of Jacobi symbols
+ 
+sk
+, k ≥ 0, is periodic with a period length L = dl, where l is the smallest possible
+tk
+period length of [a0 , a1 , a2 , . . .] and d is a divisor of 8 or 12. We called this sequence the
+Jacobi sequence of z.
+
+The natural generalization of the Jacobi symbol st for arbitrary co-prime integers
+s, t, t ≥ 1, is the Kronecker symbol. It coincides with the Jacobi symbol if t is odd. If
+t = 2j t′ , where j ≥ 1 and t′ is an odd natural number, one defines
+ s   s j  s 
+=
+,
+t
+2
+t′
+1
+
+with
+
+s
+2
+
+=
+
+
+
+1,
+−1,
+
+if s ≡ ±1 mod 8;
+if s ≡ ±3 mod 8.
+
+(see [1], p. 28 ff.). The Kronecker symbol shares many properties with the Jacobi symbol,
+for instance, the reciprocity law
+ 
+s
+t
+′ ′
+= ε(s , t )
+,
+(3)
+t
+s
+where s and t are co-prime, s = 2j s′ , t = 2l t′ with odd natural numbers s′ , t′ , and
+
+−1, if s′ , t′ are both ≡ 3 mod 4;
+′ ′
+ε(s , t ) =
+1, otherwise.
+So one might think that the periodicity of the Jacobi sequence can be generalized to the
+corresponding sequence of Kronecker symbols, which we call the Kronecker sequence of
+z. This, however, is not the case, as our main result shows.
+In this paper we restrict ourselves to the purely periodic case since the mixed periodic
+one seems to be much more difficult. So let z = [a0 , . . . , al−1 ], where l has been chosen
+smallest possible. In [2] we have seen that the Jacobi sequence of z is purely periodic
+with a period length L = dl, d ≥ 1, such that
+
+
+sL−1 sL−2
+DL =
+≡ I mod 4.
+(4)
+tL−1 tL−2
+Here I is the 2 × 2 unit matrix and the congruence has to be understood entry-by-entry.
+Further, we may assume that L is even (in fact, d can be chosen as a divisor of 8 or
+12, but we do not require this in what follows, since our periods are not always shortest
+possible).
+In this setting suppose that DL = I + 2m U, m ≥ 2, where not all entries of
+
+
+x y
+(5)
+U=
+u v
+are even. Suppose, further, that u = 2e u′ , with e ≥ 0 and u′ odd. A convergent sk /tk of
+z is called critical with respect to L, if k ≤ L − 1, sk ≡ 3 mod 4 and tk ≡ 0 mod 2m+e
+(since m ≥ 2, the last-mentioned condition requires tk ≡ 0 mod 4, of course.) Now our
+main result reads as follows.
+Theorem 1 Let the above notations hold, in particular, let z be purely periodic and L be
+a period length of the Jacobi sequence with the above properties. Suppose, further,
+  that no
+critical convergent with respect to L exists. Then the Kronecker sequence stkk , k ≥ 0, is
+purely periodic with period length L or 2L. If there is, conversely, a critical convergent
+with respect to L, then the Kronecker sequence is aperiodic.
+Remark. In Proposition 2 we describe the cases of period length L and 2L of the theorem
+precisely. As a rule, one finds more examples with periodic Kronecker sequences than
+with aperiodic ones.
+2
+
+√
+Examples. 1. For z = [1, 2, 3] = (4 + 37)/7 we may choose L = 6, m = 2. Here u = 21,
+so e = 0. There is no critical convergent among s0 /t0 , . . . , s5 /t5 , but the convergent
+s1 /t1 = 3/2 has the effect that the Kronecker
+sequence has only period length 2L = 12.
+√
+2. In the case z = [1, 2, 5] = (7 + 82)/11 we may choose L = 12, m = 2. Here u is
+odd, so e = 0. Hence the convergent s7 /t7 = 975/608 is critical with respect to L and
+the Kronecker sequence is aperiodic.
+√
+3. An aperiodic example with e > 0 is z = (5 + 85)/10 = [1, 2, 2], where L = 36
+works with m = 3 and e = 1. Therefore, a critical convergent sk /tk must satisfy tk ≡ 0
+mod 16. The convergent s6 /t6 = 91/64 has this property.
+
+2. The reciprocal Jacobi sequence
+An obvious way to generalize the results concerning the Jacobi sequence consists in the
+generalization of the auxiliary results needed for this purpose. It turns out, however,
+that this is impossible, as the following
+ example shows. If s/t = [a0 , . . . , ak ] is a rational
+s
+number, then the Jacobi symbol t (which equals ∗, if t is even) depends only on the
+residue classes of a0 , . . . , ak mod 4. No result of this kind can hold for the Kronecker
+symbol. Indeed, let s/t = 3/2j and s′ /t′ = 3/(7 · 2j ), where j ≥ 3 is odd. We have
+s/t = [0, (2j − 2)/3, 1, 2] and s′ /t′ = [0, (7 · 2j − 2)/3, 1, 2].
+Here (2j −
+2)/3 ≡ (7 · 2j − 2)/3 mod 2j+1 . The Kronecker symbol, however, takes the
+
+′
+values st = −1 and st′ = 1.
+Hence our approach to the Kronecker sequence differs from the above strategy of
+generalizing
+auxiliary
+Jacobi results. Instead, we consider the reciprocal Jacobi sequence
+ 
+ 
+tk
+tk
+, k ≥ 0 (with sk = ∗ if sk is even). Then we use the reciprocity law (3) in order to
+sk
+obtain the values of the Kronecker symbol in the case where tk is even. For this purpose
+we need the following proposition.
+Proposition 1 Let z = [a0 , . . . , al−1 ]. Suppose that L = dL, d ≥ 1, is an even period
+length
+
+ of the Jacobi sequence of z such that (4) holds. Then the reciprocal Jacobi sequence
+tk
+, k ≥ 0, is purely periodic with the same period length L.
+sk
+Proof. From the identity
+
+
+
+
+sk+L sk+L−1
+sk sk−1
+= DL ·
+, k ≥ 0,
+tk+L tk+L−1
+tk tk−1
+
+(6)
+
+and (4) we obtain
+sj+L ≡ sj mod 4, tj+L ≡ tj mod 4 for all j ≥ −1.
+
+  
+Hence stk+L
+= stkk = ∗ if sk is even, k ≥ 0.
+k+L
+If both sk and tk are odd, we have
+
+
+
+
+sk+L
+tk+L
+= ε(tk+L , sk+L )
+,
+sk+L
+tk+L
+3
+
+(7)
+
+(8)
+
+by quadratic reciprocity. Now(7) shows
+ ε(tk+L , sk+L ) = ε(tk , sk ). Since L is a period
+sk+L
+length of the Jacobi sequence, tk+L = stkk . Accordingly, (8) says
+
+
+
+ 
+tk+L
+sk
+= ε(tk , sk )
+.
+sk+L
+tk
+  
+
+t
+= stkk .
+Now quadratic reciprocity shows sk+L
+k+L
+There remains the case tk even, sk odd. Then k ≥ 1, since t0 = 1. We use the
+notation of the proof of Theorem 5 in [2] and put s = sk−1 , t = tk−1 , p = ak , q = 1,
+m = sk , N = tk and δ = (−1)k−1 . Since N is even, t must be odd. Two cases have to be
+distinguished:
+Case 1: s is odd.
+Then the said theorem yields
+  
+
+δt
+p
+−δN
+= ε(s, q, m)
+s
+q
+m
+with ε(s, q, m) = −1, if two of the numbers s, q, m are ≡ 3 mod 4, and ε(s, q, m) = 1,
+otherwise. This gives
+    
+ 
+N
+−δ
+δ
+t
+=
+ε(s, 1, m)
+.
+m
+m
+s
+s
+Now ε(s, 1, m) = ε(s, m), and quadratic reciprocity implies
+    
+s
+N
+−δ
+δ
+=
+ε(s, m)ε(t, s)
+,
+m
+m
+s
+t
+
+i.e.,
+
+
+
+tk
+sk
+
+
+
+=
+
+
+
+−δ
+sk
+
+
+
+δ
+sk−1
+
+
+
+ε(sk−1 , sk )ε(tk−1 , sk−1)
+
+
+
+sk−1
+tk−1
+
+
+
+.
+
+(9)
+
+In the same way we obtain
+
+ 
+
+
+
+
+tk+L
+−δ ′
+δ′
+sk+L−1
+=
+ε(sk+L−1, sk+L )ε(tk+L−1, sk+L−1)
+,
+sk+L
+sk+L
+sk+L−1
+tk+L−1
+where δ ′ = (−1)k+L−1 . However, L is even, so δ ′ = δ. Further, all quantities on the right
+hand side of (9) except the last one depend only on δ and the residue classes of sk , sk−1
+and tk−1 mod 4, so we may write
+  
+
+
+
+
+tk+L
+−δ
+δ
+sk+L−1
+=
+ε(sk−1, sk )ε(tk−1, sk−1 )
+.
+sk+L
+sk
+sk−1
+tk+L−1
+Since L is a period length of the Jacobi sequence, we see that the
+ right
+ hand side of this
+tk+L
+identity coincides with the right hand side of (9). Thus, sk+L = stkk .
+Case 2: s is even.
+Since t and m are odd, both s + t and m + N are odd. The said theorem gives
+ 
+
+
+p
+δm
+−δs
+= ε(s + t, q, m + N)
+(10)
+s+t
+q
+m+N
+4
+
+

@@ -1,0 +1,10 @@
+# Soft SF PRESS — Write-only → Auditor — Local REVIEW PR2 COOK BLANKET FREEPURSUE_REFRESH_ROLLUP — 2026-10-26 (CDT)
+
+- REVIEW: `/workspace/quantum-comp/reports/REVIEW_LOCAL_PR2_COOK_BLANKET_FREEPURSUE_REFRESH_ROLLUP_2026-10-26.md` sha256 `3b57bda553b95b195be490aa95aca631221d0138491b1eef1babb0372f3380c0`
+- Target FINDINGS: `FINDINGS_PR2_COOK_BLANKET_PURSUE_FREEPURSUE_REFRESH_ROLLUP_2026-10-26.md` `cbbab7cf82341d70805de3105fcdff45488a6f88a74ec49ad3fc185488f374cd`
+- PR2 PRESS: `SOFTSF_PRESS_FINDINGS_PR2_COOK_BLANKET_PURSUE_FREEPURSUE_REFRESH_ROLLUP_2026-10-26.md` `6428fb4ebeaa8fc0ed3a7b133dc8d068b0046ae8f62e6e8ce5b69fa60176bfa0`
+- Disposition: **ACCEPT / free-pursue Findings 1–5 STANDS; blanket rollup Pack MATCH**
+- Claims (cite-only): Free-pursue Findings 1–5 all STANDS; blanket rollup 7/7 Pack MATCH.
+- Catalog v0.5.11 `4ed155d55c3a18ca4bc96a6a6eec4c1806abfc2e270f355f1ea58a197119dd04` UNCHANGED.
+- tip Soft SF BEFORE/AFTER `7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91`; tip_touched NO.
+- Write-only; no LOCK; not an Auditor CONFIRM MATCH. Route: Soft SF → Auditor.

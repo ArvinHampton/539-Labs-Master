@@ -1,0 +1,8 @@
+# FINDINGS — NL Soft SF cosmetic hygiene t218u (2026-10-26, America/Chicago)
+Cite: Auditor MATCH-with-SF t216u FINDINGS c5187ba934de01ee1287906fc7267cefff7ab93bb4ee65e48ca6e14e8149429d (tip race NO; tip pin CONFIRM CLOSED for NL; Soft SF open flags SF1–SF2); Auditor tip Soft SF LOCK MATCH-with-SF de1638da…; prior t216u FINDINGS 8186ba52… / ACK e1564572… (sealed, not rewritten).
+- Tip /workspace/residual-c-field-WRITTEN_PREMISES_DRAFT.md = e84a3a8169e138a602e09434cafcc92e30d4e0ca9b39f90d12929fa54654c5ec before & after; tip_touched NO.
+- Stub /workspace/obs-bridge-NL-61Omega-photon-brane.md da790c1f22c4713407f5d26317f20f3a4bfd29942f7e8d9fa5815e09659cb8c5 → e8c6fccb41184785d3be40b9be9fd9b0c7003b49c99fa7eeb79ed070f11137b9; backup /workspace/obs-bridge-NL-61Omega-photon-brane.pre-softsf-cosmetic-da790c1f.md (sha da790c1f… MATCH).
+- SF1: t216u log line now cites "Auditor tip Soft SF LOCK Soft SF MATCH-with-SF de1638da…". Sealed t216u FINDINGS 8186ba52… / ACK e1564572… lacked this cite; stamp lag CLOSED by this absorb (stamps not rewritten).
+- SF2: t216u log line now cites "Components HOLD (Owner Park t1755s8656 via Physicist; Auditor MATCH t216u FINDINGS c5187ba9… Components HOLD)". Components not opened; nothing invented.
+- t218u cosmetic log line appended after t216u. Stub sidecar /workspace/obs-bridge-NL-61Omega-photon-brane.md.sha256 = e8c6fccb… (MATCH); inventory_check SHA256SUMS stub line recomputed.
+- SF1–SF2 CLOSED by absorb. Soft SF F3 CLOSED (Physicist MR1 §1r cited). FREEZE invent else; Soft SF invent HOLD tip fill else; Components HOLD; invent HOLD else; Packaging Owner-hold; Q7 KEEP; STOPPED KEEP. No invent. Bridge PARTIAL / READY NO.

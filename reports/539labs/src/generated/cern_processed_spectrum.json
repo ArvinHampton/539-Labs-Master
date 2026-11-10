@@ -1,0 +1,14 @@
+{
+    "pipeline_status": "POLAR_MATCH_FAILED",
+    "chi2_ndf": 329.35704979700176,
+    "optimized_parameters": [
+        2.0,
+        0.01,
+        6.4789212063000665,
+        2.0,
+        0.01,
+        6.6,
+        0.0
+    ],
+    "minimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+}

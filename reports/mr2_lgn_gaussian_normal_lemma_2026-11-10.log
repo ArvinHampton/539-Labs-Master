@@ -1,0 +1,36 @@
+RUN_START_WALLCLOCK 2026-11-10 11:57:36 CST (America/Chicago)
+SCRIPT_SHA256 1728d877918a96c8d91862483ade6b376ce6d91fdd531b1bb6881d138a3d0a50 mr2_lgn_gaussian_normal_lemma_2026-11-10.py
+sympy 1.14.0
+PASS V unit S^2 jet: R_1212 = 1 (sign convention: sphere positive)
+
+== L-GN machine check on fully general jets ==
+  D=4: 84 free jet symbols (h(0) = eta by a constant linear change of x, which preserves the GN form)
+PASS L-GN(a) D=4: Gauss components R_abcd independent of every second y-jet G_ab
+PASS L-GN(b) D=4: Codazzi components R_yabc independent of every second y-jet G_ab
+PASS L-GN(c) D=4: R_yayb = -d_y K_ab + K_ac K^c_b exactly (K = d_y h / 2), fully general non-diagonal x-dependent jet
+  D=5: 200 free jet symbols (h(0) = eta by a constant linear change of x, which preserves the GN form)
+PASS L-GN(a) D=5: Gauss components R_abcd independent of every second y-jet G_ab
+PASS L-GN(b) D=5: Codazzi components R_yabc independent of every second y-jet G_ab
+PASS L-GN(c) D=5: R_yayb = -d_y K_ab + K_ac K^c_b exactly (K = d_y h / 2), fully general non-diagonal x-dependent jet
+  D=6: 405 free jet symbols (h(0) = eta by a constant linear change of x, which preserves the GN form)
+PASS L-GN(a) D=6: Gauss components R_abcd independent of every second y-jet G_ab
+PASS L-GN(b) D=6: Codazzi components R_yabc independent of every second y-jet G_ab
+PASS L-GN(c) D=6: R_yayb = -d_y K_ab + K_ac K^c_b exactly (K = d_y h / 2), fully general non-diagonal x-dependent jet
+
+== general-[K] delta^2 coefficients, D = 5, all 10 entries of kappa symbolic (incl. time-space) ==
+PASS GK0 D=5 every Riemann component is affine in w (= 1/eps): R = R0 + w R1
+PASS GK0b D=5 the w-coefficient R1 involves kappa only (no regular jet symbols)
+PASS GK1 D=5 Riem^2 w^2-coeff = 4 tr M^2 (general symmetric kappa incl. kappa_tv)
+PASS GK2 D=5 Ric^2 w^2-coeff = tr M^2 + (tr M)^2
+PASS GK3 D=5 R w-coeff = -2 tr M
+PASS GK4 D=5 Weyl^2 w^2-coeff = (4(D-3)/(D-2))(tr M^2 - (tr M)^2/(D-1)) = (8/3)(trM^2 - trM^2/4)
+PASS GK5 D=5 Gauss-Bonnet w^2-coeff = 0
+
+== profile nits (C2) ==
+PASS C2a int sech^2 ds = [tanh] = 2 (d/ds tanh = 1 - T^2 = sech^2; limits T = +-1)
+PASS C2b int sech^4 ds = 4/3 (d/ds(T - T^3/3) = (1-T^2)^2)
+PASS C2c Cauchy-Schwarz equality case: box mollifier on [-L eps, L eps] has int phi^2 = 1/(2 L eps)
+PASS C2d bump (1-(s/(L eps))^2)^2 normalised: int phi^2 = 5/(7 L eps) >= 1/(2 L eps) (exact rational comparison)
+
+ALL_CHECKS PASS
+RUN_END_WALLCLOCK 2026-11-10 11:57:44 CST

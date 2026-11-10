@@ -1,0 +1,5 @@
+# order38 NOTES
+- New structural numbers: the 105 Bernoulli columns x·C2b_l(x) span only 54 dimensions on the grid. A floor of r ≈ 0.0021 is intrinsic to any fixed-matrix law for C2b; M is not optimal (ratio 0.675).
+- The miss is governed by |num(x)| = den(−1/x), i.e. by the L_B aliasing period N′ = 2|num| on the S side (hashed consistency PASS).
+- Open next step (order39, not started): preregister RG36, a blind out-of-sample |num| test. Evaluate C2b on NEW x points with large |num| (not in XS, e.g. num 41–60 with small den), using the order19 C2b evaluation method (no new objects). Predict, before computing, that the per-point r is below the |num| = 37 group median 0.0013, and that the ordering continues. Also optional: identify the 54-dim span through the order20 L_B structure (characteristics β+λ_k), as a Category A candidate.
+- Naming: RG* only, no labels L1–L7; "36" only as dim V. MAPS_CANDIDATES and REVIEW_2026-10-24 untouched; no Resonant objects; no new Bernoulli objects; no bridge claim; CORE_FREEZE. nice, OMP_NUM_THREADS=1; ~2 s; no push or sends; new files only.

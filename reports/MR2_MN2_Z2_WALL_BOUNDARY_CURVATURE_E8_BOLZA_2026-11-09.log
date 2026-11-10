@@ -1,0 +1,94 @@
+== MR2 adoption blockers: Riemann / systole / full EOM ==
+V2 routines sha256 verified: ad134752da79e3064e209cd840b0aec53e004e3fa0fec8bbc9299eb12940eb85
+
+== V1. flat-space HW-type wall in 11D: ds^2 = dy^2 + e^{2A(y)} eta_10, A = -k*eps*ln cosh(y/eps) (closed forms) ==
+   geometry built: 20 Christoffels, 20 derivatives [1s]
+  k=0.7 eps=0.001 y=0.0: Riem^2=19600000.0 (closed 19600000.0), Ric^2=53900000.0 (closed 53900000.0), R=14000.0 (closed 14000.0), Weyl^2=1.9259299e-34
+  k=0.7 eps=0.001 y=0.3: Riem^2=52.822 (closed 52.822), Ric^2=264.11 (closed 264.11), R=-53.9 (closed -53.9), Weyl^2=-1.2489627e-37
+  k=0.7 eps=0.001 y=-0.3: Riem^2=52.822 (closed 52.822), Ric^2=264.11 (closed 264.11), R=-53.9 (closed -53.9), Weyl^2=-1.2489627e-37
+  k=0.0 eps=0.001 y=0.0: Riem^2=0 (closed 0.0), Ric^2=0.0 (closed 0.0), R=0.0 (closed 0.0), Weyl^2=0.0   [k=0 NO-SOURCE control: flat]
+  bulk |y|>>eps closed form = AdS11: Riem^2 = 2n(n+1)k^4 = 220 k^4 = 52.822
+
+== V2. LOSW 5D domain wall (hep-th/9803235): ds^2 = a^2 eta_4 + b^2 dy^2, a = H^(1/2), b = H^2, H = c0 + h*eps*ln cosh(y/eps) ==
+   geometry built: 9 Christoffels, 9 derivatives [1s]
+  eps=0.01: int R dY over [-10eps,10eps] = -1.42895679124  (thin-wall prediction -8h/c0^3 = -1.45653163405);  eps^2*Riem^2(0) = 0.04642441618
+  eps=0.001: int R dY over [-10eps,10eps] = -1.45372651474  (thin-wall prediction -8h/c0^3 = -1.45653163405);  eps^2*Riem^2(0) = 0.04642441618
+  eps=0.0001: int R dY over [-10eps,10eps] = -1.4562506328  (thin-wall prediction -8h/c0^3 = -1.45653163405);  eps^2*Riem^2(0) = 0.04642441618
+  thin-wall centre prediction eps^2 Riem^2(0) -> 4n (h/(2 c0^5))^2 = 4 h^2/c0^10 = 0.04642441618
+
+== building MN2 wall geometry ==
+   geometry built: 71 Christoffels, 187 derivatives [128s]
+MN2 fixed point: X1=0.659753955386447 X2=1.31950791077289 X0=1.31950791077289 e^(2f0)=F0=0.574349177498518 e^(2g0)=G0=0.287174588749259 a1=1.0 a2=0.0; l/l_p=49.68438219
+
+== (i) one-sided bulk limits: KINK, eps=1e-4, rho = +0.5 and -0.5 (proper distance l*sqrt(wF0)*0.5 from the wall), 17-pt grid ==
+  rho=0.5: Riem^2 in [511.8079287, 3407.980947], Ric^2 max 3311.983676, Weyl^2 in [297.9013327, 1939.188188], R in [5.2913245, 11.999974], max|eig Q| 13.333308  (/l^4, /l^2)
+  rho=-0.5: Riem^2 in [511.8079287, 3407.980947], Ric^2 max 3311.983676, Weyl^2 in [297.9013327, 1939.188188], R in [5.2913245, 11.999974], max|eig Q| 13.333308  (/l^4, /l^2)
+  rho=0.01: Riem^2 in [511.8079287, 3407.980947], Ric^2 max 3311.983676, Weyl^2 in [297.9013327, 1939.188188], R in [5.2913245, 11.999974], max|eig Q| 13.333308  (/l^4, /l^2)
+  rho=-0.01: Riem^2 in [511.8079287, 3407.980947], Ric^2 max 3311.983676, Weyl^2 in [297.9013327, 1939.188188], R in [5.2913245, 11.999974], max|eig Q| 13.333308  (/l^4, /l^2)
+  reference 9ab8f0a6 (MN2, r-coords): Riem^2 in [511.808, 3407.981], Ric^2 max 3311.98, Weyl^2 in [297.90, 1939.19], max|eig Q| 13.333308
+
+== (iii) wall centre rho=0: scaling with eps (KINK); thin-wall prediction from Israel kink: a = 1/(wF0*eps) ->
+   eps^2 Riem^2 -> 16/(wF0)^2, eps^2 Ric^2 -> 20/(wF0)^2, eps^2 R^2 -> 64/(wF0)^2, eps^2 Weyl^2 -> (128/15)/(wF0)^2, eps*R -> +8/(wF0) (s=+1), eps*maxeig -> 1/(wF0)
+  eps=0.01: max over grid of relative deviation from thin-wall coefficients = 0.06606
+  eps=0.001: max over grid of relative deviation from thin-wall coefficients = 0.006511
+  eps=0.0001: max over grid of relative deviation from thin-wall coefficients = 0.0006501
+  eps=1.0e-5: max over grid of relative deviation from thin-wall coefficients = 6.5e-5
+  log-log slopes at (alpha,beta)=(0.7866,0.7866): d ln Riem^2/d ln eps = ['-1.9995546', '-2.0000051', '-2.000001']; Weyl^2: ['-1.9968554', '-1.9997478', '-1.9999754']
+  log-log slopes at (alpha,beta)=(0.37,1.11): d ln Riem^2/d ln eps = ['-1.9995637', '-1.9999966', '-2.0000001']; Weyl^2: ['-1.9977251', '-1.9998244', '-1.999983']
+
+== controls at the presumed wall rho=0 (eps=1e-4 and 1e-5) ==
+  NO_SOURCE eps=0.0001 rho=0: max Riem^2 3407.980947, max Weyl^2 1939.188188, R range [5.2913245, 11.999974]
+  NO_SOURCE eps=1.0e-5 rho=0: max Riem^2 3407.980947, max Weyl^2 1939.188188, R range [5.2913245, 11.999974]
+  WRONG_SIGN eps=0.0001 rho=0: max Riem^2 6399996751.0, max Weyl^2 3412393326.0, R range [-159947.92, -126955.04]
+  WRONG_SIGN eps=1.0e-5 rho=0: max Riem^2 6.399993535e+11, max Weyl^2 3.413236023e+11, R range [-1599947.2, -1269883.8]
+  MISPLACED(delta=0.3) eps=0.0001 rho=0: max Riem^2 3407.980947, max Weyl^2 1939.188188, R range [5.2913245, 11.999974]
+  MISPLACED(delta=0.3) eps=1.0e-5 rho=0: max Riem^2 3407.980947, max Weyl^2 1939.188188, R range [5.2913245, 11.999974]
+  MISPLACED eps=1e-4 at rho=0.3 (where the kink actually is): max Riem^2 6.4e+9  (diverges there instead)
+
+== (ii) distributional part: int G^a_b dy_proper across [-10eps, 10eps], eps=1e-5 (uplift units, dy = sqrt(wF0) drho) ==
+   Israel thin-wall prediction (s=+1): x-block (t,x1..x3) -6k, rho-rho 0, internal 6-block -8k * delta^a_b, k = 1/sqrt(wF0)
+  KINK (a,b)=(0.37,1.11): diag(int G^a_a dy)/k = ['-6.000529', '-6.000529', '-6.000529', '-6.000529', '-0.0005290525', '-8.000449', '-8.000449', '-7.999819', '-7.999923', '-7.999951', '-7.999791']; max offdiag/k = 0.000498
+  KINK (a,b)=(2.01,0.23): diag(int G^a_a dy)/k = ['-6.000713', '-6.000713', '-6.000713', '-6.000713', '-0.0007131401', '-8.000734', '-8.000734', '-7.999652', '-7.999621', '-7.999666', '-7.999607']; max offdiag/k = 0.00107
+  KINK (a,b)=(1.572,0.7866): diag(int G^a_a dy)/k = ['-6.000616', '-6.000616', '-6.000616', '-6.000616', '-0.0006157117', '-8.000587', '-8.000587', '-7.999704', '-7.999813', '-7.999813', '-7.999704']; max offdiag/k = 0.000775
+  WRONG_SIGN (a,b)=(0.37,1.11): diag(int G^a_a dy)/k = ['5.999471', '5.999471', '5.999471', '5.999471', '-0.0005290525', '7.999551', '7.999551', '8.000181', '8.000077', '8.000049', '8.000209']; max offdiag/k = 0.000498
+  WRONG_SIGN (a,b)=(2.01,0.23): diag(int G^a_a dy)/k = ['5.999287', '5.999287', '5.999287', '5.999287', '-0.0007131401', '7.999266', '7.999266', '8.000348', '8.000379', '8.000334', '8.000393']; max offdiag/k = 0.00107
+  WRONG_SIGN (a,b)=(1.572,0.7866): diag(int G^a_a dy)/k = ['5.999384', '5.999384', '5.999384', '5.999384', '-0.0006157117', '7.999413', '7.999413', '8.000296', '8.000187', '8.000187', '8.000296']; max offdiag/k = 0.000775
+  NO_SOURCE (a,b)=(0.37,1.11): diag(int G^a_a dy)/k = ['-0.0004090525', '-0.0004090525', '-0.0004090525', '-0.0004090525', '-0.0004090525', '-0.0002488389', '-0.0002488389', '0.000380786', '0.0002771054', '0.0002488389', '0.0004090525']; max offdiag/k = 0.000498
+  NO_SOURCE (a,b)=(2.01,0.23): diag(int G^a_a dy)/k = ['-0.0005931401', '-0.0005931401', '-0.0005931401', '-0.0005931401', '-0.0005931401', '-0.0005338544', '-0.0005338544', '0.0005476479', '0.0005793466', '0.0005338544', '0.0005931401']; max offdiag/k = 0.00107
+  NO_SOURCE (a,b)=(1.572,0.7866): diag(int G^a_a dy)/k = ['-0.0004957117', '-0.0004957117', '-0.0004957117', '-0.0004957117', '-0.0004957117', '-0.0003873072', '-0.0003873072', '0.0004957116', '0.0003873074', '0.0003873072', '0.0004957117']; max offdiag/k = 0.000775
+  MISPLACED(delta=0.3) (a,b)=(0.37,1.11): diag(int G^a_a dy)/k = ['-0.0004090525', '-0.0004090525', '-0.0004090525', '-0.0004090525', '-0.0004090525', '-0.0002488389', '-0.0002488389', '0.000380786', '0.0002771054', '0.0002488389', '0.0004090525']; max offdiag/k = 0.000498
+  MISPLACED(delta=0.3) (a,b)=(2.01,0.23): diag(int G^a_a dy)/k = ['-0.0005931401', '-0.0005931401', '-0.0005931401', '-0.0005931401', '-0.0005931401', '-0.0005338544', '-0.0005338544', '0.0005476479', '0.0005793466', '0.0005338544', '0.0005931401']; max offdiag/k = 0.00107
+  MISPLACED(delta=0.3) (a,b)=(1.572,0.7866): diag(int G^a_a dy)/k = ['-0.0004957117', '-0.0004957117', '-0.0004957117', '-0.0004957117', '-0.0004957117', '-0.0003873072', '-0.0003873072', '0.0004957116', '0.0003873074', '0.0003873072', '0.0004957117']; max offdiag/k = 0.000775
+
+== magnitudes at N=4880 (physical units l_p = 1; 2 kappa^2 = (2pi)^8 l_p^9, T_M5 = 1/((2pi)^5 l_p^6): CONDITIONAL standard normalisation) ==
+  measure check: Vol(round S4, radius 1/2) = 1.64493406684823 (exact pi^2/6 = 1.64493406684823)
+  D = X0 mu0^2 + X1 mu1^2 + X2 mu2^2 in [0.6597539554, 1.319507911] (401x201 scan)
+  physical k = 1/(l sqrt(w F0)) in [0.025358493, 0.028463946] / l_p   (L5 = l e^f0 = 37.65372059 l_p)
+  distributional Ricci scalar weight  int R dy = 16k in [0.405736, 0.455423] / l_p
+  Israel wall energy density rho_w = 6k/kappa^2 in [1.25275e-7, 1.40617e-7] l_p^-10 ; internal pressures p = -8k/kappa^2
+  thin-wall centre for physical thickness eps_y: l_p^2 sqrt(Riem^2) = 4 k l_p^2/eps_y -> at eps_y = l_p: [0.101434, 0.113856]; reaches 1 at eps_y = 4k l_p^2 <= 0.113856 l_p
+  BPS M5/E8 comparison: N_req = (12N/pi^2) * 4pi^2 * int k sqrt(det g6)/sqrt(det g_Sigma) dalpha dbeta
+     horizontal Sigma measure: N_req/(2N) = 1.28761102 ; fixed-phi embedding measure: N_req/(2N) = 1.031562694
+
+== odd G4 at the wall: flux integral and parity ==
+  |int_S4 G4| (uplift, lambda=1/16, kappa=1) = 9.86950057171467  (pi^2 = 9.86960440108936);  N = flux/pi^2 * 4880 = 4879.94866184
+  odd extension: [G4] = 2 G4 -> wall charge int_S4 [G4]/(2 pi l_p)^3 = 9759.89732368 = 2N_flux
+  nonzero G4 index sets (coords t,x1,x2,x3,r,u,v,alpha,beta,phi1,phi2 = 0..10): [(5, 6, 7, 10), (5, 6, 8, 10), (5, 7, 8, 10), (7, 8, 9, 10)]
+  every component tangent to a constant-r wall (no index 4): True ; every component carries a phi2 leg (index 10): True
+  Bianchi controls (exact algebra on the odd profile G(rho) = sgn(rho) G_MN2): required source J = 2 G_MN2|wall delta(rho); residual charge int_S4(dG - J):
+     correct source: residual = 0*N = 0 units at the wall
+     NO source: residual = 2*N = 9760 units at the wall
+     WRONG-SIGN source: residual = 4*N = 19520 units at the wall
+     MISPLACED source (at rho=0.3): residual 9760 at rho=0 and -9760 at rho=0.3
+
+== global scan of bulk MN2 invariants (rho=0.5, KINK eps=1e-4 => exact MN2), 25 alpha x 13 beta incl. 1e-6 edges ==
+  325 pts: Riem^2 max 3407.980947 at ['1.572', '1.0e-6']; Ric^2 max 3311.983676; Weyl^2 max 1939.188188; |R| max 11.999974; max|eig Q| 13.333308 at ['1.572', '1.0e-6']
+  l_p^2 sqrt(Riem^2)_max = 0.0236488 ; l_p^2 max|K_sec| <= 5.4013e-03
+  edge refinement 182 pts: Riem^2 max 511.8079596; max|eig Q| 6.349604
+
+== Sigma systole with Gamma = Bolza (OW 7ff8299d) ==
+  sys_hyp(Bolza) = 2 arccosh(1+sqrt2) = 3.057141838962 (CONDITIONAL lit.); rho_Sigma = 26.62520117 l_p; unwarped sys = 81.39701646 l_p
+  warped 11D lower bound rho_Sigma*min D^(1/6)*sys = 75.94610177 l_p ; upper bound (closed lift on mu1=0 locus) rho_Sigma*min_mu1=0 D^(1/6)*sys = 85.24661696 l_p
+  warp factors D^(1/6) in [0.93303299, 1.0472941]; rho_Sigma*D^(1/6) in [24.8422, 27.8844] l_p (PP warped range for MN2: [24.8, 27.9])
+
+DONE 245s

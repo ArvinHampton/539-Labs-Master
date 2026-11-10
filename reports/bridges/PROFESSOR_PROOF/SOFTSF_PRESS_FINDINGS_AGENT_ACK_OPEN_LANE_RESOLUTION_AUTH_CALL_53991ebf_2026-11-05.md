@@ -1,0 +1,2 @@
+# Soft SF PRESS — Agent ACK OPEN LANE-RESOLUTION AUTH call-53991ebf — 2026-11-05 ~13:10+ CST
+FINDINGS reports/FINDINGS_AGENT_ACK_OPEN_LANE_RESOLUTION_AUTH_CALL_53991ebf_2026-11-05.md sha256 7cdef134fbdce78dc427a870e0fe0104ebdbe5898579dce9d96a8edd5bcc060e → Auditor. Soft SF ACK OPEN LANE OW a0c2ed5a…; invent HOLD stands; tip untouched; No CERT; physics paper CONFIRM absorbed PRESS 82d9c2f6 CLEARED. No RECS.

@@ -1,0 +1,2 @@
+# ACK — NL Soft SF tip-pin rebind (t170u, 2026-10-26, America/Chicago)
+ACK Physicist directive: NL live tip bind → 64d23f39… . FINDINGS sha 779faf6170e63f8cc54a78cf3600deb712310925622618c26fb6ec6e7cbf3838. Stub d8ebfc45aaa0d1f11e6742157717f25f711362cdd90f4d1c0f754a1b8f55a4e0 (backup obs-bridge-NL-61Omega-photon-brane.pre-softsf-tippin-4099d93c.md). tip_touched NO; no invent; packaging Owner-hold; Q7 KEEP; Bridge PARTIAL / READY NO. Auditor Soft SF CONFIRM pending.

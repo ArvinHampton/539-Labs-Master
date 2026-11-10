@@ -1,0 +1,6 @@
+# OWNER WRITE — voice call-11fd320e — 2026-11-09 18:16 CST (America/Chicago)
+Owner direction (voice): Auditor produces the full report on all advancements since version 17 across Project Quantum Comp. That covers Local Path (Bridge C A1→Ξ→RTA from local modular), Non Local Path (EH 11D / reverse-parity PT / simulated physics via non-local QM) and Auditor's own full-corpus audit, all toward RTA and the geometric bridge for local and non-local physics in S²-11DM²ET-X.
+- State the version-17 baseline FIRST so the delta is clear, then list every advancement, decision, result, open item and status change since v17, in chronological order.
+- Must cover: vacuum adoption and the four vacua; the E₈ wall, junction and count-gap work; Bolza as Γ for Σ; wall curvature; the curvature-squared (tr R²) wall term; non-BPS E₈ existence; the fibre equations with traceless stress; PP's gate audit; MR2's checks; the citation-scope corrections (3f160803, 36683379); and anything else that moved.
+- Keep PROVED, CONDITIONAL, OPEN and REFUTED distinct. Owner decisions are cited by OW sha. Pasted or Gemini-style text not adopted is marked as such.
+Unchanged: additive writes only; RTA v16 and v17 records are not overwritten; tip 7cddb188 untouched; no CERT; no Gemini or external sends.

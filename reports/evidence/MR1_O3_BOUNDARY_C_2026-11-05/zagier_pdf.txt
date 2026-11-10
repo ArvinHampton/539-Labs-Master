@@ -1,0 +1,2374 @@
+lnventiones math. 30, 1-46(1975)
+9 by Springer-Verlag 1975
+
+
+
+
+   Modular Forms Associated to Real Quadratic Fields
+                                       D o n Zagier (Bonn)
+
+
+    The purpose of this paper is to construct modular forms, both for SL27Z
+(and certain of its congruence subgroups) and for the Hilbert modular group of
+a real quadratic field.
+    In w1 we fix a real quadratic field K and even integer k > 2 and construct a
+series of functions co,,(Zl, z2) ( m = 0 , 1, 2,...) which are modular forms of weight k
+for the Hilbert modular group SL2(9 ((9=ring of integers in K). The form coo is a
+multiple of the Hecke-Eisenstein series for K, while all of the other co,. are cusp
+forms.
+    The Fourier expansion of co,. (z 1, z2) is calculated in w2; each Fourier coefficient
+is expressed as an infinite sum whose typical term is the product of a finite ex-
+ponential sum (analogous to a Kloosterman sum) and a Bessel function of order
+k-1.
+    The main result is that, for any points z 1 and z 2 in the upper half-plane .~, the
+numbers m k-1 co,,(z 1, z2) (m= 1, 2, ...) are the Fourier coefficients of a modular
+form (in one variable) of weight k. More precisely, let D be the discriminant of K,
+e.=(D/ ) the character of K, and S(D, k, ~) the space of cusp forms of weight k for
+Fo(D ) with character e; then for fixed z 1, zzc .~, the function
+
+                    ~c~(Zl ' Z2 ; , [ ) = ~ m k-1 O)mtZl,
+                                                    "   z2J, e 2 ~ i m r   (ze.~)
+                                          "=1
+
+(considered as a function of z) belongs to S(D, k, e,). What we in fact prove is an
+identity expressing f2 as a linear combination of Poincar6 series for the group
+Fo (D) and character e. The necessary facts about such Poincar6 series are collected
+in w the proof that f2 is a modular form is given in w (in these sections we assume
+for simplicity that D = 1 (rood 4)).
+    In [2] and [8], K. Doi and H. N a g a n u m a prove the following: assume D is a
+prime (~- 1 (mod 4)) having class number one, and let f ( z ) = ~,~=t a,, ezni'rC S(D, k, ~)
+be a normalized eigenfunction of all Hecke operators T(n). Then
+
+
+
+                                      \n=l         !   \n=l
+
+ is the Mellin transform (in a suitable sense) of a function f of two variables which
+ satisfies
+
+                       f -Zl '
+2                                                  D. Zagier
+
+
+as well as the trivial invariance property
+        f (ez zl + p, ~, 2 z~ + # ' ) = f ( z l , z2)   (# an integer of K, e. a unit of K).
+
+    In particular, i f K is Euclidean, so that the matrices (;               ~-1e'-1#~
+                                                                                    0 and
+                                                                                       1 ]( _        O)
+generate   S L 2 (~, then f is a Hilbert modular form; to be sure, this is the case only
+for D = 5 , 13, 17, 29, 37, 41, 73 (cf. [3], Theorem 247). We show (in w that f(z 1, z2)
+is, up to a scalar factor, the Petersson product (with respect to the variable z)
+off(z) with O(zl, z2; z). It follows that f ( z l , Z2) is always a cusp form for SL2(9. 1
+Thus f~---,f extends to a linear map from S(D, k, e) to the vector space of cusp
+forms of weight k for SL 2 (9; the image of this map has dimension 89dim S(D, k, e)
+and is spanned by the forms COm(Z~,ZZ) (m = 1, 2 .... ).
+    In Appendix 1 we define the forms ~o,,(Zl, z2) for the previously excluded case
+k = 2 and reprove all the results of the paper in this case; in particular, the restriction
+k > 2 can be lifted in the work of Doi-Naganuma. In Appendix 2 we investigate
+briefly the modular forms
+                                               1
+                       f~(z)=    ~      (azZ+bz+c) k         (z~.~, A e N )
+                                   a, b, cEff.
+                                 b2-4ac=A
+
+of weight 2k for the full modular group SL 2 7/; these forms arise naturally when one
+looks at the restriction of co,,(Zl, z2) to the diagonal z 1 = z z in .~ x f3.
+    The main results of this paper (in the case when the discriminant D is a prime)
+were announced in a Comptes Rendus note [12].
+
+    I would like to thank Professor Hirzebruch, who suggested studying the forms ~,,, as well as Deligne
+and Harder for several useful conversations.
+
+    This paper was written at the lnstitut des Hautes Etudes Scientifiques (Bures-sur-Yvette, France)
+and Sonderforschungsbereich Theoretische Mathematik (Bonn, Germany) and forms part of the
+author's Habilitationsschrift (Bonn).
+
+    w 1. Definition and Properties of co,. . . . . . . . . . . . . . . .       2
+    w2. The Fourier Coefficients of co., . . . . . . . . . . . . . . .         9
+    w3. Poincar6 Series for Fo(D) . . . . . . . . . . . . . . . . . .         17
+    w4. The F o r m f2(zl, z 2 ; z) . . . . . . . . . . . . . . . . . . .     22
+    w 5. The D o i - N a g a n u m a Map . . . . . . . . . . . . . . . . .    29
+    Appendix 1 : The Case k = 2 . . . . . . . . . . . . . . . . . .           39
+    Appendix 2: Restriction to the Diagonal . . . . . . . . . . . . .         43
+
+
+
+                                w 1. Definition and Properties of o),,
+    We will use the following notation:
+K    a real quadratic number field;
+D    the discriminant of K;
+
+i Lenstra has pointed out to the author that, by a recent theorem of Vaserstein, the matrices
+(1 # ) a n d ( 0 1) always generate SL26), so that this does in fact follow from the work of Doi-
+ 0 1          -10
+Naganuma.
+                            Modular Forms Associated to Real Quadratic Fields                               3
+
+
+(9      the ring of integers of K;
+(9*     the group of units of(9;
+b       the different of K (i.e. the principal ideal (l/D));
+x'      the conjugate over Q of an element x e K ;
+N ( x ) the norm of x, N ( x ) = x x ~ ;
+Tr(x) the trace of x, T r ( x ) = x + x ' ;
+0       the upper half-plane {zeC] I m z > 0 } ;
+k       a fixed even integer > 2.
+      For each integer m ~ O , we define
+             ~Om(~,, ~2)----           Y/                        i                      (z,, z2 esS),      (1)
+                                     ~, b~zz   (a z 1 z 2 + ;t z 1 + 2' z 2 + b) k
+                                     2~b - I
+                               N(~.)-ab=,ntD
+
+
+
+where the summation is over all triples (a, b, 2) satisfying the given conditions,
+and the notation ~' indicates that, for m=0, the triple (0, 0, 0) is to be omitted.
+One easily checks that, for zl, z2e O, the expression a z~ z2 + 2 z 1 + 2'z z + b never
+                                                                                     _),z2_b
+vanishes      indeed, a z l z 2 + / c z l + ) ~                 implies z~            azz+,~     , and this is
+
+impossible since the determinant of                                    is < 0        and that the series con-
+verges absolutely. Therefore a),~ is a holomorphic function in .~ x .~. Its main
+properties are summarized in the following theorem.
+    Theorem 1. (i) For each re>O, (o,,(zl, z2) is a modular .form o f weight k with
+respect to the HiIbert modular group SL 2 (9.
+       (ii) OJo is a multiple o f the Hecke-Eisenstein series o f weight k of the field K.
+      (iii) (o,, is a cusp Jorm .['or m > O.
+      (iv) co,,=0/f - 4 m is not a quadratic" residue o f D.
+  Proof. (i) We recall that a Hilbert modular form of weight k for S L 2 (9 is a holo-
+morphic function F in 0 x 0 satisfying
+
+          F ( CCq + fl       ~'z 2 + fl' )
+             \7z~+(3 , 7, z2+(3, :(yzl +6)k(T'z2+(3')kF(zl,z2)                             (z~,Zze~)       (2)
+
+      or ny--x         ?     ,5 e SL2(~ and also satisfying certain regularity conditions
+
+(explained below) at the "cusps". We verify only Eq. (2), since the conditions
+on the behaviour of m,~ at the cusps are contained in the statements (ii) and (iii)
+of the theorem.
+
+         7   (5 e S L 2 ( 9 ' t h e n ' f ~
+
+
+
+
+                           a* q zz + 2*z I + 2 * ' z z + b *
+                                 (Tz~ +a)(Yz2 +~')
+4                                                       D. Zagier
+
+with
+                                  a* = aotc( + 2a])' + 2' cd ]) + b]) ])',
+                                  2* = a a f l ' + 2 a 5 ' + 2'fl'])+b])6',
+                            b * = a f l f l ' + 2 fl~' + 2' f l ' b + b 3 b ' .
+Thus a* = a N (c0 + Tr (2 (a y')) + b N (]))~ 7Z since (by definition) the trace of the prod-
+uct of an element of (9 and an element of b -1 is an integer; similarly, b'E7/ and
+2*E b - 1. F u r t h e r m o r e N (2*) - a* b* = N (2) - a b. Therefore
+                ( O~Z 1 -[- j~ O~'Z 2 At- fl' )
+            COt,, -- - -   ]),
+                 \?Zl+, 5'     z2+6'
+               =(])Zl+b)k(])'Zz+6') k                  ~'           (a*zlzz+2*z~+2*'z2+b*)                 -k
+                                                    a,b,).
+                                                N(2)--ab=ra/D
+               : (]) zl + 6) ~ (])' z2 + 6') ~ co,.(zl, z g ,
+
+the latter equality because (a*, b*, 2*) runs over the same set of triples as does
+(a, b, 2) and because the sum converges absolutely.
+       R e m a r k 1. F r o m the general congruence x'-_-x (mod b) (x~(9) and the equation
+    6 - fl ]) = 1, one deduces that in the above formula
+                                               2* -- 2            (mod (9).
+Thus, for each v s b -1 such that N ( v ) ~ - m / D (mod 1) we could define a Hilbert
+modular form co,,(zl, z2; v) by restricting the summation in (1) to those 2 with
+2=_v (mod (9) (notice that, for 2 e b -1, N(2) (mod 1) depends only on 2 (mod (9)).
+The function oom(z~, zz) would then be the sum of the (finitely many) functions
+corn(z1, z2; v) with v running over the residue classes of b -1 (mod(9) for which
+N ( v ) = _ m / D (mod 1).
+
+
+modular form is as follows. F o r any matrix M =
+                                                                                       b)
+      R e m a r k 2. A more invariant way of writing co,. and seeing that it is a Hilbert
+
+                                                                                       d e G L 2 IR, let
+
+
+
+                    ~)M(ZI'Z2)~- d e t M
+                                            1           d t
+                                                       dz 1        z2-Mz
+                                                                        1
+                                                                               1
+                                                                                   )
+                                                              1                                                 (3)
+                                    -- ( C Z l Z 2 _ a Z l + d z 2 _ b ) Z                  (Zl' z2 E'~)
+
+(here M z 1       azl+bl;         the second formula serves to define 4~M(zl,z2)even if
+\                 cz 1 +d l
+det M =0, while the first shows that qSM(zl, z2) has no poles in .~ x .~ if det M < 0 .
+On      e.sil, chocks that,                =                          =                      e GL 2 N,
+                                                  71     (51/                ])z       62
+
+                 q5M(A 1 z 1, Az Z2) = (]21 Z 1 -I- 61) 2 (])2 Z2 ~'- 62) 2 ~)A~MA1 (Zl' Z2)'                   (4)
+
+
+where A * =    ( -])2 -t a22)_(detA2)A l istUeadjointof A2.Let
+                                      d=        {M~ ~1/2((9)[ M * = M'}                                         (5)
+                         M o d u l a r F o r m s A s s o c i a t e d t o Real Q u a d r a t i c Fields                          5
+
+
+be the set of matrices whose adjoints e%ual their conjugates over ~ ; a typical matrix
+                                         0         bVD
+of J has the f~         M = ( - a ]/D                  O' ) w i t h a ' b e Z ' O ~ ( 9 " w r i t e O = - 2 l / T D w i t h
+2 e b - i ; then ~bM(zl, z 2 ) = D -1 (az I z 2 + 2 z 1 + 2 ' z 2 + b) -2. Hence
+                              corn(z1, z2)= D k/2                ~'       q~M(zl,z~)kj2,                                       (6)
+                                                            Ms,~
+                                                          detM= -m
+
+where the prime on the sigma indicates that, for m = 0 , the zero matrix is to be
+omitted from the summation. That (o,1 satisfies (2) now follows immediately from
+Eq. (4).
+    (ii) We recall the definition of the Hecke-Eisenstein series. Let (temporarily)
+K be a totally real number field of arbitrary degree n over (I~, (9 its ring of integers,
+(9* the group of units of (9, C an ideal class. Set
+                                                                                                     t
+       Fk(zl,...,z,; C)=2N(a) k               ~                      +v(X~)~               V~,))k , (7)
+                               (,, ~)~ . . . . i~o, o)~),,,* (p~) z~        ...(g(") z,, +
+where z, .... , z, are in .~ and a is any ideal in C; here/2 ~), v(i) are the conjugates
+of #, v and the summation is over non-associated non-zero pairs of numbers in n.
+(The factor 2 is inserted so that for K = 11) Fk agrees with the usual Eisenstein series
+~(m, ,)~ • ~- ~(0,0)}(m z + n)- k where one does not divide by the action of (9* = { _+ 1}.)
+Clearly, replacing a by (c0 a (c~eK*) does not change the right-hand side of (7), so
+that the expression really does depend only on the ideal class C. The Hecke-
+Eisenstein series of the field K is then defined as the (finite) sum
+                                  Vk(z,, ..., z , ) = ~ Fk(zl . . . . . z,; C).
+                                                             C
+
+We wish to prove (in the case that K is a quadratic field) the formula
+                                                        ~(k)    ,
+                                       coo (za, z2) = - ~ k ~ Fktzl, Z2).                                                      (8)
+
+Here ~(s) is the Riemann zeta-function, ~K(S) the Dedekind zeta-function of K.
+     First of all, one of the summation conditions in the definition of coo is 2 2' - a b = 0.
+This implies 2~(9 (since N(2), Tr(2)e~). It is also homogeneous in (a, b, 2), i.e.
+if the triple (a, b, 2) appears in the sum, then so does (ra, rb, r2) for each positive
+integer r. Hence
+                     COo(z~, z~) = co~ (z~, z~) ~ r - ~ = ~(k) co~ (z~, z~),
+                                                           r=l
+with
+                     co~(zl,z2)=                  ~              ( a Z t Z z + 2 Z l + 2 ' z 2 + b ) -k                        (9)
+                                         la, b, A) primitive
+                                               )~2'=ab
+
+
+(where "primitive" means that (a, b, 2)EZ x Z x (9 is not divisible by any integer
+>l).
+   Similarly, define
+                F~,(zl ' z2; C ) = 2 N ( a ) k           2"               1                                                   (10)
+                                                      ~,, v~=, (l~zl + v)k(g'z2 + v') ~ '
+6                                                  D. Zagier
+
+where the summation is over non-associated pairs of numbers /~, v e K whose
+greatest common divisor, 6(/~, v), is the ideal a (again, this depends only on C,
+not on a). Then
+                                                                 1
+             Vk (z1, z 2 ; C) = 2 N (a)k ~       ~*
+                                        id.~b ~., ~)=.b (/~Z~+ V)k(ffZ2+ V')k
+(since for any (/~, v) in the summation of (7), b(g, v) is divisible by a)
+
+                             = 2N (ci)k ~    1     F~(z 1 z2; lab]),
+                                        V 2N(ab) k
+(where [a b] is the ideal class containing a b)
+                             =Z N(b) -k F~(z 1, zz; C. [b]).
+                                b
+Hence
+
+                                C
+
+                             = ~ Z F~*(~,,~; C-[b])N(~)-~
+                                b     C
+
+(the reversal being permitted since ~ is finite)
+                                               C
+                             =E       N ( b ) - k E Eke(z1,-72; C)
+                                  b               C
+(since, for each b, C [b] runs over all ideal classes as C does)
+
+                                           C
+Hence to prove Eq. (8) we must show that
+                               (o~(zl, z2)= ~ F~'(zl, z2; C).                                   (11)
+                                                     C
+For each ideal class C, let
+                O.)~(Zl,Z2; C ) =              E          (azlz2 +'~'zl + 2 ' z z + b ) - k "   (12)
+                                      (a, b, )0 primilive
+                                           2~.'~ab
+                                          6(a, ~.')eC
+Clearly co~(z1, zz)= ~ o)~(z 1, z2; C), so that (11) will follow if we show that, for
+each C,              c
+                           co~(zl, z2; C)=F~(zl, z2; C).                         (13)
+Fix the class C and an ideal a e C, and let
+          S = {(a, b, 2)e 7Z x 7/x 6) I(a, b, 2) primitive, ,t.2' = a b, 6(a, 2') e C},
+          T= {(~, v)~(a • a- ((0, 0)))/(9" 1~(~, ~)= al
+(recall that 6(, ) denotes g.c.d.). We define a map
+                                   m: S--~T
+as follows. Given (a, b,)OeS, one can write the quotient a/2'=2/b as x/y for
+some x, yea. Then the ideals 6(x,y) and 6(a, 2') belong to the same class, i.e.
+6(x,y)eC. Also 6(x,y) is divisible by a, and aeC. Therefore 6(x,y)=(o)a for
+                         Modular Forms Associated to Real Quadratic Fields                              7
+
+some principal ideal (or), and it follows that x and y are divisible by a and that
+p = x/a, v= y/a are in a and have greatest c o m m o n divisor a. On the other hand,
+it is clear that the two conditions p/v = 2/b and 6 (p, v)= a determine the pair (p, v)
+up to possible multiplication by a unit. We set re(a, b, 2 ) - ( p , v).
+     The m a p m is onto, for given #, v we choose an integer b1~;g, b 1 + 0 such that
+
+21 = b l -~- is in (9; then al =N(21)/bl is in Q. Multiplying al, bl, 21 by the d e n o m -
+inator of al, we obtain (a2, b 2 , 5 [ 2 ) ~ X Z X (9 with a 2 / A ' 2 = 2 2 / b 2 =p/v. Dividing
+(a2, b2, )~2) by the largest rational integer r for which (a, h, 2)=(a2/r, bz/r, 22/r )
+satisfies the same conditions, we obtain a primitive triple (a, b, 2)eS whose
+image under m is clearly (p, v).
+     Finally, the m a p p i n g m is two-to-one: m(al, b t, 21)=re(a2, b2, )-2) if and only
+if (a 1 , b 1 , 21)= _ ( a 2 , b 2 , 22). Indeed, re(a1, b 1 , 2 1 ) = m ( a 2, b2,22) implies 2 1 / b I =
+                                                                                                  bo
+22/b 2. Let b o be the greatest c o m m o n divisor of b I and b 2 and write 2o = bT- z,,
+ao=2o2'o/bo . Then 2oe(9 and ao~)7, for we can choose r, s e Z such that bo =
+                                                                            bl
+rb 1 + sb2, and then 2o = r21 + s22, ao = ral + sa 2 . Then (a,, b I , 20 = b~- (a0, bo, 2o),
+so (since (al, bl, 21) is primitive) bl/b o = + 1. Similarly b2/b o = 4- 1 and so (a2, b2,22)
+ = -I-(al, bl, 21).
+    If re(a, b, 2 ) = ( p , v), then
+                   aZ 1Z 2 -~-2Z 1 q-2'Z 2 -Jr-b= +_N (a) 1(/, Zl + v)(p, z2 _}_v').                 (14)
+Indeed, from p / v = a/2'= 2/b we deduce that
+
+                        (# z 1 + v) (p'z 2 + v') = n (a z 1z 2 + 2 z I + 2'z 2 + b)
+for some nell~, n4-0, and the primitivity of (a, b, 2) implies that n is an integer,
+and in fact that In[ is the largest integer dividing 6(pp',pv', vv'). But the greatest
+c o m m o n divisor (in the sense of ideals) of pp', pv', p'v, and vv' is
+                    a (p p', p ~,', p' v, v v') = a ((p) a (p', v'), 0') a (p', ~,'))
+                                                  = a (p, v) a (p', v') = a a' = (N (a)),
+
+so n = i N ( a ) . It follows immediately from (14) and the fact that m is two-to-one
+and surjective that
+                  co~(zl,z2;C)=               ~      ( a z l z 2 + 2 z l + 2 ' z 2 + b ) -k
+                                         (a, b, ~.)eS
+                                       ~-2       E N(fl)k(pz1 -t-V)-k(p'Z2-I-V')-k
+                                             (it, v)~ T
+                                       = Vy(z,, Z2; C ) .
+
+
+    (iii) This property will be proved in w 2; here we only recall what it means
+for co,, to be a cusp form for S L z (9. A function F h o l o m o r p h i c on S3 x .~ and
+satisfying (2), satisfies in particular
+
+                              F(zl+O, z 2 + O ' ) = F ( q , z 2 )             (0~(~),
+8                                       D. Zagier
+
+and therefore has a Fourier development of the form
+                             F(zl,z2)= ~ a~.e2ni(vz'+v'zz)
+                                        v~b   - I
+
+
+
+The regularity condition which a modular form F(z,, z2) must satisfy is that
+a~=0 if v<0 or v'<0, i.e. that F has a Fourier development
+                         F(zl,z2)=ao § ~ ave 2~iCvz~+v'Z2)                         (15)
+                                              veb-i
+                                               v>>O
+
+                (v>>0 means v totally positive, i.e. v>0 and v'>0).
+If F is a cusp form, then also a o = 0 ; an equivalent condition is that
+         F(zl,z2)=O(e - c ~ 2 )    as   ylyz---~ov (yl=Imzl,y2=Imz2)
+t because, for v e b - ' totally positive, vv'yly2=> Z~-v-2
+                                                       D so vyx+v'y2>=2
+[e2=i(vz,+,"z2)lK=e-47t~).
+
+    If the class number of K is 1, then this is the only condition that F must satisfy.
+In general, we require that, for each W= (~ ~)~SL2K, the function
+
+                                                        ( a z 1+b   a'z 2 +b')
+          (FI W)(zl, Zz)=(cz 1+d)-k(c'z2+d') --k F \czl +~ , c, z2+d ,
+
+satisfy a similar condition as y, y2--~. By (2), FI W satisfies
+                        (Ft W)(Zl +0, z 2 +0')=(El W)(z,, z2)                      (16)
+
+whenever W(~ 01 ) W - c1S L 2 ( 9 . But W(~ ~ ) W - =1k _ c[1-acO
+                                                            20     a20 ~, sothis
+                                                                  l+acO]
+condition is equivalent to the three conditions
+                             Oa2G(.9,   Oace(9,       Oc2e(ff ,
+
+i.e. the fractional ideal (0 -1) divides (a-2), (a-'c -1) and (c-2). Hence (16) holds
+whenever (0-1)]cS(a-2, a-Xc-l,c-2), where (as in the proof of ii)) c5(xl, ...,x~)
+denotes the greatest common divisor of the fractional ideals (x~), ..., (x,). But
+(~(a-2, a-lc-t,c-2)----(~(a-l,c-1) 2, so the condition is that 066(a-l,c-1) -2.
+Denote 6(a -1, c-X) -2 by M. Then we have shown that (16) holds whenever O6M,
+and it follows that F] W has a Fourier expansion of the form
+                         (F] W)(zx, z2)= ~ a~ e 2~"~'+*'~},                        (17)
+                                        veM*
+where M * = {veKI Tr(vO)e7/ for all :OeM} is the complementary module of M
+(here M*=b-lc~(a-l,c-~)2). The condition that F be a modular form is that,
+for each W~SL, EK, the coefficients a~ in (17) with v < 0 or v ' < 0 vanish; if also
+a 0 = 0 in (17), i.e. if F[ W has an expansion
+                         (F] W)(z,, z2)= ~ a~ e 2ni(vz'+~'z2)                      (18)
+                                        v~ M*
+                                         v>O
+                       Modular     Forms       Associated   to Real Quadratic       Fields                  9
+
+
+for each WeSL 2 K, then F is a cusp form. There are in fact only finitely many
+such conditions, since, as one easily checks, the condition on W= (~ ~ ) t h a t FIW
+have a development of the form (18) depends only on the ideal class of the ideal
+,~(a, c).
+     Now take F=oJ,,, and expand
+                                 OOm(Zl" Z 2 ) =     Z Cmv e2ni(vz' + v'z2l.                             (19)
+                                                    v~b - 1
+
+We will calculate the Fourier coefficients c,,v in w2, and will see then that c,,~=0
+if v<0 or v'<0 and also that CmO=0 for m>0, i.e. that o),, for m > 0 does have a
+           expansion in which only totally positive v occur. If W= -(~ fi)-
+then,F~     the same argument used to prove i),                      7 ,5 e SL 2 K,
+
+          ((~),,l W)(Zl, Z2)=Dk/2()'zt +b)-k(Y'z2 4-?J')-k                     ~'       ~OM(WZ1, W'z2)
+                                                                              M ~ael
+                                                                        det M = - rn
+
+                           =Dk/2         Z    t~)W'*Mw(Z1,Z 2 ) k/2
+                                        M E,~
+                                     det M = - m
+
+                           = Dk/2          ~        q~M(21, Z2) k'2,
+
+                                     det M = - m
+where
+                                 "-~r = W'*,~ W
+                                      = W'-I~'W
+                                     = {M e W'-~JJl2((r WIM'= m*}.
+
+A typical matrix M e J 1 has the form M =                       ( - a l0f D               1
+                                                                                       0' } with O~K, a, heQ,
+and, writing 0 = 2 l/D, we obtain
+                  (%,1W)(zl, z2)=                  ~        (aqz2+;tq +)o'z: + b) -k,                     (20)
+                                              (a, b, ).)EL
+                                           2,a.' -- ab = rniO
+
+where L c Q • Q • K is the lattice (i.e. free 2g-module of rank 4) of triples (a, b, 2)
+for which W' ~ - a LID - 2 ' v-~/-D]W-legJl2 (9. We will not in fact calculate the
+Fourier expansion of co,. [ I4/,,but in view of the similarity between Eqs. (20) and (I)
+it will be clear that the method used in w2 to find the Fourier development of (o.,
+applies equally to prove that m,.[ W has a Fourier series of the type (18).
+     (iv) This property is clear, since the summation in (1) is empty unless
+ - 4 m ~ x 2 (mod D)for some x -(write 2 - x + y l / D in (1) and multiply by - 4 D /
+                                \            21/b                                   I
+
+                            {} 2. The Fourier Coefficients of to,,,
+   We wish to evaluate the Fourier coefficients Cmv (m>=O,vsb -1) defined by
+Eq.(19). We first break up the sum (1) into subsums corresponding to various
+10                                                   D. Zagier
+
+values of a"
+                   O)m(Zl ' Z2):     E (oa(z1 ' Z2)
+                                    ae~
+
+                                   : co~        z2)+2f o~(zl, z2),
+                                                             a=I
+where
+                   co~(zl,z2)=             ~'          (az~z2+2zl +)~'z2+b) -k.                  (21)
+                                            bsE
+                                          2El0-1
+                                    2 2 ' - ab = miD
+
+
+The individual pieces co~ are no longer modular forms of weight k, but they do
+satisfy the periodicity property ~o~,(z1 +O, z2+O')=o)~,(zl, z2) (0cO), and hence
+each ~02, has a Fourier expansion
+
+                              co~,(zl,z2)= ~ c...~eZ,~.v=,+~'z2)                                 (22)
+                                                    vEb- 1
+
+
+The Fourier coefficients of COrnare then given by
+                                                                  oo
+                                            0       a
+                                       c,~=Cm~+2 ~ cmv.                                          (23)
+                                                               a=l
+
+We wish to compute the c~,v and, in particular, to see that c~,v=O unless v>>O
+or   v=m=0.
+
+     The computation of c~,~ is different according as a = 0 or a > 0 .
+      Case I. a = 0 .
+     The condition 2 2 ' - a b = m / D now becomes just 22'=re~D, so co~ z2)_=0
+if - r n is not the norm of an element of (9. The summation on b e Z is unrestricted.
+Thus (for m # 0 )
+                        co~        z2)=         ~'          Z ( 2 z , + 2 ' z 2 + b ) -k
+                                           X2' = m/D
+                                                                                                 (24)
+                                       =        ~       h~(Xz~ +,~'z2),
+                                            J.~b- I
+                                           22" = m/D
+where
+                                                oo            1
+                                 h~(0= b =)5
+                                           _ oo (b + 0 k
+                                                                                                 (25)
+                                                                                           7~2
+The functions hk can be expressed in trigonometric terms: h2(t)= sin2rt t and
+             -1   d
+h k ( t ) = k _ t dt h k - l ( t ) f ~ 1 7 6
+                                                       o0
+                      n 2 CSC2 rot = --4re 2 ~ re 2~irr                   for te.~,
+                                                      r=l
+
+and by successive differentiation we obtain
+
+                         hk(t)       (2~zi)~ f rk-l e 2~i't                  (t~.~).             (26)
+                                    ( k - 1)! ,=1
+                     M o d u l a r F o r m s A s s o c i a t e d t o ReaI Q u a d r a I i c F i e l d s          11
+
+
+F o r convenience, we abbreviate
+                                                       (2 ~ i)k
+                                                  ok= ( k - 1)! "                                           (27)
+
+In Eq. (24), it follows from 2 2 ' = m / D > O that 2~>0 or - 2 ~ > 0 . Since h k is an even
+function (because k is even), we can write
+                       0
+                     (O,n(Zl,Z2):2                 ~         hk(2Zl +2'Z2)
+                                                2~b    - I
+                                                  x>>0
+                                              .~,.U= m D
+or, using (26),
+
+                                                      ).eb   x     r = 1
+
+                                                  2M=mD
+
+    Thus we have proved:
+    Proposition 1. For m > O, v Eb- ~, the Fourier coe[])'cient c ~ ~ deigned by (22) is zero
+unless v>>O and v=r)~ with r e i N , / i ~ b -1, 2 2 ' = m / D , in which case
+                                                  ,o = 2 c
+                                                 (-my              kr ~-1.                                  (28)
+
+ Notice that v can be written as r2 in at most one way, since necessarily r =                             , v'
+                                                                                                                 m
+and 2 = v/r.)
+
+   The excluded case m = 0 is even simpler, since from 2 2 ' - a b = m/D, a = O, m = 0
+we deduce 2 = 0, and hence
+
+                                     (Oo~(z,, z2) = ~ ' b - k : 2 ( ( k ) .
+                                                             bet
+
+
+Thus we can complete the above proposition by
+
+                                          o           (2~(k)               if v = 0 ,
+                                                                                                             (29)
+                                         c~                                if v + 0 .
+
+    Case 2. a > O.
+    We have
+                                    ~o.",(z1, z2) = Z 4,M (z1, =2) k 2,                                      (30)
+                                                             MeS
+
+
+
+where 4~M is defined by (3) and S is the set of matrices
+
+
+
+
+For M =                  e S and 0 e ~ , define M o e S by
+12                                               D. Zagier
+
+                                 l ) ES with 21---2 (moda(9), say 21=)o+aO', then
+Conversely, if M1 --- (--'~al - b2,1
+bi=(212'i-m/D)/a=b+O2+O'2'+aO0' and Mi=M o. Therefore we can break
+up the sum (30) according to the values of 2 (mod a (9):
+
+                                                        "FM (2)o ~ 1 ~ 2 1                            (31)
+                                            2 o R 0cO
+
+
+where R is a set of representatives for the set of 2 eb-~ (mod a (9) for which
+
+                                  N (2 l ~ ) -     - m (mod a D)                                      (32)
+and, for each 2e R,
+                         M ( 2 ) = ( -2a     -b),            b 22'-m/Da                               (33)
+
+By virtue of (4), we have ~bMo(zl, z2) = ~bM(zl + 0, z2 + 0'), so each inner sum in (31)
+has a Fourier development. Since R is finite, the determination of the Fourier
+coefficients of corn will be known as soon as we know those of the sums
+EO ~M(~.)o(ZI' Z2)k/2" They are given by the following lemma, which will be proved
+at the end of the section.
+
+
+     Lemmal. LetM=Ct ~)egJl21R,~f-flT=-A<O. Then
+                    7
+                   E ~)M(Z1 -t-0, Z2-~-O')k/2 = Z Ck(V' M) e 2 ~ i l ~ z ~ + v ' z 2 )                (34)
+                                                v,>o
+with
+Ck(V,M)
+     [ 1     (2n) k+l   (N(v)~L~ ! ~(2niv~-v'~o (4n                              )
+= / ~T l ,   ~          \~1        e          Jk--1 ~ - ~                                if A>O,      (35)
+
+       7 V D \( --l)'12N(v)k-le                                                          if A = 0 .
+
+Here
+                               dk-1 (t)= ~176( - 1)r(t/2)2r+k-1                                       (36)
+                                         r=O r!(r+k--1)!
+is the Bessel function of order k - 1.
+    Remark. The second formula in (35) is the limiting case of the first, since
+                                lim(Jk_l(X)/xk_l)= 2~-k
+                                ~-o                             ( k - 1)!
+   Substituting (35) into Eq. (31), we obtain for the vth Fourier coefficient the
+formula:
+                        Modular Forms Associated to Real Quadratic Fields                                      13
+
+    Proposition 2. For re>O, Vffb-1, a>O, the Fourier coefficient c~,~ defined by
+(22) is zero unless v >>0 and is then given by
+                                 k                      k-1
+               (2r0k+, D ~--i ( ~ ) _ )                  2                            (4rt]~          ~
+           a
+          cm~- ( k - l ) ! a                                    a a ( m , V) Jk_ 1
+                                                                                      \ a [/      D   ]'     (37)
+
+where Jk- 1 is the Bessel function of order k - 1 and G~(m, v) the finite exponential sum
+                                Ga(m, v)=                X           e2"r'(~a)l""                            (38)
+                                              2 2' =_miD (mod a~)
+For m = O, we have                    (2/r) 2k      D -I/2
+                          c ~ = ( k - 1)! 2             ak       N(v) k-1 G,(O, v).                          (39)
+
+    Putting the results of Propositions 1 and 2 into Eq. (23), we obtain the following
+theorem, which is the main result of this section.
+    Theorem 2. For m>0, the Fourier coeJJTcient c,,v of e)m(zl,z2) defined by
+Eq. (19) is given by
+       2 (2 re)k
+(2my--ik--~'l      t(-- 1)k'2        teN2        rk-1
+                                  9 Iv v V
+                            N(v 1/D/r)= - m
+                                                                                                              (40)
+
+                                     \ m !               ,=, a        _, \ ~         i/ - ~ - i   G.(m, v)
+
+if v>O and is zero otherwise. If m=0, then
+                                        22k+17[ -2k                          Go(0, Y)
+                            Co"-- ( k - 1 ) ! 2 ~             N(v)k-' a=l
+                                                                       L       ak                             (41)
+if v>O,
+                           Coo=2((k),
+and c,,,=0 unless v is zero or totally positive.
+   Notice the resemblance between Theorem 2 and the Hardy-Ramanujan-
+Rademacher partition formula, in which also the Fourier coefficients of a modular
+form are expressed by infinite series whose terms are products of a finite exponential
+sum and a Bessel function.
+    Before giving the proof of Lemma 1, we will look more carefully at the case
+m=0, where the Fourier coefficients are given by (41). We write Z for the Dirichlet
+character associated to the field K, i.e. X(n)= (D/n).
+    Proposition 3. For JTxed v~b -1 the sum Go(O, v) defined by Eq. (38) with m = 0
+is a multiplicative function of a, i.e. G,(O, ~2)=l--Ii Gq? (0, v) if a = l-Iq"i, is the prime
+decomposition of a. For prime powers, Ga(O, v) is given as .follows:
+    (i) I f )~(q)=-1, so that (q)=q is a prime ideal in (9, and if q~ is the largest
+power of q dividing the integral ideal (v) b, then
+                                                  g2[r/2]         if r<2c~+ 1,                               (43a)
+                                Gq,(O, v)=                        if r>2c~+2.
+14                                                            D. Zagier
+
+
+      (ii) If ~((q) = O, so that (q) = qZ, and q" is the largest power of q dividing (v) b, then
+
+                                                                {O r            if r < ~,                             (43 b)
+                                             Gr          v)=                    if r > ~ .
+
+    (iii) If z ( q ) = + 1, so that (q)= q q', and q', q'P are the largest powers of q, q'
+dividing (v) b, then
+                  [(r+l)qr-l(q-1)+q                    r-1                         /f r < min (~,/3)
+           v" I ( m i n ( ~ ' f l ) + l ) q ' - l ( q - 1 )                        /f min (~, 13)< r < max (~, fi)
+                                                                                                                       (43 c)
+     Gq.(O,)=l~4-fl+1_r)q,_,(q_l)_qr_t                                             /f max(a, f i ) < r = < a + f l + I
+                                                                                   if r > ~ + f l + l .
+   Proof. In (38), the equation 2 2 ' - 0 ( m o d a l ) implies in particular N(2)e2~,
+and, since Tr(2)eZ (by the definition of b-l), 2e(9. Thus
+                                          G,(0, v)=               Z              e,(Tr(v2)),                            (44)
+                                                               A~Ola~
+                                                           22' _--0 (mod a)
+
+where we use the standard abbreviation G(n)= e 2~i"/a. That this is multiplicative
+is almost obvious: if a = a l a 2 with ( a l , a 2 ) = l , choose integers x l , x z with
+a t x 1 + a2 x 2 = 1. Then
+                             G.(O,v)=                  Z
+                                                  2, (mod a, )
+                                                                      G,(Tr(v21))
+                                                                               G~(Tr(v22))
+                                                 )~2(mod a2)
+                                             21 .~i --- 0 (rood al)
+                                             A22~--- 0 (mod a2)
+
+                                          = Gal(0, v). Go2(0, v),
+since there is a one-to-one correspondence between the pairs (21,2z) in this
+summation and the integers 2 of (44) given by 2~-+(x2 2, x 12), (21, 22)~---~az 214- a122 .
+    Now let a=q" with x(q)= - t. Then 22'---_0 (mod qr) implies qr [r/2ll2 ; writing
+2 = q~- r~/zj #, we find
+                              v)=     y~Go(O,                          e+..,(Tr(v~)).
+                                                         l~E~/qfr/2 ] [~
+
+If q~r/21]v, then each term of this sum is 1 and so Ga(O,v)=](9/qE"/2](9[=q2fr/21;
+if not, then the permutation g~-~l~+x of the summation set (where x~(9 is such
+that Tr(x v)~-O (mod q~r/21)) gives Ga(0, v)=eqi~/~ (Tr(x v)) G~(0, v), so G,(0, v)=0.
+    Cases (ii) and (iii) are similar, although the details in the case of decomposable
+primes are more complicated.
+      Corollary 1. Let v ~ b- 1, a = (v) b. Then
+                                          G~(O, v)                  1    b~    1
+                                      ,=1   a"                   L(s, Z)    N(b) ~-t
+
+for s ~     with Re(s)> 1; here L(s, Z)= ~                             z(n~) is the L-series of the character )~
+                                                               n= 1        nS
+and the summation is over all integral ideals dividing a.
+   Proof. This just summarizes the contents of Proposition 3, for that proposition
+implies that ~G,(0, v)a -~ (Re(s)large) admits an Euler product whose factor
+                           Modular Forms Associated to Real Quadratic Fields                                   15
+
+corresponding to a prime q is
+ (1 +q-~)(1 + q 2 ( 1 - - s ) 4_ ... + q 2 ~ O -s))                                     if (q) = q, q" IIo,
+             (1 + q ~ - ~ + - . - + q ~ " - ~ ) )                                       if (q)=q2, q~lla,
+ (1 - q- ~)(1 + q l - ~ + ... + q~O- ~))(1 +q~-~+---+qa(~-~))                           if (q)=qq', q'q'r
+   Corollary 2. The form O9o(Zi, Z2) has the Fourier expansion
+
+                                         1      2(2rC)ZkDl-k
+    ~Oo(Z1 , z2) = 2 ~(k)-~                     ( k - 1)!2]/D ~b-,E (bl(~,bEN(b)k-') e2~'(~z'+''z~)"
+                                    L(k, Z)
+                                                                      v,>0
+
+   Proof. Immediate from Theorem 2 and Corollary 1.
+   Comparing this with the known Fourier expansion
+                                              2(2n) 2k
+     Fk(Zl' z2)=2~K(k)+ ( k - 1)! 2 ~                            E (bI(~)~
+                                                               ,'eb-' Z N(b)k-1) e2"'(~'+~'~2)
+                                                                 v>>O
+of the Hecke-Eisenstein series of weight k ([4], p. 385) and observing that ~K(k)
+=~(k)L(k,z), we obtain a second proof of the identity
+
+                                                              ~(k) ,-,
+                                         ~Oo(Z,, z2) = ~ - ( ~ - ~ktz~, z9
+
+which was proved by a more direct method in w 1.
+   Finally, we must prove L e m m a 1.
+   L e m m a 2. Let aelR, a>O. Then
+                                          1
+                                                                                                              (45)
+                         ((z~ + O)(z2 + o')- ~)~               ~_,
+with Fourier coefficients Jk- 1(~, V) (V~ 0) given by
+
+                                  (2~) k+l                       2 jk_t(4~]/c~N(v))           /f ~ > 0 ,
+          Jk-, (~, V)= ( k - ~ ( " l f b                                                                      (46)
+                                    (2~)2k            N(v) k-1                                /f c~=O.
+                               (k- 1)!2~/b
+We observe that L e m m a i follows immediately, since (in the notation of that
+lemma)
+                                                                  1
+                            q~M(zl,zg-
+                                                    (TZ1Z2--O(Z 1 -~ (~Z2 -- fl) 2
+                                                                        1
+                                                    72 ((z 1 + 6/7)(zz - a/7)- A/Tz) 2
+and hence
+                               ek(V,M)= y -k e 2~i (~. . . . . ~ )Jk-1               ,V .
+16                                                                  D. Zagier
+
+     P r o o f The sum on the left-hand side of (45) is absolutely convergent since
+k > 2 , and is clearly invariant under translations To: (Z1,Zz) b-'+(ZI~-O, Zzq-O' )
+with 0e(.0. It therefore possesses a Fourier expansion as in (45) with
+                                1                                      1
+          jr_ i (~, v) =---~- 5 / E -                                                         e- 2 " i ( " " + ~ " 2 ) d z l d z 2
+                          V D ~ o~ ((z~ + O)(z~ + 0 ' ) - ~)~
+where A is a subset of the plane { I m z l = C ~ > 0 , I m z 2 = C 2 > 0 } which is a
+fundamental domain for the group of translations {To} (the factor 1/V~ enters
+because A has area V~). By virtue of the compactness of A and the absolute
+convergence of the sum, we may interchange ~A and ~0 to get
+                                    1                                          1
+            Jk-l((X'Y)=         [/ ~" ee~9( . . . . . ) e T o A ~ , 1 2               !
+
+But the domains TOA (Oe(9) exactly cover the plane {Ira z 1 = C~, Im z 2                                                             =   C2} , so
+                1       ~                    k      2~i~'z2                                   O~       -k
+              g ~ I m z2 = C2                                              =
+
+In the inner integral, the integrand has its unique pole at z 1 =c~/zz; since z2e ~
+and c~>0, this pole is on IR or in the lower half-plane, i.e. below the line of
+integration Im z 1 = C~. Hence if v_<0, we can deform the path of integration up
+to +ioo without crossing any poles, so the inner integral is 0 for each z2. This
+proves that Jk- 1(~, v) = 0 if v < 0 or (by symmetry) if v' < 0, i.e. Jk_ 1 (~, v) = 0 unless
+v>>0. We therefore suppose that v>>0; then the inner integral in (47) equals
+
+
+                    -               /res . . . .
+                                                                       z2 !                        /
+                            = -- 2rr i rest= 0 ( t - k e - 2~iv~/z2 e - 2~i~t)
+                                        ( -- 2 ~ i) k v k - i
+                            --                                       e - 2~iwx/z2
+                                                 ( k - 1)!
+and so
+                                        (-       2 ~ i) k v k - 1
+              J~_ 1(~, v)-               ( k - - 1)!1r              Im z2S=c2Z2ke-2niv'z2-2nivcz/ZZdz2"
+
+
+If e = 0 , then the same calculation as we just did for the zl-integral gives
+ (-2rt   i)kv ' k - 1 for the integral and we obtain the second formula of (46); if c~> 0,
+   ( k - 1)~
+then the substitution z 2 = i -V- ~-@, t gives
+
+                                                                               k--1
+
+                            -       i(k- .ff                                              I
+
+
+and the integral equals 2 ~ i J k _ l ( 4 ~                         ~ l / / ~ ) (standard integral representation of
+Jk-,)-
+                     Modular Forms Associatedto Real Quadratic Fields                    17
+
+                            w 3. Poinear6 Series for Fo (D)
+    In this section we recall the basic facts about Poincar6 series and their Fourier
+expansions (a more detailed account can be found in [7], Chapter VIII) and
+introduce the linear combinations of Poincar6 series which will be needed in w
+for the formulation of the main result.
+    We use the following notation:
+k (as previously) is a fixed even integer > 2 (for a discussion of the case k = 2
+see Appendix 1).
+
+For A = ( ~   bd)~SL21R , z ~ ,
+                                     ( aAz                       k
+                            ~a(Z)~- \ dz ]
+If furthermore f is any map .~---, 02, then f[A is the function defined by
+
+                              ( f ]A)(z)= pA(Z) f(Az)
+
+                                                     9 \ cz+cl       ]
+
+
+(Observe that t~AB(Z)=#A(BZ)I@(Z), f l A B = ( f l A ) I B , f l - A = f l A . ) For c ~ N ,
+he2Uc~, ec(h) denotes e 2~ih/c (notice that h is taken modulo c; thus, if (b, c)= 1,
+the symbol ec(a/b) denotes not e 2~i"/bc but rather e 2~ix/c where b x - a (mod c)).
+    Let F ~ SL 2 ~ be a subgroup of finite index containing - I, and )~: F ~ { + 1}
+a character such that X ( - I ) = 1. We denote by Sk(F, )0 the space of cusp forms
+for F of weight k and "reellem Nebentypus" (Hecke's terminology) Z. A function
+feSk( F, )0 is a holomorphic function in .~ satisfying
+     (i) f I A = z ( A ) f for all AeF.
+    (ii) f is holomorphic and vanishes at the cusps of f'.
+    The second condition means the following. A cusp P of F is an equivalence
+class of points of Q w {o~ } under the action of F. For each cusp P we fix a matrix
+Ap transforming the cusp P to Go (i.e. such that Ai; ~( ~ ) ~ P). The width we of the
+cusp P is defined by
+
+
+
+
+(thisindexisfinitesince[SL2~:F]<oo);thusFe=(lo                   wing)={(10 nTP)ln~2g }.
+The width we is independent of the choice of An,. Now for any feSk(F,)O, the
+function f[A~ 1 is periodic of period we; we require that it have a Fourier expansion
+of the form
+                           (ftA~ ~)(z)= ~ ae,(f) e 2~i"z/~.                            (49)
+                                          n=l
+
+
+The numbers aP,(f) are called the Fourier coefficients of f a t P, and they do depend
+on the choice of Ap, but in a very trivial w a y - a different choice of Ap replaces
+aP,(f) by ~"aP,(f), where ~ is some we'h root of unity.
+18                                                               D. Zagier
+
+       If f, g e Sk (F, X), the Petersson product of f and g is defined as
+                                            ( f g) = ~ ~ f (z) g(z) yk- 2 dx dy,                                        (50)
+
+where z = x + iye-5 and ~ is some fundamental domain for the action of F on ~;
+it is easily checked that the integral converges (for k > 2) and is independent of
+the choice of Y . The Petersson product makes Sk (F, Z) into a finite-dimensional
+Hilbert space; thus any linear map Sk(F, Z)--~(12 can be represented as f~--,(f g)
+for some (unique) geSk(F,z). In particular, the map f~-~aP.(f) sending a cusp
+form to its n th Fourier coefficient at P can be represented in this way; the function
+g which achieves this is (up to a factor) the Poincark series
+                                 G,P (z)=~1             ~        z(A~ 1 A)#a(z)e 2~"az/wp
+                                                                                   "
+                                                                                                                        (51)
+                                                 A~Fp\ApF
+
+(summation over the orbits of the left action of Fp on ApF; the series is easily
+checked to be convergent for k > 2 and independent of the choices of representa-
+tives A); indeed, it is an easy calculation to check that GP,eSk(F, Z) and satisfies
+                                                          (k-e)!
+                                               (f, G,e)= (4nn)k_~ wkeaP.(f)                                             (52)
+for all feSk(F, Z).
+    Now Ge~eSk(F,z) and so has itself a Fourier expansion of the form (49) at
+each cusp Q of F. For simplicity we take Q=(oo) and suppose that the width
+woo is 1 (this will be the case for the group we need); we can then choose A o= 1
+and have Fo~= (10 1 ) i n (48). Thus G.e has a Fourier expansion
+
+                                            G,e(z) = ~ g,,,
+                                                        P eE~imz                       (ze.9),                          (53)
+                                                        ra=I
+
+
+and we wish to calculate the coefficients grim
+                                            P 9
+
+       Lemma. Let A = ( ~                    bd) @SL21R' 7>0" Then we have the following Fourier
+expansion:
+          e 2 n i y [ a ( z + r) + b]/[c(z + r)+d ]
+
+....              [ c (z + r) + d] k
+                                                 k- 1                                                                   (54)
+
+                                                        9lk_ 1                        e ~-(y~+'d) e 2~imz,     (ze~3)
+                    C            m=l
+
+
+where Jk- 1(t) is the Bessel function of order k - 1 (Eq. (36)).
+
+       Proof. It suffices to treat the case A =                                         , i.e.
+
+                                                                                 k-1
+
+                        e_Z,,r/(z+,) = 2 n ( - 1 ) k/z ~
+            ....            (z+r) k                                , ~ = 1( ~ _ ) z     jk_l(4nl/~)e     z . ... . ,    (55)
+                           Modular        Forms Associated to Real Quadratic    Fields                 19
+
+
+                                                    d
+since Eq. (54) then follows on replacing z by z + - - and 7 by 7 / C 2 and multiplying
+                                                    c
+both sides of the resulting equation by c-ke 2~/~. TO prove (55), we observe
+that the series on the left converges absolutely and uniformly in ~ (for k>2)
+and is periodic with period 1, so equals Zcme 2~imz for some %; then
+                                   iC+l
+                           %:        ~ e 2~i,.z(~, (z + r)-k e- 2r~i?,/(z+ r))dz
+                                    iC                r~Z
+
+                                   iC+c~
+                               =      ~       e--2nimZz     ke-2ni'i/Zdz
+                                   i c - oe
+(applying the usual Poisson summation trick); the integral can be evaluated as
+in proof of Lemma 2 of w2 and equals
+                                                     k-1
+                                         2rcik(m/y) 2 Jk 1 ( 4 ~ ] / ~ ) -
+                                                            A'=( a'c' d'b') in ApF are
+      N o w c o n s i d e r ( 5 1 ) . T w o m a t r i c e s A = (~ ~)and
+left equivalent under Fp iff (c' d')=(c d); thus the sum is over all rows (cd) which
+occurasthe bottomrowsof matricesof ApF, thewholematrix (~ bd) then being
+determined (modFp)by the conditions ad-bc=l,                                   A~ 1 (~ ~ ) e F . Also (cd)
+occurs iff (d, c) = 1 and - d e P. Thus
+                                          C
+
+
+           G"e(z)=2t           ~ d Z~ A~l                          (cz +d)._ke2~i,,w,.~,~+b)/(cz+d)
+                       (c, d)= 1, - T E P
+
+
+We break up the sum into the terms with c =0 and twice the sum of terms with
+c>O. Clearly c=O can only occur if P=oo, and then d must be +_l, (~ bd)= -Z-I,
+we=w~=l; thus the terms with c = 0 contribute 6eooez"i"z (6eoo=Kronecker
+                                                                   '7/\
+delta). To study the terms with c>0, we observe that F~Foo=(~n ~) and hence
+ (~ ~)eApF~ (~ d ; r c ) = ( ; ~) (10 ~)eApF for all r e Z , i.e." -'the condition
+ -d
+--eP         only depends on d(mod c). Therefore the terms with c > 0 yield
+  C
+
+
+                           ~* Z
+                  c = 1 d(modc)
+                                              ~1            ~
+                                                            re2Z
+                                                                       [c(z+r)+d] k         ,
+                                                                          -d
+ where the inner summation is over all d (rood c) satisfying (d, c) = 1, - -C ~P and
+ we have made some choice of matrix {~ ~)~AeF with lower row (cd). The
+ Fourier expansion of the inner sum is now given by the lemma, and we obtain
+20                                             D. Zagier
+
+    Proposition. The PoincarO series G~(z) has a Fourier expansion of the form
+(53) with                              k- 1
+       g,m =$P~ 6.,,+ 27t(- 1)k/2                              H~(n, m)Jk_ ~                 (56)
+                                                         c=1                    \ C I/ We~
+with
+
+                           C d ( m o d c)
+
+where the summation is over all d (mod c) such that (d, c)= 1, - d eP, and where
+                                                                                  C
+
+
+
+
+      For example, if F=SL27Z, X=Xo the trivial character, then
+
+                          H2(n,m) = 1              ~         ec(nd-l+md)
+                                             C d (mod c)
+                                                (d. c) = 1
+is a Kloosterman sum.
+    We now return to our quadratic field K of discriminant D and take
+
+
+
+and
+                       Z (: ~)=e(a)=e(d)                     ((~ ~) ~F0(D) ),
+
+where e = e o is the fundamental character of K with e(p)=(D/p) for p~'2D. The
+space Sk(F, Z) is usually denoted S(D, k, e).
+   For the rest of the paper we suppose
+                                            D = 1 (rood 4),
+or (equivalently) D square-free; this simplifies the formalism and proofs. In
+particular, it is easy to check that, for x/y, x'/y'~ff)w{~} with (x', y')=(x, y)= 1,
+the equation                x ' _ ax +by                 (: ~)eFo(D,
+                            y' cx+dy '
+can be solved if and only if (y',D)=(y,D). The equivalence classes of Q w { ~ }
+modulo Fo(D) are thus described by the positive divisors D 1 of D. Let the cusp P
+be given by D 1 and write D2=D/DI; then (D~,D2)=I since D is square-free,
+and we can find p, q~:E such that pD 1 + q D 2 = 1; we choose
+                                                    -p
+                                  A,=(D~               q )~SL27Z.                            (58)
+
+The cusp P is easily checked to have width we=D 2. We will denote the cusp P
+simply by D~; thus for fES(D, k,e) and D 1 ]D we have the Fourier expansion
+                            (flA~,')(z)= ~ a~ (f)e 2~inz/1~2,                                (59)
+                                                 n=l
+                      M o d u l a r F o r m s A s s o c i a t e d to Real Q u a d r a t i c Fields     21
+
+
+the coefficients a.vl (f) being independent of the choice of p, q in (58) and given by
+
+                                a.DI ( f ) = (4xn)a- 1 D 2-k ( f G.D1)                               (60)
+                                              (k-2)!
+
+with G.DI defined by (51). By the proposition, we have
+
+  GDnI(Z)= ~ g,,m
+              D1e 2rrimz
+          m=l
+      D1
+     g,,,,,=fo, o•.,,,+2rc(--1) k/2 ( _ m ~ _ ) ~                   ~C=I Hy~(n,m)4_l (4~
+                                                                                      ~ - m~D~
+                                                                                             ),
+                                                                 (C,D)=Ol
+
+     O
+    Hc~(n,m) : - 1 • X (,4 ~I (: bd))e2rCic-'(na/Dz+md)
+                 C d (rood c)
+                   (d, c)=1
+
+             (~ ~ ) = (       aq+pc      bq+dp ] will be in Fo(D)only if DE]a
+Now A,~ 1               \ - a D l +cD2 _bD1+dD2 !
+(since D 1 [c), so a is determined (mod cD2) by
+
+                                       ad-1 (mod c),                    D2[a.
+Then
+
+
+                                                                    (aq+pc~ (aq+pc~
+                                                                 = x-ST-             :
+
+
+
+                                                                   ( a/D2 ~ (c/D1
+                                                                   \DT-I ! \ D2 ]
+                                                                 = ("D2 ~ ( c/D1
+                                                                   \ D1 ] \ D 2 ]
+
+
+
+ where in the last line we have used quadratic reciprocity and D 1D 2-=- 1 (mod 4)
+ to set (D~_2)(D~_z)= (@~_1). Therefore for (c,D)=DI,
+
+                                              c        E
+
+                                                    (d, c) = 1
+
+ (note that D 2 and d are prime to c, so ec(nD;id -1) makes sense).
+22                                                 D.Zagier
+     Finally, we introduce certain linear combinations of the Poincar6 series:
+    Definition. Let D = 1 (mod 4) be square-free and positive and n a positive
+integer. We set
+                    Gn(Z)= ~ ~(D2)DzkG~b2(z) (z~),                        (62)
+                                   D ~ D~ D2
+                                     D2 In
+where
+                                         D1
+                                                             if ol            l(mod4)
+                  g,(D:)=              ( D1 )                                           (63)
+                              -i        ~ -2 l ~ z           if Dl=_Dz=--3(mod4).
+
+Thus G.(z) is a linear combination of Poincar6 series at certain of the cusps of
+Fo(D). Notice that the coefficient O(D2) is just the Gauss sum
+
+
+                                             x(modD2)
+it is also easy to check that, if D2 =D'2D2 divides D (in which case (D~, D2)= 1),
+                                         (P(D2) = (h (D2) 0 (O~).                       (64)
+    Finally, from the formula above for the Fourier coefficients of g.m
+                                                                     oi we obtain
+the Fourier expansion of G,,(z):
+                                         G,(z)= ~ g, mez'i'~                            (65)
+                                                       m=l
+with
+g.m =     ~    O(D2)Dik g n01
+                           /D2m
+        ~176
+     =a..+2-(-          (m)              2 ~t(O2)92c=l                        n
+                                                    ~ By1 (D22')Jk 1- (C~2 ~n-m)    m
+
+                            nj         oT,ylo ,
+                                                             (c,o)= o l                 (66)
+                        /m~      k-1     ~                           4~
+
+where
+
+                                                                gbD 1         , m   ,   (67)
+                                            D2 In
+                                         (b, D2) = 1
+
+H~      being given by (61).
+
+                                   w         The Form I 2 ( z l , z 2 ; r )
+   As before we fix a real quadratic field K = Q ( 1 / ~ ) (D_= 1 (rood 4)squarefree)
+and even integer k > 2. We define a function of three variables
+
+               f2(zl,z2; r)= ~ mk-t cOm(Zl,z2)e2'~imr (zl,z2,26f3),                     (68)
+                                 ra= l
+                              Modular Forms Associated to Real Quadratic Fields                             23
+
+
+where the m=(Zl, z2) are the forms defined by Eq. (1). The series converges ab-
+solutely. It follows from the results of w that, for fixed z e ~ , f a ( q , z 2 ; r ) is a
+Hilbert cusp form for S L 2 (f) of weight k with respect to the variables z~, z 2. Our
+goal is to show that, for fixed zl,z2ef9 , fa(zi,z2;z ) is a cusp form for F0(D) of
+weight k and Nebentypus ( / D ) with respect to the variable z. We will do this
+by proving an identity which expresses f2 as a linear combination of the functions
+G,(r)eS(D, k, c.) constructed in the preceding section:
+
+   T h e o r e m 3.   For all zl, z2, zegg, the identity
+
+                                 O(zl, z2; z)= ~ nk 1 (DO(zI, z2) G,(z)                                    (69)
+                                                      n=l
+holds.
+    Proof. We will expand both sides as triple Fourier series. Of course, the defini-
+tion of f2(z I , z2;z) already gives the Fourier series of the left-hand side of (69)
+with respect to the variable z; its Fourier development with respect to Zl, z 2 is
+given by Theorem 2 of w2, which tells us that
+                      ~Q(ZI'Z2;T)=            ~       Z        mk tCm,'e2~im~e2=i(v=l+v'z2)                (70)
+                                             m~Z v ~ b - [
+                                             m>O v>O
+
+with c,,,, as in (40).
+    As to the right-hand side of (69), we recall that the function (D~                                       is
+defined by (24) and has the Fourier expansion
+
+                       (D O   (Z1,Z2) = 2ca Y'.                 ~ rk--~ e2,~i,~az,+rx'z2)
+                                                   .a. >>.0
+                                             DkR'-n
+                                         =2ck Z (                   Z     rk-1) e2=i(.... +,.'z~)
+                                                  v>O Dvv'-nr 2
+with Ck the constant (27); here the inner sum is over all natural numbers r such
+that--1 v~b-1 and N ( l ~ v ] = n , and containsat most o n e s u m m a n d . O n t h e
+      r               \ r i d
+other hand, G,(z) has the Fourier development (65), so the right-hand side of
+Eq. (69) equals
+
+                                        nk-lgnm       Z     rk--1 eZ=i(vz'+v'Z2)e2=imz
+         m=l   veb 1              =                  fly
+                v>>O                               Dvv'=r2n
+
+                =2ck~
+                        m=l
+                                   ~
+                                 v~-b
+                                  v~>O
+                                         1
+                                                                        g~.   .)   eZ~i'~*+~'=2le 2~i"~.
+
+
+Comparing this with (70), we see that we must prove
+
+                                                                    - -            gD~'                    (71)
+                                                              ~l~                    ~z-, m
+24                                                                   D. Zagier
+
+for meZ, m > 0 , Veb -1, •>)'0. Substituting for Cm,,and g,,, from Eqs. (40) and (66),
+respectively, we see that the identity to be proved is
+                                                  k       L-1                                    ,
+mk-1       ~           rk-l+2n(--1)2D 2                            (mvv') "~                   --Ga(m,v)Jk             1 \-T[   I ~ 1
+           riv                                                                          a=l     a
+       vv' D ~ m r 2
+
+
+
+             rl v     \    r       l
+          Dvv'-- r2 m
+
+
+          +2,(_l)~(mvv, D) 2 Z ~
+                                                          r[v b=l
+                                                                      Hbt~T--,m}Jk-, \ b r [ / - o - - f "
+The first terms on the two sides of this identity are plainly equal, and comparing
+the coefficients of Jk-1 (\ ~4- nV ]~ ~7 t on the two sides of the equation, we find
+that the theorem will follow once we have proved the following identity between
+finite exponential sums:
+     Proposition. For a, m ~ , v~b -~, a>O,
+                                             1                           [ Dvv'   ]
+                                       a~             Ga(m, v) =,IvZH.i, \ r 2 , m/"                                                    (72)
+                                                                           via
+
+Here G,(m, v) is the sum defined by (38) and Hb(n, m) the sum defined by (67), (61)
+and (63).
+     It is convenient to write # for v 1//D, so that p e C ; then
+
+                         Ga(m, v)=Ga (m, ~--~-)=                                           ~                %o(Tr2#)                    (73)
+                                                      \      VLI      I               ~. (mod a b)
+                                                                                 N(2)=- - m ( m o d a D )
+
+(sum over 2eC/ab) and we wish to show that this equals
+
+
+
+                            ,'la                                                                                                        (74)
+                         =av Z                        Z             O(D2).o,
+                                       ,lu O=D,O~ D2                                 " 7 o'(-N(p)lr2oz'm)"
+                                       rla        DzlN(u/r)
+                                                 (a/r, D 2 ) - I
+
+Now both expressions (73) and (74) are clearly periodic in m with period aD,
+so to prove them equal, it suffices to show the equality of their finite Fourier
+transforms. Thus we must multiply both expressions by eaD(--hm) and sum over
+m(mod aD), i.e. we must show that, for every heZ/aDTZ,
+                                   aD
+                                         eao(-hm)                                ~             %D(Tr2p)
+                               m= 1                                       2 (mod a b)
+                                                                   N(~)~ -m (.,oaa o~                                                   (75)
+                        ---aV'D ~ Z 0(D2) Z eao(-hm) HD'                                                       l't#'
+                                         D2 92                     m= 1                          T-  a Dl     P2 D 2   ,m ,
+                        M o d u l a r F o r m s A s s o c i a t e d to Real Q u a d r a t i c Fields    25
+
+
+where the conditions of s u m m a t i o n on r and D2 are the same as in (74). The left-
+hand side of (75) clearly equals
+
+                                                     eaD(hN(2)+Tr(g2)).
+                                       2 (mod a b)
+
+As to the right-hand side, we observe that --cHv',tn,m), considered as a function
+of m, is a linear c o m b i n a t i o n of terms ~" with {=e~(d) a primitive cth root of
+unity; therefore for claD, the sum ~,(mod,t))e,o(-hm)H~'(n, rn) is 0 unless
+e,D(h) is a primitive c ~h root of unity, i.e. unless (h, aD) equals aD/c, in which
+case it equals aD/c(c/DJ(-d/Dl)efinD{~d -1) with d defined by h/aD=d/c
+(cf. (61)). Hence the inner sum in (75) can only be different from zero if
+   (i) (h, aD)= rD 2 .
+On the other hand the conditions on r, D2 are that D~D2=D, (a/r, D2)=l, so
+(a, rD2)=r and hence
+   (ii) (a, h)=(a, h, aD)=(a, r D 2 ) = r .
+F r o m (i) and (ii) we see that r and D2 are determined by h: given h, we must set
+
+                                                                    (h, aD)
+                                            r=(a, h),         D z - (h, a)                             (76)
+
+These values of r and D 2 automatically satisfy r La, D2ID, (a/r, D2)= 1, but must
+still satisfy rig, D2 [N(y/r) in order for the right-hand side of (75) to be non-zero.
+Thus the identity we have to prove now reads:
+
+       Lemma 1. Let a > 0 , ge~), h6Z, and deJlne integers r, D2, D 1 by (76) and
+D 1=D/D 2. Then
+        eaD(h22'+g2 +g'2')
+
+          a/D     0(D2) rD2 { aD1/r ~ -h/rD2                                         {-- pp'           (77)
+
+
+         t                                                     otherwise.
+       Proof We first show that the left-hand side is zero unless rig, D2r2[N(g).
+       If we replace 2 by 2 + ~ a zV ~ (ze(9) in the s u m m a t i o n , then
+                                        r
+
+
+         hN(2)~-~hN 2 +                zl,/D :hN(2)+aD hr rr ~l/~-j-aD----N(Jr r
+                                                 -hN(2)          (rood aD)
+ and
+
+                                   r
+26                                      D. Zagier
+
+so e~o(h~A'+/a2+g'2') is multiplied by the factor er                  Tr    independent
+
+~176176176                                                 ,,     \
+itself, and can only be different from 0 if Tr[~-~n z}eZ for all ze(9, i.e. if
+
+  #   e b -1, r[#.
+
+    If we repeat the argument with zea -I instead of zE(9, a being the ideal with
+a2=(Dz) (D2[D is a product of ramified primes), then from D2[h/r we again
+see that 2~--~2+(a/r)zl/~ does not change hN(2) (rood aO) and that therefore
+we must have
+                              er(Tr~DD)=l           ( "CEa- 1 )
+
+if the left-hand side of (77) is different from zero; this implies that
+
+                         rl/~ cab -1,    ~ea,r       DzlN             9
+    We can therefore suppose that the conditions r]#, D2]N(12/r) hold. Then
+a. h and/~ are now all divisible by r, and we see easily that both sides of (77) are r 2
+times their value when a, h, fl and r are replaced by a/r, h/r, l~/r and 1. It therefore
+suffices to prove Lemma 1 in the case r = 1. We thus assume that (h, a) = 1 and
+that D 2 =(h, D) divides ##', and have to prove the identity
+
+
+              ~O/ab                                                                 (78)
+                     =al/D~9(D2) \ Dz ] \ D,          faro, (-N(#)D2 h~l)
+(here h - l makes sense because (h, aD1)= t). Because Ozth and D2 [/~#', we have
+
+        eav(hN(2)+ Tr(#2))=e,D, (~z N(2)+ Tr P~-D2~1
+
+
+
+                                                                            (N(#)
+and replacing 2 by 2 - h - - ~ / ; ( m o d a D 0, h by h/D2 and aDx by b, we find as the
+identity to be proved
+
+                        2E(O/ab
+where (h,b)= I, (b,O)=Dl, D/D1 = D 2, b/Dl=a. It is convenient to replace the
+summation in (79) by one over (9laDt ; it is clear that this multiplies its value by
+Dt/Dz (both sums are multiples of a sum over (9/aa with a2=(O0). We have
+thus reduced the complicated identity (77) to the simpler one given in the following
+lemma:
+                            Modular Forms Associated to Real Quadratic Fields                    27
+
+
+  Lemma 2. Let b be a natural number, h an integer prime to b. Set DI =(b, D),
+D2=D/D 1. Then
+                           ( b/D~ ~ h
+                                                  if D 1~ 1 ( m o d 4),
+      1
+          ~ eb(hN(2))='                                                   (80)
+          2 (mod b)                         b/D,
+                                                                        if D 1~ 3 (mod 4),
+
+where the summation runs over integers 2~C modulo the principal ideal (b).
+    Proof Denote the left-hand side of (80) by C(h/b). Thus C(h/b) depends on
+the class of h in (7Z/b;g)* modulo squares. It is easily checked that C(h/b) has the
+multiplicative property
+
+                 C             =C\      b' ] C \ b " ] '        b=b'b",(b',b")=l.
+
+The right-hand side of (80) has the same property, since (setting D't =(b',D),
+D'2 =D/D'I and similarly for b')
+                                            t
+                       (b')     (b")(                        h ) (D[~ /D"'[@,_}
+                      = D'E/D'~ Dj/D'1                     D', D7 \ D'2 !
+   (where              is             or              depending whether n - 1 or 3 (rood 4))
+                      = (Db2) ( b" '~                                          (b/Dx t
+
+as we see after a short calculation. Because both sides of (80) behave multi-
+pticatively, it suffices to prove Lemma 2 for b = q~ a prime power. Clearly
+                                                      1 b
+
+where
+                                Nb(n)= # {2e(~/b [N (2)-n (mod b)},                             (82)
+and the above multiplicativity property can be stated simply Nb,b,,(n)=Nb,(n)Nb,,(n)
+for (b', b")= 1. To evaluate C(h/b), therefore, we have to find a closed formula for
+Nb(n) when b=q ~. There are three cases, according to the value of (D/q); we
+summarize the results in a lemma.
+    Lemma 3. Let b=q ~ (q prime), n=noq" with v>O, q ~/no. Then
+     (i) If (D/q)= + 1,
+                      Nb(n)=f(v, +l)qX-l(q--1)                    /f v<2,
+                                                                                               (83 a)
+                                  ((2+l)qX--2q x i                if v_>_;t.
+    (ii) If(D/q)= -- 1,
+                                  / ; x - ' ( q +1)               if v < 2, v even,
+                                                                  if v<2, v odd,
+                                                                                               (83 b)
+                                                                  if v > 2, 2 even,
+                                                                  if v>__2,2 odd.
+28                                            D. Z a g i e r
+
+
+     (iii) If q ID, D2=D/q,
+
+
+
+
+                  Nb(n)=       1+                        q~       /f v<2, v odd,                 (83 c)
+
+                              q~                                  if v>=2.
+    The proof of the lemma is straightforward and tedious and will be omitted.
+    We now substitute (83) into (81). If b=q ~, qXD, then N,(b) only depends on
+the largest power q~ of q dividing n; hence
+                               /hx       1 a         v b
+                            C \{b-)/ = b - v ~-o Nb(q ) ~" eb(hn)'
+                                                               n=l
+                                                               qV[ln
+
+and the inner sum equals 1 if v = 2, - 1 if v = 2 - 1, 0 if v < 2 - 1. Hence
+                                          1
+
+If (D/q)= + 1, then we see by (83a) that this equals 1, in agreement with (80)
+(here /71=1, D2=D, (b/D2)=+l). If (D/q)=-l, then using (83b) we find
+C(h/b)--(-1)~=(b/D), again in accordance with Lemma2.
+    If q lD, D2 = D/q, then (81) and (83 c) give
+
+          C(qh~-)=      ~           ~         (~-)eq .... (hno)
+                      OGv<)~ no(modq "t v)
+                      v even   (no, q)= 1
+
+
+                      + (-~Dq 2 ) ~                    ~          (~-)eq-~-~(hno)      (q.gh).
+                                     O_<v<2 no(modq,~ v)
+                                      v odd   (no, q ) - 1
+
+The inner sum in both terms is zero if v < ; t - I, as we see on replacing n o by n o + q.
+Thus only the terms v=2- 1 contribute, and we find
+
+
+
+
+                                    --~-}(q)               l//~        if2is   even,
+
+where again 1 / ~ is l/q or il/~ depending whether q-=l or 3 modulo 4. In the
+notation of Lemma 2, D1=q, (-D2/q)=(q/D2), so (84) can be stated as
+
+
+
+
+                                              N                        (b=q ,qzh),
+in agreement with Eq. (80). This completes the proof of Lemma 2 and hence of
+Theorem 3.
+                     M o d u l a r F o r m s A s s o c i a t e d t o R e a l Q u a d r a t i c Fields            29
+
+
+                                 w 5. The Doi-Naganuma Map
+   In the last section we proved the identity
+
+                     mk-lcom(Zl,Z2) e2nim~= ~ mk-lOg~                                                   Gm(T5)
+               m=l                                              m=l
+
+relating the Hilbert modular forms of weight k constructed in w1 to the Poincar6
+series of weight k and " N e b e n t y p u s " constructed in w3. Depending whether we
+read this identity from left to right or from right to left, we can deduce two state-
+ments asserting that some infinite series defines a cusp form: on the one hand,
+since G,,(O is a cusp form of Nebentypus, we have
+    1. For each point (zl, z 2 ) e ~ x .~, the series
+
+                                            m k-1 co,,(za, zz) e 2"i"~,
+                                     m=l
+
+considered as a function of ~, defines a cusp form for Fo (D) of weight k and "Neben-
+typus" ;
+on the other hand, since we know that the (~)mare Hilbert cusp forms, we have
+   2. For each point ~ ,     the series
+
+                                             m k 1 G,,(~) co~ 1, z2) ,
+                                     m~l
+
+considered as a Junction of (z I , z2), defines a cusp form of weight k for the Hilbert
+modular group S L 2 ((9).
+   The first of these assertions has several interesting consequences; for example,
+using Hecke's well-known estimate for the Fourier coefficients of cusp forms,
+we have the corollary,
+    For fixed (zi, z z ) ~ 9 x ~, the absolute values of com(z~, z2) (m = 1,2,...) satisfy
+                                           [co" (Za, z2)l = O(m k/z)
+
+as m    oo (indeed, using the recently proved Petersson conjecture we can improve
+
+~- to         + e . A considerably more interesting corollary of 1. is obtained by
+
+integrating the forms co,. along certain curves. If the field K has a unit of negative
+norm, say e > O > e ' , then the function yk%,(ez, e'2) ( z = x + i y e ~ ) is invariant
+with respect to SL2 7l., and so we can consider the numbers
+
+                               am=m k- i ~ com(eZ' e'~) yk- 2 dx dy,
+
+where ~={zllz[>=l, IRe(z)[<89} is a fundamental domain for the action of
+S L 2 Z on .~. It follows from 1. above that the series ~ = ~ a,,e 2~i"~ is a cusp
+form of weight k and Nebentypus for the group Fo(D) and character ( / D ) . On
+the other hand, the a,, can be evaluated explicitly and turn out to be (apart from
+a trivial factor) integers expressible as a finite sum of class numbers of imaginary
+30                                          D. Zagier
+
+quadratic fields. In this way we are able to construct a large number of cusp forms
+of Nebentypus whose Fourier coefficients are explicitly given by certain expres-
+sions involving class numbers. That these class number expressions really are
+Fourier coefficients of cusp forms had been conjectured (in the case k = 2) by
+Hirzebruch and the author on the basis of another interpretation of them as the
+intersection numbers of certain curves on the Hilbert modular surface .~ x ~/SL 2 CO.
+(This conjecture was the original motivation for studying the forms ~o,,.) The
+proofs of these relations will be given in a subsequent paper.
+    In this section, however, we will investigate the significance of the second
+assertion above. We fix, as usual, an even weight k > 2 and discriminant D-= 1
+(mod 4). We denote by S 1 the vector space of cusp forms of weight k and Neben-
+typus for F0(O) and the character e = ( O / ) (so $1 =Sk(Fo(D),e)=S(D, k,e) in the
+notation of w3) and by S z the space of cusp forms of weight k for the Hilbert
+modular group S L 2((9). (The subscripts 1 and 2 refer to the number of variables
+of the functions involved.) The assertion of the theorem in Section 3 is then that
+the function O(zl, z2; z) defined by (68) is in S t | z. On the other hand, as dis-
+cussed in w3, the Petersson product on S I is a non-degenerate scalar product
+and provides a canonical identification of $I with its dual S* = Hom(S~, ~).
+Using this, we can identify $1 | Sz with Horn (S~, $2) and thus think of ~ as a
+map from S~ to $2, namely the map sending a cusp form f = f ( z ) e S a to
+                        (f, f2)~ = S f (z) C2(zl, z2 ; z) yk- 2 dx d y
+                                   o~
+
+(r = x + iy, ~- = fundamental domain for ~/F0 (D)).
+    On the other hand, we have expressed O as a linear combination of Poincar6
+series and therefore can easily evaluate its Petersson product with any cusp
+form. Let feS~ and let a ~ ( f ) ( n = t , 2 , ...;DI[D ) be its Fourier coefficients at
+the various cusps as defined by Eq. (59). Recalling the definition (62) of G, as a
+linear combination of Poincar6 series and the basic property (60) of Poincar6
+series, we find
+                   ,k-l(fG,)=nk-a      ~, ~O(O2)Dzk(G~b2,f)
+                                        D = DI D2
+                                          D2ln
+
+                                 ( k-- 2 ) !
+                              - -(4            Z       O(D2) Dk-~ a,/D2(f)
+                                                                   o~
+                                    re)k- I o = D , O~
+and hence                                         oz),
+                      (f, Q)~ = ~ n k-' (f, G.) o~~ (z 1 , z2)
+                                n--1
+                                 (k-2)!                                     oo
+                              ----(4r0k_l         Z~(U2) Dk2--1 L am
+                                                                   I)1 (f)%,D2(Z~,Z2).
+                                                                            0
+                                            D=DID2             m=l
+Into this expression we substitute the Fourier expansion
+              o
+            (Din(Z1, Z2)= - 2(2r0
+                             - ( k      - 1)k/2        2        ~     rk--le2=i(rxz'+rz'z2,
+                          (k-l)!                      ~b-,      ~=1
+                                                     2>0
+                                                  N (2) = m/D
+obtained in w2, and obtain the following theorem.
+                     Modular Forms Associatedto Real Quadratic Fields                    31
+
+    Theorem 4. Let f6Sk(Fo(D),e) be a cusp form of weight k and "Nebentypus"
+and aD.~( f ) (n6lN, D 1 [D) its Fourier coefficients as defined by (59). For each integral
+ideal a of the field K, define
+                  c(a)=~r k t            Z                       D,
+                                                      ~(D2)D~-I aN~,o/r2o2(f),         (85)
+                         via       D2I(D, N(a)/r z)
+
+where the first sum is over all natural numbers r dividing a, the second sum over all
+positive integers dividing D and N(ct)/r z, D 1 =D/D2 and t/J(D2) is defined by (63).
+Then the series
+                         F(zl,z2) = Z c((v)b) e z~i(v~'+v'z~)                    (86)
+                                          "0613 1
+                                           v~>O
+
+is a cusp form of weight k for the Hilbert modular group. The map f~--~F defines a
+linear map
+                                    l: $1 -+ Sz
+which is, up to a factor, the map sending a cusp form f (z) to its Petersson product
+(with respect to z) with Q(zl, z2; z).
+     We have written the Fourier expansion of F in the form (86), with coefficients
+c((v)b) depending on the integral ideal (v)b rather than simply c~ as previously,
+first of all because this form puts into evidence the invariance of F under
+                   (Z1, Z)k--~ (E Z1, ,~'Z2)        (E a totally positive unit)        (87)
+as well as under the translations
+                                  (zt, z2)~-~(zl + 0, z2 + 03,                         (88)
+and, secondly, because this is the appropriate form for writing down the Mellin
+transform of F. Namely, to a cusp form with Fourier expansion (86) we associate
+the Dirichlet series
+                               4) (s) = ~ c (a) N(a)-~                     (89)
+                                               a
+
+(at least if the class number of K is 1, in which case every integral ideal a can be
+written as (v)b with v e b -1, v>>0); then q~ and F are related in the same way as
+are Dirichlet series and modular forms in one variable, namely that the invariance
+of F under the modular group is reflected by a functional equation of the function
+4,(s).
+    We now describe the relationship of Theorem 4 to a construction of K. Doi
+and H. Naganuma, in which these Dirichlet series play a basic role. The original
+paper of Doi and Naganuma [2] treats the case of modular forms of "Haupt-
+typus" (i.e. trivial character); we will in fact describe the modification for forms
+of "Nebentypus" given by Naganuma [8]. Let
+
+                                      f ( z ) = ~ a,e 2~i"z                            (90)
+                                               n=l
+
+be a cusp form of weight k for F0 (D), where D = p is now assumed to be a prime
+of class number 1. We assume that f is an eigenfunction of all the Hecke operators
+T,, normalized with al = 1 (so that a, is just the eigenvalue of f under T,); then
+32                                               D. Zagier
+
+the associated Dirichlet series   oo
+
+                           (p(s)= ~, a,n -s                    (Res>> 1)                   (91)
+                                        n=l
+
+has an Euler product expansion of the form
+
+
+
+(product over all rational primes q). The series
+
+                                 (fie(s)= ~ a~           ~,      a,p -_ -an,
+                                           n=l
+
+whose coefficients are the complex conjugates of those of q)(s), will then be the
+Mellin transform of the modular form f ~         ~,e 2~i"z. Thanks to Hecke [5],
+one has the following information about the eigenvalues aq of (p(s) in (92):
+                          for (q/p) = 1,             aq is real;                          (93 a)
+                          for (q/p)= -- t,           aq is pure imaginary;                (93b)
+                          for       q = p,           Jaq] --- p~k- 1)/2                   (93 C)
+     This gives us the possibility of writing
+                 (s) = q~(s) (po(s) = l~[ (1 - b(q) N(q)-~ + N(q) k-1 - 2s)--~,             (94)
+                                       q
+
+
+where the product is extended over all prime ideals q of Q (l/P) and the coefficients
+b(q) are defined by
+                    b (q) = aq           if q q' = (q), (q/p) = 1,             (95 a)
+                      b (q) = aq2 + 2 qk-~          /f         q = (q), (q/p) = - 1,      (95 b)
+                      b(q)=ap+gtp                   /f        q2 =(p).                    (95c)
+Indeed, for decomposable primes q we know by (93 a) that aq=Ctq, so the factor
+( 1 - aqq-S+ q k - I - 2 s ) - t Occurs twice in ~o(s)tp~ and since there are two prime
+ideals with norm q, it also occurs twice in the product in (94). For inert primes q,
+(93 b) tells us that fiq = - aq, so the corresponding local factor in ~0(s)~oP(s) is
+                   (1 - - a q q - S - - q k - l - 2 s ) - t ( l +aqq-S--qk-l-2s) -1
+                          =(1-aqqZ - 2~_ 2qk-l-2~ + q2k- Z-4~)-x
+                          =(l_b(q)N(q)-~+N(q),                     a-2s)-,
+with q=(q), b(q) as in (95b), N(q)=q 2. Finally, for the ramified prime p, (p)=q2,
+we deduce from (93c) that the local factor in q~(s)~0P(s) is
+            (1 - a p p -s) 1(1 _?~pp-S)-, =(1 --(ap+~tp)p-~ + p k-' - 2~)-,
+                                                 = (1 - b (q) N(q)-~ + N(q) k-' - 2~)-,
+We now extend the definition of b(-) to all integral ideals, defining first b(q r)
+(q prime, t e N ) by
+                       1 + ~ b(q')V=(1 - b ( q ) t + N ( q ) k-' t2) - '                    (96)
+                           r=l
+                       Modular   Forms Associated to Real Quadratic          Fields     33
+
+
+(as formal power series in IR [[t]]) and then requiring b to be multiplicative, i.e.
+                             b (q~' ... q,~")= b (q~')... b (q'#).                    (97)
+Then clearly
+         q)(s)= I-[ (1 + b(q) N (q)- S+ b(q2) N (q)- 2s + --.)= ~ b(a) N (a) - s
+                   q                                                          a
+
+(sum over all integral ideals). We can now state the result of Doi and Naganuma:
+    Theorem (Naganuma [8]). Let p=-I (mod 4) be a prime with h(p)= 1, and
+fESk(Fo(P), (/p)) a normalized eigenfunction of the Hecke operators with the
+Fourier expansion as in (90). Define numbers b(a)elR for all integral ideals a of
+Q (l/p) by (95)-(97). Then the function
+                  F(z,,z2)= ~             b((v)b)e z"i(v~'+''z2)        (zl,zze.~)     (98)
+                                 v~D- I
+                                  v~O
+
+satisfies the functional equation
+                             (-1-1)
+                           f - -- ,                = z~ z ~ f ( z l , zz).             (99)
+                                    Z1        Z2
+
+    As the author remarks, if the ring of integers (9 is Euclidean, then (99) (to-
+gether with the obvious invariance of (98) with respect to translations and multi-
+plication by totally positive units) is sufficient to ensure that F is in fact a Hilbert
+modular form, for in this case the transformation (87) and (88) together with
+                                   ( z x , z z ) ~ ( - I , -1)__                      (100)
+                                                     Z1      Z2
+
+certainly generate S L 2 (_9.However, it is known that the only primes p - 1 (mod 4)
+for which Q(]~p) is Euclidean (at least with respect to the norm map) are 5, 13,
+17, 29, 37, 41 and 73 (cf. [3], Theorem 247).
+    In fact, a recent and very difficult theorem of Vaserstein (Mat. Sbornik 131
+(89) 1972) tells us that the transformations (88) and (100) always generate the
+full group SL2(9, and combining this with the theorem of Naganuma just
+enunciated, we deduce that (98) is in fact always a Hilbert modular form. We
+now give a different proof of this fact by showing that the function constructed
+by Naganuma is precisely the function we constructed in Theorem 4.
+    Theorem 5. Let the assumptions be as in the theorem of Naganuma above:
+p = 1 (mod 4) a prime with class number one, f~Sk(Fo(p), (/p)) a normalized Hecke
+eigenfunction. Then the function defined by (98) is identical with that defined by
+(86), and in particular is a cusp form of weight k for the Hilbert modular group.
+    Thus the modular form ~ ( z l , z ~ ; t ) in three variables constructed in this
+paper has an interpretation as the "kernel" (in the sense of integral operators)
+of the Doi-Naganuma mapping.
+   Proof. We must show that, for each integral ideal a, the number b(a) defined
+by (95)-(97) equals the number c(a) defined by (85). Since D = p is prime, the
+number D 2 in (85) can only have the values 1 or p, and so (85) simplifies to
+                  c(a)= ~ r k-1 a~v~o)/,~(f)+ ~ r k-1 pk-~ a~o)/,2p(f),               (101)
+                           rla                      rbla
+34                                                   D. Zagier
+
+where aP,(f) and a.1(f) are the Fourier coefficients of f at the two cusps of F0 (p)
+and the second sum vanishes if b~/a (to obtain (101) we have substituted the
+values ~O(1)= 1, ~ (p)= l/P)- Now the coefficients aP(f) are the Fourier coefficients
+of f](lp ~ ) ( c f . (58), (59)), and since (lp ~)~Fo(p), these are precisely the a,
+defined by (90). Similarly, the ai,(f) are the coefficients of f                              , i.e. are
+given by
+                         (z-P)-kf(-@)=,=l~ai"(f)e2~i"~/P                      (zc~)
+
+or (replacing z - p by pz)
+                                             -1
+                            p-kz-kf(~-)=                 ~'a~(f)e2~i"z       (ZE~).
+                                                         n=l
+
+But, by Lemma 2 of [8],
+
+
+
+(f"(~)=2 ~. e2~"z as above), and therefore
+                                             a~ (f)= p-k +a/2 ?tpa,.
+Also, because the local factor corresponding to p in ~o~                          is simply
+                                         ( 1 - h p p ')-x = ~ a;p .... ,
+we see that a, ap=~,p for all n. Therefore (101) can be rewritten as
+                                             c(a)= y" rk- 1a'N(.)/,~,                             (102)
+                                                     rla
+where
+                                            , ~a.                if pXn,                          (103)
+                                           a, = ) a . + ft,      if p I n.
+Since c(a) is then clearly multiplicative for ideals with relatively prime norms
+(i.e. c(alctz)=c(%)c(ct2) for (N(%), N(%))= l), we only have to prove the
+equality c(a)=b(a) for prime powers q~" with q inert or ramified or products
+qrq,r if qq'=(q). We consider the three cases separately.
+     (i) a = q " , q = ( q ) , ( q / p ) = - 1.
+Then r t a for r = l, q, ... , qm, so
+                                                    m
+                                         c(q")= ~ qiCk-1)aq2.....
+                                                   i=0
+
+To evaluate this, we introduce the generating series:
+
+         ~c(q')tZm=~                ~q"k-"aqz,t2t+z'
+        m=O                  i=0 /=0
+
+
+
+                               i=
+                                     i(k--1)t2i
+                                                  )( aq2z )
+                                                     l=O
+                                                               t 2!
+                         M o d u l a r F o r m s Associated to Real Quadratic Fields                                          35
+
+
+
+                    ----(1 _qk.-I t 2) 1 ~I                             aq, t 1 +~1          aqz(--t) 1
+                                                                \ 1=0                  /=0
+
+
+                                                                   l_aqt_qk-lt2                      ~ l+aqt__qk-lt2
+
+                                                            1
+                             (1-aqt-q                 k l tE)(l+aat-q                   k - i t 2)
+                                                    1
+                             1-b(q)t2+q                     2k 2t4
+
+                     =    ~" b ( q m ) t 2m,
+                         m=O
+
+where the various steps use the precise form of the Euler factor for q in (92) as
+well as the properties (95b), (96) of b(q"). Thus c(qm)---b(q m) for all m.
+    (ii) a = q m, q2=(p).
+Now r]a for r = 1, p . . . . ,p[m/2], SO (102), (103) give
+                             [m/21
+                c(qm) = ~ pi~k-1)apm 2,
+                              i=0
+                         =           ~         pick 1)ap ..... +                  ~          p.k-1)~pm_~, "
+                             O<i<m                                           O<_i< m- 1
+                                 -       -2                                   -   -      2
+
+Also, by the above noted total multiplicativity, ap.,=(ap) m, fip,~=(~p)m. W e again
+use a generating series:
+
+
+          m=O                    i=0 /=0                                          i=0/=1
+
+                             =                p i(k - 1 ) t 2 i         Z alpt' +                    pi(k-1)t2i    ~ alpt*
+                                      i=                               1=0        /          i                    \1= 1   /
+                                               l            [      1                  Clpt
+
+                             --l__pk lt2 ~ l ~ p t - ~ - l ~ - j )
+                                               1                   1 -- ap61pt 2
+                                     1 - p k ~t 2 ( 1 - a p t ) ( 1 - ? t p t )
+                                               1
+                                     1--(ap + ~p)t + pk- ~t 2
+(since ap{tp=p k i by (93c))
+                                              1
+                                     1-- b(q)t + pk-- l t 2
+
+                             = ~ b(q")t",
+                                 m=O
+and again we deduce c(qm)=b(q m) for all m.
+36                                                            D. Zagier
+
+
+     (iii) a = q " q 'n, q q ' = ( q ) , (q/p)= 1.
+
+T h e n r La for r = 1, q , . . . , qm~. {,.. ,}, SO
+
+                                                      min     (m,n)
+                                  c(qmq'")=               y'            qi(k-l)aq . . . . . . .
+                                                          i=0
+
+N o w we have to introduce a double generating series with two formal variables t,
+u and find
+
+
+m=O n=O                         i=0 ~=0 /=0
+
+
+                            =          qi(k-1)tibli                       aq.(t.+t.-lu+...+tu.-lq_u~ )
+                                \i=0                      /        n=0
+                                        1             |                 t n+l --U n+l
+
+                                 1--qk-ltu n=                                 t--u
+
+
+                                 1 --qk-ltu               t--u                ,=0                 .=0
+                                        1                      1          /              t                     U
+                                 1--qk-~tu                t--u                1--aqt+qk-lt 2            1 --aqUq-qk-lu 2)
+                                                                   1
+                                (1 -- aqt + qk- 1tZ)(1 _ aqu + qk- 1U2)
+                                                  1                                               1
+                                 1 - b(q)t + N (q)k- l t 2 1 -- b(q') u + N(q') k- t u 2
+
+
+                                m=O n=0
+
+
+
+                                m=O n=O
+
+
+(the last equation because q" and q'" are relatively prime and b(a) multiplicative).
+T h u s c(qmq'")=b(qmq '") for all m, n and the p r o o f of T h e o r e m 5 is complete.
+      As a consequence of T h e o r e m 5, we find that we have two descriptions of the
+m a p t of T h e o r e m 4: as the Petersson p r o d u c t with f2 and as the m a p of Doi-
+N a g a n u m a . Using these two descriptions, we obtain a better understanding of
+this m a p p i n g .
+      First of all, there is a natural involution p o n SI=Sk(Fo(P),(/p)) which
+sends a normalized Hecke eigenfunction f = ~ ' a n e 2~i"~ to fo=y'a~
+(a,~ = 2.) and is then defined on all $1 by linearity (the normalized Hecke eigenfunc-
+tions form a basis of S~). If we denote by a, the Fourier coefficients of fP (feS~
+arbitrary), then it follows from (93 a) and (93 b) that
+
+                                            a.-                    a.         if pXn;                                 (104)
+                     Modular Forms Associated to Real Quadratic Fields                    37
+
+
+i.e. p: Sx --r S~ "'twists" the Fourier coefficients of a cusp form by the character
+(/p). Let
+
+
+
+
+Then S~ c~ S{ = {0} since a well-known lemma of Hecke (see e.g. Ogg [9], p. 32)
+states that a non-zero cusp form cannot have a development of the form ~ . a,e 2~i"p~.
+It is easy to see that
+                                    st = s ~ | si-                              (105)
+and that S~ are just the (__+1)-eigenspaces of the involution p. It follows easily
+from either description of the map ~ that t is zero on Si-. One can in fact show
+    Proposition 1. For the splitting (105) of St according to the eigenvalues of p,
+    (i) dim S~ = dim S i- =89dim S 1 ;
+    (ii) the map t: S l --, S 2 is zero on S~ and injective on S[.
+   We omit the proof.
+   This describes the kernel of t; we now describe the image.
+    Proposition 2. The image of t : St ~ $2 is precisely the subspace of $2 spanned
+by the cusp forms co1, ~o2, ... defined in w 1.
+    Proof. Consider the Poincar6 series GP,(z) for the cusp at infinity of Fo(p).
+By the basic property of Poincar6 series, (G~, f ) is a constant (+0) times a, for
+an arbitrary f ( z ) = ~ a, e 2~i"z in $I. In particular, the G~ (n = 1,2 .... ) generate S~,
+since a cusp form orthogonal to all the G~ would have all its Fourier coefficients
+zero and hence vanish. But by the same property of G~,
+                               z(G,p) = (G~, ~) = (const) 9~o,
+since
+
+                                       n-1
+
+and therefore the o9, generate Im(0.
+     Propositions l and 2 give some insight into the nature of ~. Since the map t,
+relating as it does modular forms in one variable with Hilbert modular forms,
+seems to play quite a significant role in understanding Hilbert modular forms
+(cf. for example the rather theoretical discussion in w20 of Jacquet [6]), it would
+be of considerable interest to acquire more information about its properties.
+The following questions suggest themselves.
+     I. Elucidate the relationship of t to the Hecke operators in S~ and $2. Just
+as there are Hecke operators Tin: $1 ~ S~ sending a form Fourier coefficients a,
+to one whose n 'h coefficient is
+
+                                  ,it~n,ml( p ) tk- l a"'/'2'
+38                                         D. Zagier
+
+there are Hecke operators Tb: 82---~S2 sending a form F(zl,z2) with Fourier
+coefficients c(a) to one whose a ~h coefficient is
+                                        N(t)k-1 c ( a b t - 2).
+                              tl(a,b)
+It is, of course, clear from the Doi-Naganuma description that t maps Hecke
+eigenfunctions in $1 to eigenfunctions of the Hecke operators in $2, and the
+assertion of Proposition 1 is essentially that this map from the (finite) set of
+Hecke eigenfunctions of $1 to the similar set for $2 is precisely two-to-one,
+sending the two eigenfunctions f and fP (which are always distinct, by i) of the
+proposition) to the same eigenfimction. One also has the Doi-Naganuma map
+for forms of "Haupttypus," i.e. a map to: Sk(SL2;g)-* $2. This map also takes
+Hecke eigenfunctions to Hecke eigenfunctions and seems to be one-to-one and
+have an image disjoint from that of z. The image of i | t o seems to be precisely
+the set of eigenfunctions in $2 whose eigenvalues c(a) satisfy
+                                         c(a)=c(.')
+for all a. Otherwise stated, one has an involution on the set of Hecke eigenfunc-
+tions which sends a function with Fourier coefficients c(a) to the function whose
+a th coefficient is c(a'), and the image of 1 0 to is the space spanned by those
+eigenfunctions fixed under this involution. This would imply, in particular, that
+                    89dim $1 + d i m Sk(SL2:g)=dim (Im t | 10)
+                                                       - d i m $2 (mod 2).
+That this is in fact the situation seems to follow from work of Saito, at least if
+the discriminant D is a prime with class number h(D)= 1 ("Algebraic extensions
+of number fields and automorphic forms," to appear). Saito also finds a similar
+map for Hilbert modular forms associated to certain cyclic number fields of
+prime degree.
+    II. Since Hecke eigenfunctions are mapped to Hecke eigenfunctions under t
+and since these eigenfunctions are orthogonal under the Petersson product, it
+is natural to ask whether the map l: $1 -* $2 is not perhaps an isometry (up to
+a constant factor) with respect to this product, i.e. whether the relation
+                                 (l (f), 1 (g)) = K (f~ g)
+holds for all f, geS1 for some constant tr    Because the Hecke eigenfunctions
+form an orthogonal basis, it would suffice to show that
+
+                                O(f), ,(f))=K(ff)
+for all normalized eigenfunctions f with ~ independent o f f This can be attacked
+using the Doi-Naganuma description of the associated Dirichlet series and
+Rankin's description [10] of the Petersson product. As far as the author can
+check, however, the answer seems to be negative: t is not an isometry.
+    III. Finally, one can ask for a geometrical description of ~; namely, if we
+think of modular forms as functions of pairs (E, co) with E as elliptic curve and co
+an abelian differential on E, and of Hilbert modular forms similarly as functions
+of 2-dimensional abelian varieties, then z should have some interpretation in
+                        Modular Forms Associated to Real Quadratic Fields                      39
+
+terms of a relationship between abelian varieties of dimension two and one.
+However, it is not yet evident what such an interpretation might be.
+
+
+                                   Appendix 1 : The Case k = 2
+    In this paper we have constructed and studied a series of Hilbert m o d u l a r
+forms ~o0, ~o1 , e)2, ... of arbitrary even weight k > 2. The case k = 2 was excluded
+because the series defining ~,, is not absolutely convergent. However, Hecke [4]
+has shown that the Hecke-Eisenstein series of weight 2 for a real quadratic field
+can be defined by an a p p r o p r i a t e limiting procedure and is a m o d u l a r form
+having the same properties as the series of higher weights. S i n c e - a s we saw
+in w 1 - t h e Hecke-Eisenstein series is a multiple of our ~oo, it is reasonable to
+expect that all of the co,, can be defined also for k = 2 by applying Hecke's method.
+This will be carried out here.
+    Hecke's idea is to replace a conditionally convergent series ~ f ( z ) -2 by the
+absolutely convergent series ~f(z)-2lf(z)[ -2s, where sere has positive real
+part. The latter function is no longer h o l o m o r p h i c in z but is an entire function
+of s. It also is periodic in z with real period, so has a Fourier expansion
+   G(Y, s) e2€ whose Fourier coefficients depend on s and also on the imaginary
+part of z. The coefficients c~(y,s) are then h o l o m o r p h i c in the entire s-plane,
+and in favourable cases co(y, 0) is independent of y; then .-,lim( ~ f(z)- 2 If(z) l- 2s)
+ = ~ G(Y, 0) e2~i~Z is holomorphic.
+    We thus define (for meN, zi, z2e~,seC, R e ( s ) > 0 )
+                   (Om,s(ZI'Z2):             E     q~s(azlz2+)LZl+)/Zz+b)'                     (1)
+                                           a, beY
+                                           2~b- I
+                                        22"-ab-m/D
+where for convenience we have used the abbreviation
+
+                                                   1        -2 C 2slog ]zl
+                                  ~pdz)= z2lz[2, - z                                           (2)
+
+The function co,., ~ satisfies
+                ( O(Z1 -]- fl     ~'Z2 -[- fl' )                  1              (Oms(Z1,Z2)
+          (Dm,s ~ZI~_ ~ ' "yZ2-~-~'                    q)s(TZl+6)q~s(Y'Z2+6' )     ""
+
+for all (~ ~)eSL2~O; in particular, the function (~)~defined by
+         7
+                                      tim Om,                                                  t3)
+(if the limit exists) will satisfy
+
+                   (.~Z12~          O(Z2~-fl' ):('~ZI-[-~)2('yZ2@(~')2 (Dm(ZI Z2).             (4)
+             co,, \ y z i + f i   , y, zz+~,
+
+We want to prove that oJ~ exists, is hotomorphic, and has a Fourier expansion
+given by T h e o r e m 2, w2, with k = 2. Since the Hecke-Eisenstein series was treated
+by Hecke, we assume m > 0.
+40                                                                    D. Zagier
+
+    As in w we split up COs,s as t~,.,, + 2 ~_,.~21~o~,.s, where O)am.s(Z1 , Z 2 ) is defined
+as the subsum of (1) with a fixed vatue of a. The series
+                                                                                           1
+                                               (DOra(Z1 ' Z2) =       Z
+                                                                   ~2t' = m i d
+                                                                                ()~Zl+,~,z2+b)2
+                                                                      b~Z
+is absolutely convergent and lim o~~ -- o~,,~ Therefore we only have to worry
+                                                            s~O
+about a + 0 . Let a > 0 and split up the sum defining c0~,~ as in Eq. (31), w2:
+
+oja, s(Zl , Z2) = Z                2 q)s (a(z1 -{-O)(z2 +0')-1- ~.(z 1 -{- 0)-1- ~.'(z 2 -I- 0') ~- ; ~ ' - - m / O ]           (5)
+                       2 ~ R OeO         \                                                                   a        /
+with R a finite set. T h e inner sum equals
+
+                          a-2-Z* ~oee(P*(( z l + ~ + O )                           (z2+~+O'\)-a~D) \                            (6)
+
+Denote by b~, ~(c~,y~, Y2) the Fourier coefficients in the expansion
+
+                     2 @s((Z1 -}-0)(Z2 -t- 0') -- 00 = 2                           b~,~(ct, y~, Y 2 ) e a " f ~ §               (7)
+                    0e~                                                   veb- t
+
+(c~>0, za = x l +iyl, z 2 =x2+iyz). Substituting this into (5), we see that co~,,s has
+a Fourier expansion
+
+     (Dsm,a ( Z l ' Z 2 ) =        2       e2=i(vz~ , v'z2} a - 2 - 2 s ~ e                                by s     , Yl , Y2
+                              veb-     I                                      R~R
+
+and therefore
+o,.,~(z~, z2)
+
+        =~00 s(21'a2)+ veb-1
+                        Z (2a~                                    a 2 + 2s    b~,~ ~
+                                                                                      (m        Y l ' Y2                        (8)
+
+
+with G. (m, v) as in Eq. (38), w2.
+     As usual, b~,s in (7) can be evaluated by Poisson summation"
+                                           1
+        b~'s(~                                       I
+                                                  Imz2=r2 lm zf = y, e-Zni(vzl+v'=z)(Ps(ZlZ2-a)dzldz2
+
+                                   -- 1               ~          (p,(z2) e - 2="~'z2+~/z2)
+                                           ~      hTi 22 = y2
+
+                                                         e-2niv(z,-~/z2) (l)s z1 _                  dzl dz 2
+                                       lm Zl =Yl                                                                                (9)
+                                           1
+                               -                      ~          ~os(z2)e -2~'"'~+~/~'
+                                           ~     i~tl Z2 = r 2
+
+                                                     5             e-2"i~'~~                    "
+                                       Im t = y , - t m (a/z2)
+                               Modular Forms Associated to Real Quadratic Fields                                        41
+
+Consider the inner integral. Write y for Yl - Im (0{/Z2).
+
+                           e-2~i~, ~os(t)dt =               i e-2~i~              iy)q),(x+iy)dx
+
+                                                         = e 2nvy ~o~         e-2=iVXdx
+                                                                       -~, (x+iy)2(X2 +y2) s                          (10)
+
+                                                                                       e 2~ivyudu
+                                                       =Y-'       - 2 s e i ' ~ r --m (u-+ i)2(u2 + 1)s'
+
+where in the last line we have set u = x/y. The integrand is now holomorphic and
+one-valued in the cut region ~ - [ i , i v ] - [ - i o o , - i]. If v is negative, we can
+deform the path of integration upwards to a path F starting at - e + ioo, circling
+counterclockwise about the point i and ending at + e + i o c ; if v is positive, we
+deform the path of integration to the mirror image of F. The resulting integral
+in both cases is then holomorphic in s for all s and satisfies a uniform estimate
+(Eq. (10) of [4]) which suffices to make the series
+
+
+                veb    1   a    i
+                 v*O
+absolutely convergent for all s; therefore this series has a limit at s = 0 which is
+obtained simply by setting s = 0 in each term. By L e m m a 2 of w (with k=2),
+
+                                b~,o(~,y, , ) ' 2 ) = 4 = V 7 D Jt (4 ~ ]/~v-,")
+
+(this is independent of y~, Y2, so the limit of (11) as s - ~ 0 is holomorphic). There-
+fore in (8) the sum of(o~ ~ and the terms with v + 0 tend as s -~0 to the holomorphic
+function~[~,>oC,,~e2=i1~=' +~'=~) with c,,~ as in Theorem 2, w
+    It remains to treat the term v = 0 in (8). Eq. (10) for v = 0 becomes
+
+                                                   j        ~o~(t)dt= V1+2~ ,
+                                                                             c(s)
+                                              lmt=y
+where
+                                                           d,,                      r(s +
+                               c(s)= ,[ (u+i)2iu2+])~= -"                             -F(s+2f--                       (12)
+
+Substituting this into (9), we find
+                                cI, )         j.                 (Ps (Z2) 't2"2
+     bo, s( 0{, Y l , Y2) = ] / / ~     Im z2      3'2
+                                                                 - lm Z-g- )
+
+                           _ c(s)        i'                                    dx
+                           ..............................................                          1.27
+
+
+
+                            _ c(s)                 1               ~'                      du
+                                         (yl y 2 ) 2 s + 1         I                            . 0{/ylYa\2S+   1 9
+                                                                  - ,o (u + i)2 (u 2 + l)S 1 + 7 + 1 - }
+42                                                       D. Zagier
+
+The integral equals c(s)+ O(c~/y~Y2), with the constant implied by O uniform in s.
+Therefore
+
+          2
+              a~l
+                        a2+2 '            (=
+                                   bo, ~ a ~ , y l , y      2   )
+                        2 c(s) 2                           G~(m, 0)                      Ga(m, O) )           (13)
+                                                                        t-c(s) ~ 0        a4+2 s    .
+                    -
+
+
+
+
+                                                                              a=l
+
+
+
+Since IG~(m, 0)[< a 2, the last sum is bounded for s ---, 0 and, since c (s) ~ 0 for s - . 0,
+the second term tends to zero with s. Also, Ga(m, 0)= D N.D(m ) in the notation
+of Eq. (82), w          a n d - b y Lemma 3 of that s e c t i o n - t h e function ~ N.n(m)/a" has
+                                               1 -(D/q)q -=
+an Euler product with q-factor                    1 _ q l -= for qXD~ and therefore has a simple
+pole at s=2. Hence ~ G~(m, O)/a2~ 2= has a simple pole at s = 0 and, since c(s) 2
+has a zero of second order, we see that also the first term of (13) tends to zero
+with s. Therefore the terms in (8) with v = 0 contribute nothing in the limit as
+s--~ 0, and we deduce for the limit (3) the Fourier expansion
+
+                                       oJ,,(zl, z2)= ~          cmve 2=i(~z' +~'=~                           (t4)
+                                                     veb- t
+                                                      v>O
+
+
+with %,, given by the same formula as in w2. In particular, c%(Za, Z2) is holomorphic
+and (by virtue of(4) and the absence of a term with v = 0 in (14)) is in fact a cusp
+form of weight 2 for SL2(9.
+    A similar calculation shows that if, in the context of w3, we define a Poincar6
+series of weight 2 by
+
+                G.e (z)= }im~ (89A=(ej) ~r,.."Apr )((A~ 1 A) e z=i"Az/w" (o~(cz + d))
+
+
+(cf. Eq.(51), w then for non-trivial characters Z Ge.(z) is a holomorphic cusp
+form of weight 2 for the group F and character Z and has the Fourier expansion
+        r,P e 2rrirnz with grim
+2 2 = ,s,,,                 e   as in (56) of w3. In particular, Eq. (65) and (66) of w3
+define a function G, eS2(Fo(D),(/D)). Since the calculation of w used only the
+Fourier coefficients of co,, and G,, it remains true without any change. We have
+proved:
+
+      Theorem. Let k = 2 and, for m > O, define
+                                                                            1
+     (om(zl,zz)=~i_m             ,,~
+                                           (--a~zI Z2 +2Z 1 +)t'Z 2 -t-b) z [az 1 Z2 "t-•Z 1 -t~,,~'Z2 -l-hi "2T"
+                           22" -ab=m/D
+
+Then the functions e3m have all the properties which are asserted in Theorems 1, 2
+         1, 2 and 4 respectively) for the corresponding forms of higher weight.
+and 3 (w167
+                          Modular Forms Associated to Real Quadratic Fields                           43
+
+
+                            Appendix 2: Restriction to the Diagonal
+    Given a Hilbert modular form F(z1, z2) of weight k, the restriction of F to
+the diagonal in .~ x .~, i.e. the function F(z, z) (zc~), is an ordinary modular form
+of weight 2 k for the full modular group S L2 •. This process can lead to interesting
+modular forms: for instance, Siegel [11] has studied the restriction to the diagonal
+of the Hecke-Eisenstein series of weight k. Since the Hecke-Eisenstein series is
+(up to a factor)just our form ~Jo, this suggests that it might be of interest to study
+the forms co,,(z, z).
+    We have
+                       o),,(z,z)=     ~'    (az2+(Tr)o)Z+C) -k.                     (1)
+                                                   a,c~
+
+                                            22'     ac...m/D
+
+
+Let b = Tr2e;g and write 2 = - d + b l ~ D with d2=-b2D (rood 4). Then (1) becomes
+                                                  2#
+                          (~),,(z, z) =                   ~'           ( a z 2 + b z + c ) -k ,
+                                                   a.b.c, de~
+                                          d2      D(b 2 4ac}-- - 4 m
+
+where ~ ' means that the 4-tuple a = b = c = d = O is to be omitted if m=0. (The
+condition d2=-b2D (rood 4) can be left out since it follows from the equation
+d2 - ( b 2 - 4 a c ) D = - 4 m . )
+     Definition. For k > 2 an even integer and for any nonnegative integer A, set
+                                                                            1
+                                  9fk (A' Z ) =        E'
+                                                     a.b.c~7/
+                                                                   ((,IZ2--~.-b-z~_c)k,               (2)
+                                                  b 2 4 a c - ,~
+
+where ~ ' means that the term a = b = c = O is to be omitted from the summation
+in case A =0.
+    Then the above equation can be written
+
+                              r         z):               L          fk (-t(2 ;-4"7- ' z)"            (3)
+                                               d2_-- - 4 m (roodD)
+
+Thus the modular form m,,(z,z) breaks up into an infinite sum of functions
+./k(A,z). We now show that these functions are modular forms having similar
+properties to the properties of the mm considered in w 1.
+     Theorem. (i) For each A >0, .[k(A, z) is a modular fi~rm of weight 2k with respect
+to   S L 2 7Z.
+
+      (ii) fk(O, Z) is a multiple of the Eisenstein series o[" weight 2k.
+     (iii) fk(A,z) is a cusp Jbrm Jor A >0.
+     (iv) L ( A , z ) - O unless A - O or 1 (mod4).
+      Proof (i) This is clear, since
+
+                 a \ T z + ( 5] + b \ y z + b l + c = ( a * z 2 + b * z + c * ) / ( T z + ( 5 ) 2 ,
+44                                                 D. Zagier
+
+with a*, b*, c* given by
+
+
+
+
+Then b*2-4a*c*=A and (a*, b*,c*) runs over the same set as does (a, b, c).
+   (ii) If A =0,the equation b2-4ac=A becomes homogeneous in a, b, c, so we
+can remove the greatest common divisor of a, b, c to obtain
+                                                                          1
+                        fk(0, z)=((k)                  ~
+                                                  a, b, cEff
+                                                             (az2+bz+c) k.
+                                                 (a,b,c)=l
+                                                  b 2 =4ac
+
+Now (a,b,c)=l, b2=4ac implies (a,c)= 1, a = _+m2, c= +_n2, b=2mn (with the
+signs of a and c agreeing) for some relatively prime integers m, n. Hence
+                                                                          1
+                           fk(O,z)=~(k) ~                         (mz+n)2k"
+                                                        m, n~ff
+                                                       (m,n)=l
+
+By the same argument, the Eisenstein series
+                                                                      1
+                                   G2k(Z)=           Z'     (mzq_n)2k
+                                                    m, neff
+equals
+                                                                  1
+                                   ~(2k)           ~
+                                                 m, neff.
+                                                          -(mz+n)Zk.
+                                                (m,n)=l
+
+Therefore
+                                    9~(o, z)-~ f ~(k)
+                                                 ~    G2k(Z).                                (4)
+   (iii) The whole Fourier expansion of fk(A, z) can be found by the method of
+w2: one breaks up the sum
+                           fk(A,z)= fk~ z)+2 ~ f~(A, z)
+                                                                  a=l
+
+with fk~(A,z) defined by Eq. (2) with the summation restricted to a fixed value
+of a; thus
+                              fk~     = ~ hk(bZ)
+                                                           b2=A
+
+(in the notation of (25), w2) and
+                                                                  b2_A \-k
+                   fk"(A, z)=               •              azZ+bz+-~-a)
+                                            beff
+                                   b 2 ~_ zt (rood 4 a )
+
+for a = 0 . The Fourier expansion offk~ is then given by (26) and has no constant
+term; that of fka is found by breaking up the sum as
+                                                                                  b2_A \-k
+            fk"(A,z)=          Z             Z (a(z +n)z + b                  n        )
+                            b(mod 2a)       ne~g \
+                        b z =_A (rnod 4 a )
+                         Modular Forms Associated to Real Quadratic Fields                                     45
+
+
+The first summation is finite, so it suffices to show that the inner sum has a
+Fourier expansion with no constant term. But the r ~h Fourier coefficient of the
+inner sum is
+
+                      ~~ (az2          b 2 A\-*                                                                (5)
+                     -~+ic    + b z + Y ~ a ~ ) e-~i'Zdz                                  (C>O)
+
+by the usual argument, and this vanishes for r < 0 because the poles of the
+integrand are on the real axis, below the line of integration.
+   (iv) This assertion is clear since the summation is empty otherwise.
+
+   We can evaluate the integral ( 5 ) b y s u b s t i t u t i n g t = - i ( Z + ~ a                    )"
+
+               o~ic               e     2"~irzdz                               C+ioo       e27trtdt
+                         /                   b 2 A\k = _ i e , i,b/a Jr                          A k
+
+                         2k+ 89               89
+                          k•                       Jk_89 ( ~ ) e                ~irb/a      if A > 0          (6a)
+                 =      AY      "~(k-l)!
+                             22k 7~2k
+                        (2k-1)!a k r E k - l e rrirb/a                                      if d = O          (6b)
+
+
+ the integral is essentially the inverse Laplace transform of (s2+ 1) -k and is
+evaluated in [ 1], (29.3.57). Recall that Jk ~ is an elementary function: the expres-
+
+sion(6a) equals4~(--4a)k-1
+                    (k-1)!
+                                               dkk-1
+                                              dA   1 ( s i n ~] ]/ ~~ ) )             .   Therefore we have
+
+    Proposition. For d >0, fk (A, z) has the Fourier expansion
+
+                                           f~(A,z)=       l.....d Cr e
+                                                         r=l
+
+        A    (21ri) k            dk-1        2k+~Trg42rk-~ ~a-~S~(r,A,Jk_~(~r~A~t                              (7,
+
+
+where
+                                        S~(r, A)=           ~             e2.(rb).                             (8)
+                                                         b (rood 2a)
+                                                    b 2 ~ A (rood 4 a )
+
+For A = O, we have
+                                      fk(O,z)=2~(k)+~                     o
+                                                                         Cr e 2~irz
+                                                                r=.l
+
+                                         22k.~ i ~2k                or;
+                                 .0                     r2k_ 1            ~ 1- S~(r, 0).                        (9)
+                                c~        ( 2 k - 1)!             ~=1
+46                                                 D. Zagier
+
+
+     As in w2, we can evaluate So(r, 0), for clearly
+                                     Sa(r, 0 ) =         ~           %(rc)
+                                                      c (rood a)
+                                                   c2 -=0 (rood a)
+
+is multiplicative as a function of a and, for a = p", is given by
+
+                                            J
+                                              (p[m/2]           if p[m/21[r,
+                                Spin(r, O)=].0                  if p[m/Zl/~r.
+This implies
+                  LS~(r,O)a_~=l-[(l+p_~).~d,_2~ - ~(s) ~                                1
+                 a:l                   p                  ~t~                ~(2s)   d 2S-1
+and thus (9) becomes simply
+
+                                 0 _ ~(k) 22k+ 17[.2k
+                                cr ~(2k) (2k-1)~
+
+This gives a second proof of (4).
+
+                                               References
+ 1. Abramowitz, M., Stegun, I.: Handbook of mathematical functions. New York: Dover 1965
+2. Doi, K., Naganuma, H.: On the functional equation of certain Dirichlet series, lnventiones math.
+    9, 1-14 (1969)
+3. Hardy, G. H., Wright, E. M.: An introduction to the theory of numbers, 4th ed., Oxford: Clarendon
+    Press 1965
+4. Hecke, E.: Analytische Funktionen und algebraische Zahlen. II. Abh. aus dem Math. Seminar der
+    Hamburgischen Univ. 3, 213-236 (1924) (Mathematische Werke, pp. 381-404. G6ttingen:
+    Vandenhoeck & Ruprecht 1970)
+ 5. Hecke, E.: Ober die Darstellung der Determinante einer positiven quadratischen Form durch die
+    Form, Vierteljahrschrift d. Naturforschenden Gesellschaft in Ztirich 85, 64-70 (1940) (Mathe-
+    matische Werke, pp. 782-788 G6ttingen: Vandenhoeck & Ruprecht 1970)
+ 6. Jacquet, H.: Automorphic Functions on GL(2), Part It. Lecture Notes in Mathematics 278.
+    Berlin-Heidelberg-NewYork: Springer 1972
+ 7. Lehner, J.: Discontinuous groups and automorphic functions, AMS, Providence 1964
+ 8. N a g a n u m a , H.: On the coincidence of two Dirichlet series associated with cusp forms of Hecke's
+    "Neben"-type and Hilbert modular forms over a real quadratic field. J. Math. Soc. Japan 25,
+    547-555 (1973)
+ 9. Ogg, A.: Survey of modular functions of one variable. Modular functions of one variable I. Lecture
+    Notes in Mathematics 320, pp. 1-36. Berlin-Heidelberg-New York: Springer 1973
+10. Rankin, R.: Contributions to the theory of R a m a n u j a n ' s function ~(n) and similar arithmetical
+     functions. I. Proc. Camb. Phil. Soc. 35, 351-356 (1939)
+11. Siegel, C.L.: Berechnung von Zetafunktionen an ganzzahligen Stellen. Nachr. Akad. Wiss. G6t-
+     tingen, Math.-Phys. Kl. 10, 87-102 (1969)
+12. Zagier, D.: Formes modulaires ~ une et deux variables, C. R. Acad. Sci. Paris, A, 279, 683-686
+    (1974)
+                                                        Don Zagier
+                                                        Mathematisches Institut
+                                                        der Universit~it
+                                                        D-5300 Bonn
+                                                        Wegelerstrage 10
+                                                        Federal Republic of G e r m a n y
+
+                                      (Received January 31, 1975)
+

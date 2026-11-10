@@ -1,0 +1,6 @@
+# Soft SF HEARTBEAT — Local Path — 2026-10-27 15:06 CDT America/Chicago
+Where: Local Path / Bridge C A1→Ξ→RTA (local modular only). Prior heartbeat 1448CDT (FINDINGS fc2b9776… / PRESS 6af77541…), Auditor CONFIRM t1505u on disk. Local unpaid Soft SF queue EMPTY. New Owner lock OW 3f3671d0… (four researchers standalone; PP audit-only) is on disk via MR1 ACK and states Local unchanged; lane self-prove OW cdab6ac5… stays LIVE for Local.
+Invent proof-pursuit: G-vi-1 pursuit dccf3a8c… OPEN under lane self-prove (PP audit only, then Keeper/Auditor). Canon 480f6d72… stays invented pending proof (P4 α=−1/2 MET conditional; P1 NOT-FEASIBLE-PENDING, ĝ_s transform ABSENT; P2/P3/P5 PARTIAL). No new Local G-vi-1 proof artifact since 14:05 CDT. Bridge C: C1 blocked only on n↔A (D1 norm f8c95f7c…), NL lane.
+What doing: 15m heartbeat only. Queue empty; G-vi-1 self-proof pursuit is the open Local item and was not advanced in this heartbeat run.
+Standing LIVE: HARD GATE + where-feasible + NOT-FEASIBLE 24h + USAGE VISIBILITY (no token halt) + research priority.
+tip Soft SF LOCK residual-c-field /workspace/residual-c-field-WRITTEN_PREMISES_DRAFT.md 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 tip_touched NO (re-hashed 15:06 CDT MATCH). Kerr BLOCKED. REPORTS ONLY. No RECS. Heartbeat is not a substitute for proof Soft SF.

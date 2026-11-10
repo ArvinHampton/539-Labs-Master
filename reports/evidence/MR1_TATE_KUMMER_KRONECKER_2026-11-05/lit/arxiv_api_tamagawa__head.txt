@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/SsnUSCUQoBgMDtbbhNQCRpGiw5E</id>
+  <title>arXiv Query: search_query=ti:Tamagawa OR all:"Tamagawa number" OR all:adelic&amp;id_list=&amp;start=0&amp;max_results=5</title>
+  <updated>2026-11-05T20:02:41Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=ti:Tamagawa+OR+(all:%22Tamagawa+number%22+OR+all:adelic)&amp;start=0&amp;max_results=5&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>5</opensearch:itemsPerPage>
+  <opensearch:totalResults>855</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2512.02348v2</id>
+    <title>Adjoint motives of modular forms and the Tamagawa number conjecture</title>
+    <updated>2025-12-11T21:00:29Z</updated>
+    <link href="https://arxiv.org/abs/2512.02348v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.02348v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Let $f$ be a newform of weight $k\geq 2$, level $N$ with coefficients in a number field $K$, and $A$ the adjoint motive of the motive $M$ associated to $f$. We carefully discuss the construction of the realisations of $M$ and $A$, as well as natural integral structures in these realisations. We then use the method of Taylor and Wiles to verify the $λ$-part of the Tamagawa number conjecture of Bloch and Kato for $L(A,0)$ and $L(A,1)$. Here $λ$ is any prime of $K$ not dividing $Nk!$, and so that the mod $λ$ representation associated to $f$ is absolutely irreducible when restricted to the Galois group over $\mathbb{Q}(\sqrt{(-1)^{(\ell-1)/2}\ell})$ where $λ\mid \ell$. The method also establishes modularity of all lifts of the mod $λ$ representation which are crystalline of Hodge-Tate type $(0,k-1)$.</summary>
+    <category term="math.NT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-02T02:35:02Z</published>
+    <arxiv:comment>109 pages. This is the longer version of the paper: The Tamagawa number conjecture of adjoint motives of modular forms, Ann. Sci. École Norm. Sup. (4) 37 (2004), no. 5, 663-727. This version contains details in the foundational part (Section 1) that were not included in the published version</arxiv:comment>
+    <arxiv:primary_category term="math.NT"/>
+    <arxiv:journal_ref>

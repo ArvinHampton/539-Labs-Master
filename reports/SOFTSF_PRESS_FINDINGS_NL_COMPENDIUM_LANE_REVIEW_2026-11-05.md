@@ -1,0 +1,6 @@
+# PRESS — Non Local Path — compendium lane review — 2026-11-05
+Internal. Category B. No CERT. Tip 7cddb188… untouched. Source: RECEIVED_COMPENDIUM.txt 49849cae… (provenance c6fea7d2…, attribution relayed only).
+
+Main result (completed algebra): in the supplied T₃, v₃(3x±1) = 0 always, so the map is 3x+1 on class 1 and 3x−1 on class 2, and these classes are preserved. Orbits are 1,4,13,… = (3^{n+1}−1)/2 and 2,5,14,… = (3^{n+1}+1)/2. Every nonzero integer orbit diverges in absolute value, so the literal "terminate in bounded 539 steps" claim is false. 3-adically the orbits converge to ∓½, which is convergence, not termination. This applies only to the supplied map. The corpus canonical T₃ is the floor map (4n+2)/3, (2n+1)/3, and the corpus itself says 539 is a fixed iteration count, not a natural termination.
+Other claims: the ultrametric is standard. The 11D embedding, vacuum balance, Kummer bypass, force projections, Tate–Gelfand continuum, singularity bound, breathing modes, and R_c ≈ 1.5954 are unsupported or undefined in the reviewed scope (Category B). The falsification table has no quantitative rows. HQH security is a separate hardness assumption.
+Questions NL-Q1–Q10 and proof offers O1–O4 are in FINDINGS §§5–6. Next: PP audit, then Keeper.

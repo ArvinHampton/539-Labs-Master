@@ -1,0 +1,26 @@
+{
+  "findings": "/workspace/quantum-comp/reports/FINDINGS_AGENT_RESONANT_MATH_PREDICTIONS_ALL_FIELDS_EXTRACT_2026-11-05.md",
+  "findings_sha256": "b209242fa740dc659713afa52a50fb5755cc3eff87c2825cc836100e3ebdfd17",
+  "press": "/workspace/quantum-comp/reports/SOFTSF_PRESS_FINDINGS_AGENT_RESONANT_MATH_PREDICTIONS_ALL_FIELDS_EXTRACT_2026-11-05.md",
+  "press_sha256": "dda2ce91f276ccc554b20e959024486b40c1de1006c5cc1f4da0f738126ac477",
+  "cmp": "32/32",
+  "tip_before": "7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91",
+  "tip_after": "7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91",
+  "tip_touched": "NO",
+  "status_counts": {
+    "existing theorem consequence": 5,
+    "conditional consequence": 2,
+    "conjecture/open problem": 4
+  },
+  "source_drift": [],
+  "copy_order": [
+    "/workspace/quantum-comp/bridges/PROFESSOR_PROOF",
+    "/workspace/quantum-comp/reports/bridges/PROFESSOR_PROOF",
+    "/workspace/quantum-comp/bridges/AUDITOR",
+    "/workspace/quantum-comp/reports/AUDITOR",
+    "/workspace/quantum-comp/reports/bridges/AUDITOR",
+    "/workspace/reports",
+    "/workspace/quantum-comp/bridges/PHYSICIST",
+    "/workspace/quantum-comp/reports/bridges/PHYSICIST"
+  ]
+}

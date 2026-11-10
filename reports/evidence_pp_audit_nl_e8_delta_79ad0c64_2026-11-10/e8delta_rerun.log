@@ -1,0 +1,31 @@
+[PASS] C1a x-block S_mu nu = -rho eta_mu nu (t,x)
+[PASS] C1b trace h^ab S_ab = -6 rho
+[PASS] C1c rho = 1/2 sum_{a<b} F_ab^2 >= 0 (sum of squares)
+[PASS] C1d Y6 blocks S_ab = sum_c F_ac F_bc - rho delta_ab (Sigma, fibre, mixed)
+[PASS] C1e x-Y6 and t-Y6 mixed blocks vanish
+[PASS] C1f S_aa + rho = |F(e_a,.)|^2 >= 0 for every Y6 direction a (w_a >= -1)
+[PASS] C1g S^Sigma_Sigma - S^x_x = |F(e_sigma,.)|^2 >= 0
+[PASS] C2a SD fibre block = 0
+[PASS] C2b SD mixed blocks = 0
+[PASS] C2c SD worldvolume (t,x,Sigma) block = -rho h
+[PASS] C2d SD pointwise saturation rho = q/2 (energy density = topological density)
+[PASS] C2e pointwise Bogomolny: rho - q/2 = 1/2 sum_{3 pairs}(F - *F)^2 >= 0
+[PASS] C2f general fibre-only field: fibre block traceless
+[PASS] C3 any field (electric legs allowed): S(k,k) = sum_{c not in {t,j}} F(k,e_c)^2 >= 0
+   u[HW printed] = 2
+   u[Conrad/Lu] = 1
+[PASS] C4a u = 2 (HW printed lambda^2=(2pi)^7), u = 1 (lambda^2 = 2(2pi)^7)
+[PASS] C4b tension = 2N + (u-1) n + eps (symbolic)
+[PASS] C4c u=1: tension independent of the split n (dT/dn = 0)
+[PASS] C4d 2 N_flux = 9760
+   MN2: N_req=12568.6  Delta_N=2808.6  ratio=1.2878  n_needed(u=2,BPS)=2808.6 <= 9760: True
+   MN1: N_req=12252.1  Delta_N=2492.1  ratio=1.2553  n_needed(u=2,BPS)=2492.1 <= 9760: True
+   z=2: N_req=12812.2  Delta_N=3052.2  ratio=1.3127  n_needed(u=2,BPS)=3052.2 <= 9760: True
+   z=3: N_req=12942.4  Delta_N=3182.4  ratio=1.3261  n_needed(u=2,BPS)=3182.4 <= 9760: True
+   UV: N_req=16266.7  Delta_N=6506.7  ratio=1.6667  n_needed(u=2,BPS)=6506.7 <= 9760: True
+[PASS] C4e UV: N_req/(2N) = 5/3 exactly and Delta_N = (2/3)*9760
+[PASS] C4f u=2 BPS split would need n_inst = Delta_N <= 9760 on every listed face
+[PASS] C4g BPS reach needs u >= 1 + Delta_N/(2N); at UV end u >= 5/3
+[PASS] C5 Z2 doubling of [K] and of [G_tan] cancels in tension/charge
+[PASS] C6 required w_fib (UV -6/5, IR -4/3) < -1 <= w_a of any YM + positive-tension brane
+ALL PASS

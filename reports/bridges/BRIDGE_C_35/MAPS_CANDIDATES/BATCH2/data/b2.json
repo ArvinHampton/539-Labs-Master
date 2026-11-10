@@ -1,0 +1,19 @@
+{
+ "C7": {
+  "L": 9800,
+  "ord_MT": 140,
+  "pass": false
+ },
+ "C8": {
+  "all_reach_1": true,
+  "max_steps": 29,
+  "argmax": [
+   487
+  ],
+  "pass": false
+ },
+ "C9": {
+  "count_le14": 434,
+  "pass": false
+ }
+}

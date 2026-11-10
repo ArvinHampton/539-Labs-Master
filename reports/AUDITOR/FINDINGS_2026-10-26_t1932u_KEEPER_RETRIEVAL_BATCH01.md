@@ -1,0 +1,27 @@
+# FINDINGS — Keeper retrieval batch 01 (10 artifacts)
+Date: 2026-10-26 ~19:35 CDT. Crawl: tier1 lock-class (reports/, lexical) = 7; tier2 proofs (bridges/, lexical) = 3. Read-only + sidecar repair.
+
+| # | Path (under /workspace/quantum-comp/reports/) | sha256 | Sidecar |
+|---|---|---|---|
+| 1 | CONFLICT_RESOLUTION_FULL_2026-10-25.LOCK_SUPERSEDE.md | d3fbcbb1ae1a2d9ac16ac15e1a2a34ac05f2aec8cbec4ce6383604c847de2b94 | ABSENT→WRITTEN |
+| 2 | ENTANGLEMENT_DATASETS_CATALOG_2026-10-25.LOCK_SUPERSEDE.md | 8c3cde92dc6686b433880b268193c06c54ffdeee302beb141428e74b38e3ac1e | ABSENT→WRITTEN |
+| 3 | INVENTORY_LOCK_CLOSE_t1055u_2026-10-25.md | a5a129f17d9370aa23698853cd33f41971b98a4fd7d7155d24ff3de652e50bad | ABSENT→WRITTEN |
+| 4 | LOCK_DIGEST_t1055u_2026-10-25.md | e0da54e979ad5c4ee323ae8f13a4bdb91e40be24a8b549a8430654ae91f3419a | ABSENT→WRITTEN |
+| 5 | LOCK_SUPERSEDE_INDEX_t1055u_2026-10-25.md | dad5ed5c58570009f5fdf42223f98b0db3d0a3e53fab5bdecdb4a309f562b6bb | ABSENT→WRITTEN |
+| 6 | NAVRATIL_MATH_RETAIN_COORD_2026-10-25.LOCK_SUPERSEDE.md | 12459706431649b0e9df99988587cfa610f04c75d02c0eca37e1021b867d6633 | ABSENT→WRITTEN |
+| 7 | OWNER_WRITE_AUTHORITY_OPEN_DEADLOCKS_2026-10-25.LOCK_SUPERSEDE.md | dd9a721844be1ad9547db92da4b7f0539e4fcff9b45e2a151484e64a94cb0c35 | ABSENT→WRITTEN |
+| 8 | bridges/NONLOCAL_QM_EH11D/PROOF_NL_JOIN_1_RIGOROUS_2026-10-26.md | 946a5910ead0631eca28c5971a74d28d61b66e853f8cb8d88c1cd7b42c88d2fe | MATCH |
+| 9 | bridges/NONLOCAL_QM_EH11D/PROOF_SKETCH_NL_JOIN_1_P1_CLOSED_UPDATE_2026-10-26.md | e6ea5b9036c7e6c67969a3979a022c754ef767a838398bca425268203a6cfce3 | MATCH |
+| 10 | bridges/NONLOCAL_QM_EH11D/PROOF_SKETCH_NL_JOIN_1_P1_P4_2026-10-26.md | 57c805e8750b379132a9b46d2937409840386e3bc56d668d27b3a4c0232a382a | MATCH |
+
+GAP: none. Every .md path referenced inside the 7 lock files resolves (the tip path referenced by #3/#4 lives outside quantum-comp, and it is present).
+
+## Soft SF flags
+- Keeper LOCK OW 98cba480… + PRESS e69851c7… — CONFIRMED (FINDINGS_2026-10-26_t1932u_KEEPER_LOCK_OW_CONFIRM.md)
+- Pack B SF-1 — CLEARED: PRESS sidecars MATCH: PAUSE_RESPOND 2b6d5b9332f2c868864bc6e3e507398528e14f5cb5af35e13245825c6f722719; RESUME_NINE_COOK 0d60200944d94dcfe9e18d4067e29070027d7f568ffd811bfb1ccf6081f846f1; CONTINUE_LANE 456fa830a012a2cc9cbc363e6a3799708091e562fe48d771b5bcaf346e79d2ce
+- Pack C SF-1 — CLEARED (FINDINGS_2026-10-26_t1932u_PR2_CATALOG_PATH_RESOLVE_CONFIRM.md)
+- Pack A SF-1 MR1 PROMOTE CSV re-stamp — OPEN (left as is)
+- Deferred press flood — not confirmed in this wave
+- Eigen: no agent contact; no eigen-* files were in this batch
+- Full-corpus audit: OPEN
+- tip Soft SF LOCK /workspace/residual-c-field-WRITTEN_PREMISES_DRAFT.md sha256 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 VERIFIED read-only; tip_touched NO

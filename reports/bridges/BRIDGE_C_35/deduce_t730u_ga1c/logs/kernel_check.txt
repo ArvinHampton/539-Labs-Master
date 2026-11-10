@@ -1,0 +1,1 @@
+symbolic illustration (structure only, no selector): k vanishes at samples [0, 0, 0, 0] ; growth 1

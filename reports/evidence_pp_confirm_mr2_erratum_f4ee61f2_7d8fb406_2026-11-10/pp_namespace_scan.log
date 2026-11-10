@@ -1,0 +1,33 @@
+SCRIPT_SHA256 1728d877918a96c8d91862483ade6b376ce6d91fdd531b1bb6881d138a3d0a50
+  token 'nsimplify': 0 code hits
+PASS no code use of 'nsimplify'
+  token 'simplify(': 0 code hits
+PASS no code use of 'simplify('
+  token 'numpy': 0 code hits
+PASS no code use of 'numpy'
+  token 'np.': 0 code hits
+PASS no code use of 'np.'
+  token 'allclose': 0 code hits
+PASS no code use of 'allclose'
+  token 'evalf': 0 code hits
+PASS no code use of 'evalf'
+  token 'float(': 0 code hits
+PASS no code use of 'float('
+  token 'Float': 0 code hits
+PASS no code use of 'Float'
+  token 'N(': 0 code hits
+PASS no code use of 'N('
+  token 'mpmath': 0 code hits
+PASS no code use of 'mpmath'
+  token 'random': 0 code hits
+PASS no code use of 'random'
+  token 'trigsimp': 0 code hits
+PASS no code use of 'trigsimp'
+  token 'solve(': 0 code hits
+PASS no code use of 'solve('
+PASS no float literals in AST
+  call names: ['Matrix', 'Poly', 'Q', 'S', 'ZoneInfo', 'all', 'bool', 'cancel', 'check', 'coeff_monomial', 'd2', 'degree', 'diff', 'ent', 'expand', 'flush', 'hexdigest', 'integrate', 'inv', 'len', 'lgn', 'list', 'max', 'min', 'noG', 'now', 'open', 'print', 'product', 'range', 'read', 'riemann_at_point', 'sha256', 'split', 'strftime', 'subs', 'sum', 'symbols', 'trace', 'update', 'values', 'zeros']
+  imports: ['Matrix', 'Poly', 'Rational', 'ZoneInfo', 'datetime', 'expand', 'hashlib', 'itertools', 'symbols', 'sympy', 'sys', 'zeros', 'zoneinfo']
+PASS imports limited to stdlib + sympy
+  zero tests used: Poly(...).is_zero, expand(...)==0, sp.diff(...)==0, rational ==; sp.integrate / sp.cancel only in C2c/C2d (exact)
+ALL_CHECKS PASS

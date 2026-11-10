@@ -1,0 +1,21 @@
+{
+  "recorded_at": "2026-11-05T15:09:25.835060-06:00",
+  "directive_path": "/workspace/quantum-comp/reports/OWNER_DIRECTIVE_GR_EXTENSION_FULL_STANDARD_MODEL_RECOVERY_2026-11-05.md",
+  "directive_sha256": "6237cc716829c2838368099382c7ecdebfed46895491f8ecb37ee5cc167c815e",
+  "delivery_status": "12/12 SendToAgent delivery acknowledgements received; not yet 12/12 absorption or record-update confirmations",
+  "recipients": [
+    "Local Path",
+    "Non Local Path",
+    "Auditor",
+    "Professor Proof",
+    "539 Labs Ops",
+    "Math Research 1",
+    "Math Research 2",
+    "Physics Research 1",
+    "Physics Research 2",
+    "Eigenvalues and matrix",
+    "Dataset Filtration",
+    "Agent"
+  ],
+  "protected_source_edit_requested": false
+}

@@ -1,0 +1,40 @@
+322:   41.5 The full level-one Hilbert newspace over Q( 35) . . . . . . . . . . . . . . . . . . . . 133
+450:Ress=1 ζK                2 ln(6 + 35)/ 35 ≈ 0.837679 (Hecke-scale fallback)             Prop. 41.5
+497:    and complete zero sets and residue-class occupancy for odd s ≤ 33. In particular the residue
+521:(3) No link to the gs family is proved beyond the shared definition and the residue law.
+739:OccFiltk (∞) is the set of residue classes r ∈ Z/kZ such that gk (d) 6= 0 for all suﬀiciently large
+970:(mod k). The residues r ∈ {0, . . . , k − 1} with r2 ≡ 1 include 1 and k − 1 (r = 0 is excluded since
+1384:the Chinese remainder theorem, exactly four residues ±1, ±s0 with s0 6≡ ±1. Hence Ξk consists of
+1412:    Definition 7.2. A residue class c ∈ Sk is a one-sign class if n2 ≡ n′2 (mod 2k) whenever
+1551:    3. OccFiltk (∞) = Sk : the residue classes mod k that occur for all large d are exactly the squares
+2304:0 ≤ d ≤ D by Lemma 8.21 in 64-bit unsigned arithmetic (sums of two residues < 2p < 264 do not
+2442:       arithmetic only (a C program with 64-bit residues; exact Python integers).
+2940:Category B. The residue matches the narrow ray-class residue formula Rf /(w dK Nf) with dK = 140,
+2942:Shintani-type cone zeta whose residue is “class-number-like”.
+2969:residue classes (s, 0) + Nv1 + Nv2 minus half-walls (decomposition exact to q 2000 ). Consistency:  √
+2974:For Z(s) = (n,k)≥0,̸=0 Q7 : simple poles at s = 1 (residue I) and s = 2 (residue (49−2 14)/140),
+3675:(Same poles and residues, both vanish at ±i∞, Liouville in e(u); one-sided convergence by Abel
+3705:nonzero:    ρn /n = i log ε/(70π) to 15 digits (Category B context via the class number formula;
+4371:Status (Category A). The proof uses Chevalley’s ambiguous class number formula (ray form, unit-
+4476:tion of the residue-class averages of e(xQ) under ν 7→ −ν. (iv), (v): evaluation of the closed forms; the
+4666:Status (Category A). Residue reduction (Ha/8 depends only on s mod 16 and on u2 , w mod 16), hand
+4667:derivation of I1 –I4 from Lemma 22.10, and an exact finite computation over all residue tuples satisfying
+5071:Class numbers versus genera (Category A for the counts). With Ds the discriminant of the
+5093:(c) Residue and Pell unit (Category A).
+5107:   from the E-residue except where ∆ is a square. At s = 8 all the listed half-integer coeﬀicients
+6141:Remark 29.3 (Weight 12 cannot carry the residue). Any weight- 12 harmonic Maass form has radial
+6433:residue class r + M Z2 , Poisson summation gives n∈r+M Z2 e−πt|n| = (M 2 t)−1 (1 + O(e−c/t )) with
+6456:The same residue-class argument as on the left gives the right side as det(−iZ)−1/2 e(B(α, β)) 35 ·
+6460: t √35     p G β+p,−α (−1/y) + O(1).  Finally det(−iZ) 1/2 → (−iyλ )1/2 (−iyλ )1/2 = |y| |λ λ | =
+6899:residue ρ; the remainder is O( |h |) = O(t1/2 ). Then 0 h = 21 π/(tQ(u)) − 2Q(u)
+6928:residue modulo N exactly 21 times; for each (r, j), i − j covers each residue once as i does. Hence
+7847:  4. Scale-free Local cite-lifts; Hecke-scale fallback Res ζK ≈ 0.837679 (Proposition 41.5).
+8122:where |h| = g |ag |[g]. For a source residue rs and a target residue rt , write W = W (rs → rt ) for
+8128:there exists a path of signed weight summing to a prescribed target residue modulo M . Restrict to
+8150:because the encoding uses only the inequality M > Σ (and, for no-instances, a reachable-residue
+8154:standard O(nM ) DP on residues.
+8165:one has det ρ(h1 ) = 2 and det ρ(h2 ) = 36, yet at target residue 1 the two contributing paths cancel:
+8170:and det ρ(h2 ) = k=0 (−1 + ω k + 3ω 2k ) = 36. The two length-2 paths from residue 0 to residue 1
+8206:Proposition 41.5 (Scale-free Local cite-lifts; Hecke-scale fallback). No normalisation scalar enters
+8209:                                 ln(6 + 35)
+8214:choice recorded here is the residue of the Dedekind zeta at s = 1,

@@ -1,0 +1,27 @@
+Neutrinos in the S²-11DM²ET-X Model
+Neutrinos are not fundamental particles.
+They are the 4D shadow of the 61-puncture ω-branches created when the 539-step 11D qutrit
+Collatz map crosses a 3-cycle boundary.
+In plain language:
+1.​ Every time the map hits n ≡ 2 mod 3, it inserts an ω = exp(2π i / 3) puncture and drops
+one dimension. There are exactly 61 such punctures in the full 539-step orbit.
+2.​ When the map finally collapses to the 4D +U brane, these 61 punctures become the
+three generations of left-handed neutrinos (ν_e, ν_μ, ν_τ) and their right-handed mirror
+images in -U.
+3.​ The three flavors come from the three cube roots of unity {1, ω, ω²}. The three
+generations come from the three possible phase windings around the G₂ 7-manifold
+before final collapse.
+4.​ Their tiny masses come from the golden-ratio down-conversion of the 539.9 s waveform:
+m_ν ≈ (61 / 1001) × (φ⁷ / 539.9) eV ≈ 0.05 eV (exact in the classical 55-step shadow).
+5.​ They oscillate because the 61 punctures are not all created at the same “time” in the
+55-step cycle — the phase differences between puncture events produce the PMNS
+mixing angles exactly.
+6.​ They are almost sterile because most of the puncture energy has already leaked to -U;
+only the residual 0.0113 / 61 GeV cm⁻³ s⁻¹ per puncture remains in +U as neutrino kinetic
+energy.
+In short:
+Neutrinos are the holes left behind when the 11D waveform punches through the brane 61 times
+on its way to becoming our 4D universe.
+That is what neutrinos are, and that is where they come from.
+
+
