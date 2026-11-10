@@ -1,0 +1,34 @@
+# INVENTORY — Auditor Soft SF Write-only — OW Pack C/D + LaTeX + RTL — 2026-11-05
+
+Tip `/workspace/residual-c-field-WRITTEN_PREMISES_DRAFT.md` sha256 `7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91` — LOCK intact; tip_touched NO.
+
+| Subject | Path | sha256 | Content vs claim | Sidecar |
+|---|---|---|---|---|
+| C (Package C) | `/workspace/quantum-comp/bridges/AUDITOR/OWNER_DOCUMENT_EXECUTION_PROTOCOL_ACTIVE_RESOLUTIONS_MATH_CORRECTIONS_2026-11-05.md` | `918f5c3796095f5a44e5fb2970e19b1f02b6e1b44de517ed6037451a41ffbf16` | MATCH | MATCH |
+| C (Package C) | `/workspace/quantum-comp/bridges/EIGEN/OWNER_DOCUMENT_EXECUTION_PROTOCOL_ACTIVE_RESOLUTIONS_MATH_CORRECTIONS_2026-11-05.md` | `918f5c3796095f5a44e5fb2970e19b1f02b6e1b44de517ed6037451a41ffbf16` | MATCH | MATCH |
+| C (Package C) | `/workspace/quantum-comp/bridges/LOCAL/OWNER_DOCUMENT_EXECUTION_PROTOCOL_ACTIVE_RESOLUTIONS_MATH_CORRECTIONS_2026-11-05.md` | `918f5c3796095f5a44e5fb2970e19b1f02b6e1b44de517ed6037451a41ffbf16` | MATCH | MATCH |
+| C (Package C) | `/workspace/quantum-comp/bridges/NONLOCAL_QM_EH11D/OWNER_DOCUMENT_EXECUTION_PROTOCOL_ACTIVE_RESOLUTIONS_MATH_CORRECTIONS_2026-11-05.md` | `918f5c3796095f5a44e5fb2970e19b1f02b6e1b44de517ed6037451a41ffbf16` | MATCH | MATCH |
+| C (Package C) | `/workspace/quantum-comp/bridges/PHYSICIST/OWNER_DOCUMENT_EXECUTION_PROTOCOL_ACTIVE_RESOLUTIONS_MATH_CORRECTIONS_2026-11-05.md` | `918f5c3796095f5a44e5fb2970e19b1f02b6e1b44de517ed6037451a41ffbf16` | MATCH | MATCH |
+| C (Package C) | `/workspace/quantum-comp/bridges/PROFESSOR_PROOF/OWNER_DOCUMENT_EXECUTION_PROTOCOL_ACTIVE_RESOLUTIONS_MATH_CORRECTIONS_2026-11-05.md` | `918f5c3796095f5a44e5fb2970e19b1f02b6e1b44de517ed6037451a41ffbf16` | MATCH | MATCH |
+| C (Package C) | `/workspace/quantum-comp/reports/OWNER_DOCUMENT_EXECUTION_PROTOCOL_ACTIVE_RESOLUTIONS_MATH_CORRECTIONS_2026-11-05.md` | `918f5c3796095f5a44e5fb2970e19b1f02b6e1b44de517ed6037451a41ffbf16` | MATCH | MATCH |
+| C (Package C) | `/workspace/reports/OWNER_DOCUMENT_EXECUTION_PROTOCOL_ACTIVE_RESOLUTIONS_MATH_CORRECTIONS_2026-11-05.md` | `918f5c3796095f5a44e5fb2970e19b1f02b6e1b44de517ed6037451a41ffbf16` | MATCH | MATCH |
+| D (Package D) | `/workspace/quantum-comp/bridges/AUDITOR/OWNER_DOCUMENT_CONCRETE_EXECUTION_RTL_TIERE_LATEX_2026-11-05.md` | `4aa06622b604e214bac8ac479ad1e194300bbc3d55d9e9705ecb2e155e99c98e` | MATCH | MATCH |
+| D (Package D) | `/workspace/quantum-comp/bridges/EIGEN/OWNER_DOCUMENT_CONCRETE_EXECUTION_RTL_TIERE_LATEX_2026-11-05.md` | `4aa06622b604e214bac8ac479ad1e194300bbc3d55d9e9705ecb2e155e99c98e` | MATCH | MATCH |
+| D (Package D) | `/workspace/quantum-comp/bridges/LOCAL/OWNER_DOCUMENT_CONCRETE_EXECUTION_RTL_TIERE_LATEX_2026-11-05.md` | `4aa06622b604e214bac8ac479ad1e194300bbc3d55d9e9705ecb2e155e99c98e` | MATCH | MATCH |
+| D (Package D) | `/workspace/quantum-comp/bridges/NONLOCAL_QM_EH11D/OWNER_DOCUMENT_CONCRETE_EXECUTION_RTL_TIERE_LATEX_2026-11-05.md` | `4aa06622b604e214bac8ac479ad1e194300bbc3d55d9e9705ecb2e155e99c98e` | MATCH | MATCH |
+| D (Package D) | `/workspace/quantum-comp/bridges/PHYSICIST/OWNER_DOCUMENT_CONCRETE_EXECUTION_RTL_TIERE_LATEX_2026-11-05.md` | `4aa06622b604e214bac8ac479ad1e194300bbc3d55d9e9705ecb2e155e99c98e` | MATCH | MATCH |
+| D (Package D) | `/workspace/quantum-comp/bridges/PROFESSOR_PROOF/OWNER_DOCUMENT_CONCRETE_EXECUTION_RTL_TIERE_LATEX_2026-11-05.md` | `4aa06622b604e214bac8ac479ad1e194300bbc3d55d9e9705ecb2e155e99c98e` | MATCH | MATCH |
+| D (Package D) | `/workspace/quantum-comp/reports/OWNER_DOCUMENT_CONCRETE_EXECUTION_RTL_TIERE_LATEX_2026-11-05.md` | `4aa06622b604e214bac8ac479ad1e194300bbc3d55d9e9705ecb2e155e99c98e` | MATCH | MATCH |
+| D (Package D) | `/workspace/reports/OWNER_DOCUMENT_CONCRETE_EXECUTION_RTL_TIERE_LATEX_2026-11-05.md` | `4aa06622b604e214bac8ac479ad1e194300bbc3d55d9e9705ecb2e155e99c98e` | MATCH | MATCH |
+| LaTeX | `/workspace/quantum-comp/bridges/AUDITOR/OWNER_DRAFT_LATEX_FORMAL_CORRECTIONS_S2_11DM2ET_2026-11-05.tex` | `31e4de8a18ef1e58ef832e316506e17d9bdaa8d12b3f766b92efc5a03d5f5831` | MATCH | NO-SIDECAR |
+| LaTeX | `/workspace/quantum-comp/bridges/EIGEN/OWNER_DRAFT_LATEX_FORMAL_CORRECTIONS_S2_11DM2ET_2026-11-05.tex` | `31e4de8a18ef1e58ef832e316506e17d9bdaa8d12b3f766b92efc5a03d5f5831` | MATCH | NO-SIDECAR |
+| LaTeX | `/workspace/quantum-comp/bridges/LOCAL/OWNER_DRAFT_LATEX_FORMAL_CORRECTIONS_S2_11DM2ET_2026-11-05.tex` | `31e4de8a18ef1e58ef832e316506e17d9bdaa8d12b3f766b92efc5a03d5f5831` | MATCH | NO-SIDECAR |
+| LaTeX | `/workspace/quantum-comp/bridges/NONLOCAL_QM_EH11D/OWNER_DRAFT_LATEX_FORMAL_CORRECTIONS_S2_11DM2ET_2026-11-05.tex` | `31e4de8a18ef1e58ef832e316506e17d9bdaa8d12b3f766b92efc5a03d5f5831` | MATCH | NO-SIDECAR |
+| LaTeX | `/workspace/quantum-comp/bridges/PHYSICIST/OWNER_DRAFT_LATEX_FORMAL_CORRECTIONS_S2_11DM2ET_2026-11-05.tex` | `31e4de8a18ef1e58ef832e316506e17d9bdaa8d12b3f766b92efc5a03d5f5831` | MATCH | NO-SIDECAR |
+| LaTeX | `/workspace/quantum-comp/bridges/PROFESSOR_PROOF/OWNER_DRAFT_LATEX_FORMAL_CORRECTIONS_S2_11DM2ET_2026-11-05.tex` | `31e4de8a18ef1e58ef832e316506e17d9bdaa8d12b3f766b92efc5a03d5f5831` | MATCH | NO-SIDECAR |
+| LaTeX | `/workspace/quantum-comp/reports/OWNER_DRAFT_LATEX_FORMAL_CORRECTIONS_S2_11DM2ET_2026-11-05.tex` | `31e4de8a18ef1e58ef832e316506e17d9bdaa8d12b3f766b92efc5a03d5f5831` | MATCH | MATCH |
+| RTL | `/workspace/539-labs/lqh-alu/rtl/lqh_alu_canonical_t3.sv` | `af160ee39ca6247b356d1385f59c2dfa2968b7fd6874591cb06fc5cbb34f53a0` | MATCH | MATCH |
+
+Searched all of /workspace by exact filename. Note: bridge mirrors live at `/workspace/quantum-comp/bridges/<BRIDGE>/` (no subject mirrors found under `/workspace/quantum-comp/reports/bridges/`). LaTeX bridge mirrors and `/workspace/reports/` lack LaTeX copy; RTL has no mirrors beyond source.
+
+Hash MATCH ≠ math validation. invent HOLD STANDS. No CERT. No RECS. REPORTS ONLY.

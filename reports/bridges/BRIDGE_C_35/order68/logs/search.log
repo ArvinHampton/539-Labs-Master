@@ -1,0 +1,160 @@
+# order68 search.log — 2026-10-24 22:31:15 CDT — local only, quote-only
+## S1 exact tokens: rg -S -n 'outer_even_coeff|outer_odd_coeff|outer_residual_factor' /workspace/quantum-comp  (27 lines; full list below)
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Continue_Resolution_Residual_Shadow_Xi_2026-08-23.md:20:Ξ_even = ∑_{m≥0} outer_even_coeff(m) · Θ_{3/2}(· ; a = 7m)
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Continue_Resolution_Residual_Shadow_Xi_2026-08-23.md:22:Ξ_odd = ∑_{m≥0} outer_odd_coeff(m) · Θ_{3/2}(· ; a = 7m + 7/2)
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Continue_Resolution_Residual_Shadow_Xi_2026-08-23.md:28:Ξ = ∑_{k≥1} outer_residual_factor(k) · Shadow_{3/2}(partial_theta_of_squares with residual characteristic 7k/2).
+./reports/DEEP_HUNT_BROAD_TRIAGE_2026-10-24.md:11: :20 "Ξ_even = ∑_{m≥0} outer_even_coeff(m) · Θ_{3/2}(· ; a = 7m)"
+./reports/DEEP_HUNT_BROAD_TRIAGE_2026-10-24.md:12: :22 "Ξ_odd = ∑_{m≥0} outer_odd_coeff(m) · Θ_{3/2}(· ; a = 7m + 7/2)"
+./reports/DEEP_HUNT_BROAD_TRIAGE_2026-10-24.md:14: :28 "Ξ = ∑_{k≥1} outer_residual_factor(k) · Shadow_{3/2}(partial_theta_of_squares with residual characteristic 7k/2)"
+./reports/DEEP_HUNT_BROAD_TRIAGE_2026-10-24.md:16: Caveats: outer_even_coeff and outer_odd_coeff are never tabulated; the file says tables are "obtained by expanding the residual double sum". The same file is duplicated at reports/bridges/_git_v8_unpushed_clone/docs/... Also cited at PUSH_LOG_2026-08-23_Continue_Resolution_Xi.md:12 and Residual_Ternary_Algebra_Full_Manuscript_Draft_2026-08-24.md:2
+./reports/bridges/_git_v8_unpushed_clone/docs/S2-11DM2ET-X-Axiomatic-Book/Continue_Resolution_Residual_Shadow_Xi_2026-08-23.md:20:Ξ_even = ∑_{m≥0} outer_even_coeff(m) · Θ_{3/2}(· ; a = 7m)
+./reports/bridges/_git_v8_unpushed_clone/docs/S2-11DM2ET-X-Axiomatic-Book/Continue_Resolution_Residual_Shadow_Xi_2026-08-23.md:22:Ξ_odd = ∑_{m≥0} outer_odd_coeff(m) · Θ_{3/2}(· ; a = 7m + 7/2)
+./reports/bridges/_git_v8_unpushed_clone/docs/S2-11DM2ET-X-Axiomatic-Book/Continue_Resolution_Residual_Shadow_Xi_2026-08-23.md:28:Ξ = ∑_{k≥1} outer_residual_factor(k) · Shadow_{3/2}(partial_theta_of_squares with residual characteristic 7k/2).
+./reports/s_family_paths/A22_grok_export_search/chats/e0b9e7c5-b08f-4d82-9be2-2a0e93c7ee9f.txt:576:   Ξ_even = ∑_{m≥0} outer_even_coeff(m) · Θ_{3/2}(· ; a = 7m)
+./reports/s_family_paths/A22_grok_export_search/chats/e0b9e7c5-b08f-4d82-9be2-2a0e93c7ee9f.txt:578:   Ξ_odd = ∑_{m≥0} outer_odd_coeff(m) · Θ_{3/2}(· ; a = 7m + 7/2)
+./reports/s_family_paths/A22_grok_export_search/chats/e0b9e7c5-b08f-4d82-9be2-2a0e93c7ee9f.txt:584:   Ξ = ∑_{k≥1} outer_residual_factor(k) · Shadow_{3/2}(partial_theta_of_squares with residual characteristic 7k/2).
+./reports/bridges/BRIDGE_C_35/order68/PREREG.md:16:Targets (quote-only): tabulated values of outer_even_coeff / outer_odd_coeff / outer_residual_factor (or explicit numeric tables for the X1 Ξ series form at Continue_Resolution_Residual_Shadow_Xi_2026-08-23.md:16–44, sha 552541cf…).
+./reports/bridges/BRIDGE_C_35/order67/RESULTS.md:46:[Omitted long matching line]
+./reports/bridges/BRIDGE_C_35/order67/data/DEEP_HUNT_BROAD_TRIAGE_2026-10-24.md:11: :20 "Ξ_even = ∑_{m≥0} outer_even_coeff(m) · Θ_{3/2}(· ; a = 7m)"
+./reports/bridges/BRIDGE_C_35/order67/data/DEEP_HUNT_BROAD_TRIAGE_2026-10-24.md:12: :22 "Ξ_odd = ∑_{m≥0} outer_odd_coeff(m) · Θ_{3/2}(· ; a = 7m + 7/2)"
+./reports/bridges/BRIDGE_C_35/order67/data/DEEP_HUNT_BROAD_TRIAGE_2026-10-24.md:14: :28 "Ξ = ∑_{k≥1} outer_residual_factor(k) · Shadow_{3/2}(partial_theta_of_squares with residual characteristic 7k/2)"
+./reports/bridges/BRIDGE_C_35/order67/data/DEEP_HUNT_BROAD_TRIAGE_2026-10-24.md:16: Caveats: outer_even_coeff and outer_odd_coeff are never tabulated; the file says tables are "obtained by expanding the residual double sum". The same file is duplicated at reports/bridges/_git_v8_unpushed_clone/docs/... Also cited at PUSH_LOG_2026-08-23_Continue_Resolution_Xi.md:12 and Residual_Ternary_Algebra_Full
+./reports/bridges/BRIDGE_C_35/order57/WRITTEN_CANDIDATES.md:15:  Ξ = Ξ_even + Ξ_odd; Ξ_even = Σ_{m≥0} outer_even_coeff(m)·Θ_{3/2}(·; a=7m); Ξ_odd = Σ_{m≥0} outer_odd_coeff(m)·Θ_{3/2}(·; a=7m+7/2); Θ_{3/2}(·;a) = Σ (n+a) q^{(n+a)²} "(or its residual χ-twisted analogue)".
+./reports/heavy-daily/545edf7dd645-Continue_Resolution_Residual_Shadow_Xi_2026-08-23.md:20:Ξ_even = ∑_{m≥0} outer_even_coeff(m) · Θ_{3/2}(· ; a = 7m)
+./reports/heavy-daily/545edf7dd645-Continue_Resolution_Residual_Shadow_Xi_2026-08-23.md:22:Ξ_odd = ∑_{m≥0} outer_odd_coeff(m) · Θ_{3/2}(· ; a = 7m + 7/2)
+./reports/heavy-daily/545edf7dd645-Continue_Resolution_Residual_Shadow_Xi_2026-08-23.md:28:Ξ = ∑_{k≥1} outer_residual_factor(k) · Shadow_{3/2}(partial_theta_of_squares with residual characteristic 7k/2).
+./reports/self-audit/repo/docs/S2-11DM2ET-X-Axiomatic-Book/Continue_Resolution_Residual_Shadow_Xi_2026-08-23.md:20:Ξ_even = ∑_{m≥0} outer_even_coeff(m) · Θ_{3/2}(· ; a = 7m)
+./reports/self-audit/repo/docs/S2-11DM2ET-X-Axiomatic-Book/Continue_Resolution_Residual_Shadow_Xi_2026-08-23.md:22:Ξ_odd = ∑_{m≥0} outer_odd_coeff(m) · Θ_{3/2}(· ; a = 7m + 7/2)
+./reports/self-audit/repo/docs/S2-11DM2ET-X-Axiomatic-Book/Continue_Resolution_Residual_Shadow_Xi_2026-08-23.md:28:Ξ = ∑_{k≥1} outer_residual_factor(k) · Shadow_{3/2}(partial_theta_of_squares with residual characteristic 7k/2).
+./grok_export/unzipped/ttl/30d/export_data/fe3969ab-7793-4b80-8bd2-46f354c000f7/prod-grok-backend.json:1:[Omitted long matching line]
+## S1b same tokens over /cursor/stores (store-030b2e88…, 40M; /cursor/stores/user empty): rg -l 'outer_even|outer_odd|residual_factor' -> 0 files
+## S1c pattern '(outer_*_coeff|outer_residual_factor)(N) = number' -> 0 matches
+## S1d grok_export prod-grok-backend.json sha e1aaa633dea463cc8d4a5d102c680838625a03cf88cefbf10ccc41d6f654f902: chat code-comment '# And outer_even_coeff are unit.' preceded by '...where outer_coeff=1 at those degrees? ' (speculative chat, not a table; not used)
+## S2 near patterns: rg -n 'unit coefficients|outer_even\(|outer_odd\(' /workspace/quantum-comp (hand-read):
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Mismatch_Series_C_Structure_Continuous_Completions_Advancements_2026-08-24.md:15:C_third carries unit coefficients on the lattice points n<0, k<0 of Q. Low degrees begin 8, 18, 22, 30, 39, 43, 44, 58, 60, 67, ...
+./reports/bridges/_git_v8_unpushed_clone/docs/S2-11DM2ET-X-Axiomatic-Book/Mismatch_Series_C_Structure_Continuous_Completions_Advancements_2026-08-24.md:15:C_third carries unit coefficients on the lattice points n<0, k<0 of Q. Low degrees begin 8, 18, 22, 30, 39, 43, 44, 58, 60, 67, ...
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Dual_Track_Packaging_gs_E8_Weyl_and_C_Continuous_2026-08-24.md:12:C_third unit coefficients on negative lattice points of Q.
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/U1_LEDGER_P_XI_Eichler_TermByTerm_Obstruction_2026-09-02.md:18:Outer residual series of discriminant 35, unit coefficients:
+./reports/bridges/_git_v8_unpushed_clone/docs/S2-11DM2ET-X-Axiomatic-Book/Dual_Track_Packaging_gs_E8_Weyl_and_C_Continuous_2026-08-24.md:12:C_third unit coefficients on negative lattice points of Q.
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/PUSH_LOG_2026-08-23_Next_Levers_Modular_Completion_Slash.md:12:[Omitted long matching line]
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Next_Levers_Residual_Modular_Completion_Slash_C_2026-08-23.md:17:  residual factor q^{outer_even(m)} · residual partial theta of squares with characteristic a = 7m,
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Next_Levers_Residual_Modular_Completion_Slash_C_2026-08-23.md:18:  where outer_even(m) = 35 m² + 7 m (unit residual coefficients).
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Next_Levers_Residual_Modular_Completion_Slash_C_2026-08-23.md:21:  residual factor q^{outer_odd(m)} · residual partial theta of squares with characteristic a = 7m + 7/2,
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Next_Levers_Residual_Modular_Completion_Slash_C_2026-08-23.md:22:  where outer_odd(m) = 35 m² + 42 m + 49/4 (unit residual coefficients).
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Executive_Summary_2026-08-23_Residual_Quantum_Modular_C.md:10:- C_axis identity: origin 1.5 + unit coefficients on pure squares and 7-triangular numbers.
+./reports/bridges/_git_v8_unpushed_clone/reports/s_family_paths/A35_lawspace_exact/exact_intertwiner.py:64:    """T monomial with 1- and 2-cycles, unit coefficients: returns P (columns = eigenvectors), Pinv, eigenvalue exps"""
+./reports/bridges/_git_v8_unpushed_clone/docs/S2-11DM2ET-X-Axiomatic-Book/U1_LEDGER_P_XI_Eichler_TermByTerm_Obstruction_2026-09-02.md:18:Outer residual series of discriminant 35, unit coefficients:
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Residual_Discrete_E8_Probe_and_Missed_Variables_Review_2026-08-24.md:13:- Residual support of C intersects some of these integers (degrees 8 and 30). Multiplicities remain residual unit coefficients already accounted for by residual lattice enumeration
+./reports/bridges/_git_v8_unpushed_clone/docs/S2-11DM2ET-X-Axiomatic-Book/PUSH_LOG_2026-08-23_Next_Levers_Modular_Completion_Slash.md:12:[Omitted long matching line]
+./reports/bridges/_git_v8_unpushed_clone/docs/S2-11DM2ET-X-Axiomatic-Book/Next_Levers_Residual_Modular_Completion_Slash_C_2026-08-23.md:17:  residual factor q^{outer_even(m)} · residual partial theta of squares with characteristic a = 7m,
+./reports/bridges/_git_v8_unpushed_clone/docs/S2-11DM2ET-X-Axiomatic-Book/Next_Levers_Residual_Modular_Completion_Slash_C_2026-08-23.md:18:  where outer_even(m) = 35 m² + 7 m (unit residual coefficients).
+./reports/bridges/_git_v8_unpushed_clone/docs/S2-11DM2ET-X-Axiomatic-Book/Next_Levers_Residual_Modular_Completion_Slash_C_2026-08-23.md:21:  residual factor q^{outer_odd(m)} · residual partial theta of squares with characteristic a = 7m + 7/2,
+./reports/bridges/_git_v8_unpushed_clone/docs/S2-11DM2ET-X-Axiomatic-Book/Next_Levers_Residual_Modular_Completion_Slash_C_2026-08-23.md:22:  where outer_odd(m) = 35 m² + 42 m + 49/4 (unit residual coefficients).
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Residual_Coefficient_Tables_and_Fricke_Probe_C_2026-08-23.md:16:Ξ = Ξ_even + Ξ_odd = ∑ outer_even(m) · Θ_{3/2}(· ; a=7m) + ∑ outer_odd(m) · Θ_{3/2}(· ; a=7m+7/2)
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Residual_Coefficient_Tables_and_Fricke_Probe_C_2026-08-23.md:18:with outer residual series of discriminant 35 (unit coefficients):
+./reports/bridges/_git_v8_unpushed_clone/docs/S2-11DM2ET-X-Axiomatic-Book/Construct_Higher_Fidelity_Residual_Eichler_Integral_C_2026-08-25.md:18:- Residual product form: Ξ = ∑ outer_even(m) · residual Θ_{3/2}(· ; a = 7m) + ∑ outer_odd(m) · residual Θ_{3/2}(· ; a = 7m + 7/2)
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Expand_Recover_Residual_Shadow_Slash_2026-08-23.md:22:[Omitted long matching line]
+./reports/bridges/_git_v8_unpushed_clone/docs/S2-11DM2ET-X-Axiomatic-Book/Executive_Summary_2026-08-23_Residual_Quantum_Modular_C.md:10:- C_axis identity: origin 1.5 + unit coefficients on pure squares and 7-triangular numbers.
+./oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Construct_Higher_Fidelity_Residual_Eichler_Integral_C_2026-08-25.md:18:- Residual product form: Ξ = ∑ outer_even(m) · residual Θ_{3/2}(· ; a = 7m) + ∑ outer_odd(m) · residual Θ_{3/2}(· ; a = 7m + 7/2)
+./reports/bridges/BRIDGE_C_35/order57/WRITTEN_CANDIDATES.md:19:- Ridge: BK/Per_off_Xi_Term_Table_Listed_Ridge_2026-09-02.md:10–11: N_n = n²+7n+24.5, c_n = n+7/2 (= (n+7/2)² + 12.25, i.e. outer_odd(0) acts as a q-EXPONENT shift, not a multiplier).
+./reports/bridges/BRIDGE_C_35/order57/WRITTEN_CANDIDATES.md:37:[Omitted long matching line]
+./reports/bridges/_git_v8_unpushed_clone/docs/S2-11DM2ET-X-Axiomatic-Book/Expand_Recover_Residual_Shadow_Slash_2026-08-23.md:22:[Omitted long matching line]
+./reports/bridges/_git_v8_unpushed_clone/docs/S2-11DM2ET-X-Axiomatic-Book/Residual_Coefficient_Tables_and_Fricke_Probe_C_2026-08-23.md:16:Ξ = Ξ_even + Ξ_odd = ∑ outer_even(m) · Θ_{3/2}(· ; a=7m) + ∑ outer_odd(m) · Θ_{3/2}(· ; a=7m+7/2)
+./reports/bridges/_git_v8_unpushed_clone/docs/S2-11DM2ET-X-Axiomatic-Book/Residual_Coefficient_Tables_and_Fricke_Probe_C_2026-08-23.md:18:with outer residual series of discriminant 35 (unit coefficients):
+./reports/self-audit/repo/docs/S2-11DM2ET-X-Axiomatic-Book/Mismatch_Series_C_Structure_Continuous_Completions_Advancements_2026-08-24.md:15:C_third carries unit coefficients on the lattice points n<0, k<0 of Q. Low degrees begin 8, 18, 22, 30, 39, 43, 44, 58, 60, 67, ...
+./reports/bridges/_git_v8_unpushed_clone/docs/S2-11DM2ET-X-Axiomatic-Book/Residual_Discrete_E8_Probe_and_Missed_Variables_Review_2026-08-24.md:13:- Residual support of C intersects some of these integers (degrees 8 and 30). Multiplicities remain residual unit coefficients already accounted for by re
+./reports/self-audit/repo/docs/S2-11DM2ET-X-Axiomatic-Book/Dual_Track_Packaging_gs_E8_Weyl_and_C_Continuous_2026-08-24.md:12:C_third unit coefficients on negative lattice points of Q.
+./reports/self-audit/repo/docs/S2-11DM2ET-X-Axiomatic-Book/U1_LEDGER_P_XI_Eichler_TermByTerm_Obstruction_2026-09-02.md:18:Outer residual series of discriminant 35, unit coefficients:
+./reports/self-audit/repo/docs/S2-11DM2ET-X-Axiomatic-Book/PUSH_LOG_2026-08-23_Next_Levers_Modular_Completion_Slash.md:12:[Omitted long matching line]
+./reports/self-audit/repo/docs/S2-11DM2ET-X-Axiomatic-Book/Next_Levers_Residual_Modular_Completion_Slash_C_2026-08-23.md:17:  residual factor q^{outer_even(m)} · residual partial theta of squares with characteristic a = 7m,
+./reports/self-audit/repo/docs/S2-11DM2ET-X-Axiomatic-Book/Next_Levers_Residual_Modular_Completion_Slash_C_2026-08-23.md:18:  where outer_even(m) = 35 m² + 7 m (unit residual coefficients).
+./reports/self-audit/repo/docs/S2-11DM2ET-X-Axiomatic-Book/Next_Levers_Residual_Modular_Completion_Slash_C_2026-08-23.md:21:  residual factor q^{outer_odd(m)} · residual partial theta of squares with characteristic a = 7m + 7/2,
+./reports/self-audit/repo/docs/S2-11DM2ET-X-Axiomatic-Book/Next_Levers_Residual_Modular_Completion_Slash_C_2026-08-23.md:22:  where outer_odd(m) = 35 m² + 42 m + 49/4 (unit residual coefficients).
+./reports/self-audit/repo/docs/S2-11DM2ET-X-Axiomatic-Book/Construct_Higher_Fidelity_Residual_Eichler_Integral_C_2026-08-25.md:18:- Residual product form: Ξ = ∑ outer_even(m) · residual Θ_{3/2}(· ; a = 7m) + ∑ outer_odd(m) · residual Θ_{3/2}(· ; a = 7m + 7/2)
+./reports/self-audit/repo/docs/S2-11DM2ET-X-Axiomatic-Book/Executive_Summary_2026-08-23_Residual_Quantum_Modular_C.md:10:- C_axis identity: origin 1.5 + unit coefficients on pure squares and 7-triangular numbers.
+./reports/self-audit/repo/docs/S2-11DM2ET-X-Axiomatic-Book/Expand_Recover_Residual_Shadow_Slash_2026-08-23.md:22:[Omitted long matching line]
+./reports/self-audit/repo/docs/S2-11DM2ET-X-Axiomatic-Book/Residual_Coefficient_Tables_and_Fricke_Probe_C_2026-08-23.md:16:Ξ = Ξ_even + Ξ_odd = ∑ outer_even(m) · Θ_{3/2}(· ; a=7m) + ∑ outer_odd(m) · Θ_{3/2}(· ; a=7m+7/2)
+./reports/self-audit/repo/docs/S2-11DM2ET-X-Axiomatic-Book/Residual_Coefficient_Tables_and_Fricke_Probe_C_2026-08-23.md:18:with outer residual series of discriminant 35 (unit coefficients):
+./reports/self-audit/repo/docs/S2-11DM2ET-X-Axiomatic-Book/Residual_Discrete_E8_Probe_and_Missed_Variables_Review_2026-08-24.md:13:- Residual support of C intersects some of these integers (degrees 8 and 30). Multiplicities remain residual unit coefficients already accounted for by residual lattice 
+./reports/crypto/RPP_spec_v1/scripts/chats/f2659586-6238-4991-95f1-4722eb2003f8.txt:1951:[Omitted long matching line]
+./reports/crypto/RPP_spec_v1/scripts/chats/f2659586-6238-4991-95f1-4722eb2003f8.txt:1976:Residual role. These numbers carry unit coefficients in the axis series that enters the Dual-plus-minus matrix. They are part of the locked Category A support. They supply no rational values of g_s and leave the
+./reports/crypto/RPP_spec_v1/scripts/chats/f2659586-6238-4991-95f1-4722eb2003f8.txt:2275:[Omitted long matching line]
+./reports/heavy-daily/1f80d0d5d3b4-PUSH_LOG_2026-08-23_Next_Levers_Modular_Completion_Slash.md:12:[Omitted long matching line]
+./reports/heavy-daily/d063bb7c36d9-Executive_Summary_2026-08-23_Residual_Quantum_Modular_C.md:10:- C_axis identity: origin 1.5 + unit coefficients on pure squares and 7-triangular numbers.
+./reports/heavy-daily/22959c019dda-Expand_Recover_Residual_Shadow_Slash_2026-08-23.md:22:[Omitted long matching line]
+./reports/heavy-daily/1f80d0d5d3b4-Next_Levers_Residual_Modular_Completion_Slash_C_2026-08-23.md:17:  residual factor q^{outer_even(m)} · residual partial theta of squares with characteristic a = 7m,
+./reports/heavy-daily/1f80d0d5d3b4-Next_Levers_Residual_Modular_Completion_Slash_C_2026-08-23.md:18:  where outer_even(m) = 35 m² + 7 m (unit residual coefficients).
+./reports/heavy-daily/1f80d0d5d3b4-Next_Levers_Residual_Modular_Completion_Slash_C_2026-08-23.md:21:  residual factor q^{outer_odd(m)} · residual partial theta of squares with characteristic a = 7m + 7/2,
+./reports/heavy-daily/1f80d0d5d3b4-Next_Levers_Residual_Modular_Completion_Slash_C_2026-08-23.md:22:  where outer_odd(m) = 35 m² + 42 m + 49/4 (unit residual coefficients).
+./reports/heavy-daily/c5864d71d6c1-Dual_Track_Packaging_gs_E8_Weyl_and_C_Continuous_2026-08-24.md:12:C_third unit coefficients on negative lattice points of Q.
+./reports/heavy-daily/13a28c47082a-Residual_Discrete_E8_Probe_and_Missed_Variables_Review_2026-08-24.md:13:- Residual support of C intersects some of these integers (degrees 8 and 30). Multiplicities remain residual unit coefficients already accounted for by residual lattice enumeration.
+./reports/heavy-daily/3957bc442bd8-Construct_Higher_Fidelity_Residual_Eichler_Integral_C_2026-08-25.md:18:- Residual product form: Ξ = ∑ outer_even(m) · residual Θ_{3/2}(· ; a = 7m) + ∑ outer_odd(m) · residual Θ_{3/2}(· ; a = 7m + 7/2)
+./reports/heavy-daily/5a9b1cf8b366-Residual_Coefficient_Tables_and_Fricke_Probe_C_2026-08-23.md:16:Ξ = Ξ_even + Ξ_odd = ∑ outer_even(m) · Θ_{3/2}(· ; a=7m) + ∑ outer_odd(m) · Θ_{3/2}(· ; a=7m+7/2)
+./reports/heavy-daily/5a9b1cf8b366-Residual_Coefficient_Tables_and_Fricke_Probe_C_2026-08-23.md:18:with outer residual series of discriminant 35 (unit coefficients):
+./reports/heavy-daily/2fa91b2e0bb1-Mismatch_Series_C_Structure_Continuous_Completions_Advancements_2026-08-24.md:15:C_third carries unit coefficients on the lattice points n<0, k<0 of Q. Low degrees begin 8, 18, 22, 30, 39, 43, 44, 58, 60, 67, ...
+./reports/s_family_paths/A51_bridgeC_exact/sl2_exact.py:75:def spec(idx,Tm,M):   # monomial with unit coefficients, cycles of length<=2 -> eigenvalue exponents mod M (as Fractions mod 1)
+./reports/s_family_paths/A35_lawspace_exact/exact_intertwiner.py:64:    """T monomial with 1- and 2-cycles, unit coefficients: returns P (columns = eigenvectors), Pinv, eigenvalue exps"""
+./reports/s_family_paths/A22_grok_export_search/chats/e0b9e7c5-b08f-4d82-9be2-2a0e93c7ee9f.txt:429:These are residual arithmetic series with unit coefficients. No classical closed form (unary theta, false theta, or eta quotient of conductor 35) has been identified that matches them exactly. They are
+./reports/s_family_paths/A22_grok_export_search/chats/e0b9e7c5-b08f-4d82-9be2-2a0e93c7ee9f.txt:497:   The overlap is real residual arithmetic. Coefficients do not yet match the unit coefficients of Θ_third, and the lower exterior degrees (8, 18, 22, 30, \ldots) require inclusion of the odd outer se
+./reports/s_family_paths/A22_grok_export_search/chats/f2659586-6238-4991-95f1-4722eb2003f8.txt:1951:[Omitted long matching line]
+./reports/s_family_paths/A22_grok_export_search/chats/f2659586-6238-4991-95f1-4722eb2003f8.txt:1976:Residual role. These numbers carry unit coefficients in the axis series that enters the Dual-plus-minus matrix. They are part of the locked Category A support. They supply no rational values of g_s an
+./reports/s_family_paths/A22_grok_export_search/chats/f2659586-6238-4991-95f1-4722eb2003f8.txt:2275:[Omitted long matching line]
+./reports/s_family_paths/A22_grok_export_search/chats/45f2fbe2-4157-4e43-b46e-56c5a57bbeb8.txt:837:\(C_{\rm third}\) is the sum of unit coefficients over the lattice points \(n<0\), \(k<0\). Degrees are generated by evaluating the same quadratic form \(Q(n,k)\) at those points. Low degrees begin  
+./reports/s_family_paths/A22_grok_export_search/chats/45f2fbe2-4157-4e43-b46e-56c5a57bbeb8.txt:1114:  unit coefficients on the lattice points \(n<0\), \(k<0\). Degrees are the values of \(Q(n,k)\) at those points. Low degrees begin 8, 18, 22, 30, 39, 43, 44, 58, 60, 67, \ldots
+./reports/s_family_paths/A22_grok_export_search/chats/45f2fbe2-4157-4e43-b46e-56c5a57bbeb8.txt:1358:Intersection with support of \(C\): the ordinary integers 8, 18, 30 and 67 appear among the degrees of \(C\); they are already accounted for by the axis and third-quadrant enumeration under the quadra
+./reports/s_family_paths/A22_grok_export_search/chats/45f2fbe2-4157-4e43-b46e-56c5a57bbeb8.txt:2120:- Third-quadrant contribution: unit coefficients on negative lattice points of \(Q\).  
+./reports/s_family_paths/A22_grok_export_search/chats/f7cf38a4-de71-47c4-919e-313ed569a9b6.txt:34:[Omitted long matching line]
+./grok_export/unzipped/ttl/30d/export_data/fe3969ab-7793-4b80-8bd2-46f354c000f7/prod-grok-backend.json:1:[Omitted long matching line]
+## S2b Θ_{3/2}|Theta_3/2 token: 18 files (count-only, hand-checked narrowed set = book Xi files above)
+## S3 hand-read + sha256:
+552541cf11545d5ea863dc5738d859281af2831f0a21b573f32652c9678e1c2e  Continue_Resolution_Residual_Shadow_Xi_2026-08-23.md
+736cfd72a83d1959d919cfb838160575aaff3bfe31ece5505796142728e1bc6e  Residual_Coefficient_Tables_and_Fricke_Probe_C_2026-08-23.md
+e60cad9bb5c20ecfa065ee62a81340dfa01cb2a6a6baabfb8f37e1e1c6f8fe59  Next_Levers_Residual_Modular_Completion_Slash_C_2026-08-23.md
+be1faa520cd51bf7a5737322fd47ed90b476123e015488d76329b8cae057673f  U1_LEDGER_P_XI_Eichler_TermByTerm_Obstruction_2026-09-02.md
+Duplicates (heavy-daily/, self-audit/repo, _git_v8_unpushed_clone) byte-identical (same sha) for Continue_Resolution and Residual_Coefficient_Tables.
+Residual_Coefficient_Tables_and_Fricke_Probe_C_2026-08-23.md:12-40 quoted:
+## 1. Independent residual coefficient tables of residual shadow Ξ (locked Category A residual discrete)
+
+The residual weight-3/2 shadow admits the residual product form
+
+Ξ = Ξ_even + Ξ_odd = ∑ outer_even(m) · Θ_{3/2}(· ; a=7m) + ∑ outer_odd(m) · Θ_{3/2}(· ; a=7m+7/2)
+
+with outer residual series of discriminant 35 (unit coefficients):
+
+Even (m ≥ 1): 42, 154, 336, 588, 910, 1302, 1764, 2296, …  
+Odd (m ≥ 0): 12.25, 89.25, 236.25, 453.25, 740.25, 1097.25, 1524.25, …
+
+Independent residual discrete enumeration of the product (positive and signed residual shifts of the unary weight-3/2 series) yields leading Fourier support of Ξ (selected residual coefficients, deg ≤ 120, residual discrete only):
+
+24.5 : 3.5  
+32.5 : 4.5  
+42.5 : 5.5  
+43 : 1 (partial from even product)  
+54.5 : 6.5  
+58 : 2 (partial)  
+67 : 3 (partial)  
+68.5 : 7.5  
+78 : 6  
+84.5 : 8.5  
+91 : 7  
+102.5 : 9.5  
+106 : 8  
+…
+
+Full residual products including the odd outer series and residual shifts recover the exterior support of Θ_third by the locked Category A rewrite (prior notes). These tables are independent of classical unary closed forms and are residual arithmetic under Pack+(S).
+Next_Levers…:16-22 quoted:
+Even sector (k = 2m, m ≥ 1):
+  residual factor q^{outer_even(m)} · residual partial theta of squares with characteristic a = 7m,
+  where outer_even(m) = 35 m² + 7 m (unit residual coefficients).
+
+Odd sector (k = 2m+1, m ≥ 0):
+  residual factor q^{outer_odd(m)} · residual partial theta of squares with characteristic a = 7m + 7/2,
+  where outer_odd(m) = 35 m² + 42 m + 49/4 (unit residual coefficients).
+U1_LEDGER_P_XI…:16-21 quoted:
+Xi = Xi_even + Xi_odd, residual weight-3/2 shadow of Bridge Series C (Continue_Resolution_Residual_Shadow_Xi_2026-08-23, 545edf7).
+
+Outer residual series of discriminant 35, unit coefficients:
+Even (m >= 1): 35 m^2 + 7 m = 42, 154, 336, 588, 910, 1302, 1764, 2296, ...
+Odd (m >= 0): 35 m^2 + 42 m + 49/4 = 12.25, 89.25, 236.25, 453.25, 740.25, 1097.25, 1524.25, ...
+
+## END. No numeric computation performed.

@@ -1,0 +1,36 @@
+[PASS] Q1a T-Q = 2N- + (u-1)n + eps_ex
+[PASS] Q1b [u>=1, n>=0] T-Q has only nonnegative integer coeffs in (N-,|n|,delta,v-1): 2*Nm + delta*v + delta + m*v
+[PASS] Q1b [u>=1, n<=0] T-Q has only nonnegative integer coeffs in (N-,|n|,delta,v-1): 2*Nm + delta*v + delta + m*v + 2*m
+[PASS] Q1c [u<1 witness] u=1/2, all charge in one BPS block (n=Q, N+-=0): T-Q = -Q/2 < 0 (so A1 cannot extend below u=1)
+[PASS] Q1d [u<1] T-uQ = (1-u)N+ + (1+u)N- + u(e_u-n) (A2 form)
+[PASS] Q1e closure T-Q-Delta_N equals u e_u - n + 2N- - Delta_N (PLUS 2N-)
+[PASS] Q1f GB8's filed g = u e_u - n - 2N- - Delta_N differs from closure by -4N- (sign error unless N-=0)
+[PASS] Q1g A5 literal [u!=1] overclaim for n<0: u=2,n=-1,Delta_N=0 gives target 1 < Bogomolny floor 4
+[PASS] Q2a q = 2(F01F23 - F02F13 + F03F12) (Pfaffian form)
+[PASS] Q2b ** = 1 on 2-forms in 4D Euclidean
+[PASS] Q2c rho - q/2 = (1/8) sum_ordered (F-*F)^2 = 1/4 sum_{a<b}; rho + q/2 = (1/8) sum (F+*F)^2
+[PASS] Q3 SD: omega is SD and det(v -> v^omega) = (a^2+b^2+c^2)^2 (up to sign) => injective for omega!=0
+[PASS] Q3 ASD: omega is ASD and det(v -> v^omega) = (a^2+b^2+c^2)^2 (up to sign) => injective for omega!=0
+[PASS] Q4 tangential grad of |y|^2 on S^4 = 2(-|y|^2 x, (1-|y|^2) y): zero set {y=0} U {x=0} (an S^2 and an S^1; empty interior)
+[PASS] Q5a r = 1 (X_a = X_b): all 21 independent Weyl components are identically 0 (exact cancel, no trig identity used)
+   C_0303(r, chi) = 4*tc**2*(r - 1)**2*(tc - 1)**2*(tc + 1)**2/(3*(tc**2 + 1)**2*(r*tc**4 - 2*r*tc**2 + r + 4*tc**2))
+[PASS] Q5b C_0303 = 4 t^2 (r-1)^2 (1-t^2)^2 / (3 (1+t^2)^2 (r(1-t^2)^2 + 4t^2)), t = tan(chi/2): factor (r-1)^2, positive denominator
+[PASS] Q5c at r = 2, sin chi = 3/5 (t = 1/3): C_0303 = 48/1025 = 48/1025 = NL C2 value
+[PASS] Q5d for every r != 1 C_0303 != 0 at t = 1/3 (so the fibre is conformally flat iff r = 1 on this family)
+[PASS] Q6a W1: d^a(W t_ab) = -1/4|F|^2 d_bW + <F_bc, D^a(W F_ac)> (matrix su(2), D = d + [A, .]; expand==0 on derivative polynomials)
+[PASS] Q6b t_ab traceless in 4D
+[PASS] Q7a h'' = -h and Hess_S3-part: sin(al)cos(al) h' = -h sin^2(al)  (Hess h = -h g)
+[PASS] Q7b |grad h|^2 = 1 - h^2 (rational parametrization)
+   tr_fib S + 4 rho, general 45-component field: negative-coefficient components: {}
+[PASS] Q8a magnetic Y6 restriction (legs only in 4..9): tr_fib S + 4 rho = 2 P_ff + P_mixed (diagonal, >= 0)
+[PASS] Q8b general field: tr_fib S + 4 rho is a diagonal quadratic form; report which components enter with negative sign
+[PASS] Q8c positive-tension brane with k in {0..4} fibre directions in its worldvolume: tr_fib T = -k T >= -4T = -4 rho_brane
+[PASS] Q8d contradiction: tr_fib S_src >= -4 rho and tr_fib S_req = 4 w rho with w < -1, rho > 0 => S_src - S_req >= -4rho(1+w) > 0
+[PASS] Q9 t^4 coefficient of |F|^2_g along t*a is 2 phi^4 det(g^-1) > 0 for any positive-definite metric (unbounded above)
+[PASS] Q10a Delta_N(UV) = (5/3 - 1)*9760 = 19520/3; Delta_N(IR) = 14043/5 (test targets, CONDITIONAL, unadopted)
+[PASS] Q10b [u=2] UV BPS endpoint g = n - 19520/3 < 0 iff n <= 6506
+[PASS] Q10c [u=2,n=115] UV endpoint sign needs only 2e_u - 115 < 19520/3, i.e. e_u(UV) < 19865/6 (branch must land below this; not proved)
+[PASS] Q10d [u=2,n=115] IR closure excess eps_ex = Delta_N(IR) - n = 13468/5 > 0 (consistency, B5)
+[PASS] Q10e Z1 ratio neutrality of doubling (exact rationals)
+32/32 PASS
+ALL PASS

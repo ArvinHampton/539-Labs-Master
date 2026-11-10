@@ -1,0 +1,1 @@
+{"prereg_sha": "8b00bced504370a7ea0c9baa1e15e82af33aa065dd7127f848cafcdfccf3331a", "rho_mod": ["1/4", "1/2", "0", "0", "1/4", "0", "0", "0"], "rho_res": ["1/32", "1/4", "3/32", "0", "7/32", "1/4", "5/32", "0"], "P1": false, "TV": "1/2", "zero_3_7": true, "supp_mod": [0, 1, 4], "supp_res": [0, 1, 2, 4, 5, 6], "verdict": "FAIL"}

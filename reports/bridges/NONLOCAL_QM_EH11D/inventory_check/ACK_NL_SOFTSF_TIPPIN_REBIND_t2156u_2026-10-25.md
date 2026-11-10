@@ -1,0 +1,2 @@
+# ACK t2156u — NL Soft SF tip-pin rebind
+2026-10-25 (America/Chicago). FINDINGS FINDINGS_NL_SOFTSF_TIPPIN_REBIND_t2156u_2026-10-25.md 12def35f3f0e808c28259b63a002ded526d40f162d81db2885c5dbcb01b39337. Tip live d0b1e3016182eab1522c5fa6b2743e7c8c48d5446d8b0e59b3acfdd61bb09851 (pre-pin d5f8b9d3…); tip_touched NO. Stub 6f0f9a7a… → 644c235cf4158d3c7392ead7cda51930e2adcd9da34422894993f8431d44873d (.pre-softsf-tippin-6f0f9a7a.md). Erratum to ACK_STUB_CROSSLIST_LAG_t2153u line 6: live tip bind is d0b1e301…. Sealed packs unchanged. Q7 KEEP; Bridge PARTIAL / READY NO.

@@ -1,0 +1,80 @@
+%=====================================================================
+\section{The real-quadratic decomposition and the ray class}\label{sec:rq}
+%=====================================================================
+
+\subsection{Elementary identities (Theorem~\ref{thm:A})}\label{sec:elem}
+\begin{proof}[Proof of Theorem~\ref{thm:A}]
+(i). In $q^8f_{2,7,7}(-q^{10},-q^{14},q)$ put $n=r+1$, $k=s+1$. The signs $(-1)^{r+s}$ from $x=-q^{10}$,
+$y=-q^{14}$ cancel those in $f$, and on $r,s\ge0$ the exponent is
+$8+10r+14s+r(r-1)+7rs+\tfrac72s(s-1)=Q_-(n,k)$; this orthant gives $\Cthird$. On $r,s<0$, after
+$(r,s)=(-1-n,-1-k)$ the exponent is $Q_7(n,k)$ with sign $-1$; this gives $-\Porth_s$.
+
+(ii) is (i) combined with $C=\Porth_s-H_s$. For (iii): in the
+second sum defining $\Thol$ substitute $(n,k)=(-n',-k')$ with $n'\ge0$, $k'\ge1$; since $Q_-(-v)=Q_7(v)$ it equals $R$.
+The first sum is $\Cthird+\sum_{n\ge1}q^{n^2}$ (split $k\ge1$ and $k=0$). Hence $\Thol=\Cthird+\sum_{n\ge1}q^{n^2}-R$.
+The $k=0$ row of $\Porth_s$ gives $\Porth_s=R+\sum_{n\ge0}q^{n^2}=R+\tfrac12(1+\theta_3)$, and then (i) gives
+$\Thol=q^8f+\theta_3$. (iv) is the definition combined with (ii).
+\end{proof}
+\catA{All identities in Theorem~\ref{thm:A} were in addition checked with exact rational coefficients through $q^{3000}$; the
+$H_s$ summation box was enlarged by $30$ with identical output.}
+
+\begin{remark}[Origin of $\Cmixed$]
+At $q^{294}$ the point $(21,-1)$ lies on the $c_2$-wall $n+21k=0$, has $w=\tfrac12$ and lies outside the orthant,
+contributing $-\tfrac12$. Points such as $(22,-1)$ ($q^{330}$) and $(-22,1)$ ($q^{337}$) lie in the $H_s$ cones but outside the
+orthant. Thus ``$C=\Caxis+\Cthird$'' holds only through $q^{293}$. The coefficient set $\{0,1,\tfrac32\}$ holds through $q^{101}$
+only (first coefficient $2$ at $q^{102}$, first $3$ at $q^{144}$, first $\tfrac12$ at $q^{294}$); through $q^{3000}$ the set is
+$\{0,\tfrac12,1,\tfrac32,2,3\}$. The support $\{0,1,2,4\}\bmod 7$ holds for all terms since $Q_7\equiv n^2\pmod7$.
+(Category A, exact.)
+\end{remark}
+
+Consequently, every part of $C$ and of $\Cthird$ other than $\Porth_s$ is a signature-$(1,1)$ mock/indefinite theta object or a
+unary theta series, and the residual-law question is a question about $\Porth_s$ alone. Note also that $R$ is a cone sum of the
+\emph{indefinite} form $Q_7$ (positive only on the closed orthant), so it cannot be split by inclusion--exclusion into full
+lattice theta series: $\sum_{\Z^2}q^{Q_7}$ diverges.
+
+\subsection{Automorphs and the fundamental cone}\label{sec:cone0}
+In the coordinates $\nu=v+a$, let $\rho_1=\begin{pmatrix}1&7\\0&-1\end{pmatrix}$, $\rho_2=\begin{pmatrix}-1&0\\2&1\end{pmatrix}$. Both are integral reflections preserving $Q$; $\rho_1$ fixes the ray $\nu_2=0$, $\rho_2$ fixes $\nu_1=0$, the two walls
+of $C_0=\{\nu_1>0,\nu_2>0\}$. Their product $\gamma=\rho_2\rho_1$ has eigenvalues $6\pm\sqrt{35}$. The reflections swap $a+\Z^2$ and
+$-a+\Z^2$; $\gamma$ preserves $a+\Z^2$. Coset points never lie on the walls ($\nu_1\equiv0.7$, $\nu_2\equiv0.8\bmod1$). Hence
+$C_0\cup\rho_2C_0$ is a fundamental domain $F$ for $\langle\gamma\rangle$ on the positive sector $S^+$, and
+\begin{equation}\label{eq:Edef}
+E:=R+\Cthird+\sum_{n\ge1}q^{n^2}=\sum_{v:\;v+a\in F}q^{Q_7(v)}
+\end{equation}
+for any $\gamma$-fundamental cone $F=[r,\gamma r)\subset S^+$. With Theorem~\ref{thm:A}(iii) this gives
+$R-(\Cthird+\sum_{n\ge1}q^{n^2})=-\Thol$ and, adding, $2\Porth_s=E+1+\theta_3-\Thol$.
+\catA{Proved; reflections and coset behaviour checked symbolically; \eqref{eq:Edef} checked exactly to $q^{3000}$ for
+$r=(1,0),(1,1),(7,-1),(1,2)$. Also $E_{-a}=E_a$, so the sign-twisted partner $E_a-E_{-a}$ (a weight-$1$
+Hecke form in Zwegers' $c_2=\gamma c_1$ set-up) vanishes for this coset; this holds for every $s\ge5$ (Theorem~\ref{thm:cthird}(ii)).}
+
+\subsection{Ray-class identification (Theorem~\ref{thm:B})}\label{sec:rayclass}
+Put $(X,Y)=10\nu\in(7,-2)+10\Z^2$ and $\beta=(2X+7Y)+Y\sqrt{35}\in\Z[\sqrt{35}]$. Then $Q(\nu)=\Nm(\beta)/400$,
+$\beta(\gamma\nu)=\varepsilon\beta(\nu)$, $\beta$ runs over $\beta_0+10\fp_2$ with $\beta_0=-2\sqrt{35}$ and
+$\fp_2=(2,1+\sqrt{35})$, and $\nu\in S^+\Leftrightarrow\beta\gg0$. With $\mathfrak d'=\gcd((\beta_0),10\fp_2)=\fp_2^2\fp_5$ and
+$\ff=\fp_2\fp_5$, the ideals $\fa=(\beta)\mathfrak d'^{-1}$ are exactly $\alpha\fp_7$ with $\alpha\equiv1\bmod^\times\ff$ and
+$\sgn\alpha=(-,+)$: one narrow ray class $\K$ modulo $\ff\infty_1\infty_2$. Totally positive units $\equiv1\bmod^\times\ff$ are
+$\varepsilon^\Z$ ($\varepsilon\equiv1$ mod $\fp_2$ and mod $\fp_5$), so $\gamma$-orbits correspond bijectively to ideals in $\K$, and
+$\Nm\fa=20Q_7(v)-7$. This yields Theorem~\ref{thm:B}. Sanity check: the first norms are $13,73,133=7\cdot19,153=9\cdot17,173,\dots$, all
+$\equiv13\bmod20$.
+\catA{Proved: hand algebra with symbolic checks of $Q=\Nm(\beta)/400$ and $\beta(\gamma\nu)=\varepsilon\beta$. 
+The region-to-class bijection was also checked exactly against PARI's independent ideal enumeration up to norm $60\,000$.}
+
+\begin{remark}[Group data]
+$\mathrm{Cl}(K)=\Z/2$, $\mathrm{Cl}^+(K)=(\Z/2)^2$; $|\mathrm{Cl}^+_{\ff\infty_1\infty_2}|=16$, with structure $\Z/8\times\Z/2$.
+Category A: $\mathrm{Cl}(K)$ and the order $16$ are hand-certified (Minkowski bound $\sqrt{140}/2\approx5.92$; $h\varphi(\ff)2^2/[U:U_{\ff,1}]=2\cdot4\cdot4/2$); the group structure $\Z/8\times\Z/2$ and the narrow class group are from PARI (\texttt{bnfcertify}$=1$).
+\end{remark}
+
+\subsection{Analytic consequences}
+By Hecke, $\zeta(s,\K)=\sum_{\fa\in\K}\Nm\fa^{-s}$ continues meromorphically with a single simple pole at $s=1$, so
+\[
+E(e^{-t})=e^{-7t/20}\Bigl[\frac{20\Res_{s=1}\zeta(s,\K)}{t}+\sum_{j\ge0}\zeta(-j,\K)\frac{(-t/20)^j}{j!}\Bigr]
+\]
+has an expansion in integral powers of $t$; by Siegel--Klingen the $\zeta(-j,\K)$ are rational.
+The exact computation gives $\Res_{s=1}\zeta(s,\K)=\log\varepsilon/(20\sqrt{35})$, $\zeta(0,\K)=\tfrac1{10}$
+$\zeta(-1,\K)=20\,\zeta_E(-1)=\tfrac{29}{60}$, where $\zeta_E(s)=\sum_{\nu\in F\cap(a+\Z^2)}Q(\nu)^{-s}$, $\zeta_E(0)=\tfrac1{10}$,
+$\zeta_E(-1)=\tfrac{29}{1200}$.
+\catA{The exact values are Euler--Maclaurin computations in rational arithmetic; the half-integral coefficients vanish
+identically (symbolic); independently confirmed by five Shintani cones $[r,\gamma r)$, $r\in\{(1,0),(1,1),(1,2),(2,1),(3,2)\}$
+($|\det|=2,23,58,43,130$), each giving $\tfrac1{10}$ and $\tfrac{29}{1200}$. The appeal to Hecke and Siegel--Klingen
+\cite{Hecke,SiegelKlingen} is to standard theorems cited by name; rationality is used only as a sanity check.}
+\catB{The residue matches the narrow ray-class residue formula $R_\ff/(w\sqrt{d_K}\,\Nm\ff)$ with $d_K=140$, $\Nm\ff=10$, $w=1$; this was
+not checked against a published statement. The Mellin transform of $\Porth_s$ is a Shintani-type cone zeta whose residue is ``class-number-like''.}

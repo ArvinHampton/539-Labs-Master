@@ -1,0 +1,1185 @@
+{
+ "per": [],
+ "uncovered": 0,
+ "lines": [
+  {
+   "parity": "E",
+   "line": "k=-4",
+   "value": "1/2",
+   "count": 384,
+   "far_plus": 384,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "E",
+   "line": "k=-4",
+   "value": "1/4",
+   "count": 20,
+   "far_plus": 20,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "E",
+   "line": "k=-3",
+   "value": "1/2",
+   "count": 462,
+   "far_plus": 462,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "E",
+   "line": "k=-3",
+   "value": "1/4",
+   "count": 70,
+   "far_plus": 70,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "E",
+   "line": "k=-2",
+   "value": "1/2",
+   "count": 462,
+   "far_plus": 238,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "E",
+   "line": "k=-2",
+   "value": "1/4",
+   "count": 70,
+   "far_plus": 50,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "E",
+   "line": "k=-1",
+   "value": "1/2",
+   "count": 338,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "E",
+   "line": "k=-1",
+   "value": "1/4",
+   "count": 50,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "E",
+   "line": "k=0",
+   "value": "1/2",
+   "count": 1428,
+   "far_plus": 350,
+   "far_minus": 350,
+   "type": "full"
+  },
+  {
+   "parity": "E",
+   "line": "k=0",
+   "value": "1/4",
+   "count": 172,
+   "far_plus": 50,
+   "far_minus": 50,
+   "type": "full"
+  },
+  {
+   "parity": "E",
+   "line": "k=1",
+   "value": "1/2",
+   "count": 462,
+   "far_plus": 0,
+   "far_minus": 264,
+   "type": "half"
+  },
+  {
+   "parity": "E",
+   "line": "k=1",
+   "value": "1/4",
+   "count": 70,
+   "far_plus": 0,
+   "far_minus": 20,
+   "type": "half"
+  },
+  {
+   "parity": "E",
+   "line": "k=2",
+   "value": "1/2",
+   "count": 462,
+   "far_plus": 0,
+   "far_minus": 462,
+   "type": "half"
+  },
+  {
+   "parity": "E",
+   "line": "k=2",
+   "value": "1/4",
+   "count": 70,
+   "far_plus": 0,
+   "far_minus": 70,
+   "type": "half"
+  },
+  {
+   "parity": "E",
+   "line": "k=3",
+   "value": "1/2",
+   "count": 358,
+   "far_plus": 0,
+   "far_minus": 358,
+   "type": "half"
+  },
+  {
+   "parity": "E",
+   "line": "k=3",
+   "value": "1/4",
+   "count": 50,
+   "far_plus": 0,
+   "far_minus": 50,
+   "type": "half"
+  },
+  {
+   "parity": "E",
+   "line": "n=-4",
+   "value": "1/2",
+   "count": 27,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "E",
+   "line": "n=-4",
+   "value": "1/4",
+   "count": 1,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "E",
+   "line": "n=-3",
+   "value": "1",
+   "count": 1,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "E",
+   "line": "n=-3",
+   "value": "1/2",
+   "count": 27,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "E",
+   "line": "n=-3",
+   "value": "1/4",
+   "count": 1116,
+   "far_plus": 350,
+   "far_minus": 350,
+   "type": "full"
+  },
+  {
+   "parity": "E",
+   "line": "n=-3",
+   "value": "3/4",
+   "count": 5,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "E",
+   "line": "n=-2",
+   "value": "1",
+   "count": 11,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "E",
+   "line": "n=-2",
+   "value": "1/2",
+   "count": 587,
+   "far_plus": 350,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "E",
+   "line": "n=-2",
+   "value": "1/4",
+   "count": 4464,
+   "far_plus": 1400,
+   "far_minus": 1400,
+   "type": "full"
+  },
+  {
+   "parity": "E",
+   "line": "n=-2",
+   "value": "3/4",
+   "count": 17,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "E",
+   "line": "n=-1",
+   "value": "1",
+   "count": 27,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "E",
+   "line": "n=-1",
+   "value": "1/2",
+   "count": 2815,
+   "far_plus": 700,
+   "far_minus": 1050,
+   "type": "full"
+  },
+  {
+   "parity": "E",
+   "line": "n=-1",
+   "value": "3/4",
+   "count": 1,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "E",
+   "line": "n=0",
+   "value": "1",
+   "count": 7,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "E",
+   "line": "n=0",
+   "value": "1/2",
+   "count": 27,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "E",
+   "line": "n=0",
+   "value": "1/4",
+   "count": 5580,
+   "far_plus": 1750,
+   "far_minus": 1750,
+   "type": "full"
+  },
+  {
+   "parity": "E",
+   "line": "n=0",
+   "value": "3/4",
+   "count": 21,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "E",
+   "line": "n=1",
+   "value": "1/2",
+   "count": 27,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "E",
+   "line": "n=1",
+   "value": "1/4",
+   "count": 1,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "E",
+   "line": "n=2",
+   "value": "1/2",
+   "count": 27,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "E",
+   "line": "n=2",
+   "value": "1/4",
+   "count": 1,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "E",
+   "line": "n=3",
+   "value": "1/2",
+   "count": 27,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "E",
+   "line": "n=3",
+   "value": "1/4",
+   "count": 1,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "E",
+   "line": "n=4",
+   "value": "1/2",
+   "count": 27,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "E",
+   "line": "n=4",
+   "value": "1/4",
+   "count": 1,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "k=-4",
+   "value": "-1/2",
+   "count": 222,
+   "far_plus": 222,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=-4",
+   "value": "-1/4",
+   "count": 20,
+   "far_plus": 20,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=-4",
+   "value": "1",
+   "count": 4,
+   "far_plus": 4,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=-4",
+   "value": "1/2",
+   "count": 162,
+   "far_plus": 162,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=-3",
+   "value": "-1",
+   "count": 7,
+   "far_plus": 7,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=-3",
+   "value": "-1/2",
+   "count": 231,
+   "far_plus": 231,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=-3",
+   "value": "-1/4",
+   "count": 29,
+   "far_plus": 29,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=-3",
+   "value": "-3/4",
+   "count": 6,
+   "far_plus": 6,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=-3",
+   "value": "1",
+   "count": 7,
+   "far_plus": 7,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=-3",
+   "value": "1/2",
+   "count": 231,
+   "far_plus": 231,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=-3",
+   "value": "1/4",
+   "count": 29,
+   "far_plus": 29,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=-3",
+   "value": "3/4",
+   "count": 6,
+   "far_plus": 6,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=-2",
+   "value": "-1",
+   "count": 7,
+   "far_plus": 7,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=-2",
+   "value": "-1/2",
+   "count": 231,
+   "far_plus": 38,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=-2",
+   "value": "-1/4",
+   "count": 29,
+   "far_plus": 9,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=-2",
+   "value": "-3/4",
+   "count": 6,
+   "far_plus": 6,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=-2",
+   "value": "1",
+   "count": 7,
+   "far_plus": 7,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=-2",
+   "value": "1/2",
+   "count": 231,
+   "far_plus": 200,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=-2",
+   "value": "1/4",
+   "count": 29,
+   "far_plus": 29,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=-2",
+   "value": "3/4",
+   "count": 6,
+   "far_plus": 6,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=-1",
+   "value": "-1",
+   "count": 7,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "k=-1",
+   "value": "-1/2",
+   "count": 108,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "k=-1",
+   "value": "-1/4",
+   "count": 9,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "k=-1",
+   "value": "-3/4",
+   "count": 6,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "k=-1",
+   "value": "1",
+   "count": 7,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "k=-1",
+   "value": "1/2",
+   "count": 230,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "k=-1",
+   "value": "1/4",
+   "count": 29,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "k=-1",
+   "value": "3/4",
+   "count": 6,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "k=0",
+   "value": "-1/2",
+   "count": 753,
+   "far_plus": 0,
+   "far_minus": 350,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=0",
+   "value": "-1/4",
+   "count": 96,
+   "far_plus": 0,
+   "far_minus": 50,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=0",
+   "value": "1/2",
+   "count": 675,
+   "far_plus": 350,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=0",
+   "value": "1/4",
+   "count": 76,
+   "far_plus": 50,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=1",
+   "value": "-1",
+   "count": 7,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "k=1",
+   "value": "-1/2",
+   "count": 231,
+   "far_plus": 0,
+   "far_minus": 209,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=1",
+   "value": "-1/4",
+   "count": 29,
+   "far_plus": 0,
+   "far_minus": 20,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=1",
+   "value": "-3/4",
+   "count": 6,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "k=1",
+   "value": "1",
+   "count": 7,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "k=1",
+   "value": "1/2",
+   "count": 231,
+   "far_plus": 0,
+   "far_minus": 55,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=1",
+   "value": "1/4",
+   "count": 29,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "k=1",
+   "value": "3/4",
+   "count": 6,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "k=2",
+   "value": "-1",
+   "count": 7,
+   "far_plus": 0,
+   "far_minus": 7,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=2",
+   "value": "-1/2",
+   "count": 231,
+   "far_plus": 0,
+   "far_minus": 231,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=2",
+   "value": "-1/4",
+   "count": 29,
+   "far_plus": 0,
+   "far_minus": 29,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=2",
+   "value": "-3/4",
+   "count": 6,
+   "far_plus": 0,
+   "far_minus": 6,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=2",
+   "value": "1",
+   "count": 7,
+   "far_plus": 0,
+   "far_minus": 7,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=2",
+   "value": "1/2",
+   "count": 231,
+   "far_plus": 0,
+   "far_minus": 231,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=2",
+   "value": "1/4",
+   "count": 29,
+   "far_plus": 0,
+   "far_minus": 29,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=2",
+   "value": "3/4",
+   "count": 6,
+   "far_plus": 0,
+   "far_minus": 6,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=3",
+   "value": "-1",
+   "count": 7,
+   "far_plus": 0,
+   "far_minus": 7,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=3",
+   "value": "-1/2",
+   "count": 127,
+   "far_plus": 0,
+   "far_minus": 127,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=3",
+   "value": "-1/4",
+   "count": 9,
+   "far_plus": 0,
+   "far_minus": 9,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=3",
+   "value": "-3/4",
+   "count": 6,
+   "far_plus": 0,
+   "far_minus": 6,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=3",
+   "value": "1",
+   "count": 7,
+   "far_plus": 0,
+   "far_minus": 7,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=3",
+   "value": "1/2",
+   "count": 231,
+   "far_plus": 0,
+   "far_minus": 231,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=3",
+   "value": "1/4",
+   "count": 29,
+   "far_plus": 0,
+   "far_minus": 29,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "k=3",
+   "value": "3/4",
+   "count": 6,
+   "far_plus": 0,
+   "far_minus": 6,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "n=-4",
+   "value": "-1/2",
+   "count": 4,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=-4",
+   "value": "-1/4",
+   "count": 1,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=-4",
+   "value": "1/2",
+   "count": 23,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=-3",
+   "value": "-1/2",
+   "count": 8,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=-3",
+   "value": "-1/4",
+   "count": 1116,
+   "far_plus": 350,
+   "far_minus": 350,
+   "type": "full"
+  },
+  {
+   "parity": "O",
+   "line": "n=-3",
+   "value": "-3/4",
+   "count": 1,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=-3",
+   "value": "1/2",
+   "count": 19,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=-3",
+   "value": "1/4",
+   "count": 4,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=-2",
+   "value": "-1",
+   "count": 1,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=-2",
+   "value": "-1/2",
+   "count": 587,
+   "far_plus": 350,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "n=-2",
+   "value": "-1/4",
+   "count": 4464,
+   "far_plus": 1400,
+   "far_minus": 1400,
+   "type": "full"
+  },
+  {
+   "parity": "O",
+   "line": "n=-2",
+   "value": "-3/4",
+   "count": 1,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=-2",
+   "value": "1/4",
+   "count": 16,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=-1",
+   "value": "-1/2",
+   "count": 1131,
+   "far_plus": 700,
+   "far_minus": 0,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "n=-1",
+   "value": "1/2",
+   "count": 1684,
+   "far_plus": 0,
+   "far_minus": 1050,
+   "type": "half"
+  },
+  {
+   "parity": "O",
+   "line": "n=-1",
+   "value": "3/4",
+   "count": 1,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=0",
+   "value": "-1/4",
+   "count": 20,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=0",
+   "value": "1",
+   "count": 1,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=0",
+   "value": "1/2",
+   "count": 27,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=0",
+   "value": "1/4",
+   "count": 5580,
+   "far_plus": 1750,
+   "far_minus": 1750,
+   "type": "full"
+  },
+  {
+   "parity": "O",
+   "line": "n=0",
+   "value": "3/4",
+   "count": 1,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=1",
+   "value": "-1/2",
+   "count": 24,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=1",
+   "value": "1/2",
+   "count": 3,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=1",
+   "value": "1/4",
+   "count": 1,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=2",
+   "value": "-1/2",
+   "count": 22,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=2",
+   "value": "1/2",
+   "count": 5,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=2",
+   "value": "1/4",
+   "count": 1,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=3",
+   "value": "-1/2",
+   "count": 21,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=3",
+   "value": "1/2",
+   "count": 6,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=3",
+   "value": "1/4",
+   "count": 1,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=4",
+   "value": "-1/2",
+   "count": 19,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=4",
+   "value": "1/2",
+   "count": 8,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  },
+  {
+   "parity": "O",
+   "line": "n=4",
+   "value": "1/4",
+   "count": 1,
+   "far_plus": 0,
+   "far_minus": 0,
+   "type": "finite"
+  }
+ ],
+ "C2": "pass",
+ "summary": {
+  "('E', 'half')": 3527,
+  "('E', 'finite')": 672,
+  "('E', 'full')": 15575,
+  "('O', 'half')": 7961,
+  "('O', 'finite')": 697,
+  "('O', 'full')": 11160
+ }
+}

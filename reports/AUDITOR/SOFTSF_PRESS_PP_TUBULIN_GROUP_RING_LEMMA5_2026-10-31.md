@@ -1,0 +1,3 @@
+# Soft SF PRESS — PP Tubulin group-ring Lemma 5 (Owner t58u) — 2026-10-31
+Verdict PARTIAL. PROVED: positive coefficients ⇒ no cancellation; |net| ≤ unsigned count ≤ ∏‖h_i‖_1 = regular spectral radius of |transfer|; RPP stays weakly NP-complete on det(ρ)≠0 slice via odd modulus. FALSE: det ≠ 0 eliminates/bounds cancellation (M=3 counterexample). ABSENT-as-written: "total cancellation" (reading invented pending mathematical proof). Block-matrix reading: vacuous (nilpotent, det=0).
+tip Soft SF CONFIRM 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 tip_touched NO. Kerr BLOCKED. No RECS. No CERT. REPORTS ONLY.

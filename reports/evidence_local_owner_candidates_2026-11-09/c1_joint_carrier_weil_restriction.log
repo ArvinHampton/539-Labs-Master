@@ -1,0 +1,9 @@
+PARI stack size set to 2000000000 bytes, maximum size set to 2000003072
+Xi a-invariants: [0, -105, 0, -39200, -2744000, -420, -78400, -10976000, -384160000, 2058000, 3630312000, -2582630848000000, -3375, Vecsmall([1]), [Vecsmall([64, -1])], [0, 0, 0, 0, 0, 0, 0, 0]]
+cond E = 49  cond Xi = 19600
+rootno E = 1  rootno Xi = -1
+c4 ratio = 19600  c6 ratio = 2744000  r6^2/r4^3 = 1
+u^2 = c6ratio/c4ratio = 140  core(u^2) = 35 (35 => u^2 is a square in Q(sqrt35))
+primes 3..400 (p not in 2,5,7): split 193, inert 204; all Euler-factor identities L(E/K)=L(E)L(Xi): True
+lcm(49,19600) = 19600  19600 % 140 = 0  19600 % 980 = 0
+conductor of Res (= N(E) N(Xi)) = 960400

@@ -1,0 +1,39 @@
+{
+ "x": {
+  "dev": 1.0743415730908258e-15,
+  "ctrl": 3.2451890362423867,
+  "strip_max": 3.2194551106513103,
+  "xi_max": 1.2494333790792878
+ },
+ "S": {
+  "dev": 1.7798229048217483e-15,
+  "ctrl": 3.2451890362423867,
+  "strip_max": 3.219455110651311,
+  "xi_max": 1.4851080899020637
+ },
+ "RG46a_PASS": true,
+ "ctrl_fail_good": true,
+ "nonvacuous": true,
+ "gate_w1": {
+  "rank": 36,
+  "joint": 36,
+  "closed": true
+ },
+ "gate_wrong": {
+  "rank": 36,
+  "joint": 72,
+  "closed": false
+ },
+ "gate_pass": true,
+ "Ahat_w0.5": {
+  "rank": 75,
+  "joint": 148,
+  "closed": false
+ },
+ "Ahat_w1.0": {
+  "rank": 75,
+  "joint": 150,
+  "closed": false
+ },
+ "RG46b_PASS": false
+}

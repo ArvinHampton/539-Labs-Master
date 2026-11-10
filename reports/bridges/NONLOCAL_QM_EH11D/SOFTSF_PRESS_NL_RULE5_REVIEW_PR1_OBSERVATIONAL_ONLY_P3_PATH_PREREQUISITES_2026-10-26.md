@@ -1,0 +1,5 @@
+# SOFTSF PRESS — NL Rule-5 REVIEW ACCEPT PR1 OBSERVATIONAL-ONLY P3-path prerequisites — 2026-10-26
+- Deliverable: NL_RULE5_REVIEW_PR1_OBSERVATIONAL_ONLY_P3_PATH_PREREQUISITES_2026-10-26.md sha `5839504d136f69895a55a13efadf57dc27425e0eb3b8b60e05b47367b22852c7`
+- Class: Soft SF Rule-5 ACCEPT. Subject FINDINGS 72c59984… PRESS d0cb14d1…. Verdict: 0/20 leave ABSENT-for-match; P3a CLOSED 20/20; P3c+P3d block all; complements MIXED 3f0061e0….
+- Tip Soft SF LOCK 7cddb188… tip_touched NO. Kerr BLOCKED. Auditor Soft SF CONFIRM CLEARED.
+- Copies: reports/ + bridges/NONLOCAL_QM_EH11D/

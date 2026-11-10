@@ -1,0 +1,60 @@
+001	partII/s03_main.tex:6	Shared remainder
+002	partII/s03_main.tex:19	Real-quadratic decomposition and ray class
+003	partII/s03_main.tex:31	Radial asymptotics and partial zeta values
+004	partII/s03_main.tex:47	Gauss-mean pattern and zero set
+005	partII/s03_main.tex:55	Baker obstruction: scalar no-go
+006	partII/s03_main.tex:72	Theta lift and vector-valued $S/T$ law
+007	partII/s03_main.tex:92	Lewis--Zagier period formula
+008	partII/s03_main.tex:115	Eisenstein/cusp split
+009	partII/s03_main.tex:130	Herglotz closed form
+010	partII/s03_main.tex:139	Closed form of $E_R$
+011	partII/s06_lift.tex:12	Profile $S/T$ law
+012	partII/s07_lz.tex:146	Cocycle of the $E$-part
+013	partII/s11_family.tex:24	Tensor factorisation, $s=7$
+014	partII/s11_family.tex:78	Tensor factorisation for odd $s$
+015	partII/s12_dims.tex:5	Dimensions
+016	partII/s12_dims.tex:86	$\dim V(98)=2406$
+017	partII/s12_dims.tex:141	Prime-square structure
+018	partII/s13_uL.tex:21	Coset property
+019	partII/s13_uL.tex:26	Squarefree criterion
+020	partII/s14_hs.tex:7	$H_s$ in closed form
+021	partII/s14_hs.tex:68	Period $72$ at $x=\tfrac13$
+022	partII/s15_cone.tex:49	Closed forms for $H_s^{\rm axes}$
+023	partII/s16_cthird.tex:5	$\Cthird$: one coset, one cone weight, one kernel, two chains
+024	partII/s16_cthird.tex:51	Phase obstruction
+025	partII/s16_cthird.tex:59	Sign obstruction
+026	partII/s16_cthird.tex:67	Structure of $\Cthird$
+027	partII/s17_sfamily.tex:5	Rational $\zeta$-curve
+028	partII/s17_sfamily.tex:22	Radial expansion of $g_s$
+029	partII/s18_k3.tex:44	Weil realisation of the label representation
+030	partII/s18_k3.tex:105	$N_2$-polarised K3 surfaces
+031	partII/s18_k3.tex:132	Automorphisms of $N_2$-polarised K3 surfaces
+032	partII/s19_uniq.tex:73	Uniqueness of the Maass completion
+033	partII/s19_uniq.tex:121	Uniqueness and residual ambiguity of the vector completion
+034	partII/s19_uniq.tex:237	Dimension of the cusp space
+035	partIII.tex:41	$T$-law and $S$-law
+036	partIII.tex:192	Profile of $C$ and of $q^{-7/20}C$
+037	partIII.tex:203	Radial asymptotics at leading order
+038	partIII.tex:216	Vector-valued $S$-law of $C$ at leading order
+039	partIII.tex:314	Expansion of a piece
+040	partIII.tex:368	Radial expansion of the companion series
+041	partIII_shadow_v5.tex:126	
+042	partIII_shadow_v5.tex:146	
+043	partIII_shadow_v5.tex:189	
+044	partIII_radial_v5.tex:24	
+045	partIII_radial_v5.tex:54	
+046	partIII_radial_v5.tex:72	
+047	partIII_order0_v6.tex:16	
+048	partIII_order0_v6.tex:25	
+049	partIII_order0_v6.tex:43	
+050	partIII_inv_v12.tex:17	
+051	partIII_modlocal_v15.tex:7	Equality of compact and ordinary induction
+052	partIII_modlocal_v15.tex:24	Socle reduction to $K_1$-invariants
+053	partIII_modlocal_v15.tex:46	Dictionary identities
+054	partIII_modlocal_v15.tex:78	Filtration weight ten
+055	partIII_modlocal_v15.tex:93	Breuil socle formula
+056	partIII_modlocal_v15.tex:138	Classification of irreducibles
+057	partIII_local_adv_v16.tex:13	Local cite-lift F1
+058	partIII_local_adv_v16.tex:113	Dimension and narrow components
+059	partIII_local_adv_v16.tex:143	Rank-one classifier $D_1$
+060	found_v6.tex:32	The normalized Bridge Series and the 35-component law vector

@@ -1,0 +1,2 @@
+# ACK — NL Soft SF tip Soft SF rebind t198u (2026-10-26, America/Chicago)
+NL acknowledges live tip 5569b14f… (pre-pins 324a2134… / 86e439a8… / 59491fde… / f97d54c9… / 64d23f39… / d88b4dae… / d0b1e301… / d5f8b9d3… history). Stub d2a1cb80…→a481da4e…. tip_touched NO; cite-only, no invent; Soft SF F3 CLOSED (Physicist MR1 §1r; cited, not invented); FREEZE invent else; Packaging Owner-hold; Q7 KEEP. Requests Auditor Soft SF CONFIRM.

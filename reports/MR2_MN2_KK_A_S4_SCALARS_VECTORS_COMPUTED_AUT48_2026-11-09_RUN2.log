@@ -1,0 +1,45 @@
+python 3.13.5 sympy 1.14.0
+[N4] V0 = -3*2**(2/3)*g**2   L^2 = 2*2**(1/3)/g**2   g^2 L^2 = 2*2**(1/3)  target 2^(4/3): True
+[N4] gradient at vacuum (all 13 must be 0): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] True
+[N4] off-block mass-matrix entries all zero: True
+[N4] block phi,lam m^2 L^2 eigenvalues {value: mult}: {12: 1, -4: 1}
+[N4] block T(5) m^2 L^2 eigenvalues {value: mult}: {0: 5}
+[N4] block psi(6) m^2 L^2 eigenvalues {value: mult}: {5: 6}
+[N4] (phi,lam) eigen m2L2 = -4  Delta = 2  direction dphi:dlam = 1/3  falloff exponents {Delta-4? i.e. 4-Delta, -Delta}: 2 , -2
+[N4] (phi,lam) eigen m2L2 = 12  Delta = 6  direction dphi:dlam = -3  falloff exponents {Delta-4? i.e. 4-Delta, -Delta}: -2 , -6
+[N2] V0 = -3*2**(2/3)*g**2  equals N4 V0: True
+[N2] gradient (z-derivs taken at z->0): [0, 0, 0, 0, 0]
+[N2] scalar m^2L^2 {value: mult}: {-4: 1, 12: 1, 0: 1, 5: 2}
+[Z1] d2V/dw2, d2V/dw dphi, d2V/dw dlam at MN2: [0, 0, 0]
+[Z1] w kinetic coeff K_ww = 3/2  m_w^2 L^2 = 0  Delta = 4  exponents {4-Delta? Delta-? }: second-order exponents {0, 4}: (0, 4)
+[Z1] d3V/dw3 at MN2 = -24*2**(2/3)*g**2   PP value -24*2^(2/3) g^2 ; ratio = 1
+[Z1] cross-check vs N4: w = diag(e^w,e^w,e^-2w) means tm=diag(w,w,-2w); N4 T-block mass 0 above
+[VEC] vector m^2L^2 {value: mult}: {0: 2, 8: 1}
+[VEC] null vectors (massless): [[1, 0, 0], [0, 1, 1]]
+[VEC] CGR (6.3) massive triplet: 2^{5/3} g^2 L^2 = 8
+[VEC] Delta = 2+sqrt(1+m2L2) for m2L2=0,8: [3, 5]
+[VEC] N4: A^{alpha beta} mass terms come only from D T and D psi; at T=1, psi=0: g(A^{ab}+A^{ba})=0 (antisym) -> massless triplet; A(1) couples only via D psi, D K -> massless at psi=K=0
+[DOF] scalars: phi,lam(2)+T(5)+psi(6)=13 physical + 3 Stueckelberg xi^alpha = 16 = 1 + 3*5 (N=4 gravity + 3 vector multiplets): True
+[DOF] vector-like: A(1)+A^alpha(3)+chi^alpha(3)+K^a(2) = 9 = 6 + 3: True
+[G] exact curve check y'^2 - f(x') = 0 on curve for g1 : True
+[G] exact curve check y'^2 - f(x') = 0 on curve for g2 : True
+[G] draft lift without I fails the curve check: True
+[G] exact generator matrices on (dx/y, x dx/y): [[(-1)**(1/4), 0], [0, (-1)**(3/4)]] [[-sqrt(2)*I/2, -sqrt(2)*I/2], [sqrt(2)*I/2, -sqrt(2)*I/2]] [[-1, 0], [0, -1]]
+[G] order of matrix group on H^{1,0} (float closure, entries in Q(zeta8)): 48  element orders: {1: 1, 2: 13, 3: 8, 4: 6, 6: 8, 8: 12}  (GL(2,3): {1:1,2:13,3:8,4:6,6:8,8:12})
+[G] trivial multiplicity: H^{1,0}: 0j  H^1(Sigma,R): 0.0  H^0(K^2)=Sym^2 H^0(K): (-0+0j)
+[G] exact: J = -I on H^{1,0} => no J-invariant (hence no Aut+-invariant) vector in H^1; J acts as (+1) on Sym^2 (quadratic differentials)
+[JS] phi,lam,T,A(1),A^ab,chi^a ^vol, h^a (Sigma scalars / vol_Sigma)                       weight m-q=0  fibre J-sign +1
+[JS] psi^{a alpha} ebar^a (x) E_a  [T*Sigma (x) V, weight-0 part]                          weight m-q=0  fibre J-sign +1
+[JS] K^a_(2) ^ ebar^a  [T*Sigma (x) V, weight-0 part]                                      weight m-q=0  fibre J-sign +1
+[JS] SO(5)(2,3) Sigma-leg, weight +-2 part  [K^2 (x) V^0 ...]                              weight m-q=2  fibre J-sign +1
+[JS] Wilson lines of SU(2)_R / U(1)_r along harmonic 1-forms [T*Sigma, untwisted index]    weight m-q=1  fibre J-sign -1
+[JS] C3 with one Sigma leg along harmonic 1-form (untwisted)                               weight m-q=1  fibre J-sign -1
+[JS] g_{mu m} vectors from 1-forms on Sigma (untwisted)                                    weight m-q=1  fibre J-sign -1
+[CGU] stage-1 Delta_2(ell=j,n=0,q=0,lambda=0) - (2j+4) = -2*j + 2*sqrt(j**2 + 2*j + 1) - 2 (sqrt(4j^2+8j+4) = 2j+2 for j>=0) 4*(j + 1)**2
+[CGU] j=0: spin-2 m2L2=0 Delta=4 ; A2A2bar primary [0,0]^(2j;0) Delta0=2 m2L2=-4 ; QQbar vector Delta=3 m2L2=0
+[CGU] j=1: spin-2 m2L2=12 Delta=6 ; A2A2bar primary [0,0]^(2j;0) Delta0=4 m2L2=0 ; QQbar vector Delta=5 m2L2=8
+[CGU] j=2: spin-2 m2L2=32 Delta=8 ; A2A2bar primary [0,0]^(2j;0) Delta0=6 m2L2=12 ; QQbar vector Delta=7 m2L2=24
+[CGU] j=3: spin-2 m2L2=60 Delta=10 ; A2A2bar primary [0,0]^(2j;0) Delta0=8 m2L2=32 ; QQbar vector Delta=9 m2L2=48
+[CGU] generic (non-universal) stage-1 levels, e.g. 20 (j=0, ell=2): Delta_2 = 2+2*sqrt(6) irrational -> not of CGU form 4+2l+n -> multiplet position OPEN
+[BF] min scalar m2L2 in N=4 truncation: -4  BF bound -4; strict violation: False
+DONE

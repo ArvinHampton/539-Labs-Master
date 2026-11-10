@@ -1,0 +1,214 @@
+MOCK CHARACTERS AND THE KRONECKER SYMBOL
+
+arXiv:1608.03957v2 [math.NT] 4 Jan 2017
+
+JEAN-PAUL ALLOUCHE AND LEO GOLDMAKHER
+
+Abstract. We introduce and study a family of functions we call the mock characters.
+These functions satisfy a number of interesting properties, and of all completely multiplicative arithmetic functions seem to come as close as possible to being Dirichlet characters.
+Along the way we prove a few new results concerning the behavior of the Kronecker symbol.
+
+
+One of the most familiar objects in number theory is the Kronecker symbol, denoted na
+or (a|n). Viewed as a function of n, it is well-known that this is a primitive real character
+when a is a fundamental discriminant. Less
+well-known is the behavior when a is not a
+
+a
+fundamental discriminant; in this case · might be a primitive character (e.g., for a = 2),
+an imprimitive
+character (e.g., for a = 4), or not a character at all (e.g., for a = 3).1 Even
+
+when a· is not a character, it strongly mimics the behavior of one, replacing the condition
+of periodicity with automaticity (a notion we shall discuss below). Inspired by this example,
+we define and study a family of character-like functions which we call mock characters.
+Of all completely multiplicative arithmetic functions, the mock characters are as close as
+possible to being characters. We will justify this statement qualitatively, and also formulate
+a quantitative conjecture using the language of ‘pretentiousness’ introduced by Granville and
+Soundararajan in [29].
+The structure of the paper is as follows. In Section 1 we briefly review automatic sequences.
+In Section 2 we introduce mock characters and prove a few basic properties. In Section 3 we
+explore the relationship between mock characters and the Kronecker symbol, and use our
+results to obtain some new results about the Kronecker symbol. In the final section, we view
+mock characters through the lens of the ‘pretentious’ approach to number theory.
+1. A quick overview of automatic sequences
+The goal of this section is to recall and motivate the notion of an automatic sequence.
+We will first give a computer-science definition, then discuss a mathematical motivation for
+studying automatic sequences, and finally give an equivalent definition which is easier to
+compute with.
+Recall that a Finite State Machine is a finite collection of states along with transition
+rules between states. A positive integer corresponds to a program: its digits (read right to
+left) dictate the individual state transitions.
+Definition 1.1. A sequence (an ) is called q-automatic if and only if there exists a Finite
+State Machine which outputs an when given the program n (written base q).
+JPA partially supported by the ANR project “FAN” (Fractals et Numération), ANR-12-IS01-0002. LG
+partially supported by an NSA Young Investigator grant.
+1See Section 3.2 below, in particular, Corollary 3.3.
+1
+
+2
+
+JEAN-PAUL ALLOUCHE AND LEO GOLDMAKHER
+
+1
+s2
+
+0
+
+1
+start
+
+s1
+
+0
+
+0
+s3
+
+1
+Figure 1. For this FSM, the binary program 1101 yields the output s2
+Example 1.2. A nice example of a 2-automatic sequence is the regular paperfolding sequence.
+To generate this sequence, start with a large piece of paper, and label the top left corner L
+and the top right corner R0 . Fold the paper in half so that R0 ends up underneath L, and
+label the new upper right corner by R1 (the paper should be oriented so that L is still the
+top left corner). Now iterate this process, each time folding the paper in half so that the top
+right corner Ri ends up directly underneath L, and then labelling the new top right corner
+Ri+1 . After some number of iterations, unfold the paper completely so that L is the top left
+corner and R0 is once again the top right corner. The paper has a sequence of creases, some
+of which are mountains (denoted ∧) and some valleys (denoted ∨). Set vn to be the nth
+crease from the left, where the paper has been folded enough times for there to be n creases.
+The sequence (vn ) is called the (regular) paperfolding sequence; it begins
+∧ ∧ ∨ ∧ ∧ ∨ ∨ ∧ ∧ ∧ ∨ ∨ ∧ ∨ ∨···
+For more information about this sequence see [5]. (An FSM generating the paperfolding
+sequence can be found in [4, p. 312]; note that the first term of the sequence is treated as
+the 0th term.) We will return to this sequence below.
+From the definition it is not obvious how restrictive the condition of automaticity is; it
+turns out to be X
+quite strong. To justify this, first recall that a given α ∈ R, say with decimal
+expansion α =
+αn 10−n , is rational if and only if the sequence of digits (αn ) is eventually
+n≥0
+
+periodic.X
+Similarly, given a finite field F and a formal power series α(X) ∈ F[[X]], say,
+α(X) =
+αn X n , we have that α(X) ∈ F(X) (i.e., α(X) is rational) if and only if the
+n≥0
+
+sequence (αn ) is eventually periodic.
+It is an interesting and largely open question to determine whether irrational algebraic
+numbers have “random” decimal expansions or not. In the function field case, when the
+ground field is finite, Christol discovered the following result:
+
+Theorem 1.3 ([11,
+X 12]). Let Fq denote the finite field of q elements. Then the formal power
+series α(X) :=
+αn X n is algebraic over the field of rational functions Fq (X) if and only
+n≥0
+
+if the sequence (αn ) is q-automatic.
+
+MOCK CHARACTERS AND THE KRONECKER SYMBOL
+
+3
+
+Thus we see that
+automatic is to periodic
+
+as
+
+algebraic is to rational.
+
+(1.1)
+
+This analogy will play a role in the sequel.
+Definition 1.1 is clean and justifies the term automatic. In practice, however, the following
+equivalent definition (see, e.g., [5]) is more useful:
+
+Definition 1.4. Let q ≥ 2 be an integer. The sequence α(n) n≥0 is said to be q-automatic
+if its q-kernel, the collection of subsequences
+n
+o
+
+Kα := α(q k m + r) m≥0 : k ≥ 0 and 0 ≤ r < q k ,
+
+is finite. We emphasize that an individual element of Kα is a sequence.
+
+Remark 1.5. It follows from this that any eventually periodic sequence is q-automatic for
+every q ≥ 2.
+2. Mock characters
+Before defining the notion of mock character, we recall the definition of a Dirichlet character.
+Definition 2.1. A map χ : Z → C is a Dirichlet character of modulus q, denoted χ (mod q),
+if and only if
+(i) χ is completely multiplicative (i.e., χ(mn) = χ(m)χ(n) for all m, n ∈ Z);
+(ii) χ is q-periodic; and
+(iii) χ(n) = 0 if and only if (n, q) 6= 1.
+In fact, the third condition is merely a notational convenience; any completely multiplicative
+periodic function is a Dirichlet character. This does not seem to be well-known and the proof
+is short, so we include it here. (This is a modification of a theorem appearing in the second
+author’s Ph.D. thesis [27].)
+Proposition 2.2. Suppose χ : Z → C is completely multiplicative and eventually periodic,
+and that there exists n > 1 such that χ(n) 6= 0. Then χ is a Dirichlet character.
+Proof. Observe that χ(1) = 1. If χ is the trivial character of modulus 1 the proposition is
+proved, so we will henceforth assume that χ 6≡ 1; it follows that χ(0) = 0.
+We begin by proving a special case of the proposition: that the claim holds for all purely
+periodic χ. Let q denote the period of χ, and set d to be the largest divisor of q such that
+χ(d) 6= 0 (such a d exists since χ(1) = 1). Observe that if d = 1 then χ must be a Dirichlet
+character (mod q). (To see this, note that χ(m) = 0 whenever (m, q) > 1; conversely,
+if (m, q) = 1, then some linear combination of m and q yields 1, whence χ(m) must be
+nonzero.) Thus we may assume we have d > 1. For any integers k, r we have
+ kq
+
+χ(d)χ
++ r = χ(kq + dr) = χ(d)χ(r).
+d
+Now χ(d) 6= 0 by hypothesis, so χ is periodic with period dq . Since d > 1, we see that dq is a
+proper divisor of q. Iterating this procedure yields the claim in the case that χ is periodic.
+We now deduce the claim in full generality. Let χ be as in the statement of the proposition.
+A result of Heppner and Maxsein [31, Satz 2] implies the existence of an integer ℓ ≥ 0 and
+a purely periodic multiplicative function ξ such that χ(n) = nℓ ξ(n). Since χ is completely
+
+4
+
+JEAN-PAUL ALLOUCHE AND LEO GOLDMAKHER
+
+multiplicative by hypothesis, we deduce that ξ must be as well. Thus ξ is periodic and
+completely multiplicative, so it must be a Dirichlet character. Finally, observe that χ(n)
+takes only finitely many values, so complete multiplicativity implies that all these values
+must be 0 or roots of unity. Thus (by hypothesis) there exists n > 1 such that |χ(n)| = 1,
+whence ℓ = 0. It follows that χ = ξ is a Dirichlet character.
+
+Remark 2.3. Heppner and Maxsein’s proof is an adaptation of a proof of a similar result
+(for purely periodic functions) due to Sárközy [36]. A much shorter proof of the HeppnerMaxsein theorem was discovered by Methfessel [33, Theorem 3]. Although not required
+for the sequel, we mention that the Sárközy-Heppner-Maxsein-Methfessel theorem implies
+significantly more than we have indicated. For example, without any additional effort one
+can deduce that a completely multiplicative function χ which satisfies χ(n) 6= 0 for some
+n > 1 and which eventually satisfies any linear recurrence must be a Dirichlet character.
+The simultaneous requirements of complete multiplicativity and (eventual) periodicity
+are very strong. Slightly weakening the latter condition allows us to enlarge the family of
+Dirichlet characters. To distinguish the new members of this family, the definition below
+excludes all Dirichlet characters.
+Definition 2.4. A map κ : Z → C is a mock character of mockulus q, denoted κ (mock q),
+if and only if
+(i) κ is completely multiplicative;
+(ii) the sequence (κ(n))n≥0 is q-automatic but not eventually periodic; and
+(iii) there exists an integer d ≥ 1 such that κ(n) = 0 precisely when n = 0 or (n, d) 6= 1.
+Example 2.5. We saw the paperfolding sequence (vn )n≥1 in Example 1.2. We now reinterpret and extend this sequence to all integers. First, replace every occurrence of ∧ by +1 and
+every occurrence of ∨ by −1. It turns out that (vn ) satisfies a nice recursion: v2n = vn , and
+v2n+1 = (−1)n (see, e.g., [5, Section 6]). Next, extend the sequence to all of Z by setting
+v0 := 0 and v−n := −vn . One can show that the sequence is completely multiplicative. It is
+not hard to deduce that the function v(n) := vn is a mock character of mockulus 2.
+Remark 2.6. Our analogy (1.1) gives a qualitative heuristic that of all completely multiplicative arithmetic functions, the mock characters come as close as possible to being
+Dirichlet characters. In Section 3 we will further justify this by example; in Section 4 we
+propose a conjecture which quantifies this heuristic description.
+Remark 2.7. Other notions of “character-like” functions and “generalized characters” appear in the literature, which are quite different from the mock characters defined above;
+see [10, 18, 19, 20, 40]. On the other hand, multiplicative automatic sequences (not exactly mock characters, but close) have been studied in a number of recent papers, e.g.,
+[6, 7, 8, 9, 17, 38, 41]. One notable conjecture, made in [6], is that any function which is
+simultaneously automatic and multiplicative must agree at all primes with some eventually
+periodic function.
+We make a few observations about mock characters. First, note that condition (iii) in
+Definition 2.4 implies that the set of primes p for which κ(p) = 0 is finite. Further, note that
+κ is nonvanishing on Z+ (the positive integers) if and only if d = 1 in condition (iii). Less
+obvious are the following:
+
+

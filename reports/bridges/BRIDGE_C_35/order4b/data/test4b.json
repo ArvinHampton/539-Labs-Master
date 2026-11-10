@@ -1,0 +1,35 @@
+{
+ "anchor_diff": 0.0,
+ "ctrl_w1": {
+  "rank": 36,
+  "joint": 36,
+  "closed": true
+ },
+ "ctrl_w0": {
+  "rank": 36,
+  "joint": 72,
+  "closed": false
+ },
+ "control_pass": true,
+ "A2_w0.0": {
+  "rank": 73,
+  "joint": 146,
+  "closed": false
+ },
+ "A2_w0.5": {
+  "rank": 73,
+  "joint": 146,
+  "closed": false
+ },
+ "A2_w1.0": {
+  "rank": 73,
+  "joint": 146,
+  "closed": false
+ },
+ "T1": {
+  "span_rank": 214,
+  "joint": 216,
+  "inconclusive": false,
+  "closed": false
+ }
+}

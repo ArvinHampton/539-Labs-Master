@@ -1,0 +1,72 @@
+
+%=====================================================================
+\section{The Herglotz closed form (Theorems~\ref{thm:I} and~\ref{thm:J})}\label{sec:herglotz}
+%=====================================================================
+The proof below is given in outline; the full estimates are in the companion report listed in Appendix~\ref{app:repro}.
+
+\subsection{Data}
+For each genus character $\chi=\chi_{j,l}$ (Table~\ref{tab:genus}) with its $\psi\bmod20$: $a(m)=\psi(m)1_{(m,10)=1}$ (period $20$, $a(0)=0$);
+$b(k)=\psi(k)\chi_{140}(k)$ (period $140$, $b(0)=b(140)=0$); parities $\eta_a=\psi(-1)$, $\eta_b=\psi(-1)\chi_{140}(-1)=\eta_a$, so
+$\eta_a\eta_b=1$ ($\chi_{140}$ is even, $K$ being real). Gauss sums
+$\widehat b(n)=\sum_{r\bmod140}b(r)\e(rn/140)$, $\check a(k)=\sum_{r\bmod20}a(r)\e(kr/20)$; $\rho_n=-\widehat b(n)/(2\pi i\cdot140)$, which is
+$140$-periodic with $\rho_0=0$, $\rho_{-n}=\eta_b\rho_n$, $\sum_{s=1}^{140}\rho_s=0$. Put $G_\chi(\tau)=\sum_{m,k\ge1}a(m)b(k)\e(mk\tau)$,
+$\varphi(X)=\sum_s\rho_s\psi_\Gamma(s/140+X)$, $R_\chi(z)=\sum_{m\ge1}a(m)\varphi(m/(20z))$, $w_\chi=\e(-j/8)/16$. Equivalently
+$R_\chi(z)=-140z\sum_{m,n\ge1}a(m)\rho_n/(7m+nz)$. When $\psi'=\psi\chi_{140}$ is primitive mod $140$, $\rho_s=-\tau(\psi')\overline{\psi'(s)}/(2\pi i\cdot140)$.
+
+\paragraph{Inputs.} (I1) $E_L=\sum_\chi w_\chi G_\chi(\cdot/20)$ (\S\ref{sec:split}; $w_\chi=\bar\chi(S^+)/16$). (I2) The Maass $S$-law
+(Theorem~\ref{thm:F}). (I3) Lemma~\ref{lem:green} and Theorem~\ref{thm:G}(i) \emph{on $\mathrm{Re}\,z>0$ only}: there $\Omega=\Psi$, so $\Psi$ continues
+holomorphically to $U=\Hb\cup\{\mathrm{Re}\,z>0\}$. Input (I1) was also checked exactly for $20Q\le2000$.
+
+\begin{remark}[Use of Theorem~\ref{thm:G} in this section]\label{rem:herglotzG}
+Every step below takes place in $U$. The functions $R_\chi$ are holomorphic on $U$; the difference $D$ of the Liouville step is used on
+$\{\mathrm{Re}\,z>0\}$; the growth bound is on $S=\{1\le\mathrm{Re}\,z\le141,\ \mathrm{Im}\,z\le-1\}\subset\{\mathrm{Re}\,z>0\}$; and the $140$-translates of
+$U$ cover $\C$, which is how $P=D/z$ becomes entire. No step uses Theorem~\ref{thm:G} on $\mathrm{Re}\,z<0$, where $\Omega=-\Psi^-\neq\Psi$.
+\end{remark}
+
+\subsection{Proof outline}
+\begin{lemma}[Mittag-Leffler]
+$B(u):=\sum_{k\ge1}b(k)\e(ku)$ continues to $P(\e(u))/(1-\e(140u))$, $\deg P\le139$, and for $u\notin\frac1{140}\Z$,
+$B(u)=\sum_n\rho_n/(u-n/140)$ (symmetric summation) $=\sum_{s=1}^{140}\rho_s\pi\cot\pi(u-s/140)$; the one-sided series converge.
+\end{lemma}
+\noindent(Same poles and residues, both vanish at $\pm i\infty$, Liouville in $\e(u)$; one-sided convergence by Abel summation.)
+
+\begin{lemma}
+For $X\notin(-\infty,-\tfrac1{140}]$: $\varphi(X)=-140\sum_{n\ge1}\rho_n/(n+140X)$. With $\beta_1=\sum_s\rho_sB_1(s/140)$ ($=0$ if $\eta_b=+1$), uniformly in
+$|\arg X|\le\pi-\delta$, $\varphi(X)=\beta_1/X+O_\delta(|X|^{-2})$ for $|X|\ge1$. Consequently $R$ is holomorphic on $U=\Hb\cup\{\mathrm{Re}\,z>0\}$ (since
+$\arg X_m=-\arg z\in(-\pi,\pi/2)$), and $|R(z)|\le C(1+|z|)$ on $S=\{1\le\mathrm{Re}\,z\le141,\ \mathrm{Im}\,z\le-1\}$ (odd tail by Abel summation).
+\end{lemma}
+
+\begin{proposition}
+For $z\in\Hb$: $G_\chi(-1/(20z))=2R_\chi(z)+T_\chi(z)$ with $T_\chi(z)=-\lim_M\sum_{0<|m|\le M}a(m)\varphi(m/(20z))$. Hence Theorem~\ref{thm:I} is equivalent to
+\begin{equation}\label{eq:star}\textstyle
+\sum_\chi w_\chi T_\chi(z)=(z/\sqrt{35})\,E_R(z)\qquad(z\in\Hb).
+\end{equation}
+\end{proposition}
+
+\begin{proposition}
+For every genus $\chi$ and $z\in\Hb$, $T_\chi(z)=\frac z{140}\sum_{n,k\ge1}\widehat b(n)\check a(k)\e(nkz/140)$, absolutely convergent.
+\end{proposition}
+\noindent For nontrivial $\psi$ this is two-variable summation by parts (kernel $F(m,n)=1/(nz+7m)$ with uniform $O(|w|^{-3})$ bounds on
+$\Delta_m\Delta_nF$, $D_n^2F$) followed by the cotangent evaluation
+$\lim_M\sum_{|m|\le M}a(m)/(7m+nz)=-\tfrac{2\pi i}{140}\sum_k\check a(k)\e(nkz/140)$. For trivial $\psi$ the $n$-outer sum diverges and a second-order
+argument is needed; the constants $\pm\tfrac25\sum_n\rho_n/(nz)$ cancel. They are genuinely nonzero:
+$\sum\rho_n/n=i\log\varepsilon/(70\pi)$ to $15$ digits (Category B context via the class number formula; not used).
+
+\paragraph{Liouville step.} Let $D=\Psi-2\sum_\chi w_\chi R_\chi$, holomorphic on $\{\mathrm{Re}\,z>0\}$ by (I3) and the lemma. On $\Hb$, $D=zP$ with
+$P(z)=\sum_{N\ge1}p_N\e(Nz/140)$ ($E_R$ has no constant term since $\nu=0\notin F$; its frequencies lie in $\tfrac1{70}\Z$). $P$ extends to an entire
+$140$-periodic function, holomorphic in $q'=\e(z/140)$ on $\C^\ast$ with Laurent coefficients $p_N$, $N\ge1$. A growth bound on $S$ (proved in the companion report:
+$|\Psi|\le C(1+|z|)^2$) gives $|P|\le C'(1+\log|q'|)$ for $|q'|\ge e^{2\pi/140}$; Cauchy's estimates force $p_N=0$. Hence $P\equiv0$, which is
+\eqref{eq:star} (Theorem~\ref{thm:J}) and $D\equiv0$ (Theorem~\ref{thm:I}). Periodicity and absence of a constant term alone would not suffice
+($\e(z/140)$); the $o(|q'|)$ growth is essential.
+
+\paragraph{Arithmetic form of Theorem~\ref{thm:J}.} With $\nu\in L'$, $(u,v)=A\nu$, $\theta=(7u-2v)+u\sqrt{35}$: $\nu\mapsto\theta$ is a bijection
+$L'\to\fp_2$, $Q(\nu)=-\Nm(\theta)/140$, $B(\nu,a)=\mathrm{Re}\,\theta/10$, and the coefficient of $\e(Nz/140)$ in $E_R$ is
+$c_R(N/140)=\tfrac{\sqrt{35}}{140}\sum_\chi w_\chi\sum_{nk=N}\widehat b(n)\check a(k)$.
+For rational $x>0$ it follows, by Theorem~\ref{thm:G}(ii), that $\psi(x)=\kappa_L(-1/x)-(x/\sqrt{35})\sum_p\kappa_{p,-a}(x)$ is the boundary value of the
+right-hand side of Theorem~\ref{thm:I}.
+
+\catB{Reading of $R_\chi$ as the Lewis--Zagier Eisenstein period function at $s=\tfrac12$ for $(\psi,\psi')$ \cite[Ch.~IV]{LZ}; ``twisted
+Herglotz/Kronecker-limit'' terminology. Contrast with Radchenko--Zagier \cite{RZ}, whose untwisted $F(x)=\sum(\psi_\Gamma(nx)-\log nx)/n$ has dilogarithmic
+rational values; here no log-regularisation is needed and the combination takes algebraic values at rationals. Radchenko--Zagier also record Herglotz's
+evaluation at the same unit $6+\sqrt{35}$ (suggestive only). Zagier's Kronecker limit formula \cite{Zagier75} is context only. Individual $R_\chi(x)$ were not
+tested for algebraicity.}

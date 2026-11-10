@@ -1,0 +1,980 @@
+                                              DIFFERENTIAL OPERATORS FOR HARMONIC WEAK MAASS
+                                                FORMS AND THE VANISHING OF HECKE EIGENVALUES
+
+                                                             JAN H. BRUINIER, KEN ONO AND ROBERT C. RHOADES
+arXiv:0802.0963v3 [math.NT] 26 Jan 2009
+
+
+
+
+                                                  Abstract. For integers k ≥ 2, we study two differential operators on harmonic weak
+                                                  Maass forms of weight 2 − k. The operator ξ2−k (resp. Dk−1 ) defines a map to the
+                                                  space of weight k cusp forms (resp. weakly holomorphic modular forms). We leverage
+                                                  these operators to study coefficients of harmonic weak Maass forms. Although generic
+                                                  harmonic weak Maass forms are expected to have transcendental coefficients, we show
+                                                  that those forms which are “dual” under ξ2−k to newforms with vanishing Hecke eigen-
+                                                  values (such as CM forms) have algebraic coefficients. Using regularized inner products,
+                                                  we also characterize the image of Dk−1 .
+
+
+
+
+                                                                1. Introduction and Statement of Results
+                                             Let Mk! (Γ0 (N), χ) denote the space of integer weight k weakly holomorphic modular
+                                          forms on Γ0 (N) with Nebentypus χ. Recall that a weakly holomorphic modular form is
+                                          any meromorphic modular form whose poles (if any) are supported at cusps. Weakly
+                                          holomorphic modular forms naturally sit in spaces of harmonic weak Maass forms (see
+                                          Section 2 for definitions), more general automorphic forms which have been a source of
+                                          recent interest due to their connection to Ramanujan’s mock theta functions, Borcherds
+                                          products, derivatives of modular L-functions, and traces of singular moduli (see [2, 3, 4,
+                                          5, 6, 7, 8, 20, 21]).
+                                             In view of these applications, it is natural to investigate the arithmeticity of the Fourier
+                                          coefficients of such Maass forms, and to also investigate their nontrivial interplay with
+                                          holomorphic and weakly holomorphic modular forms. In the works above, one such non-
+                                          trivial relationship (see Prop. 3.2 of [7]), involving the differential operator
+                                                                                                    ∂
+                                                                                    ξw := 2iy w ·      ,
+                                                                                                    ∂z
+                                          plays a central role. It is the fact that
+                                          (1.1)                       ξ2−k : H2−k (Γ0 (N), χ) −→ Sk (Γ0 (N), χ).
+                                          Here Hw (Γ0 (N), χ) denotes the space of weight w harmonic weak Maass forms on Γ0 (N)
+                                          with Nebentypus χ, and Sw (Γ0 (N), χ) denotes the subspace of cusp forms. It is not
+
+                                             The second author thanks the generous support of the National Science Foundation, and the Manasse
+                                          family. The third author is grateful for the support of a National Physical Sciences Consortium Graduate
+                                          Fellowship, and a National Science Foundation Graduate Fellowship.
+                                                                                             1
+2                   JAN H. BRUINIER, KEN ONO AND ROBERT C. RHOADES
+
+difficult to make this more precise using Fourier expansions. In particular, every weight
+2 − k harmonic weak Maass form f (z) has a Fourier expansion of the form
+                           X               X
+(1.2)              f (z) =      c+     n
+                                 f (n)q +     c−                     n
+                                               f (n)Γ(k − 1, 4π|n|y)q ,
+                           n≫−∞              n<0
+
+where Γ(a, x) is the incomplete Gamma-function, z = x + iy ∈ H, with x, y ∈ R, and
+q := e2πiz . A straightforward calculation shows that ξ2−k (f ) has the Fourier expansion
+                                                  ∞
+                                                  X
+(1.3)                      ξ2−k (f ) = −(4π)k−1         c−
+                                                         f (−n)n
+                                                                k−1 n
+                                                                   q .
+                                                  n=1
+
+  As (1.2) reveals, f (z) naturally decomposes into two summands
+                                  f + (z) := n≫−∞ c+       n
+                                            P
+(1.4)                                                f (n)q ,
+                          f − (z) := n<0 c−                       n
+                                      P
+(1.5)                                       f (n)Γ(k − 1, 4π|n|y)q .
+
+Therefore, ξ2−k (f ) is given simply in terms of f − (z), the non-holomorphic part of f .
+  Here we show that f + (z), the holomorphic part of f , is also intimately related to weakly
+holomorphic modular forms. We require the differential operator
+                                              1      d
+(1.6)                                   D :=      · .
+                                             2πi dz
+Theorem 1.1. If 2 ≤ k ∈ Z and f ∈ H2−k (Γ0 (N), χ), then
+                                  D k−1(f ) ∈ Mk! (Γ0 (N), χ).
+Moreover, assuming the notation in (1.2), we have
+                                             X
+                       D k−1f = D k−1 f + =       c+
+                                                   f (n)n
+                                                         k−1 n
+                                                            q .
+                                                  n≫−∞
+
+Remark 1. Theorem 1.1 is related to classical results on weakly holomorphic modular
+forms and Eichler integrals. Theorem 1.1 is a generalization of the classical result on
+weakly holomorphic modular forms to the context of harmonic weak Maass forms.
+  Theorem 1.1 implies that the coefficients c+
+                                             f (n), for non-zero n, are obtained by dividing
+the nth coefficient of some fixed weakly holomorphic modular form by nk−1 . Therefore
+we are compelled to determine the image of the map
+                         D k−1 : H2−k (Γ0 (N), χ) −→ Mk! (Γ0 (N), χ).
+It is not difficult to see that this map is not generally surjective. Our next result determines
+the image of D k−1 in terms of “regularized” inner products (see Section 4).
+Theorem 1.2. If 2 ≤ k ∈ Z, then the image of the map
+                         D k−1 : H2−k (Γ0 (N), χ) −→ Mk! (Γ0 (N), χ)
+consists of those h ∈ Mk! (Γ0 (N), χ) which are orthogonal to cusp forms (see Section 4)
+which also have constant term 0 at all cusps of Γ0 (N).
+      HARMONIC WEAK MAASS FORMS AND THE VANISHING OF HECKE EIGENVALUES                        3
+
+  Although these results for D k−1 suggest that one has complete information concerning
+the Fourier coefficients of f + , it turns out that some of the most basic questions remain
+open. Here we consider algebraicity. Despite the fact that we have a fairly complete
+theory of algebraicity for forms in Mk! (Γ0 (N), χ), thanks to the q-expansion principle, the
+theory of Eisenstein series and newforms, this question remains open for harmonic weak
+Maass forms. In view of the theory of newforms, it is natural to restrict our attention
+to those f ∈ H2−k (Γ0 (N), χ) for which ξ2−k (f ) ∈ Sk (Γ0 (N), χ) is a Hecke eigenform. For
+reasons which will become apparent, we shall concentrate on those forms for which
+                                                     g
+(1.7)                                   ξ2−k (f ) =      ,
+                                                    kgk2
+where g is a normalized newform and kgk denotes its usual Petersson norm.
+   To illustrate the nature of this problem, we consider two examples of Maass-Poincaré
+series which are not weakly holomorphic modular forms. The Maass-Poincaré series (see
+Section 6) f := Q(−1, 12, 1; z) ∈ H−10 (SL2 (Z)) (note. If a Nebentypus character is
+not indicated, then it is assumed to be trivial) satisfies (1.7) for g = ∆(z), the unique
+normalized weight 12 cusp form on the full modular group. The first few coefficients of
+its holomorphic part are
+Q+ (−1, 12, 1; z) ∼ q −1 − 0.04629 − 1842.89472q − 23274.07545q 2 − 225028.75877q 3 − · · · .
+There is little reason to believe that these coefficients are rational or algebraic. On the
+other hand, we shall prove that the Maass-Poincaré series Q(−1, 4, 9; z) ∈ H−2 (Γ0 (9)) has
+the property that Q+ (−1, 4, 9; z) has rational coefficients. Its first few terms are
+                                        1      49 5       48 8     771 11
+(1.8)         Q+ (−1, 4, 9; z) = q −1 − q 2 +      q −       q −       q +··· ,
+                                        4      125       512      1331
+and f := Q(−1, 4, 9; z) satisfies (1.7) for the unique normalized newform in S4 (Γ0 (9)).
+   Our next result explains the distinction between these two cases. To make this pre-
+cise, let g ∈ Sk (Γ0 (N), χ) be a normalized newform, and let Fg be the number field
+obtained by adjoining the coefficients of g to Q. We say that a harmonic weak Maass
+form f ∈ H2−k (Γ0 (N), χ) is good for g if it satisfies the following properties (Section 2 for
+definitions):
+     (i) The principal part of f at the cusp ∞ belongs to Fg [q −1 ].
+    (ii) The principal parts of f at the other cusps of Γ0 (N) are constant.
+   (iii) We have that ξ2−k (f ) = kgk−2g.
+Remark 2. For every such g, Proposition 5.1 will show that there is an f which is good
+                                                                           !
+for g. Moreover, such an f is unique up to a weakly holomorphic form in M2−k  (Γ0 (N), χ)
+with coefficients in Fg . Such f can be constructed explicitly using Poincaré series (for
+example, see Section 6 for even k ≥ 2 and trivial Nebentypus).
+Theorem 1.3. Let g ∈ Sk (Γ0 (N), χ) be a normalized newform with complex multipli-
+cation. If f ∈ H2−k (Γ0 (N), χ) is good for g, then all coefficients of f + are in Fg (ζM ),
+where ζM := e2πi/M , and M = ND where D is the discriminant of the field of complex
+multiplication.
+4                   JAN H. BRUINIER, KEN ONO AND ROBERT C. RHOADES
+
+Remark 3.
+i) The rationality of Q+ (−1, 4, 9; z) in (1.8) is an example of Theorem 1.3. In this case
+Q(−1, 4, 9; z) is good for the unique CM newform in S4 (Γ0 (9)). We shall discuss this
+example in detail in the last section.
+ii) The field Fg in Theorem 1.3 is explicit (see the discussion in Section 5).
+iii) Suppose that g ∈ Sk (Γ0 (N), χ) is a normalized newform. If f ∈ H2−k (Γ0 (N), χ) is
+good for g, then the proof of Theorem 1.3 implies that all of the coefficients of f + belong
+to Fg (c+
+        f (1)). It would be interesting to describe this field in terms of intrinsic invariants
+associated to g.
+iv) It is interesting to compare Theorem 1.3, which concerns integer weights 2 − k, with
+the results in [8] which pertain to weight 1/2 harmonic weak Maass forms. The first two
+authors proved that if g is a newform of weight 3/2 which is orthogonal to all elementary
+theta series, and if f is defined analogously as above, then
+                        #{n ∈ N : c+
+                                   f (n) transcendental} = +∞,
+                              #{n ∈ N : c+
+                                         f (n) algebraic} = +∞.
+
+In fact, estimates are obtained for these quantities. These results are related to the
+vanishing of derivatives of quadratic twists of weight 2 modular L-functions at s = 1.
+v) It would be interesting to find an explicit construction of good harmonic weak Maass
+forms for CM newforms. Perhaps there is a construction which is analogous to the case
+of the mock theta functions [2, 3, 5, 20, 21].
+vi) In the examples we know, it turns out that the coefficients of f + are actually contained
+in Fg . It seems natural to ask whether this is true in general.
+   The proof of Theorem 1.3 relies on the fact that some Hecke eigenvalues of g vanish.
+A simple generalization of the proof of Theorem 1.3 can be used to detect the vanishing
+of the Fourier coefficients of a newform.
+Theorem 1.4. Suppose that g = ∞                  n
+                                    P
+                                      n=1 cg (n)q ∈ Sk (Γ0 (N), χ) is a normalized newform,
+and suppose that f ∈ H2−k (Γ0 (N), χ) is good for g. If p ∤ N is a prime for which cg (p) = 0,
+then c+
+      f (n) is algebraic when ordp (n) is odd.
+
+Remark 4. The proof of Theorem 1.4 shows that the coefficients of f + are in an explicit
+abelian extension of Fg when cg (p) = 0. It seems possible that the coefficients of f + are
+always in Fg when there are any vanishing Hecke eigenvalues. As the next example will
+show, this is the case when N = 1.
+Example. Here we consider Lehmer’s Conjecture on the nonvanishing of Ramanujan’s
+τ -function, where
+                                     X∞
+                              ∆(z) =     τ (n)q n .
+                                             n=1
+This example generalizes easily to all level 1 Hecke eigenforms.
+        HARMONIC WEAK MAASS FORMS AND THE VANISHING OF HECKE EIGENVALUES                    5
+
+  Although Theorem 1.4 relates Lehmer’s Conjecture to the alleged transcendence of the
+coefficients, say a∆ (n), of Q+ (−1, 12, 1; z), it turns out that much more is true. Lehmer’s
+Conjecture is implied by the mere irrationality of any these coefficients.
+  We make use of explicit formulas. Using the classical Eisenstein series E4 and E6 and
+the classical j-function j(z), we define polynomials Jm (x) by
+             ∞
+             X                    E4 (z)2 E6 (z)      1
+(1.9)              Jm (x)q m :=                  ·          = 1 + (x − 744)q + · · · .
+             m=0
+                                      ∆(z)         j(z) − x
+For each m we then let jm (z) = Jm (j(z)). If p is prime, then define the modular functions
+                                                            p
+                            24         11
+                                                           X
+(1.10)             Ap (z) :=    (1 + p    ) + jp (z) − 264     σ9 (m)jp−m (z),
+                           B12                             m=1
+                                                                   
+                                                        24
+(1.11)                  Bp (z) := −τ (p) −264 +             + j1 (z) .
+                                                        B12
+Here B12 = −691/2730 is the 12th Bernoulli number, and σ9 (n) := d|n d9 . Using the
+                                                                            P
+
+principal part of Q(−1, 12, 1; z) combined with the fact that ∆(z) is an eigenform of the
+Hecke algebra, one can show (for example, see [14]), for primes p, that
+               ∞
+               X                                              Ap (z) + Bp (z)
+                   p11 a∆ (pn) − τ (p)a∆ (n) + a∆ (n/p) q n =
+                                                       
+                                                                              .
+              n=−p
+                                                               E  4 (z)E6 (z)
+
+These weight −10 modular forms have integer coefficients. Now suppose that τ (p) = 0
+for a prime p. Then a∆ (np) is rational for every n coprime to p. Under this assumption,
+the proof of Theorem 1.3 then implies that a∆ (n) is rational when ordp (n) is odd.
+  Due to Theorems 1.3 and 1.4, it is natural to consider the arithmetic properties of
+harmonic weak Maass forms. For brevity, we will be content with the following result for
+certain forms with prime power level and trivial Nebentypus.
+Theorem 1.5. Suppose that p is prime, and that f (z) ∈ H2−k (Γ0 (pt )) is good for a
+newform g ∈ Sk (Γ0 (pt )) with complex multiplication. If we let
+                       a := min{d ≥ 0 : c+   d
+                                         f (p n) = 0 for all n < 0},
+
+then the following are true:
+1) The formal q-series
+                                            ∞
+                                            X
+                                      ∗
+                                     f :=         c+   a
+                                                   f (p n)n
+                                                           k−1 n
+                                                              q
+                                            n=0
+is a p-adic modular form on SL2 (Z) of weight k.
+2) For every positive integer b, we have that
+                        #{n ≤ X : c+   a
+                                   f (p n)n
+                                           k−1
+                                               6≡ 0 (mod pb )}
+                    lim                                        = 0.
+                   X→+∞                  X
+6                   JAN H. BRUINIER, KEN ONO AND ROBERT C. RHOADES
+
+3) If p ≤ 7, or p ≥ 11 and k ≡ 4, 6, 8, 10, 14 (mod p − 1), then as p-adic numbers we have
+
+                                  lim c+ (pa+n )pn(k−1) = 0.
+                                 n→+∞ f
+
+
+Remark 5. Theorem 1.5 (2) says that “almost every” c+             a                      b
+                                                             f (p n) is a multiple of p . Theo-
+rem 1.5 (3) is not a trivial statement since the coefficients c+
+                                                               f (p
+                                                                    a+n
+                                                                        ) tend to have unbounded
+denominators involving increasing powers of p.
+
+  In Section 2 we recall definitions and facts about harmonic weak Maass forms and
+their behavior under certain differential operators. In Section 3 we prove Theorem 1.1. In
+Section 4 we recall facts about the regularized inner product, which generalizes Petersson’s
+inner product, and we prove Theorem 1.2. In Section 5 we prove Theorems 1.3, 1.4 and
+1.5, and in Section 6 we illustrate Theorems 1.1 and 1.2 using Poincaré series. In the last
+section, we examine example (1.8) in the context of all of the results above.
+
+
+                                   Acknowledgements
+    The authors thank the referee for several helpful suggestions and corrections.
+
+
+                           2. Harmonic weak Maass forms
+   Here we recall definitions and facts about harmonic weak Maass forms. Throughout,
+let z = x + iy ∈ H, the upper-half of the complex plane, with x, y ∈ R. Also, throughout
+suppose that k ∈ N. We define the weight k hyperbolic Laplacian by
+                                   2
+                                           ∂2
+                                                               
+                                2   ∂                    ∂    ∂
+(2.1)                 ∆k := −y          +       + iky      +i      .
+                                   ∂x2 ∂y 2             ∂x    ∂y
+
+Suppose that χ is a Dirichlet character modulo N. Then a harmonic weak Maass form
+of weight k on Γ0 (N) with Nebentypus χ is any smooth function on H satisfying:
+                                                  
+            az+b
+                               k              a b
+     (i) f cz+d = χ(d)(cz + d) f (z) for all         ∈ Γ0 (N);
+                                               c d
+    (ii) ∆k f = 0;                    P       +    n       −1
+   (iii) There is a polynomial Pf =     n≤0 cf (n)q ∈ C[q ] such that f (z) − Pf (z) =
+         O(e−εy ) as y → ∞ for some ε > 0. Analogous conditions are required at all cusps.
+ The polynomial Pf ∈ C[q −1 ] is called the principal part of f at the corresponding cusp.
+We denote the vector space of these harmonic weak Maass forms by Hk (Γ0 (N), χ)
+
+Remark 6. Note that our definition slightly differs from the one of [7], since we assume
+that the singularities of f at the cusps are supported on the holomorphic parts of the
+corresponding Fourier expansions. This space is denoted by Hk+ in [7].
+        HARMONIC WEAK MAASS FORMS AND THE VANISHING OF HECKE EIGENVALUES                   7
+
+   Recall the Maass raising and lowering operators (see [7, 9]) Rk and Lk on functions
+f : H → C which are defined by
+                                                         
+                              ∂        −1        ∂     ∂
+                      Rk = 2i + ky = i              −i      + ky −1,
+                              ∂z                 ∂x    ∂y
+                                                         
+                                 2 ∂         2    ∂     ∂
+                      Lk = −2iy        = −iy        +i      .
+                                  ∂ z̄           ∂x    ∂y
+With respect to the Petersson slash operator (see (6.2)), these operators satisfy the inter-
+twining properties
+                                   Rk (f |k γ) = (Rk f ) |k+2 γ,
+                                    Lk (f |k γ) = (Lk f ) |k−2 γ,
+for any γ ∈ SL2 (R). The Laplacian ∆k can be expressed in terms of Rk and Lk by
+(2.2)                          − ∆k = Lk+2 Rk + k = Rk−2 Lk .
+If f is an eigenfunction of ∆k satisfying ∆k f = λf , then
+(2.3)                              ∆k+2 Rk f = (λ + k)Rk f,
+(2.4)                              ∆k−2 Lk f = (λ − k + 2)Lk f.
+For any positive integer n we put
+                             Rkn := Rk+2(n−1) ◦ · · · ◦ Rk+2 ◦ Rk .
+We also let Rk0 be the identity. The differential operator
+                                               1 d     d
+                                       D :=          =q .
+                                              2πi dz   dq
+satisfies the following relation
+                                       Rk = −4πD + k/y.
+The next lemma is often referred to as Bol’s identity.
+Lemma 2.1. Assuming the notation and hypotheses above, we have
+                                        1
+                            D k−1 =          Rk−1 .
+                                    (−4π)k−1 2−k
+Proof. This is a special case of the identity (4.15) in [12].                             
+
+                               3. Proof of Theorem 1.1
+  By Lemma 2.1, we see that D k−1 defines a linear map from
+                         D k−1 : M2−k
+                                  !
+                                      (Γ0 (N), χ) −→ Mk! (Γ0 (N), χ).
+Theorem 1.1 asserts that this map may be extended to harmonic weak Maass forms.
+Moreover, the theorem provides a simple description of the images.
+8                    JAN H. BRUINIER, KEN ONO AND ROBERT C. RHOADES
+
+Proof of Theorem 1.1. Suppose that k ≥ 2, and that f ∈ H2−k (Γ0 (N), χ). In view of
+Lemma 2.1, it is clear that D k−1 f has the transformation behavior of a modular form of
+weight k.
+  We now show that Lk D k−1 f = 0. This implies that D k−1f is holomorphic on H. By
+                                          k−1
+Lemma 2.1, it suffices to show that Lk R2−k   f = 0. Since ∆2−k f = 0, it follows from (2.3)
+by induction that
+                                      k−2               k−2
+                               ∆k−2 R2−k  f = (2 − k)R2−k   f.
+Using (2.2), we obtain
+                   k−1                k−2                       k−2
+               Lk R2−k f = (Lk Rk−2 )R2−k f = (−∆k−2 − (k − 2))R2−k f = 0.
+
+  Finally, the growth behavior of f at the cusps implies that D k−1 f is meromorphic at
+the cusps. Therefore, D k−1 indeed extends to H2−k (Γ0 (N), χ).
+  To complete the proof, we compute the Fourier expansion of D k−1 f . Assuming the
+notation in (1.2), a straightforward calculation gives
+               X                                                      X
+   k−2
+ R2−k  f (z) =      c+
+                     f (n)Γ(k  − 1, 4πny)(−y) 2−k 2πinz̄
+                                                 e       + (k − 2)! 2
+                                                                        c−
+                                                                         f (n)(−y)
+                                                                                   2−k 2πinz̄
+                                                                                      e       .
+              n≫−∞                                                      n<0
+
+           k−1
+Moreover, R2−k f has the Fourier expansion
+                                      X
+                          k−1
+                         R2−k f (z) =      c+
+                                            f (n)(−4πn)
+                                                        k−1 n
+                                                           q .
+                                        n≫−∞
+
+In particular, we have
+                                                 X
+                          D k−1f = D k−1 f + =          c+
+                                                         f (n)n
+                                                               k−1 n
+                                                                  q .
+                                                 n≫−∞
+
+The first two formulas follow from the Fourier expansion of f and the differential equations
+       k−2              k−2           k−1
+∆k−2 R2−k  f = (2 − k)R2−k  f and ∆k R2−k f = 0. The third formula is a consequence of the
+second and Lemma 2.1.                                                                     
+                                 k−2
+Remark 7. Note that g := y k−2R2−k   f is a harmonic weak Maass form of weight 2−k in the
+                                                                                     k−1
+(slightly more general) sense of Section 3 of [7]. Moreover, ξ2−k g = y −k L2−k g = R2−k f.
+This can also be used to compute the Fourier expansions in the proof of Theorem 1.1.
+
+     4. The regularized inner product and the proof of Theorem 1.2
+   Here we recall the regularized inner product, and we prove Theorem 1.2. We consider
+slightly more general situations, with earlier definitions modified in the obvious way.
+   Let k be an integer, and let Γ be a subgroup of finite index of Γ(1) = SL2 (Z). We
+define a regularized inner product of g ∈ Mk (Γ) and h ∈ Mk! (Γ) as follows. For T > 0 we
+denote by FT (Γ(1)) the truncated fundamental domain
+                   FT (Γ(1)) = {z ∈ H : |x| ≤ 1/2, |z| ≥ 1, and y ≤ T }
+      HARMONIC WEAK MAASS FORMS AND THE VANISHING OF HECKE EIGENVALUES                       9
+
+for Γ(1). Moreover, we define the truncated fundamental domain for Γ by
+                                         [
+                              FT (Γ) =         γFT (Γ(1)).
+                                             γ∈Γ\Γ(1)
+
+Following [1], we define the regularized inner product (g, h)reg as the constant term in the
+Laurent expansion at s = 0 of the meromorphic continuation in s of the function
+                              1                               dx dy
+                                          Z
+                                      lim        g(z)h(z)y k−s 2 .
+                          [Γ(1) : Γ] T →∞ FT (Γ)               y
+
+Using the same argument as in Section 6 of [1], it can be shown that (g, h)reg exists for any
+g ∈ Mk (Γ) and h ∈ Mk! (Γ). (It also exists for g ∈ Mk (Γ) and h ∈ Hk (Γ). But note that
+it does not exist in general if g and h are both weakly holomorphic with honest poles at
+the cusps.) It is clear, for cusp forms g and h, that the regularized inner product reduces
+to the classical Petersson inner product (g, h).
+Remark 8. If h ∈ Mk! (Γ) has vanishing constant term at every cusp of Γ, then
+                                  1                              dx dy
+                                              Z
+                         reg
+                  (g, h) =                lim        g(z)h(z)y k       .
+                              [Γ(1) : Γ] T →∞ FT (Γ)              y2
+  For the rest of this section we assume that k ≥ 2.
+Theorem 4.1. If g ∈ Mk (Γ) and f ∈ H2−k (Γ), then
+
+                       k−1              (−1)k         X
+                  (g, R2−k f )reg =                              wκ · cg (0, κ)c+
+                                                                                f (0, κ),
+                                      [Γ(1) : Γ]
+                                                   κ∈Γ\P 1 (Q)
+
+where cg (0, κ) (resp. c+
+                        f (0, κ)) denotes the constant term of the Fourier expansion of g
+(resp. f ) at the cusp κ ∈ P 1 (Q), and wκ is the width of the cusp κ.
+Proof. For simplicity, we carry out the proof only in the special case Γ = Γ(1). The general
+                                                      k−2                 k−1
+case is completely analogous. We put H := y k−2R2−k       f . Then h := R2−k  f = y −k L2−k H.
+Since the constant terms at all cusps of h vanish, we have
+                                                                dx dy
+                                             Z
+                            k−1    reg
+                       (g, R2−k f ) = lim           g(z)h(z)y k
+                                         T →∞ F (Γ)              y2
+                                             Z T
+                                                                  dx dy
+                                       = lim        g(z)(L2−k H) 2
+                                         T →∞ F (Γ)                 y
+                                             Z T
+                                                          ∂
+                                       = lim        g(z)( H) dz dz̄
+                                         T →∞ F (Γ)       ∂ z̄
+                                               ZT
+                                       = − lim         ¯ ∧ g(z) dz.
+                                                      (∂H)
+                                            T →∞      FT (Γ)
+10                   JAN H. BRUINIER, KEN ONO AND ROBERT C. RHOADES
+
+Using the holomorphy of g, we obtain, by Stokes’ theorem, the expression
+                                         Z
+                      k−1    reg
+                 (g, R2−k f ) = − lim          d(H(z)g(z) dz)
+                                    T →∞ F (Γ)
+                                           T
+                                         Z
+                                 = − lim        H(z)g(z) dz
+                                     T →∞    ∂FT (Γ)
+                                          Z 1/2
+                                 = lim              H(x + iT )g(x + iT ) dx.
+                                   T →∞    x=−1/2
+
+The integral over x gives the constant term in the Fourier expansion of H(x+iT )g(x+iT ).
+It can be computed using the Fourier expansion
+                    X                                                   X
+    H(z) = (−1)k         c+f (n)Γ(k − 1, 4πny)e
+                                               −2πinz
+                                                      + (−1)k (k − 2)!2   c−
+                                                                           f (n)e
+                                                                                 −2πinz
+
+                    n≫−∞                                                  n<0
+
+of H (see the proof of Theorem 1.1) and the Fourier expansion of g. It turns out that
+under the limit T → ∞ only the contribution (−1)k cg (0)c+f (0) coming from the product
+of the individual constant terms survives. This concludes the proof.                 
+                                        k−1 reg
+Corollary 4.2. If g ∈ Sk (Γ), then (g, R2−k f ) = 0.
+Proof. This is a direct consequence of Theorem 4.1.                                      
+     The next corollary implies Theorem 1.2.
+Corollary 4.3. The image of the map D k−1 : H2−k (Γ) → Mk! (Γ) is given by those h ∈
+Mk! (Γ) which are orthogonal to cusp forms and whose constant term at any cusp of Γ
+vanishes.
+Proof. If f ∈ H2−k (Γ), it follows from Theorem 4.1 and Theorem 1.1 that D k−1f satisfies
+the stated conditions.
+  Conversely, assume that h ∈ Mk! (Γ) is orthogonal to cusp forms and has vanishing
+constant term at any cusp of Γ. According to Lemma 3.11 of [7], we may chose f ∈
+H2−k (Γ) such that the principal parts of D k−1 f and h at the cusps agree up to the
+constant terms. Since the constant terms of h and D k−1f vanish, they trivially agree as
+well. Consequently,
+                                     h − D k−1 f ∈ Sk (Γ).
+In view of Theorem 4.1 and the hypothesis on h, we find that h − D k−1 f is orthogonal to
+cusp forms. Hence it vanishes identically.                                             
+Remark 9. It suffices to specialize Γ = Γ1 (N) in the previous Corollary in order to derive
+Theorem 1.2.
+
+                       5. Proof of Theorems 1.3, 1.4, and 1.5
+  Here we prove Theorem 1.3 by combining facts about ξ2−k , with Hecke theory and the
+theory of complex multiplication. We first begin with an important proposition.
+        HARMONIC WEAK MAASS FORMS AND THE VANISHING OF HECKE EIGENVALUES                   11
+
+Proposition 5.1. Let g = ∞                n
+                               P
+                                 n=1 b(n)q ∈ Sk (Γ0 (N), χ) be a normalized newform with
+integer weight k ≥ 2, and let Fg be the number field obtained by adjoining the coefficients
+of g to Q. Then there is a harmonic weak Maass form f ∈ H2−k (Γ0 (N), χ) which satisfies:
+     (i) The principal part of f at the cusp ∞ belongs to Fg [q −1 ].
+    (ii) The principal parts of f at the other cusps of Γ0 (N) are constant.
+   (iii) We have that ξ2−k (f ) = kgk−2g.
+Proof. Let H2−k,∞(Γ0 (N), χ) be the subspace of those f ∈ H2−k (Γ0 (N), χ) whose principal
+parts at the cusps other than ∞ are constant. Note that
+                                                         !
+                 H2−k (Γ0 (N), χ) = H2−k,∞(Γ0 (N), χ) + M2−k (Γ0 (N), χ).
+Arguing as in Section 3 of [7], the restriction of ξ2−k to H2−k,∞ (Γ0 (N), χ) defines a sur-
+jective map to Sk (Γ0 (N), χ). One now argues as in the proof of Lemma 7.3 of [8] using
+the pairing {g, f } = (g, ξ2−k (f )), where f ∈ H2−k,∞ (Γ0 (N), χ) and g ∈ Sk (Γ0 (N), χ). 
+Remark 10. The harmonic weak Maass form f satisfying (i)–(iii) above is unique up to
+                                                  !
+the addition of a weakly holomorphic form in M2−k   (Γ0 (N), χ) with coefficients in Fg and
+a pole possibly at infinity and constant principal part at all other cusps.
+   For completeness, here we briefly recall the notion of a newform with complex multi-
+plication (for example, see Chapter 12 of [11] or Section 1.2 of [13]).
+                                                                    √ Let D < 0 be the
+fundamental discriminant of an imaginary     quadratic field K = Q(   D). Let OK be the
+                                       D
+                                         
+ring of integers of K, and let χK := • be the usual Kronecker character associated to
+K. Let k ≥ 2, and let c be a Hecke character of K with exponent k − 1 and conductor fc ,
+a non-zero ideal of OK . By definition, this means that
+                                      c : I(fc ) −→ C×
+is a homomorphism, where I(fc ) denotes the group of fractional ideals of K prime to fc .
+In particular, this means that
+                                     c(αOK ) = αk−1
+for α ∈ K × for which α ≡ 1 mod× fc . To c we naturally associate a Dirichlet character ωc
+defined, for every integer n coprime to fc , by
+                                                 c(nOK )
+                                     ωc (n) :=           .
+                                                   nk−1
+Given this data, we let
+                                               X
+(5.1)                            ΦK,c (z) :=         c(a)q N (a) ,
+                                                 a
+
+where a varies over the ideals of OK prime to fc , and where N(a) is the usual ideal norm.
+It is well known that ΦK,c (z) ∈ Sk (Γ0 (|D|·N(fc )), χK ·ωc ) is a normalized newform. These
+are newforms with complex multiplication. By construction, if we let
+                                               ∞
+                                               X
+                                    ΦK,c (z) =      b(n)q n ,
+                                                 n=1
+12                 JAN H. BRUINIER, KEN ONO AND ROBERT C. RHOADES
+
+then
+(5.2)                       b(n) = 0 whenever χK (n) = −1.
+This follows since every prime p for which χK (p) = −1 is inert.
+Proof of Theorem 1.3. Suppose that f is good for a CM form g = ∞            n
+                                                                 P
+                                                                   n=1 b(n)q , and let
+D = Dg√be the fundamental discriminant of the associated imaginary quadratic field
+K = Q( D). By (1.3) (correcting a typographical error in Lemma 3.1 of [7]), we then
+have that
+                                                 ∞
+                                                 X
+                                  −2         k−1
+                   ξ2−k (f ) = kgk g = −(4π)        c−
+                                                     f (−n)n
+                                                            k−1 n
+                                                               q .
+                                                         n=1
+
+Since g has complex multiplication, (5.2) implies that c−
+                                                        f (n) = 0 when χK (−n) = −1.
+Because D < 0, this means that
+(5.3)                          c−
+                                f (n) = 0 when χK (n) = 1.
+
+  Let M = ND. We write χ0 for the trivial character modulo |D|. Since D | N, a
+standard argument shows that the sum of character twists
+                                     u := f ⊗ χ0 + f ⊗ χK
+is in H2−k (Γ0 (M), χ). The Fourier expansion of u = u+ + u− is given by
+                                    X
+                         u+ (z) = 2      c+     n
+                                          f (n)q ,
+                                      n≫−∞
+                                     χK (n)=1
+                                       X
+                        u− (z) = 2              c−                     n
+                                                 f (n)Γ(k − 1, 4π|n|y)q .
+                                       n<0
+                                     χK (n)=1
+
+Consequently, by (5.3), the non-holomorphic part u− vanishes, and u is actually weakly
+holomorphic.
+   We now claim that for any integer b, f (z + b/D) has principal parts at all cusps in
+Fg (ζM )[q −1 ]. To see this, we let γ ∈ Γ(1) and consider the cusp γ∞. There exists a
+γ̃ ∈ Γ(1) and α, β, δ ∈ Z such that
+                                                     
+                                    D b             α β
+                                           γ = γ̃         .
+                                     0 D            0 δ
+Hence, the Fourier expansion of f (z + b/D) at the cusp γ∞ is given by
+                                                   
+                                               α β
+                                     f | γ̃ |         .
+                                                0 δ
+By the assumption of f , it is holomorphic at the cusp ∞, unless γ̃ ∈ Γ0 (N), in which case
+it is equal to                                  
+                                            α β
+                                       f|          .
+                                            0 δ
+      HARMONIC WEAK MAASS FORMS AND THE VANISHING OF HECKE EIGENVALUES                        13
+
+Since δ | D 2 | M, the principal part at ∞ of this modular form is contained in Fg (ζM )[q −1 ],
+proving the claim. This implies that the twists f ⊗ χ0 , f ⊗ χD , have principal parts at all
+cusps in Fg (ζM )[q −1 ]. Therefore, the same is true for u.
+   Now we recall the fact that the action of Aut(C/Q(ζN )) commutes with the action
+of SL2 (Z) on modular functions for Γ(N) (for example, see Theorem 6.6 in Chapter
+6.2 and the diagram before Remark 6.7 in Shimura’s book [19]). Using the action of
+Aut(C/Fg (ζM )) on weakly holomorphic modular forms, we see that uσ has the same
+properties for any σ ∈ Aut(C/Fg (ζM )). Moreover, uσ has the same principal parts as u
+at all cusps. Hence the difference u − uσ is a holomorphic modular form which vanishes
+at the cusp ∞. Since 2 − k ≤ 0, this implies that u = uσ . Consequently, u is defined over
+Fg (ζM ). So for all n ∈ Z with χK (n) = 1, we have that c+  f (n) ∈ Fg (ζM ). In particular,
+ +
+cf (1) ∈ Fg (ζM ).
+   We now use the Hecke action on f and g. Let T (m) be the m-th Hecke operator for
+Γ0 (N). Using the same argument as in Lemma 7.4 of [8], we have that
+                              f |2−k T (m) = m1−k b(m)f + f ′ ,
+where f ′ ∈ M2−k
+              !
+                 (Γ0 (N), χ) is a weakly holomorphic form with coefficients in Fg . In view
+of the formula for the action of the Hecke operators on the Fourier expansion, we obtain
+for any prime p that
+                   c+
+                    f (pn) + χ(p)p
+                                   1−k +
+                                      cf (n/p) = p1−k b(p)c+        +
+                                                           f (n) + cf ′ (n),
+
+where c+                                                                         +
+        f ′ (n) ∈ Fg . Hence an inductive argument shows that all coefficients cf (n) are
+contained in the extension Fg (c+f (1)). This concludes the proof of the theorem since we
+                                +
+have already established that cf (1) is in Fg (ζM ).                                    
+   The proof of Theorem 1.4 is similar to the proof of Theorem 1.3, and so we give only
+a sketch of the set-up.
+Sketch proof of Theorem 1.4. If p ∤ N is a prime, then for every positive integer m we
+have that
+                        cg (p)cg (pm ) = cg (pm+1 ) + χ(p)pk−1 cg (pm−1 ).
+Therefore, if p ∤ N is a prime for which cg (p) = 0, then we have that
+                               cg (pm+1 ) = −χ(p)pk−1 cg (pm−1 ),
+which in turn implies that
+                                                    m2
+                                         −χ(p)pk−1          if m is even,
+                                    
+                       cg (pm ) =
+                                    0                      otherwise.
+Therefore, by arguing with the usual U(p), V (p), U(p2 ) and V (p2 ) operators, we can obtain
+a harmonic weak Maass form whose Fourier coefficients are supported on terms whose
+exponents n have the property that p exactly divides n. By the multiplicativity of the
+Fourier coefficients of newforms, it then follows by the observation above that the non-
+holomorphic part of this form is identically zero. In other words, this particular harmonic
+14                 JAN H. BRUINIER, KEN ONO AND ROBERT C. RHOADES
+
+weak Maass form is a weakly holomorphic modular form with suitable principal parts at
+cusps. The proof now follows mutatis mutandis as in the proof of Theorem 1.3.      
+5.1. Proof of Theorem 1.5. Theorem 1.5 follows easily from the seminal work of Serre
+[17, 18] on p-adic modular forms. We now apply his works to prove the theorem.
+  By Theorem 1.1, we have that
+                                   X
+                                       c+
+                                        f (n)n
+                                              k−1 n
+                                                 q
+                                       n≫−∞
+
+is a weight k weakly holomorphic modular form on Γ0 (pt ) with rational coefficients. By
+standard facts involving the U(p)-operator
+                          X                    X
+                               a(n)q n | U(p) :=   a(np)q n ,
+the integer a has the property that
+                                           ∞
+                                           X
+                                 ∗
+(5.4)                           f (z) :=         c+   a
+                                                  f (p n)n
+                                                          k−1 n
+                                                             q
+                                           n=0
+                                                               ∗
+is a weight k weakly holomorphic modular form on Γ0 (pt ), where t∗ = 1 if t = 0, and is
+t otherwise. This modular form has trivial principal part at the cusp infinity. Therefore,
+we may apply a theorem of Serre (see Th. 5.4 of [18]), and the conclusion is that f ∗ (z) is
+a p-adic modular form on SL2 (Z) of weight k. This proves (1).
+   Claim (2) follows from the definition of a p-adic modular form. Indeed, p-adic mod-
+ular forms are p-adic limits of the Fourier expansions of classical holomorphic modular
+forms, and these forms, by a theorem of Serre, have the property that almost all of their
+coefficients are multiples of any fixed power of p (see Th. 4.7 of [18]). This implies (2).
+   Claim (3) is a consequence of the fact that the U(p)-operator acts locally nilpotently
+on certain p-adic modular forms. In this situation, Serre proved that the constant term of
+a p-adic modular form is a limit, in the p-adic sense, of certain Fourier coefficients. This
+result (see Th. 7 and the following remark in [17]) implies (3).
+               6. Poincaré series and Theorems 1.1, 1.2, and 1.3
+  Here we consider natural examples of the results of both Theorems 1.1, 1.2 and 1.3.
+Our results depend on the explicit Fourier expansions of two classes of Poincaré series (for
+example, see [4, 6, 11]).
+6.1. Definitions and Fourier expansions. For A = ( ac db ) ∈ SL2 (Z), define j(A, z) by
+(6.1)                                 j(A, z) := (cz + d).
+As usual, for such A and functions f : H → C, we let
+(6.2)                         (f |k A)(z) := j(A, z)−k f (Az).
+Let m be an integer, and let ϕm : R+ → C be a function which satisfies ϕm (y) = O(y α),
+as y → 0, for some α ∈ R. If e(α) := e2πiα as before, then let
+(6.3)                                ϕ∗m (z) := ϕm (y)e(mx).
+        HARMONIC WEAK MAASS FORMS AND THE VANISHING OF HECKE EIGENVALUES                  15
+
+Such functions are fixed by the translations Γ∞ := {± ( 10 n1 ) : n ∈ Z}.
+  Given this data, for integers N ≥ 1, we define the generic Poincaré series
+                                              X
+(6.4)                  P(m, k, ϕm , N; z) :=         (ϕ∗m |k A)(z).
+                                               A∈Γ∞ \Γ0 (N )
+
+We shall be interested in two families of such series.
+  The first family is classical. We let
+                                  X∞
+                               m
+(6.5)       P (m, k, N; z) = q +       a(m, k, N; n)q n := P(m, k, e(imy), N; z).
+                                   n=1
+These series are modular, and their Fourier expansions are given in terms of the I-Bessel
+and J-Bessel functions, and the Kloosterman sums
+                                          X  mv + nv 
+(6.6)                      K(m, n, c) :=       e            .
+                                                     c
+                                             v(c)
+                                             ×
+
+
+Here v runs through the primitive residue classes modulo c, and vv ≡ 1 (mod c). The
+following is well known (for example, see [11, 15]).
+Proposition 6.1. If k ∈ 2N, and m, N ≥ 1, then the following are true.
+1) We have that P (m, k, N; z) ∈ Sk (Γ0 (N)), and for positive integers n we have
+                                n  k−1                                  √     
+                             k        2
+                                              X       K(m, n, c)          4π mn
+     a(m, k, N; n) = 2π(−1) 2            ·                        · Jk−1           .
+                                m             c>0
+                                                           c                 c
+                                             c≡0     (mod N )
+
+2) We have that P (−m, k, N; z) ∈ Mk! (Γ0 (N)), and for positive integers n we have
+                                                                            p      !
+                           k
+                              n  k−1
+                                    2
+                                            X       K(−m, n, c)           4π |mn|
+   a(−m, k, N; n) = 2π(−1) 2           ·                          · Ik−1             .
+                               m            c>0
+                                                          c                   c
+                                            c≡0     (mod N )
+
+   Now we recall the second family of Poincaré series, the Maass-Poincaré series of Hejhal
+(see [10]). Let Mν, µ (z) be the usual M-Whittaker function. For complex s, let
+                                              k
+                             Ms (y) := |y|− 2 M k sgn(y), s− 1 (|y|),
+                                                     2          2
+
+and for m ≥ 1 let ϕ−m (z) := M1− k (−4πmy). For k ∈ 2N and integers N ≥ 1, we let
+                                    2
+
+                                     1
+(6.7)             Q(−m, k, N; z) :=       · P(−m, 2 − k, ϕ−m , N; z).
+                                 (k − 1)!
+To determine the Fourier expansions of these series, we also require the incomplete
+Gamma-function Γ(a, x). We have the following proposition (for example, see [4, 6, 10]).
+Proposition 6.2. If k ∈ 2N, and m, N ≥ 1, then Q(−m, k, N; z) ∈ H2−k (Γ0 (N)), and
+has a Fourier expansion of the form
+                  Q(−m, k, N; z) = Q+ (−m, k, N; z) + Q− (−m, k, N; z),
+16                 JAN H. BRUINIER, KEN ONO AND ROBERT C. RHOADES
+
+where
+                            Γ(k − 1, 4πmy) −m X
+     Q− (−m, k, N; z) = −                 q +     b(−m, k, N; n) · Γ(k − 1, 4π|n|y)q n,
+                               (k − 2)!       n<0
+
+and where for negative integers n we have
+                                    k                                                                     p      !
+                        2π(−1) 2 m k−1
+                                     2
+                                                          X            K(−m, n, c)                   4π     |mn|
+     b(−m, k, N; n) = −          ·                                                 · Jk−1                          ,
+                        (k − 2)!   n                       c>0
+                                                                          c                                c
+                                                   c≡0      (mod N )
+
+and
+                                                                ∞
+                                                                X
+                       +                            −m
+                     Q (−m, k, N; z) = q                   +          b(−m, k, N; n)q n ,
+                                                                n=0
+where
+                                                     k
+                                 2k π k (−1) 2 mk−1                         X            K(−m, 0, c)
+              b(−m, k, N; 0) = −                    ·                                                ,
+                                       (k − 1)!                              c>0
+                                                                                            ck
+                                                                      c≡0     (mod N )
+
+and where for positive integers n we have
+                                                                                                          p      !
+                                k
+                                              X            m  k−1
+                                                                 2  K(−m, n, c)                      4π     |mn|
+     b(−m, k, N; n) = −2π(−1) · 2                                                           · Ik−1                 .
+                                              c>0
+                                                            n                    c                         c
+                                        c≡0    (mod N )
+
+Remark 11. Obviously, we have that Q+ (−m, k, N; z) (resp. Q− (−m, k, N; z)) is the
+holomorphic part (resp. non-holomorphic part) of the weak Maass form Q(−m, k, N; z).
+Remark 12. Propositions 6.1 and 6.2 are well known for 2 < k ∈ 2N. That they hold for
+k = 2 follows by arguing by analytic continuation in k with Fourier expansions.
+6.2. Poincaré series in the context of Theorems 1.1 and 1.2. If k ≥ 2 is even, and
+m, N ≥ 1, then Theorem 1.1, and Propositions 6.1 and 6.2, imply that
+ D k−1Q(−m, k, N; z) = D k−1Q+ (−m, k, N; z) =
+                                        ∞                                                                      p       !
+                                k
+                                        X         X                    k−1   K(−m, n, c)                  4π    |mn|
+     = (−m)k−1 q −m − 2π(−1) ·  2                              (mn)     2                · Ik−1
+                                        n=1       c>0
+                                                                                c                              c
+                                              c≡0 (mod N )
+
+     = −mk−1 P (−m, k, N; z).
+In other words, we have
+(6.8)                 D k−1Q(−m, k, N; z) = −mk−1 P (−m, k, N; z).
+By (1.3), we also have that
+                                           (4π)k−1mk−1
+                   ξ2−k (Q(−m, k, N; z)) =             · P (m, k, N; z).
+                                             (k − 2)!
+      HARMONIC WEAK MAASS FORMS AND THE VANISHING OF HECKE EIGENVALUES                          17
+
+For one dimensional spaces Sk (Γ0 (N)), say generated by a newform g, this last relation
+relates Maass-Poincaré series to newforms g. This follows from standard facts about
+Petersson inner products and Poincaré series (for example, see Chapter 3 of [11]).
+
+                                    7. A good example
+   Correspondence (6.8) can be useful for computing Fourier coefficients of holomorphic
+parts of certain harmonic weak Maass forms. Here we consider example (1.8) from the
+introduction. Using Proposition 6.2, we summed the first 150 terms to obtain
+   −D 3 Q(−1,4, 9; z) = P (−1, 4, 9; z)
+                        ∼ q −1 + 1.9999q 2 − 48.9999q 5 + 47.9999q 8 + 770.9999q 11 + · · · .
+On the other hand, we have the weight 4 weakly holomorphic modular form
+                              2
+                   η(z)3
+                 
+        m(z) :=           + 3 · η(3z)8 = q −1 + 2q 2 − 49q 5 + 48q 8 + 771q 11 − · · · ,
+                   η(9z)3
+where η(z) := q 24 ∞
+                  1 Q
+                                 n
+                      n=1 (1 − q ) is Dedekind’s eta-function. These two modular forms
+are equal, and so the coefficients are obviously rational (in fact, integral). To deduce
+this, one may use the “circle method” to get asymptotics for the coefficients of m(z) (for
+example, see the detailed discussion in [16]). The circle method gives the same asymptotic
+expressions for the coefficients of m(z) and P (−1, 4, 9; z). This follows from the fact that
+they have the same principal parts at cusps. The circle method then shows that these
+approximations for the nth coefficients of m(z) and P (−1, 4, 9; z) agree up to a power of n.
+This follows from a standard calculation involving bounds for Kloosterman sums and the
+asymptotic properties of I-Bessel functions. Therefore, it follows that P (−1, 4, 9; z)−m(z)
+is a holomorphic modular form. This form vanishes at all cusps, and so it must be a cusp
+form. The space S4 (Γ0 (9)) is one dimensional, and is spanned by the CM form
+              g(z) = η(3z)8 = q − 8q 4 + 20q 7 − 70q 13 + 64q 16 + 56q 19 + · · · .
+The non-zero coefficients of this cusp form have exponents n in the arithmetic progression
+n ≡ 1 (mod 3). However, since K(−1, n, 9c) = 0 for integers n ≡ 1 (mod 3), Proposi-
+tion 6.1 (2) then implies that P (−1, 4, 9; z) − m(z) is identically zero. Combining these
+facts, we find that the coefficients of Q+ (−1, 4, 9; z) are rational, and its first few terms
+are
+                                       1       49 5      48 8     771 11
+              Q+ (−1, 4, 9; z) = q −1 − q 2 +     q −       q −        q +··· .
+                                       4      125       512      1331
+   In the context of Theorem 1.3, the algebraicity of Q+ (−1, 4, 9; z) follows from the
+fact that Q(−1, 4, 9; z) is good for the CM form g(z). To see this one observes that
+ξ−2 (Q(−1, 4, 9; z)) = kgk−2g. This follows from Petersson’s theory, combined with the
+fact that S4 (Γ0 (9)) is one dimensional, and is spanned by both g(z) and P (1, 4, 9; z).
+   Theorem 1.5 is also easily described in this example. We have that a = 1 in Theo-
+rem 1.5, and so the q-series f ∗ in Theorem 1.5 (1) is −m(z) |U(3). Theorem 1.5 (2) then
+implies that almost every coefficient of m(z) |U(3) is a multiple of any fixed power of 3.
+18                       JAN H. BRUINIER, KEN ONO AND ROBERT C. RHOADES
+
+Theorem 1.5 (3) follows trivially in this case since the coefficients of m(z) for exponents
+which are powers of 3 obviously vanish.
+
+
+
+                                               References
+      [1] R. Borcherds, Automorphic forms with singularities on Grassmannians, Invent. Math. 132 (1998),
+          pages 491–562.
+      [2] K. Bringmann and K. Ono, The f (q) mock theta function conjecture and partition ranks, Invent.
+          Math. 165 (2006), pages 243–266.
+      [3] K. Bringmann and K. Ono, Dyson’s ranks and Maass forms, Ann. of Math., in press.
+      [4] K. Bringmann and K. Ono, Lifting cusp forms to Maass forms with an application to partitions,
+          Proc. Natl. Acad. Sci., USA 104, No. 10 (2007), pages 3725-3731.
+      [5] K. Bringmann, K. Ono, and R. C. Rhoades, Eulerian series as modular forms, J. Amer. Math.
+          Soc., in press.
+      [6] J. H. Bruinier, Borcherds products on O(2, l) and Chern classes of Heegner divisors, Springer
+          Lecture Notes in Mathematics 1780, Springer-Verlag (2002).
+      [7] J. H. Bruinier and J. Funke, On two geometric theta lifts, Duke Math. J. 125 (2004), pages
+          45–90.
+      [8] J. H. Bruinier and K. Ono, Heegner divisors, L-functions, and harmonic weak Maass forms,
+          preprint.
+      [9] D. Bump, Automorphic forms and representations, Cambridge Univ. Press, Cambridge, 1997.
+     [10] D. A. Hejhal, The Selberg trace formula for P SL(2, R), Lect. Notes. in Math. 1001, Springer-
+          Verlag, Berlin, 1983.
+     [11] H. Iwaniec, Topics in the classical theory of automorphic forms, Grad. Studies in Math. 17, Amer.
+          Math. Soc., Providence, R.I., 1997.
+     [12] J. Lewis and D. Zagier, Period functions for Maass wave forms. I., Ann. Math. 153 (2001), pages
+          191-258.
+     [13] K. Ono, The web of modularity: arithmetic of the coefficients of modular forms and q-series,
+          Conference Board of the Mathematical Sciences 102, Amer. Math. Soc. (2004).
+     [14] K. Ono, A mock theta function for the Delta-function, Proceedings of the 2007 Integers Confer-
+          ence, to appear.
+     [15] H. Petersson, Über die Entwicklungskoeffizienten der automorphen Formen, Acta Math. 58
+          (1932), pages 169-215.
+     [16] H. Rademacher, Topics in analytic number theory, Springer-Verlag, New York, 1973.
+     [17] J.-P. Serre, Formes modulaires et fonctions zêta p-adiques, Springer Lect. Notes in Math. 350,
+          Springer-Verlag, Berlin, (1973), pages 191-268.
+     [18] J.-P. Serre, Divisibilité de certaines fonctions arithmétiques, L’Enseign. Math. 22 (1976), pages
+          227-260.
+     [19] G. Shimura, Introduction to the arithmetic theory of automorphic functions, Princeton Univ.
+          Press, Princeton, NJ, 1994.
+     [20] D. Zagier, Ramanujan’s mock theta functions and their applications [d’après Zwegers and
+          Bringmann-Ono], Sém. Bourbaki (2007), in press.
+     [21] S. P. Zwegers, Mock theta functions, Ph.D. Thesis, Universiteit Utrecht, 2002.
+
+
+
+  Fachbereich Mathematik, Technische Universität Darmstadt, Schlossgartenstrasse 7,
+D–64289 Darmstadt, Germany
+  E-mail address: bruinier@mathematik.tu-darmstadt.de
+   HARMONIC WEAK MAASS FORMS AND THE VANISHING OF HECKE EIGENVALUES           19
+
+Department of Mathematics, University of Wisconsin, Madison, Wisconsin 53706 USA
+E-mail address: ono@math.wisc.edu
+E-mail address: rhoades@math.wisc.edu
+

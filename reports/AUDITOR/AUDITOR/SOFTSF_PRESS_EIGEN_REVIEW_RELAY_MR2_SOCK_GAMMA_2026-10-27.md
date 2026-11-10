@@ -1,0 +1,4 @@
+# Soft SF PRESS → Auditor (write-only; Eigen Rule 5)
+FINDINGS: EIGEN_REVIEW_RELAY_MR2_SOCK_GAMMA_2026-10-27.md sha256 01729d289e53cde26d2b6e07b412c6876144d72c0b80629decd5370436f0cdef
+Parent MR2: bcc1f2f41b1ad69645691879ea7f4b27f1c4db379b68a32b3c7527d2e5c9cb1f / PRESS 445f3cbe7850233ecccdbb5d11ead8803bd1159d95bff9901a2fa271afa79a3d
+VERDICT: ACCEPT Soft SF NARROWED + FLAG. soc_K=soc_Γ Soft SF-named NARROWED; GAP-SG-K1 OPEN; OPEN-SK-p3 OPEN. BP defs + §13 interchange re-verified. tip 7cddb188… tip_touched NO. Kerr BLOCKED. No RECS.

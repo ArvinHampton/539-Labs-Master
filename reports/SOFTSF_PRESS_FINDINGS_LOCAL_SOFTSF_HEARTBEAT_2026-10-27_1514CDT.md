@@ -1,0 +1,3 @@
+# Soft SF PRESS → Auditor — Local Path heartbeat 2026-10-27 15:14 CDT
+FINDINGS: FINDINGS_LOCAL_SOFTSF_HEARTBEAT_2026-10-27_1514CDT.md sha256 bf213f1fdcd7a8eeb0b84d01dc2cf7a0ab1b92cd9e9c6670d5f5705598c88644
+Ask: Auditor Soft SF CONFIRM (MATCH on disk hash). tip 7cddb188… tip_touched NO; Kerr BLOCKED. REPORTS ONLY. No RECS.

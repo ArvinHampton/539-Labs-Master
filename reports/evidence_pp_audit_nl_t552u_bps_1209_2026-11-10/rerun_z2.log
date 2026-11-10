@@ -1,0 +1,12 @@
+[PASS] Z-N1 (k_S-k_x)/eps = -A_p + 5*phi_p
+    mu=e1: D'=-6*lam_p; margins (k_v-k_x)/eps: {'e2': -A_p + 6*lam_p + 2*phi_p, 'e3': -A_p + lam_p + 2*phi_p - w_p/2, 'e4': -A_p + lam_p + 2*phi_p - w_p/2, 'e5': -A_p + lam_p + 2*phi_p + w_p}
+    mu=e3: D'=4*lam_p + w_p; margins (k_v-k_x)/eps: {'e1': -A_p + lam_p + 2*phi_p - w_p/2, 'e2': -A_p + lam_p + 2*phi_p - w_p/2, 'e4': -A_p - 4*lam_p + 2*phi_p - w_p, 'e5': -A_p - 4*lam_p + 2*phi_p + w_p/2}
+    mu=e5: D'=4*lam_p - 2*w_p; margins (k_v-k_x)/eps: {'e1': -A_p + lam_p + 2*phi_p + w_p, 'e2': -A_p + lam_p + 2*phi_p + w_p, 'e3': -A_p - 4*lam_p + 2*phi_p + w_p/2, 'e4': -A_p - 4*lam_p + 2*phi_p + w_p/2}
+[PASS] Z-N2 axis-point margins equal the closed forms
+[PASS] Z-N3 m(e1;e2) + 2 m(e3;e4) + 2 m(e5;e1) = -5*A_p + 10*phi_p ; expand(comb - 5(2phi'-A'))==0
+[PASS] Z-N4a frozen-chart block at (chi,theta)=(pi/2,pi/2) is diagonal
+    residuals: [0, 0, 0]  G diag: [exp(6*lambda)*exp(-8*lambda/3 - 2*w/3), exp(-4*lambda + 2*w)*exp(-8*lambda/3 - 2*w/3), exp(-4*lambda - w)*exp(-8*lambda/3 - 2*w/3)]
+[PASS] Z-N4b frozen-chart margins at mu=e3 (chi,theta,psi) equal the axis forms (expand==0)
+[PASS] Z-N5 12 - 30/4 = 9/2 = 9/2 ; so -V <= (9/2)A'^2 - 30 lam'^2 - (3/2) w'^2, i.e. |V|/(12A'^2) <= 3/8
+[PASS] Z-N6 at zero scalar velocity comb = -5A' (>0 for A'<0)
+SUMMARY: 7 passed, 0 failed

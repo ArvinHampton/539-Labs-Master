@@ -1,0 +1,204 @@
+[
+  {
+    "tag": "BERNSTEIN_LAGARIAS",
+    "doi": "10.4153/CJM-1996-060-x",
+    "crossref_url": "https://api.crossref.org/works/10.4153/CJM-1996-060-x",
+    "status": 200,
+    "error": null,
+    "title": "The 3<i>x</i>+ 1 Conjugacy Map",
+    "container": "Canadian Journal of Mathematics",
+    "issued": {
+      "date-parts": [
+        [
+          1996,
+          12,
+          1
+        ]
+      ]
+    },
+    "sha256": "296a0b2db931ff49774b459c83dbaec1027d4fb63905e0a7a836e7d73f56c4ad"
+  },
+  {
+    "tag": "MATTHEWS_LEIGH",
+    "doi": "10.4064/cm-63-2-191-202",
+    "crossref_url": "https://api.crossref.org/works/10.4064/cm-63-2-191-202",
+    "status": 200,
+    "error": null,
+    "title": "Some Borel measures associated with the generalized Collatz mapping",
+    "container": "Colloquium Mathematicum",
+    "issued": {
+      "date-parts": [
+        [
+          1992
+        ]
+      ]
+    },
+    "sha256": "475e809c5f7a567b8c14500c62cf56feae1f45a37a618e5ab457e477ac55a58e"
+  },
+  {
+    "tag": "BFR_DOI",
+    "doi": "10.1007/s11139-012-9370-1",
+    "crossref_url": "https://api.crossref.org/works/10.1007/s11139-012-9370-1",
+    "status": 200,
+    "error": null,
+    "title": "Partial theta functions and mock modular forms as q-hypergeometric series",
+    "container": "The Ramanujan Journal",
+    "issued": {
+      "date-parts": [
+        [
+          2012,
+          6,
+          14
+        ]
+      ]
+    },
+    "sha256": "38439a7333f87e08298583576c2cb6103c1f55e1af16efdb32016509c6a7f078"
+  },
+  {
+    "tag": "QMOD_PARTIAL_DOI",
+    "doi": "10.1515/forum-2020-0201",
+    "crossref_url": "https://api.crossref.org/works/10.1515/forum-2020-0201",
+    "status": 200,
+    "error": null,
+    "title": "Quantum modularity of partial theta series with periodic coefficients",
+    "container": "Forum Mathematicum",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          1,
+          13
+        ]
+      ]
+    },
+    "sha256": "9d6d5c34708838f315d7d23f0a2a921f65749193597d073033b5afdb268e60c3"
+  },
+  {
+    "tag": "BF_DOI",
+    "doi": "10.1215/S0012-7094-04-12513-8",
+    "crossref_url": "https://api.crossref.org/works/10.1215/S0012-7094-04-12513-8",
+    "status": 200,
+    "error": null,
+    "title": "On two geometric theta lifts",
+    "container": "Duke Mathematical Journal",
+    "issued": {
+      "date-parts": [
+        [
+          2004,
+          10,
+          1
+        ]
+      ]
+    },
+    "sha256": "8959d18a7b33c41aaaa5975c81341c3d35786b3b16fc8f23a5229fbe177303ec"
+  },
+  {
+    "tag": "MATTHEWS_CM_PAGE",
+    "url": "https://www.impan.pl/en/publishing-house/journals-and-series/colloquium-mathematicum/all/63/2/86917/some-borel-measures-associated-with-the-generalized-collatz-mapping",
+    "status": 200,
+    "error": null,
+    "bytes": 45390,
+    "sha256": "537348a6569f0c94edbb9798756b8a96bb9b336131438f26aa84dc45ae878276",
+    "title": "When does the Kat\u011btov order imply that one ideal extends the other?All"
+  },
+  {
+    "tag": "MATTHEWS_IMPAN_PDF",
+    "url": "https://www.impan.pl/en/publishing-house/journals-and-series/colloquium-mathematicum/all/63/2/86917/pdf",
+    "status": 200,
+    "error": null,
+    "bytes": 45326,
+    "sha256": "7ef8a3ed6c36f7ad65936f9f81105bcee11681471cf70f1886461ee8b5075221",
+    "title": "When does the Kat\u011btov order imply that one ideal extends the other?All"
+  },
+  {
+    "tag": "MATTHEWS_NUMBERTHEORY_HOME",
+    "url": "https://www.numbertheory.org/php/collatz.html",
+    "status": null,
+    "error": "URLError(SSLError(1, '[SSL: UNSUPPORTED_PROTOCOL] unsupported protocol (_ssl.c:1029)'))",
+    "bytes": 0
+  },
+  {
+    "tag": "MATTHEWS_PAPER_ALT",
+    "url": "https://www.numbertheory.org/papers.html",
+    "status": null,
+    "error": "URLError(SSLError(1, '[SSL: UNSUPPORTED_PROTOCOL] unsupported protocol (_ssl.c:1029)'))",
+    "bytes": 0
+  },
+  {
+    "tag": "LAGARIAS_ORGANICS",
+    "url": "https://www.cecm.sfu.ca/organics/papers/lagarias/paper/html/node10.html",
+    "status": 200,
+    "error": null,
+    "bytes": 22317,
+    "sha256": "e7a2380a1f044bd3ca81f3f0dc7cca5df2a6f5800627c9cbc2693e5d80fd267a",
+    "title": "Connections of the problem to ergodic theory."
+  },
+  {
+    "tag": "S1b",
+    "url": "https://export.arxiv.org/api/query?search_query=all:%22Residual+Ternary+Algebra%22&start=0&max_results=5",
+    "status": 200,
+    "error": null,
+    "bytes": 735,
+    "sha256": "209968ed893c17b7c510832a334f380dc89ed5ce7c9fc9f09b0724f7730f3b87",
+    "title": "arXiv Query: search_query=all:\"Residual Ternary Algebra\"&amp;id_list=&amp;start=0&amp;max_results=5",
+    "total": 0,
+    "ids": []
+  },
+  {
+    "tag": "S1c",
+    "url": "https://export.arxiv.org/api/query?search_query=all:%22Bridge+Series%22+AND+all:orthant&start=0&max_results=5",
+    "status": 200,
+    "error": null,
+    "bytes": 745,
+    "sha256": "1778faf0c3581ac9cb048c85a788f7e1b8f136442500312bed7f7c7a5357b70e",
+    "title": "arXiv Query: search_query=all:\"Bridge Series\" AND all:orthant&amp;id_list=&amp;start=0&amp;max_results=5",
+    "total": 0,
+    "ids": []
+  },
+  {
+    "tag": "S1d",
+    "url": "https://export.arxiv.org/api/query?search_query=all:%22O_res%22+AND+all:modular&start=0&max_results=5",
+    "status": 200,
+    "error": null,
+    "bytes": 729,
+    "sha256": "431500316ec7c1d362c2e4b13dd452e49896708fcb7f1fa39b1c3e75b62923e0",
+    "title": "arXiv Query: search_query=all:\"O_res\" AND all:modular&amp;id_list=&amp;start=0&amp;max_results=5",
+    "total": 0,
+    "ids": []
+  },
+  {
+    "tag": "S6",
+    "url": "https://export.arxiv.org/api/query?search_query=au:Matthews+AND+all:Collatz+AND+all:measure&start=0&max_results=5",
+    "status": 200,
+    "error": null,
+    "bytes": 759,
+    "sha256": "18ffabf60293992236cb5ae74ca9285e3249171a21bfb07dca64c8823dd7bf06",
+    "title": "arXiv Query: search_query=au:Matthews AND all:Collatz AND all:measure&amp;id_list=&amp;start=0&amp;max_results=5",
+    "total": 0,
+    "ids": []
+  },
+  {
+    "tag": "S7",
+    "url": "https://export.arxiv.org/api/query?search_query=all:%22generalized+Collatz%22+AND+all:Haar&start=0&max_results=5",
+    "status": 200,
+    "error": null,
+    "bytes": 2663,
+    "sha256": "b3cc2bf1e3033aa9eec27ce8c1dad30685777261f61bdd7ba3b9bc6fe6299029",
+    "title": "arXiv Query: search_query=all:\"generalized Collatz\" AND all:Haar&amp;id_list=&amp;start=0&amp;max_results=5",
+    "total": 1,
+    "ids": [
+      "2002.12762v2"
+    ]
+  },
+  {
+    "tag": "S8",
+    "url": "https://export.arxiv.org/api/query?search_query=all:%22d-adic%22+AND+all:Collatz+AND+all:measure-preserving&start=0&max_results=5",
+    "status": 200,
+    "error": null,
+    "bytes": 787,
+    "sha256": "9d5454935f6081056e1dbdb7596cb0a4f9bb56eeaeff97b599c04d8d09197285",
+    "title": "arXiv Query: search_query=all:\"d-adic\" AND all:Collatz AND all:measure-preserving&amp;id_list=&amp;start=0&amp;max_results=5",
+    "total": 0,
+    "ids": []
+  }
+]

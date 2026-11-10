@@ -1,0 +1,1 @@
+2026-10-25 11:19:37 CDT: sha256sum -c Xi(35b186f9 OK); python3 scripts/diag.py > data/diag_out.json (mpmath dps30)

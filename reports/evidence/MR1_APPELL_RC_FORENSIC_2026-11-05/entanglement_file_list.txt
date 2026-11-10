@@ -1,0 +1,14 @@
+17-theorems-v5.pdf
+17-theorems-v5.txt
+MANIFEST.md
+SHA256SUMS
+access-receipts.json
+coverage.csv
+existing-corpus-17-theorems-v5.txt
+existing-corpus-CORPUS.md
+existing-corpus-INDEX.md
+existing-corpus-theorems-18-40.txt
+theorems-18-40-v1.pdf
+theorems-18-40-v1.txt
+zenodo-18442276.json
+zenodo-18509384.json

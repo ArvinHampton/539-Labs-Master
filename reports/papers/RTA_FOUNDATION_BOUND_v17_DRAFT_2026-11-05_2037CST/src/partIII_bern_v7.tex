@@ -1,0 +1,20 @@
+\subsection{The $S$-law of the Bernoulli-weighted Gauss sums}\label{sec:bern}
+For a companion and rational $x$ let $N$ be a common period of the phase, $f_r$ the phase on the class $r$ of $\alpha+\Z^2$ modulo $N$, and $\rho_2=\alpha_2+j$ the second
+coordinate of $r$. Put $C_{2}(x)=\sum_rf_rB_2(\rho_2/N)$, the last part of $A_2^{\rm corner}$, and
+\[ c_k=\frac1N\sum_{j=0}^{N-1}B_2\Big(\frac{\alpha_2+j}N\Big)\e\Big(-\frac{k(\alpha_2+j)}N\Big),\qquad \lambda_k=A^{-1}\begin{pmatrix}0\\k/N\end{pmatrix}\quad(k\in\Z/N). \]
+Since $B_2(u)=\sum_{n\ne0}\e(nu)/(2\pi^2n^2)$, one has $c_k=\sum_{n\equiv k\,(N),\,n\ne0}\e((n-k)\alpha_2/N)/(2\pi^2n^2)$.
+\begin{proposition}\label{prop:bern}
+$C_2(x)=N^2\sum_{k\bmod N}c_k\,G_{\alpha,\beta+\lambda_k}(x)$, and, with $N',c'_k,\lambda'_k$ formed at $-1/x$,
+\[ C_2(-1/x)=\frac{N'^2}{|x|\sqrt{35}}\sum_{k\bmod N'}c'_k\,\e\big(B(\alpha,\beta+\lambda'_k)\big)\sum_{p\in D}G_{\beta+\lambda'_k+p,\,-\alpha}(x). \]
+\end{proposition}
+\begin{proof}
+Discrete Fourier inversion on the $N$ values $\rho_2\in\alpha_2+\{0,\dots,N-1\}$ gives $B_2(\rho_2/N)=\sum_kc_k\e(k\rho_2/N)$; and $\e(k\nu_2/N)=\e(B(\nu,\lambda_k))$ because
+$A\lambda_k=(0,k/N)^{\mathsf T}$. The phase of $G_{\alpha,\beta+\lambda_k}$ is still $N$-periodic, since $B(u,\lambda_k)\in N^{-1}\Z$ for $u\in\Z^2$, so
+$\sum_rf_r\e(k\rho_2/N)=N^2G_{\alpha,\beta+\lambda_k}(x)$. The second identity is the first at $-1/x$ followed by Theorem~\ref{thm:STlaw}, which holds for all $\alpha,\beta\in\Q^2$.
+\end{proof}
+Thus $C_2$ satisfies an exact $S$-law, but into Gauss means whose characteristics $\beta+\lambda'_k+p$ lie outside the $105$ companions; the analogous statements hold for
+$\sum_rf_rB_2(\rho_1/N)$ and, with two-variable Fourier inversion, for $\sum_rf_r\bar B_1(\rho_1/N)\bar B_1(\rho_2/N)$.
+\begin{catbremark}
+Both identities of Proposition~\ref{prop:bern} were checked by direct Gauss means at $7$ points and $7$ companions to $2.7\cdot10^{-15}$. The $S$-images of the three parts of
+$A_2^{\rm corner}$ are not in the span of the $35$-component law vector: the joint ranks with $G$ are $90$, $72$, $90$ against $36$ (Appendix~\ref{app:catB}, item~\ref{catB:o20}).
+\end{catbremark}

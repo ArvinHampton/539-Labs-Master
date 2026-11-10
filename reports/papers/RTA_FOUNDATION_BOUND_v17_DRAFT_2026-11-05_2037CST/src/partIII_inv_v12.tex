@@ -1,0 +1,36 @@
+\subsection{An $x\leftrightarrow1/x$ symmetry of the fixed-$M$ residual}\label{sec:xinv}
+Let $\Pi$ be the monomial matrix with $G_{\alpha_j,-\beta_j}=\sum_k\Pi_{jk}G_{\alpha_k,\beta_k}$ given by the reduction rules, and put $k=35^{-1/2}$. Call a vector $Y(x)=(Y_j(x))_j$ a
+\emph{real-weight sum} if $Y_j(x)=\Lambda_{\alpha_j,P}(f)$, where $f(\nu)=\e(xQ(\nu)+B(\nu,\beta_j))$ on $\alpha_j+\Z^2$ and $\Lambda$ is linear in $f$, with real coefficients depending only on
+$\alpha_j$, fixed line data and the periods $P$ of $f$ along lines; it must not depend on $\beta_j$ or $x$ in any other way. Examples are $\sum_rf_rw_r$ with real class weights ($C_2$ of
+Proposition~\ref{prop:bern}, the three parts of the corner formula, $A_2^{\rm corner}$), the line part $A_2^{\rm lines}$ (its line terms are real combinations of point
+phases and of line means $P^{-1}\sum_bf$), and hence $A_2=A_2^{\rm lines}+A_2^{\rm corner}$. For rational $x\neq0$ set
+\[ R_Y(x)=Y(-1/x)-x\,kM\,Y(x). \]
+\begin{proposition}[exact, computer-assisted]\label{prop:MPi}
+$\overline{M}\,\Pi\,M=35\,\Pi$ and $MM^{\dagger}=35\,I$.
+\end{proposition}
+\begin{proof}
+Each entry of either side is an element of $\Z[\zeta]$, $\zeta=\e(1/9800)$, obtained by adding exponents modulo $9800$. Since $\Phi_{9800}(x)=\Phi_{70}(x^{140})$, the elements
+$\zeta^r\zeta^{140i}$ ($0\le r<140$, $0\le i<24$) form a $\Z$-basis of $\Z[\zeta]$, so an element is zero if and only if, for each $r$, the integer polynomial collecting its
+exponents $\equiv r\pmod{140}$, written in $y=x^{140}$, is divisible by $\Phi_{70}(y)$. This exact test returns zero for all $105^2$ entries of both differences. As a control,
+the same test certifies $M^2=35P$ and rejects $MM^\dagger=34I$ on all $105$ diagonal entries (script \path{BRIDGE_C_35/order47/scripts/o47.py}).
+\end{proof}
+\begin{theorem}\label{thm:xinv}
+For every real-weight sum $Y$ and rational $x\neq0$,
+\[ R_Y(1/x)=-x^{-1}\,\overline{\Pi\,(kM)^{-1}R_Y(x)},\qquad\text{hence}\qquad \|R_Y(1/x)\|=|x|^{-1}\|R_Y(x)\|. \]
+\end{theorem}
+\begin{proof}
+Complex conjugation of the summand $\e(xQ(\nu)+B(\nu,\beta))$ gives $\e(-xQ(\nu)+B(\nu,-\beta))$, and the coefficients of $\Lambda$ are real and independent of $\beta$. Periods are unchanged under $f\mapsto c\overline f$. For each $j$ the reduction of $(\alpha_j,-\beta_j)$ keeps
+$\alpha_j$ exactly and shifts $\beta$ by $\lambda\in A^{-1}\Z^2$, which multiplies $f$ pointwise by the constant $\e(B(\alpha_j,\lambda))$; this was checked exactly for all $105$ companions.
+This gives $Y(-x)=\overline{\Pi\,Y(x)}$. Hence $Y(1/x)=\overline{\Pi\,Y(-1/x)}$ and
+\[ R_Y(1/x)=\overline{\Pi Y(x)}-x^{-1}kM\,\overline{\Pi Y(-1/x)}. \]
+By Proposition~\ref{prop:MPi}, $kM\,\overline{\Pi}=\overline{\overline{kM}\,\Pi}=\overline{\Pi\,(kM)^{-1}}$. Therefore
+$R_Y(1/x)=\overline{\Pi\,[\,Y(x)-x^{-1}(kM)^{-1}Y(-1/x)\,]}=-x^{-1}\,\overline{\Pi(kM)^{-1}R_Y(x)}$. The norm statement follows because $\Pi$ is monomial with unimodular
+entries and $kM$ is unitary (Proposition~\ref{prop:MPi}).
+\end{proof}
+\begin{remark}
+Theorem~\ref{thm:xinv} concerns the residual with the S-matrix $kM$ itself. It does not state that $R_Y$ is small; it relates the residual at $x$ to the residual at $1/x$.
+\end{remark}
+\begin{catbremark}
+For $Y=C_2$ the ratio $\|R(1/x)\|x/\|R(x)\|$ equals $1$ to $10^{-14}$ on eight pairs, and the vector identity holds to $1.4\cdot10^{-13}$
+(Appendix~\ref{app:catB}, item~\ref{catB:o45}); for $C_{11}$, the $C_2$ variants, $A_2^{\rm corner}$ and $A_2^{\rm lines}$ it holds to $7\cdot10^{-13}$ on $48$ pairs.
+\end{catbremark}

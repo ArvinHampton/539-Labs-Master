@@ -1,0 +1,117 @@
+%=====================================================================
+\section{The foundation attempt: what ties RTA to the framework}\label{sec:found}
+%=====================================================================
+This section lists the written RTA objects and, for each, what is proved about its relation to the structures of Parts~I--III.
+References to ``RTA'' are to the RTA manuscript (Residual Ternary Algebra: Packaging Identities, Residual Series $g_s$, and Bridge Series $C$, draft of
+24 August 2026), which has no algebraic axioms: its six numbered rules are process rules.
+
+\subsection{Proved links}
+\begin{proposition}[Identification of objects]\label{prop:ident}
+The following hold.
+\begin{enumerate}[label=(\roman*)]
+\item The RTA residual series $g_s$ is the series $g_k$ of Part~I with $k=s$.
+\item The RTA double-sum identity for $(-q^s;q^s)_\infty g_s$ holds for every $s\ge1$ as an identity in $\Z[[q]]$ (Proposition~\ref{prop:PiPorth}).
+\item The RTA path quadratic $Q_s$, cones $c_1,c_2$, weight $w$, cone series $H_s$, orthant series and Bridge Series $C=\Porth_7-H_7$ are those of
+\S\ref{sec:prelim} and of Part~II; $\Caxis$ and $\Cthird$ are those of Part~II, \S\ref{sec:conv}; the RTA natural characteristic $\chi_{\rm nat}(7)=(\tfrac7{10},-\tfrac15)$ is the vector $a$.
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+(i) and (iii) are comparisons of definitions: RTA Definition~6.1 and \S\S9--10 against Definition~\ref{def:series}, \S\ref{sec:prelim} and Part~II, \S\ref{sec:conv};
+$\chi_{\rm nat}(s)=(s/(2(s-2)),-1/(s-2))$ at $s=7$ equals $a$. (ii) is Proposition~\ref{prop:PiPorth}.
+\end{proof}
+
+\begin{corollary}[Residue law of $g_7$ and its converse]\label{cor:g7res}
+$g_7(d)=0$ whenever $d\equiv3,5,6\pmod7$. Conversely, $g_7(d)\ne0$ for every $d\equiv0,1,2,4\pmod 7$ outside the finite set $Z_7$ of $24$ elements listed in
+Appendix~B ($\max Z_7=247$), and the sign of $g_7(d)$ is $(-1)^{d+1}$ for all such $d\ge D_0(7)$.
+\end{corollary}
+\begin{proof}
+By Proposition~3.2 (Part~I), $g_7(d)$ is a sum over $n\ge0$ with $n^2\equiv d\pmod 7$; the squares modulo $7$ are $0,1,2,4$, so the sum is empty for $d\equiv3,5,6$.
+The converse is the case $k=7$ of Theorem~8.1 (Part~I, \S\ref{statement}), parts~1 and~2.
+\end{proof}
+
+\begin{theorem}[The normalized Bridge Series and the 35-component law vector]\label{thm:found}
+The following hold.
+\begin{enumerate}[label=(\roman*)]
+\item The leading radial profile of the RTA Bridge Series $C$ is $I\,\e(7x/20)K2_0(x)$, and it does not lie in $\VV$.
+\item The leading radial profile of $q^{-7/20}C$ is $I\,K2_0$, a non-zero element of $\VV$; together with its $S$- and $T$-images it spans $\VV$, and it
+obeys the vector-valued $S$-law of Theorem~\ref{thm:SlawC}.
+\item Up to order $t^0$, the radial expansion of $q^{-7/20}C$ at every rational point is given in closed form by Theorem~\ref{thm:expansion}; at order $t^{-1/2}$
+the coefficient divided by $\sqrt\pi$ is algebraic, and at every point of $Z_0\cup\{-\frac15\}$ it is non-zero.
+\end{enumerate}
+\end{theorem}
+\begin{proof}
+Theorems~\ref{thm:p3profile}, \ref{thm:lead}, \ref{thm:SlawC}, \ref{thm:expansion}, Corollary~\ref{cor:A1alg} and Proposition~\ref{prop:A1nonzero}.
+\end{proof}
+
+\subsection{Negative results}
+\begin{proposition}[No scalar residual law]\label{prop:noscalar}
+There is no scalar modular, mock-modular (signature $(1,1)$) or unary/partial/false theta law for $C$ of the kinds listed in Theorem~\ref{thm:E}; in particular for no
+weight $k$ and constant $\lambda$ is $C(\tau)-\lambda(7\tau)^{-k}C(-1/(7\tau))$ radially bounded at all rationals.
+\end{proposition}
+\begin{proof}
+Theorem~\ref{thm:E}, with the stated dependence on Baker's theorem for part~(i).
+\end{proof}
+
+\begin{proposition}[No vector-valued Fricke law at leading order; computer-assisted]\label{prop:fricke}
+Let $D_7f(x)=f(7x)$. Then $\VV\cap D_7\VV=0$ as spaces of functions on $\Q$. In particular $D_7\VV\not\subset\VV$.
+\end{proposition}
+\begin{proof}
+Both spaces have dimension at most $36$ (Proposition~\ref{prop:dimV}). The $216\times210$ matrix of values of the $105$ functions and of their dilations by $7$ at $X_{216}$
+has rank $72$ modulo each of the four primes of Proposition~\ref{prop:dimV} (\path{A53_RTA_maps}); by the reduction argument of that proof its rank in characteristic $0$ is
+at least $72$. Hence $\dim(\VV+D_7\VV)=72$ and the sum is direct.
+\end{proof}
+
+\begin{proposition}[Facts about $T_3$ and $539$]\label{prop:T3}
+Let $T_3(3k)=k$, $T_3(3k+1)=4k+2$, $T_3(3k+2)=2k+1$.
+\begin{enumerate}[label=(\roman*)]
+\item If $539=a_1+\dots+a_8$ with positive integers and $\max a_i-\min a_i\le1$, then $\{a_i\}=\{68,68,68,67,67,67,67,67\}$.
+\item For $M$ coprime to $6$ and $L\ge1$, as $n$ runs over $\Z/3^LM$, $T_3^L(n)\bmod M$ is well defined and takes each value exactly $3^L$ times.
+\item Extended to $\Z_3$, $T_3$ preserves Haar measure, and the itinerary map $n\mapsto(T_3^j(n)\bmod 3)_{j\ge0}$ is a homeomorphism $\Z_3\to\{0,1,2\}^{\N}$ conjugating $T_3$ to the shift.
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+(i) Let $q=\min a_i$ and let $b$ be the number of parts equal to $q+1$. If $b=8$ then $8\mid539$, false. So $539=8q+b$ with $0\le b\le7$, and $q=67$, $b=3$.
+(ii) For $N=3^iM$ ($i\ge1$) and $n=3k+r$, replacing $n$ by $n+N$ changes $T_3(n)$ by $N/3$, $4N/3$ or $2N/3$, all $\equiv0\pmod{N/3}$; and for fixed $r$ the maps
+$k\mapsto k,4k+2,2k+1$ are bijections of $\Z/(N/3)$ because $N/3$ is odd. So $n\bmod N\mapsto T_3(n)\bmod N/3$ is well defined and $3$-to-$1$; iterate $L$ times.
+(iii) Each branch $k\mapsto k,4k+2,2k+1$ is an affine bijection of $\Z_3$ with unit linear coefficient, and $k\mapsto3k+r$ maps $\Z_3$ onto $r+3\Z_3$ scaling Haar measure
+by $\frac13$; hence $\mu(T_3^{-1}B)=\sum_r\mu(B)/3=\mu(B)$. By induction on $j$, the points whose itinerary begins with a given word of length $j$ form one class modulo $3^j$;
+so the itinerary map is a continuous bijection of compact Hausdorff spaces, hence a homeomorphism, and it conjugates $T_3$ to the shift by definition.
+\end{proof}
+
+\begin{remark}[No written link]\label{rem:nolink}
+Proposition~\ref{prop:T3} is a statement about $T_3$ and the integer $539$ alone. No written object (in RTA, in Parts~I--III, or in any source used here) defines a map
+from $T_3$, the carrier $\mathcal O_{\rm res}=\{21+9j:0\le j\le538\}$, the packaging identities ($539=\lfloor4859/9\rfloor$, $18+521$, $3\cdot68+5\cdot67$) or the linking series
+$\Lambda_B$ to $g_s$, $C$, $\VV$ or the lift representation. RTA states that its packaging identities ``are independent of any dynamical map'' and of the modular status of
+the series. The choice $s\in\{7,8,11\}$ is attributed in RTA to the packaging arithmetic, but no derivation of these values from it is written. The statement that the
+$R=ST$ grading of the cusp space is a foundation of RTA has no proof; the only proved statement of that kind is the grading lemma of Part~II's framework (the $\Z/3$ grading
+of equivariant maps by $R$-degree), which concerns representations and not $T_3$.
+\end{remark}
+
+\subsection{Where the shadow $\Xi$ enters}
+RTA describes a weight-$\frac32$ shadow $\Xi=\Xi_{\rm even}+\Xi_{\rm odd}$ as ``the residual-weighted family of shifted partial thetas of squares whose outer coefficients are the
+residual disc-$35$ series'', and a weight-$\frac12$ period candidate as its Eichler integral. Neither is written as an explicit series with stated coefficients, so no
+statement about $\Xi$ can be proved from the written definitions. What is proved here bounds the place where $\Xi$ must enter:
+\begin{enumerate}[label=(\roman*),leftmargin=2em]
+\item at order $t^{-1}$ the normalized series is governed by $\VV$ with no correction term (Theorem~\ref{thm:SlawC});
+\item at order $t^{-1/2}$ the coefficient $A_1$ is an explicit finite sum of drift, sawtooth and ray terms (Proposition~\ref{prop:A1split}) with $A_1/\sqrt\pi$ algebraic
+(Corollary~\ref{cor:A1alg}); any $S$-covariant completion of $A_1$ must therefore come from a term that is not visible at order $t^{-1}$;
+\item at order $t^0$ the coefficient $A_2$ is explicit (Theorem~\ref{thm:expansion}).
+\end{enumerate}
+For the $105$ companion series, Section~\ref{sec:shadow} determines the shadow structure: the $P$-odd part has the $\xi_1$-image of
+Theorem~\ref{thm:hybrid}(i), and the $P$-even part has no weight-one law and the Laplacian defect of Theorem~\ref{thm:lap}. This does not identify $\Xi$, since $\Xi$ is
+not written as an explicit series. At order $t^{-1/2}$ the coefficient is fully explained by the completion and line terms (Theorem~\ref{thm:A1exact}). Whether a completion term of Zwegers type, with coefficients derived from the error-function completion of $H_7$, makes $A_1$ or $A_2$ $S$-covariant is open
+(Problem~\ref{op:xi}). The numerical tests carried out so far (Appendix~\ref{app:catB}) found no closure for any regrouping of the finite sum or for the simplest sawtooth
+candidate.
+
+%=====================================================================
+\section{Open problems}\label{sec:gopen}
+%=====================================================================
+\begin{enumerate}[label=\arabic*.,leftmargin=2em]
+\item\label{op:xi} Derive the actual completion constants of $H_7$ (erf-completion along the walls $(0,1)$ and $(21,-1)$), form the completed coefficient $A_1-\Xi^{\rm compl}$, and
+decide whether it satisfies a vector-valued $S$-law of weight $\frac12$. This would identify the shadow $\Xi$. The completions of the cone parts and their $\xi_1$-images are now explicit (Proposition~\ref{prop:xi}); by Theorem~\ref{thm:A1exact}, $A_1$ minus these completion terms and the line terms vanishes identically, so this part of the problem is settled for the companion series; the identification of $\Xi$ itself remains open. The sawtooth candidate, which removes all $W[\lambda]$, does not close (Appendix~\ref{app:catB}).
+\item Decide whether $A_2$ minus a completion term satisfies a vector-valued law; this is the period-function level. Numerically, $A_2$ itself satisfies no pure law of weight $0$, $\frac12$ or $1$, and the mixed test with $A_1$, $A_0$ is inconclusive (Appendix~\ref{app:catB}).
+\item Prove or disprove $|A_1(\frac12)|=\sqrt\pi/4$ (observed numerically) and find the zero set of $A_1$ on the zero set of $A_0$.
+\item Find a written object linking $T_3$, $\mathcal O_{\rm res}$ or $539$ to $g_s$, $C$ or $\VV$, or prove that a natural class of such maps does not exist.
+\item Extend the parity-dominance theorem of Part~I beyond $k=33$ and to the classes of even $k$ that are not one-sign.
+\item The open problems of Part~II, \S\ref{sec:open}.
+\end{enumerate}

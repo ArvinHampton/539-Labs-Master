@@ -1,0 +1,832 @@
+JOB support=(3, 37, 41, 47, 53) sign=(1, 1, 1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/4
+  g = -4*tau0*tau1
+  c = -1
+  g = tau0**2*tau1**2*z - 1
+JOB support=(3, 37, 41, 47, 53) sign=(-1, -1, -1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/4
+  g = -4*tau0*tau1
+  c = -1
+  g = -tau0**2*tau1**2*z - 1
+JOB support=(3, 37, 47, 53, 71) sign=(1, -1, 1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/4
+  g = -4*tau0*tau1
+  c = -1
+  g = tau0**2*tau1**2*z - 1
+JOB support=(3, 37, 47, 53, 71) sign=(-1, 1, -1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/4
+  g = -4*tau0*tau1
+  c = -1
+  g = -tau0**2*tau1**2*z - 1
+JOB support=(3, 41, 71, 79, 89) sign=(1, -1, -1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/2
+  g = -2*tau0*tau1
+  c = -1
+  g = tau0**2*tau1**2*z - 1
+JOB support=(3, 41, 71, 79, 89) sign=(-1, 1, 1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/2
+  g = -2*tau0*tau1
+  c = -1
+  g = -tau0**2*tau1**2*z - 1
+JOB support=(41, 53, 71, 79, 89) sign=(1, 1, -1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/2
+  g = -2*tau0*tau1
+  c = -1
+  g = tau0**2*tau1**2*z - 1
+JOB support=(41, 53, 71, 79, 89) sign=(-1, -1, 1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/2
+  g = -2*tau0*tau1
+  c = -1
+  g = -tau0**2*tau1**2*z - 1
+JOB support=(3, 37, 41, 47, 53, 71) sign=(1, 1, 1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = z/64
+  g = -tau0**2 - tau0/2 - tau1**2 + tau1/2
+  c = -tau0*tau1*z/16 + tau0*z/64 - tau1*z/64
+  g = -4*tau0*tau1 + tau0 - tau1 + 1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 - tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 41, 47, 53, 71) sign=(1, 1, -1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -z/64
+  g = -tau0**2 + tau0/2 - tau1**2 + tau1/2
+  c = tau0*tau1*z/16 - tau0*z/64 - tau1*z/64
+  g = -4*tau0*tau1 + tau0 + tau1 - 1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 + tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 41, 47, 53, 71) sign=(1, -1, 1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = z/64
+  g = -tau0**2 + tau0/2 - tau1**2 - tau1/2
+  c = -tau0*tau1*z/16 - tau0*z/64 + tau1*z/64
+  g = -4*tau0*tau1 - tau0 + tau1 + 1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 + tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 41, 47, 53, 71) sign=(1, -1, -1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -z/64
+  g = -tau0**2 + tau0/2 - tau1**2 + tau1/2
+  c = tau0*tau1*z/16 - tau0*z/64 - tau1*z/64
+  g = -4*tau0*tau1 + tau0 + tau1 - 1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 + tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 41, 47, 53, 71) sign=(-1, 1, 1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -z/64
+  g = -tau0**2 - tau0/2 - tau1**2 - tau1/2
+  c = tau0*tau1*z/16 + tau0*z/64 + tau1*z/64
+  g = -4*tau0*tau1 - tau0 - tau1 - 1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 - tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 41, 47, 53, 71) sign=(-1, 1, -1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = z/64
+  g = -tau0**2 - tau0/2 - tau1**2 + tau1/2
+  c = -tau0*tau1*z/16 + tau0*z/64 - tau1*z/64
+  g = -4*tau0*tau1 + tau0 - tau1 + 1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 - tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 41, 47, 53, 71) sign=(-1, -1, 1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -z/64
+  g = -tau0**2 - tau0/2 - tau1**2 - tau1/2
+  c = tau0*tau1*z/16 + tau0*z/64 + tau1*z/64
+  g = -4*tau0*tau1 - tau0 - tau1 - 1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 - tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 41, 47, 53, 71) sign=(-1, -1, -1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = z/64
+  g = -tau0**2 + tau0/2 - tau1**2 - tau1/2
+  c = -tau0*tau1*z/16 - tau0*z/64 + tau1*z/64
+  g = -4*tau0*tau1 - tau0 + tau1 + 1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 + tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 41, 47, 79, 89) sign=(1, 1, 1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/4 + tau0*z/8 + tau1*z/8 - z/16
+  g = -tau0/2 - tau1/2
+  c = -tau0*tau1*z/4 + tau0*z/4
+  g = -tau0*tau1 - 1/4
+  c = -z/16
+  g = -tau0**2 - tau0/2 - tau1**2 + tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 - tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 41, 47, 79, 89) sign=(1, 1, -1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/4 - tau0*z/8 + tau1*z/8 - z/16
+  g = -tau0/2 + tau1/2
+  c = tau0*tau1*z/4 - tau0*z/4
+  g = -tau0*tau1 + 1/4
+  c = z/16
+  g = -tau0**2 + tau0/2 - tau1**2 + tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 + tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 41, 47, 79, 89) sign=(1, -1, 1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/8 - tau0*z/16 + tau1*z/16 - z/32
+  g = -tau0 + tau1
+  c = tau0*tau1*z/4 - tau0*z/4
+  g = -tau0*tau1 + 1/4
+  c = z/16
+  g = -tau0**2 + tau0/2 - tau1**2 + tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 + tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 41, 47, 79, 89) sign=(1, -1, -1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/4 + tau0*z/8 + tau1*z/8 + z/16
+  g = -tau0/2 - tau1/2
+  c = -tau0*tau1*z/4 - tau0*z/4
+  g = -tau0*tau1 - 1/4
+  c = -z/16
+  g = -tau0**2 + tau0/2 - tau1**2 - tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 + tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 41, 47, 79, 89) sign=(-1, 1, 1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/8 + tau0*z/16 + tau1*z/16 - z/32
+  g = -tau0 - tau1
+  c = -tau0*tau1*z/4 + tau0*z/4
+  g = -tau0*tau1 - 1/4
+  c = -z/16
+  g = -tau0**2 - tau0/2 - tau1**2 + tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 - tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 41, 47, 79, 89) sign=(-1, 1, -1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/4 - tau0*z/8 + tau1*z/8 + z/16
+  g = -tau0/2 + tau1/2
+  c = tau0*tau1*z/4 + tau0*z/4
+  g = -tau0*tau1 + 1/4
+  c = z/16
+  g = -tau0**2 - tau0/2 - tau1**2 - tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 - tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 41, 47, 79, 89) sign=(-1, -1, 1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/8 - tau0*z/16 + tau1*z/16 + z/32
+  g = -tau0 + tau1
+  c = tau0*tau1*z/4 + tau0*z/4
+  g = -tau0*tau1 + 1/4
+  c = z/16
+  g = -tau0**2 - tau0/2 - tau1**2 - tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 - tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 41, 47, 79, 89) sign=(-1, -1, -1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/8 + tau0*z/16 + tau1*z/16 + z/32
+  g = -tau0 - tau1
+  c = -tau0*tau1*z/4 - tau0*z/4
+  g = -tau0*tau1 - 1/4
+  c = -z/16
+  g = -tau0**2 + tau0/2 - tau1**2 - tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 + tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 47, 53, 79, 89) sign=(1, 1, 1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/8
+  g = -tau0/2 + tau1/2 - 1/4
+  c = -tau0*tau1*z/16
+  g = -4*tau0*tau1 + tau0 - tau1 + 1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 - tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 47, 53, 79, 89) sign=(1, 1, -1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/8
+  g = -tau0/2 - tau1/2 + 1/4
+  c = tau0*tau1*z/16
+  g = -4*tau0*tau1 + tau0 + tau1 - 1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 + tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 47, 53, 79, 89) sign=(1, -1, 1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/8
+  g = -tau0/2 + tau1/2 + 1/4
+  c = -tau0*tau1*z/16
+  g = -4*tau0*tau1 - tau0 + tau1 + 1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 + tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 47, 53, 79, 89) sign=(1, -1, -1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/8
+  g = -tau0/2 - tau1/2 + 1/4
+  c = tau0*tau1*z/16
+  g = -4*tau0*tau1 + tau0 + tau1 - 1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 + tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 47, 53, 79, 89) sign=(-1, 1, 1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/8
+  g = -tau0/2 - tau1/2 - 1/4
+  c = tau0*tau1*z/16
+  g = -4*tau0*tau1 - tau0 - tau1 - 1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 - tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 47, 53, 79, 89) sign=(-1, 1, -1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/8
+  g = -tau0/2 + tau1/2 - 1/4
+  c = -tau0*tau1*z/16
+  g = -4*tau0*tau1 + tau0 - tau1 + 1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 - tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 47, 53, 79, 89) sign=(-1, -1, 1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/8
+  g = -tau0/2 - tau1/2 - 1/4
+  c = tau0*tau1*z/16
+  g = -4*tau0*tau1 - tau0 - tau1 - 1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 - tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 47, 53, 79, 89) sign=(-1, -1, -1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/8
+  g = -tau0/2 + tau1/2 + 1/4
+  c = -tau0*tau1*z/16
+  g = -4*tau0*tau1 - tau0 + tau1 + 1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 + tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 47, 71, 79, 89) sign=(1, 1, 1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/4 + tau0*z/8 + tau1*z/8 - z/16
+  g = -tau0/2 - tau1/2
+  c = -tau0*tau1*z/4 + tau0*z/4
+  g = -tau0*tau1 - 1/4
+  c = -z/16
+  g = -tau0**2 - tau0/2 - tau1**2 + tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 - tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 47, 71, 79, 89) sign=(1, 1, -1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/4 + tau0*z/8 + tau1*z/8 + z/16
+  g = -tau0/2 - tau1/2
+  c = -tau0*tau1*z/4 - tau0*z/4
+  g = -tau0*tau1 - 1/4
+  c = -z/16
+  g = -tau0**2 + tau0/2 - tau1**2 - tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 + tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 47, 71, 79, 89) sign=(1, -1, 1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/8 - tau0*z/16 + tau1*z/16 - z/32
+  g = -tau0 + tau1
+  c = tau0*tau1*z/4 - tau0*z/4
+  g = -tau0*tau1 + 1/4
+  c = z/16
+  g = -tau0**2 + tau0/2 - tau1**2 + tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 + tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 47, 71, 79, 89) sign=(1, -1, -1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/4 - tau0*z/8 + tau1*z/8 - z/16
+  g = -tau0/2 + tau1/2
+  c = tau0*tau1*z/4 - tau0*z/4
+  g = -tau0*tau1 + 1/4
+  c = z/16
+  g = -tau0**2 + tau0/2 - tau1**2 + tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 + tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 47, 71, 79, 89) sign=(-1, 1, 1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/8 - tau0*z/16 + tau1*z/16 + z/32
+  g = -tau0 + tau1
+  c = tau0*tau1*z/4 + tau0*z/4
+  g = -tau0*tau1 + 1/4
+  c = z/16
+  g = -tau0**2 - tau0/2 - tau1**2 - tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 - tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 47, 71, 79, 89) sign=(-1, 1, -1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/4 - tau0*z/8 + tau1*z/8 + z/16
+  g = -tau0/2 + tau1/2
+  c = tau0*tau1*z/4 + tau0*z/4
+  g = -tau0*tau1 + 1/4
+  c = z/16
+  g = -tau0**2 - tau0/2 - tau1**2 - tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 - tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 47, 71, 79, 89) sign=(-1, -1, 1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/8 + tau0*z/16 + tau1*z/16 - z/32
+  g = -tau0 - tau1
+  c = -tau0*tau1*z/4 + tau0*z/4
+  g = -tau0*tau1 - 1/4
+  c = -z/16
+  g = -tau0**2 - tau0/2 - tau1**2 + tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 - tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 37, 47, 71, 79, 89) sign=(-1, -1, -1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/8 + tau0*z/16 + tau1*z/16 + z/32
+  g = -tau0 - tau1
+  c = -tau0*tau1*z/4 - tau0*z/4
+  g = -tau0*tau1 - 1/4
+  c = -z/16
+  g = -tau0**2 + tau0/2 - tau1**2 - tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 + tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 41, 53, 71, 79, 89) sign=(1, 1, 1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/8 - tau0*z/32 - tau1*z/32 + z/64
+  g = -2*tau0*tau1 + tau0/2 + tau1/2
+  c = -z/64
+  g = -tau0**2 + tau0/2 - tau1**2 + tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 + tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 41, 53, 71, 79, 89) sign=(1, 1, -1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/8 + tau0*z/32 - tau1*z/32 + z/64
+  g = -2*tau0*tau1 + tau0/2 - tau1/2
+  c = z/64
+  g = -tau0**2 - tau0/2 - tau1**2 + tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 - tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 41, 53, 71, 79, 89) sign=(1, -1, 1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/8 - tau0*z/32 - tau1*z/32 + z/64
+  g = -2*tau0*tau1 + tau0/2 + tau1/2
+  c = -z/64
+  g = -tau0**2 + tau0/2 - tau1**2 + tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 + tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 41, 53, 71, 79, 89) sign=(1, -1, -1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/8 - tau0*z/32 + tau1*z/32 + z/64
+  g = -2*tau0*tau1 - tau0/2 + tau1/2
+  c = z/64
+  g = -tau0**2 + tau0/2 - tau1**2 - tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 + tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 41, 53, 71, 79, 89) sign=(-1, 1, 1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/8 + tau0*z/32 - tau1*z/32 + z/64
+  g = -2*tau0*tau1 + tau0/2 - tau1/2
+  c = z/64
+  g = -tau0**2 - tau0/2 - tau1**2 + tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 - tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 41, 53, 71, 79, 89) sign=(-1, 1, -1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/8 + tau0*z/32 + tau1*z/32 + z/64
+  g = -2*tau0*tau1 - tau0/2 - tau1/2
+  c = -z/64
+  g = -tau0**2 - tau0/2 - tau1**2 - tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 - tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 41, 53, 71, 79, 89) sign=(-1, -1, 1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/8 - tau0*z/32 + tau1*z/32 + z/64
+  g = -2*tau0*tau1 - tau0/2 + tau1/2
+  c = z/64
+  g = -tau0**2 + tau0/2 - tau1**2 - tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 + tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 41, 53, 71, 79, 89) sign=(-1, -1, -1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/8 + tau0*z/32 + tau1*z/32 + z/64
+  g = -2*tau0*tau1 - tau0/2 - tau1/2
+  c = -z/64
+  g = -tau0**2 - tau0/2 - tau1**2 - tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 - tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(11, 37, 47, 79, 83, 89) sign=(1, 1, 1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/4 - tau1*z/8
+  g = -tau0/2 + tau1/2 + 1/4
+  c = -tau0*tau1*z/4 + tau0*z/8
+  g = -tau0*tau1 - tau0/2 + 1/4
+  c = -z/16
+  g = -tau0**2 + tau0/2 - tau1**2 - tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 + tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(11, 37, 47, 79, 83, 89) sign=(1, 1, -1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/4 - tau1*z/8
+  g = -tau0/2 + tau1/2 - 1/4
+  c = -tau0*tau1*z/4 - tau0*z/8
+  g = -tau0*tau1 + tau0/2 + 1/4
+  c = -z/16
+  g = -tau0**2 - tau0/2 - tau1**2 + tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 - tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(11, 37, 47, 79, 83, 89) sign=(1, -1, 1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/4 - tau1*z/8
+  g = -tau0/2 - tau1/2 + 1/4
+  c = tau0*tau1*z/4 + tau0*z/8
+  g = -tau0*tau1 + tau0/2 - 1/4
+  c = z/16
+  g = -tau0**2 + tau0/2 - tau1**2 + tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 + tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(11, 37, 47, 79, 83, 89) sign=(1, -1, -1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/8 - tau1*z/16
+  g = -tau0 - tau1 + 1/2
+  c = tau0*tau1*z/4 + tau0*z/8
+  g = -tau0*tau1 + tau0/2 - 1/4
+  c = z/16
+  g = -tau0**2 + tau0/2 - tau1**2 + tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 + tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(11, 37, 47, 79, 83, 89) sign=(-1, 1, 1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/4 - tau1*z/8
+  g = -tau0/2 - tau1/2 - 1/4
+  c = tau0*tau1*z/4 - tau0*z/8
+  g = -tau0*tau1 - tau0/2 - 1/4
+  c = z/16
+  g = -tau0**2 - tau0/2 - tau1**2 - tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 - tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(11, 37, 47, 79, 83, 89) sign=(-1, 1, -1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/8 - tau1*z/16
+  g = -tau0 - tau1 - 1/2
+  c = tau0*tau1*z/4 - tau0*z/8
+  g = -tau0*tau1 - tau0/2 - 1/4
+  c = z/16
+  g = -tau0**2 - tau0/2 - tau1**2 - tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 - tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(11, 37, 47, 79, 83, 89) sign=(-1, -1, 1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/8 - tau1*z/16
+  g = -tau0 + tau1 + 1/2
+  c = -tau0*tau1*z/4 + tau0*z/8
+  g = -tau0*tau1 - tau0/2 + 1/4
+  c = -z/16
+  g = -tau0**2 + tau0/2 - tau1**2 - tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 + tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(11, 37, 47, 79, 83, 89) sign=(-1, -1, -1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/8 - tau1*z/16
+  g = -tau0 + tau1 - 1/2
+  c = -tau0*tau1*z/4 - tau0*z/8
+  g = -tau0*tau1 + tau0/2 + 1/4
+  c = -z/16
+  g = -tau0**2 - tau0/2 - tau1**2 + tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 - tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(37, 41, 47, 53, 79, 89) sign=(1, 1, 1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*z/8 - tau1*z/8 + z/16
+  g = -tau0/2 - tau1/2 + 1/4
+  c = tau0*tau1*z/4 - tau0*z/8 + z/16
+  g = -tau0*tau1 + tau1/2 - 1/4
+  c = z/16
+  g = -tau0**2 + tau0/2 - tau1**2 + tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 + tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(37, 41, 47, 53, 79, 89) sign=(1, 1, -1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*z/16 - tau1*z/16 + z/32
+  g = -tau0 - tau1 + 1/2
+  c = tau0*tau1*z/4 - tau0*z/8 + z/16
+  g = -tau0*tau1 + tau1/2 - 1/4
+  c = z/16
+  g = -tau0**2 + tau0/2 - tau1**2 + tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 + tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(37, 41, 47, 53, 79, 89) sign=(1, -1, 1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*z/16 - tau1*z/16 + z/32
+  g = -tau0 + tau1 - 1/2
+  c = -tau0*tau1*z/4 + tau0*z/8 + z/16
+  g = -tau0*tau1 - tau1/2 + 1/4
+  c = -z/16
+  g = -tau0**2 - tau0/2 - tau1**2 + tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 - tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(37, 41, 47, 53, 79, 89) sign=(1, -1, -1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*z/16 - tau1*z/16 - z/32
+  g = -tau0 + tau1 + 1/2
+  c = -tau0*tau1*z/4 - tau0*z/8 + z/16
+  g = -tau0*tau1 + tau1/2 + 1/4
+  c = -z/16
+  g = -tau0**2 + tau0/2 - tau1**2 - tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 + tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(37, 41, 47, 53, 79, 89) sign=(-1, 1, 1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*z/8 - tau1*z/8 + z/16
+  g = -tau0/2 + tau1/2 - 1/4
+  c = -tau0*tau1*z/4 + tau0*z/8 + z/16
+  g = -tau0*tau1 - tau1/2 + 1/4
+  c = -z/16
+  g = -tau0**2 - tau0/2 - tau1**2 + tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 - tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(37, 41, 47, 53, 79, 89) sign=(-1, 1, -1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*z/8 - tau1*z/8 - z/16
+  g = -tau0/2 + tau1/2 + 1/4
+  c = -tau0*tau1*z/4 - tau0*z/8 + z/16
+  g = -tau0*tau1 + tau1/2 + 1/4
+  c = -z/16
+  g = -tau0**2 + tau0/2 - tau1**2 - tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 + tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(37, 41, 47, 53, 79, 89) sign=(-1, -1, 1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*z/8 - tau1*z/8 - z/16
+  g = -tau0/2 - tau1/2 - 1/4
+  c = tau0*tau1*z/4 + tau0*z/8 + z/16
+  g = -tau0*tau1 - tau1/2 - 1/4
+  c = z/16
+  g = -tau0**2 - tau0/2 - tau1**2 - tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 - tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(37, 41, 47, 53, 79, 89) sign=(-1, -1, -1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*z/16 - tau1*z/16 - z/32
+  g = -tau0 - tau1 - 1/2
+  c = tau0*tau1*z/4 + tau0*z/8 + z/16
+  g = -tau0*tau1 - tau1/2 - 1/4
+  c = z/16
+  g = -tau0**2 - tau0/2 - tau1**2 - tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 - tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(37, 41, 47, 71, 79, 89) sign=(1, 1, 1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/8 - tau0*z/16
+  g = -tau0/2 + tau1/2
+  c = tau0*tau1*z/8 - tau0*z/16
+  g = -2*tau0*tau1 + tau0/2 + tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 + tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(37, 41, 47, 71, 79, 89) sign=(1, 1, -1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/8 + tau0*z/16
+  g = -tau0/2 - tau1/2
+  c = -tau0*tau1*z/8 + tau0*z/16
+  g = -2*tau0*tau1 + tau0/2 - tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 - tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(37, 41, 47, 71, 79, 89) sign=(1, -1, 1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/8 - tau0*z/16
+  g = -tau0/2 + tau1/2
+  c = tau0*tau1*z/8 - tau0*z/16
+  g = -2*tau0*tau1 + tau0/2 + tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 + tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(37, 41, 47, 71, 79, 89) sign=(1, -1, -1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/8 + tau0*z/16
+  g = -tau0/2 - tau1/2
+  c = -tau0*tau1*z/8 - tau0*z/16
+  g = -2*tau0*tau1 - tau0/2 + tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 + tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(37, 41, 47, 71, 79, 89) sign=(-1, 1, 1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/8 + tau0*z/16
+  g = -tau0/2 - tau1/2
+  c = -tau0*tau1*z/8 + tau0*z/16
+  g = -2*tau0*tau1 + tau0/2 - tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 - tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(37, 41, 47, 71, 79, 89) sign=(-1, 1, -1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/8 - tau0*z/16
+  g = -tau0/2 + tau1/2
+  c = tau0*tau1*z/8 + tau0*z/16
+  g = -2*tau0*tau1 - tau0/2 - tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 - tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(37, 41, 47, 71, 79, 89) sign=(-1, -1, 1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*tau1*z/8 + tau0*z/16
+  g = -tau0/2 - tau1/2
+  c = -tau0*tau1*z/8 - tau0*z/16
+  g = -2*tau0*tau1 - tau0/2 + tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 + tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(37, 41, 47, 71, 79, 89) sign=(-1, -1, -1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*tau1*z/8 - tau0*z/16
+  g = -tau0/2 + tau1/2
+  c = tau0*tau1*z/8 + tau0*z/16
+  g = -2*tau0*tau1 - tau0/2 - tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 - tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(37, 47, 53, 71, 79, 89) sign=(1, 1, 1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*z/8 - tau1*z/8 + z/16
+  g = -tau0/2 - tau1/2 + 1/4
+  c = tau0*tau1*z/4 - tau0*z/8 + z/16
+  g = -tau0*tau1 + tau1/2 - 1/4
+  c = z/16
+  g = -tau0**2 + tau0/2 - tau1**2 + tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 + tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(37, 47, 53, 71, 79, 89) sign=(1, 1, -1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*z/16 - tau1*z/16 - z/32
+  g = -tau0 + tau1 + 1/2
+  c = -tau0*tau1*z/4 - tau0*z/8 + z/16
+  g = -tau0*tau1 + tau1/2 + 1/4
+  c = -z/16
+  g = -tau0**2 + tau0/2 - tau1**2 - tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 + tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(37, 47, 53, 71, 79, 89) sign=(1, -1, 1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*z/16 - tau1*z/16 + z/32
+  g = -tau0 + tau1 - 1/2
+  c = -tau0*tau1*z/4 + tau0*z/8 + z/16
+  g = -tau0*tau1 - tau1/2 + 1/4
+  c = -z/16
+  g = -tau0**2 - tau0/2 - tau1**2 + tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 - tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(37, 47, 53, 71, 79, 89) sign=(1, -1, -1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*z/16 - tau1*z/16 + z/32
+  g = -tau0 - tau1 + 1/2
+  c = tau0*tau1*z/4 - tau0*z/8 + z/16
+  g = -tau0*tau1 + tau1/2 - 1/4
+  c = z/16
+  g = -tau0**2 + tau0/2 - tau1**2 + tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 + tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(37, 47, 53, 71, 79, 89) sign=(-1, 1, 1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*z/8 - tau1*z/8 - z/16
+  g = -tau0/2 - tau1/2 - 1/4
+  c = tau0*tau1*z/4 + tau0*z/8 + z/16
+  g = -tau0*tau1 - tau1/2 - 1/4
+  c = z/16
+  g = -tau0**2 - tau0/2 - tau1**2 - tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 - tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(37, 47, 53, 71, 79, 89) sign=(-1, 1, -1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*z/8 - tau1*z/8 - z/16
+  g = -tau0/2 + tau1/2 + 1/4
+  c = -tau0*tau1*z/4 - tau0*z/8 + z/16
+  g = -tau0*tau1 + tau1/2 + 1/4
+  c = -z/16
+  g = -tau0**2 + tau0/2 - tau1**2 - tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 + tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(37, 47, 53, 71, 79, 89) sign=(-1, -1, 1, 1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = tau0*z/8 - tau1*z/8 + z/16
+  g = -tau0/2 + tau1/2 - 1/4
+  c = -tau0*tau1*z/4 + tau0*z/8 + z/16
+  g = -tau0*tau1 - tau1/2 + 1/4
+  c = -z/16
+  g = -tau0**2 - tau0/2 - tau1**2 + tau1/2
+  c = -1
+  g = z*(tau0**2*tau1**2/4 - tau0**2*tau1/8 + tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(37, 47, 53, 71, 79, 89) sign=(-1, -1, -1, -1) vars=[tau0, tau1] (with saturation, D=3); verified sum c_i g_i == 1 by sympy.expand
+  c = -tau0*z/16 - tau1*z/16 - z/32
+  g = -tau0 - tau1 - 1/2
+  c = tau0*tau1*z/4 + tau0*z/8 + z/16
+  g = -tau0*tau1 - tau1/2 - 1/4
+  c = z/16
+  g = -tau0**2 - tau0/2 - tau1**2 - tau1/2
+  c = -1
+  g = z*(-tau0**2*tau1**2/4 - tau0**2*tau1/8 - tau0*tau1**2/8 - tau0*tau1/16) - 1
+JOB support=(3, 11, 37, 41, 47, 53, 61, 83) sign=(1, 1, 1, 1) vars=[tau0, tau1, tau2, tau3] (equations only, D=1); verified sum c_i g_i == 1 by sympy.expand
+  c = 16*tau0 - 24*tau1 + 8
+  g = 1/4 - tau2/2
+  c = 16*tau2 - 4
+  g = tau1*tau3 + 1/4
+  c = 8*tau0 - 16*tau1
+  g = tau0/2 + tau1*tau2 + tau3/2
+  c = 4 - 16*tau2
+  g = -tau0**2 - tau0/2 - tau1**2 + tau1/2
+  c = 4*tau2 - 4
+  g = -4*tau0*tau1 + tau0 - 2*tau1*tau3 - tau1
+  c = -16*tau0 + 8*tau1
+  g = tau0*tau2 + tau1/2 - tau2*tau3 + tau3/2
+  c = -8*tau0
+  g = 2*tau2*tau3 + tau2/2 - tau3/2 - 1/4
+JOB support=(3, 11, 37, 41, 47, 53, 61, 83) sign=(1, 1, -1, -1) vars=[tau0, tau1, tau2, tau3] (equations only, D=1); verified sum c_i g_i == 1 by sympy.expand
+  c = -16*tau0 - 24*tau1 + 8
+  g = 1/4 - tau2/2
+  c = 4 - 16*tau2
+  g = tau1*tau3 - 1/4
+  c = -8*tau0 - 16*tau1
+  g = -tau0/2 + tau1*tau2 - tau3/2
+  c = 4 - 16*tau2
+  g = -tau0**2 + tau0/2 - tau1**2 + tau1/2
+  c = 4 - 4*tau2
+  g = -4*tau0*tau1 + tau0 - 2*tau1*tau3 + tau1
+  c = -16*tau0 - 8*tau1
+  g = tau0*tau2 - tau1/2 - tau2*tau3 + tau3/2
+  c = -8*tau0
+  g = 2*tau2*tau3 - tau2/2 - tau3/2 + 1/4
+JOB support=(3, 11, 37, 41, 47, 53, 61, 83) sign=(1, -1, 1, -1) vars=[tau0, tau1, tau2, tau3] (equations only, D=1); verified sum c_i g_i == 1 by sympy.expand
+  c = 16*tau0 - 24*tau1 - 8
+  g = tau2/2 - 1/4
+  c = 16*tau2 - 4
+  g = tau1*tau3 + 1/4
+  c = 8*tau0 - 16*tau1
+  g = tau0/2 + tau1*tau2 + tau3/2
+  c = 4 - 16*tau2
+  g = -tau0**2 + tau0/2 - tau1**2 - tau1/2
+  c = 4*tau2 - 4
+  g = -4*tau0*tau1 - tau0 - 2*tau1*tau3 + tau1
+  c = -16*tau0 + 8*tau1
+  g = tau0*tau2 + tau1/2 - tau2*tau3 + tau3/2
+  c = -8*tau0
+  g = 2*tau2*tau3 - tau2/2 - tau3/2 + 1/4
+JOB support=(3, 11, 37, 41, 47, 53, 61, 83) sign=(1, -1, -1, 1) vars=[tau0, tau1, tau2, tau3] (equations only, D=1); verified sum c_i g_i == 1 by sympy.expand
+  c = 16*tau0 + 24*tau1 - 8
+  g = -tau2/2 - 1/4
+  c = 16*tau2 + 4
+  g = tau1*tau3 - 1/4
+  c = 8*tau0 + 16*tau1
+  g = tau0/2 + tau1*tau2 + tau3/2
+  c = 16*tau2 + 4
+  g = -tau0**2 + tau0/2 - tau1**2 + tau1/2
+  c = 4*tau2 + 4
+  g = -4*tau0*tau1 + tau0 - 2*tau1*tau3 + tau1
+  c = 16*tau0 + 8*tau1
+  g = tau0*tau2 + tau1/2 - tau2*tau3 - tau3/2
+  c = 8*tau0
+  g = 2*tau2*tau3 - tau2/2 + tau3/2 - 1/4
+JOB support=(3, 11, 37, 41, 47, 53, 61, 83) sign=(-1, 1, 1, -1) vars=[tau0, tau1, tau2, tau3] (equations only, D=1); verified sum c_i g_i == 1 by sympy.expand
+  c = -16*tau0 - 24*tau1 - 8
+  g = tau2/2 - 1/4
+  c = 4 - 16*tau2
+  g = tau1*tau3 - 1/4
+  c = -8*tau0 - 16*tau1
+  g = -tau0/2 + tau1*tau2 - tau3/2
+  c = 4 - 16*tau2
+  g = -tau0**2 - tau0/2 - tau1**2 - tau1/2
+  c = 4 - 4*tau2
+  g = -4*tau0*tau1 - tau0 - 2*tau1*tau3 - tau1
+  c = -16*tau0 - 8*tau1
+  g = tau0*tau2 - tau1/2 - tau2*tau3 + tau3/2
+  c = -8*tau0
+  g = 2*tau2*tau3 + tau2/2 - tau3/2 - 1/4
+JOB support=(3, 11, 37, 41, 47, 53, 61, 83) sign=(-1, 1, -1, 1) vars=[tau0, tau1, tau2, tau3] (equations only, D=1); verified sum c_i g_i == 1 by sympy.expand
+  c = -16*tau0 + 24*tau1 - 8
+  g = -tau2/2 - 1/4
+  c = -16*tau2 - 4
+  g = tau1*tau3 + 1/4
+  c = -8*tau0 + 16*tau1
+  g = -tau0/2 + tau1*tau2 - tau3/2
+  c = 16*tau2 + 4
+  g = -tau0**2 - tau0/2 - tau1**2 + tau1/2
+  c = -4*tau2 - 4
+  g = -4*tau0*tau1 + tau0 - 2*tau1*tau3 - tau1
+  c = 16*tau0 - 8*tau1
+  g = tau0*tau2 - tau1/2 - tau2*tau3 - tau3/2
+  c = 8*tau0
+  g = 2*tau2*tau3 + tau2/2 + tau3/2 + 1/4
+JOB support=(3, 11, 37, 41, 47, 53, 61, 83) sign=(-1, -1, 1, 1) vars=[tau0, tau1, tau2, tau3] (equations only, D=1); verified sum c_i g_i == 1 by sympy.expand
+  c = 16*tau0 + 24*tau1 + 8
+  g = tau2/2 + 1/4
+  c = 16*tau2 + 4
+  g = tau1*tau3 - 1/4
+  c = 8*tau0 + 16*tau1
+  g = tau0/2 + tau1*tau2 + tau3/2
+  c = 16*tau2 + 4
+  g = -tau0**2 - tau0/2 - tau1**2 - tau1/2
+  c = 4*tau2 + 4
+  g = -4*tau0*tau1 - tau0 - 2*tau1*tau3 - tau1
+  c = 16*tau0 + 8*tau1
+  g = tau0*tau2 + tau1/2 - tau2*tau3 - tau3/2
+  c = 8*tau0
+  g = 2*tau2*tau3 + tau2/2 + tau3/2 + 1/4
+JOB support=(3, 11, 37, 41, 47, 53, 61, 83) sign=(-1, -1, -1, -1) vars=[tau0, tau1, tau2, tau3] (equations only, D=1); verified sum c_i g_i == 1 by sympy.expand
+  c = -16*tau0 + 24*tau1 + 8
+  g = tau2/2 + 1/4
+  c = -16*tau2 - 4
+  g = tau1*tau3 + 1/4
+  c = -8*tau0 + 16*tau1
+  g = -tau0/2 + tau1*tau2 - tau3/2
+  c = 16*tau2 + 4
+  g = -tau0**2 + tau0/2 - tau1**2 - tau1/2
+  c = -4*tau2 - 4
+  g = -4*tau0*tau1 - tau0 - 2*tau1*tau3 + tau1
+  c = 16*tau0 - 8*tau1
+  g = tau0*tau2 - tau1/2 - tau2*tau3 - tau3/2
+  c = 8*tau0
+  g = 2*tau2*tau3 - tau2/2 + tau3/2 - 1/4
+JOB support=(3, 11, 37, 47, 53, 61, 71, 83) sign=(1, 1, 1, 1) vars=[tau0, tau1, tau2, tau3] (equations only, D=1); verified sum c_i g_i == 1 by sympy.expand
+  c = 8*tau0 - 4
+  g = tau2/2 + tau3/2
+  c = 4
+  g = tau1*tau3 + 1/4
+  c = 8*tau1 - 4
+  g = -tau2*tau3 - tau2/2
+  c = -8*tau3 - 4
+  g = tau0/2 - tau1*tau2 + tau1/2
+  c = 4
+  g = -tau0*tau2 + tau0/2 + tau1/2 - tau2*tau3 + tau3/2
+JOB support=(3, 11, 37, 47, 53, 61, 71, 83) sign=(1, 1, -1, -1) vars=[tau0, tau1, tau2, tau3] (equations only, D=1); verified sum c_i g_i == 1 by sympy.expand
+  c = 8*tau0 + 4
+  g = tau2/2 + tau3/2
+  c = -4
+  g = tau1*tau3 - 1/4
+  c = 8*tau1 - 4
+  g = -tau2*tau3 + tau2/2
+  c = 4 - 8*tau3
+  g = tau0/2 - tau1*tau2 - tau1/2
+  c = 4
+  g = -tau0*tau2 - tau0/2 + tau1/2 - tau2*tau3 - tau3/2
+JOB support=(3, 11, 37, 47, 53, 61, 71, 83) sign=(1, -1, 1, -1) vars=[tau0, tau1, tau2, tau3] (equations only, D=1); verified sum c_i g_i == 1 by sympy.expand
+  c = 8*tau0 + 4
+  g = -tau2/2 + tau3/2
+  c = 4
+  g = tau1*tau3 + 1/4
+  c = 8*tau1 + 4
+  g = -tau2*tau3 + tau2/2
+  c = 4 - 8*tau3
+  g = tau0/2 - tau1*tau2 + tau1/2
+  c = -4
+  g = -tau0*tau2 + tau0/2 + tau1/2 - tau2*tau3 + tau3/2
+JOB support=(3, 11, 37, 47, 53, 61, 71, 83) sign=(1, -1, -1, 1) vars=[tau0, tau1, tau2, tau3] (equations only, D=1); verified sum c_i g_i == 1 by sympy.expand
+  c = -8*tau0 - 4
+  g = tau2/2 - tau3/2
+  c = -4
+  g = tau1*tau3 - 1/4
+  c = 4 - 8*tau1
+  g = -tau2*tau3 + tau2/2
+  c = 8*tau3 - 4
+  g = -tau0/2 - tau1*tau2 + tau1/2
+  c = -4
+  g = -tau0*tau2 + tau0/2 - tau1/2 - tau2*tau3 + tau3/2
+JOB support=(3, 11, 37, 47, 53, 61, 71, 83) sign=(-1, 1, 1, -1) vars=[tau0, tau1, tau2, tau3] (equations only, D=1); verified sum c_i g_i == 1 by sympy.expand
+  c = 8*tau0 - 4
+  g = -tau2/2 + tau3/2
+  c = -4
+  g = tau1*tau3 - 1/4
+  c = 8*tau1 + 4
+  g = -tau2*tau3 - tau2/2
+  c = -8*tau3 - 4
+  g = tau0/2 - tau1*tau2 - tau1/2
+  c = -4
+  g = -tau0*tau2 - tau0/2 + tau1/2 - tau2*tau3 - tau3/2
+JOB support=(3, 11, 37, 47, 53, 61, 71, 83) sign=(-1, 1, -1, 1) vars=[tau0, tau1, tau2, tau3] (equations only, D=1); verified sum c_i g_i == 1 by sympy.expand
+  c = 4 - 8*tau0
+  g = tau2/2 - tau3/2
+  c = 4
+  g = tau1*tau3 + 1/4
+  c = 4 - 8*tau1
+  g = -tau2*tau3 - tau2/2
+  c = 8*tau3 + 4
+  g = -tau0/2 - tau1*tau2 - tau1/2
+  c = -4
+  g = -tau0*tau2 - tau0/2 - tau1/2 - tau2*tau3 - tau3/2
+JOB support=(3, 11, 37, 47, 53, 61, 71, 83) sign=(-1, -1, 1, 1) vars=[tau0, tau1, tau2, tau3] (equations only, D=1); verified sum c_i g_i == 1 by sympy.expand
+  c = 4 - 8*tau0
+  g = -tau2/2 - tau3/2
+  c = -4
+  g = tau1*tau3 - 1/4
+  c = -8*tau1 - 4
+  g = -tau2*tau3 - tau2/2
+  c = 8*tau3 + 4
+  g = -tau0/2 - tau1*tau2 + tau1/2
+  c = 4
+  g = -tau0*tau2 + tau0/2 - tau1/2 - tau2*tau3 + tau3/2
+JOB support=(3, 11, 37, 47, 53, 61, 71, 83) sign=(-1, -1, -1, -1) vars=[tau0, tau1, tau2, tau3] (equations only, D=1); verified sum c_i g_i == 1 by sympy.expand
+  c = -8*tau0 - 4
+  g = -tau2/2 - tau3/2
+  c = 4
+  g = tau1*tau3 + 1/4
+  c = -8*tau1 - 4
+  g = -tau2*tau3 + tau2/2
+  c = 8*tau3 - 4
+  g = -tau0/2 - tau1*tau2 - tau1/2
+  c = 4
+  g = -tau0*tau2 - tau0/2 - tau1/2 - tau2*tau3 - tau3/2

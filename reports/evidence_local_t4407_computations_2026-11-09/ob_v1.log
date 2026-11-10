@@ -1,0 +1,27 @@
+PARI stack size set to 6000000000 bytes, maximum size set to 6000001024
+conductor of 49a1 (x) chi_-4: 784 ; a_n(Em4)==chi_-4(n)a_n(f) n<=500: 1
+ N=1568 D=1: dim S_3/2 = 84  t=0s
+ N=1568 D=-4: dim S_3/2 = 0  t=0s
+ N=1568 D=8: dim S_3/2 = 84  t=0s
+ N=1568 D=-8: dim S_3/2 = 0  t=0s
+ N=1568 D=-7: dim S_3/2 = 0  t=0s
+ N=1568 D=28: dim S_3/2 = 82  t=0s
+ N=1568 D=-56: dim S_3/2 = 0  t=0s
+ N=1568 D=56: dim S_3/2 = 82  t=0s
+ N=3136 D=1: dim S_3/2 = 182  t=0s
+ N=3136 D=-4: dim S_3/2 = 0  t=0s
+ N=3136 D=8: dim S_3/2 = 180  t=0s
+ N=3136 D=-8: dim S_3/2 = 0  t=0s
+ N=3136 D=-7: dim S_3/2 = 0  t=0s
+ N=3136 D=28: dim S_3/2 = 180  t=0s
+ N=3136 D=-56: dim S_3/2 = 0  t=0s
+ N=3136 D=56: dim S_3/2 = 178  t=0s
+ N=1568 D=1: dim 84, joint kernel (T(p^2)=chi_-4(p)a_p(f), p=3,5,11) dim = 0  [47s]
+ N=1568 D=8: dim 84, joint kernel (T(p^2)=chi_-4(p)a_p(f), p=3,5,11) dim = 0  [43s]
+ N=1568 D=28: dim 82, joint kernel (T(p^2)=chi_-4(p)a_p(f), p=3,5,11) dim = 0  [192s]
+ N=1568 D=56: dim 82, joint kernel (T(p^2)=chi_-4(p)a_p(f), p=3,5,11) dim = 0  [154s]
+ N=3136 D=1: dim 182, joint kernel (T(p^2)=chi_-4(p)a_p(f), p=3,5,11) dim = 0  [340s]
+ N=3136 D=8: dim 180, joint kernel (T(p^2)=chi_-4(p)a_p(f), p=3,5,11) dim = 0  [225s]
+ N=3136 D=28: dim 180, joint kernel (T(p^2)=chi_-4(p)a_p(f), p=3,5,11) dim = 0  [1549s]
+ N=3136 D=56: dim 178, joint kernel (T(p^2)=chi_-4(p)a_p(f), p=3,5,11) dim = 0  [464s]
+elapsed 3014s

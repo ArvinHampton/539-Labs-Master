@@ -1,0 +1,32 @@
+== [B] Gauss sums sum_k chi(k) zeta^{nk} = chi(n) G in Z[zeta7] (exact) ==
+0 True S_n==G? 
+1 True S_n==G? True
+2 True S_n==G? True
+3 True S_n==G? 
+4 True S_n==G? True
+5 True S_n==G? 
+6 True S_n==G? 
+G^2 = -7
+=> sum_k chi(k)U(tau,k/7) = G*u, not u (Local sec.0 slip); G != 1 so (L) transfers to u by dividing by G
+== [C] symbolic algebra (exact sympy, expand==0 on polynomials) ==
+ m=k c/7: True  rho: True
+ psi-coefficient c z/2-(c t+d)m/2 = 0
+ total exponent (should be -mu d k^2): -d*k**2*mu
+ 4 tau tau2 w3 + z = 0
+ exponent - n z^2/(4nt+1) = 0
+ sqrt-prefactor square (-2i tau2)(-2i tau) - (4n tau+1) = 0
+ c2*d+c1-c*d2 = -c1*(a2*d2 - b2*c2 - 1) (=c1*(1-det2))
+== [K'] kappa on Gamma0(4): homomorphism check + generators (exact) ==
+ chi_{-4}(d): T-> 1  U1-> 1  -I-> -1 ; values kappa: 1,1,-1  => match
+ chi_{-4}(d) multiplicative on 20000 random pairs: True (also proved: c1 b2 + d1 d2 = d1 d2 mod 4)
+== [K''] independent Schreier generators of Gamma0(196) via P^1(Z/196), kappa by own word algorithm ==
+ index 336  #generators 115
+ Local-tree generator count: 166
+ own: tau0=3/11+1/13i  #gens=115  j^2/(c tau0+d)!=chi_-4(d): 0;  kappa(word sign)!=chi_-4(d): 0
+ own: tau0=-5/9+2/7i  #gens=115  j^2/(c tau0+d)!=chi_-4(d): 0;  kappa(word sign)!=chi_-4(d): 0
+ Local166: tau0=3/11+1/13i  #gens=166  j^2/(c tau0+d)!=chi_-4(d): 0;  kappa(word sign)!=chi_-4(d): 0
+ Local166: tau0=-5/9+2/7i  #gens=166  j^2/(c tau0+d)!=chi_-4(d): 0;  kappa(word sign)!=chi_-4(d): 0
+== [H] T(p^2) on u/2 = sum chi(k) k q^{k^2}: exact coefficient check, all primes p<=113, p!=2,7, n<=N ==
+ T(p^2)u = chi_{-7}(p)(1+p)u on n<=300 for all such p: True ; p=3,5,11,13 -> [-4, -6, 12, -14]
+== [I] FLOAT ILLUSTRATION (not proof): (L) with Utilde=sum chi(k)U(tau,k/7)=G u, 40 digits ==
+ Utilde/u = (-2.09997207878835e-40 + 2.64575131106459j)  i*sqrt7= (0.0 + 2.64575131106459j)

@@ -1,0 +1,7 @@
+order67 search log (2026-10-24, America/Chicago)
+Opened by hand: heavy-daily/2026-10-19-Bridge-C-Clean-v2/ (fulltext.txt; dir listing incl. bridge_c_clean_v2.tex); lines 690-712, 2421-2442, 2590-2631, 2822-2842, 2912-3215, 4027
+rg Clean_v2 fulltext: corner|EVEN|orthant|Δ-type|ϑ^c|4,14|indefinite -> ~60 lines shown; ρlab|A(2)|Δ-type -> 7 (ρlab only); Ξ|M_S -> 7 (Ξ only)
+rg tree (md,txt,tex,py,lean,json) [[4,14],[14,14]] -> 20+ files (heavy-daily Implications/K3-140, self-audit repo, _git_v8_unpushed_clone copies); read Implications .md and K3-140-check.md: N1 lattice only, no theta
+rg tree counts: Δ-type 39; corner~ρlab 29; EVEN~ρlab 18; A(2)~theta 8; M-law|weight-0/2 25 -> sampled hits are briefs/gates/audits restating ABSENT; scan killed per parent STOP-broadening
+theorems/ Ξ|M_S -> qgp-hep-integration.txt (hyperon, irrelevant)
+Folded prior exhaustive log: data/DEEP_HUNT_WRITTEN_2026-10-24.md (Search log section)

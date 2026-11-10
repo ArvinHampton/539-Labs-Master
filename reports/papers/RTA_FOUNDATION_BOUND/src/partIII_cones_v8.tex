@@ -1,0 +1,40 @@
+\subsection{Corner invariants of cones and the action of automorphs}\label{sec:cones}
+For a basis $(u_1,u_2)$ of $\Z^2$ with $Q(u_1),Q(u_2)>0$ and $Q$ positive definite on $K=\R_{\ge0}u_1+\R_{\ge0}u_2$, let $\chi_K$ be the weight equal to $1$ on the interior of $K$,
+$\frac12$ on each boundary ray and $\frac14$ at $0$. With the classes $r$, phases $f_r$ and period $N$ of Theorem~\ref{thm:A2even}, write $\nu=au_1+bu_2$ and let $(\rho_a,\rho_b)$
+be the coordinates of a representative of $r$. Define
+\[ \mathrm{Cor}_K=\sum_rf_r\Big[\bar B_1(\rho_a/N)\bar B_1(\rho_b/N)+\frac{B(u_1,u_2)}{4Q(u_2)}B_2(\rho_a/N)+\frac{B(u_1,u_2)}{4Q(u_1)}B_2(\rho_b/N)\Big]. \]
+\begin{proposition}\label{prop:cor}
+$\mathrm{Cor}_K$ is the coefficient of $t^0$ in $S^{\chi_K}_{\alpha,\beta}(\e(x)e^{-t})$. For $K=\R_{\ge0}^2$ it equals $A_2^{\rm corner}$.
+\end{proposition}
+\begin{proof}
+The proof of Theorem~\ref{thm:A2even} applies verbatim in the coordinates $(a,b)$, which are a unimodular change of variables and so map classes modulo $N$ bijectively.
+With $h(a,b)=e^{-Q(au_1+bu_2)}$ one has $\int_0^\infty\partial_ah(0,w)dw=-B(u_1,u_2)/(2Q(u_2))$ and $\int_0^\infty\partial_bh(v,0)dv=-B(u_1,u_2)/(2Q(u_1))$.
+\end{proof}
+\begin{proposition}\label{prop:subdiv}
+If $u_1,u_3,u_2$ are such that $(u_1,u_3)$ and $(u_3,u_2)$ are bases as above and $K=K_1\cup K_2$ with $K_1=\R_{\ge0}u_1+\R_{\ge0}u_3$, $K_2=\R_{\ge0}u_3+\R_{\ge0}u_2$, then
+$\mathrm{Cor}_{K_1}+\mathrm{Cor}_{K_2}=\mathrm{Cor}_K+\frac14\,\mathbf 1[\alpha\in\Z^2]$.
+\end{proposition}
+\begin{proof}
+$\chi_{K_1}+\chi_{K_2}-\chi_K$ vanishes except at $0$, where it is $\frac14$; a single point contributes its weight times its phase, which is $\e(B(0,\beta))=1$, to the coefficient of $t^0$.
+\end{proof}
+\begin{proposition}\label{prop:transport}
+Let $g\in\mathrm{GL}_2(\Z)$ with $g^{\mathsf T}Ag=A$, and let $\Gamma_g$ be the monomial matrix with $G_{g\alpha_j,g\beta_j}=\sum_k(\Gamma_g)_{jk}G_{\alpha_k,\beta_k}$ from the reduction rules. Then
+$\Gamma_g\,\mathrm{Cor}_K=\mathrm{Cor}_{g^{-1}K}$.
+\end{proposition}
+\begin{proof}
+$S^{\chi_K}_{g\alpha,g\beta}=\sum_{\mu\in\alpha+\Z^2}\chi_K(g\mu)\e(B(\mu,\beta))q^{Q(\mu)}=S^{\chi_{g^{-1}K}}_{\alpha,\beta}$; the reduction rules act termwise. Take the coefficient of $t^0$
+(Proposition~\ref{prop:cor}).
+\end{proof}
+\begin{corollary}\label{cor:sigma}
+For the reflection $\sigma(\nu)=(-\nu_1-7\nu_2,\nu_2)$, which fixes $\hat c'$, $\Gamma_\sigma=I$ on the $105$ companions, hence $\mathrm{Cor}_{\sigma K}=\mathrm{Cor}_K$ for $K=\R_{\ge0}^2$. For the unit
+$\gamma$, $\Gamma_\gamma A_2^{\rm corner}=\mathrm{Cor}_{\gamma^{-1}K}$ with $\gamma^{-1}K=\R_{\ge0}(13,-2)+\R_{\ge0}(7,-1)$.
+\end{corollary}
+\begin{proof}
+$\Gamma_\sigma=I$ is the statement of the proof of Proposition~\ref{prop:Bcp} ($\sigma\alpha\equiv\alpha$ and $B(\sigma\nu,\sigma\beta)\equiv B(\nu,\beta)$ for all companions, a finite exact check).
+Apply Proposition~\ref{prop:transport}.
+\end{proof}
+\begin{catbremark}
+$\Gamma_\gamma A_2^{\rm corner}$ differs from $A_2^{\rm corner}$ by $160\%$ of its norm and agrees with $\mathrm{Cor}_{\gamma^{-1}K}$ to $5.6\cdot10^{-15}$; Proposition~\ref{prop:subdiv} holds to
+$7.1\cdot10^{-15}$; the sum $\mathrm{Cor}_K+\mathrm{Cor}_{\sigma K}=2A_2^{\rm corner}$ satisfies the weight-one fixed-$M$ law on $x>0$ only to relative $0.059$ (Appendix~\ref{app:catB},
+item~\ref{catB:o23}).
+\end{catbremark}

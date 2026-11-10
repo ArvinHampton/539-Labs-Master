@@ -1,0 +1,2 @@
+# SOFTSF PRESS — PP Tubulin 22→13 + Wilson — 2026-10-31
+Not proved. Kerr still BLOCKED. Π as written has rank 8, so the claimed nonzero 13×13 determinant is in fact zero for any G_22; the Wilson closed form does not follow from the stated β. Only the elementary product ≠0 fact is proved and it loads nothing. NP-hardness of RPP stands independently. tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 tip_touched NO. No RECS. No CERT. REPORTS ONLY.

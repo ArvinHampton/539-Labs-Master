@@ -1,0 +1,2 @@
+# ACK — NL Soft SF tip Soft SF rebind t222u (2026-10-26, America/Chicago)
+NL acknowledges live tip ea4eb298… (pre-pins e84a3a81… / 60f6ec60… / … / d5f8b9d3… history). Stub e8c6fccb…→9c5a947b…. tip_touched NO; cite-only, no invent; Owner t1788s8775 Soft SF re-CONFIRM label cited (MR1 FINDINGS 0324b774… / WRITE 4656e09d… / stamp 345e2620…); Soft SF F3 CLOSED (MR1 §1r cited); FREEZE invent else; Soft SF invent HOLD tip fill else; Components HOLD (Owner Park); invent HOLD else; Packaging Owner-hold; Q7 KEEP. Requests Auditor Soft SF CONFIRM.

@@ -1,0 +1,1 @@
+PREREG.md, RESULTS.md, FINDINGS_DRAFT_t736u_2026-10-25.md, author_candidates/AUTHOR_CANDIDATE_GR2_nonvanishing_t736u_2026-10-25.md, logs/{PREREG.sha256,baseline_sha_verify.txt,search_hits.txt,exact_root_check.txt}, SHA256SUMS

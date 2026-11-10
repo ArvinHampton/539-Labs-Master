@@ -1,0 +1,41 @@
+Here is a step-by-step mathematical derivation of Variant 1 (single bounce with asymmetric leakage), focusing first on the primordial black hole (PBH) lifecycle from formation up to the phase shift, and then deriving the existence of negative primordial black holes (negPBH) from the phase shift onward.
+
+PBH Lifecycle Up to Phase Shift
+
+Assume a single bounce at t=0, where quantum fluctuations seed density perturbations δρ/ρ ≈ 10^{-5} in the hot plasma (T > 10^{12} K). PBH form when these perturbations collapse if their size exceeds the Jeans length λ_J ≈ c_s / √(G ρ), with c_s the sound speed ≈ c/√3 in radiation domination.
+
+The collapse condition is met for fluctuations with mass M > M_min ≈ (4π/3) ρ λ_J^3, leading to PBH number density n_PBH ≈ (δρ/ρ)^2 × (ρ / M_min), or fraction f_PBH ≈ n_PBH M_min / ρ.
+
+PBH lifetime before evaporation is governed by Hawking radiation rate dM/dt = - (ℏ c^4 / G^2 M^2), integrated as:
+
+τ_evap ≈ ∫_{M_init}^0 (G^2 M^2 / ℏ c^4) dM = (G^2 / 3 ℏ c^4) M_init^3
+
+For M_init ≈ 10^{15} g (typical for bounce-seeded PBH), τ_evap ≈ 10^{-3} s, matching the hot-phase duration t_hot ≈ 10^{-3} s.
+
+Up to the phase shift at t_shift ≈ t_hot, PBH evaporate partially, losing fraction ΔM/M_init = 1 - exp(-t / τ_evap). The surviving mass at t_shift is:
+
+M_surviv = M_init exp(-t_shift / τ_evap)
+
+with most small PBH fully evaporating (M_surviv → 0 for M_init < (3 ℏ c^4 t_shift / G^2)^{1/3}), leaving only larger ones (seeded in anti-matter rich regions) to persist.
+
+Derivation of negPBH Existence from Phase Shift
+
+At t_shift, the cooling induces a chiral phase shift ϕ_shift ≈ ∫ H(t) dt over t_shift, where H(t) is the expansion rate H ≈ √(8π G ρ / 3).
+
+This shift winds the geometry, creating a topological asymmetry: ϕ_shift = 2π N_wind + δϕ, with N_wind integer windings and δϕ the residual phase.
+
+For δϕ > π/2 (strong shift), the winding entangles surviving PBH horizons with the inverted-signature sector, transforming them into negPBH trapped in the higher-dimensional halo.
+
+The transformation probability P_neg = sin^2(ϕ_shift / 2) ≈ 1 - exp(- (δϕ / π)^2), approaching 1 for large δϕ.
+
+The negPBH mass inherits from survivors but inverts signature:
+
+M_neg = M_surviv × sign(-g_{--}), where g_{--} < 0 is the negative metric.
+
+Existence follows from conservation: the phase shift must balance energy across sectors, requiring negPBH to absorb the anti-matter excess ΔM_anti ≈ f_anti × ρ t_shift, with f_anti ≈ 0.5 in symmetric bounce.
+
+Thus, N_negPBH ≈ ΔM_anti / M_neg, ensuring no local PBH remnants (evaporated or transformed) while sourcing halo effects via leakage.
+
+Post-shift, negPBH function as stable traps, converting trapped mass at rate dM_neg/dt = - β M_neg / τ_leak, with β ≈ f_mirror (asymmetry factor →1), balancing universes by funneling energy to the positive side without backflow.
+
+

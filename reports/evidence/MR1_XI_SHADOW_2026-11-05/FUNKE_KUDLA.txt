@@ -1,0 +1,1860 @@
+                                             THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS, II
+
+                                                                        JENS FUNKE AND STEPHEN KUDLA
+arXiv:1708.02969v1 [math.NT] 9 Aug 2017
+
+
+
+
+                                                                                 1. Introduction
+
+                                          The theory of theta series attached to integral lattices L in rational quadratic spaces L ⊗Z Q
+                                          with bilinear form ( , ) of signature (p, q), pq > 0, has a long history including fundamental
+                                          work of Hecke, Siegel, Maass, and others. Siegel constructed theta series for such indefinite
+                                          lattices by using majorants and hence obtained functions depending on both an elliptic mod-
+                                          ular variable τ and a point z ∈ D, the space of oriented negative q-planes in V = L ⊗Z R.
+                                          These Siegel theta series have weight p−q 2 in τ , but, unlike the classical theta series for posi-
+                                          tive definite lattices, they are non-holomorphic. In joint work of the second author and John
+                                          Millson, [13], [14], and [15], a family of theta series valued in closed differential forms on D
+                                          was constructed; we will refer to these as theta forms. The series obtained by passing to
+                                          classes in the cohomology of the locally symmetric space Γ\D, where Γ is a subgroup of finite
+                                          index in the isometry group of L, were shown to be holomorphic modular forms of weight
+                                          p+q                q
+                                            2 valued in H (Γ\D).
+
+                                          The resulting theory provides one analogue of the classical holomorphic theta series in the
+                                          indefinite case. However, it is still an attractive challenge to define theta series for indefinite
+                                          lattices more directly by restricting the summation to lattice vectors in suitable subsets W
+                                          of V where the quadratic form is positive so that the series
+                                                           X                                                         1
+                                          (1.1)                Φ(x; W) qQ(x) ,            q = e(τ ) = e2πiτ , Q(x) = (x, x),
+                                                                                                                     2
+                                                         x∈h+L
+
+                                          is termwise absolutely convergence and hence defines a holomorphic function of τ . Here
+                                          Φ(·, W) is supported on W, perhaps valued in ±1. Unfortunately, such series are typically
+                                          not modular.
+
+                                          In his thesis, Zwegers [24] introduced a series of this type for V of signature (m − 1, 1), where
+                                                                                1
+                                                                       Φ(x; W) =  (sgn(x, C ′ ) − sgn(x, C) ),
+                                                                                2
+                                          for C and C ′ ∈ V negative vectors in the same component of the cone of negative vectors.
+                                          He showed that the resulting holomorphic series is not modular in general, but that it can
+                                          be competed to a (non-holomorphic) modular form of weight m      2 by adding a suitable series
+                                          constructed using the error function.
+
+                                          Recently, Alexandrov, Banerjee, Manschot and Pioline, [1], proposed a generalization of
+                                          Zwegers’ construction to the case of arbitrary signature (m − q, q) where Φ(x; W) = Φ
+                                                                                                                               q (x; C)
+                                                                                           1
+2                                JENS FUNKE AND STEPHEN KUDLA
+
+is given by
+                                             q
+                                             Y
+                                       −q
+(1.2)                     Φ
+                           q (x; C) = 2          ( sgn(x, Cj′ ) − sgn(x, Cj ) ),
+                                             j=1
+
+for a collection
+                         C = C  = {{C1 , C1′ }, {C2 , C2′ }, . . . , {Cq , Cq′ }},
+of pairs of negative vectors satisfying certain incidence relations. They introduced generalized
+error functions and, in the case q = 2, used them to construct a (non-holomorphic) modular
+completion of the series (1.1). Shortly thereafter, Nazaroglu [18] handled the case of general
+signature along the lines suggested in [1]. In both [1] and [18], the modularity of the non-
+holomorphic completion is established by using a result of Vigneras, [21], which asserts the
+modularity of theta like series built from a certain class of functions. The essential step is to
+show that suitable combinations of generalized error functions define functions in this class
+and, at the same time, are suitably linked to the function Φ   q (·, C). Sums of lattice vectors in
+more general positive polyhedral cones were considered by Westerholt-Raum, [22]; he again
+uses Vigneras to deduce modularity and also discusses the degenerate case where edges of
+the cone are allowed to be rational isotropic vectors.
+
+In this paper, we show that the indefinite theta series of [24], [1] and [18] can be obtained by
+integrating the theta forms for V of signature (p, q) over certain singular q-cubes determined
+by a collection C which is in ‘good position’. As indicated by the title, this paper is a sequel to
+[11] where such a result is proved for the case q = 2. We also consider the analogous integrals
+over singular simplices, where the input data is now a collection C = C △ = {C0 , C1 , . . . , Cq }
+of negative vectors in V in ‘good position’. In particular, any q of them span a negative q
+plane in V and these q-planes give the vertices of a singular simplex in D.
+
+To state the results more precisely, we need some notation. Let L be an even integral lattice
+in V with dual lattice L∨ . For τ = u + iv ∈ H and µ ∈ L∨ /L, the theta form is the closed
+ΓL -invariant q-form on D given by
+                                               X
+                               θµ (τ, ϕKM ) =      ϕKM (τ, x).
+                                                    x∈µ+L
+
+Here the Schwartz form
+                                                   p+q
+                               ϕKM (τ, x) = v − 4 (ω(gτ′ )ϕKM )(x).
+is obtained by the action ω(gτ′ ) of the Weil representation on the basic Schwartz form ϕKM (x),
+cf, section 2.2. A precise formula for ϕKM (x) is given in section 5.
+
+First consider the ‘cubical’ case. For a collection C = C  of q pairs of negative vectors, we
+can define a q-tuple of vectors
+                   B(s) = [(1 − s1 )C1 + s1 C1′ , . . . , (1 − sq )Cq + sq Cq′ ] ∈ V q ,
+for each s = [s1 , . . . , sq ] ∈ [0, 1]q . We say that C is in good position if the collection B(s)
+spans a negative q-plane for all s ∈ [0, 1]q . If C is in good position, we obtain an oriented
+singular q-cube
+                     φC : [0, 1]q −→ D,      s 7→ span{B1 (s1 ), . . . , Bq (sq )}p.o. ,
+                  THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS, II                                     3
+
+where the subscript ‘p.o.’ indicates that the given q-tuple defines the orientation. Let S  (C)
+be the resulting singular q-cube.
+
+Next consider the simplicial case. In this case, we suppose that the set of vectors C = C △ is
+linearly independent over R and that any q of them span a negative q-plane. Their span U
+is an oriented q + 1-plane of signature (1, q) and the dual basis C ∨ = {C0∨ , . . . , Cq∨ } consists
+of positive vectors. We say that C is in good position if, for all
+                                                                        q
+                                                                        X
+                      s = [s0 , . . . , sq ] ∈ ∆q = { s ∈ [0, 1]q+1 |          si = 1 },
+                                                                        i=0
+the vector                                            X
+                                          C ∨ (s) =          si Ci∨
+                                                         i
+is positive. For example, it suffices to require that all entries of the Gram matrix ((Ci∨ , Cj∨ ))
+are non-negative1. For C in good position, we obtain a map
+                                 φC : ∆q −→ D,               s 7→ C ∨ (s)⊥ ,
+where the ⊥ is taken in U and the orientation of φC (s) is determined by the normal vector
+C ∨ (s). We write S(C) for the resulting singular simplex. We also define
+                              Y  q                           q
+                                                              Y                 
+             △           −q−1                               q
+(1.3)       Φq (x, C) = 2           (1 − sgn(x, Cj )) + (−1)    (1 + sgn(x, Cj ) .
+                                   j=0                                  j=0
+
+
+We consider the theta integrals
+                                                  Z
+(1.4)                               Iµ (τ, C) =          θµ (τ, ϕKM ).
+                                                  S(C)
+
+Note that, by construction, Iµ (τ, C) is a (typically non-holomorphic) modular form of weight
+p+q
+ 2 with transformation law inherited from that of the theta form.
+
+For 1 ≤ r ≤ q and for a collection of vectors c = {c1 , . . . , cr } spanning an oriented negative
+r-plane, let Er (c, x), x ∈ V , be the generalized error function defined by (4.1). Finally, for
+x ∈ V , x 6= 0, let
+                                     Dx = {z ∈ D | x ⊥ z },
+and note that, if Q(x) > 0, then Dx is a totally geodesic subsymmetric space in D of
+codimension q. Otherwise, Dx is empty.
+
+Our main result is then the following.
+Main Theorem. Assume that C is in good position and let Φq (x, C) be Φ
+                                                                      q (x, C) (resp.
+  △
+Φq (x, C)) is the cubical (resp. simplicial) case.
+(i) The series
+                                        X
+(1.5)                                        Φq (x, C) qQ(x)
+                                         x∈µ+L
+
+  1This was pointed out to the second author by Sanders Zwegers at the Dublin Conference in June, 2017.
+4                                     JENS FUNKE AND STEPHEN KUDLA
+
+is termwise absolutely convergent.
+(ii) If Φq (x, C) 6= 0, then
+                                    Dx ∩ S(C) = φC (s(x))
+for a unique point s(x) ∈ [0, 1] (resp. ∆q ), the map φC is immersive at s(x), and
+                                q
+
+                                            Φq (x, C) = I(S(C), Dx )
+is the intersection number2 of S(C) and Dx at φC (s(x)).
+(iii) In the cubical case, the theta integral is given explicitly by
+                                X               X                      √
+(1.6)              Iµ (τ, C) =       (−1)q 2−q      (−1)|I| Eq (C I ; x 2v) qQ(x) ,
+                                    x∈µ+L                    I
+
+                                                                             / I and CjI = Cj′ if
+where for a subset I ⊂ {1, . . . , q}, C I is the q-tuple with CjI = Cj if j ∈
+j ∈ I, ordered by the index j.
+Moreover, Iµ (τ, C) is the modular completion of the series (1.5).
+(iii) In the simplicial case, the theta integral is given by
+                                                     [q/2]
+                                   X                 X           X                      √
+                                              q −q
+(1.7)               Iµ (τ, C) =           (−1) 2                        Eq−2r (C (I) ; x 2v) qQ(x) .
+                                  x∈µ+L              r=0         I
+                                                             |I|=2r+1
+
+where, for a subset I ⊂ {0, 1, . . . , q}, let C (I) be the collection of q + 1 − |I| elements where
+the Ci with i ∈ I have been omitted. Here E0 (. . . ) = 1.
+Remark 1.1. (1) The series on the right side of (1.6) coincides with that in [1] and [18], at
+least when the collection C satisfies their incidence conditions. The incidence conditions they
+impose on C, i.e., conditions expressed as requirements on the entries of the Gram matrix of
+C, imply that C is in good position. On the other hand, the ‘good position’ condition, which
+is a condition on the Gram matrix of the collection B(s) for all s ∈ [0, 1]q , is sufficient for
+our results. We leave aside the, perhaps subtle, problem of expressing this condition in terms
+of incidence.
+(2) Part (ii) of the theorem provides a geometric interpretation of the coefficients of the
+holomorphic generating series as intersection numbers. It would be interesting to see if this
+interpretation has any significance in the physics context which was the original motivation
+for [1].
+(3) The proof of (i) is already given in the general case in [11]. That the right side of (1.6) is
+the modular completion of the series (1.5) is, of course, a main result of [24], [1], and [18].
+(4) It is interesting that generalized error functions for negative r-planes with r < q occur in
+the explicit formula in the simplicial case. This phenomenon was pointed out by Westerholt-
+Raum for more general cones, [22]. The indefinite theta series associated to collections C △
+were also discussed by Zwegers in his talk at the Dublin conference on Indefinite Theta Func-
+tions in June 2017.
+
+Since the theta integral (1.4) can be computed termwise, the formulas of parts (iii) and
+(iv) follow immediately from the formulas for the integral of ϕKM (x) over S(C) given in
+Theorem 4.1 and Theorem 9.3 respectively. These results are, in turn, proved by induction
+    2If s(x) is on the boundary of [0, 1]q , this quantity is defined in (11.1) in section 11.
+                  THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS, II                           5
+
+on q, where the case q = 1 is an elementary calculation. The key points are the following.
+First note that both sides of the identities in Theorem 4.1 and Theorem 9.3 are smooth
+functions of x and C, so that it suffices to consider the case where x is regular with respect
+to C, i.e., where (x, C) 6= 0 for all C ∈ C. As already noted in [5], the Schwartz form ϕKM (x)
+comes equipped with an explicit primitive Ψ(x), defined on the set D − Dx . Taking care of
+the possible singularity, which under the regularity assumption occurs at most at a unique
+interior point of S(C), we can apply Stokes’ theorem. The boundary of S(C) consists of
+singular (q − 1)-cubes (resp. simplices) in totally geodesic subsymmetric spaces of the form
+
+                                    Dy′ = { z ∈ D | y ∈ z }
+
+for y = Cj or Cj′ in C. Note that Dy′ will then be isomorphic to the space of oriented negative
+(q − 1)-planes in the space Vy = y ⊥ , of signature (p, q − 1). Now the crucial (and remarkable!)
+fact is that the pullback of the primitive Ψ(x) to such a subspace Dy′ can be written as an
+                                                    V
+                                                    y
+integral transform of the Schwartz (q − 1)-form ϕKM    (prVy x) for Vy , cf. Proposition 6.2. By
+induction, we obtain an expression for the boundary integral as a sum of the corresponding
+signature (p, q − 1) theta integrals. Finally, we invoke an inductive identity for generalized
+error functions from [18], Proposition 7.3, to conclude the proof.
+
+Remark 1.2. (1) One can consider the theta integral I(τ, S) over any oriented q-chain S in
+D, and, if S is compact, this can again be computed termwise. If, moreover, the boundary
+of S consists of (q − 1) chains lying in Dy′ ’s, one can proceed by induction. In particular,
+our result gives an explicit formula for any q-chain written as a sum of simplices of the form
+S(C △ ). Moreover, since the theta forms are ΓL -invariant, their integrals over ΓL equivalent
+q-chains coincide.
+(2) We can also consider the theta integral I(τ, C) in the degenerate case, when some of the
+elements in C are rational isotropic vectors. Geometrically, this amounts to the q-chain S(C)
+going out to some of the rational cusps (of the arithmetic quotient) of D. However, while the
+theta integral over the non-compact region S(C) still is convergent by the results of [8] (for
+signature (m − 1, 1), see [6]), it is in general no longer termwise absolutely convergent (unless
+one imposes a “non-singularity” condition as in [10], see also [22]). One interesting example
+is signature (1, 2), where one can realize the fundamental domain for SL2 (Z) as a surface
+S(C) for a certain C, and the associated theta integral I(τ, C) gives Zagier’s non-holomorphic
+Eisenstein series of weight 3/2, see [4, 3].                          R
+(3) In the companion paper [5], we consider the theta integral D η ∧ θµ (τ, ϕKM ) against
+a compactly supported (p − 1)q differential form η on D. In particular, we establish the
+properties of the primitive Ψ(x) as a current on D.
+
+
+Our construction yields a formula for the image of the (typically non-holomorphic) modular
+form Iµ (τ, C) under the lowering operator −2iv 2 ∂∂τ̄ or, alternatively, for its shadow given by
+taking the complex conjugate of this. This formula implies the following, cf. section 8.
+
+Corollary 1.3. Suppose that C is rational collection, i.e., that C ∈ L ⊗Z Q for all C ∈ C.
+Then the shadow of Iµ (τ, C) is a linear combination of products of unary theta series of weight
+3                                                                           ⊥
+2 and complex conjugates of indefinite theta series for the spaces VC = C for C ∈ C.
+6                              JENS FUNKE AND STEPHEN KUDLA
+
+Here is an outline of the contents of the various sections. Section 2 contains an overview of the
+construction of theta forms, their modular transformation properties, and their relation to
+geodesic cycles. There is considerable overlap with the material in [5], although our notation
+and perspective here differs somewhat. Section 3 explains the singular q-cubes associated to
+collections C in good position and their intersection with the cycles Dx in the regular case.
+It should be noted that the role of the symmetric space D and the singular q-cubes is not so
+evident in [1] and [18]. The use of the ‘good position’ condition streamlines the treatment,
+although the important problem of finding equivalent incidence relations is left open. The
+explicit formula for the ‘cubical’ integrals of ϕKM (x) is given in Theorem 4.1 of Section 4. In
+Section 5, we give a more detailed discussion of the Schwartz forms ϕKM and their primitives.
+In Section 6 we prove the key formulas for the pullbacks of these forms to the spaces Dy′ .
+Section 7 contains the proof of Theorem 4.1. Section 8 contains the computation of the
+shadows. Section 9 contains the analogous computations in the simplicial case, where the are
+several crucial and interesting differences. Some technical details are provided in Appendix
+I.
+
+1.1. Thanks. The second author benefited from the Banff workshop on Modular forms in
+String Theory in September 2016, as well as from discussions with B. Pioline and S. Zwegers
+at the conference, Indefinite Theta Functions and Applications in Physics and Geometry, at
+Trinity College, Dublin in June of 2017.
+
+1.2. Notation. For vectors x and y in a non-degenerate inner product space V , ( , ) with
+Q(y) 6= 0, we write
+                                                   (x, y)
+                                     x⊥y = x −            y.
+                                                   (y, y)
+Note that
+                                                       (x, y)(x′ , y)
+                           (x⊥y , x′⊥y ) = (x, x′ ) −                 .
+                                                           (y, y)
+
+We write e(x) = e2πix .
+
+
+                          2. Theta forms and their integrals
+
+2.1. Preliminaries. We begin by reviewing some standard notation and constructions. A
+good reference is [19]. Suppose that L ( , ) is a lattice of rank m = p + q with an even integral
+symmetric bilinear form of signature (p, q) with pq > 0. Let L∨ ⊃ L be the dual lattice and
+set Q(x) = 12 (x, x). Let G = O(L ⊗Z R) be the orthogonal group and let
+                            ΓL = { γ ∈ G | γL = L, γ|L∨ /L = id }.
+Let V = L ⊗Z R and let
+                     D = D(V ) = { z ∈ Grq (V ) | ( , )|z < 0, z oriented }
+be the space of oriented negative q-planes in V . For z ∈ D, the associated Gaussian is
+                                      ϕ0 (x, z) = e−π(x,x)z ,
+                 THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS, II                               7
+
+where
+                                 R(x, z) = −(prz (x), prz (x)),
+and
+                                  (x, x)z = (x, x) + 2R(x, z)
+is the majorant determined by z. For fixed z, ϕ0 (·, z) = ϕ0 (z) ∈ S(V ) is a Schwartz function
+on V , while, for fixed x ∈ V , ϕ0 (x, ·) = ϕ0 (x) ∈ A0 (D) is a smooth function on D satisfying
+the equivariance
+                                        ϕ0 (gx, gz) = ϕ0 (x, z)
+for g ∈ G, or equivalently
+                              g∗ ϕ0 (x) = ϕ0 (g −1 x) =: ω(g)ϕ0 (x),
+where g∗ denotes the pullback of functions on D and ω(g) denotes the action of g on S(V ).
+Thus
+(2.1)                              ϕ0 ∈ [ S(V ) ⊗ A0 (D) ]G .
+
+The action ω of G on S(V ) commutes with the Weil representation action of the two-fold
+cover G′ = Mp2 (R) of SL2 (R) on S(V ). Recall that for b ∈ R and a ∈ R× , there are elements
+n′ (b), m′ (a), and w′ in G′ projecting to
+                                                                       
+                           1 u               a                             1
+                  n(b) =          , m(a) =            ,  and   w =
+                              1                 a−1                  −1
+in SL2 (R) whose Weil representation action is given by
+                  ω(n′ (b))ϕ(x) = e(uQ(x)) ϕ(x)
+                                     m
+                 ω(m′ (a))ϕ(x) = |a| 2 ϕ(ax)
+                                                                    Z
+                         ′
+                    ω(w )ϕ(x) = e(   p−q
+                                      8
+                                           ) ϕ̂(x) = e(   p−q
+                                                           8
+                                                                )           ϕ(y) e(−(x, y)) dy.
+                                                                        V
+                                                  1
+Then, for τ = u + iv ∈ H and gτ′ = n′ (u)m′ (v 2 ), we have
+                                   p+q
+                ω(gτ′ )ϕ0 (x, z) = v 4 e−2πvR(x,z) qQ(x) ,                   q = e(τ ) = e2πiτ .
+
+The following invariance property gives rise to the modularity of the theta series. Define a
+vector valued tempered distribution
+                                                              X
+                ΘL : S(V ) −→ C[L∨ /L],      ϕ 7→ Θ(ϕ; L) =        θµ (ϕ) eµ ,
+                                                                               µ∈L∨ /L
+
+where eµ ∈ C[L∨ /L] is the characteristic function of the coset µ + L and
+                                              X
+                                    θµ (ϕ) =        ϕ(x).
+                                                 x∈µ+L
+
+Let Γ′ be the inverse image of SL2 (Z) in G′ . Then there is a finite Weil representation ρL of
+Γ′ acting on C[L∨ /L], and the theta distribution ΘL satisfies
+                                 ΘL (ω(γ ′ )ϕ) = ρL (γ ′ )ΘL (ϕ).
+8                               JENS FUNKE AND STEPHEN KUDLA
+
+Let K ′ be the inverse image of SO(2) in G′ , and suppose that ϕ is eigenfunction of weight
+ℓ ∈ 12 Z for the Weil representation action of K ′ , i.e.,
+                                                                        
+                             ′                              cos θ sin θ
+                         ω(kθ )ϕ = e(ℓθ) ϕ,     kθ =                       .
+                                                           − sin θ cos θ
+
+Then the invariance of the theta distribution together with a standard calculation, [19], pp.
+90–98, implies that the C[L∨ /L]-valued theta series
+                            X                           ℓ
+                                  θµ (τ, z; ϕ) eµ = v − 2 ΘL (ω(gτ′ )ϕ)
+                            µ∈L∨ /L
+
+is a (non-holomorphic) vector-valued modular form of weight ℓ and type (ρL , C[L∨ /L]).
+
+The Gaussian is an eigenfunction of K ′ of weight p−q
+                                                   2 so that the Siegel theta series θµ (τ, z; ϕ0 )
+are components of vector valued modular forms and, moreover, via equivariance (2.1), are
+ΓL -invariant as functions of z, i.e.,
+                                      θµ (τ ; ϕ0 ) ∈ A0 (D)ΓL .
+For this semi-classical reformulation of Weil’s construction of theta functions we are following
+Shintani [19], cf. also [2].
+
+
+2.2. Theta forms. The basic idea is to replace equivariant families of Schwartz functions
+by equivariant families of Schwartz forms, i.e., Schwartz functions valued in differential forms
+on D. Let Ar (D) be the space of smooth r-forms on D. A main result of [13], [14] is the
+explicit construction of a family of Schwartz forms
+(2.2)                              ϕKM ∈ [ S(V ) ⊗ Aq (D) ]G .
+Thus, for x ∈ V and g ∈ G,
+                              g∗ ϕKM (x) = ϕKM (g−1 x) ∈ Aq (D).
+In particular, for fixed x ∈ V , ϕKM (x) is a Gx -invariant q-form on D. For example: ϕKM (0)
+is a G-invariant form. Under K ′ ,
+                                  ω(kθ )ϕKM = e( p+q
+                                                  2
+                                                     θ) ϕKM .
+Note the shift in weight! Moreover, the q-form ϕKM (x) is closed,
+                                           dϕKM = 0,
+where d : Aq (D) → Aq+1 (D) is the exterior derivative.
+
+Define the theta form
+                                                   (p+q)
+                             θµ (τ, ϕKM ) := v −     4     θµ (ω(gτ′ )ϕKM ).
+Then, by construction, θµ (τ, ϕKM ) is a closed ΓL -invariant q-form on D and hence defines
+a closed q-form on the (orbifold) quotient ML = [ΓL \D]. Moreover, as a function of τ ,
+θµ (τ, ϕKM ) is a component of a (non-holomorphic) modular form of weight p+q  2 and type
+         ∨
+(ρL , C[L /L]).
+                   THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS, II                         9
+
+2.3. Relation to geodesic cycles. The theta forms define cohomology classes for the locally
+symmetric space ML which are related to totally geodesic cycles. This was the original
+motivation for their constuction. We recall briefly the basic facts. For x ∈ V with x 6= 0, let
+Vx = x⊥ , and let
+                          Dx = {z ∈ D | R(x, z) = 0, i.e., z ⊂ Vx }.
+In particular, Dx ≃ D(Vx ) so that Dx is empty if Q(x) ≤ 0, and is a totally geodesic sub-
+symmetic space of codimension q if Q(x) > 0.
+
+Let prΓL : D → ΓL \D = ML , and, for x with Q(x) > 0, let
+                                       Z(x) = prΓL (Dx ),
+
+a totally geodesic codimension q-cycle in ML with an immersion
+                                 ix : Γx \Dx −→ Z(x) ⊂ Γ\D.
+Notice that Z(x) depends only on the ΓL -orbit of x.
+
+The following results are special cases of those obtained in [13], [14] and [15]:
+
+    (i) Suppose that η is a closed and compactly supported (p − 1)q-form on ML . Then
+            Z                       Z                  X Z            
+                η ∧ θµ (τ, ϕKM ) =      η ∧ ϕKM (0) +                η qQ(x) .
+              ML                      ML                 x∈µ+L         Z(x)
+                                                         Q(x)>0
+                                                          mod ΓL
+
+   (ii) Suppose that S is a compact closed (i.e., ∂S = 0) oriented q-cycle on ML . Then
+                 Z                 Z                X
+                    θµ (τ, ϕKM ) =   ϕKM (0) +            I(S, Z(x)) qQ(x) ,
+                    S                 S             x∈µ+L
+                                                    Q(x)>0
+                                                     mod ΓL
+
+       where I(S, Z(x)) is the intersection number of the cycles S and Z(x). In particular,
+       both series are termwise absolutely convergent and define holomorphic modular forms
+       of weight p+q
+                   2 .
+
+Note that these results exactly fit into the framework of (1.1). Additional discussion is given
+in [5]. Many interesting variations are possible! For example, the case of certain non-compact
+cycles S in ML is considered in joint work of the first author with John Millson, [6], [7], [9].
+
+2.4. Non-closed compact cycles. Suppose that S is a piecewise smooth oriented q-chain in
+the symmetric space D. Then, from the general machinery sketched in the previous sections,
+we obtain (non-holomorphic) modular forms, which we will refer to as indefinite theta series,
+                                             Z
+(2.3)                          Iµ (τ ; S) :=   θµ (τ ; ϕKM )
+                                                S
+of weight m
+          2 . Since S is compact, we can compute such integrals termwise. Define an operator
+                                                                Z
+(2.4)                     IS : S(V ) ⊗ Aq (D) −→ S(V ),   ϕ 7→     ϕ,
+                                                                   S
+10                               JENS FUNKE AND STEPHEN KUDLA
+
+from Schwartz forms to Schwartz functions by integrating out the form part. This operator
+commutes with the Weil representation action of G′ . Thus, we have
+                                    Z
+                                         (p+q)
+                        Iµ (τ, S) =   v − 4 Θµ (ω(gτ′ )ϕKM )
+                                           S
+                                               (p+q)                        
+                                      = v−       4     Θµ (ω(gτ′ ) IS (ϕKM ) ,
+so that the indefinite theta series (2.3) is just the theta series defined by the Schwartz function
+IS (ϕKM ). We obtain explicit formulas for the modular forms Iµ (τ, S) whenever we can
+compute the Schwartz function
+(2.5)                                     IS (ϕKM ) ∈ S(V )
+for a given q-chain S.
+
+The remainder of this paper is devoted to the computation in the case of the singular q-cubes
+defined in the next section. The resulting indefinite theta series are those defined by Zwegers
+[24] in the case of signature (m − 1, 1), by Alexandrov, Banerjee, Manschot, and Pioline [1]
+in the case of signature (m − 2, 2) and by Nazarolgu, [18], completing the proposal in [1], in
+the case of general signature.
+
+
+                                       3. Singular q-cubes
+
+The data C, cf. (3.1), introduced in [1] section 6 determines a singular q-cube S(C) in D,
+whose geometry we discuss in this section. We give an explicit formula in terms of generalized
+error functions for the integral (2.5) in the case when S = S(C) for C in ‘good position’.
+However, we have left open the problem of determining explicit conditions on the matrix of
+inner products of the vectors in C that are equivalent to good position.
+
+
+3.1. The singular q-cube S(C) and its faces. Let
+(3.1)                       C = {{C1 , C1′ }, {C2 , C2′ }, . . . , {Cq , Cq′ }}
+be a collection of q pairs of negative vectors in V . For a subset I ⊂ {1, . . . , q}, let C I be the
+ordered set {C1I , . . . , CqI } of q vectors where we take CjI = Cj if j ∈
+                                                                          / I and CjI = Cj ′ if j ∈ I.
+The vectors are ordered according to the index j. Thus, C ∅ = {C1 , . . . , Cq }, etc. We would
+like to have the following ‘incidence relations’:
+
+(Inc-1) Each collection C I spans an oriented negative q-plane
+                                         z I = span{C I }p.o. .
+(Inc-2) The oriented negative q-planes z I all lie on the same component of D.
+
+These relations, which can be achieved by imposing conditions on the determinants of minors
+of Gram matrices, should allow us to construct a singular q-cube with the points z I as the
+vertices. However, as already seen in [11], it will be more convenient to work with the
+following formalism.
+                       THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS, II                                                    11
+
+For s = [s1 , . . . , sq ] ∈ [0, 1]q , let
+                                             B(s) = [B1 (s1 ), . . . , Bq (sq )],
+where
+                                             Bj (sj ) = (1 − sj )Cj + sj Cj ′ .
+Definition 3.1. A collection C is said to be in good position if for all s ∈ [0, 1]q ,
+                           span{B(s)}p.o. = span{B1 (s1 ), . . . , Bq (sq )}p.o. ∈ D.
+
+If C is in good position, then relations (Inc-1) and (Inc-2) hold, and we obtain an oriented
+singular q-cube
+(3.2)          ρC : [0, 1]q −→ D,             s = [s1 , . . . , sq ] 7→ span{B1 (s1 ), . . . , Bq (sq )}p.o. ∈ D.
+with the z Ias its vertices. Let S(C) = ρC ([0, 1]q ) be its image in D. Note that the most
+degenerate case, in which Cj = Cj ′ for all j and S(C) is a point, is allowed.
+
+From now on, unless stated otherwise, we assume that C is in good position, so that ρC and
+S(C) are defined.
+
+As in [17], we define the front j-face
+         αj ρC : [0, 1]q−1 −→ D,               αj ρC (s1 , . . . , sq−1 ) = ρC (s1 , . . . , sj−1 , 0, sj , . . . , sq−1 ),
+and back j-face
+         βj ρC : [0, 1]q−1 −→ D,               βj ρC (s1 , . . . , sq−1 ) = ρC (s1 , . . . , sj−1 , 1, sj , . . . , sq−1 ).
+We write ∂j+ S(C) (resp. ∂j− S(C)) for the image of αj ρC (resp. βj ρC ), viewed as an oriented
+(q − 1)-cube. With this convention, the boundary of the oriented q-cube S(C) is given by
+                                                  q
+                                                  X
+(3.3)                                ∂S(C) =            (−1)j ∂j+ S(C) − ∂j− S(C)).
+                                                  j=1
+
+
+We define collections
+(3.4)                    C[j] = {{C1⊥j , C1′ ⊥j }, . . . , {C\
+                                                             j , Cj ′ }, . . . , {Cq⊥j , Cq ′ ⊥j }}
+
+and
+(3.5)                  C[j ′ ] = {{C1⊥j ′ , C1′ ⊥j ′ }, . . . , {C\
+                                                                  j , Cj ′ }, . . . , {Cq⊥j ′ , Cq ′ ⊥j ′ }}
+
+of (q − 1) pairs of negative vectors in Vj = Cj⊥ and Vj ′ = Cj⊥′ respectively.
+Lemma 3.2. If the collection C is in good position for V and D, then the collections C[j]
+and C[j ′ ] are in good position for Vj , D(Vj ) and Vj ′ , D(Vj ′ ) respectively.
+
+Proof. Note that, if we set s′ = [s1 , . . . , sq−1 ] ∈ [0, 1]q−1 and write αj s′ = [s1 , . . . , sj−1 , 0, sj , . . . , sq−1 ],
+then, since C is in good position,
+    αj ρC (s′ ) = ρC (αj s′ )
+                = span{B1 (s′1 ), . . . , Bj−1 (s′j−1 ), Cj , Bj+1 (s′j ), . . . , Bq (s′q−1 )}p.o.
+                = span{B1 (s′1 )⊥j , . . . , Bj−1 (s′j−1 )⊥j , Cj , Bj+1 (s′j )⊥j , . . . , Bq (s′q−1 )⊥j }p.o. ∈ D,
+12                                       JENS FUNKE AND STEPHEN KUDLA
+
+which implies that C[j] is in good position for Vj and D(Vj ). Similarly for C[j ′ ].                    
+
+We write S(C[j]) and S(C[j ′ ]) for the corresponding oriented singular (q − 1)-cubes in D(Vj )
+and D(Vj ′ ) with parametrizations analogous to (3.2),
+                                              ρC[j] : [0, 1]q−1 −→ D(Vj )
+and
+                                             ρC[j ′ ] : [0, 1]q−1 −→ D(Vj ′ ).
+
+In the notation defined in (6.3), we let κj = κCj [j] and κj ′ = κCj′ [j] so that
+(3.6)                                               κj ◦ ρC[j] = αj ρC ,
+and
+(3.7)                                               κj ′ ◦ ρC[j ′ ] = βj ρC .
+Here the key point to note is that
+             span{B1 (s1 ), . . . , Bq (sq )}p.o. |sj =0
+          = span{B1⊥j (s1 ), . . . , B(j−1)⊥j (sj−1 ), C j , B(j+1)⊥j (sj+1 ), . . . , Bq⊥j (sq )}p.o.
+          = κj ◦ ρC[j](s1 , . . . , sbj , . . . , sq ),
+where, for example,
+                                      B1⊥j (s1 ) = (1 − s1 )C1⊥j + s1 C1′ ⊥j .
+
+3.2. The regular case. Following (6.5) of [1], for a vector x ∈ V , let Φq (x, C) = Φ
+                                                                                     q (x, C)
+be as in (1.2), Recall that sgn(0) = 0.
+
+Recall from [11] that a vector x ∈ V is said to be regular with respect to C if (x, C) 6= 0 for
+all C ∈ C. Parts (i) and (ii) of the following are an analogue of Lemma 4.2 in loc. cit. and
+the proofs given there extend immediately to the general case. Part (iii) will be proved in
+Appendix I, where the definition of the local intersection number will also be reviewed.
+Lemma 3.3. Let C be a collection in good position.
+(i) If x ∈ V is regular with respect to C, then Dx ∩ S(C) is non-empty if and only if Φq (x, C) 6=
+0, and, in this case Dx ∩ S(C) = ρC (s(x)) for a unique point s(x) ∈ (0, 1)q given by
+                                                               (x, Cj )
+(3.8)                                        s(x)j =                            .
+                                                          (x, Cj ) − (x, Cj ′ )
+(ii) If x ∈ V is any vector with Φq (x, C) 6= 0, then Dx ∩S(C) consists of a single point ρC (s(x))
+with s(x) ∈ [0, 1]q given by (3.8).
+(iii) If x ∈ V is any vector with Φq (x, C) 6= 0 and s(x) is as in (ii), then the map ρC is
+immersive at s(x), and the quantity Φq (x) is the local intersection number of Dx and S(C)
+at s(x). A precise definition of this quantity is given in (11.1) in section 11.
+
+Again, as in [11], we say that C is in very good position if it is in good position and ρC is
+an embedding, i.e., an injective immersion. The following is easily checked by the general
+version of the calculation in section 6.3 of [11].
+                   THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS, II                               13
+
+Lemma 3.4. If C is in good position and the 2q vectors in C are linearly independent, then
+C is in very good position.
+
+
+               4. Cubical Integrals and generalized error functions
+
+In this section, we state our main result, an explicit expression for the Schwartz function
+(2.5) defined by the integral               Z
+                                       I(x; C) :=          ϕKM (x)
+                                                    S(C)
+of the q-form ϕKM (x) over the singular q-cube S(C) in D in terms of generalized error
+functions, as suggested in section 5 of [11]. Recall, [1], (6.1), that, for a collection of vectors
+negative C = {C1 , . . . , Cq } spanning an oriented q-plane z ∈ D, and for x ∈ V , the generalized
+error function is given by the integral
+                                   Z
+(4.1) Eq ({C1 , . . . , Cq }; x) = eπ(y−prz (x),y−prz (x)) sgn(C1 , y) sgn(C2 , y) . . . sgn(Cq , y) dy,
+                                   z
+where the measure dy is normalized so that
+                                    Z
+                                       eπ(y,y) dy = 1.
+                                            z
+We will frequently abbreviate this to Eq (C; x) and write
+(4.2)                    sgn(C; y) = sgn(C1 , y) sgn(C2 , y) . . . sgn(Cq , y).
+
+Our main result is the following explicit formula for I(x; C).
+Theorem 4.1. Suppose that C is in good position. Then
+                                     X                     √
+(4.3)            I(x; C) = (−1)q 2−q    (−1)|I| Eq (C I ; x 2) e−π(x,x) ,
+                                                I
+
+where, as in section 3.1, for a subset I ⊂ {1, . . . , q}, C I is the q-tuple with CjI = Cj if j ∈
+                                                                                                 /I
+      I
+and Cj = Cj ′ if j ∈ I, ordered by the index j.
+
+The 2q terms in the sum on the right side of (4.3) are generalized error functions associated
+to the vertices z I = span{C I }p.o. of S(C) of the singular q-cube evaluated on the projections
+of x to those q-planes.
+Remark 4.2. In the case q = 2, the expression given in Theorem 4.1 is the negative of the
+expression found in [11]. But there is a simple explanation, namely the orientation of S(C)
+used there is defined by the ‘loop’ in (3.11), but this is the opposite of the orientation we use
+here, defined by the singular square ρC .
+
+The proof of Theorem 4.1 by induction on q is given in section 7.
+
+
+               5. Review of the Schwartz form ϕKM and its relatives
+
+In this section, we review the basic facts about the Schwartz forms ϕKM (x) which we need.
+14                                JENS FUNKE AND STEPHEN KUDLA
+
+5.1. Local formulas. We fix a base point z0 ∈ D and an orthonormal basis {e1 , . . . , em },
+m = p + q, (er , es ) = ǫr δrs , ǫr = +1 for 1 ≤ r ≤ p and ǫr = −1 for r > p, with
+                                    z0 = span{ep+1 , . . . , em }p.o. .
+In particular V ≃ Rm , and the Gaussian is given by
+                                                     P       2                             X
+(5.1)              ϕ0 (x) = ϕ0 (x, z0 ) = e−π             j xj   ∈ S(V ),         x=           xi ei .
+                                                                                           i
+
+Let K be the stabilizer of z0 in G and write go = Lie(G) = ko + po where ko = Lie(K)
+and po are the +1 and −1 eigenspace for the Cartan involution at z0 . There is a canonical
+isomorphism Tz0 (D) ≃ p0 . Under the idenitfication
+                                   ∼
+                           V ⊗ V −→ End(V ),                (v1 ⊗ v2 )(v) = (v2 , v)v1 ,
+a basis for p0 is given by
+                        Xαµ = eα ⊗ eµ + eµ ⊗ eα ,                 1 ≤ α ≤ p < µ ≤ p + q.
+Let ωαµ be the dual basis for p∗o .
+
+By the equivariance property (2.2), ϕKM (x) is determined by the element of the complex
+                                                            V•
+                                            [S(V ) ⊗             (p∗o )]K
+obtained by restriction to the point z0 .
+
+For 1 ≤ s, t ≤ q, let
+                                                  p
+                                                  X
+                                       ω(s) =             xj ωj,p+s ∈ p∗o ,
+                                                  j=1
+and
+                                           p
+                                           X                                V2
+                               Ω(s, t) =          ωj,p+s ∧ ωj,p+t ∈              (p∗o ).
+                                           j=1
+For λ with 0 ≤ λ ≤ [q/2], we define q-forms
+                                                                                           
+(5.2) AOλ (q) = A ω(1) ∧ · · · ∧ ω(q − 2λ) ∧ Ω(q − 2λ + 1, q − 2λ + 2) ∧ · · · ∧ Ω(q − 1, q) ,
+where A is the alternation
+                                       1 X
+(5.3)     A ω(1) ∧ · · · ∧ Ω(t − 1, t) =     sgn(σ) ω(σ(1)) ∧ · · · ∧ Ω(σ(t − 1), σ(t)).
+                                         t!
+                                                     σ∈St
+
+Note that these are homogeneous of degree q − 2λ in x, and it will sometimes be useful to
+write AOλ (q)(x) to indicate this dependence. With this notation, we have the following
+formula for the restriction of ϕKM (x) at the point z0 , cf. [13] p. 371,
+                                                 [q/2]
+                                                 X
+                                           q/2
+(5.4)                       ϕKM (x) = 2                  C(q, λ) AOλ (q)(x) ϕ0 (x),
+                                                 λ=0
+where
+                                                          1 λ      t!
+(5.5)                             C(t, λ) = (−              )              .
+                                                         4π 2λ λ!(t − 2λ)!
+                   THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS, II                                  15
+
+There are two auxiliary q − 1 forms associated to ϕKM (x) which will play a fundamental role
+in our calculations. We will recall their relation to ϕKM (x) in a moment. The first of these
+is given by
+                                  [(q−1)/2] q
+                                     X X
+(5.6)       ψKM (x) = 2q/2−1                    (−1)s xp+s C(q − 1, λ) AOλ (q; s)(x) ϕ0 (x),
+                                    λ=0   s=1
+
+where the (q−1)-form AOλ (q; s) is defined by the alternation analogous to AOλ (q−1) but for
+the index set {1, . . . , ŝ, . . . , q} replacing {1, . . . , q −1}. For example, AOλ (q, q) = AOλ (q −1).
+
+Now we include the parameter τ = u + iv. Writing
+                                      ϕKM (x) = ϕ0KM (x) e−π(x,x) ,
+                                                 0
+                                      ψKM (x) = ψKM (x) e−π(x,x) ,
+we have, for q = e(τ ) and Q(x) = 12 (x, x),
+                                                1                       p+q
+(5.7)                 ϕKM (τ, x) = ϕ0KM (v 2 x) qQ(x) = v − 4 ω(gτ′ )ϕKM (x),
+
+and
+                                                    1
+                                      0
+(5.8)                 ψKM (τ, x) = v ψKM (v 2 x) qQ(x) .
+
+Note that
+                                   ∂                ∂  0     1
+                            −2i        ϕKM (τ, x) =    ϕKM (v 2 x) qQ(x) .
+                                  ∂ τ̄              ∂v
+
+On the set of x such that R(x, z0 ) 6= 0, let
+                                                        Z ∞
+                                                                   1
+(5.9)                              Ψ0KM (x) = −               ψ 0 (t 2 x) t−1 dt.
+                                                        1
+The point here is that
+                              1                            1  
+                       ψ 0 (t 2 x) = form valued poly in t 2 x · e−2πtR(x,z0 ) ,
+so that the integral only makes sense when R(x, z0 ) > 0. For x with R(x, z0 ) > 0, let
+                                                    Z ∞
+                                     1                         1
+(5.10)                         0
+                ΨKM (τ, x) := ΨKM (v x) q
+                                      2
+                                          Q(x)
+                                               =−       ψ 0 (t 2 x) t−1 dt qQ(x) .
+                                                                    v
+
+
+The following basic relations between the primitives ψKM (τ, x), ΨKM (τ, x) and the form
+ϕKM (τ, x) are given in [5], Section 3, Proposition 3.2.
+Lemma 5.1. (i)
+                                ∂                                     1
+                      −2iv 2                                    0
+                                    ϕKM (τ, x) = dψ(τ, x) = v dψKM (v 2 x) qQ(x) .
+                               ∂ τ̄
+(ii)
+                            dΨKM (τ, x) = ϕKM (τ, x),                   R(x, z0 ) 6= 0,
+and
+                               dΨ0KM (x) = ϕ0KM (x),                R(x, z0 ) 6= 0.
+16                                JENS FUNKE AND STEPHEN KUDLA
+
+Taking homogeneity in x of various terms into account and writing R = R(x, z0 ), we have
+the explicit formulas
+                                     [(q−1)/2] q
+                              q         X X
+                                −1
+(5.11)       ΨKM (τ, x) = 2   2                       (−1)s−1 xp+s C(q − 1, λ) AOλ (q; s)
+                                      λ=0       s=1
+                                                          1             1               
+                                            × (2πR)− 2 (q−2λ) Γ           (q − 2λ), 2πRv qQ(x) .
+                                                                        2
+and
+                                        [q/2]
+                                        X                           1
+(5.12)            ϕKM (τ, x) = 2q/2             C(q, λ) AOλ (q) v 2 (q−2λ) e−2πvR qQ(x) .
+                                        λ=0
+
+
+5.2. Global formulas. We now explain how the formulas of the previous section define
+global differential forms on D. We will use the notation and conventions explained in [11],
+especially the Appendix, which we now briefly recall.
+
+Let
+                     FD = { ζ = [ζ1 , . . . , ζq ] ∈ V q | (ζ, ζ) := ((ζi , ζj )) < 0 },
+be the bundle of oriented negative frames, and let
+                         OFD = { ζ = [ζ1 , . . . , ζq ] ∈ V q | (ζ, ζ) = −1q },
+be the bundle of oriented orthonormal negative frames. Let π : FD → D be the natural
+projection, taking ζ to its oriented span. Then, for ζ ∈ OFD, we have an identification of
+tangent spaces
+           V q ≃ Tζ (FD) ⊃ Tζ (OFD) = { η = [η1 , . . . , ηq ] ∈ V q | (η, ζ) + (ζ, η) = 0 }.
+For z ∈ D, we let U (z) = z ⊥ . Then the ‘horizontal’ subspace U (z)q ⊂ Tζ (OFD) is identified
+with Tz (D) under dπζ . Note that, while the space U (z)q depends only on z, the identification
+with Tz (D) depends on ζ. The identifications for different choices of ζ differ by the action of
+SO(q).
+                                                                                              V
+A priori, the expressions given in (5.12) and (5.11) are elements of S(V ) ⊗ r (p∗o ) with r = q
+and q − 1 respectively, where po is identified with the tangent space to D at the base point
+                                 z0 = span{ep+1 , . . . , ep+q }p.o. ∈ D
+determined by our chosen orthonormal basis. They yield global formulas as follows. For any
+ζ ∈ OFD, the function R(x, z) is defined by R(x, z) = (x, ζ)(ζ, x). For vectors η = [η1 , . . . , ηq ]
+and µ = [µ1 , . . . , µq ] in U (z)q , define
+(5.13)              ω(s)(η) = (x, ηs ),            Ω(s, t)(η, µ) = (ηs , µt ) − (ηt , µs ).
+Also note that, in the global version of (5.11),
+(5.14)                                          xp+s = −(x, ζs ).
+
+Lemma 5.2. With these definitions, the q-forms AOλ (q) and q − 1-forms AOλ (q; s) on
+U (z)q are invariant under SO(q) and hence define forms on Tz (D).
+                  THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS, II                                 17
+
+Proof. We observe that for some non-zero constant c,
+                                                                                                 
+                                          (x, η11 ) . . . (x, ηq−2λ
+                                                               1       1
+                                                                    ) ηq−2λ+1 ...             ηq1
+                  1          q           ..                   .
+                                                               ..        .
+                                                                         ..                    .. 
+        AOλ (q)(η , . . . , η ) = c det  .                                                     .
+                                              (x, η1q ) . . .            q
+                                                                    (x, ηq−2λ    q
+                                                                              ) ηq−2λ+1 ...   ηqq
+where, in expanding the determinant, the product of vectors is taken using ( , ).                     
+
+Thus (5.12) (resp. (5.11)) defines a global q form ϕKM (τ, x) on D (resp. a global q − 1-form
+ΨKM (τ, x) on D − Dx ) and these forms satisfy
+                                     dΨKM (τ, x) = ϕKM (τ, x)
+on D − Dx .
+
+Remark 5.3. The formula for the pullback for these forms to OFD involves additional terms
+determined by the requirement that the forms vanish if one of the input tangent vectors is
+vertical, i.e., in the kernel of dπζ . We will not need these expressions.
+
+
+                  6. The pullback to certain sub-symmetric spaces
+
+Suppose that y ∈ V is a negative vector, and let
+                                                  Vy = y ⊥ ,
+
+                                      Dy′ = { z ∈ D | y ∈ z},
+and
+                         D(Vy ) = {z = oriented neg. (q − 1)-plane in Vy }.
+For the properly oriented orthogonal frame bundle OFD(Vy ) → D(Vy ), there is an embedding
+(6.1)                         κy : OFD(Vy ) ֒→ OFD,                      ζ 7→ [y, ζ],
+                     1
+where y = y|(y, y)|− 2 , and a resulting embedding
+                                                        ∼
+(6.2)                                κy : D(Vy ) −→ Dy′ ⊂ D.
+
+A fundamental result is the following pullback formula, which we find rather striking
+
+Proposition 6.1. For x ∈ V , write x = −(x, y) y + x⊥y , so that x⊥y is the Vy -component of
+x. Then
+(i)
+                                      1                         2   V ,0
+                   κ∗y ψKM
+                        0
+                           (x) = 2− 2 (x, y) e−2π(x,y) ϕKM
+                                                         y
+                                                           (x⊥y ).
+
+(ii)
+                                      1   3                          2      1     2     V
+               κ∗y (ψKM (τ, x)) = 2− 2 v 2 (x, y) e−2πv(x,y) q− 2 (x,y) ϕKM
+                                                                          y
+                                                                            (τ, x⊥y ).
+        V ,0
+       y
+Here ϕKM (τ, ·) is the ϕ0KM Schwartz (q − 1)-form on D(Vy ).
+18                                        JENS FUNKE AND STEPHEN KUDLA
+
+Proof. The map on tangent spaces is given by
+          dκy : Tζ (OFD(Vy )) −→ Tκy (ζ) (OFD),                    η = [η1 , . . . , ηq−1 ] 7→ [0, η1 , . . . , ηq−1 ],
+and this map is compatible with the ‘horizontal’ subspaces. It follows that any term in
+ 0
+ψKM  (x) involving an index s = 1 in the differential form will vanish under pullback. Thus,
+by (5.6), we have
+                                                  [(q−1)/2]
+                        q                    2
+                                                      X
+        κ∗y ψKM
+             0
+                (x) = 2 2 −1 (x, y) e−2π(x,y)                   C(q − 1, λ) AOλ (q − 1)(x⊥y ) e−2πR(x⊥y ,ζ)
+                                                      λ=0
+                        − 12          −2π(x,y)2    V ,0
+                                                    y
+                    =2         (x, y) e           ϕKM (x⊥y ).
+Passing to ψKM (τ, x) via (5.8) and noting that
+                                            Q(x) = −(x, y)2 + Q(x⊥y ),
+we obtain the claimed formula.                                                                                            
+
+Next consider the (q − 1)-form Ψ0KM (x). Using the expressions just found and Lemma 5.1,
+we have the following.
+Corollary 6.2. On the subset of D(Vy ) for which κy (z) ∈ / Dx ,
+                                           Z ∞
+                                  1                 2     2  Vy ,0
+                κ∗y Ψ0KM (x) = −2 2 (x, y)     e−2πt (x,y) ϕKM     (tx⊥y ) dt.
+                                                            1
+
+
+In the next section, it will be useful to have the following variant, which involves a shift in
+the orientations. For an index j, 1 ≤ j ≤ q, define
+(6.3)              κy [j] : OFD(Vy ) ֒→ OFD,                ζ 7→ [ζ1 , . . . , ζj−1 , y, ζj , . . . , ζq−1 ],
+and write κy [j] : D(Vy ) −→ D for the corresponding embedding of symmetric spaces. Of
+course, κy = κy [1] and, the embeddings of symmetric spaces only depend on the parity of j.
+Corollary 6.3. (i) On the subset of Dy′ for which κj (z) ∈  / Dx ,
+                                                 Z ∞
+                                        1                 2     2  Vy ,0
+             κy [j]∗ Ψ0KM (x) = (−1)j 2 2 (x, y)     e−2πt (x,y) ϕKM     (tx⊥y ) dt.
+                                                                  1
+(ii) On Dy′ ,
+                                                  1   3                         2    1       2   V
+              κ∗y (ψKM (τ, x)) = (−1)j−1 2− 2 v 2 (x, y) e−2πv(x,y) q− 2 (x,y) ϕKM
+                                                                                 y
+                                                                                   (τ, x⊥y ).
+
+
+                                           7. Proof of Theorem 4.1
+
+For convenience, we remove a factor independent of z and write
+                                           ϕKM (x) = ϕ0KM (x) e−π(x,x) .
+In this section, we compute the cubical integrals
+                                             Z
+                                  0
+                                 I (x; C) =       ϕ0KM (x).
+                                                                S(C)
+                    THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS, II                               19
+
+7.1. The regular case. First suppose that x is regular with respect to C, so that, by
+Lemma 3.3, the intersection Dx ∩ S(C) is either empty or consists of a single interior point
+ρC (s(x)) depending on whether Φq (x, C) vanishes or not. If Φq (x, C) 6= 0 and for ǫ > 0
+sufficiently small, define a collection
+
+         C ǫ (x) = {{B1 (s(x)1 − ǫ), B1 (s(x)1 + ǫ)}, . . . , {Bq (s(x)q − ǫ), Bq (s(x)q + ǫ)}}.
+
+For simplicity, we will abbreviate this as
+
+                                 C ǫ = C ǫ (x) = {{C1ǫ , C1ǫ′ }, . . . , {C1ǫ , Cqǫ′ }}.
+
+The following result illustrates the convenience of the ‘good position’ formulation.
+
+Lemma 7.1. The collection C ǫ (x) is in good position.
+
+
+Proof. We note that, for t ∈ [0, 1],
+
+                (1 − t)Cjǫ + tCje′ = (1 − s(x)j + ǫ − 2tǫ)Cj + (s(x)j − ǫ + 2tǫ)Cj ′
+
+so that, for t ∈ [0, 1]q ,
+                                    ρC ǫ (x) (t) = ρC (s(x) − ǫ + 2ǫt) ∈ D,
+i.e., C ǫ (x) is in good position.                                                                    
+
+
+By construction, the singular q-cube S(C ǫ (x)) contains the point Dx ∩ S(C). For x regular
+with respect to C and Φq (x, C) = 0, we let S(C ǫ (x)) be the empty set. In general, we let
+
+                                         S ǫ (x; C) = S(C) − int S(C ǫ ).
+
+Then Stokes’ Theorem and the inductive relation of Corollary 6.2, imply the following induc-
+tive formula.
+
+Proposition 7.2. Suppose that x is regular with respect to C. Then the set Dx does not meet
+∂S(C), the integral
+                                           Z
+                               00
+                              I (x; C) :=         Ψ0KM (x)
+                                                             ∂S(C)
+
+is well defined, and
+                                 I 0 (x; C) = I 00 (x; C) − lim I 00 (x; C ǫ (x)).
+                                                                ǫ↓0
+
+Moreover,
+                           q
+                           X           Z ∞                                    
+                             1
+               00                            −2πt2 (x,C j )2 0
+(7.1)         I (x; C) = 2   (x, C j )
+                             2              e               I (tx⊥j ; C[j]) dt
+                                 j=1                 1
+                                                     Z ∞                                        
+                                                           −2πt2 (x,C j ′ )2 0             ′
+                                       − (x, C j ′ )      e                 I (tx⊥j ′ ; C[j ]) dt .
+                                                         1
+
+where C[j] and C[j ′ ] are given by (3.4) and (3.5).
+20                                JENS FUNKE AND STEPHEN KUDLA
+
+Proof. Combining (3.3), (3.6), (3.7), and Corollary 6.3, we obtain
+                        X q        Z                   Z              
+             00                  j           0                   0
+            I (x; C) =      (−1)           ΨKM (x) −           ΨKM (x)
+                           j=1               ∂j+ S(C)                    ∂j− S(C)
+
+                          q
+                          X       Z                                     Z                                 
+                        =   (−1)j
+                                                       κ∗j Ψ0KM (x) −                     κ∗j ′ Ψ0KM (x)
+                           j=1               S(C[j])                         S(C[j ′ ])
+
+                                q
+                                X               Z ∞                                     
+                            1                             2        2
+                        = 22          (x, C j )      e−2πt (x,C j ) I 0 (tx⊥j ; C[j]) dt
+                                j=1                1
+                                               Z ∞                                        
+                                                     −2πt2 (x,C j ′ )2 0             ′
+                                 − (x, C j ′ )      e                 I (tx⊥j ′ ; C[j ]) dt ,
+                                                       1
+as claimed.                                                                                                    
+
+7.2. The case q = 1. As a basis for the inductive proof of Theorem 4.1, we first suppose
+that q = 1, so that sig(V ) = (m − 1, 1). This case is discussed in several places, [12], [5], [16],
+etc., but we give the calculation for convenient reference. We have
+                        D ≃ {ζ ∈ V | Q(ζ) = −1},                      z = span{ζ}p.o. ,
+and the tangent space at z ∈ D is
+                                           Tz (D) ≃ U (z) := z ⊥ .
+For any x ∈ V the 1-form ω(1) on D is defined by
+                           ω(1)z (η) = (x, η),                   η ∈ U (z) ≃ Tz (D),
+and the Schwartz form is given by
+                                                           1
+                                      ϕ0KM (x) = 2 2 ω(1) e−2πR(x,z) ,
+with R(x, z) = (x, ζ)2 . Take C, C ′ ∈ V such that
+                             Q(C) < 0,          Q(C ′ ) < 0,          (C, C ′ ) < 0,
+where the third condition insures that
+                                                                  1
+                        {C}p.o. ≃ C = C |(C, C)|− 2 ,                    {C ′ }p.o. ≃ C ′
+lie on the same component of D. For s ∈ [0, 1], we define
+                                         B(s) = (1 − s)C + sC ′ ,
+and note that
+              (B(s), B(s)) = (1 − s)2 (C, C) + 2s(1 − s)(C, C ′ ) + s2 (C ′ , C ′ ) < 0,
+so that the collection C = {{C, C ′ }} is in good position. Writing
+                                                                                 1
+                                 ζ = ζ(s) = B(s)|(B(s), B(s))|− 2 ,
+we obtain a geodesic curve
+                          φC : [0, 1] −→ D,                    s 7→ {B(s)}p.o. ≃ ζ(s)
+                  THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS, II                                                21
+
+
+joining C and C ′ . The tangent vector to this curve will be ζ̇ = ds d
+                                                                       ζ, and
+                                      Z 1
+                                    1                            2
+                     I 0 (x; C) = 2 2     (x, ζ̇(s)) e−2π(x,ζ(s)) ds
+                                            0
+                                         Z 1                     Z ∞                                 !
+                                    1               ∂                               −2πt2
+                              =2    2                     −                     e               dt       ds
+                                            0       ∂s           (x,ζ(s))
+                                            Z ∞                                 Z ∞                            !
+                                    1
+                                                          −2πt2                                     −2πt2
+                              =2    2                    e             dt −                     e             dt .
+                                                (x,C)                               (x,C ′ )
+
+Since                         Z ∞
+                                             2        3         √
+                                        e−2πt dt = 2− 2 (1 − E(u 2)),
+                                u
+for
+                                    Z u                                              Z |u|
+                                                −πt2                                                     2
+                         E(u) = 2               e        dt = 2 sgn(u)                          e−πt dt,
+                                        0                                              0
+as in [23], we obtain the expression
+                                   1             √              √ 
+                         I 0 (x; C) = E((x, C ′ ) 2) − E((x, C) 2)
+                                   2
+                                   1             √             √ 
+                                =     E1 (C ′ , x 2) − E1 (C, x 2) ,
+                                   2
+which is the q = 1 case of Theorem 4.1. Here we use the fact that, for C ∈ V with Q(C) < 0,
+a simple calculation shows that E1 (C; x) = E((x, C)). Note that in this calculation we have
+not used the Stokes’ theorem argument. However, it is instructive to note that
+                                                             1                                  2
+                                 0
+                                ψKM (x) = 2− 2 (x, ζ) e−2π(x,ζ) ,
+so that, for z = span{C}p.o. ∈ D − Dx , the primitive is given by
+                                             Z ∞
+                                   − 21                     2   1
+                       0
+                      ΨKM (x) = −2 (x, C)         e−2πt(x,C) t− 2 dt
+                                                                 1
+                                                             Z ∞
+                                            1                                   2           2
+                                = −2 2 (x, C)                         e−2πt (x,C) dt
+                                                             1
+                                                             Z ∞
+                                                                                        2
+                                = −sgn(x, C)                     √              e−πt dt
+                                                                     2|(x,C)|
+                                             Z √2|(x,C)|              
+                                1                          −πt2
+                              = sgn(x, C) 2               e     dt − 1
+                                2               0
+                                1           √                 
+                              =    E1 (C; x 2) − sgn(x, C) .
+                                2
+Thus the Stokes’ theorem calculation gives
+            Z                               √                              √
+  00                          1                                                             
+ I (x; C) =        Ψ0KM (x) =    E1 (C1′ ; x 2) − sgn(x, C1′ ) − E1 (C1 ; x 2) + sgn(x, C1 ) ,
+             ∂S(C)            2
+so that the basis for Zwegers ‘completion’ construction emerges.
+22                                     JENS FUNKE AND STEPHEN KUDLA
+
+7.3. Induction. Next we consider the inductive step. Note that we are assuming that x is
+regular with respect to C so that (7.1) holds, and we suppose that the identity (4.3) holds for
+all q ′ < q and all C ′ in good position. Let I[j] and I[j ′ ] be subsets of {1, . . . , b
+                                                                                         j, . . . , q} and let
+                          ′
+C[j]I[j] (resp. C[j ′ ]I[j ] ) be obtained by the recipe defining C I in Theorem 4.1, starting with
+the set C[j] defined in (3.4) (resp. the set C[j ′ ] defined in (3.5) ). Then (7.1) becomes
+                  X q            Z ∞                                        
+ 00
+         √                               −πt2 (x,C j )2 0
+                                                                √
+I (x/ 2; C) =          (x, C j )        e              I (tx⊥j / 2; C[j]) dt
+                  j=1                  1
+                                          Z ∞                                           
+                                                −πt2 (x,C j ′ )2 0
+                                                                           √      ′
+                            − (x, C j ′ )      e                I (tx⊥j ′ / 2; C[j ]) dt
+                                             1
+                                      q  X
+                                      X                                         Z ∞                                                  
+                        q−1 1−q                         |I[j]|                         −πt2 (x,C j )2            I[j]
+(7.2)          = (−1)             2                (−1)              (x, C j )         e                Eq−1 (C[j]      ; tx⊥j ) dt
+                                      j=1   I[j]                                 1
+
+                       X                           Z ∞                                             
+                            |I[j ′ ]|                    −πt2 (x,C j ′ )2          ′ I[j ′ ]
+                     −  (−1)            (x, C j ′ )     e                 Eq−1 (C[j ] ; tx⊥j ′ ) dt    .
+                        I[j ′ ]                           1
+
+
+
+We want to compare this to the expression
+                                     X
+                               −2−q     (−1)|I| Eq (C I ; x).
+                                                    I
+
+The key is to relate the individual quantities Eq (C I ; x) in this sum and the terms on the right
+side of (7.2) where I = I[j] or I = {j}∪ I[j ′ ]. Note that, if I = I[j] then the collection C[j]I[j]
+spans a negative q −1-plane in Vj which maps to z I under κj . Similarly, if I = {j}∪I[j ′ ], then
+                         ′
+the collection C[j ′ ]I[j ] spans a negative q − 1-plane in Vj ′ which maps to z I under κj ′ . Thus,
+we are collecting all of the terms which ‘correspond to’ a given vertex of the q-cube S(C).
+The required identities are all consequences of that for I = ∅, and thus the main identity
+needed is the following.
+
+Proposition 7.3. Suppose that x is regular with respect to C. Then
+                                   Xq           Z ∞
+                                                        2        2
+(7.3)   Eq (C; x) − sgn(C; x) = −2    (x, C j )     e−πt (x,C j ) Eq−1 (C[j]; tx⊥j ) dt,
+                                              j=1                1
+
+                                                     cj , . . . , Cq⊥j }, and sgn(C; x) is defined in (4.2).
+where C = {C1 , . . . , Cq }, C[j] = {C1⊥j , . . . , C
+
+Remark 7.4. This result is just an integrated version of equation (25) in Proposition 3.6 in
+[18]. For convenience, we give the proof, taken from [18], in our notation.
+
+
+Proof. Let Z be the negative q-plane spanned by C = {C1 , . . . , Cq }, and, for y, y ′ ∈ Z, let
+((y, y ′ )) = −(y, y ′ ). We also suppose that x = prZ (x). If f is a smooth function on Z, then
+                                 Z ∞                        Z ∞
+                                                                d
+(7.4)                         −      ((∇f (t x), x)) dt = −        {f (tx)} dt
+                                  1                          1  dt
+                                                              = f (x) − lim f (tx).
+                                                                             t→∞
+                  THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS, II                           23
+
+Here ∇ is the gradient operator and we assume that the radial limit of f exists. On the other
+hand, by (25) Proposition 3.6 of [18],
+                                        X                           2
+(7.5)           − ((∇Eq (C; x), x)) = 2   ((x, C j )) e−π ((x,C j )) Eq−1 (C[j]; x⊥j ).
+                                               j
+
+Moreover, for x regular with respect to C, we have, [1] and [18], Remark p.7,
+(7.6)                                lim Eq (C; tx) = sgn(C; x).
+                                     t→∞
+
+For convenience, we will give the proof of (7.5) in Appendix I. Combining them and noting
+that the identity (7.4) is valid for the function f (x) = Eq (C; x) when x is regular with respect
+to C, we have
+                                        X            Z ∞
+                                                              2        2
+          Eq (C; x) − sgn(C; x) = −2       (x, C j )     e−π t (x,C j ) Eq−1 (C[j]; tx⊥j ) dt,
+                                           j             1
+
+as required.                                                                                    
+
+Corollary 7.5.
+                                          X                       √                 
+                I 00 (x; C) = (−1)q 2−q        (−1)|I| Eq (C I ; x 2) − sgn(C I ; x) ,
+                                           I
+
+and
+                                                                   X                   √
+          I 0 (x; C) = I 00 (x; C) + (−1)q Φq (x; C) = (−1)q 2−q    (−1)|I| Eq (C I ; x 2).
+                                                                    I
+
+
+Note that the second identity in Corollary 7.5 follows from Proposition 7.2, since the first
+identity implies that
+                              lim I 00 (x; C ǫ (x)) = −(−1)q Φq (x; C).
+                              ǫ↓0
+
+The identity of Theorem 4.1 follows immediately from this and the continuity of E(C I ; x)
+with respect to C I .
+
+Corollary 7.6.
+                                     Z
+(7.7)                I(τ, x, C) :=             φ∗C (ϕKM (τ, x))
+                                      [0,1]q
+                                                        X                   √
+                                = qQ(x) (−1)q 2−q        (−1)|I| Eq (C I ; x 2v)
+                                                         I
+
+
+
+                         8. Shadows of indefinite theta series
+
+In this section, we compute the shadow of Iµ (τ, C), i.e., the complex conjugate of its image
+under the lowering operator −2iv 2 ∂∂τ̄ . The crucial facts are the relation (i) of Lemma 5.1,
+                                           ∂
+                                −2iv 2         ϕKM (τ, x) = dψ(τ, x),
+                                          ∂ τ̄
+24                                        JENS FUNKE AND STEPHEN KUDLA
+
+and the pullback identity (ii) of Lemma 6.3. Then, as in the proof of Proposition 7.2, we
+have
+                                                   X Z
+                               2 ∂
+(8.1)                    − 2iv       {Iµ (τ, C)} =           ψ(τ, x),
+                                ∂ τ̄                   ∂S(C)           x∈µ+L
+
+and
+           Z                                        q 
+                                                    X                                                 1
+                                     − 12       3                                           2                     2
+(8.2)                    ψ(τ, x) = 2        v   2           (x, C j ′ ) e−2πv(x,C j′ ) q− 2 (x,C j′ ) I(τ, x⊥j ′ , C[j ′ ])
+               ∂S(C)                                j=1
+                                                                                                                                     
+                                                                         −2πv(x,C j )2           − 21 (x,C j )2
+                                                          − (x, C j ) e                     q                     I(τ, x⊥j , C[j])       .
+
+where we use the notation introduced in Corollary 7.6. The combination of (8.1), (8.2) and
+(7.7) yields an explicit formula for the shadow of Iµ (τ, C), a (typically non-holomorphic)
+modular form of weight 2 − p+q2 .
+
+Now suppose that the collection C is rational. For each j, write
+                                            L0j = L ∩ QCj ,                 L1j = L ∩ Vj
+so that, for suitable coset representatives µ0j,r ∈ (L0j )∨ and µ1j,r ∈ (L1j )∨ ,
+                                     G                                 
+                            µ+L=         (µ0j,r + L0j ) ⊕ (µ1j,r + L1j ) .
+                                                     r
+
+
+Then, writing Iµ (τ, C, L) to make explicit the dependence on the lattice L,
+                                                    q X
+                                                    X
+               2 ∂                          − 12                 3
+        −2iv           {Iµ (τ, C, L)} = 2                       v 2 θµ0 (τ, L0j ) Iµ1 (τ, C[j], L1j )
+                ∂ τ̄                                        r
+                                                                       j,r                 j,r
+                                                    j=1
+                                                                         X          3
+                                                                     −            v 2 θµ0′ ′ (τ, L0j ′ ) Iµ1′ ′ (τ, C[j ′ ], L1j ′ ),
+                                                                                         j ,r                     j ,r
+                                                                             r′
+
+where
+                                                                X                          1      0       2
+                                  θµ0 (τ, L0j ) =                           (x0 , C j ) q 2 (x ,C j )
+                                    j,r
+                                                           x0 ∈µ0j,r +L0j
+
+is a unary theta series of weight 32 . Thus, the image of Iµ (τ, C) under the ξ-operator is a linear
+combination of products of unary theta series of weight 23 and the conjugates of indefinite
+theta series for spaces of signature (p, q − 1), as asserted in Corollary 1.3.
+
+Remark 8.1. While we have only discussed the shadows of ‘cubical’ integrals, the case of
+simplical integrals can the treated in the same way.
+
+
+                                            9. The case of a simplex
+
+In this section, we work out the theta integral over a simplex. The general inductive procedure
+is the same as in the cubical case, but some interesting differences arise.
+                     THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS, II                              25
+
+9.1. Some geometry. For V of signature (p, q), we consider a collection of vectors
+                                                 C = [C0 , . . . , Cq ]
+Ci ∈ V with (Ci , Ci ) < 0. We suppose that, for all j,
+                                                              cj , . . . , Cq }
+                                       Pj = span{C0 , . . . , C
+is a negative q-plane. We assume that the collection C is linearly independent and let U =
+span(C). Note that sig(U ) = (1, q), and let D(U ) be the space of oriented negative q-planes
+in U .
+
+Let
+                                      C ∨ = [C0∨ , . . . , Cq∨ ] = C (C, C)−1
+be the dual basis of U with respect to ( , ). Since Cj∨ then spans Pj⊥ , we have (Cj∨ , Cj∨ ) > 0.
+Let                                                                     X
+                  ∆q = {s = [s0 , . . . , sq ] ∈ R | sj ≥ 0, for all j,   sj = 1},
+                                                                                   j
+and, for s ∈ ∆q , let
+                                                      q
+                                                      X
+                                            ∨
+                                         C (s) =           sj Cj∨ = C ∨ t s.
+                                          j=0
+                 ∨
+Note that sj = (C (s), Cj ). We say that C is in good position if
+                            0 < (C ∨ (s), C ∨ (s)) = s(C ∨ , C ∨ )t s = s(C, C)−1t s
+for all s ∈ ∆q . For example, if all entries of (C ∨ , C ∨ ) = (C, C)−1 are non-negative, then C is
+in good position.
+
+Given C in good position, we define
+                                                z(s) = C ∨ (s)⊥ ∈ D,
+                             Vq
+with orientation νz(s) ∈          z(s) defined by
+(9.1)                                           C ∨ (s) ∧ νz(s) = νU ,
+where we have fixed an orientation
+                                           ν U = C0 ∧ C1 ∧ · · · ∧ Cq
+     Vq+1
+in          U . For example,
+                                                                                  cj , . . . , Cq }
+                    zj = z(0, . . . , 1, . . . , 0) = (Cj∨ )⊥ = span{C0 , . . . , C
+with orientation given as follows. Let Rj be the jth column of the matrix (C, C)−1 , so that
+                                                              q
+                                                              X
+(9.2)                                      Cj∨ = C Rj =             Rij Ci .
+                                                              i=0
+Then
+                                      cj ∧ · · · ∧ Cq = (−1)j Rjj C0 ∧ C1 ∧ · · · ∧ Cq .
+                   Cj∨ ∧ C0 ∧ · · · ∧ C
+Since Rjj = (Cj∨ , Cj∨ ) > 0,
+
+(9.3)                                                       cj , . . . , Cq }[j]
+                                     zj = span{C0 , . . . , C
+26                              JENS FUNKE AND STEPHEN KUDLA
+
+where the ‘twist’ [j] indicates that the given basis gives (−1)j νz(s) .
+
+For example, for q = 1 we have
+(9.4)                     z0 = span{C1 }p.o. ,             z1 = span{−C0 }p.o. .
+In particular, good position requires (C0 , C1 ) > 0 in this case! For q = 2, we have
+(9.5)      z0 = span{C1 , C2 }p.o. ,    z1 = span{−C0 , C2 }p.o. ,              z2 = span{C0 , C1 }p.o. .
+
+By construction, all the zj ’s lie in the same component of D and, by linear independence,
+the map
+                                  φC : ∆q −→ D,     s 7→ z(s)
+is an embedding. Let S(C) = φC (∆q ) be its image. The jth face of this tetrahedron is given
+by restricting to the subset of s with sj = 0, so that it is given as
+                       {z ∈ S(C) | (C ∨ (s), Cj ) = 0} = {z ∈ S | Cj ∈ z}.
+Moreover, in the image Uj of U under the projection to Vj = Cj⊥ , we have
+                                                       c∨ , . . . , C ∨ ]
+                                        [C0∨ , . . . , C j           q
+
+is the dual basis to
+                                       C⊥j := [C0⊥j , . . . , Cq⊥j ].
+Thus, up to orientation, to be discussed in a moment, the restriction of φC to a face of ∆q is
+again a simplex φC⊥j in D(Vj )! Note that, in particular, C in good position implies that C⊥j
+is in good position for all j.
+
+Next consider S(C) ∩ Dx . This set depends only on prU (x) and is given by
+                       
+                       
+                       S(C) ∩ D(U )prU (x) if Q(prU (x)) > 0,
+                       
+            S(C) ∩ Dx =     ∅                             if prU (x) 6= 0 and Q(prU (x)) ≤ 0,
+                          
+                          
+                          S(C)                           if prU (x) = 0.
+Here, when Q(prU (x)) > 0 so that prU (x) is a positive vector in U , D(U )prU (x) is a pair of
+oriented negative q-planes in U given by the orthogonal complement to prU (x) with its two
+orientations. One of these has orientation determined by prU (x) by the analogue of the recipe
+(9.1). Then S(C) ∩ Dx = φC (s(x)) is the same q-plane with orientation shifted by
+                           sgn(prU (x), C ∨ (s(x)) = sgn(x, C ∨ (s(x))).
+To determine s(x), we solve
+                            prU (x) = λ C ∨ (s),             s ∈ ∆q ,       λ ∈ R×
+i.e.,
+                                  (x, Cj ) = λ sj ,            0 ≤ j ≤ q.
+The existence of a solution implies that sgn(x, Cj ), if non-zero, is independent of j and that
+                                            q
+                                            X
+(9.6)                                         (x, Cj ) = λ.
+                                             j=0
+
+Thus we have the following simple description.
+                      THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS, II                                            27
+
+Lemma 9.1. Suppose that Q(prU (x)) > 0. If sgn(x, Cj ) is independent of j when it is
+non-zero, then
+                             S(C) ∩ Dx = φC (s(x)),
+where
+                                            s(x)j = (x, Cj )λ(x; C)−1
+with
+                                                           X
+                                              λ(x, C) =     (x, Cj ).
+                                                             j
+
+Otherwise S(C) ∩ Dx = φC (s(x)) is empty.
+
+When S(C)∩Dx is non-empty, we determine the intersection number of the oriented q-simplex
+S(C) with the oriented codimension q cycle Dx . The claim is that this is determined by the
+sign of the inner product of prU (x) with C ∨ (s(x)).
+
+Proposition 9.2. Let Φ△
+                      q (x, C) be as in (1.3). Then, if x is regular with respect to C,
+
+(9.7)                                       I(S(C), Dx ) = Φ△
+                                                            q (x, C).
+
+
+Suppose that prU (x) 6= 0. Then Φ△   q (x, C) is non-zero precisely when all of the non-zero
+sgn(x, Ci )’s coincide. Suppose further that s(x) lies on r ‘walls’, i.e., that r of the inner
+products (x, Cj ) vanish. Then
+                                     Φ△
+                                      q (x, C) = 2
+                                                  −r
+                                                     (−1)q sgn(λ(x, C))q .
+
+When prU (x) = 0, then Φ△ q (x, C) = 2
+                                      −q for q even and vanishes for q odd. Note that, if x is
+
+not regular with respect to C, then the intersection number is not defined.
+
+Proof. Recall that, if ζ ∈ OFD is a properly oriented q-frame projecting to z ∈ D, then
+Tz (D) ≃ U (z)q , where U (z) = z ⊥ in V . Also note that, under this isomorphism, the natural
+metric on Tz (D) is given by ((η, η ′ )) = −tr((ηi , ηj′ )) where η = [η1 , . . . , ηq ] and η ′ = [η1′ , . . . , ηq′ ].
+For our fixed collection C with U = span{C}, we have an embedding D(U ) −→ D, where
+D(U ) is the space of oriented negative q-planes in U . Recall that sig(U ) = (1, q). For
+z ∈ D(U ), write W (z) for its orthogonal complement in U . Again supposing that ζ ∈ OFD
+with projection z is given, we have
+                                               Tz (D(U )) ≃ W (z)q .
+Note that dim W (z) = 1, and suppose that w = w(z) is a properly oriented basis vector.
+Then Tz (D(U )) is spanned by the vectors τ1 (w) = [w, 0, . . . , 0], τ2 (w) = [0, w, 0, . . . , 0], etc.
+Similarly, if z ∈ Dx , then the normal subspace to Tz (Dx ) is spanned by the vectors τi (x),
+1 ≤ i ≤ q. For z = φC (s(x)), we have w = C ∨ (s(x)), and the intersection number of these
+two cycles is then given by
+             sgn(( τ1 (x) ∧ · · · ∧ τq (x), τ1 (w) ∧ · · · ∧ τq (w) )) = (−1)q det((τi (x), τj (w)))
+                                                                        = (−1)q sgn(x, C ∨ (s(x)))q .
+28                                 JENS FUNKE AND STEPHEN KUDLA
+
+But now                                                      X
+                                  C ∨ (s(x)) = λ(x, C)−1      (x, Cj ) Cj∨ ,
+                                                              j
+and, recalling (9.2),
+                                          X                              X
+        (x, C ∨ (s(x))) = λ(x, C)−1        (x, Cj )(x, Cj∨ ) = λ(x, C)−1   (x, Cj )Ri,j (x, Ci ).
+                                           j                                   i,j
+
+If we assume that all of the non-zero (x, Ci )’s have the same sign, and recalling that Ri,j ≥ 0,
+we see that
+                               sgn(x, C ∨ (s(x))) = sgn(λ(x, C)).
+                                                                                               
+
+For q = 1, and x regular with respect to C,
+                                          1
+                        I(S(C), Dx ) = − (sgn(x, C0 ) + sgn(x, C1 )).
+                                          2
+Note that, due to the ‘twist’ occurring in (9.3), our negative lines are z0 = span{C1 }p.o. and
+z1 = span{−C0 }p.o. Thus the ‘cubical’ data is C  = {C1 , −C0 }, and I(S(C), Dx ) coincides
+with
+                                       1
+                         Φ       
+                           1 (x, C ) = (sgn(x, −C0 ) − sgn(x, C1 )).
+                                       2
+
+9.2. The integral of the theta form. We would like to compute
+                                         Z
+                                0
+                              I (x; C) =   ϕ0KM (x).
+                                                      S(C)
+
+
+The case q = 1, coincides with the Zwegers case for C  = {C1 , −C0 }, and we have
+                                √         1
+(9.8)                    I 0 (x/ 2; C) = − ( E1 (C0 ; x) + E1 (C1 ; x)).
+                                          2
+As a check on signs, note that, since
+                                          lim E1 (C; tx) = sgn(x, C),
+                                      t→∞
+this is consistent with the value of I(S(C), Dx ) for q = 1 above.
+
+For the general case, we suppose that x is regular with respect to C and proceed by induction.
+Due to regularity, S(C) ∩ Dx is either empty or is a single point φC (s(x)) on the interior of
+S(C). Recall that, by (9.3),
+                                            Xq
+                                  ∂S(C) =      (−1)j S(C⊥j ).
+                                                   j=0
+Then by Remark 3.4 of [5], we have
+                            Z                             Z
+(9.9)          I 0 (x; C) =     ϕ0KM (x) = I(S(C), Dx ) +                        Ψ0KM (x).
+                                   S(C)                                 ∂S(C)
+
+Since limt→∞ Ψ0KM (tx) = 0, this identity gives the limiting value
+                                                  Z
+                              0
+                        lim I (tx; C) = lim               ϕ0KM (tx) = I(S(C), Dx ).
+                        t→∞                    t→∞ S(C)
+                    THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS, II                                            29
+
+Now using Corollary 6.2, we have the inductive formula
+            Z                 Xq         Z
+(9.10)               0
+                   ΨKM (x) =      (−1) j
+                                               κ∗j Ψ0KM (x)
+                 ∂S(C)                  j=0               S(C⊥j )
+
+                                        q
+                                        X                      Z ∞
+                                               1                             2        2
+                                    =         2 2 (x, C j )           e−2πt (x,C j ) I 0 (tx⊥j ; C⊥j ) dt.
+                                        j=0                     1
+
+
+Using this, we obtain the following explicit formula.
+
+Theorem 9.3. For a subset I ⊂ {0, 1, . . . , q}, let C (I) be the collection of q + 1 − |I| elements
+where the Ci with i ∈ I have been omitted.
+                                                [q/2]
+                              √                 X                        X
+                          0                q −q
+                         I (x/ 2; C) = (−1) 2                                    Eq−2r (C (I) ; x).
+                                                               r=0       I
+                                                                     |I|=2r+1
+
+Here E0 (. . . ) = 1.
+
+Remark 9.4. (i) Note that if this formula is proved for x regular, then it holds for all x by
+continuity.
+(ii) Substituting tx for x and letting t go to infinity, we obtain the ‘holomorphic’ part:
+                                                     [q/2]
+                                                     X         X
+(9.11)                               (−1)q 2−q                           sgn(C I , x),
+                                                     r=0         I
+                                                             |I|=2r+1
+
+where sgn(∅, x) = 1. In the case of x regular, (9.9) implies that this must coincide with
+I(S(C), Dx ). In fact, it is easily checked that (9.11) is equal to Φ△
+                                                                     q (x, C) for all x. Thus our
+theta integral is the non-holomorphic completion of the series
+                                        X
+                                             Φ△q (x, C) q
+                                                         Q(x)
+                                                              .
+                                              x∈µ+L
+
+
+Proof. The case q = 1 is (9.8). In the induction, we use the notation
+                              C[j] = [C0⊥j , . . . , Cj−1⊥j , Cj+1⊥j , . . . , Cq⊥j ].
+Let A = {0, 1, . . . , q} and for a subset I ⊂ A, let C I be the collection of q + 1 − |I| vec-
+tors obtained by omitting the Ci with i ∈ I. Also denote by I[j] a subset of A[j] :=
+{0, 1, . . . , ĵ, . . . , q}.
+
+We have
+                √                       Z                            √
+         I 0 (x/ 2; C) − I(S(C), Dx ) =                      Ψ0KM (x/ 2)
+                                                    ∂S(C)
+                                                   q
+                                                   X                 Z ∞                            √
+                                                                               2        2
+                                              =          (x, C j )         e−πt (x,C j ) I 0 (tx⊥j / 2; C[j]) dt
+                                                   j=0               1
+30                                      JENS FUNKE AND STEPHEN KUDLA
+
+                   q
+                   X                     Z ∞                      [(q−1)/2]
+                                                                      X               X
+           q −q                                  −πt2 (x,C j )2
+     = (−1) 2            −2(x, C j )           e                                                Eq−1−2r (C[j]I[j] , tx⊥j ) dt
+                   j=0                    1                           r=0      I[j]⊂A[j]
+                                                                              |I[j]|=2r+1
+
+                   [(q−1)/2]
+                        X       X       X                      Z ∞
+                                                                              2         2
+     = (−1)q 2−q                                 −2(x, C j )              e−πt (x,C j ) Eq−1−2r (C[j]I ; tx⊥j ) dt
+                        r=0     j∈A      I⊂A                      1
+                                      |I|=2r+1
+                                         j ∈I
+                                           /
+
+                     [(q−1)/2]
+                         X          X         X                   Z ∞
+                                                                                  2         2
+      = (−1)q 2−q                                   −2(x, C j )            e−πt (x,C j ) Eq−1−2r ((C I )[j]; tx⊥j ) dt
+                         r=0        I⊂A j∈A                           1
+                                 |I|=2r+1 j ∈I
+                                            /
+
+                     [(q−1)/2]
+                         X          X                                                  
+              q −q
+      = (−1) 2                                 Eq−2r (C I ; x) − sgn(x, C I )
+                         r=0        I⊂A
+                                 |I|=2r+1
+
+                     [q/2]
+                     X         X
+              q −q
+      = (−1) 2                          Eq−2r (C I ; x)
+                     r=0        I⊂A
+                             |I|=2r+1
+
+                                          [(q−1)/2]
+                                              X         X
+                        − (−1)q 2−q                               sgn(x, C I ) − (−1)q 2−q δq,even .
+                                              r=0        I⊂A
+                                                      |I|=2r+1
+
+Thus, to finish the proof, we note that
+                                                                  [q/2]
+                                                                  X          X
+                                                          q −q
+(9.12)                         I(S(C), Dx ) = (−1) 2                                  sgn(x, C I ),
+                                                                   r=0       I⊂A
+                                                                          |I|=2r+1
+
+where we use the convention that sgn(x, ∅) = 1. Here recall that we are assuming that x is
+regular with respect to C. To check this, observe that
+                [q/2]
+                X         X                                               X Y
+         q −q
+     (−1) 2                        sgn(x, C I ) = (−1)q 2−q                           σj
+                r=0        I⊂A                                          J⊂A j∈J
+                        |I|=2r+1                                      |J|≡q(2)
+                                                                          Y                                Y                 
+                                                            q −q−1                                      q
+                                                    = (−1) 2                      (1 + σj ) + (−1)                (1 − σj )       .
+                                                                            j∈A                             j∈A
+
+                                                                                                                                      
+
+
+                                                    10. An example
+
+In this section, we write out a very simple example, which illustrates the relation between
+the (degenerate) cubical formula and the simplicial formula in the case q = 2.
+                        THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS, II                                              31
+
+Let A = {A0 , A1 , A2 } be the data for a 2-simplex. The vertices are:
+             z0 = span{A1 , A2 }p.o. ,        z1 = span{−A0 , A2 }p.o. ,            z2 = span{A0 , A1 }p.o. ,
+and the theta integral is
+                      1                                                    
+                          E2 (A1 , A2 ) + E2 (A0 , A2 ) + E2 (A0 , A1 ) + 1 .
+                      4
+
+We can consider the related cubical data C = {{C1 , C1′ }, {C2 , C2′ }}, where
+                      C1 = A0 , C2 = A1 , C2′ = −A2 , C1′ = C2′ − C2 = −A1 − A2 ,
+so that the associated (degenerate) 2-cube has vertices
+                       z2 = {C1 , C2 }, z1 = {C1 , C2′ }, z0 = {C1′ , C2′ } = {C1′ , C2 },
+and theta integral
+             1                                                                    
+                E2 (C1 , C2 ) − E2 (C1 , C2′ ) − E2 (C1′ , C2 ) + E2 (C1′ , C2′ )
+             4
+             1                                                                         
+           =    E2 (A0 , A1 ) + E2 (A0 , A2 ) + E2 (A1 + A2 , A1 ) + E2 (A1 + A2 , A2 ) .
+             4
+
+Coincidence of the two theta integrals is the equivalent to the identity
+                          E2 (A1 + A2 , A1 ) + E2 (A1 + A2 , A2 ) = E2 (A1 , A2 ) + 1,
+where all terms are given by integrals over the negative 2-plane z0 . Writing y ∈ z0 as
+y = aA∨      ∨
+      1 + bA2 , with respect to the dual basis, and noting that
+
+                                 sgn(a + b)(sgn(a) + sgn(b)) = sgn(a)sgn(b) + 1,
+for a and b not both 0, the identity follows.
+
+
+                                 11. Appendix I: Some proofs and details
+
+11.1. Proof of part (iii) of Lemma 3.3. Suppose that C is in good position and that x ∈ V
+with Φq (x; C) 6= 0. Let s0 = s(x) be the unique point of [0, 1]q such that ρC (s0 ) = Dx ∩ S(C).
+Note that the map ρC extends to an open neighborhood of [0, 1]q so that, even if s0 lies on the
+boundary, we can define ρC on an open set U around s0 . We lift ρC to a map ρ̃C : U → OFD,
+defined by
+                 ρ̃C : s 7→ ζ(s) = B(s)P −1 ,           P ∈ Symq (R)>0 ,           P 2 = −(B(s), B(s)).
+For convenience, we write B = [B1 , . . . , Bq ] = B(s). Then
+             ∂                                                ∂                                                       ∂
+(ρ̃C )∗ (       ) = Ḃj P −1 − ζ Ṗj P −1 ,         Ḃj :=       B = [0, . . . , −Cj + Cj ′ , . . . , 0],   Ṗj :=       P.
+            ∂sj                                              ∂sj                                                     ∂sj
+The components in the connection subspace U (z)q of Tζ (OFD) are then
+                                 ∂
+                     (ρC )∗ (       ) = τj P −1 ,      τj = [0, . . . , prU (z) (−Cj + Cj ′ ), . . . , 0]
+                                ∂sj
+32                                JENS FUNKE AND STEPHEN KUDLA
+
+and these are linearly independent provided prU (z) (−Cj + Cj ′ ) 6= 0 for all j. But at the point
+z0 = ρC (s0 ), we have x ∈ U (z0 ), and the q vectors
+                                   η(x, j) = [0, . . . , 0, , x, 0, . . . , 0],
+with x in the jth component, span the normal to Tz0 (Dx ). Note that the metric g on
+Tz (D) ≃ U (z)q is given by
+                               g(η, η ′ ) = tr( (ηi , ηj′ ) ).
+Then we have
+                                           
+                              g η(x, i), τj = [ (x, Cj ′ ) − (x, Cj ) ] δij .
+
+This shows that τj 6= 0 for all j and hence ρC is immersive at s(x). We can choose the
+open neighborhood U of s(x) in Rq so that the restriction of ρC to U is an embedding. The
+                                                                             V
+orientation of the codimension q cycle Dx is defined by an element of νz,x ∈ (p−1)q Tz (Dx )
+such that
+                                              V
+                                  νx ∧ νz,x ∈ pq (Tz (D))
+is properly oriented, where
+                                      νx = η(x, 1) ∧ · · · ∧ η(x, q).
+Here we have fixed an orientation of D. Thus the intersection number at z0 of Dx with ρC (U )
+is                                                      Y                          
+           I(Dx , ρC (U )) = sgn det(g(η(x, i), τj )) =   sgn (x, Cj ′ ) − (x, Cj ) .
+                                                                     j
+If x is regular with respect to C, then this quantity is
+                            q
+                            Y                                         
+                      2−q         sgn(x, Cj ′ ) − sgn(x, Cj )             = (−1)q Φq (x; C).
+                            j=1
+
+In general, we have
+(11.1)                            (−1)q Φq (x; C) = 2−r I(Dx , ρC (U )),
+where r, 0 ≤ r ≤ q, is the number of walls passing through s(x). Thus, Φq (x; C) is a ‘weighted’
+intersection number.
+
+11.2. Proof of (7.5). For y, y ′ ∈ Z = span{C}, we write ((y, y ′ )) = −(y, y ′ ), and we assume
+that x ∈ Z. We let
+                            C ∨ = [C1∨ , . . . , Cq∨ ] = C((C, C))−1
+be the dual basis. We write
+                                       X
+                                  x=         xi Ci∨ ,            xi = ((x, Ci )).
+                                         i
+For a fixed index j, we write
+                                              X
+           x = x⊥j + x′ Cj ,         x⊥j =            xi Ci∨ ,        xj = ((x, Cj )) = x′ ((Cj , Cj )),
+                                               i6=j
+
+and similarly for our variable of integration y ∈ Z. Note that, in particular,
+                                         sgn((y, Cj )) = sgn(y ′ ).
+                      THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS, II                                                                        33
+
+We can write
+                                                             dy = dy⊥j dy ′
+where                 Z                            Z         Z
+                               −π((y,y))                                                                ′ 2
+                1=            e             dy =                     e−π((y⊥j ,y⊥j )) e−π(y ) ((Cj ,Cj )) dy⊥j dy ′ ,
+                          Z                            Z⊥j    R
+                               1
+where dy ′ is ((Cj , Cj )) times Lebesque measure, so that
+                               2
+                                    Z
+                                            ′ 2
+                                       e−π(y ) ((Cj ,Cj )) dy ′ = 1.
+                                                   R
+           3
+We write
+                      Z                           Y
+     q
+(−1) Eq (C; x) =              e−π((y−x,y−x))            sgn((y, Ci )) dy
+                       Z                           i
+                      Z           Z                                                                           Y
+                                                                                      ′         ′ 2
+                  =                    e−π((y⊥j −x⊥j ,y⊥j −x⊥j )) e−π(y −x ) ((Cj ,Cj ))                             sgn((y, Ci )) sgn(y ′ ) dy⊥j dy ′
+                       Z⊥j         R                                                                          i6=j
+                                                                 Z
+                                                                                ′         ′ 2
+                  = (−1)q−1 Eq−1 (C[j]; x⊥j )                          e−π(y −x ) ((Cj ,Cj )) sgn(y ′ ) dy ′
+                                                                  R
+                                                                 Z
+                                                                                ′ 2
+                  = (−1)q−1 Eq−1 (C[j]; x⊥j )                          e−π(y ) ((Cj ,Cj )) sgn(yj + xj ) dy ′ .
+                                                                  R
+                                                                                      1
+But then, taking into account that dy ′ = ((Cj , Cj ))− 2 dLeb yj , we have
+          ∂ 
+    xj        (−1)q Eq (C; x)              = ((x, Cj )) (−1)q−1 Eq−1 (C[j]; x⊥j )
+         ∂xj
+                                                              Z
+                                                                            2                    −1                                 1
+                                                        ×             e−πyj ((Cj ,Cj ))               2δ(yj + xj ) ((Cj , Cj ))− 2 dLeb yj
+                                                                 R
+                                                                                                                            2
+                                           = 2((x, C j ))(−1)q−1 Eq−1 (C[j]; x⊥j ) e−π((x,C j )) .
+                                                   1
+Here recall that C j = Cj ((Cj , Cj ))− 2 . Summing on j, we obtain (7.5).
+
+
+                                                             References
+    [1] S. Alexandrov, S. Banerjee, J. Manschot, and B. Pioline, Indefinite theta series and generalized error
+        functions, preprint (2016), arXiv:1606.05495v1.
+    [2] J. Bruinier and J. Funke, On two geometric theta lifts, Duke Math. J. 125 (2004), 45–90.
+    [3]         , Traces of CM values of modular functions, J. Reine Angew. Math. (Crelle’s Journal) 594
+        (2006), 1–33.
+    [4] J. Funke, Heegner divisors and non-holomorphic modular forms, Compositio Math. 133 (2002), 289–
+        321.
+    [5] J. Funke and S. Kudla, Mock modular forms and geometric theta functions for indefinite quadratic
+        forms, preprint, 2016.
+    [6] J. Funke and J. Millson, Cycles in hyperbolic manifolds of non-compact type and Fourier coefficients
+        of Siegel modular forms, Manuscripta Math. 107 (2002), 409–449.
+
+   3Note that the extra factor of (−1)q etc. is due to our temporary change in the sign of the inner product
+on Z, so that our Eq differs from that in [18] by this sign.
+34                                    JENS FUNKE AND STEPHEN KUDLA
+
+      [7]         , Spectacle cycles with coefficients and modular forms of half-integral weight, in: Arithmetic
+          Geometry and Automorphic forms, Volume in honor of the 60th birthday of Stephen S. Kudla, Ad-
+          vanced Lectures in Mathematics series. International Press and the Higher Education Press of China,
+          (2011), 91–154.
+      [8]         , Boundary behavior of special cohomology classes arising from the Weil representatio Jussieu
+          Math. J. 12 (2013), 571–634.
+      [9]         , The geometric theta correspondence for Hilbert modular surfaces, Duke Math. J. 163 (2014),
+          65–116.
+     [10] S. Kudla, Holomorphic Siegel Modular Forms Associated to SO(n, 1), Math. Ann. 256 (1981), 517–534.
+     [11]         , Theta integrals and generalized error functions, preprint (2016), arXiv:1608.03534v1.
+     [12]         , A note on Zwegers’ theta functions, preprint (2013).
+     [13] S. Kudla and J. Millson, The theta correspondence and harmonic forms I, Math. Annalen, 274 (1986),
+          353–378.
+     [14]         , The theta correspondence and harmonic forms II, Math. Annalen, 277 (1987), 267–314.
+     [15]         , Intersection numbers of cycles on locally symmetric spaces and Fourier coefficients of holo-
+          morphic modular forms in several complex variables, Publ. Math. IHES, 71 (1990), 121–172.
+     [16] I. Livinskyi, On the integrals of the Kudla-Millson theta series, Thesis, Univ. of Toronto, (2016).
+     [17] W.S. Massey, An Introduction to Algebraic Topology, GTM 127, Springer-Verlag, NY, 1991.
+     [18] C. Nazaroglu, r-tuple error functions and indefinite theta series of higher depth, preprint (2016),
+          arXiv:1609.01224v1.
+     [19] T. Shintani, On construction of holomorphic cusp forms of half-integral weight, Nagoya Math. J. 58
+          (1975), 83–126.
+     [20] C. L. Siegel, On the theory of indefinite quadratic forms. Ann. of Math. (2) 45 (1944), 577–622.
+     [21] M.-F. Vigneras, Séries theta des formes quadratiques indéfinies. In: Modular functions of one variable
+          VI, Springer Lecture Notes 627 (1977), 227-239.
+     [22] M. Westerholt-Raum, Indefinite theta series on cones, arXiv:1608.08874v2.
+     [23] D. Zagier, Ramanujan’s mock theta functions and their applications, (after Zwegers and Ono-
+          Bringmann), Astérisque,(326):Exp. No. 986, vii–viii, 143–164 (2010), 2009. Séminaire Bourbaki. Vol.
+          2007/2008.
+     [24] S. P. Zwegers, Mock Theta Functions. Thesis, Utrecht, 2002. http://igiturarchive.
+          library.uu.nl/dissertations/2003-0127-094324/inhoud.htm
+
+
+Department of Mathematical Sciences, Durham University, South Road, Durham, DH1 3LE, UK
+
+E-mail address: jens.funke@durham.ac.uk
+
+
+Department of Mathematics, University of Toronto, 40 St. George St., Toronto, ON M5S 2E4
+Canada
+
+E-mail address: skudla@math.toronto.edu
+

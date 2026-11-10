@@ -1,0 +1,9 @@
+./FINDINGS_DRAFT_for_Auditor_CONFIRM_t761u_eps_abel_2026-10-25.md: OK
+./INVENTORY.md: OK
+./PREREG.md: OK
+./RESULTS.md: OK
+./author_candidates/AUTHOR_WRITTEN_EPS_ABEL_W7_t761u_2026-10-25.md: OK
+./logs/PREREG.sha256: OK
+./logs/verify_basis.txt: OK
+./logs/written_lines.txt: OK
+rc=0

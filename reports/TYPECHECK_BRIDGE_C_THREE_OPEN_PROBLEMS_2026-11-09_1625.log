@@ -1,0 +1,24 @@
+== P1 Xi: Xi is identified, so Bridge C A1 -> Xi -> RTA is complete
+  [OWNER DEFINITION] [MATCH     ] Xi carrier type: +1 law on a vector-valued Weil carrier, not 49a1 (Owner blueprint correction)
+  [PROVED          ] [MATCH     ] LD-Xi1 (a),(b),(c): W49 acts as -1 on 49a1, S2(G0(49))+ = 0, g+ Eisenstein
+  [PROVED          ] [MATCH     ] LD-Xi3 twist f(x)chi, level 19600, Fricke +1
+  [CONDITIONAL     ] [MATCH     ] LD-Xi2 induced carrier (tautological by construction)
+  [CONDITIONAL     ] [MATCH     ] chi140 Weil character for all of G0(140)  (standard theorem, Bruinier LNM 1780; numerics on 34 elements)
+  [OPEN            ] [MATCH     ] Joint carrier level: 980 minimal; 'joint carrier' itself undefined
+  [OPEN            ] [MATCH     ] Owner adoption of one specific Xi (the object itself)  (no OWNER_WRITE names Xi)
+  -> PARTIAL; blocking: 4 (CONDITIONAL, CONDITIONAL, OPEN, OPEN)
+== P2 R_c / junction / Layer2: R_c, the junction and the Layer2 transfer have a source in the math corpus
+  [OWNER DEFINITION] [MATCH     ] R_c := kappa*l_P, kappa = sqrt(2/Lambda0)  (Owner 3:11 PM; DP-Rc not adopted)
+  [PROVED          ] [MATCH     ] R_c != L_AdS/2 forces nothing (independent scales)
+  [OPEN            ] [MATCH     ] Physical role of an l_P-scale R_c in the vacuum  (E4: Owner must define)
+  [OPEN            ] [MATCH     ] Appell-Lerch -> R_c route (S2b, S4b, S4c)
+  [OPEN            ] [MATCH     ] Israel junction: brane and face definitions; warped/twisted fibre  (D3: no Owner record defines brane or face)
+  [CONDITIONAL     ] [MATCH     ] Layer2 D1-norm referent (DP-a)  (derived proposal pending Owner adoption)
+  [OPEN            ] [MATCH     ] Layer2 D1-norm -> Kerr area transfer  (a-5; only source of 'Layer2 LOCKED' is attach a71f388e)
+  -> PARTIAL; blocking: 5 (OPEN, OPEN, OPEN, CONDITIONAL, OPEN)
+== P3 Lambda0: Lambda0 is fixed without circularity, so step one is not circular
+  [OWNER DEFINITION] [MATCH     ] Lambda0 := ln(6+sqrt35)/sqrt10  (Owner 3:11 PM; definition, not derivation)
+  [PROVED          ] [MATCH     ] Lambda0 = sqrt(7/8) L(1,chi140) (class-number identity, bnfcertify)
+  [PROVED          ] [MATCH     ] kappa = sqrt(2/Lambda0) = 1.597622 arithmetic
+  [OPEN            ] [MATCH     ] Derivation of Lambda0 from the dynamics (physical meaning beyond F1-F3)  (not needed for non-circularity)
+  -> PARTIAL; blocking: 1 (OPEN)

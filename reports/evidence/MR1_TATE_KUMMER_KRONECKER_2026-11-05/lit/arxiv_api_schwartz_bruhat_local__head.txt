@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/LF754UAZG3HxWD1sBfvLjm3puJ0</id>
+  <title>arXiv Query: search_query=all:"Schwartz-Bruhat" OR all:"Bruhat-Schwartz space"&amp;id_list=&amp;start=0&amp;max_results=5</title>
+  <updated>2026-11-05T20:02:42Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22Schwartz-Bruhat%22+OR+all:%22Bruhat-Schwartz+space%22&amp;start=0&amp;max_results=5&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>5</opensearch:itemsPerPage>
+  <opensearch:totalResults>15</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/1604.07533v1</id>
+    <title>A Characterisation of the Fourier transform on the Schwartz-Bruhat space of locally compact Abelian groups</title>
+    <updated>2016-04-26T06:05:50Z</updated>
+    <link href="https://arxiv.org/abs/1604.07533v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1604.07533v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We obtain a characterisation of the Fourier transform on the space of Schwartz-Bruhat functions on locally compact Abelian groups. The result states that any appropriately additive bijection of the Schwartz space onto itself, which interchanges convolution and pointwise products is essentially the Fourier transform. The proof of this result is very similar to that obtained by the author recently for the Euclidean Fourier transform.</summary>
+    <category term="math.FA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.CA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2016-04-26T06:05:50Z</published>
+    <arxiv:comment>This article draws heavily from math arXiv:1604.05551</arxiv:comment>
+    <arxiv:primary_category term="math.FA"/>
+    <author>
+      <name>R. Lakshmi Lavanya</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1704.05897v2</id>
+    <title>Unramified Godement-Jacquet theory for the spin similitude group</title>
+    <updated>2018-04-19T01:39:57Z</updated>
+    <link href="https://arxiv.org/abs/1704.05897v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1704.05897v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Suppose $F$ is a non-archimedean local field. The classical Go

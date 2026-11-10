@@ -1,0 +1,15 @@
+=== RTA v16 ===
+--- STRING: 1.5954 ---
+--- STRING: Appell ---
+3030:weight- 12 false thetas are O(t−1/2 ) and cannot carry it. An Appell–Lerch formula for E or Psorth with
+3031:algebraic data would likewise be excluded, but this needs the q → 1 asymptotics of Appell–Lerch sums,
+8979: [8] D. Hickerson, E. Mortenson, Hecke-type double sums, Appell–Lerch sums, and mock theta functions,
+--- STRING: Lerch ---
+3030:weight- 12 false thetas are O(t−1/2 ) and cannot carry it. An Appell–Lerch formula for E or Psorth with
+3031:algebraic data would likewise be excluded, but this needs the q → 1 asymptotics of Appell–Lerch sums,
+8979: [8] D. Hickerson, E. Mortenson, Hecke-type double sums, Appell–Lerch sums, and mock theta functions,
+--- STRING: Tate-Gelfand ---
+--- STRING: Tate–Gelfand ---
+--- STRING: HQCC ---
+--- STRING: Bruhat-Tits ---
+--- STRING: Bruhat–Tits ---

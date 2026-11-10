@@ -1,0 +1,8 @@
+{
+  "requested": "https://api.crossref.org/works/10.1515/crll.1996.472.1",
+  "final": "https://api.crossref.org/works/10.1515/crll.1996.472.1",
+  "status": 200,
+  "bytes": 1811,
+  "sha256": "d6f617b463f6668ebfa838992ffceca186830f59b40cccc6e8bf0d033247ccdc",
+  "time": "2026-11-05T13:52:18.682371-06:00"
+}

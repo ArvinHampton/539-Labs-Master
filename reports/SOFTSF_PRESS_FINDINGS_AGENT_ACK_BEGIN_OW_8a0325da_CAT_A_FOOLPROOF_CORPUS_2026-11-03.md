@@ -1,0 +1,2 @@
+# Soft SF PRESS — Agent ACK BEGIN OW 8a0325da… Cat A foolproof corpus — 2026-11-03 ~10:39 CST
+FINDINGS reports/FINDINGS_AGENT_ACK_BEGIN_OW_8a0325da_CAT_A_FOOLPROOF_CORPUS_2026-11-03.md sha256 360db965b7f21d758da1d8fef66053b718587dd67b36d31dcf3399ef17db2d7b → Auditor. Soft SF as Written MATCH; BEGIN LIVE; Video EXCLUDED; Rule-5 LIVE / invent-pending EMPTY; tip Soft SF LOCK 7cddb188… tip_touched NO; No CERT. No RECS.

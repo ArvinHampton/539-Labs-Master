@@ -1,0 +1,21 @@
+== [B] bosonic rule f*G = det(f) G ==
+  r~ = {u,phi1}                              det = +1  f*G = -1 G  -> rule FAILS
+  P = {phi2}                                 det = -1  f*G = -1 G  -> rule HOLDS
+  c2 literal: P o r~ = {u,phi1,phi2}         det = -1  f*G = +1 G  -> rule FAILS
+  c2' = P o r~ o Pi_x3 (8399be55 (i'))       det = +1  f*G = +1 G  -> rule HOLDS
+  c2'' = P o r~ o T (8399be55 (ii'))         det = +1  f*G = +1 G  -> rule HOLDS
+  (i) = r~ o Pi_x3                           det = -1  f*G = -1 G  -> rule HOLDS
+  W = {rho} (doubled MN2, G odd)             det = -1  f*G = -1 G  -> rule HOLDS
+
+== [C] Clifford Cl(10,1) check: {Gamma_a,Gamma_b} = 2 eta_ab : True (exact 0/1/i entries)
+  r~ = {u,phi1}                              lift^2 = -1  [W~, lift] = +1 (commute)  twist bivector product + (preserved)  HW projection kept
+  P = {phi2}                                 lift^2 = +1  [W~, lift] = -1 (anticommute)  twist bivector product + (preserved)  HW projection MAPPED TO OPPOSITE CHIRALITY
+  c2 literal: P o r~ = {u,phi1,phi2}         lift^2 = -1  [W~, lift] = -1 (anticommute)  twist bivector product + (preserved)  HW projection MAPPED TO OPPOSITE CHIRALITY
+  c2' = P o r~ o Pi_x3 (8399be55 (i'))       lift^2 = +1  [W~, lift] = +1 (commute)  twist bivector product + (preserved)  HW projection kept
+  c2'' = P o r~ o T (8399be55 (ii'))         lift^2 = -1  [W~, lift] = +1 (commute)  twist bivector product + (preserved)  HW projection kept
+  (i) = r~ o Pi_x3                           lift^2 = -1  [W~, lift] = -1 (anticommute)  twist bivector product + (preserved)  HW projection MAPPED TO OPPOSITE CHIRALITY
+  W = {rho} (doubled MN2, G odd)             lift^2 = +1  [W~, lift] = +1 (commute)  twist bivector product + (preserved)  HW projection kept
+
+== verdict inputs ==
+  c2 literal (P o r~): bosonic rule FAILS
+EXIT 0

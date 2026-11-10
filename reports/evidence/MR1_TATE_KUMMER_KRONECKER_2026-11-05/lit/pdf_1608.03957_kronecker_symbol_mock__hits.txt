@@ -1,0 +1,25 @@
+1:MOCK CHARACTERS AND THE KRONECKER SYMBOL
+9:Along the way we prove a few new results concerning the behavior of the Kronecker symbol.
+12:One of the most familiar objects in number theory is the Kronecker symbol, denoted na
+26:possible to being characters. We will justify this statement qualitatively, and also formulate
+31:explore the relationship between mock characters and the Kronecker symbol, and use our
+32:results to obtain some new results about the Kronecker symbol. In the final section, we view
+39:Recall that a Finite State Machine is a finite collection of states along with transition
+40:rules between states. A positive integer corresponds to a program: its digits (read right to
+41:left) dictate the individual state transitions.
+43:State Machine which outputs an when given the program n (written base q).
+111:MOCK CHARACTERS AND THE KRONECKER SYMBOL
+167:We now deduce the claim in full generality. Let χ be as in the statement of the proposition.
+214:MOCK CHARACTERS AND THE KRONECKER SYMBOL
+301:3. Kronecker symbols are (mock) characters
+307:where the right hand side is the Kronecker symbol. After briefly recalling the definition
+308:and basic properties of the Kronecker symbol, we show that κa is either a Dirichlet or a
+310:functions of Kronecker symbols.
+312:3.1. The Kronecker symbol. We briefly recall the definition of the Kronecker symbol na .
+326:MOCK CHARACTERS AND THE KRONECKER SYMBOL
+383:A fundamental property of the Kronecker symbol (which we shall require in the sequel) is
+406:3.2. (Non)periodicity of the Kronecker symbol. Recall that κa (n) := na . It is common
+455:Combining Theorems 3.1 and 3.2 with basic properties of the Kronecker symbol yields the
+457:Corollary 3.3. The Kronecker symbol κa is a Dirichlet character if and only if a 6≡ 3 (mod 4).
+485:MOCK CHARACTERS AND THE KRONECKER SYMBOL
+498:• Periodicity and Kronecker symbols have also been studied in the context of periodic

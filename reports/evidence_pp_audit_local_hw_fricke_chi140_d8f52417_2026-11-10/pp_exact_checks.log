@@ -1,0 +1,27 @@
+PARI stack size set to 2000000000 bytes, maximum size set to 2000003072
+== X1: V9 matrix identity, exact (cancel each entry, is_zero) ==
+entries cancel(LHS-RHS): [0, 0, 0, 0]  all is_zero: True
+det gamma_u expand: 1
+V9 bookkeeping (integral gamma_u entry; chi(v)=chi(-N)chi(u)) for N=19600, 11 r: True
+== X2: primitive Gauss-sum identity sum_u chi(u)e(nu/r) = chi(n) g(chi), exact in Q(zeta_r), all n mod r, 11 r ==
+all match: True
+== X3: exact Milgram for D(N2): sum e(q) = G(chi140) (= sqrt140) in Q(zeta_280) ==
+#D(N2) = 140  denominators of q: [1, 2, 4, 5, 7, 10, 14, 20, 28, 35, 70, 140]
+S - G == 0: True   G^2 == 140: True  => e(sig/8)=1 exactly, sig(N2)=0 consistent
+== X4: even unimodular summands, exact ==
+E8 det 1 even diag True inverse integral True sig 8
+II11 det -1 even diag True inverse integral True sig 0
+(N2+E8)^-1 block diag, E8 block integral: True  |det| = 140
+== X5: L2 instances, PARI exact ==
+Xi: cond 19600  eps -1
+D=  -3 cond==19600D^2:True eps=+1 -eps=-1 chi_D(-1)=-1 match=True a_p twist law p<400 good: True
+D= -11 cond==19600D^2:True eps=+1 -eps=-1 chi_D(-1)=-1 match=True a_p twist law p<400 good: True
+D=  13 cond==19600D^2:True eps=-1 -eps=+1 chi_D(-1)=+1 match=True a_p twist law p<400 good: True
+D= -19 cond==19600D^2:True eps=+1 -eps=-1 chi_D(-1)=-1 match=True a_p twist law p<400 good: True
+D= -23 cond==19600D^2:True eps=+1 -eps=-1 chi_D(-1)=-1 match=True a_p twist law p<400 good: True
+D=  29 cond==19600D^2:True eps=-1 -eps=+1 chi_D(-1)=+1 match=True a_p twist law p<400 good: True
+D=  33 cond==19600D^2:True eps=-1 -eps=+1 chi_D(-1)=+1 match=True a_p twist law p<400 good: True
+D= -31 cond==19600D^2:True eps=+1 -eps=-1 chi_D(-1)=-1 match=True a_p twist law p<400 good: True
+D=  37 cond==19600D^2:True eps=-1 -eps=+1 chi_D(-1)=+1 match=True a_p twist law p<400 good: True
+D= -43 cond==19600D^2:True eps=+1 -eps=-1 chi_D(-1)=-1 match=True a_p twist law p<400 good: True
+D=  41 cond==19600D^2:True eps=-1 -eps=+1 chi_D(-1)=+1 match=True a_p twist law p<400 good: True

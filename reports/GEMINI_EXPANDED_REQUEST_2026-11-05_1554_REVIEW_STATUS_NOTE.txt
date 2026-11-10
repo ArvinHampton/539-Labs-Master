@@ -1,0 +1,13 @@
+GEMINI EXPANDED REQUEST — REVIEW STATUS NOTE
+Updated: 2026-11-05 15:59:15 CST America/Chicago
+
+Primary payload (unchanged):
+  /workspace/quantum-comp/reports/GEMINI_EXPANDED_REQUEST_2026-11-05_1554.txt
+  sha256 03d8a851d0408ddb780213ab38c5e45ce21e239143abdd18448ec35fc2ca588a
+
+State:
+- 12 formal PQC review requests: DELIVERED by parent (12/12). Awaiting fresh responses.
+- NL bounded review: started (per parent; usage ~75.5%).
+- This expanded Gemini request: READY for parent’s separate Gemini-access path; NOT sent by distribution executor.
+- Do not claim twelve fresh reviews already collected.
+- Absolute ≥80% weekly usage STOP-all still governs; last checkpoint ~75.5%.

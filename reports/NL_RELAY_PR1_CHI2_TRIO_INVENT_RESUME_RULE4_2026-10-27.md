@@ -1,0 +1,1 @@
+# NL RELAY → PR1: Rule-5 ACCEPT-WITH-FLAGS on Soft SF ebc05e25… / bf47ca1b…. Review sha `0cfb2e4fefd4300a16e722ca97359f158411950285c7768ff22c847dab1f1d27`. FLAG-1: L5 Beta null needs τ fixed a priori. FLAG-2: Fact (c).F SCRIPT-arithmetic (already labeled). tip Soft SF LOCK untouched; Kerr BLOCKED.

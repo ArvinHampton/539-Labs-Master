@@ -1,0 +1,28 @@
+# PROOF — Codex addendum items 6–10 (2026-11-03). REPORTS ONLY, no CERT.
+Source: reports/539labs/539_Labs_Technical_Corpus_Codex_2026-11-03.txt sha256 0183093491115f3c7928446eaa5d9c15a0b30bd32d09acdd7484a67799c1cc21 (prefix 01830934 MATCH). Script: scripts/codex_items_6_10_2026-11-03.py.
+
+## 6. Π_fast(Ψ) = lim_k 3^{-k} Σ_{j<3^k} T^j Ψ T^{-j} (Codex §1.2)
+Lemma 6a (PROVED, invented hypothesis H: T unitary on finite-dim H, Ψ ∈ B(H)). Ad_T: Ψ↦TΨT^{-1} is unitary on B(H) with Hilbert–Schmidt inner product. By the mean ergodic theorem (finite-dim: diagonalize Ad_T, eigenvalues λ_iλ̄_j on unit circle; averages of λ^j → 0 for λ≠1, =1 for λ=1) the Cesàro limit exists along any n→∞, in particular n=3^k, and equals the HS-orthogonal projection onto Fix(Ad_T) = commutant {T}′. Hence Π_fast² = Π_fast, self-adjoint, spec ⊆{0,1} (item 3 lemma). ∎
+Lemma 6b (PROVED under H). Tr(Π_fast) (trace on B(H)) = dim {T}′ = Σ_i m_i², m_i = multiplicities of T's distinct eigenvalues. So "Tr = 128" holds iff Σ m_i² = 128 (e.g. m=(8,8) or 128 simple eigenvalues; (11,4,1,1,1) gives 140). The Codex does not specify T, H, or dim H ("infinity-dimensional" stated) ⇒ Tr=128 does NOT follow from the definition: ABSENT / invented pending mathematical proof. In infinite dim, trace of a projection onto an infinite-dimensional commutant is ∞; non-unitary T (|eigenvalue|≠1) can make the limit fail to exist.
+"Tr = dim H_invariant" is correct as identity (trace of projection = rank), PROVED; the number 128 is unsupported. [Π_fast, H_boundary] ≡ 0: ABSENT (H_boundary undefined; true if H_boundary commutes with Ad_T, not otherwise).
+Merge with item 3: the original corpus formula (Id − avg)∘Ad_{(ζ^t−1)∧} is a DIFFERENT operator (projects to zero-mean part, not invariant part); the two definitions are mutually inconsistent (one is the complement-type projector, the other the invariant projector). Owner must pick one.
+
+## 7. HQCC Φ, χ (Codex §2.1)
+Φ(x)=x/3 if 3|x; 3x+χ(x) else; χ=−1 if x≡1, +1 if x≡2 (mod 3). Definitions PRESENT; the theorem statement ("Hampton Qutrit Collatz Convergence Theorem") is ABSENT — no conclusion is written.
+Lemma 7 (PROVED). For x ∈ ℤ with 3∤x: Φ(x) ≡ −χ(x)... concretely x≡1 ⇒ 3x−1≡2; x≡2 ⇒ 3x+1≡1; so Φ(x) is again a 3-unit, and |Φ(x)| ≥ 3|x|−1 > |x| for |x|≥1. Hence every nonzero integer orbit is: divide out 3^{v_3(x)}, then strictly increasing |x| → ∞; no cycles other than the fixed point 0. (Checked numerically |x|<10⁴; orbit 1→2→7→20→61→…) Therefore any "convergence" reading (all orbits reach a cycle/1) is FALSE on ℤ. On ℤ_3: Φ maps units ℤ_3^× → ℤ_3^× and is injective there (3x+χ(x) with χ determined by x mod 3); 3-adically |Φ(x)|_3 = 1, no contraction ⇒ no 3-adic convergence either. "χ forces absolute parity symmetry": χ(−x) = −χ(x), PROVED, but "absolute" undefined. Contrast: tubulin/oct17 canonical T3 map is a different rule; not identified.
+
+## 8. Ω ≡ 0 mod 539
+539 = 7²·11: PROVED. Ω(x) = N − |W| (block length minus |winding number|); W "winding number over the ternary unit circle" undefined ⇒ Ω not computable from Codex: invented pending mathematical proof.
+Under the Lemma 5 reading (Ω = Γ = N−|W|): FALSE as a cancellation criterion. Counterexample: corpus M=3 example has W=0, N=2, Ω=2 ≢ 0 (mod 539) yet total cancellation; conversely Ω=0 (no cancellation, all-positive coefficients, Lemma 5 A) satisfies Ω≡0. Criterion is inverted at both ends.
+RTL (Codex §4.2): path_cancellation_sum is `logic signed [8:0]` (range −256..255); literal 9'sd539 truncates to 27, so the hardware tests mod 27, not mod 539; since |sum|<539 the intended test is ⇔ sum=0. Also nonblocking `<=` in the for-loop means only the last iteration's update survives (no accumulation). RTL does not implement the stated criterion: FALSE (as spec match).
+
+## 9. det(M) ≢ 0 (mod 3) ⇒ ∃M^{-1} mod 3
+Implication itself PROVED (standard: det unit in 𝔽_3 ⇒ adjugate/det inverse). It does NOT rescue no-cancellation.
+Fact: in 𝔽_3[ℤ/3] (char 3), all eigenvalues of ρ(h) collapse to ε(h)=Σa_c, so det ρ(h) ≡ ε(h)³ ≡ ε(h) (mod 3). Corpus example: det ρ(h_2)=36 ≡ 0 (mod 3) (ε(h_2)=3) — so the corpus counterexample is NOT on the det≢0 mod 3 slice.
+Counterexample (PROVED, numeric): M=3, h_1=[0]+[1], h_2'=−[0]+[1]+[2]. det ρ(h_1)=2≡2, det ρ(h_2')=1·(−2)·(−2)=4≡1 (mod 3), both units mod 3; residue-1 paths (1,0): −1, (0,1): +1 ⇒ W=0, N=2. So det≢0 mod 3 does not prevent cancellation. ∎ Invertibility mod 3 = injectivity of a linear map, unrelated to signed path sums over ℤ (Lemma 5 C1/C3).
+"Prevents information collisions": a bijective linear layer is collision-free within that layer only; says nothing about the hash composite: ABSENT.
+
+## 10. BQP ⊂ C_HQH ⊂ NP-Complete
+Literal reading FALSE (unconditionally): NPC is the set of NP-complete languages under poly-time many-one reductions. ∅ ∈ P ⊆ BQP; ∅ is not NP-hard (a reduction SAT ≤ ∅ would map satisfiable formulas into ∅, impossible since SAT ≠ ∅). So BQP ⊄ NPC, and BQP ⊂ C ⊂ NPC is impossible for any C. ∎ (Also NPC ∪ … is not closed under the operations a "complexity class" usually is; "strictly between" is ill-posed.)
+Repaired reading "BQP ⊆ C_HQH ⊆ NP" would imply BQP ⊆ NP — OPEN; relative to an oracle BQP ⊄ PH (Raz–Tal 2018), hence ⊄ NP relative to that oracle, so no relativizing proof exists. ABSENT (no proof given) / would resolve a major open problem.
+Well-posed conditional statement available: if HQH-539-512 is poly-time computable, inversion (given digest, find preimage) is in FNP (verify by hashing) — PROVED, trivial. Quantum hardness ("immune to Shor/Grover"): FALSE as stated for Grover — generic Grover preimage search gives quadratic speedup (~2^{256} for 512-bit output) for any hash; at best "no known super-quadratic quantum attack": ABSENT as proof.

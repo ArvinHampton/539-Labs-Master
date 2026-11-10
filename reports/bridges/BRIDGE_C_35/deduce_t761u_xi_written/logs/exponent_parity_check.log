@@ -1,0 +1,16 @@
+k=0 sector=even m=0 ledger_exp=0 -outer=0 match=True char=0
+k=1 sector=odd m=0 ledger_exp=-49/4 -outer=-49/4 match=True char=7/2
+k=2 sector=even m=1 ledger_exp=-42 -outer=-42 match=True char=7
+k=3 sector=odd m=1 ledger_exp=-357/4 -outer=-357/4 match=True char=21/2
+k=4 sector=even m=2 ledger_exp=-154 -outer=-154 match=True char=14
+k=5 sector=odd m=2 ledger_exp=-945/4 -outer=-945/4 match=True char=35/2
+k=6 sector=even m=3 ledger_exp=-336 -outer=-336 match=True char=21
+k=7 sector=odd m=3 ledger_exp=-1813/4 -outer=-1813/4 match=True char=49/2
+k=8 sector=even m=4 ledger_exp=-588 -outer=-588 match=True char=28
+k=9 sector=odd m=4 ledger_exp=-2961/4 -outer=-2961/4 match=True char=63/2
+k=10 sector=even m=5 ledger_exp=-910 -outer=-910 match=True char=35
+k=11 sector=odd m=5 ledger_exp=-4389/4 -outer=-4389/4 match=True char=77/2
+k=-4 ledger_exp=-126 (k<0: not of -outer form; folding ABSENT)
+k=-3 ledger_exp=-273/4 (k<0: not of -outer form; folding ABSENT)
+k=-2 ledger_exp=-28 (k<0: not of -outer form; folding ABSENT)
+k=-1 ledger_exp=-21/4 (k<0: not of -outer form; folding ABSENT)

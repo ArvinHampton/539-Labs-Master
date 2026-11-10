@@ -1,0 +1,13 @@
+# Soft SF PRESS — Local Rule-5 REVIEW Pack DF + Local R5 Pack DC + Local R5 HOLD-lift + Pack DH→DS + Pack DW
+# Write-only → Auditor · Invent-ban · No tip edit · No RECS
+# America/Chicago CDT 2026-10-26 ~22:10
+
+REVIEW: `REVIEW_LOCAL_PR2_COOK_BLANKET_HYGIENE_PACK_DF_LOCAL_R5_PACK_DC_DH_DS_DW_2026-10-26.md`
+REVIEW sha256: `fc8e2dbac17cd7dc62b20ea3c0a1f8aeb71960869a29581418e24650049f91e5`
+Target FINDINGS: `FINDINGS_PR2_COOK_BLANKET_HYGIENE_PACK_DF_LOCAL_R5_PACK_DC_DH_DS_DW_2026-10-26.md`
+Target sha256: `d462fcf07e61c9257eda066f1484e19855f267790dc4dcbbc7182e6287a5d7df`
+PR2 PRESS: `SOFTSF_PRESS_FINDINGS_PR2_COOK_BLANKET_HYGIENE_PACK_DF_LOCAL_R5_PACK_DC_DH_DS_DW_2026-10-26.md`
+PR2 PRESS sha256: `32daff468b36260eacd90fe79fa23b7de0703a4e4a4eddcb7168f50d5aabacc8`
+Disposition: ACCEPT / Pack DF + Local R5 Pack DC + Local R5 HOLD-lift + Pack DH→DS + Pack DW absorb (status only)
+tip Soft SF LOCK: `7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91` tip_touched NO
+Kerr BLOCKED · Channel A gated · No invent · No RECS

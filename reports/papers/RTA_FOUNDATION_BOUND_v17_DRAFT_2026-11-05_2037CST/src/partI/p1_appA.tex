@@ -1,0 +1,72 @@
+\section{Computational reproduction for Part I}\label{computational-reproduction-for-part-i}
+
+All files are in the repository \texttt{ArvinHampton/539-Labs-Master} under \texttt{reports/s\_family\_paths/PAPER\_gk\_v1/} (abbreviated \texttt{P/}). Environment: Python 3.13, python-flint 0.9.0, mpmath, gcc, Linux; every command was run with \texttt{OMP\_NUM\_THREADS=1} under \texttt{nice}. SHA-256 sums of all files are in \texttt{P/SHA256SUMS}.
+
+\subsection{Algebraic checks (Sections 3--7)}\label{algebraic-checks-sections-37}
+
+\texttt{P/code/gklib.py} evaluates \(g_k(d)\) exactly (Python integers). \texttt{P/code/verify\_algebra.py} (log: \texttt{P/data/verify\_algebra\_log.txt}) checks:
+
+\begin{itemize}
+\tightlist
+\item
+  stabilisation, sign rule, \(c_m=(-1)^mQ(m)\), the product form (4.1) and the truncation formula (Lemmas 4.1--4.5), for \(n\le80\), \(m\le400\);
+\item
+  the expansion (3.1) against the direct series (\(k\le20\), \(k=27,33\), \(d\le1500\));
+\item
+  Theorem 5.1 for all \(k\le1001\) (\(608\) squarefree \(k\): all vanish; \(392\) non-squarefree \(k\): all nonzero);
+\item
+  formula (5.1) in \(5121\) cases and the exact failures of Corollary 5.4 for all odd prime powers \(k\le1001\);
+\item
+  the pair reduction (6.1) for \(7\le k\le130\) and the values \(g_{15}(286)=g_{21}(526)=0\);
+\item
+  Theorem 7.7 for even \(k\le130\) (values of \(g_{2^a}\));
+\item
+  the sign law and the zero set of \(g_2\) for \(d\le6000\); zero sets for \(k=2,6,10,14\) and the bounds \(B_c\).
+\end{itemize}
+
+The checks are consistency tests of the proved statements, not parts of proofs, except the exact term lists quoted in proofs (Corollary 5.4, Sections 6.6, 7.2, 7.3), which are exact integer evaluations. \texttt{P/code/even\_zero\_sets.py} produces Table B.2 (\texttt{P/data/even\_zero\_sets\_k2mod4.txt}).
+
+Run: \texttt{cd\ P/code\ \&\&\ python3\ verify\_algebra.py} (about 5 seconds).
+
+\subsection{The composite-zero theorem (Section 6)}\label{the-composite-zero-theorem-section-6}
+
+Directory \texttt{P/code/composite/}. From \texttt{P/code/composite/code}:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \texttt{python3\ make\_Q.py} builds the exact table \(Q(0..35200)\) (\texttt{../data/Q\_exact\_35200.pkl}; sha256 of the decimal list \texttt{6a2037fb2c51b525ae73b77b8593bcfaa6ad2868315b7b01be4bb62a24e06a78}).
+\item
+  \texttt{python3\ pairs\_certify.py\ 2500\ 300} (\texttt{../data/pairs\_certify.log}): for the \(15\,616\) pairs \(3\le s\le2500\), \(k\) odd, \(k>2s\), \(k\mid s^2-1\), an integer lower bound \(LB\le A_1\) and the exact \(A_2\); \(15\,587\) pairs have \(LB>A_2\); the remaining \(29\) have \(s\le32\) and are settled by the exact dynamic programme, which was run for all \(s\le300\) (\(995\) pairs). Only \((4,15)\) and \((8,21)\) have \(A_1\le A_2\) (equality).
+\item
+  \texttt{python3\ chern\_margins.py} (\texttt{../data/chern\_margins.log}): interval evaluation (mpmath \texttt{iv}, 40 digits) of \(C_E\), \(K\), \(\bar\beta(n)\) at the thresholds quoted in Lemma 6.5, the monotonicity ratios, the comparison \(|Q-M|\le\bar B\) on \(n\in[300,2999]\) and every \(17\)th \(n\le35200\) (no violations; this comparison is an extra check, not used in the proof), and the margins of Proposition 6.8 on \(2501\le s\le60000\) (minimum margins \(0.44805\) and \(0.99364\)).
+\end{enumerate}
+
+\subsection{Parity dominance (Section 8)}\label{parity-dominance-section-8}
+
+Directory \texttt{P/code/pd/} holds the programs \texttt{arb\_compat.py}, \texttt{iv56.py} (interval type over Arb), \texttt{clt56.py} (Algorithms E and C), \texttt{blocks56.py} (Algorithm R), \texttt{tails56.py} (Algorithm T), \texttt{params56.py}, \texttt{make\_cells56.py}, \texttt{run\_pd56.py}, and the data \texttt{params56.json}, \texttt{cells56\_sharp.json}, \texttt{consts56\_sharp.json}, \texttt{pd56\_results.json} (hashes in \texttt{P/data/pd/sha256\_copied.txt}; the files \texttt{*\_c15.json} belong to a variant not used in the text).
+
+\begin{itemize}
+\tightlist
+\item
+  Window parameters: \texttt{python3\ params56.py} (Table 8.3).
+\item
+  Cells and constants: \texttt{python3\ make\_cells56.py\ sharp} (Theorem 8.12; Table 8.4).
+\item
+  Block and tail: \texttt{python3\ run\_pd56.py} evaluates three variants; the text uses \texttt{SHARP} (Table 8.2). Output \texttt{pd56\_results.json}.
+\item
+  Reproduction: \texttt{P/data/pd/regen/regen\_all.sh} re-ran all of the above from scratch in a clean directory; \texttt{params56.json}, \texttt{cells56\_sharp.json}, \texttt{consts56\_sharp.json} and \texttt{pd56\_results.json} are identical to the stored files except the timing field \texttt{secs} of the latter (\texttt{regen/compare.log}). \texttt{P/code/pd/spot\_rerun.py} re-runs cells \(0,100,200,311\) and \(k=3,33\) (\texttt{P/data/pd/spot\_rerun\_log.txt}).
+\item
+  Tables 8.1--8.4 of the text are produced from the JSON files by \texttt{P/code/make\_tables.py} (\texttt{P/data/tables\_pd.md}).
+\end{itemize}
+
+Run time on one core: cells about \(20\) s, \texttt{run\_pd56.py} about \(75\) s for all \(16\) values of \(k\) and three variants.
+
+\subsection{The modular certificate and zero sets}\label{the-modular-certificate-and-zero-sets}
+
+\texttt{P/cert/modcert\_copy.c} (sha256 \texttt{a228eaff1ac42094a28ec7b32ce495e233d3d78007d5ebd33dce4e35482caf08}); compile \texttt{gcc\ -O2\ -o\ modcert\ modcert\_copy.c}; \texttt{P/cert/run\_cert.sh} runs \texttt{modcert\ k\ 60000000\ p} for all odd \(k\le33\) and \(p\in\{2305843009213693951,\,4611686018427387847\}\) (outputs \texttt{z\_k\textless{}k\textgreater{}\_p\textless{}p\textgreater{}.txt}; log \texttt{cert\_jobs.log}; about \(3\) min per job, memory below \(900\) MB). \texttt{python3\ P/code/zero\_sets.py} intersects the two lists, evaluates every candidate exactly, evaluates all allowed \(d\le\max C_k\) exactly, and writes \texttt{P/data/zero\_sets.json} and \texttt{zero\_sets.md} (Table 8.5, Appendix B.1).
+
+\subsection{Source directories}\label{source-directories}
+
+The programs of A.3 and A.4 are unchanged copies of the following directories of the same repository (\texttt{reports/s\_family\_paths/}): \texttt{A56\_A49\_audit} (block, tail, cell code, modular certificate), \texttt{A58\_chern\_bound\_audit} (pair certificate, \(Q\) table), \texttt{A61\_clt\_proofs} (written proofs of the lattice-sum, cell, and tail lemmas, \texttt{PROOFS.md}), \texttt{A59\_clt\_rederivation} (the independent derivation of Remark 8.9), \texttt{A57\_gk\_31\_33} (the cases \(k=31,33\)), \texttt{A46\_zero\_facts\_audit}, \texttt{A47\_composite\_zeros}, \texttt{A49\_gk\_runs}, \texttt{A50\_proofs}, \texttt{A54\_proofs2}, \texttt{A55\_small\_k\_exceptions} (Sections 5--7). The proofs in Part~I were written out and checked against these sources.

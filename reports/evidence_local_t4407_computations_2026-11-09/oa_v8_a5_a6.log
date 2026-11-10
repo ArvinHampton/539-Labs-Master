@@ -1,0 +1,13 @@
+PARI stack size set to 3000000000 bytes, maximum size set to 3000000512
+dim K = 4 ; pivots n = [1, 2, 3, 5]
+A5: max n<=400 with 7|n and some c(n)!=0 on K: 0  (0 = none); Sturm bound needed: 294
+U(4)G_j = sum_i U4[j,i] G_i holds for all n<=100 (>= Sturm 42): 1
+U(4) matrix on (G_1..G_4) [row j = coords of U(4)G_j]: [0, -2, 0, 0; 1, 1, 0, 0; 0, 0, -1, 2; 0, 0, -2, 2]
+charpoly U(4) on K: Mat([x^2 - x + 2, 2])
+plus∩K in G-coordinates: [0, 0, 0, -1; -1, 0, 0, 0]
+U(4)-stability of plus∩K: rank [Plc ; Plc*U4] = 4  (2 => stable)
+eigen of U(4) restricted:  
+U(4) eigenvalues (numerical roots of charpoly): [0.500000000000000 - 1.32287565553230*I, 0.500000000000000 - 1.32287565553230*I, 0.500000000000000 + 1.32287565553230*I, 0.500000000000000 + 1.32287565553230*I]~
+U(2) part err: mfinit: incorrect type in checkNF [chi] (t_VEC)
+U(7)G_j and U(49)G_j: identically 0 on K by A5 (c(7n)=0).
+elapsed 0.1s

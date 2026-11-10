@@ -1,0 +1,5 @@
+[Q,H'] = Matrix([[0, 0], [0, 0]])
+<Q>(t) = cos(2*g*t)
+eigs {E - g: 1, E + g: 1}  unitary: True
+H~ eigs {-sqrt(E**2 + g**2): 1, sqrt(E**2 + g**2): 1}
+g for G4 arrow-mixing [rad/s] 0.0058188417365989875

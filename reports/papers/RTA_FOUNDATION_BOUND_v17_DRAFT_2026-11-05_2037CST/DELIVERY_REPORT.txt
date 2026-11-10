@@ -1,0 +1,19 @@
+RTA v17 DRAFT delivery — 2026-11-05 ~20:43 CST America/Chicago
+Authorized by Owner DIRECT t4150.
+
+PDF:  /workspace/quantum-comp/reports/papers/RTA_FOUNDATION_BOUND_v17_DRAFT_2026-11-05_2037CST/RTA_FOUNDATION_BOUND_v17_DRAFT.pdf
+Source tree: .../RTA_FOUNDATION_BOUND_v17_DRAFT_2026-11-05_2037CST/src/  (entry main_v17.tex)
+Minimal tarball: .../RTA_FOUNDATION_BOUND_v17_DRAFT_src_minimal.tgz
+Pages: 156 (v16 was 148)
+Compile: tectonic, no Fatal/Emergency; inherited multiply-defined label lem:parity (pre-existing spine)
+Baseline v16 PDF sha unchanged: 1fe7b8a2…73c3297
+Baseline NOTES_v16 sha unchanged: 061eac86…0d593d03
+
+Statement counts:
+- NOTES_v16 label: 82 mixed numbered statements (71+11), not 82 pure theorems
+- v16 LaTeX env census: 236 (thm60/prop90/lem24/cor14/def6/rem33/conj1/catb8) — unreconciled with 82
+- Formally numbered additions to frozen v16 PDF before this draft: 0 verified
+- New v17-only environments in additive chapters: 26 (thm3/prop7/def9/rem7) — draft-local, not a master 82+N claim
+
+Coverage: full v16 spine retained; new sec:postv16, sec:boundaryrank, appE; spectra 14+9 present; coefficient 8-row grid present; DRAFT banner present.
+Limitations: coefficient table provenance = verification record /tmp/q.py not Owner-intake reprint; Auditor post-v16 items listed by provenance not summed; capacity OPEN; Clifford excluded to appendix; no CERT; tip/master/v16 untouched.

@@ -1,0 +1,273 @@
+41.7    The thin form complex and the rank-one classifier D1
+Let X× = K9 × PB ′ be the product of the complete 9-vertex charge skeleton with the residual
+path of length B ′ = 539, and let F be the thin residual form complex on the locked generators
+{1, α, ω2 , µ, f, δf } with product differential D, under the residual relations ω2 = dQ α and µ =
+−B ′ ω2 on ordered triples, truncated by F 3 := 0 (brutal truncation σ≤2 ). Write sαδ for the mixed
+generator α ⊗ δf .
+Theorem 41.10 (Rank-one classifier D1 ). In the thin truncated complex F one has
+
+                      H 0 (F ) ∼
+                               = Q,       H 1 (F ) = 0,      H 2 (F ) ∼
+                                                                      = Q · [sαδ ],
+
+and consequently the formality equivalence F ≃ Q[0]⊕Q[−2]. Define D1 to be the Q-linear functional
+on H 2 (F ) that isolates the line Q · [sαδ ]. Then:
+  (i) D1 is a static rank-1 classifier over Q, spanned by [sαδ ] ∈ H 2 (F );
+
+ (ii) D1 acts only on the nine charge sectors of X× and takes no argument from any temporal
+      variable, execution schedule, or metric normalisation;
+
+(iii) no algebraic datum of D1 is shared with any resonant counter set;
+
+ (iv) Layer 2 structure beyond the definition of D1 is not constructed from D1 in this paper.
+The class [sαδ ] is the generator of coker(D1 : F 1 → F 2 ) in the thin truncation; in the filled cochain
+complex of X× the same cochain is not a cocycle whenever δf 6≡ 0.
+Proof. The cohomology computation H 0 (F ) ∼    = Q, H 1 (F ) = 0, H 2 (F ) ∼
+                                                                            = Q · [sαδ ] is the locked
+computation on the thin residual form complex: Df = vδ forces f ∈ F 0 , the relation ker D =
+span{vδ } = im(D : F 0 → F 1 ) kills H 1 , and after quotienting by the exact pure-charge pieces
+the mixed class [sαδ ] spans H 2 . Formality F ≃ Q[0] ⊕ Q[−2] is the unique formal model with
+these Betti numbers. Items (i)–(iii) are the definition of D1 as the projection onto that line, with
+domain restricted to the static charge sectors and with no structure map into any resonant counter.
+Item (iv) records that no further Layer 2 construction is derived from D1 here. The filled-complex
+caveat is the identity Dsαδ = −δf on prisms, which is nonzero on the residual data.
+
+Status (Category A). Rank-1 over Q, spanned by [sαδ ] ∈ H 2 (F ) ∼
+                                                                 = Q; H 1 (F ) = 0; formality F ≃
+Q[0] ⊕ Q[−2]; Layer 2 not constructed from D1 .
+
+
+41.8    Static cell budget and Residual versus Resonant
+Proposition 41.11 (Static cell budget Seﬀ ). Let T3 denote the ternary map of Proposition 42.6 and
+write 539 for the residual cardinality of Proposition 42.6. Define the effective packaging structure
+Seﬀ by the following constraints.
+  (i) The integer T3 = 539 is a static cell capacity (equivalently: a static arithmetic hash budget).
+      It is not a stopping time, not a convergence rate, and not a runtime execution length forced
+      by residual cohomology.
+
+ (ii) There is no global guarantee that a packaging remainder Ω satisfies Ω ≡ 0 (mod 539).
+
+(iii) Dual-rail representations, when mentioned, are hardware-only side-channel countermeasures
+      and play no algebraic role in Seﬀ .
+
+                                                  135
+ (iv) The assignment                                                         
+                                 M : Seﬀ −→ Residual539 × Resonant539
+       keeps the two factors disjoint: the residual factor is a count of leftover cells, the resonant
+       factor is a forced round count; a count is not a clock.
+
+Proof. Items (i)–(iv) are definitional constraints on the packaging arithmetic already present in
+Proposition 42.6 and Remark 42.7: the identity 539 = b4859/9c = 18+521 records a cell count and,
+separately, a window-plus-body split used as a schedule; neither identity produces a congruence
+Ω ≡ 0 (mod 539) nor a structure map from residual cohomology into the schedule. Dual-rail
+hardware is excluded from the algebraic criteria by (iii).
+
+Status (Category A). T3 = 539 is a static cell/hash budget, not a stopping time; no global Ω ≡ 0
+(mod 539); dual-rail hardware-only; Residual 6= Resonant.
+
+Proposition 41.12 (Residual is not Resonant). The residual cardinality 539 (a count of leftover
+cells per charge sector after packaging) is a different mathematical object from the resonant schedule
+length 539 (a forced iteration count of T3 ). Equality of the two integers is an equality of values, not
+a structure map of chain complexes, graded vector spaces, or sets. In particular, residual product
+cohomology does not force the resonant schedule, and the resonant schedule does not redefine residual
+cohomology.
+
+Proof. By construction of the residual product complex, B ′ = 539 is the number of residual path
+edges in each sector. By construction of the resonant schedule, the same integer is used as a
+constant-time iteration budget. No chain map, graded map, or set map relating C • (X× ), F , or
+H • (F ) to the counter set {1, . . . , 539} is part of either definition (Theorem 41.10(iii) and Proposi-
+tion 41.11(iv)).
+
+Status (Category A). Residual cardinality 6= resonant schedule; equality of integers is not a structure
+map.
+
+
+41.9    Status of claims not established
+Proposition 41.13 (Claims not part of the theory). The following are recorded as not established,
+and are not used as hypotheses in this paper.
+
+  (i) A Petersson inner-product formula for the shadow Ξ is not used as a proved identity.
+
+ (ii) No Kronecker 11-element purge and no four-forces (or SU (3) continuum) mapping is part of
+      the theory.
+
+(iii) The assertion C ∈/ V35
+                          Hilb still lacks an explicit formula for a boundary vector of C; the elliptic
+
+      curve Y 2 = X 3 − 35X is not a substitute.
+
+Proof. (i)–(iii) are negative inventory statements: no written Petersson identity for Ξ is cited as
+proved; continuum and four-forces maps are excluded from every Category A statement above; and
+without an explicit formula for a boundary component of C the membership C ∈     / V35
+                                                                                    Hilb cannot be
+
+evaluated.
+
+Status (Category A). Status only: Ξ Petersson not used as proved; Kronecker/four-forces maps
+excluded; C ∈
+            / V35
+               Hilb
+                    lacks an explicit formula for C.
+
+
+                                                   136
+Remark 41.14 (Scope relative to Parts I–III). The Local cite-lifts F1–F3 and the packaging
+advancements of this section do not modify the radial or S-law theorems already proved for the
+Bridge Series C, do not resolve Problem 1., and do not identify the shadow Ξ. The seven Category A
+local modular theorems of Section 40 remain unchanged.
+
+Tip untouched. / No CERT.
+
+
+Part IV
+Foundation
+42 The foundation attempt: what ties RTA to the framework
+This section lists the written RTA objects and, for each, what is proved about its relation to
+the structures of Parts I–III. References to “RTA” are to the RTA manuscript (Residual Ternary
+Algebra: Packaging Identities, Residual Series gs , and Bridge Series C, draft of 24 August 2026),
+which has no algebraic axioms: its six numbered rules are process rules.
+
+42.1   Proved links
+Proposition 42.1 (Identification of objects). The following hold.
+
+  (i) The RTA residual series gs is the series gk of Part I with k = s.
+
+ (ii) The RTA double-sum identity for (−q s ; q s )∞ gs holds for every s ≥ 1 as an identity in Z[[q]]
+      (Proposition 2.2).
+
+(iii) The RTA path quadratic Qs , cones c1 , c2 , weight w, cone series Hs , orthant series and Bridge
+      Series C = P7orth − H7 are those of §2 and of Part II; Caxis and Cthird are those of Part II,
+      §10; the RTA natural characteristic χnat (7) = ( 107
+                                                           , − 51 ) is the vector a.
+
+Proof. (i) and (iii) are comparisons of definitions: RTA Definition 6.1 and §§9–10 against Defi-
+nition 2.1, §2 and Part II, §10; χnat (s) = (s/(2(s − 2)), −1/(s − 2)) at s = 7 equals a. (ii) is
+Proposition 2.2.
+
+Corollary 42.2 (Residue law of g7 and its converse). g7 (d) = 0 whenever d ≡ 3, 5, 6 (mod 7).
+Conversely, g7 (d) 6= 0 for every d ≡ 0, 1, 2, 4 (mod 7) outside the finite set Z7 of 24 elements listed
+in Appendix B (max Z7 = 247), and the sign of g7 (d) is (−1)d+1 for all such d ≥ D0 (7).
+
+Proof. By Proposition 3.2 (Part I), g7 (d) is a sum over n ≥ 0 with n2 ≡ d (mod 7); the squares
+modulo 7 are 0, 1, 2, 4, so the sum is empty for d ≡ 3, 5, 6. The converse is the case k = 7 of
+Theorem 8.1 (Part I, §8.1), parts 1 and 2.
+
+Theorem 42.3 (The normalized Bridge Series and the 35-component law vector). The following
+hold.
+
+  (i) The leading radial profile of the RTA Bridge Series C is I e(7x/20)K20 (x), and it does not
+      lie in V35 .
+
+ (ii) The leading radial profile of q −7/20 C is I K20 , a non-zero element of V35 ; together with its S-
+      and T -images it spans V35 , and it obeys the vector-valued S-law of Theorem 34.7.
+
+                                                  137
+(iii) Up to order t0 , the radial expansion of q −7/20 C at every rational point is given in closed form
+                                                                    √
+      by Theorem 35.6; at order t−1/2 the coeﬀicient divided by π is algebraic, and at every point
+      of Z0 ∪ {− 15 } it is non-zero.
+
+Proof. Theorems 34.5, 34.6, 34.7, 35.6, Corollary 35.8 and Proposition 35.10.
+
+42.2   Negative results
+Proposition 42.4 (No scalar residual law). There is no scalar modular, mock-modular (signature
+(1, 1)) or unary/partial/false theta law for C of the kinds listed in Theorem 11.5; in particular for
+no weight k and constant λ is C(τ ) − λ(7τ )−k C(−1/(7τ )) radially bounded at all rationals.
+
+Proof. Theorem 11.5, with the stated dependence on Baker’s theorem for part (i).
+
+Proposition 42.5 (No vector-valued Fricke law at leading order; computer-assisted). Let D7 f (x) =
+f (7x). Then V35 ∩ D7 V35 = 0 as spaces of functions on Q. In particular D7 V35 6⊂ V35 .
+
+Proof. Both spaces have dimension at most 36 (Proposition 33.6). The 216×210 matrix of values of
+the 105 functions and of their dilations by 7 at X216 has rank 72 modulo each of the four primes of
+Proposition 33.6 (A53_RTA_maps); by the reduction argument of that proof its rank in characteristic
+0 is at least 72. Hence dim(V35 + D7 V35 ) = 72 and the sum is direct.
+
+Proposition 42.6 (Facts about T3 and 539). Let T3 (3k) = k, T3 (3k + 1) = 4k + 2, T3 (3k + 2) =
+2k + 1.
+
+  (i) If 539 = a1 + · · · + a8 with positive integers and max ai − min ai ≤ 1, then {ai } =
+      {68, 68, 68, 67, 67, 67, 67, 67}.
+
+ (ii) For M coprime to 6 and L ≥ 1, as n runs over Z/3L M , T3L (n) mod M is well defined and
+      takes each value exactly 3L times.
+
+(iii) Extended to Z3 , T3 preserves Haar measure, and the itinerary map n 7→ (T3j (n) mod 3)j≥0 is
+      a homeomorphism Z3 → {0, 1, 2}N conjugating T3 to the shift.
+
+Proof. (i) Let q = min ai and let b be the number of parts equal to q + 1. If b = 8 then 8 | 539, false.
+So 539 = 8q+b with 0 ≤ b ≤ 7, and q = 67, b = 3. (ii) For N = 3i M (i ≥ 1) and n = 3k+r, replacing
+n by n + N changes T3 (n) by N/3, 4N/3 or 2N/3, all ≡ 0 (mod N/3); and for fixed r the maps
+k 7→ k, 4k + 2, 2k + 1 are bijections of Z/(N/3) because N/3 is odd. So n mod N 7→ T3 (n) mod N/3
+is well defined and 3-to-1; iterate L times. (iii) Each branch k 7→ k, 4k + 2, 2k + 1 is an aﬀine
+bijection of Z3 with unit linear coeﬀicient,
+                                    P          and k 7→ 3k + r maps Z3 onto r + 3Z3 scaling Haar
+measure by 31 ; hence µ(T3−1 B) = r µ(B)/3 = µ(B). By induction on j, the points whose itinerary
+begins with a given word of length j form one class modulo 3j ; so the itinerary map is a continuous
+bijection of compact Hausdorff spaces, hence a homeomorphism, and it conjugates T3 to the shift
+by definition.
+
+Remark 42.7 (No written link). Proposition 42.6 is a statement about T3 and the integer 539
+alone. No written object (in RTA, in Parts I–III, or in any source used here) defines a map from
+T3 , the carrier Ores = {21 + 9j : 0 ≤ j ≤ 538}, the packaging identities (539 = b4859/9c, 18 + 521,
+3 · 68 + 5 · 67) or the linking series ΛB to gs , C, V35 or the lift representation. RTA states that
+its packaging identities “are independent of any dynamical map” and of the modular status of
+the series. The choice s ∈ {7, 8, 11} is attributed in RTA to the packaging arithmetic, but no
+derivation of these values from it is written. The statement that the R = ST grading of the cusp
+
+                                                  138
+space is a foundation of RTA has no proof; the only proved statement of that kind is the grading
+lemma of Part II’s framework (the Z/3 grading of equivariant maps by R-degree), which concerns
+representations and not T3 .
+
+42.3    Where the shadow Ξ enters
+RTA describes a weight- 32 shadow Ξ = Ξeven +Ξodd as “the residual-weighted family of shifted partial
+thetas of squares whose outer coeﬀicients are the residual disc-35 series”, and a weight- 21 period
+candidate as its Eichler integral. Neither is written as an explicit series with stated coeﬀicients, so
+no statement about Ξ can be proved from the written definitions. What is proved here bounds the
+place where Ξ must enter:
+
+ (i) at order t−1 the normalized series is governed by V35 with no correction term (Theorem 34.7);
+
+(ii) at order t−1/2 the coeﬀicient A1 is an explicit finite sum of drift, sawtooth and ray terms
+                                  √
+     (Proposition 35.11) with A1 / π algebraic (Corollary 35.8); any S-covariant completion of A1
+     must therefore come from a term that is not visible at order t−1 ;
+
+(iii) at order t0 the coeﬀicient A2 is explicit (Theorem 35.6).
+
+For the 105 companion series, Section 37 determines the shadow structure: the P -odd part has the
+ξ1 -image of Theorem 37.13(i), and the P -even part has no weight-one law and the Laplacian defect
+of Theorem 37.11. This does not identify Ξ, since Ξ is not written as an explicit series. At order
+t−1/2 the coeﬀicient is fully explained by the completion and line terms (Theorem 38.5). Whether
+a completion term of Zwegers type, with coeﬀicients derived from the error-function completion
+of H7 , makes A1 or A2 S-covariant is open (Problem 1.). The numerical tests carried out so far
+(Appendix D) found no closure for any regrouping of the finite sum or for the simplest sawtooth
+candidate.
+
+
+43 Open problems
+ 1. Derive the actual completion constants of H7 (erf-completion along the walls (0, 1) and
+    (21, −1)), form the completed coeﬀicient A1 − Ξcompl , and decide whether it satisfies a vector-
+    valued S-law of weight 12 . This would identify the shadow Ξ. The completions of the cone
+    parts and their ξ1 -images are now explicit (Proposition 37.7); by Theorem 38.5, A1 minus
+    these completion terms and the line terms vanishes identically, so this part of the problem is
+    settled for the companion series; at order t0 the coeﬀicient minus line terms is the explicit even
+    corner term of Theorem 39.4, which admits no aﬀine weight-one law (Proposition 39.5); the
+    identification of Ξ itself remains open. The sawtooth candidate, which removes all W [λ], does
+    not close (Appendix D).
+
+ 2. Decide whether A2 minus a completion term satisfies a vector-valued law; this is the period-
+    function level. Numerically, A2 itself satisfies no pure law of weight 0, 21 or 1, and the mixed
+    test with A1 , A0 is inconclusive (Appendix D).
+                                   √
+ 3. Prove or disprove |A1 ( 12 )| = π/4 (observed numerically) and find the zero set of A1 on the
+    zero set of A0 .
+
+ 4. Find a written object linking T3 , Ores or 539 to gs , C or V35 , or prove that a natural class of
+    such maps does not exist.
+
+
+                                                 139
+

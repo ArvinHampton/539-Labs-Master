@@ -1,0 +1,168 @@
+{
+ "A": {
+  "gram": [
+   [
+    2,
+    7
+   ],
+   [
+    7,
+    7
+   ]
+  ],
+  "det": -35,
+  "milgram": [
+   0.169030850945703,
+   7.037322847196353e-16
+  ],
+  "arg_over_2pi": 6.626155586382339e-16
+ },
+ "forms": [
+  {
+   "gram": [
+    [
+     2,
+     -1
+    ],
+    [
+     -1,
+     18
+    ]
+   ],
+   "milgram": [
+    -2.251943311102833e-16,
+    1.0000000000000004
+   ],
+   "same_qvals_as_A": false,
+   "same_as_minusA": false
+  },
+  {
+   "gram": [
+    [
+     2,
+     1
+    ],
+    [
+     1,
+     18
+    ]
+   ],
+   "milgram": [
+    -2.251943311102833e-16,
+    1.0000000000000004
+   ],
+   "same_qvals_as_A": false,
+   "same_as_minusA": false
+  },
+  {
+   "gram": [
+    [
+     6,
+     -1
+    ],
+    [
+     -1,
+     6
+    ]
+   ],
+   "milgram": [
+    -5.629858277757082e-16,
+    1.000000000000001
+   ],
+   "same_qvals_as_A": false,
+   "same_as_minusA": false
+  },
+  {
+   "gram": [
+    [
+     6,
+     1
+    ],
+    [
+     1,
+     6
+    ]
+   ],
+   "milgram": [
+    -5.629858277757082e-16,
+    1.000000000000001
+   ],
+   "same_qvals_as_A": false,
+   "same_as_minusA": false
+  },
+  {
+   "gram": [
+    [
+     6,
+     -5
+    ],
+    [
+     -5,
+     10
+    ]
+   ],
+   "milgram": [
+    -5.629858277757082e-16,
+    1.000000000000001
+   ],
+   "same_qvals_as_A": false,
+   "same_as_minusA": false
+  },
+  {
+   "gram": [
+    [
+     6,
+     5
+    ],
+    [
+     5,
+     10
+    ]
+   ],
+   "milgram": [
+    -5.629858277757082e-16,
+    1.000000000000001
+   ],
+   "same_qvals_as_A": false,
+   "same_as_minusA": false
+  },
+  {
+   "gram": [
+    [
+     18,
+     -17
+    ],
+    [
+     -17,
+     18
+    ]
+   ],
+   "milgram": [
+    -2.251943311102833e-16,
+    1.0000000000000004
+   ],
+   "same_qvals_as_A": false,
+   "same_as_minusA": false
+  },
+  {
+   "gram": [
+    [
+     18,
+     17
+    ],
+    [
+     17,
+     18
+    ]
+   ],
+   "milgram": [
+    -2.251943311102833e-16,
+    1.0000000000000004
+   ],
+   "same_qvals_as_A": false,
+   "same_as_minusA": false
+  }
+ ],
+ "any_definite_match_qA": false,
+ "any_definite_match_minus_qA": false
+}

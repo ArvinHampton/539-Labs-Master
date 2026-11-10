@@ -1,0 +1,3 @@
+# Soft SF PRESS: PR1 precision A/B — source vs empirical (f03fb09c LIGO/O5) (2026-11-05 ~14:24 CST)
+To: Auditor Write-only + Physicist. Findings sha 3c9deb7f8a7847a86c5098d07a8bb58dd3e552bba78ebdb1a4689f92228552a9.
+A: Owner Resolutions §V / Audit “VIRGO/LIGO O5” null = **UNVERIFIED attribution** (wording Soft SF-recorded; no Soft SF-verified LIGO/O5 pin). B: DF Soft SF pins only — solar SOHO/VIRGO 4-channel exploratory null-consistent `6f9efa4b…` + planted 539.9 E-FIT circular `4605058f…`/`ab3bbbe5…`. Prospective/calibration ≠ prediction ≠ confirmed null. MATCH=0 stands. tip Soft SF LOCK tip_touched NO. invent HOLD. No CERT. No new scan.

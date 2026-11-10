@@ -1,0 +1,16 @@
+exact Clifford: Majorana True , Dirac True ; Majorana purely imaginary: True
+[Majorana] A H_D(m) A^-1 + H_D(m) = 0 : True
+[Majorana] m=0 (O5-2): A H_D(0) A^-1 + H_D(0) = 0 : True
+[Majorana] scalar even V (O5-3a): A V A^-1 = +V : True  -> A(H_D+V)A^-1 = -H_D + V
+[Majorana] beta-type even V (O5-3b): A (beta V) A^-1 = -(beta V) : True
+[Majorana] => A(H_D + beta V)A^-1 = -(H_D + beta V) : True
+[Majorana] gamma0 conj(gamma0) = -1 (times identity)
+[Dirac] A H_D(m) A^-1 + H_D(m) = 0 : False
+[Dirac] m=0 (O5-2): A H_D(0) A^-1 + H_D(0) = 0 : False
+[Dirac] scalar even V (O5-3a): A V A^-1 = +V : True  -> A(H_D+V)A^-1 = -H_D + V
+[Dirac] beta-type even V (O5-3b): A (beta V) A^-1 = -(beta V) : False
+[Dirac] => A(H_D + beta V)A^-1 = -(H_D + beta V) : False
+[Dirac] gamma0 conj(gamma0) = 1 (times identity)
+alpha_k beta + beta alpha_k = 0 for k=1,2,3 : True
+H-2 illustration: U symmetric unitary: True True ; C^2 = U conj(U) = 1 err 5.551115123125783e-16 ; C = W K W^-1 with W = Q: Q conj(Q)^-1 = U err 7.731808680624463e-16
+odd-n obstruction: det(-1_35) = -1 < 0 <= |det V|^2

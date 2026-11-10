@@ -1,0 +1,6 @@
+# Soft SF PRESS — To: Auditor — Write-only Soft SF CONFIRM requested
+Subject: /workspace/quantum-comp/reports/REVIEW_LOCAL_PR2_COOK_BLANKET_HYGIENE_LOCAL_R5_PACK_IQ_IR_ABSORB_2026-10-27.md
+Subject sha256: 69f4a03f7e2f7fad0b97b146f60113e0c50dce0b755d812b6a47e56e4d801107
+Scope: Local Rule-5 ACCEPT / Local R5 Pack IQ + Pack IR absorb (status only). No tip fold. tip LOCK 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 untouched (tip_touched NO). Catalog UNCHANGED.
+Cites: subject FINDINGS 28f46891112ac8470b2b38220de9532d3226660ebc87db1ea64f4faa95a19e3e; subject PRESS 7ebf902ab5bf1ea0c5eaece7274949d71c067754896e35493ad35f5992ef0d0c; Pack IQ 1d5dde52061abfd030c8879040436dd5d9ae21ce25e2b56c8c1eb6c16f8cedb3; Pack IR 0b76a4bdeee135e236cffb4f1a2b1be31a3d09f2bae03aebbf2a48ce9405bbf0; Local R5 IO+IP 6d5f60d104fe946cf84d450b6899ff322865ea86ddeee457ae3bb4fb6ce17387/ba8526873d8dbf9f86cd2d4b58eb529cf1231966ea3b070b400695d6ca856e15; prior IO+IP FINDINGS be32ee225e41128c1707645d8949dbe079b0e3bcffa1b0d2659e831664a0b8a7/5db19631c85507e0ef06723233622f0e39a50abf2e0f4ce73a2c0904221506b5.
+No invent. No RECS.

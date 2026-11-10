@@ -1,0 +1,40 @@
+PARI [2, 17, 2]
+E a-inv [1, -1, 0, -2, -1] cond 49 rootno 1 j -3375
+Ep a-inv [0, -105, 0, -39200, -2744000] cond 19600 rootno -1 j -3375
+Em a-inv [0, 15, 0, -800, 8000] cond 19600 rootno -1 j -3375
+E7 a-inv [-1, 5, 0, -98, 343] cond 49 rootno 1 j -3375
+ellidentify E: no-db
+ellidentify Ep: no-db  Em: no-db
+ellisisom(Ep,Em) = 0
+isogeny class of Ep (size, matrix): [4, [1, 2, 7, 14; 2, 1, 14, 7; 7, 14, 1, 2; 14, 7, 2, 1]]
+isogeny class curves of Ep (short W): [[-42875, -4201750], [-728875, -239499750], [-875, 12250], [-14875, 698250]]
+ellisisom(Em, class curve i), i=1..4: [0, 0, [1, -5, 0, 0], 0]
+ellisisom(Ep, class curve i), i=1..4: [[1, 35, 0, 0], 0, 0, 0]
+index Gamma0(19600) = 40320  Sturm= 6721
+all a_n equal (Ep vs Em), n<=7000: 1
+a_n(Xi) == chi140(n) a_n(49a1), all n<=7000: 1
+a_n(Xi) == chi_-20(n) a_n(49a1), all n<=7000: 1
+CM: a_n(49a1)==chi_-7(n)a_n(49a1) n<=7000: 1
+CM for Xi: a_n(Xi)==chi_-7(n)a_n(Xi): 1
+chi140 == chi_-20*chi_-7 on n<=1000: 1
+chi140(-1),chi_-20(-1),chi_-20(-49): [1, -1, -1]
+lfuncheckfeq(Xi) (bits, <= -100 means OK): -135
+lfunrootres(Xi) root number: -1
+analytic rank Xi: 1  L'(Xi,1)= 4.4326227316864161623215548417217891680
+analytic rank 49a1: 0  L(49a1,1)= 0.96665585280840577336653841951490686553
+S*T*S^-1 = [1, 0; -1, 1]  S^-1*T^-1*S = [1, 0; 1, 1]
+f_49a1 == (1/2) sum_{alpha in O} (alpha|sqrt-7) alpha q^N(alpha), n<=B: 1
+dim S2(49), E2(49), M2(49): [1, 7, 8]
+theta_L49 in M2(Gamma0(49)) coords: [0, 0, 0, 0, 1/2, 0, 1/2, 1]
+theta_L49 = Eis + c*f, c = 1
+check coeffs: theta_L49 - c*f in Eisenstein space -> residual 1
+Fricke on cusp part: mfatkin of f at Q=49 eigen: Mat(-1)
+R_chi140(theta1(7.)^2) == 0 (n<=300): 1
+R_chi140(theta1^2) first coeffs: [0, 4, 0, -16, 0, 0, 0, 0, 0, 52, 0, -48, 0, 56, 0, 0, 0, 72, 0, 80]
+f_Xi first coeffs: [0, 1, 0, 0, 0, 0, 0, 0, 0, -3, 0, -4, 0, 0, 0, 0, 0, 0, 0, 0]
+f_Xi in span R_chi(F2)? solve c*tw(co1)=fx : [1/4, 0]
+dim S4(49): 10
+cusp part of theta_L49^2 coeffs: [0, 136/35, 384/35, 64/5, 688/35, 48/5, 96/5, 16/5, 64/7]
+f^2 in S4(49)? 1  cusp(theta_L49^2) proportional to f^2? 0
+Fricke eigen of f^2 (mfatkin Q=49): f^2|W == f^2 ? 1
+rank [f^2, cusp(theta^2)] : 2

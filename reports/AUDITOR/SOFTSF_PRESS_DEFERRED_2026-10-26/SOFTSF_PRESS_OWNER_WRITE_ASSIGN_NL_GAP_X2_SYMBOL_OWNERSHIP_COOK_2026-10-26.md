@@ -1,0 +1,4 @@
+# Soft SF PRESS — GAP-X2 ASSIGN NL COOK
+OWNER_WRITE sha256: d10052d358875366b4af4c463bcf6481fba2cccde52d710a46c9ae0cc5c1b27d
+ASSIGN sha256: 4d08bca0f992064fa099a6849d70f7d43fe5306090febb921588383c4aa3aa5c
+Also absorb Agent cook track 422d3a8b…. tip Soft SF LOCK 7cddb188… tip_touched NO.

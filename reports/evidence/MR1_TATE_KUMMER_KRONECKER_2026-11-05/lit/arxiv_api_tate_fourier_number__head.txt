@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/quSI0jsAuOLhNEuQEov1mV14ioQ</id>
+  <title>arXiv Query: search_query=ti:Tate AND (all:adelic OR all:"local zeta" OR all:"Fourier analysis")&amp;id_list=&amp;start=0&amp;max_results=8</title>
+  <updated>2026-11-05T20:02:42Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=ti:Tate+AND+(all:adelic+OR+(all:%22local+zeta%22+OR+all:%22Fourier+analysis%22))&amp;start=0&amp;max_results=8&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>8</opensearch:itemsPerPage>
+  <opensearch:totalResults>7</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/1508.06426v1</id>
+    <title>Integral and adelic aspects of the Mumford-Tate conjecture</title>
+    <updated>2015-08-26T09:48:05Z</updated>
+    <link href="https://arxiv.org/abs/1508.06426v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1508.06426v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Let $Y$ be an abelian variety over a subfield $k \subset \mathbb{C}$ that is of finite type over $\mathbb{Q}$. We prove that if the Mumford-Tate conjecture for $Y$ is true, then also some refined integral and adelic conjectures due to Serre are true for $Y$. In particular, if a certain Hodge-maximality condition is satisfied, we obtain an adelic open image theorem for the Galois representation on the (full) Tate module of $Y$. Our second main result is an (unconditional) adelic open image theorem for K3 surfaces. The proofs of these results rely on the study of a natural representation of the fundamental group of a Shimura variety.</summary>
+    <category term="math.AG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.NT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2015-08-26T09:48:05Z</published>
+    <arxiv:primary_category term="math.AG"/>
+    <author>
+      <name>Anna Cadoret</name>
+    </author>
+    <author>
+      <name>Ben Moonen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1312.3812v2</id>
+    <title>Adelic openness without the Mumford-Tate conjecture</title>
+    <updated>2015-08-29T19:25:16Z</updated>
+    <link href="https://arxiv.org/abs/1312.3812v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/

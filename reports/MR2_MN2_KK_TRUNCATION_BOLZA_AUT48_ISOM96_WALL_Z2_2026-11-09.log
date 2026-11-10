@@ -1,0 +1,134 @@
+[G] generator g1: x->ix: kappa=0.000000+1.000000j; branch-point perm ['0', 'inf', 'i', '-1', '-i', '1']
+[G] generator g2: x->(x+1)/(1-x): kappa=-8.000000-0.000000j; branch-point perm ['1', '-1', 'inf', 'i', '0', '-i']
+[G] |closure of <g1,g2,J,K>| = 96;  holomorphic (Aut+) = 48;  antiholomorphic = 48
+[G] distinct H^1 matrices: 96 (faithful on H^1 iff = |G|)
+[G] Aut+ element orders: [(1, 1), (2, 13), (3, 8), (4, 6), (6, 8), (8, 12)]
+[G] Isom element orders: [(1, 1), (2, 31), (3, 8), (4, 8), (6, 8), (8, 24), (12, 16)]
+[G] GL(2,3) by enumeration: |GL(2,3)|=48, element orders [(1, 1), (2, 13), (3, 8), (4, 6), (6, 8), (8, 12)]
+[G] elements acting as -1 on H^1: 1 (the hyperelliptic involution); central in Isom: True
+[G] Aut+ (order 48): 8 classes, sizes [np.int64(1), np.int64(1), np.int64(6), np.int64(6), np.int64(6), np.int64(8), np.int64(8), np.int64(12)], irrep dims [1, 1, 2, 2, 2, 3, 3, 4], sum d^2 = 48, orthogonality err 4.2e-15
+[G] Aut+ (order 48) class rep orders [1, 2, 8, 4, 8, 3, 6, 2]; orientation [1, 1, 1, 1, 1, 1, 1, 1]
+   chi_0: +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000
+   chi_1: +1.000  +1.000  -1.000  +1.000  -1.000  +1.000  +1.000  -1.000
+   chi_2: +2.000  +2.000  -0.000  +2.000  -0.000  -1.000  -1.000  -0.000
+   chi_3: +2.000  -2.000  +0.000+1.414i  -0.000  -0.000-1.414i  -1.000  +1.000  -0.000
+   chi_4: +2.000  -2.000  +0.000-1.414i  -0.000  -0.000+1.414i  -1.000  +1.000  -0.000
+   chi_5: +3.000  +3.000  +1.000  -1.000  +1.000  +0.000  +0.000  -1.000
+   chi_6: +3.000  +3.000  -1.000  -1.000  -1.000  +0.000  -0.000  +1.000
+   chi_7: +4.000  -4.000  +0.000  +0.000  -0.000  +1.000  -1.000  -0.000
+[G] Isom (order 96): 13 classes, sizes [np.int64(1), np.int64(1), np.int64(2), np.int64(6), np.int64(6), np.int64(8), np.int64(8), np.int64(8), np.int64(8), np.int64(12), np.int64(12), np.int64(12), np.int64(12)], irrep dims [1, 1, 1, 1, 2, 2, 3, 3, 3, 3, 4, 4, 4], sum d^2 = 96, orthogonality err 2.9e-14
+[G] Isom (order 96) class rep orders [1, 2, 4, 2, 4, 3, 6, 12, 12, 8, 2, 8, 2]; orientation [1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, -1, 1]
+   chi_0: +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000
+   chi_1: +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  -1.000  -1.000  -1.000  -1.000
+   chi_2: +1.000  +1.000  -1.000  -1.000  +1.000  +1.000  +1.000  -1.000  -1.000  -1.000  +1.000  +1.000  -1.000
+   chi_3: +1.000  +1.000  -1.000  -1.000  +1.000  +1.000  +1.000  -1.000  -1.000  +1.000  -1.000  -1.000  +1.000
+   chi_4: +2.000  +2.000  +2.000  +2.000  +2.000  -1.000  -1.000  -1.000  -1.000  -0.000  -0.000  -0.000  -0.000
+   chi_5: +2.000  +2.000  -2.000  -2.000  +2.000  -1.000  -1.000  +1.000  +1.000  +0.000  +0.000  -0.000  +0.000
+   chi_6: +3.000  +3.000  +3.000  -1.000  -1.000  -0.000  -0.000  +0.000  +0.000  -1.000  +1.000  -1.000  +1.000
+   chi_7: +3.000  +3.000  +3.000  -1.000  -1.000  -0.000  -0.000  -0.000  -0.000  +1.000  -1.000  +1.000  -1.000
+   chi_8: +3.000  +3.000  -3.000  +1.000  -1.000  +0.000  -0.000  +0.000  -0.000  -1.000  -1.000  +1.000  +1.000
+   chi_9: +3.000  +3.000  -3.000  +1.000  -1.000  -0.000  +0.000  -0.000  -0.000  +1.000  +1.000  -1.000  -1.000
+   chi_10: +4.000  -4.000  +0.000  +0.000  +0.000  +1.000  -1.000  -1.732  +1.732  +0.000  -0.000  -0.000  -0.000
+   chi_11: +4.000  -4.000  +0.000  -0.000  -0.000  +1.000  -1.000  +1.732  -1.732  +0.000  +0.000  -0.000  +0.000
+   chi_12: +4.000  -4.000  +0.000  +0.000  +0.000  -2.000  +2.000  +0.000  -0.000  +0.000  +0.000  -0.000  -0.000
+[G] (A) H^1(Sigma,R) (harmonic 1-forms, dim 4): multiplicities [-0.0, 0.0, -0.0, 1.0, 1.0, 0.0, -0.0, 0.0]  trivial-rep multiplicity = -0.000000
+[G] (B) H^1(Sigma,R) (harmonic 1-forms, dim 4): multiplicities [0.0, 0.0, 0.0, 0.0, -0.0, 0.0, -0.0, 0.0, 0.0, 0.0, -0.0, -0.0, 1.0]  trivial-rep multiplicity = 0.000000
+[G] (A) H^0(K) = holomorphic 1-forms (dim 2; q=1 lowest Landau level): multiplicities [-0.0, 0.0, -0.0, -0.0, 1.0, 0.0, -0.0, 0.0]  trivial-rep multiplicity = -0.000000
+[G] (A) H^0(K^2) = Sym^2 H^0(K) (dim 3; q=2 lowest Landau level): multiplicities [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]  trivial-rep multiplicity = 0.000000
+[G] Aut+: number of 1-dim characters = 2
+[G] Isom: number of 1-dim characters = 4
+[W] (A) Aut+ odd spin structures (theta chars O(P_i)): 6 objects, orbit sizes [6], invariant = 0
+[W] (A) Aut+ even spin structures (3+3 partitions): 10 objects, orbit sizes [4, 6], invariant = 0
+[W] (A) Aut+ nonzero H^1(Sigma,Z2) classes (P_i-P_j): discrete Z2 Wilson lines: 15 objects, orbit sizes [3, 12], invariant = 0
+[W] (B) Isom odd spin structures (theta chars O(P_i)): 6 objects, orbit sizes [6], invariant = 0
+[W] (B) Isom even spin structures (3+3 partitions): 10 objects, orbit sizes [4, 6], invariant = 0
+[W] (B) Isom nonzero H^1(Sigma,Z2) classes (P_i-P_j): discrete Z2 Wilson lines: 15 objects, orbit sizes [3, 12], invariant = 0
+[W] check: 6 odd + 10 even = 16 spin structures; 15 nonzero Z2 classes = 2^4-1
+[T] (2,3,8) triangle: r_B=0.364566859027, r_C=0.405616400802; arc centre c0=1.553773974030 (real => right angle at B); |C-c0|-R = 0.00e+00 (law-of-cosines consistency)
+[T] angle at C between ray and arc = 1.047197551197 vs pi/3 = 1.047197551197
+[T] exact hyperbolic area pi/24 = 0.1308996939
+[T] NN: FEM area(n=240)=0.1308997195
+    NN #0: n=60     0.000000  n=120     0.000000  n=240    -0.000000  Richardson    -0.000000  (Richardson spread 1.3e-12)
+    NN #1: n=60    23.084282  n=120    23.079990  n=240    23.078916  Richardson    23.078559  (Richardson spread 8.3e-07)
+    NN #2: n=60    75.000563  n=120    74.945179  n=240    74.931327  Richardson    74.926709  (Richardson spread 8.8e-06)
+    NN #3: n=60   116.740940  n=120   116.637174  n=240   116.611185  Richardson   116.602522  (Richardson spread 6.3e-05)
+    NN #4: n=60   169.575458  n=120   169.297254  n=240   169.227686  Richardson   169.204496  (Richardson spread 2.3e-05)
+    NN #5: n=60   257.573231  n=120   256.913040  n=240   256.747873  Richardson   256.692818  (Richardson spread 1.6e-04)
+    NN #6: n=60   307.782472  n=120   306.955913  n=240   306.749163  Richardson   306.680246  (Richardson spread 1.5e-04)
+    NN #7: n=60   388.872883  n=120   387.577204  n=240   387.252268  Richardson   387.143956  (Richardson spread 1.4e-03)
+    NN #8: n=60   445.305985  n=120   443.463458  n=240   443.002312  Richardson   442.848596  (Richardson spread 6.9e-04)
+    NN #9: n=60   503.053438  n=120   501.260368  n=240   500.811969  Richardson   500.662502  (Richardson spread 1.8e-04)
+[T] DD: FEM area(n=240)=0.1308997195
+    DD #0: n=60   222.768394  n=120   222.470481  n=240   222.395966  Richardson   222.371127  (Richardson spread 4.9e-05)
+    DD #1: n=60   396.115251  n=120   394.962154  n=240   394.673864  Richardson   394.577768  (Richardson spread 2.1e-05)
+    DD #2: n=60   587.161443  n=120   584.395348  n=240   583.703464  Richardson   583.472835  (Richardson spread 4.8e-04)
+    DD #3: n=60   650.730425  n=120   648.461828  n=240   647.893529  Richardson   647.704096  (Richardson spread 1.5e-03)
+    DD #4: n=60   828.916701  n=120   823.075441  n=240   821.617657  Richardson   821.131730  (Richardson spread 3.4e-03)
+    DD #5: n=60   956.488925  n=120   950.224088  n=240   948.650866  Richardson   948.126459  (Richardson spread 9.3e-03)
+    DD #6: n=60  1106.767827  n=120  1096.505502  n=240  1093.949285  Richardson  1093.097213  (Richardson spread 1.2e-02)
+    DD #7: n=60  1216.779983  n=120  1207.105882  n=240  1204.654541  Richardson  1203.837427  (Richardson spread 4.4e-02)
+    DD #8: n=60  1326.298289  n=120  1315.309849  n=240  1312.558036  Richardson  1311.640766  (Richardson spread 6.3e-03)
+    DD #9: n=60  1427.997868  n=120  1411.561901  n=240  1407.488679  Richardson  1406.130939  (Richardson spread 4.8e-02)
+[T] DN: FEM area(n=240)=0.1308997195
+    DN #0: n=60    32.682412  n=120    32.675842  n=240    32.674198  Richardson    32.673650  (Richardson spread 1.7e-06)
+    DN #1: n=60   120.611783  n=120   120.485763  n=240   120.454251  Richardson   120.443748  (Richardson spread 8.6e-06)
+    DN #2: n=60   215.001146  n=120   214.589536  n=240   214.486503  Richardson   214.452159  (Richardson spread 1.7e-04)
+    DN #3: n=60   270.452528  n=120   269.969413  n=240   269.848452  Richardson   269.808132  (Richardson spread 2.4e-04)
+    DN #4: n=60   376.470668  n=120   375.104073  n=240   374.762789  Richardson   374.649027  (Richardson spread 4.9e-04)
+    DN #5: n=60   477.868634  n=120   475.847683  n=240   475.341022  Richardson   475.172134  (Richardson spread 1.9e-03)
+    DN #6: n=60   572.653165  n=120   569.869774  n=240   569.174695  Richardson   568.943002  (Richardson spread 1.0e-03)
+    DN #7: n=60   629.422983  n=120   626.509903  n=240   625.776040  Richardson   625.531419  (Richardson spread 7.5e-03)
+    DN #8: n=60   739.982674  n=120   735.362746  n=240   734.206657  Richardson   733.821294  (Richardson spread 1.5e-03)
+    DN #9: n=60   819.680688  n=120   814.568948  n=240   813.296726  Richardson   812.872653  (Richardson spread 7.6e-03)
+[T] ND: FEM area(n=240)=0.1308997195
+    ND #0: n=60    91.535591  n=120    91.482548  n=240    91.469284  Richardson    91.464863  (Richardson spread 4.0e-06)
+    ND #1: n=60   199.739368  n=120   199.429576  n=240   199.352133  Richardson   199.326319  (Richardson spread 6.7e-06)
+    ND #2: n=60   338.584803  n=120   337.595078  n=240   337.347770  Richardson   337.265334  (Richardson spread 1.6e-04)
+    ND #3: n=60   406.624747  n=120   405.711330  n=240   405.482444  Richardson   405.406149  (Richardson spread 7.1e-04)
+    ND #4: n=60   515.384316  n=120   513.054000  n=240   512.472226  Richardson   512.278301  (Richardson spread 1.1e-03)
+    ND #5: n=60   644.355870  n=120   641.311741  n=240   640.548762  Richardson   640.294435  (Richardson spread 2.6e-03)
+    ND #6: n=60   729.740407  n=120   725.147744  n=240   724.002631  Richardson   723.620926  (Richardson spread 4.1e-03)
+    ND #7: n=60   874.820174  n=120   869.060370  n=240   867.611332  Richardson   867.128320  (Richardson spread 1.2e-02)
+    ND #8: n=60   949.614061  n=120   943.526754  n=240   941.985909  Richardson   941.472294  (Richardson spread 2.5e-02)
+    ND #9: n=60   987.903851  n=120   980.588714  n=240   978.786729  Richardson   978.186067  (Richardson spread 3.6e-02)
+[T] cross-check against Strohmaier-Uski Bolza eigenvalues (lambda<=28.08):
+    NN lambda=23.078559 -> SU 23.0785584814 (mult 1), rel diff 2.8e-09
+[T] 1-dim-character eigenvalues below 28.5: [(np.float64(23.07856), 'NN')]
+[T] CONTROL flat-metric NN (n=120): [ -0.       102.414051 337.031335 581.948411]; area 0.02803 (must not match the SU list)
+[T] CONTROL lambda_1 absent from 1-dim spectra: min |x-3.83889| over all = 3.839
+[S] V2 metric source sha256 ad134752da79e3064e209cd840b0aec53e004e3fa0fec8bbc9299eb12940eb85 (expected ad134752...: MATCH); verbatim block present: True
+[S] MN2 point: X1=0.6597539554, X2=X0=1.319507911, e^2f0=F0=0.5743491775, e^2g0=G0=0.2871745887, F0/G0 = 2 (2.00000000000000)
+[S] inverse-metric Sigma block: g^uu = X1**(2/3)*X2**(2/3)*v**2/(G0*(X1**3*X2**2*sin(alpha)**2*cos(beta)**2 + X1**2*X2**3*sin(alpha)**2*sin(beta)**2 + cos(alpha)**2)**(1/3)), g^vv = X1**(2/3)*X2**(2/3)*v**2/(G0*(X1**3*X2**2*sin(alpha)**2*cos(beta)**2 + X1**2*X2**3*sin(alpha)**2*sin(beta)**2 + cos(alpha)**2)**(1/3)), g^uv = 0
+[S] spin-2 operator on psi=f(u,v): op - (F0/G0)*(-Delta_H2 f) simplifies to: 0
+[S] => m^2 L5^2 = (F0/G0) * lambda_hyp = 2.00000000000 * lambda for every Sigma-eigenfunction (exact, all X); (D) analogue (L5/rho)^2 = 4
+[T] orientation character of Isom = chi_[3] (trivial on Aut+): NN <-> chi_0 (Isom-trivial), DD <-> orientation char; DN, ND restrict to the det character of Aut+ = GL(2,3)
+[L] metric invariant under (u->-u, phi1->-phi1): True
+[L] metric invariant under (u->-u) alone: False  (False expected: twist cross-term g_u,phi1 ~ a1/v)
+[L] Bolza reflection (u,phi1) + none                            : G4 -> -1 G4, orientation +1 -> M-theory symmetry (needs G4 sign = orientation sign): False
+[L] Bolza reflection (u,phi1) + phi2->-phi2 (O(3) det -1)       : G4 -> +1 G4, orientation -1 -> M-theory symmetry (needs G4 sign = orientation sign): False
+[L] Bolza reflection (u,phi1) + x3->-x3 (5D parity P)           : G4 -> -1 G4, orientation -1 -> M-theory symmetry (needs G4 sign = orientation sign): True
+[L] Bolza reflection (u,phi1) + t->-t (time reversal T)         : G4 -> -1 G4, orientation -1 -> M-theory symmetry (needs G4 sign = orientation sign): True
+[L] Bolza reflection (u,phi1) + wall Z2 rho->-rho (G4 sgn(rho)) : G4 -> +1 G4, orientation -1 -> M-theory symmetry (needs G4 sign = orientation sign): False
+[L] Bolza reflection (u,phi1) + phi2 & x3                       : G4 -> +1 G4, orientation +1 -> M-theory symmetry (needs G4 sign = orientation sign): True
+[N] NL log sha256 30b89fb5bbaa991cdbfdb89ef9e52f817c759d07da52a8c5d2c8279b2b1db7a8 (NL 418e4e50 lists 30b89fb5...: MATCH)
+[N] [MN N=2 (z=1)] allowed arc mu1=0: ratio min=1.000000000000 max=1.000000000000; m2L2=[-4.00000000e+00 -3.42941078e-17  1.20000000e+01]; a/a_BBBW=1.000000000000
+[M] Sigma-constant scalars (both A and B; invariant trivially): m2L2 -4 (Delta 2, SU(2)_R singlet), 0 (Delta 4, SU(2)_R 5-plet), 12 (Delta 6, singlet)
+[M] spin-2 tower m2L5^2 = 2*lambda (exact operator identity [S]); lambda=0: massless graviton (Delta 4)
+[M] (A) Aut+ x wall: first invariant nonzero levels
+     lambda=   23.07856 [NN]  m2L5^2=    46.1571  Delta=  9.08217
+     lambda=   74.92671 [NN]  m2L5^2=   149.8534  Delta= 14.40377
+     lambda=  116.60252 [NN]  m2L5^2=   233.2050  Delta= 17.40146
+     lambda=  169.20450 [NN]  m2L5^2=   338.4090  Delta= 20.50430
+     lambda=  222.37113 [DD]  m2L5^2=   444.7423  Delta= 23.18354
+     lambda=  256.69282 [NN]  m2L5^2=   513.3856  Delta= 24.74611
+[M] (B) Isom x wall [internal reading]: first invariant nonzero levels
+     lambda=   23.07856 [NN]  m2L5^2=    46.1571  Delta=  9.08217
+     lambda=   74.92671 [NN]  m2L5^2=   149.8534  Delta= 14.40377
+     lambda=  116.60252 [NN]  m2L5^2=   233.2050  Delta= 17.40146
+     lambda=  169.20450 [NN]  m2L5^2=   338.4090  Delta= 20.50430
+     lambda=  256.69282 [NN]  m2L5^2=   513.3856  Delta= 24.74611
+     lambda=  306.68025 [NN]  m2L5^2=   613.3605  Delta= 26.84674
+[M] for reference (not invariant, 3-dim irrep): Bolza lambda_1 = 3.8388872588 -> m2L5^2 = 7.677775, Delta = 5.417276
+[M] KMP bound 3.8388976481 (all genus 2) is NOT the Bolza value; difference 1.039e-05
+[done] runtime 43.7 s
+exit 0

@@ -1,0 +1,14 @@
+PARI stack size set to 200000000 bytes, maximum size set to 200003584
+target g conductor 784 lambda {3: 0, 5: 0, 11: -4, 13: 0, 17: 0, 19: 0, 23: -8, 29: 2, 31: 0, 37: -6, 41: 0, 43: 12}
+raw generators 600 [0s]
+rank on n<=4000: 549 [1s]
+D=1: equations 2126, unknowns 549, nullity 13 [1s]
+D=-1: equations 2126, unknowns 549, nullity 15 [2s]
+D=2: equations 2126, unknowns 549, nullity 15 [2s]
+D=-2: equations 2126, unknowns 549, nullity 13 [2s]
+D=7: equations 2126, unknowns 549, nullity 13 [3s]
+D=-7: equations 2126, unknowns 549, nullity 15 [3s]
+D=14: equations 2126, unknowns 549, nullity 15 [3s]
+D=-14: equations 2126, unknowns 549, nullity 13 [4s]
+SUMMARY g 12000 {1: 13, -1: 15, 2: 15, -2: 13, 7: 13, -7: 15, 14: 15, -14: 13} [4s]
+EXIT 0

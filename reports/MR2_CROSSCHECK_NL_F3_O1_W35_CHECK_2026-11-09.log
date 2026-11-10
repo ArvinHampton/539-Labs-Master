@@ -1,0 +1,13 @@
+KR(13) Ricci eigenvalues: {'AdS5': -6/R0**2, 'H2': -6/R0**2, 'S4': 12/R0**2}
+KR(2) on FR ansatz: ext = -q**2/6  S4 = q**2/3 (KR (5): -6m0^2, 12m0^2 with q=6m0 -> -6*m0**2 12*m0**2 )
+frame amplitude required by (2)+(13): q = 6/R0 ; check ext: 0 0
+=> m0 = q/6 = 1/R0
+(14) read with unit-sphere Omega4: frame amplitude = 96/R0 ; ratio to required = 16
+correct unit-sphere coefficient: F = 3/8 * R0^3 * Omega4
+(D): R0 = sqrt(6)/(2*k) ; q(R0) = 2*sqrt(6)*k vs q0 = 2 sqrt6 k: 0
+  r = sqrt(6)/(4*k)  rho = 1/(2*k)  R0 = L7 = 2r: 0
+  N=4880: R0 = 49.68438219  lp; flux check q*Vol(S4_r)/(2pi)^3 = 4880.000000
+L7a holds iff c = [1] ; lock holds iff c = [3] -> no c satisfies both
+Phi-2 (c=3): G_ext + Phi/96 = 12*k**2
+Pell x^2-35y^2=1 minimal: (6, 1) ; x^2-35y^2=-1 solvable? no (7|35, 7=3 mod 4); regulator ln(6+sqrt35) = 2.47788873029
+dims: W35 = 35  V35(Owner lock) = 14, V35(RTA Def 33.2, per NL) = 36

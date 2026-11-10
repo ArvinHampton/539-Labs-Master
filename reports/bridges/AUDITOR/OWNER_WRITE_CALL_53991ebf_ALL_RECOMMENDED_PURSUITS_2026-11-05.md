@@ -1,0 +1,7 @@
+# Owner authorization — all recommended in-scope pursuits
+Received directly via voice call 53991ebf-cd0c-458b-bd60-f422fc564a1c, 2026-11-05 13:58 CST.
+
+Owner's words:
+“Authorize all recommended pursuals across Project Quantum Comp. This includes: Math Research 2 resuming its citation-only review of the Gemini compendium (invention hold and all locks unchanged); all twelve agents pursuing their recommended next steps on the pure-math prediction search and the S²-11DM²ET-X extension prediction track; Professor Proof, Eigenvalue, Agent, Dataset Filtration, both Physics Research agents, Math Research One, 539 Labs, Non-Local Path, and Auditor continuing their started work; Local Path pursuing its black-hole gap inventory; and any other recommended paths agents have named. The new primary operating rule stands: if there's a problem to solve, solve it; no more idling waiting for the owner. Invent hold on publishing and spending remains; no invented proofs. Report what each agent starts and resolves.”
+
+Scope: research/analysis within existing locks and lane restrictions. MR2 citation-only and invention hold unchanged explicitly. Not permission to fabricate missing proofs, alter locked definitions/theorems/tip, certify, publish, spend or send externally. Primary deliverables include Gemini compendium questions/proof requests/offers and the two prediction axes; preserve completed-vs-offered proof distinction and separate empirical Tier E.

@@ -1,0 +1,21 @@
+# FINDINGS — Keeper retrieval BATCH 26 — 2026-10-26 19:57 CDT
+
+Result: MATCH 10/10, 0 GAP. Sidecars written 10 (all were missing). Soft SF flags: NONE. Soft SF CONFIRM: NOT performed (hash inventory only).
+Tip: /workspace/residual-c-field-WRITTEN_PREMISES_DRAFT.md sha256 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 MATCH, tip_touched NO.
+No Eigen agent contact. Full-corpus audit OPEN.
+
+| # | path | sha256 | sidecar |
+|---|---|---|---|
+| 1 | OWNER_WRITE_TE_CLASSICAL_ST_LIT_CITED_CARD1E_2026-10-26.md | 9a7fe5510c433335fb1eeb17a35dc099ef80bdf6ac709078fef4ac59f04a3687 | written |
+| 2 | OWNER_WRITE_TE_DUKE_ELKIES_GANNON_CARD1F_2026-10-26.md | 03227e614d20e1f33fa342fa1de77cf0b4d6394ac5d698466d70b7d134bc0f59 | written |
+| 3 | OWNER_WRITE_TE_RHOBAR_CUSP6_Q18_BASIS_CARD1C_2026-10-26.md | d3e36edd15e7aea42e25a69f999f2f449b144489537efe4a380a80e117d62e19 | written |
+| 4 | OWNER_WRITE_TE_RHOBAR_LINALG_IND_CARD1B_2026-10-26.md | 43e94be25c8137112b1722a20616533f4a9d9c69ef95a88691965dcd202586a6 | written |
+| 5 | OWNER_WRITE_TE_RHOBAR_LOCAL_FACTOR_CARD1D_2026-10-26.md | ab8a4937eb4087a8c63b1c9addeb5e9a5c085c3428f963bcb10d3fe468e4595a | written |
+| 6 | OWNER_WRITE_TE_RHOBAR_METHOD_CLOSURES_ACCEPT_CARD2_2026-10-26.md | f56b7d9b4fddf1cea67ef399795eff8351e0212c6e754fd825f131fc01e53d57 | written |
+| 7 | OWNER_WRITE_TE_RHOBAR_TARGET_SPACE_592_SEED_CARD1A_2026-10-26.md | dede8346d5639ebc9b2667af36728d894c12c7cefc4b2bfac1db6bc866de8c2a | written |
+| 8 | OWNER_WRITE_VANISH_HOLD_ALL_CARD5_2026-10-26.md | b85c64910ce588ebd14ca1171f9d6f2f4debf792d67d601dcfb78169812251ba | written |
+| 9 | bridges/AUDITOR/SOFTSF_PRESS_OWNER_WRITE_NL_GAP_IA_PATH_B_H_CONV_ACCEPT_2026-10-26.md | 0dbf0ba143de15bb0152a3a987c888cf4655d5ae18794360a95c19dcb91ed6f9 | written |
+| 10 | bridges/AUDITOR/SOFTSF_PRESS_OWNER_WRITE_NL_GAP_IA_PROVISIONAL_FREEDOM_PURSUE_2026-10-26.md | 60609392435850caef1d1b2a5897b91ac345e405af6697bf44a7bb4d65944c02 | written |
+
+Referenced /workspace/ paths: all exist (0 GAP).
+Remaining packaging-missing count (full reports/ lexical): 11

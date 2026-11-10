@@ -1,0 +1,4 @@
+# Soft SF PRESS — MR1 basis extract + GA1 Rec A AUTO
+OWNER_WRITE sha256: 75c176bec2fad0beccf372a60e6285ff41cdb62e6a08b711bb70baee616e426b
+ASSIGN sha256: b679276cc45a554fafaa62084603791e55be726630d98b64a2fcaa01b66e1d35
+Absorb FINDINGS e1ca9141…; PR2 G-B1 712cb2c6…. tip Soft SF LOCK 7cddb188… tip_touched NO.

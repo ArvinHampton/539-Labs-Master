@@ -1,0 +1,16 @@
+== MR2 adoption blockers: Riemann / systole / full EOM ==
+components of dOmega: [(0, 1, 2, 3, 4, 5, 6, 7), (0, 1, 2, 3, 4, 5, 6, 8)]
+MN1(z=0) (0, 1, 2, 3, 4, 5, 6, 7) simplify -> 0 | numeric-coefficient cleanup -> 0 [0s]
+MN1(z=0) (0, 1, 2, 3, 4, 5, 6, 8) simplify -> 0 | numeric-coefficient cleanup -> 0 [0s]
+MN2(z=1) (0, 1, 2, 3, 4, 5, 6, 7) simplify -> 0 | numeric-coefficient cleanup -> 0 [0s]
+MN2(z=1) (0, 1, 2, 3, 4, 5, 6, 8) simplify -> 0 | numeric-coefficient cleanup -> 0 [0s]
+BBBW(z=2) (0, 1, 2, 3, 4, 5, 6, 7) simplify -> 0 | numeric-coefficient cleanup -> 0 [0s]
+BBBW(z=2) (0, 1, 2, 3, 4, 5, 6, 8) simplify -> 0 | numeric-coefficient cleanup -> 0 [0s]
+BBBW(z=3) (0, 1, 2, 3, 4, 5, 6, 7) simplify -> 0 | numeric-coefficient cleanup -> 0 [0s]
+BBBW(z=3) (0, 1, 2, 3, 4, 5, 6, 8) simplify -> 0 | numeric-coefficient cleanup -> 0 [0s]
+CONTROL LAMBDA=0 and LAMBDA=1/8 (must be nonzero):
+  LAMBDA= 0 (0, 1, 2, 3, 4, 5, 6, 7) value at (alpha,beta)=(1.1,0.7): -0.10149051998327028639
+  LAMBDA= 0 (0, 1, 2, 3, 4, 5, 6, 8) value at (alpha,beta)=(1.1,0.7): 0.16305268495030111761
+  LAMBDA= 1/8 (0, 1, 2, 3, 4, 5, 6, 7) value at (alpha,beta)=(1.1,0.7): 0.10149051998327028639
+  LAMBDA= 1/8 (0, 1, 2, 3, 4, 5, 6, 8) value at (alpha,beta)=(1.1,0.7): -0.16305268495030111761
+exit_code=0

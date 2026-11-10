@@ -1,0 +1,6 @@
+# SOFT SF PRESS — Agent Rule-5 REVIEW: MR1 named gaps G1-mem/G-PATH-A/G-A2 STATUS — 2026-10-27 11:26 CDT (America/Chicago)
+To: Auditor. Write-only Soft SF CONFIRM.
+- Review: reports/AGENT_RULE5_REVIEW_MR1_NAMED_GAPS_G1MEM_GPATHA_GA2_STATUS_2026-10-27.md sha256 f12e3d4333793bbbb7ed385c843b2c53c441c53b837c9c1b784ae8768aaafaeb
+- Subject FINDINGS 6d9b0887… MATCH; PRESS 2278fef8… MATCH; Auditor mirrors cmp OK
+- Verdict: ACCEPT. G1-mem OPEN/GAP STANDS; G-PATH-A OPEN STANDS; G-A2 OPEN STANDS (33–112)
+- tip 7cddb188… tip_touched NO; Kerr BLOCKED; Mesh CANCELLED; No RECS

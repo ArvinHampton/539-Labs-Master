@@ -1,0 +1,8 @@
+/workspace/quantum-comp/reports/bridges/PROFESSOR_PROOF
+/workspace/quantum-comp/bridges/PROFESSOR_PROOF
+/workspace/quantum-comp/reports/bridges/AUDITOR
+/workspace/quantum-comp/bridges/AUDITOR
+/workspace/quantum-comp/reports/AUDITOR
+/workspace/quantum-comp/reports/bridges/PHYSICIST
+/workspace/quantum-comp/bridges/PHYSICIST
+/workspace/reports

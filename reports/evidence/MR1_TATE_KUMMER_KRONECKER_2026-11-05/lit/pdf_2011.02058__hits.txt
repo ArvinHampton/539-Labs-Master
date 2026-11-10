@@ -1,0 +1,25 @@
+65:LOCAL ZETA FUNCTIONS: R× OR C×
+69:LOCAL ZETA FUNCTIONS: Q×
+95:LOCAL ZETA FUNCTIONS (BIS)
+130:of Tate’s thesis, as well as incorporating material of a more recent vintage, for example
+1151:17: LEMMA pZp is an ideal in Zp , in fact pZp is a maximal ideal in Zp , in fact
+1152:pZp is the unique maximal ideal in Zp , hence Zp is a local ring.
+1454:31: REMARK Take n ≥ 1 −then the pn Zp are principal ideals in Zp and, apart
+1456:from {0}, these are the only ideals in Zp , thus Zp is a principal ideal domain.
+1885:4: LEMMA P is a maximal ideal.
+4450:[This follows from the theory of ”fractional ideals” (details omitted).]
+4857:The Schwartz space S(Rn ) consists of those complex valued C ∞ functions which,
+4935:6: DEFINITION The Bruhat space B(G) consists of those complex valued lo-
+5539:LOCAL ZETA FUNCTIONS: R× or C×
+5547:1: DEFINITION Given f ∈ S(Rn ) and a character χ : R× → C× , the local zeta
+5567:PROOF Since f is Schwartz, there are no issues at inﬁnity. As for what happens at
+6019:the local zeta function attached to the pair (f, χ) is
+6216:LOCAL ZETA FUNCTIONS: Q×
+6223:p → C , the local zeta
+8224:5: DEFINITION The Bruhat space B(Afin ) consists of all ﬁnite linear combina-
+8237:6: DEFINITION The Bruhat-Schwartz space B∞ (A) consists of all ﬁnite linear
+8276:is a Bruhat-Schwartz function, then
+9841:LOCAL ZETA FUNCTIONS (BIS)
+9847:local zeta function attached to the pair (f, ω) is
+9916:local zeta function attached to the pair (f, ω) is
+11022:[Cyclotomic extensions are Galois and abelian.]

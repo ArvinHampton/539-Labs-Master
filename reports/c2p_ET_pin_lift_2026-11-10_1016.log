@@ -1,0 +1,14 @@
+[L] Cl(16) on C^256: anticommutators exact: True; omega = e0...e15, omega^2 = +1; rank of chiral projectors: 128, 128
+  E-T lift: e_x e_phi1 e_phi2 . e_a (a = 6): degree 4 (even, in Spin(16)); commutes with omega (preserves each 128): True; square on 128+: +1, on 128-: +1
+  contrast: e_x e_phi1 e_phi2 . e_a e_b e_c (6,7,8): degree 6 (even, in Spin(16)); commutes with omega (preserves each 128): True; square on 128+: -1, on 128-: -1
+  contrast: e_x e_phi1 e_phi2 (no compensator; odd, not in Spin(16)): degree 3 (odd: NOT in Spin(16)); commutes with omega (preserves each 128): False; square on 128+: -1, on 128-: -1
+[L] Ad_L on so(6) = Ad(df), df = diag(-1,-1,-1,1,1,1): True; Ad_L on so(10) = Ad(R_a): True; on the (6,10) part = df x R_a: True
+[L] L^2 = +1 in Spin(16) (identity on all 256): True
+[d] orientation-reversing images: 24
+  class size 3 | rep ['0', 'inf', '1', '-i', '-1', 'i'] | J[2] elements fixed: 8/16 | d0 = 0 fixed: True
+  class size 6 | rep ['0', 'inf', 'i', '1', '-i', '-1'] | J[2] elements fixed: 4/16 | d0 = 0 fixed: True
+  class size 6 | rep ['inf', '0', 'i', '-1', '-i', '1'] | J[2] elements fixed: 2/16 | d0 = 0 fixed: True
+  class size 1 | rep ['inf', '0', '-1', '-i', '1', 'i'] | J[2] elements fixed: 4/16 | d0 = 0 fixed: True
+  class size 8 | rep ['1', '-1', 'i', 'inf', '-i', '0'] | J[2] elements fixed: 1/16 | d0 = 0 fixed: True
+[d] r = c: fixed J[2] elements [[], ['0', 'inf'], ['0', '1'], ['-1', '0'], ['1', 'inf'], ['-1', 'inf'], ['-1', '1'], ['-i', 'i']]
+EXIT 0

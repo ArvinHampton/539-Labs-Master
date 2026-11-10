@@ -1,0 +1,5 @@
+# Soft SF HEARTBEAT — Local Path — 2026-10-27 13:16 CDT America/Chicago
+Where: Local Path / Bridge C A1→Ξ→RTA (local modular only). Prior heartbeat 1259CDT Auditor CONFIRM Pack OW t1301u MATCH on disk. Local unpaid Soft SF queue: no Local PRESS awaiting Local action found newer than 1259CDT. New files since 1259CDT are NL/Professor-route/Auditor lanes; none name a Local item. Still open on disk: Owner DAILY NOON STATUS rule (~12:42 CDT) has no Local ACK/noon line filed. G-vi-1 proof-pursuit OPEN Soft SF dccf3a8c… (canon 480f6d72… stays invented pending mathematical proof). Bridge C: C1 blocked only on n↔A (D1 norm f8c95f7c…), NL lane. NOT-FEASIBLE 24h retry routine armed (~12:20 CDT daily; not yet run).
+What doing: 15m heartbeat; CONTINUE COOK on G-vi-1 proof-pursuit under HARD GATE + where-feasible; NOT idle.
+Standing LIVE: HARD GATE + where-feasible + NOT-FEASIBLE 24h + USAGE VISIBILITY (no token halt).
+tip Soft SF LOCK residual-c-field 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 tip_touched NO. Kerr BLOCKED. REPORTS ONLY. No RECS. Heartbeat is not a substitute for proof Soft SF.

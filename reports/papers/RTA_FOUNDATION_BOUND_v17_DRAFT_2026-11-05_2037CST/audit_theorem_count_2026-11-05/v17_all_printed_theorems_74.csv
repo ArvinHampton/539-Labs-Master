@@ -1,0 +1,75 @@
+kind,num,label,file,line,title,pdf_page
+hardcoded_PartI,5.1,,partI/p1_body.tex,85,(hardcoded),17
+hardcoded_PartI,5.3,,partI/p1_body.tex,93,(hardcoded),17
+hardcoded_PartI,5.5,,partI/p1_body.tex,143,"zero classes for b in {1,2}",18
+hardcoded_PartI,6.6,,partI/p1_body.tex,291,(hardcoded),23
+hardcoded_PartI,6.9,,partI/p1_body.tex,337,(hardcoded),25
+hardcoded_PartI,7.4,,partI/p1_body.tex,366,(hardcoded),26
+hardcoded_PartI,7.6,,partI/p1_body.tex,384,(hardcoded),27
+hardcoded_PartI,7.7,,partI/p1_body.tex,517,(hardcoded),27
+hardcoded_PartI,8.1,,partI/p1_body.tex,556,parity dominance,28
+hardcoded_PartI,8.12,,partI/p1_body.tex,720,result of Algorithm C,33
+hardcoded_PartI,8.22,,partI/p1_body.tex,827,zero sets,38
+begin_theorem,11.1,thm:A,partII/s03_main.tex,6,Shared remainder,44
+begin_theorem,11.2,thm:B,partII/s03_main.tex,19,Real-quadratic decomposition and ray class,44
+begin_theorem,11.3,thm:C,partII/s03_main.tex,31,Radial asymptotics and partial zeta values,45
+begin_theorem,11.4,thm:D,partII/s03_main.tex,47,Gauss-mean pattern and zero set,45
+begin_theorem,11.5,thm:E,partII/s03_main.tex,55,Baker obstruction: scalar no-go,45
+begin_theorem,11.6,thm:F,partII/s03_main.tex,72,Theta lift and vector-valued $S/T$ law,45
+begin_theorem,11.7,thm:G,partII/s03_main.tex,92,Lewis--Zagier period formula,46
+begin_theorem,11.8,thm:H,partII/s03_main.tex,115,Eisenstein/cusp split,46
+begin_theorem,11.9,thm:I,partII/s03_main.tex,130,Herglotz closed form,47
+begin_theorem,11.10,thm:J,partII/s03_main.tex,139,Closed form of $E_R$,47
+begin_theorem,14.1,thm:profile,partII/s06_lift.tex,12,Profile $S/T$ law,51
+begin_theorem,15.3,thm:coc5,partII/s07_lz.tex,146,Cocycle of the $E$-part,57
+begin_theorem,19.3,thm:tensor7,partII/s11_family.tex,24,"Tensor factorisation, $s=7$",64
+begin_theorem,19.5,thm:tensorodd,partII/s11_family.tex,78,Tensor factorisation for odd $s$,65
+begin_theorem,20.1,thm:dims,partII/s12_dims.tex,5,Dimensions,66
+begin_theorem,20.5,thm:s98,partII/s12_dims.tex,86,$\dim V(98)=2406$,68
+begin_theorem,20.11,thm:psq6,partII/s12_dims.tex,141,Prime-square structure,70
+begin_theorem,21.2,thm:coset5,partII/s13_uL.tex,21,Coset property,72
+begin_theorem,21.3,thm:sqf5,partII/s13_uL.tex,26,Squarefree criterion,73
+begin_theorem,22.1,thm:Hs,partII/s14_hs.tex,7,$H_s$ in closed form,74
+begin_theorem,22.5,thm:p72,partII/s14_hs.tex,68,Period $72$ at $x=\tfrac13$,75
+begin_theorem,23.7,thm:axes7,partII/s15_cone.tex,49,Closed forms for $H_s^{\rm axes}$,80
+begin_theorem,24.1,thm:cthird,partII/s16_cthird.tex,5,"$\Cthird$: one coset, one cone weight, one kernel, two chains",81
+begin_theorem,24.4,thm:O2,partII/s16_cthird.tex,51,Phase obstruction,82
+begin_theorem,24.5,thm:O1,partII/s16_cthird.tex,59,Sign obstruction,82
+begin_theorem,24.6,thm:Pstruct,partII/s16_cthird.tex,67,Structure of $\Cthird$,82
+begin_theorem,25.1,thm:zetacurve,partII/s17_sfamily.tex,5,Rational $\zeta$-curve,83
+begin_theorem,25.2,thm:Gs,partII/s17_sfamily.tex,22,Radial expansion of $g_s$,83
+begin_theorem,26.2,thm:weil8,partII/s18_k3.tex,44,Weil realisation of the label representation,86
+begin_theorem,26.7,thm:K3exist8,partII/s18_k3.tex,105,$N_2$-polarised K3 surfaces,88
+begin_theorem,26.9,thm:aut8,partII/s18_k3.tex,132,Automorphisms of $N_2$-polarised K3 surfaces,89
+begin_theorem,27.4,thm:U2,partII/s19_uniq.tex,73,Uniqueness of the Maass completion,92
+begin_theorem,27.7,thm:uniq9,partII/s19_uniq.tex,121,Uniqueness and residual ambiguity of the vector completion,94
+begin_theorem,27.13,thm:SrhoDim,partII/s19_uniq.tex,237,Dimension of the cusp space,97
+begin_theorem,33.4,thm:STlaw,partIII.tex,41,$T$-law and $S$-law,106
+begin_theorem,34.5,thm:p3profile,partIII.tex,192,Profile of $C$ and of $q^{-7/20}C$,110
+begin_theorem,34.6,thm:lead,partIII.tex,203,Radial asymptotics at leading order,110
+begin_theorem,34.7,thm:SlawC,partIII.tex,216,Vector-valued $S$-law of $C$ at leading order,110
+begin_theorem,35.4,thm:piece,partIII.tex,314,Expansion of a piece,112
+begin_theorem,35.6,thm:expansion,partIII.tex,368,Radial expansion of the companion series,113
+begin_theorem,37.10,thm:Bc1,partIII_shadow_v5.tex,126,,118
+begin_theorem,37.11,thm:lap,partIII_shadow_v5.tex,146,,118
+begin_theorem,37.13,thm:hybrid,partIII_shadow_v5.tex,189,,119
+begin_theorem,38.2,thm:radtriv,partIII_radial_v5.tex,24,,120
+begin_theorem,38.4,thm:evenA1,partIII_radial_v5.tex,54,,121
+begin_theorem,38.5,thm:A1exact,partIII_radial_v5.tex,72,,121
+begin_theorem,39.2,thm:A2odd,partIII_order0_v6.tex,16,,122
+begin_theorem,39.3,thm:A2even,partIII_order0_v6.tex,25,,122
+begin_theorem,39.4,thm:A2exact,partIII_order0_v6.tex,43,,122
+begin_theorem,39.23,thm:xinv,partIII_inv_v12.tex,17,,126
+begin_theorem,40.1,thm:cind-ind,partIII_modlocal_v15.tex,7,Equality of compact and ordinary induction,128
+begin_theorem,40.2,thm:soc-k1,partIII_modlocal_v15.tex,24,Socle reduction to $K_1$-invariants,129
+begin_theorem,40.3,thm:colmez-d12,partIII_modlocal_v15.tex,46,Dictionary identities,129
+begin_theorem,40.5,thm:filtr-10,partIII_modlocal_v15.tex,78,Filtration weight ten,130
+begin_theorem,40.6,thm:breuil-soc,partIII_modlocal_v15.tex,93,Breuil socle formula,130
+begin_theorem,40.10,thm:irreps-gl2,partIII_modlocal_v15.tex,138,Classification of irreducibles,131
+begin_theorem,41.1,thm:local-F1,partIII_local_adv_v16.tex,13,Local cite-lift F1,132
+begin_theorem,41.7,thm:V35,partIII_local_adv_v16.tex,113,Dimension and narrow components,135
+begin_theorem,41.10,thm:D1,partIII_local_adv_v16.tex,143,Rank-one classifier $D_1$,136
+begin_theorem,43.8,thm:v17-bare,partIII_boundary_rank_v17.tex,133,Bare stacked matrix of rank~$24$,142
+begin_theorem,43.9,thm:v17-M36,partIII_boundary_rank_v17.tex,147,Original-table matrix~$M$ of exact rank~$36$,142
+begin_theorem,43.10,thm:v17-M48,partIII_boundary_rank_v17.tex,164,Singleton tuning restores full rank,143
+begin_theorem,44.3,thm:found,found_v6.tex,32,The normalized Bridge Series and the 35-component law vector,146

@@ -1,0 +1,25 @@
+|D_2|,|D_5|,|D_7| = [4, 5, 7]
+D = D_2 (+) D_5 (+) D_7 orthogonal: True  CRT bijection: True
+ D_2: elements with q-values: [('(Fraction(0, 1), Fraction(0, 1))', '0'), ('(Fraction(0, 1), Fraction(1, 2))', '1/2'), ('(Fraction(1, 2), Fraction(0, 1))', '1/4'), ('(Fraction(1, 2), Fraction(1, 2))', '1/4')]  level = 4
+ D_5: elements with q-values: [('(Fraction(0, 1), Fraction(0, 1))', '0'), ('(Fraction(1, 5), Fraction(2, 5))', '2/5'), ('(Fraction(2, 5), Fraction(4, 5))', '3/5'), ('(Fraction(3, 5), Fraction(1, 5))', '3/5'), ('(Fraction(4, 5), Fraction(3, 5))', '2/5')]  level = 5
+ D_7: elements with q-values: [('(Fraction(0, 1), Fraction(0, 1))', '0'), ('(Fraction(0, 1), Fraction(1, 7))', '2/7'), ('(Fraction(0, 1), Fraction(2, 7))', '1/7'), ('(Fraction(0, 1), Fraction(3, 7))', '4/7'), ('(Fraction(0, 1), Fraction(4, 7))', '4/7'), ('(Fraction(0, 1), Fraction(5, 7))', '1/7'), ('(Fraction(0, 1), Fraction(6, 7))', '2/7')]  level = 7
+ Milgram: sig(D_2) mod 8 = 2
+ Milgram: sig(D_5) mod 8 = 4
+ Milgram: sig(D_7) mod 8 = 2
+ sig(D) mod 8 = 0  sum of local sigs mod 8 = 0
+ G(D) == Gauss sum of chi_140 (=> S_D = g^-1 zeta^-B exactly as in 4a): True ; g^2==140: True
+ prod_p G(D_p) == G(D): True
+rho_D2: dim 4, level 4: S S^-1=I, S^4=I, (ST)^3=S^2 EXACT: True (=> genuine SL2(Z)-rep, factors through SL2(Z/4)); Gamma0(4) [6 cosets, 7 Schreier gens]: rho(g)e0 = chi_-4(d) e0 fails on 0; rho(-I)e0 = -e0
+rho_D5: dim 5, level 5: S S^-1=I, S^4=I, (ST)^3=S^2 EXACT: True (=> genuine SL2(Z)-rep, factors through SL2(Z/5)); Gamma0(5) [6 cosets, 7 Schreier gens]: rho(g)e0 = chi_5=(./5)(d) e0 fails on 0; rho(-I)e0 = +e0
+rho_D7: dim 7, level 7: S S^-1=I, S^4=I, (ST)^3=S^2 EXACT: True (=> genuine SL2(Z)-rep, factors through SL2(Z/7)); Gamma0(7) [8 cosets, 8 Schreier gens]: rho(g)e0 = chi_-7=(./7)(d) e0 fails on 0; rho(-I)e0 = -e0
+ rho_D2(x)rho_D5: dim of lines with character T->i^0, S->i^0: 0 (smallest sing. value 7.247e-01)
+ rho_D2(x)rho_D5: dim of lines with character T->i^1, S->i^1: 0 (smallest sing. value 7.160e-01)
+ rho_D2(x)rho_D5: dim of lines with character T->i^2, S->i^2: 0 (smallest sing. value 7.247e-01)
+ rho_D2(x)rho_D5: dim of lines with character T->i^3, S->i^3: 0 (smallest sing. value 6.180e-01)
+ e0^(2,5) eigenvector of S? |S e0 - <S e0,e0> e0| = 0.9746794344808963
+global rootno: f 1  Xi -1  E^(-20) -1  Xi~E^(-20) isogenous: 1
+ p=2: local eps_p(f)=1, eps_p(Xi)=-1, cond exp f=0, Xi=4, Frob char poly of f at p (if good): x^2-(1)x+2
+ p=5: local eps_p(f)=1, eps_p(Xi)=1, cond exp f=0, Xi=2, Frob char poly of f at p (if good): x^2-(0)x+5
+ p=7: local eps_p(f)=-1, eps_p(Xi)=-1, cond exp f=2, Xi=2, Frob char poly of f at p (if good): bad
+ eps_inf = -1 (weight 2). Product check f: 1  Xi: -1
+ chi_p(-1): chi_-4(-1)=-1, (−1/5)= 1 , (−1/7)= -1

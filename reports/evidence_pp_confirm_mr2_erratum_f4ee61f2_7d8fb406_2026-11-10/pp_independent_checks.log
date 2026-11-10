@@ -1,0 +1,132 @@
+RUN_START_WALLCLOCK 2026-11-10 12:22:25 CST (America/Chicago)
+SCRIPT_SHA256 1b8cd3c676c655b9a0aca183fd3fcdfe7d016ec25a88dadb25ed51f8c769b90f
+sympy 1.14.0
+PASS SIG D=4 Euclidean non-diag h0: exact LDL pivots [3, 5/3, 18/5] give (neg,pos) = (0, 3)
+PASS A1 D=4 Euclidean non-diag h0: Gamma^y_ab = -K_ab (value and all first derivatives at the point)
+PASS A2 D=4 Euclidean non-diag h0: Gamma^a_yb = Gamma^a_by = K^a_b = h^ac K_cb (value and all first derivatives)
+PASS A3 D=4 Euclidean non-diag h0: Gamma^a_bc = gamma^a_bc[h] (value and all first derivatives)
+PASS A3g D=4 Euclidean non-diag h0: every first derivative of gamma[h] (incl. d_y) is free of d_y^2 h
+PASS A4 D=4 Euclidean non-diag h0: Gamma^y_yy = Gamma^y_ya = Gamma^a_yy = 0 (value and first derivatives)
+PASS A5 D=4 Euclidean non-diag h0: Gamma-route R (lowered with g) = metric-jet formula R_abcd, every component (two independent routes agree)
+PASS L-GN(a) D=4 Euclidean non-diag h0: R_abcd (all tangent) free of every d_y^2 h symbol
+PASS L-GN(b) D=4 Euclidean non-diag h0: Codazzi R_yabc and mixed placements R^y_abc, R^a_ybc, R^a_byc, R^a_bcy free of d_y^2 h (d_x d_y h allowed)
+PASS L-GN(c) D=4 Euclidean non-diag h0: R_yayb = -d_y K_ab + K_ac K^c_b exactly (lowered with g_yy = 1)
+PASS L-GN(c') D=4 Euclidean non-diag h0: R^y_ayb = same expression (index lowering by g_yy = 1 is trivial)
+PASS L-GN(d) D=4 Euclidean non-diag h0: all 256 lowered components: G-part = (c) pattern under Riemann symmetries, else 0
+PASS L-GN(d') D=4 Euclidean non-diag h0: all 256 first-index-raised components: G-part = g^-1 x (c) pattern, else 0
+  D=4 Euclidean non-diag h0: 84 free jet symbols; h0 = [3, 1, -1, 1, 2, 0, -1, 0, 4]
+PASS SIG D=5 Lorentzian non-diag h0: exact LDL pivots [-2, 7/2, 12/7, 71/16] give (neg,pos) = (1, 3)
+PASS A1 D=5 Lorentzian non-diag h0: Gamma^y_ab = -K_ab (value and all first derivatives at the point)
+PASS A2 D=5 Lorentzian non-diag h0: Gamma^a_yb = Gamma^a_by = K^a_b = h^ac K_cb (value and all first derivatives)
+PASS A3 D=5 Lorentzian non-diag h0: Gamma^a_bc = gamma^a_bc[h] (value and all first derivatives)
+PASS A3g D=5 Lorentzian non-diag h0: every first derivative of gamma[h] (incl. d_y) is free of d_y^2 h
+PASS A4 D=5 Lorentzian non-diag h0: Gamma^y_yy = Gamma^y_ya = Gamma^a_yy = 0 (value and first derivatives)
+PASS A5 D=5 Lorentzian non-diag h0: Gamma-route R (lowered with g) = metric-jet formula R_abcd, every component (two independent routes agree)
+PASS L-GN(a) D=5 Lorentzian non-diag h0: R_abcd (all tangent) free of every d_y^2 h symbol
+PASS L-GN(b) D=5 Lorentzian non-diag h0: Codazzi R_yabc and mixed placements R^y_abc, R^a_ybc, R^a_byc, R^a_bcy free of d_y^2 h (d_x d_y h allowed)
+PASS L-GN(c) D=5 Lorentzian non-diag h0: R_yayb = -d_y K_ab + K_ac K^c_b exactly (lowered with g_yy = 1)
+PASS L-GN(c') D=5 Lorentzian non-diag h0: R^y_ayb = same expression (index lowering by g_yy = 1 is trivial)
+PASS L-GN(d) D=5 Lorentzian non-diag h0: all 625 lowered components: G-part = (c) pattern under Riemann symmetries, else 0
+PASS L-GN(d') D=5 Lorentzian non-diag h0: all 625 first-index-raised components: G-part = g^-1 x (c) pattern, else 0
+  D=5 Lorentzian non-diag h0: 200 free jet symbols; h0 = [-2, 1, 0, 1/2, 1, 3, -1, 0, 0, -1, 2, 1, 1/2, 0, 1, 5]
+PASS SIG D=5 Euclidean non-diag h0: exact LDL pivots [2, 5/2, 18/5, 31/18] give (neg,pos) = (0, 4)
+PASS A1 D=5 Euclidean non-diag h0: Gamma^y_ab = -K_ab (value and all first derivatives at the point)
+PASS A2 D=5 Euclidean non-diag h0: Gamma^a_yb = Gamma^a_by = K^a_b = h^ac K_cb (value and all first derivatives)
+PASS A3 D=5 Euclidean non-diag h0: Gamma^a_bc = gamma^a_bc[h] (value and all first derivatives)
+PASS A3g D=5 Euclidean non-diag h0: every first derivative of gamma[h] (incl. d_y) is free of d_y^2 h
+PASS A4 D=5 Euclidean non-diag h0: Gamma^y_yy = Gamma^y_ya = Gamma^a_yy = 0 (value and first derivatives)
+PASS A5 D=5 Euclidean non-diag h0: Gamma-route R (lowered with g) = metric-jet formula R_abcd, every component (two independent routes agree)
+PASS L-GN(a) D=5 Euclidean non-diag h0: R_abcd (all tangent) free of every d_y^2 h symbol
+PASS L-GN(b) D=5 Euclidean non-diag h0: Codazzi R_yabc and mixed placements R^y_abc, R^a_ybc, R^a_byc, R^a_bcy free of d_y^2 h (d_x d_y h allowed)
+PASS L-GN(c) D=5 Euclidean non-diag h0: R_yayb = -d_y K_ab + K_ac K^c_b exactly (lowered with g_yy = 1)
+PASS L-GN(c') D=5 Euclidean non-diag h0: R^y_ayb = same expression (index lowering by g_yy = 1 is trivial)
+PASS L-GN(d) D=5 Euclidean non-diag h0: all 625 lowered components: G-part = (c) pattern under Riemann symmetries, else 0
+PASS L-GN(d') D=5 Euclidean non-diag h0: all 625 first-index-raised components: G-part = g^-1 x (c) pattern, else 0
+  D=5 Euclidean non-diag h0: 200 free jet symbols; h0 = [2, 1, 0, 0, 1, 3, 1, 0, 0, 1, 4, -1, 0, 0, -1, 2]
+PASS SIG D=5 split (2,2) non-diag h0: exact LDL pivots [-1, 3, -3, 1] give (neg,pos) = (2, 2)
+PASS A1 D=5 split (2,2) non-diag h0: Gamma^y_ab = -K_ab (value and all first derivatives at the point)
+PASS A2 D=5 split (2,2) non-diag h0: Gamma^a_yb = Gamma^a_by = K^a_b = h^ac K_cb (value and all first derivatives)
+PASS A3 D=5 split (2,2) non-diag h0: Gamma^a_bc = gamma^a_bc[h] (value and all first derivatives)
+PASS A3g D=5 split (2,2) non-diag h0: every first derivative of gamma[h] (incl. d_y) is free of d_y^2 h
+PASS A4 D=5 split (2,2) non-diag h0: Gamma^y_yy = Gamma^y_ya = Gamma^a_yy = 0 (value and first derivatives)
+PASS A5 D=5 split (2,2) non-diag h0: Gamma-route R (lowered with g) = metric-jet formula R_abcd, every component (two independent routes agree)
+PASS L-GN(a) D=5 split (2,2) non-diag h0: R_abcd (all tangent) free of every d_y^2 h symbol
+PASS L-GN(b) D=5 split (2,2) non-diag h0: Codazzi R_yabc and mixed placements R^y_abc, R^a_ybc, R^a_byc, R^a_bcy free of d_y^2 h (d_x d_y h allowed)
+PASS L-GN(c) D=5 split (2,2) non-diag h0: R_yayb = -d_y K_ab + K_ac K^c_b exactly (lowered with g_yy = 1)
+PASS L-GN(c') D=5 split (2,2) non-diag h0: R^y_ayb = same expression (index lowering by g_yy = 1 is trivial)
+PASS L-GN(d) D=5 split (2,2) non-diag h0: all 625 lowered components: G-part = (c) pattern under Riemann symmetries, else 0
+PASS L-GN(d') D=5 split (2,2) non-diag h0: all 625 first-index-raised components: G-part = g^-1 x (c) pattern, else 0
+  D=5 split (2,2) non-diag h0: 200 free jet symbols; h0 = [-1, 1, 0, 0, 1, 2, 0, 1, 0, 0, -3, 1, 0, 1, 1, 1]
+PASS SIG D=6 Lorentzian non-diag h0: exact LDL pivots [-3, 7/3, 18/7, 29/18, 108/29] give (neg,pos) = (1, 4)
+PASS A1 D=6 Lorentzian non-diag h0: Gamma^y_ab = -K_ab (value and all first derivatives at the point)
+PASS A2 D=6 Lorentzian non-diag h0: Gamma^a_yb = Gamma^a_by = K^a_b = h^ac K_cb (value and all first derivatives)
+PASS A3 D=6 Lorentzian non-diag h0: Gamma^a_bc = gamma^a_bc[h] (value and all first derivatives)
+PASS A3g D=6 Lorentzian non-diag h0: every first derivative of gamma[h] (incl. d_y) is free of d_y^2 h
+PASS A4 D=6 Lorentzian non-diag h0: Gamma^y_yy = Gamma^y_ya = Gamma^a_yy = 0 (value and first derivatives)
+PASS A5 D=6 Lorentzian non-diag h0: Gamma-route R (lowered with g) = metric-jet formula R_abcd, every component (two independent routes agree)
+PASS L-GN(a) D=6 Lorentzian non-diag h0: R_abcd (all tangent) free of every d_y^2 h symbol
+PASS L-GN(b) D=6 Lorentzian non-diag h0: Codazzi R_yabc and mixed placements R^y_abc, R^a_ybc, R^a_byc, R^a_bcy free of d_y^2 h (d_x d_y h allowed)
+PASS L-GN(c) D=6 Lorentzian non-diag h0: R_yayb = -d_y K_ab + K_ac K^c_b exactly (lowered with g_yy = 1)
+PASS L-GN(c') D=6 Lorentzian non-diag h0: R^y_ayb = same expression (index lowering by g_yy = 1 is trivial)
+PASS L-GN(d) D=6 Lorentzian non-diag h0: all 1296 lowered components: G-part = (c) pattern under Riemann symmetries, else 0
+PASS L-GN(d') D=6 Lorentzian non-diag h0: all 1296 first-index-raised components: G-part = g^-1 x (c) pattern, else 0
+  D=6 Lorentzian non-diag h0: 405 free jet symbols; h0 = [-3, 1, 0, 0, 1, 1, 2, 1, 0, 0, 0, 1, 3, -1, 0, 0, 0, -1, 2, 1, 1, 0, 0, 1, 4]
+PASS B1 D=3 functional: Gamma^y_ab = -K_ab, Gamma^a_yb = K^a_b, Gamma^y_yy = Gamma^y_ya = Gamma^a_yy = 0
+PASS B2 D=3 functional L-GN(a): every R_abcd has y-derivative order <= 1 in h
+PASS B3 D=3 functional L-GN(b): R^y_abc, R^a_ybc, R^a_byc have y-derivative order <= 1 in h
+PASS B4 D=3 functional L-GN(c): R^y_ayb (= R_yayb, g_yy = 1, g^ya = 0) = -d_y K_ab + K_ac K^c_b (numerator expand == 0)
+PASS B1 D=4 functional: Gamma^y_ab = -K_ab, Gamma^a_yb = K^a_b, Gamma^y_yy = Gamma^y_ya = Gamma^a_yy = 0
+PASS B2 D=4 functional L-GN(a): every R_abcd has y-derivative order <= 1 in h
+PASS B3 D=4 functional L-GN(b): R^y_abc, R^a_ybc, R^a_byc have y-derivative order <= 1 in h
+PASS B4 D=4 functional L-GN(c): R^y_ayb (= R_yayb, g_yy = 1, g^ya = 0) = -d_y K_ab + K_ac K^c_b (numerator expand == 0)
+PASS C1 unit S^2 (dy^2 + sin^2 y dth^2): R_y th y th = sin^2 y > 0 and equals -d_y K + K K^c (exact, expand == 0)
+PASS C2 unit S^3 GN (x-dependent h): R_yayb = sin^2 y * h~_ab (sectional curvature +1), Codazzi R^y_abc = 0
+PASS D1 D=5 full general jet (incl. d_x d_y h, d_x^2 h), Lorentzian non-diag h0: every R component affine in w
+PASS D1b D=5: w-coefficient of every lowered component = R1 pattern (R1_yayb = -kappa_ab; zero off pattern), kappa-only
+PASS D2 D=5 Riem^2 coefficient = 4 tr M^2 (M = h0^-1 kappa, non-diag h0, all kappa symbolic)
+PASS D3 D=5 Ric^2 coefficient = tr M^2 + (tr M)^2
+PASS D4 D=5 R delta-coefficient = -2 tr M
+PASS D5 D=5 Weyl^2 (explicit Weyl tensor) = 4(D-3)/(D-2) (tr M^2 - (tr M)^2/(D-1))
+PASS D6 D=5 Gauss-Bonnet coefficient = 0
+PASS D7 D=5 Weyl tensor of R1 is traceless (all contractions exact zero)
+PASS D2 D=3 Riem^2 coefficient = 4 tr M^2 (M = h0^-1 kappa, non-diag h0, all kappa symbolic)
+PASS D3 D=3 Ric^2 coefficient = tr M^2 + (tr M)^2
+PASS D4 D=3 R delta-coefficient = -2 tr M
+PASS D5 D=3 Weyl^2 (explicit Weyl tensor) = 4(D-3)/(D-2) (tr M^2 - (tr M)^2/(D-1))
+PASS D6 D=3 Gauss-Bonnet coefficient = 0
+PASS D7 D=3 Weyl tensor of R1 is traceless (all contractions exact zero)
+PASS D2 D=4 Riem^2 coefficient = 4 tr M^2 (M = h0^-1 kappa, non-diag h0, all kappa symbolic)
+PASS D3 D=4 Ric^2 coefficient = tr M^2 + (tr M)^2
+PASS D4 D=4 R delta-coefficient = -2 tr M
+PASS D5 D=4 Weyl^2 (explicit Weyl tensor) = 4(D-3)/(D-2) (tr M^2 - (tr M)^2/(D-1))
+PASS D6 D=4 Gauss-Bonnet coefficient = 0
+PASS D7 D=4 Weyl tensor of R1 is traceless (all contractions exact zero)
+PASS D2 D=6 Riem^2 coefficient = 4 tr M^2 (M = h0^-1 kappa, non-diag h0, all kappa symbolic)
+PASS D3 D=6 Ric^2 coefficient = tr M^2 + (tr M)^2
+PASS D4 D=6 R delta-coefficient = -2 tr M
+PASS D5 D=6 Weyl^2 (explicit Weyl tensor) = 4(D-3)/(D-2) (tr M^2 - (tr M)^2/(D-1))
+PASS D6 D=6 Gauss-Bonnet coefficient = 0
+PASS D7 D=6 Weyl tensor of R1 is traceless (all contractions exact zero)
+PASS D2 D=7 Riem^2 coefficient = 4 tr M^2 (M = h0^-1 kappa, non-diag h0, all kappa symbolic)
+PASS D3 D=7 Ric^2 coefficient = tr M^2 + (tr M)^2
+PASS D4 D=7 R delta-coefficient = -2 tr M
+PASS D5 D=7 Weyl^2 (explicit Weyl tensor) = 4(D-3)/(D-2) (tr M^2 - (tr M)^2/(D-1))
+PASS D6 D=7 Gauss-Bonnet coefficient = 0
+PASS D7 D=7 Weyl tensor of R1 is traceless (all contractions exact zero)
+PASS D2 D=11 Riem^2 coefficient = 4 tr M^2 (M = h0^-1 kappa, non-diag h0, all kappa symbolic)
+PASS D3 D=11 Ric^2 coefficient = tr M^2 + (tr M)^2
+PASS D4 D=11 R delta-coefficient = -2 tr M
+PASS D5 D=11 Weyl^2 (explicit Weyl tensor) = 4(D-3)/(D-2) (tr M^2 - (tr M)^2/(D-1))
+PASS D6 D=11 Gauss-Bonnet coefficient = 0
+PASS D7 D=11 Weyl tensor of R1 is traceless (all contractions exact zero)
+PASS D8 symbolic D: 4t2 - 4/(D-2)(t2+t1^2) + 8 t1^2/((D-1)(D-2)) = 4(D-3)/(D-2)(t2 - t1^2/(D-1)) (numerator expand == 0)
+PASS D9 symbolic: GB coefficient 4t2 - 4(t2 + t1^2) + 4 t1^2 = 0
+PASS D10 P7.5 null stress: M != 0 but tr M = tr M^2 = 0 (zero-iff needs P-Poinc)
+PASS E1 d/ds tanh = 1 - tanh^2 and 1 - tanh^2 = sech^2 (exp rewrite, numerator expand == 0); tanh -> +-1, so int sech^2 = 2
+PASS E2 d/ds(tanh - tanh^3/3) = (1 - tanh^2)^2 = sech^4; limits give int sech^4 = 4/3
+PASS E3 box mollifier height 1/(2 L eps) on width 2 L eps: int phi = 1, int phi^2 = 1/(2 L eps) (CS equality case)
+PASS E4 bump (1-u^2)^2, u = s/(L eps): I1 = 16/15, I2 = 256/315, normalised int phi^2 = (I2/I1^2)/(L eps) = 5/(7 L eps) >= 1/(2 L eps)
+
+PASS_COUNT 120 FAIL_COUNT 0
+ALL_CHECKS PASS
+RUN_END_WALLCLOCK 2026-11-10 12:34:18 CST

@@ -1,0 +1,8 @@
+B symmetric: True  det: 1  K90 distinct mod 140: True
+C1 R_p^T B R_p == B for all p in K90: True
+identity T^T B T == B (T T*)  [B(Tx,Ty)=B(TT* x,y)]: max err 1.7763568394002505e-15
+C3 uniform: U^T B U == B ? False ; == c*B for some c ? False ; (U^T B U)[1,-1] = 11.0  = sum alpha^2 = 11
+C3 uniform: rank U = 48
+distinct quotients g=p_k/p_l (k!=l): 23  pair-multiplicities histogram: {2: 2, 3: 4, 4: 4, 5: 4, 6: 6, 7: 2, 8: 1}
+random-start solutions found: 295  support sizes: {1: 39, 3: 73, 4: 14, 5: 5, 6: 18, 8: 145, 9: 1}
+unordered pairs {k,l} forced alpha_k*alpha_l=0 by a unique quotient: 2 of 55

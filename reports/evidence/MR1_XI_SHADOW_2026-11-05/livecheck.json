@@ -1,0 +1,220 @@
+[
+  {
+    "tag": "BF",
+    "url": "https://arxiv.org/abs/math/0212286",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/math/0212286",
+    "bytes": 38807,
+    "sha256": "7fc6317d2616ea895afa0def7985bb0e3e7d5142f6eb81a6033a621d53102686",
+    "file": "BF.html",
+    "metadata": {
+      "citation_title": "On Two Geometric Theta Lifts",
+      "citation_author": "Funke, Jens",
+      "citation_date": "2002/12/20",
+      "citation_online_date": "2003/03/14",
+      "citation_pdf_url": "https://arxiv.org/pdf/math/0212286",
+      "citation_arxiv_id": "math/0212286",
+      "citation_abstract": " The theta correspondence has been an important tool in studying cycles in locally symmetric spaces of orthogonal type. In this paper, we establish for O(p,2) an adjointness result between Borcherds' singular theta lift and the Kudla-Millson theta lift. We extend this result to arbitrary signature by introducing a new Borcherds lift for O(p,q). On the geometric side, this lift can be interpreted as a differential character in the sense of Cheeger and Simons."
+    },
+    "title": "[math/0212286] On Two Geometric Theta Lifts",
+    "checked": "2026-11-05T13:37:46.413339-06:00"
+  },
+  {
+    "tag": "BOR",
+    "url": "https://arxiv.org/abs/0802.0963",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/0802.0963",
+    "bytes": 39471,
+    "sha256": "8a30af5fa0f09fc1467d7bfe7b6a02fa134faf01b3f29efd3b7a64644a2bade4",
+    "file": "BOR.html",
+    "metadata": {
+      "citation_title": "Differential operators for harmonic weak Maass forms and the vanishing of Hecke eigenvalues",
+      "citation_author": "Rhoades, Robert C.",
+      "citation_date": "2008/02/07",
+      "citation_online_date": "2009/01/26",
+      "citation_pdf_url": "https://arxiv.org/pdf/0802.0963",
+      "citation_arxiv_id": "0802.0963",
+      "citation_abstract": " For integers $k\\geq 2$, we study two differential operators on harmonic weak Maass forms of weight $2-k$. The operator $\\xi_{2-k}$ (resp. $D^{k-1}$) defines a map to the space of weight $k$ cusp forms (resp. weakly holomorphic modular forms). We leverage these operators to study coefficients of harmonic weak Maass forms. Although generic harmonic weak Maass forms are expected to have transcendental coefficients, we show that those forms which are \"dual\" under $\\xi_{2-k}$ to newforms with vanishing Hecke eigenvalues (such as CM forms) have algebraic coefficients. Using regularized inner products, we also characterize the image of $D^{k-1}$."
+    },
+    "title": "[0802.0963] Differential operators for harmonic weak Maass forms and the vanishing of Hecke eigenvalues",
+    "checked": "2026-11-05T13:37:46.370822-06:00"
+  },
+  {
+    "tag": "ZWEGERS",
+    "url": "https://arxiv.org/abs/0807.4834",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/0807.4834",
+    "bytes": 39178,
+    "sha256": "191c1680b495df781400a015bffb612b3baae530c7c0aba00e0cedc8c452650e",
+    "file": "ZWEGERS.html",
+    "metadata": {
+      "citation_title": "Mock Theta Functions",
+      "citation_author": "Zwegers, Sander",
+      "citation_date": "2008/07/30",
+      "citation_online_date": "2008/07/30",
+      "citation_pdf_url": "https://arxiv.org/pdf/0807.4834",
+      "citation_arxiv_id": "0807.4834",
+      "citation_abstract": " In this Ph.D. thesis, written under the direction of D.B. Zagier and R.W. Bruggeman, we study the mock theta functions, that were introduced by Ramanujan. We show how they can be interpreted in the theory of (real-analytic) modular forms. In Chapter 1 we give results for Lerch sums (also called Appell functions, or generalized Lambert series). In Chapter 2 we consider indefinite theta functions of type (r-1,1). Chapter 3 deals with Fourier coefficients of meromorphic Jacobi forms. In Chapter 4 we use the results from Chapter 2 to give explicit results for 8 of the 10 fifth order mock theta functions and all 3 seventh order functions, that were originally defined by Ramanujan. The result is that we can find a correction term, which is a period integral of a weight 3/2 unary theta functions, such that if we add it to the mock theta function, we get a weight 1/2 real-analytic modular form, which is annihilated by the hyperbolic Laplacian."
+    },
+    "title": "[0807.4834] Mock Theta Functions",
+    "checked": "2026-11-05T13:37:46.359878-06:00"
+  },
+  {
+    "tag": "KUDLA",
+    "url": "https://arxiv.org/abs/1608.03534",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/1608.03534",
+    "bytes": 40095,
+    "sha256": "c6d81e05a8fc7220d0ffec2677855afb86a2e75bd7daa0e8d0ae9e0e4a3468f5",
+    "file": "KUDLA.html",
+    "metadata": {
+      "citation_title": "Theta integrals and generalized error functions",
+      "citation_author": "Kudla, Stephen",
+      "citation_date": "2016/08/11",
+      "citation_online_date": "2016/08/11",
+      "citation_pdf_url": "https://arxiv.org/pdf/1608.03534",
+      "citation_arxiv_id": "1608.03534",
+      "citation_abstract": "In a recent preprint, arXiv:1606.05495v1, Alexandrov, Banerjee, Manschot and Pioline introduced generalized error functions and used them to construct indefinite theta series associated to quadratic lattices L of signature (n-2,2). These series are generalizations of those constructed by Zwegers for lattices of signature (n-1,1) and are shown to be `modular completions' of certain nice $q$-series. In this paper, we show that the ABMP-indefinite theta series for signature (n-2,2) can also be obtained as integrals of the form valued theta series introduced in joint work with J. Millson in 1986. Given two pairs {C1,C2} and {C2,C2'} of negative vectors in the real quadratic space V obtained from L, we suppose that these vectors determine 4 distinct oriented negative 2-planes {C1,C2},{C1,C2'},{C1',C2'},{C1',C2} lying in the same component of the space D of oriented negative 2 -planes in V. These 2-planes determined a surface S in D and the non-holomorphic modular form obtained by integrating the KM-theta series over S is show to coincide with the ABMP-indefinite theta series. Moreover, the associated q-series in interpreted as the generating series for the intersection numbers of S with the codimension 2 subspaces D_x of D defined by positive lattice vectors."
+    },
+    "title": "[1608.03534] Theta integrals and generalized error functions",
+    "checked": "2026-11-05T13:37:46.337807-06:00"
+  },
+  {
+    "tag": "FUNKE_KUDLA",
+    "url": "https://arxiv.org/abs/1708.02969",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/1708.02969",
+    "bytes": 41497,
+    "sha256": "612946518cc784fe5bc102fc250418d6c6382534e1a64293f89aa5529e1fda91",
+    "file": "FUNKE_KUDLA.html",
+    "metadata": {
+      "citation_title": "Theta integrals and generalized error functions, II",
+      "citation_author": "Kudla, Stephen",
+      "citation_doi": "10.1112/S0010437X19007504",
+      "citation_date": "2017/08/09",
+      "citation_online_date": "2017/08/09",
+      "citation_pdf_url": "https://arxiv.org/pdf/1708.02969",
+      "citation_arxiv_id": "1708.02969",
+      "citation_abstract": "Theta series for indefinite quadratic lattices were introduced by Zwegers, for signature (m-1,1), Alexandrov, Banerjee, Manschot and Pioline, for signature (m-2,2), and Nazaroglu, for signature (m-q,q). These series are modular modular completions, defined by means of generalized error functions, of certain non-modular holomorphic generating series associated to lattice vectors in positive cones. We show that these modular forms arise as integrals of the theta forms, defined in work of Millson and the second author, over certain singular q-cubes. We also give an explicit formula for the integrals of such forms over singular q-simplices. The sign function occurring in the holomorphic generating series arises as in intersection number of the singular q-cube or q-simplex with a totally geodesic subsymmetric space of codimension q. The cubical case for q=2 was treated in [11]."
+    },
+    "title": "[1708.02969] Theta integrals and generalized error functions, II",
+    "checked": "2026-11-05T13:37:46.420365-06:00"
+  },
+  {
+    "tag": "BORCHERDS",
+    "url": "https://arxiv.org/abs/alg-geom/9609022",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/alg-geom/9609022",
+    "bytes": 42177,
+    "sha256": "8cf8824c45f313361e79aff1ed8952786140ac51eeb3f46a72c99d30ac4308df",
+    "file": "BORCHERDS.html",
+    "metadata": {
+      "citation_title": "Automorphic forms with singularities on Grassmannians",
+      "citation_author": "Borcherds, Richard E.",
+      "citation_doi": "10.1007/s002220050232",
+      "citation_date": "1996/09/29",
+      "citation_online_date": "1997/06/07",
+      "citation_pdf_url": "https://arxiv.org/pdf/alg-geom/9609022",
+      "citation_arxiv_id": "alg-geom/9609022",
+      "citation_abstract": " We construct some families of automorphic forms on Grassmannians which have singularities along smaller sub Grassmannians, using Harvey and Moore's extension of the Howe (or theta) correspondence to modular forms with poles at cusps. Some of the applications are as follows. We construct families of holomorphic automorphic forms which can be written as infinite products, which give many new examples of generalized Kac-Moody superalgebras. We extend the Shimura and Maass-Gritsenko correspondences to modular forms with singularities. We prove some congruences satisfied by the theta functions of positive definite lattices, and find a sufficient condition for a Lorentzian lattice to have a reflection group with a finite volume fundamental domain. We give some examples suggesting that these automorphic forms with singularities are related to Donaldson polynomials and to mirror symmetry for K3 surfaces."
+    },
+    "title": "[alg-geom/9609022] Automorphic forms with singularities on Grassmannians",
+    "checked": "2026-11-05T13:37:46.422888-06:00"
+  },
+  {
+    "tag": "CONES",
+    "url": "https://arxiv.org/abs/1608.08874",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/1608.08874",
+    "bytes": 37016,
+    "sha256": "f6f7350c574cda6d81bb8673bb35f8fc17d02bbb9a089f28ee8534ec2d906b03",
+    "file": "CONES.html",
+    "metadata": {
+      "citation_title": "Indefinite Theta Series on Cones",
+      "citation_author": "Westerholt-Raum, Martin",
+      "citation_date": "2016/08/31",
+      "citation_online_date": "2017/01/16",
+      "citation_pdf_url": "https://arxiv.org/pdf/1608.08874",
+      "citation_arxiv_id": "1608.08874",
+      "citation_abstract": "We show that indefinite theta series on cones converge and provide an explicit modular completion. Our completion rests on a convolution of the Gaussian with a piecewise constant function supported on the cone. Our main innovation is to formulate this convolution in terms of euclidean geometry as opposed to hyperbolic geometry. This change of perspective allows us to establish essential asymptotic estimates without further difficulty."
+    },
+    "title": "[1608.08874] Indefinite Theta Series on Cones",
+    "checked": "2026-11-05T13:37:46.418934-06:00"
+  },
+  {
+    "tag": "UNARY",
+    "url": "https://arxiv.org/abs/1706.07770",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/1706.07770",
+    "bytes": 37934,
+    "sha256": "b86fe57774dd4f2793c38188857f3e3eb8200bd467e4186c502794064ca30798",
+    "file": "UNARY.html",
+    "metadata": {
+      "citation_title": "The Bruinier--Funke pairing and the orthogonal complement of unary theta functions",
+      "citation_author": "Man, Siu Hang",
+      "citation_date": "2017/06/23",
+      "citation_online_date": "2017/06/23",
+      "citation_pdf_url": "https://arxiv.org/pdf/1706.07770",
+      "citation_arxiv_id": "1706.07770",
+      "citation_abstract": "We describe an algorithm for computing the inner product between a holomorphic modular form and a unary theta function, in order to determine whether the form is orthogonal to unary theta functions without needing a basis of the entire space of modular forms and without needing to use linear algebra to decompose this space completely."
+    },
+    "title": "[1706.07770] The Bruinier--Funke pairing and the orthogonal complement of unary theta functions",
+    "checked": "2026-11-05T13:37:46.361496-06:00"
+  },
+  {
+    "tag": "HILBERT",
+    "url": "https://arxiv.org/abs/2307.16736",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2307.16736",
+    "bytes": 41600,
+    "sha256": "ed753a8d7e7bbe8bf941dca9db7d032b08ea0abad5109dabccbc3bb0cadbe94d",
+    "file": "HILBERT.html",
+    "metadata": {
+      "citation_title": "A discrepancy result for Hilbert modular forms",
+      "citation_author": "Sinha, Kaneenika",
+      "citation_date": "2023/07/31",
+      "citation_online_date": "2026/05/30",
+      "citation_pdf_url": "https://arxiv.org/pdf/2307.16736",
+      "citation_arxiv_id": "2307.16736",
+      "citation_abstract": "Let $F$ be a totally real number field and $r=[F :\\mathbb{Q}].$ Let $A_k(\\mathfrak{N},\\omega) $ be the space of holomorphic Hilbert cusp forms with respect to $K_1(\\mathfrak{N})$, of weight $k=(k_1,\\dots,k_r)$ such that $k_j>2$ for all $j$, and with central Hecke character $\\omega$. For integral ideals $\\mathfrak{N}$ and $\\mathfrak{n}$ in $F$ such that $( \\mathfrak{n}, \\mathfrak{N}) = 1$, we study the Petersson trace formula for the Hecke operator $T_{\\mathfrak{n}}$ acting on the space $A_k(\\mathfrak{N},\\omega)$. We present asymptotic estimates for the terms of the Petersson formula as $k_0\\rightarrow\\infty,$ where $k_0=\\min(k_1,\\dots,k_r)$. As an application, we obtain a weighted discrepancy bound for the distribution of the eigenvalues of the Hecke operator $T_{\\mathfrak{p}}$ (for a fixed prime ideal $\\mathfrak{p}$) acting on the space $A_k(\\mathfrak{N},1),$ when $F$ has narrow class number $1$, and the ideal $\\mathfrak{N}$ is generated by (rational) integers. This generalizes a discrepancy result previously obtained by Jung and Sardari in the context of classical cusp forms."
+    },
+    "title": "[2307.16736] A discrepancy result for Hilbert modular forms",
+    "checked": "2026-11-05T13:37:46.588510-06:00"
+  },
+  {
+    "tag": "ZAGIER",
+    "url": "https://people.mpim-bonn.mpg.de/zagier/files/qmf/fulltext.pdf",
+    "status": 200,
+    "final_url": "https://people.mpim-bonn.mpg.de/zagier/files/qmf/fulltext.pdf",
+    "bytes": 470902,
+    "sha256": "2ee0a69a2ffdd0f7611178fb79a15b5c130f324623640ed7557920435284f0bf",
+    "file": "ZAGIER.pdf",
+    "metadata": {},
+    "title": "",
+    "checked": "2026-11-05T13:37:47.939265-06:00"
+  },
+  {
+    "tag": "KNIGHTLY_LI",
+    "url": "https://www.charlesli.org/math/papers/pethil.pdf",
+    "status": 200,
+    "final_url": "https://www.charlesli.org/math/papers/pethil.pdf",
+    "bytes": 375057,
+    "sha256": "1e1180aab62822a74b6d0e06c2fa46e28445400df5dcf615c39e53a760665493",
+    "file": "KNIGHTLY_LI.pdf",
+    "metadata": {},
+    "title": "",
+    "checked": "2026-11-05T13:37:46.786364-06:00"
+  },
+  {
+    "tag": "LMFDB",
+    "url": "https://www.lmfdb.org/NumberField/2.2.140.1",
+    "status": 200,
+    "final_url": "https://www.lmfdb.org/NumberField/2.2.140.1",
+    "bytes": 98210,
+    "sha256": "439507e8ee77b5a50199a487022dfb1163d023b4dda4e5c66b1c7b37aea48385",
+    "file": "LMFDB.html",
+    "metadata": {},
+    "title": "LMFDB - Number field 2.2.140.1: \\(\\Q(\\sqrt{35}) \\)  ",
+    "checked": "2026-11-05T13:37:46.784441-06:00"
+  }
+]

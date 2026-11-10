@@ -1,0 +1,183 @@
+{
+  "when_CST": "2026-11-05 14:00:44 CST",
+  "FINDINGS_sha256": "46beb56b0b9de8566a215db85668a5ffdc90e962ceee26458e271d4d57787bdb",
+  "PRESS_sha256": "22b614382025f82c17c67d02fd92b99a23d34e7d9b8fe04a58b734040747408b",
+  "tip_post_sha256": "7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91",
+  "tip_expected": "7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91",
+  "tip_touched": false,
+  "mirrors": {
+    "/workspace/quantum-comp/bridges/AUDITOR": {
+      "byte_match_all": true,
+      "files": {
+        "FINDINGS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "FINDINGS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        }
+      }
+    },
+    "/workspace/quantum-comp/bridges/PHYSICIST": {
+      "byte_match_all": true,
+      "files": {
+        "FINDINGS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "FINDINGS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        }
+      }
+    },
+    "/workspace/quantum-comp/bridges/PROFESSOR_PROOF": {
+      "byte_match_all": true,
+      "files": {
+        "FINDINGS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "FINDINGS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        }
+      }
+    },
+    "/workspace/quantum-comp/bridges/LOCAL": {
+      "byte_match_all": true,
+      "files": {
+        "FINDINGS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "FINDINGS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        }
+      }
+    },
+    "/workspace/quantum-comp/reports/bridges/AUDITOR": {
+      "byte_match_all": true,
+      "files": {
+        "FINDINGS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "FINDINGS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        }
+      }
+    },
+    "/workspace/quantum-comp/reports/bridges/PHYSICIST": {
+      "byte_match_all": true,
+      "files": {
+        "FINDINGS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "FINDINGS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        }
+      }
+    },
+    "/workspace/quantum-comp/reports/bridges/PROFESSOR_PROOF": {
+      "byte_match_all": true,
+      "files": {
+        "FINDINGS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "FINDINGS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        }
+      }
+    },
+    "/workspace/quantum-comp/reports/bridges/LOCAL": {
+      "byte_match_all": true,
+      "files": {
+        "FINDINGS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md": {
+          "exists": true,
+          "match": true
+        },
+        "FINDINGS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        },
+        "SOFTSF_PRESS_MR1_SOFTSF_APPELL_LERCH_RC_15954_FORENSIC_HOLD_INVENT_2026-11-05.md.sha256": {
+          "exists": true,
+          "match": true
+        }
+      }
+    }
+  },
+  "invent": "HOLD STANDS",
+  "no_CERT": true,
+  "no_publish_spend": true,
+  "no_RECS": true,
+  "no_invent_Appell_Lerch_Rc": true
+}

@@ -1,0 +1,12 @@
+PARI stack size set to 6000000000 bytes, maximum size set to 6000001024
+conductor of 49a1 (x) chi_-4: 784 ; a_n(Em4)==chi_-4(n)a_n(f) n<=500: 1
+ N=6272 D=1: dim S_3/2 = 390  t=0s
+ N=6272 D=-4: dim S_3/2 = 0  t=0s
+ N=6272 D=8: dim S_3/2 = 390  t=0s
+ N=6272 D=-8: dim S_3/2 = 0  t=0s
+ N=6272 D=-7: dim S_3/2 = 0  t=0s
+ N=6272 D=28: dim S_3/2 = 388  t=0s
+ N=6272 D=-56: dim S_3/2 = 0  t=0s
+ N=6272 D=56: dim S_3/2 = 388  t=0s
+ N=6272 D=1: dim 390, joint kernel (T(p^2)=chi_-4(p)a_p(f), p=3,5,11) dim = 0  [673s]
+ N=6272 D=8: dim 390, joint kernel (T(p^2)=chi_-4(p)a_p(f), p=3,5,11) dim = 0  [620s]

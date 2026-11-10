@@ -1,0 +1,73 @@
+page,id,title,raw
+16,5.1,,Theorem 5.1
+16,5.3,,Theorem 5.3
+20,1.1,,Theorem 1.1
+22,6.6,,Theorem 6.6
+26,7.6,,Theorem 7.6
+26,7.7,,Theorem 7.7
+43,11.1,Shared remainder,Theorem 11.1 (Shared remainder)
+43,11.2,"Real-quadratic
+                     √          decomposition and ray class",Theorem 11.2 (Real-quadratic                      √          decomposition and ray class)
+44,11.3,Radial asymptotics and partial zeta  √   values,Theorem 11.3 (Radial asymptotics and partial zeta  √   values)
+44,11.4,Gauss-mean pattern and zero set,Theorem 11.4 (Gauss-mean pattern and zero set)
+44,11.5,Baker obstruction: scalar no-go,Theorem 11.5 (Baker obstruction: scalar no-go)
+44,11.6,Theta lift and vector-valued S/T law,Theorem 11.6 (Theta lift and vector-valued S/T law)
+45,11.7,Lewis–Zagier√period formula,Theorem 11.7 (Lewis–Zagier√period formula)
+45,11.8,Eisenstein/cusp split,Theorem 11.8 (Eisenstein/cusp split)
+46,11.9,Herglotz closed form,Theorem 11.9 (Herglotz closed form)
+46,11.10,Closed form of ER,Theorem 11.10 (Closed form of ER )
+46,11.10,,Theorem 11.10 
+50,14.1,Profile S/T law,Theorem 14.1 (Profile S/T law)
+52,24.4,,Theorem 24.4
+56,15.3,Cocycle of the E-part,Theorem 15.3 (Cocycle of the E-part)
+61,11.9,,Theorem 11.9
+63,19.3,"Tensor factorisation, s = 7","Theorem 19.3 (Tensor factorisation, s = 7)"
+64,19.5,Tensor factorisation for odd s,Theorem 19.5 (Tensor factorisation for odd s)
+65,20.1,Dimensions,Theorem 20.1 (Dimensions)
+67,20.5,dim V (98,Theorem 20.5 (dim V (98)
+69,20.11,Prime-square structure,Theorem 20.11 (Prime-square structure)
+71,21.2,Coset property,Theorem 21.2 (Coset property)
+73,22.1,Hs in closed form,Theorem 22.1 (Hs in closed form)
+74,22.5,Period 72 at x = 13,Theorem 22.5 (Period 72 at x = 13 )
+79,23.7,Closed forms for Hsaxes,Theorem 23.7 (Closed forms for Hsaxes )
+80,24.1,"Cthird : one coset, one cone weight, one       P kernel, two chains","Theorem 24.1 (Cthird : one coset, one cone weight, one       P kernel, two chains)"
+81,24.4,Phase obstruction,Theorem 24.4 (Phase obstruction)
+81,24.5,Sign obstruction,Theorem 24.5 (Sign obstruction)
+81,24.6,Structure of Cthird,Theorem 24.6 (Structure of Cthird )
+82,25.1,Rational ζ-curve,Theorem 25.1 (Rational ζ-curve)
+82,25.2,Radial expansion of gs,Theorem 25.2 (Radial expansion of gs )
+85,26.2,Weil realisation of the label representation,Theorem 26.2 (Weil realisation of the label representation)
+87,26.7,N2 -polarised K3 surfaces,Theorem 26.7 (N2 -polarised K3 surfaces)
+88,26.9,Automorphisms of N2 -polarised K3 surfaces,Theorem 26.9 (Automorphisms of N2 -polarised K3 surfaces)
+91,27.4,Uniqueness of the Maass completion,Theorem 27.4 (Uniqueness of the Maass completion)
+93,27.7,Uniqueness and residual ambiguity of the vector completion,Theorem 27.7 (Uniqueness and residual ambiguity of the vector completion)
+94,27.4,a,Theorem 27.4(a)
+96,27.13,Dimension of the cusp space,Theorem 27.13 (Dimension of the cusp space)
+100,11.11,,Theorem 11.11 
+105,33.4,T -law and S-law,Theorem 33.4 (T -law and S-law)
+109,34.5,Profile of C and of q −7/20 C,Theorem 34.5 (Profile of C and of q −7/20 C)
+109,34.6,Radial asymptotics at leading order,Theorem 34.6 (Radial asymptotics at leading order)
+109,34.7,Vector-valued S-law of C at leading order,Theorem 34.7 (Vector-valued S-law of C at leading order)
+111,35.4,Expansion of a piece,Theorem 35.4 (Expansion of a piece)
+112,35.6,Radial expansion of the companion series,Theorem 35.6 (Radial expansion of the companion series)
+117,37.10,,Theorem 37.10
+117,37.11,,Theorem 37.11
+118,37.13,,Theorem 37.13
+119,38.2,,Theorem 38.2
+120,38.4,,Theorem 38.4
+120,38.5,,Theorem 38.5
+121,39.2,,Theorem 39.2
+121,39.3,,Theorem 39.3
+121,39.4,,Theorem 39.4
+125,39.23,,Theorem 39.23
+127,40.1,Equality of compact and ordinary induction,Theorem 40.1 (Equality of compact and ordinary induction)
+128,40.2,Socle reduction to K1 -invariants,Theorem 40.2 (Socle reduction to K1 -invariants)
+128,40.3,Dictionary identities,Theorem 40.3 (Dictionary identities)
+129,40.5,Filtration weight ten,Theorem 40.5 (Filtration weight ten)
+129,40.6,Breuil socle formula,Theorem 40.6 (Breuil socle formula)
+130,40.10,Classification of irreducibles,Theorem 40.10 (Classification of irreducibles)
+131,41.1,Local cite-lift F1,Theorem 41.1 (Local cite-lift F1)
+134,41.7,Dimension and narrow components,Theorem 41.7 (Dimension and narrow components)
+135,41.10,Rank-one classifier D1,Theorem 41.10 (Rank-one classifier D1 )
+137,8.1,"Part I, §8.1","Theorem 8.1 (Part I, §8.1)"
+137,42.3,The normalized Bridge Series and the 35-component law vector,Theorem 42.3 (The normalized Bridge Series and the 35-component law vector)

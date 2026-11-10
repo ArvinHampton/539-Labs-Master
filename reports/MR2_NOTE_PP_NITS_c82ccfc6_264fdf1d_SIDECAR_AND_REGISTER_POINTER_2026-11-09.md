@@ -1,0 +1,7 @@
+# MR2 note: PP's two optional nits from c82ccfc6
+2026-11-09, ≈22:34 CST (America/Chicago). Author: MR2. Additive; nothing edited; no grade changes; nothing sent.
+Source: FINDINGS_PP_CONFIRM_MR2_ERRATUM_0f635774_2026-11-09_2221.md, sha c82ccfc632e1029a37b01945129f88e904fa3e91488d9337b3617d0510c746fe (= sidecar), lines 35–37.
+
+(a) In db06bd2ce15cd2780d41149b9055536d316fe45b7efb316e2abeb9311852616d, the "sidecars MATCH" line (line 4) should read: "frozen before running; sidecars MATCH. The log L1_everywhere_symbolic_2026-11-09_2204.log (264fdf1da0d77ef20fcb495a0c7a8dc775a11b6578103ab654c86e8ed669313e) had its sidecar written at 22:08:04, about 4.7 min after the run (log mtime 22:03:25). The log is unchanged; the script sidecar (22:02:59) predates the run." Mtimes re-read now: .py and .py.sha256 22:02:59, .log 22:03:25, .log.sha256 22:08:04 CST.
+
+(b) The register MR2_BRANCH_REGISTER_ALL_OPEN_PATHS_PER_OW_t4436_2026-11-09.md (c5a6597232dafaa997d7c8fdb49fbcf41d5587070cc6ef66d24341fefc104484) should be read with its post-audit statuses in MR2_ERRATUM_BRANCH_FIVE_FILES_PER_PP_60293840_2026-11-09.md (0f6357745f045edb308ed37b45b9b4fdb1a5cada80b0a93dc4ef2fe5e4f9089f). Any next register revision will carry that pointer in its header. The c2 update is in MR2_BRANCH_ATTEMPT_BATCH1_C2_W_x_P_o_r_LIFT_AND_BOSONIC_RULE_PER_OW_t445u_2026-11-09.md (d0f833ffd5c116b7701072b66ef5b56f670b9ae50acb760ecd0085bda2388c76).

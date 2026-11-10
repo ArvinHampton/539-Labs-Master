@@ -1,0 +1,4 @@
+# SOFTSF PRESS — NL ACK+BEGIN invent ban lifted — 2026-10-27
+- FINDINGS: NL_ACK_BEGIN_INVENT_BAN_LIFTED_PURSUE_ALL_2026-10-27.md sha `43426458959f3904f6a9190d2ba8e0095c62a52a28c5bf02f8643ce439c729c4`
+- Exit IDLE / NL Cat A HOLD. Soft SF resume under OW 1c7163deec3cd5ee7ec6c8ee6db6b02c8bf7738e52a052218157c3b9239e0dec.
+- tip Soft SF LOCK untouched; Kerr BLOCKED. Route Soft SF Write-only → Auditor.

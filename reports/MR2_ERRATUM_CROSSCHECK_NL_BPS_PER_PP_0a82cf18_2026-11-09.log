@@ -1,0 +1,13 @@
+[Z1] grad V at MN2: [0, 0, 0]
+[Z1] g^2 L^2 = 2*2**(1/3) ; V* + 12/L^2 = 0
+[Z1] Hess V mixing entries (phi,w), (lam,w): 0 0
+[Z1] m^2 L^2 = eig(G^-1 Hess V) L^2: {12: 1, -4: 1, 0: 1} ; w-entry: 0
+[Z1] w second-order exponents mu L from mu^2 - 4 mu - m^2 L^2 = 0 with m^2 = 0: [0, 4]
+[Z1] W3-flow exponents x L (2 G^-1 Hess W3 L): {-2: 1, 2: 1, 4: 1} ; w-entry: 4
+[Z1] d^3V/dw^3 at MN2: -24*2**(2/3)*g**2 ; equals -24*2^(2/3) g^2: True
+[B3] det T = 1 ; d Delta/d phi = 0 ; d T/d phi zero: True ; d Delta/d w = (m3**2*exp(3*w) + m4**2*exp(3*w) - 2*m5**2)*exp(4*lambda - 2*w) (nonzero: w enters the x/Sigma warps via Delta^(1/3))
+[D5] trial 0: Gamma^cde G_(S1 cde) - 6 Gamma^S2 omega-slash = 0: True
+[D5] trial 1: Gamma^cde G_(S1 cde) - 6 Gamma^S2 omega-slash = 0: True
+[D5] trial 2: Gamma^cde G_(S1 cde) - 6 Gamma^S2 omega-slash = 0: True
+[D5] => S1-row with x-row substituted: (k_S - k_x) Gamma_S1 eps = (sigma/12)(6 Gamma^S2 omslash) eps; left-multiply by Gamma^S1: (k_S - k_x) eps = +(sigma/2) Gamma^{S1 S2} omslash eps
+EXIT 0

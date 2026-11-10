@@ -1,0 +1,632 @@
+                                                   HECKE-TYPE DOUBLE SUMS, APPELL-LERCH SUMS,
+                                                          AND MOCK THETA FUNCTIONS (I)
+arXiv:1208.1421v1 [math.NT] 7 Aug 2012
+
+
+
+
+                                                                   DEAN HICKERSON AND ERIC MORTENSON
+
+                                                                   For George Andrews in honor of his 70th birthday
+
+                                                Abstract. By developing a connection between partial theta functions and Appell-
+                                                Lerch sums, we find and prove a formula which expresses Hecke-type double sums in terms
+                                                of Appell-Lerch sums and theta functions. Not only does our formula prove classical
+                                                Hecke-type double sum identities such as those found in work Kac and Peterson on
+                                                affine Lie Algebras and Hecke modular forms, but once we have the Hecke-type forms
+                                                for Ramanujan’s mock theta functions our formula gives straightforward proofs of many
+                                                of the classical mock theta function identities. In particular, we obtain a new proof of
+                                                the mock theta conjectures. Our formula also applies to positive-level string functions
+                                                                                                                        (1)
+                                                associated with admissable representations of the affine Lie Algebra A1 as introduced
+                                                by Kac and Wakimoto.
+
+
+
+
+                                                                                  0. introduction
+                                           Let q be a complex number with 0 < |q| < 1 and define C∗ := C − {0}. We recall some
+                                         basics:
+                                                                        n−1
+                                                                        Y                                 Y
+                                                      (x)n = (x; q)n :=    (1 − q i x), (x)∞ = (x; q)∞ :=  (1 − q i x),
+                                                                            i=0                                           i≥0
+                                                                                                                      n
+                                                                                                             (−1)n q ( ) xn ,
+                                                                                                       X
+                                                                 j(x; q) := (x)∞ (q/x)∞ (q)∞ =                        2
+
+                                                                                                         n
+                                                            and j(x1 , x2 , . . . , xn ; q) := j(x1 ; q)j(x2 ; q) · · · j(xn ; q).
+                                         where in the last line the equivalence of product and sum follows from Jacobi’s triple
+                                         product identity. We also keep in mind the easily deduced fact that j(q n , q) = 0 for
+                                         n ∈ Z. The following are special cases of the above definition. Let a and m be integers
+                                         with m positive. Define
+                                                                                                                   Y
+                                                 Ja,m := j(q a ; q m ), J a,m := j(−q a ; q m ), and Jm := Jm,3m =  (1 − q mi ).
+                                                                                                                                i≥1
+
+
+                                            Date: 7 August 2012.
+                                            2000 Mathematics Subject Classification. 11B65, 11F11, 11F27.
+                                            Key words and phrases. Hecke-type double sums, Appell-Lerch sums, mock theta functions, indefinite
+                                         theta series.
+                                                                                              1
+2                             DEAN HICKERSON AND ERIC MORTENSON
+
+   In his last letter to Hardy, Ramanujan gave a list of seventeen functions which he called
+“mock theta functions.” Each mock theta function was defined by Ramanujan as a q-
+series convergent for |q| < 1. He stated that they have certain asymptotic properties as
+q approaches a root of unity, similar to the properties of ordinary theta functions, but
+that they are not theta functions. He also stated several identities relating some of the
+mock theta functions to each other. Later, many more mock theta function identities
+were found in the lost notebook [25].
+   Mock theta functions have many representations—Eulerian forms, Appell-Lerch sums,
+Hecke-type double sums, and Fourier coefficients of meromorphic Jacobi forms. In terms
+of Eulerian forms, the mock theta conjecture for the fifth order mock theta function f0 (q)
+is stated
+                 X q n2            X                q 10n
+                                                          2
+                                                                         (q 5 ; q 5 )∞ (q 5 ; q 10 )∞
+      f0 (q) :=             = 2−2                                      +                              . (0.1)
+                 n≥0
+                     (−q)n         n≥0
+                                       (q 2 ; q 10 )n+1 (q 8 ; q 10 )n    (q; q 5 )∞ (q 4 ; q 5 )∞
+
+To facilitate studying mock theta functions, it is useful to translate the Eulerian form
+into other representations. Translating from one form to another has been an historically
+difficult problem; moreover, unifying any two of the various guises with a single equation
+has been an unsolved problem.
+   Early attempts to unify Eulerian forms and Appell-Lerch sum forms used the theory
+of basic hypergeometric series. In some cases, this led to identities between the mock
+theta functions and helped determine modular properties [29]. We will use the following
+definition of an Appell-Lerch sum.
+Definition 0.1. Let x, z ∈ C∗ with neither z nor xz an integral power of q. Then
+                                                                r
+                                                1 X (−1)r q (2) z r
+                                m(x, q, z) :=                        .                                  (0.2)
+                                              j(z; q) r 1 − q r−1 xz
+
+These sums were first studied by Appell [1] and then by Lerch [23]. Appell-Lerch sums
+appear in the literature under various names such as Lerch sums, Appell functions, Appell
+theta functions, and mock Jacobi forms. In Section 4, we will see that (0.1) is equivalent
+to
+                                                                          (q 5 ; q 5 )∞ (q 5 ; q 10 )∞
+            f0 (q) = 2m(q 14 , q 30 , q 4 ) + 2q −2 m(q 4 , q 30 , q 4) +                              .
+                                                                           (q; q 5 )∞ (q 4 ; q 5 )∞
+In attempts to prove the mock theta conjectures, Andrews introduced techniques to trans-
+late mock theta functions into two new representations. He used Bailey’s Lemma to go
+from Eulerian forms to Hecke-type sums [3] and then used the constant term method to
+go from Hecke-type sums to Fourier coefficients of meromorphic Jacobi forms [4]. In [3],
+he showed
+                                            X            5 2 1          2
+                      f0 (q) · (q)∞ =           (−1)j q 2 n + 2 n−j (1 − q 4n+2 ).                       (0.3)
+                                             n≥0
+                                            |j|≤n
+    HECKE-TYPE DOUBLE SUMS, APPELL-LERCH SUMS, AND MOCK THETA FUNCTIONS (I)                                         3
+
+For this paper, we will use the following definition of the building block of Hecke-type
+double sums.
+Definition 0.2. Let x, y ∈ C∗ and define sg(r) := 1 for r ≥ 0 and sg(r) := −1 for r < 0.
+Then                                                            r        s
+                                        sg(r)(−1)r+s xr y s q a(2)+brs+c(2) .
+                                    X
+                fa,b,c (x, y, q) :=                                                (0.4)
+                                            sg(r)=sg(s)
+
+In terms of our building block, (0.3) becomes
+                           f0 (q) · (q)∞ = f3,7,3 (q 2 , q 2 , q) + q 3 f3,7,3 (q 7 , q 7 , q).
+Hecke [17] conducted the first systematic study of such double sums, special cases of which
+appeared earlier in work of Rogers [26].
+   Although using the methods of basic hypergeometric series, constant term, and Bailey
+pairs have provided a great deal of insight, researchers have been unable to unify all of
+the mock theta functions under a single formula. Existing results are limited to functions
+within the same order, and no available method works for all orders. Also, the known
+methods of basic hypergeometric series, constant term, and Bailey pairs are not robust—
+slight changes in the Eulerian form result in dramatic changes in the technique which
+needs to be applied. Polishchuk [27] used homological mirror symmetry to show that one
+can always expand an indefinite theta series of signature (1,1) in terms of Appell-Lerch
+sums; however, examples could only be produced on a case-by-case basis. Zwegers [31]
+showed that indefinite theta series, Appell-Lerch sums, and Fourier coefficients of mero-
+morphic Jacobi forms exhibit the same near-modular behavior. Zwegers thus established
+the modularity theory for mock theta functions, and his work allows mock theta functions
+to be cast as the holomorphic parts of weak Maass forms [11, 30, 9, 10]).
+   Another important problem is understanding the various types of Eulerian forms and
+how they relate to each other. For example, in [25] one finds scores of Eulerian forms in
+mock theta function identities, Rogers-Ramanujan type identities, and partial theta func-
+tion identities. In this direction, Andrews [5] has recently produced q-hypergeometric for-
+mulas which simultaneously prove mock theta function identities and Rogers-Ramanujan
+type identities.
+   By developing a connection between partial theta functions and Appell-Lerch sums—
+the building block of mock theta functions—we obtain a master formula that expands
+a certain family of Hecke-type double sums in terms of Appell-Lerch sums and theta
+functions. In Section 4, we use results from the literature to write the classical mock
+theta functions in terms of Appell-Lerch sums. Given the Hecke-type sum form of a mock
+theta function, our formula produces the same Appell-Lerch sum forms found in Section
+4. In particular, for the fifth order f0 (q) we will show
+                                                                  h
+      f3,7,3 (q 2 , q 2 , q) + q 3 f3,7,3 (q 7 , q 7 , q) = (q)∞ · 2m(q 14 , q 30 , q 4 ) + 2q −2 m(q 4 , q 30 , q 4 )
+                                                                           (q 5 ; q 5 )∞ (q 5 ; q 10 )∞ i
+                                                                      +                                  .
+                                                                             (q; q 5 )∞ (q 4 ; q 5 )∞
+4                                        DEAN HICKERSON AND ERIC MORTENSON
+
+As a consequence, our formula combined with Appell-Lerch sum properties, such as The-
+orems 2.3 and 2.5, reduces many of the mock theta function identities to straightforward
+exercises. In particular, our formula gives a new proof of the mock theta conjectures.
+Indeed, given the Hecke-type sum form, it gives us the mock theta conjecture. Our for-
+mula also proves the Hecke-type double sum identities found in Polishchuk [27] and Kac
+and Peterson [20]. One compares this with the approach using Zwegers’ near-modularity
+result and the theory of weak Maass forms. Here one computes the correction term (i.e.
+a period integral of some weight 3/2 unary theta series) for each mock theta function
+to make it transform like a modular form, one verifies that the modular transformation
+properties match those of the theta function provided by Ramanujan, one verifies that the
+correction terms cancel, and finally one computes the first few coefficients and compares.
+   In future work, we will use the techniques of this paper to develop a duality between
+identities involving mock theta functions and identities involving partial theta functions.
+We will see that not only do the dual partial theta function expansions appear to have
+a structure similar to the Appell-Lerch sum expansions in this paper, but also that the
+dual identities in terms of partial theta functions are much easier to prove.
+   For the statements of our theorems, x and y are generic, i.e. x, y, q do not cause poles
+in the Appell-Lerch sums or in the quotients of theta functions. To state our results, we
+define the following expression:
+         ga,b,c (x, y, q, z1, z0 )
+                a−1
+                              t
+                                                       b+1    a+1           (−y)a a(b2 −ac) 
+                    (−y)t q c(2) j(q bt x; q a )m − q a( 2 )−c( 2 )−t(b −ac)
+                                                                       2
+                X
+           :=                                                                     b
+                                                                                    ,q      , z0                   (0.5)
+                t=0
+                                                                             (−x)
+                    c−1
+                                  t
+                                                          b+1    c+1           (−x)c c(b2 −ac) 
+                        (−x)t q a(2) j(q bt y; q c)m − q c( 2 )−a( 2 )−t(b −ac)
+                                                                          2
+                    X
+                +                                                                    b
+                                                                                       ,q      , z1 .
+                    t=0
+                                                                                (−y)
+
+Theorem 0.3. Let n and p be positive integers with (n, p) = 1. For generic x, y ∈ C∗
+                                                               1
+        fn,n+p,n (x, y, q) = gn,n+p,n(x, y, q, −1, −1) +              · θn,p (x, y, q),
+                                                         J 0,np(2n+p)
+where
+                          p−1 p−1                                                    
+                                             n(r−(n−1)/2 )+(n+p) r−(n−1)/2   s+(n+1)/2 +n(s+(n+1)/2)
+                          X   X
+    θn,p (x, y, q) :=                    q         2                                          2        (−x)r−(n−1)/2
+                          r ∗ =0 s∗ =0
+                                                                    2                                   2
+        (−y)s+(n+1)/2 Jp32 (2n+p) j(−q np(s−r) xn /y n ; q np )j(q p(2n+p)(r+s)+p(n+p) xp y p ; q p (2n+p) )
+    ·                                                                                                          .
+         j(q p(2n+p)r+p(n+p)/2 (−y)n+p /(−x)n , q p(2n+p)s+p(n+p)/2(−x)n+p /(−y)n ; q p2 (2n+p) )
+Here r := r ∗ + {(n − 1)/2} and s := s∗ + {(n − 1)/2}, with 0 ≤ {α} < 1 denoting the
+fractional part of α.
+For our secondary result, we consider the special case of (0.4) in which b is divisible by a
+and c.
+      HECKE-TYPE DOUBLE SUMS, APPELL-LERCH SUMS, AND MOCK THETA FUNCTIONS (I)                                           5
+
+Theorem 0.4. Let a, b, and c be positive integers with ac < b2 and b divisible by a and c.
+Then
+                                                                          1
+            fa,b,c (x, y, q) = ha,b,c (x, y, q, −1, −1) −                               · θa,b,c (x, y, q),
+                                                                J 0,b2 /a−c J 0,b2 /c−a
+
+where
+                                                       b/a+1
+                                                                                            
+        ha,b,c (x, y, q, z1, z0 ) : = j(x; q a )m − q a( 2 )−c (−y)(−x)−b/a , q b /a−c , z1
+                                                                                  2
+
+
+                                                                                                
+                                                  c        c(b/c+1) −a          −b/c b2 /c−a
+                                        + j(y; q )m − q        2       (−x)(−y)     ,q       , z0 ,
+
+and
+                       b/c−1 b/a−1 b/a−1
+                                                     d+1               e+f +1
+                                           q (b /a−c)( 2 )+(b /c−a)(
+                                             2              2
+                                                                            )+a(f2) j q (b2 /a−c)(d+1)+bf y, q b2/a 
+                       X X X
+ θa,b,c (x, y, q) :=                                                     2
+
+                       d=0   e=0    f =0
+                           b(b2 /(ac)−1)(e+f +1)−(b2 /a−c)(d+1)+b3 (b−a)/(2a2 c)                     2        2
+            · (−x)f j q                                                    (−x)b/a y −1 ; q (b /a)(b /(ac)−1)
+                                                                                                                    
+
+     3                (b2 /c−a)(e+1)+(b2 /a−c)(d+1)−c(b/c
+                                                       2 )
+                                                           −a(b/a
+                                                               2 ) (−x)1−b/a (−y)1−b/c ; q b(b /(ac)−1)
+                                                                                              2         
+   Jb(b2 /(ac)−1) j q
+ ·                          b/c                                     b/a                                 .
+    j q (b /c−a)(e+1)−c( 2 ) (−x)(−y)−b/c , q (b /a−c)(d+1)−a( 2 ) (−x)−b/a (−y); q b(b2 /(ac)−1)
+           2                                        2
+
+
+
+
+Although all eight Hecke-type double sum identities found in Kac and Peterson [20] and
+Polishchuk [27] are special cases of the above theorems, we will only demonstrate one
+namely [20, (5.22)]:
+                                      2       2
+                 X                                     Y
+                      (−1)k q [5(2k+1) −(2ℓ+1) ]/4 = q   (1 − q 4n )(1 − q 20n ). (0.6)
+                        k,ℓ∈Z                                     n≥1
+                       2k≥ℓ≥0
+
+Corollary 0.5. Identity (0.6) is a special case of Theorem 0.4.
+
+  We compute three examples using Theorem 0.3 with the n = 1, p = 1 specialization:
+
+                             2                          2                yJ33 j(−x/y; q)j(q 2xy; q 3 )
+f1,2,1 (x, y, q) = j(y; q)m qy2x , q 3 , −1 + j(x; q)m qx2y , q 3 , −1 −
+                                                                     
+                                                                                                         .
+                                                                         J 0,3 j(−qy 2 /x, −qx2 /y; q 3)
+
+                                                                                                                  (0.7)
+
+The first two examples will involve two of Ramanujan’s sixth order mock theta functions:
+
+                             X (−1)n q n2 (q; q 2 )n                            X q (n+2
+                                                                                      2 ) (−q)
+                                                                                               n
+                 φ(q) :=                                   and σ(q) :=                               .
+                             n≥0
+                                           (−q)2n                               n≥0
+                                                                                      (q; q 2 )n+1
+6                              DEAN HICKERSON AND ERIC MORTENSON
+
+Example 0.1. We recall two expressions for φ(q) obtained via constant term and Bailey
+pair techniques respectively [6, (0.10)R ], [6, (2.19)]:
+             Y                                            X q n(3n+1)
+      φ(q) ·    (1 − q 3n )(1 + q 3n−1 )(1 + q 3n−2 ) = 2           3n
+                                                                       ,        (0.8)
+             n≥1                                          n
+                                                            1  +  q
+                                                                            n
+                                                                        2               2
+               Y                                             X              X
+      φ(q) ·       (1 − q 4n )(1 + q 4n−1 )(1 + q 4n−3 ) =    (−1)n q 3n +n   (−1)j q −j .                    (0.9)
+               n≥1                                              n                   j=−n
+
+It is straightforward to rewrite (0.8) and (0.9) in our notation as
+                     φ(q) =2m(q, q 3 , −1) and J 1,4 · φ(q) = f1,2,1 (q, −q, q).
+Using (0.7), it is easy to translate from the Hecke form to the Appell-Lerch form,
+                                                                                     qJ33 j(1; q)j(−q 4 ; q 3 )
+    f1,2,1 (q, −q, q) = j(−q; q)m(q, q 3 , −1) + j(q; q)m(−q, q 3 , −1) +
+                                                                                      J 0,3 j(−q 2 , q 2 ; q 3 )
+                      = j(−q; q)m(q, q 3 , −1) + 0 + 0 = 2J 1,4 m(q, q 3 , −1).                             (0.10)
+Example 0.2. From [6, (2.21)] we know that J1,2 σ(q) = qf1,2,1 (q 4 , q 3 , q 2 ). Using (0.7)
+gives
+                              4    3   2                2   6          J63 J 1,2 J5,6
+                     qf1,2,1 (q , q , q ) = −J1,2 m(q , q , −1) + 0 +                   .                   (0.11)
+                                                                      J 0,6 J 4,6 J 1,6
+Using (0.10) and (0.11), we immediately obtain
+                                                                               2    J 3 J 1,2 J5,6
+            φ(q 2 ) + 2σ(q) = 2m(q 2 , q 6 , −1) − 2m(q 2 , q 6 , −1) +           · 6
+                                                                              J1,2 J 0,6 J 4,6 J 1,6
+                                   Y
+                               =       (1 + q 2n−1 )2 (1 − q 6n )(1 + q 6n−3 )2 ,
+                                   n≥1
+
+a sixth order mock theta function identity [6, (0.19)R ]. For the general mock theta func-
+tion identity, use Theorem 0.3 and Theorem 2.5 to line up all of the Appell-Lerch sum
+expressions such that they cancel. Then all that remains to be verified is a theta function
+identity, which can be done by classical means.
+Example 0.3. We discuss the integral-level string functions associated with admiss-
+                                                    (1)
+able representations of the affine Lie Algebra A1 [21, 22]. Here m ∈ Z, N ∈ N,
+ℓ ∈ {0, 1, 2, . . . , N}, m ≡ ℓ (mod 2), where N is the level. In [28, p. 236], one finds
+the Hecke-type form for the general integral-level string function:
+                              1 nX Xo                 k−j        1         1
+               Cm,ℓN
+                      (q) =    3
+                                    −      (−1)k−j q ( 2 )−N jk+ 2 k(m−ℓ)+ 2 j(m+ℓ)
+                            (q)∞ j≥1 j≤0
+                                         k≤0   k≥1
+                              1                   1         1
+                                                1+ (m+ℓ) 1− (m−ℓ)
+                          =       · f1,1+N,1 (q   2     , q 2     , q),                                     (0.12)
+                              J13
+   HECKE-TYPE DOUBLE SUMS, APPELL-LERCH SUMS, AND MOCK THETA FUNCTIONS (I)                                      7
+
+which can be evaluated with Theorem 0.3. The last equality in (0.12) follows from the
+substitutions k → −k, j → j + 1 and the identity fa,b,c (x, y, q) = −yfa,b,c (q b x, q c y, q) +
+j(x; q a ).
+  Let us set N = 1. Here ℓ ∈ {0, 1}. Using specialization (0.7),
+           1                 1              1
+ 1
+Cm,ℓ (q) =  3
+              · f1,2,1 (q 1+ 2 (m+ℓ) , q 1− 2 (m−ℓ) , q)
+          J1
+           1 h           1                                          1
+         = 3 · j(q 1− 2 (m−ℓ) ; q)m(q (3m−ℓ)/2 , q 3 , −1) + j(q 1+ 2 (m+ℓ) ; q)m(q −(3m+ℓ)/2 , q 3 , −1)
+          J1
+                           1
+                1 q 1− 2 (m−ℓ) J33 j(−q m ; q)j(q 4+ℓ ; q 3) i
+          −         ·            1              1                .
+              J 0,3      j(q 2− 2 (3m−ℓ) , q 2+ 2 (3m+ℓ) ; q 3 )
+Both Appell-Lerch sums are defined, and their theta function coefficients are zero. Hence
+the Appell-Lerch sum expression is zero, and only the theta function quotient remains.
+By considering the cases ℓ = 0, 1, it is easy to show the well-known form of the level-1
+string function, [20, Section 4.6, Ex. 3]:
+                                                               1
+                                                                 (m2 −ℓ2 )
+                                                 1         q   4
+                                                Cm,ℓ (q) =                   .
+                                                                (q)∞
+  In Theorem 0.3, we set z1 = z0 = −1 in the Appell-Lerch expression (0.5). For other
+examples where p = 1, 2, 3, or 4, we can set z1 = z0−1 = y n /xn in order to reduce the
+number of theta quotients.
+Theorem 0.6. Let n be a positive integer. For generic x, y ∈ C∗
+                         fn,n+1,n (x, y, q) = gn,n+1,n(x, y, q, y n/xn , xn /y n ).
+Corollary 0.7. Theorem 0.6 with n = 2 yields the Appell-Lerch sum representations of
+Section 4 for the tenth order mock theta functions φ(q), ψ(q), X(q), χ(q).
+Corollary 0.8. Theorem 0.6 with n = 3 yields the Appell-Lerch sum representations of
+Section 4 for the seventh order mock theta functions F0 (q), F1 (q), F2 (q).
+Theorem 0.9. Let n be a positive odd integer. For generic x, y ∈ C∗
+               fn,n+2,n (x, y, q) = gn,n+2,n(x, y, q, y n/xn , xn /y n ) − Θn,2 (x, y, q),
+where
+                          n+1
+                         y 2 J2n,4n J4(n+1),8(n+1) j(y/x, q n+2xy; q 4(n+1) )j(q 2n /x2 y 2; q 8(n+1) )
+     Θn,2 (x, y, q) :=           n2 −3    n−3
+                                                                                                            .
+                             q     2     x 2 j(y n /xn ; q 4n(n+1) )j(−q n+2 x2 , −q n+2 y 2 ; q 4(n+1) )
+Theorem 0.10. Let n be a positive integer with (n, 3) = 1. For generic x, y ∈ C∗
+               fn,n+3,n (x, y, q) = gn,n+3,n(x, y, q, y n/xn , xn /y n ) − Θn,3 (x, y, q),
+8                                  DEAN HICKERSON AND ERIC MORTENSON
+
+where
+                             n+1
+                       q n( 2 ) (−x)(−y)n J3n J3(2n+3) j(y/x; q 3(2n+3) )j(q n +n x, q n +n y; q 2n+3)
+                                                                                         2       2
+
+    Θn,3 (x, y, q) :=            2
+                               J2n+3  j(y n /xn ; q 3n(2n+3) )j(q 3n2 +3n x3 , q 3n2 +3n y 3 ; q 3(2n+3) )
+           n       2                2
+          · j(q 3n +5n+3 x2 y, q 3n +5n+3 xy 2 ; q 3(2n+3) )
+                     2             2                  2
+                                                                                o
+              − q 2n +2n xyj(q 3n +7n+6 x2 y, q 3n +7n+6 xy 2 ; q 3(2n+3) ) .
+
+Theorem 0.11. Let n be a positive odd integer. For generic x, y ∈ C∗
+                   fn,n+4,n (x, y, q) = gn,n+4,n(x, y, q, y n/xn , xn /y n ) − Θn,4 (x, y, q),
+where
+                              2
+                     q −(n +n−3) x−(n−3)/2 y (n+1)/2 j(y/x; q 4(2n+4) )       n                             o
+Θn,4 (x, y, q) := n n 4n(2n+4)                                                 J 4n,16n S 1 − qJ 8n,16n S 2   ,
+                 j(y /x ; q         )j(−q 2n+8 x4 , −q 2n+8 y 4 ; q 4(2n+4) )
+with
+                     j(q 6n+16 x2 y 2, −q 2(2n+4) y/x; q 4(2n+4) )j(q n+4 xy; q 2(2n+4) )
+          S1 : =                               3
+                                              J2(2n+4) J8(2n+4)
+                n
+               · j(−q 2n+8 x2 y 2 , q 2(2n+4) y 2/x2 ; q 4(2n+4) )J4(2n+4)
+                                                                   2
+
+
+                       q n+4 x2 j(−q 6n+16 x2 y 2 ; q 4(2n+4) )j(q 2(2n+4) y/x, −y/x; q 4(2n+4) )2 o
+                     +                                                                              ,
+                                                          J4(2n+4)
+                     j(q 2n+8 x2 y 2 , −y/x; q 4(2n+4) )j(q 3n+8 xy; q 2(2n+4) )
+          S2 : =                                2
+                                             J2(2n+4)
+                   n q n+1 j(−q 2n+8 x2 y 2, q 2(2n+4) y 2/x2 ; q 4(2n+4) )J
+                                                                               8(2n+4)
+               ·
+                                               yJ4(2n+4)
+                                   6n+16 2 2
+                         qxj(−q         x y ; q 4(2n+4) )j(q 4(2n+4) y 2/x2 ; q 8(2n+4) )2 o
+                     +                                                                       .
+                                                    J8(2n+4)
+Corollary 0.12. Theorem 0.11 with n = 3 yields the Appell-Lerch sum representations
+of Section 4 for the fifth order mock theta functions f0 (q), f1 (q), F0 (q), F1 (q).
+   Corollary 0.8 gives a new proof of Hickerson’s identities for the seventh order functions
+[19]. Corollary 0.12 gives a new proof of the mock theta conjectures, which were first
+proved in [18].
+   We note that Theorem 0.6 with n = 1 proves the Appell-Lerch sum representations of
+Section 4 for the sixth order mock theta functions φ(q), ψ(q), ρ(q), σ(q); Theorem 0.9
+with n = 1 proves representations for the three second orders as well as those for the
+eight eighth orders; Theorem 0.10 with n = 1 yields the representations for the fifth order
+mock theta functions ψ0 (q), ψ1 (q), φ0 (q), φ1 (q); Theorem 0.11 with n = 1 can proves the
+representations for the sixth orders λ(q), µ(q), φ (q), ψ (q).
+   HECKE-TYPE DOUBLE SUMS, APPELL-LERCH SUMS, AND MOCK THETA FUNCTIONS (I)                         9
+
+  This paper is organized as follows. In Section 1, we recall from the literature several
+theta function identities and other useful facts. In Section 2, we recall known Appell-Lerch
+sum properties and prove new ones. In Section 3, we write generalized Lambert series,
+which have been used to express mock theta functions, in terms of Appell-Lerch sums.
+We then use this information in Section 4 to write the classical mock theta functions, as
+well as other functions found in the lost notebook, in terms of the Appell-Lerch sums. In
+Section 5, we prove Theorems 0.3 and 0.4. We prove the four subtheorems in Section 6.
+In Section 7, we prove Corollary 0.5, and in Section 8, we prove the corollaries to the four
+subtheorems.
+
+                                           1. Preliminaries
+  We will frequently use the following identities without mention. They easily follow from
+the definitions.
+                                 2J 2            J5             J2           J2 J32
+                 J 0,1 = 2J 1,4 = 2 , J 1,2 = 2 2 2 , J1,2 = 1 , J 1,3 =            ,
+                                  J1            J1 J4           J2           J1 J6
+                                 J1 J4          J1 J62          J 2 J3 J12
+                          J1,4 =       , J1,6 =        , J 1,6 = 2         .
+                                  J2            J2 J3            J1 J4 J6
+Also following from the definitions are the following general identities:
+                                                     n
+                         j(q n x; q) = (−1)n q −( 2 ) x−n j(x; q), n ∈ Z,                     (1.2a)
+                               j(x; q) = j(q/x; q) = −xj(x−1 ; q),                            (1.2b)
+                                 2     2
+            j(−x; q) = J1,2 j(x ; q )/j(x; q) if x is not an integral power of q,             (1.2c)
+                                                         n−1          n
+                      j(x; q) = J1 j(x, qx, . . . , q          x; q       )/Jnn   if n ≥ 1,   (1.2d)
+                               j(x; −q) = j(x; q 2 )j(−qx; q )/J1,4 ,      2
+                                                                                              (1.2e)
+                               m−1
+                                              k                   m
+                                     (−1)k q (2) z k j (−1)m+1 q ( 2 )+mk z m ; q m ,
+                                                                                   2
+                               X
+                   j(z; q) =                                                                  (1.2f)
+                               k=0
+                    j(xn ; q n ) = Jn j(x, ζn x, . . . , ζnn−1x; q n )/J1n if n ≥ 1.          (1.2g)
+Here, ζn an n-th primitive root of unity. We recall the classical partial fraction expansion
+for the reciprocal of Jacobi’s theta product
+                                     X (−1)n q (n+1
+                                                 2 )           J13
+                                                           =         ,                         (1.3)
+                                      n
+                                             1 − qnz         j(z; q)
+where z is not an integral power of q. A convenient form of the Riemann relation for
+theta functions is,
+Proposition 1.1. For generic a, b, c, d ∈ C∗
+          j(ac, a/c, bd, b/d; q) = j(ad, a/d, bc, b/c; q) + b/c · j(ab, a/b, cd, c/d; q).
+10                               DEAN HICKERSON AND ERIC MORTENSON
+
+  We collect several useful results about theta functions in terms of a proposition. Among
+other places, these can be found in [18], [19], and [6].
+Proposition 1.2. For generic x, y, z ∈ C∗
+          j(qx3 ; q 3 ) + xj(q 2 x3 ; q 3 ) = j(−x; q)j(qx2 ; q 2 )/J2 = J1 j(x2 ; q)/j(x; q),         (1.4a)
+         j(x; q)j(y; q) = j(−xy; q 2 )j(−qx−1 y; q 2) − xj(−qxy; q 2 )j(−x−1 y; q 2),                  (1.4b)
+                     j(−x; q)j(y; q) − j(x; q)j(−y; q) = 2xj(x−1 y; q 2)j(qxy; q 2),                   (1.4c)
+                                                                                  2     −1      2
+                     j(−x; q)j(y; q) + j(x; q)j(−y; q) = 2j(xy; q )j(qx y; q ),                        (1.4d)
+                                                           n−1
+                                 J13 j(xz; q)j(xn ; q n ) X xk j(q k xn z; q n )
+                                                         =                       ,                     (1.4e)
+                                   Jn3 j(x; q)j(z; q)      k=0
+                                                               j(q k z; q n )
+
+                       n
+                                       k                n
+                              (−1)k q (2) xk j (−1)n q ( 2 )+kn xn y; q n(n+1) j − q 1−k x−1 y; q n+1 . (1.4f)
+                       X
+                 n
+                                                                                                    
+ j(x; q)j(y; q ) =
+                        k=0
+
+Identity (1.4a) is the quintuple product identity.
+  The next proposition follows immediately from [7, Lemma 2] see also [18, Theorem 1.7].
+Proposition 1.3. Let C be a nonzero complex number, and let n be a nonnegative integer.
+Suppose that F (z) is analytic for z 6= 0 and satisfies F (qz) = Cz −n F (z). Then either
+F (z) has exactly n zeros in the annulus |q| < |z| ≤ 1 or F (z) = 0 for all z.
+   The next two propositions involve computing residues. Because the proofs are straight-
+forward, they have been omitted. The first proposition is [18, Theorem 1.3].
+Proposition 1.4. Define G(z) := 1/j(βz b ; q m ). G(z) is meromorphic for z 6= 0 with sim-
+                                                                                      k
+ple poles at points z0 such that z0b = q km /β. The residue at such z0 is (−1)k+1 q m(2) z0 /bJm
+                                                                                               3
+                                                                                                 .
+Proposition 1.5. Define
+                                                     X (−1)m q (m2 ) z m
+                                         G(x) :=                              .                         (1.5)
+                                                      m
+                                                           1 − q m−1 βx−p
+G(x) is meromorphic with simple poles at points x0 such that xp0 = βq k . The residue at
+                         k+1
+such an x0 is (−1)k+1 q ( 2 ) z k+1 x0 /p.
+     We present three identities, which appear to be new.
+Proposition 1.6. For ω a primitive cube root of unity
+         1
+            · j(ω 2y; q)j(qy; q 3)j(y; q 3) = ωyj(y; q 3)j(q 2 y 2 ; q 3 ) + j(qy; q 3)j(y 2; q 3 ).    (1.6)
+         J3
+Proof of Proposition 1.6. We use (1.2f) to write
+                     j(ω 2 y; q) = j(q 3 y 3; q 9 ) − ω 2 yj(q 6y 3 ; q 9) + ωqy 2j(q 9 y 3 ; q 9 ).    (1.7)
+    HECKE-TYPE DOUBLE SUMS, APPELL-LERCH SUMS, AND MOCK THETA FUNCTIONS (I)                                      11
+
+In the middle term use −ω 2 = 1 + ω, to obtain
+       j(ω 2 y; q) = j(q 3 y 3 ; q 9 ) + yj(q 6y 3 ; q 9 ) + ωy j(q 6 y 3 ; q 9 ) + qyj(q 9y 3 ; q 9 ) .
+                                                                                                   
+                                                                                                              (1.8)
+Each bracketed term can be rewritten using the quintuple product identity (1.4a), result-
+ing in
+                                   J3 j(y 2 ; q 3 )      J3j(q 2 y 2; q 3 )
+                      j(ω 2y; q) =                  + ωy                    .          
+                                    j(y; q 3)              j(qy; q 3)
+Proposition 1.7. For x ∈ C∗
+              J 5,20 j(−q 6 x; q 30 )j(−q 3 x3 ; q 30 )−q 2 x2 J 30,120 j(−qx; q 5 )j(−q 27 x2 , q 30 )       (1.9)
+                                                                2 2     20        6   15      12 2      60
+                                                         = j(q x ; q )j(q x; q )j(q x ; q ),
+              J10,20 j(q 21 x; q 30 )j(−q 3 x3 ; q 30 )+qxJ15,30 j(q 2 x2 ; q 20 )j(−q 27 x2 ; q 30 )        (1.10)
+                                                         = j(−qx; q 5 )j(q 6 x; q 15 )j(q 12 x2 ; q 60 ).
+Proof of Proposition 1.7. We prove the first identity and omit the proof of the second,
+which is similar. Denote by f (x) the difference between the left and right hand sides of
+(1.9). For fixed q, all three terms are analytic for x 6= 0. It is straightforward to verify
+that f (x) satisfies the functional equation f (q 30 x) = q −105 x−10 f (x). By Proposition 1.3,
+f (x) has either exactly ten zeros in the annulus |q|30 < |x| < 1 or it equals zero for all x.
+But there are at least eleven such values of x for which at least one of the terms in f (x)
+vanishes: ±q 3/2 , −q 4 , q 9 , −q 14 , ±q 33/2 , q 19 , ±q 24 , q 29 . Verifying f (x) vanishes for each of
+these just involves proving that the remaining two theta products sum to zero, which is
+easy.                                                                                                     
+   We finish with Hartog’s Theorem:
+Theorem 1.8. [15, p. 7] A holomorphic function on the complement of a point in an
+open set U ⊂ Cn (n > 1) extends to a holomorphic function in all of U.
+                     2. Properties of the Appell-Lerch sum m(x, q, z)
+   Changing r to r + 1 in (0.2) gives another useful form for m(x, q, z):
+                                                           r+1
+                                         −z X (−1)r q ( 2 ) z r
+                          m(x, q, z) =                          .                                             (2.1)
+                                       j(z; q) r     1 − q r xz
+  The Appell-Lerch sum m(x, q, z) satisfies several functional equations and identities,
+which we collect in the form of a proposition. The proofs are straightforward and will be
+omitted. A list of Appell-Lerch sum properties with proofs can be found in [31].
+Proposition 2.1. For generic x, z ∈ C∗
+                                            m(x, q, z) = m(x, q, qz),                                        (2.2a)
+                                                          −1       −1        −1
+                                       m(x, q, z) = x m(x , q, z ),                                          (2.2b)
+                                        m(qx, q, z) = 1 − xm(x, q, z),                                       (2.2c)
+12                         DEAN HICKERSON AND ERIC MORTENSON
+
+                              m(x, q, z) = 1 − q −1 xm(q −1 x, q, z),                       (2.2d)
+                              m(x, q, z) = x−1 − x−1 m(qx, q, z).                           (2.2e)
+     Some simple evaluations of the Appell-Lerch sum follow.
+Corollary 2.2. We have
+                                       m(q, q 2 , −1) = 1/2,                                 (2.3)
+                                                  2
+                                       m(−1, q , q) = 0.                                     (2.4)
+Proof of Corollary 2.2. The first identity is a straightforward application of identities
+(2.2b) and (2.2e); the second is a straightforward consequence of identities (2.2b) and
+(2.2a).                                                                                
+   We now introduce a heuristic point of view which will guide our further study of
+m(x, q, z). This heuristic leads us to new Appell-Lerch sum properties such as Theo-
+rem 2.5 and also guides us to the Appell-Lerch sum expressions of Theorems 0.3 and 0.4.
+If we iterate (2.2d), we obtain
+                   m(x, q, z) = 1 − q −1 xm(q −1 x, q, z)
+                              = 1 − q −1 x + q −3 x2 m(q −2 x, q, z)
+                              = 1 − q −1 x + q −3 x2 − q −6 x3 m(q −3 x, q, z)
+                               ..
+                                .
+                              ∼ 1 − q −1 x + q −3 x2 − q −6 x3 + q −10 x4 − . . . ;
+that is,
+                                                                  r+1
+                                                       (−1)r q −( 2 ) xr .
+                                                 X
+                                m(x, q, z) ∼                                                 (2.5)
+                                                 r≥0
+Of course, we cannot use an equal sign here, since the infinite series on the right diverges
+for |q| < 1. However, it is often useful to think of m(x, q, z) as a partial theta series with
+q replaced by q −1 .
+   Roughly speaking, we may think of “∼” as congruence ‘mod theta’. For example, since
+the series (2.5) does not depend on z, we may write
+                                    m(x, q, z0 ) ∼ m(x, q, z1 ).                             (2.6)
+In fact, the difference between these two quantities is a theta function, as we see in the
+following well-known theorem.
+Theorem 2.3. For generic x, z0 , z1 ∈ C∗
+                                                    z0 J13 j(z1 /z0 ; q)j(xz0 z1 ; q)
+                 m(x, q, z1 ) − m(x, q, z0 ) =                                          .    (2.7)
+                                                 j(z0 ; q)j(z1 ; q)j(xz0 ; q)j(xz1 ; q)
+Corollary 2.4. For generic x, z ∈ C∗
+                                 m(x, q, z) = m(x, q, x−1 z −1 ).                            (2.8)
+

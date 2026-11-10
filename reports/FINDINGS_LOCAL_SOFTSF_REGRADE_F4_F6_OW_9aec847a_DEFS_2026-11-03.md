@@ -1,0 +1,23 @@
+# FINDINGS — Local Soft SF — RE-GRADE F4/F5/F6 vs Owner Soft SF as Written defs OW 9aec847a — 2026-11-03
+REPORTS ONLY. No CERT. Tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 read-only (tip_touched NO). Local/Bridge C scope; video EXCLUDED.
+Inputs: OWNER_WRITE_CAT_A_DEFINITIONS_C_V35_PI_FAST_RG_HQCC_2026-11-03.md sha 9aec847a7ccb8a815255c1d3c645367fbf12205a079085ddf40f7975cf8e095f; prior Local FINDINGS 0a1c4add… and 733db7de… (not rewritten); PP-FINDINGS-CATA_FOOLPROOF sha 4e70be9ad36c29149510620bb8749e9265759f55cf69f093693adb1f9fbefeae §5/§5b absorbed.
+
+## F4 Π_fast — FALSE as stated (PROVED) under Owner def; factor P0 READY
+Owner §2: Ad_X(Y)=[X,Y] (commutator, i.e. ad), ζ=exp(2πi/M), M odd, t discrete clock, ∧ = discrete exterior boundary form.
+Lemma LOC-F4-L2 (proof): for X diagonalizable with eigenvalues λ_i, σ(ad_X)={λ_i−λ_j}, closed under negation. If P0 commutes with ad_X (P0 removes only the identity/central mode, which ad_X annihilates and whose complement ad_X preserves), then σ(P0 ad_X) on range(P0) contains each nonzero λ_i−λ_j together with its negative, so σ ⊄ {0,1} unless ad_X|range(P0)=0, i.e. Π_fast=0. For X nilpotent nonzero, P0 ad_X is nilpotent nonzero, hence not idempotent. Scalar (ζ^t−1)≠0 (M odd, t≢0 mod M) rescales the spectrum and does not help. ∎
+Numeric check, M_2(C), M=3, t=1, X=(ζ−1)·X0 (name, idempotent?, eig, commutes): [('diag(1,-1)', False, [0j, (-3+1.7321j), (3-1.7321j), 0j], True), ('E12', False, [0j, 0j, 0j, 0j], True), ('generic', False, [(7.9373-4.5826j), (-7.9373+4.5826j), 0j, (-0+0j)], True)]
+Also matches PP CX2 (Ad_{diag(1,−1)} model). Domain FLAG: if P0 averages over t, mean_t ζ^t = 0 over a full period, so P0[(ζ^t−1)ad_∧ Y] = ζ^t ad_∧ Y — maps static Y to t-dependent output; Π_fast∘Π_fast needs ad_∧ defined on t-dependent inputs (domain not Written). The "extended exceptional algebra matrix block" carrying ∧ has no dimension/basis Written.
+Status: P0 idempotent σ={0,1} READY (LOC-F4-L1). Corpus claim "Π_fast idempotent, spectrum {0,1}" FALSE under Owner def (LOC-F4-L2), barring degenerate Π_fast=0. Absorbs PP minor FLAG: earlier "tubulin Π rank-13" corrected to rank 8 (PROOF_22_TO_13); Codex Cesàro Π_fast is a different projector — two definitions conflict; Owner pick needed.
+
+## F5 T_3=539 — CONFIRM as Written definition (nothing to prove); "stabilization" wording RETIRED
+Owner §8: T_3=539 = fixed hash budget / execution window, not orbit stopping time. Agrees with Cat A freeze (nov-dec ADVANCEMENTS L131: 539 = hash depth 18+521). PP FLAG absorbed: earlier "FALSE" relabelled FALSE-under-stopping-time-reading; that reading is now ruled out by Owner. Owner §5 (orbits of Φ unbounded over Z_3) agrees with PP item 7; so corpus phrase "exact topological orbits under T_3=539 stabilization" is not a theorem — lift must read "539-step execution budget". Owner §6: Ω≡0 mod 539 cancellation guarantee FALSE (agrees PP item 8). Status: DEFINITION Written-by-Owner / no Cat A theorem.
+
+## F6 C outside V_35 / polar bounds — defs PRESENT; claim still ABSENT-with-rigor (invent-pending)
+Owner §1 now defines C (non-Archimedean vector-valued boundary correction, SL_2(Z) ↔ 3-adic), V_35 (finite-dim span of Siegel forms / vector-valued lifts, ray-class over Q(√35)), Polar (Mellin–Barnes residue-match system + local positivity bounds). Gaps blocking proof: (a) no basis, weight, level or dimension for V_35; (b) no explicit formula for C or its "leading component"; (c) polar matrix system and positivity bounds not Written as equations; (d) relation V_35 ↔ tip V₄₂ (tip L152–159, L256) not stated — PP confirms tip has V₄₂ only, 35 only as coefficient 35m² (L76). Tip P5b (L416) cocycle-dim still [[to prove]]; Owner asserts positivity bounds are independent of cocycle vanishing, but no proof on disk. Scope FLAG: C as 3-adic/non-Archimedean object straddles Local (local modular) vs Non Local lane; Local grades only the SL_2(Z)/Q(√35) side.
+Status: ABSENT-with-rigor for the theorem; definitions Owner-Written; invented pending mathematical proof.
+
+## F1 / INTAKE (PP §5 absorb)
+F1 lift restricted to Lemma 5 E hypotheses (M=2^k+1>Σ, C={0,1}, unit coeffs); Owner §4 widens M to any odd M≥3 — widened claim NOT covered by Lemma 5 E (slice-checkability for odd M≤Σ ABSENT). INTAKE cite updated: d75a0a3a… deprecated → 074f703283420dc9757c7dc0ca3efaaa1957f4f5f37022d60292c8f80b96870b (Owner §9; on-disk MATCH).
+
+## Board
+F1 READY-restricted (widened odd M ABSENT) · F2 READY · F3 READY · F4 FALSE as stated (P0 READY) · F5 DEFINITION (no theorem) · F6 ABSENT-with-rigor (defs present). No CERT; tip untouched.

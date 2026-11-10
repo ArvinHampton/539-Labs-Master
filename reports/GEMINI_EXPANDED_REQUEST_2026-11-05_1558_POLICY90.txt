@@ -1,0 +1,551 @@
+PROJECT QUANTUM COMP — EXPANDED GEMINI REQUEST (UPDATED COVER / POLICY 15:58)
+Compiled update: 2026-11-05 16:02:38 CST America/Chicago
+Base payload intakes: reused verbatim from GEMINI_EXPANDED_REQUEST_2026-11-05_1554.txt (agent sections not rewritten).
+Status: REQUEST DRAFT FOR OWNER/PARENT TRANSFER — not validated findings; not CERT.
+
+********************************************************************************
+CURRENT HARD STOP (REPLACES 80% AS CURRENT INSTRUCTION)
+********************************************************************************
+Owner DIRECT ~15:58 CST: **90% weekly full stop REPLACES 80%**.
+If observed authoritative weekly usage **≥90%**: IMMEDIATELY STOP ALL computational research and ALL active jobs (docs, audits, distribution, reviews, finalization); notify Owner; latch until explicit Owner release even after reset; no exceptions.
+Last parent checkpoint cited at this update: **~77.1%** (not triggered).
+Any **80%** stop language appearing later in reused historical intake text or older preamble fragments is **SUPERSEDED as CURRENT policy** and is retained only as historical quote inside verbatim agent intakes.
+
+********************************************************************************
+FILE DUTIES vs FILE VALIDATION (Owner 15:58)
+********************************************************************************
+- File DUTIES allowed: delivery / inventory / review logistics / ordinary question compilation.
+- File-level VALIDATION STOPPED: no hash checks, no completeness validation, no tampering/source-consistency checks by agents treating those as the “validation” job.
+- Mathematical VALIDATION = proofs in the 12 submissions (logic, assumptions, derivations, conclusions rigor), including Eigen rigorous height bound for the RREF/kernel — candidate until independently proved; invent HOLD / No CERT / tip lock stand.
+- Origin waiver 15:49 STANDS (Owner-attested Gemini authorship). Waiver ≠ math certification.
+
+********************************************************************************
+WHAT WE NEED (unchanged ask structure; CURRENT governance above)
+********************************************************************************
+For EACH of B1–B12 verbatim submissions below, plus CROSS-LANE BRIDGE and GOVERNANCE:
+(1) Precise definitions of key terms/domains/units/maps (PROPOSED DEFINITION if new).
+(2) Verifications you can actually perform with method/data/code/results; list what you did NOT run.
+(3) Formal proofs you offer or challenges: assumptions, all steps, counterexamples, citations — NO invented proofs.
+(4) Open problems/needed data — especially local–nonlocal geometric bridge; and Eigen radius/height-bound asks exactly as in B10/eigen.md (provable height bound for RREF entries from N36 entry sizes and rank 503; primes needed; define “height of the RREF”).
+ALSO: your OWN clarifying questions back, structured 12 sections + cross-lane + governance.
+You cannot access our /workspace paths — use only text in this payload.
+
+********************************************************************************
+STATUS BOOKKEEPING (not a claim of finished review collection)
+********************************************************************************
+- Parent delivered 12/12 formal review requests (evidence log FORMAL_REVIEW_NOTICES_ACTUALLY_SENT_1554.json). Answers partially returned; compilation is ordinary Q collection, not file validation.
+- Parent delivered 13 policy/redirect notices (PP/primaries/helpers/remaining/MainBot) for the 15:58 rules.
+- FULL21 distribution copies: 252 rows recorded in prior FULL21_MANIFEST_20261105-1554 (not rechecked this update).
+- This executor does not send to Gemini; parent Gemini access is separate; one specific 15:54 expanded-send permission is not a blanket.
+
+=== BEGIN REUSED BODY FROM 1554 (intakes verbatim; historical 80% strings inside intakes = superseded as CURRENT stop rule) ===
+
+=== B1. Local Path — source local.md — SHA256 d1488dffda8c8cd9bb9dc705382717d079db4f0188b3d5939d60c3facfea6f5a ===
+================================================================================
+
+----- BEGIN VERBATIM local.md -----
+
+# Local Path — Gemini request intake (fresh, essentials) — 2026-11-05 ~15:13 CST
+
+Lane: Bridge C A1→Ξ→RTA, local modular only. Residual≠Resonant. invent HOLD. tip Soft SF LOCK `7cddb188…` tip_touched NO. No CERT.
+Standing: full SM recovery = objective not proof (OD `6237cc71…`); Gemini output = proposed until independently verified (OD `39211815…` + file-loop); weekly usage ≥80% STOP (OD `51ff1677…`; checkpoint ~62% — not triggered). Lock `96f8d42e…` Decision 4: Kronecker/SU(3)/four-force physical projections stay PURGED (SM directive does not lift).
+
+## Canonical T3 (supply if used; Written production lock)
+For n∈ℕ₀: T3(0)=0; if n≡0 (mod 3) then n//3; if n≡1 then (4n+2)//3; if n≡2 then (2n+1)//3. Equiv. T3(3k)=k, T3(3k+1)=4k+2, T3(3k+2)=2k+1. Not the single formula (4n+2)//3 on all n; not literal compendium T₃/HQCC (DEFECT as stated). Source: T3_Production_Lock_ePrint_Matches_Core_2026-09-01.md sha `5b9fcd2d…`.
+
+## Open questions / proofs pursuing
+1. **Cand-1⁺ (OPEN/PARTIAL):** ∀n≥1, T3-orbit enters {1,2}. Proved: ℕ₀ claim REFUTED (T3(0)=0); all starts ≤10⁷ converge; on ≡1, T increases; run lengths = v₃(n+2) can be arbitrary — no global proof. Soft SF e7648e07…; PP CONFIRM f1acba95…. Ask: Collatz-style descent / Lyapunov / covering-system proof or counterexample on ℕ≥1 only.
+2. **R_c≈1.5954:** Appell–Lerch matching UNDERIVED (numeric √(2/0.7858)≠provenance). Need exact equation, domains, inputs, uniqueness, error. Do not invent Λ₀ theory.
+3. **QI:** existence into ℍ²⊂ℍ¹¹ standard; specific F/(λ,ε) ABSENT. QI cannot pin R_c.
+4. **Israel [K]=0** as Local GR application: ABSENT (classical Israel elsewhere ≠ Local map).
+5. **Bridge C → SM recovery maps:** gauge SU(3)×SU(2)×U(1)+anomaly cancellation, field content, couplings, SSB, empirical SM tests — Local SM-G1…G9 ABSENT (Soft SF 9cf795a8…; N1 AMEND abbc91c0…). Operative Local S² topology ABSENT (lexical SM gloss only).
+
+## Definitions still needed (do not invent; propose candidates only)
+Appell–Lerch R_c equation; QI F/(λ,ε); Local Israel [K]=0 applicability; any Local SM gauge/matter map that respects Residual≠Resonant and Lock Decision 4 purge.
+
+## Proven vs open (do not re-litigate)
+Proved/fenced: Haar70 identity; BT↛ℍⁿ isometry obstruction; Canonical T3 finite arithmetic; literal T₃ DEFECT; Cand-1 ℕ₀ REFUTED. Conditional: residual D₁/S_eff locks. Open: Cand-1⁺ global; R_c; continuum/Tate–Gelfand; BH D1; SM recovery.
+
+## Exact Gemini tasks (answerable; return file)
+A. Proof sketch or counterexample for Cand-1⁺ on ℕ≥1 under Canonical T3 above; state lemmas vs conjectures.
+B. Candidate Written-style Appell–Lerch matching equation for R_c with domains/inputs/error — labeled PROPOSED only.
+C. Checklist: which SM-G gaps can be filled by literature citations vs require new Local definitions (no four-force projection reopen).
+
+----- END VERBATIM local.md -----
+
+
+================================================================================
+=== B2. Non Local Path — source nonlocal.md — SHA256 4e6f5408598fc8078b49f24ee18c3ab29b09173f747808d8f928710dc704fa19 ===
+================================================================================
+
+----- BEGIN VERBATIM nonlocal.md -----
+
+# Non Local Path — Gemini request intake (2026-11-05)
+Status: internal input. Category B, no CERT, no certified prediction. Definitions are not to be fabricated or adopted.
+
+## Proven elementary facts (existing NL work)
+- Supplied map T₃^alt: ν₃(3x±1)=0, so positive nonzero integer orbits eventually grow (1→4→13…, 2→5→14…). Bounded 539-step termination is false for this map.
+- Exact scaled isometry from the branching tree into ℍⁿ: ruled out (NL B2).
+- No minimum positive 3-adic norm (A1). For the vector max norm on ℤ₃⁴, |x|₃^(ν−1) is absolutely Haar-integrable iff Re ν > −3 (A2). B1 regulator bound, with its units erratum.
+- T3_ref(4880) reaches {1,2} in 14 steps; T^539(4880)=2.
+
+## Open items
+1. **Maps.** The supplied map T₃^alt is x/3 for residue 0, (3x+1)/3^ν₃(3x+1) for residue 1, and (3x−1)/3^ν₃(3x−1) for residue 2. The canonical floor map is T3_ref(n): n//3, (4n+2)//3, (2n+1)//3 for n ≡ 0, 1, 2 (mod 3).
+   - *Gemini:* candidate proof, or counterexample, that every n ≥ 1 reaches {1,2}. Not proved; there is no 539-step guarantee.
+   - *Author:* the ℤ₃ extension, the Haar-preservation statement, the shift-conjugacy definition.
+2. **Quasi-isometric embedding.**
+   - *Gemini:* literature lookup for quasi-isometric embeddings of regular trees into ℍⁿ.
+   - *Author:* explicit F, the curvature of ℍ¹¹, and λ, ε.
+3. **R_c ≈ 1.5954.** √(2/0.7858) ≈ 1.595361 is numerical proximity, not a derivation.
+   - *Gemini:* bibliographic reconstruction of Appell–Lerch normalizations, labelled as candidates only.
+   - *Author:* the operator, the sum and its parameters, the normalization, the units.
+4. **Metrics, 11D action, junction, GR and full SM recovery.** Not present in the bounded inspected passages. These are objectives, not results.
+   - Needed: compactification, the SU(3)×SU(2)×U(1) mechanism, chiral matter, anomalies, Higgs/EWSB, Yukawas/couplings, the GR limit, and tests.
+   - *Author inputs required.*
+   - *Gemini:* source lookup only.
+
+## Loop
+File to Gemini for footwork → output file back → NL independent verification → repeat below threshold. At weekly usage ≥80%, stop research/new work; safe finalization and final reports only.
+
+## Source pins
+- Round-2 questions: 06c4dce1639a740ba40dc1ca6727cfbd878b59e9f71826b80e1c9953377ce918
+- SM scope correction: a4540871469a03292d92634f6205c0bd4c1e5918de9f78152163e5b1b981b8f0
+- Catalog: 5b40ee12c9731d68e06a6b590229de49660c57813a901dcaed26d7ab2f4d2468
+- B1 erratum: 8c06937d0cbcc2446288fb67cc63461b4456b9d42c03ac0b285ffe46cbe492ff
+- A/B review: 96f810645c6356c30b5edd2990da3f16657f866f56af22ff8cdbfe8a1007b0a6
+
+----- END VERBATIM nonlocal.md -----
+
+
+================================================================================
+=== B3. Auditor — source auditor.md — SHA256 bc10f9cc9579dcfee797bf0832884b2942b18e215ceee51a140e469e2f269728 ===
+================================================================================
+
+----- BEGIN VERBATIM auditor.md -----
+
+# Auditor — Gemini FILE LOOP intake — 2026-11-05 ~15:16 CST America/Chicago
+Lane: Auditor / Soft SF hash keeper (documentary only). ≤400 words. Proposed tasks; Gemini output = candidate until independent verify. Auditor owns no math; no external Gemini send by this file. invent HOLD STANDS; tip LOCK `7cddb188…` tip_touched NO; No CERT. Last relayed usage 60.9% (<80% STOP).
+
+## Pins (reuse; do not redo)
+- File-loop OD `a29f87d9…`; Gemini ask-then-verify OD `39211815…` + index `b1400fd1…` (Auditor CONFIRM `1d87321a…`)
+- Full-SM objective `6237cc71…` (CONFIRM `f638eec7…`); usage-80 STOP `51ff1677…` (CONFIRM `f19ca2b1…`); PRIMARY `bcc3ced0…`
+- Eigen SM defect under PP `9b0ba17c…` (Auditor WO `0822d3c7…`); PR2 SM classification addendum `595f27ef…`
+- Lock `96f8d42e…` §4 purge NOT lifted
+
+## Known (documentary records, hash-level only)
+- Hash MATCH ≠ proof, ≠ SM recovery, ≠ Gemini access/savings.
+- Several directive/ledger JSONs lack `.sha256` sidecars (NO-SIDECAR, e.g. delivery ledger `c048d40d…`).
+- Paper sidecars: candidate-count editorial `25a63af4…` recorded 22 MISMATCH / 3 NO-SIDECAR among 25 paper sidecars (stale sidecars, not content verdicts).
+- Full-corpus audit remains OPEN.
+
+## Open problems in Auditor lane (Gemini may help with tooling/footwork only)
+1. Provenance format: candidate schema for recording each Gemini exchange (exact prompt, inputs, response, model/date, file hash, verifier, label established/conditional/proposed/unsupported/refuted) so verification is reproducible.
+2. Stale-sidecar triage: a checklist distinguishing "file changed after sidecar" vs "sidecar wrong" vs "intended amend" without rewriting subjects.
+3. Mirror-consistency check plan: detect divergent copies of one basename across bridges/* and reports/* (exclusive-create, read-only).
+4. NO-SIDECAR policy draft: which artifact classes (JSON ledgers, SHA256SUMS manifests) should carry sidecars — proposal only, Owner/coordinator decides.
+
+## Needed definitions
+- What counts as an "output file back" from Gemini (path + sha256 + provenance header) for Soft SF Write-only recording.
+- Label vocabulary mapping Gemini candidate labels to existing Soft SF records.
+
+## Not for Gemini
+No CERT, no verdict changes, no tip edits, no physics/math claims from Auditor. Verification of Gemini outputs is done by owning agents; Auditor records hashes only.
+
+----- END VERBATIM auditor.md -----
+
+
+================================================================================
+=== B4. Professor Proof — source professor-proof.md — SHA256 4498c0cccdee31c5eb3a9985cd5cd42c27a0945a411b460e9b25e58e330523bb ===
+================================================================================
+
+----- BEGIN VERBATIM professor-proof.md -----
+
+# Professor Proof: Gemini request intake (2026-11-05, 15:15 CST)
+Gemini output is a candidate only. PP verifies it independently. No CERT. The tip 7cddb188… is untouched.
+
+## Proof targets: minimal SM (what "full SM recovery" requires)
+1. **Gauge group.** Define a gauge group G ⊇ SU(3)×SU(2)×U(1)_Y and give an explicit embedding into the 11D / 3-adic structure (manifold, bundle and connection).
+2. **Fermions.** Give the fermion content: 3 generations, chiral representations and hypercharges. Prove anomaly cancellation for that content.
+3. **Higgs and EWSB.** Specify a Higgs doublet and potential. Derive electroweak symmetry breaking down to U(1)_em.
+4. **Mass matrices.** Replace the defective mass-matrix ansatz in theorems/unification-proof.txt L98-104.
+   - The current ansatz is M_sector = c·B. That forces CKM to be a signed permutation with J=0.
+   - B also has a negative eigenvalue.
+   - Source: Eigen 2fe0e6b0, verified by PP 9b0ba17c.
+   - Target: sector-distinct Yukawa matrices that give non-trivial CKM and PMNS.
+5. **Couplings and running.** Derive the coupling values and the RG running. Give a low-energy limit to compare with tested SM data (Tier E: dataset, observable and tolerance).
+
+## Beyond-SM targets (separate from the above)
+6. Gravity sector.
+7. R_c, the dark sector and neutrino-mass origin. No four-force "3-adic projection": Lock 96f8d42e §4 purge stands.
+
+## Gravity and geometry obligations that are still open
+- **R_c.** B's value of 1.59543 and the approximation √(2/Λ₀) = 1.595361 are both UNDERIVED. Need an explicit Appell–Lerch expression, an operator, and an error bound.
+- **Junction.** Need the ambient manifold, the induced metric, a K_ij definition and an existence proof. The current "9-core hypersurface" between a 5D and a 4D region is inconsistent. [K]=0 is only the shell-free continuity condition.
+- **Quasi-isometric embedding.** Need an explicit F: T₃ → ℍ^11 with its constants (λ, ε), and the link (if any) to R_c.
+
+## Map and number theory
+- **T3_ref.** Prove or refute that every orbit from n ≥ 1 reaches {1,2}. Status: Collatz-type; holds for n ≤ 10⁷ (Local e7648e07); OPEN.
+- Haar preservation and ternary shift conjugacy for T3_ref are undefined. That needs an extension of T3_ref to ℤ₃.
+
+## Established
+- The tripod argument: no isometric embedding of the tree into ℍⁿ.
+- T₃^alt diverges.
+- T3_ref is not injective: T(2) = T(3) = 1.
+- n=0 is a fixed point.
+- The Haar identity, for Re ν > −3.
+- Source pins: A d5b1aae5, B 9c6f83da, PP 159aaabf.
+
+----- END VERBATIM professor-proof.md -----
+
+
+================================================================================
+=== B5. 539 Labs Ops — source labs539.md — SHA256 e1f37867ad816bf4365e33fb61148c2bf7ce2fa7216907f9fadd4ff42d5256d0 ===
+================================================================================
+
+----- BEGIN VERBATIM labs539.md -----
+
+# 539 Labs Ops — Gemini request intake (2026-11-05 ~15:13 CST)
+Agent: 539 Labs Ops. Lane: HQH/ALU/CS-crypto. Status: proposed tasks for Gemini; outputs are candidates until independent verify. No CERT. Tip 7cddb188 untouched. Weekly usage check at write: 62.3% (<80% stop).
+
+## Minimal definitions Gemini needs
+- **T3_ref (floor form):** T(n)=n/3 if n≡0 (mod 3); else (3n+1)/2⌊ν₂(3n+1)⌋ when residual-1; residual-2 uses the locked floor branch (see GR axis-2 a505726e… / CS catalog 89278efa…). Do not use the Gemini-compendium T₃ (RECEIVED 49849cae… L26) — its residual-1/2 branches never divide by 3.
+- **HQH-539-512:** concrete SHA3 sandwich (539,512,512); Option A / REF FREEZE. Not “built entirely on Syracuse reversal.”
+- **Crit.3:** unmet (Close B). Pre→Π near-circular under Im(SHA3) collapse (d14a50d7…). Hardness not established.
+- **LQH ALU:** Draft-1 SV/Verilator skeleton only; no hardware; no T3 limb steps.
+
+## Proven / checkable (reuse; do not re-ask)
+- Compendium T₃ diverges: 1→4→13→40→121… (60af7a5a…, 7882d6bf…).
+- T3_ref^539(4880)=2 via 2-cycle {1,2}; 4880→1 in 14 steps (a505726e…).
+- T3_ref not injective: T(2)=T(3)=1, T(1)=T(6)=2.
+- T(0)=0 fixed point outside {1,2}.
+
+## Open questions / proof targets for Gemini (narrow)
+1. Proof or counterexample class: ∀n≥1 ∃k T3_ref^k(n)∈{1,2}; state domain for 0 (PR-1).
+2. Haar μ on ℤ₃ with μ(T⁻¹A)=μ(A) for floor T3_ref, plus any conjugacy claimed in B (PR-2) — candidate sketch only.
+3. Draft reduction outline (not a proof) from H_ref Pre/SPR/Col at (539,512,512) to SHA3-512 stating domain D (OL-3) and D_M, covering C1–C4 especially C2 on Im(SHA3). Label candidate. We will not treat as Crit.3 complete (PR-3).
+4. Suggested corrected wording for B§IV: drop “security proof,” “permutation,” “optimized accelerator” — replace with record-accurate language (7882d6bf…).
+5. Definitional choice list only: how to phrase “539” as max budget vs fixed count without inventing a theorem.
+
+## Needed definitions (ask Gemini to propose; we verify)
+- Explicit floor-branch residual-2 formula matching T3_ref lock (cite source only; no silent lock adopt).
+- Precise statement of D vs Im(SHA3) for Pre→Π without circularity.
+
+## Unresolved (do not invent)
+Crit.3/OL-9 invent-blocked; OL-11 external; SM recovery (6237cc71…) out of Ops lane for ALU/security; no PQ argument on record.
+
+## Source pins
+OW 865d3a37…; SM 6237cc71…; usage-stop 51ff1677…; Gemini-verify 39211815…; CS 89278efa…; GR a505726e…; Gemini map 60af7a5a…; Round2 7882d6bf…; Crit3 stack 70091747…/cc95ceb9…/d14a50d7….
+
+----- END VERBATIM labs539.md -----
+
+
+================================================================================
+=== B6. Math Research 1 — source math1.md — SHA256 ccbb3f47bd0116d975907d48dfc7bec8b223853ce663d0a770204668722c8b64 ===
+================================================================================
+
+----- BEGIN VERBATIM math1.md -----
+
+# Math Research 1 — Gemini request intake (FILE LOOP) — 2026-11-05 ~15:13 CST
+Agent: Math Research 1 (MR1). Soft SF Write-only / invent HOLD. tip LOCK `7cddb188…` tip_touched NO. No CERT. Candidate Gemini output ≠ proof/adopted definition. Do not invent missing Appell sums or SM maps.
+
+## Source pins (hashes on disk; Soft SF-verified)
+- invent HOLD `1fadc632…` · PRIMARY `bcc3ced0…` · OW_SM full-SM OBJECTIVE `6237cc71…` · OW_80 ≥80% STOP `51ff1677…` · OW_GEM ask-then-verify `39211815…`
+- Appell/Rc Soft SF `46beb56b…` · Tate/Kummer Soft SF `005fbd81…` · O1–O4 ROLLUP `d29a5ed6…` · D1–D6 `293db339…` · Round2 A/B `6e400809…`
+- Owner A `d5b1aae5…` · B `9c6f83da…` (B NOT adopted OWNER_WRITE)
+
+## Proven / Soft SF-established (citation inventory)
+- Classical neighbors PRESENT (modular/mock/Hecke/Hilbert ℚ(√35)/Appell-Lerch lit/Tate local-zeta/Gelfand–Graev/Kummer/Kronecker limit|symbol).
+- Kronecker-filter / four-forces 3-adic projections: PURGED retained; Soft SF will not reintroduce.
+- tip Soft SF SM-string scan: empty for 1.5954 / Appell→Rc derivation.
+
+## Open / ABSENT (do not invent)
+1. Written Appell–Lerch (or other) evaluation → R_c ≈ 1.5954 / 1.59543… (B§III proposed; Soft SF ABSENT/OPEN blocker).
+2. Soft SF-checkable Λ₀ ≈ 0.7858 Owner path+hash (evidence request only).
+3. Tate–Gelfand continuum-limit / pairing theorem tying residual-C to continuum (ABSENT).
+4. Maps residual-C / Ξ / Fricke W₇ / Γ₀(49) → SM gauge SU(3)×SU(2)×U(1), field content, Yukawa/CKM, couplings (ABSENT under OW_SM OBJECTIVE ≠ proof).
+5. Project Ξ identification / Petersson formula; Hecke-on-C/V₃₅; positive W₇ law for C (O1/D1/D2 ABSENT/OPEN).
+
+## Concise Gemini tasks (answerable; narrow)
+G1. From classical Appell–Lerch defs only (Zwegers; Hickerson–Mortenson): list known closed evaluations; state whether any equals ≈1.5954 or √(2/0.7858); if none, say ABSENT—do not invent a project sum.
+G2. Distinguish Kronecker limit formula vs Kronecker symbol vs “Kronecker filter”; confirm no standard theorem “filter bypasses Kummer crisis.”
+G3. Cite standard references for Tate local zeta vs Gelfand–Graev characters; state whether a named “Tate–Gelfand continuum pairing” exists in literature (yes/no + cites).
+G4. List modular/automorphic structures classically linked to SM generation/gauge counting (literature survey only); mark each as analogy vs theorem; do not invent residual-C→SM maps.
+G5. Quasi-isometry Bruhat–Tits T₃ → H^n: standard obstructions (tripod) + typical (λ,ε) statements—definitions only; no project lock.
+
+## Assumptions Soft SF keeps
+Gemini output = candidate for Soft SF independent verify. Missing definitions stay missing. No tip edit. No external send by this file.
+
+----- END VERBATIM math1.md -----
+
+
+================================================================================
+=== B7. Math Research 2 — source math2.md — SHA256 4a89f647f05bf906442e4c239d9646a1d9b57b39a49c6e7d4a1f99de04a135bf ===
+================================================================================
+
+----- BEGIN VERBATIM math2.md -----
+
+# Math Research 2 — citation-only Gemini request
+
+Scope: geometric/compactification prerequisites for full Standard Model plus GR recovery. This is a research objective, not an achieved result. Invention hold, protected sources, Residual≠Resonant and purged force-projection restrictions remain. Candidate output is not proof or an adopted definition.
+
+## Requested footwork
+1. Locate primary citations and precise hypotheses for quasi-isometric embeddings of the specified Bruhat–Tits tree into hyperbolic space. Our model lacks the tree/target definitions, map F and constants λ, ε. Identify missing author inputs; do not invent a chart or identify generic existence with this model.
+2. Separate classical Israel junction conditions from the proposed equation [K_ij]−γ_ij[K]=0. Request ambient geometry, interface, induced metric, extrinsic curvature, matching category and stress tensor. Explain which source would be needed to support vacuum-energy cancellation; do not assume the equation proves it.
+3. Inventory required inputs for an 11D compactification recovering the full SM: internal topology/metric, action and reduction ansatz; gauge group/global structure and bundles; chiral representations/generations and anomalies; Higgs potential, Yukawas/mixing; coupling normalization, moduli and controlled 4D/KK-decoupling limit. Locate citations where possible; explicitly distinguish unavailable model data from established general results.
+4. Locate the actual Appell–Lerch definition/evaluation allegedly yielding R_c=1.59543…, independent of Λ₀. If unavailable, report that bounded outcome, not nonexistence.
+
+## Source pins and evidence limits
+Project sources under `/workspace/quantum-comp/`:
+- `reports/OWNER_DOCUMENT_FORMAL_RESOLUTIONS_STRUCTURAL_CORRECTIONS_COMPENDIUM_2026-11-05.md`, B I lines8–15 and III30–33: proposed geometry/junction/compactification and R_c corrections, not adopted locks.
+- `references/entanglement-publications/theorems-18-40-v1.txt`, T36 lines231–239, T38 252–263, T40 275–288: author sketches, not independently verified SM/GR recovery. Read MANIFEST.md caveats.
+- `reports/MR2_FULL_SM_RECOVERY_GEOMETRY_OBLIGATIONS_2026-11-05.md`, sha25692e7ba649523410108309c9ec13b38202b7c80e6ba74699c9e4e4ae31706a028: existing obligation inventory.
+
+Existing mathematics: isolated Haar identity and explicit RTA dynamics are source-backed mathematical statements, not a physical recovery bridge. Requested model-specific geometry, junction, spectrum and R_c derivations remain open in consulted sources.
+
+Return an output file with exact citations/locations, assumptions, supplied versus missing definitions, claim status and independently checkable evidence. No invented proofs, parameters, physical mappings or publication actions.
+
+----- END VERBATIM math2.md -----
+
+
+================================================================================
+=== B8. Physics Research 1 — source physics1.md — SHA256 a4d6d42ff3fba925e36876cf8c25336382b8a6fca371a89b55718df8584743ce ===
+================================================================================
+
+----- BEGIN VERBATIM physics1.md -----
+
+# PR1 Gemini intake — HEPP / QM / GR lab-precision / GW (2026-11-05 ~15:15 CST)
+Agent: Physics Research 1. Account-verification candidates only; output = proposed. Independent verify required. invent HOLD; tip LOCK `7cddb188…`; No CERT. No external Gemini send by this file.
+
+## Standing pins (cite-only)
+- Full-SM objective Soft SF `f562b7f3…` (directive `6237cc71…`): SM recovery = TARGET not proven.
+- §V Soft SF `f03fb09c…`; precision Soft SF `3c9deb7f…` (LIGO/O5 null = UNVERIFIED attribution).
+- Soft SF-verified empirical narrow: DF solar VIRGO 4-ch `6f9efa4b…` + planted E-FIT only — not GW.
+- LOCK `96f8d42e…`: force-projection purged Cat A; strong-force NEGATIVE-APPLICABILITY.
+- Obs anchors: `/workspace/obs-data-PR1-HEPP-QM-GR.md` (measured values only; not model MATCH).
+- Usage checkpoint this intake: 62.3% (STOP ≥80%).
+
+## Proven vs open (PR1 Soft SF)
+**Proven/locked (not SM recovery):** Residual≠Resonant; D₁ static; 539=S_eff budget≠clock; MATCH=0 HEPP/QM/GR-GW Soft SF rows.
+**Open / ABSENT:** gauge SU(3)×SU(2)×U(1) embedding; fermion generations/hypercharges; anomaly cancel; Higgs/EWSB map; Yukawa/CKM/PMNS; RG/couplings recovery; canonical CRD seconds-bridge; Soft SF-Written O5 null reproduction.
+
+## Minimal SM vs beyond-minimal (ask Gemini to keep separate)
+**Minimal SM empirical recovery targets (answerable lists/checks, not invent):**
+1. Checklist of Soft SF-testable SM observables with public citations (PDG/CODATA) that any extension must recover: M_W, M_Z, M_H, m_t, α_s(M_Z), G_F, CKM magnitudes, neutrino Δm²/mixing — each with “what Soft SF MATCH would require.”
+2. Distinguish catalog **anchors** (already Soft SF-Written measured) from **model-derived predictions** (ABSENT).
+3. Strong-force: confirm NEGATIVE-APPLICABILITY under purged force-projection; list what Owner-Written definition would be needed before any Tier E strong-force test (no revive of purged Cat A).
+
+**Beyond-minimal (quarantine; do not adopt):**
+4. Any 11D/3-adic gauge embedding, chirality mechanism, or Yukawa from residual algebra — label PROPOSED only; list missing definitions.
+5. CRD 539.9s as GW/timing observable — candidate wording vs Soft SF `3c9deb7f…` UNVERIFIED / Soft SF `314b6434…` not Tier-E-forever.
+6. Brane-leakage / BH-volume / rotation Tier E axes — pending Owner dataset allocations Soft SF `f03fb09c…`.
+
+## Needed definitions / proof targets (proposed questions)
+- Q1: Minimal set of maps still MISSING for SM gauge+Higgs recovery (definition list only).
+- Q2: Counterexample checklist: which Soft SF claims would be refuted if SM embeddings remain ABSENT.
+- Q3: Independent verification protocol template for any Gemini candidate (steps, labels established/conditional/proposed/unsupported).
+
+Assumptions: invent HOLD; Gemini≠authority; ≥80% STOP blocks new Gemini asks.
+
+----- END VERBATIM physics1.md -----
+
+
+================================================================================
+=== B9. Physics Research 2 — source physics2.md — SHA256 908aaa0d4405c3f65e4ec0adebf5b6f18536bd165454156215f6f7154317c2e6 ===
+================================================================================
+
+----- BEGIN VERBATIM physics2.md -----
+
+# Physics Research 2 — Gemini request intake (Cosmo / Bio / Neuro)
+2026-11-05 ~15:15 CST. Observational Cosmology, Biology, Neurology for S²-11DM²ET-X. Tip lock 7cddb188… untouched. Invent HOLD 1fadc632… stands. No CERT. No Gemini connector (cannot send). Usage note: 60.9%.
+
+## Assumptions / pins
+Owner full-SM objective 6237cc71… = research goal, not proof. Classification 595f27ef…: minimal-SM recovery in this lane = 0 (gauge/matter/Higgs/Yukawa = PR1). Beyond-minimal-SM / cosmological targets (ν masses/PMNS, baryogenesis, DM/DE) and correspondence tests (N_eff, BBN, EW/QCD transitions, SM-chemistry→Bio/Neuro) are broader targets with maps missing — not evidence minimal SM is incomplete here. DF VIRGO = SOHO solar TSI+SPM ≠ GW LIGO/Virgo/O5. 539.9 s CRD = simulation calibration / synthetic recovery (≠ Category A); observational posture E-UNTESTED. Hygiene already done: C13/C15 7f19644f…, C14/C16 2e02ec3f…, H₀ fe45fb37…, 539.9s lit ab3af9b6… (0 present/3 absent), §6 pin d52c9c42…, §V 921a8d44…, A/B 271ed951…, SM cross-ref c33c928c….
+
+## Proven vs open
+Proven: catalog source hygiene MATCH only (contested Soft SF KEEP). Open: R5 §6 rows or CRD Tier E specs (dataset, ±tol, N_free); R6 Φ_eff/v(r); R7 Soft SF CONFIRM BH-core/SNF = PR1; Author Soft SF Write for Cosmo falsifiers and Bio/Neuro maps; traceable GW-null provenance if any GW claim remains (UNVERIFIED under DF SOHO).
+
+## Questions for Gemini (candidate only; we verify)
+1) HQCC 539-step vs Cosmic Resonance Delay 539.9 s — same, derived, or distinct? Formula or Soft SF “distinct.”
+2) Propose Tier E specs for 539.9 s CRD (observable, ±tol, N_free, dataset) without inventing residual-C.
+3) Draft §6 Standard-vs-S² comparison-table body as proposed cells only.
+4) Candidate Φ_eff or v(r) + free-parameter count for later SPARC/THINGS Tier E.
+5) Under full-SM objective: list Cosmo observables that are minimal-SM correspondence vs Beyond-SM targets (separate lists).
+6) Candidate Cosmo maps (not proofs) for N_eff/Σm_ν, BBN yields, DM/DE vs SM field content — label each proposed.
+7) Soft SF-safe Bio/Neuro SM-chemistry bridge candidates that do not invent Λ_22 or (1+κ)^{-7/20}?
+
+## Definitions / proof targets
+Need: CRD operational observable; Cosmo exterior consequence of breathing modes (if any for PR2). Proofs: vacuum-junction↔Ω_Λ (R1); singularity-prevention bound (R2); 539-step↔539.9s statement (R4). Gemini drafts ≠ adopted definitions.
+
+## Problems
+Invent HOLD blocks inventing maps/predictions. §6 table ABSENT. Supported Cosmo spacetime consequences of GR extract: 0. Resonant Cosmo/Bio/Neuro applicable: 0. Soft SF cannot fill CRD Tier E or Bio/Neuro maps without Author Soft SF Write or invent-HOLD lift.
+
+----- END VERBATIM physics2.md -----
+
+
+================================================================================
+=== B10. Eigenvalues and matrix — source eigen.md — SHA256 bde19232007b366af78035861c93123ec23215ad3994f9ce97b246d5b59e5790 ===
+================================================================================
+
+----- BEGIN VERBATIM eigen.md -----
+
+# Eigen (Eigenvalues and matrix): Gemini request intake, 2026-11-05
+
+## Pins
+- N36 Kr compute: /workspace/grok-batches/eigen-o5c-n36-moreprimes-2026-11-05/
+- stab2.log is in that same moreprimes folder.
+- O5c 20-prime findings: 40c3e540…
+- SM obligations: FINDINGS 2fe0e6b0…, compute EIGEN_SM_RECOVERY_COMPUTE_2026-11-05/ (34/34 checks pass)
+- Mass matrix source: theorems/unification-proof.txt L98–158
+- Tip 7cddb188 untouched. No CERT.
+
+## O5(c): kernel Kr over ℚ (open)
+- Object: the kernel of the N36 matrix (rank 503), as a reduced row echelon form (RREF) over ℚ.
+- Mod-p evidence only: at primes 7840981 and 7957601, the stabilizer is all of (ℤ/49)\*, which suggests the field is ℚ.
+- Rational reconstruction failed the holdout prime at 20 primes. That puts the height above about 10^121 (about 400 bits).
+- Each added prime gives about 22.9 bits.
+- **Gemini target:**
+  - a provable height bound for the RREF entries (Hadamard or minor bound) from the N36 matrix entry sizes and rank 503,
+  - and from it, the number of primes needed.
+  - Definition needed: what "height of the RREF" means.
+
+## O5(d): zero-polar and G1-mem (open, gated on c)
+- Both need Kr over ℚ first.
+- Gemini can only suggest definitions or a test plan, not results.
+
+## SM matrices (proved vs open)
+Proved counterexamples (exact): if each sector's matrix is just a scalar times the φ-matrix B,
+- then the CKM matrix is a signed permutation, so J = 0 and δ is 0 or π,
+- every sector has the same mass ratios,
+- B has a negative eigenvalue (about −0.155),
+- and det/Tr³ is about −0.063, while any positive-definite matrix has det/Tr³ ≤ 1/27.
+
+Open, with definitions needed:
+- the gauge group, its global form (Z₆) and how it is embedded
+- fermion representations and hypercharges
+- the Higgs field and potential
+- separate complex Yukawa matrices for each sector
+- the neutrino mass matrix
+- how SM fields couple to the 11D metric
+- **Gemini target:** a candidate structure that avoids the scalar×B degeneracy. It is a candidate only, verified here.
+
+## Assumptions
+- Three generations is an axiom (v5 L174), not derived.
+- RTA v16 Prop 41.13(ii) excludes SU(3) maps.
+
+----- END VERBATIM eigen.md -----
+
+
+================================================================================
+=== B11. Dataset Filtration — source dataset.md — SHA256 7a331bfebc3448f4be0c5190df544a7d6e293c0c9d51b71ce47714cfa5a27d80 ===
+================================================================================
+
+----- BEGIN VERBATIM dataset.md -----
+
+# Dataset Filtration — Gemini request intake (≤400 words)
+Agent: Dataset Filtration. 2026-11-05 ~15:15 CST. Proposed tasks only; Gemini output ≠ proof. No tip edit; invent HOLD; No CERT. Soft SF pins cited, not redone.
+
+## Standing frame
+GR extension objective includes full Standard Model recovery (OW 6237cc71…); objective ≠ accomplished proof. Lock 96f8d42e… §4: Kronecker/SU(3)/four-forces mappings stay PURGED (not lifted). 80% usage STOP applies (OW 51ff1677…). File-loop: Owner transfers; agents verify (OW a29f87d9…).
+
+## Proven (do not re-ask)
+- Residual packaging arithmetic; D1 static rank-1; S_eff/T3=539 budget not clock; residual≠resonant; Haar ℤ₃⁴ identity (DF Soft SF a8f94cf0…).
+- SOHO/VIRGO *solar* exploratory Tier E null Soft SF 6f9efa4b… + erratum e1ea66eb…; positive empirical associations = 0.
+- Naming: SOHO/VIRGO solar ≠ Virgo GW interferometer / LIGO / O5. No DF LIGO/O5 Soft SF.
+
+## Needed definitions (author inputs)
+1. Written S² object in S²-11DM²ET-X.
+2. Written 11D space (manifold/signature/fibration).
+3. Written M²ET (vs proposal-only M_35).
+4. Written map model→Einstein/exterior match (GR recovery).
+5. Written SM recovery maps: gauge group; field content; couplings; symmetry breaking; anomaly cancellation; correspondence to tested SM observables.
+6. Closed-form derivation of R_c (underived concern retained; √(2/0.7858) numeric proximity ≠ derivational provenance).
+
+## Precise Gemini tasks (data/stats; proposed until verified)
+A. Draft a Tier E pre-registration template: null default; residual≠resonant hygiene; forbid promoting numeric agreement to derivation.
+B. Catalog candidate *solar-irradiance* observables only for SOHO/VIRGO-class instruments; explicitly exclude GW strain/LIGO/O5 unless a written bridge appears.
+C. List minimal-SM correspondence tests (gauge/masses/widths/branching) vs BSM/cosmology extras (neutrino/PMNS, DM/DE, baryogenesis) as separate columns — not missing minimal-SM parts.
+D. Propose statistical tests that use D1/S_eff *only* as static classifiers/budgets (no time/metric misuse).
+E. Flag any draft that invents four-force/gauge maps contrary to Lock §4.
+
+## Open problems
+No DF MATCH for SM or GR observables until definitions+maps exist. SUPPLIED SM recovery pins in DF lane = 0 (Soft SF b1e81e43… + AMEND 03a387b4…). No external Gemini send by DF on this intake.
+
+----- END VERBATIM dataset.md -----
+
+
+================================================================================
+=== B12. Agent — source agent.md — SHA256 7bcfb60f24fb56c85d060181ebf1e8db56c09331a38f16d72fa9ac4933d2c7be ===
+================================================================================
+
+----- BEGIN VERBATIM agent.md -----
+
+# Agent — Gemini FILE LOOP intake — 2026-11-05 ~15:15 CST America/Chicago
+Lane: Agent (Residual-vs-Resonant). ≤400 words. Candidate tasks for Gemini footwork only; output = proposed. Soft SF VERIFY later. No external Gemini send this file. invent HOLD `1fadc632…` STANDS; tip Soft SF LOCK `7cddb188…` untouched; Lock `96f8d42e…` §4 four-force purge NOT lifted; No CERT.
+
+## Pins (do not invent)
+- Live GR paper `de755741…` / pins `47ea689a…`
+- GR second-axis EXTRACT `08f3a104…` (G1–G17; U1–U14)
+- Prior Gemini rundown PRIMARY `b83f95f8…` / PRESS `d4755b3c…` — **15Q/12P already filed; DO NOT full-redo**
+- Round-TWO EXTRACT `26cf4794…` + ERRATUM `530ff058…` (VIRGO≠SOHO)
+- SM objective `6237cc71…` + Agent ACK `4ca080a3…` + PP N1 ERRATUM `59e48e1e…` (anomaly cancellation MISSING)
+- Usage ≥80% STOP `51ff1677…` (last Soft SF ~60.9% relayed; no new Gemini at threshold)
+- Gemini ask-then-verify rule `39211815…`
+
+## Proven (Agent Soft SF; reuse)
+Residual≠resonant; D1/S_eff locks; Haar on Z₃⁴ local identity only (not gravity); 539=S_eff≠stopping time; seed-4880 finite orbit Soft SF; full regular GR extension **not** a theorem (G17); SM recovery **not** achieved.
+
+## Open / needed definitions (for Gemini candidate drafts)
+1. Exact tree/hyperbolic metric + split dimensions for 11D chart obstruction (A§1; do not invent junction).
+2. Domain-precise statement: what is proved vs open for canonical-floor T3 on ℤ₃ (0 / negatives / entanglement third map) — literature survey + counterexample inventory; no HQCC invent.
+3. Source defining R_c↔Λ₀ dependency (vs numerical coincidence); Appell–Lerch indices/nome/error bound if any public source.
+4. Exterior GR support/junction data checklist for G15 (what must be supplied for a regular extension).
+5. **SM recovery (new objective):** candidate literature maps for gauge SU(3)×SU(2)×U(1) embedding, fermion content, **anomaly cancellation**, EWSB/Higgs, couplings/RG — mark each proposed vs established; **forbid** reviving purged 3-adic four-force / Kronecker physical maps (Lock §4).
+6. Quasi-isometry vs isometry: standard defs + what each does/doesn’t give for action/vacuum (no new model invent).
+
+## Concise Gemini tasks (answerable; not prior 15Q redo)
+- T1: One-page candidate bibliography + definition cards for (1)(3)(6) with citations.
+- T2: Checklist of missing data for a mathematically regular GR extension given G10–G15.
+- T3: SM-recovery gap matrix (gauge/fields/anomaly/EWSB/couplings/tested observables) = SUPPLIED vs MISSING vs PROPOSED-only; no claim of recovery.
+- T4: Counterexample list against “universal positive-integer Collatz-like termination” claims (reuse known; cite).
+
+Assumptions: residual≠resonant; tip/locks stand; Gemini output candidate≠proof. Coordinator consolidates; Agent Soft SF VERIFY later.
+
+----- END VERBATIM agent.md -----
+
+
+================================================================================
+=== ADDITIVE CORRECTION (539 Labs Ops T3_ref) — source labs539_ADDITIVE_CORRECTION_T3REF.md — SHA256 c8e064c768e76e1766af66ea07f4da1fedaf6d2e1d95b6491a9db0c3c3e2fe45 ===
+================================================================================
+
+----- BEGIN VERBATIM labs539_ADDITIVE_CORRECTION_T3REF.md -----
+
+# Additive correction to labs539.md (safe finalization only)
+Date: 2026-11-05 ~15:19 CST. Parent note: labs539.md line 5 mixed a Syracuse/ν₂ formula into the T3_ref definition. Intake file itself is preserved unchanged (sha e1f37867ad816bf4365e33fb61148c2bf7ce2fa7216907f9fadd4ff42d5256d0).
+
+**CORRECTION — canonical T3_ref (floor form), as given by parent from production lock / local.md / nonlocal.md:**
+- n ≡ 0 (mod 3): T(n) = n // 3
+- n ≡ 1 (mod 3): T(n) = (4n + 2) // 3
+- n ≡ 2 (mod 3): T(n) = (2n + 1) // 3
+
+Line 5 of labs539.md is **unverified / incorrect** as a statement of T3_ref; do not use it. Known collisions T(2)=T(3)=1 agree with this floor form, not with the ν₂ formula on line 5. No recomputation performed in this correction. Halt remains in force.
+
+----- END VERBATIM labs539_ADDITIVE_CORRECTION_T3REF.md -----
+
+
+================================================================================
+6. END OF PAYLOAD / REMINDERS
+================================================================================
+- Answer B1–B12 individually with (1)–(4), then CROSS-LANE BRIDGE, then GOVERNANCE, then YOUR QUESTIONS BACK.
+- All scientific outputs = CANDIDATE until independently checked.
+- Canonical T3_ref only; SM objective ≠ recovery; invent HOLD / No CERT / tip lock stand.
+- Absolute ≥80% weekly usage STOP all jobs (checkpoint at compile ~75.5%).
+- This is the ONE Owner-authorized expanded Gemini submission for this authorization; do not expect a second send unless Owner authorizes again.
+- Compiled 2026-11-05 15:58:26 CST. No independent proof compute performed by the compiler of this file.
+
+
+=== END REUSED 1554 BODY ===
+
+********************************************************************************
+COVER UPDATE FOOTER (2026-11-05 16:02:38 CST)
+********************************************************************************
+CURRENT stop threshold = **90%** (80% superseded as CURRENT). File-level validation stopped. Mathematical proof validation = the intended rigor track for the 12 submissions / Eigen height bound — still CANDIDATE until independently established; no invented proofs; invent HOLD / No CERT.

@@ -1,0 +1,33 @@
+
+%=====================================================================
+\section{Reproducibility for Part~II}\label{app:repro}
+%=====================================================================
+All computations were run with Python~3.13.5, python-flint~0.9.0, sympy~1.14.0, mpmath~1.3.0, numpy~2.5.4 and cypari2~2.2.4 (PARI/GP, used only where stated).
+The scripts, logs and data files are kept in the companion folders below (under \path{quantum-comp/reports/heavy-daily/}); each folder contains a report and the
+scripts it describes.
+\begin{center}\small
+\begin{longtable}{p{6.3cm}p{8.3cm}}\toprule
+folder & content\\\midrule\endhead
+\path{2026-10-17-bridge-c-residual-law}, \path{2026-10-17-P_s-structure} & Theorems~\ref{thm:A}--\ref{thm:D}; radial fits; Gauss pattern\\
+\path{2026-10-17-psi-cocycle}, \path{2026-10-17-psi-conditions} & lift, $S/T$ law, period formula, row closed forms\\
+\path{2026-10-17-cusp-part}, \path{2026-10-17-psiEis-Lvalues}, \path{2026-10-18-PARI-free} & Eisenstein/cusp split, $L(0)$ identities, PARI-free certification\\
+\path{2026-10-18-ER-cancellation}, \path{2026-10-18-ER-cancellation-audit} & Herglotz closed form (Theorems~\ref{thm:I}, \ref{thm:J})\\
+\path{2026-10-18-Audit-and-ProfileLaw}, \path{2026-10-18-S-Eigenvalues}, \path{2026-10-18-V42-Structure} & profile law; spectra; function span\\
+\path{2026-10-18-Tensor-Pattern-Proof}, \path{2026-10-18-Tensor-Pattern-Closure}, \path{2026-10-18-General-s-Tensor}, \path{2026-10-18-Symmetry-Audit} & tensor theorems, dimensions, label operators\\
+\path{2026-10-18-Cusp-Onset}, \path{2026-10-18-Cusp-Onset-Closure}, \path{2026-10-18-uL-Criterion-Closure}, \path{2026-10-18-s8-s11} & $u_L$ criterion; $s=8,11$\\
+\path{2026-10-18-H_s-Closed-Forms}, \path{2026-10-18-H_s-Closure}, \path{2026-10-18-Open-Analytic}, \path{2026-10-18-Analytic-CatB-Push} & Euler--Maclaurin; $H_s$ closed forms; Gauss data; $t^{11/2}$--$t^{17/2}$; data files of the closed forms\\
+\path{2026-10-18-Algebraic-Round3}, \path{2026-10-18-Open-Algebraic} & $h$-relations; Proposition~K1; Weil inputs; cone and axes cone\\
+\path{2026-10-19-HighRAM-Items} & prime-square splits and commutants (\texttt{sec\_comm2.py}, transpose convention; $s=49$ certificate at two primes), $p$-local invariants at $s=121,169$ (\texttt{famfast.py}, \texttt{pinv2.py}, \texttt{pinv3.py})\\
+\path{2026-10-19-Open-Items-Pursuit} & Proposition~\ref{prop:K1sharp} (\texttt{item7\_k1\_sharp.py}); Remark~\ref{rem:dihedral7_10} (\texttt{dihedral\_enum.py}, \texttt{dihedral\_diag.py}, \texttt{dihedral\_gen.py}); Proposition~\ref{prop:liftgamma}(iii) (\texttt{item6\_candidate.py}); dictionary check in Remark~\ref{rem:uniqB}(a) (\texttt{item4\_dictionary.py}); Lemma~\ref{lem:U2est} checks (\texttt{item3\_estimates.py})\\
+\path{2026-10-19-Certified-SRho} & Theorem~\ref{thm:SrhoDim} (\texttt{certify.py}; outputs \texttt{cert\_*.json})\\
+\path{2026-10-18-C_third-Unified}, \path{2026-10-18-C_third-Closure}, \path{2026-10-18-C_third-modularity}, \path{2026-10-18-Cocycle-Closure} & \S\ref{sec:cthird}; Theorem~\ref{thm:coc5}\\
+\path{2026-10-18-Zeta-Rational-Curve-Proof}, \path{2026-10-18-g_s-Closed-Forms} & Theorems~\ref{thm:zetacurve}, \ref{thm:Gs}\\
+\path{2026-10-18-AtkinLehner-Local} & Proposition~\ref{prop:al6}\\
+\path{2026-10-19-Implications-checks} (incl.\ \path{k3_140}) & \S\ref{sec:k3}; coefficient values of $C$; $A_5$ group closure\\
+\path{2026-10-19-N1-and-Uniqueness} & \S\ref{sec:uniq} (sectors, $q$-coefficients to frequency $40$, $g_0$); \S\ref{sec:emit}\\
+\path{2026-10-19-Audit-U2-U3-ThmG-SRho} & numerical checks of Theorem~\ref{thm:G} on both half-planes, Lemma~\ref{lem:green} quadrature, Theorem~\ref{thm:U2}, sector bounds\\
+\bottomrule
+\end{longtable}
+\end{center}
+To reproduce, run each script with the stated Python environment from its folder (e.g.\ \texttt{python3 n1\_tests.py 1500}); scripts write their JSON or log
+outputs next to themselves. Exact computations are deterministic; floating-point runs agree to the stated tolerances.

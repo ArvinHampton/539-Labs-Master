@@ -1,0 +1,348 @@
+
+--- full-extract lines 564-610; use printed page numbers in source ---
+564: periodic versions.
+565: 
+566: 2.2   The lattice
+567: A = ( 27 77 ), B(x, y) = xT Ay, Q(x) = 21 B(x, x) = x21 + 7x1 x2 + 27 x22 . The form Q has signature (1, 1)
+568: and det A = −35. D = A−1 Z2 /Z2 has order 35. a = ( 10     7
+569:                                                              , − 51 ), so Aa = (0, 27 ) and Q(a) = − 20
+570:                                                                                                       7
+571:                                                                                                         . For
+572: general s: As = ( 2s ss ) and
+573:                                    Qs (n, k) = n2 + snk + 2s k(k + 1).
+574:                                               7
+575: At s = 7, Q7 (v) = Q(v) + 27 v2 = Q(v + a) + 20 .
+576: 
+577: 2.3   The residual series and the two series previously both written Ps
+578: Definition 2.1. For s ≥ 1:
+579:                           P       2
+580:  (i) the s-series gs (q) = n≥0 q n /(−q s ; q s )n (in Part I written gk , with k in place of s);
+581: 
+582:  (ii) the product-normalised s-series Πs (q) = (−q s ; q s )∞ gs (q);
+583:                                      P
+584: (iii) the orthant series Psorth (q) = n,k≥0 q Qs (n,k) .
+585: 
+586:     In the RTA manuscript both Πs and Psorth carry the name Ps . They are different series:
+587: 
+588: Proposition 2.2. For every s ≥ 1, in Z[[q]],
+589:                                      X q Qs (n,k)      X q sk(k+1)/2 X 2
+590:                           Πs (q) =                   =                  q n +skn ,
+591:                                        (q s ; q s )k      (q s ; q s )k
+592:                                      n,k≥0            k≥0               n≥0
+593: 
+594: 
+595: and Πs − Psorth has non-negative coeﬀicients and is non-zero; its coeﬀicient of q 2s is at least 1.
+596: 
+597:                                                      11
+598: 
+599:                                                  P        k(k−1)/2 z k /(p; p) with p = q s and z = q s(n+1) gives
+600: Proof. Euler’s identity (−z; p)∞ =                  k≥0 p                     k
+601:                                                         P
+602: (−q s ; q s )∞ /(−q s ; q s )n = (−q s(n+1) ; q s )∞ = k≥0 q sk(k−1)/2+s(n+1)k /(q s ; q s )k , and n2 +sk(k −1)/2+
+603:                                                      2
+604: s(n + 1)k = Qs (n, k). Multiplying by q n and summing over n gives the first identity; both double
+605: sums converge in Z[[q]] because Qs (n, k) ≥ n2 + 2s k(k + 1). Since 1/(q s ; q s )k − 1 has non-negative
+606:                                           P
+607: coeﬀicients, so does Πs − Psorth = n,k q Qs (n,k) (1/(q s ; q s )k − 1); the term (n, k) = (0, 1) contributes
+608: q s · q s with coeﬀicient 1.
+609: 
+610:      Throughout, the Bridge Series is built from Psorth only. Part II uses Psorth for P7orth when s = 7
+
+--- full-extract lines 1532-1563; use printed page numbers in source ---
+1532:     (3) Modulo pa the roots are ±1 and modulo 2 the root is 1, so s2 ≡ 1 (mod 2pa ) implies s ≡ ±1
+1533:         (mod 2pa ): only s = 1, k − 1, which are excluded from Ξk .
+1534: 
+1535: 
+1536: 
+1537:                                                               26
+1538: 
+1539:  (4) The solutions of x2 ≡ 1 (mod 2a ), a ≥ 3, are ±1 and 2a−1 ± 1. So Ξk = {s} with s =
+1540:      k/2 − 1 (> 1), and t = (s−1)(s+1)k      = (k/2−2)(k/2)
+1541:                                                       k      = k4 − 1, which is odd since k/4 is even.
+1542:      Hence gk (dk ) = 2 − (A1 + A2 ). Here n2 = k − s = k2 + 1 and m2 = 4 + 2s − t = 3k           4 + 3,
+1543:      which is odd (as 3k  4 is even).  For k  ≥   16 and o ∈ {1, 3, 5}, the pair λ  = {o}, µ = {m 2 − o}
+1544:      is admissible in (4.2) for An2 (m2 ): o ≤ n2 ; m2 − o is even; m2 − o ≤ 4 + 2 ≤ k + 2 = 2n2 ;
+1545:                                                                                    3k
+1546: 
+1547:      and m2 − o > k2 + 1 = n2 iff o < k4 + 2, true for o ≤ 5 when k ≥ 16. These are three different
+1548:      pairs, so A2 ≥ 3, A1 ≥ 0 and gk (dk ) ≤ −1. For k = 8 the terms of g8 (97) are (1, 12, +1),
+1549:      (3, 11, −2), (5, 9, −3), (7, 6, +1), (9, 2, 0), with sum −3. The values for k = 16, . . . , 128 are
+1550:      exact evaluations (Appendix A.1). ■
+1551: 
+1552:    Scope. Lemma 7.1 shows that for 4 | k there are classes c in which two roots n, n′ have n2 6≡ n′2
+1553: (mod 2k); in such a class the terms of gk (d) have different signs and Theorem 7.4 does not apply.
+1554: For k = 4, 8, 12 these classes are: c ≡ 0 (k = 4), c ≡ 1 (k = 8), c ≡ 0, 4 (k = 12) (computed by
+1555: enumeration of n modulo 2k). Nothing is claimed for such classes.
+1556: 
+1557: 
+1558: 8     Parity dominance for odd k ≤ 33
+1559: Throughout this section k is odd, 3 ≤ k ≤ 33, and d is allowed for k (Definition
+1560:                                                                          P       3.3). The notation
+1561: an (m), An (x), Ed , Od is that of Section 4: an (m) = |ϕn (m)|, An (x) = m an (m)xm is the product
+1562: (4.1), and by (4.4)
+1563:                                                      X                    X
+
+--- full-extract lines 2452-2489; use printed page numbers in source ---
+2452:                                                  04            04
+2453: [3.19,3.20]0.55          0.536         0.0646    1.15e-        7.47e-     0.07320 0.0242         0.0249     0.0395        0.0405
+2454:                                                  03            03
+2455: [3.30,3.31]0.55          0.523         0.0654    1.98e-        1.99e-     0.08727 0.0219         0.0226     0.0370        0.0379
+2456:                                                  03            02
+2457: 
+2458:      Table 8.5. Zero sets of Theorem 8.22.
+2459: 
+2460: k        3        5     7        9       11     13       15     17      19       21    23      25      27   29       31      33
+2461: #Zk 9             17    24       20      43     54       55     80   89          88   105      76      68   121 127 88
+2462: max Z43
+2463:      k            176   247      118     273    545      565    1137 766         2055 837      936     1375 1934 1712 1587
+2464: 
+2465: 
+2466: 8.8      Computer-assisted steps and what each relies on
+2467: The following steps are carried out by programs; everything else in Section 8 is proved by hand
+2468: above.
+2469: 
+2470:      1. Lattice-sum enclosures (Algorithm E) for the 312 cells and for the window points: Arb
+2471:         ball arithmetic, 128 bits, through python-flint [21].
+2472:      2. Cells (Algorithm C, Theorem 8.12): the same arithmetic. Output: δ for 312 cells.
+2473: 
+2474: 
+2475:                                                                  39
+2476: 
+2477:     3. Block bound (Algorithm R, Proposition 8.14), for 16 values of k and about (UB −UA )/0.0025
+2478:        boxes each: interval arithmetic over Arb balls.
+2479:     4. Tail bound (Algorithm T, Propositions 8.19, 8.20): Arb balls, with the dilogarithm of Arb.
+2480:     5. Modular certificate (Algorithm M) and the exact evaluation of Ck (Theorem 8.22): integer
+2481:        arithmetic only (a C program with 64-bit residues; exact Python integers).
+2482: 
+2483:     The only places where floating-point numbers enter as inputs are: the double-precision endpoints
+2484: of cells and boxes (each is an exactly representable binary number, converted without rounding to
+2485: a ball), the choice of τ0 , uc , UA , . . . , A0 (any value is valid; correctness never depends on how they
+2486: were chosen), and output roundings, which are all directed (upward for upper bounds, downward
+2487: for lower bounds). The programs were re-run from their inputs for this paper: every output file
+2488: (window parameters, cells, constants, results) is identical to the stored one (Appendix A.3). This
+2489: checks reproducibility, not independence of the method.
+
+--- full-extract lines 2752-2773; use printed page numbers in source ---
+2752:     algebraic coeﬀicients, signature-(1, 1) Zwegers holomorphic parts with rational characteristics,
+2753:     unary/partial/false theta series), and E(e−t ) = o(1/t).
+2754: 
+2755:  (ii) (Multiplicative.) For holomorphic modular forms g 6≡ 0 and F of any weights, levels and
+2756:       multipliers, with complex coeﬀicients, and any q r factor: Cthird · g 6= F and C · g 6= F .
+2757: 
+2758: (iii) (Scalar W7 .) For no k and no constant λ is C(τ ) − λ(7τ )−k C(−1/(7τ )) radially bounded at
+2759:       all rationals.
+2760: 
+2761: Status (Category A). (i) is proved conditional on Baker’s theorem [1] and on the q-expansion principle
+2762: (algebraicity of expansions
+2763:                     √       at all cusps),
+2764:                                    √       both
+2765:                                              √ cited. (ii) is proved; for C the nonvanishing input is the
+2766: closed form aC = π(833 + 204 14 − 14 1190)/2380 6= 0 (Theorem 11.3). (iii) is an exact finite
+2767: computation: 178 of 270 test rationals (denominator < 30) have exactly one of G(x), G(−1/(7x)) zero,
+2768: including x = 5/7; the zero pattern is that of Theorem 11.4.
+2769: 
+2770: Theorem 11.6 (Theta lift and vector-valued S/T law). Let uα,β (α ∈ ({0, a}+L′ )/Z2 , β ∈ {0, −a};
+2771: 140 labels) be the Siegel-theta lifts of §14. Each uα,β is a weight-0 Laplace eigenfunction with λ = 41 ,
+2772: and
+2773:                  e(B(α, β)) X                                                          
+
+--- full-extract lines 3434-3450; use printed page numbers in source ---
+3434: which is Ψ(z) for Re z > 0 and −Ψ− (z) for Re z < 0. In particular Ψ and Ω agree on H∩{Re z > 0},
+3435: so Ψ continues holomorphically to U .
+3436:    (ii) Boundary values. Let x > 0 be rational and let z = x + iy → x non-tangentially in H.
+3437:                                                                                      ′′
+3438: With t = 2πy and t′′ = −2πi(−1/z + 1/x) = t/(xz) (so that e(−1/z) = e(−1/x)e−t , and t′′ → 0
+3439: non-tangentially), R1 (§13.1) gives
+3440:               AL (−1/x)                                              Ap (x) hp (x)
+3441: EL (−1/z) =             +κL (−1/x)+O(|t|1/2 ),         Ep,−a (z) =         + 1/2 +κp,−a (x)+O(|t|1/2 ),
+3442:                   t′′                                                  t     t
+3443: where EL has no t′′−1/2 term (Lemma 39.18). Since 1/t′′ = xz/t, the 1/t part of Ψ(z) is
+3444:                                z                  1 X          
+3445:                                   x AL (−1/x) − √         Ap (x) = 0
+3446:                                t                   35 p
+3447:                                                                        P
+3448: exactly, by Corollary 14.2(iv) on the row (a, 0), whose S-row is √135 p over the labels (p, −a).
+3449: Therefore
+3450:                          z X                                 x X
+
+--- full-extract lines 5015-5037; use printed page numbers in source ---
+5015: Zwegers pieces; it is conditional on the same inputs as Theorem 24.5. (Category B.)
+5016: 
+5017: 24.2    Modularity status of Cthird
+5018: The statements of this subsection are proved or exactly checked, conditional where stated; the
+5019: words “quantum modular form” for the factor |cx + d| are terminology (Category B).
+5020: Identity. 2Cthird = q 8 f2,7,7 (−q 10 , −q 14 , q) + 1 + E, checked to q 8000 , and
+5021:                                                                                
+5022:                                Cthird = 12 (1 − θ3 ) + 12 e(7τ /20) ϑhol + EL .
+5023: Lemma 24.3 (Parity splitting). At every rational x, along q = e(x)e−t , t → 0+ : e(7τ /20)ϑhol ,
+5024: θ3 and q 8 f contain only half-integer powers of t; E = q 7/20 EL contains only integer powers
+5025: t−1 , t0 , t1 , . . . . Hence the integer-order radial data of Cthird are those of 21 (1 + E) and the half-
+5026: integer ones those of 12 q 8 f .
+5027: 
+5028: Status (Category A). Proved, conditional on two-dimensional Euler–Maclaurin (Proposition 13.1)
+5029: and Hecke’s continuation theorem.
+5030: 
+5031: Theorem 24.4 (Phase obstruction). Let Γ ⊂ SL2 (Z) have finite index, ρ any finite-dimensional
+5032: representation, j(γ, τ ) = (cτ + d)k or |cτ + d|k , and V holomorphic with V (γτ ) = j(γ, τ )ρ(γ)V (τ ) +
+5033: o(1/y) at every rational x 6= γ −1 ∞. Then Cthird 6= λ · V for every λ; likewise for C, Psorth and E.
+5034: 
+5035: Status (Category A). Unconditional. The proof uses G(1/m) = e(7/(20m))P (m mod 140)/m for
+5036: gcd(m, 70) = 1 (which also follows from Corollary 14.2(iii)) and a linear-recurrence/essential-singularity
+5037: argument.
+
+--- full-extract lines 6099-6166; use printed page numbers in source ---
+6099: Proof. (i) is Theorem 25.2 (c0 , c1 , c2 were also re-derived exactly). (ii) For a form of weight k,
+6100: F (e−t ) is (2π/t)k times the expansion of F |k S at i∞, i.e. C t−k plus exponentially small terms. A
+6101: quasimodular form of depth p ≤ k/2 contributes t−k+j with 0 ≤ j ≤ p, so all exponents are ≤ 0.
+6102: Finitely many such terms give only t−a with a ≥ 0, whereas gs has the coeﬀicient c1 = 2(s − 3) 6= 0
+6103: of t1 . (iii) With q = e−t , q r gs = e−rt gs (e−t ) has t-coeﬀicient 2(s − 3) − 2r and, at r = s − 3,
+6104: t2 -coeﬀicient c2 − rc1 + r2 = 2(2s2 − 19s + 33).
+6105: 
+6106: Status (Category A). Proved, given Theorem 25.2. Category B support: (gs −c0 −c1 t−c2 t2 )/t3 at t =
+6107: 10−3 , . . . , 1.25 · 10−4 is −1355, −1338, −1329, −1325 for s = 7. This is consistent with the value c3 (7) =
+6108: −3962/3 ≈ −1320.7 of Theorem 25.2, and similarly for s = 1, 8, 11 (c3 = −546.7, −1566.3, −303.3).
+6109: Sanity: the same test excludes f0 = g1 , consistent with f0 being mock.
+6110: 
+6111: Proposition 28.2 (E8 is invisible to the vector and cone data). E8 is even unimodular, so AE8 = 0
+6112: and ρL⊕E8 = ρL for every even lattice L. Consequently the Weil representation of Theorem 26.2,
+6113: the cone/vector transformation law, the eight sectors of Proposition 27.2, the Hom dimension 8
+6114: (Proposition 26.3) and the q-exponents modulo 1 of the 140-vector are unchanged by adjoining E8 .
+6115: No construction that factors through discriminant-form data can carry E8 information into them.
+6116: 
+6117: Status (Category A). Standard (discriminant forms of orthogonal sums are orthogonal sums). Arith-
+6118: metic aside, not a result: the primes involved are {2, 5, 7} at s = 7, {2, 3} at s = 8 and {2, 3, 11} at
+6119: s = 11. Only 7 and 11 are also E8 exponents.
+6120: 
+6121: Proposition 28.3 (Exact linear-span test to q 1499 ). Let F be the following 1036 distinct integer
+6122: sequences, truncated to q 0 , . . . , q 1499 :
+6123: 
+6124:  F1 q r θE8 (q m ) for 1 ≤ m ≤ 12 and 0 ≤ r ≤ 20 (252 series);
+6125: 
+6126:  F2 W (E8 ) dominant-weight counts per norm, rescaled by 1 ≤ m ≤ 6 and shifted by 0 ≤ r ≤ 20
+6127:     (126 series);
+6128:                              Q
+6129:  F3 the W (E8 ) Molien series d∈{2,8,12,14,18,20,24,30} (1 − q d )−1 , with the same rescalings and shifts
+6130:     (126 series);
+6131: 
+6132: 
+6133:                                                        98
+6134: 
+6135:   F4 partition counts into parts from each nonempty subset of {7, 8, 11, 18, 67, 68, 243, 521, 539}
+6136:      (511 series);
+6137: 
+6138:    δ δn,r for 0 ≤ r ≤ 20 (21 series). No two of the 1036 series coincide.
+6139: 
+6140: None of g7 , g8 , g11 , g1 , g7 − g8 , g11 − g7 lies in the Q-span of F. Moreover g1 , g7 , g8 , g11 are
+6141: Q-linearly independent.
+6142: 
+6143: Proof. For p = 261 −1, the mod-p rank of F is 880. The exact Q-rank of F4 ∪ δ is 376 (532 columns;
+6144: exact integer rank). F1–F3 have 504 columns, so rankQ F ≤ 504 + 376 = 880. For an integer matrix
+6145: rankp ≤ rankQ , so rankQ F = 880. Adjoining any one target raises the mod-p rank to 881, so its
+6146: Q-rank is at least 881 > 880, and the target is not in the Q-span of the truncated sequences, a
+6147: fortiori not of the full ones. The independence statement is an exact rank-4 computation.
+6148: 
+6149: Status (Category A). Exact. Sanity checks of F2: d(1..4) = 1, 1, 1, 2 and rE8 (4) = 17520 = 17280 +
+6150: 240.
+6151: 
+6152: Proposition 28.4 (No low-degree rational generating function). For s ∈ {7, 8, 11} and (R, n0 ) ∈
+6153: {(1000, 0), (1000, 999), (600, 1200)}, the (R + 1) × (R + 1) Hankel matrix (an0 +i+j )0≤i,j≤R of the
+6154: coeﬀicients of gs is nonsingular modulo p = 261 − 1, hence over Q. Consequently gs 6= P/Q with
+6155: P, Q ∈ Q[q], deg Q ≤ 1000 and deg P ≤ 999. The same holds with deg Q ≤ 600 and deg P ≤ 1200.
+6156:                                                 P                 P
+6157: Proof. Suppose gs = P/Q with 0 6= Q =                     k
+6158:                                                   k≤D bk q . Then
+6159:                                                                                    n
+6160:                                                                     k bk an−k = [q ]P = 0 for all
+6161: n > deg P . Let R ≥ D and put P     bk = 0 for D < k ≤ R and cj = bR−j (0 ≤ j ≤ R). Row i of the
+6162: Hankel matrix applied to c gives k bk an0 +i+R−k , which vanishes when n0 + R > deg P ; all indices
+6163: are ≥ n0 ≥ 0. So the matrix is singular whenever D ≤ R and deg P ≤ n0 + R − 1. Nonsingularity
+6164: at (R, n0 ) = (1000, 0) therefore excludes deg Q ≤ 1000, deg P ≤ 999, and at (600, 1200) it excludes
+6165: deg Q ≤ 600, deg P ≤ 1799, which contains the stated range.
+6166: 
+
+--- full-extract lines 6310-6362; use printed page numbers in source ---
+6310: 
+6311: 
+6312: 
+6313: 
+6314: 30 Numerical verification
+6315: “Exact” means rational/integer arithmetic. An entry that is exact supports a Category A state-
+6316: ment; a floating-point entry is supporting evidence for a proved statement where one exists, and is
+6317: otherwise Category B.
+6318: 
+6319:    check                                        range / points                           result
+6320:                                                             3000
+6321:    Theorem 11.1 identities                      through q                                exact
+6322:    Cmixed = 0                                   through q 293                            exact; − 12 q 294 first term
+6323:    cone sum (12.1), four cones; E−a = Ea        through q 3000                           exact
+6324:    Hs cone decomposition                        through q 2000                           exact
+6325:    Gauss pattern (Thm. 11.4)                    3374 pairs, m ≤ 105                      0 mismatches
+6326:                                                                                                 1      29
+6327:    ζE (0), ζE (−1)                              1 + 5 Shintani cones                     exact 10 , 1200
+6328:    Radial fit, Psorth                           t ∈ [0.00125, 0.08]                      0.209419 √ (I), 0.52569 (aP )
+6329:    EM remainder (Table 13)                      t ≥ 2.5 · 10−5                           scales as t (t for E)
+6330:    region ↔ ray class; uL Eisenstein            n ≤ 60 000                               exact (max diff 0)
+6331: 
+6332:                                    Table 19: Exact and finite checks.
+6333: 
+6334: 
+6335:    check                                          points                                 max deviation
+6336:    Maass S-, T -law, P -invariance, all 140       3 points, y ≈ 1                        1.2 · 10−15 , 7 · 10−16 , 6 ·
+6337:    rows                                                                                  10−16
+6338:    S 2 = I, (ST )3 = I on 72-dim space            —                                      1.3 · 10−15
+6339:    Green constant −π/2 (cross-check)              n = 1, 2, 3, two z                     30 digits
+6340:    period formula vs. Bernoulli ψ                 84 rationals                           1.1 · 10−13
+6341:    all-row closed form; three-term relation       7 pts; 4 pts                           2.3 · 10−14 ; 7 · 10−15
+6342:    component fits (140 × 2)                       n ≤ 54 880                             4.4 · 10−14
+6343:    Thm. 11.9, 34 digits                           44 rationals in [ 18 , 2]              5.7 · 10−33
+6344:    Thm. 11.9, random rationals                    40, den. ≤ 60                          2.5 · 10−12
+6345:    Thm. 11.9 on H (36 digits)                     6 points                               5.5 · 10−35
+6346:    Thm. 11.9 off H (double precision)             5 + 3 points                           2.5 · 10−16 ; 9.2 · 10−16
+6347:    Thm. 11.9 at rationals (36 digits)             8 rationals                            5.7 · 10−35
+6348:    split Gχ = 2Rχ + Tχ                            8 chars, 5 points                      ≤ 8 · 10−34
+6349:    Thm. 11.10                                     N ≤ 14 000                             1.84 · 10−15 ; 627 coeffs
+6350:                                                                                          equal in Z[φ]
+6351:    Ω = Ψ (Re z > 0), Ω = −Ψ− (Re z < 0)           3 + 3 points                           ≈ 10−16
+6352:    cusp rows = L(0) combinations                  24 rows, 7 points                      4 · 10−14
+6353: 
+6354: Table 20: Numerical checks. For the rational comparisons at rationals an independent from-scratch
+6355: period formula at double precision agrees to 5.7 · 10−17 .
+6356: 
+6357: 
+6358:                                                       102
+6359: 
+6360:                       x       Φc dev. (24 rows)                  Φ73 (x)
+6361:                                           −15
+6362:                       1           3.8 · 10         0.120446470003 + 0.176437422094i
+
+--- full-extract lines 8546-8575; use printed page numbers in source ---
+8546: excluded; C ∈
+8547:             / V35
+8548:                Hilb
+8549:                     lacks an explicit formula for C.
+8550: 
+8551: 
+8552:                                                    136
+8553: 
+8554: Remark 41.14 (Scope relative to Parts I–III). The Local cite-lifts F1–F3 and the packaging
+8555: advancements of this section do not modify the radial or S-law theorems already proved for the
+8556: Bridge Series C, do not resolve Problem 1., and do not identify the shadow Ξ. The seven Category A
+8557: local modular theorems of Section 40 remain unchanged.
+8558: 
+8559: Tip untouched. / No CERT.
+8560: 
+8561: 
+8562: Part IV
+8563: Foundation
+8564: 42 The foundation attempt: what ties RTA to the framework
+8565: This section lists the written RTA objects and, for each, what is proved about its relation to
+8566: the structures of Parts I–III. References to “RTA” are to the RTA manuscript (Residual Ternary
+8567: Algebra: Packaging Identities, Residual Series gs , and Bridge Series C, draft of 24 August 2026),
+8568: which has no algebraic axioms: its six numbered rules are process rules.
+8569: 
+8570: 42.1   Proved links
+8571: Proposition 42.1 (Identification of objects). The following hold.
+8572: 
+8573:   (i) The RTA residual series gs is the series gk of Part I with k = s.
+8574: 
+8575:  (ii) The RTA double-sum identity for (−q s ; q s )∞ gs holds for every s ≥ 1 as an identity in Z[[q]]

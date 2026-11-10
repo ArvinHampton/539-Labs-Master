@@ -1,0 +1,21 @@
+1:Periodic continued fractions and Kronecker
+9:We study the Kronecker symbol st for the sequence of the convergents s/t of a
+11:of Jacobi symbols is always periodic, it turns out that the sequence of Kronecker
+47:s, t, t ≥ 1, is the Kronecker symbol. It coincides with the Jacobi symbol if t is odd. If
+72:(see [1], p. 28 ff.). The Kronecker symbol shares many properties with the Jacobi symbol,
+90:corresponding sequence of Kronecker symbols, which we call the Kronecker sequence of
+121:critical convergent with respect to L exists. Then the Kronecker sequence stkk , k ≥ 0, is
+123:with respect to L, then the Kronecker sequence is aperiodic.
+125:precisely. As a rule, one finds more examples with periodic Kronecker sequences than
+132:s1 /t1 = 3/2 has the effect that the Kronecker
+137:the Kronecker sequence is aperiodic.
+150:residue classes of a0 , . . . , ak mod 4. No result of this kind can hold for the Kronecker
+154:2)/3 ≡ (7 · 2j − 2)/3 mod 2j+1 . The Kronecker symbol, however, takes the
+158:Hence our approach to the Kronecker sequence differs from the above strategy of
+168:obtain the values of the Kronecker symbol in the case where tk is even. For this purpose
+525:The Kronecker symbol on the right hand side coincides with the Jacobi symbol, since
+553:The periodic case of the Kronecker symbol is contained in the following proposition.
+555:Proposition 2 In the above setting, suppose there are no critical convergents with respect to L. Then the Kronecker sequence is purely periodic with period length L except
+557:this case the Kronecker sequence is purely periodic with period length 2L.
+561: the Kronecker symbol
+760:properties. Suppose that the Kronecker sequence is periodic with period length 2i dL,

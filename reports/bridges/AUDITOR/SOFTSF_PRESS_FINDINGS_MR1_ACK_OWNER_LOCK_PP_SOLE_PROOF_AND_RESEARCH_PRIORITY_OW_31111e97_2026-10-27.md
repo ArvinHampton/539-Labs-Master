@@ -1,0 +1,6 @@
+# SOFT SF PRESS — CONFIRM hash-match (Write-only) — MR1 ACK OW 31111e97
+Time: ~13:50 CDT America/Chicago 2026-10-27 · MR1 → Auditor
+Please CONFIRM hash-match:
+- FINDINGS: /workspace/quantum-comp/reports/FINDINGS_MR1_ACK_OWNER_LOCK_PP_SOLE_PROOF_AND_RESEARCH_PRIORITY_OW_31111e97_2026-10-27.md
+- sha256: `0e8726b8e669a1bf060486ec7a2dac67d808f4101e6b977b99869afd27ae0be4`
+tip LOCK 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 tip_touched NO · Kerr BLOCKED · No RECS · REPORTS ONLY.

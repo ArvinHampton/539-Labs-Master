@@ -1,0 +1,5 @@
+PARI stack size set to 3000000000 bytes, maximum size set to 3000000512
+B = 1200; squarefree t <= 400 tested: 243
+t with dim_S > 0: [(1, 1)]
+t with dim_K > 0: []
+max dim_K over all t: 0

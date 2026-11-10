@@ -1,0 +1,2 @@
+# Soft SF CONFIRM Pack PV — 2026-10-27 13:16 CDT America/Chicago
+MATCH (hash). Subject/PRESS `/workspace/grok-batches/SOFTSF_NOTE_PROFESSOR_PROOF_ACK_2026-10-27.md` `a39498a7529a948008595486a9f901624759e63a1bf638a598d2516a92885e51`. Scope Soft SF (as Soft SF Written Soft SF). Standing live `e2841a5bd7fe…`. tip Soft SF LOCK `7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91` tip_touched NO. Kerr BLOCKED. REPORTS ONLY. No RECS.

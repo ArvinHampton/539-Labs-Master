@@ -1,0 +1,26 @@
+[PASS] B1 T - Q = 2N_minus + (u-1) n + eps_ex, eps_ex = u(e_u - n) (signed n, any M5/anti-M5 mix)
+[PASS] B2 [u>=1] T - Q is a polynomial with nonnegative coefficients in (N-,n|m,delta,v) => N_req >= Q
+[PASS] B3 [u=1, N-=0] T - Q = eps_ex (gap equals non-BPS excess exactly)
+[PASS] B4 [u<1] T - u Q = w N+ + (2-w) N- + (1-w)(e_u - n) => N_req >= u Q necessary
+[PASS] B5 closure T = Q + Delta_N  <=>  eps_ex = Delta_N - 2N- - (u-1) n
+[PASS] P1 rho - q/2 = 1/2 sum (F - *F)^2 and rho + q/2 = 1/2 sum (F + *F)^2  => rho >= |q|/2 pointwise
+[PASS] K0 su(2) basis [T1,T2] = T3, -2 tr(Ti Tj) = delta_ij
+[PASS] K1 energy density of t*a is polynomial in t with t^4 coefficient phi^4 > 0 (quartic growth)
+[PASS] K2 any background A: t^4 coefficient of -2tr F12(t)^2 is phi^4 (unbounded above in every bundle)
+[PASS] W1 off-shell: d^a(W t_ab) = -1/4|F|^2 d_b W + F_bc.D^a(W F_ac) (non-abelian su(2), flat chart)
+[PASS] W2 t_ab is traceless in 4D (so t.grad X = 0 for every conformal Killing X)
+[PASS] W3 round S^4: h=cos(al) has Hess h = -h g (f''=-f, f' sin cos = -f sin^2) => grad h conformal Killing
+[PASS] W4 |grad h|^2 = 1 - h^2 (so X(W) = w'(h)(1-h^2) >= 0 for monotone w, zero only at poles)
+[PASS] W5 SD omega: det(v -> v^omega) = (a^2+b^2+c^2)^2 => dW^F = 0, F SD != 0 forces dW = 0
+[PASS] C1 X_a = X_b (round fibre): Weyl components C_0101, C_0303, C_1313, C_1212 reduce to 0 mod sin^2+cos^2-1
+   Weyl at X_b/X_a = 2, sin chi = 3/5, sin theta = 3/5: {'(0, 1, 0, 1)': '-64/3075', '(0, 3, 0, 3)': '48/1025', '(1, 3, 1, 3)': '-384/42025', '(1, 2, 1, 2)': '6144/1050625'}
+[PASS] C2 X_b/X_a = 2 (MN2 IR ratio): Weyl C_0303 is a nonzero rational at a rational point => fibre not conformally flat
+[PASS] C3 numerator of C_0303 (reduced) vanishes identically at X_a = X_b (factor of X_b - X_a)
+[PASS] F1 magnetic Y6 field: tr_fib S = -P_mixed - 2 P_SigmaSigma, and tr_fib S + 4 rho = 2 P_ff + P_mixed >= 0
+[PASS] F2 end-face demand (J1, CONDITIONAL inputs): tr_fib S_req / rho_req = 4 w_fib = -24/5, -16/3 < -4
+[PASS] Z1 doubling [K]=2K+, [S]=2S+ (incl. eps), [G]=2G+: (Delta_N/Q) and (eps/Q) unchanged
+[PASS] I1 on-record CONDITIONAL test targets: Delta_N(IR) = 2808.6 > 0 and Delta_N(UV) = 19520/3 > 0 (sign condition B2 met)
+[PASS] I2 g_UV < 0: u=1 any n; u=2 for n = 115 (stage-2 IR bracket (110,115]) and all n < 19520/3
+[PASS] I3 [u=2] closure needs n <= Delta_N (eps_ex >= 0 in B5): 115 <= 2808.6
+23/23 PASS
+ALL PASS

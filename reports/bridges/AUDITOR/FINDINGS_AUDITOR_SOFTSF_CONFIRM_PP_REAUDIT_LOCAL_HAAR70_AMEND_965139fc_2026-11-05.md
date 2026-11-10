@@ -1,0 +1,22 @@
+# FINDINGS — AUDITOR Soft SF CONFIRM: PP re-audit Local Haar70 dominated-convergence AMEND ABSORB (2026-11-05)
+REPORTS ONLY. Hash-only. No RECS. No CERT.
+
+## MATCH lines
+- TIP MATCH 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 /workspace/residual-c-field-WRITTEN_PREMISES_DRAFT.md — tip_touched NO
+- OW MATCH a0c2ed5ab2ee7da8af4942eaf7ea86a1d91b3de6645ae4bfe898cddc538e8068 quantum-comp/reports/OWNER_WRITE_CALL_53991ebf_OPEN_LANE_RESOLUTION_AUTH_ALL_PRIMARIES_2026-11-05.md
+- LOCAL FINDINGS AMEND MATCH 56e59a8efba42473070ee29b7c3f34ad7a9ab191e08bda7770d7ec998150ee44 quantum-comp/reports/FINDINGS_LOCAL_SOFTSF_AMEND_HAAR70_DOMINATED_CONVERGENCE_2026-11-05.md (sidecar .sha256 OK)
+- LOCAL PRESS MATCH 210c191aa5b32b250b11a05774d0663d728b1d09a67a82f555da5880cefbd0e1 quantum-comp/reports/PRESS_LOCAL_SOFTSF_AMEND_HAAR70_DOMINATED_CONVERGENCE_PP_THEN_KEEPER_2026-11-05.md (sidecar .sha256 OK)
+- PP FINDINGS MATCH 965139fc45f6cf13e9bf957a6eb2f3f20ad65a804e2b2138f650ea65cdb0bc0e quantum-comp/reports/FINDINGS_PP_SOFTSF_REAUDIT_LOCAL_HAAR70_DC_AMEND_56e59a8e_2026-11-05.md (sidecar .sha256 OK)
+
+## PP footnotes (Written Soft SF only, no CERT)
+- NOTE is CLOSED
+- Tier P PROVED (identity only) stands
+- tip untouched; No CERT
+
+## Prior Keeper MATCH (footnote only; original Haar70 package)
+- Prior Auditor Soft SF MATCH 74343b92ca49fe451407c2d893952064112de4587cece61459820d08f7faf7d2 on LOCAL 7ab0ed68bd825eff645bb9d075769987c25debee7611eb74d0258601a4d68dee / PRESS 9af9bfdbf091db548d5edb739a5178173ae70e56244e97257c4a9cda621d20db / PP 4d9b29868fff637f5a25c5f9019ebd7bc6154b39af114aad5b64250d2c96c639 — stands (footnote only; not re-elevated)
+
+## Standing
+- Layer2 ABSENT
+- Kerr UNLOCKED fa7c879c94b085dea747f87e94ca9c3b2cf8eb915d371e5dcdbebc78f65fb83e standing
+- No CERT. REPORTS ONLY.

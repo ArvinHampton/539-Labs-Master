@@ -1,0 +1,51 @@
+\section{Category B record for Part~III}\label{app:catB}
+Everything in this appendix is Category~B: floating-point evaluation, least-squares fits, or numerical ranks of real or complex matrices by singular
+value decomposition with relative threshold $10^{-9}$. None of it is used in a proof. Data, scripts and logs are in \path{reports/bridges/BRIDGE_C_35/} and
+its subfolders \path{order2}, \path{order3}, \path{order3b}, \path{order3c}, \path{order4a}, and \path{order5}--\path{order17} for items \ref{catB:sh1}--\ref{catB:sh5}; every run was preregistered with a SHA-256 hash recorded before the run.
+\begin{enumerate}[label=D.\arabic*,leftmargin=3em]
+\item\label{catB:lead} \emph{Leading order on the series.} $t\,C(\e(y)e^{-t})$ was fitted at $30$ rational points $y$ using up to $3.4\cdot10^6$ lattice points.
+On a first grid ($t\ge10^{-3}$ scale) $19$ points agree with $I\,G(y)$ to $\le2\%$ (most $\le0.1\%$); on $t\in[3.1\cdot10^{-6},10^{-4}]$, $10$ of the remaining
+$11$ agree to $\le0.7\%$ and $y=-\frac5{12}$ differs by $6.4\%$. The remaining discrepancies occur at denominators $\ge9$, where the constant in the $O(t^{1/2})$
+term of Theorem~\ref{thm:lead} is large.
+\item\label{catB:o2} \emph{Order $t^{-1/2}$ on the series.} On grids $t_j=2^{-j}\cdot0.5/(297.5\,(2m)^2)$, scaled to the denominator and to the long cone edge
+$Q(21,-1)=297.5$, the fitted $t^{-1/2}$ coefficient of $q^{-7/20}C$ agrees with $A_1$ of Theorem~\ref{thm:expansion} to relative error $\le10^{-5}$ at
+$x=\frac12,\frac13,\frac14,\frac56,\frac38,\frac29,\frac3{10},\frac15,\frac17$, and to $\le7.5\cdot10^{-6}$ at $x=1,\frac12,\frac13,\frac23,\frac14,\frac15,\frac16$ in an
+independent run. Grids scaled to the denominator only ($t(2m)^2\le0.08$, so $t\,Q(u_1)(2m)^2$ up to $24$) are outside the regime and do not reproduce $A_1$ at
+denominators $2,3,4,6,8,9$.
+\item\label{catB:o3c} \emph{Order $t^0$ on the series.} On the same cone-scaled grid ($j=0,\dots,7$, fit on $1,t^{1/2},t,t^{3/2}$), the fitted constant term agrees with
+$A_2$ of Theorem~\ref{thm:expansion} at $x\in\{1,\frac12,\frac13,\frac23,\frac14,\frac15,\frac16,\frac17,\frac37\}$ with maximal relative error $1.4\cdot10^{-7}$; for example
+$A_2(1)=-0.3232819-0.4449593i$, $A_2(\frac14)=2.4890282+0.2339631i$, $A_2(\frac12)=0$ to $10^{-15}$. With the sign of the corner term $\mathsf C$ reversed, the
+formula disagrees by relative errors $0.25$ to $2.92$ at the seven points where $|\mathsf C|>0.05$.
+\item\label{catB:o2val} \emph{Values.} $|A_1(\frac12)|=|A_1(\frac52)|=0.44311346272638\ldots=\sqrt\pi/4$ to $15$ digits. The piece decomposition reproduces
+$A_0=I\,G_{\alpha,\beta}$ to $1.4\cdot10^{-17}$ in $63$ cases.
+\item\label{catB:map3} \emph{No single-weight law at order $t^{-1/2}$.} Let $\mathbf A_1(x)$ be the $105$-vector of $A_1$ over the companions, at $138$ rational points.
+With $B_w(x)=|x|^{w}\mathbf A_1(-1/x)$: $\operatorname{rank}\mathbf A_1=105$ and $\operatorname{rank}[\mathbf A_1\,|\,B_w]=138$ for $w=\frac12$ and $w=1$
+($\sigma_{\min}/\sigma_{\max}\approx0.013$). A law $\mathbf A_1(-1/x)=|x|^{-w}M\mathbf A_1(x)$ would force rank $\le105$. The same pipeline applied to $\mathbf A_0$ gives
+rank $36$ and joint rank $36$ at $w=1$ (and $72$ with the wrong sign of the exponent).
+\item\label{catB:o3} \emph{Parts of $A_1$.} With the same test on $216$ points (ranks; joint ranks at $w=\frac12$ / $w=1$): $D$: $58$; $116/98$. $R$: $105$; $210/210$.
+$W[1]$: $90$; $178/156$. $W[\frac72]$: $60$; $116/120$. $W[\frac{595}2]$: $100$; $200/200$. $W$: $105$; $210/210$. None of the parts of Proposition~\ref{prop:A1split}
+closes.
+\item\label{catB:o3b} \emph{Regrouping by quadratic class and by characteristic.} Groups $W[1]$, $W[\frac72]+R[\frac72]$, $W[\frac{595}2]+R[\frac{595}2]$, $D$: ranks
+$90,60,100,58$, joint ranks at $w=\frac12$: $178,116,200,116$. Restricted to the characteristic blocks $\Theta_1=K2\cup K3$ ($70$ columns) and $\Theta_2=K4$ ($35$ columns),
+$A_1$ has ranks $70$ and $35$ with joint ranks $140$ and $70$. No group closes. $A_0$ restricted to $\Theta_1$ and $\Theta_2$ has ranks $24$ and $12$, each closed.
+\item\label{catB:4a} \emph{Sawtooth shadow candidate.} For $A_1-\sum_\lambda\varepsilon_\lambda W[\lambda]$, $\varepsilon\in\{0,1\}^3$, the ranks are
+$105,91,104,90,105,87,103,58$ for $\varepsilon=000,001,010,011,100,101,110,111$ (order $W[1],W[\frac72],W[\frac{595}2]$), with joint ranks at $w=\frac12$ equal to twice the rank
+except $170$ for $101$, and at $w=1$ equal to twice the rank except $156$ for $101$ and $98$ for $111$. No choice closes. The primary candidate $\varepsilon=111$ (completed $A_1=D+R$) has rank $58$ and is falsified; the six secondary subsets do not close.
+Sign control ($A_0$: rank $36$ and closed at $w=1$; joint rank $72$ at the wrong weight) passed. Source: \path{BRIDGE_C_35/order4a}.
+\item\label{catB:4b} \emph{Weight-$0$ law for $A_2$.} For $A_2$ on the $105$ companions at $216$ points: rank $73$, joint rank with the $S$-image $146$ at $w=0$,
+and likewise at $w=\frac12$ and $w=1$; not closed. Mixed span $[A_2,|x|^{1/2}A_1,|x|A_0]$: rank $214$ of $216$ rows, not closed, weakly
+discriminating. Anchor (order3c value of $A_2$ at $x=1$) reproduced exactly; sign control passed. Source: \path{BRIDGE_C_35/order4b}.
+\item\label{catB:sh1} \emph{Holomorphic projection.} The holomorphic projection of $\Phi_{\rm orth}$ matches $S^E$ coefficientwise on the companions tested (order8), and in a
+fresh preregistered test on $K1$ with residual $7.5\cdot10^{-32}$ (order15, C1$'$).
+\item\label{catB:sh2} \emph{Law of the completions.} The completed $\widehat H$, $\widehat G_O$ satisfy the law with $(35^{-1/2}M,T)$ and $\chi=1$ at sample points to residual
+below $10^{-20}$ (orders 5, 6, 11; control $\widehat G_O$ residual $3.6\cdot10^{-21}$). This is now a consequence of Proposition~\ref{prop:zw} and is recorded only as a consistency check.
+\item\label{catB:sh3} \emph{$P$-even sector.} The $P$-even part obeys a law in $|\tau|$ with factor $|x|^{-1}$ on $x>0$ to about $10^{-18}$ and fails for $x<0$ (order12); a
+scalar multiplier $\chi=\pm i$ fails (order12), consistent with Lemma~\ref{lem:W}.
+\item\label{catB:sh4} \emph{Vanishing set.} The predicted zero set of Theorem~\ref{thm:Bc1} agrees with numerically computed endpoint terms on all $105$ companions, on a further
+family of $22$ predicted zeros (gap $0.86$), and on $K1$ (orders 14--16). The line-term identity of Proposition~\ref{prop:lines} was checked on a box of radius $100$ for
+$140$ companions with $0$ mismatches (order16).
+\item\label{catB:sh5} \emph{Order $t^{-1/2}$ identity.} $A_1-A_1^{\rm lines}-A_1(S^o)$ computed from the formulas of Section~\ref{sec:radial} against $A_1$ from the piece decomposition
+has Frobenius norm $4.0\cdot10^{-14}$ against $\|A_1\|=63.35$ over $105$ companions, $216$ points and their $S$-images; the $P$-odd gate residual is $1.0\cdot10^{-15}$ and the fixed-$M$
+control on $A_0$ has residual $1.3\cdot10^{-15}$. A preregistered weight-$\frac12$ law test of this difference returned relative residual $0.999$, which is the ratio of rounding
+noise on a zero target and is non-discriminating. Source: \path{BRIDGE_C_35/order17}.
+\end{enumerate}

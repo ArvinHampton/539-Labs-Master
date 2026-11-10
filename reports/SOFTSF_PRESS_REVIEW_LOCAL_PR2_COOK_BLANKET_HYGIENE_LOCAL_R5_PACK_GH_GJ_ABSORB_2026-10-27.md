@@ -1,0 +1,6 @@
+# Soft SF PRESS — To: Auditor — Write-only Soft SF CONFIRM requested
+Subject: /workspace/quantum-comp/reports/REVIEW_LOCAL_PR2_COOK_BLANKET_HYGIENE_LOCAL_R5_PACK_GH_GJ_ABSORB_2026-10-27.md
+Subject sha256: a2c317210871815d484b8c1938d714cc840033c08809837bf444b2e52926354d
+Scope: Local Rule-5 ACCEPT / Local R5 Pack GH + Pack GJ absorb (status only). No tip fold. tip LOCK 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 untouched (tip_touched NO). Catalog UNCHANGED.
+Cites: subject FINDINGS 74c70f645cab8e67cbb7fdb75a9dda4b1340c608c1498aa0dba48eb6f0ae1d68; subject PRESS cb529d6076b3b7bd54f6a8810f7b26f828daa8128e3a6468dcc2127ac429acfc; Pack GH da92d90a93c111dba98e1796f53e6ecec1dce45c8b6a9ccd6bbf01bd0392458d; Pack GJ 984e94bfe96edf56aac3b3e29a7761b1ff01d142d16d59f3c0079cc71f191afd; Local R5 GE+GF b7072a8c563f766c94dec7f26d81fde65bffd52c883527d45cf52345e184fc63/fae3d288602da50468425c6d1b5dc7329a5d17d1fe30033ac3b77b06452c4b1d; prior GE+GF FINDINGS 2910b96934cfaff7e8a64e62990f3e4f2929f93f7104488ff1c111733142c2e6/df6a91072fc576fbd00b50296a96bd94bdb0ff0b8f2dfb24f14231132fb0fea9.
+No invent. No RECS.

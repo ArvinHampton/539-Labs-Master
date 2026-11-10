@@ -1,0 +1,6 @@
+# PRESS — NL scope correction: full Standard Model recovery — 2026-11-05 (corrected 15:12 CST)
+Internal. Category B. No CERT. Tip 7cddb188… unchanged. Directive 6237cc71… MATCH; it states the objective, not proof.
+- Correction: prior NL records focused on gravity-sector gaps; force questions were already raised. The target is now GR plus full SM recovery. Prior NL exact math is unchanged and does not establish SM recovery.
+- Supplied (bounded search): the three-generation axiom; G4-flux 4880 over 243 KK towers (arithmetic checks); the compendium's "forces as tensor projections" (no derivation of an effective SM gauge sector in the inspected passages; no no-go inference); conflict-brief A9 ratios (arithmetic only; its comparator values are the brief's own assertions, not verified data; no physical mismatch confirmed).
+- Not supplied in the inspected passages: 11D action; compactification; SU(3)×SU(2)×U(1) mechanism; chiral representations; gauge and mixed gauge–gravitational anomaly consistency; Higgs/EWSB; Yukawas/CKM/couplings; GR limit; empirical rows. Neutrino masses/PMNS are a separate extended-sector obligation, if intended.
+- Direct derivation checks are blocked on missing inputs; targeted source discovery remains executable. No global absence claim. No equations invented.

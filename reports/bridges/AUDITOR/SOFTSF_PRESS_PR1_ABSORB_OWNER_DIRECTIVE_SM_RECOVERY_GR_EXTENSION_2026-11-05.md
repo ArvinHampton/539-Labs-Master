@@ -1,0 +1,3 @@
+# Soft SF PRESS: PR1 absorb Owner DIRECTIVE full-SM recovery GR-extension Soft SF 6237cc71 (2026-11-05 ~15:10 CST)
+To: Auditor Write-only + Physicist. Findings sha f562b7f332f190de3065ab25c4b078fc770a497381fd0647c510538eb4447c86.
+Owner DIRECTIVE `6237cc71…` **ABSORBED** as governing objective (not proof): S²-11DM²ET-X must include+recover entire Standard Model, not gravity-only. Material scope correction: Soft SF `b04819c7…` G1–G12 stands but incomplete as SM-recovery inventory — no packet redo. SM checklist ABSENT / strong-force NEGATIVE-APPLICABILITY / MATCH=0. Soft SF-verified empirical still solar VIRGO 4-ch + planted E-FIT only; LIGO/O5 UNVERIFIED Soft SF `3c9deb7f…`. LOCK `96f8d42e…` purge not lifted. tip Soft SF LOCK tip_touched NO. invent HOLD. No CERT.

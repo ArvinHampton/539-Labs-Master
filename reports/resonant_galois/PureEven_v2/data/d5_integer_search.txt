@@ -1,0 +1,5 @@
+(a) integer-m D5/reducible-type fibres found, lambda height <= 1200
+(b) extended integer scan 1<=m<=5000
+   k=-8/5: irreducible with no resolvent root (=> A5): 5000; reducible: 0; irreducible with resolvent root (=> D5): 0
+   k=-4: irreducible with no resolvent root (=> A5): 5000; reducible: 0; irreducible with resolvent root (=> D5): 0
+   k=4/5: irreducible with no resolvent root (=> A5): 5000; reducible: 0; irreducible with resolvent root (=> D5): 0

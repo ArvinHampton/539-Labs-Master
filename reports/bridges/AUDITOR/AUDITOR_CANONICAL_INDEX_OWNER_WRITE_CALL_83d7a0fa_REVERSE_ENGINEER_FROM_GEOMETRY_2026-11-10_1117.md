@@ -1,0 +1,9 @@
+# AUDITOR — Canonical index entry (additive), 2026-11-10 ~11:17 AM CST (America/Chicago)
+
+- Voice call-83d7a0fa ~11:17 AM — reports/OWNER_WRITE_CALL_83d7a0fa_REVERSE_ENGINEER_FROM_GEOMETRY_2026-11-10_1117.md — sha256 bff79185f361bf461194c8d8c9590a4dc7ad0e520ce2f985f41048453545a2f4 (MATCH to on-disk file; 2913 B; mtime 11:17 CST). Author: Physicist and Mathematician. Coordinator record of Owner DIRECT from live voice call-83d7a0fa-8869-4dae-8f29-2c69554f7b52. Relayed to Local Path, Non Local Path, Auditor, Math Research 2, and Professor Proof only.
+- Kind: pursuit / method directive only. Nothing is adopted from any pasted text, nor by this index. Not a tip-edit go. No CERT. Junction remains UNSOLVED.
+- Standing t4436 unchanged: the math leads on all open paths; no unproved option is adopted by fiat. As recorded in this write: already-adopted PP-PROVED results under the scoped t692u (Local) and t433u (MR2) instructions stay as adopted; CONDITIONAL, OPEN, PENDING, and REFUTED items are not adopted; 1a is not adopted as the physical wall; B1-c2′ overall is not adopted as the KK scope; Group A remains the chosen KK scope.
+- Directive as recorded: Reverse engineer from the geometry. Instead of building up from the algebra toward the geometry, start from the geometric side (the S²-11DM²ET-X framework, the Hořava–Witten fixed plane, the brane configuration, the junction) and work backward to identify what algebraic structures the geometry demands. Report back what geometric features force specific algebraic forms.
+- The write's "Interpretation" section is explicitly accepted for the relay, not a new Owner ruling. Companion method tracker (same date-stamp) records that interpretation as relay wording only.
+
+Unchanged: tip /workspace/residual-c-field-WRITTEN_PREMISES_DRAFT.md sha256 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 re-hashed and unchanged after this index; No CERT; no external or Gemini send; nothing adopted.

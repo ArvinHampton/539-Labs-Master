@@ -1,0 +1,93 @@
+{
+ "ctrl_w1": {
+  "rank": 36,
+  "joint": 36,
+  "closed": true
+ },
+ "ctrl_wrong": {
+  "rank": 36,
+  "joint": 72,
+  "closed": false
+ },
+ "control_pass": true,
+ "eps000_w0.5": {
+  "rank": 105,
+  "joint": 210,
+  "closed": false
+ },
+ "eps000_w1.0": {
+  "rank": 105,
+  "joint": 210,
+  "closed": false
+ },
+ "eps001_w0.5": {
+  "rank": 91,
+  "joint": 182,
+  "closed": false
+ },
+ "eps001_w1.0": {
+  "rank": 91,
+  "joint": 182,
+  "closed": false
+ },
+ "eps010_w0.5": {
+  "rank": 104,
+  "joint": 208,
+  "closed": false
+ },
+ "eps010_w1.0": {
+  "rank": 104,
+  "joint": 208,
+  "closed": false
+ },
+ "eps011_w0.5": {
+  "rank": 90,
+  "joint": 180,
+  "closed": false
+ },
+ "eps011_w1.0": {
+  "rank": 90,
+  "joint": 180,
+  "closed": false
+ },
+ "eps100_w0.5": {
+  "rank": 105,
+  "joint": 210,
+  "closed": false
+ },
+ "eps100_w1.0": {
+  "rank": 105,
+  "joint": 210,
+  "closed": false
+ },
+ "eps101_w0.5": {
+  "rank": 87,
+  "joint": 170,
+  "closed": false
+ },
+ "eps101_w1.0": {
+  "rank": 87,
+  "joint": 156,
+  "closed": false
+ },
+ "eps110_w0.5": {
+  "rank": 103,
+  "joint": 206,
+  "closed": false
+ },
+ "eps110_w1.0": {
+  "rank": 103,
+  "joint": 206,
+  "closed": false
+ },
+ "eps111_w0.5": {
+  "rank": 58,
+  "joint": 116,
+  "closed": false
+ },
+ "eps111_w1.0": {
+  "rank": 58,
+  "joint": 98,
+  "closed": false
+ }
+}

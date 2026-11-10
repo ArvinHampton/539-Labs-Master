@@ -1,0 +1,15 @@
+[PASS] Q1a T-Q = 2N- + (u-1)n + eps_ex
+[PASS] Q1b [u>=1, n>=0] T-Q has only nonnegative integer coeffs in (N-,|n|,delta,v-1): 2*Nm + delta*v + delta + m*v
+[PASS] Q1b [u>=1, n<=0] T-Q has only nonnegative integer coeffs in (N-,|n|,delta,v-1): 2*Nm + delta*v + delta + m*v + 2*m
+[PASS] Q1c [u<1 witness] u=1/2, all charge in one BPS block (n=Q, N+-=0): T-Q = -Q/2 < 0 (so A1 cannot extend below u=1)
+[PASS] Q1d [u<1] T-uQ = (1-u)N+ + (1+u)N- + u(e_u-n) (A2 form)
+[PASS] Q1e closure T-Q-Delta_N equals u e_u - n + 2N- - Delta_N (PLUS 2N-)
+[PASS] Q1f GB8's filed g = u e_u - n - 2N- - Delta_N differs from closure by -4N- (sign error unless N-=0)
+[PASS] Q1g A5 literal [u!=1] overclaim for n<0: u=2,n=-1,Delta_N=0 gives target 1 < Bogomolny floor 4
+[FAIL] Q2a q = 2(F01F23 - F02F13 + F03F12) (Pfaffian form)
+[PASS] Q2b ** = 1 on 2-forms in 4D Euclidean
+[FAIL] Q2c rho - q/2 = (1/8) sum_ordered (F-*F)^2 = 1/4 sum_{a<b}; rho + q/2 = (1/8) sum (F+*F)^2
+[PASS] Q3 SD: omega is SD and det(v -> v^omega) = (a^2+b^2+c^2)^2 (up to sign) => injective for omega!=0
+[PASS] Q3 ASD: omega is ASD and det(v -> v^omega) = (a^2+b^2+c^2)^2 (up to sign) => injective for omega!=0
+[PASS] Q4 tangential grad of |y|^2 on S^4 = 2(-|y|^2 x, (1-|y|^2) y): zero set {y=0} U {x=0} (an S^2 and an S^1; empty interior)
+v1 partial exit=0 (Q1-Q4 only; v1 Q5 killed after >10 min, never completed)

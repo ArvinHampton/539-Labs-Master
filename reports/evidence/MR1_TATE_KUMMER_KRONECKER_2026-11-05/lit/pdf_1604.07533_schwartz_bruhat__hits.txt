@@ -1,0 +1,16 @@
+4:transform on the Schwartz-Bruhat space
+8:on the space of Schwartz-Bruhat functions on locally compact
+9:Abelian groups. The result states that any appropriately additive bijection of the Schwartz space onto itself, which interchanges
+27:Key words and phrases. Fourier transform, Schwartz-Bruhat space.
+39:of tempered distributions, while the conclusion states that the map is
+42:on the Schwartz space of the Heisenberg group[11]. This result did
+57:state and prove this characterisation of the Fourier transform on LCA
+60:Before stating our results, we recall the Schwartz-Bruhat space of
+62:F. Bruhat[3] extended the notion of a smooth function to a large
+64:Osborne characterised the Schwartz-Bruhat space of functions on a
+90:We now recall the definition of S = S(G), the Schwartz-Bruhat
+94:the Schwartz-Bruhat space if f satisfies the following conditions:
+500:[3] F. Bruhat, Distributions sur un groupe localement compact et applications à
+516:on the Schwartz space, submitted for publication. matharXiv:1604.05551.
+519:[12] M. Scott Osborne, On the Schwartz-Bruhat Space and the Paley-Wiener theorem for locally compact Abelian groups, Journal of Functional Analysis 19
+524:[14] A. Wawrzyńczyk, On tempered distributions and Bochner-Schwartz theorem

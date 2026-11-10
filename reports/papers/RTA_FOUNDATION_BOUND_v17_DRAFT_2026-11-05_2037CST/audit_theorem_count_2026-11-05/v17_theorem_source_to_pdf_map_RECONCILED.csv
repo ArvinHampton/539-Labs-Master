@@ -1,0 +1,64 @@
+num,label,file,line,title,pdf_page,pdf_snip
+11.1,thm:A,partII/s03_main.tex,6,Shared remainder,44,"Theorem 11.1 (Shared remainder). As formal q-series,"
+11.2,thm:B,partII/s03_main.tex,19,Real-quadratic decomposition and ray class,44,Theorem 11.2 (Real-quadratic
+11.3,thm:C,partII/s03_main.tex,31,Radial asymptotics and partial zeta values,45,"Theorem 11.3 (Radial asymptotics and partial zeta  √   values). As t → 0+ , with q = e−t , Psorth ="
+11.4,thm:D,partII/s03_main.tex,47,Gauss-mean pattern and zero set,45,"Theorem 11.4 (Gauss-mean pattern and zero set). For gcd(h,      √ m) = 1: G(h/m) = 0 if 2 | m"
+11.5,thm:E,partII/s03_main.tex,55,Baker obstruction: scalar no-go,45,Theorem 11.5 (Baker obstruction: scalar no-go). (i) (Additive.) There is no identity S =
+11.6,thm:F,partII/s03_main.tex,72,Theta lift and vector-valued $S/T$ law,45,"Theorem 11.6 (Theta lift and vector-valued S/T law). Let uα,β (α ∈ ({0, a}+L′ )/Z2 , β ∈ {0, −a};"
+11.7,thm:G,partII/s03_main.tex,92,Lewis--Zagier period formula,46,Theorem 11.7 (Lewis–Zagier√period formula). For z ∈ H let Ψ(z) = EL (−1/z) − (z/ 35)ER (z)
+11.8,thm:H,partII/s03_main.tex,115,Eisenstein/cusp split,46,"Theorem 11.8 (Eisenstein/cusp split). uL = ua,0 and uR are pure Eisenstein (combinations of"
+11.9,thm:I,partII/s03_main.tex,130,Herglotz closed form,47,"Theorem 11.9 (Herglotz closed form). On U = H ∪ {Re z > 0},"
+11.10,thm:J,partII/s03_main.tex,139,Closed form of $E_R$,47,Theorem 11.10 (Closed form of ER ).
+14.1,thm:profile,partII/s06_lift.tex,12,Profile $S/T$ law,51,"Theorem 14.1 (Profile S/T law). For all α, β ∈ Q2 and all x ∈ Q \ {0},"
+15.3,thm:coc5,partII/s07_lz.tex,146,Cocycle of the $E$-part,57,"Theorem 15.3 (Cocycle of the E-part). Let s = 7, and let uL and EL be as in §15."
+19.3,thm:tensor7,partII/s11_family.tex,24,"Tensor factorisation, $s=7$",64,"Theorem 19.3 (Tensor factorisation, s = 7). (i) In the adapted basis u′x,ϵ,δ built on the generator"
+19.5,thm:tensorodd,partII/s11_family.tex,78,Tensor factorisation for odd $s$,65,Theorem 19.5 (Tensor factorisation for odd s). Let s ≥ 5 be odd and n = ns . Then L′ /Z2 ∼    = Z/n
+20.1,thm:dims,partII/s12_dims.tex,5,Dimensions,66,"Theorem 20.1 (Dimensions). (i) Orbit bound. dim V ≤ #{consistent hγ, −1i-orbits}, and the"
+20.5,thm:s98,partII/s12_dims.tex,86,$\dim V(98)=2406$,68,"Theorem 20.5 (dim V (98) = 2406). At s = 98 (m = 7), dim V = 2406. The kernel of the lift on"
+20.11,thm:psq6,partII/s12_dims.tex,141,Prime-square structure,70,"Theorem 20.11 (Prime-square structure). Assume (C1) Theorem 19.5 and (C2) CRT surjectivity,"
+21.2,thm:coset5,partII/s13_uL.tex,21,Coset property,72,"Theorem 21.2 (Coset property). For every s and every c-part c, Tc +ψ(W) = Tc , and S0 = ψ(W)."
+21.3,thm:sqf5,partII/s13_uL.tex,26,Squarefree criterion,73,Theorem [split] p     21.3 (Squarefree criterion). Let s be odd with s(s − 2) squarefr
+22.1,thm:Hs,partII/s14_hs.tex,7,$H_s$ in closed form,74,"Theorem 22.1 (Hs in closed form). (i) Structure. Q(c1 ) = −(s − 2)/2, Q(c2 ) = −(7s − 32)/2,"
+22.5,thm:p72,partII/s14_hs.tex,68,Period $72$ at $x=\tfrac13$,75,"Theorem 22.5 (Period 72 at x = 13 ). Let ε = (−1)v2 (gcd(s,8)) . Then ea depends only on (s mod"
+23.7,thm:axes7,partII/s15_cone.tex,49,Closed forms for $H_s^{\rm axes}$,80,"Theorem 23.7 (Closed forms for Hsaxes ). Let cr be the coeﬀicient of tr in Hsaxes (e−t ) (x = 0),"
+24.1,thm:cthird,partII/s16_cthird.tex,5,"$\Cthird$: one coset, one cone weight, one kernel, two chains",81,"Theorem 24.1 (Cthird : one coset, one cone weight, one       P kernel, two chains). Let F = [e1 , γe"
+24.4,thm:O2,partII/s16_cthird.tex,51,Phase obstruction,82,"Theorem 24.4 (Phase obstruction). Let Γ ⊂ SL2 (Z) have finite index, ρ any finite-dimensional"
+24.5,thm:O1,partII/s16_cthird.tex,59,Sign obstruction,82,"Theorem 24.5 (Sign obstruction). If V is holomorphic and finite-dimensional on Γ 3 S, T N ,"
+24.6,thm:Pstruct,partII/s16_cthird.tex,67,Structure of $\Cthird$,82,"Theorem 24.6 (Structure of Cthird ). (i) The decomposition above, with ϑhol a signature-(1, 1)"
+25.1,thm:zetacurve,partII/s17_sfamily.tex,5,Rational $\zeta$-curve,83,"Theorem 25.1 (Rational ζ-curve). For every integer s ≥ 3, with c0 = s/(4(s − 2)) and ζE (w; s) ="
+25.2,thm:Gs,partII/s17_sfamily.tex,22,Radial expansion of $g_s$,83,"Theorem 25.2 (Radial expansion of gs ). For every real s > 0, gs (e−t ) ∼ k≥0 ck (s)tk as t → 0+ ,"
+26.2,thm:weil8,partII/s18_k3.tex,44,Weil realisation of the label representation,86,Theorem 26.2 (Weil realisation of the label representation). (i) ρlab ∼= ρN2 as representations
+26.7,thm:K3exist8,partII/s18_k3.tex,105,$N_2$-polarised K3 surfaces,88,"Theorem 26.7 (N2 -polarised K3 surfaces). (i) The primitive embedding N2 ,→ ΛK3 is unique"
+26.9,thm:aut8,partII/s18_k3.tex,132,Automorphisms of $N_2$-polarised K3 surfaces,89,"Theorem 26.9 (Automorphisms of N2 -polarised K3 surfaces). Let X be as in Theorem 26.7, with"
+27.4,thm:U2,partII/s19_uniq.tex,73,Uniqueness of the Maass completion,92,Theorem 27.4 (Uniqueness of the Maass completion).              (a) M (ρ) = C ulift ⊕ S(ρ).
+27.7,thm:uniq9,partII/s19_uniq.tex,121,Uniqueness and residual ambiguity of the vector completion,94,"Theorem 27.7 (Uniqueness and residual ambiguity of the vector completion). Let u = ulift , with"
+27.13,thm:SrhoDim,partII/s19_uniq.tex,237,Dimension of the cusp space,97,Theorem 27.13 (Dimension of the cusp space). dim S(ρ)A3 X + = dim S(ρ)B1 X +                        
+33.4,thm:STlaw,partIII.tex,41,$T$-law and $S$-law,106,"Theorem 33.4 (T -law and S-law). For α, β ∈ Q2 and x ∈ Q,"
+34.5,thm:p3profile,partIII.tex,192,Profile of $C$ and of $q^{-7/20}C$,110,Theorem 34.5 (Profile of C and of q −7/20 C). Let G(x) = (2m)−2 v mod 2m e(xQ7 (v)). Then
+34.6,thm:lead,partIII.tex,203,Radial asymptotics at leading order,110,Theorem 34.6 (Radial asymptotics at leading order). Let I = log(6 + 35)/(2 35). For every
+34.7,thm:SlawC,partIII.tex,216,Vector-valued $S$-law of $C$ at leading order,110,Theorem 34.7 (Vector-valued S-law of C at leading order). Let ΛC (y) = limt→0+ t C(e(y)e−t ).
+35.4,thm:piece,partIII.tex,314,Expansion of a piece,112,"Theorem 35.4 (Expansion of a piece). Let (p, q, r), l1 , l2 , Q0 be as above with p, r > 0, q ≥ 0,"
+35.6,thm:expansion,partIII.tex,368,Radial expansion of the companion series,113,Theorem 35.6 (Radial expansion of the companion series). For each of the 105 companion series
+37.10,thm:Bc1,partIII_shadow_v5.tex,126,,118,"Theorem 37.10. Bĉ1 ,ê2 = ε 140 ϑ+ ϑ− with ε ∈ {±1} fixed by the orientation of ê2 . It vanishes"
+37.11,thm:lap,partIII_shadow_v5.tex,146,,118,"Theorem 37.11. (∆0 − 14 )Φorth = π2 y 3/2 Bz(µ),z ′ (µ) µ=0 = π2 140 y 3/2 ϑ+ ϑ− (the sign being tha"
+37.13,thm:hybrid,partIII_shadow_v5.tex,189,,119,Theorem 37.13. For the 105 companions:
+38.2,thm:radtriv,partIII_radial_v5.tex,24,,120,"Theorem 38.2. Let Fbodd = 12 G     b For every companion and rational x, Fbodd (x + it/2π) ="
+38.4,thm:evenA1,partIII_radial_v5.tex,54,,121,"Theorem 38.4. Let E = 12 (1 + s1 s2 ). For every companion and rational x, A1 (S E ) = 0."
+38.5,thm:A1exact,partIII_radial_v5.tex,72,,121,"Theorem 38.5. For every companion and P     rational x, A1 = Alines"
+39.2,thm:A2odd,partIII_order0_v6.tex,16,,122,"Theorem 39.2. For every companion and rational x, A2 (S o ) = 0."
+39.3,thm:A2even,partIII_order0_v6.tex,25,,122,"Theorem 39.3. For every companion and rational x, with the coset classes r of α + Z2 modulo a"
+39.4,thm:A2exact,partIII_order0_v6.tex,43,,122,Theorem 39.4. A2 = Alines2    + Acorner
+39.23,thm:xinv,partIII_inv_v12.tex,17,,126,"Theorem 39.23. For every real-weight sum Y and rational x 6= 0,"
+40.1,thm:cind-ind,partIII_modlocal_v15.tex,7,Equality of compact and ordinary induction,128,Theorem 40.1 (Equality of compact and ordinary induction). Let χ : P → Fp be a smooth
+40.2,thm:soc-k1,partIII_modlocal_v15.tex,24,Socle reduction to $K_1$-invariants,129,Theorem 40.2 (Socle reduction to K1 -invariants). Let π be any smooth representation of K (or
+40.3,thm:colmez-d12,partIII_modlocal_v15.tex,46,Dictionary identities,129,"Theorem 40.3 (Dictionary identities).         1. With the conventions above,"
+40.5,thm:filtr-10,partIII_modlocal_v15.tex,78,Filtration weight ten,130,Theorem 40.5 (Filtration weight ten).
+40.6,thm:breuil-soc,partIII_modlocal_v15.tex,93,Breuil socle formula,130,Theorem 40.6 (Breuil socle formula). Let ρ be absolutely irreducible with
+40.10,thm:irreps-gl2,partIII_modlocal_v15.tex,138,Classification of irreducibles,131,Theorem 40.10 (Classification of irreducibles). Every irreducible Fp -representation V of GL2 (Fp )
+41.1,thm:local-F1,partIII_local_adv_v16.tex,13,Local cite-lift F1,132,Theorem 41.1 (Local cite-lift F1). Consider the residual path problem (RPP) of deciding whether
+41.7,thm:V35,partIII_local_adv_v16.tex,113,Dimension and narrow components,135,"Theorem 41.7 (Dimension and narrow components). One has dim V35    Hilb = 14, with the split (41.3)"
+41.10,thm:D1,partIII_local_adv_v16.tex,143,Rank-one classifier $D_1$,136,Theorem 41.10 (Rank-one classifier D1 ). In the thin truncated complex F one has
+43.8,thm:v17-bare,partIII_boundary_rank_v17.tex,133,Bare stacked matrix of rank~$24$,142,Theorem 43.8 (Bare stacked matrix of rank 24). With the complementary selectors of Defini-
+43.9,thm:v17-M36,partIII_boundary_rank_v17.tex,147,Original-table matrix~$M$ of exact rank~$36$,142,Theorem 43.9 (Original-table matrix M of exact rank 36). Let H be built from the original table
+43.10,thm:v17-M48,partIII_boundary_rank_v17.tex,164,Singleton tuning restores full rank,143,Theorem 43.10 (Singleton tuning restores full rank). Tune only axy3 from 6 − s to 7 − s. Then
+44.3,thm:found,found_v6.tex,32,The normalized Bridge Series and the 35-component law vector,146,Theorem 44.3 (The normalized Bridge Series and the 35-component law vector). The following

@@ -1,0 +1,17 @@
+PARI stack size set to 200000000 bytes, maximum size set to 200003584
+target f conductor 49 lambda {3: 0, 5: 0, 11: 4, 13: 0, 17: 0, 19: 0, 23: 8, 29: 2, 31: 0, 37: -6, 41: 0, 43: -12}
+raw generators 18 [0s]
+rank on n<=3000: 17 [0s]
+D=1: equations 1060, unknowns 17, nullity 0 [0s]
+D=-1: equations 1060, unknowns 17, nullity 0 [0s]
+D=2: equations 1060, unknowns 17, nullity 0 [0s]
+D=-2: equations 1060, unknowns 17, nullity 0 [0s]
+D=7: equations 1060, unknowns 17, nullity 2 [0s]
+  kernel vec 0: support 2 generators; h mod PM (n<60, nonzero only): {2: -4, 4: -4, 8: -4, 15: 8, 16: -4, 18: 4, 22: -8, 23: 8, 29: 8, 30: 8, 32: 4, 36: -4, 37: 8, 39: 8, 46: -8, 50: 4, 51: -8, 58: -8}
+   support: [((1, 1, 49, 1, 0), -1), ((7, 1, 1, 1, 0), 1)]
+  kernel vec 1: support 2 generators; h mod PM (n<60, nonzero only): {1: 2, 2: -2, 4: -2, 8: -6, 9: 2, 15: 4, 16: -6, 18: 2, 22: -4, 23: 4, 25: 2, 29: 8, 30: 4, 32: -2, 36: -2, 37: 8, 39: 4, 46: -4, 50: 2, 51: -4, 58: -4}
+   support: [((2, 1, 49, 1, 0), -1), ((14, 1, 1, 1, 0), 1)]
+D=-7: equations 1060, unknowns 17, nullity 0 [0s]
+D=14: equations 1060, unknowns 17, nullity 0 [0s]
+D=-14: equations 1060, unknowns 17, nullity 0 [0s]
+SUMMARY f 6000 {1: 0, -1: 0, 2: 0, -2: 0, 7: 2, -7: 0, 14: 0, -14: 0} [0s]

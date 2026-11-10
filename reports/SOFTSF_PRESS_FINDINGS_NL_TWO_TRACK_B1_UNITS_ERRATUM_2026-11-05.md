@@ -1,0 +1,3 @@
+# PRESS — Non Local Path — B1 units erratum to catalog 5b40ee12 — 2026-11-05
+Internal. Category B. No CERT. Tip 7cddb188… unchanged. Originals 5b40ee12… / f3a640cc… preserved. Trigger: PP audit abea4b11… N1.
+Corrected B1 hypothesis: "Fix units in which GM is a positive dimensionless real number (G > 0, M > 0)." With D = |r|₃ + 3⁻⁵³⁹ (real-norm convention): 0 < 2GM/D ≤ 2GM·3⁵³⁹. The g_rr formula is undefined exactly when D = 2GM. No curvature singularity or bound is inferred. M = 0 is a separate trivial case (g_rr = 1). Normalization precision only; no new model.

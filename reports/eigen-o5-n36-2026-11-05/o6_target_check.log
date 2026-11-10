@@ -1,0 +1,5 @@
+corpus sha256 5a8f863093c6eacb57a03b74b8c3906808111fbe43f6ba9677aebae4b8f17f9e
+lines 19-29 mentioning a target state: NONE
+target 0 W 2 N 4 [(0, 0, -1), (1, 2, 3)]
+target 1 W 0 N 2 [(0, 1, 1), (1, 0, -1)]
+target 2 W 4 N 4 [(0, 2, 3), (1, 1, 1)]

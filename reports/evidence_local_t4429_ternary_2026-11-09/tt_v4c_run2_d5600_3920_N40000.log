@@ -1,0 +1,15 @@
+PARI stack size set to 600000000 bytes, maximum size set to 600002560
+d=5600: reduced forms 3284, distinct theta 648 [12s]
+  rank of theta span (n<=4444) = 551
+  [g] d=5600 (nullity,specific) by D at (0.6N,N): [(1, [(0, 0), (0, 0)]), (-1, [(0, 0), (0, 0)]), (2, [(0, 0), (0, 0)]), (-2, [(0, 0), (0, 0)]), (5, [(0, 0), (0, 0)]), (-5, [(0, 0), (0, 0)]), (7, [(0, 0), (0, 0)]), (-7, [(0, 0), (0, 0)]), (10, [(0, 0), (0, 0)]), (-10, [(0, 0), (0, 0)]), (14, [(0, 0), (0, 0)]), (-14, [(0, 0), (0, 0)]), (35, [(0, 0), (0, 0)]), (-35, [(0, 0), (0, 0)]), (70, [(0, 0), (0, 0)]), (-70, [(0, 0), (0, 0)])] [35s]
+  [Xi] d=5600 (nullity,specific) by D at (0.6N,N): [(1, [(0, 0), (0, 0)]), (-1, [(0, 0), (0, 0)]), (2, [(0, 0), (0, 0)]), (-2, [(0, 0), (0, 0)]), (5, [(0, 0), (0, 0)]), (-5, [(0, 0), (0, 0)]), (7, [(0, 0), (0, 0)]), (-7, [(0, 0), (0, 0)]), (10, [(0, 0), (0, 0)]), (-10, [(0, 0), (0, 0)]), (14, [(0, 0), (0, 0)]), (-14, [(0, 0), (0, 0)]), (35, [(0, 0), (0, 0)]), (-35, [(0, 0), (0, 0)]), (70, [(0, 0), (0, 0)]), (-70, [(0, 0), (0, 0)])] [57s]
+d=3920: reduced forms 2090, distinct theta 391 [65s]
+  rank of theta span (n<=4444) = 342
+Traceback (most recent call last):
+  File "/workspace/quantum-comp/reports/evidence_local_t4429_ternary_2026-11-09/tt_v4c_ternary_genus_eigensolve.py", line 73, in <module>
+    rR=rows_for(REF[T],D,N_)
+  File "/workspace/quantum-comp/reports/evidence_local_t4429_ternary_2026-11-09/tt_v4c_ternary_genus_eigensolve.py", line 56, in rows_for
+    lam=LAM[T]; PR=[p for p in PR0 if d%p!=0 and not (T=='Xi' and p==5)]
+        ~~~^^^
+KeyError: 'f'
+EXIT 1

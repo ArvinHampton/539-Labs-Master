@@ -1,0 +1,11 @@
+exact +-1/2 four-term solutions: 48
+distinct supports: [(3, 37, 47, 53), (3, 41, 53, 71), (3, 53, 79, 89), (37, 41, 47, 71), (37, 47, 79, 89), (41, 71, 79, 89)]
+  support (3, 37, 47, 53): p0^-1*S = [1, 59, 109, 111], element orders [1, 6, 6, 2], closed under mult: False
+  support (3, 41, 53, 71): p0^-1*S = [1, 107, 111, 117], element orders [1, 12, 2, 12], closed under mult: False
+  support (3, 53, 79, 89): p0^-1*S = [1, 73, 111, 123], element orders [1, 12, 2, 12], closed under mult: False
+  support (37, 41, 47, 71): p0^-1*S = [1, 73, 111, 123], element orders [1, 12, 2, 12], closed under mult: False
+  support (37, 47, 79, 89): p0^-1*S = [1, 97, 111, 127], element orders [1, 4, 2, 4], closed under mult: False
+  support (41, 71, 79, 89): p0^-1*S = [1, 9, 19, 111], element orders [1, 6, 6, 2], closed under mult: False
+example alpha: {3: '1/2', 37: '1/2', 47: '1/2', 53: '-1/2'}
+exact 48x48 basis check B(Te_g,Te_h) = B(e_g,e_h): True
+chi140 on support (Kronecker 140/p): all -1 (K90 inert list)

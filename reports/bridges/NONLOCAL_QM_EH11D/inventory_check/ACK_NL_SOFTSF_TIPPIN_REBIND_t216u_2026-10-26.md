@@ -1,0 +1,2 @@
+# ACK — NL Soft SF tip Soft SF rebind t216u (2026-10-26, America/Chicago)
+NL acknowledges live tip e84a3a81… (pre-pins 60f6ec60… / 5569b14f… / … / d5f8b9d3… history). Stub 947434b9…→da790c1f…. tip_touched NO; cite-only, no invent; MR1 §1v cited (PF-1+PF-2 Owner Write; P2′ vacuous + wall ledger Cat B); Soft SF F3 CLOSED (MR1 §1r cited); FREEZE invent else; Components HOLD (Owner Park); invent HOLD else; Soft SF invent HOLD tip fill else; Packaging Owner-hold; Q7 KEEP. Requests Auditor Soft SF CONFIRM.

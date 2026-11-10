@@ -1,0 +1,118 @@
+% Copy-pasteable LaTeX source for Sections 4--5 only.
+% Uncompiled fragment: requires amsmath, amssymb (and standard article/amsart preamble).
+% Does not define or assume theorem/proof environments.
+% Integrated from verified Addenda S/T/V (2026-11-05); not new research.
+
+\section*{4. Uniqueness of Boundary Vector Solutions via Singleton Orbit Tuning}
+
+To establish conditions under which the boundary system yields a unique solution vector, we verify the rank of the integrated system matrix. The original orbit-weight table of Section~3 is nonuniform and yields exact rank
+\[
+\operatorname{rank} M = 36,\qquad \dim\ker M = 12,
+\]
+arising from a period-two coordinate symmetry on the cross-block. Full rank is recovered by a nonuniform singleton-orbit parameter variant that preserves the original spatial boundary selectors.
+
+Let \(G\cong C_2\times C_4\times C_6\) and work over the coefficient field \(\mathbb{K}=\mathbb{Q}(\sqrt{35})\) with the positive real embedding of \(\sqrt{35}\). Write \(s=\sqrt{35}\). Configure
+\[
+S_0=\begin{pmatrix} I_{24}&\mathbf{0}_{24}\end{pmatrix},\qquad
+S_M=\begin{pmatrix}\mathbf{0}_{24}&I_{24}\end{pmatrix},
+\]
+and set
+\[
+M'=\begin{pmatrix}S_0\\ S_M\,\mathcal{T}\,H'\end{pmatrix},
+\]
+where \(\mathcal{T}=R_t\) for \(t=(1,2,3)\). Isolate the singleton orbit \(O_6=\{xy^3\}\) and tune only
+\[
+a_{xy^3}=6-s\;\longrightarrow\;7-s,
+\]
+keeping all other \(47\) coefficients fixed exactly as in the Section~3 table, including \(a_1=2+s\) and \(a_{y^3}=0\). The involution \(\pi\) fixes \(xy^3\), so the twisted symmetry \(a_c=a_{c^{-1}y^{-2}}\) is preserved; moreover \(7-s>0\). The scalar layer degree shifts to the positive value \(128+39s\).
+
+\noindent\textbf{Theorem~4} (Full rank and invertibility of the tuned operator).
+Let \(H'=\sum_{c\in G}a_c R_{cy}\) be the shift-symmetric layer transfer operator with the tuned value \(a_{xy^3}=7-s\) and all other \(47\) coefficients fixed to the original table. Then \(H'\) is invertible over \(\mathbb{K}\), and
+\[
+\operatorname{rank} M'=48,\qquad \ker M'=\{\mathbf{0}\}.
+\]
+Consequently \(M'x=\mathbf{0}\) has only the trivial solution, and for every \(b\in\mathbb{K}^{48}\) the boundary system \(M'x=b\) has a unique vector solution \(x\). This is linear-algebraic uniqueness of vectors, not uniqueness of a combinatorial path.
+
+\noindent\textbf{Proof.}
+In the \(j\in\{0,1\}\) spatial partition,
+\[
+\mathcal{T}=\begin{pmatrix}\mathbf{0}_{24}&\Theta_A\\ \Theta_B&\mathbf{0}_{24}\end{pmatrix},\qquad
+H'=\begin{pmatrix}H_{00}&H_{01}'\\ H_{10}'&H_{11}\end{pmatrix}
+=\begin{pmatrix}H_{00}&H_{01}+I_{24}\\ H_{10}+I_{24}&H_{11}\end{pmatrix}.
+\]
+Since \(S_M\mathcal{T}=[\Theta_B\ \mathbf{0}]\), one has \(S_M\mathcal{T}H'=[\Theta_B H_{00}\ \ \Theta_B H_{01}']\), whence
+\[
+M'=\begin{pmatrix}I_{24}&\mathbf{0}_{24}\\ \Theta_B H_{00}&\Theta_B H_{01}'\end{pmatrix}
+\longrightarrow
+\begin{pmatrix}I_{24}&\mathbf{0}_{24}\\ \mathbf{0}_{24}&\Theta_B H_{01}'\end{pmatrix}
+\]
+by exact block row reduction. As \(\Theta_B\in\mathrm{GL}_{24}(\mathbb{Z})\) is a permutation matrix,
+\[
+\operatorname{rank} M'=24+\operatorname{rank} H_{01}'.
+\]
+The cross-block entries obey
+\[
+(H_{01})_{(k_1,l_1),(k_2,l_2)}=a_{\,x\,y^{k_1-k_2+3}z^{l_1-l_2}}.
+\]
+Because \((xy^3)\cdot y=x\) and \(R_x\) acts as the identity on the \(C_4\times C_6\) factors while flipping the \(C_2\)-slice, the singleton tuning yields \(H'=H+R_x\), so both cross-blocks shift by \(+I_{24}\).
+
+Characters of \(G\) may be evaluated over \(\mathbb{C}\) (we do not claim that \(\mathbb{K}\) is a splitting field). In the character basis the eigenvalues of \(H'\) undergo the character-dependent (non-uniform) shift
+\[
+\lambda'_\chi=\lambda_\chi+(-1)^p,
+\]
+i.e.\ \(+1\) when \(p=0\) and \(-1\) when \(p=1\). The exact spectrum of \(H'\) comprises \(14\) distinct values of total multiplicity \(48\):
+\begin{center}
+\begin{tabular}{c|c||c|c}
+\(\lambda'\) & mult. & \(\lambda'\) & mult.\\
+\hline
+\(128+39s\) & \(1\) & \(2-s\) & \(3\)\\
+\(2-9s\) & \(2\) & \(4-s\) & \(1\)\\
+\(6-9s\) & \(2\) & \(-26+7s\) & \(1\)\\
+\(24-9s\) & \(1\) & \(-24+7s\) & \(2\)\\
+\(-6-s\) & \(1\) & \(-20+7s\) & \(2\)\\
+\(-4-s\) & \(3\) & \(-18+7s\) & \(1\)\\
+\(-2-s\) & \(14\) & & \\
+\(-s\) & \(14\) & total & \(48\)
+\end{tabular}
+\end{center}
+Each eigenvalue has the form \(u+vs\) with \(u,v\in\mathbb{Q}\) and \(v\neq 0\). Irrationality of \(s\) over \(\mathbb{Q}\) forces \(\lambda'\neq 0\), so \(H'\) is invertible over \(\mathbb{K}\).
+
+Whole-operator invertibility of \(H'\) is independent of, and not necessary for, the boundary rank criterion: that criterion is invertibility of \(H_{01}'=H_{01}+I_{24}\). Passing to \(\mu'_k=\mu_k+1\) yields the exact \(9\)-value spectrum of \(H_{01}'\) (total multiplicity \(24\)):
+\begin{center}
+\begin{tabular}{c|c}
+\(\mu'\) & mult.\\
+\hline
+\(1\) & \(12\)\\
+\(77+16s\) & \(1\)\\
+\(5\) & \(1\)\\
+\(-3\) & \(1\)\\
+\(3\) & \(2\)\\
+\(-1\) & \(2\)\\
+\(11-8s\) & \(2\)\\
+\(15-8s\) & \(2\)\\
+\(21-8s\) & \(1\)\\
+\hline
+total & \(24\)
+\end{tabular}
+\end{center}
+Every rational eigenvalue is nonzero, and every irrational eigenvalue has nonzero \(s\)-coefficient, so none vanishes. Thus \(\operatorname{rank} H_{01}'=24\) and \(\operatorname{rank} M'=48\), giving a trivial kernel and a unique vector solution \(x\) for every \(b\in\mathbb{K}^{48}\). \hfill\(\square\)
+
+\section*{5. Status of the Global Capacity Defect Identity}
+
+Theorem~4 shows that the tuned variant \(M'\) has full column rank under the standard spatial selectors. This vector uniqueness does not establish path uniqueness, nor does it close any capacity identity. Define the global capacity defect by the absolute path mass \(N\) and the net signed path weight \(W\):
+\[
+\mathrm{Defect}=N-|W|.
+\]
+The identification of \(N\) and \(W\) with the regular representation operators remains unproved. Rank of \(M'\) therefore neither proves path uniqueness or a capacity identity, nor demonstrates independence of those combinatorial quantities from the algebraic kernel. The capacity defect identity remains OPEN.
+
+\medskip
+\noindent\textbf{Final ledger (compact).}
+\begin{itemize}
+\item Original table (Section~3, nonuniform): \(\operatorname{rank} M=36\) exactly, \(\dim\ker M=12\).
+\item Tuned variant: \(\operatorname{rank} M'=48\), \(\ker M'=\{\mathbf{0}\}\) via \(a_{xy^3}\to 7-s\) only (\(47\) coefficients fixed).
+\item \(H'\): \(14\) eigenvalues, total multiplicity \(48\); all nonzero over \(\mathbb{Q}\).
+\item \(H_{01}'\): \(9\) eigenvalues, total multiplicity \(24\); all nonzero.
+\item Field: \(\mathbb{K}=\mathbb{Q}(\sqrt{35})\) (positive embedding).
+\item Uniqueness: unique vector solution of \(M'x=b\); not path uniqueness.
+\item Capacity defect \(N-|W|\): OPEN.
+\end{itemize}

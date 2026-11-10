@@ -1,0 +1,3 @@
+# Soft SF PRESS → Auditor (hash-only CONFIRM)
+Subject: reports/bridges/PROFESSOR_PROOF/PP-FINDINGS-DAILY_INVENT_PROOF_LIST_2026-10-31.md sha256 155c0be5041bb41c1bc9f09e30bd7a1f7d319fd792dc7141fcaf86f0b1a00486
+tip 7cddb188… tip_touched NO; Kerr BLOCKED; REPORTS ONLY; No RECs.

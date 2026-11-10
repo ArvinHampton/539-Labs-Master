@@ -1,0 +1,63 @@
+== MR2 adoption blockers: Riemann / systole / full EOM ==
+l/l_p = 49.68438219, l^2 = 2468.537834 l_p^2
+
+== V. validation ==
+   geometry built: 25 Christoffels, 29 derivatives [0s]
+AdS7xS4 pt=['1.3', '0.4', '1.1', '2.0'] true flux: max|E^M_N|=5.51e-40 (scale 12.0)
+AdS7xS4 pt=['1.3', '0.4', '1.1', '2.0'] WRONG flux x1.1: max|E^M_N|=2.52 (scale 12.0)
+   curvature-operator max|eig| = 4.000000000000 (exact 4 from S4; AdS7 -1), max|Im eig| = 0.0e+00
+   K=468.0 (exact 2*7*6 + 2*4*3*16 = 468), RicSq=828.0 (exact 7*36+4*144=828), R=6.0 (exact -42+48=6), Weyl^2=100.8
+AdS7xS4 pt=['0.7', '1.0e-6', '1.5', '3.141'] true flux: max|E^M_N|=7.22e-22 (scale 12.0)
+AdS7xS4 pt=['0.7', '1.0e-6', '1.5', '3.141'] WRONG flux x1.1: max|E^M_N|=2.52 (scale 12.0)
+   curvature-operator max|eig| = 4.000000000000 (exact 4 from S4; AdS7 -1), max|Im eig| = 0.0e+00
+   K=468.0 (exact 2*7*6 + 2*4*3*16 = 468), RicSq=828.0 (exact 7*36+4*144=828), R=6.0 (exact -42+48=6), Weyl^2=100.8
+
+== building candidate geometry (symbolic Christoffels + derivatives) ==
+   geometry built: 72 Christoffels, 164 derivatives [53s]
+(D) product AdS5(F0=2/3)xH2(G0=1/6)xS4(1/2) pt=['1.0', '1.0', '0.7', '0.4']: K=618.0 (exact 40*9/4+4*36+384 = 618), RicSq=828.0 (exact 828), R=6.0 (exact 6), max|eig Q|=6.000000000000 (exact 6)
+(D) product AdS5(F0=2/3)xH2(G0=1/6)xS4(1/2) pt=['1.0', '1.0', '1.0e-6', '1.0e-6']: K=618.00000000000000203 (exact 40*9/4+4*36+384 = 618), RicSq=828.0 (exact 828), R=6.0 (exact 6), max|eig Q|=6.000000000000 (exact 6)
+grid: 17 points (alpha in {1e-6, pi/4+d, pi/2+d, 3pi/4+d, pi-1e-6} x beta in {1e-6, pi/4+d, pi/2-1e-6}, d=1.234e-3 + 2 generic); dps=40
+
+== closure d*G4 = 0 (G^G = 0 identically: G4 has legs only on the 6 internal directions), exact symbolic with LAMBDA free ==
+MN1(z=0): LAMBDA solving d*G=0 at 3 pts x 2 components: [0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000, ('identically', 0), ('identically', 0), ('identically', 0)]; residual |d*G| at LAMBDA=1/16: 5.18E-172
+MN2(z=1): LAMBDA solving d*G=0 at 3 pts x 2 components: [0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000]; residual |d*G| at LAMBDA=1/16: 1.66E-170
+BBBW(z=2): LAMBDA solving d*G=0 at 3 pts x 2 components: [0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000]; residual |d*G| at LAMBDA=1/16: 5.18E-172
+BBBW(z=3): LAMBDA solving d*G=0 at 3 pts x 2 components: [0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000, 0.06250000000000000000000]; residual |d*G| at LAMBDA=1/16: 5.18E-172
+
+== full Einstein (all 66 components), dG4 = 0, Riemann invariants ==
+MN1(z=0): max_grid max_MN |E^M_N| = 1.36e-6  (curvature scale max|R^M_N| = 13.999);  PASS(1e-10)=False  [12s]
+    dG4 (central FD h=1e-12, every 4th grid pt): max|dG| = 4.79e-26  (max|G| comp 0.0625)
+    K = R_MNPQ R^MNPQ in [375.8074589, 910.3697823] /l^4 ; RicSq max 1061.542671 ; Weyl^2 in [209.6912297, 439.6617024]
+    l_p^2 sqrt(K)_max = 0.0122228 ; l_p^2 sqrt(RicSq)_max = 0.0131986 ; l_p^2 sqrt(Weyl^2)_max = 0.00849414
+    curvature operator max|eig| = 6.629019 /l^2 -> l_p^2 max|K_sec| <= 2.6854e-03 ; R^4 estimate (l_p^2 max|K|)^3 = 1.94e-08
+MN2(z=1): max_grid max_MN |E^M_N| = 6.15e-6  (curvature scale max|R^M_N| = 1.5874e+6);  PASS(1e-10)=False  [11s]
+    dG4 (central FD h=1e-12, every 4th grid pt): max|dG| = 2.03e-25  (max|G| comp 0.125)
+    K = R_MNPQ R^MNPQ in [511.8079287, 3407.980947] /l^4 ; RicSq max 3311.983676 ; Weyl^2 in [297.9013327, 1939.188188]
+    l_p^2 sqrt(K)_max = 0.0236488 ; l_p^2 sqrt(RicSq)_max = 0.0233133 ; l_p^2 sqrt(Weyl^2)_max = 0.017839
+    curvature operator max|eig| = 13.333308 /l^2 -> l_p^2 max|K_sec| <= 5.4013e-03 ; R^4 estimate (l_p^2 max|K|)^3 = 1.58e-07
+BBBW(z=2): max_grid max_MN |E^M_N| = 1.38e-5  (curvature scale max|R^M_N| = 2.1976e+6);  PASS(1e-10)=False  [14s]
+    dG4 (central FD h=1e-12, every 4th grid pt): max|dG| = 3.85e-25  (max|G| comp 0.1875)
+    K = R_MNPQ R^MNPQ in [501.0911637, 5755.360798] /l^4 ; RicSq max 5086.014998 ; Weyl^2 in [311.9827863, 3499.841447]
+    l_p^2 sqrt(K)_max = 0.0307324 ; l_p^2 sqrt(RicSq)_max = 0.0288901 ; l_p^2 sqrt(Weyl^2)_max = 0.0239654
+    curvature operator max|eig| = 18.849233 /l^2 -> l_p^2 max|K_sec| <= 7.6358e-03 ; R^4 estimate (l_p^2 max|K|)^3 = 4.45e-07
+BBBW(z=3): max_grid max_MN |E^M_N| = 3.01e-5  (curvature scale max|R^M_N| = 2.4932e+6);  PASS(1e-10)=False  [14s]
+    dG4 (central FD h=1e-12, every 4th grid pt): max|dG| = 5.66e-25  (max|G| comp 0.25)
+    K = R_MNPQ R^MNPQ in [507.2660296, 7318.506049] /l^4 ; RicSq max 6203.873909 ; Weyl^2 in [322.5873269, 4567.264808]
+    l_p^2 sqrt(K)_max = 0.0346554 ; l_p^2 sqrt(RicSq)_max = 0.0319074 ; l_p^2 sqrt(Weyl^2)_max = 0.0273772
+    curvature operator max|eig| = 21.890290 /l^2 -> l_p^2 max|K_sec| <= 8.8677e-03 ; R^4 estimate (l_p^2 max|K|)^3 = 6.97e-07
+CONTROL X1*1.1 (z=2): max_grid max_MN |E^M_N| = 1.66e+5  (curvature scale max|R^M_N| = 1.8093e+6);  PASS(1e-10)=False  [14s]
+    dG4 (central FD h=1e-12, every 4th grid pt): max|dG| = 4.09e-25  (max|G| comp 0.1875)
+CONTROL wrong flux x1.1 (z=2): max_grid max_MN |E^M_N| = 4.62e+5  (curvature scale max|R^M_N| = 2.1976e+6);  PASS(1e-10)=False  [14s]
+    dG4 (central FD h=1e-12, every 4th grid pt): max|dG| = 4.23e-25  (max|G| comp 0.2062)
+CONTROL LAMBDA=14/4 'garbled 14' reading (z=2): max_grid max_MN |E^M_N| = 4.29e+8  (curvature scale max|R^M_N| = 2.1976e+6);  PASS(1e-10)=False  [7s]
+CONTROL LAMBDA=0 (no gauge-field term) (z=2): max_grid max_MN |E^M_N| = 2.2e+6  (curvature scale max|R^M_N| = 2.1976e+6);  PASS(1e-10)=False  [4s]
+
+== systole (Bolza bound, CONDITIONAL literature; arithmetic PROVED) ==
+sys_max(genus 2) = 2 arccosh(1+sqrt2) = 3.057141838962
+MN1(z=0): rho_Sigma = l e^g0 = 22.788108 l_p ; L5 = 39.470162 l_p ; Bolza sys_phys = 69.66648 l_p ; range (0, 69.66648] l_p ; min sys (unit) for sys_phys>=l_p: 0.0438825 ; for wrapped-M2 string tension >= 1/L5^2: 0.00111202 ; for M2-on-geodesic string scale >= 1/rho (KK on Sigma): 0.00333607
+MN2(z=1): rho_Sigma = l e^g0 = 26.625201 l_p ; L5 = 37.653721 l_p ; Bolza sys_phys = 81.397016 l_p ; range (0, 81.397016] l_p ; min sys (unit) for sys_phys>=l_p: 0.0375584 ; for wrapped-M2 string tension >= 1/L5^2: 0.00104581 ; for M2-on-geodesic string scale >= 1/rho (KK on Sigma): 0.00209161
+BBBW(z=2): rho_Sigma = l e^g0 = 31.8077 l_p ; L5 = 36.305054 l_p ; Bolza sys_phys = 97.240651 l_p ; range (0, 97.240651] l_p ; min sys (unit) for sys_phys>=l_p: 0.0314389 ; for wrapped-M2 string tension >= 1/L5^2: 0.000941658 ; for M2-on-geodesic string scale >= 1/rho (KK on Sigma): 0.00122677
+BBBW(z=3): rho_Sigma = l e^g0 = 36.455162 l_p ; L5 = 35.600612 l_p ; Bolza sys_phys = 111.4486 l_p ; range (0, 111.4486] l_p ; min sys (unit) for sys_phys>=l_p: 0.027431 ; for wrapped-M2 string tension >= 1/L5^2: 0.000854448 ; for M2-on-geodesic string scale >= 1/rho (KK on Sigma): 0.000814859
+
+DONE total 149s
+exit_code=0

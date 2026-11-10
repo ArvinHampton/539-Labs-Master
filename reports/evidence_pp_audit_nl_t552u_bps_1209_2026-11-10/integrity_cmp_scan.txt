@@ -1,0 +1,19 @@
+cmp rerun_fx.log vs NL fx log:
+IDENTICAL (byte)
+cmp rerun_z2.log vs NL z2 log:
+IDENTICAL (byte)
+copies vs frozen:
+fx_copy_identical
+z2_copy_identical
+PASS lines: NL fx 40, NL z2 7, PP 47; FAIL lines: /workspace/nl-bps-t552-1110/fx_fixed_set_euler_exact_2026-11-10.log:0 /workspace/nl-bps-t552-1110/z2_nec_necessary_exact_2026-11-10.log:0 pp_indep_exact_t552u_bps_2026-11-10.log:0 
+namespace scan (NL scripts): grep for nsimplify|simplify(|float|numpy|np.|allclose|evalf|lambdify:
+/workspace/nl-bps-t552-1110/fx_fixed_set_euler_exact_2026-11-10.py:3:# exact matrix equality / exact rank / expand(...)==0 only. No simplify(...)==0, no allclose. Exit 0 iff every test passes.
+powsimp uses:
+/workspace/nl-bps-t552-1110/z2_nec_necessary_exact_2026-11-10.py:55:res=[sp.expand(sp.powsimp(sp.expand(dG[r,r]-2*(ref[r]+kx3)*G[r,r]),combine='exp')) for r in range(3)]
+pp_indep_exact_t552u_bps_2026-11-10.py:231:V0=sp.expand(sp.powsimp(sp.expand(Vpot.subs({ph:sp.log(2)/30,la:sp.log(2)/10,w:0})),force=True))
+imports:
+/workspace/nl-bps-t552-1110/fx_fixed_set_euler_exact_2026-11-10.py:5:import itertools, sys
+/workspace/nl-bps-t552-1110/fx_fixed_set_euler_exact_2026-11-10.py:6:import sympy as sp
+/workspace/nl-bps-t552-1110/z2_nec_necessary_exact_2026-11-10.py:9:import sys, sympy as sp
+pp_indep_exact_t552u_bps_2026-11-10.py:4:import itertools, sys
+pp_indep_exact_t552u_bps_2026-11-10.py:5:import sympy as sp

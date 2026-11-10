@@ -1,0 +1,385 @@
+
+--- extraction lines 564–610 ---
+564:                                               7
+565: At s = 7, Q7 (v) = Q(v) + 27 v2 = Q(v + a) + 20 .
+566: 
+567: 2.3   The residual series and the two series previously both written Ps
+568: Definition 2.1. For s ≥ 1:
+569:                           P       2
+570:  (i) the s-series gs (q) = n≥0 q n /(−q s ; q s )n (in Part I written gk , with k in place of s);
+571: 
+572:  (ii) the product-normalised s-series Πs (q) = (−q s ; q s )∞ gs (q);
+573:                                      P
+574: (iii) the orthant series Psorth (q) = n,k≥0 q Qs (n,k) .
+575: 
+576:     In the RTA manuscript both Πs and Psorth carry the name Ps . They are different series:
+577: 
+578: Proposition 2.2. For every s ≥ 1, in Z[[q]],
+579:                                      X q Qs (n,k)      X q sk(k+1)/2 X 2
+580:                           Πs (q) =                   =                  q n +skn ,
+581:                                        (q s ; q s )k      (q s ; q s )k
+582:                                      n,k≥0            k≥0               n≥0
+583: 
+584: 
+585: and Πs − Psorth has non-negative coeﬀicients and is non-zero; its coeﬀicient of q 2s is at least 1.
+586: 
+587:                                                      11
+588:                                                  P        k(k−1)/2 z k /(p; p) with p = q s and z = q s(n+1) gives
+589: Proof. Euler’s identity (−z; p)∞ =                  k≥0 p                     k
+590:                                                         P
+591: (−q s ; q s )∞ /(−q s ; q s )n = (−q s(n+1) ; q s )∞ = k≥0 q sk(k−1)/2+s(n+1)k /(q s ; q s )k , and n2 +sk(k −1)/2+
+592:                                                      2
+593: s(n + 1)k = Qs (n, k). Multiplying by q n and summing over n gives the first identity; both double
+594: sums converge in Z[[q]] because Qs (n, k) ≥ n2 + 2s k(k + 1). Since 1/(q s ; q s )k − 1 has non-negative
+595:                                           P
+596: coeﬀicients, so does Πs − Psorth = n,k q Qs (n,k) (1/(q s ; q s )k − 1); the term (n, k) = (0, 1) contributes
+597: q s · q s with coeﬀicient 1.
+598: 
+599:      Throughout, the Bridge Series is built from Psorth only. Part II uses Psorth for P7orth when s = 7
+600: is fixed.
+601: 
+602: 2.4    The Bridge Series
+603: c1 = (−1, 1), c2 = (−4, 1), w(v) = 12 (sgn B(c1 , v) − sgn B(c2 , v)) with sgn 0 = 0, and
+604:                                         X
+605:                                  Hs =          w(v)q Qs (v) ,   C = P7orth − H7 .
+606:                                         v∈Z2
+607: 
+608: Hs is the cone series of Part II, §10, with the fixed walls c1 , c2 for every s; it is not redefined
+609: anywhere in this paper. This is the Bridge Series of RTA (Definition 9.1 there), and it is the object
+610: C of Part II.
+
+--- extraction lines 703–740 ---
+703:                                                         2
+704:                                                                X
+705:                                  gk (q) =            k   k
+706:                                                              =   gk (d) q d .
+707:                                                   (−q ; q )n
+708:                                             n≥0                 d≥0
+709: 
+710: For n ≥ 0 let
+711:                     Y
+712:                     n
+713:                             1      X                                   Y       1      X
+714:          Pn (x) =                =   ϕn (m) xm ,            P∞ (x) =                =   ϕ∞ (m) xm ,
+715:                           1 + xj                                             1 + xj
+716:                     j=1           m≥0                                  j≥1           m≥0
+717: 
+718: with P0 = 1.
+719:                                                                         2
+720:    The series for gk converges in Z[[q]] because the n-th summand is q n Pn (q k ) and has order n2 .
+721:    Proposition 3.2 (expansion in d). For all k ≥ 1 and d ≥ 0,
+722:                                              X                  
+723:                                                           d − n2
+724:                                 gk (d) =             ϕn            .                           (3.1)
+725:                                                             k
+726:                                               n≥0, n ≤d
+727:                                                 2
+728: 
+729:                                              n2 ≡d (mod k)
+730: 
+731:                                                 2        P               2
+732:     Proof. The n-th summand of gk (q) is q n Pn (q k ) = m≥0 ϕn (m)q n +km . The coeﬀicient of q d
+733: collects the pairs (n, m) with n2 + km = d. ■
+734:     The summand of index n in (3.1) is called the term n of gk (d); it is defined when n2 ≤ d and
+735: k | d − n2 , and mn = (d − n2 )/k is its index.
+736:     Definition 3.3. Let Sk = { n2 mod k : n ∈ Z } ⊆ Z/kZ. An integer d ≥ 0 is allowed for k if
+737: d mod k ∈ Sk .
+738:                               Zk = { d ≥ 0 allowed for k : gk (d) = 0 }.
+739: OccFiltk (∞) is the set of residue classes r ∈ Z/kZ such that gk (d) 6= 0 for all suﬀiciently large
+740: d ≡ r (mod k).
+
+--- extraction lines 1532–1563 ---
+1532: 8     Parity dominance for odd k ≤ 33
+1533: Throughout this section k is odd, 3 ≤ k ≤ 33, and d is allowed for k (Definition
+1534:                                                                          P       3.3). The notation
+1535: an (m), An (x), Ed , Od is that of Section 4: an (m) = |ϕn (m)|, An (x) = m an (m)xm is the product
+1536: (4.1), and by (4.4)
+1537:                                                      X                    X
+1538:                 (−1)d gk (d) = Ed − Od ,      Ed =       an (mn ), Od =      an (mn ).
+1539:                                                    n even                 n odd
+1540: 
+1541: 
+1542: 8.1    Statement
+1543: For k in the table of Section 8.7, Rk < 1 and D0 (k) are the numbers computed there (Table 8.2).
+1544: Put ηt = 10−6 .
+1545:    Theorem 8.1 (parity dominance). Let k ∈ {3, 5, . . . , 33}.
+1546: 
+1547:     1. For every allowed d ≥ D0 (k): Od > 0 and Ed ≤ (Rk + ηt ) Od . Consequently (−1)d gk (d) ≤
+1548:        −(1 − Rk − ηt )Od < 0; in particular gk (d) 6= 0 and sign gk (d) = (−1)d+1 .
+1549:     2. Zk is a finite set, max Zk < D0 (k), and Zk is the explicit set of Appendix B.1 (cardinalities
+1550:        and maxima in Table 8.5).
+1551:     3. OccFiltk (∞) = Sk : the residue classes mod k that occur for all large d are exactly the squares
+1552:        mod k.
+1553: 
+1554:     Part 3 follows from Part 2 and Proposition 3.4. Part 2 follows from Part 1 and the finite
+1555: certificate of Section 8.7. Part 1 is proved in Sections 8.2 to 8.5: it combines (a) a local limit
+1556: estimate for a family of integer-valued random variables attached to An (Sections 8.2, 8.3), (b) a
+1557: comparison of each even term with the two odd terms n ± k (Section 8.4) and (c) an upper bound
+1558: for the even terms far from the saddle, and a lower bound for one odd term (Section 8.5).
+1559:     Computer-assisted steps: the finite computations of Algorithms C (cells), R (block bound), T
+1560: (tail) and the modular certificate. Each is specified below and reproduced by the code listed in
+1561: Appendix A.3; they use interval (ball) arithmetic with the Arb library through python-flint [21], at
+1562: 128-bit working precision, except for the modular certificate, which uses exact integer arithmetic
+1563: modulo two primes.
+
+--- extraction lines 2452–2490 ---
+2452: 8.9    Remarks
+2453: An independent derivation of the block step (separate code, a different decomposition of the circle
+2454: into five regimes, cells of width 0.005 on [0.40, 2.90], a fourth-derivative remainder) reports, for
+2455: k = 27, 29, 31, 33, block ratios 0.79055, 0.80677, 0.82294, 0.83906, below the values Rk of Table 8.2.
+2456: These numbers play no role in the proofs above and were not recomputed for this paper.
+2457:     What is proved and what is not. Theorem 8.1 is proved for the sixteen values k = 3, . . . , 33
+2458: through the finite data above. It is a statement about each fixed k; no bound uniform in k is
+2459: claimed, and no extension to k ≥ 35 or to even k is asserted.
+2460: 
+2461: 
+2462: Part II
+2463: The Bridge Series C
+2464: 9     Introduction to Part II
+2465: 9.1    Setting and question
+2466: The series studied here arise as the “Bridge Series C” of the author’s S2 -11DM2 ET-X programme.
+2467: The question posed there was whether C satisfies a residual law: a modular part plus a controlled
+2468: remainder, or an exact weight- 12 slash relation. This part is self-contained. All objects are defined
+2469: from scratch in §10, and nothing in it depends on, or is claimed to bear on, other parts of that
+2470: programme.
+2471: 
+2472: 9.2    Summary
+2473: In one sentence: C and Cthird share the                orth                                  orth is
+2474:                                         √ remainder Ps ; up to theta and mock pieces, Ps
+2475: one ray class partial theta series of Q( 35); its regulator-type singularity rules out every scalar
+2476: modular or mock residual law (Baker); and the obstruction is resolved not by a scalar law but by
+2477: a vector-valued weight-1 quantum modular structure, coming from a Siegel theta lift to weight-0
+2478: Maass forms, whose cocycle is computed in closed form. The precise statements are collected in
+2479: §11.
+2480: 
+2481: 
+2482: 
+2483: 
+2484:                                                     40
+2485: 9.3    What is not claimed
+2486: No claim is made about the twin prime conjecture or the Riemann hypothesis, and nothing here
+2487: concerns any termination claim of the wider programme. We do not claim that C, Cthird or
+2488: Psorth is modular, mock modular or quantum modular as a scalar q-series. The quantum-modular
+2489: statements concern the fundamental-domain cone-sum vector of §15. The K3 statements of §26
+2490: concern a shared representation, not a shared modular form.
+
+--- extraction lines 2752–2773 ---
+2752: and Ψ− (z) = EL (−1/z) + (z/ 35)ER (z) (§15.1), and for z ∈ C \ iR put
+2753:                                           Z
+2754:                                      z  i∞                    log ε 
+2755:                             Ω(z) = √           [uR , Rz1/2 ] −         ,
+2756:                                   π 35 0                         2
+2757: the integral taken along iR>0 with the principal square root.
+2758:   (i) Ω is holomorphic on C \ iR; on H ∩ {Re z > 0} it equals Ψ, and on H ∩ {Re z < 0} it equals
+2759:       −Ψ− . In particular Ψ continues holomorphically to U = H ∪ {Re z > 0}.
+2760:  (ii) Let ψ be the order-t0 radial S-cocycle of §15.1. For rational x > 0, ψ(x) = Ω(x); for rational
+2761:                                 |x| R i∞          1/2     log ε 
+2762:       x < 0, ψ(x) = −Ω(x) = π√    35  0  [u R , R x   ] −   2     .
+2763: 
+2764: (iii) The analogous closed form holds on every row of the 140-label vector cocycle Φ, which is
+2765:       real-analytic on R \ {0} and satisfies the three-term relation (15.2).
+2766: 
+2767: Status (Category A). Proved in §15.4, given Lemma 15.1, the branch lemma (Lemma 15.2), the S-
+2768: law of Theorem 11.6, the sector-uniform Euler–Maclaurin expansion (Proposition 13.1) and the Fourier
+2769: interchange R2 (§15.6). Numerically: the period formula agrees with exact Bernoulli sums at 84 rationals
+2770: (denominators ≤ 60, both signs) to 1.1 · 10−13 ; |Ω − Ψ| ≈ 10−16 at three points with Re z > 0 and
+2771: |Ω + Ψ− | ≈ 10−16 at three points with Re z < 0 (where |Ω − Ψ| = 0.076, 0.069, 0.539); all 140 rows to
+2772: 2.3 · 10−14 ; the three-term relation to 7 · 10−15 . The phrase “quantum modular form in Zagier’s sense”
+2773: for the real factor |cx + d| is terminology (Category B).
+
+--- extraction lines 3434–3450 ---
+3434: Category B. Supporting numerics for (ii)–(iii): a holomorphic fit from Im z ≥ 0.01 reproduces the
+3435: real-axis values to 2 · 10−12 at 169 rationals; negative side with the factor |x| to 1.6 · 10−14 . All 140 rows
+3436: at x ∈ {1, 31 , 2, 53 , 74 , −1, − 23 }: singular cancellation 9.0 · 10−16 , no t−1/2 terms 5.7 · 10−16 , P κ = κ to
+3437: 5.3 · 10−15 , closed form to 2.3 · 10−14 ; (15.2) at z ∈ {1, 12 , 23 , 32 } to 7 · 10−15 .
+3438: 
+3439: 
+3440: The automorphy factor. With the holomorphic factor x in place of |x| the cocycle at x < 0 is
+3441: unbounded (it grows like 1/y); the bounded object on the negative side is Ψ− , i.e. the real factor
+3442: |x|. Numerically ψ(−x) = ψ(x) to 8 · 10−14 (Category B; this symmetry is not proved here and
+3443: is not used). Near 0, ψ(x) ≈ −0.0549i x2 + 0.0206 x3 (from x = 0.01, 0.05); ψ is not analytic
+3444: at 0. Since T acts by phases and S, T generate, every hγ is real-analytic off γ −1 ∞. Example:
+3445: ψ(1) = 0.006883993760419869190321587 − 0.03825971221697307224258855 i.
+3446: Category B. Interpretation: the 72-dimensional fundamental-domain vector is a vector-valued quantum
+3447: modular form of weight 1 in Zagier’s sense for the real automorphy factor |cx + d| (“weight ( 21 , 12 )”), i.e.
+3448: the f -function of a λ = 14 Maass vector, with exceptional set {0} for S; E itself is then a “renormalised”
+3449: weight-1 quantum modular object with the singular parts I · G(x) removed. The Lewis–Zagier period-
+3450: function reading [10] and the broader context of [4] are cited for context only.
+
+--- extraction lines 5015–5027 ---
+5015: 25.2    Radial expansion of gs
+5016:                P           n2 /(−q s ; q s )
+5017: Let gs (q) =       n≥0 q                       n.
+5018:                                                                              P
+5019: Theorem 25.2 (Radial expansion of gs ). For every real s > 0, gs (e−t ) ∼ k≥0 ck (s)tk as t → 0+ ,
+5020: with ck ∈ Q[s] of exact degree k and no t−1 or half-integer terms. In particular c0 = 2, c1 = 2(s−3),
+5021: c2 = 5s2 − 44s + 75, c3 = (55s3 − 930s2 + 3918s − 4683)/3, c4 = (1073s4 − 28864s3 + 214620s2 −
+5022: 593128s + 545835)/12. Consequently ζg (0) = 1, ζg (−1) = 6 − 2s and ζg (−k) = (−1)k k! ck (s).
+5023:                                                                                 P
+5024: Status (Category A). Elementary proof: write 1/(−q s ; q s )n = 2−n exp j≤n Λ(sjt), expand with
+5025: Faulhaber polynomials, sum against 2−n , and bound the remainder by splitting at N = t−1/3P    . Confirmed
+5026: on held-out s; c0 , . . . , c4 re-derived with independent code (exact match), and gs (e−t ) − k≤4 ck tk =
+5027: O(t5 ) checked numerically at s = 3, 7.5. The Dirichlet-series reading of ζg is Category B.
+
+--- extraction lines 6099–6166 ---
+6099: 29 Consequences
+6100: 29.1   No scalar residual law; the law that exists
+6101: Proposition 29.1 (No scalar residual law). (i) There is no identity C = F + E with F an alge-
+6102:     braic combination of holomorphic modular forms, signature-(1, 1) mock (Zwegers) holomorphic
+6103:     parts, unary, partial or false theta series, and E(e−t ) = o(1/t).
+6104:  (ii) There is no quotient law C · g = F with holomorphic modular g 6≡ 0, F .
+6105: (iii) There is no scalar W7 law: for no weight k and no constant λ is C(τ ) − λ(7τ )−k C(−1/(7τ ))
+6106:       radially bounded at all rationals.
+6107: 
+6108: Status (Category A). This restates Theorem 11.5 and §13.5: (i), (ii) are conditional on Baker’s
+6109: theorem and the q-expansion principle, using the leading term C(e−t ) = I/t + aC t−1/2 + · · · and aC 6= 0;
+6110: (iii) is an exact finite computation: at 178 of the 270 test rationals (denominator < 30), including
+6111: x = 5/7, exactly one of G(x), G(−1/(7x)) vanishes (Theorem 11.4).
+6112: 
+6113: Proposition 29.2 (The law that exists has weight 1 and is vector-valued). (i) Where          both
+6114:     Gauss means are nonzero, |G| obeys an exact weight-1 relation with |λ| = 7−1/2 (§13.5); the
+6115:     leading 1/t radial profiles obey the S/T law with factor 1/|x| (Theorem 14.1); and the vector
+6116:     cocycle has automorphy factor |cx + d| (Theorem 11.7).
+6117:  (ii) The vector law consists of the 140-label Siegel lift to λ = 14 Maass forms (Theorem 11.6),
+6118:       the Lewis–Zagier period formula (Theorem 11.7), the 42-dimensional function span V =
+6119:       VEis (36) ⊕ Vcusp (6) (Theorem 11.8), the Herglotz closed form (Theorems 11.9, 11.10), the
+6120:       identification ρlab ∼
+6121:                           = ρN2 (Theorem 26.2) and the uniqueness statements of §27. It is a law
+6122:       for the vector of cone sums, not for scalar C.
+6123:                                                             
+6124: (iii) The characteristic a = A−1 (0, 2s )T = 2(s−2)
+6125:                                                 s
+6126:                                                     , − s−2
+6127:                                                          1
+6128:                                                               completes the square: Q+ (v) = Q2 (v +
+6129:                             s
+6130:       a) + c0 with c0 = 4(s−2) .
+6131: 
+6132: Status (Category A). (i), (ii) with the status of the cited theorems as stated where they
+6133:                                                                                          appear;
+6134:                                                                              −1    s −s
+6135: Theorem 11.11 is not part of the law and stays Category B. (iii): A−1 = s(s−2)    −s 2    gives a,
+6136: B(v, a) = 2 k and −Q2 (a) = 4(s−2) .
+6137:           s                    s
+6138: 
+6139: 
+6140: 
+6141: Remark 29.3 (Weight 12 cannot carry the residue). Any weight- 12 harmonic Maass form has radial
+6142: growth O(t−1/2 ), so no weight- 12 object can carry the I/t term of C (Category A, conditional on
+6143: the standard, cited t−1/2 radial bound).
+6144: Remark 29.4 (Sample values). Four values 19.80, 1.82, 9.24, 20.90 at x = 1/7, 3/7, 5/7, 1
+6145: that have been proposed as “residual samples” are not radial values of C: |C(0.995 e(x))| ≈
+6146: 19.5, 18.5, 19.9, 54.0 (floating point, Category B). The meaningful radial targets are
+6147: limt→0 t C(e(x)e−t ) = I · G(x) at every rational x (Theorem 11.4; Category A).
+6148: 
+6149:                                                     100
+6150: 29.2   Uniformity in s
+6151: Proposition 29.5 (What depends on s = 7). 7s − 32 = −2Q(c2 ) for the wall c2 = (−4, 1)
+6152: (Proposition 23.1); only the factor s − 2 of ∆ is intrinsic given c1 (Remark 23.5). The results are
+6153: otherwise uniform in s: the tensor theorem holds for all odd s (Theorem 19.5), the radial closed
+6154: forms are rational functions of s, and Theorem 25.2 holds for all real s > 0. The structurally
+6155: special values are s = 5 (the radial coeﬀicients of §22 vanish; H5 ≡ 0) and s = 8 (the cone of Hs
+6156: is the axes cone, ∆ = 144 = 122 ).
+6157: 
+6158: Status (Category A). As proved in §§22–23.
+6159: 
+6160: 
+6161: 29.3   The case s = 1
+6162: g1 = f0 , the fifth-order mock theta function (Hickerson–Mortenson [8]). At s = 1 the lattice ( 21 11 )
+6163: haspdet = −s(s−2) = 1 > 0 and is positive definite, so the indefinite part of the construction (Hs , C,
+6164: Q( s(s − 2))) does not specialise; Hs is Zwegers-admissible only for integer s ≥ 5. Theorem 25.2
+6165: gives a proved radial expansion of gs uniform in s, including s = 1. Quantum modularity of gs is
+6166: not claimed.
+
+--- extraction lines 6310–6362 ---
+6310:                                                     103
+6311: the components; lfun values for L( 12 , χ), L(1, χ) and root numbers; the numerical side of Theo-
+6312: rem 11.11; the dihedral enumeration of Remark 27.15. Not dependent on PARI: uL Eisenstein,
+6313: Cl(K), |Cl+
+6314:           f | = 16, the structure of Cl(2 35)∞ ∞ and the 12 values L(0, χ) (§18.1).
+6315:                                        +√
+6316:                                               1   2
+6317: 
+6318: 
+6319: 
+6320: 32 Open problems
+6321:  1. Prove the cusp-row identities of Theorem 11.11 (currently Category B).
+6322: 
+6323:  2. Prove the symmetry ψ(−x) = ψ(x) (observed numerically to 8 · 10−14 ; not used).
+6324: 
+6325:  3. An arithmetic (Gauss-sum or ideal-theoretic) proof of Theorem 11.10.
+6326: 
+6327:  4. Whether Zwegers’ completed theta transforms under the same 140-dimensional ρ (Re-
+6328:     mark 25.3(e)); whether an exotic single kernel produces both sectors of Cthird .
+6329: 
+6330:  5. Objects whose cocycles are of size ≥ 1/y are not excluded by Theorems 24.5, 24.4.
+6331:                                                                        Q
+6332:  6. dim V = s(s − 1) for all odd s (the lower bound); equality dEis = 3 (pe + 1)/2 in general;
+6333:     d2 (k, v) for k ≥ 7.
+6334: 
+6335:  7. Sharpness of the Proposition K1 bounds for m = 2k 2 − 1 with k ≥ 6 and on the full space
+6336:     (dim V (578) ≤ 83532); composite m and g-consistency for all odd m in Proposition 20.4.
+6337: 
+6338:  8. A uniform proof of the prime-square decompositions; (C3) for general p without citation;
+6339:     irreducibility of the complements at s = 121 and s = 169; the label-space decomposition at
+6340:     s = 3481 (whose p-local invariants are out of reach in label space).
+6341: 
+6342:  9. The ambiguous-class count |Ḡσ | = 2ω(s) ϕ(s−2) in general; suﬀiciency of the modulus M = 2dc
+6343:     for all norms.
+6344: 
+6345: 10. The pattern of Se for all odd e; the identity Rr = Srax at general order; closed forms at general
+6346:     rationals; the t19/2 coeﬀicient and beyond.
+6347: 
+6348: 11. A period-function correspondence for ρ at λ = 41 that also covers the non-cusp element ulift
+6349:     (Remark 27.16(a)).
+6350: 
+6351: 12. Whether γ itself lifts on the rank-6 Noether–Lefschetz locus of Proposition 26.10(iii) (Re-
+6352:     mark 26.11(b)); any link between Noether–Lefschetz series and the residual objects beyond
+6353:     the shared representation.
+6354: 
+6355: 13. Coeﬀicient-emitting maps outside the classes of §28 (Remark 28.5).
+6356: 
+6357: 14. Quantum modularity of scalar C and of gs (not claimed).
+6358: 
+6359: 
+6360: 
+6361: 
+6362:                                                   104
+
+--- extraction lines 8540–8575 ---
+8540: For the 105 companion series, Section 37 determines the shadow structure: the P -odd part has the
+8541: ξ1 -image of Theorem 37.13(i), and the P -even part has no weight-one law and the Laplacian defect
+8542: of Theorem 37.11. This does not identify Ξ, since Ξ is not written as an explicit series. At order
+8543: t−1/2 the coeﬀicient is fully explained by the completion and line terms (Theorem 38.5). Whether
+8544: a completion term of Zwegers type, with coeﬀicients derived from the error-function completion
+8545: of H7 , makes A1 or A2 S-covariant is open (Problem 1.). The numerical tests carried out so far
+8546: (Appendix D) found no closure for any regrouping of the finite sum or for the simplest sawtooth
+8547: candidate.
+8548: 
+8549: 
+8550: 43 Open problems
+8551:  1. Derive the actual completion constants of H7 (erf-completion along the walls (0, 1) and
+8552:     (21, −1)), form the completed coeﬀicient A1 − Ξcompl , and decide whether it satisfies a vector-
+8553:     valued S-law of weight 12 . This would identify the shadow Ξ. The completions of the cone
+8554:     parts and their ξ1 -images are now explicit (Proposition 37.7); by Theorem 38.5, A1 minus
+8555:     these completion terms and the line terms vanishes identically, so this part of the problem is
+8556:     settled for the companion series; at order t0 the coeﬀicient minus line terms is the explicit even
+8557:     corner term of Theorem 39.4, which admits no aﬀine weight-one law (Proposition 39.5); the
+8558:     identification of Ξ itself remains open. The sawtooth candidate, which removes all W [λ], does
+8559:     not close (Appendix D).
+8560: 
+8561:  2. Decide whether A2 minus a completion term satisfies a vector-valued law; this is the period-
+8562:     function level. Numerically, A2 itself satisfies no pure law of weight 0, 21 or 1, and the mixed
+8563:     test with A1 , A0 is inconclusive (Appendix D).
+8564:                                    √
+8565:  3. Prove or disprove |A1 ( 12 )| = π/4 (observed numerically) and find the zero set of A1 on the
+8566:     zero set of A0 .
+8567: 
+8568:  4. Find a written object linking T3 , Ores or 539 to gs , C or V35 , or prove that a natural class of
+8569:     such maps does not exist.
+8570: 
+8571: 
+8572:                                                  139
+8573:  5. Extend the parity-dominance theorem of Part I beyond k = 33 and to the classes of even k
+8574:     that are not one-sign.
+8575:  6. The open problems of Part II, §32.

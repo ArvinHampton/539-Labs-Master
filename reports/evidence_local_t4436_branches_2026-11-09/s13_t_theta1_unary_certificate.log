@@ -1,0 +1,22 @@
+=== [K] j^2 = chi_{-4}(d)(c tau+d) on Schreier generators of Gamma0(196) ===
+index 336, generators 166, mismatches at either tau0: 0
+=== [C] chi_{-7}(d) * chi_{-4}(d) == chi_28(d) for all d coprime to 196, |d|<=400 ===
+checked 342 values, mismatches 0
+=== [G] Gauss sum G(chi_{-7})^2 = -7 exactly in Z[zeta_7] ===
+chi_{-7}(k) for k=1..6: [1, 1, -1, 1, -1, -1]
+G coeffs on basis 1,zeta,...,zeta^5: [1, 2, 2, 0, 2, 0]
+G^2 coeffs: [-7, 0, 0, 0, 0, 0]
+G^2 == -7 (constant)? True
+sign: findings write G = 2i(sin(2pi/7)+sin(4pi/7)-sin(6pi/7)) with positive parenthesis
+=== [I] float illustration of inversion (NOT a proof) ===
+  tau=(0.1+0.3j): |LHS-RHS|/|LHS|=1.967e-17; |LHS|=2.8227
+  tau=(-0.2+0.25j): |LHS-RHS|/|LHS|=5.108e-16; |LHS|=3.88818
+  tau=(0.05+0.4j): |LHS-RHS|/|LHS|=2.554e-17; |LHS|=2.17336
+=== [S] float illustration of slash law (NOT a proof) ===
+  g=(-1, 0, 0, -1): Im(g tau)=0.23; |u(gt)-chi28(d) j^3 u|/|u(gt)|=5.847e-17
+  g=(1, 1, 0, 1): Im(g tau)=0.23; |u(gt)-chi28(d) j^3 u|/|u(gt)|=1.169e-16
+  g=(1, -1, 0, 1): Im(g tau)=0.23; |u(gt)-chi28(d) j^3 u|/|u(gt)|=2.924e-16
+  g=(13, 1, -196, -15): Im(g tau)=8.05028e-05; |u(gt)-chi28(d) j^3 u|/|u(gt)|=7.868e-14
+  g=(15, 1, -196, -13): Im(g tau)=8.37532e-05; |u(gt)-chi28(d) j^3 u|/|u(gt)|=4.564e-14
+  g=(-29, -4, 196, 27): Im(g tau)=6.23251e-05; |u(gt)-chi28(d) j^3 u|/|u(gt)|=4.934e-13
+DONE; [K],[C],[G] exact and asserted.

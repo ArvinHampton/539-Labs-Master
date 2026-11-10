@@ -1,0 +1,74 @@
+[
+  {
+    "tag": "BF",
+    "url": "https://arxiv.org/pdf/math/0212286",
+    "status": 200,
+    "pdf": true,
+    "bytes": 446331,
+    "sha256": "9094db44c13fde548a576dfcb4bd04cd25b4563153ea1457afd45961fd1c67a8"
+  },
+  {
+    "tag": "BOR",
+    "url": "https://arxiv.org/pdf/0802.0963",
+    "status": 200,
+    "pdf": true,
+    "bytes": 265702,
+    "sha256": "1fdf717bcf80c8eb24d9fb6fe64c970fef114facadc172c92c73b44d704b79cd"
+  },
+  {
+    "tag": "ZWEGERS",
+    "url": "https://arxiv.org/pdf/0807.4834",
+    "status": 200,
+    "pdf": true,
+    "bytes": 695440,
+    "sha256": "ca2b841ad716a16eb380893e6686f67f65e5506a9375de7a3c8f96ec58e8280d"
+  },
+  {
+    "tag": "KUDLA",
+    "url": "https://arxiv.org/pdf/1608.03534",
+    "status": 200,
+    "pdf": true,
+    "bytes": 259546,
+    "sha256": "08acc13bd7d7f4760a74d045470791515830c38995bc46e438eabe61b8000b8b"
+  },
+  {
+    "tag": "FUNKE_KUDLA",
+    "url": "https://arxiv.org/pdf/1708.02969",
+    "status": 200,
+    "pdf": true,
+    "bytes": 366704,
+    "sha256": "aaa89ba84d1a6e4b14ce0e28bca3fd38b4b72c042d391f155a14fff3a8d32d19"
+  },
+  {
+    "tag": "BORCHERDS",
+    "url": "https://arxiv.org/pdf/alg-geom/9609022",
+    "status": 200,
+    "pdf": true,
+    "bytes": 504616,
+    "sha256": "f0e76c70f57e63bb145b36ca97635312bb906787f4c521015acc03781c7702ba"
+  },
+  {
+    "tag": "CONES",
+    "url": "https://arxiv.org/pdf/1608.08874",
+    "status": 200,
+    "pdf": true,
+    "bytes": 278528,
+    "sha256": "638af9a457c9e08705334f612dce5eceb1d481b4033d388af01d6714dc55e16e"
+  },
+  {
+    "tag": "UNARY",
+    "url": "https://arxiv.org/pdf/1706.07770",
+    "status": 200,
+    "pdf": true,
+    "bytes": 217302,
+    "sha256": "fec5ceaa5070be7eb7093d83b4b01fe1627a0d8633b724490d5275fd165f7057"
+  },
+  {
+    "tag": "HILBERT",
+    "url": "https://arxiv.org/pdf/2307.16736",
+    "status": 200,
+    "pdf": true,
+    "bytes": 671026,
+    "sha256": "086087045e71a13c69053b8148dc7859f5f28acac210e7bc1046c97ec304b467"
+  }
+]

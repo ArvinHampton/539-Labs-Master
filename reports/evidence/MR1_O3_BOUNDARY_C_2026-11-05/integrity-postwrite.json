@@ -1,0 +1,171 @@
+{
+  "time": "2026-11-05T13:49:07.867998-06:00",
+  "tip_pre": "7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91",
+  "tip_post": "7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91",
+  "tip_touched": false,
+  "governing_reverified": true,
+  "findings_sha256": "eea879c7dbff8853e13fb44fc7c2af05db8d8df132d5bee1ea5f1624a7f389ed",
+  "press_sha256": "f53ed3583a580bd02f18a57d759c04dfc0e98b936b8406b4c392b92be9edd1ef",
+  "mirror_files": [
+    {
+      "file": "/workspace/quantum-comp/bridges/AUDITOR/FINDINGS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "eea879c7dbff8853e13fb44fc7c2af05db8d8df132d5bee1ea5f1624a7f389ed",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/bridges/AUDITOR/SOFTSF_PRESS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "f53ed3583a580bd02f18a57d759c04dfc0e98b936b8406b4c392b92be9edd1ef",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/bridges/AUDITOR/FINDINGS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "3650d058e8258aa52df2a76123b655c8f93547485818905534a808f88ad08085",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/bridges/AUDITOR/SOFTSF_PRESS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "7a94ef21b32e55beb8cefc556dd82960d85a280090bf1eeed7364c3ae155cddb",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/bridges/PHYSICIST/FINDINGS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "eea879c7dbff8853e13fb44fc7c2af05db8d8df132d5bee1ea5f1624a7f389ed",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/bridges/PHYSICIST/SOFTSF_PRESS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "f53ed3583a580bd02f18a57d759c04dfc0e98b936b8406b4c392b92be9edd1ef",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/bridges/PHYSICIST/FINDINGS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "3650d058e8258aa52df2a76123b655c8f93547485818905534a808f88ad08085",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/bridges/PHYSICIST/SOFTSF_PRESS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "7a94ef21b32e55beb8cefc556dd82960d85a280090bf1eeed7364c3ae155cddb",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/bridges/PROFESSOR_PROOF/FINDINGS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "eea879c7dbff8853e13fb44fc7c2af05db8d8df132d5bee1ea5f1624a7f389ed",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/bridges/PROFESSOR_PROOF/SOFTSF_PRESS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "f53ed3583a580bd02f18a57d759c04dfc0e98b936b8406b4c392b92be9edd1ef",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/bridges/PROFESSOR_PROOF/FINDINGS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "3650d058e8258aa52df2a76123b655c8f93547485818905534a808f88ad08085",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/bridges/PROFESSOR_PROOF/SOFTSF_PRESS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "7a94ef21b32e55beb8cefc556dd82960d85a280090bf1eeed7364c3ae155cddb",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/bridges/LOCAL/FINDINGS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "eea879c7dbff8853e13fb44fc7c2af05db8d8df132d5bee1ea5f1624a7f389ed",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/bridges/LOCAL/SOFTSF_PRESS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "f53ed3583a580bd02f18a57d759c04dfc0e98b936b8406b4c392b92be9edd1ef",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/bridges/LOCAL/FINDINGS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "3650d058e8258aa52df2a76123b655c8f93547485818905534a808f88ad08085",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/bridges/LOCAL/SOFTSF_PRESS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "7a94ef21b32e55beb8cefc556dd82960d85a280090bf1eeed7364c3ae155cddb",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "eea879c7dbff8853e13fb44fc7c2af05db8d8df132d5bee1ea5f1624a7f389ed",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/reports/bridges/AUDITOR/SOFTSF_PRESS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "f53ed3583a580bd02f18a57d759c04dfc0e98b936b8406b4c392b92be9edd1ef",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "3650d058e8258aa52df2a76123b655c8f93547485818905534a808f88ad08085",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/reports/bridges/AUDITOR/SOFTSF_PRESS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "7a94ef21b32e55beb8cefc556dd82960d85a280090bf1eeed7364c3ae155cddb",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/reports/bridges/PHYSICIST/FINDINGS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "eea879c7dbff8853e13fb44fc7c2af05db8d8df132d5bee1ea5f1624a7f389ed",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/reports/bridges/PHYSICIST/SOFTSF_PRESS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "f53ed3583a580bd02f18a57d759c04dfc0e98b936b8406b4c392b92be9edd1ef",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/reports/bridges/PHYSICIST/FINDINGS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "3650d058e8258aa52df2a76123b655c8f93547485818905534a808f88ad08085",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/reports/bridges/PHYSICIST/SOFTSF_PRESS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "7a94ef21b32e55beb8cefc556dd82960d85a280090bf1eeed7364c3ae155cddb",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/reports/bridges/PROFESSOR_PROOF/FINDINGS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "eea879c7dbff8853e13fb44fc7c2af05db8d8df132d5bee1ea5f1624a7f389ed",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/reports/bridges/PROFESSOR_PROOF/SOFTSF_PRESS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "f53ed3583a580bd02f18a57d759c04dfc0e98b936b8406b4c392b92be9edd1ef",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/reports/bridges/PROFESSOR_PROOF/FINDINGS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "3650d058e8258aa52df2a76123b655c8f93547485818905534a808f88ad08085",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/reports/bridges/PROFESSOR_PROOF/SOFTSF_PRESS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "7a94ef21b32e55beb8cefc556dd82960d85a280090bf1eeed7364c3ae155cddb",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/reports/bridges/LOCAL/FINDINGS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "eea879c7dbff8853e13fb44fc7c2af05db8d8df132d5bee1ea5f1624a7f389ed",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/reports/bridges/LOCAL/SOFTSF_PRESS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md",
+      "sha256": "f53ed3583a580bd02f18a57d759c04dfc0e98b936b8406b4c392b92be9edd1ef",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/reports/bridges/LOCAL/FINDINGS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "3650d058e8258aa52df2a76123b655c8f93547485818905534a808f88ad08085",
+      "byte_match": true
+    },
+    {
+      "file": "/workspace/quantum-comp/reports/bridges/LOCAL/SOFTSF_PRESS_MR1_SOFTSF_O3_BOUNDARY_C_V35HILB_CITE_HOLD_INVENT_2026-11-05.md.sha256",
+      "sha256": "7a94ef21b32e55beb8cefc556dd82960d85a280090bf1eeed7364c3ae155cddb",
+      "byte_match": true
+    }
+  ]
+}

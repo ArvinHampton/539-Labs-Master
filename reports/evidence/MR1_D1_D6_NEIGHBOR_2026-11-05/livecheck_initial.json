@@ -1,0 +1,16 @@
+[
+  {
+    "name": "breuil_I",
+    "url": "https://www.imo.universite-paris-saclay.fr/~christophe.breuil/PUBLICATIONS/GL2%28Qp%29I.pdf",
+    "observed": "2026-11-05T14:06:40-06:00",
+    "http": 200,
+    "bytes": 296074,
+    "sha256": "ceac657c69a8439e50bf28a4f385766714579669781cace1fa77f698cb4b3f33",
+    "pdf_magic": true,
+    "pdftotext_exit": 0
+  },
+  {
+    "name": "breuil_mezard",
+    "status": "initial urllib download interrupted after >2 minutes without completion; bounded total-time public download used next"
+  }
+]

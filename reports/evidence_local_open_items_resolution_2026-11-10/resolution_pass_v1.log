@@ -1,0 +1,38 @@
+/workspace/quantum-comp/reports/evidence_local_open_items_resolution_2026-11-10/resolution_pass_v1.py:83: SymPyDeprecationWarning: 
+
+The `sympy.ntheory.residue_ntheory.jacobi_symbol` has been moved to `sympy.functions.combinatorial.numbers.jacobi_symbol`.
+
+See https://docs.sympy.org/latest/explanation/active-deprecations.html#deprecated-ntheory-symbolic-functions
+for details.
+
+This has been deprecated since SymPy version 1.13. It
+will be removed in a future version of SymPy.
+
+  return res*jacobi_symbol(D % n, n) if n>1 else res
+== B1 Bolza ==
+f(m(x)) - 8 f(x)/(x-1)^6 = 0
+m(m(x)) = x
+s^2 on y: y
+s^*( dx/y ) = ( -sqrt(2)*(x - 1)/2 ) dx/y
+s^*( x dx/y ) = ( -sqrt(2)*(x + 1)/2 ) dx/y
+s^* matrix on (dx/y, x dx/y): Matrix([[sqrt(2)/2, -sqrt(2)/2], [-sqrt(2)/2, -sqrt(2)/2]])  eigenvalues: {-1: 1, 1: 1}
+check m(x(t)) = x(-t): 0
+F(t) = f(x(t))(1-t)^6 = t**6*(40 - 28*sqrt(2)) + t**4*(-40 + 20*sqrt(2)) + t**2*(-40 - 20*sqrt(2)) + 28*sqrt(2) + 40
+F even in t: True
+s on Y: Y -> t**6 - 6*t**5 + 15*t**4 - 20*t**3 + 15*t**2 - 6*t + 1 * Y
+G(u) with Y^2=G(u), u=t^2: u**3*(40 - 28*sqrt(2)) + u**2*(-40 + 20*sqrt(2)) + u*(-40 - 20*sqrt(2)) + 28*sqrt(2) + 40
+E_plus: Y^2 = G(u); j = 8000  Delta = 106300440576 - 75161927680*sqrt(2)
+E_minus: W'^2 = 28*sqrt(2)*v**3 + 40*v**3 - 40*v**2 - 20*sqrt(2)*v**2 - 40*v + 20*sqrt(2)*v - 28*sqrt(2) + 40 ; j = 8000  Delta = 75161927680*sqrt(2) + 106300440576
+== B1b explicit [sqrt(-2)] on E0: y^2 = x^3+4x^2+2x ==
+j(E0) = 8000
+phi(P) on E0 (should be 0): 0
+x(phi^2 P) - x(2P) = 0
+y(phi^2 P) + y(2P) (phi^2 = [-2] iff 0): 0
+== B2 ==
+chi140(3) = -1  chi140(1) = 1;  chi_-7(23) = 1  chi140(23) = 1  chi_-20(23) = 1
+gamma = [[47, 1], [140, 3]]  det = 1  in Gamma0(140): True  d mod 140 = 3
+chi_-7(-1) = -1 (D<0); chi140(-1)=+1; chi_-20(-1)=-1; chi140 = chi_-7 * chi_-20 pointwise check: True
+AL product bookkeeping: w16*w25*w49 = w19600 (multiplicativity); PARI eps_p table (-1,+1,-1) product = 1
+All-three-minus pattern product = -1 != +1 => 'odd -> -1 on every prime-power W' impossible given w19600=+1
+== B3 == Gamma1(140)-only equivariance: J: C e0 -> C (trivial Gamma0 rep), J=id. For gamma in Gamma1(140), d=1 so chi140(d)=1 = trivial: equivariant on Gamma1;
+   for gamma=[[47,1],[140,3]]: chi140(3) = -1 != 1 => not Gamma0-equivariant; image line carries trivial char != chi140.

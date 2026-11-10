@@ -1,0 +1,10 @@
+PARI stack size set to 200000000 bytes, maximum size set to 200003584
+Traceback (most recent call last):
+  File "/workspace/quantum-comp/reports/evidence_local_t4429_ternary_2026-11-09/tt_v2_twisted_products_eigensolve.py", line 17, in <module>
+    pari(f"EC={E}")
+    ~~~~^^^^^^^^^^^
+  File "cypari2/pari_instance.pyx", line 800, in cypari2.pari_instance.Pari.__call__
+  File "cypari2/gen.pyx", line 4784, in cypari2.gen.objtogen
+  File "cypari2/convert.pyx", line 545, in cypari2.convert.PyObject_AsGEN
+  File "cypari2/handle_error.pyx", line 211, in cypari2.handle_error._pari_err_handle
+cypari2.handle_error.PariError: ellinit: error opening elldata file: `/usr/share/pari/elldata/ell0'

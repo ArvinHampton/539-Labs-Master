@@ -1,0 +1,55 @@
+== MR2 cross-check of NL BPS calibrated-wall files ==
+
+== 1. Superpotential (B1, C1, C2) ==
+V(3.8), psi=0, T_ab=delta (MR2 transcription: Lpot = g^2{-1/2 e^{12la-16ph} l^2 + 2l e^{-10ph} + 1/2 e^{-4ph}[e^{8la}(TrT)^2 - 2e^{8la}Tr T^2 + 4e^{-2la}TrT]}, TrT=3):
+  V = g**2*(l**2*exp(12*lambda - 16*phi)/2 - 2*l*exp(-10*phi) - (3*exp(8*lambda) + 12*exp(-2*lambda))*exp(-4*phi)/2)
+  [M1] V - (2 G^ij W_i W_j - (4/3) W^2) with G = 60 delta  [= (1/30)|dW|^2 - (4/3)W^2]: 0
+  [M1] first-order flow A'=-W/3, X'=2G^-1 dW = W_X/30 solves: Hamiltonian 0; EL_A 0; EL_phi 0; EL_lam 0
+  [M2] MN2 (l=-1, e^30ph = e^10la = 2): dW = [0, 0], dV = [0, 0]; W*/g = 3*2**(1/3)/2 (=3*2^(1/3)/2: True); g^2 L^2 = 2*2**(1/3) (= 2^(4/3): True)
+       V* = -3*2**(2/3)*g**2; -12/L^2 = -3*2**(2/3)*g**2; equal: True
+       T entries at MN2: e^(-6la) = 2**(2/5)/2 (MR2 X1 = 2^(-3/5)); e^(4la) = 2**(2/5) (MR2 X2 = X0 = 2^(2/5))
+  [M2] m^2 L^2 = eig(G^-1 Hess V) L^2 = [12, -4]  (MR2/NL K1, ecee2668 s7: -4, +12)
+  [M3] B3: linearised W-flow exponents x L = [-2, 2]; eigvecs [[3*g/(4*g - 5*Abs(g)), 1], [3*g/(4*g + 5*Abs(g)), 1]]
+  [M3] (D) point not in CGR level-0 sector: dV/dlam at lam=0 = 6*g**2*l**2*exp(-16*phi) != 0 for l != 0; (D) has a=0 (no twist) while CGR has the twist with l = -1. (D) check V0=-12/L5^2 done in 5D singlet frame (MR2 crosscheck b44cd004 M5).
+  [M4] (5.16) potential at z=0 (MR2 transcription) on w=0 via (5.15) minus V(3.8): 0
+  [M4] (5.16) kinetic G = diag(6/Sigma^2, 2/Omega^2, 4) pulled back to (phi, lam, w): 60*dla**2 + 60*dph**2 + 3*dw**2  (level-0 part must be 60 dph^2 + 60 dla^2)
+  [M4] NL C2: W3 = -2 sqrt3 g P = g/(2 Omega Sigma)(Omega^2 e^2vp + 2 Omega Sigma^3 + l e^2vp + 2): V516 - (2G^ij W_i W_j - 4/3 W^2) on full (Sigma,Omega,varphi) = 0
+  [M4] W3 on w=0 slice minus NL B1 W: 0; dW3/dw at w=0: 0 (0 => w=0 slice invariant under the 3D W-flow)
+
+== 4. Level-0 obstruction (B6, B7, D3) ==
+  [M7] W_phi + 2W + 3 g l e^(6la-8ph) = 0  => 4(W_phi+2W) = +12 g e^(6la-8ph) > 0 at l=-1, g>0
+  [M8] extension to w != 0 (SO(3)-breaking, PP F10 'not covered'): W3_phi + 2 W3 at fixed (lam, w) = -3*g*l*exp(6*lambda)*exp(-8*phi)
+  [M9] fibre: det(T^-1 dmu dmu)/det(round) = 0.86558745628755457019 ; Delta = mu.T.mu = 0.86558745628755457019 (float, dps 30)
+  [M9] fibre: det(T^-1 dmu dmu)/det(round) = 1.3710483546144072963 ; Delta = mu.T.mu = 1.3710483546144072963 (float, dps 30)
+  [M9] (K_int + 6 k_x)/eps = 6*Aprime + dlnD*lamprime/2 - 6*phiprime   (NL D3: 6A' - 6ph' + 1/2 lam' d_lam ln Delta)
+  [M9] D3 conditions on W-flows (l=-1), times 2e^(2ph+6la)/g: W_lam -> 12*exp(10*lambda) - 6*exp(12*lambda - 6*phi) - 12; W_phi+10W -> 24*exp(10*lambda) - 2*exp(12*lambda - 6*phi) + 16
+     rewritten: [-6*Xe + 12*ve - 12, -2*Xe + 24*ve + 16]; solve: [{Xe: -4, ve: -1}]  (need Xe>0, ve>0)
+
+== 2. D1/D2: own 32x32 Clifford algebra (exact sympy) ==
+  Clifford relations {Gamma_a, Gamma_b} = 2 eta_ab verified exactly
+  [M5] C6 face (k_S=k_x=1, k_T=-2, G_6789=-6 q sigma) q=1 sigma=1 Gamma_n=1: solution dim = 8
+  [M5] C6 face (k_S=k_x=1, k_T=-2, G_6789=-6 q sigma) q=1 sigma=1 Gamma_n=-1: solution dim = 8
+  [M5] C6 face (k_S=k_x=1, k_T=-2, G_6789=-6 q sigma) q=1 sigma=-1 Gamma_n=1: solution dim = 8
+  [M5] C6 face (k_S=k_x=1, k_T=-2, G_6789=-6 q sigma) q=1 sigma=-1 Gamma_n=-1: solution dim = 8
+  [M5] C6 face (k_S=k_x=1, k_T=-2, G_6789=-6 q sigma) q=-1 sigma=1 Gamma_n=1: solution dim = 8
+  [M5] C6 face (k_S=k_x=1, k_T=-2, G_6789=-6 q sigma) q=-1 sigma=1 Gamma_n=-1: solution dim = 8
+  [M5] C6 face (k_S=k_x=1, k_T=-2, G_6789=-6 q sigma) q=-1 sigma=-1 Gamma_n=1: solution dim = 8
+  [M5] C6 face (k_S=k_x=1, k_T=-2, G_6789=-6 q sigma) q=-1 sigma=-1 Gamma_n=-1: solution dim = 8
+  [M5] control k_T=-1.5: dims over (q,sigma,s), G=-6q sigma: [0, 0, 0, 0, 0, 0, 0, 0]
+  [M5] control MN2-type face k_x=-1, internal 0, G=0: [0, 0, 0, 0]
+  [M6] MN2-type face (k_x=-1, internal K=0) with 6 random integer internal G (all 15 components): solution dims [0, 0, 0, 0, 0, 0]
+  [M6] identity sum_int Gamma^a(Gamma_a Gslash - 12 Gamma^cde G_acde) + 6 Gslash == 0 for random internal G: None
+       => from the x-row (Gslash eps = -144 sigma k_x eps) and the internal rows: K_int eps = (6 sigma/144) Gslash eps = -6 k_x eps  (D2)
+
+== 3. D4 constant (ERRATUM18) ==
+  MN2 face: k_x = -eL, internal K = 0 (internal metric r-independent at MN2) => K_int + 6k_x = -6 eL.
+  |d(K_int)| <= 6 delta (6 diagonal entries, |dK|_op <= delta), |6 d k_x| <= 6 delta => need 12 delta >= 6 eL, i.e. delta >= eL/2.
+  sharpness witness at delta = eL/2: k_x = -eL/2, each internal k = +eL/2: K_int + 6k_x = 0
+  NL D4 (10 delta, 3/5) vs ERRATUM18 (12 delta, 1/2): 10 delta -> threshold 3/5 eL (not a valid bound: witness above meets the trace at delta=eL/2 < 3eL/5); 12 delta -> 1/2 eL (correct, sharp for the trace)
+
+== 5. MR2 wall data from the same face formulas ==
+  exact MN2 face (IR kept): rho = 6*eL, internal pressure = -8*eL (x kappa^-2) -> stress ratio rho:|p| = 3/4 (MR2 6:8), null energy rho+p = -2*eL (MR2 -2k), deficit/rho = 1/3 (L3 1/3)
+  D2 would require K_int = -6k_x = 6*eL; MR2 face has 0 => non-BPS (consistent with D4)
+
+DONE 13s
+EXIT 0

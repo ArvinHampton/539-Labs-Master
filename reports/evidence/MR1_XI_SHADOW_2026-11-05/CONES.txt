@@ -1,0 +1,1220 @@
+     Indefinite Theta Series on Cones
+     Martin Westerholt-Raum1
+
+Abstract: We show that indefinite theta series on cones converge and provide an explicit modular completion.
+Our completion rests on a convolution of the Gaussian with a piecewise constant function supported on the
+cone. Our main innovation is to formulate this convolution in terms of euclidean geometry as opposed to hy-
+perbolic geometry. This change of perspective allows us to establish essential asymptotic estimates without
+further difficulty.
+indefinite lattices  indefinite quadratic forms  mock theta series  modular completion
+
+
+    N indefinite theta series is the generating series associated with a vector norm on a suitable cone
+A      of an indefinite lattice. As the notion is so flexible, such generating series occur frequently in, e.g.
+number theory [Kit86; Sie51], infinite dimensional representation theory [BO09; KW01; KW14], enu-
+merative geometry [LZ15; OP06], combinatorics [BO06], and string theory [DMZ12; Gan16]. Indefinite
+theta series are also connected directly to mock theta series. For decades, mathematicians sought to
+clarify the mystery around them, which emerged from Ramanujan’s Death Bed Letter and his Lost
+Notebook [Ram00; Ram88]: What are the modular properties of mock theta series? Zwegers resolved
+it in his pioneering thesis [Zwe02] by offering not one but three explanations, two of which are related
+to indefinite theta series. In the third section of [Zwe02], Zwegers relates forthright indefinite theta
+series and mock theta series. Section 1 of his thesis suggests to understand mock theta series in terms
+of Appell-Lerch sums, which are quotients of indefinite theta series on “cubical cones” by a usual theta
+series. Zwegers’s key discovery was a “modular completion” of indefinite theta series for lattices of sig-
+nature (d + , 1) together with an explicit formula for its Fourier expansion. His piece is at the foundation
+of all applications that we mentioned.
+   Zwegers’s assumption that a lattice has signature (d + , 1) as opposed to the most general signature
+(d + , d − ) with d + , d − ≥ 0 is a major obstacle to several applications. For example, in representation
+theory of affine superalgebras [KW14; KW16a; KW16b] Zwegers’s assumption restricts the number of
+imaginary roots. In string theory, it limits base spaces for which one can study asymptotics of and
+exact formulas for topological invariants [AMP13; BM13; Man13].
+   Given a non-degenerate lattice L in a real quadratic space V with quadratic form q of signature
+(d + , d − ) and bilinear form 〈l , l 0 〉 = q(l + l 0 ) − q(l ) − q(l 0 ), suitable cones C ⊆ V yield theta series
+
+  θL,0 (C ; τ, z) =
+                           X         ¡                      ¢
+                                  exp 2πi (q(l )τ + 〈z, l 〉) ,
+                      l ∈L∩(C − vy )
+
+                                                  τ = x + i y ∈ H = {τ ∈ C : Im(τ) > 0}, z = u + i v ∈ V (C) := V ⊗ C.
+
+The key questions are: (1) When does θL,0 (C ) converge? (2) If it converges, what are its modular
+properties? In other words, what is its modular completion? (3) If θL,0 (C ) is not modular, what is the
+1-cocycle attached to it? We answer the first two questions in this work.
+
+
+The author was partially supported by Vetenskapsrådet Grant 2015-04139.
+
+
+
+
+                                                                 –1–
+Indefinite Theta Series on Cones                                                                 M. Westerholt-Raum
+
+
+
+  Zwegers’s thesis treating the case of signatures (d + , 1) was published in 2002. The existence of a mod-
+ular completion of indefinite theta series in general has been announced several times by Zagier and
+Zwegers in talks over the past years. However, details or explicit formulas are not available. In 2012,
+the author [Wes15b] extended slightly the approach in Zwegers’s thesis to general lattices and cubi-
+cal cones whose faces meet mutually orthogonally. The orthogonality assumption, which is a major
+obstacle in applications, was lifted for lattice signatures (d + , 2) and some cubical cones by Alexan-
+drov, Banerjee, Manschot, and Pioline [Ale+16] in summer 2016. Shortly after [Ale+16] appeared as
+a preprint, Kudla [Kud16] illustrated how the modular completion of more specific indefinite theta
+series can be obtained from the theta kernels in [KM86; KM87]. Kudla remarked that the conditions
+imposed on cones in [Ale+16] are stricter than necessary, and he treated additional cases. After the
+present manuscript appeared as a preprint, Nazaroğlu [Naz16] extended considerations in [Ale+16] to
+cubical cones in arbitrary lattices, while still imposing rather strong assumptions on their faces.
+  Kudla has announced a joint paper with J. Funke in which they generalize [Kud16] to the effect that
+they interpret θL,0 (C ) in terms of intersection numbers of points with cubes in the Grassmannian of
+maximal negative definite subspaces of V . These cubes correspond to cubical cones in our terminol-
+ogy. Funke and Kudla’s ideas yield a modular completion of θL,0 (C ) as an integral of the Kudla-Millson
+theta kernel. If the cube that corresponds to C is compact, the integral can be evaluated and one ob-
+tains the Fourier expansion of the modular completion. In the non-compact case, the modular com-
+pletion is merely given as an integral. Using our results for cubical cones, one computes its Fourier
+expansion as a uniform limit of Fourier expansions in the compact case.
+   We discuss θL,0 (C ) in more detail. Our focus is on polyhedral cones. We call a cone C ⊆ V poly-
+hedral, if its cross-section is a (possibly non-compact) polyhedron. Polyhedral cones are sufficient
+to cover all applications of indefinite theta series that are known to the author. Beyond this they
+can be used to approximate any other cone. For instance, for Fano varieties the nef cone is poly-
+hedral, and the Morrison-Kawamata cone conjecture extends this in a suitable sense to further va-
+rieties. On the other end of the spectrum, the classical Appell-Lerch sum can be related to the lat-
+tice with Gram matrix 11 10 , which has lattice signature (1, 1). In coordinates, the associated cone is
+                              ¡ ¢
+
+C = {l ∈ R2 : (l 1 , l 2 ≥ 0) ∨ (l 1 , l 2 ≤ 0)}. It is “tetrahedral” and “cubical” at the same time (see Section 2.1),
+since the projectivization P(V ) of V is one-dimensional. Generalized Appell-Lerch sums can be ex-
+panded to indefinite theta series on cubical cones [Ale+16].
+   To answer the first key question on indefinite theta series on cones,
+we note that if a polyhedral cone C contains negative vectors, then
+θL,0 (C ) does not converge. Consider a polyhedral cone that contains
+only non-negative vectors and whose isotropic parts are rational. We
+show in Corollary 4.1 on page 16 that θL,0 (C ) converges to a meromor-
+phic function, whose poles are determined by the isotropic parts of C .
+Only cones with rational isotropic parts have so-far appeared in appli-
+cations. As for cases of non-rational isotropic parts of C , convergence
+of θL,0 (C ) is related to Roth’s theorem. These cases are not studied in
+the present paper, while it might be interesting to examine them with
+                                                                                          Figure 1: cross section of C ex
+an eye to arithmetic properties of the cone C itself.
+
+
+
+
+                                                          –2–
+Indefinite Theta Series on Cones                                                                                     M. Westerholt-Raum
+
+
+
+  To illustrate our results, we inspect one tetrahedral case as a running
+example. It is among the simplest cases that are not covered by any prior work.
+
+                                                                        n                (l 3 , l 1 − l 2 − 2l 3 , 2l 2 + 2l 3 − l 1 ≥ 0) o
+     L ex = Z3 , q ex (l ) = 21 (l 12 − l 22 − l 32 ), and        C ex = l ∈ R3 :                                                          .
+                                                                                       ∨ (l 3 , l 1 − l 2 − 2l 3 , 2l 2 + 2l 3 − l 1 ≤ 0)
+
+Notice that C ex contains the isotropic line spanned by ( 1 1 0 ). It is bounded by the orthogonal comple-
+ments of ( 0 0 1 ), ( 1 1 2 ), and ( 1 2 2 ). Its cross-section for fixed l 1 including the circle of isotropic vectors
+is displayed in Figure 1. The shaded area is the cross section of C ex and the displayed lines correspond
+to its faces.
+  Recall that the major issue in applications with indefinite theta series is that they are in general not
+modular. As a remedy Zwegers constructed for lattice signatures (d + , 1) and polyhedral cones with two
+faces (i.e. tetrahedral cones) a modular completion of a slight modification of θL,0 (C ). To construct this
+modification, one first observes that for every polyhedral cone, there is a polynomial sgn+     C
+                                                                                                  (l ) in sign
+functions l 7→ sgn〈l , w〉 with w ∈ V such that
+
+                    interior(C ) ⊆ support(sgn+                        +
+                                              C ) ⊆ closure(C ) and sgnC |interior(C ) = ±1.
+
+For some cones, one can express sgn+   C
+                                         (l ) as a linear combination of products of sign functions sgnE (l ) :=
+                                             most d − . For the purpose of this paper, we say that such cones
+Q
+  w∈E sgn〈l , w〉 with sets E ⊂ V of size at
+are determined by face indicators. We show in Section 2.1 that tetrahedral and cubical cones are de-
+termined by face indicators. In our running example, sgn+       C
+                                                                  (l ) is explicitly given by
+                                                                                  ex
+
+
+   1
+     ¡                                                                                                                       ¢
+   4 1 + sgn〈l , (
+                   0 0 1 )〉sgn〈l , ( 1 1 2 )〉 + sgn〈l , ( 0 0 1 )〉 sgn〈l , ( 1 2 2 )〉 + sgn〈l , ( 1 1 2 )〉 sgn〈l , ( 1 2 2 )〉 .                (0.1)
+
+  As a generalization of Zwegers’s theta series, we study the meromorphic function
+                                                                  ¡p
+                           θL,0 (sgn+
+                                    C ; τ, z) =            sgn+        y(l + vy ) exp 2πi (q(l )τ + 〈z, l 〉) ,
+                                                    X                            ¢   ¡                      ¢
+                                                              C
+                                                    l ∈L
+
+Comparing to the definition of θL,0 (C ), the condition that l ∈ C − vy is replaced by sgn+ C
+                                                                                              (l + vy ) 6= 0. The
+difference θL,0 (C )−θL,0 (sgn+C
+                                 ) can be expressed in terms of theta series for smaller lattices, if the faces
+of C span non-degenerate subspaces of V . In that case, the present paper yields a modular completion
+of θL,0 (C ), which in general has mixed weight.
+  Zwegers emphasized in many of his talks that the error function that appears in [Zwe02] should be
+viewed as a smoothened sign. Connecting to this idea, we obtain a smoothened variant sd          gn+ C of sgnC
+                                                                                                                +
+
+as a convolution with the Gaussian. The assumption that C is determined by its face indicators enters.
+Special cases of sdgn+C appear in [Ale+16; Naz16], where they are called generalized error functions. The
+main novelty in the present manuscript is that our description of sd  gn+C is based on euclidean geometry
+as opposed to hyperbolic geometry or contour integration. As a result, we can expose its asymptotic
+behavior in a straightforward way. In particular, we find that the difference sd gn+       +
+                                                                                   C −sgnC decays square-
+exponentially on every closed cone that does not contain the faces of C .
+
+
+
+
+                                                                       –3–
+Indefinite Theta Series on Cones                                                                                       M. Westerholt-Raum
+
+
+
+Theorem I. Let L be an integral lattice. If C ⊆ V = L ⊗ R is a non-degenerate, non-negative tetrahedral
+or cubical cone with rational isotropic edges, then
+                                                                    ¡p
+                                     gn+
+                             θbL,0 (sd C ; τ, z) =
+                                                                +
+                                                                         y(l + vy ) exp 2πi (q(l )τ + 〈z, l 〉)
+                                                       X                           ¢   ¡                      ¢
+                                                             sd
+                                                              gnW
+                                                      l ∈L
+
+converges locally to a real-analytic function with meromorphic singularities and transforms like a Jacobi
+form of suitable level.
+
+For a discussion of each of the assumptions see the introduction above. Notice that we do not state
+absolute convergence, which in fact can fail on a certain exceptional set. As a consequence, the Fourier
+expansion might exhibit “wall-crossing”. A more precise statement phrased in terms of vector-valued
+Jacobi forms is given in Theorem 4.2 on page 16.
+
+Remark. Bruinier’s and Funke’s ξ-operator [BF04] plays a decisive role in the modern theory of mock
+theta series and harmonic weak Maaß forms, which emerged from Zwegers’s thesis [Zwe02] and from
+Bruinier’s and Funke’s treatment of theta lifts [BF04]. This role can be phrased more systematically in
+terms of Harish-Chandra modules for real representation theory, as was done in [Sch11; Wes15a]. A
+description of the analytic properties of θbL,0 along these lines can be inferred from [Wes15b] and the
+definition Equation (3.1).
+
+  To illustrate Theorem I, we return to our running example. Given v = ( v 1 v 2 v 3 ), write
+
+ ṽ 1 = ṽ 1 (v) = v 3 · ( 0 0 1 ) , ṽ 2 = ṽ 2 (v) = 14 (v 2 + 2v 3 − v 1 ) · ( 1 1 2 ) , ṽ 3 = ṽ 3 (v) = 17 (2v 2 + 2v 3 − v 1 ) · ( 1 2 2 ) .
+
+      gn+
+Then sd C ex (v) equals
+
+
+   1 1 p                     sgn(4v 10 + 5v 30 )sgn(5v 10 + 7v 30 )
+          Z
+    + + 3                  0
+                                                                                     ¢¢ dv 10 dv 30
+                                     2 + 7(v 0 − ṽ )2 + 10(v 0 − ṽ )(v 0 − ṽ )
+                   ¡ ¡
+   4 4      R2 exp  4π 4(v 1 − ṽ 1 )        3     3               1    1    3     3
+                             p Z                        sgn(v 20 + 2v 30 )sgn(2v 20 + 7v 30 )
+                          + 3               ¡ ¡ 0                                                            ¢¢ dv 20 dv 30 .
+                                        exp   4π   (v   − ṽ   ) 2 + 7(v 0 − ṽ )2 + 4(v 0 − ṽ )(v 0 − ṽ )
+                                     R2
+                                                      2      2           3     3         2     2    3     3
+
+
+Notice that the second term in the expression (0.1) for sgn+           C ex
+                                                                             contributes 14 to sd
+                                                                                                gn+
+                                                                                                  C ex (v) (defined
+in (3.9)), as opposed to a general real-analytic function. In this specific case, the reason is that d −
+is even and the span of ( 0 0 1 ) and ( 1 1 2 ) contains a totally isotropic subspace of dimension 1 = d − − 1.
+   We have intentionally kept this paper as short as possible; We only present material that is strictly
+necessary to achieve the modular completion of theta series. In Section 1 we recall some basic mate-
+rial. In Section 2 we analyze the geometry of polyhedral cones, and deduce convergence of the incom-
+plete theta series. The main innovation in this paper is that sd       gn+  C is studied in terms of an euclidean
+geometric decomposition in Section 3. In Section 4 we establish modularity of completed indefinite
+theta series.
+
+
+Acknowledgment Will be entered after the referees’ comments are received.
+
+
+
+
+                                                                      –4–
+Indefinite Theta Series on Cones                                                                          M. Westerholt-Raum
+
+
+
+1 Preliminaries
+1.1 Lattices We let V be a quadratic space over Q with quadratic form q and scalar product 〈 · , · 〉
+of signature (d + , d − ). Its realification is V (R) := V ⊗ R and its complexification V (C) = V ⊗ C. The
+set of vectors v ∈ V (R) with q(v) > 0 and q(v) < 0 is denoted by V (R)+ and V (R)− , respectively. We
+write V (R)0 for the set of isotropic vectors in V (R). Given a lattice L in V its dual with respect to the
+scalar product is denoted by L ∨ .
+   We frequently use the projectivization P(V (R)) := (V (R) \ {0})/R of V (R). The class in P(V (R)) that
+is represented by v is denoted by [v]. Given S ⊆ V (R), we write [S] := {[v] : v ∈ S \ {0}} for the set of
+projective vectors that are represented by some element in S.
+   The orthogonal complement with respect to 〈 ·, · 〉 in V (R) of a vector w or a set W is denoted by w ⊥
+and W ⊥ , respectively. We write W ⊥ W 0 to say that the elements of two set W and W 0 are mutually
+orthogonal. Given a definite subspace U and a vector v, we write vU for its orthogonal projection
+onto U . Similarly, if W is a set with definite span, we write v W for the orthogonal projection onto
+spanW .
+
+
+1.2 The Jacobi upper half-space Let
+
+                                    H = {τ ∈ C : Imτ > 0},           HJ (V ) = H × V (C)                                (1.1)
+
+be the Poincaré upper half-plane and the Jacobi upper half-space attached to V . We write elements
+of HJ (V ) as pairs (τ, z), where the imaginary part of τ is generally denoted by y, and the one of z by v.
+Note that in Section 3, we use the letter v for elements of V (R), but the Jacobi upper half-space will not
+occur there.
+
+
+1.3 The Jacobi groups We have an action of SL2 (R) on H defined by
+
+                                                 aτ + b
+                                          gτ =          , g = ac db ∈ SL2 (R),
+                                                             ¡ ¢
+                                                                                                                        (1.2)
+                                                 cτ + d
+where the displayed notation for elements of SL2 (R) is used here and throughout the paper. There is a
+unique, non-split extension Mp2 (R) of SL2 (R) by Z/2Z, which is called its metaplectic cover. We write
+Mp2 (Z) for the preimage of SL2 (Z) in Mp2 (R). Elements of Mp2 (R) can be identified with pairs (g , ω),
+where g ∈ SL2 (R) and ω : H → C is a holomorphic square root of τ 7→ cτ + d . The action of SL2 (R) on H
+gives rise to one of Mp2 (R) by the projection (g , ω) 7→ g .
+  Fix the Heisenberg group 0 → R → H(V ) → V (R)2 → 0 with multiplication
+
+                (λ1 , µ1 , κ1 ) · (λ2 , µ2 , κ2 ) = λ1 + λ2 , µ1 + µ2 , κ1 + κ2 + 21 〈λ1 , µ2 〉 − 21 〈λ2 , µ1 〉
+                                                   ¡                                                            ¢
+                                                                                                                        (1.3)
+
+for λ1 , λ2 , µ1 , µ2 ∈ V (R) and κ1 , κ2 ∈ R. It carries a right action of SL2 (R) and Mp2 (R) by means of the
+standard representation of SL2 (R) on the second factor of V (R)2 ∼       = V (R) ⊗ R2 .
+                                J
+  The real Jacobi group G (V ) attached to V is the extension
+
+                                      0 −→ H(V ) −→ G J (V ) −→ Mp2 (R) −→ 1
+
+
+
+
+                                                             –5–
+Indefinite Theta Series on Cones                                                                                M. Westerholt-Raum
+
+
+
+with multiplication
+
+                          ((g 1 , ω1 ), h 1 ) · ((g 2 , ω2 ), h 2 ) = (g 1 , ω1 )(g 2 , ω2 ), h 1 g 2 + h 2 .
+                                                                     ¡                                     ¢
+                                                                                                                              (1.4)
+
+The full Jacobi Group ΓJ (L) is the discrete subgroup of G J (V ) generated by Mp2 (Z) and L 2 ⊂ H(V ).
+We usually denoted its elements by γJ , identifying them with (γ, λ, µ, κ) (γ ∈ Mp2 (Z), λ, µ ∈ L, κ ∈ Z)
+according to our needs.
+
+
+1.4 Weil representations Assume that L is integral. The Weil representation ρ L of L is a representa-
+tion of Mp2 (Z) with representation space
+
+                                             V (ρ L ) := spanC {el : l ∈ L ∨ /L}.                                             (1.5)
+                                                ¢ p ¢                p
+                                              0 , τ of Mp2 (Z), where τ is the principal branch of
+On the generators T := 10 11 , 1 and S := 01 −1
+                      ¡¡ ¢ ¢               ¡¡
+
+the holomorphic square root, it is given by
+
+                                                        σ(L)
+  ρ L (T ) el := exp 2πi q(l ) el    and ρ L (S) el := p                    exp − 2πi 〈l , l 0 〉 el 0 ,
+                    ¡         ¢                                      X         ¡                ¢
+                                                        #L ∨ /L l 0 ∈L ∨ /L
+                                                                                    1
+                                                              where σ(L) := p
+                                                                                                 X         ¡           ¢
+                                                                                                        exp − 2πi q(l ) .
+                                                                                      ∨
+                                                                                   #L /L l ∈L ∨ /L
+
+The Weil representation extends to a representation of ΓJ (L) via the projection ΓJ (L)  Mp2 (Z).
+
+
+1.5 Jacobi forms Assume that L is integral. Let φ : HJ (V ) → V (ρ L ) be a real-analytic function with
+possible singularities. We call φ a real-analytic, weak Jacobi form of weight k, index L, and type ρ L if
+for γJ ∈ ΓJ (L) we have
+
+        ¡ aτ + b z + λτ + µ ¢                              ¡ −c q(z + λτ + µ)
+       φ                      = ρ L (γJ ) ω(τ)2k exp − 2πi                    + q(λ)τ + 〈z, λ〉 φ(τ, z).
+                                                    ¡                                         ¢¢
+                 ,
+          cτ + d   cτ + d                                         cτ + d
+Observe that is suffices to verify that
+
+                                                            ¡ −1 z ¢       p k
+φ(τ + 1, z) = ρ L (T ) φ(τ, z), φ(τ, z + 1) = φ(τ, z), and φ    , = ρ L (S) τ exp 2πi q(z)/τ φ(τ, z),
+                                                                                 ¡          ¢
+                                                              τ τ
+in order to check the transformation behavior of φ.
+
+
+1.6 Vignéras’s modularity result We write E = 〈v, ∂v 〉 and ∆ = 〈∂v , ∂v 〉 for the Euler and Laplace dif-
+ferential operators. Note that ∂v must be viewed as an element of the dual V ∨ of V . In other word,
+in coordinates v i of v, we have E = i v i ∂v i and ∆ = i , j (m −1 )i , j ∂v i ∂v j , where m is the Gram matrix
+                                    P                  P
+
+associated with q.
+  Vignéras proved a stronger version of the following theorem. It will serve as a major tool for our
+modularity theorem. We reformulate it slightly, to include the vector valued case, which allows us to
+work with the full modular group throughout.
+
+
+
+
+                                                                –6–
+Indefinite Theta Series on Cones                                                                                           M. Westerholt-Raum
+
+
+
+Theorem 1.1 (cf. Vignéras [Vig77]). Assume that q is non-degenerate of signature (d + , d − ). Given a
+function h : V (R) → C such that v 7→ h(v) exp(−2πq(v)) is a Schwartz function and such that we have
+
+                                                            ∆h/4π = (E − k 0 )h                                                            (1.6)
+
+for some integer k 0 , then the theta series
+                                                −k 0                    ¡p
+                          θL (h; τ, z) := y 2                                y(l + vy ) exp 2πi (q(l )τ + 〈z, l 〉)
+                                                        X                              ¢   ¡                       ¢
+                                                                el h
+                                                       l ∈L ∨
+
+                                                                                                                                       +   −
+converges locally absolutely and uniformly, and is a real-analytic Jacobi form of weight k 0 + d +d
+                                                                                                 2  , in-
+dex L, and type ρ L .
+
+
+1.7 One basic estimate Fix a negative definite subspace U ⊆ V (R), and let B D (0) ⊂ U be the ball
+of radius D with respect to −q. To examine the difference of our approximation sdgnE and the sign-
+product sgnE in Section 3, we need the follow estimate.
+
+Lemma 1.2. Let U be a quadratic space with quadratic form q that is negative definite. If dv 0 is the
+measure associated to −q, then for every D ≥ 0, we have
+                 Z                         .Z
+                                    0
+                        exp(4πq(v )) dv  0
+                                               exp(4πq(v 0 )) dv 0 ¿ D d −2 exp(−4πD 2 ).
+                       U \B D (0)                                   U
+
+
+Proof. Fix coordinates v 1 , . . . , v d of U . Let S d −1 (r ) be the (d −1)-sphere of radius r . Reducing ourselves
+by a transformation in GL(U ) to the case q(v) = v 12 + · · · + v n2 , we obtain
+
+                                        Z ∞                                                          d −1   Z ∞
+                                                                                                  2π 2
+  Z
+                                                                              d −1
+                          0
+                exp(4πq(v )) dv =   0
+                                              exp(−4πr ) vol(S  2
+                                                                                     (r )) dr =                   r d −1 exp(−4πr 2 ) dr
+   U \B D (0)                           D                                                         Γ( d −1
+                                                                                                       2 )
+                                                                                                           D
+                               1−d
+                                                                         21−d
+                                         Z ∞
+                         2                          d
+                      =p                          r 2 −1 exp(−r ) dr = p           Γ( d2 , 4πD 2 ) ¿ D d −2 exp(−4πD 2 ).
+                        πΓ( d −1
+                              2 )
+                                            4πD 2                       πΓ( d −1
+                                                                              2  )
+
+
+
+2 Convergence of theta series on cones
+  Given C ⊆ P(V (R)), we call
+
+                                                   C (C ) := v ∈ V (R) : [v] ∈ C
+                                                            ©                    ª
+
+
+the cone associated to C . We say that C (C ) is positive, if C ⊂ [V (R)+ ]. If C ⊆ [V (R) \ V (R)− ], we say that
+it is non-negative.
+   The following theorem is the most elementary convergence theorem for theta series in this paper.
+We state it separately in order to recurse to it in the proof of the more subtle Theorem 2.7.
+
+Theorem 2.1. Given a closed set C ⊆ [V (R)+ ], the theta series θL (C (C )) converges locally absolutely and
+uniformly.
+
+
+
+
+                                                                         –7–
+Indefinite Theta Series on Cones                                                                M. Westerholt-Raum
+
+
+
+Proof. Let k · k be an auxiliary euclidean norm on V (R). Since C is closed and P(V (R)) is compact there
+is a minimum
+
+                                 m = min q(v) : v ∈ V (R), kvk = 1, [v] ∈ C ,
+                                         ©                                 ª
+
+                          e = mkvk2 , which is a positive definite minorant to q on C (C ). That is, we
+which is positive. We set q(v)
+have q(v) > mkvk2 for all v ∈ C (C ). In particular, we have
+¯                 ¯
+¯θL (C (C ); τ, z)¯ ≤          exp(−2πy q(l + vy )) ≤
+                       X                                  X                      X
+                                                              exp(−2πy q(l
+                                                                        e )) ≤       exp(−2πy q(le )).
+¯                 ¯
+                    l ∈L∩(C (C )− vy )                        l ∈(L+ vy )∩C (C )              v∈L+ vy
+
+The right hand side is a theta series associated with a positive definite lattice and therefore converges.
+
+2.1 Edges of polyhedral cones If C ⊆ P(V (R)) is given as
+
+                           C (W ) := [v] ∈ P(V (R)) : ∀w ∈ W : 〈v, w〉 ≥ 0
+                                    ©                                     ª
+
+
+for a finite set W ⊂ V (R), we call C (W ) := C (C (W )) the polyhedral cone with walls W . A polyhedral
+cone is said to be non-degenerate if it has inner points. Throughout this paper we call a cone C (W )
+with #W = 1+d − a tetrahedral cone and the corresponding W a tetrahedral set of walls. A set of walls W
+is called cubical, if W allows for a partition S into d − pairs such that
+
+                      interior(C (W )) = [v] ∈ P(V (R)) : ∀(w, w 0 ) ∈ S : 〈v, w〉 = 〈v, w 0 〉 .
+                                        ©                                                    ª
+
+
+The associated cones are called cubical.
+
+Lemma 2.2. Given a set of walls W such that C (W ) is non-degenerate and non-negative. Then for every
+E ⊆ W with #E > d − we have
+
+                                               V (R)0 ∩ C (W ) ∩ E ⊥ = ;.
+
+Proof. The case of d − = 0 is trivial. So let us assume that d − > 0. Suppose that V (R)0 ∩ C (W ) ∩ E ⊥ was
+not empty and contained a vector e. Choose a positive definite subspace V 0 ⊂ V of dimension d + − 1
+that is orthogonal to e. Replacing V by the orthogonal complement of V 0 , we can and will reduce our
+considerations to the case that d + = 1.
+  Fix a positive vector v + ∈ V . The cross section A ∩ V (R)0 of the cone V (R)0 with respect to the affine
+subspace A = {v ∈ V : 〈v, v + 〉 = 1} generates V (R)0 . Since C (W ) is positive, the analogue holds for its
+cross section A ∩ C (W ). In particular, we may assume that e ∈ A.
+  Since d + = 1, d − ≥ 1, and C (W ) is polyhedral and non-negative, the cross section A ∩ C (W ) is a
+compact Euclidean polyhedron in A. There is a tessellation of A ∩ C (W ) by tetrahedrons. Replacing
+A ∩ C (W ) with a tetrahedron containing e, we can thus focus on the case of tetrahedral cones. In
+particular, we can work with the stronger assumption that e ∈ V (R)0 ∩ W ⊥ .
+  Since C (W ) has inner points, there is v ∈ V (R) with 〈v, w〉 > 0 for all w ∈ W . There exists some ve 6∈ e ⊥ ,
+and by adding a sufficiently small multiple of it to v, we can achieve that 〈v, w〉 > 0 for all w ∈ W and
+〈v, e〉 6= 0. Then for all t ∈ R, we have v + t e ∈ C (W ), since e ∈ W ⊥ . On the other hand, we find that
+
+                                 q(v + t e) = q(v) + t 〈v, e〉 + t 2 q(e) = q(v) + t 〈v, e〉.
+
+For some t , we have q(v + t e) < 0 contradicting the assumption that C (W ) is positive.
+
+
+
+                                                           –8–
+Indefinite Theta Series on Cones                                                                           M. Westerholt-Raum
+
+
+
+  For a tetrahedral set W , we call E (W ) = E ⊆ W : #E = d − the set of its edges. The orthogonal
+                                            ©                    ª
+
+complements of the E ∈ E (W ) yield the edges, i.e. the lowest dimensional faces, of the cone C (W ). We
+call
+
+                                     E (W )0 := E ∈ E (W ) : E ⊥ ∩ V (R)0 6= {0}
+                                               ©                                ª
+
+
+the set of isotropic edges of W . In the next two Lemmas, we split up C (W ) into a closed positive set
+and neighborhoods of isotropic edges.
+
+Lemma 2.3. For every polyhedral cone C (W ) that is non-degenerate and non-negative, we have
+
+                  C (W ) ∩ V (R)0 =                  E⊥ =                    v ∈ V (R) : ∀w ∈ E : 〈v, w〉 = 0 .
+                                            [                  [         ©                                  ª
+                                        E ∈E (W )0          E ∈E (W )0
+
+
+Proof. As in the proof of Lemma 2.2, it suffices to consider the case of tetrahedral cones and d + = 1.
+Fix some v ∈ C (W ) ∩ V (R)0 and let E be a maximal subset of W such that v ∈ E ⊥ . We have E 6= W by
+Lemma 2.2. Suppose that #E < d − . Then E ⊥ contains at least one vector v 0 with q(v 0 ) < 0. Observe
+that 〈v, w〉 > 0 for all w ∈ W \ E . For t ∈ R with |t | sufficiently small, we therefore have v + t v 0 ∈ C (W ).
+On the other hand,
+
+                           q(v + t v 0 ) = q(v) + t 〈v, v 0 〉 + t 2 q(v 0 ) = t 〈v, v 0 〉 + t 2 q(v 0 ).
+
+If t 6= 0, sgnt 6= sgn〈v, v 0 〉, and |t | is small enough, then this is negative, contradicting positivity of C (W ).
+Therefore #E = d − as claimed.
+
+  Given E ∈ E (W ) fix some auxiliary euclidean norm k · k on V (R). With this norm and for ² > 0, let
+
+                    E (²) := E (k · k, ²) := [v] ∈ P(V (R)) : kvk = 1, ∀w ∈ E : 0 ≤ 〈v, w〉 < ² .
+                                            ©                                                 ª
+                                                                                                                         (2.1)
+
+Notice that we suppress the norm from notation, since for any other choice k · k0 we have E (k · k0 , ²0 ) ⊆
+E (k · k, ²) if ²0 is small enough. Indeed, V (R) is finite dimensional so that all norms are equivalent to
+each other. We remark that E (²) can also be understood in terms of cross sections as at the beginning
+of the proof of Lemma 2.2.
+
+Lemma 2.4. Given a non-degenerate and non-negative polyhedral cone C (W ), for every ² > 0,
+
+                                                                E (²) ⊆ P(V (R))
+                                                          [
+                                            C (W ) \
+                                                       E ∈E (W )0
+
+is closed and positive.
+
+Proof. Consider the set in the statement. It is closed since E (²) is open in C (W ). It contains no isotropic
+points by Lemma 2.3, so it is positive.
+
+
+
+
+                                                              –9–
+Indefinite Theta Series on Cones                                                                        M. Westerholt-Raum
+
+
+
+2.2 Convergence on non-negative polyhedral cones Consider a non-degenerate and non-negative
+cone C (W ). For any E ∈ E (W )0 , write E (R) := spanR E and E (Q) = E (R)∩V . Write E (Q)0 for the maximal
+totally isotropic subspace of V (Q) ∩ E (R), which is unique as E (R) contains no negative vectors. Recall
+that the Witt index of a quadratic space is the dimension of a maximal isotropic subspace. We say
+that E ∈ E (W )0 is a rational edge if the Witt index of E (R) and the dimension of E (Q)0 agree. The
+next lemma says that we can find neighborhoods of the rational isotropic edges of C (W ) in term of
+polyhedral cones.
+
+Lemma 2.5. Fix a polyhedral, non-degenerate, and non-negative cone C (W ) and an edge E ∈ E (W )0
+that is rational. Let E (Q)− ⊂ E (Q) be a negative definite subspace. There is a set E 0 ⊂ (E (Q)− )⊥ ∩ V (Q)
+of dim E (Q)0 linearly independent vectors such that span E 0 is negative definite and C (E ∩ E 0 ) ⊇ E (²) for
+some ² > 0.
+
+Proof. Without loss of generality, we can assume that E (Q)− is trivial by projecting to its orthogonal
+complement. We can further assume that E (Q)0 = E (Q) by projecting to the orthogonal complement
+of a maximal negative definite and rational subspace of E (R). By that orthogonal projection E (Q)0 is
+mapped to a non-negative subspace of V (Q). This suffices as an assumption on E (Q)0 in the following
+argument.
+   Set n := dim E (Q)0 , and observe that we have d + , d − ≥ n. Therefore there is a negative definite, n-
+dimensional subspace W ⊂ V (Q) such that the pairing 〈 ·, · 〉 between E (Q)0 and W is non-degenerate.
+Fix a rational basis v 1 , . . . , v n of E (Q)0 and a dual basis w 1 , . . . , w n of W . Set e i0 = e i0 (t ) = t w i − v i for
+1 ≤ i ≤ n and t > 0. There is a t > 0 such that for any 1 ≤ i ≤ d , we have q(e i0 ) = t 2 q(w i ) − t < 0, and the
+matrix 〈e i0 , e 0j 〉 i , j is negative definite. Fix such a t , and observe that 〈v j , e i0 〉 ≥ 0 for all 1 ≤ i , j ≤ n. That
+          ¡          ¢
+
+is, E 0 := t w i − v i : 1 ≤ i ≤ n is a valid choice of E 0 .
+           ©                          ª
+
+
+  To make full use of Lemma 2.5, we construct a well-behaved covering of E (²) by suitable cones C (E i0 ).
+
+Lemma 2.6. Let C (W ) be a polyhedral non-degenerate and non-negative cone. Fix E ∈ E (W )0 that is
+rational. Then there is a finite collection of finite sets E i0 ⊂ V (R) such that for all ²i > 0 we have
+
+                                                          E i0 (²i ) for some ² > 0
+                                                      [
+                                            E (²) ⊂
+
+and the E i0 satisfy:
+
+  (i) We have #E i0 = dim E i0 (Q) = d − .
+
+ (ii) We have E i0 (Q)0 = E (Q)0 .
+
+(iii) The E i0 (²i ) are non-negative for sufficiently small ²i > 0.
+
+ (iv) There is E i0 − ⊆ E i0 ∩ V (Q) such that span E i0 − is negative definite and E i0 (Q) = E (Q)0 + span E i0 − .
+
+Proof. We may replace V (Q) by (E (Q)0 )⊥ /E (Q)0 , and thus assume that E (Q)0 = {0}.
+  Choose ² > 0 small enough so that E (²) is positive. We consider E as a point in the space of maximal,
+framed, negative definite subspaces in V (R). Fix a closed neighborhood U of E (²) in [V (R)+ ].
+
+
+
+
+                                                             – 10 –
+Indefinite Theta Series on Cones                                                                                      M. Westerholt-Raum
+
+
+
+  For any [v] ∈ [V (R)+ ], there is one maximal, framed, negative definite subspace E 0 and ²0 > 0 with
+E (²0 ) ⊆ V (R)+ such that v ∈ E 0 (²0 ). Rational points are dense in the space of maximal, framed, negative
+ 0
+
+definite subspaces of V (R). In particular, the compact set U can be covered by the countable set of
+interiors of C (E 0 ) for rational E 0 . Finitely many suffice to cover C (E ) ∩U , and the set of these E 0 yields
+the E i0 in the statement.
+
+Theorem 2.7. Fix a polyhedral cone C (W ) that is non-degenerate and non-negative. If every E ∈ E (W )0
+is rational, then the theta series θL (C (W )) converges locally absolutely and uniformly on
+
+                       (τ, z) ∈ HJ (V ) : ∀E ∈ E (W )0 : ; = Z ∩ 〈L + Im(z)/Im(τ), L ∩ E (Q)0 〉 .
+                      ©                                                                        ª
+
+
+Proof. Using notation from (2.1), let C (²)+ = C (W ) \ E ∈E (W )0 E (²) for ² > 0. To simplify notation, set
+                                                              S
+
+E (²) = C (E (²)) and C (²)+ = C (C (²)+ ). If ² is sufficiently small, we can decompose θL (C (W )) as
+
+                               θL (C (W ); τ, z) = θL (C (²)+ ; τ, z) +                           θL (E (²); τ, z).
+                                                                                        X
+
+                                                                                     E ∈E (W )0
+
+Since C (²)+ is positive and closed in V (R) the first summand converges absolutely and uniformly
+on HJ (V ) by Theorem 2.1. It suffices to demonstrate convergence of θL (E (²)) for each E .
+  We next employ Lemma 2.6 to reduce our consideration to E such that there is a set of rational vec-
+tors E − ⊂ E with negative definite span E − and E (Q) = span E − + E (Q)0 . For such E we obtain from
+Lemma 2.5 an auxiliary set E 0 with span E 0 negative definite, E 0 ⊥ E − , and C (E ∪ E 0 ) ⊇ E (²) for suffi-
+ciently small ². The pairing of E (Q)0 and E 0 (Q) is non-degenerate. We may therefore replace L by
+
+                                                       L ∩ E 0 (Q)⊥ ⊕ L ∩ E (Q)0 ,
+
+which has finite index in L. In this situation, it suffices to show convergence of
+                      ¯                       ¯
+     exp(2π q(Im(v))) ¯θL (C (E ∪ E 0 ); τ, z)¯
+                      ¯                       ¯
+                               X                                 X                     ¡                                           ¢
+                  ≤                                                                 exp − 2πy(q(l 1 + Im(z)) + 〈l 2 , l 1 + Im(z)〉) .
+                               l 1 ∈L∩E 0 (Q)⊥              l 2 ∈L∩E (Q)0
+                        l 1 +Im(z 1 )/Im(τ)∈C (E − ) l 2 +Im(z 2 )/Im(τ)∈C (E 0 )
+
+As in Zwegers’s thesis [Zwe02], for fixed l 1 the sum over l 2 is bounded, since 〈l 2 , l 1 +v〉 is bounded away
+from 0. Then the sum over l 1 converges, since C (E ) is a positive cone in the orthogonal complement
+of E 0 .
+
+
+3 Sign functions
+     We let sgn be the sign function, with sgn(0) := 0. Recall from the introduction that
+                                                                        Y
+                                                      sgnE (v) :=            sgn〈v, w〉
+                                                                       w∈E
+
+for any finite subset E of V (R). Notice that sgnE is symmetric in the elements of E .
+
+
+
+
+                                                                    – 11 –
+Indefinite Theta Series on Cones                                                          M. Westerholt-Raum
+
+
+
+3.1 Smoothened sign function Assuming that V is negative definite, the normalized convolution
+                          Z                                .Z
+                                   0           0         0
+             sdgnE (v) :=   sgnE (v ) exp(4πq(v − v)) dv        exp(4πq(v 0 )) dv 0         (3.1)
+                              V (R)                                            V (R)
+
+is our approximation to sgnE (cf. Proposition 3.4). Notice that sd
+                                                                 gnE (v) it smooth and depends only the
+projection of v to span E ⊆ V (R).
+
+Remark 3.1. Up to a change of coordinates and the associated renormalization this smoothened sign
+is the same as the “higher error function” that appears in Equation (3.44) of [Ale+16] and Equation (4)
+of [Naz16].
+
+  If V is negative semi-definite, then V (R)0 ⊆ V (R) is a subspace and V (R)/V (R)0 is a negative definite
+quadratic space. In this situation, we define
+
+     sd           gnE − (π(v)) sgnE 0 (v), where E 0 = {w ∈ E : q(w) = 0}, E − = {w ∈ E : q(w) 6= 0},
+      gnE (v) := sd
+
+and π : V (R) → V (R)/V (R)0 is the canonical projection. For general V and negative semi-definite
+span E , we define
+
+                                                sd
+                                                 gnE (v) := sd
+                                                             gnE (v E ),                                (3.2)
+
+where the right hand side is computed as with respect to the quadratic space span E .
+
+
+3.2 Smoothened volume function To give a decomposition of sd       gnE that exhibits its asymptotic be-
+havior in a precise way, we employ a smoothened version of a volume function. Assuming that V is
+negative definite, for any finite, non-empty set E ⊂ V (R), we let
+
+                          S E (v) := v 0 ∈ V (R) : ∀w ∈ E : sgn〈v 0 , w〉 6= sgn〈v, w〉
+                                    ©                                                 ª
+                                                                                                        (3.3)
+
+be the sector in V (R) that is opposite to v with respect to the walls corresponding to E . Denote its
+volume by
+                                                               ¡       ¢
+                                                volE (v) := vol S E (v) ,                               (3.4)
+
+where the volume is taken with respect to the quadratic form −q on V (R). Our smoothening
+                                 Z                        .Z
+                                               0        0
+                     volE (v) :=
+                     c              exp(4πq(v − v)) dv         exp(4πq(v 0 )) dv 0
+                                      S E (v)                          V (R)
+
+
+depends only on the geometry with respect to span E . If E = ;, we let volE (v) = vol
+                                                                                  c E (v) = 1.
+
+Proposition 3.2. For every v ∈ V (R), we have volE (v) = volE (v E ).
+
+Proof. From its definition, we see that S E (v) = S E (v E ). When applying an element of g ∈ GL(E ⊥ ) to
+v 0 , the normalizing factor det(g ) emerges in both the numerator and the denominator of the defining
+expression for vol
+                 c E (v), and thus cancels.
+
+
+
+
+                                                         – 12 –
+Indefinite Theta Series on Cones                                                                                             M. Westerholt-Raum
+
+
+
+  The asymptotic properties of vol
+                               c E are described in the next statement.
+
+Proposition 3.3. For E 6= ;, we have
+
+                                 c E (v) ¿ D d −2 exp − 4πD 2 ,                        D := dist(v, E ⊥ ).
+                                                     ¡       ¢
+                                 vol
+
+Proof. We observe that the ball B D (v) does not intersect S E (v). Therefore, it suffices to estimate
+  Z                                         .Z
+                             0          0
+                   exp(4πq(v − v)) dv                    exp(4πq(v 0 )) dv 0
+   V (R)\B D (v)                                 V (R)
+                                                                Z                              .Z
+                                                                                      0      0
+                                                              =              exp(4πq(v )) dv                                 exp(4πq(v 0 )) dv 0 .
+                                                                     V (R)\B D (0)                                   V (R)
+
+This is achieved in Lemma 1.2.
+
+3.3 Decomposition of sd
+                      gnE            We write the smoothened sign function as a linear composition of vol-
+ume functions.
+
+Proposition 3.4. If V is negative definite, we have
+                                             X #E 0
+                                 sd
+                                  gnE (v) =     2 sgnE \E 0 (v) vol
+                                                                c E 0 (v).
+                                                           E 0 ⊆E
+
+Proof. We refine the sectors S E 0 (v) to
+
+      S EE 0 (v) := v 0 ∈ V (R) : ∀w ∈ E 0 : sgn〈v 0 , w〉 6= sgn〈v, w〉, ∀w ∈ E \ E 0 : sgn〈v 0 , w〉 = sgn〈v, w〉 ,
+                   ©                                                                                           ª
+                                                                                                                                               (3.5)
+
+the difference being that we now enforce the sign of 〈v 0 , w〉 also for w 6∈ E 0 . Set
+                                  Z                           .Z
+                        E                       0           0
+                     volE 0 (v) =
+                     c              exp(4πq(v − v)) dv              exp(4πq(v 0 )) dv 0 ,
+                                       S EE 00 (v)                                     V (R)
+
+and notice that
+
+                                                                               c E 00 (v).
+                                                                        X
+                                                     vol
+                                                     c E 0 (v) =               vol E                                                           (3.6)
+                                                                    E 0 ⊆E 00 ⊆E
+
+  Define
+                                             Ã  !
+                                            m
+                        a n (m) := a n−1 −        a n−1 (n − 1), m ≥ n ≥ 1; a 0 (m) = (−1)m .                                                  (3.7)
+                                           n −1
+
+Notice that a m (m) = (−2)m , which can be proved by induction. Indeed, we have
+                                   Ã !
+                               m−1  m                    m−1
+            a m (m) = (−1)m −          a n (n) = (−1)m −     (−2)n = (−1)m − (−1)m + (−2)m .
+                               X                         X
+                               n=0 n                     n=0
+
+  Fix v and assume that sgnE (v) > 0. We will show by induction that for every 0 ≤ n ≤ 1 + d − , we have
+                                                               0
+                                                      (−2)#E vol                                        c E 0 (v).
+                                                                                             a n (#E 0 )vol
+                                              X                                     X
+                             sd
+                              gnE (v) =                      c E 0 (v) +
+                                                                                                            E                                  (3.8)
+                                            E 0 ⊆E                                 E 0 ⊆E
+                                            #E 0 <n                                #E 0 ≥n
+
+
+
+
+                                                                    – 13 –
+Indefinite Theta Series on Cones                                                            M. Westerholt-Raum
+
+
+
+If n = 0, then (3.8) is true by the definitions of S EE 0 and a 0 (m). We assume that it is true for n and show
+that it holds for n     n +1. Rewrite the contribution of E 0 with #E 0 = n to the second summand of (3.8):
+                                  c E 0 (v) = a n (n)vol                      c E 00 (v).
+                                                                         X
+                           a n (n)vol E
+                                                     c E 0 (v) − a n (n)      vol E
+                                                                       E 0 (E 00 ⊆E
+
+After inserting this into (3.8), it is straightforward to compare the arising contributions to (3.7).
+   The case of sgnE (v) < 0 works analogously. To include the case sgnE (v) = 0, observe that contribu-
+         c E 0 vanish due to symmetry for E 0 that satisfy 〈v, w〉 = 0 for some w ∈ E \ E 0 .
+tions of vol
+
+3.4 Degeneration of sd    gnE in families We consider the behavior of sd gnE (t ) for families E (t ), t ∈ [0, ∞).
+We call such families negative if #E (t ) = dim spanE (t ) is constant on (0, ∞) and span E (t ) is negative
+definite for all t ∈ (0, ∞).
+Proposition 3.5. Assume that E (t ) = E ∪ {w(t )} is a negative family. If q(w(t )) → 0 as t → 0 and v 6∈
+w(0)⊥ , then locally around v, we have
+                                                               2¢
+                               c E (t ) (v) ¿ exp 4π 〈w(t ), v〉 → 0 as t → 0.
+                                                 ¡
+                               vol
+                                                     4q(w(t ))
+Proof. This follows when estimating dist(v, w ⊥ )2 , w ∈ E (t ) by
+                                    ³ 〈w(t ), v〉       ´ 〈w(t ), v〉2
+                                  q              w(t ) =              ,
+                                      2q(w(t ))             4q(w(t ))
+and then applying Proposition 3.3.
+
+Corollary 3.6. With assumptions as in Proposition 3.5, we have locally around v
+                                                              ¡ 〈w(t ), v〉2 ¢
+                          |sd               gnE (0) (v)| ¿ exp π
+                            gnE (t ) (v) − sd                                 as t → 0.
+                                                                 4q(w(t ))
+Proposition 3.7. Assume that E (t ) = E − ∪ E 0 (t ) is a negative family, where the Witt index of E (0)(R)
+equals #E 0 (t ). Then sd
+                        gnE (t ) is a (one-side) differentiable family of smooth functions.
+
+Proof. This can be directly seen from the decomposition in Proposition 3.4.
+
+3.5 Vignéras’s differential equation We verify Vignéras’s differential equation.
+Lemma 3.8. Assuming that V (R) is negative definite, we have
+
+                                        2πE − ∆ sd
+                                       ¡         ¢
+                                                   gnE = 0.
+
+Proof. We consider the defining integral of sd  gnE . The integrand decays exponentially, so we can dif-
+ferentiate it directly. This shows that the differential 2πE − ∆ sd
+                                                          ¡        ¢
+                                                                     gnE is the integral over a Schwartz
+function. Now, write V (R) as the union of U² and V (R) \U² for an ²-neighborhood (with respect to the
+distance coming from q) U² of {v ∈ V : ∃w ∈ E : 〈v, w〉 = 0}. The integrand is differentiable on V \U²
+and sgnE is locally constant on there. We therefore see that (2πE − ∆)sd gnE (v) equals
+     Z                                             Z
+        sgn(v 0 ) 2πE − ∆ exp(4πq(v 0 − v)) dv 0 +              2πE − ∆ sgn(v 0 + v) exp(4πq(v 0 )) dv 0 .
+                 ¡       ¢                                     ¡       ¢
+      U²                                               V (R)\(U² −v)
+
+As ² → 0, this tends to 0, proving the statement.
+
+
+
+                                                      – 14 –
+Indefinite Theta Series on Cones                                                                      M. Westerholt-Raum
+
+
+
+3.6 Cones determined by their face indicators Recall from the introduction that we say that a poly-
+hedral cone C = C (W ) is determined by its face indicators if there is a linear combination sgn+
+                                                                                                C
+                                                                                                  of
+sgnE for E ⊂ V (R) with #E ≤ d such that
+                              −
+
+
+                interior(C ) ⊆ support(sgn+                        +
+                                          C ) ⊆ closure(C ) and sgnC |interior(C ) = ±1.
+
+The second condition is merely a normalization. By Lemma 2.2, faces of polyhedral cones correspond
+to sets E as above.
+  If C is a cone that is determined by face indicators, we set
+
+                   gn+                    gnE (v), where sgn+                      a E sgnE (v), a E ∈ C.
+                                X                                              X
+                  sd C (v) =         a E sd                 C (v) =                                                 (3.9)
+                                 E                                             E
+
+Proposition 3.9. Cubical cones are determined by their face indicators.
+
+Proof. Let C = C (W ) be a cubical cone. By definition there is a partition S of W into d − pairs such
+that
+
+                                            −#W /2
+                               sgn+                                sgn〈v, w〉 + sgn〈v, w 0 〉
+                                                        Y         ¡                         ¢
+                                  C (v) = 2
+                                                     (w,w 0 )∈S
+
+satisfies the desired properties.
+
+Proposition 3.10. Tetrahedral cones are determined by their face indicators.
+
+Proof. Given a tetrahedral cone C = C (W ), define
+                                                        ¡
+                                                         (#W − 1)#W ¢−1 ,  if #W is odd;
+            +                                      0
+                       Y      ¡                      ¢
+         sg
+          gnC (v) :=           sgn〈v, w〉 + sgn〈v, w 〉 ·                                                            (3.10)
+                                                            −2 Q
+                     w,w 0 ∈W
+                                                        #W      sgn〈v, w〉, if #W is even.
+                      w6=w 0
+
+Normalization is chosen in such a way that sg gn+C (v) = ±1 in the interior of C (W ).
+                                                                                              2
+  Let R = C[s w : w ∈ W ] be the polynomial ring in formal variables indexed by W and I = R(s w :w ∈W)
+be an ideal. There is a unique polynomial pe ∈ R such that
+
+                                          gn+
+                                                      ¡              ¢
+                                         sg C (v) = p
+                                                    e s w → sgn〈v, w〉 .
+
+Further, there is a unique lift p ∈ R of p (mod I ) to R that is linear in each of of the variables. We set
+
+                                         sgn+
+                                                     ¡               ¢
+                                            C (v) = p s w → sgn〈v, w〉 .
+
+Checking the total degree of p, we conclude that sgn+C
+                                                        is a linear combination of functions sgnE for
+E ⊂ V (R) of size at most d .
+                           −
+
+  We have to verify the support of sgn+
+                                      C
+                                        to finish the proof. Observe that sgn+C
+                                                                                coincides with sggn+
+                                                                                                   C
+                                 ⊥
+with possible exceptions on ∪w w . Given v, let E = {w ∈ W : 〈v, w〉 = 0}. Then it suffices to inspect
+
+
+
+
+                                                          – 15 –
+Indefinite Theta Series on Cones                                                                               M. Westerholt-Raum
+
+
+
+contributions to sgn+ C
+                        which do not involve sgn〈v, w〉 for w ∈ E . Collecting these terms in the definition
+      +
+    gnC , we see that
+of sg
+
+   gn+                         sgn〈v, w〉 + sgn〈v, w 0 〉
+                    Y         ¡                         ¢
+  sg C (v) :=
+                 w,w 0 ∈W
+                w∈E ∨w 0 ∈E
+                  w6=w 0
+                                                                            ¡
+                                                                             (#W − 1)#W ¢−1 ,  if #W is odd;
+                                                                       0
+                                         Y        ¡                      ¢
+                                                   sgn〈v, w〉 + sgn〈v, w 〉 ·
+                                                                                −2 Q
+                                      w,w 0 ∈W \E
+                                                                            #W      sgn〈v, w〉, if #W is even.
+                                        w6=w 0
+
+
+If the second factor does not vanish, then v ∈ C (W ) ∩ E ⊥ . The value of the corresponding product in
+R/I remains the same, since sgn〈v, w〉2 = 1 for w 6∈ E . This shows that v ∈ E ⊥ ∩ C (W \ E ) ⊆ C (W ).
+
+
+4 Modular theta series
+  In this section, we drop notation v for elements in V (R), and write z = u +i v instead. For polyhedral
+cones C that are determined by face indicators, we set
+                                                                    ¡p
+                        θL (sgn+
+                               C ; τ, z) =            el sgn+            y(l + vy ) exp 2πi (q(l )τ + 〈z, l 〉) .
+                                                 X                                 ¢   ¡                      ¢
+                                                            C                                                                (4.1)
+                                             l ∈L ∨
+
+As a direct consequence of Theorem 2.7, we find:
+
+Corollary 4.1. Let C = C (W ) be a polyhedral cone that is non-degenerate, non-negative, and deter-
+mined by face indicators. If every E ∈ E (W )0 is rational, then the theta series θL (sgnW
+                                                                                         +
+                                                                                           ) converges locally
+absolutely and uniformly on
+
+                              (τ, z) ∈ HJ (V ) : ∀E ∈ E (W )0 : ; = Z ∩ 〈L ∨ + vy , L ∨ ∩ E (Q)0 〉 .
+                          ©                                                                       ª
+
+
+  For cones determined by their face indicators a completed version of θL (sgn+
+                                                                              C
+                                                                                               gn+
+                                                                                ) arises from sd C:
+                                                                    ¡p
+                            gn+
+                       θL (sd C ; τ, z) :=                    gn+        y(l + vy ) exp 2πi (q(l )τ + 〈z, l 〉) .
+                                                  X                                ¢   ¡                      ¢
+                                                          el sd C                                                            (4.2)
+                                                 l ∈L ∨
+
+
+
+
+Theorem 4.2. Let C = C (W ) be a non-degenerate, non-negative tetrahedral or cubical cone such that
+                                         gn+
+every E ∈ E (W )0 is rational. Then θL (sd C τ, z) with the choice of sgnC as in Propositions 3.9 and 3.10
+                                                                         +
+
+converges locally absolutely on
+
+                              (τ, z) ∈ HJ (V ) : ∀E ∈ E (W )0 : ; = Z ∩ 〈L ∨ + vy , L ∨ ∩ E (Q)0 〉 .
+                          ©                                                                       ª
+
+
+It is a real-analytic Jacobi form with meromorphic singularities of weight (d + + d − )/2, index L, and
+type ρ L .
+
+Proof. We first establish convergence. To see that (4.2) converges locally absolutely, use the decom-
+position of sd
+             gnE in Proposition 3.4 and the asymptotic behavior of volc E 0 in Proposition 3.3. In the
+
+
+
+
+                                                                    – 16 –
+Indefinite Theta Series on Cones                                                                               M. Westerholt-Raum
+
+
+                                                                                             +
+tetrahedral case, fix E 0 ⊂ W with #E 0 < #W . Such E 0 index all possible vol
+                                                                           c E 0 terms in sd
+                                                                                           gnW,w . The
+contribution to (4.2) is
+
+                                                                      v c 0 p
+                                       p E 0 (l + vy ) sgn+                      y(l + vy ) exp 2πi (q(l )τ + 〈z, l 〉) ,
+              X              X                                                 ¡           ¢   ¡                      ¢
+                      el                                  E \E 0 (l + y ) volE
+             l ∈L ∨        E ∈E (W )
+
+where p E 0 (l ) is a polynomial in sgn〈v, w〉, w ∈ E 0 and sgn+
+                                                              E \E 0
+                                                                     is the indicator for the tetrahedral cone
+spanned by E \ E 0 . After using the asymptotic behavior of vol  c E 0 to obtain a partial majorant of q, we
+can invoke Corollary 4.1. Convergence in the cubical case follows along the same lines.
+  As for modularity, in the case of positive C (W ), Vignéras’s modularity theorem suffices, when using
+Lemma 3.8, because sd      gn+C (v) exp(−2πq(v)) is a Schwartz function on V (R). In the general case, we
+                   +
+express θL (sd  gnC ) as a uniform limit of modular theta series: We first treat the case of isotropic vectors
+in E . This step is completely analogous to [Zwe02]. We let E (t ) be a linear approximation of E (0). Then
+the remainder terms in Corollary 3.6 are sufficient to obtain uniform convergence, when decomposing
+V (R) as in the proof of Proposition 2.7 in [Zwe02]. To also cover the case of E (Q)0 that is not spanned
+by isotropic vectors in E , we can use Proposition 3.7 directly.
+
+
+[Ale+16]    S. Alexandrov, S. Banerjee, J. Manschot,                                   the Tata Institute of Fundamental
+            and B. Pioline. Indefinite Theta Series and                                Research, Bombay; by Springer-Verlag,
+            Generalized Error Functions.                                               Berlin, 1986.
+            arXiv:1606.05495. 2016.                                     [KM86]         S. S. Kudla and J. Millson. “The theta
+[AMP13]     S. Alexandrov, J. Manschot, and                                            correspondence and harmonic forms. I”.
+            B. Pioline. “D3-instantons, mock theta                                     Math. Ann. 274.3 (1986).
+            series and twistors”. J. High Energy Phys.                  [KM87]         S. S. Kudla and J. Millson. “The theta
+            4 (2013).                                                                  correspondence and harmonic forms.
+[BF04]      J. H. Bruinier and J. Funke. “On two                                       II”. Math. Ann. 277.2 (1987).
+            geometric theta lifts”. Duke Math. J.                       [Kud16]        S. Kudla. Theta Integrals and Generalized
+            125.1 (2004).                                                              Error Functions. arXiv:1608.03534. 2016.
+[BM13]      K. Bringmann and J. Manschot. “From                         [KW01]         V. G. Kac and M. Wakimoto. “Integrable
+            sheaves on P2 to a generalization of the                                   highest weight modules over affine
+            Rademacher expansion”. Amer. J. Math.                                      superalgebras and Appell’s function”.
+            135.4 (2013).                                                              Comm. Math. Phys. 215.3 (2001).
+[BO06]      K. Bringmann and K. Ono. “The f (q)                         [KW14]         V. G. Kac and M. Wakimoto.
+            mock theta function conjecture and                                         “Representations of affine superalgebras
+            partition ranks”. Invent. Math. 165.2                                      and mock theta functions”. Transform.
+            (2006).                                                                    Groups 19.2 (2014).
+[BO09]      K. Bringmann and K. Ono. “Some                              [KW16a]        V. G. Kac and M. Wakimoto.
+            characters of Kac and Wakimoto and                                         “Representations of affine superalgebras
+            nonholomorphic modular functions”.                                         and mock theta functions. III”. Izv. Ross.
+            Math. Ann. 345.3 (2009).                                                   Akad. Nauk Ser. Mat. 80.4 (2016).
+[DMZ12]     A. Dabholkar, S. Murthy, and D. B. Zagier.                  [KW16b]        V. G. Kac and M. Wakimoto.
+            Quantum Black Holes, Wall Crossing,                                        “Representations of affine superalgebras
+            and Mock Modular Forms. arXiv:                                             and mock theta functions II”. Adv. Math.
+            1208.4074. 2012.                                                           300 (2016).
+[Gan16]     T. Gannon. “Much ado about Mathieu”.                        [LZ15]         S.-C. Lau and J. Zhou. “Modularity of
+            Adv. Math. 301 (2016).                                                     open Gromov-Witten potentials of
+[Kit86]     Y. Kitaoka. Lectures on Siegel modular                                     elliptic orbifolds”. Commun. Number
+            forms and representation by quadratic                                      Theory Phys. 9.2 (2015).
+            forms. Vol. 77. Tata Institute of                           [Man13]        J. Manschot. “BPS invariants of
+            Fundamental Research Lectures on                                           semi-stable sheaves on rational
+            Mathematics and Physics. Published for                                     surfaces”. Lett. Math. Phys. 103.8 (2013).
+
+
+
+                                                                   – 17 –
+Indefinite Theta Series on Cones                                                         M. Westerholt-Raum
+
+
+
+[Naz16]     C. Nazaroğlu. r -tuple error functions and   [Sch11]    R. Schulze-Pillot. “Weak Maaßforms and
+            indefinite theta sereis of higher-depth.                 (g, K )-modules”. Ramanujan J. 26.3
+            arXiv:1609.01224. 2016.                                  (2011).
+                                                          [Sie51]    C. L. Siegel. “Indefinite quadratische
+[OP06]      A. Okounkov and R. Pandharipande.                        Formen und Funktionentheorie. I”.
+            “Gromov-Witten theory, Hurwitz theory,                   Math. Ann. 124 (1951).
+            and completed cycles”. Ann. of Math. (2)
+                                                          [Vig77]    M.-F. Vignéras. “Séries thêta des formes
+            163.2 (2006).
+                                                                     quadratiques indéfinies”. Séminaire
+                                                                     Delange-Pisot-Poitou, 17e année
+[Ram00]     S. Ramanujan. Collected papers of                        (1975/76), Théorie des nombres: Fasc. 1,
+            Srinivasa Ramanujan. Edited by G. H.                     Exp. No. 20. Secrétariat Math., Paris,
+            Hardy, P. V. Seshu Aiyar and B. M. Wilson,               1977.
+            Third printing of the 1927 original, With a
+                                                          [Wes15a]   M. Westerholt-Raum. Harmonic Weak
+            new preface and commentary by Bruce
+                                                                     Siegel Maaß Forms I. arXiv:1510.03342. To
+            C. Berndt. AMS Chelsea Publishing,
+                                                                     appear in Int. Math. Res. Not. 2015.
+            Providence, RI, 2000.
+                                                          [Wes15b]   M. Westerholt-Raum. “H-harmonic
+                                                                     Maaß-Jacobi forms of degree 1”. Res.
+[Ram88]     S. Ramanujan. The lost notebook and
+                                                                     Math. Sci. 2 (2015).
+            other unpublished papers. With an
+            introduction by George E. Andrews.            [Zwe02]    S. Zwegers. “Mock Theta Functions”.
+            Berlin: Springer-Verlag, 1988.                           PhD thesis. Universiteit Utrecht, 2002.
+
+
+
+Chalmers tekniska högskola och Göteborgs Universitet, Institutionen för Matematiska vetenskaper, SE-412 96
+Göteborg, Sweden
+E-mail: martin@raum-brothers.eu
+Homepage: http://raum-brothers.eu/martin
+
+
+
+
+                                                     – 18 –
+

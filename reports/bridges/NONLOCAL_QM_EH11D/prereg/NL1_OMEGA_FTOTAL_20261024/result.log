@@ -1,0 +1,10 @@
+T1 P1: HOLD
+T1 P2: HOLD
+T1 P3: HOLD
+CONTROL C1_wrong_args: FAILS (as required)
+CONTROL C2a_no_Omega: FAILS (as required)
+CONTROL C2b_four_comp: FAILS (as required)
+CONTROL C2c_six_comp: FAILS (as required)
+CONTROL C3_catB_nearmiss: FAILS (as required)
+CATEGORY: Cat B continuum (structural lock; not paper Cat A; no numerics; maps separate)
+RESULT PASS

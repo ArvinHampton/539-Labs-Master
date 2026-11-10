@@ -1,0 +1,25 @@
+[PASS] PG1 H1: [L1x L2x L3x] = -[x]_x ; det = 0 ; adj([x]_x) = x x^T (so rank exactly 2 iff x != 0) ; nullspace of stacked L_i is {0} ; J z = 0 iff z = 0 (det J = 1)
+[PASS] PG2 P1: sum F_ab^2 -/+ 2(F12F34 - F13F24 + F14F23) = (F12-/+F34)^2 + (F13+/-F24)^2 + (F14-/+F23)^2 (so eps >= |q|/2 pointwise)
+[PASS] PG3 H2 identity W eps - W_min q/2 = (W-W_min) eps + W_min (eps - q/2)
+[PASS] PG4 H4 Riccati identity (times p, polynomial): p b'^2 + q b^2 - (psi b^2)' = p(b'-psi b/p)^2 + (q - psi^2/p - psi')b^2
+[PASS] PG5 H5a unweighted y14s2 density - kept = s[h'^2/gtt + (n-a)^2 h^2/gpp + (1-h^2)^2/2] (>= 0)
+[PASS] PG6 H5b a = n(1-beta): kept = n^2 (p beta'^2 + q beta^2); H5c (sqrt(c)/2 R2/W)^2 = p q
+[PASS] PG7 units: untwisted unweighted density = Bogomolny squares + d/dt[a(1-h^2) + n h^2]; with a(0)=0,h(0)=0,a(inf)=n,h(inf)=1 BPS e_u = n (so n^2/20 is in the same units as n)
+[PASS] PG8 H5d with q = phi^2/p: q - psi^2/p - psi' = (1-theta^2)q - theta|phi'| + theta^2 phi1(2phi - phi1)/p  (phi' = -|phi'|)
+[PASS] PG9 H5e: g_tt = (1-w) + r w ; g_pp,eff = r T ; R2/W = 1/(Xb(Xa T + Xb))
+[PASS] PG10 H5g: dphi/dT * Xb (Xa T + Xb)^2 = -(sqrt c/2) Xa  (< 0) ; dT/dchi = 2 tan chi sec^2 chi >= 0 on [0,pi/2) => phi' <= 0
+[PASS] PG11 H5f: q^2 / phi'^2 = c w r ((1-w) + r w)/(4 Xa^2 Xb^2)
+[PASS] PG12 H6a exponents: r = 2^(eXb-eXa) = 2^1 ; Xa^2 Xb^3 = 2^0 ; sqrt(c)/(Xa Xb) = 2^0 ; sqrt(c)/(2 Xb^2) = 2^(-2) = 1/4
+[PASS] PG13 exponent of Xb^2 vs 2 sqrt(c): 2 eXb == 1 + ec/2
+[PASS] PG14 H6b: phi = w/(2(1+w)) ; (q/|phi'|)^2 = w(1+w)/2 ; both strictly increasing in w (derivatives 1/(2(1+w)^2) and (1+2w)/2)
+[PASS] PG15 H6c: 1 - theta^2 > 0 ; (theta/(1-theta^2))^2 = 900/8281 < 3/25 = min over w in [1/5,1] of w(1+w)/2 (monotone) ; phi >= phi1 > 0 on [0,chi1]
+[PASS] PG16 H6d: boundary term -psi(0) beta(0)^2 with beta(0)=1, psi = 0 for chi >= chi1: theta(phi(0)-phi1) = (3/10)(1/4 - 1/12) = 1/20
+[PASS] PG17 test-target encodings: Fr('2808.6') == 14043/5 ; 20*D_IR = 56172
+[PASS] PG18 Gc1 closed form: u=1 roots bracket 247|248 (q(247) = -103 <= 0 < q(248) = 372); u=2: q(172) = -444 <= 0 < q(173) = 226; convexity => n <= 247 / n <= 172 exactly
+[PASS] PG19 Gc2: min over integers of n^2/20 - n is -5 (vertex n = 10, real min also -5); u=1 with D+35: q(248) <= 0 < q(249) => |n_i| <= 248
+[PASS] PG20 A9a: for u >= 1 and n >= 248 > 10, u n^2/20 - n - D_IR >= n^2/20 - n - D_IR, increasing in n, = 93/5 > 0 at n = 248 (all n, not only n <= 9760); at u=2 already n >= 173 suffices
+[PASS] PG21 A9b: (u-1)n < 19520/3 ; u=2 <=> n <= 6506 (3*6506 = 19518 < 19520 < 19521) ; u = 1 + D_UV/n gives equality
+[PASS] PG22 A12a: (qt + D/2) - D/2 = qt ; (qt + D/2) + D/2 = qt + D
+[PASS] PG23 B1 algebra: (N+ + N- + u e) - (N+ - N- + n) = 2N- + (u e - n)
+23/23 PASS
+ALL PASS

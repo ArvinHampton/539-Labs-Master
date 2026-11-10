@@ -1,0 +1,97 @@
+[
+  {
+    "id": "OW",
+    "path": "/workspace/quantum-comp/reports/OWNER_WRITE_CALL_53991ebf_EXTENSION_GR_PREDICTIONS_SECOND_AXIS_2026-11-05.md",
+    "sha256": "89b78bf18b94e449866e197255956882e6f136b949a4f010a739bf0831e1c36d"
+  },
+  {
+    "id": "C",
+    "path": "/workspace/quantum-comp/references/gemini-compendium-20261105/RECEIVED_COMPENDIUM.txt",
+    "sha256": "49849cae20fe57c24533b770c13c4a53e5844f0bb75086250b9a82af0b446b73"
+  },
+  {
+    "id": "L",
+    "path": "/workspace/quantum-comp/reports/FINDINGS_LOCAL_SOFTSF_LANE_REVIEW_COMPENDIUM_S2_11DM2ET_3ADIC_2026-11-05.md",
+    "sha256": "892964f496763b3073595fc13014e67892c32fa9f2dff129c3190405ad362d99"
+  },
+  {
+    "id": "A",
+    "path": "/workspace/quantum-comp/reports/FINDINGS_LOCAL_SOFTSF_AMEND_COMPENDIUM_REVIEW_PP_NOTES_QPO_2026-11-05.md",
+    "sha256": "239c204c39ea7aff031719edeeb1fff3fbf25e2bdc8e5e2d3e7f3f6aa8caca48"
+  },
+  {
+    "id": "N",
+    "path": "/workspace/quantum-comp/reports/FINDINGS_LOCAL_SOFTSF_ABSORB_PP_N1_RETRACT_COMPENDIUM_2026-11-05.md",
+    "sha256": "e64c9cc424abb799acf3b56abe590e56a1cc781b5b69f530488d40b7692fed38"
+  },
+  {
+    "id": "I",
+    "path": "/workspace/quantum-comp/reports/FINDINGS_LOCAL_SOFTSF_ABSENT_INVENTORY_BH_CATB_D1_2026-11-05.md",
+    "sha256": "3ba885c4bf18771c457990acbec4dc61b4b2e3de2ce572ffbfeed7d5e3cf93b9"
+  },
+  {
+    "id": "R",
+    "path": "/workspace/quantum-comp/reports/FINDINGS_LOCAL_SOFTSF_RTA_MATH_PREDICTIONS_CATALOG_2026-11-05.md",
+    "sha256": "4e8720de0cb4abf76d30efb14c64676f66463b0182125181971582bee3aba317"
+  },
+  {
+    "id": "B",
+    "path": "/workspace/quantum-comp/reports/FINDINGS_LOCAL_SOFTSF_CLOSE_3ADIC_BH_MECHANICS_X_COSMIC_2026-11-05.md",
+    "sha256": "b9747bfecc8d8683e57547fe56129c3676894e971cec25fb46a24e03b68aaf61"
+  },
+  {
+    "id": "H",
+    "path": "/workspace/quantum-comp/reports/FINDINGS_LOCAL_SOFTSF_PROVE_HAAR_ITEM70_EULER_FACTOR_2026-11-05.md",
+    "sha256": "7ab0ed68bd825eff645bb9d075769987c25debee7611eb74d0258601a4d68dee"
+  },
+  {
+    "id": "HD",
+    "path": "/workspace/quantum-comp/reports/FINDINGS_LOCAL_SOFTSF_AMEND_HAAR70_DOMINATED_CONVERGENCE_2026-11-05.md",
+    "sha256": "56e59a8efba42473070ee29b7c3f34ad7a9ab191e08bda7770d7ec998150ee44"
+  },
+  {
+    "id": "D",
+    "path": "/workspace/quantum-comp/reports/OWNER_WRITE_LOCK_D1_Seff_Layer2_T3_2026-11-03.md",
+    "sha256": "96f8d42e80c1975b4390fed950a4fb4b420088e6b19b2cbef8a44bebd28ff2ba"
+  },
+  {
+    "id": "DT",
+    "path": "/workspace/reports/539labs/ow/ATTACH_Layer2_T3_specs_LOCKED_t3511u_a71f388e.txt",
+    "sha256": "a71f388efa35312556530d478a75fd9e54cc92a70a807d4ddda21c2b84b7543d"
+  },
+  {
+    "id": "K",
+    "path": "/workspace/quantum-comp/oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/T3_Production_Lock_ePrint_Matches_Core_2026-09-01.md",
+    "sha256": "5b9fcd2d255350bd7f43048563158154d7db69a509471bac8d9a8b8420c05167"
+  },
+  {
+    "id": "F",
+    "path": "/workspace/quantum-comp/oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/FREE_VS_PACKAGING_LOCK_2026-08-16.md",
+    "sha256": "489c786a545576ad1412ab689adca68dfd6d9b3f6fb2a2dc617d1e70015a5f9b"
+  },
+  {
+    "id": "Q",
+    "path": "/workspace/quantum-comp/oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Residual_Product_Cohomology.md",
+    "sha256": "900ffa219417d0b67253f137ba46c4b733c1a5c57e96c3e1debf7f6e6bf9848b"
+  },
+  {
+    "id": "V",
+    "path": "/workspace/quantum-comp/theorems/s2-11dm2etx-v4.txt",
+    "sha256": "e5a1adb572039c20bc48f267afc8eae551b10b61d58a9b951413b9172d32c658"
+  },
+  {
+    "id": "S",
+    "path": "/workspace/quantum-comp/oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/S2-11DM2ET-X_Model_Current_Snapshot_2026-08-01.md",
+    "sha256": "1f2b35efd5a814a21777385d6db5079d93019b3c080aa72374bf92cadef47718"
+  },
+  {
+    "id": "G",
+    "path": "/workspace/quantum-comp/oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/Master_Glossary_S2-11DM2ET-X_2026-10-02_rev2.md",
+    "sha256": "c4a1c34d700b163dcd85584ea2d11dd01294a1535200790273c289b50951d362"
+  },
+  {
+    "id": "K0",
+    "path": "/workspace/quantum-comp/oct17-master/docs/S2-11DM2ET-X-Axiomatic-Book/R1_Discrete_Leftover_Canonical_T3_2026-08-16.md",
+    "sha256": "2928d2f7cb80090f06276fb046d7a11cb54e903d54cfb2447ad8526a983da053"
+  }
+]

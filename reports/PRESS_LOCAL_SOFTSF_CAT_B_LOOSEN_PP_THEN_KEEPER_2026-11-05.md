@@ -1,0 +1,2 @@
+# PRESS — Local → PP, then Keeper — Cat B Soft SF-loosen — 2026-11-05
+FINDINGS FINDINGS_LOCAL_SOFTSF_CAT_B_LOOSEN_BRIDGE_C_11D_TERNARY_MERGER_2026-11-05.md sha aa30917704bab16595173493c5912cb4df841c7e0dc0b6c8c6aec6ce4f0ac443. Authority OW ae380bf6c09980ec0a88dabbb02347a873b672f2b62b7f68fba2d5ddec9b30fa. 10 Cat B claims loosened into named bridge hypotheses (B1–B10); 6 objections (O1–O6). No upgrade. tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 tip_touched NO. No CERT.

@@ -1,0 +1,5 @@
+# PREREG t665u W-PO-2 deduction — 2026-10-25 00:24 CDT (America/Chicago)
+Premises (live sha256 verified): OMEGA_11D_STRUCTURAL 946ba49c…9b08; OMEGA_F_FACTOR_TABLES c9c3b30d…8df2; Codex docx e24c4904…72da; Explicit_Derivations bf202d05…ace; FINDINGS_T660U 56137b00…b907; Auditor t660u CONFIRM f27c750e44318dc1cd1f9ad718fd08a8ed56d0fb4d5a6a1049ee2844d5b1b2c1 (AUDITOR/AUDIT_STATUS.md:358).
+Test D1: Codex states all five terms "scaled by the single geometric factor Ω₁₁D" and writes ·Ω11D on each. Prediction: distributivity forces F_total = Ω₁₁D·(F̂_Coul^rel+F̂_SO+F̂_tors+F̂_flux+F̂_leak) (hat = Codex term with Ω removed). Pass iff every one of five terms carries the same Ω₁₁D symbol with no term-specific index.
+Test D2: For Ω₀, f_warp, f_curv, f_b, Φ_flux: pass (DEDUCED) iff a unique explicit form/value is written in Cat A premises (regex f_warp|f_curv|Ω₀|Omega_0|warp in Codex+Explicit_Derivations). Zero hits → ABSENT. CHAT (ARVIN_WRITTEN_NL_VARS) cannot by itself force.
+No numerics invented. No NL2. No Local Bridge fold.

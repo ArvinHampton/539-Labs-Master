@@ -1,0 +1,25 @@
+1:Gelfand-Graev characters of the finite unitary groups
+8:Gelfand-Graev characters and their degenerate counterparts have an important role in
+11:study degenerate Gelfand-Graev characters of the finite unitary group from a combinatorial
+12:point of view. In particular, we give the values of Gelfand-Graev characters at arbitrary
+13:elements, recover the decomposition multiplicities of degenerate Gelfand-Graev characters
+20:Gelfand-Graev modules have played an important role in the representation theory of finite
+21:groups of Lie type [4, 7, 20]. In particular, if G is a finite group of Lie type, then GelfandGraev modules of G both contain cuspidal representations of G as submodules, and have a
+22:multiplicity free decomposition into irreducible G-modules. Thus, Gelfand-Graev modules can
+24:between characters and symmetric functions (as described in [21]) to examine the Gelfand-Graev
+26:Let B < be a maximal unipotent subgroup of a finite group of Lie type G. Then the GelfandGraev character Γ of G is the character obtained by inducing a generic linear character from
+27:B < to G. The degenerate Gelfand-Graev characters of G are obtained by inducing arbitrary linear characters. In the case GL(n, Fq ), Zelevinsky [24] described the multiplicities of irreducible
+28:characters in degenerate Gelfand-Graev characters by counting multi-tableaux of specified shape
+30:degenerate Gelfand-Graev character. It is known that this multiplicity one result is not true in
+32:degenerate Gelfand-Graev character in general. This follows, for example, by work of Kotlar
+34:Gelfand-Graev character in general type. In the finite unitary case, we give a combinatorial description of which irreducible characters appear in some degenerate Gelfand-Graev character, as
+38:Gelfand-Graev character, and uses a remarkable formula for the character values of the GelfandGraev character of GL(n, Fq ) (for an elementary proof see [9]) to obtain the corresponding
+46:Keywords: finite unitary group, degenerate Gelfand-Graev, multiplicity, domino tableaux, characteristic map
+50:I. (Corollary 3.1) If Γ(n) is the Gelfand-Graev character of U(n, Fq2 ), and g ∈ U(n, Fq2 ), then
+58:Section 4 computes the decomposition of degenerate Gelfand-Graev characters in a fashion
+60:II. (Theorem 4.3) The degenerate Gelfand-Graev character Γ(k,ν) decomposes as
+73:the irreducible character χλ appears with multiplicity one in some degenerate Gelfand-Graev
+75:Another question one might ask is how the generalized Gelfand-Graev representations of the
+76:finite unitary group decompose. Generalized Gelfand-Graev representations, which were defined
+78:one dimensional) from a unipotent subgroup. Rainbolt studies the generalized Gelfand-Graev
+80:complicated than the degenerate Gelfand-Graev representations.

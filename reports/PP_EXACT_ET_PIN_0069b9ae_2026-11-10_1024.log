@@ -1,0 +1,18 @@
+[X1] {e_a,e_b}=2 delta_ab I, all 16x16 pairs, exact: True
+[X2] omega^2 = I exact: True | tr omega =  0 + 0 i (=> chiral projectors (I+-omega)/2 idempotent, rank 128 each)
+[X3] L=e0e1e2e6: L^2 = I exact: True | L omega = omega L: True
+[X4] L e_i L^{-1} (L^{-1}=L) = -e_i for i in {x,phi1,phi2,a}, +e_i otherwise, all 16 exact: True => Ad_L = df (+) R_a on R^16, hence on so(6), so(10), (6,10)
+[X5] Ad_L on all 120 bivectors e_ie_j = sign(df(+)R_a) exact: True
+[X6] 3-vector compensator e0e1e2e6e7e8: square = -I exact: True | commutes with omega: True
+[X7] no compensator e0e1e2: odd; anticommutes with omega exact: True (swaps the two 128s; not in Spin(16)); square = -I: True
+[X8] rule (e_i1..e_ik)^2 = (-1)^{k(k-1)/2} I, k=1..8, exact: [(1, True), (2, True), (3, True), (4, True), (5, True), (6, True), (7, True), (8, True)]
+     => with 3 flipped tangent directions, compensator degree must be = 1 mod 4 (1 minimal; 3 gives -1; 5 also +1)
+[D1] |J2|= 16 |Ap|= 24 |Fu|= 48 c in Ap: False c^2=id: True
+[D2] g1 = x->ix: True | g2 = x->(x+1)/(1-x): True | c = complex conjugation: True
+  class size 3 | involutions in class: True | J2 fixed: 8 | d0 fixed: True
+  class size 6 | involutions in class: True | J2 fixed: 4 | d0 fixed: True
+  class size 6 | involutions in class: False | J2 fixed: 2 | d0 fixed: True
+  class size 1 | involutions in class: True | J2 fixed: 4 | d0 fixed: True
+  class size 8 | involutions in class: False | J2 fixed: 1 | d0 fixed: True
+[D3] r=c fixed J2: [[], ['0', 'inf'], ['0', '1'], ['-1', '0'], ['1', 'inf'], ['-1', 'inf'], ['-1', '1'], ['-i', 'i']]
+[D4] c has fixed points on Sigma: x=1 gives y^2 = 0 ; x=2 gives y^2 = 30 > 0 (real y)

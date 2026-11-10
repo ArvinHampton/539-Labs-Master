@@ -1,0 +1,109 @@
+Green’s Functions for Vladimirov Derivatives and
+Tate’s Thesis
+An Huang,1 Bogdan Stoica,2 Shing-Tung Yau,3,4 and Xiao Zhong5
+
+arXiv:2001.01721v2 [hep-th] 29 Sep 2021
+
+1 Department of Mathematics, Brandeis University, Waltham, MA 02453, USA
+2 Department of Physics and Astronomy, Northwestern University, Evanston IL
+
+60208, USA
+3 Department of Mathematics, Harvard University, Cambridge MA 02138, USA
+4 Center of Mathematical Sciences And Applications, Harvard University, Cambridge MA
+
+02138, USA
+5 Department of Pure Mathematics, University of Waterloo, Waterloo, Ontario, N2L 3G1,
+
+Canada
+anhuang@brandeis.edu, bstoica@northwestern.edu, yau@math.harvard.edu,
+xiao.zhong@uwaterloo.ca
+Abstract
+Given a number field K with a Hecke character χ, for each place ν we study the
+free scalar field theory whose kinetic term is given by the regularized Vladimirov
+derivative associated to the local component of χ. These theories appear in
+the study of p-adic string theory and p-adic AdS/CFT correspondence. We
+prove a formula for the regularized Vladimirov derivative in terms of the Fourier
+conjugate of the local component of χ. We find that the Green’s function is given
+by the local functional equation for Zeta integrals. Furthermore, considering
+all places ν, the field theory two-point functions corresponding to the Green’s
+functions satisfy an adelic product formula, which is equivalent to the global
+functional equation for Zeta integrals. In particular, this points out a role of
+Tate’s thesis in adelic physics.
+
+In memory of Steven Gubser and John Tate.
+
+Contents
+1 Introduction
+1.1 Summary of results and outline . . . . . . . . . . . . . . . . . . . . . .
+
+2
+5
+
+2 Green’s functions for Vladimirov derivatives on Qp
+2.1 The general recipe . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.2 A presentation of the Vladimirov derivative on Qp . . . . . . . . . . . .
+2.3 Example: The Vladimirov derivative for πs on F = Qp . . . . . . . . .
+
+6
+6
+13
+14
+
+3 Equivalence of the two definitions of Vladimirov derivative operators
+for non-Archimedean completions of number fields
+22
+4 Field theory on a number field
+
+28
+
+5 Green’s functions for the maximum norm on Qnp
+
+29
+
+6 Outlook: Berkovich spaces, renormalization, and functional equations
+34
+6.1 L-functions and physics . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+A Technical details on the Green’s function computation for the maximum norm on Qnp
+37
+
+1
+
+1
+
+Introduction
+
+The field of p-adic numbers and its many generalizations have been of interest in physics
+since the works of Manin [1], Freund and Olson [2], Freund and Witten [3], and others,
+tracing back to the time period immediately after the first superstring revolution.
+p-adic quantum mechanics has been considered in [4–9]; this series of works led to
+the introduction of the so-called Vladimirov derivative, which is the natural notion of
+derivative on a field of numbers with the p-adic topology, and will be a central object
+of investigation in our present paper. Vladimirov derivatives have played an important
+role in the works of Zabrodin [10, 11] computing the p-adic Veneziano amplitudes as
+path integrals on the Bruhat-Tits tree, and which can be thought of as a precursor of
+AdS/CFT. In recent years, motivated in part by the appearance of discrete features
+such as tensor networks and quantum error-correction in holography, there has been a
+resurgence of interest in p-adic physics [12–32].
+Motivation from physics: The interest in p-adic number systems in physics
+stems from attempts to understand the ultraviolet (high-energy) behavior of physical
+theories. Many physical quantities in gravity and quantum field theory (such as scattering amplitudes) naively suffer from divergences coming from the high-energy regime
+of the theory, which must be “renormalized away” via various methods. These divergences are a consequence of the fact that the high-energy regime in these theories is
+not well-defined, and they are expected to be removed, or to become tamer, once the
+theories are UV-completed. The situation in string theory is better, and it is believed
+that the extended nature of strings (and of other objects in the theory) renders the
+string theory ultraviolet finite, however how this happens is not precisely understood.
+Furthermore, string theory has regimes (such as the strong string coupling regime)
+where the conventional perturbative methods typically used to describe it cannot be
+applied.
+The point of p-adic approaches to physics is that these ultraviolet difficulties are
+intimately connected to the topological structure of the real numbers, where two points
+can be brought arbitrarily close together in a continuous manner. Thus, a sensible
+attempt at dealing with renormalization more systematically is to replace the the field
+of real numbers with fields where the topology is better behaved (such as the p-adic
+fields), define physical theories on these objects, and then attempt to “reconstruct” the
+original theory on the reals [33]. Such an approach could also help guide understanding
+the ultraviolet completion of various theories.
+Perhaps surprisingly, introducing p-adic fields makes contact with another feature
+2
+
+

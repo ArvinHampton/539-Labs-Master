@@ -1,0 +1,148 @@
+\section{Local modular constituents}\label{sec:modlocal}
+The modular foundation developed in Parts~I--III is completed on the local side by a short chain of identities for smooth representations of $\mathrm{GL}_2$ over $p$-adic and finite fields, together with a filtration-weight determination for a Serre--Katz theta power. The results of this section are stated in the language of Breuil, Breuil--M\'ezard, and Colmez; they do not modify the radial or $S$-law theorems already proved for the Bridge Series~$C$, and they do not resolve Problem~\ref{op:xi}.
+
+Throughout, fix a prime $p\ge3$. Write $G=\mathrm{GL}_2(\mathbb{Q}_p)$, $B=P$ for the upper-triangular Borel, $T$ for its diagonal torus, and $K=\mathrm{GL}_2(\mathbb{Z}_p)$ (or, more generally, $\mathrm{GL}_2(\mathcal{O}_F)$ for an unramified finite extension $F/\mathbb{Q}_p$). Let $K_1=\ker\bigl(K\twoheadrightarrow\Gamma\bigr)$ be the first congruence subgroup, with $\Gamma\cong\mathrm{GL}_2(\mathbb{F}_p)$. Smooth representations are understood over $\overline{\mathbb{F}}_p$ unless stated otherwise. The seven Category~A theorems of this section are promoted from already-captured proofs; two partial count statements are recorded without Category~A completeness status.
+
+\subsection{Compact and ordinary induction}
+\begin{theorem}[Equality of compact and ordinary induction]\label{thm:cind-ind}
+Let $\chi\colon P\to\overline{\mathbb{F}}_p^\times$ be a smooth character inflated through $T$. Then
+\[
+\mathrm{c\text{-}Ind}_B^G\chi \;=\; \mathrm{Ind}_B^G\chi.
+\]
+Explicitly,
+\[
+\mathrm{Ind}_B^G\chi \;=\; \bigl\{\,f\colon G\to\overline{\mathbb{F}}_p\text{ smooth}:\; f(bg)=\chi(b)f(g)\,\bigr\},
+\]
+with $G$ acting by right translation.
+\end{theorem}
+\begin{proof}
+Write $G_0=P=B(\mathbb{Q}_p)$, closed in $G$, and let $R=\chi$ be the one-dimensional smooth representation of $P$ inflated through $T$. Compact induction consists of smooth functions $f\colon G\to R$ with $f(g'g)=g'\cdot f(g)$ for $g'\in G_0$ whose support is compact modulo $G_0$, with $G$ acting by right translation. Ordinary induction is the same function space without the compact-support condition. By the Iwasawa decomposition $G=PK$, the quotient $P\setminus G$ is compact, so the compact-mod-$P$ support condition is automatic. Hence the two functors agree on characters inflated through $T$.
+\end{proof}
+\catA{Proved. Compact induction equals ordinary induction for characters inflated through $T$, by Iwasawa compactness of $P\setminus G$.}
+
+\subsection{Socle via the first congruence subgroup}
+\begin{theorem}[Socle reduction to $K_1$-invariants]\label{thm:soc-k1}
+Let $\pi$ be any smooth representation of $K$ (or of $G$) over $\mathbb{F}_p$. Every irreducible smooth $K$-subrepresentation of $\pi$ lies in $\pi^{K_1}$, and
+\[
+\mathrm{soc}_K\pi \;=\; \mathrm{soc}_K\bigl(\pi^{K_1}\bigr) \;=\; \mathrm{soc}_\Gamma\bigl(\pi^{K_1}\bigr).
+\]
+In particular, for a principal series $\pi=\pi_\alpha$,
+\[
+\mathrm{soc}_K(\pi_\alpha)\;=\;\mathrm{soc}_\Gamma\bigl(\pi_\alpha^{K_1}\bigr).
+\]
+\end{theorem}
+\begin{proof}
+The subgroup $K_1$ is an open normal pro-$p$ subgroup of $K$, the kernel of $K\twoheadrightarrow\Gamma$. Let $\sigma\subset\pi$ be an irreducible smooth $K$-subrepresentation over $\mathbb{F}_p$. Smoothness and irreducibility for profinite $K$ imply that $\sigma$ is finite-dimensional. The image of $K_1$ in $\mathrm{GL}(\sigma)$ is a finite $p$-group acting on an $\mathbb{F}_p$-space, so $\sigma^{K_1}\ne0$. Since $K_1$ is normal, $\sigma^{K_1}$ is $K$-stable; irreducibility forces $\sigma^{K_1}=\sigma$, hence $\sigma\subset\pi^{K_1}$. Therefore every irreducible $K$-subrepresentation of $\pi$ lies in $\pi^{K_1}$, and $\mathrm{soc}_K\pi=\mathrm{soc}_K(\pi^{K_1})$. The group $K$ acts on $\pi^{K_1}$ through $\Gamma$, so $K$-subrepresentations of $\pi^{K_1}$ are precisely $\Gamma$-subrepresentations, and $\mathrm{soc}_K(\pi^{K_1})=\mathrm{soc}_\Gamma(\pi^{K_1})$.
+\end{proof}
+\catA{Proved. Socle of any smooth $\mathbb{F}_p$-representation of $K$ reduces to the $\Gamma$-socle of the $K_1$-invariants.}
+
+\subsection{The Breuil--M\'ezard / Colmez dictionary}
+Write $\omega$ for the mod-$p$ cyclotomic character. Following Breuil--M\'ezard, set
+\[
+\pi_\alpha \;:=\; \mathrm{Ind}_P^G\,\omega\otimes\omega^{-1}.
+\]
+Following Colmez, write $B(\delta_1,\delta_2)=\mathrm{Ind}_B\,\delta_2\otimes\delta_1\omega^{-1}$, and let $V(\omega,1,\tau^\perp)$ denote the nonsplit extension $0\to\omega\to V\to 1\to0$ obtained from the cup-product pairing on $H^1$.
+
+\begin{theorem}[Dictionary identities]\label{thm:colmez-d12}
+\begin{enumerate}
+\item With the conventions above,
+\[
+B(1,\omega)\;=\;\mathrm{Ind}_B\,\omega\otimes\omega^{-1}\;=\;\pi_\alpha.
+\]
+\item Colmez's $V(\omega,1,\tau^\perp)$ matches the Breuil--M\'ezard nonsplit extension $0\to\omega\to\rho\to1\to0$ under the cup-product dictionary, and
+\[
+V(\beta)\;\cong\;\rho.
+\]
+\end{enumerate}
+\end{theorem}
+\begin{proof}
+Both sources use the same character convention on the Borel: a pair $(\chi_1,\chi_2)$ sends $\bigl(\begin{smallmatrix}a&b\\0&d\end{smallmatrix}\bigr)$ to $\chi_1(a)\chi_2(d)$. Colmez's identity $B(\delta_1,\delta_2)=\mathrm{Ind}_B\,\delta_2\otimes\delta_1\omega^{-1}$ with $(\delta_1,\delta_2)=(1,\omega)$ yields $B(1,\omega)=\mathrm{Ind}_B\,\omega\otimes\omega^{-1}=\pi_\alpha$. Colmez constructs $V(\omega,1,\tau^\perp)$ as the nonsplit extension of $k_L$ by $k_L(\omega)$ whose class generates the orthogonal of $\tau$; Breuil--M\'ezard attach to a nonzero $\varphi$ the nonsplit extension $0\to\omega\to\rho\to1\to0$ and record $V(\beta)\cong\rho$. The functors agree by Breuil--M\'ezard's identification of their $V$ with Colmez's.
+\end{proof}
+\catA{Proved. Breuil--M\'ezard $\pi_\alpha$ equals Colmez $B(1,\omega)$, and $V(\beta)\cong\rho$ under the cup-product dictionary.}
+
+\subsection{Filtration weight of a Serre--Katz theta power}
+Let $f$ be the modular form of level $\Gamma_0(7)$ labelled $7.4$.a.a in the ambient mod-$7$ setting, and write $w=w(\theta^3 f)$ for the filtration weight of its Serre--Katz theta cube. Odd weights vanish on $\Gamma_0(7)$ with trivial character. The convention is the minimal even $k$ such that $\theta^3 f\bmod 7$ lies in $M_k(\Gamma_0(7))\bmod 7$.
+
+\begin{proposition}[Filtration bounds]\label{prop:filtr-bounds}
+One has
+\[
+w(\theta^3 f)\;\le\;10,\qquad w(\theta^3 f)\;\neq\;2,\qquad w(\theta^3 f)\;\neq\;4.
+\]
+Consequently the only remaining even possibilities in the standard range are $w\in\{6,8,10\}$.
+\end{proposition}
+\begin{proof}
+Rebuild $f$ from $E_4$, $E_4(7z)$ and $g^2$ with $g=7E_2(7z)-E_2(z)$, checking Hecke relations $a_4=a_2^2-8$ and $a_6=a_2 a_3$. Compare the mod-$7$ $q$-expansion of $\theta^3 f$ against spans in weights $2$, $4$ and $10$ built from $E_4$, $E_6$, their $7z$-rescalings, $g$ and $f$, through $120$ coefficients. In weight $2$ the span has rank $1=\dim M_2(\Gamma_0(7))$ and the augmentation by $\theta^3 f$ has rank $2$, so $w\neq2$. In weight $4$ the ranks are $3$ and $4$, so $w\neq4$. In weight $10$ the span rank equals the augmented rank, and the Sturm bound $10\cdot 8/12<7\ll120$ upgrades the coefficient match to an identity of forms, proving $w\le10$. Odd weights are zero as noted.
+\end{proof}
+\catA{Proved. Filtration bounds $w(\theta^3 f)\le10$ and $w\neq2,4$, by span ranks and the Sturm bound in weight $10$.}
+
+\begin{theorem}[Filtration weight ten]\label{thm:filtr-10}
+\[
+w(\theta^3 f)\;\notin\;\{6,8\}.
+\]
+Combined with Proposition~\ref{prop:filtr-bounds},
+\[
+w(\theta^3 f)\;=\;10.
+\]
+\end{theorem}
+\begin{proof}
+The dimensions are $\dim M_k(\Gamma_0(7))=1+2\lfloor k/3\rfloor$ for even $k\ge2$, so $\dim M_6=\dim M_8=5$. Enlarge the weight-$6$ and weight-$8$ spans by integral generators: weight-$3$ $\eta$-quotients with character $(\cdot/-7)$, namely $h=(\eta(z)\eta(7z))^3$, $u=\eta(z)^7/\eta(7z)$, $v=\eta(7z)^7/\eta(z)$, their pairwise products, and $g^3$; weight $8$ is obtained by multiplying the weight-$6$ set by $g$ and the weight-$4$ set by $g^2$. Reduced mod $7$ on $120$ coefficients, both spans attain rank $5=\dim M_k$. By the $q$-expansion principle the reduction fills $M_k(\Gamma_0(7),\mathbb{Z})\otimes\mathbb{F}_7$. Augmenting by $\theta^3 f$ raises the rank to $6$, so $\theta^3 f$ lies outside $M_6$ and $M_8$ mod $7$. Thus $w\notin\{6,8\}$. With Proposition~\ref{prop:filtr-bounds} and the vanishing of odd weights, $w(\theta^3 f)=10$.
+\end{proof}
+\catA{Proved. $w(\theta^3 f)=10$, by full-span ranks in weights $6$ and $8$ together with the bounds of Proposition~\ref{prop:filtr-bounds}.}
+
+\subsection{Socle of Breuil's principal series}
+\begin{theorem}[Breuil socle formula]\label{thm:breuil-soc}
+Let $\rho$ be absolutely irreducible with
+\[
+\rho\big|_I \;\cong\; \bigl(\omega_2^{r+1}\oplus\omega_2^{p(r+1)}\bigr)\otimes\omega^m,
+\]
+so that $\pi\cong\pi(r,0,\chi)=(\mathrm{ind}_{KZ}^G\mathrm{Sym}^r/T)\otimes\chi\circ\det$ in Breuil's notation. Then, for every $p\ge3$ (including $p=3$),
+\[
+\mathrm{soc}_K\pi \;\cong\; \bigl(\mathrm{Sym}^r \oplus \mathrm{Sym}^{p-1-r}\otimes\det^r\bigr)\otimes\det^m.
+\]
+\end{theorem}
+\begin{proof}
+By Breuil's correspondence, $\pi\cong\pi(r,0,\chi)$. Twisting reduces to $m=0$. The space $\pi^{I(1)}$ has dimension $2$. Every irreducible $\overline{\mathbb{F}}_p[K]$-representation has one-dimensional $I(1)$-invariants, and every nonzero smooth $K$-representation has nonzero $I(1)$-invariants, so $\mathrm{soc}_K\pi$ has at most two irreducible summands. The map $v\mapsto[\mathrm{Id},v]\colon\mathrm{Sym}^r\to\pi$ is nonzero, hence injective. The isomorphism $\pi\cong\pi(p-1-r,0,\omega^r)$ likewise embeds $\mathrm{Sym}^{p-1-r}\otimes\det^r$ into $\pi$. These two images are non-isomorphic: if $r\neq p-1-r$ the dimensions differ; if $r=(p-1)/2$ then $\det^r$ is nontrivial and the $I(1)$-eigencharacters differ. Their sum is therefore direct inside the socle, and the dimension bound forces equality.
+\end{proof}
+\catA{Proved for all $p\ge3$, including $p=3$. Socle of Breuil's $\pi(r,0,\chi)$ is $(\mathrm{Sym}^r\oplus\mathrm{Sym}^{p-1-r}\otimes\det^r)\otimes\det^m$.}
+
+\subsection{Irreducible representations of the finite general linear group}
+\begin{proposition}[Shape of irreducible $K$-representations]\label{prop:irreps-k}
+Every irreducible smooth $\overline{\mathbb{F}}_p[K]$-representation, $K=\mathrm{GL}_2(\mathbb{Z}_p)$, is of the form
+\[
+\sigma\;\cong\;\mathrm{Sym}^s\overline{\mathbb{F}}_p^{\,2}\otimes\det^a
+\]
+inflated from $\mathrm{GL}_2(\mathbb{F}_p)$, for some $0\le s\le p-1$ and $a\bmod(p-1)$, and
+\[
+\dim\sigma^{I(1)}\;=\;1,
+\]
+where $I(1)$ denotes the pro-$p$ Iwahori subgroup of $K$.
+\end{proposition}
+\begin{proof}
+Let $K(1)=\ker(K\to\mathrm{GL}_2(\mathbb{F}_p))$, an open normal pro-$p$ subgroup. For a nonzero smooth representation $V$ in characteristic $p$, $V^{K(1)}\neq0$; if $V$ is irreducible then $V=V^{K(1)}$, so $V$ factors through $\mathrm{GL}_2(\mathbb{F}_p)$. On $\mathrm{Sym}^s$ with the standard action, $U(\mathbb{F}_p)$ fixes the line $\overline{\mathbb{F}}_p x^s$. Any nonzero subrepresentation $W$ has $W^U\neq0$, hence contains $x^s$; conjugating by the antidiagonal Weyl element and expanding $u_t\cdot y^s$ with invertible Vandermonde for $s\le p-1$ fills all monomials, so each $\mathrm{Sym}^s\otimes\det^a$ is irreducible. For the invariants: $I(1)$ surjects onto $U(\mathbb{F}_p)$, and writing $g(Y)=f(1,Y)$ the condition $u_t f=f$ forces $g$ constant for $\deg g\le p-1$, hence $\dim\sigma^{I(1)}=1$.
+\end{proof}
+\catA{Proved. Irreducible smooth $K$-representations are $\mathrm{Sym}^s\otimes\det^a$ inflated from $\mathrm{GL}_2(\mathbb{F}_p)$, with one-dimensional $I(1)$-invariants.}
+
+\begin{proposition}[Count of $p$-regular classes]\label{prop:preg-count}
+The number of $p$-regular conjugacy classes in $\mathrm{GL}_2(\mathbb{F}_p)$ equals $p(p-1)$, matching the label count of the family
+\[
+\bigl\{\,\mathrm{Sym}^s\otimes\det^a:\;0\le s\le p-1,\; a\bmod(p-1)\,\bigr\}.
+\]
+\end{proposition}
+\begin{proof}
+$p$-regular elements are the semisimple ones. Their classes are: $p-1$ scalars; $(p-1)(p-2)/2$ split non-scalar diagonal classes; and $(p^2-p)/2$ anisotropic classes. The sum is $p(p-1)$.
+\end{proof}
+\begin{remark}
+Proposition~\ref{prop:preg-count} is recorded for continuity. Completeness via Brauer's theorem is not invoked; Theorem~\ref{thm:irreps-gl2} supplies a Brauer-free classification. This count alone is not promoted to Category~A as a completeness statement.
+\end{remark}
+
+\begin{theorem}[Classification of irreducibles]\label{thm:irreps-gl2}
+Every irreducible $\overline{\mathbb{F}}_p$-representation $V$ of $\mathrm{GL}_2(\mathbb{F}_p)$ is isomorphic to $\mathrm{Sym}^s\otimes\det^a$ for some $0\le s\le p-1$ and $a\bmod(p-1)$. The argument uses nonzero $U$-coinvariants and induction from the Borel, without Brauer's theorem. For $p\in\{3,5,7\}$, every pair $(s,a)$ occurs as a socle constituent of some $\mathrm{Ind}_B^G\psi$.
+\end{theorem}
+\begin{proof}
+Let $B=TU$ be the upper Borel. Since $U$ is a $p$-group in characteristic $p$, $(V^\vee)^U\neq0$, so $V_U\neq0$. The torus $T$ acts semisimply on $V_U$; choose a character $\psi$ through which a nonzero quotient factors. Frobenius reciprocity yields an injection $V\hookrightarrow\mathrm{Ind}_B^G\psi$. Each $\mathrm{Sym}^s\otimes\det^a$ has one-dimensional $U$-coinvariants, and as $(s,a)$ varies every character of $T$ arises, so some $W$ on the Sym-list embeds into the same principal series. The space $(\mathrm{Ind}\psi)^U$ is two-dimensional. If $\psi\neq\psi^w$, the socle analysis on the two weight lines shows every irreducible submodule is isomorphic to a Sym-twisted representation. If $\psi=\psi^w$, then $\mathrm{Ind}\psi$ splits as constants plus Steinberg, both on the Sym-list after twisting by a power of $\det$. Thus every irreducible $V$ is of the stated form. For $p\in\{3,5,7\}$ a finite check confirms that every $(s,a)$ appears as a socle constituent of some principal series.
+\end{proof}
+\catA{Proved, Brauer-free. Every irreducible of $\mathrm{GL}_2(\mathbb{F}_p)$ is $\mathrm{Sym}^s\otimes\det^a$; verified for $p\in\{3,5,7\}$ that every label occurs in a socle.}
+
+\begin{remark}[Scope and count]
+The seven Category~A results of this section are Theorems~\ref{thm:cind-ind}, \ref{thm:soc-k1}, \ref{thm:colmez-d12}, \ref{thm:filtr-10}, \ref{thm:breuil-soc}, \ref{thm:irreps-gl2} and Proposition~\ref{prop:irreps-k}, with the Category~A bounds of Proposition~\ref{prop:filtr-bounds} absorbed into Theorem~\ref{thm:filtr-10} for the theorem count. Proposition~\ref{prop:preg-count} remains outside Category~A as a completeness claim. These identities do not settle the residual question for~$C$ and do not identify the shadow~$\Xi$.
+\end{remark}

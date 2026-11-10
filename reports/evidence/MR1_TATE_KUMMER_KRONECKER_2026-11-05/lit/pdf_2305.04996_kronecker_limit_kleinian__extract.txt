@@ -1,0 +1,319 @@
+arXiv:2305.04996v1 [math.NT] 8 May 2023
+
+A FIRST KRONECKER LIMIT FORMULA FOR KLEINIAN
+GROUPS
+ZIHAN MIAO, ANH NGUYEN, AND TIAN AN WONG
+Abstract. We prove a first Kronecker limit formula for cofinite discrete subgroups of SL(2, C), also called Kleinian groups, generalizing a method of Goldstein over SL(2, R). The proof uses the Fourier expansion of Eisenstein series,
+leading to an analogue of the logarithm of the Dedekind eta function, and
+whose transformation law produces a function analogous to one related to
+Dedekind sums. We derive several basic properties of this new function.
+
+1. Introduction
+1.1. The first Kronecker limit formula and Dedekind sums. The first Kronecker limit formula states that for any point z in the upper-half plane,
+∞
+ X
+π 
+√
+= 2π(γ − log 2 − log( y|η(z)|2 )),
+lim
+y s |cz + d|−2s −
+s→1
+s−1
+c,d=−∞
+(c,d)6=(0,0)
+
+where γ is the Euler-Mascheroni constant, and η(z) the Dedekind eta function. The
+eta function satisfies the transformation law
+
+
+
+
+√
+1
+az + b
+a b
+∈ SL(2, R),
+= log η(z)+ log(cz +d)+π −1S(a, b, c, d),
+log η
+c d
+cz + d
+2
+(1.1)
+where
+a+d 1 c
+S(a, b, c, d) =
+−
+− s(c, d)
+12c
+4 |c|
+and s(c, d) is the classical Dedekind sum, which can be defined as
+
+
+ 
+|c|−1
+X
+πkc
+πk
+B1
+,
+s(c, d) =
+B1
+d
+d
+k=1
+
+where B1 is the first periodic Bernoulli function, and all branches of the logarithm
+are the principal branch.
+Using an analogue of the first Kronecker limit formula for Eisenstein series associated to cofinite (but not cocompact) discrete subgroups Γ of PSL(2, R), also
+called Fuchsian groups of the first kind, Goldstein defined a family of half-integer
+weight automorphic forms ηΓ,i (z) analogous to the Dedekind eta function for each
+cusp i of Γ [Gol73]. Then using the transformation property of ηΓ,i , Goldstein constructed a family functions SΓ,i analogous to the functions S(a, b, c, d) attached to Γ
+and proved that it satisfies properties similar to the latter. On the other hand, the
+2010 Mathematics Subject Classification. 11F20 and 11F37.
+Key words and phrases. Elliptic Dedekind sum, Bianchi modular forms, Eisenstein series,
+Kronecker limit formula.
+1
+
+2
+
+ZIHAN MIAO, ANH NGUYEN, AND TIAN AN WONG
+
+convergence of the limit formula was not proved, so it was referred to as a formal
+limit formula.
+1.2. Extension to imaginary quadratic fields. In this paper, we adapt Goldstein’s method to derive a first Kronecker limit formula for Eisenstein series attached
+to cofinite discrete subgroups Γ of PSL(2, C), also known as Kleinian groups, that
+are not cocompact. Let
+u = z + rj,
+
+z ∈ C, r > 0 ∈ R, j 2 = −1
+
+be a point in the upper-half space H, and let s ∈ C. Also let ζ1 , . . . , ζh be the
+set of inequivalent cusps of Γ. We then derive a limit formula for Γ at the cusp
+ζi = A−1
+i ∞ with Ai ∈ PSL(2, C) using the Fourier expansion of the Eisenstein
+series on Γ associated to ζi ,
+
+
+
+
+π
+π
+|Λ′i |
+|Λ′i |vol(Γ)−1
+−1
+=
+log |r · ηΓ,i (u)2 |,
+bii −
++
+lim Ei (Ai u, s) −
+s→1
+s−1
+|Λi |
+vol(Γ) |Λi |
+
+where Ei (u, s) is the associated Eisenstein series and ηΓ,i (u) is our analogue of the
+Dedekind eta function, defined in (4.5); we refer to Theorem 4.3 for other undefined
+notation. As one might expect, the proof of this result relies on the analytic theory
+of (scalar-valued) Eisenstein series associated to Γ, whose required properties have
+been obtained by Elstrodt, Grunewald, and Mennicke [EGM98].
+With this limit formula, we then prove a transformation property for ηΓ,i (u),
+√
+1
+log ηΓ,i (M u) = log ηΓ,i (u) + log(|cz + d|2 + |c|2 r2 ) + π −1DΓ,i (M ),
+2
+for any
+
+
+a b
+M=
+∈ Ai ΓA−1
+i
+c d
+in Proposition 5.2, where we define the function DΓ,i (M ) as a function related to
+generalized elliptic Dedekind sums, analogous to Goldstein’s SΓ,i and S(a, b, c, d)
+above. By Corollary 5.3, it is a homomorphism from Ai ΓA−1
+to R. Unfortunately,
+i
+we have not yet been able to evaluate DΓ,i (M ) explicitly, so it is not clear whether
+it is specializes to elliptic Dedekind sums D(c, d) in the case of Γ = PSL(2, OK ).
+1.3. Relation to other work. As a point of reference, we compare our results
+with the work of Ito [Ito87a]. Let Λ be a lattice in C, and OΛ = {m ∈ C : mΛ ⊂ Λ}
+its ring of multipliers. Elliptic Dedekind sums are the analogues of Dedekind sums
+for PSL(2, OΛ ). Introduced by Sczech [Scz84], they are defined as
+ 
+ 
+ck
+k
+1 X
+D(c, d) =
+E1
+E1
+d
+d
+d
+k∈Λ/dΛ
+
+for c, d ∈ OΛ with d 6= 0, where Ek (x) is the Eisenstein-Kronecker series. Ito
+constructed a function H(u) analogous to the imaginary part Im(log η(z)), such
+that
+
+
+a + d
+− D(a, c)
+H(M u) = H(u) + 2iE2 (0)Im
+c
+when c 6= 0. Thus up to a constant, the expression in parentheses is analogous to
+our DΓ,i (M ), as in our proof of Proposition 5.2. Indeed, it is known that D(c, d)
+is purely imaginary. At the same time, it is not immediately clear whether the
+functions coincide, as Ito’s method uses vector-valued Eisenstein series.
+
+A FIRST KRONECKER LIMIT FORMULA FOR KLEINIAN GROUPS
+
+3
+
+Elstrodt-Grunewald-Mennicke [EGM85, Theorem 5.3] proved a first Kronecker
+limit formula and constructed an analogue g(u) of log |η(z)| for Γ = PSL(2, OK ),
+while Asai obtained a similar result for arbitrary number fields with class number
+one [Asa70]. We compare our limit formula with the former in Section 6, In particular, we show that g(u) can be expressed as a linear combination of our log |ηΓ,i (u)|.
+We also note more recent work that studies an application of the limit formula for
+PSL(2, OK ) to a Jensen-Rohrlich type formula [HIvPT19].
+In view of classical results, one can also ask if the function DΓ,i is related to
+a 1-cocycle on Γ such as shown by Sczech for Γ = PSL(2, OK ) [Scz84]. It would
+then parametrize special values of Hecke L-functions of imaginary quadratic fields,
+as has been shown in Ito [Ito87a] and in higher rank by the last author [FKW19].
+Moreover, as variations on Goldstein’s work have recently been used to obtain
+numerous applications of generalized Dedekind sums on PSL(2, R) [Bur17, SVY,
+JO’SS20, BJO’SS20], it would thus be interesting to explore the analogues of these
+results for imaginary quadratic fields.
+2. Preliminaries
+2.1. Group action on the upper half space. We first recall some basic definitions and fix notation. Let H = C × (0, ∞) be the usual upper-half space model of
+three-dimensional hyperbolic space. A point u ∈ H can be represented by
+√
+u = (x, y, r) = (z, r) = z + rj,
+x, y ∈ R, r > 0, z = x + −1y ∈ C,
+where 1, i, j, k form the usual basis of quaternions, and where we view the points
+u ∈ H as quaternions with fourth component equal to zero. The group SL(2, C)
+acts on the upper half space H by linear fractional transformation
+
+
+a b
+−1
+u 7→ M u = (au + b)(cu + d) , M =
+∈ SL(2, C),
+c d
+where the right-hand side can be viewed as taking place in the skew-field of quaternions. More explicitly, we write
+M u = zM + rM j,
+where
+zM =
+
+(az + b)(cz + d) + a c r2
+and
+|cz + d|2 + |c|2 r2
+
+rM =
+
+r
+|cz + d|2 + |c|2 r2
+
+.
+
+(2.1)
+
+The projective linear group PSL(2, C) can be viewed as the group of all orientationpreserving isometries for the hyperbolic metric, and every discrete subgroup Γ of
+PSL(2, C) acts on H discontinuously.
+Let ∞ be the point at infinity. Then given another point ζ ∈ P1 (C), there exists
+an element A ∈ PSL(2, C) such that ζ = A−1 ∞. Given any such ζ, we define the
+stabiliser of ζ in Γ to be
+Γζ = {M ∈ Γ : M ζ = ζ}
+
+and its maximal unipotent subgroup is
+
+Γ′ζ = {M ∈ Γζ : tr(M ) = ±2}.
+We then have that
+(AΓA−1 )∞ = AΓζ A−1 and (AΓA−1 )′∞ = AΓ′ζ A−1 .
+
+4
+
+ZIHAN MIAO, ANH NGUYEN, AND TIAN AN WONG
+
+We call an element M ∈ SL(2, C) parabolic if M 6= ±I and tr(M ) = ±2. Suppose
+that ζ = A−1 ∞ is fixed by some parabolic element M ∈ Γ, M 6= I. Then the
+stabilizer of ∞ in AΓA−1 contains an element
+
+
+1 ω
+, ω 6= 0,
+0 1
+
+and we call ζ a cusp of Γ if and only if the set
+
+ 
+
+1 ω
+−1
+Λ := ω :
+∈ AΓA
+0 1
+
+is a lattice in C. If Γ is cofinite, then all fixed points of parabolic elements of Γ
+are cusps, thus ζ is a cusp of Γ when Γζ contains a parabolic element. We write
+η ≡ ζ (mod Γ) if there is an element L0 ∈ Γ such that η = L0 ζ.
+For example,
+√ let OK be the ring of integers of an imaginary quadratic number
+field K = Q( D) for some square-free integer D < 0, and let h be the class number
+of K. Then the set of cusps of Γ = PSL(2, OK ) is equal to P1 (K) = K ∪ {∞} and
+P1 (K) splits into h orbits with respect to Γ.
+2.2. A Double Coset Decomposition. We would like to express the Fourier
+expansion of Eisenstein series using a decomposition of Γ into double cosets with
+respect to the stability groups of the cusps. In preparation, we shall describe a
+Bruhat-type decomposition. Let Γ be a discrete subgroup of PSL(2, C). Chose two
+cusps ζ and η of Γ with corresponding scaling matrices A and B in PSL(2, C), so
+that ζ = A−1 ∞ and η = B −1 ∞. Let Λ ⊂ C be the lattice such that
+
+
+
+1 ω
+BΓ′η B −1 = (BΓB −1 )′∞ =
+:ω∈Λ ,
+(2.2)
+0 1
+where Γζ and Γη are the stability groups of the respective cusps. Let us write
+ΩA = AΓζ A−1 and ΩB = BΓη B −1 .
+We also define the subset the upper triangular matrices, i.e., those having a fixed
+point at ∞, denoted by
+
+
+
+· ·
+−1
+,
+Ω∞ =
+∈ AΓB
+0 ·
+and also denote Ωd/c = ΩA ωd/c ΩB indexed by the matrices
+
+
+· ·
+ωd/c =
+∈ AΓB −1
+c d
+
+with c 6= 0.
+We shall partition the set AΓB −1 into double cosets with respect to these sets.
+Lemma 2.1. Let ζ, η be cusps for Γ. Then we have the disjoint union:
+[ [
+AΓB −1 = δη,ζ Ω∞ ∪
+Ωd/c ,
+
+(2.3)
+
+c6=0 d mod cΛ
+
+where δη,ζ equals 1 if η ≡ ζ (mod Γ) and 0 otherwise.
+
+Proof. As mentioned before, we have two cusps ζ and η for Γ with the corresponding
+scaling matrices A and B respectively. Suppose first that Ω∞ is not empty. Then
+there exists an element ω∞ = AγB −1 in Ω∞ with γ ∈ Γ, so that
+γη = A−1 ω∞ Bη = A−1 ω∞ ∞ = A−1 ∞ = ζ.
+
+

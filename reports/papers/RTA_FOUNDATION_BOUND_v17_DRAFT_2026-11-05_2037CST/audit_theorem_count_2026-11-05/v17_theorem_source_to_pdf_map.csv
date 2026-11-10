@@ -1,0 +1,64 @@
+src_file,src_line,label,title,status,pdf_id,pdf_page
+partII/s03_main.tex,6,thm:A,Shared remainder,MAPPED,11.1,44
+partII/s03_main.tex,19,thm:B,Real-quadratic decomposition and ray class,MAPPED,11.2,44
+partII/s03_main.tex,31,thm:C,Radial asymptotics and partial zeta values,AMBIGUOUS,"11.3,34.6","45,110"
+partII/s03_main.tex,47,thm:D,Gauss-mean pattern and zero set,MAPPED,11.4,45
+partII/s03_main.tex,55,thm:E,Baker obstruction: scalar no-go,MAPPED,11.5,45
+partII/s03_main.tex,72,thm:F,Theta lift and vector-valued $S/T$ law,MAPPED,11.6,45
+partII/s03_main.tex,92,thm:G,Lewis--Zagier period formula,MAPPED,11.7,46
+partII/s03_main.tex,115,thm:H,Eisenstein/cusp split,MAPPED,11.8,46
+partII/s03_main.tex,130,thm:I,Herglotz closed form,MAPPED,11.9,47
+partII/s03_main.tex,139,thm:J,Closed form of $E_R$,AMBIGUOUS,"11.9,11.10,22.1,23.7","47,47,74,80"
+partII/s06_lift.tex,12,thm:profile,Profile $S/T$ law,AMBIGUOUS,"14.1,34.5","51,110"
+partII/s07_lz.tex,146,thm:coc5,Cocycle of the $E$-part,MAPPED,15.3,57
+partII/s11_family.tex,24,thm:tensor7,"Tensor factorisation, $s=7$",AMBIGUOUS,"19.3,19.5","64,65"
+partII/s11_family.tex,78,thm:tensorodd,Tensor factorisation for odd $s$,AMBIGUOUS,"19.3,19.5","64,65"
+partII/s12_dims.tex,5,thm:dims,Dimensions,MAPPED,20.1,66
+partII/s12_dims.tex,86,thm:s98,$\dim V(98)=2406$,UNMAPPED,,
+partII/s12_dims.tex,141,thm:psq6,Prime-square structure,MAPPED,20.11,70
+partII/s13_uL.tex,21,thm:coset5,Coset property,MAPPED,21.2,72
+partII/s13_uL.tex,26,thm:sqf5,Squarefree criterion,UNMAPPED,,
+partII/s14_hs.tex,7,thm:Hs,$H_s$ in closed form,AMBIGUOUS,"11.9,11.10,22.1,23.7","47,47,74,80"
+partII/s14_hs.tex,68,thm:p72,Period $72$ at $x=\tfrac13$,AMBIGUOUS,"11.7,22.5","46,75"
+partII/s15_cone.tex,49,thm:axes7,Closed forms for $H_s^{\rm axes}$,AMBIGUOUS,"11.9,11.10,22.1,23.7","47,47,74,80"
+partII/s16_cthird.tex,5,thm:cthird,"$\Cthird$: one coset, one cone weight, one kernel, two chains",MAPPED,24.1,81
+partII/s16_cthird.tex,51,thm:O2,Phase obstruction,MAPPED,24.4,82
+partII/s16_cthird.tex,59,thm:O1,Sign obstruction,MAPPED,24.5,82
+partII/s16_cthird.tex,67,thm:Pstruct,Structure of $\Cthird$,AMBIGUOUS,"20.11,22.1,24.6","70,74,82"
+partII/s17_sfamily.tex,5,thm:zetacurve,Rational $\zeta$-curve,MAPPED,25.1,83
+partII/s17_sfamily.tex,22,thm:Gs,Radial expansion of $g_s$,AMBIGUOUS,"25.2,35.6","83,113"
+partII/s18_k3.tex,44,thm:weil8,Weil realisation of the label representation,MAPPED,26.2,86
+partII/s18_k3.tex,105,thm:K3exist8,$N_2$-polarised K3 surfaces,AMBIGUOUS,"26.7,26.9","88,89"
+partII/s18_k3.tex,132,thm:aut8,Automorphisms of $N_2$-polarised K3 surfaces,MAPPED,26.9,89
+partII/s19_uniq.tex,73,thm:U2,Uniqueness of the Maass completion,MAPPED,27.4,92
+partII/s19_uniq.tex,121,thm:uniq9,Uniqueness and residual ambiguity of the vector completion,MAPPED,27.7,94
+partII/s19_uniq.tex,237,thm:SrhoDim,Dimension of the cusp space,MAPPED,27.13,97
+partIII.tex,41,thm:STlaw,$T$-law and $S$-law,UNMAPPED,,
+partIII.tex,192,thm:p3profile,Profile of $C$ and of $q^{-7/20}C$,AMBIGUOUS,"14.1,34.5","51,110"
+partIII.tex,203,thm:lead,Radial asymptotics at leading order,AMBIGUOUS,"11.3,34.6","45,110"
+partIII.tex,216,thm:SlawC,Vector-valued $S$-law of $C$ at leading order,AMBIGUOUS,"11.6,34.7","45,110"
+partIII.tex,314,thm:piece,Expansion of a piece,MAPPED,35.4,112
+partIII.tex,368,thm:expansion,Radial expansion of the companion series,AMBIGUOUS,"25.2,35.6","83,113"
+partIII_shadow_v5.tex,126,thm:Bc1,,UNMAPPED,,
+partIII_shadow_v5.tex,146,thm:lap,,UNMAPPED,,
+partIII_shadow_v5.tex,189,thm:hybrid,,UNMAPPED,,
+partIII_radial_v5.tex,24,thm:radtriv,,UNMAPPED,,
+partIII_radial_v5.tex,54,thm:evenA1,,UNMAPPED,,
+partIII_radial_v5.tex,72,thm:A1exact,,UNMAPPED,,
+partIII_order0_v6.tex,16,thm:A2odd,,UNMAPPED,,
+partIII_order0_v6.tex,25,thm:A2even,,UNMAPPED,,
+partIII_order0_v6.tex,43,thm:A2exact,,UNMAPPED,,
+partIII_inv_v12.tex,17,thm:xinv,,UNMAPPED,,
+partIII_modlocal_v15.tex,7,thm:cind-ind,Equality of compact and ordinary induction,MAPPED,40.1,128
+partIII_modlocal_v15.tex,24,thm:soc-k1,Socle reduction to $K_1$-invariants,AMBIGUOUS,"40.2,40.6","129,130"
+partIII_modlocal_v15.tex,46,thm:colmez-d12,Dictionary identities,MAPPED,40.3,129
+partIII_modlocal_v15.tex,78,thm:filtr-10,Filtration weight ten,MAPPED,40.5,130
+partIII_modlocal_v15.tex,93,thm:breuil-soc,Breuil socle formula,MAPPED,40.6,130
+partIII_modlocal_v15.tex,138,thm:irreps-gl2,Classification of irreducibles,MAPPED,40.10,131
+partIII_local_adv_v16.tex,13,thm:local-F1,Local cite-lift F1,MAPPED,41.1,132
+partIII_local_adv_v16.tex,113,thm:V35,Dimension and narrow components,MAPPED,41.7,135
+partIII_local_adv_v16.tex,143,thm:D1,Rank-one classifier $D_1$,MAPPED,41.10,136
+partIII_boundary_rank_v17.tex,133,thm:v17-bare,Bare stacked matrix of rank~$24$,MAPPED,43.8,142
+partIII_boundary_rank_v17.tex,147,thm:v17-M36,Original-table matrix~$M$ of exact rank~$36$,MAPPED,43.9,142
+partIII_boundary_rank_v17.tex,164,thm:v17-M48,Singleton tuning restores full rank,MAPPED,43.10,143
+found_v6.tex,32,thm:found,The normalized Bridge Series and the 35-component law vector,MAPPED,44.3,146

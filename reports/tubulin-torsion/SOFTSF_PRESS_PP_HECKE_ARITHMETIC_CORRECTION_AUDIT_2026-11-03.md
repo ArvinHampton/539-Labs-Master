@@ -1,0 +1,2 @@
+# SOFTSF PRESS — PP Hecke arithmetic correction audit (2026-11-03)
+Owner file b8101db7… verified. Prime lists (split/inert/ramified, p<60) CONFIRMED exactly. Field Q(√35): h=2, h⁺=4, ε=6+√35 (norm +1). Θ_p: p=2 mis-handled by (35/·) (gives inert value; 2 ramified) — use (140/·); M_𝔭 ABSENT; Θ_p∈𝕋 unproven, 2×2 counterexample to commutativity. T̃_p closure conditional on Θ_p∈𝕋; multiplicativity unstated. Linear vs exp deformation inconsistent. C₃=1/2 CONFIRMED; Λ₀=1.81 ABSENT; P5a goal CONSISTENT. No CERT. Tip untouched.

@@ -1,0 +1,11 @@
+# AUTHOR-CANDIDATE (NOT Cat A) — B1 revised: S-B1′ (and weakened S-B1)
+Status: AUTHOR-CANDIDATE, NOT Cat A, NOT DEDUCED. Binding only on Arvin ACCEPT via Physicist. Campaign deduce_t691u_revise_sb1p (PREREG 6e2ef05ae6863282e94330c323a24071a099bb7af73c1f3d8d7149fa81de8b67). Directive t691s4368 G-A1a. Supersedes nothing: historical B1 candidate fdc79a11…4868 kept as record. No new numbers; only Written family F(x)=a+bt+ct²+d/(1+t²), t=7x−3 (7368b855 L46–49).
+
+## Revised S-B1′ (AUTHOR-CANDIDATE)
+On the physical domain x>0 the residual_factor F has a finite limit as x→0⁺ and at most quadratic growth in t=7x−3 as x→∞ (|F(x)|=O(t²), i.e. residual_slash=O(|7x|^{3/2})), with no poles on x>0; no evenness/symmetry in t is imposed, so asymmetric values at t=−2 and t=+2 are allowed. Consequence: every polynomial-in-x competitor of degree ≥3 with nonzero cubic coefficient (incl. the 7add2a9a L35 deg-3 interpolant) is excluded; the Written 4-param family satisfies it for all real (a,b,c,d) (1+t²>0; limit F(0⁺)=a−3b+9c+d/10 finite).
+
+## Weakened S-B1 (AUTHOR-CANDIDATE — S-B1 must change)
+DEDUCED: |7x|^{-1/2}|7W₇x|^{-1/2}=7^{-1/2}, so original S-B1 ⇔ F(x)F(−1/(7x))=√7≈2.6458. With the Written fit globally extended, products at x=1/7,3/7,5/7,1 are ≈5636.2, 277.6, 1298.6, 2962.8 — S-B1 FAILS (not even approximately); and the global identity forces b=c=d=0, a²=√7 (constant), contradicting Object A. Weakened form: S-B1 is imposed as the DEFINITION of the continuation to x<0, residual_slash(x):=1/residual_slash(W₇x) for x<0 (equivalently F(x):=√7/F(−1/(7x))), with the Written polynomial ansatz valid on x>0 only. Coherent iff F≠0 on x>0 — open condition; the Written fit has no real positive root found on the samples (min sample 3.1607; quadratic-dominant), recorded as check G-R2 not as law.
+
+## Conflict resolution (G-A1a vs prior S-B1′)
+Prior S-B1′ (O(1) growth at x→0⁺ and x→∞) ⇒ b=c=0 ⇒ F even in t ⇒ F(1/7)=F(5/7), contradicting 19.801180≠20.665180. Revised S-B1′ relaxes ∞-growth to O(t²) (the Written ansatz class degree) and imposes no parity, so Object A is admitted; deg-3 exclusion is retained via the degree bound. S-B1's tension with a global Written extension is resolved by domain restriction (x>0 ansatz, x<0 by involution).

@@ -1,0 +1,4 @@
+# PREREG ADDENDUM — T809U redirect, geometric→algebraic forcing (2026-10-25 14:01 CDT, before revised RESULTS)
+Same package as T808U (authorized at t808u, redirected at t809u by Arvin via Physicist). Base PREREG 72cbd82f2274e4f2c41ba467a1419a88a23e80de5363bd2003102aedf78489df is unchanged.
+Lever: FOUND now requires Written geometry (11D volume/compactification, the residual-scale B'=539 structure, warp/curvature) that **algebraically forces** the closed form of Ω₀, f_b(b), or f_warp(k)·f_curv(K) with fixed y*/kb and K. A geometric statement with no forced algebra does not count; neither does algebra with no Written geometry behind it.
+Ownership: NL EH 11D / reverse-parity PT / non-local QM bulk only. No Local Bridge C claim, no Local edits. All T808U invariants and near-miss exclusions stand. Identity 29ebbdd8… and A1–A12 723f02a0… are not overwritten; any conflict goes to Soft SF.

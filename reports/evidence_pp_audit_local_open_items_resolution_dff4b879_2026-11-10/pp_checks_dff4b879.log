@@ -1,0 +1,73 @@
+== A. Bolza involution s(x,y)=((x+1)/(x-1), 2r*y/(x-1)^3), r^2=2 ==
+PASS A1 f(m(x))*(x-1)^6 - 8 f(x) == 0 (expand)
+PASS A2 m(m(x)) == x (cancel)
+PASS A3 s^2 = id on y: c(m)*c(x) - 1 == 0 mod r^2-2
+PASS A4 s != id and s != iota (m(x) != x)
+PASS A5 s^*(dx/y) = -(r/2)(x-1) dx/y
+PASS A6 s^*(x dx/y) = -(r/2)(x+1) dx/y
+PASS A7 (s^*)^2 = I on H0(Omega^1)
+PASS A8 tr s^* = 0, det s^* = -1 (eigenvalues +1,-1 once each)
+PASS A9 rank(M-I)=rank(M+I)=1 (exact, via det=0 and nonzero entry)
+== B. t-coordinate, quotient models ==
+PASS B1 m(x(t)) - x(-t) == 0 mod r^2-2
+PASS B2 x(t) - 1 = r(1+t)/(1-t)
+PASS B3 F(t) = f(x(t))(1-t)^6 equals logged even sextic
+PASS B4 F even: F(-t)-F(t)==0
+PASS B5 s: Y -> +Y exactly (Y = y(1-t)^3)
+PASS B6 v1 diagnostic reproduced: dividing by y/(1-t)^3 instead gives (1-t)^6 (Local's v1 bug description)
+PASS B7 G(t^2) == F(t)
+PASS B8 E_minus: (uG(u))*v^4 at u=1/v equals v^3 G(1/v), a cubic
+PASS C E_plus: leading coeff a != 0 (norm 32)
+PASS C E_plus: Delta != 0 (norm over Q = 1152921504606846976)
+PASS C E_plus: c4^3 - 8000*Delta == 0 mod r^2-2  (j = 8000, no nsimplify)
+   E_plus Delta = 106300440576 - 75161927680*r
+PASS C E_minus: leading coeff a != 0 (norm 32)
+PASS C E_minus: Delta != 0 (norm over Q = 1152921504606846976)
+PASS C E_minus: c4^3 - 8000*Delta == 0 mod r^2-2  (j = 8000, no nsimplify)
+   E_minus Delta = 75161927680*r + 106300440576
+PASS C E0: c4=160, Delta=512, c4^3 = 8000*Delta
+== D. explicit Qbar-isomorphisms E_pm -> E0 (instance of AEC III.1.4(b), verified, not cited) ==
+PASS D0 E0 short form A=-10/3, B=56/27
+PASS D E_plus: A,B nonzero (norms)
+PASS D E_plus: B1^2*A0^3 - B0^2*A1^3 == 0 (iso condition)
+PASS D E_plus: lam^2 = A1/A0  <=>  (B1 A0)^2 A0 - A1 (B0 A1)^2 == 0
+PASS D E_plus: lam^3 = B1/B0  <=>  (B1 A0)^3 B0 - B1 (B0 A1)^3 == 0
+PASS D E_minus: A,B nonzero (norms)
+PASS D E_minus: B1^2*A0^3 - B0^2*A1^3 == 0 (iso condition)
+PASS D E_minus: lam^2 = A1/A0  <=>  (B1 A0)^2 A0 - A1 (B0 A1)^2 == 0
+PASS D E_minus: lam^3 = B1/B0  <=>  (B1 A0)^3 B0 - B1 (B0 A1)^3 == 0
+== E. phi on E0: y^2 = g(x) = x^3+4x^2+2x, phi=( -(x^2+4x+2)/(2x), y(x^2-2)/(2 q x^2) ), q^2=-2 ==
+PASS E1 phi maps E0 to E0: -g(x)(x^2-2)^2/(8x^4) - g(X1) == 0 (cancel, pure Q(x))
+PASS E2 x(phi^2 P) == x(2P) (cancel)
+PASS E3 y(phi^2 P) == -y(2P), so phi^2 = [-2] (cancel)
+PASS E4 phi^*(dx/y) = -q dx/y (F0-2 image -sqrt(-2))
+PASS E5 phi(O)=O: deg num X1 > deg den X1
+== F. O_{Q(sqrt-7)} inside M_2(Z) (bears on Local R4c claim) ==
+PASS F1 Mo^2 - Mo + 2I = 0 (omega=(1+sqrt-7)/2 acts on E0^2 by an integer matrix)
+PASS F2 Ms^2 = -7 I
+== G. Atkin-Lehner matrix algebra ==
+PASS G1 (WQ WQ')[0,0] = QQ'(aa' + K b c')
+PASS G2 (WQ WQ')[1,1] = QQ'(dd' + K c b')
+PASS G3 (WQ WQ')[1,0] = N(Q' c a' + Q d c')
+PASS G4 det(WQ WQ') = det WQ * det WQ' (=QQ')
+PASS G5 W1 W2^{-1} entries: [0,0]=Q x1 u2 - L y1 z2, [0,1]=y1 x2 - x1 y2, [1,0]=N(z1 u2 - u1 z2), [1,1]=Q u1 x2 - L z1 y2 (integral, c div by N)
+PASS G6 W16,W25,W49 explicit, each W_Q-shape at N=19600
+PASS G7 W16*W25*W49 has W_19600 shape (det 19600)
+PASS G8 (W16 W25 W49) * Fricke^{-1} in Gamma0(19600): integral, det 1, c = 0 mod N
+PASS G9 sign patterns (w16,w25,w49) with product +1: exactly 4
+PASS G10 all-minus pattern product = -1
+== H. Kronecker symbols (own implementation via Euler criterion) ==
+PASS H1 chi140(3) = -1
+PASS H2 chi_-7(23)=chi140(23)=chi_-20(23)=+1
+PASS H3 chi140 = chi_-7 chi_-20 for 1<=n<10000
+PASS H4 periodic mod |D| and chi_D(|D|-1) = sign D: chi140(-1)=+1, chi_-20(-1)=-1, chi_-7(-1)=-1
+PASS H5 gamma=[[47,1],[140,3]]: det 1, c=0 mod 140, d=3
+PASS H6 chi140 is a character on (Z/140)^x: multiplicative on units (all pairs)
+   d with d^2=1 mod 140: [1, 29, 41, 69, 71, 99, 111, 139] ; of these chi140(d)=-1: [41, 69, 71, 99]
+PASS H7 some d with d^2 = 1 (mod 140) has chi140(d) = -1 (so chi(d)=-1 is compatible with J^2=1 on the e0 line)
+PASS H8 no a with a^2 = -1 mod 4; no a with a^2 - a + 1 = 0 or a^2 + a + 1 = 0 mod 2 (Gamma0(140) torsion = {+-I})
+== I. Twist identity R_chi140 f = R_chi-20 f on 49a1 coefficients (corroboration of adopted 2c; n<=3000) ==
+PASS I1 a_p(49a1)=0 for every p<=3000 with (-7/p)=-1
+PASS I2 a_n chi140(n) == a_n chi_-20(n) for all n<=3000
+CHECKS 60 FAIL 0 []
+ALL_CHECKS PASS (60)

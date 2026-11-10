@@ -1,0 +1,19 @@
+PARI stack size set to 2000000000 bytes, maximum size set to 2000003072
+[a] Kronecker symbols at v=23: (140/23) = 1 , (-7/23) = 1 , (-20/23) = 1
+[a] chi(-1): chi_140 -> 1 , chi_-7 -> -1
+[a-2] quadclassunit(140) [h, cyc, gens, reg]: [2, [2], 2.47788873028847500481395074507450544945639765729473202957479] ; log(6+sqrt35) = 2.47788873028847500481395074507450544945639765729473202957479 ; fundamental unit: 6 + w norm 1
+[a-2] L(1,chi_140) (lfun) = 0.837679281258858525892237797572737728819631916303153327036915
+      2*h*log(eps)/sqrt(140) = 0.837679281258858525892237797572737728819631916303153327036915  difference: -2.559620761818356512 E-62
+[a-3] L(1,chi_-7) (lfun) = 1.18741041172372594878462529794936302999233468616503575751520  pi*h/sqrt7 (h=1, w=2) = 1.18741041172372594878462529794936302999233468616503575751520
+[b] Gauss sums: g(chi_140) = 11.8321595661992320851346565831232340968310024615886806457594 - 8.042431966931701557 E-77*I  sqrt140 = 11.8321595661992320851346565831232340968310024615886806457594 ; g(chi_-7) = 1.7272337110188889251 E-77 + 2.64575131106459059050161575363926042571025918308245018036833*I  i sqrt7 = 2.64575131106459059050161575363926042571025918308245018036833*I
+[b] lfuncheckfeq (float, illustration): chi_140: -210 , chi_-7: -248
+[b-2] D24 exponents: [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 23]  sum(2e+1) = 1128  = dim so(48) = 1128
+[c] (n,q)=(1,23): #maximal totally singular = 2; formula prod_(i=0..n-1)(q^i+1) = 2; families (codim parity vs U0): 1 + 1; one-family formula prod_(i=1..n-1)(q^i+1) = 1
+[c] (n,q)=(2,3): #maximal totally singular = 8; formula prod_(i=0..n-1)(q^i+1) = 8; families (codim parity vs U0): 4 + 4; one-family formula prod_(i=1..n-1)(q^i+1) = 4
+[c] (n,q)=(2,5): #maximal totally singular = 12; formula prod_(i=0..n-1)(q^i+1) = 12; families (codim parity vs U0): 6 + 6; one-family formula prod_(i=1..n-1)(q^i+1) = 6
+[c] (n,q)=(2,7): #maximal totally singular = 16; formula prod_(i=0..n-1)(q^i+1) = 16; families (codim parity vs U0): 8 + 8; one-family formula prod_(i=1..n-1)(q^i+1) = 8
+[c] (n,q)=(2,23): #maximal totally singular = 48; formula prod_(i=0..n-1)(q^i+1) = 48; families (codim parity vs U0): 24 + 24; one-family formula prod_(i=1..n-1)(q^i+1) = 24
+[c] (n,q)=(3,3): #maximal totally singular = 80; formula prod_(i=0..n-1)(q^i+1) = 80; families (codim parity vs U0): 40 + 40; one-family formula prod_(i=1..n-1)(q^i+1) = 40
+[c] (n,q)=(3,5): #maximal totally singular = 312; formula prod_(i=0..n-1)(q^i+1) = 312; families (codim parity vs U0): 156 + 156; one-family formula prod_(i=1..n-1)(q^i+1) = 156
+[c] (n,q)=(4,3): #maximal totally singular = 2240; formula prod_(i=0..n-1)(q^i+1) = 2240; families (codim parity vs U0): 1120 + 1120; one-family formula prod_(i=1..n-1)(q^i+1) = 1120
+[c-1] #OG(24,48)(F23) == Codex contour 2*prod_(i=1..23)(23^i+1): True ; digits: 377

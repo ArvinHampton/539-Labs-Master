@@ -1,0 +1,1853 @@
+                                            QUANTUM MODULAR FORMS FROM REAL-QUADRATIC DOUBLE SUMS
+
+                                                                        KATHRIN BRINGMANN AND CANER NAZAROGLU
+
+
+                                                  Abstract. In 2015, Lovejoy and Osburn discovered twelve q-hypergeometric series and proved
+                                                  that their Fourier coefficients can be understood as counting functions of ideals in certain quadratic
+                                                  fields. In this paper, we study their modular and quantum modular properties and show that they
+arXiv:2205.02643v3 [math.NT] 12 Apr 2023
+
+
+
+
+                                                  yield three vector-valued quantum modular forms on the group Γ0 (2).
+
+
+
+
+                                                                        1. Introduction and statement of results
+                                              Starting with the work of Andrews, Dyson, and Hickerson [1] and of Cohen [4], a surprising
+                                           interplay has been uncovered between q-hypergeometric series, real-quadratic fields, and classical
+                                           Maass forms. They discovered this interplay by exploring the now famous function
+                                                                                                  ∞  n(n+1)
+                                                                                                  X q 2
+                                                                                        σ(q) :=                    ,                                       (1.1)
+                                                                                                        (−q; q)n
+                                                                                                  n=0
+
+                                           which was first studied by Ramanujan in his lost notebook [11]. Here and throughout (a; q)n =
+                                           (a)n := n−1          j
+                                                   Q
+                                                     j=0 (1 − aq ) for n ∈ N0 ∪ {∞}. A key step in the analysis of [1] is the use of Bailey chains
+                                           to rewrite σ(q) as a “false-indefinite theta function”:
+                                                                                X                        n(3n+1) 2
+                                                                       σ(q) =         (−1)n+j 1 − q 2n+1 q 2 −j .
+                                                                                  n≥0
+                                                                                 −n≤j≤n
+
+                                           This representation allowed the authors
+                                                                               √ of [1] to relate the Fourier coefficients of σ(q) to the arith-
+                                           metic of the real-quadratic field Q( 6) and to prove many interesting properties for these Fourier
+                                           coefficients, which are not obvious from the combinatorial interpretation of the q-hypergeometric
+                                           series in equation (1.1). Through this arithmetic interpretation, it was also possible to extend the
+                                           Fourier coefficients of σ(q) in
+                                                                                              ∞
+                                                                                              X
+                                                                                     σ(q) =         T (24n + 1)q n ,
+                                                                                              n=0
+
+                                           to a sequence T (24n + 1) defined for all n ∈ Z. This led the authors of [1] and [4] to a partner
+                                           q-series
+                                                                 ∞
+                                                                                                       2 m(3m+1)
+                                                                 X                      X                                     
+                                                      σ ∗ (q) :=   T (1 − 24n)q n = 2       (−1)m+k q k − 2        1 + q 2(k−m) ,
+                                                                  n=1                         m≥0
+                                                                                            2k≥3m+1
+
+                                           which also has a representation as a q-hypergeometric series:
+                                                                                                  ∞           2
+                                                                                        ∗
+                                                                                                  X (−1)n q n
+                                                                                      σ (q) = 2                        .
+                                                                                                         (q; q 2 )n
+                                                                                                  n=1
+                                                                                                   1
+Now the remarkable fact discovered by [4] is that the Fourier coefficients of σ(q) and σ ∗ (q) are
+those of a Maass form defined as
+                      √     X
+              u(τ ) := τ2        T (24n)K0 (2π|n|τ2 )e2πinτ1 for τ = τ1 + iτ2 ∈ H,
+                                      1
+                                 n∈Z+ 24
+
+where Kν denotes the K-Bessel function of order ν. As reviewed in Section 2, Maass forms are
+invariant under modular transformations and this forms the number theoretical aspect of the three-
+piece interplay with the combinatorial and algebraic aspects mentioned above.
+   Building upon these results, Zagier showed in [12] that1
+                             πix
+                                                      πix
+                                                                             
+                   f (x) := e 12 lim σ e2πi(x+it) = −e 12 lim σ ∗ e−2πi(x−it)
+                                      t→0+                                   t→0+
+is a so-called quantum modular form, which further elaborates the relation discussed above. Recall
+that in the simplest case, a quantum modular form of weight k and with quantum set Q ⊂ Q is a
+function g : Q → C whose obstruction to modularity
+                                                          
+                                    −k   ax + b          a b
+                     g(x) − (cx + d) g             for          ∈ Γ ⊂ SL2 (Z)
+                                         cx + d          c d
+is analytically “nice”, e.g. it extends real-analytically to R \ {− dc }. More generally, one can discuss
+vector-valued generalizations with nontrivial multiplier systems (as in Theorem 2.8) and require
+stronger analytic properties from the obstructions to modularity such as holomorphicity (as in
+Proposition 2.3 and Remark 2.4).
+   At this point we should note that the discussion we have had so far is not a peculiar property
+of the functions σ(q) and σ ∗ (q). Since the work of [1] and [4], a number of generalizations have
+been investigated in [2, 3, 6, 9]. In fact, the main focus of this paper is on such a generalization
+developed by Lovejoy and Osburn [10]. They studied twelve q-hypergeometric series defined as
+           X (−1)n+k (q)n−1 q n(n+1)
+                                 2
+                                       k(k+1)
+                                     + 2                                     X (−1)n+k (q)n q n(n+1)
+                                                                                                 2
+                                                                                                       k(k+1)
+                                                                                                     + 2
+ L1 (q) :=                                    ,                    L2 (q) :=                                  ,
+               (1 − q 2k−1 ) (q)n−k (q)k−1                                       (1 − q 2k−1 ) (q)n−k (q)k
+            1≤k≤n                                                           0≤k≤n
+                                            n(n+1)  k(k−1)
+             X (−1)n+k (q)n−1 q                2
+                                                   + 2                            X (−1)n+k (q)n q n(n+1)
+                                                                                                      2
+                                                                                                            k(k−1)
+                                                                                                          + 2
+ L3 (q) := q                                                     , L4 (q) := −1 +                                  ,
+                 (1 − q 2k−1 ) (q)n−k (q)k−1                                          (1 − q 2k+1 ) (q)n−k (q)k
+               1≤k≤n                                                                0≤k≤n
+              X (−1)n+k (−1)n (q)n−1 q n+k2 −k                        X (−1)n+k (−1)n (q)n−1 q n+k2
+ L5 (q) := q                                             , L6 (q) :=                                            ,
+                    (1 − q 2k−1 ) (q)n−k (q 2 ; q 2 )k−1                   (1 − q 2k−1 ) (q)n−k (q 2 ; q 2 )k−1
+             1≤k≤n                                                   1≤k≤n
+              X ∗ (−1)n+k q 2 ; q 2 q k2 +k                                  X ∗ (−1)n+k q 2 ; q 2 q k2
+                                                                                                          
+                                         n                                                                   n
+ L7 (q) := 2                                          ,    L8 (q) := −1 + 2                                           ,
+                   (1 − q 2k+1 ) (q)n−k (q 2 ; q 2 )k                              (1 − q 2k+1 ) (q)n−k (q 2 ; q 2 )k
+               0≤k≤n                                                                 0≤k≤n
+                                                        k(k+1)
+           X (−1)n+k (−1)n (q)n−1 q                   n+ 2                      X (−1)n+k (−1)n (q)n−1 q n+ k(k−1)
+                                                                                                               2
+ L9 (q) :=                                                       , L10 (q) := q                                    ,
+               (1 − q 2k−1 ) (q)n−k (q)k−1                                          (1 − q 2k−1 ) (q)n−k (q)k−1
+            1≤k≤n                                                              1≤k≤n
+                                                    k(k+1)                                                                  k(k−1)
+                X ∗ (−1)n+k q 2 ; q   2                                                 X ∗ (−1)n+k q 2 ; q 2
+                                                                                                               
+                                            n
+                                                q      2
+                                                                                                                    n
+                                                                                                                        q      2
+L11 (q) := 2                                                 ,     L12 (q) := −2 + 2                                                 ,
+                       (1 − q 2k+1 ) (q)n−k (q)k                                               (1 − q 2k+1 ) (q)n−k (q)k
+               0≤k≤n                                                                   0≤k≤n
+
+where the symbol * indicates that we take the average of even and odd partial sums (in n) to
+obtain convergence. They then showed that these functions are also related to the arithmetic of
+  1The expressions for σ(q) and σ ∗ (q) as q-hypergeometric series are related to each other under the transformation
+q 7→ q −1 as noted by Cohen (see [4]). This relation was employed to define the function f (x) through their common
+limits to the roots of unity as shown.
+                                                                   2
+real-quadratic fields. In particular, L1 , . . . , L4 count ideals in the ring of integers OQ(√2) of the real-
+                   √
+quadratic field Q( 2), L5 , . . . , L8 count ideals in OQ(√3) , and L9 , . . . , L12 count ideals in OQ(√6) .
+In this work, we investigate the modular aspect of these functions and prove the following result.
+Theorem 1.1. The limits
+                  − 17πix                                          9πix
+                                                                 e− 8 L9 e2πi(x+it)
+                                                                                 
+                   e 16 L1 e2πi(x+it)
+                  7πix                                         − 17πix
+                  e 16 L2 e2πi(x+it)                         e 8 L10 e2πi(x+it) 
+                                                                                   
+             lim  33πix                ,                lim  5πix                ,
+            t→0+ e− 16 L3 e2πi(x+it)                    t→0+  e 24 L11 e2πi(x+it) 
+                      9πix                                         19πix
+                   e− 16 L4 e2πi(x+it)                          e− 24 L12 e2πi(x+it)
+                                                                                    
+
+as well as the finite part of
+                                                              
+                           −2πix
+                                                 2
+                         e       L5 e 2πi(x+it)  − π arctanh √13
+                                                                
+                                    e−πix L6 e2πi(x+it)
+                                                           
+                                                                          as t → 0+
+                                                                
+                                     πix
+                                                                 
+                                                2πi(x+it)
+                                                          
+                                     e L7 e
+                                       3
+                                                                 
+                                                                
+                                     − 2πix      2πi(x+it)
+                                                            
+                                   e     3  L8 e
+all form vector-valued quantum modular forms over the group Γ0 (2).
+   More precise statements are given in Propositions 4.5, 5.5, and 6.5. The quantum modular
+forms fj , gj , and hj referenced in these propositions are related to the functions Lj given above by
+Lemmas 4.2, 5.2, 6.2 and equations (4.4), (5.3), and (6.3).
+   To prove these results, we relate the functions Lj to Maass waveforms with the technology of mock
+Maass theta functions developed by Zwegers in [14]. These objects give a rare and precious glimpse
+into the behavior of false-indefinite theta functions under modular transformations. As reviewed
+in Figure 1, mock Maass theta functions are certain theta functions that are eigenfunctions of the
+hyperbolic Laplacian that are in general not modular. Their construction ensures that they give
+rise to false-indefinite theta functions under certain “Eichler-type integrals” following the work of
+Lewis and Zagier [7]. The one-form appearing in the integral is closed thanks to the hyperbolic
+Laplacian eigenfunction property of the mock Maass theta function. If it is further true that the
+mock Maass theta function is modular invariant, then we can find the obstruction to modularity
+for the corresponding false-indefinite theta function as a period function of the aforementioned one-
+form. The question of modularity, on the other hand, can be studied through Zwegers’ modular
+completions for these mock Maass theta functions. In the special cases where the completing
+“shadow contributions” cancel each other thanks to symmetry, the mock Maass theta function
+becomes a Maass waveform itself and the modular properties of the false-indefinite theta function
+then follows.
+
+
+
+
+                                                 Figure 1
+                                                      3
+   If the functions Lj are rewritten as false-indefinite theta functions, such cancellations indeed
+occur as we show below and the corresponding mock Maass theta functions are modular. That in
+turn implies corresponding modular properties for the functions Lj on H as discussed above. For the
+case of L1 , . . . , L4 and L9 , . . . , L12 , these Maass forms do not have constant terms in their Fourier
+expansion and the arguments of Zagier [12] immediately apply to give the quantum modularity
+results stated above. However, for the functions L5 , . . . , L8 , the corresponding vector-valued Maass
+form does have a nonvanishing constant term and as a result the corresponding Lj (e2πi(x+it) )’s
+have divergent pieces as t → 0+ depending on j and x. So a novel technical aspect of this work
+is the handling of these divergent pieces to show that the remaining finite pieces lead to quantum
+modular forms.
+   This paper is organized as follows. In Section 2, we review and expand on the relation between
+Maass forms and quantum modular forms, with a particular emphasis on the aspects needed if
+the Maass form in question has nonvanishing constant terms. In Section 3, we review the work of
+Zwegers on mock Maass theta functions and their relation to false-indefinite theta functions that
+appear in this work. Then in Sections 4, 5, 6, we analyze the functions L1 , . . . , L4 , L5 , . . . , L8 , and
+L9 , . . . , L12 , respectively, and prove the results asserted in Theorem 1.1. Finally, in an appendix
+we display various numerical results that exemplify our discussion in the body of this paper.
+
+                                           Acknowledgements
+  The authors were supported by the SFB/TRR 191 “Symplectic Structure in Geometry, Algebra
+and Dynamics”, funded by the DFG (Projektnummer 281071066 TRR 191) and by the Deutsche
+Forschungsgemeinschaft (DFG) Grant No. BR 4082/5-1.
+
+                         2. Maass Forms and Quantum Modular Forms
+  In this section we consider quantum modular forms related to Maass forms. First we recall the
+definition of a (vector-valued) Maass form.
+Definition 2.1. A set of smooth functions Uj : H → C with j ∈ {1, . . . , N } is called a vector-valued
+Maass (wave) form for the group Γ ⊂ SL2 (Z) if it satisfies the following conditions:
+                    
+1) For all M = ab cb ∈ Γ we have
+                                           X  N
+                                    aτ + b
+                              Uj            =      ΨM (j, k)Uk (τ ),                              (2.1)
+                                    cτ + d
+                                                        k=1
+
+   where ΨM is a suitable multiplier system.2
+                                                                              ∂2     ∂2
+2) There exists a λ ∈ C such that ∆ (Uj ) = λUj for each j, where ∆ := −τ22 ( ∂τ 2 + ∂τ 2 ) is the
+                                                                                1      2
+   hyperbolic Laplace operator on H.
+3) The functions Uj have at most polynomial growth near the cusps.
+   The Maass forms Uj with Laplace eigenvalue λ = 41 − ν 2 (where ν ∈ C) have a Fourier expansion
+of the form                               X
+                                Uj (τ ) =      aj (τ2 ; n)e2πinτ1 ,
+                                                   n∈Z+αj
+where, for some constants dj (n), bj , cj ,
+                                                                              (           √       √
+                     √                                                         bj log(τ2 ) τ2 + cj τ2   if ν = 0,
+ aj (τ2 ; n) = dj (n) τ2 Kν (2π|n|τ2 ) if n 6= 0     and      aj (τ2 ; 0) =        1
+                                                                                     −ν         1
+                                                                                                  +ν
+                                                                                   2
+                                                                               bj τ2            2
+                                                                                          + cj τ2       if ν 6= 0.
+
+  2Here and throughout we assume that Ψ       is diagonal on Γ∞ := Γ ∩ {± ( 10 n1 ) : n ∈ Z}.
+                                          M
+                                                         4
+   In this paper, our interest is on Maass forms with Laplace eigenvalue 14 . More specifically, we
+study functions Uj : H → C, j ∈ {1, . . . , N } forming a vector-valued Maass form for Γ ⊂ SL2 (Z)
+with Fourier expansion
+                                   √     √      X
+                       Uj (τ ) = cj τ2 + τ2          dj (n)K0 (2π|n|τ2 )e2πinτ1 ,             (2.2)
+                                                     n∈Z+αj
+                                                       n6=0
+
+where the coefficients dj (n) have polynomial growth in n. Following [7] we then define3
+                      √
+                        z2
+     Rτ (z) := p                     and [Uj (z), Rτ (z)] := ∂Uj (z)Rτ (z)dz + Uj (z)∂Rτ (z)dz,
+                  (z − τ ) (z − τ )
+where ∂f (z) := ∂f∂z(z) and ∂f (z) := ∂f∂z(z) . For each j, the one-form [Uj (z), Rτ (z)] is closed thanks to
+the fact that both Rτ and Uj have eigenvalue 41 under the Laplacian. Using these closed one-forms,
+we define uj : H → C and Uj,% : C \ (% + iR) → C by4,5
+                          2 i∞                                          2 i∞
+                            Z                                             Z
+             uj (τ ) := −        [Uj (z), Rτ (z)] and Uj,% (τ ) :=             [Uj (z), Rτ (z)],        (2.3)
+                          π τ                                           π %
+for any                                                                                  
+                                                               ax bx                     dx
+              % ∈ QΓ := x ∈ Q : there exists Mx :=                      ∈ Γ with x = −        .      (2.4)
+                                                               cx dx                     cx
+The integrals are independent of the integration path, but for concreteness we assume throughout
+that the integrals are taken along vertical paths. Now the results of Lewis and Zagier in [7] and
+of Zagier in [12] show that if the Uj ’s form a Maass form with cj = 0 for all j, then the limits
+limt→0+ uj (x + it) exist for all x ∈ QΓ and they form a quantum modular form for Γ.
+   Among the functions we study, L1 , . . . , L4 and L9 , . . . , L12 indeed fit into this framework. The
+functions L5 , . . . , L8 , on the other hand, are related to a vector-valued Maass form with a nontrivial
+constant term. So in this section we develop the technical details for how the results of [7] and [12]
+extend to this case.6
+   We start with an elementary result that relates the Maass waveforms discussed here to q-series.
+Proposition 2.2. The functions uj for j ∈ {1, . . . , N } are holomorphic on H and they satisfy
+                                          cj        X
+                               uj (τ ) = − +              dj (n)q n .
+                                          π
+                                                           n∈Z+αj
+                                                             n>0
+
+Proof. This basically follows from the results of [7]. A detailed exposition for the case cj = 0
+can be found in Proposition 3.5 of [8]. The contribution of the constant terms cj follow from a
+straightforward computation.                                                                  
+   Next we note the analytic properties of the functions Uj,% .
+   3Throughout this paper we use the principal branch of the logarithm to define the square-roots.
+   4We also define U
+                     j,i∞ (τ ) := 0.
+   5The latter function is a period function that can be analytically continued in τ to a cut complex plane and that
+satisfies a functional equation under modular transformations. The correspondence between Maass cusp forms and
+their period functions was first elucidated by Lewis and Zagier in [7], where they also recognized its role similar to
+that of period polynomials for holomorphic cusp forms.
+   6In [7], a discussion of noncuspidal SL (Z) Maass forms was given (see equations (4.4) and (4.5) there with
+                                            2
+                                                          1 −ν      1 +ν
+s = 21 − ν). However, note that the constant term bj τ22      + cj τ22   degenerates for ν = 0, which is the case of
+interest in this paper, and we have not found an interpretation for the constant term given in (4.5) of [7] (that would
+correspond to the constant term of uj ) to reproduce our result in Proposition 2.2.
+                                                          5
+Proposition 2.3. For j ∈ {1, . . . , N } and % ∈ QΓ , the integral defining Uj,% (z) is convergent for
+all z ∈ C \ (% + iR) and defines a holomorphic function there.
+Proof. Again this result basically follows from [7]. Here we give details both for reference and also
+to point out the new ingredients that appear in the presence of constant Fourier coefficients. We
+start by writing
+                             Z ∞                                            
+                          1                          t + i(τ − %)                     dt
+             Uj,% (τ ) =           4it∂Uj (% + it) −              Uj (% + it) √ p                .
+                         2π 0                        t − i(τ − %)               t t2 + (τ − %)2
+Then letting % = − dc for M = ac db ∈ Γ, we can use the modular transformations (2.1) to write
+                                          
+
+(for any T > 0)
+                                                                           !
+                                                t + i τ + dc
+                  Z ∞                                       
+               1                     d                               d                 dt
+ Uj,% (τ ) =             4it∂Uj − + it −                   d
+                                                              Uj − + it       √  q                  (2.5)
+              2π T                   c          t−i τ + c            c              2         d 2
+                                                                                               
+                                                                                 t t + τ+c
+           N                                                                       !
+                                                        t + i τ + dc
+                            Z  T                                       
+      1 X                         4i        a     i                         a    i             dt
+ −           ΨM −1 (j, k)          2
+                                     ∂Uk      + 2 +                d
+                                                                      Uk     + 2      √   q            2 .
+    2π                           c t        c c t       t−i τ + c           c c t
+         k=1                 0                                                            t t2 + τ + dc
+Now looking at the Fourier expansion in (2.2), we find that for any ε > 0 we have constants
+Cε , D > 0 such that for all τ2 ≥ ε and for all j ∈ {1, . . . , N } we have
+                                         √                 cj
+                                              4i∂Uj (τ ) − √ ≤ Cε e−Dτ2
+                            |Uj (τ ) − cj τ2 | ,                                              (2.6)
+                                                            τ
+thanks to the exponential decay of K-Bessel functions towards infinity. So separating the constant
+terms of U and ∂U ’s, it is easy to see that their contribution to (2.5) is convergent and yields a
+holomorphic function. The contribution of the constant terms can then be separately checked to
+be convergent and to be holomorphic for all z ∈ C \ (% + iR).                                    
+Remark 2.4. Here it is also useful to note that by deforming the path of integration and the
+cut associated with the square-roots as in Figure 2, one can analytically continue Uj,% (z) from the
+half-plane Re(z) > % to the entire cut-plane C \ (−∞, %].7
+
+
+
+
+                                                   Figure 2
+
+  Now we are ready to state the modular transformations of uj on H.
+Proposition 2.5. For M := ac db ∈ Γ and τ ∈ H with τ1 6= − dc we have
+                                
+
+                                               N
+                 aτ + b                          X                               
+            uj            = sgn(cτ1 + d)(cτ + d)   ΨM (j, k) uk (τ ) + Uk,− d (τ ) .
+                 cτ + d                                                     c
+                                                           k=1
+  7Similarly we can continue U
+                             j,% (z) from the half-plane Re(z) < % to the entire cut-plane C \ [%, ∞).
+                                                       6
+Proof. The statement is trivial for c = 0, so we assume that c 6= 0. We start with the definition in
+equation (2.3) for uj ( aτ +b                                         az+b
+                        cτ +d ) and make a change of variable z 7→ cz+d to write
+                                          Z d 
+                                        2 −c
+                                                                              
+                           aτ + b                     az + b               az + b
+                    uj              =−          Uj             , R aτ +b             ,
+                           cτ + d       π τ           cz + d       cτ +d   cz + d
+where the integral is taken over a piece of hyperbolic geodesic from τ to − dc . Now we note that
+                                            
+                                      az + b
+                            R aτ +b            = χM (τ, z)(cτ + d)Rτ (z),
+                              cτ +d   cz + d
+where                                 s                       p
+                                             (cτ + d)2         (z − τ ) (z − τ )
+                       χM (τ, z) :=                                              ∈ {±1}.
+                                          (z − τ ) (z − τ )       cτ + d
+Since we are using the principal values of the logarithm to define square roots, Rτ (z) is discontinuous
+on the z-plane along the vertical cut from τ to τ . Then following the modular transformation,
+the sign factor χM (τ, z) is discontinuous along this vertical line and along another piece of a
+hyperbolic geodesic emanating from τ (to which the vertical cut of Rτ (z) transforms). Moreover,
+on these discontinuity cuts themselves, the sign factor χM (τ, z) takes a constant value (since Rτ (z)
+is continuous if it is restricted to its vertical cut). In particular, χM (τ, z) is constant along our
+integration line, which itself is a hyperbolic geodesic from τ to − dc . We can determine this sign to
+be sgn(cτ1 + d) by setting z = − dc . Then using the modular transformation in (2.1) and using our
+                                                       R − d R i∞ R i∞
+freedom to deform the path of integration to write τ c = τ − − d we obtain the result.                
+                                                                               c
+
+  Our next goal is to define a function on rationals by taking vertical limits of uj (τ ) and removing
+the growing pieces.
+                                       
+Proposition 2.6. For any M := ac db ∈ Γ with c 6= 0, the limit
+                                                         N
+                                                                        !
+                                       d            1 X
+                           lim uj − + it −                 ΨM −1 (j, k)ck                         (2.7)
+                          t→0+          c         π|c|t
+                                                                 k=1
+exists. Moreover, the same limit is obtained for any element of Γ in the same equivalence class as
+M in Γ∞ \Γ. Using this limit we can define the functions uj : QΓ → C by
+                                                                       N
+                                           γj,x                1 X
+                uj (x) := lim uj (x + it) −        with γj,x :=           ΨMx−1 (j, k)ck .
+                         t→0+                πt                 |cx |
+                                                                      k=1
+                                 
+Here x = − dcxx and Mx = acxx dbxx ∈ Γ as in the definition of QΓ in (2.4).
+
+Proof. We start by explicitly writing the expression for uj (τ ) in (2.3) as
+                    Z ∞                      √                                √             !
+                  1                            v + τ2                            v
+      uj (τ ) =            −4i∂Uj (τ + iv) √ √          + Uj (τ + iv) √                   3   dv.    (2.8)
+                 2π 0                       v v + 2τ2                   v + τ2 (v + 2τ2 ) 2
+                                                                         R1       R∞
+Inserting τ = − dc + it and separating the integral into two pieces as 0 and 1 , we easily find that
+the limit t → 0+ exists for the latterR 1 piece and can be computed by setting t = 0 thanks to the
+bounds in (2.6). For the integral 0 , on the other hand, we use the modular transformations in
+(2.1) and separate the constant term to rewrite this contribution as
+                N               Z 1
+                                                                      √
+                                                                          
+          1 X                                 a       i                                   1
+    −        2
+                   ΨM −1 (j, k)     −4i∂Uk      + 2           + ck |c| v + t √ √                  3 dv
+       2πc                       0            c c (v + t)                         v v + 2t(v + t) 2
+               k=1
+                                                        7
+                  N            Z 1                                     √
+            1 X                       a       i             ck               v
+         +      ΨM −1 (j, k)       Uk   + 2           −    √        √               3 dv
+           2π
+               k=1              0     c  c  (v + t)     |c| v + t     v + t(v + 2t) 2
+                      N                 Z 1
+                   1 X                               dv
+              +        ΨM −1 (j, k)ck         √               3   .
+                  π|c|                   0        v(v + 2t) 2
+                      k=1
+
+Next we use a looser version of the bound in (2.6), namely that for any ε > 0 we have a constant
+Bε > 0 such that for all τ2 ≥ ε and for all j ∈ {1, . . . , N } we have
+                                          √                          cj   Bε
+                             |Uj (τ ) − cj τ2 | ,      4i∂Uj (τ ) − √    ≤ 2.                      (2.9)
+                                                                      τ2  τ2
+Using these two bounds, √ we find that for t, v ≤ 1 the integrands in the first and second lines can be
+bounded by √Cv and C v, respectively, for an appropriate constant C > 0. Thanks to these upper
+bounds and to the fact that the integrands are continuous at t = 0, for those two terms, the limit
+t → 0+ exists and they can simply be taken by explicitly setting t = 0. The third line, on the other
+hand, can be explicitly  evaluated and we find that the piece of it that grows as t → 0+ is removed
+               1  P  N
+by the term π|c|t    k=1 ΨM −1 (j, k)ck in (2.7).
+   Finally, the fact that the same limit is obtained for any a+rc     b+rd ∈ Γ (with r ∈ Z) follows
+                                                                           
+                                                                   c    d
+from the diagonality of the multiplier system over Γ∞ .                                              
+  Now the functions uj are defined through vertical limits in H, we show how the same functions
+are obtained when we slightly deform the path through which we take the limit.
+Lemma 2.7. For any x ∈ QΓ and for any smooth function X : R+ → R that satisfies X(t) =
+Bt2 + o(t2 ) as t → 0+ we have
+                                                                      
+                                                              γj,x
+                        uj (x) = lim uj (x + it + X(t)) −                .
+                                t→0+                      π(t − iX(t))
+Proof. We prove the equivalent statement
+                                                                        iBγj,x
+                            lim (uj (x + it + X(t)) − uj (x + it)) =           .                  (2.10)
+                            t→0+                                          π
+We start by using equation (2.8) to write
+    uj (x + it + X(t)) − uj (x + it)
+                     Z ∞                                                             √
+                   1                                                                    v+t
+               =          (−4i∂Uj (x + X(t) + i(v + t)) + 4i∂Uj (x + i(v + t))) √ √            dv
+                  2π 0                                                               v v + 2t
+                                Z ∞                                                        √
+                             1                                                               v
+                         +           (Uj (x + X(t) + i(v + t)) − Uj (x + i(v + t))) √               3 dv.
+                            2π 0                                                      v + t(v + 2t) 2
+                                                                       R1      R∞
+As in RProposition 2.6, we separate the integrals into two pieces as 0 and 1 . For the contributions
+         ∞
+from 1 , the same argument that we use there can be employed to show that the limit t → 0+
+can be computed by explicitly
+                          R∞        setting t = 0 inside the integrands. In particular, this shows that
+the contributions from 1 do not contribute to the limit in (2.10).
+                                        R1
+   To study the contributions from 0 , we let M = ac db ∈ Γ be such that x = − dc and use modular
+                                                             
+
+transformations by M −1 to rewrite them as
+               N               Z 1                                            √
+          1 X                               a            i                        v+t
+           2
+                  ΨM −1 (j, k)     4i∂Uk      + 2                    √ √                          dv
+        2πc                     0           c c (v + t − iX(t))        v v + 2t(v + t − iX(t))2
+              k=1
+                                                          8
+                    N              Z 1                             
+              1 X                                    a      i           1
+           −      ΨM −1 (j, k)           4i∂Uk         +      √ √                  3 dv
+             2πc2                   0                c c2 (v + t)v v + 2t(v + t) 2
+                   k=1
+                       N              Z 1                                    √
+                   1 X                          a          i                     v
+                +        ΨM −1 (j, k)     Uk      + 2                  √                 3 dv
+                  2π                   0        c c (v + t − iX(t))      v +  t(v +  2t) 2
+                     k=1
+                           N               Z  1                         √
+                        1 X                          a      i               v
+                    −         ΨM −1 (j, k)      Uk     + 2         √                3 dv.
+                       2π                   0        c c (v + t)     v + t(v + 2t) 2
+                          k=1
+
+Now we choose T ≤ 1 to be small enough that |X(t)| ≤ t for all t ∈ [0, T ]. Then for v ∈ (0, 1)
+                                                      
+                                  a          i                1
+                            Im      + 2                   ≥ 2.
+                                  c c (v + t − iX(t))        4c
+As in the proof of Proposition 2.6, this allows us to use the bounds in (2.9) to show that once
+we remove the constant terms of Uk and ∂Uk ’s we can take t → 0+ by setting t = 0 inside the
+integrands and hence we get no contribution to the limit in (2.10) from such terms. This leaves us
+the contribution from the constant terms:
+        N                 Z 1    p
+  1 X                              X(t)2 + (v + t)2                  1
+           ΨM −1 (j, k)ck     √ √                        2 −√ √
+ 2π|c|                      0  v v + 2t (v + t − iX(t))        v v + 2t(v + t)
+       k=1
+                                                             √                         √          !
+                                                               v                         v
+                                             +p                             3 −                 3   dv
+                                                  X(t)2 + (v + t)2 (v + 2t) 2   (v + t)(v + 2t) 2
+                                                          
+              Z 1                               3
+                                                                                  
+          γj,x t          1             (v + 1)                     iX(t) v + 2
+       =                                              3 − 1 1 + t (v + 1)2
+                                                          
+           πt 0 √v(v + 2) 23
+                               
+                                   X(t)2           2   2
+                                    t2
+                                         + (v + 1)
+                                                                                              
+                                                      X(t)2              1              iX(t) v + 2 
+                                                 −                               3 +                 dv,
+                                                       t2  X(t)2                 2       t (v + 1)2
+                                                              t2
+                                                                    + (v + 1)2
+
+from which it is easy to see that the first two terms in the outer parentheses give vanishing contri-
+butions as t → 0+ , whereas the contribution of iX(t)   v+2
+                                                    t (v+1)2 gives the right-hand side of (2.10) and
+thereby concludes our proof.                                                                       
+
+   We are now ready to state the quantum modular transformation properties of the functions uj .
+
+Theorem 2.8. For any M := ac db ∈ Γ and x ∈ QΓ \ {− dc } we have the quantum modular
+                                      
+transformation property
+                                           N
+                         ax + b              X                             
+                    uj            = |cx + d|   ΨM (j, k) uk (x) + Uk,− d (x) .
+                         cx + d                                        c
+                                                 k=1
+
+Proof. We start by noting that ΨM is a multiplier system for a weight zero modular object (see
+equation (2.1)). Therefore, it forms a genuine representation of the modular group Γ (as opposed
+to a projective one) and this leads to the identity
+                                 N
+                                 X
+                                       ΨM (j, k)γk,x = |cx + d|γj, ax+b .                             (2.11)
+                                                                        cx+d
+                                 k=1
+                                                       9
+So plugging in τ = x + it (with t > 0) to the modular transformation worked out in Proposition
+2.5 and using (2.11) we obtain
+                                          γ ax+b
+           ax + b             it              j,
+      uj          +                         − cx+d (cx + d)(cx + cit + d)
+           cx + d (cx + d)(cx + cit + d)        πt
+                                            N
+                                            X                        γk,x                  
+                = sgn(cx + d)(cx + cit + d)   ΨM (j, k) uk (x + it) −      + Uk,− d (x + it) .
+                                                                       πt         c
+                                                 k=1
+
+By Propositions 2.3 and 2.6, the right-hand side tends to the right-hand side of the claim as t → 0+ .
+Finally, we note that the left-hand side tends to uj ( ax+b           +
+                                                       cx+d ) as t → 0 by Lemma 2.7.               
+
+                                  3. Mock Maass Theta functions
+   In the following sections, we see that the functions L1 , . . . , L12 can all be expressed in terms of
+certain theta functions of the form8
+                              X
+                                   (1 − sgn(B(n, c1 ))sgn(B(n, c2 )))q Q(n) ,                       (3.1)
+                             n∈Zd +µ
+
+where Q is a quadratic form of indefinite signature and the vectors c1 and c2 of negative norm ensure
+convergence. Such functions are not as well-studied as similar looking indefinite theta functions of
+the shape
+                             X
+                                   (sgn(B(n, c1 )) − sgn(B(n, c2 )))q Q(n) ,
+                              n∈Zd +µ
+
+which are known to yield mock modular forms thanks to the ground-breaking work of Zwegers [13].
+The functions in equation (3.1), which are hybrids of indefinite and false theta functions, do not
+easily fit into a modular framework; but they are still interestingly related to the so-called mock
+Maass theta functions developed by Zwegers in [14]. In this section, we review the properties of
+such functions for our later use.
+   First, we restrict ourselves to 2-dimensional lattices and let Q be a binary quadratic form of
+signature (1, 1). Throughout the paper we assume that Q(n) is integral for all n = (n1 n2 )T ∈ Z2
+(in which case we call the quadratic form even) and that Q(n) = 21 nT An, where A is a symmetric
+2 × 2 matrix. Finally, we let B denote the bilinear form associated to Q as B(n, m) = nT Am.
+   Next, we recall that the set of vectors c ∈ R2 with Q(c) = −1 splits into two connected com-
+ponents. Fixing a vector c0 in one of the components, all the vectors in the same component are
+characterized by
+                             CQ := c ∈ R2 : Q(c) = −1, B(c, c0 ) < 0 .
+                                    
+
+In particular, if B(c1 , c2 ) < 0, then c1 and c2 belong to the same component. Similarly, the set of
+vectors c ∈ R2 with Q(c) = 1 splits into two components, as well. Choosing c⊥   0 as one of the two
+unit vectors that are orthogonal to c0 , all the unit vectors in the same component are given by
+                                      n                               o
+                                 ⊥
+                               CQ  := c ∈ R2 : Q(c) = 1, B c, c⊥ 0   > 0  .
+
+  It is convenient to parametrize CQ and CQ⊥ by using the reference quadratic form Q (x) = x2 −x2 .
+                                                                                      0     1   2
+For this, we let P ∈ GL2 (R) be such that
+                                                                     
+                       T 2    0            −1 0                       −1 1        ⊥
+                 A=P               P,    P         ∈ CQ , and P               ∈ CQ  .
+                          0 −2                 1                          0
+
+  8Note that throughout we write vectors in bold letters.
+                                                       10
+                                           ⊥ by letting
+Then we parametrize the vectors in CQ and CQ
+                                                               
+               −1 sinh(t)                  ⊥         −1 cosh(t)        ⊥
+     c(t) := P              ∈ CQ and c (t) := P                     ∈ CQ                     for t ∈ R.         (3.2)
+                  cosh(t)                                 sinh(t)
+Also, when we consider a number of vectors cj ∈ CQ below, it is convenient to let tj ∈ R be such
+that c(tj ) = cj and let c⊥    ⊥
+                          j = c (tj ).
+
+Remark 3.1. The reference quadratic form we choose here is convenient since the quadratic forms
+in all of our examples are of the form Q(n) = α1 n21 − α2 n22 with α1 , α2 ∈ N. We then choose CQ as
+the set of c ∈ R2 with Q(c) = −1 and c2 > 0, whereas CQ    ⊥ as the set of c ∈ R2 with Q(c) = 1 and
+                                                                             √        
+                                                                                α1 0
+c1 > 0. Finally, note that we fix P in all such examples by selecting P =       0
+                                                                                  √
+                                                                                    α2   to satisfy the
+conditions in (3.2).9
+ With this background at hand, we follow the Definition 2.3 of [14] and define the completed
+mock Maass theta function (with µ ∈ R2 and c1 , c2 ∈ CQ )
+                                                          Z t2
+                            [c1 ,c2 ]        √   X                         2
+                Θµ (τ ) = Θµ
+                 b        b           (τ ) := τ2   q Q(n)
+                                                               e−πB(n,c(t)) τ2 dt.     (3.3)
+                                                                        t1
+                                                      n∈Z2 +µ
+
+Note that it satisfies the basic properties
+                       Θ
+                       b −µ (τ ) = Θ
+                                   b µ (τ )   and Θ
+                                                  b µ+λ (τ ) = Θ
+                                                               b µ (τ )      for all λ ∈ Z2 .
+More importantly, such functions are covariant under modular transformations as shown in [14].
+Theorem 3.2 (Zwegers). Let Q(n) = 21 nT An be an even quadratic form of signature (1, 1) on Z2
+and let µ ∈ A−1 Z2 /Z2 . Then we have the following transformations:
+                                               
+                                              1           1         X
+      Θµ (τ + 1) = e
+      b              2πiQ(µ) b
+                            Θµ (τ ),  Θµ −
+                                      b           =p                          e−2πiB(µ,ν) Θ
+                                                                                          b ν (τ ).
+                                              τ        | det(A)| ν∈A−1 Z2 /Z2
+
+   The multipliers in Theorem 3.2 agree with the Weil representation associated to Q, so we can
+just as easily state the modular transformation under any element of SL2 (Z) (see e.g. [5] for further
+details on Weil representations). We state this result more explicitly for later reference.
+Theorem 3.3. Let Q(n) = 12 nT An be an      even quadratic form of signature (1, 1) on Z2 and let
+µ ∈ A−1 Z2 /Z2 . Then, for any M = ac db ∈ SL2 (Z) we have
+                                          
+                                       
+                            b µ aτ + b =
+                                               X
+                           Θ                          ψM (µ, ν)Θ
+                                                               b ν (τ ),
+                                 cτ + d        −1 2 2ν∈A    Z /Z
+
+where
+                         
+                            2πiabQ(µ) δ
+                         e
+                                        µ,sgn(d) ν                                             if c = 0,
+                                                       2πi
+            ψM (µ, ν) :=
+                                             X
+                              √  1
+                                                      e c (aQ(m+µ)−B(m+µ,ν)+dQ(ν))              if c 6= 0.
+                          |c| | det(A)|
+                         
+                                              2     2
+                                           m∈Z /cZ
+
+   9In [14], Q (x) = x x was used as the reference quadratic form and one picks a matrix P ∈ GL (R) such that
+              0       1 2                                                                      2
+A = P T ( 01 10 ) P and P −1 −1
+                             1
+                                 ∈ CQ to parametrize CQ . By letting P = 11 −11
+                                                                          
+                                                                                 P , we can see the equivalence of the
+                                               −1 1       ⊥
+two definitions up to the extra requirement P ( 0 ) ∈ CQ here. To see why       this extra condition is included here,
+                                                                       0 −1
+                                                                            
+note that one can multiply any P as defined in [14] on the left by −1     0  . This preserves both of the conditions
+A = P T ( 01 10 ) P and P −1 −1
+                              1
+                                
+                                  ∈ CQ . However, this changes the parameter t on CQ as t 7→ −t (and in particular
+tj 7→ −tj ) while also changing c⊥        ⊥
+                                  j 7→ −cj . Consequently, this transformation changes the overall sign of the mock
+Maass theta functions defined in [14], whereas the extra condition here eliminates this ambiguity.
+                                                           11
+  The functions Θb µ are closely related to the mock Maass theta functions defined by [14]10,11
+           1             √    X
+ Θµ (τ ) := sgn(t2 − t1 ) τ2          1 − sgn(B(n, c1 ))sgn(B(n, c2 ))K0 (2πQ(n)τ2 )e2πiQ(n)τ1
+           2                    2
+                                n∈Z +µ
+                                 n6=0
+             1             √ X                           
+            + sgn(t2 − t1 ) τ2   1 − sgn B n, c⊥
+                                               1   sgn B n, c⊥
+                                                             2     K0 (−2πQ(n)τ2 )e2πiQ(n)τ1
+             2                 2
+                               n∈Z +µ
+                                n6=0
+                          √
+              + (t2 − t1 ) τ2 δµ∈Z2 .                                                                         (3.4)
+These mock Maass theta functions are eigenfunctions of hyperbolic Laplacian with eigenvalue 14
+and hence are related to the theta functions we encounter in equation (3.1) through equation (2.3)
+and Proposition 2.2. More specifically,
+                                              2 i∞
+                                               Z
+                                 ϑµ (τ ) := −      [Θµ (z), Rτ (z)]
+                                              π τ
+satisfies
+                   t2 − t1         sgn(t2 − t1 )         X
+                                                                  1 − sgn(B(n, c1 ))sgn(B(n, c2 )) q Q(n) .
+                                                                                                  
+    ϑµ (τ ) := −           δµ∈Z2 +                                                                            (3.5)
+                      π                 2
+                                                    n∈Z2 +µ
+                                                         n6=0
+
+  Our first step towards understanding the relation between the mock Maass theta functions Θµ
+and their completions Θ
+                      b µ is the following result (following from Lemma 4.1 of [14]).
+
+Proposition 3.4. Let Q(n) = 21 nT An be an even quadratic form of signature (1, 1) on Z2 and let
+µ ∈ A−1 Z2 /Z2 . Also assume that Q(n) = 0 has no solutions on Q2 except for n = 0. Then
+                                                         [c1 ]         [c ]
+                                   Θ
+                                   b µ (τ ) = Θµ (τ ) + ϕµ     (τ ) − ϕµ 2 (τ ),
+where
+                                   [c ]         √          X             √
+                                 ϕµ 0 (τ ) :=       τ2             αt0 (n τ2 ) q Q(n)
+                                                         n∈Z2 +µ
+with                          R ∞
+                                      −πB(n,c(t))2 dt                 if B(n, c0 )B n, c⊥
+                                                                                          
+                               t0R e
+                                                                                       0 > 0,
+                                    t0                2
+                                        e−πB(n,c(t)) dt               if B(n, c0 )B n, c⊥
+                                                                                          
+                    αt0 (n) := − −∞                                                     0 < 0,
+                              
+                                0                                     otherwise.
+                              
+
+                                                                                                      [c ]     [c ]
+   In summary, we can follow the nomenclature for mock modular forms and refer to ϕµ 1 and ϕµ 2
+as shadow contributions that correct the modular behavior of the mock Maass theta function Θµ .
+They do however break the property of being a Laplacian eigenfunction (in a way similar to the
+breaking of holomorphy property by completions of mock modular forms).
+   Now for our purposes, the property of being a Laplacian eigenfunction is crucial for making
+contact with q-series such as (3.5) that appear in our treatment of the functions L1 , . . . , L12 . In
+turn, to prove modular properties for (linear combinations of) ϑµ as in Section 2, we need the
+corresponding shadow contributions to Θ b µ to vanish. One criterion that can be used to prove such
+
+  10The exclusion of n = 0 from the sums and the addition of the final term (t − t )√τ δ
+                                                                              2   1   2 µ∈Z2 differs from [14], but
+this is an appropriate definition in view of Proposition 3.4 below.
+   11Here and throughout the paper sgn(x) := x for x ∈ R \ {0} and sgn(0) := 0.
+                                                 |x|
+                                                             12
+a statement is given by Lemma 5.1 of [14]. It states that if γ ∈ GL2 (Z) is such that γ T Aγ = A,
+det(γ) = +1, and γCQ = CQ , then we have
+                                                        [γc]            [c]
+                                                      ϕγa (τ ) = ϕa (τ ).
+In our work, we need a modified version of this criterion, which we state and prove next.
+Lemma 3.5. Let Q(n) = 21 nT An be an even quadratic form of signature (1, 1), let c3 , c4 ∈ CQ ,
+and let γ ∈ GL2 (Z) be such that γ T Aγ = A, det(γ) = −1, and γc3 = ±c4 . Then
+                                                      [c ]               [c ]
+                                                     ϕγa4 (τ ) = −ϕa 3 (τ ).
+Proof. We first assume that γc3 = −c4 and note that it is not hard to see that
+                                                γc(t) = −c(t3 + t4 − t).                                                (3.6)
+Then we have (by changing variables as t 7→ t3 + t4 − t and using (3.6) and that γ T Aγ = A)
+         Z ∞                         Z t3                                 Z t3
+               −πB(γn,c(t))2 τ2             −πB(γn,c(t3 +t4 −t))2 τ2                       2
+             e                  dt =      e                          dt =      e−πB(n,c(t)) τ2 dt.
+             t4                                 −∞                                       −∞
+Similarly, we have
+           Z t4                         Z ∞                                 Z ∞
+                  −πB(γn,c(t))2 τ2            −πB(γn,c(t3 +t4 −t))2 τ2                      2
+                e                  dt =     e                          dt =     e−πB(n,c(t)) τ2 dt.
+             −∞                                 t3                                       t3
+Using these identities with the fact that
+                                                                                    
+           B(γn, c4 )B γn, c⊥ 4   =  B(γn, −γc 3 )B   γn, γc ⊥
+                                                             3   = −B(n, c 3 )B   n, c ⊥
+                                                                                       3 ,
+                                 √               √                  [c ]          [c ]
+we immediately see that αt4 (γn τ2 ) = −αt3 (n τ2 ) and hence that ϕγa4 (τ ) = −ϕa 3 (τ ).
+    For the case γc3 = c4 , we can write γ = (−γ)(−I2 ), where −γ satisfies the hypotheses of the
+lemma with (−γ)c3 = −c4 . Then the first part of the lemma, together with the trivial identity
+  [c ]       [c ]
+ϕ−a3 (τ ) = ϕa 3 (τ ) (see Lemma 5.1 of [14]) implies the result.                              
+
+                                                4. The functions L1 –L4
+  In this section, we begin our investigation of the twelve functions introduced by Lovejoy and
+Osburn
+  √     [10]. We start with the functions L1 , . . . , L4 that count ideals in the ring of integers of
+Q( 2).
+4.1. Rewriting as theta functions. We start with the following lemma, which rewrites L1 , . . . , L4
+in terms of theta functions as in equation (3.1).
+Lemma 4.1. We have
+                                                                      
+        17             1         X                      X
+                                                                                                          8n2 −4n22
+     q − 32 L1 (q) =                            +                       (1 + sgn(n1 + n2 )sgn(n1 − n2 ))q 1        ,
+                                                                       
+                       2
+                         
+                                     1    3 T                7   1 T
+                             n∈Z2 +( 16   8)        n∈Z2 +( 16   8)
+                                                                      
+         7             1         X                      X
+                                                                                                          8n2 −4n22
+       q 32 L2 (q) =                            +                       (1 + sgn(n1 + n2 )sgn(n1 − n2 ))q 1        ,
+                                                                       
+                       2
+                         
+                                     3    1 T                5   3 T
+                             n∈Z2 +( 16   8)        n∈Z2 +( 16   8)
+                                                                      
+        33             1         X                      X
+                                                                                                          8n2 −4n22
+     q − 32 L3 (q) =                            +                       (1 + sgn(n1 + n2 )sgn(n1 − n2 ))q 1        ,
+                                                                       
+                       2
+                         
+                                     1    1 T                7   3 T
+                             n∈Z2 +( 16   8)        n∈Z2 +( 16   8)
+                                                                 13
+                                                                            
+        9              1         X                        X
+                                                                                                                8n2 −4n22
+     q − 32 L4 (q) =                              +                           (1 + sgn(n1 + n2 )sgn(n1 − n2 ))q 1        .
+                                                                             
+                       2
+                         
+                                     3    3 T                  5       1 T
+                             n∈Z2 +( 16   8   )       n∈Z2 +( 16       8)
+Proof. We start with the following identity given in the proof of Theorem 1.1 of [9]
+                    X                2        2           2        2
+                                                                      
+  q −17 L1 q 32 =            q (16n−1) −2(8j+3) + q (16n+1) −2(8j+3)
+               
+
+                      n≥1
+                    −n≤j≤n−1
+                                                                            X                      2               2            2          2
+                                                                                                                                                
+                                                                   +                  q (16n+7) −2(8j+1) + q (16n+9) −2(8j+1)                       .
+                                                                        n≥0
+                                                                       −n≤j≤n
+
+First note that the conditions n ≥ 1 and n ≥ 0 can be dropped with the understanding that we
+are summing over all pairs (n, j) ∈ Z2 satisfying the conditions −n ≤ j ≤ n − 1 and −n ≤ j ≤ n,
+respectively. We then change n 7→ −n in the first sum and n 7→ −n − 1 in the forth sum to obtain
+the claim for L1 (q).
+   As the proof of the remaining identities are similar, we just state the related identities from the
+proof of Theorem 1.1 of [9]:
+                  X              2        2            2        2
+                                                                   
+  q 7 L2 q 32 =          q (16n+3) −2(8j+1) + q (16n+13) −2(8j+1)
+             
+
+                  n≥0
+                 −n≤j≤n
+                                                                   X                           2               2                2          2
+                                                                                                                                                
+                                                          +                          q (16n+21) −2(8j+3) + q (16n+11) −2(8j+3)                      ,
+                                                                 n≥0
+                                                               −n−1≤j≤n
+
+                        X                        2            2                      2             2
+                                                                                                        
+  q −33 L3 q 32 =                     q (16n−1) −2(8j+1) + q (16n+1) −2(8j+1)
+               
+
+                      n≥1
+                    −n≤j≤n−1
+                                                                            X                      2               2            2          2
+                                                                                                                                                
+                                                                   +                  q (16n+7) −2(8j+3) + q (16n+9) −2(8j+3)                       ,
+                                                                        n≥0
+                                                                       −n≤j≤n
+
+                                              2            2                                        2               2
+                       X                                                X
+  q −9 L4 q 32 =                 q (16n+3) −2(8j+3) +                                 q (16n+13) −2(8j+3)
+              
+
+                     n≥0                                             n≥0
+                   −n≤j≤n−1                                        −n−1≤j≤n
+                                                                                 2          2                                2         2
+                                                      X                                                     X
+                                          +                     q (16n+21) −2(8j+1) +                               q (16n+11) −2(8j+1) .       
+                                                 n≥−1                                                    n≥0
+                                              −n−1≤j≤n+1                                                −n≤j≤n
+
+  To express these functions more compactly, we define the quadratic form
+                                                        Q(n) := 8n21 − 4n22                                                                 (4.1)
+and the vectors
+                                 1                             1
+                          c1 := √ (−1 2)T and c2 := √ (1 2)T                                                                                (4.2)
+                               2 2                           2 2
+in CQ (as defined in Remark 3.1). For these choices, the theta function in equation (3.5) is
+                        1 X                                        2    2
+              ϑµ (τ ) =        (1 + sgn(n1 + n2 )sgn(n1 − n2 ))q 8n1 −4n2 for µ 6∈ Z2 .
+                        2    2 n∈Z +µ
+
+We can now express the theta functions found in Lemma 4.1 in terms of these ϑµ ’s.
+                                                                       14
+Lemma 4.2. We have
+             17                        7                              33                         9
+          q − 32 L1 (q) = f3 (τ ),   q 32 L2 (q) = f1 (τ ),     q − 32 L3 (q) = f0 (τ ),     q − 32 L4 (q) = f2 (τ ),
+where                                                                               T                       T
+                                                                          2j + 1 1                       1 1
+             fj (τ ) := ϑµj (τ ) + ϑµj +λ (τ )     with µj :=                             and λ :=                  .
+                                                                            16   8                       2 2
+Proof. The claim follows from the relations
+                                                ϑµ = ϑ−µ = ϑ(µ1 −µ2 )T .                                                   
+
+4.2. The corresponding Maass forms. Next we follow (3.4) and define the mock Maass theta
+functions Θµ for the quadratic form Q in (4.1) and vectors c1 , c2 in (4.2). Noting that the vectors
+in CQ⊥ corresponding to c and c are c⊥ = 1 (1 − 1)T and c⊥ = 1 (1 1)T , we find (for µ 6∈ Z2 )
+                            1      2       1    2              2    2
+           √
+             τ2                                                                     2    2
+                        (1 + sgn(n1 + n2 )sgn(n1 − n2 ))K0 2π 8n21 − 4n22 τ2 e2πi(8n1 −4n2 )τ1
+                  X                                                       
+ Θµ (τ ) =
+            2
+                n∈Z2 +µ
+              √
+                τ2 X                                                                         2 2
+                           (1 − sgn(2n1 + n2 )sgn(2n1 − n2 ))K0 −2π 8n21 − 4n22 τ2 e2πi(8n1 −4n2 )τ1 .
+                                                                                
+           +
+                2     2
+                      n∈Z +µ
+
+We also have their modular completions given by equation (3.3) and Proposition 3.4:
+                                                            [c1 ]    [c ]
+                                                Θ
+                                                b µ = Θµ + ϕµ     − ϕµ 2 .
+In the following it is also useful to note the trivial identities
+        Θµ = Θ−µ = Θ(−µ1 µ2 )T = Θ(µ1 −µ2 )T ,                  Θ
+                                                                bµ = Θ
+                                                                     b −µ = Θ
+                                                                            b (−µ µ )T = Θ
+                                                                                 1 2
+                                                                                         b (µ −µ )T .
+                                                                                             1  2
+                                                                                                                        (4.3)
+   Our main interest is of course on the linear combinations of ϑµ ’s given in Lemma 4.2. So for
+j ∈ {0, 1, 2, 3} we form the corresponding linear combinations of the Θµ ’s and Θ
+                                                                                b µ ’s to define
+
+                              Fj := Θµj + Θµj +λ             and          Fbj := Θ
+                                                                                 bµ + Θ
+                                                                                   j
+                                                                                      b µ +λ .
+                                                                                         j
+
+
+With the next lemma, we show that the shadow contributions to Fbj do in fact vanish and hence
+the Fj ’s constitute a Maass form.12
+Lemma 4.3. For j ∈ {0, 1, 2, 3} we have
+                                                           Fj = Fbj .
+Proof. Suppose that γ ∈ GL2 (Z) is an automorphism such that γ TAγ = A, det(γ) = −1, and
+γc = ±c for some c ∈ CQ . Suppose moreover that γλ ≡ λ mod Z2 and that γ transforms µ to
+                                                                [c]         [c]
+±µ or ±(µ + λ) modulo Z2 . Then the identity ϕ−a = ϕa and Lemma 3.5 yield
+                                                     [c]       [c]
+                                                    ϕµ + ϕµ+λ = 0.
+
+  12Under any element of SL (Z), the functions F
+                                               bj transform into a linear combination of completed mock Maass
+                           2
+theta functions Θ
+                b µ according to Theorem 3.3. According to the Section 3 of [14], we have
+                                        Z t2
+                                                         2                          2   2
+                                 q Q(n)      e−πB(n,c(t)) τ2 dt ≤ |t2 − t1 |e−Cτ2 (n1 +n2 )
+                                           t1
+
+for any n, with a constant C depending on c1 and c2 . So the infinite series in equation (3.3) can be bounded from
+above with an ordinary theta function and this ensures that each Fbj has at most polynomial growth at the cusps.
+This allows Fj = Fbj to satisfy the growth condition required from Maass forms in Definition 2.1. The same argument
+also applies to the relevant functions for L5 , . . . , L8 and L9 , . . . , L12 cases below.
+                                                              15
+  We use this fact with the automorphisms γ1 := −3       −2 and γ := 3 −2 , which both satisfy
+                                                                              
+                                                       4 3        2       4 −3
+det(γj ) = −1 and γ T Aγ = A, as well as γ1 c1 = c1 and γ2 c2 = −c2 . Since
+                        4j+5 T                       4j−1 T
+        γ1 µj = −6j−7               γ2 µj = 6j−1                 γ1 λ ≡ γ2 λ ≡ λ mod Z2 ,
+                                                                                     
+                 16       8
+                               ,                16     8
+                                                             ,
+we also find that γ1 and γ2 transform µj to ±µj or ±(µj + λ) modulo Z2 to conclude that
+                                                          
+                                [c ]   [c ]      [c ]   [c ]
+                   Fbj − Fj = ϕµj1 + ϕµj1+λ − ϕµj2 + ϕµj2+λ = 0 for all j.                                        
+
+  We next state the details of modular transformations for the Fj ’s under the modular group Γ0 (2),
+                                                                                                2πi
+which is generated by T := ( 10 11 ), R := ( 12 01 ), and −I. Here and throughout we use ζn := e n .
+Proposition 4.4. The functions Fj for j ∈ {0, 1, 2, 3} transform like a vector-valued modular
+function under Γ0 (2):
+                                 X3
+                          aτ + b
+                     Fj           =   ΛM (j, k)Fk (τ )  for all M ∈ Γ0 (2),
+                          cτ + d
+                                           k=0
+where the multiplier system Λ is as follows for T = ( 10 11 ) and R = ( 12 01 ):
+                                           ζ32 cos 3π          3 cos π        11 sin π      23 sin 3π
+                                           31                                                     
+       31                  
+                                                    16       ζ32      16    ζ32      16   ζ32      16
+        ζ32 0      0     0                 3        π         23 sin 3π             3π     11 sin π 
+                                                                         31                        
+       0 ζ7       0     0           1    ζ32 cos 16       ζ 32     16    ζ 32 cos 16   ζ 32     16
+                                                                                                        
+ΛT =         32             , ΛR = √                                                                 .
+       0    0 ζ32 023                       11 sin π
+                                                              31 cos 3π
+                                                                             23 sin 3π
+                                                                                           3 cos π 
+                                                                                                      
+                                       2  ζ32
+                                          
+                                                    16      ζ 32      16    ζ 32     16   ζ32      16 
+         0   0     0 ζ32 15
+                                             23     3π         11     π       3       π    31      3π
+                                                                                                   
+                                            ζ32 sin 16       ζ32 sin 16     ζ32 cos 16    ζ32 cos 16
+Proof. The behavior under translation follows from Theorem 3.3 and the fact that Q(µj + λ) =
+Q(µj ) + j + 1. We next consider the transformation τ 7→ 2ττ+1 . By Theorem 3.3, we have
+                                       
+                                    τ           X
+                           Θµ
+                           b              =            ψ(µ, ν)Θ b ν (τ ),
+                                 2τ + 1         −1 2 2
+                                                     ν∈A      Z /Z
+
+where
+                                    1        X
+                      ψ(µ, ν) = p                    eπi(Q(m+µ)−B(m+µ,ν)+Q(ν)) .
+                               2 | det(A)| m∈Z2 /2Z2
+Since Q(m + µ) − B(m + µ, ν) + Q(ν) = Q(m) + B(m, µ − ν) + Q(µ − ν) and Q(m) = 8m21 − 4m22
+is even we get
+                                    eπiQ(µ−ν) X
+                         ψ(µ, ν) =      √            eπiB(m,µ−ν) .
+                                      16 2 m∈Z2 /2Z2
+                                                r1 r2 T
+The elements of A−1 Z2 /Z2 are of the form ( 16      8 ) with r1 ∈ {0, 1, 2 . . . , 15} and r2 ∈ {0, 1, 2 . . . , 7}.
+                 2r1 +1    2r2 +1 T             2s1 +`1  2s2 +`2 T
+Letting µ = ( 16             8   )  and   ν = (   16        8   ) , where r1 , s1 ∈ {0, 1, . . . , 7}, r2 , s2 ∈
+{0, 1, 2, 3}, and `1 , `2 ∈ {0, 1}, we find
+                                         X
+                                              eπiB(m,µ−ν) = 4δ`1 ,1 δ`2 ,1 .
+                                      m∈Z2 /2Z2
+
+In particular, this shows that the Θ    b µ ’s with µ of the form ( 2r1 +1 2r2 +1 )T transform among
+                                                                          16       8
+                                                                              1 3 5 7
+each other. Moreover, because of equation (4.3), changing µ1 from 16            , 16 , 16 , 16 to 15   13 11 9
+                                                                                                  16 , 16 , 16 , 16 ,
+respectively, (or vice versa), or changing µ2 from 18 , 58 to 78 , 38 , respectively, does not change Θ         b µ.
+                                                                                              T
+So we can combine the contributions of cosets corresponding to µ, −µ, (−µ1 µ2 ) , (µ1 − µ2 ) by               T
+
+restricting µ to
+                       S := {µ0 , µ1 , µ2 , µ3 , µ0 + λ, µ1 + λ, µ2 + λ, µ3 + λ},
+                                                         16
+and by combining the corresponding factors in the transformation as
+                                                                                                                       eπiQ(µ−ν)
+ρ(µ, ν) := ψ(µ, ν) + ψ(µ, −ν) + ψ(µ, (ν1 , −ν2 )) + ψ(µ, (−ν1 , ν2 ))                            and    ψ(µ, ν) =          √     .
+                                                                                                                          4 2
+This yields
+                                                    
+                                              τ              X
+                                  Θ
+                                  bµ                     =         ρ(µ, ν)Θ
+                                                                          b ν (τ )        for µ ∈ S,
+                                           2τ + 1
+                                                             ν∈S
+where we simplify ρ as
+                                                eπi(Q(µ)+Q(ν))
+                              ρ(µ, ν) =               √        cos(16πµ1 ν1 ) cos(8πµ2 ν2 ).
+                                                        2
+  Since our ultimate goal is to study the transformation of Fbj , we write
+                                                    X
+                               τ                  τ
+                     Θµ
+                      b              + Θµ+λ
+                                       b               =       λ(µ, ν)Θb ν (τ ),
+                            2τ + 1             2τ + 1
+                                                                                    ν∈S
+
+where
+                                            λ(µ, ν) := ρ(µ, ν) + ρ(µ + λ, ν).
+Since Q(λ) = 1, B(µ, λ) = 8µ1 − 4µ2 , µ2 ∈ { 81 , 58 } for µ ∈ S, we find the identity
+
+                                        eπiQ(µ+λ) = ieπiQ(µ) e8πiµ1                 for µ ∈ S,
+which we can use to show
+                                                     λ(µ, ν + λ) = λ(µ, ν).
+So we finally get
+                                                                     3
+                            τ                              τ             X                                        
+              Θ
+              bµ
+                 j
+                                      +Θ
+                                       b µ +λ
+                                          j
+                                                                     =         λ(µj , µk ) Θb µ (τ ) + Θ
+                                                                                               k
+                                                                                                       b µ +λ (τ )
+                                                                                                          k
+                         2τ + 1                         2τ + 1
+                                                                         k=0
+
+and hence
+                                                                   3
+                                                       τ             X
+                                           Fj                    =         λ(µj , µk )Fk (τ ).
+                                                    2τ + 1
+                                                                     k=0
+Computing the explicit values of λ(µj , µk ) gives the stated transformation.                                                    
+
+4.3. Quantum modularity. To summarize our findings so far, we know from Proposition 4.4
+that the functions Fj for j ∈ {0, 1, 2, 3} form a vector-valued Maass form for Γ0 (2). Our next goal
+is to apply the results of Section 2 on these functions. Firstly, we note that thanks to equation
+(2.3) and Proposition 2.2, the functions fj (which are basically equal to the functions L1 , . . . , L4
+thanks to Lemma 4.2) are related to the Fj ’s as
+                                               2 i∞
+                                                Z
+                                   fj (τ ) = −       [Fj (z), Rτ (z)].
+                                               π τ
+Then thanks to Proposition 2.5, they satisfy the following modular transformation for any M :=
+ a b ∈ Γ (2) and τ ∈ H with τ 6= − d :
+ c d     0                     1     c
+                                                                        3
+                         aτ + b                                           X                                   
+                fj                    = sgn(cτ1 + d)(cτ + d)                    ΛM (j, k) fk (τ ) + Fk,− d (τ ) .
+                         cτ + d                                                                           c
+                                                                          k=0
+                                                                     17
+Here the obstruction to modularity Fk,− d is a holomorphic function on C \ (− dc + iR) (thanks to
+                                            c
+Proposition 2.3) defined as in equation (2.3):
+                                               2 i∞
+                                                Z
+                                  Fj,% (τ ) :=      [Fj (z), Rτ (z)].
+                                               π %
+  Next, following Proposition 2.6 we define the functions fj : QΓ0 (2) → C with j ∈ {0, 1, 2, 3} by
+                                                    fj (x) := lim fj (x + it).                                           (4.4)
+                                                                t→0+
+Then finally by Theorem 2.8 we find the quantum modular properties for the rational limits of
+L1 , . . . , L4 .
+Proposition 4.5. The functions fj : QΓ0 (2) → C with j ∈ {0, 1, 2, 3} form a vector-valued quantum
+modular form transforming as follows for any M := ac db ∈ Γ0 (2) and x ∈ QΓ0 (2) \ {− dc }:
+                                                        
+
+                                           3
+                         ax + b              X                             
+                    fj            = |cx + d|   ΛM (j, k) fk (x) + Fk,− d (x) .
+                         cx + d                                         c
+                                                            k=0
+Here the multiplier system Λ is as given in Proposition 4.4.
+
+                                                5. The functions L5 –L8
+   We√continue in this section with the functions L5 , . . . , L8 that count ideals in the ring of integers
+of Q( 3). This is possibly the most interesting family of functions among our examples since its
+discussion requires the novel features studied in Section 2 due to the presence of constant terms.
+
+5.1. Rewriting as theta functions. We begin as in Section 4.1 by rewriting our functions in
+terms of theta functions.
+Lemma 5.1. We have
+                                                               
+                        1    X                     X
+                                                                                                   6n2 −2n22
+       q −1 L5 (q) =                    +                        (1 + sgn(n1 + n2 )sgn(n1 − n2 ))q 1        ,
+                                                                
+                        2
+                          
+                           n∈Z2 \{0}        n∈Z2 +( 12    1 T
+                                                           )
+                                                          2
+                                                                       
+          1             1      X                        X
+                                                                                                           6n2 −2n22
+       q − 2 L6 (q) =                           +                        (1 + sgn(n1 + n2 )sgn(n1 − n2 ))q 1        ,
+                                                                        
+                        2
+                          
+                                            T                       T
+                           n∈Z2 +(0 21 )            n∈Z2 +( 12 0)
+                                                                       
+          1             1      X                        X
+                                                                                                           6n2 −2n22
+        q 6 L7 (q) =                            +                        (1 + sgn(n1 + n2 )sgn(n1 − n2 ))q 1        ,
+                                                                        
+                        2
+                          
+                                        1 T                         T
+                           n∈Z2 +( 31   2)          n∈Z2 +( 16 0)
+                                                                       
+          1             1      X                        X
+                                                                                                           6n2 −2n22
+       q − 3 L8 (q) =                           +                        (1 + sgn(n1 + n2 )sgn(n1 − n2 ))q 1        .
+                                                                        
+                        2
+                          
+                                        1 T                         T
+                           n∈Z2 +( 61   2)          n∈Z2 +( 13 0)
+
+Proof. As the proof is analogous to that of Lemma 4.1 we only state the identities used from
+Theorem 1.2 of [9]. These are
+                                   2     2               2       2
+                     X                        X
+   q −2 L5 q 2 = 2          q 3(2n) −(2j) + 2   q 3(2n+1) −(2j+1) ,
+              
+
+                          n≥1                                   n≥0
+                        −n≤j≤n−1                               −n≤j≤n
+                                                                  18
+                                         2        2                               2        2
+                         X                                    X
+    q −1 L6 q 2 = 2                 q 3(2n) −(2j+1) + 2                 q 3(2n+1) −(2j) ,
+               
+
+                        n≥1                                  n≥0
+                      −n≤j≤n−1                              −n≤j≤n
+                       X                    2         2                2          2
+                                                                                       
+      qL7 q 6 =                     q (6n+8) −3(2j+1) + q (6n+4) −3(2j+1)
+             
+
+                      n≥0
+                    −n−1≤j≤n
+                                                           X                                                        
+                                                                        (6n+1)2 −3(2j)2            (6n+5)2 −3(2j)2
+                                                  +                 q                      +q                            ,
+                                                        n≥0
+                                                       −n≤j≤n
+                                         2         2                               2               2
+                       X                                      X
+    q −2 L8 q 6 =               q (6n+1) −3(2j+1) +                         q (6n+5) −3(2j+1)
+               
+
+                      n≥0                                    n≥0
+                    −n≤j≤n−1                               −n−1≤j≤n
+                                                                                   2           2                             2   2
+                                                             X                                          X
+                                                  +                         q (6n+8) −3(2j) +                   q (6n+4) −3(2j) . 
+                                                          n≥−1                                          n≥0
+                                                       −n−1≤j≤n+1                                      −n≤j≤n
+
+  To rewrite these expressions more compactly, we define the quadratic form
+                                                 Q(n) := 6n21 − 2n22                                                             (5.1)
+and the vectors
+                                  1                            1
+                         c1 := √ (−1 3)T and c2 := √ (1 3)T                                      (5.2)
+                                2 3                          2 3
+in CQ (as defined in Remark 3.1). The parameters t1 and t2 that describe these vectors according
+to (3.2) are                                                           
+                                         1                             1
+                      t1 = − arctanh √          and t2 = arctanh √          .
+                                          3                             3
+According to these values, the theta function given in equation (3.5) becomes
+                                
+                  2           1             1 X                                         2    2
+       ϑµ (τ ) = − arctanh √       δµ∈Z2 +          (1 + sgn(n1 + n2 )sgn(n1 − n2 ))q 6n1 −2n2 .
+                  π            3            2    2         n∈Z +µ
+                                                            n6=0
+
+We can now rewrite the expressions in Lemma 5.1 in terms of these ϑµ ’s.
+Lemma 5.2. We have
+                              
+             2              1                    1                     1                       1
+q −1 L5 (q) − arctanh √           = g0 (τ ), q − 2 L6 (q) = g3 (τ ), q 6 L7 (q) = g1 (τ ), q − 3 L8 (q) = g2 (τ ),
+             π               3
+where                                                                 T
+                                                                                        1 1 T
+                                                                                           
+                                                                j
+             gj (τ ) := ϑµj (τ ) + ϑµj +λ (τ ) with µj :=           0     and λ :=                .
+                                                                6                       2 2
+5.2. The corresponding Maass forms. We next follow equation (3.4) and define the mock
+Maass theta functions Θµ given the quadratic form Q in (5.1) and vectors c1 , c2 in (5.2). For this
+purpose, we first find the vectors in CQ ⊥ that correspond to c and c as c⊥ = 1 (1 − 1)T and
+                                                                1      2     1     2
+ ⊥    1      T
+c2 = 2 (1 1) . Then we get
+          √
+            τ2                                                                       2    2
+                         (1 + sgn(n1 + n2 )sgn(n1 − n2 ))K0 2π 6n21 − 2n22 τ2 e2πi(6n1 −2n2 )τ1
+                  X                                                        
+Θµ (τ ) =
+           2
+              n∈(Z2 +µ)\{0}
+           √
+             τ2                                                                             2   2
+                           (1 − sgn(3n1 + n2 )sgn(3n1 − n2 ))K0 −2π 6n21 − 2n22 τ2 e2πi(6n1 −2n2 )τ1
+                    X                                                           
+         +
+             2      2
+                 n∈(Z +µ)\{0}
+                                                             19
+                                   
+                              1         √
+            + 2 arctanh       √             τ2 δµ∈Z2 .
+                                3
+We also have the corresponding modular completion given by equation (3.3) and Proposition 3.4:
+                                                            [c1 ]    [c ]
+                                                Θ
+                                                b µ = Θµ + ϕµ     − ϕµ 2 .
+As before these functions satisfy the following elementary properties:
+        Θµ = Θ−µ = Θ(−µ1 µ2 )T = Θ(µ1 −µ2 )T ,                   Θ
+                                                                 bµ = Θ
+                                                                      b −µ = Θ
+                                                                             b (−µ µ )T = Θ
+                                                                                  1 2
+                                                                                          b (µ −µ )T .
+                                                                                              1  2
+
+   Since we are interested in the linear combinations of ϑµ ’s given in Lemma 5.2, we make the
+following definitions for j ∈ {0, 1, 2, 3}:
+                          Gj := Θµj + Θµj +λ               and       G      bµ + Θ
+                                                                     b j := Θ
+                                                                              j
+                                                                                 b µ +λ .
+                                                                                    j
+
+
+We now proceed as in Lemma 4.3 to show that the shadow contributions to G
+                                                                        b j vanish.
+
+Lemma 5.3. For j ∈ {0, 1, 2, 3} we have
+                                                         Gj = G
+                                                              bj .
+
+   Then following the arguments of Proposition 4.4, we find the modular properties of the Maass
+forms Gj .
+Proposition 5.4. For j ∈ {0, 1, 2, 3} the functions Gj transform like vector-valued modular func-
+tion under Γ0 (2):
+                               X   3
+                        aτ + b
+                   Gj            =      ΦM (j, k)Gk (τ )   for all M ∈ Γ0 (2),
+                        cτ + d
+                                                k=0
+
+where the multiplier system Φ is as follows for T = ( 10 11 ) and R = ( 12 01 ):
+                                                                                    ζ43
+                                                                                     
+                      1 0 0       0                               0 2ζ12         0
+                    0 ζ6 0       0                        1 ζ12    0          11
+                                                                                ζ12  0
+             ΦT =  0 0 ζ32 0 
+                                         and ΦR = √                  11
+                                                                                        .
+                                                             3   0  ζ12         0  ζ12 
+                      0 0 0 −1                                   ζ43  0        2ζ12 0
+5.3. Quantum modularity. In summary, from Proposition 5.4 we know that Gj for j ∈ {0, 1, 2, 3}
+form a vector-valued Maass waveform for Γ0 (2). We next apply the findings of Section 2 on these
+functions. First, we note that equation (2.3) and Proposition 2.2 imply that the functions gj (which
+are basically equal to the functions L5 , . . . , L8 thanks to Lemma 5.2) are related to the Gj ’s as
+                                                  2 i∞
+                                                    Z
+                                     gj (τ ) = −        [Gj (z), Rτ (z)].
+                                                  π τ
+                                                                                      
+Then Proposition 2.5 gives their modular transformation for any M := ac db ∈ Γ0 (2) and τ ∈ H
+with τ1 6= − dc :
+                                                       3
+                       aτ + b                           X                                  
+                  gj            = sgn(cτ1 + d)(cτ + d)       ΦM (j, k) gk (τ ) + Gk,− d (τ ) .
+                       cτ + d                                                         c
+                                                                 k=0
+
+Here the obstruction to modularity Gk,− d is a holomorphic function on C \ (− dc + iR) (according
+                                             c
+to Proposition 2.3) defined as in equation (2.3):
+                                               2 i∞
+                                                Z
+                                  Gj,% (τ ) :=      [Gj (z), Rτ (z)].
+                                               π %
+                                                            20
+  Next we follow Proposition 2.6 and define the functions gj : QΓ0 (2) → C with j ∈ {0, 1, 2, 3} by
+                                                                                
+                                                  2 arctanh √13
+                    gj (x) := lim gj (x + it) −                   ΦMx−1 (j, 0) ,             (5.3)
+                              t→0+                     π|cx |t
+                                   
+where x = − dcxx and Mx = acxx dbxx ∈ Γ0 (2). Then finally by Theorem 2.8 we find the quantum
+modular properties for (the finite parts of) the rational limits of L5 , . . . , L8 .
+Proposition 5.5. The functions gj : QΓ0 (2) → C with j ∈ {0, 1, 2, 3} form a vector-valued quantum
+modular form transforming as follows for any M := ac db ∈ Γ0 (2) and x ∈ QΓ0 (2) \ {− dc }:
+                                                        
+
+                                           3
+                        ax + b              X                              
+                   gj            = |cx + d|    ΦM (j, k) gk (x) + Gk,− d (x) .
+                        cx + d                                          c
+                                                             k=0
+Here the multiplier system Φ is as given in Proposition 5.4.
+
+                                                6. The functions L9 –L12
+   In this section we study our
+                             √ final family of functions from [10] with L9 , . . . , L12 that count ideals
+in the ring of integers of Q( 6).
+6.1. Rewriting as theta functions. We begin like the previous two families of functions and
+rewrite L9 , . . . , L12 in terms of theta functions.
+Lemma 6.1. We have
+                                                                       
+             9          1         X                      X
+                                                                                                           6n2 −4n22
+      q − 16 L9 (q) =                            +                       (1 + sgn(n1 + n2 )sgn(n1 − n2 ))q 1        ,
+                                                                        
+                        2
+                          
+                                            T                     7 T
+                              n∈Z2 +(0 38 )          n∈Z2 +( 12   8)
+                                                                       
+        17              1         X                      X
+                                                                                                           6n2 −4n22
+     q − 16 L10 (q) =                            +                       (1 + sgn(n1 + n2 )sgn(n1 − n2 ))q 1        ,
+                                                                        
+                        2
+                          
+                                            T                     5 T
+                              n∈Z2 +(0 18 )          n∈Z2 +( 12   8)
+                                                                       
+         5              1         X                       X
+                                                                                                           6n2 −4n22
+       q 48 L11 (q) =                            +                       (1 + sgn(n1 + n2 )sgn(n1 − n2 ))q 1        ,
+                                                                        
+                        2
+                          
+                                           1 T                    5 T
+                              n∈Z2 +( 16   8)        n∈Z2 +( 23   8)
+                                                                       
+        19              1         X                       X
+                                                                                                           6n2 −4n22
+     q − 48 L12 (q) =                            +                       (1 + sgn(n1 + n2 )sgn(n1 − n2 ))q 1        .
+                                                                        
+                        2
+                          
+                                           3 T                    7 T
+                              n∈Z2 +( 16   8)        n∈Z2 +( 23   8)
+Proof. Again the proof is similar to that of Lemma 4.1 and the identities we require are taken from
+the proof of Theorem 1.3 of [9]
+                                  2       2                2       2
+                   X                          X
+  q −9 L9 q 16 =           q 6(4n) −(8j+3) +      q 6(4n+2) −(8j+1)
+              
+
+                    n≥1                                     n≥0
+                  −n≤j≤n−1                                 −n≤j≤n
+                                                                                   2       2                      2        2
+                                                                   X                              X
+                                                           +                 q 6(4n) −(8j−3) +            q 6(4n+2) −(8j−1) ,
+                                                                 n≥1                              n≥0
+                                                               −n+1≤j≤n                          −n≤j≤n
+
+
+                                                                   21
+                                        2           2                               2                2
+                         X                                        X
+  q −17 L10 q 16 =              q 6(4n) −(8j+1) +                        q 6(4n+2) −(8j+3)
+                
+
+                       n≥1                                       n≥0
+                     −n≤j≤n−1                                   −n≤j≤n
+                                                                                    2                2                           2           2
+                                                                    X                                        X
+                                                            +                  q 6(4n) −(8j−1) +                    q 6(4n+2) −(8j−3) ,
+                                                                   n≥1                                    n≥0
+                                                                 −n+1≤j≤n                                −n≤j≤n
+
+                      X                2               2                  2            2
+                                                                                            
+  q 10 L11 q 96 =             q (24n+4) −6(8j+1) + q (24n+20) −6(8j+1)
+               
+
+                     n≥0
+                    −n≤j≤n
+                                                                  X                        2            2                   2           2
+                                                                                                                                             
+                                                    +                          q (24n+32) −6(8j+3) + q (24n+16) −6(8j+3)                         ,
+                                                              n≥0
+                                                            −n−1≤j≤n
+
+                                            2                2                                   2            2
+                         X                                               X
+  q −38 L12 q 96 =              q (24n+4) −6(8j+3) +                              q (24n+20) −6(8j+3)
+                
+
+                       n≥1                                            n≥0
+                     −n≤j≤n−1                                       −n−1≤j≤n
+                                                                           2            2                               2            2
+                                                X                                                    X
+                                    +                            q (24n+32) −6(8j+1) +                       q (24n+16) −6(8j+1) .           
+                                           n≥−1                                                  n≥0
+                                        −n−1≤j≤n+1                                              −n≤j≤n
+
+  For more compact expressions, we define the quadratic form
+                                                Q(n) := 6n21 − 4n22                                                                      (6.1)
+and the vectors
+                                  1                             1
+                          c1 := √ (−2, 3)T and c2 := √ (2, 3)T                                                                           (6.2)
+                                2 3                           2 3
+in CQ (as defined in Remark 3.1). Then the theta functions in (3.5) are
+                        1 X                                         2    2
+              ϑµ (τ ) =        (1 + sgn(n1 + n2 )sgn(n1 − n2 )) q 6n1 −4n2 for µ 6∈ Z2 .
+                        2  2 n∈Z +µ
+
+With this expression at hand, we can rewrite the results in Lemma 6.1 as follows.
+Lemma 6.2. We have
+        9                         17                                       5                                       19
+  q − 16 L9 (q) = h3 (τ ),     q − 16 L10 (q) = h0 (τ ),                 q 48 L11 (q) = h1 (τ ),               q − 48 L12 (q) = h2 (τ ),
+where                                                                                T                               T
+                                                                                j 1                               1 1
+              hj (τ ) := ϑµj (τ ) + ϑµj +λ (τ )             with µj :=                          and λ :=                     .
+                                                                                6 8                               2 2
+6.2. The corresponding Maass forms. Our next step is to define the mock Maass theta function
+Θµ as in equation (3.4) for the quadratic form Q in (6.1) and vectors c1 , c2 in (6.2). We first find
+the vectors in CQ⊥ that correspond to c and c as c⊥ = √1 (1 − 1)T and c⊥ = √1 (1 1)T to get
+                                         1       2     1      2               2      2
+           2
+(for µ 6∈ Z )
+           √
+              τ2 X                                                                   2    2
+                        (1 + sgn(n1 + n2 )sgn(n1 − n2 )) K0 2π 6n21 − 4n22 τ2 e2πi(6n1 −4n2 )τ1
+                                                                           
+ Θµ (τ ) =
+             2
+                n∈Z2 +µ
+           √
+              τ2 X                                                                          2   2
+                        (1 − sgn(3n1 + 2n2 )sgn(3n1 − 2n2 )) K0 −2π(6n21 − 4n22 )τ2 e2πi(6n1 −4n2 )τ1 .
+                                                                                   
+         +
+             2     2
+                 n∈Z +µ
+                                                                    22
+These mock Maass theta functions have modular completions,
+                                                     [c1 ]    [c ]
+                                         Θ
+                                         b µ = Θµ + ϕµ     − ϕµ 2 ,
+as described in equation (3.3) and Proposition 3.4. Like the other two cases, these functions satisfy
+the following elementary properties:
+         Θµ = Θ−µ = Θ(−µ µ )T = Θ(µ −µ )T ,
+                             1   2         1       2
+                                                    Θbµ = Θb −µ = Θb (−µ µ )T = Θ
+                                                                            1   2
+                                                                                 b (µ −µ )T .
+                                                                                         1   2
+
+Since we would like to study the linear combinations of ϑµ ’s given in Lemma 5.2, we define the
+following for j ∈ {0, 1, 2, 3}:
+                          Hj := Θµ + Θµ +λ and H
+                                     j         j
+                                                           bµ + Θ
+                                                    b j := Θ      b µ +λ .
+                                                                      j     j
+
+The shadow contributions to the H
+                                b j ’s vanish following the arguments of Lemma 4.3.
+Lemma 6.3. For j ∈ {0, 1, 2, 3} we have
+                                                       Hj = H
+                                                            bj .
+  Following the proof of Proposition 4.4, the Hj ’s have the following modular transformations.
+Proposition 6.4. The functions Hj for j ∈ {0, 1, 2, 3} transform like vector-valued modular func-
+tion under Γ0 (2):
+                               X3
+                        aτ + b
+                   Hj           =    ΩM (j, k)Hk (τ )      for all M ∈ Γ0 (2),
+                        cτ + d
+                                         k=0
+where the multiplier system Ω is as follows for T = ( 10 11 ) and R = ( 12 01 ):
+               15                  
+                 ζ16 0      0     0
+               0 ζ5        0     0
+         ΩT =         48           ,
+               0           29
+                       0 ζ48 0 
+                  0    0    0 ζ16 7
+                                15
+                                                  √                  13
+                                                                                      √  11 
+              s       √         ζ√
+                                 16      2 1 + 2 ζ48             2ζ
+                                                                   √  48        1 + 2 ζ16
+                  2− 2                           5                       41          13
+                           1 + 2 ζ48           ζ√48           1 + 2 ζ48             ζ√        
+        ΩR =                                                                          48      .
+                                 13                       41         5
+                                                      
+                    12         ζ√
+                                 48        1 +     2   ζ 48       ζ √ 
+                                                                     48          1 +    2  ζ48
+                                                                                               
+                            1 + 2 ζ16 11       2ζ4813         2 1 + 2 ζ48             15
+                                                                                     ζ16
+6.3. Quantum modularity. Summarizing the results above, we find from Proposition 5.4 that
+Hj for j ∈ {0, 1, 2, 3} form a vector-valued Maass form for Γ0 (2). Our next step is to apply the
+results of Section 2. First, we note that (2.3) and Proposition 2.2 imply that the functions hj
+(which are basically equal to L9 , . . . , L12 thanks to Lemma 6.2) are related to Hj ’s as
+                                                 2 i∞
+                                                   Z
+                                   hj (τ ) = −          [Hj (z), Rτ (z)].
+                                                 π τ
+                                                                                    
+Then Proposition 2.5 gives their modular transformation for any M := ac db ∈ Γ0 (2) and τ ∈ H
+with τ1 6= − dc as
+                                                       3
+                     aτ + b                             X                                 
+                hj            = sgn(cτ1 + d)(cτ + d)        ΩM (j, k) hk (τ ) + Hk,− d (τ ) .
+                     cτ + d                                                          c
+                                                               k=0
+
+Here the obstruction to modularity Hk,− d is a holomorphic function on C \ (− dc + iR) (according
+                                             c
+to Proposition 2.3) defined as in equation (2.3):
+                                               2 i∞
+                                                Z
+                                  Hj,% (τ ) :=      [Hj (z), Rτ (z)].
+                                               π %
+                                                          23
+  Next we follow Proposition 2.6 and define the functions hj : QΓ0 (2) → C with j ∈ {0, 1, 2, 3} by
+                                               hj (x) := lim hj (x + it).                                            (6.3)
+                                                           t→0+
+
+Then Theorem 2.8 implies that these functions (given by rational limits of L9 , . . . , L12 ) form a
+quantum modular form.
+Proposition 6.5. The functions hj : QΓ0 (2) → C with j ∈ {0, 1, 2, 3} form a vector-valued quantum
+modular form transforming as follows for any M := ac db ∈ Γ0 (2) and x ∈ QΓ0 (2) \ {− dc }:
+                                                        
+
+                                                       3
+                               ax + b                    X                                 
+                      hj                    = |cx + d|         ΩM (j, k) hk (x) + Hk,− d (x) .
+                               cx + d                                                      c
+                                                         k=0
+
+Here the multiplier system Φ is as given in Proposition 6.4.
+
+                                     Appendix: Numerical Examples
+   In this appendix, we provide some numeric results on the functions gj and quantum modular
+forms gj associated to the family L5 (q), . . . , L8 (q). This example is distinguished from the other
+two by the presence of a nonzero constant term for the Maass form Gj . Due to this property, for a
+given x ∈ QΓ0 (2) not all components of gj (x + it) converge as t → 0+ . The quantum modular form
+gj is then defined by simply removing the leading growing term from this object. With the results
+below we try to exemplify various aspects of these statements.
+   Firstly, in Table 1 we give the approximate values of gj (τ ), gj ( 2ττ+1 ), and Gj,− 1 (τ ) for various
+                                                                                                       2
+values of τ that get close to 11
+                              12 ∈ QΓ0 (2) . With these numbers one can check that the modular
+transformation property in Proposition 5.4 is satisfied to the order shown.
+
+       τ                   gj (τ )                               gj ( 2ττ+1 )                    Gj,− 1 (τ )
+                                                                                                      2
+                                              !                                    !                                 !
+                2.20152385−1.72453350i                   5.73980919−2.45135588i             0.48547906−0.41384103i
+   11    i      0.60261342−1.52382165i                   4.58641591+1.38204971i            −0.23702464+0.05235489i
+   12 + 102     −1.24906564+0.76567897i                  −2.75333449−0.96881340i            0.07430784+0.09577127i
+                −0.69157228+1.38696416i                  −8.20830829−3.93452617i            0.03174146+0.00641302i
+                                              !                                    !                                 !
+                34.06349943−1.54026658i               6.54926927−10.93296376i               0.48541322−0.41343939i
+   11    i      −0.63001497−4.14866463i               48.34343745+26.91081033i             −0.23705194+0.05106932i
+   12 + 103     −1.65163852−0.02850558i               −7.53508162−4.15860747i               0.07383483+0.09621073i
+                −1.30982870+1.39636988i               −7.73554006−58.91067177i              0.03179379+0.00676626i
+                                              !                                    !                                 !
+                348.48937661−1.53336988i               6.37047977−8.44131747i               0.48540637−0.41339930i
+   11    i      −0.32418957−3.49803282i              493.58357944+284.00154421i            −0.23705391+0.05094084i
+   12 + 104     −1.72369780−0.13566295i               −6.71745517−3.53610552i               0.07378727+0.09625443i
+                −1.40302668+1.41219531i              −7.75436167−573.67311441i              0.03179870+0.00680169i
+                                               !                                       !                             !
+               3492.49719898−1.53275909i               6.36033233−8.27194978i               0.48540568−0.41339529i
+   11    i      −0.30408895−3.45551296i             4947.57332454+2855.51730098i           −0.23705410+0.05092799i
+   12 + 105     −1.73170057−0.14713202i               −6.67017442−3.49755349i               0.07378251+0.09625879i
+                −1.41308637+1.41400914i              −7.75743061−5716.76719430i             0.03179919+0.00680523i
+
+                                                         Table 1
+
+  Now we note that for the point x = 11
+                                     12 we have
+
+                                            γ0,x = 0.10974649141040139 . . .
+with all the other components zero. So g0 (x + it) is the only component of g that diverges as
+t → 0+ . This is already visible in Table 1. In fact, subtracting the growing piece as in Proposition
+2.6 we find the results in Table 2.
+                                                               24
+                             τ                   g0 (τ ) − πτ12 γ0, 11
+                                                                   12
+
+                          11    i
+                          12 + 102   −1.2918154651 . . . − 1.7245334957 . . . i
+                          11    i
+                          12 + 103   −0.8698937600 . . . − 1.5402665800 . . . i
+                          11    i
+                          12 + 104   −0.8445552866 . . . − 1.5333698829 . . . i
+                          11    i
+                          12 + 105   −0.8421200156 . . . − 1.5327590942 . . . i
+                                                Table 2
+   Given the integral representation of gj in (2.3) and the modular transformations of the Maass
+form Gj , one can efficiently compute the values of the quantum modular form gj . In particular, we
+have               
+                   11
+               g0        = −0.8418504490893569688 . . . − 1.532692070451105313 . . . i
+                   12
+One can check the quantum modular transformations using the approximate values in Table 3.
+
+                 11                                   11                                   11
+                                                                                              
+            gj   12                              gj   34                          Gj,− 1   12
+                                                                      2
+                                                                               
+ −0.84185045 − 1.53269207i    6.35925312 − 8.25358660i     0.48540561 − 0.41339484i
+−0.30191635 − 3.45091966i −1.30588754 − 1.76561858i −0.23705412 + 0.05092656i
+                                                                               
+−1.73260053 − 0.14841718i −6.66512984 − 3.49340997i  0.07378198 + 0.09625928i 
+ −1.41421356 + 1.41421356i    −7.79812377 − 2.27823717i    0.03179924 + 0.00680562i
+                                                Table 3
+  Finally, in Figures 3 and 4 we display various values of g0 and its obstruction to modularity.
+
+
+
+
+       Figure 3. On the left we plot Re(g0 (x)) and on the right we plot Im(g0 (x)) for
+       x ∈ QΓ0 (2) with −1 < x < 1 and denominator at most 40.
+
+
+
+
+       Figure 4. On the left we plot P3 the real part and on the right we plot the imaginary
+                      x
+       part of g0 ( 2x+1 ) − |cx + d| k=0 ΦR (0, k)gk (x) for x ∈ QΓ0 (2) with x ∈ (−1, 1) and
+       denominator at most 40.
+
+                                                      25
+                                                 References
+ [1] G. Andrews, F. Dyson, and D. Hickerson, Partitions and indefinite quadratic forms, Invent. Math. 91 (1988),
+     391–407.
+ [2] K. Bringmann and B. Kane, Multiplicative q-hypergeometric series arriving from real quadratic fields, Tram.
+     Amer. Soc. 363 (2011), 2191–2209.
+ [3] K. Bringmann, J. Lovejoy, and L. Rolen, On some special families of q-hypergeometric Maass forms, Int. Math.
+     Res. Not. 18 (2018), 5537–5561.
+ [4] H. Cohen, q-identities for Maass wave forms, Invent. Math. 91 (1988), 409–422.
+ [5] H. Cohen and F. Strömberg, Modular forms: a classical approach, vol. 179 of Graduate Studies in Mathematics,
+     American Mathematical Society, Providence, RI, 2017.                              √
+ [6] D. Corson, D. Favero, K. Liesinger, and S. Zabainy, Characters and q-series in Q( 2), J. Number Theory 107
+     (2004), 392–405.
+ [7] J. Lewis and D. Zagier, Period functions for Maass wave forms. I, Annals of Mathematics 153 (2001), 191–258.
+ [8] Y. Li, H. Ngo, and R. Rhoades, Renormalization and Quantum Modular Forms, Part I: Maass Wave Forms,
+     arXiv:1311.3043.
+ [9] J. Lovejoy, Overpartitions and real quadratic fields, J. Number Theory 106 (2004), 178–184.
+[10] J. Lovejoy and R. Osburn, Real quadratic double sums, Indagationes Mathematicae 26 (2015), 697–712.
+[11] S. Ramanujan, The lost notebook and other unpublished papers, Narosa Publishing House (1988).
+[12] D. Zagier, Quantum modular forms, In: Quanta of Math: Conference in honor of Alain Connes, Clay Mathematics
+     Proceedings 11, AMS and Clay Mathematics Institute (2010), 656–675.
+[13] S. Zwegers, Mock theta functions, Ph.D. thesis, Universiteit Utrecht, 2002.
+[14] S. Zwegers, Mock Maass theta functions, The Quarterly Journal of Math. 63 (2012), 753–770.
+
+  University of Cologne, Department of Mathematics and Computer Science, Weyertal 86-90, 50931
+Cologne, Germany
+  Email address: kbringma@math.uni-koeln.de
+  Email address: cnazarog@math.uni-koeln.de
+
+
+
+
+                                                       26
+

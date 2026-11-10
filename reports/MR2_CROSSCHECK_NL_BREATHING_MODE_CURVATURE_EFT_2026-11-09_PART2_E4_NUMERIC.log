@@ -1,0 +1,31 @@
+control (D) product X=1,a=0,F0=2/3,G0=1/6 at (1,1,0.7,0.4): R = 5.999999999999990752 (V2 log: 6)
+
+== (a2) NL E4 on V2 MN2 metric: 7D block x e^{2 gamma beta(r)}, S4 block (all c-terms incl. twist a1=1) x e^{2 beta(r)} ==
+MN2 params X1=0.659753955386 X2=1.31950791077 F0=0.574349177499 G0=0.287174588749 a1=1 a2=0
+  (al,be)=(0.7,0.4) gamma=-1 beta'=0.5 beta''=0.1: R_r,al/(1.5 beta' d_al lnD) = 1.0 ; R_r,be/(1.5 beta' d_be lnD) = 1.0
+  (al,be)=(0.7,0.4) gamma=-1 beta'=-0.3 beta''=0.7: R_r,al/(1.5 beta' d_al lnD) = 1.0 ; R_r,be/(1.5 beta' d_be lnD) = 1.0
+  (al,be)=(0.7,0.4) gamma=-0.5 beta'=0.5 beta''=0.1: R_r,al/(1.5 beta' d_al lnD) = 1.0 ; R_r,be/(1.5 beta' d_be lnD) = 1.0
+  (al,be)=(0.7,0.4) gamma=-0.5 beta'=-0.3 beta''=0.7: R_r,al/(1.5 beta' d_al lnD) = 1.0 ; R_r,be/(1.5 beta' d_be lnD) = 1.0
+  (al,be)=(0.7,0.4) gamma=0 beta'=0.5 beta''=0.1: R_r,al/(1.5 beta' d_al lnD) = 1.0 ; R_r,be/(1.5 beta' d_be lnD) = 1.0
+  (al,be)=(0.7,0.4) gamma=0 beta'=-0.3 beta''=0.7: R_r,al/(1.5 beta' d_al lnD) = 1.0 ; R_r,be/(1.5 beta' d_be lnD) = 1.0
+  (al,be)=(0.7,0.4) gamma=0.5 beta'=0.5 beta''=0.1: R_r,al/(1.5 beta' d_al lnD) = 1.0 ; R_r,be/(1.5 beta' d_be lnD) = 1.0
+  (al,be)=(0.7,0.4) gamma=0.5 beta'=-0.3 beta''=0.7: R_r,al/(1.5 beta' d_al lnD) = 1.0 ; R_r,be/(1.5 beta' d_be lnD) = 1.0
+  control beta'=0 (beta''=0.7) at (0.7,0.4): R_r,al = -1.21e-16, R_r,be = 3.79e-17
+  (al,be)=(2.01,1.1) gamma=-1 beta'=0.5 beta''=0.1: R_r,al/(1.5 beta' d_al lnD) = 0.999999999999999 ; R_r,be/(1.5 beta' d_be lnD) = 1.0
+  (al,be)=(2.01,1.1) gamma=-1 beta'=-0.3 beta''=0.7: R_r,al/(1.5 beta' d_al lnD) = 1.0 ; R_r,be/(1.5 beta' d_be lnD) = 1.0
+  (al,be)=(2.01,1.1) gamma=-0.5 beta'=0.5 beta''=0.1: R_r,al/(1.5 beta' d_al lnD) = 0.999999999999999 ; R_r,be/(1.5 beta' d_be lnD) = 1.0
+  (al,be)=(2.01,1.1) gamma=-0.5 beta'=-0.3 beta''=0.7: R_r,al/(1.5 beta' d_al lnD) = 1.0 ; R_r,be/(1.5 beta' d_be lnD) = 1.0
+  (al,be)=(2.01,1.1) gamma=0 beta'=0.5 beta''=0.1: R_r,al/(1.5 beta' d_al lnD) = 0.999999999999999 ; R_r,be/(1.5 beta' d_be lnD) = 1.0
+  (al,be)=(2.01,1.1) gamma=0 beta'=-0.3 beta''=0.7: R_r,al/(1.5 beta' d_al lnD) = 1.0 ; R_r,be/(1.5 beta' d_be lnD) = 1.0
+  (al,be)=(2.01,1.1) gamma=0.5 beta'=0.5 beta''=0.1: R_r,al/(1.5 beta' d_al lnD) = 0.999999999999999 ; R_r,be/(1.5 beta' d_be lnD) = 1.0
+  (al,be)=(2.01,1.1) gamma=0.5 beta'=-0.3 beta''=0.7: R_r,al/(1.5 beta' d_al lnD) = 0.999999999999999 ; R_r,be/(1.5 beta' d_be lnD) = 1.0
+  control beta'=0 (beta''=0.7) at (2.01,1.1): R_r,al = 1.89e-17, R_r,be = 9.08e-17
+  max |ratio - 1| over all cases = 1.19e-15
+
+== (d) EFT numbers at N=4880 (l_p = 1) ==
+  l = 49.68438219; L5 = l sqrt(F0) = 37.65372059; l_p^2 R_max = 12/l^2 = 0.00486118; l_p^2 sqrt(Riem^2)_sup = sqrt(3408)/l^2 = 0.0236488
+  (l_p^2 sqrt Riem^2)^3 (R^4-vs-R relative size) = 1.323e-5
+  wall: k in [0.025358, 0.028464]/l_p => l_p k <= 0.0285 ; (l_p k)^2 = 0.0008102
+
+DONE 1s
+EXIT 0

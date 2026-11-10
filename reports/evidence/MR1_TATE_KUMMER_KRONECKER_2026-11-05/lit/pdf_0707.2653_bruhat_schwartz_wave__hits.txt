@@ -1,0 +1,7 @@
+12:is shown that a “plane wave” f (t + ω1 x1 + · · · + ωn xn ), where f is a Bruhat-Schwartz
+55:where f belongs to the Bruhat-Schwartz space D(Qp ) of test functions, ω1 , . . . , ωn ∈ Qp ,
+120:U = O \ P . O is a subring of K called the ring of integers, P is an ideal in O called the
+121:prime ideal; the multiplicative group U is called the group of units. The ideal P contains an
+209:The strong conjugate space D′ (K) is called the space of Bruhat-Schwartz distributions.
+1427:[5] I. M. Gelfand, M. I. Graev, and I. I. Piatetski-Shapiro, Representation Theory and Automorphic Functions, Saunders, Philadelphia, 1969.
+1452:local zeta functions, Bull. Austral. Math. Soc. 70 (2004), 73–86.

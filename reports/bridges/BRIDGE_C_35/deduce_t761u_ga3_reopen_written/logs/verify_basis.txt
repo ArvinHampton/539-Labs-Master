@@ -1,0 +1,31 @@
+Sun Oct 25 13:00:21 CDT 2026
+aac04151accb03b0464ffaf2fff09b733af99b820a97479f262a6d82f60b13d1  /workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_2026-10-25_t761u_accept_CONFIRM.md
+b467bb54b7d759416cf9898ba806926758f01efb7fe8c0624edf13458d35a5f0  /workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_2026-10-25_t761u_outer_accept_CONFIRM.md
+c26b5f72c4603acd05623df5d745bfa538c4a14131b222bf92c00537f34f458e  /workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_2026-10-25_t761u_path_psi_accept_CONFIRM.md
+c85448e82b0ead7d59ad5037bf7c0368c5e4986e219f99f1d8be729f4a7164f2  /workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_2026-10-25_t761u_eps_abel_written_CONFIRM.md
+82d6976d98502d4939bffc2c012ddd5d503e54099106b1319f336f45c7dc8015  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t761u_eps_abel_accept/PREREG.md
+72b9cfb490c4c750c666fab3957e1446781ae0c26934cdfbf2a0e91b6669484c  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t761u_eps_abel_accept/RESULTS.md
+106e11ec4bc4e6f084d8384da1d21594b0e2a1ee53a13bedfa280f431bd9643e  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t761u_eps_abel_accept/SHA256SUMS
+b96ff7bdd579d6b431f44ba1421f22cfa025770cbb70aa721da9607cb0a5fde1  /workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_2026-10-25_t748u_accept_CONFIRM.md
+5f5f283203834eeafe78a9d44a1a7a70baac51e3ac84c945bc286df25afc39f7  /workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_2026-10-25_t756u_accept_CONFIRM.md
+2bb870b47a3c11d5a6466aa6acd335cd9b37e94c5775c6b763bb9e7c4cc11d76  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t726u_x4/author_candidates/AUTHOR_CANDIDATE_X4_rev_t726u_2026-10-25.md
+4da09dec14b6881583bfd685e1c44eb3563bd649f25d05e6f8e91cd618e49d39  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t713u_ga3_fill/author_candidates/AUTHOR_CANDIDATE_GA3_h_table_FILLED_N106_2026-10-25.md
+49bd0b24fa2bd488a25d93293b47ec02d114b8c1d77d3bf7973234a8119e425b  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t713u_ga3_fill/PREREG.md
+c47552063ec7ae6fd3f875e0fecd51683505b64a1414ec6233aeb6fcd7df4398  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t713u_ga3_fill/RESULTS.md
+a520614b9f5ce23bae861db47c6221bb6cce84eeb04bc9aa87d99f82df45d1c6  /workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_2026-10-25_t713u_ga3_fill_confirm.md
+a05693fbfd6da3030f762241845f040a133e611b6474b7401c030020c01d1523  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t718u_ga3_revise_menu/author_candidates/AUTHOR_CANDIDATE_GA3_revise_menu_2026-10-25.md
+2e1dec49fc0b31a92b01cb82ed859ab3f1e50053672cb188098f45d810a67dee  /workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_2026-10-25_t718u_ga3_revise_menu_confirm.md
+9e0c3705655d66307135534d51134ab1cd71cd240cf13cf6f2644a5f4ae01f47  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t721u_ga3_rpkg1/PREREG.md
+7d324d735f857e003e57cc96876d6f2848eb5d7d524ea91d21ae362c51e36f1e  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t721u_ga3_rpkg1/RESULTS.md
+1749576a99c3baee281195374b939e689b5d42063a308b84b8c482a208ed3db5  /workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_2026-10-25_t721u_ga3_rpkg1_confirm.md
+9aa52f19788a2992c3ace1f334516053af50bc79492e6c6225902d6432231c7a  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t722u_ga3_opt_c_diag/RESULTS.md
+4ad006b79a08224ee510c3e7b2773d922ec1ceae7e1c8a0088769b5d102da088  /workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_2026-10-25_t722u_ga3_opt_c_diag_confirm.md
+8d247feb4f1b644dfbaf1d28237eaddfe9ba45c82d40464a2290d4721b0f8051  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t708u_ga3/author_candidates/AUTHOR_CANDIDATE_GA3_h_table_schema_v2_2026-10-25.md
+544de792bc9d2f76982f24bf2dd1b7600214aa154747ade110e745c2f7d9af48  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t761u_absent_inventory/MASTER_ABSENT_INVENTORY_t761u_2026-10-25.md
+93ce87c486ddc5085167f3a89b17776fc8a9f7e239cf5887410c03e258b72d71  /workspace/quantum-comp/reports/bridges/AUDITOR/AUDIT_STATUS.md
+-- quoted lines
+AUDIT_STATUS L408: - 2026-10-25 10:52 CDT (America/Chicago) REJECT t717u: Arvin REJECT filled G-A3. FINDINGS a520614b… MATCH on fill LOCK; values REJECTED — not Cat A. Soft SF if 4da09dec… treated as ACCEPTED. Watch revised path/branch/ψ/Ξ/N_trunc → Local re-run under t712s4471. CONFIRM when new LOCK lands.
+AUDIT_STATUS L422: - 2026-10-25 11:23 CDT (America/Chicago) PAUSE G-A3 t725u: Finish CONFIRM t722u (c) diag (9aa52f19…) if in flight; soft SF if Cat A / Bridge-closing / R-C1 unblock. No new G-A3 fill watch. Next residual-C gap prefer X4.
+MASTER L12: | 5 | G-A3 reopen path (non-rejected) after Ξ Written | PAUSED (t725u); REJECTED fill NOT revivable | REJECTED 4da09dec14b6881583bfd685e1c44eb3563bd649f25d05e6f8e91cd618e49d39; PAUSE AUDIT_STATUS 1f1
+NOTE: MASTER cites AUDIT_STATUS 1f10bb4e… (snapshot at inventory time); live AUDIT_STATUS has since grown (append-only); L422 pause line verified live above.
+E-α Auditor CONFIRM: 1 files present (not landed at build time)

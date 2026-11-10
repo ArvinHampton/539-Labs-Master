@@ -1,0 +1,91 @@
+%=====================================================================
+\section{The Eisenstein/cusp split}\label{sec:split}
+%=====================================================================
+
+\subsection{$u_L$ is Eisenstein}\label{sec:uLeis}
+Modulo $\ff\infty_1\infty_2$ ($\ff=\fp_2\fp_5$; $\mathrm{Cl}^+_\ff=\Z/8\times\Z/2$) each sign region of $u_L$ is one ray class:
+$S^+\mapsto(5,0)$, $S^-\mapsto(1,0)$, $T^+\mapsto(1,1)$, $T^-\mapsto(5,1)$, with lattice counts equal to ideal counts for every $n\le60\,000$. With $d=(4,0)$ the class of a totally negative element $\equiv1\bmod\ff$, $S^-=S^++d$ and $T^-=T^++d$, so each character
+coefficient carries $(1+\bar\chi(d))$ and the characters $\chi_{j,l}$ with $j$ odd (exactly the non-$\sigma$-invariant ones) drop out:
+\[
+u_L(w)=\tfrac14\sum_{j\in\{0,2,4,6\}}\e(-j/8)\bigl[U^{\cos}_{\chi_{j,0}}(w)+i\,U^{\sin}_{\chi_{j,1}}(w)\bigr],\]
+\[
+U^{\cos/\sin}_\chi=\sqrt y\!\!\sum_{(\fa,10)=1}\!\!\chi(\fa)K_0\Bigl(\frac{2\pi\Nm\fa\,y}{20}\Bigr)\{2\cos,2\sin\}\Bigl(\frac{2\pi\Nm\fa\,x}{20}\Bigr).
+\]
+Each of the $8$ characters is a genus character $\psi\circ\Nm$, $\psi$ of conductor dividing $20$, normalised by $\psi(7)=\chi(\fp_7)$
+(Table~\ref{tab:genus}), with coefficients $\lambda_\chi(n)=1_{(n,10)=1}\sum_{d\mid n}\psi(d)(\psi\chi_{140})(n/d)$.
+\begin{table}[ht]\centering\small
+\begin{tabular}{llll}\toprule
+$\chi$ & $\psi$ & $\psi\chi_{140}$ & type\\\midrule
+$\chi_{0,0}$ & $1$ & $\chi_{140}$ & $(0,0)$\\
+$\chi_{0,1}$ & $\chi_{-4}$ & $\chi_{-35}$ & $(1,1)$\\
+$\chi_{4,0}$ & $\chi_5^2=(\tfrac5\cdot)$ & $\chi_{28}$ & $(0,0)$\\
+$\chi_{4,1}$ & $\chi_{-20}$ & $\chi_{-7}$ & $(1,1)$\\
+$\chi_{2,0}$ & $\chi_5^3\chi_{-4}$ & $\chi_5\chi_{-7}$ & $(0,0)$\\
+$\chi_{2,1}$ & $\chi_5^3$ & $\chi_5\chi_{-4}\chi_{-7}$ & $(1,1)$\\
+$\chi_{6,0}$ & $\chi_5\chi_{-4}$ & $\chi_5^3\chi_{-7}$ & $(0,0)$\\
+$\chi_{6,1}$ & $\chi_5$ & $\chi_5^3\chi_{-4}\chi_{-7}$ & $(1,1)$\\\bottomrule
+\end{tabular}
+\caption{The genus characters $\chi_{j,l}(c)=\e(jc_1/8+lc_2/2)$; $\chi_5$ is the quartic character mod $5$ with $\chi_5(2)=i$.}\label{tab:genus}
+\end{table}
+\catA{Hand proof, independent of PARI: $\mathrm{Cl}(K)=\Z/2$; $|\mathrm{Cl}^+_\ff|=16$; $S^-=S^++d$ by $\beta(-\nu)=-\beta(\nu)$, $d\neq0$
+since $-\varepsilon^k\equiv-1\bmod\fp_5$; the $8$ characters $\psi\circ\Nm$ ($\psi\bmod20$) are distinct, satisfy $\psi\circ\Nm(d)=1$, and hence are
+exactly the characters with $\chi(d)=1$. Exact coefficient match $A(n)=\#(S^+\cup S^-)$, $B(n)=\#(T^+\cup T^-)$ for every $n\le60\,000$ (error
+$10^{-15}$). Calling the pieces Maass--Eisenstein series $E_{\psi,\psi\chi_{140}}(\cdot,\tfrac12)$ is standard (Category B).}
+\subsection{\texorpdfstring{The Eisenstein/cusp split ($36+6$) and the dihedral forms}{The Eisenstein/cusp split (36+6) and the dihedral forms}}\label{sec:dihedral}
+Every one of the $140$ components is exactly a ray class theta series modulo $\fm=\fp_2^3\fp_5\fp_7\infty_1\infty_2$ (fit over $n$ coprime to $70$
+up to $54\,880$; max residual $4.4\cdot10^{-14}$ over $280$ fits). Expanding in characters: mixed-type content $\le10^{-29}$; $116$ components have
+cusp content $\le3\cdot10^{-30}$ (pure Eisenstein); $24$ components have Eisenstein content $\le8\cdot10^{-31}$ (pure cusp).
+\emph{Function-space dimensions.} Since distinct frequencies give independent mode functions, $\dim\mathrm{span}\{u_{\alpha,\beta}\}$ is the rank of the
+label$\times$frequency coefficient matrix. This rank is $42$; the Eisenstein components span $36$ and the cusp components $6$ dimensions, and both
+subspaces are $S$- and $T$-invariant. These statements are exact (Proposition~\ref{prop:matched}); the floating-point rank computations agree
+(invariance residuals $\le8\cdot10^{-16}$; with independent code at $|Q|\le12$ and $|Q|\le25$, gap $6.4$ versus $6\cdot10^{-15}$).
+The $24$ cusp components are the $\beta=-a$ labels with $70\alpha_1\in\{7,21,49,63\}$ and $7\mid$ denominator of $\alpha_2$, excluding the four labels
+$70\alpha=(49,56),(63,42),(7,28),(21,14)$, which give identically zero functions. In all, $11$ labels (all with $\beta=-a$) give identically vanishing $u_{\alpha,\beta}$.
+This vanishing is exact: for the first five ($\alpha\in\{(\tfrac7{10},\tfrac45),(\tfrac9{10},\tfrac35),(\tfrac1{10},\tfrac25),(\tfrac3{10},\tfrac15),(\tfrac12,0)\}$) the
+automorph $\gamma$, for the remaining six ($\alpha=(\tfrac12,\tfrac j7)$, $1\le j\le6$; also $j=0$) the automorph $-\gamma$, maps $\alpha+\Z^2$ onto itself, commutes
+with $\gamma^2$, leaves the kernel of the lift unchanged (it depends on $\nu$ evenly and $\gamma$-covariantly, and the closed geodesic is $\gamma$-stable), and
+multiplies the phase $\e(B(\nu,\beta))$ by $-1$ (because, with $g=\pm\gamma$ the relevant automorph, $g^{-1}\beta-\beta=\mu\in L'$ with $B(\alpha,\mu)\equiv\tfrac12$); so the sum over $\nu$ modulo
+$\gamma^2$ equals its own negative. Checked exactly (rational arithmetic) over all $140$ labels: these are exactly $11$ labels. (Category A.)
+
+Modulo $\fp_2\fp_5\infty_1\infty_2$ the non-$\sigma$-invariant characters all have \emph{mixed} type (weight-$1$ holomorphic, cancelling in $u$); pure-type
+(Maass) cusp characters first appear at modulus $(2\sqrt{35})\infty_1\infty_2=\fp_2^2\fp_5\fp_7\infty_1\infty_2$. There, of $96$
+characters, $24$ are non-$\sigma$-invariant of pure type, all of conductor $(2\sqrt{35})$ ($12$ of type $(0,0)$, $12$ of type $(1,1)$), $48$ are mixed and
+$24$ are genus. With $\chi=\chi_{j,l,1}$, $j$ odd mod $24$, $\sigma: j\mapsto13j$, one obtains one form per $\sigma$-orbit and each $l$:
+\[
+u_\chi(z)=\sqrt y\sum_{n\ge1}\lambda_\chi(n)K_0(2\pi ny)\cdot\{2\cos(2\pi nx)\ (l=0);\ 2i\sin(2\pi nx)\ (l=1)\},\qquad
+\lambda_\chi(n)=\sum_{\Nm\fa=n}\chi(\fa),
+\]
+$6$ even and $6$ odd, of level $140\cdot\Nm(\ff_\chi)=19600$, nebentypus $\chi_{140}\omega_0$ with $\omega_0(n)=\chi((n))$ even mod $35$ (consistent on
+$27$ primes). Each cusp component is $u_c(w)=\sum_\chi2\widehat F_c(\chi)u_\chi(w/140)$ with $\widehat F_c(\chi)=\tfrac1{48}\e(k_{c,\chi}/60)$; e.g.\ for
+$c=73$, $k=7,57,47,37,27,17$ for $j=1,3,5,7,9,11$ ($l=0$), shifted by $30$ for $l=1$.
+\catB{The component fits and the Eisenstein/cusp classification of components are floating-point
+(PARI ray-class data for $\fm$; base field certified with \texttt{bnfcertify}$=1$); phases recognised to $6\cdot10^{-9}$ from $10^{-14}$-accurate fits.}
+\catA{The structure of $\mathrm{Cl}^+_{(2\sqrt{35})\infty_1\infty_2}$ is hand-certified (\S\ref{sec:L0}); the structure at the fitting modulus
+$\fp_2^3\fp_5\fp_7\infty_1\infty_2$ is PARI-only. The dimensions $36$ and $6$, the $S,T$-invariance of the split, and the fact that the $24$ cusp components are exactly the
+nonzero labels of odd theta characteristic are exact (Proposition~\ref{prop:matched}).}
+\catB{Maass's construction \cite{Maass} of dihedral $\lambda=\tfrac14$ forms from pure-type Hecke characters; cuspidality $\Leftrightarrow\chi\neq\chi\circ\sigma$;
+the level formula $d_K\Nm(\ff_\chi)$; newform status; Hecke's theory \cite{Hecke} cited generically.}
+
+\subsection{Function span, $S$ and $T$ spectra}\label{sec:spec}
+Let $V=\mathrm{span}\{u_{\alpha,\beta}(w)\}\subset\C^{140}$ be the span of the values of the vector $u$ (equivalently the column span of the coefficient
+matrix). Since $u(-1/w)=Su(w)$ and $u(w+1)=Tu(w)$, $V$ is $S,T$-invariant, and $V\subset\mathrm{Fix}(P)$.
+\begin{proposition}\label{prop:spec}
+(i) $\dim V=42=36+6$, $V=V_{\rm Eis}\oplus V_{\rm cusp}$, both summands $S,T$-invariant. (ii) On $\mathrm{Fix}(P)$ ($\dim72$), $S$ has eigenvalues
+$\pm1$ with multiplicities $36/36$ ($\mathrm{tr}\,S|_{\mathrm{Fix}(P)}=0$); on $V$ they are $21/21$, namely $18/18$ on $V_{\rm Eis}$ and $3/3$ on
+$V_{\rm cusp}$. (iii) $T$ has order $140$. On $\mathrm{Fix}(P)$ its eigenvalues are $\e(r)$ with $36$ distinct $r\in\tfrac1{140}\Z/\Z$, of multiplicities
+$1$ ($12$ values), $2$ ($18$ values) and $4$ ($6$ values: $r=\tfrac{19}{140},\tfrac{31}{140},\tfrac{59}{140},\tfrac{111}{140},\tfrac{131}{140},\tfrac{139}{140}$).
+On $V_{\rm Eis}$ each of the $36$ values occurs once; on $V_{\rm cusp}$ the eigenvalues are the $6$ values of multiplicity $4$. Hence
+$\mathrm{Fix}(P)=V\oplus V^\perp$ with a $30$-dimensional $T$-stable complement $V^\perp$ (multiplicities $0,1,2$), which the lift functions do not realise.
+(iv) The $24$ cusp characters form $12$ $\sigma$-orbits of size $2$ and give $12$ distinct dihedral forms, all with nonzero content; the
+$24\times48$ content matrix has rank $6$, so the $12$ forms occur only in $6$ fixed linear combinations.
+\end{proposition}
+\catA{(i) by Proposition~\ref{prop:matched}; (ii) by the exact Gauss-sum traces of the local factors (Theorem~\ref{thm:tensor7}), which give $n_\pm=d/2$
+on each of the four sectors; (iii) order $140$ exact (monomial $T$, rational phases), multiplicities from the exact phases and the sector decomposition.
+Floating-point computations agree (singular-value gap $17.1\to1.8\cdot10^{-13}$, invariance residuals $\le8\cdot10^{-16}$).}
+\catB{(iv): the rank $6$ of the content matrix is floating-point. Its value is explained exactly by $V_{\rm cusp}=B_1\otimes X^-$ ($\dim=6$). The complement
+$V^\perp=B_1\otimes X^+\oplus A_3\otimes X^-$ is killed by the lift exactly (Proposition~\ref{prop:matched}); the positive-frequency partners
+$f_{\alpha,\beta}$ span the same $V$. Weight-$1$ vectors lie in $\mathrm{Fix}(-P)$ (Remark~\ref{rem:struct}(e)), so they cannot realise $V^\perp$ either.}
+
+\paragraph{Consequence for $\psi$.} Both representations of the scalar $\psi$ involve only $u_L$ and $u_R$, which are Eisenstein; hence
+$\psi_{\rm cusp}\equiv0$, $\psi=\psi_{\rm Eis}$ (Category A given the above). The $24$ cusp rows of $\Phi$ are nonzero (e.g.\
+$\Phi_{73}(1)=0.120446470003+0.176437422094\,i$); their identification as Lewis--Zagier period functions of the cusp vector is Category B.

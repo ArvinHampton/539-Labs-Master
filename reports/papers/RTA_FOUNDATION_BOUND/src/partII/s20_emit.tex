@@ -1,0 +1,68 @@
+%=====================================================================
+\section{Obstructions to coefficient-emitting maps for $g_s$}\label{sec:emit}
+%=====================================================================
+One may ask whether the coefficients of $g_s$ (\S\ref{app:gs}), or the cone data, can be produced (``emitted'') by a natural construction from $E_8$ data or
+from the integer pattern PW$(7,11;3^5)$: $B'=7^2\cdot11=539$, window $18$, fibres $68=3\cdot11+5\cdot7$ and $67$, towers $243=3^5$, body $521$, auxiliary $8$
+(the rank of $E_8$). We prove obstructions for several natural classes of such maps (Propositions~\ref{prop:N1}--\ref{prop:N4}) and record what is not excluded
+(Remark~\ref{rem:N1scope}). Data of this kind can select the parameter $s$; once $s$ is fixed, $g_s$ is defined independently of $E_8$ and of PW, so
+selecting $s$ does not emit coefficients.
+
+\begin{proposition}[The $t^1$ obstruction for modular-type sums]\label{prop:N1}
+Let $s>0$ with $s\neq3$.
+\begin{enumerate}[label=(\roman*)]
+\item $g_s(e^{-t})=2+2(s-3)\,t+(5s^2-44s+75)\,t^2+O(t^3)$ as $t\to0^+$ (Theorem~\ref{thm:Gs}). For $s=1,7,8,11$: $(c_1,c_2)=(-4,36),(8,12),(10,43),(16,196)$.
+\item Let $F$ be any finite sum of holomorphic modular or quasimodular forms of nonnegative real weights (any level, any multiplier) that are holomorphic at the cusp $0$. Then $F(e^{-t})=\sum_aC_at^{-a}$ with all $a\ge0$, up to an exponentially small error. Hence $g_s$ is not such a sum.
+\item Nor is any single shift $q^rg_s$ ($r\in\R$) such a sum; equivalently, $g_s\neq q^{-r}F$. Cancelling the $t$-term forces $r=s-3$, and the $t^2$ coefficient of $q^{s-3}g_s$ is then $2(2s^2-19s+33)$, which is nonzero for $s=7,8,11$ (values $-4$, $18$, $132$) and for $s=1$ (value $32$).
+\end{enumerate}
+The class in (ii) contains $\theta_{E_8}=E_4$, every $\theta_{E_8}(q^m)$, the Eisenstein series built from $\sigma_3$ and their derivatives, and every lattice theta series, of $E_8$ or of any other positive-definite lattice.
+\end{proposition}
+\begin{proof}
+(i) is Theorem~\ref{thm:Gs} ($c_0,c_1,c_2$ were also re-derived exactly). (ii) For a form of weight $k$, $F(e^{-t})$ is $(2\pi/t)^k$ times the expansion of $F|_kS$ at $i\infty$, i.e.\ $C\,t^{-k}$ plus exponentially small terms. A quasimodular form of depth $p\le k/2$ contributes $t^{-k+j}$ with $0\le j\le p$, so all exponents are $\le0$. Finitely many such terms give only $t^{-a}$ with $a\ge0$, whereas $g_s$ has the coefficient $c_1=2(s-3)\neq0$ of $t^{1}$. (iii) With $q=e^{-t}$, $q^rg_s=e^{-rt}g_s(e^{-t})$ has $t$-coefficient $2(s-3)-2r$ and, at $r=s-3$, $t^2$-coefficient $c_2-rc_1+r^2=2(2s^2-19s+33)$.
+\end{proof}
+\catA{Proved, given Theorem~\ref{thm:Gs}. Category~B support: $(g_s-c_0-c_1t-c_2t^2)/t^3$ at $t=10^{-3},\dots,1.25\cdot10^{-4}$ is $-1355,-1338,-1329,-1325$ for $s=7$. This is consistent with the value $c_3(7)=-3962/3\approx-1320.7$ of Theorem~\ref{thm:Gs}, and similarly for $s=1,8,11$ ($c_3=-546.7,-1566.3,-303.3$). \emph{Sanity:} the same test excludes $f_0=g_1$, consistent with $f_0$ being mock.}
+\begin{proposition}[$E_8$ is invisible to the vector and cone data]\label{prop:N2}
+$E_8$ is even unimodular, so $A_{E_8}=0$ and $\rho_{L\oplus E_8}=\rho_L$ for every even lattice $L$. Consequently the Weil representation of Theorem~\ref{thm:weil8}, the cone/vector transformation law, the eight sectors of Proposition~\ref{prop:sectors9}, the Hom dimension $8$ (Proposition~\ref{prop:hom8}) and the $q$-exponents modulo $1$ of the $140$-vector are unchanged by adjoining $E_8$. No construction that factors through discriminant-form data can carry $E_8$ information into them.
+\end{proposition}
+\catA{Standard (discriminant forms of orthogonal sums are orthogonal sums). \emph{Arithmetic aside, not a result:} the primes involved are $\{2,5,7\}$ at $s=7$, $\{2,3\}$ at $s=8$ and $\{2,3,11\}$ at $s=11$. Only $7$ and $11$ are also $E_8$ exponents.}
+\begin{proposition}[Exact linear-span test to $q^{1499}$]\label{prop:N3}
+Let $\mathcal F$ be the following $1036$ distinct integer sequences, truncated to $q^0,\dots,q^{1499}$:
+\begin{itemize}
+\item[F1] $q^r\theta_{E_8}(q^m)$ for $1\le m\le12$ and $0\le r\le20$ ($252$ series);
+\item[F2] $W(E_8)$ dominant-weight counts per norm, rescaled by $1\le m\le6$ and shifted by $0\le r\le20$ ($126$ series);
+\item[F3] the $W(E_8)$ Molien series $\prod_{d\in\{2,8,12,14,18,20,24,30\}}(1-q^d)^{-1}$, with the same rescalings and shifts ($126$ series);
+\item[F4] partition counts into parts from each nonempty subset of $\{7,8,11,18,67,68,243,521,539\}$ ($511$ series);
+\item[$\delta$] $\delta_{n,r}$ for $0\le r\le20$ ($21$ series). No two of the $1036$ series coincide.
+\end{itemize}
+None of $g_7$, $g_8$, $g_{11}$, $g_1$, $g_7-g_8$, $g_{11}-g_7$ lies in the $\Q$-span of $\mathcal F$. Moreover $g_1,g_7,g_8,g_{11}$ are $\Q$-linearly independent.
+\end{proposition}
+\begin{proof}
+For $p=2^{61}-1$, the mod-$p$ rank of $\mathcal F$ is $880$. The exact $\Q$-rank of F4$\,\cup\,\delta$ is $376$ ($532$ columns; exact integer rank). F1--F3 have $504$ columns, so $\mathrm{rank}_\Q\mathcal F\le504+376=880$. For an integer matrix $\mathrm{rank}_p\le\mathrm{rank}_\Q$, so $\mathrm{rank}_\Q\mathcal F=880$. Adjoining any one target raises the mod-$p$ rank to $881$, so its $\Q$-rank is at least $881>880$, and the target is not in the $\Q$-span of the truncated sequences, a fortiori not of the full ones. The independence statement is an exact rank-$4$ computation.
+\end{proof}
+\catA{Exact. Sanity checks of F2: $d(1..4)=1,1,1,2$ and $r_{E_8}(4)=17520=17280+240$.}
+\begin{proposition}[No low-degree rational generating function]\label{prop:N4}
+For $s\in\{7,8,11\}$ and $(R,n_0)\in\{(1000,0),(1000,999),(600,1200)\}$, the $(R+1)\times(R+1)$ Hankel matrix $(a_{n_0+i+j})_{0\le i,j\le R}$ of the coefficients of $g_s$ is nonsingular modulo $p=2^{61}-1$, hence over $\Q$. Consequently $g_s\neq P/Q$ with $P,Q\in\Q[q]$, $\deg Q\le1000$ and $\deg P\le999$. The same holds with $\deg Q\le600$ and $\deg P\le1200$.
+\end{proposition}
+\begin{proof}
+Suppose $g_s=P/Q$ with $0\neq Q=\sum_{k\le D}b_kq^k$. Then $\sum_kb_ka_{n-k}=[q^n]P=0$ for all $n>\deg P$. Let $R\ge D$ and put $b_k=0$ for $D<k\le R$ and $c_j=b_{R-j}$ ($0\le j\le R$). Row $i$ of the Hankel matrix applied to $c$ gives $\sum_kb_ka_{n_0+i+R-k}$, which vanishes when $n_0+R>\deg P$; all indices are $\ge n_0\ge0$. So the matrix is singular whenever $D\le R$ and $\deg P\le n_0+R-1$. Nonsingularity at $(R,n_0)=(1000,0)$ therefore excludes $\deg Q\le1000$, $\deg P\le999$, and at $(600,1200)$ it excludes $\deg Q\le600$, $\deg P\le1799$, which contains the stated range.
+\end{proof}
+\catA{Exact modular arithmetic. This excludes, for example, any finite partition-count or Molien-type map with total part sum $\le1000$, and any linear combination of such maps with common denominator of degree $\le1000$. The $W(E_8)$ Molien degree sum is $128$.}
+
+\begin{remark}[Scope: what is \emph{not} excluded]\label{rem:N1scope}
+Propositions~\ref{prop:N1}--\ref{prop:N4} exclude only the stated classes:
+\begin{itemize}
+\item modular and quasimodular sums of nonnegative weight holomorphic at $0$, with at most one $q^r$ shift;
+\item constructions factoring through discriminant-form data;
+\item $\Q$-linear combinations of the $1036$ tested sequences;
+\item rational generating functions in the stated degree ranges.
+\end{itemize}
+They do \textbf{not} exclude:
+\begin{itemize}
+\item nonlinear or non-modular maps;
+\item mock or false-theta constructions with $E_8$ input;
+\item sums with several different $q^r$ prefactors;
+\item weakly holomorphic forms with poles at the cusp $0$;
+\item rational functions of higher degree;
+\item linear combinations of untested sequences.
+\end{itemize}
+Category~B (reading): absence of a map in the tested classes is evidence, not proof, that no natural map exists.
+\end{remark}

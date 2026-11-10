@@ -1,0 +1,607 @@
+arXiv:0807.4834v1 [math.NT] 30 Jul 2008
+
+
+
+
+                                                Mock Theta Functions
+                                                      Mock Thetafuncties
+                                                (met een samenvatting in het Nederlands)
+
+
+
+
+                                                            Proefschrift
+
+
+
+
+                                          Ter verkrijging van de graad van doctor aan
+                                          de Universiteit Utrecht op gezag van de Rector
+                                          Magnificus, Prof. dr. W.H. Gispen, ingevolge het
+                                          besluit van het College voor Promoties in het
+                                          openbaar te verdedigen op woensdag 30 oktober
+                                          2002 des ochtends te 10.30 uur
+
+
+                                                                 door
+
+
+
+
+                                                      Sander Pieter Zwegers
+
+                                              geboren op 16 april 1975, te Oosterhout
+ Promotor:      Prof. dr. D.B. Zagier
+                Max-Planck-Institut für Mathematik, Bonn
+                oud-hoogleraar aan de Universiteit Utrecht
+ Copromotor:    Dr. R.W. Bruggeman
+                Faculteit Wiskunde en Informatica
+                Universiteit Utrecht
+
+
+
+
+2000 Mathematics Subject Classification: 11F37, 11F50, 11E45, 11F27
+
+Zwegers, Sander Pieter
+Mock Theta Functions
+Proefschrift Universiteit Utrecht — Met samenvatting in het Nederlands
+
+ISBN 90-393-3155-3
+
+Printed by PrintPartners Ipskamp, Enschede
+Contents
+
+   Introduction                                                                             1
+        Mock ϑ-functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      1
+        This thesis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   2
+
+1 Lerch Sums                                                                           5
+  1.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+  1.2 The Mordell integral . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+  1.3 Lerch sums . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+  1.4 A real-analytic Jacobi form? . . . . . . . . . . . . . . . . . . . . . . . . . 11
+  1.5 Period integrals of weight 3/2 unary theta functions . . . . . . . . . . . 17
+
+2 Indefinite ϑ-functions                                                               25
+  2.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+  2.2 Definition of ϑ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+  2.3 Properties of the ϑ-functions . . . . . . . . . . . . . . . . . . . . . . . . 32
+                                                            +
+  2.4 Transformation properties of ϑ with respect to OA       (Z) . . . . . . . . . . 43
+  2.5 Some examples . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+
+3 Fourier Coefficients of Meromorphic Jacobi Forms                                     49
+  3.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+  3.2 A building block . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+  3.3 Transformation properties . . . . . . . . . . . . . . . . . . . . . . . . . . 56
+  3.4 Simple poles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 59
+  3.5 An example . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+
+4 Mock ϑ-functions                                                                     63
+  4.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 63
+  4.2 General results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 64
+  4.3 The seventh order mock ϑ-functions . . . . . . . . . . . . . . . . . . . . 67
+  4.4 The fifth order mock ϑ-functions . . . . . . . . . . . . . . . . . . . . . . 72
+  4.5 Other mock ϑ-functions . . . . . . . . . . . . . . . . . . . . . . . . . . . 83
+iv                      Contents
+
+
+     Bibliography            85
+
+     Samenvatting            89
+
+     Dankwoord               91
+
+     Curriculum Vitae        92
+Introduction
+
+Mock ϑ-functions
+Early in 1920, three months before his death, S. Ramanujan wrote his last letter to G.H.
+Hardy. For the mathematical part of this letter see [21, pp. 127–131] (also reproduced
+in [4]). In the course of it he said: “I discovered very interesting functions recently
+which I call ‘Mock’ ϑ-functions. Unlike the ‘False’ ϑ-functions (studied partially by
+Prof. Rogers in his interesting paper [22]) they enter into mathematics as beautifully
+as the ordinary ϑ-functions. I am sending you with this letter some examples.” He
+then provided a long list of mock ϑ-functions, together with identities satisfied by
+them. The first three pages in which Ramanujan explained what he meant by a mock
+ϑ-function are very obscure.
+    G.N. Watson wrote the first papers ([26] and [27]) to elucidate the mock ϑ-functions.
+The first of these is Watson’s Presidential Address to the London Mathematical So-
+ciety in 1935. He entitled it “The Final Problem: An Account of the Mock Theta
+Functions.” In it he writes: “I make no apologies for my subject being what is now
+regarded as old-fashioned, because, as a friend remarked to me a few months ago, I am
+an old-fashioned mathematician.” His methods may have been a bit old-fashioned, but
+looking at the number of articles on mock ϑ-functions that have appeared since 1935,
+or even in the last ten years, we must conclude that the subject is still up-to-date.
+    In these two papers, Watson proves most of the assertions found in the letter of
+Ramanujan. The first paper considers only the third-order functions. It provides
+three new mock ϑ-functions not mentioned in the letter. The bulk of the paper is
+devoted to the modular transformation properties of these functions. To get these
+transformations, he first proves certain identities. For example, for the third order
+mock ϑ-function
+                       q               q4                      q9
+     f (q) := 1 +          2
+                             +        2      2 2
+                                                 +                                 + ···
+                    (1 + q)    (1 + q) (1 + q )    (1 + q) (1 + q 2 )2 (1 + q 3 )2
+                                                          2
+
+
+he finds:                                               3   2   1
+                                         2 X (−1)n q 2 n + 2 n
+                             f (q) =                           ,                           (1)
+                                       (q)∞     1 + qn
+                                            n∈Z
+2                                                                                    Introduction
+
+                                                                Q
+with q = e2πiτ , τ ∈ H := {τ ∈ C | Im(τ ) > 0}, and (q)∞ = ∞
+                                                                                      1
+                                                                            n      − 24
+                                                                  n=1 (1 − q ) = q      η(τ ),
+where η is the Dedekind eta-function.
+    In Watson’s second paper on mock ϑ-functions, he moves on to the fifth order
+functions. He manages to prove all of the identities given by Ramanujan in his letter.
+However, he is unable to find the modular transformation properties, simply because
+he is unable to find identities like (1) for the fifth order functions. He even expressed
+his doubts about finding anything comparable to (1). However Andrews (see [2]) was
+able to find comparable results for most of the fifth order functions. For example, for
+the fifth order function which Watson denotes by f0 one finds
+
+                               1 X X         5 2   1    2
+                  f0 (q) =           (−1)j q 2 n + 2 n−j (1 − q 4n+2 ),
+                             (q)∞
+                                  n≥0 |j|≤n
+
+
+which may be rewritten as
+                                                               
+                     1            X                 X                        2       2
+          f0 (q) =                            −                  (−1)j q 52 n + 21 n−j .     (2)
+                   (q)∞                           n+j<0,n−j<0
+                              n+j≥0,n−j≥0
+
+
+    The seventh order functions were mostly neglected by Watson, perhaps because
+Ramanujan makes no positive assertions about them. However A. Selberg (see [23])
+provides a full account of the behaviour of the seventh order functions near the unit
+circle. In [12, pp. 666] we find identities similar to (2) for the seventh order mock
+ϑ-functions F0 , F1 and F2 . For example (slightly rewritten)
+                                         
+                         1 X         X                   2          2
+                                           (−1)r+s q 32 r +4rs+ 32 s + 21 r+ 12 s .
+              F0 (q) =             −                                                 (3)
+                       (q)∞          r,s<0
+                                r,s≥0
+
+
+    In [11] L. Göttsche and D. Zagier consider sums like the ones in (2) and (3).
+They call them theta-functions for indefinite lattices. For some special cases they find
+modular transformation properties for these functions. However, these results do not
+include the sums in (2) and (3). In [20], a theorem about the modularity of a certain
+family of q-series associated with indefinite binary quadratic forms is given. Again,
+the results do not include the sums in (2) and (3).
+
+
+This thesis
+This thesis is the result of my research on the following two questions, both posed by
+Don Zagier:
+
+    1. How do the mock ϑ-functions fit in the theory of modular forms?
+
+    2. Is there a theory of indefinite theta functions?
+This thesis                                                                           3
+
+
+Since most of the mock ϑ-functions had been related to sums like the one in (1), I first
+considered this type of sum. The result of this research is Chapter 1. In it we consider
+the series
+          X (−1)n eπi(n2 +n)τ +2πinv
+                                          (τ ∈ H, v ∈ C, u ∈ C \ (Zτ + Z)).
+                  1 − e2πinτ +2πiu
+          n∈Z
+
+This function was also studied by Lerch in [15] (see [14] for an abstract). Therefore
+we call this a Lerch sum. This sum is of the same type as the sum in (1). The
+function does not transform like a Jacobi form. However, we find that on addition of a
+(relatively easy) correction term the function does transform like a Jacobi form. This
+correction term is real-analytic.
+     In Chapter 2 we consider certain indefinite ϑ-functions, in an attempt to give
+a partial answer to the second question. These indefinite ϑ-functions are modified
+versions of the sums considered by Göttsche and Zagier in [11]. We find elliptic and
+modular transformation properties for these functions. Because of the modifications
+the indefinite ϑ-functions are no longer holomorphic (in general). Although the results
+in this chapter are more general than the results in [11], the second question is far
+from being solved. This is because we only consider indefinite quadratic forms of
+type (r − 1, 1). It remains a problem of considerable interest to develop a theory of
+theta-series for quadratic forms of arbitrary type.
+     In [3] Andrews gives most of the fifth order mock theta functions as Fourier co-
+efficients of meromorphic Jacobi forms, namely certain quotients of ordinary Jacobi
+theta-series. This is the motivation for the study of the modularity of Fourier coeffi-
+cients of meromorphic Jacobi forms, in Chapter 3. We find that modularity follows on
+adding a real-analytic correction term to the Fourier coefficients.
+     In Chapter 4 we use the results from Chapter 2, together with (2), (3) and similar
+identities for other mock ϑ-functions, to get the modular transformation properties of
+the seventh-order mock ϑ-functions and most of the fifth-order functions. The final
+result is that we can write each of these mock ϑ-functions as the sum of two functions
+H and G, where:
+   • H is a real-analytic modular form of weight 1/2 and is an eigenfunction of the
+     appropriate Casimir operator with eigenvalue 3/16 (this is also the eigenvalue of
+     holomorphic modular forms of this weight; for the theory of real-analytic modular
+     forms see for example [16, Ch. IV]); and
+   • G is a theta
+              P series associated to 2a negative definite unary quadratic form, i.e. has
+     the form sgn(f )β(2f 2 y)e−πif τ −2πif b , where f ranges over a certain arithmetic
+                                                                        R∞     1
+     progression aZ + b (a, b ∈ Q), τ = x + iy ∈ H and β(x) = x u− 2 e−πu du.
+     Moreover G is bounded as τ tends vertically to any rational limit.
+   This decomposition is thus similar to the one found in [29] for an Eisenstein series
+of weight 3/2, the holomorphic part of the series, in that case, having class numbers
+as Fourier coefficients.
+4                                                                     Introduction
+
+
+   Many of the results of Chapter 4 could also be deduced using the methods from
+Chapter 1 or Chapter 3 instead of Chapter 2, i.e. we have actually given 3 approaches
+to proving modularity properties of the mock ϑ-functions.
+Chapter 1
+
+Lerch Sums
+
+1.1     Introduction
+In this chapter, we first study a function h, which is essentially the function ϕ studied
+by Mordell in [17] and [18]. We reproduce some of the results of Mordell. In the next
+section we study a function µ, which is essentially a function studied by Lerch in [15].
+We find elliptic and modular transformation properties of this function. One of these
+transformations involves the function h:
+               1          2
+                               u v   1                1
+             √    eπi(u−v) /τ µ , ; −    + µ(u, v; τ ) = h(u − v; τ ).
+              −iτ               τ τ   τ                 2i
+
+In section 4 we find a real-analytic function R with essentially the same elliptic and
+modular transformation properties as µ. Combining the properties of µ and R we find
+a real-analytic function µ̃, which transforms like a Jacobi form.
+    In the last section we relate h to a period integral of a unary theta function of
+weight 3/2.
+
+
+1.2     The Mordell integral
+In this section, we present results of Mordell found in [17] and [18], in a form suitable
+for the purpose of this chapter. The function h defined in Definition 1.1 is essentially
+the function ϕ studied by Mordell: ϕ(x; τ ) = − 21 τ e−πiτ /4+πix h(x − τ2 + 12 ; τ ). The
+same function was used earlier by Riemann (as described by Siegel [24]) to prove the
+functional equation for the Riemann zeta function. Mordell was the first to analyze
+the behaviour of this integral relative to modular transformations. Consequently, we
+shall refer to this integral as the Mordell integral.
+6                                                                                      Chapter 1. Lerch Sums
+
+
+Definition 1.1 For z ∈ C and τ ∈ H set
+                                                          Z                   2
+                                                               eπiτ x −2πzx
+                             h(z) = h(z; τ ) :=                             dx.
+                                                             R   cosh πx
+
+Proposition 1.2 The function h has the following properties:
+                       2                      1 2
+(1) h(z) + h(z + 1) = √−iτ eπi(z+ 2 ) /τ ,
+
+(2) h(z) + e−2πiz−πiτ h(z + τ ) = 2e−πiz−πiτ /4 ,
+(3) z 7→ h(z; τ ) is the unique holomorphic function satisfying (1) and (2),
+(4) h is an even function of z,
+                    √         2
+(5) h( τz ; − τ1 ) = −iτ e−πiz /τ h(z; τ ),
+
+                 πi                           e   πiz 2 /(τ +1)                z    τ 
+                                         − πi
+(6) h(z; τ ) = e h(z; τ + 1) + e
+                 4                         4        √                 h           ;      .
+                                                        τ +1                  τ +1 τ +1
+Proof: (1) We have
+                            Z             2                                           Z
+                                eπiτ x −2πzx                                                        2         1
+     h(z) + h(z + 1) =                       (1 + e−2πx ) dx = 2                               eπiτ x −2πx(z+ 2 ) dx.
+                              R   cosh  πx                                                 R
+
+                                             1                            πi(z+ 12 )2 /τ
+This last integral is well known and equals √−iτ e                                         .
+(2) If we change x into x + i we find
+       Z           2                 Z                   2
+            eπiτ x −2πzx                   eπiτ (x+i) −2πz(x+i)
+                         dx =                                   dx = −e−2πiz−πiτ h(z + τ ).
+        R+i   cosh πx                    R    cosh π(x + i)
+
+Now using Cauchy’s theorem we find
+                                                    Z            Z                   2
+                       −2πiz−πiτ                                                  eπiτ x −2πzx
+           h(z) + e                h(z + τ ) =                −                                dx
+                                                         R        R+i               cosh πx
+                                                                                  2
+                                                                eπiτ x −2πzx
+                                                  = 2πi Res                  = 2e−πiz−πiτ /4 .
+                                                          x=i/2   cosh πx
+
+(3) If we have two holomorphic functions h1 and h2 both satisfying the two equations,
+their difference f = h1 − h2 is a holomorphic function satisfying:
+                          (
+                            f (z) + f (z + 1) = 0
+                            f (z) + e−2πiz−πiτ f (z + τ ) = 0.
+                                              2
+So f (z0 + mτ + n) = (−1)m+n eπim τ +2πimz0 f (z0 ). Letting z0 vary over a fundamental
+parallelogram [0, 1)Z + [0, 1) and m, n vary over Z, we see that f (z) is bounded and
+1.3 Lerch sums                                                                             7
+
+
+tends to 0 as Im(z) → ∞, so f ≡ 0 by Liouville’s theorem.
+(4) Replace x by −x in the integral.
+(5) Let g(x) = cosh1 πx . We first compute the Fourier transform Fg of g: Using Cauchy’s
+formula we get
+                Z        Z     2πizx
+                                  e                      e2πizx
+                       −                 dx = 2πi Res           = 2e−πz ,
+                    R      R+i   cosh πx          x=i/2 cosh πx
+
+
+but          Z                   Z                                   Z
+                   e2πizx                e2πiz(x+i)                         e2πizx
+                          dx =                         dx = −e−2πz                 dx,
+              R+i cosh πx            R cosh π(x +   i)                   R cosh πx
+
+so we find                           Z
+                                        e2πizx        2e−πz
+                        (Fg)(z) :=             dx =           = g(z).
+                                     R cosh πx      1 + e−2πz
+We see that g is its own Fourier transform! (Note the unusual plus sign in the definition
+of the Fourier transform).
+                       2
+    Let fτ (x) = eπiτ x , τ ∈ H. The Fourier transform of fτ is given by
+
+                                                 1
+                                         Ffτ = √   f− 1 .
+                                                −iτ τ
+We now see
+        Z           2
+               eπiτ x +2πizx
+                             dx = F(fτ · g)(z) = (Ffτ ) ∗ (Fg)(z)
+             R   cosh πx
+                                                              Z πi −1 (z−x)2
+                                    1                     1       e τ
+                                = √      f− τ1 ∗ g(z) = √                    dx.
+                                    −iτ                   −iτ R cosh πx
+
+This identity holds for z ∈ R. Since both sides are analytic functions of z, the identity
+holds for all z ∈ C. If we replace z by iz we get the desired result.
+    We may also prove the identity of part (5) by using (1) and (2) to show that
+               2
+        1
+z 7→ √−iτ  eπiz /τ h( τz ; − τ1 ) also satisfies the two equations (1) and (2). By uniqueness
+we get the equation.
+(6) Using (1) and (2) we can show that the right hand side, considered as a function
+of z, also satisfies (1) and (2). The equation now follows from (3).                       ✷
+
+
+1.3      Lerch sums
+In this section we will study the function
+
+             X (−1)n eπi(n2 +n)τ +2πinv
+                                               (τ ∈ H, v ∈ C, u ∈ C \ (Zτ + Z)).
+                    1 − e2πinτ +2πiu
+             n∈Z
+8                                                                        Chapter 1. Lerch Sums
+
+
+This function was also studied by Lerch. The original paper [15] is in Czech and is
+not very easy to obtain. See [14] for an abstract in German. We will prove elliptic
+and modular transformation properties of this function in Proposition 1.4 and 1.5
+respectively. These results are equivalent to the results found by Lerch.
+   It is more convenient to normalize the above sum by dividing by the classical Jacobi
+theta function ϑ. (Lerch did this too.) We will first give, without proof, some standard
+properties of ϑ. For the theory of ϑ-functions see [19].
+
+Proposition 1.3 For z ∈ C and τ ∈ H define
+                                      X       2           1
+                   ϑ(z) = ϑ(z; τ ) :=     eπiν τ +2πiν(z+ 2 ) .
+                                                    ν∈ 21 +Z
+
+Then ϑ satisfies:
+(1) ϑ(z + 1) = −ϑ(z).
+(2) ϑ(z + τ ) = −e−πiτ −2πiz ϑ(z).
+(3) Up to a multiplicative constant, z 7→ ϑ(z) is the unique holomorphic function
+     satisfying (1) and (2).
+(4) ϑ(−z) = −ϑ(z).
+(5) The zeros of ϑ are the points z = nτ + m, with n, m ∈ Z. These are simple zeros.
+                         πi
+(6) ϑ(z; τ + 1) = e 4 ϑ(z; τ ).
+                       √        2
+(7) ϑ( τz ; − τ1 ) = −i −iτ eπiz /τ ϑ(z; τ ).
+                                  ∞
+                                  Y
+                     1        1
+(8) ϑ(z; τ ) = −iq 8 ζ − 2            (1 − q n )(1 − ζq n−1 )(1 − ζ −1 q n ), with q = e2πiτ , ζ = e2πiz .
+                                  n=1
+      This is the Jacobi triple product identity.
+                         πi
+(9) ϑ′ (0; τ + 1) = e 4 ϑ′ (0; τ ) and ϑ′ (0; − τ1 ) = (−iτ )3/2 ϑ′ (0; τ ).
+(10) ϑ′ (0; τ ) = −2πη(τ )3 , with η as in the introduction.
+    We now turn to the normalized version of Lerch’s function:
+
+Proposition 1.4 For u, v ∈ C \ (Zτ + Z) and τ ∈ H, define
+                                                                           2
+                                                  eπiu X (−1)n eπi(n +n)τ +2πinv
+                µ(u, v) = µ(u, v; τ ) :=                                         .
+                                                 ϑ(v; τ )   1 − e2πinτ +2πiu
+                                                         n∈Z
+
+Then µ satisfies:
+(1) µ(u + 1, v) = −µ(u, v),
+1.3 Lerch sums                                                                                      9
+
+
+(2) µ(u, v + 1) = −µ(u, v),
+(3) µ(u, v) + e−2πi(u−v)−πiτ µ(u + τ, v) = −ie−πi(u−v)−πiτ /4 ,
+(4) µ(u + τ, v + τ ) = µ(u, v),
+(5) µ(−u, −v) = µ(u, v),
+(6) u 7→ µ(u, v) is a meromorphic function, with simple poles in the points u = nτ +m
+                              −1 1
+     (n, m ∈ Z), and residue 2πi ϑ(v) in u = 0,
+
+                                   1    ϑ′ (0)ϑ(u + v + z)ϑ(z)
+(7) µ(u + z, v + z) − µ(u, v) =                                ,
+                                  2πi ϑ(u)ϑ(v)ϑ(u + z)ϑ(v + z)
+      for u, v, u + z, v + z ∈
+                             6 Zτ + Z,
+(8) µ(v, u) = µ(u, v).
+Proof: (1) is trivial and (2) follows from (1) of Proposition 1.3.
+(3) The definition of ϑ gives the following:
+                           X              2
+      ie−πiτ /4+πiv ϑ(v) =     (−1)n eπi(n −n)τ +2πinv
+                                n∈Z
+            X (−1)n eπi(n2 −n)τ +2πinv                                 
+        =                                        1 − e2πinτ +2πiu
+                      1 − e2πinτ +2πiu
+            n∈Z
+                      X (−1)n eπi(n2 +n)τ +2πinv                   X (−1)n eπi(n2 +n)τ +2πinv
+               2πiv                                         2πiu
+        = −e                                           −e                                       .
+                             1 − e2πinτ +2πi(u+τ )                         1 − e2πinτ +2πiu
+                      n∈Z                                          n∈Z
+
+Dividing both sides by −eπiu ϑ(v), we get the desired result.
+(4) Part (2) of Proposition 1.3 gives
+                                                                   2
+                                     eπi(u+τ ) X (−1)n eπi(n +n)τ +2πin(v+τ )
+            µ(u + τ, v + τ ) =
+                                     ϑ(v + τ )
+                                                n∈Z
+                                                    1 − e2πinτ +2πi(u+τ )
+                                                                             2
+                                          πi(u+τ )+πiτ +2πiv X
+                                      e                       (−1)n eπi(n +3n)τ +2πinv
+                               =−                                                      .
+                                               ϑ(v)
+                                                          n∈Z
+                                                                1 − e2πi(n+1)τ +2πiu
+
+Replace n by n − 1 in the last sum to get the desired result.
+(5) If we replace n by −n in the definition of µ we see
+                                                                   2
+                                          eπiu X (−1)n eπi(n −n)τ −2πinv
+                            µ(u, v) =                                    .
+                                          ϑ(v)     1 − e−2πinτ +2πiu
+                                               n∈Z
+                       2πinτ −2πiu
+We multiply by −e
+               −e2πinτ −2πiu to find
+                                                                       2
+                                           e−πiu X (−1)n eπi(n +n)τ −2πinv
+                        µ(u, v) = −                                        .
+                                            ϑ(v)      1 − e2πinτ −2πiu
+                                                 n∈Z
+10                                                          Chapter 1. Lerch Sums
+
+
+Now using (4) of Proposition 1.3 we find
+
+                                  µ(u, v) = µ(−u, −v).
+
+(6) From the definition we see that u 7→ µ(u, v) has a simple pole if 1−e2πinτ +2πiu = 0,
+for some n ∈ Z. So u 7→ µ(u, v) has simple poles in the points u = −nτ +m (n, m ∈ Z).
+    The pole in u = 0 comes from the term n = 0. We see
+                                       1           u       −1 1
+                    lim u µ(u, v) =        lim           =          .
+                    u→0               ϑ(v) u→0 1 − e2πiu   2πi ϑ(v)
+
+(7) Consider f (z) = ϑ(u + z)ϑ(v + z) (µ(u + z, v + z) − µ(u, v)). Using (1), (2) and
+(5) of Proposition 1.3, and (1), (2), (4) and (6) of this proposition, we see that f has
+no poles, a zero for z = 0, and satisfies
+                        (
+                          f (z + 1) = f (z)
+                          f (z + τ ) = e−2πiτ −2πi(u+v+2z) f (z).
+
+It follows that the quotient f (z)/ϑ(z)ϑ(u + v + z) is a double periodic function with
+at most one simple pole in each fundamental parallelogram, and hence constant:
+
+                             f (z) = C(u, v)ϑ(z)ϑ(u + v + z).                       (1.1)
+
+To compute C we consider z = −u. If we take z = −u in (1.1) we find
+
+                   f (−u) = C(u, v)ϑ(−u)ϑ(v) = −C(u, v)ϑ(u)ϑ(v)                     (1.2)
+
+by (4) of Proposition 1.3.
+   By definition we have
+
+             f (−u) = lim ϑ(u + z)ϑ(v + z) (µ(u + z, v + z) − µ(u, v))
+                      z→−u
+
+                    = ϑ(v − u) · lim ϑ(z)µ(z, v − u)                                (1.3)
+                                  z→0
+                                     ϑ(z)                         1 ′
+                    = ϑ(v − u) · lim      · lim zµ(z, v − u) = −     ϑ (0),
+                                 z→0 z      z→0                  2πi
+where we have used (6).
+    Combining (1.2) and (1.3) gives the desired result.
+(8) Take z = −u − v in (7) and use (5) of Proposition 1.3 to find
+
+                                  µ(−v, −u) = µ(u, v).
+
+If we now use (5), we get the desired result.                                          ✷
+
+Proposition 1.5 Let µ be as in Proposition 1.4. Then µ satisfies the following mod-
+ular transformation properties:
+1.4 A real-analytic Jacobi form?                                                              11
+
+                           πi
+(1) µ(u, v; τ + 1) = e− 4 µ(u, v; τ ),
+                                      
+      1       πi(u−v)2 /τ     u v   1                   1
+(2) √       e             µ    , ;−      + µ(u, v; τ ) = h(u − v; τ ),
+      −iτ                     τ τ   τ                   2i
+     with h as in Definition 1.1.
+
+Proof: (1) Use (6) of Proposition 1.3.
+(2) Replacing (u, v, z, τ ) by ( uτ , τv , τz , − τ1 ) in (7) of Proposition 1.4 and using (7) and
+(9) of Proposition 1.3 we see that the left hand side depends only on u − v, not on u
+                            1
+and v separately. Call it 2i  h̃(u − v; τ ). Using (1) and (3) of Proposition 1.4 we see that
+h̃ satisfies the two identities (1) and (2) of Proposition 1.2, so if we can prove that h̃
+is a holomorphic function, then we may conclude that h̃ = h, as desired.
+    The poles of both u 7→ µ(u, v) and u 7→ µ( uτ , τv ; − τ1 ) are simple, and occur at
+u ∈ Zτ + Z, so the only poles of u 7→ h̃(u − v) could be simple poles for u ∈ Zτ + Z.
+Since this is a function of u − v it has no poles at all, and hence is holomorphic.
+    Alternatively, we can check, using (6) of Proposition 1.4 and (7) of Proposition
+1.3, that the residue at u = 0 vanishes. By (1) and (3) of Proposition 1.4 the residues
+vanish for all u ∈ Zτ + Z, hence h̃ is holomorphic.                                              ✷
+
+
+1.4      A real-analytic Jacobi form?
+Definition 1.6 For z ∈ C we define
+                            Z z           X∞
+                                    2         (−π)n z 2n+1
+                   E(z) = 2     e−πu du =                  .
+                             0            n=0
+                                                n! n + 1/2
+
+This is an odd entire function of z.
+
+Lemma 1.7 For z ∈ R we have
+                                                          
+                                 E(z) = sgn(z) 1 − β(z 2 ) ,
+
+where                               Z ∞
+                                             1
+                           β(x) =         u− 2 e−πu du    (x ∈ R≥0 ).
+                                    x
+                Rz       2            R |z|  2                     √
+Proof: Write     0
+                     e−πu du as sgn(z) 0 e−πu du and substitute u = v.                         ✷
+   We consider for u ∈ C and τ ∈ H the series
+                   X n                     p o        1      2
+       R(u; τ ) =        sgn(ν) − E (ν + a) 2y   (−1)ν− 2 e−πiν τ −2πiνu ,
+                      ν∈ 21 +Z
+
+
+with y = Im(τ ) and a = Im(u)
+                        Im(τ ) .
+

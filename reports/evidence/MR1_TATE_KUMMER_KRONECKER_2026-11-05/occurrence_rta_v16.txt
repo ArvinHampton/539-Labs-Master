@@ -1,0 +1,7 @@
+=== RTA v16 ===
+70:      established—a Petersson formula for Ξ, Kronecker/four-forces maps, and an explicit formula
+3730:Ch. IV]; “twisted Herglotz/Kronecker-limit”
+3734:evaluation at the same unit 6 + 35 (suggestive only). Zagier’s Kronecker limit formula [17] is context
+8391: (ii) No Kronecker 11-element purge and no four-forces (or SU (3) continuum) mapping is part of
+8406:Status (Category A). Status only: Ξ Petersson not used as proved; Kronecker/four-forces maps
+9004:[17] D. Zagier, A Kronecker limit formula for real quadratic fields, Math. Ann. 213 (1975).

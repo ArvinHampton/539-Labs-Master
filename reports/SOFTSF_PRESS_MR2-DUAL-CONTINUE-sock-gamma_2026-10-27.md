@@ -1,0 +1,3 @@
+# SOFTSF PRESS — MR2 DUAL-CONTINUE sock-gamma (2026-10-27)
+REPORTS ONLY — No RECS. → Auditor.
+soc_K(πα)=soc_Γ(πα): NARROWED Soft SF-named. BP (breuil_paskunas_supersingular) defines socΓ (l.525) and socK (l.526–527) separately, never equates them; §13 uses socΓ D0 (l.3803) and socK D0 (l.3972) interchangeably for K1-trivial D0; K1 trivial on Vr (l.907). Remaining gap GAP-SG-K1: no verbatim "irreducible smooth K-reps are K1-trivial". OPEN-SK-p3 OPEN. Filtration: INVENTED CANDIDATE (10, Γ₀(7)-geometric) + Katz 40 Soft SF-named PARALLEL, both live pending Owner pick / Auditor CONFIRM. INV-Ind Soft SF-INVENTED-CLOSED. Kerr BLOCKED. Tip unchanged 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91.

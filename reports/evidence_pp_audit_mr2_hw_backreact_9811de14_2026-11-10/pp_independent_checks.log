@@ -1,0 +1,61 @@
+RUN_START_WALLCLOCK 2026-11-10 11:53:36 CST
+SCRIPT_SHA256 dfa5a24e914101a81dd5f2335edc56ca5dad8bda04539a94afdeb3847f938165
+sympy 1.14.0
+
+== V ==
+PASS V1 stereographic unit S^2: R = 2 (PP code)
+PASS V2 upper half plane: R = -2 (PP code)
+
+== P1. D=5 instance: g = dy^2 + h(y,t,u,v,w), h = h0 + y h1 + y^2 h2, h2 fully symbolic (10 entries) ==
+PASS P1.1 D=5: G_yy free of d_y^2 h
+PASS P1.2 D=5: G_ya free of d_y^2 h (a = t,u,v,w)
+PASS P1.3 D=5: R_ab = -(1/2) d_y^2 h_ab + (h2-free), unit coefficient
+PASS P1.4 D=5 Gauss: 2 G_yy = -r[h] + (tr K)^2 - tr K^2
+PASS P1.5 D=5 Codazzi, sign +: G_ya = D_b K^b_a - D_a K (exact, t- and x-dependent K)
+PASS P6.1 row 6b LHS (D=5 instance): G_ya(0+) = -(kappa^2/2) D_b S^b_a under K+ - h trK+ = -(kappa^2/2) S
+
+== P3. Israel/Z2 inversion, generic 10x10 ==
+PASS P3.1 K+ - 1 trK+ = -(kappa^2/2) S (matrix identity, generic)
+PASS P3.2 tr K+ = kappa^2 trS/18
+PASS P3.3 (trK+)^2 - tr K+^2 = (kappa^4/4)((trS)^2/9 - tr S^2), generic
+PASS P3.4 [K] = 0 <=> S = 0: inverse map [K] = -kappa^2 (S - 1 trS/9) recovers [K]
+PASS P3.5 traceless parts: [K]~ = -kappa^2 S~ (generic)
+
+== P4. T_yy, T_ya in D = 11 with G = G_t + dy^H (own index code) ==
+PASS P4.0 G^2 = G_t.G_t + 4 H.H (D=11, exact)
+PASS P4.1 G_yPQR G_y^PQR = H.H (ordered sum, D=11)
+PASS P4.2 row 5 in D=11: T_yy = H.H/24 - G_t.G_t/96
+PASS P6.2 row 6b RHS index count (D=11): T_ya = (1/12) G_yPQR G_a^PQR = (1/12) H_bcd G_t,a^bcd (y-legs drop; g_ya = 0)
+
+== P5. Row 6 algebra ==
+PASS P5.1 row 6: H.H/24 = -r/2 + (kappa^4/8)((trS)^2/9 - trS^2) + J.J/384
+PASS P5.2 row 6 inequality: (kappa^4/4)(...) + J.J/192 - r = H.H/12 identically (so H.H>=0 <=> r <= ...)
+PASS P5.3 smeared M5 S = -tau h^(6): (trS)^2/9 - trS^2 = -2 tau^2
+
+== P7. Row 7 examples ==
+PASS P7.1 own YM+M5 stress reproduces MR2's logged H.H/24 polynomial exactly
+PASS P7.2 example A = -3/4, example B = +1/4 (j decoupled)
+PASS P7.3 B robust: with j = lam f1 f2, required H.H/24 = 1/4 + lam^2/16 >= 1/4 for all lam
+PASS P7.4 A NOT robust: with j = lam f1 f2, required H.H/24 = -3/4 + lam^2/16 (positive for lam^2 > 12)
+PASS P7.5 A' (f2 = 0, so tr F^F = 0 and j = 0 is consistent): required H.H/24 = -11/16 < 0
+PASS P7.6 J6c: every S(k,k) monomial has nonnegative coefficient and even powers of f1, f2 (so the sign test is valid)
+
+== P8. 11D diagonal thin wall, delta^2 coefficients (PP code) ==
+PASS P8.1 Riem^2 delta^2 coeff = 4 tr k^2
+PASS P8.2 Ric^2 delta^2 coeff = tr k^2 + (tr k)^2
+PASS P8.3 R^2 delta^2 coeff = 4 (tr k)^2
+PASS P8.4 Weyl^2 (explicit Weyl tensor) delta^2 coeff = (32/9)(tr k^2 - (tr k)^2/10)
+PASS P8.5 Gauss-Bonnet combination delta^2 coeff = 0
+PASS P8.6 highest power of W in each square is 2 (delta^2, no higher)
+PASS P8.7 K4: I + 11^T exact LDL pivots all > 0 (Ric^2 form positive definite)
+PASS P8.8 K6: sum over k = t +- e_i of |F(k,.)|^2 positive definite; pivots 16 (x9) and 4 (x36)
+PASS P8.9 M5 (worldvolume 0..5 incl. t): S(k,k) = tau for transverse k, 0 for worldvolume k
+
+== P9. profile integrals ==
+PASS P9.1 d/ds(tanh - tanh^3/3) = sech^4 (exact, exp form)
+PASS P9.2 limits: [tanh - tanh^3/3] from -oo to oo = 4/3
+PASS P9.3 int phi_eps = (1/(2eps)) * eps * 2 = 1 and int phi_eps^2 = (1/(4 eps^2)) * eps * 4/3 = 1/(3 eps)
+
+PASS_COUNT 38 FAIL_COUNT 0
+ALL_CHECKS PASS
+RUN_END_WALLCLOCK 2026-11-10 11:54:13 CST

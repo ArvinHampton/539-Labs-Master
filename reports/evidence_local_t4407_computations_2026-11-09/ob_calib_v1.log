@@ -1,0 +1,42 @@
+PARI stack size set to 2000000000 bytes, maximum size set to 2000003072
+11a1: conductor of twist by -4 = 176
+  11a1: N=352=2^5*11, D=1: dim 18, joint kernel dim = 0 [0s]
+  11a1: N=352=2^5*11, D=8: dim 18, joint kernel dim = 0 [0s]
+  11a1: N=352=2^5*11, D=44: dim 18, joint kernel dim = 0 [0s]
+  11a1: N=352=2^5*11, D=88: dim 18, joint kernel dim = 0 [0s]
+  11a1: N=704=2^6*11, D=1: dim 39, joint kernel dim = 0 [1s]
+  11a1: N=704=2^6*11, D=8: dim 38, joint kernel dim = 0 [1s]
+  11a1: N=704=2^6*11, D=44: dim 39, joint kernel dim = 0 [0s]
+  11a1: N=704=2^6*11, D=88: dim 38, joint kernel dim = 0 [0s]
+  11a1: N=1408=2^7*11, D=1: dim 83, joint kernel dim = 0 [19s]
+  11a1: N=1408=2^7*11, D=8: dim 83, joint kernel dim = 0 [15s]
+  11a1: N=1408=2^7*11, D=44: dim 83, joint kernel dim = 0 [7s]
+  11a1: N=1408=2^7*11, D=88: dim 83, joint kernel dim = 0 [7s]
+  11a1: N=2816=2^8*11, D=1: dim 172, joint kernel dim = 0 [101s]
+  11a1: N=2816=2^8*11, D=8: dim 172, joint kernel dim = 0 [110s]
+  11a1: N=2816=2^8*11, D=44: dim 172, joint kernel dim = 0 [53s]
+  11a1: N=2816=2^8*11, D=88: dim 172, joint kernel dim = 0 [42s]
+15a1: conductor of twist by -4 = 240
+  15a1: N=480=2^5*15, D=1: dim 34, joint kernel dim = 4 [14s]
+  15a1: N=480=2^5*15, D=8: dim 34, joint kernel dim = 4 [13s]
+  15a1: N=480=2^5*15, D=60: dim 34, joint kernel dim = 4 [5s]
+  15a1: N=480=2^5*15, D=120: dim 34, joint kernel dim = 4 [6s]
+  15a1: N=960=2^6*15, D=1: dim 75, joint kernel dim = 6 [86s]
+  15a1: N=960=2^6*15, D=8: dim 74, joint kernel dim = 12 [77s]
+  15a1: N=960=2^6*15, D=60: dim 75, joint kernel dim = 6 [37s]
+  15a1: N=960=2^6*15, D=120: dim 74, joint kernel dim = 12 [32s]
+  15a1: N=1920=2^7*15, D=1: dim 163, joint kernel dim = 14 [484s]
+  15a1: N=1920=2^7*15, D=8: dim 163, joint kernel dim = 14 [479s]
+  15a1: N=1920=2^7*15, D=60: dim 163, joint kernel dim = 14 [368s]
+  15a1: N=1920=2^7*15, D=120: dim 163, joint kernel dim = 14 [250s]
+  *** mfheckemat: Warning: increasing stack size to 2000003072.
+Traceback (most recent call last):
+  File "/workspace/quantum-comp/reports/evidence_local_t4407_computations_2026-11-09/ob_calib_v1.py", line 24, in <module>
+    P(f"Mh=mfheckemat(m,{p}^2); K=K*matker((Mh-ag[{p}]*matid(d))*K)")
+    ~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cypari2/pari_instance.pyx", line 800, in cypari2.pari_instance.Pari.__call__
+  File "cypari2/gen.pyx", line 4784, in cypari2.gen.objtogen
+  File "cypari2/convert.pyx", line 545, in cypari2.convert.PyObject_AsGEN
+  File "cypari2/handle_error.pyx", line 211, in cypari2.handle_error._pari_err_handle
+cypari2.handle_error.PariError: mfheckemat: the PARI stack overflows (current size: 2000003072; maximum size: 2000003072)
+You can use pari.allocatemem() to change the stack size and try again

@@ -1,0 +1,3 @@
+PARI stack size set to 8000000000 bytes, maximum size set to 8000000000
+ N=12544 D=1: PARI error mfinit: the PARI stack overflows (current size: 8000000000; maximum size: 8000000000)
+You can use pari.allocatemem() to change the stack size and try again

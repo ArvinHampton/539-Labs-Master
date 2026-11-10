@@ -1,0 +1,19 @@
+PARI stack size set to 2000000000 bytes, maximum size set to 2000003072
+49a1 a1..a20: [1, 1, 0, -1, 0, 0, 0, -3, -3, 0, 4, 0, 0, 0, 0, -1, 0, -3, 0, 0]
+Fix8: S3(K1) == -2 f(2tau) (n<=20): True
+Fix8: S5(K1) == f + f(2tau) (n<=20): True
+Fix4: S*T*S^-1 = [1, 0; -1, 1]  S^-1*T*S = [1, 0; -1, 1]  S^-1*T^-1*S = [1, 0; 1, 1]
+Fix5: 49*20^2 = 19600 ; 49*140^2 = 960400 ; lcm(49,140^2) = 19600
+Fix6: 19600 divides 980? False
+Fix (E10 support): chi140 == chi_-20 * chi_-7 on n=1..140: True
+Fix12 (N2): twists 49a1 x chi_D with eps=+1, L~0 in part3_check2:
+  D=40: cond 78400, rootno 1, ellrank bounds [2,2]
+  D=44: cond 94864, rootno 1, ellrank bounds [2,2]
+  D=53: cond 137641, rootno 1, ellrank bounds [2,2]
+  D=57: cond 159201, rootno 1, ellrank bounds [2,2]
+  D=172: cond 1449616, rootno 1, ellrank bounds [2,2]
+  D=188: cond 1731856, rootno 1, ellrank bounds [2,2]
+  D=248: cond 3013696, rootno 1, ellrank bounds [2,2]
+  D=264: cond 3415104, rootno 1, ellrank bounds [2,2]
+  D=316: cond 4892944, rootno 1, ellrank bounds [2,2]
+Fix13: n=7: coredisc(-7) = -7 ; f x chi_-7 = f (CM), L(49a1,1) = 0.966655852808406 (float, nonzero) while c(7)=0 on K per part3_check2 row 7

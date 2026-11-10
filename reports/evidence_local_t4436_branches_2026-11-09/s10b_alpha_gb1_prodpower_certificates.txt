@@ -1,0 +1,344 @@
+JOB support=(3, 11, 47, 71, 83) sign=(1, -1, 1, 1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=3); P = tau0**2*tau1**2*tau2 - tau0**2*tau1*tau2 + tau0*tau1**2*tau2**2 - tau0*tau1*tau2**2; verified by sympy.expand
+  c = -tau1**2*tau2 + tau1*tau2
+  g = -tau0**2
+  c = -tau0*tau1*tau2 + tau0*tau2
+  g = -tau1*tau2
+JOB support=(3, 11, 47, 71, 83) sign=(1, -1, -1, -1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=3); P = tau0**2*tau1**2*tau2 + tau0*tau1**2*tau2**2 - tau0*tau1**2*tau2; verified by sympy.expand
+  c = -tau1**2/2
+  g = -tau0**2 + tau0
+  c = -tau0*tau1*tau2 + tau0*tau1/2
+  g = -tau0*tau1 - tau1*tau2
+  c = tau0*tau1/2
+  g = -tau1*tau2 + tau1
+JOB support=(3, 11, 47, 71, 83) sign=(-1, 1, 1, 1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=3); P = tau0**2*tau1**2*tau2 + tau0*tau1**2*tau2**2 + tau0*tau1**2*tau2; verified by sympy.expand
+  c = tau1**2/2
+  g = -tau0**2 - tau0
+  c = -tau0*tau1*tau2 - tau0*tau1/2
+  g = -tau0*tau1 - tau1*tau2
+  c = -tau0*tau1/2
+  g = -tau1*tau2 - tau1
+JOB support=(3, 11, 47, 71, 83) sign=(-1, 1, -1, -1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=3); P = tau0**2*tau1**2*tau2 + tau0**2*tau1*tau2 + tau0*tau1**2*tau2**2 + tau0*tau1*tau2**2; verified by sympy.expand
+  c = -tau1**2*tau2 - tau1*tau2
+  g = -tau0**2
+  c = -tau0*tau1*tau2 - tau0*tau2
+  g = -tau1*tau2
+JOB support=(3, 11, 71, 79, 83) sign=(1, -1, 1, 1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=3); P = tau0**2*tau1*tau2**2 + tau0*tau1**2*tau2**2 - tau0*tau1*tau2**2; verified by sympy.expand
+  c = -tau0*tau2**2 + tau2**2/2
+  g = -tau1**2 + tau1
+  c = -tau0*tau1*tau2 - tau1*tau2/2
+  g = -tau0*tau2 + tau2
+  c = -tau1*tau2/2
+  g = -tau0*tau2 - tau1*tau2
+JOB support=(3, 11, 71, 79, 83) sign=(1, -1, -1, -1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=3); P = tau0**2*tau1*tau2**2 - tau0**2*tau1*tau2 + tau0*tau1**2*tau2**2 - tau0*tau1**2*tau2; verified by sympy.expand
+  c = -tau0*tau2**2 + tau0*tau2
+  g = -tau1**2
+  c = -tau0*tau1*tau2 + tau0*tau1
+  g = -tau0*tau2
+JOB support=(3, 11, 71, 79, 83) sign=(-1, 1, 1, 1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=3); P = tau0**2*tau1*tau2**2 + tau0**2*tau1*tau2 + tau0*tau1**2*tau2**2 + tau0*tau1**2*tau2; verified by sympy.expand
+  c = -tau0*tau2**2 - tau0*tau2
+  g = -tau1**2
+  c = -tau0*tau1*tau2 - tau0*tau1
+  g = -tau0*tau2
+JOB support=(3, 11, 71, 79, 83) sign=(-1, 1, -1, -1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=3); P = tau0**2*tau1*tau2**2 + tau0*tau1**2*tau2**2 + tau0*tau1*tau2**2; verified by sympy.expand
+  c = -tau0*tau2**2 - tau2**2/2
+  g = -tau1**2 - tau1
+  c = -tau0*tau1*tau2 + tau1*tau2/2
+  g = -tau0*tau2 - tau2
+  c = tau1*tau2/2
+  g = -tau0*tau2 - tau1*tau2
+JOB support=(3, 37, 41, 47, 53, 79, 89) sign=(1, 1, 1, 1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = -tau0**2*tau1**2*tau2**2/2 + tau0**2*tau1**2*tau2/4 + tau0**2*tau1*tau2**2/4 - tau0**2*tau1*tau2/8 - tau0*tau1**2*tau2**2/4 + tau0*tau1**2*tau2/8 + tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = -tau0**2*tau1*tau2/2 + tau0**2*tau1/4 - tau0**2/16 - tau0*tau1*tau2/4 + tau0*tau1/8 - tau0/32
+  g = -tau0/2 + tau1*tau2 - tau2/2
+  c = tau0**2*tau1/4 + tau0*tau1/16
+  g = -tau0*tau2 + tau1/2 - 1/4
+  c = -tau0**2/32 + tau0*tau1/32 - tau0/64
+  g = -4*tau0*tau1 + tau0 - tau1 + tau2
+JOB support=(3, 37, 41, 47, 53, 79, 89) sign=(1, 1, -1, -1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = tau0**2*tau1**2*tau2**2/2 - tau0**2*tau1**2*tau2/4 - tau0**2*tau1*tau2**2/4 + tau0**2*tau1*tau2/8 - tau0*tau1**2*tau2**2/4 + tau0*tau1**2*tau2/8 + tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = -tau0**2*tau1*tau2/2 + tau0**2*tau1/4 - tau0**2/16 + tau0*tau1*tau2/4 - tau0*tau1/8 + tau0/32
+  g = -tau0/2 - tau1*tau2 + tau2/2
+  c = tau0**2*tau1/4 - tau0*tau1/16
+  g = -tau0*tau2 - tau1/2 + 1/4
+  c = -tau0**2/32 - tau0*tau1/32 + tau0/64
+  g = -4*tau0*tau1 + tau0 + tau1 - tau2
+JOB support=(3, 37, 41, 47, 53, 79, 89) sign=(1, -1, 1, 1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = -tau0**2*tau1**2*tau2**2; verified by sympy.expand
+  c = -tau0**2*tau1*tau2 - tau0/8
+  g = -tau0 + tau1*tau2
+  c = tau0**2*tau2/4 + tau2/16
+  g = -4*tau0*tau1 + 2*tau2
+  c = tau0*tau2/2 + tau1/8
+  g = -tau0*tau2 + tau1
+  c = 1/8
+  g = -tau0**2 - tau1**2 - tau2**2
+JOB support=(3, 37, 41, 47, 53, 79, 89) sign=(1, -1, 1, -1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = -tau0**2*tau1**2*tau2**2/2 + tau0**2*tau1**2*tau2/4 - tau0**2*tau1*tau2**2/4 + tau0**2*tau1*tau2/8 + tau0*tau1**2*tau2**2/4 - tau0*tau1**2*tau2/8 + tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = -tau0**2*tau1*tau2/2 + tau0**2*tau1/4 + tau0**2/16 + tau0*tau1*tau2/4 - tau0*tau1/8 - tau0/32
+  g = -tau0/2 + tau1*tau2 + tau2/2
+  c = tau0**2*tau1/4 - tau0*tau1/16
+  g = -tau0*tau2 + tau1/2 + 1/4
+  c = -tau0**2/32 + tau0*tau1/32 + tau0/64
+  g = -4*tau0*tau1 - tau0 + tau1 + tau2
+JOB support=(3, 37, 41, 47, 53, 79, 89) sign=(1, -1, -1, 1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = -tau0**2*tau1**2*tau2**2/2 - tau0**2*tau1**2*tau2/4 + tau0**2*tau1*tau2**2/4 + tau0**2*tau1*tau2/8 + tau0*tau1**2*tau2**2/4 + tau0*tau1**2*tau2/8 - tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = -tau0**2*tau1*tau2/2 - tau0**2*tau1/4 + tau0**2/16 + tau0*tau1*tau2/4 + tau0*tau1/8 - tau0/32
+  g = -tau0/2 + tau1*tau2 - tau2/2
+  c = tau0**2*tau1/4 - tau0*tau1/16
+  g = -tau0*tau2 + tau1/2 - 1/4
+  c = tau0**2/32 + tau0*tau1/32 - tau0/64
+  g = -4*tau0*tau1 + tau0 + tau1 + tau2
+JOB support=(3, 37, 41, 47, 53, 79, 89) sign=(-1, 1, 1, -1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = tau0**2*tau1**2*tau2**2/2 - tau0**2*tau1**2*tau2/4 + tau0**2*tau1*tau2**2/4 - tau0**2*tau1*tau2/8 + tau0*tau1**2*tau2**2/4 - tau0*tau1**2*tau2/8 + tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = -tau0**2*tau1*tau2/2 + tau0**2*tau1/4 + tau0**2/16 - tau0*tau1*tau2/4 + tau0*tau1/8 + tau0/32
+  g = -tau0/2 - tau1*tau2 - tau2/2
+  c = tau0**2*tau1/4 + tau0*tau1/16
+  g = -tau0*tau2 - tau1/2 - 1/4
+  c = -tau0**2/32 - tau0*tau1/32 - tau0/64
+  g = -4*tau0*tau1 - tau0 - tau1 - tau2
+JOB support=(3, 37, 41, 47, 53, 79, 89) sign=(-1, 1, -1, 1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = tau0**2*tau1**2*tau2**2/2 + tau0**2*tau1**2*tau2/4 - tau0**2*tau1*tau2**2/4 - tau0**2*tau1*tau2/8 + tau0*tau1**2*tau2**2/4 + tau0*tau1**2*tau2/8 - tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = -tau0**2*tau1*tau2/2 - tau0**2*tau1/4 + tau0**2/16 - tau0*tau1*tau2/4 - tau0*tau1/8 + tau0/32
+  g = -tau0/2 - tau1*tau2 + tau2/2
+  c = tau0**2*tau1/4 + tau0*tau1/16
+  g = -tau0*tau2 - tau1/2 + 1/4
+  c = tau0**2/32 - tau0*tau1/32 + tau0/64
+  g = -4*tau0*tau1 + tau0 - tau1 - tau2
+JOB support=(3, 37, 41, 47, 53, 79, 89) sign=(-1, 1, -1, -1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = tau0**2*tau1**2*tau2**2; verified by sympy.expand
+  c = -tau0**2*tau1*tau2 + tau0/8
+  g = -tau0 - tau1*tau2
+  c = tau0**2*tau2/4 + tau2/16
+  g = -4*tau0*tau1 - 2*tau2
+  c = -tau0*tau2/2 + tau1/8
+  g = -tau0*tau2 - tau1
+  c = -1/8
+  g = -tau0**2 - tau1**2 - tau2**2
+JOB support=(3, 37, 41, 47, 53, 79, 89) sign=(-1, -1, 1, 1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = -tau0**2*tau1**2*tau2**2/2 - tau0**2*tau1**2*tau2/4 - tau0**2*tau1*tau2**2/4 - tau0**2*tau1*tau2/8 - tau0*tau1**2*tau2**2/4 - tau0*tau1**2*tau2/8 - tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = -tau0**2*tau1*tau2/2 - tau0**2*tau1/4 - tau0**2/16 - tau0*tau1*tau2/4 - tau0*tau1/8 - tau0/32
+  g = -tau0/2 + tau1*tau2 + tau2/2
+  c = tau0**2*tau1/4 + tau0*tau1/16
+  g = -tau0*tau2 + tau1/2 + 1/4
+  c = tau0**2/32 + tau0*tau1/32 + tau0/64
+  g = -4*tau0*tau1 - tau0 - tau1 + tau2
+JOB support=(3, 37, 41, 47, 53, 79, 89) sign=(-1, -1, -1, -1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = tau0**2*tau1**2*tau2**2/2 + tau0**2*tau1**2*tau2/4 + tau0**2*tau1*tau2**2/4 + tau0**2*tau1*tau2/8 - tau0*tau1**2*tau2**2/4 - tau0*tau1**2*tau2/8 - tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = -tau0**2*tau1*tau2/2 - tau0**2*tau1/4 - tau0**2/16 + tau0*tau1*tau2/4 + tau0*tau1/8 + tau0/32
+  g = -tau0/2 - tau1*tau2 - tau2/2
+  c = tau0**2*tau1/4 - tau0*tau1/16
+  g = -tau0*tau2 - tau1/2 - 1/4
+  c = tau0**2/32 - tau0*tau1/32 - tau0/64
+  g = -4*tau0*tau1 - tau0 + tau1 - tau2
+JOB support=(3, 37, 41, 47, 71, 79, 89) sign=(1, 1, 1, 1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = -tau0**2*tau1**2*tau2**2/2 + tau0**2*tau1**2*tau2/4 + tau0**2*tau1*tau2**2/4 - tau0**2*tau1*tau2/8 - tau0*tau1**2*tau2**2/4 + tau0*tau1**2*tau2/8 + tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = tau0*tau1*tau2**2/2 - tau0*tau1*tau2/4 - tau0*tau2**2/4 + tau0*tau2/8 - tau1*tau2/16 + tau1/32
+  g = -tau0*tau1 - tau2/2
+  c = tau1**2*tau2/4 - tau1**2/16 - tau1*tau2**2/4 + tau1/32 + tau2**2/8 - tau2/16
+  g = -tau0*tau2 - tau1/2
+  c = -tau1**2/16 + tau1*tau2/16
+  g = -tau0/2 - 2*tau1*tau2 + tau1/2 + tau2/2 - 1/4
+JOB support=(3, 37, 41, 47, 71, 79, 89) sign=(1, 1, -1, 1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = -tau0**2*tau1**2*tau2**2; verified by sympy.expand
+  c = tau0**2*tau1*tau2/2 - tau0/8
+  g = -tau0 - 2*tau1*tau2
+  c = -tau0**2*tau2/2 - tau2/8
+  g = -tau0*tau1 - tau2
+  c = tau0*tau2/2 - tau1/8
+  g = -tau0*tau2 - tau1
+  c = 1/8
+  g = -tau0**2 - tau1**2 - tau2**2
+JOB support=(3, 37, 41, 47, 71, 79, 89) sign=(1, 1, -1, -1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = -tau0**2*tau1**2*tau2**2/2 + tau0**2*tau1**2*tau2/4 - tau0**2*tau1*tau2**2/4 + tau0**2*tau1*tau2/8 + tau0*tau1**2*tau2**2/4 - tau0*tau1**2*tau2/8 + tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = tau0*tau1*tau2**2/2 - tau0*tau1*tau2/4 + tau0*tau2**2/4 - tau0*tau2/8 + tau1*tau2/16 - tau1/32
+  g = -tau0*tau1 - tau2/2
+  c = -tau1**2*tau2/4 + tau1**2/16 - tau1*tau2**2/4 + tau1/32 - tau2**2/8 + tau2/16
+  g = -tau0*tau2 - tau1/2
+  c = tau1**2/16 + tau1*tau2/16
+  g = -tau0/2 - 2*tau1*tau2 + tau1/2 - tau2/2 + 1/4
+JOB support=(3, 37, 41, 47, 71, 79, 89) sign=(1, -1, 1, -1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = tau0**2*tau1**2*tau2**2/2 - tau0**2*tau1**2*tau2/4 - tau0**2*tau1*tau2**2/4 + tau0**2*tau1*tau2/8 - tau0*tau1**2*tau2**2/4 + tau0*tau1**2*tau2/8 + tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = -tau0*tau1*tau2**2/2 + tau0*tau1*tau2/4 + tau0*tau2**2/4 - tau0*tau2/8 - tau1*tau2/16 + tau1/32
+  g = -tau0*tau1 + tau2/2
+  c = tau1**2*tau2/4 - tau1**2/16 - tau1*tau2**2/4 + tau1/32 + tau2**2/8 - tau2/16
+  g = -tau0*tau2 + tau1/2
+  c = -tau1**2/32 + tau1*tau2/32
+  g = -tau0 + 4*tau1*tau2 - tau1 - tau2 + 1/2
+JOB support=(3, 37, 41, 47, 71, 79, 89) sign=(1, -1, -1, 1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = -tau0**2*tau1**2*tau2**2/2 - tau0**2*tau1**2*tau2/4 + tau0**2*tau1*tau2**2/4 + tau0**2*tau1*tau2/8 + tau0*tau1**2*tau2**2/4 + tau0*tau1**2*tau2/8 - tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = tau0*tau1*tau2**2/2 + tau0*tau1*tau2/4 - tau0*tau2**2/4 - tau0*tau2/8 - tau1*tau2/16 - tau1/32
+  g = -tau0*tau1 - tau2/2
+  c = -tau1**2*tau2/4 - tau1**2/16 - tau1*tau2**2/4 + tau1/32 + tau2**2/8 + tau2/16
+  g = -tau0*tau2 - tau1/2
+  c = tau1**2/16 + tau1*tau2/16
+  g = -tau0/2 - 2*tau1*tau2 - tau1/2 + tau2/2 + 1/4
+JOB support=(3, 37, 41, 47, 71, 79, 89) sign=(-1, 1, 1, -1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = tau0**2*tau1**2*tau2**2/2 - tau0**2*tau1**2*tau2/4 + tau0**2*tau1*tau2**2/4 - tau0**2*tau1*tau2/8 + tau0*tau1**2*tau2**2/4 - tau0*tau1**2*tau2/8 + tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = -tau0*tau1*tau2**2/2 + tau0*tau1*tau2/4 - tau0*tau2**2/4 + tau0*tau2/8 + tau1*tau2/16 - tau1/32
+  g = -tau0*tau1 + tau2/2
+  c = -tau1**2*tau2/4 + tau1**2/16 - tau1*tau2**2/4 + tau1/32 - tau2**2/8 + tau2/16
+  g = -tau0*tau2 + tau1/2
+  c = tau1**2/32 + tau1*tau2/32
+  g = -tau0 + 4*tau1*tau2 - tau1 + tau2 - 1/2
+JOB support=(3, 37, 41, 47, 71, 79, 89) sign=(-1, 1, -1, 1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = -tau0**2*tau1**2*tau2**2/2 - tau0**2*tau1**2*tau2/4 - tau0**2*tau1*tau2**2/4 - tau0**2*tau1*tau2/8 - tau0*tau1**2*tau2**2/4 - tau0*tau1**2*tau2/8 - tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = tau0*tau1*tau2**2/2 + tau0*tau1*tau2/4 + tau0*tau2**2/4 + tau0*tau2/8 + tau1*tau2/16 + tau1/32
+  g = -tau0*tau1 - tau2/2
+  c = tau1**2*tau2/4 + tau1**2/16 - tau1*tau2**2/4 + tau1/32 - tau2**2/8 - tau2/16
+  g = -tau0*tau2 - tau1/2
+  c = -tau1**2/16 + tau1*tau2/16
+  g = -tau0/2 - 2*tau1*tau2 - tau1/2 - tau2/2 - 1/4
+JOB support=(3, 37, 41, 47, 71, 79, 89) sign=(-1, -1, 1, 1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = tau0**2*tau1**2*tau2**2/2 + tau0**2*tau1**2*tau2/4 - tau0**2*tau1*tau2**2/4 - tau0**2*tau1*tau2/8 + tau0*tau1**2*tau2**2/4 + tau0*tau1**2*tau2/8 - tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = -tau0*tau1*tau2**2/2 - tau0*tau1*tau2/4 + tau0*tau2**2/4 + tau0*tau2/8 - tau1*tau2/16 - tau1/32
+  g = -tau0*tau1 + tau2/2
+  c = -tau1**2*tau2/4 - tau1**2/16 - tau1*tau2**2/4 + tau1/32 + tau2**2/8 + tau2/16
+  g = -tau0*tau2 + tau1/2
+  c = tau1**2/32 + tau1*tau2/32
+  g = -tau0 + 4*tau1*tau2 + tau1 - tau2 - 1/2
+JOB support=(3, 37, 41, 47, 71, 79, 89) sign=(-1, -1, 1, -1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = tau0**2*tau1**2*tau2**2; verified by sympy.expand
+  c = tau0**2*tau1*tau2/4 + tau0/16
+  g = -2*tau0 + 4*tau1*tau2
+  c = -tau0**2*tau2/2 - tau2/8
+  g = -tau0*tau1 + tau2
+  c = -tau0*tau2/2 - tau1/8
+  g = -tau0*tau2 + tau1
+  c = -1/8
+  g = -tau0**2 - tau1**2 - tau2**2
+JOB support=(3, 37, 41, 47, 71, 79, 89) sign=(-1, -1, -1, -1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = tau0**2*tau1**2*tau2**2/2 + tau0**2*tau1**2*tau2/4 + tau0**2*tau1*tau2**2/4 + tau0**2*tau1*tau2/8 - tau0*tau1**2*tau2**2/4 - tau0*tau1**2*tau2/8 - tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = -tau0*tau1*tau2**2/2 - tau0*tau1*tau2/4 - tau0*tau2**2/4 - tau0*tau2/8 + tau1*tau2/16 + tau1/32
+  g = -tau0*tau1 + tau2/2
+  c = tau1**2*tau2/4 + tau1**2/16 - tau1*tau2**2/4 + tau1/32 - tau2**2/8 - tau2/16
+  g = -tau0*tau2 + tau1/2
+  c = -tau1**2/32 + tau1*tau2/32
+  g = -tau0 + 4*tau1*tau2 + tau1 + tau2 + 1/2
+JOB support=(3, 37, 47, 53, 71, 79, 89) sign=(1, 1, 1, 1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = -tau0**2*tau1**2*tau2**2/2 + tau0**2*tau1**2*tau2/4 + tau0**2*tau1*tau2**2/4 - tau0**2*tau1*tau2/8 - tau0*tau1**2*tau2**2/4 + tau0*tau1**2*tau2/8 + tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = -tau0**2*tau1*tau2/2 + tau0**2*tau1/4 - tau0**2/16 - tau0*tau1*tau2/4 + tau0*tau1/8 - tau0/32
+  g = -tau0/2 + tau1*tau2 - tau2/2
+  c = tau0**2*tau1/4 + tau0*tau1/16
+  g = -tau0*tau2 + tau1/2 - 1/4
+  c = -tau0**2/32 + tau0*tau1/32 - tau0/64
+  g = -4*tau0*tau1 + tau0 - tau1 + tau2
+JOB support=(3, 37, 47, 53, 71, 79, 89) sign=(1, 1, 1, -1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = -tau0**2*tau1**2*tau2**2; verified by sympy.expand
+  c = -tau0**2*tau1*tau2 - tau0/8
+  g = -tau0 + tau1*tau2
+  c = tau0**2*tau2/4 + tau2/16
+  g = -4*tau0*tau1 + 2*tau2
+  c = tau0*tau2/2 + tau1/8
+  g = -tau0*tau2 + tau1
+  c = 1/8
+  g = -tau0**2 - tau1**2 - tau2**2
+JOB support=(3, 37, 47, 53, 71, 79, 89) sign=(1, 1, -1, -1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = -tau0**2*tau1**2*tau2**2/2 - tau0**2*tau1**2*tau2/4 + tau0**2*tau1*tau2**2/4 + tau0**2*tau1*tau2/8 + tau0*tau1**2*tau2**2/4 + tau0*tau1**2*tau2/8 - tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = -tau0**2*tau1*tau2/2 - tau0**2*tau1/4 + tau0**2/16 + tau0*tau1*tau2/4 + tau0*tau1/8 - tau0/32
+  g = -tau0/2 + tau1*tau2 - tau2/2
+  c = tau0**2*tau1/4 - tau0*tau1/16
+  g = -tau0*tau2 + tau1/2 - 1/4
+  c = tau0**2/32 + tau0*tau1/32 - tau0/64
+  g = -4*tau0*tau1 + tau0 + tau1 + tau2
+JOB support=(3, 37, 47, 53, 71, 79, 89) sign=(1, -1, 1, -1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = -tau0**2*tau1**2*tau2**2/2 + tau0**2*tau1**2*tau2/4 - tau0**2*tau1*tau2**2/4 + tau0**2*tau1*tau2/8 + tau0*tau1**2*tau2**2/4 - tau0*tau1**2*tau2/8 + tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = -tau0**2*tau1*tau2/2 + tau0**2*tau1/4 + tau0**2/16 + tau0*tau1*tau2/4 - tau0*tau1/8 - tau0/32
+  g = -tau0/2 + tau1*tau2 + tau2/2
+  c = tau0**2*tau1/4 - tau0*tau1/16
+  g = -tau0*tau2 + tau1/2 + 1/4
+  c = -tau0**2/32 + tau0*tau1/32 + tau0/64
+  g = -4*tau0*tau1 - tau0 + tau1 + tau2
+JOB support=(3, 37, 47, 53, 71, 79, 89) sign=(1, -1, -1, 1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = tau0**2*tau1**2*tau2**2/2 - tau0**2*tau1**2*tau2/4 - tau0**2*tau1*tau2**2/4 + tau0**2*tau1*tau2/8 - tau0*tau1**2*tau2**2/4 + tau0*tau1**2*tau2/8 + tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = -tau0**2*tau1*tau2/2 + tau0**2*tau1/4 - tau0**2/16 + tau0*tau1*tau2/4 - tau0*tau1/8 + tau0/32
+  g = -tau0/2 - tau1*tau2 + tau2/2
+  c = tau0**2*tau1/4 - tau0*tau1/16
+  g = -tau0*tau2 - tau1/2 + 1/4
+  c = -tau0**2/32 - tau0*tau1/32 + tau0/64
+  g = -4*tau0*tau1 + tau0 + tau1 - tau2
+JOB support=(3, 37, 47, 53, 71, 79, 89) sign=(-1, 1, 1, -1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = -tau0**2*tau1**2*tau2**2/2 - tau0**2*tau1**2*tau2/4 - tau0**2*tau1*tau2**2/4 - tau0**2*tau1*tau2/8 - tau0*tau1**2*tau2**2/4 - tau0*tau1**2*tau2/8 - tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = -tau0**2*tau1*tau2/2 - tau0**2*tau1/4 - tau0**2/16 - tau0*tau1*tau2/4 - tau0*tau1/8 - tau0/32
+  g = -tau0/2 + tau1*tau2 + tau2/2
+  c = tau0**2*tau1/4 + tau0*tau1/16
+  g = -tau0*tau2 + tau1/2 + 1/4
+  c = tau0**2/32 + tau0*tau1/32 + tau0/64
+  g = -4*tau0*tau1 - tau0 - tau1 + tau2
+JOB support=(3, 37, 47, 53, 71, 79, 89) sign=(-1, 1, -1, 1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = tau0**2*tau1**2*tau2**2/2 + tau0**2*tau1**2*tau2/4 - tau0**2*tau1*tau2**2/4 - tau0**2*tau1*tau2/8 + tau0*tau1**2*tau2**2/4 + tau0*tau1**2*tau2/8 - tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = -tau0**2*tau1*tau2/2 - tau0**2*tau1/4 + tau0**2/16 - tau0*tau1*tau2/4 - tau0*tau1/8 + tau0/32
+  g = -tau0/2 - tau1*tau2 + tau2/2
+  c = tau0**2*tau1/4 + tau0*tau1/16
+  g = -tau0*tau2 - tau1/2 + 1/4
+  c = tau0**2/32 - tau0*tau1/32 + tau0/64
+  g = -4*tau0*tau1 + tau0 - tau1 - tau2
+JOB support=(3, 37, 47, 53, 71, 79, 89) sign=(-1, -1, 1, 1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = tau0**2*tau1**2*tau2**2/2 - tau0**2*tau1**2*tau2/4 + tau0**2*tau1*tau2**2/4 - tau0**2*tau1*tau2/8 + tau0*tau1**2*tau2**2/4 - tau0*tau1**2*tau2/8 + tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = -tau0**2*tau1*tau2/2 + tau0**2*tau1/4 + tau0**2/16 - tau0*tau1*tau2/4 + tau0*tau1/8 + tau0/32
+  g = -tau0/2 - tau1*tau2 - tau2/2
+  c = tau0**2*tau1/4 + tau0*tau1/16
+  g = -tau0*tau2 - tau1/2 - 1/4
+  c = -tau0**2/32 - tau0*tau1/32 - tau0/64
+  g = -4*tau0*tau1 - tau0 - tau1 - tau2
+JOB support=(3, 37, 47, 53, 71, 79, 89) sign=(-1, -1, -1, 1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = tau0**2*tau1**2*tau2**2; verified by sympy.expand
+  c = -tau0**2*tau1*tau2 + tau0/8
+  g = -tau0 - tau1*tau2
+  c = tau0**2*tau2/4 + tau2/16
+  g = -4*tau0*tau1 - 2*tau2
+  c = -tau0*tau2/2 + tau1/8
+  g = -tau0*tau2 - tau1
+  c = -1/8
+  g = -tau0**2 - tau1**2 - tau2**2
+JOB support=(3, 37, 47, 53, 71, 79, 89) sign=(-1, -1, -1, -1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = tau0**2*tau1**2*tau2**2/2 + tau0**2*tau1**2*tau2/4 + tau0**2*tau1*tau2**2/4 + tau0**2*tau1*tau2/8 - tau0*tau1**2*tau2**2/4 - tau0*tau1**2*tau2/8 - tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = -tau0**2*tau1*tau2/2 - tau0**2*tau1/4 - tau0**2/16 + tau0*tau1*tau2/4 + tau0*tau1/8 + tau0/32
+  g = -tau0/2 - tau1*tau2 - tau2/2
+  c = tau0**2*tau1/4 - tau0*tau1/16
+  g = -tau0*tau2 - tau1/2 - 1/4
+  c = tau0**2/32 - tau0*tau1/32 - tau0/64
+  g = -4*tau0*tau1 - tau0 + tau1 - tau2
+JOB support=(37, 41, 47, 53, 71, 79, 89) sign=(1, 1, 1, 1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = tau0**2*tau1**2*tau2**2/2 - tau0**2*tau1**2*tau2/4 - tau0**2*tau1*tau2**2/4 + tau0**2*tau1*tau2/8 - tau0*tau1**2*tau2**2/4 + tau0*tau1**2*tau2/8 + tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = -tau0*tau1*tau2**2/2 + tau0*tau1*tau2/4 + tau0*tau2**2/4 - tau0*tau2/8 + tau1*tau2**2/4 - tau1*tau2/16 - tau1/32 - tau2**2/8 + tau2/16
+  g = -tau0*tau1 + tau1/2 - tau2/2
+  c = -tau1**2*tau2/4 + tau1**2/16 + tau1*tau2**2/4 - tau1/32 - tau2**2/8 + tau2/16
+  g = -tau0*tau2 - tau1/2 + tau2/2
+  c = tau1**2/16 - tau1*tau2/16
+  g = -tau0/2 - 2*tau1*tau2 + tau1/2 + tau2/2
+JOB support=(37, 41, 47, 53, 71, 79, 89) sign=(1, 1, -1, -1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = -tau0**2*tau1**2*tau2**2/2 + tau0**2*tau1**2*tau2/4 - tau0**2*tau1*tau2**2/4 + tau0**2*tau1*tau2/8 + tau0*tau1**2*tau2**2/4 - tau0*tau1**2*tau2/8 + tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = tau0*tau1*tau2**2/2 - tau0*tau1*tau2/4 + tau0*tau2**2/4 - tau0*tau2/8 - tau1*tau2**2/4 + tau1*tau2/16 + tau1/32 - tau2**2/8 + tau2/16
+  g = -tau0*tau1 + tau1/2 + tau2/2
+  c = tau1**2*tau2/4 - tau1**2/16 + tau1*tau2**2/4 - tau1/32 + tau2**2/8 - tau2/16
+  g = -tau0*tau2 + tau1/2 + tau2/2
+  c = -tau1**2/32 - tau1*tau2/32
+  g = -tau0 + 4*tau1*tau2 - tau1 + tau2
+JOB support=(37, 41, 47, 53, 71, 79, 89) sign=(1, -1, 1, -1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = -tau0**2*tau1**2*tau2**2/2 + tau0**2*tau1**2*tau2/4 + tau0**2*tau1*tau2**2/4 - tau0**2*tau1*tau2/8 - tau0*tau1**2*tau2**2/4 + tau0*tau1**2*tau2/8 + tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = tau0*tau1*tau2**2/2 - tau0*tau1*tau2/4 - tau0*tau2**2/4 + tau0*tau2/8 + tau1*tau2**2/4 - tau1*tau2/16 - tau1/32 - tau2**2/8 + tau2/16
+  g = -tau0*tau1 - tau1/2 + tau2/2
+  c = -tau1**2*tau2/4 + tau1**2/16 + tau1*tau2**2/4 - tau1/32 - tau2**2/8 + tau2/16
+  g = -tau0*tau2 + tau1/2 - tau2/2
+  c = tau1**2/32 - tau1*tau2/32
+  g = -tau0 + 4*tau1*tau2 - tau1 - tau2
+JOB support=(37, 41, 47, 53, 71, 79, 89) sign=(1, -1, -1, 1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = -tau0**2*tau1**2*tau2**2/2 - tau0**2*tau1**2*tau2/4 + tau0**2*tau1*tau2**2/4 + tau0**2*tau1*tau2/8 + tau0*tau1**2*tau2**2/4 + tau0*tau1**2*tau2/8 - tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = tau0*tau1*tau2**2/2 + tau0*tau1*tau2/4 - tau0*tau2**2/4 - tau0*tau2/8 - tau1*tau2**2/4 - tau1*tau2/16 + tau1/32 + tau2**2/8 + tau2/16
+  g = -tau0*tau1 + tau1/2 + tau2/2
+  c = tau1**2*tau2/4 + tau1**2/16 + tau1*tau2**2/4 - tau1/32 - tau2**2/8 - tau2/16
+  g = -tau0*tau2 + tau1/2 + tau2/2
+  c = -tau1**2/32 - tau1*tau2/32
+  g = -tau0 + 4*tau1*tau2 + tau1 - tau2
+JOB support=(37, 41, 47, 53, 71, 79, 89) sign=(1, -1, -1, -1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = -tau0**2*tau1**2*tau2**2; verified by sympy.expand
+  c = -tau0**2*tau1*tau2/4 - tau0/16
+  g = -2*tau0 + 4*tau1*tau2
+  c = tau0**2*tau2/2 + tau2/8
+  g = -tau0*tau1 + tau2
+  c = tau0*tau2/2 + tau1/8
+  g = -tau0*tau2 + tau1
+  c = 1/8
+  g = -tau0**2 - tau1**2 - tau2**2
+JOB support=(37, 41, 47, 53, 71, 79, 89) sign=(-1, 1, 1, 1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = tau0**2*tau1**2*tau2**2; verified by sympy.expand
+  c = -tau0**2*tau1*tau2/2 + tau0/8
+  g = -tau0 - 2*tau1*tau2
+  c = tau0**2*tau2/2 + tau2/8
+  g = -tau0*tau1 - tau2
+  c = -tau0*tau2/2 + tau1/8
+  g = -tau0*tau2 - tau1
+  c = -1/8
+  g = -tau0**2 - tau1**2 - tau2**2
+JOB support=(37, 41, 47, 53, 71, 79, 89) sign=(-1, 1, 1, -1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = tau0**2*tau1**2*tau2**2/2 - tau0**2*tau1**2*tau2/4 + tau0**2*tau1*tau2**2/4 - tau0**2*tau1*tau2/8 + tau0*tau1**2*tau2**2/4 - tau0*tau1**2*tau2/8 + tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = -tau0*tau1*tau2**2/2 + tau0*tau1*tau2/4 - tau0*tau2**2/4 + tau0*tau2/8 - tau1*tau2**2/4 + tau1*tau2/16 + tau1/32 - tau2**2/8 + tau2/16
+  g = -tau0*tau1 - tau1/2 - tau2/2
+  c = tau1**2*tau2/4 - tau1**2/16 + tau1*tau2**2/4 - tau1/32 + tau2**2/8 - tau2/16
+  g = -tau0*tau2 - tau1/2 - tau2/2
+  c = -tau1**2/16 - tau1*tau2/16
+  g = -tau0/2 - 2*tau1*tau2 + tau1/2 - tau2/2
+JOB support=(37, 41, 47, 53, 71, 79, 89) sign=(-1, 1, -1, 1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = tau0**2*tau1**2*tau2**2/2 + tau0**2*tau1**2*tau2/4 + tau0**2*tau1*tau2**2/4 + tau0**2*tau1*tau2/8 - tau0*tau1**2*tau2**2/4 - tau0*tau1**2*tau2/8 - tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = -tau0*tau1*tau2**2/2 - tau0*tau1*tau2/4 - tau0*tau2**2/4 - tau0*tau2/8 + tau1*tau2**2/4 + tau1*tau2/16 - tau1/32 + tau2**2/8 + tau2/16
+  g = -tau0*tau1 + tau1/2 - tau2/2
+  c = -tau1**2*tau2/4 - tau1**2/16 + tau1*tau2**2/4 - tau1/32 + tau2**2/8 + tau2/16
+  g = -tau0*tau2 - tau1/2 + tau2/2
+  c = tau1**2/16 - tau1*tau2/16
+  g = -tau0/2 - 2*tau1*tau2 - tau1/2 - tau2/2
+JOB support=(37, 41, 47, 53, 71, 79, 89) sign=(-1, -1, 1, 1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = tau0**2*tau1**2*tau2**2/2 + tau0**2*tau1**2*tau2/4 - tau0**2*tau1*tau2**2/4 - tau0**2*tau1*tau2/8 + tau0*tau1**2*tau2**2/4 + tau0*tau1**2*tau2/8 - tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = -tau0*tau1*tau2**2/2 - tau0*tau1*tau2/4 + tau0*tau2**2/4 + tau0*tau2/8 - tau1*tau2**2/4 - tau1*tau2/16 + tau1/32 + tau2**2/8 + tau2/16
+  g = -tau0*tau1 - tau1/2 - tau2/2
+  c = tau1**2*tau2/4 + tau1**2/16 + tau1*tau2**2/4 - tau1/32 - tau2**2/8 - tau2/16
+  g = -tau0*tau2 - tau1/2 - tau2/2
+  c = -tau1**2/16 - tau1*tau2/16
+  g = -tau0/2 - 2*tau1*tau2 - tau1/2 + tau2/2
+JOB support=(37, 41, 47, 53, 71, 79, 89) sign=(-1, -1, -1, -1) vars=[tau0, tau1, tau2] (sum c_i g_i = P^1, D=4); P = -tau0**2*tau1**2*tau2**2/2 - tau0**2*tau1**2*tau2/4 - tau0**2*tau1*tau2**2/4 - tau0**2*tau1*tau2/8 - tau0*tau1**2*tau2**2/4 - tau0*tau1**2*tau2/8 - tau0*tau1*tau2**2/8 - tau0*tau1*tau2/16; verified by sympy.expand
+  c = tau0*tau1*tau2**2/2 + tau0*tau1*tau2/4 + tau0*tau2**2/4 + tau0*tau2/8 + tau1*tau2**2/4 + tau1*tau2/16 - tau1/32 + tau2**2/8 + tau2/16
+  g = -tau0*tau1 - tau1/2 + tau2/2
+  c = -tau1**2*tau2/4 - tau1**2/16 + tau1*tau2**2/4 - tau1/32 + tau2**2/8 + tau2/16
+  g = -tau0*tau2 + tau1/2 - tau2/2
+  c = tau1**2/32 - tau1*tau2/32
+  g = -tau0 + 4*tau1*tau2 + tau1 + tau2

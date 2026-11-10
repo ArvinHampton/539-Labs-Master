@@ -1,0 +1,44 @@
+[0] MR2_MN2_KK_TRUNCATION_BOLZA_AUT48_ISOM96_WALL_Z2_2026-11-09.py sha256 88949658116586c63dc4785fc31c222eed6d9ef44afbefbc6e40a4946b20b26c (MATCH 88949658)
+[0] MR2_MN2_KK_A_S4_DEPENDENT_SPIN2_AUT48_2026-11-09.py sha256 17f821d25491ea072cd574238f052b30d8c7dcc8e5681ae2b44e5e642d5c977a (MATCH 17f821d2)
+[0] V2 twist parameters: line 'a1=(1+zv)/2, a2=(1-zv)/2' present: True -> MN2 (z=1): a1 = 1, a2 = 0
+[RA-4] full 11D op on F(u,v)*nu (l=1,j=0,q=1): = 2 H_q F + mu F with mu = 7 = 2l(l+3)+2j(j+1)-q^2 and H_q = -v^2[(d_u - i s q/v)^2 + d_v^2], s = +1: max rel diff 2.9e-15 (a1 = 1)
+[RA-4] nu (l=1,j=0,q=1): sign s = -1 does not match (max rel diff 1.1e+00)
+[RA-4] full 11D op on F(u,v)*nu^2 (l=2,j=0,q=2): = 2 H_q F + mu F with mu = 16 = 2l(l+3)+2j(j+1)-q^2 and H_q = -v^2[(d_u - i s q/v)^2 + d_v^2], s = +1: max rel diff 1.6e-15 (a1 = 1)
+[RA-4] nu^2 (l=2,j=0,q=2): sign s = -1 does not match (max rel diff 8.1e-01)
+[RA-4] full 11D op on F(u,v)*m0 nu (l=2,j=1,q=1): = 2 H_q F + mu F with mu = 23 = 2l(l+3)+2j(j+1)-q^2 and H_q = -v^2[(d_u - i s q/v)^2 + d_v^2], s = +1: max rel diff 3.0e-15 (a1 = 1)
+[RA-4] m0 nu (l=2,j=1,q=1): sign s = -1 does not match (max rel diff 5.0e-01)
+[RA-4] full 11D op on F(u,v)*nubar^3 (l=3,j=0,q=-3): = 2 H_q F + mu F with mu = 27 = 2l(l+3)+2j(j+1)-q^2 and H_q = -v^2[(d_u - i s q/v)^2 + d_v^2], s = +1: max rel diff 1.1e-15 (a1 = 1)
+[RA-4] nubar^3 (l=3,j=0,q=-3): sign s = -1 does not match (max rel diff 3.5e+00)
+[RA-5] exact: H_b - (Delta_2b + b^2) = 0; Delta_(k+2) R_k - R_k Delta_k = 0; L_(k+2) R_k - (Delta_k + (k/2)(1+k/2)) = 0; Delta_k on v^(k/2) (holomorphic weight-k type) - (k/2)(1-k/2) = 0
+[RA-5] => R_k commutes with the Laplacians and L R = Delta + (k/2)(1+k/2) > 0 on every eigenvalue that occurs (lambda > 0 at k = 0; m(1-m) + m(1+m) = 2m at k = 2m), so raising is injective and eigenvalue-preserving.
+[RA-5] => on K^n (weight 2n, b = n): spectrum of H_n = { n^2 + m(1-m) : m = 1..n, mult h0(K^m) } U { n^2 + lambda : lambda > 0 scalar Laplace eigenvalue }, with R equivariant for Aut+ (canonical lift);
+        n^2 + m(1-m) = n(2k+1) - k(k+1), k = n - m (hyperbolic Landau levels). Completeness of this list is the standard Maass raising/lowering theory (cited; identities above verified exactly).
+[RA-6] eta = dx^3/y^2 transforms by det^3/kappa = -1.000000+0.000000j; det of the H^0(K) matrix Pm = -1.000000+0.000000j (equal => eta carries det rho) [x->ix]
+[RA-6] eta = dx^3/y^2 transforms by det^3/kappa = -1.000000+0.000000j; det of the H^0(K) matrix Pm = -1.000000+0.000000j (equal => eta carries det rho) [x->(x+1)/(1-x)]
+[RA-6] H^0(K^1): dim 2 (RR: 2); Aut+-invariant dimension = -0.000000; control: (2,3,8) orbifold formula dim S_2m = -(2m-1) + [m/2] + [2m/3] + [7m/8] (m>=2; m=1: g(orbifold)=0 -> 0) = 0
+[RA-6] H^0(K^2): dim 3 (RR: 3); Aut+-invariant dimension = 0.000000; control: (2,3,8) orbifold formula dim S_2m = -(2m-1) + [m/2] + [2m/3] + [7m/8] (m>=2; m=1: g(orbifold)=0 -> 0) = 0
+[RA-6] H^0(K^3): dim 5 (RR: 5); Aut+-invariant dimension = 0.000000; control: (2,3,8) orbifold formula dim S_2m = -(2m-1) + [m/2] + [2m/3] + [7m/8] (m>=2; m=1: g(orbifold)=0 -> 0) = 0
+[RA-6] H^0(K^4): dim 7 (RR: 7); Aut+-invariant dimension = 0.000000; control: (2,3,8) orbifold formula dim S_2m = -(2m-1) + [m/2] + [2m/3] + [7m/8] (m>=2; m=1: g(orbifold)=0 -> 0) = 0
+[RA-6] H^0(K^5): dim 9 (RR: 9); Aut+-invariant dimension = 0.000000; control: (2,3,8) orbifold formula dim S_2m = -(2m-1) + [m/2] + [2m/3] + [7m/8] (m>=2; m=1: g(orbifold)=0 -> 0) = 0
+[RA-6] H^0(K^6): dim 11 (RR: 11); Aut+-invariant dimension = 1.000000; control: (2,3,8) orbifold formula dim S_2m = -(2m-1) + [m/2] + [2m/3] + [7m/8] (m>=2; m=1: g(orbifold)=0 -> 0) = 1
+[RA-6] H^0(K^7): dim 13 (RR: 13); Aut+-invariant dimension = 0.000000; control: (2,3,8) orbifold formula dim S_2m = -(2m-1) + [m/2] + [2m/3] + [7m/8] (m>=2; m=1: g(orbifold)=0 -> 0) = 0
+[RA-6] H^0(K^8): dim 15 (RR: 15); Aut+-invariant dimension = 1.000000; control: (2,3,8) orbifold formula dim S_2m = -(2m-1) + [m/2] + [2m/3] + [7m/8] (m>=2; m=1: g(orbifold)=0 -> 0) = 1
+[C] Aut+-invariant scalar levels lambda > 0 (FEM n=60/120 Richardson): [np.float64(23.078559), np.float64(74.926718)]; uniform-point control m^2 L5^2 = 2 lambda = [np.float64(46.1571), np.float64(149.8534)]
+[RA-7] lowest Group-A-invariant charged spin-2 modes (each q also at -q; SU(2)_R multiplet dim 2j+1; x Sigma invariant multiplicity):
+     m^2 L5^2 =   55.15712  Delta =   9.69137  |q| = 1, j = 0, l = 1, H_Sigma = 24.07856 [raised scalar lambda=23.07856], Sigma-invariant mult 1
+     m^2 L5^2 =   70.15712  Delta =  10.61145  |q| = 2, j = 0, l = 2, H_Sigma = 27.07856 [raised scalar lambda=23.07856], Sigma-invariant mult 1
+     m^2 L5^2 =   71.15712  Delta =  10.66932  |q| = 1, j = 1, l = 2, H_Sigma = 24.07856 [raised scalar lambda=23.07856], Sigma-invariant mult 1
+     m^2 L5^2 =   83.15712  Delta =  11.33580  |q| = 1, j = 0, l = 3, H_Sigma = 24.07856 [raised scalar lambda=23.07856], Sigma-invariant mult 1
+     m^2 L5^2 =   84.00000  Delta =  11.38083  |q| = 6, j = 0, l = 6, H_Sigma = 6.00000 [Landau m=6 (H^0(K^6) inv 1)], Sigma-invariant mult 1
+     m^2 L5^2 =   90.15712  Delta =  11.70346  |q| = 2, j = 1, l = 3, H_Sigma = 27.07856 [raised scalar lambda=23.07856], Sigma-invariant mult 1
+     m^2 L5^2 =   91.15712  Delta =  11.75485  |q| = 3, j = 0, l = 3, H_Sigma = 32.07856 [raised scalar lambda=23.07856], Sigma-invariant mult 1
+     m^2 L5^2 =   95.15712  Delta =  11.95777  |q| = 1, j = 2, l = 3, H_Sigma = 24.07856 [raised scalar lambda=23.07856], Sigma-invariant mult 1
+     m^2 L5^2 =  106.15712  Delta =  12.49558  |q| = 2, j = 0, l = 4, H_Sigma = 27.07856 [raised scalar lambda=23.07856], Sigma-invariant mult 1
+     m^2 L5^2 =  107.15712  Delta =  12.54311  |q| = 1, j = 1, l = 4, H_Sigma = 24.07856 [raised scalar lambda=23.07856], Sigma-invariant mult 1
+     m^2 L5^2 =  115.15712  Delta =  12.91591  |q| = 3, j = 1, l = 4, H_Sigma = 32.07856 [raised scalar lambda=23.07856], Sigma-invariant mult 1
+     m^2 L5^2 =  118.15712  Delta =  13.05247  |q| = 2, j = 2, l = 4, H_Sigma = 27.07856 [raised scalar lambda=23.07856], Sigma-invariant mult 1
+     m^2 L5^2 =  118.15712  Delta =  13.05247  |q| = 4, j = 0, l = 4, H_Sigma = 39.07856 [raised scalar lambda=23.07856], Sigma-invariant mult 1
+     m^2 L5^2 =  120.00000  Delta =  13.13553  |q| = 6, j = 1, l = 7, H_Sigma = 6.00000 [Landau m=6 (H^0(K^6) inv 1)], Sigma-invariant mult 1
+[RA-7] completeness of the list below 120: for |q| >= 7 every Sigma level has H >= |q| and l >= |q|, so m^2 L5^2 >= 2|q| + q^2 + 6|q| >= 105 with Landau invariants only at m = 6, 8 (m <= 8 checked): q=7, m=6 gives 2*19 + 91 = 129; raised-scalar levels for |q| >= 5 give >= 151.
+[RA-7] q = 1, 2: no Landau-level invariants (H^0(K), H^0(K^2) have none) -> lowest via raised lambda = 23.07856: q=1: 55.15712, q=2: 70.15712
+[done] runtime 13.2 s

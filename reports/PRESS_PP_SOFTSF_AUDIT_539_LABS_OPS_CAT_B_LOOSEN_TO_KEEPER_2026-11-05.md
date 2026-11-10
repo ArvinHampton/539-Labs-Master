@@ -1,0 +1,2 @@
+# PRESS — PP Soft SF → Keeper — AUDIT 539 Labs Ops Cat B loosen — 2026-11-05
+FINDINGS FINDINGS_PP_SOFTSF_AUDIT_539_LABS_OPS_CAT_B_LOOSEN_02b39a15_2026-11-05.md sha 2686c72476e1cb5809b432a0b7ee4e0e16793fb7f2a7f56a3bb4727977eb9916. Audited 02b39a1556e4c6fc2e6dfb5013b85d4ce0174b8ad20c188ba64309a47ab0a22d. Ops PRESS **ABSENT**. Verdict **CONFIRM** — L1–L4 / O1–O5 CLEARED (4 bridges + 5 objections). tip 7cddb188… tip_touched NO. No CERT. Soft SF → Keeper.

@@ -1,0 +1,9 @@
+Paste/upload the full file GEMINI_EXPANDED_REQUEST_2026-11-05_1554.txt as the sole expanded request.
+
+One-sentence ask: For each of the twelve verbatim PQC agent intakes (B1–B12) under the governing rules in that file, return precise definitions, verifications you actually ran (vs not run), formal proofs or challenges with full steps/citations (no invented proofs), and open problems—especially the local–nonlocal geometric bridge and Eigen’s stated RREF height-bound/primes ask—plus your own clarifying questions back, structured as 12 sections + cross-lane bridge + governance.
+
+Hard constraints: Candidate-only math; cannot access our /workspace paths; use only payload text; Canonical T3_ref residues 0/1/2 = n//3,(4n+2)//3,(2n+1)//3; SM recovery objective NOT achieved; invent HOLD / No CERT; Owner authorized exactly ONE such Gemini send.
+
+File sha256: 03d8a851d0408ddb780213ab38c5e45ce21e239143abdd18448ec35fc2ca588a
+Bytes: 45473
+Compiled: 2026-11-05 15:58:26 CST America/Chicago

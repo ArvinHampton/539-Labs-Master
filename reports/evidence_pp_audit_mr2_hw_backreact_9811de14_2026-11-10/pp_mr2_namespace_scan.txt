@@ -1,0 +1,3 @@
+PP namespace scan of mr2_hw_backreact_jet_charge_2026-11-10.py (grep -nE 'nsimplify|float|Float|evalf|N\(|allclose|numpy|simplify\(|open\(')
+6:_me = open(__file__, 'rb').read()
+Result: only line 6 (open(__file__) for self-hash). No nsimplify, no simplify, no float/evalf/numpy/allclose, no file input (f4ee61f2 not read). sp.factor used only for printing (line 150). is_positive_definite (K4) on an integer matrix; PP re-checked by exact LDL (P8.7).

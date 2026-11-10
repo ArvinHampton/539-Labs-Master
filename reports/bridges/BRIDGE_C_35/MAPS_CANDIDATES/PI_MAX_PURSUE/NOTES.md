@@ -1,0 +1,5 @@
+# NOTES
+- Acceptance recorded: Π := Π*_max = (01)^269 0, sha256 c2c26fdae7b1e1f677799f9a6a210c429ea9c1f4b23f48ae1bbc66aab54f8d87, rule RP4 (P_res hit count including w_539). Accepted 2026-10-24 by Arvin ("Max... Pursue"). Also accepted: g=(−1)^τ; P_res (u≡3 mod 9). Verified by PM1.
+- C6 missing clause: the sources (A35 REPORT: S⁴=1, (ST)³=S²; BRIDGE_C_35 REPORT entry 94; Cross-Review C5: S²=P, S_lab=ρ(S)⁻¹) define M_S but never a reading of a 0/1 word as M_S powers. Needed clause: "letter b ↦ M_S^{f(b)}" with f written (and a convention S vs S_lab=S⁻¹). Every choice of f is an invention, so C6 stays OPEN.
+- Remaining free choices beyond RP4: (1) letter→group-element map f; (2) S vs S⁻¹ convention for the product; (3) letter→coset assignment for the |S|² chain; (4) any identity linking 269/270 to a modular integer.
+- Lock: CORE_FREEZE; no L1–L7; no α1/Ξ/new fibres; T3/E1–E3 not built (no written recipe) and stay OPEN; DISCOVER_PI_RULE/ and Bridge C order*/papers untouched; no push/send.

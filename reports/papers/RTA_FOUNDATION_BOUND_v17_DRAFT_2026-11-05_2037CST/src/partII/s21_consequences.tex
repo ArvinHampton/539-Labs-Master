@@ -1,0 +1,74 @@
+%=====================================================================
+\section{Consequences}\label{sec:consequences}
+%=====================================================================
+\subsection{No scalar residual law; the law that exists}
+\begin{proposition}[No scalar residual law]\label{prop:noscalar8}
+\begin{enumerate}[label=(\roman*)]
+\item There is no identity $C=F+\mathcal E$ with $F$ an algebraic combination of holomorphic modular forms, signature-$(1,1)$ mock (Zwegers) holomorphic parts,
+unary, partial or false theta series, and $\mathcal E(e^{-t})=o(1/t)$.
+\item There is no quotient law $C\cdot g=F$ with holomorphic modular $g\not\equiv0$, $F$.
+\item There is no scalar $W_7$ law: for no weight $k$ and no constant $\lambda$ is $C(\tau)-\lambda(7\tau)^{-k}C(-1/(7\tau))$ radially bounded at all rationals.
+\end{enumerate}
+\end{proposition}
+\catA{This restates Theorem~\ref{thm:E} and \S\ref{sec:gauss}: (i), (ii) are conditional on Baker's theorem and the $q$-expansion principle, using the leading term
+$C(e^{-t})=I/t+a_Ct^{-1/2}+\cdots$ and $a_C\neq0$; (iii) is an exact finite computation: at $178$ of the $270$ test rationals (denominator $<30$), including $x=5/7$,
+exactly one of $G(x)$, $G(-1/(7x))$ vanishes (Theorem~\ref{thm:D}).}
+
+\begin{proposition}[The law that exists has weight $1$ and is vector-valued]\label{prop:weight8}
+\begin{enumerate}[label=(\roman*)]
+\item Where both Gauss means are nonzero, $|G|$ obeys an exact weight-$1$ relation with $|\lambda|=7^{-1/2}$ (\S\ref{sec:gauss}); the leading $1/t$ radial profiles obey
+the $S/T$ law with factor $1/|x|$ (Theorem~\ref{thm:profile}); and the vector cocycle has automorphy factor $|cx+d|$ (Theorem~\ref{thm:G}).
+\item The vector law consists of the $140$-label Siegel lift to $\lambda=\tfrac14$ Maass forms (Theorem~\ref{thm:F}), the Lewis--Zagier period formula
+(Theorem~\ref{thm:G}), the $42$-dimensional function span $V=V_{\rm Eis}(36)\oplus V_{\rm cusp}(6)$ (Theorem~\ref{thm:H}), the Herglotz closed form
+(Theorems~\ref{thm:I}, \ref{thm:J}), the identification $\rho_{\rm lab}\cong\rho_{N_2}$ (Theorem~\ref{thm:weil8}) and the uniqueness statements of \S\ref{sec:uniq}.
+It is a law for the vector of cone sums, not for scalar $C$.
+\item The characteristic $a=A^{-1}(0,\tfrac s2)^{\mathsf T}=\big(\tfrac s{2(s-2)},-\tfrac1{s-2}\big)$ completes the square: $Q_+(v)=Q_2(v+a)+c_0$ with $c_0=\tfrac s{4(s-2)}$.
+\end{enumerate}
+\end{proposition}
+\catA{(i), (ii) with the status of the cited theorems as stated where they appear; Theorem~\ref{thm:K} is not part of the law and stays Category~B. (iii):
+$A^{-1}=\frac{-1}{s(s-2)}\left(\begin{smallmatrix}s&-s\\-s&2\end{smallmatrix}\right)$ gives $a$, $B(v,a)=\tfrac s2k$ and $-Q_2(a)=\tfrac s{4(s-2)}$.}
+
+\begin{remark}[Weight $\tfrac12$ cannot carry the residue]\label{rem:holproj8}
+Any weight-$\tfrac12$ harmonic Maass form has radial growth $O(t^{-1/2})$, so no weight-$\tfrac12$ object can carry the $I/t$ term of $C$ (Category~A, conditional on the
+standard, cited $t^{-1/2}$ radial bound).
+\end{remark}
+
+\begin{remark}[Sample values]\label{rem:samples8}
+Four values $19.80$, $1.82$, $9.24$, $20.90$ at $x=1/7,3/7,5/7,1$ that have been proposed as ``residual samples'' are not radial values of $C$:
+$|C(0.995\,\e(x))|\approx19.5,18.5,19.9,54.0$ (floating point, Category~B). The meaningful radial targets are $\lim_{t\to0}t\,C(\e(x)e^{-t})=I\cdot G(x)$ at every
+rational $x$ (Theorem~\ref{thm:D}; Category~A).
+\end{remark}
+
+\subsection{Uniformity in $s$}
+\begin{proposition}[What depends on $s=7$]\label{prop:s7role8}
+$7s-32=-2Q(c_2)$ for the wall $c_2=(-4,1)$ (Proposition~\ref{prop:delta7}); only the factor $s-2$ of $\Delta$ is intrinsic given $c_1$ (Remark~\ref{rem:intrinsic7}). The
+results are otherwise uniform in $s$: the tensor theorem holds for all odd $s$ (Theorem~\ref{thm:tensorodd}), the radial closed forms are rational functions of $s$, and
+Theorem~\ref{thm:Gs} holds for all real $s>0$. The structurally special values are $s=5$ (the radial coefficients of \S\ref{sec:hs} vanish; $H_5\equiv0$) and $s=8$
+(the cone of $H_s$ is the axes cone, $\Delta=144=12^2$).
+\end{proposition}
+\catA{As proved in \S\S\ref{sec:hs}--\ref{sec:cone}.}
+
+\subsection{The case $s=1$}
+$g_1=f_0$, the fifth-order mock theta function (Hickerson--Mortenson \cite{HM}). At $s=1$ the lattice $\left(\begin{smallmatrix}2&1\\1&1\end{smallmatrix}\right)$ has
+$\det=-s(s-2)=1>0$ and is positive definite, so the indefinite part of the construction ($H_s$, $C$, $\Q(\sqrt{s(s-2)})$) does not specialise; $H_s$ is
+Zwegers-admissible only for integer $s\ge5$. Theorem~\ref{thm:Gs} gives a proved radial expansion of $g_s$ uniform in $s$, including $s=1$. Quantum modularity of
+$g_s$ is not claimed.
+
+\subsection{A formal contact with $A_5$}
+$\mathrm{PSL}_2(\mathbb F_5)\cong A_5$. At $s=7$ the label representation has the tensor factor $\rho_{2x^2/5}$ (Theorem~\ref{thm:tensor7}); $V_{\rm Eis}=A_3\otimes
+W_5^+\otimes W_7^+$ contains $W_5^+$ (dimension $3$, factoring projectively through $A_5$) and $V_{\rm cusp}=B_1\otimes W_5^-\otimes W_7^-$ contains $W_5^-$
+(dimension $2$, a faithful representation of $\mathrm{SL}_2(\mathbb F_5)=2\cdot A_5$). This is standard theory together with Theorem~\ref{thm:tensor7}. Numerically
+(Category~B) the $S,T$ images on $W_5^\pm$ generate groups of order $120$ with scalar subgroup $\{\pm1\}$ and quotient of order $60$. Any further reading of this
+contact is Category~B.
+
+\subsection{Status of three questions}\label{sec:three}
+For reference we record the status of three questions about $C$: \textsf{(N1)} a map from $E_8$ or PW data that emits the coefficients; \textsf{(N2)} a unique
+completed period; \textsf{(N3)} a tail. (These labels are unrelated to the lattices $N_1$, $N_2$ of \S\ref{sec:k3}.)
+\begin{center}\small
+\begin{longtable}{p{2.2cm}p{8.6cm}p{3.9cm}}\toprule
+question & status & category\\\midrule\endhead
+\textsf{(N1)} emitting map & No coefficient-emitting map in the classes of Propositions~\ref{prop:N1}--\ref{prop:N4}; such data select $s$ but do not emit coefficients (\S\ref{sec:emit}). Not excluded: Remark~\ref{rem:N1scope}. & A for the stated obstructions\\
+\textsf{(N2)} completed period & Scalar version excluded (Theorem~\ref{thm:E}); existence as the $140$-component vector cocycle (Theorems~\ref{thm:F}, \ref{thm:G}, \ref{thm:I}, \ref{thm:J}). Unique given the positive-frequency $q$-series (with $q^0$) or $\Phi$ on $(0,\infty)$ (Theorem~\ref{thm:uniq9}(i)); not unique under the weak conditions: residual ambiguity $\C\Phi_{v_0}\oplus\{\Phi_c:c\in S(\rho)\}$ with $\dim S(\rho)=1$ (Theorem~\ref{thm:SrhoDim}), and the $\kappa$-level gauge $\C g_0$. & A (computer-assisted for $\dim S(\rho)=1$); a correspondence covering the non-cusp part open\\
+\textsf{(N3)} tail & Exact closed forms at $x=0$ through $t^{17/2}$, at $x=\tfrac12,\tfrac13$ through $t^{13/2}$, at $x=\tfrac14,\tfrac16$ for $t^{11/2},t^{13/2}$, the period-$72$ theorem at $x=\tfrac13$, and the Gauss evaluation and CFP at general $x=a/N$ (\S\ref{sec:hs}). Not given in closed form at all rationals; $t^{19/2}$ onward not computed. & A\\\bottomrule
+\end{longtable}
+\end{center}

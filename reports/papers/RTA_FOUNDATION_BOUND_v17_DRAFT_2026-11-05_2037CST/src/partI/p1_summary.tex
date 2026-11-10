@@ -1,0 +1,32 @@
+\subsubsection{Summary of Part I}\label{summary-of-part-i}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Result
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Statement
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Nature of proof
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Prop. 3.2 & \(g_k(d)=\sum_{n^2\le d,\,n^2\equiv d\,(k)}\varphi_n\bigl(\frac{d-n^2}k\bigr)\) & algebraic \\
+Lemmas 4.1--4.6 & \(\varphi_n(m)=c_m\) for \(m\le n\); \(c_m=(-1)^mQ(m)\); \((-1)^m\varphi_n(m)\ge0\); product form (4.1) & algebraic \\
+Prop. 4.7 & odd \(k\): \((-1)^dg_k(d)=E_d-O_d\) & algebraic \\
+Thm. 5.1 & \(k\ge2\) squarefree \(\Rightarrow g_k(k(k+2))=0\) & algebraic \\
+Thm. 5.3, Cor. 5.4, Thm. 5.5 & for odd prime powers \(k\): formula for \(g_k(k^2+jk+b^2)\), \(b=1,2\); zeros at \((k+2)^2-3\) (\(k\ge5\)), \(k^2+2k+4\) (\(k\equiv3\bmod4\), \(k\ne3,7\)), \(k^2+3k+4\) (\(k\equiv1\bmod4\), \(k\ne5\)); exact failures; complete zero classes & algebraic \\
+Thm. 6.9 & \(\omega(k)=2\), \(k\) odd: \(g_k((k+2)^2-3)\ne0\) except \(k=15,21\) & algebraic + exact integer certificate for \(s\le2500\) + cited bound \cite{Chern} for \(s\ge2501\) \\
+Thm. 7.4, Cor. 7.5, Thm. 7.6 & one-sign classes: explicit bound \(B_c\) beyond which \(g_k\ne0\) with a definite sign; \(k\equiv2\pmod4\): \(Z_k\) finite; \(g_2\): sign \((-1)^{\lfloor d/2\rfloor}\), \(Z_2=\{2,8,10,26\}\) & algebraic \\
+Thm. 7.7 & even \(k\ge8\): \(8\nmid k\Rightarrow g_k((k+2)^2-3)\ge2\); \(k=2p^a\Rightarrow=2\); \(k=2^a\Rightarrow<0\) & algebraic \\
+Thm. 8.1 & odd \(k\le33\): \(E_d\le(R_k+10^{-6})O_d\) with \(R_k<0.906\) for allowed \(d\ge D_0(k)\); \(Z_k\) complete; \(\mathrm{OccFilt}_k(\infty)=\mathcal S_k\) & analytic reduction + finite computer-assisted verification (interval arithmetic, modular arithmetic) \\
+\end{longtable}
+
+\textbf{Scope.} Only proved statements are included. For even \(k\) no claim is made on classes of \(d\) that are not one-sign. For odd \(k\ge35\) no claim is made beyond Sections 4--6.
+
+\textbf{Dependence on external results.} Theorem 6.9 for \(s\ge2501\) and the monotonicity of \(Q(n)\) for \(n\ge35200\) (Lemma 6.5) rely on the explicit bound of Chern \cite{Chern} (Theorem~1.1, error term (3.10), Remark~3), cited in Section 6.3. Computer-assisted steps use the Arb ball arithmetic \cite{Arb} and exact integer arithmetic; they are listed in Section 8.8 and Appendix A.

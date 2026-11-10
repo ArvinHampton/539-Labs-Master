@@ -1,0 +1,4 @@
+# Audit note (appended file; the original files are unchanged)
+1. C2 control ran modified relative to PREREG. The prereg says 3 ext + y + 7 fibre; run.py used 3 ext + y + S^6 + 1 flat dimension. The control was rerun exactly as preregistered (S^7 fibre) in prereg/EH_RICCIBLOCK_C2_RERUN_20261024, with PREREG.sha256 written before the run (15d7094460bd 76606c79044a …). Result: PASS (the control fails as required: G_ext=3k²−21e^{-2B}/r² ≠ 6k²−3K). result.log sha256 23928cdf…3709 is in RESULTS.sha256. EH-RB1 is therefore non-vacuous under the preregistered C2. P1–P3 are unaffected.
+2. Timestamp correction: the PREREG header says "~22:10 CDT", but file mtimes show PREREG.md, run.py and PREREG.sha256 at 22:00:50 CDT and result.log at 22:01:22 CDT. The prereg hash still predates the run.
+3. There was no post-run hash of result.log in the original folder. The rule from now on: PREREG.sha256 is written before the run; post-run hashes go in RESULTS.sha256 only.

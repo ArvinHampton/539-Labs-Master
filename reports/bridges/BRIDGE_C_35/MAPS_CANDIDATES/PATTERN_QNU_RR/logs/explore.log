@@ -1,0 +1,35 @@
+N_min_scale 140
+period 8 consistent with 16: True
+period 16 consistent with 16: True
+{
+ "N_min_scale": 140,
+ "period_box": 16,
+ "density": "uniform over n mod P (= natural density on expanding boxes)",
+ "POOL_ALL140": [
+  "1/8",
+  "0",
+  "1/4",
+  "1/4",
+  "1/8",
+  "0",
+  "0",
+  "1/4"
+ ],
+ "support_pool": [
+  0,
+  2,
+  3,
+  4,
+  7
+ ],
+ "POOL_70a1_7_21_49_63": [
+  "0",
+  "0",
+  "0",
+  "1/2",
+  "0",
+  "0",
+  "0",
+  "1/2"
+ ]
+}

@@ -1,0 +1,45 @@
+# FINDINGS — Auditor Soft SF Write-only hash-only confirm: PR2 STATUS + Tubulin ERRATUM
+
+Date/time: 2026-11-03 12:10 America/Chicago (CST)
+Project Quantum Comp. REPORTS ONLY — no RECS. No CERT. Kerr UNLOCKED / Layer2 ABSENT / No CERT.
+
+Tip: /workspace/residual-c-field-WRITTEN_PREMISES_DRAFT.md sha256 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 = expected. tip_touched=NO.
+
+## Packet 1 — PR2 STATUS Owner call-5e2a78c2
+- FINDINGS claim d8149c2c0f1f9fc3151d5d2a8d3b002ea58d4f7acf571327e83a2c64331b674e
+- PRESS claim 79774118a9f9cedf4893536102349279716813fd3645e7d1a86b9bdbc35f7a93
+
+## Packet 2 — Tubulin ERRATUM absorb PP-AUDIT 43ddc6c9
+- FINDINGS claim e7355595c6ef1b38b6b2159d305f51f3afdf9d0b033637d425e6860d9fa3fba2
+- PRESS claim 3e6dcff01c41298dfb058f1294cb52843946760efe16f7968234449a1bd60448
+- Owner ERRATUM notes (recorded only, NOT evaluated): (B2) torsional stiffness RELABELED; (A) typical-not-unique; Chaaban DOI verified.
+- PP-AUDIT 43ddc6c9 under bridges/PROFESSOR_PROOF/: only the two PR2 Tubulin ERRATUM files reference it (both MATCH below). Status recorded only.
+
+## Per-path table (bytes = sidecar = claim unless noted)
+| Path | sha256 | Result |
+|---|---|---|
+| /workspace/quantum-comp/bridges/AUDITOR/FINDINGS_PR2_SOFTSF_STATUS_OWNER_CALL_5e2a78c2_2026-11-03.md | d8149c2c0f1f9fc3151d5d2a8d3b002ea58d4f7acf571327e83a2c64331b674e | MATCH |
+| /workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_PR2_SOFTSF_STATUS_OWNER_CALL_5e2a78c2_2026-11-03.md | d8149c2c0f1f9fc3151d5d2a8d3b002ea58d4f7acf571327e83a2c64331b674e | MATCH |
+| /workspace/quantum-comp/reports/FINDINGS_PR2_SOFTSF_STATUS_OWNER_CALL_5e2a78c2_2026-11-03.md | d8149c2c0f1f9fc3151d5d2a8d3b002ea58d4f7acf571327e83a2c64331b674e | MATCH |
+| /workspace/quantum-comp/bridges/PROFESSOR_PROOF/FINDINGS_PR2_SOFTSF_STATUS_OWNER_CALL_5e2a78c2_2026-11-03.md | - | NOT FOUND |
+| /workspace/reports/FINDINGS_PR2_SOFTSF_STATUS_OWNER_CALL_5e2a78c2_2026-11-03.md | - | NOT FOUND |
+| /workspace/quantum-comp/bridges/AUDITOR/SOFTSF_PRESS_FINDINGS_PR2_SOFTSF_STATUS_OWNER_CALL_5e2a78c2_2026-11-03.md | 79774118a9f9cedf4893536102349279716813fd3645e7d1a86b9bdbc35f7a93 | MATCH |
+| /workspace/quantum-comp/reports/bridges/AUDITOR/SOFTSF_PRESS_FINDINGS_PR2_SOFTSF_STATUS_OWNER_CALL_5e2a78c2_2026-11-03.md | 79774118a9f9cedf4893536102349279716813fd3645e7d1a86b9bdbc35f7a93 | MATCH |
+| /workspace/quantum-comp/reports/SOFTSF_PRESS_FINDINGS_PR2_SOFTSF_STATUS_OWNER_CALL_5e2a78c2_2026-11-03.md | 79774118a9f9cedf4893536102349279716813fd3645e7d1a86b9bdbc35f7a93 | MATCH |
+| /workspace/quantum-comp/bridges/PROFESSOR_PROOF/SOFTSF_PRESS_FINDINGS_PR2_SOFTSF_STATUS_OWNER_CALL_5e2a78c2_2026-11-03.md | - | NOT FOUND |
+| /workspace/reports/SOFTSF_PRESS_FINDINGS_PR2_SOFTSF_STATUS_OWNER_CALL_5e2a78c2_2026-11-03.md | - | NOT FOUND |
+| /workspace/quantum-comp/bridges/AUDITOR/FINDINGS_PR2_TUBULIN_LIT_ERRATUM_PP_AUDIT_43ddc6c9_2026-11-03.md | e7355595c6ef1b38b6b2159d305f51f3afdf9d0b033637d425e6860d9fa3fba2 | MATCH |
+| /workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_PR2_TUBULIN_LIT_ERRATUM_PP_AUDIT_43ddc6c9_2026-11-03.md | e7355595c6ef1b38b6b2159d305f51f3afdf9d0b033637d425e6860d9fa3fba2 | MATCH |
+| /workspace/quantum-comp/reports/FINDINGS_PR2_TUBULIN_LIT_ERRATUM_PP_AUDIT_43ddc6c9_2026-11-03.md | e7355595c6ef1b38b6b2159d305f51f3afdf9d0b033637d425e6860d9fa3fba2 | MATCH |
+| /workspace/quantum-comp/bridges/PROFESSOR_PROOF/FINDINGS_PR2_TUBULIN_LIT_ERRATUM_PP_AUDIT_43ddc6c9_2026-11-03.md | e7355595c6ef1b38b6b2159d305f51f3afdf9d0b033637d425e6860d9fa3fba2 | MATCH |
+| /workspace/reports/FINDINGS_PR2_TUBULIN_LIT_ERRATUM_PP_AUDIT_43ddc6c9_2026-11-03.md | - | NOT FOUND |
+| /workspace/quantum-comp/bridges/AUDITOR/SOFTSF_PRESS_FINDINGS_PR2_TUBULIN_LIT_ERRATUM_PP_AUDIT_43ddc6c9_2026-11-03.md | 3e6dcff01c41298dfb058f1294cb52843946760efe16f7968234449a1bd60448 | MATCH |
+| /workspace/quantum-comp/reports/bridges/AUDITOR/SOFTSF_PRESS_FINDINGS_PR2_TUBULIN_LIT_ERRATUM_PP_AUDIT_43ddc6c9_2026-11-03.md | 3e6dcff01c41298dfb058f1294cb52843946760efe16f7968234449a1bd60448 | MATCH |
+| /workspace/quantum-comp/reports/SOFTSF_PRESS_FINDINGS_PR2_TUBULIN_LIT_ERRATUM_PP_AUDIT_43ddc6c9_2026-11-03.md | 3e6dcff01c41298dfb058f1294cb52843946760efe16f7968234449a1bd60448 | MATCH |
+| /workspace/quantum-comp/bridges/PROFESSOR_PROOF/SOFTSF_PRESS_FINDINGS_PR2_TUBULIN_LIT_ERRATUM_PP_AUDIT_43ddc6c9_2026-11-03.md | 3e6dcff01c41298dfb058f1294cb52843946760efe16f7968234449a1bd60448 | MATCH |
+| /workspace/reports/SOFTSF_PRESS_FINDINGS_PR2_TUBULIN_LIT_ERRATUM_PP_AUDIT_43ddc6c9_2026-11-03.md | - | NOT FOUND |
+
+## Counts
+MATCH 14 / MISMATCH 0 / NO-SIDECAR 0 / NOT FOUND 6 (Packet 1 absent in PROFESSOR_PROOF; all four absent in /workspace/reports)
+
+REPORTS ONLY — no RECS. No CERT. No tip edit. No physics invented.

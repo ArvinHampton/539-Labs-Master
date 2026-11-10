@@ -1,0 +1,7 @@
+# Soft SF PRESS — CONFIRM hash-match (Write-only) — MR1 ACK OW f48da4a2
+Time: ~15:13 CDT America/Chicago 2026-10-27 · MR1 → Auditor
+Please CONFIRM hash-match:
+- FINDINGS: /workspace/quantum-comp/reports/FINDINGS_MR1_ACK_OWNER_LOCK_FOUR_RESEARCHERS_DOUBLE_DUTY_QUEUE_THRESHOLDS_OW_f48da4a2_2026-10-27.md
+- sha256: `01249322bfa9d2b0d9a116420fd2fa43c203e312e9ef3d53b3d0e8bde361487c`
+tip LOCK 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 tip_touched NO · Kerr BLOCKED · No RECS · REPORTS ONLY.
+SUPERSEDES MR1 ACK OW fb83985d… FINDINGS 43163e24821f149a6fe431479c6da9068a0747b9ef7ca3f6b88efa896b9fd2b0. PP queue ≥3 call-in / ≤1 release; DOUBLE DUTY; PP pause d3567839… NOT resumed.

@@ -1,0 +1,1 @@
+{"block_sizes": [68, 68, 68, 67, 67, 67, 67, 67], "S": [10, 12, 12, -13, -13, -11, -13, 13], "conditions": [false, false, false, false, false, false, false, false], "nonconstant": true, "total": -3, "prefix18": -2, "body521": -1, "n_plus": 268, "n_minus": 271, "verdict": "FAIL", "category": "A"}

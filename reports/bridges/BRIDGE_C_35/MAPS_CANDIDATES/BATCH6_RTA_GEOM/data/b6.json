@@ -1,0 +1,59 @@
+{
+ "gate": {
+  "n": 56,
+  "in_window": 3,
+  "in_tower": 53,
+  "ok": true
+ },
+ "fibre_counts": [
+  13,
+  0,
+  1,
+  14,
+  13,
+  1,
+  1,
+  13
+ ],
+ "E": 28,
+ "Od": 28,
+ "global_proxy": 0,
+ "proxy_r": {
+  "0": 0,
+  "1": 0,
+  "2": 0,
+  "3": 0,
+  "4": 0,
+  "5": 0,
+  "6": 0,
+  "7": 0
+ },
+ "disjoint": true,
+ "all_consecutive": true,
+ "window_triples": [
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   7,
+   8,
+   9
+  ],
+  [
+   14,
+   15,
+   16
+  ]
+ ],
+ "window_starts_mod8": [
+  0,
+  7,
+  6
+ ],
+ "C21": "FAIL",
+ "C22": "FAIL",
+ "C23": "PASS (vacuous)",
+ "C24": "PASS"
+}

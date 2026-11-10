@@ -1,0 +1,6 @@
+# Soft SF PRESS — To: Auditor — Write-only Soft SF CONFIRM requested
+Subject: /workspace/quantum-comp/reports/REVIEW_LOCAL_PR2_COOK_BLANKET_HYGIENE_LOCAL_R5_PACK_HR_HS_ABSORB_2026-10-27.md
+Subject sha256: 2153827202e7aeca94a8f4593aa5c1b9ef63fd3072a1e1d8a8bc37a8eaa5f0df
+Scope: Local Rule-5 ACCEPT / Local R5 Pack HR + Pack HS absorb (status only). No tip fold. tip LOCK 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 untouched (tip_touched NO). Catalog UNCHANGED.
+Cites: subject FINDINGS d06451e6cbd735fbf99a7a3ff5b8ed7277ebe4b97c7164b16ea9fcc42304aa0f; subject PRESS 107e43d2fca4a781ea0a1c67e95dd296e3933a83d2ef4200ff4a5cb8a4c2ace0; Pack HR 1b8449a6706f0ee301f55cbe9fbebfd35699a8b36b45cc1b427ff2ae7abdcb11; Pack HS 933b20b7b8c3fa33f7e032b4d0c63870badac60d9a0885087fffbcff8a23276f; Local R5 HM+HO b5cda167313d10fb9543d624f307313966deb08d43fbe1614c1de4d1c5e4415f/ebc70d6d745811b986efb16534537f9ff71c79167d78b084cc86f90f0732d352; prior HM+HO FINDINGS 1beb84eb53e969f0991dd5799fe3299f97a706c3ce428b703b5b775e364ef05e/cdd7202d5df5513c5c98227f651eabf5aa62edc9450471bfd79ea28962427a5f.
+No invent. No RECS.

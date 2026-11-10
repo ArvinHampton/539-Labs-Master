@@ -1,0 +1,15 @@
+/workspace/quantum-comp/reports/evidence_local_t4436_branches_2026-11-09/s4b_alpha_classification_realchar.py:18: SymPyDeprecationWarning: 
+
+The `sympy.ntheory.residue_ntheory.jacobi_symbol` has been moved to `sympy.functions.combinatorial.numbers.jacobi_symbol`.
+
+See https://docs.sympy.org/latest/explanation/active-deprecations.html#deprecated-ntheory-symbolic-functions
+for details.
+
+This has been deprecated since SymPy version 1.13. It
+will be removed in a future version of SymPy.
+
+  return jacobi_symbol(d % n, n) if n>1 else 1
+8 real characters of (Z/140)^x verified multiplicative, 140-periodic and distinct
+real-character matrix M (rows d = [1, -4, 5, -7, -20, 28, -35, 140] , cols K90):
+Matrix([[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [-1, -1, 1, 1, -1, 1, 1, -1, -1, -1, 1], [-1, 1, -1, 1, -1, -1, 1, 1, 1, -1, 1], [-1, 1, 1, -1, -1, 1, -1, 1, 1, -1, -1], [1, -1, -1, 1, 1, -1, 1, -1, -1, 1, 1], [1, -1, 1, -1, 1, 1, -1, -1, -1, 1, -1], [1, 1, -1, -1, 1, -1, -1, 1, 1, 1, -1], [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]])
+rank M = 4

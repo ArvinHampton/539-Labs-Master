@@ -1,0 +1,127 @@
+arXiv:2011.02058v1 [math.NT] 3 Nov 2020
+
+Local and Global Analysis
+Garth Warner
+Department of Mathematics
+University of Washington
+
+ACKNOWLEDGEMENTS
+
+Many thanks to Judith Clare Salzer for typing the manuscript on an IBM Selectric.
+Recently David Clark converted the typwritten manuscript to AMS-TeX. This was a
+monumental task and in so doing he made a number of constructive and useful suggestions
+which serve to enhance the exposition. His careful scrutiny of the manuscript has been
+invaluable.
+
+DEDICATION
+This article is dedicated to the memory of Paul Sally.
+
+2
+
+CONTENTS
+
+§1.
+
+ABSOLUTE VALUES
+
+§2.
+
+TOPOLOGICAL FIELDS
+
+§3.
+
+COMPLETIONS
+
+§4.
+
+p-ADIC STRUCTURE THEORY
+
+§5.
+
+LOCAL FIELDS
+
+§6.
+
+HAAR MEASURE
+
+§7.
+
+HARMONIC ANALYSIS
+
+§8.
+
+ADDITIVE p-ADIC CHARACTER THEORY
+
+§9.
+
+MULTIPLICATIVE p-ADIC CHARACTER THEORY
+
+§10.
+
+TEST FUNCTIONS
+
+§11.
+
+LOCAL ZETA FUNCTIONS: R× OR C×
+
+§12.
+
+LOCAL ZETA FUNCTIONS: Q×
+p
+
+§13.
+
+RESTRICTED PRODUCTS
+
+§14.
+
+ADELES AND IDELES
+3
+
+§15.
+
+GLOBAL ANALYSIS
+
+§16.
+
+FUNCTIONAL EQUATIONS
+
+§17.
+
+GLOBAL ZETA FUNCTIONS
+
+§18.
+
+LOCAL ZETA FUNCTIONS (BIS)
+
+§19.
+
+L-FUNCTIONS
+
+§20.
+
+FINITE CLASS FIELD THEORY
+
+§21.
+
+LOCAL CLASS FIELD THEORY
+
+§22.
+
+WEIL GROUPS: THE ARCHIMEDEAN CASE
+
+§23.
+
+WEIL GROUPS: THE NON-ARCHIMEDEAN CASE
+
+§24.
+
+THE WEIL-DELIGNE GROUP
+APPENDIX A: TOPICS IN TOPOLOGY
+APPENDIX B: TOPICS IN ALGEBRA
+APPENDIX C: TOPICS IN GALOIS THEORY
+REFERENCES
+
+4
+
+

@@ -1,0 +1,1832 @@
+                                              NOETHER-LEFSCHETZ THEORY AND THE
+                                                   YAU-ZASLOW CONJECTURE
+arXiv:0807.2477v2 [math.AG] 28 Dec 2008
+
+
+
+
+                                          A. KLEMM, D. MAULIK, R. PANDHARIPANDE AND E. SCHEIDEGGER
+
+
+
+
+                                              Abstract. The Yau-Zaslow conjecture predicts the genus 0 curve
+                                              counts of K3 surfaces in terms of the Dedekind η function. The
+                                              classical intersection theory of curves in the moduli of K3 surfaces
+                                              with Noether-Lefschetz divisors is related to 3-fold Gromov-Witten
+                                              invariants via the K3 curve counts. Results by Borcherds and
+                                              Kudla-Millson determine these classical intersections in terms of
+                                              vector-valued modular forms. Proven mirror transformations can
+                                              often be used to calculate the 3-fold invariants which arise.
+                                                 Via a detailed study of the STU model (determining special
+                                              curves in the moduli of K3 surfaces), we prove the Yau-Zaslow
+                                              conjecture for all curve classes on K3 surfaces. Two modular form
+                                              identities are required. The first, the Klemm-Lerche-Mayr identity
+                                              relating hypergeometric series to modular forms after mirror trans-
+                                              formation, is proven here. The second, the Harvey-Moore identity,
+                                              is proven by D. Zagier and presented in the paper.
+
+
+                                                                         Contents
+                                          0. Introduction                                                             2
+                                          0.1. Yau-Zaslow conjecture                                                  2
+                                          0.2. Noether-Lefschetz theory                                               5
+                                          0.3. Three theories                                                        10
+                                          0.4. Proof of Theorem 1                                                    11
+                                          0.5. Acknowledgments                                                       12
+                                          1. The STU model                                                           13
+                                          1.1. Overview                                                              13
+                                          1.2. Toric varieties                                                       13
+                                          1.3. The toric 4-fold Y                                                    15
+                                          1.4. Fibrations                                                            16
+                                          1.5. Divisor restrictions                                                  20
+                                          1.6. 1-parameter families                                                  21
+                                          1.7. Gromov-Witten invariants                                              22
+                                          2. Noether-Lefschetz numbers and reduced K3 invariants                     22
+                                          Date: December 2008.
+                                                                               1
+2    A. KLEMM, D. MAULIK, R. PANDHARIPANDE AND E. SCHEIDEGGER
+
+    2.1. Refined Noether-Lefschetz numbers                            22
+    2.2. STU model                                                    23
+    2.3. BPS states                                                   25
+    2.4. Invertibility of constraints                                 26
+    2.5. Proof of the Yau-Zaslow conjecture                           28
+    3. Mirror transform                                               29
+    3.1. Picard-Fuchs                                                 29
+    3.2. Solutions                                                    29
+    3.3. Mirror transform for q3 = 0                                  30
+    3.4. B-model                                                      33
+    4. The Harvey-Moore identity                                      36
+    4.1. Proof of Proposition 4                                       36
+    4.2. Zagier’s proof of the Harvey-Moore identity                  36
+    References                                                        38
+
+
+
+                           0. Introduction
+
+0.1. Yau-Zaslow conjecture. Let S be a nonsingular projective K3
+surface, and let
+
+                  β ∈ Pic(S) = H 2 (S, Z) ∩ H 1,1 (S, C)
+
+be a nonzero effective curve class. The moduli space M 0 (S, β) of genus
+0 stable maps (with no marked points) has expected dimension
+                            Z
+             vir
+                         
+          dimC M 0 (S, β) = c1 (S) + dimC (S) − 3 = −1.
+                                  β
+
+Hence, the virtual class [M 0 (S, β)]vir vanishes, and the standard Gromov-
+Witten theory is trivial.
+ Curve counting on K3 surfaces is captured instead by the reduced
+Gromov-Witten theory constructed first via the twistor family in [6].
+An algebraic construction following [1, 2] is given in [31]. Since the
+reduced class
+                    [M 0 (S, β)]red ∈ H0 (M 0 (S, β), Q)
+has dimension 0, the reduced Gromov-Witten integrals of S,
+                               Z
+(1)                 R0,β (S) =         1 ∈ Q,
+                                   [M 0 (S,β)]red
+  NOETHER-LEFSCHETZ THEORY AND THE YAU-ZASLOW CONJECTURE 3
+
+are well-defined. For deformations of S for which β remains a (1, 1)-
+class, the integrals (1) are invariant.
+   The second cohomology of S is a rank 22 lattice with intersection
+form
+                       ∼
+(2)          H 2 (S, Z) = U ⊕ U ⊕ U ⊕ E8 (−1) ⊕ E8 (−1)
+where                                        
+                                        0 1
+                              U=
+                                        1 0
+and
+                                          
+                      −2 0  1 0  0  0 0  0
+                     0 −2 0  1  0  0 0  0 
+                                          
+                     1  0 −2 1  0  0 0  0 
+                                          
+                     0  1  1 −2 1  0 0  0 
+          E8 (−1) =                       
+                     0  0  0 1 −2 1  0  0 
+                     0  0  0 0  1 −2 1  0 
+                                          
+                     0  0  0 0  0  1 −2 1 
+                       0 0  0 0  0  0 1 −2
+is the (negative) Cartan matrix. The intersection form (2) is even.
+   The divisibility m(β) is the maximal positive integer dividing the
+lattice element β ∈ H 2 (S, Z). If the divisibility is 1, β is primitive.
+Elements with equal divisibility and norm are equivalent up to or-
+thogonal transformation of H 2 (S, Z). By straightforward deformation
+arguments using the Torelli theorem for K3 surfaces, R0,β (S) depends,
+for effective classes, only on the divisibility m(β) and the norm hβ, βi.
+We will omit the argument S in the notation.
+ The genus 0 BPS counts associated to K3 surfaces have the following
+definition. Let α ∈ Pic(S) be a nonzero class which is both effective and
+primitive. The Gromov-Witten potential Fα (v) for classes proportional
+to α is
+                                  X
+                           Fα =         R0,mα v mα .
+                                  m>0
+The BPS counts r0,mα are uniquely defined by via the Aspinwall-Morrison
+formula,
+                              X             X v dmα
+(3)                    Fα =         r0,mα              ,
+                              m>0
+                                                  d3
+                                            d>0
+4     A. KLEMM, D. MAULIK, R. PANDHARIPANDE AND E. SCHEIDEGGER
+
+for both primitive and divisible classes.
+ The Yau-Zaslow conjecture [36] predicts the values of the genus 0
+BPS counts for the reduced Gromov-Witten theory of K3 surfaces.
+We interpret the conjecture in two parts.
+
+Conjecture 1. The BPS count r0,β depends upon β only through the
+norm hβ, βi.
+
+    Conjecture 1 is rather surprising from the point of view of Gromov-
+Witten theory since R0,β certainly depends upon the divisibility of β.
+Let r0,m,h denote the genus 0 BPS count associated to a class β of
+divisibility m satisfying
+                                   hβ, βi = 2h − 2.
+Assuming Conjecture 1 holds, we define
+                                     r0,h = r0,m,h
+independent1 of m.
+
+Conjecture 2. The BPS counts r0,h are uniquely determined by
+                  X           Y∞
+                           h
+(4)                  r0,h q =     (1 − q n )−24 .
+                          h≥0             n=1
+
+Conjecture 2 can be written in terms of the Dedekind η function
+                       X
+                           r0,h q h−1 = η(τ )−24
+                             h≥0
+              2πiτ
+where q = e .
+  The conjectures have been previously proven in very few cases. A
+proof of the Yau-Zaslow formula (4) for primitive classes β via Euler
+characteristics of compactified Jacobians following [36] can be found
+in [3, 7, 11]. The Yau-Zaslow formula (4) was proven via Gromov-
+Witten theory for primitive classes β by Bryan and Leung [6]. An
+early calculation by Gathmann [13] for a class β of divisibility 2 was
+important for the correct formulation of the conjectures. Conjectures 1
+    1Independence of m holds when 2m2 divides 2h − 2. Otherwise, no such class β
+exists and r0,m,h is defined to vanish.
+  NOETHER-LEFSCHETZ THEORY AND THE YAU-ZASLOW CONJECTURE 5
+
+and 2 have been proven in the divisibility 2 case by Lee and Leung [26]
+and Wu [35]. The main result of the paper is a proof of Conjectures 1
+and 2 in all cases.
+
+Theorem 1. The Yau-Zaslow conjecture holds for all nonzero effective
+classes β ∈ Pic(S) on a K3 surface S.
+
+0.2. Noether-Lefschetz theory.
+
+0.2.1. Lattice polarization. Let S be a K3 surface. A primitive class
+L ∈ Pic(S) is a quasi-polarization if
+                       hL, Li > 0 and hL, [C]i ≥ 0
+for every curve C ⊂ S. A sufficiently high tensor power Ln of a quasi-
+polarization is base point free and determines a birational morphism
+                                     S → S̃
+contracting A-D-E configurations of (−2)-curves on S. Hence, every
+quasi-polarized K3 surface is algebraic.
+  Let Λ be a fixed rank r primitive2 embedding
+                   Λ ⊂ U ⊕ U ⊕ U ⊕ E8 (−1) ⊕ E8 (−1)
+with signature (1, r − 1), and let v1 , . . . , vr ∈ Λ be an integral basis.
+The discriminant is
+                                                             
+                                  hv1 , v1 i · · · hv1 , vr i
+           ∆(Λ) = (−1)r−1 det  ...              ..
+                                                    .
+                                                        ..  .
+                                                         .
+                                  hvr , v1 i · · · hvr , vr i
+The sign is chosen so ∆(Λ) > 0.
+  A Λ-polarization of a K3 surface S is a primitive embedding
+                                j : Λ → Pic(S)
+satisfying two properties:
+    (i) the lattice pairs Λ ⊂ U 3 ⊕ E8 (−1)2 and Λ ⊂ H 2 (S, Z) are
+        isomorphic via an isometry which restricts to the identity on Λ,
+   (ii) Im(j) contains a quasi-polarization.
+  2An embedding of lattices is primitive if the quotient is torsion free.
+6    A. KLEMM, D. MAULIK, R. PANDHARIPANDE AND E. SCHEIDEGGER
+
+By (ii), every Λ-polarized K3 surface is algebraic.
+   The period domain M of Hodge structures of type (1, 20, 1) on the
+lattice U 3 ⊕ E8 (−1)2 is an analytic open set of the 20-dimensional
+nonsingular isotropic quadric Q,
+                                                   
+                  M ⊂ Q ⊂ P (U 3 ⊕ E8 (−1)2 ) ⊗Z C .
+
+Let MΛ ⊂ M be the locus of vectors orthogonal to the entire sublattice
+Λ ⊂ U 3 ⊕ E8 (−1)2 .
+  Let Γ be the isometry group of the lattice U 3 ⊕ E8 (−1)2 , and let
+
+                                   ΓΛ ⊂ Γ
+
+be the subgroup restricting to the identity on Λ. By global Torelli, the
+moduli space MΛ of Λ-polarized K3 surfaces is the quotient
+
+                               MΛ = MΛ /ΓΛ .
+
+We refer the reader to [10] for a detailed discussion.
+
+0.2.2. Families. Let X be a compact 3-dimensional complex manifold
+equipped with holomorphic line bundles
+
+                              L1 , . . . , Lr → X
+
+and a holomorphic map
+                                 π:X →C
+to a nonsingular complete curve.
+  The tuple (X, L1 , . . . , Lr , π) is a 1-parameter family of nonsingular
+Λ-polarized K3 surfaces if
+    (i) the fibers (Xξ , L1,ξ , . . . , Lr,ξ ) are Λ-polarized K3 surfaces via
+
+                                  vi 7→ Li,ξ
+
+        for every ξ ∈ C,
+    (ii) there exists a λπ ∈ Λ which is a quasi-polarization of all fibers
+         of π simultaneously.
+The family π yields a morphism,
+
+                               ιπ : C → MΛ ,
+     NOETHER-LEFSCHETZ THEORY AND THE YAU-ZASLOW CONJECTURE 7
+
+to the moduli space of Λ-polarized K3 surfaces.
+     Let λπ = λπ1 v1 +· · ·+λπr vr . A vector (d1 , . . . , dr ) of integers is positive
+if
+                                     r
+                                     X
+                                           λπi di > 0.
+                                     i=1
+If β ∈ Pic(Xξ ) has intersection numbers
+                                    di = hLi,ξ , βi,
+then β has positive degree with respect to the quasi-polarization if and
+only if (d1 , . . . , dr ) is positive.
+
+0.2.3. Noether-Lefschetz divisors. Noether-Lefschetz numbers are de-
+fined in [31] by the intersection of ιπ (C) with Noether-Lefschetz divi-
+sors in MΛ . We briefly review the definition of the Noether-Lefschetz
+divisors.
+   Let (L, ι) be a rank r + 1 lattice L with an even symmetric bilinear
+form h, i and a primitive embedding
+                                      ι : Λ → L.
+Two data sets (L, ι) and (L′ , ι′ ) are isomorphic if there is an isometry
+which restricts to identity on Λ. The first invariant of the data (L, ι)
+is the discriminant ∆ ∈ Z of L.
+   An additional invariant of (L, ι) can be obtained by considering any
+vector v ∈ L for which
+(5)                                L = ι(Λ) ⊕ Zv.
+The pairing
+                                    hv, ·i : Λ → Z
+determines an element of δv ∈ Λ∗ . Let G = Λ∗ /Λ be quotient defined
+via the injection Λ → Λ∗ obtained from the pairing h, i on Λ. The
+group G is abelian of order equal to the discriminant ∆(Λ). The image
+                                       δ ∈ G/±
+of δv is easily seen to be independent of v satisfying (5). The invariant
+δ is the coset of (L, ι)
+8     A. KLEMM, D. MAULIK, R. PANDHARIPANDE AND E. SCHEIDEGGER
+
+    By elementary arguments, two data sets (L, ι) and (L′ , ι′ ) of rank
+r + 1 are isomorphic if and only if the discriminants and cosets are
+equal.
+  Let v1 , . . . , vr be an integral basis of Λ as before. The pairing of L
+with respect to an extended basis v1 , . . . , vr , v is encoded in the matrix
+                                                               
+                             hv1 , v1 i · · · hv1 , vr i   d1
+                             ...        ..
+                                            .
+                                                  ..
+                                                   .
+                                                            .. 
+                                                             . .
+            Lh,d1 ,...,dr = 
+                            hv , v i · · · hv , v i            
+                               r 1              r r        d  r
+                               d1       ···     dr       2h − 2
+The discriminant is
+
+                   ∆(h, d1 , . . . , dr ) = (−1)r det(Lh,d1 ,...,dr ).
+
+The coset δ(h, d1, . . . , dr ) is represented by the functional
+
+                                           vi 7→ di .
+
+    The Noether-Lefschetz divisor P∆,δ ⊂ MΛ is the closure of the locus
+of Λ-polarized K3 surfaces S for which (Pic(S), j) has rank r + 1,
+discriminant ∆, and coset δ. By the Hodge index theorem, P∆,δ is
+empty unless ∆ > 0.
+    Let h, d1 , . . . , dr determine a positive discriminant
+
+                                ∆(h, d1 , . . . , dr ) > 0.
+
+The Noether-Lefschetz divisor Dh,(d1 ,...,dr ) ⊂ MΛ is defined by the
+weighted sum
+                                    X
+               Dh,(d1 ,...,dr ) =         m(h, d1 , . . . , dr |∆, δ) · [P∆,δ ]
+                                    ∆,δ
+
+where the multiplicity m(h, d1 , . . . , dr |∆, δ) is the number of elements
+β of the lattice (L, ι) of type (∆, δ) satisfying
+
+(6)                      hβ, βi = 2h − 2, hβ, vi i = di .
+
+If the multiplicity is nonzero, then ∆|∆(h, d1 , . . . , dr ) so only finitely
+many divisors appear in the above sum.
+ If ∆(h, d1 , . . . , dr ) = 0, the divisor Dh,(d1 ,...,dr ) has an alternate def-
+inition. The tautological line bundle O(−1) is Γ-equivariant on the
+   NOETHER-LEFSCHETZ THEORY AND THE YAU-ZASLOW CONJECTURE 9
+
+period domain MΛ and descends to the Hodge line bundle
+
+                                        K → MΛ .
+
+We define Dh,(d1 ,...,dr ) = K∗ . See [31] for an alternate view of degenerate
+intersection.
+   If ∆(h, d1 , . . . , dr ) < 0, the divisor Dh,(d1 ,...,dr ) on MΛ is defined to
+vanish by the Hodge index theorem.
+
+0.2.4. Noether-Lefschetz numbers. Let Λ be a lattice of discriminant
+l = ∆(Λ), and let (X, L1 , . . . , Lr , π) be a 1-parameter family of Λ-
+polarized K3 surfaces. The Noether-Lefschetz number NLπh,d1 ,...,dr is
+the classical intersection product
+                                         Z
+                         π
+(7)                  NLh,(d1 ,...,dr ) =   ι∗π [Dh,(d1 ,...,dr ) ].
+                                                 C
+
+   Let Mp2 (Z) be the metaplectic double cover of SL2 (Z). There is a
+canonical representation [4] associated to Λ,
+
+                             ρ∗Λ : Mp2 (Z) → End(C[G]).
+
+The full set of Noether-Lefschetz numbers NLπh,d1 ,...,dr defines a vector
+valued modular form
+                         X                    1
+                Φπ (q) =     Φπγ (q)vγ ∈ C[[q 2l ]] ⊗ C[G],
+                                 γ∈G
+
+of weight 22−r
+            2
+               and type ρ∗Λ by results3 of Borcherds and Kudla-Millson
+[4, 25]. The Noether-Lefschetz numbers are the coefficients4 of the
+components of Φπ ,
+                                                                             
+                                                     ∆(h, d1 , . . . , dr )
+                      NLπh,(d1 ,...,dr ) = Φπγ
+                                                           2l
+where δ(h, d1 , . . . , dr ) = ±γ. The modular form results significantly
+constrain the Noether-Lefschetz numbers.
+
+   3While the results of the papers [4, 25] have considerable overlap, we will follow
+the point of view of Borcherds.
+   4If f is a series in q, f [k] denotes the coefficient of q k .
+10     A. KLEMM, D. MAULIK, R. PANDHARIPANDE AND E. SCHEIDEGGER
+
+0.2.5. Refinements. If d1 , . . . , dr do not simultaneously vanish, refined
+Noether-Lefschetz divisors are defined. If ∆(h, d1 , . . . , dr ) > 0,
+
+                             Dm,h,(d1 ,...,dr ) ⊂ Dh,(d1 ,...,dr )
+
+is defined by requiring the class β ∈ Pic(S) to satisfy (6) and have
+divisibility m > 0. If ∆(h, d1 , . . . , dr ) = 0, then
+
+                             Dm,h,(d1 ,...,dr ) = Dh,(d1 ,...,dr )
+
+if m > 0 is the greatest common divisor of d1 , . . . , dr and 0 otherwise.
+   Refined Noether-Lefschetz numbers are defined by
+                                        Z
+                     π
+(8)               NLm,h,(d1 ,...,dr ) =   ι∗π [Dm,h,(d1 ,...,dr ) ].
+                                               C
+
+In Section 2.5, the full set of Noether-Lefschetz numbers NLπh,(d1 ,...,dr )
+is easily shown to determine the refined numbers NLπm,h,(d1 ,...,dr ) .
+
+0.3. Three theories. The main geometric idea in the proof is the
+relationship of three theories associated to a 1-parameter family
+
+                                       π:X →C
+
+of Λ-polarized K3 surfaces:
+       (i) the Noether-Lefschetz numbers of π,
+      (ii) the genus 0 Gromov-Witten invariants of X,
+     (iii) the genus 0 reduced Gromov-Witten invariants of the K3 fibers.
+The Noether-Lefschetz numbers (i) are classical intersection products
+while the Gromov-Witten invariants (ii)-(iii) are quantum in origin.
+For (ii), we view the theory in terms the Gopakumar-Vafa invariants5
+[16, 17].
+  Let nX 0,(d1 ,...,dr ) denote the Gopakumar-Vafa invariant of X in genus 0
+for π-vertical curve classes of degrees d1 , . . . , dr with respect to the line
+bundles L1 , . . . , Lr . Let r0,m,h denote the reduced K3 invariant defined
+in Section 0.1. The following result is proven6 in [31] by a comparison
+     5A review of the definitions can be found in Section 2.5.
+     6The result of the [31] is stated in the rank r = 1 case, but the argument is
+identical for arbitrary r.
+  NOETHER-LEFSCHETZ THEORY AND THE YAU-ZASLOW CONJECTURE 11
+
+of the reduced and usual deformation theories of maps of curves to the
+K3 fibers of π.
+
+Theorem 2. For degrees (d1 , . . . , dr ) positive with respect to the quasi-
+polarization λπ ,
+                                    ∞ X
+                                    X ∞
+               nX
+                0,(d1 ,...,dr ) =             r0,m,h · NLπm,h,(d1 ,...,dr ) .
+                                    h=0 m=1
+
+0.4. Proof of Theorem 1. The STU model described in Section 1 is
+a special family of rank 2 lattice polarized K3 surfaces
+
+                               π ST U : X ST U → P1 .
+
+The fibered K3 surfaces of the STU model are themselves elliptically
+fibered. The proof of Theorem 1 proceeds in four basic steps:
+    (i) The modular form [4, 25] determining the intersections of the
+        base P1 with the Noether-Lefschetz divisors is calculated. For
+        the STU model, the modular form has vector dimension 1 and
+        is proportional to the product E4 E6 of Eisenstein series.
+                                                              ST U
+   (ii) Theorem 2 is used to show the 3-fold BPS counts nX  0,(d1 ,d2 ) then
+        determine all the reduced K3 invariants r0,m,h . Strong use is
+        made of the rank 2 lattice of the STU model.
+                             ST U
+  (iii) The BPS counts nX  0,(d1 ,d2 ) are calculated via mirror symmetry.
+        Since the STU model is realized as a Calabi-Yau complete in-
+        tersection in a nonsingular toric variety, the genus 0 Gromov-
+        Witten invariants are obtained after proven mirror transfor-
+        mations from hypergeometric series. The Klemm-Lerche-Mayr
+                                                                                ST U
+        identity, proven in Section 3, shows the invariants nX
+                                                             0,(d1 ,d2 ) are
+        themselves related to modular forms.
+   (iv) Theorem 1 then follows from the Harvey-Moore identity which
+        simultaneously relates the modular structures of
+                        ST U                                 ST U
+                    nX                            π
+                     0,(d1 ,d2 ) , r0,m,h , and NLm,h,(d1 ,d2 )
+
+        in the form specified by Theorem 2. D. Zagier’s proof of the
+        Harvey-Moore identity is presented in Section 4.
+12     A. KLEMM, D. MAULIK, R. PANDHARIPANDE AND E. SCHEIDEGGER
+
+     The strategy of proof is special to genus 0. Much less is known
+in higher genus. The Katz-Klemm-Vafa conjecture [21, 31] for the
+integral7
+                               Z
+                                                    (−1)g λg
+                                   [M g (S,β)]red
+
+
+is a particular generalization of the Yau-Zaslow formula to higher gen-
+era. The KKV formula does not yet appear easily approachable in
+Gromov-Witten theory.8 However, a proof of the KKV formula for
+primitive K3 classes in the conjecturally equivalent theory of stable
+pairs in the derived category is given in [22, 34].
+
+
+
+0.5. Acknowledgments. We thank R. Borcherds, J. Bruinier, J. Bry-
+an, B. Conrad, I. Dolgachev, J. Lee, E. Looijenga, G. Moore, Y.
+Ruan, R. Thomas, G. Tian, W. Zhang, and A. Zinger for conversa-
+tions about Noether-Lefschetz divisors, reduced invariants of K3 sur-
+faces, and modular forms. We are especially grateful to D. Zagier for
+providing us a proof of the Harvey-Moore identity.
+   The Clay institute workshop on K3 surfaces in March 2008 which all
+of us attended played a crucial role in the completion of the paper. We
+thank J. Carlson, D. Ellwood, and the Clay institute staff for providing
+a wonderful research environment. Parts of the paper were written
+during visits to the Scuola Normale Superiore in Pisa and the Hausdorff
+Institute for Mathematics in Bonn in the summer of 2008.
+  A.K. was partially supported by DOE grant DE-FG02-95ER40896.
+D.M. was partially supported by a Clay research fellowship. R.P. was
+partially support by NSF grant DMS-0500187.
+
+
+
+     7The integrand λ
+                     g is the top Chern class of the Hodge bundle on M g (X, β).
+     8For g = 1, the KKV formula follows for all classes on K3 surfaces from the
+Yau-Zaslow formula via the boundary relation for λ1 .
+  NOETHER-LEFSCHETZ THEORY AND THE YAU-ZASLOW CONJECTURE 13
+
+                           1. The STU model
+
+1.1. Overview. The STU model9 is a particular nonsingular projec-
+tive Calabi-Yau 3-fold X equipped with a fibration
+(9)                              π : X → P1 .
+Except for 528 points ξ ∈ P1 , the fibers
+                                 Xξ = π −1 (ξ)
+are nonsingular elliptically fibered K3 surfaces. The 528 singular fibers
+Xξ have exactly 1 ordinary double point singularity each.
+   The 3-fold X is constructed as an anticanonical section of a non-
+singular projective toric 4-fold Y . The Picard rank of Y is 6. The
+fibration (9) is obtained from a nonsingular toric fibration
+                                π Y : Y → P1 .
+The image of
+                             Pic(Y ) → Pic(Xξ )
+determines a rank 2 sublattice of each fiber Pic(Xξ ) with intersection
+form                                
+                                0 1
+                                        .
+                                1 0
+   The toric data describing the construction of X ⊂ Y and the fibra-
+tion structure are explained here.
+
+1.2. Toric varieties. Let N be a lattice of rank d,
+                                       ∼
+                                   N = Zd .
+A fan Σ in N is a collection of strongly convex rational polyhedral cones
+containing all faces and intersections. A toric variety VΣ is canonically
+associated to Σ. The variety VΣ is complete of dimension d if the
+support of Σ covers N ⊗Z R. If all cones are simplicial and if all
+  9The model has been studied in physics since the 80’s. The letter S stands for
+the dilaton and T and U label the torus moduli in the heterotic string. The STU
+model was an important example for the duality between type IIA and heterotic
+strings formulated in [20]. The ideas developed in [18, 19, 23, 24, 30] about the
+STU model play an important role in our paper.
+14     A. KLEMM, D. MAULIK, R. PANDHARIPANDE AND E. SCHEIDEGGER
+
+maximal cones are generated by a lattice basis, then VΣ is nonsingular.
+See [8, 12, 32] for the basic properties of toric varieties.
+  Let Σ be a fan corresponding to a nonsingular complete toric variety.
+A 1-dimensional cone of Σ is a ray with a unique primitive vector.
+Let Σ(1) denote the set of 1-dimensional cones of Σ indexed by their
+primitive vectors
+
+(10)                                 {ρ1 , . . . , ρn }.
+
+Let r 1 , . . . r ℓ be a basis over the integers of the module of relations
+among the vectors (10). We write the j th relation as
+
+                              r1j ρ1 + . . . + rnj ρn = 0.
+
+Define a torus
+                                                ℓ
+                                                Y
+                                       ∗ ℓ ∼
+                                   (C ) =             C∗j
+                                                j=1
+
+with factors indexed by the relations.
+  A simple description of VΣ is obtained via a quotient construction.
+Let {zi }1≤i≤n be coordinates on Cn corresponding to the primitives ρi
+of the rays in Σ(1) . An action of C∗j on Cn is defined by
+                                    rj                   j   
+(11)         λj · z1 , . . . , zn = λj 1 z1 , . . . , λrj n zn ,   λj ∈ C∗j
+
+In order to obtain a well-behaved quotient for the induced (C∗ )ℓ -action
+on Cn , an exceptional set Z(Σ) ⊂ Cn consisting of a finite union of
+linear subspaces is excluded. The linear space defined by {zi = 0 |i ∈ I}
+is contained in Z(Σ) if there is no single cone in Σ containing all of the
+primitives {ρi }i∈I . After removing Z(Σ), the quotient
+                                         .     ℓ
+(12)                     VΣ = Cn \ Z(Σ)       C∗
+
+yields the toric variety associated to Σ.
+  Since ℓ = n − d, the complex dimension of the quotient VΣ equals
+the rank d of the lattice N. The variety VΣ is equipped with the action
+of the quotient torus
+                                 T = (C∗ )n /(C∗ )ℓ .
+  NOETHER-LEFSCHETZ THEORY AND THE YAU-ZASLOW CONJECTURE 15
+
+The rank of Pic(VΣ ) is ℓ. The primitives ρi are in 1–to–1 correspondence
+with the T -invariant divisors Di on VΣ defined by
+                                
+(13)                        Di = zi = 0            ⊂ VΣ .
+
+Conversely, the homogeneous coordinate zi is a section of the line bun-
+dle O(Di ). The anticanonical divisor class of VΣ is determined by
+                                             n
+                                             X
+(14)                             − KVΣ =           Di .
+                                             i=1
+
+
+
+1.3. The toric 4-fold Y . The fan Σ in Z4 defining the toric 4-fold Y
+has 10 rays with primitive elements
+
+        ρ1 = (1, 0, 2, 3)    ρ2 = (−1, 0, 2, 3)
+        ρ3 = (0, 1, 2, 3)    ρ4 = (0, −1, 2, 3)
+        ρ5 = (0, 0, 2, 3)    ρ6 = (0, 0, −1, 0)             ρ7 = (0, 0, 0, −1)
+        ρ8 = (0, 0, 1, 2)    ρ9 = (0, 0, 0, 1)              ρ10 = (0, 0, 1, 1).
+
+The full fan Σ is obtained from the convex hull of the 10 primitives.
+By explicitly checking each of 24 dimension 4 cones, Y is seen to be a
+complete nonsingular toric 4-fold.
+  Generators r 1 , . . . , r 6 of the rank 6 module of relations among the
+primitives can be taken to be
+
+       ρ1 +ρ2                     +4ρ6       +6ρ7                            =0
+                 ρ3 +ρ4           +4ρ6       +6ρ7                            =0
+                            ρ5    +2ρ6       +3ρ7                            =0
+                                    ρ6       +2ρ7 +ρ8                        =0
+                                             + ρ7     +ρ9                    =0
+                                       ρ6    + ρ7         +ρ10               =0
+                                                                  Q10
+  By the identification (14) of −KY , the product                   i=1 zi defines an
+anticanonical section. Hence, every product
+                             10
+                             Y
+                                    zimi ,   mi ≥ 0
+                              i=1
+16     A. KLEMM, D. MAULIK, R. PANDHARIPANDE AND E. SCHEIDEGGER
+                                                P10     j
+which is homogeneous of degree                     i=1 ri with respect to the action (11)
+of C∗j also defines an anticanonical section. Hence,
+
+(15)       z1 12 z4 12 z5 6 z8 4 z9 2 z10 3 ,              z1 12 z3 12 z5 6 z8 4 z9 2 z10 3 ,
+           z2 12 z4 12 z5 6 z8 4 z9 2 z10 3 ,              z2 12 z3 12 z5 6 z8 4 z9 2 z10 3 ,
+                               z6 3 z8 z9 2 ,                                      z7 2 z10
+
+are all sections of −KY .
+  From the definitions, we find Z(Σ) consists of the union of the fol-
+lowing 11 linear spaces of dimension 2 in C4 ,
+
+
+           I1 = {1, 2},          I2 = {3, 4},            I3 = {5, 6},             I4 = {5, 7},
+(16)       I5 = {5, 9},          I6 = {6, 8},            I7 = {6, 10},            I8 = {7, 8},
+           I9 = {7, 9}, I10 = {8, 10}, I11 = {9, 10} .
+
+
+Recall, Ik indexes the coordinates which vanish.
+  A simple verification show the 6 sections (15) of −KY do not have a
+common zero on the prequotient Cn \ Z(Σ). Hence, −KY is generated
+by global sections on Y . A hypersurface
+
+                                                X ⊂Y
+
+defined by a generic section of −KY is nonsingular by Bertini’s Theo-
+rem. By adjunction, X is Calabi-Yau.
+
+1.4. Fibrations. The toric variety Y admits two obvious fibrations
+
+                                π Y : Y → P1 , µY :→ P1
+
+given in homogeneous coordinates by
+
+           π Y (z1 , . . . , z10 ) = [z1 , z2 ],      µY (z1 , . . . , z10 ) = [z3 , z4 ].
+
+Since Z(Σ) contains the linear spaces
+
+                                I1 = {1, 2},          I2 = {3, 4},
+
+both π Y and µY are well-defined.
+   NOETHER-LEFSCHETZ THEORY AND THE YAU-ZASLOW CONJECTURE 17
+
+  Consider first π Y . The fibers of π Y are nonsingular complete toric
+3-folds defined by the fan in
+                       Z3 ⊂ Z4 ,       (c1 , c2 , c3 ) 7→ (0, c1 , c2 , c3 )
+determined by the primitives ρ3 , . . . , ρ10 .
+  Let X be obtained from a generic section of −KY . Let
+                                         π : X → P1
+be the restriction π Y |X .
+
+Proposition 1. Except for 528 points ξ ∈ P1 , the fibers
+                                        Xξ = π −1 (ξ)
+are nonsingular elliptically fibered K3 surfaces The 528 singular fibers
+Xξ each have exactly 1 ordinary double point singularity.
+
+Proof. Let Pk,k (z1 , z2 |z3 , z4 ) denote a bihomogeneous polynomial of de-
+gree k in (z1 , z2 ) and degree k in (z3 , z4 ). Let
+F = P12,12 (z1 , z2 |z3 , z4 ), G = P8,8 (z1 , z2 |z3 , z4 ), H = P4,4 (z1 , z2 |z3 , z4 )
+be bihomogeneous polynomials. Then
+(17)      F z56 z84 z92 z10
+                         3
+                            , Gz54 z6 z83 z92 z10
+                                               2
+                                                  , Hz52 z62 z82 z92 z10 , z63 z8 z92 , z72 z10
+all determine sections of −KY .
+   Let X be defined by a generic linear combination of the sections
+(17). Since the base point free system (15) is contained in (17), X is
+nonsingular. We will prove all the fibers Xξ are nonsingular, except for
+finitely many with exactly 1 ordinary double point each, by an explicit
+study of the equations.
+   Since I7 = {6, 10}, I10 = {8, 10}, and I11 = {9, 10} are in Z(Σ), we
+easily see X ∩ D10 = ∅ if the coefficient of z63 z8 z92 is nonzero. Similarly
+                              X ∩ D8 = ∅, X ∩ D9 = ∅.
+Hence, using the last 3 factors of the torus (C∗ )ℓ , the coordinates z8 ,
+z9 , and z10 can all be set to 1. The equation for X simplifies to
+                        F z56 + Gz54 z6 + Hz52 z62 + αz63 + βz72 .
+18     A. KLEMM, D. MAULIK, R. PANDHARIPANDE AND E. SCHEIDEGGER
+
+     The coordinates z1 and z2 do not simultaneously vanish on Y . There
+are two charts to consider. By symmetry, the analysis on each is identi-
+cal, so we assume z1 6= 0. Using the first factor of (C∗ )ℓ , we set z1 = 1.
+By the same reasoning, we set z3 = 1 using the second factor of (C∗ )ℓ .
+Since I3 = {5, 6} and I4 = {5, 7} are in Z(Σ) either z5 6= 0 or both z6
+and z7 do not vanish.
+
+Case z5 6= 0. Using the third factor of (C∗ )ℓ to set z5 = 1, we obtain
+the equation
+
+(18)     F (1, z2|1, z4 ) + H(1, z2 |1, z4 )z6 + G(1, z2 |1, z4 )z62 + αz63 + βz72
+
+in C4 with coordinates z2 , z4 , z6 , z7 . The map π is given by the z2
+coordinate. The partial derivative of (18) with respect z7 is 2βz7 .
+Hence, if β 6= 0, all singularities of π occur when z7 = 0.
+     We need only analyze the reduced dimension case
+
+(19)       F (1, z2 |1, z4 ) + H(1, z2 |1, z4 )z6 + G(1, z2 |1, z4)z62 + z63
+
+with coordinates z2 , z4 , z6 . Here, α has been set to 1 by scaling the
+equation. We must show all the fibers of π are nonsingular curves
+except for finitely many with simple nodes. We view equation (19) as
+defining a 1-parameter family of paths γz2 (z4 ) in the space
+
+                 C = {γ0 + γ1 z6 + γ2 z62 + z63 | γ0 , γ1 , γ2 ∈ C}
+
+of cubic polynomials in the variable z6 . The coordinate of the path is
+z4 . The variable z2 indexes the family of paths.
+    Let ∆ ⊂ C be the codimension 1 discriminant locus of cubics with
+double roots. The discriminant is irreducible with cuspidal singularities
+in codimension 2 in C. The possible singularities of the fiber π −1 (λ)
+occur only when the path γλ (z4 ) intersects ∆. The fiber π −1 (λ) is
+nonsingular over such an intersection point if either
+       (i) γλ is transverse to ∆ at a nonsingular point of ∆,
+      (ii) γλ is transverse to the codimension 1 tangent cone of a singular
+          point of ∆.
+  NOETHER-LEFSCHETZ THEORY AND THE YAU-ZASLOW CONJECTURE 19
+
+The fiber π −1 (λ) has a simple node over an intersection point of the
+path γλ (z4 ) with ∆ if
+   (iii) γλ is tangent to ∆ at a nonsingular point of ∆.
+The above are all the possibilities which can occur in a generic 1-
+parameter family of paths in the space of cubic equations.10 Possibility
+(iii) can happen only for finitely many λ and just once for each such λ.
+
+Case z6 6= 0 and z7 6= 0. Using the third factor of (C∗ )ℓ to set z6 = 1,
+we obtain the equation
+
+(20)       F (1, z2 |1, z4 ) + H(1, z2 |1, z4 ) + G(1, z2 |1, z4 ) + α + βz72
+
+in C4 with coordinates z2 , z4 , z5 , z7 . The partial derivative of (20) with
+respect z7 is not 0 for z7 6= 0. Hence, there are no singular fibers of π
+on the chart.
+
+  We have proven all the fibers Xξ of π are nonsingular except for
+finitely many with exactly 1 ordinary double point each. Let Xξ be a
+nonsingular fiber. Let
+                                  µ : X → P1
+be the restriction µY |X . The fibers of product
+
+                            (π, µ) : X → P1 × P1
+
+are easily seen to be anticanonical sections of the nonsingular toric
+surface11 W with fan in Z2 determined by the primitives ρ5 , . . . , ρ10 .
+These anticanonical sections are elliptic curves. Since Xξ has trivial
+canonical bundle by adjunction and the map
+
+                                  µ : Xξ → P1
+
+is dominant with elliptic fibers, we conclude Xξ is an elliptically fibered
+K3 surface.
+  10A cusp of π −1 (λ) occurs, for example, when the path has contact order 3 at a
+nonsingular point of the discriminant.
+   11Since the product (π Y , µY ) : Y → P1 × P1 has fibers isomorphic to the non-
+singular complete (hence projective) toric surface W , the 4-fold Y is projective.
+20     A. KLEMM, D. MAULIK, R. PANDHARIPANDE AND E. SCHEIDEGGER
+
+     The Euler characteristic of X can be calculated by toric intersection
+in Y ,
+                             χtop (X) = −480.
+
+The Euler characteristic of a nonsingular K3 fibration over P1 is 48.
+Since each fiber singularity reduces the Euler characteristic by 1, we
+conclude π has exactly 528 singular fibers.                              
+
+     For emphasis, we will sometimes denote the STU model by
+
+                            π ST U : X ST U → P1 .
+
+
+1.5. Divisor restrictions. The divisors D1 , D2 , D8 , D9 , and D10
+have already been shown to restrict to the trivial class in Pic(Xξ ). The
+divisors D3 and D4 restrict to the fiber class F ∈ Pic(Xξ ) of the elliptic
+fibration
+
+(21)                           µ : Xξ → P1 .
+
+Certainly F 2 = 0. Let S ∈ Pic(Xξ ) denote the restriction of D5 . Toric
+calculations yield the products
+
+                          F · S = 1, S · S = −2.
+
+Hence, S may be viewed as the section class of the elliptic fibration
+(21). The divisors D6 and D7 restrict to classes in the rank 2 lattice
+generated by F and S.
+  The restriction of Pic(Y ) to each fiber Xξ is a rank 2 lattice generated
+by F and S with intersection form
+                                  
+                              0 1
+                                     .
+                              1 −2
+
+We may also choose generators L1 = F and L2 = F + S with intersec-
+tion form
+                                    
+                                0 1
+                         Λ=            .
+                                1 0
+  NOETHER-LEFSCHETZ THEORY AND THE YAU-ZASLOW CONJECTURE 21
+
+1.6. 1-parameter families. Let X be a compact 3-dimensional com-
+plex manifold equipped with two holomorphic line bundles
+
+                                L1 , L2 → X
+
+and a holomorphic map
+                                 π:X →C
+to a nonsingular complete curve.
+  The data (X, L1 , L2 , π) determine a family of Λ-polarized K3 surfaces
+if the fibers (Xξ , L1,ξ , L2,ξ ) are K3 surfaces with intersection form
+                                                        
+                     L1,ξ · L1,ξ L2,ξ · L1,ξ         0 1
+                                                =
+                     L1,ξ · L2,ξ L2,ξ · L2,ξ         1 0
+and there exists a simultaneous quasi-polarization. The 1-parameter
+family (X, L1 , L2 , π) yields a morphism,
+
+                               ιπ : C → MΛ ,
+
+to the moduli space of Λ-polarized K3 surfaces.
+  The construction (X ST U , L1 , L2 , π ST U ) of the STU model in Sections
+1.3-1.5 is almost a 1-parameter family of Λ-polarized K3 surfaces. The
+only failing is the 528 singular fibers of π ST U . Let
+                                        2−1
+                                ǫ : C −→ P1
+
+be a hyperelliptic curve branched over the 528 points of P1 correspond-
+ing to the singular fibers of π. The family
+
+                              ǫ∗ (X ST U ) → C
+
+has 3-fold double point singularities over the 528 nodes of the fibers of
+the original family. Let
+
+                            π       e ST U → C
+                            eST U : X
+
+be obtained from a small resolution
+                           e ST U → ǫ∗ (X ST U ).
+                           X
+    ei → X
+Let L    e ST U be the pull-back of Li by ǫ. The data
+
+                            e ST U , L
+                           (X        e1 , L
+                                          e2 , π
+                                               eST U )
+22   A. KLEMM, D. MAULIK, R. PANDHARIPANDE AND E. SCHEIDEGGER
+
+determine a 1-parameter family of Λ-polarized K3 surfaces, see Section
+5.3 of [31]. The simultaneous quasi-polarization is obtained from the
+projectivity of X ST U .
+
+1.7. Gromov-Witten invariants. Since X ST U is defined by an an-
+ticanonical section in a semi-positive nonsingular toric variety Y , the
+genus 0 Gromov-Witten invariants have been proven by Givental [14,
+15, 29, 33] to be related by mirror transformation to hypergeometric
+solutions of the Picard-Fuchs equations of the Batyrev-Borisov mirror.
+By Section 5.3 of [31], the Gromov-Witten invariants of Xe ST U are ex-
+actly twice the Gromov-Witten invariants of X ST U for curve classes in
+the fibers.
+
+2. Noether-Lefschetz numbers and reduced K3 invariants
+
+2.1. Refined Noether-Lefschetz numbers. Following the notation
+of Section 0.2, let
+
+                    Λ ⊂ U ⊕ U ⊕ U ⊕ E8 (−1) ⊕ E8 (−1)
+
+be primitively embedded with signature (1, r − 1) and integral basis
+v1 , . . . , vr . Let (X, L1 , . . . , Lr , π) be a 1-parameter family of Λ-polarized
+K3 surfaces. Let d1 , . . . , dr be integers which do not all vanish.
+
+Lemma 1. The Noether-Lefschetz numbers NLπh,(d1 ,...,dr ) completely de-
+termine the refinements NLπm,h,(d1 ,...,dr ) .
+
+Proof. By definition, the refined Noether-Lefschetz numbers satisfy two
+elementary identities. The first is
+                                             ∞
+                                             X
+                      NLπh,(d1 ,...,dr ) =         NLπm,h,(d1 ,...,dr ) .
+                                             m=1
+
+If m does not divide all di , then NLπm,h,(d1 ,...,dr ) vanishes. If m divides
+all di , then a second identity holds:
+
+                    NLπm,h,(d1 ,...,dr ) = NLπ1,h′ ,(d1 /m,...,dr /m)
+
+where 2h − 2 = m2 (2h′ − 2).
+  NOETHER-LEFSCHETZ THEORY AND THE YAU-ZASLOW CONJECTURE 23
+
+  If ∆(h, d1 , . . . , dr ) = 0, the refined number NLπm,h,(d1 ,...,dr ) vanishes
+by definition unless m is the GCD of (d1 , . . . , dr ). In the latter case,
+                            NLπh,(d1 ,...,dr ) = NLπm,h,(d1 ,...,dr ) .
+Hence the Lemma is trivial in the ∆(h, d1 , . . . , dr ) = 0 case.
+  If ∆(h, d1 , . . . , dr ) > 0, we prove the Lemma by induction on ∆. The
+second identity reduces us to the case where m = 1. The first identity
+determines the m = 1 case in terms of the Noether-Lefschetz number
+NLh,(d1 ,...,dr ) and refined numbers with
+                      ∆(h′ , d′1, . . . , d′r ) < ∆(h, d1 , . . . , dr ).
+                                                                                    
+
+2.2. STU model. The resolved version of the STU model
+                                    π       e ST U → C
+                                    eST U : X
+is lattice polarized with respect to
+                                        
+                                     0 1
+                             Λ=            .
+                                     1 0
+The application of the results of [4, 25] to the STU model is extremely
+simple. Since the lattice Λ is unimodular, the corresponding represen-
+tation ρ∗Λ is 1-dimensional and, in fact, is the trivial representation of
+Mp2 (Z). The Noether-Lefschetz degrees are thus encoded by a scalar
+modular form of weight 22−r
+                         2
+                            = 10. The space of such forms is well-
+known to be of dimension 1 and spanned by the product of Eisenstein
+series12
+                                                                X
+               E10 (q) = E4 (q)E6 (q) = 1 − 264                       σ9 (n)q n .
+                                                                n≥1
+
+  12 The Eisenstein series E
+                                  2k is the modular form defined by the equation
+                           B2k             B2k X
+                       −       E2k (q) = −    +  σ2k−1 (n)q n ,
+                           4k              4k
+                                                         n≥1
+                      th
+where B2n is the 2n        Bernoulli number and σn (k) is the sum of the k th powers of
+the divisors of n,                                 X
+                                        σk (n) =         ik .
+                                                   i|n
+24   A. KLEMM, D. MAULIK, R. PANDHARIPANDE AND E. SCHEIDEGGER
+
+Hence, a single Noether-Lefschetz calculation determines the full series.
+
+Lemma 2. NLπ0,(0,0)
+            e
+                    = 1056.
+
+Proof. By Proposition 1, the STU model
+
+                            π ST U : X ST U → P1
+
+                                                              eST U lying
+has 528 nodal fibers. Let S be a fiber of the resolved family π
+over a singular fiber of π. The Picard lattice of S certainly contains
+                                         
+                               0 1     0
+(22)                          1 0     0 
+                               0 0 −2
+
+spanned by L1 , L2 , and the (−2)-curve E of the small resolution. Let
+
+                               ι : C → MΛ
+                               e
+
+be the map to moduli. Since a class β satisfying
+
+                                hβ, βi = −2
+
+on a K3 surface is either effective or anti-effective, the set theoretic
+intersections of e
+                 ι with D0,(0,0) correspond to fibers of π
+                                                         e where L1 and
+L2 do not generate an ample class — precisely the 528 fibers of πe lying
+over the singular fibers of π.
+  The divisor D0,(0,0) has multiplicity exactly 2 at the 528 intersections
+with eι since E and −E are the only −2 classes orthogonal to L1 and
+L2 . Finally, since E has normal bundle (−1, −1) in X    e ST U , the curve
+ι is transverse to the reduced divisor 21 D0,(0,0) at the 528 intersections.
+e
+We conclude NLπ0,(0,0)
+               e
+                       = 528 · 2 = 1056.                                  
+
+Proposition 2. The Noether-Lefschetz degrees of the resolved STU
+model are given by the equation
+                                                                   
+                                                     ∆(h, d1 , d2 )
+              NLπ̃h,(d1 ,d2 ) = −4E4 (q)E6 (q)                        .
+                                                          2
+  NOETHER-LEFSCHETZ THEORY AND THE YAU-ZASLOW CONJECTURE 25
+
+                      e ST U , L
+2.3. BPS states. Let (X        e1 , L
+                                    e2 , π
+                                         eST U ) the Λ-polarized STU model
+The vertical classes are the kernel of the push-forward map by π
+                                                               e,
+                     e Z)πe → H2 (X,
+             0 → H2 (X,           e Z) → H2 (C, Z) → 0.
+
+While X e need not be a projective variety, X
+                                            e carries a (1, 1)-form ωK
+which is Kähler on the K3 fibers of π e. The existence of a fiberwise
+Kähler form is sufficient to define Gromov-Witten theory for vertical
+classes
+                                                 e Z)πe .
+                                    0 6= γ ∈ H2 (X,
+
+The fiberwise Kähler form ωK is obtained by a small perturbation
+of the quasi-Kähler form obtained from the quasi-polarization. The
+associated Gromov-Witten theory is independent of the perturbation
+used.
+           e γ) be the moduli space of stable maps from connected
+  Let M 0 (X,
+                  e Gromov-Witten theory is defined by integration
+genus 0 curves to X.
+against the virtual class,
+                                           Z
+                                 Xe
+(23)                            N0,γ =                          1.
+                                                    e
+                                              [M 0 (X,γ)] vir
+
+
+The expected dimension of the moduli space is 0.
+                                           e
+  The genus 0 Gromov-Witten potential F X (v) for nonzero vertical
+classes is the series
+                                e
+                                              X                 e
+                            FX =                          X
+                                                         N0,γ vγ
+                                                e πe
+                                       06=γ∈H2 (X,Z)
+
+                                                                               e
+where v is the curve class variable. The BPS counts nX
+                                                     0,γ of Gopakumar
+and Vafa are uniquely defined by the following equation:
+                            e
+                                         X             e
+                                                            X v dγ
+                            X
+                        F       =                    nX
+                                                      0,γ                  .
+                                                                d>0
+                                                                      d3
+                                             e πe
+                                    06=γ∈H2 (X,Z)
+
+                                          e
+Conjecturally, the invariants nX
+                               0,γ are integral and obtained from the
+                                                                e We
+cohomology of an as yet unspecified moduli space of sheaves on X.
+do not assume the conjectural properties hold.
+26     A. KLEMM, D. MAULIK, R. PANDHARIPANDE AND E. SCHEIDEGGER
+
+  Using the Λ-polarization, we define the BPS counts
+                    e
+                                    X           e
+(24)              nX
+                   0,(d1 ,d2 ) =              nX
+                                               0,γ
+                                                     R
+                                            e πe ,
+                                      γ∈H2 (X,Z)         e i =di
+                                                         L
+                                                     γ
+
+
+when d1 and d2 are not both 0.
+     The original STU model,
+
+                              π ST U : X ST U → P1 ,
+
+with 528 singular fibers is a nonsingular, projective, Calabi-Yau 3-fold.
+Hence the Gromov-Witten invariants are well-defined. Let nX   0,(d1 ,d2 ) de-
+note the fiberwise Gopakumar-Vafa invariant with degrees di measured
+by Li . By the argument of Section 1.7,
+                                  e
+                              nX               X
+                               0,(d1 ,d2 ) = 2n0,(d1 ,d2 )
+
+when d1 and d2 are not both 0.
+
+2.4. Invertibility of constraints. Let P ⊂ Z2 be the set of pairs
+
+              P = { (d1 , d2 ) 6= (0, 0) | d1 ≥ 0, d1 ≥ −d2 } .
+
+Pairs (d2 , d2 ) ∈ P are certainly positive with respect to any quasi-
+polarization for πeST U since such (d1 , d2) can be realized by linear com-
+binations of the effective classes F and S.
+  Theorem 2 applied to the resolved STU model yields the equation
+                                  ∞ X
+                                  X ∞
+                   e
+(25)             nX
+                  0,(d1 ,d2 ) =             r0,m,h · NLπ̃m,h,(d1 ,d2 )
+                                  h=0 m=1
+
+for (d1 , d2 ) ∈ P. The BPS states on the left side will be computed by
+mirror symmetry in Section 3. The refined Noether-Lefschetz degrees
+are determined by Lemma 1 and Proposition 2. Consequently, equation
+(25) provides constraints on the reduced K3 invariants r0,m,h
+  The integrals r0,m,h are very simple in case h ≤ 0. By Lemma 2 of
+[31], r0,m,h = 0 for h < 0,
+                                      r0,1,0 = 1,
+and r0,m,0 = 0 otherwise.
+  NOETHER-LEFSCHETZ THEORY AND THE YAU-ZASLOW CONJECTURE 27
+
+Proposition 3. The set of integrals {r0,m,h }m≥1,h>0 is uniquely deter-
+mined by the set of constraints (25) for (d1 ≥ 0, d2 > 0) and the
+integrals r0,m,h≤0 .
+
+Proof. A certain subset of the linear equations with d2 > 0 will be
+shown to be upper triangular in the variables r0,m,h . Picard rank 2 is
+crucial for the argument.
+  Let us fix in advance the values of m ≥ 1 and h > 0. We proceed
+by induction on m assuming the reduced invariants r0,m′ ,h have already
+been determined for all m′ < m. The assumption is vacuous when
+m = 1. We can also assume r0,m,h′ has been determined inductively for
+h′ < h. If 2h − 2 is not divisible by 2m2 , then we have r0,m,h = 0, so
+we can further assume
+
+                           2h − 2 = m2 (2s − 2)
+
+for an integer s > 0.
+  Consider equation (25) for (d1 , d2) = (m(s − 1), m). Certainly
+
+                           NLπm
+                              e
+                                ′ ,h′ ,(m(s−1),m) = 0
+
+
+
+unless m′ divides m. By the Hodge index theorem, we must have
+
+(26)        ∆(h′ , m(s − 1), m) = 2 − 2h′ + m2 (2s − 2) ≥ 0
+
+if NLπm,h
+      e                                                ′
+          ′ ,(m(s−1),m) 6= 0. Inequality (26) implies h ≤ h.
+
+   Therefore, the constraint (25) takes the form
+                 e
+               nX                       π
+                                        e
+                0,(m(s−1),m) = r0,m,h NLm,h,(m(s−1),m) + . . . ,
+
+
+where the dots represent terms involving r0,m′ ,h′ with either
+
+                     m′ < m      or    m′ = m, h′ < h.
+
+The leading coefficient is given by
+
+                NLπm,h,(m(s−1),m)
+                   e
+                                  = NLπh,(m(s−1),m)
+                                       e
+                                                    = −4.
+
+As the system is upper-triangular, we can invert to solve for r0,m,h . 
+28     A. KLEMM, D. MAULIK, R. PANDHARIPANDE AND E. SCHEIDEGGER
+
+2.5. Proof of the Yau-Zaslow conjecture. By Proposition 3, we
+need only show the answer for r0,m,h predicted by the Yau-Zaslow con-
+jecture satisfies the constraints (25) for all pairs (d1 ≥ 0, d2 > 0).
+   Let X ST U be the original Calabi-Yau 3-fold of the STU model. Let
+                               X
+(27)                D23 F X =        d32 N0,(d
+                                           X
+                                              1 ,d2 )
+                                                      q1d1 q2d2
+                                            (d1 ,d2 )∈P
+
+be the third derivative13 of the genus 0 Gromov-Witten series for π-
+vertical classes in P.
+  We can calculate D23 F X by the constraint (25) assuming the validity
+of the Yau-Zaslow conjecture,
+                                            X                               q1d1 q2d2
+(28)                        D23 F X =                   d32 c(d1 , d2 )
+                                         (d1 ,d2 )∈P
+                                                                          1 − q1d1 q2d2
+
+where c(k, l) is the coefficient of q kl in
+                                                  E4 (q)E6 (q)
+                                             −2                .
+                                                     η 24 (q)
+Proposition 4. The Yau-Zaslow conjecture is implied by the identity
+              X                                            X                             q1d1 q2d2
+                          d32 N0,(d
+                               X
+                                          q d1 q2d2 =
+                                   1 ,d2 ) 1
+                                                                      d32 c(d1 , d2)                 .
+           (d1 ,d2 )∈P                                  (d1 ,d2 )∈P
+                                                                                       1 − q1d1 q2d2
+
+Proof. The q1d1 q2d2 coefficient of the above identity is simply d32 times
+the constraint (25). Since we only require the constraints in case
+
+                                        (d1 ≥ 0, d2 > 0) ∈ P,
+
+the identity implies all the constraints we need.                                                        
+
+     The remainder of the paper is devoted to the proof of Proposition 4.
+The genus 0 Gromov-Witten invariants of X are related, after mirror
+transformation, to hypergeometric solutions of the associated Picard-
+Fuchs system of differential equations. Hence, Proposition 4 amounts
+to a subtle identity among special functions.
+
+     13D           d
+           2 = q2 dq2 .
+  NOETHER-LEFSCHETZ THEORY AND THE YAU-ZASLOW CONJECTURE 29
+
+                        3. Mirror transform
+
+3.1. Picard-Fuchs. Let π : X → P1 be the STU model. Let
+
+                               δ0 ∈ H ∗ (X, C)
+
+denote the identity class. A basis of H 2 (X, C) is obtained from the
+restriction of the toric divisors of Y discussed in Section 1.5,
+
+              δ1 = 2D1 + 2D3 + D5 , δ2 = D3 , δ3 = D1 .
+
+Recall, δ3 vanishes on the fibers of π. Let {δj } be a full basis of
+H ∗ (X, C) extending the above selections.
+  Let u1 , u2 , u3 be the canonical coordinates for the mirror family with
+respect to the divisor basis δ1 , δ2 , δ3 . Let
+                                            ∂
+                                 θi = ui       .
+                                           ∂ui
+The Picard-Fuchs system associated to the mirror of X ST U is:
+         L1 = θ1 (θ1 − 2 θ2 − 2 θ3 ) − 12 (6 θ1 − 5) (6 θ1 − 1) u1
+(29)     L2 = θ2 2 − (2 θ2 + 2 θ3 − θ1 − 2) (2 θ2 + 2 θ3 − θ1 − 1) u2 ,
+         L3 = θ3 2 − (2 θ2 + 2 θ3 − θ1 − 2) (2 θ2 + 2 θ3 − θ1 − 1) u3 .
+The system is obtained canonically from the Batyrev-Borisov construc-
+tion, see [9] for the formalism.
+
+3.2. Solutions. A fundamental solution to the Picard-Fuchs system
+can be written in terms of GKZ hypergeometric series,
+
+(30)     ̟ ∈ H ∗ (X, C) ⊗C C[log(u1 ), log(u2 ), log(u3 )][[u1 , u2 , u3]].
+
+Let ̟(u, δj ) be the corresponding coefficient of (30), then
+
+                              Li ̟(u, δj ) = 0.
+
+The standard normalization of ̟ satisfies two important properties:
+    (i) The δ0 coefficient is the unique solution
+
+                           ̟(u, δ0) = 1 + O(u)
+
+       holomorphic at u = 0.
+30     A. KLEMM, D. MAULIK, R. PANDHARIPANDE AND E. SCHEIDEGGER
+
+      (ii) For 1 ≤ i ≤ 3,
+                                  ̟(u, δ0 )
+                       ̟(u, δi) =           log(ui ) + O(u)
+                                    2πi
+            are the logarithmic solutions.
+     Let T1 , T2 , T3 be coordinates on H 2 (X, C) with respect to the basis
+δ. The mirror transformation is defined by
+                      ̟(u, δi )    1
+                 Ti =           =     log(ui ) + O(u)
+                      ̟(u, δ0)    2πi
+for 1 ≤ i ≤ 3.
+  The mirror transformation relates the genus 0 Gromov-Witten the-
+ory of X to the Picard-Fuchs system for the mirror family. For anti-
+canonical hypersurfaces in toric varieties, a proof is given in [15].
+
+3.3. Mirror transform for q3 = 0. We introduce two modular pa-
+rameters
+(31)                         τ1 = T1 , τ2 = T1 + T2 .
+
+For i = 1 and 2, let
+                                qbi = exp(2πiτi ),
+and let q3 = exp(2πiT3 ).
+  Our first step is to find a modular expression for the mirror map
+and the period ̟(u, δ0) to leading order in q3 . We prove two formulas
+discovered by Klemm, Lerche, and Mayr in [24].
+
+Lemma 3. We have
+                        2(j(bq1 ) + j(bq2 ) − µ)
+     u1 =             p                      p                     + O(q3 ),
+       j(b
+         q1 )j(b
+               q2 ) + j(b         q1 ) − µ) j(b
+                           q1 )(j(b                      q2 ) − µ)
+                                                  q2 )(j(b
+                       p                     p
+       (j(b
+          q1 )j(b
+                q2 ) + j(b         q2 ) − µ) j(b
+                            q1 )(j(b                      q2 ) − µ))2
+                                                   q2 )(j(b
+  u2 =                                                                + O(q3 ),
+                    4j(b
+                       q1 )j(b
+                             q2 )(j(b
+                                    q1 ) + j(bq2 ) − µ)2
+where µ = 1728 and
+                      E43   1
+(32)               j(q) =
+                        24
+                           = + 744 + 196884q + O(q 2 )
+                      η     q
+is the normalized j function.
+                                             1       1
+                                 q1 ) 4 E4 (b
+Lemma 4. Limq3 →0 ̟(u, δ0) = E4 (b          q2 ) 4 .
+  NOETHER-LEFSCHETZ THEORY AND THE YAU-ZASLOW CONJECTURE 31
+
+Proof. We prove Lemmas 3 and 4 together. The first step is to perform
+the following change of variables
+                    z2      √                            z2    √       
+   u1 = z1 , u2 =       1 + 1 − 4z3 ,              u3 =      1 − 1 − 4z3 ,
+                    2                                     2
+with the inverse change
+                                                         u2 u3
+              z1 = u1,      z2 = u2 + u3 ,     z3 =               .
+                                                      (u2 + u3 )2
+In the new variables, the limit u3 → 0 becomes the limit z3 → 0.
+  The statement of Lemma 3 in the variables zi remains unchanged to
+first order in q3 . We will prove
+                        2 (j(b
+                             q1 ) + j(bq2 ) − µ)
+  z1 =                p                     p                      + O(q3),
+       j(b
+         q1 )j(b
+               q2 ) + j(b         q1 ) − µ) j(b
+                           q1 )(j(b                      q2 ) − µ)
+                                                  q2 )(j(b
+                       p                     p
+       (j(b
+          q1 )j(b
+                q2 ) + j(b         q2 ) − µ) j(b
+                            q1 )(j(b                      q2 ) − µ))2
+                                                   q2 )(j(b
+  z2 =                                                                + O(q3 ) .
+                    4j(b
+                       q1 )j(b
+                             q2 )(j(b
+                                    q1 ) + j(bq2 ) − µ)2
+  The Picard-Fuchs differential operators (29) can be rewritten as
+                               L′1 (z) = L1 (u),
+                   √
+                 z2 1 − 4z3 L′2 (z) = L2 (u) − L3 (u),
+                   √
+                 z2 1 − 4z3 L′3 (z) = u3 L2 (u) − u2 L3 (u),
+with
+         L′1 = θ1 (θ1 − 2 θ2 ) − 12 (6 θ1 − 5) (6 θ1 − 1) z1 ,
+         L′2 = θ2 (θ2 − 2 θ3 ) − (2 θ2 − θ1 − 2) (2 θ2 − θ1 − 1) z2 ,
+         L′3 = θ3 2 − (2 θ3 − θ2 − 2) (2 θ3 − θ2 − 1) z3
+
+where now θi = zi dzdi . Since L′3 (z) → 0 in the limit z3 → 0, we need
+only focus on L′1 (z) and L′2 (z).
+  Next, we transform L′1 (z) and L′2 (z) to new variables y1 , y2, y3 via
+the change
+                              2 (y + y2 − µ)
+                z1 =         p 1           p         ,
+                     y1 y2 + y1 (y1 − µ) y2 (y2 − µ)
+                             p              p
+                     (y1 y2 + y1 (y1 − µ) y2 (y2 − µ))2
+                z2 =                                    ,
+                             4y1 y2 (y1 + y2 − µ)2
+                z3 = y3 .
+32   A. KLEMM, D. MAULIK, R. PANDHARIPANDE AND E. SCHEIDEGGER
+
+We obtain
+                                        µ
+L′′1 = y12 y2 (y1 − µ)∂y21 + y1 y2 (y1 − )∂y1 − y1 y22(y2 − µ)∂y22
+                                        2
+                     µ
+      − y1 y2 (y2 − )∂y2 + 60(y1 − y2 ),
+                     2
+                                 µ                                    µ
+L2 = −y1 (y1 − µ) ∂y21 + y1 ( − y1 )∂y1 + y22 (y2 − µ) ∂y22 + y2 (y2 − )∂y2
+ ′′         2
+                                 2                                    2
+      − 2y1y3 (y1 − µ)∂y1 ∂y3 + 2y2 y3 (y2 − µ)∂y2 ∂y3 .
+
+In the limit y3 → 0, the second line on the right for L′′2 vanishes. We
+can combine L′′1 and L′′2 to obtain the following simple forms:
+                                          µ                          
+  ′′           ′′                                                  2 2
+ L1 + y1 lim L2 = (y1 − y2 ) 60 − y1 −          y1 ∂y1 − (y1 − µ) y1 ∂y1 ,
+         y3 →0                              2
+                                          µ                          
+  ′′           ′′                                                  2 2
+ L1 + y2 lim L2 = (y1 − y2 ) 60 − y2 −          y2 ∂y2 − (y2 − µ) y2 ∂y2 .
+         y3 →0                              2
+   The solution ̟(y, δ0)y3 =0 therefore satisfies the differential equation
+                                          µ
+                               2 2
+(33)            L = (y − µ) y ∂y + y −          y ∂y − 60 .
+                                           2
+in both y1 and y2 .
+   Changing (33) to the variable t = 1728
+                                        y
+                                            yields
+
+                   L = t(1 − t)∂t2 + (1 − 23 t)∂t − 144
+                                                     5
+                                                        ,
+
+which by comparing with the general hypergeometric differential oper-
+ator
+               L = t(1 − t)∂t2 + (c − (1 + a + b)t)∂t − ab
+is identified with the system
+                                       1 5
+                                         , ; 1; t(τ )).
+                   2 F1 (a, b; c; t) = 2 F1 (
+                                       12 12
+According to the results of Klein and Fricke as reviewed in [37], we have
+a unique (up to scaling) solution g0 to (33) locally analytic at y = ∞.
+The solution can be written as
+                                  1
+              g0 (j(τ )) = (E4 ) 4 (τ ),                 y(τ ) = j(τ ) .
+
+Moreover, the inverse is
+                                            g1 (y)
+                              τ (y) =                ,
+                                           2πig0 (y)
+  NOETHER-LEFSCHETZ THEORY AND THE YAU-ZASLOW CONJECTURE 33
+
+where g1 is a logarithmic solution at y = ∞ of L, unique up to nor-
+malization and addition of g0 .
+  Transformation of the solution ̟(u, δ0) is seen to be analytic in a
+neighborhood of t1 = t2 = 0. We conclude
+                                            1       1
+                        ̟(u, δ0)u3 =0 = E44 (τ1 )E44 (τ2 ).
+
+By comparing the first few coefficients of the actual solutions ̟(u, δi)
+in the u3 → 0 limit, we can uniquely identify
+
+                τ1 (u) = T1 (u),       τ2 (u) = T1 (u) + T2 (u) .
+
+Hence, Lemma 4 is established. Lemma 3 is proven by transforming
+back to the u1 and u2 variables.                              
+
+  Restricted to a K3 fiber of π : X → P1 , we have
+
+                            δ1 = 2F + S, δ2 = F.
+
+The coordinates 2πiτ1 and 2πiτ2 correspond to the divisor basis
+
+                            L2 = F + S, L1 = F
+
+of the K3 fiber. Since the variables q1 and q2 of Section 2 measure
+degrees against L1 and L2 , we see
+
+                             qb1 = q2 and qb2 = q1
+
+for the fiber geometry.
+
+3.4. B-model. The mirror transformation results of Section 3.3 to-
+gether with a B-model calculation of the periods will be used to prove
+the following result discovered by Klemm, Mayr, and Lerche [24].
+
+Proposition 5. We have
+          X                                  E4 (q1 )E6 (q1 ) E4 (q2 )
+    2+         d32 N0,(d
+                    X
+                               q d1 q2d2 = 2
+                        1 ,d2 ) 1                 24
+                                                                        .
+                                                η (q1 ) j(q1 ) − j(q2 )
+          (d1 ,d2 )∈P
+
+  The left side of Proposition 5 is the left side of Proposition 4 with
+an added degree 0 constant 2.
+34     A. KLEMM, D. MAULIK, R. PANDHARIPANDE AND E. SCHEIDEGGER
+
+Proof. We will use following universal expression for the Gromov-Witten
+invariants of X in terms of the periods of the mirror:
+             X
+     2+                 d32 N0,(d
+                             X
+                                        q d1 q2d2 =
+                                 1 ,d2 ) 1
+          (d1 ,d2 )∈P
+
+                                                           X 3
+                                             1                   ∂ui ∂uj ∂uk
+                                    lim                2
+                                                                             Yi,j,k (u(T ))
+                                   q3 →0 ̟(u(T ), δ0 )           ∂τ1 ∂τ1 ∂τ1
+                                                         i,j,k=1
+
+where Yi,j,k are the Yukawa couplings of the mirror family, see [9, 24].
+  The periods Yi,j,k can be explicitly computed via Griffith transver-
+sality [24] and greatly simplify in the q3 → 0 limit. We tabulate the
+results below:
+            8(1 − ũ1 )                                                 2ũ1(1 − ũ1 )
+     Y111 =              ,                                       Y133 =                ,
+               ũ31 ∆1                                                      ũ3 ∆1
+            2(1 − ũ1 )2 + ũ21 (ũ2 − ũ3 )                            (1 − 2ũ1 ) A2
+     Y112 =                                  ,                   Y222 =                  ,
+                       ũ21 ũ2 ∆1                                        2ũ22∆1 ∆2
+            2(1 − ũ1 )2 + ũ21 (ũ3 − ũ2 )                            (1 − 2ũ1 ) A3
+     Y113 =                                  ,                   Y223 =                  ,
+                       ũ21 ũ3 ∆1                                       2ũ3 ũ2 ∆1 ∆2
+            2ũ1 (1 − ũ1 )                                             (1 − 2ũ1 ) A2
+     Y122 =                  ,                                   Y233 =                  ,
+                ũ2 ∆1                                                   2ũ3 ũ2 ∆1 ∆2
+            (1 − ũ1 ) ((1 − ũ1 )2 − (ũ2 + ũ3 )ũ21 )                (1 − 2ũ1 ) A3
+     Y123 =                                              ,       Y333 =                  .
+                              ũ1 ũ2 ũ3 ∆1                              2ũ23∆1 ∆2
+Here, we have introduced the variables
+
+                              ũ1 = 432u1, ũ2 = 4u2 , ũ3 = 4u3
+
+and the discriminant loci
+                ∆1 = (1 − ũ1 )4 − 2(ũ2 + ũ3 )ũ21 (1 − ũ1 )2 + (ũ2 − ũ3 )2 ũ41 ,
+(34)
+                ∆2 = (1 − ũ2 − ũ3 )2 − 4ũ2 ũ3 .
+The quantities A2 and A3 are defined by
+             A2 = (1 + ũ2 − ũ3 ) (1 − ũ1 )2 + ũ21 (1 − ũ3 − 3 ũ2 ) (ũ2 − ũ3 ) ,
+(35)
+             A3 = (1 + ũ3 − ũ2 ) (1 − ũ1 )2 + ũ21 (1 − ũ2 − 3 ũ3 ) (ũ3 − ũ2 ) .
+The normalizations of the Yukawa couplings Yi,j,k are fixed by the clas-
+sical intersections.
+  NOETHER-LEFSCHETZ THEORY AND THE YAU-ZASLOW CONJECTURE 35
+
+  The leading behavior of the mirror map for u1 , u2 is obtained by
+rewriting Lemma 3 in terms of E4 (τi ) and E6 (τi ) as
+                                                 !
+                1            E6 (τ1 ) E6 (τ2 )
+          u1 =       1−             3          3   + O(q3 ) ,
+               864         E4 (τ1 ) 2 E4 (τ2 ) 2
+(36)                                                         
+                E4 (τ1 )3 − E6 (τ1 )2 E4 (τ2 )3 − E6 (τ2 )2
+          u2 =             3          3
+                                                           2 + O(q3 )
+                4 E4 (τ1 ) E4 (τ2 ) − E6 (τ1 ) E6 (τ2 )
+                            2          2
+
+
+
+Denote the leading behavior of the last mirror map by
+
+(37)                                        q1 , qb2 ) + O(q32 ) .
+                                u3 = q3 f3 (b
+
+The derivatives of the mirror maps with respect to T2 are easily eval-
+uated using the standard identities
+                                    d
+                                   q         1
+                                       E2 = 12 (E22 − E4 )
+                                    dq
+                                    d
+                                   q E4 = 13 (E2 E4 − E6 )
+                                    dq
+                                    d
+                                   q E6 = 12 (E2 E6 − E42 )
+                                    dq
+                                      d         E6
+                                    q j = −j .
+                                     dq         E4
+We find, to leading order in q3 ,
+ ∂u1       E6 (τ2 ) (E4 (τ1 )3 −E6 (τ1 )2 )
+ ∂τ1
+       =                    3          5
+           √1728 E4 (τ2 ) 2 E34 (τ1 ) 2 2 “ “         3         ”          3         ”
+            E4 (τ1 ) (E4 (τ2 ) −E6 (τ2 ) ) − E4 (τ1 ) 2 E6 (τ2 ) +E4 (τ2 ) 2 E6 (τ1 ) (E4 (τ1 )3 −E6 (τ1 )2 )
+ ∂u2
+ ∂τ1
+       =                                     “         3          3                   ”3
+                                            4 E4 (τ2 ) 2 E4 (τ1 ) 2 −E6 (τ2 ) E6 (τ1 )
+
+
+The derivative ∂u
+               ∂τ1
+                  3
+                    can be written to this order as
+                      ∂u3       u3          ∂
+(38)                      =                        q1 , qb2 ) + O(u23 ) .
+                                               f3 (b
+                      ∂τ1   f3 (b
+                                q1 , qb2 ) ∂τ1
+  There are many simplifications in the limit u3 → 0. First the triple
+couplings
+                                           Y133 , Y233 , Y333
+do not have enough inverse powers of u3 and therefore do not contribute
+by the vanishing (38). Second, the surviving Yi,j,k simplify in the limit.
+36     A. KLEMM, D. MAULIK, R. PANDHARIPANDE AND E. SCHEIDEGGER
+
+We evaluate
+                             X 3
+               1                   ∂ui ∂uj ∂uk
+(39) lim                 2
+                                               Yi,j,k (u(T )) =
+     q3 →0 ̟(u(T ), δ0 )           ∂τ1 ∂τ1 ∂τ1
+                           i,j,k=1
+                                                                                     
+                                  E4 (τ2 ) E4 (τ1 ) E6 (τ2 ) E4 (τ1 )3 − E6 (τ1 )2
+                             −2                                                          .
+                                      E4 (τ2 )3 E6 (τ1 )2 − E4 (τ1 )3 E6 (τ2 )2
+The possible linear dependence on f3 (b
+                                      q1 , qb2 ) drops out as claimed in
+[24]! Using the standard identities
+                            E43
+                             j=
+                              24
+                                 , η 24 = E43 − E62 ,
+                            η
+we obtain the right side of Proposition 5.                                                   
+
+                      4. The Harvey-Moore identity
+
+4.1. Proof of Proposition 4. After evaluating the left side via Propo-
+sition 5 and dividing by 2, Proposition 4 amounts to a modular form
+identity. Let
+                                              ∞
+                                              X
+                            E4 (τ )E6 (τ )
+                   f (τ ) =                =      c(n)q n
+                               η(τ )24       n=−1
+where q = exp(2πiτ ). Then, we must prove
+              f (τ1 )E4 (τ2 )      q1                X
+(40)                          =         + E4 (τ2 ) −   ℓ3 c(kℓ) q1kd q2ℓd .
+              j(τ1 ) − j(τ2 )   q1 − q2
+                                                        d,k,ℓ>0
+
+Equation (40) is the Harvey-Moore identity conjectured in [18].
+
+4.2. Zagier’s proof of the Harvey-Moore identity. The Harvey-
+Moore identity implies Proposition 4 and concludes the proof of the
+Yau-Zaslow conjecture. We present here Zagier’s argument from [38].
+  Let Sk ⊂ Mk ⊂ Mk! denote the spaces of cusp forms, modular forms,
+and weakly holomorphic 14 modular forms for Γ = SL(2, Z). Certainly
+                                              !
+                                    f (τ ) ∈ M−2 .
+
+     For each n ≥ 0, there is a unique function Fn ∈ M4! satisfying
+                                Fn (τ ) = q −n + O(q)
+     14Holomorphic except for a possible pole at infinity.
+  NOETHER-LEFSCHETZ THEORY AND THE YAU-ZASLOW CONJECTURE 37
+
+as I(τ ) → ∞. Uniqueness follows from the vanishing of S4 . Existence
+follows by writing Fn (τ ) as E4 (τ ) times a polynomial in j(τ ),
+
+  F0 = E4 , F1 = E4 (j − 984), F2 = E4 (j 2 − 1728j + 393768) . . . .
+
+We draw several consequences:
+
+    (i) F1 |Tn = n3 Fn for all n ≥ 1, where Tn is the nth Hecke operator
+        in weight 4. Indeed, Tn sends M4! to itself and, by standard
+       formulas for the action of Tn on Fourier expansions, Tn sends
+       q −1 + O(q) to n3 q −n + O(q).
+   (ii) F1 = −f ′′′ where prime denotes differentiation by
+
+                               1 d     d
+                                     =q .
+                              2πi dτ   dq
+
+       We see f ′′′ lies in M4! by the k = 4 case of Bol’s identity
+                                       k−1 
+                 dk−1                  d f
+                       (f |2−k γ) =           |k γ   ∀γ ∈ Γ.
+                dτ k−1                 dτ k−1
+
+       Since, the Fourier expansion of f ′′′ begins as −q −1 + O(q), the
+       claim is proven.
+  (iii) For I(τ1 ) > maxγ∈Γ I(γτ2 ),
+
+                                        ∞
+                                        X
+                      f (τ1 )E4 (τ2 )
+                                      =   Fn (τ2 )q1n .
+                      j(τ1 ) − j(τ2 ) n=0
+
+       Let L(τ1 , τ2 ) denote the left side of (4.2). We see L(τ1 , τ2 ) is a
+       meromorphic modular form in τ2 with a simple pole of residue
+          1
+       − 2πi at τ2 = τ1 (since j ′ = −E42 E6 /η 24 ) and no poles outside
+       Γτ1 . Moreover, L(τ1 , τ2 ) tends to 0 as I(τ2 ) → ∞. These
+       properties characterize L(τ1 , τ2 ) uniquely and show that the nth
+       Fourier coefficient with respect to τ1 for I(τ1 ) → ∞ has the
+       properties characterizing Fn (τ2 ).
+38     A. KLEMM, D. MAULIK, R. PANDHARIPANDE AND E. SCHEIDEGGER
+
+     Combining (i) and (ii) with the formula for the action of Tn on Fourier
+expansions, we obtain,
+                                                              ∞
+                                                                                  !
+                                                              X
+(41) Fn (τ ) = (−n−3 f ′′′ )|Tn = n−3                q −1 −         m3 c(m) q m       |Tn
+                                                              m=1
+                            X
+               = q −n −              ℓ3 c(kℓ) q ℓd
+                           k,ℓ,d>0
+                           kd=n
+
+for n > 0. The Harvey-Moore identity follows from (41) and (iii)
+together with the equality F0 = E4 .                          
+
+
+                                     References
+ [1] K. Behrend, Gromov-Witten invariants in algebraic geometry, Invent. Math.
+     127 (1997), 601–617.
+ [2] K. Behrend and B. Fantechi, The intrinsic normal cone, Invent. Math. 128
+     (1997), 45–88.
+ [3] A. Beauville, Counting rational curves on K3 surfaces, Duke Math. J. 97
+     (1999), 99–108.
+ [4] R. Borcherds, The Gross-Kohnen-Zagier theorem in higher dimensions, Duke
+     J. Math. 97 (1999), 219–233.
+ [5] J. Bruinier, On the rank of Picard groups of modular varieties attached to
+     orthogonal groups, Compositio Math. 133, (2002), 49–63.
+ [6] J. Bryan and C. Leung, The enumerative geometry of K3 surfaces and modular
+     forms, J. AMS 13 (2000), 371–410.
+ [7] X. Chen, Rational curves on K3 surfaces, J. Alg. Geom. 8 (1999), 245–278.
+ [8] D. Cox, The homogeneous coordinate ring of a toric variety, J. Alg. Geom. 4
+     (1995), 17 –50.
+ [9] D. Cox and S. Katz,, Mirror symmetry and algebraic geometry, AMS: Provi-
+     dence, RI, 1999.
+[10] I. Dolgachev and S. Kondo, Moduli of K3 surfaces and complex ball quotients,
+     Lectures in Istambul, math.AG/0511051.
+[11] B. Fantechi, L. Göttsche, and Duco van Straten, Euler number of the com-
+     pactified Jacobian and multiplicity of rational curves, J. Alg. Geom. 8 (1999),
+     115–133.
+[12] W. Fulton, Introduction to toric varieties, Princeton University Press: Prince-
+     ton, 1993.
+[13] A. Gathmann, The number of plane conics 5-fold tangent to a smooth curve,
+     Comp. Math. 141 (2005), 487–501.
+[14] A. Givental, Equivariant Gromov-Witten invariants, Int. Math. Res. Notices
+     13 (1996), 613–663.
+[15] A. Givental, A mirror theorem for toric complete intersections,
+     math.AG/9807070.
+[16] R. Gopakumar and C. Vafa, M-theory and topological strings I,
+     hep-th/9809187.
+  NOETHER-LEFSCHETZ THEORY AND THE YAU-ZASLOW CONJECTURE 39
+
+[17] R. Gopakumar and C. Vafa, M-theory and topological strings II,
+     hep-th/9812127.
+[18] J. Harvey and G. Moore, Algebras, BPS states, and strings, Nucl. Phys. B463
+     (1996), 315–368.
+[19] J. Harvey and G. Moore, Exact gravitational threshold correction in the FHSV
+     model, Phys. Rev. D57 (1998), 2329–2336.
+[20] S. Kachru and C. Vafa, Exact results for N=2 compactifications of heterotic
+     strings, Nucl. Phys. B 450, 69 (1995).
+[21] S. Katz, A. Klemm, C Vafa, M-theory, topological strings, and spinning black
+     holes, Adv. Theor. Math. Phys. 3 (1999), 1445–1537.
+[22] T. Kawai and K Yoshioka, String partition functions and infinite products,
+     Adv. Theor. Math. Phys. 4 (2000), 397 –485.
+[23] A. Klemm, M. Kreuzer, E. Riegler, and E. Scheidegger, Topological string am-
+     plitudes, complete intersections Calabi-Yau spaces, and threshold corrections,
+     hep-th/0410018.
+[24] A. Klemm, W. Lerche, and P. Mayr, K3-fibrations and heterotic type II string
+     duality, Physics Lett B 357 (1995), 313.
+[25] S. Kudla and J. Millson, Intersection numbers of cycles on locally symmet-
+     ric spaces and Fourier coefficients on holomorphic modular forms in several
+     complex variables, Pub. IHES 71 (1990), 121–172.
+[26] J. Lee and C. Leung, Yau-Zaslow formula for non-primitive classes in K3
+     surfaces, Geom. Topol. 9 (2005), 1977-2012.
+[27] J. Li, A degeneration formula for Gromov-Witten invariants, J. Diff. Geom.
+     60 (2002), 199–293.
+[28] J. Li and G. Tian, Virtual moduli cycles and Gromov-Witten invariants of
+     algebraic varieties, J. AMS 11 (1998), 119–174.
+[29] B. Lian, K. Liu, and S.-T. Yau, Mirror principle I, Asian J. Math. 4 (1997),
+     729–763.
+[30] M. Mariño and G. Moore, Counting higher genus curves in a Calabi-Yau man-
+     ifold, Nucl. Phys. B453 (1999), 592–614.
+[31] D. Maulik and R. Pandharipande, Gromov-Witten theory and Noether-
+     Lefschetz theory, arXiv/0705.1653.
+[32] T. Oda, Convex bodies and algebraic geometry, Springer-Verlag: Berlin, 1988.
+[33] R. Pandharipande, Rational curves on hypersurfaces [after A. Givental],
+     Séminaire Bourbaki, 50ème année, 1997-1998, no. 848.
+[34] R. Pandharipande and R. Thomas, Stable pairs and BPS invariants,
+     arXiv/0711.3899.
+[35] B. Wu, The number of rational curves on K3 surfaces, math.AG/0602280.
+[36] S.-T. Yau and E. Zaslow, BPS states, string duality, and nodal curves on K3,
+     Nucl. Phys. B457 (1995), 484–512.
+[37] D. Zagier, Elliptic modular forms and their applications, in The 1-2-3 of mod-
+     ular forms: Lectures at a summer school in Nordfjordeid, Norway, J. Bruinier,
+     G. van der Geer, G. Harder, D. Zagier eds., Springer: Berlin, 2008.
+[38] D. Zagier, Letter on the Harvey-Moore identity, October 2007.
+40   A. KLEMM, D. MAULIK, R. PANDHARIPANDE AND E. SCHEIDEGGER
+
+Departments of Physics
+University of Bonn and University of Wisconsin
+
+Department of Mathematics
+Columbia University
+
+Department of Mathematics
+Princeton University
+
+Department of Mathematics
+University of Augsburg
+

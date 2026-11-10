@@ -1,0 +1,8 @@
+111^2 mod 140 = 1 ; 111 mod 4,5,7 = 3 1 6
+(3, 37, 47, 53) : g^-1 S = {1,a,111,111a} realisable: True ; distinct solutions of lemma form: 8
+(3, 41, 53, 71) : g^-1 S = {1,a,111,111a} realisable: True ; distinct solutions of lemma form: 8
+(3, 53, 79, 89) : g^-1 S = {1,a,111,111a} realisable: True ; distinct solutions of lemma form: 8
+(37, 41, 47, 71) : g^-1 S = {1,a,111,111a} realisable: True ; distinct solutions of lemma form: 8
+(37, 47, 79, 89) : g^-1 S = {1,a,111,111a} realisable: True ; distinct solutions of lemma form: 8
+(41, 71, 79, 89) : g^-1 S = {1,a,111,111a} realisable: True ; distinct solutions of lemma form: 8
+total distinct lemma-form solutions over the 6 supports: 48 (s4c found 48)

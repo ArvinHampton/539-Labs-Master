@@ -1,0 +1,21 @@
+PARI stack size set to 3000000000 bytes, maximum size set to 3000000512
+[1] S_{3/2}(196,chi28): mfparams = [196, 3/2, 28, 1, t + 1]  dim = 9  Sturm bound (3/2)/12*[SL2:G0(196)] = 42
+[2] dim K = ker T(9) = 4 ; dim W4 (menu Oc-1 def, p in {3,11,13,23,29,37}) = 4 ; rank[W4|K] = 4 (4 => W4 = K)
+    c(35) on the K basis: [0, 0, 0, 0]
+[3] dim {F in S : c(n)=0 for all non-square n <= 600 } = 1
+    dim {F in K : c(n)=0 for all non-square n <= 600 } = 0
+[4] u_psi, psi = 1 (untwisted partial theta): rank C = 9, rank [C|u] = 10 -> NOT in S (rank rises);  rank [C K|u] = 5 vs 4 -> NOT in K
+[4] u_psi, psi = chi_-4: rank C = 9, rank [C|u] = 10 -> NOT in S (rank rises);  rank [C K|u] = 5 vs 4 -> NOT in K
+Traceback (most recent call last):
+  File "/workspace/quantum-comp/reports/evidence_local_t4436_branches_2026-11-09/s1_oc_branches.py", line 21, in <module>
+    P(f"u={unary(psi)}; sol=matsolve(matconcat([C,u]) , vectorv({B+1}))")  # dummy to keep syntax simple
+    ~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/quantum-comp/reports/evidence_local_t4436_branches_2026-11-09/s1_oc_branches.py", line 4, in <lambda>
+    P=lambda s: pari(s)
+                ~~~~^^^
+  File "cypari2/pari_instance.pyx", line 800, in cypari2.pari_instance.Pari.__call__
+  File "cypari2/gen.pyx", line 4784, in cypari2.gen.objtogen
+  File "cypari2/convert.pyx", line 545, in cypari2.convert.PyObject_AsGEN
+  File "cypari2/handle_error.pyx", line 211, in cypari2.handle_error._pari_err_handle
+cypari2.handle_error.PariError: matsolve: impossible inverse in gauss: 
+  ***  (...) Huge t_MAT omitted; you can access it via dbg_err()

@@ -1,0 +1,70 @@
+{
+  "OW": {
+    "path": "/workspace/quantum-comp/reports/OWNER_WRITE_CALL_53991ebf_EXTENSION_GR_PREDICTIONS_SECOND_AXIS_2026-11-05.md",
+    "sha256": "89b78bf18b94e449866e197255956882e6f136b949a4f010a739bf0831e1c36d"
+  },
+  "P": {
+    "path": "/workspace/quantum-comp/reports/PAPER_S2_11DM2ETX_EXTENSION_OF_GENERAL_RELATIVITY_INTERPRETATION_CITATION_PINS_2026-11-05.md",
+    "sha256": "6f01d93bc2a8663b3506d56861de386537157fb908425d417b8129e50e558790"
+  },
+  "P0": {
+    "path": "/workspace/quantum-comp/reports/PAPER_S2_11DM2ETX_EXTENSION_OF_GENERAL_RELATIVITY_INTERPRETATION_2026-11-05.md",
+    "sha256": "e140947e408b165d15cbaaa8deedc8bb53ac9c1a9fe89ab56034c2cd191a9685"
+  },
+  "B": {
+    "path": "/workspace/quantum-comp/reports/REPORT_AGENT_CAT_B_S2_11DM2ETX_LOOSENED_LANGUAGE_CALL_53991ebf_2026-11-05.md",
+    "sha256": "6db164ecbeed21794aac02e67cb4718c04575732d57a607b654a95ae4bbe910e"
+  },
+  "BF": {
+    "path": "/workspace/quantum-comp/reports/FINDINGS_AGENT_CAT_B_S2_11DM2ETX_REPORT_CALL_53991ebf_2026-11-05.md",
+    "sha256": "c4d7eb5765e9af628535ecf67949f6974925a949e30f0c5c8fb65eb3209f7ccd"
+  },
+  "RTA": {
+    "path": "/workspace/quantum-comp/reports/papers/RTA_FOUNDATION_BOUND/RTA_FOUNDATION_BOUND_v16.pdf",
+    "sha256": "1fe7b8a2e245e90009c41726db13518b4c752e99ba4e08b4ffd006d8a73c3297"
+  },
+  "L": {
+    "path": "/workspace/quantum-comp/reports/OWNER_WRITE_LOCK_D1_Seff_Layer2_T3_2026-11-03.md",
+    "sha256": "96f8d42e80c1975b4390fed950a4fb4b420088e6b19b2cbef8a44bebd28ff2ba"
+  },
+  "A": {
+    "path": "/workspace/quantum-comp/oct17-master/docs/hqh539-verification/RFC_Profile_Freeze_Option_A.md",
+    "sha256": "93cc1f32ff200ca661c61f76b08f3748711cf3b37cad3d8c7862a53debdbf357"
+  },
+  "F": {
+    "path": "/workspace/quantum-comp/reports/FINDINGS_LOCAL_SOFTSF_AMEND_ABSORB_PP_FLAG_FILTER_X_DENSE_2026-11-05.md",
+    "sha256": "0a4ddb32f7f891b93c0db120de21638d3e5a30543eca0a9f59116866751ca570"
+  },
+  "V": {
+    "path": "/workspace/quantum-comp/reports/FINDINGS_AGENT_VERIFY_539_OPS_T3_RESIDUE2_DEFECT_PAPER_DISPLAY_2026-11-05.md",
+    "sha256": "08f22ba2b3436783e4ff8c08e6425a356fc7c8c7cad379f64f309c2d76aa7302"
+  },
+  "VP": {
+    "path": "/workspace/quantum-comp/reports/SOFTSF_PRESS_FINDINGS_AGENT_VERIFY_539_OPS_T3_RESIDUE2_DEFECT_PAPER_DISPLAY_2026-11-05.md",
+    "sha256": "0e961eab3379c0ad7188419194e7c0dd1391213fbcda6f109272b7933b431723"
+  },
+  "OPS": {
+    "path": "/workspace/quantum-comp/reports/FINDINGS_539_LABS_OPS_S2_11DM2ETX_GR_AXIS2_CS_COMPUTATION_2026-11-05.md",
+    "sha256": "a505726ebb70152780b9e453b957cb195d0a15066822960cc9115177a2249dcd"
+  },
+  "REF": {
+    "path": "/workspace/quantum-comp/oct17-master/docs/hqh539-verification/hqh539.py",
+    "sha256": "fef5fce5d5a9b6a9df896643c52bfd935dfd8e1cab9631acc1fce8dc8e3115dd"
+  },
+  "STAT": {
+    "path": "/workspace/539-labs/lqh-alu/STATUS_HQH539512_2026-11-05.md",
+    "sha256": "2ca44213de3024ff600e943012a796fcee897142c73765111d1c5928f548b0bf"
+  },
+  "EM": {
+    "path": "/workspace/quantum-comp/references/entanglement-publications/MANIFEST.md",
+    "sha256": "6480105e6efa4b08b04817aabf03b57188397f55bef552c94d7c4190644b0786"
+  },
+  "E1": {
+    "path": "/workspace/quantum-comp/references/entanglement-publications/17-theorems-v5.pdf",
+    "sha256": "cae926b863e5ad4ff1a06a6e70b8449d821bfb4b4af3184b8789d752b48fc1fd"
+  },
+  "E2": {
+    "path": "/workspace/quantum-comp/references/entanglement-publications/theorems-18-40-v1.pdf",
+    "sha256": "d70e3507ff32e8b19e006533dc71aad4309c1dd8a3c2def292d7937eb805b4fe"
+  }
+}

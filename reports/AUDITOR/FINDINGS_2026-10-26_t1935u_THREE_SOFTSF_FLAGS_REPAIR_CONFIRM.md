@@ -1,0 +1,17 @@
+# FINDINGS — Soft SF CONFIRM: THREE Soft SF FLAGS REPAIR — 2026-10-26 t1935u CDT
+Auditor Keeper. Read-only verify. tip_touched NO. No Eigen agent contact. Full-corpus audit OPEN.
+
+## Tip Soft SF LOCK
+/workspace/residual-c-field-WRITTEN_PREMISES_DRAFT.md sha256 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 MATCH (read-only).
+
+## Presses (both copies: reports/ and bridges/AUDITOR/, sidecars MATCH)
+- SOFTSF_PRESS_MR1_PROMOTE_CSV_PROVENANCE_RESTAMP_2026-10-26.md 973112eea48b9a4cc18fed7c65f0fb6388210ab7311fc012758c346b13c7ddee MATCH
+- SOFTSF_PRESS_PHYSICIST_THREE_SOFTSF_FLAGS_REPAIR_2026-10-26.md aeaeab454f87334b03938b55d620b75b4dcefc3cfb231caf2ae623754e423eff MATCH
+
+## Live CSVs under /workspace/grok-batches/ vs restamp press
+- TE-SIMPSON-FILL-MODP_N18_2026-10-26.csv 38534aa1102da03cf96d7d76cdd454f8ef0530c4ef12439ec0cbf3c4346010f3 MATCH
+- TE-SIMPSON-FILL-SCHEDULE_TORD_N18_2026-10-26.csv 4de5113b477836c6347d33d7142d4dfcdfd001fbb1b32085b62f5b2fabb6976e MATCH
+- TE-SIMPSON-FILL-MODP-N36_N18_2026-10-26.csv 0e17098c61b5ee7823dad690fa998389a84e504055e599ca31c36a423deacbf2 MATCH
+
+## Verdict
+Pack A SF-1 MR1 PROMOTE CSV restamp: Soft SF CONFIRM CLEARED. Consolidated repair: Soft SF CONFIRM CLEARED (Pack B/C previously CLEARED). Three Soft SF flags: CLEARED.

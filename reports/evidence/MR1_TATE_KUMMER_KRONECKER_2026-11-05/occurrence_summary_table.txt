@@ -1,0 +1,61 @@
+corpus	string	count
+tip	Tate-Gelfand	0
+tip	Tate–Gelfand	0
+tip	Gelfand-Graev	0
+tip	Gelfand–Graev	0
+tip	Bruhat-Schwartz	0
+tip	Bruhat–Schwartz	0
+tip	Bruhat-Tits	0
+tip	Bruhat–Tits	0
+tip	Kummer	0
+tip	Kronecker filter	0
+tip	Kronecker-filter	0
+tip	Kronecker.filter	0
+tip	Kronecker limit	0
+tip	Kronecker symbol	0
+tip	Kronecker	0
+RTA_v16	Tate-Gelfand	0
+RTA_v16	Tate–Gelfand	0
+RTA_v16	Gelfand-Graev	0
+RTA_v16	Gelfand–Graev	0
+RTA_v16	Bruhat-Schwartz	0
+RTA_v16	Bruhat–Schwartz	0
+RTA_v16	Bruhat-Tits	0
+RTA_v16	Bruhat–Tits	0
+RTA_v16	Kummer	0
+RTA_v16	Kronecker filter	0
+RTA_v16	Kronecker-filter	0
+RTA_v16	Kronecker.filter	0
+RTA_v16	Kronecker limit	2
+RTA_v16	Kronecker symbol	0
+RTA_v16	Kronecker	6
+entanglement	Tate-Gelfand	0
+entanglement	Tate–Gelfand	0
+entanglement	Gelfand-Graev	0
+entanglement	Gelfand–Graev	0
+entanglement	Bruhat-Schwartz	0
+entanglement	Bruhat–Schwartz	0
+entanglement	Bruhat-Tits	0
+entanglement	Bruhat–Tits	0
+entanglement	Kummer	0
+entanglement	Kronecker filter	0
+entanglement	Kronecker-filter	0
+entanglement	Kronecker.filter	0
+entanglement	Kronecker limit	0
+entanglement	Kronecker symbol	0
+entanglement	Kronecker	0
+MR1_SoftSF	Tate-Gelfand	35
+MR1_SoftSF	Tate–Gelfand	50
+MR1_SoftSF	Gelfand-Graev	0
+MR1_SoftSF	Gelfand–Graev	10
+MR1_SoftSF	Bruhat-Schwartz	0
+MR1_SoftSF	Bruhat–Schwartz	10
+MR1_SoftSF	Bruhat-Tits	35
+MR1_SoftSF	Bruhat–Tits	35
+MR1_SoftSF	Kummer	45
+MR1_SoftSF	Kronecker filter	15
+MR1_SoftSF	Kronecker-filter	5
+MR1_SoftSF	Kronecker.filter	0
+MR1_SoftSF	Kronecker limit	5
+MR1_SoftSF	Kronecker symbol	5
+MR1_SoftSF	Kronecker	50

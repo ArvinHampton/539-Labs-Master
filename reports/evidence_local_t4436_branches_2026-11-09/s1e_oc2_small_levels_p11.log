@@ -1,0 +1,17 @@
+PARI stack size set to 2000000000 bytes, maximum size set to 2000003072
+level 392, char 1: dim S = 18; T(121) eigenspace for a_11(Xi) = -4: 0; for a_11(49a1) = +4: 4; 2s
+level 392, char -4: dim 0
+level 392, char 8: dim S = 18; T(121) eigenspace for a_11(Xi) = -4: 0; for a_11(49a1) = +4: 4; 6s
+level 392, char -8: dim 0
+level 392, char -7: dim 0
+level 392, char 28: dim S = 17; T(121) eigenspace for a_11(Xi) = -4: 0; for a_11(49a1) = +4: 6; 1s
+level 392, char -56: dim 0
+level 392, char 56: dim S = 17; T(121) eigenspace for a_11(Xi) = -4: 0; for a_11(49a1) = +4: 6; 1s
+level 784, char 1: dim S = 36; T(121) eigenspace for a_11(Xi) = -4: 0; for a_11(49a1) = +4: 8; 20s
+level 784, char -4: dim 0
+level 784, char 8: dim S = 42; T(121) eigenspace for a_11(Xi) = -4: 2 -> after T(37^2) (a_37(Xi)=+6): 0; for a_11(49a1) = +4: 8; 9479s
+level 784, char -8: dim 0
+level 784, char -7: dim 0
+level 784, char 28: dim S = 34; T(121) eigenspace for a_11(Xi) = -4: 0; for a_11(49a1) = +4: 12; 4s
+level 784, char -56: dim 0
+level 784, char 56: dim S = 41; T(121) eigenspace for a_11(Xi) = -4: 8 -> after T(37^2) (a_37(Xi)=+6): 0; for a_11(49a1) = +4: 8; 36155s

@@ -1,0 +1,5 @@
+# Soft SF PRESS — Physicist internal queues five
+OW: OWNER_WRITE_PHYSICIST_INTERNAL_QUEUES_FIVE_2026-10-26.md
+sha: 5b0c477f3e351b27428b0a7d07fade858ef9cd65a6ef8c6a2c6d6d0e90d964eb
+Dir: reports/PHYSICIST_QUEUES/ (QUEUE_LOCAL, QUEUE_NONLOCAL, QUEUE_EIGEN, QUEUE_AGENT, QUEUE_AUDITOR)
+Action: Soft SF CONFIRM Write-only absorb. tip Soft SF LOCK untouched.

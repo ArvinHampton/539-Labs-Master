@@ -1,0 +1,94 @@
+== 0. constants ==
+a_D = c_D (KR direct product (D)) = 28115127627.6
+l/l_p = 2 (pi N)^(1/3) = 49.6843821928 ; l^2/l_p^2 = 2468.537834
+check l^3 = 8 pi N l_p^3 : 1.0
+AdS7xS4 flux / (2 pi)^3 N = 1.0
+
+== 1. twist parameters at g=2 (1203.0303 (2.12)-(2.13)) ==
+z=-3: (p,q)=(-2,4), p+q=2=2g-2 BBBW |z|>1
+z=-2: (p,q)=(-1,3), p+q=2=2g-2 BBBW |z|>1
+z=-1: (p,q)=(0,2), p+q=2=2g-2 MN2
+z=+0: (p,q)=(1,1), p+q=2=2g-2 MN1
+z=+1: (p,q)=(2,0), p+q=2=2g-2 MN2
+z=+2: (p,q)=(3,-1), p+q=2=2g-2 BBBW |z|>1
+z=+3: (p,q)=(4,-2), p+q=2=2g-2 BBBW |z|>1
+0<|z|<1 needs z=n/(g-1) non-integer: impossible at g=2 (g-2 = 0 such points)
+
+== 2. BBBW IR fixed point (1112.5487 (8)-(9) / 1203.0303 (3.8)) ==
+MN1(z=0) {'z': 0, 'X0': 1.25878334839, 'X1': 0.944087511295, 'X2': 0.944087511295, 'ef': 0.794417880787, 'e2g': 0.210366589771, 'a1': 0.500000000000, 'a2': 0.500000000000}
+MN2(z=1) {'z': 1, 'X0': 1.31950791077, 'X1': 0.659753955386, 'X2': 1.31950791077, 'ef': 0.757858283255, 'e2g': 0.287174588749, 'a1': 1.00000000000, 'a2': 0}
+BBBW(z=2) {'z': 2, 'X0': 1.36852523442, 'X1': 0.580673592059, 'X2': 1.47211425957, 'ef': 0.730713599464, 'e2g': 0.409849822930, 'a1': 1.50000000000, 'a2': -0.500000000000}
+BBBW(z=3) {'z': 3, 'X0': 1.39560472508, 'X1': 0.547600099047, 'X2': 1.54580698857, 'ef': 0.716535263913, 'e2g': 0.538366799084, 'a1': 2.00000000000, 'a2': -1.00000000000}
+BBBW(z=-2) mirror {'z': -2, 'X0': 1.36852523442, 'X1': 1.47211425957, 'X2': 0.580673592059, 'ef': 0.730713599464, 'e2g': 0.409849822930, 'a1': -0.500000000000, 'a2': 1.50000000000}
+MN2: X1 - 2^(-3/5) = 0 ; X2 - X0 = 0 (SO(3) condition)
+MN1: X1^5 - 3/4 = 0 ; MN (28): e^{5phi}=4/3 -> X1=e^{-phi}; X0=e^{4phi}:  0 ; MN (28) e^{-2g-3phi}=4 with e^{2g}=e^{2g0}, e^{-3phi}=X1^3: 4.0000000000000000000
+
+== 3. large-N a=c (1203.0303 (4.6),(4.7), kappa=-1) ==
+MN1(z=0): e^(3f0+2g0)=0.105468750000000  a/N^3 via (4.6)=0.281250000000000  via (4.7)=0.281250000000000  a(N=4880)=32685264000.0  ratio to a_D=1.162550796
+MN2(z=1): e^(3f0+2g0)=0.125000000000000  a/N^3 via (4.6)=0.333333333333333  via (4.7)=0.333333333333333  a(N=4880)=38738090666.7  ratio to a_D=1.377837980
+BBBW(z=2): e^(3f0+2g0)=0.159906575353578  a/N^3 via (4.6)=0.426417534276208  via (4.7)=0.426417534276208  a(N=4880)=49555803313.9  ratio to a_D=1.762602823
+BBBW(z=3): e^(3f0+2g0)=0.198057355398973  a/N^3 via (4.6)=0.528152947730595  via (4.7)=0.528152947730595  a(N=4880)=61378910325.2  ratio to a_D=2.183127572
+BBBW(z=-2) mirror: e^(3f0+2g0)=0.159906575353578  a/N^3 via (4.6)=0.426417534276208  via (4.7)=0.426417534276208  a(N=4880)=49555803313.9  ratio to a_D=1.762602823
+MN1/MN2 large-N ratio = 0.843750000000000 (27/32 = 0.843750000000000 )
+(4.9) large-z asymptote c~(sqrt3/16)z+3/16 at z=3: 0.512259526419165 vs 0.528152947730595
+
+== 4. exact finite-N a, c via a-maximization (1203.0303 (2.6),(2.16)) for A_{N-1} ==
+MN1(z=0): eps*=0 a=32685263542.3125 c=32685263237.3750 a/c=1.00000000932951
+    a/a_largeN-1=-1.40029E-8  ratio a/a_D=1.16255077961  c/a_D=1.16255076877
+MN2(z=1): eps*=-0.333333333333333 a=38738090056.4583 c=38738089853.1667 a/c=1.00000000524785 | (2.17) eps=-0.333333333333333 (2.20) a-diff=0 c-diff=0
+    a/a_largeN-1=-1.57522E-8  ratio a/a_D=1.37783795861  c/a_D=1.37783795138
+BBBW(z=2): eps*=-0.434258543204520 a=49555802320.3552 c=49555802280.2612 a/c=1.00000000080907 | (2.17) eps=-0.434258543204520 (2.20) a-diff=-0E-115 c-diff=-0E-115
+    a/a_largeN-1=-2.00499E-8  ratio a/a_D=1.76260278725  c/a_D=1.76260278583
+BBBW(z=3): eps*=-0.476833620530217 a=61378908870.5925 c=61378909001.8683 a/c=0.999999997861222 | (2.17) eps=-0.476833620530217 (2.20) a-diff=0E-116 c-diff=0E-116
+    a/a_largeN-1=-2.36982E-8  ratio a/a_D=2.18312752066  c/a_D=2.18312752533
+MN2 GM (2.5) check: a_GM= 929714161355/24  a_amax-a_GM= 0  c_GM= 232428539119/6  c_amax-c_GM= 0
+MN2 symbolic: eps*=-1/3  a=(N - 1)*(8*N**2 + 8*N + 5)/24  c=(N - 1)*(2*N**2 + 2*N + 1)/6
+MN1 symbolic: eps*=0  a=3*(N - 1)*(3*N**2 + 3*N + 2)/32  c=(N - 1)*(9*N**2 + 9*N + 4)/32
+GM (2.5) a factor: (N - 1)*(8*N**2 + 8*N + 5)/24  c factor: (N - 1)*(2*N**2 + 2*N + 1)/6
+bound (2.23) 1/2<=a/c<=3/2 MN1(z=0): True
+bound (2.23) 1/2<=a/c<=3/2 MN2(z=1): True
+bound (2.23) 1/2<=a/c<=3/2 BBBW(z=2): True
+bound (2.23) 1/2<=a/c<=3/2 BBBW(z=3): True
+
+== 5. holographic normalization: a = (g-1) N^3 e^(3f0+2g0) J / pi^2, J = int Delta^-1/2 sqrt(h4) ==
+det h4 = -(X0*sin(alpha)**2 - X0 + X1*sin(alpha)**2*sin(beta)**2 - X1*sin(alpha)**2 - X2*sin(alpha)**2*sin(beta)**2)*sin(alpha)**6*sin(beta)**2*cos(beta)**2/(X0*X1**2*X2**2)
+MN1(z=0): J/(8pi^2/3)=1.0  a/N^3 holo=0.28125 vs (4.7) 0.281250000000000
+MN2(z=1): J/(8pi^2/3)=1.0  a/N^3 holo=0.333333333333333 vs (4.7) 0.333333333333333
+BBBW(z=2): J/(8pi^2/3)=1.0  a/N^3 holo=0.426417534276208 vs (4.7) 0.426417534276208
+BBBW(z=3): J/(8pi^2/3)=1.0  a/N^3 holo=0.528152947730595 vs (4.7) 0.528152947730595
+BBBW(z=-2) mirror: J/(8pi^2/3)=1.0  a/N^3 holo=0.426417534276208 vs (4.7) 0.426417534276208
+
+== 6. 11D curvature: Einstein check R^t_t = -R (G4 has no AdS5 legs) and Phi = G.G = 144 R ==
+symbolic Ricci built in 66s
+MN1(z=0): max|R^t_t+R|=3.42e-07 max|R^r_r+R|=3.42e-07 (r,v)-indep=2.31e-14 R in [4.40322995,6.99927932] (1/l^2); Phi=144R in [634.065113,1007.896222]; max R_MN R^MN=1061.544699; R/Phi>=0: True
+    edge/pole points (mpmath dps60, 15 pts incl. alpha,beta within 1e-6 of 0, pi/2, pi): max|R^t_t+R|=3.15e-25 R in [4.4025697,6.9992793] RicSq max=1061.5447
+    l_p^2 R_max=2.835395e-03  l_p^2 Phi_max=4.082969e-01  l_p^4 RicSq_max=1.742042e-04  l_p^2 sqrt(RicSq)_max=1.319865e-02
+MN2(z=1): max|R^t_t+R|=2.06e-06 max|R^r_r+R|=2.06e-06 (r,v)-indep=5.68e-14 R in [5.29133518,11.99307171] (1/l^2); Phi=144R in [761.952265,1727.002327]; max R_MN R^MN=3307.747757; R/Phi>=0: True
+    edge/pole points (mpmath dps60, 15 pts incl. alpha,beta within 1e-6 of 0, pi/2, pi): max|R^t_t+R|=2.09e-25 R in [5.2913368,12.0] RicSq max=3312.0
+    l_p^2 R_max=4.861177e-03  l_p^2 Phi_max=7.000095e-01  l_p^4 RicSq_max=5.435140e-04  l_p^2 sqrt(RicSq)_max=2.331339e-02
+BBBW(z=2): max|R^t_t+R|=2.96e-06 max|R^r_r+R|=2.96e-06 (r,v)-indep=1.23e-13 R in [5.20688987,14.88381038] (1/l^2); Phi=144R in [749.792141,2143.268694]; max R_MN R^MN=5075.754215; R/Phi>=0: True
+    edge/pole points (mpmath dps60, 15 pts incl. alpha,beta within 1e-6 of 0, pi/2, pi): max|R^t_t+R|=8.94e-26 R in [5.2058609,14.89733] RicSq max=5086.0476
+    l_p^2 R_max=6.034880e-03  l_p^2 Phi_max=8.690227e-01  l_p^4 RicSq_max=8.346432e-04  l_p^2 sqrt(RicSq)_max=2.889019e-02
+BBBW(z=3): max|R^t_t+R|=9.24e-07 max|R^r_r+R|=9.24e-07 (r,v)-indep=2.27e-13 R in [5.23667197,16.46311667] (1/l^2); Phi=144R in [754.080764,2370.688800]; max R_MN R^MN=6189.026138; R/Phi>=0: True
+    edge/pole points (mpmath dps60, 15 pts incl. alpha,beta within 1e-6 of 0, pi/2, pi): max|R^t_t+R|=1.5e-25 R in [5.2356361,16.481022] RicSq max=6203.9185
+    l_p^2 R_max=6.676431e-03  l_p^2 Phi_max=9.614060e-01  l_p^4 RicSq_max=1.018091e-03  l_p^2 sqrt(RicSq)_max=3.190754e-02
+NEG-CONTROL z=2 with X1*1.1: max|R^t_t+R|=1.36e+00 max|R^r_r+R|=1.36e+00 (r,v)-indep=8.53e-14 R in [4.07287539,11.98710074] (1/l^2); Phi=144R in [586.494057,1726.142507]; max R_MN R^MN=3854.597167; R/Phi>=0: True
+    edge/pole points (mpmath dps60, 15 pts incl. alpha,beta within 1e-6 of 0, pi/2, pi): max|R^t_t+R|=1.36 R in [4.0719808,11.997262] RicSq max=3861.5498
+    l_p^2 R_max=4.860068e-03  l_p^2 Phi_max=6.998498e-01  l_p^4 RicSq_max=6.336976e-04  l_p^2 sqrt(RicSq)_max=2.517335e-02
+
+(D) reference: R=4k^2, Phi=576k^2 with k = sqrt(3/8)(pi N)^(-1/3)/l_p
+   l_p^2 R_D = 0.00243059  l_p^2 Phi_D = 0.350005
+
+== 7. cross-check vs NL 418e4e50 (G5 ratios; a ~ L5^3/G5) ==
+a_D from NL C3: pi L5^3/(8 G5) = 0.24192492 N^3 ; MR2 (8/81)sqrt6 = 0.24192491
+MN2(z=1): L5=l e^f0=37.6537206 (NL 37.653721); G5=pi L5^3/(8a)=5.41185e-7 (NL 5.4118e-7); G5/G5_D=(L5/L5D)^3 a_D/a=0.58037 (NL 0.5804); a_D/a=0.725775
+    Area(Sigma)=l^2 e^(2g0) 4pi(g-1)=8908.3169 l_p^2
+MN1(z=0): L5=l e^f0=39.4701616 (NL 39.470162); G5=pi L5^3/(8a)=7.38779e-7 (NL 7.3878e-7); G5/G5_D=(L5/L5D)^3 a_D/a=0.79227 (NL 0.7923); a_D/a=0.860177
+    Area(Sigma)=l^2 e^(2g0) 4pi(g-1)=6525.6897 l_p^2
+BBBW(z=2): L5=l e^f0=36.3050537 (NL 36.305054); G5=pi L5^3/(8a)=3.79199e-7 (NL 3.7920e-7); G5/G5_D=(L5/L5D)^3 a_D/a=0.40665 (NL 0.4067); a_D/a=0.567343
+    Area(Sigma)=l^2 e^(2g0) 4pi(g-1)=12713.772 l_p^2
+BBBW(z=3): L5=l e^f0=35.6006119 (NL 35.600612); G5=pi L5^3/(8a)=2.88678e-7 (NL 2.8868e-7); G5/G5_D=(L5/L5D)^3 a_D/a=0.30958 (NL 0.3096); a_D/a=0.458058
+    Area(Sigma)=l^2 e^(2g0) 4pi(g-1)=16700.44 l_p^2
+
+DONE
+exit_code=0 (run 16:34-16:36 CST of script sha 4562c8a1936a460b23999a2e4b0f5942886c53c98fee58ae185ad839b5051d4c; SUPERSEDED by _V2.py)

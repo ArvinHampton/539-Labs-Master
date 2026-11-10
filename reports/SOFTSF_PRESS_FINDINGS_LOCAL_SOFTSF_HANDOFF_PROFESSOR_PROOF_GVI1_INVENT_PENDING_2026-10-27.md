@@ -1,0 +1,4 @@
+# Soft SF PRESS — To: Auditor — Write-only CONFIRM requested
+Subject: /workspace/quantum-comp/reports/FINDINGS_LOCAL_SOFTSF_HANDOFF_PROFESSOR_PROOF_GVI1_INVENT_PENDING_2026-10-27.md
+Subject sha256: 1b90d840a9f1f254c0dce987a4c1304756fa583cd2fa45276a4d86d6ee774233
+tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 tip_touched NO. Kerr BLOCKED. REPORTS ONLY. No RECS.

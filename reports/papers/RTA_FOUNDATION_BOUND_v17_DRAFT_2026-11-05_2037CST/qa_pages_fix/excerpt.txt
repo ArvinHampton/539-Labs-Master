@@ -1,0 +1,441 @@
+43 Boundary rank over C2 × C4 × C6
+This section integrates the November 2026 existing-record analysis of a 48-dimensional group-ring
+boundary system over
+G ∼
+= C2 × C4 × C6 ,
+√
+√
+with coeﬀicient field F = Q( 35) and the positive real embedding of 35. It is additive material for
+Version 17 DRAFT. It does not alter the Bridge Series theorems of Parts II–III, does not identify Ξ,
+and does not close capacity. Status labels follow the editorial vocabulary of Section 42.
+Source basis. Orbit memberships and the A/B/C/D weight rule are taken from the verification
+record /tmp/q.py (lines 5–16) used in Addenda R/R.1/S/V; Addendum R confirms that the twentyeight orbits partition G and that the twisted symmetry holds for w = y. Intake manuscripts
+′ are those
+through Version 16 do not reprint the full membership table. The spectra of H ′ and H01
+of Addendum V. Matrix identities for M and M ′ follow Addenda S–T. Paths for the cited review
+records include /workspace/quantum-comp/reports/FINDINGS_PP_OWNER_PDF_1715_MATH_REVI
+EW_ADDENDUM_R_1926_2026-11-05.md, ..._S_1932_..., ..._T_1938_..., ..._V_1949_..., and
+..._X_2002_.... No independent recomputation is claimed beyond these records.
+
+43.1
+
+Coordinates, fields, and operators
+
+Definition 43.1 (Coordinates and index). Write elements of G as c = (j, k, `) with j ∈ {0, 1},
+k ∈ {0, 1, 2, 3}, ` ∈ {0, 1, 2, 3, 4, 5}, and set
+I(c) = 24j + 6k + `.
+Let x = (1, 0, 0), y = (0, 1, 0), z = (0, 0, 1). The involution
+π(j, k, `) = (j, 2 − k, −`)
+implements c 7→ c−1 y −2 (Addendum R). The eight π-fixed points are exactly the elements with k
+odd and ` ∈ {0, 3}; the remaining orbits are twenty pairs. The even-k locus is not the set of π-fixed
+points.
+√
+Definition 43.2 (Coeﬀicient and character fields). Let s = 35 and F = Q(s). Character values
+of G require a cyclotomic extension containing i and a primitive sixth root of unity. Writing
+L = Q(ζ12 ) (so [L : Q] = 4) and K = F (ζ12 ), one has
+[K : Q] = 8,
+
+[K : F ] = 4.
+
+Characters may be evaluated over C; F alone is not a splitting field for the character table of G.
+Definition 43.3 (Shifted transfer operator). Given coeﬀicients ac ∈ F , the shifted layer operator
+is the group-ring convolution
+X
+
+H =
+ac Rcy ∈ EndF F [G] ,
+c∈G
+
+where Rg denotes left translation by g on the free F -module F [G] ∼
+= F 48 . Scalar extension yields
+operators on K[G] or C[G] when character evaluations are required. In the spatial j-partition one
+writes
+
+
+H00 H01
+H=
+H10 H11
+with 24 × 24 blocks. The cross-block entries obey the coordinate rule
+(H01 )(k1 ,ℓ1 ),(k2 ,ℓ2 ) = a x yk1 −k2 +3 z ℓ1 −ℓ2 .
+140
+
+(43.1)
+
+43.2
+
+The exact coeﬀicient table
+
+√
+Definition 43.4 (Original A/B/C/D table). Let s = 35. The verification record assigns orbit
+weights by
+
+
+0,
+c ∈ O2 = {(0, 3, 0)} = {y 3 },
+
+
+
+
+
+1 + s, c ∈ O1 ∪ O3 ∪ O4 ,
+ac = 6 − s, c ∈ O5 ∪ O6 ∪ O7 ∪ O8 ,
+
+
+
+2 + s, c ∈ O9 ∪ · · · ∪ O18 ,
+
+
+
+
+3 + s, c ∈ O19 ∪ · · · ∪ O28 .
+In particular a1 = a(0,0,0) = 2 + s 6= 0 and ay3 = 0. The singleton O6 = {xy 3 } = {(1, 3, 0)} carries
+original weight 6 − s. The one tuned variant used below replaces only
+axy3 : 6 − s −→ 7 − s,
+keeping the other forty-seven coeﬀicients fixed. (The orbit scalar 6 − s must not be confused with
+the boundary matrix B.)
+Remark 43.5 (Orbit memberships). The twenty-eight orbits, as recorded in /tmp/q.py, are listed
+two per row:
+O1 = {(0, 1, 0)}
+O3 = {(0, 1, 3)}
+O5 = {(1, 1, 0)}
+O7 = {(1, 1, 3)}
+O9 = {(0, 0, 0), (0, 2, 0)}
+O11 = {(0, 0, 3), (0, 2, 3)}
+O13 = {(0, 0, 1), (0, 2, 5)}
+O15 = {(1, 0, 1), (1, 2, 5)}
+O17 = {(0, 0, 2), (0, 2, 4)}
+O19 = {(1, 0, 2), (1, 2, 4)}
+O21 = {(0, 1, 1), (0, 1, 5)}
+O23 = {(1, 1, 1), (1, 1, 5)}
+O25 = {(0, 1, 2), (0, 1, 4)}
+O27 = {(1, 1, 2), (1, 1, 4)}
+
+O2 = {(0, 3, 0)}
+O4 = {(0, 3, 3)}
+O6 = {(1, 3, 0)}
+O8 = {(1, 3, 3)}
+O10 = {(1, 0, 0), (1, 2, 0)}
+O12 = {(1, 0, 3), (1, 2, 3)}
+O14 = {(0, 0, 5), (0, 2, 1)}
+O16 = {(1, 0, 5), (1, 2, 1)}
+O18 = {(0, 0, 4), (0, 2, 2)}
+O20 = {(1, 0, 4), (1, 2, 2)}
+O22 = {(0, 3, 1), (0, 3, 5)}
+O24 = {(1, 3, 1), (1, 3, 5)}
+O26 = {(0, 3, 2), (0, 3, 4)}
+O28 = {(1, 3, 2), (1, 3, 4)}
+
+Every orbit is π-stable. Provenance: verification record, not an independent Owner-intake reprint.
+Slice
+
+Weights along ` = 0, . . . , 5
+
+j = 0, k = 0
+j = 0, k = 1
+j = 0, k = 2
+j = 0, k = 3
+j = 1, k = 0
+j = 1, k = 1
+j = 1, k = 2
+j = 1, k = 3
+
+2 + s, 2 + s, 2 + s, 2 + s, 2 + s, 2 + s
+1 + s, 3 + s, 3 + s, 1 + s, 3 + s, 3 + s
+2 + s, 2 + s, 2 + s, 2 + s, 2 + s, 2 + s
+0, 3 + s, 3 + s, 1 + s, 3 + s, 3 + s
+2 + s, 2 + s, 3 + s, 2 + s, 3 + s, 2 + s
+6 − s, 3 + s, 3 + s, 6 − s, 3 + s, 3 + s
+2 + s, 2 + s, 3 + s, 2 + s, 3 + s, 2 + s
+6 − s, 3 + s, 3 + s, 6 − s, 3 + s, 3 + s
+
+The j = 1 block supplies the twenty-four coeﬀicients of H01 . In the tuned variant only the entry
+(j, k, `) = (1, 3, 0) changes from 6 − s to 7 − s.
+
+141
+
+43.3
+
+Selectors, cascade, and three matrices
+
+Definition 43.6 (Spatial selectors and translation). Set S0 = [I24 0] and SM = [0 I24 ]. Let
+t = (1, 2, 3) and T = Rt , so that in the j-partition
+
+
+0 ΘA
+T =
+ΘB 0
+with permutation blocks ΘA , ΘB ∈ GL24 (Z).
+
+L
+Definition 43.7 (Cascade versus endpoint constraints). The sequential cascade D on M
+i=0 Li is
+defined by (Dx)i = xi − Ti xi−1 . It is surjective with ker D ∼
+= L0 , and on ker D one has xM = P x0
+with P = TM · · · T1 . Endpoint constraints are separate:
+• coupled: C0 x0 + CM xM = 0, equivalently (C0 + CM P )x0 = 0;
+ 
+ 
+S0
+0
+, CM =
+, giving
+• independent stacked: C0 =
+0
+SM
+
+
+S0
+B=
+,
+ker B = ker S0 ∩ ker(SM P ).
+SM P
+Exact selectors are part of the data; they are not determined by the primes alone.
+Theorem 43.8 (Bare stacked matrix of rank 24). With the complementary selectors of Definition 43.6 and with no internal conductance factor,
+
+ 
+
+S0
+I24 0
+Bbare =
+=
+SM R t
+ΘB 0
+has rank Bbare = 24. In particular Bbare is not the original-table system matrix M below.
+Proof. SM Rt = [ΘB 0], so the second block row contributes only the first twenty-four columns.
+The top block supplies I24 , hence rank 24 (Addendum Q; path ..._ADDENDUM_Q_1919_2026-11-0
+5.md).
+Status (Category A). PROVED. Bare selector stack rank 24; distinct from M .
+
+Theorem 43.9 (Original-table matrix M of exact rank 36). Let H be built from the original table
+of Definition 43.4. Set
+
+ 
+
+S0
+I24
+0
+M=
+=
+.
+SM R t H
+ΘB H00 ΘB H01
+Exact block row reduction yields rank M = 24 + rank H01 . For the original table one has rank H01 =
+12 (twelve odd-q eigenvalues vanish), hence
+rank M = 36,
+
+dim ker M = 12.
+
+Moreover ker M = {0} ⊕ ker H01 in the j-partition. The original M is not called “bare”.
+Proof. Addendum S: SM Rt H = [ΘB H00 ΘB H01 ]; ΘB invertible implies the rank identity. The
+H01 spectrum (value: multiplicity) is 0:12, 76 + 16s:1, 4:1, −4:1, 2:2, −2:2, 10 − 8s:2, 14 − 8s:2,
+20 − 8s:1, summing to 24, with the twelve zeros precisely at odd q. Each of the twelve nonzero
+values is nonzero, by irrationality of s over Q (when a nonzero multiple of s appears) or by being
+a nonzero integer; invertibility statements for the blocks are over F . Thus rank H01 = 12 and
+rank M = 36 exactly for this table (Addendum T).
+142
+
+Status (Category A). PROVED for the exact A/B/C/D table. Not immutable for all positive weights.
+
+Theorem 43.10 (Singleton tuning restores full rank). Tune only axy3 from 6 − s to 7 − s. Then
+H ′ = H + Rx , both cross-blocks gain +I24 , and
+
+ 
+
+S0
+I24
+0
+′
+M =
+=
+.
+SM R t H ′
+ΘB H00 ΘB (H01 + I24 )
+The character eigenvalues of H ′ shift by the non-uniform rule λ′χ = λχ + (−1)p . The exact spectrum
+of H ′ comprises fourteen distinct values of total multiplicity 48:
+λ′
+128 + 39s
+2 − 9s
+6 − 9s
+24 − 9s
+−6 − s
+−4 − s
+−2 − s
+
+mult.
+1
+2
+2
+1
+1
+3
+14
+
+λ′
+2−s
+4−s
+−26 + 7s
+−24 + 7s
+−20 + 7s
+−18 + 7s
+−s
+
+mult.
+3
+1
+1
+2
+2
+1
+14
+
+Each value is of the form u + vs with u, v ∈ Q and v 6= 0, hence is nonzero (by irrationality of s
+′ =H +I
+over Q), so H ′ is invertible over F . Independently, H01
+01
+24 has nine distinct eigenvalues
+of total multiplicity 24:
+µ′
+1
+77 + 16s
+5
+−3
+3
+−1
+11 − 8s
+15 − 8s
+21 − 8s
+
+mult.
+12
+1
+1
+1
+2
+2
+2
+2
+1
+
+′ = 24 and rank M ′ = 48, ker M ′ = {0}. Invertibility of the whole H ′
+None vanishes, so rank H01
+′ = 24. Full column
+is independent of, and not necessary for, the boundary criterion rank H01
+′
+48
+rank yields a unique vector solution of M x = b for every b ∈ F ; it does not establish unique
+combinatorial paths, nor any capacity identity, nor an automatic orthogonalization of the physical
+model.
+′ = H
+Proof. Addenda T and V: (xy 3 ) · y = x gives H ′ = H + Rx and H01
+01 + I24 . The listed
+spectra are the exact Addendum V enumerations (multiplicities sum to 48 and 24). Irrationality
+of s over Q excludes zeros of every eigenvalue with nonzero s-coeﬀicient; rational eigenvalues in the
+′ list are nonzero integers. The block reduction of Theorem 43.9 applied to H ′ yields the rank
+H01
+claim. The path/capacity caveats are scope statements (Addenda S–T, U, X).
+
+Status (Category A). PROVED as recorded: rank M ′ = 48; vector uniqueness only. Capacity remains
+OPEN (no closure claim).
+
+143
+
+43.4
+
+Path mass, capacity, and related warnings
+
+Definition 43.11 (Path mass and signed weight). Write N =
+path mass. Let W denote a signed path weight.
+
+Q
+
+i khi k1 for the uncollected absolute
+
+• If W is a single coeﬀicient of the collected product hM · · · h1 , then
+|W | ≤ khM · · · h1 k1 ≤ N.
+• If W is instead a signed sum over an arbitrary specified subset of paths, then in general only
+|W | ≤ N
+is asserted under the standing hypothesis that each contributing term is bounded in absolute value by the corresponding unsigned path mass (triangle inequality); the intermediate
+comparison to khM · · · h1 k1 is not claimed for arbitrary restrictions.
+Equality cases in the single-coeﬀicient chain require
+Q a common-phase condition together with vanishing of omitted terms. A spectral bound |W | ≤ i spr(ρ(hi )) holds for specified linear functionals
+(single coeﬀicients via Fourier inversion), not for arbitrary path restrictions. The identity N = |W |
+is not a general theorem. Here N and W are not a node set and a support set.
+Remark 43.12 (Capacity remains OPEN). Neither ker M ′ = {0} nor invertibility of H ′ supplies
+a written implication that closes the capacity defect Defect = N − |W |, nor an identification of N
+and W with the regular representation beyond the inequalities of Definition 43.11. This is a missing
+implication on the present record, not a countertheorem.
+Category B. OPEN. Full rank does not by itself close capacity; no PROVED status.
+
+Proposition 43.13 (Compression of a rank-36 operator). Rank 36 alone does not guarantee that
+an orthogonal compression P BP ∗ is invertible. A correct reduced isomorphism uses orthonormal
+bases U of im B and V of (ker B)⊥ , yielding an invertible block U ∗ BV .
+Proof. Addendum X: the nilpotent example embedded as I35 ⊕ N ⊕ 011 has rank 36 with a singular
+compression; the U, V construction is the standard isomorphism theorem.
+Status (Category A). PROVED as a linear-algebra warning; specific compressions may still be invertible.
+
+Proposition 43.14 (Inert-prime filter and local isometry). If a finite inert-prime filter for discriminant 140 is used, it must be of the form
+
+K = {p < X : p ∤ 140, p prime, 140
+= −1}
+p
+for an explicit cutoff X. The prime 3 is inert in F , giving an unramified quadratic local extension;
+4 generates 1 + 3Z3 . Membership A ∈ GLn (OF3 ) implies a supremum-norm isometry; a unit
+determinant alone does not. A complex basis does not automatically define an F3 -lattice. Writing
+C3 for a completion of an algebraic closure of Q3 , one has that the multiplicative group of absolute
+Q (dense in the positive reals), whereas |Q× | = 3Z is discrete. Entrywise
+values |C×
+3 | equals 3
+3
+subtraction of a constant from a group-circulant is C − κJ (all-ones), shifting only the trivial
+character, and is not the diagonal shift C − κI.
+144
+
+Proof. Addenda J, W, X as recorded (filter and isometry warnings; absolute-value groups of Q3 and
+C3 ). No cubes claim is made. Modular→Iwasawa bridges remain UNDEFINED/CONDITIONAL
+on those records.
+Status (Category A). PROVED/recorded filter, isometry,
+modular→Iwasawa bridges remain UNDEFINED/CONDITIONAL.
+
+and absolute-value warnings;
+
+Remark 43.15 (Graph Poisson versus capacity). Balance and energy identities for the graph
+Laplacian with the conductance convention of the Owner transfer notes remain available as
+PROVED local solver facts (Addenda C–E chain). A balanced-source counterexample does not, by
+itself, refute the original capacity formulation; capacity stays OPEN.
+Remark 43.16 (Geometry). Five-dimensional / four-dimensional geometric readings tied to the
+shared spine remain CONDITIONAL where previously so recorded. Known counterexamples in
+the Non-Local lane are retained; no forced closure is asserted here.
+
+Part IV
+
+Foundation
+44 The foundation attempt: what ties RTA to the framework
+This section lists the written RTA objects and, for each, what is proved about its relation to
+the structures of Parts I–III. References to “RTA” are to the RTA manuscript (Residual Ternary
+Algebra: Packaging Identities, Residual Series gs , and Bridge Series C, draft of 24 August 2026),
+which has no algebraic axioms: its six numbered rules are process rules.
+
+44.1
+
+Proved links
+
+Proposition 44.1 (Identification of objects). The following hold.
+(i) The RTA residual series gs is the series gk of Part I with k = s.
+(ii) The RTA double-sum identity for (−q s ; q s )∞ gs holds for every s ≥ 1 as an identity in Z[[q]]
+(Proposition 2.2).
+(iii) The RTA path quadratic Qs , cones c1 , c2 , weight w, cone series Hs , orthant series and Bridge
+Series C = P7orth − H7 are those of §2 and of Part II; Caxis and Cthird are those of Part II,
+7
+§10; the RTA natural characteristic χnat (7) = ( 10
+, − 51 ) is the vector a.
+Proof. (i) and (iii) are comparisons of definitions: RTA Definition 6.1 and §§9–10 against Definition 2.1, §2 and Part II, §10; χnat (s) = (s/(2(s − 2)), −1/(s − 2)) at s = 7 equals a. (ii) is
+Proposition 2.2.
+Corollary 44.2 (Residue law of g7 and its converse). g7 (d) = 0 whenever d ≡ 3, 5, 6 (mod 7).
+Conversely, g7 (d) 6= 0 for every d ≡ 0, 1, 2, 4 (mod 7) outside the finite set Z7 of 24 elements listed
+in Appendix B (max Z7 = 247), and the sign of g7 (d) is (−1)d+1 for all such d ≥ D0 (7).
+Proof. By Proposition 3.2 (Part I), g7 (d) is a sum over n ≥ 0 with n2 ≡ d (mod 7); the squares
+modulo 7 are 0, 1, 2, 4, so the sum is empty for d ≡ 3, 5, 6. The converse is the case k = 7 of
+Theorem 8.1 (Part I, §8.1), parts 1 and 2.
+145
+
+

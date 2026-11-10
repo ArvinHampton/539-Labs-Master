@@ -1,0 +1,95 @@
+[0] KK .py sha256 88949658116586c63dc4785fc31c222eed6d9ef44afbefbc6e40a4946b20b26c (MATCH 88949658); exec'ing its group section [G]/[W] verbatim
+[G] generator g1: x->ix: kappa=0.000000+1.000000j; branch-point perm ['0', 'inf', 'i', '-1', '-i', '1']
+[G] generator g2: x->(x+1)/(1-x): kappa=-8.000000-0.000000j; branch-point perm ['1', '-1', 'inf', 'i', '0', '-i']
+[G] |closure of <g1,g2,J,K>| = 96;  holomorphic (Aut+) = 48;  antiholomorphic = 48
+[G] distinct H^1 matrices: 96 (faithful on H^1 iff = |G|)
+[G] Aut+ element orders: [(1, 1), (2, 13), (3, 8), (4, 6), (6, 8), (8, 12)]
+[G] Isom element orders: [(1, 1), (2, 31), (3, 8), (4, 8), (6, 8), (8, 24), (12, 16)]
+[G] GL(2,3) by enumeration: |GL(2,3)|=48, element orders [(1, 1), (2, 13), (3, 8), (4, 6), (6, 8), (8, 12)]
+[G] elements acting as -1 on H^1: 1 (the hyperelliptic involution); central in Isom: True
+[G] Aut+ (order 48): 8 classes, sizes [np.int64(1), np.int64(1), np.int64(6), np.int64(6), np.int64(6), np.int64(8), np.int64(8), np.int64(12)], irrep dims [1, 1, 2, 2, 2, 3, 3, 4], sum d^2 = 48, orthogonality err 4.2e-15
+[G] Aut+ (order 48) class rep orders [1, 2, 8, 4, 8, 3, 6, 2]; orientation [1, 1, 1, 1, 1, 1, 1, 1]
+   chi_0: +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000
+   chi_1: +1.000  +1.000  -1.000  +1.000  -1.000  +1.000  +1.000  -1.000
+   chi_2: +2.000  +2.000  -0.000  +2.000  -0.000  -1.000  -1.000  -0.000
+   chi_3: +2.000  -2.000  +0.000+1.414i  -0.000  -0.000-1.414i  -1.000  +1.000  -0.000
+   chi_4: +2.000  -2.000  +0.000-1.414i  -0.000  -0.000+1.414i  -1.000  +1.000  -0.000
+   chi_5: +3.000  +3.000  +1.000  -1.000  +1.000  +0.000  +0.000  -1.000
+   chi_6: +3.000  +3.000  -1.000  -1.000  -1.000  +0.000  -0.000  +1.000
+   chi_7: +4.000  -4.000  +0.000  +0.000  -0.000  +1.000  -1.000  -0.000
+[G] Isom (order 96): 13 classes, sizes [np.int64(1), np.int64(1), np.int64(2), np.int64(6), np.int64(6), np.int64(8), np.int64(8), np.int64(8), np.int64(8), np.int64(12), np.int64(12), np.int64(12), np.int64(12)], irrep dims [1, 1, 1, 1, 2, 2, 3, 3, 3, 3, 4, 4, 4], sum d^2 = 96, orthogonality err 2.9e-14
+[G] Isom (order 96) class rep orders [1, 2, 4, 2, 4, 3, 6, 12, 12, 8, 2, 8, 2]; orientation [1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, -1, 1]
+   chi_0: +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000
+   chi_1: +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  +1.000  -1.000  -1.000  -1.000  -1.000
+   chi_2: +1.000  +1.000  -1.000  -1.000  +1.000  +1.000  +1.000  -1.000  -1.000  -1.000  +1.000  +1.000  -1.000
+   chi_3: +1.000  +1.000  -1.000  -1.000  +1.000  +1.000  +1.000  -1.000  -1.000  +1.000  -1.000  -1.000  +1.000
+   chi_4: +2.000  +2.000  +2.000  +2.000  +2.000  -1.000  -1.000  -1.000  -1.000  -0.000  -0.000  -0.000  -0.000
+   chi_5: +2.000  +2.000  -2.000  -2.000  +2.000  -1.000  -1.000  +1.000  +1.000  +0.000  +0.000  -0.000  +0.000
+   chi_6: +3.000  +3.000  +3.000  -1.000  -1.000  -0.000  -0.000  +0.000  +0.000  -1.000  +1.000  -1.000  +1.000
+   chi_7: +3.000  +3.000  +3.000  -1.000  -1.000  -0.000  -0.000  -0.000  -0.000  +1.000  -1.000  +1.000  -1.000
+   chi_8: +3.000  +3.000  -3.000  +1.000  -1.000  +0.000  -0.000  +0.000  -0.000  -1.000  -1.000  +1.000  +1.000
+   chi_9: +3.000  +3.000  -3.000  +1.000  -1.000  -0.000  +0.000  -0.000  -0.000  +1.000  +1.000  -1.000  -1.000
+   chi_10: +4.000  -4.000  +0.000  +0.000  +0.000  +1.000  -1.000  -1.732  +1.732  +0.000  -0.000  -0.000  -0.000
+   chi_11: +4.000  -4.000  +0.000  -0.000  -0.000  +1.000  -1.000  +1.732  -1.732  +0.000  +0.000  -0.000  +0.000
+   chi_12: +4.000  -4.000  +0.000  +0.000  +0.000  -2.000  +2.000  +0.000  -0.000  +0.000  +0.000  -0.000  -0.000
+[G] (A) H^1(Sigma,R) (harmonic 1-forms, dim 4): multiplicities [-0.0, 0.0, -0.0, 1.0, 1.0, 0.0, -0.0, 0.0]  trivial-rep multiplicity = -0.000000
+[G] (B) H^1(Sigma,R) (harmonic 1-forms, dim 4): multiplicities [0.0, 0.0, 0.0, 0.0, -0.0, 0.0, -0.0, 0.0, 0.0, 0.0, -0.0, -0.0, 1.0]  trivial-rep multiplicity = 0.000000
+[G] (A) H^0(K) = holomorphic 1-forms (dim 2; q=1 lowest Landau level): multiplicities [-0.0, 0.0, -0.0, -0.0, 1.0, 0.0, -0.0, 0.0]  trivial-rep multiplicity = -0.000000
+[G] (A) H^0(K^2) = Sym^2 H^0(K) (dim 3; q=2 lowest Landau level): multiplicities [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]  trivial-rep multiplicity = 0.000000
+[G] Aut+: number of 1-dim characters = 2
+[G] Isom: number of 1-dim characters = 4
+[W] (A) Aut+ odd spin structures (theta chars O(P_i)): 6 objects, orbit sizes [6], invariant = 0
+[W] (A) Aut+ even spin structures (3+3 partitions): 10 objects, orbit sizes [4, 6], invariant = 0
+[W] (A) Aut+ nonzero H^1(Sigma,Z2) classes (P_i-P_j): discrete Z2 Wilson lines: 15 objects, orbit sizes [3, 12], invariant = 0
+[W] (B) Isom odd spin structures (theta chars O(P_i)): 6 objects, orbit sizes [6], invariant = 0
+[W] (B) Isom even spin structures (3+3 partitions): 10 objects, orbit sizes [4, 6], invariant = 0
+[W] (B) Isom nonzero H^1(Sigma,Z2) classes (P_i-P_j): discrete Z2 Wilson lines: 15 objects, orbit sizes [3, 12], invariant = 0
+[W] check: 6 odd + 10 even = 16 spin structures; 15 nonzero Z2 classes = 2^4-1
+[Z] theta characteristics (odd subsets mod complement): 16; J[2]=H^1(Sigma;Z2) (even subsets mod complement): 16
+[Z] torsor check: s -> s0 (sym.diff) s is a bijection theta -> J[2]: True
+[Z] (A) Aut+: orbits on H^1(Sigma;Z2) = 11D spin structures on Y labelled by d = s (x) s_R: [1, 3, 12]; d=0 (SUSY, s_R=s) fixed: True
+[Z] (A) Aut+: twisted pair (K^(1/2)_s, R-root s_R=s) mapped to a pair with s'_R=s' for every element: True; bare-s orbits: [6, 6, 6] (sample)
+[Z] (B) Isom, reflections dressed (same Sigma action): orbits on H^1(Sigma;Z2) = 11D spin structures on Y labelled by d = s (x) s_R: [1, 3, 12]; d=0 (SUSY, s_R=s) fixed: True
+[Z] (B) Isom, reflections dressed (same Sigma action): twisted pair (K^(1/2)_s, R-root s_R=s) mapped to a pair with s'_R=s' for every element: True; bare-s orbits: [6, 6, 6] (sample)
+[C] real 32x32 rep of Cl(10,1) found (words ['IIIIE', 'IIIIX', 'IIIXZ', 'IIIZZ', 'IIEEZ', 'IEXEZ', 'XEZEZ', 'ZEZEZ', 'EIZEZ', 'EXXEZ', 'EZXEZ']); Clifford error 0e+00; all real: True; Gamma^0...Gamma^10 = +1: True (HW convention (1.1))
+[C] Pin- check: real 32-dim rep needs Cl(10,1) (p-q=9=1 mod 8: M32(R)+M32(R)); Cl(1,10) (p-q=7 mod 8) is M32(C): no real 32 => Majorana gravitino requires Pin+ (LM table; FH 1908.09916 sec.2). volume-element square: Cl(10,1) +1, Cl(1,10) -1 -> in Cl(1,10) omega is central with omega^2=-1, so any real module carries a commuting complex structure: real dim >= 64, no real 32. PROVED.
+[C] 10D wall chirality Gamma_(wall) = prod of the 10 tangent gammas = [1] x Gamma_rho  => HW projection Gamma_rho eps = eps is 10D chirality (HW (1.2))
+[C] case | 11D orient | G4 sign | M-theory symmetry rule (G sign = orient sign) | wall-tangent reflections | lift ok/eps | same eps for complement lift | M^2 on fermions | [M,Gamma_rho] | S4 flux N -> 
+   W   wall Z2 (rho->-rho, G4 odd by OW f825dfff) | -1 | -1 | True  | 0 (even) | True/-1 | True | +1 | commutes | -N  (wall: N on one side, -N image: the 2N wall charge)
+   A   Aut+ example: (u,v) rotation by pi, Sigma part only (fibre compensation: [E]) | +1 | +1 | True  | 2 (even) | True/+1 | True | -1 | commutes | +N
+   s   bare Bolza reflection lift (u,phi1)      | +1 | -1 | False | 2 (even) | True/+1 | True | -1 | commutes | +N
+   (i) Bolza refl + 5D spatial parity x3        | -1 | -1 | True  | 3 (odd: flips 10D wall orientation) | True/-1 | True | -1 | ANTICOMMUTES | +N
+   (ii) Bolza refl + time reversal t            | -1 | -1 | True  | 3 (odd: flips 10D wall orientation) | True/-1 | True | +1 | ANTICOMMUTES | +N
+   (i') (i) + O(3)_R det-1 reflection phi2      | +1 | +1 | True  | 4 (even) | True/+1 | True | +1 | commutes | +N
+   (ii') (ii) + O(3)_R det-1 reflection phi2    | +1 | +1 | True  | 4 (even) | True/+1 | True | -1 | commutes | +N
+[D] generators of G^ = (dressed Isom) x Z2^wall: g1, g2 (Aut+), J, K (antiholomorphic, dressed), W (wall, acts trivially on Sigma)
+   g1: x->ix                    perm ['0', 'inf', 'i', '-1', '-i', '1'] | bare Sigma spin structures fixed: 2/16 | delta(g) on SUSY s0 for all 16 base choices s: [[]] -> 0
+   g2: x->(x+1)/(1-x)           perm ['1', '-1', 'inf', 'i', '0', '-i'] | bare Sigma spin structures fixed: 2/16 | delta(g) on SUSY s0 for all 16 base choices s: [[]] -> 0
+   J: y->-y                     perm ['0', 'inf', '1', 'i', '-1', '-i'] | bare Sigma spin structures fixed: 16/16 | delta(g) on SUSY s0 for all 16 base choices s: [[]] -> 0
+   K: complex conjugation       perm ['0', 'inf', '1', '-i', '-1', 'i'] | bare Sigma spin structures fixed: 8/16 | delta(g) on SUSY s0 for all 16 base choices s: [[]] -> 0
+   W: wall rho->-rho            perm ['0', 'inf', '1', 'i', '-1', '-i'] | bare Sigma spin structures fixed: 16/16 | delta(g) on SUSY s0 for all 16 base choices s: [[]] -> 0
+[D] J acts trivially on H^1(Sigma;Z2) (-1 = +1 mod 2) and fixes all 6 Weierstrass points, so J fixes all 16 theta characteristics: 16/16
+[E] wall lift W~ = Gamma_rho: W~^2 = +1
+[E] dressing | twist | r~^2 | (r~a r~b)^8 [pi/8 vertex] | (r~a r~b)^2 [pi/2] | (r~a r~b)^3 [pi/3], r~b sign +,- | [W~,r~] = W~ r~ W~^-1 r~^-1
+   s  bare (internal; REFUTED by G-sign)        | L=T | -1 | +1 | +1 | -1,+1 | +1
+   s  bare (internal; REFUTED by G-sign)        | L=K | -1 | +1 | +1 | -1,+1 | +1
+   s' bare + phi2 flip (internal; REFUTED by G-sign) | L=T | -1 | +1 | +1 | -1,+1 | -1
+   s' bare + phi2 flip (internal; REFUTED by G-sign) | L=K | -1 | +1 | +1 | -1,+1 | -1
+   (i)  + P (x3)                                | L=T | -1 | +1 | +1 | -1,+1 | -1
+   (i)  + P (x3)                                | L=K | -1 | +1 | +1 | -1,+1 | -1
+   (ii) + T (t), Lorentzian                     | L=T | +1 | +1 | +1 | +1,-1 | -1
+   (ii) + T (t), Lorentzian                     | L=K | +1 | +1 | +1 | +1,-1 | -1
+   (i') + phi2 flip + P                         | L=T | +1 | +1 | +1 | +1,-1 | +1
+   (i') + phi2 flip + P                         | L=K | +1 | +1 | +1 | +1,-1 | +1
+   (ii') + phi2 flip + T, Lorentzian            | L=T | -1 | +1 | +1 | -1,+1 | +1
+   (ii') + phi2 flip + T, Lorentzian            | L=K | -1 | +1 | +1 | -1,+1 | +1
+[E] Aut+ vertex rotation order 8: Sigma-only spin lift ^8 = -1 (2pi rotation = (-1)^F); twisted connected lift: L=T: ^8 = +1, (reflection-product)/(connected lift) = -1; L=K: ^8 = +1, (reflection-product)/(connected lift) = -1; commutes with W~: True
+[E] Aut+ vertex rotation order 2: Sigma-only spin lift ^2 = -1 (2pi rotation = (-1)^F); twisted connected lift: L=T: ^2 = +1, (reflection-product)/(connected lift) = -1; L=K: ^2 = +1, (reflection-product)/(connected lift) = -1; commutes with W~: True
+[E] Aut+ vertex rotation order 3: Sigma-only spin lift ^3 = -1 (2pi rotation = (-1)^F); twisted connected lift: L=T: ^3 = +1, (reflection-product)/(connected lift) = -1; L=K: ^3 = +1, (reflection-product)/(connected lift) = -1; commutes with W~: True
+[E] note: in [E] g8,g9 are a local Cartesian basis of the phi1-plane at a mu1=0 point of S^4 (an abstract labelling, independent of the [C]-table coordinate names)
+[C] 2D control T (t->-t): M Gamma_* M^-1 = -Gamma_* (flips chirality: left-mover f(t+x) -> right-mover f(-t+x) for T)
+[C] 2D control R (x->-x): M Gamma_* M^-1 = -Gamma_* (flips chirality: left-mover f(t+x) -> right-mover f(-t+x) for T)
+[C] 2D control CRT (t,x): M Gamma_* M^-1 = +Gamma_* (preserves)
+[Q] RP^2: w1=1a, w2=1a^2, w1^2=1a^2 => Pin+ (w2=0): False; Pin- (w2+w1^2=0): True  [link of R^3/(-1): codim-3 fixed set of (i)/(ii)]
+[Q] RP^3: w1=0a, w2=0a^2, w1^2=0a^2 => Pin+ (w2=0): True; Pin- (w2+w1^2=0): True  [link of R^4/(-1): codim-4 fixed set of (i')/(ii')]
+[done] runtime 0.5 s

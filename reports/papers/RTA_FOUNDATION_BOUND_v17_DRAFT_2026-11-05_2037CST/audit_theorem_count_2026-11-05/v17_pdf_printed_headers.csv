@@ -1,0 +1,305 @@
+page,kind,id,title,raw
+12,Definition,2.1,,Definition 2.1
+12,Proposition,2.2,,Proposition 2.2
+16,Lemma,4.1,stabilisation,Lemma 4.1 (stabilisation)
+17,Proposition,4.7,E–O identity,Proposition 4.7 (E–O identity)
+17,Theorem,5.1,,Theorem 5.1
+17,Lemma,4.3,,Lemma 4.3
+17,Theorem,5.3,,Theorem 5.3
+20,Lemma,6.3,,Lemma 6.3
+21,Theorem,1.1,,Theorem 1.1
+23,Theorem,6.6,,Theorem 6.6
+23,Lemma,6.3,2,Lemma 6.3(2)
+26,Lemma,7.1,,Lemma 7.1
+27,Theorem,7.6,,Theorem 7.6
+27,Theorem,7.7,,Theorem 7.7
+29,Lemma,8.3,,Lemma 8.3
+30,Lemma,8.5,lattice sums,Lemma 8.5 (lattice sums)
+31,Proposition,8.6,,Proposition 8.6
+32,Lemma,8.7,modulus,Lemma 8.7 (modulus)
+33,Lemma,8.7,,Lemma 8.7
+33,Proposition,8.6,"all quantities there were enclosed uniformly in n ≥ n0 , u ∈ U","Proposition 8.6 (all quantities there were enclosed uniformly in n ≥ n0 , u ∈ U )"
+38,Lemma,8.21,,Lemma 8.21
+44,Theorem,11.1,Shared remainder,Theorem 11.1 (Shared remainder)
+44,Theorem,11.2,"Real-quadratic
+                     √          decomposition and ray class",Theorem 11.2 (Real-quadratic                      √          decomposition and ray class)
+45,Theorem,11.3,Radial asymptotics and partial zeta  √   values,Theorem 11.3 (Radial asymptotics and partial zeta  √   values)
+45,Theorem,11.4,Gauss-mean pattern and zero set,Theorem 11.4 (Gauss-mean pattern and zero set)
+45,Theorem,11.5,Baker obstruction: scalar no-go,Theorem 11.5 (Baker obstruction: scalar no-go)
+45,Theorem,11.6,Theta lift and vector-valued S/T law,Theorem 11.6 (Theta lift and vector-valued S/T law)
+46,Theorem,11.7,Lewis–Zagier√period formula,Theorem 11.7 (Lewis–Zagier√period formula)
+46,Theorem,11.8,Eisenstein/cusp split,Theorem 11.8 (Eisenstein/cusp split)
+47,Theorem,11.9,Herglotz closed form,Theorem 11.9 (Herglotz closed form)
+47,Theorem,11.10,Closed form of ER,Theorem 11.10 (Closed form of ER )
+47,Theorem,11.10,,Theorem 11.10 
+47,Remark (Category B),11.11,Cusp rows and L(0,Remark (Category B) 11.11 (Cusp rows and L(0)
+48,Remark,12.1,Origin of Cmixed,Remark 12.1 (Origin of Cmixed )
+48,Remark,12.2,Group data,Remark 12.2 (Group data)
+49,Proposition,13.1,Cone Euler–Maclaurin,Proposition 13.1 (Cone Euler–Maclaurin)
+50,Lemma,13.2,Zwegers parts carry no 1/t term,Lemma 13.2 (Zwegers parts carry no 1/t term)
+51,Theorem,14.1,Profile S/T law,Theorem 14.1 (Profile S/T law)
+52,Corollary,14.2,Consequences of Theorem 14.1,Corollary 14.2 (Consequences of Theorem 14.1)
+53,Theorem,24.4,,Theorem 24.4
+54,Remark,14.3,,Remark 14.3
+54,Remark,14.4,Normalisation of the lift,Remark      14.4 (Normalisation of the lift)
+54,Lemma,15.1,Green-form lemma,Lemma 15.1 (Green-form lemma)
+55,Lemma,15.2,Branch lemma,Lemma 15.2 (Branch lemma)
+56,Lemma,15.1,,Lemma 15.1 
+57,Theorem,15.3,Cocycle of the E-part,Theorem 15.3 (Cocycle of the E-part)
+60,Proposition,16.1,,Proposition 16.1
+61,Remark,17.1,Use of Theorem 11.7 in this section,Remark 17.1 (Use of Theorem 11.7 in this section)
+61,Lemma,17.2,Mittag-Leffler,Lemma 17.2 (Mittag-Leffler)
+61,Lemma,17.3,,Lemma 17.3
+61,Proposition,17.5,,Proposition 17.5
+62,Theorem,11.9,,Theorem 11.9
+63,Remark,19.1,The S versus S −1 label convention,Remark 19.1 (The S versus S −1 label convention)
+63,Remark,19.2,Label operators,Remark 19.2 (Label operators)
+64,Theorem,19.3,"Tensor factorisation, s = 7","Theorem 19.3 (Tensor factorisation, s = 7)"
+64,Proposition,19.4,V is the matched-sector space; local reflections,Proposition 19.4 (V is the matched-sector space; local reflections)
+65,Theorem,19.5,Tensor factorisation for odd s,Theorem 19.5 (Tensor factorisation for odd s)
+65,Remark,19.6,The two generators at s = 7,Remark 19.6 (The two generators at s = 7)
+66,Proposition,19.7,Odd-parity sectors are cusp,Proposition 19.7 (Odd-parity sectors are cusp)
+66,Proposition,19.8,Parity fact,Proposition 19.8 (Parity fact)
+66,Proposition,19.9,Orbit lemma,Proposition 19.9 (Orbit lemma)
+66,Theorem,20.1,Dimensions,Theorem 20.1 (Dimensions)
+68,Remark,20.2,"Sector reading of the cusp dimension, odd s","Remark 20.2 (Sector reading of the cusp dimension, odd s)"
+68,Proposition,20.3,Complement trace,Proposition 20.3 (Complement trace)
+68,Proposition,20.4,Half-cone relations,Proposition 20.4 (Half-cone relations)
+68,Theorem,20.5,dim V (98,Theorem 20.5 (dim V (98)
+69,Proposition,20.6,K1,Proposition 20.6 (K1)
+69,Corollary,20.7,,Corollary 20.7
+69,Proposition,20.8,Sharpness of Proposition K1 on the old space,Proposition 20.8 (Sharpness of Proposition K1 on the old space)
+70,Proposition,20.9,s = 64,Proposition 20.9 (s = 64)
+70,Proposition,20.10,Prime-square sectors: ranks,Proposition 20.10 (Prime-square sectors: ranks)
+70,Theorem,20.11,Prime-square structure,Theorem 20.11 (Prime-square structure)
+71,Proposition,20.12,Exact splits,Proposition 20.12 (Exact splits)
+71,Proposition,20.13,Label-space counts at s = 121 and s = 169,Proposition 20.13 (Label-space counts at s = 121 and s = 169)
+71,Proposition,20.14,(C3,Proposition 20.14 ((C3)
+72,Proposition,20.15,Weil representations of Z/M,Proposition 20.15 (Weil representations of Z/M )
+72,Proposition,21.1,Cusp criterion for uL,Proposition 21.1 (Cusp criterion for uL )
+72,Theorem,21.2,Coset property,Theorem 21.2 (Coset property)
+73,Proposition,21.4,,Proposition 21.4
+73,Proposition,21.4,Deep bad-prime parts,Proposition 21.4 (Deep bad-prime parts)
+73,Proposition,21.5,Local root numbers,Proposition 21.5 (Local root numbers)
+74,Theorem,22.1,Hs in closed form,Theorem 22.1 (Hs in closed form)
+74,Proposition,13.1,,Proposition 13.1
+75,Proposition,22.2,Exact reductions,Proposition 22.2 (Exact reductions)
+75,Proposition,22.3,x = 21,Proposition 22.3 (x = 21 )
+75,Proposition,22.4,x = 13,Proposition 22.4 (x = 13 )
+75,Theorem,22.5,Period 72 at x = 13,Theorem 22.5 (Period 72 at x = 13 )
+76,Proposition,22.6,"t7/2 , t9/2 at x = 0","Proposition 22.6 (t7/2 , t9/2 at x = 0)"
+76,Proposition,22.7,"t11/2 , t13/2","Proposition 22.7 (t11/2 , t13/2 )"
+77,Proposition,22.9,General x = a/N,Proposition 22.9 (General x = a/N )
+77,Lemma,22.10,q-adic reduction,Lemma 22.10 (q-adic reduction)
+77,Proposition,22.11,Checks of the general formula,Proposition 22.11 (Checks of the general formula)
+77,Proposition,22.12,Even N from the 2-adic reduction,Proposition 22.12 (Even N from the 2-adic reduction)
+77,Proposition,22.13,,Proposition 22.13
+77,Proposition,22.13,The six N = 8 classes are pairwise distinct,Proposition 22.13 (The six N = 8 classes are pairwise distinct)
+78,Proposition,22.14,,Proposition 22.14       
+78,Proposition,23.1,Lattice origin of ∆,Proposition 23.1 (Lattice origin of ∆)
+79,Proposition,23.2,Edge-class invariance,Proposition 23.2 (Edge-class invariance)
+79,Proposition,23.3,c1 is forced; the axes cone,Proposition 23.3 (c1 is forced; the axes cone)
+79,Proposition,23.4,"Status of c2 = (−4, 1","Proposition 23.4 (Status of c2 = (−4, 1)"
+79,Remark,23.5,What is intrinsic in ∆,Remark 23.5 (What is intrinsic in ∆)
+80,Definition,23.6,,Definition 23.6
+80,Theorem,23.7,Closed forms for Hsaxes,Theorem 23.7 (Closed forms for Hsaxes )
+80,Proposition,23.8,Wall-independence of the universal piece,Proposition 23.8 (Wall-independence of the universal piece)
+81,Theorem,24.1,"Cthird : one coset, one cone weight, one       P kernel, two chains","Theorem 24.1 (Cthird : one coset, one cone weight, one       P kernel, two chains)"
+81,Proposition,13.1,,Proposition 13.1 
+81,Proposition,24.2,Unit cone,Proposition 24.2 (Unit cone)
+82,Lemma,24.3,Parity splitting,Lemma 24.3 (Parity splitting)
+82,Theorem,24.4,Phase obstruction,Theorem 24.4 (Phase obstruction)
+82,Theorem,24.5,Sign obstruction,Theorem 24.5 (Sign obstruction)
+82,Theorem,24.6,Structure of Cthird,Theorem 24.6 (Structure of Cthird )
+83,Theorem,25.1,Rational ζ-curve,Theorem 25.1 (Rational ζ-curve)
+83,Proposition,13.1,,Proposition 13.1 
+83,Theorem,25.2,Radial expansion of gs,Theorem 25.2 (Radial expansion of gs )
+84,Remark,25.3,,Remark 25.3
+85,Proposition,26.1,,Proposition 26.1               
+86,Theorem,26.2,Weil realisation of the label representation,Theorem 26.2 (Weil realisation of the label representation)
+87,Proposition,26.3,Relations and Hom spaces modulo `,Proposition 26.3 (Relations and Hom spaces modulo `)
+87,Remark,26.4,"Dual, twist, metaplectic sign","Remark 26.4 (Dual, twist, metaplectic sign)"
+87,Proposition,26.5,Explicit primitive embedding and T,Proposition 26.5 (Explicit primitive embedding and T )
+87,Proposition,26.1,,Proposition 26.1
+88,Corollary,26.6,The residual law in K3 terms,Corollary 26.6 (The residual law in K3 terms)
+88,Remark,26.11,,Remark 26.11
+88,Theorem,26.7,N2 -polarised K3 surfaces,Theorem 26.7 (N2 -polarised K3 surfaces)
+88,Proposition,26.8,Action on AN2 and O(N2,Proposition 26.8 (Action on AN2 and O(N2 )
+89,Theorem,26.9,Automorphisms of N2 -polarised K3 surfaces,Theorem 26.9 (Automorphisms of N2 -polarised K3 surfaces)
+89,Proposition,26.10,Lifting γ,Proposition 26.10 (Lifting γ)
+90,Remark,26.11,Category B and open items for this section,Remark 26.11 (Category B and open items for this section)
+90,Remark,19.2,,Remark 19.2
+91,Proposition,27.1,Adapted-basis splitting at s = 7,Proposition 27.1 (Adapted-basis splitting at s = 7)
+91,Proposition,27.2,"Sectors, T -fixed vectors and the support of u","Proposition 27.2 (Sectors, T -fixed vectors and the support of u)"
+92,Proposition,27.3,The κ-level gauge,Proposition 27.3 (The κ-level gauge)
+92,Corollary,14.2,,Corollary 14.2
+92,Theorem,27.4,Uniqueness of the Maass completion,Theorem 27.4 (Uniqueness of the Maass completion)
+92,Lemma,15.2,,Lemma 15.2 
+92,Lemma,27.5,Estimates for Theorem 27.4(b,Lemma 27.5 (Estimates for Theorem 27.4(b)
+93,Lemma,15.2,,Lemma 15.2
+94,Corollary,27.6,Cocycle and period function determine u,Corollary 27.6 (Cocycle and period function determine u)
+94,Theorem,27.7,Uniqueness and residual ambiguity of the vector completion,Theorem 27.7 (Uniqueness and residual ambiguity of the vector completion)
+95,Theorem,27.4,a,Theorem 27.4(a)
+95,Proposition,27.8,Sector-by-sector uniqueness and the scalars,Proposition 27.8 (Sector-by-sector uniqueness and the scalars)
+95,Proposition,27.9,Sector bounds for dim S(ρ,Proposition 27.9 (Sector bounds for dim S(ρ)
+95,Proposition,27.2,,Proposition 27.2
+96,Lemma,27.10,,Lemma 27.10
+96,Lemma,27.11,A priori bounds,Lemma 27.11 (A priori bounds)
+97,Proposition,27.12,Certification criterion,Proposition 27.12 (Certification criterion)
+97,Theorem,27.13,Dimension of the cusp space,Theorem 27.13 (Dimension of the cusp space)
+98,Corollary,27.14,,Corollary 27.14
+98,Remark,27.15,"Dihedral consistency
+                              √          check",Remark 27.15 (Dihedral consistency                               √          check)
+98,Remark,27.16,Further remarks on §27,Remark 27.16 (Further remarks on §27)
+99,Proposition,28.1,The t1 obstruction for modular-type sums,Proposition 28.1 (The t1 obstruction for modular-type sums)
+99,Proposition,28.2,E8 is invisible to the vector and cone data,Proposition 28.2 (E8 is invisible to the vector and cone data)
+99,Proposition,28.3,Exact linear-span test to q 1499,Proposition 28.3 (Exact linear-span test to q 1499 )
+100,Proposition,28.4,No low-degree rational generating function,Proposition 28.4 (No low-degree rational generating function)
+100,Remark,28.5,Scope: what is not excluded,Remark 28.5 (Scope: what is not excluded)
+101,Proposition,29.1,No scalar residual law,Proposition 29.1 (No scalar residual law)
+101,Proposition,29.2,The law that exists has weight 1 and is vector-valued,Proposition 29.2 (The law that exists has weight 1 and is vector-valued)
+101,Theorem,11.11,,Theorem 11.11 
+101,Remark,29.3,Weight 12 cannot carry the residue,Remark 29.3 (Weight 12 cannot carry the residue)
+101,Remark,29.4,Sample values,Remark 29.4 (Sample values)
+102,Proposition,29.5,What depends on s = 7,Proposition 29.5 (What depends on s = 7)
+106,Definition,33.1,,Definition 33.1
+106,Definition,33.2,The 35-component law vector,Definition 33.2 (The 35-component law vector)
+106,Lemma,33.3,Elementary rules,Lemma 33.3 (Elementary rules)
+106,Theorem,33.4,T -law and S-law,Theorem 33.4 (T -law and S-law)
+107,Proposition,33.5,Closure,Proposition 33.5 (Closure)
+107,Lemma,33.3,i,Lemma 33.3(i)
+107,Proposition,33.6,Dimension; computer-assisted,Proposition 33.6 (Dimension; computer-assisted)
+108,Proposition,33.7,Exact SL2 -relations and irreducibility; computer-assisted,Proposition 33.7 (Exact SL2 -relations and irreducibility; computer-assisted)
+108,Definition,34.1,,Definition 34.1
+108,Lemma,34.2,Weights,Lemma 34.2 (Weights)
+109,Proposition,34.3,"Exact                     u1 = (21, −1","Proposition 34.3 (Exact                     u1 = (21, −1)"
+109,Lemma,34.4,Periodicity,Lemma 34.4 (Periodicity)
+110,Theorem,34.5,Profile of C and of q −7/20 C,Theorem 34.5 (Profile of C and of q −7/20 C)
+110,Theorem,34.6,Radial asymptotics at leading order,Theorem 34.6 (Radial asymptotics at leading order)
+110,Theorem,34.7,Vector-valued S-law of C at leading order,Theorem 34.7 (Vector-valued S-law of C at leading order)
+110,Proposition,33.7,,Proposition 33.7
+110,Remark,34.8,,Remark 34.8
+111,Lemma,35.1,Euler–Maclaurin with offset,Lemma 35.1 (Euler–Maclaurin with offset)
+111,Lemma,35.2,Gaussian bounds,Lemma 35.2 (Gaussian bounds)
+112,Lemma,35.3,Integrals,Lemma 35.3 (Integrals)
+112,Theorem,35.4,Expansion of a piece,Theorem 35.4 (Expansion of a piece)
+113,Lemma,35.1,,Lemma 35.1 
+113,Lemma,35.5,Expansion of a ray,Lemma 35.5 (Expansion of a ray)
+113,Theorem,35.6,Radial expansion of the companion series,Theorem 35.6 (Radial expansion of the companion series)
+113,Proposition,34.3,,Proposition 34.3 
+114,Corollary,35.7,Order t−1,Corollary 35.7 (Order t−1 )
+114,Corollary,35.8,Order t−1/2 : algebraicity,Corollary 35.8 (Order t−1/2 : algebraicity)
+114,Remark,35.9,,Remark 35.9
+114,Proposition,35.10,Order t−1/2 on the zero set of the leading term; computer-assisted,Proposition 35.10 (Order t−1/2 on the zero set of the leading term; computer-assisted)
+114,Proposition,35.11,Exact decomposition of A1,Proposition 35.11 (Exact decomposition of A1 )
+115,Remark,35.12,Structure of A2,Remark 35.12 (Structure of A2 )
+115,Remark,36.1,Category B: the sawtooth shadow candidate,Remark 36.1 (Category B: the sawtooth shadow candidate)
+115,Remark,36.2,Category B: a weight-0 law for A2,Remark 36.2 (Category B: a weight-0 law for A2 )
+116,Lemma,37.1,,Lemma 37.1
+116,Proposition,37.2,"exact, computer-assisted","Proposition 37.2 (exact, computer-assisted)"
+116,Lemma,37.3,parity of a weight-one law,Lemma 37.3 (parity of a weight-one law)
+116,Lemma,37.4,no even weight-one law,Lemma 37.4 (no even weight-one law)
+116,Proposition,37.2,,Proposition 37.2
+116,Corollary,37.5,,Corollary 37.5
+116,Lemma,37.6,,Lemma 37.6
+117,Proposition,37.7,,Proposition 37.7
+117,Proposition,37.8,,Proposition 37.8
+117,Definition,34.1,,Definition 34.1 
+118,Lemma,37.9,,Lemma 37.9
+118,Theorem,37.10,,Theorem 37.10
+118,Theorem,37.11,,Theorem 37.11
+119,Proposition,37.12,,Proposition 37.12
+119,Theorem,37.13,,Theorem 37.13
+120,Remark (Category B),37.14,,Remark (Category B) 37.14
+120,Remark,37.15,,Remark 37.15
+120,Proposition,38.1,,Proposition 38.1
+120,Theorem,38.2,,Theorem 38.2
+121,Corollary,38.3,,Corollary 38.3
+121,Theorem,38.4,,Theorem 38.4
+121,Theorem,38.5,,Theorem 38.5
+121,Corollary,38.3,,Corollary 38.3
+122,Corollary,38.6,,Corollary 38.6
+122,Remark (Category B),38.7,,Remark (Category B) 38.7
+122,Lemma,39.1,,Lemma 39.1
+122,Theorem,39.2,,Theorem 39.2
+122,Theorem,39.3,,Theorem 39.3
+122,Lemma,39.1,,Lemma 39.1 
+122,Theorem,39.4,,Theorem 39.4
+123,Proposition,39.5,,Proposition 39.5
+123,Remark,39.6,,Remark 39.6
+123,Remark (Category B),39.7,,Remark (Category B) 39.7
+123,Proposition,39.8,,Proposition 39.8
+123,Remark (Category B),39.9,,Remark (Category B) 39.9
+124,Proposition,39.10,,Proposition 39.10
+124,Proposition,39.11,,Proposition 39.11
+124,Corollary,39.13,,Corollary 39.13
+124,Remark (Category B),39.14,,Remark (Category B) 39.14
+124,Proposition,39.15,"exact, computer-assisted","Proposition 39.15 (exact, computer-assisted)"
+125,Corollary,39.16,,Corollary 39.16
+125,Remark (Category B),39.17,,Remark (Category B) 39.17
+125,Proposition,39.12,,Proposition 39.12 
+125,Lemma,39.18,,Lemma 39.18
+125,Proposition,39.19,"exact, computer-assisted","Proposition 39.19 (exact, computer-assisted)"
+125,Corollary,39.20,,Corollary 39.20
+125,Remark (Category B),39.21,,Remark (Category B) 39.21
+126,Proposition,39.22,"exact, computer-assisted","Proposition 39.22 (exact, computer-assisted)"
+126,Theorem,39.23,,Theorem 39.23
+126,Remark,39.24,,Remark 39.24
+126,Remark (Category B),39.25,,Remark (Category B) 39.25
+127,Remark,39.26,,Remark 39.26
+128,Theorem,40.1,Equality of compact and ordinary induction,Theorem 40.1 (Equality of compact and ordinary induction)
+129,Theorem,40.2,Socle reduction to K1 -invariants,Theorem 40.2 (Socle reduction to K1 -invariants)
+129,Theorem,40.3,Dictionary identities,Theorem 40.3 (Dictionary identities)
+130,Proposition,40.4,Filtration bounds,Proposition 40.4 (Filtration bounds)
+130,Theorem,40.5,Filtration weight ten,Theorem 40.5 (Filtration weight ten)
+130,Theorem,40.6,Breuil socle formula,Theorem 40.6 (Breuil socle formula)
+131,Proposition,40.7,Shape of irreducible K-representations,Proposition 40.7 (Shape of irreducible K-representations)
+131,Proposition,40.8,Count of p-regular classes,Proposition 40.8 (Count of p-regular classes)
+131,Remark,40.9,,Remark 40.9
+131,Theorem,40.10,Classification of irreducibles,Theorem 40.10 (Classification of irreducibles)
+132,Remark,40.11,Scope and count,Remark 40.11 (Scope and count)
+132,Theorem,41.1,Local cite-lift F1,Theorem 41.1 (Local cite-lift F1)
+133,Proposition,41.2,Local cite-lift F2,Proposition 41.2 (Local cite-lift F2)
+133,Proposition,41.3,Local cite-lift F3,Proposition 41.3 (Local cite-lift F3)
+134,Remark,41.4,Scope of the Local cite-lifts,Remark 41.4 (Scope of the Local cite-lifts)
+134,Proposition,41.5,Scale-free Local cite-lifts; Hecke-scale fallback,Proposition 41.5 (Scale-free Local cite-lifts; Hecke-scale fallback)
+135,Definition,41.6,The space V35    Hilb,Definition 41.6 (The space V35    Hilb )
+135,Theorem,41.7,Dimension and narrow components,Theorem 41.7 (Dimension and narrow components)
+135,Remark,41.8,Notation relative to V35,Remark 41.8 (Notation relative to V35 )
+135,Proposition,41.9,Classical exponents and conductors,Proposition 41.9 (Classical exponents and conductors)
+136,Theorem,41.10,Rank-one classifier D1,Theorem 41.10 (Rank-one classifier D1 )
+136,Proposition,41.11,Static cell budget Seﬀ,Proposition 41.11 (Static cell budget Seﬀ )
+137,Proposition,44.6,,Proposition 44.6 
+137,Proposition,41.12,Residual is not Resonant,Proposition 41.12 (Residual is not Resonant)
+137,Proposition,41.13,Claims not part of the theory,Proposition 41.13 (Claims not part of the theory)
+138,Remark,41.14,Scope relative to Parts I–III,Remark 41.14 (Scope relative to Parts I–III)
+139,Remark,42.1,Local / Professor Proof Bridge C closures,Remark 42.1 (Local / Professor Proof Bridge C closures)
+139,Remark,42.2,Non-Local formal status,Remark 42.2 (Non-Local formal status)
+139,Remark,42.3,Eigen / PR1 height and Pack I,Remark 42.3 (Eigen / PR1 height and Pack I)
+139,Remark,42.4,PR2 / Agent T3 and citation closure,Remark 42.4 (PR2 / Agent T3 and citation closure)
+140,Definition,43.1,Coordinates and index,Definition 43.1 (Coordinates and index)
+140,Definition,43.2,Coeﬀicient and character fields,Definition 43.2 (Coeﬀicient and character fields)
+140,Definition,43.3,Shifted transfer operator,Definition 43.3 (Shifted transfer operator)
+141,Definition,43.4,Original A/B/C/D table,Definition 43.4 (Original A/B/C/D table)
+141,Remark,43.5,Orbit memberships,Remark 43.5 (Orbit memberships)
+142,Definition,43.6,Spatial selectors and translation,Definition 43.6 (Spatial selectors and translation)
+142,Definition,43.7,Cascade versus endpoint constraints,Definition 43.7 (Cascade versus endpoint constraints)
+142,Theorem,43.8,Bare stacked matrix of rank 24,Theorem 43.8 (Bare stacked matrix of rank 24)
+142,Theorem,43.9,Original-table matrix M of exact rank 36,Theorem 43.9 (Original-table matrix M of exact rank 36)
+143,Theorem,43.10,Singleton tuning restores full rank,Theorem 43.10 (Singleton tuning restores full rank)
+144,Definition,43.11,Path mass and signed weight,Definition 43.11 (Path mass and signed weight)
+144,Remark,43.12,Capacity remains OPEN,Remark 43.12 (Capacity remains OPEN)
+144,Proposition,43.13,Compression of a rank-36 operator,Proposition 43.13 (Compression of a rank-36 operator)
+144,Proposition,43.14,Inert-prime filter and local isometry,Proposition 43.14 (Inert-prime filter and local isometry)
+145,Remark,43.15,Graph Poisson versus capacity,Remark 43.15 (Graph Poisson versus capacity)
+145,Remark,43.16,Geometry,Remark 43.16 (Geometry)
+145,Proposition,44.1,Identification of objects,Proposition 44.1 (Identification of objects)
+145,Proposition,2.2,,Proposition 2.2
+145,Corollary,44.2,Residue law of g7 and its converse,Corollary 44.2 (Residue law of g7 and its converse)
+145,Theorem,8.1,"Part I, §8.1","Theorem 8.1 (Part I, §8.1)"
+146,Theorem,44.3,The normalized Bridge Series and the 35-component law vector,Theorem 44.3 (The normalized Bridge Series and the 35-component law vector)
+146,Proposition,44.4,No scalar residual law,Proposition 44.4 (No scalar residual law)
+146,Proposition,44.5,No vector-valued Fricke law at leading order; computer-assisted,Proposition 44.5 (No vector-valued Fricke law at leading order; computer-assisted)
+146,Proposition,33.6,A53_RTA_maps,Proposition 33.6 (A53_RTA_maps)
+146,Proposition,44.6,Facts about T3 and 539,Proposition 44.6 (Facts about T3 and 539)
+147,Remark,44.7,No written link,Remark 44.7 (No written link)

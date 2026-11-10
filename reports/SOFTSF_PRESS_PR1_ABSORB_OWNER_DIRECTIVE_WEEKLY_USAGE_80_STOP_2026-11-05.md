@@ -1,0 +1,3 @@
+# Soft SF PRESS: PR1 absorb Owner DIRECTIVE weekly-usage ≥80% STOP Soft SF 51ff1677 (2026-11-05 ~15:11 CST)
+To: Auditor Write-only + Physicist. Findings sha 65b1f9c8d07b02ccdc1738c8314ae6d9dc19e1e693553f1e44481570791dfc20.
+Owner DIRECTIVE `51ff1677…` **ABSORBED**. Trigger ≥80% weekly usage → STOP new research/computation; only safe finalization/full reports; relay PM immediately; parent consolidates 12. Checkpoint this Soft SF: **58.8% NOT triggered** (Super shared; reset Tue Nov 10 09:49 CST). No pollers. No autoresume after reset. No full report yet. tip Soft SF LOCK tip_touched NO. invent HOLD. Existing bounds unchanged. No CERT.

@@ -1,0 +1,4 @@
+ricci/g [-4.0*k**2, -4.0*k**2, -4.0*k**2, -4.0*k**2, -4*k**2, 5*exp(-2*B)/r**2] R -20.0*k**2 + 30*exp(-2*B)/r**2
+P1 True P2 True P3 True C1(fails as required) True C2(fails as required) True
+RESULT PASS
+# note (post-run, no change to script): "-4.0" floats come from Python 0/2 in zero Christoffels; exact simplify comparisons all True. C2 control uses 3+1+6(S^6)+1 flat dim, i.e. a dimension-split change.

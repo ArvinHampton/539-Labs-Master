@@ -1,0 +1,432 @@
+
+===== PDF page 7 =====
+     40.6 Irreducible representations of the finite general linear group . . . . . . . . . . . . . . 130
+
+41 Local cite-lifts and residual packaging advancements                                             131
+   41.1 Local cite-lift F1: weak NP-completeness on an odd-M slice . . . . . . . . . . . . . . 131
+   41.2 Local cite-lift F2: nonvanishing determinant does not prevent cancellation . . . . . . 132
+   41.3 Local cite-lift F3: signed bound by the regular spectral radius . . . . . . . . . . . . . 132
+   41.4 Absence of a normalisation for the Local cite-lifts
+                                                     √       . . . . . . . . . . . . . . . . . . . . 133
+   41.5 The full level-one Hilbert newspace over Q( 35) . . . . . . . . . . . . . . . . . . . . 133
+   41.6 Classical arithmetic corrections . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 134
+   41.7 The thin form complex and the rank-one classifier D1 . . . . . . . . . . . . . . . . . 135
+   41.8 Static cell budget and Residual versus Resonant . . . . . . . . . . . . . . . . . . . . . 135
+   41.9 Status of claims not established . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 136
+
+
+IV     Foundation                                                                                    137
+
+42 The foundation attempt: what ties RTA to the framework                                             137
+   42.1 Proved links . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 137
+   42.2 Negative results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 138
+   42.3 Where the shadow Ξ enters . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 139
+
+43 Open problems                                                                                     139
+
+A Computational reproduction for Part I                                                             140
+  A.1 Algebraic checks (Sections 3–7) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 140
+  A.2 The composite-zero theorem (Section 6) . . . . . . . . . . . . . . . . . . . . . . . . . 140
+  A.3 Parity dominance (Section 8) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 141
+  A.4 The modular certificate and zero sets . . . . . . . . . . . . . . . . . . . . . . . . . . . 141
+  A.5 Source directories . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 141
+
+B Zero sets of gk                                                                                141
+  B.1 Odd k, 3 ≤ k ≤ 33 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 141
+  B.2 Even k ≡ 2 (mod 4), 2 ≤ k ≤ 34 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 143
+
+C Reproducibility for Part II                                                                        143
+
+D Category B record for Part III                                                                     145
+
+
+
+
+                                                    7
+
+===== PDF page 114 =====
+Remark 35.12 (Structure of A2 ). By Theorem 35.6, A2 consists of the moments 21 K(l) − Q0 Ar of
+the drift, edge terms li Wj , terms q4 Vi weighted by the cross coeﬀicient, corner terms C (finite sums
+of Dedekind-sum type), and the ray constants. Only K(l) and Ar are transcendental integrals.
+
+
+36 Order four: the shadow candidate and the law at order t0
+The next two questions are (a) whether A1 becomes S-covariant after subtracting an explicit shadow
+contribution, and (b) whether the t0 coeﬀicient A2 of Theorem 35.6, or A2 minus a completion term,
+satisfies a weight-0 vector-valued law.
+    Both questions were tested numerically; neither produced a Category A statement, and the
+results are recorded only in the following remarks and in Appendix D.
+Remark 36.1 (Category B: the sawtooth shadow candidate). The candidate for (a), modelled
+on anPerf-completion, removes all sawtooth groups: the completed coeﬀicient is A1 − Ξε with
+Ξε = λ ελ W [λ], ε = (1, 1, 1), that is A1 −Ξε = D +R (Proposition 35.11). Its S-image is not in its
+span, so this candidate does not close; nor does any of the six secondary subsets ε 6= (0, 0, 0), (1, 1, 1).
+The sign control (closure of A0 at weight 1, failure at the wrong weight) passed (item D.8). The
+candidate is not the actual completion: the erf-completion constants of H7 have not been derived
+(Problem 1.).
+Remark 36.2 (Category B: a weight-0 law for A2 ). For (b), A2 does not satisfy a
+pure weight-0 vector-valued law, nor one of weight 21 or 1; a mixed law A2 (−1/x) ∈
+span[A2 (x), |x|1/2 A1 (x), |x|A0 (x)] is not closed either, but this test has little discriminating power
+(rank 214 on 216 points). The sign control passed (item D.9).
+
+
+37 Shadow structure of the companion series
+Throughout this section Q(ν) = ν12 + 7ν1 ν2 + 72 ν22 , B(µ, ν) = Q(µ + ν) − Q(µ) − Q(ν), so that
+B(ν, ν) = 2Q(ν) and det of the Gram matrix A = ( 27 77 ) is −35. The index set J consists of the 105
+companion pairs (αj , βj ) of Definition 34.1 (families K2, K3, K4). For a function f on R2 we write
+                          f
+                                      X
+                       Sα,β  (τ ) =        f (ν) e(B(ν, β)) q Q(ν) , q = e(τ ),
+                                    ν∈α+Z2
+
+whenever the series converges absolutely and locally uniformly on H, and S f = (Sαf j ,βj )j∈J .
+
+37.1    The matrices M , T , P
+The reduction rules of Definition 34.1 express every pair (α, β) ∈ (Q/Z)2 × Q2 occurring below as
+a root of unity times a pair indexed by J; they act on the terms of S f and are therefore valid for
+every f depending only on ν. Define the formal 105 × 105 matrices
+ • M = (Mjk ): the coeﬀicient matrix of the right-hand side of Theorem 33.4 (the S-law) after
+   reduction to J, without the factor 35−1/2 ;
+
+ • T = (Tjk ): the monomial matrix of the T -law, Tjk = e(Q(αj )) δ after reduction;
+                                                 f         P
+ • P = (Pjk ): the monomial matrix defined by S−α  j ,−βj
+                                                          = k Pjk Sαf k ,βk .
+
+All entries lie in Z[ζ9800 ], ζN = e(1/N ).
+
+                                                    114
+
+===== PDF page 116 =====
+Proof. The signs are odd functions of ν; expand p and separate even and odd monomials in s1 , s2 , s3 .
+
+
+   The series S ρH and S ρO are indefinite theta series attached to the cones spanned by c1 = (−1, 1),
+c2 and c1 , c′ = (7, −2), respectively, where c2 = (4, −1); one has Q(c1 ) = − 52 , Q(c2 ) = − 17  2 ,
+Q(c′ ) = −35, and B(c1 , ν) = 5ν1 , B(c2 , ν) = ν1 + 21ν2 , B(c′ , ν) = 35ν2 .
+
+37.3         The P -odd shadow
+                                                 p
+For a negative vector c put sc (ν) = B(c, ν)/ −Q(c) and s′c (ν) for the coordinate along a unit
+                                                                     R u −πt2
+vector of c⊥ , normalised so that Q(ν) = 14 (s′2
+                                              c − sc ). With E(u) = 2 0 e
+                                                   2                          dt define
+                X               √                                                  X                  2      ′2 
+Sbα,β
+  c
+      (τ ) =            E sc (ν) y e(B(ν, β))q Q(ν) ,           c
+                                                               Xα,β (τ ) = y 1/2            sc (ν) e s4c τ e s4c τ e(−B(ν, β)).
+               ν∈α+Z2                                                              ν∈α+Z2
+
+Proposition 37.7. ξ1 Sbc = X c , where ξ1 = 2iy ∂τ̄ .
+                                    √
+Proof. E ′ (u) = 2e−πu , so ∂y E(s y) = s y −1/2 e−πs y and ∂τ̄ =
+                       2                              2                                       i
+                                                                                              2 ∂y   on functions of y.
+                                 ′2
+         q Q(ν) e−πs y
+                    2                      2
+Since                    =   e( s4 τ ) e( s4 τ ),   termwise differentiation (justified by the Gaussian majo-
+                                                                     P
+rant e−πy(s +s )/2 , locally uniform in τ ) gives ∂τ̄ Sbc = 2i y −1/2 s e( s4 τ )e( s4 τ )e(B(ν, β)); apply
+           2  ′2                                                            ′2       2
+
+
+2iy ·.
+
+     For c1 , c2 , c′ one has s2c /4 = 52 ν12 , 34
+                                                 1
+                                                   (ν1 + 21ν2 )2 , 35  2                               3
+                                                                    4 ν2 ; the corresponding weight- 2 unary series
+     P                 P        2    P                                                      ′
+are u e( 25 u2 τ ), R e( R34 τ ), m e( 35             2                       1
+                                                  4 m τ ), and the weight- 2 partners in sc have quadratic forms
+7 35                                                                                                         3
+2 , 34 and 1 in suitable coordinates. Thus exactly three distinct unary theta series of weight 2 occur;
+the one in 52 u2 is shared between the cones of ρH and ρO . The completions H                 b = 1 (Sbc1 + Sbc2 ) and
+                                                                                                  2
+Gb O = 1 (Sbc1 + Sbc′ ) transform as vector-valued forms of weight one with the matrices (35−1/2 M, T )
+         2
+                                                                                              ′
+(Proposition 38.1), and their ξ1 -images are 12 (X c1 + X c2 ) and 12 (X c1 + X c ).
+
+37.4         Boundary series and their vanishing
+For a unit negative vector z (Q(z) = −1) with unit positive orthogonal z ′ let s = B(ν, z), s′ =
+B(ν, z ′ ) and                        X                    ′2      2 
+                        Bz,z ′ (τ ) =   e(B(ν, β)) s s′ e s4 τ e − s4 τ̄ .
+                                              ν∈α+Z2
+              √                 p                                               p
+Let ĉ′ = c′ / 35 and ĉ1 = c1 / 5/2 (both with Q = −1), e1 = (1, 0), ê2 = e2 / 7/2.
+Proposition 37.8. Bĉ′ ,e1 ≡ 0 for every companion.
+                    √
+Proof. Here s = 35ν2 and s′ = B(ν, e1 ) = 2ν1 + 7ν2 . The map ρ(ν) = (−ν1 − 7ν2 , ν2 ) preserves
+Q, fixes s, sends s′ 7→ −s′ , and maps α + Z2 to ρ(α) + Z2 . Writing β = (b0 , b1 ) one checks from
+Definition 34.1 that every companion satisfies ρ(α) ≡ α (mod Z2 ) and B(ρν, β) ≡ B(ν, β) (mod 1)
+for ν ∈ α + Z2 (a finite check on the 105 pairs, BRIDGE_C_35/order13/cprime_all.py, exact in
+Q). Hence the summand is odd under the bijection ν 7→ ρν of α + Z2 , and the sum vanishes.
+                                                                       √                        √
+    For ĉ1 take z ′ = ê2 . With u = ν1 and m = ν1 + ν2 one has s = 10 u up to sign, s′ = ± 14 m,
+Q = 27 m2 − 52 u2 , and B(ν, β) = 7(b0 + b1 )m − 5b0 u. Define
+                      X                                                 X                    
+       ϑ+ (τ ) =               m e 72 m2 τ + 7(b0 + b1 )m ,  ϑ− (τ ) =     u e 52 u2 τ + 5b0 u .
+                    m∈α1 +α2 +Z                                                     u∈α1 +Z
+
+
+                                                            116
+
+===== PDF page 118 =====
+    Since E = 12 (1 + s1 s2 ), the P -even part of S p is 21 S E ; for Φorth the corresponding defect is
+                     √       3/2 ϑ+ ϑ− , which by Theorem 37.10 vanishes exactly on the companions
+2 (∆0 − 4 )Φorth = 4 140 y
+1        1         π
+
+preserved by ρm or ρu .
+
+37.6    Line terms of the literal series
+Write ν = α + v with α the representative of Definition 34.1 and v = (n, k) ∈ Z2 . The literal weight
+is W (v) = 1[n ≥ 0]1[k ≥ 0] − 21 (sgn n + sgn(n + 21k)). Put σ = α1 + 21α2 , m = n + 21k and
+
+h1 = 1[n ≥ 0] − 12 (1 + s1 ),   h2 = 1[k ≥ 0] − 12 (1 + s2 ),   g1 = sgn n − s1 ,   g3 = sgn m − sgn(m + σ).
+
+Proposition 37.12. W (v) − p(ν) = 12 (1 + s1 )h2 + 12 (1 + s2 )h1 + h1 h2 − 12 g1 − 21 g3 . Each of h1 , g1
+(resp. h2 ; g3 ) is supported on the integers n (resp. k; m) in the closed interval between 0 and −α1
+(resp. −α2 ; −σ).
+
+Proof. By definition 1[n ≥ 0] = 21 (1 + s1 ) + h1 and 1[k ≥ 0] = 12 (1 + s2 ) + h2 ; multiplying,
+1[n ≥ 0]1[k ≥ 0] = 14 (1 + s1 )(1 + s2 ) + 21 (1 + s1 )h2 + 12 (1 + s2 )h1 + h1 h2 . Also sgn n = s1 + g1
+and sgn(n + 21k) = s3 + g3 since ν1 = n + α1 and ν1 + 21ν2 = m + σ. Subtract p. The functions
+n 7→ 1[n ≥ 0] and n 7→ 12 (1 + sgn(n + α1 )) agree unless n and n + α1 lie on different sides of 0 or
+one of them is 0, which confines n to the stated interval; likewise for the others.
+
+    Hence S W − S p is a finite sum of unary series, by type:
+
+ (a) half-lines ν2 = c fixed (weightPh2 · 12 (1 + s1 )): Q = w2 − 35  2           7
+                                                                   4 c , w = ν1 + 2 c, a partial theta in
+     w ≥ 2 c with Eichler partner
+           7                                   2
+                                      w e(w τ );
+
+(b) half-lines ν1 =Pc fixed (weight h1 · 12 (1 + s2 )): Q = 72 m′2 − 25 c2 , m′ = c + ν2 ≥ c, a partial theta
+    with partner     m′ e( 72 m′2 τ );
+
+ (c) the finite set where h1 h2 6= 0;
+
+(d) full lines ν1 = c (weight − 12 g1 ): q −5c /2 times a weight- 12 unary theta in 27 m′2 ;
+                                              2
+
+
+
+ (e) full lines n + 21k = M (weight − 21 g3 ): with ν0 = (α1 + M, α2 ), u = (−21, 1), Q(ν0 + ku) =
+               B(ν0 ,u) 2                      2
+     595
+      2 k + 595            + Q(ν0 ) − B(ν 0 ,u)         1                     595
+                                       1190 , a weight- 2 unary theta of norm 2 .
+
+No line term introduces a weight- 23 unary theta beyond the three of Proposition 37.7.
+
+37.7    Summary
+Theorem 37.13. For the 105 companions:
+
+ (i) the P -odd part of S p equals the holomorphic part of 21 G     b O − H,
+                                                                          b whose ξ1 -image is 1 (X c′ −
+                                                                                               4
+     X c1 ) − 21 X c2 and involves exactly three distinct weight- 23 unary thetas;
+
+(ii) the P -even part admits no weight-one law with the matrices (χ35−1/2 M, T ) (Corollary 37.5);
+
+(iii) the orthant Siegel lift Φorth has the Laplacian defect of Theorem 37.11, a single product of the
+      weight- 32 unary series ϑ+ (in 72 m2 ) and the conjugate of ϑ− (in 25 u2 ), vanishing iff ρm or ρu
+      preserves the companion;
+
+(iv) the literal series differs from S p by the line terms of Proposition 37.12.
+
+
+                                                      118
+
+===== PDF page 120 =====
+    For a wall with primitive direction d, a vector e with (e, d) a basis of Z2 , transverse coordinate
+a (ν = ae + bd, a ∈ aα + Z, b ∈ bα + Z), and a common period N of the phase in a and b, let ϕ(ρ)
+be the mean of the phase over one period of the line a = ρ. The three walls are c1 : d = (0, 1),
+e = (1, 0), a = ν1 ; c′ : d = (1, 0), e = (0, 1), a = ν2 ; c2 : d = (21, −1), P
+                                                                              e = (1, 0), a = ν1 + 21ν2 ; with
+weights κc1 = − 4 , κc′ = 4 , κc2 = − 2 , so that the odd weight is o = c κc sgn(ac ).
+                 1           1           1
+
+
+Corollary 38.3. A0 (S o ) = 0 and
+                               X     p                       X
+                 A1 (S o ) = −    2κc π/Q(dc )                              ϕc (ρ) B̄1 (ρ/N ).
+                                    c                  ρ∈aα +{0,...,N −1}
+
+                     P                      P         √              
+Proof. S o = Fbodd − c κc Rc with Rc = ν E(sc y) − sgn sc e(B(ν, β))q Q(ν) , which converges
+                                                                        ′2
+absolutely since |E(u) − sgn u| ≤ e−πu and q Q contributes eπy(s −s )/2 . By Theorem 38.2 it suﬀices
+                                       2                           2
+
+
+to expand Rc . On the line a = ρ (fixed coset class),
+                                                  p sc is constant,   s2c = 35a2 /Q(d), and the sum over
+b of e −tQ                                                        2 /4
+           times the periodic phase equals ϕ(ρ) π/(tQ(d))e c + O(tK ) by Poisson summation.
+                                                               ts
+                                             P √                                  √                2 2
+The remaining sum over a ∈ ρ + N Z is            h( t a) with h(u) = (E(σu/ 2π) − sgn u)eσ u /4 ,
+σ 2 = 35/Q(d); h is odd, smoothP  on each side√of 0 with jump
+                                                         √     −2
+                                                                R and Gaussian decay.  √ Lemma   R 35.1,
+applied on both half-lines, gives a∈ρ+N Z h( ta) = (N t)−1 h+2B̄1 (ρ/N )+O( t) with h = 0.
+                   p                                     P
+Collect the factor π/(tQ(d)) and the sign of S o = − κc Rc + . . . .
+
+38.3    The even part
+Theorem 38.4. Let E = 12 (1 + s1 s2 ). For every companion and rational x, A1 (S E ) = 0.
+Proof. Fix a coset νr + N Z2 on which the phase is constant; ν = (ρ1 + N i, ρ2 + N j). One has
+E = χ++ + χ−− , where χ++ is the indicator of the closed quadrant ν1 , ν2 ≥ 0 with weight 21 on
+each boundary half-axis and 41 at the origin, and χ−− (ν) = χ++ (−ν); this is checked on the open
+quadrants, the four half-axes and the origin.√On the closed quadrant Q is positive
+                                                                                P definite, so √  h(w) =
+e−Q(w) is Gaussian there and e−tQ(ν) = h( tν). Lemma 35.1 in the form ′u∈ρ+N Z, u≥0 φ( tu) =
+    √       R∞                           √
+(N t)−1 0 φ − B̄1 (ρ/N )φ(0) + O( t) (the prime giving weight 12 to u = 0), applied in ν2 and
+                                                                                         R∞
+then in ν1 ,Rgives for the χ ++ -sum on the coset the t−1/2 coeﬀicient −N −1 B̄1 (ρ1 /N ) 0 h(0, w)dw+
+              ∞
+B̄1 (ρ2 /N ) 0 h(w, 0)dw . For χ−− substitute ν = −µ; µ runs over the coset −νr +N Z2 of the closed
+quadrant with the same constant phase, so its coeﬀicient is the same expression with −ρ1 , −ρ2 ,
+which is the negative since B̄1 is odd. The two cancel on every coset.
+
+38.4    The order t−1/2 coeﬀicient
+For√ a line ν = ν0 + bu with Q(u) > 0 and a weight equal to w± for ±b large, the t−1/2 coeﬀicient
+is 2π Q(u)−1/2 mean(phase)(w+ + w− ) (Lemma 35.1). Denote by Alines     1     the sum of these over the
+line terms of Proposition 37.12: h2 -lines (u = (1, 0), w+ = h2 , w− = 0), h1 -lines (u = (0, 1),
+w+ = h1 − 12 g1 , w− = − 21 g1 ) and g3 -lines (u = (21, −1), w± = − 12 g3 ); points contribute only at
+order t0 .
+Theorem 38.5. For every companion and P     rational x, A1 = Alines
+                                                                1   + A1 (S o ) with A1 (S o ) as in
+Corollary 38.3. Equivalently, A1 − A1 + c κc A1 (Rc ) = 0: the order t−1/2 coeﬀicient minus
+                                      lines
+
+the explicit completion and line terms vanishes identically, and in particular satisfies every law
+trivially.
+Proof. S W = S p + S W −p and S p = S o + 12 S E (Lemma 37.6). Apply Theorem 38.4, Corollary 38.3
+and the line formula.
+
+                                                     120
+
+===== PDF page 136 =====
+ (iv) The assignment                                                         
+                                 M : Seﬀ −→ Residual539 × Resonant539
+       keeps the two factors disjoint: the residual factor is a count of leftover cells, the resonant
+       factor is a forced round count; a count is not a clock.
+
+Proof. Items (i)–(iv) are definitional constraints on the packaging arithmetic already present in
+Proposition 42.6 and Remark 42.7: the identity 539 = b4859/9c = 18+521 records a cell count and,
+separately, a window-plus-body split used as a schedule; neither identity produces a congruence
+Ω ≡ 0 (mod 539) nor a structure map from residual cohomology into the schedule. Dual-rail
+hardware is excluded from the algebraic criteria by (iii).
+
+Status (Category A). T3 = 539 is a static cell/hash budget, not a stopping time; no global Ω ≡ 0
+(mod 539); dual-rail hardware-only; Residual 6= Resonant.
+
+Proposition 41.12 (Residual is not Resonant). The residual cardinality 539 (a count of leftover
+cells per charge sector after packaging) is a different mathematical object from the resonant schedule
+length 539 (a forced iteration count of T3 ). Equality of the two integers is an equality of values, not
+a structure map of chain complexes, graded vector spaces, or sets. In particular, residual product
+cohomology does not force the resonant schedule, and the resonant schedule does not redefine residual
+cohomology.
+
+Proof. By construction of the residual product complex, B ′ = 539 is the number of residual path
+edges in each sector. By construction of the resonant schedule, the same integer is used as a
+constant-time iteration budget. No chain map, graded map, or set map relating C • (X× ), F , or
+H • (F ) to the counter set {1, . . . , 539} is part of either definition (Theorem 41.10(iii) and Proposi-
+tion 41.11(iv)).
+
+Status (Category A). Residual cardinality 6= resonant schedule; equality of integers is not a structure
+map.
+
+
+41.9    Status of claims not established
+Proposition 41.13 (Claims not part of the theory). The following are recorded as not established,
+and are not used as hypotheses in this paper.
+
+  (i) A Petersson inner-product formula for the shadow Ξ is not used as a proved identity.
+
+ (ii) No Kronecker 11-element purge and no four-forces (or SU (3) continuum) mapping is part of
+      the theory.
+
+(iii) The assertion C ∈/ V35
+                          Hilb still lacks an explicit formula for a boundary vector of C; the elliptic
+
+      curve Y 2 = X 3 − 35X is not a substitute.
+
+Proof. (i)–(iii) are negative inventory statements: no written Petersson identity for Ξ is cited as
+proved; continuum and four-forces maps are excluded from every Category A statement above; and
+without an explicit formula for a boundary component of C the membership C ∈     / V35
+                                                                                    Hilb cannot be
+
+evaluated.
+
+Status (Category A). Status only: Ξ Petersson not used as proved; Kronecker/four-forces maps
+excluded; C ∈
+            / V35
+               Hilb
+                    lacks an explicit formula for C.
+
+
+                                                   136
+
+===== PDF page 139 =====
+space is a foundation of RTA has no proof; the only proved statement of that kind is the grading
+lemma of Part II’s framework (the Z/3 grading of equivariant maps by R-degree), which concerns
+representations and not T3 .
+
+42.3    Where the shadow Ξ enters
+RTA describes a weight- 32 shadow Ξ = Ξeven +Ξodd as “the residual-weighted family of shifted partial
+thetas of squares whose outer coeﬀicients are the residual disc-35 series”, and a weight- 21 period
+candidate as its Eichler integral. Neither is written as an explicit series with stated coeﬀicients, so
+no statement about Ξ can be proved from the written definitions. What is proved here bounds the
+place where Ξ must enter:
+
+ (i) at order t−1 the normalized series is governed by V35 with no correction term (Theorem 34.7);
+
+(ii) at order t−1/2 the coeﬀicient A1 is an explicit finite sum of drift, sawtooth and ray terms
+                                  √
+     (Proposition 35.11) with A1 / π algebraic (Corollary 35.8); any S-covariant completion of A1
+     must therefore come from a term that is not visible at order t−1 ;
+
+(iii) at order t0 the coeﬀicient A2 is explicit (Theorem 35.6).
+
+For the 105 companion series, Section 37 determines the shadow structure: the P -odd part has the
+ξ1 -image of Theorem 37.13(i), and the P -even part has no weight-one law and the Laplacian defect
+of Theorem 37.11. This does not identify Ξ, since Ξ is not written as an explicit series. At order
+t−1/2 the coeﬀicient is fully explained by the completion and line terms (Theorem 38.5). Whether
+a completion term of Zwegers type, with coeﬀicients derived from the error-function completion
+of H7 , makes A1 or A2 S-covariant is open (Problem 1.). The numerical tests carried out so far
+(Appendix D) found no closure for any regrouping of the finite sum or for the simplest sawtooth
+candidate.
+
+
+43 Open problems
+ 1. Derive the actual completion constants of H7 (erf-completion along the walls (0, 1) and
+    (21, −1)), form the completed coeﬀicient A1 − Ξcompl , and decide whether it satisfies a vector-
+    valued S-law of weight 12 . This would identify the shadow Ξ. The completions of the cone
+    parts and their ξ1 -images are now explicit (Proposition 37.7); by Theorem 38.5, A1 minus
+    these completion terms and the line terms vanishes identically, so this part of the problem is
+    settled for the companion series; at order t0 the coeﬀicient minus line terms is the explicit even
+    corner term of Theorem 39.4, which admits no aﬀine weight-one law (Proposition 39.5); the
+    identification of Ξ itself remains open. The sawtooth candidate, which removes all W [λ], does
+    not close (Appendix D).
+
+ 2. Decide whether A2 minus a completion term satisfies a vector-valued law; this is the period-
+    function level. Numerically, A2 itself satisfies no pure law of weight 0, 21 or 1, and the mixed
+    test with A1 , A0 is inconclusive (Appendix D).
+                                   √
+ 3. Prove or disprove |A1 ( 12 )| = π/4 (observed numerically) and find the zero set of A1 on the
+    zero set of A0 .
+
+ 4. Find a written object linking T3 , Ores or 539 to gs , C or V35 , or prove that a natural class of
+    such maps does not exist.
+
+
+                                                 139

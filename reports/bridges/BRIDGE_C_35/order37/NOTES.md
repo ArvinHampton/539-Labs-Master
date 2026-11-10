@@ -1,0 +1,4 @@
+# order37 NOTES
+- The den^{−2} (1/k²) form fails; the miss decays roughly like a power ≈ 1.4 and is organised by |num(x)| (Spearman −0.96), i.e. by the aliasing period N′ at −1/x. This was noticed post hoc; any test of it must be preregistered fresh, with no fitted p.
+- Open next step (order38, not started), the alternate route as instructed: preregister a reference space equal to the span of the Bernoulli-sum columns {C2b_l(x)} (and their −1/x images), and measure the law miss as the leftover of S outside that span, with no fit, against r. Optional secondary: a written |num(x)|-ordering prediction (e.g. a monotone decrease of the per-|num| median r) with a fixed threshold.
+- Naming: RG* only, no labels L1–L7. Geometric only; MAPS_CANDIDATES untouched; no Resonant objects; no new Bernoulli objects; no bridge claim; CORE_FREEZE. nice, OMP_NUM_THREADS=1; ~2 s; no push or sends; new files only.

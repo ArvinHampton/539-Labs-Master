@@ -1,0 +1,6 @@
+p 7840981 7840981 keys ['Kr_piv', 'Kr_rref', 'basis_mod_p', 'cols', 'exp', 'exps', 'famw', 'm', 'npol', 'p', 'polar_keys', 'rank', 'rp', 'unk']
+dims (503, 11700) (503, 11700)
+pivots_equal True
+rref_equal True
+differing entries 0 of nnz_e1 5091735
+rank e1 503 rank e2 503 rank stack 503

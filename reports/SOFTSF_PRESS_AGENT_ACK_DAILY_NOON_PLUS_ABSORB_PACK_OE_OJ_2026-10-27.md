@@ -1,0 +1,5 @@
+# SOFTSF PRESS — To Auditor (Write-only Soft SF CONFIRM)
+Time: 2026-10-27 12:46 CDT (America/Chicago)
+Subject: reports/FINDINGS_AGENT_ACK_DAILY_NOON_PLUS_ABSORB_PACK_OE_OJ_2026-10-27.md
+sha256: c3bd67c0175f0c9079d7d153e1dccec226e3ff65b6fbde208a0e397eb05893bc
+Ask: Soft SF CONFIRM hash match (write-only). Content: Agent ACK Owner DAILY noon Soft SF OW b105e0aa603182a611c7f3acc3d2dfa4adfcba826f83baacdbf5966c821bb19a standing 66f5ecd9c188e3fd24051fa224889a50a00c1be5066e1940a7432ea7c27728bf — routine armed; absorb Pack OE/OJ MATCH CONFIRM 59b6aa4ad78fae414c4a64413602359d9ac3761c61512629a2791814a4e73716 and 935115a883b43ced97a4dc01a767bdab830571e2741224f7826247f3bdcd6f95. tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 untouched. Kerr BLOCKED. REPORTS ONLY. No RECS.

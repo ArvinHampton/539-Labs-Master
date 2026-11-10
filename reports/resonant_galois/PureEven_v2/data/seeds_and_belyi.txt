@@ -1,0 +1,22 @@
+== Seeds ==
+flagship: x^5+(-55)x+(88); k=-8/5; m=5/16; disc=58564000000={2: 8, 5: 6, 11: 4} ; sqrt=(242000, True); irreducible=True; Frobenius classification=A5 (primes used 546); PARI=A5
+    cycle types: {'(5,)': 210, '(3, 1, 1)': 206, '(2, 2, 1)': 118, '(1, 1, 1, 1, 1)': 12}
+    sextic resolvent has rational root: False ; x^5+ax+b mod 2,3,5 factor patterns skipped (small primes)
+LSW: x^5+(-100)x+(400); k=-4; m=55/16; disc=77440000000000={2: 16, 5: 10, 11: 2} ; sqrt=(8800000, True); irreducible=True; Frobenius classification=A5 (primes used 546); PARI=A5
+    cycle types: {'(5,)': 221, '(3, 1, 1)': 180, '(2, 2, 1)': 138, '(1, 1, 1, 1, 1)': 7}
+    sextic resolvent has rational root: False ; x^5+ax+b mod 2,3,5 factor patterns skipped (small primes)
+classical: x^5+(20)x+(16); k=4/5; m=5/16; disc=1024000000={2: 16, 5: 6} ; sqrt=(32000, True); irreducible=True; Frobenius classification=A5 (primes used 547); PARI=A5
+    cycle types: {'(5,)': 221, '(3, 1, 1)': 181, '(2, 2, 1)': 138, '(1, 1, 1, 1, 1)': 7}
+    sextic resolvent has rational root: False ; x^5+ax+b mod 2,3,5 factor patterns skipped (small primes)
+D5 fibre on flagship slice: x^5+(20)x+(-32); k=-8/5; m=5/8; disc=4096000000={2: 18, 5: 6} ; sqrt=(64000, True); irreducible=True; Frobenius classification=D5 (primes used 547); PARI=D5
+    cycle types: {'(5,)': 221, '(2, 2, 1)': 279, '(1, 1, 1, 1, 1)': 47}
+    sextic resolvent has rational root: True ; x^5+ax+b mod 2,3,5 factor patterns skipped (small primes)
+
+== Belyi control ==
+disc_y(monic(phi - t)) = 3125*t**2*(t - 1)**2/1296
+matches 5*(25 t (t-1)/36)^2 : OK
+phi' = 30*y**2*(y - 1)**2  ; critical values 0, 1; poles: infinity (5-cycle)
+t=3: z^5-15z^4+60z^3-3888: irreducible=True; disc=317374864588800000 = 5*(251942400)^2 ; PARI polgalois = S5
+   cycle types over primes 7..4000: {'(5,)': 107, '(4, 1)': 155, '(3, 2)': 82, '(3, 1, 1)': 93, '(2, 2, 1)': 63, '(2, 1, 1, 1)': 41, '(1, 1, 1, 1, 1)': 6}
+PARI polgalois for t=2..100 (integer t): {'S5': 98, 'reducible': 1}
+reducible t in 2..100: [32]

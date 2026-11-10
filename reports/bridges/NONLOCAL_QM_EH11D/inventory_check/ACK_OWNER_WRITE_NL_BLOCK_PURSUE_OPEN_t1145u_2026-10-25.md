@@ -1,0 +1,2 @@
+# ACK — t1145u NL pursue resolutions (2026-10-25 CDT)
+ACK Write A reports/OWNER_WRITE_NL_BLOCK_PURSUE_OPEN_t1145u_2026-10-25.md sha256 2352a5a986c0abf400838a386237be54c5ca3a32c6a0cb86ed5b0007c6665c91. Wording per Owner correction ("pursuing resolutions to any problem stopping them"). Tip 70c47a4c40f4ff4fdf19a0c4488ba16b3e040680b482657f9e4c763b2cdd9ed3 untouched; stub untouched. Bridge PARTIAL / READY NO. Not Cat A.

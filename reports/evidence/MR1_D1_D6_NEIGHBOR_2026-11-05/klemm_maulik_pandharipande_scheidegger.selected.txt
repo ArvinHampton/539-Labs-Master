@@ -1,0 +1,35 @@
+357: 
+358:                                         K → MΛ .
+359: 
+360: We define Dh,(d1 ,...,dr ) = K∗ . See [31] for an alternate view of degenerate
+361: intersection.
+362:    If ∆(h, d1 , . . . , dr ) < 0, the divisor Dh,(d1 ,...,dr ) on MΛ is defined to
+363: vanish by the Hodge index theorem.
+364: 
+365: 0.2.4. Noether-Lefschetz numbers. Let Λ be a lattice of discriminant
+366: l = ∆(Λ), and let (X, L1 , . . . , Lr , π) be a 1-parameter family of Λ-
+367: polarized K3 surfaces. The Noether-Lefschetz number NLπh,d1 ,...,dr is
+368: the classical intersection product
+369:                                          Z
+370:                          π
+371: (7)                  NLh,(d1 ,...,dr ) =   ι∗π [Dh,(d1 ,...,dr ) ].
+372:                                                  C
+373: 
+374:    Let Mp2 (Z) be the metaplectic double cover of SL2 (Z). There is a
+375: canonical representation [4] associated to Λ,
+376: 
+377:                              ρ∗Λ : Mp2 (Z) → End(C[G]).
+378: 
+379: The full set of Noether-Lefschetz numbers NLπh,d1 ,...,dr defines a vector
+380: valued modular form
+381:                          X                    1
+382:                 Φπ (q) =     Φπγ (q)vγ ∈ C[[q 2l ]] ⊗ C[G],
+383:                                  γ∈G
+384: 
+385: of weight 22−r
+386:             2
+387:                and type ρ∗Λ by results3 of Borcherds and Kudla-Millson
+388: [4, 25]. The Noether-Lefschetz numbers are the coefficients4 of the
+389: components of Φπ ,
+390:                                                                              
+391:                                                      ∆(h, d1 , . . . , dr )

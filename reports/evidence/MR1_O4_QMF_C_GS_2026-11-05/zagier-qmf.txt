@@ -1,0 +1,1011 @@
+Clay Mathematics Proceedings
+Volume 12, 2010
+
+
+
+
+                               Quantum Modular Forms
+
+                                        Don Zagier
+
+              To Alain Connes on his 60th birthday, in friendship and admiration
+
+
+
+    A classical modular form is a holomorphic function f in the complex upper
+half-plane H satisfying the transformation equation
+                                                az + b 
+(1)                 (f |k γ)(z) := (cz + d)−k f          = f (z)
+                                                cz + d
+                                             
+for all z ∈ H and all matrices γ = ac db ∈ SL(2, Z), where k, the weight of
+the modular form, is a fixed integer. Of course, there are many variants: one
+can replace the group SL(2, Z) by a group commensurable with it or by a more
+general Fuchsian subgroup of SL(2, R); the automorphy factor (cz + d)−k may be
+multiplied by a character or replaced by a more general multiplier system; the
+weight k may be half-integral or even rational; the function f can be vector-valued
+rather than scalar-valued; there may be a further additive correction on the right-
+hand side of (1); one can allow non-holomorphic functions of specified type (e.g.,
+Maass wave forms); etc. But in all of these generalizations, as well as the higher-
+dimensional generalizations of modular forms to Hilbert or Siegel modular forms or
+to automorphic forms of more general type, the functions considered are defined on
+a symmetric space X = G/K associated to a Lie group G and transform suitably
+with respect to the action of a discrete subgroup Γ ⊂ G on X.
+    In this note we want to discuss, in the simplest cases, another type of modular
+object which, because it has the “feel” of the objects occurring in perturbative
+quantum field theory and because several of the examples come from quantum
+invariants of knots and 3-manifolds, we call quantum modular forms. These are
+objects which live at the boundary of the space X, are defined only asymptotically,
+rather than exactly, and have a transformation behavior of a quite different type
+with respect to some modular group. We will consider only the case when G is
+SL(2, R), X is H, and Γ is SL(2, Z) or a group commensurable with it. Then, as
+is well-known, the natural boundary of X is P1 (Q) = Q ∪ {∞}, the set of “cusps”
+of Γ.
+    A quantum modular form should therefore be a complex-valued function f
+on Q, or possibly on P1 (Q) r S for some finite subset S ⊂ P1 (Q), having a certain
+behavior under the action of Γ on P1 (Q). Here neither of the properties which are
+
+     1991 Mathematics Subject Classification. Primary 11F99; Secondary 33D99, 57M27.
+
+                                                                             c 2010 Don Zagier
+
+                                              1
+2                                     DON ZAGIER
+
+
+required of classical modular forms—analyticity and Γ-covariance—are reasonable
+things to require: the former because P1 (Q), viewed as the set of cusps of the ac-
+tion on Γ on H, is naturally equipped only with the discrete topology, not with its
+induced topology as a subset of P1 (R), so that any requirement of continuity or
+analyticity is vacuous; and the latter because Γ acts on P1 (Q) transitively or with
+only finitely many orbits, so that any requirement of Γ-covariance of a function on
+this set would lead to a trivial definition. So we do not demand either continu-
+ity/analyticity or modularity, but require instead that the failure of one precisely
+offsets the failure of the other. In other words, our quantum modular form should
+be a function f : Q → C for which the function hγ : Q r {γ −1 (∞)} → C defined by
+(2)                          hγ (x) = f (x) − (f |k γ)(x)
+has some property of continuity or analyticity (now with respect to the real topol-
+ogy) for every element γ ∈ Γ. This is purposely a little vague, since examples coming
+from different sources have somewhat different properties, and we want to consider
+all of them as being quantum modular forms. For the sake of definiteness we will
+take as our canonical definition of a quantum modular form a function f : Q → C
+for which the function hγ defined by (2) extends to a real-analytic function on
+P1 (R) r Sγ , where Sγ ⊂ P1 (R) is a finite set (typically just {∞, γ −1 (∞)}), for
+each γ ∈ Γ. Notice that this property need only be checked for a set of generators
+of Γ, and hence for only finitely many elements, because its validity for γ1 and γ2
+automatically implies its validity for γ1 γ2 . In fact, the function γ 7→ hγ is a cocycle
+on Γ (i.e., it satisfies hγ1 γ2 = hγ1 |k γ2 + hγ2 ), so that any quantum modular form
+defines a cohomology class in the first cohomology group of Γ with coefficients in
+the space of piecewise analytic functions on P1 (R) with the action h 7→ h|k γ of Γ.
+     The definition just given describes what one can call a weak quantum modular
+form. A strong quantum modular form—and most of our examples will belong to
+this category—is an object with a stronger (and more interesting) structure: it
+associates to each element of Q a formal power series over C, rather than just a
+complex number, with a correspondingly stronger requirement on its behavior under
+the action of Γ. To describe this, we write the power series in C[[ε]] associated to
+x ∈ Q as f (x + iε) rather than, say, fx (ε), so that f is now defined in the union of
+(disjoint!) formal infinitesimal neighborhoods of all points x ∈ Q ⊂ C. Since the
+function hγ in (2) was required to be real-analytic on the complement of a finite
+subset Sγ of P1 (R), it extends holomorphically to a neighborhood of P1 (R) r Sγ in
+P1 (C), and in particular has a power series expansion (convergent in some disk of
+positive radius) around each point x ∈ Q. Our stronger requirement is now that
+the equation
+(3)           f (z) − (f |k γ)(z) = hγ (z)         (γ ∈ Γ,   z → x ∈ Q)
+holds as an identity between countable collections of formal power series.
+     Finally, there is a further property which holds for all the examples of strong
+quantum modular forms that we know, namely, that the formal function f (z) just
+described extends to an actual function f : (C r R) ∪ Q → C that is analytic
+on C r R and whose asymptotic expansion as one approaches any rational point
+x ∈ Q vertically from above or below coincides to all orders with the formal power
+series f at x. (Here “analytic” can mean “holomorphic” or merely “real-analytic,”
+depending on the example.) Of course such an extension, even if it exists, isn’t
+canonical since it can be modified by adding an analytic function in H± which
+                                QUANTUM MODULAR FORMS                                   3
+
+
+vanishes to infinite order as one approaches any rational point, but in our examples
+there will often be a natural choice. One then gets a peculiar kind of object: an
+analytic function in the upper half-plane which “leaks” into the lower half-plane
+through the infinitely many “holes” Q ⊂ R in the real axis to another analytic
+function in H− in such a way that the combined function on H ∪ Q ∪ H− is C ∞ on
+any vertical line passing through a rational point, or more generally on any smooth
+curve in C which intersects R only orthogonally and in rational points. The sheaf
+defined by functions of this type gives (C r R) ∪ Q a bizarre “hybrid topology” in
+which it is a 1-dimensional complex manifold at all points outside of Q and a kind
+of 1-dimensional real C ∞ -manifold at all points of Q.
+    All of this sounds somewhat abstract. Let us turn for the rest of the paper to the
+examples, which are taken from a variety of fields: number theory, combinatorics
+(q-series) and, as already mentioned, quantum invariants of 3-manifolds and knots.
+    Example 0. We begin with a function which is is more of a prototype than
+a true example because it does not fit precisely into the scheme described above,
+but which is in the same spirit and is very familiar to number theorists. This is the
+classical Dedekind sum, defined on pairs of coprime integers (c, d) with c > 0 by
+the formula
+                                        X k  kd 
+                           s(d, c) =                     ,
+                                              c      c
+                                       0<k<c
+                              1
+where ((x)) denotes x − [x] − 2 for x 6∈ Z . It satisfies the well-known identities
+                                                             c2 + d2 + 1 − 3cd
+s(d + c, c) = s(d, c),   s(−d, c) = −s(d, c),        s(d, c) + s(c, d) =       ,
+                                                                   12cd
+which determine it completely. Hence the function S : Q → Q defined by S(d/c) =
+12s(d, c) satisfies the functional equations
+                                                           1          1
+S(x) − S(x+1) = 0,          S(x) − S(−1/x) = x +             ±3+                 (x ≶ 0) .
+                                                           x     Num(x)Den(x)
+If we ignore the last term, which is the reason why we said that this example does
+not quite fit in with our general scheme, then we see that we have precisely an
+example of the type of transformation property described above. (The reason for
+the anomaly is that this example is related to the Eisenstein series of weight 2 on
+SL(2, Z), which is a quasimodular rather than a modular form.)
+    We mention that a function with quantum modular properties very similar to
+those of the Dedekind sum occurs in a recent preprint of Brian Conrey [5].
+
+     Example 1. We consider the following two q-hypergeometric functions, the
+first of which was given in Ramanujan’s “Lost” Notebook and the second, its part-
+ner, discovered later:
+                         ∞
+                         X            q n(n+1)/2
+               σ(q) =
+                         n=0
+                             (1 + q)(1 + q 2 ) · · · (1 + q n )
+                     = 1 + q − q2 + 2 q3 − 2 q4 + q5 + q7 − 2 q8 + · · · ,
+                            ∞
+                            X                          2
+                                          (−1)n q n
+              σ ∗ (q) = 2
+                            n=1
+                                (1 − q)(1 − q 3 ) · · · (1 − q 2n−1 )
+                     = −2 q − 2 q 2 − 2 q 3 + 2 q 7 + 2 q 8 + 2 q 10 + · · · .
+4                                       DON ZAGIER
+
+
+In a beautiful paper by George Andrews, Freeman Dyson and Dean Hickerson [2]—
+the story is told in more detail in the last section of Dyson’s famous survey arti-
+cle [8]—several identities expressing these two q-series as theta series associated to
+indefinite quadratic forms were proved, thereby explaining in particular the other-
+wise amazing experimental fact that the coefficients of both are very small, even
+though the individual terms have huge coefficients. (For instance, no coefficient
+of q n in σ(q) for n ≤ 1600 is greater than 4 in absolute value, even though some
+coefficients of the individual terms in the sum in the same range exceed 1013 .) A
+typical identity they proved is
+                                   X  12        b 2       2
+(4)                    q σ q 24 =               −1 q a −24b ,
+                                           a
+                                     a, b ∈ Z
+                                     a>6|b|
+
+the right-hand side of which is very similar to that of the modular identity
+                     η(24z)3      X  −12          b 2     2
+(5)                           =                  −1 q a −24b ,
+                      η(48z)              a
+                                     a, b ∈Z
+                                     a>6|b|
+                     Q∞
+where η(z) = q 1/24 n=1 (1 − q n ) denotes the classical Dedekind eta function.
+    In an equally beautiful paper [4] which appeared side-by-side with the Andrews-
+Dyson-Hickerson paper, Henri Cohen interpreted these identities in terms, first of
+algebraic number
+                   theory, and then of the theory of Maass wave forms. Define
+coefficients T (n) n∈24Z+1 by
+                        X                                X
+(6)         q σ q 24 =       T (n) q n ,  q −1 σ ∗ q 24 =     T (n) q |n| .
+                           n≥0                                 n<0
+
+Then the identities of [2] are equivalent to the fact that T (n) is the coefficient of
+|n|−s in the Dirichlet series
+                  Y          1       Y        1        Y             1
+       L(s) =                   −2s             −2s
+                                                                              ,
+                 p≡±3
+                         1 −  p     p≡±7
+                                          1 + p       p≡±1
+                                                             (1 − ε(p) p−s )2
+                 (mod 8)             (mod 24)            (mod 24)
+                                                                                   
+where ε(p) is defined for p = |P | with P ∈ 24Z+1 by ε(p) = (−1)b = 12     c   = 24
+                                                                                  f   if
+P has the representations P√= a2 −√   72b2 = c2 − 96d
+                                                  √
+                                                      2
+                                                        = e2
+                                                             − 192f 2
+                                                                      as a  norm in the
+three quadratic orders Z[6 2], Z[4 6] and Z[8 3], respectively. Cohen observed
+that this is an Artin L-function that can be expressed via the identities L(s) =
+ζ √ √  (s)/ζ √  (s) = ζ √ √  (s)/ζ √  (s) as a quotient of Dedekind
+    Q   3+ 3     Q    3          Q     3+ 6     Q    3
+
+zeta functions.                                        b
+                 This implies the functional equation L(s)      b − s), where
+                                                           = −L(1
+           √
+b
+L(s)             s      2
+     = (24 2/π) Γ(s/2) L(s), and from this in turn one deduces that the function
+               √    X                        
+(7) u(z) = y              T (n) K0 2π|n|y/24 e2πinx/24      (z = x + iy ∈ H)
+                     n∈24Z+1
+
+satisfies u(−1/2z) = u(z) as well as the more obvious functional equation u(z +1) =
+e2πi/24 u(z), whence also u(z/(2z + 1)) = e2πi/24 u(z). Since u(z)is also an eigen-
+function of the hyperbolic Laplace operator −y 2 ∂ 2 /∂x2 +∂ 2 /∂y 2 with eigenvalue
+1/4, this shows that u(z) is a Maass wave form on the congruence subgroup Γ0 (2)
+and thus that the identity (4) is just as modular in nature as the identity (5), but
+now using non-holomorphic rather than holomorphic modular forms.
+                                    QUANTUM MODULAR FORMS                                          5
+
+
+    All of this seems to have nothing to do with quantum modular forms. However,
+Cohen also observed a further phenomenon, and it is this which concerns us here.
+One has the two q-series identities (the first due to Andrews, the second derived in
+a similar way by Cohen)
+                                    ∞
+                                    X
+                   σ(q) = 1 +             (−1)n q n+1 (1 − q)(1 − q 2 ) · · · (1 − q n ) ,
+                                    n=0
+(8)                                ∞
+                                   X
+                  σ ∗ (q) = −2           q n+1 (1 − q 2 )(1 − q 4 ) · · · (1 − q 2n ) .
+                                   n=0
+
+Cohen observed that the right-hand side of each of these expressions, as well as
+being a convergent series in the disk |q| < 1, also makes sense whenever q is a root
+of unity, because the series is then terminating in both cases. He then discovered
+the following surprising fact about these functions.
+    Lemma. Define σ and σ ∗ at roots of unity by (8). Then σ(q) = −σ ∗ (q −1 ) for
+every root of unity q.
+The first cases of this can be checked by hand: σ(1) = −σ(1) = 2, σ(−1) =
+−σ ∗ (−1) = −2, σ(ω) = −σ ∗ (ω 2 ) = 2ω + 6 for ω 2 + ω + 1 = 0, and σ(±i) =
+−σ ∗ (∓i) = ∓2i − 4.
+Proof. The Laurent series
+                     k
+                     X
+             Sk =          q −n(n−1)/2 (1 + q)(1 + q 2 ) · · · (1 + q k−n )        ∈ Z[q, q −1 ]
+                     n=1
+                                                                         
+satisfies the recursion Sk+1 − Sk = q k+1 Sk+1 − (1 + q) · · · (1 + q k ) − q −k(k+1)/2 ,
+so by induction
+       k−1
+       X                          k−1
+                                     X
+(9)          q −1 −1 · · · q −n −1 −    q n+1 (1−q 2 ) · · · (1−q 2n ) = (1−q) · · · (1−q k ) Sk
+       n=0                                n=0
+
+for every k ≥ 0. If q is a root of unity and k is bigger than or equal to the order
+of q, then the right-hand side of (9) vanishes and the left-hand side is easily seen
+to be 21 σ(q −1 ) + 12 σ ∗ (q) . 
+       We can now define our quantum modular form. Define a function f : Q → C
+by
+(10)         f (x) = q 1/24 σ(q) = −q 1/24 σ ∗ (q −1 )                 (x ∈ Q, q = e2πix ) ,
+where the equality of the two formulas is precisely the content of the lemma. This
+function, whose values for x with denominator ≤ 4 were given (up to the factor
+q 1/24 ) before the proof of the lemma, jumps around erratically as x runs through
+the rational numbers, but the cocycle defined by (3) with Γ = Γ0 (2) and k = 1 is
+almost everywhere analytic:
+     Proposition. The function f : Q → C defined by (10) satisfies
+                                      1        x 
+(11)   f (x + 1) = e2πi/24 f (x) ,        f          = e2πi/24 f (x) + h(x)
+                                    2x + 1 2x + 1
+where h : R → C is C ∞ on R and real-analytic except at x = −1/2 .
+6                                        DON ZAGIER
+
+
+    We illustrate this behavior by plotting in Figure 1 the real part of f (x) for all
+rational numbers x ∈ [−1.7, 1.1] with denominator ≤ 100 (the imaginary part looks
+very similar), and in Figure 2 the values of the real and imaginary parts of h(x) for
+the same values of x.
+                           4                                        1.5
+
+
+                           3
+                                                                     1
+
+                           2
+                                                                    .5
+                           1
+
+
+
+    −1.5     −1     −.5            .5      1   −1.5   −1     −.5             .5      1
+
+                          −1
+                                                                    −.5
+
+                          −2
+                                                                    −1
+                          −3
+
+           Figure 1. Graph of ℜ(f (x))            Figure 2. Graph of ℜ(h(x)) and
+                                                             ℑ(h(x))
+
+     This proposition, which we will prove in a moment, shows that f is a quantum
+modular form in the sense explained in the introduction, and the figures depict
+graphically what this means. In fact, f is a strong quantum modular form. Indeed,
+the two expressions in (8) are not only well-defined complex numbers when q is a
+root of unity, but well-defined power series in t, with coefficients in Q[ξ], when we
+take q = ξe−t with ξ a root of unity. Furthermore, the identity σ(q) = −σ ∗ (q −1 )
+of the lemma remains true as an identity in Q[ξ][[t]], with the same proof, because
+the right-hand side of (7) is O(tm ) for k larger than m times the order of ξ. For
+instance, if we take ξ = 1 we find
+                                        55 3 1073 4 32671 5 286333 6
+σ e−t = −σ ∗ et = 2 − 2 t + 5 t2 −            t +        t −        t +       t −··· .
+                                          3         12         60        72
+If we extend the definition of f to infinitesimal neighborhoods of all rational points
+by interpreting (10) in the obvious way when x is replaced by x + iy with x ∈ Q
+and y infinitesimal (so q = ξe−t with ξ = e2πix and t = 2πy), then (11) then
+still holds, where h(x) is extended to a neighborhood of R r {−1/2} by analytic
+continuation. Here we can also clearly see the phenomenon of “leaking through
+the rational numbers” mentioned in the introduction, because we can extend the
+formally defined function f to a globally defined function f : H ∪ H− ∪ Q → C by
+setting
+                              (
+                                  q 1/24 σ(q)        if z ∈ H ∪ Q ,
+(12)                 f (z) =
+                                −q 1/24 σ ∗ (q −1 ) if z ∈ H− ∪ Q,
+where q = e2πiz . Then the argument just given shows that f , which is obviously
+analytic in both H and H− , is C ∞ on any curve passing vertically through a rational
+point. In fact, the function f (z) is the key to the proof of the proposition. Inserting
+the Fourier expansions (6) into (12) we can rewrite the definition of f in C r R as
+                                ( P
+                                            T (n) q n if z ∈ H ,
+                       f (z) =       Pn>0
+                                  − n<0 T (n) q n if z ∈ H− ,
+                              QUANTUM MODULAR FORMS                                      7
+
+
+which stands exactly is the same relation to the Maass wave form (7) as the functions
+denoted in the same way in the earlier work of J. Lewis and the author on Maass
+cusp forms on SL(2, Z) and their associated “period functions” [12, 13]. Making
+the needed minor changes in the results given there, we find that the holomorphic
+function f in C r R can be expressed in terms of the Maass form u by the integral
+formulas
+                              ( R∞
+                                      [u(τ ), rz (τ )] if z ∈ H ,
+(13)                 f (z) =      Rz∞
+                                − z̄ [rz (τ ), u(τ )] if z ∈ H− ,
+where the function rz : H → C is defined by rz (τ ) = (ℑ(τ )/(τ − z)(τ̄ − z))1/2 and,
+like u, is an eigenfunction of the hyperbolic Laplace operator (with respect to τ )
+with eigenvalue 1/4, and where [ · , · ] denotes the Green’s form
+                                     ∂u(τ )                   ∂v(τ )
+                    u(τ ), v(τ ) =            v(τ ) dτ + u(τ )          dτ̄ ,
+                                         ∂τ                       ∂ τ̄
+which is a closed 1-form whenever u and v are eigenfunctions of the hyperbolic
+Laplace operator with the same eigenvalue. From this and the modularity property
+u(γτ ) = χ(γ)u(τ ) for γ ∈ Γ of u(τ   ), where   χ : Γ0 (2) → C∗ is the character sending
+                     1 1          1 0        2πi/24
+both generators 0 1 and 2 1 to e                    , together
+                                                               with the easy equivariance
+property rγz (γτ ) = ±(cz + d)rz (τ ) for γ = c· d· ∈ SL(2, R), we deduce, apart from
+the obvious periodicity property f (z + 1) = e2πi/24 f (z), the formula
+                                                              Z ∞
+                              z          2πi/24
+(14)          (2z + 1) f              −e         f (z) = −          [u(τ ), rz (τ )]
+                           2z + 1                              −1/2
+
+for z in either the upper or the lower half-plane, where the integral is taken along
+any path from −1/2 to ∞ passing to the left of z or z̄. But the right-hand side
+now makes sense for any z lying to the right of both the chosen path and its
+reflection in the x-axis, so (if we push the path of integration far to the left) defines
+a holomorphic function on all of C r (−∞, 0]. The function h(x) occurring in (11)
+for x > 0 is the restriction of this function to R+ and hence is real-analytic, and a
+similar argument works for z ∈ C r [0, ∞) and x < 0 if we change the minus sign
+on the left-hand side of (14) to a plus sign and take a path of integration passing
+to the right of z and z̄. This establishes the real-analyticity of h on R∗ . The fact
+that it is C ∞ also at x = −1/2 follows by looking more closely at the integral and
+using that u is a cusp form, as was done in [13] for the period functions of Maass
+forms on the full modular group. 
+     A similar discussion applies to other Maass wave forms on groups commensu-
+rable with SL(2, Z). We refer to the article [3] by R. Bruggeman for a treatment of
+this more general case.
+
+     Example 2. Our second example comes from [14], where the following ele-
+mentary but rather surprising facts were proved.
+1. Let Q5 denote the set of all quadratic functions Q(x) = ax2 + bx + c with
+a, b, c ∈ Z, a < 0, and discriminant b2 − 4ac equal to 5. Then for every rational
+number x we have              X
+                                  max(Q(x), 0) = 2 ,
+                               Q∈Q5
+
+the sum always being finite. (For example, the only Q ∈ Q5 with Q( 13 ) > 0 are
+−x2 + x + 1, −x2 − x + 1, −5x2 + 5x − 1 and −11x2 + 7x − 1 and the corresponding
+8                                        DON ZAGIER
+
+
+values Q( 13 ) = 11  5 1 1
+                 9 , 9 , 9 , 9 add up to 2.) More generally, if for every positive non-
+square integer D we define QD like Q5 but with the discriminant of Q now being
+the given number D, then we have
+                                 X
+(15)                                 max(Q(x), 0) = αD
+                              Q∈QD
+
+for all x ∈ Q, where αD is a rational number that depends only on D  √ and is equal
+to a simple multiple of the value of the Dedekind zeta function of Q( D) at s = 2.
+2. If one replaces the expression max(Q(x), 0) by its cube, then the same thing
+happens: one has
+                              X
+(16)                               max(Q(x), 0)3 = βD
+                              Q∈QD
+
+for all x ∈ Q, where βD ∈ Q is related to ζQ(√D) (4). But for the fifth power one
+has instead
+                      X
+(17)                      max(Q(x), 0)5 = γD + δD Φ(x)
+                       Q∈QD
+
+where γD (again related to ζQ(√D) (6)) and δD are rational numbers depending only
+on D and Φ : Q → Q is an even periodic function satisfying q 10 Φ( pq ) ∈ Z for all
+p
+q ∈ Q, the first values being
+
+  p/q (mod 1) 0      1/2     ±1/3     ±1/4      ±1/5        ±2/5        ±1/6
+   q 10 Φ(p/q) 1 −1049 −29399 12076 3132025 −8012423 30839551
+   The function Φ satisfies—and, if one fixes one value, is uniquely characterized
+by—the two functional equations
+                                                                   691 2 2
+(18) Φ(x + 1) = Φ(x) ,        x10 Φ(−1/x) = Φ(x) + x10 −               x (x − 1)3 − 1 .
+                                                                    36
+                                    P
+Therefore Φ(x) (and hence also Q∈QD max(Q(x), 0)5 for any D) is a quantum
+modular form. This example is unusual in that the cocycle rγ = Φ − Φ|−10 γ is
+analytic on all of R (it is a polynomial) and that Φ itself extends continuously (and
+even differentiably, though not C ∞ ) from Q to R.
+     Here, again, the explanation is modular, but much simpler than in our first
+example because now only holomorphic modular forms on the full modular group
+are involved. The reason for the different behavior of the functions in (15) and (16)
+and in (17) is that there are no holomorphic modular forms except for Eisenstein
+series of weight 4 or 8 on SL(2, Z), while in weight 12 one has the cusp form
+                    ∞
+                    Y                        ∞
+                                             X
+                                   24                                         
+        ∆(z) = q          1 − qn         =         τ (n) q n   z ∈ H, q = e2πiz ,
+                    n=1                      n=1
+
+as well as the Eisenstein series. The existence of the quantum modular form Φ fol-
+lows directly from the existence of the cusp form ∆, as a consequence the classical
+Eichler-Shimura-Manin theory of periods of holomorphic modular forms. Specifi-
+cally, we associate to ∆(z) its Eichler integral
+                          Z ∞                              X∞
+        e        (2π/i)11                                      τ (n) n
+(19) ∆(z)    =                  ∆(z ′ ) (z ′ − z)10 dz ′ =          q  (z ∈ H) .
+                    10!     z                              n=1
+                                                                n11
+                             QUANTUM MODULAR FORMS                                      9
+
+
+(For an arbitrary cusp form f of weight k, fe would be defined the same way with
+                                                   e
+                                               d10 ∆(z)
+10 and 11 replaced by k − 2 and k − 1.) Then            = ∆(z) and from this and
+                                                 dz 10
+the modularity of ∆ one deduces easily that
+                                                    
+(20)                 e
+                     ∆(z)              e az + b
+                          − (cz + d)10 ∆                = P a b  (z)
+                                         cz + d               c d
+                                                             
+                      e
+(or, more succinctly, ∆     (γ − 1) = Pγ ) for all γ = ac db ∈ Γ1 = PSL(2, Z), where
+                        −10
+Pγ (z) is a polynomial of degree ≤ 10, given explicitly by
+                                      Z ∞
+                             (2π/i)11
+(21)              Pγ (z) =                      ∆(z ′ ) (z − z ′ )10 dz ′ .
+                               10!     γ −1 (∞)
+
+These polynomials satisfy the cocycle relation Pγγ ′ = Pγ −10 γ ′ + Pγ ′ and hence are
+                                                                             
+determined by their values for the generators T = 11 10 and S = 01 −1       0   of Γ1 ,
+which are PT = 0 (obviously) and
+                          691 2 2                                               
+ PS (z) = −Ω1 z 10 −          z (z − 1)3 − 1 + Ω2 z(z 2 − 1)2 (z 2 − 4)(4z 2 − 1)
+                           36
+with Ω1 = 0.98943291 · · · ∈ R, Ω2 = 1.53908051 . . . i ∈ iR. From this and (18) we
+deduce that
+                                                    ∞
+                          e
+                                               1 X τ (n)
+(22)             Φ(x) = ℜ ∆(x)/Ω1           =              cos(2πnx)
+                                                Ω1 n=1 n11
+
+for x ∈ R, where ∆(x)e     is defined by either of the formulas in (19), both of which
+remain convergent also when z lies on the real axis. The above-mentioned “contin-
+uous but not infinitely differentiable”
+                                          properties of the function Φ follow from this:
+it is known that τ (n) is O n11/2 but not o n5 for n large, so the function Φ(x)
+on R is 4 times but not 6 times continuously differentiable.
+     In this example, too, we find a function that “leaks” from H into H− through
+the rational holes in the real axis. To do this, we extend the definition (19) to the
+lower half-plane by
+                                      Z
+                 e          (2π/i)11 ∞
+(23)             ∆(z)   =                  ∆(z ′ ) (z ′ − z)10 dz ′
+                               10!     z̄
+                                  ∞
+                              1 X τ (n)
+                         =                  γ11 (4πn|y|) q n        (z ∈ H− ),
+                             10! n=1 n11
+                                        R∞
+where z = x + iy ∈ H and γ11 (t) = t e−u u10 du, the incomplete gamma function
+(which is equal to e−t times a polynomial in t). For z = x ∈ R the integrals in
+                                                                          
+both (19) and (23) are convergent, because ∆(x + iy) = O y −6 as |y| → 0, so ∆          e
+extends in this case to a continuous function in all of C. This extended function still
+satisfies the functional equation (20), with the same polynomials Pγ as before, and
+because ∆ is a cusp form and hence vanishes to infinite order as τ approaches any
+rational point, one sees easily that its restriction to any vertical line passing through
+a rational point is infinitely often differentiable. However, unlike the situation in our
+first example, here the function that “leaks” is only real-analytic, not holomorphic,
+in the lower half-plane.
+10                                      DON ZAGIER
+
+
+     Example 3. Our next example of a quantum modular form comes from the
+unusual series
+                           ∞
+                           X
+(24)             F (q) =     (1 − q)(1 − q 2 ) · · · (1 − q m ) ,
+                                  m=0
+
+invented by Maxim Kontsevich, which has the peculiarity of not converging on any
+open subset of C but nevertheless makes sense as a function on the set of roots of
+unity because the series terminates after N terms if q N = 1. We will be fairly brief
+in our treatment here, since this function was studied in detail in [15], and will
+only discuss the quantum modular aspect. Define ϕ : Q → C by ϕ(x) = q 1/24 F (q),
+where q = e2πix as usual. Then ϕ(1/n) has an asymptotic expansion of the form
+                                                     ∞
+                                                     X
+(25)                ϕ(1/n) ∼ n3/2 e2πi(3−n)/24 +           cj (−2πi/n)j
+                                                     j=0
+
+                                     23
+as n → ∞, where c0 = 1, c1 = 24          , c2 = 1681
+                                                 1152 ,. . . are certain rational coeffi-
+cients. From the trivial
+                   √     functional equation   ϕ(x + 1) = e2πi/24 ϕ(x) one sees that
+ 2πi(3−n)/24
+e            equals i ϕ(−n), so (25) says that the function g(x) defined by the
+second of the two equations
+(26)
+ϕ(x+1) = e2πi/24 ϕ(x) ,     ϕ(x) ∓ i1/2 |x|3/2 ϕ(−1/x) = g(x)           (x ∈ Q, ±x > 0)
+is smooth (i.e., has a well-defined Taylor expansion) at x = 0, and in fact it is
+real-analytic on the rest of the real axis, so that (26) presents ϕ(x) as a quantum
+modular form.
+     The explanation is quite similar to that in the last example, except that the cusp
+form ∆(z) is replaced by its 24th root η(z), which is a modular form of half-integral
+weight. Again we have a function ηe(z) in H ∪ H− , related to η(z) in the same way
+    e
+as ∆(z)  in the previous example was related to ∆(z). (The direct analogues of the
+integrals in (19) and (23) diverge, because η has weight 1/2, so that the exponent
+“10” in the integrand would have to be replaced by “−3/2,” but they can be made
+sense of by integrating by parts once, or alternatively, we can use the definitions via
+                                                            P∞            n2 /24
+sums rather than integrals.) In particular, since η(z) = n=0 n 12    n  q        (Euler),
+this gives that ηe(z), appropriately normalized, is given by
+                    ∞
+                    X         12  n2 /24                                       
+(27)      ηe(z) =         n       q       = q 1/24 1 − 5q − 7q 2 + 11q 5 + · · · ,
+                    n=0
+                              n
+
+and now the relation to Kontsevich’s function follows from the formula
+X∞                                                                    ∞          
+      1/24              2              n
+                                                   1               1 X qn
+    q      (1 − q)(1 − q ) · · · (1 − q ) − η(z) = − ηe(z) + η(z)    −
+n=0
+                                                    2               2 n=1 1 − q n
+
+([15], Theorem 2), which implies that −2ϕ(x) for x ∈ Q is the limiting value of
+ηe(z) as z approaches x from either the upper or the lower half-plane. We also
+deduce (26), with an explicit formula for the cocycle function g(x) as an integral of
+the Dedekind eta-function along a path from 0 to ∞ in the upper half-plane.
+     We observe in passing that the function of this example, like those of Exam-
+ples 4 and 5, belongs to the Habiro ring of “analytic functions of roots of unity” [10].
+These functions, which are also related to the (now so very fashionable) F1 -story,
+                                    QUANTUM MODULAR FORMS                                               11
+
+
+occur in many contexts connected with quantum topological invariants and quan-
+tum groups, and would be a natural setting to look for more examples of quantum
+modular forms.
+
+     Example 4. The next example, taken from [11], is similar in many ways to the
+last one, but is interesting because it comes from topology and more particularly
+from the theory of quantum invariants of 3-manifolds. Again we shall be brief and
+refer to the original paper for details. To any 3-manifold one can associate the
+so-called Witten-Reshetikhin-Turaev invariant, defined by the first of these authors
+by a path integral that can be made sense of only perturbatively or in the sense
+of topological quantum field theory, and by the second two in a rigorous, but less
+illuminating, algebraic way. The invariant makes sense at roots of unity of the form
+ζK = e2πi/K with K > 0 integral. For manifolds of very special types (such as
+torus knots or Seifert fibrations) there are explicit formulas for it, and in particular
+for the Poincaré homology sphere Σ(2, 3, 5) it is given by
+                         1      X         (1 − α24β )(1 − α40β ) −(β+1)2
+(28)        W (q) =                                             α          ,
+                       2G                       1 + α60β
+                                β (mod 60K)
+                                β6≡0 (mod K)
+                                                      P        2         √
+if q = ζK , where α = ζ120K and G =                         α−β = (1 − i) 30K (Gauss sum).
+                                                β mod 60K
+We extend this to other roots of unity by Galois invariance W (q)σ = W (q σ ), or
+equivalently by formula (28) for q equal to any primitive Kth root of unity, with α
+being any primitive (120K)-th root of unity with α120 = q. Let χ+ (n) be the odd
+periodic function of period 60 defined by the formula
+                      (
+                        (−1)[n/30] if (n, 6) = 1 and n ≡ ±1 (mod 5),
+           χ+ (n) =
+                            0        otherwise,
+and let Θ+ (z) be the theta series
+             ∞
+             X                 n2           1                                             
+Θ+ (z) =           n χ+ (n) q 120 = q 120 1 + 11q + 19q 3 + 29q 7 − 31q 8 − · · ·                 (z ∈ H),
+             n=1
+
+which is a modular form of weight 3/2 on a certain congruence subgroup of SL(2, Z)
+(and in fact is the first component of a 2-component vector-valued modular form
+of weight 3/2 on the full group SL(2, Z)). Then for every x ∈ Q the number
+                                                        
+(29)                      f (x) = 2 eπix/60 1 − W e2πix
+is equal to the limit as z → x of the Eichler integral
+                        ∞
+                        X              n2         1                                           
+(30)      e + (z) =
+          Θ                   χ+ (n) q 120 = q 120 1 + q + q 3 + q 7 − q 8 − · · ·
+                        n=1
+
+([11], Theorem 1), and from this it follows that the function f : Q → C is a quantum
+modular form (in fact, a strong quantum modular form). The whole story is quite
+similar to that in Example 3 except that this time the modular form whose Eichler
+integral is involved has weight 3/2 rather than 1/2. There is also an expression
+   ∞
+   X                                                                                               
+         q n (1 − q)(1 − q 6 ) · · · (1 − q 5n−4 ) + q 4n+3 (1 − q 4 )(1 − q 9 ) · · · (1 − q 5n−1 )
+   n=0
+12                                        DON ZAGIER
+
+
+             e + (q) (due to Zwegers) of the same type as (24), which terminates and
+for q −1/120 Θ
+hence gives a closed formula for W (q) whenever q is a root of unity of order not
+divisible by 5, as well as relations (also pointed out by Zwegers) to the mock theta
+functions of Ramanujan. See [11] for more details.
+
+
+     Example 5. The last example, which again comes from topology, is the most
+mysterious and in many ways the most interesting. The function from Q/Z to R
+that we obtain in this case is not a quantum modular form in the strict sense of
+the definition we gave in the introduction, let alone a strong quantum modular
+form, because the associated cocycle is no longer analytic or even continuous, but
+it nevertheless will turn out to have a clearly defined modularity property.
+     To any knot and any integer n ≥ 2 one can associate a Laurent polynomial
+Jn (q) ∈ Z[q, q −1 ], called the n-colored Jones polynomial. The definition, which
+involves the theory of quantum groups, will not be reviewed here since we will only
+look at one example and here the Jones polynomials can simply be given by an
+explicit formula. We will consider the figure-eight knot, the simplest hyperbolic
+knot. The Jones polynomial of this knot is given by
+                              n−1
+                              X                m
+                                               Y
+                                         −mn
+                  Jn (q) =           q               (1 − q n−j )(1 − q n+j ) .
+                              m=0              j=1
+
+
+(Here the sum could also be taken from m = 0 to ∞ since the mth summand is 0
+for m ≥ n.) If we fix a root of unity q, then the function n 7→ Jn (q) is periodic,
+of period N if q N = 1, so we can extrapolate it backwards to define Jn (q) also
+for n ≤ 0. Of particular interest to us is the Q-valued function on roots of unity
+defined by
+                          ∞
+                          X                                            2
+(31) J0 (q) := JN (q) =           (1 − q)(1 − q 2 ) · · · (1 − q m )          (q ∈ C∗ , q N = 1 )
+                          m=0
+
+(compare the sum on the right-hand side to (24)), the first few values of which are
+as follows:
+                q    1    −1 ζ3±1         ±i    ζ5±1√    ζ5±2√ ζ6±1
+              J0 (q) 1    5   13          27 46 + 2 5 46 − 2 5 89
+     The function J0 , which is related to perturbative SL(2, C) Chern-Simons theory
+(cf. [7]), is of a very different nature than the Jones polynomials themselves. For
+instance, the values of the Jones polynomials Jn (q) when q is a root of unity are
+of only polynomial growth if q n 6= 1, but the values of J0 (ζN ) = JN (ζN ) are
+exponentially big, as one can see in the following table:
+                     N                   100                 200               300
+           max0<n<N |Jn (ζN )|          12.07               18.62             24.99
+            J0 (ζN ) = JN (ζN )      8.20 × 1016         2.48 × 1031       4.89 × 1045
+Explicitly, J0 (ζN ) is given by the the asymptotic formula [1]
+                                   1
+                  J0 e2πi/N       ∼ √
+                                    4
+                                        N 3/2 eCN                 (n → ∞) ,
+                                      3
+                             QUANTUM MODULAR FORMS                                     13
+
+
+where C = 0.3230659 . . . is 1/2π times the hyperbolic volume of the complement
+of the knot, and in fact one has a complete asymptotic expansion [6, 9, 16]
+(32)                                                                                    
+                  1                    11 π         697 π 2     724351 π 3
+J0 e2πi/N = 1/4 N 3/2 eCN 1 + √                  +           +         √       +·    · ·
+                 3                     36 3 N       7776 N 2   4199040 3 N 3
+                                                                             √
+as N → ∞, where the factor in parentheses is a power series in π/N 3 with
+rational coefficients. Conjecturally [7], the corresponding expansion for an arbitrary
+hyperbolic knot would be a power series√ in πi/N with coefficients in the trace field
+of the knot, this trace field being Q( −3) for the figure 8 knot.
+     But since J0 (q) is defined for all roots of unity, we can look at its expansion
+near some other point than 1, e.g., we can consider the values q = −ζN rather
+than q = ζN . It is here that the phenomenon of most interest to us appears: these
+values are given (experimentally) by the asymptotic series
+                                                                                    
+                              31/4                     41 π      12625 π 2
+(33) J0 −e2πi/N = κ(N )· 3/2 N 3/2 eCN/4 1 + √                 +             + · · ·     ,
+                               2                       36 3 N      7776 N 2
+of the same general form as (32), but this time involving an extra factor
+                                 
+                                 
+                                 27 if N ≡ 1 (mod 2),
+                       κ(N ) = 1         if N ≡ 2 (mod 4),
+                                 
+                                 
+                                   5     if N ≡ 0 (mod 4)
+that depends on the value of N (mod 4). Comparing with the table of values
+of J0 (q)given above, we find that this factor is given in all cases by κ(N ) =
+J0 iN +2 . What’s more, if we now try rational rather than integral values for N ,
+but with bounded
+                   denominators, then we find that (33) still holds, with κ(N ) =
+J0 eπi(N +2)/2 . Going back to (32), we find exactly the same behavior there: if
+N goes to infinity, not through integers, but through rational numbers, say with
+denominator 2, 3 or 4, then (32) remains true if we multiply the right-hand side
+multiplied by 5, 13, and 27, respectively (and in general by J0 (e2πiN )). More
+generally, the experimentally found asymptotic behavior of the function
+(34)                J : Q/Z → Q ∩ R ,             J(x) := J0 (e2πix )
+as x tends to a fixed rational number α = a/c (a, c ∈ Z, (a, c) = 1) from the right
+or left is given by the formula
+                                exp(C/c2 ε)                                       
+(35) J(α ± ε) = J(α∗ ± β) ·           3/2
+                                             A± (α) + B± (α)ε + C± (α)ε2 + · · ·
+                                    ε
+as ε tends to 0 through positive rational values with 1/c2 ε ≡ β (mod 1) for some
+fixed rational number β, where α∗ = d/c with d ≡ a−1 (mod c) and A± (α) =
+A(±α), B± (α) = B(±α), . . . are algebraic numbers depending only on α modulo 1.
+(In equations (32) and (33) we have α = α∗ = β = 0 and α = α∗ = 1/2, β ≡ N/4
+(mod 1), respectively, explaining the extra factor κ(N ) = J((N + 2)/4) in the latter
+case.)
+    The factor J(α∗ ± β) in equation (35) looks oddat first sight, but in fact has
+a simple modular explanation: if we set γ = ac db , where b ∈ Z is chosen so
+that γ ∈ SL(2, Z), then we have J(α∗ ± β) = J(−α∗ ± 1/c2 ε) = J(γ −1 (α ± ε)),
+so that (35) can be seen as simply relating the values of J(X) and J(γ(X)) as X
+(= −α∗ ±1/c2 ε ) tends to infinity through rational numbers with small denominator.
+14                                           DON ZAGIER
+
+
+The asymptotic formula (35) is therefore equivalent to the first part of the following
+conjecture generalizing formulas (32) and (33):
+     Conjecture. Let α ∈ Q and choose γ ∈ SL(2, Z) with γ(∞) = α. Then for
+suitable real numbers S0 (α), S1 (α), . . . depending only on α (mod 1) we have an
+asymptotic expansion
+                                    X ∞                               √
+          J(γ(X))          3/2                      n−1             π/ 3
+(36)               ∼ π/~        exp         Sn (α) ~       , ~ =
+           J(X)                       n=0
+                                                                  X − γ −1 (∞)
+as X → ∞ through rational numbers with bounded√    denominators. The value of
+S0 (α) is independent of α and is equal to πC/ 3, while S1 (α) ∈ Q log Ka× and
+Sn (α) ∈√Kα for n ≥ 2, where Kα is the maximal real subfield of the cyclotomic
+field Q −3, e2πiα .
+We expect that a similar conjecture should hold for any hyperbolic knot   √ comple-
+ment, with ~ being defined as πi/(X − γ −1 (∞)) (we divided this by −3        in our
+special case to make everything real) and Kα being replaced by K e2πiα , where
+K is the trace field of the knot. The case when α = 0 and X ∈ Z is precisely the
+arithmeticity conjecture from [7] which was cited earlier.
+     Observe that the correctness of (36) is unchanged by replacing (γ, X) by
+(γT, X − 1) or (T γ, X), where T = 10 11 , since these changes do not affect the
+left-hand side or the quantity ~, so the quantities Sn (α) really do depend only on α
+rather than on γ, and are periodic in α.
+     Here is a table of the numerically obtained values of Sn (α) for some small n
+and simple α , where in the last line εk (k = 1, 2, 3) denotes the real cyclotomic
+unit ζ k + ζ −k with ζ = ζ3−1 e4πia/5 and π29 = 2 − ε1 + ε2 + 2ε3 , a prime of Q(ζ) of
+norm −29.
+
+      α     exp(S1 (α))                  S2 (α)                 S3 (α)             S4 (α)
+                   1                        11                      2                 1081
+      0            3                      22 32                     32               21 35 5
+      1                                     41                      19               71089
+      2      (23 /3)1/2                   24 32                   23 32              27 35 5
+      1                                     37                     401               30767
+      3        2 · 32/3                   22 33                   21 36              21 38 5
+      2                                     25                     182               29027
+      3          34/3                     22 33                     36               21 38 5
+      1                                    193                   24691              8027957
+      6      27/2 · 35/6                  24 33                   27 36              29 38 5
+      5                                     67                    1289              1759883
+      6     23/2 · 313/6                  24 33 √                 23 36 √            27 38 5
+                  √                                                                             √
+             23 (2 3±1)               1855±360 3             71132±3123 3   1499191589±43727850 3
+     ± 41         √
+             3(2± 3)1/4                  26 32 11               28 32 112         211 35 51 113
+ a          (53 /3)1/2 |π29 |         1
+   , 5∤a    (ε31 ε3 /ε2 )1/10   22 32 53 π29 (2678 − 943ε1       ···                ···
+ 5
+                                  +1831ε2 + 2990ε3 )
+
+
+     Formulas (35) or (36) say that the values of J(x) as x approaches any given
+rational number go exponentially rapidly to infinity and lie on certain smooth curves
+(countably many, all proportional to one another) depending on the rational number
+in question. This behavior can be seen clearly in the graph of the function J,
+which looks as follows, where because of the very rapid growth we have plotted
+f (x) = log(J(x)) rather than J itself, so that now the different curves containing
+                                  QUANTUM MODULAR FORMS                             15
+
+
+the points of the graph with argument near any fixed rational point differ by vertical
+translations:
+                      15
+
+
+
+
+                      10
+
+
+
+
+                      5
+
+
+
+
+                          0                                          1
+
+                              Figure 3. Graph of f (x) = log(J(x))
+To make more sense of this graph, we do as in Examples 1–4 and compare the
+values of f (x) at x and 1/x. The graph of the difference indeed looks much better
+than the graph of f itself:
+                  4
+
+
+                  3
+
+
+                  2
+
+
+                  1
+
+                                   1        2         3        4
+
+
+
+                 −1
+
+
+                 −2
+
+
+                 −3
+
+                      Figure 4. Graph of h(x) = log(J(x)/J(1/x))
+The behavior that we see here is a consequence of the conjecture above, which can
+easily be seen to imply that the function h(x) has a jump at every rational point
+α = a/c but is C ∞ as we approach α from the left or from the right, with limiting
+values of the form h± (α) = ±C/ac + log(β± (α)) as x approaches α from the left or
+from the right, where β± (α) are real algebraic numbers. This smoothness from the
+two sides can be seen more clearly by looking more closely at the graph of h(x) in
+the neighborhood of a rational point α with small denominator, say α = 3/8 :
+16                                                                   DON ZAGIER
+
+
+2.4                                                                               2.27
+
+
+
+                                                                                  2.26
+
+2.3
+                                                                                  2.25
+
+
+
+                                                                                  2.24
+2.2
+
+                                                                                  2.23
+
+
+            6/17   5/14         4/11            3/8         5/13                                   3/8
+2.1                                                                               2.22
+      .35                 .36            .37          .38            .39             .373   .374   .375   .376   .377
+
+
+                                               Figure 5. Graphs of h(x) near x = 3/8
+                                                                 √
+By contrast, in a small interval around the point 1/φ (φ = (1 + 5)/2 = golden
+ratio), where there are no points with particularly small denominator, we get the
+following picture
+
+                                 1.108
+
+
+
+                                 1.107
+
+
+
+                                 1.106
+
+
+
+                                 1.105
+
+
+
+                                 1.104
+
+
+                                        29/47                21/34          1/φ 34/55
+                                 1.103
+                                     .617                                  .618                    .619
+
+                                               Figure 6. Graph of h(x) near x = 1/φ
+showing that, unlike what the picture in Figure 4 might have suggested, h(x) is not
+monotone decreasing on {x > 0} and seeming to indicate that the function h(x) is
+continuous but in general not differentiable at irrational values of x.
+
+
+                                                                   References
+ [1] J.E. Andersen and S.K. Hansen, Asymptotics of the quantum invariants for surgeries on the
+     figure 8 knot. J. Knot Theory Ramifications 15 (2006), 479–548.
+ [2] G. E. Andrews, F. J. Dyson and D. Hickerson, Partitions and indefinite quadratic forms.
+     Invent. Math. 91 (1988), 391–407.
+ [3] R. Bruggeman, Quantum Maass forms. In “The conference on L-functions, Fukuoka, Japan
+     18–23 February 2006” (eds. L. Weng and M. Kaneko), World Scientific (2007), 1–15.
+ [4] H. Cohen, q-identities for Maass waveforms. Invent. Math. 91 (1988), 409–422.
+ [5] B. Conrey, Reciprocity for a cotangent sum, the Riemann hypothesis, and the period function
+     of an Eisenstein series. Preprint, 2010.
+ [6] O. Costin and S. Garoufalidis, Resurgence of 1-dimensional sums of Sum-Product type. In
+     preparation.
+                                QUANTUM MODULAR FORMS                                          17
+
+
+ [7] T. Dimofte, S. Gukov, J. Lennells and D. Zagier, Exact results for perturbative Chern-Simons
+     theory with complex gauge group. Commun. in Number Theory and Physics 3 (2009), 363–
+     443.
+ [8] F. J. Dyson, A walk through Ramanujan’s garden. In “Ramanujan Revisited (Urbana-
+     Champaign, Ill., 1987),” Academic Press, Boston (1988) 7–28. Reprinted in “Selected Papers
+     of Freeman Dyson: With Commentary,” Amer. Math. Soc., (1906), 187–208.
+ [9] S. Garoufalidis and J. Geronimo, A Riemann-Hilbert approach to the asymptotics of 1-
+     dimensional sums of Sum-Product type. In preparation.
+[10] K. Habiro, On the quantum sl2 invariants of knots and integral homology spheres, Geom.
+     Topol. Monogr. 4 (2002), 5568.
+[11] R. Lawrence and D. Zagier, Modular forms and quantum invariants of 3-manifolds. Asian
+     J. of Math. 3 (1999) 93–108.
+[12] J. Lewis and D. Zagier, Period functions and the Selberg zeta function for the modular group.
+     In “The Mathematical Beauty of Physics, A Memorial Volume for Claude Itzykson” (J.M.
+     Drouffe and J.B. Zuber, eds.), Adv. Series in Mathematical Physics 24, World Scientific,
+     Singapore (1997) 83–97.
+[13] J. Lewis and D. Zagier, Period functions for Maass wave forms. I. Ann. Math. 153 (2001),
+     191–258.
+[14] D. Zagier, From quadratic functions to modular functions. In “Number Theory in Progress,
+     Vol 2” (K. Győry, H. Iwaniec and J. Urbanowicz, eds.), Proceedings of Internat. Conference
+     on Number Theory, Zakopane 1997, de Gruyter, Berlin (1999), 1147–1178.
+[15] D. Zagier, Vassiliev invariants and a strange identity related to the Dedekind eta-function.
+     Topology 40 (2001), 945–960.
+[16] D. Zagier, Algebraic and asymptotic properties of quantum invariants of knots. In prepara-
+     tion.
+
+    Collège de France, Paris, France
+
+    and
+
+    Max-Planck-Insitut für Mathematik, Bonn, Germany
+    E-mail address: don.zagier@mpim-bonn.mpg.de
+

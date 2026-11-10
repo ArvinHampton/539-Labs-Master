@@ -1,0 +1,39 @@
+Sun Oct 25 12:58:09 CDT 2026
+OK c85448e82b0ead7d59ad5037bf7c0368c5e4986e219f99f1d8be729f4a7164f2  /workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_2026-10-25_t761u_eps_abel_written_CONFIRM.md
+OK c26b5f72c4603acd05623df5d745bfa538c4a14131b222bf92c00537f34f458e  /workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_2026-10-25_t761u_path_psi_accept_CONFIRM.md
+OK b467bb54b7d759416cf9898ba806926758f01efb7fe8c0624edf13458d35a5f0  /workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_2026-10-25_t761u_outer_accept_CONFIRM.md
+OK aac04151accb03b0464ffaf2fff09b733af99b820a97479f262a6d82f60b13d1  /workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_2026-10-25_t761u_accept_CONFIRM.md
+OK 7603941d5e2c245b69c68e9dfa4f1da098c08644314d6b97051d2d6e1b33064e  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t761u_eps_abel_written/author_candidates/AUTHOR_WRITTEN_EPS_ABEL_W7_t761u_2026-10-25.md
+OK 854058fe0822fa1ee148103370029090d30060a083d7279d4d153fe43c3a31e2  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t761u_eps_abel_written/RESULTS.md
+OK 758ff064eb862ba08dcaf3c6f8224925733a1b4ae3b8a3dc609c476f094b48f7  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t761u_eps_abel_written/PREREG.md
+OK 83c0bc36b78c2c428f5b7d63a27dd369bf85f1910cfaf02fca10b78e773601df  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t761u_eps_abel_written/FINDINGS_DRAFT_for_Auditor_CONFIRM_t761u_eps_abel_2026-10-25.md
+OK 97f33122782f196a45c02de7299ca25b50c1e23fa78c82aa49a3b72142682e3a  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t761u_eps_abel_written/SHA256SUMS
+OK 544de792bc9d2f76982f24bf2dd1b7600214aa154747ade110e745c2f7d9af48  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t761u_absent_inventory/MASTER_ABSENT_INVENTORY_t761u_2026-10-25.md
+OK b96ff7bdd579d6b431f44ba1421f22cfa025770cbb70aa721da9607cb0a5fde1  /workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_2026-10-25_t748u_accept_CONFIRM.md
+OK 5f5f283203834eeafe78a9d44a1a7a70baac51e3ac84c945bc286df25afc39f7  /workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_2026-10-25_t756u_accept_CONFIRM.md
+OK 2bb870b47a3c11d5a6466aa6acd335cd9b37e94c5775c6b763bb9e7c4cc11d76  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t726u_x4/author_candidates/AUTHOR_CANDIDATE_X4_rev_t726u_2026-10-25.md
+OK 9aa52f19788a2992c3ace1f334516053af50bc79492e6c6225902d6432231c7a  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t722u_ga3_opt_c_diag/RESULTS.md
+OK 4da09dec14b6881583bfd685e1c44eb3563bd649f25d05e6f8e91cd618e49d39  /workspace/quantum-comp/reports/bridges/BRIDGE_C_35/deduce_t713u_ga3_fill/author_candidates/AUTHOR_CANDIDATE_GA3_h_table_FILLED_N106_2026-10-25.md
+OK 1be7f7d198ce6c527702d36e84db6722fd9562557e408b6d02d09fa7ffcaeb5a  /workspace/quantum-comp/reports/heavy-daily/2026-10-17-psi-Cocycle.md
+-- eps_abel_written SUMS -c
+./FINDINGS_DRAFT_for_Auditor_CONFIRM_t761u_eps_abel_2026-10-25.md: OK
+./INVENTORY.md: OK
+./PREREG.md: OK
+./RESULTS.md: OK
+./author_candidates/AUTHOR_WRITTEN_EPS_ABEL_W7_t761u_2026-10-25.md: OK
+./logs/PREREG.sha256: OK
+./logs/sums_check.txt: OK
+./logs/verify_basis.txt: OK
+./logs/written_lines.txt: OK
+rc=0
+-- path_psi_accept SUMS -c
+./FINDINGS_DRAFT_for_Auditor_CONFIRM_t761u_path_psi_accept_2026-10-25.md: OK
+./INVENTORY.md: OK
+./PREREG.md: OK
+./RESULTS.md: OK
+./author_candidates/PB_ALPHA_ACCEPT_SCOPE_QUOTE_t761u.md: OK
+./logs/PREREG.sha256: OK
+./logs/verify_basis.txt: OK
+./logs/written_lines_corrected.txt: OK
+rc=0
+F-A: 16/16 basis OK; mismatches=0

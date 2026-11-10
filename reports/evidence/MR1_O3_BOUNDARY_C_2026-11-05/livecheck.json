@@ -1,0 +1,189 @@
+[
+  {
+    "key": "bruinier_abs",
+    "url": "https://arxiv.org/abs/math/0609763",
+    "final_url": "https://arxiv.org/abs/math/0609763",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 37542,
+    "sha256": "19ad5d70d4af8117525d6092d3502c14587651ffdffad913b65a939121db353f",
+    "file": "bruinier_abs.html",
+    "time": "2026-11-05T13:46:44.629447-06:00"
+  },
+  {
+    "key": "bruinier_pdf",
+    "url": "https://arxiv.org/pdf/math/0609763",
+    "final_url": "https://arxiv.org/pdf/math/0609763",
+    "status": 200,
+    "content_type": "application/pdf",
+    "bytes": 658342,
+    "sha256": "b6f03bb60947a76b57947c08bb5f6e0e72c075c733ff0d9c676dbfe36ed10334",
+    "file": "bruinier_pdf.pdf",
+    "time": "2026-11-05T13:46:44.762145-06:00"
+  },
+  {
+    "key": "doublesum_abs",
+    "url": "https://arxiv.org/abs/2205.02643",
+    "final_url": "https://arxiv.org/abs/2205.02643",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 38689,
+    "sha256": "e0fa3cc4c0520eff566ac7b382e66ab4028f5706840e20b9509a36c2bf3eee7d",
+    "file": "doublesum_abs.html",
+    "time": "2026-11-05T13:46:44.661252-06:00"
+  },
+  {
+    "key": "doublesum_pdf",
+    "url": "https://arxiv.org/pdf/2205.02643",
+    "final_url": "https://arxiv.org/pdf/2205.02643",
+    "status": 200,
+    "content_type": "application/pdf",
+    "bytes": 1232951,
+    "sha256": "bd060599e01f9d07f54e7abcab7044cda2aa489a999d1dca93d913930a0c19a5",
+    "file": "doublesum_pdf.pdf",
+    "time": "2026-11-05T13:46:44.707984-06:00"
+  },
+  {
+    "key": "periodic_abs",
+    "url": "https://arxiv.org/abs/2012.02457",
+    "final_url": "https://arxiv.org/abs/2012.02457",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 40106,
+    "sha256": "dd5f1efb8944cddd609d1756d647acd7909fd1627bfff6d4452dfd47bf0d243a",
+    "file": "periodic_abs.html",
+    "time": "2026-11-05T13:46:44.626060-06:00"
+  },
+  {
+    "key": "periodic_pdf",
+    "url": "https://arxiv.org/pdf/2012.02457",
+    "final_url": "https://arxiv.org/pdf/2012.02457",
+    "status": 200,
+    "content_type": "application/pdf",
+    "bytes": 242834,
+    "sha256": "5329cf68501b71c069ad719c900cc28bedfd6472c4baf0fcb2d4de968a446917",
+    "file": "periodic_pdf.pdf",
+    "time": "2026-11-05T13:46:44.815010-06:00"
+  },
+  {
+    "key": "zagier_pdf",
+    "url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.1007/BF01389846/ModFormsRQF.pdf",
+    "final_url": "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.1007/BF01389846/ModFormsRQF.pdf",
+    "status": 200,
+    "content_type": "application/pdf",
+    "bytes": 1854384,
+    "sha256": "03d45792f659fa3b321db4d0b5422361ebad4bab75665bf7f49302a1b4d0c84d",
+    "file": "zagier_pdf.pdf",
+    "time": "2026-11-05T13:46:46.170432-06:00"
+  },
+  {
+    "key": "field",
+    "url": "https://www.lmfdb.org/NumberField/2.2.140.1",
+    "final_url": "https://www.lmfdb.org/NumberField/2.2.140.1",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 98210,
+    "sha256": "439507e8ee77b5a50199a487022dfb1163d023b4dda4e5c66b1c7b37aea48385",
+    "file": "field.html",
+    "time": "2026-11-05T13:46:44.901839-06:00"
+  },
+  {
+    "key": "davis_pdf",
+    "url": "https://www.math.uni-bonn.de/ag/azaf/fantasy2022/files/Tim%20Davis%20-%20Fourier%20Coefficients%20of%20Hilbert%20Modular%20Forms%20at%20Cusps.pdf",
+    "final_url": "https://www.math.uni-bonn.de/ag/azaf/fantasy2022/files/Tim%20Davis%20-%20Fourier%20Coefficients%20of%20Hilbert%20Modular%20Forms%20at%20Cusps.pdf",
+    "status": 200,
+    "content_type": "application/pdf",
+    "bytes": 458846,
+    "sha256": "1dc323068d11250614e85f3e504037b892d6b496913aa29294870d6e071f8df3",
+    "file": "davis_pdf.pdf",
+    "time": "2026-11-05T13:46:46.256916-06:00"
+  },
+  {
+    "key": "hmf_a",
+    "url": "https://www.lmfdb.org/ModularForm/GL2/TotallyReal/2.2.140.1/holomorphic/2.2.140.1-1.1-a",
+    "final_url": "https://www.lmfdb.org/ModularForm/GL2/TotallyReal/2.2.140.1/holomorphic/2.2.140.1-1.1-a",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 23702,
+    "sha256": "437e70b42bc84a153cd11b7641ca17c5101f169cd099b731cf04db5852d7bbcb",
+    "file": "hmf_a.html",
+    "time": "2026-11-05T13:46:44.812723-06:00"
+  },
+  {
+    "key": "hmf_b",
+    "url": "https://www.lmfdb.org/ModularForm/GL2/TotallyReal/2.2.140.1/holomorphic/2.2.140.1-1.1-b",
+    "final_url": "https://www.lmfdb.org/ModularForm/GL2/TotallyReal/2.2.140.1/holomorphic/2.2.140.1-1.1-b",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 23664,
+    "sha256": "55758b9b11c383c6a344033a6d79f59e3d046e700aee21e683d92ab84cb09339",
+    "file": "hmf_b.html",
+    "time": "2026-11-05T13:46:44.923679-06:00"
+  },
+  {
+    "key": "hmf_c",
+    "url": "https://www.lmfdb.org/ModularForm/GL2/TotallyReal/2.2.140.1/holomorphic/2.2.140.1-1.1-c",
+    "final_url": "https://www.lmfdb.org/ModularForm/GL2/TotallyReal/2.2.140.1/holomorphic/2.2.140.1-1.1-c",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 23652,
+    "sha256": "324a2da8fededf1a2f591ad2809a569c481c954b665a514ca3681454986ee037",
+    "file": "hmf_c.html",
+    "time": "2026-11-05T13:46:44.883665-06:00"
+  },
+  {
+    "key": "hmf_d",
+    "url": "https://www.lmfdb.org/ModularForm/GL2/TotallyReal/2.2.140.1/holomorphic/2.2.140.1-1.1-d",
+    "final_url": "https://www.lmfdb.org/ModularForm/GL2/TotallyReal/2.2.140.1/holomorphic/2.2.140.1-1.1-d",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 25238,
+    "sha256": "8f3e3bef4c13bd2a1fecb5473e1ce5fd692b8e439e18dcf489853274821972aa",
+    "file": "hmf_d.html",
+    "time": "2026-11-05T13:46:44.916856-06:00"
+  },
+  {
+    "key": "zagier_doi",
+    "url": "https://doi.org/10.1007/BF01389846",
+    "final_url": "http://link.springer.com/10.1007/BF01389846",
+    "status": 500,
+    "content_type": null,
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "file": "zagier_doi.html",
+    "time": "2026-11-05T13:46:44.811132-06:00"
+  },
+  {
+    "key": "zagier_crossref",
+    "url": "https://api.crossref.org/works/10.1007/BF01389846",
+    "final_url": "https://api.crossref.org/works/10.1007/BF01389846",
+    "status": 200,
+    "content_type": "application/json",
+    "bytes": 6448,
+    "sha256": "1caa85eb7dcca68ad491d13404c252ba0b9a3b28e5483810f6610d6ec20be948",
+    "file": "zagier_crossref.html",
+    "time": "2026-11-05T13:46:44.900059-06:00"
+  },
+  {
+    "key": "periodic_doi",
+    "url": "https://doi.org/10.1515/forum-2020-0201",
+    "final_url": "https://www.degruyterbrill.com/document/doi/10.1515/forum-2020-0201/html",
+    "status": 202,
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "file": "periodic_doi.html",
+    "time": "2026-11-05T13:46:44.919432-06:00"
+  },
+  {
+    "key": "periodic_crossref",
+    "url": "https://api.crossref.org/works/10.1515/forum-2020-0201",
+    "final_url": "https://api.crossref.org/works/10.1515/forum-2020-0201",
+    "status": 200,
+    "content_type": "application/json",
+    "bytes": 18049,
+    "sha256": "9d6d5c34708838f315d7d23f0a2a921f65749193597d073033b5afdb268e60c3",
+    "file": "periodic_crossref.html",
+    "time": "2026-11-05T13:46:45.038448-06:00"
+  }
+]

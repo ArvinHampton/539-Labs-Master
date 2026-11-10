@@ -1,0 +1,6 @@
+./FINDINGS_DRAFT_for_Auditor_CONFIRM_t761u_ga3_reopen_2026-10-25.md: OK
+./PREREG.md: OK
+./RESULTS.md: OK
+./author_candidates/AUTHOR_WRITTEN_GA3_REOPEN_MENU_t761u_2026-10-25.md: OK
+./logs/PREREG.sha256: OK
+./logs/verify_basis.txt: OK

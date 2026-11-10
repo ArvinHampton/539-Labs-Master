@@ -1,0 +1,257 @@
+\section{Boundary rank over $C_2\times C_4\times C_6$}\label{sec:boundaryrank}
+This section integrates the November~2026 existing-record analysis of a $48$-dimensional group-ring boundary system over
+\[
+G\;\cong\; C_2\times C_4\times C_6,
+\]
+with coefficient field $F=\Q(\sqrt{35})$ and the positive real embedding of $\sqrt{35}$. It is additive material for Version~17 DRAFT. It does not alter the Bridge Series theorems of Parts~II--III, does not identify~$\Xi$, and does not close capacity. Status labels follow the editorial vocabulary of Section~\ref{sec:postv16}.
+
+\paragraph{Source basis.}
+Orbit memberships and the A/B/C/D weight rule are taken from the verification record \texttt{/tmp/q.py} (lines~5--16) used in Addenda~R/R.1/S/V; Addendum~R confirms that the twenty-eight orbits partition~$G$ and that the twisted symmetry holds for $w=y$. Intake manuscripts through Version~16 do not reprint the full membership table. The spectra of $H'$ and $H_{01}'$ are those of Addendum~V. Matrix identities for $M$ and $M'$ follow Addenda~S--T. Paths for the cited review records include \path{/workspace/quantum-comp/reports/FINDINGS_PP_OWNER_PDF_1715_MATH_REVIEW_ADDENDUM_R_1926_2026-11-05.md}, \path{..._S_1932_...}, \path{..._T_1938_...}, \path{..._V_1949_...}, and \path{..._X_2002_...}. No independent recomputation is claimed beyond these records.
+
+\subsection{Coordinates, fields, and operators}
+\begin{definition}[Coordinates and index]\label{def:v17-coords}
+Write elements of~$G$ as $c=(j,k,\ell)$ with $j\in\{0,1\}$, $k\in\{0,1,2,3\}$, $\ell\in\{0,1,2,3,4,5\}$, and set
+\[
+I(c)\;=\;24j+6k+\ell.
+\]
+Let $x=(1,0,0)$, $y=(0,1,0)$, $z=(0,0,1)$. The involution
+\[
+\pi(j,k,\ell)=(j,2-k,-\ell)
+\]
+implements $c\mapsto c^{-1}y^{-2}$ (Addendum~R). The eight $\pi$-fixed points are exactly the elements with $k$ odd and $\ell\in\{0,3\}$; the remaining orbits are twenty pairs. The even-$k$ locus is \emph{not} the set of $\pi$-fixed points.
+\end{definition}
+
+\begin{definition}[Coefficient and character fields]\label{def:v17-fields}
+Let $s=\sqrt{35}$ and $F=\Q(s)$. Character values of~$G$ require a cyclotomic extension containing $i$ and a primitive sixth root of unity. Writing $L=\Q(\zeta_{12})$ (so $[L:\Q]=4$) and $K=F(\zeta_{12})$, one has
+\[
+[K:\Q]=8,\qquad [K:F]=4.
+\]
+Characters may be evaluated over~$\C$; $F$ alone is not a splitting field for the character table of~$G$.
+\end{definition}
+
+\begin{definition}[Shifted transfer operator]\label{def:v17-H}
+Given coefficients $a_c\in F$, the shifted layer operator is the group-ring convolution
+\[
+H\;=\;\sum_{c\in G}a_c\,R_{cy}\;\in\;\mathrm{End}_F\bigl(F[G]\bigr),
+\]
+where $R_g$ denotes left translation by~$g$ on the free $F$-module $F[G]\cong F^{48}$. Scalar extension yields operators on $K[G]$ or $\C[G]$ when character evaluations are required. In the spatial $j$-partition one writes
+\[
+H=\begin{pmatrix}H_{00}&H_{01}\\ H_{10}&H_{11}\end{pmatrix}
+\]
+with $24\times24$ blocks. The cross-block entries obey the coordinate rule
+\begin{equation}\label{eq:v17-H01-entry}
+(H_{01})_{(k_1,\ell_1),(k_2,\ell_2)}
+\;=\;
+a_{\,x\, y^{k_1-k_2+3}\, z^{\ell_1-\ell_2}}.
+\end{equation}
+\end{definition}
+
+\subsection{The exact coefficient table}
+\begin{definition}[Original A/B/C/D table]\label{def:v17-table}
+Let $s=\sqrt{35}$. The verification record assigns orbit weights by
+\[
+a_c=
+\begin{cases}
+0,& c\in O_2=\{(0,3,0)\}= \{y^3\},\\
+1+s,& c\in O_1\cup O_3\cup O_4,\\
+6-s,& c\in O_5\cup O_6\cup O_7\cup O_8,\\
+2+s,& c\in O_9\cup\cdots\cup O_{18},\\
+3+s,& c\in O_{19}\cup\cdots\cup O_{28}.
+\end{cases}
+\]
+In particular $a_1=a_{(0,0,0)}=2+s\neq0$ and $a_{y^3}=0$. The singleton $O_6=\{xy^3\}=\{(1,3,0)\}$ carries original weight $6-s$. The \emph{one} tuned variant used below replaces only
+\[
+a_{xy^3}\;:\;6-s\;\longrightarrow\;7-s,
+\]
+keeping the other forty-seven coefficients fixed. (The orbit scalar $6-s$ must not be confused with the boundary matrix~$B$.)
+\end{definition}
+
+\begin{remark}[Orbit memberships]\label{rem:v17-orbits}
+The twenty-eight orbits, as recorded in \texttt{/tmp/q.py}, are listed two per row:
+\begin{center}
+{\footnotesize
+\begin{tabular}{@{}p{0.46\linewidth}@{\hspace{0.04\linewidth}}p{0.46\linewidth}@{}}
+$O_1=\{(0,1,0)\}$ & $O_2=\{(0,3,0)\}$ \\
+$O_3=\{(0,1,3)\}$ & $O_4=\{(0,3,3)\}$ \\
+$O_5=\{(1,1,0)\}$ & $O_6=\{(1,3,0)\}$ \\
+$O_7=\{(1,1,3)\}$ & $O_8=\{(1,3,3)\}$ \\
+$O_9=\{(0,0,0),(0,2,0)\}$ & $O_{10}=\{(1,0,0),(1,2,0)\}$ \\
+$O_{11}=\{(0,0,3),(0,2,3)\}$ & $O_{12}=\{(1,0,3),(1,2,3)\}$ \\
+$O_{13}=\{(0,0,1),(0,2,5)\}$ & $O_{14}=\{(0,0,5),(0,2,1)\}$ \\
+$O_{15}=\{(1,0,1),(1,2,5)\}$ & $O_{16}=\{(1,0,5),(1,2,1)\}$ \\
+$O_{17}=\{(0,0,2),(0,2,4)\}$ & $O_{18}=\{(0,0,4),(0,2,2)\}$ \\
+$O_{19}=\{(1,0,2),(1,2,4)\}$ & $O_{20}=\{(1,0,4),(1,2,2)\}$ \\
+$O_{21}=\{(0,1,1),(0,1,5)\}$ & $O_{22}=\{(0,3,1),(0,3,5)\}$ \\
+$O_{23}=\{(1,1,1),(1,1,5)\}$ & $O_{24}=\{(1,3,1),(1,3,5)\}$ \\
+$O_{25}=\{(0,1,2),(0,1,4)\}$ & $O_{26}=\{(0,3,2),(0,3,4)\}$ \\
+$O_{27}=\{(1,1,2),(1,1,4)\}$ & $O_{28}=\{(1,3,2),(1,3,4)\}$
+\end{tabular}}
+\end{center}
+Every orbit is $\pi$-stable. Provenance: verification record, not an independent Owner-intake reprint.
+\end{remark}
+
+\begin{center}
+{\small
+\begin{tabular}{@{}ll@{}}
+\toprule
+Slice & Weights along $\ell=0,\dots,5$ \\
+\midrule
+$j=0$, $k=0$ & $2+s,\;2+s,\;2+s,\;2+s,\;2+s,\;2+s$ \\
+$j=0$, $k=1$ & $1+s,\;3+s,\;3+s,\;1+s,\;3+s,\;3+s$ \\
+$j=0$, $k=2$ & $2+s,\;2+s,\;2+s,\;2+s,\;2+s,\;2+s$ \\
+$j=0$, $k=3$ & $0,\;3+s,\;3+s,\;1+s,\;3+s,\;3+s$ \\
+$j=1$, $k=0$ & $2+s,\;2+s,\;3+s,\;2+s,\;3+s,\;2+s$ \\
+$j=1$, $k=1$ & $6-s,\;3+s,\;3+s,\;6-s,\;3+s,\;3+s$ \\
+$j=1$, $k=2$ & $2+s,\;2+s,\;3+s,\;2+s,\;3+s,\;2+s$ \\
+$j=1$, $k=3$ & $6-s,\;3+s,\;3+s,\;6-s,\;3+s,\;3+s$ \\
+\bottomrule
+\end{tabular}}
+\end{center}
+\noindent The $j=1$ block supplies the twenty-four coefficients of~$H_{01}$. In the tuned variant only the entry $(j,k,\ell)=(1,3,0)$ changes from $6-s$ to $7-s$.
+
+\subsection{Selectors, cascade, and three matrices}
+\begin{definition}[Spatial selectors and translation]\label{def:v17-selectors}
+Set $S_0=[I_{24}\;0]$ and $S_M=[0\;I_{24}]$. Let $t=(1,2,3)$ and $\mathcal T=R_t$, so that in the $j$-partition
+\[
+\mathcal T=\begin{pmatrix}0&\Theta_A\\ \Theta_B&0\end{pmatrix}
+\]
+with permutation blocks $\Theta_A,\Theta_B\in\mathrm{GL}_{24}(\Z)$.
+\end{definition}
+
+\begin{definition}[Cascade versus endpoint constraints]\label{def:v17-cascade}
+The sequential cascade $D$ on $\bigoplus_{i=0}^{M}L_i$ is defined by $(Dx)_i=x_i-T_i x_{i-1}$. It is surjective with $\ker D\cong L_0$, and on $\ker D$ one has $x_M=Px_0$ with $P=T_M\cdots T_1$. Endpoint constraints are separate:
+\begin{itemize}
+\item \emph{coupled}: $C_0x_0+C_M x_M=0$, equivalently $(C_0+C_MP)x_0=0$;
+\item \emph{independent stacked}: $C_0=\begin{pmatrix}S_0\\0\end{pmatrix}$, $C_M=\begin{pmatrix}0\\S_M\end{pmatrix}$, giving
+\[
+B=\begin{pmatrix}S_0\\ S_M P\end{pmatrix},\qquad \ker B=\ker S_0\cap\ker(S_MP).
+\]
+\end{itemize}
+Exact selectors are part of the data; they are not determined by the primes alone.
+\end{definition}
+
+\begin{theorem}[Bare stacked matrix of rank~$24$]\label{thm:v17-bare}
+With the complementary selectors of Definition~\ref{def:v17-selectors} and with no internal conductance factor,
+\[
+B_{\mathrm{bare}}
+=\begin{pmatrix}S_0\\ S_M R_t\end{pmatrix}
+=\begin{pmatrix}I_{24}&0\\ \Theta_B&0\end{pmatrix}
+\]
+has $\operatorname{rank} B_{\mathrm{bare}}=24$. In particular $B_{\mathrm{bare}}$ is \emph{not} the original-table system matrix~$M$ below.
+\end{theorem}
+\begin{proof}
+$S_MR_t=[\Theta_B\;0]$, so the second block row contributes only the first twenty-four columns. The top block supplies $I_{24}$, hence rank~$24$ (Addendum~Q; path \path{..._ADDENDUM_Q_1919_2026-11-05.md}).
+\end{proof}
+\catA{PROVED. Bare selector stack rank~$24$; distinct from~$M$.}
+
+\begin{theorem}[Original-table matrix~$M$ of exact rank~$36$]\label{thm:v17-M36}
+Let $H$ be built from the original table of Definition~\ref{def:v17-table}. Set
+\[
+M=\begin{pmatrix}S_0\\ S_M R_t H\end{pmatrix}
+=\begin{pmatrix}I_{24}&0\\ \Theta_B H_{00}& \Theta_B H_{01}\end{pmatrix}.
+\]
+Exact block row reduction yields $\operatorname{rank} M=24+\operatorname{rank} H_{01}$. For the original table one has $\operatorname{rank} H_{01}=12$ (twelve odd-$q$ eigenvalues vanish), hence
+\[
+\operatorname{rank} M=36,\qquad \dim\ker M=12.
+\]
+Moreover $\ker M=\{0\}\oplus\ker H_{01}$ in the $j$-partition. The original~$M$ is not called ``bare''.
+\end{theorem}
+\begin{proof}
+Addendum~S: $S_MR_tH=[\Theta_B H_{00}\;\Theta_B H_{01}]$; $\Theta_B$ invertible implies the rank identity. The $H_{01}$ spectrum (value: multiplicity) is $0{:}12$, $76+16s{:}1$, $4{:}1$, $-4{:}1$, $2{:}2$, $-2{:}2$, $10-8s{:}2$, $14-8s{:}2$, $20-8s{:}1$, summing to~$24$, with the twelve zeros precisely at odd~$q$. Each of the twelve nonzero values is nonzero, by irrationality of~$s$ over~$\Q$ (when a nonzero multiple of~$s$ appears) or by being a nonzero integer; invertibility statements for the blocks are over~$F$. Thus $\operatorname{rank} H_{01}=12$ and $\operatorname{rank} M=36$ exactly for this table (Addendum~T).
+\end{proof}
+\catA{PROVED for the exact A/B/C/D table. Not immutable for all positive weights.}
+
+\begin{theorem}[Singleton tuning restores full rank]\label{thm:v17-M48}
+Tune only $a_{xy^3}$ from $6-s$ to $7-s$. Then $H'=H+R_x$, both cross-blocks gain $+I_{24}$, and
+\[
+M'=\begin{pmatrix}S_0\\ S_M R_t H'\end{pmatrix}
+=\begin{pmatrix}I_{24}&0\\ \Theta_B H_{00}& \Theta_B(H_{01}+I_{24})\end{pmatrix}.
+\]
+The character eigenvalues of~$H'$ shift by the non-uniform rule $\lambda'_\chi=\lambda_\chi+(-1)^p$. The exact spectrum of~$H'$ comprises fourteen distinct values of total multiplicity~$48$:
+\begin{center}
+{\small
+\begin{tabular}{@{}cc|cc@{}}
+$\lambda'$ & mult. & $\lambda'$ & mult.\\
+\hline
+$128+39s$ & $1$ & $2-s$ & $3$\\
+$2-9s$ & $2$ & $4-s$ & $1$\\
+$6-9s$ & $2$ & $-26+7s$ & $1$\\
+$24-9s$ & $1$ & $-24+7s$ & $2$\\
+$-6-s$ & $1$ & $-20+7s$ & $2$\\
+$-4-s$ & $3$ & $-18+7s$ & $1$\\
+$-2-s$ & $14$ & $-s$ & $14$\\
+\end{tabular}}
+\end{center}
+Each value is of the form $u+vs$ with $u,v\in\Q$ and $v\neq0$, hence is nonzero (by irrationality of~$s$ over~$\Q$), so $H'$ is invertible over~$F$. Independently, $H_{01}'=H_{01}+I_{24}$ has nine distinct eigenvalues of total multiplicity~$24$:
+\begin{center}
+{\small
+\begin{tabular}{@{}cc@{}}
+$\mu'$ & mult.\\
+\hline
+$1$ & $12$\\
+$77+16s$ & $1$\\
+$5$ & $1$\\
+$-3$ & $1$\\
+$3$ & $2$\\
+$-1$ & $2$\\
+$11-8s$ & $2$\\
+$15-8s$ & $2$\\
+$21-8s$ & $1$\\
+\end{tabular}}
+\end{center}
+None vanishes, so $\operatorname{rank} H_{01}'=24$ and $\operatorname{rank} M'=48$, $\ker M'=\{0\}$. Invertibility of the whole~$H'$ is independent of, and not necessary for, the boundary criterion $\operatorname{rank} H_{01}'=24$. Full column rank yields a unique \emph{vector} solution of $M'x=b$ for every $b\in F^{48}$; it does not establish unique combinatorial paths, nor any capacity identity, nor an automatic orthogonalization of the physical model.
+\end{theorem}
+\begin{proof}
+Addenda~T and~V: $(xy^3)\cdot y=x$ gives $H'=H+R_x$ and $H_{01}'=H_{01}+I_{24}$. The listed spectra are the exact Addendum~V enumerations (multiplicities sum to $48$ and $24$). Irrationality of~$s$ over~$\Q$ excludes zeros of every eigenvalue with nonzero $s$-coefficient; rational eigenvalues in the $H_{01}'$ list are nonzero integers. The block reduction of Theorem~\ref{thm:v17-M36} applied to~$H'$ yields the rank claim. The path/capacity caveats are scope statements (Addenda~S--T, U, X).
+\end{proof}
+\catA{PROVED as recorded: $\operatorname{rank} M'=48$; vector uniqueness only. Capacity remains OPEN (no closure claim).}
+
+\subsection{Path mass, capacity, and related warnings}
+\begin{definition}[Path mass and signed weight]\label{def:v17-NW}
+Write $N=\prod_i\|h_i\|_1$ for the uncollected absolute path mass. Let $W$ denote a signed path weight.
+\begin{itemize}
+\item If $W$ is a \emph{single coefficient} of the collected product $h_M\cdots h_1$, then
+\[
+|W|\;\le\;\|h_M\cdots h_1\|_1\;\le\; N.
+\]
+\item If $W$ is instead a signed sum over an arbitrary specified subset of paths, then in general only
+\[
+|W|\;\le\; N
+\]
+is asserted under the standing hypothesis that each contributing term is bounded in absolute value by the corresponding unsigned path mass (triangle inequality); the intermediate comparison to $\|h_M\cdots h_1\|_1$ is \emph{not} claimed for arbitrary restrictions.
+\end{itemize}
+Equality cases in the single-coefficient chain require a common-phase condition together with vanishing of omitted terms. A spectral bound $|W|\le\prod_i\mathrm{spr}(\rho(h_i))$ holds for specified linear functionals (single coefficients via Fourier inversion), not for arbitrary path restrictions. The identity $N=|W|$ is not a general theorem. Here $N$ and $W$ are \emph{not} a node set and a support set.
+\end{definition}
+
+\begin{remark}[Capacity remains OPEN]\label{rem:v17-capacity-open}
+Neither $\ker M'=\{0\}$ nor invertibility of~$H'$ supplies a written implication that closes the capacity defect $\mathrm{Defect}=N-|W|$, nor an identification of~$N$ and~$W$ with the regular representation beyond the inequalities of Definition~\ref{def:v17-NW}. This is a missing implication on the present record, not a countertheorem.
+\end{remark}
+\catB{OPEN. Full rank does not by itself close capacity; no PROVED status.}
+
+\begin{proposition}[Compression of a rank-$36$ operator]\label{prop:v17-compression}
+Rank~$36$ alone does not guarantee that an orthogonal compression $PBP^*$ is invertible. A correct reduced isomorphism uses orthonormal bases $U$ of $\operatorname{im} B$ and $V$ of $(\ker B)^\perp$, yielding an invertible block $U^*BV$.
+\end{proposition}
+\begin{proof}
+Addendum~X: the nilpotent example embedded as $I_{35}\oplus N\oplus 0_{11}$ has rank~$36$ with a singular compression; the $U,V$ construction is the standard isomorphism theorem.
+\end{proof}
+\catA{PROVED as a linear-algebra warning; specific compressions may still be invertible.}
+
+\begin{proposition}[Inert-prime filter and local isometry]\label{prop:v17-inert}
+If a finite inert-prime filter for discriminant~$140$ is used, it must be of the form
+\[
+\mathcal K=\{p<X:\; p\nmid 140,\; p\text{ prime},\; \bigl(\tfrac{140}{p}\bigr)=-1\}
+\]
+for an explicit cutoff~$X$. The prime~$3$ is inert in~$F$, giving an unramified quadratic local extension; $4$ generates $1+3\Z_3$. Membership $A\in\mathrm{GL}_n(\mathcal O_{F_3})$ implies a supremum-norm isometry; a unit determinant alone does not. A complex basis does not automatically define an $F_3$-lattice. Writing $\mathbb C_3$ for a completion of an algebraic closure of~$\Q_3$, one has that the multiplicative group of absolute values $|\mathbb C_3^\times|$ equals $3^\Q$ (dense in the positive reals), whereas $|\Q_3^\times|=3^\Z$ is discrete. Entrywise subtraction of a constant from a group-circulant is $C-\kappa J$ (all-ones), shifting only the trivial character, and is not the diagonal shift $C-\kappa I$.
+\end{proposition}
+\begin{proof}
+Addenda~J, W, X as recorded (filter and isometry warnings; absolute-value groups of $\Q_3$ and $\mathbb C_3$). No cubes claim is made. Modular$\to$Iwasawa bridges remain UNDEFINED/CONDITIONAL on those records.
+\end{proof}
+\catA{PROVED/recorded filter, isometry, and absolute-value warnings; modular$\to$Iwasawa bridges remain UNDEFINED/CONDITIONAL.}
+
+\begin{remark}[Graph Poisson versus capacity]\label{rem:v17-poisson}
+Balance and energy identities for the graph Laplacian with the conductance convention of the Owner transfer notes remain available as PROVED local solver facts (Addenda~C--E chain). A balanced-source counterexample does not, by itself, refute the original capacity formulation; capacity stays OPEN.
+\end{remark}
+
+\begin{remark}[Geometry]\label{rem:v17-geometry}
+Five-dimensional / four-dimensional geometric readings tied to the shared spine remain CONDITIONAL where previously so recorded. Known counterexamples in the Non-Local lane are retained; no forced closure is asserted here.
+\end{remark}

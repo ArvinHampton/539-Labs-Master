@@ -1,0 +1,1334 @@
+                                                         FORMAL FOURIER JACOBI EXPANSIONS
+                                                        AND SPECIAL CYCLES OF CODIMENSION 2
+
+                                                                                 MARTIN RAUM
+
+                                                 Abstract. We prove that formal Fourier Jacobi expansions of degree 2 are Siegel
+                                                 modular forms. As a corollary, we deduce modularity of the generating function of
+                                                 special cycles of codimension 2, which were defined by Kudla. A second applica-
+                                                 tion is the proof of termination of an algorithm to compute Fourier expansions of
+arXiv:1302.0880v3 [math.NT] 22 Sep 2013
+
+
+
+
+                                                 arbitrary Siegel modular forms of degree 2. Combining both results enables us to
+                                                 determine relations of special cycles in the second Chow group.
+
+
+
+                                                             1. Introduction and statement of results
+                                             There is a close interplay between Siegel modular forms and Jacobi forms, which,
+                                          for example, was employed to prove the Saito-Kurokawa conjecture [And79, Maa79a,
+                                          Maa79b, Maa79c, Zag81]. This connection is founded on the Fourier Jacobi expansion
+                                          of Siegel modular forms, which can be turned into a formal notion. Formal Fourier
+                                          Jacobi expansions of degree 2 and weight k ∈ Z, in the simplest case, are formal series
+                                          with respect to q ′ of the form
+                                                                                X
+                                                                                     φm q ′ m
+                                                                                  0≤m∈Z
+
+                                          such that:
+                                            (i) The φm are Jacobi forms of weight k and index m (cf. [EZ85] and Section 4 for
+                                                a definition).
+                                           (ii) The Fourier coefficients of φm satisfy c(φm ; n, r) = c(φn ; m, r).
+                                          A more precise definition will be given later.
+                                             Ibukiyama, Poor, and Yuen studied such expansions in [IPY12], and at the end of
+                                          the introduction they asked the question whether every Fourier Jacobi expansion is
+                                          convergent. Theorem 1.5 answers this question in the affirmative.
+                                          Theorem 1.1. Every formal Fourier Jacobi expansions of degree 2 and of any weight
+                                          converges, and hence is the Fourier Jacobi expansion of a Siegel modular form.
+                                          A more detailed statement is presented in Theorem 1.5.
+                                             The significance of formal Fourier Jacobi expansions stems from their relation to
+                                          families of certain algebraic cycles on Shimura varieties of orthogonal type. The study
+                                          of cycles, that is, subvarieties of varieties, is a prominent theme in algebraic geome-
+                                          try, pursued, e.g., in [Lec86, Fab90, Zha97]. Codimension r cycles on a variety X are
+                                          classified up to rational equivalence by the rth Chow group CHr (X)C , first studied
+                                            2010 Mathematics Subject Classification. Primary 11G18 ; Secondary 11F46, 11F30, 11Y40.
+                                            Key words and phrases. special cycles of codimension 2, formal Fourier Jacobi expansions, com-
+                                          puting Siegel modular forms.
+                                            The author is supported by the ETH Zurich Postdoctoral Fellowship Program and by the Marie
+                                          Curie Actions for People COFUND Program.
+                                                                                          1
+2                                      MARTIN RAUM
+
+in [Cho56]. In most cases, little is now about it. Using definite subspaces in indef-
+inite quadratic spaces, Kudla produced cycles of arbitrary codimension on Shimura
+varieties of orthogonal type, which he called “special cycles” [Kud97]. Special cycles
+generalize interesting geometric configurations. For examples, CM points on modular
+curves and Hirzebruch’s and Zagier’s curves TN on Hilbert modular surfaces [HZ76]
+are included in this notion. As special cycles are related explicitly to geometry of
+lattices, one hopes, they are easier to study than cycles that do not come with this
+additional information. Kudla conjectured the following.
+Conjecture 1.2. The generating function of special cycles of codimension r is a
+Siegel modular form of degree r.
+Theorem 1.3 (Borcherds [Bor99, Bor00]). Conjecture 1.2 is true for r = 1.
+    As our main application, we establish a further case.
+Theorem 1.4. Conjecture 1.2 is true for r = 2.
+A more specific description of this modularity result is contained in Theorem 1.6.
+   Our affirmation of Kudla’s prediction in the case r = 2 yields rich geometric in-
+formation. It allows us to compute relations that were inaccessible before. Compare
+this with results obtain in the 80’s by Kudla and Millson. They examined modularity
+of generating functions of intersection numbers of special cycles, which, they found,
+arise from (additive) theta lifts [KM86, KM87, KM90]. This way, they discovered
+relations of such intersection numbers.
+1.1. Siegel modular forms. We now discuss the theory of formal Fourier Jacobi
+series in greater detail. Afterward, we turn our attention to implications for geometry.
+    In order to explain Theorem 1.5, which implies Theorem 1.6 and hence Theorem 1.4,
+we need to make several definitions. For the time being, we restrict ourselves to the
+case of integral weights. Fix k, l ∈ Z, and let ρ be a finite dimensional, unitary rep-
+resentation of the symplectic group Sp2 (Z) ⊂ Mat4 (Z) with representation space Vρ .
+Denote the lth symmetric power of the canonical representation of GL2 (C) on C2 by
+σl , and write Vl for its representation space. A (doubly vector valued) Siegel modular
+forms is a holomorphic function Φ from the Siegel upper half space H(2) to Vl ⊗ Vρ
+that is invariant under the modular transformations
+                                                                                     
+  (det k ⊗ σl )−1 (CZ + D) ρ(γ)−1 Φ (AZ + B)(CZ + D)−1           γ = ( CA D
+                                                                          B ) ∈ Sp (Z) .
+                                                                                  2
+
+Every Siegel modular form Φ admits an absolutely convergent Fourier Jacobi expan-
+sion
+                               X
+                                     φm (τ, z) q ′ m ,
+                                    0≤m∈Q
+
+where φm ∈ Jk,m (σl ⊗ ρ) is a (doubly vector valued) Jacobi form (cf. [EZ85, Sko08,
+IK11] and Section 4). Jacobi forms have likewise Fourier expansions
+                                      X
+                       φm (τ, z) =          c(φm ; n, r) q n ζ r .
+                                      0≤n∈Q, r∈Q
+
+By modularity of Φ, their Fourier coefficients satisfy
+(1.1)            c(φm ; n, r) = (det k ⊗ σl )−1 (S) ρ−1 (rot(S)) c(φn ; m, r)
+                         FORMAL FOURIER JACOBI EXPANSIONS                                3
+
+for all 0 ≤ m, n ∈ Q and all r ∈ Q, where
+                S = ( 01 10 ) ∈ GL2 (Z) and rot(S) = ( S S ) ∈ Sp2 (Z).
+Our main theorem can be considered as a converse.
+Theorem 1.5. Let
+                                    X
+                                           φm (τ, z) q ′ m
+                                   0≤m∈Q
+
+be a formal expansion in q ′ with coefficients in Jk,m (σl ⊗ ρ), where k ∈ 12 Z and l ∈ Z.
+If the Fourier coefficients of all φm satisfy (1.1) for all 0 ≤ m, n ∈ Q and all r ∈ Q,
+then this series converges absolutely and defines a Siegel modular form.
+   The proof of Theorem 1.5, which is an unrefined version of Theorem 5.6, relies on
+comparing dimensions and on a regularity result for meromorphic functions in two
+variables. In the case of even weight k, we bound the asymptotic dimension of spaces
+of formal Fourier Jacobi expansions as k → ∞. It equals the asymptotic dimension
+of corresponding spaces of Siegel modular forms. In the proof of Theorem 5.6, we
+fix a formal Fourier Jacobi expansion and multiply it with a space of classical Siegel
+modular forms of sufficiently large weight. By a dimension argument, we find that the
+resulting space of formal Fourier Jacobi expansions (of then higher weight) contains
+at least one Siegel modular form. From this, we are able to deduce that the formal
+Fourier Jacobi expansions which we started with represents a meromorphic Siegel
+modular form. We then apply our regularity result (Theorem 6.1) to conclude that it
+is a holomorphic Siegel modular form. For k ∈ 21 Z, we obtain an even weight Siegel
+modular form by multiplication (or tensoring) with another suitable Siegel modular
+form. This allows us to reduce the general case to the case of even weights.
+   The special case of l = 0 and trivial ρ was considered in [IPY12]. Ibukiyama,
+Poor, and Yuen showed straightforwardly that dimensions of the space of formal
+Fourier Jacobi expansions and the space of Siegel modular forms are equal. Their
+technique, however, relies on very detailed knowledge of dimension formulas, which
+is not available in the more general setting.
+
+1.2. Special cycles. Zhang proved that the generating functions of special cycles,
+as presented later, are formal Fourier Jacobi expansions [Zha09]. He pulled back
+along embeddings of Shimura curves and employed Borcherds’s previous result. For
+codimension 2 cycles, Theorem 1.5 implies modularity. In this manner, our approach
+shows that Kudla’s modularity conjecture can be examined by combining a detailed
+analysis of the codimension 1 case – already pursued by Borcherds – and rigidity
+results for formal expansions of Siegel modular forms.
+  We give details on special cycles and their generating functions. Let L be a lattice
+of signature (n, 2); Write L# for its dual. We consider Shirmura varieties XΓ of
+orthogonal type associated to subgroups Γ of O(L) that act trivially on disc L =
+L# / L. By definition, we have
+                                 XΓ = Γ\Gr− (L ⊗ R),
+where Gr− denotes the Grassmannian of maximal negative definite subspaces. Note
+that for our choice of L, XΓ carries the structure of a complex, quasi projective
+variety.
+4                                     MARTIN RAUM
+
+   Given a positive semi-definite, symmetric “moment matrix” 0 ≤ T ∈ MatT          r (Q)
+and µ ∈ discr L = (disc L)r , there is a special cycle {Z(T, µ)} ∈ CH• (XΓ )C whose
+codimension equals the rank of T , rk(T ). In Section 7, we give a precise definition.
+Write ω ∨ for the anti-canonical bundle on XΓ , and denote the canonical basis elements
+of C[discr L] by eµ (µ ∈ discr L). We prove the following:
+Theorem 1.6. Let Γ ⊂ O(L) be a subgroup that fixes disc L. Then
+              X                                                  
+                     {Z(T, µ)} · {ω ∨}2−rk(T ) exp 2πi trace(T Z) eµ
+                µ∈disc2 L
+              0≤T ∈MatT2 (Q)
+
+is a vector valued Siegel modular form with coefficients in CH2 (XΓ )C ⊗ C[disc2 L],
+which has weight 1 + n2 .
+As explained in Section 1.1, there are two notions of vector valued Siegel modular
+forms. In Theorem 1.6 we refer to the one that comes from representations of Sp2 (Z)
+(or its double cover). Note also that XΓ is not compact. Its Chow ring can be viewed
+as the quotient CH• (YΓ)C / CH• (∂YΓ ), where YΓ denotes the toroidal compactification
+of XΓ and ∂YΓ are the boundary components.
+   As an outcome of Theorem 1.6, we are able to prove the following statement, which
+was shown by Zhang using adhoc methods [Zha09].
+Corollary 1.7. The span of special cycles {Z(T, µ)} in CH2 (XΓ )C is finite dimen-
+sional.
+1.3. Computing relations of special cycles. Let ρL,2 denote the type of the
+generating
+         function in Theorem 1.6. 2 Its representation space is the group algebra
+      2
+C disc L . Denote by Φµ (µ ∈ disc L) the components of a vector valued Siegel
+modular form Φ of type ρL,2 , and write c(Φµ ; T ) for its T th Fourier coefficient.
+                                                   2
+Corollary 1.8. Suppose that b : MatT 2 (Q) × disc L → C is a function with finite
+support such that
+                            X
+                                b(T, µ) c(Φµ ; T ) = 0
+                                T,µ
+
+for every Siegel modular form of weight 1 + n2 and type ρL,2 . Then we have
+                       X
+                           b(T, µ) {Z(T, µ)} = 0 ∈ CH2 (XΓ )C .
+                          T,µ
+
+   Explicit knowledge about Fourier coefficients of Siegel modular forms thus yields
+results about relations in CH2 (XΓ )C . This observation motivates our considerations
+in Section 8. However, we warn the reader that relations computed in this way do
+not necessarily exhaust all relations that hold for the {Z(T, µ)}, even thought this
+is conceivable, if L satisfies some mild hypotheses. The computational investigation
+of relations for r = 1, was resolved by the author in [Rau12], building on work of
+Bruinier. According to [Bru12], if r = 1 and L splits off a hyperbolic plane and a
+unimodular hyperbolic plane, all relations that hold for the {Z(T, µ)} (0 ≤ T ∈ Q,
+µ ∈ disc L) can be described by the analog of Corollary 1.8.
+   We prove correctness and termination of an algorithm to compute Fourier expan-
+sions of Siegel modular forms of degree 2. It is very much inspired, and in a sense
+that we make clear in a moment, generalizes ideas conveyed in [Poo11, IPY12].
+                        FORMAL FOURIER JACOBI EXPANSIONS                                5
+
+Theorem 1.9. There is an explicit, terminating algorithm that computes Fourier
+expansions of Siegel modular forms of arbitrary weight and type.
+  The proof of this finding is very similar to the proof of Theorem 1.5. We employ
+variants for truncated Fourier expansions of lemmas that entered the latter proof.
+  Combining the above and Corollary 1.8, we obtain
+Corollary 1.10. There is an explicit, terminating algorithm that computes infinitely
+many relations of special cycles {Z(T, µ)} ∈ CH2 (XΓ )C .
+   In [Poo11, IPY12], Ibukiyama, Poor, and Yuen – following a suggestion by Armand
+Brumer – hinted an algorithm to compute paramodular forms, which is very similar
+to ours. But they were not able to prove that theirs terminates, except in four
+cases. Since paramodular forms are Siegel modular forms for congruence subgroups
+of Hecke type, our algorithm also applies to their problem after inducing the trivial
+representation of this subgroup to Sp2 (Z). In this sense, we resolve the question raised
+at the end of the introduction of [IPY12], asking whether “the growth condition is
+superfluous”. In practice, however, our algorithm will most certainly be slower than
+Poor and Yuen’s, and proving that it terminates without employing induction of
+representations would be useful.
+
+1.4. Final remarks. In Theorem 1.5, we have also treated the case of vector valued
+weight l 6= 0, which we have not yet made use of. We have included it into our
+considerations, because of work by Bergström, Farber, and van der Geer [FvdG04a,
+FvdG04b, BFvdG08]. They described a method that computes quiet efficiently Hecke
+eigenvalues of Siegel modular forms for all k and l if ρ is trivial. These computation
+rely on extensive precomputations, that would have to be redone if one wanted to
+study Siegel modular forms for congruence subgroups other than those that they
+examined. Our method then provides an alternative path to follow, which even yields
+further information.
+  The paper is organized as follows. In Section 2, we briefly fix notation. Section 3
+and Section 4 contain general discussions of Siegel modular forms and Jacobi forms.
+The proof of Theorem 1.5 is contained in Section 5. Our main application is then
+discussed in Section 7. We consider computations of Fourier expansion in the final
+Section 8.
+  Acknowledgment: To be entered after the referee’s report is received.
+
+                                     2. Notation
+   We write In for the n × n identity matrix. The zero matrix of size n × m is denoted
+by 0(n,m) . If m = 1, we suppress the corresponding superscript. The module of
+n × n matrices with entries in a ring R is denoted by Matn (R). We write · T for
+transposition of matrices. The space of symmetric matrices of size n is denoted by
+MatT n (R).
+   The group of affine transformations on Cn is denoted by Aff n (C) ∼= GLn (C) ⋉ Cn .
+It can be embedded into GLn+1 (C) via
+                                                   
+                                             γ    µ
+(2.1)                            (γ, µ) 7→ (1,n)      .
+                                           0      1
+6                                           MARTIN RAUM
+
+Restrictions of representations of GL2 (C) to Aff 1 (C) that appear in this paper are
+taken with respect to this embedding. When referring to representations, we always
+mean finite dimensional representations. The scalar representation of GLn (C) that
+lets g act as det(g)k is denoted by det k . The lth symmetric power of the canonical
+representation of GLn (C) (n ≥ 2) on Cn is denoted by σl .
+   Both GLn (C) and Aff n (C) have connected double covers GL               f n (C). We
+                                                                f n (C) and Aff
+                                                 1
+think of elements in GLn (C) as pairs (A, det(A) 2 ), where the second component is one
+choice of root. The one dimensional representation of GL f n (C) which lets (A, det(A) 12 )
+           1                       1
+                                               f n (C) ∼
+act as det 2 (A) is denoted by det 2 . We have Aff         f n (C) ⋉ Cn , and we will use
+                                                        = GL
+this isomorphism without further mentioning it. The above embedding of Aff n (C)
+into GLn+1 (C) extends to an embedding of Aff  f n (C) into GL
+                                                             f n+1 (C).
+   Representations of discrete groups are assumed to have finite index kernels. This
+                                             f n (Z) and Sp
+applied in particular to representations of GL             f g (Z).
+
+                                       3. Siegel modular forms
+                (g,g)           
+                 0         −Ig
+    Let Jg =         Ig   0(g,g)
+                                  . The full Siegel modular group of degree g is
+                                           
+                                 Spg (Z) = γ ∈ Mat2g (Z) : γ T Jg γ = Jg
+with typical elements γ = ( CA D
+                               B ) for A, B, C, D ∈ Mat (Z). One kind of elements
+                                                       g
+that we use frequently is
+                                                   
+                                rot(U) = U (U −1 )T
+
+for U ∈ GLg (Z). The connected double cover Sp   f g (Z) of Spg (Z) is the non trivial
+central extension of Spg (C) by the cyclic group C2 .
+   The full Siegel modular group acts on the Siegel upper half space of degree g
+                             
+                      H(g) = Z = X + iY ∈ Matg (C) : Y > 0
+via
+                                    γZ = (AZ + B)(CZ + D)−1 .
+We obtain an action of Spf g (Z) on H(g) by composing with the projection Sp      f g (Z) ։
+Spg (Z). In this paper, we will focus on the case g ≤ 2, and so we fix special notation
+in both cases. We usually write τ for elements of H(1) , and ( τz τz′ ) for elements of H(2) .
+Further, we set q = exp(2πi τ ), ζ = exp(2πi z), and q ′ = exp(2πi τ ′ ).
+   We can use the upper half space to find a concrete description of elements in Sp  f g (Z).
+             f g (Z) can and will be thought of as pairs
+Elements of Sp
+                                                          1 
+                           γ, (CZ + D), det(CZ + D) 2 .
+The first component is an element of Spg (Z), and the second component is a holo-
+morphic map H(g) → GL  f g (C), that we typically denote by ω.
+   Let σ be a representation of GLf g (C), the double cover of GLg (C), with representa-
+                                              f g (Z) with representation space Vρ . The
+tion space Vσ . Let ρ be a representation of Sp
+Siegel slash action of weight σ and type ρ is defined as
+                                   
+                       Φ σ,ρ (γ, ω) (Z) = σ(ω(Z))−1ρ(γ)−1 Φ(γZ)
+                        FORMAL FOURIER JACOBI EXPANSIONS                               7
+
+                                            f g (Z).
+for all Φ : H(g) → Vσ ⊗ Vρ and all (γ, ω) ∈ Sp
+
+Definition 3.1. Let σ be a representation of GL   f g (C) with representation space Vσ ,
+                                  f g (Z) with representation space Vρ . A function Φ :
+and let ρ be a representation of Sp
+  (g)
+H → Vσ ⊗Vρ is called a Siegel modular form of weight σ and type ρ if Φ σ,ρ (γ, ω) = Φ
+                 f g (Z) and, in addition, if g = 1, Φ has Fourier expansion
+for all (γ, ω) ∈ Sp
+                               X
+                      Φ(τ ) =      c(Φ; n) q n , c(Φ; n) ∈ Vσ ⊗ Vρ .
+                               0≤n∈Q
+
+                                                                       f g (Z), we call
+   If Φ is meromorphic and satisfies Φ σ,ρ (γ, ω) = Φ for all (γ, ω) ∈ Sp
+it a meromorphic Siegel modular form.
+We write M(g) (σ, ρ) for the space of Siegel modular forms of weight σ and type ρ.
+                                   f g (C) either factor through GLg (C), or they are
+   Irreducible representations of GL
+                 1
+of the from det 2 ⊗ σ , where σ factors through GLg (C). The meaning of det k with
+                       ′        ′
+
+k ∈ 21 Z thus becomes clear. The space of Siegel modular forms of degree 1 (i.e.,
+                                                                            (1)
+elliptic modular forms) of weight detk , k ∈ 21 Z and type ρ is denoted by Mk (ρ). The
+space degree 2 Siegel modular forms of weight detk ⊗σl , k ∈ 12 Z, l ∈ Z and type ρ
+                   (2)
+is denoted by Mk,l (ρ). If l = 0, we suppress it, and if ρ is trivial, we abbreviate
+  (1)       (1)       (2)           (2)
+Mk (ρ) = Mk and Mk,l (ρ) = Mk,l .
+Remark 3.2. Suppose that σ and ρ are irreducible. If σ factors through GLg (C), one
+can show that for ρ’s which do not factor through Sp2 (Z) we have M(g) (σ, ρ) = {0}.
+On the other hand, we have M(g) (σ, ρ) = {0}, if ρ factors through Spg (Z) and σ does
+not.
+                                        (2)
+   More concretely, this means that Mk,l (ρ) = {0}, if
+  (i) k ∈ Z and ρ does not factor through Sp2 (Z), or
+ (ii) k ∈ 12 Z \ Z and ρ factors through Sp2 (Z).
+3.1. Structure theorems and dimension formulas. Let ρ be any (finite dimen-
+                                                                     L (1)
+sional) representation of Sp1 (Z). By results of Mason and Marks, k∈Z Mk (ρ) is a
+                   L         (1)
+free module over k∈Z Mk of rank at most dim ρ [MM10]. Hence there is a polyno-
+mial pg (ρ; t) with pg (ρ; 1) ≤ dim ρ such that
+                            X         (1)           pg (ρ; t)
+(3.1)                            dim Mk (ρ)tk =                    .
+                            k∈Z
+                                                (1 − t4 )(1 − t6 )
+  Fix a representation σ of GL2 (C) and a representation ρ of Sp2 (Z) such that
+σ(−I2 ) ⊗ ρ(−I4 ) is trivial. Then H(2) × (Vσ ⊗ Vρ ) descends to a vector bundle
+                                                                  (2)
+on Sp2 (Z)\H(2) . We can compute the asymptotic dimension of Mdetk ⊗ σ (ρ) using
+Hirzebruch-Riemann-Roch and the Lefschetz fixed point theorem. We find that
+                              (2)                            (2)
+(3.2)                       Mdetk ⊗ σ (ρ) ≍ dim σ ⊗ ρ · dim Mk
+as k → ∞, k ∈ Z. We give some details for the convenience of the reader. Fix some
+normal congruence subgroup Γ ⊂ Sp2 (Z) such that there is a smooth compactification
+XeΓ of XΓ = Γ\H(2) . Write XSp (Z) for Sp2 (Z)\H(2) , and X
+                                                          eSp (Z) for (Sp2 (Z) / Γ)\X
+                                                                                    eΓ .
+                               2                             2
+                       eSp (Z) of dimension d. The line bundle det is ample, so that
+Fix a line bundle E on X   2
+8                                        MARTIN RAUM
+
+    eΓ , E ⊗ detk ) = 0 for i 6= 0 and sufficiently large k. For such k, Hirzebruch-
+Hi (X
+Riemann-Roch gives
+                                          Z
+                       0 e           k                             eΓ ),
+                 dim H (XΓ , E ⊗ det ) =       ch(E) ch(det k ) td(X
+                                                  eΓ
+                                                  X
+
+where ch(E) and ch(det k ) are the Chern characters of E and det k , respectively, and
+   eΓ ) is the Todd polynomial of X
+td(X                                 eΓ . The ith degree of ch(det k ) = ch(det)k has
+asymptotic ci k i for some constant ci . Since det is positive, we have ci > 0. On the
+other hand the lowest degree of ch(E) equals d, and the lowest degree of ch(XΓ ) is 1.
+Hence we have
+                                                       Z
+                                0 e             k
+                           dim H (XΓ , E ⊗ det ) ≍ d       c3 .
+                                                              XΓ
+
+In order to pass to XSp2 (Z) , we use the Lefschetz fixed point theorem and the Koecher
+principle. We have
+                                                                               
+                dim H0 XSp2 (Z) , E ⊗ det k = dim H0 X      eSp (Z) , E ⊗ det k
+                                                               2
+
+                      1             X                                
+              =                            trace g|H0 (XeΓ ,E⊗det k ) .
+                #(Sp2 (Z) / Γ)
+                                  g∈Sp2 (Z) / Γ
+                             
+Since trace g|H0 (XeΓ ,E⊗det k ) is bounded in k by by, roughly, the number of fixed points
+of g, if g 6= 1, the stated asymptotic of dimensions follows when applying our consid-
+erations to E = H(2) × (Vρ ⊗ Vσ ).
+
+                                      4. Jacobi forms
+    Let
+                                         HJ = H(1) × C
+be the Jacobi upper half space. The extended Jacobi group
+                                    ΓJ = SL2 (Z) ⋉ Z2 ×
+                                                      eZ
+
+has group law
+                                                                                         
+      γ, (λ, µ), κ · γ ′ , (λ′ , µ′), κ′ = γγ ′ , (λ, µ)γ ′ + (λ′ , µ′), κ + κ′ + λµ′ − µλ′ .
+It can be viewed as a subgroup of Sp2 (Z) via the embedding
+                                                          
+                                         a 0 b 0     1 0 0 µ
+                                      0 1 0 0 λ 1 µ κ 
+                 ( c d ) , (λ, µ), κ 7→ 
+                   a b                                     
+                                         c 0 d 0  0 0 1 −λ .
+                                          0 0 0 1    0 0 0 1
+
+We denote the double cover of ΓJ by ΓeJ . Its elements are pairs (γ J , ω) with γ J ∈ ΓJ
+               f 1 (C) a holomorphic square root of cτ + d.
+and ω : H(1) → GL
+                             eJ ) on HJ is given by
+  The action of ΓJ (and thus Γ
+                                                          z + λτ + µ 
+                    γ J (τ, z) = γ, (λ, µ), κ (τ, z) = γτ,              .
+                                                             cτ + d
+                              FORMAL FOURIER JACOBI EXPANSIONS                                       9
+
+  For m ∈ Q and x ∈ C, we set em (x) = exp(2πim x). Given k ∈ 12 Z, m ∈ Q and a
+                    f 1 (C) × Γ
+representation ρ of Aff       e J with representation space Vρ , there is a slash action
+
+     J              
+   φ k,m,ρ (γ J , ω) (τ, z)
+
+                                 −2k   m   −c(z + λτ + µ)2                      
+                  = ω(cτ + d)          e                    + 2λz + λ2 τ + κ
+                                               cτ + d
+                                                                                 −1
+                                             ρ (ω(τ ), c(z + µ) − dλ), (γ J , ω)     φ(γ J (τ, z))
+
+on functions φ : HJ → Vρ . We will often use representations of Γ              f 1 (C),
+                                                                       e J and Aff
+                                             f 1 (C)× Γ
+which we then consider as representations of Aff      e J by tensoring with the trivial
+representation of Γ       f 1 (C), respectively. Note that
+                  eJ and Aff                                         ′    = k+k′,m,ρ for
+                                                             k,m,detk ⊗ρ
+      ′  1
+any k ∈ 2 Z.
+                                             f 1 (C)×Γ
+Definition 4.1. Let ρ be a representation of Aff     e J with representation space Vρ .
+A holomorphic function φ : HJ → Vρ is called a Jacobi form of weight k, index m,
+and type ρ if
+            J
+     (i) φ k,m,ρ (γ J , ω) = φ for all (γ J , ω) ∈ ΓJ .
+    (ii) φ(τ, ατ + β) is bounded (with respect to any norm on Vρ ) as y → ∞ for all
+         α, β ∈ Q.
+We denote the space of Jacobi forms of weight k, index m, and type ρ by Jk,m (ρ).
+If ρ is trivial, we suppress it. Note that Jk,m = {0}, if m ∈ Q \ Z. Except for
+Proposition 4.5, in this section, we restrict our attention to k ∈ Z.
+   The last component Z of ΓJ is central. Hence for irreducible representations ρ it
+acts by scalars. We have the following connection between m and ρ.
+                                                            J
+Proposition 4.2.     Let k ∈ Z, m ∈ Q. If ρ : Aff 1 (C) ⊗ Γ → GL(Vρ ) is irreducible
+and ρ I2 , (0, 0), 1 6= exp(2πi m), then Jk,m (ρ) = {0}.
+                                                                 J
+Proof. This follows when inspecting the definition of k,m,ρ.                                         
+
+  Jacobi forms have a Fourier expansion
+                                     X
+                          φ(τ, z) =     c(φ; n, r) q nζ r .
+                                             0≤n∈Q
+                                              r∈Q
+
+By Condition (i), c(φ; n, r) only depends on 4mn − r 2 and r (mod (2mZ)). From
+Condition (ii), one infers that c(φ; n, r) = 0, if 4mn − r 2 < 0. This is actually
+equivalent to Condition (ii). The vanishing order of φ ∈ Jk,l (ρ) is defined as
+                              ord φ = min{n ∈ Q : c(φ; n, r) 6= 0}.
+The spaces of Jacobi forms with vanishing order at least 0 ≤ d ∈ Q play a central
+role in Section 5. Define
+                                   
+(4.1)                  Jk,m(ρ)[d] = φ ∈ Jk,m (ρ) : ord φ ≥ d .
+  The definitions of maps Dν that were given on page 29 of [EZ85] carry over to our
+setting, if ρ is trivial on Aff 1 (C). Given a Jacobi form φ of even weight k, index m,
+10                                      MARTIN RAUM
+
+and type ρ : ΓJ → GL(Vρ ), set
+                     X (−1)µ (2ν)! (k + 2ν − µ − 2)! ∂z 2ν−2µ ∂τ µ
+        D2ν (φ), :=                                                  φ,
+                    0≤µ≤ν
+                           µ! (2ν − 2µ)! (k + ν − 2)! 2πi      2πi
+and
+                      X (−1)µ (2ν + 1)! (k + 2ν − µ − 1)!                  ∂z 2ν+1−2µ ∂τ µ
+      D2ν+1 (φ), :=                                                                          φ.
+                      0≤µ≤ν
+                              µ! (2ν + 1 − 2µ)! (k + ν − 1)!              2πi          2πi
+Note that either D2ν (φ) or D2ν+1 (φ) is zero depending on k and ρ. Combining the
+above maps, we define D(k, ρ) for irreducible ρ.
+                       (
+                        D0 ⊕ · · · ⊕ D2⌊m⌋ ,   if (−1)k ρ(−I2 ) is trivial;
+            D(k, ρ) =                                                       .
+                        D1 ⊕ · · · ⊕ D2⌊m⌋−1 , otherwise.
+      L
+If ρ = i ρi decomposes into irreducible components, then we set
+                                          M
+                              D(k, ρ) =       D(k, ρi ).
+                                                   i
+
+  For irreducible ρ, it is not hard to see that the image of D(k, ρ) restricted to
+                          L⌊m⌋                 L⌊m⌋−1
+Jk,m(ρ)[d] is contained in ν=0  Mk+2ν (ρ)[d] or ν=0   Mk+2ν+1 (ρ)[d].
+  The next theorem is mostly due to Eichler and Zagier [EZ85]. We simply adapt it
+to the case of vector valued Jacobi forms.
+Theorem 4.3. Let k ∈ Z, m ∈ Q, and suppose that ρ : Aff 1 (C) ⊗ ΓJ → GL( Vρ ) is
+trivial on Aff 1 (C). Then the map D(k, ρ) is injective.
+Proof. We may restrict to the case of irreducible ρ. Further, we only treat the case
+of trivial (−1)k ρ(−I2 ). The proof in the other case works completely analogously.
+   Choose 0 < N ∈ Z such that ρ is trivial on (NZ)2 ×    e NZ ⊆ ΓJ . In particular, we
+have Nm ∈ Z. Given any Jacobi form φ of weight k and type ρ : ΓJ → Vρ , odd
+Taylor coefficients of φ vanish by assumption on (−1)k ρ(−I2 ). This follows directly
+from the Jacobi transformation law applied to −I2 ∈ SL2 (Z).
+   Observe that D(k, ρ) injectively maps the set of all 2νth Taylor coefficient (0 ≤
+              L⌊m⌋
+ν ≤ ⌊m⌋) to ν=0     Mk+2ν (ρ). If D(k, ρ)(φ) = 0, we find that the first 2⌊m⌋ + 1 ≥ 2m
+Taylor coefficients of f ◦ φ vanish for any linear functional f on Vρ . On the other
+hand, z 7→ f ◦ φ(τ, Nz) is a holomorphic elliptic function of index N 2 m ∈ Z. By
+assumption it has at least N 2 (2⌊m⌋ + 2) zeros in the range z = α + βτ , α, β ∈ [0, 1).
+Consequently, f ◦ φ = 0, and since f was any functional on Vρ , we have φ = 0.        
+   Consider the restriction of σl to Aff 1 (C) ⊂ GL2 (C) (see Equation (2.1)) and denote
+it by σl as well. For m ∈ Z, it was shown in [IK11] that
+                                                   l
+                                                   M
+                                    Jk,m (σl ) ∼
+                                               =             Jk+i,m .
+                                                   i=0
+This isomorphism is induced by differential operators with constant coefficients as
+stated on page 786 of [IK11]. Hence it generalized to arbitrary m ∈ Q and to any
+representation ρ : ΓJ → GL(Vρ ). We have
+                                                   l
+                                                   M
+                              Jk,m (σl ⊗ ρ)[d] ∼
+                                               =             Jk+i,m (ρ)[d].
+                                                       i=0
+                          FORMAL FOURIER JACOBI EXPANSIONS                            11
+
+Combining this with the statement of Theorem 4.3, we obtain
+Corollary 4.4. Let k ∈ Z, m ∈ Q, and ρ : ΓJ → Vρ be an irreducible unitary
+representation. Then there is an injective map
+                        l
+                           (L
+                       M      ⌊m⌋
+                                                     if (−1)k+i ρ(−I2 ) is trivial;
+                              ν=0 Mk+i+2ν (ρ)[d],
+   Jk,m (σl ⊗ ρ)[d] ֒→      L⌊m⌋−1
+                       i=0    ν=0  Mk+i+2ν+1 (ρ)[d], otherwise.
+  We finish this section with a statement on the connection of Siegel modular forms
+and Jacobi forms.
+                                  (2)
+Proposition 4.5. Let Φ ∈ Mk,l (ρ), k ∈ 12 Z, l ∈ Z be a Siegel modular form, where
+ρ is a unitary representation of Sp2 (Z) (whose kernel has finite index). Then for all
+m ∈ Q the function
+                                       X
+                           φm (τ, z) =     c(Φ; n, r, m) q n ζ r
+                                           n,r∈Q
+
+is a Jacobi form of weight k, index m, and type σl ⊗ ρ.
+   In particular, we have a Fourier Jacobi expansion
+                                   X
+                                       φm (τ, z) q ′ m .
+                                        0≤m∈Q
+
+Proof. This is a straight forward verification.                                       
+
+                       5. Formal Fourier Jacobi expansions
+                                                (2)
+  Given a Siegel modular forms Φ ∈ Mk,l (ρ), there is a Fourier Jacobi expansion as
+discussed at the end of the previous section. The notion of formal Fourier Jacobi
+expansions mimics this.
+                                                                       f 2 (Z) (whose
+Definition 5.1. Fix k ∈ 12 Z, l ∈ Z, and a unitary representation ρ of Sp
+kernel has finite index). Let
+                             X              M
+                       Φ=        φm q ′ m ∈   Jk, m (ρ ⊗ σl ) q ′ m .
+                              0≤m∈Q                   m
+
+We call Φ a formal Fourier Jacobi expansion of weight (k, l) and type ρ if
+                  c(φm ; n, r) = (det k ⊗ σl )−1 (S) ρ−1 (rot(S)) c(φn ; m, r)
+for all n, r ∈ Q, where S = ( 01 10 ).
+                                                      (2)
+Denote the space of such expansions by FMk,l (ρ).
+Proposition 5.2. Suppose that Φ and Ψ are formal Fourier Jacobi expansions of
+same weight and type. If φm = ψm for 0 ≤ m < m′ for some 0 < m′ ∈ Q, then
+φm′ − ψm′ ∈ Jk,m′ (ρ ⊗ l)[m′ ].
+Proof. For any 0 ≤ n < m′ and any r ∈ Z, we have
+              c(φm′ − ψm′ ; n, r) = c(φm′ ; n, r) − c(ψm′ ; n, r)
+                                                                              
+            = (det k ⊗ σl )−1 (S) ρ−1 (rot(S)) c(φn ; m′ , r) − c(ψn ; m′ , r) = 0.
+                                                                                      
+   The idea of proof of the next theorem is very much inspired by [IPY12], and was
+initially brought up by Akoi [Aok00].
+12                                             MARTIN RAUM
+
+Theorem 5.3. We have
+                                         (2)                  (2)
+                            dim FMk,l (ρ) ≤ dim Mk,l (ρ) + O(k 2 )
+as k → ∞, k ∈ 2Z.
+Corollary 5.4. There is 0 < k0 ∈ Z such that
+                                 dim FMk,l (ρ) < 2 dim Mk,l (ρ)
+for all k > k0 .
+Proof of Theorem 5.3. By Proposition 4.5 and 5.2, we have
+                          (2)
+                                     M
+                       FMk,l (ρ) ֒→       Jk,m (σl ⊗ ρ)[m].
+                                                0≤m∈Q
+
+We are hence reduced to estimating the dimension of the right hand side. Corollary 4.4
+says that there is a map
+                                                      l
+                                                      M
+                            Jk,m (σl ⊗ ρ)[m] ֒→                Jk+i,m (ρ)[m].
+                                                        i=0
+
+Plug this into the previous equation. Then Equation (3.2) shows that it suffices to
+treat the case l = 0.
+   By Proposition 4.2, we need to consider
+                         M        M
+                                         Jk,m (σl ⊗ ρ(m0 ))[m]
+                           0≤m0 <1 0≤m∈m0 +Z
+             L                                
+where ρ = m0 ρ(m0 ) and ρ(m0 ) I2 , (0, 0), 1 = exp(2πi m0 ).
+   We consider the generating function of this series, and adapt the calculations pre-
+sented in Section 4 of [IPY12]. The change of order of summation is justified because
+all coefficients are positive.
+          X X X         ∞ X  m
+                               dim Mk+2ν (ρ(m0 ))[m0 + m] tk
+         2 | k ∈Z 0≤m0 <1 m=0 ν=0
+
+          X          m  X
+                   ∞ X
+                   X                                                        
+     =                                 dim Mk+2ν−12m (ρ(m0 ))[m0 ] tk+2ν−12m t12m−2ν
+         0≤m0 <1 m=0 ν=0    2 | k ∈Z
+         P                               m
+                                       ∞ X                                      ∞ X m
+           0≤m0 <1 pg (ρ(m0 ); t)
+                                       X                        pg (ρ; t)      X
+                                                 12m−2ν
+     ≤                                          t         =                            t12m−2ν .
+            (1 − t4 )(1 − t6 )      m=0 ν=0
+                                                            (1 − t4 )(1 − t6 ) m=0 ν=0
+Here, ≤ means that every coefficient with respect to t on the left hand side is less
+than or equal to the corresponding coefficient on the right hand side. The double
+sum equals
+             X∞ X ∞                    ∞
+                      12m−2ν      1 X 12ν−2ν                    1
+                     t       =      12
+                                          t      =                       .
+             ν=0 m=ν
+                               1 − t ν=0            (1 − t )(1 − t12 )
+                                                             10
+
+                                                    L           (2)
+This proves the statement, since the generators of     2 | k Mk     have weight 4, 6, 10,
+and 12.                                                                                
+Lemma 5.5. There is a vector valued Siegel modular form of
+ (i) odd weight
+                        FORMAL FOURIER JACOBI EXPANSIONS                             13
+
+ (ii) half integral weight k 6∈ Z
+whose components have no common zero.
+Proof. We prove the second statement only. The first follows along the same lines.
+  Fix some Siegel modular form Φ of half integral weight k for some finite index
+             f 2 (Z). For example, any of the theta constants works [Fre91]. There is
+subgroup of Sp
+0 < j ∈ Z, and a set {αi }1≤i≤j ⊂ Q such that the shifts Φ(Z + αi ), 1 ≤ i ≤ j of Φ
+have no zero in common. Each such shift is a Siegel modular form for some subgroup
+     f 2 (Z). We obtain vector valued Siegel modular forms
+Γi ⊆ Sp
+                                    X                 (2)
+                         Φi (Z) =          Φ(Z + αi ) k γ eγ
+                                           f (Z)
+                                     γ∈Γi \Sp2
+
+
+for the induced representations ρi = IndΓi 2 (1) with representation space Vρi =
+                                                 Sp (Z)
+                                   
+span eγ : γ ∈ Γi \Sp2 (Z) . Then Φi 1≤i≤j is a vector valued Siegel modular form of
+     L
+type 1≤i≤j ρi with the desired property.                                         
+
+Theorem 5.6. For every k ∈ 12 Z, 0 ≤ l ∈ Z, and every unitary representation ρ of
+f 2 (Z) (whose kernel has finite index), we have FM(2) (ρ) = M(2) (ρ).
+Sp                                                 k,l        k,l
+
+Proof. We first prove the case of k ∈ 2Z. By the remark after Definition 3.1, ρ factors
+through Sp2 (Z). Suppose that
+                                   X                (2)
+                            Φ=         φm q ′ m ∈ FMk,l (ρ).
+                                 0≤m∈Z
+
+Choose k0 as in Corollary 5.4, and consider the space
+                                     (2)            (2)
+                               Mk0 · Φ ⊆ FMk+k0 ,l (ρ).
+                                           (2)            (2)
+By choice of k0 , the intersection of Mk0 · Φ and Mk+k0 ,l (ρ) is not empty. Pick some
+       (2)                     (2)
+Ψ ∈ Mk0 such that ΨΦ ∈ Mk+k0 ,l (ρ). Next, apply Theorem 6.2 to find that Φ ∈
+Mk,l (ρ).
+   Now, suppose that k ∈ 21 Z. Choose a Siegel modular form Ψ as in Lemma 5.5
+such that Φ ⊗ Ψ has even weight. By the above, it is a Siegel modular form. Write
+Ψi for the components of Ψ. The meromorphic Siegel modular form (ΦΨi ) / Ψi is
+independent of i, since (ΦΨi )Ψi′ = (ΦΨi′ )Ψi for all i, i′ . By choice, the components
+of Ψ have no common zero. Therefore, (ΦΨi ) / Ψi is holomorphic and posses a Fourier
+Jacobi expansion. This expansions equals Φ, because multiplication by Ψi is injective
+on formal Fourier Jacobi expansions.                                                 
+
+             6. Regularity for meromorphic Siegel modular forms
+  In this section we prove regularity of meromorphic Siegel modular forms which,
+in a sense made precise below, have a holomorphic Fourier-Jacobi expansion. Note
+that all considerations are independent of Section 5, where we use Theorem 6.1 to
+establish Theorem 5.6.
+                          P                   (2)            P                (2)
+Theorem 6.1. Let Φ = 0≤m∈Q φ q ′ m ∈ FMk,l (ρ) and Ψ = 0≤m∈Q ψ q ′ m ∈ Mk′ .
+                      (2)            P                                    (2)
+Suppose that ΦΨ ∈ Mk+k′ ,l (ρ). Then 0≤m∈Q φ q ′ m is convergent and Φ ∈ Mk .
+14                                    MARTIN RAUM
+
+Proof. We show that Φ has no singularity on the boundary of the Satake compacti-
+fication. By the Koecher principle, this implies the statement.
+   Write D = {x ∈ C : |x| < 1} and Ḋ = D \ {0}. We start be reducing our
+considerations to a map Φ∗ : D 3 → CP1 . To achieve this, we use a special case
+of the approach taken in [Bru04]. Let Γ ⊂ Sp2 (Z) be a torsion free subgroup such
+that the restriction of ρ to Γ is trivial. Set XΓ = Γ\H(2) , and define YΓ as the Satake
+compaktification of XΓ . Employing Hironaka’s theory to the boundary ∂XΓ ⊂ YΓ and
+the divisor of Ψ, we find a resolution of singularities YeΓ → YΓ . For all (τ0 , z0 ) ∈ HJ,
+                                                                                      τ z
+this yields a holomorphic map D 2 × Ḋ → H(2) , whose image contains all Z = z00 τ0′
+with Im τ ′ > y0′ for some y0′ ∈ R. The components correspond to (τ, z) and q ′ . After
+possibly shrinking the image and preimage, and after composing with a suitable
+biholomorphic map on D 2 × Ḋ, we can assume that the pushforward of the derivative
+with respect to the canonical coordinate on Ḋ ⊂ D 2 × Ḋ is mapped to ∂q′ on H(2) .
+By abuse of notation we write q ′ for the corresponding variable. Denote by E the
+divisor {q ′ = 0} ⊂ D 2 × D, which is the preimage of ∂XΓ ⊂ YΓ .
+   Since ΦΨ is a Siegel modular form, it extends from XΓ to YΓ , and so does Ψ.
+Therefore the pullback Ψ∗ : D 2 × Ḋ → CP1 extends to D 2 × D. Its divisor , div(Ψ∗ ),
+is normal crossing. It decomposes as div1 (Ψ) + div2 (Ψ), where div1 (Ψ) is supported
+on E, and div2 (Ψ) + E is normal crossing. Write E J for the intersection |div2 (Ψ)| ∩E,
+where we mean by |div2 (Ψ)| the support of div2 (Ψ). By the above, E J is smooth and
+has codimension 1, if it is not empty.
+   Fix (τ0 , z0 ) ∈ HJ \ E J . There is a neighborhood U J ⊆ HJ of (τ0 , z0 ) and y0′ ∈ R
+such that Ψ(Z) 6= 0 for all (τ, z) ∈ U J and Im(τ ′ ) > Im(τ0′ ). Therefore we have
+                                                     
+                                ∂qm′ q′ =0 (ΦΨ)∗ / Ψ∗ = (φm )∗
+
+as a convergent series. By the assumptions, (φm )∗ extends to HJ . By applying to
+the above equation linear functionals on the pullback of Vl ⊗ Vρ , by then restricting
+to suitable smooth subvarieties of HJ , and by finally using Theorem 6.2, we establish
+the statement.                                                                      
+   The remainder of this section is of purely function theoretic nature. The proof
+of Theorem 6.2 builds up on Lemma 6.4 and 6.5, which summarize slightly involved
+computations with polynomials whose coefficients are meromorphic functions.
+   In the proofs of the next theorem and lemmas, we will repeatedly use the Pochham-
+mer symbol
+                                             n−1
+                                             Y
+(6.1)                               (a)n =         (a − i),
+                                             i=0
+
+which is defined for a ∈ C and 0 ≤ n ∈ Z.
+Theorem 6.2. Let f (x, y) be a function that is meromorphic in a neighborhood U of
+x = y = 0 in C2 . Assume the following:
+  (i) {(x, y) ∈ U : y = 0} is not a polar divisor of f .
+ (ii) No irreducible polar divisor of f has a branching point at x = y = 0.
+(iii) For all 0 ≤ n ∈ Z, the function ∂yn y=0 f (x, y) admits a holomorphic continuation
+      to a neighborhood of x = 0.
+Then f is holomorphic in x = y = 0.
+                                 FORMAL FOURIER JACOBI EXPANSIONS                                          15
+
+Proof. By the assumptions on f and the theory of meromorphic functions presented,
+for example, in [Nis01] (following work of Oka), we express f in a sufficiently small
+neighborhood of x = y = 0 as follows:
+                                                                    PdP                 i
+                                                                       i=0 Pi (x)y
+(6.2)                   f (x, y) = f˜(x, y) QnQ                                              1+mj .
+                                                          j=1 Qj,1 (x)y + Qj,0 (x)
+
+We have 0 ≤ nQ , dP , mj ∈ Z (1 ≤ j ≤ nQ ). Functions that appear on the right hand
+side are holomorphic in some neighborhood of x = y = 0 or x = 0, respectively. They
+satisfy f˜(0, 0) 6= 0, PdP (0) 6= 0, Pi (0) = 0 (0 ≤ i < dP ), Qj,1 (0) 6= 0, Qj,0 (0) = 0. We
+can assume that for j 6= j ′ , −Qj,0 / Qj,1 6= −Qj ′ ,0 / Qj ′ ,1 as functions in a neighborhood
+of x = 0. By dividing both sides by f˜, weP           can and will assume without loss of
+generality that f˜(x, y) = 1. Write P (x, y) = i Pi (x)y i for the numerator of (6.2).
+We may assume that the numerator and denominator in (6.2) are coprime, which                 
+amounts to the assertion that for all 1 ≤ j ≤ nQ , we have P x, −Qj,0 (x) / Qj,1(x) 6=
+0 as functions in a neighborhood of x = 0.
+   We will show by contradiction that nQ = 0, that is, f (x, y) = P (x, y) is holomorphic
+in x = y = 0.
+   For convenience, we suppress the dependence on x. Furthermore, we use exponents
+0 ≤ ej ∈ Z. Away from x = 0, we have
+
+            ∂yn y=0 f ( · , y)
+            dP                              nQ
+                                             Y
+            X   n                                                         −1−mj 
+        =               i!Pi ∂yn−i y=0                   Qj,1 y + Qj,0
+            i=0
+                    i                             j=1
+
+          XdP          X                                       Y
+                                                                   nQ
+               n                                     n−i                                    ej   −1−m −e
+        =         i!Pi                                                 (−1)ej (mj + ej )ej Qj,1 Qj,0 j j
+          i=0
+               i       P                           e1 , e2 , . . . j=1
+                                 j ej =n−i
+
+             nQ
+            Y               X
+                              dP                   X                  nQ
+                     −1−m                                      mj + ej Y
+        =           Qj,0 j             Pi                                   (−Qj,1 / Qj,0 )ej .
+              j=1                i=0
+                                            P                    mj     j=1
+                                                  j ej =n−i
+
+
+
+Assuming nQ 6= 0, apply Lemma 6.4 and 6.5 to obtain a contradiction.                                       
+
+Lemma 6.3. Let Hj (x) (1 ≤ j ≤ nH ) be pairwise distinct meromorphic functions in
+a neighborhood of x = 0. Then for all 0 < n ∈ Z, we have
+
+                             X          nH
+                                        Y                 nH
+                                                          X               Y
+                                                     e
+                                                 Hj j =          Hjn+nH             (Hj − Hj ′ )−1 ,
+                         PnH            j=1               j=1             j ′ 6=j
+                            j=1 ej =n
+
+
+
+where the exponents ej ∈ Z are nonnegative, for all j.
+
+Proof. Compute the product
+
+                                        Y                           X          nH
+                                                                               Y        e
+                                                 (Hj − Hj ′ )                        Hj j
+                                                                 PnH           j=1
+                                       j ′ 6=j
+                                                                   j=1 ej =n
+16                                                    MARTIN RAUM
+
+by repeatedly applying the formula
+                        X e              nH
+                                       X Y               nH
+                                                       X Y
+                               j             ej              e
+          (Hj − Hj )
+             ′     ′′        Hj = Hj ′      Hj − Hj ′′      Hj j .                                                          
+                                   PnH                       P                             P
+                                                              j ej =n
+                                                                      j=1                   j ej =n
+                                                                                                    j=1
+                                    j=1 ej =n
+                                                             ej ′′ =0                      ej ′ =0
+
+Lemma 6.4. Let Hj (x) (1 ≤ j ≤ nH ) be pairwise distinct, nonzero meromorphic
+                                                                              PP
+functions in a neighborhood of 0. Fix a holomorphic function P (x, y) = di=0     Pi (x)y i ,
+                             −1
+and suppose that P (x, Hj (x) ) 6= 0 as functions of x, for all 1 ≤ j ≤ nH . Given
+nonnegative integers mj , we have
+             XdP      X ej + mj  e          nH
+                                              X
+                 Pi                        j
+                                        Hj =      Hjn Rj (H1 , . . . , HnH ; n)
+             i=0    PnH          mj           j=1
+                              j=1 ej =n
+
+with rational functions Rj . Moreover, the Rj (H1 (x), . . . , HnH (x); n) (1 ≤ j ≤ nH )
+are nonzero polynomials in n with coefficients that are meromorphic functions in x.
+Proof. Write ∂j for the formal derivative with respect to Hj . Using Lemma 6.3, we
+find
+     X ej + mj  e          YnH   m
+                                   ∂Hjj  X Y     nH
+                                                        e +m
+                                                              
+                          j
+                       Hj =                            Hj j j
+   PnH         mj              j=1
+                                   mj ! PnH        j=1
+     j=1 ej =n                                                   j=1 ej =n
+
+                                             Y   m
+                                              nH
+                                                 ∂Hjj          nH
+                                                                 Y       m 
+                                                                               nH
+                                                                               X               Y                       
+                                         =                             Hj j          Hjn+nH              (Hj − Hj ′ )−1 .
+                                                j=1
+                                                      mj !       j=1           j=1             j ′ 6=j
+
+We plug this into the left hand side of the formula in the statement. Note that the
+sum over i and the formal derivatives commute, since Pi , as a variable, is independent
+of Hj .
+  Y     m                           nH Q       mj ′ 
+    nH
+        ∂Hjj  X
+                nH
+                     n
+                       P (H −1
+                            j     )H j    j ′ Hj ′
+                    Hj    Q
+    j=1
+        mj !    j=1         j ′ 6=j (Hj − Hj ′ )
+                             mj                                                                   m ′          m ′
+                                                       ∂jl                 Y ∂ ′j                      
+                 nH
+                 X           X               l−m                     n +m           j         Hj ′ j
+           =           Hjn         (n)mj −l Hj j            P (Hj−1)Hj H j                                  .
+                 j=1
+                                                       mj !                        m  j ′ ! (Hj − Hj ′ )
+                             l=0                                             j 6=j
+                                                                              ′
+
+
+This proves the first assertion of the lemma.
+  To prove that the Rj do not vanish as polynomials in n, we start by computing
+            m ′      m ′                 mj ′       
+                                   1 X mj ′ l!(mj ′ )mj′ −l Hj ′
+                                                                         l
+          ∂j ′ j   Hj ′ j
+                              =
+          mj ′ ! (Hj − Hj ′ )    mj ′ ! l=0        l   (Hj − Hj ′ )1+l
+                              mj ′                                              m ′
+                   1          X     mj ′                                        Hj j
+                                               l                mj ′ −l
+        =                                     Hj ′ (Hj − Hj ′ )         =                    .
+          (Hj − Hj ′ )1+mj′ l=0        l                                   (Hj − Hj ′ )1+mj′
+Therefore, we have
+                                                                                     m ′
+                                                                   Y          Hj j
+       Rj (H1 , . . . , HnH ; n) = n         mj
+                                                  P (Hj−1)HjnH                        1+mj ′ + O(n
+                                                                                                  mj −1
+                                                                                                        ),
+                                                                   j′=
+                                                                     6 j
+                                                                         (Hj − Hj ′ )
+where Rj is a polynomial in n. It suffices to notice that the leading coefficient, the
+coefficient of nmj , is nonzero as a function of x. This proves the second part.    
+                            FORMAL FOURIER JACOBI EXPANSIONS                                17
+
+Lemma 6.5. Let Hj (x) (1 ≤ j ≤ nH ) be pairwise distinct, nonzero meromorphic
+functions in a neighborhood of x = 0 whose pole order at x = 0 is at least 1. Further,
+let Rj (x, n) (1 ≤ j ≤ nH ) be polynomials in n whose coefficients are meromorphic
+in x.
+   If for all 0 < n ∈ Z,
+                                        nH
+                                        X
+                                              Hjn Rj (x, n)
+                                        j=1
+
+is regular at x = 0, then Rj = 0 for all 1 ≤ j ≤ nH .
+Proof. Set J = {1 ≤ j ≤ nJ : Rj 6= 0}. The statement is equivalent to J = ∅. We
+assume that J is not empty.
+   Let oH = − minj∈J (ordx=0 Hj ) be the maximal pole order of Hj at x = 0, and
+JH = {j ∈ J : −ordx=0 Hj = oH } be the set of indices for which this maximum
+is attained. Further, let dR = maxj∈JH (degn Rj ) be the maximal degree of Rj as a
+polynomial in n, and let JR = {j ∈ JH : degn Rj = dR }. By construction, J 6= ∅
+implies JH 6= ∅, which implies JR 6= ∅. Write Rj,dR for the dR th coefficient of Rj . We
+will establish the lemma by finding a contradiction.
+   Choose some 0 ≤ oR ∈ Z such that the coefficients of xoR Rj (x, n) are holomorphic
+in x = 0 for all 1 ≤ j ≤ n. We rewrite the regularity assumption:
+             nH
+             X                                     nH
+                                                   X
+                   Hjn Rj (x, n) = ndR x−noH −oR         (xoH Hj )n (n−dR xoR Rj (x, n)),
+             j=1                                   j=1
+
+must be regular at x = 0. In other words, for all 0 ≤ l < nH , we have
+      nH
+      X                                                          
+            (xoH Hj )l (xoH Hj )n (xoR Rj,dR (x) + O((n + l)−1 )) ≡ 0 (mod xnoH +oR ).
+      j=1
+
+The Vandermon matrix ((xoH Hj )l )j,l is invertible as a matrix of meromorphic func-
+tions. The 0th coefficient of (xoH Hj )n is nonzero for j ∈ JH ⊇ JR . By choosing n
+large enough, we therefore see that
+                              xoR Rj,dR (x) ≡ O(n−1 ) (mod xñ(n) )
+with ñ(n) → ∞ as n → ∞. This shows Rj,dR = 0 for all j ∈ JH . This contradicts
+the choice of dR , and hence proves the lemma.                               
+
+   7. Generating functions for special cycles on Shimura varieties
+  Let L be a lattice of signature (n, 2) with attached quadratic form qL . We adopt the
+notation used in the introduction. That is, we denote the dual of L by L# , and write
+discr L = (L# / L)r for powers of the attached discriminant form. Fix a subgroup Γ of
+the orthogonal group O(L) that fixes the discriminant form disc L pointwise. Write
+Gr− (L ⊗ C) for the Grassmannian of 2-dimensional negative subspaces of L ⊗ C.
+There are rational quadratic cycles on the Shimura variety XΓ = Γ\Gr− (L ⊗ R).
+Given a tuple of vectors v = (v1 , . . . , vr ) in L ⊗ Q, let
+                        Z(v) = {W ∈ Gr− (L ⊗ R) : span(v) ⊥ W }.
+This cycle is non-trivial, if span(v) ⊆ L ⊗ Q is positive.
+18                                          MARTIN RAUM
+
+  Kudla defined so-called special cycles on XΓ [Kud97]. Associate to each v a moment
+matrix qL (v) = 21 (hvi , vj iL )1≤i,j≤r , where hv, wiL = qL (v + w) − qL (v) − qL (w). Given
+                                                                       r
+a semi-positive definite matrix 0 ≤ T ∈ MatT         r (Q) and λ ∈ disc L, set
+                                           
+                             Ω(T, µ) = v ∈ µ + Lr : T = qL (v) .
+The symmetries Γ act on Ω(T, µ), and there are finitely many orbits. Define
+                                         X
+                           Z(T, µ) =            Z(v).
+                                               v∈Γ\Ω(T,µ)
+
+All cycles of this form descend to cycles on XΓ , which we also denote by Z(T, µ).
+Writing rk(T ) for the rank of T , we find that Z(T, µ) is a rk(T )-cycle, whose class in
+CHrk(T ) (XΓ )C is denoted by {Z(T, µ)}.
+  Let ω ∨ be the anti-canonical bundle on XΓ , and write {ω ∨} for its class in CH1 (XΓ )C .
+Fix a linear functional on CHr (XΓ ). Define the formal Fourier expansion
+                         X                                                       
+(7.1)     ΘΓ,f (Z) =            f {Z(T, µ)} · {ω ∨}r−rk(T ) exp 2πi trace(T Z) eµ .
+                       µ∈discr L
+                     0≤T ∈MatTr (Q)
+                                                                         
+Here, eµ is a canonical basis vector of the representation space C discr L of the Weil
+representation of the double cover Spf r (Z) of Spr (Z).
+  We now restrict to the case r = 2. In his thesis, Zhang [Zha09] proved that
+ΘΓ,f (Z) is a formal Fourier Jacobi expansions of weight 1 + n2 . This is essentially
+Proposition 2.6 on page 22. Note that he does not make use of Condition 1 of his
+Theorem 2.5 while proving this proposition.
+Remark 7.1. The type of ΘΓ,f stated in [Zha09] is slightly incorrect. On page 20,
+Zhang affirms that, in his notation,
+                          p        n′ +n p       n′ −n
+               F (T, λ) = det(A)          det(A)       F (Atrace T A, λA).
+He argues that this holds if n′ is even. But actually, F (T, λ) is basis independent.
+Consequently, the required invariance does not hold if 4 ∤ n′ , while n′ = 2 in our
+application. This can be fixed easily, by considering the subrepresentation of the Weil
+representation ρL,r (in Zhang’s notation), which comes with the matching sign.
+Corollary 7.2. For any subgroup Γ ⊆ O(L) as above and every linear functional f
+on the Chow group CH2 (XΓ ) the function ΘΓ,f is a vector valued Siegel modular form
+of weight 1 + n2 .
+Proof. This follows when combining Zhang’s results and Theorem 5.6.                        
+     Using this statement, we can reprove Theorem 3.1 of [Zha09].
+Corollary 7.3. The space
+                                                        r
+                                                          
+             span {Z(T, µ)} : 0 < T ∈ MatT                     2
+                                         2 (Q), µ ∈ disc L ⊆ CH (XΓ )C
+
+is finite dimensional.
+                                      (2)
+Proof. This follows from dim Mk (ρ) < ∞, which holds for all k ∈ 21 Z and any unitary
+                    f 2 (Z).
+representation ρ of Sp                                                             
+                         FORMAL FOURIER JACOBI EXPANSIONS                                19
+
+  8. Computing Siegel modular forms via Fourier Jacobi expansions
+  In this section, we assume that the base field for all modular forms is Q. All
+statements concerning dimensions and Fourier expansions that we will make use of
+hold for any sufficiently large field Q ⊆ K ⊆ C. If the reader wishes, he can adjust
+Algorithm 8.5 accordingly.
+  We deal with truncated Fourier expansions of Jacobi forms, Siegel modular forms
+and formal Fourier Jacobi expansions. We start be defining appropriate index sets.
+Given 0 < B ∈ Z, set
+                          
+              I (2) (B), = (n, r, m) ∈ Q3 : 0 ≤ m, n < B, 4nm − r 2 ≥ 0
+                          
+            I J (m; B) = (n, r) ∈ Q2 : 0 ≤ n < B, 4nm − r 2 ≥ 0 .
+By abuse of notation, we denote the Fourier expansion map always by the same
+symbol F EB . Given any representation ρ of Sp      f 2 (Z) or ΓJ with representation space
+Vρ , define
+            (1)                                                         
+  F EB : Mk (ρ) → VρB ,                                  Φ 7−→ c(Φ; n) 0≤n<B ;
+            (2)                 (2)                                           
+  F EB : Mk,l (ρ) → (Vσl ⊗ Vρ )I (B) ,                   Φ 7−→ c(Φ; n, r, m) (n,r,m) ;
+                                     J                                    
+  F EB : Jk,m (σl ⊗ ρ) → (Vσl ⊗ Vρ )I (m;B) ,             φ 7−→ c(φ; n, r) (n,r) ;
+                        M                                                        
+              (2)                       I J (m;B)
+  F EB : FMk,l (ρ) →        (Vσl ⊗ Vρ )           , (φm )m 7−→ c(φm ; n, r) (n,r)        .
+                                                                                 0≤m<B
+                       0≤m<B
+                                       J    ′           J
+There are truncation maps from V I (m;B ) to V I (m;B) if B ′ ≥ B. When comparing
+Fourier expansions that have different “precision”, we will freely apply them.
+Proposition 8.1. Given 0 ≤ k ∈ 12 Z and a representation ρ of Sp   f 1 (Z), the map
+         (1)                              k
+F EB : Mk (ρ) → VρB is injective for B > 12 + 1.
+                                                     (1)                    k
+Proof. Suppose that there is a modular form φ ∈ Mk (ρ) whose first l := 12       +1
+Fourier coefficients vanish. Then ∆−l φ, where ∆ is the discriminant form, is a non-
+zero, holomorphic modular form of negative weight, which cannot be.               
+Proposition 8.2. Given 0 ≤ k ∈ 12 Z, 0 < m ∈ Q, and a representation ρ of Γ      eJ with
+                                                                  I J (m;B)
+representation space Vρ , the map F EB : Jk,m (σl ⊗ ρ) → Vσl ⊗ Vρ            is injective
+         k+l+2⌊m⌋
+for B >     12
+                  + 1.
+Proof. The bijection
+                                                 l
+                                                 M
+                               Jk,m (σl ⊗ ρ) ∼
+                                             =         Jk+i,m (ρ)
+                                                 i=0
+
+is induced by differential operators with constant coefficients. Hence it is compatible
+with taking Fourier expansions. It is thus sufficient to treat the case l = 0.
+   We have
+                        (L                        
+                             ⌊m⌋        (1)
+                                F E B Mk+2ν  (ρ)   ,   if (−1)k ρ(−I2 ) is trivial;
+      F EB Jk,m (ρ) ֒→ Lν=0  ⌊m⌋−1         (1)        
+                             ν=0   F EB Mk+2ν+1 (ρ) , otherwise.
+20                                          MARTIN RAUM
+
+                 (1)
+Elements of Mk+i (ρ), 0 ≤ i ≤ 2⌊m⌋ are uniquely determined by their first k+2⌊m⌋
+                                                                            12
+                                                                                 +1
+Fourier coefficients. This proves the proposition.                                
+Proposition 8.3. Let k ∈ 21 Z, l ∈ Z, and 0 < m ∈ Q. Further, let ρ be a represen-
+          eJ with representation space Vρ . Given 0 < B ∈ Z, fix families
+tation of Γ
+                                                M
+                    (φm )0≤m<B , (ψm )0≤m<B ∈        Jk,m (σl ⊗ ρ).
+                                                      0≤m<B
+
+Suppose they satisfy F E k+l +1 (φm ) = F E k+l +1 (ψm ) for all 0 ≤ m ≤ k+l
+                                                                          10
+                                                                             and
+                            10                   10
+
+                   c(φm ; n, r) = (det ⊗ σl ) (S) ρ−1 (rot(S)) c(φn ; m, r),
+                                        k        −1
+
+
+                  c(ψm ; n, r) = (det k ⊗ σl )−1 (S) ρ−1 (rot(S)) c(ψn ; m, r),
+for all 0 < n, m < B and all r ∈ Z. Then we have φm = ψm for all 0 ≤ m < B.
+Proof. By Proposition 8.2, φm and ψm are determined by c(φm ; n, r) and c(ψm ; n, r)
+with n ≤ k+l+2⌊m⌋
+             12
+                  . For m ≤ k+l10
+                                  , we have k+l+2m
+                                              12
+                                                   < k+l
+                                                      10
+                                                         + 1, and hence φm = ψm .
+  The rest of the proof is analog to the proof of Proposition 5.2. It suffices to
+show that φm , m > k+l  10
+                           is uniquely determined by all φm′ , m′ < m. Employing
+Proposition 8.2, this follows from the inequality k+l+2m
+                                                    12
+                                                          < m, which holds exactly if
+     k+l
+m > 10 .                                                                          
+                                                          f 2 (Z), and 0 < B ∈ Z, define
+     Given k ∈ 21 Z, l ∈ Z, a unitary representation ρ of Sp
+                         n               M                       
+             (2)
+         FMk,l (ρ)B = (φm )0≤m<B ∈             F EB Jk,m (σl ⊗ ρ) :
+                                              0≤m<B
+
+                            c(φm ; n, r) = (det k ⊗ σl )−1 (S) ρ−1 (rot(S)) c(φn; m, r)
+                                                              o
+                            for all m, n < B and all r ∈ Z .
+
+                                                                         f 2 (Z) with
+Proposition 8.4. Given k ∈ 21 ∈ Z, l ∈ Z, a unitary representation ρ of Sp
+representation space Vρ , and k+l
+                               10
+                                  < B ≤ B ′ ∈ Z the following inclusion holds.
+                                        (2)            (2)
+                                  FMk,l (ρ)B′ ⊆ FMk,l (ρ)B ,
+where we implicitly truncate elements of the space on the right hand side.
+Proof. This follows from Proposition 8.3: Given the first k+l
+                                                            10
+                                                               Fourier Jacobi coefficient
+                       (2)         (2)
+of any element in FMk,l (ρ)B or FMk,l (ρ)B′ , all others are uniquely defined.         
+Algorithm 8.5. Let 0 ≤ k ∈ 12 Z, 0 ≤ l ∈ Z, and let ρ be a unitary representa-
+        f 2 (Z). Given k+l < B ∈ Z, the following algorithm computes the space
+tion of Sp
+                        10
+        (2)
+F EB Mk,l (ρ) .
+                              
+(1) Compute F EB Jk,m (σl ⊗ ρ) for all 0 ≤ m < B.
+                 (2)
+(2) Compute FMk,l (ρ)B .
+                 (2)              (2)
+(3) If dim FMk,l (ρ)B = dim Mk,l (ρ), then we are done. Otherwise, increase B and go
+    back to Step 1.
+After processing                         one-to-one correspondence of elements Φ ∈
+              these steps, there is a (2)
+        (2)
+F EB Mk,l (ρ) and elements (φm ) ∈ FMk,l (ρ)B via c(Φ; n, r, m) = c(φm ; n, r).
+                           FORMAL FOURIER JACOBI EXPANSIONS                                   21
+
+Remarks 8.6. All steps except for the last on can be implemented based on the
+current state of knowledge.
+(1) Step 1 requires use of results in [IPY12] and [Rau12]. In the former paper an
+                                          L
+    explicit bijection of Jk,m (σl ⊗ρ) and li=0 Jk+i,m(ρ) was given. In order to compute
+                   
+    F EB Jk,m (ρ) using the latter work, note that Jk,m (ρ) ∼
+                                                                     (1)
+                                                                = Mk− 1 (ρ̌m ⊗ ρ) (ρ̌m is
+                                                                             2
+    the dual of the Weil representation for the lattice (2m) – see [Rau12]) via theta
+    decomposition.
+(2) Step 2 can be done by means of basic linear algebra.
+                                            (2)
+(3) Step 3 requires computations of dim Mk,l (ρ). If ρ is trivial and k ≥ 4 (l = 0)
+    or k ≥ 5 (l > 0), this has been done by Tsushima [Tsu83]. To the author’s
+    knowledge, the case of non-trivial ρ has not yet been treated.
+Proof. The algorithm terminates, because we have
+                              (2)
+                                       \       (2)
+                          FMk,l (ρ) =       FMk,l (ρ)B ,
+                                             0<B∈Z
+
+              (2)
+and dim FMk,l (ρ)B is monotonically decreasing for sufficiently large B by Proposi-
+tion 8.4.
+   Correctness of Algorithm 8.5 follows, because we have
+                                     (2)        (2)
+                            F EB Mk,l (ρ) ⊆ FMk,l (ρ)B
+for all 0 < B ∈ Z. If the dimension check in Step 3 succeeds, then equality holds. 
+
+                                        References
+[And79]   A. Andrianov, Modular descent and the Saito-Kurokawa conjecture, Invent. Math. 53
+          (1979), no. 3, 267–280.
+[Aok00]   H. Aoki, Estimating Siegel modular forms of genus 2 using Jacobi forms, J. Math. Kyoto
+          Univ. 40 (2000), no. 3, 581–588.
+[BFvdG08] J. Bergström, C. Faber, and G. van der Geer, Siegel modular forms of genus 2 and level
+          2: cohomological computations and conjectures, Int. Math. Res. Not. IMRN (2008), Art.
+          ID rnn 100, 20.
+[Bor99]   R. Borcherds, The Gross-Kohnen-Zagier theorem in higher dimensions, Duke Math. J.
+          97 (1999), no. 2, 219–233.
+[Bor00]           , Correction to: “The Gross-Kohnen-Zagier theorem in higher dimensions” [Duke
+          Math. J. 97 (1999), no. 2, 219–233; MR1682249 (2000f:11052)], Duke Math. J. 105
+          (2000), no. 1, 183–184.
+[Bru04]   J. Bruinier, Two applications of the curve lemma for orthogonal groups, Math. Nachr.
+          274/275 (2004), 19–31.
+[Bru12]           , On the converse theorem for Borcherds products, ArXiv: 1210.4821v1, 2012.
+[Cho56]   W.-L. Chow, On equivalence classes of cycles in an algebraic variety, Ann. of Math. (2)
+          64 (1956), 450–479.
+[EZ85]    M. Eichler and D. Zagier, The Theory of Jacobi Forms, Birkhäuser, Boston, 1985.
+[Fab90]   C. Faber, Chow rings of moduli spaces of curves. II. Some results on the Chow ring of
+          M4 , Ann. of Math. (2) 132 (1990), no. 3, 421–449.
+[Fre91]   E. Freitag, Singular modular forms and theta relations, Lecture Notes in Mathematics,
+          vol. 1487, Springer-Verlag, Berlin, 1991.
+[FvdG04a] C. Faber and G. van der Geer, Sur la cohomologie des systèmes locaux sur les espaces
+          de modules des courbes de genre 2 et des surfaces abéliennes. I, C. R. Math. Acad. Sci.
+          Paris 338 (2004), no. 5, 381–384.
+22                                        MARTIN RAUM
+
+[FvdG04b]           , Sur la cohomologie des systèmes locaux sur les espaces de modules des courbes
+            de genre 2 et des surfaces abéliennes. II, C. R. Math. Acad. Sci. Paris 338 (2004), no. 6,
+            467–470.
+[HZ76]      F. Hirzebruch and D. Zagier, Intersection numbers of curves on Hilbert modular surfaces
+            and modular forms of Nebentypus, Invent. Math. 36 (1976), 57–113.
+[IK11]      T. Ibukiyama and R. Kyomura, A generalization of vector valued Jacobi forms, Osaka
+            J. Math. 48 (2011), no. 3, 783–808.
+[IPY12]     T. Ibukiyama, C. Poor, and D. Yuen, Jacobi forms that characterize paramodular forms,
+            arXiv: 1209.3438, 2012.
+[KM86]      S. Kudla and J. Millson, The theta correspondence and harmonic forms. I, Math. Ann.
+            274 (1986), no. 3, 353–378.
+[KM87]              , The theta correspondence and harmonic forms. II, Math. Ann. 277 (1987),
+            no. 2, 267–314.
+[KM90]              , Intersection numbers of cycles on locally symmetric spaces and Fourier coeffi-
+            cients of holomorphic modular forms in several complex variables, Inst. Hautes Études
+            Sci. Publ. Math. (1990), no. 71, 121–172.
+[Kud97]     S. Kudla, Algebraic cycles on Shimura varieties of orthogonal type, Duke Math. J. 86
+            (1997), no. 1, 39–78.
+[Lec86]     F. Lecomte, Rigidité des groupes de Chow, Duke Math. J. 53 (1986), no. 2, 405–426.
+[Maa79a]    H. Maass, Über eine Spezialschar von Modulformen zweiten Grades, Invent. Math. 52
+            (1979), no. 1, 95–104.
+[Maa79b]            , Über eine Spezialschar von Modulformen zweiten Grades. II, Invent. Math. 53
+            (1979), no. 3, 249–253.
+[Maa79c]            , Über eine Spezialschar von Modulformen zweiten Grades. III, Invent. Math. 53
+            (1979), no. 3, 255–265.
+[MM10]      G. Mason and C. Marks, Structure of the module of vector-valued modular forms, J.
+            London Math. Soc. (2) bf 82 (2010), no. 1, 32–48.
+[Nis01]     T. Nishino, Function theory in several complex variables, Translation of Mathematical
+            Monographs, vol. 193, American Mathematical Society, Providence, RI, 2001, Translated
+            from the 1996 Japanese original by Norman Levenberg and Hiroshi Yamaguchi.
+[Poo11]     C. Poor, Formal series of Jacobi forms, Talk at Explicit theory of automorphic forms,
+            applications and compuations, CIRM, May 2011.
+[Rau12]     M. Raum, Computing Jacobi Forms and Linear Equivalences of Special Divisors, arXiv:
+            1212.1834, 2012.
+[Sko08]     N.-P. Skoruppa, Jacobi forms of critical weight and Weil representations, Modular forms
+            on Schiermonnikoog, Cambridge Univ. Press, Cambridge, 2008, pp. 239–266.
+[Tsu83]     R. Tsushima, An explicit dimension formula for the spaces of generalized automorphic
+            forms with respect to Sp(2, Z), Proc. Japan Acad. Ser. A Math. Sci. 59 (1983), no. 4,
+            139–142.
+[Zag81]     D. Zagier, Sur la conjecture de Saito-Kurokawa (d’après H. Maass), Seminar on Number
+            Theory, Paris 1979–80, Progr. Math., vol. 12, Birkhäuser Boston, Mass., 1981, pp. 371–
+            394.
+[Zha97]     S. Zhang, Heights of Heegner cycles and derivatives of L-series, Invent. Math. 130
+            (1997), no. 1, 99–152.
+[Zha09]     W. Zhang, Modularity of Generating Functions of Special Cycles on Shimura Varieties,
+            Ph.D. thesis, Columnia University, New York City, US-NY, 2009.
+
+     ETH, Dept. Mathematics, Rämistraße 101, CH-8092, Zürich, Switzerland
+     E-mail address: martin.raum@math.ethz.ch
+     URL: http://www.raum-brothers.eu/martin/
+

@@ -1,0 +1,67 @@
+RUN_START 2026-11-10 11:35:40 CST
+SCRIPT_SHA256 c01ea05c2b9de8c8e05991515a3d7141d3ae3962516cd6afce0d3c19f25fb16c
+== K: Kronecker symbols (Euler criterion, cross-checked vs sympy.jacobi) ==
+  (140/23) = +1
+PASS R5b (140/23)=+1 matches Local G4
+  (-20/23) = +1
+PASS R5b (-20/23)=+1 matches Local G4
+  (-7/23) = +1
+PASS R5b (-7/23)=+1 matches Local G4
+  (5/23) = -1
+PASS R5b (5/23)=-1 matches Local G4
+  (28/23) = -1
+PASS R5b (28/23)=-1 matches Local G4
+  (-35/23) = -1
+PASS R5b (-35/23)=-1 matches Local G4
+  (35/23) = +1
+PASS R5b (35/23)=+1 matches Local G4
+  (-4/23) = -1
+PASS R5b (-4/23)=-1 matches Local G4
+  (8/23) = +1
+PASS R5b (8/23)=+1 matches Local G4
+  (-8/23) = -1
+PASS R5b (-8/23)=-1 matches Local G4
+PASS (-7/17) = -1
+PASS (-7/113) = +1 (wrongly listed in 845cc6bc s4)
+PASS (-7/137) = +1 (wrongly listed in 845cc6bc s4)
+PASS (-7/193) = +1 (wrongly listed in 845cc6bc s4)
+PASS (-7/233) = +1 (wrongly listed in 845cc6bc s4)
+PASS (-7/281) = +1 (wrongly listed in 845cc6bc s4)
+== N2: lattice [[2,14],[14,28]] ==
+PASS det = -140
+PASS even (diagonal even)
+PASS signature (1,1) since det<0 for 2x2 symmetric => sig = 0
+  Smith diag: 2 70
+PASS D(N2) = Z/2 x Z/70, |D|=140
+PASS 2-torsion of D = gcd(2,d1)*gcd(2,d2) = 4
+PASS rho(-I) eigenspace dims (sig=0: permutation g->-g): +72 / -68
+PASS 140 fundamental discriminant (140=4*35, 35=3 mod 4 squarefree)
+PASS chi_140(-1) = sign(140) = +1 = e(-0/4)
+PASS |L'/L| enumerated = 140
+PASS discriminant bilinear form nondegenerate (=> sum_d e(-(t,d)) = 0 for t != 0)
+== R2: one-line congruence (replaces tautological v3 G5 loop) ==
+PASS (a-b) - 2(c-b) - (a+b-2c) expands to 0, so a+b=2c over Z => a = b mod 2
+== R4a: Jac(C), C: y^2 = x^5 - x, at p = 17, by brute-force point counts over F_17 and F_289 ==
+  disc(x^5-x) = -256
+FAIL disc(x^5-x) = 256 = 2^8 (good reduction at every odd p for the odd-degree model)
+  #C(F_17) = 30  #C(F_289) = 286  P(x) = x**4 + 12*x**3 + 70*x**2 + 204*x + 289
+PASS Frobenius char poly of Jac(C)/F_17 = (x^2+6x+17)^2 (expand difference == 0)
+  coefficients: [1, 12, 70, 204, 289]
+PASS x^3 coefficient 12 (trace of Frobenius -12)
+PASS x^2 coefficient 70, 17 does not divide 70 (p-rank 2: ordinary, g=2 criterion)
+PASS x^2+6x+17 irreducible over Q (disc -32 < 0)
+PASS Newton polygon of x^2+6x+17 at 17: v(17)=1, v(6)=0 => exactly one 17-adic unit root
+PASS s_f = -6 s_{f-1} - 17 s_{f-2}: s_f = (-6)^f mod 17, nonzero mod 17 for f=1..60
+PASS a_17(49a1) = 18 - #E(F_17) = 0 (point count; supersingular at 17 since 17 | a_17)
+== ER: erratum prime lists vs independent point counts p = 5..281 and vs v3 log ==
+PASS v3 log G3 lists 58 primes 5..281
+FAIL independent factor sets equal v3 log G3 factor sets at all 58 primes
+  mismatch: [(5, ['x**2-5'], ['x^2-5']), (7, ['x**2+7'], ['x^2+7']), (11, ['x**4+14*x**2+121'], ['x^4+14*x^2+121']), (13, ['x**2-13'], ['x^2-13']), (17, ['x**2+6*x+17'], ['x^2+6*x+17']), (19, ['x**4-34*x**2+361'], ['x^4-34*x^2+361']), (23, ['x**2+23'], ['x^2+23']), (29, ['x**2-29'], ['x^2-29']), (31, ['x**2+31'], ['x^2+31']), (37, ['x**2-37'], ['x^2-37']), (41, ['x**2+6*x+41'], ['x^2+6*x+41']), (43, ['x**4+14*x**2+1849'], ['x^4+14*x^2+1849']), (47, ['x**2+47'], ['x^2+47']), (53, ['x**2-53'], ['x^2-53']), (59, ['x**4-82*x**2+3481'], ['x^4-82*x^2+3481']), (61, ['x**2-61'], ['x^2-61']), (67, ['x**4+62*x**2+4489'], ['x^4+62*x^2+4489']), (71, ['x**2+71'], ['x^2+71']), (73, ['x**2-2*x+73'], ['x^2-2*x+73']), (79, ['x**2+79'], ['x^2+79']), (83, ['x**4+158*x**2+6889'], ['x^4+158*x^2+6889']), (89, ['x**2-18*x+89'], ['x^2-18*x+89']), (97, ['x**2-10*x+97'], ['x^2-10*x+97']), (101, ['x**2-101'], ['x^2-101']), (103, ['x**2+103'], ['x^2+103']), (107, ['x**4-178*x**2+11449'], ['x^4-178*x^2+11449']), (109, ['x**2-109'], ['x^2-109']), (113, ['x**2-18*x+113'], ['x^2-18*x+113']), (127, ['x**2+127'], ['x^2+127']), (131, ['x**4+62*x**2+17161'], ['x^4+62*x^2+17161']), (137, ['x**2+6*x+137'], ['x^2+6*x+137']), (139, ['x**4+206*x**2+19321'], ['x^4+206*x^2+19321']), (149, ['x**2-149'], ['x^2-149']), (151, ['x**2+151'], ['x^2+151']), (157, ['x**2-157'], ['x^2-157']), (163, ['x**4-322*x**2+26569'], ['x^4-322*x^2+26569']), (167, ['x**2+167'], ['x^2+167']), (173, ['x**2-173'], ['x^2-173']), (179, ['x**4-34*x**2+32041'], ['x^4-34*x^2+32041']), (181, ['x**2-181'], ['x^2-181']), (191, ['x**2+191'], ['x^2+191']), (193, ['x**2+22*x+193'], ['x^2+22*x+193']), (197, ['x**2-197'], ['x^2-197']), (199, ['x**2+199'], ['x^2+199']), (211, ['x**4-226*x**2+44521'], ['x^4-226*x^2+44521']), (223, ['x**2+223'], ['x^2+223']), (227, ['x**4+446*x**2+51529'], ['x^4+446*x^2+51529']), (229, ['x**2-229'], ['x^2-229']), (233, ['x**2+30*x+233'], ['x^2+30*x+233']), (239, ['x**2+239'], ['x^2+239']), (241, ['x**2-26*x+241'], ['x^2-26*x+241']), (251, ['x**4-466*x**2+63001'], ['x^4-466*x^2+63001']), (257, ['x**2+30*x+257'], ['x^2+30*x+257']), (263, ['x**2+263'], ['x^2+263']), (269, ['x**2-269'], ['x^2-269']), (271, ['x**2+271'], ['x^2+271']), (277, ['x**2-277'], ['x^2-277']), (281, ['x**2-18*x+281'], ['x^2-18*x+281'])]
+  (-7/p)=-1, quadratic factor nonzero trace: [17, 41, 73, 89, 97, 241, 257]
+  (-7/p)=-1, irreducible quartic x^4+cx^2+p^2, p !| c: [19, 59, 83, 131, 139, 227, 251]
+  (-2/p)=+1 with quadratic factor (p, squarefree part of a^2-4p): [(17, -2), (41, -2), (73, -2), (89, -2), (97, -2), (113, -2), (137, -2), (193, -2), (233, -2), (241, -2), (257, -2), (281, -2)]
+PASS erratum item 1 list = 17,41,73,89,97,241,257
+PASS erratum item 1 quartic-ordinary list = 19,59,83,131,139,227,251, all = 3 mod 8
+PASS erratum item 2: 12 primes, list as filed, all squarefree part -2
+ALL_CHECKS FAIL (40)
+EXIT 0

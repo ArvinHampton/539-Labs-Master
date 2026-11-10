@@ -1,0 +1,73 @@
+page,id,title,snip
+17,5.1,,"Theorem 5.1. If k ≥ 2 is squarefree, then gk k(k + 2) = 0."
+17,5.3,,"Theorem 5.3. Let b ∈ {1, 2}, j ∈ Z, and let k = pa be an odd prime power with"
+21,1.1,,"Theorem 1.1] states: if ∆1 ≤ 0 and minr gcd2 (mr , `)/mr ≥ ∆3 (`)/24 for all 1 ≤ ` ≤ L, then for all"
+23,6.6,,"Theorem 6.6. Let k be odd, s ≥ 3, k > 2s, k | s2 − 1. Then A1 > A2 , except for (s, k) = (4, 15)"
+27,7.6,,"Theorem 7.6. For every d ≥ 0, g2 (d) = 0 or sign g2 (d) = (−1)⌊d/2⌋ . Moreover g2 (d) 6= 0 for all"
+27,7.7,,Theorem 7.7. Let k ≥ 8 be even and dk = (k + 2)2 − 3.
+44,11.1,Shared remainder,"Theorem 11.1 (Shared remainder). As formal q-series,"
+44,11.2,"Real-quadratic
+                     √          decomposition and ray class",Theorem 11.2 (Real-quadratic
+45,11.3,Radial asymptotics and partial zeta  √   values,"Theorem 11.3 (Radial asymptotics and partial zeta  √   values). As t → 0+ , with q = e−t , Psorth ="
+45,11.4,Gauss-mean pattern and zero set,"Theorem 11.4 (Gauss-mean pattern and zero set). For gcd(h,      √ m) = 1: G(h/m) = 0 if 2 | m"
+45,11.5,Baker obstruction: scalar no-go,Theorem 11.5 (Baker obstruction: scalar no-go). (i) (Additive.) There is no identity S =
+45,11.6,Theta lift and vector-valued S/T law,"Theorem 11.6 (Theta lift and vector-valued S/T law). Let uα,β (α ∈ ({0, a}+L′ )/Z2 , β ∈ {0, −a};"
+46,11.7,Lewis–Zagier√period formula,Theorem 11.7 (Lewis–Zagier√period formula). For z ∈ H let Ψ(z) = EL (−1/z) − (z/ 35)ER (z)
+46,11.8,Eisenstein/cusp split,"Theorem 11.8 (Eisenstein/cusp split). uL = ua,0 and uR are pure Eisenstein (combinations of"
+47,11.9,Herglotz closed form,"Theorem 11.9 (Herglotz closed form). On U = H ∪ {Re z > 0},"
+47,11.10,Closed form of ER,Theorem 11.10 (Closed form of ER ).
+51,14.1,Profile S/T law,"Theorem 14.1 (Profile S/T law). For all α, β ∈ Q2 and all x ∈ Q \ {0},"
+57,15.3,Cocycle of the E-part,"Theorem 15.3 (Cocycle of the E-part). Let s = 7, and let uL and EL be as in §15."
+64,19.3,"Tensor factorisation, s = 7","Theorem 19.3 (Tensor factorisation, s = 7). (i) In the adapted basis u′x,ϵ,δ built on the generator"
+65,19.5,Tensor factorisation for odd s,Theorem 19.5 (Tensor factorisation for odd s). Let s ≥ 5 be odd and n = ns . Then L′ /Z2 ∼    = Z/n
+66,20.1,Dimensions,"Theorem 20.1 (Dimensions). (i) Orbit bound. dim V ≤ #{consistent hγ, −1i-orbits}, and the"
+68,20.5,dim V (98,"Theorem 20.5 (dim V (98) = 2406). At s = 98 (m = 7), dim V = 2406. The kernel of the lift on"
+70,20.11,Prime-square structure,"Theorem 20.11 (Prime-square structure). Assume (C1) Theorem 19.5 and (C2) CRT surjectivity,"
+72,21.2,Coset property,"Theorem 21.2 (Coset property). For every s and every c-part c, Tc +ψ(W) = Tc , and S0 = ψ(W)."
+74,22.1,Hs in closed form,"Theorem 22.1 (Hs in closed form). (i) Structure. Q(c1 ) = −(s − 2)/2, Q(c2 ) = −(7s − 32)/2,"
+75,22.5,Period 72 at x = 13,"Theorem 22.5 (Period 72 at x = 13 ). Let ε = (−1)v2 (gcd(s,8)) . Then ea depends only on (s mod"
+80,23.7,Closed forms for Hsaxes,"Theorem 23.7 (Closed forms for Hsaxes ). Let cr be the coeﬀicient of tr in Hsaxes (e−t ) (x = 0),"
+81,24.1,"Cthird : one coset, one cone weight, one       P kernel, two chains","Theorem 24.1 (Cthird : one coset, one cone weight, one       P kernel, two chains). Let F = [e1 , γe"
+82,24.4,Phase obstruction,"Theorem 24.4 (Phase obstruction). Let Γ ⊂ SL2 (Z) have finite index, ρ any finite-dimensional"
+82,24.5,Sign obstruction,"Theorem 24.5 (Sign obstruction). If V is holomorphic and finite-dimensional on Γ 3 S, T N ,"
+82,24.6,Structure of Cthird,"Theorem 24.6 (Structure of Cthird ). (i) The decomposition above, with ϑhol a signature-(1, 1)"
+83,25.1,Rational ζ-curve,"Theorem 25.1 (Rational ζ-curve). For every integer s ≥ 3, with c0 = s/(4(s − 2)) and ζE (w; s) ="
+83,25.2,Radial expansion of gs,"Theorem 25.2 (Radial expansion of gs ). For every real s > 0, gs (e−t ) ∼ k≥0 ck (s)tk as t → 0+ ,"
+86,26.2,Weil realisation of the label representation,Theorem 26.2 (Weil realisation of the label representation). (i) ρlab ∼= ρN2 as representations
+88,26.7,N2 -polarised K3 surfaces,"Theorem 26.7 (N2 -polarised K3 surfaces). (i) The primitive embedding N2 ,→ ΛK3 is unique"
+89,26.9,Automorphisms of N2 -polarised K3 surfaces,"Theorem 26.9 (Automorphisms of N2 -polarised K3 surfaces). Let X be as in Theorem 26.7, with"
+92,27.4,Uniqueness of the Maass completion,Theorem 27.4 (Uniqueness of the Maass completion).              (a) M (ρ) = C ulift ⊕ S(ρ).
+94,27.7,Uniqueness and residual ambiguity of the vector completion,"Theorem 27.7 (Uniqueness and residual ambiguity of the vector completion). Let u = ulift , with"
+95,27.4,a,Theorem 27.4(a) and Proposition 27.2. Not claimed: that every real-analytic ρ-cocycle with Lewis–
+97,27.13,Dimension of the cusp space,Theorem 27.13 (Dimension of the cusp space). dim S(ρ)A3 X + = dim S(ρ)B1 X +                        
+101,11.11,,"Theorem 11.11 is not part of the law and stays Category B. (iii): A−1 = s(s−2)    −s 2    gives a,"
+106,33.4,T -law and S-law,"Theorem 33.4 (T -law and S-law). For α, β ∈ Q2 and x ∈ Q,"
+110,34.5,Profile of C and of q −7/20 C,Theorem 34.5 (Profile of C and of q −7/20 C). Let G(x) = (2m)−2 v mod 2m e(xQ7 (v)). Then
+110,34.6,Radial asymptotics at leading order,Theorem 34.6 (Radial asymptotics at leading order). Let I = log(6 + 35)/(2 35). For every
+110,34.7,Vector-valued S-law of C at leading order,Theorem 34.7 (Vector-valued S-law of C at leading order). Let ΛC (y) = limt→0+ t C(e(y)e−t ).
+112,35.4,Expansion of a piece,"Theorem 35.4 (Expansion of a piece). Let (p, q, r), l1 , l2 , Q0 be as above with p, r > 0, q ≥ 0,"
+113,35.6,Radial expansion of the companion series,Theorem 35.6 (Radial expansion of the companion series). For each of the 105 companion series
+118,37.10,,"Theorem 37.10. Bĉ1 ,ê2 = ε 140 ϑ+ ϑ− with ε ∈ {±1} fixed by the orientation of ê2 . It vanishes"
+118,37.11,,"Theorem 37.11. (∆0 − 14 )Φorth = π2 y 3/2 Bz(µ),z ′ (µ) µ=0 = π2 140 y 3/2 ϑ+ ϑ− (the sign being tha"
+119,37.13,,Theorem 37.13. For the 105 companions:
+120,38.2,,"Theorem 38.2. Let Fbodd = 12 G     b For every companion and rational x, Fbodd (x + it/2π) ="
+121,38.4,,"Theorem 38.4. Let E = 12 (1 + s1 s2 ). For every companion and rational x, A1 (S E ) = 0."
+121,38.5,,"Theorem 38.5. For every companion and P     rational x, A1 = Alines"
+122,39.2,,"Theorem 39.2. For every companion and rational x, A2 (S o ) = 0."
+122,39.3,,"Theorem 39.3. For every companion and rational x, with the coset classes r of α + Z2 modulo a"
+122,39.4,,Theorem 39.4. A2 = Alines2    + Acorner
+126,39.23,,"Theorem 39.23. For every real-weight sum Y and rational x 6= 0,"
+128,40.1,Equality of compact and ordinary induction,Theorem 40.1 (Equality of compact and ordinary induction). Let χ : P → Fp be a smooth
+129,40.2,Socle reduction to K1 -invariants,Theorem 40.2 (Socle reduction to K1 -invariants). Let π be any smooth representation of K (or
+129,40.3,Dictionary identities,"Theorem 40.3 (Dictionary identities).         1. With the conventions above,"
+130,40.5,Filtration weight ten,Theorem 40.5 (Filtration weight ten).
+130,40.6,Breuil socle formula,Theorem 40.6 (Breuil socle formula). Let ρ be absolutely irreducible with
+131,40.10,Classification of irreducibles,Theorem 40.10 (Classification of irreducibles). Every irreducible Fp -representation V of GL2 (Fp )
+132,41.1,Local cite-lift F1,Theorem 41.1 (Local cite-lift F1). Consider the residual path problem (RPP) of deciding whether
+135,41.7,Dimension and narrow components,"Theorem 41.7 (Dimension and narrow components). One has dim V35    Hilb = 14, with the split (41.3)"
+136,41.10,Rank-one classifier D1,Theorem 41.10 (Rank-one classifier D1 ). In the thin truncated complex F one has
+142,43.8,Bare stacked matrix of rank 24,Theorem 43.8 (Bare stacked matrix of rank 24). With the complementary selectors of Defini-
+142,43.9,Original-table matrix M of exact rank 36,Theorem 43.9 (Original-table matrix M of exact rank 36). Let H be built from the original table
+143,43.10,Singleton tuning restores full rank,Theorem 43.10 (Singleton tuning restores full rank). Tune only axy3 from 6 − s to 7 − s. Then
+145,8.1,"Part I, §8.1","Theorem 8.1 (Part I, §8.1), parts 1 and 2."
+146,44.3,The normalized Bridge Series and the 35-component law vector,Theorem 44.3 (The normalized Bridge Series and the 35-component law vector). The following

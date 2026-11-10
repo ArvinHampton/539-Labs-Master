@@ -1,0 +1,19 @@
+[0] irrep-labels .py sha256 ff80054190db1d7ef0ce365cdf9784afe5f21e067f63f74d3e12c2501cd08ea7 (MATCH ff800541); exec'ing its group/irrep part (text before the FEM section), its own output suppressed
+[A1] Aut(GL(2,3)) by exhaustive search over images of (z, x) (orders 8, 2; z = r_AB r_AC, x an order-2 element with <z,x> = Aut+), full homomorphism + bijection check: |Aut| = 48, inner 24, |Out| = 2
+[A1] order-8 classes: 2 (sizes [6, 6]); automorphisms swapping them: 24 of 48
+[A1] 3-dim Aut+ irrep 3(x)sgn: character on all order-8 elements = [-1]; fixed by every automorphism: True
+[A1] 3-dim Aut+ irrep 3: character on all order-8 elements = [1]; fixed by every automorphism: True
+[A2] Aut(Isom) by exhaustive search over images of the Coxeter triple (involutions; product orders 8, 2, 3), full homomorphism + bijection check: |Aut| = 192, |Z| = 2, |Inn| = 48, |Out| = 4
+[A2]  48 automorphisms, preserve Aut+ (holomorphic subgroup): True; induced permutation of the 13 Isom irreps: (I11 I12)
+[A2]  48 automorphisms, preserve Aut+ (holomorphic subgroup): True; induced permutation of the 13 Isom irreps: id
+[A2]  48 automorphisms, preserve Aut+ (holomorphic subgroup): False; induced permutation of the 13 Isom irreps: (I2 I4)(I7 I10)
+[A2]  48 automorphisms, preserve Aut+ (holomorphic subgroup): False; induced permutation of the 13 Isom irreps: (I2 I4)(I7 I10)(I11 I12)
+[A2] Aut+ labels of the swapped 3-dim irreps: I7 -> 3(x)sgn, I8 -> 3(x)sgn, I9 -> 3, I10 -> 3
+[F4'] corrected sign format of the 69a10b84 [F4] table (|cos psi| = |cos(pi k/8)|/sin(pi/3); cos psi fixed only up to sign):
+     k=1: cos psi = ±1.066804 -> no real psi (|cos psi| > 1): no SO(3) rep
+     k=2: cos psi = ±0.816497 -> psi = 0.615480 rad (real)
+     k=3: cos psi = ±0.441885 -> psi = 1.113098 rad (real)
+     k=4: cos psi = 0 -> psi = 1.570796 rad (real)
+     k=5: cos psi = ±0.441885 -> psi = 1.113098 rad (real)
+     k=6: cos psi = ±0.816497 -> psi = 0.615480 rad (real)
+     k=7: cos psi = ±1.066804 -> no real psi (|cos psi| > 1): no SO(3) rep

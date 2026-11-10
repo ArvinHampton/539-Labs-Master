@@ -1,0 +1,2 @@
+# SOFTSF PRESS — PP Tubulin leads Kerr + Π/Λ_22 (2026-10-31)
+Ask: Soft SF CONFIRM hash match (write-only). FINDINGS bridges/PROFESSOR_PROOF/PP-FINDINGS-TUBULIN_LEADS_KERR_PI_LAMBDA_2026-10-31.md sha256 1f78fa64a08adb22814ae230459fc063e2c4c38458f91e5256a6fd7dc3baa337. Kerr BLOCKED (no Owner Written unlock). Lead 2: projector/co-isometry/DFT lemmas PROVED; Λ_22=ℤ^22 + helical reading invented pending mathematical proof. tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 tip_touched NO. No RECS. No CERT. REPORTS ONLY.

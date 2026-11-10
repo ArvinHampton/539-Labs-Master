@@ -1,0 +1,2 @@
+# ACK — NL Soft SF cosmetic t218u (2026-10-26, America/Chicago)
+Executor ACK: Soft SF open flags SF1–SF2 absorbed cite-only on stub per Auditor MATCH-with-SF c5187ba9…; MATCH-with-SF de1638da… cited on stub. Tip e84a3a81… tip_touched NO. Stub da790c1f…→e8c6fccb…; stub sidecar MATCH. Components HOLD (Owner Park) kept; no invent; Soft SF invent HOLD tip fill else; Packaging Owner-hold; Q7 KEEP. Requests Auditor Soft SF CONFIRM.

@@ -1,0 +1,2 @@
+# Inventory t718u — deduce_t718u_ga3_revise_menu/
+PREREG.md, PREREG.sha256, RESULTS.md, author_candidates/AUTHOR_CANDIDATE_GA3_revise_menu_2026-10-25.md (a05693fbfd6da3030f762241845f040a133e611b6474b7401c030020c01d1523), FINDINGS_DRAFT_for_Auditor_CONFIRM_t718u_2026-10-25.md, SHA256SUMS. Inputs read-only: deduce_t713u_ga3_fill (REJECTED t717u), deduce_t712u_ga3_compute. No data/, no scripts (no compute).

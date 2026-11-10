@@ -1,0 +1,5 @@
+P(t)= 106053121*t**4/38400000 + 27*t**3/125 + 129159359*t**2/9600000 + 27*t/125 + 31607/10000
+real roots (exact): [] []
+roots with t>-3: []
+disc sign check / min of P on R: 3.159885222 (informational grid, NOT Cat A)
+P(-3)= 874171907/2560000

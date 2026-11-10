@@ -1,0 +1,5 @@
+# Soft SF PRESS — CF980 in-set runner Rec A AUTO
+OWNER_WRITE sha256: 8460682f8531538c52540aec1146c5de052808ab2456de0db6d569c048aee8c1
+ASSIGN sha256: 8de2068e676ad3aa9009e2ceee59e252b49a07ec6fe1adf8f1936ca719c70af5
+Absorb FINDINGS_MR1_CF980_MORE_PRIMES_CRT_H_WORK a472e4b3…. tip Soft SF LOCK 7cddb188… tip_touched NO.
+Order: Soft SF CONFIRM Write-only / no tip fold.

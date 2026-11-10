@@ -1,0 +1,24 @@
+{
+  "recorded_at": "2026-11-05T16:01:49.155681-06:00",
+  "authority": "Owner DIRECT live call 25ed12d6, Nov5 about15:58CST",
+  "weekly_usage_stop_percent": 90,
+  "supersedes_percent": 80,
+  "fresh_observed_percent": 77.1,
+  "stop_triggered": false,
+  "at_threshold": "Immediately stop all computational research and all active jobs, notify Owner, latch until explicit Owner release; no finalization or report-collection exception",
+  "measurement": "Before-work and safe-checkpoint readings; not a continuous platform cap; no usage polling routine",
+  "validation": "Mathematical proofs: logic, assumptions, derivations, conclusions in twelve submissions, including rigorous Eigen kernel height bound",
+  "file_validation": "STOPPED by Owner instruction: no hash checks, completeness validation, tampering or source-consistency checks",
+  "file_duties": "RESUMED: delivery, inventory, review requests, question compilation; four primaries under Professor Proof alongside or instead of proof review as coordinated",
+  "actual_policy_delivery": "Successful delivery to all twelve teammates and main Grok Bot this turn",
+  "pp_exact_status_reply": "Requested directly, pending",
+  "actual_primary_reports": {
+    "Eigen": "Reports rigorous N36 RREF height-bound proof started via Cramer/Hadamard; no Sage process running; 25-prime holdout fails; no help needed yet",
+    "NonLocal": "Reports proof-validation started: MR2 geometric QI/isometry/junction; primary T3/Haar/norm/Rc; missing proof bodies/definitions needed, not extra researcher",
+    "Agent": "Primary status pending; PR2 helper idle awaiting concrete submission; parent asked Agent to route agent.md/B12",
+    "Local": "Fresh primary status pending"
+  },
+  "no_gemini_without_explicit_owner_instruction": true,
+  "prior_gemini_round": "One expanded round explicitly requested15:54; no external send confirmed; no new rounds authorized by this record",
+  "protected_science_state": "Locks, invention hold and No CERT remain; no proof adopted by this record"
+}

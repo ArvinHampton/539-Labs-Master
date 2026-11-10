@@ -1,0 +1,42 @@
+[
+  {
+    "name": "breuil_mezard",
+    "url": "https://numdam.org/item/AST_2010__331__117_0.pdf",
+    "observed": "2026-11-05T14:09:19.306228-06:00",
+    "curl_exit": 28,
+    "http": "200",
+    "error": "curl: (28) Operation timed out after 25000 milliseconds with 1559728 out of 7871993 bytes received"
+  },
+  {
+    "name": "colmez",
+    "url": "https://www.numdam.org/item/AST_2010__330__281_0.pdf",
+    "observed": "2026-11-05T14:09:19.307086-06:00",
+    "curl_exit": 28,
+    "http": "200",
+    "error": "curl: (28) Operation timed out after 25000 milliseconds with 1519726 out of 23482177 bytes received"
+  },
+  {
+    "name": "maulik_pandharipande",
+    "url": "https://arxiv.org/pdf/0705.1653",
+    "observed": "2026-11-05T14:08:54.513019-06:00",
+    "curl_exit": 0,
+    "http": "200",
+    "error": "",
+    "bytes": 433084,
+    "sha256": "8164f7a57d6875f51579bb40598720e37ed5f35205e166d52911471803bfc981",
+    "pdf_magic": true,
+    "pdftotext_exit": 0
+  },
+  {
+    "name": "klemm_maulik_pandharipande_scheidegger",
+    "url": "https://arxiv.org/pdf/0807.2477",
+    "observed": "2026-11-05T14:08:54.520698-06:00",
+    "curl_exit": 0,
+    "http": "200",
+    "error": "",
+    "bytes": 366430,
+    "sha256": "fad4501474b3c55e8a83f946ad90d51c2892e33faa50b0ef8b1bdb8c484231a7",
+    "pdf_magic": true,
+    "pdftotext_exit": 0
+  }
+]

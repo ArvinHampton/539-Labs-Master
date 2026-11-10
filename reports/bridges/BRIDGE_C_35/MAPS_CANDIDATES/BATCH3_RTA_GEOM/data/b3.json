@@ -1,0 +1,29 @@
+{
+ "C12": {
+  "size": 0,
+  "fibre_counts": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "pass": false
+ },
+ "C13": {
+  "pairs": 297,
+  "gate_353": false,
+  "preserved": false,
+  "sym_diff": 270,
+  "verdict": "VOID"
+ },
+ "C14": {
+  "size_SQ": 0,
+  "size_S": 0,
+  "intersection": 0,
+  "pass": false
+ }
+}

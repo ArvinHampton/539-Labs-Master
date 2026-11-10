@@ -1,0 +1,238 @@
+                                                  PARTIAL THETA FUNCTIONS AND MOCK MODULAR FORMS AS
+                                                                q-HYPERGEOMETRIC SERIES
+
+                                                          KATHRIN BRINGMANN, AMANDA FOLSOM, AND ROBERT C. RHOADES
+arXiv:1109.6560v1 [math.NT] 29 Sep 2011
+
+
+
+
+                                                            Dedicated to the visionary Ramanujan, on the 125th anniversary of his birth.
+
+
+                                                  Abstract. Ramanujan studied the analytic properties of many q-hypergeometric series. Of those,
+                                                  mock theta functions have been particularly intriguing, and by work of Zwegers, we now know
+                                                  how these curious q-series fit into the theory of automorphic forms. The analytic theory of partial
+                                                  theta functions however, which have q-expansions resembling modular theta functions, is not well
+                                                  understood. Here we consider families of q-hypergeometric series which converge in two disjoint
+                                                  domains. In one domain, we show that these series are often equal to one another, and define
+                                                  mock theta functions, including the classical mock theta functions of Ramanujan, as well as certain
+                                                  combinatorial generating functions, as special cases. In the other domain, we prove that these series
+                                                  are typically not equal to one another, but instead are related by partial theta functions.
+
+
+
+
+                                                                                         1. Introduction
+                                          1.1. Curious q-series. Partial theta functions have played a curious role in the theory of partitions
+                                          (see for instance [1, 2, 10]). For example, Rogers proved the following identity for |q| < 1:
+                                                                       X (−1)n q n(n+1)
+                                                                                    2     X  −12  n2 −1
+                                          (1.1)                                         =              q 24 =: ψ(q),
+                                                                              (−q)n               n
+                                                                       n≥0                n≥0
+                                                                     Qn−1         j
+                                          where (a)n = (a; q)n := j=0 1 − aq , and ·· denotes the usual Kronecker symbol. Andrews
+                                                                                            
+
+                                          [4] provided a partition theoretic interpretation, giving a relationship between those partitions into
+                                          distinct parts and those with odd largest part and even largest part. The series defined by ψ(q) in
+                                          (1.1) is an example of a partial theta function, meaning that while the series expansion resembles
+                                          that of a theta function, the sum runs only over half of a lattice instead of a full one. Despite a
+                                          closeness in the q-series expansions of partial theta functions and usual theta functions, which are
+                                          modular forms, the analytic theory of partial theta functions is not well understood.
+                                             Rogers’s identity in (1.1) is by no means an isolated example of this type. There are many
+                                          instances in the literature of q-hypergeometric series that are combinatorial generating functions,
+                                          partial theta functions, mock theta functions, or modular forms. For example, with |q| < 1, we
+                                          have the combinatorial q-hypergeometric series [3]
+                                                                                              2
+                                                                                X          qn              XX
+                                          (1.2)               R(w; q) := 1 +                         = 1 +    R(m, n)wm q n ,
+                                                                                      (wq)n (w−1 q)n
+                                                                                n≥1                            n≥1 m∈Z
+
+                                          where R(m, n) denotes the number of integer partitions of n with rank m, and Dyson’s rank [12] of
+                                          a partition equals the largest part minus its number of parts. A well known theorem, using Durfee
+                                          squares, gives that R(1; q) = q 1/24 /η(τ ) (q = e2πiτ , τ ∈ H) is a modular form of weight −1/2. Here
+
+                                             2010 Mathematics Subject Classification. 33D15, 11F37, 11F27.
+                                             Key words and phrases. Ramanujan; modular form; partial theta function; mock theta function; q-hypergeometric
+                                          series.
+                                                                                                   1
+2                  KATHRIN BRINGMANN, AMANDA FOLSOM, AND ROBERT C. RHOADES
+
+           1
+η(τ ) := q 24 (q)∞ is Dedekind’s eta-function. Moreover, setting w = −1 in (1.2), one obtains f (q),
+Ramanujan’s third order mock theta function which he defined in his last letter to Hardy as
+                                                     X q n2
+(1.3)                                   f (q) := 1 +         ,
+                                                      (−q)2n
+                                                                n≥1
+
+which, in analogy to Rogers’s partial theta function identity (1.1), is a q-hypergeometric series
+admitting a combinatorial interpretation of f as the generating function for the difference between
+the number of integer partitions with an even number of parts and those with an odd number
+of parts. Thanks to the breakthrough of the 2002 doctoral thesis of Zwegers [28], we now finally
+understand how the mock theta functions fit into the theory of modular forms. Loosely speaking,
+Zwegers showed that the mock theta functions satisfy modular transformation laws after they
+are “completed” by the addition of certain non-holomorphic integrals. Zwegers’s discovery led to
+the development of a more overarching theory of harmonic weak Maass forms, which are certain
+nonholomorphic modular forms. Many advances have been made in the last decade in this area,
+notably by the first author and Ono, and their collaborators. (See for instance, the surveys of Ono
+[23] and Zagier [27] and the many references therein.) On the other hand, while there are tantalizing
+hints which suggest a connection between certain partial theta functions and Ramanujan’s mock
+theta functions, the analytic theory of the partial theta functions is not well understood. See, for
+instance, the works of Hikami, Lawrence-Zagier, and Zagier [17, 19, 26] on topological invariants
+of 3-manifolds. In this paper, we seek to understand further curiosities evoked by partial theta
+functions and mock theta functions. In particular, we study relationships between these functions
+inside and outside the unit disc D := {q ∈ C : |q| < 1}. We first illustrate this with a motivating
+example.
+1.2. An example. Consider the following q-hypergeometric series, defined for |q| < 1 by
+                                              X (−1)n+1 q n
+(1.4)                          f ⋆ (q) := 1 +               .
+                                                  (−q)n
+                                                               n≥1
+
+It is known (see (26.22) of [13] for example) that inside the unit disc f ⋆ (q) equals Ramanujan’s
+mock theta function f (q), defined in (1.3). On the other hand, f ⋆ (q) also converges outside of the
+unit disc. For |q| < 1 we have, using (3.6) below (or equation (4.16) of [17]), as well as (4.20) of
+[17]
+                                                                 n(n−1)
+                                                              nq
+                                                         X          2
+                                    ⋆       −1
+                                                 
+(1.5)                           f       q            = 1− (−1)          = 2ψ(q).
+                                                               (−q)n
+                                                         n≥1
+
+    Note that the function f ∗ (q) defined in [17] is not equal to the function f ⋆ (q) defined in (1.4).
+Continuing with this example, the q-hypergeometric series f (q) from (1.3) also converges outside
+of the unit disc. In light of (1.5), one might expect f q −1 to equal 2ψ(q) (for |q| < 1), but this is
+not the case. The difference between f q −1 and the expected function 2ψ(q) is the series
+                                               1 X            n(n+1)
+(1.6)                               S(q) :=      2
+                                                       (−1)n q 2 ,
+                                            (−q)∞
+                                                               n≥0
+that is the quotient of a partial theta function and a modular form. This fact is due to an identity
+found in Ramanujan’s “lost” notebook (given in [5], valid for |q| < 1):
+                                       f q −1 = 2ψ(q) − S(q).
+                                              
+
+We note that this identity may also be derived from (2.6) using (3.7).
+                           PARTIAL AND MOCK q-HYPERGEOMETRIC SERIES                                         3
+
+  Consider now the series
+                                                                       2
+                                                         X        qn
+(1.7)                                       φ(q) :=                           .
+                                                               (−q 2 ; q 2 )n
+                                                         n≥0
+
+Again this series converges inside and outside the unit disc. In the region |q| < 1 it is one of
+Ramanujan’s original (third order) mock theta functions. In his “lost” notebook (see [8] p. 235),
+Ramanujan showed that for |q| < 1
+                                       φ −q −1 = ψ(q).
+                                               
+
+Hence, by (1.5), as before we might expect that the two third order mock theta functions satisfy
+φ(q) = 12 f (−q). However, this is again not the case. Interestingly, we know that the mock theta
+functions φ(q) and f (−q) are related via the Mock Theta Conjectures (see for instance (3.12) of
+[14]). Namely
+                                            2φ(q) = f (−q) + T (q),
+where
+                                                           (q 2 ; q 2 )7∞
+(1.8)                                      T (q) :=                           .
+                                                         (q)3∞ (q 4 ; q 4 )3∞
+The function T (q) is, up to a power of q, a modular form. We summarize the above discussion with
+the following diagram (|q| < 1):
+
+              f (q)                  = f ⋆ (q)            = 2φ(−q) − T (−q)                 mock theta
+                                                                 
+(1.9)
+                                                                 
+                y                            y                     y
+
+                                     = f ⋆ q −1
+                                                                            
+              f q −1 + S(q)                               = 2φ −q −1                        partial theta
+
+That is, we have three different q-hypergeometric series f (q), f ⋆ (q), and φ(q) (that are mock theta
+functions) which define the same function inside D, but different functions outside D. The functions
+outside D include the same partial theta function ψ(q), and their difference S(q) is defined by a
+partial theta function and a modular form.
+Remark. Partial theta functions arise naturally in many q-series identities, and are often written
+in a slightly different form from that of ψ(q) in (1.1). For example, it is not difficult to see that
+                            X n(3n+1)              X n(3n+1)        X n(3n+1)
+                     ψ(q) =     q 2     1 − q 2n+1 =      q 2 −            q 2 .
+                           n≥0                                    n≥0                n≤−1
+
+From this perspective, such series are often called false theta functions (see [4]).
+
+1.3. q-hypergeometric families and mock theta functions. In this paper, we study families
+of q-hypergeometric series inside and outside D, that include the classical mock theta functions
+of Ramanujan, as well as certain combinatorial generating functions, as special cases. We show
+that in more generality, curiosities as depicted by (1.9) also hold for the aforementioned families of
+functions. Throughout we denote
+                        (a1 , . . . , ar )n = (a1 , . . . , ar ; q)n := (a1 )n · . . . · (ar )n .
+4                  KATHRIN BRINGMANN, AMANDA FOLSOM, AND ROBERT C. RHOADES
+
+    When |q| < 1, we consider the following families of q-hypergeometric series:
+
+                                                   X (−q)n q n(n+1)
+                                                                2
+(1.10)                             g2 (w; q) :=                            ,
+                                                         (w, w−1 q)n+1
+                                                   n≥0
+                                                   X        q n(n+1)
+(1.11)                             g3 (w; q) :=                        ,
+                                                         (w, w−1 q)n+1
+                                                   n≥0
+                                                   X (−1)n q n2 (q; q 2 )n
+(1.12)                             K(w; q) :=                                       ,
+                                                         (wq 2 , w−1 q 2 ; q 2 )n
+                                                   n≥0
+
+
+which define functions (in certain ranges of w which we will specify later) for both |q| < 1 and |q| > 1.
+Hickerson, and later Gordon and McIntosh [14, 15, 16], noticed that all of Ramanujan’s original
+mock theta functions can be written in terms of g2 (w; q) and g3 (w; q) for |q| < 1. Hence, these
+functions are called universal mock theta functions. The function K(w; q) appears in Ramanujan’s
+“lost” notebook [5], and is related by modular transformation to the universal mock theta function
+(1.10) [21]. The families of q-hypergeometric series discussed here are essentially “mock Jacobi
+forms”, which first occurred in Zwegers’s thesis [28] and were systematically studied by the first
+author and Richter [11]. For the purpose of this paper, we will not require this perspective.
+   The remainder of the paper is structured as follows. In §2 we provide background and useful
+tools and results from q-combinatorial analysis. In §3 - §5 we introduce and study many infinite
+families of q-hypergeometric series inside and outside D in analogy to the curiosities observed in
+(1.9).
+
+
+
+                                   2. q-combinatorial analysis
+   In this section, we provide some combinatorial identities which we require for the proofs of the
+main theorems. Many of the series studied in this paper are related to the basic hypergeometric
+series, defined by
+                                                                    X (aq)n
+                                F (a, b; t) = F (a, b; t, q) :=                     tn .
+                                                                          (bq)n
+                                                                    n≥0
+
+We refer the reader to [13] for a detailed discussion on these functions, including questions of
+convergence. These series satisfy various difference equations, including the following (see (2.4) of
+[13])
+
+                                                  1 − b b − atq
+(2.1)                           F (a, b; t) =          +        F (a, b; tq),
+                                                  1−t    1−t
+
+which lead to many interesting identities. One identity, the “Rogers-Fine identity,” that we will
+make use of here is as follows (see equation (1) of [24]):
+
+                                            X (a, atq/b)n bn tn q n2 −n 1 − atq 2n
+                                                                                           
+(2.2)                   F (a/q, b/q; t) =                                                      .
+                                                                 (b)n (t)n+1
+                                            n≥0
+

@@ -1,0 +1,23 @@
+HTTP/2 302 
+date: Thu, 05 Nov 2026 19:58:48 GMT
+content-type: text/html;charset=utf-8
+location: http://link.springer.com/10.1007/BF01389846
+server: cloudflare
+vary: Origin
+vary: Accept
+expires: Thu, 05 Nov 2026 20:09:02 GMT
+permissions-policy: interest-cohort=(),browsing-topics=()
+cf-cache-status: DYNAMIC
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=4siIQZvoe3n89LposKSGzwYJ%2Bl3kSCoYYIwhV445wVC0YBRx1pts3VHWLceX04WME%2BxFjkI904%2Fe421jQp9pR7Ja84papBoYw2nzexqgIirF4m5aA9cNyJDUySWIOPght354NN4%3D"}]}
+cf-ray: a55e6f7378bfc792-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/1.1 500 Internal Server Error
+Server: Pingora
+Date: Thu, 05 Nov 2026 19:58:48 GMT
+Content-Length: 0
+Cache-Control: private, no-store
+Connection: close
+

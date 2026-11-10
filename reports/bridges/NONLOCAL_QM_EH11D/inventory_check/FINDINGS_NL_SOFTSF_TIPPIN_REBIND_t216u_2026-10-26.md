@@ -1,0 +1,8 @@
+# FINDINGS — NL Soft SF tip Soft SF rebind t216u (2026-10-26, America/Chicago)
+- Tip /workspace/residual-c-field-WRITTEN_PREMISES_DRAFT.md sha before = after = e84a3a8169e138a602e09434cafcc92e30d4e0ca9b39f90d12929fa54654c5ec (PF-1+PF-2 Owner Write tip_post). tip_pre Soft SF LOCK 60f6ec607b234aae072cc2cdb3e3160738590714deae799545b220ccb87b92bb (history). tip_touched NO; no drift.
+- MR1 Soft SF §1v cited only: PF-1+PF-2 Owner Write LIVE tip_post; P2′ vacuous + wall ledger Cat B. No §1v content invented.
+- Stub /workspace/obs-bridge-NL-61Omega-photon-brane.md 947434b922ac1d461d33be3e0c03189b11606ef590ea4dce68db4c669aead49d → da790c1f22c4713407f5d26317f20f3a4bfd29942f7e8d9fa5815e09659cb8c5.
+- Backup /workspace/obs-bridge-NL-61Omega-photon-brane.pre-softsf-tippin-947434b9.md sha 947434b922ac1d461d33be3e0c03189b11606ef590ea4dce68db4c669aead49d (verified).
+- Rebound: rows 31–38 + t164u status line (9 occurrences) → "tip Soft SF pin e84a3a81… (pre-pins 60f6ec60… / 5569b14f… / 324a2134… / 86e439a8… / 59491fde… / f97d54c9… / 64d23f39… / d88b4dae… / d0b1e301… / d5f8b9d3… history)"; oldest d5f8b9d3… per t2156u log kept. Log lines t170u–t214u kept. t216u log appended.
+- Stub sidecar /workspace/obs-bridge-NL-61Omega-photon-brane.md.sha256 = da790c1f… (MATCH); inventory_check SHA256SUMS stub line recomputed.
+- Soft SF F3 CLOSED — cited from Physicist (MR1 §1r: ρ(−I)=S_lab⁻² / ≠ Id). FREEZE invent else. Components HOLD (Owner Park; not opened). invent HOLD else; Soft SF invent HOLD tip fill else. Packaging Owner-hold. Q7 KEEP; STOPPED KEEP; Hold R3. Cite-only; sealed packs unchanged. Bridge PARTIAL / READY NO.

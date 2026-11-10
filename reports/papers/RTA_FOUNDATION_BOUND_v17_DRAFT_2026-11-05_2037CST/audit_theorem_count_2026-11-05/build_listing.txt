@@ -1,0 +1,10 @@
+total 1408
+drwxr-xr-x 2 box box    4096 Nov  5 20:46 .
+drwxr-xr-x 8 box box    4096 Nov  5 20:51 ..
+-rw-r--r-- 1 box box    9661 Nov  5 20:46 compile_fix.txt
+-rw-r--r-- 1 box box    9661 Nov  5 20:46 compile_fix2.txt
+-rw-r--r-- 1 box box   33637 Nov  5 20:46 compile_fix3.txt
+-rw-r--r-- 1 box box   10320 Nov  5 20:41 compile_stdout.txt
+-rw-r--r-- 1 box box   34239 Nov  5 20:42 compile_stdout2.txt
+-rw-r--r-- 1 box box   66338 Nov  5 20:47 main_v17.log
+-rw-r--r-- 1 box box 1249705 Nov  5 20:47 main_v17.pdf

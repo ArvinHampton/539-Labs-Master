@@ -1,0 +1,13 @@
+PARI stack size set to 1000000000 bytes, maximum size set to 1000001536
+dim K = 4
+h1 in span(K) exactly on n<=600: 1 ; coordinates on matker columns K1..K4: [0, 0, -4, 0]
+h2 in span(K) exactly on n<=600: 1 ; coordinates on matker columns K1..K4: [0, 0, -6, 2]
+Traceback (most recent call last):
+  File "/workspace/quantum-comp/reports/evidence_local_t4429_ternary_2026-11-09/tt_v3b_sturm196_explicit.py", line 17, in <module>
+    print("rank[h1,h2] =",P("matrank(Mat([h1;h2]))"))
+                          ~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cypari2/pari_instance.pyx", line 800, in cypari2.pari_instance.Pari.__call__
+  File "cypari2/gen.pyx", line 4784, in cypari2.gen.objtogen
+  File "cypari2/convert.pyx", line 545, in cypari2.convert.PyObject_AsGEN
+  File "cypari2/handle_error.pyx", line 211, in cypari2.handle_error._pari_err_handle
+cypari2.handle_error.PariError: matrank: forbidden division t_INT / t_VEC (601 elts)

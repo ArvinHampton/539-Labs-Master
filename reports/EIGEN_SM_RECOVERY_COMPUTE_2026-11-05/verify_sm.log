@@ -1,0 +1,39 @@
+PASS O1 dim su(3)+su(2)+u(1)=8+3+1=12
+PASS O1 Z6 element acts trivially on all SM fields incl. H
+PASS O1 element has order 6 (lcm 3,2)
+PASS O2 15 Weyl components per generation
+PASS O2 Q=T3+Y: u=2/3,d=-1/3,nu=0,e=-1
+PASS O2 u^c,d^c,e^c charges -2/3,1/3,1
+PASS O3 grav-grav-U(1): sum Y = 0
+PASS O3 U(1)^3: sum Y^3 = 0
+PASS O3 SU(2)^2 U(1): sum_{doublets} c*Y = 0
+PASS O3 SU(3)^2 U(1): sum_{triplets} w*Y = 0
+PASS O3 SU(3)^3: #3 - #3bar = 2-2 = 0
+PASS O3 Witten SU(2): #doublets per gen = 3+1 = 4 even
+INFO anomaly solutions (in terms of yQ): [{yL: -3*yQ, yd: -4*yQ, ye: 6*yQ, yu: 2*yQ}, {yL: -3*yQ, yd: 2*yQ, ye: 6*yQ, yu: -4*yQ}]
+PASS O3 SM assignment is among solutions (yQ=1/6)
+PASS O4 anomaly sums are linear in N_g: cancel for any N_g (3 not forced by anomalies)
+PASS O5 U(3): 9 real params = 3 angles + 6 phases
+PASS O5 CKM: 3 angles, 1 phase (2n-1=5 phases removed)
+PASS O5 PMNS Majorana: 3 angles, 1 Dirac + 2 Majorana phases
+PASS O5 PDG parametrisation is unitary (V V^dag = I)
+PASS O5 Jarlskog J = c12 s12 c23 s23 c13^2 s13 sin(delta)
+PASS O6 Q H^c u^c? use Q u^c H: 1/6-2/3+1/2=0
+PASS O6 Q d^c H^dag: 1/6+1/3-1/2=0
+PASS O6 L e^c H^dag: -1/2+1-1/2=0
+PASS O6 <H>=(0,v/sqrt2): T3=-1/2,Y=1/2 -> Q=0 unbroken U(1)_em; 4-1=3 broken generators
+PASS O7 base matrix B real symmetric
+PASS O7 sector dependence only via scalar factor (1/phi^exp, mod, sqrt2, 1001/61) => M_sector = c_sector * B
+INFO eigenvalues of B: [-0.154914924642009, 0.248382646077563, 0.633756537170968]
+PASS O7 B has 3 distinct real eigenvalues
+PASS O7 [c_u B, c_d B]=0 (commute) -> simultaneously diagonalisable
+PASS O7 => CKM is a signed permutation matrix: all mixing angles 0 or pi/2, J=0
+INFO eigenvalue ratios lam3/lam1, lam2/lam1 = (-4.090997291807167, -1.603348719637879) (sector-independent)
+PASS O7 mass ratios identical across sectors (cannot give m_t/m_u ~ 7.5e4 and m_tau/m_e ~ 3.5e3 both)
+PASS O7 real orthogonal U_up,U_down -> CKM real -> J=0, delta_CP in {0,pi}
+INFO det(B)/Tr(B)^3 = -0.0634062237468745
+PASS O7 det/Tr^3 != 2/3 (claimed 'Koide ~2/3')
+PASS O7 B is indefinite (one negative eigenvalue): contradicts 'three distinct real positive eigenvalues'
+PASS O7 B leading minors: det(B) sign
+PASS O7 even for positive-definite 3x3, det/Tr^3 <= 1/27 < 2/3 (AM-GM): Koide-as-det/Tr^3 ~2/3 impossible
+TOTAL 34 PASS 34 FAIL 0

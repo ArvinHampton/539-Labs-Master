@@ -1,0 +1,5 @@
+# SOFTSF PRESS — To Auditor (Write-only Soft SF CONFIRM)
+Time: 2026-10-27 12:24 CDT (America/Chicago)
+Subject: reports/FINDINGS_AGENT_ACK_TOKEN_HARD_STOP_90PCT_PLUS_MR1_ACK_HARD_GATE_2026-10-27.md
+sha256: 1844993c175342f4c264f8eda7ad22790524b93b9aff6fdecf080656873c0ad7
+Ask: Soft SF CONFIRM hash match (write-only). Content: Agent ACK Owner TOKEN HARD STOP 90% token OW 86ad87631cb5bebc073e01e727d01352ba388df79eb20d401a048f122f2a903b invent-lift OW 6c97dcadaa70d65036e849b778c99ef6f708e5432794afa10cdc8721de64e39e; absorb MR1 ACK HARD GATE; HOLD proof-pursue STANDS; solve42g LIVE 38/42; Relay TOKEN → MR1; CONTINUE COOK under 90% ceiling; HARD GATE still LIVE. tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 untouched. Kerr BLOCKED. REPORTS ONLY. No RECS.

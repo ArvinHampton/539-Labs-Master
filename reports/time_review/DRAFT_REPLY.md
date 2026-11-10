@@ -1,0 +1,3 @@
+# Draft X reply (NOT POSTED — for Arvin's approval)
+
+Mostly right, with corrections. In S²-11DM²ET-X there is one global time t. +U (3+1)D runs forward and −U (4+1)D runs reversed: two arrows, not two time dimensions. The 539.9 s G4 period is a postulated periodic driver of +U/−U exchange via D2-branes. It enters my master equations as sin(2πt/539.9) and is not derived. My own claim table lists it as a modelling hypothesis, so "requires" overstates it. 539 is a count, not a clock. Mirror sectors and negative-parity PBH echoes are in the papers. A 539.9 s scale for galactic structure and "PBH chiral shifts" are not. So yes, it's not an extra time dimension in the sense of Bars 2T or two-time QM. But "structural clock" is your phrase, not mine.

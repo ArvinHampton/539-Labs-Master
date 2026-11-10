@@ -1,0 +1,62 @@
+[
+  {
+    "key": "davis_primary_abs",
+    "url": "https://arxiv.org/abs/2203.14096",
+    "final_url": "https://arxiv.org/abs/2203.14096",
+    "status": 200,
+    "bytes": 38240,
+    "sha256": "66decaf81a36ff4f500dcde55caff4fc4fea4fc720a5f0255ba12478b5866cbc",
+    "file": "davis_primary_abs.html",
+    "time": "2026-11-05T13:47:18.518392-06:00"
+  },
+  {
+    "key": "davis_primary_pdf",
+    "url": "https://arxiv.org/pdf/2203.14096",
+    "final_url": "https://arxiv.org/pdf/2203.14096",
+    "status": 200,
+    "bytes": 237526,
+    "sha256": "9b9c9b3cf9f798fe78d57419f613ec94aae83c1b4706a9dda5ead935d95d8a1c",
+    "file": "davis_primary_pdf.pdf",
+    "time": "2026-11-05T13:47:18.657771-06:00"
+  },
+  {
+    "key": "davis_doi",
+    "url": "https://doi.org/10.1007/s11139-023-00703-7",
+    "final_url": "https://link.springer.com/10.1007/s11139-023-00703-7",
+    "status": 200,
+    "bytes": 3038,
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "file": "davis_doi.html",
+    "time": "2026-11-05T13:47:18.585597-06:00"
+  },
+  {
+    "key": "davis_crossref",
+    "url": "https://api.crossref.org/works/10.1007/s11139-023-00703-7",
+    "final_url": "https://api.crossref.org/works/10.1007/s11139-023-00703-7",
+    "status": 200,
+    "bytes": 9586,
+    "sha256": "43d9a4c17d54317772dc8add0697c671c0a71f19e7ff5a63a97a5a407b393b50",
+    "file": "davis_crossref.html",
+    "time": "2026-11-05T13:47:18.448113-06:00"
+  },
+  {
+    "key": "formalFJ_abs",
+    "url": "https://arxiv.org/abs/1302.0880",
+    "final_url": "https://arxiv.org/abs/1302.0880",
+    "status": 200,
+    "bytes": 40068,
+    "sha256": "ea4366ff391993ed341edddcbb52c7b321a7e1d9f12acdf4e07ecd4d73f2a56e",
+    "file": "formalFJ_abs.html",
+    "time": "2026-11-05T13:47:18.566933-06:00"
+  },
+  {
+    "key": "formalFJ_pdf",
+    "url": "https://arxiv.org/pdf/1302.0880",
+    "final_url": "https://arxiv.org/pdf/1302.0880",
+    "status": 200,
+    "bytes": 348455,
+    "sha256": "960a5e76648a4c20e77dc04493302b851a8b03c8ebd2b7aefb3d4a19b0776257",
+    "file": "formalFJ_pdf.pdf",
+    "time": "2026-11-05T13:47:18.689852-06:00"
+  }
+]

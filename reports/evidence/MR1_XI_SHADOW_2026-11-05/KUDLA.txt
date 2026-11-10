@@ -1,0 +1,1101 @@
+                                                 THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS
+
+                                                                                       STEPHEN KUDLA
+arXiv:1608.03534v1 [math.NT] 11 Aug 2016
+
+
+
+
+                                                                                       1. Introduction
+
+                                           Recently Alexandrov, Banerjee, Manschot and Pioline, [1], introduced and investigated cer-
+                                           tain generalized error functions and used them to construct theta series for indefinite lattices
+                                           of signature1 (n − 2, 2). Their result provides an analogue of the work of Zwegers [8] for the
+                                           case of signature (n − 1, 1). Roughly speaking, in each case, the choice of a suitable collection
+                                           of negative (timelike) vectors allows one to cut out a certain cone of positive vectors and to
+                                           define a convergent theta type series as the sum over lattice vectors in this cone. Unfortu-
+                                           nately, these nice holomorphic q-series are not yet modular forms in the variable τ in the
+                                           upper halfplane, where q = e2πiτ . A main result of [8], for signature (n − 1, 1), and of [1],
+                                           for signature (n − 2, 2), is that these q-series can be completed by the addition of a certain
+                                           non-holomorphic series, obtained as a sum over all lattice vectors, so that the resulting func-
+                                           tion is a (non-holomorphic) modular form of weight n/2 in τ . The completion in Zwegers
+                                           involves the classical error function E1 (u), while the completion in [1] depends on the new
+                                           generalized error function E2 (α; u1 , u2 ) introduced there.
+
+                                           On the other hand, as a very special case of the results of old joint work with John Millson,
+                                                                                         (n−r,r)
+                                           [3], [4] and [5], there are theta forms θ(τ, ϕKM ) associated to a lattice L of signature
+                                           (n − r, r). These non-holomorphic series take values in closed r-forms on the associated
+                                           symmetric space, are invariant under a finite index subgroup of the isometry group of the
+                                           lattice, and have a modular transformation law of weight n/2 in τ . This transformation law
+                                           follows from the classical Poisson summation argument due to Siegel, [7], and hence arises in
+                                                                             (n−r,r)        (n−r,r)
+                                           a natural way. The image [θ(τ, ϕKM )] of θ(τ, ϕKM ) in cohomology inherits the modular
+                                           transformation law of the theta form and is often a holomorphic series, [5]. .
+
+                                           In the case of a lattice L in an indefinite inner product space V of signature (n − 1, 1),
+                                           Zwegers’ theta series depends on the choice of a pair of negative vectors {C, C ′ } lying in the
+                                           same component of the negative cone in V . The pair {C, C ′ } determines a geodesic γC,C ′
+                                           joining the points C||C||−1 and C ′ ||C ′ ||−1 on the hyperboloid of vectors v with (v, v) = −1
+                                           in that component. Then, up to sign, Zwegers’ completed theta series coincides with the
+                                           integral of the theta form over this geodesic, [2], [6],
+                                                                                                 Z
+                                                                                                           (n−1,1)
+                                                                    θZwegers (τ ; {C, C ′ }) = −     θ(τ, ϕKM ).
+                                                                                                     γ(C,C ′ )
+
+
+                                             1
+                                              Following our habit, we have taken signature (n − 2, 2) in place of signature (2, n − 2) used in [1].
+                                                                                                 1
+2                                           STEPHEN KUDLA
+
+In the present note, we show that the non-holomorphic theta series constructed in [1] for
+lattices L of signature (n − 2, 2) can also be constructed as an integral of the theta form
+      (n−2,2)
+θ(τ, ϕKM ).
+                                                                                            (n−2,2)
+Let D be the space of oriented negative 2-planes in V = L ⊗Z R, so that θ(τ, ϕKM ) is
+a closed 2-form on D. The main step is to define a certain oriented 2-cycle S in D over
+which to integrate this form. The basic data consists of two pairs {C1 , C2 } and {C1′ , C2′ }
+of negative vectors satisfying certain incidence conditions, (3.1), (3.2), and (3.5) in section
+3. The relation of these conditions to those introduced in [1] is discussed in Remark 1.1 (ii).
+Due to our incidence conditions, there are 4 oriented negative 2-planes, i.e., 4 points in D,
+given by
+               z12 = span{C1 , C2 }p.o. ,                 z1′ 2 = span{C1′ , C2 }p.o. ,
+(1.1)
+               z12′ = span{C1 , C2′ }p.o. ,               z1′ 2′ = span{C1′ , C2′ }p.o. ,
+
+lying on one component, say D + of D. Here the subscript ‘p.o.’ indicates that the given
+ordered pair of vectors defines the orientation. Any negative vector C defines a copy of hy-
+perbolic space of dimension n − 2 in D consisting of the oriented negative 2-planes containing
+C. If we write H1 , H2 , H1′ and H2′ for the hyperbolic subspaces defined by C1 , C2 , C1′
+and C2′ , then these subspace intersect in precisely 8 points, 4 on each component of D. The
+intersection points on D + are precisely the points (1.1), for example, z12 = H1 ∩ H2 ∩ D + ,
+etc. The points z12 and z12′ lie on H1 and are joined by a unique geodesic γ1 in H1 . This
+and the analogously defined geodesics γ1′ , γ2 and γ2′ form a quadrilateral loop in D. Let
+S = S(C1 , C2 , C1′ , C2′ ) be the geodesic surface in D filling in this quadrilateral.
+
+Recall that the theta form is defined as follows. For x ∈ V , let
+                                                           1
+                        ϕoKM (x) = 2( ω1 (x) ∧ ω2 (x) −      Ω ) e−2πR(x,z) ,
+                                                          4π
+and, for τ = u + iv in the upper half-plane, let
+                                  1              √
+                   ϕKM (τ, x) = q 2 (x,x) ϕoKM (x v),        q = e(τ ) = e2πiτ ,
+                                        (n−2,2)
+where we write ϕKM in place of ϕKM , since the signature is fixed from now on. Here
+R(x, z) = −(prz (x), prz (x)), where prz (x) is the orthogonal projection of x to the negative
+2-plane z, ω1 (x) and ω2 (x) are 1-forms on D determined by x, and Ω is an invariant 2 form
+on D, independent of x. Let L∨ ⊃ L be the dual lattice of L. For µ ∈ L∨ /L, the theta form
+is the closed 2-form given by
+                                                X
+(1.2)                           θµ (τ ; ϕKM ) =       ϕKM (τ, x).
+                                                  x∈L+µ
+
+
+Since S is compact, we can compute the integral of θµ (τ ; ϕKM ) termwise and so the essential
+result is the evaluation of the integral
+                                                Z
+(1.3)                                I(x; S) :=   ϕoKM (x).
+                                                   S
+                     THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS                                    3
+
+Theorem A. Let S = S(C1 , C2 , C1′ , C2′ ) be the oriented surface determined by the negative
+pairs {C1 , C2 } and {C1′ , C2′ } satisfying the incidence relations (3.1), (3.2), and (3.5).
+(a) For any x ∈ V ,
+        √             1                                                                                
+    I(x/ 2; S) = −        E2 (C1 , C2 ; x) − E2 (C1 , C2′ ; x) − E2 (C1′ , C2 ; x) + E2 (C1′ , C2′ ; x) ,
+                      4
+                ′
+where E2 (C, C ; x) is the ‘boosted’ generalized error function defined in (3.38) of [1].
+(b) In particular,
+                                                                            
+                                         (C1 , C2 )                (C1 , C2′ )
+                 I(0; S) = −Arctan         √          + Arctan      √
+                                            ∆12                       ∆12′
+                                                                                       
+                                                  (C1′ , C2 )                (C1′ , C2′ )
+                                   + Arctan         √           − Arctan       √            .
+                                                      ∆1′ 2                      ∆1′ 2′
+Here
+                               ∆(C, C ′ ) = (C, C)(C ′ , C ′ ) − (C, C ′ )2 ,
+and ∆12 = ∆(C1 , C2 ), etc.
+
+This result is first proved in the ‘generic’ case, where (x, C) 6= 0 for all C ∈ {C1 , C2 , C1′ , C2′ }
+by an application of Stoke’s theorem. Recall that for any nonzero x ∈ V , there is a subman-
+ifold
+                                     Dx = { z ∈ D | x ∈ z ⊥ }
+of D, which is the zero locus of the function R(x, ·) and is empty unless (x, x) > 0. If
+(x, x) > 0, then Dx has codimension 2. Indeed, in the hermitian model, it is either empty or
+a complex divisor on D. On the set D − Dx , we define a 1-form ψ(x) with
+                                          dψ(x) = ϕoKM (x).
+As in [1], let
+                      1
+(1.4)            Φ2 (x) =
+                        [ sgn(x, C1 ) − sgn(x, C1′ ) ][ sgn(x, C2 ) − sgn(x, C2′ ) ].
+                      4
+where we take sgn(0) = 0. Then, for x generic, Dx ∩ S is non-empty if and only if Φ2 (x) 6= 0!
+To apply Stokes’ theorem, we must cut out an ǫ-disk around Dx ∩ S. It turns out that
+                                          Z
+                                               ψ(x)
+                                                  ∂S
+is easy to evaluate and leads immediately to the function
+                                                   Z a −2πt2
+                                          1  −2πb2     e
+                            f (a, b) := − b e           2  2
+                                                             dt.
+                                         2π         0 b +t
+But this function is given, in turn, as
+                                                1      √ √
+                                    f (a, b) = − ẽ2 (a 2, b 2),
+                                                4
+where ẽ2 is one of the building blocks in [1] in the generalized error function. Now using the
+identity (4.6) relating ẽ2 and E2 , we obtain the expression in (i) of Theorem A together with
+an extra term Φ2 (x), cf. Corollary 4.8. This extra term is cancelled by the contribution of
+the excised ǫ-disk! The case of non-generic x is obtained by continuity, where we note that
+4                                             STEPHEN KUDLA
+
+the singularities arising from ψ(x) were not present in the original integral, which depends
+smoothly on x and S.
+
+Our main global result is then the following.
+
+Theorem B. Let S = S(C1 , C2 , C1′ , C2′ ) be as in Theorem A.
+(a) The series
+                                                          √
+                              Z                    X                 1
+(1.5)           Iµ (τ ; S) :=   θµ (τ ; ϕKM ) =         I( v x; S) q 2 (x,x)
+                                       S                  x∈L+µ
+
+is a non-holomorphic modular form of weight n/2 with the same transformation law as
+θµ (τ, ϕKM ).
+(b) For µ ∈ L∨ /L, the q-series
+                                  X            1
+(1.6)                                 Φ2 (x) q 2 (x,x)
+                                            x∈L+µ
+
+is termwise absolutely convergent.
+(c) The modular form Iµ (τ ; S) is its modular completion2, as defined in [1]. In particular,
+(1.7)                         Iµ (τ ; S) = −θABMP (τ ; C1 , C2 , C1′ , C2′ ; µ),
+where θABMP (τ ; C1 , C2 , C1′ , C2′ ; µ) is the series defined in [1].
+
+Remark 1.1. (i) Since the theta form is closed, the integral on the right side of (1.5) does
+not depend on the choice of the oriented surface S with boundary γ1 + γ2′ − γ1′ − γ2 .
+(ii) Our incidence conditions (3.1), (3.2), and (3.5) are a subset of those imposed in [1], (4.2)
+and (4.6), and they are the natural conditions giving rise to the 4 points {z12 , z1′ 2 , z12′ , z1′ 2′ }
+on D + and the boundary frame of geodesics connecting them. It is a pleasant bonus that our
+conditions are sufficient to ensure the convergence of the q-series (1.6). Their relation to the
+set of conditions [1] (4.2) alone is not clear.
+(iii) Of course, part (c) is just a restatement of the result of [1] relating the expression Φ2 (x)
+and the quantity I(x; S).
+(iv) Note that, in√ passing from Theorem A to the theta series in Theorem B, the at first
+                                                               √
+sight anomalous 2 is precisely what is introduced by the 2τ2 in the argument of Φ in the
+definition of the theta series in (2.1) of [1].
+
+Our construction also provides the following geometric interpretation of the quantity Φ2 (x).
+
+Proposition 1.2. Suppose that x ∈ V satisfies the regularity condition in Theorem A and
+that Dx ∩ S is non-empty. Then Dx ∩ S consists of a single point and
+                                             Φ2 (x) = I(S, Dx )
+where I(S, Dx ) is the(local) intersection number of the (oriented) cycles S and Dx in D.
+
+   2We assume that L is even integral, so that the characteristic vector p used in (2.1) of [1] can be taken to
+be 0 and hence does not appear in our theta series. This is only done to simplify the notation; our results
+hold in the general case.
+                    THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS                                  5
+
+Corollary 1.3. The holomorphic part (1.6) of the indefinite theta function
+Iµ (τ ; S) can be written as
+                                 X                1
+                                      I(S, Dx ) q 2 (x,x) .
+                                       x∈L+µ
+
+
+As is evident from this description, our result technically depends only on the special functions
+results of section 3 of [1], i.e., in our approach, the completed theta series is constructed
+directly as an integral of the theta form and the results about generalized error functions, in
+particular (4.6), etc., then identify it as a completion of the q-series (1.6). But of course, the
+whole business depends entirely on the original ideas of [1] about constructing a signature
+(n − 2, 2) analogue of Zwegers’ theta series, the ingenious choice of the correct input data
+{{C1 , C2 }, {C1′ , C2′ }}, the function Φ2 (x), etc. Aside from the connection with the theta
+form, our main addition is the introduction of the surface S over which we take our integral
+and the interpretation of Φ2 (x) as an intersection number. Hopefully, these ideas will prove
+useful in the construction of examples for more general signatures proposed in Section 6 of
+                               (n−r,r)
+[1]. The theta forms θ(τ, ϕKM ) are available in this situation and can undoubtedly be used
+in the same way, cf. the discussion in section 5.2.
+
+Here is a brief description of the contents of the paper. In section 2, we review the construction
+of the 2-form ϕoKM (x) and show that, for x 6= 0 and away from the set Dx , there is an
+explicitly constructed 1-form ψ(x) with dψ(x) = ϕoKM (x). In section 3, we describe how the
+data {C1 , C2 }, {C1′ , C2′ } satisfying the incidence relations of [1] gives rise the a quadrilateral
+of geodesics and a spanning surface S. In section 4, we compute the basic integral of ϕoKM (x)
+over the surface S. This is done using Stoke’s theorem and the 1-form ψ(x), where the
+singularity along Dx necessitates a limit procedure when Dx ∩ S is non-empty. Also in this
+section, we prove Proposition 1.2. In section 4.4, we take care of the cases where the regularity
+condition fails. In section 5.1, we discuss how the computation of the shadows i.e., the image
+of Iµ (τ ; S) under the lowering operator, can be done in our language, and in section 5.2 we
+sketch how things should go for other signatures. Here the surface S is generalized to a
+hypercube, and the convergence of the associated q-series is proved. Convenient coordinates
+for our computation are explained in an Appendix, section 6.
+
+We thank Luis Garcia for a useful conversation.
+
+1.1. Notation. Following the conventions of [1], we write
+                                                          (C, C) (C, C ′ )
+                                                                                
+                    ′           ′   ′         ′ 2
+            ∆(C, C ) = (C, C)(C , C ) − (C, C ) = det                              ,
+                                                          (C ′ , C) (C ′ , C ′ )
+∆12 = ∆(C1 , C2 ), etc. More generally, for any subset I of {1, 2, 1′ , 2′ }, ∆I is the determinant
+of the matrix of inner products ((Ci , Cj ))i,j∈I . In addition, write
+                                               (C1 , C2 )
+                                C1⊥2 = C1 −               C2 ,      etc.
+                                               (C2 , C2 )
+For a vector C with (C, C) 6= 0, we write
+                                                  1                C
+                                 ||C|| = |(C, C)| 2 ,     C=           .
+                                                                 ||C||
+6                                                STEPHEN KUDLA
+
+We use the convention sgn(0) = 0 to extend the sign function sgn from R× to R.
+
+For collections x = [x1 , . . . , xr ] ∈ V r and y = [y1 , . . . , ys ] ∈ V s , we let
+
+                                         (x, y) = ((xi , yj )) ∈ Mr,s (R).
+
+Note that for a ∈ GLr (R) and b ∈ GLs (R),
+
+                                               (xa, yb) = t a(x, y)b.
+
+
+
+                                             2. The basic setup
+
+Let V , ( , ) be an indefinite inner product space of signature (n − 2, 2) and let D be the space
+of oriented negative 2-planes in V . Let
+
+                                OFD = { ζ = [ζ1 , ζ2 ] ∈ V 2 | (ζ, ζ) = −12 }
+
+be the space of oriented orthonormal frames and let π : OFD → D be the projection sending
+an oriented frame to the oriented 2-plane it spans.
+
+For z ∈ D with properly oriented orthonormal basis ζ = [ζ1 , ζ2 ], the orthogonal projection of
+x ∈ V to z is given by
+                                            prz (x) = ζ(ζ, ζ)−1 (ζ, x).
+Then
+                                R(x, z) = −(prz (x), prz (x)) = (x, ζ)(ζ, x),
+and the majorant is
+                                          (x, x)z = (x, x) + 2R(x, z).
+Note that z ∈ Dx , i.e., z is in x⊥ if and only if R(x, z) = 0.
+
+
+2.1. The Schwartz form. We recall the definition and basic properties of the Schwartz
+form constructed in [3], [4]. Our conventions about differential forms are explained in more
+detail in the Appendix 6.1.
+
+Define a Schwartz function on V valued in 2-forms on D as follows. For η and µ ∈ Tz (D) =
+Hom(z, z ⊥ ), we choose ζ ∈ OFD with π(ζ) = z and write
+
+                    [η1 , η2 ] = [η(ζ1 ), η(ζ2 )],     [µ1 , µ2 ] = [µ(ζ1 ), µ(ζ2 )] ∈ U (z)2 .
+
+Here, for convenience, we write z ⊥ = U (z). Then let
+                                                                                            
+                                                                           (x, η1 ) (x, η2 )
+         ω1 (x) ∧ ω2 (x)(η, µ) = (x, η1 )(x, µ2 ) − (x, η2 )(x, µ1 ) = det                     ,
+                                                                           (x, µ1 ) (x, µ2 )
+and
+                                         Ω(η, µ) = (η1 , µ2 ) − (η2 , µ1 ).
+                      THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS                                        7
+
+These expressions are independent of the choice of ζ ∈ OFD and define 2-forms on D. The
+basic Schwartz form3
+                                                      1 
+                   ϕKM (x, z) = 2 ω1 (x) ∧ ω2 (x) −     Ω exp(−π(x, x)z ),
+                                                     4π
+where (x, x)z is the majorant, is a closed 2-form on D. This is a very special case of the
+forms defined in [3] and [4]. Note that
+                                                    1
+                                     ϕKM (0) = − Ω.
+                                                   2π
+For convenience, since x will often be fixed in our discussion, we write
+                                      ϕKM (x) = e−π(x,x) ϕoKM (x).
+Note that the pullback of ϕoKM (x) under π : OFD → D is
+                                                            1
+                π ∗ (ϕoKM (x)) = 2 (x, dζ1 ) ∧ (x, dζ2 ) −    (dζ1 , dζ2 ) e−2πR .
+                                                                         
+                                                           4π
+
+On the set
+                             D − {[x, z] ∈ V × D | z ∈ Dx },
+define a 1-form ψ(x) whose pullback to OFD is given by
+                           1
+            π ∗ (ψ(x)) = − e−2πR R−1 ( (x, ζ1 )(x, dζ2 ) − (x, ζ2 )(x, dζ1 ) ) − (ζ2 , dζ1 ) .
+                                                                                            
+(2.1)
+                          2π
+
+The proof of the following proposition is given in Appendix 6.2.
+Proposition 2.1. On the set D − Dx ,
+                                        ϕKM (x) = dψ(x) e−π(x,x) .
+
+
+                              3. The spanning surface of a frame
+
+In this section, we explain how to obtain an oriented 2-cycle in D from the basic data
+introduced in [1] consisting of two pairs of negative4 vectors {C1 , C2 } and {C1′ , C2′ } subject
+to a certain collection of incidence relations. We impose these relations step by step, observing
+how the geometry we want emerges.
+
+With the notation of [1], as explained in section 1.1, we impose the incidence relations5
+(3.1)          ∆12 , ∆1′ 2 , ∆12′ , ∆1′ 2′ > 0,
+and
+(3.2)          (C2⊥1 , C2′ ⊥1 ), (C2⊥1′ , C2′ ⊥1′ ), (C1⊥2 , C1′ ⊥2 ), (C1⊥2′ , C2⊥2′ ) < 0.
+   3Note that we have included an extra factor of 2 here compared with the expression given in Proposition 5.1
+of [3]. This is done to compensate for the factor 2−q/2 that occurs in the fiber integral in Proposition 6.2 of
+[4] and hence to correctly normalize the Poincaré dual form.
+    4Note that our quadratic form is the negative of theirs, so for us, the term ‘timelike’ refers to vectors C
+with Q(C) = (C, C) < 0.
+    5Notice that replacing signature (2, n − 2) with signature (n − 2, 2) amounts to changing the sign of the
+quadratic form. The quantities ∆(C, C ′ ) are invariant under this change, but the quantities (C, C ′ ) change
+sign. This gives the equivalence of our conditions (3.1) and (3.2) with the conditions (4.6) in [1].
+8                                             STEPHEN KUDLA
+
+Condition (3.1) is equivalent to the requirement at the pairs {C1 , C2 }, {C1′ , C2 }, {C1 , C2′ }
+and {C1′ , C2′ } span negative 2-planes
+(3.3)                                     P12 , P1′ 2 , P12′ , P1′ 2′ ,
+where, for the moment we ignore the orientations.
+
+For any negative vector C ∈ V , we let
+                                         HC = {z ∈ D | C ∈ z},
+and VC = C ⊥ . Then VC has signature (n − 2, 1) and we have an isomorphism
+                                                   ∼
+(3.4)                 {v ∈ VC | (v, v) = −1} −→ HC ,                v 7→ span{C, v}p.o. .
+Here the subscript ‘p.o.’ indicates that the given ordered frame is properly oriented. In
+particular, HC is a copy of hyperbolic n-space in D. Note that HC has two components and
+that vectors v and v ′ in VC with (v, v) = −1 = (v ′ , v ′ ) lie in the same component precisely
+when (v, v ′ ) < 0.
+
+From the given set of negative vectors {C1 , C2 , C1′ , C2′ } we obtain hyperbolic subspaces H1 ,
+H1′ , H2 and H2′ in D, where we write H1 = HC1 , V1 = VC1 , etc. Assuming condition (3.1),
+the intersections H1 ∩ H2 , H1 ∩ H2′ , H1′ ∩ H2 , and H1′ ∩ H2′ of these hyperbolic subspaces
+are easily determined. For example,
+                         H1 ∩ H2 = { span{C1 , C2 }p.o. , span{C1 , −C2 }p.o. }.
+Since span{C1 , C2 } = span{C1 , C2⊥1 } is a negative 2-plane, it follows that C2⊥1 is a negative
+vector in V1 as is C2′ ⊥1 , by the same argument. Since V1 has signature (n − 2, 1) the inner
+product6 (C2⊥1 , C2′ ⊥1 ) 6= 0, and condition (3.2) implies that the vectors C2⊥1 and C2′ ⊥1 lie
+in the same component of the negative cone in V1 . The same discussion applies to the other
+pairs of projections, C1⊥2 , C1′ ⊥2 , etc.
+
+Next we add the condition
+(3.5)                                           ∆11′ 22′ > 0.
+This is (4.2b) in [1]. This implies that U = span{C1 , C2 , C1′ , C2′ } is a 4 dimensional subspace
+of V of signature (2, 2). It follows that the negative 2-planes in (3.3) are distinct.
+
+Thus, under conditions (3.1) , (3.2), and (3.5), we obtain 8 points in D, the 4 listed in (1.1)
+and the 4 obtained from them by reversing the orientations.
+
+By condition (3.2), C2⊥1 and C2′ ⊥1 lie in the same component of the negative cone in V1 ,
+and hence there is a unique geodesic in H1 joining the points z12 and z12′ given by7
+(3.6)        γ1 (t) = span{C1 , (1 − t)C2 + tC2′ }p.o. = span{C 1 , B 2⊥1 (t)}p.o. ,               t ∈ [0, 1],
+where
+                                                                            B2⊥1 (t)                C1
+           B2⊥1 (t) = (1 − t)C2⊥1 + tC2′ ⊥1 ,           B 2⊥1 (t) =                    ,   C1 =           .
+                                                                          ||B2⊥1 (t)||            ||C1 ||
+    6This is why we have replaced the ≥ 0 in (4.6b)–(4.6e) with < 0 in (3.2)
+    7We make no claim that t is the arc-length parameter.
+                   THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS                               9
+
+Note that the second expression gives an orthonormal basis of γ(t) whose second component
+lies in V1 . In particular, γ1 is the image in D of the geodesic in (3.4) joining the points C 2⊥1
+and C 2′ ⊥1 .
+
+There are analogous geodesics γ1′ from z1′ 2 to z1′ 2′ , γ2 from z12 to z1′ 2 and γ2′ from z12′ to
+z1′ 2′ . Explicitly, these are given by
+                        γ1′ (t) = span{C 1′ , B 2⊥1′ (t)}p.o. ,    t ∈ [0, 1],
+                         γ2 (s) = span{B 1⊥2 (s), C 2 }p.o. ,      s ∈ [0, 1],
+                        γ2′ (s) = span{B 1⊥2′ (s), C 2′ }p.o. ,    s ∈ [0, 1],
+where
+                               B2⊥1′ (t) = (1 − t)C2⊥1′ + tC2′ ⊥1′ ,
+                                B1⊥2 (s) = (1 − s)C1⊥2 + sC1′ ⊥2
+                               B1⊥2′ (s) = (1 − s)C1⊥2′ + sC1′ ⊥2′ .
+Altogether, they form a closed loop in D. Note that the first component is fixed for γ1 and
+γ1′ and the second component is fixed for γ2 and γ2′ . This will result in a sign change later
+in the calculation.
+
+We parametrize a 2-cycle S = S(C1 , C2 , C1′ , C2′ ) in D by
+(3.7)                φ : [0, 1]2 −→ D,        φ(s, t) = span{B1 (s), B2 (t)}p.o.
+where
+(3.8)              B1 (s) = (1 − s)C1 + sC1′ ,         B2 (t) = (1 − t)C2 + tC2′ .
+This oriented 2-cycle fills in the frame and has oriented boundary
+                                    ∂S = γ1 + γ2′ − γ1′ − γ2 .
+Here it will sometimes be useful to write
+(3.9)                      γ = γ{C1 ,C2 ,C1′ ,C2′ } = γ1 + γ2′ − γ1′ − γ2 ,
+to emphasize the dependence on the given data.
+
+Remark 3.1. Note that our incidence conditions (3.1), (3.2), and (3.2) are a subset of the
+incidence relations (4.2) and (4.6) imposed in [1]. We did not check whether their additional
+conditions are consequences of the ones we impose.
+
+
+                                    4. The cycle integral
+
+Our main goal is to compute the integral
+                                       Z
+                                                  ϕoKM (x).
+                                              S
+10                                              STEPHEN KUDLA
+
+4.1. Some geometry. The first step is to determine the intersection of S with the singular
+set Dx of ψ(x). For the moment, we consider only the generic case.
+Definition 4.1. A vector x is regular with respect to {C1 , C1′ , C2 , C2′ } if (C, x) 6= 0 for all
+C ∈ {C1 , C1′ , C2 , C2′ }.
+Lemma 4.2. (i) Suppose that x is regular with respect to {C1 , C1′ , C2 , C2′ }.
+Then the set Dx ∩ S is non-empty if and only if Φ2 (x) 6= 0, and, in this case,
+                                    Dx ∩ S = span{B1 (s0 ), B2 (t0 )},
+where
+                                   (x, C1 )                                (x, C2 )
+(4.1)                  s0 =                        ,           t0 =                        .
+                              (x, C1 ) − (x, C1′ )                    (x, C2 ) − (x, C2′ )
+(ii) Suppose that x ∈ V is any vector with Φ2 (x) 6= 0. Then, Dx ∩ S consists of a single point
+given by (4.1).
+
+Proof. A point φ(s, t) = span{B1 (s), B2 (t)} lies in Dx ∩ S precisely when
+(4.2)     (1 − s)(x, C1 ) + s(x, C1′ ) = 0 = (1 − t)(x, C2 ) + t(x, C2′ ),                 s, t ∈ [0, 1].
+Under the regularity assumption, if (x, C1 ) 6= (x, C1′ ) and (x, C2 ) 6= (x, C2′ ), the given pair
+s0 , t0 is the unique solution. These lie in [0, 1] precisely when Φ2 (x) 6= 0. Indeed, under the
+regularity assumption, they both lie in (0, 1). If either (x, C1 ) = (x, C1′ ) or (x, C2 ) = (x, C2′ ),
+then there is no solution.                                                                          
+
+If Φ2 (x) 6= 0 and for ǫ > 0 sufficiently small so that s0 ± ǫ and t0 ± ǫ lie in (0, 1), let
+                           C1ǫ (x) = B1 (s0 − ǫ)           C1ǫ′ (x) = B1 (s0 + ǫ)
+                           C2ǫ (x) = B2 (t0 − ǫ)           C2ǫ′ (x) = B2 (t0 + ǫ).
+The collection of negative vectors {C1ǫ (x), C2ǫ (x), C1ǫ′ (x), C2ǫ′ (x)} satisfy the same ‘incidence’
+conditions (3.1), (3.2), and (3.2) as the collection {C1 , C2 , C1′ , C2′ } and determine a surface
+             S ǫ (x) := S(C1ǫ (x), C2ǫ (x), C1ǫ′ (x), C2ǫ′ (x)) ⊂ S(C1 , C2 , C1′ , C2′ ) = S,
+containing the point Dx ∩ S = φ(s0 , t0 ). We write the boundary of S ǫ (x) as
+                              ∂ S ǫ (x) = γ1ǫ (x) + γ2ǫ′ (x) − γ1ǫ′ (x) − γ2ǫ (x),
+for curves defined by the analogues of (3.6), etc. Thus
+                           ∂ S ǫ (x) = γ{C1ǫ (x),C2ǫ (x),C ǫ′ (x),C ǫ′ (x)} =: γ ǫ (x),
+                                                           1          2
+
+in the notation introduced in (3.9).
+
+Let                                      (
+                                          S − int S ǫ (x) if Φ2 (x) 6= 0
+                                 Sǫ′ =
+                                           S                    if Φ2 (x) = 0.
+so that                                    (
+                                               ∂S − γ ǫ (x) if Φ2 (x) 6= 0
+                                  ∂Sǫ′ =
+                                               ∂S               if Φ2 (x) = 0.
+                        THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS                              11
+
+Then by Stoke’s theorem we have
+                               Z                              Z
+                                                 ϕoKM (x) =           ψ(x).
+                                           Sǫ′                 ∂Sǫ′
+
+
+4.2. The contribution of ∂S. We compute the integral of the 1-form ψ(x) around the
+boundary γ = ∂S.
+
+First consider the integral over γ1 . The second expression in (3.6) gives a lift of γ1 to a curve
+in OFD with tangent vector
+                          η(t) = [η1 (t), η2 (t)] = [Ċ 1 , Ḃ 2⊥1 (t)] = [0, Ḃ 2⊥1 (t)].
+Note that
+                          (C 1 , Ḃ 2⊥1 (t)) = 0,     and (B 2⊥1 (t), Ḃ 2⊥1 (t)) = 0,
+since (B 2⊥1 (t), B 2⊥1 (t)) = −1. Thus the term in ψ(x) involving (ζ2 , dζ1 ) vanishes along γ1 ,
+and we have simply
+                                           Z 1 −2πR
+                                         1    e
+                          Z
+(4.3)                          ψ(x) = −             (x, C 1 )(x, Ḃ 2⊥1 (t)) dt,
+                            γ1          2π  0   R
+where
+                                       R = (x, C 1 )2 + (x, B 2⊥1 (t))2 .
+Let u = (x, B 2⊥1 (t)) so that du = (x, Ḃ 2⊥1 (t)) dt, and we have
+                                                           Z α′          2
+                                  1                               e−2πu
+                   Z
+                                              −2π(x,C 1 )2
+                        ψ(x) = − (x, C 1 ) e                           2    2
+                                                                              du.
+                     γ1          2π                         α (x, C 1 ) + u
+
+where α = (x, C 2⊥1 )      and α′ = (x, C 2′ ⊥1 ).
+
+Now, recalling the function
+                                                       Z a
+                                         2      2                 2
+(4.4)                        ẽ2 (a, b) = b e−πb             e−πv (b2 + v 2 )−1 dv,
+                                         π              0
+defined in [1], (3.25), we can write
+             Z                         √            √                    √            √ 
+(4.5)     4      ψ(x) = ẽ2 (x, C 2⊥1 ) 2, (x, C 1 ) 2 − ẽ2 (x, C 2′ ⊥1 ) 2, (x, C 1 ) 2 .
+              γ1
+
+
+The values of the other integrals are obtained by permutation of indices. Note that there will
+be an additional change in sign in the γ2 and γ2′ integrals due to the fact noted above that
+the ‘fixed component’ is then the second component.
+Proposition 4.3. Under the regularity assumption,
+             Z      √                                                             
+           4    ψ(x/ 2) = ẽ2 (x, C 2⊥1 ), (x, C 1 ) − ẽ2 (x, C 2′ ⊥1 ), (x, C 1 )
+                   ∂S
+                                                                                                
+                                  − ẽ2 (x, C 1⊥2′ ), (x, C 2′ ) + ẽ2 (x, C 1′ ⊥2′ ), (x, C 2′ )
+                                                                                                
+                                  − ẽ2 (x, C 2⊥1′ ), (x, C 1′ ) + ẽ2 (x, C 2′ ⊥1′ ), (x, C 1′ )
+                                                                                             
+                                  + ẽ2 (x, C 1⊥2 ), (x, C 2 ) − ẽ2 (x, C 1′ ⊥2 ), (x, C 2 ) .
+12                                                 STEPHEN KUDLA
+
+In order to compare this quantity with what occurs in [1], we note the identity which follows
+from equation (3.24) there once the ‘boosting’ is taken into account:
+(4.6)        E2 (C1 , C2 ; x) = −ẽ2 ((x, C 1⊥2 ),(x, C 2 )) − ẽ2 ((x, C 2⊥1 ), (x, C 1 ))
+                                                                        + sgn((x, C 2 )) sgn((x, C 1 )).
+Using this, we obtain a nice expression for our integral.
+Corollary 4.4.
+           Z             √              1
+                     ψ(x/ 2) = Φ2 (x) −   E2 (C1 , C2 ; x) − E2 (C1 , C2′ ; x)
+                  ∂S                    4
+                                                                                                   
+                                                           − E2 (C1′ , C2 ; x) + E2 (C1′ , C2′ ; x) .
+
+4.3. The contribution of the singular point. The integral of ψ(x) around ∂S ǫ (x) is
+given by the expression in Corollary 4.4 with the collection {C1 , C2 , C1′ , C2′ } replaced by
+{C1ǫ (x), C2ǫ (x), C1ǫ′ (x), C2ǫ′ (x)}. Thus we have
+Z              √                     1
+           ψ(x/ 2) = Φǫ2 (x) −          E2 (C1ǫ , C2ǫ ; x) − E2 (C1ǫ , C2ǫ′ ; x) − E2 (C1ǫ′ , C2ǫ ; x) + E2 (C1ǫ′ , C2ǫ′ ; x) ,
+                                                                                                                             
+  ∂S ǫ (x)                           4
+where we have written C1ǫ in place of C1ǫ (x) etc., to lighten the notation. Note that at ǫ = 0
+we have C10 = C10′ = B1 (s0 ) and C20 = C20′ = B2 (t0 ). Thus the sum of the E2 terms vanishes
+in the limit as ǫ goes to 0. Also, as ǫ runs over [s0 , 0), the vector C1ǫ (x) runs from C1 to
+C10 (x) and the quantity (x, C1ǫ (x)) does not vanish and, in particular, does not change sign
+along this path. Similarly for the other corners. Thus limǫ→0 Φǫ2 (x) = Φ2 (x), and we have
+the following.
+Corollary 4.5.                                 Z            √
+                                         lim            ψ(x/ 2) = Φ2 (x).
+                                         ǫ→0 ∂S ǫ (x)
+
+
+Combining Corollary 4.4 and Corollary 4.5, we obtain the assertion of Theorem B(i) in the
+regular case.
+Corollary 4.6. Suppose that x is regular with respect to {C1 , C1′ , C2 , C2′ }. Then
+ Z           √       1
+     ϕoKM (x/ 2) = −
+                                                                                                     
+                       E2 (C1 , C2 ; x) − E2 (C1 , C2′ ; x) − E2 (C1′ , C2 ; x) + E2 (C1′ , C2′ ; x)
+   S                 4
+
+4.4. The irregular case. Now suppose that x is not regular with respect to the collection
+{C1 , C2 , C1′ , C2′ }. Fix a vector y ∈ V so that for all ǫ > 0 sufficiently small, xǫ = x + ǫy is
+regular with respect to {C1 , C2 , C1′ , C2′ }. Then, by Corollary 4.6, we have
+(4.7)
+Z                √         1
+    ϕoKM (xǫ / 2) = −         E2 (C1 , C2 ; xǫ ) − E2 (C1 , C2′ ; xǫ ) − E2 (C1′ , C2 ; xǫ ) + E2 (C1′ , C2′ ; xǫ ) .
+                                                                                                                   
+  S                        4
+But ϕoKM (x) is a smooth 2-form on D which depends smoothly on the vector x ∈ V . Also,
+E(C, C ′ ; x) is a smooth function on the space of parameters {x, C, C ′ } where x ∈ V and
+the negative vectors C, C ′ span a negative 2-plane. This follows from (3.38), (3.23) and
+                     THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS                                   13
+
+Proposition 3.7 (ii) in [1]. Thus, passing to the limit as ǫ → 0 in (4.7), we obtain the identity
+of Theorem B(i) in the irregular case. This completes the proof of Theorem B(i).
+
+Remark 4.7. The point is that, both sides of the identity of Theorem B(i) are smooth func-
+tions of parameters, and so their equality continues to hold by continuity on the closure of the
+set of parameters {x; C1 , C2 , C1′ , C2′ } where x is regular with respect to {C1 , C2 , C1′ , C2′ }.
+
+
+Next note that                                                              !
+                                                              (C, C ′ )
+                               E2 (C, C ′ ; 0) = Arctan      p                  .
+                                                               ∆(C, C ′ )
+This follows from [1], (3.23) together with the fact that e2 (0, 0) = 0 and the boosting proce-
+dure. As a consequence, we obtain the following nice formula.
+
+Corollary 4.8.
+                       1
+            Z            Z
+                o
+          − ϕKM (0) =       Ω
+              S       4π S
+                                                                   
+                               (C1 , C2 )                 (C1 , C2′ )
+                    = Arctan    √           − Arctan       √
+                                  ∆12                        ∆12′
+                                                                                
+                                          (C1′ , C2 )                 (C1′ , C2′ )
+                            − Arctan        √           + Arctan        √            .
+                                             ∆1′ 2                       ∆1′ 2′
+
+4.5. An intersection number. In this section, we give the proof of Proposition 1.2. We
+suppose that x is regular with respect to {C1 , C2 , C1′ , C2′ } and that Φ2 (x) 6= 0, so that, by
+Lemma 4.2, Dx ∩ S consists of a single point z0 . If ζ ∈ OFD with π(ζ) = z0 and we write
+U (z0 ) = z0⊥ , then
+                           Tz0 (D) ≃ U (z0 )2 ,    Tz0 (Dx ) ≃ (U (z0 ) ∩ x⊥ )2 ,
+and the normal to Dx at z0 is the subspace (Rx)2 ⊂ U (z0 )2 . If e1 , . . . , en−3 is a basis for
+U (z0 ) ∩ x⊥ , then the orientation of D is given by the basis vector
+          [e1 , 0] ∧ [0, e1 ] ∧ · · · ∧ [en−3 , 0] ∧ [0, en−3 ] ∧ [x, 0] ∧ [0, x] ∈ ∧2(n−2) Tz0 (D).
+Note that this is the orientation determined by the complex structure in the hermitian model
+of D. If
+                              ∂                         ∂
+                          φ∗ ( )z0 = [η1 , η2 ],    φ∗ ( )z0 = [µ1 , µ2 ],
+                              ∂s                        ∂t
+is the tangent frame for the parametrized surface S at the point z0 , then the intersection
+number of Dx and S at z0 is
+                                                                    
+                                                   (x, η2 ) (x, η2 )
+                             I(Dx , S) = sgn det                       .
+                                                   (x, µ2 ) (x, µ2 )
+Explicitly, write B = [B1 (s), B2 (t)] and let P = −(B, B) so that P ∈ Sym2 (R) is positive
+                                         1
+definite with symmetric square root P 2 . Let
+                                                                                    1
+                           B = [B 1 (s, t), B 2 (s, t)] = [B1 (s), B2 (t)] P − 2 .
+14                                            STEPHEN KUDLA
+
+Then
+                            ∂                            1                        ∂    1 
+                     φ∗ (      )z0 = [−C1 + C1′ , 0] P − 2 + [B1 (s0 ), B2 (t0 )]    P−2
+                            ∂s                                                    ∂s
+
+hence
+                      ∂                                   1
+                (x, φ∗ ()z0 ) = [(x, −C1 + C1′ ), 0] P − 2 ,
+                     ∂s
+                       ∂                                  1
+              (x, φ∗ (       ) = [0, (x, −C2 + C2′ )] P − 2 ,
+                       ∂t z0
+where we have used the the fact that (x, B2 (s0 )) = (x, B2 (t0 )) = 0. This gives
+                                                                      
+                                      (x, −C1 + C1′ )         0
+            I(Dx , S) = sgn det
+                                            0           (x, −C2 + C2′ )
+                            = sgn((x, C1′ ) − (x, C1 )) sgn((x, C2′ ) − (x, C2 ))
+                         1
+                           [ sgn(x, C1 ) − sgn(x, C1′ ) ][ sgn(x, C2 ) − sgn(x, C2′ ) ],
+                            =
+                         4
+as claimed in Proposition 1.2.
+
+4.6. Convergence of the holomorphic generating series. Suppose that the collection
+of negative vectors { C1 , C1′ , C2 , C2′ } satisfies the incidence relations (3.1), (3.2), and (3.2)
+and let S be resulting surface in D.
+Lemma 4.9. There exists a positive definite inner product ( , )S on V such that
+                                 (x, x)z ≥ (x, x)S ,      ∀z ∈ S, ∀x ∈ V.
+
+Proof. Let ( , )+ be any positive definite inner product on V with unit sphere B+ . Define a
+continuous function
+                           f : D −→ R>0 ,       f (z) = min (x, x)z .
+                                                               x∈B+
+The image f (S) of the compact set S is compact and has a lower bound ν ∈ R > 0. Take
+( , )S = ν( , )+ .                                                                 
+Lemma 4.10. Suppose that x ∈ V with Φ2 (x) 6= 0. Then
+                                              (x, x) ≥ (x, x)S .
+
+Proof. By Lemma 4.2, the condition, Φ2 (x) 6= 0 implies that Dx ∩ S is a single point z0 . Thus
+R(x, z0 ) = 0 and we have
+                            (x, x) = (x, x)z0 − 2R(x, z0 ) = (x, x)z0 ≥ (x, x)S ,
+as claimed.                                                                                        
+Proposition 4.11. Assume that the collection of negative vectors { C1 , C1′ , C2 , C2′ } satisfies
+the incidence conditions (3.1), (3.2), and (3.5). Then the series
+                                       X             1
+                                            Φ2 (x) q 2 (x,x)
+                                            x∈L+µ
+is termwise absolutely convergent.
+                    THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS                               15
+
+Proof. By the previous lemma, this series is dominated by the convergent series
+                                  X
+                                        exp(−πv(x, x)S ).
+                                       x∈L+µ
+
+                                                                                                  
+Remark 4.12. This result shows that our incidence conditions are sufficient to establish the
+convergence obtained from conditions (4.2), Theorem 4.1 in [1].
+
+
+                                      5. Additional remarks
+
+5.1. Shadows. It is natural to consider the image of the non-holomorphic modular form
+Iµ (τ ; S) under the lowering operator Lk = −2iv 2 ∂∂τ̄ or, equivalently, under the ξ-operator.
+This is done in [1]. In this section, we explain how this image can be calculated using our
+theta integrals.
+
+We begin with the identity
+                             ∂                      1          ∂       √
+                     −2i v 2 { ϕKM (τ, x) } = v 2 q 2 (x,x) d
+                                                                               
+                                                                 {ψ(x v)} .
+                            ∂ τ̄                              ∂v
+Recalling (2.1), on OFD we have
+            ∂      √
+        v2    {ψ(x v)} = v 2 e−2πvR ( (x, ζ1 )(x, dζ2 ) − (x, ζ2 )(x, dζ1 ) ) − R (ζ2 , dζ1 )
+                                                                                              
+           ∂v
+and its restriction to the connection subspace can be written as
+                                    ∂     √                   √
+                                 v 2 {ψ(x v)} = v ΨoM (x v),
+                                    ∂v
+where
+                     ΨoM (x) = e−2πR ( (x, ζ1 )(x, dζ2 ) − (x, ζ2 )(x, dζ1 ) ) .
+                                                                              
+
+Let
+                                                 1             √
+                                   ΨM (τ, x) = q 2 (x,x) ΨoM (x v),
+a Schwartz function on V valued in 1-forms on D. Define the associated theta form
+                                            X
+                              θµ (τ, ΨM ) =      ΨM (τ, x).
+                                                  x∈L+µ
+
+Then
+                                    ∂
+                            −2i v 2     { θµ (τ, ϕKM ) } = v d θµ (τ, ΨM ),
+                                   ∂ τ̄
+and hence the image of Iµ (τ ; S) under lowering can be written as an integral over the boundary
+of S,
+                                               ∂
+                                                                  Z
+(5.1)             L n2 Iµ (τ ; S) = −2i v 2 { Iµ (τ ; S) } = v         θµ (τ, ΨM ).
+                                              ∂ τ̄                  ∂S
+
+
+We could, of course, now integrate termwise using the parametrization of ∂S as before and
+arrive at the formulas for the shadow given in [1]. However, it is more enlightening to continue
+using the geometry. Recall that ∂S = γ1 + γ2′ − γ1′ − γ2 .
+16                                                       STEPHEN KUDLA
+
+We note that, by construction, the path γ1 is the image in D of a geodesic in the hyperbolic
+space
+                             D(V1 ) = { ν ∈ V1 | (ν, ν) = −1 }
+in V1 under the inclusion
+                               j1 : D(V1 ) −→ D,                          ν 7→ span{C1 , ν}p.o. .
+For the decomposition
+                                                         V = R C 1 + V1 ,
+we write
+                                        x = x0 + x1 ,                     x0 = −(x, C 1 ) C 1 ,
+and we note that
+                                        R(x, j1 (ν)) = (x, C 1 )2 + R1 (x1 , ν),
+where
+                                                  R1 (x1 , ν) = (x1 , ν)2 .
+                         (n−2,1)
+Lemma 5.1. Let ϕKM (τ, x1 ) be the Schwartz form associated to the space V1 of signature
+(n − 2, 1). It is a closed 1-form on D(V1 ) whose value on a tangent vector η ∈ Tν (D(V1 )) is
+                             (n−2,1)                             1              1
+                           ϕKM          (τ, x1 )(η) = v 2 (x1 , η) q 2 (x1 ,x1 ) e−2πvR1 (x1 ,ν) .
+Then
+                                                     3                          1         (n−2,1)
+(5.2)                    v j1∗ ΨM (τ, x) = v 2 (x0 , C 1 ) (q̄)− 2 (x0 ,x0 ) ϕKM                    (τ, x1 ).
+
+Proof. If ν ∈ D(V1 ), there is an identification
+                                         Tν (D(V1 )) = {η ∈ V1 | (ν, η) = 0}.
+The image of the tangent vector η ∈ Tν (H1 ) in Tj1 (ν) (D) is the vector [0, η] where we have
+used the point [C 1 , ν] ∈ OFD in the identification of Tj1 (ν) (D) ≃ U (j1 (ν))2 . Then
+                                    1            1                                  2             1             1
+           j1∗ ΨM (τ, x)(η) = q 2 (x0 ,x0 )+ 2 (x1 ,x1 ) e−2πv[(x,C 1 ) +R1 (x1 ,ν)] v 2 (x, C 1 ) v 2 (x1 , η).
+
+                                                                                                                    
+
+Now assume that C1 is a rational vector and let
+                                         L 0 = L ∩ Q C1 ,                     L 1 = L ∩ V1 ,
+so that
+                                           L0 + L1 ⊂ L ⊂ L∨ ⊂ L∨    ∨
+                                                               0 + L1 .
+Then, we can write any coset as
+                                                         G
+                                   µ+L =                             (λ0 + L0 ) + (λ1 + L1 ),
+                                                 λ=λ0 +λ1
+
+and we have                                               X           3                     (n−2,1)
+                             v j1∗ θµ (τ, ΨM ) =                     v 2 θ0,λ0 (τ ) θλ1 (τ, ϕKM       ).
+                                                             λ
+                        THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS                                        17
+
+Here                                                   X                       1
+                                    θ0,λ0 (τ ) =             (x0 , C 1 ) q − 2 (x0 ,x0 )
+                                         x0 ∈λ0 +L0
+                              3
+is the theta series of weight 2 attached to the coset λ0 + L0 and the positive definite unary
+                              3                                             (n−2,1)
+form −(x0 , x0 ). The form v 2 θ0 (τ ) then has weight −3/2, while θλ1 (τ, ϕKM ) has weight
+(n − 1)/2 so the product has weight n/2 − 2, as required.
+
+But now
+                    Z                                           Z
+                                                   3                                          (n−2,1)
+                                             X
+(5.3)           v            θµ (τ, ΨM ) =       v θ0,λ0 (τ )
+                                                   2                                   θλ1 (τ, ϕKM      ),
+                        γ1                   λ                      γ(C2⊥1 ,C2′ ⊥1 )
+
+where the right side is a linear combination of products of weight − 32 antiholomorphic
+unary theta series times the Zwegers’ indefinite theta series which arise as integrals of the
+         (n−2,1)
+θλ1 (τ, ϕKM )’s along the geodesic γ(C2⊥1 , C2′ ⊥1 ) in D(V1 ). The remaining terms in the
+expression (5.1) for Ln/2 Iµ (τ ; S) as an integral over ∂S have the same form. This formula
+reveals the inductive nature of the shadow.
+
+
+5.2. Other signatures. The case in which V has signature (n−r, r) is considered in section 6
+                                                                        (n−r,r)
+of [1]. As remarked in the introduction, the relevant Schwartz forms ϕKM (x) are considered
+in [3], [4] and [5]. In the present section, we indicated the first steps in generalizing the
+constructions of earlier sections, leaving details for another occassion.
+
+Let D be the space of oriented negative r-planes in V .
+
+We suppose that a collection of r pairs of negative vectors {C1 , C1′ }, . . . , {Cr , Cr′ } is given
+with the following incidence properties. For a subset I ⊂ {1, . . . , r}, let CI be the ordered set
+of r vectors where we take Cj′ ∈ CI if j ∈ I and Cj ∈ CI if j ∈  / I and the vectors are ordered
+according to the index j. Thus, C∅ = {C1 , . . . , Cr }, etc. We require
+
+    (i) Each collection CI spans a negative r-plane
+                                                   PI = span{CI }.
+    (ii) These planes are distinct, so that there are 2r of them.
+   (iii) The oriented negative r-planes
+                                                 zI = span{CI }p.o.
+        all lie on the same component D + of D.
+
+We will not attempt express these in terms of determinants of minors of Gram matrices,
+although this is clearly possible. Note that the conditions can be expressed inductively. We
+use the notation Cj ′ = Cj′ , as before. For example, for r = 3, the collection of vectors
+{C2⊥1 , C2′ ⊥1 , C3⊥1 , C3′ ⊥1 } should satisfy the incidence relations analogous to (3.1), (3.2) and
+(3.5), and similarly for the other 5 ‘projections’. Thus, the set of 2r points {zI } form the
+vertices of a geodesic hypercube S in D. This cube can be parametrized by
+                              ∼
+            φ : [0, 1]r −→ S ⊂ D,                s = [s1 , . . . , sr ] 7→ span{B1 (s1 ), . . . , Br (sr )},
+18                                            STEPHEN KUDLA
+
+where
+                                      Bj (sj ) = (1 − sj )Cj + sj Cj ′ .
+
+For a vector x ∈ V , let
+                        1
+               Φr (x) = r [ sgn(x, C1 ) − sgn(x, C1′ ) ] . . . [ sgn(x, Cr ) − sgn(x, Cr′ ) ],
+                       2
+as in (6.5) of [1]. Lemma 4.2 and the arguments of section 4.6 carry over immediately and
+yield the following. Here
+                                      Dx = { z ∈ D | x ⊥ z }
+               8
+is an oriented totally geodesic submanifold of D of codimension r and L ⊂ L∨ is an integral
+lattice in V .
+Proposition 5.2. (i) Suppose that Φr (x) 6= 0. Then Dx ∩ S consists of a single point.
+(ii) The q-series
+                            X             1
+(5.4)                            Φr (x) e 2 (x,x) , µ ∈ L∨ /L,
+                                  x∈L+µ
+is termwise absolutely convergent.
+
+The theta form                                             X
+                                    θµ (τ, ϕKM ) =                 ϕKM (τ, x)
+                                                       x∈L+µ
+is a closed r-form on D and we define
+                                                       Z
+                                        Iµ (τ ; S) =           θµ (τ, ϕKM ).
+                                                           S
+As before Iµ (τ ; S) is a non-holomorphic modular form of weight n/2 and transformation law
+inherited from that of θµ (τ ; ϕKM ). We expect that Iµ (τ ; S) is again the modular completion
+of the q-series (5.4). A solution of the equation
+                                    ∂
+                                        ϕKM (τ, x) = dΨM (τ, x)
+                                   ∂ τ̄
+is defined in section 8 of [5] and the analogue of the form ψ(x) used above can be obtained
+from it. It remains to do the boundary calculations explicitly and to determine the relation
+with the generalized error functions defined in section 6 of [1]. In particular, it seems likely
+that there will be an analogue of the inductive relation (5.3) for the shadow in general. We
+hope to return to this in the future.
+
+
+                            6. Appendix: Differential forms on D
+
+In this section, we review the conventions used above concerning tangent spaces and differ-
+ential forms. The basic idea is to simplify computations by pulling back to the frame bundle
+and then viewing this bundle as an open subset of V 2 .
+   8The orientation is defined as follows: Suppose that an orientation of D has been fixed. Then, at a point
+z ∈ Dx , we have Tz (D) = Tz (Dx ) + Nz (Dx ) where, under the identification Tz (D) = Hom(z, z ⊥ ), the normal
+space Nz (Dx ) = Hom(z, Rx). Since z ∈ D is oriented, the basis vector x in Rx determines an orientation of
+Nz (Dx ) and hence of Tz (Dx ).
+                     THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS                                  19
+
+6.1. Tangent vectors. We use the following construction. Let
+                               FD = { ζ = [ζ1 , ζ2 ] ∈ V 2 | (ζ, ζ) < 0 }
+and
+                            OFD = { ζ = [ζ1 , ζ2 ] ∈ V 2 | (ζ, ζ) = −12 }
+be the spaces of oriented negative frames and oriented orthogonal negative frames respectively.
+We have natural projections to D sending a frame to the 2-plane it spans. Note that FD ⊂ V 2
+is an open subset so that there is a natural identification Tζ (FD) = V 2 . Also, FD (resp. OFD)
+is a GL2 (R)+ (resp. SO(2)) torsor over D. For convenience, for z ∈ D we write U (z) = z ⊥ .
+If ζ ∈ FD with span π(ζ) = z, we obtain an isomorphism
+                                                                  ∼
+(6.1)                                  dπζ : U (z)2 −→ Tz (D).
+satisfying the equivariance condition
+                                                          dπζ
+                                            U (z)2                / Tz (D)
+
+                                                     Rg
+                                                         dπζ ′         
+                                            U (z)2                / Tz (D),
+
+where g ∈ GL2 (R)+ and ζ ′ = ζ g. Thus, the spaces U (z)2 define a connection on the GL2 (R)+
+principal bundle FD and provide a convenient way to describe differential forms on D. Note
+that, for a choice of ζ with π(ζ) = z, the natural isomorphism
+                                                                  ∼
+(6.2)                                  Hom(z, z ⊥ ) −→ Tz (D),
+can be written as the composition of the isomorphism
+                                            ∼
+                          Hom(z, z ⊥ ) −→ U (z)2 ,                    λ 7→ [λ(ζ1 ), λ(ζ2 )],
+given by the basis ζ, with the map (6.1).
+
+For a point ζ ∈ OFD ⊂ FD, we have
+                V 2 = Tζ (FD) ⊃ Tζ (OFD) = { η = [η1 , η2 ] | (η, ζ) + (ζ, η) = 0 },
+i.e., (η1 , ζ1 ) = 0, (η2 , η2 ) = 0, and (η1 , ζ2 ) = −(η2 , ζ1 ). This contains the connection subspace
+U (z)2 and the additional vertical subspace R [ζ2 , −ζ1 ] ⊂ z 2 .
+
+Suppose that γ : [0, 1] −→ D is a smooth curve given explicitly by a lift
+                           γ(s) = span{ζ(s)},                     ζ(s) = [ζ1 (s), ζ2 (s)],
+to a smooth curve in OFD, i.e., with (ζ(s), ζ(s)) = −12 . The vector field along the lift ζ(s)
+                             d
+obtained by pushing forward ds  is given by
+                                                d
+                                       dζ∗ (       ) = [ζ̇1 (s), ζ̇2 (s)],
+                                                ds
+and the image along γ is
+                                    d
+                                    dγ∗ (
+                                      ) = dπζ ([ζ̇1 (s), ζ̇2 (s)]).
+                                   ds
+Under the isomorphism (6.2), this corresponds to the vector
+                          ζ1 ⊗ prU (z) ζ̇1 (s) + ζ2 ⊗ prU (z) ζ̇2 (s) ∈ z ⊗ z ⊥ ,
+20                                            STEPHEN KUDLA
+
+where prU (z) is the orthogonal projection of V to U (z).
+
+
+Remark 6.1. There is one subtle point here. The condition (ζ(s), ζ(s)) = −12 implies that
+
+                                      0 = (ζ̇(s), ζ(s)) + (ζ(s), ζ̇(s)).
+
+But the component (ζ̇1 (s), ζ2 (s)) need not be zero and so the ζ̇j (s)’s may not lie in U (z),
+hence the need for the projection. On the other hand, if we integral π ∗ (ψ(x)) along the lift
+of a curve to OFD, then the pullback will vanish on the vertical component of the tangent
+vector, and so we do not need to take any projection.
+
+Remark 6.2. It will be convenient to compute differential forms on D by working with their
+pullbacks to OFD. In the end, we obtain forms on D by restricting to the connection subspace.
+This restriction cannot, of course, be done at the various intermediate steps!
+
+
+6.2. Proof of Proposition 2.1. On OFD, we have
+                        1 −2πR
+                                      R−1 ( (x, ζ1 )(x, dζ2 ) − (x, ζ2 )(x, dζ1 ) ) − (ζ2 , dζ1 ) .
+                                                                                                 
+(6.3)       ψ(x) = −      e
+                       2π
+where we have omitted the π ∗ . Note that since (ζ, ζ) = −12 on OFD, we have
+
+          R = (x, ζ)(ζ, x),         dR = 2(x, ζ)(dζ, x) = 2(x, ζ1 )(x, dζ1 ) + 2(x, ζ2 )(x, dζ2 ),
+
+and relations (ζ1 , dζ1 ) = 0, ζ2 , dζ2 ) = 0, and (ζ2 , dζ1 ) = −(ζ1 , dζ2 ). Thus, we have
+
+                                  dR ∧ (ζ2 , dζ1 ) = −dR ∧ (ζ1 , dζ2 ) = 0.
+
+Now we calculate
+                                           1 −2
+              dψ(x) = e−2πR [ R−1 +          R ] dR ∧ ((x, ζ1 )(x, dζ2 ) − (x, ζ2 )(x, dζ1 ) )
+                                          2π
+                                   1 −2πR −1
+                              −      e      R 2 (x, dζ1 ) ∧ (x, dζ2 )
+                                  2π
+                                        1 −2πR
+                                    −     e    (dζ1 , dζ2 ).
+                                       2π
+But we have
+
+                 dR ∧ ( (x, ζ1 )(x, dζ2 ) − (x, ζ2 )(x, dζ1 ) ) = 2R (x, dζ1 ) ∧ (x, dζ2 ).
+
+so that
+                                                         1
+                                                           (dζ1 , dζ2 ) e−2πR ,
+                                                                      
+                      dψ(x) = 2 (x, dζ1 ) ∧ (x, dζ2 ) −
+                                                        4π
+as claimed.
+
+
+6.3. The generalized error function. For completeness, in this section, we record the
+definitions of the generalized error function and its ‘boosted’ version given in [1].
+                     THETA INTEGRALS AND GENERALIZED ERROR FUNCTIONS                                      21
+
+The classical error function and its complementary version, in the normalization of [1], are
+given by
+                                          Z 1
+                                 √                2 2
+          E1 (u) = sgn(u) Erf(|u| π) = 2u     e−πu v dv
+                                                       0
+                                                                      Z ∞
+                                   √      2                                       2       2
+          M1 (u) = −sgn(u) Erfc(|u| π) = − sgn(u)                           e−πu (v +1) (v 2 + 1)−1 dv.
+                                          π                           0
+The auxilliary function used to define the generalized error function is then
+                                  Z 1
+                                          2 2
+              e2 (u1 , u2 ) = 2u2     e−πt u2 E1 (tu1 ) dt
+                                     0
+                                         Z 1Z 1
+                                                        2   2   2 2
+                           = 4u1 u2                e−πt (u2 +u1 v ) t dt dv
+                                          0    0
+                                         Z 1
+                               2u1 u2                       2   2 2
+                                               1 − e−π(u2 +u1 v )          (u22 + u21 v 2 )−1 dv
+                                                                       
+                           =
+                                 π        0
+                                                                      Z u1
+                               2        u1  2       2                                 2
+                           =     Arctan( ) − u2 e−πu2                        e−πv (u22 + v 2 )−1 dv
+                               π        u2  π                          0
+                             2           u1
+                         = Arctan( ) − ẽ2 (u1 , u2 ),
+                            π            u2
+where the last line defines ẽ2 (u1 , u2 ), cf. (4.4). The generalized error function E2 can be
+expressed as, cf. (3.24) of [1],
+(6.4)              E2 (α; u1 , u2 ) = −ẽ2 (u1 , u2 ) − ẽ2 (u′1 , u′2 ) + sgn(u2 ) sgn(u′2 ),
+where
+                                     u2 − αu1              u1 + αu2
+                               u′1 = √         ,     u′2 = √          .
+                                       1 + α2                1 + α2
+It has, of course, a more elegant definition given in section 3.1 of [1], but (6.4) is all we will
+need. Now the ‘boosted’ version, Definition 3.14 of [1], is defined for a pair of negative vectors
+C1 , C2 with ∆(C1 , C2 ) > 0 and a vector x ∈ V by
+                                                                                     !
+                                        (C1 , C2 )       (C1⊥2 , x)      (C2 , x)
+              E2 (C1 , C2 ; x) = E2 p               ;p                 ,p              .
+                                        ∆(C1 , C2 )     (C1⊥2 , C1⊥2 )    (C2 , C2 )
+After a short calculation using (6.4), this yields (4.6).
+
+
+                                                   References
+   [1] S. Alexandrov, S. Banerjee, J. Manschot, and B. Pioline, Indefinite theta series and generalized error
+       functions, preprint (2016), arXiv:1606.05495v1.
+   [2]         , A note on Zwegers’ theta functions, preprint (2013).
+   [3] S. Kudla and J. Millson, The theta correspondence and harmonic forms I, Math. Annalen, 274 (1986),
+       353–378.
+   [4]         , The theta correspondence and harmonic forms II, Math. Annalen, 277 (1987), 267–314.
+   [5]         , Intersection numbers of cycles on locally symmetric spaces and Fourier coefficients of holo-
+       morphic modular forms in several complex variables, Publ. Math. IHES, 71 (1990), 121–172.
+   [6] I. Livinskyi, On the integrals of the Kudla-Millson theta series, Thesis, Univ. of Toronto, (2016).
+   [7] C. L. Siegel, On the theory of indefinite quadratic forms. Ann. of Math. (2) 45 (1944), 577–622.
+22                                          STEPHEN KUDLA
+
+     [8] S. P. Zwegers, Mock Theta Functions. Thesis,              Utrecht,   2002.   http://igiturarchive.
+         library.uu.nl/dissertations/2003-0127-094324/inhoud.htm
+

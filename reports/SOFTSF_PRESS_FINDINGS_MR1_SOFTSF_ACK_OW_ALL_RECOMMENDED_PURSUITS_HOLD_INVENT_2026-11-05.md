@@ -1,0 +1,4 @@
+# Soft SF PRESS — CONFIRM hash-match — MR1 ACK OW all recommended pursuits
+FINDINGS: /workspace/quantum-comp/reports/FINDINGS_MR1_SOFTSF_ACK_OW_ALL_RECOMMENDED_PURSUITS_HOLD_INVENT_2026-11-05.md
+sha256: `f0bd28052b138925792106e043a7178b1f9411ff02ed8cf306826fd86736a493`
+OW 865d3a37f1c13431c78672847dcd33007b3467df92f1e7c8602057f257b1bf3b MATCH; WORKING continue Appell-Lerch/Rc forensic; tip 7cddb188… tip_touched NO; invent HOLD STANDS; No CERT.

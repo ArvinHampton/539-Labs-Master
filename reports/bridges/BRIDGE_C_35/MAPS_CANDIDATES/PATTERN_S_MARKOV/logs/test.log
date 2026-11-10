@@ -1,0 +1,1 @@
+{"prereg_sha": "cdbee31a0922f00a139996337f88e4bd02bf31c38750a84ae0da0972801b0bc8", "push": ["8/35", "11/70", "0", "9/70", "19/70", "3/35", "0", "9/70"], "rho_res": ["1/32", "1/4", "3/32", "0", "7/32", "1/4", "5/32", "0"], "equal": false, "TV": "71/140", "any_stationary_mass_on_2_or_6": false, "any_stationary_can_match": false, "verdict": "FAIL"}

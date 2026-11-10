@@ -1,0 +1,81 @@
+%=====================================================================
+\section{Dependence on $s$: the $\zeta$-curve, $g_s$, and the cases $s=8$, $s=11$}\label{sec:sfamily}
+%=====================================================================
+\subsection{$\zeta_E(0;s)$ and $\zeta_E(-1;s)$ on one rational curve}\label{app:zeta}
+\begin{theorem}[Rational $\zeta$-curve]\label{thm:zetacurve}
+For every integer $s\ge3$, with $c_0=s/(4(s-2))$ and $\zeta_E(w;s)=\sum_m e_m(m-c_0)^{-w}$:
+\[\zeta_E(0;s)=\frac{(s-4)(s-5)}{12(s-2)},\qquad
+\zeta_E(-1;s)=\frac{2s^5-14s^4-45s^3+425s^2-632s-96}{1440(s-2)^2},\]
+the $t^{-1}$ coefficient of $E_s(e^{-t})e^{c_0t}$ is $\operatorname{arccosh}(s-1)/\sqrt{s(s-2)}$, and the $t^{-1/2}$ and $t^{1/2}$ coefficients vanish.
+\end{theorem}
+\catA{All algebraic steps are symbolic in $s$: in the $\gamma$-adapted basis $Q_2=S^2+2(s-1)ST+T^2$; $E_s$ is the sum over one half-open cone with exactly
+two lattice classes $(\tfrac12+\delta,1-\delta)$, $(\delta,\tfrac12-\delta)$, $\delta=1/(2(s-2))$, via the involution $\varphi(n,k)=(n,-2n-k-1)$ (Remark~\ref{rem:struct}(a)).
+Analytic inputs: Proposition~\ref{prop:EM5} and the Mellin dictionary (cf.\ Zagier, Shintani). Cross-checked against $42$ exact cone values ($s=3,\dots,20,25,30,41$);
+the key steps (shift identity, $\gamma$-invariance, the involution, checked by brute force for $s=3..30$, the per-class $t^0$ coefficient, both closed forms and the
+vanishing of the $t^{\pm1/2}$ sums) were re-derived with independent code.}
+\noindent\emph{Normalisation note.} The ray-class value $\zeta(-1,\K)=29/60$ and $\zeta_E(-1;7)=29/1200$ differ only by normalisation: since
+$\Nm\fa=20Q$, $\sum_{\fa\in\K}\Nm\fa^{-w}=20^{-w}\zeta_E(w;7)$, and at $w=-1$ this gives $29/60=20\cdot29/1200$. Likewise $5/12=3\cdot5/36$
+($\Nm\fa=3Q$, $s=8$) and $1129/36=36\cdot1129/1296$ ($\Nm\fa=36Q$, $s=11$).
+
+\subsection{Radial expansion of $g_s$}\label{app:gs}
+Let $g_s(q)=\sum_{n\ge0}q^{n^2}/(-q^s;q^s)_n$.
+\begin{theorem}[Radial expansion of $g_s$]\label{thm:Gs}
+For every real $s>0$, $g_s(e^{-t})\sim\sum_{k\ge0}c_k(s)t^k$ as $t\to0^+$, with $c_k\in\Q[s]$ of exact degree $k$ and no $t^{-1}$ or
+half-integer terms. In particular $c_0=2$, $c_1=2(s-3)$, $c_2=5s^2-44s+75$, $c_3=(55s^3-930s^2+3918s-4683)/3$,
+$c_4=(1073s^4-28864s^3+214620s^2-593128s+545835)/12$. Consequently $\zeta_g(0)=1$, $\zeta_g(-1)=6-2s$ and $\zeta_g(-k)=(-1)^kk!\,c_k(s)$.
+\end{theorem}
+\catA{Elementary proof: write $1/(-q^s;q^s)_n=2^{-n}\exp\sum_{j\le n}\Lambda(sjt)$, expand with Faulhaber polynomials, sum against $2^{-n}$, and bound the
+remainder by splitting at $N=t^{-1/3}$. Confirmed on held-out $s$; $c_0,\dots,c_4$ re-derived with independent code (exact match), and
+$g_s(e^{-t})-\sum_{k\le4}c_kt^k=O(t^5)$ checked numerically at $s=3,7.5$. The Dirichlet-series reading of $\zeta_g$ is Category B.}
+\noindent\textbf{$\Porth_s$ and $\Thol$ for all $s\ge3$} (Category A, by Proposition~\ref{prop:EM5}), with $\Res=\operatorname{arccosh}(s-1)/\sqrt{s(s-2)}$:
+$\Porth_s$ has $t^{-1}$ coefficient $\Res/2$ and $t^{-1/2}$ coefficient $\sqrt\pi(s^2-2\sqrt{2s})/(4s(s-2))$; $\Thol$ has $t^{-1/2}$ coefficient
+$\sqrt\pi(s^2/2-2s+\sqrt{2s})/(s(s-2))$ and no integer-order terms through $t^1$. Thus Lemma~\ref{lem:parity} holds at $x=0$ as an identity in $s$. $g_s$ is not
+in $\mathrm{span}_\Q\{1,\theta_3,R,M_m\}$ (exact rank to $q^{400}$, $s=3..20,25,30,41$). $H_s$ is Zwegers-admissible only for integer $s\ge5$.
+The higher radial coefficients of $H_s$ are given in \S\ref{sec:hs}.
+
+\subsection{The cases $s=8$ and $s=11$}\label{app:s811}
+\begin{itemize}[leftmargin=2em]
+\item $2\Porth_s=E_s+1+\theta_3-\Theta_{\mathrm{hol},s}$ holds exactly as a $q$-series to $q^{3000}$ for $s=7,8,11$ (Category A).
+\item Fields and orders: $s=8$: $\Q(\sqrt3)$, order $\Z[2\sqrt3]$. The maximal order has fundamental unit $2+\sqrt3\notin\Z[2\sqrt3]$; the fundamental unit of the
+order is $7+4\sqrt3=(2+\sqrt3)^2$, which is the $\gamma$-eigenvalue. Multiplicity one (no double counting). $s=11$: $\Q(\sqrt{11})$, order $\Z[3\sqrt{11}]$,
+$\varepsilon=10+3\sqrt{11}$. $E_s$ is a single-class ray-class series for each $s$.
+\item $\zeta_E(0)$, $\zeta_E(-1)$: $1/10, 29/1200$ ($s=7$); $1/6, 5/36$ ($s=8$); $7/18, 1129/1296$ ($s=11$), by Shintani cones (exact) and by PARI Hecke $L$-functions.
+The $t^{\pm1/2}$ coefficients of $E_s$ vanish; the Baker obstruction carries over.
+\item $S/T$ family: $S$ unitary, $S^2=P$, $(ST)^3=I$ for all three $s$ (exact). $s=8$: even lattice, whole family Eisenstein, $\psi=\psi_{\rm Eis}$, Herglotz form to
+$3\cdot10^{-13}$ (Category B). $s=11$: $u_L$ has a genuine dihedral cusp component ($6$ Maass forms with $\lambda=\tfrac14$ from $12$ non-genus characters of
+conductor $(3)$ and $(9)$; exact ray-class test, Proposition~\ref{prop:cuspcrit}); $\psi=\psi_{\rm Eis}+\psi_{\rm cusp}$ with $\psi_{\rm cusp}\neq0$ at $8$ rationals
+(floating, Category~B). Exactly, $\dim V=110$, $d_{\rm Eis}=90$ and $d_{\rm cusp}=20$ (Theorem~\ref{thm:dims}). The count ``$\ge90$ dihedral newforms'' from conductor
+norms is not a dimension: as at $s=7$, the forms occur only in fixed combinations.
+\item Genus: at $s=11$ there are $4$ genera ($2^{\mu-1}$, $\mu=3$) and $\mathrm{Cl}^+\cong\Z/4\times\Z/2$, so $h^+=8>\#$genera.
+\end{itemize}
+\textbf{Class numbers versus genera} (Category A for the counts). With $D_s$ the discriminant of the order, $h^+$ equals the number of genera for every
+$s\in\{3,\dots,20,30\}$ except $s=11$ ($8$ vs $4$) and $s=19$ ($8$ vs $4$); also $s=25$ ($12$ vs $4$) and $s=41$ ($24$ vs $8$).
+
+\textbf{The rule ``cusp part $\Leftrightarrow h^+\neq\#$genera'' is false at both levels.} For the family span, $d_{\rm cusp}>0$ for every odd $s$ in $5..51$, including
+$s=5,7,13,15$ where $h^+=\#$genera (Theorem~\ref{thm:dims}). For $u_L$ it fails at $s=14,17,18,22,23$ (Proposition~\ref{prop:cuspcrit}). Both notions are invisible in
+the radial data at $x=0$, which are $s$-uniform (\S\S\ref{app:zeta}--\ref{app:gs}).
+
+\subsection{Structural remarks}\label{sec:conn}
+\begin{remark}\label{rem:struct}
+\leavevmode
+\begin{description}[leftmargin=1.5em,style=nextline]
+\item[(a) One improper automorph (Category A).] The involution $\varphi(n,k)=(n,-2n-k-1)$ used in the proof of Theorem~\ref{thm:zetacurve} equals $-\gamma R_s$, and
+$R_sa=-a$. So $\varphi$, the reflection of Theorem~\ref{thm:cthird}(ii) and $H_5\equiv0$ come from a single symmetry. $R_sc_1=-c_2$ holds only at $s=5$, which is why
+$H_5\equiv0$ and $Q(c_1)=Q(c_2)$ there. Adding $R_s$ to $\langle\gamma,-I\rangle$ gives no new label relations for any $s=5,\dots,25$ (exact orbit counts).
+\item[(b) The factor $20$ (identity Category A; its meaning Category B).] The denominator of $c_0$ is $4(s-2)/\gcd(s,8)=20,3,36$ at $s=7,8,11$, which is the ideal-norm
+factor $c_s$ in $\Nm\fa=c_sQ$. For odd $s$ it equals $-B(c_1,c_2)=-8Q(c_1)=4(s-2)$ of the $H_s$ cone (at $s=8$ the two differ: $3$ versus $24$); equivalently
+$Q_s=(\Nm\fa+s)/(4(s-2))$ for odd $s$.
+\item[(c) Residue and Pell unit (Category A).] $\Res=\operatorname{arccosh}(s-1)/\sqrt{n_s}=\log\varepsilon_s/\sqrt{n_s}$ with $\varepsilon_s=(s-1)+\sqrt{n_s}$, the
+fundamental solution of $x^2-n_sy^2=1$. For even $s$ this is the fundamental unit of the order, not of the maximal order: at $s=8$, $\varepsilon_8=7+4\sqrt3$.
+\item[(d) $\Delta$ and the $s=8$ scale (Category A).] $\Delta=(s-2)(7s-32)=4Q(c_1)Q(c_2)=16(s-2)^2-9n_s$; $B(c_1,c_2)^2-4Q(c_1)Q(c_2)=9n_s$; $\det(c_1,c_2)=3$;
+$\gcd(7s-32,s-8)=g$ and $\gcd(7s-32,s-2)=\gcd(18,s-2)$. $\Q(\sqrt\Delta)\neq\Q(\sqrt{n_s})$ for every $s<10^6$ (exact search), so the $H_s$ half-integer data live in a
+different quadratic field from the $E$-residue except where $\Delta$ is a square. At $s=8$ all the listed half-integer coefficients lie in $\sqrt\pi\,\Q$ (Theorem~\ref{thm:Hs}(v)).
+\item[(e) Three parities are one (algebra Category A; same-$\rho$ identification Category B).] The label parity $P=S_{\rm lab}^2$, the cone-weight parity
+$\nu\mapsto-\nu$ and the integer versus half-integer radial orders coincide. A weight-$k$ vector-valued form satisfies $\rho(S)^2f=(-1)^kf$, so the $E$/Eisenstein sector lies
+in $W_P$ and the Zwegers/$\vartheta_{\rm hol}$ sector in $\mathrm{Fix}(-P)$ (dimension $68=4(3\cdot3+2\cdot4)$ at $s=7$). Hence weight-$1$ vectors cannot realise any part of
+$V^\perp\subset W_P$. Category~B: that Zwegers' completed theta transforms
+under this same $140$-dimensional $\rho$ with the $S_{\rm lab}=\rho(S)^{-1}$ sign.
+\item[(f) The constants $a_H$, $a_C$ are closed forms (Category A).] $a_H=H_{-1/2}(7)$ and $a_C=C_{-1/2}(7)$ symbolically; the $t^{-1/2}$ coefficient of $\Cthird$ at
+$x=0$, $-\sqrt\pi(49-2\sqrt{14})/140$, is consistent with the all-$s$ formulas of Appendix~\ref{app:gs}.
+\end{description}
+\end{remark}

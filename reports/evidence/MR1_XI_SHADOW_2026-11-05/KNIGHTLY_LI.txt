@@ -1,0 +1,2121 @@
+       PETERSSON’S TRACE FORMULA AND THE HECKE
+         EIGENVALUES OF HILBERT MODULAR FORMS
+
+
+                         ANDREW KNIGHTLY AND CHARLES LI
+
+
+         Abstract. Using an explicit relative trace formula, we obtain a Petersson
+         trace formula for holomorphic Hilbert modular forms. Our main result ex-
+         presses a sum (over a Hecke eigenbasis) of products of Fourier coefficients and
+         Hecke eigenvalues in terms of generalized Kloosterman sums and Bessel func-
+         tions. As an application we show that the normalized Hecke eigenvalues for
+         a fixed prime p have an asymptotic weighted equidistribution relative to a
+         polynomial times the Sato-Tate measure, as the norm of the level goes to ∞.
+
+
+
+
+                                     1. Introduction
+   Let h ∈ Sk (Γ0 (N )) be a Hecke eigenform (k even), and for a prime p - N define
+the normalized Hecke eigenvalue νph by
+                                         k−1
+                                      p− 2 Tp h = νph h.
+The Ramanujan-Petersson conjecture asserts that |νph | ≤ 2. This is a theorem of
+Deligne. Because we have assumed trivial central character, the operator Tp is
+self-adjoint, so its eigenvalues are real numbers, and thus
+                                         νph ∈ [−2, 2].
+For a fixed non-CM newform h, the Sato-Tate conjecture predicts that the set
+{νph : p - N } is equidistributed in [−2, 2] relative to the Sato-Tate measure
+                               ( q
+                                   1        2
+
+(1)                 dµ∞ (x) =      π  1 − x4 dx when x ∈ [−2, 2],
+                                  0                otherwise.
+Taylor has recently proven this in many cases when k = 2 [Ta].
+   When the prime p is fixed, the normalized eigenvalues of Tp on the space Sk (Γ0 (N ))
+are asymptotically equidistributed relative to the measure
+                                        p+1
+                      dµp (x) = 1/2                   dµ∞ (x)
+                                 (p + p−1/2 )2 − x2
+as k + N → ∞. This was proven in the late 1990’s by Serre [Se], and independently
+(for N = 1) by Conrey, Duke and Farmer [CDF]. An extension of the result (in
+the level aspect only) to Hilbert modular forms is given in [Li2]. These results have
+an antecedent in work of Bruggeman in 1978, who proved that the eigenvalues of
+Tp on Maass forms of level 1 exhibit the same distribution ([Br], Sect. 4; see also
+Sarnak [Sa]). Even earlier, in 1968 Birch proved a similar result for sizes of elliptic
+curves over Fp [Bi].
+
+The first author was supported by NSA grant H98230-06-1-0039.
+Document date: Jan. 26, 2008.
+2                        ANDREW KNIGHTLY AND CHARLES LI
+
+
+   In this paper we prove a different result on the asymptotic distribution of Hecke
+eigenvalues, valid over a totally real number field F . The following is a special
+case of a more general result (cf. Theorem 6.6). Notation and terminology will be
+defined precisely later on.
+Theorem 1.1. Let F be a totally real number field, and let m be a totally positive
+element of the inverse different d−1 ⊂ F . For a cusp form ϕ on GL2 (F )\ GL2 (AF )
+                                          ϕ
+with trivial central character, let Wm       denote its mth Fourier coefficient (see (10)).
+Define a weight
+                                                  ϕ
+                                              |Wm   (1)|2
+                                        wϕ =              .
+                                                 kϕk2
+Fix a prime ideal p - md. Let {ϕ} be an orthogonal basis of eigenforms of prime-to-p
+level N and weight (k1 , . . . , kr ), with all kj > 2 and even. For such ϕ, let
+                                       νpϕ ∈ [−2, 2]
+denote the associated normalized eigenvalue of the Hecke operator Tp . Then the
+wϕ -weighted distribution of the eigenvalues νpϕ is asymptotically uniform relative
+to the Sato-Tate measure as the norm of N goes to ∞. This means that for any
+continuous function f : R −→ C,
+                              P       ϕ
+                                ϕ f (νp )wϕ
+                                              Z
+                        lim      P          =     f (x)dµ∞ (x).
+                     N(N)→∞        ϕ wϕ         R
+
+Noteworthy is the fact that here the measure and the weights are independent of p,
+in contrast to Serre’s (unweighted) result. The Sato-Tate measure dµ∞ is nonzero
+on any subinterval of [−2, 2], so in particular the above illustrates the density of
+the Hecke eigenvalues in [−2, 2].
+   The proof of the above theorem involves a trace formula which may be of in-
+dependent interest. In a previous paper [KL1], we detailed the way in which the
+classical 1932 Petersson trace formula can be realized as an explicit relative trace
+formula, as a conceptual alternative to the usual method using Poincaré series.
+Here we extend the technique and result to cusp forms on GL2 (AF ), where F is an
+arbitrary totally real number field. We work with spaces Ak (N, ω) of holomorphic
+Hilbert cusp forms of weight k = (k1 , . . . , kr ), all strictly greater than 2, on the
+Hecke congruence subgroups Γ0 (N). Our main result is Theorem 5.11 in which a
+sum (over a Hecke eigenbasis) of terms involving the associated Fourier coefficients,
+Petersson norms and eigenvalues of a Hecke operator Tn , is expressed in terms of
+generalized Kloosterman sums and Bessel functions.
+   The incorporation of Hecke eigenvalues is a novel feature of this generalized
+sum formula. In Section 6 we prove a more general version of the above weighted
+distribution theorem by an argument based on bounding the terms of the sum
+formula in terms of N(N), following the technique for the F = Q case from [Li1].
+This is analogous to the way in which Serre’s result follows from bounding the terms
+of the Eichler-Selberg formula for tr(Tpm ).
+   In Section 7 we give some variants of the generalized Petersson formula, including
+a simplified version for the case where F has narrow class number 1. In Corollary
+7.3, setting n = 1 for the trivial Hecke operator, we recover the classical extension
+of Petersson’s formula to Hilbert modular forms, as follows from a 1954 paper of
+Gundlach, [Gu]. His results are valid for cusp forms of uniform weight k ≥ 2. Refer
+to §2 of [Lu] for an overview of the classical derivation.
+                 PETERSSON’S FORMULA AND HECKE EIGENVALUES                            3
+
+
+   In 1980 Kuznetsov gave an analog of Petersson’s formula involving Maass forms
+and Eisenstein series on the spectral side, [Ku]. As an application, he used his
+formula to give estimates for sums of Kloosterman sums. His work was reformulated
+in a representation-theoretic setting by various authors, see [CPS] and its references,
+notably [MW] where the general rank-1 case is treated. More recently Bruggeman,
+Miatello and Pacharoni gave a general Kuznetsov trace formula for automorphic
+forms on SL2 (F∞ ) of uniform even weight ([BMP], Theorem 2.7.1). An important
+application of their formula is an estimate for sums of Kloosterman sums.
+   In contrast to the above results, here we are concerned only with holomorphic
+cusp forms, i.e. those whose infinity types are discrete series. For our test function,
+we take discrete series matrix coefficients at the infinite components. This serves
+to isolate the holomorphic part of the cuspidal spectrum. At the finite places we
+take Hecke operators, which introduces Hecke eigenvalues into the final formula.
+Thanks: We would like to thank Don Blasius for a helpful discussion about the
+Ramanujan conjecture. We also thank the referee for many insightful comments.
+
+                                2. General setting
+   We recall the general setting of Jacquet’s relative trace formula [Ja]. Full details
+for the discussion below are given in §2 of [KL1]. Let F be a number field, with
+adele ring A. Let G be a reductive algebraic group defined over F . Let H be an
+F -subgroup of G × G, with H(A) unimodular. We assume that H(F )\H(A) is
+compact. Define a right action of H on G by g(x, y) = x−1 gy. For g ∈ G, let Hg
+be the stabilizer of g, i.e.
+                           Hg = {(x, y) ∈ H| x−1 gy = g}.
+For δ ∈ G(F ), let [δ] be the H(F )-orbit of δ in G(F ), i.e.
+                            [δ] = {x−1 δy| (x, y) ∈ H(F )}.
+Each element of [δ] can be expressed uniquely in the form u−1 δv for some (u, v) ∈
+Hδ (F )\H(F ).
+   Let f be a continuous function on G(A), and let
+                                X
+(2)                 K(x, y) =        f (x−1 γy) (x, y ∈ G(A))
+                                γ∈G(F )
+
+be the associated kernel function. We assume that the above sum is uniformly
+absolutely convergent on compact subsets of H(A). In particular, K(x, y) is a
+continuous function on the compact set H(F )\H(A). Let χ(x, y) be a character of
+H(A), invariant under H(F ). Consider the expression
+                        Z
+(3)                                K(x, y)χ(x, y)d(x, y),
+                           H(F )\H(A)
+
+where d(x, y) is a Haar measure on H(A). A relative trace formula results from
+computing this integral using spectral and geometric expressions for K(x, y). Using
+the geometric
+        P expression (2), it is straightforward to show that the integral (3) is
+equal to [δ] Iδ (f ), where
+                               Z
+                     Iδ (f ) =           f (x−1 δy)χ(x, y)d(x, y).
+                              Hδ (F )\H(A)
+4                         ANDREW KNIGHTLY AND CHARLES LI
+
+
+We see that
+                   Z                          "Z                               #
+       Iδ (f ) =                 f (x−1 δy)                     χ(rx, sy)d(r, s) d(x, y).
+                   Hδ (A)\H(A)                 Hδ (F )\Hδ (A)
+
+An orbit [δ] is relevant if χ is trivial on Hδ (A). From the above, we see that
+Iδ = 0 whenever
+              R     [δ] is not relevant. Indeed the expression in the brackets is equal
+to χ(x0 , y0 ) Hδ (F )\Hδ (A) χ(r, s)d(r, s), where (x0 , y0 ) ∈ H(A) is any representative
+for (x, y), and this integral vanishes unless δ is relevant.
+
+                                     3. Preliminaries
+3.1. Notation. Throughout this paper we work over a totally real number field
+F 6= Q. Let
+                                         r = [F : Q],
+and let σ1 , . . . , σr be the distinct embeddings F ,→ R. Let ∞1 , . . . , ∞r denote the
+corresponding archimedean valuations. Let O be the ring of integers of F . We will
+generally use Gothic letters a, b etc. to denote fractional ideals of F . We reserve p
+for prime ideals. Let v = vp be the discrete valuation corresponding to p. Let Ov
+be the ring of integers in the local field Fv , and let $v ∈ Ov be a generator of the
+maximal ideal pv = pOv .
+   Let N : F → Q denote the norm map. For a nonzero ideal a ⊂ O, let N(a) =
+|O/a| denote the absolute norm. This extends by multiplicativity to the group of
+nonzero fractional ideals of F . For α ∈ F ∗ , we define
+                                  N(α) = N(αO) = | N(α)|.
+We also use the above norms in the local setting with the analogous meanings. We
+normalize the absolute value on Fv by |$v |v = N(p)−1 .
+  By Dirichlet’s unit theorem, the unit group of F is
+                              O∗ ∼
+                                 = (Z/2Z) × Zr−1 .
+Letting O∗2 denote the subgroup consisting of squares of units, we see that O∗ /O∗2 ∼
+                                                                                    =
+(Z/2Z)r is a finite group. Let
+(4)                                U = {u1 , . . . , u2r } ⊂ O∗
+be a fixed set of representatives for O∗ /O∗2 .
+    For a fractional ideal a ⊂ F , let ordv a (or ordp a) denote the order. Let av (or
+                                         ord (a)
+ap ) denote its localization, so av = $v v Ov . Let A denote the adele ring of F ,
+with finite adeles Afin , so that
+                                  A = F∞ × Afin ,
+where F∞ = F ⊗ R ∼          r
+                     = R . Let O b=Q
+                                        v<∞ Ov . Generally if a is a fractional ideal
+                          Q
+                a = aO = v<∞ av ⊂ Afin . Let Cl(F ) be the class group of F , of
+of F , we write b     b
+cardinality h(F ). For a fractional ideal a, let [a] represent its image in the class
+group.
+   Let F + denote the set of totally positive elements of F . We let F∞+
+                                                                          denote the
+subset of F∞ of vectors whose entries are all positive. Let
+                                d−1 = {x ∈ F | trF
+                                                 Q (xO) ⊂ Z}
+
+denote the inverse different. We set d−1
+                                      + =d
+                                          −1
+                                             ∩ F +.
+                  PETERSSON’S FORMULA AND HECKE EIGENVALUES                              5
+
+
+   We use the mathtt font to represent finite ideles. Thus we write
+(5)                    a ∈ A∗fin , b
+                                   a = aO,b a = O∩b     a.
+In the other direction, given a fractional ideal a ⊂ F , there is an element a ∈ A∗fin
+such that (5) holds. Explicitly, we can take av = $vordv a . The element a is unique
+up to Ob∗ . We define norms of ideles by taking the products of the local norms. For
+example, in the situation of (5), we have
+                        Y            Y
+               |a|fin =     |av |v =    N(av )−1 = N(a)−1 = N(a)−1 .
+                        v<∞           v<∞
+We use Roman or Greek letters for rational elements a, α ∈ F .
+3.2. Haar measure. We use Lebesgue measure on R, and take the product mea-
+sure on F∞ ∼= Rr . We normalize Haar measure on each non-archimedean comple-
+tion Fv by taking meas(Ov ) = 1. This choice induces a Haar measure on Afin with
+meas(O)
+      b = 1, and because A = F + F∞ × O,   b
+          meas(F \A) = meas((F ∩ O)\(F
+                                 b     ∞ × O)) = meas((O\F∞ ) × O)
+                                           b                    b
+                                              1/2
+(6)                     = meas(O\F∞ ) = dF ,
+where dF is the discriminant of F . The resulting measure on A is not self-dual.
+   Let G = GL2 . We normalize Haar measure on G(R) as follows. Use Lebesgue
+measure dx to define a measure dn on the unipotent subgroup N (R) ∼     = R. On
+R∗ we use the measure dx/|x|. We take the product measure dm on the diagonal
+subgroup M (R) ∼ = R∗ × R∗ , and normalize dk on SO2 (R) to have total measure
+1. On G(R) = M (R)N (R) SO2 (R) we take dg = dm dn dk.
+   Let                        Y          Y
+                      Kfin =       Kv =      G(Ov ) = G(O)
+                                                         b
+                                v<∞         v<∞
+be the standard maximal compact subgroup of G(Afin ). We normalize Haar mea-
+sure on G(Afin ) by taking meas(Kv ) = 1 for all v < ∞. We let Z denote the center
+of G, and write
+                                    G = G/Z.
+We normalize Haar measure on G(Fv ) by taking meas(K v ) = 1.
+3.3. Hilbert modular forms. Let N ⊂ O be an integral ideal of F . Let k =
+(k1 , . . . , kr ) be an r-tuple of positive integers, each greater than or equal to 2. Let
+                                   ω : F ∗ \A∗ → C∗
+                                             Q
+be a unitary Hecke character. Write ω = v ωv . We assume that:
+    (1) the conductor of ω divides N
+    (2) ω∞j (x) = sgn(x)kj for all 1 ≤ j ≤ r.
+The first condition means that ωv is trivial on 1 + Nv for all v|N, and unramified
+for all v - N. In other words, ωfin is trivial on the open set
+                                                Y            Y
+                       ∗ def b ∗
+                     O
+                     bN  = O ∩ (1 + NO)   b =      (1 + Nv )   Ov∗ .
+                                                v|N           v-N
+
+Thus ω can be viewed as a character of the ray class group mod N
+                         Cl(N) ∼
+                               = A∗ /[F ∗ (F + × Ob∗ )].
+                                                    ∞    N
+6                        ANDREW KNIGHTLY AND CHARLES LI
+
+
+  We freely identify Z(A) with A∗ throughout this paper. For example if z ∈ Z(A)
+we write ω(z). Let G = GL2 and let
+                            L2 (ω) = L2 (G(F )\G(A), ω)
+be the space of left G(F )-invariant functions on G(A) which transform by ω under
+the center and which are square integrable over G(F )\G(A). Let R denote the right
+regular representation of G(A) on L2 (ω). Let L20 (ω) be the subspace of cuspidal
+functions. We know that the restriction of R to L20 (ω) decomposes as a discrete
+sum of irreducible representations. These are the cuspidal representations π. Every
+such π factorizes as a restricted tensor product of admissible local representations
+⊗πv .
+   Define groups                          
+                                      a b
+                         K0 (N) = {          ∈ Kfin | c ∈ NO}
+                                                           b
+                                      c d
+and                                   
+                                  a b
+                     K1 (N) = {          ∈ K0 (N)| d ∈ 1 + NO}.
+                                                              b
+                                  c d
+These are open compact subgroups of G(Afin ). Let
+                                              M
+(7)                               Hk (N, ω) =     π,
+where π runs through all cuspidal representations in L20 (ω) for which:
+   (1) πfin = ⊗v<∞ πv contains a nonzero K1 (N)-fixed vector
+   (2) π∞j = πkj is the discrete series representation of G(R) of weight kj , for
+       j = 1, . . . , r.
+The central character of πkj is given by
+                           χπkj (x) = sgn(x)kj = ω∞j (x).
+   For a discrete series representation π∞j , let vπ∞j be a lowest weight vector,
+unique up to nonzero multiples. Define the subspace
+                                                          K (N)
+                               M
+(8)               Ak (N, ω) =     Cvπ∞1 ⊗ · · · ⊗ vπ∞r ⊗ πfin1 ,
+                                π
+                                                                        K (N)
+where π runs through all irreducible summands of Hk (N, ω). Here πfin1          is the
+subspace of K1 (N)-fixed vectors in the space of πfin .
+Proposition 3.1. The space Ak (N, ω) defined above is equal to the set of ϕ ∈ L20 (ω)
+satisfying:
+    (1) ϕ(gkfin ) = ϕ(g) for all kfin ∈ K1 (N)
+                    Yr
+                       eikj θj ϕ(g) for all k∞ = j kθj ∈ K∞ = SO2 (R)r
+                                                Q
+    (2) ϕ(gk∞ ) =
+                   j=1
+   (3) For any fixed x ∈ G(A) and 1 ≤ j ≤ r, the function
+                                                              g∞j 7→ ϕ(xg∞j ) is
+                                               1   −i
+       annihilated by R(E − ), where E − =              ∈ gl2 (C) and R denotes
+                                              −i −1
+       the right regular action of G(F∞j ).
+The elements of Ak (N, ω) are continuous functions on G(A).
+Proof. The proof is the same as for the case F = Q given in Theorem 12.6 of [KL2].
+For the continuity, see Lemma 3.3 of [Li2].                                     
+                  PETERSSON’S FORMULA AND HECKE EIGENVALUES                               7
+
+
+By a general theorem of Harish-Chandra, the space Ak (N, ω) is finite-dimensional
+(cf. [HC], [BJ]). In particular the set of π in (7) is finite.
+3.4. Fourier coefficients. Let θ : A −→ C∗ be the standard character of A.
+Explicitly,
+    (1) θ∞ (x) = e−2πi(x1 +···+xr ) for x = (x1 , . . . , xr ) ∈ F∞
+    (2) For v < ∞, θv is the composition
+                            trF
+                              Qp
+                                v
+                                                            e(2πi·)
+                   θv : Fv −−−→ Qp → Qp /Zp ,→ Q/Z −−−−→ C∗ .
+Note that θv is trivial precisely on the local inverse different d−1
+                                                                   v = d
+                                                                          −1
+                                                                             Ov = {x ∈
+       Fv
+Fv | trQp (x) ∈ Zp }. Recall that θ is trivial on F , and that every character on F \A
+is of the form
+                                   θm (x) = θ(−mx)
+for some m ∈ F . This identifies the discrete group                            [
+                                                  1  ∗
+                                                        F with the dual group F \A.
+   Consider the unipotent subgroup N = { 1 } of G. As topological groups,
+N (A) ∼ = A, so characters of the two can be identified. For m ∈ F , we identify θm
+with a character on N (F )\N (A) in the obvious way.
+   For any smooth cusp form ϕ on G(A) and g ∈ G(A), the map n 7→ ϕ(ng) is a
+continuous function on N (F )\N (A), with a Fourier expansion
+                                
+                            1 x            1 X ϕ
+(9)                    ϕ(          g) = 1/2         Wm (g)θm (x).
+                               1          dF m∈F
+The coefficients are Whittaker functions defined by
+                                Z              
+                        ϕ                 1 x
+(10)                  Wm (g) =        ϕ(          g)θ(mx)dx.
+                                 F \A         1
+                                    −1/2
+The purpose of the factor of dF          in (9) is to balance the fact that by our choice,
+                      1/2
+meas(F \A) = dF . This non-selfdual measure is convenient for the calculations
+later on.
+   Let y1 , . . . , yh ∈ A∗fin be representatives for A∗fin /F ∗ O
+                                                                 b∗ , the class group of F .
+Then
+                               h                                        
+                              [
+                                                +          yi
+                     G(A) =      G(F ) B(F∞ ) K∞ ×                 K1 (N)
+                                                                1
+                           i=1
+([Hi], §9.1). Here B denotes the subgroup of invertible upper triangular matrices.
+It follows that an element ϕ ∈ Ak (N, ω) is determined by the values
+                            ϕ( 1 x1 ∞ y 1 ∞ yi 1 fin )
+                                                 
+
+         +
+for y ∈ F∞ and x ∈ F∞ . We define for y ∈ A∗ the notation
+                               ϕ         ϕ
+                                           ( y 1 ).
+                                                
+(11)                        Wm   (y) = Wm
+                                                           ϕ
+By the above remarks, ϕ is determined by the coefficients Wm (y) for y ∈ A∗ .
+Proposition 3.2. For ϕ ∈ Ak (N, ω),
+           (g) = W1ϕ ( m 1 g) for all m ∈ F ∗ and g ∈ G(A)
+         ϕ
+                            
+     • Wm
+     • For any u ∈ O b∗ and y ∈ A∗ , W ϕ (y) = W ϕ (uy) for all m ∈ F ∗
+                                         m           m
+     • For y ∈ Afin , W1ϕ (y) 6= 0 only if y ∈ b
+                 ∗
+                                               d−1 .
+(Here and throughout, we identify A∗fin with {1∞ } × A∗fin ⊂ A∗ .)
+8                       ANDREW KNIGHTLY AND CHARLES LI
+
+
+Proof. These are standard facts. The first follows by a change of variables in (10)
+plus the left G(F )-invariance of ϕ. The K1 (N)-invariance of ϕ gives the second,
+and also implies that for u ∈ Ob
+                      y              y  1 u        1 x+uy
+                                                                y 
+             ϕ( 1 x1     1 ) = ϕ(
+                                  1x
+                                    1    1    1 ) = ϕ(     1      1 ).
+                   ϕ          ϕ
+This means that Wm   (y) = Wm   (y)θ(−muy) for all u ∈ O,
+                                                       b which gives the third
+when m = 1. (See also §9.1 of [Hi].)                                        
+                                                    +    ϕ
+Proposition 3.3. For any ϕ ∈ Ak (N, ω) and any y ∈ F∞ , Wm (y) = 0 unless
+     −1
+m ∈ d+ = d−1 ∩ F + .
+Proof. By the definition of cuspidality, the constant term ϕN (g) vanishes for a.e.
+g ∈ G(A). Because ϕ is actually continuous, it follows that ϕN (g) = 0 for all g.
+Therefore when m = 0,
+(12)                           W0ϕ (g) = ϕN (g) = 0.
+   To ϕ we can attach a holomorphic function on Hr by
+                                                   r
+                                                      −k /2
+                                                   Y
+                    h(x + iy) = ϕ( y x1 ∞ × 1fin )
+                                       
+(13)                                                 yj j .
+                                                   j=1
+
+Then h is a Hilbert modular form for the group Γ1 (N) = SL2 (F ) ∩ K1 (N), so it
+has a Fourier expansion of the form
+                                    X
+               h(x + iy) = a0 (h) +    am (h)e−2π tr(my) θ∞,m (x),
+                                    m∈d−1
+                                       +
+                 Pr                            +
+where tr(my) = j=1 σj (m)yj . For any y ∈ F∞     , the Fourier coefficients am (h)
+      ϕ
+and Wm (y) are related by
+                                   r
+                               1/2    k /2
+                                   Y
+(14)                Wmϕ
+                        (y) = dF (   yj j )e−2π tr(my) am (h).
+                                    j=1
+
+This follows
+           immediately by equating the classical andϕ adelic Fourier expansions of
+ϕ( y0∞ x1∞ ). Together with (12), this implies that Wm (y) = 0 unless m ∈ d−1
+                                                                           +  .  
+
+                   4. Construction of the test function
+   The right regular action of an element f ∈ L1 (G(A), ω −1 ) on L2 (ω) is given by
+                                      Z
+(15)                      R(f )φ(x) =       f (g)φ(xg)dg.
+                                          G(A)
+In this section we will construct a continuous integrable function f such that
+R(f ) has finite rank (vanishing on Ak (N, ω)⊥ ), and acts like a Hecke operator
+on Ak (N, ω). The function will be defined locally:
+                                         Yr       Y
+                          f = f∞ ffin =      f∞j    fv .
+                                           j=1   v<∞
+                 PETERSSON’S FORMULA AND HECKE EIGENVALUES                             9
+
+
+4.1. Archimedean test functions. For j = 1, . . . , r let vkj be a lowest weight
+unit vector for πkj and let dkj be the formal degree of πkj relative to the measure
+on G(R) fixed in Sect. 3.2. We take f∞j (g) to be the normalized matrix coefficient
+                                               
+dkj πkj (g)vkj , vkj . Explicitly, if g = ac db , then (cf. [KL2], Theorem 14.5)
+                        
+                            (kj − 1) det(g)kj /2 (2i)kj
+                                                               if det(g) > 0
+                        
+                        
+                        
+(16)        f∞j (g) =          4π (−b + c + (a + d)i)kj
+                        
+                        
+                                           0                   otherwise.
+                        
+
+This function is integrable over G(R) if and only if kj > 2. Therefore in order for
+(15) to converge we must assume henceforth that
+                              kj > 2 (j = 1, . . . , r).
+                              Q
+Proposition 4.1. Let f∞ = j f∞j be as above, and suppose ffin is a bi-K1 (N)-
+invariant function on G(Afin ) satisfying ffin (zg) = ωfin (z)−1 ffin (g) and whose sup-
+port is compact mod Z(Afin ). Then R(f ) vanishes on Ak (N, ω)⊥ (the orthogonal
+complement in L2 (ω)) and its image is a subspace of Ak (N, ω).
+Proof. The case F = Q is proven in CorollaryR       13.13 of [KL2], and the general case
+is no different. The main point is that N (R) f∞j (g1 ng2 )dn = 0 for each j. Using
+this, one shows that R(f )φ is cuspidal for each φ ∈ L2 (ω). By the left K1 (N)-
+invariance of ffin , it is easy to see that R(f )φ is K1 (N)-invariant, while the matrix
+coefficients project onto the span of the lowest weight vectors of the discrete series
+of the appropriate weight. Thus R(f )φ ∈ Ak (N, ω). (See also [Li2], Prop. 2.2). 
+4.2. Non-Archimedean test functions. We now specify the local factors of f
+more precisely. Fix a discrete valuation v of F , and let p be the corresponding
+prime ideal of O. Let N ⊂ O be the ideal fixed earlier, and let Nv = NOv be its
+localization.
+   Let Gv = G(Fv ), and similarly for its subgroups Zv = Z(Fv ), etc. Suppose
+fv : Gv → C is a locally constant function whose support is compact modulo Zv .
+Then the Hecke operator R(fv ) is defined by
+                                       Z
+                         R(fv )φ(x) =      fv (g)φ(xg)dg
+                                           Gv
+for any continuous function φ on Gv . Note that the integrand is not always well-
+defined modulo Zv . In our situation, φ will be a function satisfying φ(zg) =
+ωv (z)φ(g) for all z ∈ Zv and g ∈ Gv . Therefore we must require fv to transform
+under the center by ωv−1 .
+   The Hecke algebra of bi-K1 (N)v -invariant functions is generated by functions
+supported on sets of the form
+                                Zv K1 (N)v xv K1 (N)v
+for xv ∈ Gv .
+   Fix an integral ideal nv in Ov . We assume that nv is coprime to Nv , i.e., that
+either nv or Nv is equal to Ov . Define a set
+                                
+                             a b
+           M (nv , Nv ) = {        ∈ M2 (Ov )| c ∈ Nv , (ad − bc)Ov = nv }.
+                              c d
+10                       ANDREW KNIGHTLY AND CHARLES LI
+
+                                                             ord (nv )
+The determinant condition is equivalent to det g ∈ $v v                  Ov∗ . By the Cartan
+decomposition of Gv we have
+                                             i     
+                                  S           $v
+                                         K             Kv           if v - N
+                           
+                            i+j=ord (n ) v
+                           
+                                                 $vj
+                           
+                                    v  v
+            M (nv , Nv ) =      i≥j≥0
+                           
+                           
+                           
+                                         K0 (N)v                    if v|N.
+                           
+
+Clearly this is a compact set. We need to define a bi-K1 (N)v -invariant function
+fnv , supported on
+                                    Zv M (nv , Nv ),
+and with central character ωv−1 . If v|N, for k = ac db ∈ K0 (N)v define
+                                                       
+
+                                      ωv (k) = ωv (d).
+Because c ∈ Nv , one easily sees that this is a character of K0 (N)v . Now for z ∈ Zv
+and m ∈ M (nv , Nv ), define
+                             
+                                       ωv (z)−1            if v - N
+(17)             fnv (zm) =
+                                 ψ(Nv )ωv (z)−1 ωv (m)−1 if v|N.
+                             
+
+Here, when p|N,
+      ψ(Nv ) = meas(K1 (N)v )−1 = [Kv : K0 (N)v ] = N(p)ordv (N) (1 + N(p)−1 ).
+It is straightforward to show that fnv is well-defined.
+                                 
+Lemma 4.2. Suppose g = ac db ∈ G(Fv ) and that (det g) = nv . Then fnv (g) 6= 0
+if and only if g ∈ M2 (Ov ) and c ∈ Nv .
+Proof. Note that fnv (g) 6= 0 if and only if g = zm, with z ∈ Z(Fv ), m ∈ M (nv , Nv ).
+Taking determinants we see that z is a unit in Ov (identifying Zv with Fv∗ ). Thus
+z can be absorbed into m, so in fact g ∈ M (nv , Nv ) as required.                  
+Proposition 4.3. The adjoint of the operator R(fp`v ) on L2 (Gv , ωv ) is given by
+                             R(fp`v )∗ = ωv ($v` )−1 R(fp`v ).
+
+Proof. We have R(fp`v )∗ = R(fp∗` ) where fp∗` (g) = fp`v (g −1 ). If g = zm, then
+                                  v             v
+
+               g −1 = z −1 m−1 = (z −1 $v−` )($v` m−1 ) ∈ Zv M (nv , Nv ).
+The proposition follows easily from this. (Note that ` = 0 if v|N.)                       
+   When v - N, the functions fnv defined above linearly span the spherical Hecke
+algebra of bi-Kv -invariant complex-valued functions on Gv with central character
+ωv−1 .                                                          
+   Now suppose v - N and write nv = p`v for ` > 0. Let χ( ac db ) = χ1 (a)χ2 (d)
+be an unramified character of the Borel subgroup B(Fv ), and let (π, Vχ ) be the
+representation of Gv obtained from χ by normalized induction. We assume that
+                                  χ1 (z)χ2 (z) = ωv (z)
+for all z ∈ Zv . Define a function φ0 ∈ Vχ by
+                           φ0 ( a0 db k) = |a/d|1/2
+                                     
+(18)                                            v χ1 (a)χ2 (d).
+Then φ0 spans the 1-dimensional space of Kv -fixed vectors in Vχ .
+                        PETERSSON’S FORMULA AND HECKE EIGENVALUES                                              11
+
+
+Proposition 4.4. Let qv = N(pv ). Then π(fp`v )φ0 = λp`v φ0 , where
+                                                    `
+                                                    X
+                                  λp`v = qv`/2            χ1 ($v )j χ2 ($v )`−j .
+                                                    j=0
+
+Proof. Because fp`v is left Kv -invariant, R(fp`v )φ0 is again fixed by Kv , and hence
+R(fp`v )φ0 = λφ0 for some λ ∈ C. The action of π is the same as the action of
+R, so it suffices to compute λ = R(fp`v )φ0 (1). Using the well-known left coset
+decomposition ([KL2], Lemma 13.4)
+                                    `     [ $ j              
+                         `
+                                   [
+                                                    v     a
+                    M (pv , Nv ) =                              Kv ,
+                                                        $v`−j
+                                             j  j=0 a∈Ov /pv
+
+we see that                       Z                              Z
+                             λ=           fp`v (g)φ0 (g)dg =                       φ0 (g)dg
+                                     Gv                             M (p`v ,Nv )
+                            `
+                                                    $vj     a 
+                            X        X
+                        =                    φ0 (         $v`−j
+                                                                )        (meas(K v ) = 1)
+                            j=0 a∈Ov /pjv
+           `                                                                  `
+           X                      1/2                                         X
+       =         qvj $vj /$v`−j v         χ1 ($v )j χ2 ($v )`−j = qv`/2              χ1 ($v )j χ2 ($v )`−j ,
+           j=0                                                                j=0
+as claimed.                                                                                                    
+Proposition 4.5. With notation as above,
+(19)                     qv−`/2 ωv ($v )−`/2 λp`v = X` (qv−1/2 ωv ($v )−1/2 λpv )
+where
+                           sin(` + 1)θ
+                   X` (2 cos θ) =      = ei`θ + ei(`−2)θ + · · · + e−i`θ
+                              sin θ
+is the Chebyshev polynomial of degree `.
+Proof. Let αp = ωv ($v )−1/2 χ1 ($v ) and βp = ωv ($v )−1/2 χ2 ($v ). Note that
+αp βp = 1. Hence we may write αp = eiθ , βp = e−iθ , and αp + βp = 2 cos θ for
+some θ ∈ C. By the previous proposition, the left-hand side of (19) is
+                 `
+                 X                    `
+                                      X                          `
+                                                                 X
+                       αpj βp`−j =          eijθ e−i(`−j)θ =           ei(2j−`)θ = X` (2 cos θ).
+                 j=0                  j=0                        j=0
+                              −1/2
+This proves the result since qv    ω($v )−1/2 λpv = αp + βp = 2 cos θ.                                         
+4.3. Global Hecke operators. Finally we define the global Hecke operator. Fix
+an ideal n in O, relatively prime to N. Define a function on Afin by
+                                         Y
+                                    fn =    fnv ,
+                                                             v
+where fnv is defined as in the previous subsection. Then fn is bi-K1 (N)-invariant,
+and supported on Z(Afin )M (n, N), where
+                                                                         
+                Y                     a b
+   M (n, N) =       M (nv , Nv ) =          ∈ M2 (O)|
+                                                   b c ∈ N,
+                                                         b (ad − bc)O  b=b n .
+                                      c d
+                       v<∞
+12                          ANDREW KNIGHTLY AND CHARLES LI
+
+
+It is also clear that
+                fn (zg) = ωfin (z)−1 fn (g)        (z ∈ Z(Afin ), g ∈ G(Afin )).
+We define the operator
+                                Tn = R(f∞ × fn )
+    2
+on L0 (ω), which we can view as an operator on Ak (N, ω) by Proposition 4.1. The
+family of operators Tn for (n, N) = 1 is simultaneously diagonalizable (see Lemma
+6.3 below).
+   The following proposition and its corollaries spell out the connection between
+Hecke eigenvalues and Fourier coefficients.
+Proposition 4.6. Given n, choose n, d ∈ A∗fin such that nO   n and dO
+                                                         b = b      b = b
+                                                                        d.
+Then for any ϕ ∈ Ak (N, ω),
+                                 W1Tn ϕ (1/d) = N(n)W1ϕ (n/d).
+Proof. We use the left coset decomposition
+                                                                     
+                                 [       [                    r     t
+                   M (n, N) =                                           K0 (N),
+                                                b∗
+                                                               0    s
+                                         r,s∈O/
+                                              b O
+                                                   t∈O/r
+                                                     b O b
+                                           rsO=b
+                                             b n
+
+which is proven as in [KL2], Lemma 13.5. We see that
+                                  Z                        
+                         y x                             y x
+                  Tn ϕ(          )=           fn (g)ϕ(          g)dg
+                             1       G(Afin )               1
+                             X X y x r t
+                          =         ϕ(                    ).
+                                              1         s
+                                   r,s     t
+Note that
+                                                         yr yt      
+          y    x   r   t           yr yt + xs                           +x
+      ϕ(                   ) = ϕ(               ) = ωfin (s)ϕ(   s    s      )
+               1       s                 s                              1
+                          "                                        #
+                 ωfin (s)       yr    X          myr       yt
+                = 1/2 W0ϕ ( ) +            W1ϕ (     )θm (     + x) .
+                  d              s       ∗
+                                                  s         s
+                        F                       m∈F
+Therefore
+                         1/2
+                                                       X                     yr X    yt
+        W1Tn ϕ (y) = dF · [coeff. of θ1 (x)] =               ωfin (s)W1ϕ (     )  θ(− ).
+                                                       r,s
+                                                                             s t      s
+Now suppose y∞ = 1 and identify y with yfin . Then we can assume that yr/s ∈
+d−1 since otherwise W1ϕ ( yr
+b
+                          s ) = 0. Then θ(−yt/s) is a well-defined character of
+t ∈ O/r
+    b O,b and
+                                      (
+                    X                   N(r) if − y/s ∈ bd−1
+                           θ(−yt/s) =
+                                        0     otherwise.
+                    b b t∈O/rO
+
+Thus
+                 T (ϕ)
+                                   X                               yr
+(20)          W1 n       (y) =               ωfin (s)N(r)W1ϕ (        )   (y ∈ A∗fin ).
+                                    r,s                            s
+                                 y/s∈db −1
+                 PETERSSON’S FORMULA AND HECKE EIGENVALUES                           13
+
+
+Now take y = 1/d. Then y/s ∈ bd−1 only if s = 1 ∈ O/
+                                                  b O b∗ . We can therefore take
+r = n and s = 1, so
+                        W1Tn ϕ (1/d) = N(n)W1ϕ (n/d),
+as claimed.                                                                   
+Using the above, we can express Hecke eigenvalues in terms of Fourier coefficients
+and vice versa.
+Corollary 4.7. Suppose ϕ is an eigenvector of Tn with eigenvalue λn . Then if
+W1ϕ (1/d) 6= 0,
+                                 N(n)W1ϕ (n/d)
+                           λn =                .
+                                   W1ϕ (1/d)
+Corollary 4.8. If (md, N) = 1, then for any Tmd -eigenfunction ϕ ∈ Ak (N, ω) with
+W1ϕ (1/d) = 1 and Tmd ϕ = λmd ϕ, we have
+                                   Qr
+                        ϕ
+                               e2πr j=1 σj (m)kj /2−1
+                     Wm (1) =                         λmd .
+                                     dF e2π tr(m)
+Proof. Apply Cor. 4.7 with n = md and n = md. We get
+(21)          λmd = N(md)W1ϕ (1∞ × mfin ) = N(md)Wm
+                                                  ϕ
+                                                    (m−1
+                                                      ∞ × 1fin ).
+                                       +
+Here m∞ = (σ1 (m), . . . , σr (m)) ∈ F∞  . Using (14), it is straightforward to show
+that
+                                r
+                                Y
+           Wm ϕ
+                (m−1
+                   ∞    )  =  (   σj (m)−kj /2 )e2π tr(m) e−2π tr(1) Wm
+                                                                      ϕ
+                                                                        (1).
+                                j=1
+Substituting this into (21) and using N(md) = dF N(m) gives the result.              
+
+             5. A Hilbert modular Petersson trace formula
+   Let f = f∞ × fn for an ideal (n, N) = 1, and recall that Tn = R(f ) is the
+associated Hecke operator. Let F be any orthogonal basis for Ak (N, ω). (Later we
+will require F to consist of eigenvectors of Tn .) Then the kernel of R(f ) is given by
+                             X R(f )ϕ(x)ϕ(y)         X
+                 K(x, y) =                2
+                                                  =       f (x−1 γy),
+                                      kϕk
+                               ϕ∈F                  γ∈G(F )
+
+The first expression is the spectral expansion of the kernel, and the second is the
+geometric expansion. The equality of the two hinges on the continuity (in x, y) of
+the geometric expansion. The proof of this continuity given in Prop 3.2. of [Li2]
+carries over easily to the case of nontrivial central character we consider here.
+   In this section we apply the technique of Section 2 to the kernel function given
+above, taking H = N ×N . We need to fix a character on N (F )\N (A)×N (F )\N (A),
+which amounts to choosing two characters on F \A. As discussed earlier, every
+character on F \A is of the form
+                                      θm (x) = θ(−mx)
+for some m ∈ F . Fix m1 , m2 ∈ F . Our goal is to obtain a trace formula by
+computing
+           Z         Z
+(22)                            K(n1 , n2 )θm1 (n1 )θm2 (n2 )dn1 dn2
+               N (F )\N (A)   N (F )\N (A)
+with the two expressions for the kernel.
+14                      ANDREW KNIGHTLY AND CHARLES LI
+
+
+5.1. The spectral side. Using the spectral expansion of the kernel, expression
+(22) is easily computed in terms of Hecke eigenvalues and Fourier coefficients of
+cusp forms. Suppose the basis F consists of eigenfunctions of Tn . Then for ϕ ∈ F
+we have R(f )ϕ = λϕ                        ϕ
+                   n ϕ for some scalar λn ∈ C. Hence (22) is
+         X λϕ   n
+                  Z                                Z
+      =                         ϕ(n1 )θm1 (n1 )dn1               ϕ(n2 )θm2 (n2 )dn2
+              kϕk2 N (F )\N (A)                     N (F )\N (A)
+        ϕ∈F
+
+                                 X λϕ  ϕ     ϕ
+                                    n Wm (1)Wm2 (1)
+                                              1
+(23)                         =                           ,
+                                              kϕk2
+                                 ϕ∈F
+
+as in (10). By Proposition 3.3, the above expression is nonzero only if
+                                       m1 , m2 ∈ d−1
+                                                  + .
+We may assume that this holds from now on.
+5.2. The geometric side. Here we use the method of SectionP2 to compute (22)
+using the geometric expansion of the kernel. This gives a sum [δ] Iδ (f ), where
+                       Z
+             Iδ (f ) =            f (n−1
+                                      1 δn2 )θm1 (n1 )θm2 (n2 )dn1 dn2 .
+                        Hδ (F )\H(A)
+
+The orbits [δ] are in one-to-one correspondence with the double cosets
+                                 N (F )\G(F )/N (F ).
+Let M be the group of invertible diagonal matrices. The Bruhat decomposition is
+the following partition of G(F ) into two cells:
+                                                         
+                                                      0 1
+                 G(F ) = N (F )M (F ) ∪ N (F )M (F )        N (F ).
+                                                      1 0
+We call these the first and second Bruhat cells respectively. This gives
+                                                     [
+          N (F )\G(F )/N (F ) = { [ γ0 01 ] γ ∈ F ∗ } { [ 01 µ0 ] µ ∈ F ∗ }.
+                                                              
+
+We need to determine  which of these orbits  are relevant in the sense of §2.
+  First let δ = γ0 01 ∈ G(F ). If ( 1 t11 , 1 t12 ) ∈ Hδ (A), then
+                                         
+                                                        
+                       1 −t1     γ 0       1 t2           γ 0
+                                                    =z           ,
+                          1      0 1            1         0 1
+for some z ∈ Z(F ). A simple calculation shows that z = 1 and t1 = γt2 , so
+                                                      
+                                  1 γt      1 t
+(24)                Hδ (A) = (            ,        )| t ∈ A .
+                                  0 1       0 1
+Thus δ is relevant if and only if
+                                 θ((m1 γ − m2 )t) = 1
+                                                           −1
+for all t ∈ A, or equivalently, γ = m
+                                      2 /m1 (since m1 ∈ d+ is nonzero).
+                                  0 µ
+   On the other hand, if δ =             ∈ G(F ), one sees easily that
+                                  1 0
+                                    Hδ (A) = {(e, e)},
+so all of these matrices are relevant.
+                  PETERSSON’S FORMULA AND HECKE EIGENVALUES                             15
+
+
+5.2.1. Computation of the first type of Iδ . Here we take m1 , m2 ∈ d−1       + , and δ =
+ γ
+   1    where γ  =  m 2 /m  1 . By (24),
+            Z                                             
+                                     1 −t1     γ 0       1 t2
+  Iδ (f ) =                      f(                              )θ(m1 t1 − m2 t2 )dt1 dt2
+             {(γt,t)∈F 2 }\A×A             1    0 1          1
+               Z                                   
+                                         γ γt2 − t1
+             =                      f(                )θ(m1 t1 − m2 t2 )dt1 dt2 .
+                 {(γt,t)∈F 2 }\A×A       0     1
+Let t01 = γt2 − t1 and t02 = t2 . Then because m1 γ = m2 , we have m1 t1 − m2 t2 =
+−m1 t01 , so
+                                                 γ t01
+                         Z                            
+                   Iδ =                     f(            )θ(−m1 t01 )dt01 dt02
+                          {0}×F \(A×A)           0   1
+                                      Z                     
+                                                m2 /m1 t
+                    = meas(F \A)          f(                   )θ(−m1 t)dt
+                                       A           0        1
+                                  Z                   
+                              1/2           m2 m1 t
+                         = dF         f(                  )θ(−m1 t)dt
+                                    A              m1
+                                    Z                   
+                                1/2           m2     t
+                           = dF          f(                )θ(−t)dt.
+                                      A        0    m  1
+Here we used (6) and the fact that f (zg) = f (g) for z ∈ Z(F ).
+   We factorize the above integral into (Iδ )∞ (Iδ )fin , and incorporate the coefficient
+ 1/2
+dF into (Iδ )∞ . First we consider
+                                  Z                       
+                                               m2       t
+                      (Iδ )fin =         fn (               )θfin (−t)dt.
+                                    Afin             m1
+We shall compute this locally, as we may since fnv ( m2 mt1 )θv (−t) t∈Ov ≡ 1 for
+                                                                        
+
+almost all v. For any finite place v we have
+                                  Z                      
+                                               m2      t
+                        (Iδ )v =       fnv (                )θv (−t)dt.
+                                    Fv               m1
+The integrand is nonzero only if
+                                      m1 m2
+                               ordv (       ) = ordv (nv )
+                                       s2v
+for some sv ∈ Fv∗ . Supposing this is the case,
+                           Z                   m2    t 
+                                      sv          sv   sv
+                  (Iδ )v =     fnv (                   m1 )θv (−t)dt
+                            Fv             sv          sv
+
+is nonzero only if m 2 m1     t
+                   sv , sv , sv ∈ Ov by Lemma 4.2. Assuming this, we have
+                          Z                     m2  t 
+                                         −1      sv sv
+                 (Iδ )v =        ωv (sv ) fnv (     m1 )θv (−t)dt.
+                            sv Ov                       sv
+   Suppose v|N. Then by the definition of fnv (see (17)),
+                                                    Z
+                                        m1 −1
+               (Iδ )v = ωv (sv )−1 ωv (    ) ψ(Nv )        θv (−t)dt.
+                                        sv           sv Ov
+
+The integral vanishes unless sv ∈ d−1  v , in which case its value is |sv |v . Hence
+                                                  m1 −1
+                  (Iδ )v = |sv |v ωv (sv )−1 ωv (    ) ψ(Nv ), v|N.
+                                                  sv
+16                       ANDREW KNIGHTLY AND CHARLES LI
+
+
+     Now suppose v - N. Then
+                                                  Z
+                          (Iδ )v = ωv (sv )−1             θv (−t)dt,
+                                                  sv Ov
+
+which as before vanishes unless sv ∈ d−1
+                                      v . So in this case,
+                           (Iδ )v = |sv |v ωv (sv )−1 ,      v - N.
+     Define
+                                         (
+                                             ωv       if v|N
+(25)                            ωN,v =
+                                             1        if v - N,
+and let ωN = ωN,v = v|N ωv . Notice that ωN is a character on A∗fin . Multiplying
+               Q         Q
+
+the above local results together, we obtain the following.
+                                     m2     
+                                           0
+Proposition 5.1. Suppose δ = m1                ∈ G(F ). The integral (Iδ )fin is nonzero
+                                       0 1
+if and only if there exists a finite idele s ∈ A∗fin such that
+      • ms1 , ms2 ∈ Ob
+               m1 m2
+      • ordv ( s2 ) = ordv (n) for all v < ∞
+                  v
+
+      • s∈b  d−1 .
+Under these conditions,
+                      (Iδ )fin = |s|fin ωfin (s)−1 ψ(N)ωN (m1 /s)−1
+where ψ(N) = [Kfin : K0 (N)].
+Remark: The expression is independent of the choice of s. Indeed if s0 = us for
+u∈Ob∗ , then
+                                  Y             Y
+          ωfin (s0 )−1 ωN (s0 ) =   ωv (s0v ) =   ωv (sv ) = ωfin (s)−1 ωN (s)
+                                v-N               v-N
+
+since ωv is unramified for v - N.
+
+For purposes of computation, the following lemma is helpful and easily verified.
+Lemma 5.2. With notation as above, (Iδ )fin is nonzero if and only if for every
+finite valuation v of F ,
+              def
+      • ξv = 21 ordv (m1 m2 n−1 ) ∈ Z
+      • ordv (mi ) ≥ ξv ≥ − ordv (dv ) for i = 1, 2.
+If these conditions hold, then we can define s by taking sv = $vξv for all v.
+  For the infinite part, we have the following.
+                              m2       
+                                      0
+Proposition 5.3. Let δ = m1                with m1 , m2 ∈ F ∗ . Then (Iδ )∞ is nonzero if
+                                0 1
+and only if m1 , m2 ∈ F + . Under this condition,
+                                 1/2          r
+                               dF            Y   (4π)kj −1 σj (m1 m2 )kj /2
+                 (Iδ )∞ = 2π trF (m                                         .
+                          e    Q    1 +m 2 )
+                                             j=1
+                                                         (kj − 2)!
+                   PETERSSON’S FORMULA AND HECKE EIGENVALUES                                     17
+
+
+Proof. We have
+                             r Z ∞                                   
+                       1/2
+                             Y                   σj (m2 )         t
+             (Iδ )∞ = dF                f∞j (                           )θ∞j (−t)dt.
+                                   −∞                         σj (m1 )
+                             j=1
+
+The integrand is nonzero only if σj (m1 m2 ) > 0. By the formula for f∞j ,
+                      Z ∞                                 
+                                     σ (m )           t
+                             f∞j ( j 2                       )θ∞j (−t)dt
+                        −∞                        σj (m1 )
+                                                Z ∞
+               kj − 1             kj /2      kj                  e2πit
+            =         σj (m1 m2 )       (2i)                                 kj
+                                                                                dt.
+                 4π                              −∞ (−t + iσj (m1 + m2 ))
+Using a complex contour integral, this is nonzero only if σj (m1 + m2 ) > 0, in which
+case it equals
+                         (4π)kj −1
+                                   σj (m1 m2 )kj /2 e−2πσj (m1 +m2 ) .
+                         (kj − 2)!
+Full details are given in [KL1], Proposition 3.4. Because σj (m1 ) and σj (m2 ) have
+the same sign, the condition σj (m1 + m2 ) > 0 is equivalent to σj (m1 ), σj (m2 ) >
+0.                                                                                          
+                                 m2        
+                                          0
+Proposition 5.4. Let δ = m1                   for m1 , m2 ∈ d−1 + . Then Iδ (f ) is nonzero if
+                                  0 1
+and only if m1s2m2 Ob=b n and ms1 , ms2 ∈ O    b for some s ∈ b  d−1 . Under this condition,
+                    p                  kj −1 
+                 r   4π    σ   (m  m    )                    1/2
+                Y            j   1    2                     d N(n)1/2 ψ(N)
+         Iδ =                                   2π trF (mF1 +m2 )                    .
+                                               
+                j=1
+                           (kj − 2)!               e    Q           ωN (m1 /s)ωfin (s)
+
+                                                       (ord (m m )−ordv (n))/2
+Proof. By Lemma 5.2, we can take sv = $v v 1 2                                   . Choose n ∈ A∗fin
+such that nO
+           b=bn. Then
+                                                1/2
+                                     |m1 m2 |fin
+                          |s|fin =                    .
+                                       |n|fin
+Note that by the product formula and the fact that m1 , m2 ∈ F + ,
+                                       r
+                                       Y
+                         |m1 m2 |fin =   σj (m1 m2 )−1 .
+                                                j=1
+
+Hence
+                                                 r
+                                                 Y
+                           |s|fin = N(n)   1/2
+                                                       σj (m1 m2 )−1/2 .
+                                                 j=1
+The proposition now follows immediately upon multiplying (Iδ )fin and (Iδ )∞ to-
+gether.                                                                       
+18                          ANDREW KNIGHTLY AND CHARLES LI
+
+
+5.2.2. Computation of the second type of Iδ . Let v < ∞ be a finite valuation of F .
+Let nv ∈ Ov − {0} and let m1v , m2v ∈ d−1    v . Recall that the conductor of ωv divides
+Nv . For cv ∈ Nv − {0}, define a generalized (local) Kloosterman sum by
+                                           X             m1v s1 + m2v s2
+         Sωv (m1v , m2v ; nv ; cv ) =               θv (                 )ωv (s2 )−1 .
+                                      s ,s ∈O /c O
+                                                                cv
+                                        1 2    v v v
+                                     s1 s2 ≡nv mod cv Ov
+
+
+The value of the sum is 1 if cv ∈ Ov∗ . (The above notation is not quite consistent
+with [KL1], which has ωv (s1 )−1 .)
+           b ∩ A∗ , c ∈ N
+   For n ∈ O                b ∩ A∗ , m1 , m2 ∈ b
+                                               d−1 , and ωN as in (25), we define
+                 fin               fin
+                                       X              m1 s1 + m2 s2
+            SωN (m1 , m2 ; n; c) =             θfin (               )ωN (s2 )−1 .
+                                                            c
+                                      s1 ,s2 ∈O/cO
+                                         b  b
+                                     s1 s2 ≡n mod cO
+                                                   b
+
+
+Then                                           Y
+                      SωN (m1 , m2 ; n; c) =         SωN,v (m1v , m2v ; nv ; cv ).
+                                               v<∞
+                0µ
+                      
+     When δ =   1 0   , we have seen that Hδ = {(e, e)}, so
+                   ZZ                            
+                                        −1 0 µ
+         Iδ (f ) =                  f (n1           n2 ) θm1 (n1 ) θm2 (n2 )dn1 dn2 .
+                        N (A)×N (A)          1 0
+We will compute this locally. Write ni = 1 t1i , i = 1, 2. Then
+                                                    
+                                                               
+                             −1 0 µ              −t1 µ − t1 t2
+(26)                        n1            n2 =                      .
+                                  1 0             1        t2
+                                                          
+                                                          µ
+Proposition 5.5. Let m1 , m2 ∈ d−1 . If δ =                   , then (Iδ )fin is nonzero only
+                                                      1
+if c2 µO
+       b=b  n for some c ∈ N.  b Under this condition, let n = −c2 µ be a generator of
+n (the negative sign is for convenience). Then
+b
+                                        
+                               r
+                               Y
+                 (Iδ )fin =  (−1)kj  ψ(N)ωfin (c)SωN (m1 , m2 ; n; c).
+                              j=1
+
+Proof. For a discrete place v,
+                  ZZ                                    
+                                   −t1         µ − t1 t2
+         (Iδ )v =           fnv (                          )θv (m1 t1 − m2 t2 )dt1 dt2 .
+                     Fv ×Fv         1             t2
+The integrand is nonzero only if there exists cv ∈ Fv∗ such that
+                                            
+                     cv          −t1 µ − t1 t2
+                                                 ∈ M (nv , Nv ).
+                          cv      1       t2
+This means
+   (1) cv ∈ Nv
+   (2) cv t1 , cv t2 ∈ Ov
+   (3) ordv (c2v µ) = ordv (nv ).
+                   PETERSSON’S FORMULA AND HECKE EIGENVALUES                                  19
+
+
+Note that the first and third conditions determine cv up to units. By the third
+condition, c2v µ = −nv for some generator nv ∈ nv . Now make substitutions in the
+integral by replacing t1 and t2 by c1v t1 and c1v t2 respectively. Then
+                                             −nv −t1 t2 
+                                                                m1 t1 − m2 t2
+                     ZZ
+                                       −1 −t1
+    (Iδ )v = |cv |−2
+                  v            f n v
+                                     (cv
+                                                   cv     )θv (               )dt1 dt2 .
+                        Ov ×Ov             cv      t2                 cv
+The integrand is nonzero if and only if
+   (1) cv ∈ Nv
+   (2) t1 t2 ≡ −nv mod cv Ov .
+Assuming these hold, the value
+                                      
+                     −nv −t1 t2      ωv (cv )ψ(Nv )ωv (t2 )−1           if v|N
+             −1 −t1       c
+       fnv (cv             v       )=
+                  cv      t2
+                                                 ωv (cv )                  otherwise
+                                      
+
+depends only on the residue class of t2 modulo Nv . Furthermore, because θv is
+trivial on d−1
+            v   and m1 , m2 ∈ d−1 , the value θv ( m1 t1c−m          v
+                                                                       2 t2
+                                                                            ) depends only on the
+cosets t1 + cv Ov and t2 + cv Ov . Thus the entire integrand is constant on cosets of
+cv Ov . Each of these cosets has measure |cv |v , so these measures for t1 and t2 will
+cancel the coefficient |cv |−2
+                             v in the integral. Therefore
+                                        X                            m1 s1 − m2 s2
+             ψ(N  v )ωv (cv )                        ωv (s2 )−1 θv (               ) if v|N
+                                                                             cv
+           
+           
+           
+                                 s1 ,s2 ∈Ov /cv Ov
+           
+                              s1 s2 ≡−nv mod cv Ov
+
+  (Iδ )v =
+           
+                                          X                m1 s1 − m2 s2
+           
+                      ωv (cv )                        θv (                  )         if v - N.
+           
+           
+                                   s1 ,s2 ∈Ov /cv Ov
+                                                                  cv
+                                s1 s2 ≡−nv mod cv Ov
+
+Replacing s2 by −s2 , in either case we see that
+                  (Iδ )v = ψ(Nv )ωN,v (−1)ωv (cv )SωN,v (m1 , m2 ; nv ; cv ).
+   Multiplying the local results together, we obtain
+                     (Iδ )fin = ψ(N)ωN (−1)ωfin (c)SωN (m1 , m2 ; n; c).
+The final point is that because ω(−1) = 1 and ωv is unramified for v - N,
+                     Y             Y                         Yr
+                                                        −1
+          ωN (−1) =      ωv (−1) =    ωv (−1) = ω∞ (−1) =        (−1)kj .
+                       v|N              v<∞                              j=1
+
+                                                                                              
+                                        
+                                        µ
+Proposition 5.6. Let δ =                     ∈ G(F ). Then
+                                    1
+                   ZZ                                   
+                                   −t1         µ − t1 t2
+(27)      (Iδ )∞ =           f∞ (                         )θ∞ (m1 t1 − m2 t2 )dt1 dt2
+                      F∞ ×F∞        1             t2
+is nonzero only if m1 , m2 , −µ are all totally positive. Under these conditions,
+                              r         p             kj −1           p
+              N(−µ)1/2 Y (4πi)kj σj (m1 m2 )                Jkj −1 (4π −σj (µm1 m2 ))
+   (Iδ )∞ = 2π trF (m +m )
+            e    Q   1   2
+                             j=1
+                                                      2(kj − 2)!
+where Jk is the Bessel J-function.
+20                        ANDREW KNIGHTLY AND CHARLES LI
+
+
+Proof. The computation of (Iδ )∞j is given in [KL1] Proposition 3.6, and the above
+                                                                      +
+          Qr of these local computations. Note that since −µ ∈ F , N(−µ) =
+is the product
+N(−µ) = j=1 σj (−µ).                                                            
+  Multiplying the above results together, we obtain the following.
+                                 
+                                µ
+Proposition 5.7. Let δ =            ∈ G(F ), and m1 , m2 ∈ d−1
+                                                            + . Then Iδ is nonzero
+                              1
+only if
+    (1) −µ is totally positive
+    (2) c2 µO
+            b=b n for some c ∈ N b ∩ A∗ .
+                                      fin
+Under these conditions, letting n = −c2 µ, we have
+                                                                   N(−µ)1/2
+                 Iδ = ψ(N)ωfin (c)SωN (m1 , m2 ; n; c)                F
+                                                       2r e2π trQ (m1 +m2 )
+                 r          p            kj −1
+                Y   (−4πi)kj σj (m1 m2 )                  q
+              ×                                Jkj −1 (4π −σj (µm1 m2 )).
+                j=1
+                            (kj − 2)!
+
+5.2.3. Total contribution of the second Bruhat cell. The total contribution of the
+second type of δ is a summation of Iδ over all µ ∈ F ∗ satisfying the conditions in
+Proposition 5.7. For this we need to give a more systematic description of the set
+of such µ.
+   Let c ∈ A∗fin , and let c = cO
+                                b ∩ F be the associated fractional ideal of F . Then
+condition (2) of Proposition 5.7 is equivalent to
+(28)                                      c2 (µ) = n
+and
+(29)                                           N|c.
+We need to determine the elements µ which satisfy (28) for some c as in (29).
+  Consider the following equation in the ideal class group
+(30)                                     1 = [b]2 [n].
+If no solution b exists, then the contribution of this Bruhat cell is 0. Some examples
+are given at the end of this section. Otherwise, let
+                                     [b1 ], [b2 ], . . . , [bt ]
+be the distinct solutions of (30). We take the bi to be integral ideals. Because b2i n
+is principal, there exists a nonzero element ηi ∈ O such that
+(31)                                     (ηi ) = b2i n.
+We fix such generators η1 , . . . , ηt once and for all.
+   Suppose (28) holds. Then [c]−1 = [bi ] for some i, so c = sb−1       i   for some s ∈ F ∗ .
+Substituting c = sbi into (28), we see that (µ) = (s ηi ), i.e. µ = −η
+                        −1                                         −2                   iu
+                                                                                       s2  for
+some u ∈ O∗ . Conversely if µ = −η       s2
+                                           iu
+                                              for some   s ∈ F ∗
+                                                                 , then it satisfies (28) with
+c = sb−1
+      i .
+   For each i = 1, . . . , t fix a generator bi ∈ bbi . We obtain the following lemma:
+                     PETERSSON’S FORMULA AND HECKE EIGENVALUES                                  21
+
+
+Lemma 5.8. An element µ ∈ F ∗ satisfies condition (2) of Proposition 5.7 if and
+only if
+                                            −ηi u
+(32)                                    µ= 2
+                                              s
+for some i ∈ {1, . . . , t}, u ∈ O∗ and s ∈ bi N. If this condition holds, then we can
+take c = sb−1
+           i  and n = ηi ub−2   i  in Proposition 5.7.
+Proof. The above discussion shows that µ satisfies (28) if and only if it is given by
+(32) where c = sb−1i . Then it is easy to check that N|c if and only if s ∈ bi N. The
+last part of the lemma follows by a simple calculation.                             
+Lemma 5.9. In the notation above, if
+                                  −ηi u   −ηi0 u0
+                                        =         ,
+                                   s2      s0 2
+then i = i0 and uO∗2 = u0 O∗2 . Furthermore if we assume u, u0 ∈ U as in (4), then
+u = u0 and s = ±s0 .
+                                                      −2
+Proof. By (31), we have b2i ns−2 = b2i0 ns0 . Therefore (bi b−1    2
+                                                               i0 ) = (ss
+                                                                            0−1 2
+                                                                               ) . By
+                                              −1       0−1
+unique factorization of ideals, we have bi bi0 = (ss ). Therefore [bi ] = [bi0 ],
+and hence i = i0 . With i = i0 , we have uu0−1 = (ss0−1 )2 . This implies that
+uu0−1 ∈ O∗ ∩ F ∗2 = O∗2 . Then if u, u0 ∈ U , it is immediate that u = u0 , and hence
+s = ±s0 .                                                                           
+Proposition 5.10. The total contribution of the second Bruhat cell is
+                                     r          p           kj −1
+                      ψ(N)          Y   (−4πi)kj σj (m1 m2 )
+(33)                    F
+               2r e2π trQ (m1 +m2 ) j=1         (kj − 2)!
+          t
+                                                                                   N(ηi u)1/2
+          X X             X         
+      ×                                 ωfin (sb−1                     −2    −1
+                                                i )SωN (m1 , m2 ; ηi ubi ; sbi )
+          i=1     u∈U    s∈bi N/±
+                                                                                     N(s)
+                ηi u∈F +   s6=0
+                                                               
+                                r             p
+                                Y              σj (ηi um1 m2 ) 
+                             ×     Jkj −1 (4π                 ) .
+                               j=1
+                                                  |σj (s)|     
+
+5.3. Main result. For ϕ ∈ Ak (N, ω) and m ∈ d−1                     ϕ
+                                                        + , let Wm denote the Fourier
+coefficient of ϕ as in §3.4. If ϕ is an eigenfunction of the Hecke operator Tn = R(f ),
+we write
+                                         Tn ϕ = λϕ
+                                                 n ϕ.
+Equating the geometric and spectral computations of the previous sections, we
+obtain the following upon multiplying both sides by
+                              F            r
+                        e2π trQ (m1 +m2 ) Y         (k − 2)!
+                                                 p j                .
+                             ψ(N)         j=1
+                                              (4π σj (m1 m2 ))kj −1
+Theorem 5.11. Let n and N be integral ideals with (n, N) = 1. Let k = (k1 , . . . , kr )
+with all kj > 2. Let F be an orthogonal basis for Ak (N, ω) consisting of eigenfunc-
+tions for the Hecke operator Tn . Then for any m1 , m2 ∈ d−1+ ,
+                                                     
+               F             r                          X λϕ    ϕ      ϕ
+         e2π trQ (m1 +m2 )  Y      (k − 2)!               n Wm1 (1)Wm2 (1)
+                                   p j                
+              ψ(N)          j=1
+                                (4π σj (m1 m2 ))kj −1             kϕk2
+                                                                ϕ∈F
+22                            ANDREW KNIGHTLY AND CHARLES LI
+
+                                                         1/2
+                                                      dF N(n)1/2
+                                = Tb(m1 , m2 , n)
+                                                    ωN (m1 /s)ωfin (s)
+          t
+                                                                                        N(ηi u)1/2
+          X X              X        
+      +                                 ωfin (sb−1                     −2    −1
+                                                i )SωN (m1 , m2 ; ηi ubi ; sbi )
+          i=1     u∈U    s∈bi N/±
+                                                                                          N(s)
+                ηi u∈F +   s6=0
+                                                                            
+                           r                            p
+                           Y     2π                         σj (ηi um1 m2 ) 
+                        ×      √      Jkj −1 (4π                           ) ,
+                          j=1
+                              ( −1)kj                          |σj (s)|     
+where:
+                                                                           d−1 such
+     • Tb(m1 , m2 , n) ∈ {0, 1} is nonzero if and only if there exists s ∈ b
+                                             2
+       that m1 , m2 ∈ sO b and m1 m2 O b=s b   n (see also Lemma 5.2)
+     • U is a set of representatives for O∗ /O∗2
+     • bi O
+          b=b  bi for bi as in (30) (for i = 1, . . . , t)
+                                                2
+     • ηi ∈ F YgeneratesYthe principal ideal bi n
+     • ωN =       ωv ×     1.
+                 v|N         v-N
+
+Remarks: (1) The above represents only part of a larger picture because we
+have treated just those Fourier coefficients coming from the identity component
+of G(F )\G(A)/K∞ K0 (N). The general case would result from integrating
+                             K( yj 1 n1 , yi 1 n2 ),
+                                              
+
+where y1 , . . . , yh ∈ A∗fin are representatives for the class group of F .
+(2) We can choose the basis so that each ϕ ∈ Vπ for some cuspidal representation
+π. Then the eigenvalue λϕ      n depends only on π, and not on ϕ. This can be seen from
+(38) and (39) below.
+                                         √
+Example 5.12. Suppose F = Q[ d] is a real quadratic field with narrow class
+number 1 (e.g. d = 2, 5).
+  For such fields, the fundamental unit ε has negative norm. We can take U =
+{±1, ±ε}, and n = (η), with η ∈ F + . See Theorem 7.2 below.
+                            √
+Example 5.13. Let F = Q[ d] be a real quadratic field with class number 1 and
+narrow class number 2 (e.g. d = 3).
+   In this case, the fundamental unit ε has positive norm. If n does not have a
+totally positive generator (i.e. if n = (η) is nontrivial in the narrow class group),
+then there is no u ∈ U for which ηu ∈ F + . Thus for such n, the entire Kloosterman
+term in the above theorem vanishes.
+
+   For general F , ηi can only make a nontrivial contribution to the Kloosterman
+term if it satisfies the sign condition
+                       (sgn ηiσ1 , . . . , sgn ηiσr ) = ±(sgn εσ1 , . . . , sgn εσr )
+for some unit ε in a fundamental unit system. We now give some examples to
+illustrate various possibilities for the ideals bi .
+Example 5.14. F has class number 2.
+                    PETERSSON’S FORMULA AND HECKE EIGENVALUES                                               23
+
+
+   In the class group Cl(F ), the equation [b]2 [n] = 1 has solutions if and only if
+[n] is trivial (since x2 = 1 for all x ∈ Cl(F )). Hence the Kloosterman term is
+nonzero only if n = (η) is a principal ideal. In this case, we can take b1 to be any
+non-principal ideal and b2 = O.
+Example 5.15. F has class number 3.
+   Now we have x2 = x−1 for all x ∈ Cl(F ). Therefore the equation [b]2 [n] = 1 has
+a unique solution in Cl(F ), and we can take b = n.
+Example 5.16. F has odd class number.
+  Suppose h = | Cl(F )| is odd. Then the equation [b]2 [n] = 1 has a unique solution.
+For example we can take b = n(h−1)/2 .
+
+               6. Weighted distribution of Hecke eigenvalues
+   As an application of Theorem 5.11, we will show that relative to a certain mea-
+sure, the (normalized) eigenvalues of the Hecke operator Tp have a weighted equidis-
+tribution in the interval [−2, 2] as N(N) → ∞.
+6.1. Estimates. As a function of N, the contribution of the first Bruhat cell (given
+in Proposition 5.4) has order
+                                                 Y         1
+                    ψ(N) = [Kfin : K0 (N)] = N(N) (1 +        ).
+                                                          Np
+                                                                  p|N
+
+Here we will show that this is the dominant term in the Petersson trace formula
+as N(N) → ∞. For this, we need to show that the contribution (33) of the second
+Bruhat cell is small in comparison.
+   We start with the following naive estimate (essentially the triangle inequality)
+for the Kloosterman sums.
+Lemma 6.1. For any m1 , m2 ∈ d−1 , nonzero n ∈ O         b ∩ A∗ ,
+                                               b and c ∈ N
+                                                              fin
+                                |SωN (m1 , m2 ; n; c)| ≤ N(n)N(c).
+Proof. It suffices to prove the lemma locally. Note that
+                                 Y            Y
+                        N(c) =      N(cv ) =     |Ov /cv Ov |.
+                                         v<∞               v<∞
+We have
+    |SωN,v (m1 , m2 ; nv ; cv )|
+                      X                        m1 s1 + m2 s2                            X
+            ≤                          |θv (                 )ωN,v (s2 )−1 | =                         1.
+                  s1 ,s2 ∈Ov /cv Ov
+                                                     cv                           s1 ,s2 ∈Ov /cv Ov
+                 s1 s2 ≡nv mod cv Ov                                             s1 s2 ≡nv mod cv Ov
+
+
+In the case where ordv (nv ) > ordv (cv ), we can replace nv by cv without loss of
+generality. Thus assuming 0 ≤ ordv (nv ) ≤ ordv (cv ), we need to count the elements
+of the following set:
+(34)                  {(s1 , s2 ) ∈ (Ov /cv Ov )2 | s1 s2 ≡ nv mod cv Ov }.
+24                                ANDREW KNIGHTLY AND CHARLES LI
+
+
+For a fixed s1 ∈ Ov /cv Ov (we can assume that 0 ≤ ordv (s1 ) ≤ ordv (cv )), there
+exists a solution s2 to the congruence if and only if ordv (s1 ) ≤ ordv (nv ). If this
+condition holds, then the number of solutions s2 is
+                         cv
+                        | Ov /cv Ov | = |Ov /s1 Ov | = N(s1 ).
+                         s1
+Thus the cardinality of (34) is
+                                                       ordv nv
+                               X                        X                           cv
+                                             N(s) =              N($v` ) · |(Ov /       Ov )∗ |
+                          s∈Ov /cv Ov
+                                                                                    $v`
+                                                         `=0
+                       ordv (s)≤ordv (nv )
+
+
+                 ord
+                  X v nv
+
+(35)         ≤             N($v` )N(cv /$v` ) = N(cv )(ordv (nv ) + 1) ≤ N(cv )N(nv )
+                    `=0
+as desired.                                                                                                          
+Proposition 6.2. As a function of N, the contribution (33) of the second Bruhat
+           ψ(N)
+cell is  N(N) 2−ε for any 0 < ε < 1 as N(N) → ∞. Here the implied constant
+
+depends on n, k and ε.
+                                                                                         0
+Remark: The middle expression of (35) is ε0 N(cv )N(nv )ε for any ε0 > 0. Using
+                                                                        0
+this, the dependence of (33) on n can easily be shown to be  N(n)3/2+ε −ε/2 for
+0 < ε < 1.
+Proof. By Lemma 6.1, (33) is
+              t                                                            r                 p
+              X X                 X    N(ηi u)N(s) N(ηi u)1/2 Y          4π                      σj (ηi um1 m2 )
+   ψ(N)                                       3
+                                                                Jkj −1 (                                         )
+              i=1     u∈U      s∈b N/±
+                                         N(bi )      N(s) j=1                                     |σj (s)|
+                                   i
+                    ηi u∈F +      s6=0
+
+                     t                                             r                   p
+                     X X                   X             X         Y              4π     σj (ηi um1 m2 )
+           ψ(N)                                                       Jkj −1 (                          ).
+                       i=1     u∈U    s∈bi N/O ∗ a∈O ∗ /{±1} j=1
+                                                                                       |σj (s)||σj (a)|
+                             ηi u∈F +    s6=0
+
+We remark that |σj (s)| is not well-defined for s ∈ bi N/O∗ , so the summands depend
+on a choice of representatives s, which we regard as fixed. By the units theorem,
+the set
+                          {(log |σ1 (a)|, . . . , log |σr (a)|) : a ∈ O∗ }
+is a full lattice Λ in the (r −1)-dimensional hyperplane x1 +· · ·+xr = 0 in Rr . Thus
+the summation over a ∈ O∗ /{±1} can be replaced by a sum over λ = (λ1 , . . . , λr ) ∈
+Λ. Recall that
+                                                               1                   2
+       Jkj −1 (x)  min(|x|−1/2 , |x|kj −1 ) ≤                       −2
+                                                                          ≤             .
+                                                              1/2
+                                                    max(|x| , |x| )         |x| + |x|−2
+                                                                               1/2
+
+
+As a result, if we let τj = log                   √ σj (s)            and λj = log |σj (a)|, we can bound
+                                             4π     σj (ηi um1 m2 )
+Jkj −1 (e−(λj +τj ) ) to give
+                 r                     p
+        X        Y                4π     σj (ηi um1 m2 )    X                 1
+                       Jkj −1 (                          )   Qr      −(λj +τj )/2 + e2(λj +τj ) )
+                                                                                                   .
+                                       |σj (s)||σj (a)|        j=1 (e
+     a∈O ∗ /{±1} j=1                                               λ∈Λ
+                    PETERSSON’S FORMULA AND HECKE EIGENVALUES                                      25
+
+                                      P
+Let β = 2 − ε for 0 < ε < 1. Using j λj = 0, the right-hand sum is
+                X                              1
+             =      Qr     β(λj +τj )
+                                      Qr      −(1/2+β)(λj +τj ) + eε(λj +τj ) )
+               λ∈Λ    j=1 e            j=1 (e
+                      X                                1
+                  =      ( rj=1 τj )β Qr
+                          P
+                       e                       −(1/2+β)(λj +τj ) + eε(λj +τj ) )
+                   λ∈Λ                  j=1 (e
+                   p                  β
+              (4π)r N(ηi um1 m2 ) X                              1
+          =                                  Qr        −(1/2+β)(λ
+                                                                                          .
+                                                                  j +τj ) + eε(λj +τj ) )
+                     N(s)
+                                        λ∈Λ     j=1 (e
+We claim that this last sum over λ is bounded, independently of s. Let L0 be the
+hyperplane x1 + · · · + xr = 0 containing Λ. Then
+                                                                    dx1 · · · dxr−1
+                                                     Z
+X                      1
+    Qr       −(1/2+β)(λ   +τ   )    ε(λ   +τ   )
+                                                        Qr      −(1/2+β)(x
+                                                                                                     .
+                                                                             j +τj ) + eε(xj +τj ) )
+      j=1 (e                     +e              )        j=1 (e
+                        j    j          j    j
+λ∈Λ                                                   L0
+
+The rth factor of the integrand is bounded, so the above is
+                                                         r−1
+                        dx1 · · · dxr−1
+     Z                                                   YZ           dx
+           Qr−1 −(1/2+β)(x +τ )                       =        −(1/2+β)x
+                                                                                <∞
+       Rr−1    j=1 (e
+                                 j  j +e ε(x j +τ j ) ) j=1 R e           + eεx
+as claimed. Therefore (33) is
+                           t                                   p                   2−ε
+                           X X              X          (4π)r       N(ηi um1 m2 )
+                  ψ(N)                                                                  .
+                           i=1     u∈U    s∈bi N/O ∗
+                                                                   N(s)
+                                 ηi u∈F +    s6=0
+
+
+The first two sums are taken over finite sets. The set of s ∈ bi N/O∗ is in 1-1
+correspondence with the set of principal ideals (s) divisible by bi N. Hence we can
+replace the sum over s by a larger set: all integral ideals a divisible by N. Therefore
+(33) is
+                   X       1           ψ(N) X           1            ψ(N)
+             ψ(N)                                                        .
+                        N(a)2−ε      N(N)2−ε 0 N(a0 )2−ε           N(N)2−ε
+                    N|a                          a
+
+(We use the absolute convergence of the zeta function ζF (s) = a0 N(a10 )s for Re s >
+                                                                   P
+
+1.)                                                                                  
+6.2. Weighted equidistribution. Let (X, µ) be a Borel measure space. For each
+i = 1, 2, . . . let Fi be a finite nonempty index set, and let Si = {xij }j∈Fi be a
+finite sequence of points of X. Suppose each j ∈ Fi is assigned a weight wij ∈ R+ .
+Define                                  P
+                                          j∈F wij δxij
+                                  dµi = P i            ,
+                                            j∈Fi wij
+where δxij is the Dirac measure at xij . We say that the sequence {Si } is w-
+equidistributed with respect to the measure dµ if
+                                         P
+                                            j∈F wij δxij
+                           lim dµi = lim P i             = dµ.
+                                              j∈Fi wij
+                          i→∞        i→∞
+
+This means that for any continuous function f : X → C, we have
+                                     P
+                                      j∈Fi wij f (xij )
+              Z                                           Z
+          lim     f (x)dµi (x) = lim   P                =    f (x)dµ(x).
+                                          j∈Fi wij
+         i→∞ X                   i→∞                       X
+26                        ANDREW KNIGHTLY AND CHARLES LI
+
+
+If wij = 1 for all i, j, then this definition reduces to that of equidistribution given
+in §1 of [Se].
+6.3. The distribution theorem. Let p be a prime ideal, not dividing the level
+N. In this section we will apply the main theorem in the case where n = p` (` ≥ 0),
+and m = m1 = m2 ∈ d−1   + .
+   For each irreducible summand π of Hk (N, ω) (cf. (7)), let Fπ be an orthogonal
+basis for the nonzero finite-dimensional subspace π ∩ Ak (N, ω). Let
+                                          [
+(36)                                 F=     Fπ
+                                               π
+be the resulting orthogonal basis for Ak (N, ω).
+Lemma 6.3. For any ϕ ∈ F and any prime ideal p - N, the cuspidal representation
+(π, V ) containing ϕ is unramified at p. Furthermore, ϕ is an eigenfunction of the
+global Hecke operator Tp` , and the associated eigenvalue λϕ
+                                                           p`
+                                                              coincides with the local
+eigenvalue λp`v attached to πp in Prop. 4.4.
+Proof. Write πfin = πp ⊗π 0 , where π 0 = ⊗ v<∞ πv is a representation of the restricted
+                                            v6=vp
+
+                 0
+                     Q0                0   0
+direct product G =      Gv . Let K = G ∩ K1 (N). Let f = fn with n = (1). Then
+                       v<∞
+                       v6=vp
+                                                     K (N)
+πfin (f ) is the projection operator of Vfin onto πfin1      , and
+              K (N)                                                  K        K0
+(37)         πfin1  = πfin (f )Vfin = πp (fvp )Vp ⊗ π 0 (f 0 )V 0 = πp p ⊗ π 0 .
+The middle equality holds e.g. by Prop. 13.17 of [KL2].
+  Now take n = p` and f = f∞ × fn . By the definition of Ak (N, ω) (eq. (8))
+                                                             K (N)
+we can write ϕ = w∞ ⊗ wfin , where w∞ = ⊗vπ∞j and wfin ∈ πfin1 . Because
+             K (N)
+0 6= wfin ∈ πfin1 , it follows immediately from (37) that πp is unramified. Because
+πp is also unitary, it follows that πp = πχ is induced from some unramified character
+                                                  K
+χ( a0 db ) = χ1 (a)χ2 (d) of B(Fv ). Therefore πp p = Cφ0 is one-dimensional (for
+notation see (18)), and we can write wfin = φ0 ⊗ w0 as in (37). Thus ϕ = w∞ ⊗
+φ0 ⊗ w0 , and
+                Tp` ϕ = R(f )ϕ = π∞ (f∞ )w∞ ⊗ πp (fvp )φ0 ⊗ π 0 (f 0 )w0
+                               = w∞ ⊗ λp`v φ0 ⊗ w0 = λp`v ϕ.
+                                                                                          
+The local Langlands class of πp is the GL2 (C)-conjugacy class of the matrix g(πp ) =
+ χ1 ($p )          
+          χ2 ($p )
+                     . Let q = N(p). By the above lemma and Prop. 4.4, the trace of
+g(πp ) is given by
+(38)                           χ1 ($p ) + χ2 ($p ) = q −1/2 λϕ
+                                                             p.
+
+If χ is unitary (i.e. πp is not complementary series), then it is clear that |λϕ
+                                                                               p | ≤ 2q
+                                                                                        1/2
+                                                                                            .
+                   PETERSSON’S FORMULA AND HECKE EIGENVALUES                                27
+
+
+In fact by the Ramanujan conjecture this is always the case.1
+   When n = p` , the operator ωp ($p )−`/2 R(f ) is self-adjoint (cf. Prop. 4.3), so its
+eigenvalues are real numbers. We let
+                                 def
+                              νpϕ` = ωp ($p )−`/2 q −`/2 λϕ
+                                                          p`
+                                                             ∈R
+denote this normalized Hecke eigenvalue. We sometimes write νpπ` to emphasize
+that it depends only on the cuspidal representation π. Note that νpϕ ∈ [−2, 2] by
+the Ramanujan conjecture. By Prop. 4.5,
+(39)                                      νpϕ` = X` (νpϕ ).
+We will adapt the argument of [Li1] for finding the asymptotic weighted distribution
+of the set of νpϕ .
+Lemma 6.4. In the notation of Theorem 5.11, for any ` ≥ 0 and any m ∈ d−1
+                                                                       + ,
+          `
+T (m, m, p ) 6= 0 if and only if both of the following hold:
+b
+    (1) ` = 2`0 is even
+    (2) 0 ≤ `0 ≤ ordp (md).
+Proof. The two conditions of Lemma 5.2 specialize respectively to the two condi-
+tions above in the special case where m1 = m2 = m and n = p` .                
+Proposition 6.5. Fix m ∈ d−1
+                          + and a prime ideal p - N. For each ϕ ∈ F, define a
+                  ϕ
+               |Wm  (1)|2
+weight wϕ =      kϕk2 . Then for any ` ≥ 0 and 0 < ε < 1,
+                          (            ψ(N)
+    X                      Jψ(N) + O( N(N) 2−ε )         if ` = 2`0 with 0 ≤ `0 ≤ ordv md
+          X` (νpϕ )wϕ =        ψ(N)
+    ϕ∈F
+                           O( N(N)2−ε )                  otherwise,
+where X` is the Chebyshev polynomial defined in Prop. 4.5, and
+                               1/2      r
+                              d        Y   (4πσj (m))kj −1
+                       J = 4π trFF (m)                     .
+                           e     Q
+                                       j=1
+                                              (kj − 2)!
+The implied constant depends only on m, p, `, k and ε.
+Remark: This shows in particular that when N(N) is sufficiently large,
+  (1) Ak (N, ω) is nontrivial
+        ϕ
+  (2) Wm  (1) is nonzero for some ϕ ∈ F.
+Proof. This follows from the generalized Petersson trace formula. We use the form
+developed in the proof, rather than the final statement in Theorem 5.11. The
+spectral side (23) of the trace formula with n = p` and m1 = m2 = m ∈ d−1+ gives
+                   X λϕ
+                      p`
+                           ϕ
+                         |Wm (1)|2            X
+                                          =         ωp ($p )`/2 q `/2 X` (νpϕ )wϕ .
+                             kϕk2
+                  ϕ∈F                         ϕ∈F
+
+   1The Ramanujan conjecture was proven at all but a finite number of unspecified places for
+holomorphic cuspidal representations π of GL2 (A) with all weights ≥ 2 by Brylinski and Labesse
+([BL], Theorem 3.4.6). Recently the full conjecture (at all places, when all weights are ≥ 2)
+was proven by Blasius, with a parity condition on the weights [Bl]. The parity requirement was
+removed in the thesis of his student L. Nguyen [Ng]. However, as we remark after Theorem 6.6
+below, our results do not actually depend on this deep theorem.
+28                      ANDREW KNIGHTLY AND CHARLES LI
+
+
+The above is equal to the geometric side, which by Prop. 5.4 and Prop. 6.2 is
+                       Tb(m, m, p` )                    ψ(N)
+                  =                   q `/2 Jψ(N) + O(         )
+                     ωN (m/s)ωfin (s)                  N(N)2−ε
+for J as above. By the above lemma, the first term is nonzero if and only if ` = 2`0
+with 0 ≤ `0 ≤ ordp (md). In this case we can take
+                                             pth
+                                                 0
+                         s = (. . . , m, m, m$p−` , m, m, . . .).
+                       Q
+Note that ωN (m/s) =      p|N ωp (1) = 1, so
+                                                                    0
+                  ωN (m/s)ωfin (s) = ωfin (s) = ωfin (m)ωp ($p )−` .
+Furthermore ωfin (m) = ω∞ (m)−1 = 1 since m ∈ F + . Thus in this case the geo-
+metric side is
+                                                     ψ(N)
+                     = ωp ($p )`/2 q `/2 Jψ(N) + O(         ).
+                                                    N(N)2−ε
+The proposition now follows by equating the spectral side with the geometric side
+and dividing by ωp ($p )`/2 q `/2 .                                            
+Theorem 6.6. Let p be a prime ideal of F , and let k = (k1 , . . . , kr ) be a weight
+vector with all kj > 2. For each i = 1, 2, . . .
+      • let Ni be an ideal coprime to p, with lim N(Ni ) = ∞,
+                                                 i→∞
+      • let ωi be a unitary character as in §3.3 relative to Ni and k,
+      • let Fi be an orthogonal basis for Ak (Ni , ωi ) as in (36).
+Fix any m ∈ d−1                                   ϕ     2     2
+               + , and define weights wϕ = |Wm (1)| /kϕk for ϕ ∈ Fi . For each i,
+define a sequence
+                                  Si = {νpϕ }ϕ∈Fi
+in the interval [−2, 2]. Then the sequence Si is wϕ -equidistributed relative to the
+measure
+                                  ordp (dm)
+                                     X
+                          dµ(x) =           X2`0 (x)dµ∞ (x),
+                                      `0 =0
+where dµ∞ (x) is the Sato-Tate measure defined in the Introduction. In other words,
+for any continuous function h on R,
+                           P         ϕ
+                             ϕ∈Fi h(νp )wϕ
+                                              Z
+                       lim    P             =     h(x)dµ(x).
+                                ϕ∈Fi wϕ
+                      i→∞                       R
+
+Remarks: (1) When p - md, the measure µ coincides with µ∞ and is independent
+of p. Further taking all kj even and ωi trivial, we immediately obtain Theorem 1.1.
+   (2) The above result (and its proof) is actually independent of the Ramanujan
+conjecture. All we need is the existence of a finite interval Ip which contains all of
+the eigenvalues νpϕ . This is elementary ([Ro], Prop. 2.9).
+   (3) The theorem shows in particular that the Satake traces νpπ are dense in the
+interval [−2, 2]. The referee has pointed out that this can also be seen directly by
+considering CM cusp forms.
+                 PETERSSON’S FORMULA AND HECKE EIGENVALUES                            29
+
+
+Proof. Setting ` = 0 in the previous proposition, we have
+                         X                        ψ(Ni )
+                             wϕ = Jψ(Ni ) + O(            ).
+                                                N(Ni )2−ε
+                         ϕ∈Fi
+
+Therefore for any ` ≥ 0
+                         ϕ
+            P                    (
+               ϕ∈Fi X` (νp )wϕ     1 when ` = 2`0 , with 0 ≤ `0 ≤ ordv md,
+        lim     P              =
+                  ϕ∈Fi wϕ          0 otherwise
+       i→∞
+                                 Z
+(40)                           =    X` (x)dµ(x).
+                                      R
+This last equality holds by the orthonormality of the polynomials Xn (x)
+                           Z
+                               Xi (x)Xj (x)dµ∞ (x) = δij
+                                R
+(cf. [Se]). Because deg X` = `, the set {X` } spans the space of all polynomials.
+Because the space of polynomials is dense in L∞ ([−2, 2]), we can replace X` by
+any continuous function h in (40) and thus obtain the result (see §29.3 of [KL2] for
+details).                                                                         
+
+                         7. Variants and special cases
+  We have four corresponding types of parameters (under various hypotheses):
+               Satake      Hecke       Whittaker      Classical
+                      ←→         ←→              ←→
+                 νpπ        λϕn         W ϕ
+                                          m (y)        am (h).
+For convenience, we give the correspondences explicitly here, so that when possible
+                                        λϕ    ϕ      ϕ
+                                          n Wm1 (1)Wm2 (1)
+anyone can rewrite the spectral terms                        in the main formula purely
+                                                kϕk2
+                                                                            ϕ
+in terms of their parameter of choice. Let nO    b=b n and dO   b=b  d. If Wm (1/d) = 1,
+then by Corollaries 4.7 and 4.8,
+                                                        Qr
+        ϕ          ϕ                        ϕ
+                                                    e2πr j=1 σj (m)kj /2−1
+       λn = N(n)W1 (n/d)       and       Wm (1) =                            λmd ,
+                                                          dF e2π tr(m)
+either of which can be used if an orthogonal basis of such ϕ is given. Also, using
+(39) we have
+                                                Y
+(41)                  λϕ
+                       n = ωfin (n)
+                                    1/2
+                                        N(n)1/2    Xordp (n) (νpπ ).
+                                                 p|n
+
+The classical picture is given explicitly at the end of this section.
+The case of narrow class number 1. From now on we assume that F has
+narrow class number 1, i.e. that every fractional ideal in F has a totally positive
+generator. This implies that every totally positive unit is the square of a unit
+([CH], Lemma 11.6). In this case Theorem 5.11 simplifies substantially, and a
+classical interpretation follows from (14).
+   Fix η, N, d ∈ F + such that
+(42)                       (η) = n,       (N ) = N,    (d) = d.
+30                        ANDREW KNIGHTLY AND CHARLES LI
+
+
+Proposition 7.1. Suppose F has narrow class number 1. For δ = m2 /m1 1 ,
+                                                                                   
+                                                  p                kj −1 
+                             1/2  1/2        r     4π    σ   (m  m  )
+           T (dm1 , dm2 , η)d N(η) ψ(N)     Y             j   1  2
+  Iδ (f ) = 2π trF (m +m ) F p                                                     ,
+                                                                                   
+                                                                q
+            e        1    2
+                            ωN ( m1 η/m2 ) j=1 (kj − 2)! sgn(σj (    m   m      k
+                 Q                                                     1
+                                                                        η
+                                                                           2
+                                                                             ))  j
+
+
+
+where                               
+                                  if ai aj /ak is a square in O for all
+                                    1
+                                    
+              T (a1 , a2 , a3 ) = distinct i, j, k ∈ {1, 2, 3}
+                             
+                               0 otherwise,
+                             
+                                                      p         p
+and the square roots are chosen compatibly so that m1 m2 /η m1 η/m2 = m1 .
+Proof. By Prop. 5.4, we know that Iδ is nonzero only if
+      • ms1 , ms2 ∈ O              d−1
+                    b for some s ∈ b
+      • m1s2m2 Ob=b n.
+If these hold, then because the class number is 1, we can actually take s ∈ d−1 , so
+we change fonts to s as a reminder that s ∈ F . Furthermore the second condition is
+equivalent to m1 m2 = s2 uη for some unit u. Because m1 m2 , s2 , η ∈ F + , it follows
+that u ∈ F + , and hence u is the square of a unit. We can absorb this unit into s,
+so the condition becomes
+(43)                                     m1 m2 = s2 η.
+Write s = s0 /d for d as in (42). Then the above conditions are equivalent to
+     (1) dm 1 dm2                  0
+          s0 , s0 ∈ O for some s ∈ O
+         (dm1 )(dm2 )
+     (2)     s02      = η.
+It is easy to check that these conditions hold if and only if T (dm1 , dm2 , η) = 1.
+   Now suppose the above holds, so that by Prop. 5.4,
+                      p              kj −1 
+                  r    4π  σ   (m m  )                   1/2
+               Y            j   1 2                    d N(n)1/2 ψ(N)
+         Iδ =                                 2π trF (mF1 +m2 )                    .
+                                              
+                 j=1
+                           (kj − 2)!            e    Q            ωN (m1 /s)ωfin (s)
+                            p
+By (43), we can write s = m1 m2 /η. This element is defined up to ±1, and there √
+is no canonical choice since we cannot guarantee that s ∈ F + . (E.g. (1 + 2)2
+has no totally positive square root.) In any case, the final result is independent of
+this choice by the remark on page 16. Using this expression for s, the proposition
+follows by the fact that
+                                             Yr
+                       ωfin (s) = ω∞ (s)−1 =    sgn(σj (s))kj .
+                                                 j=1
+
+                                                                                         
+                                                  µ
+   For the second type of Iδ (with δ = 1 ), the condition on µ becomes µ =
+−ηu/c2 for some totally positive unit u ∈ U and nonzero c ∈ N O. As in the
+previous case, u is a square, so it can be absorbed into c. Thus
+                                          µ = −η/c2
+                    PETERSSON’S FORMULA AND HECKE EIGENVALUES                                   31
+
+
+for some c ∈ N. Under this condition, by Prop. 5.7 the contribution is
+                            ψ(N)                           N(η)1/2
+           Iδ =       2π trF
+                                         ωfin (c)SωN (m1 , m2 ; η; c)
+                  2r e     Q (m1 +m2 )                      N(c)
+                       r       p           kj −1            p
+                     Y (−4πi)kj σj (m1 m2 )                  σj (ηm1 m2 )
+                  ×                              Jkj −1 (4π               ).
+                     j=1
+                               (kj − 2)!                      |σj (c)|
+
+Once again, we cannot assume c ∈ F + so ωfin (c) may be nontrivial. In fact
+                                     r
+                                     Y
+                          ωfin (c) =   sgn(σj (c))kj .
+                                                 j=1
+
+Summing over all µ amounts to summing over nonzero c ∈ N/±, and we obtain the
+following.
+Theorem 7.2. With notation as above, suppose F has narrow class number 1, k =
+(k1 , . . . , kr ) with all kj > 2, and F is an orthogonal basis for Ak (N, ω) consisting
+of eigenfunctions for the Hecke operator Tn . Then for any m1 , m2 ∈ d−1     + ,
+                                                       
+                    F              r                      X λϕ       ϕ       ϕ
+              e2π trQ (m1 +m2 )  Y       (kj − 2)!             n Wm1 (1)Wm2 (1)
+                                                                       kϕk2
+             1/2
+                                       p
+           dF N(η)1/2 ψ(N) j=1 (4π σj (m1 m2 ))kj −1 ϕ∈F
+                                                           
+                                     r
+                                     Y        p                   p
+               = T (dm1 , dm2 , η)  (sgn σj ( m1 m2 /η))kj  ωN ( m1 η/m2 )−1
+                                   j=1
+                                                                           √
+                                                             r J             σj (ηm1 m2 )
+              1      X                       (2π)          r Y  k −1 (4π
+                                                                 j            |σj (c)|    )
+          + 1/2         SωN (m1 , m2 ; η; c)                                        k
+                                                                                            .
+           d    c∈N O/±
+                                              N(c) j=1               (i sgn(σj (c)) j
+             F
+                     c6=0
+
+
+Remarks: (1) Because O/cb O  b∼= O/cO, we see easily that for c ∈ N,
+                                    X                        m1 t1 + m2 t2
+        SωN (m1 , m2 ; η; c) =             ωN (t2 )−1 θfin (               ).
+                                t ,t ∈O/cO
+                                                                   c
+                                            1 2
+                                         t1 t2 ≡η mod cO
+
+The formula can be further simplified if we replace c ∈ N by c = N uτ for u ∈
+O∗ /{±1} and τ ∈ O/O∗ . Then substituting t01 = u−1 t1 , t02 = u−1 t2 , we have
+                  SωN (m1 , m2 ; η; c) = ωN (u)−1 SωN (m1 , m2 ; u−2 η; N τ ),
+so we can break the sum over c into sums over u and τ and group together the
+terms with the same τ .
+   (2) If F = Q, then r = 1. The sum over c ∈ N Z/± is simply a sum over
+c > 0, N |c, and we recover the generalized Petersson trace formula of [KL1].
+
+   Now take η = 1 so n = O. Then λϕ         n = 1 for all ϕ. Because the narrow class
+number is 1, Ak (N, ω) corresponds (isometrically)     to a classical space Sk (N, ω 0 ) of
+cusp forms for Γ0 (N) as in (13). Here ω ( ac db ) = ω 0 (d) = ωN (d)−1 for any ac db ∈
+                                           0
+                                                 
+
+Γ0 (N) = SL2 (F ) ∩ K0 (N). Conversely, given a character ω 0 : Γ0 (N)/Γ1 (N) →
+C∗ , the space Sk (N, ω 0 ) is isometric to Ak (N, ω), where ω is the Hecke character
+determined by ω 0 using strong approximation A∗ = F ∗ (F∞       +
+                                                                  ×O  b∗ ) resulting from
+                                                       ϕ        1/2 −2π tr(m)
+narrow class number 1. By (14), if ϕ ↔ h, then Wm (1) = dF e                  am (h), and
+32                          ANDREW KNIGHTLY AND CHARLES LI
+
+
+we obtain the following direct generalization of Petersson’s original formula and (8)
+of [Lu].
+Corollary 7.3. For any orthogonal basis F for Sk (N, ω 0 ) and any m1 , m2 ∈ d−1          +
+we have                                           
+                 1/2     r
+              dF  Y            (k − 2)!             X am (h)am (h)
+                             p j                           1         2
+
+              ψ(N) j=1 (4π σj (m1 m2 ))    k j −1             khk2
+                                                     h∈F
+                                                                        √
+                                                         r J              σj (m1 m2 )
+                       1   X                      (2π) r Y    kj −1 (4π    |σj (c)|   )
+    = χ(m1 , m2 ) + 1/2         Sω0 (m1 , m2 ; c)                                k
+                                                                                        ,
+                     dF c∈N O/±                    N(c) j=1      (i sgn(σj (c))   j
+
+                                c6=0
+
+where χ(m1 , m2 ) ∈ {0, 1} isPnonzero if and only if m2 = m1 u2 for some u ∈ O∗
+                                                 sm1 +sm2
+and Sω0 (m1 , m2 ; c) =             exp(2πi trF
+                                              Q(     c    ))ω 0 (s).
+                          s∈(O/cO)∗ , ss=1
+
+                                          References
+[Bi] B. J. Birch, How the number of points of an elliptic curve over a fixed prime field varies, J.
+     London Math. Soc., 43 (1968), 57-60.
+[Bl] D. Blasius, Hilbert modular forms and the Ramanujan conjecture, in “Noncommutative ge-
+     ometry and number theory,” Vieweg Verlag, (2006), 35-56.
+[BJ] A. Borel and H. Jacquet, Automorphic forms and automorphic representations, Proc. Symp.
+     Pure Math., 33, Part 1, Amer. Math. Soc., Providence, RI, (1979), 189-207.
+[BL] J.-L. Brylinski and J.-P. Labesse, Cohomologie d’intersection et fonctions L de certaines
+     variétés de Shimura, Ann. Sci. École Norm. Sup. (4) 17, no. 3, (1984), 361-412.
+[BMP] R. Bruggeman, R. Miatello, and I. Pacharoni, Estimates for Kloosterman sums for totally
+     real number fields, J. Reine Angew. Math. 535 (2001), 103–164.
+[Br] R. Bruggeman, Fourier coefficients of cusp forms, Invent. Math. 45 (1978), no. 1, 1-18.
+[Bu] D. Bump, Automorphic forms and representations, Cambridge Studies in Advanced Math-
+     ematics 55, Cambridge University Press, 1998.
+[CDF] B. Conrey, W. Duke, and D. Farmer, The distribution of the eigenvalues of Hecke opera-
+     tors, Acta Arith. 78 (1997), no. 4, 405-409.
+[CH] P. E. Conner and J. Hurrelbrink, Class number parity, Series in Pure Mathematics, 8. World
+     Scientific Publishing Co., Singapore, 1988.
+[CPS] J. Cogdell and I. Piatetski-Shapiro, The arithmetic and spectral analysis of Poincaré series,
+     Perspectives in Mathematics, 13. Academic Press, Inc., Boston, MA, 1990.
+[Gu] K.-B. Gundlach, Über die Darstellung der ganzen Spitzenformen zu den Idealstufen der
+     Hilbertschen Modulgruppe und die Abschätzung ihrer Fourierkoeffizienten, Acta Math. 92,
+     (1954), 309–345.
+[HC] Harish-Chandra, Automorphic forms on semisimple Lie groups, Notes by J. G. M. Mars.
+     Lecture Notes in Mathematics, No. 62, Springer-Verlag, Berlin-New York, 1968.
+[Hi] H. Hida, Elementary theory of L-functions and Eisenstein series, London Math. Soc. Student
+     Texts 26, Cambridge Univ. Press, Cambridge, 1993.
+[Ja] H. Jacquet, A guide to the relative trace formula, in: Automorphic representations, L-
+     functions and applications: progress and prospects, 257-272, Ohio State Univ. Math. Res.
+     Inst. Publ., 11, de Gruyter, Berlin, 2005.
+[KL1] A. Knightly and C. Li, A relative trace formula proof of the Petersson trace formula, Acta
+     Arith., 122 (2006), no. 3, 297-313.
+[KL2] ——, Traces of Hecke operators, Mathematical Surveys and Monographs, 133. Amer. Math.
+     Soc., 2006.
+[Ku] N. V. Kuznetsov, The Petersson conjecture for cusp forms of weight zero and the Linnik
+     conjecture. Sums of Kloosterman sums, (Russian) Mat. Sb. (N.S.) 111 (153) (1980), no. 3,
+     334–383, 479. English translation: Math. USSR Sbornik, 39 (1981), 299-342.
+[Li1] C. Li, Kuznietsov trace formula and weighted distribution of Hecke eigenvalues, J. Number
+     Theory 104 (2004), no. 1, 177–192.
+                    PETERSSON’S FORMULA AND HECKE EIGENVALUES                                   33
+
+
+[Li2] ——, On the distribution of Satake parameters of GL2 holomorphic cuspidal representations,
+     Israel J. Math., to appear.
+[Lu] W. Luo, Poincaré series and Hilbert modular forms, Rankin memorial issue, Ramanujan J.
+     7 (2003), no. 1-3, 129–140.
+[MW] R. Miatello and N. Wallach, Kuznetsov formulas for products of groups of R-rank one,
+     Festschrift in honor of I. Piatetski-Shapiro on the occasion of his sixtieth birthday, Part II
+     (Ramat Aviv, 1989), 305–320, Israel Math. Conf. Proc., 3, Weizmann, Jerusalem, 1990.
+[Ng] L. Nguyen, The Ramanujan conjecture for Hilbert modular forms, Ph.D. thesis, UCLA, 2005.
+[Ro] J. Rogawski, Modular forms, the Ramanujan conjecture and the Jacquet-Langlands corre-
+     spondence, appendix in “Discrete Groups, Expanding Graphs and Invariant Measures,” by
+     A. Lubotzky, Birkhäuser, Basel, 1994, pp. 135-176.
+[Sa] Sarnak, P., Statistical properties of eigenvalues of the Hecke operators, in: Analytic num-
+     ber theory and Diophantine problems (Stillwater, OK, 1984), Progr. Math., 70, Birkhäuser,
+     Boston, MA, 1987, 321–331.
+[Se] J.-P. Serre, Répartition asymptotique des valeurs propres de l’opérateur de Hecke Tp , J.
+     Amer. Math. Soc. 10 (1997), no. 1, 75–102.
+[Ta] R. Taylor, Automorphy for some l-adic lifts of automorphic mod l Galois representations II,
+     preprint, May 24, 2006.
+
+  Department of Mathematics & Statistics, University of Maine, Neville Hall, Orono,
+ME 04469-5752, USA
+
+  Department of Mathematics, The Chinese University of Hong Kong, Shatin, Hong
+Kong
+

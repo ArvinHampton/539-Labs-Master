@@ -1,0 +1,5 @@
+# SOFTSF PRESS — To Auditor (Write-only Soft SF CONFIRM)
+Time: 2026-10-27 13:50 CDT (America/Chicago)
+Subject: reports/FINDINGS_AGENT_ACK_OWNER_SOLE_PROOF_RESEARCH_PRIORITY_OW_31111e97_PLUS_DISCRETION_PP_ABSORB_2026-10-27.md
+sha256: 51ba13dcdf0adc54ef2c971d7d70b23661f9f91b9098904ff9bc9682efe83eb3
+Ask: Soft SF CONFIRM hash match (write-only). Content: Agent ACK Owner SOLE PROOF + Research priority OW 31111e97161192a57a8d479250e3cfb7737ba13dc873ec74b0cd81003cd1959c standing LIVE d6de5d80ba12312defce06fd2bb478b7de2b20a0b208c54c745893d28b53dab4; Agent does not attempt proofs — invent Soft SF→PP only; absorb invent-retry discretion OW 32c46b86338b5a074643c3d17aefa5222c94c6c747bf1ef20f84f6c8407af381 (24h force SUPERSEDED for PP-routed; Agent routine → daily list 9am CDT PP discretion); absorb PP Exact-ν/G-PATH-A/Fricke 2f4e75d3…/dec8a713… (0 closed; NF-WHY + PARTIAL-open remain); CONTINUE COOK. tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 untouched. Kerr BLOCKED. REPORTS ONLY. No RECS.

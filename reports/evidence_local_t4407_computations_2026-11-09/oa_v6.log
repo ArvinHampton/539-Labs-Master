@@ -1,0 +1,15 @@
+PARI stack size set to 3000000000 bytes, maximum size set to 3000000512
+coeff matrix size: [861, 9] t=0s
+dim K = 4 ; dim Kohnen plus space = 3 ; dim(plus ∩ K) = 2
+ plus∩K basis vector 1, n=0..60: [0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 2, 1, 0, 0, 0, 1, 0, 0, -2, 0, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0]
+ plus∩K basis vector 2, n=0..60: [0, -1, 0, 0, 0, 0, 0, 0, 2, -1, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, -2, 0, 0, 2, 0, 0, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -4]
+K_j (matker columns): S_t(K_j) on n<=8 as coords (f, f(2.)) [rank-extra beyond span{f,f(2.)} must be 0]:
+Traceback (most recent call last):
+  File "/workspace/quantum-comp/reports/evidence_local_t4407_computations_2026-11-09/oa_v6.py", line 23, in <module>
+    rows.append(str(P("[matrank(matconcat([A2,s~]))-2, matsolve(A2[[1,2],],s[[1,2]]~)~]")))
+                    ~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cypari2/pari_instance.pyx", line 800, in cypari2.pari_instance.Pari.__call__
+  File "cypari2/gen.pyx", line 4784, in cypari2.gen.objtogen
+  File "cypari2/convert.pyx", line 545, in cypari2.convert.PyObject_AsGEN
+  File "cypari2/handle_error.pyx", line 211, in cypari2.handle_error._pari_err_handle
+cypari2.handle_error.PariError: this should be a small integer

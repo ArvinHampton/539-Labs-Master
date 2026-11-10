@@ -1,0 +1,59 @@
+
+%=====================================================================
+\section{Numerical verification}\label{sec:num}
+%=====================================================================
+``Exact'' means rational/integer arithmetic. An entry that is exact supports a Category~A statement; a floating-point entry
+is supporting evidence for a proved statement where one exists, and is otherwise Category~B.
+
+\begin{table}[ht]\centering\small
+\begin{tabular}{p{6.2cm}p{4.2cm}p{4.2cm}}\toprule
+check & range / points & result\\\midrule
+Theorem~\ref{thm:A} identities & through $q^{3000}$ & exact\\
+$\Cmixed=0$ & through $q^{293}$ & exact; $-\tfrac12q^{294}$ first term\\
+cone sum \eqref{eq:Edef}, four cones; $E_{-a}=E_a$ & through $q^{3000}$ & exact\\
+$H_s$ cone decomposition & through $q^{2000}$ & exact\\
+Gauss pattern (Thm.~\ref{thm:D}) & $3374$ pairs, $m\le105$ & 0 mismatches\\
+$\zeta_E(0)$, $\zeta_E(-1)$ & 1 + 5 Shintani cones & exact $\tfrac1{10}$, $\tfrac{29}{1200}$\\
+Radial fit, $\Porth_s$ & $t\in[0.00125,0.08]$ & $0.209419$ ($I$), $0.52569$ ($a_P$)\\
+EM remainder (Table~\ref{tab:radial}) & $t\ge2.5\cdot10^{-5}$ & scales as $\sqrt t$ ($t$ for $E$)\\
+region $\leftrightarrow$ ray class; $u_L$ Eisenstein & $n\le60\,000$ & exact (max diff $0$)\\
+\bottomrule
+\end{tabular}
+\caption{Exact and finite checks.}
+\end{table}
+
+\begin{table}[ht]\centering\small
+\begin{tabular}{p{6.4cm}p{4.0cm}p{4.0cm}}\toprule
+check & points & max deviation\\\midrule
+Maass $S$-, $T$-law, $P$-invariance, all $140$ rows & 3 points, $y\approx1$ & $1.2\cdot10^{-15}$, $7\cdot10^{-16}$, $6\cdot10^{-16}$\\
+$S^2=I$, $(ST)^3=I$ on $72$-dim space & --- & $1.3\cdot10^{-15}$\\
+Green constant $-\pi/2$ (cross-check) & $n=1,2,3$, two $z$ & 30 digits\\
+period formula vs.\ Bernoulli $\psi$ & $84$ rationals & $1.1\cdot10^{-13}$\\
+all-row closed form; three-term relation & $7$ pts; $4$ pts & $2.3\cdot10^{-14}$; $7\cdot10^{-15}$\\
+component fits ($140\times2$) & $n\le54\,880$ & $4.4\cdot10^{-14}$\\
+Thm.~\ref{thm:I}, 34 digits & $44$ rationals in $[\tfrac18,2]$ & $5.7\cdot10^{-33}$\\
+Thm.~\ref{thm:I}, random rationals & $40$, den.\ $\le60$ & $2.5\cdot10^{-12}$\\
+Thm.~\ref{thm:I} on $\Hb$ (36 digits) & $6$ points & $5.5\cdot10^{-35}$\\
+Thm.~\ref{thm:I} off $\Hb$ (double precision) & $5+3$ points & $2.5\cdot10^{-16}$; $9.2\cdot10^{-16}$\\
+Thm.~\ref{thm:I} at rationals (36 digits) & $8$ rationals & $5.7\cdot10^{-35}$\\
+split $G_\chi=2R_\chi+T_\chi$ & $8$ chars, $5$ points & $\le8\cdot10^{-34}$\\
+Thm.~\ref{thm:J} & $N\le14\,000$ & $1.84\cdot10^{-15}$; $627$ coeffs equal in $\Z[\phi]$\\
+$\Omega=\Psi$ ($\mathrm{Re}\,z>0$), $\Omega=-\Psi^-$ ($\mathrm{Re}\,z<0$) & $3+3$ points & $\approx10^{-16}$\\
+cusp rows $=L(0)$ combinations & $24$ rows, $7$ points & $4\cdot10^{-14}$\\\bottomrule
+\end{tabular}
+\caption{Numerical checks. For the rational comparisons at rationals an independent from-scratch period formula at double precision agrees to $5.7\cdot10^{-17}$.}
+\end{table}
+
+\begin{table}[ht]\centering\small
+\begin{tabular}{lcc}\toprule
+$x$ & $\Phi_c$ dev.\ ($24$ rows) & $\Phi_{73}(x)$\\\midrule
+$1$ & $3.8\cdot10^{-15}$ & $0.120446470003+0.176437422094i$\\
+$-1$ & $4.5\cdot10^{-15}$ & $0.006264073515+0.213537531676i$\\
+$2$ & $9.6\cdot10^{-15}$ & $0.206217773055+0.263200146342i$\\
+$7/4$ & $3.4\cdot10^{-13}$ & $0.188336862451+0.245368413466i$\\
+$1/3$ & $6.7\cdot10^{-15}$ & $0.038631276713+0.077116144808i$\\
+$3/5$ & $4.0\cdot10^{-14}$ & $0.073437646967+0.123627119436i$\\
+$-2/3$ & $1.2\cdot10^{-14}$ & $0.012354928128+0.156183157173i$\\\bottomrule
+\end{tabular}
+\caption{Cusp-row cocycle from $L(0)$ values vs.\ exact Bernoulli sums.}\label{tab:phi73}
+\end{table}

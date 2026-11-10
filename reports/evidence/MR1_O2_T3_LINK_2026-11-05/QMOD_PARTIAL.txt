@@ -1,0 +1,235 @@
+                                                  QUANTUM MODULARITY OF PARTIAL THETA SERIES WITH
+                                                              PERIODIC COEFFICIENTS
+arXiv:2012.02457v1 [math.NT] 4 Dec 2020
+
+
+
+
+                                                                              ANKUSH GOSWAMI AND ROBERT OSBURN
+
+
+                                                  Abstract. We explicitly prove the quantum modularity of partial theta series with even or
+                                                  odd periodic coefficients. As an application, we show that the Kontsevich-Zagier series Ft (q)
+                                                  which matches (at a root of unity) the colored Jones polynomial for the family of torus knots
+                                                  T (3, 2t ), t ≥ 2, is a weight 3/2 quantum modular form. This generalizes Zagier’s result on the
+                                                  quantum modularity for the “strange” series F (q).
+
+
+
+
+                                                                                               1. Introduction
+                                             In [30], Zagier introduced the notion of a quantum modular form of weight k ∈ 12 Z as a
+                                          function g : Q → C for which the function rγ : Q \ {γ −1 (i∞)} → C given by
+                                                                                             aα + b 
+                                                                        g(α) − (cα + d)−k g             =: rγ (α)
+                                                                                              cα + d
+                                                                                                                                           
+                                                                                  1                                                     a b
+                                          extends to a real-analytic function on P (R) \ Sγ , where Sγ is a finite set, for each γ =          ∈
+                                                                                                                                        c d
+                                          SL2 (Z). Suitable modifications can be made to restrict the domain of rγ to appropriate subsets
+                                          of Q and allow both multiplier systems and transformations on subgroups of SL2 (Z). Since
+                                          their inception, there has been substantial interest in studying these modular objects which
+                                          emerge in diverse contexts: Maass forms [9], supersymmetric quantum field theory [12], topo-
+                                          logical invariants for plumbed 3-manifolds [5], [10], [11], combinatorics [13], [20], unified Witten-
+                                          Reshetikhin-Turaev invariants [19] and L-functions [24], [26]. For more examples, see Chapter
+                                          21 in [4].
+                                             One of the most influential of the original five examples from [30] is the Kontsevich-Zagier
+                                          “strange” series [29]
+                                                                                             X
+                                                                                   F (q) :=      (q)n                                     (1.1)
+                                                                                                                 n≥0
+                                          where
+                                                                                                            n
+                                                                                                            Y
+                                                (a1 , a2 , . . . , aj )n = (a1 , a2 , . . . , aj ; q)n :=        (1 − a1 q k−1 )(1 − a2 q k−1 ) · · · (1 − aj q k−1 )
+                                                                                                            k=1
+                                          is the standard q-hypergeometric notation, valid for n ∈ N0 ∪ {∞}. F (q) is “strange” in the
+                                          sense that it does not converge on any open subset of C, but is well-defined when q is a root
+
+                                             Date: December 7, 2020.
+                                             2020 Mathematics Subject Classification. 11F37, 33D15, 57K16.
+                                             Key words and phrases. Quantum modular forms, partial theta series, periodic functions, Kontsevich-Zagier
+                                          series, torus knots.
+                                                                                                             1
+2                             ANKUSH GOSWAMI AND ROBERT OSBURN
+
+                                                                         πiα
+of unity (where it is finite). Zagier proves that for α ∈ Q, φ(α) := e 12 F (e2πiα ) is a quantum
+modular form of weight 3/2 on Q with respect to SL2 (Z). The key to proving this result is the
+“strange identity”
+                                               1 X  12  n2 −1
+                                 F (q)“ = ” −        n     q 24                              (1.2)
+                                               2        n
+                                                 n≥1
+where “ = ” means that the two sidesagree to all orders at every root of unity (for further details,
+see Sections 2 and 5 in [29]) and 12∗ is the quadratic character of conductor 12. The idea is to
+prove quantum modular properties for the right-hand side of (1.2) which are then inherited by
+F (q). The purpose of this paper is to place the right-hand side of (1.2) and other examples in
+the literature into the general context of quantum modularity of partial theta series with even
+or odd periodic coefficients. Before stating our main result, we introduce some notation.
+   Let f : Z → C be an even or odd function with period M ≥ 2. For any fixed 1 ≤ k0 < 2M ,
+consider the set
+                                                                   
+                                            M     2
+                        S(k0 ) := 1 ≤ k ≤      : k ≡ k0 (mod 2M ) .
+                                             2
+Let Mf (k0 ) ⊆ S(k0 ) be non-empty and such that f (j) = 0 whenever j 6∈ Mf (k0 ) ∪ {M − k :
+k ∈ Mf (k0 )}. Clearly, Sf (k0 ) := Mf (k0 ) ∪ {M − k : k ∈ Mf (k0 )} is the support of f . Consider
+the following partial theta series
+                                  X          n2              X            n2
+                        θf (z) :=    f (n) q 2M , Θf (z) :=     nf (n) q 2M                    (1.3)
+                                 n≥0                          n≥0
+
+where q = e2πiz , z ∈ H. For N ∈ N, let
+                                                                          
+                         a b
+          Γ1 (N ) :=           ∈ SL2 (Z) : c ≡ 0 (mod N ), a ≡ d ≡ 1 (mod N )
+                         c d
+and let ΓM be defined as Γ1 (2M ) if M is even and
+                                                            
+                              a b
+                                     ∈ Γ1 (2M ) : b ≡ 0 (mod 2)                                 (1.4)
+                              c d
+if M is odd. Consider the set
+                        BM := {α ∈ Q : α is ΓM -equivalent to i∞}                               (1.5)
+                                         X′
+and let AM = AM,f be defined by (1.5) if            f (k) 6= 0 and by
+                                                 k∈Mf (k0 )
+
+                            {α ∈ Q : α is ΓM -equivalent to 0 or i∞}
+                                   X′
+                                          means that whenever M                              M
+                                                                                               
+otherwise. Here and throughout,                                  2 ∈ Mf (k0 ), we replace f 2    in
+             1   M                                                                         1
+                   
+     by 2 f 2 . We also employ the convention that f (n) = 0 if n 6∈ Z. For k ∈ 2 Z and
+the sum
+      a b
+γ=           ∈ ΓM , we define the Petersson slash operator |k,χ by
+      c d
+                                                                     
+                                                               aτ + b
+                           (g|k,χ γ)(τ ) := χ(γ)(cτ + d)−k g
+                                                               cτ + d
+where τ ∈ C and χ is a multiplier. Finally, we write ·· for the extended Jacobi symbol and let
+                                                        
+
+εd = 1 or i according as d ≡ 1 or 3 (mod 4). Our main result is now as follows.
+        QUANTUM MODULARITY OF PARTIAL THETA SERIES WITH PERIODIC COEFFICIENTS                        3
+
+Theorem 1.1. Let f be a function with period M ≥ 2 and support Sf (k0 ). Let α ∈ Q. If f
+is even, then Θf (α) is a quantum modular form of weight 3/2 on AM with respect to ΓM . If f
+is odd, then θf (α) is a “strong” quantum modular form of weight 1/2 on Q with respect to ΓM
+and is a quantum modular form of weight 1/2 on BM with respect to ΓM .
+Remark 1.2. (i) The main novelty of Theorem 1.1 is that one does not require Θf (z) or θf (z)
+to be a cusp form. For example, consider θψ (z) where ψ is given in Section 4.2 (cf. [20]).
+Otherwise, one can invoke (2.4), (2.9) and Theorem 1.1 in [8].
+  (ii) In Theorem 1.1, Θf (z) satisfies
+                                 Θf (α) − (Θf | 3 ,χ γ)(α) = rγ,f (α)
+                                                   2
+                   
+                  a b
+for all γ =             ∈ ΓM and α ∈ AM , where
+                  c d
+                                    √         πi   Z i∞
+                                      M ·e4                                      3
+                         rγ,f (z) = −                           θf (τ )(τ − z̄)− 2 dτ.
+                                       2π           γ −1 (i∞)
+
+Here, rγ,f   : R → C is a C ∞ function which is real-analytic in R \ {γ −1 (i∞)} and χ is a multiplier
+given by
+                                                                 
+                                               πiabk0       2cM
+                                   χ(γ) = e      M                    ε−1
+                                                                       d .                       (1.6)
+                                                              d
+   (iii) For τ ∈ H− := {τ ∈ C : Im(τ ) < 0}, let Θ̂f (τ ) denote the non-holomorphic Eichler
+integral
+                                         Z i∞
+                                       1                      1
+                         Θ̂f (τ ) := √        Θf (w)(w − τ )− 2 dw.                     (1.7)
+                                      iM τ̄
+In Theorem 1.1, θf (α) is a “strong” quantum modular form in the following sense (see [22] or
+[30]):
+   (1) θf and Θ̂f “agree to infinite order” at all rational numbers (see Lemma 2.6),
+   (2) for τ ∈ H− and γ ∈ ΓM , we have
+                                 Θ̂f (τ ) − (Θ̂f | 1 ,χ γ)(τ ) = rγ,f (τ )
+                                                    2
+
+        where
+                                             Z i∞
+                                        1                                    1
+                          rγ,f (τ ) = √                   Θf (w)(w − τ )− 2 dw.
+                                        iM    γ −1 (i∞)
+
+Here, rγ,f (τ ) is a holomorphic function in H− , extends as a C∞ function to R and is real-analytic
+in R \ {γ −1 (i∞)}. Also, χ is the multiplier as in (1.6). A close inspection of the techniques in
+[22] reveals that one needs convergence of Θ̂f (τ ) for τ ∈ H− (and not necessarily at rational
+points) to deduce the strong quantum modularity property for θf (z). To ensure this condition,
+Θf (z) does not have to be a cusp form. For a similar approach, see [3] and [17].
+   (iv) If f is a function with period M ≥ 2 and support Sf (k0 ), then θf (z) is a sum of a modular
+form and a (strong) quantum modular form both of weight 1/2 and Θf (z) is a sum of a modular
+form and a quantum modular form both of weight 3/2. To see this, write f as
+                                        f (n) = fe (n) + fo (n)
+4                                 ANKUSH GOSWAMI AND ROBERT OSBURN
+
+where
+                                 f (n) + f (−n)              f (n) − f (−n)
+                      fe (n) :=                  , fo (n) :=                .
+                                        2                           2
+Clearly, fe (n) (respectively, fo (n)) is an even (respectively, odd) function of period M with
+support contained in Sf (k0 ). Indeed, if Sf,e (k0 ) denotes (respectively, Sf,o (k0 )) the support of
+fe (n) (respectively, fo (n)), then Sf,e (k0 ) = Mf,e (k0 ) ∪ {M − k : k ∈ Mf,e (k0 )} (respectively,
+Sf,o (k0 ) = Mf,o (k0 ) ∪ {M − k : k ∈ Mf,o (k0 )}) for some Mf,e (k0 ), Mf,o (k0 ) ⊆ Mf (k0 ). Thus,
+we have                       X           n2    X           n2      (e)       (o)
+                    θf (z) =     fe (n) q 2M +     fo (n) q 2M =: θf (z) + θf (z),
+                              n≥0                           n≥0
+                            X                      n2       X                    n2           (e)        (o)
+                 Θf (z) =         n fe (n) q       2M   +         n fo (n) q 2M =: Θf (z) + Θf (z).
+                            n≥0       n≥0
+                         (e)                       (o)
+Now, apply Lemma 2.1 to θf (z) and Theorem 1.1 to θf (z). Similarly, apply Theorem 1.1 to
+ (e)                      (o)
+Θf (z) and Lemma 2.2 to Θf (z).
+  (v) As pointed out by the referee, there is a “duality” in the proof of Theorem 1.1. If f is
+even, then the quantum modularity of Θf (z) is driven by the modularity of θf (z) and if f is
+odd, then the (strong) quantum modularity of θf (z) is driven by the modularity of Θf (z). See
+Lemmas 2.1 and 2.2.
+   The paper is organized as follows. In Section 2, we carefully study some important trans-
+formation and limiting properties of θf (z) and Θf (z). In Section 3, we prove Theorem 1.1. In
+Section 4, we give some examples, including the quantum modularity of the Kontsevich-Zagier
+series Ft (q) associated to the family of torus knots T (3, 2t ), t ≥ 2. This latter result generalizes
+the quantum modularity of F (q).
+
+                                                    2. Preliminaries
+    We begin with transformation properties of the partial theta series θf (z) and Θf (z) in (1.3).
+Lemma
+      2.1. Let f be an even function with period M ≥ 2 and support Sf (k0 ). For all γ =
+  a b
+       ∈ ΓM , we have
+  c d
+                                               
+                                   πiabk0   2cM                1
+                       θf (γz) = e   M            ε−1
+                                                   d  (cz + d) 2 θf (z).              (2.1)
+                                              d
+Proof. From (1.3), we have
+                        ∞
+                   X X                  (M n+k)2
+       θf (z) =            f (M n + k) q 2M
+                   1≤k<M n=0
+                     X              X         (M n+k)2
+               =            f (k)         q      2M
+
+                   1≤k<M            n≥0
+                                                                                                                          2
+                     X                  X          (M n+k)2       X         (M n+M −k)2
+                                                                                                    M  X         M n+ M
+                                                                                                                        2
+               =            f (k)             q      2M      +         q       2M        +f                  q     2M          (2.2)
+                                                                                                     2
+                   1≤k< M               n≥0                       n≥0                                    n≥0
+                        2
+

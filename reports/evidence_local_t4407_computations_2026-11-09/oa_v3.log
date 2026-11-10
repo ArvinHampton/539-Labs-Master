@@ -1,0 +1,28 @@
+PARI stack size set to 3000000000 bytes, maximum size set to 3000000512
+dim K = ker T(9) = 4
+pivot indices n: [1, 2, 3, 5]
+G_1 (row-reduced, exact) n=0..80: [0, 1, 0, 0, 0, 0, 0, 0, -2, 1, 0, 0, 0, 0, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, -2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, -2, -2, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0]
+G_2 (row-reduced, exact) n=0..80: [0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, -2, 1, 0, -1, 0, 0, 0, 2, -2, 0, 0, 0, 0, 0, -2, -2, 0, -1, 0, 0, 0, 1, -2, 0, -2, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, -1, 2, 0, 0, 0, 0, 0, 0, 2, 0, -2, 0, 0, 0, -1, 0, 0, 2, 0, 0, 0, 4, -1, 0, 2, 0, 0, 0, -2, 0, 0]
+G_3 (row-reduced, exact) n=0..80: [0, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, -1, 0, -1, 2, 0, 0, 0, 1, 0, 2, 0, 0, 0, 0, -2, 0, 2, 1, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, -2, 0, 0, 2, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 3, 0, -1, 1, 0, 0, 0, 2]
+G_4 (row-reduced, exact) n=0..80: [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, -2, -1, 0, 0, 0, -1, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, -1, 0, 0, -2, 0, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 2, 0, 0, 0, 0]
+support by n mod 4 (n<=700): [122, 126, 119, 120]
+support by n mod 7 (n<=700): [0, 80, 82, 79, 84, 80, 82]
+support by n mod 8 (n<=700): [61, 68, 60, 62, 61, 58, 59, 58]
+ dim of subspace of K with [c(n)=0 unless n=0,1 mod 4 (Kohnen-type plus)]: 2
+ dim of subspace of K with [c(n)=0 unless n=0,3 mod 4]: 0
+ dim of subspace of K with [c(n)=0 unless n=2,3 mod 4]: 0
+ dim of subspace of K with [supported on n=1 mod 4 only]: 0
+ dim of subspace of K with [supported on n=2 mod 4 only]: 0
+ dim of subspace of K with [supported on n=3 mod 4 only]: 0
+ dim of subspace of K with [supported on n=0 mod 4 only]: 0
+ dim of subspace of K with [c(n)=0 for 7|n]: 0
+PARI mfkohnenbasis dim = 3 ; dim(plus ∩ K) = 2
+Traceback (most recent call last):
+  File "/workspace/quantum-comp/reports/evidence_local_t4407_computations_2026-11-09/oa_v3.py", line 27, in <module>
+    rows.append(str(P("[matrank(Mat([fv;fv2;fv4;s]))-3, s==0*s, s[1], s[2], s[4]]")))
+                    ~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cypari2/pari_instance.pyx", line 800, in cypari2.pari_instance.Pari.__call__
+  File "cypari2/gen.pyx", line 4784, in cypari2.gen.objtogen
+  File "cypari2/convert.pyx", line 545, in cypari2.convert.PyObject_AsGEN
+  File "cypari2/handle_error.pyx", line 211, in cypari2.handle_error._pari_err_handle
+cypari2.handle_error.PariError: matrank: forbidden division t_INT / t_VEC (12 elts)

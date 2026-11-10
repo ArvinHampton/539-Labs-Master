@@ -1,0 +1,2194 @@
+                                                       GROMOV-WITTEN THEORY AND
+                                                       NOETHER-LEFSCHETZ THEORY
+arXiv:0705.1653v3 [math.AG] 11 Nov 2012
+
+
+
+
+                                                           D. MAULIK AND R. PANDHARIPANDE
+
+                                                    Dedicated to J. Harris on the occasion of his 60th birthday
+
+
+
+                                                Abstract. Noether-Lefschetz divisors in the moduli of K3 sur-
+                                                faces are the loci corresponding to Picard rank at least 2. We relate
+                                                the degrees of the Noether-Lefschetz divisors in 1-parameter fami-
+                                                lies of K3 surfaces to the Gromov-Witten theory of the 3-fold total
+                                                space. The reduced K3 theory and the Yau-Zaslow formula play
+                                                an important role. We use results of Borcherds and Kudla-Millson
+                                                for O(2, 19) lattices to determine the Noether-Lefschetz degrees in
+                                                classical families of K3 surfaces of degrees 2, 4, 6 and 8. For the
+                                                quartic K3 surfaces, the Noether-Lefschetz degrees are proven to
+                                                be the Fourier coefficients of an explicitly computed modular form
+                                                of weight 21/2 and level 8. The interplay with mirror symmetry
+                                                is discussed. We close with a conjecture on the Picard ranks of
+                                                moduli spaces of K3 surfaces.
+
+
+                                                                           Contents
+                                            0. Introduction                                                              1
+                                            1. Noether-Lefschetz numbers                                                 9
+                                            2. Gromov-Witten theory                                                     16
+                                            3. Theorem 1                                                                20
+                                            4. Modular forms                                                            26
+                                            5. Lefschetz pencil of quartics                                             33
+                                            6. Direct Noether-Lefschetz calculations                                    39
+                                            7. Picard rank of Ml                                                        44
+                                            References                                                                  45
+
+
+
+                                                                      0. Introduction
+                                          0.1. K3 families. Let C be a nonsingular complete curve, and let
+                                                                           π:X →C
+                                            Date: September 2012.
+                                                                                 1
+2                    D. MAULIK AND R. PANDHARIPANDE
+
+be a 1-parameter family of nonsingular quasi-polarized K3 surfaces.
+Let L ∈ Pic(X) denote the quasi-polarization of degree
+                        Z
+                            L2 = l ∈ 2Z>0 .
+                                K3
+The family π yields a morphism,
+                                  ιπ : C → Ml ,
+to the 19 dimensional moduli space of quasi-polarized K3 surfaces of
+degree l. A review of the definitions can be found in Section 1.
+0.2. Noether-Lefschetz numbers. Noether-Lefschetz numbers are
+defined by the intersection of ιπ (C) with Noether-Lefschetz divisors in
+Ml . Noether-Lefschetz divisors can be described via Picard lattices or
+Picard classes. We briefly review the two approaches.
+   Let (L, v) be a rank 2 integral lattice with an even symmetric bilinear
+form
+                              h, i : L × L → Z
+and a distinguished primitive vector v ∈ L satisfying
+                                     hv, vi = l.
+The invariants of (L, v) are the discriminant △ ∈ Z and the coset
+                                 
+                                   Z
+                            δ∈         /±.
+                                  lZ
+If the data are presented as
+                                          
+                           l   d            1
+                 Lh,d =               , v=     ,
+                           d 2h − 2         0
+then the discriminant is
+                                     l   d
+               △l (h, d) = − det                   = d2 − 2lh + 2l
+                                     d 2h − 2
+and the coset is                                   
+                                                  Z
+                         δ = d mod l ∈                /±.
+                                                 lZ
+    Two lattices (Lh,d , v) and (Lh′ ,d′ , v ′) are equivalent if and only if
+                   △l (h, d) = △l (h′ , d′ ) and δh,d = δh′ ,d′ .
+However, not all pairs (△, δ) are realized.
+  The first type of Noether-Lefschetz divisor is defined by specifying a
+Picard lattice. Let
+                              P△,δ ⊂ Ml
+      GROMOV-WITTEN THEORY AND NOETHER-LEFSCHETZ THEORY                  3
+
+be the closure of the locus of quasi-polarized K3 surfaces (S, L) of
+degree l for which (Pic(S), L) is of rank 2 with discriminant △ and
+coset δ. By the Hodge index theorem, P△,δ is empty unless △ > 0.
+  The second type of Noether-Lefschetz divisor is defined by specifying
+a Picard class. In case △l (h, d) > 0, let
+                                Dh,d ⊂ Ml
+have support on the locus of quasi-polarized K3 surfaces (S, L) for
+which there exists a class β ∈ Pic(S) satisfying
+                  Z                     Z
+                       2
+                     β = 2h − 2 and         β · L = d.
+                    S                       S
+
+More precisely, Dh,d is the weighted sum
+                            X
+(1)                 Dh,d =      µ(h, d |△, δ) · [P△,δ ]
+                             △,δ
+
+where the multiplicity
+                         µ(h, d |△, δ) ∈ {0, 1, 2}
+is defined to be the number of elements β of the lattice (L, v) associated
+to (△, δ) satisfying
+(2)                 hβ, βi = 2h − 2 and hβ, vi = d.
+If no lattice corresponds to (△, δ), the multiplicity µ(h, d |△, δ) van-
+ishes and P△,δ is empty. If the multiplicity is nonzero, then
+                               △| △l (h, d).
+Hence, the sum on the right of (1) has only finitely many terms.
+  As relation (1) is easily seen to be triangular, the divisors P△,δ and
+Dh,d are essentially equivalent. However, the divisors Dh,d will be seen
+to have better formal properties.
+  A natural approach to studying the divisors Dh,d is via intersections
+with test curves. In case △l (h, d) > 0, the Noether-Lefschetz number
+NLπh,d is the classical intersection product
+                                     Z
+                               π
+(3)                        NLh,d =      ι∗π [Dh,d ].
+                                      C
+
+If △l (h, d) < 0, the divisor Dh,d vanishes by the Hodge index theorem.
+A definition of NLπh,d for all values △l (h, d) ≥ 0 is given by classical
+intersection theory in the period domain for K3 surfaces in Section 1.
+4                 D. MAULIK AND R. PANDHARIPANDE
+
+  The divisibility of a nonzero element β of a lattice is the maximal
+positive integer m dividing β. Refined divisors Dm,h,d are defined by
+                           X
+                  Dm,h,d =     µ(m, h, d |△, δ) · [P△,δ ]
+                              △,δ
+
+where the multiplicity
+                         µ(m, h, d |△, δ) ∈ {0, 1, 2}
+is the number of elements β of divisibility m of the lattice (L, v) asso-
+ciated to (△, δ) satisfying (2). Refined Noether-Lefschetz number are
+defined by                         Z
+                          NLπm,h,d =           ι∗π [Dm,h,d ].
+                                           C
+
+0.3. Invariants. We will study three types of invariants associated to
+a 1-parameter family π of quasi-polarized K3 surfaces in case the total
+space X is nonsingular:
+     (i) the Noether-Lefschetz numbers of π,
+    (ii) the Gromov-Witten invariants of X,
+   (iii) the reduced Gromov-Witten invariants of the K3 fibers.
+The Noether-Lefschetz numbers (i) are classical intersection products
+while the Gromov-Witten invariants (ii)-(iii) are quantum in origin.
+   The Gromov-Witten invariants (ii) of the 3-fold X and the reduced
+Gromov-Witten invariants (iii) of a K3 surface are defined via integra-
+tion against virtual classes of moduli spaces of stable maps. We view
+both of these Gromov-Witten theories in terms of the associated BPS
+state counts defined by Gopakumar and Vafa [19, 20].
+   Let nX g,d denote the Gopakumar-Vafa invariant of X of genus g for
+π-vertical curve classes of degree d with respect to L. Let rg,m,h denote
+the Gopakumar-Vafa reduced K3 invariant of genus g and curve class
+β ∈ H2 (K3, Z) of divisibility m satisfying
+                             Z
+                                 β 2 = 2h − 2.
+                               K3
+A review of these quantum invariants is presented in Section 2.
+   A geometric result intertwining the invariants (i)-(iii) is derived in
+Section 3 by a comparison of the reduced and usual deformation theo-
+ries of maps of curves to the K3 fibers of π.
+Theorem 1. For d > 0,
+                               ∞
+                              XX
+                    nX
+                     g,d =                rg,m,h · NLπm,h,d .
+                               h    m=1
+     GROMOV-WITTEN THEORY AND NOETHER-LEFSCHETZ THEORY                         5
+
+  Theorem 1 is the main geometric result of the paper. The proof is
+given in Section 3.
+0.4. Applications. Since Theorem 1 relates three distinct geometric
+invariants, the result can be effectively used in several directions.
+  An application for studying reduced invariants of K3 surfaces is given
+in [27]. A central conjecture discussed in Section 2.3 is the indepen-
+dence1 of rg,m,h on m. In genus 0, the independence is the non-primitive
+Yau-Zaslow conjecture proven in [27] as a consequence of Theorem 1.
+  The approach taken there is the following. For a specific 1-parameter
+family of K3 surfaces, known in the physics literature as the STU
+model, the BPS states nST     0,d
+                                  U
+                                    are known by proven mirror transfor-
+mations and the Noether-Lefschetz numbers NLST             U
+                                                        m,h,d can by exactly
+determined. Theorem 1 is then used in [27] to solve for r0,m,h :
+                                    X           Y       1
+              r0,m,h = r0,1,h ,        r0,1,h =            n )24
+                                                                 .
+                                                n≥1
+                                                    (1 − q
+                                   h≥0
+
+The genus 1 results
+                                        h
+                                           r0,1,h
+                         r1,m,h = r1,1,h = −
+                                        12
+are an easy consequence, see Section 2.3. We write rg,m,h = rg,h inde-
+pendent of m for g = 0, 1.
+   Using [27], the genus 0 and 1 specialization takes a much simpler
+form.
+Corollary 1. For g ≤ 1 and d > 0,
+                             ∞
+                             X
+                      nX
+                       g,d =    rg,h · NLπh,d .
+                                   h=g
+
+   By Corollary 1, the Gromov-Witten invariants nX    g,d are completely
+determined by the Noether-Lefschetz numbers of π for any 1-parameter
+family of quasi-polarized K3 surfaces. The result may be viewed as
+giving a fully classical interpretation of the Gromov-Witten invariants
+of X in π-vertical classes.
+   Theorem 1 can also be used to constrain the Noether-Lefschetz de-
+grees themselves. An important approach to the Noether-Lefschetz
+numbers (already used in the STU calculation) is via results of Borcherds
+[7] and Kudla-Millson [29]. The Noether-Lefschetz numbers of π are
+  1If m2 does not divide 2h − 2, then r
+                                   g,m,h = 0. The independence is conjectured
+only when m2 divides 2h − 2. When we write rg,m,h , the divisibility condition is
+understood to hold.
+6                     D. MAULIK AND R. PANDHARIPANDE
+
+proven to be the Fourier coefficients of a vector-valued modular form.2
+For several classical families of K3 surfaces, Corollary 1 in genus 0
+provides an alternative method of calculating the Noether-Lefschetz
+numbers via the invariants nX    0,d . Together, we obtain a remarkable
+sequence of identities intertwining hypergeometric series from mirror
+transformations (calculating nX   0,d ) and modular forms. The Harvey-
+Moore identity [22] for the STU model is a special case.
+   As a basic example, we provide a complete calculation of the Noether-
+Lefschetz numbers for the family of K3 surfaces determined by a Lef-
+schetz pencil of quartics in P3 . The required mirror symmetry calcula-
+tions (iii) for the quartic pencil have long been established rigorously
+[17, 18]. We give the derivation of the Noether-Lefschetz numbers via
+Gromov-Witten calculations in Section 5. The resulting hypergeometric-
+modular identity follows immediately in Section 5.5. A second ap-
+proach to calculating Noether-Lefschetz numbers directly via more so-
+phisticated modular form techniques is explained for quartics and sev-
+eral other classical families in Section 6.
+   Once the Noether-Lefschetz numbers are calculated for the 1-paramet-
+er family π, Corollary 1 yields the genus 1 Gromov-Witten invariants
+of X in π-vertical classes. There are very few methods for the exact
+calculation of genus 1 invariants in Calabi-Yau geometries.3 Corollary
+1 provides a new class of complete solutions.
+
+0.5. Heterotic duality. In rather different terms, approach (i)-(iii)
+was pursued in the string theoretic work of Klemm, Kreuzer, Riegler,
+and Scheidegger [26] with the goal of calculating the BPS counts nX   g,d
+                           X
+from the genus 0 values n0,d . Heterotic duality was used in [26] for (i)
+since the connection to the intersection theory of the Noether-Lefschetz
+divisors
+                               Dh,d ⊂ Ml
+and the work of Borcherds was not made. The perspective of [26] can
+be turned upside down by using Gromov-Witten theory to calculate
+the Noether-Lefschetz numbers. On the other hand, modularity allows
+the calculations of [26] to be pursued in much greater generality.
+   In fact, the back and forth here between heterotic duality and math-
+ematical results is older. Borcherds’ paper on automorphic functions
+[6] which underlies [7] was motivated in part by the work of Harvey
+    2While the paper [7, 29] have considerable overlap, we will follow the point of
+view of Borcherds.
+   3See [54] for a different mathematical approach to genus 1 invariants for complete
+intersections.
+     GROMOV-WITTEN THEORY AND NOETHER-LEFSCHETZ THEORY                   7
+
+and Moore [22, 23] on heterotic duality. The first higher genus results
+for K3 fibrations were by Mariño and Moore [38].
+   Finally, we mention the circle of ideas here can be considered for
+interesting isotrivial families of K3 surfaces with double Enriques fibers
+[28, 39]. While heterotic duality arguments apply there, Borcherds’
+result does not directly apply.
+
+0.6. Modular forms. Let A and B be modular forms of weight 1/2
+and level 8,
+                   X n2         X         n2
+                A=     q8, B=      (−1)n q 8 .
+                        n∈Z             n∈Z
+
+Let Θ be the modular form of weight 21/2 and level 8 defined by
+     222 Θ =     3A21 − 81A19 B 2 − 627A18 B 3 − 14436A17 B 4
+                −20007A16 B 5 − 169092A15 B 6 − 120636A14B 7
+                −621558A13 B 8 − 292796A12B 9 − 1038366A11B 10
+                −346122A10 B 11 − 878388A9B 12 − 207186A8B 13
+                −361908A7 B 14 − 56364A6B 15 − 60021A5B 16
+                −4812A4 B 17 − 1881A3 B 18 − 27A2 B 19 + B 21 .
+                                   1
+We can expand Θ as a series in q 8 ,
+                                  9           3
+          Θ = −1 + 108q + 320q 8 + 50016q 2 + 76950q 2 . . . .
+The modular form Θ first appeared in calculations of [26].
+   Let π be the family of quasi-polarized K3 surfaces determined by a
+Lefschetz pencil of quartics in P4 . Let Θ[m] denote the coefficient of
+q m in Θ.
+Theorem 2. The Noether-Lefschetz numbers of the quartic pencil π
+are coefficients of Θ,
+                                            
+                         π         △4 (h, d)
+                       NLh,d = Θ               .
+                                       8
+0.7. Classical quartic geometry. Let V be a 4-dimensional C-vector
+space. A quartic hypersurface in P(V ) is determined by an element of
+P(Sym4 V ∗ ). Let
+                          U ⊂ P(Sym4 V ∗ )
+be the Zariski open set of nonsingular quartic hypersurfaces. Since
+[S] ∈ U corresponds to a polarized K3 surface of degree 4, we obtain a
+canonical morphism
+                            φ : U → M4 .
+8                  D. MAULIK AND R. PANDHARIPANDE
+
+If △4 (h, d) > 0, the pull-back
+                         Dh,d = φ−1 (Dh,d ) ⊂ U
+is a closed subvariety of pure codimension 1. As a Corollary of Theorem
+2, we obtain a complete calculation of the degrees of the hypersurfaces
+                           D h,d ⊂ P(Sym4 V ∗ ).
+Corollary 2. If △4 (h, d) > 0, the degree of Dh,d is
+                                                        
+                               △4 (h, d)         △4 (h, d)
+              deg(Dh,d ) = Θ               −Ψ
+                                   8                 8
+where the correction term is
+                                     X 2
+                           Ψ = 108        qn .
+                                      n>0
+
+  The correction term, obtained from the contribution of the nodal
+quartics, is explained in Section 5.6. Formulas for the degrees of
+                        φ−1 (P△,δ ) ⊂ P(Sym4 V ∗ )
+are easily obtained from (1) and a parallel nodal analysis. While Corol-
+lary 2 answers a classical question about the Hodge theory of quartic
+K3 surfaces, the method of proof is modern.
+0.8. Outline. In Section 1, we give a precise definition of Noether-
+Lefschetz numbers and establish several elementary properties. The
+definitions of BPS invariants for 3-folds and reduced Gromov-Witten
+invariants of K3 surfaces are recalled in Section 2. Two central con-
+jectures about the reduced theory of K3 surfaces are stated in Section
+2.3. The proof of Theorem 1 is presented in Section 3.
+   We review of the work of Borcherds on Heegner divisors and explain
+the application to families of K3 surfaces in Section 4. The results are
+applied with Theorem 1 to prove Theorem 2 via mirror symmetry cal-
+culations in Section 5. A direct approach to Noether-Lefschetz degrees
+for classical familes of K3 surfaces of degrees 2, 4, 6, and 8 is given in
+Section 6 via a deeper study of vector-valued modular forms. Finally,
+in Section 7, we state a conjecture regarding Picard ranks of moduli
+spaces of K3 surfaces of degree l .
+0.9. Acknowledgments. Discussions with A. Klemm about the cal-
+culations in [26] played a crucial role. We are grateful to D. Huybrechts
+for a careful reading of the paper.
+   We thank R. Borcherds, J. Bruinier, J. Bryan, B. Conrad, I. Dol-
+gachev, S. Grushevsky, E. Looijenga, G. Moore, K. Ranestad, P. Sar-
+nak, E. Scheidegger, C. Skinner, A. Snowden, W. Stein, G. Tian, I.
+      GROMOV-WITTEN THEORY AND NOETHER-LEFSCHETZ THEORY                 9
+
+Vainsencher, and W. Zhang for conversations about Noether-Lefschetz
+divisors, reduced invariants of K3 surfaces, and modular forms.
+  D. M. was partially supported by an NSF graduate fellowship. R.P.
+was partially support by NSF grant DMS-0500187 and a Packard foun-
+dation fellowship. The paper was written in the spring of 2007 and
+revised in 2009.
+
+                  1. Noether-Lefschetz numbers
+1.1. Picard lattice. Let S be a K3 surface. The second cohomology
+of S is a rank 22 lattice with intersection form
+                            ∼
+(4)           H 2 (S, Z) = U ⊕ U ⊕ U ⊕ E8 (−1) ⊕ E8 (−1)
+where                                         
+                                         0 1
+                                U=
+                                         1 0
+and
+                                        
+                    −2 0  1 0  0  0 0  0
+                   0 −2 0  1  0  0 0  0 
+                                        
+                   1  0 −2 1  0  0 0  0 
+                                        
+                   0  1  1 −2 1  0 0  0 
+        E8 (−1) =                       
+                   0  0  0 1 −2 1  0  0 
+                   0  0  0 0  1 −2 1  0 
+                                        
+                   0  0  0 0  0  1 −2 1 
+                     0 0  0 0  0  0 1 −2
+is the (negative) Cartan matrix. The intersection form (4) is even.
+   The divisibility of β ∈ H 2(S, Z) is the maximal positive integer di-
+viding β. If the divisibility is 1, β is primitive. Elements with equal
+divisibility and norm are equivalent up to orthogonal transformation
+of H 2 (S, Z), see [51].
+   The Hodge decomposition of the second cohomology of S has dimen-
+sions (1, 20, 1),
+        H 2 (S, Z) ⊗Z C = H 2,0 (S, C) ⊕ H 1,1 (S, C) ⊕ H 0,2 (S, C).
+The Picard lattice of S is
+                    Pic(S) = H 2 (S, Z) ∩ H 1,1 (S, C).
+
+1.2. Quasi-polarization. A quasi-polarization on S is a line bundle
+L with primitive Chern class c1 (L) ∈ H 2 (S, Z) satisfying
+                   Z                 Z
+                       2
+                      L > 0 and        L · [C] ≥ 0
+                        S                 S
+10                 D. MAULIK AND R. PANDHARIPANDE
+
+for every curve C ⊂ S. A sufficiently high tensor power Ln of a quasi-
+polarization is base point free and determines a birational morphism
+                                 S → Se
+contracting A-D-E configurations of (−2)-curves on S [47]. Hence,
+every quasi-polarized K3 surface (S, L) is algebraic.
+  Let X be a compact 3-dimensional complex manifold equipped with
+a holomorphic line bundle L and a holomorphic map
+                               π:X →C
+to a nonsingular complete curve. The triple (X, L, π) is a family of
+quasi-polarized K3 surfaces of degree l if the fibers (Xξ , Lξ ) are quasi-
+polarized K3 surfaces satisfying
+                              Z
+                                  L2ξ = l
+                                 Xξ
+
+for every ξ ∈ C. The family (X, L, π) yields a morphism,
+                              ιπ : C → Ml ,
+to the moduli space of quasi-polarized K3 surfaces of degree l.
+  We will often refer to the triple (X, L, π) just by π. Associated to π is
+the projective variety Xe obtained from the relative quasi-polarization,
+                     X →X   e ⊂ P(R0 π∗ (Ln )∗ ) → C,
+for sufficiently large n. The complex manifold X may be a non-
+                                                               e
+projective small resolution of the singular projective variety X.
+1.3. Period domain. Let V be a rank 22 integer lattice with inter-
+section form h, i obtained from the second homology of a K3 surface,
+                    ∼
+                 V = U ⊕ U ⊕ U ⊕ E8 (−1) ⊕ E8 (−1).
+A 1-dimensional subspace C · ω ∈ V ⊗Z C satisfying
+(5)                     hω, ωi = 0 and hω, ωi > 0
+determines a Hodge structure of type (1, 20, 1) on V ,
+ V ⊗Z C = V 2,0 ⊕ V 1,1 ⊕ V 0,2 = C · ω ⊕ (C · ω ⊕ C · ω)⊥ ⊕ C · ω.
+Conversely, a Hodge structure of type (1, 20, 1) determines a 1-dimensional
+subspace C · ω satisfying (5).
+   The moduli space M V of Hodge structures of type (1, 20, 1) on V
+is therefore an analytic open set of the 20-dimensional nonsingular
+isotropic quadric Q,
+                         M V ⊂ Q ⊂ P(V ⊗Z C).
+     GROMOV-WITTEN THEORY AND NOETHER-LEFSCHETZ THEORY              11
+
+The moduli space M V is the period domain.
+  For nonzero β ∈ V , let DβV ⊂ M V denote the locus of Hodge struc-
+tures for which β ∈ V 1,1 . Certainly,
+                    DβV = M V ∩ β ⊥ ⊂ P(V ⊗Z C)
+
+where β ⊥ is the linear space orthogonal to β. Hence, DβV is simply a
+19-dimensional hyperplane section of M V .
+
+1.4. Local systems. Let (X, L, π) be a quasi-polarized family of K3
+surfaces over a nonsingular curve C. Let
+                          V = R2 π∗ (Z) → C
+denote the rank 22 local system determined by the middle cohomology
+of the fibration
+                              π : X → C.
+The local system V is equipped with the fiberwise intersection form
+h, i.
+   Let MV be the π-relative moduli space of Hodge structures
+                             µ : MV → C
+with fiber
+                            µ−1 (ξ) = M Vξ .
+The moduli space MV is a complex manifold, and µ is a locally trivial
+fibration in the analytic topology.
+   Duality and homological push-forward yield a canonical map
+                           ǫ : V → H2 (X, Z)
+where the right side can be viewed as a trivial local system. Let
+H2 (X, Z)π denote the kernel of the projection map
+                      π∗ : H2 (X, Z) → H2 (C, Z).
+For h ∈ Z and γ ∈ H2 (X, Z)π , we will define a Noether-Lefschetz
+number NLπh,γ for the K3 fibration π.
+  Informally, NLπh,γ counts the number of points ξ ∈ C for which there
+exists an integral class β ∈ Vξ of type (1, 1) satisfying
+                    hβ, βi = 2h − 2 and ǫ(β) = γ.
+The formal definition is given in Section 1.5.
+12                     D. MAULIK AND R. PANDHARIPANDE
+
+1.5. Classical intersection. Define the relative divisor
+                                      V
+                                     Dh,γ ⊂ MV
+by the set of Hodge structures which contain a class β ∈ Vξ of type
+(1, 1) satisfying
+                         hβ, βi = 2h − 2 and ǫ(β) = γ.
+When MV is trivialized4 over a Euclidean open set U ⊂ C,
+                                 MVU = M V × U,
+            V
+the subset Dh,γ restricts to
+                                 VU
+                                Dh,γ = ∪β DβV × U
+where the union is over all β ∈ V satisfying
+                         hβ, βi = 2h − 2 and ǫ(β) = γ.
+         V
+Hence, Dh,γ ⊂ MV is a countable union of divisors.
+   The Noether-Lefschetz number is defined by a tautological intersec-
+tion product. The family π determines a canonical section
+                                   σ : C → MV .
+where
+                           σ(ξ) = [H 2,0(Xξ , C)] ∈ MVξ
+is the Hodge structure determined by the K3 surface Xξ . Let
+                                 Z
+                            π
+(6)                     NLh,γ =     σ ∗ [Dh,γ
+                                          V
+                                              ].
+                                           C
+               V
+The divisor Dh,γ   may have infinitely many components. However, by
+the finiteness result of Proposition 1, NLπh,γ is well-defined.
+   While NLπh,γ is a classical intersection number, an excess calculation
+                                V
+is required in case σ(C) ⊂ Dh,γ   . The informal counting interpretation
+is not always well-defined.
+Proposition 1. NLπh,γ is finite.
+Proof. Let L be the quasi-polarization on X. If there exists a point
+ξ ∈ C for which Lξ is ample, then L is π-relatively ample over an open
+set of C. If Lξ is never ample, then the morphism
+                               e ⊂ P(R0 π∗ (Ln ))
+                             X→X
+     4We take trivializations obtained from trivializing R2 π (Z) compatibly with ǫ .
+                                                            ∗
+     GROMOV-WITTEN THEORY AND NOETHER-LEFSCHETZ THEORY                   13
+
+for sufficiently large n contracts divisors on X which intersect the
+generic fiber Xξ in (-2)-curves. After modification5 of L by these con-
+tracted divisors, a new quasi-polarization L′ of X may be obtained
+which is π-relatively ample over a nonempty open set of C.
+   We assume now (after possible modification) the quasi-polarization
+L is π-relatively ample over a nonempty open set U ⊂ C. Let
+                                    Z
+                                d= L
+                                               γ
+
+be the degree of γ. Let
+                                      Z
+                                l=             L2ξ > 0
+                                          Xξ
+
+be the degree of the K3 fibers of π.
+  Let β ∈ Vξ of type (1, 1) satisfy
+                      hβ, βi = 2h − 2 and ǫ(β) = γ.
+We will prove
+                                  σ(C) ⊂ MV
+                                             V
+intersects only finitely many components of Dh,γ .
+   Let k be an integer satisfying
+                d + lk > 0 and lk 2 + 2dk + 2h − 2 > −4.
+
+The first step is to show
+
+                               β̃ = β + kc1 (Lξ )
+is an effective curve class on Xξ by Riemann-Roch.
+   Let Lβ̃ denote the unique line bundle on Xξ with
+
+                                  c1 (Lβ̃ ) = β̃.
+
+By Serre duality,
+                         H 2 (Xξ , Lβ̃ ) = H 0 (Xξ , L∗β̃ )∗
+Since
+                        hc1 (L∗β̃ ), Lξ i ≤ −d − lk < 0,
+
+  5A base change of π : X → C is not required since the modification can be
+averaged over the symmetries of the (-2)-curve configuration.
+14                    D. MAULIK AND R. PANDHARIPANDE
+
+h0 (Xξ , L∗β̃ ) vanishes. Then, by Riemann-Roch,
+                   h0 (Xξ , Lβ̃ ) ≥ χ(Xξ , Lβ̃ ) − h2 (Xξ , Lβ̃ )
+                                 = χ(Xξ , Lβ̃ )
+                                   1
+                                 =   hβ̃, β̃i + 2
+                                   2
+                                 > 0.
+Hence, β̃ is an effective curve class on Xξ .
+  Consider first the open set U ⊂ C over which L is π-relatively ample.
+Let
+                                      H→U
+be the π-relative Hilbert scheme parameterizing of curves in Xξ∈U of
+degree
+                             hβ̃, c1 (Lξ )i = d + lk
+and Euler characteristic
+                                      1             1
+    χ(Xξ , OXξ ) − χ(Xξ , L∗β̃ ) = − hβ̃, β̃i = − (lk 2 + 2dk + 2h − 2).
+                                      2             2
+The scheme H is projective over U and of finite type.
+  An irreducible component Hirr ⊂ H either dominates U or maps to
+a point ξ ∈ U. In the former case, the classes of curves represented by
+Hirr yield a finite monodromy invariant subset of V. In the latter case,
+the curves represented by Hirr yield a single element of Vξ .
+  After shifting the finiteness statements back by kc1 (Lξ ), we obtain
+the finiteness of the intersection geometry
+                                           V
+(7)                                σ(C) ∩ Dh,γ
+over U ⊂ C. Indeed, the dominant components Hirr correspond to
+finitely many excess intersections and the non-dominant components
+correspond to finitely many true intersections.
+   Finally consider the complement U c ⊂ C. The complement is a
+finite set. For each ξ c ∈ U c , let Lcξc be an ample line bundle. The
+above arugment using the ample bundles Lcξc for the fibers Xξc shows
+there are finitely many intersections in (7) over U c ⊂ C as well.
+   We conclude the intersection geometry is finite over all of C and the
+product                              Z
+                             π
+                          NLh,γ =        σ ∗ [Dh,γ
+                                               V
+                                                   ]
+                                          C
+is well-defined.                                                        
+     Let γL denote the push-forward of the ample class on the fibers,
+                       γL = c1 (L) ∩ [Xξ ] ∈ H2 (X, Z)π .
+      GROMOV-WITTEN THEORY AND NOETHER-LEFSCHETZ THEORY              15
+
+By an elementary comparison,
+                     σ ∗ [Dh,γ
+                           V
+                               ] = σ ∗ [Dh+d+
+                                         V
+                                              l
+                                                ,γ+γL
+                                                      ].
+                                                    2
+
+We obtain the following result.
+Proposition 2. NLπh,γ = NLπh+d+ l ,γ+γ .
+                                          2     L
+
+  The proof of Proposition 1 show the vanishing of the Noether-Lefschetz
+number for high h.
+Proposition 3. For fixed γ, the numbers NLπh,γ vanish for sufficiently
+high h.
+  The Noether-Lefschetz numbers NLh,γ (π) have non-trivial depen-
+dence on γ despite the linear equivalence
+                              DV ∼= D V′
+                                  β             β
+
+on M V . The Noether-Lefschetz numbers involve also the twisting of
+the local system V over C.
+1.6. Refinements. The Noether-Lefschetz numbers NLπh,d defined in
+Section 0.3 are obtained from the relation
+                                  X
+(8)                     NLπh,d =       NLπh,γ .
+                                      R
+                                      γ L=d
+
+The finiteness of the sum on the right is a consequence of the negative
+definiteness of the intersection matrix of divisors in Xξ contracted by
+Lξ . The invariants NLπh,γ may be viewed as a refinement of NLπh,d with
+the nonvanishing discriminant hypothesis lifted.
+  Further refined Noether-Lefschetz numbers may be defined with re-
+spect to any additional monodromy invariant data. For example, the
+divisibility m of an element β ∈ Vξ is a monodromy invariant. Let
+                              V
+                             Dm,h,γ ⊂ MV
+be the divisor of Hodge structures which contain a class β ∈ Vξ of type
+(1, 1) of divisibility m satisfying
+                   hβ, βi = 2h − 2 and ǫ(β) = γ.
+We define                             Z
+                       NLπm,h,γ =             σ ∗ [Dm,h,γ ].
+                                          C
+The relation
+                                      X
+(9)                     NLπh,γ =              NLπm,h,γ
+                                      m≥1
+
+certainly holds.
+16                     D. MAULIK AND R. PANDHARIPANDE
+
+1.7. Intersection theory of Ml . Let v ∈ V be a vector of norm l,
+and let
+                        MVv = v ⊥ ∩ MV .
+Let Γ denote the group of orthogonal transformations of the lattice V ,
+and let
+                               Γv ⊂ Γ
+be the subgroup fixing v. The moduli space of quasi-polarized K3
+surfaces of degree l is the quotient
+                                  Ml = MVv /Γv .
+The moduli space is a nonsingular orbifold. We refer the reader to [14]
+for a more detailed discussion.
+   In case △l (h, d) 6= 0, the above construction of Ml shows the defini-
+tions of the Noether-Lefschetz number by (3) and (8) agree.
+
+                        2. Gromov-Witten theory
+2.1. BPS states for 3-folds. Let (X, L, π) be a quasi-polarized fam-
+ily of K3 surfaces. While X may not be a projective variety, X carries
+a (1, 1)-form ωK which is Kähler on the K3 fibers of π. The existence
+of a fiberwise Kähler form is sufficient to define Gromov-Witten theory
+for vertical classes
+                           0 6= γ ∈ H2 (X, Z)π .
+The fiberwise Kähler form ωK is obtained by a small perturbation
+of the quasi-Kähler form obtained from the quasi-polarization. The
+associated Gromov-Witten theory is independent of the perturbation
+used.6
+  Let M g (X, γ) be the moduli space of stable maps from connected
+genus g curves to X. Gromov-Witten theory is defined by integration
+against the virtual class,
+                                  Z
+                            X
+(10)                       Ng,γ =         1.
+                                        [M g (X,γ)]vir
+
+The expected dimension of the moduli space is 0.
+   The Gromov-Witten potential F X (λ, v) for nonzero vertical classes
+is the series         X       X
+                FX =                     X
+                                       Ng,γ λ2g−2 v γ
+                              g≥0 06=γ∈H2 (X,Z)π
+
+     6See [30, 36] for treatments of Gromov-Witten invariants for fiberwise Kähler
+geometry.
+       GROMOV-WITTEN THEORY AND NOETHER-LEFSCHETZ THEORY                17
+
+where λ and v are the genus and curve class variables. The BPS counts
+nX
+ g,γ of Gopakumar and Vafa are uniquely defined by the following
+equation:
+           X        X                   X 1  sin(dλ/2) 2g−2
+       X                     X     2g−2
+     F =                    ng,γ λ                            v dγ .
+           g≥0            π             d>0
+                                            d    λ/2
+                 06=γ∈H2 (X,Z)
+
+Conjecturally, the invariants nX
+                               g,γ are integral and obtained from the
+cohomology of an as yet unspecified moduli space of sheaves on X.
+2.2. Reduced theory. Let C be a connected, nodal, genus g curve.
+Let S be a K3 surface, and let β ∈ Pic(S) be a nonzero class. The
+moduli space MC (S, β) parameterizes maps from C to S of class β. Let
+                      ν : C × MC (S, β) → MC (S, β)
+denote the projection, and let
+                           f : C × MC (S, β) → S
+denote the universal map. The canonical morphism
+(11)                        R• ν∗ (f ∗ S)∨ → L•MC
+determines a perfect obstruction theory on MC (S, β), see [2, 3, 34].
+Here, L•MC denotes the cotangent complex of MC (S, β).
+   Let ΩS denote the cotangent bundle of S. Let Ων and ων denote
+respectively the sheaf of relative differentials of ν and the relative du-
+alizing sheaf of ν. There are canonical maps
+(12)                        f ∗ (ΩS ) → Ων → ων
+The sections of the canonical bundle H 0 (S, KS ) determine a 1-dimensional
+space of holomorphic symplectic forms. Hence, there is a canonical iso-
+morphism
+                                           ∼
+                         TS ⊗ H 0 (S, KS ) = ΩS
+where TS is the tangent bundle. We obtain a map
+                       f ∗ (TS ) → ων ⊗ (H 0 (S, KS ))∨
+and a map
+(13)            R• ν∗ (ων )∨ ⊗ H 0 (S, KS ) → R• ν∗ (f ∗ TS )∨ .
+  From (13), we obtain the cut-off map
+            ι : τ≤−1 R• ν∗ (ων )∨ ⊗ H 0 (S, KS ) → R• ν∗ (f ∗ TS )∨ .
+The complex τ≤−1 R• ν∗ (ων )∨ ⊗ H 0 (S, KS ) is represented by a trivial
+bundle of rank 1 tensored with H 0 (S, KS ) in degree −1. Consider the
+mapping cone C(ι) of ι. Certainly R• π∗ (f ∗ TS )∨ is represented by a
+18                    D. MAULIK AND R. PANDHARIPANDE
+
+two term complex. An elementary argument using nonvanishing β 6= 0
+shows the complex C(ι) is also two term.
+  By Ran’s results7 on deformation theory and the semiregularity map,
+there is a canonical map
+(14)                              C(ι) → L•MC
+induced by (11), see [46]. Ran proves the obstructions to deforming
+maps from C to a holomorphic symplectic manifold lie in the kernel of
+the semiregularity map. After dualizing, Ran’s result precisely shows
+(11) factors through the cone C(ι).
+  The map (14) defines a new perfect obstruction theory on MC (S, β).
+The conditions of cohomology isomorphism in degree 0 and the coho-
+mology surjectivity in degree −1 are both induced from the perfect
+obstruction theory (11). We view (11) as the standard obstruction
+theory and (14) as the reduced obstruction theory.
+  Following [2, 3], the morphism (14) is an obstruction theory of maps
+to S relative to the Artin stack Mg of genus g curves. A reduced
+absolute obstruction theory
+(15)                            E • → L•M g (S,β)
+is obtained via a distinguished triangle in the usual way, see [2, 3, 34].
+The obstruction theory (15) yields a reduced virtual class
+                       [M g (S, β)]red ∈ Ag (M g (S, β), Q)
+of dimension g.
+2.3. BPS for K3 surfaces. Let (S, ωK ) be a K3 surface with a Kähler
+form ωK . Let β ∈ Pic(S) be a nonzero class of positive degree
+                             Z
+                               ωK > 0.
+                                    β
+
+We are interested in the following reduced Gromov-Witten integrals,
+                              Z
+(16)                  Rg,β =            (−1)g λg .
+                                   [M g (S,β)]red
+
+Here, the integrand λg is the top Chern class of the Hodge bundle
+                                Eg → M g (S, β)
+                0
+with fiber H (C, ωC ) over moduli point
+                           [f : C → S] ∈ M g (S, β).
+     7The required deformation theory can also be found in a recent paper by M.
+Manetti [37]. A different approach to the construction of the reduced virtual class
+is available in [48].
+     GROMOV-WITTEN THEORY AND NOETHER-LEFSCHETZ THEORY                                    19
+
+See [15, 21] for a discussion of Hodge classes in Gromov-Witten theory.
+   The definition of the BPS counts associated to the Hodge integrals
+(16) is straightforward. Let α ∈ Pic(S) be a primitive class of positive
+degree with respect to ωK . The Gromov-Witten potential Fα (λ, v) for
+classes proportional to α is
+                            X X
+                      Fα =          Rg,mα λ2g−2 v mα .
+                                   g≥0 m>0
+
+The BPS counts rg,mα are uniquely defined by the following equation:
+                   X X                           X 1  sin(dλ/2) 2g−2
+                                          2g−2
+      Fα =                    rg,mα λ                                         v dmα .
+                   g≥0 m>0                       d>0
+                                                     d       λ/2
+
+We have defined BPS counts for both primitive and divisible classes.
+  The string theoretic calculations of Katz, Klemm and Vafa [24] via
+heterotic duality yield two conjectures.
+
+Conjecture
+      R 2 1. The BPS count rg,β depends upon β only through the
+square S β .
+
+  Assuming the validity of Conjecture 1, let rg,h denote the BPS count
+associated to a class β satisfying
+                             Z
+                                β 2 = 2h − 2.
+                                      S
+
+Conjecture 1 is rather surprising from the point of view of Gromov-
+Witten theory. By deformation arguments,
+                                      R 2 the invariants Rg,β depend
+upon both the divisibility m of β and S β . Hence, BPS counts rg,m,h
+depending upon both the divisibility and the norm are well-defined
+unconditionally.
+
+Conjecture 2. The BPS counts rg,h are uniquely determined by the
+following equation:
+XX                      1      1
+                                             Y                        1
+          (−1)g rg,h (y 2 −y − 2 )2g q h =                                                     .
+g≥0 h≥0                                      n≥1
+                                                   (1 − q n )20 (1 − yq n )2 (1 − y −1q n )2
+
+  As a consequence of Conjecture 2, rg,h vanishes if g > h and
+
+                                   rg,g = (−1)g (g + 1).
+
+The first values are tabulated below:
+20                 D. MAULIK AND R. PANDHARIPANDE
+
+      rg,h   h=0 1   2    3    4
+     g=0      1  24 324 3200 25650
+       1         −2 −54 −800 −8550
+       2             3   88   1401
+       3                 −4  −126
+       4                       5
+
+  The right side Conjecture 2 is related to the generating series of
+Hodge numbers of the Hilbert schemes of points Hilb(S, n). The genus
+0 specialization of Conjecture 2 recovers the Yau-Zaslow formula
+                      X               Y       1
+                           r0,h q h =
+                       h≥0            n≥1
+                                          (1 − q n )24
+related to the Euler characteristics of Hilb(S, n).
+   The Conjectures are proven in very few cases. A mathematical ap-
+proach to the genus 0 Yau-Zaslow formula following [52] can be found
+in [4, 12, 16]. The Yau-Zaslow formula is proven for primitive classes
+β by Bryan and Leung [10]. If β has divisibility 2, the Yau-Zaslow for-
+mula is proven by Lee and Leung in [31]. Using Theorem 1, a complete
+proof of the Yau-Zaslow formula for all divisibilities is given in [27].
+Since                    Z
+                                                   hβ, βi
+                 R1,β =                   −λ1 = −         R0,β ,
+                           [M 1 (S,β)]red            24
+we obtain
+                                           h
+                                r1,h = −      r0,h
+                                           12
+and Conjectures 1 and 2 for genus 1 from the genus 0 results.
+   Conjecture 2 for primitive classes β is connected to Euler character-
+istics of the moduli spaces of stable pairs on K3 by the correspondence
+of [44, 45]. A proof of Conjecture 2 for primitive classes is given in [40].
+                              3. Theorem 1
+3.1. Result. Consider a quasi-polarized family of K3 surfaces of de-
+gree l as in Section 1.2,
+                            π:X→C .
+We restate Theorem 1 in terms of γ ∈ H2 (X, Z)π following the notation
+of Section 1.4.
+Theorem 1. For γ 6= 0,
+                               ∞
+                              XX
+                     nX
+                      g,γ =             rg,m,h · NLπm,h,γ .
+                              h   m=1
+       GROMOV-WITTEN THEORY AND NOETHER-LEFSCHETZ THEORY                21
+
+3.2. Proof. Since the formulas relating the BPS counts to Gromov-
+Witten invariants are the same for X and the K3 surface, Theorem 1
+is equivalent to the analogous Gromov-Witten statement:
+                                ∞
+                               XX
+                       X
+(17)                  Ng,γ =              Rg,m,h · NLπm,h,γ
+                                h   m=1
+
+for γ 6= 0.
+   Following the notation of Section 1.5, let σ denote the section
+                                σ : C → MV
+determined by the Hodge structure of the K3 fibers
+                      σ(ξ) = [H 0 (X, KXξ )] ∈ MVξ .
+For each ξ ∈ C, let
+                               Vξ (m, h, γ) ⊂ Vξ
+be the set of classes with divisibility m, square 2h−2, and push-forward
+γ. Let
+            Bξ (m, h, γ) = { β ∈ Vξ (m, h, γ) | σ(ξ) ∈ β ⊥ }.
+By Proposition 1, the set Bξ (m, h, γ) is finite.
+  Equation (17) is proven by showing the contributions of the classes
+Bξ (m, h, γ) to both sides are the same. The set
+                                  [
+                    B(m, h, γ) =     Bξ (m, h, γ) ⊂ V
+
+can be divided into two disjoint subsets
+               B(m, h, γ) = Biso (m, h, γ) ∪ B∞ (m, h, γ).
+The elements of Biso (m, h, γ) are isolated while the elements of B∞ (m, h, γ)
+form a finite local system over C,
+(18)                      ǫ : B∞ (m, h, γ) → C.
+We address the contributions of the isolated issues and the local system
+separately.
+  Consider first the local system (18). The contribution of ǫ to the
+                             X
+Gromov-Witten invariant Ng,γ   is the integral
+                                 Z
+                            X
+                         Ng,ǫ =              1
+                                      [M g (X,ǫ)]vir
+22                    D. MAULIK AND R. PANDHARIPANDE
+
+where M g (X, ǫ) ⊂ M g (X, γ) is the connected component8 of the moduli
+space of stable maps which represent curve classes in ǫ. Alternatively,
+                            Z
+                       X
+(19)                Ng,ǫ =              cg (E∗g ⊗ TC )
+                                  [M g (π,ǫ)]vir
+
+where M g (π, ǫ) ⊂ M g (π, γ) is a connected component of the relative
+moduli space of maps. By standard arguments [15], the difference in
+the absolute and relative obstruction theories is E∗g ⊗ TC and hence
+yields the Hodge integrand in (19).
+  The family π determines a canonical line bundle
+                                      K→C
+with fiber H 0 (Xξ , KXξ ) over ξ ∈ C. By the construction of the reduced
+class in Section 2.2,
+                    [M g (π, ǫ)]vir = c1 (K ∗ ) ∩ [M g (π, ǫ)]red
+where, on the right side, the reduced virtual class for the relative moduli
+space of maps appears. Expanding (19) yields
+                     Z
+            X
+          Ng,ǫ =                    cg (E∗g ⊗ TC ) · c1 (K ∗ )
+                       [M (π,ǫ)]red
+                     Z g                            Z
+                                              g
+                 =                       (−1) λg ·               c1 (K ∗ )
+                       [M g (K3,mα)] red              B∞ (m,h,γ)
+                                Z
+                 = Rg,m,h ·                  c1 (K ∗ ).
+                                  B∞ (m,h,γ)
+
+In the second equality, α is primitive and satisfies
+                              hmα, mαi = 2h − 2.
+  The contribution of the local system ǫ to the Noether-Lefschetz num-
+ber NLπm,h,γ is much easier to calculate. The local system represents
+an excess intersection contribution
+                          Z
+                                    c1 (Norm)
+                                B∞ (m,h,γ)
+
+where Norm is the line bundle with fiber
+                           Hom(H 0 (Xξ , KXξ ), C · β)
+
+     8By connected component, we mean both open and closed. Formally, the condi-
+tion is usually stated as a union of connected components.
+       GROMOV-WITTEN THEORY AND NOETHER-LEFSCHETZ THEORY                 23
+
+at β ∈ B∞ (m, h, γ) lying over ξ ∈ C. Over B∞ (m, h, γ), the fibra-
+tion C · β is a trivial line bundle. Hence, the excess contribution of
+B∞ (m, h, γ) to NLπm,h,γ is
+                            Z
+                                     c1 (K ∗ ).
+                             B∞ (m,h,γ)
+
+We conclude the contributions of B∞ (m, h, γ) to the left and right sides
+of equation (17) exactly match.
+   We consider now the contributions of the isolated classes Biso (m, h, γ)
+to the two sides of (17). Let
+                            β ∈ B iso (m, h, γ)
+be an isolated class lying over ξ ∈ C. We trivialize MV over a Euclidean
+open set U ⊂ C as in Section 1.5. The local intersection of the section
+σ with the divisor
+                            V
+                          Dβ ξ × U ⊂ M Vξ × U
+has an isolated point corresponding to (β, ξ). The local intersection
+multiplicity may not be 1. However, by deformation equivalence of
+the Gromov-Witten contributions on the left side of (17) and the in-
+tersection products on the right side of (17), we may assume the local
+intersection multiplicity is 1 after local holomorphic perturbation of
+the section σ. Then, the contribution of the isolated class β to NLπm,h,γ
+is certainly 1.
+   The final step is to show the contribution of the isolated class β
+                                       X
+with intersection multiplicity 1 to Ng,γ  is simply Rg,m,h . The result is
+obtained by a comparison of obstruction theories.
+   By the multiplicity 1 hypothesis, a connected component of the mod-
+uli space of stable maps to X coincides with the moduli stable of stable
+maps to fiber Xξ ,
+(20)                    M g (Xξ , β) ⊂ M g (X, γ).
+At the level of points, the assertion is obvious. The multiplicity 1
+conditions prohibits any infinitesimal deformations of maps away from
+the fiber Xξ and implies the scheme theoretic assertion.
+  From the fibration π, we obtain an exact sequence
+(21)                 0 → TXξ → TX |Xξ → TC,ξ → 0,
+and an induced map
+                        ι : R• ν∗ (f ∗ TXξ )∨ → TC,ξ
+                        e                        ∗
+24                  D. MAULIK AND R. PANDHARIPANDE
+
+where the second complex is a trivial bundle in degree −1. Following
+the notation of Section 2.2, we have a canonical map
+                    ι : H 0 (Xξ , KXξ ) → R• ν∗ (f ∗ TXξ )∨
+where the first complex is a trivial bundle with fiber H 0 (Xξ , KXξ ) in
+degree −1. By Lemma 1 below, the composition
+                              ι ◦ ι : H 0 (Xξ , KXξ ) → TC,ξ
+                              e                          ∗
+
+
+is an isomorphism. Hence, by sequence (21), the obstruction theories
+R• ν∗ (f ∗ TX )∨ and C(ι) differ by only by the Hodge bundle Eg ⊗ TC,ξ
+                                                                   ∗
+                                                                       .
+We conclude
+              [M g (Xξ , β)]virX = (−1)g λg ∩ [M g (Xξ , β)]red
+where the virtual class on the left is obtained from the obstruction
+theory of maps to X via (20). The contribution of the isolated class β
+     X
+to Ng,γ is thus Rg,h,m .
+  Since the contributions of Biso (m, h, γ) to the left and right sides of
+equation (17) also match, the proof of Theorem 1 is complete.           
+Lemma 1. The composition
+                              ι ◦ ι : H 0 (Xξ , KXξ ) → TC,ξ
+                              e                          ∗
+
+is an isomorphism.
+Proof. Consider the differential of the period map at ξ,
+             TC,ξ → H 1(TXξ ) → Hom(H 0 (KXξ ), H 1 (ΩXξ )).
+The multiplicity 1 condition implies that the image of this map is not
+contained in the tangent space to the hyperplane β ⊥ = 0. More ex-
+plicitly, if we apply the cup-product pairing of H 1 (ΩXξ ) with the class
+β ∈ H 2 (Xξ , Z), the composition
+                                                      β∪
+           TC,ξ → H 0 (KXξ )∗ ⊗ H 1 (ΩXξ ) −→ H 0 (KXξ )∗ ⊗ C
+is nonzero. This sequence can be included in the diagram
+                                                                       β∪
+TCξ         / H 1 (TX )                / H 0 (KX )∗ ⊗ H 1 (ΩX )             / H 0 (KX )∗
+                     ξ                            ξ            ξ                     ξ
+
+
+
+                                                  
+TCξ      / R• ν∗ (f ∗ TX )          / H 0 (KX )∗ ⊗ R• ν∗ (f ∗ ΩX )          / H 0 (KX )∗
+                          ξ                   ξ                    ξ                 ξ
+
+
+where the vertical maps are given by base-change morphisms and the
+                       ι ◦ ι)∗ . Standard comparison results imply that
+bottom row is the map (e
+this diagram commutes. Since the top row is nonvanishing, so is the
+bottom row.                                                          
+     GROMOV-WITTEN THEORY AND NOETHER-LEFSCHETZ THEORY               25
+
+3.3. Conjectures 1 and 2 revisited. The proof of Conjectures 1 and
+2 in the following case allows us to bound from below the h summation
+in Theorem 1.
+                R
+Lemma 2. If K3 β 2 < 0, then rg,β = 1 if
+                                     Z
+                        g = 0 and        β 2 = −2
+                                         K3
+and rg,β = 0 otherwise.
+Proof. Let S be a K3 surface, and let β ∈ Pic(S) be primitive with
+                            Z
+                               β 2 = −2.
+                                  S
+We may assume β is represented by an isolated −2 curve P ⊂ S. Let
+                                π : X → △0
+be a 1-parameter deformation of S over the disk △0 for which β fails
+(even infinitesimally) to remain algebraic. By the proof of Theorem 1,
+the reduced invariants rg,m,β are obtained9 from the contribution of P
+to the BPS state counts of X. Since P is a rigid (−1, −1) curve, P
+contributes a single BPS state [15]. We conclude
+                                  rg,m,β = 1
+if (g, m) = (0, 1) and rg,m,β = 0 otherwise.
+   If β ∈ Pic(S) is primitive with square 2h − 2 strictly less than −2,
+then all reduced invariants rg,m,β vanish. The proof is obtained by
+considering elliptically fibered K3 surfaces S → P1 . Let
+                              [s], [f ] ∈ Pic(S)
+be the classes of a section and a fiber respectively. Then,
+                     [s] + h[f ], −[s] − h[f ] ∈ Pic(S)
+are both primitive with square 2h − 2. Since the moduli spaces
+             M g (S, m([s] + h[f ])) , M g (S, m(−[s] − h[f ]))
+are easily seen to be empty, all reduced invariants rg,m,β vanish.   
+ By Lemma 2, the integrals rg,m,h<0 all vanish. Hence, Theorem 1
+may be written as
+                         XX ∞
+                   X
+                  ng,γ =       rg,m,h · NLπm,h,γ .
+                              h≥0 m=1
+
+  9The local NL intersection number here is 1.
+26                    D. MAULIK AND R. PANDHARIPANDE
+
+If Conjecture 1 and the vanishing rg,h for g > h of Conjecture 2 hold,
+then
+                             rg,h = rg,m,h
+and Theorem 1 implies the following result. by relation (9).
+Theorem 1∗ . For γ 6= 0,
+                                     X
+                            nX
+                             g,γ =          rg,h · NLπh,γ .
+                                      h≥g
+
+
+
+   The asterisk here indicates the dependence of Theorem 1∗ upon Con-
+jectures 1 and 2.
+3.4. Invertibility. Theorem 1∗ and Conjecture 2 imply the BPS states
+nX
+ g,γ of the total space contain exactly the same information as the
+Noether-Lefschetz numbers NLπh,γ .
+
+Proposition 4∗ . For γ ∈ H2 (X, Z)π of positive degree, the invariants
+{ng,γ (π)}g≥0 determine the Noether-Lefschetz numbers {NLh,γ (π)}h≥0
+in terms of the invariants {rg,h }g,h≥0.
+Proof. Fix γ ∈ H2 (X, Z)π . By Proposition 2, the numbers NLh,γ (π)
+vanish for h > htop . So we need only determine
+                              NL0,γ , . . . NLhtop ,γ .
+The equations
+                                      htop
+                                      X
+                         ng,γ (π) =          rg,h · NLh,γ (π)
+                                      h=g
+for g = 0, . . . , htop of Theorem 1∗ are triangular and invertible by Con-
+jecture 2.                                                               
+
+                             4. Modular forms
+4.1. Overview. We explain here Borcherds’ work [7] relating Noether-
+Lefschetz numbers to Fourier coefficients of modular forms.10 His re-
+sults apply in great generality to arithmetic quotients of symmetric
+spaces associated to the orthogonal group O(2, n) for any n. While we
+are mainly interested in the case of O(2, 19), we will first explain the
+statement in full generality. Other values of n play a role, for example,
+     10Borcherds’ original result is modular only up to a Gal(Q/Q)-action.The
+strengthening of [7] by the more recent rationality result of [41] removes the
+Gal(Q/Q) issue.
+     GROMOV-WITTEN THEORY AND NOETHER-LEFSCHETZ THEORY                       27
+
+in studying 1-parameter families of K3 surfaces with generic Picard
+rank at least 2.
+4.2. Vector-valued modular forms of half-integral weight. We
+first summarize standard facts and notation regarding modular forms
+of half-integral weight. In order to make sense of the modular transfor-
+mation law with half-integer exponents, a double cover of the standard
+modular group SL2 (Z) is required.
+   The metaplectic group Mp2 (R) is the unique connected double cover
+of SL2 (R). The elements of Mp2 (R) can be written in the form
+                                                 
+                         a b                √
+                                 , φ(τ ) = ± cτ + d
+                         c d
+               
+           a b
+where             ∈ SL2 (R) and φ(τ ) is a choice of square root of the
+           c d
+function cτ + d on the upper-half plane H. The group structure is
+defined by the product
+           (A1 , φ1 (τ )) · (A2 , φ2 (τ )) = (A1 A2 , φ1 (A2 τ )φ2 (τ )) .
+Here, we write Aτ for the usual action of SL2 (R) on τ ∈ H.
+   The group Mp2 (Z) is the preimage of SL2 (Z) under the projection
+map
+                        π : Mp2 (R) → SL2 (R).
+It is generated by the two elements
+                                                 
+                     1 1                   0 −1       √
+            T =              ,1 ,S =                 , τ ,
+                     0 1                   1 0
+        √
+where τ denotes the choice of square root with positive real part.
+   Suppose we are given a representation ρ of Mp2 (Z) on a finite-
+dimensional complex vector space V with the property that ρ factors
+through a finite quotient. Given k ∈ 21 Z, we define a modular form of
+weight k and type ρ to be a holomorphic function
+                                   f :H→V
+such that, for all g = (A, φ(τ )) ∈ Mp2 (Z), we have
+                        f (Aτ ) = φ(τ )2k · ρ(g)(f (τ )).
+For k ∈ Z and ρ trivial, this reduces to the usual transformation rule.
+   If we fix an eigenbasis {vγ } for V with respect to T , we can take the
+Fourier expansion of each component of f at the cusp at infinity. That
+is, we write                   XX
+                      f (τ ) =         ck,γ q k/R vγ ∈ V
+                                  γ   k∈Z
+28                D. MAULIK AND R. PANDHARIPANDE
+
+where
+                               q = e2πiτ
+and R is the smallest positive integer for which T R ∈ Ker(ρ). The
+function f is holomorphic at infinity if ck,r = 0 for k < 0. The space
+Mod(Mp2 (Z), k, ρ) of holomorphic modular forms of weight k and type
+ρ is finite-dimensional.
+   Given an integral lattice M with an even bilinear form h, i with
+signature (2, n), we associate to M the following unitary representation
+of Mp2 (Z). Let
+                              M∨ ⊂ M ⊗ Q
+denote the dual lattice and M ∨ /M the finite quotient. The pairing h, i
+extends linearly to a Q-valued pairing on M ∨ . The functions 12 hγ, γi
+and hγ, δi descend to Q/Z-valued functions on M ∨ /M.
+  We construct a representation ρM of Mp2 (Z) on the group algebra
+C[M ∨ /M]. It suffices to define ρM in terms of the action of the gener-
+ators T and S with respect to the standard basis vγ for γ ∈ M ∨ /M,
+
+                                hγ,γi
+                ρM (T )vγ = e2πi 2 vγ ,
+                               √ n−2
+                                 i      X
+                ρM (S)vγ = p              e−2πihγ,δi vδ .
+                                   ∨
+                               |M /M| δ
+   Let N denote the smallest positive integer for which Nhγ, γi/2 ∈ Z
+for all γ ∈ M ∨ . The representation factors through a double cover of
+SL2 (Z/NZ). We will be primarily interested in the dual representation
+ρ∗M of Mp2 (Z) on C[M ∨ /M]. We have given the action of ρM to match
+Borcherds’ notation.
+
+4.3. Heegner divisors. Given the lattice M of type (2, n) as before,
+consider the Hermitian symmetric domain
+            D = {ω ∈ P(M ⊗Z C) | hω, ωi = 0, hω, ω̄i > 0}
+naturally associated to M. We will study the quotient
+(22)                         XM = D/ΓM
+of D by the arithmetic subgroup of O(2, n)
+          ΓM = {g ∈ Aut(M) | g acts trivially on M ∨ /M} .
+The quotient (22) is a quasi-projective algebraic variety.
+  For every n ∈ Q<0 and γ ∈ M ∨ /M, we associate a divisor class
+yn,γ ∈ Pic(XM ) as follows. Given an element v ∈ M ∨ , there is an
+     GROMOV-WITTEN THEORY AND NOETHER-LEFSCHETZ THEORY                 29
+
+associated hyperplane
+                      v ⊥ = {ω ∈ D | hω, vi = 0} .
+Both hv, vi and the residue class v mod M are invariant under the
+action of ΓM . Therefore, if we fix n ∈ Q and γ ∈ M ∨ /M, the set of
+v ∈ M ∨ with
+                       1
+                         hv, vi = n, v ≡ γ mod M
+                       2
+is also ΓM -invariant. The union over the set of the associated hyper-
+planes                             X
+                                          v⊥
+                              1
+                              2
+                                hv, vi = n
+                           v ≡ γ mod M
+is ΓM -invariant and descends to an algebraic divisor
+                                              
+                                 X
+                  yn,γ =                  v ⊥  /ΓM .
+                            1
+                            2
+                              hv,vi=n, v≡γ mod M
+
+The yn,γ are the Heegner divisors of XM . Because of the symmetry
+v ⊥ = (−v)⊥ , there is a redundancy
+                                yn,γ = yn,−γ
+in our notation, and yn,γ is multiplicity 2 everywhere if 2γ ≡ 0 mod M.
+   In the degenerate case where n = 0, we have the following prescrip-
+tion. The line bundle O(−1) on D ⊂ P(M ⊗Z C) admits a natural ΓM
+action and therefore descends to a line bundle K on XM . If n = 0 and
+γ = 0, we set
+                                 y0,0 = K ∗ .
+If n = 0 and γ 6= 0, we set yn,γ = 0.
+   We place the Heegner divisors in a formal power series ΦM (q) with
+coefficients in Pic(XM ) ⊗ C[M ∨ /M]. More precisely, we consider the
+generating function
+             X X
+    Φ(q) =                y−n,γ q n vγ ∈ Pic(XM )[[q 1/N ]] ⊗Z C[M ∨ /M].
+           n∈Q≥0 γ∈M ∨ /M
+
+   The main result of [7] together with the refinement of [41] yield the
+following Theorem.
+Theorem ([7],[41]) Let M have signature (2, n). The generating func-
+tion Φ(q) is an element of
+                                             n
+                Pic(XM ) ⊗Z Mod(Mp2 (Z), 1 + , ρ∗M ).
+                                             2
+30                  D. MAULIK AND R. PANDHARIPANDE
+
+
+
+     As a consequence, given any linear functional
+                          λ : Pic(XM ) ⊗ C → C,
+the contraction λ(ΦM (q)) is the Fourier expansion of a vector-valued
+modular form of weight 1 + n2 and type ρ∗M .
+   Borcherds’ proof uses the singular theta lift of [6] to construct auto-
+morphic forms on XM starting from vector-valued meromorphic mod-
+ular forms on the upper half-plane. The zeroes and poles of these
+automorphic forms lie precisely along the Heegner divisors with mul-
+tiplicity determined by the singular part of the initial modular form.
+Each such lifting gives a relation in Pic(XM ). The total collection of
+relations arising in this way are encoded in the modularity statement.
+   In [6], Borcherds only shows that ΦM (q) lies in a certain Galois
+closure of the space of modular forms. For the representations ρ arising
+in [6], MacGraw proves in [41] that Mod(Mp2 (Z), k, ρ) admits a basis
+with rational coefficients. Therefore, the Galois closure does not enlarge
+the space.
+4.4. Application to K3 surfaces. Let V be the rank 22 lattice ob-
+tained from the second cohomology of a K3 surface with fixed polar-
+ization L of norm l. In order to apply Borcherds’ results to the moduli
+spaces Ml , we consider the lattice of signature (2, 19)
+                     M = L⊥ = {v ∈ V | hL, vi = 0} .
+A direct check yields
+                        M∼
+                         = Zw ⊕ U 2 ⊕ E8 (−1)2
+where hw, wi = −l. Therefore
+                             M ∨ /M = Z/lZ
+and is generated by 1l w. Here, we will write ρl for the representation
+ρM .
+   From the definitions, we find Aut(V, L) = ΓM , so we have the iden-
+tification
+                               Ml = XM .
+We claim the Heegner divisors correspond precisely to our Noether-
+Lefschetz divisors.
+Lemma 3. We have Dh,d = yn,γ , where
+                        ∆l (h, d)           1
+                 n=−              and γ ≡ d( w) mod M.
+                            2l              l
+     GROMOV-WITTEN THEORY AND NOETHER-LEFSCHETZ THEORY                 31
+
+Proof. The Noether-Lefschetz divisor Dh,d is the quotient by ΓM of the
+union of hyperplanes
+                               X
+                                        β ⊥.
+                        hβ, βi = 2h − 2
+                           hL, βi = d
+It therefore suffices to establish a bijection between the two sets of
+hyperplanes. Given an element β ∈ V satisfying
+                     hβ, βi = 2h − 2, hβ, Li = d,
+let v = β − dl L ∈ M ⊗Z Q be the projection of β to M = L⊥ . A direct
+calculation shows
+                 1                   d2    △l (h, d)
+                   hv, vi = h − 1 −     =−           ,
+                 2                   2l       2l
+                                 1
+                        v ≡ d · ( w) mod M .
+                                 l
+  Conversely, given v ∈ M ∨ satisfying the above conditions,
+                                      d
+                                  β=v+ L
+                                      l
+gives the inverse construction. Since β ⊥ = v ⊥ , we obtain the result. 
+  It is important for our applications that the constant term y0,0 of
+ΦM (q) matches with the line bundle K ∗ from our excess calculation in
+the proof of Theorem 1. This occurs because automorphic forms can
+be viewed as sections of powers of K ∗ on Ml .
+  Let π be a 1-parameter family of quasi-polarized K3 surfaces of
+degree l, and let ι be the associated morphism to moduli space:
+                                  π : X → C,
+
+                                  ι : C → Ml .
+We can apply Borcherds’ theorem to the functional on Pic(Ml ) given
+by
+                               Z
+                          D 7→    ι∗ D.
+                                         C
+
+Corollary 3. There is a vector-valued modular form of weight 21/2
+and type ρ∗l ,
+                         l−1
+                         X
+              Φπ (q) =         Φπr (q)vr ∈ C[[q 1/2l ]] ⊗ C[Z/lZ],
+                         r=0
+32                D. MAULIK AND R. PANDHARIPANDE
+
+with nonzero coefficients determined by the equality
+                                             
+                            π     π △l (h, d)
+                        NLh,d = Φr
+                                        2l
+where r ≡ d mod l.
+4.5. Quartic K3 surfaces. We now apply Borcherds’ modularity to
+the study of K3 surfaces of degree 4. If l = 4, the isomorphism class
+of a rank two lattice (L, v) with primitive polarization hv, vi = l is
+determined only by the discriminant △.
+  Given a 1-parameter family π : X → C of quasi-polarized K3 sur-
+faces of degree 4, we have the generating function
+           Φπ (q) = Φπ0 (q)v0 + Φπ1 (q)v1 + Φπ2 (q)v2 + Φπ3 (q)v3
+which is a modular form of weight 21/2 and type ρ∗4 by Corollary 3.
+  Consider the scalar-valued power series
+                               1                   1
+            φπ (q) = Φπ0 (q) + Φπ1 (q) + Φπ2 (q) + Φπ3 (q).
+                               2                   2
+                                 π
+By chasing definitions, we see φ (q) has the following property:
+                                              
+                           π       π △4 (h, d)
+(23)                   NLh,d = φ                 .
+                                         8
+The factor of 1/2 is included to correct for the redundancy
+                             Φπ1 (q) = Φπ3 (q).
+
+
+Proposition 5. The function φπ (q) is a homogeneous polynomial of
+degree 21 in
+                  X n2                X         n2
+              A=      q 8 and B =        (−1)n q 8 .
+                      n∈Z                   n∈Z
+
+Proof. While the vector Φπ (q) is modular with respect to the full
+metaplectic group, φπ (q) is a priori only modular with respect to the
+         e
+subgroup Γ(8)  = Ker(ρ∗4 ). However, we can write φπ (q) as a sum
+                               3        1
+                       φπ (q) = φ+ (q) + φ− (q)
+                               4        4
+where
+               φ+ (q) = Φπ0 (q) + Φπ1 (q) + Φπ2 (q) + Φπ3 (q),
+               φ− (q) = Φπ0 (q) − Φπ1 (q) + Φπ2 (q) − Φπ3 (q).
+           GROMOV-WITTEN THEORY AND NOETHER-LEFSCHETZ THEORY               33
+
+  Consider the congruence subgroup of SL2 (Z)
+                                                  
+            0          a b
+           Γ (8) =            ∈ SL2 (Z) | b ≡ 0 mod 8 .
+                       c d
+A direct calculation of the representation ρ∗4 shows that φ+ (q) and
+φ− (q) are modular forms of weight 21/2 with respect to
+                        
+               e 0 (8) = (A, φ) ∈ Mp2 (Z) | A ∈ Γ0 (8)
+               Γ
+and distinct characters
+                                         e0 (8) → C∗ .
+                               χ+ , χ− : Γ
+Moreover, A and B are modular forms of weight 1/2 with respect to
+e 0 (8) and the same characters χ+ and χ− respectively.
+Γ
+    We will not describe χ± explicitly. While they are distinct, their
+squares are equal and χ = χ2+ = χ2− descends to a character
+                                  χ : Γ0 (8) → C∗ .
+The character χ is specified completely by the following evaluations:
+                                                    
+          1                −1 0                   3 8
+       χ(Γ (8)) = 1, χ                = −1, χ            = −1
+                            0 −1                  1 3
+where
+                                                                  
+       1            a b
+  Γ (8) =                     ∈ SL2 (Z) | b ≡ 0 mod 8, a ≡ d ≡ 1 mod 8 .
+                    c d
+   Consider the space Mod(Γ0 (8), 11, χ) of holomorphic modular forms
+of weight 11 and type χ. The space Mod(Γ0 (8), 11, χ) is 12-dimensional
+space with basis
+                     A22 , A20 B 2 , · · · , A2 B 20 , B 22 .
+Both φ+ (q) · A and φ− (q) · B lie in Mod(Γ0 (8), 11, χ). Since A22 /B and
+B 22 /A are not holomorphic at the boundary, we conclude φ± (q) are
+each homogeneous polynomials of degree 21 in A and B and therefore
+so is φπ (q).                                                            
+
+                    5. Lefschetz pencil of quartics
+5.1. Quartics. A general Lefschetz pencil of quartics can be viewed
+as a hypersurface of type (4, 1),
+(24)                          π : X4,1 ⊂ P3 × P1 → P1
+where the last projection is onto the second factor. Unfortunately, π
+contains 108 nodal fibers, so the family (24) does not fit the specifica-
+tions of Section 1.2.
+34                 D. MAULIK AND R. PANDHARIPANDE
+
+   A family of quasi-polarized K3 surfaces of degree 4 can be obtained
+from the Lefschetz pencil π by the following construction. Let
+                                      2−1
+(25)                         ǫ : C53 −→ P1
+be the genus 53 hyperelliptic curve branched over the 108 points of P1
+corresponding to the nodal fibers of π. The family
+                             ǫ∗ (X4,1 ) → C53
+has 3-fold double point singularities over the 108 nodes of the fibers of
+the original family π. Let
+                             π
+                             e:X  e → C53
+be obtained from a small resolution
+                           Xe → ǫ∗ (X4,1 ).
+Then, π
+      e is easily seen to be a family of quasi-polarized K3 surfaces of
+degree 4. The quasi-polarization is the pull-back of OP3 (1).
+5.2. Invariants. The Noether-Lefschetz numbers are defined in Sec-
+tion 1 only for the family πe. However, for convenience, we define
+                                     1
+                            NLπg,d = NLπg,d
+                                          e
+                                              .
+                                     2
+Instead of a curve class γ, the degree d against the polarization is taken
+as the second subscript.
+   The family π
+              e may be viewed as twice the Lefschetz pencil of quartics.
+Let
+                       π4,2 : X4,2 ⊂ P3 × P1 → P1
+be the family obtained from a nonsingular Calabi-Yau hypersurface.
+The family π4,2 may also be viewed as twice the Lefschetz pencil.
+              e      X
+Lemma 4. nX        4,2
+          g,d = ng,d .
+
+Proof. It suffices to prove the analogous statement for Gromov-Witten
+invariants. Consider the degeneration of X4,2 to the union
+                              X4,1 ∪K3 X4,1
+of two (4, 1) hypersurfaces along a smooth K3 surface. The degenera-
+tion formula of [32, 33] implies
+                             X           X      /K3
+                           Ng,d4,2 = 2Ng,d4,1
+where the latter term denotes the Gromov-Witten theory of X4,1 rel-
+ative to the K3 fiber. Since the Gromov-Witten theory of K3 × P1
+vanishes, the trivial degeneration
+                          X4,1 ∪K3 (K3 × P1 )
+     GROMOV-WITTEN THEORY AND NOETHER-LEFSCHETZ THEORY                     35
+
+yields the equality of relative and absolute invariants
+                              X           X     /K3
+                            Ng,d4,1 = Ng,d4,1         .
+  To study the small resolution π
+                                e, consider the family of double covers
+                               ǫt : Ct 7→ P1
+ramified at 108 generic points which specializes to our particular double
+cover (25) as t → 0. The behavior of Gromov-Witten theory in the
+conifold transition from
+                             Xt = ǫ∗t (X4,1 )
+to X̃ has been calculated by Li and Ruan [32]:
+                                X e    Xt
+                               Ng,d = Ng,d .
+By degenerating the base Ct to two copies of P1 , we have a degeneration
+of Xt to two copies of X4,1 attached at 54 smooth K3 fibers. As before,
+we apply the degeneration formula and the identification of relative
+and absolute invariants to obtain the equality
+                      X e    Xt            X              X
+                     Ng,d = Ng,d = 2Ng,d4,1 = Ng,d4,2 .
+                                                                          
+                                                      e we may
+  Instead of studying the Gromov-Witten invariants of X,
+study the Gromov-Witten invariants of X4,2 .
+5.3. Mirror symmetry.
+5.3.1. Overview. The genus 0 invariants of X4,2 are determined from
+hypergeometric series by the mirror transformation. The mirror formu-
+las of Candelas, de la Ossa, Green, and Parkes [11] have been proven
+mathematically in many settings [17, 18, 35]. In particular, the case of
+X4,2 is understood rigorously. We follow the notation of [43].
+5.3.2. Potential. Let the variables T1 , T2 correspond to the hyperplane
+classes
+                           H 1 ⊂ P3 , H 2 ⊂ P1
+respectively. The genus 0 potential of X4,2 for classes restricted from
+P3 × P1 is
+                 1                       X           X4,2
+   F (T1 , T2 ) = T13 + 2T12 T2 +                  N0,(d1 ,d2 )
+                                                                ed1 T1 ed2 T2
+                 3
+                                  d1 ,d2 ≥0, (d1 ,d2 )6=(0,0)
+
+where we follow the Gromov-Witten notation of Section 2. The curve
+class (d1 , d2 ) is not a fiber class for π 4.2 if d2 > 0.
+36                          D. MAULIK AND R. PANDHARIPANDE
+
+5.3.3. Hypergeometric series. Let t1 , t2 be new variables. Define the
+hypergeometric series Ii,j (t1 , t2 ) by
+     3 X
+     X 1
+               Ii,j (t1 , t2 )H1i H2j =
+     i=0 j=0
+                       X                                        Π4d 1 +2d2
+                                                                           (4H1 + 2H2 + r)
+                                                                  r=0
+                                  e(H1 +d1 )t1 e(H2 +d2 )t2                                  .
+                      d1 ,d2 ≥0
+                                                              Πr=1 (H1 + r)4 Πdr=1
+                                                               d1                2
+                                                                                   (H2 + r)2
+The right side, taken mod H14 and H22 , is valued in H ∗ (P3 × P1 , Q).
+Formally,
+                      Ii,j (t1 , t2 ) ∈ Q[[t1 , et1 , t2 , et2 ]].
+The functions Ii,j (t) form a solution of the Picard-Fuchs differential
+equation associated to the mirror geometry.
+5.3.4. Mirror transformation. The mirror transformation is defined us-
+ing two auxiliary functions. Let
+                           X∞ X  ∞
+                  t1 t2                            (4d1 + 2d2 )!
+              F (e , e ) =           ed1 t1 ed2 t2        4       2
+                                                                    ,
+                           d =0 d =0
+                                                   (d 1 !) (d2 !)
+                                            1       2
+
+and let
+                                                                   (4d1 + 2d2 )!  X
+                                     ∞ X
+                                     X ∞                                           ad1 +bd2 
+                                                                                           1
+          Ga,b (et1 , et2 ) =                      ed1 t1 ed2 t2
+                                     d1 =0 d2 =0
+                                                                   (d1 !)4 (d2 !)2   r=1
+                                                                                           r
+for a, b ≥ 0.
+   The mirror transformation relating the variables Ti and ti is deter-
+mined by the following equations:
+                                        4(G4,2 (et1 , et2 ) − G1,0 (et1 , et2 ))
+                       T1 = t1 +                                                 ,
+                                                     F (et1 , et2 )
+                                        2(G4,2 (et1 , et2 ) − G0,1 (et1 , et2 ))
+                       T2 = t2 +                                                 .
+                                                     F (et1 , et2 )
+Exponentiation yields
+                                                                                      
+                 T1         t1              4(G4,2 (et1 , et2 ) − G1,0 (et1 , et2 ))
+                e     = e · exp                                                            ,
+                                                         F (et1 , et2 )
+                                                                       
+                 T2         t2 2(G4,2 (et1 , et2 ) − G0,1 (et1 , et2 ))
+           e = e · exp                                                    .
+                                            F (et1 , et2 )
+Together, the above four equations define a change of variables from
+formal series in T1 , eT1 , T2 , eT2 to formal series in t1 , et1 , t2 , et2 . The
+mirror transformation is easily seen to be invertible.
+       GROMOV-WITTEN THEORY AND NOETHER-LEFSCHETZ THEORY                           37
+
+5.3.5. Genus 0 invariants. The genus 0 potential F is determined by
+mirror symmetry,
+
+  F (T1 (t1 , t2 ), T2 (t1 , t2 )) =
+                                                                    
+                       2I1,1 − I2,0     I3,0        I2,0    I2,1        I3,1
+                                               +2                  −2          .
+                             I1,0       I1,0        I1,0    I1,0        I1,0
+The arguments of the functions on the right side are understood to be
+                                    X
+t1 and t2 . The genus 0 BPS states n0,d4,2 are determined by F .
+
+5.4. Proof of Theorem 2. Consider twice the Lefschetz pencil of
+quartics
+                       π
+                       e:Xe → C53 .
+Corollary 1 in genus 0 is
+                                    ∞
+                                    X
+                             e
+(26)                       nX
+                            0,d =         r0,h · NLπh,d
+                                                    e
+                                                        .
+                                    h=0
+
+  We now solve for the Noether-Lefschetz numbers of π̃. By (23),
+                                           
+                         π
+                         e      e △4 (h, d)
+                                π
+                      NLh,d = φ
+                                      8
+where φπe (q) is a homogeneous polynomial of degree 21 in A and B. We
+need only 22 equations to determine φπe (q). Using the mirror symmetry
+                   e
+calculation of nX 0,d , equation (26) provides infinitely many relations. In
+particular, φπe (q) is easily determined by linear algebra.
+   The precise formula for φπe is 2Θ where Θ is given in Section 0.6 since
+π
+e is twice the Lefschetz pencil of quartics. The modular form Θ was
+first computed in [26].
+
+5.5. Modular identity. Equation (26) may be viewed as a rather in-
+tricate relation between hypergeometric functions (after mirror trans-
+formation) on the left and modular forms on the right. Let
+                            2         X X d2
+                    G(q) = − + 168 +      n0,d4,2 q 8
+                            q         d≥1
+
+be the generating function determined by the property
+      X ∞ X ∞                                          
+                X4,2 1 dkT1                 1 3     2
+               n0,d 3 e     = F (T1 , T2 ) − T1 − 2T1 T2 |eT2 =0
+       d=1 k=1
+                    k                       3
+where F is determined as above.
+38                D. MAULIK AND R. PANDHARIPANDE
+
+Corollary 4. We have the equality
+                                         Θ(q)
+                            G(q) = 2          ,
+                                         ∆(q)
+where Θ(q) is given in Section 0.6 and
+                                   ∞
+                                   Y
+                        ∆(q) = q       (1 − q n )24 .
+                                   n=1
+
+   Such relations are produced by Theorem 1 for many classical exam-
+ples. For any 1-parameter family of K3 surfaces obtained via a toric
+complete intersection, there is an associated identity of special func-
+tions. The relation obtained from the STU model studied in [27] is the
+Harvey-Moore identity. In fact, the Harvey-Moore identity is the only
+one for which a direct proof (avoiding Theorem 1) is known. The proof
+is due to Zagier and can be found in [27].
+
+5.6. Proof of Corollary 2. Let π be the Lefschetz pencil of quartic
+K3 surfaces. The difference between NLπh,d and the degree of
+                         D h,d ⊂ P(Sym4 (V ∗ ))
+is simply the contribution of the nodal quartics. The nodal quartics
+contribute to NLπh,d but not the hypersurface Dh,d .
+   Using the relation NLπh,d = 12 NLπh,d
+                                     e
+                                         , we can study instead the dou-
+bled family. The Picard lattice of each of the 108 fibers of π  e corre-
+sponding to the original nodal fibers of π is
+                                         
+                                 4 0
+(27)                                        .
+                                 0 −2
+We use here the genericity of the Lefschetz pencil π.
+   The equation hβ, Li = d is solvable in the lattice (27) if and only if
+d is divisible by 4. Then, hβ, βi = 2h − 2 is solvable if and only if
+                           d
+                         4( )2 − 2n2 = 2h − 2
+                           4
+in which case there are two solutions. In the solvable cases,
+                            △4 (h, d) = 8n2 .
+Hence, the contribution of the nodal fiber to the Noether-Lefschetz
+numbers of π
+           e is                       X 2
+                       Ψ(q) = 108 · 2    qn .
+                                           n>0
+The Corollary follows by halving.                                      
+     GROMOV-WITTEN THEORY AND NOETHER-LEFSCHETZ THEORY                   39
+
+          6. Direct Noether-Lefschetz calculations
+6.1. Overview. We apply Corollary 3 to directly study K3 surfaces of
+low degree via a more sophisticated approach to modular forms. The
+key idea is to construct a basis of the space of vector-valued modular
+forms of Corollary 3 instead of working with the much larger space of
+scalar-valued modular forms as in Section 4.5. For many classical fam-
+ilies, the dimensions of the associated spaces of vector-valued modular
+forms are very small. The Noether-Lefschetz numbers can often be
+specified by a few classical calculations. In particular, we see another
+derivation of Theorem 2.
+6.2. Rankin-Cohen brackets. Since each component of a vector-
+valued modular form is a half-weight modular form of level 2l, we can
+use a basis of the latter to construct all vector-valued modular forms.
+In practice, however, the method is tedius since the dimensions of the
+spaces of scalar-valued modular forms are much larger. We will instead
+apply the following shortcut for low degree K3 surfaces.
+   Let f (q) and g(q) be scalar-valued level N modular forms on the
+upper-half plane H of weights k1 and k2 respectively. For each integer
+n ≥ 0, the n-th Rankin-Cohen bracket is a bilinear differential operator
+defined by the expression
+                  Xn                              
+                           r n + k1 − 1   n + k2 − 1 (r)
+ [f (q), g(q)]n =     (−1)                             f (q) · g (n−r) (q),
+                  r=0
+                               n−r             r
+
+where f (r) denote r applications of the differential operator
+                                d       d
+                                  =q      .
+                               dτ      dq
+For n = 0, the 0-th bracket is just multiplication.
+   The key feature of Rankin-Cohen brackets is the preservation of mod-
+ularity. Suppose we are given a representation ρ of Mp2 (Z) on V , a
+modular form f ∈ Mod(Mp2 (Z), k1 , ρ) of weight k1 and type ρ, and
+a scalar-valued modular form g ∈ Mod(SL2 (Z), k2 ) of weight k2 and
+level 1. Let                     X
+                        f (q) =     fγ (q)vγ ∈ V
+                                  γ
+denote the decomposition of f into components with respect to some
+basis of V . For each integer n ≥ 0, the Rankin-Cohen bracket is a
+holomorphic function on H with values in V defined by
+                                 X
+                   [f, g]n (q) =   [fγ (q), g(q)]nvγ .
+                                   γ
+40                     D. MAULIK AND R. PANDHARIPANDE
+
+We then have the following result.
+Lemma 5. [f, g]n (q) ∈ Mod(Mp2 (Z), k1 + k2 + 2n, ρ).
+Proof. For scalar-valued modular forms, a proof is given in [53]. Since
+g is scalar-valued and level 1, the same argument translates to the
+vector-valued context without change.                                
+
+6.3. Bases of modular forms. Following the notation of Corollary
+3, we now look for modular forms of weight 21/2 and type ρ∗l for even
+                                          l = 2, 4, 6, 8 .
+From the dimension formula given in Section 7 below,
+                    dim(Mod(Mp2 (Z), 21/2, ρ∗l )) = 2, 3, 4, 5
+for l = 2, 4, 6, 8 respectively. We are only interested11 in the subspace
+                              Mod0 (Mp2 (Z), 21/2, ρ∗l )
+          P
+of forms    fi (q)vi where fr (q) is a cusp form for r 6= 0. In the l = 8
+case, we have a 4-dimensional subspace.
+   We can use Rankin-Cohen brackets to construct explicit bases. In-
+deed, for each l, there is a canonical weight 1/2 modular form given by
+the Siegel theta function (see [6], Section 4),
+                           l−1 X
+                           X             (ls+i)2
+              θ(l) (q) =             q      2l     vi ∈ Mod(Mp2 (Z), 1/2, ρ∗l ).
+                           i=0 s∈Z
+
+Therefore, for n = 0, 1, 2, 3, Lemma 5 gives us a modular form,
+           Fnl (q) = [θ(l) (q), E10−2n (q)]n ∈ Mod(Mp2 (Z), 21/2, ρ∗l ),
+of weight 21/2 where E2k (q) denotes Eisenstein series of weight 2k.
+   Using the explicit formula for Rankin-Cohen brackets and the di-
+mension formula, the following Lemma is obtained by calculating the
+initial Taylor coefficients.
+Lemma 6. For l = 2, 4, 6, the modular forms
+                  Fnl (q) = [θ(l) (q), E10−2n (q)]n , n = 0, . . . , l/2
+form a basis of Mod(Mp2 (Z), 21/2, ρ∗l ). For l = 8, the modular forms
+for n = 0, . . . , 3 form a basis of the subspace Mod0 (Mp2 (Z), 21/2, ρ∗l ).
+
+     11The cusp condition is obtained from Borcherds’ results and was omitted in the
+statement of Corollary 3 for simplicity.
+     GROMOV-WITTEN THEORY AND NOETHER-LEFSCHETZ THEORY                     41
+
+6.4. Classical families of K3 surfaces. A general K3 surface of
+degree l = 2, 4, 6, 8 is either a branched cover of P2 (for l = 2) or
+a complete intersection in projective space. We obtain 1-parameter
+families of quasi-polarized K3 surfaces of degree l by taking a generic
+Lefschetz pencil of these constructions (and resolving singularities as
+discussed in Section 5.1). Because the space of vector-valued forms is
+of low dimension, we only need a few classical constraints to completely
+determine the associated modular form. In fact, we will use only the
+following constraints:
+     (i) the degree of the Hodge bundle R2 π∗ O (the coefficient of q 0 v0 ),
+    (ii) the number of nodal fibers (the coefficient of q 1 v0 ),
+   (iii) vanishing obtained from Castelnuovo’s bound in Lemma 7 be-
+         low.
+   The following result is a special case of Castelnuovo’s bound for
+projective curves [1].
+Lemma 7. Given a K3 surface with very ample bundle L and an
+primitive curve class β, we have the inequality
+                                         
+                                  L·β −1
+                      hβ, βi ≤ 2            −2 .
+                                     2
+  We now apply these constraints for 1-parameter families of K3 given
+by Lefschetz pencils for l = 2, 4, 6, 8.
+
+• Degree 2 K3 surfaces
+
+  A generic K3 surface of degree 2 is a double cover of P2 branched
+along a nonsingular sextic plane curve. Consider a family
+                               R ⊂ P1 × P2
+of sextics defined by a generic hypersurface of type (2, 6). Let X be the
+double cover of P1 × P2 ramified over R. Since all the singular fibers of
+                                  R → P1
+are irreducible and nodal, the associated family
+                                π : X → P1
+of K3 surfaces is smooth except for finitely many fibers with nodal
+singularities.
+   The degree of the Hodge bundle is −1 by a Riemann-Roch calcu-
+lation. The number of nodal fibers of π is 150, twice the degree of
+the discriminant locus of sextics. Since we have a 2-dimensional space
+42                D. MAULIK AND R. PANDHARIPANDE
+
+of forms, the generating series of Noether-Lefschetz numbers is the
+vector-valued modular form
+                      →
+                      −              (2)   1 (2)
+                       Θ (q) = −F0 (q) − F1 (q).
+                                           2
+  In the case of l = 2, the discriminant ∆ of a rank 2 lattice with
+degree 2 polarization determines the coset class δ by δ = ∆ mod 2.
+                                                 →
+                                                 −
+So there is no loss of information if we replace Θ (q) by the sum of the
+                      →
+                      −      →
+                             −
+components Θ(q) = Θ 0 + Θ 1 .
+  If we consider the theta functions
+                        X 2              X            2
+                  U=        q n /4 , V =     (−1)n q n /4 ,
+                       n∈Z              n∈Z
+
+we can express Θ as a polynomial function of U and V :
+         1
+Θ(q) =      (U 21 − 12U 17 V 4 − 402U 13 V 8 − 572U 9 V 12 − 39U 5 V 16 )
+       1024
+     = −1 + 150q + 1248q 5/4 + 108600q 2 + 332800q 9/4 + 5113200q 3 · · · .
+To see equivalence of the two expressions, we observe both are modular
+forms of weight 21/2 with respect to Γ(4) and check the agreement of
+sufficiently many coefficients.
+
+• Degree 4 K3 surfaces
+
+  A generic K3 surface of degree 4 is a quartic hypersurface in P3 . If
+we take a generic Lefschetz pencil of such quartics, the degree of the
+Hodge bundle is −1. Using Lemma 7, the Noether-Lefschetz degrees
+associated to the lattices
+                                         
+                           4 1         4 2
+                                 ,
+                           1 0         2 0
+both vanish. Indeed, by choosing a generic pencil, we can assume all
+fibers containing these Picard lattices have very ample quasi-polarization.
+The coefficients of q 0 v0 , q 1/8 v1 , and q 1/2 v2 determine
+               →
+               −                 (4)       5 (4)         16 (4)
+                Θ (q) = −F0 (q) − F1 (q) − F2 (q).
+                                           4             21
+   Again, as in the degree 2 case, we can recover all Noether-Lefschetz
+degrees from
+                                  →
+                                  −         →
+                                            −          →
+                                                       −
+                    Θ(q) = Θ 0 (q) + Θ 1 (q) + Θ 2 (q).
+In terms of              X 2                    X             2
+                  A=            q n /8 , B =         (−1)n q n /8 ,
+                       n∈Z              n∈Z
+     GROMOV-WITTEN THEORY AND NOETHER-LEFSCHETZ THEORY                  43
+
+we recover the expression for Θ(q) given in Section 0.6 since both are
+modular forms of weight 21/2 and level 8 which agree on initial terms.
+
+
+• Degree 6 K3 surfaces
+
+  A generic K3 surface of degree 6 is the intersection of a quadric and
+cubic hypersurface in P4 . We have two basic families. We can fix a
+quadric and take a Lefschetz pencil of cubics or vice versa. In each
+case, we have vanishings associated to the lattices
+                                          
+                           6 1         6 2
+                                  ,
+                           1 0         2 0
+from the Castelnuovo bound. Along with the Hodge bundle degree
+and the number of nodal fibers, we completely determine the Noether-
+Lefschetz series.
+   For the first family, the Hodge and nodal degrees are −1 and 98
+respectively. We obtain the series
+         →
+         −          (6)      49 (6)      8 (6)       12 (6)
+         Θ (q) = −F0 (q) − F1 (q) − F2 (q) − F3 (q).
+                             24          3           5
+For the second family, the Hodge and nodal degrees are −1 and 7. We
+obtain the series
+         →
+         −         (6)      17 (6)       22 (6)      18 (6)
+         Θ (q) = −F0 (q) − F1 (q) − F2 (q) − F3 (q).
+                             8           7            5
+   One can read off other classical calculations from our results. For
+example, the number of surfaces containing elliptic plane curves or
+containing lines are the Noether-Lefschetz degrees associated to the
+lattices                                   
+                          6 3          6 1
+                                 ,
+                          3 0          1 −2
+respectively. In the first family, the degrees are 0 and 168 respectively.
+In the second family, the degrees are 10 and 198. In both cases, the
+numbers agree with earlier enumerative calculations.
+
+• Degree 8 K3 surfaces
+
+  A generic K3 surface of degree 8 is the intersection of three quadric
+hypersurfaces in P5 . The basic family comes from fixing two quadrics
+and allowing the third to vary in a Lefschetz pencil. Again, the series
+44                D. MAULIK AND R. PANDHARIPANDE
+
+is determined by the Hodge term, the nodal term, and the two Castel-
+nuovo vanishings from Lemma 7. The Hodge term is given by −1, and
+the number of nodal fibers is 80. We find
+       →
+       −          (8)      49 (8)       128 (8)      256 (8)
+       Θ (q) = −F0 (q) − F1 (q) −           F2 (q) −    F (q).
+                           18            27          45 3
+Again, we can read off that the number of fibers containing a line is
+128, agreeing with the classical calculation.
+
+   For all the classical examples discussed above, the mirror symme-
+try calculation of the genus 0 Gromov-Witten invariants is solvable in
+terms of hypergeometric functions. In each case, Theorem 1 yields a
+remarkable identity with hypergeometric functions (after mirror trans-
+formation) on the left and modular forms on the right, as in Section
+5.5.
+   The lower Noether-Lefschetz degrees in the above classical examples
+can often be pursued by alternative methods. In particular, matches
+with our modular form calculations have been found in [5, 13].
+
+                       7. Picard rank of Ml
+  The Picard ranks of the moduli spaces of quasi-polarized K3 surfaces
+Ml are unknown. By an argument of O’Grady, the ranks can grow
+arbitrarily large [42]. Let
+(28)               Pic(Ml )N L ⊗ Q ⊂ Pic(Ml ) ⊗ Q
+denote the span of the Noether-Lefschetz divisors Dh,d. We make the
+following conjecture.
+Conjecture 3. The inclusion is an isomorphism,
+                Pic(Ml )N L ⊗ Q ∼
+                                = Pic(Ml ) ⊗ Q.
+   Bruinier has calculated the dimension of the space Pic(Ml )N L ⊗ Q
+in equations (6-7) of [8]. If Conjecture 3 holds, we obtain a formula for
+the Picard rank of Ml .
+   We now recount Bruinier’s formula for the span of the Noether-
+Lefschetz divisors. By Borcherds’ work, we have a map
+(29)           Mod(Mp2 (Z), 21/2, ρ∗l )∗ → Pic(Ml ) ⊗ C.
+Let Cusp(Mp2 (Z), 21/2, ρ∗l ) denote the subspace of cusp forms — mod-
+ular forms for which the Fourier coefficients c0,γ vanish for all γ. The
+map (29) induces a map
+(30)       Cusp(Mp2 (Z), 21/2, ρ∗l )∗ → (Pic(Ml ) ⊗ C)/CK,
+     GROMOV-WITTEN THEORY AND NOETHER-LEFSCHETZ THEORY                         45
+
+where K is the Hodge bundle on Ml . Bruinier shows the map (30) is
+injective [8]. Specifically, if L is a (2, n) lattice containing two copies
+of U as direct summands, Bruinier shows that every relation among
+Heegner divisors is obtained from Borcherds’ theta lifting. Therefore,
+        dim Pic(Ml )N L ⊗ Q = 1 + dim Cusp(Mp2 (Z), ρ∗l , 21/2).
+  A direct calculation of the dimension of the space of cusp forms via
+Riemann-Roch yields the following evaluation [8]:
+                                        31 31   1
+  dim Pic(Ml )N L ⊗ Q =           1+      + l − √ Re(G(2, 2l))
+                                        24 48  8 l
+                                     1         19
+                                − √ Re(e−2πi 24 (G(1, 2l) + G(−3, 2l)))
+                                  6 3l
+                                   l/2  2 
+                                  X     k
+                                −            − C,
+                                  k=0
+                                        2l
+where G(a, b) denotes the quadratic Gauss sum
+                                        b−1
+                                        X          ak2
+                            G(a, b) =         e−2πi b ,
+                                        k=0
+
+the braces {, } denote fractional part, and C is the cardinality of the
+set                                          
+                                     l k2
+                          k | 0≤k≤ ,       ∈Z .
+                                     2 2l
+For l = 2, 4, 6, the formula yields
+                       dim Pic(Ml )N L ⊗ Q = 2, 3, 4
+respectively. For l = 2 and 4, we have agreement with the Picard
+ranks of Ml calculated in [25, 49, 50]. Hence, the inclusion (28) is an
+isomorphism in at least the first two cases.
+
+                                References
+ [1] E. Arbarello, M. Cornalba, P. Griffiths, and J. Harris, Geometry of algebraic
+     curves, Springer-Verlag: New York, 1985.
+ [2] K. Behrend, Gromov-Witten invariants in algebraic geometry, Invent. Math.
+     127 (1997), 601–617.
+ [3] K. Behrend and B. Fantechi, The intrinsic normal cone, Invent. Math. 128
+     (1997), 45–88.
+ [4] A. Beauville, Counting rational curves on K3 surfaces, Duke Math. J. 97
+     (1999), 99–108.
+ [5] G. Blekherman, J. Hauenstein, J.C. Ottem, K. Ranestad, and B. Sturmfels,
+     Algebraic boundaries of Hilbert’s SOS cones, arXiv:1107.1846.
+46                   D. MAULIK AND R. PANDHARIPANDE
+
+ [6] R. Borcherds, Automorphic forms with singularities on Grassmannians, Invent.
+     Math. 132 (1998), 491–562.
+ [7] R. Borcherds, The Gross-Kohnen-Zagier theorem in higher dimensions, Duke
+     J. Math. 97 (1999), 219–233.
+ [8] J. Bruinier, On the rank of Picard groups of modular varieties attached to
+     orthogonal groups, Compositio Math. 133, (2002), 49–63.
+ [9] J. Bryan, S. Katz, and C. Leung, Multiple covers and the integrality conjecture
+     for rational curves in Calabi-Yau threefolds, J. Alg. Geom. 10 (2001), 549–568.
+[10] J. Bryan and C. Leung, The enumerative geometry of K3 surfaces and modular
+     forms, J. AMS 13 (2000), 371–410.
+[11] P. Candelas, X. de la Ossa, P. Green, and L. Parkes, A pair of Calabi-Yau
+     manifolds as an exactly soluble superconformal field theory, Nuclear Physics
+     B359 (1991), 21–74.
+[12] X. Chen, Rational curves on K3 surfaces, J. Alg. Geom. 8 (1999), 245–278.
+[13] F. Cukierman, A. Lopez, and I. Vainsencher, Enumeration of surfaces contain-
+     ing an elliptic quartic curve, arXiv:1209.3335.
+[14] I. Dolgachev and S. Kondo, Moduli of K3 surfaces and complex ball quotients,
+     Lectures in Istambul, math.AG/0511051.
+[15] C. Faber and R. Pandharipande, Hodge integrals and Gromov-Witten theory,
+     Invent. Math. 139 (2000), 173–199.
+[16] B. Fantechi, L. Göttsche, and Duco van Straten, Euler number of the com-
+     pactified Jacobian and multiplicity of rational curves, J. Alg. Geom. 8 (1999),
+     115–133.
+[17] A. Givental, Equivariant Gromov-Witten invariants, Int. Math. Res. Notices
+     13 (1996), 613–663.
+[18] A. Givental, A mirror theorem for toric complete intersections,
+     math.AG/9807070.
+[19] R. Gopakumar and C. Vafa, M-theory and topological strings I,
+     hep-th/9809187.
+[20] R. Gopakumar and C. Vafa, M-theory and topological strings II,
+     hep-th/9812127.
+[21] T. Graber and R. Pandharipande, Localization of virtual classes, Invent. Math.
+     135 (1999), 487–518.
+[22] J. Harvey and G. Moore, Algebras, BPS states, and strings, Nucl. Phys. B463
+     (1996), 315–368.
+[23] J. Harvey and G. Moore, Exact gravitational threshold correction in the FHSV
+     model, Phys. Rev. D57 (1998), 2329–2336.
+[24] S. Katz, A. Klemm, C Vafa, M-theory, topological strings, and spinning black
+     holes, Adv. Theor. Math. Phys. 3 (1999), 1445–1537.
+[25] F. Kirwan and R. Lee, The cohomology of moduli spaces of K3 surfaces of
+     degree 2, Topology 28 (1989), 495–516.
+[26] A. Klemm, M. Kreuzer, E. Riegler, and E. Scheidegger, Topological string am-
+     plitudes, complete intersections Calabi-Yau spaces, and threshold corrections,
+     hep-th/0410018.
+[27] A. Klemm, D. Maulik, R. Pandharipande, and E. Scheidegger, Noether-
+     Lefschetz theory and the Yau-Zaslow conjecture, arXiv:0807.2477.
+[28] A. Klemm and M. Mariño, Counting BPS states on the Enriques Calabi-Yau,
+     hep-th/0512227.
+     GROMOV-WITTEN THEORY AND NOETHER-LEFSCHETZ THEORY                          47
+
+[29] S. Kudla and J. Millson, Intersection numbers of cycles on locally symmet-
+     ric spaces and Fourier coefficients of holomorphic modular forms in several
+     complex variables, Pub. IHES 71 (1990), 121 –172.
+[30] J. Lee Family Gromov-Witten invariants for Kähler surfaces, Duke Math. J.
+     123 (2004), 209 –233.
+[31] J. Lee and C. Leung, Yau-Zaslow formula for non-primitive classes in K3
+     surfaces, Geom. Topol. 9 (2005), 1977-2012.
+[32] A. Li and Y. Ruan Symplectic surgery and Gromov-Witten invariants of
+     Calabi-Yau 3-folds I, Invent. Math. 145 (2001), 151–218.
+[33] J. Li, A degeneration formula for Gromov-Witten invariants, J. Diff. Geom.
+     60 (2002), 199–293.
+[34] J. Li and G. Tian, Virtual moduli cycles and Gromov-Witten invariants of
+     algebraic varieties, J. AMS 11 (1998), 119–174.
+[35] B. Lian, K. Liu, and S.-T. Yau, Mirror principle I, Asian J. Math. 4 (1997),
+     729–763.
+[36] P. Lu, A rigorous definition of fiberwise quantum cohomology and equivariant
+     quantum cohomology, Comm. Anal. Geom. 6 (1998), 511–588.
+[37] M. Manetti, Lie cylinders and higher obstructions to deforming submanifolds,
+     math.AG/0507278.
+[38] M. Mariño and G. Moore, Counting higher genus curves in a Calabi-Yau man-
+     ifold, Nucl. Phys. B453 (1999), 592–614.
+[39] D. Maulik and R. Pandharipande, New calculations in Gromov-Witten theory,
+     PAMQ 4 (2008), 469–500.
+[40] D. Maulik, R. Pandharipande, and R. Thomas, Curves on K3 surfaces and
+     modular forms, arXiv:1001.2719.
+[41] W. McGraw, The rationality of vector valued modular forms associated with
+     the Weil representation, Math. Ann. 326 (2003), 105–122.
+[42] K. O’Grady, On the Picard group of the moduli space for K3 surfaces, Duke
+     Math. J. 53 (1986), 117–124.
+[43] R. Pandharipande, Rational curves on hypersurfaces [after A. Givental],
+     Séminaire Bourbaki, 50ème année, 1997-1998, no. 848.
+[44] R. Pandharipande and R. P. Thomas, Curve counting via stable pairs in the
+     derived category, Invent. Math. 178 (2009), 407–447.
+[45] R. Pandharipande and R. P. Thomas, Stable pairs and BPS invariants, J. AMS
+     23 (2010), 267–297.
+[46] Z. Ran, Semiregularity, obstructions and deformations of Hodge classes, Ann.
+     Scuola Norm. Sup. Pisa Cl. Sci. 4 28 (1999), 809–820.
+[47] B. Saint-Donat, Projective models of K3 surfaces, Amer. J. Math. 96 (1974),
+     602–639.
+[48] T. Schürg, B. Toën, and G. Vezzosi, Derived algebraic geometry, determinants
+     of perfect complexes, and applications to obstruction theories for maps and
+     complexes, arXiv:1102.1150.
+[49] J. Shah, A complete moduli space for K3 surfaces of degree 2, Ann. of Math.
+     112 (1980), 485–510.
+[50] J. Shah, Degenerations of K3 surfaces of degree 4, Trans. Amer. Math. Soc.
+     263 (1981), 271–308.
+[51] C. T. C. Wall, On the orthogonal groups of unimodular quadratic forms, Math.
+     Ann. 147 (1962), 328–338.
+48                  D. MAULIK AND R. PANDHARIPANDE
+
+[52] S.-T. Yau and E. Zaslow, BPS states, string duality, and nodal curves on K3,
+     Nucl. Phys. B457 (1995), 484–512.
+[53] D. Zagier, Modular forms and differential operators, Proc. Indian Acad. Sci.
+     Math. Sci. (K. G. Ramanathan memorial issue), 104 (1994), no. 1, 57-75.
+[54] A. Zinger, The reduced genus 1 Gromov-Witten invariants of Calabi-Yau hy-
+     persurfaces, JAMS 22 (2009), 691–737.
+
+
+Department of Mathematics
+Princeton University
+
+
+Current addresses:
+Department of Mathematics
+Columbia University
+dmaulik@math.columbia.edu
+
+Departement Mathematik
+ETH Zürich
+rahul@math.ethz.ch
+

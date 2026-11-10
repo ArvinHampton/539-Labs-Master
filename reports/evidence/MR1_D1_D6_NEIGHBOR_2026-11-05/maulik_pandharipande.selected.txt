@@ -1,0 +1,100 @@
+1253: function f is holomorphic at infinity if ck,r = 0 for k < 0. The space
+1254: Mod(Mp2 (Z), k, ρ) of holomorphic modular forms of weight k and type
+1255: ρ is finite-dimensional.
+1256:    Given an integral lattice M with an even bilinear form h, i with
+1257: signature (2, n), we associate to M the following unitary representation
+1258: of Mp2 (Z). Let
+1259:                               M∨ ⊂ M ⊗ Q
+1260: denote the dual lattice and M ∨ /M the finite quotient. The pairing h, i
+1261: extends linearly to a Q-valued pairing on M ∨ . The functions 12 hγ, γi
+1262: and hγ, δi descend to Q/Z-valued functions on M ∨ /M.
+1263:   We construct a representation ρM of Mp2 (Z) on the group algebra
+1264: C[M ∨ /M]. It suffices to define ρM in terms of the action of the gener-
+1265: ators T and S with respect to the standard basis vγ for γ ∈ M ∨ /M,
+1266: 
+1267:                                 hγ,γi
+1268:                 ρM (T )vγ = e2πi 2 vγ ,
+1269:                                √ n−2
+1270:                                  i      X
+1271:                 ρM (S)vγ = p              e−2πihγ,δi vδ .
+1272:                                    ∨
+1273:                                |M /M| δ
+1274:    Let N denote the smallest positive integer for which Nhγ, γi/2 ∈ Z
+1275: for all γ ∈ M ∨ . The representation factors through a double cover of
+1276: SL2 (Z/NZ). We will be primarily interested in the dual representation
+1277: ρ∗M of Mp2 (Z) on C[M ∨ /M]. We have given the action of ρM to match
+1278: Borcherds’ notation.
+1279: 
+1280: 4.3. Heegner divisors. Given the lattice M of type (2, n) as before,
+1281: consider the Hermitian symmetric domain
+1282:             D = {ω ∈ P(M ⊗Z C) | hω, ωi = 0, hω, ω̄i > 0}
+1283: naturally associated to M. We will study the quotient
+1284: (22)                         XM = D/ΓM
+1285: of D by the arithmetic subgroup of O(2, n)
+1286:           ΓM = {g ∈ Aut(M) | g acts trivially on M ∨ /M} .
+1287: The quotient (22) is a quasi-projective algebraic variety.
+1288:   For every n ∈ Q<0 and γ ∈ M ∨ /M, we associate a divisor class
+1289: yn,γ ∈ Pic(XM ) as follows. Given an element v ∈ M ∨ , there is an
+1290: 
+1291:      GROMOV-WITTEN THEORY AND NOETHER-LEFSCHETZ THEORY                 29
+1292: 
+1293: associated hyperplane
+1294:                       v ⊥ = {ω ∈ D | hω, vi = 0} .
+1295: Both hv, vi and the residue class v mod M are invariant under the
+1296: action of ΓM . Therefore, if we fix n ∈ Q and γ ∈ M ∨ /M, the set of
+1297: v ∈ M ∨ with
+1298:                        1
+1299:                          hv, vi = n, v ≡ γ mod M
+1300:                        2
+1301: is also ΓM -invariant. The union over the set of the associated hyper-
+1302: planes                             X
+1303:                                           v⊥
+1304:                               1
+1305:                               2
+1306:                                 hv, vi = n
+1307:                            v ≡ γ mod M
+1308: is ΓM -invariant and descends to an algebraic divisor
+1309:                                               
+1310:                                  X
+1311:                   yn,γ =                  v ⊥  /ΓM .
+1312:                             1
+1313:                             2
+1314:                               hv,vi=n, v≡γ mod M
+1315: 
+1316: The yn,γ are the Heegner divisors of XM . Because of the symmetry
+1317: v ⊥ = (−v)⊥ , there is a redundancy
+1318:                                 yn,γ = yn,−γ
+1319: in our notation, and yn,γ is multiplicity 2 everywhere if 2γ ≡ 0 mod M.
+1320:    In the degenerate case where n = 0, we have the following prescrip-
+1321: tion. The line bundle O(−1) on D ⊂ P(M ⊗Z C) admits a natural ΓM
+1322: action and therefore descends to a line bundle K on XM . If n = 0 and
+1323: γ = 0, we set
+1324:                                  y0,0 = K ∗ .
+1325: If n = 0 and γ 6= 0, we set yn,γ = 0.
+1326:    We place the Heegner divisors in a formal power series ΦM (q) with
+1327: coefficients in Pic(XM ) ⊗ C[M ∨ /M]. More precisely, we consider the
+1328: generating function
+1329:              X X
+1330:     Φ(q) =                y−n,γ q n vγ ∈ Pic(XM )[[q 1/N ]] ⊗Z C[M ∨ /M].
+1331:            n∈Q≥0 γ∈M ∨ /M
+1332: 
+1333:    The main result of [7] together with the refinement of [41] yield the
+1334: following Theorem.
+1335: Theorem ([7],[41]) Let M have signature (2, n). The generating func-
+1336: tion Φ(q) is an element of
+1337:                                              n
+1338:                 Pic(XM ) ⊗Z Mod(Mp2 (Z), 1 + , ρ∗M ).
+1339:                                              2
+1340: 
+1341: 30                  D. MAULIK AND R. PANDHARIPANDE
+1342: 
+1343: 
+1344: 
+1345:      As a consequence, given any linear functional
+1346:                           λ : Pic(XM ) ⊗ C → C,
+1347: the contraction λ(ΦM (q)) is the Fourier expansion of a vector-valued
+1348: modular form of weight 1 + n2 and type ρ∗M .
+1349:    Borcherds’ proof uses the singular theta lift of [6] to construct auto-
+1350: morphic forms on XM starting from vector-valued meromorphic mod-
+1351: ular forms on the upper half-plane. The zeroes and poles of these
+1352: automorphic forms lie precisely along the Heegner divisors with mul-

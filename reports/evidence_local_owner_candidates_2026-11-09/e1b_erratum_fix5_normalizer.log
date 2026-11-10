@@ -1,0 +1,5 @@
+samples: 156 ; det AL49 = 49
+W49=(0,-1;49,0) maps sample into G0(980): False
+W980=(0,-1;980,0) normalizes (on sample): True
+Atkin-Lehner W_49^(980) normalizes (on sample): True
+note: W980 and W_Q^(N) normalizing Gamma0(N) is the standard Atkin-Lehner theorem; the sample check is illustration only

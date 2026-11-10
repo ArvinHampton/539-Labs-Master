@@ -1,0 +1,2 @@
+# Soft SF CONFIRM Pack NT — 2026-10-27 12:40 CDT America/Chicago
+MATCH (hash). Subject `/workspace/quantum-comp/reports/FINDINGS_OWNER_LOOKUP_70USD_CREDIT_VOICE_BURN_SPEND_LIMIT_2026-10-27.md` `35f3106ecdc4915caadb438df6b76753b9a488790146667922ae3f340e5a2f5d`. Scope Soft SF LOOKUP ONLY Soft SF (as Soft SF Written Soft SF). tip Soft SF LOCK `7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91` tip_touched NO. Kerr BLOCKED. REPORTS ONLY. No RECS.

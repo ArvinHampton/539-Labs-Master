@@ -1,0 +1,4 @@
+# FINDINGS DRAFT for Auditor CONFIRM — t761u (inventory + Ξ Written)
+1. Master ABSENT inventory 544de792bc9d2f76982f24bf2dd1b7600214aa154747ade110e745c2f7d9af48 — 9 items, all cites live-verified (deduce_t761u_absent_inventory/logs/live_sha_verify.log). Request: CONFIRM as inventory (Cat A catalogue of absences only).
+2. Ξ AUTHOR-WRITTEN draft cbb884a4f6c01d4c9b2dceebb2b47a2dd5ff201e245c6253ae3dd71df9162402 — request CONFIRM that: (a) labelled AUTHOR-WRITTEN, not Cat A; (b) parity-exponent arithmetic correct (reproduce scripts/exp_check.py); (c) X4 not smuggled (AW-X4 separate); (d) no numeric tables invented; (e) δ≡0 / Bridge YES not forced; residual-C OPEN.
+3. Soft-SF watch: any use of AW-* as Cat A before Arvin ACCEPT; G-2 sign tension; N_trunc=106 precedent originates in REJECTED t713u package (default only, not fill).

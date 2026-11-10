@@ -1,0 +1,9 @@
+PARI stack size set to 6000000000 bytes, maximum size set to 6000001024
+ N=6272 D=28: mfinit done, dim 388 [104s]
+   after p=3: joint kernel dim 88 [215s]
+   after p=5: joint kernel dim 32 [503s]
+   after p=11: joint kernel dim 0 [3964s]
+ N=6272 D=28: dim 388, joint kernel (T(p^2)=chi_-4(p)a_p(f), p=3,5,11) dim = 0  [3964s]
+ N=6272 D=56: mfinit done, dim 388 [129s]
+   after p=3: joint kernel dim 88 [186s]
+   after p=5: joint kernel dim 32 [433s]

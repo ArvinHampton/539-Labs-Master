@@ -1,0 +1,173 @@
+PARI stack size set to 2000000000 bytes, maximum size set to 2000003072
+== G1: Atkin-Lehner signs of f_Xi (w_p = eps_p for p | N, weight 2) ==
+cond(Xi) = 19600  eps(Xi) = -1  Fricke w = -eps = 1
+ p=2  eps_p = w_p = -1
+ p=5  eps_p = w_p = +1
+ p=7  eps_p = w_p = -1
+ check: -prod(eps_p) * eps_inf(=-1) ... global eps = eps_inf*prod = -1
+  W_16    (p in (2,)): eigenvalue -1
+  W_25    (p in (5,)): eigenvalue +1
+  W_49    (p in (7,)): eigenvalue -1
+  W_400   (p in (2, 5)): eigenvalue -1
+  W_784   (p in (2, 7)): eigenvalue +1
+  W_1225  (p in (5, 7)): eigenvalue -1
+  W_19600 (p in (2, 5, 7)): eigenvalue +1
+  a_3(Xi) = 0   a_3(49a1) = 0
+  a_5(Xi) = 0   a_5(49a1) = 0
+  a_11(Xi) = -4   a_11(49a1) = 4
+  a_13(Xi) = 0   a_13(49a1) = 0
+  a_17(Xi) = 0   a_17(49a1) = 0
+  a_19(Xi) = 0   a_19(49a1) = 0
+  a_23(Xi) = 8   a_23(49a1) = 8
+  a_29(Xi) = 2   a_29(49a1) = 2
+  a_31(Xi) = 0   a_31(49a1) = 0
+  a_37(Xi) = 6   a_37(49a1) = -6
+  a_41(Xi) = 0   a_41(49a1) = 0
+  a_43(Xi) = -12   a_43(49a1) = -12
+== G2: Weil rep rho(-I) on C[D(N2)], N2=[[2,14],[14,28]] ==
+det = -140  signature (b+,b-) = (1,1) since det<0
+|D| = 140
+#{g : g = -g} (2-torsion) = 4
+rho(Z) e_g = e(-sig/4) e_{-g}, sig = 0  =>  e0 -> e0; +1 eigenspace dim = 72  -1 eigenspace dim = 68
+chi_140(-1) = 1  (must equal e(-sig/4)=+1: parity lock holds)
+  parity lock: sig = 0 mod 4 -> forced chi(-1) on e0 = +1
+  parity lock: sig = 1 mod 4 -> forced chi(-1) on e0 = impossible (i^-1 not real)
+  parity lock: sig = 2 mod 4 -> forced chi(-1) on e0 = -1
+  parity lock: sig = 3 mod 4 -> forced chi(-1) on e0 = impossible
+== G3: Bolza Jacobian y^2 = x^5 - x : Frobenius char polys ==
+ p=  5  (-2/p)=-1 (-7/p)=-1  charpoly factors: ['x^2 - 5']
+ p=  7  (-2/p)=-1 (-7/p)=+0  charpoly factors: ['x^2 + 7']
+ p= 11  (-2/p)=+1 (-7/p)=+1  charpoly factors: ['x^4 + 14*x^2 + 121']
+ p= 13  (-2/p)=-1 (-7/p)=-1  charpoly factors: ['x^2 - 13']
+ p= 17  (-2/p)=+1 (-7/p)=-1  charpoly factors: ['x^2 + 6*x + 17']
+ p= 19  (-2/p)=+1 (-7/p)=-1  charpoly factors: ['x^4 - 34*x^2 + 361']
+ p= 23  (-2/p)=-1 (-7/p)=+1  charpoly factors: ['x^2 + 23']
+ p= 29  (-2/p)=-1 (-7/p)=+1  charpoly factors: ['x^2 - 29']
+ p= 31  (-2/p)=-1 (-7/p)=-1  charpoly factors: ['x^2 + 31']
+ p= 37  (-2/p)=-1 (-7/p)=+1  charpoly factors: ['x^2 - 37']
+ p= 41  (-2/p)=+1 (-7/p)=-1  charpoly factors: ['x^2 + 6*x + 41']
+ p= 43  (-2/p)=+1 (-7/p)=+1  charpoly factors: ['x^4 + 14*x^2 + 1849']
+ p= 47  (-2/p)=-1 (-7/p)=-1  charpoly factors: ['x^2 + 47']
+ p= 53  (-2/p)=-1 (-7/p)=+1  charpoly factors: ['x^2 - 53']
+ p= 59  (-2/p)=+1 (-7/p)=-1  charpoly factors: ['x^4 - 82*x^2 + 3481']
+ p= 61  (-2/p)=-1 (-7/p)=-1  charpoly factors: ['x^2 - 61']
+ p= 67  (-2/p)=+1 (-7/p)=+1  charpoly factors: ['x^4 + 62*x^2 + 4489']
+ p= 71  (-2/p)=-1 (-7/p)=+1  charpoly factors: ['x^2 + 71']
+ p= 73  (-2/p)=+1 (-7/p)=-1  charpoly factors: ['x^2 - 2*x + 73']
+ p= 79  (-2/p)=-1 (-7/p)=+1  charpoly factors: ['x^2 + 79']
+ p= 83  (-2/p)=+1 (-7/p)=-1  charpoly factors: ['x^4 + 158*x^2 + 6889']
+ p= 89  (-2/p)=+1 (-7/p)=-1  charpoly factors: ['x^2 - 18*x + 89']
+ p= 97  (-2/p)=+1 (-7/p)=-1  charpoly factors: ['x^2 - 10*x + 97']
+ p=101  (-2/p)=-1 (-7/p)=-1  charpoly factors: ['x^2 - 101']
+ p=103  (-2/p)=-1 (-7/p)=-1  charpoly factors: ['x^2 + 103']
+ p=107  (-2/p)=+1 (-7/p)=+1  charpoly factors: ['x^4 - 178*x^2 + 11449']
+ p=109  (-2/p)=-1 (-7/p)=+1  charpoly factors: ['x^2 - 109']
+ p=113  (-2/p)=+1 (-7/p)=+1  charpoly factors: ['x^2 - 18*x + 113']
+ p=127  (-2/p)=-1 (-7/p)=+1  charpoly factors: ['x^2 + 127']
+ p=131  (-2/p)=+1 (-7/p)=-1  charpoly factors: ['x^4 + 62*x^2 + 17161']
+ p=137  (-2/p)=+1 (-7/p)=+1  charpoly factors: ['x^2 + 6*x + 137']
+ p=139  (-2/p)=+1 (-7/p)=-1  charpoly factors: ['x^4 + 206*x^2 + 19321']
+ p=149  (-2/p)=-1 (-7/p)=+1  charpoly factors: ['x^2 - 149']
+ p=151  (-2/p)=-1 (-7/p)=+1  charpoly factors: ['x^2 + 151']
+ p=157  (-2/p)=-1 (-7/p)=-1  charpoly factors: ['x^2 - 157']
+ p=163  (-2/p)=+1 (-7/p)=+1  charpoly factors: ['x^4 - 322*x^2 + 26569']
+ p=167  (-2/p)=-1 (-7/p)=-1  charpoly factors: ['x^2 + 167']
+ p=173  (-2/p)=-1 (-7/p)=-1  charpoly factors: ['x^2 - 173']
+ p=179  (-2/p)=+1 (-7/p)=+1  charpoly factors: ['x^4 - 34*x^2 + 32041']
+ p=181  (-2/p)=-1 (-7/p)=-1  charpoly factors: ['x^2 - 181']
+ p=191  (-2/p)=-1 (-7/p)=+1  charpoly factors: ['x^2 + 191']
+ p=193  (-2/p)=+1 (-7/p)=+1  charpoly factors: ['x^2 + 22*x + 193']
+ p=197  (-2/p)=-1 (-7/p)=+1  charpoly factors: ['x^2 - 197']
+ p=199  (-2/p)=-1 (-7/p)=-1  charpoly factors: ['x^2 + 199']
+ p=211  (-2/p)=+1 (-7/p)=+1  charpoly factors: ['x^4 - 226*x^2 + 44521']
+ p=223  (-2/p)=-1 (-7/p)=-1  charpoly factors: ['x^2 + 223']
+ p=227  (-2/p)=+1 (-7/p)=-1  charpoly factors: ['x^4 + 446*x^2 + 51529']
+ p=229  (-2/p)=-1 (-7/p)=-1  charpoly factors: ['x^2 - 229']
+ p=233  (-2/p)=+1 (-7/p)=+1  charpoly factors: ['x^2 + 30*x + 233']
+ p=239  (-2/p)=-1 (-7/p)=+1  charpoly factors: ['x^2 + 239']
+ p=241  (-2/p)=+1 (-7/p)=-1  charpoly factors: ['x^2 - 26*x + 241']
+ p=251  (-2/p)=+1 (-7/p)=-1  charpoly factors: ['x^4 - 466*x^2 + 63001']
+ p=257  (-2/p)=+1 (-7/p)=-1  charpoly factors: ['x^2 + 30*x + 257']
+ p=263  (-2/p)=-1 (-7/p)=+1  charpoly factors: ['x^2 + 263']
+ p=269  (-2/p)=-1 (-7/p)=-1  charpoly factors: ['x^2 - 269']
+ p=271  (-2/p)=-1 (-7/p)=-1  charpoly factors: ['x^2 + 271']
+ p=277  (-2/p)=-1 (-7/p)=+1  charpoly factors: ['x^2 - 277']
+ p=281  (-2/p)=+1 (-7/p)=+1  charpoly factors: ['x^2 - 18*x + 281']
+ primes split in Q(sqrt-2), inert in Q(sqrt-7) (Xi has a_p=0 there): [17, 19, 41, 59, 73, 83, 89, 97, 131, 139, 227, 241, 251, 257]
+ discriminants a^2-4p of quadratic factors at split primes (squarefree part):
+  p=5: [(0, '5')]
+  p=7: [(0, '-7')]
+  p=11: []
+  p=13: [(0, '13')]
+  p=17: [(-6, '-2')]
+  p=19: []
+  p=23: [(0, '-23')]
+  p=29: [(0, '29')]
+  p=31: [(0, '-31')]
+  p=37: [(0, '37')]
+  p=41: [(-6, '-2')]
+  p=43: []
+  p=47: [(0, '-47')]
+  p=53: [(0, '53')]
+  p=59: []
+  p=61: [(0, '61')]
+  p=67: []
+  p=71: [(0, '-71')]
+  p=73: [(2, '-2')]
+  p=79: [(0, '-79')]
+  p=83: []
+  p=89: [(18, '-2')]
+  p=97: [(10, '-2')]
+  p=101: [(0, '101')]
+  p=103: [(0, '-103')]
+  p=107: []
+  p=109: [(0, '109')]
+  p=113: [(18, '-2')]
+  p=127: [(0, '-127')]
+  p=131: []
+  p=137: [(-6, '-2')]
+  p=139: []
+  p=149: [(0, '149')]
+  p=151: [(0, '-151')]
+  p=157: [(0, '157')]
+  p=163: []
+  p=167: [(0, '-167')]
+  p=173: [(0, '173')]
+  p=179: []
+  p=181: [(0, '181')]
+  p=191: [(0, '-191')]
+  p=193: [(-22, '-2')]
+  p=197: [(0, '197')]
+  p=199: [(0, '-199')]
+  p=211: []
+  p=223: [(0, '-223')]
+  p=227: []
+  p=229: [(0, '229')]
+  p=233: [(-30, '-2')]
+  p=239: [(0, '-239')]
+  p=241: [(26, '-2')]
+  p=251: []
+  p=257: [(-30, '-2')]
+  p=263: [(0, '-263')]
+  p=269: [(0, '269')]
+  p=271: [(0, '-271')]
+  p=277: [(0, '277')]
+  p=281: [(18, '-2')]
+== G4: split SO(24,24) form: chi_23 trivial test, (D/23) ==
+  D= 140  (D/23)=+1
+  D= -20  (D/23)=+1
+  D=  -7  (D/23)=+1
+  D=   5  (D/23)=-1
+  D=  28  (D/23)=-1
+  D= -35  (D/23)=-1
+  D=  35  (D/23)=+1
+  D=  -4  (D/23)=-1
+  D=   8  (D/23)=+1
+  D=  -8  (D/23)=-1
+== G5 (illustration only): kernel lattice of (1,1,-2) in Z^3, standard form ==
+Traceback (most recent call last):
+  File "/workspace/quantum-comp/reports/evidence_local_reverse_geometry_2026-11-10/reverse_geometry_check_v2.py", line 69, in <module>
+    K = pari.matkerint(pari('[1,1,-2]')); print(" basis =", K); Gr = K.mattranspose()*K; print(" Gram =", Gr, " det =", pari.matdet(Gr))
+  File "cypari2/auto_instance.pxi", line 22134, in cypari2.pari_instance.Pari_auto.matkerint
+  File "cypari2/handle_error.pyx", line 211, in cypari2.handle_error._pari_err_handle
+cypari2.handle_error.PariError: incorrect type in matkerint (t_VEC)

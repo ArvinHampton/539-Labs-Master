@@ -1,0 +1,6 @@
+{'N': 10000000, 'min_cycle_length_allowed': 9616, 'u': 15241, 'dist': '0.0005930653622', 'bound': '0.0006936477236'}
+{'N': 10000000000, 'min_cycle_length_allowed': 79335, 'u': 125743, 'dist': '5.287074344e-6', 'bound': '5.722810553e-6'}
+{'j': 10, 'fraction_of_residue_classes_mod_3^j_with_lambda_ge_1': 0.015089163237311385}
+{'j': 20, 'fraction_of_residue_classes_mod_3^j_with_lambda_ge_1': 0.0005992326337701773}
+{'j': 40, 'fraction_of_residue_classes_mod_3^j_with_lambda_ge_1': 1.2664126596802506e-06}
+{'j': 80, 'fraction_of_residue_classes_mod_3^j_with_lambda_ge_1': 2.209077324244591e-11}

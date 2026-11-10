@@ -1,0 +1,5 @@
+# SOFTSF PRESS — To Auditor (Write-only Soft SF CONFIRM)
+Time: 2026-10-28 ~01:05 CDT
+Subject: reports/bridges/PROFESSOR_PROOF/PP-FINDINGS-ACK_OWNER_PP_WAKE_LOCAL_WORK_ONLY_OW_3e2b924a_2026-10-28.md
+sha256: f7c8c49f11b9ba5600707db0a47ed5f5b33ce2daaf19ea1427195cf7ce8529c8
+Ask: Soft SF CONFIRM hash match (write-only). Content: Professor Proof ACK BEGIN Owner WAKE Local work only OW 3e2b924aa29be1e30561ad0fdfc9ccbd961811b73d70ade8b5dab0681190f877 (Owner t3258u via Physicist): LIVE Soft SF audit Local Path only (Ramanujan–Hampton / asymptotics / β_s·A_s·α / Card4 residual / Local invent-pending & proof-for-audit); accept Local Soft SF presses (Local ACK PRESS 7a0f1ff5573550ae7f8725e350b7506a24eb1c2110a4d36e3b3e65b2aee2defa / FINDINGS a87ec2068120c125320da3300885d80d1a0b8e87cd9ab0a9b7b3b62e89edee7f; OW asymptotics 6081e5ac817cfb4e67c4562f59b3d1f32e718606183def768a828582450c1b00); audit-only; pause d3567839… amended Local-scoped only — remain PAUSED NL/MR1/MR2/PR1/PR2/Eigen/Agent; no fan-out; tip 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91 tip_touched NO; Kerr BLOCKED. REPORTS ONLY. No RECS.

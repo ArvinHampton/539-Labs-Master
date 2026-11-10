@@ -1,0 +1,2 @@
+# SOFTSF PRESS — MR2 DUAL-CONTINUE GAP-SK-p3-1c — 2026-10-27
+STATUS CLOSED (Soft SF). Brauer-free completeness: every irreducible F̄p-rep of GL2(Fp) ≅ Sym^s⊗det^a via U-coinvariant character ψ → embedding into Ind_B^G ψ, socle analysis of Ind (dim Ind^U=2; cases ψ≠ψ^w simple socle, ψ=ψ^w socle C⊕St, St≅Sym^{p−1}). No BL94/BL95, no Brauer count. tip_touched NO; Kerr BLOCKED; NOT OPERATIVE; REPORT ONLY.

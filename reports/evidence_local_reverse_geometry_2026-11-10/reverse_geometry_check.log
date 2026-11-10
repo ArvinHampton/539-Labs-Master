@@ -1,0 +1,46 @@
+PARI stack size set to 2000000000 bytes, maximum size set to 2000003072
+== G1: Atkin-Lehner signs of f_Xi (w_p = eps_p for p | N, weight 2) ==
+cond(Xi) = 19600  eps(Xi) = -1  Fricke w = -eps = 1
+ p=2  eps_p = w_p = -1
+ p=5  eps_p = w_p = +1
+ p=7  eps_p = w_p = -1
+ check: -prod(eps_p) * eps_inf(=-1) ... global eps = eps_inf*prod = -1
+  W_16    (p in (2,)): eigenvalue -1
+  W_25    (p in (5,)): eigenvalue +1
+  W_49    (p in (7,)): eigenvalue -1
+  W_400   (p in (2, 5)): eigenvalue -1
+  W_784   (p in (2, 7)): eigenvalue +1
+  W_1225  (p in (5, 7)): eigenvalue -1
+  W_19600 (p in (2, 5, 7)): eigenvalue +1
+  a_3(Xi) = 0   a_3(49a1) = 0
+  a_5(Xi) = 0   a_5(49a1) = 0
+  a_11(Xi) = -4   a_11(49a1) = 4
+  a_13(Xi) = 0   a_13(49a1) = 0
+  a_17(Xi) = 0   a_17(49a1) = 0
+  a_19(Xi) = 0   a_19(49a1) = 0
+  a_23(Xi) = 8   a_23(49a1) = 8
+  a_29(Xi) = 2   a_29(49a1) = 2
+  a_31(Xi) = 0   a_31(49a1) = 0
+  a_37(Xi) = 6   a_37(49a1) = -6
+  a_41(Xi) = 0   a_41(49a1) = 0
+  a_43(Xi) = -12   a_43(49a1) = -12
+== G2: Weil rep rho(-I) on C[D(N2)], N2=[[2,14],[14,28]] ==
+det = -140  signature (b+,b-) = (1,1) since det<0
+Smith form (matsnf): [70, 2]
+Traceback (most recent call last):
+  File "cypari2/convert.pyx", line 388, in cypari2.convert.gtoi
+RuntimeError: Aborted
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/quantum-comp/reports/evidence_local_reverse_geometry_2026-11-10/reverse_geometry_check.py", line 38, in <module>
+    key = tuple(Fr(int(pari.numerator(c)),int(pari.denominator(c)))%1 for c in x)
+  File "/workspace/quantum-comp/reports/evidence_local_reverse_geometry_2026-11-10/reverse_geometry_check.py", line 38, in <genexpr>
+    key = tuple(Fr(int(pari.numerator(c)),int(pari.denominator(c)))%1 for c in x)
+                   ~~~^^^^^^^^^^^^^^^^^^^
+  File "cypari2/gen.pyx", line 1838, in cypari2.gen.Gen.__int__
+  File "cypari2/convert.pyx", line 302, in cypari2.convert.gen_to_integer
+  File "cypari2/convert.pyx", line 349, in cypari2.convert.PyInt_FromGEN
+  File "cypari2/convert.pyx", line 403, in cypari2.convert.gtoi
+TypeError: unable to convert PARI object [0, 0]~ of type t_COL to an integer

@@ -1,0 +1,25 @@
+{
+ "abs_resid": 2.2887833992611187e-16,
+ "ctrl_abs": 3.3389113514959448,
+ "ctrl_ok": true,
+ "pieces_vs_order58_maxdiff": 0.0,
+ "axis_Q1": {
+  "max_abs": 1.6694556757479724,
+  "median_ratio": 1.0,
+  "frac_dominant": 0.8352072310405644,
+  "frac_zero": 0.0004850088183421517
+ },
+ "axis_Q7/2": {
+  "max_abs": 0.7282571608102939,
+  "median_ratio": 0.2687609932023054,
+  "frac_dominant": 0.11906966490299824,
+  "frac_zero": 0.0013227513227513227
+ },
+ "corner_EVEN": {
+  "max_abs": 1.3435815586044566,
+  "median_ratio": 8.245097877323845e-16,
+  "frac_dominant": 0.06988536155202822,
+  "frac_zero": 0.019069664902998235
+ },
+ "RG47a_bis": "PASS"
+}

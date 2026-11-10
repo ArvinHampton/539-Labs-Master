@@ -1,0 +1,40 @@
+# Auditor Soft SF Write-only MATCH — hash-only inventory — MR1 Tate-Gelfand FINDINGS 005fbd81 / PRESS dfac3979 (2026-11-05)
+Role: Auditor Soft SF hash keeper. REPORTS ONLY. Hash-only. No RECS. No CERT. No tip-edit. No agent messages. No evaluation. No recommendations.
+
+## Hash inventory
+
+### Subject sha256 `005fbd81e186513ed9c1299e44ceb4fbe787ddaf00e9db8bfd9d8996d5427c69`
+- file↔claim: MATCH
+- mirrors (10):
+  - `/workspace/quantum-comp/bridges/AUDITOR/FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md` — sha256 `005fbd81e186513ed9c1299e44ceb4fbe787ddaf00e9db8bfd9d8996d5427c69`; sidecar: MATCH
+  - `/workspace/quantum-comp/bridges/LOCAL/FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md` — sha256 `005fbd81e186513ed9c1299e44ceb4fbe787ddaf00e9db8bfd9d8996d5427c69`; sidecar: MATCH
+  - `/workspace/quantum-comp/bridges/PHYSICIST/FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md` — sha256 `005fbd81e186513ed9c1299e44ceb4fbe787ddaf00e9db8bfd9d8996d5427c69`; sidecar: MATCH
+  - `/workspace/quantum-comp/bridges/PROFESSOR_PROOF/FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md` — sha256 `005fbd81e186513ed9c1299e44ceb4fbe787ddaf00e9db8bfd9d8996d5427c69`; sidecar: MATCH
+  - `/workspace/quantum-comp/reports/FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md` — sha256 `005fbd81e186513ed9c1299e44ceb4fbe787ddaf00e9db8bfd9d8996d5427c69`; sidecar: MATCH
+  - `/workspace/quantum-comp/reports/bridges/AUDITOR/FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md` — sha256 `005fbd81e186513ed9c1299e44ceb4fbe787ddaf00e9db8bfd9d8996d5427c69`; sidecar: MATCH
+  - `/workspace/quantum-comp/reports/bridges/LOCAL/FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md` — sha256 `005fbd81e186513ed9c1299e44ceb4fbe787ddaf00e9db8bfd9d8996d5427c69`; sidecar: MATCH
+  - `/workspace/quantum-comp/reports/bridges/PHYSICIST/FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md` — sha256 `005fbd81e186513ed9c1299e44ceb4fbe787ddaf00e9db8bfd9d8996d5427c69`; sidecar: MATCH
+  - `/workspace/quantum-comp/reports/bridges/PROFESSOR_PROOF/FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md` — sha256 `005fbd81e186513ed9c1299e44ceb4fbe787ddaf00e9db8bfd9d8996d5427c69`; sidecar: MATCH
+  - `/workspace/quantum-comp/reports/evidence/MR1_TATE_KUMMER_KRONECKER_2026-11-05/FINDINGS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md` — sha256 `005fbd81e186513ed9c1299e44ceb4fbe787ddaf00e9db8bfd9d8996d5427c69`; sidecar: NO-SIDECAR
+### Subject sha256 `dfac397949ba48e0aedeb941f10e550dbd623ba1fa5a4c67aa117164d637dc43`
+- file↔claim: MATCH
+- mirrors (10):
+  - `/workspace/quantum-comp/bridges/AUDITOR/SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md` — sha256 `dfac397949ba48e0aedeb941f10e550dbd623ba1fa5a4c67aa117164d637dc43`; sidecar: MATCH
+  - `/workspace/quantum-comp/bridges/LOCAL/SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md` — sha256 `dfac397949ba48e0aedeb941f10e550dbd623ba1fa5a4c67aa117164d637dc43`; sidecar: MATCH
+  - `/workspace/quantum-comp/bridges/PHYSICIST/SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md` — sha256 `dfac397949ba48e0aedeb941f10e550dbd623ba1fa5a4c67aa117164d637dc43`; sidecar: MATCH
+  - `/workspace/quantum-comp/bridges/PROFESSOR_PROOF/SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md` — sha256 `dfac397949ba48e0aedeb941f10e550dbd623ba1fa5a4c67aa117164d637dc43`; sidecar: MATCH
+  - `/workspace/quantum-comp/reports/SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md` — sha256 `dfac397949ba48e0aedeb941f10e550dbd623ba1fa5a4c67aa117164d637dc43`; sidecar: MATCH
+  - `/workspace/quantum-comp/reports/bridges/AUDITOR/SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md` — sha256 `dfac397949ba48e0aedeb941f10e550dbd623ba1fa5a4c67aa117164d637dc43`; sidecar: MATCH
+  - `/workspace/quantum-comp/reports/bridges/LOCAL/SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md` — sha256 `dfac397949ba48e0aedeb941f10e550dbd623ba1fa5a4c67aa117164d637dc43`; sidecar: MATCH
+  - `/workspace/quantum-comp/reports/bridges/PHYSICIST/SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md` — sha256 `dfac397949ba48e0aedeb941f10e550dbd623ba1fa5a4c67aa117164d637dc43`; sidecar: MATCH
+  - `/workspace/quantum-comp/reports/bridges/PROFESSOR_PROOF/SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md` — sha256 `dfac397949ba48e0aedeb941f10e550dbd623ba1fa5a4c67aa117164d637dc43`; sidecar: MATCH
+  - `/workspace/quantum-comp/reports/evidence/MR1_TATE_KUMMER_KRONECKER_2026-11-05/SOFTSF_PRESS_MR1_SOFTSF_TATE_GELFAND_KUMMER_KRONECKER_CITE_HOLD_INVENT_2026-11-05.md` — sha256 `dfac397949ba48e0aedeb941f10e550dbd623ba1fa5a4c67aa117164d637dc43`; sidecar: NO-SIDECAR
+
+
+Counts (subject file mirrors only): MATCH 18 / MISMATCH 0 / NO-SIDECAR 2 / paths 20.
+
+Tip before: `7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91`
+
+Tip after: `7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91`
+
+tip_touched: NO; Tip LOCK MATCH.

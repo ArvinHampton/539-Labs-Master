@@ -1,0 +1,18 @@
+LIT MATRIX Soft SF (definitions only; ABSENT project Rc/1.5954 unless noted)
+N1 Zwegers Mock Theta Functions arXiv:0807.4834v1 PDF magic %PDF-1.4 HTTP OK
+   Defines: Ch.1 Lerch sums (=Appell functions / generalized Lambert series); Mordell integral; elliptic/modular transforms of mu.
+   Eval to 1.5954: ABSENT (0 hits in ar5iv HTML + abs). Project Rc: ABSENT.
+N2 Hickerson-Mortenson Hecke-type double sums... arXiv:1208.1421v1 PDF OK (also RTA v16 bib [8])
+   Defines: Def 0.1 m(x,q,z)=1/j(z;q) sum_r (-1)^r q^{binom r 2} z^r / (1-q^{r-1} x z); classical Appell-Lerch.
+   Simple evals Cor 2.2: m(q,q^2,-1)=1/2; m(-1,q^2,q)=0. NOT 1.5954.
+   Eval to 1.5954 / project Rc: ABSENT (0 hits).
+N3 Dabholkar-Murthy-Zagier Quantum Black Holes... arXiv:1208.4074v2 PDF OK
+   Defines: meromorphic Jacobi form = mock Jacobi + Appell-Lerch sum (wall-crossing / multi-centered).
+   Eval to 1.5954 / project Rc: ABSENT in checked abs/front matter search.
+N4 Bringmann-Ono-Rhoades Eulerian series as modular forms DOI 10.1090/S0894-0347-07-00587-5
+   DOI HTTP 302 -> AMS journal landing PRESENT. arXiv search for exact title returned only Mortenson "revisited" 1304.4012 (neighbor), not 2008 primary PDF on arXiv.
+   Content (from published abstract via search/index): constructs modular forms as differences of mock theta / harmonic Maass; Appell-Lerch appears in that literature cluster.
+   Eval to 1.5954 / project Rc: ABSENT from Soft SF-checked open surfaces this turn.
+Live failures: FAIL_zagier_doi_BF (doi.org body for unrelated Zagier BF01389846 path used as DOI-flaky control); Springer article URL 301. Author Zagier ModFormsRQF.pdf PRESENT (not counted as Appell neighbor).
+Literature-neighbor PRESENT count (Appell-Lerch definitional): 4 (N1-N4). Project evaluation rows: 0.
+

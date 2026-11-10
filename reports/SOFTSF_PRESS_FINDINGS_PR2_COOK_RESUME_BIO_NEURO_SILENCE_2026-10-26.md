@@ -1,0 +1,11 @@
+# SOFT SF PRESS — FINDINGS PR2 COOK RESUME Bio/Neuro silence — 2026-10-26 (CDT)
+- FINDINGS: /workspace/quantum-comp/reports/FINDINGS_PR2_COOK_RESUME_BIO_NEURO_SILENCE_2026-10-26.md
+- FINDINGS sha256: `2ccbc0ce391520c9f24b5b84e6abd8e6b612e005079387d71cfaade0209244ff` — CONFIRM
+- Disposition: Bio/Neuro → NAMED ABSENT / UNPROVEN GAP OPEN (deeper hunt: 0 Written links, 0 Written no-go; silence ≠ impossibility). G-B1 named-absent OPEN-PURSUE; Channel B qualitative BIND-PROPOSE; Channel A gated on GAP-X1-Local; Path4 C1 gated.
+- Kerr / Path4 C2–C3: BLOCKED
+- Tip BEFORE: `7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91`
+- Tip AFTER: `7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91`
+- tip_touched: NO
+- Catalog sha `4ed155d55c3a18ca4bc96a6a6eec4c1806abfc2e270f355f1ea58a197119dd04` UNCHANGED
+- Write-only; no tip fold; no LOCK
+- Route: Soft SF → Auditor

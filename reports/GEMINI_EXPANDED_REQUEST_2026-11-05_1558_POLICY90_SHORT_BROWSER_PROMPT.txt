@@ -1,0 +1,7 @@
+Upload/paste GEMINI_EXPANDED_REQUEST_2026-11-05_1558_POLICY90.txt as the expanded request.
+
+Ask (one sentence): For each of the twelve verbatim PQC intakes (B1–B12) under the CURRENT governing rules in that file (90% absolute weekly stop; file-level hash/completeness/tamper checks are NOT the validation job; mathematical validation = proofs with assumptions/steps/citations including Eigen’s RREF height-bound/primes ask; local–nonlocal geometric bridge open), return definitions, verifications actually run vs not run, formal proofs or challenges, and open problems—plus your clarifying questions back as 12 sections + cross-lane bridge + governance.
+
+Hard constraints: Candidate-only math; no /workspace access; Canonical T3_ref only; SM recovery objective not achieved; invent HOLD / No CERT; tip lock stands; Owner origin waiver ≠ math cert; one-file payload.
+
+Compiled: 2026-11-05 16:02:38 CST America/Chicago. Parent checkpoint ~77.1% (<90).

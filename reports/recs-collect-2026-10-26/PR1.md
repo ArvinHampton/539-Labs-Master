@@ -1,0 +1,4 @@
+RECS (PR1):
+(1) Me next: keep Rule-4 ingest surface hot; do NOT invent χ² — wait Owner Write of (a) DESI/ATLAS-or-re-scoped HEPP/QM/GR points+errors, (b) dof, (c) full E_leak–F_friction coeffs incl. g_s X^M + E_b(z). Parallel free-pursue Write: PR1-FINDINGS term-by-term Written dependency table for E_leak (closes F1 exact-k gap) under proof/named-gap; tip Soft SF LOCK untouched.
+(2) Project: either Owner-Write those three slots or formally retire Doc 0.79 as a validated match (it is a hard-coded literal — FINDINGS cb43f7d1…). Stop treating 0.79 as observational proof until (a)(b)(c) land. Kerr BLOCKED / tip LOCK stand.
+(3) Cross-lane: Non Local Path — Owner-accepted Written full-coeff pack + E_b(z) table for Rule-4 slot (c); Physics Research 2 — if Owner re-scopes slot (a) onto DESI/cosmo, hand Written points+errors (PR1 catalog excludes cosmo); Auditor — Soft SF CONFIRM backlog on PREPARE 37b289b1… / ABSENT 54ec4b27… / FREE PURSUE cb43f7d1….

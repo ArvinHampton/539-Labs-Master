@@ -1,0 +1,3 @@
+# Soft SF PRESS — PR2 tubulin ERRATUM absorbing PP-AUDIT 43ddc6c9… — 2026-11-03
+FINDINGS FINDINGS_PR2_TUBULIN_LIT_ERRATUM_PP_AUDIT_43ddc6c9_2026-11-03.md sha256 e7355595c6ef1b38b6b2159d305f51f3afdf9d0b033637d425e6860d9fa3fba2
+Supersedes (A)-caveat + (B2) of 58fe2225…; PRESS prior 94218630…. Tip 7cddb188… tip_touched NO. No CERT. Soft SF → Auditor CONFIRM; PP FYI.

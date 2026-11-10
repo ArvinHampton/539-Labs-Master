@@ -1,0 +1,2 @@
+ricci/g [-3.0*k**2, -3.0*k**2, -3.0*k**2, -3*k**2, 6*exp(-2*B)/r**2] R -12.0*k**2 + 42*exp(-2*B)/r**2 G_ext 3.0*k**2 - 21*exp(-2*B)/r**2 G_fib 6.0*k**2 - 15*exp(-2*B)/r**2
+C2_ext_fails True C2_fib_fails True RESULT PASS

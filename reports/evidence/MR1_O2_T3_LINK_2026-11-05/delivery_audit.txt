@@ -1,0 +1,11 @@
+MR1 Soft SF O2 cite deepen delivery audit
+America/Chicago: 2026-11-05 13:45:40 CST
+FINDINGS sha256: 6349a521897c0668e4e9705ae48e3e25bf4f10418c55f0dcf1ab676dd9e7cac2
+PRESS sha256: 67e42554c28a9dd986b17d8669c800abed2838cb1b919ebdd1aaedb98605eb5a
+tip_pre/post: 7cddb188ca340ad977516327065e8df88c3b16ed01bcd8301c5bf0f8bb5dfc91
+tip_touched: NO
+O2 status: ABSENT/OPEN (no PARTIAL upgrade)
+literature-neighbor PRESENT: 10 (N1-N10)
+mirrors: bridges/{AUDITOR,PHYSICIST,PROFESSOR_PROOF,LOCAL} + reports/bridges/* byte-for-byte
+no invent proofs; no tip edits; No CERT; No publish/spend; No RECS
+prior O1 Soft SF 28d4b4ae... cited only; not redone

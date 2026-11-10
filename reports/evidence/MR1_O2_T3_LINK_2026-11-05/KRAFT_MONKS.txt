@@ -1,0 +1,233 @@
+      On Conjugacies of the 3x + 1 Map Induced by Continuous
+          Endomorphisms of the Shift Dynamical System
+                                   Benjamin Krafta , Keenan Monksb
+                                   a
+                                     bjk408@lehigh.edu (Lehigh University)
+                            b
+                                monksk3@scranton.edu (University of Scranton)
+
+
+
+
+Abstract
+Lagarias showed that the shift dynamical system S on the set Z2 of 2-adic integers is conju-
+gate to the famous 3x+1 map T by a conjugacy Φ. Thus for each continuous endomorphism
+f∞ of S there is a corresponding endomorphism Hf = Φ ◦ f∞ ◦ Φ−1 of T and a map Ψf
+from the coimage of Hf to itself defined by Ψf ([x]) = [T (x)]. In this paper, we completely
+classify all continuous endomorphisms f∞ of S for which Ψf is conjugate to T . We then
+define an infinite family of such maps, ΨMk , that are “neutral” modulo 2k−1 in the sense
+that each element of the domain is a complete residue system modulo 2k−1 . By investigat-
+ing the relationships between T -cycles and the ΨMk -cycles that contain them, we obtain an
+alternate method for studying the dynamics of T . This method is used to prove several new
+results pertaining to T -cycles, which are then applied to yield several possible approaches
+to the 3x + 1 conjecture.
+Key words: 3x+1 conjecture, symbolic dynamics, shift map, conjugacy
+
+
+1. Introduction
+    A discrete dynamical system on a set X is obtained by iterating a map f : X → X.
+For any such function f and any x ∈ X, the f -orbit of x, denoted Of (x), is the set
+{x, f (x), f 2 (x), f 3 (x), . . .}. If f m (c) = c for some m ∈ Z+ , we say c is f -cyclic with period
+m. The minimum period of c is the smallest positive m for which this is true. In this
+                                                                 f              h
+case, we call Of (c) an f -cycle. Given two maps X → X and X → X, we say h is an
+                                                                     f            g
+endomorphism of f if and only if f ◦ h = h ◦ f . We say X → X and Y → Y are conjugate
+                    h
+with conjugacy X → Y if and only if h is bijective and g ◦ h = h ◦ f . Conjugate maps have
+the same dynamical structure. For example, two conjugate maps have the same number of
+cycles with any given minimum period.
+   Let Z2 be the ring of 2-adic integers. Each x ∈ Z2 can be represented as x0 x1 · · · where
+                                                                           ∞
+                                                                             xi 2i . Arithmetic
+                                                                           P
+every xi ∈ {0, 1} and interpreted algebraically as the formal power series
+                                                                                 i=0
+for 2-adic integers is defined by addition and multiplication of their formal power series.
+Define Qodd to be the set of rational numbers with odd denominators. It is known that Qodd
+is a subring of Z2 (cf. [1]).
+    The 3x + 1 map T : Z2 → Z2 is defined by T (x) = x2 if x is even and T (x) = 3x+12
+                                                                                         if
+x is odd. The famous 3x + 1 conjecture claims that the T -orbit of every positive integer
+
+Preprint submitted to Elsevier                                                         February 10, 2010
+contains 1. Also known as the Collatz conjecture, this problem has remained unsolved since
+the 1930’s. Erdős proclaimed mathematics “is not yet ready for such problems” and offered
+a monetary award for its solution [4, 7].
+    The shift map S : Z2 → Z2 is defined by S(x) = x2 if x is even and S(x) = x−1                 2
+                                                                                                     if x is odd
+(i.e. S(x0 x1 x2 · · · ) = x1 x2 · · · for all x0 x1 x2 · · · ∈ Z2 ). Lagarias [4] constructed a conjugacy
+                                                                    ∞
+from T to S (called Φ−1 in [2]) defined by Φ−1 (x) =                  (T k (x) mod 2) · 2k . (In this paper we
+                                                                   P
+                                                               k=0
+will use a mod b to represent the remainder when a is divided by b.) This raises possibilities
+for progress on the 3x + 1 problem by studying conjugacies and properties of S.
+    Hedlund [3] classified all continuous endomorphisms of the shift dynamical system on
+bisequences, and M. Monks [6] showed that analogous results apply to the shift map S.
+In particular, let Bm be the set of all binary sequences of length m, and define, for each
+                                 f
+k ∈ Z+ , F (k) = {f : Bk → B1 }. An element of F (k) is called a block map. The continuous
+endomorphisms of S are the functions f∞ : Z2 → Z2 induced by f ∈ F (k) by letting
+f∞ (x0 x1 x2 · · · ) = y0 y1 y2 · · · where yi = f (xi xi+1 · · · xi+k−1 ) for all i ≥ 0 [6].
+    For k = 1, the endomorphism V : Z2 → Z2 where V (x) = −1 − x is conjugate to the
+only autoconjugacy of T other than the identity map, namely Ω = Φ ◦ V ◦ Φ−1 . This can be
+used to construct the function Ψ sending the unordered pair {x, Ω(x)} to {T (x), T (Ω(x))}
+for all x ∈ Z2 [5]. K. Monks and Yazinski [5] used Ψ to state a “parity-neutral” form of the
+3x + 1 conjecture. They also defined a T -cycle to be “self-conjugate” if it maps to itself by
+Ω, and showed that the only such cycle of positive integers is {1, 2}.
+    For k = 2, M. Monks [6] examined the “discrete derivative” map D (induced by the
+block map sending any two-digit binary string to the absolute value of the difference of the
+two digits), and used it to prove that Ψ is conjugate to T . For k > 2, M. Monks left open
+the question for further study, stating “it would be of interest to study the dynamics of
+other continuous endomorphisms of S and their applications” [6].
+    In this paper, we answer this question in several ways. First, we completely classify all
+of the continuous endomorphisms of S that induce a map conjugate to T that is analogous
+to Ψ. We then generalize D to an infinite family of these maps, and use them to extend
+both the “parity-neutral” and “self-conjugacy” results of [5].
+
+2. Main Results
+    In this section we state our main results. Proofs are postponed until Section 3.
+    Let k be a positive integer and f ∈ F (k). Define Hf : Z2 → Z2 by Hf = Φ ◦ f∞ ◦ Φ−1 .
+     f                                                                                    f
+Let ≡ be the equivalence relation defined on Z2 induced by Hf , i.e. a ≡ b if and only if
+Hf (a) = Hf (b) for any a, b ∈ Z2 . The equivalence class of a ∈ Z2 of this relation will be
+                             f
+denoted as [a] = {x : x ≡ a}. Let Z2 /f be the coimage of Hf , i.e. the set of all equivalence
+             f
+classes of ≡. Define Ψf : Z2 /f → Z2 /f by Ψf ([a]) = [T (a)]. We will prove that Ψf is a
+well-defined function from Z2 /f to itself in Section 3 (Lemma 17).
+    We can now state our first main theorem.
+
+Theorem 1. For all k ∈ Z+ and f ∈ F (k), Ψf is conjugate to T if and only if f∞ is onto.
+
+
+                                                       2
+    This completely classifies the continuous endomorphisms of S that induce a map Ψf
+conjugate to T . In this notation, the map Ψ of [5] is Ψd where d is the block map for
+which d∞ is the discrete derivative D. Since D is onto, we obtain the result of [6] that
+Ψ is conjugate to T as a special case of Theorem 1. Note that an equivalent definition of
+d : B2 → B1 is d(x0 x1 ) = (x0 + x1 ) mod 2. Thus a natural generalization of d is the block
+map Mk ∈ F (k) defined by
+                                                     k−1
+                                                           !
+                                                     X
+                            Mk (x0 x1 · · · xk−1 ) =     xi mod 2
+                                                  i=0
+
+(so that d = M2 ). The fact that Ψd is conjugate to T also extends to all ΨMk .
+
+Theorem 2. For all k ∈ Z+ , (Mk )∞ is onto.
+
+   So from Theorem 1 we obtain the desired result.
+
+Corollary 3. For all k ∈ Z+ , ΨMk is conjugate to T .
+
+   The map Ψ of [5] is “parity-neutral” in the sense that every equivalence class in Z2 /d
+contains exactly one even and one odd element. Our next result generalizes this to all ΨMk .
+
+Corollary 4. Every equivalence class in Z2 /Mk has exactly 2k−1 elements, no two of which
+are congruent modulo 2k−1 .
+
+    It follows that there is exactly one element in each equivalence class in a given residue
+class modulo 2k−1 .
+    Having constructed an infinite family of maps ΨMk conjugate to T , we can use these
+maps to gain insights into the 3x + 1 problem. A standard way to obtain information about
+the dynamical structure of T is by studying the dynamical structure of a conjugate map
+and using the conjugacy to interpret these results as facts about T . However, in the case of
+ΨMk we have another means of obtaining information about T . We say that a T -orbit folds
+into a ΨMk -orbit if each element of the T -orbit is an element of some equivalence class in
+the ΨMk -orbit. In this case we also say that the ΨMk -orbit contains the T -orbit. Our next
+result describes how T -cycles fold.
+
+Theorem 5. A T -cycle with minimum period m folds into a ΨMk -cycle whose minimum
+period n divides m. Furthermore, m | nk if gcd(n, k) = 1, and m | 2 lcm(n, k) otherwise.
+                             5 11 20 10
+Example    6.
+ 5 20  11 10The T -cycle    , , ,
+                              7 7 7 7
+                                           with minimum period 4 folds into the ΨM2 -cycle
+    ,
+   7 7
+         ,    ,
+            7 7
+                    with  minimum   period 2.
+
+    A fixed point of a map f : X → X is any x ∈ X for which f (x) = x. We will also refer
+to an f -cycle with period 1 as a fixed point of f . Using Theorem 5, we obtain the following
+fascinating result about the fixed points of ΨMk .
+
+Theorem 7. A T -cycle folds into one of the fixed points of ΨMk if and only if its minimum
+period is a divisor of k. Furthermore, the fixed points contain only these T -cycles.
+
+                                             3
+Example 8. The two fixed points for ΨM3 are 45 , 25 , 15 , −1 and {−5, −7, −10,
+                                                
+                                                                               4 0}.
+                                                                                   2 1
+                                                                                        These
+consist of all the T -cycles with minimum period dividing 3, i.e. {0} , {−1} , 5 , 5 , 5 and
+{−5, −7, −10}. Note that this example also illustrates Corollary 4.
+
+   We shall prove (Lemma 24) that only T -cycles fold into ΨMk -cycles. A natural question,
+then, is to ask how many T -cycles fold into a given ΨMk -cycle.
+
+Theorem 9. If exactly r distinct T -cycles fold into a given ΨMk -cycle, then
+                                   k−1 
+                                    2
+                                           ≤ r ≤ 2k−1 .
+                                      k
+Furthermore, the upper bound is attained for all k, and the lower bound is attained whenever
+k is prime.
+
+Example 10. By Theorem 9, every ΨM2 -cycle contains either one or two T -cycles. For
+example, the ΨM2 -cycle
+                        1
+                             , − 38
+                                        8
+                                             , − 19
+                                                     4      23
+                                                                    2       29
+                          13     11
+                                       , 13      11
+                                                    , 13 , − 11    , 13  , − 11
+                           1 8 4 2
+                                , 13 , 13 , 13 and − 38    , − 19     23
+                                                                         , − 29
+                                                     
+contains the two T -cycles 13                           11     11
+                                                                  , − 11     11
+                                                                                .
+   Similarly, every ΨM3 -cycle contains between two and four T -cycles. For example, the
+ΨM3 -cycle
+               28 38 65 179  14 19 89 260  7 56 125 130
+                   , , − 17 , − 17 , 55 , 55 , − 17 , − 17 , 55 , 55 , − 17 , − 17
+                 55 55
+
+contains the two T -cycles 28
+                            14 7 38 19 56                    65 89 125 179 260 130
+                                ,    ,    ,   ,
+                              55 55 55 55 55 55
+                                                  ,    and    − 17 , − 17 , − 17 , − 17 , − 17 , − 17 .
+
+    The result of K. Monks and Yazinski [5] (that the only self-conjugate T -cycle of positive
+integers is {1, 2}) can be restated as follows: {1, 2} is the only T -cycle of positive integers
+such that some ΨM2 -cycle contains only that T -cycle. This holds for all ΨMk as follows
+(since if r = 1 then k < 3 by Theorem 9).
+
+Corollary 11. If k ≥ 3, then every ΨMk -cycle contains more than one T -cycle.
+
+   Thus, this generalizes the self-conjugacy result of [5].
+
+3. Proofs
+3.1. Maps Conjugate to T
+    In this section we will prove Theorem 1. We will begin with some technical lemmas.
+Several of the proofs in this section are generalizations of proofs by Hedlund [3] and M.
+Monks [6].
+    The metric δ on Z2 is defined for x, y ∈ Z2 as δ(x, y) = 21i , where i is the subscript of the
+first binary digit in which x and y differ. Thus, if a sequence x1 , x2 , . . . of 2-adic integers
+has the property that each term xi shares at least i initial digits with a given 2-adic integer
+x, then the sequence converges to x since in this case δ(xi , x) < 21i for all i ∈ Z+ .
+
+                                                  4
+
